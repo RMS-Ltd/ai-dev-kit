@@ -21,18 +21,21 @@ DOCS_ROOT = REPO_ROOT / "docs"
 CHEATSHEET_PATH = DOCS_ROOT / "guides" / "workflow-initiation-cheatsheet.md"
 GITHUB_BLOB_PREFIX = "https://github.com/RMS-Ltd/ai-dev-kit/blob/main/"
 
-# FR-066 publish excludes — not compiled by Docusaurus; relative links there are not blocking.
-EXCLUDE_PREFIXES = (
-    "changelog-and-release-notes/changelog-archive/",
-    "knowledge/changelog-and-release-notes/changelog-archive/",
-)
+# FR-114 adopter-public allowlist (E05:S09:T15) — Docusaurus docs-plugin publish scope.
+ALLOWLIST_DIRS = ("guides", "documentation")
+ALLOWLIST_FILES = (DOCS_ROOT / "developer-tools" / "ide-whitelist-guide.md",)
 
 MARKDOWN_LINK_RE = re.compile(r"\[[^\]]*\]\(([^)]+)\)")
 
 
 def _in_publish_scope(path: Path) -> bool:
-    rel = path.relative_to(DOCS_ROOT).as_posix()
-    return not any(rel.startswith(prefix) for prefix in EXCLUDE_PREFIXES)
+    if path in ALLOWLIST_FILES:
+        return True
+    try:
+        rel = path.relative_to(DOCS_ROOT)
+    except ValueError:
+        return False
+    return rel.parts and rel.parts[0] in ALLOWLIST_DIRS
 
 
 def _get_publish_scope_markdown_files() -> list[Path]:

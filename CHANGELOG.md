@@ -9,6 +9,14 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.5.9.15+1] - 07-06-26
+
+E05:S09:T15 — **Change implemented:** FR-114 Docusaurus adopter-public publish allowlist — explicit include/exclude, trimmed IA, narrowed CI, BR-068 link remediation, RC release-notes scaffold. SemVer **v0.4.1021+1**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.5.9.15+1.md)
+
+---
+
 ## [0.2.16.4+37] - 07-06-26
 
 E02:S16:T04 — **Change implemented:** UKW bookkeeping after Epic 21 kanban-init wave — kboard E21 version anchors, Epic-21/FR-006 sync; perpetual UKW BUILD +37. SemVer **v0.4.1031+37**.

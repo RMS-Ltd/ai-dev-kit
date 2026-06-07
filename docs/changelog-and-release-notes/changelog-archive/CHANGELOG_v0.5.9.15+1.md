@@ -1,28 +1,52 @@
-# Changelog v0.5.9.15+1 — E05:S09:T15 FR-114 intake (kanban init)
+# Changelog v0.5.9.15+1
 
-**Release Date:** 2026-06-06 16:16:18 UTC  
-**Internal Version:** v0.5.9.15+1  
-**SemVer:** v0.4.1021+1  
+**Release Date:** 2026-06-07 10:07:12 UTC
+
 **Epic:** 5 | **Story:** 9 | **Task:** 15
 
 ---
 
 ## Summary
 
-Kanban init (**RW -k**) for **FR-114** intake — **E05:S09:T15** Docusaurus adopter-public publish allowlist task filed with bidirectional FR wiring. **`--art`** adopted release anchor; **`--dpz`** skipped per BR-097 (BUILD≠0 doc-init path).
+E05:S09:T15 — **Change implemented:** FR-114 Docusaurus adopter-public publish allowlist — rescope portal from full `docs/` to explicit include/exclude; trim sidebars; narrow CI path filters; BR-068 link remediation in allowlisted corpus; RC release-notes scaffold; FR-114 contract tests. SemVer **v0.4.1021+1**.
 
 ---
 
-## Added
+## Changed
 
-- [FR-114](../../project-management/kanban/fr-br/FR-114-split-documentation-surfaces-docusaurus-public-notion-maintainer-kb.md) — split documentation surfaces (Docusaurus public + Notion maintainer KB)
-- [E05:S09:T15](../../project-management/kanban/epics/epic-05/story-09-docusaurus-documentation-portal/T15-docusaurus-adopter-public-publish-allowlist-fr114.md) task document
-- Story checklist row on [E05:S09](../../project-management/kanban/epics/epic-05/story-09-docusaurus-documentation-portal.md)
-- `kboard.md` Should Have row for **E05:S09:T15**
+### Portal allowlist (FR-114 F1/F2)
+
+- `portal/docusaurus.config.js` — expanded `exclude` globs for maintainer corpora (`project-management`, `implementation-cycles`, `architecture`, `knowledge`, etc.) plus `book-project/**`, agent index files; single-file include for `ide-whitelist-guide.md`.
+- `portal/sidebars.js` — adopter-facing categories only (Guides, Documentation, Developer tools whitelist guide).
+- `portal/README.md` — FR-114 allowlist tables, GitHub blob linking policy, CI path rationale, RC release-notes policy.
+
+### Homepage & navigation (FR-068 successor)
+
+- `portal/src/pages/index.js`, `portal/src/components/HomepageFeatures/index.js` — removed in-portal links to excluded trees; governance/versioning via GitHub URLs.
+
+### CI (FR-114 NF1)
+
+- `.github/workflows/docusaurus-build.yml` — narrowed `paths` to allowlisted `docs/guides/**`, `docs/documentation/**`, `ide-whitelist-guide.md`, `portal/**`.
+
+### Allowlisted corpus link hygiene (BR-068 Strategy A)
+
+- Remediated relative cross-tree links in `docs/guides/**`, `docs/documentation/**`, `docs/developer-tools/ide-whitelist-guide.md` → `https://github.com/RMS-Ltd/ai-dev-kit/blob/main/...`.
+
+### RC release notes scaffold (FR-114 F6)
+
+- `portal/blog/RELEASE-NOTES-POLICY.md` — policy stub for post-RC ≥ 1 milestones.
+
+### Tests
+
+- Added `tests/test_portal_fr114_allowlist.py`; updated `test_portal_fr066_docs_path.py`, `test_portal_fr068_navigation.py`, `test_portal_fr069_ci.py`, `test_portal_br068_monorepo_links.py`.
+
+### Planning
+
+- `docs/implementation-cycles/IPP-E05S09T15-docusaurus-adopter-public-publish-allowlist-fr114.md` — consolidated IPP.
 
 ---
 
-## Notes
+## Verification
 
-- Implementation not started — intake-only release (`Publication Status: NOT_APPLICABLE`).
-- Remaining FR-114 tasks: **E05:S08:T03**, **E05:S08:T04** (separate RW -k runs).
+- `npm run build` in `portal/` — green (strict `onBrokenLinks` / `onBrokenMarkdownLinks` / `onBrokenAnchors` unchanged).
+- `pytest tests/test_portal_fr114_allowlist.py tests/test_portal_fr066_docs_path.py tests/test_portal_fr068_navigation.py tests/test_portal_fr069_ci.py` — passed.

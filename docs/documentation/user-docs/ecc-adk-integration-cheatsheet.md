@@ -10,8 +10,8 @@ housekeeping_policy: keep
 
 Quick reference for adopters who want **ECC** (harness execution) alongside **AI Dev Kit** (project governance). ECC is **optional**; ADK works without it.
 
-**Normative detail:** [ECC ↔ ADK integration specification](../../architecture/standards-and-adrs/ecc-adk-harness-layer-integration-specification.md)  
-**Phase 0 evidence:** [Phase 0 evaluation](../../architecture/standards-and-adrs/ecc-adk-harness-layer-phase0-evaluation.md)  
+**Normative detail:** [ECC ↔ ADK integration specification](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/architecture/standards-and-adrs/ecc-adk-harness-layer-integration-specification.md)  
+**Phase 0 evidence:** [Phase 0 evaluation](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/architecture/standards-and-adrs/ecc-adk-harness-layer-phase0-evaluation.md)  
 **Upstream ECC:** https://github.com/affaan-m/ECC (MIT)
 
 ---
@@ -97,7 +97,7 @@ git branch -D "$BR"
 | Hooks/git rules in plan | Keep hooks off; extend `disabled_hooks` in bridge; re-dry-run |
 | Too many collisions | Stay ADK-only; ECC optional path documented but not enabled |
 
-Maintainer evidence: [T06 dogfood notes](../../project-management/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T06-ecc-harness-phases-2-5-fr098.md) (dry-run on `throwaway/ecc-dogfood-e6s09t06`, **342** ops, validators PASS, no `--execute` on canonical repo).
+Maintainer evidence: [T06 dogfood notes](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/project-management/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T06-ecc-harness-phases-2-5-fr098.md) (dry-run on `throwaway/ecc-dogfood-e6s09t06`, **342** ops, validators PASS, no `--execute` on canonical repo).
 
 ---
 
@@ -117,7 +117,7 @@ Prefer the full sequence in **§3 Throwaway branch playbook** above. Minimal dry
 npx -p ecc-universal ecc-install --target cursor --profile core --without baseline:hooks --dry-run
 ```
 
-Review the planned paths. Confirm **no collision** with existing ADK `.cursor/skills/`. See [Phase 0 evaluation §6](../../architecture/standards-and-adrs/ecc-adk-harness-layer-phase0-evaluation.md).
+Review the planned paths. Confirm **no collision** with existing ADK `.cursor/skills/`. See [Phase 0 evaluation §6](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/architecture/standards-and-adrs/ecc-adk-harness-layer-phase0-evaluation.md).
 
 ### Step C — Bridge config
 
@@ -212,7 +212,7 @@ Typical feature flow with **both** layers:
 
 ### Phase 5.0 reminder (FR-100)
 
-Every **IPW** run scores [ADR necessity](../../architecture/standards-and-adrs/ipw-adr-necessity-checklist.md) **before** doc inventory. ECC planning skills do not replace that gate.
+Every **IPW** run scores [ADR necessity](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/architecture/standards-and-adrs/ipw-adr-necessity-checklist.md) **before** doc inventory. ECC planning skills do not replace that gate.
 
 ---
 
@@ -284,9 +284,9 @@ Prefer **namespaced** `adk-*` skills for governance and **ECC** skills for domai
 
 | Topic | Document |
 | ----- | -------- |
-| Full contract | [Integration specification](../../architecture/standards-and-adrs/ecc-adk-harness-layer-integration-specification.md) |
-| GO/NO-GO matrix | [Phase 0 evaluation](../../architecture/standards-and-adrs/ecc-adk-harness-layer-phase0-evaluation.md) |
-| FR scope / phases | [FR-098](../../project-management/kanban/fr-br/FR-098-ecc-optional-harness-layer-integration.md) |
+| Full contract | [Integration specification](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/architecture/standards-and-adrs/ecc-adk-harness-layer-integration-specification.md) |
+| GO/NO-GO matrix | [Phase 0 evaluation](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/architecture/standards-and-adrs/ecc-adk-harness-layer-phase0-evaluation.md) |
+| FR scope / phases | [FR-098](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/project-management/kanban/fr-br/FR-098-ecc-optional-harness-layer-integration.md) |
 | Throwaway dogfood (E2E) | §3 **Throwaway branch playbook** (this doc) |
 | Greenfield install | [INSTALL_IN_YOUR_PROJECT.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/INSTALL_IN_YOUR_PROJECT.md) |
 | RW detail | `packages/frameworks/workflow-mgt/KB/.../release-workflow-agent-execution.md` |
@@ -299,13 +299,13 @@ Prefer **namespaced** `adk-*` skills for governance and **ECC** skills for domai
 | Phase | What you get today |
 | ----- | ------------------ |
 | **0** | Spec, evaluation, bridge template — **done** |
-| **1** | `adk-*` skill pack + `validate_adk_ecc_skill_pack.py` — **done** ([T05](../../project-management/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T05-adk-workflow-skill-pack-ecc-fr098.md)) |
-| **2** | `install_ecc_harness_optional.sh`, `validate_ecc_adk_bridge.py`, INSTALL optional step — **done** ([T06](../../project-management/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T06-ecc-harness-phases-2-5-fr098.md)) |
+| **1** | `adk-*` skill pack + `validate_adk_ecc_skill_pack.py` — **done** ([T05](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/project-management/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T05-adk-workflow-skill-pack-ecc-fr098.md)) |
+| **2** | `install_ecc_harness_optional.sh`, `validate_ecc_adk_bridge.py`, INSTALL optional step — **done** ([T06](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/project-management/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T06-ecc-harness-phases-2-5-fr098.md)) |
 | **3** | Hook defaults in bridge template + cheatsheet §3G — **done** |
 | **4** | [AgentShield RW add-on doc](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/ecc-agentshield-rw-step9-bridge.md) — **done** |
 | **5** | Layered architecture + book sidebar (§11) — **done** |
 
-If `adk-*` skills are missing on your branch, merge `dev`/`main` or copy the `skills/` tree from [T05](../../project-management/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T05-adk-workflow-skill-pack-ecc-fr098.md).
+If `adk-*` skills are missing on your branch, merge `dev`/`main` or copy the `skills/` tree from [T05](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/project-management/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T05-adk-workflow-skill-pack-ecc-fr098.md).
 
 ---
 
@@ -317,6 +317,6 @@ If `adk-*` skills are missing on your branch, merge `dev`/`main` or copy the `sk
 Cross-links:
 
 - [AI Dev Kit vision and purpose](../ai-dev-kit-vision-and-purpose.md)
-- [Integration specification](../../architecture/standards-and-adrs/ecc-adk-harness-layer-integration-specification.md)
+- [Integration specification](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/architecture/standards-and-adrs/ecc-adk-harness-layer-integration-specification.md)
 
 **Book sidebar (Head First AI-Assisted Development):** Position ECC as an optional **15-minute harness sidebar** after the ADK full-stack install — same mental model as §1 above. Readers install ADK first; ECC augments agent craft without replacing governance workflows.

@@ -74,7 +74,7 @@ AI Dev Kit will be released publicly, enabling others to:
 
 ## 📦 Repository scope (public vs private)
 
-**AI Dev Kit** (this public reference repository) ships **frameworks, workflows, and adoption docs only**. A separate **private companion repository** (`RMS-Ltd/ai-dev-kit-book`) holds book manuscript and publishing work; it is not part of the public tree. See [ADR-006](../architecture/standards-and-adrs/ADR-006-book-project-private-repository-spin-off.md).
+**AI Dev Kit** (this public reference repository) ships **frameworks, workflows, and adoption docs only**. A separate **private companion repository** (`RMS-Ltd/ai-dev-kit-book`) holds book manuscript and publishing work; it is not part of the public tree. See [ADR-006](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/architecture/standards-and-adrs/ADR-006-book-project-private-repository-spin-off.md).
 
 ---
 
@@ -111,7 +111,7 @@ AI Dev Kit will be released publicly, enabling others to:
    - Agent execution patterns
    - Workflow automation
    - AI-assisted development support
-   - **Optional harness layer:** [ECC](https://github.com/affaan-m/ECC) (MIT) for harness execution craft — complementary, not required; see [integration specification](../architecture/standards-and-adrs/ecc-adk-harness-layer-integration-specification.md)
+   - **Optional harness layer:** [ECC](https://github.com/affaan-m/ECC) (MIT) for harness execution craft — complementary, not required; see [integration specification](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/architecture/standards-and-adrs/ecc-adk-harness-layer-integration-specification.md)
 
 ### Modularity
 
@@ -208,8 +208,8 @@ AI Dev Kit succeeds when:
 
 - **[Getting Started Guide](../guides/getting-started/README.md)** — How to start using AI Dev Kit
 - **[Framework Consumption Guide](../guides/framework-consumption/README.md)** — How to adopt frameworks
-- **[Architecture Overview](../architecture/README.md)** — Technical architecture and standards
-- **[Kanban Governance](../project-management/rituals/policy/kanban-governance-policy.md)** — Kanban framework policies
+- **[Architecture Overview](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/architecture/README.md)** — Technical architecture and standards
+- **[Kanban Governance](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/project-management/rituals/policy/kanban-governance-policy.md)** — Kanban framework policies
 
 ---
 

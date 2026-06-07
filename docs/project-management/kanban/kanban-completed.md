@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Completed Tasks
 
-**Last Updated:** 2026-06-06 (RW: E10:S01:T10 story sign-off)
-**Version:** v0.10.1.10+2
+**Last Updated:** 2026-06-07 (RW: E05:S09:T15 FR-114 allowlist)
+**Version:** v0.5.9.15+1
 
 > **For MoSCOW prioritized tasks, see:** [`kboard.md`](kboard.md)  
 > **For completed FR/BR/UXR intake items, see:** [`intake-completed.md`](intake-completed.md)
@@ -19,6 +19,11 @@ housekeeping_policy: keep
 ---
 
 ## 20 Most Recently Completed Tasks
+
+#### **RW (2026-06-07)** — E05:S09:T15 @ **v0.5.9.15+1** (FR-114 Docusaurus adopter-public allowlist)
+
+- **[E05:S09:T15](epics/epic-05/story-09-docusaurus-documentation-portal/T15-docusaurus-adopter-public-publish-allowlist-fr114.md)** — **FR-114**: Docusaurus adopter-public publish allowlist — explicit include/exclude, trimmed IA, narrowed CI, BR-068 link remediation, RC release-notes scaffold.
+  **Completed:** `2026-06-07T10:07:12Z` | **Version:** `v0.5.9.15+1` | **Agent:** `RW E05:S09:T15 --art` | [FR-114](fr-br/FR-114-split-documentation-surfaces-docusaurus-public-notion-maintainer-kb.md) | [IPP](../../implementation-cycles/IPP-E05S09T15-docusaurus-adopter-public-publish-allowlist-fr114.md)
 
 #### **RW (2026-06-06)** — E10:S01 story sign-off @ **v0.10.1.10+2** (all tasks COMPLETE; RC **APPROVE** @ T06)
 
@@ -183,6 +188,9 @@ housekeeping_policy: keep
 
 - **[E05:S09:T14](epics/epic-05/story-09-docusaurus-documentation-portal/T14-docusaurus-ci-workflow-deduplication-br093.md)** — **BR-093**: Docusaurus CI build/deploy deduplication — merged workflow + artifact handoff ([ADR-017](../../architecture/standards-and-adrs/ADR-017-docusaurus-ci-build-deploy-topology.md)).
   **Completed:** `2026-06-05T00:23:30Z` | **Version:** `v0.5.9.14+2` | **Agent:** `RW E05:S09:T14` | [BR-093](fr-br/BR-093-docusaurus-ci-duplicate-build-deploy-job-waste.md) | [IPP](../../implementation-cycles/IPP-E05S09T14-docusaurus-ci-workflow-deduplication.md)
+
+- **[E05:S09:T15](epics/epic-05/story-09-docusaurus-documentation-portal/T15-docusaurus-adopter-public-publish-allowlist-fr114.md)** — **FR-114**: Docusaurus adopter-public publish allowlist — explicit include/exclude, trimmed IA, narrowed CI, BR-068 link remediation, RC release-notes scaffold.
+  **Completed:** `2026-06-07T10:07:12Z` | **Version:** `v0.5.9.15+1` | **Agent:** `RW E05:S09:T15 --art` | [FR-114](fr-br/FR-114-split-documentation-surfaces-docusaurus-public-notion-maintainer-kb.md) | [IPP](../../implementation-cycles/IPP-E05S09T15-docusaurus-adopter-public-publish-allowlist-fr114.md)
 
 #### **Epic 8: Tooling & Automation (Story 3 — Automation Scripts)**
 - **[E08:S03:T08](epics/epic-08/story-03-automation-scripts/T08-codeql-git-tag-handler-syntax-br094.md)** — **BR-094**: CodeQL `git_tag_handler.py` indentation syntax fix.

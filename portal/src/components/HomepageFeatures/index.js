@@ -3,29 +3,33 @@ import Heading from '@theme/Heading';
 import Link from '@docusaurus/Link';
 import styles from './styles.module.css';
 
+const GITHUB_MAIN = 'https://github.com/RMS-Ltd/ai-dev-kit/blob/main/';
+
 const FeatureList = [
   {
-    title: 'Workflows (RW, UKW, CMW)',
+    title: 'Workflows (RW, UKW, IPW)',
     description: (
       <>
-        Release Workflow, Update Kanban, and Changelog Maintenance are documented in{' '}
-        <strong>Documentation</strong> and <strong>Knowledge</strong>. Start from the{' '}
+        Release, Kanban sync, and implementation planning cheatsheets live under{' '}
+        <strong>Guides</strong>. Start from the{' '}
+        <Link to="/docs/guides/workflow-initiation-cheatsheet">workflow initiation cheatsheet</Link>
+        {' '}or the{' '}
         <Link to="/docs/documentation/docusaurus-portal-index">documentation portal index</Link>.
       </>
     ),
   },
   {
-    title: 'Versioning & Kanban',
+    title: 'Versioning & governance',
     description: (
       <>
-        Internal version schema and Kanban governance for this repo:{' '}
-        <Link to="/docs/architecture/standards-and-adrs/dev-kit-versioning-policy">
-          dev-kit versioning policy
-        </Link>
+        Internal standards (versioning, Kanban policy, ADRs) are maintained in the Git repository —{' '}
+        <a href={`${GITHUB_MAIN}docs/governance/standards/dev-kit-versioning-policy.md`}>
+          versioning policy
+        </a>
         {' · '}
-        <Link to="/docs/project-management/rituals/policy/kanban-governance-policy">
+        <a href={`${GITHUB_MAIN}packages/frameworks/kanban/policies/kanban-governance-policy.md`}>
           Kanban governance policy
-        </Link>
+        </a>
         .
       </>
     ),

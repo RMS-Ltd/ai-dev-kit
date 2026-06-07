@@ -78,7 +78,7 @@ housekeeping_policy: keep
 
 
 
-- [ ] **E5:S09 – Docusaurus Documentation Portal** - IN PROGRESS (T01–T14 ✅; **T15/FR-114** intake **v0.5.9.15+1**)
+- [ ] **E5:S09 – Docusaurus Documentation Portal** - IN PROGRESS (T01–T15 ✅; **T15/FR-114** **v0.5.9.15+1**)
   - Story: [`story-09-docusaurus-documentation-portal.md`](story-09-docusaurus-documentation-portal.md)
   - **Note:** Atomic FR chain for full Docusaurus adoption (`portal/` → `docs/` publish, CI, deploy, search).
 

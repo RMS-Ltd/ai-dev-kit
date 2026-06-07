@@ -46,13 +46,25 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          // Canonical KB: repository docs/ (FR-066).
+          // Adopter-public allowlist (FR-114 / E05:S09:T15). Maintainer corpora excluded.
           path: '../docs',
           sidebarPath: './sidebars.js',
           editUrl: 'https://github.com/RMS-Ltd/ai-dev-kit/tree/main/docs/',
           exclude: [
-            'changelog-and-release-notes/changelog-archive/**',
-            'knowledge/changelog-and-release-notes/changelog-archive/**',
+            'project-management/**',
+            'implementation-cycles/**',
+            'maintenance/**',
+            'analysis/**',
+            'knowledge/**',
+            'journals/**',
+            'architecture/**',
+            'governance/**',
+            'changelog-and-release-notes/**',
+            'book-project/**',
+            'project-agent-index.md',
+            'project-agent-manifest.json',
+            'project-agent-manifest.schema.json',
+            'developer-tools/ide-whitelist-uat-log.md',
           ],
         },
         blog: {

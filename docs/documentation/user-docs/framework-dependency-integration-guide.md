@@ -26,12 +26,12 @@ This guide explains how to integrate AI Dev Kit frameworks into existing project
 - This guide primarily supports **integration / migration** flows for existing repositories.
 - For the canonical **greenfield first-run** sequence (FR-080 / E6:S09:T01), use:
   - [`INSTALL_IN_YOUR_PROJECT.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/INSTALL_IN_YOUR_PROJECT.md)
-  - [IPW-E6S9T1 planning package](../../implementation-cycles/IPW-E6S09T01-greenfield-installation-fr080.md)
+  - [IPW-E6S9T1 planning package](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/implementation-cycles/IPW-E6S09T01-greenfield-installation-fr080.md)
 - Brownfield canonical entry:
   - [`INSTALL_IN_YOUR_PROJECT.md — Brownfield adoption`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/INSTALL_IN_YOUR_PROJECT.md#brownfield-adoption-existing-repositories)
-  - [ADR-003](../../architecture/standards-and-adrs/ADR-003-greenfield-vs-brownfield-adoption.md)
-  - [FR-081](../../project-management/kanban/fr-br/FR-081-brownfield-modular-adopter-integration.md)
-  - [IPP-E6S9T2](../../implementation-cycles/IPP-E6S09T02-brownfield-modular-adopter-integration-fr081.md)
+  - [ADR-003](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/architecture/standards-and-adrs/ADR-003-greenfield-vs-brownfield-adoption.md)
+  - [FR-081](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/project-management/kanban/fr-br/FR-081-brownfield-modular-adopter-integration.md)
+  - [IPP-E6S9T2](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/implementation-cycles/IPP-E6S09T02-brownfield-modular-adopter-integration-fr081.md)
 
 **Use Cases:**
 - Migrating existing projects from copy-paste to dependencies

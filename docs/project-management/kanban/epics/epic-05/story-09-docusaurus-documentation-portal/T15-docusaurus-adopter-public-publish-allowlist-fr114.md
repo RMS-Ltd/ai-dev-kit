@@ -9,10 +9,10 @@ housekeeping_policy: keep
 # Epic 5, Story 9, Task 15: Docusaurus adopter-public publish allowlist (**FR-114**)
 
 **Task ID:** E05:S09:T15  
-**Status:** TODO  
+**Status:** COMPLETE  
 **Priority:** HIGH  
 **Created:** 2026-06-06  
-**Last updated:** 2026-06-06 (v0.5.9.15+1 — RW -k intake)  
+**Last updated:** 2026-06-07 (✅ COMPLETE v0.5.9.15+1 — FR-114 allowlist shipped)  
 **Version:** v0.5.9.15+1  
 **Code:** E05S09T15
 
@@ -28,6 +28,7 @@ Publication Status: NOT_APPLICABLE
 
 ## Input
 
+- [IPP-E05S09T15-docusaurus-adopter-public-publish-allowlist-fr114.md](../../../../../implementation-cycles/IPP-E05S09T15-docusaurus-adopter-public-publish-allowlist-fr114.md)
 - [FR-114](../../../fr-br/FR-114-split-documentation-surfaces-docusaurus-public-notion-maintainer-kb.md) decision record and allowlist starter
 - [`portal/docusaurus.config.js`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/portal/docusaurus.config.js)
 - [`portal/sidebars.js`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/portal/sidebars.js)
@@ -54,16 +55,23 @@ Rescope the Docusaurus portal from “publish nearly all `docs/`” to an explic
 
 ## Acceptance Criteria
 
-- [ ] `npm run build` green on allowlisted corpus only.
-- [ ] Sidebar reflects adopter-public categories (guides, adopter documentation, portal index; no Kanban/IPP/knowledge/analysis/maintenance).
-- [ ] `portal/README.md` documents allowlist and “internal stds → GitHub blob” linking policy.
-- [ ] CI path filters documented; maintainer-only `docs/` edits do not require portal build when excluded.
-- [ ] RC ≥ 1 significant release notes policy and scaffold location documented.
+- [x] `npm run build` green on allowlisted corpus only.
+- [x] Sidebar reflects adopter-public categories (guides, adopter documentation, portal index; no Kanban/IPP/knowledge/analysis/maintenance).
+- [x] `portal/README.md` documents allowlist and “internal stds → GitHub blob” linking policy.
+- [x] CI path filters documented; maintainer-only `docs/` edits do not require portal build when excluded.
+- [x] RC ≥ 1 significant release notes policy and scaffold location documented.
+
+---
+
+## Version Anchor
+
+**Forensic marker:** ✅ COMPLETE (**v0.5.9.15+1** — FR-114 Docusaurus adopter-public allowlist)
 
 ---
 
 ## References
 
+- [IPP-E05S09T15-docusaurus-adopter-public-publish-allowlist-fr114.md](../../../../../implementation-cycles/IPP-E05S09T15-docusaurus-adopter-public-publish-allowlist-fr114.md)
 - [FR-114](../../../fr-br/FR-114-split-documentation-surfaces-docusaurus-public-notion-maintainer-kb.md)
 - [E05:S09:T02 — Publish scope (FR-066)](T02-docusaurus-publish-scope-fr-066.md)
 - [ultimate-canonical-kb-structure.md](../../../../../architecture/standards-and-adrs/ultimate-canonical-kb-structure.md)

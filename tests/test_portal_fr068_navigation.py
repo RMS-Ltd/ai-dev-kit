@@ -62,9 +62,9 @@ def test_fr068_s1_sidebar_not_plain_singleton_autogen(sidebars_text: str):
 
 
 def test_fr068_s1_ordering_comment(sidebars_text: str):
-    """S1 / NF01 — ordering philosophy and README pointer."""
+    """S1 / NF01 — FR-114 allowlist philosophy and README pointer."""
     head = sidebars_text[:2500].lower()
-    assert "canonical" in head and "pillar" in head, "S1: comment should name canonical pillar ordering"
+    assert "fr-114" in head or "allowlist" in head, "S1: comment should name FR-114 allowlist"
     assert "readme" in head, "S1: comment should point maintainers at portal README"
 
 
@@ -86,10 +86,10 @@ def test_fr068_s3_no_tutorial_cta(index_text: str):
 
 
 def test_fr068_s3_primary_links_adk(index_text: str):
-    """S3 — stable entry routes on the homepage."""
+    """S3 — stable entry routes on the homepage (FR-114 allowlist)."""
     for path in (
         "/docs/documentation/docusaurus-portal-index",
-        "/docs/architecture/standards-and-adrs/dev-kit-versioning-policy",
+        "/docs/guides/workflow-initiation-cheatsheet",
     ):
         assert path in index_text, f"S3: missing homepage link {path}"
 
@@ -113,26 +113,21 @@ def test_fr068_s_navbar_sidebar_id_matches(sidebars_text: str, config_text: str)
     assert "sidebarId: 'docsSidebar'" in config_text or 'sidebarId: "docsSidebar"' in config_text
 
 
-def test_fr068_s7_pillars_in_sidebar(sidebars_text: str):
-    """S7 (surrogate) — six canonical pillar folders appear as dirName entries."""
+def test_fr068_s7_allowlist_dirs_in_sidebar(sidebars_text: str):
+    """S7 (FR-114) — adopter-public allowlist folders appear as dirName entries."""
     dirs = set(_dir_names_from_sidebars(sidebars_text))
-    for pillar in (
-        "architecture",
-        "changelog-and-release-notes",
-        "project-management",
-        "guides",
-        "documentation",
-        "knowledge",
-    ):
-        assert pillar in dirs, f"S7: missing sidebar category for {pillar}"
+    for name in ("guides", "documentation"):
+        assert name in dirs, f"S7: missing sidebar category for {name}"
+    assert "developer-tools/ide-whitelist-guide" in sidebars_text
 
 
-def test_fr068_s7_homepage_covers_doc_and_architecture(index_text: str, readme_text: str):
-    """S7 — homepage links into documentation/ and architecture/."""
+def test_fr068_s7_homepage_covers_doc_and_guides(index_text: str, readme_text: str):
+    """S7 — homepage links into documentation/ and guides/ (not excluded trees)."""
     assert "/docs/documentation/" in index_text
-    assert "/docs/architecture/" in index_text
+    assert "/docs/guides/" in index_text
     hf_path = PORTAL_DIR / "src" / "components" / "HomepageFeatures" / "index.js"
     hf = hf_path.read_text(encoding="utf-8")
     assert "/docs/documentation/" in hf
-    assert "/docs/architecture/" in hf
-    assert "/docs/project-management/" in hf
+    assert "/docs/guides/" in hf
+    assert "/docs/architecture/" not in hf
+    assert "/docs/project-management/" not in hf

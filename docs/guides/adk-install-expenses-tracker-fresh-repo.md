@@ -6,7 +6,7 @@ housekeeping_policy: keep
 
 # ADK install — Expenses Tracker (fresh repository)
 
-Use this checklist when starting from a **new blank GitHub repository** (no prior kanban tree). Validates [UXR-017](../project-management/kanban/fr-br/UXR-017-kanban-epic-story-path-lowercase-naming.md) / [E04:S19:T11](../project-management/kanban/epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T11-kanban-epic-story-path-lowercase-naming-uxr017.md) AC5.
+Use this checklist when starting from a **new blank GitHub repository** (no prior kanban tree). Validates [UXR-017](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/project-management/kanban/fr-br/UXR-017-kanban-epic-story-path-lowercase-naming.md) / [E04:S19:T11](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/project-management/kanban/epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T11-kanban-epic-story-path-lowercase-naming-uxr017.md) AC5.
 
 ## Prerequisites
 
