@@ -10,11 +10,11 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 ---
 
 
-## [0.21.6.1+0] - 07-06-26
+## [0.21.6.2+0] - 07-06-26
 
-E21:S06:T01 — **Change implemented:** Kanban-init doc filing — Chinese Simplified (zh-CN) translation files. SemVer **v0.4.1063+0**.
+E21:S06:T02 — **Change implemented:** Kanban-init doc filing — Chinese Traditional (zh-TW) translation files. SemVer **v0.4.1064+0**.
 
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.21.6.1+0.md)
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.21.6.2+0.md)
 
 ---
 

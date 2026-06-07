@@ -11,8 +11,8 @@ housekeeping_policy: keep
 **Task ID:** E21:S06:T02  
 **Status:** TODO  
 **Priority:** LOW  
-**Last updated:** 2026-06-06 (E21 rehouse — per-locale delivery)  
-**Version:** v0.0.0.0+0  
+**Last updated:** 2026-06-07 (v0.21.6.2+0 — RW -k kanban-init doc filing)
+**Version:** v0.21.6.2+0
 **Code:** E21S06T02
 
 **Associated FR:** [FR-006](../../../fr-br/FR-006-localization-language-selection-uk-us-english.md) (Phase 2)
@@ -53,6 +53,8 @@ Create and review Chinese Traditional (`zh-TW` / `locales/zh-TW/`) translation f
 ---
 
 ## Kanban-init intake
+
+**Released:** `v0.21.6.2+0` — RW -k --art --dpz (2026-06-07)
 
 **Branch:** `epic/21-internationalisation-localisation`
 
