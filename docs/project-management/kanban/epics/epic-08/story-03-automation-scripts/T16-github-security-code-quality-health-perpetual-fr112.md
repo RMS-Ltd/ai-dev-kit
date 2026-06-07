@@ -9,11 +9,11 @@ housekeeping_policy: keep
 # E08:S03:T16 — GitHub Security & Code Quality Health (Perpetual)
 
 **Task ID:** E08:S03:T16  
-**Status:** IN PROGRESS — **DEFERRED** (awaiting **E08:S03:T12** operator sign-off; **T13**/**T14** **COMPLETE**)  
+**Status:** IN PROGRESS — **ACTIVE** (T12/T13/T14 backlog sign-off complete @ **v0.8.3.12+11**; Wave 2+ resumed)  
 **Priority:** HIGH  
 **Estimated Effort:** Medium (ongoing)  
 **Created:** 2026-06-05  
-**Last updated:** 2026-06-06 (UKW — T13 @ v0.8.3.13+4, T14 @ v0.8.3.14+5; deferral narrowed to T12)  
+**Last updated:** 2026-06-07 (RW — T12 COMPLETE @ v0.8.3.12+11; deferral **lifted**)  
 **Version Anchor:** v0.8.3.16+1  
 **Code:** E08S03T16  
 **Task Type:** Perpetual Maintenance
@@ -57,9 +57,9 @@ Standing perpetual lane for **GitHub Advanced Security** hygiene:
 
 ## Activity deferral (operator directive — 2026-06-05)
 
-**Postpone all T16 waves** (re-scans, remediation RWs, manifest-only releases) until **E08:S03:T12**, **T13**, and **T14** reach operator **sign-off** (COMPLETE + dashboard verification).
+**~~Postpone all T16 waves~~ — LIFTED 2026-06-07:** **T12**, **T13**, and **T14** operator sign-off complete (**T12** @ **v0.8.3.12+11**). T16 Wave 2+ **resumed**.
 
-**Rationale:** T12–T14 exist to **burn down the finite backlog** (maintainability, reliability, AI suggestions) so residual open counts are **manageable** before T16 assumes perpetual hygiene. T16 Wave 0 baseline + Wave 1 re-scan manifest are **record-only**; no further T16 work until handoff.
+**Rationale (historical):** T12–T14 burned down the finite backlog before T16 assumed perpetual hygiene. Deferral ended when T12 dashboard **Good** confirmed @ `main` `ed379ab`.
 
 | Allowed during deferral | Blocked until T12–T14 sign-off |
 | ----------------------- | ------------------------------ |

@@ -13,8 +13,8 @@ housekeeping_policy: keep
 **Estimated Effort:** [TBD]  
 **Created:** 2025-12-02  
 **Completed:** N/A (story reopened for ongoing RW validation work)
-**Last updated:** 2026-06-05 (v0.2.1.24+3 — **T24** / BR-097 task_touch collision guards)
-**Version:** v0.2.1.24+3
+**Last updated:** 2026-06-07 (v0.2.1.25+1 — **T25** / FR-115+FR-116 async ingest v1)
+**Version:** v0.2.1.25+1
 **Code:** E2S01
 
 ---
@@ -68,6 +68,8 @@ Make RW agent execution documentation fully portable, clearly distinguishing dev
   - Task: [T23-tool-agnostic-workflow-step-tracking-and-runlogs.md](story-01-rw-agent-execution-and-docs/T23-tool-agnostic-workflow-step-tracking-and-runlogs.md) | [IPP](../../../../implementation-cycles/IPP-E2S01T23-tool-agnostic-workflow-step-tracking-runlogs.md) | [ADR-011](../../../../architecture/standards-and-adrs/ADR-011-workflow-step-tracker-and-agent-run-log.md)
 
 - [x] **E02:S01:T24 – RW BUILD increment enforcement and release-tag immutability (BR-097)** - ✅ COMPLETE (**v0.2.1.24+3** — task_touch registry finalize, release contract validator, strategy-aware collision recovery, `--art` cross-task BUILD) — [Task doc](story-01-rw-agent-execution-and-docs/T24-rw-build-increment-enforcement-and-tag-immutability-br097.md) | [BR-097](../../fr-br/BR-097-rw-agent-reuses-tagged-build-and-force-moves-release-tags.md) | [IPP](../../../../implementation-cycles/IPP-E02S01T24-rw-build-increment-tag-immutability.md)
+
+- [x] **E02:S01:T25 – Changelog structured store — database-backed CMW (FR-115)** - ✅ COMPLETE (**v0.2.1.25+1** — async ingest read model; umbrella with T13) — [Task doc](story-01-rw-agent-execution-and-docs/T25-changelog-structured-store-database-backed-cmw-fr115.md) | [FR-115](../../fr-br/FR-115-changelog-structured-store-database-backed-cmw.md) | [IPP](../../../../implementation-cycles/IPP-E02S01T25-release-metadata-async-ingest-umbrella.md)
 
 ---
 

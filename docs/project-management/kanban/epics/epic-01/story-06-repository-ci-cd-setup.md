@@ -12,8 +12,8 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** [TBD]  
 **Created:** 2025-12-18  
-**Last updated:** 2025-12-17 (v0.1.6.1+1 – T01 complete: Task)
-**Version:** v0.1.6.1+1
+**Last updated:** 2026-06-07 (v0.1.6.2+1 — T02 MIT LICENSE COMPLETE)
+**Version:** v0.1.6.2+1
 **Code:** E1S06
 
 ---
@@ -24,6 +24,9 @@ housekeeping_policy: keep
   - Task: [`T01-setup-byob-badges-for-private-repository`](story-06-repository-ci-cd-setup/T01-setup-byob-badges-for-private-repository.md)
   - Task: [`T01-setup-byob-badges-for-private-repository.md`](story-06-repository-ci-cd-setup/T01-setup-byob-badges-for-private-repository.md)
 
+- [x] **E01:S06:T02 – MIT LICENSE file and repository legal metadata (FR-117)** - ✅ COMPLETE (**v0.1.6.2+1**)
+  - Task: [`T02-mit-license-file-and-repository-legal-metadata-fr117.md`](story-06-repository-ci-cd-setup/T02-mit-license-file-and-repository-legal-metadata-fr117.md)
+  - FR: [`FR-117`](../../fr-br/FR-117-mit-license-file-and-repository-legal-metadata.md)
 
 ---
 

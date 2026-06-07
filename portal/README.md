@@ -25,7 +25,9 @@ This directory (`portal/`) is the **[Docusaurus](https://docusaurus.io/)** site 
 | `implementation-cycles/**` | IPPs — maintainer |
 | `maintenance/**`, `analysis/**`, `knowledge/**`, `journals/**` | Maintainer corpora |
 | `architecture/**`, `governance/**` | Internal standards — link via GitHub blob URLs |
-| `changelog-and-release-notes/**` | RC=0: GitHub only; RC≥1 uses curated `portal/blog/` release notes |
+| `changelog-and-release-notes/**`, `release-notes/**` | RC=0: GitHub only; RC≥1 uses curated `portal/blog/` release notes |
+| `book-project/**` | Project-specific book work — not adopter-public |
+| `project-agent-index.md`, `project-agent-manifest.json`, `project-agent-manifest.schema.json` | Agent bootstrap tooling — maintainer |
 | `developer-tools/ide-whitelist-uat-log.md` | Maintainer UAT log only |
 
 **Internal standards linking policy:** From published pages, use `https://github.com/RMS-Ltd/ai-dev-kit/blob/main/...` for excluded trees (BR-068 Strategy A).

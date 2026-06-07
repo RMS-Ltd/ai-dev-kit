@@ -78,6 +78,8 @@ This policy defines criteria and procedures for archiving changelog entries to m
 **Goals:**
 - Keep main changelog under 1,000 lines for optimal usability
 - Preserve complete historical changelog entries in archive
+
+**Read model (FR-115 / ADR-025):** Optional SQLite ingest from markdown SoT (`release_metadata_store` in `rw-config.yaml`) enables indexed query without changing RW write path. Phase 2 may tie CMW triggers to DB metrics instead of line count alone.
 - Maintain "Keep a Changelog" format compliance
 - Enable efficient navigation of recent vs. historical changes
 - Support automated archival via Changelog Management Workflow (CMW)

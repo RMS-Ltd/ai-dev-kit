@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Board
 
-**Last Updated:** 2026-06-07 (RW: E08:S03:T12)
-**Version:** v0.8.3.12+10
+**Last Updated:** 2026-06-07 (RW: E08:S03:T12 re-close)
+**Version:** v0.8.3.12+13
 
 **Active board contract:** **Sole active MoSCOW board** ([ADR-018](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/architecture/standards-and-adrs/ADR-018-single-kanban-board-consolidation.md)). Rows are **live work** (TODO / IN PROGRESS / OPEN / WAITING / PERPETUAL) plus filed **Could Have** backlog. **Verification (V)** band holds task-shipped / FBU-open items (`⏳ WAITING`). Remove **terminal** rows and archive prose (use [`kanban-completed.md`](kanban-completed.md) / [`intake-completed.md`](intake-completed.md)).
 
@@ -28,15 +28,19 @@ housekeeping_policy: keep
 
 ### Should Have (S) - Important Tasks
 
+*(E01:S06:T02 COMPLETE @ **v0.1.6.2+1** — FR-117 MIT LICENSE; see [`kanban-completed.md`](kanban-completed.md) · [`intake-completed.md`](intake-completed.md).)*
+
 *(FR-114 **IMPLEMENTED** @ v0.5.8.4+3 — T03/T04/T15; see [`intake-completed.md`](intake-completed.md) · [`kanban-completed.md`](kanban-completed.md).)*
 
-- **E08:S03:T12** – Code Quality maintainability backlog (BR-099) - 🔄 IN PROGRESS (MEDIUM, **v0.8.3.12+10** wave-6 code; **87/Fair** local CQG; Good+ pending) | [Task](epics/epic-08/story-03-automation-scripts/T12-code-quality-maintainability-backlog-br099.md) | [BR-099](fr-br/BR-099-code-quality-maintainability-backlog.md) | [—IPP—](../../implementation-cycles/IPP-E08S03T12-code-quality-maintainability-backlog-br099.md) | Last modified: 2026-06-07 10:45 UTC
+*(E08:S03:T12 COMPLETE — **re-closed** @ **v0.8.3.12+13** — BR-099 RESOLVED; dashboard Good @ +11; local CQG @ +12; T16 handoff; see [`kanban-completed.md`](kanban-completed.md) · [`intake-completed.md`](intake-completed.md).)*
 
 ### Verification (V) - Task Shipped, FBU Verification Pending
 
 *(No rows — T14 COMPLETE @ v0.8.3.14+5; see [`kanban-completed.md`](kanban-completed.md).)*
 
 ### Could Have (C) - Nice-to-Have Tasks
+
+*(E02:S01:T25 / E03:S02:T13 COMPLETE @ **v0.2.1.25+1** — FR-115+FR-116 v1 async ingest; see [`kanban-completed.md`](kanban-completed.md).)*
 
 - **E02:S14:T02** – Validate fresh install steps for each path - 📋 TODO (HIGH, Epic 2 workflow-mgt install evaluation) | [Task](epics/epic-02/story-14-workflow-management-package-installation-evaluation/T02-validate-fresh-install-steps-for-each-path.md) | [Story](epics/epic-02/story-14-workflow-management-package-installation-evaluation.md) | —No IPP— | Last modified: 2026-06-05 13:08 UTC
 
@@ -72,7 +76,7 @@ housekeeping_policy: keep
 
 - **E02:S16:T05** – Markdown Documentation Maintenance (Perpetual) - 🔄 PERPETUAL (**v0.2.16.5+6** — Wave 2: 36-file link-depth hygiene; BR-068 guard green) - [Task](epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T05-markdown-documentation-maintenance-perpetual.md) | [Story](epics/epic-02/story-16-perpetual-ongoing-workflow-operations.md) | [FR-088](fr-br/FR-088-dedicated-story-for-perpetual-ongoing-tasks.md) | —No IPP— | Last modified: 2026-06-05 10:38 UTC
 
-- **E02:S16:T10** – Ad-hoc Repository Infrastructure Maintenance (Perpetual) - 🔄 PERPETUAL (last RW **v0.2.16.10+5**) - [Task](epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T10-ad-hoc-repository-infrastructure-maintenance-perpetual.md) | [Story](epics/epic-02/story-16-perpetual-ongoing-workflow-operations.md) | —No IPP— | Last modified: 2026-06-04 22:55 UTC
+- **E02:S16:T10** – Ad-hoc Repository Infrastructure Maintenance (Perpetual) - 🔄 PERPETUAL (last RW **v0.2.16.10+6** — post-FR-114 PR merge; epic/5 branch removed) - [Task](epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T10-ad-hoc-repository-infrastructure-maintenance-perpetual.md) | [Story](epics/epic-02/story-16-perpetual-ongoing-workflow-operations.md) | —No IPP— | Last modified: 2026-06-07 17:00 UTC
 
 - **E02:S16:T14** – UKW gap discovery: TODO tasks and unfiled FR/BR (**FR-043**) - 📋 TODO (HIGH, perpetual UKW intake hygiene) - [Task](epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T14-ukw-gap-discovery-unfiled-fr-br-fr043.md) | [FR-043](fr-br/FR-043-ukw-gap-discovery-todo-tasks-and-unfiled-fr-br.md) | —No IPP— | Last modified: 2026-05-30 13:36 UTC
 
@@ -80,7 +84,7 @@ housekeeping_policy: keep
 
 - **E08:S03:T15** – GitHub Actions CI health (Perpetual) - 🔄 PERPETUAL (**v0.8.3.15+3** — Wave 2: MDX-safe ADK markers; local Docusaurus green; pending Actions verify) - [Task](epics/epic-08/story-03-automation-scripts/T15-github-actions-ci-health-perpetual-fr112.md) | [FR-112](fr-br/FR-112-perpetual-github-ci-and-security-health-lanes.md) | [—IPP—](../../implementation-cycles/IPP-E08S03T15-github-actions-ci-health-perpetual-fr112.md) | Last modified: 2026-06-05 16:58 UTC
 
-- **E08:S03:T16** – GitHub Security & Code Quality health (Perpetual) - 🔄 PERPETUAL (**v0.8.3.16+1** — Wave 0 baseline @ `777e956`; code-scanning **0** open; CI merge gate → T15) - [Task](epics/epic-08/story-03-automation-scripts/T16-github-security-code-quality-health-perpetual-fr112.md) | [FR-112](fr-br/FR-112-perpetual-github-ci-and-security-health-lanes.md) | [—IPP—](../../implementation-cycles/IPP-E08S03T16-github-security-code-quality-health-perpetual-fr112.md) | Last modified: 2026-06-05 16:52 UTC
+- **E08:S03:T16** – GitHub Security & Code Quality health (Perpetual) - 🔄 PERPETUAL (**v0.8.3.16+1** — deferral **lifted** @ T12 closure; Wave 2+ active) - [Task](epics/epic-08/story-03-automation-scripts/T16-github-security-code-quality-health-perpetual-fr112.md) | [FR-112](fr-br/FR-112-perpetual-github-ci-and-security-health-lanes.md) | [—IPP—](../../implementation-cycles/IPP-E08S03T16-github-security-code-quality-health-perpetual-fr112.md) | Last modified: 2026-06-07 17:33 UTC
 
 ### Won't Have (W) - Deferred Tasks
 

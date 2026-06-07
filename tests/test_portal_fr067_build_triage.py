@@ -65,13 +65,17 @@ def test_fr067_s3_exclude_globs_match_readme(config_text: str, readme_text: str)
 
 
 def test_fr067_s4_triage_note(readme_text: str, triage_text: str):
-    """S4 — maintenance triage note with required sections."""
+    """S4 — maintenance triage note (git stub or full doc; FR-114 may migrate to Notion)."""
     assert TRIAGE_PATH.is_file()
     assert "docusaurus-corpus-triage-fr-067" in readme_text
     lowered = triage_text.lower()
-    assert "failure class" in lowered or "failure classes" in lowered
-    assert "exclude" in lowered
-    assert "fr-067" in lowered
+    if "notion_sot: true" in lowered:
+        assert "notion" in lowered
+        assert "fr-114" in lowered or "fr-067" in lowered
+    else:
+        assert "failure class" in lowered or "failure classes" in lowered
+        assert "exclude" in lowered
+        assert "fr-067" in lowered
 
 
 def test_fr067_s5_anchor_policy_strict(config_text: str, readme_text: str):
