@@ -103,3 +103,4 @@ pytest -m fr006
 
 - [ADR-024](../../architecture/standards-and-adrs/ADR-024-i18n-framework-strategy.md)
 - [IPP-E21S02T04](../../implementation-cycles/IPP-E21S02T04-locale-switching.md)
+- [locale-formatting-conventions.md](locale-formatting-conventions.md) (E21:S02:T05)

@@ -9,10 +9,10 @@ housekeeping_policy: keep
 # Epic 21, Story 2, Task 5: Configure date/time/number formatting per locale
 
 **Task ID:** E21:S02:T05  
-**Status:** IN PROGRESS  
+**Status:** COMPLETE  
 **Priority:** MEDIUM  
-**Last updated:** 2026-06-07 (E21:S02:T05 — locale formatting implementation)
-**Version:** v0.21.2.5+0
+**Last updated:** 2026-06-07 (v0.21.2.5+1 — locale formatting shipped)
+**Version:** v0.21.2.5+1
 **Code:** E21S02T05
 
 ---
@@ -48,17 +48,19 @@ Configure date, time, and number formatting per locale.
 
 ## Acceptance Criteria
 
-- [ ] Date formatting works per locale
-- [ ] Time formatting works per locale
-- [ ] Number formatting works per locale
-- [ ] Formatting tested across locales
+- [x] Date formatting works per locale
+- [x] Time formatting works per locale
+- [x] Number formatting works per locale
+- [x] Formatting tested across locales
+
+✅ **COMPLETE (v0.21.2.5+1)**
 
 ---
 
 ## Planning
 
 **IPP:** [IPP-E21S02T05-locale-formatting.md](../../../../implementation-cycles/IPP-E21S02T05-locale-formatting.md)  
-**Policy:** [locale-formatting-conventions.md](../../../../governance/standards/locale-formatting-conventions.md) (on implementation)
+**Policy:** [locale-formatting-conventions.md](../../../../governance/standards/locale-formatting-conventions.md)
 
 ---
 

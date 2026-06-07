@@ -10,7 +10,7 @@ housekeeping_policy: keep
 
 **Host Task:** [`T05-configure-datetimenumber-formatting-per-locale.md`](../project-management/kanban/epics/epic-21/story-02-internationalisation-infrastructure/T05-configure-datetimenumber-formatting-per-locale.md) **(E21:S02:T05)**  
 **Planning for:** [ADR-024](../architecture/standards-and-adrs/ADR-024-i18n-framework-strategy.md) · [IPP-E21S02T04](IPP-E21S02T04-locale-switching.md)  
-**Status:** In progress — target `v0.21.2.5+1` (`RW E21:S02:T05 --art`)  
+**Status:** Complete — released `v0.21.2.5+1` (`RW E21:S02:T05 --art`)  
 **Branch:** `epic/21-internationalisation-localisation`
 
 ---
@@ -119,11 +119,11 @@ housekeeping_policy: keep
 
 ## 7. Success criteria
 
-- [ ] Date, time, and number formatting per locale (task AC)
-- [ ] Tests across multiple locales (task AC)
-- [ ] Stdlib fallback documented and tested
-- [ ] `fr006` green
-- [ ] RW `v0.21.2.5+1`
+- [x] Date, time, and number formatting per locale (task AC)
+- [x] Tests across multiple locales (task AC)
+- [x] Stdlib fallback documented and tested
+- [x] `fr006` green
+- [x] RW `v0.21.2.5+1`
 
 ---
 

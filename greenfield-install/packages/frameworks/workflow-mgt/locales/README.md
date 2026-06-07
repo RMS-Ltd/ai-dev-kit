@@ -46,7 +46,12 @@ See [`manifest.yaml`](manifest.yaml). Kanban templates: `packages/frameworks/kan
 
 | Task | Change |
 | ---- | ------ |
-| E21:S02:T02 | Manifest v2 + keys scaffold — **IPW complete** |
+| E21:S02:T02 | Manifest v2 + keys scaffold — **COMPLETE** @ v0.21.2.2+1 |
+| E21:S02:T03 | Locale detection — **COMPLETE** @ v0.21.2.3+1 |
+| E21:S02:T04 | Language switching — **COMPLETE** @ v0.21.2.4+1 |
+| E21:S02:T05 | Date/time/number formatting — **COMPLETE** @ v0.21.2.5+1 |
 | E21:S02:T06 | `resolve_locale_key()` |
 
-Planning: [IPP-E21S02T02](../../../../docs/implementation-cycles/IPP-E21S02T02-locale-file-structure.md)
+Formatting APIs: [`locale_formatting.py`](../scripts/locale_formatting.py).
+
+Planning: [IPP-E21S02T05](../../../../docs/implementation-cycles/IPP-E21S02T05-locale-formatting.md) · [locale-formatting-conventions](../../../../docs/governance/standards/locale-formatting-conventions.md)

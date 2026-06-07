@@ -15,6 +15,14 @@ LOC_SCRIPT = SCRIPTS / "localisation_config.py"
 FMT_SCRIPT = SCRIPTS / "locale_formatting.py"
 
 
+def _babel_installed() -> bool:
+    try:
+        import babel  # noqa: F401
+    except ImportError:
+        return False
+    return True
+
+
 def _load_modules():
     loc_spec = importlib.util.spec_from_file_location("localisation_config", LOC_SCRIPT)
     loc_mod = importlib.util.module_from_spec(loc_spec)
@@ -63,10 +71,7 @@ def test_t2_locale_format_profile(fmt):
     assert fmt.get_locale_format_profile("de")["currency"] == "EUR"
 
 
-@pytest.mark.skipif(
-    not _load_modules()[1].is_babel_available(),
-    reason="Babel not installed",
-)
+@pytest.mark.skipif(not _babel_installed(), reason="Babel not installed")
 def test_t3_format_date_differs_by_locale(fmt):
     """T3: en-GB and en-US date formatting differ when Babel is present."""
     gb = fmt.format_date(SAMPLE_DATE, "en-GB", style="medium")
@@ -75,20 +80,14 @@ def test_t3_format_date_differs_by_locale(fmt):
     assert "2026" in gb and "2026" in us
 
 
-@pytest.mark.skipif(
-    not _load_modules()[1].is_babel_available(),
-    reason="Babel not installed",
-)
+@pytest.mark.skipif(not _babel_installed(), reason="Babel not installed")
 def test_t4_format_number_german_grouping(fmt):
     """T4: German locale uses European decimal separator."""
     result = fmt.format_number(1234.5, "de")
     assert "," in result or "1" in result
 
 
-@pytest.mark.skipif(
-    not _load_modules()[1].is_babel_available(),
-    reason="Babel not installed",
-)
+@pytest.mark.skipif(not _babel_installed(), reason="Babel not installed")
 def test_t5_format_currency_us(fmt):
     """T5: US currency formatting includes dollar symbol or USD."""
     result = fmt.format_currency(99.9, "en-US")

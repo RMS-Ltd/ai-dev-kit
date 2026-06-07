@@ -27,6 +27,14 @@ _mod = importlib.util.module_from_spec(_spec)
 sys.modules["localisation_config"] = _mod
 _spec.loader.exec_module(_mod)
 
+_FMT_MODULE_PATH = _SCRIPTS_DIR / "locale_formatting.py"
+_fmt_spec = importlib.util.spec_from_file_location("locale_formatting", _FMT_MODULE_PATH)
+if _fmt_spec is None or _fmt_spec.loader is None:
+    raise ImportError(f"Cannot load locale_formatting from {_FMT_MODULE_PATH}")
+_fmt_mod = importlib.util.module_from_spec(_fmt_spec)
+sys.modules["locale_formatting"] = _fmt_mod
+_fmt_spec.loader.exec_module(_fmt_mod)
+
 DEFAULT_LANGUAGE = _mod.DEFAULT_LANGUAGE
 LOCALE_VARIANTS = _mod.LOCALE_VARIANTS
 LOCALISATION_CONFIG_FILENAME = _mod.LOCALISATION_CONFIG_FILENAME
@@ -56,6 +64,17 @@ workflow_locales_root = _mod.workflow_locales_root
 KANBAN_INTAKE_TEMPLATE_KEYS = _mod.KANBAN_INTAKE_TEMPLATE_KEYS
 render_locale_text = _mod.render_locale_text
 resolve_kanban_intake_template = _mod.resolve_kanban_intake_template
+LOCALE_FORMAT_PROFILES = _fmt_mod.LOCALE_FORMAT_PROFILES
+is_babel_available = _fmt_mod.is_babel_available
+to_babel_locale = _fmt_mod.to_babel_locale
+get_locale_format_profile = _fmt_mod.get_locale_format_profile
+format_date = _fmt_mod.format_date
+format_time = _fmt_mod.format_time
+format_datetime = _fmt_mod.format_datetime
+format_decimal = _fmt_mod.format_decimal
+format_number = _fmt_mod.format_number
+format_currency = _fmt_mod.format_currency
+format_for_project = _fmt_mod.format_for_project
 
 __all__ = [
     "ADK_ACCEPT_LANGUAGE_ENV",
@@ -72,7 +91,17 @@ __all__ = [
     "parse_accept_language",
     "parse_locale_tag",
     "ensure_localisation_config",
+    "format_currency",
+    "format_date",
+    "format_datetime",
+    "format_decimal",
+    "format_for_project",
+    "format_number",
+    "format_time",
+    "get_locale_format_profile",
+    "is_babel_available",
     "locale_payload_from_tag",
+    "LOCALE_FORMAT_PROFILES",
     "KANBAN_INTAKE_TEMPLATE_KEYS",
     "kanban_locales_root",
     "load_locale_manifest",
@@ -82,6 +111,7 @@ __all__ = [
     "resolve_language",
     "resolve_language_from_args",
     "switch_locale",
+    "to_babel_locale",
     "resolve_locale_asset",
     "resolve_kanban_intake_template",
     "render_locale_text",

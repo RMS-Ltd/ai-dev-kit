@@ -189,14 +189,7 @@ def format_number(
     """Format a grouped number for the given locale tag."""
     locale_tag = map_to_supported_locale(locale_tag)
 
-    if is_babel_available():
-        from babel.numbers import format_number as babel_format_number
-
-        return babel_format_number(value, locale=to_babel_locale(locale_tag))
-
-    if isinstance(value, int):
-        return f"{value:,}"
-    return f"{value:,.2f}"
+    return format_decimal(value, locale_tag)
 
 
 def format_currency(

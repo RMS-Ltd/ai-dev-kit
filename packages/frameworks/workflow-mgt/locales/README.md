@@ -49,8 +49,11 @@ See [`manifest.yaml`](manifest.yaml). Kanban templates: `packages/frameworks/kan
 | E21:S02:T02 | Manifest v2 + keys scaffold — **COMPLETE** @ v0.21.2.2+1 |
 | E21:S02:T03 | Locale detection + `resolve_language` precedence — **COMPLETE** @ v0.21.2.3+1 |
 | E21:S02:T04 | Language switching — **COMPLETE** @ v0.21.2.4+1 |
+| E21:S02:T05 | Date/time/number formatting (`locale_formatting.py`) — **COMPLETE** @ v0.21.2.5+1 |
 | E21:S02:T06 | `resolve_locale_key()` |
 
 Detection APIs live in [`localisation_config.py`](../scripts/localisation_config.py): `detect_system_locale`, `detect_browser_locale`, `detect_env_locale`, `map_to_supported_locale`.
 
-Planning: [IPP-E21S02T02](../../../../docs/implementation-cycles/IPP-E21S02T02-locale-file-structure.md) · [IPP-E21S02T03](../../../../docs/implementation-cycles/IPP-E21S02T03-locale-detection.md) · [locale-detection-conventions](../../../../docs/governance/standards/locale-detection-conventions.md)
+Formatting APIs: [`locale_formatting.py`](../scripts/locale_formatting.py) — `format_date`, `format_number`, `format_currency`, `format_for_project` (E21:S02:T05).
+
+Planning: [IPP-E21S02T02](../../../../docs/implementation-cycles/IPP-E21S02T02-locale-file-structure.md) · [IPP-E21S02T03](../../../../docs/implementation-cycles/IPP-E21S02T03-locale-detection.md) · [IPP-E21S02T05](../../../../docs/implementation-cycles/IPP-E21S02T05-locale-formatting.md) · [locale-formatting-conventions](../../../../docs/governance/standards/locale-formatting-conventions.md)
