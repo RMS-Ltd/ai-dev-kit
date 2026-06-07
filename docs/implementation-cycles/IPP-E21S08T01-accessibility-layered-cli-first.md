@@ -182,7 +182,7 @@ T01 audit deliverable is **doc-only** — tests land in T03.
 
 - [x] Layer model documented and linked from story, FR-115, T01
 - [x] T01 audit covers CLI deeply; Layers 2–5 catalogue-only
-- [ ] T02 ADR defines Layer 1 exit criteria before T03 starts
+- [x] T02 ADR defines Layer 1 exit criteria before T03 starts — ADR-025 @ v0.21.8.2+1
 - [ ] Layer 1 implementation (T03) not started until T01 + T02 COMPLETE
 
 ---

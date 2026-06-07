@@ -12,8 +12,8 @@ housekeeping_policy: keep
 **Priority:** MEDIUM  
 **Estimated Effort:** [TBD]  
 **Created:** 2026-06-07  
-**Last updated:** 2026-06-07 (v0.21.8.1+1 — T01 COMPLETE; T02 next)  
-**Version:** v0.21.8.1+1  
+**Last updated:** 2026-06-07 (v0.21.8.2+1 — T02 COMPLETE; T03 next)  
+**Version:** v0.21.8.2+1  
 **Code:** E21S08
 
 ---
@@ -48,11 +48,11 @@ Deliver a layered accessibility programme:
   - Report: [adk-accessibility-baseline-layer1-cli.md](../../knowledge/analysis/adk-accessibility-baseline-layer1-cli.md)
   - Planning: [IPP-E21S08T01](../../implementation-cycles/IPP-E21S08T01-accessibility-layered-cli-first.md)
   - FR: [FR-115](../../fr-br/FR-115-accessibility-standards-compatibility.md)
-- [ ] **E21:S08:T02 – Layered accessibility strategy ADR (Layer 0)** - TODO
+- [x] **E21:S08:T02 – Layered accessibility strategy ADR (Layer 0)** - COMPLETE (v0.21.8.2+1 — ADR-025)
   - Task: [`T02-adk-accessibility-strategy-adr`](story-08-accessibility/T02-adk-accessibility-strategy-adr.md)
+  - ADR: [ADR-025](../../../architecture/standards-and-adrs/ADR-025-layered-accessibility-strategy.md)
 - [ ] **E21:S08:T03 – CLI and terminal output accessibility (Layer 1)** - TODO
   - Task: [`T03-cli-and-terminal-output-accessibility`](story-08-accessibility/T03-cli-and-terminal-output-accessibility.md)
-  - Blocked by: T02
 - [ ] **E21:S08:T04 – Docusaurus public docs portal accessibility (Layer 2)** - DEFERRED
   - Task: [`T04-docusaurus-public-docs-portal-accessibility`](story-08-accessibility/T04-docusaurus-public-docs-portal-accessibility.md)
   - Blocked by: Layer 1 COMPLETE
@@ -73,7 +73,7 @@ Deliver a layered accessibility programme:
 ### Layer 0–1 (initial scope)
 
 - [x] CLI baseline audit published with severity-ranked gaps (Layers 2–5 catalogue-only) — T01 @ v0.21.8.1+1
-- [ ] Layered strategy ADR defines Layer 1 exit criteria
+- [x] Layered strategy ADR defines Layer 1 exit criteria — T02 @ v0.21.8.2+1 (ADR-025)
 - [ ] CLI output uses text labels (not emoji/colour-only); honours `NO_COLOR`
 - [ ] FR-108 error shape preserved; plain-language recovery paths
 - [ ] CLI accessibility conventions doc + tests green
@@ -111,6 +111,7 @@ Deliver a layered accessibility programme:
 
 ## References
 
+- [ADR-025](../../../architecture/standards-and-adrs/ADR-025-layered-accessibility-strategy.md)
 - [IPP-E21S08T01](../../implementation-cycles/IPP-E21S08T01-accessibility-layered-cli-first.md)
 - [FR-115](../../fr-br/FR-115-accessibility-standards-compatibility.md)
 - [WCAG 2.2](https://www.w3.org/TR/WCAG22/)

@@ -18,7 +18,7 @@ housekeeping_policy: keep
 
 **Implementing Story:** [E21:S08 – Accessibility](../epics/epic-21/story-08-accessibility.md)
 
-**Implementing tasks:** [E21:S08:T01](../epics/epic-21/story-08-accessibility/T01-accessibility-baseline-audit-and-standards-mapping.md) **v0.21.8.1+1** COMPLETE (CLI baseline audit) · E21:S08:T02–T07 TODO / DEFERRED
+**Implementing tasks:** [E21:S08:T01](../epics/epic-21/story-08-accessibility/T01-accessibility-baseline-audit-and-standards-mapping.md) **v0.21.8.1+1** COMPLETE · [E21:S08:T02](../epics/epic-21/story-08-accessibility/T02-adk-accessibility-strategy-adr.md) **v0.21.8.2+1** COMPLETE ([ADR-025](../../architecture/standards-and-adrs/ADR-025-layered-accessibility-strategy.md)) · E21:S08:T03–T07 TODO / DEFERRED
 
 **Planning:** [IPP-E21S08T01](../../implementation-cycles/IPP-E21S08T01-accessibility-layered-cli-first.md) — **layered delivery; initial scope = Layer 1 (CLI)**
 

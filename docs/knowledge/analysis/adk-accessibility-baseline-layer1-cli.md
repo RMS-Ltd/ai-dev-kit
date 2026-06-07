@@ -129,7 +129,7 @@ Integrate axe/pa11y for web; CLI lint for `print_*` patterns; manual release che
 
 ## 8. Recommendations for T02
 
-- Adopt **layered ADR** with Layer 1 ship gate before Layer 2+.
+- Adopt **layered ADR** with Layer 1 ship gate before Layer 2+. — ✅ [ADR-025](../../architecture/standards-and-adrs/ADR-025-layered-accessibility-strategy.md) @ v0.21.8.2+1
 - Set CLI target: **EN 301 549 Clause 11.8** + WCAG analogues (not full WCAG web AA on terminal).
 - Defer web WCAG AA to Layer 2.
 
