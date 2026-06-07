@@ -1,0 +1,14 @@
+version: 1
+default_locale: en-GB
+framework: workflow-mgt
+locales:
+  en-GB:
+    scaffolds:
+      changelog_stub: scaffolds/changelog_stub.md
+      version_scaffold_decline: scaffolds/version_scaffold_decline.txt
+      changelog_scaffold_decline: scaffolds/changelog_scaffold_decline.txt
+  en-US:
+    scaffolds:
+      changelog_stub: scaffolds/changelog_stub.md
+      version_scaffold_decline: scaffolds/version_scaffold_decline.txt
+      changelog_scaffold_decline: scaffolds/changelog_scaffold_decline.txt

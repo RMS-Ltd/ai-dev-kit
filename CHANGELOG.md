@@ -10,10 +10,10 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 ---
 
 
-## [0.21.1.3+1] - 07-06-26
+## [0.21.1.4+1] - 07-06-26
 
-E21:S01:T03 — **Change implemented:** RW installer language prompt first; `ai-dev-kit-config.yaml` + installer flags. SemVer **v0.4.1070+1**.
+E21:S01:T04 — **Change implemented:** Phase 1 UK/US locale corpus (kanban manifest + templates; RW scaffold fragments). SemVer **v0.4.1071+1**.
 
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.21.1.3+1.md)
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.21.1.4+1.md)
 
 ---

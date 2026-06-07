@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Completed Tasks
 
-**Last Updated:** 2026-06-07 (RW: E21:S01:T03 RW installer language selection)
-**Version:** v0.21.1.3+1
+**Last Updated:** 2026-06-07 (RW: E21:S01:T04 UK/US locale content MVP)
+**Version:** v0.21.1.4+1
 
 > **For MoSCOW prioritized tasks, see:** [`kboard.md`](kboard.md)  
 > **For completed FR/BR/UXR intake items, see:** [`intake-completed.md`](intake-completed.md)
@@ -19,6 +19,11 @@ housekeeping_policy: keep
 ---
 
 ## 20 Most Recently Completed Tasks
+
+#### **RW (2026-06-07)** — E21:S01:T04 @ **v0.21.1.4+1** (UK/US locale content MVP)
+
+- **[E21:S01:T04](epics/epic-21/story-01-language-selection-at-setup/T04-create-ukus-english-content-variants-documentation-templates.md)** — Create UK/US English content variants — kanban locale manifest + 8 core templates; workflow-mgt scaffold fragments.
+  **Completed:** `2026-06-07T10:49:24Z` | **Version:** `v0.21.1.4+1` | **Agent:** `RW E21:S01:T04 --art` | [IPP](../../implementation-cycles/IPP-E21S01T04-ukus-content-variants-mvp.md) | [FR-006](fr-br/FR-006-localization-language-selection-uk-us-english.md)
 
 #### **RW (2026-06-07)** — E21:S01:T03 @ **v0.21.1.3+1** (RW installer language selection)
 

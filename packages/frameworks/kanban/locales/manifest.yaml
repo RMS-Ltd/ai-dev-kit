@@ -1,0 +1,28 @@
+version: 1
+default_locale: en-GB
+framework: kanban
+locales:
+  en-GB:
+    templates:
+      fr: templates/FR_TEMPLATE.md
+      br: templates/BR_TEMPLATE.md
+      uxr: templates/UXR_TEMPLATE.md
+      fb: templates/FB_TEMPLATE.md
+      task: templates/TASK_TEMPLATE.md
+      story: templates/STORY_TEMPLATE.md
+      epic: templates/EPIC_TEMPLATE.md
+      plan_doc: templates/PLAN_DOC_TEMPLATE.md
+    docs:
+      setup_index: docs/setup-locale-index.md
+  en-US:
+    templates:
+      fr: templates/FR_TEMPLATE.md
+      br: templates/BR_TEMPLATE.md
+      uxr: templates/UXR_TEMPLATE.md
+      fb: templates/FB_TEMPLATE.md
+      task: templates/TASK_TEMPLATE.md
+      story: templates/STORY_TEMPLATE.md
+      epic: templates/EPIC_TEMPLATE.md
+      plan_doc: templates/PLAN_DOC_TEMPLATE.md
+    docs:
+      setup_index: docs/setup-locale-index.md
