@@ -13,14 +13,14 @@ housekeeping_policy: keep
 **Priority:** MEDIUM
 **Estimated Effort:** Small
 **Created:** 2026-05-19
-**Last updated:** 2026-06-07 17:00:43 UTC (v0.2.16.10+6: post-FR-114 PR merge infrastructure — version re-anchor, epic/5 branch cleanup)
-**Version:** v0.2.16.10+6
+**Last updated:** 2026-06-07 19:01:58 UTC (v0.2.16.10+7: spike RW SemVer matrix v3 nasty scenarios HS08–HS10)
+**Version:** v0.2.16.10+7
 **Code:** E02S16T10
 **Task Type:** Perpetual Maintenance
 
-**Forensic Marker:** v0.2.16.10+6
+**Forensic Marker:** v0.2.16.10+7
 
-**Version Anchor:** v0.2.16.10+6 (perpetual — post-FR-114 PR merge infrastructure)
+**Version Anchor:** v0.2.16.10+7 (perpetual — spike RW SemVer v3 nasty scenarios)
 
 ---
 

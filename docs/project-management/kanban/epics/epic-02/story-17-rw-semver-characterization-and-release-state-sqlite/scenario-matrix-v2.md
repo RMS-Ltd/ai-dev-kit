@@ -37,3 +37,4 @@
 | Date | Change |
 | ---- | ------ |
 | 2026-06-07 | v2.0 — Class G high-stress (7 scenarios); T06 execution |
+| 2026-06-07 | v3.0 — Class H nasty (HS08–HS10); see [scenario-matrix-v3.md](scenario-matrix-v3.md) |

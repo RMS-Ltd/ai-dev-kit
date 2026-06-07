@@ -153,4 +153,18 @@ This report is suitable for promotion to Notion Engineering KB under **Investiga
 | Friction report ≥3 patterns | ✅ 9 patterns |
 | High-stress ≥5 executed | ✅ 7 executed |
 
-**Remaining:** Story-level AC (T03 design doc close-out optional); merge spike branch decision; optional sqlite default.
+**Remaining:** Story-level AC (T03 design doc close-out optional); merge spike branch decision; optional sqlite default; **matrix v3 nasty scenarios** (HS08–HS10) on spike branch post-T06.
+
+---
+
+## Matrix v3 — Nasty scenarios (pattern-informed)
+
+Added post-story on `spike/rw-semver-friction` — see [scenario-matrix-v3.md](scenario-matrix-v3.md).
+
+| ID | Pattern source | What it proves |
+| -- | -------------- | -------------- |
+| **RW-HS08** | BR-097, Pattern 2/6, B07/S07 | Forbidden recovery commands abort; collision recovery never prescribes `-f` |
+| **RW-HS09** | Pattern 6, V02 | 10× release dry-run push uses per-tag refs only |
+| **RW-HS10** | S05/S07, Pattern 2 | Duplicate PATCH in registry → Step 9 blocks before tag |
+
+**Still manual AGT:** live remote tag divergence, CMW→RW chain, wrong-epic branch RW.

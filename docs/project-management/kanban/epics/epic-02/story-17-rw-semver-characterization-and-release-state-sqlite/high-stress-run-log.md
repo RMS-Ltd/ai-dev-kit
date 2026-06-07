@@ -27,6 +27,18 @@
 
 ---
 
+## Class H — Nasty v3 (post-T06)
+
+| run_id | scenario_id | layer | outcome | friction_notes |
+| ------ | ----------- | ----- | ------- | -------------- |
+| RW-HS08-20260607-1845 | RW-HS08 | DET | ABORT | `tag -f` / `push -f` blocked; recovery prescribes BUILD+1 re-RW |
+| RW-HS09-20260607-1845 | RW-HS09 | DET | PASS | 10× dry-run push; 20 scoped tag refs; never `--tags` |
+| RW-HS10-20260607-1845 | RW-HS10 | DET | ABORT | Duplicate PATCH → Step 9 injective fail before tag |
+
+**Harness:** `test_t06_nasty_scenarios.py` — **12 pytest PASS**
+
+---
+
 ## Manual AGT deferred (v1 skips)
 
 | scenario_id | defer_rationale |
