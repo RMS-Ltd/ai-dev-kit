@@ -1,0 +1,8 @@
+{
+  "rows": {
+    "E02:S17:T01": {
+      "allowed": true,
+      "reason": "RW Step 7 v0.2.17.1+2 — release-scope kboard row version anchor + scenario matrix delivery"
+    }
+  }
+}

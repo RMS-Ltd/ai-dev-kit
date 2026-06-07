@@ -13,8 +13,8 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** Medium  
 **Created:** 2026-06-07  
-**Last updated:** 2026-06-07 (RW **v0.2.17.1+1** — story + task docs filed)  
-**Version Anchor:** v0.2.17.1+1  
+**Last updated:** 2026-06-07 (RW **v0.2.17.1+2** — scenario matrix + run-log schema)  
+**Version Anchor:** v0.2.17.1+2  
 **Code:** E02S17T01
 
 Publication Status: NOT_APPLICABLE
@@ -54,15 +54,10 @@ Define the **canonical scenario catalog** and **run-log schema** for RW and IPW 
 
 ## Deliverable
 
-1. **`scenario-matrix.md`** (companion artefact in this task folder) — named scenarios grouped by class:
-   - **BUILD / tags:** same E:S:T +1; tagged BUILD reuse (expect abort); `--dpz`; `--art`
-   - **SemVer / registry:** rapid same-task releases; new task; out-of-order task; collision recovery
-   - **Volume:** 10+ sequential RW runs; batch local releases then push
-   - **Branch / intent:** wrong epic branch; intent mismatch + override path
-   - **Perpetual:** UKW → RW; CMW threshold
-   - **IPW:** IPP creation; gate blocked until linked; prescribed status transitions
-2. **`run-log-schema.md`** — columns: scenario ID, storage backend (`legacy` | `sqlite`), git ref, trigger, step blocked (if any), validator exit codes, version before/after, registry counter, friction notes
-3. Initial seed of ≥15 scenarios (refinable in T06)
+1. **[`scenario-matrix.md`](scenario-matrix.md)** — 28 named scenarios (classes A–F); execution waves 1–4
+2. **[`run-log-schema.md`](run-log-schema.md)** — column schema, artifact manifest, deterministic runner contract
+3. **[`baseline-run-log.md`](baseline-run-log.md)** — seeded with RW-G03/G04 from v0.2.17.1+1 release (T02 continues here)
+4. Initial seed of ≥15 scenarios (refinable in T06) — **done (28 scenarios)**
 
 ---
 

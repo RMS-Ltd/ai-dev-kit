@@ -12,8 +12,8 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** Large  
 **Created:** 2026-06-07  
-**Last updated:** 2026-06-07 (RW **v0.2.17.1+1** — E02:S17 filed; T01 scenario matrix next)  
-**Version:** v0.2.17.1+1  
+**Last updated:** 2026-06-07 (RW **v0.2.17.1+2** — scenario matrix delivered)  
+**Version:** v0.2.17.1+2  
 **Code:** E2S17
 
 ---

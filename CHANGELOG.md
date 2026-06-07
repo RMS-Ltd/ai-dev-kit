@@ -9,6 +9,14 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.2.17.1+2] - 07-06-26
+
+E02:S17:T01 — **Change implemented:** RW/IPW scenario matrix (28 scenarios, classes A–F), run-log schema, baseline log seed. SemVer **v0.4.1038+2**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.17.1+2.md)
+
+---
+
 ## [0.2.17.1+1] - 07-06-26
 
 E02:S17:T01 — **Change implemented:** Filed Story 17 (RW SemVer characterization & SQLite release state) with T01–T06 task structure on `spike/rw-semver-friction`. SemVer **v0.4.1037+1**.
