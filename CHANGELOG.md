@@ -11,10 +11,10 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
-## [0.8.3.12+12] - 07-06-26
+## [0.8.3.12+13] - 07-06-26
 
-E08:S03:T12 — **Change implemented:** Post-closure follow-on — local CQG 6-hour monitor verified operational; local snapshot 87/Fair @ `42515103`. SemVer **v0.4.1041+12**.
+E08:S03:T12 — **Re-closed:** BR-099 terminal closure — four-surface forensic reconciliation @ +13 (dashboard Good @ +11; local CQG @ +12). SemVer **v0.4.1042+13**.
 
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.8.3.12+12.md)
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.8.3.12+13.md)
 
 ---

@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Board
 
-**Last Updated:** 2026-06-07 (RW: E08:S03:T12)
-**Version:** v0.8.3.12+12
+**Last Updated:** 2026-06-07 (RW: E08:S03:T12 re-close)
+**Version:** v0.8.3.12+13
 
 **Active board contract:** **Sole active MoSCOW board** ([ADR-018](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/architecture/standards-and-adrs/ADR-018-single-kanban-board-consolidation.md)). Rows are **live work** (TODO / IN PROGRESS / OPEN / WAITING / PERPETUAL) plus filed **Could Have** backlog. **Verification (V)** band holds task-shipped / FBU-open items (`⏳ WAITING`). Remove **terminal** rows and archive prose (use [`kanban-completed.md`](kanban-completed.md) / [`intake-completed.md`](intake-completed.md)).
 
@@ -32,7 +32,7 @@ housekeeping_policy: keep
 
 *(FR-114 **IMPLEMENTED** @ v0.5.8.4+3 — T03/T04/T15; see [`intake-completed.md`](intake-completed.md) · [`kanban-completed.md`](kanban-completed.md).)*
 
-*(E08:S03:T12 COMPLETE @ **v0.8.3.12+11** — BR-099 RESOLVED; local CQG monitor verified @ **v0.8.3.12+12**; T16 deferral lifted; see [`kanban-completed.md`](kanban-completed.md) · [`intake-completed.md`](intake-completed.md).)*
+*(E08:S03:T12 COMPLETE — **re-closed** @ **v0.8.3.12+13** — BR-099 RESOLVED; dashboard Good @ +11; local CQG @ +12; T16 handoff; see [`kanban-completed.md`](kanban-completed.md) · [`intake-completed.md`](intake-completed.md).)*
 
 ### Verification (V) - Task Shipped, FBU Verification Pending
 

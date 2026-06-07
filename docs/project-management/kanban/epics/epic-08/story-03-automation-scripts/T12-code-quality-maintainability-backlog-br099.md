@@ -12,11 +12,11 @@ housekeeping_policy: keep
 **Status:** COMPLETE  
 **Priority:** MEDIUM  
 **Created:** 2026-06-05  
-**Last updated:** 2026-06-07 (RW — T12 follow-on @ **v0.8.3.12+12** local CQG monitor verify; closure @ +11)
-**Version Anchor:** v0.8.3.12+12
+**Last updated:** 2026-06-07 (RW — **re-closed** @ **v0.8.3.12+13**; prior sign-off +11; local CQG +12)
+**Version Anchor:** v0.8.3.12+13
 **Code:** E08S03T12
 
-**Scope:** Phased burn-down of GitHub Code Quality **maintainability** findings on `main`. **COMPLETE** @ **v0.8.3.12+11** — operator verified **Good** Maintainability on dashboard @ `main` `ed379ab`; handoff to **T16** perpetual.
+**Scope:** Phased burn-down of GitHub Code Quality **maintainability** findings on `main`. **COMPLETE** — **re-closed** @ **v0.8.3.12+13** (terminal forensic anchor); operator dashboard **Good** @ `main` `ed379ab` (+11); handoff **T16** perpetual.
 
 **Upstream:** [BR-099 — Code Quality maintainability backlog](../../../fr-br/BR-099-code-quality-maintainability-backlog.md)
 
@@ -416,7 +416,7 @@ Publication Status: NOT_APPLICABLE
 | Ref | `main` @ `ed379abb` |
 | Maintainability score | **Good** |
 | Reliability score | **Good** |
-| RW | **v0.8.3.12+11** |
+| RW | **v0.8.3.12+13** (re-close; +11 dashboard Good; +12 local CQG) |
 | Handoff | **E08:S03:T16** perpetual (deferral lifted) |
 
 ---
@@ -428,7 +428,7 @@ Publication Status: NOT_APPLICABLE
 - [x] Open maintainability count reduced ≥50% vs baseline (**560→145**, −74.1% on dashboard re-scan).
 - [x] Maintainability score **Good** or better (operator verified @ `main` `ed379ab`, 2026-06-07).
 - [x] CI (`pytest`, workflow-scripts-pytest, tests) green (local — 407 / 119 passed @ 2026-06-06).
-- [x] **BR-099** terminal closure via **RW E08:S03:T12 --art** @ **v0.8.3.12+11**.
+- [x] **BR-099** terminal closure via **RW E08:S03:T12 --art** @ **v0.8.3.12+11**; **re-closed** @ **v0.8.3.12+13**.
 
 ---
 

@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Completed Tasks
 
-**Last Updated:** 2026-06-07 (RW: E01:S06:T02 FR-117 MIT LICENSE)
-**Version:** v0.1.6.2+1
+**Last Updated:** 2026-06-07 (RW: E08:S03:T12 re-close)
+**Version:** v0.8.3.12+13
 
 > **For MoSCOW prioritized tasks, see:** [`kboard.md`](kboard.md)  
 > **For completed FR/BR/UXR intake items, see:** [`intake-completed.md`](intake-completed.md)
@@ -19,6 +19,11 @@ housekeeping_policy: keep
 ---
 
 ## 20 Most Recently Completed Tasks
+
+#### **RW (2026-06-07)** — E08:S03:T12 @ **v0.8.3.12+13** (BR-099 **re-close** — terminal forensic anchor)
+
+- **[E08:S03:T12](epics/epic-08/story-03-automation-scripts/T12-code-quality-maintainability-backlog-br099.md)** — **BR-099**: Re-closed @ **+13** — four-surface RW reconciliation; consolidates dashboard **Good** @ +11 and local CQG @ +12; handoff **T16** perpetual.
+  **Completed:** `2026-06-07T18:06:22Z` | **Version:** `v0.8.3.12+13` | **Agent:** `RW E08:S03:T12 --art` | [BR-099](fr-br/BR-099-code-quality-maintainability-backlog.md) | [—IPP—](../../implementation-cycles/IPP-E08S03T12-code-quality-maintainability-backlog-br099.md)
 
 #### **RW (2026-06-07)** — E01:S06:T02 @ **v0.1.6.2+1** (FR-117 MIT LICENSE file and repository legal metadata)
 

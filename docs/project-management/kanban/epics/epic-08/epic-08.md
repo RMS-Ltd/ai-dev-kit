@@ -12,7 +12,7 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** Medium  
 **Created:** 2025-12-05  
-**Last updated:** 2026-06-07 (RW — T12 follow-on @ v0.8.3.12+12 local CQG verify)
+**Last updated:** 2026-06-07 (RW — T12 **re-closed** @ v0.8.3.12+13)
 **Branch:** `epic/8-tooling-automation`  
 **Version Schema:** `0.8.S.T+B`  
 **Production URL:** [N/A for this repo]

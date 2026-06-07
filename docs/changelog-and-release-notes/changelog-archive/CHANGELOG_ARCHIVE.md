@@ -6,6 +6,13 @@ E01:S06:T02 — **Change implemented:** MIT `LICENSE` file; README and CONTRIBUT
 [Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.1.6.2+1.md)
 
 ---
+## [0.8.3.12+13] - 07-06-26
+
+E08:S03:T12 — **Re-closed:** BR-099 terminal closure @ +13. SemVer **v0.4.1042+13**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.8.3.12+13.md)
+
+---
 ## [0.8.3.12+12] - 07-06-26
 
 E08:S03:T12 — **Change implemented:** Post-closure follow-on — local CQG monitor verified; semver registry @ +12. SemVer **v0.4.1041+12**.
