@@ -1,0 +1,59 @@
+[
+  {
+    "source_path": "knowledge/articles/README.md"
+  },
+  {
+    "source_path": "knowledge/articles/cursor-scaling-long-running-autonomous-coding-agents.md"
+  },
+  {
+    "source_path": "knowledge/articles/hybrid-task-template-system-building-better-templates.md"
+  },
+  {
+    "source_path": "knowledge/guides/README.md"
+  },
+  {
+    "source_path": "knowledge/guides/badge-setup-for-private-repos.md"
+  },
+  {
+    "source_path": "knowledge/guides/building-persistent-knowledge.md"
+  },
+  {
+    "source_path": "knowledge/guides/package-maintenance-and-release.md"
+  },
+  {
+    "source_path": "knowledge/kb-migration-log.md"
+  },
+  {
+    "source_path": "knowledge/reviews/pir/Epic-2/PIR-Epic-2-TEST-v0.2.5.10+1.md"
+  },
+  {
+    "source_path": "knowledge/reviews/pir/Epic-2/PIR-TEST-EXECUTION-REPORT.md"
+  },
+  {
+    "source_path": "knowledge/reviews/pir/README.md"
+  },
+  {
+    "source_path": "knowledge/reviews/pir/Story-2/PIR-STORY-TEST-EXECUTION-REPORT.md"
+  },
+  {
+    "source_path": "knowledge/reviews/pir/Story-2/PIR-Story-2-TEST-v0.2.2.8+1.md"
+  },
+  {
+    "source_path": "knowledge/use-cases/discovered/README.md"
+  },
+  {
+    "source_path": "knowledge/use-cases/discovered/UC-D-001-reopening-br-tasks.md"
+  },
+  {
+    "source_path": "knowledge/use-cases/discovered/UC-D-002-bidirectional-wiring.md"
+  },
+  {
+    "source_path": "knowledge/use-cases/discovered/UC-D-003-pattern-discovery-workflow.md"
+  },
+  {
+    "source_path": "knowledge/use-cases/discovered/UC-D-004-story-task-docs-batch-creation.md"
+  },
+  {
+    "source_path": "knowledge/use-cases/templates/DISCOVERED_USE_CASE_TEMPLATE.md"
+  }
+]

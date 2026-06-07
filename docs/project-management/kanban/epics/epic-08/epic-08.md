@@ -12,7 +12,7 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** Medium  
 **Created:** 2025-12-05  
-**Last updated:** 2026-06-06 (v0.8.3.17+1 – Kanban documentation setup)
+**Last updated:** 2026-06-06 (UKW — T12 wave-6 IPW @ v0.8.3.12+9; T17 CQG @ v0.8.3.17+4 verify)
 **Branch:** `epic/8-tooling-automation`  
 **Version Schema:** `0.8.S.T+B`  
 **Production URL:** [N/A for this repo]
@@ -20,22 +20,24 @@ housekeeping_policy: keep
 ---
 
 ## Story Checklist
-
 - [x] **E8:S01 – Code Generators** - ✅ COMPLETE (v0.8.1.3+1 – All tasks complete)
   - Story: [`story-01-code-generators.md`](story-01-code-generators.md)
+
 
 - [x] **E8:S02 – Additional Validators** - ✅ COMPLETE (v0.8.2.3+1 – All tasks complete)
   - Story: [`story-02-additional-validators.md`](story-02-additional-validators.md)
 
-- [ ] **E8:S03 – Automation Scripts** - IN PROGRESS (v0.8.3.12+8 – T12 closure docs; T17 CQG; T15–T16 perpetual)
+
+- [ ] **E8:S03 – Automation Scripts** - IN PROGRESS (v0.8.3.12+9 – T12 wave-6 IPW; T17 CQG; T15–T16 perpetual)
   - Story: [`story-03-automation-scripts.md`](story-03-automation-scripts.md)
+
 
 - [ ] **E8:S04 – Tooling & Automation Package Implementation Review** - TODO (v0.8.4.0+0)
   - Story: [`story-04-tooling-automation-package-implementation-review.md`](story-04-tooling-automation-package-implementation-review.md)
 
+
 - [ ] **E8:S05 – Tooling & Automation Package Installation Evaluation** - TODO (v0.8.5.0+0)
   - Story: [`story-05-tooling-automation-package-installation-evaluation.md`](story-05-tooling-automation-package-installation-evaluation.md)
-
 
 ---
 

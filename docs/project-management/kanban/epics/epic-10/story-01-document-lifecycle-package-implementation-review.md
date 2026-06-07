@@ -8,12 +8,12 @@ housekeeping_policy: keep
 
 # Story 001 – Document Lifecycle Package Implementation Review
 
-**Status:** IN PROGRESS
+**Status:** COMPLETE  
 **Priority:** HIGH  
 **Estimated Effort:** [TBD]  
 **Created:** 2026-01-18  
-**Last updated:** 2026-06-06 (v0.10.1.6+4 – T06 post-RC CI hygiene)
-**Version:** v0.10.1.6+4
+**Last updated:** 2026-06-06 (E10:S01 story sign-off RW — **v0.10.1.10+2**; RC **APPROVE** @ T06)
+**Version:** v0.10.1.10+2
 **Code:** E10S01
 
 ---
@@ -84,7 +84,8 @@ Provide a complete implementation review, evidence, and remediation plan to supp
 - [x] Behavioral validation notes captured. ✅ (v0.10.1.3+1)
 - [x] Integration alignment reviewed and documented. ✅ (v0.10.1.4+1)
 - [x] Gap log created with severity levels. ✅ (v0.10.1.5+1)
-- [x] RC sign-off criteria and remediation tasks defined. ✅ (v0.10.1.6+3; **APPROVE** posture — T08–T10 remediation complete)
+- [x] RC sign-off criteria and remediation tasks defined. ✅ (v0.10.1.6+4; **APPROVE** — T08–T10 remediation verified @ v0.10.1.10+1)
+- [x] Story sign-off: all tasks T01–T10 COMPLETE; handoff to [E10:S02](../story-02-document-lifecycle-package-installation-evaluation.md) (installation evaluation).
 
 ---
 

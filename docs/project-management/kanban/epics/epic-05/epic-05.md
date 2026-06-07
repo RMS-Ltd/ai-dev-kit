@@ -12,7 +12,7 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** [TBD]  
 **Created:** 2025-12-05  
-**Last updated:** 2026-06-04 (E05:S09:T12 **v0.5.9.12+3**; E05:S01 **CLOSED**)
+**Last updated:** 2026-06-06 (UKW — E05:S08 FR-114 T03/T04 active; E05:S09:T15 intake)
 **Branch:** `epic/5-documentation-management`  
 **Version Schema:** `0.5.S.T+B`  
 **Production URL:** [N/A for this repo]
@@ -25,14 +25,17 @@ housekeeping_policy: keep
   - **Note:** S00 is Epic-level abstract space only. Repository tasks migrated to S01 (E09:S01:T08).
 
 
+
 - [x] **E5:S01 – FR Repo (HISTORICAL REGISTRY)** - ✅ CLOSED (2026-06-04 — FR-072; no new intake; legacy **`v0.5.1.75+1` T75**; T74; T73)
   - Story: [`story-01-fr-repo.md`](story-01-fr-repo.md)
   - **Note:** S01 is closed historical FR registry only. S01 omitted from board displays (UX optimization).
 
 
+
 - [ ] **E5:S02 – Documentation Maintenance Framework** - IN PROGRESS (T02-T04 complete, T06 intake ✅ v0.5.2.6+1; T01, T05 TODO — FR-063 impl pending)
   - Story: [`story-02-documentation-maintenance-framework.md`](story-02-documentation-maintenance-framework.md)
   - **Note:** Renumbered from S01 to S02 as part of repository story migration (E09:S01:T08)
+
 
 
 - [x] **E5:S03 – Documentation Quality Assurance** - COMPLETE ✅ (v0.5.3.3+1, migrated from v0.5.2.3+1)
@@ -41,9 +44,11 @@ housekeeping_policy: keep
   - **Note:** Renumbered from S02 to S03 as part of repository story migration (E09:S01:T08)
 
 
+
 - [ ] **E5:S04 – Documentation Automation** - IN PROGRESS (T01 complete, T02-T03 TODO)
   - Story: [`story-04-documentation-automation.md`](story-04-documentation-automation.md)
   - **Note:** Renumbered from S03 to S04 as part of repository story migration (E09:S01:T08)
+
 
 
 - [ ] **E5:S05 – Framework Documentation Management** - IN PROGRESS
@@ -52,10 +57,12 @@ housekeeping_policy: keep
   - **Note:** Renumbered from S04 to S05 as part of repository story migration (E09:S01:T08)
 
 
+
 - [ ] **E5:S06 – Legacy Repository Incorporation** - IN PROGRESS
   - Story: [`story-06-legacy-repository-incorporation.md`](story-06-legacy-repository-incorporation.md)
   - Tasks: T01 ✅, T02-T25 TODO (25 tasks across 4 phases)
   - **Note:** Renumbered from S05 to S06 as part of repository story migration (E09:S01:T08)
+
 
 
 - [x] **E5:S07 – Policy Documentation Structure** - COMPLETE ✅ (v0.5.7.1+1 — FR-022 policy salience shipped)
@@ -64,15 +71,16 @@ housekeeping_policy: keep
   - **Note:** Renumbered from S06 to S07 as part of repository story migration (E09:S01:T08)
 
 
-- [ ] **E5:S08 – Knowledge Base** - IN PROGRESS (v0.5.8.2+8 – T02 ✅ E04:S16:T05 gap log spec, validator)
+
+- [x] **E5:S08 – Knowledge Base** - ✅ COMPLETE (**v0.5.8.4+2** — FR-114 T03/T04)
   - Story: [`story-08-knowledge-base.md`](story-08-knowledge-base.md)
   - **Note:** Renumbered from S07 to S08 as part of repository story migration (E09:S01:T08)
 
 
-- [ ] **E5:S09 – Docusaurus Documentation Portal** - IN PROGRESS (T01–T12 ✅; **T12/UXR-018** ✅ **v0.5.9.12+3**)
+
+- [x] **E5:S09 – Docusaurus Documentation Portal** - ✅ COMPLETE (**v0.5.9.15+2** — FR-114 T15)
   - Story: [`story-09-docusaurus-documentation-portal.md`](story-09-docusaurus-documentation-portal.md)
   - **Note:** Atomic FR chain for full Docusaurus adoption (`portal/` → `docs/` publish, CI, deploy, search).
-
 
 ---
 

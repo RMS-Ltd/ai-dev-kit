@@ -26,7 +26,7 @@ Adapt content and features for different cultures and regions. This story covers
 
 ## Goal
 
-Ensure framework content and features are culturally appropriate for different regions, with proper formatting, examples, and UI adaptations. This completes Phase 2 of FR-006 (international localization).
+Ensure framework content and features are culturally appropriate for different regions, with proper formatting, examples, and UI adaptations. This completes Phase 2 of FR-006 (international localisation).
 
 ---
 
@@ -64,16 +64,16 @@ Ensure framework content and features are culturally appropriate for different r
 ## Dependencies
 
 **Blocks:**
-- Complete international localization (Phase 2)
+- Complete international localisation (Phase 2)
 
 **Blocked By:**
-- E21:S01: Internationalization Infrastructure
-- E21:S02: Translation and Localization
+- E21:S01: Internationalisation Infrastructure
+- E21:S02: Translation and Localisation
 
 **Related Work:**
-- **FR-006:** Localization and Language Selection (Phase 2)
-- **E21:S01:** Internationalization Infrastructure
-- **E21:S02:** Translation and Localization
+- **FR-006:** Localisation and Language Selection (Phase 2)
+- **E21:S01:** Internationalisation Infrastructure
+- **E21:S02:** Translation and Localisation
 
 ---
 

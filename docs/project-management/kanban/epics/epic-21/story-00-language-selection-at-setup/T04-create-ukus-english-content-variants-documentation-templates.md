@@ -50,7 +50,7 @@ housekeeping_policy: keep
 
 - [ ] UK English variants created for all documentation
 - [ ] UK English variants created for all templates
-- [ ] Content organized in locale directories
+- [ ] Content organised in locale directories
 - [ ] Content generation uses selected variant
 
 **Key Differences (UK vs US English):**
@@ -59,6 +59,20 @@ housekeeping_policy: keep
 - Date format: DD/MM/YYYY vs MM/DD/YYYY (if applicable)
 
 ---
+
+---
+
+## Kanban-init intake
+
+**Branch:** `epic/21-internationalisation-localisation`
+
+**Trigger:**
+
+```text
+RW -k E21:S00:T04 --art --dpz
+```
+
+**Target version anchor:** `v0.21.0.4+0` (doc-init BUILD +0 per [BR-067](../../../fr-br/BR-067-rw-first-doc-only-release-defaults-to-build-plus-one-not-plus-zero.md)).
 
 ---
 

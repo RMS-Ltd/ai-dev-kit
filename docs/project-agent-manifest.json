@@ -41,6 +41,11 @@
       "id": "P-INTAKE-ATOMIC",
       "rule": "FR/BR/UXR intake requires task doc + bidirectional links in same session (KG-R2).",
       "sourcePath": "packages/frameworks/kanban/FR_BR_INTAKE_GUIDE.md"
+    },
+    {
+      "id": "P-NOTION-FIRST",
+      "rule": "New maintainer docs default to Notion MCP; git stubs only per ADR-024 criteria.",
+      "sourcePath": "docs/architecture/standards-and-adrs/ADR-024-documentation-surfaces-three-surface-model-fr114.md"
     }
   ],
   "taskRouting": [
@@ -88,6 +93,16 @@
       "relatedTrack": "planning"
     },
     {
+      "intent": "maintainer-kb",
+      "keywords": ["Notion", "maintainer KB", "knowledge base", "investigation", "analysis", "records", "maintainer doc", "Engineering KB"],
+      "loadFirst": [
+        "rw-config.yaml",
+        "docs/architecture/standards-and-adrs/ADR-024-documentation-surfaces-three-surface-model-fr114.md",
+        "docs/knowledge/README.md"
+      ],
+      "relatedTrack": "maintainer-kb"
+    },
+    {
       "intent": "agent-bootstrap",
       "keywords": ["bootstrap", "manifest", "cold start", "routing", "AGENTS"],
       "loadFirst": [
@@ -126,6 +141,11 @@
       "id": "meta",
       "label": "Agent bootstrap and routing",
       "entryPath": "docs/architecture/standards-and-adrs/ADR-012-agent-bootstrap-and-task-routing.md"
+    },
+    {
+      "id": "maintainer-kb",
+      "label": "Notion maintainer KB and investigations",
+      "entryPath": "docs/architecture/standards-and-adrs/ADR-024-documentation-surfaces-three-surface-model-fr114.md"
     }
   ],
   "canon": [
@@ -143,8 +163,18 @@
       "id": "C-ADR-012",
       "label": "Agent bootstrap ADR",
       "path": "docs/architecture/standards-and-adrs/ADR-012-agent-bootstrap-and-task-routing.md"
+    },
+    {
+      "id": "C-ADR-024",
+      "label": "Documentation surfaces ADR (FR-114)",
+      "path": "docs/architecture/standards-and-adrs/ADR-024-documentation-surfaces-three-surface-model-fr114.md"
     }
   ],
+  "documentationSurfaces": {
+    "notionHubUrl": "https://www.notion.so/378b6f8962c181dda420fb0236d9e060",
+    "notionKbUrl": "https://www.notion.so/378b6f8962c18189aacbe8629677403d",
+    "configSource": "rw-config.yaml"
+  },
   "openWork": [
     {
       "taskId": "E07:S07:T03",

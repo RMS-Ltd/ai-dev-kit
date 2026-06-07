@@ -68,7 +68,7 @@ These are **dev-kit-specific applications** of the frameworks. Adopters should c
 
 ## Book / authoring content (not in this repository)
 
-Manuscript, proposals, and book-project Kanban (formerly Epic 24) live in the **private companion repository** `RMS-Ltd/ai-dev-kit-book`, not in the public AI Dev Kit tree. See [ADR-006](../../architecture/standards-and-adrs/ADR-006-book-project-private-repository-spin-off.md).
+Manuscript, proposals, and book-project Kanban (formerly Epic 24) live in the **private companion repository** `RMS-Ltd/ai-dev-kit-book`, not in the public AI Dev Kit tree. See [ADR-006](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/architecture/standards-and-adrs/ADR-006-book-project-private-repository-spin-off.md).
 
 **For adopters:** Ignore book-specific paths if you encounter them in older forks or changelogs; use [`INSTALL_IN_YOUR_PROJECT.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/INSTALL_IN_YOUR_PROJECT.md) for framework adoption only.
 
@@ -78,10 +78,10 @@ Manuscript, proposals, and book-project Kanban (formerly Epic 24) live in the **
 
 Installer-driven adoption is documented from repository root **[`INSTALL_IN_YOUR_PROJECT.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/INSTALL_IN_YOUR_PROJECT.md)**:
 
-- **Greenfield (FR-080):** [Greenfield Install Specification](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/INSTALL_IN_YOUR_PROJECT.md#greenfield-install-specification-wave-1-lock) · [IPW-E6S9T1](../../implementation-cycles/IPW-E6S09T01-greenfield-installation-fr080.md)
-- **Brownfield (FR-081):** [Brownfield adoption](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/INSTALL_IN_YOUR_PROJECT.md#brownfield-adoption-existing-repositories) · [IPP-E6S9T2](../../implementation-cycles/IPP-E6S09T02-brownfield-modular-adopter-integration-fr081.md)
+- **Greenfield (FR-080):** [Greenfield Install Specification](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/INSTALL_IN_YOUR_PROJECT.md#greenfield-install-specification-wave-1-lock) · [IPW-E6S9T1](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/implementation-cycles/IPW-E6S09T01-greenfield-installation-fr080.md)
+- **Brownfield (FR-081):** [Brownfield adoption](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/INSTALL_IN_YOUR_PROJECT.md#brownfield-adoption-existing-repositories) · [IPP-E6S9T2](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/implementation-cycles/IPP-E6S09T02-brownfield-modular-adopter-integration-fr081.md)
 
-Policy: [ADR-003](../../architecture/standards-and-adrs/ADR-003-greenfield-vs-brownfield-adoption.md). Host projects **map** ADK contracts to their own trees; reference layouts in this repo are not mandatory for brownfield adopters.
+Policy: [ADR-003](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/architecture/standards-and-adrs/ADR-003-greenfield-vs-brownfield-adoption.md). Host projects **map** ADK contracts to their own trees; reference layouts in this repo are not mandatory for brownfield adopters.
 
 ---
 
@@ -110,7 +110,7 @@ The project root is kept minimal. Only the following belong there:
 - **DEPENDENCIES.md** (optional) – Upstream doc/style register; copy template from [`examples/adopter-upstream-register.md`](examples/adopter-upstream-register.md) — see [`adopter-external-resource-dependency-tracking.md`](adopter-external-resource-dependency-tracking.md)
 - **Config files** – e.g. `rw-config.yaml`, `semver-registry.yaml`
 
-**Maintainer runbooks** (build packages, upload to releases, etc.) live in **`docs/maintenance/`**, not in root. See [docs/maintenance/README.md](../../maintenance/README.md).
+**Maintainer runbooks** (build packages, upload to releases, etc.) live in **`docs/maintenance/`**, not in root. See [docs/maintenance/README.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/maintenance/README.md).
 
 ---
 

@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Completed Tasks
 
-**Last Updated:** 2026-06-06 (UKW -u: E10:S01 story sign-off)
-**Version:** v0.10.1.10+1
+**Last Updated:** 2026-06-07 (RW: E05:S08:T04 FR-114 Notion-first bootstrap)
+**Version:** v0.5.8.4+2
 
 > **For MoSCOW prioritized tasks, see:** [`kboard.md`](kboard.md)  
 > **For completed FR/BR/UXR intake items, see:** [`intake-completed.md`](intake-completed.md)
@@ -20,10 +20,33 @@ housekeeping_policy: keep
 
 ## 20 Most Recently Completed Tasks
 
-#### **UKW hygiene batch (2026-06-06)** — E10:S01 story sign-off (all tasks COMPLETE; RC **APPROVE** @ T06; anchor **v0.10.1.10+1**)
+#### **RW (2026-06-07)** — E05:S08:T04 @ **v0.5.8.4+2** (FR-114 F4/F5 Notion-first bootstrap)
+
+- **[E05:S08:T04](epics/epic-05/story-08-knowledge-base/T04-agent-notion-first-authoring-and-bootstrap-routing-fr114.md)** — **FR-114 F4/F5**: ADR-024 three-surface model, `maintainer-kb` bootstrap track, P-NOTION-FIRST protocol, manifest documentationSurfaces, stub template canon.
+  **Completed:** `2026-06-07T10:46:29Z` | **Version:** `v0.5.8.4+2` | **Agent:** `RW E05:S08:T04 --art` | [FR-114](fr-br/FR-114-split-documentation-surfaces-docusaurus-public-notion-maintainer-kb.md) | [ADR-024](../../architecture/standards-and-adrs/ADR-024-documentation-surfaces-three-surface-model-fr114.md) | [—IPP—](../../implementation-cycles/IPP-E05S08T04-agent-notion-first-authoring-and-bootstrap-routing-fr114.md)
+
+#### **RW (2026-06-07)** — E05:S08:T03 @ **v0.5.8.3+3** (FR-114 big-bang Notion maintainer KB migration)
+
+- **[E05:S08:T03](epics/epic-05/story-08-knowledge-base/T03-big-bang-notion-migration-maintainer-kb-fr114.md)** — **FR-114**: Big-bang Notion migration — fresh Engineering KB, migration manifest (218 entries), git stubs, KB-INDEX regen, legacy map deprecated.
+  **Completed:** `2026-06-07T10:31:54Z` | **Version:** `v0.5.8.3+3` | **Agent:** `RW E05:S08:T03 --art` | [FR-114](fr-br/FR-114-split-documentation-surfaces-docusaurus-public-notion-maintainer-kb.md) | [—IPP—](../../implementation-cycles/IPP-E05S08T03-big-bang-notion-migration-maintainer-kb-fr114.md)
+
+#### **RW (2026-06-07)** — E05:S09:T15 @ **v0.5.9.15+2** (FR-114 Wave 2 ADR-024)
+
+- **[E05:S09:T15](epics/epic-05/story-09-docusaurus-documentation-portal/T15-docusaurus-adopter-public-publish-allowlist-fr114.md)** — **FR-114 Wave 2**: ADR-024 allowlist ADR, expanded IPP, FR-066 supersession, shared portal test module, dual release-notes policy.
+  **Completed:** `2026-06-07T12:30:00Z` | **Version:** `v0.5.9.15+2` | **Agent:** `RW E05:S09:T15 --art` | [ADR-024](../../architecture/standards-and-adrs/ADR-024-docusaurus-adopter-public-publish-allowlist-fr114.md) | [IPP](../../implementation-cycles/IPP-E05S09T15-docusaurus-adopter-public-publish-allowlist-fr114.md)
+
+#### **RW (2026-06-07)** — E05:S09:T15 @ **v0.5.9.15+1** (FR-114 Docusaurus adopter-public allowlist)
+
+- **[E05:S09:T15](epics/epic-05/story-09-docusaurus-documentation-portal/T15-docusaurus-adopter-public-publish-allowlist-fr114.md)** — **FR-114**: Docusaurus adopter-public publish allowlist — explicit include/exclude, trimmed IA, narrowed CI, BR-068 link remediation, RC release-notes scaffold.
+  **Completed:** `2026-06-07T10:07:12Z` | **Version:** `v0.5.9.15+1` | **Agent:** `RW E05:S09:T15 --art` | [FR-114](fr-br/FR-114-split-documentation-surfaces-docusaurus-public-notion-maintainer-kb.md) | [IPP](../../implementation-cycles/IPP-E05S09T15-docusaurus-adopter-public-publish-allowlist-fr114.md)
+
+#### **RW (2026-06-06)** — E10:S01 story sign-off @ **v0.10.1.10+2** (all tasks COMPLETE; RC **APPROVE** @ T06)
 
 - **E10:S01** — Document Lifecycle Package Implementation Review — Story **COMPLETE** (T01–T10; RC **APPROVE**; handoff → E10:S02).
-  **Completed:** `2026-06-06T16:12:37Z` | **Version:** `v0.10.1.10+1` | **Agent:** `UKW -u` | [Story](epics/epic-10/story-01-document-lifecycle-package-implementation-review.md) | [T06 RC](epics/epic-10/story-01-document-lifecycle-package-implementation-review/T06-define-rc-sign-off-criteria-and-remediation-tasks.md) | [Orchestration](../../implementation-cycles/E10S01-orchestration-plan.md)
+  **Completed:** `2026-06-06T16:34:00Z` | **Version:** `v0.10.1.10+2` | **Agent:** `RW E10:S01:T10 --art` | [Story](epics/epic-10/story-01-document-lifecycle-package-implementation-review.md) | [T06 RC](epics/epic-10/story-01-document-lifecycle-package-implementation-review/T06-define-rc-sign-off-criteria-and-remediation-tasks.md) | [Orchestration](../../implementation-cycles/E10S01-orchestration-plan.md)
+
+- **[E10:S01:T10](epics/epic-10/story-01-document-lifecycle-package-implementation-review/T10-fix-document-lifecycle-validator.md)** — Story sign-off RW anchor (validator fix @ v0.10.1.10+1; kanban reconciliation @ +2).
+  **Completed:** `2026-06-06T16:34:00Z` | **Version:** `v0.10.1.10+2` | **Agent:** `RW E10:S01:T10 --art` | [IPP-T10](../../implementation-cycles/IPP-E10S01T10-fix-document-lifecycle-validator.md)
 
 - **[E10:S01:T10](epics/epic-10/story-01-document-lifecycle-package-implementation-review/T10-fix-document-lifecycle-validator.md)** — Fix DocumentLifecycleValidator: PyYAML import, five-field metadata enforcement, pytest TC1–TC8 green, greenfield mirror; closes GAP-DOCLIFE-TEST-001.
   **Completed:** `2026-06-06T16:05:00Z` | **Version:** `v0.10.1.10+1` | **Agent:** `RW E10:S01:T10 --art` | [IPP-T10](../../implementation-cycles/IPP-E10S01T10-fix-document-lifecycle-validator.md) | [T05 gap](epics/epic-10/story-01-document-lifecycle-package-implementation-review/T05-create-gap-log-and-risk-assessment.md)
@@ -181,6 +204,9 @@ housekeeping_policy: keep
 - **[E05:S09:T14](epics/epic-05/story-09-docusaurus-documentation-portal/T14-docusaurus-ci-workflow-deduplication-br093.md)** — **BR-093**: Docusaurus CI build/deploy deduplication — merged workflow + artifact handoff ([ADR-017](../../architecture/standards-and-adrs/ADR-017-docusaurus-ci-build-deploy-topology.md)).
   **Completed:** `2026-06-05T00:23:30Z` | **Version:** `v0.5.9.14+2` | **Agent:** `RW E05:S09:T14` | [BR-093](fr-br/BR-093-docusaurus-ci-duplicate-build-deploy-job-waste.md) | [IPP](../../implementation-cycles/IPP-E05S09T14-docusaurus-ci-workflow-deduplication.md)
 
+- **[E05:S09:T15](epics/epic-05/story-09-docusaurus-documentation-portal/T15-docusaurus-adopter-public-publish-allowlist-fr114.md)** — **FR-114**: Docusaurus adopter-public publish allowlist — explicit include/exclude, trimmed IA, narrowed CI, BR-068 link remediation, RC release-notes scaffold.
+  **Completed:** `2026-06-07T10:07:12Z` | **Version:** `v0.5.9.15+1` | **Agent:** `RW E05:S09:T15 --art` | [FR-114](fr-br/FR-114-split-documentation-surfaces-docusaurus-public-notion-maintainer-kb.md) | [IPP](../../implementation-cycles/IPP-E05S09T15-docusaurus-adopter-public-publish-allowlist-fr114.md)
+
 #### **Epic 8: Tooling & Automation (Story 3 — Automation Scripts)**
 - **[E08:S03:T08](epics/epic-08/story-03-automation-scripts/T08-codeql-git-tag-handler-syntax-br094.md)** — **BR-094**: CodeQL `git_tag_handler.py` indentation syntax fix.
   **Completed:** `2026-06-05T00:10:09Z` | **Version:** `v0.8.3.8+1` | **Agent:** `RW --art` | [BR-094](fr-br/BR-094-codeql-git-tag-handler-syntax-error.md)
@@ -247,9 +273,9 @@ housekeeping_policy: keep
 - **[E06:S09:T14](epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T14-rw-install-story-pattern-loop-br085.md)** — **BR-085**: RW mode C story pattern prompt loop after fresh kanban (`{story:03d}` validation + epic-only escape).
   **Completed:** `2026-06-03T23:00:21Z` | **Version:** `v0.6.9.14+1` | **Agent:** `RW` | [BR-085](fr-br/BR-085-rw-install-story-pattern-placeholder-loop-fresh-kanban.md)
 
-#### **Epic 10: Document Lifecycle Framework (Story 1 — Package implementation review)** ✅ COMPLETE (`v0.10.1.10+1`)
+#### **Epic 10: Document Lifecycle Framework (Story 1 — Package implementation review)** ✅ COMPLETE (`v0.10.1.10+2`)
 - **E10:S01** — Document Lifecycle Package Implementation Review — Story sign-off (T01–T10; RC **APPROVE** @ T06; HIGH gaps remediated T08–T10).
-  **Completed:** `2026-06-06T16:12:37Z` | **Version:** `v0.10.1.10+1` | **Agent:** `UKW -u` | [Story](epics/epic-10/story-01-document-lifecycle-package-implementation-review.md) | [Orchestration](../../implementation-cycles/E10S01-orchestration-plan.md)
+  **Completed:** `2026-06-06T16:34:00Z` | **Version:** `v0.10.1.10+2` | **Agent:** `RW E10:S01:T10 --art` | [Story](epics/epic-10/story-01-document-lifecycle-package-implementation-review.md) | [Orchestration](../../implementation-cycles/E10S01-orchestration-plan.md)
 - **[E10:S01:T10](epics/epic-10/story-01-document-lifecycle-package-implementation-review/T10-fix-document-lifecycle-validator.md)** — Fix DocumentLifecycleValidator (GAP-DOCLIFE-TEST-001).
   **Completed:** `2026-06-06T16:05:00Z` | **Version:** `v0.10.1.10+1` | **Agent:** `RW E10:S01:T10 --art` | [IPP](../../implementation-cycles/IPP-E10S01T10-fix-document-lifecycle-validator.md)
 - **[E10:S01:T09](epics/epic-10/story-01-document-lifecycle-package-implementation-review/T09-sync-architecture-adr-dual-sot.md)** — Sync architecture ADR dual SoT (GAP-DOCLIFE-INTG-001).

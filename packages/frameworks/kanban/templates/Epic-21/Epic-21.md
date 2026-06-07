@@ -6,7 +6,7 @@ expires_at: null
 housekeeping_policy: keep
 ---
 
-# Epic 21: Internationalization and Localization
+# Epic 21: Internationalisation and Localisation
 
 **Status:** [TODO/IN PROGRESS/COMPLETE]
 **Priority:** [HIGH/MEDIUM/LOW]
@@ -39,16 +39,16 @@ housekeeping_policy: keep
 
 ## Overview
 
-This epic encompasses internationalization and localization for the {PROJECT_NAME} project. It provides the foundational structure and capabilities needed to support the project's core objectives and enables other epics to build upon this foundation.
+This epic encompasses internationalisation and localisation for the {PROJECT_NAME} project. It provides the foundational structure and capabilities needed to support the project's core objectives and enables other epics to build upon this foundation.
 
 ---
 
 ## Goals
 
-1. Establish internationalization and localization infrastructure and foundational components
-2. Define and implement core internationalization and localization patterns and standards
-3. Create reusable internationalization and localization components and utilities
-4. Document internationalization and localization architecture and best practices
+1. Establish internationalisation and localisation infrastructure and foundational components
+2. Define and implement core internationalisation and localisation patterns and standards
+3. Create reusable internationalisation and localisation components and utilities
+4. Document internationalisation and localisation architecture and best practices
 5. Enable integration with other project epics and systems
 
 ---
@@ -80,17 +80,17 @@ This epic encompasses internationalization and localization for the {PROJECT_NAM
 
 **Story Document:** [`story-00-language-selection-at-setup-mvp-ukus-english.md`](story-00-language-selection-at-setup-mvp-ukus-english.md)
 
-### Story 1: Internationalization Infrastructure
+### Story 1: Internationalisation Infrastructure
 
-**Brief Summary:** internationalization infrastructure for the {PROJECT_NAME} project, establishing the necessary components and processes to support the epic's objectives.
+**Brief Summary:** internationalisation infrastructure for the {PROJECT_NAME} project, establishing the necessary components and processes to support the epic's objectives.
 
-**Story Document:** [`story-01-internationalization-infrastructure.md`](story-01-internationalization-infrastructure.md)
+**Story Document:** [`story-01-internationalisation-infrastructure.md`](story-01-internationalisation-infrastructure.md)
 
-### Story 2: Translation and Localization
+### Story 2: Translation and Localisation
 
-**Brief Summary:** translation and localization for the {PROJECT_NAME} project, establishing the necessary components and processes to support the epic's objectives.
+**Brief Summary:** translation and localisation for the {PROJECT_NAME} project, establishing the necessary components and processes to support the epic's objectives.
 
-**Story Document:** [`story-02-translation-and-localization.md`](story-02-translation-and-localization.md)
+**Story Document:** [`story-02-translation-and-localisation.md`](story-02-translation-and-localisation.md)
 
 ### Story 3: Cultural Adaptation
 

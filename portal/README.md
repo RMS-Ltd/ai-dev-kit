@@ -2,19 +2,46 @@
 
 This directory (`portal/`) is the **[Docusaurus](https://docusaurus.io/)** site for **AI Dev Kit**. The monorepo overview, installation, and workflows live in the repository root [README.md](../README.md).
 
-## Publish scope (FR-066)
+## Publish scope (FR-114 — supersedes FR-066 breadth)
 
-**Source of truth** for site content is the repository **[`docs/`](../docs/)** tree, aligned with [Ultimate Canonical KB Structure](../docs/architecture/standards-and-adrs/ultimate-canonical-kb-structure.md) (**pillars**: architecture, changelog-and-release-notes, project-management, guides, developer paths under `docs/`, knowledge, etc.).
+**Adopter-public allowlist** (**E05:S09:T15**). The docs plugin ingests [`docs/`](../docs/) but **excludes maintainer corpora** via `docusaurus.config.js` `exclude` globs. Logical KB pillars (architecture, Kanban, knowledge) remain in git/Notion — not all are published here.
 
-### Included
+**Planning:** [IPP-E05S09T15](../docs/implementation-cycles/IPP-E05S09T15-docusaurus-adopter-public-publish-allowlist-fr114.md) · [FR-114](../docs/project-management/kanban/fr-br/FR-114-split-documentation-surfaces-docusaurus-public-notion-maintainer-kb.md)
 
-- All markdown under `docs/` **except** paths listed under **Excluded** below.
-- Entry page: [`docs/documentation/docusaurus-portal-index.md`](../docs/documentation/docusaurus-portal-index.md) (sidebar position `0`).
+### Included (allowlist)
+
+| Path | Notes |
+| ---- | ----- |
+| `docs/guides/**` | Workflow cheatsheets, adoption guides |
+| `docs/documentation/**` | Adopter user + reference docs |
+| `docs/developer-tools/ide-whitelist-guide.md` | Single adopter-facing maintainer tool page |
+| Entry | [`docs/documentation/docusaurus-portal-index.md`](../docs/documentation/docusaurus-portal-index.md) (`sidebar_position: 0`) |
 
 ### Excluded (Docusaurus `exclude` globs)
 
-- **`changelog-and-release-notes/changelog-archive/**`** — mass per-release changelog files (1000+); not intended for v1 static publish; summaries remain under `changelog-and-release-notes/` where present.
-- **`knowledge/changelog-and-release-notes/changelog-archive/**`** — duplicate archive mirror under `knowledge/`.
+| Glob | Rationale |
+| ---- | --------- |
+| `project-management/**` | Kanban, FR/BR — maintainer |
+| `implementation-cycles/**` | IPPs — maintainer |
+| `maintenance/**`, `analysis/**`, `knowledge/**`, `journals/**` | Maintainer corpora |
+| `architecture/**`, `governance/**` | Internal standards — link via GitHub blob URLs |
+| `changelog-and-release-notes/**`, `release-notes/**` | RC=0: GitHub only; RC≥1 uses curated `portal/blog/` release notes |
+| `book-project/**` | Project-specific book work — not adopter-public |
+| `project-agent-index.md`, `project-agent-manifest.json`, `project-agent-manifest.schema.json` | Agent bootstrap tooling — maintainer |
+| `developer-tools/ide-whitelist-uat-log.md` | Maintainer UAT log only |
+
+**Internal standards linking policy:** From published pages, use `https://github.com/RMS-Ltd/ai-dev-kit/blob/main/...` for excluded trees (BR-068 Strategy A).
+
+### RC ≥ 1 significant release notes
+
+From **RC ≥ 1**, publish **curated milestone narratives** — not raw `CHANGELOG.md`.
+
+| Location | Role |
+| -------- | ---- |
+| [`portal/blog/`](blog/) | **Primary scaffold** — policy: [`RELEASE-NOTES-POLICY.md`](blog/RELEASE-NOTES-POLICY.md) |
+| [`docs/release-notes/`](../docs/release-notes/README.md) | **Alternative** (git policy stub only — excluded from portal build; use if sidebar-integrated release notes are preferred over blog) |
+
+Scaffold only until first RC public release. **Authority:** [ADR-024](../docs/architecture/standards-and-adrs/ADR-024-docusaurus-adopter-public-publish-allowlist-fr114.md).
 
 ### Broken links and anchors (FR-067 / E5:S09:T08 / E5:S09:T10)
 
@@ -43,26 +70,15 @@ The docs plugin only ingests **[`docs/`](../docs/)**. Markdown links that use **
 
 **Planning:** [IPW-E5S09T11](../docs/implementation-cycles/IPW-E5S09T11-docusaurus-monorepo-markdown-links-br068.md). **Host task:** [E5:S09:T11](../docs/project-management/kanban/epics/Epic-5/Story-009-docusaurus-documentation-portal/T11-docusaurus-monorepo-markdown-link-resolution-br068.md).
 
-**FR-068 (sidebar IA)** is separate: navigation and sidebar information architecture (implemented in `sidebars.js` and the site homepage).
+### Sidebar ↔ allowlist mapping (FR-114)
 
-### Sidebar ↔ `docs/` mapping (FR-068)
-
-| Sidebar label (nav) | `docs/` folder | Notes |
+| Sidebar label (nav) | `docs/` source | Notes |
 | ------------------- | -------------- | ----- |
-| Architecture | `architecture/` | Canonical pillar |
-| Changelog & release notes | `changelog-and-release-notes/` | Canonical pillar; archive globs still excluded per FR-066 |
-| Project management | `project-management/` | Canonical pillar (Kanban, FR/BR, rituals) |
-| Guides | `guides/` | Canonical pillar |
-| Documentation (developer & user) | `documentation/` | Canonical pillar |
-| Knowledge base | `knowledge/` | Canonical pillar |
-| Maintenance (portal triage) | `maintenance/` | **Extension** (e.g. FR-067 triage notes) |
-| Analysis | `analysis/` | **Extension** |
-| Implementation cycles | `implementation-cycles/` | **Extension** |
-| Developer tools | `developer-tools/` | **Extension** |
+| Guides | `guides/` | Autogenerated |
+| Documentation | `documentation/` | Autogenerated |
+| IDE command whitelist | `developer-tools/ide-whitelist-guide.md` | Explicit doc id |
 
-Canonical structure reference: [Ultimate Canonical KB Structure](../docs/architecture/standards-and-adrs/ultimate-canonical-kb-structure.md).
-
-**CI (FR-069 / ADR-017):** GitHub Actions workflow [**Docusaurus site build**](../.github/workflows/docusaurus-build.yml) runs `npm ci` and `npm run build` in this directory when `portal/`, `docs/`, or the workflow file change on **pull requests** and on pushes to `main`. On `main` (and **`workflow_dispatch`**), a **`deploy`** job publishes the build artifact to **`gh-pages`** after the **`build`** job succeeds — **one** production build per commit; deploy is skipped when build fails.
+**CI (FR-069 / FR-114-NF1 / ADR-017):** Workflow [**Docusaurus site build**](../.github/workflows/docusaurus-build.yml) runs on changes to `portal/**`, **allowlisted** `docs/guides/**`, `docs/documentation/**`, `docs/developer-tools/ide-whitelist-guide.md`, or the workflow file. Edits to excluded maintainer trees (e.g. `docs/project-management/**`) do **not** trigger the portal build on pull requests.
 
 ## Dependency updates (Dependabot) — FR-105 / E08:S03:T06
 

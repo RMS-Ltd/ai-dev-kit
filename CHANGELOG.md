@@ -9,6 +9,110 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.5.8.4+3] - 07-06-26
+
+E05:S08:T04 — **Change implemented:** FR-114 IMPLEMENTED closure — acceptance criteria reconciled, intake-completed ledger, epic story checklists synced; portal build verified green. SemVer **v0.4.1035+3**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.5.8.4+3.md)
+
+---
+
+## [0.5.8.4+2] - 07-06-26
+
+E05:S08:T04 — **Change implemented:** FR-114 F4/F5 — ADR-024 three-surface model, `maintainer-kb` bootstrap track, P-NOTION-FIRST protocol, manifest documentationSurfaces, stub template canon, pytest contract. SemVer **v0.4.1034+2**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.5.8.4+2.md)
+
+---
+
+## [0.5.9.15+2] - 07-06-26
+
+E05:S09:T15 — **Change implemented:** FR-114 Wave 2 — ADR-024 allowlist ADR, expanded IPP, FR-066 supersession, shared portal test module, dual release-notes policy docs. SemVer **v0.4.1033+2**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.5.9.15+2.md)
+
+---
+
+## [0.5.8.3+3] - 07-06-26
+
+E05:S08:T03 — **Change implemented:** FR-114 big-bang Notion migration of maintainer KB — fresh Engineering KB, migration manifest (218 entries), git stubs, KB-INDEX regen, deprecation of legacy migration map. SemVer **v0.4.1032+3**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.5.8.3+3.md)
+
+---
+
+## [0.5.9.15+1] - 07-06-26
+
+E05:S09:T15 — **Change implemented:** FR-114 Docusaurus adopter-public publish allowlist — explicit include/exclude, trimmed IA, narrowed CI, BR-068 link remediation, RC release-notes scaffold. SemVer **v0.4.1021+1**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.5.9.15+1.md)
+
+---
+
+## [0.2.16.4+37] - 07-06-26
+
+E02:S16:T04 — **Change implemented:** UKW bookkeeping after Epic 21 kanban-init wave — kboard E21 version anchors, Epic-21/FR-006 sync; perpetual UKW BUILD +37. SemVer **v0.4.1031+37**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.16.4+37.md)
+
+---
+
+## [0.21.0.1+1] - 06-06-26
+
+E21:S00:T01 — **Change implemented:** FR-006 Epic 21 kanban rehouse — UK English naming, S00–S06 story trees, template sync. SemVer **v0.4.1027+1**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.21.0.1+1.md)
+
+---
+
+## [0.8.3.12+9] - 06-06-26
+
+E08:S03:T12 — **Change implemented:** BR-099 wave-6 IPW planning (103/Fair @ `d5c4bca5`; §4.7 ledger; Path B). SemVer **v0.4.1026+9**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.8.3.12+9.md)
+
+---
+
+## [0.5.8.3+2] - 06-06-26
+
+E05:S08:T03 — **Change implemented:** FR-114 Notion policy — `rmearssolutions@gmail.com` workspace, clean-slate bootstrap; task IN PROGRESS. SemVer **v0.4.1025+2**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.5.8.3+2.md)
+
+---
+
+## [0.10.1.10+2] - 06-06-26
+
+E10:S01:T10 — **Change implemented:** E10:S01 story sign-off release — implementation review **COMPLETE**; RC **APPROVE**; scoped kanban reconciliation (Epic 10 IN PROGRESS — S02 TODO). SemVer **v0.4.1024+2**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.10.1.10+2.md)
+
+---
+
+## [0.5.8.4+1] - 06-06-26
+
+E05:S08:T04 — **Change implemented:** FR-114 intake — agent Notion-first authoring task filed (RW -k, --art). SemVer **v0.4.1023+1**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.5.8.4+1.md)
+
+---
+
+## [0.5.8.3+1] - 06-06-26
+
+E05:S08:T03 — **Change implemented:** FR-114 intake — big-bang Notion migration task filed (RW -k, --art). SemVer **v0.4.1022+1**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.5.8.3+1.md)
+
+---
+
+## [0.5.9.15+1] - 06-06-26
+
+E05:S09:T15 — **Change implemented:** FR-114 intake — Docusaurus adopter-public publish allowlist task filed (RW -k, --art). SemVer **v0.4.1021+1**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.5.9.15+1.md)
+
+---
+
 ## [0.8.3.17+4] - 06-06-26
 
 E08:S03:T17 — **Change implemented:** Post-merge CQG verification (PR #36; CI + local CodeQL run). SemVer **v0.4.1020+4**.

@@ -1,0 +1,74 @@
+[
+  {
+    "source_path": "architecture/standards-and-adrs/doc-lifecycle-metadata-spec.md"
+  },
+  {
+    "source_path": "architecture/standards-and-adrs/doc-lifecycle-policy.md"
+  },
+  {
+    "source_path": "architecture/standards-and-adrs/documentation-health-monitoring.md"
+  },
+  {
+    "source_path": "architecture/standards-and-adrs/documentation-maintenance-policy.md"
+  },
+  {
+    "source_path": "architecture/standards-and-adrs/documentation-review-cadences.md"
+  },
+  {
+    "source_path": "architecture/standards-and-adrs/documentation-review-workflow-guide.md"
+  },
+  {
+    "source_path": "architecture/standards-and-adrs/documentation-update-triggers.md"
+  },
+  {
+    "source_path": "architecture/standards-and-adrs/dual-versioning-package-managers.md"
+  },
+  {
+    "source_path": "architecture/standards-and-adrs/ecc-adk-harness-layer-integration-specification.md"
+  },
+  {
+    "source_path": "architecture/standards-and-adrs/ecc-adk-harness-layer-phase0-evaluation.md"
+  },
+  {
+    "source_path": "architecture/standards-and-adrs/environment-variables-sop.md"
+  },
+  {
+    "source_path": "architecture/standards-and-adrs/epic-story-path-migration-guide.md"
+  },
+  {
+    "source_path": "architecture/standards-and-adrs/framework-auto-update-mechanisms.md"
+  },
+  {
+    "source_path": "architecture/standards-and-adrs/framework-backward-compatibility-policy.md"
+  },
+  {
+    "source_path": "architecture/standards-and-adrs/framework-compatibility-tracking.md"
+  },
+  {
+    "source_path": "architecture/standards-and-adrs/framework-dependency-architecture.md"
+  },
+  {
+    "source_path": "architecture/standards-and-adrs/framework-health-dashboard-guide.md"
+  },
+  {
+    "source_path": "architecture/standards-and-adrs/framework-health-metrics.md"
+  },
+  {
+    "source_path": "architecture/standards-and-adrs/framework-health-monitoring-procedures.md"
+  },
+  {
+    "source_path": "architecture/standards-and-adrs/framework-migration-guide.md"
+  },
+  {
+    "source_path": "architecture/standards-and-adrs/framework-release-process.md"
+  },
+  {
+    "source_path": "architecture/standards-and-adrs/framework-update-cli-design.md"
+  },
+  {
+    "source_path": "architecture/standards-and-adrs/framework-update-procedures.md"
+  },
+  {
+    "source_path": "architecture/standards-and-adrs/framework-version-tagging-strategy.md"
+  }
+]

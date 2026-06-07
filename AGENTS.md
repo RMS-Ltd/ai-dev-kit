@@ -32,6 +32,7 @@ Then:
 | `governance` | ADR, governance, policy, standard, versioning | `docs/governance/README.md` |
 | `framework-code` | package, validator, script, pytest, framework, workflow mgt | `packages/frameworks/workflow-mgt/README.md` |
 | `implementation-planning` | IPP, ICW, IPW, plan mode, implementation plan, specification | `.claude/commands/ipw.md`, `docs/governance/standards/dev-kit-ipw-ipp-vs-icw-artifacts.md` |
+| `maintainer-kb` | Notion, maintainer KB, knowledge base, investigation, analysis, records, maintainer doc, Engineering KB | `rw-config.yaml`, `docs/architecture/standards-and-adrs/ADR-024-documentation-surfaces-three-surface-model-fr114.md`, `docs/knowledge/README.md` |
 | `agent-bootstrap` | bootstrap, routing, cold start, AGENTS | `docs/architecture/standards-and-adrs/ADR-012-agent-bootstrap-and-task-routing.md` |
 
 When editing this table, update `docs/project-agent-manifest.json` `taskRouting[]` in the same change set.
@@ -60,6 +61,7 @@ Refresh from `kboard.md` when running UKW or RW Step 7; mirror into manifest `op
 | P-TRIGGER-ROUTING | `RW`/`UKW`/`IPW`/… at message start = workflow commands | [CLAUDE.md](CLAUDE.md) |
 | P-INTAKE-ATOMIC | FR/BR/UXR intake needs task + links same session | [Intake guide](packages/frameworks/kanban/FR_BR_INTAKE_GUIDE.md) |
 | P-RW-BUILD | Same E:S:T → BUILD+1 default; no `git tag -f` on release tags; `--dpz` (alias: `--doc-policy-zero`) only if user-triggered + untagged | [BR-097](docs/project-management/kanban/fr-br/BR-097-rw-agent-reuses-tagged-build-and-force-moves-release-tags.md) |
+| P-NOTION-FIRST | New maintainer docs → Notion MCP first; git stubs only per ADR-024 criteria | [ADR-024](docs/architecture/standards-and-adrs/ADR-024-documentation-surfaces-three-surface-model-fr114.md) |
 
 **Workflow execution SoT:** `.cursorrules` and `.claude/commands/` — load when `workflows` track applies, not at cold start.
 
@@ -82,6 +84,8 @@ If no keyword match, ask **one** clarifying question. Do not grep the whole repo
 - Changelog archive tree unless changelog/release work.
 - [`docs/journals/`](docs/journals/) unless forensic recovery.
 - Entire [`kboard.md`](docs/project-management/kanban/kboard.md) MoSCOW unless kanban-intake track.
+- New maintainer investigations/analysis/records under `docs/knowledge/`, `docs/analysis/`, `docs/maintenance/` — use Notion ([ADR-024](docs/architecture/standards-and-adrs/ADR-024-documentation-surfaces-three-surface-model-fr114.md)).
+- Cold-loading full Notion corpora via git stubs — route `maintainer-kb` track and use Notion MCP.
 - IDE plan folders outside repo (`~/.cursor/plans/`).
 
 ---

@@ -6,7 +6,7 @@ expires_at: null
 housekeeping_policy: keep
 ---
 
-# Feature Request: Localization and Language Selection (UK/US English + International)
+# Feature Request: Localisation and Language Selection (UK/US English + International)
 
 **Type:** Feature Request (FR)  
 **Submitted:** 2025-12-09  
@@ -14,7 +14,11 @@ housekeeping_policy: keep
 **Priority:** MEDIUM  
 **Status:** PENDING
 
-**Implementing Task:** [E21:S00:T01](../epics/epic-21/story-00-language-selection-at-setup.md)
+**Implementing Epic:** [Epic 21 – Internationalisation and Localisation](../epics/epic-21/Epic-21.md)
+
+**Phase 1 host story:** [E21:S01](../epics/epic-21/story-01-language-selection-at-setup.md) (T01–T07)
+
+**Implementing task (kanban anchor):** [E21:S01:T01](../epics/epic-21/story-01-language-selection-at-setup/T01-add-language-selection-prompt-to-template-setup-github-templ.md) — **v0.21.1.1+1** (RW -k kanban rehouse)
 
 ---
 
@@ -28,10 +32,10 @@ Add language/locale selection at the very beginning of the ai-dev-kit setup proc
 
 ### Problem Statement
 
-Currently, ai-dev-kit uses US English throughout all documentation, templates, and user-facing content. While US English is more prevalent globally (~250-260M speakers in US vs ~70M in UK), users from different regions have cultural preferences for their English variant. Additionally, non-English speakers would benefit from localized versions.
+Currently, ai-dev-kit uses US English throughout all documentation, templates, and user-facing content. While US English is more prevalent globally (~250-260M speakers in US vs ~70M in UK), users from different regions have cultural preferences for their English variant. Additionally, non-English speakers would benefit from localised versions.
 
 **User Perspective:**
-- UK English speakers prefer UK spelling and terminology (e.g., "colour" vs "color", "organise" vs "organize")
+- UK English speakers prefer UK spelling and terminology (e.g., "colour" vs "color", "organise" vs "organise")
 - US English speakers are accustomed to US conventions
 - International users may prefer other languages entirely
 - Cultural preference is not about "better" but about familiarity and comfort
@@ -44,7 +48,7 @@ Currently, ai-dev-kit uses US English throughout all documentation, templates, a
 3. All subsequent documentation, templates, and generated content use selected variant
 4. User feels comfortable and familiar with the language conventions
 
-**Extended Use Case: International Localization**
+**Extended Use Case: International Localisation**
 1. User starts ai-dev-kit setup
 2. **First prompt:** "Select your language: [English (UK)] [English (US)] [Español] [Français] [Deutsch] [中文] [日本語] [Português] [Other...]"
 3. All content is localized to selected language
@@ -73,7 +77,7 @@ Currently, ai-dev-kit uses US English throughout all documentation, templates, a
   - Stored in project configuration file (e.g., `ai-dev-kit-config.yaml`)
 
 
-- [ ] **Content Localization**
+- [ ] **Content Localisation**
   - All documentation uses selected English variant
   - All templates use selected English variant
   - All generated content (changelogs, README, etc.) uses selected variant
@@ -94,7 +98,7 @@ Currently, ai-dev-kit uses US English throughout all documentation, templates, a
   - Changelog templates in both variants
 
 
-#### Phase 2: International Localization (Extended)
+#### Phase 2: International Localisation (Extended)
 
 - [ ] **Multi-Language Support**
   - Language selection includes major languages:
@@ -136,7 +140,7 @@ Currently, ai-dev-kit uses US English throughout all documentation, templates, a
 
 - [ ] **Usability Considerations**
   - Language selection is clear and intuitive
-  - Default to US English (most common) with easy override
+  - Default to UK English (en-GB) (most common) with easy override
   - Language can be changed later (with re-generation of content)
   - Clear indication of current language in UI/docs
 
@@ -151,7 +155,7 @@ Currently, ai-dev-kit uses US English throughout all documentation, templates, a
 - [ ] **Maintainability Considerations**
   - Translation files are easy to update
   - New languages can be added without code changes
-  - Translation keys are well-organized and documented
+  - Translation keys are well-organised and documented
   - Translation workflow integrates with existing processes
 
 
@@ -161,7 +165,7 @@ Currently, ai-dev-kit uses US English throughout all documentation, templates, a
 
 ### Problem Domain
 
-**Framework Localization and Internationalization**
+**Framework Localisation and Internationalisation**
 
 ### Affected Areas
 
@@ -212,9 +216,9 @@ Currently, ai-dev-kit uses US English throughout all documentation, templates, a
 
 ### Dependencies
 
-- **E21:S01:** Internationalization Infrastructure (if implementing Phase 2)
-- **E21:S02:** Translation and Localization (if implementing Phase 2)
-- **E21:S03:** Cultural Adaptation (if implementing Phase 2)
+- **E21:S02:** Internationalisation Infrastructure (if implementing Phase 2)
+- **E21:S03:** Translation and Localisation (if implementing Phase 2)
+- **E21:S04:** Cultural Adaptation (if implementing Phase 2)
 - Setup/installation processes (all methods)
 - Configuration system (for language preference storage)
 
@@ -230,15 +234,15 @@ Currently, ai-dev-kit uses US English throughout all documentation, templates, a
 - [ ] All templates use selected English variant
 - [ ] All generated content uses selected variant
 - [ ] Language preference can be changed (with content regeneration)
-- [ ] Default is US English (most common)
+- [ ] Default is UK English (en-GB) (most common)
 - [ ] Clear indication of current language in project
 
-### Phase 2: International Localization
+### Phase 2: International Localisation
 
 - [ ] Language selection includes major languages
 - [ ] Translation infrastructure is in place
 - [ ] All user-facing content is translatable
-- [ ] Translation files are well-organized
+- [ ] Translation files are well-organised
 - [ ] Fallback to English if translation missing
 - [ ] Cultural adaptations (date/time/number formatting)
 - [ ] Translation workflow is documented
@@ -264,7 +268,7 @@ ai-dev-kit init
 # First prompt:
 # Select your preferred English variant:
 # [1] UK English (colour, organise, realise)
-# [2] US English (color, organize, realize)
+# [2] US English (color, organise, realize)
 # Enter choice [1-2]: _
 ```
 
@@ -296,7 +300,7 @@ packages/frameworks/kanban/
 
 Add to `ai-dev-kit-config.yaml`:
 ```yaml
-localization:
+localisation:
   language: "en-GB"  # or "en-US"
   variant: "UK"      # or "US"
 ```
@@ -305,7 +309,7 @@ localization:
 
 All content generation (RW, templates, etc.) reads language preference and uses appropriate variant.
 
-### Phase 2: International Localization
+### Phase 2: International Localisation
 
 **1. Translation Infrastructure**
 
@@ -334,8 +338,8 @@ Use standard i18n approach:
 
 ### Phase 1: UK/US English (Recommended First Step)
 
-**Epic:** Epic 21 - Internationalization and Localization  
-**Story:** Story 1 - Internationalization Infrastructure (or new Story 0: English Variant Selection)  
+**Epic:** Epic 21 - Internationalisation and Localisation  
+**Story:** Story 1 - Internationalisation Infrastructure (or new Story 1: English Variant Selection)  
 **Tasks:**
 - T01: Add language selection to setup processes
 - T02: Create UK/US English content variants
@@ -343,17 +347,17 @@ Use standard i18n approach:
 - T04: Update content generation to use language preference
 - T05: Test UK/US English selection and content generation
 
-### Phase 2: International Localization
+### Phase 2: International Localisation
 
-**Epic:** Epic 21 - Internationalization and Localization  
-**Story:** Story 2 - Translation and Localization  
+**Epic:** Epic 21 - Internationalisation and Localisation  
+**Story:** Story 2 - Translation and Localisation  
 **Tasks:**
 - T01: Set up translation infrastructure
 - T02: Identify and extract translatable content
 - T03: Create translation files for major languages
 - T04: Implement translation lookup and fallback
 - T05: Add cultural adaptations (date/time/number formatting)
-- T06: Test international localization
+- T06: Test international localisation
 
 ---
 
@@ -375,7 +379,7 @@ Use standard i18n approach:
 
 ### For Maintainers
 
-- **Clear Structure:** Translation files are organized and maintainable
+- **Clear Structure:** Translation files are organised and maintainable
 - **Extensible:** Easy to add new languages
 - **Standard Approach:** Uses common i18n patterns
 
@@ -401,7 +405,7 @@ Use standard i18n approach:
 ### Risk 3: Setup Complexity
 
 **Mitigation:**
-- Language selection is optional (defaults to US English)
+- Language selection is optional (defaults to UK English (en-GB))
 - Single prompt at start, then transparent
 - Can be changed later if needed
 
@@ -409,10 +413,10 @@ Use standard i18n approach:
 
 ## Related Work
 
-- **Epic 21:** Internationalization and Localization (comprehensive canonical epic)
-- **E21:S01:** Internationalization Infrastructure
-- **E21:S02:** Translation and Localization
-- **E21:S03:** Cultural Adaptation
+- **Epic 21:** Internationalisation and Localisation (comprehensive canonical epic)
+- **E21:S02:** Internationalisation Infrastructure
+- **E21:S03:** Translation and Localisation
+- **E21:S04:** Cultural Adaptation
 - **Setup Processes:** Template setup, CLI tool, RW installer
 
 ---
@@ -459,15 +463,15 @@ Use standard i18n approach:
 - [ ] New Epic Created: [Epic X, Story 1, Task 1]
 
 **Assigned To:**
-- Epic: Epic 21 - Internationalization and Localization
-- Story: Story 1 - Internationalization Infrastructure (or new Story 0: English Variant Selection)
-- Task: Task 1 - Add language selection to setup processes
-- Version: `v0.21.1.1+1` (to be assigned when Epic 21 is created)
+- Epic: Epic 21 - Internationalisation and Localisation
+- Phase 1 host story: E21:S01 – Language Selection at Setup (T01–T07)
+- Phase 2: E21:S02–S04 (infrastructure, pipeline, cultural adaptation)
+- Version: `0.21.S.T+B` (assigned per story/task on epic branch)
 
 **Kanban Links:**
-- Epic: [To be created: `docs/project-management/kanban/epics/epic-21/Epic-21.md`]
-- Story: [To be created: `docs/project-management/kanban/epics/epic-21/story-01-internationalization-infrastructure.md`]
-- Task: [To be created in Story document]
+- Epic: [`docs/project-management/kanban/epics/epic-21/Epic-21.md`](../epics/epic-21/Epic-21.md)
+- Phase 1: [`story-01-language-selection-at-setup.md`](../epics/epic-21/story-01-language-selection-at-setup.md)
+- Phase 2: [`story-02-internationalisation-infrastructure.md`](../epics/epic-21/story-02-internationalisation-infrastructure.md), [`story-03-translation-and-localisation.md`](../epics/epic-21/story-03-translation-and-localisation.md), [`story-04-cultural-adaptation.md`](../epics/epic-21/story-04-cultural-adaptation.md)
 
 ---
 

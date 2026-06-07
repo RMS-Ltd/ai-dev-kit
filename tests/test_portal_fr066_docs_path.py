@@ -41,18 +41,18 @@ def test_fr066_s4_edit_url_docs_tree(config_text: str):
 
 
 def test_fr066_s3_exclude_changelog_archive(config_text: str):
-    """S3 — mass changelog archive excluded from plugin."""
+    """S3 — changelog tree excluded from plugin (FR-114 supersedes archive-only exclude)."""
     assert "exclude:" in config_text
-    assert "changelog-archive" in config_text
+    assert "changelog-and-release-notes/**" in config_text
 
 
 def test_fr066_s2_s7_readme_publish_scope(readme_text: str):
-    """S2, S7 — publish scope + link to ultimate canonical KB structure."""
+    """S2, S7 — publish scope (FR-114 allowlist section)."""
     assert "Publish scope" in readme_text
-    assert "ultimate-canonical-kb-structure.md" in readme_text
+    assert "FR-114" in readme_text or "fr-114" in readme_text.lower()
     assert "Included" in readme_text or "included" in readme_text.lower()
     assert "Excluded" in readme_text or "excluded" in readme_text.lower()
-    assert "changelog" in readme_text.lower()
+    assert "guides" in readme_text.lower()
 
 
 def test_fr066_s5_portal_docs_scaffold_gone():

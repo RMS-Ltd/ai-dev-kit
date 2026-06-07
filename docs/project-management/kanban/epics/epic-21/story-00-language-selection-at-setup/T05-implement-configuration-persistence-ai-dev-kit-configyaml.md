@@ -42,7 +42,7 @@ housekeeping_policy: keep
 
 - `ai-dev-kit-config.yaml` with language preference
 - Configuration reading/writing utilities
-- Default to US English if not specified
+- Default to UK English if not specified (en-GB primary; en-US supported)
 
 ---
 
@@ -51,16 +51,30 @@ housekeeping_policy: keep
 - [ ] Configuration file structure defined
 - [ ] Language preference stored in config
 - [ ] Configuration utilities created
-- [ ] Default to US English if not specified
+- [ ] Default to UK English if not specified (en-GB primary; en-US supported)
 
 **Configuration Structure:**
 ```yaml
-localization:
+localisation:
   language: "en-GB"  # or "en-US"
   variant: "UK"      # or "US"
 ```
 
 ---
+
+---
+
+## Kanban-init intake
+
+**Branch:** `epic/21-internationalisation-localisation`
+
+**Trigger:**
+
+```text
+RW -k E21:S00:T05 --art --dpz
+```
+
+**Target version anchor:** `v0.21.0.5+0` (doc-init BUILD +0 per [BR-067](../../../fr-br/BR-067-rw-first-doc-only-release-defaults-to-build-plus-one-not-plus-zero.md)).
 
 ---
 

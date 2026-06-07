@@ -1,0 +1,74 @@
+[
+  {
+    "source_path": "architecture/standards-and-adrs/repository-story-migration-status.md"
+  },
+  {
+    "source_path": "architecture/standards-and-adrs/rw-changelog-commit-language-analysis.md"
+  },
+  {
+    "source_path": "architecture/standards-and-adrs/rw-pdca-integration-plan.md"
+  },
+  {
+    "source_path": "architecture/standards-and-adrs/semver-implementation-followup-spec.md"
+  },
+  {
+    "source_path": "architecture/standards-and-adrs/semver-mapping-implementation-impact.md"
+  },
+  {
+    "source_path": "architecture/standards-and-adrs/semver-mapping-proposal.md"
+  },
+  {
+    "source_path": "architecture/standards-and-adrs/semver-tag-collision-incident-2026-03-07.md"
+  },
+  {
+    "source_path": "architecture/standards-and-adrs/specification-and-planning-artifacts-policy.md"
+  },
+  {
+    "source_path": "architecture/standards-and-adrs/task-naming-migration-guide.md"
+  },
+  {
+    "source_path": "architecture/standards-and-adrs/task-template-cross-wiring-sop.md"
+  },
+  {
+    "source_path": "architecture/standards-and-adrs/task-template-generator-design.md"
+  },
+  {
+    "source_path": "architecture/standards-and-adrs/task-template-system-hybrid-adr.md"
+  },
+  {
+    "source_path": "architecture/standards-and-adrs/task-touch-mapping-examples.md"
+  },
+  {
+    "source_path": "architecture/standards-and-adrs/ultimate-canonical-cursorrules-structure.md"
+  },
+  {
+    "source_path": "architecture/standards-and-adrs/ultimate-canonical-kanban-structure.md"
+  },
+  {
+    "source_path": "architecture/standards-and-adrs/ultimate-canonical-kb-structure.md"
+  },
+  {
+    "source_path": "architecture/standards-and-adrs/ultimate-canonical-workflow-structure.md"
+  },
+  {
+    "source_path": "architecture/standards-and-adrs/versioning-error-reference-guide.md"
+  },
+  {
+    "source_path": "architecture/standards-and-adrs/versioning-quick-reference.md"
+  },
+  {
+    "source_path": "architecture/standards-and-adrs/workflow-flaws-reference-guide.md"
+  },
+  {
+    "source_path": "architecture/standards-and-adrs/workflow-hardening-guide.md"
+  },
+  {
+    "source_path": "architecture/use-cases/CANONICAL_USE_CASE_TEMPLATE.md"
+  },
+  {
+    "source_path": "architecture/use-cases/README.md"
+  },
+  {
+    "source_path": "architecture/use-cases/canonical/README.md"
+  }
+]

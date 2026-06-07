@@ -1,0 +1,8 @@
+{
+  "rows": {
+    "E05:S08:T03": {
+      "allowed": true,
+      "reason": "RW E05:S08:T03 v0.5.8.3+2 — FR-114 Notion policy; task doc + FR-114 + kboard release-scope reconciliation"
+    }
+  }
+}

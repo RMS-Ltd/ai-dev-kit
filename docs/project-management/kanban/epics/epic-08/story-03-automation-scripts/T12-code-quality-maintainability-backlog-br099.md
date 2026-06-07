@@ -12,12 +12,12 @@ housekeeping_policy: keep
 **Status:** IN PROGRESS  
 **Priority:** MEDIUM  
 **Created:** 2026-06-05  
-**Last updated:** 2026-06-06 (closure docs @ **v0.8.3.12+8**; operator UI refresh pending; wave 6 **planned**)  
-**Version Anchor:** v0.8.3.12+8  
-**Version:** v0.8.3.12+8
+**Last updated:** 2026-06-06 (wave-6 IPW @ **v0.8.3.12+9**; **103/Fair** @ `d5c4bca5`; Path B)
+**Version Anchor:** v0.8.3.12+9  
+**Version:** v0.8.3.12+9
 **Code:** E08S03T12
 
-**Scope:** Phased burn-down of GitHub Code Quality **maintainability** findings on `main`. Wave 5 @ **v0.8.3.12+7**. Closure step 28: **Fair** (lag-accepted **146**; operator UI refresh pending). Wave 6 **planned**. Task **IN PROGRESS** until **Good+**.
+**Scope:** Phased burn-down of GitHub Code Quality **maintainability** findings on `main`. Wave 5 @ **v0.8.3.12+7**. Step 28: **103/Fair** @ `d5c4bca5` (operator UI + CQG). Wave 6 **planned** per [IPP §4.7](../../../../../implementation-cycles/IPP-E08S03T12-code-quality-maintainability-backlog-br099.md#47-wave-6-ledger-planned--path-b-do-not-re-execute-waves-15). Task **IN PROGRESS** until **Good+**.
 
 **Upstream:** [BR-099 — Code Quality maintainability backlog](../../../fr-br/BR-099-code-quality-maintainability-backlog.md)
 
@@ -27,7 +27,7 @@ Publication Status: NOT_APPLICABLE
 
 ## Input
 
-- [IPP-E08S03T12](../../../../../implementation-cycles/IPP-E08S03T12-code-quality-maintainability-backlog-br099.md) — closure phase (**§4.6** steps 50, 28–30, 13; **§4.7** wave-6 contingency); wave 5 **DONE** @ v0.8.3.12+7
+- [IPP-E08S03T12](../../../../../implementation-cycles/IPP-E08S03T12-code-quality-maintainability-backlog-br099.md) — wave 6 (**§4.7** steps 52–59); closure @ +8; CQG verification ([operator guide](../../../../../../packages/frameworks/tooling-automation/docs/code-quality-gate-operator-guide.md))
 - [BR-099](../../../fr-br/BR-099-code-quality-maintainability-backlog.md)
 - [Security & quality — Standard findings](https://github.com/RMS-Ltd/ai-dev-kit/security/quality)
 - [BR-100 — Reliability backlog](T13-code-quality-reliability-backlog-br100.md) (coordinate sequencing: reliability first if overlapping hotspots)
@@ -43,7 +43,8 @@ Publication Status: NOT_APPLICABLE
 3. Post-wave dashboard snapshot: Maintainability score + open count delta.
 4. Wave 4: T13-deferred `py/print-during-import` remediation per [IPP §4.3](../../../../../implementation-cycles/IPP-E08S03T12-code-quality-maintainability-backlog-br099.md#43-wave-4-ledger-done--do-not-re-execute) (**done** @ v0.8.3.12+6).
 5. Wave 5: CodeQL-aligned maintainability burn-down — **shipped** @ **v0.8.3.12+7**.
-6. Closure: post–wave-5 merge capture @ step 28 — **Fair** (operator UI refresh pending); wave 6 **planned** per [IPP §4.7](../../../../../implementation-cycles/IPP-E08S03T12-code-quality-maintainability-backlog-br099.md#47-wave-6-contingency-ledger-open--populate-only-if-step-28-fails-good).
+6. Closure: post–wave-5 merge capture @ step 28 — **103/Fair** @ `d5c4bca5` (**done** @ IPW).
+7. Wave 6: CodeQL-aligned burn-down per [IPP §4.7](../../../../../implementation-cycles/IPP-E08S03T12-code-quality-maintainability-backlog-br099.md#47-wave-6-ledger-planned--path-b-do-not-re-execute-waves-15) — **planned**; awaiting **`implement wave 6`**.
 
 ---
 
@@ -327,53 +328,69 @@ Publication Status: NOT_APPLICABLE
 
 ---
 
-## Post-wave-5-merge manifest (2026-06-06 — IPP step 28)
+## Post-wave-5-merge manifest (2026-06-06 — IPP step 28; refreshed)
 
-**Source:** [GitHub Code Quality — Standard findings](https://github.com/RMS-Ltd/ai-dev-kit/security/quality) after wave-5 merge to `main`; `gh api code-scanning/alerts` (0 open — Code Quality UI uses separate product surface).
+**Source:** [GitHub Code Quality — Standard findings](https://github.com/RMS-Ltd/ai-dev-kit/security/quality) (operator UI refresh 2026-06-06); cross-validated by local CQG (`security-and-quality` @ `d5c4bca5`).
 
 | Field | Value |
 | ----- | ----- |
-| Snapshot date | 2026-06-06 14:54 UTC |
-| Branch / ref | `main` @ `56b34f0d` (includes wave-5 tag `v0.8.3.12+7` in ancestry) |
-| Open maintainability | **146** (lag-accepted — last operator-confirmed @ pre-wave-5 `f6aa4dca`; **UI refresh pending**) |
-| Dashboard score | **Fair** (lag-accepted — **Good+ not evidenced**; operator UI refresh pending) |
-| Delta vs pre-wave-5 (146) | **TBD** — requires operator Code Quality UI refresh post-merge |
+| Snapshot date | 2026-06-06 15:55 UTC |
+| Branch / ref | `main` @ `d5c4bca5` (includes wave-5 + post-wave merges) |
+| Open maintainability | **103** (CQG maintainability band; operator UI refresh confirmed) |
+| Dashboard score | **Fair** (**Good+ not evidenced**) |
+| Delta vs lag-accepted pre-wave-5 (146) | **−43** (−29.5%) |
+| Delta vs wave-1 re-scan (145) | **−42** (−29.0%) |
 
-**Step 50 (remote precondition):** **SATISFIED** — `origin/dev` @ `56b34f0d`; tags `v0.8.3.12+7` and `v0.4.1001` on remote.
+**Step 50 (remote precondition):** **SATISFIED** — wave-5 tag `v0.8.3.12+7` in `main` ancestry.
 
-**Rule breakdown (maintainability subtotal):** Lag-accepted from pre-wave-5 capture ([T16 @ `f6aa4dca`](T16-github-security-code-quality-health-perpetual-fr112.md)) until operator refreshes UI post–wave-5 merge:
+**Rule breakdown (maintainability subtotal — CQG @ `d5c4bca5`):**
 
-| CodeQL rule | Open count (lag @ `f6aa4dca`) | Wave-6 chunk |
-| ----------- | ----------------------------- | ------------ |
-| `py/unused-import` | 46 | Chunk M |
-| `py/import-and-import-from` | 34 | Chunk M |
-| `py/unused-global-variable` | 28 | Chunk L |
+| CodeQL rule | Open count | Wave-6 chunk |
+| ----------- | ---------- | -------------- |
+| `py/import-and-import-from` | 37 | Chunk M |
+| `py/unused-import` | 19 | Chunk M |
 | `py/unused-local-variable` | 13 | Chunk M |
 | `py/ineffectual-statement` | 10 | Chunk M |
+| `py/unnecessary-delete` | 5 | Chunk L |
 | `py/multiple-definition` | 5 | Chunk L |
 | `py/repeated-import` | 4 | Chunk M |
+| `py/unused-global-variable` | 4 | Chunk L |
 | `py/unnecessary-lambda` | 4 | Chunk L |
 | `py/unnecessary-pass` | 2 | Chunk L |
-| **Total** | **146** | — |
+| **Total** | **103** | — |
 
-**Local verification @ wave-5 tag (`v0.8.3.12+7`):** ruff proxy (`F401,F841,I001,F811,F541`) **0**; mirror sync **1499** files (per post-wave-5 manifest).
+**Local verification @ `d5c4bca5`:** CQG maintainability **Fair**; ruff proxy (`F401,F841,I001,F811,F541`) **0** on packages + greenfield-install + scripts (wave-5 regression guard).
 
-**Closure branch (step 28):** **Fair @ material count** — step 30a → [IPP §4.7 wave 6](../../../../../implementation-cycles/IPP-E08S03T12-code-quality-maintainability-backlog-br099.md#47-wave-6-contingency-ledger-open--populate-only-if-step-28-fails-good). Task remains **IN PROGRESS** (step 13). **Do not COMPLETE** until operator UI confirms **Good+**.
+**Closure branch (step 28):** **Fair @ material count** — **Path B** → [IPP §4.7 wave 6](../../../../../implementation-cycles/IPP-E08S03T12-code-quality-maintainability-backlog-br099.md#47-wave-6-ledger-planned--path-b-do-not-re-execute-waves-15). Task remains **IN PROGRESS** (step 13). **Do not COMPLETE** until **Good+**.
 
 ---
 
-## Wave-6 pre-manifest (2026-06-06 — IPP step 52; refresh counts after operator UI)
+## Wave-6 pre-manifest (2026-06-06 — IPP step 52)
 
-**Trigger:** Step 28 **Fair** branch — populate rule counts from post-merge Code Quality UI before Chunks L/M bulk edits.
+**Trigger:** Step 28 **Fair** branch — authoritative counts from operator UI + CQG @ `d5c4bca5`.
 
 | Field | Value |
 | ----- | ----- |
-| Snapshot date | _Pending operator UI refresh_ |
-| Branch / ref | `main` @ `56b34f0d` (baseline) |
-| Open maintainability | _TBD_ (refresh step 28 UI) |
-| Dashboard score | _TBD_ |
+| Snapshot date | 2026-06-06 15:55 UTC |
+| Branch / ref | `main` @ `d5c4bca5` |
+| Open maintainability | **103** |
+| Dashboard score | **Fair** |
+| CQG report | `.cqg/reports/summary-2026-06-06_155513_UTC.json` |
 
-**Triage (step 53 — planned):** Chunk L (manual CodeQL rules) + Chunk M (hygiene + mirror) per [IPP §4.7](../../../../../implementation-cycles/IPP-E08S03T12-code-quality-maintainability-backlog-br099.md#47-wave-6-contingency-ledger-open--populate-only-if-step-28-fails-good).
+**Rule breakdown:** Same as post-merge manifest above (step 28 authoritative baseline for wave 6).
+
+---
+
+## Wave-6 triage (2026-06-06 — IPP step 53)
+
+| Rule group | Disposition | Rationale |
+| ---------- | ----------- | --------- |
+| Chunk L (`py/unused-global-variable`, `py/multiple-definition`, `py/unnecessary-lambda`, `py/unnecessary-pass`, `py/unnecessary-delete`) | **FIX** | Manual CodeQL rules; paths from CQG SARIF |
+| Chunk M (import hygiene, unused local, ineffectual, repeated-import) | **FIX** | Dashboard/CQG-flagged paths; mirror sync after `packages/` edits |
+| Mirror sync | **FIX** | `scripts/sync_greenfield_install.py` after Chunk L/M on `packages/` |
+| Reliability findings in CQG output | **DEFER** | Out of T12 scope (T13); do not fix in wave 6 |
+
+**Verification:** Run `run_cqg.py` before RW (T34); maintainability count must trend below **103**.
 
 ---
 
@@ -382,15 +399,15 @@ Publication Status: NOT_APPLICABLE
 - [x] Baseline manifest captured in this task doc (rule → count).
 - [x] Wave-1 rule groups remediated or waived with documented rationale.
 - [x] Open maintainability count reduced ≥50% vs baseline (**560→145**, −74.1% on dashboard re-scan).
-- [ ] Maintainability score **Good** or better (**Fair** @ lag-accepted **146** post–wave-5 merge capture; operator UI refresh pending — wave 6 planned).
+- [ ] Maintainability score **Good** or better (**Fair** @ **103** post–wave-5 merge; wave 6 **planned** per [IPP §4.7](../../../../../implementation-cycles/IPP-E08S03T12-code-quality-maintainability-backlog-br099.md#47-wave-6-ledger-planned--path-b-do-not-re-execute-waves-15)).
 - [x] CI (`pytest`, workflow-scripts-pytest, tests) green (local — 407 / 119 passed @ 2026-06-06).
-- [ ] **BR-099** terminal closure via **RW E08:S03:T12 --art** when **Good+** confirmed (interim releases @ +1–+7 done).
+- [ ] **BR-099** terminal closure via **RW E08:S03:T12 --art** when **Good+** confirmed (interim releases @ +1–+8 done).
 
 ---
 
 ## References
 
-- [IPP-E08S03T12](../../../../../implementation-cycles/IPP-E08S03T12-code-quality-maintainability-backlog-br099.md) — closure phase (§4.6–§4.7); wave 5 @ v0.8.3.12+7
+- [IPP-E08S03T12](../../../../../implementation-cycles/IPP-E08S03T12-code-quality-maintainability-backlog-br099.md) — wave 6 @ [§4.7](../../../../../implementation-cycles/IPP-E08S03T12-code-quality-maintainability-backlog-br099.md#47-wave-6-ledger-planned--path-b-do-not-re-execute-waves-15); closure @ +8
 - [BR-099](../../../fr-br/BR-099-code-quality-maintainability-backlog.md)
 - [BR-100](../../../fr-br/BR-100-code-quality-reliability-backlog.md) — wave-2 deferred **16** print-at-import → T12 wave 4 ([T13 task](T13-code-quality-reliability-backlog-br100.md))
 - [BR-101](../../../fr-br/BR-101-code-quality-ai-suggestions-backlog.md)

@@ -8,7 +8,7 @@ housekeeping_policy: keep
 
 # IDE command whitelist guide
 
-**Version:** 1.1 (2026-05-30) · **ADR:** [ADR-013](../architecture/standards-and-adrs/ADR-013-ide-command-allowlist-catalog-and-enforcement.md) · **Task:** [E06:S07:T107](../project-management/kanban/epics/epic-06/story-07-adk-implementation-analysis-and-package-management/T107-ide-command-whitelist-optimization.md)
+**Version:** 1.1 (2026-05-30) · **ADR:** [ADR-013](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/architecture/standards-and-adrs/ADR-013-ide-command-allowlist-catalog-and-enforcement.md) · **Task:** [E06:S07:T107](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/project-management/kanban/epics/epic-06/story-07-adk-implementation-analysis-and-package-management/T107-ide-command-whitelist-optimization.md)
 
 ---
 
@@ -22,9 +22,9 @@ This guide explains the **pattern catalog + validator + Cursor playbook** model 
 | Cursor apply | [`.cursor/permissions.json`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/.cursor/permissions.json) | **Terminal allowlist** Cursor loads automatically (prefix rules) |
 | Proof | `validate_whitelist_patterns.py` | Ensures patterns compile and examples match |
 | Playbook | This guide | Tune `permissions.json`; optional IDE UI for gaps |
-| Evidence | [ide-whitelist-uat-log.md](ide-whitelist-uat-log.md) | UAT and integration spike entries |
+| Evidence | [ide-whitelist-uat-log.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/developer-tools/ide-whitelist-uat-log.md) | UAT and integration spike entries |
 
-**Out of scope:** [BR-039](../project-management/kanban/fr-br/BR-039-cascade-whitelist-security-prompt-usability-blocker.md) (Cascade/Windsurf vendor whitelist). See [E06:S06:T57](../project-management/kanban/epics/epic-06/story-06-feature-requests/T57-br039-cascade-whitelist-security-prompt-blocker.md).
+**Out of scope:** [BR-039](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/project-management/kanban/fr-br/BR-039-cascade-whitelist-security-prompt-usability-blocker.md) (Cascade/Windsurf vendor whitelist). See [E06:S06:T57](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/project-management/kanban/epics/epic-06/story-06-feature-requests/T57-br039-cascade-whitelist-security-prompt-blocker.md).
 
 ---
 
@@ -151,7 +151,7 @@ find {PROJECT_ROOT} -name "validate_*.py"
 1. Add or refine a pattern in `.cursor/whitelist-patterns.yaml` with `examples` and optional `negative_examples`.
 2. Run `validate_whitelist_patterns.py` (must pass).
 3. Add matching **prefix** line(s) to `.cursor/permissions.json` → `terminalAllowlist` (see [Cursor prefix rules](https://cursor.com/docs/reference/permissions#terminal-allowlist-format)).
-4. Append a row to [ide-whitelist-uat-log.md](ide-whitelist-uat-log.md) if measuring prompt counts.
+4. Append a row to [ide-whitelist-uat-log.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/developer-tools/ide-whitelist-uat-log.md) if measuring prompt counts.
 5. Release via `RW` on the host task when changing catalog or permissions in a versioned delivery.
 
 ---
@@ -179,8 +179,8 @@ find {PROJECT_ROOT} -name "validate_*.py"
 
 ## Support
 
-1. This guide and [ADR-013](../architecture/standards-and-adrs/ADR-013-ide-command-allowlist-catalog-and-enforcement.md)
-2. [IPP-E6S7T107](../implementation-cycles/IPP-E06S07T107-ide-command-whitelist-optimization.md)
-3. [T107 task doc](../project-management/kanban/epics/epic-06/story-07-adk-implementation-analysis-and-package-management/T107-ide-command-whitelist-optimization.md)
+1. This guide and [ADR-013](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/architecture/standards-and-adrs/ADR-013-ide-command-allowlist-catalog-and-enforcement.md)
+2. [IPP-E6S7T107](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/implementation-cycles/IPP-E06S07T107-ide-command-whitelist-optimization.md)
+3. [T107 task doc](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/project-management/kanban/epics/epic-06/story-07-adk-implementation-analysis-and-package-management/T107-ide-command-whitelist-optimization.md)
 
 **Last updated:** 2026-05-30

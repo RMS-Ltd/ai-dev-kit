@@ -34,11 +34,11 @@ This guide now distinguishes the **greenfield** first-run path from brownfield a
 
 For policy and boundaries:
 
-- [ADR-003 – Greenfield vs Brownfield adoption](../../architecture/standards-and-adrs/ADR-003-greenfield-vs-brownfield-adoption.md)
-- [FR-081 – Brownfield modular adopter integration](../../project-management/kanban/fr-br/FR-081-brownfield-modular-adopter-integration.md)
-- [IPP-E6S9T2 planning package](../../implementation-cycles/IPP-E6S09T02-brownfield-modular-adopter-integration-fr081.md)
-- [FR-080 implementing task (E6:S09:T01)](../../project-management/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T01-greenfield-installation-process-fr080.md)
-- [IPW-E6S9T1 planning package](../../implementation-cycles/IPW-E6S09T01-greenfield-installation-fr080.md)
+- [ADR-003 – Greenfield vs Brownfield adoption](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/architecture/standards-and-adrs/ADR-003-greenfield-vs-brownfield-adoption.md)
+- [FR-081 – Brownfield modular adopter integration](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/project-management/kanban/fr-br/FR-081-brownfield-modular-adopter-integration.md)
+- [IPP-E6S9T2 planning package](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/implementation-cycles/IPP-E6S09T02-brownfield-modular-adopter-integration-fr081.md)
+- [FR-080 implementing task (E6:S09:T01)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/project-management/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T01-greenfield-installation-process-fr080.md)
+- [IPW-E6S9T1 planning package](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/implementation-cycles/IPW-E6S09T01-greenfield-installation-fr080.md)
 
 For the current canonical greenfield sequence (default RW-first with explicit override checkpoint), see:
 
@@ -50,8 +50,8 @@ Post-install **validator commands**, a **synthetic reference transcript**, and *
 
 AI Dev Kit does **not** require [ECC](https://github.com/affaan-m/ECC) (MIT License; upstream harness-native operator system by Affaan Mustafa and contributors). If you want optional harness execution skills (TDD, language patterns, security scan) alongside ADK governance:
 
-- Read the [ECC ↔ ADK integration specification](../../architecture/standards-and-adrs/ecc-adk-harness-layer-integration-specification.md)
-- Review the [Phase 0 compatibility evaluation](../../architecture/standards-and-adrs/ecc-adk-harness-layer-phase0-evaluation.md) before installing ECC into an ADK-adopted repo
+- Read the [ECC ↔ ADK integration specification](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/architecture/standards-and-adrs/ecc-adk-harness-layer-integration-specification.md)
+- Review the [Phase 0 compatibility evaluation](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/architecture/standards-and-adrs/ecc-adk-harness-layer-phase0-evaluation.md) before installing ECC into an ADK-adopted repo
 - Full greenfield install steps for ECC are **deferred** to FR-098 Phase 2; obtain ECC from upstream (`npx -p ecc-universal ecc-install`)
 
 ---
@@ -1043,8 +1043,8 @@ See the [Usage Guide](framework-dependency-usage-guide.md) for detailed usage in
 
 ## References
 
-- [Framework Dependency Architecture](../../architecture/standards-and-adrs/framework-dependency-architecture.md)
-- [CLI Tool Design](../../architecture/standards-and-adrs/framework-update-cli-design.md)
+- [Framework Dependency Architecture](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/architecture/standards-and-adrs/framework-dependency-architecture.md)
+- [CLI Tool Design](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/architecture/standards-and-adrs/framework-update-cli-design.md)
 - [Update Guide](framework-dependency-update-guide.md)
 - [Troubleshooting Guide](framework-dependency-troubleshooting-guide.md)
 

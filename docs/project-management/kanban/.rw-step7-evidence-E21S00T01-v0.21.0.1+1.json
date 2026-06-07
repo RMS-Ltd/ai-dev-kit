@@ -1,0 +1,13 @@
+{
+  "release": "0.21.0.1+1",
+  "task": "E21:S00:T01",
+  "mode": "rw-k",
+  "art": true,
+  "surfaces": [
+    {"path": "docs/project-management/kanban/epics/epic-21/story-00-language-selection-at-setup/T01-add-language-selection-prompt-to-template-setup-github-templ.md", "why": "host task version anchor"},
+    {"path": "docs/project-management/kanban/epics/epic-21/story-00-language-selection-at-setup.md", "why": "story version sync"},
+    {"path": "docs/project-management/kanban/epics/epic-21/Epic-21.md", "why": "epic last-updated"},
+    {"path": "docs/project-management/kanban/fr-br/FR-006-localization-language-selection-uk-us-english.md", "why": "implementing-task link"},
+    {"path": "docs/project-management/kanban/kboard.md", "why": "E21:S00 row + board metadata"}
+  ]
+}

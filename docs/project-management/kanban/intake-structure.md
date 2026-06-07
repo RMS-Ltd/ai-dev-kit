@@ -21,7 +21,7 @@ housekeeping_policy: keep
 
 ## Overview
 
-This document provides **complete listings of all FBU items** in the AI Dev Kit project, organized by type for comprehensive reference. For MoSCOW prioritization, see [`kboard.md`](kboard.md). For the **operational intake plan** (open ∧ taskless queue, epic branch + **`RW -k`**, hygiene notes), see [`intake-open-taskless-queue.md`](intake-open-taskless-queue.md).
+This document provides **complete listings of all FBU items** in the AI Dev Kit project, organised by type for comprehensive reference. For MoSCOW prioritization, see [`kboard.md`](kboard.md). For the **operational intake plan** (open ∧ taskless queue, epic branch + **`RW -k`**, hygiene notes), see [`intake-open-taskless-queue.md`](intake-open-taskless-queue.md).
 
 **Document Purpose:**
 
@@ -81,7 +81,7 @@ This document provides **complete listings of all FBU items** in the AI Dev Kit 
 - **FR-009** – Intelligent Epic Matching AI-Assisted Canonical Adoption - TODO (LOW, AI-assisted epic matching for canonical adoption) - [FR-009](fr-br/FR-009-intelligent-epic-matching-ai-assisted-canonical-adoption.md)
 - **FR-008** – Package Uninstall Capabilities - TODO (LOW, Uninstall capabilities for packages) - [FR-008](fr-br/FR-008-package-uninstall-capabilities.md)
 - **FR-007** – Migration Utilities and Installation Modes - TODO (LOW, Migration utilities and installation modes) - [FR-007](fr-br/FR-007-migration-utilities-and-installation-modes.md)
-- **FR-006** – Localization Language Selection UK/US English - TODO (LOW, Language selection for UK/US English) - [FR-006](fr-br/FR-006-localization-language-selection-uk-us-english.md)
+- **FR-006** – Localisation Language Selection UK/US English - TODO (LOW, Language selection for UK/US English) - [FR-006](fr-br/FR-006-localization-language-selection-uk-us-english.md)
 - **FR-005** – Systematic Canonical Epics Stories Tasks Templates - ✅ IMPLEMENTED (v0.4.6.1+1; E04:S06:T01) - [FR-005](fr-br/FR-005-systematic-canonical-epics-stories-tasks-templates.md) | [intake-completed](intake-completed.md)
 - **FR-004** – GitHub Submission for FBU - TODO (LOW, GitHub integration for FBU submission) - [FR-004](fr-br/FR-004-github-submission-for-fr-br-uxr.md)
 - **FR-003** – Dependency Tracking in Adopting Projects - TODO (LOW, Dependency tracking for project adoption) - [FR-003](fr-br/FR-003-dependency-tracking-in-adopting-projects.md)
@@ -105,7 +105,7 @@ This document provides **complete listings of all FBU items** in the AI Dev Kit 
 - **BR-036** – RW Step 7 Board Update Bugs - TODO (MEDIUM, Bugs in Release Workflow Step 7 board updates) - [BR-036](fr-br/BR-036-rw-step-7-board-update-bugs.md)
 - **BR-035** – RW Housekeeping Step Not Working - TODO (MEDIUM, Release Workflow housekeeping step issues) - [BR-035](fr-br/BR-035-rw-housekeeping-step-not-working.md)
 - **BR-034** – UKW MoSCoW Prioritization Missing - TODO (MEDIUM, Missing MoSCoW prioritization in UKW) - [BR-034](fr-br/BR-034-ukw-moscow-prioritization-missing.md)
-- **BR-033** – UKW Board Disorganization - TODO (MEDIUM, Disorganization in Update Kanban Workflow board) - [BR-033](fr-br/BR-033-ukw-board-disorganization.md)
+- **BR-033** – UKW Board Disorganisation - TODO (MEDIUM, Disorganisation in Update Kanban Workflow board) - [BR-033](fr-br/BR-033-ukw-board-disorganisation.md)
 
 ### Low Priority (Could Have - C)
 
@@ -186,4 +186,4 @@ This document provides **complete listings of all FBU items** in the AI Dev Kit 
 3. **Trend monitoring** - Track patterns in FBU submissions
 
 ---
-*This structure document provides comprehensive FBU inventory organized by type, complementing the MoSCOW prioritization in the main board.*
+*This structure document provides comprehensive FBU inventory organised by type, complementing the MoSCOW prioritization in the main board.*

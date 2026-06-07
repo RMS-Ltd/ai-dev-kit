@@ -277,7 +277,7 @@ Perpetual tasks are used for ongoing maintenance workflows (e.g., UKW, CMW). See
 **Status:** Canonical (part of framework structure)
 
 **Description:**
-This epic encompasses user experience research activities, including user research, usability testing, user feedback collection, persona development, user journey mapping, and UX insights. This epic provides the organizational structure for understanding users and ensuring products meet user needs effectively.
+This epic encompasses user experience research activities, including user research, usability testing, user feedback collection, persona development, user journey mapping, and UX insights. This epic provides the organisational structure for understanding users and ensuring products meet user needs effectively.
 
 **Key Characteristics:**
 - User research and interviews
@@ -290,7 +290,7 @@ This epic encompasses user experience research activities, including user resear
 **Typical Stories:**
 
 #### Story 1: User Research and Discovery
-**Purpose:** Conduct user research to understand user needs, behaviors, and pain points.
+**Purpose:** Conduct user research to understand user needs, behaviours, and pain points.
 
 **Typical Tasks:**
 - T01: Define research objectives and questions
@@ -358,7 +358,7 @@ This epic encompasses user experience research activities, including user resear
 **Status:** Core Framework Epic (universal need)
 
 **Description:**
-This epic encompasses codebase maintenance and review activities, including addressing IDE-flagged issues (errors, warnings, info), code quality standards, maintenance workflows, and continuous codebase health monitoring. This epic provides the organizational structure for ongoing maintenance work that keeps the codebase healthy and maintainable.
+This epic encompasses codebase maintenance and review activities, including addressing IDE-flagged issues (errors, warnings, info), code quality standards, maintenance workflows, and continuous codebase health monitoring. This epic provides the organisational structure for ongoing maintenance work that keeps the codebase healthy and maintainable.
 
 **Key Characteristics:**
 - IDE-flagged issue resolution (errors, warnings, info)
@@ -834,7 +834,7 @@ These epics represent common patterns found in ambitious projects. Use as needed
 - T01: Choose analytics platform
 - T02: Implement analytics tracking
 - T03: Set up event tracking
-- T04: Configure user behavior tracking
+- T04: Configure user behaviour tracking
 - T05: Add privacy compliance (GDPR, etc.)
 
 #### Story 2: Metrics and Reporting
@@ -901,14 +901,14 @@ These epics represent common patterns found in ambitious projects. Use as needed
 
 ---
 
-### Epic 21: Internationalization and Localization
+### Epic 21: Internationalisation and Localisation
 
-**Purpose:** Multi-language support and localization.  
+**Purpose:** Multi-language support and localisation.  
 **Scope:** Translation, locale management, cultural adaptation, RTL support, language selection at setup.  
 **Status:** Project-specific (canonical pattern)
 
 **Description:**
-This epic encompasses internationalization (i18n) and localization (l10n) activities, including language selection at setup, translation infrastructure, translation management, and cultural adaptation. This epic provides the organizational structure for making the framework accessible to users worldwide, supporting multiple languages and cultural preferences.
+This epic encompasses internationalisation (i18n) and localisation (l10n) activities, including language selection at setup, translation infrastructure, translation management, and cultural adaptation. This epic provides the organisational structure for making the framework accessible to users worldwide, supporting multiple languages and cultural preferences.
 
 **Key Characteristics:**
 - Language selection at setup (UK/US English + international)
@@ -932,7 +932,7 @@ This epic encompasses internationalization (i18n) and localization (l10n) activi
 - T06: Update content generation to use language preference (RW, templates)
 - T07: Test UK/US English selection and content generation
 
-#### Story 1: Internationalization Infrastructure
+#### Story 1: Internationalisation Infrastructure
 **Purpose:** Set up i18n infrastructure and framework for broader language support.
 
 **Typical Tasks:**
@@ -942,10 +942,10 @@ This epic encompasses internationalization (i18n) and localization (l10n) activi
 - T04: Add language switching functionality
 - T05: Configure date/time/number formatting per locale
 - T06: Implement translation key system
-- T07: Set up translation fallback chain (selected → English → US English)
+- T07: Set up translation fallback chain (selected → UK English → US English)
 
-#### Story 2: Translation and Localization
-**Purpose:** Implement translations and localization for major languages.
+#### Story 2: Translation and Localisation
+**Purpose:** Implement translations and localisation for major languages.
 
 **Typical Tasks:**
 - T01: Identify and extract all translatable content
@@ -1152,7 +1152,7 @@ Replace these placeholders when contextualizing templates:
 2. **Add Project-Specific Epics (9, 11-17, 19-21+):** Add based on project needs
    - Epic 9: User Management and Authentication (if multi-user app)
    - Epics 11-17: API, Frontend, Testing, Deployment, Security, Performance, Integration
-   - Epics 19-21+: Analytics, Mobile, Internationalization, etc.
+   - Epics 19-21+: Analytics, Mobile, Internationalisation, etc.
 4. **Contextualize Placeholders:** Replace `{PROJECT_NAME}`, `{DOMAIN}`, etc.
 5. **Customize Stories/Tasks:** Remove irrelevant ones, add project-specific ones
 6. **Scale as Needed:** Start minimal, expand as project grows
@@ -1176,7 +1176,7 @@ Replace these placeholders when contextualizing templates:
 **Project-Specific Epics (9, 11-17, 19-21+):**
 - Epic 9: User Management and Authentication (if multi-user app)
 - Epics 11-17: API, Frontend, Testing, Deployment, Security, Performance, Integration
-- Epics 19-21+: Analytics, Mobile, Internationalization, etc.
+- Epics 19-21+: Analytics, Mobile, Internationalisation, etc.
 - Epic 24+ (if added later): Conditional (e.g., Permissions) based on product needs
 
 **Suggested Adoption Order (Probable Chronology):**

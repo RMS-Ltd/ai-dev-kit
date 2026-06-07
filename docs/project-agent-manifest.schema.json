@@ -53,6 +53,16 @@
     "openWork": {
       "type": "array",
       "items": { "$ref": "#/$defs/openWorkEntry" }
+    },
+    "documentationSurfaces": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["notionHubUrl", "notionKbUrl", "configSource"],
+      "properties": {
+        "notionHubUrl": { "type": "string", "format": "uri" },
+        "notionKbUrl": { "type": "string", "format": "uri" },
+        "configSource": { "type": "string" }
+      }
     }
   },
   "$defs": {

@@ -27,8 +27,8 @@ function HomepageHeader() {
           </Link>
           <Link
             className="button button--outline button--secondary button--lg margin-horiz--sm"
-            to="/docs/architecture/standards-and-adrs/dev-kit-versioning-policy">
-            Versioning policy
+            to="/docs/guides/workflow-initiation-cheatsheet">
+            Workflow cheatsheet
           </Link>
         </div>
       </div>
@@ -41,7 +41,7 @@ export default function Home() {
   return (
     <Layout
       title={siteConfig.title}
-      description="AI Dev Kit monorepo documentation — architecture, workflows, Kanban, and framework packages.">
+      description="AI Dev Kit adopter documentation — guides, framework adoption, and workflow reference.">
       <HomepageHeader />
       <main>
         <HomepageFeatures />

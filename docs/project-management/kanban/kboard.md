@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Board
 
-**Last Updated:** 2026-06-06 (RW: E08:S03:T12)
-**Version:** v0.8.3.12+8
+**Last Updated:** 2026-06-07 (RW **v0.5.8.4+3** — FR-114 IMPLEMENTED closure)
+**Version:** v0.5.8.4+3
 
 **Active board contract:** **Sole active MoSCOW board** ([ADR-018](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/architecture/standards-and-adrs/ADR-018-single-kanban-board-consolidation.md)). Rows are **live work** (TODO / IN PROGRESS / OPEN / WAITING / PERPETUAL) plus filed **Could Have** backlog. **Verification (V)** band holds task-shipped / FBU-open items (`⏳ WAITING`). Remove **terminal** rows and archive prose (use [`kanban-completed.md`](kanban-completed.md) / [`intake-completed.md`](intake-completed.md)).
 
@@ -28,9 +28,9 @@ housekeeping_policy: keep
 
 ### Should Have (S) - Important Tasks
 
-*(T06 RC sign-off **APPROVE** @ v0.10.1.6+4; T08 COMPLETE @ v0.10.1.8+1; T09 COMPLETE @ v0.10.1.9+1; T10 COMPLETE @ v0.10.1.10+1; see [`kanban-completed.md`](kanban-completed.md).)*
+*(FR-114 **IMPLEMENTED** @ v0.5.8.4+3 — T03/T04/T15; see [`intake-completed.md`](intake-completed.md) · [`kanban-completed.md`](kanban-completed.md).)*
 
-- **E08:S03:T12** – Code Quality maintainability backlog (BR-099) - 🔄 IN PROGRESS (MEDIUM, **v0.8.3.12+8** closure docs; lag-accepted **146/Fair**; wave 6 **planned**; **Good+** pending operator UI) | [Task](epics/epic-08/story-03-automation-scripts/T12-code-quality-maintainability-backlog-br099.md) | [BR-099](fr-br/BR-099-code-quality-maintainability-backlog.md) | [—IPP—](../../implementation-cycles/IPP-E08S03T12-code-quality-maintainability-backlog-br099.md) | Last modified: 2026-06-06 15:01 UTC
+- **E08:S03:T12** – Code Quality maintainability backlog (BR-099) - 🔄 IN PROGRESS (MEDIUM, **v0.8.3.12+9** wave-6 IPW; **103/Fair** @ `d5c4bca5`; **`implement wave 6`**) | [Task](epics/epic-08/story-03-automation-scripts/T12-code-quality-maintainability-backlog-br099.md) | [BR-099](fr-br/BR-099-code-quality-maintainability-backlog.md) | [—IPP—](../../implementation-cycles/IPP-E08S03T12-code-quality-maintainability-backlog-br099.md) | Last modified: 2026-06-06 17:01 UTC
 
 ### Verification (V) - Task Shipped, FBU Verification Pending
 
@@ -50,13 +50,25 @@ housekeeping_policy: keep
 
 - **E07:S01:T10** – FR-039: AI Dev Kit Project Review and Legacy Clean-up - 📋 TODO (LOW, Review and clean up legacy project elements) | [Task](epics/epic-07/story-01-codebase-maintenance-tasks/T10-project-root-hygiene-and-legacy-docs-rationalization.md) | [FR-039](fr-br/FR-039-ai-dev-kit-project-review-and-legacy-clean-up.md) | —No IPP— | Last modified: 2026-06-04 12:15 UTC
 
-- **E21:S00:T01** – FR-006: Localization Language Selection UK/US English - 📋 TODO (LOW, Language selection for UK/US English) | [Task](epics/epic-21/story-00-language-selection-at-setup.md) | [FR-006](fr-br/FR-006-localization-language-selection-uk-us-english.md) | —No IPP— | Last modified: 2025-12-09 00:00 UTC
+- **E21:S01:T01** – Add language selection prompt to template setup (GitHub template) - 📋 TODO (MEDIUM, FR-006 Phase 1; **v0.21.1.1+1** kanban rehouse) | [Task](epics/epic-21/story-01-language-selection-at-setup/T01-add-language-selection-prompt-to-template-setup-github-templ.md) | [Story](epics/epic-21/story-01-language-selection-at-setup.md) | [FR-006](fr-br/FR-006-localization-language-selection-uk-us-english.md) | —No IPP— | Last modified: 2026-06-06 17:13 UTC
+
+- **E21:S01:T02** – Add language selection prompt to CLI tool (`ai-dev-kit init`) - 📋 TODO (MEDIUM, FR-006; **v0.21.1.2+0** kanban-init filed) | [Task](epics/epic-21/story-01-language-selection-at-setup/T02-add-language-selection-prompt-to-cli-tool-ai-dev-kit-init.md) | [Story](epics/epic-21/story-01-language-selection-at-setup.md) | [FR-006](fr-br/FR-006-localization-language-selection-uk-us-english.md) | —No IPP— | Last modified: 2026-06-05 05:07 UTC
+
+- **E21:S01:T03** – Add language selection prompt to RW Installer (`install_release_workflow.py`) - 📋 TODO (MEDIUM, FR-006; **v0.21.1.3+0** kanban-init filed) | [Task](epics/epic-21/story-01-language-selection-at-setup/T03-add-language-selection-prompt-to-rw-installer-install-releas.md) | [Story](epics/epic-21/story-01-language-selection-at-setup.md) | [FR-006](fr-br/FR-006-localization-language-selection-uk-us-english.md) | —No IPP— | Last modified: 2026-06-05 05:08 UTC
+
+- **E21:S01:T04** – Create UK/US English content variants (documentation, templates) - 📋 TODO (MEDIUM, FR-006; **v0.21.1.4+0** kanban-init filed) | [Task](epics/epic-21/story-01-language-selection-at-setup/T04-create-ukus-english-content-variants-documentation-templates.md) | [Story](epics/epic-21/story-01-language-selection-at-setup.md) | [FR-006](fr-br/FR-006-localization-language-selection-uk-us-english.md) | —No IPP— | Last modified: 2026-06-05 05:09 UTC
+
+- **E21:S01:T05** – Implement configuration persistence (`ai-dev-kit-config.yaml`) - 📋 TODO (MEDIUM, FR-006; **v0.21.1.5+0** kanban-init filed) | [Task](epics/epic-21/story-01-language-selection-at-setup/T05-implement-configuration-persistence-ai-dev-kit-configyaml.md) | [Story](epics/epic-21/story-01-language-selection-at-setup.md) | [FR-006](fr-br/FR-006-localization-language-selection-uk-us-english.md) | —No IPP— | Last modified: 2026-06-05 05:10 UTC
+
+- **E21:S01:T06** – Update content generation to use language preference (RW, templates) - 📋 TODO (MEDIUM, FR-006; **v0.21.1.6+0** kanban-init filed) | [Task](epics/epic-21/story-01-language-selection-at-setup/T06-update-content-generation-to-use-language-preference-rw-temp.md) | [Story](epics/epic-21/story-01-language-selection-at-setup.md) | [FR-006](fr-br/FR-006-localization-language-selection-uk-us-english.md) | —No IPP— | Last modified: 2026-06-05 05:11 UTC
+
+- **E21:S01:T07** – Test UK/US English selection and content generation - 📋 TODO (MEDIUM, FR-006; **v0.21.1.7+0** kanban-init filed) | [Task](epics/epic-21/story-01-language-selection-at-setup/T07-test-ukus-english-selection-and-content-generation.md) | [Story](epics/epic-21/story-01-language-selection-at-setup.md) | [FR-006](fr-br/FR-006-localization-language-selection-uk-us-english.md) | —No IPP— | Last modified: 2026-06-05 05:12 UTC
 
 ### Ongoing (O) - Perpetual Tasks
 
 - **E02:S16:T03** – Workflow maintenance (Perpetual) - 🔄 PERPETUAL (BR-059 **RESOLVED** **v0.2.16.3+6**) - [Task](epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md) | [Story](epics/epic-02/story-16-perpetual-ongoing-workflow-operations.md) | [BR-059](fr-br/BR-059-ukw-moscow-incomplete-story-task-coverage.md) | [—IPP—](../../implementation-cycles/IPP-E2S16T03-rehouse-workflow-perpetual-tasks.md) | Last modified: 2026-06-03 12:29 UTC
 
-- **E02:S16:T04** – Ad-hoc Kanban synchronization and hygiene (Perpetual) - 🔄 PERPETUAL (**v0.2.16.4+35** — UKW -u: E05:S07:T01 / FR-022 archive) - [Task](epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T04-ad-hoc-kanban-synchronization-and-hygiene-perpetual.md) | [Story](epics/epic-02/story-16-perpetual-ongoing-workflow-operations.md) | [FR-023](fr-br/FR-023-update-kanban-workflow-ukw.md) | —No IPP— | Last modified: 2026-06-05 15:03 UTC
+- **E02:S16:T04** – Ad-hoc Kanban synchronization and hygiene (Perpetual) - 🔄 PERPETUAL (**v0.2.16.4+37** — UKW -u Epic 21 kanban-init wave bookkeeping) - [Task](epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T04-ad-hoc-kanban-synchronization-and-hygiene-perpetual.md) | [Story](epics/epic-02/story-16-perpetual-ongoing-workflow-operations.md) | [FR-023](fr-br/FR-023-update-kanban-workflow-ukw.md) | —No IPP— | Last modified: 2026-06-05 15:03 UTC
 
 - **E02:S16:T05** – Markdown Documentation Maintenance (Perpetual) - 🔄 PERPETUAL (**v0.2.16.5+6** — Wave 2: 36-file link-depth hygiene; BR-068 guard green) - [Task](epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T05-markdown-documentation-maintenance-perpetual.md) | [Story](epics/epic-02/story-16-perpetual-ongoing-workflow-operations.md) | [FR-088](fr-br/FR-088-dedicated-story-for-perpetual-ongoing-tasks.md) | —No IPP— | Last modified: 2026-06-05 10:38 UTC
 

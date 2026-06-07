@@ -1,0 +1,12 @@
+# E08/E10 PATCH collision repair (2026-06-06) — Git tags unchanged; registry only.
+# v0.4.1003 / v0.4.1004 tags anchor E10:S01:T07 lineage.
+
+rc: 0
+
+canonical_keep:
+  - 0.10.1.7+1
+  - 0.10.1.7+2
+
+reassign_internal:
+  - 0.8.3.12+8
+  - 0.8.3.17+3

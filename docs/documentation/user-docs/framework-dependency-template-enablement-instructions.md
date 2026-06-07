@@ -23,7 +23,7 @@ This document provides step-by-step instructions for enabling the ai-dev-kit rep
 
 ### Scope (greenfield vs brownfield)
 
-Repositories created from the template still follow the **installer-driven greenfield path** for framework setup documentation. Point adopters to [`INSTALL_IN_YOUR_PROJECT.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/INSTALL_IN_YOUR_PROJECT.md), [IPW-E6S9T1](../../implementation-cycles/IPW-E6S09T01-greenfield-installation-fr080.md), [ADR-003](../../architecture/standards-and-adrs/ADR-003-greenfield-vs-brownfield-adoption.md), and brownfield boundaries in [FR-081](../../project-management/kanban/fr-br/FR-081-brownfield-modular-adopter-integration.md).
+Repositories created from the template still follow the **installer-driven greenfield path** for framework setup documentation. Point adopters to [`INSTALL_IN_YOUR_PROJECT.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/INSTALL_IN_YOUR_PROJECT.md), [IPW-E6S9T1](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/implementation-cycles/IPW-E6S09T01-greenfield-installation-fr080.md), [ADR-003](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/architecture/standards-and-adrs/ADR-003-greenfield-vs-brownfield-adoption.md), and brownfield boundaries in [FR-081](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/project-management/kanban/fr-br/FR-081-brownfield-modular-adopter-integration.md).
 
 ---
 

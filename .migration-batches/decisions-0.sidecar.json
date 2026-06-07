@@ -1,0 +1,290 @@
+[
+  {
+    "source_path": "architecture/README.md"
+  },
+  {
+    "source_path": "architecture/standards-and-adrs/ADR-005-ollama-model-ecosystem.md"
+  },
+  {
+    "source_path": "architecture/standards-and-adrs/ADR-openclaw-process-sentinel-skill.md"
+  },
+  {
+    "source_path": "architecture/standards-and-adrs/FR-046-implementation-guide.md"
+  },
+  {
+    "source_path": "architecture/standards-and-adrs/agent-network-access-and-git-push-limitations.md"
+  },
+  {
+    "source_path": "architecture/standards-and-adrs/agentic-template-generator-design.md"
+  },
+  {
+    "source_path": "architecture/standards-and-adrs/ai-dev-kit-project-review.md"
+  },
+  {
+    "source_path": "architecture/standards-and-adrs/changelog-archival-policy.md"
+  },
+  {
+    "source_path": "architecture/standards-and-adrs/changelog-management-policy.md"
+  },
+  {
+    "source_path": "architecture/standards-and-adrs/changelog-ordering-investigation-report.md"
+  },
+  {
+    "source_path": "architecture/standards-and-adrs/code-quality-kanban-integration.md"
+  },
+  {
+    "source_path": "architecture/standards-and-adrs/code-quality-metrics-framework.md"
+  },
+  {
+    "source_path": "architecture/standards-and-adrs/code-quality-monitoring-dashboards.md"
+  },
+  {
+    "source_path": "architecture/standards-and-adrs/code-quality-monitoring-processes.md"
+  },
+  {
+    "source_path": "architecture/standards-and-adrs/code-review-checklist-templates.md"
+  },
+  {
+    "source_path": "architecture/standards-and-adrs/code-review-kanban-integration.md"
+  },
+  {
+    "source_path": "architecture/standards-and-adrs/code-review-standards-and-guidelines.md"
+  },
+  {
+    "source_path": "architecture/standards-and-adrs/code-review-workflow-processes.md"
+  },
+  {
+    "source_path": "architecture/standards-and-adrs/cursor-ide-performance-considerations.md"
+  },
+  {
+    "source_path": "architecture/standards-and-adrs/dev-kit-ipw-ipp-vs-icw-artifacts.md"
+  },
+  {
+    "source_path": "architecture/standards-and-adrs/dev-kit-kanban-versioning-rw-integration.md"
+  },
+  {
+    "source_path": "architecture/standards-and-adrs/dev-kit-versioning-cookbook.md"
+  },
+  {
+    "source_path": "architecture/standards-and-adrs/dev-kit-versioning-policy.md"
+  },
+  {
+    "source_path": "architecture/standards-and-adrs/doc-init-migration-guide.md"
+  },
+  {
+    "source_path": "architecture/standards-and-adrs/doc-lifecycle-metadata-spec.md"
+  },
+  {
+    "source_path": "architecture/standards-and-adrs/doc-lifecycle-policy.md"
+  },
+  {
+    "source_path": "architecture/standards-and-adrs/documentation-health-monitoring.md"
+  },
+  {
+    "source_path": "architecture/standards-and-adrs/documentation-maintenance-policy.md"
+  },
+  {
+    "source_path": "architecture/standards-and-adrs/documentation-review-cadences.md"
+  },
+  {
+    "source_path": "architecture/standards-and-adrs/documentation-review-workflow-guide.md"
+  },
+  {
+    "source_path": "architecture/standards-and-adrs/documentation-update-triggers.md"
+  },
+  {
+    "source_path": "architecture/standards-and-adrs/dual-versioning-package-managers.md"
+  },
+  {
+    "source_path": "architecture/standards-and-adrs/ecc-adk-harness-layer-integration-specification.md"
+  },
+  {
+    "source_path": "architecture/standards-and-adrs/ecc-adk-harness-layer-phase0-evaluation.md"
+  },
+  {
+    "source_path": "architecture/standards-and-adrs/environment-variables-sop.md"
+  },
+  {
+    "source_path": "architecture/standards-and-adrs/epic-story-path-migration-guide.md"
+  },
+  {
+    "source_path": "architecture/standards-and-adrs/framework-auto-update-mechanisms.md"
+  },
+  {
+    "source_path": "architecture/standards-and-adrs/framework-backward-compatibility-policy.md"
+  },
+  {
+    "source_path": "architecture/standards-and-adrs/framework-compatibility-tracking.md"
+  },
+  {
+    "source_path": "architecture/standards-and-adrs/framework-dependency-architecture.md"
+  },
+  {
+    "source_path": "architecture/standards-and-adrs/framework-health-dashboard-guide.md"
+  },
+  {
+    "source_path": "architecture/standards-and-adrs/framework-health-metrics.md"
+  },
+  {
+    "source_path": "architecture/standards-and-adrs/framework-health-monitoring-procedures.md"
+  },
+  {
+    "source_path": "architecture/standards-and-adrs/framework-migration-guide.md"
+  },
+  {
+    "source_path": "architecture/standards-and-adrs/framework-release-process.md"
+  },
+  {
+    "source_path": "architecture/standards-and-adrs/framework-update-cli-design.md"
+  },
+  {
+    "source_path": "architecture/standards-and-adrs/framework-update-procedures.md"
+  },
+  {
+    "source_path": "architecture/standards-and-adrs/framework-version-tagging-strategy.md"
+  },
+  {
+    "source_path": "architecture/standards-and-adrs/framework-versioning-strategy.md"
+  },
+  {
+    "source_path": "architecture/standards-and-adrs/gap-log-schema.md"
+  },
+  {
+    "source_path": "architecture/standards-and-adrs/generator-framework-design.md"
+  },
+  {
+    "source_path": "architecture/standards-and-adrs/ipw-adr-necessity-checklist.md"
+  },
+  {
+    "source_path": "architecture/standards-and-adrs/kb-structure-overview.md"
+  },
+  {
+    "source_path": "architecture/standards-and-adrs/legacy-repo-analysis.md"
+  },
+  {
+    "source_path": "architecture/standards-and-adrs/maintenance-automation-requirements.md"
+  },
+  {
+    "source_path": "architecture/standards-and-adrs/maintenance-automation-scripts-and-tools.md"
+  },
+  {
+    "source_path": "architecture/standards-and-adrs/maintenance-automation-usage-guide.md"
+  },
+  {
+    "source_path": "architecture/standards-and-adrs/maintenance-automation-workflow-integration.md"
+  },
+  {
+    "source_path": "architecture/standards-and-adrs/maintenance-kanban-integration.md"
+  },
+  {
+    "source_path": "architecture/standards-and-adrs/maintenance-task-prioritization-framework.md"
+  },
+  {
+    "source_path": "architecture/standards-and-adrs/maintenance-workflow-processes.md"
+  },
+  {
+    "source_path": "architecture/standards-and-adrs/mixed-br-fr-scope-sop.md"
+  },
+  {
+    "source_path": "architecture/standards-and-adrs/package-hash-verification-spec.md"
+  },
+  {
+    "source_path": "architecture/standards-and-adrs/package-maintenance-and-release.md"
+  },
+  {
+    "source_path": "architecture/standards-and-adrs/package-management-design.md"
+  },
+  {
+    "source_path": "architecture/standards-and-adrs/package-versioning-criteria.md"
+  },
+  {
+    "source_path": "architecture/standards-and-adrs/policy-comparison-starborn-vs-ai-dev-kit-proposal.md"
+  },
+  {
+    "source_path": "architecture/standards-and-adrs/policy-salience-schema.md"
+  },
+  {
+    "source_path": "architecture/standards-and-adrs/pre-release-feedback-mechanism-design.md"
+  },
+  {
+    "source_path": "architecture/standards-and-adrs/repository-story-abstract-space-solution-design.md"
+  },
+  {
+    "source_path": "architecture/standards-and-adrs/repository-story-migration-plan.md"
+  },
+  {
+    "source_path": "architecture/standards-and-adrs/repository-story-migration-progress.md"
+  },
+  {
+    "source_path": "architecture/standards-and-adrs/repository-story-migration-status.md"
+  },
+  {
+    "source_path": "architecture/standards-and-adrs/rw-changelog-commit-language-analysis.md"
+  },
+  {
+    "source_path": "architecture/standards-and-adrs/rw-pdca-integration-plan.md"
+  },
+  {
+    "source_path": "architecture/standards-and-adrs/semver-implementation-followup-spec.md"
+  },
+  {
+    "source_path": "architecture/standards-and-adrs/semver-mapping-implementation-impact.md"
+  },
+  {
+    "source_path": "architecture/standards-and-adrs/semver-mapping-proposal.md"
+  },
+  {
+    "source_path": "architecture/standards-and-adrs/semver-tag-collision-incident-2026-03-07.md"
+  },
+  {
+    "source_path": "architecture/standards-and-adrs/specification-and-planning-artifacts-policy.md"
+  },
+  {
+    "source_path": "architecture/standards-and-adrs/task-naming-migration-guide.md"
+  },
+  {
+    "source_path": "architecture/standards-and-adrs/task-template-cross-wiring-sop.md"
+  },
+  {
+    "source_path": "architecture/standards-and-adrs/task-template-generator-design.md"
+  },
+  {
+    "source_path": "architecture/standards-and-adrs/task-template-system-hybrid-adr.md"
+  },
+  {
+    "source_path": "architecture/standards-and-adrs/task-touch-mapping-examples.md"
+  },
+  {
+    "source_path": "architecture/standards-and-adrs/ultimate-canonical-cursorrules-structure.md"
+  },
+  {
+    "source_path": "architecture/standards-and-adrs/ultimate-canonical-kanban-structure.md"
+  },
+  {
+    "source_path": "architecture/standards-and-adrs/ultimate-canonical-kb-structure.md"
+  },
+  {
+    "source_path": "architecture/standards-and-adrs/ultimate-canonical-workflow-structure.md"
+  },
+  {
+    "source_path": "architecture/standards-and-adrs/versioning-error-reference-guide.md"
+  },
+  {
+    "source_path": "architecture/standards-and-adrs/versioning-quick-reference.md"
+  },
+  {
+    "source_path": "architecture/standards-and-adrs/workflow-flaws-reference-guide.md"
+  },
+  {
+    "source_path": "architecture/standards-and-adrs/workflow-hardening-guide.md"
+  },
+  {
+    "source_path": "architecture/use-cases/CANONICAL_USE_CASE_TEMPLATE.md"
+  },
+  {
+    "source_path": "architecture/use-cases/README.md"
+  },
+  {
+    "source_path": "architecture/use-cases/canonical/README.md"
+  }
+]

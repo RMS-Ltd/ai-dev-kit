@@ -8,7 +8,7 @@ housekeeping_policy: keep
 
 # Canonical Epics for Kanban Framework
 
-**Purpose:** This document lists the canonical set of epics that are part of the Kanban framework package. These epics represent the standard organizational structure for projects using the Kanban framework.
+**Purpose:** This document lists the canonical set of epics that are part of the Kanban framework package. These epics represent the standard organisational structure for projects using the Kanban framework.
 
 **Usage:** When adopting the Kanban framework, these canonical epics provide the foundation for organizing work. Projects can add additional epics as needed, but these represent the core framework structure.
 
@@ -50,7 +50,7 @@ These epics represent common patterns found in ambitious projects. Use as needed
 - Epic 17: Integration and Third-Party Services
 - Epic 18: Analytics and Monitoring
 - Epic 19: Mobile Application
-- Epic 20: Internationalization and Localization
+- Epic 20: Internationalisation and Localisation
 - Epic 21: Architecture Refactoring and Code Quality
 - Epic 22: Process Automation and CI/CD
 - Epic 23: [Reserved for future expansion]
@@ -86,7 +86,7 @@ This epic encompasses the core foundational work for the {PROJECT_NAME} project,
 - All other epics build upon Epic 1
 - Epic 2 (Workflow Management): Uses Epic 1 infrastructure
 - Epic 3 (Versioning): Tracks Epic 1 work with version markers
-- Epic 4 (Kanban): Uses Epic 1 structure for Kanban organization
+- Epic 4 (Kanban): Uses Epic 1 structure for Kanban organisation
 
 ---
 
@@ -178,7 +178,7 @@ This epic covers the Kanban system implementation, including Kanban governance p
 **Status:** Core Framework Epic (always installed)
 
 **Description:**
-This epic encompasses Feature Request (FR) implementation and management, including FR intake processes, FR processing workflows, FR implementation patterns, and FR-related tooling. This epic provides the organizational structure for all feature development work that originates from Feature Requests.
+This epic encompasses Feature Request (FR) implementation and management, including FR intake processes, FR processing workflows, FR implementation patterns, and FR-related tooling. This epic provides the organisational structure for all feature development work that originates from Feature Requests.
 
 **Key Characteristics:**
 - FR intake processes (converting FRs to Kanban tasks)
@@ -208,7 +208,7 @@ This epic encompasses Feature Request (FR) implementation and management, includ
 **Status:** Core Framework Epic (always installed)
 
 **Description:**
-This epic covers Bug Report (BR) implementation and management, including BR intake processes, BR processing workflows, bug fix patterns, and BR-related tooling. This epic provides the organizational structure for all bug fix work that originates from Bug Reports.
+This epic covers Bug Report (BR) implementation and management, including BR intake processes, BR processing workflows, bug fix patterns, and BR-related tooling. This epic provides the organisational structure for all bug fix work that originates from Bug Reports.
 
 **Key Characteristics:**
 - BR intake processes (converting BRs to Kanban tasks)
@@ -239,7 +239,7 @@ This epic covers Bug Report (BR) implementation and management, including BR int
 **Status:** Core Framework Epic (always installed)
 
 **Description:**
-This epic encompasses user experience research activities, including user research, usability testing, user feedback collection, persona development, user journey mapping, and UX insights. This epic provides the organizational structure for understanding users and ensuring products meet user needs effectively.
+This epic encompasses user experience research activities, including user research, usability testing, user feedback collection, persona development, user journey mapping, and UX insights. This epic provides the organisational structure for understanding users and ensuring products meet user needs effectively.
 
 **Key Characteristics:**
 - User research and interviews
@@ -271,7 +271,7 @@ This epic encompasses user experience research activities, including user resear
 **Status:** Core Framework Epic (always installed)
 
 **Description:**
-This epic encompasses codebase maintenance and review activities, including addressing IDE-flagged issues (errors, warnings, info), code quality standards, maintenance workflows, and continuous codebase health monitoring. This epic provides the organizational structure for ongoing maintenance work that keeps the codebase healthy and maintainable.
+This epic encompasses codebase maintenance and review activities, including addressing IDE-flagged issues (errors, warnings, info), code quality standards, maintenance workflows, and continuous codebase health monitoring. This epic provides the organisational structure for ongoing maintenance work that keeps the codebase healthy and maintainable.
 
 **Key Characteristics:**
 - IDE-flagged issue resolution (errors, warnings, info)
@@ -636,14 +636,14 @@ This epic encompasses mobile application development and mobile-specific feature
 
 ---
 
-### Epic 21: Internationalization and Localization
+### Epic 21: Internationalisation and Localisation
 
-**Purpose:** Multi-language support and localization.  
+**Purpose:** Multi-language support and localisation.  
 **Scope:** Translation, locale management, cultural adaptation, RTL support, language selection at setup.  
 **Status:** Ancillary Epic (project-specific canonical pattern)
 
 **Description:**
-This epic encompasses internationalization (i18n) and localization (l10n) activities, including language selection at setup, translation infrastructure, translation management, and cultural adaptation. This epic provides the organizational structure for making the framework accessible to users worldwide, supporting multiple languages and cultural preferences.
+This epic encompasses internationalisation (i18n) and localisation (l10n) activities, including language selection at setup, translation infrastructure, translation management, and cultural adaptation. This epic provides the organisational structure for making the framework accessible to users worldwide, supporting multiple languages and cultural preferences.
 
 **Key Characteristics:**
 - Language selection at setup (UK/US English + international)
@@ -655,12 +655,12 @@ This epic encompasses internationalization (i18n) and localization (l10n) activi
 
 **Typical Stories:**
 - Story 0: Language Selection at Setup (MVP - UK/US English)
-- Story 1: Internationalization Infrastructure
-- Story 2: Translation and Localization
+- Story 1: Internationalisation Infrastructure
+- Story 2: Translation and Localisation
 - Story 3: Cultural Adaptation
 
 **Integration Points:**
-- **Epic 12 (Frontend):** UI localization
+- **Epic 12 (Frontend):** UI localisation
 - **Epic 18 (Documentation):** Documentation translation
 - **Epic 4 (Kanban):** Localized Kanban templates
 
@@ -752,7 +752,7 @@ This epic encompasses process automation and CI/CD, including CI/CD pipelines, p
 **Ancillary Epics (9, 11-17, 19-21):**
 - **Epic 9:** User Management and Authentication (if multi-user app)
 - **Epics 11-17:** API, Frontend, Testing, Deployment, Security, Performance, Integration
-- **Epics 19-21:** Analytics, Mobile, Internationalization
+- **Epics 19-21:** Analytics, Mobile, Internationalisation
 
 **Ordering Principles:**
 - Foundational epics come first (Epic 1)
@@ -785,7 +785,7 @@ This epic encompasses process automation and CI/CD, including CI/CD pipelines, p
 3. **Add Ancillary Epics (9, 11-17, 19-21):** Add based on project needs
    - Epic 9: User Management and Authentication (if multi-user app)
    - Epics 11-17: API, Frontend, Testing, Deployment, Security, Performance, Integration
-   - Epics 19-21: Analytics, Mobile, Internationalization
+   - Epics 19-21: Analytics, Mobile, Internationalisation
 
 4. **Customize:** Adapt epic names and descriptions to your project's specific context
    - Keep the core purpose and scope aligned with canonical definitions
@@ -831,9 +831,9 @@ This epic encompasses process automation and CI/CD, including CI/CD pipelines, p
 
 When an epic pattern proves reusable across multiple projects, it should be added to this document and the comprehensive structure:
 
-1. **Identify Pattern:** Epic appears in multiple projects or represents a common organizational need
+1. **Identify Pattern:** Epic appears in multiple projects or represents a common organisational need
    - Pattern must appear in at least 3 different projects
-   - Pattern must represent a fundamental organizational structure
+   - Pattern must represent a fundamental organisational structure
    - Pattern must be reusable across different domains
 
 2. **Document Pattern:** Create entry in this document and `COMPREHENSIVE_CANONICAL_EST_STRUCTURE.md` with:
