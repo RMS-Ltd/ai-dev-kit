@@ -154,6 +154,8 @@ python3 vendor/ai-dev-kit/packages/frameworks/workflow-mgt/scripts/verify_vendor
 
 This section defines the canonical **greenfield** path for new or template projects per **FR-080** (E6:S09:T01).
 
+**Language first (template repos):** After creating a repository from the GitHub template, complete **[Step 0 — Select language variant](docs/documentation/user-docs/framework-dependency-post-template-setup-guide.md#step-0-select-language-variant-uk--us-english)** (UK/US English → `ai-dev-kit-config.yaml`) before other setup steps. See [FR-006](docs/project-management/kanban/fr-br/FR-006-localization-language-selection-uk-us-english.md) Phase 1.
+
 - Policy anchor: [ADR-003](docs/architecture/standards-and-adrs/ADR-003-greenfield-vs-brownfield-adoption.md)
 - Brownfield is separate: see [Brownfield adoption (existing repositories)](#brownfield-adoption-existing-repositories) below; policy [FR-081](docs/project-management/kanban/fr-br/FR-081-brownfield-modular-adopter-integration.md); planning [IPP-E6S09T02](docs/implementation-cycles/IPP-E6S09T02-brownfield-modular-adopter-integration-fr081.md)
 - Greenfield planning: [IPW-E6S09T01](docs/implementation-cycles/IPW-E6S09T01-greenfield-installation-fr080.md)

@@ -18,7 +18,7 @@ housekeeping_policy: keep
 
 **Phase 1 host story:** [E21:S01](../epics/epic-21/story-01-language-selection-at-setup.md) (T01–T07)
 
-**Implementing task (kanban anchor):** [E21:S01:T01](../epics/epic-21/story-01-language-selection-at-setup/T01-add-language-selection-prompt-to-template-setup-github-templ.md) — **v0.21.1.1+1** (RW -k kanban rehouse)
+**Implementing task (kanban anchor):** [E21:S01:T01](../epics/epic-21/story-01-language-selection-at-setup/T01-add-language-selection-prompt-to-template-setup-github-templ.md) — **v0.21.1.1+2** COMPLETE (docs-first Step 0; installer automation → T05)
 
 ---
 

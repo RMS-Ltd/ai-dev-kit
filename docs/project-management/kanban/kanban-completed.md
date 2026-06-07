@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Completed Tasks
 
-**Last Updated:** 2026-06-06 (RW: E10:S01:T10 story sign-off)
-**Version:** v0.10.1.10+2
+**Last Updated:** 2026-06-07 (RW: E21:S01:T01 template language selection)
+**Version:** v0.21.1.1+2
 
 > **For MoSCOW prioritized tasks, see:** [`kboard.md`](kboard.md)  
 > **For completed FR/BR/UXR intake items, see:** [`intake-completed.md`](intake-completed.md)
@@ -19,6 +19,11 @@ housekeeping_policy: keep
 ---
 
 ## 20 Most Recently Completed Tasks
+
+#### **RW (2026-06-07)** — E21:S01:T01 @ **v0.21.1.1+2** (template language selection docs-first)
+
+- **[E21:S01:T01](epics/epic-21/story-01-language-selection-at-setup/T01-add-language-selection-prompt-to-template-setup-github-templ.md)** — Add language selection prompt to template setup (GitHub template) — Step 0 post-template guide + `ai-dev-kit-config.example.yaml`.
+  **Completed:** `2026-06-07T10:28:27Z` | **Version:** `v0.21.1.1+2` | **Agent:** `RW E21:S01:T01 --art` | [IPP](../../implementation-cycles/IPP-E21S01T01-template-language-selection-github.md) | [FR-006](fr-br/FR-006-localization-language-selection-uk-us-english.md)
 
 #### **RW (2026-06-06)** — E10:S01 story sign-off @ **v0.10.1.10+2** (all tasks COMPLETE; RC **APPROVE** @ T06)
 

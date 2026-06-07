@@ -10,11 +10,10 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 ---
 
 
-## [0.21.7.2+0] - 07-06-26
+## [0.21.1.1+2] - 07-06-26
 
-E21:S07:T02 — **Change implemented:** Kanban-init doc filing — Russian (ru) translation files. SemVer **v0.4.1067+0**.
+E21:S01:T01 — **Change implemented:** Docs-first UK/US language selection for GitHub-template setup (Step 0 + config example). SemVer **v0.4.1068+2**.
 
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.21.7.2+0.md)
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.21.1.1+2.md)
 
 ---
-
