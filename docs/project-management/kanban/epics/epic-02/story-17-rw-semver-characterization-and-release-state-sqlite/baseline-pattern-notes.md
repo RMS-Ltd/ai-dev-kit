@@ -44,10 +44,17 @@
 
 ---
 
+## Pattern 6 — `git push --tags` not blocked by immutability validator
+
+**Evidence:** Wave 3 test design review  
+**Friction:** `validate_release_tag_immutability` catches `-f`/`+v*` but not `git push origin branch --tags`.  
+**Recommendation:** Extend forbidden patterns or add Step 12 lint; scenario RW-B08 covers `push_rw_release.py` contract only.
+
+---
+
 ## Next waves
 
 | Wave | Scenarios | Focus |
 | ---- | --------- | ----- |
-| ~~2~~ | ~~S03, S04, S05, S06, V01~~ | ✅ Done |
-| 3 | B07, B08, V02, P01, G06, S07 | Agent + push batch |
+| ~~3~~ | ~~B07, B08, V02, P01, G06, S07~~ | ✅ Done (partial AGT for V02/P01) |
 | 4 | IPW-P01–P04, V03, V04 | IPW gate + CMW |

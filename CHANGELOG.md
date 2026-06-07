@@ -9,6 +9,14 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.2.17.2+3] - 07-06-26
+
+E02:S17:T02 — **Change implemented:** Wave 3 baseline — operator/agent friction scenarios (B07, B08, V02, P01, G06, S07). SemVer **v0.4.1041+3**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.17.2+3.md)
+
+---
+
 ## [0.2.17.2+2] - 07-06-26
 
 E02:S17:T02 — **Change implemented:** Wave 2 baseline (5/5 pytest PASS); SemVer stress + 10× finalize volume. SemVer **v0.4.1040+2**.

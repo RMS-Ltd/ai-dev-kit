@@ -10,7 +10,8 @@
 
 **Wave 1 complete** (2026-06-07) — 8/8 deterministic scenarios PASS via pytest.  
 **Wave 2 complete** (2026-06-07) — 5/5 scenarios PASS via `test_wave2_baseline.py`.  
-Wave 3–4 pending.
+**Wave 3 complete** (2026-06-07) — 8/8 pytest checks PASS via `test_wave3_baseline.py` (6 scenario IDs + 2 guard tests).  
+Wave 4 pending.
 
 ---
 
@@ -40,6 +41,19 @@ Wave 3–4 pending.
 | RW-S05-legacy-20260607-1735 | RW-S05 | legacy | DET | ABORT | Injected PATCH collision; validator exit ≠ 0 |
 | RW-S06-legacy-20260607-1735 | RW-S06 | legacy | DET | PASS | finalize creates mapping; idempotent re-finalize |
 | RW-V01-legacy-20260607-1735 | RW-V01 | legacy | DET | PASS | 10× finalize → patches 701–710, counter 710 |
+
+---
+
+## Wave 3 results (legacy backend)
+
+| run_id | scenario_id | backend | layer | outcome | friction_notes |
+| ------ | ----------- | ------- | ----- | ------- | -------------- |
+| RW-B07-legacy-20260607-1740 | RW-B07 | legacy | DET | ABORT | `git tag -f` detected by immutability validator |
+| RW-B08-legacy-20260607-1740 | RW-B08 | legacy | DET | PASS | `release_tag_names` → scoped tags; dry-run no bulk `--tags` |
+| RW-V02-legacy-20260607-1740 | RW-V02 | legacy | DET/PARTIAL | PASS | Dry-run per-tag push; full batch push remains AGT/manual |
+| RW-P01-legacy-20260607-1740 | RW-P01 | legacy | DET/PARTIAL | PASS | `--perpetual-same-task` BUILD+1 on E02:S16:T04; UKW chain AGT |
+| RW-G06-legacy-20260607-1740 | RW-G06 | legacy | DET | PASS | Mismatch fails; `--confirmed-override` passes |
+| RW-S07-legacy-20260607-1740 | RW-S07 | legacy | DET/PARTIAL | PASS | Recovery text forbids force-push; journal scan catches `-f` |
 
 ---
 
