@@ -36,10 +36,18 @@
 
 ---
 
+## Pattern 5 — COMPLETE tasks must leave active MoSCOW (FR-109)
+
+**Evidence:** RW v0.2.17.2+1 Step 7  
+**Friction:** Marking T01 COMPLETE on kboard failed `validate_active_kanban_board`; required prune + `kanban-completed.md` ledger.  
+**Recommendation:** RW Step 7 checklist: terminal status → ledger first, then remove row; stamp manifest must cover row removal.
+
+---
+
 ## Next waves
 
 | Wave | Scenarios | Focus |
 | ---- | --------- | ----- |
-| 2 | S03, S04, S05, S06, V01 | SemVer stress + volume |
+| ~~2~~ | ~~S03, S04, S05, S06, V01~~ | ✅ Done |
 | 3 | B07, B08, V02, P01, G06, S07 | Agent + push batch |
 | 4 | IPW-P01–P04, V03, V04 | IPW gate + CMW |

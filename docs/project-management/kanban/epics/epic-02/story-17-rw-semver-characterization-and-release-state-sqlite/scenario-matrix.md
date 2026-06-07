@@ -17,7 +17,7 @@
 
 **Isolation:** one scenario = one [git worktree](https://git-scm.com/docs/git-worktree) (or fresh clone). Seed from `dev` or tagged baseline; never share tag/registry state between scenarios.
 
-**Harness:** `tests/rw_scenarios/test_wave1_baseline.py` (Wave 1 deterministic runner)
+**Harness:** `tests/rw_scenarios/test_wave1_baseline.py` · `tests/rw_scenarios/test_wave2_baseline.py`
 
 **Default config:** `rw-config.yaml` with `semver_mapping_strategy: task_touch`, `versioning_mode: dual`.
 

@@ -12,8 +12,8 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** Large  
 **Created:** 2026-06-07  
-**Last updated:** 2026-06-07 (RW **v0.2.17.2+1** — T02 Wave 1 baseline)  
-**Version:** v0.2.17.2+1  
+**Last updated:** 2026-06-07 (RW **v0.2.17.2+2** — Wave 2 baseline)  
+**Version:** v0.2.17.2+2  
 **Code:** E2S17
 
 ---

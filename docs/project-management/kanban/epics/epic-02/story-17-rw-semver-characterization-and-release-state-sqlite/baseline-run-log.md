@@ -9,7 +9,8 @@
 ## Status
 
 **Wave 1 complete** (2026-06-07) — 8/8 deterministic scenarios PASS via pytest.  
-Wave 2–4 pending.
+**Wave 2 complete** (2026-06-07) — 5/5 scenarios PASS via `test_wave2_baseline.py`.  
+Wave 3–4 pending.
 
 ---
 
@@ -27,6 +28,18 @@ Wave 2–4 pending.
 | RW-S02-legacy-20260607-1730 | RW-S02 | legacy | DET | PASS | counter=100 | counter=103 | 101/102/103 | — | pytest: 3× finalize → injective PATCH sequence |
 | RW-G03-legacy-20260607-1730 | RW-G03 | legacy | DET | ABORT | E02:S16:T10 | — | — | 1d | pytest: `--version-file` fixture mismatch |
 | RW-G04-legacy-20260607-1730 | RW-G04 | legacy | DET | PASS | E02:S16:T10 | — | — | — | pytest: `--art` passes intent gate |
+
+---
+
+## Wave 2 results (legacy backend)
+
+| run_id | scenario_id | backend | layer | outcome | friction_notes |
+| ------ | ----------- | ------- | ----- | ------- | -------------- |
+| RW-S03-legacy-20260607-1735 | RW-S03 | legacy | DET | PASS | `--art` T01→T02: BUILD 1, internal `0.2.17.2+1` |
+| RW-S04-legacy-20260607-1735 | RW-S04 | legacy | DET | PASS | finalize=False holds counter; finalize=True +1 |
+| RW-S05-legacy-20260607-1735 | RW-S05 | legacy | DET | ABORT | Injected PATCH collision; validator exit ≠ 0 |
+| RW-S06-legacy-20260607-1735 | RW-S06 | legacy | DET | PASS | finalize creates mapping; idempotent re-finalize |
+| RW-V01-legacy-20260607-1735 | RW-V01 | legacy | DET | PASS | 10× finalize → patches 701–710, counter 710 |
 
 ---
 
