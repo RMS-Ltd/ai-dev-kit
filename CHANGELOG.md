@@ -9,11 +9,11 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
-## [0.2.16.4+36] - 06-06-26
+## [0.2.16.4+37] - 07-06-26
 
-E02:S16:T04 — **Change implemented:** UKW comprehensive kanban sync — E05:S08 IN PROGRESS, E08:S03 CQG/T12 alignment, gap scan clean; perpetual UKW BUILD +36. SemVer **v0.4.1028+36**.
+E02:S16:T04 — **Change implemented:** UKW bookkeeping after Epic 21 kanban-init wave — kboard E21 version anchors, Epic-21/FR-006 sync; perpetual UKW BUILD +37. SemVer **v0.4.1031+37**.
 
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.16.4+36.md)
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.16.4+37.md)
 
 ---
 

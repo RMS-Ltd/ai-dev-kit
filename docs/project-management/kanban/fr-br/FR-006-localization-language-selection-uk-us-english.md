@@ -16,9 +16,9 @@ housekeeping_policy: keep
 
 **Implementing Epic:** [Epic 21 – Internationalisation and Localisation](../epics/epic-21/Epic-21.md)
 
-**Phase 1 host story:** [E21:S00](../epics/epic-21/story-00-language-selection-at-setup.md) (T01–T07)
+**Phase 1 host story:** [E21:S01](../epics/epic-21/story-01-language-selection-at-setup.md) (T01–T07)
 
-**Implementing task (kanban anchor):** [E21:S00:T01](../epics/epic-21/story-00-language-selection-at-setup/T01-add-language-selection-prompt-to-template-setup-github-templ.md) — **v0.21.0.1+1** (RW -k kanban rehouse)
+**Implementing task (kanban anchor):** [E21:S01:T01](../epics/epic-21/story-01-language-selection-at-setup/T01-add-language-selection-prompt-to-template-setup-github-templ.md) — **v0.21.1.1+1** (RW -k kanban rehouse)
 
 ---
 
@@ -216,9 +216,9 @@ Currently, ai-dev-kit uses US English throughout all documentation, templates, a
 
 ### Dependencies
 
-- **E21:S01:** Internationalisation Infrastructure (if implementing Phase 2)
-- **E21:S02:** Translation and Localisation (if implementing Phase 2)
-- **E21:S03:** Cultural Adaptation (if implementing Phase 2)
+- **E21:S02:** Internationalisation Infrastructure (if implementing Phase 2)
+- **E21:S03:** Translation and Localisation (if implementing Phase 2)
+- **E21:S04:** Cultural Adaptation (if implementing Phase 2)
 - Setup/installation processes (all methods)
 - Configuration system (for language preference storage)
 
@@ -339,7 +339,7 @@ Use standard i18n approach:
 ### Phase 1: UK/US English (Recommended First Step)
 
 **Epic:** Epic 21 - Internationalisation and Localisation  
-**Story:** Story 1 - Internationalisation Infrastructure (or new Story 0: English Variant Selection)  
+**Story:** Story 1 - Internationalisation Infrastructure (or new Story 1: English Variant Selection)  
 **Tasks:**
 - T01: Add language selection to setup processes
 - T02: Create UK/US English content variants
@@ -414,9 +414,9 @@ Use standard i18n approach:
 ## Related Work
 
 - **Epic 21:** Internationalisation and Localisation (comprehensive canonical epic)
-- **E21:S01:** Internationalisation Infrastructure
-- **E21:S02:** Translation and Localisation
-- **E21:S03:** Cultural Adaptation
+- **E21:S02:** Internationalisation Infrastructure
+- **E21:S03:** Translation and Localisation
+- **E21:S04:** Cultural Adaptation
 - **Setup Processes:** Template setup, CLI tool, RW installer
 
 ---
@@ -464,14 +464,14 @@ Use standard i18n approach:
 
 **Assigned To:**
 - Epic: Epic 21 - Internationalisation and Localisation
-- Phase 1 host story: E21:S00 – Language Selection at Setup (T01–T07)
-- Phase 2: E21:S01–S03 (infrastructure, pipeline, cultural adaptation)
+- Phase 1 host story: E21:S01 – Language Selection at Setup (T01–T07)
+- Phase 2: E21:S02–S04 (infrastructure, pipeline, cultural adaptation)
 - Version: `0.21.S.T+B` (assigned per story/task on epic branch)
 
 **Kanban Links:**
 - Epic: [`docs/project-management/kanban/epics/epic-21/Epic-21.md`](../epics/epic-21/Epic-21.md)
-- Phase 1: [`story-00-language-selection-at-setup.md`](../epics/epic-21/story-00-language-selection-at-setup.md)
-- Phase 2: [`story-01-internationalisation-infrastructure.md`](../epics/epic-21/story-01-internationalisation-infrastructure.md), [`story-02-translation-and-localisation.md`](../epics/epic-21/story-02-translation-and-localisation.md), [`story-03-cultural-adaptation.md`](../epics/epic-21/story-03-cultural-adaptation.md)
+- Phase 1: [`story-01-language-selection-at-setup.md`](../epics/epic-21/story-01-language-selection-at-setup.md)
+- Phase 2: [`story-02-internationalisation-infrastructure.md`](../epics/epic-21/story-02-internationalisation-infrastructure.md), [`story-03-translation-and-localisation.md`](../epics/epic-21/story-03-translation-and-localisation.md), [`story-04-cultural-adaptation.md`](../epics/epic-21/story-04-cultural-adaptation.md)
 
 ---
 

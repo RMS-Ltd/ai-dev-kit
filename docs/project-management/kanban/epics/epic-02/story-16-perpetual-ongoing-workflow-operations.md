@@ -12,15 +12,15 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** Medium  
 **Created:** 2026-04-20  
-**Last updated:** 2026-06-06 (RW **v0.2.16.4+36** — T04 UKW comprehensive release)
-**Version:** v0.2.16.4+36
+**Last updated:** 2026-06-07 (RW **v0.2.16.4+37** — UKW -u Epic 21 kanban-init wave bookkeeping)
+**Version:** v0.2.16.4+37
 **Code:** E2S16
 
 ---
 
 ## Tactical overview
 
-Story 016 remains the operational home for perpetual workflow work. **T04** UKW **2026-06-06** — comprehensive sync: E05:S08 status alignment, E08:S03 version markers, gap scan (0 unfiled open FBUs). **T05** RW **v0.2.16.5+6** — Wave 2 link-depth hygiene. Active perpetual lanes: **T03**, **T04**, **T05**, **T10**, **T14**.
+Story 016 remains the operational home for perpetual workflow work. **T04** UKW **2026-06-07** — bookkeeping sync after Epic 21 RW -k wave (37 releases: S01–S07 kanban-init @ BUILD +0); kboard E21 row version anchors; Epic-21/FR-006 reconciliation. Prior: **2026-06-06** comprehensive sync @ **v0.2.16.4+36**. Active perpetual lanes: **T03**, **T04**, **T05**, **T10**, **T14**.
 
 ---
 
@@ -37,7 +37,7 @@ Story 016 remains the operational home for perpetual workflow work. **T04** UKW 
   - Task: [`story-16-perpetual-ongoing-workflow-operations/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md`](story-16-perpetual-ongoing-workflow-operations/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md) | [FR-088](../../fr-br/FR-088-dedicated-story-for-perpetual-ongoing-tasks.md)
 
 
-- [ ] **E02:S16:T04 – Ad-hoc Kanban synchronization and hygiene (Perpetual)** - 🔄 PERPETUAL (HIGH, UKW anchor; RW **v0.2.16.4+36** — UKW comprehensive sync)  
+- [ ] **E02:S16:T04 – Ad-hoc Kanban synchronization and hygiene (Perpetual)** - 🔄 PERPETUAL (HIGH, UKW anchor; RW **v0.2.16.4+37** — UKW -u Epic 21 wave bookkeeping)  
   - Task: [`story-16-perpetual-ongoing-workflow-operations/T04-ad-hoc-kanban-synchronization-and-hygiene-perpetual.md`](story-16-perpetual-ongoing-workflow-operations/T04-ad-hoc-kanban-synchronization-and-hygiene-perpetual.md) | [FR-088](../../fr-br/FR-088-dedicated-story-for-perpetual-ongoing-tasks.md)
 
 
