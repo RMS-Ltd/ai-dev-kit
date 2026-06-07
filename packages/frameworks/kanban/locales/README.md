@@ -47,7 +47,9 @@ Canonical templates under `packages/frameworks/kanban/templates/` remain the **c
 Implemented in [`localisation_config.py`](../../workflow-mgt/scripts/localisation_config.py):
 
 - `read_localisation_config(project_root)` — defaults to en-GB when missing
-- `resolve_language(project_root, override=...)`
+- `resolve_language(project_root, override=..., accept_language=...)` — ADR-024 precedence (E21:S02:T03)
+- `detect_system_locale()` / `detect_browser_locale()` / `detect_env_locale()` — detection helpers
+- `map_to_supported_locale(tag)` / `parse_locale_tag(raw)` — tag normalization
 - `load_locale_manifest(manifest_path)`
 - `resolve_locale_asset(locales_root, category=..., key=..., fallback_path=...)`
 - `render_locale_text(...)` — load fragment + `{{placeholder}}` substitution
@@ -71,11 +73,12 @@ RW installer scaffolds live in `packages/frameworks/workflow-mgt/locales/`.
 | Task | Change to this tree |
 | ---- | ------------------- |
 | E21:S02:T01 | Decision only — **IPW complete** |
-| E21:S02:T02 | Manifest v2 + `keys/` scaffold (en-GB/en-US) — **IPW complete** |
+| E21:S02:T02 | Manifest v2 + `keys/` scaffold (en-GB/en-US) — **COMPLETE** @ v0.21.2.2+1 |
+| E21:S02:T03 | Locale detection + `resolve_language` precedence — **COMPLETE** @ v0.21.2.3+1 |
 | E21:S02:T06 | `resolve_locale_key()` for `locales/{lang}/keys/*.yaml` |
 | E21:S02:T07 | Extended fallback chain |
 
-Planning: [IPP-E21S02T01](../../../../docs/implementation-cycles/IPP-E21S02T01-choose-i18n-framework.md) · [IPP-E21S02T02](../../../../docs/implementation-cycles/IPP-E21S02T02-locale-file-structure.md)
+Planning: [IPP-E21S02T01](../../../../docs/implementation-cycles/IPP-E21S02T01-choose-i18n-framework.md) · [IPP-E21S02T02](../../../../docs/implementation-cycles/IPP-E21S02T02-locale-file-structure.md) · [IPP-E21S02T03](../../../../docs/implementation-cycles/IPP-E21S02T03-locale-detection.md) · [locale-detection-conventions](../../../../docs/governance/standards/locale-detection-conventions.md)
 
 ## Test matrix (FR-006 Phase 1)
 
@@ -83,6 +86,7 @@ Planning: [IPP-E21S02T01](../../../../docs/implementation-cycles/IPP-E21S02T01-c
 | ----- | ------ | --- |
 | Corpus | `tests/test_locale_content_manifest.py` | T1–T7 |
 | Structure v2 | `tests/test_locale_structure_v2.py` | V1–V8 |
+| Detection | `tests/test_locale_detection.py` | T1–T12 |
 | Read/resolve | `tests/test_localisation_config_read_resolve.py` | T1–T10 |
 | RW selection | `tests/test_install_release_workflow_localisation.py` | T1–T9 |
 | CLI init | `tests/test_commands.py` (`TestInitCommand`) | T1–T8 |

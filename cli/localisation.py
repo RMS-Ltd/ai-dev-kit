@@ -30,6 +30,15 @@ _spec.loader.exec_module(_mod)
 DEFAULT_LANGUAGE = _mod.DEFAULT_LANGUAGE
 LOCALE_VARIANTS = _mod.LOCALE_VARIANTS
 LOCALISATION_CONFIG_FILENAME = _mod.LOCALISATION_CONFIG_FILENAME
+ADK_LOCALE_ENV = _mod.ADK_LOCALE_ENV
+ADK_ACCEPT_LANGUAGE_ENV = _mod.ADK_ACCEPT_LANGUAGE_ENV
+FR006_SUPPORTED_LOCALES = _mod.FR006_SUPPORTED_LOCALES
+parse_locale_tag = _mod.parse_locale_tag
+map_to_supported_locale = _mod.map_to_supported_locale
+detect_env_locale = _mod.detect_env_locale
+detect_system_locale = _mod.detect_system_locale
+parse_accept_language = _mod.parse_accept_language
+detect_browser_locale = _mod.detect_browser_locale
 prompt_language_choice = _mod.prompt_language_choice
 resolve_language_from_args = _mod.resolve_language_from_args
 write_localisation_config = _mod.write_localisation_config
@@ -47,10 +56,19 @@ render_locale_text = _mod.render_locale_text
 resolve_kanban_intake_template = _mod.resolve_kanban_intake_template
 
 __all__ = [
+    "ADK_ACCEPT_LANGUAGE_ENV",
+    "ADK_LOCALE_ENV",
     "DEFAULT_LANGUAGE",
+    "FR006_SUPPORTED_LOCALES",
     "LOCALE_VARIANTS",
     "LOCALISATION_CONFIG_FILENAME",
     "default_frameworks_root",
+    "detect_browser_locale",
+    "detect_env_locale",
+    "detect_system_locale",
+    "map_to_supported_locale",
+    "parse_accept_language",
+    "parse_locale_tag",
     "ensure_localisation_config",
     "KANBAN_INTAKE_TEMPLATE_KEYS",
     "kanban_locales_root",

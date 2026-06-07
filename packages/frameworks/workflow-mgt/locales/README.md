@@ -46,7 +46,10 @@ See [`manifest.yaml`](manifest.yaml). Kanban templates: `packages/frameworks/kan
 
 | Task | Change |
 | ---- | ------ |
-| E21:S02:T02 | Manifest v2 + keys scaffold — **IPW complete** |
+| E21:S02:T02 | Manifest v2 + keys scaffold — **COMPLETE** @ v0.21.2.2+1 |
+| E21:S02:T03 | Locale detection + `resolve_language` precedence — **COMPLETE** @ v0.21.2.3+1 |
 | E21:S02:T06 | `resolve_locale_key()` |
 
-Planning: [IPP-E21S02T02](../../../../docs/implementation-cycles/IPP-E21S02T02-locale-file-structure.md)
+Detection APIs live in [`localisation_config.py`](../scripts/localisation_config.py): `detect_system_locale`, `detect_browser_locale`, `detect_env_locale`, `map_to_supported_locale`.
+
+Planning: [IPP-E21S02T02](../../../../docs/implementation-cycles/IPP-E21S02T02-locale-file-structure.md) · [IPP-E21S02T03](../../../../docs/implementation-cycles/IPP-E21S02T03-locale-detection.md) · [locale-detection-conventions](../../../../docs/governance/standards/locale-detection-conventions.md)

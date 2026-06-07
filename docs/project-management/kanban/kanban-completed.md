@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Completed Tasks
 
-**Last Updated:** 2026-06-07 (RW: E21:S02:T02 locale manifest v2)
-**Version:** v0.21.2.2+1
+**Last Updated:** 2026-06-07 (RW: E21:S02:T03 locale detection)
+**Version:** v0.21.2.3+1
 
 > **For MoSCOW prioritized tasks, see:** [`kboard.md`](kboard.md)  
 > **For completed FR/BR/UXR intake items, see:** [`intake-completed.md`](intake-completed.md)
@@ -19,6 +19,10 @@ housekeeping_policy: keep
 ---
 
 ## 20 Most Recently Completed Tasks
+
+#### **RW (2026-06-07)** — E21:S02:T03 @ **v0.21.2.3+1** (locale detection + ADR-024 precedence)
+
+- **[E21:S02:T03](epics/epic-21/story-02-internationalisation-infrastructure/T03-implement-locale-detection-browsersystem-locale.md)** — System/browser/env detection APIs; `resolve_language` precedence chain; locale-detection-conventions policy.
 
 #### **RW (2026-06-07)** — E21:S02:T02 @ **v0.21.2.2+1** (locale manifest v2 + keys scaffold)
 

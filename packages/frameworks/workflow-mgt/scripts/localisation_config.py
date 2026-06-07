@@ -1,17 +1,23 @@
 """
-Language/localisation helpers for workflow-mgt installers (FR-006 Phase 1).
+Language/localisation helpers for workflow-mgt installers (FR-006).
 
 Write path: E21:S01:T02/T03 (ai-dev-kit-config.yaml).
 Read/resolve: E21:S01:T05 (manifest asset paths).
 Consumption: E21:S01:T06 (RW scaffolds + kanban intake templates).
+Detection: E21:S02:T03 (system/browser/env precedence in resolve_language).
+
+Precedence (resolve_language): override → config file → ADK_LOCALE → system
+locale → accept_language → default_locale (en-GB). CLI switching → E21:S02:T04.
 
 Vendored with install_release_workflow.py for adopter projects.
 """
 
 from __future__ import annotations
 
+import locale
+import os
 from pathlib import Path
-from typing import Any, Dict, List, Optional
+from typing import Any, Dict, List, Mapping, Optional, Sequence, Tuple
 
 import yaml
 
@@ -23,6 +29,181 @@ LOCALE_VARIANTS: Dict[str, Dict[str, str]] = {
 }
 
 DEFAULT_LANGUAGE = "en-GB"
+
+ADK_LOCALE_ENV = "ADK_LOCALE"
+ADK_ACCEPT_LANGUAGE_ENV = "ADK_ACCEPT_LANGUAGE"
+
+FR006_SUPPORTED_LOCALES: Tuple[str, ...] = (
+    "en-GB",
+    "en-US",
+    "es",
+    "fr",
+    "de",
+    "zh-CN",
+    "zh-TW",
+    "ja",
+    "pt",
+    "ru",
+    "ar",
+)
+
+
+def parse_locale_tag(raw: Optional[str]) -> Optional[str]:
+    """Normalize a locale identifier to a BCP 47-style tag (e.g. en_GB.UTF-8 → en-GB)."""
+    if raw is None:
+        return None
+    text = str(raw).strip()
+    if not text:
+        return None
+    if "." in text:
+        text = text.split(".", 1)[0]
+    if "@" in text:
+        text = text.split("@", 1)[0]
+    text = text.replace("_", "-")
+    parts = [part for part in text.split("-") if part]
+    if not parts:
+        return None
+    language = parts[0].lower()
+    if len(parts) == 1:
+        return language
+    if len(parts[1]) == 4:
+        return f"{language}-{parts[1].title()}"
+    return f"{language}-{parts[1].upper()}"
+
+
+def map_to_supported_locale(
+    tag: Optional[str],
+    supported_locales: Optional[Sequence[str]] = None,
+) -> str:
+    """Map a locale tag to the nearest FR-006 supported locale or DEFAULT_LANGUAGE."""
+    registry = tuple(supported_locales) if supported_locales else FR006_SUPPORTED_LOCALES
+    registry_set = set(registry)
+    parsed = parse_locale_tag(tag)
+    if parsed is None:
+        return DEFAULT_LANGUAGE
+    if parsed in registry_set:
+        return parsed
+    parts = parsed.split("-", 1)
+    language = parts[0]
+    region = parts[1] if len(parts) > 1 else None
+    if language == "en":
+        if region in ("US",):
+            return "en-US" if "en-US" in registry_set else DEFAULT_LANGUAGE
+        if region in ("GB", "UK"):
+            return "en-GB" if "en-GB" in registry_set else DEFAULT_LANGUAGE
+        return DEFAULT_LANGUAGE
+    if language == "zh":
+        if region in ("TW", "HANT"):
+            return "zh-TW" if "zh-TW" in registry_set else DEFAULT_LANGUAGE
+        return "zh-CN" if "zh-CN" in registry_set else DEFAULT_LANGUAGE
+    for candidate in registry:
+        if candidate.split("-", 1)[0] == language:
+            return candidate
+    return DEFAULT_LANGUAGE
+
+
+def detect_env_locale(environ: Optional[Mapping[str, str]] = None) -> Optional[str]:
+    """Read ADK_LOCALE from the environment."""
+    env = dict(os.environ if environ is None else environ)
+    raw = env.get(ADK_LOCALE_ENV)
+    if not raw or not str(raw).strip():
+        return None
+    return parse_locale_tag(raw)
+
+
+def detect_system_locale(environ: Optional[Mapping[str, str]] = None) -> Optional[str]:
+    """Detect locale from LC_ALL, LANG, or locale.getlocale()."""
+    env = dict(os.environ if environ is None else environ)
+    for key in ("LC_ALL", "LANG"):
+        raw = env.get(key)
+        if raw and str(raw).strip() and str(raw).lower() != "c":
+            parsed = parse_locale_tag(raw)
+            if parsed:
+                return parsed
+    try:
+        current = locale.getlocale()[0]
+    except (ValueError, TypeError):
+        current = None
+    if current:
+        return parse_locale_tag(current)
+    return None
+
+
+def parse_accept_language(header: str) -> List[Tuple[str, float]]:
+    """Parse an RFC 7231 Accept-Language header into (tag, q) pairs, highest q first."""
+    entries: List[Tuple[str, float]] = []
+    for part in header.split(","):
+        segment = part.strip()
+        if not segment:
+            continue
+        if ";q=" in segment.lower():
+            tag_part, _, q_part = segment.partition(";")
+            tag = tag_part.strip()
+            q_text = q_part.strip()
+            if q_text.lower().startswith("q="):
+                try:
+                    q_value = float(q_text[2:].strip())
+                except ValueError:
+                    q_value = 0.0
+            else:
+                q_value = 1.0
+        else:
+            tag = segment
+            q_value = 1.0
+        parsed = parse_locale_tag(tag)
+        if parsed:
+            entries.append((parsed, q_value))
+    entries.sort(key=lambda item: item[1], reverse=True)
+    return entries
+
+
+def detect_browser_locale(
+    accept_language: Optional[str] = None,
+    *,
+    environ: Optional[Mapping[str, str]] = None,
+    supported_locales: Optional[Sequence[str]] = None,
+) -> Optional[str]:
+    """
+    Pick the best locale from an Accept-Language header (or ADK_ACCEPT_LANGUAGE env).
+
+    Returns the highest-weight tag from the header without mapping to supported locales.
+    """
+    header = accept_language
+    if header is None:
+        env = dict(os.environ if environ is None else environ)
+        header = env.get(ADK_ACCEPT_LANGUAGE_ENV)
+    if not header or not str(header).strip():
+        return None
+    registry = tuple(supported_locales) if supported_locales else FR006_SUPPORTED_LOCALES
+    registry_set = set(registry)
+    for tag, _q in parse_accept_language(str(header)):
+        if tag in registry_set:
+            return tag
+        language = tag.split("-", 1)[0]
+        for candidate in registry:
+            if candidate.split("-", 1)[0] == language:
+                return candidate
+    parsed = parse_accept_language(str(header))
+    return parsed[0][0] if parsed else None
+
+
+def _config_file_language(project_root: Path) -> Optional[str]:
+    """Return language from ai-dev-kit-config.yaml when file exists with valid localisation."""
+    config_path = project_root / LOCALISATION_CONFIG_FILENAME
+    if not config_path.is_file():
+        return None
+    try:
+        with open(config_path, encoding="utf-8") as handle:
+            payload = yaml.safe_load(handle) or {}
+    except (OSError, yaml.YAMLError):
+        return None
+    localisation = payload.get("localisation")
+    if not isinstance(localisation, dict):
+        return None
+    raw_language = localisation.get("language")
+    if not isinstance(raw_language, str) or not raw_language.strip():
+        return None
+    return map_to_supported_locale(raw_language)
 
 
 def prompt_language_choice() -> Dict[str, str]:
@@ -132,11 +313,34 @@ def resolve_language(
     project_root: Path,
     *,
     override: Optional[str] = None,
+    accept_language: Optional[str] = None,
 ) -> str:
-    """Effective language: override > config file > DEFAULT_LANGUAGE."""
+    """
+    Effective language with ADR-024 detection precedence.
+
+    override → config file → ADK_LOCALE → system locale → accept_language → default.
+    """
     if override is not None:
-        return normalize_language(override)
-    return read_localisation_config(project_root)["language"]
+        return map_to_supported_locale(override)
+
+    config_language = _config_file_language(project_root)
+    if config_language is not None:
+        return config_language
+
+    env_language = detect_env_locale()
+    if env_language is not None:
+        return map_to_supported_locale(env_language)
+
+    system_language = detect_system_locale()
+    if system_language is not None:
+        return map_to_supported_locale(system_language)
+
+    if accept_language is not None:
+        browser_language = detect_browser_locale(accept_language)
+        if browser_language is not None:
+            return map_to_supported_locale(browser_language)
+
+    return DEFAULT_LANGUAGE
 
 
 def load_locale_manifest(manifest_path: Path) -> Dict[str, Any]:

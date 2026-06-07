@@ -95,7 +95,7 @@ Adopt **C1: Hybrid extension of the Phase 1 incumbent** as the canonical i18n st
 | Task | Consumes this ADR |
 | ---- | ----------------- |
 | **E21:S02:T02** | Directory layout `{package}/locales/{lang}/` with `templates/`, `keys/`, `docs/`; manifest v2 schema |
-| **E21:S02:T03** | Detection precedence: explicit override → `ai-dev-kit-config.yaml` → env (`ADK_LOCALE`) → system locale → `default_locale` |
+| **E21:S02:T03** | Detection precedence: explicit override → `ai-dev-kit-config.yaml` → env (`ADK_LOCALE`) → system locale → optional `accept_language` (RFC 7231 Accept-Language API for HTTP/portal) → `default_locale`. Browser = `detect_browser_locale()` / `parse_accept_language()` — not a CLI probe. Policy: [locale-detection-conventions.md](../../governance/standards/locale-detection-conventions.md) |
 | **E21:S02:T04** | Switching: CLI `--locale`, config rewrite, installer re-prompt with `--force` |
 | **E21:S02:T05** | `babel.dates` / `babel.numbers` wrappers; document stdlib fallback when Babel absent |
 | **E21:S02:T06** | `resolve_locale_key(project_root, key)` + key naming convention; manifest `keys` category |

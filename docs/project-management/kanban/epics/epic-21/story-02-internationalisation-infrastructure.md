@@ -12,8 +12,8 @@ housekeeping_policy: keep
 **Priority:** MEDIUM  
 **Estimated Effort:** [TBD]  
 **Created:** 2025-12-09  
-**Last updated:** 2026-06-07 (v0.21.2.2+1 — T02 COMPLETE; T03–T07 TODO)  
-**Version:** v0.21.2.2+1  
+**Last updated:** 2026-06-07 (v0.21.2.3+1 — T03 COMPLETE; T04–T07 TODO)  
+**Version:** v0.21.2.3+1  
 **Code:** E21S02
 
 ---
@@ -38,8 +38,9 @@ Establish a robust internationalisation infrastructure that supports multiple la
 - [x] **E21:S02:T02 – Set up translation file structure (`locales/{lang}/`)** - COMPLETE (v0.21.2.2+1 — manifest v2 + keys scaffold)
   - Task: [`T02-set-up-translation-file-structure-localeslang`](story-02-internationalisation-infrastructure/T02-set-up-translation-file-structure-localeslang.md)
   - Planning: [IPP-E21S02T02](../../../implementation-cycles/IPP-E21S02T02-locale-file-structure.md) · [locale-file-structure-conventions](../../../governance/standards/locale-file-structure-conventions.md)
-- [ ] **E21:S02:T03 – Implement locale detection (browser/system locale)** - TODO
+- [x] **E21:S02:T03 – Implement locale detection (browser/system locale)** - COMPLETE (v0.21.2.3+1 — ADR-024 precedence + detection APIs)
   - Task: [`T03-implement-locale-detection-browsersystem-locale`](story-02-internationalisation-infrastructure/T03-implement-locale-detection-browsersystem-locale.md)
+  - Planning: [IPP-E21S02T03](../../../implementation-cycles/IPP-E21S02T03-locale-detection.md) · [locale-detection-conventions](../../../governance/standards/locale-detection-conventions.md)
 - [ ] **E21:S02:T04 – Add language switching functionality** - TODO
   - Task: [`T04-add-language-switching-functionality`](story-02-internationalisation-infrastructure/T04-add-language-switching-functionality.md)
 - [ ] **E21:S02:T05 – Configure date/time/number formatting per locale** - TODO
@@ -55,7 +56,7 @@ Establish a robust internationalisation infrastructure that supports multiple la
 
 - [ ] i18n framework selected and integrated
 - [ ] Translation file structure established
-- [ ] Locale detection works
+- [x] Locale detection works (T03 @ v0.21.2.3+1)
 - [ ] Language switching works
 - [ ] Locale-specific formatting configured
 - [ ] Translation key system implemented
