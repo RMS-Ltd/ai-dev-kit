@@ -36,9 +36,18 @@ if str(_SCRIPTS_DIR) not in sys.path:
 from rw_config_loader import find_project_root, load_rw_config_or_empty  # noqa: E402
 
 
+def _rw_config_root() -> Path:
+    """Prefer cwd project root (isolated worktrees); fall back to script walk."""
+    for start in (Path.cwd(), Path(__file__).parent):
+        root = find_project_root(start)
+        if (root / "rw-config.yaml").exists():
+            return root
+    return find_project_root(Path(__file__).parent)
+
+
 def load_rw_config() -> Dict[str, Any]:
     """Backward-compatible config loader for tests and legacy callers."""
-    return load_rw_config_or_empty(find_project_root(Path(__file__).parent))
+    return load_rw_config_or_empty(_rw_config_root())
 
 
 def get_release_state_backend() -> str:
@@ -52,7 +61,7 @@ def get_release_state_db_path() -> Path:
     """Resolve SQLite DB path from rw-config."""
     config = load_rw_config()
     rel = config.get("release_state_db", ".adk/release-state.db")
-    return find_project_root(Path(__file__).parent) / str(rel)
+    return _rw_config_root() / str(rel)
 
 
 def get_semver_mapping_strategy() -> str:

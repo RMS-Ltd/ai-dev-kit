@@ -9,6 +9,14 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.2.17.4+2] - 07-06-26
+
+E02:S17:T04 — **Change implemented:** T04 COMPLETE — sqlite-mode RW AC1/AC2, validator sqlite path, T05 seed. SemVer **v0.4.1045+2**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.17.4+2.md)
+
+---
+
 ## [0.2.17.4+1] - 07-06-26
 
 E02:S17:T04 — **Change implemented:** SQLite release-state backend (import/export, dual-backend wiring, 45 pytest). SemVer **v0.4.1044+1**.

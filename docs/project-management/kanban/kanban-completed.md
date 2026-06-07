@@ -20,6 +20,11 @@ housekeeping_policy: keep
 
 ## 20 Most Recently Completed Tasks
 
+#### **RW (2026-06-07)** — E02:S17:T04 @ **v0.2.17.4+1** (SQLite release-state backend)
+
+- **[E02:S17:T04](epics/epic-02/story-17-rw-semver-characterization-and-release-state-sqlite/T04-implement-sqlite-changelog-semver-registry-backend.md)** — SQLite release-state module, dual-backend wiring, AC1–AC4 (49 pytest).
+  **Completed:** `2026-06-07T18:01:33Z` | **Version:** `v0.2.17.4+2` | **Agent:** `RW` | [Story](epics/epic-02/story-17-rw-semver-characterization-and-release-state-sqlite.md) | [—IPP—](../../implementation-cycles/IPP-E02S17T03-sqlite-release-state-schema.md)
+
 #### **RW (2026-06-07)** — E02:S17:T02 @ **v0.2.17.2+5** (baseline Waves 1–4 complete)
 
 - **[E02:S17:T02](epics/epic-02/story-17-rw-semver-characterization-and-release-state-sqlite/T02-baseline-characterization-runs-legacy-md-yaml.md)** — Legacy MD/YAML baseline characterization: 4 waves, 35 pytest checks, 9 friction patterns, 21/24 DET scenarios (87.5%).

@@ -9,12 +9,12 @@ housekeeping_policy: keep
 # E02:S17:T04 — Implement SQLite changelog and semver-registry backend
 
 **Task ID:** E02:S17:T04  
-**Status:** IN PROGRESS  
+**Status:** ✅ COMPLETE  
 **Priority:** CRITICAL  
 **Estimated Effort:** Large  
 **Created:** 2026-06-07  
-**Last updated:** 2026-06-07 (RW **v0.2.17.4+1** — SQLite backend phase 1)  
-**Version Anchor:** v0.2.17.4+1  
+**Last updated:** 2026-06-07 (RW **v0.2.17.4+2** — T04 COMPLETE, AC1–AC4)  
+**Version Anchor:** v0.2.17.4+2  
 **Code:** E02S17T04
 
 Publication Status: NOT_APPLICABLE
@@ -55,7 +55,7 @@ Implement the SQLite release-state backend per **T03** IPP. Wire RW pipeline scr
 2. Migration CLI: `import_legacy.py` ✅
 3. Export CLI: `export_legacy.py` ✅
 4. pytest coverage for CRUD + finalize boundary ✅ (`tests/release_state/`)
-5. RW agent guide delta (config switch, new paths) — pending
+5. RW agent guide delta (config switch, new paths) ✅ [`release-state-sqlite-mode.md`](../../../../packages/frameworks/workflow-mgt/docs/release-state-sqlite-mode.md)
 6. `semver_converter.py` dual-backend wiring ✅
 7. `rw-config.yaml` keys (`release_state_backend`, `release_state_db`) ✅
 
@@ -63,10 +63,10 @@ Implement the SQLite release-state backend per **T03** IPP. Wire RW pipeline scr
 
 ## Acceptance Criteria
 
-- [ ] AC1: `release_state_backend: sqlite` runs RW Steps 2–11 on isolated worktree without legacy file writes
-- [ ] AC2: Existing validator suite passes in SQLite mode
+- [x] AC1: `release_state_backend: sqlite` runs RW Steps 2–11 on isolated worktree without legacy file writes — `test_sqlite_mode_rw_ac.py`
+- [x] AC2: Existing validator suite passes in SQLite mode — injective + contract with staged DB
 - [x] AC3: Import + export round-trip is idempotent on test corpus
-- [x] AC4: No regression in legacy mode when flag unset (42/42 pytest pass)
+- [x] AC4: No regression in legacy mode when flag unset (45/45 pytest pass)
 
 ---
 

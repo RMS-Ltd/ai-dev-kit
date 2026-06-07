@@ -22,24 +22,32 @@ def _find_project_root(start: Path) -> Path:
 
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--registry", type=Path, help="Path to semver-registry.yaml")
+    parser.add_argument("--registry", type=Path, help="Path to semver-registry.yaml (legacy)")
     parser.add_argument("--rc", type=int, default=0)
     args = parser.parse_args()
 
     root = _find_project_root(Path.cwd())
     version_dir = Path(__file__).resolve().parent.parent / "version"
+    scripts_dir = Path(__file__).resolve().parent.parent
     sys.path.insert(0, str(version_dir))
+    sys.path.insert(0, str(scripts_dir))
 
     import yaml
+    from semver_converter import get_release_state_backend, load_semver_registry
     from task_touch_registry_audit import audit_registry, format_report, has_collisions
 
-    reg_path = args.registry or (root / "semver-registry.yaml")
-    if not reg_path.exists():
-        print(f"ERROR: registry not found: {reg_path}", file=sys.stderr)
-        return 1
-
-    with open(reg_path, encoding="utf-8") as f:
-        registry = yaml.safe_load(f) or {}
+    if args.registry:
+        with open(args.registry, encoding="utf-8") as f:
+            registry = yaml.safe_load(f) or {}
+    elif get_release_state_backend() == "sqlite":
+        registry = load_semver_registry()
+    else:
+        reg_path = root / "semver-registry.yaml"
+        if not reg_path.exists():
+            print(f"ERROR: registry not found: {reg_path}", file=sys.stderr)
+            return 1
+        with open(reg_path, encoding="utf-8") as f:
+            registry = yaml.safe_load(f) or {}
 
     report = audit_registry(registry, rc=args.rc)
     print(format_report(report))

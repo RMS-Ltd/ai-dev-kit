@@ -58,10 +58,10 @@ class TestWave4IPW:
         assert "IPP-E02S17T03" in T03_DOC.read_text(encoding="utf-8")
 
     def test_IPW_P02_t04_implementation_blocked_no_ipp(self):
-        """IPW-P02: T04 IN PROGRESS but uses T03 IPP — T04 has no dedicated IPP-E02S17T04."""
+        """IPW-P02: T04 COMPLETE; uses T03 IPP — no dedicated IPP-E02S17T04."""
         assert T04_DOC.exists()
         text = T04_DOC.read_text(encoding="utf-8")
-        assert "**Status:** IN PROGRESS" in text
+        assert "✅ COMPLETE" in text or "**Status:** ✅ COMPLETE" in text
         assert "IPP-E02S17T04" not in text
         assert list(IPP_DIR.glob("IPP-E02S17T04*.md")) == []
         assert "IPP-E02S17T03" in text
@@ -73,11 +73,11 @@ class TestWave4IPW:
         assert "Reconcile task" in template or "Reconcile" in template
         assert "MANDATORY" in template
 
-    def test_IPW_P04_rw_releasable_on_t04_in_progress(self):
-        """IPW-P04: RW Step 1c allows T04 when IN PROGRESS (implementation active)."""
+    def test_IPW_P04_rw_releasable_on_t04_complete(self):
+        """IPW-P04: RW Step 1c allows T04 when COMPLETE (forensic release)."""
         r = _run_validator("validate_rw_task_complete.py", ["--requested", "E02:S17:T04"])
         assert r.returncode == 0
-        assert "IN PROGRESS" in r.stdout or "IN PROGRESS" in r.stderr
+        assert "COMPLETE" in r.stdout or "COMPLETE" in r.stderr
 
 
 class TestWave4Volume:
