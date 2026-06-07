@@ -25,6 +25,11 @@ housekeeping_policy: keep
 - **[E05:S08:T03](epics/epic-05/story-08-knowledge-base/T03-big-bang-notion-migration-maintainer-kb-fr114.md)** — **FR-114**: Big-bang Notion migration — fresh Engineering KB, migration manifest (218 entries), git stubs, KB-INDEX regen, legacy map deprecated.
   **Completed:** `2026-06-07T10:31:54Z` | **Version:** `v0.5.8.3+3` | **Agent:** `RW E05:S08:T03 --art` | [FR-114](fr-br/FR-114-split-documentation-surfaces-docusaurus-public-notion-maintainer-kb.md) | [—IPP—](../../implementation-cycles/IPP-E05S08T03-big-bang-notion-migration-maintainer-kb-fr114.md)
 
+#### **RW (2026-06-07)** — E05:S09:T15 @ **v0.5.9.15+2** (FR-114 Wave 2 ADR-024)
+
+- **[E05:S09:T15](epics/epic-05/story-09-docusaurus-documentation-portal/T15-docusaurus-adopter-public-publish-allowlist-fr114.md)** — **FR-114 Wave 2**: ADR-024 allowlist ADR, expanded IPP, FR-066 supersession, shared portal test module, dual release-notes policy.
+  **Completed:** `2026-06-07T12:30:00Z` | **Version:** `v0.5.9.15+2` | **Agent:** `RW E05:S09:T15 --art` | [ADR-024](../../architecture/standards-and-adrs/ADR-024-docusaurus-adopter-public-publish-allowlist-fr114.md) | [IPP](../../implementation-cycles/IPP-E05S09T15-docusaurus-adopter-public-publish-allowlist-fr114.md)
+
 #### **RW (2026-06-07)** — E05:S09:T15 @ **v0.5.9.15+1** (FR-114 Docusaurus adopter-public allowlist)
 
 - **[E05:S09:T15](epics/epic-05/story-09-docusaurus-documentation-portal/T15-docusaurus-adopter-public-publish-allowlist-fr114.md)** — **FR-114**: Docusaurus adopter-public publish allowlist — explicit include/exclude, trimmed IA, narrowed CI, BR-068 link remediation, RC release-notes scaffold.

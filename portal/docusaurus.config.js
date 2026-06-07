@@ -60,6 +60,7 @@ const config = {
             'architecture/**',
             'governance/**',
             'changelog-and-release-notes/**',
+            'release-notes/**',
             'book-project/**',
             'project-agent-index.md',
             'project-agent-manifest.json',

@@ -16,30 +16,21 @@ from pathlib import Path
 
 import pytest
 
-REPO_ROOT = Path(__file__).resolve().parent.parent
-DOCS_ROOT = REPO_ROOT / "docs"
-CHEATSHEET_PATH = DOCS_ROOT / "guides" / "workflow-initiation-cheatsheet.md"
-GITHUB_BLOB_PREFIX = "https://github.com/RMS-Ltd/ai-dev-kit/blob/main/"
+from tests.portal_allowlist import (
+    DOCS_ROOT,
+    GITHUB_BLOB_PREFIX,
+    allowlisted_markdown_files,
+    in_publish_scope,
+)
 
-# FR-114 adopter-public allowlist (E05:S09:T15) — Docusaurus docs-plugin publish scope.
-ALLOWLIST_DIRS = ("guides", "documentation")
-ALLOWLIST_FILES = (DOCS_ROOT / "developer-tools" / "ide-whitelist-guide.md",)
+REPO_ROOT = Path(__file__).resolve().parent.parent
+CHEATSHEET_PATH = DOCS_ROOT / "guides" / "workflow-initiation-cheatsheet.md"
 
 MARKDOWN_LINK_RE = re.compile(r"\[[^\]]*\]\(([^)]+)\)")
 
 
-def _in_publish_scope(path: Path) -> bool:
-    if path in ALLOWLIST_FILES:
-        return True
-    try:
-        rel = path.relative_to(DOCS_ROOT)
-    except ValueError:
-        return False
-    return rel.parts and rel.parts[0] in ALLOWLIST_DIRS
-
-
 def _get_publish_scope_markdown_files() -> list[Path]:
-    return sorted(p for p in DOCS_ROOT.rglob("*.md") if _in_publish_scope(p))
+    return allowlisted_markdown_files()
 
 
 def _resolve_relative_link(source_file: Path, target: str) -> Path | None:
@@ -55,9 +46,9 @@ def _resolve_relative_link(source_file: Path, target: str) -> Path | None:
 def _leaves_docs_plugin(resolved: Path) -> bool:
     try:
         resolved.relative_to(DOCS_ROOT.resolve())
-        return False
     except ValueError:
         return True
+    return not in_publish_scope(resolved)
 
 
 def _find_out_of_plugin_links(source_file: Path, text: str) -> list[str]:

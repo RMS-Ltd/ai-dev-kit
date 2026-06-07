@@ -12,8 +12,8 @@ housekeeping_policy: keep
 **Status:** COMPLETE  
 **Priority:** HIGH  
 **Created:** 2026-06-06  
-**Last updated:** 2026-06-07 (✅ COMPLETE v0.5.9.15+1 — FR-114 allowlist shipped)  
-**Version:** v0.5.9.15+1  
+**Last updated:** 2026-06-07 (v0.5.9.15+2 — FR-114 Wave 2 ADR-024 + IPP completion)  
+**Version:** v0.5.9.15+2  
 **Code:** E05S09T15
 
 Publication Status: NOT_APPLICABLE
@@ -29,6 +29,7 @@ Publication Status: NOT_APPLICABLE
 ## Input
 
 - [IPP-E05S09T15-docusaurus-adopter-public-publish-allowlist-fr114.md](../../../../../implementation-cycles/IPP-E05S09T15-docusaurus-adopter-public-publish-allowlist-fr114.md)
+- [ADR-024 — Docusaurus adopter-public publish allowlist](../../../../../architecture/standards-and-adrs/ADR-024-docusaurus-adopter-public-publish-allowlist-fr114.md)
 - [FR-114](../../../fr-br/FR-114-split-documentation-surfaces-docusaurus-public-notion-maintainer-kb.md) decision record and allowlist starter
 - [`portal/docusaurus.config.js`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/portal/docusaurus.config.js)
 - [`portal/sidebars.js`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/portal/sidebars.js)
@@ -65,13 +66,14 @@ Rescope the Docusaurus portal from “publish nearly all `docs/`” to an explic
 
 ## Version Anchor
 
-**Forensic marker:** ✅ COMPLETE (**v0.5.9.15+1** — FR-114 Docusaurus adopter-public allowlist)
+**Forensic marker:** ✅ COMPLETE (**v0.5.9.15+2** — FR-114 Wave 2: ADR-024, IPP completion, shared test module)
 
 ---
 
 ## References
 
 - [IPP-E05S09T15-docusaurus-adopter-public-publish-allowlist-fr114.md](../../../../../implementation-cycles/IPP-E05S09T15-docusaurus-adopter-public-publish-allowlist-fr114.md)
+- [ADR-024 — Docusaurus adopter-public publish allowlist](../../../../../architecture/standards-and-adrs/ADR-024-docusaurus-adopter-public-publish-allowlist-fr114.md)
 - [FR-114](../../../fr-br/FR-114-split-documentation-surfaces-docusaurus-public-notion-maintainer-kb.md)
 - [E05:S09:T02 — Publish scope (FR-066)](T02-docusaurus-publish-scope-fr-066.md)
 - [ultimate-canonical-kb-structure.md](../../../../../architecture/standards-and-adrs/ultimate-canonical-kb-structure.md)

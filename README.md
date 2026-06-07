@@ -11,7 +11,7 @@
 
 **A comprehensive toolkit for AI-assisted development workflows**
 
-**Version (SemVer):** `v0.4.1032+3` | **Internal:** `v0.5.8.3+3` (E05:S08:T03 / FR-114 Notion maintainer KB migration) | **Last Updated:** 2026-06-07
+**Version (SemVer):** `v0.4.1033+2` | **Internal:** `v0.5.9.15+2` (E05:S09:T15 / FR-114 Wave 2 ADR-024) | **Last Updated:** 2026-06-07
 
 [Features](#features) • [Installation](#getting-started) • [Install in Your Project](INSTALL_IN_YOUR_PROJECT.md) • [Documentation](docs/documentation) • **Browsing docs (published site):** [https://rms-ltd.github.io/ai-dev-kit/](https://rms-ltd.github.io/ai-dev-kit/) • [Workflows](#workflows) • [Report Bug](https://github.com/RMS-Ltd/ai-dev-kit/issues) • [Request Feature](https://github.com/RMS-Ltd/ai-dev-kit/issues)
 

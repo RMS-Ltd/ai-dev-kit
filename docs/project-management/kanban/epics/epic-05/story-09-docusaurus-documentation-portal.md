@@ -12,8 +12,8 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** [TBD]  
 **Created:** 2026-03-30  
-**Last updated:** 2026-06-07 (v0.5.9.15+1 — **T15** FR-114 allowlist ✅)
-**Version:** v0.5.9.15+1
+**Last updated:** 2026-06-07 (v0.5.9.15+2 — **T15** FR-114 Wave 2 ADR-024 ✅)  
+**Version:** v0.5.9.15+2
 **Code:** E5S09
 
 ---
@@ -34,7 +34,7 @@ housekeeping_policy: keep
 - [x] **E05:S09:T12 – Changelog directory consolidation ([UXR-018](../../fr-br/UXR-018-changelog-directory-consolidation.md))** — ✅ COMPLETE (**v0.5.9.12+3**) — [task file](story-09-docusaurus-documentation-portal/T12-changelog-directory-consolidation-uxr018.md) | [IPP](../../../../implementation-cycles/IPP-E05S09T12-changelog-directory-consolidation.md) | [Remediation](../../../../maintenance/coordinate-remediation-uxr018-e05s09t12.md)
 - [x] **E05:S09:T13 – Docusaurus `@docusaurus/faster` + package.json 3.10.1 alignment ([BR-090](../../fr-br/BR-090-docusaurus-faster-missing-dependabot-310-lockfile-drift.md))** — ✅ COMPLETE (**v0.5.9.13+3** — BR-090 FIXED); [IPP](../../../../implementation-cycles/IPP-E05S09T13-docusaurus-faster-package-alignment.md) — [task file](story-09-docusaurus-documentation-portal/T13-docusaurus-faster-package-alignment-br090.md)
 - [x] **E05:S09:T14 – Docusaurus CI build/deploy deduplication ([BR-093](../../fr-br/BR-093-docusaurus-ci-duplicate-build-deploy-job-waste.md))** — ✅ COMPLETE (**v0.5.9.14+3** — Wave 2 + BUILD remediation; BR-093 **FIXED**); [IPP](../../../../implementation-cycles/IPP-E05S09T14-docusaurus-ci-workflow-deduplication.md) · [ADR-017](../../../../architecture/standards-and-adrs/ADR-017-docusaurus-ci-build-deploy-topology.md) — [task file](story-09-docusaurus-documentation-portal/T14-docusaurus-ci-workflow-deduplication-br093.md)
-- [x] **E05:S09:T15 – Docusaurus adopter-public publish allowlist ([FR-114](../../fr-br/FR-114-split-documentation-surfaces-docusaurus-public-notion-maintainer-kb.md))** — ✅ COMPLETE (**v0.5.9.15+1** — FR-114 allowlist) — [task file](story-09-docusaurus-documentation-portal/T15-docusaurus-adopter-public-publish-allowlist-fr114.md) | [IPP](../../../implementation-cycles/IPP-E05S09T15-docusaurus-adopter-public-publish-allowlist-fr114.md)
+- [x] **E05:S09:T15 – Docusaurus adopter-public publish allowlist ([FR-114](../../fr-br/FR-114-split-documentation-surfaces-docusaurus-public-notion-maintainer-kb.md))** — ✅ COMPLETE (**v0.5.9.15+2** — Wave 2 ADR-024) — [task file](story-09-docusaurus-documentation-portal/T15-docusaurus-adopter-public-publish-allowlist-fr114.md) | [IPP](../../../implementation-cycles/IPP-E05S09T15-docusaurus-adopter-public-publish-allowlist-fr114.md) | [ADR-024](../../../architecture/standards-and-adrs/ADR-024-docusaurus-adopter-public-publish-allowlist-fr114.md)
 
 > **Forensic marker format:** `✅ COMPLETE (vRC.E.S.T+B)` when done.
 

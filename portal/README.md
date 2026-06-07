@@ -32,7 +32,14 @@ This directory (`portal/`) is the **[Docusaurus](https://docusaurus.io/)** site 
 
 ### RC ≥ 1 significant release notes
 
-From **RC ≥ 1**, publish **curated milestone narratives** under [`portal/blog/`](blog/) — not raw `CHANGELOG.md`. Policy: [`portal/blog/RELEASE-NOTES-POLICY.md`](blog/RELEASE-NOTES-POLICY.md). Scaffold only until first RC public release.
+From **RC ≥ 1**, publish **curated milestone narratives** — not raw `CHANGELOG.md`.
+
+| Location | Role |
+| -------- | ---- |
+| [`portal/blog/`](blog/) | **Primary scaffold** — policy: [`RELEASE-NOTES-POLICY.md`](blog/RELEASE-NOTES-POLICY.md) |
+| [`docs/release-notes/`](../docs/release-notes/README.md) | **Alternative** (git policy stub only — excluded from portal build; use if sidebar-integrated release notes are preferred over blog) |
+
+Scaffold only until first RC public release. **Authority:** [ADR-024](../docs/architecture/standards-and-adrs/ADR-024-docusaurus-adopter-public-publish-allowlist-fr114.md).
 
 ### Broken links and anchors (FR-067 / E5:S09:T08 / E5:S09:T10)
 

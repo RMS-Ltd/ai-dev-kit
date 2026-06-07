@@ -8,12 +8,14 @@ housekeeping_policy: keep
 
 # Feature Request: Docusaurus Canonical Docs Path and Publish Scope
 
+> **Partial supersession (2026-06-07):** **Publish breadth** (“nearly all `docs/`”) is superseded by [FR-114](FR-114-split-documentation-surfaces-docusaurus-public-notion-maintainer-kb.md) adopter-public allowlist ([E05:S09:T15](../epics/epic-05/story-09-docusaurus-documentation-portal/T15-docusaurus-adopter-public-publish-allowlist-fr114.md), [ADR-024](../../architecture/standards-and-adrs/ADR-024-docusaurus-adopter-public-publish-allowlist-fr114.md)). **Canonical path** (`docs.path: '../docs'`) and single-source ingest remain in force.
+
 **Type:** Feature Request (FR)  
 **ID:** FR-066  
 **Submitted:** 2026-03-30  
 **Submitted By:** User (via agent)  
 **Priority:** HIGH  
-**Status:** IMPLEMENTED (pending RW forensic close — config + scope **2026-03-30**)  
+**Status:** IMPLEMENTED (publish breadth superseded in part by FR-114 / ADR-024)  
 **Assigned Task:** E05:S09:T02 — [`T02-docusaurus-canonical-docs-path-fr-066.md`](../epics/epic-05/story-09-docusaurus-documentation-portal/T02-docusaurus-canonical-docs-path-fr-066.md)
 
 ---
