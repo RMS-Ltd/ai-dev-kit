@@ -3,7 +3,7 @@
 - **Contract:** FR-092 Wave 7 release-readiness gate (Gates 1-7: governance / predecessors / parity / corpus / stage / stamps / four-surface)
 - **Invocation context:** rw_step_9_release_readiness
 - **Release scope:** E8:S3:T12 (v0.8.3.12+9)
-- **Timestamp (UTC):** 2026-06-07 17:01 UTC
+- **Timestamp (UTC):** 2026-06-07 18:28 UTC
 - **Four-surface report:** `/Users/rms/Documents/projects/ai-dev-kit-e05/docs/changelog-and-release-notes/changelog-archive/four-surface-reports/rw-step7-four-surface-report-v0-8-3-12plus9-e8s3t12.json`
 
 ## Overall verdict
@@ -55,7 +55,7 @@
 - Summary: Corpus canonical state holds: every active board is idempotent under canonical sweep; no duplicate tails; no synthetic stamps.
 - Evidence:
   - `/Users/rms/Documents/projects/ai-dev-kit-e05/docs/project-management/kanban/kboard.md`: `{'rows_changed': 0, 'rows_with_duplicate_footers': 0}`
-  - `stamp_evidence_aggregate`: `{'stamps_appended_with_evidence': 0, 'stamps_skipped_no_evidence': 0, 'stamps_preserved_existing': 22}`
+  - `stamp_evidence_aggregate`: `{'stamps_appended_with_evidence': 0, 'stamps_skipped_no_evidence': 0, 'stamps_preserved_existing': 23}`
 
 ### Gate 5 — Stage-set completeness (BR-070)
 

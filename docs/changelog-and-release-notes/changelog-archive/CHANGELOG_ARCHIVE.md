@@ -494,7 +494,7 @@ E05:S09:T12 — **Kanban init:** **UXR-018** atomic intake — changelog directo
 ---
 ## [0.5.9.12+2] - 04-06-26
 
-E05:S09:T12 — **UXR-018:** Changelog directory consolidation — retired `docs/changelog/` and knowledge mirror; single pillar `docs/changelog-and-release-notes/`; portal sidebar + index link repair; pytest guard. SemVer **v0.4.869+2**.
+E05:S09:T12 — **UXR-018:** Changelog directory consolidation — retired legacy changelog root and knowledge mirror; single pillar `docs/changelog-and-release-notes/`; portal sidebar + index link repair; pytest guard. SemVer **v0.4.869+2**.
 
 [Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.5.1.76+2.md) (archive filename retains orphan label **v0.5.1.76+2**)
 

@@ -12,8 +12,8 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** Medium  
 **Created:** 2026-04-20  
-**Last updated:** 2026-06-07 (RW **v0.2.16.4+37** — UKW -u Epic 21 kanban-init wave bookkeeping)
-**Version:** v0.2.16.4+37
+**Last updated:** 2026-06-07 (v0.2.16.10+8 — E02:S17 integration sign-off)
+**Version:** v0.2.16.10+8
 **Code:** E2S16
 
 ---

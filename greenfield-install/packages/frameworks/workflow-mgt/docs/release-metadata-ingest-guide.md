@@ -48,12 +48,12 @@ python packages/frameworks/workflow-mgt/scripts/release_metadata/ingest_release_
 python packages/frameworks/workflow-mgt/scripts/release_metadata/ingest_release_metadata.py
 
 # Query
-python -m release_metadata.query --version 0.2.1.24+3
-python -m release_metadata.query --est E02:S01:T25 --json
+python packages/frameworks/workflow-mgt/scripts/release_metadata/query_release_metadata.py --version 0.2.1.24+3
+python packages/frameworks/workflow-mgt/scripts/release_metadata/query_release_metadata.py --est E02:S01:T25 --json
 
 # Audit (advisory; --strict for CI)
-python -m release_metadata.audit_semver
-python -m release_metadata.audit_semver --strict
+python packages/frameworks/workflow-mgt/scripts/release_metadata/audit_release_metadata.py
+python packages/frameworks/workflow-mgt/scripts/release_metadata/audit_release_metadata.py --strict
 ```
 
 Run from project root with `rw-config.yaml` present.

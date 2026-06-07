@@ -1,0 +1,84 @@
+============================= test session starts ==============================
+platform darwin -- Python 3.9.6, pytest-8.4.2, pluggy-1.6.0 -- /Applications/Xcode.app/Contents/Developer/usr/bin/python3
+cachedir: .pytest_cache
+rootdir: /Users/rms/Documents/projects/ai-dev-kit-e05
+configfile: pytest.ini
+plugins: mock-3.15.1, anyio-4.10.0, cov-7.0.0
+collecting ... collected 36 items
+
+tests/rw_scenarios/test_wave1_baseline.py::test_wave1_scenario_registered[RW-B01] PASSED [  2%]
+tests/rw_scenarios/test_wave1_baseline.py::test_wave1_scenario_registered[RW-B02] PASSED [  5%]
+tests/rw_scenarios/test_wave1_baseline.py::test_wave1_scenario_registered[RW-B03] PASSED [  8%]
+tests/rw_scenarios/test_wave1_baseline.py::test_wave1_scenario_registered[RW-B06] PASSED [ 11%]
+tests/rw_scenarios/test_wave1_baseline.py::test_wave1_scenario_registered[RW-S01] PASSED [ 13%]
+tests/rw_scenarios/test_wave1_baseline.py::test_wave1_scenario_registered[RW-S02] PASSED [ 16%]
+tests/rw_scenarios/test_wave1_baseline.py::test_wave1_scenario_registered[RW-G03] PASSED [ 19%]
+tests/rw_scenarios/test_wave1_baseline.py::test_wave1_scenario_registered[RW-G04] PASSED [ 22%]
+tests/rw_scenarios/test_wave1_baseline.py::TestWave1Build::test_RW_B01_same_task_build_plus_one_untagged PASSED [ 25%]
+tests/rw_scenarios/test_wave1_baseline.py::TestWave1Build::test_RW_B02_tagged_head_still_increments PASSED [ 27%]
+tests/rw_scenarios/test_wave1_baseline.py::TestWave1Build::test_RW_B03_tagged_build_reuse_blocked PASSED [ 30%]
+tests/rw_scenarios/test_wave1_baseline.py::TestWave1Build::test_RW_B06_art_cross_task_adoption PASSED [ 33%]
+tests/rw_scenarios/test_wave1_baseline.py::TestWave1Semver::test_RW_S01_task_touch_counter_increments PASSED [ 36%]
+tests/rw_scenarios/test_wave1_baseline.py::TestWave1Semver::test_RW_S02_three_sequential_releases_injective PASSED [ 38%]
+tests/rw_scenarios/test_wave1_baseline.py::TestWave1Gates::test_RW_G03_intent_mismatch_without_art PASSED [ 41%]
+tests/rw_scenarios/test_wave1_baseline.py::TestWave1Gates::test_RW_G04_intent_pass_with_art PASSED [ 44%]
+tests/rw_scenarios/test_wave2_baseline.py::TestWave2Semver::test_RW_S03_new_task_new_internal_key PASSED [ 47%]
+tests/rw_scenarios/test_wave2_baseline.py::TestWave2Semver::test_RW_S04_finalize_at_tag_boundary PASSED [ 50%]
+tests/rw_scenarios/test_wave2_baseline.py::TestWave2Semver::test_RW_S05_injective_validator_catches_collision PASSED [ 52%]
+tests/rw_scenarios/test_wave2_baseline.py::TestWave2Semver::test_RW_S06_release_contract_after_finalize PASSED [ 55%]
+tests/rw_scenarios/test_wave2_baseline.py::TestWave2Volume::test_RW_V01_ten_sequential_releases PASSED [ 58%]
+tests/rw_scenarios/test_wave3_baseline.py::TestWave3Operator::test_RW_B07_forbidden_force_tag_detected PASSED [ 61%]
+tests/rw_scenarios/test_wave3_baseline.py::TestWave3Operator::test_RW_B07_clean_commands_pass PASSED [ 63%]
+tests/rw_scenarios/test_wave3_baseline.py::TestWave3Operator::test_RW_B08_release_scoped_tag_names PASSED [ 66%]
+tests/rw_scenarios/test_wave3_baseline.py::TestWave3Operator::test_RW_V02_dry_run_no_bulk_tags_flag PASSED [ 69%]
+tests/rw_scenarios/test_wave3_baseline.py::TestWave3PerpetualAndIntent::test_RW_P01_perpetual_same_task_build_plus_one PASSED [ 72%]
+tests/rw_scenarios/test_wave3_baseline.py::TestWave3PerpetualAndIntent::test_RW_G06_confirmed_override_after_mismatch PASSED [ 75%]
+tests/rw_scenarios/test_wave3_baseline.py::TestWave3CollisionRecovery::test_RW_S07_recovery_text_forbids_force_push PASSED [ 77%]
+tests/rw_scenarios/test_wave3_baseline.py::TestWave3CollisionRecovery::test_RW_S07_journal_scan_integration PASSED [ 80%]
+tests/rw_scenarios/test_wave4_baseline.py::TestWave4IPW::test_IPW_P01_t03_has_ipp_linked PASSED [ 83%]
+tests/rw_scenarios/test_wave4_baseline.py::TestWave4IPW::test_IPW_P02_t04_implementation_blocked_no_ipp PASSED [ 86%]
+tests/rw_scenarios/test_wave4_baseline.py::TestWave4IPW::test_IPW_P03_plan_template_mandatory_transitions PASSED [ 88%]
+tests/rw_scenarios/test_wave4_baseline.py::TestWave4IPW::test_IPW_P04_rw_releasable_on_t04_complete PASSED [ 91%]
+tests/rw_scenarios/test_wave4_baseline.py::TestWave4Volume::test_RW_V03_changelog_exceeds_threshold PASSED [ 94%]
+tests/rw_scenarios/test_wave4_baseline.py::TestWave4Volume::test_RW_V04_registry_yaml_load_benchmark PASSED [ 97%]
+tests/rw_scenarios/test_wave4_baseline.py::TestWave4Volume::test_RW_V04_sqlite_lookup_benchmark PASSED [100%]/Users/rms/Library/Python/3.9/lib/python/site-packages/coverage/control.py:946: CoverageWarning: No data was collected. (no-data-collected); see https://coverage.readthedocs.io/en/7.10.7/messages.html#warning-no-data-collected
+  self._warn("No data was collected.", slug="no-data-collected")
+
+
+================================ tests coverage ================================
+_______________ coverage: platform darwin, python 3.9.6-final-0 ________________
+
+Name                               Stmts   Miss  Cover   Missing
+----------------------------------------------------------------
+cli/__init__.py                        2      2     0%   9-10
+cli/adk_install_errors_bridge.py      45     45     0%   3-64
+cli/adk_version_display.py            44     44     0%   8-85
+cli/backends/__init__.py              11     11     0%   9-33
+cli/backends/base.py                  27     27     0%   7-130
+cli/backends/git_submodule.py        170    170     0%   5-425
+cli/backends/git_subtree.py          144    144     0%   5-364
+cli/backends/package_manager.py      237    237     0%   7-617
+cli/backends/registry.py              33     33     0%   5-116
+cli/backends/selector.py              34     34     0%   5-91
+cli/commands/__init__.py              16     16     0%   7-57
+cli/commands/check.py                 49     49     0%   7-95
+cli/commands/config.py               144    144     0%   7-274
+cli/commands/init.py                  37     37     0%   7-71
+cli/commands/install.py              156    156     0%   7-467
+cli/commands/list.py                  32     32     0%   7-73
+cli/commands/logs.py                 432    432     0%   8-648
+cli/commands/migrate.py              126    126     0%   7-229
+cli/commands/remove.py               217    217     0%   7-373
+cli/commands/status.py                53     53     0%   7-101
+cli/commands/update.py                58     58     0%   7-121
+cli/config.py                        103    103     0%   7-252
+cli/exceptions.py                    115    115     0%   7-264
+cli/logging.py                       138    138     0%   9-269
+cli/main.py                           46     46     0%   8-127
+cli/migration.py                     109    109     0%   7-255
+cli/utils.py                          36     36     0%   5-83
+cli/validation.py                     69     69     0%   7-282
+----------------------------------------------------------------
+TOTAL                               2683   2683     0%
+Coverage HTML written to dir htmlcov
+============================== 36 passed in 4.17s ==============================
