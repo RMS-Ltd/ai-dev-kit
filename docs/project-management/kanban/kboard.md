@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Board
 
-**Last Updated:** 2026-06-06 (RW **v0.2.16.4+36** — E02:S16:T04 UKW comprehensive)
-**Version:** v0.2.16.4+36
+**Last Updated:** 2026-06-07 (E21:S01:T01 — S00→S01 renumber hygiene)
+**Version:** v0.21.1.1+1
 
 **Active board contract:** **Sole active MoSCOW board** ([ADR-018](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/architecture/standards-and-adrs/ADR-018-single-kanban-board-consolidation.md)). Rows are **live work** (TODO / IN PROGRESS / OPEN / WAITING / PERPETUAL) plus filed **Could Have** backlog. **Verification (V)** band holds task-shipped / FBU-open items (`⏳ WAITING`). Remove **terminal** rows and archive prose (use [`kanban-completed.md`](kanban-completed.md) / [`intake-completed.md`](intake-completed.md)).
 
@@ -56,7 +56,19 @@ housekeeping_policy: keep
 
 - **E07:S01:T10** – FR-039: AI Dev Kit Project Review and Legacy Clean-up - 📋 TODO (LOW, Review and clean up legacy project elements) | [Task](epics/epic-07/story-01-codebase-maintenance-tasks/T10-project-root-hygiene-and-legacy-docs-rationalization.md) | [FR-039](fr-br/FR-039-ai-dev-kit-project-review-and-legacy-clean-up.md) | —No IPP— | Last modified: 2026-06-04 12:15 UTC
 
-- **E21:S00** – FR-006 Phase 1: Language selection at setup (UK/US English) - 📋 TODO (LOW, **v0.21.0.1+1** RW -k kanban rehouse; 7 tasks T01–T07; per-locale Phase 2 → S04–S06) | [Story](epics/epic-21/story-00-language-selection-at-setup.md) | [FR-006](fr-br/FR-006-localization-language-selection-uk-us-english.md) | [Epic 21](epics/epic-21/Epic-21.md) | —No IPP— | Last modified: 2026-06-06 17:13 UTC
+- **E21:S01:T01** – Add language selection prompt to template setup (GitHub template) - 📋 TODO (MEDIUM, FR-006 Phase 1; **v0.21.1.1+1** kanban rehouse) | [Task](epics/epic-21/story-01-language-selection-at-setup/T01-add-language-selection-prompt-to-template-setup-github-templ.md) | [Story](epics/epic-21/story-01-language-selection-at-setup.md) | [FR-006](fr-br/FR-006-localization-language-selection-uk-us-english.md) | —No IPP— | Last modified: 2026-06-06 17:13 UTC
+
+- **E21:S01:T02** – Add language selection prompt to CLI tool (`ai-dev-kit init`) - 📋 TODO (MEDIUM, FR-006 Phase 1) | [Task](epics/epic-21/story-01-language-selection-at-setup/T02-add-language-selection-prompt-to-cli-tool-ai-dev-kit-init.md) | [Story](epics/epic-21/story-01-language-selection-at-setup.md) | [FR-006](fr-br/FR-006-localization-language-selection-uk-us-english.md) | —No IPP— | Last modified: 2026-06-05 05:07 UTC
+
+- **E21:S01:T03** – Add language selection prompt to RW Installer (`install_release_workflow.py`) - 📋 TODO (MEDIUM, FR-006 Phase 1) | [Task](epics/epic-21/story-01-language-selection-at-setup/T03-add-language-selection-prompt-to-rw-installer-install-releas.md) | [Story](epics/epic-21/story-01-language-selection-at-setup.md) | [FR-006](fr-br/FR-006-localization-language-selection-uk-us-english.md) | —No IPP— | Last modified: 2026-06-05 05:08 UTC
+
+- **E21:S01:T04** – Create UK/US English content variants (documentation, templates) - 📋 TODO (MEDIUM, FR-006 Phase 1) | [Task](epics/epic-21/story-01-language-selection-at-setup/T04-create-ukus-english-content-variants-documentation-templates.md) | [Story](epics/epic-21/story-01-language-selection-at-setup.md) | [FR-006](fr-br/FR-006-localization-language-selection-uk-us-english.md) | —No IPP— | Last modified: 2026-06-05 05:09 UTC
+
+- **E21:S01:T05** – Implement configuration persistence (`ai-dev-kit-config.yaml`) - 📋 TODO (MEDIUM, FR-006 Phase 1) | [Task](epics/epic-21/story-01-language-selection-at-setup/T05-implement-configuration-persistence-ai-dev-kit-configyaml.md) | [Story](epics/epic-21/story-01-language-selection-at-setup.md) | [FR-006](fr-br/FR-006-localization-language-selection-uk-us-english.md) | —No IPP— | Last modified: 2026-06-05 05:10 UTC
+
+- **E21:S01:T06** – Update content generation to use language preference (RW, templates) - 📋 TODO (MEDIUM, FR-006 Phase 1) | [Task](epics/epic-21/story-01-language-selection-at-setup/T06-update-content-generation-to-use-language-preference-rw-temp.md) | [Story](epics/epic-21/story-01-language-selection-at-setup.md) | [FR-006](fr-br/FR-006-localization-language-selection-uk-us-english.md) | —No IPP— | Last modified: 2026-06-05 05:11 UTC
+
+- **E21:S01:T07** – Test UK/US English selection and content generation - 📋 TODO (MEDIUM, FR-006 Phase 1) | [Task](epics/epic-21/story-01-language-selection-at-setup/T07-test-ukus-english-selection-and-content-generation.md) | [Story](epics/epic-21/story-01-language-selection-at-setup.md) | [FR-006](fr-br/FR-006-localization-language-selection-uk-us-english.md) | —No IPP— | Last modified: 2026-06-05 05:12 UTC
 
 ### Ongoing (O) - Perpetual Tasks
 
