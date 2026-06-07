@@ -10,18 +10,22 @@ housekeeping_policy: keep
 
 Phase 1 MVP locale corpus for **en-GB** (default) and **en-US**. Selection is stored in project-root `ai-dev-kit-config.yaml` (see T01–T03).
 
-## Layout
+## Layout (manifest v2 — E21:S02:T02)
 
 ```text
 locales/
-  manifest.yaml       # Stable keys → relative paths per locale
+  manifest.yaml       # v2: supported_locales + stable keys → paths per locale
   en-GB/
-    templates/        # UK English variants
+    templates/        # Whole-file markdown intake templates
     docs/
+    keys/             # YAML key catalogs (cli.yaml, errors.yaml)
   en-US/
-    templates/        # US English variants
+    templates/
     docs/
+    keys/
 ```
+
+**Conventions:** [locale-file-structure-conventions.md](../../../../docs/governance/standards/locale-file-structure-conventions.md)
 
 Canonical templates under `packages/frameworks/kanban/templates/` remain the **compatibility fallback**. Intake tooling resolves locale paths via `resolve_kanban_intake_template(project_root, key)` (E21:S01:T06).
 
@@ -67,17 +71,18 @@ RW installer scaffolds live in `packages/frameworks/workflow-mgt/locales/`.
 | Task | Change to this tree |
 | ---- | ------------------- |
 | E21:S02:T01 | Decision only — **IPW complete** |
-| E21:S02:T02 | Add `keys/` dirs, additional locale codes, manifest v2 |
+| E21:S02:T02 | Manifest v2 + `keys/` scaffold (en-GB/en-US) — **IPW complete** |
 | E21:S02:T06 | `resolve_locale_key()` for `locales/{lang}/keys/*.yaml` |
 | E21:S02:T07 | Extended fallback chain |
 
-Planning: [IPP-E21S02T01](../../../../docs/implementation-cycles/IPP-E21S02T01-choose-i18n-framework.md)
+Planning: [IPP-E21S02T01](../../../../docs/implementation-cycles/IPP-E21S02T01-choose-i18n-framework.md) · [IPP-E21S02T02](../../../../docs/implementation-cycles/IPP-E21S02T02-locale-file-structure.md)
 
 ## Test matrix (FR-006 Phase 1)
 
 | Layer | Module | IDs |
 | ----- | ------ | --- |
 | Corpus | `tests/test_locale_content_manifest.py` | T1–T7 |
+| Structure v2 | `tests/test_locale_structure_v2.py` | V1–V8 |
 | Read/resolve | `tests/test_localisation_config_read_resolve.py` | T1–T10 |
 | RW selection | `tests/test_install_release_workflow_localisation.py` | T1–T9 |
 | CLI init | `tests/test_commands.py` (`TestInitCommand`) | T1–T8 |

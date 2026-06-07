@@ -1,0 +1,10 @@
+_meta:
+  domain: cli
+  locale: en-US
+keys:
+  cli.prompt.language_choice: "Select your preferred English variant:"
+  cli.prompt.language_uk: "[1] UK English (en-GB) — colour, organise, realize  [default]"
+  cli.prompt.language_us: "[2] US English (en-US) — color, organize, realize"
+  cli.prompt.enter_choice: "Enter choice [1-2]:"
+  cli.config.using_existing: "Using existing localisation config: {{path}}"
+  cli.config.saved: "Language preference saved: {{language}} ({{variant}})"

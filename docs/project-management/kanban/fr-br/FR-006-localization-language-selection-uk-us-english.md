@@ -22,7 +22,7 @@ housekeeping_policy: keep
 
 **Phase 2 host story:** [E21:S02](../epics/epic-21/story-02-internationalisation-infrastructure.md) (T01–T07)
 
-**Phase 2 implementing tasks:** [E21:S02:T01](../epics/epic-21/story-02-internationalisation-infrastructure/T01-choose-i18n-frameworklibrary.md) **v0.21.2.1+1** COMPLETE ([ADR-024](../../architecture/standards-and-adrs/ADR-024-i18n-framework-strategy.md) C1 hybrid) · E21:S02:T02–T07 TODO
+**Phase 2 implementing tasks:** [E21:S02:T01](../epics/epic-21/story-02-internationalisation-infrastructure/T01-choose-i18n-frameworklibrary.md) **v0.21.2.1+1** COMPLETE ([ADR-024](../../architecture/standards-and-adrs/ADR-024-i18n-framework-strategy.md) C1 hybrid) · [E21:S02:T02](../epics/epic-21/story-02-internationalisation-infrastructure/T02-set-up-translation-file-structure-localeslang.md) **v0.21.2.2+1** COMPLETE (manifest v2 + keys scaffold) · E21:S02:T03–T07 TODO
 
 ---
 

@@ -1,14 +1,32 @@
-version: 1
+version: 2
 default_locale: en-GB
 framework: workflow-mgt
+supported_locales:
+  - en-GB
+  - en-US
+  - es
+  - fr
+  - de
+  - zh-CN
+  - zh-TW
+  - ja
+  - pt
+  - ru
+  - ar
 locales:
   en-GB:
     scaffolds:
       changelog_stub: scaffolds/changelog_stub.md
       version_scaffold_decline: scaffolds/version_scaffold_decline.txt
       changelog_scaffold_decline: scaffolds/changelog_scaffold_decline.txt
+    keys:
+      cli: keys/cli.yaml
+      errors: keys/errors.yaml
   en-US:
     scaffolds:
       changelog_stub: scaffolds/changelog_stub.md
       version_scaffold_decline: scaffolds/version_scaffold_decline.txt
       changelog_scaffold_decline: scaffolds/changelog_scaffold_decline.txt
+    keys:
+      cli: keys/cli.yaml
+      errors: keys/errors.yaml

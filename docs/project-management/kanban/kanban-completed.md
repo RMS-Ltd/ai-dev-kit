@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Completed Tasks
 
-**Last Updated:** 2026-06-07 (RW: E21:S02:T01 ADR-024 i18n framework)
-**Version:** v0.21.2.1+1
+**Last Updated:** 2026-06-07 (RW: E21:S02:T02 locale manifest v2)
+**Version:** v0.21.2.2+1
 
 > **For MoSCOW prioritized tasks, see:** [`kboard.md`](kboard.md)  
 > **For completed FR/BR/UXR intake items, see:** [`intake-completed.md`](intake-completed.md)
@@ -19,6 +19,10 @@ housekeeping_policy: keep
 ---
 
 ## 20 Most Recently Completed Tasks
+
+#### **RW (2026-06-07)** — E21:S02:T02 @ **v0.21.2.2+1** (locale manifest v2 + keys scaffold)
+
+- **[E21:S02:T02](epics/epic-21/story-02-internationalisation-infrastructure/T02-set-up-translation-file-structure-localeslang.md)** — Manifest v2, en-GB/en-US `keys/` catalogs, `supported_locales` registry, structure conventions policy.
 
 #### **RW (2026-06-07)** — E21:S02:T01 @ **v0.21.2.1+1** (ADR-024 i18n framework C1 hybrid)
 

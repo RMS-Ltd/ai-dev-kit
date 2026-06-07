@@ -12,7 +12,7 @@ housekeeping_policy: keep
 **Priority:** MEDIUM  
 **Estimated Effort:** [TBD]  
 **Created:** 2025-12-09  
-**Last updated:** 2026-06-07 (v0.21.2.1+1 — E21:S02:T01 COMPLETE; ADR-024)  
+**Last updated:** 2026-06-07 (v0.21.2.2+1 — E21:S02:T02 COMPLETE; manifest v2)  
 **Branch:** `epic/21-internationalisation-localisation`  
 **Version Schema:** `0.21.S.T+B`  
 **Production URL:** [N/A for this repo]
@@ -25,9 +25,9 @@ housekeeping_policy: keep
   - Story: [`story-01-language-selection-at-setup.md`](story-01-language-selection-at-setup.md)
   - Tasks: T01–T07 COMPLETE
 
-- [ ] **E21:S02 – Internationalisation Infrastructure** - IN PROGRESS (v0.21.2.1+1 — T01 COMPLETE)
+- [ ] **E21:S02 – Internationalisation Infrastructure** - IN PROGRESS (v0.21.2.2+1 — T01–T02 COMPLETE)
   - Story: [`story-02-internationalisation-infrastructure.md`](story-02-internationalisation-infrastructure.md)
-  - Tasks: T01 COMPLETE; T02–T07 TODO
+  - Tasks: T01–T02 COMPLETE; T03–T07 TODO
 
 - [ ] **E21:S03 – Translation and Localisation** - TODO (v0.21.3.0+0)
   - Story: [`story-03-translation-and-localisation.md`](story-03-translation-and-localisation.md)

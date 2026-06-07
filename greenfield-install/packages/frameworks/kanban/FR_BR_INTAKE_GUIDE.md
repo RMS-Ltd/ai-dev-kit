@@ -76,12 +76,25 @@ FR / BR / UXR arrives
 
 **Action:** Create a new report document using the appropriate template (same session will add the task—do not stop here).
 
+**Locale-aware templates (FR-006 Phase 1):** When `ai-dev-kit-config.yaml` exists, resolve the template path from the project language before copying:
+
+```python
+from pathlib import Path
+from cli.localisation import resolve_kanban_intake_template
+
+project_root = Path(".")  # adopter project root
+fr_template = resolve_kanban_intake_template(project_root, "fr")
+# Keys: fr, br, uxr, fb, task, story, epic, plan_doc
+```
+
+Falls back to `packages/frameworks/kanban/templates/` when locale files are absent.
+
 **For Feature Requests:**
-- Use `FR_TEMPLATE.md`
+- Use locale-resolved `FR_TEMPLATE.md` (see above) or canonical `FR_TEMPLATE.md`
 - Location: `docs/project-management/kanban/fr-br/FR-XXX-[title].md` (or project-specific location)
 
 **For Bug Reports:**
-- Use `BR_TEMPLATE.md`
+- Use locale-resolved `BR_TEMPLATE.md` or canonical `BR_TEMPLATE.md`
 - Location: `docs/project-management/kanban/fr-br/BR-XXX-[title].md` (or project-specific location)
 
 **For UXR (where used):**

@@ -1,6 +1,18 @@
-version: 1
+version: 2
 default_locale: en-GB
 framework: kanban
+supported_locales:
+  - en-GB
+  - en-US
+  - es
+  - fr
+  - de
+  - zh-CN
+  - zh-TW
+  - ja
+  - pt
+  - ru
+  - ar
 locales:
   en-GB:
     templates:
@@ -14,6 +26,9 @@ locales:
       plan_doc: templates/PLAN_DOC_TEMPLATE.md
     docs:
       setup_index: docs/setup-locale-index.md
+    keys:
+      cli: keys/cli.yaml
+      errors: keys/errors.yaml
   en-US:
     templates:
       fr: templates/FR_TEMPLATE.md
@@ -26,3 +41,6 @@ locales:
       plan_doc: templates/PLAN_DOC_TEMPLATE.md
     docs:
       setup_index: docs/setup-locale-index.md
+    keys:
+      cli: keys/cli.yaml
+      errors: keys/errors.yaml
