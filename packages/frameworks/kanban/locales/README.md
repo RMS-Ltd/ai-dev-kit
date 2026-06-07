@@ -60,6 +60,19 @@ Implemented in [`localisation_config.py`](../../workflow-mgt/scripts/localisatio
 
 RW installer scaffolds live in `packages/frameworks/workflow-mgt/locales/`.
 
+## Phase 2 roadmap (FR-006 international)
+
+**Strategy:** [ADR-024](../../../../docs/architecture/standards-and-adrs/ADR-024-i18n-framework-strategy.md) — **C1 hybrid** (manifest + whole-file markdown retained; YAML key catalogs added in S02:T06; manifest v2 in S02:T02).
+
+| Task | Change to this tree |
+| ---- | ------------------- |
+| E21:S02:T01 | Decision only — **IPW complete** |
+| E21:S02:T02 | Add `keys/` dirs, additional locale codes, manifest v2 |
+| E21:S02:T06 | `resolve_locale_key()` for `locales/{lang}/keys/*.yaml` |
+| E21:S02:T07 | Extended fallback chain |
+
+Planning: [IPP-E21S02T01](../../../../docs/implementation-cycles/IPP-E21S02T01-choose-i18n-framework.md)
+
 ## Test matrix (FR-006 Phase 1)
 
 | Layer | Module | IDs |
@@ -86,4 +99,6 @@ Plus `tests/test_commands.py` init localisation tests (see `TestInitCommand`).
 ## References
 
 - [FR-006](../../../../docs/project-management/kanban/fr-br/FR-006-localization-language-selection-uk-us-english.md)
+- [ADR-024](../../../../docs/architecture/standards-and-adrs/ADR-024-i18n-framework-strategy.md)
+- [IPP-E21S02T01](../../../../docs/implementation-cycles/IPP-E21S02T01-choose-i18n-framework.md)
 - [IPP-E21S01T04](../../../../docs/implementation-cycles/IPP-E21S01T04-ukus-content-variants-mvp.md)

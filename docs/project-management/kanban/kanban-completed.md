@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Completed Tasks
 
-**Last Updated:** 2026-06-07 (RW: E21:S01:T07 FR-006 Phase 1 E2E tests)
-**Version:** v0.21.1.7+1
+**Last Updated:** 2026-06-07 (RW: E21:S02:T01 ADR-024 i18n framework)
+**Version:** v0.21.2.1+1
 
 > **For MoSCOW prioritized tasks, see:** [`kboard.md`](kboard.md)  
 > **For completed FR/BR/UXR intake items, see:** [`intake-completed.md`](intake-completed.md)
@@ -19,6 +19,10 @@ housekeeping_policy: keep
 ---
 
 ## 20 Most Recently Completed Tasks
+
+#### **RW (2026-06-07)** — E21:S02:T01 @ **v0.21.2.1+1** (ADR-024 i18n framework C1 hybrid)
+
+- **[E21:S02:T01](epics/epic-21/story-02-internationalisation-infrastructure/T01-choose-i18n-frameworklibrary.md)** — i18n framework selection: evaluation matrix, ADR-024, IPP, S02:T02–T07 integration handoffs.
 
 #### **RW (2026-06-07)** — E21:S01:T07 @ **v0.21.1.7+1** (FR-006 Phase 1 E2E tests)
 

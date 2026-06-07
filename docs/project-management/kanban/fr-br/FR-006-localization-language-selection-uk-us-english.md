@@ -20,6 +20,10 @@ housekeeping_policy: keep
 
 **Implementing tasks (kanban anchors):** [E21:S01:T01](../epics/epic-21/story-01-language-selection-at-setup/T01-add-language-selection-prompt-to-template-setup-github-templ.md) **v0.21.1.1+2** COMPLETE (template Step 0) · [E21:S01:T02](../epics/epic-21/story-01-language-selection-at-setup/T02-add-language-selection-prompt-to-cli-tool-ai-dev-kit-init.md) **v0.21.1.2+1** COMPLETE (CLI init) · [E21:S01:T03](../epics/epic-21/story-01-language-selection-at-setup/T03-add-language-selection-prompt-to-rw-installer-install-releas.md) **v0.21.1.3+1** COMPLETE (RW installer) · [E21:S01:T04](../epics/epic-21/story-01-language-selection-at-setup/T04-create-ukus-english-content-variants-documentation-templates.md) **v0.21.1.4+1** COMPLETE (locale corpus MVP) · [E21:S01:T05](../epics/epic-21/story-01-language-selection-at-setup/T05-implement-configuration-persistence-ai-dev-kit-configyaml.md) **v0.21.1.5+1** COMPLETE (read/resolve API) · [E21:S01:T06](../epics/epic-21/story-01-language-selection-at-setup/T06-update-content-generation-to-use-language-preference-rw-temp.md) **v0.21.1.6+1** COMPLETE (content generation locale wiring) · [E21:S01:T07](../epics/epic-21/story-01-language-selection-at-setup/T07-test-ukus-english-selection-and-content-generation.md) **v0.21.1.7+1** COMPLETE (Phase 1 E2E tests; E21:S01 story closed)
 
+**Phase 2 host story:** [E21:S02](../epics/epic-21/story-02-internationalisation-infrastructure.md) (T01–T07)
+
+**Phase 2 implementing tasks:** [E21:S02:T01](../epics/epic-21/story-02-internationalisation-infrastructure/T01-choose-i18n-frameworklibrary.md) **v0.21.2.1+1** COMPLETE ([ADR-024](../../architecture/standards-and-adrs/ADR-024-i18n-framework-strategy.md) C1 hybrid) · E21:S02:T02–T07 TODO
+
 ---
 
 ## Summary
