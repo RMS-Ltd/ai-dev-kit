@@ -9,6 +9,14 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.2.16.10+6] - 07-06-26
+
+E02:S16:T10 — **Change implemented:** Post-FR-114 PR merge infrastructure — version re-anchor on `dev` after PR #37 squash merge; `epic/5-documentation-management` branch removed; release tags confirmed on remote. SemVer **v0.4.1036+6**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.16.10+6.md)
+
+---
+
 ## [0.5.8.4+3] - 07-06-26
 
 E05:S08:T04 — **Change implemented:** FR-114 IMPLEMENTED closure — acceptance criteria reconciled, intake-completed ledger, epic story checklists synced; portal build verified green. SemVer **v0.4.1035+3**.

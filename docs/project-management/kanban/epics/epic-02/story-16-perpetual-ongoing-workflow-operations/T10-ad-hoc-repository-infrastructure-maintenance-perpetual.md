@@ -13,14 +13,14 @@ housekeeping_policy: keep
 **Priority:** MEDIUM
 **Estimated Effort:** Small
 **Created:** 2026-05-19
-**Last updated:** 2026-06-04 22:55:49 UTC (v0.2.16.10+5: portal npm security overrides — uuid 11.1.1, serialize-javascript 7.0.5)
-**Version:** v0.2.16.10+5
+**Last updated:** 2026-06-07 17:00:43 UTC (v0.2.16.10+6: post-FR-114 PR merge infrastructure — version re-anchor, epic/5 branch cleanup)
+**Version:** v0.2.16.10+6
 **Code:** E02S16T10
 **Task Type:** Perpetual Maintenance
 
-**Forensic Marker:** v0.2.16.10+5
+**Forensic Marker:** v0.2.16.10+6
 
-**Version Anchor:** v0.2.16.10+5 (perpetual — portal npm security overrides)
+**Version Anchor:** v0.2.16.10+6 (perpetual — post-FR-114 PR merge infrastructure)
 
 ---
 
