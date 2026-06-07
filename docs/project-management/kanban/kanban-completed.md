@@ -8,7 +8,7 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Completed Tasks
 
-**Last Updated:** 2026-06-07 (RW: E08:S03:T12 re-close)
+**Last Updated:** 2026-06-07 (RW: E08:S03:T12 re-close; merge spike E02:S17)
 **Version:** v0.8.3.12+13
 
 > **For MoSCOW prioritized tasks, see:** [`kboard.md`](kboard.md)  
@@ -25,15 +25,45 @@ housekeeping_policy: keep
 - **[E08:S03:T12](epics/epic-08/story-03-automation-scripts/T12-code-quality-maintainability-backlog-br099.md)** — **BR-099**: Re-closed @ **+13** — four-surface RW reconciliation; consolidates dashboard **Good** @ +11 and local CQG @ +12; handoff **T16** perpetual.
   **Completed:** `2026-06-07T18:06:22Z` | **Version:** `v0.8.3.12+13` | **Agent:** `RW E08:S03:T12 --art` | [BR-099](fr-br/BR-099-code-quality-maintainability-backlog.md) | [—IPP—](../../implementation-cycles/IPP-E08S03T12-code-quality-maintainability-backlog-br099.md)
 
+#### **RW (2026-06-07)** — E02:S16:T10 @ **v0.2.16.10+8** (E02:S17 integration sign-off)
+
+- **[E02:S16:T10](epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T10-ad-hoc-repository-infrastructure-maintenance-perpetual.md)** — Integration test report + wave artifacts (91/91 pytest); spike → dev PR.
+  **Completed:** `2026-06-07T19:27:03Z` | **Version:** `v0.2.16.10+8` | **Agent:** `RW E02:S16:T10 --art` | [integration report](epics/epic-02/story-17-rw-semver-characterization-and-release-state-sqlite/integration-test-report-2026-06-07.md)
+
+#### **RW (2026-06-07)** — E02:S17:T06 @ **v0.2.17.6+1** (high-stress + friction report)
+
+- **[E02:S17:T06](epics/epic-02/story-17-rw-semver-characterization-and-release-state-sqlite/T06-high-stress-scenarios-and-rw-friction-report.md)** — 7 high-stress scenarios, friction report (9 patterns), matrix v2.
+  **Completed:** `2026-06-07T18:32:30Z` | **Version:** `v0.2.17.6+1` | **Agent:** `RW E02:S17:T06 --art` | [friction report](epics/epic-02/story-17-rw-semver-characterization-and-release-state-sqlite/rw-semver-friction-report.md) | [Story](epics/epic-02/story-17-rw-semver-characterization-and-release-state-sqlite.md)
+
+#### **RW (2026-06-07)** — E02:S17:T05 @ **v0.2.17.5+1** (parity replay on SQLite)
+
+- **[E02:S17:T05](epics/epic-02/story-17-rw-semver-characterization-and-release-state-sqlite/T05-parity-replay-scenario-matrix-on-sqlite.md)** — Parity replay: 32 scenario IDs, parity harness, run log + diff report; 65 pytest; zero unexplained mismatches.
+  **Completed:** `2026-06-07T18:27:36Z` | **Version:** `v0.2.17.5+1` | **Agent:** `RW E02:S17:T05 --art` | [Story](epics/epic-02/story-17-rw-semver-characterization-and-release-state-sqlite.md) | [parity-run-log](epics/epic-02/story-17-rw-semver-characterization-and-release-state-sqlite/parity-run-log.md)
+
 #### **RW (2026-06-07)** — E01:S06:T02 @ **v0.1.6.2+1** (FR-117 MIT LICENSE file and repository legal metadata)
 
 - **[E01:S06:T02](epics/epic-01/story-06-repository-ci-cd-setup/T02-mit-license-file-and-repository-legal-metadata-fr117.md)** — **FR-117**: Root MIT `LICENSE`; README and CONTRIBUTING legal metadata aligned.
   **Completed:** `2026-06-07T17:56:44Z` | **Version:** `v0.1.6.2+1` | **Agent:** `RW E01:S06:T02 --art` | [FR-117](fr-br/FR-117-mit-license-file-and-repository-legal-metadata.md)
 
+#### **RW (2026-06-07)** — E02:S17:T04 @ **v0.2.17.4+2** (SQLite release-state backend)
+
+- **[E02:S17:T04](epics/epic-02/story-17-rw-semver-characterization-and-release-state-sqlite/T04-implement-sqlite-changelog-semver-registry-backend.md)** — SQLite release-state module, dual-backend wiring, AC1–AC4 (49 pytest).
+  **Completed:** `2026-06-07T18:01:33Z` | **Version:** `v0.2.17.4+2` | **Agent:** `RW` | [Story](epics/epic-02/story-17-rw-semver-characterization-and-release-state-sqlite.md) | [—IPP—](../../implementation-cycles/IPP-E02S17T03-sqlite-release-state-schema.md)
+
 #### **RW (2026-06-07)** — E08:S03:T12 @ **v0.8.3.12+11** (BR-099 maintainability closure — dashboard Good)
 
 - **[E08:S03:T12](epics/epic-08/story-03-automation-scripts/T12-code-quality-maintainability-backlog-br099.md)** — **BR-099**: Maintainability backlog burn-down waves 1–6; operator sign-off **Good** @ `main` `ed379ab`; handoff **T16** perpetual.
   **Completed:** `2026-06-07T17:33:00Z` | **Version:** `v0.8.3.12+11` | **Agent:** `RW E08:S03:T12 --art` | [BR-099](fr-br/BR-099-code-quality-maintainability-backlog.md) | [—IPP—](../../implementation-cycles/IPP-E08S03T12-code-quality-maintainability-backlog-br099.md)
+
+#### **RW (2026-06-07)** — E02:S17:T02 @ **v0.2.17.2+5** (baseline Waves 1–4 complete)
+
+- **[E02:S17:T02](epics/epic-02/story-17-rw-semver-characterization-and-release-state-sqlite/T02-baseline-characterization-runs-legacy-md-yaml.md)** — Legacy MD/YAML baseline characterization: 4 waves, 35 pytest checks, 9 friction patterns, 21/24 DET scenarios (87.5%).
+  **Completed:** `2026-06-07T17:50:00Z` | **Version:** `v0.2.17.2+5` | **Agent:** `RW` | [Story](epics/epic-02/story-17-rw-semver-characterization-and-release-state-sqlite.md)
+
+#### **RW (2026-06-07)** — E02:S17:T01 @ **v0.2.17.1+2** (scenario matrix + run-log schema)
+
+- **[E02:S17:T01](epics/epic-02/story-17-rw-semver-characterization-and-release-state-sqlite/T01-rw-ipw-scenario-matrix-and-run-log-schema.md)** — RW/IPW scenario matrix (28 scenarios), run-log schema, baseline log seed.
+  **Completed:** `2026-06-07T17:22:50Z` | **Version:** `v0.2.17.1+2` | **Agent:** `RW` | [Story](epics/epic-02/story-17-rw-semver-characterization-and-release-state-sqlite.md)
 
 #### **RW (2026-06-07)** — E02:S01:T25 @ **v0.2.1.25+1** (FR-115+FR-116 async release-metadata ingest v1)
 

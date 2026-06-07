@@ -69,6 +69,8 @@ def test_finalize_skipped_for_registry_strategy(tmp_path, monkeypatch):
         "load_rw_config",
         lambda: {"semver_mapping_strategy": "registry"},
     )
+    monkeypatch.setattr(semver_converter, "get_semver_mapping_strategy", lambda: "registry")
+    monkeypatch.setattr(frsr, "get_semver_mapping_strategy", lambda: "registry")
     payload = frsr.finalize_rw_semver_registry("0.2.13.4+1")
     assert payload["skipped"] is True
     assert "not task_touch" in payload["reason"]
