@@ -34,13 +34,29 @@ prompt_language_choice = _mod.prompt_language_choice
 resolve_language_from_args = _mod.resolve_language_from_args
 write_localisation_config = _mod.write_localisation_config
 ensure_localisation_config = _mod.ensure_localisation_config
+read_localisation_config = _mod.read_localisation_config
+resolve_language = _mod.resolve_language
+normalize_language = _mod.normalize_language
+load_locale_manifest = _mod.load_locale_manifest
+resolve_locale_asset = _mod.resolve_locale_asset
+default_frameworks_root = _mod.default_frameworks_root
+kanban_locales_root = _mod.kanban_locales_root
+workflow_locales_root = _mod.workflow_locales_root
 
 __all__ = [
     "DEFAULT_LANGUAGE",
     "LOCALE_VARIANTS",
     "LOCALISATION_CONFIG_FILENAME",
+    "default_frameworks_root",
     "ensure_localisation_config",
+    "kanban_locales_root",
+    "load_locale_manifest",
+    "normalize_language",
     "prompt_language_choice",
+    "read_localisation_config",
+    "resolve_language",
     "resolve_language_from_args",
+    "resolve_locale_asset",
+    "workflow_locales_root",
     "write_localisation_config",
 ]

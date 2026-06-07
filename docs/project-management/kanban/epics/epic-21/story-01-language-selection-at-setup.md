@@ -12,8 +12,8 @@ housekeeping_policy: keep
 **Priority:** MEDIUM  
 **Estimated Effort:** [TBD]  
 **Created:** 2025-12-09  
-**Last updated:** 2026-06-07 (v0.21.1.4+1 — T04 UK/US locale content MVP)  
-**Version:** v0.21.1.4+1  
+**Last updated:** 2026-06-07 (v0.21.1.5+1 — T05 config read locale resolution)  
+**Version:** v0.21.1.5+1  
 **Code:** E21S01
 
 ---
@@ -40,7 +40,7 @@ Make language selection the first step in all setup processes, allowing users to
   - Task: [`T03-add-language-selection-prompt-to-rw-installer-install-releas`](story-01-language-selection-at-setup/T03-add-language-selection-prompt-to-rw-installer-install-releas.md)
 - [x] **E21:S01:T04 – Create UK/US English content variants (documentation, templates)** - COMPLETE (v0.21.1.4+1)
   - Task: [`T04-create-ukus-english-content-variants-documentation-templates`](story-01-language-selection-at-setup/T04-create-ukus-english-content-variants-documentation-templates.md)
-- [ ] **E21:S01:T05 – Implement configuration persistence (`ai-dev-kit-config.yaml`)** - TODO
+- [x] **E21:S01:T05 – Implement configuration persistence (`ai-dev-kit-config.yaml`)** - COMPLETE (v0.21.1.5+1)
   - Task: [`T05-implement-configuration-persistence-ai-dev-kit-configyaml`](story-01-language-selection-at-setup/T05-implement-configuration-persistence-ai-dev-kit-configyaml.md)
 - [ ] **E21:S01:T06 – Update content generation to use language preference (RW, templates)** - TODO
   - Task: [`T06-update-content-generation-to-use-language-preference-rw-temp`](story-01-language-selection-at-setup/T06-update-content-generation-to-use-language-preference-rw-temp.md)

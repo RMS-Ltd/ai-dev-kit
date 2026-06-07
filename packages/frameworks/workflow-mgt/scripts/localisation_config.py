@@ -1,14 +1,16 @@
 """
-Language/localisation helpers for workflow-mgt installers (E21:S01:T03 / FR-006 Phase 1).
+Language/localisation helpers for workflow-mgt installers (FR-006 Phase 1).
 
-Persists UK/US English preference to ai-dev-kit-config.yaml (separate from rw-config.yaml).
+Write path: E21:S01:T02/T03 (ai-dev-kit-config.yaml).
+Read/resolve: E21:S01:T05 (manifest asset paths for T06 wiring).
+
 Vendored with install_release_workflow.py for adopter projects.
 """
 
 from __future__ import annotations
 
 from pathlib import Path
-from typing import Dict, Optional
+from typing import Any, Dict, List, Optional
 
 import yaml
 
@@ -87,3 +89,151 @@ def ensure_localisation_config(
     print(f"✅ Language preference saved: {locale['language']} ({locale['variant']})")
     print(f"   Localisation config: {written}")
     return written
+
+
+def _default_locale_dict() -> Dict[str, str]:
+    return LOCALE_VARIANTS[DEFAULT_LANGUAGE].copy()
+
+
+def normalize_language(language: Optional[str]) -> str:
+    """Return supported language code or DEFAULT_LANGUAGE."""
+    if language in LOCALE_VARIANTS:
+        return language
+    return DEFAULT_LANGUAGE
+
+
+def read_localisation_config(project_root: Path) -> Dict[str, str]:
+    """
+    Read localisation dict from ai-dev-kit-config.yaml.
+
+    Returns default en-GB/UK when file is missing, empty, or invalid.
+    """
+    config_path = project_root / LOCALISATION_CONFIG_FILENAME
+    if not config_path.is_file():
+        return _default_locale_dict()
+
+    try:
+        with open(config_path, encoding="utf-8") as handle:
+            payload = yaml.safe_load(handle) or {}
+    except (OSError, yaml.YAMLError):
+        return _default_locale_dict()
+
+    localisation = payload.get("localisation")
+    if not isinstance(localisation, dict):
+        return _default_locale_dict()
+
+    language = normalize_language(localisation.get("language"))
+    variant = LOCALE_VARIANTS[language]["variant"]
+    return {"language": language, "variant": variant}
+
+
+def resolve_language(
+    project_root: Path,
+    *,
+    override: Optional[str] = None,
+) -> str:
+    """Effective language: override > config file > DEFAULT_LANGUAGE."""
+    if override is not None:
+        return normalize_language(override)
+    return read_localisation_config(project_root)["language"]
+
+
+def load_locale_manifest(manifest_path: Path) -> Dict[str, Any]:
+    """Load and validate locale manifest.yaml."""
+    if not manifest_path.is_file():
+        raise FileNotFoundError(f"Locale manifest not found: {manifest_path}")
+
+    with open(manifest_path, encoding="utf-8") as handle:
+        manifest = yaml.safe_load(handle) or {}
+
+    if not isinstance(manifest, dict):
+        raise ValueError(f"Invalid manifest (not a mapping): {manifest_path}")
+    if "locales" not in manifest or not isinstance(manifest["locales"], dict):
+        raise ValueError(f"Manifest missing 'locales' mapping: {manifest_path}")
+    return manifest
+
+
+def _manifest_relative_path(
+    manifest: Dict[str, Any],
+    *,
+    language: str,
+    category: str,
+    key: str,
+) -> Optional[str]:
+    locale_block = manifest.get("locales", {}).get(language)
+    if not isinstance(locale_block, dict):
+        return None
+    category_block = locale_block.get(category)
+    if not isinstance(category_block, dict):
+        return None
+    rel = category_block.get(key)
+    return rel if isinstance(rel, str) and rel.strip() else None
+
+
+def _language_fallback_chain(
+    manifest: Dict[str, Any],
+    preferred: str,
+) -> List[str]:
+    default_locale = manifest.get("default_locale", DEFAULT_LANGUAGE)
+    chain: List[str] = []
+    for candidate in (preferred, default_locale, DEFAULT_LANGUAGE):
+        normalized = normalize_language(candidate)
+        if normalized not in chain:
+            chain.append(normalized)
+    return chain
+
+
+def resolve_locale_asset(
+    locales_root: Path,
+    *,
+    category: str,
+    key: str,
+    language: Optional[str] = None,
+    project_root: Optional[Path] = None,
+    fallback_path: Optional[Path] = None,
+) -> Path:
+    """
+    Resolve a manifest entry to an existing locale file path.
+
+    Fallback order: language chain from manifest -> optional fallback_path.
+    """
+    manifest_path = locales_root / "manifest.yaml"
+    manifest = load_locale_manifest(manifest_path)
+
+    if language is None:
+        if project_root is None:
+            language = manifest.get("default_locale", DEFAULT_LANGUAGE)
+        else:
+            language = resolve_language(project_root)
+
+    for lang in _language_fallback_chain(manifest, language):
+        rel = _manifest_relative_path(manifest, language=lang, category=category, key=key)
+        if rel is None:
+            continue
+        candidate = (locales_root / lang / rel).resolve()
+        if candidate.is_file():
+            return candidate
+
+    if fallback_path is not None and fallback_path.is_file():
+        return fallback_path.resolve()
+
+    raise FileNotFoundError(
+        f"Locale asset not found: {locales_root} category={category!r} key={key!r} "
+        f"language={language!r}"
+    )
+
+
+def default_frameworks_root() -> Path:
+    """Discover packages/frameworks relative to this script (vendored layout)."""
+    # .../packages/frameworks/workflow-mgt/scripts/localisation_config.py
+    return Path(__file__).resolve().parent.parent.parent
+
+
+def kanban_locales_root(frameworks_root: Optional[Path] = None) -> Path:
+    root = frameworks_root or default_frameworks_root()
+    return root / "kanban" / "locales"
+
+
+def workflow_locales_root(frameworks_root: Optional[Path] = None) -> Path:
+    root = frameworks_root or default_frameworks_root()
+    return root / "workflow-mgt" / "locales"

@@ -10,10 +10,10 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 ---
 
 
-## [0.21.1.4+1] - 07-06-26
+## [0.21.1.5+1] - 07-06-26
 
-E21:S01:T04 — **Change implemented:** Phase 1 UK/US locale corpus (kanban manifest + templates; RW scaffold fragments). SemVer **v0.4.1071+1**.
+E21:S01:T05 — **Change implemented:** Config read + locale asset resolution API. SemVer **v0.4.1072+1**.
 
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.21.1.4+1.md)
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.21.1.5+1.md)
 
 ---
