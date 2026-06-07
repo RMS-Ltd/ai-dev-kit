@@ -24,6 +24,8 @@ from semver_converter import (  # noqa: E402
     _ensure_task_touch_mode,
     _find_mapping_entry,
     convert_version_string,
+    get_release_state_backend,
+    get_release_state_db_path,
     get_rw_tag_info,
     get_semver_mapping_strategy,
     load_semver_registry,
@@ -52,6 +54,10 @@ def finalize_rw_semver_registry(internal_version: str) -> dict:
         created = True
 
     tag_info = get_rw_tag_info(version, finalize=False)
+    if get_release_state_backend() == "sqlite":
+        registry_path = str(get_release_state_db_path())
+    else:
+        registry_path = str(Path.cwd() / "semver-registry.yaml")
     return {
         "skipped": False,
         "created": created,
@@ -60,7 +66,7 @@ def finalize_rw_semver_registry(internal_version: str) -> dict:
         "primary_tag": tag_info["primary_tag"],
         "internal_tag": tag_info.get("internal_tag"),
         "strategy": strategy,
-        "registry_path": str(Path.cwd() / "semver-registry.yaml"),
+        "registry_path": registry_path,
     }
 
 

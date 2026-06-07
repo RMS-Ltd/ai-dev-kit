@@ -19,6 +19,7 @@ REPO_ROOT = Path(__file__).resolve().parents[2]
 SCRIPTS = REPO_ROOT / "packages/frameworks/workflow-mgt/scripts"
 VALIDATION_DIR = SCRIPTS / "validation"
 CHANGELOG_SCRIPT = SCRIPTS / "changelog" / "check_changelog_size.py"
+RW_CONFIG = REPO_ROOT / "rw-config.yaml"
 IPP_DIR = REPO_ROOT / "docs" / "implementation-cycles"
 T03_DOC = (
     REPO_ROOT
@@ -82,7 +83,11 @@ class TestWave4IPW:
 
 class TestWave4Volume:
     def test_RW_V03_changelog_exceeds_threshold(self):
-        """RW-V03: main CHANGELOG over size threshold → CMW advisory (exit 1)."""
+        """RW-V03: main CHANGELOG over size threshold → CMW advisory (exit 1).
+
+        With ``changelog_archival.mode: latest_only`` (ai-dev-kit default on dev),
+        the main CHANGELOG stays lean — threshold not exceeded (exit 0) is expected.
+        """
         assert MAIN_CHANGELOG.exists()
         r = subprocess.run(
             [sys.executable, str(CHANGELOG_SCRIPT)],
@@ -90,8 +95,15 @@ class TestWave4Volume:
             capture_output=True,
             text=True,
         )
-        assert r.returncode == 1, "expected threshold exceeded on this repo"
-        assert "EXCEEDS THRESHOLD" in r.stdout
+        cfg = yaml.safe_load(RW_CONFIG.read_text(encoding="utf-8")) if RW_CONFIG.exists() else {}
+        latest_only = (
+            cfg.get("changelog_archival", {}).get("mode") == "latest_only"
+        )
+        if latest_only:
+            assert r.returncode == 0, r.stdout + r.stderr
+        else:
+            assert r.returncode == 1, "expected threshold exceeded on this repo"
+            assert "EXCEEDS THRESHOLD" in r.stdout
 
     def test_RW_V04_registry_yaml_load_benchmark(self):
         """RW-V04: baseline YAML parse time for production semver-registry.yaml."""
