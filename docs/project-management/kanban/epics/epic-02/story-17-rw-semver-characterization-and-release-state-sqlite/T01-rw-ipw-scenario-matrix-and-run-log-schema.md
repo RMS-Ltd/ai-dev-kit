@@ -9,11 +9,11 @@ housekeeping_policy: keep
 # E02:S17:T01 — RW & IPW scenario matrix and run-log schema
 
 **Task ID:** E02:S17:T01  
-**Status:** IN PROGRESS  
+**Status:** ✅ COMPLETE  
 **Priority:** HIGH  
 **Estimated Effort:** Medium  
 **Created:** 2026-06-07  
-**Last updated:** 2026-06-07 (RW **v0.2.17.1+2** — scenario matrix + run-log schema)  
+**Last updated:** 2026-06-07 (RW **v0.2.17.1+2** — scenario matrix delivered)  
 **Version Anchor:** v0.2.17.1+2  
 **Code:** E02S17T01
 

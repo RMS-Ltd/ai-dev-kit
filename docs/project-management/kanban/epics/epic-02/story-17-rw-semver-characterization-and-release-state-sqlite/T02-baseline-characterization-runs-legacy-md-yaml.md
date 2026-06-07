@@ -9,12 +9,12 @@ housekeeping_policy: keep
 # E02:S17:T02 — Baseline characterization runs (legacy MD/YAML)
 
 **Task ID:** E02:S17:T02  
-**Status:** TODO  
+**Status:** IN PROGRESS  
 **Priority:** HIGH  
 **Estimated Effort:** Large  
 **Created:** 2026-06-07  
-**Last updated:** 2026-06-07  
-**Version Anchor:** v0.2.17.2+0  
+**Last updated:** 2026-06-07 (RW **v0.2.17.2+1** — Wave 1 baseline complete)  
+**Version Anchor:** v0.2.17.2+1  
 **Code:** E02S17T02
 
 Publication Status: NOT_APPLICABLE

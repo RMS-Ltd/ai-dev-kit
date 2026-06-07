@@ -9,6 +9,14 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.2.17.2+1] - 07-06-26
+
+E02:S17:T02 — **Change implemented:** Wave 1 baseline characterization — pytest harness, 8/8 scenarios PASS, pattern notes. SemVer **v0.4.1039+1**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.17.2+1.md)
+
+---
+
 ## [0.2.17.1+2] - 07-06-26
 
 E02:S17:T01 — **Change implemented:** RW/IPW scenario matrix (28 scenarios, classes A–F), run-log schema, baseline log seed. SemVer **v0.4.1038+2**.

@@ -1,0 +1,12 @@
+{
+  "rows": {
+    "E02:S17:T01": {
+      "allowed": true,
+      "reason": "RW Step 7 v0.2.17.2+1 — terminal COMPLETE row pruned; archived kanban-completed.md"
+    },
+    "E02:S17:T02": {
+      "allowed": true,
+      "reason": "RW Step 7 v0.2.17.2+1 — release-scope T02 row added"
+    }
+  }
+}

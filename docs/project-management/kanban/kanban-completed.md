@@ -20,6 +20,11 @@ housekeeping_policy: keep
 
 ## 20 Most Recently Completed Tasks
 
+#### **RW (2026-06-07)** — E02:S17:T01 @ **v0.2.17.1+2** (scenario matrix + run-log schema)
+
+- **[E02:S17:T01](epics/epic-02/story-17-rw-semver-characterization-and-release-state-sqlite/T01-rw-ipw-scenario-matrix-and-run-log-schema.md)** — RW/IPW scenario matrix (28 scenarios), run-log schema, baseline log seed.
+  **Completed:** `2026-06-07T17:22:50Z` | **Version:** `v0.2.17.1+2` | **Agent:** `RW` | [Story](epics/epic-02/story-17-rw-semver-characterization-and-release-state-sqlite.md)
+
 #### **RW (2026-06-07)** — E05:S08:T04 @ **v0.5.8.4+2** (FR-114 F4/F5 Notion-first bootstrap)
 
 - **[E05:S08:T04](epics/epic-05/story-08-knowledge-base/T04-agent-notion-first-authoring-and-bootstrap-routing-fr114.md)** — **FR-114 F4/F5**: ADR-024 three-surface model, `maintainer-kb` bootstrap track, P-NOTION-FIRST protocol, manifest documentationSurfaces, stub template canon.
