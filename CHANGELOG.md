@@ -11,10 +11,10 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
-## [0.8.3.16+3] - 08-06-26
+## [0.2.16.4+39] - 08-06-26
 
-E08:S03:T16 — **Attempted fix:** Wave 2b — **17** `py/unused-import` autofix in `release_metadata/` + mirror (`scripts/`/`tests/`). SemVer **v0.4.1057+3**.
+E02:S16:T04 — **Change implemented:** UKW -u bookkeeping — post-T16/main merge kanban sync (T15 CI verified, board metadata). SemVer **v0.4.1058+39**.
 
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.8.3.16+3.md)
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.16.4+39.md)
 
 ---

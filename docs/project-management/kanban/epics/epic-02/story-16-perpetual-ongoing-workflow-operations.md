@@ -20,7 +20,7 @@ housekeeping_policy: keep
 
 ## Tactical overview
 
-Story 016 remains the operational home for perpetual workflow work. **T04** UKW **2026-06-07** — bookkeeping sync after Epic 21 RW -k wave (37 releases: S01–S07 kanban-init @ BUILD +0); kboard E21 row version anchors; Epic-21/FR-006 reconciliation. Prior: **2026-06-06** comprehensive sync @ **v0.2.16.4+36**. Active perpetual lanes: **T03**, **T04**, **T05**, **T10**, **T14**.
+Story 016 remains the operational home for perpetual workflow work. **T04** UKW **2026-06-08** — bookkeeping @ **v0.2.16.4+39**: post-T16 Wave 2+ / `main` merge hygiene (E08:S03 T15 CI verified, T16 @ v0.8.3.16+3, kboard metadata). Prior: **2026-06-07** @ **v0.2.16.4+37** (Epic 21 kanban-init wave). Active perpetual lanes: **T03**, **T04**, **T05**, **T10**, **T14**.
 
 ---
 
@@ -37,7 +37,7 @@ Story 016 remains the operational home for perpetual workflow work. **T04** UKW 
   - Task: [`story-16-perpetual-ongoing-workflow-operations/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md`](story-16-perpetual-ongoing-workflow-operations/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md) | [FR-088](../../fr-br/FR-088-dedicated-story-for-perpetual-ongoing-tasks.md)
 
 
-- [ ] **E02:S16:T04 – Ad-hoc Kanban synchronization and hygiene (Perpetual)** - 🔄 PERPETUAL (HIGH, UKW anchor; RW **v0.2.16.4+37** — UKW -u Epic 21 wave bookkeeping)  
+- [ ] **E02:S16:T04 – Ad-hoc Kanban synchronization and hygiene (Perpetual)** - 🔄 PERPETUAL (HIGH, UKW anchor; RW **v0.2.16.4+39** — UKW -u post-T16/main merge hygiene)  
   - Task: [`story-16-perpetual-ongoing-workflow-operations/T04-ad-hoc-kanban-synchronization-and-hygiene-perpetual.md`](story-16-perpetual-ongoing-workflow-operations/T04-ad-hoc-kanban-synchronization-and-hygiene-perpetual.md) | [FR-088](../../fr-br/FR-088-dedicated-story-for-perpetual-ongoing-tasks.md)
 
 

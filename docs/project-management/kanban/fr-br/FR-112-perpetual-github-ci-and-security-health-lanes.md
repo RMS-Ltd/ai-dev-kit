@@ -13,7 +13,7 @@ housekeeping_policy: keep
 **Submitted:** 2026-06-05  
 **Submitted By:** User (via agent — CI/security ownership gap)  
 **Priority:** HIGH  
-**Status:** IN PROGRESS (T16 Wave 2b @ **v0.8.3.16+3** — `py/unused-import` autofix; Wave 2a manifest @ `4c4e9275`; T15 CI green on main)  
+**Status:** IN PROGRESS (T16 @ **v0.8.3.16+3** on `main`; T15 CI verified @ `f7d8b155`; operator dashboard verify pending for Wave 2b)  
 **Implementing Tasks:**
 - **E08:S03:T15** — [GitHub Actions CI health (Perpetual)](../epics/epic-08/story-03-automation-scripts/T15-github-actions-ci-health-perpetual-fr112.md)
 - **E08:S03:T16** — [GitHub Security & Code Quality health (Perpetual)](../epics/epic-08/story-03-automation-scripts/T16-github-security-code-quality-health-perpetual-fr112.md)

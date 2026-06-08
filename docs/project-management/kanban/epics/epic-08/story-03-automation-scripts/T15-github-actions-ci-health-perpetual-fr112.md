@@ -13,7 +13,7 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** Small (ongoing)  
 **Created:** 2026-06-05  
-**Last updated:** 2026-06-07 (**v0.8.3.15+4** — Wave 3: post-merge CI hygiene; Tests + Greenfield drift fixed; pending Actions verify)  
+**Last updated:** 2026-06-08 (UKW -u — `main` @ `f7d8b155` Actions green: Tests + Greenfield install + Code Quality push)  
 **Version Anchor:** v0.8.3.15+4  
 **Code:** E08S03T15  
 **Task Type:** Perpetual Maintenance
