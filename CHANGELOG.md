@@ -11,6 +11,14 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.7.1.12+2] - 08-06-26
+
+E07:S01:T12 — **Change implemented:** FR-118 Kanban path promotion — `docs/kanban/` live, `rw-config` + framework/greenfield rewired, rituals removed, ADR-007 updated. FR-118 IMPLEMENTED. SemVer **v0.4.11+2**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.7.1.12+2.md)
+
+---
+
 ## [0.7.1.12+1] - 08-06-26
 
 E07:S01:T12 — **Change implemented:** Kanban-init — FR-118 intake (promote `docs/kanban/`, retire `project-management/` shell); task + phased plan filed. SemVer **v0.4.12+1**.

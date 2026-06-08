@@ -95,7 +95,7 @@ This epic encompasses user management, authentication, and authorization, includ
 - Depends on Epic 10 (Data Management) for user data storage
 - *Parallel Development Candidacy:* Blocked (requires data management foundation)
 
-> Full story: `docs/project-management/kanban/epics/epic-18/story-01-user-authentication-system.md`
+> Full story: `docs/kanban/epics/epic-18/story-01-user-authentication-system.md`
 
 ---
 
@@ -133,7 +133,7 @@ This epic encompasses user management, authentication, and authorization, includ
 - Depends on Story 1 (User Authentication System)
 - *Parallel Development Candidacy:* Blocked (requires authentication foundation)
 
-> Full story: `docs/project-management/kanban/epics/epic-18/story-02-user-authorization-and-permissions.md`
+> Full story: `docs/kanban/epics/epic-18/story-02-user-authorization-and-permissions.md`
 
 ---
 
@@ -172,7 +172,7 @@ This epic encompasses user management, authentication, and authorization, includ
 - Coordinates with Epic 12 (Frontend & UI) for UI components
 - *Parallel Development Candidacy:* Blocked (requires authentication foundation)
 
-> Full story: `docs/project-management/kanban/epics/epic-18/story-03-user-profile-management.md`
+> Full story: `docs/kanban/epics/epic-18/story-03-user-profile-management.md`
 
 ---
 

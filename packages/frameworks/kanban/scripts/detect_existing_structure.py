@@ -11,7 +11,7 @@ Usage:
     python3 detect_existing_structure.py [--kanban-path PATH] [--output OUTPUT_FILE]
 
 Arguments:
-    --kanban-path PATH    Path to Kanban directory (default: docs/project-management/kanban)
+    --kanban-path PATH    Path to Kanban directory (default: docs/kanban)
     --output OUTPUT_FILE  Output file for detection report (default: detection_report.json)
     --verbose             Enable verbose output
 """
@@ -272,8 +272,8 @@ def main():
     parser.add_argument(
         "--kanban-path",
         type=str,
-        default="docs/project-management/kanban",
-        help="Path to Kanban directory (default: docs/project-management/kanban)"
+        default="docs/kanban",
+        help="Path to Kanban directory (default: docs/kanban)"
     )
     parser.add_argument(
         "--output",

@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # E06:S09:T16 — Planning: Spec, Tests, Implementation Plan (IPW)
 
-**Host Task:** [`T16-rw-install-lowercase-fresh-kanban-patterns-br086.md`](../project-management/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T16-rw-install-lowercase-fresh-kanban-patterns-br086.md) **(E06:S09:T16)**  
-**Planning for:** [BR-086](../project-management/kanban/fr-br/BR-086-rw-install-lowercase-fresh-kanban-patterns-signoff.md) · [GitHub #17](https://github.com/RMS-Ltd/ai-dev-kit/issues/17)  
+**Host Task:** [`T16-rw-install-lowercase-fresh-kanban-patterns-br086.md`](../kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T16-rw-install-lowercase-fresh-kanban-patterns-br086.md) **(E06:S09:T16)**  
+**Planning for:** [BR-086](../kanban/fr-br/BR-086-rw-install-lowercase-fresh-kanban-patterns-signoff.md) · [GitHub #17](https://github.com/RMS-Ltd/ai-dev-kit/issues/17)  
 **Status:** Approved (2026-06-04 — ready for implementation)
 
 ---
@@ -95,7 +95,7 @@ After **lowercase** fresh kanban (`epic-1/epic-1.md`, no stories yet), `install_
 | E4 | Spec elsewhere | Y | This IPP + BR-086 AC |
 | E5 | Documented NONE | Y | §5.3 below |
 
-**§5.3 governing docs:** [ADR-015](../architecture/standards-and-adrs/ADR-015-kanban-epic-story-path-lowercase-convention.md); [UXR-017](../project-management/kanban/fr-br/UXR-017-kanban-epic-story-path-lowercase-naming.md); [`kanban_paths.py`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/kanban/scripts/kanban_paths.py); [BR-086](../project-management/kanban/fr-br/BR-086-rw-install-lowercase-fresh-kanban-patterns-signoff.md).
+**§5.3 governing docs:** [ADR-015](../architecture/standards-and-adrs/ADR-015-kanban-epic-story-path-lowercase-convention.md); [UXR-017](../kanban/fr-br/UXR-017-kanban-epic-story-path-lowercase-naming.md); [`kanban_paths.py`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/kanban/scripts/kanban_paths.py); [BR-086](../kanban/fr-br/BR-086-rw-install-lowercase-fresh-kanban-patterns-signoff.md).
 
 ---
 
@@ -135,15 +135,15 @@ After **lowercase** fresh kanban (`epic-1/epic-1.md`, no stories yet), `install_
 | Doc ID | Path | Action | Scope | Tied to |
 | ------ | ---- | ------ | ----- | ------- |
 | D1 | `docs/implementation-cycles/IPP-E6S9T16-br086-lowercase-fresh-kanban-patterns.md` | CREATE | This plan | IPW |
-| D2 | `docs/project-management/kanban/epics/.../T16-*.md` | UPDATE | IPP link; AC checkboxes on verify | Phase 8 |
-| D3 | `docs/project-management/kanban/fr-br/BR-086-*.md` | UPDATE | Status on fix | RF1–RF8 |
+| D2 | `docs/kanban/epics/.../T16-*.md` | UPDATE | IPP link; AC checkboxes on verify | Phase 8 |
+| D3 | `docs/kanban/fr-br/BR-086-*.md` | UPDATE | Status on fix | RF1–RF8 |
 | D4 | `packages/frameworks/kanban/scripts/kanban_paths.py` | UPDATE | Book task constant | RF3 |
 | D5 | `packages/frameworks/workflow-mgt/scripts/install_release_workflow.py` | UPDATE | Detection, prompts, YAML | RF1–RF4, RF7 |
 | D6 | `packages/frameworks/workflow-mgt/config/github-issue-install-signoff-contract.yaml` | UPDATE | BR-083 check | RF5 |
 | D7 | `packages/frameworks/workflow-mgt/docs/INSTALL_IN_YOUR_PROJECT.md` (or kit install doc path) | UPDATE | Lowercase example | RF7 |
 | D8 | `tests/test_install_release_workflow_*.py` | UPDATE | Fixtures | T1–T7 |
-| D9 | `docs/project-management/kanban/kboard.md` | UPDATE | T16 row (pending FR-097) | Step N |
-| D10 | `docs/project-management/kanban/kboard.md` | UPDATE | BR-086 row | Step N |
+| D9 | `docs/kanban/kboard.md` | UPDATE | T16 row (pending FR-097) | Step N |
+| D10 | `docs/kanban/kboard.md` | UPDATE | BR-086 row | Step N |
 | D11 | ADR | NONE | EXEMPT — ADR-015 / UXR-017 govern | §2.5 |
 
 ---
@@ -175,9 +175,9 @@ After **lowercase** fresh kanban (`epic-1/epic-1.md`, no stories yet), `install_
 
 ## References
 
-- [BR-086](../project-management/kanban/fr-br/BR-086-rw-install-lowercase-fresh-kanban-patterns-signoff.md)
-- [BR-083](../project-management/kanban/fr-br/BR-083-rw-install-default-patterns-mismatch-fresh-kanban-layout.md) · [BR-084](../project-management/kanban/fr-br/BR-084-rw-install-mode-c-missing-task-doc-pattern.md) · [BR-085](../project-management/kanban/fr-br/BR-085-rw-install-story-pattern-placeholder-loop-fresh-kanban.md)
-- [UXR-017](../project-management/kanban/fr-br/UXR-017-kanban-epic-story-path-lowercase-naming.md)
+- [BR-086](../kanban/fr-br/BR-086-rw-install-lowercase-fresh-kanban-patterns-signoff.md)
+- [BR-083](../kanban/fr-br/BR-083-rw-install-default-patterns-mismatch-fresh-kanban-layout.md) · [BR-084](../kanban/fr-br/BR-084-rw-install-mode-c-missing-task-doc-pattern.md) · [BR-085](../kanban/fr-br/BR-085-rw-install-story-pattern-placeholder-loop-fresh-kanban.md)
+- [UXR-017](../kanban/fr-br/UXR-017-kanban-epic-story-path-lowercase-naming.md)
 - [IPP-E6S9T13](IPP-E06S09T13-br084-rw-config-generation.md) · [IPP-E6S9T12](IPP-E06S09T12-br083-rw-install-pattern-defaults.md)
 - [kanban_paths.py](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/kanban/scripts/kanban_paths.py)
 - [GitHub #17](https://github.com/RMS-Ltd/ai-dev-kit/issues/17)

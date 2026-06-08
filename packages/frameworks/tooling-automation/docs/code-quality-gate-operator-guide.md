@@ -8,7 +8,7 @@ housekeeping_policy: keep
 
 # Code Quality Gate (CQG) — Operator guide
 
-**Task:** E08:S03:T17 · **FR:** [FR-113](../../../../docs/project-management/kanban/fr-br/FR-113-local-code-quality-gate-cqg.md) · **ADR:** [ADR-022](../../../../docs/architecture/standards-and-adrs/ADR-022-local-code-quality-gate-architecture.md)
+**Task:** E08:S03:T17 · **FR:** [FR-113](../../../../docs/kanban/fr-br/FR-113-local-code-quality-gate-cqg.md) · **ADR:** [ADR-022](../../../../docs/architecture/standards-and-adrs/ADR-022-local-code-quality-gate-architecture.md)
 
 ---
 

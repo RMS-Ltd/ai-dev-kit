@@ -26,7 +26,7 @@ This guide explains how to use AI Dev Kit frameworks after installation. It cove
 ### Scope (greenfield vs brownfield)
 
 - **Greenfield / new-template first run (FR-080):** [`INSTALL_IN_YOUR_PROJECT.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/INSTALL_IN_YOUR_PROJECT.md) · [IPW-E6S9T1](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/implementation-cycles/IPW-E6S09T01-greenfield-installation-fr080.md)
-- **Brownfield SoT:** [INSTALL — Brownfield adoption](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/INSTALL_IN_YOUR_PROJECT.md#brownfield-adoption-existing-repositories) · **Policy:** [ADR-003](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/architecture/standards-and-adrs/ADR-003-greenfield-vs-brownfield-adoption.md) · [FR-081](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/project-management/kanban/fr-br/FR-081-brownfield-modular-adopter-integration.md)
+- **Brownfield SoT:** [INSTALL — Brownfield adoption](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/INSTALL_IN_YOUR_PROJECT.md#brownfield-adoption-existing-repositories) · **Policy:** [ADR-003](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/architecture/standards-and-adrs/ADR-003-greenfield-vs-brownfield-adoption.md) · [FR-081](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/kanban/fr-br/FR-081-brownfield-modular-adopter-integration.md)
 
 ---
 
@@ -62,7 +62,7 @@ cd frameworks/kanban
 
 # Update example project references
 find . -type f -name "*.md" \
-  -exec sed -i '' 's|docs/project-management/epics/overview/Epic 4|docs/project-management/kanban/epics/epic-04|g' {} \;
+  -exec sed -i '' 's|docs/project-management/epics/overview/Epic 4|docs/kanban/epics/epic-04|g' {} \;
 
 # Update example project names
 find . -type f -name "*.md" \
@@ -105,8 +105,8 @@ changelog:
   archive_dir: "docs/changelog-and-release-notes/changelog-archive/"
 
 kanban:
-  epic_doc_pattern: "docs/project-management/kanban/epics/Epic-{epic}/Epic-{epic}.md"
-  story_doc_pattern: "docs/project-management/kanban/epics/Epic-{epic}/Story-{story}-*.md"
+  epic_doc_pattern: "docs/kanban/epics/Epic-{epic}/Epic-{epic}.md"
+  story_doc_pattern: "docs/kanban/epics/Epic-{epic}/Story-{story}-*.md"
 
 scripts:
   scripts_path: "packages/frameworks/workflow-mgt/scripts"
@@ -154,14 +154,14 @@ vim src/yourproject/version.py
 
 ```bash
 # Create Kanban directory structure
-mkdir -p docs/project-management/kanban/epics
+mkdir -p docs/kanban/epics
 
 # Copy Kanban board template
-cp frameworks/kanban/templates/kboard.md docs/project-management/kanban/kboard.md
+cp frameworks/kanban/templates/kboard.md docs/kanban/kboard.md
 
 # Create first epic
-mkdir -p docs/project-management/kanban/epics/epic-01
-cp frameworks/kanban/templates/epic-template.md docs/project-management/kanban/epics/epic-01/epic-01.md
+mkdir -p docs/kanban/epics/epic-01
+cp frameworks/kanban/templates/epic-template.md docs/kanban/epics/epic-01/epic-01.md
 ```
 
 ---
@@ -230,13 +230,13 @@ python3 scripts/release-workflow.py
 
 ```bash
 # Create epic directory
-mkdir -p docs/project-management/kanban/epics/epic-01
+mkdir -p docs/kanban/epics/epic-01
 
 # Create epic document
-cp frameworks/kanban/templates/epic-template.md docs/project-management/kanban/epics/epic-01/epic-01.md
+cp frameworks/kanban/templates/epic-template.md docs/kanban/epics/epic-01/epic-01.md
 
 # Edit epic document
-vim docs/project-management/kanban/epics/epic-01/epic-01.md
+vim docs/kanban/epics/epic-01/epic-01.md
 
 # Update:
 # - Epic title and description
@@ -249,10 +249,10 @@ vim docs/project-management/kanban/epics/epic-01/epic-01.md
 ```bash
 # Create story document
 cp frameworks/kanban/templates/story-template.md \
-   docs/project-management/kanban/epics/epic-01/story-01-epic-title.md
+   docs/kanban/epics/epic-01/story-01-epic-title.md
 
 # Edit story document
-vim docs/project-management/kanban/epics/epic-01/story-01-epic-title.md
+vim docs/kanban/epics/epic-01/story-01-epic-title.md
 
 # Update:
 # - Story title and description
@@ -264,7 +264,7 @@ vim docs/project-management/kanban/epics/epic-01/story-01-epic-title.md
 
 ```bash
 # Update main board view
-vim docs/project-management/kanban/kboard.md
+vim docs/kanban/kboard.md
 
 # Add new epic to board
 # Update epic status
@@ -504,7 +504,7 @@ python3 frameworks/workflow-mgmt/scripts/validation/validate_changelog_format.py
 python3 frameworks/kanban/scripts/update-kanban-docs.py
 
 # Manually update if needed
-vim docs/project-management/kanban/kboard.md
+vim docs/kanban/kboard.md
 ```
 
 **Issue: Version mismatch**

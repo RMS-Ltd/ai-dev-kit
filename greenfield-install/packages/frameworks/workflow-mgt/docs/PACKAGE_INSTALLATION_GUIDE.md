@@ -184,7 +184,7 @@ Some frameworks include installation scripts:
 
 ```bash
 python packages/frameworks/kanban/scripts/install_kanban_framework.py \
-    --kanban-path docs/project-management/kanban
+    --kanban-path docs/kanban
 ```
 
 ### 3. Verify Installation

@@ -32,7 +32,7 @@ def render_markdown() -> str:
         "",
         f"Registry version: **{reg.get('registry_version', 'unknown')}**. "
         "When install fails, copy the `ERROR [ADK-…]` line from your console "
-        "together with the AI Dev Kit SemVer banner ([UXR-016](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/project-management/kanban/fr-br/UXR-016-install-setup-interactive-feedback-external-semver-version.md)).",
+        "together with the AI Dev Kit SemVer banner ([UXR-016](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/kanban/fr-br/UXR-016-install-setup-interactive-feedback-external-semver-version.md)).",
         "",
         "Canonical registry: `packages/frameworks/workflow-mgt/config/install-error-codes.yaml`.",
         "",

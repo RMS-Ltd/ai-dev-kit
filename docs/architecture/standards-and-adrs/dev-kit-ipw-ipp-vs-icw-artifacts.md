@@ -9,4 +9,4 @@ notion_sot: true
 
 **SoT:** Notion Engineering KB — [Dev Kit Ipw Ipp Vs Icw Artifacts](https://www.notion.so/bfea12aedd0aceb24095af708b9c465a)
 
-> Migrated from `docs/architecture/standards-and-adrs/dev-kit-ipw-ipp-vs-icw-artifacts.md` per [FR-114](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/project-management/kanban/fr-br/FR-114-split-documentation-surfaces-docusaurus-public-notion-maintainer-kb.md). Full content lives in Notion.
+> Migrated from `docs/architecture/standards-and-adrs/dev-kit-ipw-ipp-vs-icw-artifacts.md` per [FR-114](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/kanban/fr-br/FR-114-split-documentation-surfaces-docusaurus-public-notion-maintainer-kb.md). Full content lives in Notion.

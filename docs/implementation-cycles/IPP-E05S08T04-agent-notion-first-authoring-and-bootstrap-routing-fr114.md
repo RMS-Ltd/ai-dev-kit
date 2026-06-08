@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # E05:S08:T04 — Planning: Agent Notion-first authoring and bootstrap routing (FR-114)
 
-**Host Task:** [`T04-agent-notion-first-authoring-and-bootstrap-routing-fr114.md`](../project-management/kanban/epics/epic-05/story-08-knowledge-base/T04-agent-notion-first-authoring-and-bootstrap-routing-fr114.md) **(E05:S08:T04)**  
-**Planning for:** [FR-114](../project-management/kanban/fr-br/FR-114-split-documentation-surfaces-docusaurus-public-notion-maintainer-kb.md) (F4, F5)  
+**Host Task:** [`T04-agent-notion-first-authoring-and-bootstrap-routing-fr114.md`](../kanban/epics/epic-05/story-08-knowledge-base/T04-agent-notion-first-authoring-and-bootstrap-routing-fr114.md) **(E05:S08:T04)**  
+**Planning for:** [FR-114](../kanban/fr-br/FR-114-split-documentation-surfaces-docusaurus-public-notion-maintainer-kb.md) (F4, F5)  
 **Status:** Active — implementation complete @ v0.5.8.4+2
 
 > **IPW (Implementation Planning Workflow):** Consolidated IPP per FR-042 / FR-094.
@@ -171,7 +171,7 @@ Requirements RF1–RF6 map to ADR-024 (policy), `AGENTS.md` + manifest (routing)
 
 ## References
 
-- [FR-114](../project-management/kanban/fr-br/FR-114-split-documentation-surfaces-docusaurus-public-notion-maintainer-kb.md)
+- [FR-114](../kanban/fr-br/FR-114-split-documentation-surfaces-docusaurus-public-notion-maintainer-kb.md)
 - [E05:S08:T03 IPP](IPP-E05S08T03-big-bang-notion-migration-maintainer-kb-fr114.md)
 - [E05:S09:T15 IPP](IPP-E05S09T15-docusaurus-adopter-public-publish-allowlist-fr114.md)
 - [ADR-012](../architecture/standards-and-adrs/ADR-012-agent-bootstrap-and-task-routing.md)

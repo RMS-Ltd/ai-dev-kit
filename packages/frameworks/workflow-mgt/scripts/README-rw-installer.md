@@ -136,7 +136,7 @@ changelog_dir: docs/changelogs
 scripts_path: tools/workflow_mgt/scripts
 readme_file: README.md
 use_kanban: true
-kanban_root: docs/project-management/kanban
+kanban_root: docs/kanban
 versioning_mode: dual
 semver_mapping_strategy: task_touch
 # ... etc

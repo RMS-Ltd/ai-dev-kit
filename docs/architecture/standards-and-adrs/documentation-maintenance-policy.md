@@ -9,4 +9,4 @@ notion_sot: true
 
 **SoT:** Notion Engineering KB — [Documentation Maintenance Policy](https://www.notion.so/038a53cf5cb76258ac4869ca7a925e54)
 
-> Migrated from `docs/architecture/standards-and-adrs/documentation-maintenance-policy.md` per [FR-114](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/project-management/kanban/fr-br/FR-114-split-documentation-surfaces-docusaurus-public-notion-maintainer-kb.md). Full content lives in Notion.
+> Migrated from `docs/architecture/standards-and-adrs/documentation-maintenance-policy.md` per [FR-114](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/kanban/fr-br/FR-114-split-documentation-surfaces-docusaurus-public-notion-maintainer-kb.md). Full content lives in Notion.

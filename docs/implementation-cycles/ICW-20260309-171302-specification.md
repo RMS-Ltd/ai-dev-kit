@@ -235,8 +235,8 @@ The implementation of task-touch SemVer tagging (FR-046) and ADR-002 Task-Touch 
 FR-045, FR-046, Release Workflow documentation
 
 ### References
-- [FR-045: ADR-002 Task-Touch Derived Mapping](../project-management/kanban/fr-br/FR-045-adr-002-task-touch-derived-mapping.md)
-- [FR-046: RW Uses SemVer Tag When Task-Touch Enabled](../project-management/kanban/fr-br/FR-046-rw-semver-tag-task-touch-mode.md)
+- [FR-045: ADR-002 Task-Touch Derived Mapping](../kanban/fr-br/FR-045-adr-002-task-touch-derived-mapping.md)
+- [FR-046: RW Uses SemVer Tag When Task-Touch Enabled](../kanban/fr-br/FR-046-rw-semver-tag-task-touch-mode.md)
 - [Release Workflow workflow package (source)](https://github.com/RMS-Ltd/ai-dev-kit/tree/main/packages/frameworks/workflow-mgt/workflows)
 - [GitHub Actions Templates (source)](https://github.com/RMS-Ltd/ai-dev-kit/tree/main/packages/frameworks/workflow-mgt/templates/github-actions)
 

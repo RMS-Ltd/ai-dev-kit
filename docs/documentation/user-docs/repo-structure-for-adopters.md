@@ -59,7 +59,7 @@ These are **dev-kit-specific applications** of the frameworks. Adopters should c
 - **For adopters:** Reference these as examples, but create your own policies based on your project's needs
 
 ### Kanban Instance
-- **Path:** `docs/project-management/kanban/`
+- **Path:** `docs/kanban/`
 - **Purpose:** Dev-kit's actual Kanban board, epics, stories, tasks (an instance of the framework)
 - **Framework SoT:** `packages/frameworks/kanban/policies/kanban-governance-policy.md`
 - **For adopters:** Use the framework templates to create your own Kanban structure; don't copy dev-kit's actual epics/stories
@@ -134,7 +134,7 @@ The project root is kept minimal. Only the following belong there:
 |------|----------|----------------|
 | **Frameworks (SoT)** | `packages/frameworks/*` | Copy entire packages |
 | **Dev-kit policies** | `docs/architecture/standards-and-adrs/*` | Reference as examples, create your own |
-| **Dev-kit Kanban** | `docs/project-management/kanban/` | Use framework templates, don't copy dev-kit's epics |
+| **Dev-kit Kanban** | `docs/kanban/` | Use framework templates, don't copy dev-kit's epics |
 | **Framework scripts** | `packages/frameworks/*/scripts/` | Copy when installing frameworks |
 | **Project utilities** | `scripts/` | Optional reference only |
 | **Book content** | `docs/documentation/`, `docs/knowledge/` | Ignore (book project only) |

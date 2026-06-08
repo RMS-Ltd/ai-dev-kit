@@ -9,4 +9,4 @@ notion_sot: true
 
 **SoT:** Notion Engineering KB — [Doc Init Migration Guide](https://www.notion.so/273a6158774742d47dd06567f61d98ed)
 
-> Migrated from `docs/architecture/standards-and-adrs/doc-init-migration-guide.md` per [FR-114](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/project-management/kanban/fr-br/FR-114-split-documentation-surfaces-docusaurus-public-notion-maintainer-kb.md). Full content lives in Notion.
+> Migrated from `docs/architecture/standards-and-adrs/doc-init-migration-guide.md` per [FR-114](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/kanban/fr-br/FR-114-split-documentation-surfaces-docusaurus-public-notion-maintainer-kb.md). Full content lives in Notion.

@@ -9,4 +9,4 @@ notion_sot: true
 
 **SoT:** Notion Engineering KB — [Maintenance Kanban Integration](https://www.notion.so/a815aae0ccdd4e72a22fcf76c5f8b4e9)
 
-> Migrated from `docs/architecture/standards-and-adrs/maintenance-kanban-integration.md` per [FR-114](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/project-management/kanban/fr-br/FR-114-split-documentation-surfaces-docusaurus-public-notion-maintainer-kb.md). Full content lives in Notion.
+> Migrated from `docs/architecture/standards-and-adrs/maintenance-kanban-integration.md` per [FR-114](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/kanban/fr-br/FR-114-split-documentation-surfaces-docusaurus-public-notion-maintainer-kb.md). Full content lives in Notion.

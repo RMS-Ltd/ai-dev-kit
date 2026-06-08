@@ -182,7 +182,7 @@ def test_corpus_sweep_uses_non_substantive_mode():
     target = _load_target()
     with tempfile.TemporaryDirectory() as tmp_str:
         tmp = Path(tmp_str)
-        kanban = tmp / "docs/project-management/kanban"
+        kanban = tmp / "docs/kanban"
         kanban.mkdir(parents=True)
         (kanban / "kboard.md").write_text(SAMPLE_BOARD)
         (kanban / "kboard.md").write_text(SAMPLE_BOARD)

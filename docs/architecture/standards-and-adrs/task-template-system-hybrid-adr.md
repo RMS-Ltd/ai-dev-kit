@@ -9,4 +9,4 @@ notion_sot: true
 
 **SoT:** Notion Engineering KB — [Task Template System Hybrid Adr](https://www.notion.so/8c6232ef2b1d1f19ed6ec997643addfe)
 
-> Migrated from `docs/architecture/standards-and-adrs/task-template-system-hybrid-adr.md` per [FR-114](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/project-management/kanban/fr-br/FR-114-split-documentation-surfaces-docusaurus-public-notion-maintainer-kb.md). Full content lives in Notion.
+> Migrated from `docs/architecture/standards-and-adrs/task-template-system-hybrid-adr.md` per [FR-114](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/kanban/fr-br/FR-114-split-documentation-surfaces-docusaurus-public-notion-maintainer-kb.md). Full content lives in Notion.

@@ -82,7 +82,7 @@ def _read_rw_config(project_root: Path) -> dict[str, Any]:
 def _kanban_epics_root(project_root: Path, config: dict[str, Any]) -> Optional[Path]:
     if not config.get("use_kanban"):
         return None
-    root = config.get("kanban_root", "docs/project-management/kanban")
+    root = config.get("kanban_root", "docs/kanban")
     p = Path(root)
     if not p.is_absolute():
         p = project_root / p

@@ -152,7 +152,7 @@ After all four gates pass, create a TODO list for all steps (`rw-step-1` through
 | 12.5 GitHub Release | ❌* | ❌ | ❌* |
 | 13 Housekeeping | ✅ | ✅ | ✅ |
 
-\* Step 12 / 12.5 run **only** when the user typed **`--push`** in the RW trigger ([UXR-024](docs/project-management/kanban/fr-br/UXR-024-rw-local-release-default-no-push-batch-operator-push.md)). Default full RW / `RW -k` complete **locally** — report `RW COMPLETE (local)`.
+\* Step 12 / 12.5 run **only** when the user typed **`--push`** in the RW trigger ([UXR-024](docs/kanban/fr-br/UXR-024-rw-local-release-default-no-push-batch-operator-push.md)). Default full RW / `RW -k` complete **locally** — report `RW COMPLETE (local)`.
 
 ### Step 2 — Bump Version
 
@@ -367,7 +367,7 @@ Use `rw-config.yaml` values when present. Fallbacks:
 - Changelog archive: `docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v{version}.md`
 - Validators: `packages/frameworks/workflow-mgt/scripts/validation/`
 - README: `README.md`
-- Kanban root: `docs/project-management/kanban/`
+- Kanban root: `docs/kanban/`
 
 ---
 

@@ -9,4 +9,4 @@ notion_sot: true
 
 **SoT:** Notion Engineering KB — [Ipw E3S02T12 Task Touch Semver Collision Hardening](https://www.notion.so/3f244a317fe8e9606b505fd7b4c5d1cf)
 
-> Migrated from `docs/implementation-cycles/IPW-E3S02T12-task-touch-semver-collision-hardening.md` per [FR-114](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/project-management/kanban/fr-br/FR-114-split-documentation-surfaces-docusaurus-public-notion-maintainer-kb.md). Full content lives in Notion.
+> Migrated from `docs/implementation-cycles/IPW-E3S02T12-task-touch-semver-collision-hardening.md` per [FR-114](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/kanban/fr-br/FR-114-split-documentation-surfaces-docusaurus-public-notion-maintainer-kb.md). Full content lives in Notion.

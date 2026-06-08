@@ -6,8 +6,8 @@ housekeeping_policy: keep
 
 # E2:S16:T07 — Planning: FR-050 UKW FBU temporal sync (IPP)
 
-**Host Task:** [`T07-ukw-extension-for-fr-br-uxr-temporal-tracking-fr050.md`](../project-management/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T07-ukw-extension-for-fr-br-uxr-temporal-tracking-fr050.md) **(E2:S16:T07)**  
-**Planning for:** [FR-050](../project-management/kanban/fr-br/FR-050-ukw-extension-for-fr-br-uxr-temporal-tracking-and-synchronization.md)  
+**Host Task:** [`T07-ukw-extension-for-fr-br-uxr-temporal-tracking-fr050.md`](../kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T07-ukw-extension-for-fr-br-uxr-temporal-tracking-fr050.md) **(E2:S16:T07)**  
+**Planning for:** [FR-050](../kanban/fr-br/FR-050-ukw-extension-for-fr-br-uxr-temporal-tracking-and-synchronization.md)  
 **Status:** Published
 
 ## 1. Requirements

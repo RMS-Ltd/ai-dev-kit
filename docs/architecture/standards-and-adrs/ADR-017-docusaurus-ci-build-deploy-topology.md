@@ -17,15 +17,15 @@ housekeeping_policy: keep
 **Status:** Accepted  
 **Date:** 2026-06-05  
 **Deciders:** User (Ruari Mears)  
-**Implementing task:** [E05:S09:T14](../../project-management/kanban/epics/epic-05/story-09-docusaurus-documentation-portal/T14-docusaurus-ci-workflow-deduplication-br093.md)  
+**Implementing task:** [E05:S09:T14](../../kanban/epics/epic-05/story-09-docusaurus-documentation-portal/T14-docusaurus-ci-workflow-deduplication-br093.md)  
 **Planning package:** [IPP-E5S9T14](../../implementation-cycles/IPP-E05S09T14-docusaurus-ci-workflow-deduplication.md)  
-**Related:** [BR-093](../../project-management/kanban/fr-br/BR-093-docusaurus-ci-duplicate-build-deploy-job-waste.md), [FR-069](../../project-management/kanban/fr-br/FR-069-docusaurus-ci-build-gate.md), [FR-070](../../project-management/kanban/fr-br/FR-070-docusaurus-deployment-and-hosting.md)
+**Related:** [BR-093](../../kanban/fr-br/BR-093-docusaurus-ci-duplicate-build-deploy-job-waste.md), [FR-069](../../kanban/fr-br/FR-069-docusaurus-ci-build-gate.md), [FR-070](../../kanban/fr-br/FR-070-docusaurus-deployment-and-hosting.md)
 
 ---
 
 ## Context
 
-[BR-093](../../project-management/kanban/fr-br/BR-093-docusaurus-ci-duplicate-build-deploy-job-waste.md) — two independent workflows each run `npm ci` + `npm run build` on every qualifying `main` push, doubling CI minutes and failure noise.
+[BR-093](../../kanban/fr-br/BR-093-docusaurus-ci-duplicate-build-deploy-job-waste.md) — two independent workflows each run `npm ci` + `npm run build` on every qualifying `main` push, doubling CI minutes and failure noise.
 
 Prior layout:
 

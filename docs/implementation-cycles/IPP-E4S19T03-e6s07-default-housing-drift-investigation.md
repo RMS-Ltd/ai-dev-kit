@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # E4:S19:T03 - Planning: Spec, Tests, Implementation Plan (IPP)
 
-**Host Task:** [`T03-e6s07-default-housing-drift-investigation-and-closure-decision-fr087.md`](../project-management/kanban/epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T03-e6s07-default-housing-drift-investigation-and-closure-decision-fr087.md) **(E4:S19:T03)**  
-**Planning for:** [FR-087 - Investigate `E6:S07` default-housing drift, codification points, and closure decision](../project-management/kanban/fr-br/FR-087-e6s07-default-housing-root-cause-and-closure-decision.md)  
+**Host Task:** [`T03-e6s07-default-housing-drift-investigation-and-closure-decision-fr087.md`](../kanban/epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T03-e6s07-default-housing-drift-investigation-and-closure-decision-fr087.md) **(E4:S19:T03)**  
+**Planning for:** [FR-087 - Investigate `E6:S07` default-housing drift, codification points, and closure decision](../kanban/fr-br/FR-087-e6s07-default-housing-root-cause-and-closure-decision.md)  
 **Status:** Published (Wave 1 IPP); Wave 2–3 investigation report delivered — see [`E4S19T03-e6s07-default-housing-investigation-report.md`](E4S19T03-e6s07-default-housing-investigation-report.md); Wave 4 migrations and guardrail filing remain open
 
 ---
@@ -49,11 +49,11 @@ housekeeping_policy: keep
 
 ### 1.4 Referenced sources
 
-- Host task: [`T03-e6s07-default-housing-drift-investigation-and-closure-decision-fr087.md`](../project-management/kanban/epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T03-e6s07-default-housing-drift-investigation-and-closure-decision-fr087.md)
-- Upstream FR: [`FR-087`](../project-management/kanban/fr-br/FR-087-e6s07-default-housing-root-cause-and-closure-decision.md)
-- Story container: [`story-19-fr-br-uxr-abstract-governance-and-intake.md`](../project-management/kanban/epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake.md)
-- Subject under investigation: [`story-07-adk-implementation-analysis-and-package-management.md`](../project-management/kanban/epics/epic-06/story-07-adk-implementation-analysis-and-package-management.md)
-- AC6 evidence (re-housing precedent): [`BR-069`](../project-management/kanban/fr-br/BR-069-kboard-fbuboard-earliest-last-modified-timestamps-overwritten.md) -> [`E2:S15:T04`](../project-management/kanban/epics/epic-02/story-15-ipw-governance-and-publication-contract/T04-investigate-earliest-last-modified-timestamp-overwrite-regression-br069.md)
+- Host task: [`T03-e6s07-default-housing-drift-investigation-and-closure-decision-fr087.md`](../kanban/epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T03-e6s07-default-housing-drift-investigation-and-closure-decision-fr087.md)
+- Upstream FR: [`FR-087`](../kanban/fr-br/FR-087-e6s07-default-housing-root-cause-and-closure-decision.md)
+- Story container: [`story-19-fr-br-uxr-abstract-governance-and-intake.md`](../kanban/epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake.md)
+- Subject under investigation: [`story-07-adk-implementation-analysis-and-package-management.md`](../kanban/epics/epic-06/story-07-adk-implementation-analysis-and-package-management.md)
+- AC6 evidence (re-housing precedent): [`BR-069`](../kanban/fr-br/BR-069-kboard-fbuboard-earliest-last-modified-timestamps-overwritten.md) -> [`E2:S15:T04`](../kanban/epics/epic-02/story-15-ipw-governance-and-publication-contract/T04-investigate-earliest-last-modified-timestamp-overwrite-regression-br069.md)
 - Adjacent governance contract (perpetual-task placement, deliberately not duplicated here): [`IPP-E2S16T1`](IPP-E2S16T01-canonical-perpetual-ongoing-tasks-story.md)
 - Adjacent governance contract (FBU meta governance shape reference): [`IPP-E4S19T6`](IPP-E4S19T06-fbu-meta-normalization-and-intake-governance.md)
 - IPW execution guide: [`implementation-planning-workflow-agent-execution.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/implementation-planning-workflow-agent-execution.md)
@@ -83,7 +83,7 @@ Each forensic finding produced under T03 execution must satisfy the following co
 1. **Primary evidence requirement.** A finding cites at least one primary repository artifact (file path + line range, or git commit ref + file). Synthesized analysis is allowed as commentary on top of primary evidence, never as a substitute for it.
 2. **Charter origin.** The investigation must establish the original `S07` charter from at least two independent sources (e.g. `story-07-adk-implementation-analysis-and-package-management.md` overview/goal sections + earliest related FR/BR/UXR documents + earliest related changelog archive entry).
 3. **Expansion inflection points.** The investigation must identify the discrete points at which `S07` accreted scope outside its charter, citing the FR/BR/UXR or task that introduced the new scope, the date, and the placement rationale (or the absence thereof).
-4. **Current usage shape.** The investigation must enumerate the current `S07` task list (`docs/project-management/kanban/epics/epic-06/story-07-.../T*.md`) at the time of the report and describe the shape (count, task type mix, status mix, FBU linkage mix). The current count is **23 task documents** as of 2026-04-27 (recorded for baseline comparison; expected to drift as re-housings land).
+4. **Current usage shape.** The investigation must enumerate the current `S07` task list (`docs/kanban/epics/epic-06/story-07-.../T*.md`) at the time of the report and describe the shape (count, task type mix, status mix, FBU linkage mix). The current count is **23 task documents** as of 2026-04-27 (recorded for baseline comparison; expected to drift as re-housings land).
 5. **Citation form.** Findings cite `path/to/file.md:line-range` style references, plus a one-line quotation or paraphrase. No bare links without context.
 6. **Quantification.** Drift is quantified (see §2.5 for the metric); narrative-only claims are insufficient.
 
@@ -100,7 +100,7 @@ The investigator must inspect each of the following categories. For each categor
 | Kanban templates | [`packages/frameworks/kanban/templates/`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/kanban/templates) | `rg -n "S07\|S006\|S007\|default" "packages/frameworks/kanban/templates/" --type md` |
 | Kanban governance policy | [`packages/frameworks/kanban/policies/kanban-governance-policy.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/kanban/policies/kanban-governance-policy.md) | `rg -n "S07\|S006\|S007\|default.{0,30}housing\|catch.?all\|placement" "packages/frameworks/kanban/policies/kanban-governance-policy.md"` |
 | Intake guide | [`packages/frameworks/kanban/FR_BR_INTAKE_GUIDE.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/kanban/FR_BR_INTAKE_GUIDE.md), [`packages/frameworks/kanban/FR_BR_INTAKE_AGENT_GUIDE.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/kanban/FR_BR_INTAKE_AGENT_GUIDE.md) | `rg -n "Epic\|Story\|placement\|default" "packages/frameworks/kanban/FR_BR_INTAKE_GUIDE.md" "packages/frameworks/kanban/FR_BR_INTAKE_AGENT_GUIDE.md"` |
-| Story 007 charter document | [`story-07-adk-implementation-analysis-and-package-management.md`](../project-management/kanban/epics/epic-06/story-07-adk-implementation-analysis-and-package-management.md) | Read header (Overview, Problem Statement, Goal, Success Criteria sections) plus task-checklist diff from earliest commit. |
+| Story 007 charter document | [`story-07-adk-implementation-analysis-and-package-management.md`](../kanban/epics/epic-06/story-07-adk-implementation-analysis-and-package-management.md) | Read header (Overview, Problem Statement, Goal, Success Criteria sections) plus task-checklist diff from earliest commit. |
 | Agent prompts and prior IPPs | [`docs/implementation-cycles/`](.) | `rg -n "S07\|S006\|S007\|E6:S07\|default.{0,30}housing" "docs/implementation-cycles/"` |
 
 For each cited surface, the investigator must classify the routing as one of:
@@ -151,8 +151,8 @@ The protocol below is the atomic checklist the investigator (or any future opera
 | 2 | Create the new task document under the target story using the canonical task template; copy substantive content from the source task; update task ID; preserve historical anchor reference. | New `T\{n\}-...md` file exists; `Historical Anchor:` line cites the source `E{e}:S{s}:T{t}` ID. |
 | 3 | Mark the source task `SUPERSEDED`; add `Last updated:` note; add `Superseded by:` link to the target task; preserve content for historical traceability. | Source task status reads `SUPERSEDED`; superseded-by link resolves. |
 | 4 | Rewire the upstream FR/BR/UXR `Implementing Task:` line to the target task path; record the historical implementing task as plain text or an explicit `Historical implementing task:` line. | FBU file shows new task path under `Implementing Task:`. |
-| 5 | Update [`kboard.md`](../project-management/kanban/kboard.md) row(s) to reference the target task path, IPP path (if any), and updated `Last modified` timestamp. | kboard row resolves to the new task path. |
-| 6 | Update [`kboard.md`](../project-management/kanban/kboard.md) FBU row to reference the target task and updated `Last modified` timestamp. | fbuboard row resolves to the new task path. |
+| 5 | Update [`kboard.md`](../kanban/kboard.md) row(s) to reference the target task path, IPP path (if any), and updated `Last modified` timestamp. | kboard row resolves to the new task path. |
+| 6 | Update [`kboard.md`](../kanban/kboard.md) FBU row to reference the target task and updated `Last modified` timestamp. | fbuboard row resolves to the new task path. |
 | 7 | Update the source story checklist row (annotate as `SUPERSEDED` with successor link). | Source story checklist line carries a successor pointer. |
 | 8 | Update the target story checklist row (add new entry per template). | Target story checklist line exists. |
 | 9 | Run [`validate_ipw_publication_wiring.py`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/scripts/validation/validate_ipw_publication_wiring.py) against the new task ID. If the task uses the consolidated IPP model, declare `Publication Status: NOT_APPLICABLE` with reason. | Validator returns PASS for the new task. |
@@ -171,7 +171,7 @@ The IPP identifies the following candidate guardrail tasks that the disposition 
 | Intake skill update | [`/.cursor/skills/intake-process/SKILL.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/.cursor/skills/intake-process/SKILL.md) | Strengthen Step 2 placement language ("delivery story not repository story") with explicit anti-`E6:S07`-default note and a worked example. | `keep-open-narrowed`, `split/re-house` |
 | Intake guide update | [`packages/frameworks/kanban/FR_BR_INTAKE_GUIDE.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/kanban/FR_BR_INTAKE_GUIDE.md) | Mirror intake skill change in the human-readable guide; add a worked example showing correct placement when no obvious story exists. | `keep-open-narrowed`, `split/re-house` |
 | Task template field | [`packages/frameworks/kanban/templates/`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/kanban/templates) | Add an optional `Default Housing Override Rationale:` field on task templates that the placement validator can detect when routing diverges from the canonical recommendation. | `keep-open-narrowed`, `split/re-house` |
-| Story-level routing matrix | [`story-07-adk-implementation-analysis-and-package-management.md`](../project-management/kanban/epics/epic-06/story-07-adk-implementation-analysis-and-package-management.md) (or successor doc) | Add an explicit `In Scope` / `Out of Scope` enumeration to the story document so future intake operators have a deterministic check. | `keep-open-narrowed`, `split/re-house` |
+| Story-level routing matrix | [`story-07-adk-implementation-analysis-and-package-management.md`](../kanban/epics/epic-06/story-07-adk-implementation-analysis-and-package-management.md) (or successor doc) | Add an explicit `In Scope` / `Out of Scope` enumeration to the story document so future intake operators have a deterministic check. | `keep-open-narrowed`, `split/re-house` |
 | Historical-anchor declaration policy | [`packages/frameworks/kanban/policies/kanban-governance-policy.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/kanban/policies/kanban-governance-policy.md) | Codify the `Historical Anchor:` line convention used in re-housing (steps 2-3 of §2.7) so legacy task IDs survive as aliases without polluting active work. | All options |
 | Story-charter freeze policy | [`packages/frameworks/kanban/policies/kanban-governance-policy.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/kanban/policies/kanban-governance-policy.md) | Define the `RETIRED` story status and rules for redirecting new intake when a story is retired. | `close` |
 
@@ -300,11 +300,11 @@ Wave 4 is the operational consequence of the disposition decision and lives enti
 ### 4.6 Files touched by Wave 1
 
 - `docs/implementation-cycles/IPP-E4S19T3-e6s07-default-housing-drift-investigation.md` (new - this file)
-- `docs/project-management/kanban/epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T03-e6s07-default-housing-drift-investigation-and-closure-decision-fr087.md`
-- `docs/project-management/kanban/fr-br/FR-087-e6s07-default-housing-root-cause-and-closure-decision.md`
-- `docs/project-management/kanban/epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake.md`
-- `docs/project-management/kanban/kboard.md`
-- `docs/project-management/kanban/kboard.md`
+- `docs/kanban/epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T03-e6s07-default-housing-drift-investigation-and-closure-decision-fr087.md`
+- `docs/kanban/fr-br/FR-087-e6s07-default-housing-root-cause-and-closure-decision.md`
+- `docs/kanban/epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake.md`
+- `docs/kanban/kboard.md`
+- `docs/kanban/kboard.md`
 
 ---
 
@@ -328,17 +328,17 @@ Deliverable checks:
 
 ## 6. References
 
-- [Host task E4:S19:T03](../project-management/kanban/epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T03-e6s07-default-housing-drift-investigation-and-closure-decision-fr087.md)
+- [Host task E4:S19:T03](../kanban/epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T03-e6s07-default-housing-drift-investigation-and-closure-decision-fr087.md)
 - [Investigation report (Wave 2–3)](E4S19T03-e6s07-default-housing-investigation-report.md)
-- [FR-087 - Investigate `E6:S07` default-housing drift, codification points, and closure decision](../project-management/kanban/fr-br/FR-087-e6s07-default-housing-root-cause-and-closure-decision.md)
-- [Story 019 - FR/BR/UXR abstract governance and intake](../project-management/kanban/epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake.md)
-- [Story 007 - ADK implementation analysis and package management (subject under investigation)](../project-management/kanban/epics/epic-06/story-07-adk-implementation-analysis-and-package-management.md)
-- [BR-069 - Last-modified timestamp overwrite (re-housing precedent)](../project-management/kanban/fr-br/BR-069-kboard-fbuboard-earliest-last-modified-timestamps-overwritten.md)
-- [E2:S15:T04 - BR-069 investigation (re-housing target)](../project-management/kanban/epics/epic-02/story-15-ipw-governance-and-publication-contract/T04-investigate-earliest-last-modified-timestamp-overwrite-regression-br069.md)
+- [FR-087 - Investigate `E6:S07` default-housing drift, codification points, and closure decision](../kanban/fr-br/FR-087-e6s07-default-housing-root-cause-and-closure-decision.md)
+- [Story 019 - FR/BR/UXR abstract governance and intake](../kanban/epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake.md)
+- [Story 007 - ADK implementation analysis and package management (subject under investigation)](../kanban/epics/epic-06/story-07-adk-implementation-analysis-and-package-management.md)
+- [BR-069 - Last-modified timestamp overwrite (re-housing precedent)](../kanban/fr-br/BR-069-kboard-fbuboard-earliest-last-modified-timestamps-overwritten.md)
+- [E2:S15:T04 - BR-069 investigation (re-housing target)](../kanban/epics/epic-02/story-15-ipw-governance-and-publication-contract/T04-investigate-earliest-last-modified-timestamp-overwrite-regression-br069.md)
 - [IPP-E2S16T1 - Canonical perpetual ongoing tasks story (delegated perpetual scope)](IPP-E2S16T01-canonical-perpetual-ongoing-tasks-story.md)
 - [IPP-E4S19T6 - FBU meta normalization and intake governance (governance shape reference)](IPP-E4S19T06-fbu-meta-normalization-and-intake-governance.md)
 - [Kanban governance policy](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/kanban/policies/kanban-governance-policy.md)
 - [FR/BR intake guide](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/kanban/FR_BR_INTAKE_GUIDE.md)
 - [Intake skill](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/.cursor/skills/intake-process/SKILL.md)
 - [IPW execution guide](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/implementation-planning-workflow-agent-execution.md)
-- [FR-042 - IPW canonical workflow](../project-management/kanban/fr-br/FR-042-implementation-planning-workflow-ipw.md)
+- [FR-042 - IPW canonical workflow](../kanban/fr-br/FR-042-implementation-planning-workflow-ipw.md)

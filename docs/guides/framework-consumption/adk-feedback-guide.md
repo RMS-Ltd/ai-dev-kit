@@ -95,7 +95,7 @@ Overall: Smooth installation process
 **Example:**
 ```
 Files Created:
-- docs/project-management/kanban/
+- docs/kanban/
 - packages/frameworks/
 - scripts/
 - rw-config.yaml

@@ -32,7 +32,7 @@ def default_board_paths(project_root: Path) -> List[Path]:
     if cfg and cfg.get("kanban_root"):
         root = project_root / cfg["kanban_root"]
     else:
-        root = project_root / "docs/project-management/kanban"
+        root = project_root / "docs/kanban"
     return [
         root / "kboard.md",
         root / "kboard.md",

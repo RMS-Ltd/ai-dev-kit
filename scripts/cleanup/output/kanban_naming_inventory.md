@@ -1,7 +1,7 @@
 # Kanban Naming Hygiene Inventory
 
 **Generated:** 2026-05-18T16:11:28.059552+01:00
-**Scanned:** `/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics`
+**Scanned:** `/Users/rms/Documents/projects/ai-dev-kit/docs/kanban/epics`
 
 ## Summary
 
@@ -97,43 +97,43 @@
 
 ## Duplicate Task Files
 
-- **/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-2/Story-002-pdca-integration-into-release-workflow** — T08
+- **/Users/rms/Documents/projects/ai-dev-kit/docs/kanban/epics/Epic-2/Story-002-pdca-integration-into-release-workflow** — T08
   - Keep: `T08-update-kanban-docs-to-txx-standard.md`
   - Delete: `T008-update-kanban-docs-to-txx-standard.md`
   - Delete: `T08-update-kanban-docs-to-txx-standard-deliverable.md`
-- **/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-2/Story-002-pdca-integration-into-release-workflow** — T07
+- **/Users/rms/Documents/projects/ai-dev-kit/docs/kanban/epics/Epic-2/Story-002-pdca-integration-into-release-workflow** — T07
   - Keep: `T07-implement-task-naming-change.md`
   - Delete: `T007-implement-task-naming-change.md`
-- **/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-4/Story-011-kanban-granularity-discrete-task-docs** — T07
+- **/Users/rms/Documents/projects/ai-dev-kit/docs/kanban/epics/Epic-4/Story-011-kanban-granularity-discrete-task-docs** — T07
   - Keep: `T07-planning-spec-tests-impl.md`
   - Delete: `T07-migrate-embedded-tasks-to-discrete-documents.md`
-- **/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-4/Story-003-kanban-versioning-rw-integration** — T02
+- **/Users/rms/Documents/projects/ai-dev-kit/docs/kanban/epics/Epic-4/Story-003-kanban-versioning-rw-integration** — T02
   - Keep: `T002-root-cause-analysis.md`
   - Delete: `T002-kanban-versioning-validation.md`
   - Delete: `T002-documentation-updates-summary.md`
-- **/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-4/Story-014-kanban-framework-maintenance** — T01
+- **/Users/rms/Documents/projects/ai-dev-kit/docs/kanban/epics/Epic-4/Story-014-kanban-framework-maintenance** — T01
   - Keep: `T01-planning-spec-tests-impl.md`
   - Delete: `T01-update-packaged-rw-ukw-perpetual-tasks.md`
-- **/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-3/Story-002-versioning-cookbook-and-examples** — T08
+- **/Users/rms/Documents/projects/ai-dev-kit/docs/kanban/epics/Epic-3/Story-002-versioning-cookbook-and-examples** — T08
   - Keep: `T008-package-versioning-agentic-approach.md`
   - Delete: `T008-package-versioning-guardrails-discussion.md`
   - Delete: `T008-dual-versioning-package-audit-report.md`
-- **/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-6/Story-007-adk-implementation-analysis-and-package-management** — T107
+- **/Users/rms/Documents/projects/ai-dev-kit/docs/kanban/epics/Epic-6/Story-007-adk-implementation-analysis-and-package-management** — T107
   - Keep: `T107-ide-command-whitelist-optimization.md`
   - Delete: `T107-workflows-directory-structure-reorganization.md`
-- **/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-6/Story-006-feature-requests** — T41
+- **/Users/rms/Documents/projects/ai-dev-kit/docs/kanban/epics/Epic-6/Story-006-feature-requests** — T41
   - Keep: `T41-implementation-summary.md`
   - Delete: `T41-windsurf-investigate-agents-skills-for-workflows.md`
-- **/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-1/Story-003-core-kb-structure-for-dev-kit** — T03
+- **/Users/rms/Documents/projects/ai-dev-kit/docs/kanban/epics/Epic-1/Story-003-core-kb-structure-for-dev-kit** — T03
   - Keep: `T003-kb-structure-migration-guide.md`
   - Delete: `T003-canonical-kb-structure-research.md`
-- **/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-7/Story-000-uxr-repo** — T05
+- **/Users/rms/Documents/projects/ai-dev-kit/docs/kanban/epics/Epic-7/Story-000-uxr-repo** — T05
   - Keep: `T05-uxr-005-repository-anchor.md`
   - Delete: `T05-kanban-board-formatting-governance-uxr-005.md`
-- **/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-7/Story-000-uxr-repo** — T01
+- **/Users/rms/Documents/projects/ai-dev-kit/docs/kanban/epics/Epic-7/Story-000-uxr-repo** — T01
   - Keep: `T01-uxr-001-repository-anchor.md`
   - Delete: `T01-migration-user-experience-research-uxr-001.md`
-- **/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/Epic-7/Story-000-uxr-repo** — T02
+- **/Users/rms/Documents/projects/ai-dev-kit/docs/kanban/epics/Epic-7/Story-000-uxr-repo** — T02
   - Keep: `T02-uxr-002-repository-anchor.md`
   - Delete: `T02-comprehensive-uat-migration-utilities-uxr-002.md`
 

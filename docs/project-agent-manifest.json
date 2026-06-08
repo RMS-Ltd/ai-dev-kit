@@ -10,7 +10,7 @@
     {
       "id": "P-IPW-GATE",
       "rule": "No implementation until IPW package exists and user authorizes execution (implement or RW).",
-      "sourcePath": "docs/project-management/kanban/fr-br/FR-083-global-ipw-gated-implementation-contract.md"
+      "sourcePath": "docs/kanban/fr-br/FR-083-global-ipw-gated-implementation-contract.md"
     },
     {
       "id": "P-RW-GIT",
@@ -20,17 +20,17 @@
     {
       "id": "P-RW-TASK-TOKEN",
       "rule": "RW requires parseable E:S:T in trigger; Steps 1c/1d block without it.",
-      "sourcePath": "docs/project-management/kanban/fr-br/FR-060-rw-task-argument-requirement.md"
+      "sourcePath": "docs/kanban/fr-br/FR-060-rw-task-argument-requirement.md"
     },
     {
       "id": "P-RW-STEP7",
       "rule": "RW Step 7 owns release-scope four-surface kanban reconciliation without UKW dependency.",
-      "sourcePath": "docs/project-management/kanban/fr-br/FR-092-canonical-rw-ukw-kanban-consistency-program.md"
+      "sourcePath": "docs/kanban/fr-br/FR-092-canonical-rw-ukw-kanban-consistency-program.md"
     },
     {
       "id": "P-EST-PADDING",
       "rule": "Default two-digit zero-padding for E/S/T when value < 10 in new writes.",
-      "sourcePath": "docs/project-management/kanban/fr-br/UXR-014-two-digit-est-identifier-default-formatting.md"
+      "sourcePath": "docs/kanban/fr-br/UXR-014-two-digit-est-identifier-default-formatting.md"
     },
     {
       "id": "P-TRIGGER-ROUTING",
@@ -62,7 +62,7 @@
       "intent": "kanban-intake",
       "keywords": ["FR", "BR", "UXR", "intake", "kboard", "fbuboard", "MoSCOW", "task doc"],
       "loadFirst": [
-        "docs/project-management/kanban/kboard.md",
+        "docs/kanban/kboard.md",
         "packages/frameworks/kanban/FR_BR_INTAKE_GUIDE.md"
       ],
       "relatedTrack": "kanban"
@@ -120,7 +120,7 @@
     {
       "id": "kanban",
       "label": "Kanban boards and FR/BR/UXR intake",
-      "entryPath": "docs/project-management/kanban/kboard.md"
+      "entryPath": "docs/kanban/kboard.md"
     },
     {
       "id": "governance",
@@ -179,7 +179,7 @@
     {
       "taskId": "E07:S07:T03",
       "summary": "BR-091 workflow validator slug path resolution (v0.7.7.3+1 released; CI verification pending)",
-      "taskDocPath": "docs/project-management/kanban/epics/epic-07/story-07-code-reviews/T03-workflow-validator-slug-path-resolution-br091.md",
+      "taskDocPath": "docs/kanban/epics/epic-07/story-07-code-reviews/T03-workflow-validator-slug-path-resolution-br091.md",
       "priority": "HIGH"
     }
   ]

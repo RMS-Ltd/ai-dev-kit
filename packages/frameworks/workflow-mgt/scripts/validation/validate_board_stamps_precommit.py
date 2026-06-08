@@ -34,7 +34,7 @@ from stamp_authority import (  # noqa: E402
 )
 
 BOARD_REL_PATHS = (
-    "docs/project-management/kanban/kboard.md",
+    "docs/kanban/kboard.md",
 )
 
 

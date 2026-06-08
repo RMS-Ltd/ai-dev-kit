@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # E06:S09:T13 — Planning: Spec, Tests, Implementation Plan (IPW)
 
-**Host Task:** [`T13-rw-install-mode-c-rw-config-generation-br084.md`](../project-management/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T13-rw-install-mode-c-rw-config-generation-br084.md) **(E06:S09:T13)**  
-**Planning for:** [BR-084](../project-management/kanban/fr-br/BR-084-rw-install-mode-c-missing-task-doc-pattern.md) · [GitHub #16](https://github.com/RMS-Ltd/ai-dev-kit/issues/16)  
+**Host Task:** [`T13-rw-install-mode-c-rw-config-generation-br084.md`](../kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T13-rw-install-mode-c-rw-config-generation-br084.md) **(E06:S09:T13)**  
+**Planning for:** [BR-084](../kanban/fr-br/BR-084-rw-install-mode-c-missing-task-doc-pattern.md) · [GitHub #16](https://github.com/RMS-Ltd/ai-dev-kit/issues/16)  
 **Status:** Implemented (2026-06-03 — shipped **v0.6.9.13+2**, pending user verification)
 
 ---
@@ -97,5 +97,5 @@ After fresh kanban + RW mode C, adopters get a complete `rw-config.yaml` kanban 
 
 ## References
 
-- [BR-084](../project-management/kanban/fr-br/BR-084-rw-install-mode-c-missing-task-doc-pattern.md)
+- [BR-084](../kanban/fr-br/BR-084-rw-install-mode-c-missing-task-doc-pattern.md)
 - [IPP-E6S9T12](IPP-E06S09T12-br083-rw-install-pattern-defaults.md)

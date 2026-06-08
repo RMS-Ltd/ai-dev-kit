@@ -11,7 +11,7 @@ housekeeping_policy: keep
 **Status:** Accepted  
 **Date:** 2026-06-04  
 **Deciders:** Maintainer (via E04:S19:T11 / UXR-017)  
-**Related:** [UXR-017](../../project-management/kanban/fr-br/UXR-017-kanban-epic-story-path-lowercase-naming.md), [UXR-011](../../project-management/kanban/fr-br/UXR-011-kanban-naming-hygiene-and-directory-systematic-cleanup.md), [epic-story-path-migration-guide.md](epic-story-path-migration-guide.md), [BR-083](../../project-management/kanban/fr-br/BR-083-rw-install-default-patterns-mismatch-fresh-kanban-layout.md)
+**Related:** [UXR-017](../../kanban/fr-br/UXR-017-kanban-epic-story-path-lowercase-naming.md), [UXR-011](../../kanban/fr-br/UXR-011-kanban-naming-hygiene-and-directory-systematic-cleanup.md), [epic-story-path-migration-guide.md](epic-story-path-migration-guide.md), [BR-083](../../kanban/fr-br/BR-083-rw-install-default-patterns-mismatch-fresh-kanban-layout.md)
 
 ---
 
@@ -62,4 +62,4 @@ Kanban installs (including Expenses Tracker) emit **Pascal-case** path segments 
 ## References
 
 - [IPP-E4S19T11](../../implementation-cycles/IPP-E04S19T11-kanban-epic-story-path-lowercase-naming.md)
-- [E04:S19:T11](../../project-management/kanban/epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T11-kanban-epic-story-path-lowercase-naming-uxr017.md)
+- [E04:S19:T11](../../kanban/epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T11-kanban-epic-story-path-lowercase-naming-uxr017.md)

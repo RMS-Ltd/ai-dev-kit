@@ -21,7 +21,7 @@ import validate_version_bump as vvb
 
 
 def test_extract_epic_story_from_path_legacy_stories_subdir():
-    path = Path("docs/project-management/kanban/epics/epic-03/stories/story-003-versioning.md")
+    path = Path("docs/kanban/epics/epic-03/stories/story-003-versioning.md")
     assert vvb.extract_epic_story_from_path(path) == (3, 3)
 
 
@@ -31,11 +31,11 @@ def test_find_story_file_ignores_references_epic_mismatch():
         orig_cwd = os.getcwd()
         try:
             os.chdir(tmp)
-            d = tmp / "docs/project-management/kanban/epics/epic-03/stories"
+            d = tmp / "docs/kanban/epics/epic-03/stories"
             d.mkdir(parents=True)
             sf = d / "story-003-versioning.md"
             sf.write_text("# Story 003\n**Code:** E3S03\n\n## References\n- Epic 4 Story 3\n")
-            found = vvb.find_story_file({"use_kanban": True, "kanban_root": "docs/project-management/kanban", "story_doc_pattern": "epics/epic-{epic:02d}/story-{story:02d}-*.md"}, 3, 3)
+            found = vvb.find_story_file({"use_kanban": True, "kanban_root": "docs/kanban", "story_doc_pattern": "epics/epic-{epic:02d}/story-{story:02d}-*.md"}, 3, 3)
             assert found and found.name == sf.name
         finally:
             os.chdir(orig_cwd)
@@ -106,7 +106,7 @@ VERSION_STRING = "0.6.7.101+31"
             (tmp / "rw-config.yaml").write_text("""
 version_file: src/proj/version.py
 use_kanban: true
-kanban_root: docs/project-management/kanban
+kanban_root: docs/kanban
 story_doc_pattern: epics/Epic-{epic}/Story-{story}-*.md
 """)
 
@@ -148,7 +148,7 @@ story_doc_pattern: epics/Epic-{epic}/Story-{story}-*.md
             config = {
                 "version_file": "src/proj/version.py",
                 "use_kanban": True,
-                "kanban_root": "docs/project-management/kanban",
+                "kanban_root": "docs/kanban",
                 "story_doc_pattern": "epics/Epic-{epic}/Story-{story}-*.md",
             }
 
@@ -231,7 +231,7 @@ VERSION_TASK = 101
 VERSION_BUILD = 32
 VERSION_STRING = "0.6.7.101+32"
 """)
-            config = {"use_kanban": True, "kanban_root": "docs/project-management/kanban"}
+            config = {"use_kanban": True, "kanban_root": "docs/kanban"}
             is_valid, _ = vvb.validate_version_bump(version_file, story_file=story_file, config=config)
             assert is_valid, "BUILD 32 (incremented) for perpetual task should pass"
         finally:
@@ -262,7 +262,7 @@ VERSION_STRING = "0.6.7.103+1"
             (tmp / "rw-config.yaml").write_text("""
 version_file: src/proj/version.py
 use_kanban: true
-kanban_root: docs/project-management/kanban
+kanban_root: docs/kanban
 story_doc_pattern: epics/Epic-{epic}/Story-{story}-*.md
 """)
 
@@ -301,7 +301,7 @@ story_doc_pattern: epics/Epic-{epic}/Story-{story}-*.md
             config = {
                 "version_file": "src/proj/version.py",
                 "use_kanban": True,
-                "kanban_root": "docs/project-management/kanban",
+                "kanban_root": "docs/kanban",
                 "story_doc_pattern": "epics/Epic-{epic}/Story-{story}-*.md",
             }
 
@@ -337,7 +337,7 @@ VERSION_STRING = "0.6.7.103+0"
             (tmp / "rw-config.yaml").write_text("""
 version_file: src/proj/version.py
 use_kanban: true
-kanban_root: docs/project-management/kanban
+kanban_root: docs/kanban
 story_doc_pattern: epics/Epic-{epic}/Story-{story}-*.md
 """)
 
@@ -403,7 +403,7 @@ story_doc_pattern: epics/Epic-{epic}/Story-{story}-*.md
             config = {
                 "version_file": "src/proj/version.py",
                 "use_kanban": True,
-                "kanban_root": "docs/project-management/kanban",
+                "kanban_root": "docs/kanban",
                 "story_doc_pattern": "epics/Epic-{epic}/Story-{story}-*.md",
             }
 
@@ -437,7 +437,7 @@ def test_validate_version_bump_art_requires_task_alignment():
             (tmp / "rw-config.yaml").write_text("""
 version_file: src/proj/version.py
 use_kanban: true
-kanban_root: docs/project-management/kanban
+kanban_root: docs/kanban
 story_doc_pattern: epics/Epic-{epic}/Story-{story}-*.md
 """)
             version_dir = tmp / "src" / "proj"
@@ -486,7 +486,7 @@ story_doc_pattern: epics/Epic-{epic}/Story-{story}-*.md
                 config={
                     "version_file": "src/proj/version.py",
                     "use_kanban": True,
-                    "kanban_root": "docs/project-management/kanban",
+                    "kanban_root": "docs/kanban",
                     "story_doc_pattern": "epics/Epic-{epic}/Story-{story}-*.md",
                 },
             )
@@ -609,7 +609,7 @@ VERSION_STRING = "0.6.7.103+0"
             config = {
                 "version_file": "src/proj/version.py",
                 "use_kanban": True,
-                "kanban_root": "docs/project-management/kanban",
+                "kanban_root": "docs/kanban",
                 "story_doc_pattern": "epics/Epic-{epic}/Story-{story}-*.md",
             }
             is_valid, errors = vvb.validate_version_bump(

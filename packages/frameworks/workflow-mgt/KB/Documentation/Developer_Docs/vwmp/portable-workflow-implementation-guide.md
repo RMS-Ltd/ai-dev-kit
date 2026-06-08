@@ -194,7 +194,7 @@ If using different branch naming:
 9. `.cursorrules` (RW trigger section only)
 
 ### Optional Files (if using Kanban):
-10. `docs/project-management/rituals/policy/kanban-governance-policy.md` (for context)
+10. `docs/governance/kanban/kanban-governance-policy.md` (for context)
 
 ---
 
@@ -236,7 +236,7 @@ If using different branch naming:
 
 - `docs/documentation/Developer_Docs/vwmp/release-workflow-usage.md` - Usage guide (VWMP-specific)
 - `docs/documentation/Developer_Docs/vwmp/best-practices.md` - Best practices
-- `docs/project-management/rituals/policy/kanban-governance-policy.md` - Kanban policy (if using Kanban)
+- `docs/governance/kanban/kanban-governance-policy.md` - Kanban policy (if using Kanban)
 
 ---
 

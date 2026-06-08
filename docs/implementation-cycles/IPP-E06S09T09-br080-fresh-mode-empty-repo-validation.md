@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # E06:S09:T09 — Planning: Spec, Tests, Implementation Plan (IPW)
 
-**Host Task:** [`T09-kanban-fresh-mode-validation-br080.md`](../project-management/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T09-kanban-fresh-mode-validation-br080.md) **(E06:S09:T09)**  
-**Planning for:** [BR-080](../project-management/kanban/fr-br/BR-080-kanban-fresh-mode-validation-requires-force-on-empty-repo.md) · [GitHub #12](https://github.com/RMS-Ltd/ai-dev-kit/issues/12)  
+**Host Task:** [`T09-kanban-fresh-mode-validation-br080.md`](../kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T09-kanban-fresh-mode-validation-br080.md) **(E06:S09:T09)**  
+**Planning for:** [BR-080](../kanban/fr-br/BR-080-kanban-fresh-mode-validation-requires-force-on-empty-repo.md) · [GitHub #12](https://github.com/RMS-Ltd/ai-dev-kit/issues/12)  
 **Status:** Approved (planning complete — **HIGH** greenfield blocker; await implementation authorization)
 
 ---
@@ -111,5 +111,5 @@ First-time adopters run `install_kanban_framework.py --mode fresh` on an empty t
 
 ## References
 
-- [BR-080](../project-management/kanban/fr-br/BR-080-kanban-fresh-mode-validation-requires-force-on-empty-repo.md)
-- [BR-078](../project-management/kanban/fr-br/BR-078-kanban-fresh-install-structure-template-missing.md)
+- [BR-080](../kanban/fr-br/BR-080-kanban-fresh-mode-validation-requires-force-on-empty-repo.md)
+- [BR-078](../kanban/fr-br/BR-078-kanban-fresh-install-structure-template-missing.md)

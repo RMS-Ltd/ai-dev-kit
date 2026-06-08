@@ -47,7 +47,7 @@ else:
 
 **Configuration:**
 - `kanban_root`: Path to kanban root directory (auto-detected from `rw-config.yaml` if available)
-- Default: `docs/project-management/kanban`
+- Default: `docs/kanban`
 
 ---
 

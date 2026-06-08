@@ -173,7 +173,7 @@ mv CHANGELOG-template-backup.md docs/changelog-and-release-notes/Template_Refere
 
 **🚨 IMPORTANT: Use the Kanban Installer (REQUIRED)**
 
-**⚠️ DO NOT manually copy epics from `docs/project-management/kanban/epics/`**
+**⚠️ DO NOT manually copy epics from `docs/kanban/epics/`**
 
 The template includes ai-dev-kit's **actual Kanban board** (with project-specific epics). This is **NOT** what you want. You need **canonical epic templates** that are contextualized for your project.
 
@@ -214,8 +214,8 @@ cat packages/frameworks/kanban/templates/CONTEXTUALIZATION_GUIDE.md
 After installation, update the board views:
 
 ```bash
-# Update docs/project-management/kanban/_index.md
-# Update docs/project-management/kanban/kboard.md
+# Update docs/kanban/_index.md
+# Update docs/kanban/kboard.md
 # Add your project epics to the board views
 ```
 
@@ -223,13 +223,13 @@ After installation, update the board views:
 
 ```bash
 # Check that canonical epics are installed (not ai-dev-kit's epics)
-ls docs/project-management/kanban/epics/
+ls docs/kanban/epics/
 
 # Should show: epic-01, epic-02, epic-03, epic-04, epic-05, epic-06, epic-07, epic-08, epic-10, epic-18, epic-22, epic-23
 # Should NOT show: epic-24 (ai-dev-kit specific)
 
 # Verify Epic 1 is contextualized with your project name
-grep "Epic 1:" docs/project-management/kanban/epics/epic-01/epic-01.md
+grep "Epic 1:" docs/kanban/epics/epic-01/epic-01.md
 # Should show your project name, not "AI Dev Kit"
 ```
 
@@ -350,7 +350,7 @@ python3 -c "import sys; sys.path.insert(0, 'src'); from fynd_deals import versio
 head -20 CHANGELOG.md
 
 # Check Kanban was updated
-ls -la docs/project-management/kanban/epics/
+ls -la docs/kanban/epics/
 ```
 
 ---
@@ -463,7 +463,7 @@ ls src/fynd_deals/version.py
 
 ### Issue: Kanban board shows template epics
 
-**⚠️ IMPORTANT:** Do NOT manually copy epics from `docs/project-management/kanban/epics/`. These are ai-dev-kit's actual epics, not canonical templates.
+**⚠️ IMPORTANT:** Do NOT manually copy epics from `docs/kanban/epics/`. These are ai-dev-kit's actual epics, not canonical templates.
 
 **Solution:**
 ```bash
@@ -477,14 +477,14 @@ python3 packages/frameworks/kanban/scripts/install_kanban_framework.py --mode fr
 # - Exclude ai-dev-kit project-specific epics
 
 # If you already manually copied (WRONG approach), remove them first:
-rm -rf docs/project-management/kanban/epics/Epic-*
+rm -rf docs/kanban/epics/Epic-*
 
 # Then run the installer:
 python3 packages/frameworks/kanban/scripts/install_kanban_framework.py --mode fresh
 
 # Update board views
-# Edit docs/project-management/kanban/_index.md
-# Edit docs/project-management/kanban/kboard.md
+# Edit docs/kanban/_index.md
+# Edit docs/kanban/kboard.md
 ```
 
 ---
@@ -514,7 +514,7 @@ After completing setup:
 - `README.md` - Project overview
 - `src/fynd_deals/version.py` - Version configuration
 - `CHANGELOG.md` - Project changelog
-- `docs/project-management/kanban/` - Kanban board
+- `docs/kanban/` - Kanban board
 - `packages/frameworks/workflow-mgt/config/` - RW configuration
 
 **Files You Can Keep (Framework Documentation):**
@@ -523,7 +523,7 @@ After completing setup:
 - `docs/architecture/` - Architecture docs (reference)
 
 **Files You Can Remove:**
-- `docs/project-management/kanban/epics/Epic-*` - Template epics (after creating your own)
+- `docs/kanban/epics/Epic-*` - Template epics (after creating your own)
 - `docs/changelog-and-release-notes/changelog-archive/` - Template changelog archives (optional)
 
 ---

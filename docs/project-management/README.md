@@ -6,18 +6,8 @@ expires_at: null
 housekeeping_policy: keep
 ---
 
-# Project Management
+# Project Management (retired shell)
 
-This section contains **project management** documentation for the `ai-dev-kit` repository.
+> **Moved:** Kanban work now lives at [`docs/kanban/`](../kanban/). Rituals/policy content was consolidated under [`docs/governance/kanban/`](../governance/kanban/) per [FR-101](../kanban/fr-br/FR-101-consolidate-governance-under-docs-governance.md) and [FR-118](../kanban/fr-br/FR-118-promote-kanban-to-docs-kanban-retire-project-management-shell.md).
 
-## Structure
-
-- `kanban/` – Kanban board, epics, and stories for this repo
-- `rituals/` – Rituals and policies for project management
-
-## Key Locations
-
-- **Kanban Board:** `kanban/_index.md`
-- **Epics Overview:** `kanban/epics/`
-- **Kanban Governance Policy:** `rituals/policy/kanban-governance-policy.md`
-
+This directory is retained as a redirect stub for one release cycle. Update bookmarks and `rw-config.yaml` to use `docs/kanban/` as `kanban_root`.

@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # E06:S09:T23 — Planning: Spec, Tests, Implementation Plan (IPW)
 
-**Host Task:** [`T23-greenfield-install-github-packages-delivery-uxr021.md`](../project-management/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T23-greenfield-install-github-packages-delivery-uxr021.md) **(E06:S09:T23)**  
-**Planning for:** [UXR-021](../project-management/kanban/fr-br/UXR-021-greenfield-install-github-packages-delivery-channel.md)  
+**Host Task:** [`T23-greenfield-install-github-packages-delivery-uxr021.md`](../kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T23-greenfield-install-github-packages-delivery-uxr021.md) **(E06:S09:T23)**  
+**Planning for:** [UXR-021](../kanban/fr-br/UXR-021-greenfield-install-github-packages-delivery-channel.md)  
 **Status:** Approved
 
 ---
@@ -160,7 +160,7 @@ Adopters in submodule-blocked or no-git environments acquire the lean ADK bundle
 
 ## References
 
-- [UXR-021](../project-management/kanban/fr-br/UXR-021-greenfield-install-github-packages-delivery-channel.md)
-- [FR-110](../project-management/kanban/fr-br/FR-110-lean-adopter-distribution-footprint-and-vendor-bundle.md)
+- [UXR-021](../kanban/fr-br/UXR-021-greenfield-install-github-packages-delivery-channel.md)
+- [FR-110](../kanban/fr-br/FR-110-lean-adopter-distribution-footprint-and-vendor-bundle.md)
 - [ADR-021](../architecture/standards-and-adrs/ADR-021-greenfield-install-ghcr-delivery-channel.md)
-- [E06:S09:T21](../project-management/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T21-lean-adopter-distribution-footprint-fr110.md)
+- [E06:S09:T21](../kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T21-lean-adopter-distribution-footprint-fr110.md)

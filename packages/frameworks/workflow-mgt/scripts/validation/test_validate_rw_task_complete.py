@@ -28,7 +28,7 @@ def test_cli_requires_requested(tmp_path: Path):
 @pytest.fixture
 def minimal_complete_task(tmp_path: Path) -> Path:
     root = tmp_path
-    task_dir = root / "docs/project-management/kanban/epics/epic-09/story-01-test"
+    task_dir = root / "docs/kanban/epics/epic-09/story-01-test"
     task_dir.mkdir(parents=True)
     task_file = task_dir / "T01-foo.md"
     task_file.write_text(
@@ -106,6 +106,6 @@ def test_rw_k_skips_complete_check(minimal_complete_task: Path):
 
 
 def test_missing_task_doc(tmp_path: Path):
-    (tmp_path / "docs/project-management/kanban/epics/epic-01").mkdir(parents=True)
+    (tmp_path / "docs/kanban/epics/epic-01").mkdir(parents=True)
     r = _run(["--requested", "E1S01T99"], cwd=tmp_path)
     assert r.returncode == 1

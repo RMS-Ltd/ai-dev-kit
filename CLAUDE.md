@@ -129,5 +129,5 @@ When any of these triggers appear at the start of a user message, treat them as 
 - All commits and tags go through RW — never `git commit` or `git push` directly outside RW.
 - Version schema: `RC.EPIC.STORY.TASK+BUILD` (internal); SemVer for external display.
 - Config-driven paths: `rw-config.yaml` at project root is the single source of truth for file paths.
-- Kanban board: `docs/project-management/kanban/kboard.md`
+- Kanban board: `docs/kanban/kboard.md`
 - Validators: `packages/frameworks/workflow-mgt/scripts/validation/`

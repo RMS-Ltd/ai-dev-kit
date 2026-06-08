@@ -57,7 +57,7 @@ def kanban_root(project_root: Path, config: Optional[dict]) -> Path:
     if config and config.get("use_kanban") and config.get("kanban_root"):
         kr = Path(config["kanban_root"])
         return project_root / kr if not kr.is_absolute() else kr
-    return project_root / "docs/project-management/kanban"
+    return project_root / "docs/kanban"
 
 
 def parse_story_id(token: str) -> Optional[Tuple[int, int]]:

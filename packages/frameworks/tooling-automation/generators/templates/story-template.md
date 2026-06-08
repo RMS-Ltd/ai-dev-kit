@@ -69,5 +69,5 @@ housekeeping_policy: keep
 
 ## References
 
-- `docs/project-management/kanban/epics/Epic-{epic}/Epic-{epic}.md`
+- `docs/kanban/epics/Epic-{epic}/Epic-{epic}.md`
 

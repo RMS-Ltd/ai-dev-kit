@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # E06:S09:T19 — Planning: Spec, Tests, Implementation Plan (IPW)
 
-**Host Task:** [`T19-rw-install-version-file-scaffold-br088.md`](../project-management/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T19-rw-install-version-file-scaffold-br088.md) **(E06:S09:T19)**  
-**Planning for:** [BR-088](../project-management/kanban/fr-br/BR-088-rw-install-mode-c-missing-version-file-scaffold.md) · [GitHub #18](https://github.com/RMS-Ltd/ai-dev-kit/issues/18)  
+**Host Task:** [`T19-rw-install-version-file-scaffold-br088.md`](../kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T19-rw-install-version-file-scaffold-br088.md) **(E06:S09:T19)**  
+**Planning for:** [BR-088](../kanban/fr-br/BR-088-rw-install-mode-c-missing-version-file-scaffold.md) · [GitHub #18](https://github.com/RMS-Ltd/ai-dev-kit/issues/18)  
 **Status:** Implemented (**v0.6.9.19+1** — pending user verification)
 
 ---
@@ -87,4 +87,4 @@ File: [`tests/test_install_release_workflow_version_scaffold.py`](https://github
 
 ## References
 
-- [BR-088](../project-management/kanban/fr-br/BR-088-rw-install-mode-c-missing-version-file-scaffold.md)
+- [BR-088](../kanban/fr-br/BR-088-rw-install-mode-c-missing-version-file-scaffold.md)

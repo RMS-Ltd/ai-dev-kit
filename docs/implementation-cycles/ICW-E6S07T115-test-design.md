@@ -43,4 +43,4 @@ Verify that timestamp updates are evidence-driven, rewrite-immune, and auditable
 ## References
 
 - [ICW Specification](ICW-E6S07T115-implementation-plan.md)
-- [Task E6:S07:T115](../project-management/kanban/epics/epic-06/story-07-adk-implementation-analysis-and-package-management/T115-last-modified-stamp-forensic-integrity-guardrails.md)
+- [Task E6:S07:T115](../kanban/epics/epic-06/story-07-adk-implementation-analysis-and-package-management/T115-last-modified-stamp-forensic-integrity-guardrails.md)

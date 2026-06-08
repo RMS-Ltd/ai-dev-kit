@@ -9,7 +9,7 @@ housekeeping_policy: keep
 # Adopter note: Single-board migration (ADR-018)
 
 **Audience:** Brownfield projects with legacy dual boards (`kboard.md` + `fbuboard.md`) or `kanban-board.md` alias  
-**Authority:** [ADR-018](../../../docs/architecture/standards-and-adrs/ADR-018-single-kanban-board-consolidation.md) · [UXR-020](../../../docs/project-management/kanban/fr-br/UXR-020-fbuboard-necessity-after-task-fbu-wiring.md)
+**Authority:** [ADR-018](../../../docs/architecture/standards-and-adrs/ADR-018-single-kanban-board-consolidation.md) · [UXR-020](../../../docs/kanban/fr-br/UXR-020-fbuboard-necessity-after-task-fbu-wiring.md)
 
 ---
 

@@ -118,7 +118,7 @@ def main(argv: Optional[Sequence[str]] = None) -> int:
         "kanban_root",
         type=Path,
         nargs="?",
-        default=Path("docs/project-management/kanban"),
+        default=Path("docs/kanban"),
         help="Kanban documentation root",
     )
     parser.add_argument("--story", type=Path, action="append", help="Validate specific Story file(s) only")

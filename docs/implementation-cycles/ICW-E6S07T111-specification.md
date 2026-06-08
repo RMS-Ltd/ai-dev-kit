@@ -10,7 +10,7 @@ housekeeping_policy: keep
 
 **Task:** E6:S07:T111  
 **Related FR:** FR-078  
-**Host Task:** [T111-comprehensive-install-event-contract-logging-and-feedback-quality.md](../project-management/kanban/epics/epic-06/story-07-adk-implementation-analysis-and-package-management/T111-comprehensive-install-event-contract-logging-and-feedback-quality.md)  
+**Host Task:** [T111-comprehensive-install-event-contract-logging-and-feedback-quality.md](../kanban/epics/epic-06/story-07-adk-implementation-analysis-and-package-management/T111-comprehensive-install-event-contract-logging-and-feedback-quality.md)  
 **Created:** 2026-04-09
 
 ---

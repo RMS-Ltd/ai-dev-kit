@@ -48,7 +48,7 @@ You can submit Bug Reports, Feature Requests, UX Research findings, or User Acce
 
 **What Happens Next:**
 - Issue is automatically converted to a BR document
-- BR document is created in `docs/project-management/kanban/fr-br/`
+- BR document is created in `docs/kanban/fr-br/`
 - Issue is commented with document link
 - BR is processed through intake workflow
 - Kanban task is created and linked back to the issue
@@ -69,7 +69,7 @@ You can submit Bug Reports, Feature Requests, UX Research findings, or User Acce
 
 **What Happens Next:**
 - Issue is automatically converted to an FR document
-- FR document is created in `docs/project-management/kanban/fr-br/`
+- FR document is created in `docs/kanban/fr-br/`
 - Issue is commented with document link
 - FR is processed through intake workflow
 - Kanban task is created and linked back to the issue
@@ -89,7 +89,7 @@ You can submit Bug Reports, Feature Requests, UX Research findings, or User Acce
 
 **What Happens Next:**
 - Issue is automatically converted to a UXR document
-- UXR document is created in `docs/project-management/kanban/fr-br/`
+- UXR document is created in `docs/kanban/fr-br/`
 - Issue is commented with document link
 - UXR is processed through intake workflow
 - Kanban task is created and linked back to the issue
@@ -148,7 +148,7 @@ The UXR template includes:
 
 ### Conversion Process
 
-**Status (2026-03-30):** The GitHub Actions workflow that converted issues to `fr-br` documents is **disabled**. It was defined in [`.github/workflows/fr-br-intake.yml.DISABLED`](../../../.github/workflows/fr-br-intake.yml.DISABLED) because GitHub continued to **schedule runs on every push** even though the workflow declared `on: issues` only (see [BR-053](../../../docs/project-management/kanban/fr-br/BR-053-github-actions-workflow-push-trigger-bug.md), [E2:S11:T12](../../../docs/project-management/kanban/epics/epic-02/story-11-intake-workflow-automation/T12-github-actions-workflow-bug-resolution.md)). **Use manual intake:** the [intake-process](../../../.cursor/skills/intake-process/SKILL.md) skill / maintainer process until the workflow is re-enabled after a verified GitHub-side fix.
+**Status (2026-03-30):** The GitHub Actions workflow that converted issues to `fr-br` documents is **disabled**. It was defined in [`.github/workflows/fr-br-intake.yml.DISABLED`](../../../.github/workflows/fr-br-intake.yml.DISABLED) because GitHub continued to **schedule runs on every push** even though the workflow declared `on: issues` only (see [BR-053](../../../docs/kanban/fr-br/BR-053-github-actions-workflow-push-trigger-bug.md), [E2:S11:T12](../../../docs/kanban/epics/epic-02/story-11-intake-workflow-automation/T12-github-actions-workflow-bug-resolution.md)). **Use manual intake:** the [intake-process](../../../.cursor/skills/intake-process/SKILL.md) skill / maintainer process until the workflow is re-enabled after a verified GitHub-side fix.
 
 When automation is restored, submitting an issue using one of our templates should:
 
@@ -158,7 +158,7 @@ When automation is restored, submitting an issue using one of our templates shou
    - `enhancement` → Feature Request (FR)
    - `ux-research` → User Experience Research (UXR)
    - `feedback` or `uat` → User Acceptance Testing Report (FB)
-3. **Document Creation:** A new document is created in `docs/project-management/kanban/fr-br/`
+3. **Document Creation:** A new document is created in `docs/kanban/fr-br/`
 4. **Template Population:** The document is populated with issue data
 5. **GitHub Link:** The document includes a link back to the GitHub Issue
 6. **Issue Comment:** A comment is added to the issue with the document link
@@ -224,7 +224,7 @@ If your issue isn't automatically converted:
 
 If you can't find your document:
 
-1. **Check Path:** Documents are in `docs/project-management/kanban/fr-br/`
+1. **Check Path:** Documents are in `docs/kanban/fr-br/`
 2. **Check Naming:** Documents follow the pattern `{TYPE}-{NUMBER}-{slug}.md`
 3. **Check Issue Comment:** The issue comment includes the document path
 

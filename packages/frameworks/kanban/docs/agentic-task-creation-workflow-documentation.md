@@ -55,13 +55,13 @@ from agentic_task_workflow import AgenticTaskWorkflow
 from pathlib import Path
 
 # Initialize workflow
-kanban_path = Path("docs/project-management/kanban")
+kanban_path = Path("docs/kanban")
 framework_path = Path("packages/frameworks/kanban")
 
 workflow = AgenticTaskWorkflow(kanban_path, framework_path)
 
 # Process an FR/BR document
-fr_br_path = Path("docs/project-management/kanban/fr-br/FR-012-example.md")
+fr_br_path = Path("docs/kanban/fr-br/FR-012-example.md")
 result = workflow.process_fr_br(fr_br_path)
 
 # Check results

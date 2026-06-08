@@ -90,7 +90,7 @@ This epic encompasses Feature Request implementation and management, including F
 - Depends on Epic 4 Story 2 (FR/BR Intake Process)
 - *Parallel Development Candidacy:* Blocked (requires Epic 4 intake foundation)
 
-> Full story: `docs/project-management/kanban/epics/epic-05/story-01-fr-intake-and-processing-workflow.md`
+> Full story: `docs/kanban/epics/epic-05/story-01-fr-intake-and-processing-workflow.md`
 
 ---
 
@@ -124,7 +124,7 @@ This epic encompasses Feature Request implementation and management, including F
 - Depends on Story 1 (FR Intake and Processing Workflow)
 - *Parallel Development Candidacy:* Blocked (requires Story 1 intake workflow)
 
-> Full story: `docs/project-management/kanban/epics/epic-05/story-02-fr-prioritization-and-planning.md`
+> Full story: `docs/kanban/epics/epic-05/story-02-fr-prioritization-and-planning.md`
 
 ---
 
@@ -158,7 +158,7 @@ This epic encompasses Feature Request implementation and management, including F
 - Depends on Story 2 (FR Prioritization and Planning)
 - *Parallel Development Candidacy:* Blocked (requires Story 2 prioritization)
 
-> Full story: `docs/project-management/kanban/epics/epic-05/story-03-fr-implementation-patterns.md`
+> Full story: `docs/kanban/epics/epic-05/story-03-fr-implementation-patterns.md`
 
 ---
 

@@ -83,7 +83,7 @@ python3 install_kanban_framework.py [--mode MODE] [--kanban-path PATH] [--dry-ru
 
 **Arguments:**
 - `--mode MODE` - Installation mode: fresh, migration, update, hybrid, canonical_adoption, auto (default: auto)
-- `--kanban-path PATH` - Path to Kanban directory (default: `docs/project-management/kanban`)
+- `--kanban-path PATH` - Path to Kanban directory (default: `docs/kanban`)
 - `--dry-run` - Preview changes without modifying files
 - `--force` - Skip confirmation prompts
 - `--skip-detection` - Skip detection step (use existing detection_report.json)
@@ -124,14 +124,14 @@ python3 detect_existing_structure.py [--kanban-path PATH] [--output OUTPUT_FILE]
 ```
 
 **Arguments:**
-- `--kanban-path PATH` - Path to Kanban directory (default: `docs/project-management/kanban`)
+- `--kanban-path PATH` - Path to Kanban directory (default: `docs/kanban`)
 - `--output OUTPUT_FILE` - Output file for detection report (default: `detection_report.json`)
 - `--verbose` - Enable verbose output
 
 **Example:**
 ```bash
 python3 detect_existing_structure.py \
-  --kanban-path docs/project-management/kanban \
+  --kanban-path docs/kanban \
   --output detection_report.json \
   --verbose
 ```
@@ -154,7 +154,7 @@ python3 migrate_structure.py [--analysis-report REPORT] [--mode MODE] [--dry-run
 - `--mode MODE` - Installation mode: fresh, migration, update, hybrid, canonical_adoption, auto (default: auto-detect)
 - `--dry-run` - Preview changes without modifying files
 - `--backup-dir DIR` - Directory for backups (default: auto-generated)
-- `--kanban-path PATH` - Path to Kanban directory (default: `docs/project-management/kanban`)
+- `--kanban-path PATH` - Path to Kanban directory (default: `docs/kanban`)
 - `--force` - Skip confirmation prompts
 
 **Example:**
@@ -348,7 +348,7 @@ If you prefer to run utilities individually:
 
 1. **Detect existing structure:**
    ```bash
-   python3 detect_existing_structure.py --kanban-path docs/project-management/kanban --output detection_report.json
+   python3 detect_existing_structure.py --kanban-path docs/kanban --output detection_report.json
    ```
 
 2. **Analyze structure and generate migration plan:**
@@ -375,7 +375,7 @@ If you prefer to run utilities individually:
 {
   "status": "detected",
   "detection_date": "2025-12-10T...",
-  "kanban_path": "docs/project-management/kanban",
+  "kanban_path": "docs/kanban",
   "epics": [...],
   "stories": [...],
   "tasks": [...],

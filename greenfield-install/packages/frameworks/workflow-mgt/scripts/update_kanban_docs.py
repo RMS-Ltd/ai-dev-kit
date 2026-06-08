@@ -292,7 +292,7 @@ def resolve_kanban_paths(
             kanban_root = project_root / kanban_root_str
     else:
         # Default fallback patterns
-        kanban_root = project_root / "docs/project-management/kanban"
+        kanban_root = project_root / "docs/kanban"
     
     # Ensure kanban_root is absolute
     if not kanban_root.is_absolute():
@@ -370,7 +370,7 @@ def resolve_kanban_paths(
         # Default fallback - try multiple locations
         board_candidates = [
             kanban_root / "kboard.md",
-            project_root / "docs/project-management/kanban/kboard.md",
+            project_root / "docs/kanban/kboard.md",
         ]
         for candidate in board_candidates:
             # Resolve candidate to absolute path
@@ -904,7 +904,7 @@ def render_ipp_segment_for_task(task_id: str, project_root: Path) -> str:
     if not artifact_path:
         return "—No IPP—"
 
-    # Boards live in docs/project-management/kanban, so link up two levels.
+    # Boards live in docs/kanban, so link up two levels.
     rel_path = Path("..") / ".." / "implementation-cycles" / artifact_path.name
     return f"[—IPP—]({rel_path.as_posix()})"
 
@@ -1730,7 +1730,7 @@ def run_corpus_canonical_sweep(
         sweep_report is a structured dict.
     """
     boards = [
-        project_root / "docs/project-management/kanban/kboard.md",
+        project_root / "docs/kanban/kboard.md",
         ]
     if timestamp_value is None:
         timestamp_value = datetime.utcnow().strftime("%Y-%m-%d %H:%M UTC")
@@ -1812,7 +1812,7 @@ def enforce_terminal_timestamps_on_boards(
     UKW/hygiene defaults to ``non_substantive`` (FR-097): no synthetic stamp churn.
     """
     boards = [
-        project_root / "docs/project-management/kanban/kboard.md",
+        project_root / "docs/kanban/kboard.md",
         ]
     timestamp_now = datetime.now().strftime("%Y-%m-%d %H:%M UTC")
     changes: List[str] = []
@@ -2209,7 +2209,7 @@ def validate_updates(
 #   - .cursorrules Step 7
 #   - packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md
 #   - packages/frameworks/kanban/policies/kanban-governance-policy.md
-#   - docs/project-management/kanban/fr-br/FR-092-canonical-rw-ukw-kanban-consistency-program.md
+#   - docs/kanban/fr-br/FR-092-canonical-rw-ukw-kanban-consistency-program.md
 ###############################################################################
 
 
@@ -2396,7 +2396,7 @@ def discover_release_scope_task_doc(
     Discover the canonical task doc for the release-scope task (E:S:T).
     Returns the resolved path if found, else None.
     """
-    kanban_root = project_root / "docs/project-management/kanban"
+    kanban_root = project_root / "docs/kanban"
     story_dir_patterns = [
         kanban_root / f"epics/Epic-{epic}" / f"Story-{story:03d}-*",
         kanban_root / f"epics/Epic-{epic}" / f"Story-{story}-*",
@@ -2430,7 +2430,7 @@ def discover_release_scope_fbu_docs(
         content = task_doc_path.read_text()
     except Exception:
         return []
-    fbu_root = project_root / "docs/project-management/kanban/fr-br"
+    fbu_root = project_root / "docs/kanban/fr-br"
     candidates: List[Path] = []
     seen: set = set()
     pattern = re.compile(r"(FR-\d+|BR-\d+|UXR-\d+)[^\s]*?\.md", re.IGNORECASE)
@@ -2484,7 +2484,7 @@ def build_four_surface_report(
     fbu_doc_paths = discover_release_scope_fbu_docs(task_doc_path, project_root)
     kboard_path = paths.get("kanban_board")
     if kboard_path is None:
-        candidate = project_root / "docs/project-management/kanban/kboard.md"
+        candidate = project_root / "docs/kanban/kboard.md"
         if candidate.exists():
             kboard_path = candidate.resolve()
     surface_specs = [
@@ -2662,7 +2662,7 @@ def main():
         print("🔍 Attempting manual discovery...")
         
         # Manual fallback discovery
-        kanban_root = Path.cwd() / "docs/project-management/kanban"
+        kanban_root = Path.cwd() / "docs/kanban"
         manual_patterns = [
             kanban_root / f"epics/Epic-{epic}/Story-{story:03d}-*.md",
             kanban_root / f"epics/Epic-{epic}/Story-{story}-*.md",

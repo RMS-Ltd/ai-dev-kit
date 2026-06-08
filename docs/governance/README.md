@@ -8,7 +8,7 @@ housekeeping_policy: keep
 
 # Governance documentation (book workspace)
 
-**Status:** Active (FR-101 complete **v0.7.1.11+8**) — [ADR-007](../architecture/standards-and-adrs/ADR-007-book-governance-document-topology.md) · [FR-101](../project-management/kanban/fr-br/FR-101-consolidate-governance-under-docs-governance.md)
+**Status:** Active (FR-101 complete **v0.7.1.11+8**) — [ADR-007](../architecture/standards-and-adrs/ADR-007-book-governance-document-topology.md) · [FR-101](../kanban/fr-br/FR-101-consolidate-governance-under-docs-governance.md)
 
 ---
 
@@ -53,6 +53,13 @@ Single navigation entry for **book-active** governance: Kanban rules, versioning
 - [ipw-adr-necessity-checklist.md](../architecture/standards-and-adrs/ipw-adr-necessity-checklist.md)
 - [Workflow flaws reference](../architecture/standards-and-adrs/workflow-flaws-reference-guide.md)
 - [Versioning error reference](../architecture/standards-and-adrs/versioning-error-reference-guide.md)
+
+---
+
+## Book Kanban work (`docs/kanban/`)
+
+- **Board:** [kboard.md](../kanban/kboard.md) · **Intake:** [fr-br/](../kanban/fr-br/)
+- **Kanban rehousing (FR-118):** [KANBAN-REHOUSING-INVENTORY.md](KANBAN-REHOUSING-INVENTORY.md) · [IPP-E07S01T12](../implementation-cycles/IPP-E07S01T12-kanban-path-promotion-fr118.md)
 
 ---
 

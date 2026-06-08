@@ -281,7 +281,7 @@ After generating a workflow:
 
 - **Agent-Driven Execution:** `docs/documentation/Developer_Docs/vwmp/agent-driven-workflow-execution.md`
 - **Release Workflow:** `docs/documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md`
-- **Workflow Taxonomy:** `docs/project-management/kanban/epics/epic-02/story-03-additional-workflows-and-examples/T01-workflow-taxonomy.md`
+- **Workflow Taxonomy:** `docs/kanban/epics/epic-02/story-03-additional-workflows-and-examples/T01-workflow-taxonomy.md`
 - **Existing Workflows:** `workflows/`
 
 ---

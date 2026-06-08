@@ -250,7 +250,7 @@ def locate_task_doc_for_version(
         if not kanban_root.is_absolute():
             kanban_root = project_root / kanban_root
     else:
-        kanban_root = project_root / "docs/project-management/kanban"
+        kanban_root = project_root / "docs/kanban"
     
     epic_dir = kanban_root / f"epics/Epic-{epic}"
     

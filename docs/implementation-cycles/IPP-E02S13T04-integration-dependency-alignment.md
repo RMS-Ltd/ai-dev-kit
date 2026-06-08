@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # E02:S13:T04 — Planning: Integration and Dependency Alignment (IPW)
 
-**Host Task:** [`T04-review-integrations-and-dependency-alignment.md`](../project-management/kanban/epics/epic-02/story-13-workflow-management-package-implementation-review/T04-review-integrations-and-dependency-alignment.md) **(E02:S13:T04)**  
-**Planning for:** [T01 expectations baseline](../project-management/kanban/epics/epic-02/story-13-workflow-management-package-implementation-review/T01-expectations-baseline.md) · [T02 component inventory](../project-management/kanban/epics/epic-02/story-13-workflow-management-package-implementation-review/component-inventory-map.md) · [T03 behavior validation](../project-management/kanban/epics/epic-02/story-13-workflow-management-package-implementation-review/workflow-behavior-validation-report.md) · [E07:S07:T01 report](../project-management/kanban/epics/epic-07/story-07-code-reviews/T01-workflow-machinery-code-review-report.md)  
+**Host Task:** [`T04-review-integrations-and-dependency-alignment.md`](../kanban/epics/epic-02/story-13-workflow-management-package-implementation-review/T04-review-integrations-and-dependency-alignment.md) **(E02:S13:T04)**  
+**Planning for:** [T01 expectations baseline](../kanban/epics/epic-02/story-13-workflow-management-package-implementation-review/T01-expectations-baseline.md) · [T02 component inventory](../kanban/epics/epic-02/story-13-workflow-management-package-implementation-review/component-inventory-map.md) · [T03 behavior validation](../kanban/epics/epic-02/story-13-workflow-management-package-implementation-review/workflow-behavior-validation-report.md) · [E07:S07:T01 report](../kanban/epics/epic-07/story-07-code-reviews/T01-workflow-machinery-code-review-report.md)  
 **Status:** Implemented (2026-06-05)
 
 ---
@@ -233,13 +233,13 @@ Each row: expected integration (T01/README/schema), observed (evidence), status 
 
 ## References
 
-- [T04 task doc](../project-management/kanban/epics/epic-02/story-13-workflow-management-package-implementation-review/T04-review-integrations-and-dependency-alignment.md)
-- [T01 expectations baseline](../project-management/kanban/epics/epic-02/story-13-workflow-management-package-implementation-review/T01-expectations-baseline.md)
-- [T02 component inventory](../project-management/kanban/epics/epic-02/story-13-workflow-management-package-implementation-review/component-inventory-map.md)
-- [T03 behavior validation report](../project-management/kanban/epics/epic-02/story-13-workflow-management-package-implementation-review/workflow-behavior-validation-report.md)
-- [E07:S07:T01 report](../project-management/kanban/epics/epic-07/story-07-code-reviews/T01-workflow-machinery-code-review-report.md)
+- [T04 task doc](../kanban/epics/epic-02/story-13-workflow-management-package-implementation-review/T04-review-integrations-and-dependency-alignment.md)
+- [T01 expectations baseline](../kanban/epics/epic-02/story-13-workflow-management-package-implementation-review/T01-expectations-baseline.md)
+- [T02 component inventory](../kanban/epics/epic-02/story-13-workflow-management-package-implementation-review/component-inventory-map.md)
+- [T03 behavior validation report](../kanban/epics/epic-02/story-13-workflow-management-package-implementation-review/workflow-behavior-validation-report.md)
+- [E07:S07:T01 report](../kanban/epics/epic-07/story-07-code-reviews/T01-workflow-machinery-code-review-report.md)
 - [rw-config-schema.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/config/rw-config-schema.md)
 - [framework-dependency-architecture.md](../architecture/standards-and-adrs/framework-dependency-architecture.md)
-- [FR-098 ECC harness](../project-management/kanban/fr-br/FR-098-ecc-optional-harness-layer-integration.md)
-- [FR-092 RW Step 7 kanban contract](../project-management/kanban/fr-br/FR-092-canonical-rw-ukw-kanban-consistency-program.md)
-- [FR-042](../project-management/kanban/fr-br/FR-042-implementation-planning-workflow-ipw.md)
+- [FR-098 ECC harness](../kanban/fr-br/FR-098-ecc-optional-harness-layer-integration.md)
+- [FR-092 RW Step 7 kanban contract](../kanban/fr-br/FR-092-canonical-rw-ukw-kanban-consistency-program.md)
+- [FR-042](../kanban/fr-br/FR-042-implementation-planning-workflow-ipw.md)

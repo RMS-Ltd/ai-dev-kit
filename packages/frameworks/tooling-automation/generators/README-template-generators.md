@@ -60,7 +60,7 @@ from generators.base import GeneratorConfig
 from pathlib import Path
 
 config = GeneratorConfig(
-    output_dir=Path("docs/project-management/kanban/epics"),
+    output_dir=Path("docs/kanban/epics"),
     template_dir=Path("generators/templates"),
     overwrite=True
 )

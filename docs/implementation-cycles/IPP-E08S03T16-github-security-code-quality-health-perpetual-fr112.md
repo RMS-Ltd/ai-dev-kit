@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # E08:S03:T16 — Planning: Spec, Tests, Implementation Plan (IPW)
 
-**Host Task:** [`T16-github-security-code-quality-health-perpetual-fr112.md`](../project-management/kanban/epics/epic-08/story-03-automation-scripts/T16-github-security-code-quality-health-perpetual-fr112.md) **(E08:S03:T16)**  
-**Planning for:** [FR-112](../project-management/kanban/fr-br/FR-112-perpetual-github-ci-and-security-health-lanes.md)  
+**Host Task:** [`T16-github-security-code-quality-health-perpetual-fr112.md`](../kanban/epics/epic-08/story-03-automation-scripts/T16-github-security-code-quality-health-perpetual-fr112.md) **(E08:S03:T16)**  
+**Planning for:** [FR-112](../kanban/fr-br/FR-112-perpetual-github-ci-and-security-health-lanes.md)  
 **Status:** Approved (Wave 0 @ v0.8.3.16+1; Wave 1 re-scan @ `f6aa4dca`; **Wave 2+ revision** 2026-06-07 — deferral lifted)
 
 > **IPW:** Perpetual lane for GitHub **code scanning** + **Code Quality dashboard** hygiene. **Does not** own [Actions](https://github.com/RMS-Ltd/ai-dev-kit/actions) CI (→ **E08:S03:T15**).
@@ -223,11 +223,11 @@ Establish **E08:S03:T16** as the operational perpetual lane for GitHub **code sc
 
 | Doc ID | Path | Scope of change | Tied to |
 | ------ | ---- | --------------- | ------- |
-| D-U1 | `docs/project-management/kanban/epics/epic-08/story-03-automation-scripts/T16-github-security-code-quality-health-perpetual-fr112.md` | Baseline + coordination + AC4 | steps 2–4, 7 |
-| D-U2 | `docs/project-management/kanban/fr-br/FR-112-perpetual-github-ci-and-security-health-lanes.md` | F2 progress | step 5 |
-| D-U3 | `docs/project-management/kanban/epics/epic-08/story-03-automation-scripts.md` | Checklist | step 6 |
-| D-U4 | `docs/project-management/kanban/kboard.md` | O-band IPP + version stamp | step 6 |
-| D-U5 | `docs/project-management/kanban/epics/epic-08/epic-08.md` | Story line | step 6 |
+| D-U1 | `docs/kanban/epics/epic-08/story-03-automation-scripts/T16-github-security-code-quality-health-perpetual-fr112.md` | Baseline + coordination + AC4 | steps 2–4, 7 |
+| D-U2 | `docs/kanban/fr-br/FR-112-perpetual-github-ci-and-security-health-lanes.md` | F2 progress | step 5 |
+| D-U3 | `docs/kanban/epics/epic-08/story-03-automation-scripts.md` | Checklist | step 6 |
+| D-U4 | `docs/kanban/kboard.md` | O-band IPP + version stamp | step 6 |
+| D-U5 | `docs/kanban/epics/epic-08/epic-08.md` | Story line | step 6 |
 
 ### 5.2 New documents to create
 
@@ -339,13 +339,13 @@ Establish **E08:S03:T16** as the operational perpetual lane for GitHub **code sc
 
 ## References
 
-- [FR-112](../project-management/kanban/fr-br/FR-112-perpetual-github-ci-and-security-health-lanes.md)
-- [T16 task doc](../project-management/kanban/epics/epic-08/story-03-automation-scripts/T16-github-security-code-quality-health-perpetual-fr112.md)
-- [T15 task doc](../project-management/kanban/epics/epic-08/story-03-automation-scripts/T15-github-actions-ci-health-perpetual-fr112.md)
+- [FR-112](../kanban/fr-br/FR-112-perpetual-github-ci-and-security-health-lanes.md)
+- [T16 task doc](../kanban/epics/epic-08/story-03-automation-scripts/T16-github-security-code-quality-health-perpetual-fr112.md)
+- [T15 task doc](../kanban/epics/epic-08/story-03-automation-scripts/T15-github-actions-ci-health-perpetual-fr112.md)
 - [IPP-E08S03T12](IPP-E08S03T12-code-quality-maintainability-backlog-br099.md)
 - [IPP-E08S03T13](IPP-E08S03T13-code-quality-reliability-backlog-br100.md)
 - [IPP-E08S03T14](IPP-E08S03T14-code-quality-ai-suggestions-backlog-br101.md)
 - [code-quality-monitoring-processes.md](../architecture/standards-and-adrs/code-quality-monitoring-processes.md)
 - [ipw-adr-necessity-checklist.md](../architecture/standards-and-adrs/ipw-adr-necessity-checklist.md)
-- [BR-097](../project-management/kanban/fr-br/BR-097-rw-agent-reuses-tagged-build-and-force-moves-release-tags.md)
+- [BR-097](../kanban/fr-br/BR-097-rw-agent-reuses-tagged-build-and-force-moves-release-tags.md)
 - [dev-kit-versioning-policy.md](../governance/standards/dev-kit-versioning-policy.md)

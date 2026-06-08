@@ -56,19 +56,19 @@ def _init_repo(tmp: Path) -> Path:
 
 def _write_synthetic_release_scope(repo: Path) -> dict:
     """Create the surfaces a Step 7 run would touch and commit them."""
-    kboard = repo / "docs/project-management/kanban/kboard.md"
+    kboard = repo / "docs/kanban/kboard.md"
     kboard.parent.mkdir(parents=True, exist_ok=True)
     kboard.write_text("# kboard\nrow A\n")
 
-    fbuboard = repo / "docs/project-management/kanban/kboard.md"
+    fbuboard = repo / "docs/kanban/kboard.md"
     fbuboard.write_text("# fbuboard\nrow A\n")
 
-    fbu_dir = repo / "docs/project-management/kanban/fr-br"
+    fbu_dir = repo / "docs/kanban/fr-br"
     fbu_dir.mkdir(parents=True, exist_ok=True)
     fr_doc = fbu_dir / "FR-999-test.md"
     fr_doc.write_text("# FR-999\nbody\n")
 
-    epic_dir = repo / "docs/project-management/kanban/epics/epic-02/story-15-test"
+    epic_dir = repo / "docs/kanban/epics/epic-02/story-15-test"
     epic_dir.mkdir(parents=True, exist_ok=True)
     task_doc = epic_dir / "T99-test.md"
     task_doc.write_text("# Task 99\nbody\n")
@@ -283,7 +283,7 @@ def test_block_when_declared_path_missing(tmp: Path):
     validator = _load_validator()
     repo = _init_repo(tmp)
     paths = _write_synthetic_release_scope(repo)
-    paths["fbuboard"] = str((repo / "docs/project-management/kanban/non-existent.md").resolve())
+    paths["fbuboard"] = str((repo / "docs/kanban/non-existent.md").resolve())
     report = _write_four_surface_report(repo, paths)
     rc = validator.main(
         [

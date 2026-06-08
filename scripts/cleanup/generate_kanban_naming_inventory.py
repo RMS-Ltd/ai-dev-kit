@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Generate JSON inventory of kanban naming hygiene issues.
 
-Scans docs/project-management/kanban/epics/ and produces:
+Scans docs/kanban/epics/ and produces:
 - JSON inventory (machine-readable)
 - Human-readable Markdown report
 
@@ -22,7 +22,7 @@ from pathlib import Path
 # Resolve relative to project root (this script lives in scripts/cleanup/)
 SCRIPT_DIR = Path(__file__).resolve().parent
 PROJECT_ROOT = SCRIPT_DIR.parent.parent
-KANBAN_EPICS = PROJECT_ROOT / "docs/project-management/kanban/epics"
+KANBAN_EPICS = PROJECT_ROOT / "docs/kanban/epics"
 
 
 def scan_t0xx_files(epics_root: Path) -> list:

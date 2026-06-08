@@ -18,7 +18,7 @@ REGISTRY_PATH = (
 )
 CODE_RE = re.compile(r"^ADK-[IVR]\d{2}(\.[A-Z]\d{2})+(:[WR]\d{2})?$")
 REPO_ROOT = Path(__file__).resolve().parents[2]
-FR_BR_ROOT = REPO_ROOT / "docs" / "project-management" / "kanban" / "fr-br"
+FR_BR_ROOT = REPO_ROOT / "docs" / "kanban" / "fr-br"
 ADR_ROOT = REPO_ROOT / "docs" / "architecture" / "standards-and-adrs"
 
 

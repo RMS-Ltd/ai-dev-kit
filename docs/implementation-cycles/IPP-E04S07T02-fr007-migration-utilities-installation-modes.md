@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # E04:S07:T02 — Planning: Spec, Tests, Implementation Plan (IPW)
 
-**Host Task:** [`T02-fr007-migration-utilities-installation-modes.md`](../project-management/kanban/epics/epic-04/story-07-migration-support-and-installation-modes/T02-fr007-migration-utilities-installation-modes.md) **(E04:S07:T02)**  
-**Planning for:** [FR-007](../project-management/kanban/fr-br/FR-007-migration-utilities-and-installation-modes.md)  
+**Host Task:** [`T02-fr007-migration-utilities-installation-modes.md`](../kanban/epics/epic-04/story-07-migration-support-and-installation-modes/T02-fr007-migration-utilities-installation-modes.md) **(E04:S07:T02)**  
+**Planning for:** [FR-007](../kanban/fr-br/FR-007-migration-utilities-and-installation-modes.md)  
 **Status:** Approved (verification / FBU closure wave)
 
 > **IPW revision:** Wave 1 closes kanban drift — story checklist and `kanban-completed.md` show T02 COMPLETE at **v0.4.7.2+1** while `kboard.md` still lists TODO. This IPP prescribes evidence re-verification and **`RW E04:S07:T02 --art`** four-surface reconciliation.
@@ -137,9 +137,9 @@ pytest tests/kanban/ -q -k "install or migrate"
 ### 4.1 Files to create or modify
 
 - CREATE: `docs/implementation-cycles/IPP-E04S07T02-fr007-migration-utilities-installation-modes.md`
-- CREATE: `docs/project-management/kanban/epics/epic-04/story-07-migration-support-and-installation-modes/T02-fr007-migration-utilities-installation-modes.md`
-- UPDATE (RW Step 7): `docs/project-management/kanban/fr-br/FR-007-migration-utilities-and-installation-modes.md`
-- UPDATE (RW Step 7): `docs/project-management/kanban/kboard.md` — prune E04:S07:T02 C-band row
+- CREATE: `docs/kanban/epics/epic-04/story-07-migration-support-and-installation-modes/T02-fr007-migration-utilities-installation-modes.md`
+- UPDATE (RW Step 7): `docs/kanban/fr-br/FR-007-migration-utilities-and-installation-modes.md`
+- UPDATE (RW Step 7): `docs/kanban/kboard.md` — prune E04:S07:T02 C-band row
 - UPDATE (RW Step 7): story checklist version anchor if needed
 - NONE: `packages/frameworks/kanban/scripts/*.py` — functional ship complete
 
@@ -163,8 +163,8 @@ pytest tests/kanban/ -q -k "install or migrate"
 
 | Doc ID | Path | Scope of change | Tied to (RF/T/impl step) |
 | ------ | ---- | --------------- | ------------------------ |
-| D-U1 | `docs/project-management/kanban/fr-br/FR-007-*.md` | AC checkboxes; IMPLEMENTED status; version anchor | RF7; Step 4 |
-| D-U2 | `docs/project-management/kanban/kboard.md` | Prune E04:S07:T02 C-band TODO row | RF7; Step N |
+| D-U1 | `docs/kanban/fr-br/FR-007-*.md` | AC checkboxes; IMPLEMENTED status; version anchor | RF7; Step 4 |
+| D-U2 | `docs/kanban/kboard.md` | Prune E04:S07:T02 C-band TODO row | RF7; Step N |
 | D-U3 | Story 7 checklist | Confirm T02 version anchor matches RW | Step 5 |
 | D-U4 | Host task T02 | Status COMPLETE; forensic marker; IPP links | Steps 1, N |
 
@@ -173,7 +173,7 @@ pytest tests/kanban/ -q -k "install or migrate"
 | Doc ID | Proposed path (draft) | Purpose | Tied to (RF/T/impl step) |
 | ------ | --------------------- | ------- | ------------------------ |
 | D-C1 | `docs/implementation-cycles/IPP-E04S07T02-fr007-migration-utilities-installation-modes.md` | This IPP | IPW |
-| D-C2 | `docs/project-management/kanban/epics/epic-04/story-07-migration-support-and-installation-modes/T02-fr007-migration-utilities-installation-modes.md` | Discrete task doc | Step 2 |
+| D-C2 | `docs/kanban/epics/epic-04/story-07-migration-support-and-installation-modes/T02-fr007-migration-utilities-installation-modes.md` | Discrete task doc | Step 2 |
 
 ### 5.3 Documentation gaps and explicit non-changes
 
@@ -191,8 +191,8 @@ pytest tests/kanban/ -q -k "install or migrate"
 | Doc ID | Canonical path | Publication status | Publication N/A reason (if N/A) | Lifecycle | Inbound links to add |
 | ------ | -------------- | ------------------ | ------------------------------- | --------- | -------------------- |
 | D-C1 | `docs/implementation-cycles/IPP-E04S07T02-fr007-migration-utilities-installation-modes.md` | NOT_APPLICABLE | Planning artifact | evergreen | T02 Input/References |
-| D-C2 | `docs/project-management/kanban/epics/epic-04/story-07-migration-support-and-installation-modes/T02-fr007-migration-utilities-installation-modes.md` | NOT_APPLICABLE | Kanban task doc | evergreen | FR-007 implementing task link |
-| D-U1 | `docs/project-management/kanban/fr-br/FR-007-migration-utilities-and-installation-modes.md` | NOT_APPLICABLE | Intake doc | evergreen | T02 References |
+| D-C2 | `docs/kanban/epics/epic-04/story-07-migration-support-and-installation-modes/T02-fr007-migration-utilities-installation-modes.md` | NOT_APPLICABLE | Kanban task doc | evergreen | FR-007 implementing task link |
+| D-U1 | `docs/kanban/fr-br/FR-007-migration-utilities-and-installation-modes.md` | NOT_APPLICABLE | Intake doc | evergreen | T02 References |
 
 ---
 
@@ -209,10 +209,10 @@ pytest tests/kanban/ -q -k "install or migrate"
 
 ## References
 
-- [FR-007](../project-management/kanban/fr-br/FR-007-migration-utilities-and-installation-modes.md)
-- [BR-006](../project-management/kanban/fr-br/BR-006-missing-migration-support-pre-existing-kanban.md)
-- [UXR-001](../project-management/kanban/fr-br/UXR-001-migration-user-experience-research.md)
-- [Story 7](../project-management/kanban/epics/epic-04/story-07-migration-support-and-installation-modes.md)
-- [FR-092](../project-management/kanban/fr-br/FR-092-canonical-rw-ukw-kanban-consistency-program.md)
+- [FR-007](../kanban/fr-br/FR-007-migration-utilities-and-installation-modes.md)
+- [BR-006](../kanban/fr-br/BR-006-missing-migration-support-pre-existing-kanban.md)
+- [UXR-001](../kanban/fr-br/UXR-001-migration-user-experience-research.md)
+- [Story 7](../kanban/epics/epic-04/story-07-migration-support-and-installation-modes.md)
+- [FR-092](../kanban/fr-br/FR-092-canonical-rw-ukw-kanban-consistency-program.md)
 - [ipw-adr-necessity-checklist.md](../architecture/standards-and-adrs/ipw-adr-necessity-checklist.md)
 - `packages/frameworks/kanban/scripts/README.md`

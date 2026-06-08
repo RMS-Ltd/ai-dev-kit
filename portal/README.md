@@ -6,7 +6,7 @@ This directory (`portal/`) is the **[Docusaurus](https://docusaurus.io/)** site 
 
 **Adopter-public allowlist** (**E05:S09:T15**). The docs plugin ingests [`docs/`](../docs/) but **excludes maintainer corpora** via `docusaurus.config.js` `exclude` globs. Logical KB pillars (architecture, Kanban, knowledge) remain in git/Notion — not all are published here.
 
-**Planning:** [IPP-E05S09T15](../docs/implementation-cycles/IPP-E05S09T15-docusaurus-adopter-public-publish-allowlist-fr114.md) · [FR-114](../docs/project-management/kanban/fr-br/FR-114-split-documentation-surfaces-docusaurus-public-notion-maintainer-kb.md)
+**Planning:** [IPP-E05S09T15](../docs/implementation-cycles/IPP-E05S09T15-docusaurus-adopter-public-publish-allowlist-fr114.md) · [FR-114](../docs/kanban/fr-br/FR-114-split-documentation-surfaces-docusaurus-public-notion-maintainer-kb.md)
 
 ### Included (allowlist)
 
@@ -21,7 +21,8 @@ This directory (`portal/`) is the **[Docusaurus](https://docusaurus.io/)** site 
 
 | Glob | Rationale |
 | ---- | --------- |
-| `project-management/**` | Kanban, FR/BR — maintainer |
+| `kanban/**` | Kanban boards, epics, FR/BR — maintainer (FR-118) |
+| `project-management/**` | Retired shell stub — maintainer |
 | `implementation-cycles/**` | IPPs — maintainer |
 | `maintenance/**`, `analysis/**`, `knowledge/**`, `journals/**` | Maintainer corpora |
 | `architecture/**`, `governance/**` | Internal standards — link via GitHub blob URLs |
@@ -47,12 +48,12 @@ Scaffold only until first RC public release. **Authority:** [ADR-024](../docs/ar
 
 - **`docusaurus.config.js`:** `onBrokenLinks: 'throw'` and `onBrokenMarkdownLinks: 'throw'` — a **broken in-scope link fails `npm run build`** (strict mode; **FR-067 FU-1** complete).
 - **`onBrokenAnchors: 'throw'`** (**E5:S09:T10** / **FR-067 FU-3**): a **broken in-page or cross-doc `#fragment`** also **fails `npm run build`** (same strict posture as links).
-- **Corpus hygiene:** Markdown path and heading/fragment discipline stays aligned with [FR-058](../docs/project-management/kanban/fr-br/FR-058-markdown-maintenance-workflow.md); out-of-tree targets should use repository or GitHub URLs, not bogus relative paths. Prefer explicit `{#stable-id}` on headings when deep links must survive title edits.
-- **Detail / history:** [Docusaurus corpus triage (FR-067)](../docs/maintenance/docusaurus-corpus-triage-fr-067.md); tasks **[E5:S09:T08](../docs/project-management/kanban/epics/Epic-5/Story-009-docusaurus-documentation-portal/T08-docusaurus-strict-broken-links-post-fr067.md)** (links), **[E5:S09:T10](../docs/project-management/kanban/epics/Epic-5/Story-009-docusaurus-documentation-portal/T10-docusaurus-strict-broken-anchors-post-t08.md)** (anchors).
+- **Corpus hygiene:** Markdown path and heading/fragment discipline stays aligned with [FR-058](../docs/kanban/fr-br/FR-058-markdown-maintenance-workflow.md); out-of-tree targets should use repository or GitHub URLs, not bogus relative paths. Prefer explicit `{#stable-id}` on headings when deep links must survive title edits.
+- **Detail / history:** [Docusaurus corpus triage (FR-067)](../docs/maintenance/docusaurus-corpus-triage-fr-067.md); tasks **[E5:S09:T08](../docs/kanban/epics/Epic-5/Story-009-docusaurus-documentation-portal/T08-docusaurus-strict-broken-links-post-fr067.md)** (links), **[E5:S09:T10](../docs/kanban/epics/Epic-5/Story-009-docusaurus-documentation-portal/T10-docusaurus-strict-broken-anchors-post-t08.md)** (anchors).
 
 ### BR-068: Monorepo links outside the docs plugin (E5:S09:T11)
 
-The docs plugin only ingests **[`docs/`](../docs/)**. Markdown links that use **relative paths** to leave `docs/`—for example `../../../INSTALL_IN_YOUR_PROJECT.md` or `../../../../packages/frameworks/...`—**fail MDX resolution** and break **`npm run build`** because Docusaurus cannot treat those targets as in-corpus doc IDs (**[BR-068](../docs/project-management/kanban/fr-br/BR-068-docusaurus-monorepo-markdown-links-break-strict-production-build.md)**). GitHub’s web UI resolves the same prose differently; the **published portal** does not.
+The docs plugin only ingests **[`docs/`](../docs/)**. Markdown links that use **relative paths** to leave `docs/`—for example `../../../INSTALL_IN_YOUR_PROJECT.md` or `../../../../packages/frameworks/...`—**fail MDX resolution** and break **`npm run build`** because Docusaurus cannot treat those targets as in-corpus doc IDs (**[BR-068](../docs/kanban/fr-br/BR-068-docusaurus-monorepo-markdown-links-break-strict-production-build.md)**). GitHub’s web UI resolves the same prose differently; the **published portal** does not.
 
 **Do this when linking from `docs/**/*.md` to the repo root, `packages/`, or any path outside `docs/`:**
 
@@ -68,7 +69,7 @@ The docs plugin only ingests **[`docs/`](../docs/)**. Markdown links that use **
 
 3. **Do not** rely on **`warn`** for `onBrokenMarkdownLinks` to “paper over” bad relatives—the site ships with **`throw`** (**FR-067** / **E5:S09:T08**).
 
-**Planning:** [IPW-E5S09T11](../docs/implementation-cycles/IPW-E5S09T11-docusaurus-monorepo-markdown-links-br068.md). **Host task:** [E5:S09:T11](../docs/project-management/kanban/epics/Epic-5/Story-009-docusaurus-documentation-portal/T11-docusaurus-monorepo-markdown-link-resolution-br068.md).
+**Planning:** [IPW-E5S09T11](../docs/implementation-cycles/IPW-E5S09T11-docusaurus-monorepo-markdown-links-br068.md). **Host task:** [E5:S09:T11](../docs/kanban/epics/Epic-5/Story-009-docusaurus-documentation-portal/T11-docusaurus-monorepo-markdown-link-resolution-br068.md).
 
 ### Sidebar ↔ allowlist mapping (FR-114)
 
@@ -78,7 +79,7 @@ The docs plugin only ingests **[`docs/`](../docs/)**. Markdown links that use **
 | Documentation | `documentation/` | Autogenerated |
 | IDE command whitelist | `developer-tools/ide-whitelist-guide.md` | Explicit doc id |
 
-**CI (FR-069 / FR-114-NF1 / ADR-017):** Workflow [**Docusaurus site build**](../.github/workflows/docusaurus-build.yml) runs on changes to `portal/**`, **allowlisted** `docs/guides/**`, `docs/documentation/**`, `docs/developer-tools/ide-whitelist-guide.md`, or the workflow file. Edits to excluded maintainer trees (e.g. `docs/project-management/**`) do **not** trigger the portal build on pull requests.
+**CI (FR-069 / FR-114-NF1 / ADR-017):** Workflow [**Docusaurus site build**](../.github/workflows/docusaurus-build.yml) runs on changes to `portal/**`, **allowlisted** `docs/guides/**`, `docs/documentation/**`, `docs/developer-tools/ide-whitelist-guide.md`, or the workflow file. Edits to excluded maintainer trees (e.g. `docs/kanban/**`, `docs/project-management/**`) do **not** trigger the portal build on pull requests.
 
 ## Dependency updates (Dependabot) — FR-105 / E08:S03:T06
 

@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # E06:S09:T12 — Planning: Spec, Tests, Implementation Plan (IPW)
 
-**Host Task:** [`T12-rw-install-pattern-defaults-br083.md`](../project-management/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T12-rw-install-pattern-defaults-br083.md) **(E06:S09:T12)**  
-**Planning for:** [BR-083](../project-management/kanban/fr-br/BR-083-rw-install-default-patterns-mismatch-fresh-kanban-layout.md) · [GitHub #15](https://github.com/RMS-Ltd/ai-dev-kit/issues/15)  
+**Host Task:** [`T12-rw-install-pattern-defaults-br083.md`](../kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T12-rw-install-pattern-defaults-br083.md) **(E06:S09:T12)**  
+**Planning for:** [BR-083](../kanban/fr-br/BR-083-rw-install-default-patterns-mismatch-fresh-kanban-layout.md) · [GitHub #15](https://github.com/RMS-Ltd/ai-dev-kit/issues/15)  
 **Status:** Implemented (2026-06-03 — pending user verification / RW)
 
 ---
@@ -47,5 +47,5 @@ housekeeping_policy: keep
 
 ## References
 
-- [BR-083](../project-management/kanban/fr-br/BR-083-rw-install-default-patterns-mismatch-fresh-kanban-layout.md)
-- [BR-084](../project-management/kanban/fr-br/BR-084-rw-install-mode-c-missing-task-doc-pattern.md) (follow-on)
+- [BR-083](../kanban/fr-br/BR-083-rw-install-default-patterns-mismatch-fresh-kanban-layout.md)
+- [BR-084](../kanban/fr-br/BR-084-rw-install-mode-c-missing-task-doc-pattern.md) (follow-on)

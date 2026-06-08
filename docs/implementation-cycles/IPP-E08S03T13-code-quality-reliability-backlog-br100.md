@@ -9,15 +9,15 @@ housekeeping_policy: keep
 
 # E08:S03:T13 — Planning: Spec, Tests, Implementation Plan (IPW)
 
-**Host Task:** [`T13-code-quality-reliability-backlog-br100.md`](../project-management/kanban/epics/epic-08/story-03-automation-scripts/T13-code-quality-reliability-backlog-br100.md) **(E08:S03:T13)**  
-**Planning for:** [BR-100](../project-management/kanban/fr-br/BR-100-code-quality-reliability-backlog.md)  
+**Host Task:** [`T13-code-quality-reliability-backlog-br100.md`](../kanban/epics/epic-08/story-03-automation-scripts/T13-code-quality-reliability-backlog-br100.md) **(E08:S03:T13)**  
+**Planning for:** [BR-100](../kanban/fr-br/BR-100-code-quality-reliability-backlog.md)  
 **Status:** Revised — wave 1–2 complete @ v0.8.3.13+3; wave 3 shipped @ **v0.8.3.13+4**; task **COMPLETE**
 
-> **IPW:** Produced for E08:S03:T13. Bulk **Code Quality Standard reliability** burn-down; complements maintainability task [E08:S03:T12](IPP-E08S03T12-code-quality-maintainability-backlog-br099.md) / [BR-099](../project-management/kanban/fr-br/BR-099-code-quality-maintainability-backlog.md) and AI suggestions task [E08:S03:T14](IPP-E08S03T14-code-quality-ai-suggestions-backlog-br101.md) / [BR-101](../project-management/kanban/fr-br/BR-101-code-quality-ai-suggestions-backlog.md).
+> **IPW:** Produced for E08:S03:T13. Bulk **Code Quality Standard reliability** burn-down; complements maintainability task [E08:S03:T12](IPP-E08S03T12-code-quality-maintainability-backlog-br099.md) / [BR-099](../kanban/fr-br/BR-099-code-quality-maintainability-backlog.md) and AI suggestions task [E08:S03:T14](IPP-E08S03T14-code-quality-ai-suggestions-backlog-br101.md) / [BR-101](../kanban/fr-br/BR-101-code-quality-ai-suggestions-backlog.md).
 >
 > **Revision (2026-06-05):** Wave-1 shipped @ v0.8.3.13+1–+2. Dashboard re-scan: **133→34** open Standard reliability (−74.4%) @ `main` `cadb0c3`; score still **Needs Improvement**. Wave-2 scope: mixed-returns + wrong-arguments; wave-3 `py/use-of-exit-or-quit` deferred to this revision.
 >
-> **Revision (2026-06-06, wave 3):** Wave-2 shipped @ v0.8.3.13+3. Post-wave-2 dashboard @ `main` `f6aa4dca` ([T16 re-scan](../project-management/kanban/epics/epic-08/story-03-automation-scripts/T16-github-security-code-quality-health-perpetual-fr112.md)): reliability **28 open**, score **Fair** (was Needs Improvement). Residual reliability = **16** `py/print-during-import` (→ T12) + **12** `py/use-of-exit-or-quit` (→ wave 3). Wave 3 plans `exit(main())` → `sys.exit(main())` across 6 script pairs; closure when **0** exit/quit and AC4/AC5 satisfied. **Standard findings only** — not Code Scanning security sidebar; not AI suggestions (T14).
+> **Revision (2026-06-06, wave 3):** Wave-2 shipped @ v0.8.3.13+3. Post-wave-2 dashboard @ `main` `f6aa4dca` ([T16 re-scan](../kanban/epics/epic-08/story-03-automation-scripts/T16-github-security-code-quality-health-perpetual-fr112.md)): reliability **28 open**, score **Fair** (was Needs Improvement). Residual reliability = **16** `py/print-during-import` (→ T12) + **12** `py/use-of-exit-or-quit` (→ wave 3). Wave 3 plans `exit(main())` → `sys.exit(main())` across 6 script pairs; closure when **0** exit/quit and AC4/AC5 satisfied. **Standard findings only** — not Code Scanning security sidebar; not AI suggestions (T14).
 
 ---
 
@@ -73,7 +73,7 @@ housekeeping_policy: keep
 
 ### 2.1 Goal
 
-Three-phase **Standard reliability** burn-down per [BR-100](../project-management/kanban/fr-br/BR-100-code-quality-reliability-backlog.md), with closure:
+Three-phase **Standard reliability** burn-down per [BR-100](../kanban/fr-br/BR-100-code-quality-reliability-backlog.md), with closure:
 
 - **Phase A (wave 1 — complete):** Exception-handling and resource-cleanup hygiene across full Python corpus; ≥50% open-count reduction; CI green.
 - **Phase B (wave 2 — complete):** Mixed-returns and wrong-arguments remediation on **34** residuals; RW @ v0.8.3.13+3; dashboard **Fair** @ 28 open.
@@ -248,7 +248,7 @@ Score each trigger **Y** or **N** with one-line evidence. Criteria: [`ipw-adr-ne
 | Step | Action | Deliverable |
 | ---- | ------ | ----------- |
 | **1** | **[MANDATORY] Confirm task `E08:S03:T13` remains `IN PROGRESS`** (already transitioned wave 1); update `Last updated` | Task doc |
-| 24 | Sync post-wave-2 dashboard manifest in T13 task doc (adapt [T16 @ `f6aa4dca`](../project-management/kanban/epics/epic-08/story-03-automation-scripts/T16-github-security-code-quality-health-perpetual-fr112.md): 28 open, Fair) | RF13 |
+| 24 | Sync post-wave-2 dashboard manifest in T13 task doc (adapt [T16 @ `f6aa4dca`](../kanban/epics/epic-08/story-03-automation-scripts/T16-github-security-code-quality-health-perpetual-fr112.md): 28 open, Fair) | RF13 |
 | 25 | Export wave-3 manifest: **12** `py/use-of-exit-or-quit` + file hotspots | RF14 |
 | 26 | Triage sheet: all **12** → **fix** (canonical pattern; no waivers expected) | RNF1 |
 | 27 | **Chunk G:** `exit(main())` → `sys.exit(main())` in 6 files under `packages/` | RF15 |
@@ -302,10 +302,10 @@ Score each trigger **Y** or **N** with one-line evidence. Criteria: [`ipw-adr-ne
 
 | Doc ID | Path | Scope of change | Tied to (RF/T/impl step) |
 | ------ | ---- | --------------- | ------------------------ |
-| D-U1 | `docs/project-management/kanban/epics/epic-08/story-03-automation-scripts/T13-code-quality-reliability-backlog-br100.md` | Wave 1–2 manifests (**done**); dashboard sync + wave-3 manifests + AC closure (**open**) | RF1–RF3, RF8–RF11, RF13–RF16, steps 24/25/30/13 |
-| D-U2 | `docs/project-management/kanban/fr-br/BR-100-code-quality-reliability-backlog.md` | Fix-attempt / resolution (interim **done** @ +3; wave-3 + final closure **open**) | RF6, RF12, RF17, steps 31/32 |
-| D-U3 | `docs/project-management/kanban/epics/epic-08/story-03-automation-scripts.md` | Checklist on terminal RW | steps 32/13 |
-| D-U4 | `docs/project-management/kanban/kboard.md` | RW Step 7 row → COMPLETE or IN PROGRESS | steps 32/13 |
+| D-U1 | `docs/kanban/epics/epic-08/story-03-automation-scripts/T13-code-quality-reliability-backlog-br100.md` | Wave 1–2 manifests (**done**); dashboard sync + wave-3 manifests + AC closure (**open**) | RF1–RF3, RF8–RF11, RF13–RF16, steps 24/25/30/13 |
+| D-U2 | `docs/kanban/fr-br/BR-100-code-quality-reliability-backlog.md` | Fix-attempt / resolution (interim **done** @ +3; wave-3 + final closure **open**) | RF6, RF12, RF17, steps 31/32 |
+| D-U3 | `docs/kanban/epics/epic-08/story-03-automation-scripts.md` | Checklist on terminal RW | steps 32/13 |
+| D-U4 | `docs/kanban/kboard.md` | RW Step 7 row → COMPLETE or IN PROGRESS | steps 32/13 |
 
 ### 5.2 New documents to create
 
@@ -317,12 +317,12 @@ Score each trigger **Y** or **N** with one-line evidence. Criteria: [`ipw-adr-ne
 
 | Gap / topic | Resolution (CREATE row above, or NONE + reason) |
 | ----------- | ----------------------------------------------- |
-| Code quality burn-down methodology | NONE — BR-100 wave table is authoritative; governed by [BR-100](../project-management/kanban/fr-br/BR-100-code-quality-reliability-backlog.md) and [code-quality-monitoring-processes.md](../architecture/standards-and-adrs/code-quality-monitoring-processes.md) |
+| Code quality burn-down methodology | NONE — BR-100 wave table is authoritative; governed by [BR-100](../kanban/fr-br/BR-100-code-quality-reliability-backlog.md) and [code-quality-monitoring-processes.md](../architecture/standards-and-adrs/code-quality-monitoring-processes.md) |
 | New ADR for exit/quit pattern | NONE — EXEMPT per §2.5; existing pattern in maintenance-automation-scripts-and-tools.md |
 | New CI quality gate workflow | NONE — out of scope; dashboard verification manual at steps 33/T23 |
 | Dedicated baseline manifest file | NONE — AC requires manifest in task doc only |
 | T16 perpetual re-scan | **NONE** — T16 already has post-wave-2 evidence; T13 cites via step 24 |
-| `py/print-during-import` (**16**) | **NONE in T13** — owned by [E08:S03:T12](IPP-E08S03T12-code-quality-maintainability-backlog-br099.md) wave 4 / [BR-099](../project-management/kanban/fr-br/BR-099-code-quality-maintainability-backlog.md) |
+| `py/print-during-import` (**16**) | **NONE in T13** — owned by [E08:S03:T12](IPP-E08S03T12-code-quality-maintainability-backlog-br099.md) wave 4 / [BR-099](../kanban/fr-br/BR-099-code-quality-maintainability-backlog.md) |
 
 ---
 
@@ -331,10 +331,10 @@ Score each trigger **Y** or **N** with one-line evidence. Criteria: [`ipw-adr-ne
 | Doc ID | Canonical path | Publication status | Publication N/A reason (if N/A) | Lifecycle | Inbound links to add |
 | ------ | -------------- | ------------------ | ------------------------------- | --------- | -------------------- |
 | D-C1 | `docs/implementation-cycles/IPP-E08S03T13-code-quality-reliability-backlog-br100.md` | NOT_APPLICABLE | Planning artifact; not Docusaurus-facing | evergreen | Task doc Input + References |
-| D-U1 | `docs/project-management/kanban/epics/epic-08/story-03-automation-scripts/T13-code-quality-reliability-backlog-br100.md` | NOT_APPLICABLE | Kanban internal | evergreen | BR-100 implementing task link (exists) |
-| D-U2 | `docs/project-management/kanban/fr-br/BR-100-code-quality-reliability-backlog.md` | NOT_APPLICABLE | Kanban internal | evergreen | Task doc upstream link (exists) |
-| D-U3 | `docs/project-management/kanban/epics/epic-08/story-03-automation-scripts.md` | NOT_APPLICABLE | Kanban internal | evergreen | Story checklist |
-| D-U4 | `docs/project-management/kanban/kboard.md` | NOT_APPLICABLE | Kanban internal | evergreen | MoSCOW row |
+| D-U1 | `docs/kanban/epics/epic-08/story-03-automation-scripts/T13-code-quality-reliability-backlog-br100.md` | NOT_APPLICABLE | Kanban internal | evergreen | BR-100 implementing task link (exists) |
+| D-U2 | `docs/kanban/fr-br/BR-100-code-quality-reliability-backlog.md` | NOT_APPLICABLE | Kanban internal | evergreen | Task doc upstream link (exists) |
+| D-U3 | `docs/kanban/epics/epic-08/story-03-automation-scripts.md` | NOT_APPLICABLE | Kanban internal | evergreen | Story checklist |
+| D-U4 | `docs/kanban/kboard.md` | NOT_APPLICABLE | Kanban internal | evergreen | MoSCOW row |
 
 **Housing rules:** One authoritative doc per topic; IPP under `docs/implementation-cycles/`; kanban four-surface on RW.
 
@@ -397,16 +397,16 @@ Score each trigger **Y** or **N** with one-line evidence. Criteria: [`ipw-adr-ne
 
 ## References
 
-- [BR-100](../project-management/kanban/fr-br/BR-100-code-quality-reliability-backlog.md)
-- [BR-099](../project-management/kanban/fr-br/BR-099-code-quality-maintainability-backlog.md)
-- [BR-101](../project-management/kanban/fr-br/BR-101-code-quality-ai-suggestions-backlog.md)
-- [T13 task doc](../project-management/kanban/epics/epic-08/story-03-automation-scripts/T13-code-quality-reliability-backlog-br100.md)
-- [T16 task doc](../project-management/kanban/epics/epic-08/story-03-automation-scripts/T16-github-security-code-quality-health-perpetual-fr112.md) — post-wave-2 dashboard @ `f6aa4dca`
+- [BR-100](../kanban/fr-br/BR-100-code-quality-reliability-backlog.md)
+- [BR-099](../kanban/fr-br/BR-099-code-quality-maintainability-backlog.md)
+- [BR-101](../kanban/fr-br/BR-101-code-quality-ai-suggestions-backlog.md)
+- [T13 task doc](../kanban/epics/epic-08/story-03-automation-scripts/T13-code-quality-reliability-backlog-br100.md)
+- [T16 task doc](../kanban/epics/epic-08/story-03-automation-scripts/T16-github-security-code-quality-health-perpetual-fr112.md) — post-wave-2 dashboard @ `f6aa4dca`
 - [IPP-E08S03T12](IPP-E08S03T12-code-quality-maintainability-backlog-br099.md)
 - [IPP-E08S03T14](IPP-E08S03T14-code-quality-ai-suggestions-backlog-br101.md)
 - [IPP-E08S03T04](IPP-E08S03T04-ci-test-workflow-pytest-remediation-br058.md)
 - [maintenance-automation-scripts-and-tools.md](../architecture/standards-and-adrs/maintenance-automation-scripts-and-tools.md)
 - [code-quality-monitoring-processes.md](../architecture/standards-and-adrs/code-quality-monitoring-processes.md)
 - [ipw-adr-necessity-checklist.md](../architecture/standards-and-adrs/ipw-adr-necessity-checklist.md)
-- [FR-042](../project-management/kanban/fr-br/FR-042-implementation-planning-workflow-ipw.md)
-- [BR-097](../project-management/kanban/fr-br/BR-097-rw-agent-reuses-tagged-build-and-force-moves-release-tags.md)
+- [FR-042](../kanban/fr-br/FR-042-implementation-planning-workflow-ipw.md)
+- [BR-097](../kanban/fr-br/BR-097-rw-agent-reuses-tagged-build-and-force-moves-release-tags.md)

@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # E02:S16:T06 — Planning: Spec, Tests, Implementation Plan (IPW)
 
-**Host Task:** [`T06-ukw-optional-reprioritization-rp-flag-fr085.md`](../project-management/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T06-ukw-optional-reprioritization-rp-flag-fr085.md) **(E02:S16:T06)**  
-**Planning for:** [FR-085 — UKW optional reprioritization (`--rp`)](../project-management/kanban/fr-br/FR-085-ukw-optional-reprioritization-rp-flag.md)  
+**Host Task:** [`T06-ukw-optional-reprioritization-rp-flag-fr085.md`](../kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T06-ukw-optional-reprioritization-rp-flag-fr085.md) **(E02:S16:T06)**  
+**Planning for:** [FR-085 — UKW optional reprioritization (`--rp`)](../kanban/fr-br/FR-085-ukw-optional-reprioritization-rp-flag.md)  
 **Status:** Published
 
 > **IPW (Implementation Planning Workflow):** Produced by IPW for E02:S16:T06. Bidirectional wiring to the host task `Input` and `References` is confirmed.
@@ -34,7 +34,7 @@ housekeeping_policy: keep
 | ID | Requirement | Source |
 | -- | ----------- | ------ |
 | RNF1 | `--rp` valid only in **standalone** UKW context — not `rw_step_7` scoped sync | FR-038, FR-085 scope |
-| RNF2 | No batch or synthetic `Last modified` row stamps on hygiene ([FR-097](../project-management/kanban/fr-br/FR-097-board-stamp-authority-and-forensic-timestamp-recovery.md)) | FR-097 |
+| RNF2 | No batch or synthetic `Last modified` row stamps on hygiene ([FR-097](../kanban/fr-br/FR-097-board-stamp-authority-and-forensic-timestamp-recovery.md)) | FR-097 |
 | RNF3 | Bounded analysis depth; observable run summary (counts, duration, rows moved) | FR-085-NF3 |
 | RNF4 | Agent-driven execution (no new deterministic UKW runner) | FR-023 |
 
@@ -67,7 +67,7 @@ Enable a default-off, standalone UKW deep reprioritization mode (`--rp`) that re
 
 - **vs `UKW -p`:** `-p` runs MoSCOW **update** sub-workflow only. `--rp` is a **standalone** deep RePrioritise run with full-board evidence analysis and rationale output.
 - **vs comprehensive UKW:** Comprehensive does not include `--rp`; operators run `UKW --rp` explicitly when deep realignment is needed.
-- **vs `rw_step_7`:** Agents MUST NOT invoke `--rp` during RW Step 7 ([FR-038](../project-management/kanban/fr-br/FR-038-rw-step-7-scoped-kanban-sync-ukw-mode.md) narrow MoSCOW).
+- **vs `rw_step_7`:** Agents MUST NOT invoke `--rp` during RW Step 7 ([FR-038](../kanban/fr-br/FR-038-rw-step-7-scoped-kanban-sync-ukw-mode.md) narrow MoSCOW).
 
 ### 2.4 Status transition intent
 
@@ -203,7 +203,7 @@ For each candidate active row, agents MUST classify using at least one of:
 | D-U6 | `packages/frameworks/workflow-mgt/workflows/update-kanban-workflow.yaml` | Optional `--rp` substeps | V3 |
 | D-U7 | `.cursor/skills/ukw-sync/SKILL.md` | Deep rp guidance | Step 6 |
 | D-U8 | T06 task doc | IPP links; AC checkboxes at completion | RF6 |
-| D-U9 | `docs/project-management/kanban/fr-br/FR-085-*.md` | IMPLEMENTED at RW | RF6 |
+| D-U9 | `docs/kanban/fr-br/FR-085-*.md` | IMPLEMENTED at RW | RF6 |
 | D-U10 | `kboard.md` | IPP tail; status at RW | RF6 |
 
 ### 5.2 New documents to create
@@ -253,12 +253,12 @@ For each candidate active row, agents MUST classify using at least one of:
 
 ## References
 
-- [FR-085](../project-management/kanban/fr-br/FR-085-ukw-optional-reprioritization-rp-flag.md)
-- [T06 task doc](../project-management/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T06-ukw-optional-reprioritization-rp-flag-fr085.md)
-- [FR-023](../project-management/kanban/fr-br/FR-023-update-kanban-workflow-ukw.md)
-- [FR-038](../project-management/kanban/fr-br/FR-038-rw-step-7-scoped-kanban-sync-ukw-mode.md)
-- [FR-097](../project-management/kanban/fr-br/FR-097-board-stamp-authority-and-forensic-timestamp-recovery.md)
-- [FR-076](../project-management/kanban/fr-br/FR-076-ukw-fbuboard-scope-and-drift-concurrency-controls.md)
+- [FR-085](../kanban/fr-br/FR-085-ukw-optional-reprioritization-rp-flag.md)
+- [T06 task doc](../kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T06-ukw-optional-reprioritization-rp-flag-fr085.md)
+- [FR-023](../kanban/fr-br/FR-023-update-kanban-workflow-ukw.md)
+- [FR-038](../kanban/fr-br/FR-038-rw-step-7-scoped-kanban-sync-ukw-mode.md)
+- [FR-097](../kanban/fr-br/FR-097-board-stamp-authority-and-forensic-timestamp-recovery.md)
+- [FR-076](../kanban/fr-br/FR-076-ukw-fbuboard-scope-and-drift-concurrency-controls.md)
 - [Workflow initiation cheatsheet](../guides/workflow-initiation-cheatsheet.md) (T15; extended by T06)
 - [ipw-adr-necessity-checklist.md](../architecture/standards-and-adrs/ipw-adr-necessity-checklist.md)
 - [Update Kanban Workflow agent execution guide](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/update-kanban-workflow-agent-execution.md)

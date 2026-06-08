@@ -105,10 +105,10 @@ def _scaffold_governance(root: Path, *, all_phrases: bool = True) -> None:
 
 
 def _scaffold_supersede_chain(root: Path, *, complete: bool = True) -> None:
-    fbu_dir = root / "docs/project-management/kanban/fr-br"
+    fbu_dir = root / "docs/kanban/fr-br"
     epic_dir = (
         root
-        / "docs/project-management/kanban/epics/epic-02/"
+        / "docs/kanban/epics/epic-02/"
         "story-15-ipw-governance-and-publication-contract"
     )
 
@@ -358,10 +358,10 @@ class Gate6StampEvidenceTests(unittest.TestCase):
 class Gate7FourSurfaceParityTests(unittest.TestCase):
 
     def _baseline_report_payload(self, root: Path) -> dict:
-        kboard = root / "docs/project-management/kanban/kboard.md"
-        fbuboard = root / "docs/project-management/kanban/kboard.md"
-        task_doc = root / "docs/project-management/kanban/task.md"
-        fbu_doc = root / "docs/project-management/kanban/fbu.md"
+        kboard = root / "docs/kanban/kboard.md"
+        fbuboard = root / "docs/kanban/kboard.md"
+        task_doc = root / "docs/kanban/task.md"
+        fbu_doc = root / "docs/kanban/fbu.md"
         for p in (kboard, fbuboard, task_doc, fbu_doc):
             _write(p, "# stub\n")
         return {
@@ -427,7 +427,7 @@ class Gate7FourSurfaceParityTests(unittest.TestCase):
             root = _make_minimal_repo(Path(tmp))
             payload = self._baseline_report_payload(root)
             payload["surfaces"]["kboard"]["paths"] = [
-                str(root / "docs/project-management/kanban/missing.md")
+                str(root / "docs/kanban/missing.md")
             ]
             report_path = _write_four_surface_report(root, payload)
             verdict = VAL.gate_7_four_surface_parity(

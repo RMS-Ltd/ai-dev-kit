@@ -8,7 +8,7 @@ housekeeping_policy: keep
 
 # E10:S01:T05 — Planning: Gap Log and Risk Assessment (IPW)
 
-**Host Task:** [`T05-create-gap-log-and-risk-assessment.md`](../project-management/kanban/epics/epic-10/story-01-document-lifecycle-package-implementation-review/T05-create-gap-log-and-risk-assessment.md) **(E10:S01:T05)**  
+**Host Task:** [`T05-create-gap-log-and-risk-assessment.md`](../kanban/epics/epic-10/story-01-document-lifecycle-package-implementation-review/T05-create-gap-log-and-risk-assessment.md) **(E10:S01:T05)**  
 **Planning for:** [E10S01 orchestration plan §7.4 T05](./E10S01-orchestration-plan.md) · T01–T04 companions (implementation dependency) · [IPP-E02S13T05 precedent](./IPP-E02S13T05-gap-log-risk-assessment.md)  
 **Status:** Implementation complete — awaiting user authorization for RW  
 **Branch:** `epic/10-doc-lifecycle-framework`
@@ -28,7 +28,7 @@ housekeeping_policy: keep
 | RF5 | **Risk Assessment** + RC Impact Conclusion (expect **conditional pass** or **DEFER** if HIGH structural gaps persist) | Orchestration plan §7.4 T06; E02:S13:T05 precedent |
 | RF6 | Flesh T05 stub: Scope, AC, Input, Approach, Specification/Validation, Next Steps | FR-042, FR-094; FR-016 stub remediation |
 | RF7 | Wire IPP bidirectionally; update Story E10:S01 checklist + AC slice | FR-077 |
-| RF8 | Feed [T06](../project-management/kanban/epics/epic-10/story-01-document-lifecycle-package-implementation-review/T06-define-rc-sign-off-criteria-and-remediation-tasks.md) RC sign-off input and remediation backlog | Story pipeline; orchestration §8.7 |
+| RF8 | Feed [T06](../kanban/epics/epic-10/story-01-document-lifecycle-package-implementation-review/T06-define-rc-sign-off-criteria-and-remediation-tasks.md) RC sign-off input and remediation backlog | Story pipeline; orchestration §8.7 |
 
 ### 1.2 Non-functional requirements (ascertained)
 
@@ -161,12 +161,12 @@ Implementation SHALL author **`### Gap N`** entries in the T05 task doc. Plannin
 | Action | Path |
 | ------ | ---- |
 | CREATE | `docs/implementation-cycles/IPP-E10S01T05-gap-log-risk-assessment.md` (this file) |
-| UPDATE | `docs/project-management/kanban/epics/epic-10/story-01-document-lifecycle-package-implementation-review/T05-create-gap-log-and-risk-assessment.md` (gap log SoT) |
-| UPDATE | `docs/project-management/kanban/epics/epic-10/story-01-document-lifecycle-package-implementation-review.md` (checklist on COMPLETE) |
+| UPDATE | `docs/kanban/epics/epic-10/story-01-document-lifecycle-package-implementation-review/T05-create-gap-log-and-risk-assessment.md` (gap log SoT) |
+| UPDATE | `docs/kanban/epics/epic-10/story-01-document-lifecycle-package-implementation-review.md` (checklist on COMPLETE) |
 | UPDATE (cross-link) | T01–T04 companions when present — outbound pointer to T05 gap log |
-| UPDATE | `docs/project-management/kanban/epics/epic-10/story-01-document-lifecycle-package-implementation-review/T06-define-rc-sign-off-criteria-and-remediation-tasks.md` (Input → T05) |
+| UPDATE | `docs/kanban/epics/epic-10/story-01-document-lifecycle-package-implementation-review/T06-define-rc-sign-off-criteria-and-remediation-tasks.md` (Input → T05) |
 | UPDATE (optional) | `packages/frameworks/workflow-mgt/scripts/validation/validate_gap_log.py`, `tests/test_validate_gap_log.py` |
-| UPDATE (RW Step 7) | `docs/project-management/kanban/kboard.md`, changelog, version, README |
+| UPDATE (RW Step 7) | `docs/kanban/kboard.md`, changelog, version, README |
 
 ### 4.2 Dependency order
 
@@ -233,14 +233,14 @@ Implementation SHALL author **`### Gap N`** entries in the T05 task doc. Plannin
 
 ## References
 
-- [T05 task doc](../project-management/kanban/epics/epic-10/story-01-document-lifecycle-package-implementation-review/T05-create-gap-log-and-risk-assessment.md)
+- [T05 task doc](../kanban/epics/epic-10/story-01-document-lifecycle-package-implementation-review/T05-create-gap-log-and-risk-assessment.md)
 - [E10S01 orchestration plan §7.4 T05](./E10S01-orchestration-plan.md)
 - [gap-log-schema.md](../architecture/standards-and-adrs/gap-log-schema.md)
 - [IPP-E02S13T05 precedent](./IPP-E02S13T05-gap-log-risk-assessment.md)
-- [E02:S13 T05 gap log](../project-management/kanban/epics/epic-02/story-13-workflow-management-package-implementation-review/T05-create-gap-log-and-risk-assessment.md)
+- [E02:S13 T05 gap log](../kanban/epics/epic-02/story-13-workflow-management-package-implementation-review/T05-create-gap-log-and-risk-assessment.md)
 - [IPP-E10S01T01](./IPP-E10S01T01-expectations-baseline-doc-lifecycle.md) · [IPP-E10S01T02](./IPP-E10S01T02-component-inventory-map.md) · [IPP-E10S01T03](./IPP-E10S01T03-lifecycle-behavior-validation.md) · [IPP-E10S01T04](./IPP-E10S01T04-integration-dependency-alignment.md)
-- [T06 RC sign-off task](../project-management/kanban/epics/epic-10/story-01-document-lifecycle-package-implementation-review/T06-define-rc-sign-off-criteria-and-remediation-tasks.md)
-- [FR-042](../project-management/kanban/fr-br/FR-042-implementation-planning-workflow-ipw.md)
-- [FR-094](../project-management/kanban/fr-br/FR-094-ipw-slash-command-and-task-state-transition-mandate.md)
+- [T06 RC sign-off task](../kanban/epics/epic-10/story-01-document-lifecycle-package-implementation-review/T06-define-rc-sign-off-criteria-and-remediation-tasks.md)
+- [FR-042](../kanban/fr-br/FR-042-implementation-planning-workflow-ipw.md)
+- [FR-094](../kanban/fr-br/FR-094-ipw-slash-command-and-task-state-transition-mandate.md)
 - [ipw-adr-necessity-checklist.md](../architecture/standards-and-adrs/ipw-adr-necessity-checklist.md)
 - Package root: `packages/frameworks/doc-lifecycle/`

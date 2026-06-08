@@ -11,15 +11,15 @@ housekeeping_policy: keep
 **Status:** Accepted  
 **Date:** 2026-05-30  
 **Deciders:** User (Ruari Mears)  
-**Implementing task:** [E02:S16:T16](../../project-management/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T16-ukw-archive-completed-board-rows-fr102.md)  
-**Origin FR:** [FR-102](../../project-management/kanban/fr-br/FR-102-ukw-archive-completed-board-rows.md)  
+**Implementing task:** [E02:S16:T16](../../kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T16-ukw-archive-completed-board-rows-fr102.md)  
+**Origin FR:** [FR-102](../../kanban/fr-br/FR-102-ukw-archive-completed-board-rows.md)  
 **Planning package:** [IPP-E2S16T16](../../implementation-cycles/IPP-E02S16T16-ukw-archive-completed-fr102.md)
 
 ---
 
 ## Context
 
-Active MoSCOW rows on `kboard.md` can show **COMPLETE** (or terminal FBU) work while source task/FBU docs are already closed. [FR-076](../../project-management/kanban/fr-br/FR-076-ukw-fbuboard-scope-and-drift-concurrency-controls.md) and `update_kanban_docs.py` hygiene could **remove** such rows without appending to [**kanban-completed.md**](../../project-management/kanban/kanban-completed.md) or [**intake-completed.md**](../../project-management/kanban/intake-completed.md) — losing the ledger-first contract operators expect.
+Active MoSCOW rows on `kboard.md` can show **COMPLETE** (or terminal FBU) work while source task/FBU docs are already closed. [FR-076](../../kanban/fr-br/FR-076-ukw-fbuboard-scope-and-drift-concurrency-controls.md) and `update_kanban_docs.py` hygiene could **remove** such rows without appending to [**kanban-completed.md**](../../kanban/kanban-completed.md) or [**intake-completed.md**](../../kanban/intake-completed.md) — losing the ledger-first contract operators expect.
 
 Operators need a **fast, explicit** UKW path: “clean the boards” means **archive then remove**, not silent deletion.
 
@@ -69,8 +69,8 @@ Operators need a **fast, explicit** UKW path: “clean the boards” means **arc
 
 ## References
 
-- [FR-102](../../project-management/kanban/fr-br/FR-102-ukw-archive-completed-board-rows.md)
+- [FR-102](../../kanban/fr-br/FR-102-ukw-archive-completed-board-rows.md)
 - [ADR-009](ADR-009-ukw-deep-reprioritization-rp-flag.md)
-- [FR-076](../../project-management/kanban/fr-br/FR-076-ukw-fbuboard-scope-and-drift-concurrency-controls.md)
-- [FR-097](../../project-management/kanban/fr-br/FR-097-board-stamp-authority-and-forensic-timestamp-recovery.md)
+- [FR-076](../../kanban/fr-br/FR-076-ukw-fbuboard-scope-and-drift-concurrency-controls.md)
+- [FR-097](../../kanban/fr-br/FR-097-board-stamp-authority-and-forensic-timestamp-recovery.md)
 - [Workflow initiation cheatsheet](../../guides/workflow-initiation-cheatsheet.md)

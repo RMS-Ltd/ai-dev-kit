@@ -31,7 +31,7 @@ def test_resolve_kanban_path_uses_rw_config_when_default_passed():
         )
 
         resolved, sourced_from_rw = mod.resolve_kanban_path_arg(
-            root, "docs/project-management/kanban"
+            root, "docs/kanban"
         )
 
         assert sourced_from_rw is True

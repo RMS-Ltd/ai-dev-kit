@@ -8,7 +8,7 @@ housekeeping_policy: keep
 
 # E10:S01:T04 — Planning: Integration and Dependency Alignment (IPW)
 
-**Host Task:** [`T04-review-integrations-and-dependency-alignment.md`](../project-management/kanban/epics/epic-10/story-01-document-lifecycle-package-implementation-review/T04-review-integrations-and-dependency-alignment.md) **(E10:S01:T04)**  
+**Host Task:** [`T04-review-integrations-and-dependency-alignment.md`](../kanban/epics/epic-10/story-01-document-lifecycle-package-implementation-review/T04-review-integrations-and-dependency-alignment.md) **(E10:S01:T04)**  
 **Planning for:** [E10S01 orchestration plan §7.4 T04](./E10S01-orchestration-plan.md) · [IPP-E10S01T01 expectations baseline](./IPP-E10S01T01-expectations-baseline-doc-lifecycle.md) · T02 inventory · T03 behavior validation (when available)  
 **Status:** Implemented — companion report shipped v0.10.1.4+1  
 **Branch:** `epic/10-doc-lifecycle-framework`
@@ -167,11 +167,11 @@ Each row: expected integration (T01/README/integration guide), observed (evidenc
 | Action | Path |
 | ------ | ---- |
 | CREATE | `docs/implementation-cycles/IPP-E10S01T04-integration-dependency-alignment.md` (this file) |
-| CREATE | `docs/project-management/kanban/epics/epic-10/story-01-document-lifecycle-package-implementation-review/integration-alignment-report.md` |
-| UPDATE | `docs/project-management/kanban/epics/epic-10/story-01-document-lifecycle-package-implementation-review/T04-review-integrations-and-dependency-alignment.md` |
-| UPDATE | `docs/project-management/kanban/epics/epic-10/story-01-document-lifecycle-package-implementation-review.md` |
-| UPDATE (optional) | `docs/project-management/kanban/epics/epic-10/story-01-document-lifecycle-package-implementation-review/component-inventory-map.md` (when T02 complete) |
-| UPDATE (RW Step 7) | `docs/project-management/kanban/kboard.md` |
+| CREATE | `docs/kanban/epics/epic-10/story-01-document-lifecycle-package-implementation-review/integration-alignment-report.md` |
+| UPDATE | `docs/kanban/epics/epic-10/story-01-document-lifecycle-package-implementation-review/T04-review-integrations-and-dependency-alignment.md` |
+| UPDATE | `docs/kanban/epics/epic-10/story-01-document-lifecycle-package-implementation-review.md` |
+| UPDATE (optional) | `docs/kanban/epics/epic-10/story-01-document-lifecycle-package-implementation-review/component-inventory-map.md` (when T02 complete) |
+| UPDATE (RW Step 7) | `docs/kanban/kboard.md` |
 
 ### 4.2 Dependency order
 
@@ -224,11 +224,11 @@ Each row: expected integration (T01/README/integration guide), observed (evidenc
 | Doc ID | Canonical path | Publication status | Publication N/A reason | Lifecycle | Inbound links to add |
 | ------ | -------------- | ------------------ | ---------------------- | --------- | -------------------- |
 | D-C1 | `docs/implementation-cycles/IPP-E10S01T04-integration-dependency-alignment.md` | NOT_APPLICABLE | Planning artefact | evergreen | T04 Input/References |
-| D-C2 | `docs/project-management/kanban/epics/epic-10/story-01-document-lifecycle-package-implementation-review/integration-alignment-report.md` | NOT_APPLICABLE | Kanban companion | evergreen | T04 Deliverable; T05 Input |
+| D-C2 | `docs/kanban/epics/epic-10/story-01-document-lifecycle-package-implementation-review/integration-alignment-report.md` | NOT_APPLICABLE | Kanban companion | evergreen | T04 Deliverable; T05 Input |
 | D-U1 | `.../T04-review-integrations-and-dependency-alignment.md` | NOT_APPLICABLE | Kanban task | evergreen | Story checklist; IPP host |
 | D-U2 | `.../story-01-document-lifecycle-package-implementation-review.md` | NOT_APPLICABLE | Story doc | evergreen | Epic-10.md |
 
-**Housing rules:** One authoritative integration matrix (D-C2). T05 consumes discrepancy IDs from report §Summary. Precedent: [E02:S13 integration-alignment-report.md](../project-management/kanban/epics/epic-02/story-13-workflow-management-package-implementation-review/integration-alignment-report.md).
+**Housing rules:** One authoritative integration matrix (D-C2). T05 consumes discrepancy IDs from report §Summary. Precedent: [E02:S13 integration-alignment-report.md](../kanban/epics/epic-02/story-13-workflow-management-package-implementation-review/integration-alignment-report.md).
 
 ---
 
@@ -250,14 +250,14 @@ Each row: expected integration (T01/README/integration guide), observed (evidenc
 ## References
 
 - [E10S01 orchestration plan §7.4 T04](./E10S01-orchestration-plan.md)
-- [T04 task doc](../project-management/kanban/epics/epic-10/story-01-document-lifecycle-package-implementation-review/T04-review-integrations-and-dependency-alignment.md)
+- [T04 task doc](../kanban/epics/epic-10/story-01-document-lifecycle-package-implementation-review/T04-review-integrations-and-dependency-alignment.md)
 - [IPP-E10S01T01 — expectations baseline](./IPP-E10S01T01-expectations-baseline-doc-lifecycle.md)
 - [E02:S13:T04 precedent IPP](./IPP-E02S13T04-integration-dependency-alignment.md)
-- [E02:S13 integration-alignment-report](../project-management/kanban/epics/epic-02/story-13-workflow-management-package-implementation-review/integration-alignment-report.md)
+- [E02:S13 integration-alignment-report](../kanban/epics/epic-02/story-13-workflow-management-package-implementation-review/integration-alignment-report.md)
 - Package integration: `packages/frameworks/doc-lifecycle/integration/kanban-integration.md`, `workflow-mgt-integration.md`
 - Architecture ADRs: `docs/architecture/standards-and-adrs/doc-lifecycle-metadata-spec.md`, `doc-lifecycle-policy.md`, `policy-salience-schema.md`
-- [FR-110 — greenfield-install](../project-management/kanban/fr-br/FR-110-lean-adopter-distribution-footprint-and-vendor-bundle.md)
-- [FR-042 — IPW](../project-management/kanban/fr-br/FR-042-implementation-planning-workflow-ipw.md)
+- [FR-110 — greenfield-install](../kanban/fr-br/FR-110-lean-adopter-distribution-footprint-and-vendor-bundle.md)
+- [FR-042 — IPW](../kanban/fr-br/FR-042-implementation-planning-workflow-ipw.md)
 - [gap-log-schema.md](../architecture/standards-and-adrs/gap-log-schema.md)
 - [ipw-adr-necessity-checklist.md](../architecture/standards-and-adrs/ipw-adr-necessity-checklist.md)
 - `.claude/commands/ipw.md`

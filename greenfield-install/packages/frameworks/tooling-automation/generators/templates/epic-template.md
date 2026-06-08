@@ -75,5 +75,5 @@ housekeeping_policy: keep
 
 ## References
 
-- `docs/project-management/kanban/README.md`
+- `docs/kanban/README.md`
 

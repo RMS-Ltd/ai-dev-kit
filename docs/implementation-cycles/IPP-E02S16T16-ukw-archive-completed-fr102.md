@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # E02:S16:T16 — Planning: Spec, Tests, Implementation Plan (IPW)
 
-**Host Task:** [`T16-ukw-archive-completed-board-rows-fr102.md`](../project-management/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T16-ukw-archive-completed-board-rows-fr102.md) **(E02:S16:T16)**  
-**Planning for:** [FR-102 — UKW archive-completed (`-c`)](../project-management/kanban/fr-br/FR-102-ukw-archive-completed-board-rows.md)  
+**Host Task:** [`T16-ukw-archive-completed-board-rows-fr102.md`](../kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T16-ukw-archive-completed-board-rows-fr102.md) **(E02:S16:T16)**  
+**Planning for:** [FR-102 — UKW archive-completed (`-c`)](../kanban/fr-br/FR-102-ukw-archive-completed-board-rows.md)  
 **Status:** Published
 
 > **IPW:** Produced for E02:S16:T16. Bidirectional wiring to host task **Input** / **References** confirmed.
@@ -52,7 +52,7 @@ housekeeping_policy: keep
 
 ### 2.1 Goal
 
-Operators run **`UKW -c`** to move terminal tasks and FBUs from active MoSCOW into [**kanban-completed.md**](../project-management/kanban/kanban-completed.md) and [**intake-completed.md**](../project-management/kanban/intake-completed.md) before row removal — without full UKW bookkeeping or reprioritization.
+Operators run **`UKW -c`** to move terminal tasks and FBUs from active MoSCOW into [**kanban-completed.md**](../kanban/kanban-completed.md) and [**intake-completed.md**](../kanban/intake-completed.md) before row removal — without full UKW bookkeeping or reprioritization.
 
 ### 2.2 UKW step matrix — `UKW -c` (standalone)
 
@@ -157,7 +157,7 @@ Operators run **`UKW -c`** to move terminal tasks and FBUs from active MoSCOW in
 
 - [x] IPP §1–§7 complete; ADR-010 created
 - [x] Bidirectional T16 ↔ IPP links
-- [x] V2: `UKW -c` proof — `E02:S16:T16` → [kanban-completed.md](../project-management/kanban/kanban-completed.md) then removed from [kboard.md](../project-management/kanban/kboard.md); `FR-102` → [intake-completed.md](../project-management/kanban/intake-completed.md) then removed from [kboard.md](../project-management/kanban/kboard.md) (2026-05-30T16:30:00Z)
+- [x] V2: `UKW -c` proof — `E02:S16:T16` → [kanban-completed.md](../kanban/kanban-completed.md) then removed from [kboard.md](../kanban/kboard.md); `FR-102` → [intake-completed.md](../kanban/intake-completed.md) then removed from [kboard.md](../kanban/kboard.md) (2026-05-30T16:30:00Z)
 - [ ] V4–V5 manual idempotency re-run (second `UKW -c` expected no-op)
 - [x] V6 pytest for `archive_completed` helpers
 - [x] T16 AC1–AC5 at `RW E02:S16:T16` (**v0.2.16.16+2**)
@@ -166,11 +166,11 @@ Operators run **`UKW -c`** to move terminal tasks and FBUs from active MoSCOW in
 
 ## References
 
-- [FR-102](../project-management/kanban/fr-br/FR-102-ukw-archive-completed-board-rows.md)
+- [FR-102](../kanban/fr-br/FR-102-ukw-archive-completed-board-rows.md)
 - [ADR-009](../architecture/standards-and-adrs/ADR-009-ukw-deep-reprioritization-rp-flag.md)
 - [ADR-010](../architecture/standards-and-adrs/ADR-010-ukw-archive-completed-c-flag.md)
 - [ADR-009](../architecture/standards-and-adrs/ADR-009-ukw-deep-reprioritization-rp-flag.md) (flag pattern)
-- [FR-076](../project-management/kanban/fr-br/FR-076-ukw-fbuboard-scope-and-drift-concurrency-controls.md)
-- [FR-097](../project-management/kanban/fr-br/FR-097-board-stamp-authority-and-forensic-timestamp-recovery.md)
+- [FR-076](../kanban/fr-br/FR-076-ukw-fbuboard-scope-and-drift-concurrency-controls.md)
+- [FR-097](../kanban/fr-br/FR-097-board-stamp-authority-and-forensic-timestamp-recovery.md)
 - [Workflow initiation cheatsheet](../guides/workflow-initiation-cheatsheet.md)
 - [archive_completed.py](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/scripts/kanban/archive_completed.py)

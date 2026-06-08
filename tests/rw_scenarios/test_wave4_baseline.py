@@ -23,13 +23,13 @@ RW_CONFIG = REPO_ROOT / "rw-config.yaml"
 IPP_DIR = REPO_ROOT / "docs" / "implementation-cycles"
 T03_DOC = (
     REPO_ROOT
-    / "docs/project-management/kanban/epics/epic-02"
+    / "docs/kanban/epics/epic-02"
     / "story-17-rw-semver-characterization-and-release-state-sqlite"
     / "T03-sqlite-release-state-schema-and-migration-design.md"
 )
 T04_DOC = (
     REPO_ROOT
-    / "docs/project-management/kanban/epics/epic-02"
+    / "docs/kanban/epics/epic-02"
     / "story-17-rw-semver-characterization-and-release-state-sqlite"
     / "T04-implement-sqlite-changelog-semver-registry-backend.md"
 )

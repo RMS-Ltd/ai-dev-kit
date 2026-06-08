@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # E02:S17:T07 — Planning: Production SQLite semver-registry cutover (IPW)
 
-**Host Task:** [`T07-production-sqlite-semver-registry-cutover.md`](../project-management/kanban/epics/epic-02/story-17-rw-semver-characterization-and-release-state-sqlite/T07-production-sqlite-semver-registry-cutover.md) **(E02:S17:T07)**  
-**Planning for:** [E02:S17](../project-management/kanban/epics/epic-02/story-17-rw-semver-characterization-and-release-state-sqlite.md) · T04–T06 parity sign-off  
+**Host Task:** [`T07-production-sqlite-semver-registry-cutover.md`](../kanban/epics/epic-02/story-17-rw-semver-characterization-and-release-state-sqlite/T07-production-sqlite-semver-registry-cutover.md) **(E02:S17:T07)**  
+**Planning for:** [E02:S17](../kanban/epics/epic-02/story-17-rw-semver-characterization-and-release-state-sqlite.md) · T04–T06 parity sign-off  
 **Status:** Approved (execution authorized)  
 **Functional release target:** `RW E02:S17:T07 --art`
 

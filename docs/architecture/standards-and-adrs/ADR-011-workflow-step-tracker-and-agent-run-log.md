@@ -10,7 +10,7 @@ housekeeping_policy: keep
 
 **Status:** Accepted (updated 2026-06-05 — FR-044 reference writer v1.1)  
 **Date:** 2026-05-30  
-**Implementing tasks:** [E02:S01:T23](../../project-management/kanban/epics/epic-02/story-01-rw-agent-execution-and-docs/T23-tool-agnostic-workflow-step-tracking-and-runlogs.md); [E05:S01:T44](../../project-management/kanban/epics/epic-05/story-01-fr-repo/T44-rw-temporary-execution-log-for-recovery-and-forensics.md)  
+**Implementing tasks:** [E02:S01:T23](../../kanban/epics/epic-02/story-01-rw-agent-execution-and-docs/T23-tool-agnostic-workflow-step-tracking-and-runlogs.md); [E05:S01:T44](../../kanban/epics/epic-05/story-01-fr-repo/T44-rw-temporary-execution-log-for-recovery-and-forensics.md)  
 **Planning:** [IPP-E2S1T23](../../implementation-cycles/IPP-E2S01T23-tool-agnostic-workflow-step-tracking-runlogs.md) · [IPP-E05S01T44](../../implementation-cycles/IPP-E05S01T44-rw-temporary-execution-log.md)
 
 ---
@@ -42,4 +42,4 @@ Agent run log and forensic journal are **distinct** layers — do not merge sche
 ## Related
 
 - [ADR-008](ADR-008-workflow-forensic-logging-and-checkpoints.md)
-- [FR-044](../../project-management/kanban/fr-br/FR-044-rw-temporary-execution-log-for-recovery-and-forensics.md)
+- [FR-044](../../kanban/fr-br/FR-044-rw-temporary-execution-log-for-recovery-and-forensics.md)

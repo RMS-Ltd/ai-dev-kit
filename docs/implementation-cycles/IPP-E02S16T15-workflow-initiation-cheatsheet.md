@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # E02:S16:T15 — Planning: Spec, Tests, Implementation Plan (IPW)
 
-**Host Task:** [`T15-workflow-initiation-cheatsheet-uxr015.md`](../project-management/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T15-workflow-initiation-cheatsheet-uxr015.md) **(E02:S16:T15)**  
-**Planning for:** [UXR-015 — Workflow initiation cheatsheet](../project-management/kanban/fr-br/UXR-015-workflow-initiation-cheatsheet.md)  
+**Host Task:** [`T15-workflow-initiation-cheatsheet-uxr015.md`](../kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T15-workflow-initiation-cheatsheet-uxr015.md) **(E02:S16:T15)**  
+**Planning for:** [UXR-015 — Workflow initiation cheatsheet](../kanban/fr-br/UXR-015-workflow-initiation-cheatsheet.md)  
 **Status:** Published
 
 > **IPW (Implementation Planning Workflow):** Produced by IPW for E02:S16:T15. Bidirectional wiring to the host task `Input` and `References` is confirmed.
@@ -75,7 +75,7 @@ RF1–RF4 map to cheatsheet sections A–E plus sequences, blocked-session, and 
 | T1–T7 | All | N | Doc-only; UXR-015 prescribes structure |
 | E1–E5 | All | Pass | Single doc locus; reversible |
 
-**Outcome:** `EXEMPT` — governing doc: [UXR-015](../project-management/kanban/fr-br/UXR-015-workflow-initiation-cheatsheet.md)
+**Outcome:** `EXEMPT` — governing doc: [UXR-015](../kanban/fr-br/UXR-015-workflow-initiation-cheatsheet.md)
 
 ---
 
@@ -151,8 +151,8 @@ RF1–RF4 map to cheatsheet sections A–E plus sequences, blocked-session, and 
 
 ## References
 
-- [UXR-015](../project-management/kanban/fr-br/UXR-015-workflow-initiation-cheatsheet.md)
-- [T15 task doc](../project-management/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T15-workflow-initiation-cheatsheet-uxr015.md)
+- [UXR-015](../kanban/fr-br/UXR-015-workflow-initiation-cheatsheet.md)
+- [T15 task doc](../kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T15-workflow-initiation-cheatsheet-uxr015.md)
 - `.claude/commands/rw.md`, `ukw.md`, `ipw.md`
 - [Release Workflow agent execution guide](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md)
 - [Update Kanban Workflow agent execution guide](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/update-kanban-workflow-agent-execution.md)

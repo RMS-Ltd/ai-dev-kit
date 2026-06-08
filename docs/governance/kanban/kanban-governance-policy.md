@@ -30,7 +30,7 @@ This policy adopts the **full versioning schema and strategy** from the Numberin
 The implementation in this repo starts simple:
 
 - Uses **Stories and Tasks** as the primary work items (Epics will be added as the work grows)
-- Uses a **simple board view** in `docs/project-management/kanban/_index.md`
+- Uses a **simple board view** in `docs/kanban/_index.md`
 - Can be evolved later to add Epics, swimlanes, WIP limits, etc.
 
 ### 1.1 RW Step 7 vs standalone UKW (FR-038)
@@ -68,20 +68,20 @@ Operational guide: [`FR_BR_INTAKE_GUIDE.md` (framework package)](https://github.
 
 ### 2.1 Location
 
-**Single Kanban Directory:** All Kanban documentation lives under `docs/project-management/kanban/`:
+**Single Kanban Directory:** All Kanban documentation lives under `docs/kanban/`:
 
 - **Board files:**
-  - `docs/project-management/kanban/_index.md` (quick board view)
-  - `docs/project-management/kanban/kboard.md` (MoSCOW prioritized tasks)
-  - `docs/project-management/kanban/kanban-structure.md` (Epic/Story/Task structure)
-  - `docs/project-management/kanban/kanban-board-guide.md` (rules and explanations)
-  - `docs/project-management/kanban/README.md` (structure overview)
+  - `docs/kanban/_index.md` (quick board view)
+  - `docs/kanban/kboard.md` (MoSCOW prioritized tasks)
+  - `docs/kanban/kanban-structure.md` (Epic/Story/Task structure)
+  - `docs/kanban/kanban-board-guide.md` (rules and explanations)
+  - `docs/kanban/README.md` (structure overview)
 
 - **Epic files:**
-  - `docs/project-management/kanban/epics/Epic-X.md` (Epic overview document)
+  - `docs/kanban/epics/Epic-X.md` (Epic overview document)
 
 - **Story files:**
-  - `docs/project-management/kanban/epics/Epic-X/stories/Story-XXX-*.md` (Story documents and associated files)
+  - `docs/kanban/epics/Epic-X/stories/Story-XXX-*.md` (Story documents and associated files)
 
 ### 2.2 Board Structure
 
@@ -168,8 +168,8 @@ You can represent these as:
 
 Epics represent broad, conceptual areas of work (for example, “Kanban Framework”, “Workflow Framework”, “Book Manuscript”).
 
-- **Location:** `docs/project-management/kanban/epics/Epic-X/Epic-X.md` (Epic overview document)
-- **Directory:** `docs/project-management/kanban/epics/Epic-X/` (contains all Epic files)
+- **Location:** `docs/kanban/epics/Epic-X/Epic-X.md` (Epic overview document)
+- **Directory:** `docs/kanban/epics/Epic-X/` (contains all Epic files)
 - **Template:** Use `packages/frameworks/kanban/templates/EPIC_TEMPLATE.md` as starting point
 
 **Structure:**
@@ -190,11 +190,11 @@ kanban/epics/
 
 Stories are the **primary unit of planning** in this repo.
 
-- **Location:** `docs/project-management/kanban/epics/Epic-X/Story-XXX-short-slug.md`
+- **Location:** `docs/kanban/epics/Epic-X/Story-XXX-short-slug.md`
 - **ID:** `XXX` (numeric string, e.g. `001`, `002`)
 - **Directory:** Each Story lives in its Epic's directory, allowing for associated files (diagrams, notes, etc.) in Story subdirectories
 - **Examples:**
-  - `docs/project-management/kanban/epics/epic-01/story-01-ai-dev-kit-kanban-and-versioning.md`
+  - `docs/kanban/epics/epic-01/story-01-ai-dev-kit-kanban-and-versioning.md`
 
 **Each Story file should include:**
 
@@ -225,8 +225,8 @@ Every Task MUST have a discrete Task document (or clearly delimited section with
 **Task Document Formats:**
 
 1. **Separate File Format (Recommended):**
-   - Location: `docs/project-management/kanban/epics/Epic-X/Story-XXX/Task-YYY-description.md` or `docs/project-management/kanban/epics/Epic-X/Story-XXX/TYYY-description.md`
-   - Example: `docs/project-management/kanban/epics/epic-04/story-011/Task-001-update-kanban-policy.md`
+   - Location: `docs/kanban/epics/Epic-X/Story-XXX/Task-YYY-description.md` or `docs/kanban/epics/Epic-X/Story-XXX/TYYY-description.md`
+   - Example: `docs/kanban/epics/epic-04/story-011/Task-001-update-kanban-policy.md`
 
 2. **Delimited Section Format (Alternative):**
    - Location: Within the Story document, using Task ID as a clear header
@@ -304,8 +304,8 @@ Every **Feature Request (FR)** and **Bug Report (BR)** MUST:
 ## 4. Board Usage Rules
 
 1. **Single Source of Truth:**  
-   - The board at `docs/project-management/kanban/_index.md` is the **canonical quick view** of active stories for this repo.
-   - The detailed board at `docs/project-management/kanban/kboard.md` provides full context.
+   - The board at `docs/kanban/_index.md` is the **canonical quick view** of active stories for this repo.
+   - The detailed board at `docs/kanban/kboard.md` provides full context.
    - Each row in the board must map to exactly one Story file in `kanban/epics/Epic-X/stories/`.
 
 2. **Status Field:**  
@@ -314,10 +314,10 @@ Every **Feature Request (FR)** and **Bug Report (BR)** MUST:
 
 3. **Story Creation Flow:**
    1. **Ensure Epic exists:**
-      - If Epic doesn't exist, create `docs/project-management/kanban/epics/Epic-X.md` and `Epic-X/` directory
+      - If Epic doesn't exist, create `docs/kanban/epics/Epic-X.md` and `Epic-X/` directory
       - Create `Epic-X/stories/` subdirectory
    2. **Create Story file:**
-      - `docs/project-management/kanban/epics/Epic-X/stories/Story-XXX-short-slug.md`
+      - `docs/kanban/epics/Epic-X/stories/Story-XXX-short-slug.md`
       - Story directory allows for associated files (diagrams, notes, etc.) as needed
    3. **Update Epic doc:**
       - Add Story reference to Epic's Story Checklist
@@ -366,7 +366,7 @@ This dev-kit policy is a **project-specific adaptation** that:
 **This Repo's Implementation:**
 - Uses **full Kanban + Versioning + Workflow stack**
 - Story + Task checklists as primary work items
-- Canonical board in `docs/project-management/kanban/_index.md`
+- Canonical board in `docs/kanban/_index.md`
 - All substantive work is Task/FR-driven
 - Epics for major areas of the dev kit
 - `E\{epic\}:S\{story\}:T\{task\}` numbering for Tasks (e.g., `E1:S01:T01`, `E2:S04:T05`)
@@ -433,9 +433,9 @@ Abstract spaces use `+0` build number to indicate documentation-only anchor:
 - **As part of documentation setup phase**
 
 **Where to Commit:**
-- **Epic:** `docs/project-management/kanban/epics/Epic-X/Epic-X.md`
-- **Story:** `docs/project-management/kanban/epics/Epic-X/Story-XXX-*.md`
-- **Task:** `docs/project-management/kanban/epics/Epic-X/Story-XXX/Task-YYY-*.md` OR delimited section within Story
+- **Epic:** `docs/kanban/epics/Epic-X/Epic-X.md`
+- **Story:** `docs/kanban/epics/Epic-X/Story-XXX-*.md`
+- **Task:** `docs/kanban/epics/Epic-X/Story-XXX/Task-YYY-*.md` OR delimited section within Story
 
 **How to Commit:**
 1. **Create E/S/T document** with required structure and fields

@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # E06:S09:T15 — Planning: Spec, Tests, Implementation Plan (IPW)
 
-**Host Task:** [`T15-install-setup-interactive-feedback-external-semver-uxr016.md`](../project-management/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T15-install-setup-interactive-feedback-external-semver-uxr016.md) **(E06:S09:T15)**  
-**Planning for:** [UXR-016](../project-management/kanban/fr-br/UXR-016-install-setup-interactive-feedback-external-semver-version.md) *(reclassified from FR-108)*  
+**Host Task:** [`T15-install-setup-interactive-feedback-external-semver-uxr016.md`](../kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T15-install-setup-interactive-feedback-external-semver-uxr016.md) **(E06:S09:T15)**  
+**Planning for:** [UXR-016](../kanban/fr-br/UXR-016-install-setup-interactive-feedback-external-semver-version.md) *(reclassified from FR-108)*  
 **Status:** Approved
 
 ---
@@ -144,5 +144,5 @@ Shared module `install_ux_version.py` resolves internal version via `rw-config.y
 
 ## References
 
-- [UXR-016](../project-management/kanban/fr-br/UXR-016-install-setup-interactive-feedback-external-semver-version.md)
+- [UXR-016](../kanban/fr-br/UXR-016-install-setup-interactive-feedback-external-semver-version.md)
 - [semver_converter.py](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/scripts/version/semver_converter.py)

@@ -8,20 +8,20 @@ housekeeping_policy: keep
 
 # E1:S04 — Planning: FR-099 book/private/public repository migration (ADR-006)
 
-**Host program:** [FR-099 — Spin off book epic to a private repository](../project-management/kanban/fr-br/FR-099-spin-off-book-epic-to-private-repository.md)  
+**Host program:** [FR-099 — Spin off book epic to a private repository](../kanban/fr-br/FR-099-spin-off-book-epic-to-private-repository.md)  
 **Governing ADR:** [ADR-006 — Book project private repository spin-off](../architecture/standards-and-adrs/ADR-006-book-project-private-repository-spin-off.md)  
-**Story:** [Story 004 — Repository branding and renaming](../project-management/kanban/epics/epic-01/story-04-repository-branding-and-renaming.md)  
+**Story:** [Story 004 — Repository branding and renaming](../kanban/epics/epic-01/story-04-repository-branding-and-renaming.md)  
 **Status:** **Complete** — Phases 0–4 implemented; **FR-099** IMPLEMENTED (**v0.1.4.7+2**)
 
 **Phase tasks (shared IPP):**
 
 | Phase | Task | Doc | IPP § |
 |-------|------|-----|-------|
-| 0 | E1:S04:T03 | [T03](../project-management/kanban/epics/epic-01/story-04-repository-branding-and-renaming/T03-fr099-phase0-inventory-adr-approval.md) | §4.1 |
-| 1 | E1:S04:T04 | [T04](../project-management/kanban/epics/epic-01/story-04-repository-branding-and-renaming/T04-fr099-phase1-privatize-rename-hf-ai-dev-kit.md) | §4.2 |
-| 2 | E1:S04:T05 | [T05](../project-management/kanban/epics/epic-01/story-04-repository-branding-and-renaming/T05-fr099-phase2-book-extraction-genesis.md) | §4.3 |
-| 3 | E1:S04:T06 | [T06](../project-management/kanban/epics/epic-01/story-04-repository-branding-and-renaming/T06-fr099-phase3-public-ai-dev-kit-rebirth.md) | §4.4 |
-| 4 | E1:S04:T07 | [T07](../project-management/kanban/epics/epic-01/story-04-repository-branding-and-renaming/T07-fr099-phase4-rewire-and-verify.md) | §4.5 |
+| 0 | E1:S04:T03 | [T03](../kanban/epics/epic-01/story-04-repository-branding-and-renaming/T03-fr099-phase0-inventory-adr-approval.md) | §4.1 |
+| 1 | E1:S04:T04 | [T04](../kanban/epics/epic-01/story-04-repository-branding-and-renaming/T04-fr099-phase1-privatize-rename-hf-ai-dev-kit.md) | §4.2 |
+| 2 | E1:S04:T05 | [T05](../kanban/epics/epic-01/story-04-repository-branding-and-renaming/T05-fr099-phase2-book-extraction-genesis.md) | §4.3 |
+| 3 | E1:S04:T06 | [T06](../kanban/epics/epic-01/story-04-repository-branding-and-renaming/T06-fr099-phase3-public-ai-dev-kit-rebirth.md) | §4.4 |
+| 4 | E1:S04:T07 | [T07](../kanban/epics/epic-01/story-04-repository-branding-and-renaming/T07-fr099-phase4-rewire-and-verify.md) | §4.5 |
 
 **Cross-program:** [IPP-E6S9T6 §8 Wave E](IPP-E6S09T06-ecc-harness-phases-2-5-fr098.md) — public-repo ECC validation **after** Phase 3.
 
@@ -142,7 +142,7 @@ Repository SoT under `docs/` and root install docs; no manuscript in public gene
 
 ## 7. Success criteria
 
-- [x] Phases 0–2 complete (T03–T05) — archived on [kanban-completed.md](../project-management/kanban/kanban-completed.md); off active [kboard](../project-management/kanban/kboard.md)
+- [x] Phases 0–2 complete (T03–T05) — archived on [kanban-completed.md](../kanban/kanban-completed.md); off active [kboard](../kanban/kboard.md)
 - [x] Phase 3: public repo live (T06) — [`RMS-Ltd/ai-dev-kit`](https://github.com/RMS-Ltd/ai-dev-kit)
 - [x] Phase 4: rewire + smoke (T07)
 - [x] FR-099 IMPLEMENTED (**v0.1.4.7+2**)
@@ -151,6 +151,6 @@ Repository SoT under `docs/` and root install docs; no manuscript in public gene
 
 ## References
 
-- [FR-099](../project-management/kanban/fr-br/FR-099-spin-off-book-epic-to-private-repository.md)
+- [FR-099](../kanban/fr-br/FR-099-spin-off-book-epic-to-private-repository.md)
 - [ADR-006](../architecture/standards-and-adrs/ADR-006-book-project-private-repository-spin-off.md)
 - [IPP-E6S9T6 — ECC / Wave E](IPP-E6S09T06-ecc-harness-phases-2-5-fr098.md)

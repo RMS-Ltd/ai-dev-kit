@@ -492,7 +492,7 @@ validation_scripts:
 ### Dev-Kit Specific (Reference Only)
 
 - **Dev-Kit Integration Guide:** `docs/architecture/standards-and-adrs/dev-kit-kanban-versioning-rw-integration.md`
-- **Dev-Kit Validation:** `docs/project-management/kanban/epics/epic-04/story-03-kanban-versioning-rw-integration.md`
+- **Dev-Kit Validation:** `docs/kanban/epics/epic-04/story-03-kanban-versioning-rw-integration.md`
 
 ---
 

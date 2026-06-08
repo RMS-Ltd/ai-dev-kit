@@ -17,9 +17,9 @@ housekeeping_policy: keep
 **Status:** Accepted  
 **Date:** 2026-05-30  
 **Deciders:** User (Ruari Mears)  
-**Implementing task:** [E02:S16:T17](../../project-management/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T17-agent-bootstrap-and-task-routing-fr103.md)  
+**Implementing task:** [E02:S16:T17](../../kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T17-agent-bootstrap-and-task-routing-fr103.md)  
 **Planning package:** [IPP-E2S16T17](../../implementation-cycles/IPP-E02S16T17-agent-bootstrap-and-task-routing-fr103.md)  
-**Related:** [FR-103](../../project-management/kanban/fr-br/FR-103-agent-bootstrap-and-task-routing.md), `README.md`, `AGENTS.md`, `docs/project-agent-manifest.json`, `docs/project-agent-index.md`
+**Related:** [FR-103](../../kanban/fr-br/FR-103-agent-bootstrap-and-task-routing.md), `README.md`, `AGENTS.md`, `docs/project-agent-manifest.json`, `docs/project-agent-index.md`
 
 ---
 
@@ -123,7 +123,7 @@ Every recurring operator task type must gain a `taskRouting[]` row within one we
 ## References
 
 - [Michael Nygard — Documenting Architecture Decisions](https://cognitect.com/blog/2011/11/15/documenting-architecture-decisions)
-- [FR-022](../../project-management/kanban/fr-br/FR-022-policy-docs-machine-readable-salience.md) — `protocol[]` pointers complement policy salience work
+- [FR-022](../../kanban/fr-br/FR-022-policy-docs-machine-readable-salience.md) — `protocol[]` pointers complement policy salience work
 
 ---
 

@@ -11,6 +11,6 @@ notion_sot: true
 
 **Policy:** [ADR-024 — Documentation surfaces (three-surface model)](ADR-024-documentation-surfaces-three-surface-model-fr114.md)
 
-> Migrated from `docs/architecture/standards-and-adrs/ultimate-canonical-kb-structure.md` per [FR-114](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/project-management/kanban/fr-br/FR-114-split-documentation-surfaces-docusaurus-public-notion-maintainer-kb.md). Full content lives in Notion.
+> Migrated from `docs/architecture/standards-and-adrs/ultimate-canonical-kb-structure.md` per [FR-114](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/kanban/fr-br/FR-114-split-documentation-surfaces-docusaurus-public-notion-maintainer-kb.md). Full content lives in Notion.
 
 **Key doctrine (E05:S08:T04):** Logical KB pillars (Decisions, Reference, Investigations, Records) are organized in Notion IA — they do **not** map 1:1 to a single git or Docusaurus publish tree. Each pillar’s authoritative surface is defined in ADR-024 §2.

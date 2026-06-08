@@ -10,7 +10,7 @@ housekeeping_policy: keep
 
 **Task:** E2:S01:T14  
 **Related FR:** FR-048  
-**Host Task:** [T14-rw-trigger-extensions-multiple-use-cases-fr048.md](../project-management/kanban/epics/epic-02/story-01-rw-agent-execution-and-docs/T14-rw-trigger-extensions-multiple-use-cases-fr048.md)  
+**Host Task:** [T14-rw-trigger-extensions-multiple-use-cases-fr048.md](../kanban/epics/epic-02/story-01-rw-agent-execution-and-docs/T14-rw-trigger-extensions-multiple-use-cases-fr048.md)  
 **Created:** 2026-04-09
 
 ---

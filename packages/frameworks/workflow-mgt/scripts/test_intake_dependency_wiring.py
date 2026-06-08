@@ -28,7 +28,7 @@ def test_dependency_extraction():
     print("🧪 Test: Dependency Extraction")
     
     # Test with FR-019
-    fr_br_path = Path("docs/project-management/kanban/fr-br/FR-019-intake-workflow-automation.md")
+    fr_br_path = Path("docs/kanban/fr-br/FR-019-intake-workflow-automation.md")
     
     if not fr_br_path.exists():
         print("⚠️  FR-019 not found, skipping test")
@@ -49,7 +49,7 @@ def test_dependency_extraction():
         }
     }
     
-    kanban_path = Path("docs/project-management/kanban")
+    kanban_path = Path("docs/kanban")
     
     wiring = IntakeDependencyWiring(config, kanban_path)
     

@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # E04:S19:T12 — Planning: Single-board consolidation — retire `fbuboard` (UXR-020 R3)
 
-**Host Task:** [`T12-fbuboard-necessity-investigation-uxr020.md`](../project-management/kanban/epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T12-fbuboard-necessity-investigation-uxr020.md) **(E04:S19:T12)**  
-**Planning for:** [UXR-020 — `fbuboard` necessity after task–FBU wiring](../project-management/kanban/fr-br/UXR-020-fbuboard-necessity-after-task-fbu-wiring.md)  
+**Host Task:** [`T12-fbuboard-necessity-investigation-uxr020.md`](../kanban/epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T12-fbuboard-necessity-investigation-uxr020.md) **(E04:S19:T12)**  
+**Planning for:** [UXR-020 — `fbuboard` necessity after task–FBU wiring](../kanban/fr-br/UXR-020-fbuboard-necessity-after-task-fbu-wiring.md)  
 **Status:** COMPLETE (Waves 1–4 shipped; **v0.4.19.12+4** closure 2026-06-05)
 
 > **IPW:** Produced for E04:S19:T12 after user selected **R3 (full single-board)**. Implementation gated on explicit execution authorization per FR-083.
@@ -159,12 +159,12 @@ Release-scope reconciliation outputs:
 | Path | Change |
 | ---- | ------ |
 | `docs/architecture/standards-and-adrs/ADR-018-single-kanban-board-consolidation.md` | CREATE |
-| `docs/project-management/kanban/kboard.md` | V-band + migrated rows |
-| `docs/project-management/kanban/kboard.md` | Redirect stub |
+| `docs/kanban/kboard.md` | V-band + migrated rows |
+| `docs/kanban/kboard.md` | Redirect stub |
 | `packages/frameworks/kanban/policies/kanban-governance-policy.md` | Policy |
-| `docs/project-management/kanban/kanban-board-guide.md` | Guide |
-| `docs/project-management/kanban/README.md` | Five-way → four-way active surfaces |
-| `docs/project-management/kanban/fr-br/FR-092-*.md` | Three-surface note |
+| `docs/kanban/kanban-board-guide.md` | Guide |
+| `docs/kanban/README.md` | Five-way → four-way active surfaces |
+| `docs/kanban/fr-br/FR-092-*.md` | Three-surface note |
 | `packages/frameworks/workflow-mgt/scripts/update_kanban_docs.py` | Logic |
 | `packages/frameworks/workflow-mgt/scripts/validation/validate_active_kanban_board.py` | Logic |
 | `.cursorrules`, `.claude/commands/ukw.md`, `.claude/commands/rw.md` | Scope |

@@ -53,7 +53,7 @@ A Feature Request is a suggestion for new functionality or improvements to exist
 
 **How to create one:**
 1. Copy the Feature Request template: `packages/frameworks/kanban/templates/FR_TEMPLATE.md`
-2. Create a new file: `docs/project-management/kanban/fr-br/FR-XXX-[your-title].md`
+2. Create a new file: `docs/kanban/fr-br/FR-XXX-[your-title].md`
 3. Fill in the template with:
    - **Summary:** One sentence describing your feature
    - **Description:** Detailed explanation of what you want
@@ -74,7 +74,7 @@ A Bug Report describes a problem or unexpected behavior in the system.
 
 **How to create one:**
 1. Copy the Bug Report template: `packages/frameworks/kanban/templates/BR_TEMPLATE.md`
-2. Create a new file: `docs/project-management/kanban/fr-br/BR-XXX-[your-title].md`
+2. Create a new file: `docs/kanban/fr-br/BR-XXX-[your-title].md`
 3. Fill in the template with:
    - **Summary:** One sentence describing the bug
    - **Description:** What's wrong? What should happen vs. what actually happens?
@@ -124,7 +124,7 @@ Does it fit an existing Story?
 Once your FR/BR is processed, you can find it in:
 
 - **Your FR/BR document:** The original file you created
-- **Kanban Board:** `docs/project-management/kanban/kboard.md`
+- **Kanban Board:** `docs/kanban/kboard.md`
 - **Epic/Story documents:** Linked from your FR/BR document
 
 ### What You'll See
@@ -254,7 +254,7 @@ You can create Task documents in two formats:
 
 **Format 1: Separate Task File (Recommended for complex tasks)**
 - Create a new file: `Task-{task}-{description}.md` in the Story directory
-- Example: `docs/project-management/kanban/epics/epic-04/Story-11/Task-001-update-kanban-policy.md`
+- Example: `docs/kanban/epics/epic-04/Story-11/Task-001-update-kanban-policy.md`
 
 **Format 2: Delimited Section (Recommended for simple tasks)**
 - Add a section to the Story file with Task ID header
@@ -321,7 +321,7 @@ Every Task document MUST include:
 
 **Check:**
 1. Your FR/BR document (should have "Intake Status: ACCEPTED")
-2. Kanban Board (`docs/project-management/kanban/kboard.md`)
+2. Kanban Board (`docs/kanban/kboard.md`)
 3. The Epic/Story links in your FR/BR document
 
 ### "My request seems to be in the wrong place"
@@ -344,11 +344,11 @@ Every Task document MUST include:
 - **Bug Report:** `packages/frameworks/kanban/templates/BR_TEMPLATE.md`
 
 ### Where to Create Your Request
-- **Location:** `docs/project-management/kanban/fr-br/FR-XXX-[title].md` or `BR-XXX-[title].md`
+- **Location:** `docs/kanban/fr-br/FR-XXX-[title].md` or `BR-XXX-[title].md`
 - **Naming:** Use descriptive titles (e.g., `FR-001-dark-mode-toggle.md`)
 
 ### Key Documents
-- **Kanban Board:** `docs/project-management/kanban/kboard.md`
+- **Kanban Board:** `docs/kanban/kboard.md`
 - **Comprehensive Guide:** `packages/frameworks/kanban/FR_BR_INTAKE_GUIDE.md` (for detailed reference)
 
 ---

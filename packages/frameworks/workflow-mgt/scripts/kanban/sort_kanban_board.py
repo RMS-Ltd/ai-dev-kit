@@ -15,7 +15,7 @@ For task sorting, see story document sorting utilities (if implemented).
 Usage:
     python packages/frameworks/workflow-mgt/scripts/kanban/sort_kanban_board.py [--board-path PATH] [--dry-run]
 
-    --board-path: Path to kanban board file (default: from rw-config.yaml or docs/project-management/kanban/kboard.md)
+    --board-path: Path to kanban board file (default: from rw-config.yaml or docs/kanban/kboard.md)
     --dry-run: Show what would be sorted without making changes
 """
 
@@ -329,7 +329,7 @@ def main():
     parser.add_argument(
         '--board-path',
         type=Path,
-        help='Path to kanban board file (default: from rw-config.yaml or docs/project-management/kanban/kboard.md)'
+        help='Path to kanban board file (default: from rw-config.yaml or docs/kanban/kboard.md)'
     )
     parser.add_argument(
         '--dry-run',
@@ -359,7 +359,7 @@ def main():
             board_path = kanban_root / kanban_board
         else:
             # Default path
-            board_path = Path('docs/project-management/kanban/kboard.md')
+            board_path = Path('docs/kanban/kboard.md')
     
     if not board_path.is_absolute():
         board_path = Path.cwd() / board_path

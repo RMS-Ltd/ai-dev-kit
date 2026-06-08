@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # E6:S09:T04 — Planning: Spec, Tests, Implementation Plan (IPW)
 
-**Host Task:** [`T04-ecc-harness-layer-phase0-compatibility-fr098.md`](../project-management/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T04-ecc-harness-layer-phase0-compatibility-fr098.md) **(E6:S09:T04)**  
-**Planning for:** [FR-098 — Optional ECC harness layer integration](../project-management/kanban/fr-br/FR-098-ecc-optional-harness-layer-integration.md)  
+**Host Task:** [`T04-ecc-harness-layer-phase0-compatibility-fr098.md`](../kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T04-ecc-harness-layer-phase0-compatibility-fr098.md) **(E6:S09:T04)**  
+**Planning for:** [FR-098 — Optional ECC harness layer integration](../kanban/fr-br/FR-098-ecc-optional-harness-layer-integration.md)  
 **Status:** Approved (implementation complete 2026-05-26)
 
 ---
@@ -119,7 +119,7 @@ All CREATE paths under `docs/architecture/standards-and-adrs/` (spec + evaluatio
 
 ## References
 
-- [FR-098](../project-management/kanban/fr-br/FR-098-ecc-optional-harness-layer-integration.md)
-- [T04](../project-management/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T04-ecc-harness-layer-phase0-compatibility-fr098.md)
+- [FR-098](../kanban/fr-br/FR-098-ecc-optional-harness-layer-integration.md)
+- [T04](../kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T04-ecc-harness-layer-phase0-compatibility-fr098.md)
 - [ECC](https://github.com/affaan-m/ECC) (MIT)
 - [ADR-003](../architecture/standards-and-adrs/ADR-003-greenfield-vs-brownfield-adoption.md)

@@ -82,7 +82,7 @@ python scripts/documentation/validate_links.py
 python scripts/documentation/update_metadata.py \
   --field last_updated \
   --value auto \
-  --files docs/project-management/kanban/**/*.md
+  --files docs/kanban/**/*.md
 
 python scripts/documentation/validate_links.py
 ```

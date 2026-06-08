@@ -11,7 +11,7 @@ housekeeping_policy: keep
 **Status:** Accepted  
 **Date:** 2026-06-05  
 **Deciders:** Maintainer (via E02:S13:T10 / IPP)  
-**Related:** [RF-092](../../project-management/kanban/fr-br/FR-092-canonical-rw-ukw-kanban-consistency-program.md), [FR-097](../../project-management/kanban/fr-br/FR-097-board-stamp-authority-and-forensic-timestamp-recovery.md), [IPP-E02S13T10](../../implementation-cycles/IPP-E02S13T10-kanban-transform-consolidation-and-config-loader-unification.md)
+**Related:** [RF-092](../../kanban/fr-br/FR-092-canonical-rw-ukw-kanban-consistency-program.md), [FR-097](../../kanban/fr-br/FR-097-board-stamp-authority-and-forensic-timestamp-recovery.md), [IPP-E02S13T10](../../implementation-cycles/IPP-E02S13T10-kanban-transform-consolidation-and-config-loader-unification.md)
 
 ---
 

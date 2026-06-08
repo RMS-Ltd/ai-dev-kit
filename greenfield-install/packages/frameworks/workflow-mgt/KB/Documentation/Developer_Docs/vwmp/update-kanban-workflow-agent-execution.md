@@ -635,7 +635,7 @@ After completing UKW, users typically run RW to commit the kanban documentation 
 
 **Scope:** Runs on **comprehensive** (`UKW` no flags) and **bookkeeping** (`UKW -u`) paths. Skipped on `-p` / `-a` only runs.
 
-**Related:** [FR-050](../../../../../../docs/project-management/kanban/fr-br/FR-050-ukw-extension-for-fr-br-uxr-temporal-tracking-and-synchronization.md), [FR-076](../../../../../../docs/project-management/kanban/fr-br/FR-076-ukw-fbuboard-scope-and-drift-concurrency-controls.md), [FR-097](../../../../../../docs/project-management/kanban/fr-br/FR-097-board-stamp-authority-and-forensic-timestamp-recovery.md) (stamp authority).
+**Related:** [FR-050](../../../../../../docs/kanban/fr-br/FR-050-ukw-extension-for-fr-br-uxr-temporal-tracking-and-synchronization.md), [FR-076](../../../../../../docs/kanban/fr-br/FR-076-ukw-fbuboard-scope-and-drift-concurrency-controls.md), [FR-097](../../../../../../docs/kanban/fr-br/FR-097-board-stamp-authority-and-forensic-timestamp-recovery.md) (stamp authority).
 
 ---
 

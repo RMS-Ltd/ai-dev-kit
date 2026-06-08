@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # E04:S13:T08 — Planning: Spec, Tests, Implementation Plan (IPW)
 
-**Host Task:** [`T08-kanban-task-waiting-in-review-state-icons-uxr019.md`](../project-management/kanban/epics/epic-04/story-13-kanban-board-moscow-prioritized-task-view/T08-kanban-task-waiting-in-review-state-icons-uxr019.md) **(E04:S13:T08)**  
-**Planning for:** [UXR-019 — Kanban task WAITING / IN REVIEW state icons](../project-management/kanban/fr-br/UXR-019-kanban-task-waiting-in-review-state-icons.md)  
+**Host Task:** [`T08-kanban-task-waiting-in-review-state-icons-uxr019.md`](../kanban/epics/epic-04/story-13-kanban-board-moscow-prioritized-task-view/T08-kanban-task-waiting-in-review-state-icons-uxr019.md) **(E04:S13:T08)**  
+**Planning for:** [UXR-019 — Kanban task WAITING / IN REVIEW state icons](../kanban/fr-br/UXR-019-kanban-task-waiting-in-review-state-icons.md)  
 **Status:** Approved
 
 > **IPW (Implementation Planning Workflow):** Produced by IPW for E04:S13:T08. Extends UXR-012 (E04:S13:T07) with task-board `IN REVIEW` and `WAITING` states.
@@ -118,10 +118,10 @@ MoSCOW task rows express peer review (`IN REVIEW`, icon A1) and external queue (
 - `packages/frameworks/workflow-mgt/scripts/kanban/state_icons.py`
 - `packages/frameworks/workflow-mgt/scripts/test_state_icons.py`
 - `packages/frameworks/workflow-mgt/KB/.../state-icons.md`
-- `docs/project-management/kanban/kanban-board-guide.md`
+- `docs/kanban/kanban-board-guide.md`
 - `packages/frameworks/kanban/policies/kanban-governance-policy.md`
-- `docs/project-management/kanban/fr-br/UXR-019-*.md`
-- `docs/project-management/kanban/kboard.md`
+- `docs/kanban/fr-br/UXR-019-*.md`
+- `docs/kanban/kboard.md`
 - T08, Story 013 checklist, UXR-019
 
 ---
@@ -165,6 +165,6 @@ MoSCOW task rows express peer review (`IN REVIEW`, icon A1) and external queue (
 
 ## References
 
-- [UXR-019](../project-management/kanban/fr-br/UXR-019-kanban-task-waiting-in-review-state-icons.md)
-- [UXR-012](../project-management/kanban/fr-br/UXR-012-kanban-fbu-state-icons-for-moscow-rows.md)
-- [T08](../project-management/kanban/epics/epic-04/story-13-kanban-board-moscow-prioritized-task-view/T08-kanban-task-waiting-in-review-state-icons-uxr019.md)
+- [UXR-019](../kanban/fr-br/UXR-019-kanban-task-waiting-in-review-state-icons.md)
+- [UXR-012](../kanban/fr-br/UXR-012-kanban-fbu-state-icons-for-moscow-rows.md)
+- [T08](../kanban/epics/epic-04/story-13-kanban-board-moscow-prioritized-task-view/T08-kanban-task-waiting-in-review-state-icons-uxr019.md)

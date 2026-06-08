@@ -40,7 +40,7 @@ from rw_config_loader import load_rw_config  # noqa: E402
 def kanban_epics_root(project_root: Path, config: Optional[dict]) -> Path:
     if config and config.get("kanban_root"):
         return project_root / config["kanban_root"]
-    return project_root / "docs/project-management/kanban"
+    return project_root / "docs/kanban"
 
 
 def extract_task_id_from_doc(path: Path, content: str) -> Optional[str]:

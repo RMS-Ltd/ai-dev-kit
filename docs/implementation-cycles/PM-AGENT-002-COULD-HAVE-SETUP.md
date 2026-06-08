@@ -9,4 +9,4 @@ notion_sot: true
 
 **SoT:** Notion Engineering KB — [Pm Agent 002 Could Have Setup](https://www.notion.so/3f564189eed5c409e70c643f69f2ffb0)
 
-> Migrated from `docs/implementation-cycles/PM-AGENT-002-COULD-HAVE-SETUP.md` per [FR-114](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/project-management/kanban/fr-br/FR-114-split-documentation-surfaces-docusaurus-public-notion-maintainer-kb.md). Full content lives in Notion.
+> Migrated from `docs/implementation-cycles/PM-AGENT-002-COULD-HAVE-SETUP.md` per [FR-114](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/kanban/fr-br/FR-114-split-documentation-surfaces-docusaurus-public-notion-maintainer-kb.md). Full content lives in Notion.

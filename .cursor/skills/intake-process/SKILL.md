@@ -60,7 +60,7 @@ Some projects align numbers (e.g. FR-047 → E5:S01:T47). **KG-R6:** This is **o
 
 **Format:** `E{epic}:S{story}:T{task}` — **write-default:** two-digit zero-padding for E, S, and T when value `<10` (e.g. `E06:S06:T43`, not `E6:S6:T43`)  
 **Example:** `E06:S06:T43`  
-**Location (ai-dev-kit):** `docs/project-management/kanban/epics/Epic-{epic}/Story-…/T{task}-*.md`  
+**Location (ai-dev-kit):** `docs/kanban/epics/Epic-{epic}/Story-…/T{task}-*.md`  
 
 ### Validation rules
 

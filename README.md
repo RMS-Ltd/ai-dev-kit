@@ -11,7 +11,7 @@
 
 **A comprehensive toolkit for AI-assisted development workflows**
 
-**Version (SemVer):** `v0.4.12+1` | **Internal:** `v0.7.1.12+1` (E07:S01:T12 / FR-118 kanban path promotion intake) | **Last Updated:** 2026-06-08
+**Version (SemVer):** `v0.4.11+2` | **Internal:** `v0.7.1.12+2` (E07:S01:T12 / FR-118 kanban path promotion) | **Last Updated:** 2026-06-08
 
 [Features](#features) • [Installation](#getting-started) • [Install in Your Project](INSTALL_IN_YOUR_PROJECT.md) • [Documentation](docs/documentation) • **Browsing docs (published site):** [https://rms-ltd.github.io/ai-dev-kit/](https://rms-ltd.github.io/ai-dev-kit/) • [Workflows](#workflows) • [Report Bug](https://github.com/RMS-Ltd/ai-dev-kit/issues) • [Request Feature](https://github.com/RMS-Ltd/ai-dev-kit/issues)
 
@@ -31,7 +31,7 @@
 - **Existing project?** Migrate from copy-paste to package management
 - **Just exploring?** Browse frameworks and documentation first
 
-**Quick Install (lean vendor — recommended, [FR-110](docs/project-management/kanban/fr-br/FR-110-lean-adopter-distribution-footprint-and-vendor-bundle.md)):**
+**Quick Install (lean vendor — recommended, [FR-110](docs/kanban/fr-br/FR-110-lean-adopter-distribution-footprint-and-vendor-bundle.md)):**
 ```bash
 # 1. Vendor ai-dev-kit (submodule at vendor/ or .ai-dev-kit/)
 git submodule add https://github.com/RMS-Ltd/ai-dev-kit.git vendor/ai-dev-kit
@@ -124,7 +124,7 @@ These are the main **user-typed** triggers documented in `.cursorrules`. **Human
 
 | Trigger | Workflow | What it does | Invocation |
 |--------|-----------|--------------|------------|
-| **RW** | Release Workflow | Version bump, changelogs, kanban markers, commit, tag (local-default; `--push` opt-in) | **`RW E5:S01:T64`** (examples: `RW E7S01T10`, `RW E7:S01:T10`). The **task id must appear in the same message** as `RW`, `RW -d`, or `RW -k`. See [UXR-024](docs/project-management/kanban/fr-br/UXR-024-rw-local-release-default-no-push-batch-operator-push.md), [FR-060](docs/project-management/kanban/fr-br/FR-060-rw-task-argument-requirement.md) and [Release Workflow agent execution](packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md). |
+| **RW** | Release Workflow | Version bump, changelogs, kanban markers, commit, tag (local-default; `--push` opt-in) | **`RW E5:S01:T64`** (examples: `RW E7S01T10`, `RW E7:S01:T10`). The **task id must appear in the same message** as `RW`, `RW -d`, or `RW -k`. See [UXR-024](docs/kanban/fr-br/UXR-024-rw-local-release-default-no-push-batch-operator-push.md), [FR-060](docs/kanban/fr-br/FR-060-rw-task-argument-requirement.md) and [Release Workflow agent execution](packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md). |
 | **UKW** | Update Kanban Workflow | Bookkeeping, priorities, board sync | `UKW` (full run), or `UKW -u`, `UKW -p`, `UKW -a <target>`. See [UKW agent execution](packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/update-kanban-workflow-agent-execution.md). |
 | **PVW** | Package Version Workflow | Package-level version analysis/bumps | `PVW` (often RW Step 2.5). See [PVW agent execution](packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/package-version-workflow-agent-execution.md). |
 | **IPW** / **ICW** | Implementation Planning / Cycle | Spec → tests → implementation plan (`IPP` or ICW trio) | `IPW E02:S16:T15` or `/ipw` — **plan mode** required; then implement → **RW**. See [workflow initiation cheatsheet](docs/guides/workflow-initiation-cheatsheet.md) and [Implementation Cycle SOP](packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/implementation-cycle-sop.md). |
@@ -234,7 +234,7 @@ Follow **[INSTALL_IN_YOUR_PROJECT.md](INSTALL_IN_YOUR_PROJECT.md)** — start wi
 
 ## Roadmap
 
-Work is tracked in **[Kanban](docs/project-management/kanban/kboard.md)** and **[GitHub Issues](https://github.com/RMS-Ltd/ai-dev-kit/issues)**.
+Work is tracked in **[Kanban](docs/kanban/kboard.md)** and **[GitHub Issues](https://github.com/RMS-Ltd/ai-dev-kit/issues)**.
 
 ---
 

@@ -93,7 +93,7 @@ This epic encompasses the core foundational work for the {PROJECT_NAME} project,
 - None
 - *Parallel Development Candidacy:* Safe (foundational work, can be done independently)
 
-> Full story: `docs/project-management/kanban/epics/epic-01/story-01-project-foundation-and-setup.md`
+> Full story: `docs/kanban/epics/epic-01/story-01-project-foundation-and-setup.md`
 
 ---
 
@@ -131,7 +131,7 @@ This epic encompasses the core foundational work for the {PROJECT_NAME} project,
 - Depends on Story 1 (Project Foundation and Setup)
 - *Parallel Development Candidacy:* Blocked (requires Story 1 foundation)
 
-> Full story: `docs/project-management/kanban/epics/epic-01/story-02-core-infrastructure.md`
+> Full story: `docs/kanban/epics/epic-01/story-02-core-infrastructure.md`
 
 ---
 
@@ -167,7 +167,7 @@ This epic encompasses the core foundational work for the {PROJECT_NAME} project,
 - Depends on Story 2 (Core Infrastructure)
 - *Parallel Development Candidacy:* Blocked (requires Story 2 infrastructure)
 
-> Full story: `docs/project-management/kanban/epics/epic-01/story-03-initial-feature-set.md`
+> Full story: `docs/kanban/epics/epic-01/story-03-initial-feature-set.md`
 
 ---
 

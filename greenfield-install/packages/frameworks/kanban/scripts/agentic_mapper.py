@@ -343,7 +343,7 @@ def main():
     parser.add_argument(
         "--kanban-path",
         type=str,
-        default="docs/project-management/kanban",
+        default="docs/kanban",
         help="Path to Kanban structure"
     )
     parser.add_argument(
