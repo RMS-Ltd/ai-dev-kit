@@ -83,44 +83,32 @@ class TestWave4IPW:
 
 class TestWave4Volume:
     @pytest.mark.parametrize(
-        ("mode", "expected_returncode"),
+        ("threshold", "expected_returncode"),
         [
-            ("latest_only", 0),
-            ("archive_all", 1),
+            (100_000, 0),
+            (1, 1),
         ],
     )
-    def test_RW_V03_changelog_exceeds_threshold(self, monkeypatch, mode, expected_returncode):
+    def test_RW_V03_changelog_exceeds_threshold(self, tmp_path, threshold, expected_returncode):
         """RW-V03: main CHANGELOG over size threshold → CMW advisory (exit 1).
 
-        Deterministic coverage of both config modes by mocking rw-config content.
+        Deterministic coverage via ``check_changelog_size.py --config`` and
+        ``size_threshold_lines`` (mode does not affect exit code).
         """
         assert MAIN_CHANGELOG.exists()
-
-        monkeypatch.setattr(RW_CONFIG, "exists", lambda: True)
-        monkeypatch.setattr(
-            RW_CONFIG,
-            "read_text",
-            lambda encoding="utf-8": yaml.safe_dump(
-                {"changelog_archival": {"mode": mode}}
-            ),
+        config_path = tmp_path / "rw-config.yaml"
+        config_path.write_text(
+            yaml.safe_dump({"changelog_archival": {"size_threshold_lines": threshold}}),
+            encoding="utf-8",
         )
-
         r = subprocess.run(
-            [sys.executable, str(CHANGELOG_SCRIPT)],
+            [sys.executable, str(CHANGELOG_SCRIPT), "--config", str(config_path)],
             cwd=REPO_ROOT,
             capture_output=True,
             text=True,
         )
-        cfg = yaml.safe_load(RW_CONFIG.read_text(encoding="utf-8")) if RW_CONFIG.exists() else {}
-        latest_only = (
-            cfg.get("changelog_archival", {}).get("mode") == "latest_only"
-        )
-        if latest_only:
-            assert expected_returncode == 0
-            assert r.returncode == 0, r.stdout + r.stderr
-        else:
-            assert expected_returncode == 1
-            assert r.returncode == 1, "expected threshold exceeded on this repo"
+        assert r.returncode == expected_returncode, r.stdout + r.stderr
+        if expected_returncode == 1:
             assert "EXCEEDS THRESHOLD" in r.stdout
 
     def test_RW_V04_registry_yaml_load_benchmark(self):
