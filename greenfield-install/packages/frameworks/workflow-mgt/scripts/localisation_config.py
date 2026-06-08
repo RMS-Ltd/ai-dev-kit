@@ -484,6 +484,9 @@ def ensure_localisation_config(
         print(f"ℹ️  Using existing localisation config: {config_path}")
         return None
 
+    if dry_run:
+        non_interactive = True
+
     tag = locale if locale is not None else language
     interactive = tag is None and not non_interactive
 

@@ -10,7 +10,7 @@ housekeeping_policy: keep
 
 Maintainer-facing CLI tools for FR-006 locale corpus hygiene (E21:S03:T05–T06). Contributors should also run validation before opening translation PRs — see [contributing-translations.md](contributing-translations.md).
 
-**Canonical workflow policy:** [translation-workflow-and-review.md](../../governance/standards/translation-workflow-and-review.md)
+**Canonical workflow policy:** [translation-workflow-and-review.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/governance/standards/translation-workflow-and-review.md)
 
 ---
 
@@ -18,12 +18,12 @@ Maintainer-facing CLI tools for FR-006 locale corpus hygiene (E21:S03:T05–T06)
 
 | Tool | Purpose |
 | ---- | ------- |
-| [`validate_locale_translations.py`](../../../packages/frameworks/workflow-mgt/scripts/validate_locale_translations.py) | Structural validation (YAML, manifest paths, key parity, placeholders) |
-| [`sync_locale_keys.py`](../../../packages/frameworks/workflow-mgt/scripts/sync_locale_keys.py) | Add missing keys from en-GB into a target locale (incremental) |
-| [`scaffold_locale_trees.py`](../../../packages/frameworks/workflow-mgt/scripts/scaffold_locale_trees.py) | Bootstrap or rebuild full locale trees from en-GB |
-| [`report_locale_completeness.py`](../../../packages/frameworks/workflow-mgt/scripts/report_locale_completeness.py) | Completeness metrics, tier breakdown, and missing-translation alerts (T06) |
+| `validate_locale_translations.py` | Structural validation (YAML, manifest paths, key parity, placeholders) |
+| `sync_locale_keys.py` | Add missing keys from en-GB into a target locale (incremental) |
+| `scaffold_locale_trees.py` | Bootstrap or rebuild full locale trees from en-GB |
+| `report_locale_completeness.py` | Completeness metrics, tier breakdown, and missing-translation alerts (T06) |
 
-All commands assume repository root as the working directory.
+All commands assume repository root as the working directory. Scripts live under `packages/frameworks/workflow-mgt/scripts/`.
 
 ---
 
@@ -92,7 +92,7 @@ python packages/frameworks/workflow-mgt/scripts/report_locale_completeness.py --
 | `--dry-run` | With `--update-registry`, report changes without writing |
 | `--verbose` | List all interim-copy advisories |
 
-Reads [translatable-content-registry.yaml](../../governance/standards/translatable-content-registry.yaml) for locale scope. Reports structural vs linguistic completeness per [locale-rollout-matrix.md](../../governance/standards/locale-rollout-matrix.md) tiers (P0–P3 keys, P2 whole files).
+Reads [translatable-content-registry.yaml](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/governance/standards/translatable-content-registry.yaml) for locale scope. Reports structural vs linguistic completeness per [locale-rollout-matrix.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/governance/standards/locale-rollout-matrix.md) tiers (P0–P3 keys, P2 whole files).
 
 ---
 
@@ -107,8 +107,8 @@ Reads [translatable-content-registry.yaml](../../governance/standards/translatab
 
 ## References
 
-- [translation-workflow-and-review.md](../../governance/standards/translation-workflow-and-review.md)
+- [translation-workflow-and-review.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/governance/standards/translation-workflow-and-review.md)
 - [contributing-translations.md](contributing-translations.md)
-- [IPP-E21S03T05](../../implementation-cycles/IPP-E21S03T05-translation-management-tools.md)
-- [IPP-E21S03T06](../../implementation-cycles/IPP-E21S03T06-translation-completeness-tracking.md)
-- [ADR-024](../../architecture/standards-and-adrs/ADR-024-i18n-framework-strategy.md)
+- [IPP-E21S03T05](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/implementation-cycles/IPP-E21S03T05-translation-management-tools.md)
+- [IPP-E21S03T06](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/implementation-cycles/IPP-E21S03T06-translation-completeness-tracking.md)
+- [ADR-024](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/architecture/standards-and-adrs/ADR-024-i18n-framework-strategy.md)

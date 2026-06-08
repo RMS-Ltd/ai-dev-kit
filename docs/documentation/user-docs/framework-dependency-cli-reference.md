@@ -53,7 +53,7 @@ CLI status lines always include text labels (`Error:`, `Success:`, `Warning:`, `
 - **`--no-color`** — Global flag on any command: `ai-dev-kit --no-color install workflow-mgmt` sets `NO_COLOR=1` for that run.
 - **Install errors** — Structured `ERROR [ADK-…]` banners (FR-108) are text-first and unchanged by colour settings.
 
-Maintainer conventions: [cli-accessibility-conventions.md](../../governance/standards/cli-accessibility-conventions.md) · Strategy: [ADR-025](../../architecture/standards-and-adrs/ADR-025-layered-accessibility-strategy.md).
+Maintainer conventions: [cli-accessibility-conventions.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/governance/standards/cli-accessibility-conventions.md) · Strategy: [ADR-025](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/architecture/standards-and-adrs/ADR-025-layered-accessibility-strategy.md).
 
 ---
 

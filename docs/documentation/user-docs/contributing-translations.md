@@ -8,7 +8,7 @@ housekeeping_policy: keep
 
 # Contributing translations
 
-Thank you for helping translate AI Dev Kit framework content. This guide is a **quick start**; the canonical policy is [translation-workflow-and-review.md](../../governance/standards/translation-workflow-and-review.md).
+Thank you for helping translate AI Dev Kit framework content. This guide is a **quick start**; the canonical policy is [translation-workflow-and-review.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/governance/standards/translation-workflow-and-review.md).
 
 ---
 
@@ -31,7 +31,7 @@ Nine target locales are scaffolded (`es`, `fr`, `de`, `pt`, `zh-CN`, `zh-TW`, `j
 ## Quick workflow
 
 1. **Fork** the repository and create a branch.
-2. **Pick a locale and tier** — see [locale-rollout-matrix.md](../../governance/standards/locale-rollout-matrix.md) (P0 = language selection prompts first).
+2. **Pick a locale and tier** — see [locale-rollout-matrix.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/governance/standards/locale-rollout-matrix.md) (P0 = language selection prompts first).
 3. **Edit locale files** — use `en-GB` as the reference; keep all YAML keys; do not remove `{{placeholders}}`.
 4. **Run validation and tests:**
 
@@ -51,7 +51,7 @@ Translation PRs do **not** need Release Workflow — a maintainer will review an
 - **Required:** Maintainer review before merge.
 - **Recommended:** Native or professional review for setup prompts and installer strings (P0/P1).
 
-See the full [review checklist](../../governance/standards/translation-workflow-and-review.md#review-process) in the governance standard.
+See the full [review checklist](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/governance/standards/translation-workflow-and-review.md#review-process) in the governance standard.
 
 ---
 
@@ -64,14 +64,14 @@ See the full [review checklist](../../governance/standards/translation-workflow-
 | Use UTF-8 encoding | Mix en-GB and en-US spelling in one locale |
 | Leave `E21:S03:T04`-style task tokens in English | Run RW for translation-only changes |
 
-Full guidelines: [translation-workflow-and-review.md § Translation guidelines](../../governance/standards/translation-workflow-and-review.md#translation-guidelines).
+Full guidelines: [translation-workflow-and-review.md § Translation guidelines](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/governance/standards/translation-workflow-and-review.md#translation-guidelines).
 
 ---
 
 ## Package READMEs
 
-- [Kanban locales README](../../../packages/frameworks/kanban/locales/README.md)
-- [Workflow-mgt locales README](../../../packages/frameworks/workflow-mgt/locales/README.md)
+- [Kanban locales README](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/kanban/locales/README.md)
+- [Workflow-mgt locales README](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/locales/README.md)
 
 ---
 
@@ -83,7 +83,7 @@ See [translation-management-tools.md](translation-management-tools.md) for `vali
 
 ## References
 
-- [translation-workflow-and-review.md](../../governance/standards/translation-workflow-and-review.md) — canonical workflow
-- [translatable-content-inventory.md](../../governance/standards/translatable-content-inventory.md) — what is translatable
-- [locale-key-conventions.md](../../governance/standards/locale-key-conventions.md) — key naming rules
-- [FR-006](../../project-management/kanban/fr-br/FR-006-localization-language-selection-uk-us-english.md)
+- [translation-workflow-and-review.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/governance/standards/translation-workflow-and-review.md) — canonical workflow
+- [translatable-content-inventory.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/governance/standards/translatable-content-inventory.md) — what is translatable
+- [locale-key-conventions.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/governance/standards/locale-key-conventions.md) — key naming rules
+- [FR-006](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/kanban/fr-br/FR-006-localization-language-selection-uk-us-english.md)
