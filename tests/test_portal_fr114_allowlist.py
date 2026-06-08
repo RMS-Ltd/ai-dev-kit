@@ -55,7 +55,8 @@ def test_fr114_t1_config_excludes_maintainer_trees(config_text: str):
 
 def test_fr114_t2_sidebar_allowlist_only(sidebars_text: str):
     """T2 — sidebar categories limited to adopter-public corpus."""
-    dir_names = set(re.findall(r"dirName:\s*['\"]([^'\"]+)['\"]", sidebars_text))
+    matches = re.findall(r"dirName:\s*(['\"])([^'\"]+)\1", sidebars_text)
+    dir_names = {value for _, value in matches}
     assert dir_names <= ALLOWLIST_SIDEBAR_DIRS, f"unexpected sidebar dirs: {dir_names - ALLOWLIST_SIDEBAR_DIRS}"
     assert "developer-tools/ide-whitelist-guide" in sidebars_text
 
