@@ -109,7 +109,7 @@ Story 016 remains the operational home for perpetual workflow work. **T04** UKW 
 
 
 - [x] **E02:S16:T22 – Implementation Delivery Workflow (IDW) — FR-118** - ✅ COMPLETE (**v0.2.16.22+1** — `/idw` + `--rw` chain; FR-119 IMPLEMENTED)  
-  - Task: [`story-16-perpetual-ongoing-workflow-operations/T22-implementation-delivery-workflow-idw-fr118.md`](story-16-perpetual-ongoing-workflow-operations/T22-implementation-delivery-workflow-idw-fr118.md) | [FR-118](../../fr-br/FR-119-implementation-delivery-workflow-idw-fr118.md) | [IPP](../../../../implementation-cycles/IPP-E02S16T22-implementation-delivery-workflow-idw-fr118.md)
+  - Task: [`story-16-perpetual-ongoing-workflow-operations/T22-implementation-delivery-workflow-idw-fr118.md`](story-16-perpetual-ongoing-workflow-operations/T22-implementation-delivery-workflow-idw-fr118.md) | [FR-119](../../fr-br/FR-119-implementation-delivery-workflow-idw.md) | [IPP](../../../../implementation-cycles/IPP-E02S16T22-implementation-delivery-workflow-idw-fr118.md)
 
 
 - [x] **E02:S16:T23 – CQG gate relocation to IDW Phase 6b (ADR-022 v0.0.2)** - ✅ COMPLETE (**v0.2.16.23+1** — CQG at IDW Phase 6b; RW release-only)  
