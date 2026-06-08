@@ -116,9 +116,15 @@ Plus `tests/test_commands.py` init localisation tests (see `TestInitCommand`).
 | E21:S03:T01 | Translatable content inventory — [translatable-content-inventory.md](../../../../docs/governance/standards/translatable-content-inventory.md) |
 | E21:S03:T02 | Major-language scaffold trees — [locale-rollout-matrix.md](../../../../docs/governance/standards/locale-rollout-matrix.md) |
 | E21:S03:T03 | Translation lookup/rendering wired — [IPP-E21S03T03](../../../../docs/implementation-cycles/IPP-E21S03T03-translation-lookup-rendering.md) |
+| E21:S03:T04 | Translation workflow and review — [translation-workflow-and-review.md](../../../../docs/governance/standards/translation-workflow-and-review.md) |
+
+## Contributing translations
+
+See [contributing-translations.md](../../../../docs/documentation/user-docs/contributing-translations.md) and the canonical [translation-workflow-and-review.md](../../../../docs/governance/standards/translation-workflow-and-review.md) policy.
 
 ## References
 
+- [translation-workflow-and-review.md](../../../../docs/governance/standards/translation-workflow-and-review.md)
 - [translatable-content-inventory.md](../../../../docs/governance/standards/translatable-content-inventory.md)
 - [FR-006](../../../../docs/project-management/kanban/fr-br/FR-006-localization-language-selection-uk-us-english.md)
 - [ADR-024](../../../../docs/architecture/standards-and-adrs/ADR-024-i18n-framework-strategy.md)

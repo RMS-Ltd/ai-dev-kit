@@ -1,5 +1,6 @@
 # Machine-readable translatable content registry (E21:S03:T01)
 # Consumed by T06 completeness tracking; human overview in translatable-content-inventory.md
+# Contributor workflow: docs/governance/standards/translation-workflow-and-review.md
 version: 2
 task: E21:S03:T02
 adr: ADR-024

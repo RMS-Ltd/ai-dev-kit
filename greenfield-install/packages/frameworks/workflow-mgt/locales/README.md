@@ -73,4 +73,8 @@ Key APIs: `resolve_locale_key(project_root, key)` in [`localisation_config.py`](
 
 Fallback: `language_fallback_chain(locales_root, preferred)` — selected → `default_locale` → `en-GB` → `en-US` (E21:S02:T07).
 
-Planning: [IPP-E21S02T06](../../../../docs/implementation-cycles/IPP-E21S02T06-locale-key-system.md) · [IPP-E21S02T07](../../../../docs/implementation-cycles/IPP-E21S02T07-locale-fallback-chain.md) · [IPP-E21S03T03](../../../../docs/implementation-cycles/IPP-E21S03T03-translation-lookup-rendering.md) · [locale-key-conventions](../../../../docs/governance/standards/locale-key-conventions.md) · [locale-fallback-conventions](../../../../docs/governance/standards/locale-fallback-conventions.md)
+Planning: [IPP-E21S02T06](../../../../docs/implementation-cycles/IPP-E21S02T06-locale-key-system.md) · [IPP-E21S02T07](../../../../docs/implementation-cycles/IPP-E21S02T07-locale-fallback-chain.md) · [IPP-E21S03T03](../../../../docs/implementation-cycles/IPP-E21S03T03-translation-lookup-rendering.md) · [IPP-E21S03T04](../../../../docs/implementation-cycles/IPP-E21S03T04-translation-workflow-review.md) · [locale-key-conventions](../../../../docs/governance/standards/locale-key-conventions.md) · [locale-fallback-conventions](../../../../docs/governance/standards/locale-fallback-conventions.md)
+
+## Contributing translations
+
+See [contributing-translations.md](../../../../docs/documentation/user-docs/contributing-translations.md) and the canonical [translation-workflow-and-review.md](../../../../docs/governance/standards/translation-workflow-and-review.md) policy.

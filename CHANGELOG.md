@@ -10,10 +10,10 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 ---
 
 
-## [0.21.3.3+1] - 08-06-26
+## [0.21.3.4+1] - 08-06-26
 
-E21:S03:T03 — **Change implemented:** Translation lookup/rendering wired at installer + CLI call sites (`locale_message`). SemVer **v0.4.1091+1**.
+E21:S03:T04 — **Change implemented:** Translation workflow and review process for contributors (governance policy + user-docs guide). SemVer **v0.4.1092+1**.
 
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.21.3.3+1.md)
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.21.3.4+1.md)
 
 ---

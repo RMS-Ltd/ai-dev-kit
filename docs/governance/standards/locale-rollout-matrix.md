@@ -57,10 +57,15 @@ All nine target locales have on-disk trees in **kanban** and **workflow-mgt**, r
 
 ---
 
+## Review expectations
+
+Per [translation-workflow-and-review.md](translation-workflow-and-review.md): **maintainer review** is required for all translation PRs; **native or professional review** is recommended for P0 and P1 tiers (not blocking).
+
 ## Completeness expectations
 
 - **T02:** Structural completeness — all manifest paths exist; key parity with en-GB.
 - **S05–S07:** Linguistic completeness per tier (P0 minimum for locale selection in installers).
+- **T04:** Contributor workflow and review process — [translation-workflow-and-review.md](translation-workflow-and-review.md).
 - **T06:** Machine-readable tracking via [translatable-content-registry.yaml](translatable-content-registry.yaml).
 
 ---
