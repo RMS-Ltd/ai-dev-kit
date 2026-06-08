@@ -367,12 +367,10 @@ def select_installation_mode(analysis_report_path: Optional[Path], requested_mod
     # If we have an analysis report, read recommended mode
     recommended_mode = None
     if analysis_report_path and analysis_report_path.exists():
-        try:
+        with suppress(Exception):
             with open(analysis_report_path, 'r', encoding='utf-8') as f:
                 analysis = json.load(f)
             recommended_mode = analysis.get("migration_plan", {}).get("recommended_mode")
-        except Exception:
-            pass
     print("\n🔧 Step 3: Select installation mode")
     _log("INFO", "[KANBAN_MODE] Selecting installation mode")
     print("=" * 60)
@@ -386,12 +384,10 @@ def select_installation_mode(analysis_report_path: Optional[Path], requested_mod
     if recommended_mode:
         rationale = None
         if analysis_report_path and analysis_report_path.exists():
-            try:
+            with suppress(Exception):
                 with open(analysis_report_path, 'r', encoding='utf-8') as f:
                     analysis = json.load(f)
                 rationale = analysis.get("migration_plan", {}).get("recommendation_rationale")
-            except Exception:
-                pass
         print(f"\n💡 Recommended mode: {recommended_mode}")
         if rationale:
             print(f"   Rationale: {rationale}")

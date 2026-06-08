@@ -44,7 +44,7 @@ def import_changelog_archive(conn, archive_dir: Path) -> int:
         if len(parts) < 4:
             continue
         build_part = parts[3].split("+")
-        epic, story, task, build = int(parts[1]), int(parts[2]), int(build_part[0]), int(build_part[1] if len(build_part) > 1 else 0)
+        epic, story, task, _build = int(parts[1]), int(parts[2]), int(build_part[0]), int(build_part[1] if len(build_part) > 1 else 0)
         conn.execute(
             """
             INSERT INTO changelog_entry

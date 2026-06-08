@@ -47,7 +47,6 @@ def prepare(batch_path: Path) -> None:
 def record(batch_path: Path, response_path: Path) -> int:
     from record_notion_import_results import main as record_main  # noqa: PLC0415
 
-    batch = json.loads(batch_path.read_text(encoding="utf-8"))
     sidecar = json.loads(batch_path.with_suffix(".sidecar.json").read_text(encoding="utf-8"))
     response = json.loads(response_path.read_text(encoding="utf-8"))
     created = response.get("pages", response if isinstance(response, list) else [])

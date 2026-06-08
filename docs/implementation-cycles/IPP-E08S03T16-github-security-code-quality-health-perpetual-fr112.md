@@ -272,8 +272,8 @@ Establish **E08:S03:T16** as the operational perpetual lane for GitHub **code sc
 - [x] Wave 2a manifest @ post-T15 `main` (TC9–TC10); `RW E08:S03:T16 --art` (**v0.8.3.16+2**)
 - [x] Wave 2b themed remediation + CQG/pytest (TC11–TC13); `RW E08:S03:T16 --art` (**v0.8.3.16+3**)
 - [x] Operator dashboard verify (TC14) — closed Wave 3a @ **3** M + **8** R
-- [ ] Wave 3a manifest @ post–Wave 2b `main` (TC15–TC16); `RW E08:S03:T16 --art`
-- [ ] Wave 3b reliability-first remediation (TC17–TC18); `RW E08:S03:T16 --art`
+- [x] Wave 3a manifest @ post–Wave 2b `main` (TC15–TC16); shipped **v0.8.3.16+4**
+- [x] Wave 3b reliability-first remediation (TC17–TC18); shipped **v0.8.3.16+5** (operator dashboard re-verify pending)
 
 ---
 

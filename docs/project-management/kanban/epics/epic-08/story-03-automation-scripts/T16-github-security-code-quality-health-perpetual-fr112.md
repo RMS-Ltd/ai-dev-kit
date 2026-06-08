@@ -13,8 +13,8 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** Medium (ongoing)  
 **Created:** 2026-06-05  
-**Last updated:** 2026-06-08 (Wave 3a — operator manifest **3** M + **8** R @ `f7d8b155`; TC14 closed; Wave 3b in progress)  
-**Version Anchor:** v0.8.3.16+4 (Wave 3a) → v0.8.3.16+5 (Wave 3b)  
+**Last updated:** 2026-06-08 (Wave 3b shipped **v0.8.3.16+5** — **11**-finding remediation; operator dashboard re-verify pending)  
+**Version Anchor:** v0.8.3.16+5 (Wave 3b)  
 **Code:** E08S03T16  
 **Task Type:** Perpetual Maintenance
 
@@ -246,6 +246,25 @@ Use **`RW E08:S03:T16`** for recurring security/Code Quality hygiene (BUILD incr
 
 **TC14 / Wave 2b verification note:** Operator confirms **17** unused-import fixes reflected; residual **11** standard findings are installer/CQG-targeted (not Wave 2b scope miss).
 
+### Wave 3b remediation (2026-06-08)
+
+**Theme:** Reliability-first burn-down per IPP §8 priority **#4** then maintainability **#3** — **11** targets from Wave 3a rule table.
+
+| Rule | Fix | Files |
+| ---- | --- | ----- |
+| `py/empty-except` (×4) | `contextlib.suppress` | `install_kanban_framework.py` (×2 mirror) |
+| `py/tarslip` (×2) | Per-member `tar.extract` after path validation | `install_package_from_release.py` (×2 mirror) |
+| `py/empty-except` ImportError (×2) | `suppress(ImportError)` | `install_package_from_release.py` (×2 mirror) |
+| `py/ineffectual-statement` (×1) | Remove stray path expression | `ukw_syntax_parser.py` (×2 mirror) |
+| `py/unused-local-variable` (×2) | `_build` prefix; drop unused `batch` load | `import_legacy.py`, `run_notion_mcp_import.py` |
+
+| Verification | Result |
+| ------------ | ------ |
+| `pytest tests/` | **521 passed**, 2 skipped |
+| CQG (`validate_code_quality_gate.py`) | exit **0** (advisory threshold; non-strict) |
+| `sync_greenfield_install.py --check` | in sync |
+| Operator dashboard (TC18) | **Pending** post-merge to `main` |
+
 **Cross-lane notes:**
 
 - **T15:** CI green on `main` @ `4c4e9275` (PR #41 merge path); merge gate **lifted** for T16 code waves.
@@ -280,7 +299,7 @@ Use **`RW E08:S03:T16`** for recurring security/Code Quality hygiene (BUILD incr
 - [x] **AC6 (Wave 2a):** Wave 2 manifest @ `4c4e9275` with delta vs Wave 1 + T12 Good; shipped **v0.8.3.16+2** (docs-only).
 - [x] **AC7 (Wave 2b):** First themed remediation RW — **17** `py/unused-import` autofix; pytest green; greenfield `--check` OK; **TC14 closed** Wave 3a.
 - [x] **AC8 (Wave 3a):** Wave 3 manifest **3** M + **8** R @ `f7d8b155`; shipped **v0.8.3.16+4** (docs-only).
-- [ ] **AC9 (Wave 3b):** Reliability-first burn-down of **11** residuals; CQG + pytest green; operator post-merge verify pending.
+- [x] **AC9 (Wave 3b):** Reliability-first burn-down of **11** residuals shipped **v0.8.3.16+5**; CQG + pytest green; operator post-merge dashboard verify **pending** (TC18).
 
 ---
 

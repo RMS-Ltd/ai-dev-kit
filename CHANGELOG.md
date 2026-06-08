@@ -11,10 +11,10 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
-## [0.8.3.16+4] - 08-06-26
+## [0.8.3.16+5] - 08-06-26
 
-E08:S03:T16 — **Change implemented:** Wave 3a manifest @ `main` `f7d8b155` — **3** M + **8** R open; TC14 closed. SemVer **v0.4.1059+4**.
+E08:S03:T16 — **Attempted fix:** Wave 3b — **11** standard-finding remediation (reliability-first: `empty-except`, `tarslip`; maintainability: ineffectual stmt, unused locals). SemVer **v0.4.1060+5**.
 
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.8.3.16+4.md)
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.8.3.16+5.md)
 
 ---
