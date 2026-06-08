@@ -7,7 +7,6 @@ import json
 import re
 import sqlite3
 import sys
-from pathlib import Path
 from typing import Any, Dict, List, Optional
 
 from .config import get_store_config

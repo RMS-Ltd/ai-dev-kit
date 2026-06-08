@@ -13,8 +13,8 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** Medium (ongoing)  
 **Created:** 2026-06-05  
-**Last updated:** 2026-06-08 (Wave 2a manifest @ `4c4e9275`; Wave 2b theme: autofix `py/unused-import` in `release_metadata/`)  
-**Version Anchor:** v0.8.3.16+2 (Wave 2a) → v0.8.3.16+3 (Wave 2b)  
+**Last updated:** 2026-06-08 (Wave 2b — autofix **17** `py/unused-import` in `release_metadata/` + `scripts/`/`tests/`; greenfield mirror in sync)  
+**Version Anchor:** v0.8.3.16+3  
 **Code:** E08S03T16  
 **Task Type:** Perpetual Maintenance
 
@@ -207,6 +207,19 @@ Use **`RW E08:S03:T16`** for recurring security/Code Quality hygiene (BUILD incr
 | `py/unused-import` | **10** (5 files × 2 trees) | Maintainability | Wave 2b — autofix-safe |
 | `Tuple`, `sqlite3`, `Optional`, `Path` imports | per-file | Maintainability | E02:S17 SQLite ingest landing |
 
+### Wave 2b remediation (2026-06-08)
+
+**Theme:** Autofix-safe `py/unused-import` (priority 3 per IPP §8) — E02:S17 `release_metadata/` landing residuals + mirror pair.
+
+| Action | Result |
+| ------ | ------ |
+| `ruff --fix F401` | **17** fixes — 10 in `packages/` + `greenfield-install/` `release_metadata/`; 7 in `scripts/` + `tests/` |
+| `sync_greenfield_install.py --check` | in sync |
+| pytest | `release_metadata` + `tests/release_state/` — **14 passed** |
+| CQG | local monitor advisory (non-strict); `F401` proxy **0** post-fix |
+
+**Operator verify (TC14):** dashboard delta on [security/quality](https://github.com/RMS-Ltd/ai-dev-kit/security/quality) after merge to `main`.
+
 **Cross-lane notes:**
 
 - **T15:** CI green on `main` @ `4c4e9275` (PR #41 merge path); merge gate **lifted** for T16 code waves.
@@ -239,7 +252,7 @@ Use **`RW E08:S03:T16`** for recurring security/Code Quality hygiene (BUILD incr
 - [x] **AC4:** First attributed RW records baseline open counts on `main` (code scanning + code quality) — **v0.8.3.16+1** @ `777e956`.
 - [x] **AC5 (Wave 1 re-scan):** Wave 1 manifest @ `f6aa4dca` recorded with rule breakdown + cross-lane deltas ([IPP §4 Wave 1 re-scan](../../../../../implementation-cycles/IPP-E08S03T16-github-security-code-quality-health-perpetual-fr112.md)).
 - [x] **AC6 (Wave 2a):** Wave 2 manifest @ `4c4e9275` with delta vs Wave 1 + T12 Good; shipped **v0.8.3.16+2** (docs-only).
-- [ ] **AC7 (Wave 2b):** First themed remediation RW — `py/unused-import` autofix in `release_metadata/` + mirror; CQG + pytest green; operator dashboard verify pending.
+- [x] **AC7 (Wave 2b):** First themed remediation RW — **17** `py/unused-import` autofix (`release_metadata/` ×2 trees + `scripts/`/`tests/`); pytest green; greenfield `--check` OK; operator dashboard verify pending.
 
 ---
 

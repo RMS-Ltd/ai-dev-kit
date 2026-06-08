@@ -7,7 +7,6 @@ Executable spec from IPP-E05S09T15.
 from __future__ import annotations
 
 import re
-from pathlib import Path
 
 import pytest
 import yaml

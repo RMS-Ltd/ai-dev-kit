@@ -8,7 +8,6 @@ Each test is tagged with scenario_id for run-log correlation.
 
 from __future__ import annotations
 
-import json
 import os
 import subprocess
 import sys

@@ -11,10 +11,10 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
-## [0.8.3.16+2] - 08-06-26
+## [0.8.3.16+3] - 08-06-26
 
-E08:S03:T16 — **Change implemented:** Wave 2a manifest re-scan @ `main` `4c4e9275` (post-T15 CI green); IPP §8; coordination matrix update. SemVer **v0.4.1056+2**.
+E08:S03:T16 — **Attempted fix:** Wave 2b — **17** `py/unused-import` autofix in `release_metadata/` + mirror (`scripts/`/`tests/`). SemVer **v0.4.1057+3**.
 
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.8.3.16+2.md)
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.8.3.16+3.md)
 
 ---
