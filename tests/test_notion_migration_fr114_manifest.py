@@ -54,7 +54,7 @@ def test_stubbed_files_have_notion_sot_frontmatter(manifest: dict) -> None:
 
 def test_rw_config_notion_urls_updated() -> None:
     text = RW_CONFIG.read_text(encoding="utf-8")
-    assert "378b6f8962c181dda420fb0236d9e060" in text
+    assert "30db6f8962c1810daf71f96bb601d69b" in text
     assert "378b6f8962c18189aacbe8629677403d" in text
     assert "30db6f8962c181ceb811f3a6c78ecd4b" not in text
 

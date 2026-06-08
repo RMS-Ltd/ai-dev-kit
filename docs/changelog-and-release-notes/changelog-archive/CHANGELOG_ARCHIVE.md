@@ -1,4 +1,11 @@
 # Changelog Archive
+## [0.2.16.24+1] - 08-06-26
+
+E02:S16:T24 — **Change implemented:** S16 perpetual-only consolidation (semantic scatter); perpetual lanes T01–T06; finite tasks evacuated to owning stories. SemVer **v0.4.11+1**.
+
+[Detailed changelog](CHANGELOG_v0.2.16.24+1.md)
+
+---
 ## [0.2.16.10+7] - 08-06-26
 
 E02:S16:T10 — **Change implemented:** Retire `project-management/kanban/` stale subtree; fix active README/kanban links. SemVer **v0.4.11+7**.

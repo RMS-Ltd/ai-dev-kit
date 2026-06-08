@@ -79,10 +79,10 @@ canonical_public_pages_url: https://rms-ltd.github.io/ai-dev-kit/
 maintainer_private_repo: RMS-Ltd/ai-dev-kit-book
 maintainer_private_repo_url: https://github.com/RMS-Ltd/ai-dev-kit-book.git
 
-# Notion project hub (FR-114 clean-slate bootstrap — E05:S08:T03 @ 2026-06-07)
-notion_hub_url: https://www.notion.so/378b6f8962c181dda420fb0236d9e060
+# Notion — Teamspaces → RMS (project pages at teamspace root; 2026-06-08)
+notion_hub_url: https://www.notion.so/30db6f8962c1810daf71f96bb601d69b
 
-# Engineering KB root (child of hub; IA: Decisions, Reference, Investigations, Records)
+# AI Dev Kit maintainer KB (Decisions, Reference, Investigations, Records) — child of AI Dev Kit project page
 notion_kb_url: https://www.notion.so/378b6f8962c18189aacbe8629677403d
 
 # Epic ranges

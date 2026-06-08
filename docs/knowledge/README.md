@@ -35,10 +35,10 @@ Required frontmatter: `lifecycle`, `created_at`, `housekeeping_policy`, `notion_
 
 | Surface | URL |
 | ------- | --- |
-| Hub | `rw-config.yaml` → `notion_hub_url` |
-| Engineering KB | `rw-config.yaml` → `notion_kb_url` |
+| AI Dev Kit (RMS teamspace entry) | `rw-config.yaml` → `notion_hub_url` |
+| AI Dev Kit maintainer KB | `rw-config.yaml` → `notion_kb_url` (child of AI Dev Kit project page) |
 
-IA areas under Engineering KB: **Decisions**, **Reference**, **Investigations**, **Records**.
+**Teamspaces → RMS** root pages: AI Dev Kit, Starborn Legacy, fynd.deals, Confidentia, SecArtNet. ADK maintainer KB areas: **Decisions**, **Reference**, **Investigations**, **Records**.
 
 ## Scripts
 

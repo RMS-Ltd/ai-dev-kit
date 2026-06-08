@@ -10,15 +10,17 @@ housekeeping_policy: keep
 
 **Status:** ✅ COMPLETE  
 **Priority:** CRITICAL  
-**Last updated:** 2025-12-18 (v0.6.7.6+20 – All deliverables verified complete: meta-analyses, executive summary, all 4 canonical framework designs, migrated from v0.6.6.6+20)  
+**Last updated:** 2026-06-08 (v0.6.7.6+1 – Kanban v3.2.0 epic catalog ratification wave; analysis corpus + Notion sync; package rewrite gated)  
 **Started:** 2025-12-16  
 **Completed:** 2025-12-18  
-**Version:** v0.6.7.6+20  
+**Version:** v0.6.7.6+1  
 **Code:** E06S07T06
 
 ---
 
 ## Task ID
+
+**Task ID:** E06:S07:T06
 
 **Format:** `E\{epic\}:S\{story\}:T\{task\}`
 

@@ -11,10 +11,10 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
-## [0.2.16.24+1] - 08-06-26
+## [0.6.7.6+1] - 08-06-26
 
-E02:S16:T24 — **Change implemented:** S16 perpetual-only consolidation (semantic scatter); perpetual lanes T01–T06; finite tasks evacuated to owning stories. SemVer **v0.4.11+1**.
+E06:S07:T06 — **Change implemented:** Ultimate Canonical Kanban v3.2.0 analysis corpus (epic catalog ratification, E05 Project Architecture, `&` naming conventions, migration blueprint). SemVer **v0.4.12+1**.
 
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.16.24+1.md)
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.6.7.6+1.md)
 
 ---

@@ -12,8 +12,8 @@ housekeeping_policy: keep
 **Priority:** CRITICAL
 **Estimated Effort:** Large
 **Created:** 2025-12-16
-**Last updated:** 2026-05-29 (FR-087 Wave 4: In/Out of Scope restated; T109/T18 re-housed to E2; freeze on new catch-all intake)
-**Version:** v0.6.7.115+1
+**Last updated:** 2026-06-08 (v0.6.7.6+1 – Kanban documentation setup)
+**Version:** v0.6.7.6+1
 **Code:** E6S07
 
 **Note:** This story was renumbered from S06 to S07 as part of the repository story abstract space resolution (E09:S01:T08).
@@ -43,7 +43,7 @@ housekeeping_policy: keep
   - Task: [`T05-implement-feedback-mechanism`](story-07-adk-implementation-analysis-and-package-management/T05-implement-feedback-mechanism.md)
 
 
-- [x] **E06:S07:T06 – Cross-project meta-analysis and canonical framework design** ✅ COMPLETE (v0.6.7.6+20 – All deliverables verified complete: 7 meta-analyses, executive summary, all 4 canonical framework designs)
+- [x] **E06:S07:T06 – Cross-project meta-analysis and canonical framework design** ✅ COMPLETE (v0.6.7.6+1 – Kanban v3.2.0 epic catalog ratification wave; v0.6.7.6+20 original deliverables + 2026-06-08 v3.2 analysis corpus)
   - Task: [`T06-cross-project-meta-analysis-and-canonical-framework-design`](story-07-adk-implementation-analysis-and-package-management/T06-cross-project-meta-analysis-and-canonical-framework-design.md)
   - Task: [`T06-cross-project-meta-analysis-and-canonical-framework-design.md`](story-07-adk-implementation-analysis-and-package-management/T06-cross-project-meta-analysis-and-canonical-framework-design.md)
 
@@ -246,6 +246,6 @@ Conduct comprehensive analysis of all projects that have implemented ADK framewo
 
 ---
 
-**Last Updated:** 2026-04-20 (v0.6.7.115+1 – Kanban documentation setup)
-**Version:** v0.6.7.115+1
+**Last Updated:** 2026-06-08 (v0.6.7.6+1 – Kanban documentation setup)
+**Version:** v0.6.7.6+1
 **Status:** IN PROGRESS
