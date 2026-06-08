@@ -12,8 +12,8 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** Medium  
 **Created:** 2026-04-20  
-**Last updated:** 2026-06-08 (v0.2.16.4+41 — E02:S16:T04 FR-109 kboard enforcement)
-**Version:** v0.2.16.4+41
+**Last updated:** 2026-06-08 (v0.2.16.10+7 – Kanban documentation setup)
+**Version:** v0.2.16.10+7
 **Code:** E2S16
 
 ---
@@ -61,7 +61,7 @@ Story 016 remains the operational home for perpetual workflow work. **T04** UKW 
   - Task: [`story-16-perpetual-ongoing-workflow-operations/T09-ipw-slash-command-claude-code-fr094.md`](story-16-perpetual-ongoing-workflow-operations/T09-ipw-slash-command-claude-code-fr094.md) | [FR-094](../../fr-br/FR-094-ipw-slash-command-and-task-state-transition-mandate.md)
 
 
-- [ ] **E02:S16:T10 – Ad-hoc Repository Infrastructure Maintenance (Perpetual)** - IN PROGRESS (MEDIUM, catch-all perpetual lane; last RW **v0.2.16.10+6** — post-FR-114 PR merge infrastructure: version re-anchor, epic/5 branch cleanup)
+- [ ] **E02:S16:T10 – Ad-hoc Repository Infrastructure Maintenance (Perpetual)** - IN PROGRESS (MEDIUM, catch-all perpetual lane; last RW **v0.2.16.10+7** — FR-118 `project-management/kanban/` shell retirement)
   - Task: [`story-16-perpetual-ongoing-workflow-operations/T10-ad-hoc-repository-infrastructure-maintenance-perpetual.md`](story-16-perpetual-ongoing-workflow-operations/T10-ad-hoc-repository-infrastructure-maintenance-perpetual.md)
 
 

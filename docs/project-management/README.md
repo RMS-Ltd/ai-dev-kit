@@ -6,8 +6,10 @@ expires_at: null
 housekeeping_policy: keep
 ---
 
-# Project Management (retired shell)
+# Project Management (RETIRED)
 
-> **Moved:** Kanban work now lives at [`docs/kanban/`](../kanban/). Rituals/policy content was consolidated under [`docs/governance/kanban/`](../governance/kanban/) per [FR-101](../kanban/fr-br/FR-101-consolidate-governance-under-docs-governance.md) and [FR-118](../kanban/fr-br/FR-118-promote-kanban-to-docs-kanban-retire-project-management-shell.md).
+> **Canonical Kanban:** [`docs/kanban/`](../kanban/)  
+> **Policy:** [`docs/governance/kanban/`](../governance/kanban/)  
+> **Closure:** [FR-118](../kanban/fr-br/FR-118-promote-kanban-to-docs-kanban-retire-project-management-shell.md) @ `v0.7.1.12+2`; stale `kanban/` subtree removed @ `v0.2.16.10+7`.
 
-This directory is retained as a redirect stub for one release cycle. Update bookmarks and `rw-config.yaml` to use `docs/kanban/` as `kanban_root`.
+This directory is a **redirect stub only**. Do not add files here.

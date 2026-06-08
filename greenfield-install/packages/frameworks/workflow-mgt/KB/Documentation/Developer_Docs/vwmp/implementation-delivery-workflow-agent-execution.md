@@ -106,5 +106,5 @@ Board row propagation for a release is **RW Step 7** when shipping via `--rw` or
 - [implementation-planning-workflow-agent-execution.md](implementation-planning-workflow-agent-execution.md)
 - [release-workflow-agent-execution.md](release-workflow-agent-execution.md)
 - [implementation-cycle-sop.md](implementation-cycle-sop.md)
-- [FR-083](../../../../../../docs/project-management/kanban/fr-br/FR-083-global-ipw-gated-implementation-contract.md)
-- [FR-077](../../../../../../docs/project-management/kanban/fr-br/FR-077-ipw-built-task-status-transition-and-kboard-sync.md)
+- [FR-083](../../../../../../docs/kanban/fr-br/FR-083-global-ipw-gated-implementation-contract.md)
+- [FR-077](../../../../../../docs/kanban/fr-br/FR-077-ipw-built-task-status-transition-and-kboard-sync.md)

@@ -1,27 +1,30 @@
-# Changelog v0.2.16.10+7 — RW SemVer matrix v3 nasty scenarios (spike)
+# Changelog v0.2.16.10+7
 
-**Release Date:** 2026-06-07 19:01:58 UTC  
-**Internal Version:** v0.2.16.10+7  
-**SemVer (task_touch):** v0.4.1048+7  
-**Epic:** 2 | **Story:** 16 | **Task:** 10 (perpetual)
-
----
-
-## Summary
-
-**Change implemented:** E02:S17 matrix v3 nasty scenarios (HS08–HS10) — pattern-informed tag collision recovery, batch push, registry collision gate. **82 pytest pass** in `tests/rw_scenarios/`.
+**Release Date:** 2026-06-08 15:25:09 UTC  
+**Epic:** 2 | **Story:** 16 | **Task:** 10 | **Build:** 7  
+**SemVer:** v0.4.11+7  
+**Summary:** Retire `project-management/kanban/` stale subtree; fix active links
 
 ---
 
-## Added
+## Release scope
 
-- `scenario-matrix-v3.md` — Class H nasty scenarios
-- `tests/rw_scenarios/test_t06_nasty_scenarios.py` — HS08, HS09, HS10 (12 tests)
+E02:S16:T10 — **Change implemented:** Complete FR-118 shell retirement — delete stale `docs/project-management/kanban/` duplicates (`kboard.md`, orphan T16 task doc); tighten `project-management/README.md` to redirect-only; repoint `README.md` and IDW guide links to `docs/kanban/`; note RETIRED disposition in `book-repo-docs-scope.md`. SemVer **v0.4.11+7**.
 
-## Changed
+---
 
-- `high-stress-run-log.md`, `rw-semver-friction-report.md`, `scenario-matrix-v2.md` — v3 cross-links
+## Changes
 
-## Attribution
+### Repository infrastructure
 
-Perpetual infra release on `spike/rw-semver-friction` post E02:S17 story closure.
+- **Deleted** `docs/project-management/kanban/` (stale post-FR-118 drift).
+- **Updated** `docs/project-management/README.md` — RETIRED redirect stub only.
+- **Updated** `README.md` — Kanban + FR links → `docs/kanban/`.
+- **Updated** `implementation-delivery-workflow-agent-execution.md` (packages + greenfield-install) — FR-083/FR-077 paths.
+- **Updated** `docs/maintenance/book-repo-docs-scope.md` — FR-118 path disposition.
+
+---
+
+## Verification
+
+- `rg 'docs/project-management/kanban' README.md` — clean (INSTALL migration section retains historical path text by design).

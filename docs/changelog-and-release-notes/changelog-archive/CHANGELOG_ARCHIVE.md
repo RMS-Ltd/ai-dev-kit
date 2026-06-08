@@ -1,4 +1,11 @@
 # Changelog Archive
+## [0.2.16.10+7] - 08-06-26
+
+E02:S16:T10 — **Change implemented:** Retire `project-management/kanban/` stale subtree; fix active README/kanban links. SemVer **v0.4.11+7**.
+
+[Detailed changelog](CHANGELOG_v0.2.16.10+7.md)
+
+---
 ## [0.2.16.4+41] - 08-06-26
 
 E02:S16:T04 — **Change implemented:** FR-109 enforcement fix — prune kboard archive prose; block *(…)* footnotes. SemVer **v0.4.12+41**.

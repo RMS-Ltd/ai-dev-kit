@@ -13,14 +13,14 @@ housekeeping_policy: keep
 **Priority:** MEDIUM
 **Estimated Effort:** Small
 **Created:** 2026-05-19
-**Last updated:** 2026-06-07 19:26:25 UTC (v0.2.16.10+8: E02:S17 integration sign-off — test report + wave artifacts)
-**Version:** v0.2.16.10+8
+**Last updated:** 2026-06-08 (RW **v0.2.16.10+7** — FR-118 shell retirement)
+**Version:** v0.2.16.10+7
 **Code:** E02S16T10
 **Task Type:** Perpetual Maintenance
 
-**Forensic Marker:** v0.2.16.10+8
+**Forensic Marker:** v0.2.16.10+7
 
-**Version Anchor:** v0.2.16.10+8 (perpetual — E02:S17 integration sign-off)
+**Version Anchor:** v0.2.16.10+7 (perpetual — FR-118 `project-management/` shell retirement)
 
 ---
 
