@@ -11,6 +11,7 @@ from __future__ import annotations
 import importlib.util
 import re
 import sys
+from contextlib import suppress
 from dataclasses import dataclass
 from functools import lru_cache
 from pathlib import Path
@@ -140,12 +141,10 @@ def _convert_to_semver(internal: str, project_root: Path) -> Optional[str]:
     except Exception:
         return None
     finally:
-        try:
-            import os
+        import os
 
+        with suppress(Exception):
             os.chdir(previous_cwd)
-        except Exception:
-            pass
 def _resolve_internal(project_root: Optional[Path]) -> Optional[str]:
     start = (project_root or Path.cwd()).resolve()
     internal = _load_internal_from_rw_config(start)

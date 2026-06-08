@@ -12,6 +12,7 @@ import argparse
 import json
 import re
 import subprocess
+from contextlib import suppress
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
@@ -84,7 +85,7 @@ def discover_binding_adrs() -> set[str]:
                     adr = m.group(1).split(".md")[0] + ".md"
                     found.add(f"architecture/standards-and-adrs/{adr.split('/')[-1]}")
         elif root.is_dir():
-            try:
+            with suppress(FileNotFoundError):  # `rg` not installed — skip ripgrep binding pass
                 out = subprocess.run(
                     ["rg", "-l", r"architecture/standards-and-adrs/ADR-", str(root)],
                     capture_output=True,
@@ -101,8 +102,6 @@ def discover_binding_adrs() -> set[str]:
                                 found.add(
                                     f"architecture/standards-and-adrs/{adr.split('/')[-1]}"
                                 )
-            except FileNotFoundError:
-                pass
     # Always keep numbered ADR files under standards-and-adrs that exist
     adr_dir = DOCS / "architecture" / "standards-and-adrs"
     if adr_dir.is_dir():
