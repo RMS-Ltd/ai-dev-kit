@@ -1,9 +1,9 @@
 # Changelog Archive
-## [0.8.3.16+8] - 08-06-26
+## [0.8.3.16+9] - 08-06-26
 
-E08:S03:T16 — **Attempted fix:** Wave 3e — autofix PR pytest triage (#43/#44). SemVer **v0.4.12+8**.
+E08:S03:T16 — **Attempted fix:** Wave 3e — autofix PR pytest triage (#43/#44). SemVer **v0.4.11+9**.
 
-[Detailed changelog](CHANGELOG_v0.8.3.16+8.md)
+[Detailed changelog](CHANGELOG_v0.8.3.16+9.md)
 
 ---
 ## [0.2.17.7+2] - 08-06-26

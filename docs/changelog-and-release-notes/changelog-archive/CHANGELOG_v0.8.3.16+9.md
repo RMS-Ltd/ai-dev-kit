@@ -1,15 +1,15 @@
-# Changelog v0.8.3.16+8
+# Changelog v0.8.3.16+9
 
-**Release Date:** 2026-06-08 13:47:49 UTC  
-**Epic:** 8 | **Story:** 3 | **Task:** 16 | **Build:** 8  
-**SemVer:** v0.4.12+8  
+**Release Date:** 2026-06-08 13:55:00 UTC  
+**Epic:** 8 | **Story:** 3 | **Task:** 16 | **Build:** 9  
+**SemVer:** v0.4.11+9  
 **Summary:** T16 Wave 3e — autofix PR pytest triage (#43/#44)
 
 ---
 
 ## Release scope
 
-E08:S03:T16 — **Attempted fix:** Wave 3e — triage GitHub Code Quality autofix PRs [#43](https://github.com/RMS-Ltd/ai-dev-kit/pull/43) and [#44](https://github.com/RMS-Ltd/ai-dev-kit/pull/44); restore pytest green on `main`. SemVer **v0.4.12+8**.
+E08:S03:T16 — **Attempted fix:** Wave 3e — triage GitHub Code Quality autofix PRs [#43](https://github.com/RMS-Ltd/ai-dev-kit/pull/43) and [#44](https://github.com/RMS-Ltd/ai-dev-kit/pull/44); restore pytest green on `main`. SemVer **v0.4.11+9**.
 
 ---
 

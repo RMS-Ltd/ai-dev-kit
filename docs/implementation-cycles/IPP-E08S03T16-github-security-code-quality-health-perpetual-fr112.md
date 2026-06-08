@@ -342,7 +342,7 @@ Establish **E08:S03:T16** as the operational perpetual lane for GitHub **code sc
 | 24 | Triage [PR #43](https://github.com/RMS-Ltd/ai-dev-kit/pull/43) (revert bad `VERSION_STRING` autofix) and [PR #44](https://github.com/RMS-Ltd/ai-dev-kit/pull/44) (fix RW-V03 test) |
 | 25 | Push fixes to autofix branches; verify pytest CI green |
 | 26 | Merge #43 then #44 to `main`; reconcile `dev` |
-| 27 | `RW E08:S03:T16 --art` — BUILD +8 |
+| 27 | `RW E08:S03:T16 --art` — BUILD +9 |
 | 28 | Operator dismiss #43 AI finding in Security UI |
 
 ---
