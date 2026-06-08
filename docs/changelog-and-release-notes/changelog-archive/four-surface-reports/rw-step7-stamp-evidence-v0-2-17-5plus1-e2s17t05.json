@@ -1,0 +1,12 @@
+{
+  "rows": {
+    "E02:S17:T05": {
+      "allowed": true,
+      "reason": "RW Step 7 v0.2.17.5+1 — T05 COMPLETE; row removed from active MoSCOW (FR-109)"
+    },
+    "E02:S17:T06": {
+      "allowed": true,
+      "reason": "RW Step 7 v0.2.17.5+1 — T06 high-stress filed on Must Have after T05 ship"
+    }
+  }
+}

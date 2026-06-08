@@ -1,0 +1,77 @@
+============================= test session starts ==============================
+platform darwin -- Python 3.9.6, pytest-8.4.2, pluggy-1.6.0 -- /Applications/Xcode.app/Contents/Developer/usr/bin/python3
+cachedir: .pytest_cache
+rootdir: /Users/rms/Documents/projects/ai-dev-kit-e05
+configfile: pytest.ini
+plugins: mock-3.15.1, anyio-4.10.0, cov-7.0.0
+collecting ... collected 29 items
+
+tests/rw_scenarios/test_t05_parity.py::TestT05RegistryParity::test_RW_S01_parity PASSED [  3%]
+tests/rw_scenarios/test_t05_parity.py::TestT05RegistryParity::test_RW_S02_parity_three_releases PASSED [  6%]
+tests/rw_scenarios/test_t05_parity.py::TestT05RegistryParity::test_RW_S04_parity_finalize_boundary PASSED [ 10%]
+tests/rw_scenarios/test_t05_parity.py::TestT05RegistryParity::test_RW_S06_parity_idempotent_finalize PASSED [ 13%]
+tests/rw_scenarios/test_t05_parity.py::TestT05RegistryParity::test_RW_V01_parity_ten_finalize PASSED [ 17%]
+tests/rw_scenarios/test_t05_parity.py::TestT05SqliteInjective::test_RW_S05_sqlite_import_dedupes_yaml_collision PASSED [ 20%]
+tests/rw_scenarios/test_t05_parity.py::TestT05SqliteInjective::test_RW_S05_sqlite_unique_patch_constraint PASSED [ 24%]
+tests/rw_scenarios/test_t05_parity.py::test_registry_parity_ids_registered[RW-S01] PASSED [ 27%]
+tests/rw_scenarios/test_t05_parity.py::test_registry_parity_ids_registered[RW-S02] PASSED [ 31%]
+tests/rw_scenarios/test_t05_parity.py::test_registry_parity_ids_registered[RW-S04] PASSED [ 34%]
+tests/rw_scenarios/test_t05_parity.py::test_registry_parity_ids_registered[RW-S06] PASSED [ 37%]
+tests/rw_scenarios/test_t05_parity.py::test_registry_parity_ids_registered[RW-V01] PASSED [ 41%]
+tests/rw_scenarios/test_t05_parity.py::test_skipped_baseline_documented[RW-B04] PASSED [ 44%]
+tests/rw_scenarios/test_t05_parity.py::test_skipped_baseline_documented[RW-B05] PASSED [ 48%]
+tests/rw_scenarios/test_t05_parity.py::test_skipped_baseline_documented[RW-G01] PASSED [ 51%]
+tests/rw_scenarios/test_t05_parity.py::test_skipped_baseline_documented[RW-G02] PASSED [ 55%]
+tests/rw_scenarios/test_t05_parity.py::test_skipped_baseline_documented[RW-G05] PASSED [ 58%]
+tests/rw_scenarios/test_t05_parity.py::test_skipped_baseline_documented[RW-P02] PASSED [ 62%]
+tests/rw_scenarios/test_t05_parity.py::test_skipped_baseline_documented[RW-P03] PASSED [ 65%]
+tests/rw_scenarios/test_t05_parity_seed.py::test_RW_S01_parity_sqlite_finalize PASSED [ 68%]
+tests/release_state/test_finalize_sqlite.py::test_finalize_sqlite_creates_mapping PASSED [ 72%]
+tests/release_state/test_finalize_sqlite.py::test_finalize_sqlite_idempotent PASSED [ 75%]
+tests/release_state/test_import_export_roundtrip.py::test_import_validate_counts PASSED [ 79%]
+tests/release_state/test_import_export_roundtrip.py::test_export_roundtrip_semantic PASSED [ 82%]
+tests/release_state/test_import_export_roundtrip.py::test_import_idempotent PASSED [ 86%]
+tests/release_state/test_import_export_roundtrip.py::test_production_registry_import_roundtrip PASSED [ 89%]
+tests/release_state/test_sqlite_mode_rw_ac.py::TestSQLiteModeAC1::test_finalize_does_not_mutate_legacy_yaml PASSED [ 93%]
+tests/release_state/test_sqlite_mode_rw_ac.py::TestSQLiteModeAC1::test_finalize_updates_sqlite_mapping PASSED [ 96%]
+tests/release_state/test_sqlite_mode_rw_ac.py::TestSQLiteModeAC2::test_validators_pass_after_finalize PASSED [100%]/Users/rms/Library/Python/3.9/lib/python/site-packages/coverage/control.py:946: CoverageWarning: No data was collected. (no-data-collected); see https://coverage.readthedocs.io/en/7.10.7/messages.html#warning-no-data-collected
+  self._warn("No data was collected.", slug="no-data-collected")
+
+
+================================ tests coverage ================================
+_______________ coverage: platform darwin, python 3.9.6-final-0 ________________
+
+Name                               Stmts   Miss  Cover   Missing
+----------------------------------------------------------------
+cli/__init__.py                        2      2     0%   9-10
+cli/adk_install_errors_bridge.py      45     45     0%   3-64
+cli/adk_version_display.py            44     44     0%   8-85
+cli/backends/__init__.py              11     11     0%   9-33
+cli/backends/base.py                  27     27     0%   7-130
+cli/backends/git_submodule.py        170    170     0%   5-425
+cli/backends/git_subtree.py          144    144     0%   5-364
+cli/backends/package_manager.py      237    237     0%   7-617
+cli/backends/registry.py              33     33     0%   5-116
+cli/backends/selector.py              34     34     0%   5-91
+cli/commands/__init__.py              16     16     0%   7-57
+cli/commands/check.py                 49     49     0%   7-95
+cli/commands/config.py               144    144     0%   7-274
+cli/commands/init.py                  37     37     0%   7-71
+cli/commands/install.py              156    156     0%   7-467
+cli/commands/list.py                  32     32     0%   7-73
+cli/commands/logs.py                 432    432     0%   8-648
+cli/commands/migrate.py              126    126     0%   7-229
+cli/commands/remove.py               217    217     0%   7-373
+cli/commands/status.py                53     53     0%   7-101
+cli/commands/update.py                58     58     0%   7-121
+cli/config.py                        103    103     0%   7-252
+cli/exceptions.py                    115    115     0%   7-264
+cli/logging.py                       138    138     0%   9-269
+cli/main.py                           46     46     0%   8-127
+cli/migration.py                     109    109     0%   7-255
+cli/utils.py                          36     36     0%   5-83
+cli/validation.py                     69     69     0%   7-282
+----------------------------------------------------------------
+TOTAL                               2683   2683     0%
+Coverage HTML written to dir htmlcov
+============================== 29 passed in 3.71s ==============================

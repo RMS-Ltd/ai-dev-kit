@@ -10,13 +10,15 @@ housekeeping_policy: keep
 
 **Host Task:** [`T16-github-security-code-quality-health-perpetual-fr112.md`](../project-management/kanban/epics/epic-08/story-03-automation-scripts/T16-github-security-code-quality-health-perpetual-fr112.md) **(E08:S03:T16)**  
 **Planning for:** [FR-112](../project-management/kanban/fr-br/FR-112-perpetual-github-ci-and-security-health-lanes.md)  
-**Status:** Approved (Wave 0 complete @ v0.8.3.16+1; **Wave 1 re-scan revision** 2026-06-05)
+**Status:** Approved (Wave 0 @ v0.8.3.16+1; Wave 1 re-scan @ `f6aa4dca`; **Wave 2+ revision** 2026-06-07 — deferral lifted)
 
-> **IPW:** Perpetual lane for GitHub **code scanning** + **Code Quality dashboard** hygiene. **Does not** own [Actions](https://github.com/RMS-Ltd/ai-dev-kit/actions) CI (→ **E08:S03:T15**) or finite **standard-finding** burn-down while **E08:S03:T12–T14** are IN PROGRESS.
+> **IPW:** Perpetual lane for GitHub **code scanning** + **Code Quality dashboard** hygiene. **Does not** own [Actions](https://github.com/RMS-Ltd/ai-dev-kit/actions) CI (→ **E08:S03:T15**).
 >
-> **Revision (2026-06-05 — Wave 1 re-scan):** Operator refresh of [Standard findings](https://github.com/RMS-Ltd/ai-dev-kit/security/quality) @ `main` **`f6aa4dca`**. **Maintainability 146 / Fair**; **Reliability 28 / Fair** (↑ from Needs Improvement after T13 wave-2); **AI panel 12** open. T16 records manifest + coordination delta only — **no standard-finding code edits** while T12–T14 remain IN PROGRESS.
+> **Revision (2026-06-07 — Wave 2+ IPW):** T12/T13/T14 **COMPLETE**; T12 operator **Good** @ `ed379ab`; RF9 deferral **lifted**. Two-step delivery: **Wave 2a** manifest-only RW after T15 on `main`; **Wave 2b** first themed remediation RW. See **§8 Rolling backlog**.
 >
-> **Revision (2026-06-05 — operator deferral):** **Postpone all T16 activity** (RWs, re-scans, remediation) until **E08:S03:T12–T14** operator sign-off. T12–T14 chew through the finite backlog first; T16 resumes at Wave 2+ handoff. Exception: net-new **HIGH** code-scanning security alerts (BR-094 pattern).
+> **Revision (2026-06-05 — Wave 1 re-scan):** Operator refresh @ `main` **`f6aa4dca`**. **Maintainability 146 / Fair**; **Reliability 28 / Fair**; **AI panel 12** open.
+>
+> **Revision (2026-06-05 — operator deferral):** ~~Postpone T16 until T12–T14 sign-off~~ — **LIFTED** 2026-06-07.
 
 ---
 
@@ -34,7 +36,14 @@ housekeeping_policy: keep
 | RF6 | First version anchor: **`RW E08:S03:T16 --art`** after baseline manifest (AC4) | T16 AC4 |
 | RF7 | Novel **HIGH** CodeQL security alerts → dedicated BR + task (BR-094 pattern); return to T16 routine hygiene after | T16 scope boundary |
 | RF8 | **Wave 1+ re-scan manifest:** refresh Standard findings rule breakdown + scores @ current `main` SHA; record delta vs prior T16 baseline; cross-lane score milestones (e.g. reliability **Fair**) | Operator refresh 2026-06-05 |
-| RF9 | **Defer T16 activity** until **T12–T14** operator sign-off; T12–T14 burn down backlog to manageable residual before T16 perpetual waves | Operator directive 2026-06-05 |
+| RF9 | ~~Defer T16 activity until T12–T14 sign-off~~ — **LIFTED** 2026-06-07 | Operator directive 2026-06-05 |
+| RF10 | **Wave 2a re-scan** on `main` @ SHA + UTC: code-scanning, standard bands, AI panel, rule breakdown | Wave 2 IPW |
+| RF11 | **Delta vs Wave 1** (`f6aa4dca`) and **T12 Good** (`ed379ab`) in T16 task doc | Wave 2 IPW |
+| RF12 | **Merge gate:** No T16 **code** on `main` until T15 restores green Tests + Greenfield install | RF5 |
+| RF13 | **Wave 2b:** one theme per RW; priority: AI lag → greenfield mirror → autofix rules → reliability regression | Wave 2 IPW |
+| RF14 | **CQG** before Wave 2b RW (`validate_code_quality_gate.py`) | FR-113 / T17 |
+| RF15 | **greenfield-install** sync after `packages/` edits in Wave 2b | FR-106 |
+| RF16 | Net-new **HIGH** CodeQL security → BR + task (BR-094); return to T16 after | T16 scope |
 
 ### 1.2 Non-functional requirements (ascertained)
 
@@ -122,10 +131,20 @@ Establish **E08:S03:T16** as the operational perpetual lane for GitHub **code sc
 | TC6 | Dashboard delta | Post-wave manifest with open-count delta (operator-verified) | RF3, RF8 | 1+ |
 | TC7 | Wave 1 re-scan manifest | T16 task doc: SHA `f6aa4dca`, maintainability **146**, reliability **28**, rule table matches GH UI | RF8 | 1 re-scan |
 | TC8 | Cross-lane score delta | Reliability **Needs Improvement → Fair** recorded; T13 wave-2 attribution noted | RF8 | 1 re-scan |
+| TC9 | Wave 2a manifest | T16 task doc: SHA, UTC, four surfaces populated | RF10 | 2a |
+| TC10 | Wave 2a delta | vs Wave 1 + T12 Good documented | RF11 | 2a |
+| TC11 | Wave 2b pytest | `pytest tests/` + workflow-scripts CI green | RF5, RF12 | 2b |
+| TC12 | Wave 2b CQG | CQG meets `rw_threshold` (advisory warnings OK) | RF14 | 2b |
+| TC13 | Wave 2b greenfield | `sync_greenfield_install.py --check` when packages touched | RF15 | 2b |
+| TC14 | Wave 2b dashboard | Operator verifies GH UI delta post-merge | RF3 | 2b |
 
 **Wave 0 verification:** TC1–TC4 only (docs-only; no `--skip-tests` — TC5 deferred to Wave 1+).
 
 **Wave 1 re-scan verification:** TC7–TC8 (docs-only manifest refresh; no `--skip-tests`).
+
+**Wave 2a verification:** TC9–TC10 (docs-only manifest RW).
+
+**Wave 2b verification:** TC11–TC14 (code + operator dashboard).
 
 ---
 
@@ -236,6 +255,48 @@ Establish **E08:S03:T16** as the operational perpetual lane for GitHub **code sc
 - [x] Wave 1 re-scan manifest @ `f6aa4dca` in T16 task doc (TC7–TC8)
 - [x] Coordination matrix reflects reliability **Fair** + **28** open (TC8)
 - [x] T16 activity **deferred** until T12–T14 sign-off documented (RF9)
+- [ ] Wave 2a manifest @ post-T15 `main` (TC9–TC10); `RW E08:S03:T16 --art`
+- [ ] Wave 2b themed remediation + CQG/pytest (TC11–TC13); `RW E08:S03:T16 --art`
+- [ ] Operator dashboard verify (TC14)
+
+---
+
+## 8. Rolling backlog (Wave 2+)
+
+**Resume trigger:** T12/T13/T14 COMPLETE; T12 **Good** @ `ed379ab`; RF9 lifted 2026-06-07.
+
+**Prerequisite:** Merge **T15 Wave 3** (`v0.8.3.15+4`) to `main`; Tests + Greenfield install green on [Actions](https://github.com/RMS-Ltd/ai-dev-kit/actions).
+
+### Wave 2a — Manifest-only (docs RW)
+
+| Step | Action |
+| ---- | ------ |
+| 1 | Confirm T16 **IN PROGRESS**; update `Last updated` |
+| 2 | Capture `main` SHA + UTC |
+| 3 | Record manifest from GH UI (code scanning, standard bands + rule breakdown, AI panel) |
+| 4 | Update coordination matrix (T15 CI, T12 Good, CQG T17) |
+| 5 | `RW E08:S03:T16 --art` — BUILD +1 on perpetual task |
+| 6 | Reconcile T16 **IN PROGRESS**; AC Wave 2a |
+
+### Wave 2b — First remediation theme (separate RW)
+
+**Theme priority (pick one after 2a manifest):**
+
+1. AI panel lag refresh (T14 lag-accepted dismissals)
+2. `greenfield-install/` mirror residuals
+3. Autofix-safe standard rules (`py/unused-import`, etc.)
+4. Reliability regression from **Good** only
+
+| Step | Action |
+| ---- | ------ |
+| 7 | Select theme from 2a manifest |
+| 8 | Triage: fix / dismiss / defer-to-BR |
+| 9 | Implement; `sync_greenfield_install.py` when implicated |
+| 10 | TC11–TC13 locally |
+| 11 | `RW E08:S03:T16 --art` |
+| 12 | Operator dashboard verify (TC14) |
+
+**RW rule:** **`RW E08:S03:T16 --art` only**; no `--doc-policy-zero` (BR-097).
 
 ---
 

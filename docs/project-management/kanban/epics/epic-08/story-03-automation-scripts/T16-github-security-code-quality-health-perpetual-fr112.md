@@ -13,7 +13,7 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** Medium (ongoing)  
 **Created:** 2026-06-05  
-**Last updated:** 2026-06-07 (RW — T12 COMPLETE @ v0.8.3.12+11; deferral **lifted**)  
+**Last updated:** 2026-06-07 (IPW Wave 2+ — §8 rolling backlog; deferral **lifted**; Wave 2a/2b in progress)  
 **Version Anchor:** v0.8.3.16+1  
 **Code:** E08S03T16  
 **Task Type:** Perpetual Maintenance

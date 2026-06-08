@@ -1,0 +1,8 @@
+{
+  "rows": {
+    "E02:S16:T10": {
+      "allowed": true,
+      "reason": "RW Step 7 v0.2.16.10+7 — perpetual T10 Last modified + version callout after spike v3 nasty scenarios"
+    }
+  }
+}

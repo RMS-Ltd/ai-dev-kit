@@ -28,6 +28,8 @@ from semver_converter import (  # noqa: E402
     _ensure_task_touch_mode,
     _find_mapping_entry,
     convert_version_string,
+    get_release_state_backend,
+    get_release_state_db_path,
     get_rw_tag_info,
     get_semver_mapping_strategy,
     load_semver_registry,
@@ -68,9 +70,9 @@ def _load_internal_version(root: Path, config: Dict[str, Any]) -> Optional[str]:
     return m2.group(1) if m2 else None
 
 
-def _git_show_staged_registry(root: Path) -> Optional[str]:
+def _git_show_staged_path(root: Path, rel_path: str) -> Optional[str]:
     result = subprocess.run(
-        ["git", "show", ":semver-registry.yaml"],
+        ["git", "show", f":{rel_path}"],
         capture_output=True,
         text=True,
         cwd=root,
@@ -78,6 +80,20 @@ def _git_show_staged_registry(root: Path) -> Optional[str]:
     if result.returncode != 0:
         return None
     return result.stdout
+
+
+def _git_show_staged_registry(root: Path) -> Optional[str]:
+    return _git_show_staged_path(root, "semver-registry.yaml")
+
+
+def _git_is_staged_binary(root: Path, rel_path: str) -> bool:
+    result = subprocess.run(
+        ["git", "diff", "--cached", "--name-only", "--", rel_path],
+        capture_output=True,
+        text=True,
+        cwd=root,
+    )
+    return result.returncode == 0 and rel_path in result.stdout.splitlines()
 
 
 def _entry_in_yaml_text(yaml_text: str, internal_version: str) -> bool:
@@ -130,16 +146,27 @@ def validate_task_touch_release_contract(
             )
 
     if check_staged_registry and strict:
-        staged = _git_show_staged_registry(root)
-        if staged is None:
-            errors.append(
-                "semver-registry.yaml is not staged — finalize row must be committed with the release."
-            )
-        elif not _entry_in_yaml_text(staged, internal):
-            errors.append(
-                f"Staged semver-registry.yaml lacks internal_version: {internal} "
-                "(finalize before git add)."
-            )
+        if get_release_state_backend() == "sqlite":
+            db_path = get_release_state_db_path()
+            try:
+                rel_db = db_path.relative_to(root).as_posix()
+            except ValueError:
+                rel_db = db_path.as_posix()
+            if not _git_is_staged_binary(root, rel_db):
+                errors.append(
+                    f"{rel_db} is not staged — SQLite finalize must be committed with the release."
+                )
+        else:
+            staged = _git_show_staged_registry(root)
+            if staged is None:
+                errors.append(
+                    "semver-registry.yaml is not staged — finalize row must be committed with the release."
+                )
+            elif not _entry_in_yaml_text(staged, internal):
+                errors.append(
+                    f"Staged semver-registry.yaml lacks internal_version: {internal} "
+                    "(finalize before git add)."
+                )
 
     return len(errors) == 0, errors
 
