@@ -159,6 +159,8 @@ After creating from template, you'll have:
 - ✅ Configuration files
 - ✅ Example workflows and templates
 
+**First step (language):** Before other customization, complete **[Step 0 — Select language variant](framework-dependency-post-template-setup-guide.md#step-0-select-language-variant-uk--us-english)** in the Post-Template Setup Guide. Copy `ai-dev-kit-config.example.yaml` to `ai-dev-kit-config.yaml` at the project root (default: UK English / en-GB).
+
 **Next Steps:**
 - Follow the [Post-Template Setup Guide](framework-dependency-post-template-setup-guide.md) for detailed customization steps
 - Update `README.md` with your project information

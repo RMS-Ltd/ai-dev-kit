@@ -1,0 +1,17 @@
+# AI Dev Kit project configuration (example)
+# Copy to project root as ai-dev-kit-config.yaml (E21:S01:T01 / FR-006 Phase 1)
+#
+#   cp packages/frameworks/workflow-mgt/config/examples/ai-dev-kit-config.example.yaml ai-dev-kit-config.yaml
+#
+# Lean vendor layout:
+#   cp vendor/ai-dev-kit/packages/frameworks/workflow-mgt/config/examples/ai-dev-kit-config.example.yaml ai-dev-kit-config.yaml
+
+localisation:
+  # Default: UK English (en-GB). Change to en-US / US for US English variant.
+  language: "en-GB"
+  variant: "UK"
+
+# US English alternate (uncomment and remove en-GB block above):
+# localisation:
+#   language: "en-US"
+#   variant: "US"

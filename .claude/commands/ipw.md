@@ -175,7 +175,17 @@ Map each Phase 5 deliverable to a **canonical location** in the project document
 | Workflow / developer KB | `packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/` |
 | Framework package docs | Under relevant `packages/frameworks/{name}/` |
 | User-facing docs | `docs/documentation/user-docs/` |
-| Docusaurus-published | `portal/` navigation + source under `docs/` (see BR-066) |
+| Docusaurus-published | `portal/` navigation + source under `docs/guides/`, `docs/documentation/` (FR-114 allowlist; **not** all of `docs/`) |
+
+**Adopter-public link contract (mandatory when housing targets `docs/guides/**` or `docs/documentation/**`):**
+
+- Cross-surface links use **GitHub blob URLs** — never `../../governance/`, `../../architecture/`, `../../kanban/`, `../../../packages/`, etc. ([BR-068](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/kanban/fr-br/BR-068-docusaurus-monorepo-markdown-links-break-strict-production-build.md), [adopter-public-documentation-authoring.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/governance/standards/adopter-public-documentation-authoring.md)).
+- §3 and §7 must include: `pytest tests/test_portal_br068_monorepo_links.py tests/test_portal_fr114_allowlist.py`.
+- **Do not** write "portal i18n" out-of-scope when the deliverable is adopter-public markdown — defer **portal site locale UI** only.
+
+**Greenfield mirror (mandatory when housing targets `packages/frameworks/**`):**
+
+- §4 and §7 must include: `python scripts/sync_greenfield_install.py` + `greenfield-install/` in the same commit.
 
 **Per deliverable, record in Phase 7 §6:**
 - **Target path** (full repo-relative path).
@@ -233,6 +243,8 @@ Confirm all of the following before declaring IPW complete:
 - [ ] §2.5 present: T1–T7 scored; outcome (`REQUIRED` \| `EXEMPT` \| `ALREADY_COVERED`) recorded.
 - [ ] If any T1–T7 is Y: §5 includes ADR `CREATE` or `UPDATE` row.
 - [ ] If EXEMPT: all E1–E5 pass and §5.3 cites governing doc per checklist policy.
+- [ ] If any §5/§6 path is under `docs/guides/` or `docs/documentation/`: §3 and §7 include portal pytest AC; no banned relative link patterns in planned prose.
+- [ ] If any §5/§6 path is under `packages/frameworks/`: §4 and §7 include greenfield sync AC.
 
 **Gate (completion):** All validation checks pass.
 

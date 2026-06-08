@@ -1,0 +1,36 @@
+{
+  "report_type": "merge_reconcile",
+  "release_scope": "merge origin/dev into dev",
+  "version": "v0.6.7.6+1",
+  "evidence_mode": "structure_prune",
+  "rows": {
+    "E21:S01:T01": {
+      "allowed": true,
+      "reason": "Merge reconcile — E21:S01 COMPLETE; terminal rows pruned; ledger in kanban-completed.md"
+    },
+    "E21:S01:T02": {
+      "allowed": true,
+      "reason": "Merge reconcile — E21:S01 COMPLETE; terminal rows pruned; ledger in kanban-completed.md"
+    },
+    "E21:S01:T03": {
+      "allowed": true,
+      "reason": "Merge reconcile — E21:S01 COMPLETE; terminal rows pruned; ledger in kanban-completed.md"
+    },
+    "E21:S01:T04": {
+      "allowed": true,
+      "reason": "Merge reconcile — E21:S01 COMPLETE; terminal rows pruned; ledger in kanban-completed.md"
+    },
+    "E21:S01:T05": {
+      "allowed": true,
+      "reason": "Merge reconcile — E21:S01 COMPLETE; terminal rows pruned; ledger in kanban-completed.md"
+    },
+    "E21:S01:T06": {
+      "allowed": true,
+      "reason": "Merge reconcile — E21:S01 COMPLETE; terminal rows pruned; ledger in kanban-completed.md"
+    },
+    "E21:S01:T07": {
+      "allowed": true,
+      "reason": "Merge reconcile — E21:S01 COMPLETE; terminal rows pruned; ledger in kanban-completed.md"
+    }
+  }
+}

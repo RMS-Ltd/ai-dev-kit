@@ -18,10 +18,12 @@ def _load_module():
 
 def test_render_changelog_stub():
     mod = _load_module()
-    text = mod.render_changelog_stub("expenses-tracker")
-    assert "# Changelog" in text
-    assert "expenses-tracker" in text
-    assert "## [Unreleased]" in text
+    with tempfile.TemporaryDirectory() as tmp:
+        root = Path(tmp)
+        text = mod.render_changelog_stub(root, "expenses-tracker")
+        assert "# Changelog" in text
+        assert "expenses-tracker" in text
+        assert "## [Unreleased]" in text
 
 
 def test_ensure_changelog_scaffold_creates_file():

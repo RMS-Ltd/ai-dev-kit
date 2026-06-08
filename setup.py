@@ -41,6 +41,7 @@ setup(
     python_requires=">=3.11",
     install_requires=[
         "pyyaml>=6.0",
+        "Babel>=2.12",
     ],
     extras_require={
         "dev": [

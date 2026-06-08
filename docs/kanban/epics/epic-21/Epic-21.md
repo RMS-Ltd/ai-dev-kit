@@ -8,11 +8,12 @@ housekeeping_policy: keep
 
 # Epic 21: Internationalisation and Localisation
 
-**Status:** TODO  
+**Status:** IN PROGRESS  
 **Priority:** MEDIUM  
 **Estimated Effort:** [TBD]  
 **Created:** 2025-12-09  
-**Last updated:** 2026-06-07 (v0.21.1.1+1 — S00→S01 renumber hygiene; branch `epic/21-internationalisation-localisation`)  
+**Last updated:** 2026-06-08 (v0.21.9.3+1 – Kanban documentation setup)
+**Version:** v0.21.9.3+1  
 **Branch:** `epic/21-internationalisation-localisation`  
 **Version Schema:** `0.21.S.T+B`  
 **Production URL:** [N/A for this repo]
@@ -21,17 +22,17 @@ housekeeping_policy: keep
 
 ## Story Checklist
 
-- [ ] **E21:S01 – Language Selection at Setup (UK/US English)** - TODO (v0.21.1.1+1 kanban rehouse)
+- [x] **E21:S01 – Language Selection at Setup (UK/US English)** - COMPLETE (v0.21.1.7+1 — T01–T07 COMPLETE; FR-006 Phase 1)
   - Story: [`story-01-language-selection-at-setup.md`](story-01-language-selection-at-setup.md)
-  - Tasks: T01-T07 TODO
+  - Tasks: T01–T07 COMPLETE
 
-- [ ] **E21:S02 – Internationalisation Infrastructure** - TODO (v0.21.2.0+0)
+- [x] **E21:S02 – Internationalisation Infrastructure** - COMPLETE (v0.21.2.7+1 — T01–T07; ADR-024 + locale conventions)
   - Story: [`story-02-internationalisation-infrastructure.md`](story-02-internationalisation-infrastructure.md)
-  - Tasks: T01-T07 TODO
+  - Tasks: T01–T07 COMPLETE
 
-- [ ] **E21:S03 – Translation and Localisation** - TODO (v0.21.3.0+0)
+- [x] **E21:S03 – Translation and Localisation** - COMPLETE (v0.21.3.7+1 — T01–T07 COMPLETE)
   - Story: [`story-03-translation-and-localisation.md`](story-03-translation-and-localisation.md)
-  - Tasks: T01-T07 TODO
+  - Tasks: T01–T07 COMPLETE
 
 - [ ] **E21:S04 – Cultural Adaptation** - TODO (v0.21.4.0+0)
   - Story: [`story-04-cultural-adaptation.md`](story-04-cultural-adaptation.md)
@@ -49,6 +50,14 @@ housekeeping_policy: keep
   - Story: [`story-07-rtl-and-extended-locales.md`](story-07-rtl-and-extended-locales.md)
   - Tasks: T01-T02 TODO
 
+- [ ] **E21:S08 – Accessibility** - IN PROGRESS (v0.21.8.3+1 — Layer 0–1 COMPLETE)
+  - Story: [`story-08-accessibility.md`](story-08-accessibility.md)
+  - Tasks: T01–T03 COMPLETE; T04–T07 DEFERRED (Layers 2–5)
+
+- [ ] **E21:S09 – Epic Housekeeping** - IN PROGRESS (v0.21.9.3+1 — T01–T03 COMPLETE)
+  - Story: [`story-09-epic-housekeeping.md`](story-09-epic-housekeeping.md)
+  - Tasks: T01 COMPLETE @ v0.21.9.1+1; T02 COMPLETE @ v0.21.9.2+2; T03 COMPLETE @ v0.21.9.3+1
+
 
 ---
 
@@ -60,12 +69,16 @@ Epic 21 owns the **Internationalisation and Localisation** framework for ai-dev-
 - Translation infrastructure and management
 - Cultural adaptation and locale-specific formatting
 - RTL (Right-to-Left) support for Arabic/Hebrew
+- Accessibility standards compatibility for disabled users (E21:S08 / FR-115)
 
 It ensures that:
 - Users can select their preferred English variant (UK/US) at setup
 - Framework content can be localized to multiple languages
 - Cultural preferences are respected (date/time/number formatting)
 - Framework is accessible to international developers
+- Disabled users can operate ADK surfaces with minimal friction (a11y)
+
+**Strategic snapshot (2026-06-08):** S01–S03 **COMPLETE** (FR-006 Phase 1–3 translation pipeline through E2E verification @ v0.21.3.7+1). S08 Layer 0–1 shipped @ v0.21.8.3+1. **Next stream:** S04 cultural adaptation (T01 on board). S05–S07 linguistic delivery backlog; S08 Layers 2–5 DEFERRED.
 
 ---
 
@@ -97,68 +110,53 @@ It ensures that:
 
 ### Story 1: Language Selection at Setup (UK/US English)
 
-**Status:** TODO  
+**Status:** COMPLETE  
 **Priority:** MEDIUM  
-**Estimated Effort:** [TBD]  
-**Last updated:** 2025-12-09 (v0.21.1.0+0 – Story created)
+**Last updated:** 2026-06-08 (v0.21.9.3+1 – Kanban documentation setup)
 
 **Goal:**  
-Add language selection prompt at the very beginning of all setup processes, starting with UK and US English variants. This addresses cultural preferences and makes the framework more accessible.
+Add language selection prompt at the very beginning of all setup processes, starting with UK and US English variants.
 
-**Tasks:**
-- [ ] E21:S01:T01 – Add language selection prompt to template setup (GitHub template)
-- [ ] E21:S01:T02 – Add language selection prompt to CLI tool (`ai-dev-kit init`)
-- [ ] E21:S01:T03 – Add language selection prompt to RW Installer (`install_release_workflow.py`)
-- [ ] E21:S01:T04 – Create UK/US English content variants (documentation, templates)
-- [ ] E21:S01:T05 – Implement configuration persistence (`ai-dev-kit-config.yaml`)
-- [ ] E21:S01:T06 – Update content generation to use language preference (RW, templates)
-- [ ] E21:S01:T07 – Test UK/US English selection and content generation
-
-> Full story: [`story-01-language-selection-at-setup.md`](story-01-language-selection-at-setup.md)
+**Tasks:** T01–T07 COMPLETE — see [`story-01-language-selection-at-setup.md`](story-01-language-selection-at-setup.md)
 
 ---
 
 ### Story 2: Internationalisation Infrastructure
 
-**Status:** TODO  
+**Status:** COMPLETE  
 **Priority:** MEDIUM  
-**Estimated Effort:** [TBD]  
-**Last updated:** 2025-12-09 (v0.21.2.0+0 – Story created)
+**Last updated:** 2026-06-08 (v0.21.9.3+1 – Kanban documentation setup)
 
 **Goal:**  
 Set up i18n infrastructure and framework for broader language support beyond UK/US English.
 
-**Tasks:**
-- [ ] E21:S02:T01 – Choose i18n framework/library
-- [ ] E21:S02:T02 – Set up translation file structure (`locales/{lang}/`)
-- [ ] E21:S02:T03 – Implement locale detection (browser/system locale)
-- [ ] E21:S02:T04 – Add language switching functionality
-- [ ] E21:S02:T05 – Configure date/time/number formatting per locale
-- [ ] E21:S02:T06 – Implement translation key system
-- [ ] E21:S02:T07 – Set up translation fallback chain (selected → UK English → US English)
+**Tasks:** T01–T07 COMPLETE — see [`story-02-internationalisation-infrastructure.md`](story-02-internationalisation-infrastructure.md)
 
-> Full story: [`story-02-internationalisation-infrastructure.md`](story-02-internationalisation-infrastructure.md)
+---
+
+### Story 8: Accessibility
+
+**Status:** IN PROGRESS (Layer 0–1 COMPLETE)  
+**Priority:** MEDIUM  
+**Last updated:** 2026-06-08 (v0.21.9.3+1 – Kanban documentation setup)
+
+**Goal:**  
+Layered accessibility programme per ADR-025; CLI-first delivery (Layers 0–1 complete; Layers 2–5 deferred).
+
+**Tasks:** T01–T03 COMPLETE; T04–T07 DEFERRED — see [`story-08-accessibility.md`](story-08-accessibility.md) · [FR-115](../../fr-br/FR-115-accessibility-standards-compatibility.md)
 
 ---
 
 ### Story 3: Translation and Localisation
 
-**Status:** TODO  
+**Status:** COMPLETE  
 **Priority:** LOW  
-**Estimated Effort:** [TBD]  
-**Last updated:** 2025-12-09 (v0.21.3.0+0 – Story created)
+**Last updated:** 2026-06-08 (v0.21.9.3+1 – Kanban documentation setup)
 
 **Goal:**  
-Implement translations and localisation for major languages.
+Translate framework content to major languages; establish workflow, management tools, completeness tracking, and E2E verification.
 
-**Tasks:**
-- [ ] E21:S03:T01 – Identify and extract all translatable content
-- [ ] E21:S03:T02 – Create translation files for major languages
-- [ ] E21:S03:T03 – Implement translation lookup and rendering
-- [ ] E21:S03:T04 – Create translation workflow and review process
-- [ ] E21:S03:T05 – Add translation management tools
-- [ ] E21:S03:T06 – Implement translation completeness tracking
-- [ ] E21:S03:T07 – Test translations and locale support
+**Tasks:** T01–T07 COMPLETE — see [`story-03-translation-and-localisation.md`](story-03-translation-and-localisation.md)
 
 > Full story: [`story-03-translation-and-localisation.md`](story-03-translation-and-localisation.md)
 
@@ -169,7 +167,7 @@ Implement translations and localisation for major languages.
 **Status:** TODO  
 **Priority:** LOW  
 **Estimated Effort:** [TBD]  
-**Last updated:** 2025-12-09 (v0.21.4.0+0 – Story created)
+**Last updated:** 2026-06-08 (v0.21.9.3+1 – Kanban documentation setup)
 
 **Goal:**  
 Adapt content and features for different cultures and regions.
@@ -263,6 +261,18 @@ Run **on branch** `epic/21-internationalisation-localisation` — one task per r
 | T01 | `RW -k E21:S07:T01 --art --dpz` | `v0.21.7.1+0` |
 | T02 | `RW -k E21:S07:T02 --art --dpz` | `v0.21.7.2+0` |
 
+### E21:S08 — Accessibility
+
+| Task | Trigger | Version anchor |
+| ---- | ------- | -------------- |
+| T01 | `RW -k E21:S08:T01 --art --dpz` | `v0.21.8.1+0` |
+| T02 | `RW -k E21:S08:T02 --art --dpz` | `v0.21.8.2+0` |
+| T03 | `RW -k E21:S08:T03 --art --dpz` | `v0.21.8.3+0` |
+| T04 | `RW -k E21:S08:T04 --art --dpz` | `v0.21.8.4+0` |
+| T05 | `RW -k E21:S08:T05 --art --dpz` | `v0.21.8.5+0` |
+| T06 | `RW -k E21:S08:T06 --art --dpz` | `v0.21.8.6+0` |
+| T07 | `RW -k E21:S08:T07 --art --dpz` | `v0.21.8.7+0` |
+
 Per-task triggers are also recorded in each task doc under **Kanban-init intake**.
 
 ---
@@ -270,7 +280,8 @@ Per-task triggers are also recorded in each task doc under **Kanban-init intake*
 ## Dependencies
 
 **Blocks:**
-- Improved accessibility for international users
+- Improved accessibility for international users (i18n)
+- Improved accessibility for disabled users (a11y — E21:S08)
 - Cultural preference support (UK/US English)
 - Broader framework adoption
 
@@ -288,6 +299,7 @@ Per-task triggers are also recorded in each task doc under **Kanban-init intake*
 
 - `packages/frameworks/kanban/templates/COMPREHENSIVE_CANONICAL_EST_STRUCTURE.md` - Epic 21 canonical definition
 - `docs/kanban/fr-br/FR-006-localization-language-selection-uk-us-english.md` - Feature request
+- `docs/kanban/fr-br/FR-115-accessibility-standards-compatibility.md` - Accessibility (a11y)
 - `docs/documentation/user-docs/framework-dependency-post-template-setup-guide.md` - Setup process
 - `packages/frameworks/workflow-mgt/scripts/install_release_workflow.py` - RW installer
 

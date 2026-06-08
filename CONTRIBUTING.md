@@ -43,6 +43,15 @@ For more detailed information on submitting reports, see:
 
 See [ADR-006](docs/architecture/standards-and-adrs/ADR-006-book-project-private-repository-spin-off.md) and [FR-099 Phase 4 runbook](docs/maintenance/fr099-phase4-rewire-and-verify.md).
 
+## Contributing translations
+
+Help translate framework locale content (CLI prompts, installer strings, kanban templates) for international users.
+
+- **Quick start:** [Contributing translations](docs/documentation/user-docs/contributing-translations.md)
+- **Canonical policy:** [Translation workflow and review](docs/governance/standards/translation-workflow-and-review.md)
+
+Translation pull requests use maintainer review; run `pytest -m fr006` before opening a PR. Release Workflow (RW) is not required for translation-only changes.
+
 ## Code Contributions
 
 By contributing code or documentation to this repository, you agree that your contributions are licensed under the same [MIT License](LICENSE) as the project.
@@ -52,8 +61,10 @@ If you'd like to contribute code:
 1. **Fork the repository**
 2. **Create a feature branch** (`git checkout -b feature/AmazingFeature`)
 3. **Make your changes**
-4. **Test thoroughly**
-5. **Commit your changes** (`git commit -m 'Add some AmazingFeature'`)
+4. **Test thoroughly** — including maintainer gates when applicable:
+   - **Adopter docs** (`docs/documentation/`, `docs/guides/`): [portal link rules](docs/governance/standards/adopter-public-documentation-authoring.md) — `pytest tests/test_portal_br068_monorepo_links.py tests/test_portal_fr114_allowlist.py`
+   - **Framework packages** (`packages/frameworks/`): `python scripts/sync_greenfield_install.py` then `--check`
+5. **Commit your changes** (`git commit -m 'Add some AmazingFeature'`) — install [pre-commit](https://pre-commit.com/) hooks for automatic checks
 6. **Push to the branch** (`git push origin feature/AmazingFeature`)
 7. **Open a Pull Request**
 

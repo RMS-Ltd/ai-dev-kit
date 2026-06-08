@@ -1,0 +1,44 @@
+{
+  "rows": {
+    "E21:S03:T05": {
+      "allowed": true,
+      "reason": "Terminal row prune — E21:S03:T05 COMPLETE v0.21.3.5+1; ledger append kanban-completed.md"
+    },
+    "E21:S03:T06": {
+      "allowed": true,
+      "reason": "New in-flight row — S03 next task after T05 release; stamp 2026-06-08 13:09 UTC"
+    },
+    "E21:S04:T01": {
+      "allowed": true,
+      "reason": "FR-097 homogeneity remediation — UKW batch stamp de-cluster RW E21:S03:T05"
+    },
+    "E21:S05:T01": {
+      "allowed": true,
+      "reason": "FR-097 homogeneity remediation — UKW batch stamp de-cluster RW E21:S03:T05"
+    },
+    "E21:S06:T01": {
+      "allowed": true,
+      "reason": "FR-097 homogeneity remediation — UKW batch stamp de-cluster RW E21:S03:T05"
+    },
+    "E21:S07:T01": {
+      "allowed": true,
+      "reason": "FR-097 homogeneity remediation — UKW batch stamp de-cluster RW E21:S03:T05"
+    },
+    "E21:S08:T04": {
+      "allowed": true,
+      "reason": "FR-097 homogeneity remediation — UKW batch stamp de-cluster RW E21:S03:T05"
+    },
+    "E21:S08:T05": {
+      "allowed": true,
+      "reason": "FR-097 homogeneity remediation — UKW batch stamp de-cluster RW E21:S03:T05"
+    },
+    "E21:S08:T06": {
+      "allowed": true,
+      "reason": "FR-097 homogeneity remediation — UKW batch stamp de-cluster RW E21:S03:T05"
+    },
+    "E21:S08:T07": {
+      "allowed": true,
+      "reason": "FR-097 homogeneity remediation — UKW batch stamp de-cluster RW E21:S03:T05"
+    }
+  }
+}

@@ -122,7 +122,7 @@ class MigrateCommand(BaseCommand):
         for framework in detected:
             confidence_pct = int(framework.confidence * 100)
             version_str = f" (version: {framework.detected_version})" if framework.detected_version else ""
-            print_info(f"  • {framework.name}")
+            print_info(f"  - {framework.name}")
             print_info(f"    Path: {framework.path}")
             print_info(f"    Type: {framework.framework_type}")
             print_info(f"    Confidence: {confidence_pct}%{version_str}")
@@ -183,11 +183,11 @@ class MigrateCommand(BaseCommand):
             
             if success:
                 if self.args.dry_run:
-                    print_info(f"  ✓ {message}")
+                    print_info(f"  OK {message}")
                 else:
-                    print_success(f"  ✓ {message}")
+                    print_success(f"  OK {message}")
             else:
-                print_error(f"  ✗ {message}")
+                print_error(f"  FAIL {message}")
                 failed_conversions.append(framework.name)
             print_info("")
         
@@ -223,7 +223,7 @@ class MigrateCommand(BaseCommand):
             print_error(f"Migration validation failed ({len(issues)} issue(s)):")
             print_info("")
             for issue in issues:
-                print_error(f"  • {issue}")
+                print_error(f"  - {issue}")
             print_info("")
             print_info("Please fix these issues and run validation again.")
             return 1

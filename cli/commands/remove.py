@@ -249,7 +249,7 @@ class RemoveCommand(BaseCommand):
         
         print_warning(f"Detected {len(issues)} issue(s):")
         for issue in issues:
-            print_warning(f"  • {issue}")
+            print_warning(f"  - {issue}")
         print_info("")
         
         # Clean up failed installation

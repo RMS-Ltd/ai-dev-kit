@@ -9,11 +9,13 @@ housekeeping_policy: keep
 # Epic 21, Story 3, Task 4: Create translation workflow and review process
 
 **Task ID:** E21:S03:T04  
-**Status:** TODO  
+**Status:** COMPLETE  
 **Priority:** MEDIUM  
-**Last updated:** 2026-06-07 (v0.21.3.4+0 — RW -k kanban-init doc filing)
-**Version:** v0.21.3.4+0
+**Last updated:** 2026-06-08 (v0.21.3.4+1 — translation workflow policy released)
+**Version:** v0.21.3.4+1
 **Code:** E21S03T04
+
+✅ COMPLETE (v0.21.3.4+1)
 
 ---
 
@@ -35,6 +37,7 @@ Create translation workflow and review process for contributors.
 
 - Translation files
 - Translation requirements
+- [IPP-E21S03T04-translation-workflow-review.md](../../../../../implementation-cycles/IPP-E21S03T04-translation-workflow-review.md)
 
 ---
 
@@ -48,10 +51,10 @@ Create translation workflow and review process for contributors.
 
 ## Acceptance Criteria
 
-- [ ] Translation workflow documented
-- [ ] Review process established
-- [ ] Translation guidelines created
-- [ ] Workflow documented
+- [x] Translation workflow documented
+- [x] Review process established
+- [x] Translation guidelines created
+- [x] Workflow documented
 
 ---
 
@@ -79,9 +82,17 @@ RW -k E21:S03:T04 --art --dpz
 
 ---
 
+## References
+
+- [IPP-E21S03T04-translation-workflow-review.md](../../../../../implementation-cycles/IPP-E21S03T04-translation-workflow-review.md)
+- [translation-workflow-and-review.md](../../../../../governance/standards/translation-workflow-and-review.md)
+- [contributing-translations.md](../../../../../documentation/user-docs/contributing-translations.md)
+- [FR-006](../../../fr-br/FR-006-localization-language-selection-uk-us-english.md)
+
+---
+
 ## Migration Notes
 
 Migrated from embedded Story section via `generate_task_doc.py` (FR-016 Wave 1 tooling).
 
 **Source Story:** `docs/kanban/epics/epic-21/story-03-translation-and-localisation.md`
-

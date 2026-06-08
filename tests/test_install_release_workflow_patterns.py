@@ -43,7 +43,7 @@ def test_prompt_pattern_accepts_fresh_story_default_with_epic_only_tree():
 
         original_prompt = mod.prompt_question
 
-        def _enter_default(prompt, default=None, required=True):
+        def _enter_default(prompt, default=None, required=True, **kwargs):
             return default or ""
 
         mod.prompt_question = _enter_default
@@ -139,7 +139,7 @@ def test_prompt_accepts_forward_looking_story_03d_on_epic_only_tree():
 
         original_prompt = mod.prompt_question
 
-        def _return_book_pattern(prompt, default=None, required=True):
+        def _return_book_pattern(prompt, default=None, required=True, **kwargs):
             return mod.BOOK_KANBAN_STORY_PATTERN
 
         mod.prompt_question = _return_book_pattern

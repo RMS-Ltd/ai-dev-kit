@@ -1,87 +1,11 @@
 ---
-lifecycle: evergreen
-ttl_days: null
-created_at: 2025-12-09T18:35:00Z
-expires_at: null
-housekeeping_policy: keep
+lifecycle: transient
+created_at: 2026-06-08T11:20:00Z
+housekeeping_policy: archive
 ---
 
-# Story 002 – Translation and Localisation
+# E21:S02 (legacy translation path) — SUPERSEDED (redirect)
 
-**Status:** TODO  
-**Priority:** LOW  
-**Estimated Effort:** [TBD]  
-**Created:** 2025-12-09  
-**Last updated:** 2025-12-09 (v0.21.0.0+0 – Story created)  
-**Version:** v0.21.0.0+0  
-**Code:** E21S02
+> **Legacy mis-numbered path.** Translation and localisation is **E21:S03** after epic-21 story renumber. Do not confuse with [E21:S02 – Internationalisation Infrastructure](story-02-internationalisation-infrastructure.md).
 
----
-
-## Overview
-
-Implement translations and localisation for major languages. This story covers the actual translation work, translation workflow, and translation management tools.
-
----
-
-## Goal
-
-Translate framework content to major languages, establish translation workflow, and implement translation management tools. This enables Phase 2 of FR-006 (international localisation).
-
----
-
-## Task Checklist
-
-- [ ] **E21:S02:T01 – Identify and extract all translatable content** - TODO
-  - Task: [`T01-identify-and-extract-all-translatable-content`](story-02-translation-and-localisation/T01-identify-and-extract-all-translatable-content.md)
-- [ ] **E21:S02:T02 – Create translation files for major languages** - TODO
-  - Task: [`T02-create-translation-files-for-major-languages`](story-02-translation-and-localisation/T02-create-translation-files-for-major-languages.md)
-- [ ] **E21:S02:T03 – Implement translation lookup and rendering** - TODO
-  - Task: [`T03-implement-translation-lookup-and-rendering`](story-02-translation-and-localisation/T03-implement-translation-lookup-and-rendering.md)
-- [ ] **E21:S02:T04 – Create translation workflow and review process** - TODO
-  - Task: [`T04-create-translation-workflow-and-review-process`](story-02-translation-and-localisation/T04-create-translation-workflow-and-review-process.md)
-- [ ] **E21:S02:T05 – Add translation management tools** - TODO
-  - Task: [`T05-add-translation-management-tools`](story-02-translation-and-localisation/T05-add-translation-management-tools.md)
-- [ ] **E21:S02:T06 – Implement translation completeness tracking** - TODO
-  - Task: [`T06-implement-translation-completeness-tracking`](story-02-translation-and-localisation/T06-implement-translation-completeness-tracking.md)
-- [ ] **E21:S02:T07 – Test translations and locale support** - TODO
-  - Task: [`T07-test-translations-and-locale-support`](story-02-translation-and-localisation/T07-test-translations-and-locale-support.md)
-
----
-
-## Acceptance Criteria
-
-- [ ] All translatable content identified and extracted
-- [ ] Translation files created for major languages
-- [ ] Translation lookup and rendering works
-- [ ] Translation workflow established
-- [ ] Translation management tools available
-- [ ] Translation completeness tracked
-- [ ] Translations tested
-
----
-
-## Dependencies
-
-**Blocks:**
-- Cultural Adaptation (Story 3)
-
-**Blocked By:**
-- E21:S01: Internationalisation Infrastructure
-
-**Related Work:**
-- **FR-006:** Localisation and Language Selection (Phase 2)
-- **E21:S01:** Internationalisation Infrastructure
-- **E21:S03:** Cultural Adaptation
-
----
-
-## References
-
-- `docs/kanban/fr-br/FR-006-localization-language-selection-uk-us-english.md` - Feature request
-- `packages/frameworks/kanban/templates/COMPREHENSIVE_CANONICAL_EST_STRUCTURE.md` - Epic 21 canonical definition
-
----
-
-_Last updated: 2025-12-09 (v0.21.0.0+0 – Story created)_
-
+**Canonical story:** [E21:S03 – Translation and Localisation](story-03-translation-and-localisation.md)

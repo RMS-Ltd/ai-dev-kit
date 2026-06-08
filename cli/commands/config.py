@@ -11,6 +11,11 @@ from typing import Dict
 
 from cli.commands import BaseCommand
 from cli.config import Config
+from cli.localisation import (
+    FR006_SUPPORTED_LOCALES,
+    read_localisation_config,
+    switch_locale,
+)
 from cli.utils import (
     get_project_root,
     print_error,
@@ -106,6 +111,38 @@ class ConfigCommand(BaseCommand):
             action="store_true",
             help="Automatically fix validation errors where possible",
         )
+
+        locale_parser = config_subparsers.add_parser(
+            "locale",
+            help="Show or set project locale (ai-dev-kit-config.yaml)",
+            description="Manage language/locale preference for generated content",
+        )
+        locale_sub = locale_parser.add_subparsers(
+            dest="locale_action",
+            help="Locale action",
+            metavar="ACTION",
+            required=True,
+        )
+        locale_sub.add_parser(
+            "show",
+            help="Show current locale from ai-dev-kit-config.yaml",
+        )
+        locale_set = locale_sub.add_parser(
+            "set",
+            help="Set locale tag and rewrite ai-dev-kit-config.yaml",
+        )
+        locale_set.add_argument(
+            "tag",
+            nargs="?",
+            default=None,
+            choices=list(FR006_SUPPORTED_LOCALES),
+            help="BCP 47 locale tag (omit with --interactive)",
+        )
+        locale_set.add_argument(
+            "--interactive",
+            action="store_true",
+            help="Prompt for UK/US English variant",
+        )
     
     def execute(self) -> int:
         """Execute the config command."""
@@ -127,8 +164,12 @@ class ConfigCommand(BaseCommand):
             return self._handle_reset(config)
         elif action == "validate":
             return self._handle_validate(config)
+        elif action == "locale":
+            return self._handle_locale(project_root)
         else:
-            print_error("No action specified. Use 'get', 'set', 'list', 'reset', or 'validate'")
+            print_error(
+                "No action specified. Use 'get', 'set', 'list', 'reset', 'validate', or 'locale'"
+            )
             return 1
     
     def _handle_get(self, config: Config) -> int:
@@ -271,5 +312,37 @@ class ConfigCommand(BaseCommand):
             else:
                 print_warning("Could not automatically fix validation errors. Please fix manually.")
         
+        return 1
+
+    def _handle_locale(self, project_root: Path) -> int:
+        """Handle config locale show/set subcommands."""
+        locale_action = getattr(self.args, "locale_action", None)
+        if locale_action == "show":
+            current = read_localisation_config(project_root)
+            print_info(
+                f"Locale: {current['language']} ({current['variant']})"
+            )
+            return 0
+        if locale_action == "set":
+            interactive = getattr(self.args, "interactive", False)
+            tag = getattr(self.args, "tag", None)
+            if not interactive and tag is None:
+                print_error("Provide a locale tag or use --interactive")
+                return 1
+            try:
+                result = switch_locale(
+                    project_root,
+                    tag,
+                    interactive=interactive,
+                )
+                current = result["current"]
+                print_success(
+                    f"Switched locale to {current['language']} ({current['variant']})"
+                )
+                return 0
+            except Exception as exc:
+                print_error(f"Failed to switch locale: {exc}")
+                return 1
+        print_error("Unknown locale action. Use 'show' or 'set'")
         return 1
 

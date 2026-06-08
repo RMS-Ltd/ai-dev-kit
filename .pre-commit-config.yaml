@@ -16,3 +16,15 @@ repos:
         language: system
         files: ^docs/kanban/(kboard|fbuboard)\.md$
         pass_filenames: false
+      - id: validate-portal-publish-scope
+        name: BR-068/FR-114 adopter-public link guard
+        entry: pytest tests/test_portal_br068_monorepo_links.py tests/test_portal_fr114_allowlist.py -q --tb=line
+        language: system
+        files: ^docs/(guides|documentation)/
+        pass_filenames: false
+      - id: validate-greenfield-install-sync
+        name: FR-110 greenfield-install drift guard
+        entry: python scripts/sync_greenfield_install.py --check
+        language: system
+        files: ^packages/frameworks/
+        pass_filenames: false

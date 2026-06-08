@@ -20,8 +20,10 @@ pip install ai-dev-kit
 ## Usage
 
 ```bash
-ai-dev-kit [COMMAND] [OPTIONS]
+ai-dev-kit [--no-color] [COMMAND] [OPTIONS]
 ```
+
+Use `--no-color` or set `NO_COLOR` in the environment for text-only status output (accessibility).
 
 ## Commands
 

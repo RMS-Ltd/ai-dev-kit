@@ -6,6 +6,7 @@ Main entry point for the ai-dev-kit command-line interface.
 """
 
 import argparse
+import os
 import sys
 from typing import Dict, Type
 
@@ -71,6 +72,11 @@ def create_parser() -> argparse.ArgumentParser:
         version=get_cli_version_string(),
         help="Show version and exit",
     )
+    parser.add_argument(
+        "--no-color",
+        action="store_true",
+        help="Disable emoji and ANSI colour in CLI output (sets NO_COLOR)",
+    )
     
     # Create subparsers for commands
     subparsers = parser.add_subparsers(
@@ -100,7 +106,10 @@ def main() -> int:
     """
     parser = create_parser()
     args = parser.parse_args()
-    
+
+    if getattr(args, "no_color", False):
+        os.environ["NO_COLOR"] = "1"
+
     # If no command specified, show help
     if not args.command:
         parser.print_help()

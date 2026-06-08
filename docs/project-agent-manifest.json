@@ -46,6 +46,16 @@
       "id": "P-NOTION-FIRST",
       "rule": "New maintainer docs default to Notion MCP; git stubs only per ADR-024 criteria.",
       "sourcePath": "docs/architecture/standards-and-adrs/ADR-024-documentation-surfaces-three-surface-model-fr114.md"
+    },
+    {
+      "id": "P-PORTAL-LINKS",
+      "rule": "Edits under docs/guides/** or docs/documentation/** use GitHub blob URLs for excluded trees; portal pytest before commit.",
+      "sourcePath": "docs/governance/standards/adopter-public-documentation-authoring.md"
+    },
+    {
+      "id": "P-GREENFIELD-SYNC",
+      "rule": "Edits under packages/frameworks/** require sync_greenfield_install.py and mirror commit in same change set.",
+      "sourcePath": "docs/governance/standards/adopter-public-documentation-authoring.md"
     }
   ],
   "taskRouting": [
@@ -91,6 +101,15 @@
         "docs/governance/standards/dev-kit-ipw-ipp-vs-icw-artifacts.md"
       ],
       "relatedTrack": "planning"
+    },
+    {
+      "intent": "adopter-docs",
+      "keywords": ["user-docs", "adopter-public", "portal link", "Docusaurus publish", "contributing guide"],
+      "loadFirst": [
+        "docs/governance/standards/adopter-public-documentation-authoring.md",
+        "portal/README.md"
+      ],
+      "relatedTrack": "adopter-docs"
     },
     {
       "intent": "maintainer-kb",
@@ -146,6 +165,11 @@
       "id": "maintainer-kb",
       "label": "Notion maintainer KB and investigations",
       "entryPath": "docs/architecture/standards-and-adrs/ADR-024-documentation-surfaces-three-surface-model-fr114.md"
+    },
+    {
+      "id": "adopter-docs",
+      "label": "Adopter-public docs and portal link compliance",
+      "entryPath": "docs/governance/standards/adopter-public-documentation-authoring.md"
     }
   ],
   "canon": [

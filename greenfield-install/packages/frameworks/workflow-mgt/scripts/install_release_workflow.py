@@ -73,6 +73,49 @@ except ImportError:
         def emit_install_error(code, *, detail=None, file=None):  # type: ignore[misc]
             print(f"ERROR [{code}]", file=file or sys.stderr)
 
+try:
+    from localisation_config import (
+        ensure_localisation_config,
+        locale_message,
+        render_locale_text,
+        workflow_locales_root,
+    )
+except ImportError:
+    _loc_path = Path(__file__).resolve().parent / "localisation_config.py"
+    if _loc_path.is_file():
+        import importlib.util as _iu_loc
+
+        _spec_loc = _iu_loc.spec_from_file_location("localisation_config", _loc_path)
+        _mod_loc = _iu_loc.module_from_spec(_spec_loc)
+        assert _spec_loc.loader is not None
+        sys.modules["localisation_config"] = _mod_loc
+        _spec_loc.loader.exec_module(_mod_loc)
+        ensure_localisation_config = _mod_loc.ensure_localisation_config
+        locale_message = _mod_loc.locale_message
+        render_locale_text = _mod_loc.render_locale_text
+        workflow_locales_root = _mod_loc.workflow_locales_root
+    else:
+        def ensure_localisation_config(*args, **kwargs):  # type: ignore[misc]
+            return None
+
+        def locale_message(*args, **kwargs):  # type: ignore[misc]
+            raise RuntimeError("localisation_config not available")
+
+        def render_locale_text(*args, **kwargs):  # type: ignore[misc]
+            raise RuntimeError("localisation_config not available")
+
+        def workflow_locales_root(*args, **kwargs):  # type: ignore[misc]
+            raise RuntimeError("localisation_config not available")
+
+
+def _msg(
+    project_root: Optional[Path],
+    key: str,
+    substitutions: Optional[Dict[str, str]] = None,
+) -> str:
+    """Shorthand for locale_message at installer call sites (E21:S03:T03)."""
+    return locale_message(project_root, key, substitutions=substitutions)
+
 # Minimal RW installer runtime dependencies (see repo setup.py).
 INSTALLER_DEPENDENCIES: Tuple[Tuple[str, str, str], ...] = (
     ("yaml", "pyyaml", "pyyaml>=6.0"),
@@ -88,30 +131,39 @@ def check_dependencies() -> Tuple[bool, List[str]]:
     return (len(missing) == 0, missing)
 
 
-def format_dependency_help(missing: List[str]) -> str:
+def format_dependency_help(
+    missing: List[str],
+    project_root: Optional[Path] = None,
+) -> str:
     """Actionable stderr/stdout message before interactive install (BR-082)."""
     lines = [
-        "ERROR: RW installer dependencies are missing.",
+        _msg(project_root, "installer.deps.missing_title"),
         "",
-        "Required Python packages:",
+        _msg(project_root, "installer.deps.required_heading"),
     ]
-    for import_name, pip_name, spec in INSTALLER_DEPENDENCIES:
+    for _import_name, pip_name, spec in INSTALLER_DEPENDENCIES:
         marker = " (MISSING)" if pip_name in missing else ""
-        lines.append(f"  - {pip_name} ({spec}){marker}")
+        lines.append(
+            _msg(
+                project_root,
+                "installer.deps.package_line",
+                {"pip_name": pip_name, "spec": spec, "marker": marker},
+            )
+        )
     lines.extend(
         [
             "",
-            "Install in your project venv before running this installer:",
-            "  pip install 'pyyaml>=6.0'",
+            _msg(project_root, "installer.deps.install_venv_heading"),
+            _msg(project_root, "installer.deps.pip_install"),
             "",
-            "Or install ai-dev-kit with dependencies from the kit checkout:",
-            "  pip install -e ./vendor/ai-dev-kit",
-            "  # or: pip install -e /path/to/ai-dev-kit",
+            _msg(project_root, "installer.deps.editable_heading"),
+            _msg(project_root, "installer.deps.editable_cmd"),
+            _msg(project_root, "installer.deps.editable_alt"),
             "",
-            "Greenfield / book path: see INSTALL_IN_YOUR_PROJECT.md",
-            "  \"Installer venv dependencies\" — install deps before Step 3 (RW install).",
+            _msg(project_root, "installer.deps.greenfield_ref"),
+            _msg(project_root, "installer.deps.greenfield_step"),
             "",
-            "Preflight only: python install_release_workflow.py --check-deps",
+            _msg(project_root, "installer.deps.preflight_cmd"),
         ]
     )
     return "\n".join(lines)
@@ -169,7 +221,12 @@ def load_template(template_path: Path) -> str:
     return template_path.read_text(encoding='utf-8')
 
 
-def prompt_question(prompt: str, default: Optional[str] = None, required: bool = True) -> str:
+def prompt_question(
+    prompt: str,
+    default: Optional[str] = None,
+    required: bool = True,
+    project_root: Optional[Path] = None,
+) -> str:
     """Prompt user for input."""
     if default:
         full_prompt = f"{prompt} [{default}]: "
@@ -184,7 +241,7 @@ def prompt_question(prompt: str, default: Optional[str] = None, required: bool =
             return default
         if not required:
             return ""
-        print("  ⚠️  This field is required. Please provide a value.")
+        print(_msg(project_root, "installer.prompt.field_required"))
 
 
 def prompt_yes_no(prompt: str, default: bool = False) -> bool:
@@ -243,14 +300,15 @@ Configure VERSION_* constants per your project versioning policy.
 '''
 
 
-def format_version_scaffold_decline_help(version_rel: str) -> str:
+def format_version_scaffold_decline_help(project_root: Path, version_rel: str) -> str:
     """Copy-paste guidance when user declines scaffold (BR-088)."""
     parent = str(Path(version_rel).parent)
-    return (
-        f"version_file not created at {version_rel}. "
-        f"Create it before running RW, for example:\n"
-        f"  mkdir -p {parent}\n"
-        f"  # Add VERSION_* constants per dev-kit versioning policy, then re-run the installer"
+    return render_locale_text(
+        workflow_locales_root(),
+        category="scaffolds",
+        key="version_scaffold_decline",
+        project_root=project_root,
+        substitutions={"version_rel": version_rel, "parent": parent},
     )
 
 
@@ -278,10 +336,15 @@ def ensure_version_file_scaffold(
         version_rel_display = Path(version_rel)
 
     if version_path.is_file():
+        msg = _msg(
+            project_root,
+            "installer.scaffold.version_exists",
+            {"path": str(version_rel_display)},
+        )
         return ScaffoldResult(
             status="skipped_exists",
             rel_path=str(version_rel_display),
-            message=f"✅ version_file already exists: {version_rel_display}",
+            message=msg,
         )
 
     use_devkit = config.get("versioning_schema") == DEVKIT_VERSIONING_SCHEMA
@@ -292,9 +355,20 @@ def ensure_version_file_scaffold(
 
     if dry_run:
         print(
-            f"\n🔍 [DRY RUN] Would offer to create version file at: {version_rel_display}"
+            "\n"
+            + _msg(
+                project_root,
+                "installer.scaffold.version_dry_run",
+                {"path": str(version_rel_display)},
+            )
         )
-        print(f"   Initial version (dev-kit schema): {initial}")
+        print(
+            _msg(
+                project_root,
+                "installer.scaffold.version_initial",
+                {"version": initial},
+            )
+        )
         return ScaffoldResult(
             status="dry_run_would_create",
             rel_path=str(version_rel_display),
@@ -304,7 +378,11 @@ def ensure_version_file_scaffold(
         if create_if_missing is not None:
             raise ValueError("create_if_missing is only valid when interactive=False")
         create = prompt_yes_no(
-            f"Create minimal version file at {version_rel_display} (initial {initial})?",
+            _msg(
+                project_root,
+                "installer.scaffold.version_create_prompt",
+                {"path": str(version_rel_display), "version": initial},
+            ),
             default=True,
         )
     else:
@@ -314,7 +392,9 @@ def ensure_version_file_scaffold(
             create = create_if_missing
 
     if not create:
-        help_text = format_version_scaffold_decline_help(str(version_rel_display))
+        help_text = format_version_scaffold_decline_help(
+            project_root, str(version_rel_display)
+        )
         print(f"\n⚠️  {help_text}")
         return ScaffoldResult(
             status="declined",
@@ -326,9 +406,10 @@ def ensure_version_file_scaffold(
     body = render_version_py_stub(devkit_schema=use_devkit)
     version_path.parent.mkdir(parents=True, exist_ok=True)
     version_path.write_text(body, encoding="utf-8")
-    msg = (
-        f"✅ Created version file: {version_rel_display} "
-        f"(initial internal version {initial})"
+    msg = _msg(
+        project_root,
+        "installer.scaffold.version_created",
+        {"path": str(version_rel_display), "version": initial},
     )
     print(f"\n{msg}")
     return ScaffoldResult(
@@ -338,28 +419,27 @@ def ensure_version_file_scaffold(
     )
 
 
-def render_changelog_stub(project_name: str) -> str:
+def render_changelog_stub(project_root: Path, project_name: str) -> str:
     """Minimal Keep a Changelog root file for greenfield adopters (#19)."""
     title = project_name or "Project"
-    return f"""# Changelog — {title}
-
-All notable changes to this project are documented in this file.
-
-The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
-and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html) where applicable.
-
-## [Unreleased]
-
-### Added
-
-- Dev Kit RW scaffolding (initial `CHANGELOG.md` created by `install_release_workflow.py`).
-"""
+    return render_locale_text(
+        workflow_locales_root(),
+        category="scaffolds",
+        key="changelog_stub",
+        project_root=project_root,
+        substitutions={"project_name": title},
+    )
 
 
-def format_changelog_scaffold_decline_help(changelog_rel: str) -> str:
-    return (
-        f"main_changelog not created at {changelog_rel}. "
-        f"Create before first RW, or re-run the installer and accept scaffold."
+def format_changelog_scaffold_decline_help(
+    project_root: Path, changelog_rel: str
+) -> str:
+    return render_locale_text(
+        workflow_locales_root(),
+        category="scaffolds",
+        key="changelog_scaffold_decline",
+        project_root=project_root,
+        substitutions={"changelog_rel": changelog_rel},
     )
 
 
@@ -383,17 +463,27 @@ def ensure_main_changelog_scaffold(
         changelog_rel_display = Path(changelog_rel)
 
     if changelog_path.is_file():
+        msg = _msg(
+            project_root,
+            "installer.scaffold.changelog_exists",
+            {"path": str(changelog_rel_display)},
+        )
         return ScaffoldResult(
             status="skipped_exists",
             rel_path=str(changelog_rel_display),
-            message=f"✅ main_changelog already exists: {changelog_rel_display}",
+            message=msg,
         )
 
     project_name = str(config.get("project_name") or project_root.name)
 
     if dry_run:
         print(
-            f"\n🔍 [DRY RUN] Would offer to create changelog at: {changelog_rel_display}"
+            "\n"
+            + _msg(
+                project_root,
+                "installer.scaffold.changelog_dry_run",
+                {"path": str(changelog_rel_display)},
+            )
         )
         return ScaffoldResult(
             status="dry_run_would_create",
@@ -404,14 +494,20 @@ def ensure_main_changelog_scaffold(
         if create_if_missing is not None:
             raise ValueError("create_if_missing is only valid when interactive=False")
         create = prompt_yes_no(
-            f"Create minimal CHANGELOG at {changelog_rel_display}?",
+            _msg(
+                project_root,
+                "installer.scaffold.changelog_create_prompt",
+                {"path": str(changelog_rel_display)},
+            ),
             default=True,
         )
     else:
         create = True if create_if_missing is None else create_if_missing
 
     if not create:
-        help_text = format_changelog_scaffold_decline_help(str(changelog_rel_display))
+        help_text = format_changelog_scaffold_decline_help(
+            project_root, str(changelog_rel_display)
+        )
         print(f"\n⚠️  {help_text}")
         return ScaffoldResult(
             status="declined",
@@ -421,9 +517,13 @@ def ensure_main_changelog_scaffold(
         )
 
     changelog_path.write_text(
-        render_changelog_stub(project_name), encoding="utf-8"
+        render_changelog_stub(project_root, project_name), encoding="utf-8"
     )
-    msg = f"✅ Created main changelog: {changelog_rel_display}"
+    msg = _msg(
+        project_root,
+        "installer.scaffold.changelog_created",
+        {"path": str(changelog_rel_display)},
+    )
     print(f"\n{msg}")
     return ScaffoldResult(
         status="created",
@@ -512,50 +612,74 @@ def prompt_pattern_with_validation(
 ) -> str:
     """Prompt for pattern with required placeholder and preview validation."""
     while True:
-        value = prompt_question(prompt, default=default)
+        value = prompt_question(prompt, default=default, project_root=project_root)
         missing = validate_required_placeholders(value, required_placeholders)
         if missing:
             placeholders = ", ".join(missing)
-            print(f"  ❌ Pattern must include placeholder(s): {placeholders}")
+            print(
+                _msg(
+                    project_root,
+                    "installer.validation.pattern_missing_placeholders",
+                    {"placeholders": placeholders},
+                )
+            )
             continue
 
         count, samples, preview_error = preview_pattern_matches(project_root, kanban_root, value)
         if preview_error:
-            print(f"  ⚠️  Preview unavailable: {preview_error}")
+            print(
+                _msg(
+                    project_root,
+                    "installer.validation.preview_unavailable",
+                    {"error": preview_error},
+                )
+            )
             return value
 
         if count == 0:
-            print("  ⚠️  No files matched this pattern under selected kanban root.")
+            print(_msg(project_root, "installer.validation.no_files_matched"))
             if suggestion_examples:
-                print("  Suggested examples:")
+                print(_msg(project_root, "installer.validation.suggested_examples"))
                 for suggestion in suggestion_examples:
-                    print(f"    - {suggestion}")
+                    print(
+                        _msg(
+                            project_root,
+                            "installer.validation.suggestion_line",
+                            {"suggestion": suggestion},
+                        )
+                    )
             if strict_zero_match and kanban_root_exists(project_root, kanban_root):
                 # Fresh kanban install creates epics before any Story-*.md files exist.
                 if value == default and not missing:
-                    print(
-                        "  ℹ️  No matching files yet (normal after fresh kanban). "
-                        "Accepting installer-aligned default."
-                    )
+                    print(_msg(project_root, "installer.validation.fresh_kanban_default"))
                     return value
                 if forward_looking_accept and value in forward_looking_accept and not missing:
-                    print(
-                        "  ℹ️  Forward-looking pattern (book/adopter convention). "
-                        "Accepting before story files exist."
-                    )
+                    print(_msg(project_root, "installer.validation.forward_looking"))
                     return value
-                print(
-                    "  ❌ Cannot persist a zero-match pattern while kanban files exist. "
-                    "Choose a suggested pattern or enter one that matches files on disk."
-                )
+                print(_msg(project_root, "installer.validation.zero_match_reject"))
                 continue
-            if prompt_yes_no("Use this pattern anyway?", default=False):
+            if prompt_yes_no(
+                _msg(project_root, "installer.validation.use_pattern_prompt"),
+                default=False,
+            ):
                 return value
             continue
 
-        print(f"  ✅ Matched {count} file(s). Sample:")
+        print(
+            _msg(
+                project_root,
+                "installer.validation.matched_count",
+                {"count": str(count)},
+            )
+        )
         for sample in samples:
-            print(f"    - {sample}")
+            print(
+                _msg(
+                    project_root,
+                    "installer.validation.sample_line",
+                    {"sample": sample},
+                )
+            )
         return value
 
 
@@ -715,57 +839,71 @@ def collect_config_interactive(project_root: Path, mode: Optional[str] = None) -
     """Collect configuration via interactive prompts."""
     config = {}
     
-    print_section_header("📋 RW Configuration Setup", project_root)
+    print_section_header(_msg(project_root, "installer.wizard.config_header"), project_root)
     print("=" * 60)
     
     # Detect project name
     detected_name = detect_project_name(project_root)
-    project_name = prompt_question("Project name", default=detected_name, required=False)
+    project_name = prompt_question(
+        _msg(project_root, "installer.wizard.project_name"),
+        default=detected_name,
+        required=False,
+        project_root=project_root,
+    )
     config['project_name'] = project_name or detected_name
     
     # Version file
     detected_version = find_version_file(project_root)
     version_file = prompt_question(
-        "Path to version file (relative to project root)",
-        default=detected_version or "src/myproject/version.py"
+        _msg(project_root, "installer.wizard.version_file"),
+        default=detected_version or "src/myproject/version.py",
+        project_root=project_root,
     )
     config['version_file'] = version_file
     
     # Main changelog
     main_changelog = prompt_question(
-        "Path to main CHANGELOG.md",
-        default="CHANGELOG.md"
+        _msg(project_root, "installer.wizard.main_changelog"),
+        default="CHANGELOG.md",
+        project_root=project_root,
     )
     config['main_changelog'] = main_changelog
     
     # Changelog directory
     changelog_dir = prompt_question(
-        "Directory for detailed changelog archives",
-        default="docs/changelogs"
+        _msg(project_root, "installer.wizard.changelog_dir"),
+        default="docs/changelogs",
+        project_root=project_root,
     )
     config['changelog_dir'] = changelog_dir
     
     # Scripts path
     scripts_path = prompt_question(
-        "Path to validation scripts directory",
-        default="tools/workflow_mgt/scripts"
+        _msg(project_root, "installer.wizard.scripts_path"),
+        default="tools/workflow_mgt/scripts",
+        project_root=project_root,
     )
     config['scripts_path'] = scripts_path
     
     # README file
     readme_file = prompt_question(
-        "Path to README.md",
-        default="README.md"
+        _msg(project_root, "installer.wizard.readme_file"),
+        default="README.md",
+        project_root=project_root,
     )
     config['readme_file'] = readme_file
     
     # Mode selection
     if not mode:
-        print("\n📦 Installation Mode:")
-        print("  A) Simple RW (no Kanban, any versioning)")
-        print("  B) RW + Dev-Kit Versioning")
-        print("  C) Full Stack (RW + Versioning + Kanban)")
-        mode_choice = prompt_question("Select mode", default="B").upper()
+        print("\n" + _msg(project_root, "installer.wizard.mode_heading"))
+        print(_msg(project_root, "installer.wizard.mode_a"))
+        print(_msg(project_root, "installer.wizard.mode_b"))
+        print(_msg(project_root, "installer.wizard.mode_c"))
+        mode_choice = prompt_question(
+            _msg(project_root, "installer.wizard.mode_select"),
+            default="B",
+            project_root=project_root,
+        ).upper()
     else:
         mode_choice = mode.upper()
     
@@ -776,7 +914,10 @@ def collect_config_interactive(project_root: Path, mode: Optional[str] = None) -
         config['versioning_mode'] = 'dual'
         config['semver_mapping_strategy'] = 'task_touch'
     else:
-        use_devkit_versioning = prompt_yes_no("Use dev-kit versioning schema (RC.EPIC.STORY.TASK+BUILD)?", default=False)
+        use_devkit_versioning = prompt_yes_no(
+            _msg(project_root, "installer.wizard.devkit_schema_prompt"),
+            default=False,
+        )
         if use_devkit_versioning:
             config['versioning_schema'] = 'RC.EPIC.STORY.TASK+BUILD'
             # Mode A with dev-kit schema defaults to dual mode for new installs.
@@ -786,10 +927,11 @@ def collect_config_interactive(project_root: Path, mode: Optional[str] = None) -
     # Kanban integration
     if mode_choice == 'C':
         config['use_kanban'] = True
-        print("\n📊 Kanban Integration:")
+        print("\n" + _msg(project_root, "installer.wizard.kanban_heading"))
         kanban_root = prompt_question(
-            "Kanban root directory",
-            default="docs/kanban"
+            _msg(project_root, "installer.wizard.kanban_root"),
+            default="docs/kanban",
+            project_root=project_root,
         )
         config['kanban_root'] = kanban_root
         strict_patterns = kanban_root_exists(project_root, kanban_root)
@@ -802,27 +944,15 @@ def collect_config_interactive(project_root: Path, mode: Optional[str] = None) -
         )
         if fresh_layout:
             if uses_unpadded_lowercase_epic_layout(project_root, kanban_root):
-                print(
-                    "  ℹ️  Detected lowercase fresh kanban layout "
-                    "(epics/epic-{n}/epic-{n}.md; book story-{story:03d}-*.md)."
-                )
+                print(_msg(project_root, "installer.wizard.detected_lowercase_layout"))
             elif epic_default == LEGACY_FRESH_KANBAN_EPIC_PATTERN:
-                print(
-                    "  ℹ️  Detected fresh kanban install layout "
-                    "(epics/Epic-{n}/Epic-{n}.md, Story-{story:03d}-*.md)."
-                )
+                print(_msg(project_root, "installer.wizard.detected_fresh_capitalized"))
             else:
-                print(
-                    "  ℹ️  Detected fresh kanban install layout "
-                    "(lowercase epic/story patterns)."
-                )
+                print(_msg(project_root, "installer.wizard.detected_fresh_lowercase"))
         elif _pattern_match_score(project_root, kanban_root, epic_default) > 0:
-            print("  ℹ️  Detected existing kanban files; using best-matching pattern defaults.")
+            print(_msg(project_root, "installer.wizard.detected_existing"))
 
-        print(
-            "  ℹ️  Padding: {story:03d} = three-digit story files (book T03); "
-            "{story:02d} / {epic:02d} = ADR-015 two-digit segments."
-        )
+        print(_msg(project_root, "installer.wizard.padding_help"))
 
         forward_story = frozenset(
             {
@@ -837,19 +967,40 @@ def collect_config_interactive(project_root: Path, mode: Optional[str] = None) -
             project_root, kanban_root, task_default
         )
         if task_count:
-            print(f"  ℹ️  Task pattern default matches {task_count} file(s). Sample:")
+            print(
+                _msg(
+                    project_root,
+                    "installer.wizard.task_matches",
+                    {"count": str(task_count)},
+                )
+            )
             for sample in task_samples:
-                print(f"    - {sample}")
+                print(
+                    _msg(
+                        project_root,
+                        "installer.validation.sample_line",
+                        {"sample": sample},
+                    )
+                )
         else:
             print(
-                "  ℹ️  Task pattern default (for future task docs): "
-                f"{task_default}"
+                _msg(
+                    project_root,
+                    "installer.wizard.task_default_future",
+                    {"pattern": task_default},
+                )
             )
         if fr_br_default:
-            print(f"  ℹ️  FR/BR root detected: {fr_br_default}")
+            print(
+                _msg(
+                    project_root,
+                    "installer.wizard.fr_br_detected",
+                    {"path": fr_br_default},
+                )
+            )
 
         config['epic_doc_pattern'] = prompt_pattern_with_validation(
-            prompt="Epic document pattern (relative to Kanban root, must include {epic})",
+            prompt=_msg(project_root, "installer.wizard.epic_pattern"),
             default=epic_default,
             project_root=project_root,
             kanban_root=kanban_root,
@@ -864,7 +1015,7 @@ def collect_config_interactive(project_root: Path, mode: Optional[str] = None) -
         )
 
         config['story_doc_pattern'] = prompt_pattern_with_validation(
-            prompt="Story document pattern (relative to Kanban root, include {epic} and {story})",
+            prompt=_msg(project_root, "installer.wizard.story_pattern"),
             default=story_default,
             project_root=project_root,
             kanban_root=kanban_root,
@@ -885,8 +1036,9 @@ def collect_config_interactive(project_root: Path, mode: Optional[str] = None) -
             config['fr_br_root'] = fr_br_default
 
         config['kanban_board'] = prompt_question(
-            "Main Kanban board file",
+            _msg(project_root, "installer.wizard.kanban_board"),
             default=detect_kanban_board_default(project_root, kanban_root),
+            project_root=project_root,
         )
     else:
         config['use_kanban'] = False
@@ -1051,6 +1203,9 @@ Examples:
   # Preset mode (a=Simple, b=RW+Versioning, c=Full Stack)
   python install_release_workflow.py --mode c
 
+  # Non-interactive UK English (writes ai-dev-kit-config.yaml first)
+  python install_release_workflow.py --non-interactive --language en-GB
+
 Brownfield (existing repo):
   Map paths to YOUR project tree; see INSTALL_IN_YOUR_PROJECT.md
   "Brownfield adoption" — use --mode a for RW-only (use_kanban: false).
@@ -1080,18 +1235,50 @@ Brownfield (existing repo):
         action='store_true',
         help='Close ai-dev-kit issues whose install sign-off checks passed (requires gh auth)',
     )
+    parser.add_argument(
+        '--locale',
+        type=str,
+        default=None,
+        help='Locale tag for ai-dev-kit-config.yaml (canonical; skips interactive prompt)',
+    )
+    parser.add_argument(
+        '--language',
+        type=str,
+        choices=['en-GB', 'en-US'],
+        default=None,
+        help='English variant alias for --locale (backward compatible)',
+    )
+    parser.add_argument(
+        '--non-interactive',
+        action='store_true',
+        help='Skip language prompt; default to UK English (en-GB) when creating localisation config',
+    )
+    parser.add_argument(
+        '--force',
+        action='store_true',
+        help='Overwrite existing ai-dev-kit-config.yaml when setting language preference',
+    )
 
     args = parser.parse_args()
 
     if args.check_deps:
         ok, missing = check_dependencies()
+        project_root_for_deps = Path(args.project_root).resolve()
+        if not project_root_for_deps.exists():
+            project_root_for_deps = None
         if ok:
-            print("OK: RW installer dependencies satisfied.")
+            print(_msg(project_root_for_deps, "installer.deps.satisfied"))
             for _import_name, pip_name, spec in INSTALLER_DEPENDENCIES:
-                print(f"  - {pip_name} ({spec})")
+                print(
+                    _msg(
+                        project_root_for_deps,
+                        "installer.deps.satisfied_line",
+                        {"pip_name": pip_name, "spec": spec},
+                    )
+                )
             sys.exit(0)
         emit_install_error("ADK-I03.E04", file=sys.stderr)
-        print(format_dependency_help(missing), file=sys.stderr)
+        print(format_dependency_help(missing, project_root_for_deps), file=sys.stderr)
         sys.exit(1)
 
     yaml = get_yaml()
@@ -1099,12 +1286,31 @@ Brownfield (existing repo):
     project_root = Path(args.project_root).resolve()
     
     if not project_root.exists():
-        print(f"❌ ERROR: Project root not found: {project_root}")
+        print(
+            _msg(
+                project_root,
+                "installer.run.project_not_found",
+                {"path": str(project_root)},
+            )
+        )
         sys.exit(1)
 
     print_session_banner(project_root)
     
-    print(f"📁 Project root: {project_root}")
+    print(
+        _msg(project_root, "installer.run.project_root", {"path": str(project_root)})
+    )
+
+    print_section_header("🌐 Language / Localisation", project_root)
+    _locale_tag = args.locale or args.language
+    ensure_localisation_config(
+        project_root,
+        language=args.language,
+        locale=args.locale,
+        non_interactive=args.non_interactive or _locale_tag is not None,
+        force=args.force,
+        dry_run=args.dry_run,
+    )
     
     # Load or collect config
     install_warnings: list[str] = []
@@ -1112,15 +1318,33 @@ Brownfield (existing repo):
     if args.config:
         config_path = Path(args.config)
         if not config_path.exists():
-            print(f"❌ ERROR: Config file not found: {config_path}")
+            print(
+                _msg(
+                    project_root,
+                    "installer.run.config_not_found",
+                    {"path": str(config_path)},
+                )
+            )
             sys.exit(1)
         try:
             with open(config_path, 'r', encoding='utf-8') as f:
                 config = yaml.safe_load(f)
         except Exception as e:
-            print(f"❌ ERROR: Failed to load config: {e}")
+            print(
+                _msg(
+                    project_root,
+                    "installer.run.config_load_failed",
+                    {"error": str(e)},
+                )
+            )
             sys.exit(1)
-        print(f"✅ Loaded config from: {config_path}")
+        print(
+            _msg(
+                project_root,
+                "installer.run.config_loaded",
+                {"path": str(config_path)},
+            )
+        )
     else:
         config = collect_config_interactive(project_root, args.mode)
     
@@ -1129,7 +1353,7 @@ Brownfield (existing repo):
     config_path = project_root / "rw-config.yaml"
     
     print("\n" + "=" * 60)
-    print("📝 Generated rw-config.yaml:")
+    print(_msg(project_root, "installer.run.config_generated_heading"))
     print("=" * 60)
     print(config_yaml)
     
@@ -1138,7 +1362,14 @@ Brownfield (existing repo):
 
     if not args.dry_run:
         config_path.write_text(config_yaml, encoding='utf-8')
-        print(f"\n✅ Written: {config_path}")
+        print(
+            "\n"
+            + _msg(
+                project_root,
+                "installer.run.config_written",
+                {"path": str(config_path)},
+            )
+        )
         scaffold_result = ensure_version_file_scaffold(
             project_root,
             config,
@@ -1159,7 +1390,14 @@ Brownfield (existing repo):
         elif changelog_result.message and changelog_result.status == "created":
             print(changelog_result.message)
     else:
-        print(f"\n🔍 [DRY RUN] Would write: {config_path}")
+        print(
+            "\n"
+            + _msg(
+                project_root,
+                "installer.run.dry_run_write",
+                {"path": str(config_path)},
+            )
+        )
         ensure_version_file_scaffold(
             project_root,
             config,
@@ -1178,7 +1416,7 @@ Brownfield (existing repo):
     cursorrules_path = project_root / ".cursorrules"
     
     print("\n" + "=" * 60)
-    print("📝 Generated .cursorrules RW trigger section:")
+    print(_msg(project_root, "installer.run.cursorrules_heading"))
     print("=" * 60)
     print(cursorrules_section[:500] + "..." if len(cursorrules_section) > 500 else cursorrules_section)
     
@@ -1187,17 +1425,38 @@ Brownfield (existing repo):
         if cursorrules_path.exists():
             existing = cursorrules_path.read_text(encoding='utf-8')
             if "RELEASE WORKFLOW (RW) TRIGGER" in existing:
-                print("\n⚠️  .cursorrules already contains RW trigger section. Skipping update.")
-                print("   Please manually review and update if needed.")
+                print("\n" + _msg(project_root, "installer.run.cursorrules_exists"))
+                print(_msg(project_root, "installer.run.cursorrules_review"))
                 install_warnings.append(".cursorrules already had RW trigger section; manual reconciliation required")
             else:
                 cursorrules_path.write_text(existing + "\n\n" + cursorrules_section, encoding='utf-8')
-                print(f"\n✅ Appended to: {cursorrules_path}")
+                print(
+                    "\n"
+                    + _msg(
+                        project_root,
+                        "installer.run.cursorrules_appended",
+                        {"path": str(cursorrules_path)},
+                    )
+                )
         else:
             cursorrules_path.write_text(cursorrules_section, encoding='utf-8')
-            print(f"\n✅ Created: {cursorrules_path}")
+            print(
+                "\n"
+                + _msg(
+                    project_root,
+                    "installer.run.cursorrules_created",
+                    {"path": str(cursorrules_path)},
+                )
+            )
     else:
-        print(f"\n🔍 [DRY RUN] Would update: {cursorrules_path}")
+        print(
+            "\n"
+            + _msg(
+                project_root,
+                "installer.run.dry_run_cursorrules",
+                {"path": str(cursorrules_path)},
+            )
+        )
     
     # Patch workflow YAML
     workflow_path = project_root / "workflows" / "release-workflow" / "release-workflow.yaml"
@@ -1207,13 +1466,20 @@ Brownfield (existing repo):
         if result.startswith("⚠️"):
             install_warnings.append(result)
     else:
-        print(f"\n⚠️  Workflow file not found: {workflow_path}")
-        print("   You may need to copy workflows/release-workflow/release-workflow.yaml to your project.")
+        print(
+            "\n"
+            + _msg(
+                project_root,
+                "installer.run.workflow_not_found",
+                {"path": str(workflow_path)},
+            )
+        )
+        print(_msg(project_root, "installer.run.workflow_copy_hint"))
         install_warnings.append("Workflow file not found for patching")
     
     print("\n" + "=" * 60)
     if args.dry_run:
-        print("🔍 DRY RUN COMPLETE - No files were modified")
+        print(_msg(project_root, "installer.run.dry_run_complete"))
     else:
         combined_warnings = install_warnings + changelog_warnings
         if combined_warnings or version_file_blocking:
@@ -1226,25 +1492,31 @@ Brownfield (existing repo):
                 emit_install_error("ADK-I03.E21", file=sys.stderr)
             else:
                 emit_install_error("ADK-I03.E90", file=sys.stderr)
-            print("⚠️  INSTALLATION PARTIAL")
-            print("\nIssues requiring follow-up:")
+            print(_msg(project_root, "installer.run.partial_heading"))
+            print("\n" + _msg(project_root, "installer.run.partial_issues"))
             for idx, warning in enumerate(combined_warnings, start=1):
-                print(f"{idx}. {warning}")
-            print("\nFinal status: PARTIAL")
+                print(
+                    _msg(
+                        project_root,
+                        "installer.run.partial_item",
+                        {"index": str(idx), "warning": warning},
+                    )
+                )
+            print("\n" + _msg(project_root, "installer.run.partial_status"))
         else:
-            print("✅ INSTALLATION COMPLETE")
-            print("\nFinal status: SUCCESS")
-        print("\nNext steps:")
-        print("1. Review rw-config.yaml and adjust paths if needed")
+            print(_msg(project_root, "installer.run.complete_heading"))
+            print("\n" + _msg(project_root, "installer.run.complete_status"))
+        print("\n" + _msg(project_root, "installer.run.next_steps"))
+        print(_msg(project_root, "installer.run.next_review_config"))
         if version_file_blocking:
-            print("2. Create version_file at the path in rw-config.yaml (or re-run installer and accept scaffold)")
-            print("3. Review .cursorrules RW trigger section")
-            print("4. Copy validation scripts to your scripts_path if not already present")
-            print("5. Test RW by typing 'RW' in your AI assistant")
+            print(_msg(project_root, "installer.run.next_create_version"))
+            print(_msg(project_root, "installer.run.next_review_cursorrules"))
+            print(_msg(project_root, "installer.run.next_copy_validators"))
+            print(_msg(project_root, "installer.run.next_test_rw"))
         else:
-            print("2. Review .cursorrules RW trigger section")
-            print("3. Copy validation scripts to your scripts_path if not already present")
-            print("4. Test RW by typing 'RW' in your AI assistant")
+            print(_msg(project_root, "installer.run.next_review_cursorrules_short"))
+            print(_msg(project_root, "installer.run.next_copy_validators_short"))
+            print(_msg(project_root, "installer.run.next_test_rw_short"))
     print("=" * 60)
 
     if not args.skip_github_signoff:

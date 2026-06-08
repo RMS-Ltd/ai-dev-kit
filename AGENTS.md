@@ -32,6 +32,7 @@ Then:
 | `governance` | ADR, governance, policy, standard, versioning | `docs/governance/README.md` |
 | `framework-code` | package, validator, script, pytest, framework, workflow mgt | `packages/frameworks/workflow-mgt/README.md` |
 | `implementation-planning` | IPP, ICW, IPW, plan mode, implementation plan, specification | `.claude/commands/ipw.md`, `docs/governance/standards/dev-kit-ipw-ipp-vs-icw-artifacts.md` |
+| `adopter-docs` | user-docs, adopter-public, portal link, Docusaurus publish, contributing guide | `docs/governance/standards/adopter-public-documentation-authoring.md`, `portal/README.md` |
 | `maintainer-kb` | Notion, maintainer KB, knowledge base, investigation, analysis, records, maintainer doc, Engineering KB | `rw-config.yaml`, `docs/architecture/standards-and-adrs/ADR-024-documentation-surfaces-three-surface-model-fr114.md`, `docs/knowledge/README.md` |
 | `agent-bootstrap` | bootstrap, routing, cold start, AGENTS | `docs/architecture/standards-and-adrs/ADR-012-agent-bootstrap-and-task-routing.md` |
 
@@ -62,6 +63,8 @@ Refresh from `kboard.md` when running UKW or RW Step 7; mirror into manifest `op
 | P-INTAKE-ATOMIC | FR/BR/UXR intake needs task + links same session | [Intake guide](packages/frameworks/kanban/FR_BR_INTAKE_GUIDE.md) |
 | P-RW-BUILD | Same E:S:T → BUILD+1 default; no `git tag -f` on release tags; `--dpz` (alias: `--doc-policy-zero`) only if user-triggered + untagged | [BR-097](docs/kanban/fr-br/BR-097-rw-agent-reuses-tagged-build-and-force-moves-release-tags.md) |
 | P-NOTION-FIRST | New maintainer docs → Notion MCP first; git stubs only per ADR-024 criteria | [ADR-024](docs/architecture/standards-and-adrs/ADR-024-documentation-surfaces-three-surface-model-fr114.md) |
+| P-PORTAL-LINKS | Edits under `docs/guides/**` or `docs/documentation/**` → GitHub blob URLs for excluded trees; run portal pytest before commit | [adopter-public-documentation-authoring.md](docs/governance/standards/adopter-public-documentation-authoring.md) · [BR-068](docs/kanban/fr-br/BR-068-docusaurus-monorepo-markdown-links-break-strict-production-build.md) |
+| P-GREENFIELD-SYNC | Edits under `packages/frameworks/**` → `sync_greenfield_install.py` + commit mirror in same change set | [FR-110](docs/kanban/fr-br/FR-110-lean-adopter-distribution-footprint-and-vendor-bundle.md) |
 
 **Workflow execution SoT:** `.cursorrules` and `.claude/commands/` — load when `workflows` track applies, not at cold start.
 

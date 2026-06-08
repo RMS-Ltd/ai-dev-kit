@@ -12,13 +12,21 @@ housekeeping_policy: keep
 **Submitted:** 2025-12-09  
 **Submitted By:** User  
 **Priority:** MEDIUM  
-**Status:** PENDING
+**Status:** IN PROGRESS
 
 **Implementing Epic:** [Epic 21 – Internationalisation and Localisation](../epics/epic-21/Epic-21.md)
 
 **Phase 1 host story:** [E21:S01](../epics/epic-21/story-01-language-selection-at-setup.md) (T01–T07)
 
-**Implementing task (kanban anchor):** [E21:S01:T01](../epics/epic-21/story-01-language-selection-at-setup/T01-add-language-selection-prompt-to-template-setup-github-templ.md) — **v0.21.1.1+1** (RW -k kanban rehouse)
+**Implementing tasks (kanban anchors):** [E21:S01:T01](../epics/epic-21/story-01-language-selection-at-setup/T01-add-language-selection-prompt-to-template-setup-github-templ.md) **v0.21.1.1+2** COMPLETE (template Step 0) · [E21:S01:T02](../epics/epic-21/story-01-language-selection-at-setup/T02-add-language-selection-prompt-to-cli-tool-ai-dev-kit-init.md) **v0.21.1.2+1** COMPLETE (CLI init) · [E21:S01:T03](../epics/epic-21/story-01-language-selection-at-setup/T03-add-language-selection-prompt-to-rw-installer-install-releas.md) **v0.21.1.3+1** COMPLETE (RW installer) · [E21:S01:T04](../epics/epic-21/story-01-language-selection-at-setup/T04-create-ukus-english-content-variants-documentation-templates.md) **v0.21.1.4+1** COMPLETE (locale corpus MVP) · [E21:S01:T05](../epics/epic-21/story-01-language-selection-at-setup/T05-implement-configuration-persistence-ai-dev-kit-configyaml.md) **v0.21.1.5+1** COMPLETE (read/resolve API) · [E21:S01:T06](../epics/epic-21/story-01-language-selection-at-setup/T06-update-content-generation-to-use-language-preference-rw-temp.md) **v0.21.1.6+1** COMPLETE (content generation locale wiring) · [E21:S01:T07](../epics/epic-21/story-01-language-selection-at-setup/T07-test-ukus-english-selection-and-content-generation.md) **v0.21.1.7+1** COMPLETE (Phase 1 E2E tests; E21:S01 story closed)
+
+**Phase 2 host story:** [E21:S02](../epics/epic-21/story-02-internationalisation-infrastructure.md) (T01–T07)
+
+**Phase 2 implementing tasks (infrastructure — COMPLETE):** [E21:S02:T01](../epics/epic-21/story-02-internationalisation-infrastructure/T01-choose-i18n-frameworklibrary.md) **v0.21.2.1+1** COMPLETE ([ADR-024](../../architecture/standards-and-adrs/ADR-024-i18n-framework-strategy.md) C1 hybrid) · [E21:S02:T02](../epics/epic-21/story-02-internationalisation-infrastructure/T02-set-up-translation-file-structure-localeslang.md) **v0.21.2.2+1** COMPLETE (manifest v2 + keys scaffold) · [E21:S02:T03](../epics/epic-21/story-02-internationalisation-infrastructure/T03-implement-locale-detection-browsersystem-locale.md) **v0.21.2.3+1** COMPLETE (locale detection + precedence) · [E21:S02:T04](../epics/epic-21/story-02-internationalisation-infrastructure/T04-add-language-switching-functionality.md) **v0.21.2.4+1** COMPLETE (language switching) · [E21:S02:T05](../epics/epic-21/story-02-internationalisation-infrastructure/T05-configure-datetimenumber-formatting-per-locale.md) **v0.21.2.5+1** COMPLETE (Babel formatting) · [E21:S02:T06](../epics/epic-21/story-02-internationalisation-infrastructure/T06-implement-translation-key-system.md) **v0.21.2.6+1** COMPLETE (key resolution) · [E21:S02:T07](../epics/epic-21/story-02-internationalisation-infrastructure/T07-set-up-translation-fallback-chain-selected-english-us-englis.md) **v0.21.2.7+1** COMPLETE (fallback chain; E21:S02 story closed)
+
+**Phase 3 host story (translation / locales — COMPLETE):** [E21:S03](../epics/epic-21/story-03-translation-and-localisation.md) (T01 **v0.21.3.1+1** COMPLETE; T02 **v0.21.3.2+1** COMPLETE — major-language scaffold trees; T03 **v0.21.3.3+1** COMPLETE — translation lookup/rendering wired; T04 **v0.21.3.4+1** COMPLETE — translation workflow and review process; T05 **v0.21.3.5+1** COMPLETE — translation management tools; T06 **v0.21.3.6+1** COMPLETE — translation completeness tracking; T07 **v0.21.3.7+1** COMPLETE — Phase 3 E2E translation/locale tests; **E21:S03 story closed**)
+
+**Phase 3+ host stories (linguistic delivery):** [E21:S04](../epics/epic-21/story-04-cultural-adaptation.md) · [E21:S05](../epics/epic-21/story-05-european-languages-localization.md) · [E21:S06](../epics/epic-21/story-06-cjk-languages-localization.md) · [E21:S07](../epics/epic-21/story-07-rtl-and-extended-locales.md)
 
 ---
 

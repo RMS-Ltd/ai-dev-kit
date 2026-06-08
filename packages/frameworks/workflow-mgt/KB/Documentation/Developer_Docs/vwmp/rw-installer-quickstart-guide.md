@@ -45,10 +45,19 @@ python scripts/install_release_workflow.py --mode c
 ```
 
 **What happens:**
+- **First prompt:** UK/US English variant → writes `ai-dev-kit-config.yaml` at project root ([FR-006 Phase 1](../../../../../../../docs/project-management/kanban/fr-br/FR-006-localization-language-selection-uk-us-english.md))
 - Installer prompts for project-specific paths
 - Generates `rw-config.yaml` with your answers
 - Updates `.cursorrules` with RW trigger section
 - Patches `workflows/release-workflow/release-workflow.yaml` (registry SoT)
+
+**Non-interactive / CI:**
+
+```bash
+python scripts/install_release_workflow.py --mode c --non-interactive --language en-GB
+```
+
+Use `--force` to overwrite an existing `ai-dev-kit-config.yaml`. If the file already exists and `--force` is omitted, the installer skips the language write and continues.
 
 ### Step 3: Review Generated Config
 

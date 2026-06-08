@@ -1,5 +1,6 @@
 # Core dependencies for ai-dev-kit CLI tool
 pyyaml>=6.0.3
+Babel>=2.12
 
 # Documentation and validation dependencies (Python / PyPI only)
 # markdownlint-cli2 is npm-only — install via: npm install -g markdownlint-cli2

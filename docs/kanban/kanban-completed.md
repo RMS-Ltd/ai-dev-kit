@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Completed Tasks
 
-**Last Updated:** 2026-06-07 (RW: E08:S03:T12 re-close; merge spike E02:S17)
-**Version:** v0.8.3.12+13
+**Last Updated:** 2026-06-08 (RW: E21:S03:T07 Phase 3 translation locale E2E tests)
+**Version:** v0.21.3.7+1
 
 > **For MoSCOW prioritized tasks, see:** [`kboard.md`](kboard.md)  
 > **For completed FR/BR/UXR intake items, see:** [`intake-completed.md`](intake-completed.md)
@@ -20,142 +20,160 @@ housekeeping_policy: keep
 
 ## 20 Most Recently Completed Tasks
 
-#### **RW (2026-06-08)** — E07:S01:T12 @ **v0.7.1.12+2** (FR-118 Kanban path promotion)
+#### **RW (2026-06-08)** — E21:S03:T07 @ **v0.21.3.7+1** (Phase 3 translation locale E2E tests; S03 closed)
 
-- **[E07:S01:T12](epics/epic-07/story-01-codebase-maintenance-tasks/T12-promote-kanban-to-docs-kanban-retire-project-management-fr118.md)** — Promote Kanban to `docs/kanban/`; retire `project-management/` shell; rituals removed; framework/greenfield rewired.
-  **Completed:** `2026-06-08T12:54:03Z` | **Version:** `v0.7.1.12+2` | **Agent:** `RW E07:S01:T12 --art` | [FR-118](fr-br/FR-118-promote-kanban-to-docs-kanban-retire-project-management-shell.md) | [IPP](../implementation-cycles/IPP-E07S01T12-kanban-path-promotion-fr118.md)
+- **[E21:S03:T07](epics/epic-21/story-03-translation-and-localisation/T07-test-translations-and-locale-support.md)** — `test_fr006_phase3_translation_locale_e2e.py` (P3E1–P3E11); parametrized scaffold-locale setup-path + fallback tests; `pytest -m fr006` green.
+  **Completed:** `2026-06-08T14:30:00Z` | **Version:** `v0.21.3.7+1` | **Agent:** `RW E21:S03:T07 --art` | [FR-006](fr-br/FR-006-localization-language-selection-uk-us-english.md) | [IPP](../../../implementation-cycles/IPP-E21S03T07-test-translations-locale-support.md)
 
-#### **RW (2026-06-07)** — E08:S03:T12 @ **v0.8.3.12+13** (BR-099 **re-close** — terminal forensic anchor)
+#### **RW (2026-06-08)** — E21:S03:T06 @ **v0.21.3.6+1** (translation completeness tracking)
 
-- **[E08:S03:T12](epics/epic-08/story-03-automation-scripts/T12-code-quality-maintainability-backlog-br099.md)** — **BR-099**: Re-closed @ **+13** — four-surface RW reconciliation; consolidates dashboard **Good** @ +11 and local CQG @ +12; handoff **T16** perpetual.
-  **Completed:** `2026-06-07T18:06:22Z` | **Version:** `v0.8.3.12+13` | **Agent:** `RW E08:S03:T12 --art` | [BR-099](fr-br/BR-099-code-quality-maintainability-backlog.md) | [—IPP—](../implementation-cycles/IPP-E08S03T12-code-quality-maintainability-backlog-br099.md)
+- **[E21:S03:T06](epics/epic-21/story-03-translation-and-localisation/T06-implement-translation-completeness-tracking.md)** — `report_locale_completeness.py`, tier metrics, missing-translation alerts; `pytest -m fr006` green.
 
-#### **RW (2026-06-07)** — E02:S16:T10 @ **v0.2.16.10+8** (E02:S17 integration sign-off)
+#### **RW (2026-06-08)** — E21:S03:T05 @ **v0.21.3.5+1** (translation management tools)
 
-- **[E02:S16:T10](epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T10-ad-hoc-repository-infrastructure-maintenance-perpetual.md)** — Integration test report + wave artifacts (91/91 pytest); spike → dev PR.
-  **Completed:** `2026-06-07T19:27:03Z` | **Version:** `v0.2.16.10+8` | **Agent:** `RW E02:S16:T10 --art` | [integration report](epics/epic-02/story-17-rw-semver-characterization-and-release-state-sqlite/integration-test-report-2026-06-07.md)
+- **[E21:S03:T05](epics/epic-21/story-03-translation-and-localisation/T05-add-translation-management-tools.md)** — `validate_locale_translations.py`, `sync_locale_keys.py`, maintainer guide; `pytest -m fr006` green.
+  **Completed:** `2026-06-08T13:09:04Z` | **Version:** `v0.21.3.5+1` | **Agent:** `RW E21:S03:T05 --art` | [FR-006](fr-br/FR-006-localization-language-selection-uk-us-english.md) | [IPP](../../../implementation-cycles/IPP-E21S03T05-translation-management-tools.md)
 
-#### **RW (2026-06-07)** — E02:S17:T06 @ **v0.2.17.6+1** (high-stress + friction report)
+#### **RW (2026-06-08)** — E21:S09:T02 @ **v0.21.9.2+2** (bootstrap open-work refresh)
 
-- **[E02:S17:T06](epics/epic-02/story-17-rw-semver-characterization-and-release-state-sqlite/T06-high-stress-scenarios-and-rw-friction-report.md)** — 7 high-stress scenarios, friction report (9 patterns), matrix v2.
-  **Completed:** `2026-06-07T18:32:30Z` | **Version:** `v0.2.17.6+1` | **Agent:** `RW E02:S17:T06 --art` | [friction report](epics/epic-02/story-17-rw-semver-characterization-and-release-state-sqlite/rw-semver-friction-report.md) | [Story](epics/epic-02/story-17-rw-semver-characterization-and-release-state-sqlite.md)
+- **[E21:S09:T02](epics/epic-21/story-09-epic-housekeeping/T02-legacy-story-folder-rationalization.md)** — `AGENTS.md` + manifest `openWork` → E21:S03:T01; kboard version metadata sync.
+  **Completed:** `2026-06-08T11:29:45Z` | **Version:** `v0.21.9.2+2` | **Agent:** `RW E21:S09:T02 --art`
 
-#### **RW (2026-06-07)** — E02:S17:T05 @ **v0.2.17.5+1** (parity replay on SQLite)
+#### **RW (2026-06-08)** — E21:S09:T02 @ **v0.21.9.2+1** (legacy story folder redirects)
 
-- **[E02:S17:T05](epics/epic-02/story-17-rw-semver-characterization-and-release-state-sqlite/T05-parity-replay-scenario-matrix-on-sqlite.md)** — Parity replay: 32 scenario IDs, parity harness, run log + diff report; 65 pytest; zero unexplained mismatches.
-  **Completed:** `2026-06-07T18:27:36Z` | **Version:** `v0.2.17.5+1` | **Agent:** `RW E02:S17:T05 --art` | [Story](epics/epic-02/story-17-rw-semver-characterization-and-release-state-sqlite.md) | [parity-run-log](epics/epic-02/story-17-rw-semver-characterization-and-release-state-sqlite/parity-run-log.md)
+- **[E21:S09:T02](epics/epic-21/story-09-epic-housekeeping/T02-legacy-story-folder-rationalization.md)** — Redirect stubs for S00/mis-numbered epic-21 story paths; `kanban-structure.md` defers to `Epic-21.md`.
+  **Completed:** `2026-06-08T11:18:58Z` | **Version:** `v0.21.9.2+1` | **Agent:** `RW E21:S09:T02 --art`
 
-#### **RW (2026-06-07)** — E01:S06:T02 @ **v0.1.6.2+1** (FR-117 MIT LICENSE file and repository legal metadata)
+#### **RW (2026-06-08)** — E21:S09:T01 @ **v0.21.9.1+1** (UKW Epic 21 housekeeping)
 
-- **[E01:S06:T02](epics/epic-01/story-06-repository-ci-cd-setup/T02-mit-license-file-and-repository-legal-metadata-fr117.md)** — **FR-117**: Root MIT `LICENSE`; README and CONTRIBUTING legal metadata aligned.
-  **Completed:** `2026-06-07T17:56:44Z` | **Version:** `v0.1.6.2+1` | **Agent:** `RW E01:S06:T02 --art` | [FR-117](fr-br/FR-117-mit-license-file-and-repository-legal-metadata.md)
+- **[E21:S09:T01](epics/epic-21/story-09-epic-housekeeping/T01-fr006-phase2-header-and-status-reconciliation.md)** — FR-006 Phase 2 header sync; Epic 21 kboard visibility (S03+/S09 admin/S08 deferred rows); S02 story COMPLETE.
+  **Completed:** `2026-06-08T10:25:52Z` | **Version:** `v0.21.9.1+1` | **Agent:** `RW -k E21:S09:T01 --art` | [FR-006](fr-br/FR-006-localization-language-selection-uk-us-english.md)
 
-#### **RW (2026-06-07)** — E02:S17:T04 @ **v0.2.17.4+2** (SQLite release-state backend)
+#### **RW (2026-06-07)** — E21:S08:T03 @ **v0.21.8.3+1** (CLI accessibility Layer 1)
 
-- **[E02:S17:T04](epics/epic-02/story-17-rw-semver-characterization-and-release-state-sqlite/T04-implement-sqlite-changelog-semver-registry-backend.md)** — SQLite release-state module, dual-backend wiring, AC1–AC4 (49 pytest).
-  **Completed:** `2026-06-07T18:01:33Z` | **Version:** `v0.2.17.4+2` | **Agent:** `RW` | [Story](epics/epic-02/story-17-rw-semver-characterization-and-release-state-sqlite.md) | [—IPP—](../implementation-cycles/IPP-E02S17T03-sqlite-release-state-schema.md)
+- **[E21:S08:T03](epics/epic-21/story-08-accessibility/T03-cli-and-terminal-output-accessibility.md)** — Text-first `print_*`, `NO_COLOR` / `--no-color`, stderr warnings, ASCII markers; [cli-accessibility-conventions.md](../../../governance/standards/cli-accessibility-conventions.md); [IPP-E21S08T03](../../../implementation-cycles/IPP-E21S08T03-cli-terminal-accessibility.md).
 
-#### **RW (2026-06-07)** — E08:S03:T12 @ **v0.8.3.12+11** (BR-099 maintainability closure — dashboard Good)
+#### **RW (2026-06-07)** — E21:S02:T07 @ **v0.21.2.7+1** (translation fallback chain)
 
-- **[E08:S03:T12](epics/epic-08/story-03-automation-scripts/T12-code-quality-maintainability-backlog-br099.md)** — **BR-099**: Maintainability backlog burn-down waves 1–6; operator sign-off **Good** @ `main` `ed379ab`; handoff **T16** perpetual.
-  **Completed:** `2026-06-07T17:33:00Z` | **Version:** `v0.8.3.12+11` | **Agent:** `RW E08:S03:T12 --art` | [BR-099](fr-br/BR-099-code-quality-maintainability-backlog.md) | [—IPP—](../implementation-cycles/IPP-E08S03T12-code-quality-maintainability-backlog-br099.md)
+- **[E21:S02:T07](epics/epic-21/story-02-internationalisation-infrastructure/T07-set-up-translation-fallback-chain-selected-english-us-englis.md)** — ADR-024 fallback chain (`language_fallback_chain`, en-US step); locale-fallback-conventions policy.
 
-#### **RW (2026-06-07)** — E02:S17:T02 @ **v0.2.17.2+5** (baseline Waves 1–4 complete)
+#### **RW (2026-06-07)** — E21:S02:T06 @ **v0.21.2.6+1** (translation key system)
 
-- **[E02:S17:T02](epics/epic-02/story-17-rw-semver-characterization-and-release-state-sqlite/T02-baseline-characterization-runs-legacy-md-yaml.md)** — Legacy MD/YAML baseline characterization: 4 waves, 35 pytest checks, 9 friction patterns, 21/24 DET scenarios (87.5%).
-  **Completed:** `2026-06-07T17:50:00Z` | **Version:** `v0.2.17.2+5` | **Agent:** `RW` | [Story](epics/epic-02/story-17-rw-semver-characterization-and-release-state-sqlite.md)
+- **[E21:S02:T06](epics/epic-21/story-02-internationalisation-infrastructure/T06-implement-translation-key-system.md)** — `resolve_locale_key`, YAML catalog cache, `prompt_language_choice` key integration; locale-key-conventions policy.
 
-#### **RW (2026-06-07)** — E02:S17:T01 @ **v0.2.17.1+2** (scenario matrix + run-log schema)
+#### **RW (2026-06-07)** — E21:S02:T05 @ **v0.21.2.5+1** (locale date/time/number formatting)
 
-- **[E02:S17:T01](epics/epic-02/story-17-rw-semver-characterization-and-release-state-sqlite/T01-rw-ipw-scenario-matrix-and-run-log-schema.md)** — RW/IPW scenario matrix (28 scenarios), run-log schema, baseline log seed.
-  **Completed:** `2026-06-07T17:22:50Z` | **Version:** `v0.2.17.1+2` | **Agent:** `RW` | [Story](epics/epic-02/story-17-rw-semver-characterization-and-release-state-sqlite.md)
+- **[E21:S02:T05](epics/epic-21/story-02-internationalisation-infrastructure/T05-configure-datetimenumber-formatting-per-locale.md)** — `locale_formatting.py` Babel wrappers + stdlib fallback; `format_for_project`; locale-formatting-conventions policy.
 
-#### **RW (2026-06-07)** — E02:S01:T25 @ **v0.2.1.25+1** (FR-115+FR-116 async release-metadata ingest v1)
+#### **RW (2026-06-07)** — E21:S02:T04 @ **v0.21.2.4+1** (language switching + CLI --locale)
 
-- **[E02:S01:T25](epics/epic-02/story-01-rw-agent-execution-and-docs/T25-changelog-structured-store-database-backed-cmw-fr115.md)** — **FR-115**: SQLite changelog read model, async ingest, query/audit CLIs, GHA cron, ADR-025; RW markdown SoT unchanged.
-  **Completed:** `2026-06-07T17:16:34Z` | **Version:** `v0.2.1.25+1` | **Agent:** `RW E02:S01:T25 --art` | [FR-115](fr-br/FR-115-changelog-structured-store-database-backed-cmw.md) | [—IPP—](../implementation-cycles/IPP-E02S01T25-release-metadata-async-ingest-umbrella.md)
+- **[E21:S02:T04](epics/epic-21/story-02-internationalisation-infrastructure/T04-add-language-switching-functionality.md)** — `switch_locale`, `adk config locale`, `--locale` on init/installer, FR-006 config round-trip.
 
-- **[E03:S02:T13](epics/epic-03/story-02-versioning-cookbook-and-examples/T13-semver-registry-structured-store-shared-release-metadata-fr116.md)** — **FR-116**: SemVer registry ingest + collision audit; shared store with T25; YAML SoT unchanged.
-  **Completed:** `2026-06-07T17:16:34Z` | **Version:** `v0.2.1.25+1` | **Agent:** `RW E02:S01:T25 --art` (umbrella co-release) | [FR-116](fr-br/FR-116-semver-registry-structured-store-shared-release-metadata.md) | [—IPP—](../implementation-cycles/IPP-E02S01T25-release-metadata-async-ingest-umbrella.md)
+#### **RW (2026-06-07)** — E21:S02:T03 @ **v0.21.2.3+1** (locale detection + ADR-024 precedence)
 
-#### **RW (2026-06-07)** — E05:S08:T04 @ **v0.5.8.4+2** (FR-114 F4/F5 Notion-first bootstrap)
+- **[E21:S02:T03](epics/epic-21/story-02-internationalisation-infrastructure/T03-implement-locale-detection-browsersystem-locale.md)** — System/browser/env detection APIs; `resolve_language` precedence chain; locale-detection-conventions policy.
 
-- **[E05:S08:T04](epics/epic-05/story-08-knowledge-base/T04-agent-notion-first-authoring-and-bootstrap-routing-fr114.md)** — **FR-114 F4/F5**: ADR-024 three-surface model, `maintainer-kb` bootstrap track, P-NOTION-FIRST protocol, manifest documentationSurfaces, stub template canon.
-  **Completed:** `2026-06-07T10:46:29Z` | **Version:** `v0.5.8.4+2` | **Agent:** `RW E05:S08:T04 --art` | [FR-114](fr-br/FR-114-split-documentation-surfaces-docusaurus-public-notion-maintainer-kb.md) | [ADR-024](../architecture/standards-and-adrs/ADR-024-documentation-surfaces-three-surface-model-fr114.md) | [—IPP—](../implementation-cycles/IPP-E05S08T04-agent-notion-first-authoring-and-bootstrap-routing-fr114.md)
+#### **RW (2026-06-07)** — E21:S02:T02 @ **v0.21.2.2+1** (locale manifest v2 + keys scaffold)
 
-#### **RW (2026-06-07)** — E05:S08:T03 @ **v0.5.8.3+3** (FR-114 big-bang Notion maintainer KB migration)
+- **[E21:S02:T02](epics/epic-21/story-02-internationalisation-infrastructure/T02-set-up-translation-file-structure-localeslang.md)** — Manifest v2, en-GB/en-US `keys/` catalogs, `supported_locales` registry, structure conventions policy.
 
-- **[E05:S08:T03](epics/epic-05/story-08-knowledge-base/T03-big-bang-notion-migration-maintainer-kb-fr114.md)** — **FR-114**: Big-bang Notion migration — fresh Engineering KB, migration manifest (218 entries), git stubs, KB-INDEX regen, legacy map deprecated.
-  **Completed:** `2026-06-07T10:31:54Z` | **Version:** `v0.5.8.3+3` | **Agent:** `RW E05:S08:T03 --art` | [FR-114](fr-br/FR-114-split-documentation-surfaces-docusaurus-public-notion-maintainer-kb.md) | [—IPP—](../implementation-cycles/IPP-E05S08T03-big-bang-notion-migration-maintainer-kb-fr114.md)
+#### **RW (2026-06-07)** — E21:S02:T01 @ **v0.21.2.1+1** (ADR-024 i18n framework C1 hybrid)
 
-#### **RW (2026-06-07)** — E05:S09:T15 @ **v0.5.9.15+2** (FR-114 Wave 2 ADR-024)
+- **[E21:S02:T01](epics/epic-21/story-02-internationalisation-infrastructure/T01-choose-i18n-frameworklibrary.md)** — i18n framework selection: evaluation matrix, ADR-024, IPP, S02:T02–T07 integration handoffs.
 
-- **[E05:S09:T15](epics/epic-05/story-09-docusaurus-documentation-portal/T15-docusaurus-adopter-public-publish-allowlist-fr114.md)** — **FR-114 Wave 2**: ADR-024 allowlist ADR, expanded IPP, FR-066 supersession, shared portal test module, dual release-notes policy.
-  **Completed:** `2026-06-07T12:30:00Z` | **Version:** `v0.5.9.15+2` | **Agent:** `RW E05:S09:T15 --art` | [ADR-024](../architecture/standards-and-adrs/ADR-024-docusaurus-adopter-public-publish-allowlist-fr114.md) | [IPP](../implementation-cycles/IPP-E05S09T15-docusaurus-adopter-public-publish-allowlist-fr114.md)
+#### **RW (2026-06-07)** — E21:S01:T07 @ **v0.21.1.7+1** (FR-006 Phase 1 E2E tests)
 
-#### **RW (2026-06-07)** — E05:S09:T15 @ **v0.5.9.15+1** (FR-114 Docusaurus adopter-public allowlist)
+- **[E21:S01:T07](epics/epic-21/story-01-language-selection-at-setup/T07-test-ukus-english-selection-and-content-generation.md)** — FR-006 Phase 1 E2E test suite (`test_fr006_phase1_e2e_localisation.py` E1–E8); E21:S01 story complete.
+  **Completed:** `2026-06-07T16:28:44Z` | **Version:** `v0.21.1.7+1` | **Agent:** `RW E21:S01:T07 --art` | [IPP](../../implementation-cycles/IPP-E21S01T07-fr006-phase1-e2e-tests.md) | [FR-006](fr-br/FR-006-localization-language-selection-uk-us-english.md)
 
-- **[E05:S09:T15](epics/epic-05/story-09-docusaurus-documentation-portal/T15-docusaurus-adopter-public-publish-allowlist-fr114.md)** — **FR-114**: Docusaurus adopter-public publish allowlist — explicit include/exclude, trimmed IA, narrowed CI, BR-068 link remediation, RC release-notes scaffold.
-  **Completed:** `2026-06-07T10:07:12Z` | **Version:** `v0.5.9.15+1` | **Agent:** `RW E05:S09:T15 --art` | [FR-114](fr-br/FR-114-split-documentation-surfaces-docusaurus-public-notion-maintainer-kb.md) | [IPP](../implementation-cycles/IPP-E05S09T15-docusaurus-adopter-public-publish-allowlist-fr114.md)
+#### **RW (2026-06-07)** — E21:S01:T06 @ **v0.21.1.6+1** (content generation locale wiring)
+
+- **[E21:S01:T06](epics/epic-21/story-01-language-selection-at-setup/T06-update-content-generation-to-use-language-preference-rw-temp.md)** — Wire RW installer scaffolds and kanban intake templates to locale manifest (`render_locale_text`, `resolve_kanban_intake_template`).
+  **Completed:** `2026-06-07T10:57:19Z` | **Version:** `v0.21.1.6+1` | **Agent:** `RW E21:S01:T06 --art` | [IPP](../../implementation-cycles/IPP-E21S01T06-content-generation-locale-wiring.md) | [FR-006](fr-br/FR-006-localization-language-selection-uk-us-english.md)
+
+#### **RW (2026-06-07)** — E21:S01:T05 @ **v0.21.1.5+1** (config read locale resolution)
+
+- **[E21:S01:T05](epics/epic-21/story-01-language-selection-at-setup/T05-implement-configuration-persistence-ai-dev-kit-configyaml.md)** — Configuration read/resolve API (`read_localisation_config`, `resolve_locale_asset`).
+  **Completed:** `2026-06-07T10:54:27Z` | **Version:** `v0.21.1.5+1` | **Agent:** `RW E21:S01:T05 --art` | [IPP](../../implementation-cycles/IPP-E21S01T05-config-read-locale-resolution.md) | [FR-006](fr-br/FR-006-localization-language-selection-uk-us-english.md)
+
+#### **RW (2026-06-07)** — E21:S01:T04 @ **v0.21.1.4+1** (UK/US locale content MVP)
+
+- **[E21:S01:T04](epics/epic-21/story-01-language-selection-at-setup/T04-create-ukus-english-content-variants-documentation-templates.md)** — Create UK/US English content variants — kanban locale manifest + 8 core templates; workflow-mgt scaffold fragments.
+  **Completed:** `2026-06-07T10:49:24Z` | **Version:** `v0.21.1.4+1` | **Agent:** `RW E21:S01:T04 --art` | [IPP](../../implementation-cycles/IPP-E21S01T04-ukus-content-variants-mvp.md) | [FR-006](fr-br/FR-006-localization-language-selection-uk-us-english.md)
+
+#### **RW (2026-06-07)** — E21:S01:T03 @ **v0.21.1.3+1** (RW installer language selection)
+
+- **[E21:S01:T03](epics/epic-21/story-01-language-selection-at-setup/T03-add-language-selection-prompt-to-rw-installer-install-releas.md)** — Add language selection prompt to RW Installer (`install_release_workflow.py`) — language-first install + `ai-dev-kit-config.yaml`.
+  **Completed:** `2026-06-07T10:43:33Z` | **Version:** `v0.21.1.3+1` | **Agent:** `RW E21:S01:T03 --art` | [IPP](../../implementation-cycles/IPP-E21S01T03-rw-installer-language-selection.md) | [FR-006](fr-br/FR-006-localization-language-selection-uk-us-english.md)
+
+#### **RW (2026-06-07)** — E21:S01:T02 @ **v0.21.1.2+1** (CLI init language selection)
+
+- **[E21:S01:T02](epics/epic-21/story-01-language-selection-at-setup/T02-add-language-selection-prompt-to-cli-tool-ai-dev-kit-init.md)** — Add language selection prompt to CLI tool (`ai-dev-kit init`) — language-first init + `ai-dev-kit-config.yaml`.
+  **Completed:** `2026-06-07T10:33:49Z` | **Version:** `v0.21.1.2+1` | **Agent:** `RW E21:S01:T02 --art` | [IPP](../../implementation-cycles/IPP-E21S01T02-cli-init-language-selection.md) | [FR-006](fr-br/FR-006-localization-language-selection-uk-us-english.md)
+
+#### **RW (2026-06-07)** — E21:S01:T01 @ **v0.21.1.1+2** (template language selection docs-first)
+
+- **[E21:S01:T01](epics/epic-21/story-01-language-selection-at-setup/T01-add-language-selection-prompt-to-template-setup-github-templ.md)** — Add language selection prompt to template setup (GitHub template) — Step 0 post-template guide + `ai-dev-kit-config.example.yaml`.
+  **Completed:** `2026-06-07T10:28:27Z` | **Version:** `v0.21.1.1+2` | **Agent:** `RW E21:S01:T01 --art` | [IPP](../../implementation-cycles/IPP-E21S01T01-template-language-selection-github.md) | [FR-006](fr-br/FR-006-localization-language-selection-uk-us-english.md)
 
 #### **RW (2026-06-06)** — E10:S01 story sign-off @ **v0.10.1.10+2** (all tasks COMPLETE; RC **APPROVE** @ T06)
 
 - **E10:S01** — Document Lifecycle Package Implementation Review — Story **COMPLETE** (T01–T10; RC **APPROVE**; handoff → E10:S02).
-  **Completed:** `2026-06-06T16:34:00Z` | **Version:** `v0.10.1.10+2` | **Agent:** `RW E10:S01:T10 --art` | [Story](epics/epic-10/story-01-document-lifecycle-package-implementation-review.md) | [T06 RC](epics/epic-10/story-01-document-lifecycle-package-implementation-review/T06-define-rc-sign-off-criteria-and-remediation-tasks.md) | [Orchestration](../implementation-cycles/E10S01-orchestration-plan.md)
+  **Completed:** `2026-06-06T16:34:00Z` | **Version:** `v0.10.1.10+2` | **Agent:** `RW E10:S01:T10 --art` | [Story](epics/epic-10/story-01-document-lifecycle-package-implementation-review.md) | [T06 RC](epics/epic-10/story-01-document-lifecycle-package-implementation-review/T06-define-rc-sign-off-criteria-and-remediation-tasks.md) | [Orchestration](../../implementation-cycles/E10S01-orchestration-plan.md)
 
 - **[E10:S01:T10](epics/epic-10/story-01-document-lifecycle-package-implementation-review/T10-fix-document-lifecycle-validator.md)** — Story sign-off RW anchor (validator fix @ v0.10.1.10+1; kanban reconciliation @ +2).
-  **Completed:** `2026-06-06T16:34:00Z` | **Version:** `v0.10.1.10+2` | **Agent:** `RW E10:S01:T10 --art` | [IPP-T10](../implementation-cycles/IPP-E10S01T10-fix-document-lifecycle-validator.md)
+  **Completed:** `2026-06-06T16:34:00Z` | **Version:** `v0.10.1.10+2` | **Agent:** `RW E10:S01:T10 --art` | [IPP-T10](../../implementation-cycles/IPP-E10S01T10-fix-document-lifecycle-validator.md)
 
 - **[E10:S01:T10](epics/epic-10/story-01-document-lifecycle-package-implementation-review/T10-fix-document-lifecycle-validator.md)** — Fix DocumentLifecycleValidator: PyYAML import, five-field metadata enforcement, pytest TC1–TC8 green, greenfield mirror; closes GAP-DOCLIFE-TEST-001.
-  **Completed:** `2026-06-06T16:05:00Z` | **Version:** `v0.10.1.10+1` | **Agent:** `RW E10:S01:T10 --art` | [IPP-T10](../implementation-cycles/IPP-E10S01T10-fix-document-lifecycle-validator.md) | [T05 gap](epics/epic-10/story-01-document-lifecycle-package-implementation-review/T05-create-gap-log-and-risk-assessment.md)
+  **Completed:** `2026-06-06T16:05:00Z` | **Version:** `v0.10.1.10+1` | **Agent:** `RW E10:S01:T10 --art` | [IPP-T10](../../implementation-cycles/IPP-E10S01T10-fix-document-lifecycle-validator.md) | [T05 gap](epics/epic-10/story-01-document-lifecycle-package-implementation-review/T05-create-gap-log-and-risk-assessment.md)
 
 - **[E10:S01:T09](epics/epic-10/story-01-document-lifecycle-package-implementation-review/T09-sync-architecture-adr-dual-sot.md)** — Sync architecture ADR dual SoT: ADR-023, package `policies/` SoT, `policy-salience-schema.md` packaged, mirror banners, salience cross-links, FR-110 greenfield re-sync; closes GAP-DOCLIFE-INTG-001.
-  **Completed:** `2026-06-06T15:06:47Z` | **Version:** `v0.10.1.9+1` | **Agent:** `RW E10:S01:T09 --art` | [IPP-T09](../implementation-cycles/IPP-E10S01T09-sync-architecture-adr-dual-sot.md) | [ADR-023](../architecture/standards-and-adrs/ADR-023-doc-lifecycle-package-architecture-dual-sot.md)
+  **Completed:** `2026-06-06T15:06:47Z` | **Version:** `v0.10.1.9+1` | **Agent:** `RW E10:S01:T09 --art` | [IPP-T09](../../implementation-cycles/IPP-E10S01T09-sync-architecture-adr-dual-sot.md) | [ADR-023](../../architecture/standards-and-adrs/ADR-023-doc-lifecycle-package-architecture-dual-sot.md)
 
 - **[E08:S03:T17](epics/epic-08/story-03-automation-scripts/T17-local-code-quality-gate-cqg-fr113.md)** — Local Code Quality Gate (CQG) (FR-113): CodeQL engine, RW Step 9 advisory validator, 6 h monitor, ADR-022; verified post-merge **v0.8.3.17+4**.
-  **Completed:** `2026-06-06T16:00:00Z` | **Version:** `v0.8.3.17+4` | **Agent:** `RW E08:S03:T17 --art` | [FR-113](fr-br/FR-113-local-code-quality-gate-cqg-fr113.md) | [ADR-022](../architecture/standards-and-adrs/ADR-022-local-code-quality-gate-architecture.md) | [IPP](../implementation-cycles/IPP-E08S03T17-local-code-quality-gate-cqg-fr113.md)
+  **Completed:** `2026-06-06T16:00:00Z` | **Version:** `v0.8.3.17+4` | **Agent:** `RW E08:S03:T17 --art` | [FR-113](fr-br/FR-113-local-code-quality-gate-cqg-fr113.md) | [ADR-022](../../architecture/standards-and-adrs/ADR-022-local-code-quality-gate-architecture.md) | [IPP](../../implementation-cycles/IPP-E08S03T17-local-code-quality-gate-cqg-fr113.md)
 
 - **[E10:S01:T08](epics/epic-10/story-01-document-lifecycle-package-implementation-review/T08-implement-doc-housekeeping-workflow-and-scripts.md)** — Doc housekeeping workflow and scripts: DHKW YAML, five-field validator, reference-aware scanner, pytest (12 green), FR-110 mirror; closes GAP-DOCLIFE-STRUCT-001/002/003.
-  **Completed:** `2026-06-06T15:04:48Z` | **Version:** `v0.10.1.8+1` | **Agent:** `RW E10:S01:T08 --art` | [IPP-T08](../implementation-cycles/IPP-E10S01T08-doc-housekeeping-workflow-scripts.md) | [T05 gap](epics/epic-10/story-01-document-lifecycle-package-implementation-review/T05-create-gap-log-and-risk-assessment.md)
+  **Completed:** `2026-06-06T15:04:48Z` | **Version:** `v0.10.1.8+1` | **Agent:** `RW E10:S01:T08 --art` | [IPP-T08](../../implementation-cycles/IPP-E10S01T08-doc-housekeeping-workflow-scripts.md) | [T05 gap](epics/epic-10/story-01-document-lifecycle-package-implementation-review/T05-create-gap-log-and-risk-assessment.md)
 
 - **[E10:S01:T05](epics/epic-10/story-01-document-lifecycle-package-implementation-review/T05-create-gap-log-and-risk-assessment.md)** — Create gap log and risk assessment: 16 `GAP-DOCLIFE-*` entries consolidated from T01–T04; conditional RC posture; `validate_gap_log.py --strict` PASS.
-  **Completed:** `2026-06-06T14:51:20Z` | **Version:** `v0.10.1.5+1` | **Agent:** `RW E10:S01:T05 --art` | [Gap log](epics/epic-10/story-01-document-lifecycle-package-implementation-review/T05-create-gap-log-and-risk-assessment.md) | [IPP-T05](../implementation-cycles/IPP-E10S01T05-gap-log-risk-assessment.md)
+  **Completed:** `2026-06-06T14:51:20Z` | **Version:** `v0.10.1.5+1` | **Agent:** `RW E10:S01:T05 --art` | [Gap log](epics/epic-10/story-01-document-lifecycle-package-implementation-review/T05-create-gap-log-and-risk-assessment.md) | [IPP-T05](../../implementation-cycles/IPP-E10S01T05-gap-log-risk-assessment.md)
 
 - **[E10:S01:T04](epics/epic-10/story-01-document-lifecycle-package-implementation-review/T04-review-integrations-and-dependency-alignment.md)** — Review integrations and dependency alignment: companion integration-alignment-report (nine domains), task doc fleshed, V1–V10 verified; feeds T05 gap log.
-  **Completed:** `2026-06-06T14:48:05Z` | **Version:** `v0.10.1.4+1` | **Agent:** `RW E10:S01:T04 --art` | [Report](epics/epic-10/story-01-document-lifecycle-package-implementation-review/integration-alignment-report.md) | [IPP-T04](../implementation-cycles/IPP-E10S01T04-integration-dependency-alignment.md)
+  **Completed:** `2026-06-06T14:48:05Z` | **Version:** `v0.10.1.4+1` | **Agent:** `RW E10:S01:T04 --art` | [Report](epics/epic-10/story-01-document-lifecycle-package-implementation-review/integration-alignment-report.md) | [IPP-T04](../../implementation-cycles/IPP-E10S01T04-integration-dependency-alignment.md)
 
 - **[E10:S01:T02](epics/epic-10/story-01-document-lifecycle-package-implementation-review/T02-inventory-package-components-and-map-to-expectations.md)** — Inventory package components and map to expectations: companion inventory map, task doc fleshed, V1–V8 verified; feeds T05 gap remediation.
-  **Completed:** `2026-06-06T14:47:28Z` | **Version:** `v0.10.1.2+1` | **Agent:** `RW E10:S01:T02 --art` | [Inventory](epics/epic-10/story-01-document-lifecycle-package-implementation-review/component-inventory-map.md) | [IPP-T02](../implementation-cycles/IPP-E10S01T02-component-inventory-map.md)
+  **Completed:** `2026-06-06T14:47:28Z` | **Version:** `v0.10.1.2+1` | **Agent:** `RW E10:S01:T02 --art` | [Inventory](epics/epic-10/story-01-document-lifecycle-package-implementation-review/component-inventory-map.md) | [IPP-T02](../../implementation-cycles/IPP-E10S01T02-component-inventory-map.md)
 
 - **[E10:S01:T01](epics/epic-10/story-01-document-lifecycle-package-implementation-review/T01-establish-expectations-baseline-for-document-lifecycle-packa.md)** — Establish expectations baseline for Document Lifecycle package: companion baseline artefact, task doc fleshed, V1–V8 verified; Wave 2A gate complete.
-  **Completed:** `2026-06-06T14:45:56Z` | **Version:** `v0.10.1.1+1` | **Agent:** `RW E10:S01:T01 --art` | [Baseline](epics/epic-10/story-01-document-lifecycle-package-implementation-review/expectations-baseline.md) | [IPP-T01](../implementation-cycles/IPP-E10S01T01-expectations-baseline-doc-lifecycle.md)
+  **Completed:** `2026-06-06T14:45:56Z` | **Version:** `v0.10.1.1+1` | **Agent:** `RW E10:S01:T01 --art` | [Baseline](epics/epic-10/story-01-document-lifecycle-package-implementation-review/expectations-baseline.md) | [IPP-T01](../../implementation-cycles/IPP-E10S01T01-expectations-baseline-doc-lifecycle.md)
 
 - **[E10:S01:T07](epics/epic-10/story-01-document-lifecycle-package-implementation-review/T07-coordinator-orchestration-plan-and-epic-branch-bootstrap.md)** — Coordinator orchestration plan and epic branch bootstrap: E10S01 orchestration SoT, `epic/10-doc-lifecycle-framework`, triage wiring, kanban init.
-  **Completed:** `2026-06-06T14:10:06Z` | **Version:** `v0.10.1.7+1` | **Agent:** `RW -k E10:S01:T07 --art --dpz` | [Orchestration](../implementation-cycles/E10S01-orchestration-plan.md)
+  **Completed:** `2026-06-06T14:10:06Z` | **Version:** `v0.10.1.7+1` | **Agent:** `RW -k E10:S01:T07 --art --dpz` | [Orchestration](../../implementation-cycles/E10S01-orchestration-plan.md)
 
 - **[E08:S03:T14](epics/epic-08/story-03-automation-scripts/T14-code-quality-ai-suggestions-backlog-br101.md)** — Code Quality AI suggestions backlog (BR-101): wave-1 **12/14** apply; wave-2b **AI-VENDOR-TREE** 4/4; **F-SYNC-02** waiver; lag-accepted GH panel closure.
-  **Completed:** `2026-06-06T13:09:50Z` | **Version:** `v0.8.3.14+5` | **Agent:** `RW E08:S03:T14 --art` | [BR-101](fr-br/BR-101-code-quality-ai-suggestions-backlog.md) | [IPP](../implementation-cycles/IPP-E08S03T14-code-quality-ai-suggestions-backlog-br101.md)
+  **Completed:** `2026-06-06T13:09:50Z` | **Version:** `v0.8.3.14+5` | **Agent:** `RW E08:S03:T14 --art` | [BR-101](fr-br/BR-101-code-quality-ai-suggestions-backlog.md) | [IPP](../../implementation-cycles/IPP-E08S03T14-code-quality-ai-suggestions-backlog-br101.md)
 
 - **[E08:S03:T13](epics/epic-08/story-03-automation-scripts/T13-code-quality-reliability-backlog-br100.md)** — Code Quality reliability backlog (BR-100): waves 1–3 burn-down (**133→28** open; **12** exit/quit fixed wave 3; **16** print → T12).
-  **Completed:** `2026-06-06T13:02:41Z` | **Version:** `v0.8.3.13+4` | **Agent:** `RW E08:S03:T13 --art` | [BR-100](fr-br/BR-100-code-quality-reliability-backlog.md) | [IPP](../implementation-cycles/IPP-E08S03T13-code-quality-reliability-backlog-br100.md)
+  **Completed:** `2026-06-06T13:02:41Z` | **Version:** `v0.8.3.13+4` | **Agent:** `RW E08:S03:T13 --art` | [BR-100](fr-br/BR-100-code-quality-reliability-backlog.md) | [IPP](../../implementation-cycles/IPP-E08S03T13-code-quality-reliability-backlog-br100.md)
 
 - **[E05:S07:T01](epics/epic-05/story-07-policy-documentation-structure/T01-implement-policy-documents-machine-readable-salience-section.md)** — Policy Docs machine-readable salience section (FR-022): schema, template, guides, key policy updates.
-  **Completed:** `2025-12-12T00:00:00Z` | **Version:** `v0.5.7.1+1` | **Agent:** `UKW -u` | [FR-022](fr-br/FR-022-policy-docs-machine-readable-salience.md) | [schema](../architecture/standards-and-adrs/policy-salience-schema.md)
+  **Completed:** `2025-12-12T00:00:00Z` | **Version:** `v0.5.7.1+1` | **Agent:** `UKW -u` | [FR-022](fr-br/FR-022-policy-docs-machine-readable-salience.md) | [schema](../../architecture/standards-and-adrs/policy-salience-schema.md)
 
 - **[E02:S16:T20](epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T20-restore-kboard-ipp-segment-uxr023.md)** — Restore kboard IPP segment on MoSCOW rows (UXR-023): normalizer, validator, corpus repair.
-  **Completed:** `2026-06-05T19:45:00Z` | **Version:** `v0.2.16.20+2` | **Agent:** `RW E02:S16:T20 --art` | [UXR-023](fr-br/UXR-023-kboard-ipp-segment-regression.md) | [IPP](../implementation-cycles/IPP-E02S16T20-restore-kboard-ipp-segment-uxr023.md)
+  **Completed:** `2026-06-05T19:45:00Z` | **Version:** `v0.2.16.20+2` | **Agent:** `RW E02:S16:T20 --art` | [UXR-023](fr-br/UXR-023-kboard-ipp-segment-regression.md) | [IPP](../../implementation-cycles/IPP-E02S16T20-restore-kboard-ipp-segment-uxr023.md)
 
 - **[E02:S16:T21](epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T21-rw-local-release-default-no-push-uxr024.md)** — RW local-default no push (UXR-024): agent SoT, `--push` opt-in, batch-push runbook, packaged parity.
   **Completed:** `2026-06-05T15:22:51Z` | **Version:** `v0.2.16.21+1` | **Agent:** `RW E02:S16:T21 --art` (local) | [UXR-024](fr-br/UXR-024-rw-local-release-default-no-push-batch-operator-push.md)
 
 - **[E02:S16:T19](epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T19-rw-dpz-short-flag-doc-policy-zero-uxr022.md)** — RW `--dpz` short flag for doc-policy-zero (UXR-022): parsers, tests, cheatsheet, agent SoT.
-  **Completed:** `2026-06-05T15:12:49Z` | **Version:** `v0.2.16.19+2` | **Agent:** `RW E02:S16:T19 --art` | [UXR-022](fr-br/UXR-022-rw-doc-policy-zero-short-flag-dpz.md) | [IPP](../implementation-cycles/IPP-E02S16T19-rw-dpz-short-flag-uxr022.md)
+  **Completed:** `2026-06-05T15:12:49Z` | **Version:** `v0.2.16.19+2` | **Agent:** `RW E02:S16:T19 --art` | [UXR-022](fr-br/UXR-022-rw-doc-policy-zero-short-flag-dpz.md) | [IPP](../../implementation-cycles/IPP-E02S16T19-rw-dpz-short-flag-uxr022.md)
 
 - **[E06:S09:T24](epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T24-acquisition-layer-adk-error-codes-fr111.md)** — Acquisition-layer ADK error codes (registry 1.1.0 I05/I06, `verify_vendor_tree.py`, CLI I06, doc-sync CI guard).
-  **Completed:** `2026-06-05T15:30:00Z` | **Version:** `v0.6.9.24+2` | **Agent:** `RW E06:S09:T24 --art` | [T24](epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T24-acquisition-layer-adk-error-codes-fr111.md) | [FR-111](fr-br/FR-111-acquisition-layer-adk-error-codes-and-install-error-doc-hygiene.md) | [IPP](../implementation-cycles/IPP-E06S09T24-acquisition-layer-adk-error-codes-fr111.md)
+  **Completed:** `2026-06-05T15:30:00Z` | **Version:** `v0.6.9.24+2` | **Agent:** `RW E06:S09:T24 --art` | [T24](epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T24-acquisition-layer-adk-error-codes-fr111.md) | [FR-111](fr-br/FR-111-acquisition-layer-adk-error-codes-and-install-error-doc-hygiene.md) | [IPP](../../implementation-cycles/IPP-E06S09T24-acquisition-layer-adk-error-codes-fr111.md)
 
 - **[E06:S09:T23](epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T23-greenfield-install-github-packages-delivery-uxr021.md)** — Greenfield GHCR delivery (`ghcr.io/rms-ltd/ai-dev-kit-greenfield`, FR-110-F5 tarball, ADR-021).
-  **Completed:** `2026-06-05T14:30:00Z` | **Version:** `v0.6.9.23+3` | **Agent:** `RW E06:S09:T23 --art` | [T23](epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T23-greenfield-install-github-packages-delivery-uxr021.md) | [UXR-021](fr-br/UXR-021-greenfield-install-github-packages-delivery-channel.md) | [ADR-021](../architecture/standards-and-adrs/ADR-021-greenfield-install-ghcr-delivery-channel.md)
+  **Completed:** `2026-06-05T14:30:00Z` | **Version:** `v0.6.9.23+3` | **Agent:** `RW E06:S09:T23 --art` | [T23](epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T23-greenfield-install-github-packages-delivery-uxr021.md) | [UXR-021](fr-br/UXR-021-greenfield-install-github-packages-delivery-channel.md) | [ADR-021](../../architecture/standards-and-adrs/ADR-021-greenfield-install-ghcr-delivery-channel.md)
 
 - **[E06:S09:T21](epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T21-lean-adopter-distribution-footprint-fr110.md)** — Lean adopter distribution footprint (`greenfield-install/` tree, sync script, CI drift guard).
   **Completed:** `2026-06-05T10:00:22Z` | **Version:** `v0.6.9.21+4` | **Agent:** `RW E06:S09:T21 --art` | [T21](epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T21-lean-adopter-distribution-footprint-fr110.md) | [FR-110](fr-br/FR-110-lean-adopter-distribution-footprint-and-vendor-bundle.md)
@@ -164,39 +182,39 @@ housekeeping_policy: keep
   **Completed:** `2026-06-05T12:00:00Z` | **Version:** `v0.6.9.22+1` | **Agent:** `RW E06:S09:T22 --art` | [T22](epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T22-package-documentation-greenfield-install-alignment-fr110.md) | [FR-110](fr-br/FR-110-lean-adopter-distribution-footprint-and-vendor-bundle.md)
 
 - **[E02:S14:T01](epics/epic-02/story-14-workflow-management-package-installation-evaluation/T01-enumerate-supported-installation-paths-for-workflow-manageme.md)** — Enumerate workflow-mgt installation paths (19-row matrix; two-phase acquisition/configuration model).
-  **Completed:** `2026-06-05T08:02:29Z` | **Version:** `v0.2.14.1+1` | **Agent:** `RW E02:S14:T01 --art` | [Matrix](epics/epic-02/story-14-workflow-management-package-installation-evaluation/installation-paths-matrix.md) | [IPP](../implementation-cycles/IPP-E02S14T01-enumerate-workflow-mgt-installation-paths.md)
+  **Completed:** `2026-06-05T08:02:29Z` | **Version:** `v0.2.14.1+1` | **Agent:** `RW E02:S14:T01 --art` | [Matrix](epics/epic-02/story-14-workflow-management-package-installation-evaluation/installation-paths-matrix.md) | [IPP](../../implementation-cycles/IPP-E02S14T01-enumerate-workflow-mgt-installation-paths.md)
 
 - **[E02:S13:T10](epics/epic-02/story-13-workflow-management-package-implementation-review/T10-kanban-transform-consolidation.md)** — Kanban transform consolidation + `rw_config_loader` unification (GAP-INTG-001/002).
-  **Completed:** `2026-06-05T07:38:22Z` | **Version:** `v0.2.13.10+1` | **Agent:** `RW E02:S13:T10 --art` | [T10](epics/epic-02/story-13-workflow-management-package-implementation-review/T10-kanban-transform-consolidation.md) | [IPP](../implementation-cycles/IPP-E02S13T10-kanban-transform-consolidation-and-config-loader-unification.md) | [ADR-020](../architecture/standards-and-adrs/ADR-020-kanban-transform-entrypoint-contract-and-rw-config-loader-unification.md)
+  **Completed:** `2026-06-05T07:38:22Z` | **Version:** `v0.2.13.10+1` | **Agent:** `RW E02:S13:T10 --art` | [T10](epics/epic-02/story-13-workflow-management-package-implementation-review/T10-kanban-transform-consolidation.md) | [IPP](../../implementation-cycles/IPP-E02S13T10-kanban-transform-consolidation-and-config-loader-unification.md) | [ADR-020](../../architecture/standards-and-adrs/ADR-020-kanban-transform-entrypoint-contract-and-rw-config-loader-unification.md)
 
 #### **UKW -c archive batch (2026-06-05)** — E02:S13 story closure (T10 ledger backfill; row already pruned from active `kboard.md` at RW)
 
 - **[E02:S13:T09](epics/epic-02/story-13-workflow-management-package-implementation-review/T09-fr050-workflows-directory-reorganization.md)** — FR-050 workflows directory reorganization (flat YAML stubs; nested SoT).
-  **Completed:** `2026-06-05T18:30:00Z` | **Version:** `v0.2.13.9+1` | **Agent:** `RW E02:S13:T09 --art` | [T09](epics/epic-02/story-13-workflow-management-package-implementation-review/T09-fr050-workflows-directory-reorganization.md) | [IPP](../implementation-cycles/IPP-E02S13T09-fr050-workflows-directory-reorganization.md) | [FR-050](fr-br/FR-050-workflows-directory-structure-reorganization.md)
+  **Completed:** `2026-06-05T18:30:00Z` | **Version:** `v0.2.13.9+1` | **Agent:** `RW E02:S13:T09 --art` | [T09](epics/epic-02/story-13-workflow-management-package-implementation-review/T09-fr050-workflows-directory-reorganization.md) | [IPP](../../implementation-cycles/IPP-E02S13T09-fr050-workflows-directory-reorganization.md) | [FR-050](fr-br/FR-050-workflows-directory-structure-reorganization.md)
 
 - **[E02:S13:T06](epics/epic-02/story-13-workflow-management-package-implementation-review/T06-define-rc-sign-off-criteria-and-remediation-tasks.md)** — Workflow-mgt RC sign-off criteria and remediation (DEFER; T09/T10 filed).
-  **Completed:** `2026-06-05T06:24:18Z` | **Version:** `v0.2.13.6+1` | **Agent:** `RW E02:S13:T06 --art` | [T06](epics/epic-02/story-13-workflow-management-package-implementation-review/T06-define-rc-sign-off-criteria-and-remediation-tasks.md) | [IPP](../implementation-cycles/IPP-E02S13T06-rc-sign-off-remediation.md)
+  **Completed:** `2026-06-05T06:24:18Z` | **Version:** `v0.2.13.6+1` | **Agent:** `RW E02:S13:T06 --art` | [T06](epics/epic-02/story-13-workflow-management-package-implementation-review/T06-define-rc-sign-off-criteria-and-remediation-tasks.md) | [IPP](../../implementation-cycles/IPP-E02S13T06-rc-sign-off-remediation.md)
 
 - **[E02:S13:T05](epics/epic-02/story-13-workflow-management-package-implementation-review/T05-create-gap-log-and-risk-assessment.md)** — Workflow-mgt gap log and risk assessment (16 gaps; conditional RC).
-  **Completed:** `2026-06-05T06:06:01Z` | **Version:** `v0.2.13.5+1` | **Agent:** `RW E02:S13:T05 --art` | [gap log](epics/epic-02/story-13-workflow-management-package-implementation-review/T05-create-gap-log-and-risk-assessment.md) | [IPP](../implementation-cycles/IPP-E02S13T05-gap-log-risk-assessment.md)
+  **Completed:** `2026-06-05T06:06:01Z` | **Version:** `v0.2.13.5+1` | **Agent:** `RW E02:S13:T05 --art` | [gap log](epics/epic-02/story-13-workflow-management-package-implementation-review/T05-create-gap-log-and-risk-assessment.md) | [IPP](../../implementation-cycles/IPP-E02S13T05-gap-log-risk-assessment.md)
 
 - **[E02:S13:T04](epics/epic-02/story-13-workflow-management-package-implementation-review/T04-review-integrations-and-dependency-alignment.md)** — Workflow-mgt integration and dependency alignment review.
-  **Completed:** `2026-06-05T06:01:11Z` | **Version:** `v0.2.13.4+1` | **Agent:** `RW E02:S13:T04 --art` | [integration report](epics/epic-02/story-13-workflow-management-package-implementation-review/integration-alignment-report.md) | [IPP](../implementation-cycles/IPP-E02S13T04-integration-dependency-alignment.md)
+  **Completed:** `2026-06-05T06:01:11Z` | **Version:** `v0.2.13.4+1` | **Agent:** `RW E02:S13:T04 --art` | [integration report](epics/epic-02/story-13-workflow-management-package-implementation-review/integration-alignment-report.md) | [IPP](../../implementation-cycles/IPP-E02S13T04-integration-dependency-alignment.md)
 
 - **[E02:S13:T03](epics/epic-02/story-13-workflow-management-package-implementation-review/T03-validate-workflow-behavior-against-documented-guidance.md)** — Workflow-mgt behavior validation against documented guidance.
-  **Completed:** `2026-06-05T05:55:07Z` | **Version:** `v0.2.13.3+1` | **Agent:** `RW E02:S13:T03 --art` | [validation report](epics/epic-02/story-13-workflow-management-package-implementation-review/workflow-behavior-validation-report.md) | [IPP](../implementation-cycles/IPP-E02S13T03-workflow-behavior-validation.md)
+  **Completed:** `2026-06-05T05:55:07Z` | **Version:** `v0.2.13.3+1` | **Agent:** `RW E02:S13:T03 --art` | [validation report](epics/epic-02/story-13-workflow-management-package-implementation-review/workflow-behavior-validation-report.md) | [IPP](../../implementation-cycles/IPP-E02S13T03-workflow-behavior-validation.md)
 
 - **[E02:S13:T02](epics/epic-02/story-13-workflow-management-package-implementation-review/T02-inventory-package-components-and-map-to-expectations.md)** — Workflow-mgt component inventory mapped to T01 expectations.
-  **Completed:** `2026-06-05T14:00:00Z` | **Version:** `v0.2.13.2+1` | **Agent:** `RW E02:S13:T02 --art` | [component-inventory-map](epics/epic-02/story-13-workflow-management-package-implementation-review/component-inventory-map.md) | [IPP](../implementation-cycles/IPP-E02S13T02-inventory-package-components-map.md)
+  **Completed:** `2026-06-05T14:00:00Z` | **Version:** `v0.2.13.2+1` | **Agent:** `RW E02:S13:T02 --art` | [component-inventory-map](epics/epic-02/story-13-workflow-management-package-implementation-review/component-inventory-map.md) | [IPP](../../implementation-cycles/IPP-E02S13T02-inventory-package-components-map.md)
 
 - **[E05:S01:T44](epics/epic-05/story-01-fr-repo/T44-rw-temporary-execution-log-for-recovery-and-forensics.md)** — **FR-044** RW temporary execution log (incremental dual-write logging).
-  **Completed:** `2026-06-05T05:44:26Z` | **Version:** `v0.5.1.44+1` | **Agent:** `RW E05:S01:T44 --art` | [FR-044](fr-br/FR-044-rw-temporary-execution-log-for-recovery-and-forensics.md) | [IPP](../implementation-cycles/IPP-E05S01T44-rw-temporary-execution-log.md) | [ADR-011](../architecture/standards-and-adrs/ADR-011-workflow-step-tracker-and-agent-run-log.md)
+  **Completed:** `2026-06-05T05:44:26Z` | **Version:** `v0.5.1.44+1` | **Agent:** `RW E05:S01:T44 --art` | [FR-044](fr-br/FR-044-rw-temporary-execution-log-for-recovery-and-forensics.md) | [IPP](../../implementation-cycles/IPP-E05S01T44-rw-temporary-execution-log.md) | [ADR-011](../../architecture/standards-and-adrs/ADR-011-workflow-step-tracker-and-agent-run-log.md)
 
 - **[E04:S11:T07](epics/epic-04/story-11-kanban-granularity-discrete-task-docs/T07-planning-spec-tests-impl.md)** — **FR-016** embedded → discrete task doc migration (Waves 0–5).
-  **Completed:** `2026-06-05T05:12:40Z` | **Version:** `v0.4.11.7+16` | **Agent:** `RW E04:S11:T07 --art` | [FR-016](fr-br/FR-016-kanban-granularity-discrete-task-docs.md) | [IPP](../implementation-cycles/IPP-E04S11T07-fr016-discrete-task-docs-migration.md) | [migration guide](epics/epic-04/story-11-kanban-granularity-discrete-task-docs/migration-guide.md)
+  **Completed:** `2026-06-05T05:12:40Z` | **Version:** `v0.4.11.7+16` | **Agent:** `RW E04:S11:T07 --art` | [FR-016](fr-br/FR-016-kanban-granularity-discrete-task-docs.md) | [IPP](../../implementation-cycles/IPP-E04S11T07-fr016-discrete-task-docs-migration.md) | [migration guide](epics/epic-04/story-11-kanban-granularity-discrete-task-docs/migration-guide.md)
 
 - **[E04:S15:T05](epics/epic-04/story-15-procedural-task-template-generation-and-hybrid-strategy/T05-hybrid-strategy-maintainer-client-docs-fr029.md)** — **FR-029** hybrid task template docs.
-  **Completed:** `2026-06-05T12:30:00Z` | **Version:** `v0.4.15.5+1` | **Agent:** `RW E04:S15:T05 --art` | [FR-029](fr-br/FR-029-procedural-task-template-generation-hybrid-strategy.md) | [IPP](../implementation-cycles/IPP-E04S15T05-hybrid-strategy-docs-and-generator-integration.md)
+  **Completed:** `2026-06-05T12:30:00Z` | **Version:** `v0.4.15.5+1` | **Agent:** `RW E04:S15:T05 --art` | [FR-029](fr-br/FR-029-procedural-task-template-generation-hybrid-strategy.md) | [IPP](../../implementation-cycles/IPP-E04S15T05-hybrid-strategy-docs-and-generator-integration.md)
 
 - **[E02:S11:T14](epics/epic-02/story-11-intake-workflow-automation/T14-github-actions-workflow-optimization-br052.md)** — **BR-052** GHA workflow optimization.
   **Completed:** `2026-06-05T20:00:00Z` | **Version:** `v0.2.11.14+2` | **Agent:** `RW` | [BR-052](fr-br/BR-052-github-actions-workflow-optimization.md)
@@ -234,11 +252,11 @@ housekeeping_policy: keep
 
 #### **Epic 2: Workflow Management Framework (Story 1 — RW Agent Execution & Docs)**
 - **[E02:S01:T24](epics/epic-02/story-01-rw-agent-execution-and-docs/T24-rw-build-increment-enforcement-and-tag-immutability-br097.md)** — **BR-097**: RW BUILD increment enforcement + release-tag immutability (`resolve_rw_build.py`, tag immutability validator, agent FORBIDDEN contract); **+3** task_touch registry finalize, release contract validator, strategy-aware collision recovery.
-  **Completed:** `2026-06-05T06:13:58Z` | **Version:** `v0.2.1.24+3` | **Agent:** `RW E02:S01:T24 --art` | [BR-097](fr-br/BR-097-rw-agent-reuses-tagged-build-and-force-moves-release-tags.md) | [ADR-019](../architecture/standards-and-adrs/ADR-019-rw-build-increment-and-tag-immutability.md) | [IPP](../implementation-cycles/IPP-E02S01T24-rw-build-increment-tag-immutability.md)
+  **Completed:** `2026-06-05T06:13:58Z` | **Version:** `v0.2.1.24+3` | **Agent:** `RW E02:S01:T24 --art` | [BR-097](fr-br/BR-097-rw-agent-reuses-tagged-build-and-force-moves-release-tags.md) | [ADR-019](../../architecture/standards-and-adrs/ADR-019-rw-build-increment-and-tag-immutability.md) | [IPP](../../implementation-cycles/IPP-E02S01T24-rw-build-increment-tag-immutability.md)
 
 #### **Epic 4: Kanban Framework (Story 19 — FR/BR/UXR abstract governance)**
 - **[E04:S19:T12](epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T12-fbuboard-necessity-investigation-uxr020.md)** — **UXR-020 R3**: Single-board consolidation — `kboard` sole active MoSCOW; `fbuboard` deprecated stub; V-band; kanban-root `fr-br-uxr-*` aliases removed (Waves 1–4).
-  **Completed:** `2026-06-05T01:42:57Z` | **Version:** `v0.4.19.12+4` | **Agent:** `RW --art` | [UXR-020](fr-br/UXR-020-fbuboard-necessity-after-task-fbu-wiring.md) | [ADR-018](../architecture/standards-and-adrs/ADR-018-single-kanban-board-consolidation.md) | [IPP](../implementation-cycles/IPP-E04S19T12-single-board-consolidation-uxr020.md)
+  **Completed:** `2026-06-05T01:42:57Z` | **Version:** `v0.4.19.12+4` | **Agent:** `RW --art` | [UXR-020](fr-br/UXR-020-fbuboard-necessity-after-task-fbu-wiring.md) | [ADR-018](../../architecture/standards-and-adrs/ADR-018-single-kanban-board-consolidation.md) | [IPP](../../implementation-cycles/IPP-E04S19T12-single-board-consolidation-uxr020.md)
 
 #### **Epic 1: AI Dev Kit Core (Story 2 — Package & Repo Architecture)**
 - **[E01:S02:T13](epics/epic-01/story-02-package-and-repo-architecture/T13-readme-template-best-readme-fr002.md)** — **FR-002**: README hygiene — removed book-workspace branding from public README.
@@ -253,44 +271,41 @@ housekeeping_policy: keep
 
 #### **Epic 7: Codebase Maintenance (Story 7 — Code Reviews)**
 - **[E07:S07:T03](epics/epic-07/story-07-code-reviews/T03-workflow-validator-slug-path-resolution-br091.md)** — **BR-091**: Workflow validator slug path resolution (`workflow-mgt` first, legacy fallback).
-  **Completed:** `2026-06-05T00:34:25Z` | **Version:** `v0.7.7.3+1` | **Agent:** `RW E07:S07:T03` | [BR-091](fr-br/BR-091-workflow-validator-legacy-workflow-mgt-path-hardcoded.md) | [IPP](../implementation-cycles/IPP-E07S07T03-workflow-validator-slug-path-resolution-br091.md)
+  **Completed:** `2026-06-05T00:34:25Z` | **Version:** `v0.7.7.3+1` | **Agent:** `RW E07:S07:T03` | [BR-091](fr-br/BR-091-workflow-validator-legacy-workflow-mgt-path-hardcoded.md) | [IPP](../../implementation-cycles/IPP-E07S07T03-workflow-validator-slug-path-resolution-br091.md)
 
 #### **Epic 5: Documentation Management (Story 9 — Docusaurus Documentation Portal)**
 - **[E05:S09:T13](epics/epic-05/story-09-docusaurus-documentation-portal/T13-docusaurus-faster-package-alignment-br090.md)** — **BR-090**: Docusaurus `@docusaurus/faster@3.10.1` + package.json alignment.
-  **Completed:** `2026-06-05T00:30:47Z` | **Version:** `v0.5.9.13+1` | **Agent:** `RW E05:S09:T13` | [BR-090](fr-br/BR-090-docusaurus-faster-missing-dependabot-310-lockfile-drift.md) | [IPP](../implementation-cycles/IPP-E05S09T13-docusaurus-faster-package-alignment.md)
+  **Completed:** `2026-06-05T00:30:47Z` | **Version:** `v0.5.9.13+1` | **Agent:** `RW E05:S09:T13` | [BR-090](fr-br/BR-090-docusaurus-faster-missing-dependabot-310-lockfile-drift.md) | [IPP](../../implementation-cycles/IPP-E05S09T13-docusaurus-faster-package-alignment.md)
 
-- **[E05:S09:T14](epics/epic-05/story-09-docusaurus-documentation-portal/T14-docusaurus-ci-workflow-deduplication-br093.md)** — **BR-093**: Docusaurus CI build/deploy deduplication — merged workflow + artifact handoff ([ADR-017](../architecture/standards-and-adrs/ADR-017-docusaurus-ci-build-deploy-topology.md)).
-  **Completed:** `2026-06-05T00:23:30Z` | **Version:** `v0.5.9.14+2` | **Agent:** `RW E05:S09:T14` | [BR-093](fr-br/BR-093-docusaurus-ci-duplicate-build-deploy-job-waste.md) | [IPP](../implementation-cycles/IPP-E05S09T14-docusaurus-ci-workflow-deduplication.md)
-
-- **[E05:S09:T15](epics/epic-05/story-09-docusaurus-documentation-portal/T15-docusaurus-adopter-public-publish-allowlist-fr114.md)** — **FR-114**: Docusaurus adopter-public publish allowlist — explicit include/exclude, trimmed IA, narrowed CI, BR-068 link remediation, RC release-notes scaffold.
-  **Completed:** `2026-06-07T10:07:12Z` | **Version:** `v0.5.9.15+1` | **Agent:** `RW E05:S09:T15 --art` | [FR-114](fr-br/FR-114-split-documentation-surfaces-docusaurus-public-notion-maintainer-kb.md) | [IPP](../implementation-cycles/IPP-E05S09T15-docusaurus-adopter-public-publish-allowlist-fr114.md)
+- **[E05:S09:T14](epics/epic-05/story-09-docusaurus-documentation-portal/T14-docusaurus-ci-workflow-deduplication-br093.md)** — **BR-093**: Docusaurus CI build/deploy deduplication — merged workflow + artifact handoff ([ADR-017](../../architecture/standards-and-adrs/ADR-017-docusaurus-ci-build-deploy-topology.md)).
+  **Completed:** `2026-06-05T00:23:30Z` | **Version:** `v0.5.9.14+2` | **Agent:** `RW E05:S09:T14` | [BR-093](fr-br/BR-093-docusaurus-ci-duplicate-build-deploy-job-waste.md) | [IPP](../../implementation-cycles/IPP-E05S09T14-docusaurus-ci-workflow-deduplication.md)
 
 #### **Epic 8: Tooling & Automation (Story 3 — Automation Scripts)**
 - **[E08:S03:T08](epics/epic-08/story-03-automation-scripts/T08-codeql-git-tag-handler-syntax-br094.md)** — **BR-094**: CodeQL `git_tag_handler.py` indentation syntax fix.
   **Completed:** `2026-06-05T00:10:09Z` | **Version:** `v0.8.3.8+1` | **Agent:** `RW --art` | [BR-094](fr-br/BR-094-codeql-git-tag-handler-syntax-error.md)
 
 - **[E08:S03:T07](epics/epic-08/story-03-automation-scripts/T07-tests-ci-requests-dependency-br092.md)** — **BR-092**: Tests CI `requests` dependency — `setup.py` [dev] extras + `tests/requirements.txt` parity.
-  **Completed:** `2026-06-04T23:51:26Z` | **Version:** `v0.8.3.7+1` | **Agent:** `RW` | [BR-092](fr-br/BR-092-tests-ci-missing-requests-dev-dependency.md) | [IPP](../implementation-cycles/IPP-E08S03T07-tests-ci-requests-dependency-br092.md)
+  **Completed:** `2026-06-04T23:51:26Z` | **Version:** `v0.8.3.7+1` | **Agent:** `RW` | [BR-092](fr-br/BR-092-tests-ci-missing-requests-dev-dependency.md) | [IPP](../../implementation-cycles/IPP-E08S03T07-tests-ci-requests-dependency-br092.md)
 
 #### **Epic 4: Kanban Framework (Story 19 — FR/BR/UXR Abstract Governance)**
 - **[E04:S19:T11](epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T11-kanban-epic-story-path-lowercase-naming-uxr017.md)** — **UXR-017**: Kanban epic/story path lowercase naming — kit shipped; GH #12–#20 closed.
-  **Completed:** `2026-06-04T23:07:14Z` | **Version:** `v0.4.19.11+1` | **Agent:** `UKW -c` | [UXR-017](fr-br/UXR-017-kanban-epic-story-path-lowercase-naming.md) | [IPP](../implementation-cycles/IPP-E04S19T11-kanban-epic-story-path-lowercase-naming.md)
+  **Completed:** `2026-06-04T23:07:14Z` | **Version:** `v0.4.19.11+1` | **Agent:** `UKW -c` | [UXR-017](fr-br/UXR-017-kanban-epic-story-path-lowercase-naming.md) | [IPP](../../implementation-cycles/IPP-E04S19T11-kanban-epic-story-path-lowercase-naming.md)
 
 #### **Epic 6: Framework Management (Story 9 — Installation)**
 - **[E06:S09:T16](epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T16-rw-install-lowercase-fresh-kanban-patterns-br086.md)** — **BR-086**: RW install lowercase fresh kanban patterns & sign-off — [#17](https://github.com/RMS-Ltd/ai-dev-kit/issues/17) closed.
-  **Completed:** `2026-06-04T23:09:08Z` | **Version:** `v0.6.9.16+3` | **Agent:** `RW --art` | [BR-086](fr-br/BR-086-rw-install-lowercase-fresh-kanban-patterns-signoff.md) | [IPP-E6S9T16](../implementation-cycles/IPP-E06S09T16-br086-lowercase-fresh-kanban-patterns.md)
+  **Completed:** `2026-06-04T23:09:08Z` | **Version:** `v0.6.9.16+3` | **Agent:** `RW --art` | [BR-086](fr-br/BR-086-rw-install-lowercase-fresh-kanban-patterns-signoff.md) | [IPP-E6S9T16](../../implementation-cycles/IPP-E06S09T16-br086-lowercase-fresh-kanban-patterns.md)
 
 #### **Epic 8: Tooling & Automation (Story 3 — Automation Scripts)**
 - **[E08:S03:T04](epics/epic-08/story-03-automation-scripts/T04-ci-test-workflow-pytest-remediation-br058.md)** — **BR-058**: Repo-wide Tests CI workflow + pytest remediation.
-  **Completed:** `2026-06-04T22:32:54Z` | **Version:** `v0.8.3.4+1` | **Agent:** `RW` | [BR-058](fr-br/BR-058-ci-test-workflow-missing-and-pytest-failures.md) | [IPP](../implementation-cycles/IPP-E08S03T04-ci-test-workflow-pytest-remediation-br058.md)
+  **Completed:** `2026-06-04T22:32:54Z` | **Version:** `v0.8.3.4+1` | **Agent:** `RW` | [BR-058](fr-br/BR-058-ci-test-workflow-missing-and-pytest-failures.md) | [IPP](../../implementation-cycles/IPP-E08S03T04-ci-test-workflow-pytest-remediation-br058.md)
 
 #### **Epic 9: Release Candidate Readiness (Story 1 — RC Readiness Gap Analysis)**
 - **[E09:S01:T03](epics/epic-09/story-01-rc-readiness-gap-analysis/T03-gap-analysis-fr032.md)** — **FR-032.3**: RC gap comparison — T01 inventory, T02 RC=1 criteria, gap matrix report.
-  **Completed:** `2026-06-04T22:15:00Z` | **Version:** `v0.9.1.3+1` | **Agent:** `RW` | [FR-032](fr-br/FR-032-release-candidate-readiness-gap-analysis.md) | [Report](epics/epic-09/story-01-rc-readiness-gap-analysis/T03-gap-comparison-fr032-report.md) | [IPP](../implementation-cycles/IPP-E09S01T03-gap-comparison-fr032.md)
+  **Completed:** `2026-06-04T22:15:00Z` | **Version:** `v0.9.1.3+1` | **Agent:** `RW` | [FR-032](fr-br/FR-032-release-candidate-readiness-gap-analysis.md) | [Report](epics/epic-09/story-01-rc-readiness-gap-analysis/T03-gap-comparison-fr032-report.md) | [IPP](../../implementation-cycles/IPP-E09S01T03-gap-comparison-fr032.md)
 
 #### **Epic 1: AI Dev Kit Core (Story 2 — Package & Repo Architecture)**
 - **[E01:S02:T14](epics/epic-01/story-02-package-and-repo-architecture/T14-dependency-tracking-adopters-fr003.md)** — **FR-003**: Adopter external resource dependency tracking (guide + copy-paste templates).
-  **Completed:** `2026-06-04T19:57:56Z` | **Version:** `v0.1.2.14+1` | **Agent:** `RW` | [FR-003](fr-br/FR-003-dependency-tracking-in-adopting-projects.md) | [IPP](../implementation-cycles/IPP-E01S02T14-adopter-external-dependency-tracking.md)
+  **Completed:** `2026-06-04T19:57:56Z` | **Version:** `v0.1.2.14+1` | **Agent:** `RW` | [FR-003](fr-br/FR-003-dependency-tracking-in-adopting-projects.md) | [IPP](../../implementation-cycles/IPP-E01S02T14-adopter-external-dependency-tracking.md)
 
 #### **Epic 2: Workflow Management (Story 16 — Perpetual)**
 - **[E02:S16:T18](epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T18-ukw-lean-active-board-contract-fr109.md)** — **FR-109**: UKW lean active board contract — validator, Gate 11, dual-source parity.
@@ -301,59 +316,59 @@ housekeeping_policy: keep
   **Completed:** `2026-06-04T18:04:56Z` | **Version:** `v0.6.9.10+2` | **Agent:** `RW` | [BR-081](fr-br/BR-081-kanban-install-datetime-utcnow-deprecated.md) | [#13](https://github.com/RMS-Ltd/ai-dev-kit/issues/13)
 
 - **[E06:S09:T20](epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T20-install-setup-error-code-registry-fr108.md)** — **FR-108**: Install/setup `ADK-*` error code registry + emission + docs.
-  **Completed:** `2026-06-04T17:32:25Z` | **Version:** `v0.6.9.20+2` | **Agent:** `RW` | [FR-108](fr-br/FR-108-install-setup-error-code-registry-and-emission.md) | [IPP-E6S9T20](../implementation-cycles/IPP-E06S09T20-install-setup-error-code-registry-fr108.md)
+  **Completed:** `2026-06-04T17:32:25Z` | **Version:** `v0.6.9.20+2` | **Agent:** `RW` | [FR-108](fr-br/FR-108-install-setup-error-code-registry-and-emission.md) | [IPP-E6S9T20](../../implementation-cycles/IPP-E06S09T20-install-setup-error-code-registry-fr108.md)
 
 - **[E06:S09:T19](epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T19-rw-install-version-file-scaffold-br088.md)** — **BR-088**: RW mode C `version_file` scaffold when no `src/`.
-  **Completed:** `2026-06-04T17:08:38Z` | **Version:** `v0.6.9.19+1` | **Agent:** `RW` | [BR-088](fr-br/BR-088-rw-install-mode-c-missing-version-file-scaffold.md) | [IPP-E6S9T19](../implementation-cycles/IPP-E06S09T19-br088-version-file-scaffold.md)
+  **Completed:** `2026-06-04T17:08:38Z` | **Version:** `v0.6.9.19+1` | **Agent:** `RW` | [BR-088](fr-br/BR-088-rw-install-mode-c-missing-version-file-scaffold.md) | [IPP-E6S9T19](../../implementation-cycles/IPP-E06S09T19-br088-version-file-scaffold.md)
 
 - **[E06:S09:T18](epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T18-br087-framework-slug-install-closure.md)** — **BR-087** wave 2: framework slug install closure (registry, GitHub release).
-  **Completed:** `2026-06-04T16:00:30Z` | **Version:** `v0.6.9.18+2` | **Agent:** `RW` | [BR-087](fr-br/BR-087-framework-install-directory-slug-mismatch.md) | [IPP-E6S9T18](../implementation-cycles/IPP-E06S09T18-br087-framework-slug-install-closure.md)
+  **Completed:** `2026-06-04T16:00:30Z` | **Version:** `v0.6.9.18+2` | **Agent:** `RW` | [BR-087](fr-br/BR-087-framework-install-directory-slug-mismatch.md) | [IPP-E6S9T18](../../implementation-cycles/IPP-E06S09T18-br087-framework-slug-install-closure.md)
 
 - **[E06:S09:T17](epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T17-framework-install-directory-slugs-br087.md)** — **BR-087** wave 1: framework install directory slugs.
   **Completed:** `2026-06-04T12:53:00Z` | **Version:** `v0.6.9.17+1` | **Agent:** `RW` | [BR-087](fr-br/BR-087-framework-install-directory-slug-mismatch.md)
 
 #### **Epic 2: Workflow Management (Story 16 — Perpetual operations)**
 - **[E02:S16:T02](epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T02-inventory-and-classify-workflow-perpetual-tasks.md)** — Perpetual task inventory and classification (IPP).
-  **Completed:** `2026-04-20T18:20:00Z` | **Version:** (inventory IPP) | **Agent:** `UKW` | [IPP-E2S16T2](../implementation-cycles/IPP-E2S16T02-perpetual-task-inventory.md)
+  **Completed:** `2026-04-20T18:20:00Z` | **Version:** (inventory IPP) | **Agent:** `UKW` | [IPP-E2S16T2](../../implementation-cycles/IPP-E2S16T02-perpetual-task-inventory.md)
 
 #### **Epic 3: Numbering & Versioning (Story 2 — Cookbook)**
 - **[E03:S02:T12](epics/epic-03/story-02-versioning-cookbook-and-examples/T12-implement-task-touch-semver-mapping-mode.md)** — **FR-045** / **FR-046** / **BR-061**: Task-touch SemVer collision remediation wave 2.
-  **Completed:** `2026-06-04T22:00:00Z` | **Version:** `v0.3.2.12+4` | **Agent:** `RW` | [FR-045](fr-br/FR-045-adr-002-task-touch-derived-mapping.md) · [FR-046](fr-br/FR-046-rw-semver-tag-task-touch-mode.md) · [BR-061](fr-br/BR-061-semver-task-touch-counter-increments-too-often.md) | [IPP-E3S2T12](../implementation-cycles/IPP-E03S02T12-task-touch-semver-collision-hardening.md)
+  **Completed:** `2026-06-04T22:00:00Z` | **Version:** `v0.3.2.12+4` | **Agent:** `RW` | [FR-045](fr-br/FR-045-adr-002-task-touch-derived-mapping.md) · [FR-046](fr-br/FR-046-rw-semver-tag-task-touch-mode.md) · [BR-061](fr-br/BR-061-semver-task-touch-counter-increments-too-often.md) | [IPP-E3S2T12](../../implementation-cycles/IPP-E03S02T12-task-touch-semver-collision-hardening.md)
 
 #### **Epic 5: Documentation Management (Story 1 — FR Repo)**
 - **[E05:S09:T12](epics/epic-05/story-09-docusaurus-documentation-portal/T12-changelog-directory-consolidation-uxr018.md)** — **UXR-018**: Changelog directory consolidation — retired `docs/changelog/` and knowledge mirror; single pillar `docs/changelog-and-release-notes/`.
-  **Completed:** `2026-06-04T14:35:00Z` | **Version:** `v0.5.9.12+3` | **Agent:** `RW` | [UXR-018](fr-br/UXR-018-changelog-directory-consolidation.md) | [IPP](../implementation-cycles/IPP-E05S09T12-changelog-directory-consolidation.md) | [Remediation](../maintenance/coordinate-remediation-uxr018-e05s09t12.md)
+  **Completed:** `2026-06-04T14:35:00Z` | **Version:** `v0.5.9.12+3` | **Agent:** `RW` | [UXR-018](fr-br/UXR-018-changelog-directory-consolidation.md) | [IPP](../../implementation-cycles/IPP-E05S09T12-changelog-directory-consolidation.md) | [Remediation](../../maintenance/coordinate-remediation-uxr018-e05s09t12.md)
 
 #### **Epic 6: Framework Management (Story 9 — Installation)**
 - **[E06:S09:T15](epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T15-install-setup-interactive-feedback-external-semver-uxr016.md)** — **UXR-016**: Install/setup interactive feedback shows external SemVer (banners + telemetry; reclassified from FR-108).
-  **Completed:** `2026-06-04T12:00:00Z` | **Version:** `v0.6.9.15+2` (docs rewire) | **Agent:** `RW` | [UXR-016](fr-br/UXR-016-install-setup-interactive-feedback-external-semver-version.md) | [IPP-E6S9T15](../implementation-cycles/IPP-E06S09T15-install-setup-interactive-feedback-external-semver.md)
+  **Completed:** `2026-06-04T12:00:00Z` | **Version:** `v0.6.9.15+2` (docs rewire) | **Agent:** `RW` | [UXR-016](fr-br/UXR-016-install-setup-interactive-feedback-external-semver-version.md) | [IPP-E6S9T15](../../implementation-cycles/IPP-E06S09T15-install-setup-interactive-feedback-external-semver.md)
 
 - **[E06:S09:T14](epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T14-rw-install-story-pattern-loop-br085.md)** — **BR-085**: RW mode C story pattern prompt loop after fresh kanban (`{story:03d}` validation + epic-only escape).
   **Completed:** `2026-06-03T23:00:21Z` | **Version:** `v0.6.9.14+1` | **Agent:** `RW` | [BR-085](fr-br/BR-085-rw-install-story-pattern-placeholder-loop-fresh-kanban.md)
 
 #### **Epic 10: Document Lifecycle Framework (Story 1 — Package implementation review)** ✅ COMPLETE (`v0.10.1.10+2`)
 - **E10:S01** — Document Lifecycle Package Implementation Review — Story sign-off (T01–T10; RC **APPROVE** @ T06; HIGH gaps remediated T08–T10).
-  **Completed:** `2026-06-06T16:34:00Z` | **Version:** `v0.10.1.10+2` | **Agent:** `RW E10:S01:T10 --art` | [Story](epics/epic-10/story-01-document-lifecycle-package-implementation-review.md) | [Orchestration](../implementation-cycles/E10S01-orchestration-plan.md)
+  **Completed:** `2026-06-06T16:34:00Z` | **Version:** `v0.10.1.10+2` | **Agent:** `RW E10:S01:T10 --art` | [Story](epics/epic-10/story-01-document-lifecycle-package-implementation-review.md) | [Orchestration](../../implementation-cycles/E10S01-orchestration-plan.md)
 - **[E10:S01:T10](epics/epic-10/story-01-document-lifecycle-package-implementation-review/T10-fix-document-lifecycle-validator.md)** — Fix DocumentLifecycleValidator (GAP-DOCLIFE-TEST-001).
-  **Completed:** `2026-06-06T16:05:00Z` | **Version:** `v0.10.1.10+1` | **Agent:** `RW E10:S01:T10 --art` | [IPP](../implementation-cycles/IPP-E10S01T10-fix-document-lifecycle-validator.md)
+  **Completed:** `2026-06-06T16:05:00Z` | **Version:** `v0.10.1.10+1` | **Agent:** `RW E10:S01:T10 --art` | [IPP](../../implementation-cycles/IPP-E10S01T10-fix-document-lifecycle-validator.md)
 - **[E10:S01:T09](epics/epic-10/story-01-document-lifecycle-package-implementation-review/T09-sync-architecture-adr-dual-sot.md)** — Sync architecture ADR dual SoT (GAP-DOCLIFE-INTG-001).
-  **Completed:** `2026-06-06T15:06:47Z` | **Version:** `v0.10.1.9+1` | **Agent:** `RW E10:S01:T09 --art` | [ADR-023](../architecture/standards-and-adrs/ADR-023-doc-lifecycle-package-architecture-dual-sot.md)
+  **Completed:** `2026-06-06T15:06:47Z` | **Version:** `v0.10.1.9+1` | **Agent:** `RW E10:S01:T09 --art` | [ADR-023](../../architecture/standards-and-adrs/ADR-023-doc-lifecycle-package-architecture-dual-sot.md)
 - **[E10:S01:T08](epics/epic-10/story-01-document-lifecycle-package-implementation-review/T08-implement-doc-housekeeping-workflow-and-scripts.md)** — Doc housekeeping workflow and scripts (GAP-DOCLIFE-STRUCT-001/002/003).
-  **Completed:** `2026-06-06T15:04:48Z` | **Version:** `v0.10.1.8+1` | **Agent:** `RW E10:S01:T08 --art` | [IPP](../implementation-cycles/IPP-E10S01T08-doc-housekeeping-workflow-scripts.md)
+  **Completed:** `2026-06-06T15:04:48Z` | **Version:** `v0.10.1.8+1` | **Agent:** `RW E10:S01:T08 --art` | [IPP](../../implementation-cycles/IPP-E10S01T08-doc-housekeeping-workflow-scripts.md)
 - **[E10:S01:T06](epics/epic-10/story-01-document-lifecycle-package-implementation-review/T06-define-rc-sign-off-criteria-and-remediation-tasks.md)** — RC sign-off criteria and remediation (**APPROVE**).
-  **Completed:** `2026-06-06T16:05:00Z` | **Version:** `v0.10.1.6+4` | **Agent:** `RW E10:S01:T06 --art` | [IPP](../implementation-cycles/IPP-E10S01T06-rc-sign-off-remediation.md)
+  **Completed:** `2026-06-06T16:05:00Z` | **Version:** `v0.10.1.6+4` | **Agent:** `RW E10:S01:T06 --art` | [IPP](../../implementation-cycles/IPP-E10S01T06-rc-sign-off-remediation.md)
 
 #### **Epic 2: Workflow Management Framework (Story 13 — Package implementation review)** ✅ COMPLETE (`v0.2.13.10+1`)
 - **[E02:S13:T10](epics/epic-02/story-13-workflow-management-package-implementation-review/T10-kanban-transform-consolidation.md)** — Kanban transform consolidation + `rw_config_loader` unification (GAP-INTG-001/002).
-  **Completed:** `2026-06-05T07:38:22Z` | **Version:** `v0.2.13.10+1` | **Agent:** `RW E02:S13:T10 --art` | [IPP](../implementation-cycles/IPP-E02S13T10-kanban-transform-consolidation-and-config-loader-unification.md) | [ADR-020](../architecture/standards-and-adrs/ADR-020-kanban-transform-entrypoint-contract-and-rw-config-loader-unification.md)
+  **Completed:** `2026-06-05T07:38:22Z` | **Version:** `v0.2.13.10+1` | **Agent:** `RW E02:S13:T10 --art` | [IPP](../../implementation-cycles/IPP-E02S13T10-kanban-transform-consolidation-and-config-loader-unification.md) | [ADR-020](../../architecture/standards-and-adrs/ADR-020-kanban-transform-entrypoint-contract-and-rw-config-loader-unification.md)
 - **[E02:S13:T09](epics/epic-02/story-13-workflow-management-package-implementation-review/T09-fr050-workflows-directory-reorganization.md)** — **FR-050**: Workflows directory reorganization (flat YAML stubs; nested SoT).
-  **Completed:** `2026-06-05T18:30:00Z` | **Version:** `v0.2.13.9+1` | **Agent:** `RW E02:S13:T09 --art` | [FR-050](fr-br/FR-050-workflows-directory-structure-reorganization.md) | [IPP](../implementation-cycles/IPP-E02S13T09-fr050-workflows-directory-reorganization.md)
+  **Completed:** `2026-06-05T18:30:00Z` | **Version:** `v0.2.13.9+1` | **Agent:** `RW E02:S13:T09 --art` | [FR-050](fr-br/FR-050-workflows-directory-structure-reorganization.md) | [IPP](../../implementation-cycles/IPP-E02S13T09-fr050-workflows-directory-reorganization.md)
 - **[E02:S13:T08](epics/epic-02/story-13-workflow-management-package-implementation-review/T08-sync-packaged-workflows-with-live-repo-implementation.md)** — **FR-106**: Sync packaged workflows with live repo (YAML, registry, dual-source RW/UKW parity).
-  **Completed:** `2026-06-03T21:00:00Z` | **Version:** `v0.2.13.8+2` | **Agent:** `RW` | [FR-106](fr-br/FR-106-packaged-workflows-sync-with-live-repo-implementation.md) | [IPP-E2S13T8](../implementation-cycles/IPP-E02S13T08-sync-packaged-workflows-live-spec.md)
+  **Completed:** `2026-06-03T21:00:00Z` | **Version:** `v0.2.13.8+2` | **Agent:** `RW` | [FR-106](fr-br/FR-106-packaged-workflows-sync-with-live-repo-implementation.md) | [IPP-E2S13T8](../../implementation-cycles/IPP-E02S13T08-sync-packaged-workflows-live-spec.md)
 
 #### **Epic 7: Codebase Maintenance (Story 7 — Code Reviews)**
 - **[E07:S07:T01](epics/epic-07/story-07-code-reviews/T01-comprehensive-workflow-machinery-code-review.md)** — **FR-107**: Workflow machinery code review report (severity-ranked findings).
-  **Completed:** `2026-06-03T20:28:00Z` | **Version:** `v0.7.7.1+1` | **Agent:** `RW` | [FR-107](fr-br/FR-107-comprehensive-workflow-machinery-code-review.md) | [IPP-E7S7T1](../implementation-cycles/IPP-E07S07T01-workflow-machinery-code-review.md)
+  **Completed:** `2026-06-03T20:28:00Z` | **Version:** `v0.7.7.1+1` | **Agent:** `RW` | [FR-107](fr-br/FR-107-comprehensive-workflow-machinery-code-review.md) | [IPP-E7S7T1](../../implementation-cycles/IPP-E07S07T01-workflow-machinery-code-review.md)
 
 #### **Epic 6: Framework Management (Story 9 — Installation)**
 - **[E06:S09:T13](epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T13-rw-install-mode-c-rw-config-generation-br084.md)** — **BR-084**: RW mode C `task_doc_pattern` + `fr_br_root`.
@@ -361,70 +376,70 @@ housekeeping_policy: keep
 - **[E06:S09:T12](epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T12-rw-install-pattern-defaults-br083.md)** — **BR-083**: RW mode C kanban pattern defaults.
   **Completed:** `2026-06-03T19:50:30Z` | **Version:** `v0.6.9.12+2` | **Agent:** `RW` | [BR-083](fr-br/BR-083-rw-install-default-patterns-mismatch-fresh-kanban-layout.md)
 - **[E06:S09:T07](epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T07-kanban-fresh-install-structure-template-missing-br078.md)** — **BR-078**: Ship `KANBAN_STRUCTURE_TEMPLATE`; fresh install SUCCESS when board + epics.
-  **Completed:** `2026-06-03T20:25:00Z` | **Version:** `v0.6.9.7+2` | **Agent:** `RW` | [BR-078](fr-br/BR-078-kanban-fresh-install-structure-template-missing.md) | [IPP-E6S9T7](../implementation-cycles/IPP-E06S09T07-br078-kanban-structure-template-missing.md)
+  **Completed:** `2026-06-03T20:25:00Z` | **Version:** `v0.6.9.7+2` | **Agent:** `RW` | [BR-078](fr-br/BR-078-kanban-fresh-install-structure-template-missing.md) | [IPP-E6S9T7](../../implementation-cycles/IPP-E06S09T07-br078-kanban-structure-template-missing.md)
 - **[E06:S09:T11](epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T11-rw-install-pyyaml-preflight-br082.md)** — **BR-082**: RW install PyYAML preflight (`--check-deps`, INSTALL Step 3b).
-  **Completed:** `2026-06-03T19:19:22Z` | **Version:** `v0.6.9.11+2` | **Agent:** `RW` | [BR-082](fr-br/BR-082-rw-install-missing-pyyaml-preflight.md) | [IPP-E6S9T11](../implementation-cycles/IPP-E06S09T11-br082-rw-install-pyyaml-preflight.md)
+  **Completed:** `2026-06-03T19:19:22Z` | **Version:** `v0.6.9.11+2` | **Agent:** `RW` | [BR-082](fr-br/BR-082-rw-install-missing-pyyaml-preflight.md) | [IPP-E6S9T11](../../implementation-cycles/IPP-E06S09T11-br082-rw-install-pyyaml-preflight.md)
 - **[E06:S09:T09](epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T09-kanban-fresh-mode-validation-br080.md)** — **BR-080**: Fresh kanban install on empty repo without `--force` (skeleton-before-validate).
-  **Completed:** `2026-06-03T19:15:00Z` | **Version:** `v0.6.9.9+2` | **Agent:** `RW` | [BR-080](fr-br/BR-080-kanban-fresh-mode-validation-requires-force-on-empty-repo.md) | [IPP-E6S9T9](../implementation-cycles/IPP-E06S09T09-br080-fresh-mode-empty-repo-validation.md)
+  **Completed:** `2026-06-03T19:15:00Z` | **Version:** `v0.6.9.9+2` | **Agent:** `RW` | [BR-080](fr-br/BR-080-kanban-fresh-mode-validation-requires-force-on-empty-repo.md) | [IPP-E6S9T9](../../implementation-cycles/IPP-E06S09T09-br080-fresh-mode-empty-repo-validation.md)
 
 #### **Epic 8: Tooling & Automation (Story 3 — Automation scripts)**
 - **[E08:S03:T06](epics/epic-08/story-03-automation-scripts/T06-dependabot-enablement-fr105.md)** — **FR-105**: Dependabot pip + portal npm, security updates, npm audit triage.
-  **Completed:** `2026-06-03T16:00:00Z` | **Version:** `v0.8.3.6+2` | **Agent:** `RW` | [FR-105](fr-br/FR-105-dependabot-dependency-security-automation.md) | [IPP-E8S3T6](../implementation-cycles/IPP-E08S03T06-dependabot-enablement-fr105.md)
+  **Completed:** `2026-06-03T16:00:00Z` | **Version:** `v0.8.3.6+2` | **Agent:** `RW` | [FR-105](fr-br/FR-105-dependabot-dependency-security-automation.md) | [IPP-E8S3T6](../../implementation-cycles/IPP-E08S03T06-dependabot-enablement-fr105.md)
 - **[E08:S03:T05](epics/epic-08/story-03-automation-scripts/T05-python-minimum-version-fr104-br077.md)** — **FR-104** / **BR-077**: Python 3.11+ minimum policy alignment.
-  **Completed:** `2026-06-03T15:00:00Z` | **Version:** `v0.8.3.5+2` | **Agent:** `RW` | [FR-104](fr-br/FR-104-python-minimum-version-policy-alignment.md) | [BR-077](fr-br/BR-077-documented-python-38-contradicts-repo-310-requirement.md) | [IPP-E8S3T5](../implementation-cycles/IPP-E08S03T05-python-minimum-version-fr104-br077.md)
+  **Completed:** `2026-06-03T15:00:00Z` | **Version:** `v0.8.3.5+2` | **Agent:** `RW` | [FR-104](fr-br/FR-104-python-minimum-version-policy-alignment.md) | [BR-077](fr-br/BR-077-documented-python-38-contradicts-repo-310-requirement.md) | [IPP-E8S3T5](../../implementation-cycles/IPP-E08S03T05-python-minimum-version-fr104-br077.md)
 
 #### **Epic 2: Workflow Management Framework (Story 15 — IPW governance)**
 - **[E02:S15:T01](epics/epic-02/story-15-ipw-governance-and-publication-contract/T01-ipw-docusaurus-filing-contract-and-backfill-br066.md)** — **BR-066** Phase 3: corpus tail wired (`--audit-inventory` **0** unwired); BR-066 **RESOLVED**.
-  **Completed:** `2026-06-03T14:30:00Z` | **Version:** `v0.2.15.1+3` | **Agent:** `RW` | [BR-066](fr-br/BR-066-ipw-missing-docusaurus-filing-for-planning-artifacts.md) | [IPP-E2S15T1-br066-corpus-tail-phase3](../implementation-cycles/IPP-E02S15T01-br066-corpus-tail-phase3.md)
+  **Completed:** `2026-06-03T14:30:00Z` | **Version:** `v0.2.15.1+3` | **Agent:** `RW` | [BR-066](fr-br/BR-066-ipw-missing-docusaurus-filing-for-planning-artifacts.md) | [IPP-E2S15T1-br066-corpus-tail-phase3](../../implementation-cycles/IPP-E02S15T01-br066-corpus-tail-phase3.md)
 
 #### **Epic 2: Workflow Management Framework (Story 16 — Perpetual workflow ops)**
 - **[E02:S16:T13](epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T13-br059-ukw-moscow-full-story-task-coverage.md)** — **BR-059**: UKW MoSCOW full open-task coverage per story (Part B.1 + validator).
-  **Completed:** `2026-06-03T12:00:00Z` | **Version:** `v0.2.16.13+1` | **Agent:** `UKW` | [BR-059](fr-br/BR-059-ukw-moscow-incomplete-story-task-coverage.md) | [IPP-E2S16T13](../implementation-cycles/IPP-E02S16T13-br059-ukw-moscow-full-story-coverage.md)
+  **Completed:** `2026-06-03T12:00:00Z` | **Version:** `v0.2.16.13+1` | **Agent:** `UKW` | [BR-059](fr-br/BR-059-ukw-moscow-incomplete-story-task-coverage.md) | [IPP-E2S16T13](../../implementation-cycles/IPP-E02S16T13-br059-ukw-moscow-full-story-coverage.md)
 
 #### **Epic 2: Workflow Management Framework (Story 15 — IPW governance and publication contract)**
 - **[E02:S15:T01](epics/epic-02/story-15-ipw-governance-and-publication-contract/T01-ipw-docusaurus-filing-contract-and-backfill-br066.md)** — **BR-066** Phase 2: bulk publication audit, validator hardening, targeted backfill, IPP.
-  **Completed:** `2026-06-02T12:49:39Z` | **Version:** `v0.2.15.1+2` | **Agent:** `UKW -c` | [BR-066](fr-br/BR-066-ipw-missing-docusaurus-filing-for-planning-artifacts.md) | [IPP](../implementation-cycles/IPP-E02S15T01-br066-corpus-tail-phase3.md)
+  **Completed:** `2026-06-02T12:49:39Z` | **Version:** `v0.2.15.1+2` | **Agent:** `UKW -c` | [BR-066](fr-br/BR-066-ipw-missing-docusaurus-filing-for-planning-artifacts.md) | [IPP](../../implementation-cycles/IPP-E02S15T01-br066-corpus-tail-phase3.md)
 
 #### **Epic 7: Codebase Maintenance (Story 1 — maintenance tasks)**
 - **[E07:S01:T09](epics/epic-07/story-01-codebase-maintenance-tasks/E07S01T09-kanban-template-governance.md)** — UXR-005 MoSCOW spacing validator, corpus pass, RW/UKW Gate 10.
-  **Completed:** `2026-06-01T18:00:00Z` | **Version:** `v0.7.1.9+5` | **Agent:** `IPW` | [UXR-005](fr-br/UXR-005-kanban-board-formatting-and-governance.md) | [IPP-E7S1T9](../implementation-cycles/IPP-E07S01T09-kanban-template-governance-uxr005.md) | [log](../maintenance/logs/uxr-005-spacing-20260601.md)
+  **Completed:** `2026-06-01T18:00:00Z` | **Version:** `v0.7.1.9+5` | **Agent:** `IPW` | [UXR-005](fr-br/UXR-005-kanban-board-formatting-and-governance.md) | [IPP-E7S1T9](../../implementation-cycles/IPP-E07S01T09-kanban-template-governance-uxr005.md) | [log](../../maintenance/logs/uxr-005-spacing-20260601.md)
 
 #### **Epic 4: Kanban Framework (Story 19 — FR/BR/UXR abstract governance)**
 - **[E04:S19:T08](epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T08-fr072-approach-d-phase-d2-d4-migration-and-doc-sweep.md)** — FR-072 Approach D D2–D4; ADR-014; merged T07/FR-021 supersession.
-  **Completed:** `2026-06-01T18:40:00Z` | **Version:** `v0.4.19.8+2` | **Agent:** `RW` | [FR-072](fr-br/FR-072-uniform-repository-abstract-space-kanban-rules.md) | [ADR-014](../architecture/standards-and-adrs/ADR-014-repository-abstract-space-fr072-approach-d.md) | [IPP-E4S19T8](../implementation-cycles/IPP-E04S19T08-fr072-approach-d-d2-d4-migration-and-doc-sweep.md)
+  **Completed:** `2026-06-01T18:40:00Z` | **Version:** `v0.4.19.8+2` | **Agent:** `RW` | [FR-072](fr-br/FR-072-uniform-repository-abstract-space-kanban-rules.md) | [ADR-014](../../architecture/standards-and-adrs/ADR-014-repository-abstract-space-fr072-approach-d.md) | [IPP-E4S19T8](../../implementation-cycles/IPP-E04S19T08-fr072-approach-d-d2-d4-migration-and-doc-sweep.md)
 - **[E04:S19:T07](epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T07-fr021-repository-pattern-supersession-fr072-reconciliation.md)** — FR-021 supersession (merged into T08).
   **Completed:** `2026-06-01T18:40:00Z` | **Version:** `v0.4.19.8+2` | **Agent:** `RW` | [FR-021](fr-br/FR-021-fr-br-uxr-repository-stories.md)
 
 #### **Epic 6: Framework Management (Story 7 — ADK implementation analysis)**
 - **[E06:S07:T107](epics/epic-06/story-07-adk-implementation-analysis-and-package-management/T107-ide-command-whitelist-optimization.md)** — IDE command whitelist — ADR-013 catalog, validator, Cursor maintainer playbook.
-  **Completed:** `2026-05-30T23:59:00Z` | **Version:** `v0.6.7.107+3` | **Agent:** `RW` | [ADR-013](../architecture/standards-and-adrs/ADR-013-ide-command-allowlist-catalog-and-enforcement.md) | [IPP-E6S7T107](../implementation-cycles/IPP-E06S07T107-ide-command-whitelist-optimization.md)
+  **Completed:** `2026-05-30T23:59:00Z` | **Version:** `v0.6.7.107+3` | **Agent:** `RW` | [ADR-013](../../architecture/standards-and-adrs/ADR-013-ide-command-allowlist-catalog-and-enforcement.md) | [IPP-E6S7T107](../../implementation-cycles/IPP-E06S07T107-ide-command-whitelist-optimization.md)
 
 #### **Epic 2: Workflow Management (Story 16 — Perpetual workflow ops)**
 - **[E02:S16:T17](epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T17-agent-bootstrap-and-task-routing-fr103.md)** — **FR-103**: Agent bootstrap and task routing — ADR-012, single-step `AGENTS.md`, manifest mirror.
-  **Completed:** `2026-05-30T22:30:00Z` | **Version:** `v0.2.16.17+2` | **Agent:** `UKW Agent` | [FR-103](fr-br/FR-103-agent-bootstrap-and-task-routing.md) | [ADR-012](../architecture/standards-and-adrs/ADR-012-agent-bootstrap-and-task-routing.md) | [IPP-E2S16T17](../implementation-cycles/IPP-E02S16T17-agent-bootstrap-and-task-routing-fr103.md)
+  **Completed:** `2026-05-30T22:30:00Z` | **Version:** `v0.2.16.17+2` | **Agent:** `UKW Agent` | [FR-103](fr-br/FR-103-agent-bootstrap-and-task-routing.md) | [ADR-012](../../architecture/standards-and-adrs/ADR-012-agent-bootstrap-and-task-routing.md) | [IPP-E2S16T17](../../implementation-cycles/IPP-E02S16T17-agent-bootstrap-and-task-routing-fr103.md)
 
 #### **Epic 2: Workflow Management (Story 1 — RW agent execution)**
 - **[E02:S01:T23](epics/epic-02/story-01-rw-agent-execution-and-docs/T23-tool-agnostic-workflow-step-tracking-and-runlogs.md)** — Tool-agnostic workflow step tracking + agent run log v1 (ADR-011).
-  **Completed:** `2026-05-30T17:02:00Z` | **Version:** `v0.2.1.23+1` | **Agent:** `UKW Agent` | [ADR-011](../architecture/standards-and-adrs/ADR-011-workflow-step-tracker-and-agent-run-log.md) | [IPP-E2S1T23](../implementation-cycles/IPP-E2S01T23-tool-agnostic-workflow-step-tracking-runlogs.md)
+  **Completed:** `2026-05-30T17:02:00Z` | **Version:** `v0.2.1.23+1` | **Agent:** `UKW Agent` | [ADR-011](../../architecture/standards-and-adrs/ADR-011-workflow-step-tracker-and-agent-run-log.md) | [IPP-E2S1T23](../../implementation-cycles/IPP-E2S01T23-tool-agnostic-workflow-step-tracking-runlogs.md)
 
 #### **Epic 2: Workflow Management (Story 16 — Perpetual workflow ops)**
 - **[E02:S16:T16](epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T16-ukw-archive-completed-board-rows-fr102.md)** — **FR-102**: UKW archive completed (`UKW -c`) — ADR-010, agent SoT, Option A prune gating.
-  **Completed:** `2026-05-30T16:30:00Z` | **Version:** `v0.2.16.16+2` | **Agent:** `UKW Agent` | [FR-102](fr-br/FR-102-ukw-archive-completed-board-rows.md) | [ADR-010](../architecture/standards-and-adrs/ADR-010-ukw-archive-completed-c-flag.md) | [IPP-E2S16T16](../implementation-cycles/IPP-E02S16T16-ukw-archive-completed-fr102.md)
+  **Completed:** `2026-05-30T16:30:00Z` | **Version:** `v0.2.16.16+2` | **Agent:** `UKW Agent` | [FR-102](fr-br/FR-102-ukw-archive-completed-board-rows.md) | [ADR-010](../../architecture/standards-and-adrs/ADR-010-ukw-archive-completed-c-flag.md) | [IPP-E2S16T16](../../implementation-cycles/IPP-E02S16T16-ukw-archive-completed-fr102.md)
 
 #### **Epic 4: Kanban Framework (Story 19 — Abstract governance)**
 - **[E04:S19:T10](epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T10-e7-s00-detasking-abstract-space-enforcement-br076.md)** — **BR-076**: E7:S00 abstract-only detasking; historical UXR anchors; intake S00 ban.
-  **Completed:** `2026-05-30T13:28:56Z` | **Version:** `v0.4.19.10+2` | **Agent:** `RW` | [BR-076](fr-br/BR-076-e7-s00-must-not-host-concrete-tasks.md) | [IPP-E4S19T10](../implementation-cycles/IPP-E04S19T10-e7-s00-detasking-br076.md)
+  **Completed:** `2026-05-30T13:28:56Z` | **Version:** `v0.4.19.10+2` | **Agent:** `RW` | [BR-076](fr-br/BR-076-e7-s00-must-not-host-concrete-tasks.md) | [IPP-E4S19T10](../../implementation-cycles/IPP-E04S19T10-e7-s00-detasking-br076.md)
 
 #### **Epic 5: Documentation Management (Story 1 — FR Repo)**
 - **[E05:S01:T46](epics/epic-05/story-01-fr-repo/T46-rw-semver-tag-task-touch-mode.md)** — **FR-046**: Dual-version RW SemVer task-touch tagging — closure wave audit + IPP.
-  **Completed:** `2026-05-30T08:55:34Z` | **Version:** `v0.5.1.46+7` | **Agent:** `RW` | [FR-046](fr-br/FR-046-rw-semver-tag-task-touch-mode.md) | [IPP-E5S1T46](../implementation-cycles/IPP-E5S01T46-fr046-closure-wave.md)
+  **Completed:** `2026-05-30T08:55:34Z` | **Version:** `v0.5.1.46+7` | **Agent:** `RW` | [FR-046](fr-br/FR-046-rw-semver-tag-task-touch-mode.md) | [IPP-E5S1T46](../../implementation-cycles/IPP-E5S01T46-fr046-closure-wave.md)
 
 - **[E05:S01:T74](epics/epic-05/story-01-fr-repo/T74-kanban-intake-atomic-kg-r2-kg-r6-governance.md)** — **FR-074**: Kanban intake atomic KG-R2 / semantic KG-R6 governance.
   **Completed:** `2026-05-29T00:00:00Z` | **Version:** `v0.5.1.74+3` | **Agent:** `RW` | [FR-074](fr-br/FR-074-kanban-intake-atomic-kg-r2-kg-r6-governance.md)
 
 #### **Epic 7: Codebase Maintenance (Story 1)**
 - **[E07:S01:T11](epics/epic-07/story-01-codebase-maintenance-tasks/T11-consolidate-governance-under-docs-governance-fr101.md)** — **FR-101**: Consolidate governance under `docs/governance/` (Waves 0–F; ADR-007).
-  **Completed:** `2026-05-29T21:30:00Z` | **Version:** `v0.7.1.11+8` | **Agent:** `RW` | [FR-101](fr-br/FR-101-consolidate-governance-under-docs-governance.md) | [IPP-E7S1T11](../implementation-cycles/IPP-E7S01T11-consolidate-governance-under-docs-governance.md)
+  **Completed:** `2026-05-29T21:30:00Z` | **Version:** `v0.7.1.11+8` | **Agent:** `RW` | [FR-101](fr-br/FR-101-consolidate-governance-under-docs-governance.md) | [IPP-E7S1T11](../../implementation-cycles/IPP-E7S01T11-consolidate-governance-under-docs-governance.md)
 
 - **[E07:S01:T06](epics/epic-07/story-01-codebase-maintenance-tasks/T06-update-changelog-workflow.md)** — **FR-057**: Update Changelog Workflow (UCW/CMW scope).
   **Completed:** `2026-03-16T17:00:00Z` | **Version:** `v0.7.1.7+4` | **Agent:** `RW` | [FR-057](fr-br/FR-057-update-changelog-workflow.md)
@@ -439,42 +454,42 @@ housekeeping_policy: keep
 
 #### **Epic 5: Documentation Management (Story 1 — FR Repo)**
 - **[E05:S01:T62](epics/epic-05/story-01-fr-repo/T62-github-release-installation-experience.md)** — **FR-062**: install receipt JSON, release CI workflow, installer hardening (published artifacts may follow).
-  **Completed:** `2026-05-29T16:00:00Z` | **Version:** `v0.5.1.62+1` | **Agent:** `RW` | [—IPP—](../implementation-cycles/IPP-E5S01T62-github-release-install-fr062.md)
+  **Completed:** `2026-05-29T16:00:00Z` | **Version:** `v0.5.1.62+1` | **Agent:** `RW` | [—IPP—](../../implementation-cycles/IPP-E5S01T62-github-release-install-fr062.md)
 
 #### **Epic 4: Intelligent epic matching (Story 8)**
 - **[E04:S08:T07](epics/epic-04/story-08-intelligent-epic-matching-canonical-adoption/T07-task-splitting-across-multiple-canonical-epics-fr-011.md)** — **FR-011**: multi-epic task split engine, CLI, intake hook, tests.
-  **Completed:** `2026-05-29T15:30:00Z` | **Version:** `v0.4.8.7+1` | **Agent:** `RW` | [—IPP—](../implementation-cycles/IPP-E4S08T07-task-split-multi-epic-fr011.md)
+  **Completed:** `2026-05-29T15:30:00Z` | **Version:** `v0.4.8.7+1` | **Agent:** `RW` | [—IPP—](../../implementation-cycles/IPP-E4S08T07-task-split-multi-epic-fr011.md)
 
 #### **Epic 2: Workflow Management Framework (Story 16 — Perpetual)**
 - **[E02:S16:T07](epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T07-ukw-extension-for-fr-br-uxr-temporal-tracking-fr050.md)** — **FR-050**: UKW FBU temporal sync, `intake-completed` dashboard, agent docs + skill wiring.
-  **Completed:** `2026-05-29T15:15:00Z` | **Version:** `v0.2.16.7+1` | **Agent:** `RW` | [—IPP—](../implementation-cycles/IPP-E2S16T07-ukw-fbu-temporal-tracking-fr050.md)
+  **Completed:** `2026-05-29T15:15:00Z` | **Version:** `v0.2.16.7+1` | **Agent:** `RW` | [—IPP—](../../implementation-cycles/IPP-E2S16T07-ukw-fbu-temporal-tracking-fr050.md)
 
 #### **Epic 2: Workflow management (Story 1)**
 - **[E02:S01:T22](epics/epic-02/story-01-rw-agent-execution-and-docs/T22-rw-perpetual-task-version-py-build-increment-br075.md)** — **BR-075**: perpetual RW `VERSION_BUILD` must increment in `version_file` (validator fail-closed).
-  **Completed:** `2026-05-29T15:00:00Z` | **Version:** `v0.2.1.22+1` | **Agent:** `RW` | [—IPP—](../implementation-cycles/IPP-E2S01T22-rw-perpetual-version-py-build-br075.md)
+  **Completed:** `2026-05-29T15:00:00Z` | **Version:** `v0.2.1.22+1` | **Agent:** `RW` | [—IPP—](../../implementation-cycles/IPP-E2S01T22-rw-perpetual-version-py-build-br075.md)
 
 #### **Epic 6: Installation and adopter integration (Story 9)**
 - **[E06:S09:T02](epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T02-brownfield-modular-adopter-integration-fr081.md)** — **FR-081**: brownfield modular adoption — INSTALL chapter, matrices, worked example, installer messaging.
-  **Completed:** `2026-05-29T12:30:00Z` | **Version:** `v0.6.9.2+2` | **Agent:** `RW` | [—IPP—](../implementation-cycles/IPP-E6S09T02-brownfield-modular-adopter-integration-fr081.md)
+  **Completed:** `2026-05-29T12:30:00Z` | **Version:** `v0.6.9.2+2` | **Agent:** `RW` | [—IPP—](../../implementation-cycles/IPP-E6S09T02-brownfield-modular-adopter-integration-fr081.md)
 
 - **[E06:S09:T03](epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T03-installation-canonical-repo-alignment-fr082.md)** — **FR-082**: bootstrap public [`RMS-Ltd/ai-dev-kit`](https://github.com/RMS-Ltd/ai-dev-kit) + rewire canonical install/docs URLs.
   **Completed:** `2026-05-28T17:25:00Z` | **Version:** `v0.6.9.3+2` | **Agent:** `RW`
 
 #### **Epic 1: AI Dev Kit Core (Story 4 — Repository branding; FR-099 phases 0–4)**
 - **[E01:S04:T07](epics/epic-01/story-04-repository-branding-and-renaming/T07-fr099-phase4-rewire-and-verify.md)** — **FR-099 Phase 4**: rewire install URLs + public smoke; FR-099 IMPLEMENTED.
-  **Completed:** `2026-05-26T16:15:00Z` | **Version:** `v0.1.4.7+2` | **Agent:** `RW` | [—IPP—](../implementation-cycles/IPP-E1S04-fr099-book-private-public-migration.md)
+  **Completed:** `2026-05-26T16:15:00Z` | **Version:** `v0.1.4.7+2` | **Agent:** `RW` | [—IPP—](../../implementation-cycles/IPP-E1S04-fr099-book-private-public-migration.md)
 
 - **[E01:S04:T06](epics/epic-01/story-04-repository-branding-and-renaming/T06-fr099-phase3-public-ai-dev-kit-rebirth.md)** — **FR-099 Phase 3**: public [`earlution/ai-dev-kit`](https://github.com/earlution/ai-dev-kit) bootstrap (orphan + replay from `f21bac102`).
-  **Completed:** `2026-05-26T16:01:04Z` | **Version:** `v0.1.4.6+2` | **Agent:** `RW` | [—IPP—](../implementation-cycles/IPP-E1S04-fr099-book-private-public-migration.md)
+  **Completed:** `2026-05-26T16:01:04Z` | **Version:** `v0.1.4.6+2` | **Agent:** `RW` | [—IPP—](../../implementation-cycles/IPP-E1S04-fr099-book-private-public-migration.md)
 
 - **[E01:S04:T05](epics/epic-01/story-04-repository-branding-and-renaming/T05-fr099-phase2-book-extraction-genesis.md)** — **FR-099 Phase 2**: book extraction genesis on private `hf-ai-dev-kit` (genesis RW **v0.1.4.3+1**; kanban init **v0.1.4.5+1**).
-  **Completed:** `2026-05-26T12:17:16Z` | **Version:** `v0.1.4.5+1` | **Agent:** `RW` | [—IPP—](../implementation-cycles/IPP-E1S04-fr099-book-private-public-migration.md)
+  **Completed:** `2026-05-26T12:17:16Z` | **Version:** `v0.1.4.5+1` | **Agent:** `RW` | [—IPP—](../../implementation-cycles/IPP-E1S04-fr099-book-private-public-migration.md)
 
 - **[E01:S04:T04](epics/epic-01/story-04-repository-branding-and-renaming/T04-fr099-phase1-privatize-rename-hf-ai-dev-kit.md)** — **FR-099 Phase 1**: privatize + rename to `RMS-Ltd/hf-ai-dev-kit`.
-  **Completed:** `2026-05-26T00:00:00Z` | **Version:** `v0.1.4.4+1` | **Agent:** `RW -k` | [—IPP—](../implementation-cycles/IPP-E1S04-fr099-book-private-public-migration.md)
+  **Completed:** `2026-05-26T00:00:00Z` | **Version:** `v0.1.4.4+1` | **Agent:** `RW -k` | [—IPP—](../../implementation-cycles/IPP-E1S04-fr099-book-private-public-migration.md)
 
 - **[E01:S04:T03](epics/epic-01/story-04-repository-branding-and-renaming/T03-fr099-phase0-inventory-adr-approval.md)** — **FR-099 Phase 0**: inventory + ADR-006 outline; E01:S04:T02 superseded; phase split **v0.1.4.3+3**.
-  **Completed:** `2026-05-26T00:00:00Z` | **Version:** `v0.1.4.3+3` | **Agent:** `RW -k` | [—IPP—](../implementation-cycles/IPP-E1S04-fr099-book-private-public-migration.md)
+  **Completed:** `2026-05-26T00:00:00Z` | **Version:** `v0.1.4.3+3` | **Agent:** `RW -k` | [—IPP—](../../implementation-cycles/IPP-E1S04-fr099-book-private-public-migration.md)
 
 #### **Epic 6: Framework Management (Story 9 — Installation and adopter integration)**
 - **[E06:S09:T06](epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T06-ecc-harness-phases-2-5-fr098.md)** — **FR-098 phases 2–5**: bridge validator, optional install helper, hooks/AgentShield docs, cheatsheet; dogfood T8 dry-run + validators PASS; `--copy-bridge` fix.
@@ -520,7 +535,7 @@ housekeeping_policy: keep
   **Completed:** `2026-05-15T00:00:00Z` | **Version:** `v0.4.7.2+1` | **Agent:** `RW Agent`
 
 - **[E04:S07:T01](epics/epic-04/story-07-migration-support-and-installation-modes/T01-br006-detection-analysis-verification-closure.md)** — BR-006 detection/analysis utilities for existing structures. Implemented `detect_existing_structure.py` (scans epic directories, detects documents, identifies tasks, generates report). Implemented `analyze_structure.py` (maps to E/S/T format, identifies conflicts/gaps, generates migration plan). Verification closure: analyze_structure NameError fix; IPP wired.  
-  **Completed:** `2026-06-05T03:38:55Z` | **Version:** `v0.4.7.1+1` | **Agent:** `RW Agent` | [BR-006](fr-br/BR-006-missing-migration-support-pre-existing-kanban.md) | [IPP](../implementation-cycles/IPP-E04S07T01-br006-migration-support-pre-existing-kanban.md)
+  **Completed:** `2026-06-05T03:38:55Z` | **Version:** `v0.4.7.1+1` | **Agent:** `RW Agent` | [BR-006](fr-br/BR-006-missing-migration-support-pre-existing-kanban.md) | [IPP](../../implementation-cycles/IPP-E04S07T01-br006-migration-support-pre-existing-kanban.md)
 
 #### **Epic 2: Workflow Management Framework (Story 6 — Package Uninstall and Recovery)**
 - **[E02:S06:T01](epics/epic-02/story-06-package-uninstall-and-recovery.md)** — FR-008 uninstall command and safety rails — **RE-IMPLEMENTED**. Fixed broken CLI `remove` command (`select_backend` parameter mismatch, backend instantiation bug). Added `uninstall` alias. Implemented dependency validation (`_check_dependencies`) and backup creation (`_create_backup`). Added 27 tests across `tests/cli/test_remove_command.py`, `tests/test_backends.py`, and `tests/test_uninstall_package.py`. All FR-008 AC-1..AC-5 and NFR-1..NFR-3 verified. **[FR-008](fr-br/FR-008-package-uninstall-capabilities.md)** **COMPLETE (AC-1..AC-5)**.  
@@ -537,7 +552,7 @@ housekeeping_policy: keep
 - **[E02:S01:T18](epics/epic-02/story-01-rw-agent-execution-and-docs/T18-rw-step-8-stage-completeness-guardrails-br070.md)** — BR-070 AC4 post-commit verification validator implementation. Implemented `validate_rw_step7_post_commit.py` (belt-and-suspenders check after `git commit` proving release commit contains every Step-7 output). Added 8 test cases (all green). Updated RW execution guide with Step 11.5 documentation. Updated both `release-workflow.yaml` files with `step-10.5`/`step-11.5`. Finalized T18 (all ACs complete, status COMPLETE with forensic marker) and BR-070 (all ACs closed, status CLOSED). No regression in existing pre-commit validator tests (9 tests still pass).  
   **Completed:** `2026-05-15T00:00:00Z` | **Version:** `v0.2.1.18+1` | **Agent:** `RW Agent`
 
-> **Epic 24 completions** (E24:S05:T01–T02) archived in private `RMS-Ltd/hf-ai-dev-kit` — removed from public genesis tree per [ADR-006](../architecture/standards-and-adrs/ADR-006-book-project-private-repository-spin-off.md) (FR-099 Phase 2).
+> **Epic 24 completions** (E24:S05:T01–T02) archived in private `RMS-Ltd/hf-ai-dev-kit` — removed from public genesis tree per [ADR-006](../../architecture/standards-and-adrs/ADR-006-book-project-private-repository-spin-off.md) (FR-099 Phase 2).
 
 #### **Epic 6: Framework Management (Story 1 — BR Repo)**
 - **[E06:S01:T38](epics/epic-06/story-01-br-repo/T38-ukw-completed-tasks-not-removed-from-kboard-br072.md)** — **BR-072** UKW completed-task removal fix (UKW definition restructured — Part A/B separation of completed-task removal from MoSCOW classification; explicit `kanban-completed.md` archive write step added; cross-section deduplication guard added; root cause was removal clause buried as subordinate within MoSCOW step; AC5 confirmed via first live UKW execution 2026-05-12; all 6 ACs satisfied); **[BR-072](fr-br/BR-072-ukw-completed-tasks-not-removed-from-kboard.md)** **RESOLVED**.  
