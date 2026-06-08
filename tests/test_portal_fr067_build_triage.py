@@ -35,7 +35,7 @@ def triage_text() -> str:
 
 
 def _docs_exclude_globs(config_text: str) -> list[str]:
-    m = re.search(r"exclude:\s*\[([\s\S]*?)\]\s*,", config_text)
+    m = re.search(r"exclude:\s*\[([\s\S]*?)\]\s*,?", config_text)
     assert m, "docs.exclude array not found in docusaurus.config.js"
     inner = m.group(1)
     return re.findall(r"['\"]([^'\"]+)['\"]", inner)
