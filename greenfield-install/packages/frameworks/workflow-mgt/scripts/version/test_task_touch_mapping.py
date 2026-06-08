@@ -37,6 +37,7 @@ class TestTaskTouchMapping:
         # Create test config
         test_config = {
             "semver_mapping_strategy": "task_touch",
+            "release_state_backend": "legacy",
             "project_name": "test-project"
         }
         with open(self.config_file, 'w') as f:
@@ -224,14 +225,24 @@ class TestCollisionScenarios:
         """Set up test environment."""
         self.temp_dir = tempfile.mkdtemp()
         self.registry_file = Path(self.temp_dir) / "semver-registry.yaml"
-        
+        self.test_config = {
+            "semver_mapping_strategy": "task_touch",
+            "release_state_backend": "legacy",
+        }
+
         self.original_find_registry = semver_converter.find_registry_file
         semver_converter.find_registry_file = lambda: self.registry_file
-    
+        self.original_load_config = semver_converter.load_rw_config
+        semver_converter.load_rw_config = lambda: self.test_config
+        self.original_get_backend = semver_converter.get_release_state_backend
+        semver_converter.get_release_state_backend = lambda: "legacy"
+
     def teardown_method(self):
         """Clean up test environment."""
         shutil.rmtree(self.temp_dir)
         semver_converter.find_registry_file = self.original_find_registry
+        semver_converter.load_rw_config = self.original_load_config
+        semver_converter.get_release_state_backend = self.original_get_backend
     
     def test_incident_collision_scenario(self):
         """Test the specific collision from the incident log."""

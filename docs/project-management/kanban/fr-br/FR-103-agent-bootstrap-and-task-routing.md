@@ -11,7 +11,7 @@ housekeeping_policy: keep
 **Type:** Feature Request (FR)  
 **ID:** FR-103  
 **Submitted:** 2026-05-30  
-**Submitted By:** User (ADR intake — `ADR-agent-bootstrap-and-task-routing.md`)  
+**Submitted By:** User (ADR intake — registered as [ADR-012](../../../architecture/standards-and-adrs/ADR-012-agent-bootstrap-and-task-routing.md))  
 **Priority:** HIGH  
 **Severity:** MEDIUM  
 **Status:** IMPLEMENTED  
@@ -19,7 +19,7 @@ housekeeping_policy: keep
 
 **Implementing Task:** [E02:S16:T17](../epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T17-agent-bootstrap-and-task-routing-fr103.md) (v0.2.16.17+2)
 
-**Related:** [FR-041](FR-041-windsurf-investigate-agents-skills-for-workflows.md), [FR-022](FR-022-policy-docs-machine-readable-salience.md), [FR-028](FR-028-cursor-ide-performance-considerations-awareness.md), [UXR-015](UXR-015-workflow-initiation-cheatsheet.md), [BR-071](BR-071-rw-trigger-routing-not-executing-from-chat-session.md), draft ADR at repo root [`ADR-agent-bootstrap-and-task-routing.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/ADR-agent-bootstrap-and-task-routing.md)
+**Related:** [FR-041](FR-041-windsurf-investigate-agents-skills-for-workflows.md), [FR-022](FR-022-policy-docs-machine-readable-salience.md), [FR-028](FR-028-cursor-ide-performance-considerations-awareness.md), [UXR-015](UXR-015-workflow-initiation-cheatsheet.md), [BR-071](BR-071-rw-trigger-routing-not-executing-from-chat-session.md), [ADR-012](../../../architecture/standards-and-adrs/ADR-012-agent-bootstrap-and-task-routing.md)
 
 ---
 
@@ -53,7 +53,7 @@ Today:
 
 ## Proposed Solution
 
-Adopt the architecture in draft ADR **`ADR-agent-bootstrap-and-task-routing.md`** (register as **ADR-012** under `docs/architecture/standards-and-adrs/` during implementation).
+Adopt the architecture in **[ADR-012](../../../architecture/standards-and-adrs/ADR-012-agent-bootstrap-and-task-routing.md)** (`docs/architecture/standards-and-adrs/`).
 
 ### Layer 1 — Intro (always load)
 
@@ -183,7 +183,7 @@ Adopt the architecture in draft ADR **`ADR-agent-bootstrap-and-task-routing.md`*
 
 ## Notes
 
-- Source decision doc: [`ADR-agent-bootstrap-and-task-routing.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/ADR-agent-bootstrap-and-task-routing.md) (repo root; v0.0.1 Proposed).
+- Source decision doc: [ADR-012](../../../architecture/standards-and-adrs/ADR-012-agent-bootstrap-and-task-routing.md) (Accepted 2026-05-30).
 - Implementation should run **IPW** on **E02:S16:T17** before code/docs execution (global gate).
 - Splitting `AGENTS.md` may require moving current role definitions to `docs/project-management/kanban/AGENTS.md` (already exists) or a dedicated `docs/agents/` index — IPP should decide housing.
 
@@ -191,7 +191,7 @@ Adopt the architecture in draft ADR **`ADR-agent-bootstrap-and-task-routing.md`*
 
 ## References
 
-- [`ADR-agent-bootstrap-and-task-routing.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/ADR-agent-bootstrap-and-task-routing.md)
+- [ADR-012](../../../architecture/standards-and-adrs/ADR-012-agent-bootstrap-and-task-routing.md)
 - [`AGENTS.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/AGENTS.md)
 - [`docs/guides/workflow-initiation-cheatsheet.md`](../../../guides/workflow-initiation-cheatsheet.md)
 - [Kanban governance policy](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/kanban/policies/kanban-governance-policy.md)

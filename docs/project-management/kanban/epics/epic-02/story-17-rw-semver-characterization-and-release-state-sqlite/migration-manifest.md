@@ -8,10 +8,10 @@
 
 ## 1. Preconditions
 
-- [ ] `release_state_db` path writable (default `.adk/release-state.db`)
-- [ ] Copy of production `semver-registry.yaml` and `docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v*.md` available
-- [ ] Git worktree or branch isolated from live RW (characterization harness pattern)
-- [ ] `release_state_backend: legacy` until T05 parity passes
+- [x] `release_state_db` path writable (default `.adk/release-state.db`)
+- [x] Copy of production `semver-registry.yaml` and `docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v*.md` available
+- [x] Git worktree or branch isolated from live RW (characterization harness pattern)
+- [x] `release_state_backend: legacy` until T05 parity passes — **cutover 2026-06-08** via T07 RW `v0.2.17.7+1`; archive at `semver-registry-legacy-final.yaml`
 
 ---
 

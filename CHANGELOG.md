@@ -11,10 +11,10 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
-## [0.2.16.4+39] - 08-06-26
+## [0.2.17.7+1] - 08-06-26
 
-E02:S16:T04 — **Change implemented:** UKW -u bookkeeping — post-T16/main merge kanban sync (T15 CI verified, board metadata). SemVer **v0.4.1058+39**.
+E02:S17:T07 — **Change implemented:** Production SQLite semver-registry cutover — import + archive legacy YAML, `release_state_backend: sqlite`, stage `.adk/release-state.db`. SemVer **v0.4.1059+1**.
 
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.16.4+39.md)
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.17.7+1.md)
 
 ---

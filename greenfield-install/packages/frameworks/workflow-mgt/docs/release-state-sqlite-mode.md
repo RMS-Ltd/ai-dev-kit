@@ -1,4 +1,6 @@
-# Release-state SQLite mode (E02:S17:T04)
+# Release-state SQLite mode (E02:S17:T04 / T07)
+
+**ai-dev-kit production default** since `v0.2.17.7+1` (E02:S17:T07). Legacy YAML archived at `docs/changelog-and-release-notes/changelog-archive/semver-registry-legacy-final.yaml`.
 
 When `rw-config.yaml` sets `release_state_backend: sqlite`:
 
