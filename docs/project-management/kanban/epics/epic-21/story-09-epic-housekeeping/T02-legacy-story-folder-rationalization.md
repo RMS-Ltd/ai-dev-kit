@@ -11,8 +11,8 @@ housekeeping_policy: keep
 **Task ID:** E21:S09:T02  
 **Status:** COMPLETE  
 **Priority:** LOW  
-**Last updated:** 2026-06-08 (RW **v0.21.9.2+1**)  
-**Version Anchor:** v0.21.9.2+1  
+**Last updated:** 2026-06-08 (RW **v0.21.9.2+2** — bootstrap open-work refresh)  
+**Version Anchor:** v0.21.9.2+2  
 **Code:** E21S09T02
 
 ---

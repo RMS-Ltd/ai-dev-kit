@@ -12,8 +12,8 @@ housekeeping_policy: keep
 **Priority:** MEDIUM  
 **Estimated Effort:** Small  
 **Created:** 2026-06-08  
-**Last updated:** 2026-06-08 (v0.21.9.2+1 — T02 legacy folder redirects)  
-**Version:** v0.21.9.2+1  
+**Last updated:** 2026-06-08 (v0.21.9.2+2 — T02 bootstrap open-work refresh)  
+**Version:** v0.21.9.2+2  
 **Code:** E21S09
 
 ---
@@ -28,7 +28,7 @@ Administrative reconciliation for Epic 21 after S01–S02 and S08 Layer 0–1 sh
 
 - [x] **E21:S09:T01 – FR-006 Phase 2 header and status reconciliation** - COMPLETE (2026-06-08 — UKW housekeeping)
   - Task: [`T01-fr006-phase2-header-and-status-reconciliation`](story-09-epic-housekeeping/T01-fr006-phase2-header-and-status-reconciliation.md)
-- [x] **E21:S09:T02 – Legacy epic-21 story folder rationalization** - COMPLETE (v0.21.9.2+1)
+- [x] **E21:S09:T02 – Legacy epic-21 story folder rationalization** - COMPLETE (v0.21.9.2+2)
   - Task: [`T02-legacy-story-folder-rationalization`](story-09-epic-housekeeping/T02-legacy-story-folder-rationalization.md)
 
 ---

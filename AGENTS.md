@@ -42,7 +42,7 @@ When editing this table, update `docs/project-agent-manifest.json` `taskRouting[
 
 | Task | Summary | Task doc |
 | ---- | ------- | -------- |
-| E07:S07:T03 | BR-091 — workflow validator slug path resolution (v0.7.7.3+1 released; CI verification pending) | `docs/project-management/kanban/epics/epic-07/story-07-code-reviews/T03-workflow-validator-slug-path-resolution-br091.md` |
+| E21:S03:T01 | FR-006 Phase 3 — identify and extract translatable content (next epic-21 stream) | `docs/project-management/kanban/epics/epic-21/story-03-translation-and-localisation/T01-identify-and-extract-all-translatable-content.md` |
 
 Refresh from `kboard.md` when running UKW or RW Step 7; mirror into manifest `openWork[]` if changed.
 

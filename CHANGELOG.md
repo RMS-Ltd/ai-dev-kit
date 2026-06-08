@@ -10,10 +10,10 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 ---
 
 
-## [0.21.9.2+1] - 08-06-26
+## [0.21.9.2+2] - 08-06-26
 
-E21:S09:T02 — **Change implemented:** Legacy epic-21 story folder redirects (S00/mis-numbered paths → canonical S01–S07). SemVer **v0.4.1087+1**.
+E21:S09:T02 — **Change implemented:** Agent bootstrap open-work refresh (E21:S03:T01); kboard version metadata sync. SemVer **v0.4.1088+2**.
 
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.21.9.2+1.md)
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.21.9.2+2.md)
 
 ---
