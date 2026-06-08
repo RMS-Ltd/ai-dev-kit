@@ -70,7 +70,7 @@ housekeeping_policy: keep
 - [ ] **E08:S03:T15 – GitHub Actions CI health (Perpetual)** — 🔄 PERPETUAL (**v0.8.3.15+4** — Wave 3: Tests archive guard + greenfield drift; pending Actions verify) — [Task doc](story-03-automation-scripts/T15-github-actions-ci-health-perpetual-fr112.md) | [FR-112](../../fr-br/FR-112-perpetual-github-ci-and-security-health-lanes.md) | [IPP](../../../../implementation-cycles/IPP-E08S03T15-github-actions-ci-health-perpetual-fr112.md)
 
 
-- [ ] **E08:S03:T16 – GitHub Security & Code Quality health (Perpetual)** — 🔄 PERPETUAL (**v0.8.3.16+1** — deferral **lifted** @ T12 closure; Wave 2+ active) — [Task doc](story-03-automation-scripts/T16-github-security-code-quality-health-perpetual-fr112.md) | [FR-112](../../fr-br/FR-112-perpetual-github-ci-and-security-health-lanes.md) | [IPP](../../../../implementation-cycles/IPP-E08S03T16-github-security-code-quality-health-perpetual-fr112.md)
+- [ ] **E08:S03:T16 – GitHub Security & Code Quality health (Perpetual)** — 🔄 PERPETUAL (**v0.8.3.16+2** — Wave 2a manifest @ `4c4e9275`) — [Task doc](story-03-automation-scripts/T16-github-security-code-quality-health-perpetual-fr112.md) | [FR-112](../../fr-br/FR-112-perpetual-github-ci-and-security-health-lanes.md) | [IPP](../../../../implementation-cycles/IPP-E08S03T16-github-security-code-quality-health-perpetual-fr112.md)
 
 
 - [x] **E08:S03:T17 – Local Code Quality Gate (CQG) (FR-113)** — ✅ COMPLETE (**v0.8.3.17+2**) — [Task doc](story-03-automation-scripts/T17-local-code-quality-gate-cqg-fr113.md) | [FR-113](../../fr-br/FR-113-local-code-quality-gate-cqg.md) | [IPP](../../../../implementation-cycles/IPP-E08S03T17-local-code-quality-gate-cqg-fr113.md)

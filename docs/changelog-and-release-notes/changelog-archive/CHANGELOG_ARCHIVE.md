@@ -1,4 +1,11 @@
 # Changelog Archive
+## [0.8.3.16+2] - 08-06-26
+
+E08:S03:T16 — **Change implemented:** Wave 2a manifest re-scan @ `main` `4c4e9275` (post-T15 CI green); IPP §8; coordination matrix update. SemVer **v0.4.1056+2**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.8.3.16+2.md)
+
+---
 ## [0.1.6.2+1] - 07-06-26
 
 E01:S06:T02 — **Change implemented:** MIT `LICENSE` file; README and CONTRIBUTING legal metadata (FR-117). SemVer **v0.4.1040+1**.

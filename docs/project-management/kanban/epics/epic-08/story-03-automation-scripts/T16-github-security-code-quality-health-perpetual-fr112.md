@@ -13,8 +13,8 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** Medium (ongoing)  
 **Created:** 2026-06-05  
-**Last updated:** 2026-06-07 (IPW Wave 2+ — §8 rolling backlog; deferral **lifted**; Wave 2a/2b in progress)  
-**Version Anchor:** v0.8.3.16+1  
+**Last updated:** 2026-06-08 (Wave 2a manifest @ `4c4e9275`; Wave 2b theme: autofix `py/unused-import` in `release_metadata/`)  
+**Version Anchor:** v0.8.3.16+2 (Wave 2a) → v0.8.3.16+3 (Wave 2b)  
 **Code:** E08S03T16  
 **Task Type:** Perpetual Maintenance
 
@@ -182,17 +182,52 @@ Use **`RW E08:S03:T16`** for recurring security/Code Quality hygiene (BUILD incr
 
 ---
 
-## Coordination matrix (T12–T14 vs T16)
+## Wave 2 re-scan manifest (2026-06-08 — Wave 2a)
+
+**Capture:** `main` @ **`4c4e9275`** (2026-06-08 11:30 UTC). **Merge gate RF12:** satisfied — Tests + Greenfield install + Workflow scripts pytest **success** @ `4c4e9275` ([Actions](https://github.com/RMS-Ltd/ai-dev-kit/actions)). Code scanning via `gh api` (0 open). Standard/AI bands: [Code Quality dashboard](https://github.com/RMS-Ltd/ai-dev-kit/security/quality) SoT; supplementary local ruff/CQG proxy on post-merge `dev`.
+
+| Surface | Open count | Score | Delta vs Wave 1 (`f6aa4dca`) | Delta vs T12 Good (`ed379ab`) |
+| ------- | ---------- | ----- | ---------------------------- | ----------------------------- |
+| [Code scanning](https://github.com/RMS-Ltd/ai-dev-kit/security/code-scanning) | **0** | 5 alerts **fixed** | unchanged | unchanged |
+| Standard — maintainability | **Good band** (UI count not re-exported) | **Good** | **Fair → Good** (T12 burn-down) | unchanged score; `4c4e9275` adds E02:S17 `release_state/` surface |
+| Standard — reliability | **Good band** (UI count not re-exported) | **Good** | **Fair → Good** (T13 wave-2) | unchanged score |
+| [AI findings](https://github.com/RMS-Ltd/ai-dev-kit/security/quality/ai-findings) | **~12–17 lag** (T14 lag-accepted) | Open (stale panel) | 12 → **lag-stable** | T14 COMPLETE @ v0.8.3.14+5 — refresh in Wave 2b theme 1 if needed |
+
+**Local proxy @ post-merge `dev` (supplementary — not dashboard SoT):**
+
+| Proxy | Count | Notes |
+| ----- | ----- | ----- |
+| `ruff` `F401` (`py/unused-import` class) | **17** autofix-safe | **10** in `packages/` + `greenfield-install/` `release_metadata/` (E02:S17 landing); **7** in `scripts/` + `tests/` |
+| CQG monitor | advisory threshold breach | Predominantly maintainability warnings; meets `rw_threshold` (non-strict) |
+
+**Rule breakdown proxy — `release_metadata/` mirror pair (Wave 2b target):**
+
+| CodeQL rule (approx.) | Open (local ruff) | Band | Theme |
+| --------------------- | ----------------- | ---- | ----- |
+| `py/unused-import` | **10** (5 files × 2 trees) | Maintainability | Wave 2b — autofix-safe |
+| `Tuple`, `sqlite3`, `Optional`, `Path` imports | per-file | Maintainability | E02:S17 SQLite ingest landing |
+
+**Cross-lane notes:**
+
+- **T15:** CI green on `main` @ `4c4e9275` (PR #41 merge path); merge gate **lifted** for T16 code waves.
+- **T12/T13:** operator **Good/Good** @ `ed379ab`; finite backlogs **COMPLETE**.
+- **T14:** lag-accepted AI groups; panel refresh optional Wave 2b theme 1.
+- **T17 (CQG):** local gate run before Wave 2b RW; report cited in changelog.
+
+---
+
+## Coordination matrix (T12–T17 vs T16)
 
 | Task | Surface | Status | T16 may remediate? |
 | ---- | ------- | ------ | ------------------ |
-| **T12** / BR-099 | Standard — maintainability (**146** / Fair) | IN PROGRESS (wave 2/3) | **No** — defer to T12 IPP |
-| **T13** / BR-100 | Standard — reliability (**28** / **Fair**) | IN PROGRESS (wave 3 exit/quit deferred) | **No** — defer to T13 IPP |
-| **T14** / BR-101 | AI findings panel (**12** open) | IN PROGRESS — WAITING (FBU) | **No** — defer to T14 IPP |
-| **T16** | Code scanning + perpetual dashboard hygiene | IN PROGRESS | **Yes** — after handoff or net-new alerts |
-| **T15** | [Actions](https://github.com/RMS-Ltd/ai-dev-kit/actions) CI | IN PROGRESS | **No** — separate lane |
+| **T12** / BR-099 | Standard — maintainability | **COMPLETE** — **Good** @ `ed379ab` | Residuals → T16 |
+| **T13** / BR-100 | Standard — reliability | **COMPLETE** — **Good** @ `ed379ab` | Residuals → T16 |
+| **T14** / BR-101 | AI findings panel (lag-accepted) | **COMPLETE** @ v0.8.3.14+5 | T16 theme 1 refresh |
+| **T15** / FR-112 | [Actions](https://github.com/RMS-Ltd/ai-dev-kit/actions) CI | **IN PROGRESS** — green @ `4c4e9275` | **No** — separate lane |
+| **T16** | Code scanning + perpetual dashboard hygiene | **IN PROGRESS** | **Yes** |
+| **T17** / FR-113 | Local CQG complement | IN PROGRESS | Cross-ref only |
 
-**Handoff trigger:** When T12, T13, T14 reach COMPLETE, residual standard/AI open counts roll into T16 perpetual waves per [IPP-E08S03T16](../../../../../implementation-cycles/IPP-E08S03T16-github-security-code-quality-health-perpetual-fr112.md) §4 Wave 1+.
+**Handoff:** T12–T14 **COMPLETE** → T16 Wave 2+ per [IPP §8](../../../../../implementation-cycles/IPP-E08S03T16-github-security-code-quality-health-perpetual-fr112.md).
 
 ---
 
@@ -203,6 +238,8 @@ Use **`RW E08:S03:T16`** for recurring security/Code Quality hygiene (BUILD incr
 - [x] **AC3:** FR-112 bidirectional link; Story 003 checklist and `kboard.md` O-band wired.
 - [x] **AC4:** First attributed RW records baseline open counts on `main` (code scanning + code quality) — **v0.8.3.16+1** @ `777e956`.
 - [x] **AC5 (Wave 1 re-scan):** Wave 1 manifest @ `f6aa4dca` recorded with rule breakdown + cross-lane deltas ([IPP §4 Wave 1 re-scan](../../../../../implementation-cycles/IPP-E08S03T16-github-security-code-quality-health-perpetual-fr112.md)).
+- [x] **AC6 (Wave 2a):** Wave 2 manifest @ `4c4e9275` with delta vs Wave 1 + T12 Good; shipped **v0.8.3.16+2** (docs-only).
+- [ ] **AC7 (Wave 2b):** First themed remediation RW — `py/unused-import` autofix in `release_metadata/` + mirror; CQG + pytest green; operator dashboard verify pending.
 
 ---
 

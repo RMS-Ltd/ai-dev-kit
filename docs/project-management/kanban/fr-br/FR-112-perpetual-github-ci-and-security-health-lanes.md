@@ -13,7 +13,7 @@ housekeeping_policy: keep
 **Submitted:** 2026-06-05  
 **Submitted By:** User (via agent — CI/security ownership gap)  
 **Priority:** HIGH  
-**Status:** IN PROGRESS (v0.8.3.15+4 — T15 Wave 3 CI hygiene shipped; pending Actions verify; T16 **DEFERRED** until T12 sign-off — T13/T14 **COMPLETE** @ v0.8.3.13+4 / v0.8.3.14+5)  
+**Status:** IN PROGRESS (T16 Wave 2a @ **v0.8.3.16+2** — manifest @ `main` `4c4e9275`; T15 CI green on main; T12–T14 **COMPLETE**)  
 **Implementing Tasks:**
 - **E08:S03:T15** — [GitHub Actions CI health (Perpetual)](../epics/epic-08/story-03-automation-scripts/T15-github-actions-ci-health-perpetual-fr112.md)
 - **E08:S03:T16** — [GitHub Security & Code Quality health (Perpetual)](../epics/epic-08/story-03-automation-scripts/T16-github-security-code-quality-health-perpetual-fr112.md)
