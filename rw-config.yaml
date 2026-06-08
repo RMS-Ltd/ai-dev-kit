@@ -110,3 +110,8 @@ code_quality_gate:
   retention_count: 10
   codeql_command: codeql
 
+# E08:S03:T15 / FR-112 — RW Step 9.7 Actions CI parity (mirror .github/workflows/*)
+actions_ci_parity:
+  enabled: true
+  # checks: optional override; defaults in validate_actions_ci_parity.py
+

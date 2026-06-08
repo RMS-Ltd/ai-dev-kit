@@ -96,6 +96,15 @@ canonical_rw_steps:
     blocking: false
     category: "validation"
 
+  step_9_7:
+    number: 9.7
+    name: "Actions CI Parity Gate"
+    description: "validate_actions_ci_parity.py --strict (path-aware GH workflow mirror); blocking; E08:S03:T15 / FR-112; --strict --all before push"
+    mandatory: true
+    blocking: true
+    category: "validation"
+    script: "packages/frameworks/workflow-mgt/scripts/validation/validate_actions_ci_parity.py"
+
   step_10:
     number: 10
     name: "Commit Changes"
@@ -142,15 +151,15 @@ canonical_rw_steps:
 execution_paths:
   full_release:
     trigger: "RW"
-    steps: [1, 2, 3, 4, 5, 6, 7, 8, 9, 9.5, 9.6, 10, 11, 13]
-    description: "Local-complete release (commit + tag locally; no push unless --push) — UXR-024"
+    steps: [1, 2, 3, 4, 5, 6, 7, 8, 9, 9.5, 9.6, 9.7, 10, 11, 13]
+    description: "Local-complete release (commit + tag locally; NEVER push unless --push) — UXR-024; Step 9.7 push-ready gate"
     category: "full"
     completion_status: "RW COMPLETE (local)"
 
   full_release_push:
     trigger: "RW --push"
-    steps: [1, 2, 3, 4, 5, 6, 7, 8, 9, 9.5, 9.6, 10, 11, 12, 12.5, 13]
-    description: "Full release with remote push + GitHub Release (user must type --push)"
+    steps: [1, 2, 3, 4, 5, 6, 7, 8, 9, 9.5, 9.6, 9.7, 10, 11, 12, 12.5, 13]
+    description: "Full release with remote push + GitHub Release (user must type --push); Step 9.7 --all before Step 12"
     category: "full"
     completion_status: "RW COMPLETE (pushed)"
 

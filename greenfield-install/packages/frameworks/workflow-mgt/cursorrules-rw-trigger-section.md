@@ -132,6 +132,7 @@ todo_write(merge=False, todos=[
     {'id': 'rw-step-9', 'status': 'pending', 'content': 'Step 9: Run Validators - branch, changelog, version bump, RW task complete, etc.'},
     {'id': 'rw-step-9.5', 'status': 'pending', 'content': 'Step 9.5: Changelog Management Workflow (CMW) - Trigger CMW if changelog size exceeds threshold (optional, non-blocking)'},
     {'id': 'rw-step-9.6', 'status': 'pending', 'content': 'Step 9.6: Check IDE-Flagged Problems - errors, warnings, infos in modified files (recommended, non-blocking)'},
+    {'id': 'rw-step-9.7', 'status': 'pending', 'content': 'Step 9.7: Actions CI Parity Gate - validate_actions_ci_parity.py --strict (BLOCKING; E08:S03:T15)'},
     {'id': 'rw-step-10', 'status': 'pending', 'content': 'Step 10: Commit Changes - Create git commit with versioned message'},
     {'id': 'rw-step-11', 'status': 'pending', 'content': 'Step 11: Create Git Tag - Internal + SemVer annotated tags'},
     {'id': 'rw-step-12', 'status': 'cancelled', 'content': 'Step 12: Push to Remote - SKIP unless --push in trigger (UXR-024)'},
@@ -440,6 +441,7 @@ For each step, follow this pattern:
 9. **Run Validators** - Execute validation scripts. **Use config:** If `rw-config.yaml` exists, read `scripts_path` from config. Otherwise, use `packages/frameworks/workflow-mgt/scripts/validation/` as fallback. Run `validate_branch_context.py`, `validate_changelog_format.py`, `validate_version_bump.py`, `validate_release_tag_immutability.py`, `check_changelog_size.py`, `validate_changelog_archive_links.py`, and **`validate_board_stamp_diff.py`** (FR-097: compare Step 7 start snapshots to current `kboard.md` — **blocking** on un evidenced row stamp deltas). Run **`validate_kanban_state_icons.py`** (UXR-012 Gate 9: `--strict` on `kboard.md`). Run `validate_release_readiness.py` (Gates 1–9 including stamp homogeneity + MoSCOW state icons). All scripts read `rw-config.yaml` when available. **If RW was triggered with `--art`, propagate adoption context in Step 9** by passing `--requested "<parsed_id>" --art` to `validate_branch_context.py` and `validate_version_bump.py`. For **docs-only** releases requiring **BUILD +0** on an **existing** E/S/T, add **`--dpz`** to `validate_version_bump.py` (alias: `--doc-policy-zero`) (same **--strict** / **--requested** / **--art** line). **Note:** `validate_version_bump` supports perpetual tasks (`perpetual_task` or `Task Type: Perpetual Maintenance`). **Note:** `check_changelog_size.py` exit code 1 is non-blocking and triggers Step 9.5. **Note:** `validate_changelog_archive_links.py` is non-blocking (BR-074).
 9.5. **Changelog Management Workflow (CMW)** - **OPTIONAL, NON-BLOCKING:** If Step 9's `check_changelog_size.py` indicated threshold exceeded (exit code 1), automatically run CMW. Skip if not exceeded. CMW failures are non-blocking.
 9.6. **Check IDE-Flagged Problems (recommended before commit)** - **RECOMMENDED, NON-BLOCKING:** Before Step 10, check IDE/linter issues in modified files; fix where practical and re-stage.
+9.7. **Actions CI Parity Gate (BLOCKING — E08:S03:T15 / FR-112)** — Run `validate_actions_ci_parity.py --strict` before Step 10 on full `RW` / `RW -d`. Path-aware mirror of required GitHub Actions workflows. Non-zero exit → **RW ABORTED**. CQG does not substitute. Before Step 12 (`--push`) or operator batch push: `--strict --all`.
 10. **Commit Changes** - Create commit with message: `Release v{version}: {summary}\n\nEpic: {epic} | Story: {story} | Task: {task}`
 11. **Create Git Tag** - Create tags via canonical strategy decision:
    - **FORBIDDEN (BR-097):** Never `git tag -f` or force-push release tags. Internal tag collision → BUILD+1 and re-RW. **task_touch** SemVer core collision → finalize registry + re-RW (BUILD+1 allocates new PATCH / new `vX.Y.Z` tag).
@@ -450,9 +452,9 @@ For each step, follow this pattern:
    - **Examples**:
      - Registry mode: `v0.6.7.18+2` (internal version tag)
      - Task-touch mode: `v0.9.5` (SemVer core tag, internal traceability tag: `v0.6.7.18+2`)
-12. **Push to Remote** — **SKIPPED by default (UXR-024).** Run **only** when user typed **`--push`** in the RW trigger.
-    - **Default:** Report `RW COMPLETE (local)`; operator batch-pushes per cheatsheet §2.
-    - **With `--push`:** Push epic branch and release-scoped tags (DO NOT push to main unless ready to deploy).
+12. **Push to Remote** — **NEVER by default (UXR-024).** Run **only** when user typed **`--push`** in the RW trigger.
+    - **Default:** Report `RW COMPLETE (local)`; **no push**; operator batch-pushes per cheatsheet §2 only after `validate_actions_ci_parity.py --strict --all` passes.
+    - **With `--push`:** Re-run Step 9.7 `--strict --all` immediately before push; then push epic branch and release-scoped tags (DO NOT push to main unless ready to deploy).
     - **CRITICAL: Use `required_permissions: ['network']` for git push commands**
     - **🚨 FORBIDDEN:** `git push origin {branch} --tags` (pushes all local tags; stale SemVer tags → false failures)
     - **Use:** `python "packages/frameworks/workflow-mgt/scripts/version/push_rw_release.py" --branch "{branch}" --internal-version "{internal_version}"`

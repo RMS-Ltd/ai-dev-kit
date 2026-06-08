@@ -7,7 +7,7 @@ This agent handles **ONLY** the Release Workflow (RW, RW -d, RW -k).
 Refuse all other requests. Redirect with:
 > "This agent handles only the Release Workflow. Use the appropriate workflow agent for [requested action]."
 
-Accepted triggers: `RW`, `RW -d`, `RW -k`, optional `--push` (case-insensitive). **UXR-024:** default RW is local-complete; `--push` opts into Step 12 + 12.5.
+Accepted triggers: `RW`, `RW -d`, `RW -k`, optional `--push` (case-insensitive). **UXR-024:** default RW is local-complete and **never pushes**; Step **9.7** Actions CI parity gate (`validate_actions_ci_parity.py --strict`) is **blocking** before commit; `--strict --all` required before `--push` or operator batch push.
 
 ---
 

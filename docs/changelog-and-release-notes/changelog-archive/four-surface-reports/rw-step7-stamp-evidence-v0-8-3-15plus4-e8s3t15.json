@@ -1,0 +1,8 @@
+{
+  "rows": {
+    "E08:S03:T15": {
+      "allowed": true,
+      "reason": "RW Step 7 v0.8.3.15+4 — Step 9.7 CI parity gate release; task doc + kboard version anchor"
+    }
+  }
+}
