@@ -412,13 +412,15 @@ function _createMdxContent(props) {
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Operator batch push (after local RW runs):"
-      }), " Push branch once, then each pending release tag explicitly — never ", (0,jsx_runtime.jsx)(_components.code, {
+      }), " Run the ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Actions CI parity gate"
+      }), " on the commit(s) you are about to publish, then push branch once and each pending release tag explicitly — never ", (0,jsx_runtime.jsx)(_components.code, {
         children: "git push origin {branch} --tags"
       }), "."]
     }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
       children: (0,jsx_runtime.jsx)(_components.code, {
         className: "language-bash",
-        children: "git push origin \"$(git branch --show-current)\"\ngit push origin refs/tags/v{internal_version}   # repeat per local RW not yet pushed\n# task-touch mode: also git push origin refs/tags/v{semver_core}\n"
+        children: "python \"packages/frameworks/workflow-mgt/scripts/validation/validate_actions_ci_parity.py\" --strict --all\ngit push origin \"$(git branch --show-current)\"\ngit push origin refs/tags/v{internal_version}   # repeat per local RW not yet pushed\n# task-touch mode: also git push origin refs/tags/v{semver_core}\n"
       })
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: ["Or per release: ", (0,jsx_runtime.jsx)(_components.code, {
@@ -463,14 +465,30 @@ function _createMdxContent(props) {
         }), (0,jsx_runtime.jsxs)(_components.tr, {
           children: [(0,jsx_runtime.jsx)(_components.td, {
             children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Blocking gates (before commit)"
+            })
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: ["Step ", (0,jsx_runtime.jsx)(_components.strong, {
+              children: "9.7"
+            }), " Actions CI parity (", (0,jsx_runtime.jsx)(_components.code, {
+              children: "validate_actions_ci_parity.py --strict"
+            }), ") — push-ready local release"]
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
               children: "Handoff"
             })
           }), (0,jsx_runtime.jsxs)(_components.td, {
             children: ["Commits + local tags via RW; ", (0,jsx_runtime.jsx)(_components.strong, {
+              children: "never push by default"
+            }), "; ", (0,jsx_runtime.jsx)(_components.strong, {
               children: "push"
-            }), " via operator batch runbook above or ", (0,jsx_runtime.jsx)(_components.code, {
+            }), " only after Step 9.7 ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "--all"
+            }), " passes (batch runbook or ", (0,jsx_runtime.jsx)(_components.code, {
               children: "RW … --push"
-            })]
+            }), ")"]
           })]
         }), (0,jsx_runtime.jsxs)(_components.tr, {
           children: [(0,jsx_runtime.jsx)(_components.td, {
