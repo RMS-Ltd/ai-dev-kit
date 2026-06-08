@@ -70,7 +70,7 @@ class TestWave4IPW:
     def test_IPW_P03_plan_template_mandatory_transitions(self):
         """IPW-P03: IPP template prescribes TODO→IN PROGRESS and final reconciliation."""
         template = PLAN_TEMPLATE.read_text(encoding="utf-8")
-        assert "TODO → IN PROGRESS" in template or "TODO → IN PROGRESS" in template.replace("→", "→")
+        assert "TODO → IN PROGRESS" in template or "TODO → IN PROGRESS" in template.replace("➔", "→")
         assert "Reconcile task" in template or "Reconcile" in template
         assert "MANDATORY" in template
 
@@ -82,27 +82,33 @@ class TestWave4IPW:
 
 
 class TestWave4Volume:
-    def test_RW_V03_changelog_exceeds_threshold(self):
+    @pytest.mark.parametrize(
+        ("threshold", "expected_returncode"),
+        [
+            (100_000, 0),
+            (1, 1),
+        ],
+    )
+    def test_RW_V03_changelog_exceeds_threshold(self, tmp_path, threshold, expected_returncode):
         """RW-V03: main CHANGELOG over size threshold → CMW advisory (exit 1).
 
-        With ``changelog_archival.mode: latest_only`` (ai-dev-kit default on dev),
-        the main CHANGELOG stays lean — threshold not exceeded (exit 0) is expected.
+        Deterministic coverage via ``check_changelog_size.py --config`` and
+        ``size_threshold_lines`` (mode does not affect exit code).
         """
         assert MAIN_CHANGELOG.exists()
+        config_path = tmp_path / "rw-config.yaml"
+        config_path.write_text(
+            yaml.safe_dump({"changelog_archival": {"size_threshold_lines": threshold}}),
+            encoding="utf-8",
+        )
         r = subprocess.run(
-            [sys.executable, str(CHANGELOG_SCRIPT)],
+            [sys.executable, str(CHANGELOG_SCRIPT), "--config", str(config_path)],
             cwd=REPO_ROOT,
             capture_output=True,
             text=True,
         )
-        cfg = yaml.safe_load(RW_CONFIG.read_text(encoding="utf-8")) if RW_CONFIG.exists() else {}
-        latest_only = (
-            cfg.get("changelog_archival", {}).get("mode") == "latest_only"
-        )
-        if latest_only:
-            assert r.returncode == 0, r.stdout + r.stderr
-        else:
-            assert r.returncode == 1, "expected threshold exceeded on this repo"
+        assert r.returncode == expected_returncode, r.stdout + r.stderr
+        if expected_returncode == 1:
             assert "EXCEEDS THRESHOLD" in r.stdout
 
     def test_RW_V04_registry_yaml_load_benchmark(self):
