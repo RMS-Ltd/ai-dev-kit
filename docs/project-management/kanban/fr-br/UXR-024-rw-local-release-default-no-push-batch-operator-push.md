@@ -14,7 +14,7 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Status:** IMPLEMENTED (doc policy — verify operator batch-push workflow)  
 **Code:** UXR-024  
-**Version:** v0.2.16.21+2  
+**Version:** v0.8.3.15+4 (R7 Step 9.7 cross-ref)  
 
 **Implementing Task:** [E02:S16:T21](../epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T21-rw-local-release-default-no-push-uxr024.md)
 
@@ -87,6 +87,7 @@ Steps 1–11 produce version anchors, changelogs, kanban reconciliation, **local
 | R4 | **Git policy:** commits + local tags via RW only; **push** via operator batch **or** `RW --push` | Replaces “push only via RW” for every run |
 | R5 | **`RW -k`** follows same local-default (no push unless `--push`) | Consistent kanban-init cadence |
 | R6 | Agent completion message states **“RW COMPLETE (local)”** vs **“RW COMPLETE (pushed)”** | Clear operator handoff |
+| R7 | **RW Step 9.7** blocking **Actions CI parity gate** before commit; **`--strict --all`** before any push (Step 12 or operator batch) | Prevents shipping commits that fail GitHub Actions on `dev`/`main` (E08:S03:T15; complements R1 no-push default) |
 
 ---
 
@@ -108,6 +109,7 @@ Steps 1–11 produce version anchors, changelogs, kanban reconciliation, **local
 - [x] **AC3:** Packaged + `greenfield-install/` mirrors aligned.
 - [x] **AC4:** Operator batch push runbook present in cheatsheet and vwmp guide.
 - [x] **AC5:** Agents skip Step 12/12.5 unless `--push` in user message (shipped **v0.2.16.21+1**).
+- [ ] **AC6:** RW Step **9.7** `validate_actions_ci_parity.py` blocking before commit; `--strict --all` before push/batch push (wired 2026-06-08; implementation via E08:S03:T15).
 
 ---
 

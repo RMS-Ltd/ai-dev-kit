@@ -393,6 +393,13 @@ For each step, follow this pattern:
 
 9.6. **Check IDE-Flagged Problems (recommended before commit)** - **RECOMMENDED, NON-BLOCKING:** Before Step 10, check for IDE/linter errors, warnings, and info-level issues in modified files; fix where practical and re-stage. Reduces accumulation of fixable issues and keeps commits clean. Skip or defer only if not practical; workflow continues.
 
+9.7. **Actions CI Parity Gate (BLOCKING — E08:S03:T15 / FR-112)** — **MANDATORY before Step 10** on full `RW` and `RW -d` when `actions_ci_parity.enabled` in `rw-config.yaml`:
+   - Run: `python "packages/frameworks/workflow-mgt/scripts/validation/validate_actions_ci_parity.py" --strict`
+   - Path-aware: runs local checks mirroring GitHub Actions workflows (Tests, Docusaurus build, Greenfield install drift, workflow-scripts pytest) for paths touched by the release diff.
+   - **Non-zero exit = RW ABORTED** at Step 9.7 — do not commit, tag, or push. Fix failures and re-run from Step 8.
+   - **CQG does not substitute** for this gate — Code Quality local gate (T17) and Actions CI parity are separate surfaces.
+   - **Purpose (UXR-024 + operator policy):** Default RW **never pushes**; local-complete releases must still be **push-ready** so operator batch push or `RW --push` does not ship red CI to `dev`/`main`.
+
 10. **Commit Changes** - Create commit with message: `Release v{version}: {summary}\n\nEpic: {epic} | Story: {story} | Task: {task}`
 
 11. **Create Git Tag** - Create tags via canonical strategy decision:
@@ -403,9 +410,9 @@ For each step, follow this pattern:
  - **D. Registry finalization:** Task-touch counter/mapping finalizes at tag-creation boundary, not read-only lookups.
  - **Note:** If both tags are created, they must reference the same commit.
 
-12. **Push to Remote** — **SKIPPED by default (UXR-024).** Run **only** when the user typed **`--push`** in the RW trigger message.
-    - **Default full RW:** Local-complete through Step 11; report **`RW COMPLETE (local)`**; operator batch-pushes later (see cheatsheet §2).
-    - **With `--push`:** Push epic branch and **release-scoped tags only** (DO NOT push to main unless ready to deploy).
+12. **Push to Remote** — **NEVER by default (UXR-024 hard requirement).** Run **only** when the user typed **`--push`** in the RW trigger message.
+    - **Default full RW:** Local-complete through Step 11; report **`RW COMPLETE (local)`**; **no `git push`**; operator batch-pushes later (see cheatsheet §2) **only after** Step 9.7 `--strict --all` passes on the commit(s) to publish.
+    - **With `--push`:** **MANDATORY pre-push gate:** re-run `validate_actions_ci_parity.py --strict --all` immediately before push; non-zero exit → **RW ABORTED** (do not push). Then push epic branch and **release-scoped tags only** (DO NOT push to main unless ready to deploy).
     - **CRITICAL: Use `required_permissions: ['network']` for git push commands**
     - **🚨 FORBIDDEN:** `git push origin {branch} --tags` — pushes *every* local tag; stale local SemVer tags that diverge from remote cause false failures (even when branch + new release tag are valid).
     - **Use:** `python "packages/frameworks/workflow-mgt/scripts/version/push_rw_release.py" --branch "{branch}" --internal-version "{internal_version}"`

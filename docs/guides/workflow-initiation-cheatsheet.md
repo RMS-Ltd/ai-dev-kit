@@ -48,9 +48,10 @@ housekeeping_policy: keep
 
 **Same-task follow-on release (BR-097):** Default is **BUILD +1** (`RW E02:S16:T15 --art`). Never reuse a tagged BUILD; never `git tag -f` on release tags — bump BUILD and re-RW instead.
 
-**Operator batch push (after local RW runs):** Push branch once, then each pending release tag explicitly — never `git push origin {branch} --tags`.
+**Operator batch push (after local RW runs):** Run the **Actions CI parity gate** on the commit(s) you are about to publish, then push branch once and each pending release tag explicitly — never `git push origin {branch} --tags`.
 
 ```bash
+python "packages/frameworks/workflow-mgt/scripts/validation/validate_actions_ci_parity.py" --strict --all
 git push origin "$(git branch --show-current)"
 git push origin refs/tags/v{internal_version}   # repeat per local RW not yet pushed
 # task-touch mode: also git push origin refs/tags/v{semver_core}
@@ -64,7 +65,8 @@ Or per release: `python packages/frameworks/workflow-mgt/scripts/version/push_rw
 | --- | --- |
 | **Prerequisites** | Tool/bash access; on correct epic branch; task token in message |
 | **Blocking gates (before edits)** | Step 1 branch safety → 1b task token → 1c task complete → 1d task intent |
-| **Handoff** | Commits + local tags via RW; **push** via operator batch runbook above or `RW … --push` |
+| **Blocking gates (before commit)** | Step **9.7** Actions CI parity (`validate_actions_ci_parity.py --strict`) — push-ready local release |
+| **Handoff** | Commits + local tags via RW; **never push by default**; **push** only after Step 9.7 `--all` passes (batch runbook or `RW … --push`) |
 | **Completion** | `RW COMPLETE (local)` default · `RW COMPLETE (pushed)` when `--push` used |
 | **Blocked session** | `RW BLOCKED: tool execution is unavailable in this session. Switch to a session with tool access and retry.` |
 
