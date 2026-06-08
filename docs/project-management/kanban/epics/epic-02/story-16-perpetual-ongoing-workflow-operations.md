@@ -12,8 +12,8 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** Medium  
 **Created:** 2026-04-20  
-**Last updated:** 2026-06-07 (v0.2.16.10+8 — E02:S17 integration sign-off)
-**Version:** v0.2.16.10+8
+**Last updated:** 2026-06-08 (v0.2.16.22+1 – Kanban documentation setup)
+**Version:** v0.2.16.22+1
 **Code:** E2S16
 
 ---
@@ -106,6 +106,10 @@ Story 016 remains the operational home for perpetual workflow work. **T04** UKW 
 
 - [x] **E02:S16:T21 – RW local-release default — no push; operator batch push (UXR-024)** - ✅ COMPLETE (**v0.2.16.21+2** — doc policy + doc link hygiene)  
   - Task: [`story-16-perpetual-ongoing-workflow-operations/T21-rw-local-release-default-no-push-uxr024.md`](story-16-perpetual-ongoing-workflow-operations/T21-rw-local-release-default-no-push-uxr024.md) | [UXR-024](../../fr-br/UXR-024-rw-local-release-default-no-push-batch-operator-push.md)
+
+
+- [x] **E02:S16:T22 – Implementation Delivery Workflow (IDW) — FR-118** - ✅ COMPLETE (**v0.2.16.22+1** — `/idw` + `--rw` chain; FR-118 IMPLEMENTED)  
+  - Task: [`story-16-perpetual-ongoing-workflow-operations/T22-implementation-delivery-workflow-idw-fr118.md`](story-16-perpetual-ongoing-workflow-operations/T22-implementation-delivery-workflow-idw-fr118.md) | [FR-118](../../fr-br/FR-118-implementation-delivery-workflow-idw-fr118.md) | [IPP](../../../../implementation-cycles/IPP-E02S16T22-implementation-delivery-workflow-idw-fr118.md)
 
 ---
 

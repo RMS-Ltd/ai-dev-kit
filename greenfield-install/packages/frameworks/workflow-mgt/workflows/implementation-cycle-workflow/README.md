@@ -156,7 +156,8 @@ Each phase uses structured templates:
 
 ### Workflow Dependencies
 - **Required:** Kanban system with task documents
-- **Optional:** Release Workflow (RW) for post-implementation releases
+- **Implementation Delivery Workflow (IDW):** Execute linked IPP after planning (`IDW E:S:T`; optional `--rw` chain)
+- **Optional:** Release Workflow (RW) for post-implementation releases (standalone or via `IDW … --rw`)
 - **Enhanced by:** Testing Workflow (test-driven development)
 
 ### Data Flow

@@ -11,10 +11,10 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
-## [0.8.3.16+7] - 08-06-26
+## [0.2.16.22+1] - 08-06-26
 
-E08:S03:T16 — **Attempted fix:** Wave 3d — last `py/empty-except` in `cli/logging.py`. SemVer **v0.4.1062+7**.
+E02:S16:T22 — **Change implemented:** IDW workflow (`/idw`, optional `--rw` chain), FR-118 intake, agent routing + cheatsheet §4b. SemVer **v0.4.1063+1**.
 
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.8.3.16+7.md)
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.16.22+1.md)
 
 ---

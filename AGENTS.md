@@ -27,7 +27,7 @@ Then:
 
 | Track | Keywords (match any) | loadFirst |
 | ----- | -------------------- | --------- |
-| `workflows` | RW, UKW, IPW, CMW, PVW, release, changelog, kanban sync, workflow | `docs/guides/workflow-initiation-cheatsheet.md`, `.claude/commands/rw.md` (terminal allowlist: `docs/developer-tools/ide-whitelist-guide.md`) |
+| `workflows` | RW, UKW, IPW, IDW, CMW, PVW, release, changelog, kanban sync, workflow | `docs/guides/workflow-initiation-cheatsheet.md`, `.claude/commands/rw.md` (terminal allowlist: `docs/developer-tools/ide-whitelist-guide.md`) |
 | `kanban-intake` | FR, BR, UXR, intake, kboard, fbuboard, MoSCOW, task doc | `docs/project-management/kanban/kboard.md`, `packages/frameworks/kanban/FR_BR_INTAKE_GUIDE.md` |
 | `governance` | ADR, governance, policy, standard, versioning | `docs/governance/README.md` |
 | `framework-code` | package, validator, script, pytest, framework, workflow mgt | `packages/frameworks/workflow-mgt/README.md` |
@@ -53,12 +53,12 @@ Refresh from `kboard.md` when running UKW or RW Step 7; mirror into manifest `op
 
 | ID | Rule | Source |
 | -- | ---- | ------ |
-| P-IPW-GATE | No implementation until IPP/ICW linked + explicit user go-ahead | [FR-083](docs/project-management/kanban/fr-br/FR-083-global-ipw-gated-implementation-contract.md) |
+| P-IPW-GATE | No implementation until IPP/ICW linked + explicit go-ahead (`IDW E:S:T` or `implement`) | [FR-083](docs/project-management/kanban/fr-br/FR-083-global-ipw-gated-implementation-contract.md) |
 | P-RW-GIT | Commit/tag via RW; **never push by default**; Step 9.7 CI parity before commit; `--all` before push/batch | [UXR-024](docs/project-management/kanban/fr-br/UXR-024-rw-local-release-default-no-push-batch-operator-push.md) · [E08:S03:T15](docs/project-management/kanban/epics/epic-08/story-03-automation-scripts/T15-github-actions-ci-health-perpetual-fr112.md) · `.cursorrules` |
 | P-RW-TASK-TOKEN | RW requires `E:S:T` in trigger | [FR-060](docs/project-management/kanban/fr-br/FR-060-rw-task-argument-requirement.md) |
 | P-RW-STEP7 | RW Step 7 four-surface kanban reconciliation | [FR-092](docs/project-management/kanban/fr-br/FR-092-canonical-rw-ukw-kanban-consistency-program.md) |
 | P-EST-PADDING | Two-digit E/S/T in new writes | [UXR-014](docs/project-management/kanban/fr-br/UXR-014-two-digit-est-identifier-default-formatting.md) |
-| P-TRIGGER-ROUTING | `RW`/`UKW`/`IPW`/… at message start = workflow commands | [CLAUDE.md](CLAUDE.md) |
+| P-TRIGGER-ROUTING | `RW`/`UKW`/`IPW`/`IDW`/… at message start = workflow commands | [CLAUDE.md](CLAUDE.md) |
 | P-INTAKE-ATOMIC | FR/BR/UXR intake needs task + links same session | [Intake guide](packages/frameworks/kanban/FR_BR_INTAKE_GUIDE.md) |
 | P-RW-BUILD | Same E:S:T → BUILD+1 default; no `git tag -f` on release tags; `--dpz` (alias: `--doc-policy-zero`) only if user-triggered + untagged | [BR-097](docs/project-management/kanban/fr-br/BR-097-rw-agent-reuses-tagged-build-and-force-moves-release-tags.md) |
 | P-NOTION-FIRST | New maintainer docs → Notion MCP first; git stubs only per ADR-024 criteria | [ADR-024](docs/architecture/standards-and-adrs/ADR-024-documentation-surfaces-three-surface-model-fr114.md) |
@@ -92,7 +92,7 @@ If no keyword match, ask **one** clarifying question. Do not grep the whole repo
 
 ## IPW / implementation gate (summary)
 
-Planning-only (FR, BR, UXR, task, spec, plan): produce artifacts and **stop**. Implementation requires: (1) task `E:S:T`, (2) linked IPP or ICW under `docs/implementation-cycles/`, (3) explicit authorization (`implement`, `RW E:S:T`). **IPW:** `/ipw E:S:T` in plan mode — [`.claude/commands/ipw.md`](.claude/commands/ipw.md).
+Planning-only (FR, BR, UXR, task, spec, plan): produce artifacts and **stop**. Implementation requires: (1) task `E:S:T`, (2) linked IPP or ICW under `docs/implementation-cycles/`, (3) explicit authorization (`IDW E:S:T`, `implement`, or post-impl `RW E:S:T`). **IPW:** `/ipw E:S:T` in plan mode — [`.claude/commands/ipw.md`](.claude/commands/ipw.md). **IDW:** `/idw E:S:T [--rw]` in implementation mode — [`.claude/commands/idw.md`](.claude/commands/idw.md).
 
 **Cheatsheet:** [`docs/guides/workflow-initiation-cheatsheet.md`](docs/guides/workflow-initiation-cheatsheet.md)
 

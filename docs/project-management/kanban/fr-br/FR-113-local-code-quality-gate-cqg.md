@@ -83,7 +83,7 @@ CQG must be implemented as a **first-class ADK subsystem**, not a standalone scr
 
 | ADK workflow | CQG relationship |
 | ------------ | ---------------- |
-| **RW** | Step 9 validator (advisory default); optional Step 9 output in release readiness reporting |
+| **IDW** | Phase 6b validator (**strict** default); RW does not run CQG (ADR-022 v0.0.2) |
 | **FHM** | **Complementary, not duplicate** — FHM monitors *workflow framework* health (execution counts, journals); CQG monitors *codebase* CodeQL quality. IPP must state boundary; no merge into FHM v1 without separate FR |
 | **T16 perpetual lane** | Cloud dashboard remains GitHub SoT until parity proven; local CQG feeds operator triage, not kanban row stamps |
 | **Pre-commit** | Optional later hook; not required v1 — do not bypass RW-only commit policy |
@@ -96,7 +96,7 @@ CQG must be implemented as a **first-class ADK subsystem**, not a standalone scr
 ### Documentation and governance
 
 - Operator guide under `packages/frameworks/tooling-automation/` or `workflow-mgt/docs/` (match sibling validators).
-- RW agent execution doc updated (Step 9 list + advisory/strict semantics).
+- IDW agent execution doc updated (Phase 6b + strict/skip semantics).
 - Epic 8 Story 3 delivery semantics preserved; no scope bleed into E02:S16 workflow perpetual lanes.
 - IPW produces IPP with **architecture section** mapping each deliverable to the table above.
 
@@ -105,7 +105,7 @@ CQG must be implemented as a **first-class ADK subsystem**, not a standalone scr
 - Repo-root one-off script with no `rw-config` wiring
 - Duplicate CodeQL wrapper in both `scripts/` and `packages/` without shared module
 - CQG that only runs on ai-dev-kit paths (breaks FR-110/081 adopters)
-- New top-level workflow trigger (`CQG` as fourth class alongside RW/UKW/IPW) without FR amendment — v1 uses cron + RW validator + CLI only
+- New top-level workflow trigger (`CQG` as fourth class alongside RW/UKW/IPW/IDW) without FR amendment — v1 uses cron + IDW validator + CLI only
 
 ---
 
@@ -288,6 +288,6 @@ Two primary trigger patterns were evaluated. **Adopted: hybrid (both), with diff
 
 - User preference: respect GitHub's model; local CQG is **cost-conscious** and **practice-oriented**, not a rejection of GitHub's product.
 - **Monitor interval decided:** **6 hours** with HEAD-change skip and **12 h** staleness cap (not daily, not hourly full scans).
-- **Architecture:** CQG must harmonize with ADK validator framework, `rw-config` SoT, RW Step 9, tooling-automation packaging, and adopter portability (§Architectural harmonization) — not a repo-root one-off.
+- **Architecture:** CQG must harmonize with ADK validator framework, `rw-config` SoT, **IDW Phase 6b** (ADR-022 v0.0.2), tooling-automation packaging, and adopter portability (§Architectural harmonization) — not a repo-root one-off.
 - IPW spike: measure CodeQL DB build duration on Apple Silicon; tighten to **4 h** only if cached runs are consistently **< 5 min**.
 - Consider sharing CQG runner as packaged framework artifact under `packages/frameworks/tooling-automation/` for adopters.

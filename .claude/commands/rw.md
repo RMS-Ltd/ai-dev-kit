@@ -271,7 +271,7 @@ python "packages/frameworks/workflow-mgt/scripts/validation/validate_actions_ci_
 
 - Mirrors `.github/workflows/` checks (Tests, Docusaurus build, Greenfield install drift, workflow-scripts pytest) for **paths touched** by the release diff.
 - **Non-zero exit → RW ABORTED** at Step 9.7. Do not commit, tag, or push.
-- **CQG (`validate_code_quality_gate.py`) does not substitute** for Actions CI parity.
+- **CQG runs at IDW Phase 6b** (`validate_code_quality_gate.py`), not RW — does not substitute for Actions CI parity.
 - Skipped when `actions_ci_parity.enabled: false` in `rw-config.yaml`.
 
 **Before Step 12 (`--push`) or operator batch push:** re-run with **`--strict --all`** (full parity suite).

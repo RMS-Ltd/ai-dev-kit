@@ -17,7 +17,7 @@ housekeeping_policy: keep
 | Source | Role |
 | ------ | ---- |
 | **GitHub Code Quality dashboard (T16)** | Cloud SoT until operator accepts local parity |
-| **Local CQG** | Pre-push / cron snapshot; mirrors CodeQL `security-and-quality` Standard findings |
+| **Local CQG** | IDW Phase 6b + cron snapshot; mirrors CodeQL `security-and-quality` Standard findings |
 
 CQG does **not** replace T16 perpetual health lanes or FHM workflow checks.
 
@@ -47,14 +47,15 @@ python packages/frameworks/tooling-automation/scripts/run_cqg.py --sarif /path/t
 python packages/frameworks/tooling-automation/scripts/run_cqg.py --strict --threshold errors
 ```
 
-### RW Step 9 (advisory default)
+### IDW Phase 6b (strict default — ADR-022 v0.0.2)
 
 ```bash
-python packages/frameworks/workflow-mgt/scripts/validation/validate_code_quality_gate.py
-python packages/frameworks/workflow-mgt/scripts/validation/validate_code_quality_gate.py --strict
+python packages/frameworks/workflow-mgt/scripts/validation/validate_code_quality_gate.py \
+  --strict --requested "E08:S03:T17"
+python packages/frameworks/workflow-mgt/scripts/validation/validate_code_quality_gate.py --skip
 ```
 
-When CodeQL is missing, validator **exits 0** with `ADVISORY SKIP` unless `--sarif` is supplied.
+When CodeQL is missing during IDW, validator **exits non-zero** unless `--sarif` is supplied. RW does **not** run CQG.
 
 ### 6-hour monitor
 
@@ -110,7 +111,7 @@ All under `.cqg/` are **gitignored**.
 | `notes` | Error, Warning, or Note |
 | `all` | Any finding |
 
-Configure default via `code_quality_gate.rw_threshold`. RW uses `rw_advisory: true` unless `--strict`.
+Configure default via `code_quality_gate.idw_threshold`. IDW uses `idw_advisory: false` (strict) unless `--no-strict`.
 
 ---
 
@@ -126,7 +127,7 @@ Follow [cqg-parity-template.md](./cqg-parity-template.md) at a pinned SHA. Targe
 | --------- | ---- |
 | Engine | `validators/code_quality/` |
 | CLI | `scripts/run_cqg.py` |
-| RW validator | `workflow-mgt/scripts/validation/validate_code_quality_gate.py` |
+| IDW validator | `workflow-mgt/scripts/validation/validate_code_quality_gate.py` |
 | Monitor | `workflow-mgt/scripts/cqg_monitor.py` |
 | Cron wrapper | `workflow-mgt/scripts/cqg_monitor_cron.sh` |
 | Cron installer | `workflow-mgt/scripts/install/install_cqg_cron.sh` |

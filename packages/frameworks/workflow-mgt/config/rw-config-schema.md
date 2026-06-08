@@ -217,7 +217,7 @@ The following variables can be used in path patterns:
 
 ## Code Quality Gate (`code_quality_gate`) — FR-113 / E08:S03:T17
 
-Optional block for local CodeQL Code Quality Gate (CQG). When absent, `validate_code_quality_gate.py` skips or errors per script policy.
+Optional block for local CodeQL Code Quality Gate (CQG). When absent, `validate_code_quality_gate.py` skips per script policy. **Gate runs at IDW Phase 6b**, not RW (ADR-022 v0.0.2).
 
 | Key | Type | Default | Description |
 | --- | ---- | ------- | ----------- |
@@ -231,8 +231,10 @@ Optional block for local CodeQL Code Quality Gate (CQG). When absent, `validate_
 | `reports_dir` | string | `.cqg/reports` | JSON/markdown summaries (gitignored) |
 | `cache_dir` | string | `.cqg/cache` | CodeQL DB cache (gitignored) |
 | `last_run_file` | string | `.cqg/last-run.json` | Monitor skip/force state |
-| `rw_threshold` | string | `warnings` | `errors` \| `warnings` \| `notes` \| `all` |
-| `rw_advisory` | boolean | `true` | RW Step 9 non-blocking unless `--strict` |
+| `idw_threshold` | string | `warnings` | `errors` \| `warnings` \| `notes` \| `all` — IDW Phase 6b |
+| `idw_advisory` | boolean | `false` | IDW advisory only when `true` (use `--no-strict`) |
+| `rw_threshold` | string | — | **Deprecated** — use `idw_threshold` (still read for compat) |
+| `rw_advisory` | boolean | — | **Deprecated** — use `idw_advisory` (still read for compat) |
 | `retention_count` | integer | `10` | Report retention (future) |
 | `codeql_command` | string | `codeql` | CodeQL CLI executable name |
 
@@ -244,8 +246,8 @@ code_quality_gate:
   target_branch: dev
   query_suite: security-and-quality
   language: python
-  rw_threshold: warnings
-  rw_advisory: true
+  idw_threshold: warnings
+  idw_advisory: false
 ```
 
 See [ADR-022](../../../../docs/architecture/standards-and-adrs/ADR-022-local-code-quality-gate-architecture.md) and [operator guide](../../tooling-automation/docs/code-quality-gate-operator-guide.md).

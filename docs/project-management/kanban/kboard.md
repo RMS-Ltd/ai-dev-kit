@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Board
 
-**Last Updated:** 2026-06-08 (RW: E08:S03:T16 Wave 3d)
-**Version:** v0.8.3.16+7
+**Last Updated:** 2026-06-08 (RW: E02:S16:T22)
+**Version:** v0.2.16.22+1
 
 **Active board contract:** **Sole active MoSCOW board** ([ADR-018](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/architecture/standards-and-adrs/ADR-018-single-kanban-board-consolidation.md)). Rows are **live work** (TODO / IN PROGRESS / OPEN / WAITING / PERPETUAL) plus filed **Could Have** backlog. **Verification (V)** band holds task-shipped / FBU-open items (`⏳ WAITING`). Remove **terminal** rows and archive prose (use [`kanban-completed.md`](kanban-completed.md) / [`intake-completed.md`](intake-completed.md)).
 
@@ -28,6 +28,8 @@ housekeeping_policy: keep
 *(E02:S17 story complete @ v0.2.17.6+1 — integration sign-off @ v0.2.16.10+8; see [`kanban-completed.md`](kanban-completed.md) · [integration report](epics/epic-02/story-17-rw-semver-characterization-and-release-state-sqlite/integration-test-report-2026-06-07.md).)*
 
 ### Should Have (S) - Important Tasks
+
+*(E02:S16:T22 COMPLETE @ **v0.2.16.22+1** — FR-118 IDW workflow; see [`kanban-completed.md`](kanban-completed.md) · [`intake-completed.md`](intake-completed.md).)*
 
 *(E01:S06:T02 COMPLETE @ **v0.1.6.2+1** — FR-117 MIT LICENSE; see [`kanban-completed.md`](kanban-completed.md) · [`intake-completed.md`](intake-completed.md).)*
 

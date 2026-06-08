@@ -12,7 +12,7 @@ This project is the AI Dev Kit: a collection of workflow management frameworks, 
 
 **Operator shortcut:** `Track: workflows | Task: E02:S16:T13 | File: …`
 
-Full RW/UKW/IPW trigger specs below remain authoritative once the `workflows` track is selected.
+Full RW/UKW/IPW/IDW trigger specs below remain authoritative once the `workflows` track is selected.
 
 ---
 
@@ -109,6 +109,37 @@ Examples of plain-text triggers that MUST invoke the IPW engine:
 If Bash/tool execution is NOT available in this session, respond with:
 
 > **IPW BLOCKED: tool execution is unavailable in this session. Switch to a session with tool access and retry.**
+
+Do not silently no-op.
+
+---
+
+## IDW Trigger Routing
+
+**When the user message begins with `IDW` or `idw` (case-insensitive), treat it as an Implementation Delivery Workflow trigger command — equivalent to the `/idw` slash command with the remainder of the message as arguments.**
+
+Examples of plain-text triggers that MUST invoke the IDW engine:
+
+- `IDW E2:S16:T09` → execute IDW for task E2:S16:T09 (implement linked IPP)
+- `IDW E2:S16:T09 --rw` → IDW then chain local-complete RW for same task
+- `idw E2:S16:T09 --rw --push` → IDW then RW with push (case-insensitive)
+- `IDW E2:S16:T09 --rw --art` → IDW then RW with `--art`
+
+**DO NOT treat these as conversational text.** Execute the Implementation Delivery Workflow as documented.
+
+**Preferred invocation (more reliable):** Use the `/idw` slash command — e.g. `/idw E2:S16:T09 --rw`. The command file at `.claude/commands/idw.md` contains the full execution instructions.
+
+**CRITICAL:** IDW **MUST NOT** run in plan mode. If plan mode is active, respond with:
+
+> **IDW BLOCKED: plan mode is active. Exit plan mode, then invoke /idw again from an implementation session.**
+
+**Flags:** lowercase long form only (`--rw`, `--push`, `--art`). `--push` requires `--rw`.
+
+### IDW blocked session (AC3)
+
+If Bash/tool execution is NOT available in this session, respond with:
+
+> **IDW BLOCKED: tool execution is unavailable in this session. Switch to a session with tool access and retry.**
 
 Do not silently no-op.
 

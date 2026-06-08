@@ -82,6 +82,18 @@ This SoP defines a **mandatory** implementation cycle when a project adopts the 
 
 ---
 
+## Step 2.75: Implementation Delivery Workflow (IDW) — Recommended execution surface
+
+**Purpose:** After IPW produces a linked IPP, **`IDW E:S:T`** (`.claude/commands/idw.md`) is the canonical agent workflow to execute §3–§7 of the plan: test-first, implementation, documentation delivery, and task status reconciliation.
+
+**When to use:** Any task with a wired IPP/ICW package ready for implementation. Invoking IDW satisfies FR-083 explicit authorization.
+
+**Optional chain:** `IDW E:S:T --rw` runs local-complete **RW** after `IDW COMPLETE`.
+
+**Reference:** [implementation-delivery-workflow-agent-execution.md](implementation-delivery-workflow-agent-execution.md)
+
+---
+
 ## Step 3: Requirements, Specification & Test Creation (TDD) — BLOCKING
 
 **Purpose:** Ascertain requirements and specification, then create tests **before** implementation (TDD).

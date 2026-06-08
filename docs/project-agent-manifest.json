@@ -9,7 +9,7 @@
   "protocol": [
     {
       "id": "P-IPW-GATE",
-      "rule": "No implementation until IPW package exists and user authorizes execution (implement or RW).",
+      "rule": "No implementation until IPW package exists and user authorizes execution (IDW E:S:T, implement, or post-impl RW).",
       "sourcePath": "docs/project-management/kanban/fr-br/FR-083-global-ipw-gated-implementation-contract.md"
     },
     {
@@ -34,7 +34,7 @@
     },
     {
       "id": "P-TRIGGER-ROUTING",
-      "rule": "Plain-text RW/UKW/IPW/CMW/PVW at message start are workflow commands, not chat.",
+      "rule": "Plain-text RW/UKW/IPW/IDW/CMW/PVW at message start are workflow commands, not chat.",
       "sourcePath": "CLAUDE.md"
     },
     {
@@ -51,7 +51,7 @@
   "taskRouting": [
     {
       "intent": "workflows",
-      "keywords": ["RW", "UKW", "IPW", "CMW", "PVW", "release", "changelog", "kanban sync", "workflow"],
+      "keywords": ["RW", "UKW", "IPW", "IDW", "CMW", "PVW", "release", "changelog", "kanban sync", "workflow"],
       "loadFirst": [
         "docs/guides/workflow-initiation-cheatsheet.md",
         ".claude/commands/rw.md"
@@ -114,7 +114,7 @@
   "tracks": [
     {
       "id": "workflows",
-      "label": "Workflow operations (RW, UKW, IPW, CMW, PVW)",
+      "label": "Workflow operations (RW, UKW, IPW, IDW, CMW, PVW)",
       "entryPath": "docs/guides/workflow-initiation-cheatsheet.md"
     },
     {

@@ -1,0 +1,29 @@
+idw:
+  version: "1.0.0"
+  description: "Configuration for Implementation Delivery Workflow (IDW)"
+
+  planning_package:
+    preferred_pattern: "IPP-E{epic}S{story}T{task}-*.md"
+    legacy_trio_pattern: "ICW-E{epic}S{story}T{task}-*.md"
+    base_dir: "docs/implementation-cycles"
+
+  gates:
+    branch_context:
+      script: "packages/frameworks/workflow-mgt/scripts/validation/validate_branch_context.py"
+      args: ["--strict"]
+    publication_wiring:
+      script: "packages/frameworks/workflow-mgt/scripts/validation/validate_ipw_publication_wiring.py"
+      optional: true
+    code_quality_gate:
+      script: "packages/frameworks/workflow-mgt/scripts/validation/validate_code_quality_gate.py"
+      phase: verify
+      default_args: ["--strict"]
+      skip_flag: "--skip"
+      config_block: "code_quality_gate"
+      when: "python_code_in_scope"
+
+  chain:
+    rw_flag: "--rw"
+    push_flag: "--push"
+    art_flag: "--art"
+    push_requires_rw: true

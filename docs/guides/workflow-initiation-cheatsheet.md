@@ -8,7 +8,7 @@ housekeeping_policy: keep
 
 # Workflow initiation cheatsheet
 
-**Last verified against:** 2026-06-05 (`.cursorrules`, `.claude/commands/rw.md`, `ukw.md`, `ipw.md`; FR-085 `UKW --rp` / ADR-009; FR-102 `UKW -c` / ADR-010; BR-067 `RW -d --dpz`; UXR-022; UXR-024 local-default RW)
+**Last verified against:** 2026-06-08 (`.cursorrules`, `.claude/commands/rw.md`, `ukw.md`, `ipw.md`, `idw.md`; IDW `--rw` chain; FR-085 `UKW --rp` / ADR-009; FR-102 `UKW -c` / ADR-010; BR-067 `RW -d --dpz`; UXR-022; UXR-024 local-default RW)
 
 > **Agent source of truth:** If this cheatsheet and [`.cursorrules` (source)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/.cursorrules) or [`.claude/commands/` (source)](https://github.com/RMS-Ltd/ai-dev-kit/tree/main/.claude/commands) diverge, **`.cursorrules` wins** for agent behavior. This page is a human quick-reference for *which command to type* — not full execution steps.
 
@@ -21,7 +21,9 @@ housekeeping_policy: keep
 | I want to… | Type |
 | ---------- | ---- |
 | Release completed work | `RW E02:S16:T15` (full), `RW -d E02:S16:T15` (docs-only), or `RW -k E02:S16:T15` (kanban-init) |
-| Plan before implementing | `IPW E02:S16:T15` (**plan mode first**) or `/ipw E02:S16:T15` — then explicit **implement** (IPW/IPP gate) |
+| Plan before implementing | `IPW E02:S16:T15` (**plan mode first**) or `/ipw E02:S16:T15` |
+| Implement from IPP | `IDW E02:S16:T15` or `/idw E02:S16:T15` (implementation mode; linked IPP required) |
+| Implement + release (chain) | `IDW E02:S16:T15 --rw` — local-complete RW after `IDW COMPLETE` |
 | Sync all kanban docs (global) | `UKW` then `RW` |
 | Clear completed rows from active boards (archive to completed ledgers) | `UKW -c` then `RW` |
 | Fix suspected kanban drift (specific) | `UKW -ad <targets>` then `RW` — **planned** (not yet in `.cursorrules`) |
@@ -98,6 +100,7 @@ Or per release: `python packages/frameworks/workflow-mgt/scripts/version/push_rw
 | `-ad` | **UKW** (planned) | **Address** kanban **d**rift vs project state |
 | `--rp` | **UKW** | **RePrioritise** — standalone deep MoSCOW reorder (not `RW -d`, not `UKW -a`; distinct from `UKW -p`) |
 | `-c` | **UKW** | **Archive completed** — move terminal rows to completed ledgers (not `RW -d`, not `UKW -a`) |
+| `--rw` | **IDW** | Chain **local-complete RW** after `IDW COMPLETE` (lowercase; not an RW flag) |
 
 **`-a` target syntax:** single task `E02:S16:T15`; multiple `E02:S16:T13,E02:S16:T14`; range `E02:S16:T13-E02:S16:T15`; story `E02:S16`; epic `E02`; all unprioritized `all` or `*`.
 
@@ -122,12 +125,36 @@ Or per release: `python packages/frameworks/workflow-mgt/scripts/version/push_rw
 | | |
 | --- | --- |
 | **Prerequisites** | **Plan mode required** (Cursor `/plan` or Claude plan session); tool access |
-| **Handoff** | Produces `docs/implementation-cycles/IPP-E…S…T…-*.md` (or ICW trio); link from task; **no code/docs implementation until IPW complete + user says implement**; then **`RW E02:S16:T15`** |
+| **Handoff** | Produces `docs/implementation-cycles/IPP-E…S…T…-*.md` (or ICW trio); link from task; then **`IDW E02:S16:T15`** (or `implement`) — **IPW does not chain to IDW/RW by default** |
 | **Planning package** | [IPP-E2S16T15-workflow-initiation-cheatsheet.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/implementation-cycles/IPP-E02S16T15-workflow-initiation-cheatsheet.md) (example) |
 | **Blocked (plan mode)** | `IPW BLOCKED: plan mode required. Type /plan to enter plan mode, then invoke /ipw again from within the plan session.` |
 | **Blocked (tools)** | `IPW BLOCKED: tool execution is unavailable in this session. Switch to a session with tool access and retry.` |
 
 **Deep dive:** [`.claude/commands/ipw.md` (source)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/.claude/commands/ipw.md) · [FR-042](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/project-management/kanban/fr-br/FR-042-implementation-planning-workflow-ipw.md)
+
+---
+
+## 4b. Implementation Delivery Workflow (IDW)
+
+| Invocation | Meaning |
+| ---------- | ------- |
+| `IDW E02:S16:T15` / `/idw E02:S16:T15` | Execute linked IPP for host task (tests, code, docs, status reconciliation) |
+| `IDW E02:S16:T15 --rw` | IDW then **local-complete** `RW` for same task |
+| `IDW E02:S16:T15 --rw --push` | IDW then RW with Step 12 push + 12.5 GitHub Release |
+| `IDW E02:S16:T15 --rw --art` | IDW then RW with `--art` version adoption |
+
+| | |
+| --- | --- |
+| **Prerequisites** | **Implementation mode** (not plan mode); tool access; linked IPP/ICW on task; branch safety gate |
+| **Authorization** | Invoking **`IDW E:S:T`** satisfies FR-083 implementation gate (no separate `implement` required) |
+| **Blocking gate (Phase 6b)** | **CQG** (`validate_code_quality_gate.py --strict`) when Python in scope; `--skip` for docs-only ([ADR-022](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/architecture/standards-and-adrs/ADR-022-local-code-quality-gate-architecture.md) v0.0.2) |
+| **Handoff** | **`IDW COMPLETE`** → `RW E02:S16:T15` when not using `--rw`; or automatic RW when `--rw` |
+| **Blocked (plan mode)** | `IDW BLOCKED: plan mode is active. Exit plan mode, then invoke /idw again.` |
+| **Blocked (tools)** | `IDW BLOCKED: tool execution is unavailable in this session. Switch to a session with tool access and retry.` |
+
+**Flags:** lowercase long form (`--rw`, `--push`, `--art`). `--push` requires `--rw`.
+
+**Deep dive:** [`.claude/commands/idw.md` (source)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/.claude/commands/idw.md) · [implementation-delivery-workflow-agent-execution.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/implementation-delivery-workflow-agent-execution.md)
 
 ---
 
@@ -165,7 +192,8 @@ Or per release: `python packages/frameworks/workflow-mgt/scripts/version/push_rw
 
 | Sequence | When |
 | -------- | ---- |
-| `IPW E02:S16:T15` → implement → `RW E02:S16:T15` | New work with planning gate |
+| `IPW E02:S16:T15` → `IDW E02:S16:T15` → `RW E02:S16:T15` | New work with planning gate (canonical three-step) |
+| `IPW E02:S16:T15` → `IDW E02:S16:T15 --rw` | Plan, implement, local release in one IDW chain |
 | `UKW` → `RW` | Global kanban sync then commit |
 | `CMW` → `RW` | Changelog maintenance then commit |
 | `UKW -ad kboard,fbuboard` → `RW` | Targeted drift repair (**planned**) |
@@ -183,6 +211,7 @@ Or per release: `python packages/frameworks/workflow-mgt/scripts/version/push_rw
 | RW slash command | [`.claude/commands/rw.md` (source)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/.claude/commands/rw.md) |
 | UKW slash command | [`.claude/commands/ukw.md` (source)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/.claude/commands/ukw.md) |
 | IPW slash command | [`.claude/commands/ipw.md` (source)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/.claude/commands/ipw.md) |
+| IDW slash command | [`.claude/commands/idw.md` (source)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/.claude/commands/idw.md) |
 | Claude routing | [`CLAUDE.md` (source)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/CLAUDE.md) |
 | Config paths | [`rw-config.yaml` (source)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/rw-config.yaml) |
 | Guides index | [`docs/guides/README.md`](README.md) |
@@ -193,4 +222,4 @@ Or per release: `python packages/frameworks/workflow-mgt/scripts/version/push_rw
 
 - **Intake** — FR/BR/UXR → task in same session ([`FR_BR_INTAKE_GUIDE.md` (source)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/kanban/FR_BR_INTAKE_GUIDE.md), [intake-process skill (source)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/.cursor/skills/intake-process/SKILL.md)); never primary tasks on **`S00`** ([BR-076](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/project-management/kanban/fr-br/BR-076-e7-s00-must-not-host-concrete-tasks.md))
 - **ICW** — legacy Cursor planning trigger (prefer **IPW**)
-- **Global implementation gate** — IPW/IPP required before implementation edits ([`AGENTS.md` (source)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/AGENTS.md), `.cursorrules`)
+- **Global implementation gate** — IPW/IPP required; **`IDW E:S:T`** or `implement` to execute ([`AGENTS.md` (source)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/AGENTS.md), `.cursorrules`)

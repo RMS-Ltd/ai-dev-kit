@@ -38,7 +38,7 @@ Publication Status: NOT_APPLICABLE
 
 ## Goal
 
-Implement a **local Code Quality Gate (CQG)** that reproduces GitHub Code Quality **Standard findings** (CodeQL `security-and-quality` suite) with structured reporting, configurable thresholds, and dual trigger support (**cron monitor** + **RW Step 9 validator** + manual CLI). Implementation **must harmonize with ADK architecture** (see §Architectural placement).
+Implement a **local Code Quality Gate (CQG)** that reproduces GitHub Code Quality **Standard findings** (CodeQL `security-and-quality` suite) with structured reporting, configurable thresholds, and hybrid triggers (**cron monitor** + **IDW Phase 6b** + manual CLI). Implementation **must harmonize with ADK architecture** (see §Architectural placement).
 
 ---
 
@@ -92,7 +92,7 @@ CQG is **not** a standalone repo-root utility. Deliverables split across ADK lay
 | Layer | Trigger | Default behavior |
 | ----- | ------- | ---------------- |
 | **Monitor** | Cron **`0 */6 * * *`** (every 6 h) | Non-blocking snapshot on clean **`dev`**; skip if HEAD unchanged and snapshot **< 12 h** old; force if snapshot **≥ 12 h** |
-| **Gate** | RW Step 9 | Advisory (`exit 0` with report); optional `--strict` after parity |
+| **Gate** | **IDW Phase 6b** (ADR-022 v0.0.2) | **Strict** by default (`idw_advisory: false`); `--skip` for docs-only |
 | **Manual** | CLI | Operator-defined thresholds |
 
 **Monitor skip/force (implement in `cqg_monitor`):**
@@ -101,17 +101,17 @@ CQG is **not** a standalone repo-root utility. Deliverables split across ADK lay
 2. If current `dev` HEAD == `head_sha` and age **< 12 h** → exit 0, log skipped.
 3. Else → run full CQG, write snapshot to `.cqg/reports/`, update `last-run.json`.
 
-**IPW still resolves:** CodeQL DB cache, incremental analysis, artifact retention, RW `--strict` timing.
+**Revision (2026-06-08):** Gate moved from RW Step 9 → IDW Phase 6b per operator directive and ADR-022 v0.0.2.
 
 ---
 
 ## Deliverables
 
 1. CQG **engine** under `packages/frameworks/tooling-automation/` (shared module).
-2. `validate_code_quality_gate.py` under `workflow-mgt/scripts/validation/` (RW Step 9; advisory default).
+2. `validate_code_quality_gate.py` under `workflow-mgt/scripts/validation/` (**IDW Phase 6b**; strict default per ADR-022 v0.0.2).
 3. Monitor entrypoint (6 h cron + HEAD/staleness guards) calling shared engine.
 4. `rw-config.yaml` + **`rw-config-schema.md`** extension (`code_quality_gate:` keys).
-5. RW agent execution doc update (Step 9 validator list).
+5. IDW agent execution doc update (Phase 6b CQG gate).
 6. Parity report template (SHA, GH counts, local counts, delta).
 7. Adopter note in `rw-validators-consumer-layout.md` or sibling doc.
 8. IPP with **architecture section** (FR-113 §Architectural harmonization checklist).

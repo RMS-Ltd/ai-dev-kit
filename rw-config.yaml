@@ -105,8 +105,8 @@ code_quality_gate:
   reports_dir: .cqg/reports
   cache_dir: .cqg/cache
   last_run_file: .cqg/last-run.json
-  rw_threshold: warnings
-  rw_advisory: true
+  idw_threshold: warnings
+  idw_advisory: false
   retention_count: 10
   codeql_command: codeql
 

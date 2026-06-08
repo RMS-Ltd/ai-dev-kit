@@ -130,6 +130,18 @@ workflow_registry:
       documentation: "README.md"
       triggers: ["IPW", "ICW"]
       steps: 8
+
+    implementation-delivery-workflow:
+      name: "Implementation Delivery Workflow"
+      abbreviation: "IDW"
+      description: "Implementation execution against linked IPP/ICW (tests, code, docs, task status). Optional --rw chain to RW after IDW COMPLETE. See KB vwmp implementation-delivery-workflow-agent-execution.md."
+      directory: "implementation-delivery-workflow/"
+      main_file: "idw-workflow.yaml"
+      config_file: "idw-config.yaml"
+      documentation: "README.md"
+      triggers: ["IDW"]
+      steps: 6
+      notes: "Command guide .claude/commands/idw.md; --rw/--push/--art flags lowercase"
       
   common_components:
     templates: "common/templates/"

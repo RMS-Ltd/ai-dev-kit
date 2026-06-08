@@ -26,8 +26,8 @@ class CodeQualityGateConfig:
     reports_dir: str = ".cqg/reports"
     cache_dir: str = ".cqg/cache"
     last_run_file: str = ".cqg/last-run.json"
-    rw_threshold: str = "warnings"
-    rw_advisory: bool = True
+    idw_threshold: str = "warnings"
+    idw_advisory: bool = False
     retention_count: int = 10
     codeql_command: str = "codeql"
 
@@ -41,6 +41,9 @@ class CodeQualityGateConfig:
         roots = raw.get("source_roots") or cls.source_roots
         if isinstance(roots, list):
             roots = tuple(str(r) for r in roots)
+        # Backward compat: rw_* keys deprecated in favour of idw_* (ADR-022 v0.0.2).
+        threshold = raw.get("idw_threshold", raw.get("rw_threshold", cls.idw_threshold))
+        advisory = raw.get("idw_advisory", raw.get("rw_advisory", cls.idw_advisory))
         return cls(
             enabled=bool(raw.get("enabled", True)),
             target_branch=str(raw.get("target_branch", cls.target_branch)),
@@ -52,8 +55,8 @@ class CodeQualityGateConfig:
             reports_dir=str(raw.get("reports_dir", cls.reports_dir)),
             cache_dir=str(raw.get("cache_dir", cls.cache_dir)),
             last_run_file=str(raw.get("last_run_file", cls.last_run_file)),
-            rw_threshold=str(raw.get("rw_threshold", cls.rw_threshold)),
-            rw_advisory=bool(raw.get("rw_advisory", cls.rw_advisory)),
+            idw_threshold=str(threshold),
+            idw_advisory=bool(advisory),
             retention_count=int(raw.get("retention_count", cls.retention_count)),
             codeql_command=str(raw.get("codeql_command", cls.codeql_command)),
         )
@@ -97,8 +100,8 @@ def default_config_dict() -> dict[str, Any]:
         "reports_dir": ".cqg/reports",
         "cache_dir": ".cqg/cache",
         "last_run_file": ".cqg/last-run.json",
-        "rw_threshold": "warnings",
-        "rw_advisory": True,
+        "idw_threshold": "warnings",
+        "idw_advisory": False,
         "retention_count": 10,
         "codeql_command": "codeql",
     }

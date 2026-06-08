@@ -30,7 +30,7 @@
    - **Consolidated IPP:** `docs/implementation-cycles/IPP-E{epic}S{story}T{task}-*.md` (Sections 1–7 per `.claude/commands/ipw.md` / `PLAN_DOC_TEMPLATE.md`, including documentation deliverables and housing), **or**
    - **ICW trio:** `docs/implementation-cycles/ICW-...-specification.md`, `ICW-...-test-design.md`, `ICW-...-implementation-plan.md`.
    Matrix: `docs/governance/standards/dev-kit-ipw-ipp-vs-icw-artifacts.md`.
-3. **Explicit user execution authorization** is provided in a separate instruction (for example: "implement", "proceed with implementation", or an explicit release execution command like `RW E#:S#:T#`).
+3. **Explicit user execution authorization** is provided — satisfied by invoking **`IDW E#:S#:T#`** (preferred), a separate instruction (for example: "implement", "proceed with implementation"), or an explicit release execution command like `RW E#:S#:T#` when implementation is already complete.
 
 **Mandatory behavior while gate is closed:**
 - If user asks for UXR/FR/BR/task/spec/plan/review, produce only those artifacts and stop.
@@ -397,7 +397,7 @@ For each step, follow this pattern:
    - Run: `python "packages/frameworks/workflow-mgt/scripts/validation/validate_actions_ci_parity.py" --strict`
    - Path-aware: runs local checks mirroring GitHub Actions workflows (Tests, Docusaurus build, Greenfield install drift, workflow-scripts pytest) for paths touched by the release diff.
    - **Non-zero exit = RW ABORTED** at Step 9.7 — do not commit, tag, or push. Fix failures and re-run from Step 8.
-   - **CQG does not substitute** for this gate — Code Quality local gate (T17) and Actions CI parity are separate surfaces.
+   - **CQG runs at IDW Phase 6b**, not RW — Actions CI parity (T15) and local CodeQL (T17) are separate surfaces.
    - **Purpose (UXR-024 + operator policy):** Default RW **never pushes**; local-complete releases must still be **push-ready** so operator batch push or `RW --push` does not ship red CI to `dev`/`main`.
 
 10. **Commit Changes** - Create commit with message: `Release v{version}: {summary}\n\nEpic: {epic} | Story: {story} | Task: {task}`
@@ -739,6 +739,32 @@ If ICW detects implementation mode:
 - **DO** continue asking relevant questions and providing intelligent assistance
 - **DO** ensure each phase is complete before proceeding to next
 - **DO** validate quality and completeness at each step
+
+---
+
+### 🔄 IMPLEMENTATION DELIVERY WORKFLOW (IDW) TRIGGER
+
+> **Claude Code users:** Use `/idw [E:S:T] [--rw] [--push] [--art]` (`.claude/commands/idw.md`) — canonical slash command. IDW must **not** run in plan mode.
+
+**When the user types "IDW" or "idw" (case-insensitive), execute the Implementation Delivery Workflow as an intelligent agent:**
+
+1. **MODE VALIDATION (MANDATORY):** IDW will detect plan mode and **CANCEL** if plan mode is active
+2. **DO NOT** run IPW planning phases — IDW **executes** an existing linked IPP or ICW trio
+3. **DO** execute IDW using the **intelligent agent-driven execution pattern**
+4. **LOAD CONFIG FIRST (MANDATORY):** Before gates, load `rw-config.yaml` from project root when present
+5. **MANDATORY GATES before file modifications:** `validate_branch_context.py --strict` → parse `E:S:T` → confirm linked planning package on host task
+6. **AUTHORIZATION:** Invoking `IDW E:S:T` **is** FR-083 explicit implementation authorization for that task
+7. **EXECUTE PHASES:** Load IPP → Step 1 status transition → test-first (Red) → implement (Green/Refactor) → §5–§6 docs → final status reconciliation → verify §7
+8. **OPTIONAL `--rw`:** After **`IDW COMPLETE` only**, chain full RW for same `E:S:T`; forward `--art` / `--push` when present. **`--push` requires `--rw`.** Flags are lowercase (`--rw`, not `-RW`).
+9. **Document** each phase; end in **`IDW COMPLETE`**, **`IDW COMPLETE` + RW outcome**, or **`IDW ABORTED`**
+
+**IDW does not** bump version, write changelog, commit, or tag — **RW** owns release surfaces (unless `--rw` chains RW after success).
+
+**Default:** IDW runs **alone**. IPW does **not** chain to IDW or RW by default.
+
+**Canonical sequence:** `IPW E:S:T` → review IPP → `IDW E:S:T` → `RW E:S:T` (or `IDW E:S:T --rw` for opt-in chain).
+
+**Reference:** `.claude/commands/idw.md` · `packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/implementation-delivery-workflow-agent-execution.md`
 
 ---
 
