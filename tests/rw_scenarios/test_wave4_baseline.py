@@ -82,13 +82,29 @@ class TestWave4IPW:
 
 
 class TestWave4Volume:
-    def test_RW_V03_changelog_exceeds_threshold(self):
+    @pytest.mark.parametrize(
+        ("mode", "expected_returncode"),
+        [
+            ("latest_only", 0),
+            ("archive_all", 1),
+        ],
+    )
+    def test_RW_V03_changelog_exceeds_threshold(self, monkeypatch, mode, expected_returncode):
         """RW-V03: main CHANGELOG over size threshold → CMW advisory (exit 1).
 
-        With ``changelog_archival.mode: latest_only`` (ai-dev-kit default on dev),
-        the main CHANGELOG stays lean — threshold not exceeded (exit 0) is expected.
+        Deterministic coverage of both config modes by mocking rw-config content.
         """
         assert MAIN_CHANGELOG.exists()
+
+        monkeypatch.setattr(RW_CONFIG, "exists", lambda: True)
+        monkeypatch.setattr(
+            RW_CONFIG,
+            "read_text",
+            lambda encoding="utf-8": yaml.safe_dump(
+                {"changelog_archival": {"mode": mode}}
+            ),
+        )
+
         r = subprocess.run(
             [sys.executable, str(CHANGELOG_SCRIPT)],
             cwd=REPO_ROOT,
@@ -100,8 +116,10 @@ class TestWave4Volume:
             cfg.get("changelog_archival", {}).get("mode") == "latest_only"
         )
         if latest_only:
+            assert expected_returncode == 0
             assert r.returncode == 0, r.stdout + r.stderr
         else:
+            assert expected_returncode == 1
             assert r.returncode == 1, "expected threshold exceeded on this repo"
             assert "EXCEEDS THRESHOLD" in r.stdout
 
