@@ -33,7 +33,7 @@ housekeeping_policy: keep
 - [x] **E7:S05 – Migration UXR – Pre-Existing Kanban Structures** - ✅ COMPLETE (v0.7.5.4+1 – All tasks complete)
 - [x] **E7:S06 – Post-Windsurf Project Review** - ✅ COMPLETE (v0.7.6.18+1 – T18 complete: installer prompt clarity hardening)
 
-- [ ] **E7:S07 – Code Reviews** - IN PROGRESS (v0.7.7.2+1 — T01 ✅ T02 ✅ CI pytest gate)
+- [x] **E7:S07 – Code Reviews** - ✅ COMPLETE (v0.7.7.3+1 — T01–T03 complete; BR-091 FIXED)
   - Story: [`story-07-code-reviews.md`](story-07-code-reviews.md)
 
 > **CRITICAL:** This Story Checklist is the **SINGLE SOURCE OF TRUTH** for story status and version markers.  

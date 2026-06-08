@@ -70,7 +70,7 @@ housekeeping_policy: keep
 - [ ] **E08:S03:T15 – GitHub Actions CI health (Perpetual)** — 🔄 PERPETUAL (**v0.8.3.15+4** — Wave 3; `main` CI green @ `f7d8b155`) — [Task doc](story-03-automation-scripts/T15-github-actions-ci-health-perpetual-fr112.md) | [FR-112](../../fr-br/FR-112-perpetual-github-ci-and-security-health-lanes.md) | [IPP](../../../implementation-cycles/IPP-E08S03T15-github-actions-ci-health-perpetual-fr112.md)
 
 
-- [ ] **E08:S03:T16 – GitHub Security & Code Quality health (Perpetual)** — 🔄 PERPETUAL (**v0.8.3.16+7** — Wave 3d local CQG 7 → 0) — [Task doc](story-03-automation-scripts/T16-github-security-code-quality-health-perpetual-fr112.md) | [FR-112](../../fr-br/FR-112-perpetual-github-ci-and-security-health-lanes.md) | [IPP](../../../implementation-cycles/IPP-E08S03T16-github-security-code-quality-health-perpetual-fr112.md)
+- [ ] **E08:S03:T16 – GitHub Security & Code Quality health (Perpetual)** — 🔄 PERPETUAL (**v0.8.3.16+9** — Wave 3e autofix PR #43/#44 pytest triage) — [Task doc](story-03-automation-scripts/T16-github-security-code-quality-health-perpetual-fr112.md) | [FR-112](../../fr-br/FR-112-perpetual-github-ci-and-security-health-lanes.md) | [IPP](../../../implementation-cycles/IPP-E08S03T16-github-security-code-quality-health-perpetual-fr112.md)
 
 
 - [x] **E08:S03:T17 – Local Code Quality Gate (CQG) (FR-113)** — ✅ COMPLETE (**v0.8.3.17+2**) — [Task doc](story-03-automation-scripts/T17-local-code-quality-gate-cqg-fr113.md) | [FR-113](../../fr-br/FR-113-local-code-quality-gate-cqg.md) | [IPP](../../../implementation-cycles/IPP-E08S03T17-local-code-quality-gate-cqg-fr113.md)
@@ -79,7 +79,7 @@ housekeeping_policy: keep
 
 ## Overview
 
-Story 3 delivers repository automation and Code Quality burn-down. **T12–T14** finite burn-down **COMPLETE**. **T17** (CQG) **COMPLETE** @ **v0.8.3.17+2**. **T15** CI green on `main` post-merge; **T16** Wave 2a/2b shipped @ **v0.8.3.16+3** (perpetual hygiene resumed).
+Story 3 delivers repository automation and Code Quality burn-down. **T12–T14** finite burn-down **COMPLETE**. **T17** (CQG) **COMPLETE** @ **v0.8.3.17+2** (CQG gate now at IDW Phase 6b per **E02:S16:T23**). **T15** CI green on `main` @ `f7d8b155`; **T16** Wave 3e shipped @ **v0.8.3.16+9** (autofix PR #43/#44 pytest triage; perpetual hygiene active).
 
 ---
 

@@ -342,7 +342,7 @@ housekeeping_policy: keep
   - Tasks: T01 COMPLETE (v0.7.5.1+0 - UXR-001 intake and synthesis), T02 COMPLETE (v0.7.5.2+0 - UXR-002 intake and synthesis), T03 COMPLETE (v0.7.5.3+0 - UXR-003 intake and synthesis), T04 COMPLETE (v0.7.5.4+0 - UXR-004 intake and synthesis) - **Story COMPLETE**
 
 
-- [ ] **E7:S07 – Code Reviews** - IN PROGRESS (E07:S07:T01 — workflow machinery review, [FR-107](fr-br/FR-107-comprehensive-workflow-machinery-code-review.md))
+- [x] **E7:S07 – Code Reviews** - ✅ COMPLETE (v0.7.7.3+1 — T01–T03; [FR-107](fr-br/FR-107-comprehensive-workflow-machinery-code-review.md) · [BR-091](fr-br/BR-091-workflow-validator-legacy-workflow-mgt-path-hardcoded.md) FIXED)
   - Story: [`epics/epic-07/story-07-code-reviews.md`](epics/epic-07/story-07-code-reviews.md)
   - Tasks: T01 TODO — comprehensive workflow machinery code review
 

@@ -28,7 +28,7 @@ housekeeping_policy: keep
   - Story: [`story-02-additional-validators.md`](story-02-additional-validators.md)
 
 
-- [ ] **E8:S03 – Automation Scripts** - IN PROGRESS (v0.8.3.16+6 – T16 Wave 3c; T15 CI verified)
+- [ ] **E8:S03 – Automation Scripts** - IN PROGRESS (v0.8.3.16+9 – T16 Wave 3e; T15 CI verified)
   - Story: [`story-03-automation-scripts.md`](story-03-automation-scripts.md)
 
 

@@ -43,7 +43,7 @@ When editing this table, update `docs/project-agent-manifest.json` `taskRouting[
 
 | Task | Summary | Task doc |
 | ---- | ------- | -------- |
-| E07:S07:T03 | BR-091 — workflow validator slug path resolution (v0.7.7.3+1 released; CI verification pending) | `docs/kanban/epics/epic-07/story-07-code-reviews/T03-workflow-validator-slug-path-resolution-br091.md` |
+| E08:S03:T16 | FR-112 — GitHub Security & Code Quality perpetual hygiene (Wave 3e @ v0.8.3.16+9; dashboard re-verify pending) | `docs/kanban/epics/epic-08/story-03-automation-scripts/T16-github-security-code-quality-health-perpetual-fr112.md` |
 
 Refresh from `kboard.md` when running UKW or RW Step 7; mirror into manifest `openWork[]` if changed.
 

@@ -13,8 +13,8 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** Medium  
 **Created:** 2026-04-22  
-**Last updated:** 2026-06-08 (UKW -u — post-T16 Wave 2+ / `main` merge bookkeeping; RW **v0.2.16.4+39**)
-**Version Anchor:** v0.2.16.4+39
+**Last updated:** 2026-06-08 (RW **v0.2.16.4+40** — UKW comprehensive kanban sync)
+**Version Anchor:** v0.2.16.4+40
 **Code:** E02S16T04
 **Task Type:** Perpetual Maintenance
 

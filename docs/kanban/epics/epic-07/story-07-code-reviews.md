@@ -8,11 +8,11 @@ housekeeping_policy: keep
 
 # Epic 7, Story 7: Code Reviews
 
-**Status:** IN PROGRESS  
+**Status:** COMPLETE  
 **Priority:** HIGH  
 **Estimated Effort:** [TBD]  
 **Created:** 2026-06-03  
-**Last updated:** 2026-06-05 (v0.7.7.3+1 — **T03 / BR-091** FIXED; CI verified)
+**Last updated:** 2026-06-08 (UKW — all tasks complete; story closed @ **v0.7.7.3+1**)
 **Version:** v0.7.7.3+1
 
 ---
