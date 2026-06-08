@@ -109,8 +109,15 @@ pytest -m fr006 tests/test_fr006_phase1_e2e_localisation.py \
 
 Plus `tests/test_commands.py` init localisation tests (see `TestInitCommand`).
 
+## Phase 3 (translation pipeline)
+
+| Task | Change |
+| ---- | ------ |
+| E21:S03:T01 | Translatable content inventory — [translatable-content-inventory.md](../../../../docs/governance/standards/translatable-content-inventory.md) |
+
 ## References
 
+- [translatable-content-inventory.md](../../../../docs/governance/standards/translatable-content-inventory.md)
 - [FR-006](../../../../docs/project-management/kanban/fr-br/FR-006-localization-language-selection-uk-us-english.md)
 - [ADR-024](../../../../docs/architecture/standards-and-adrs/ADR-024-i18n-framework-strategy.md)
 - [IPP-E21S02T01](../../../../docs/implementation-cycles/IPP-E21S02T01-choose-i18n-framework.md)

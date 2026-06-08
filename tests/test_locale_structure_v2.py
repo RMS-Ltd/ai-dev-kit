@@ -14,6 +14,7 @@ CONVENTIONS = (
 
 PHYSICAL_LOCALES = ("en-GB", "en-US")
 KEY_FILES = ("cli.yaml", "errors.yaml")
+WF_KEY_FILES = ("cli.yaml", "errors.yaml", "installer.yaml")
 FR006_SUPPORTED = (
     "en-GB",
     "en-US",
@@ -56,12 +57,14 @@ def test_v1_supported_locales_registry(kanban_manifest, wf_manifest):
 
 
 def test_v2_key_files_exist_both_packages():
-    """V2: en-GB/en-US keys/cli.yaml and keys/errors.yaml on disk."""
-    for root in (KANBAN_LOCALES, WF_LOCALES):
-        for locale in PHYSICAL_LOCALES:
-            for name in KEY_FILES:
-                path = root / locale / "keys" / name
-                assert path.is_file(), str(path)
+    """V2: en-GB/en-US key catalogs on disk per package."""
+    for locale in PHYSICAL_LOCALES:
+        for name in KEY_FILES:
+            path = KANBAN_LOCALES / locale / "keys" / name
+            assert path.is_file(), str(path)
+        for name in WF_KEY_FILES:
+            path = WF_LOCALES / locale / "keys" / name
+            assert path.is_file(), str(path)
 
 
 def test_v3_manifest_keys_paths_resolve(kanban_manifest, wf_manifest):

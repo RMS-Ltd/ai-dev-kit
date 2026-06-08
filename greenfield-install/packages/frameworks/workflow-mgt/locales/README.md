@@ -17,7 +17,7 @@ locales/
   manifest.yaml       # v2: supported_locales + scaffolds + keys
   en-GB/
     scaffolds/
-    keys/             # cli.yaml, errors.yaml
+    keys/             # cli.yaml, errors.yaml, installer.yaml
   en-US/
     scaffolds/
     keys/
@@ -35,12 +35,15 @@ locales/
 
 ## Manifest keys (keys category)
 
-| Key | File |
-| --- | ---- |
-| `cli` | `keys/cli.yaml` |
-| `errors` | `keys/errors.yaml` |
+| Key | File | Keys (en-GB) |
+| --- | ---- | ------------ |
+| `cli` | `keys/cli.yaml` | 25 |
+| `errors` | `keys/errors.yaml` | 6 |
+| `installer` | `keys/installer.yaml` | 93 |
 
 See [`manifest.yaml`](manifest.yaml). Kanban templates: `packages/frameworks/kanban/locales/`.
+
+**Content inventory (E21:S03:T01):** [translatable-content-inventory.md](../../../../docs/governance/standards/translatable-content-inventory.md) — canonical catalog for translation handoffs.
 
 ## Phase 2 roadmap
 
@@ -52,6 +55,7 @@ See [`manifest.yaml`](manifest.yaml). Kanban templates: `packages/frameworks/kan
 | E21:S02:T05 | Date/time/number formatting (`locale_formatting.py`) — **COMPLETE** @ v0.21.2.5+1 |
 | E21:S02:T06 | `resolve_locale_key()` — **COMPLETE** @ v0.21.2.6+1 |
 | E21:S02:T07 | Extended fallback chain (`language_fallback_chain`) — **COMPLETE** @ v0.21.2.7+1 |
+| E21:S03:T01 | Extract installer/CLI keys + inventory — **IN PROGRESS** |
 
 Detection APIs live in [`localisation_config.py`](../scripts/localisation_config.py): `detect_system_locale`, `detect_browser_locale`, `detect_env_locale`, `map_to_supported_locale`.
 

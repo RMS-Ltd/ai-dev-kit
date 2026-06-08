@@ -159,6 +159,7 @@ python scripts/sync_greenfield_install.py --check
 
 ## References
 
+- [translatable-content-inventory.md](translatable-content-inventory.md) — canonical content catalog (E21:S03:T01)
 - [ADR-024](../../architecture/standards-and-adrs/ADR-024-i18n-framework-strategy.md)
 - [IPP-E21S02T02](../../implementation-cycles/IPP-E21S02T02-locale-file-structure.md)
 - [kanban/locales/README.md](../../../packages/frameworks/kanban/locales/README.md)

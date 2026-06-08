@@ -30,7 +30,7 @@ housekeeping_policy: keep
 
 *(E10:S01 story **COMPLETE** @ v0.10.1.10+2 — RC **APPROVE**; Epic 10 IN PROGRESS — E10:S02 TODO; see [`kanban-completed.md`](kanban-completed.md).)*
 
-- **E21:S03:T01** – Identify and extract all translatable content - 📋 TODO (MEDIUM, **next** FR-006 translation pipeline; blocks S03:T02–T07) | [Task](epics/epic-21/story-03-translation-and-localisation/T01-identify-and-extract-all-translatable-content.md) | [Story](epics/epic-21/story-03-translation-and-localisation.md) | [FR-006](fr-br/FR-006-localization-language-selection-uk-us-english.md) | —No IPP— | Last modified: 2026-06-08 10:30 UTC
+- **E21:S03:T02** – Create translation files for major languages - 📋 TODO (MEDIUM, **next** FR-006 translation pipeline) | [Task](epics/epic-21/story-03-translation-and-localisation/T02-create-translation-files-for-major-languages.md) | [Story](epics/epic-21/story-03-translation-and-localisation.md) | [FR-006](fr-br/FR-006-localization-language-selection-uk-us-english.md) | —No IPP— | Last modified: 2026-06-08 11:50 UTC
 
 - **E05:S09:T15** – Docusaurus adopter-public publish allowlist (FR-114) - 📋 TODO (HIGH, **v0.5.9.15+1** RW -k intake) | [Task](epics/epic-05/story-09-docusaurus-documentation-portal/T15-docusaurus-adopter-public-publish-allowlist-fr114.md) | [FR-114](fr-br/FR-114-split-documentation-surfaces-docusaurus-public-notion-maintainer-kb.md) | —No IPP— | Last modified: 2026-06-06 16:16 UTC
 

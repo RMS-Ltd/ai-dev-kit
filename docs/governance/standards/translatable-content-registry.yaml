@@ -1,0 +1,76 @@
+# Machine-readable translatable content registry (E21:S03:T01)
+# Consumed by T06 completeness tracking; human overview in translatable-content-inventory.md
+version: 1
+task: E21:S03:T01
+adr: ADR-024
+validator_scope: option_b_inventory_only
+
+tiers:
+  runtime_user:
+    description: Short strings for installer, CLI, and locale config — extracted to keys/
+    extraction_status: extracted
+  whole_file:
+    description: Markdown templates, scaffolds, and docs — remain whole files per ADR-024 C1
+    extraction_status: documented
+  operator_validator:
+    description: RW validation script operator messages
+    extraction_status: deferred
+
+packages:
+  workflow-mgt:
+    locales_root: packages/frameworks/workflow-mgt/locales
+    key_domains:
+      cli:
+        file: keys/cli.yaml
+        key_count: 25
+        source_surfaces:
+          - cli/commands/init.py
+          - cli/utils.py
+          - packages/frameworks/workflow-mgt/scripts/localisation_config.py
+      errors:
+        file: keys/errors.yaml
+        key_count: 6
+        source_surfaces:
+          - packages/frameworks/workflow-mgt/scripts/localisation_config.py
+          - packages/frameworks/workflow-mgt/scripts/install_release_workflow.py
+      installer:
+        file: keys/installer.yaml
+        key_count: 93
+        source_surfaces:
+          - packages/frameworks/workflow-mgt/scripts/install_release_workflow.py
+    whole_file_categories:
+      scaffolds:
+        keys:
+          - changelog_stub
+          - version_scaffold_decline
+          - changelog_scaffold_decline
+  kanban:
+    locales_root: packages/frameworks/kanban/locales
+    key_domains:
+      cli:
+        file: keys/cli.yaml
+        key_count: 7
+      errors:
+        file: keys/errors.yaml
+        key_count: 3
+    whole_file_categories:
+      templates:
+        keys:
+          - fr
+          - br
+          - uxr
+          - fb
+          - task
+          - story
+          - epic
+          - plan_doc
+      docs:
+        keys:
+          - setup_index
+
+deferred_surfaces:
+  - tier: operator_validator
+    path_glob: packages/frameworks/workflow-mgt/scripts/validation/*.py
+    estimated_print_calls: 250
+    proposed_domain: validator
+    follow_on: future epic task or S03 extension

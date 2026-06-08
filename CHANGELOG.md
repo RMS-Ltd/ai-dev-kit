@@ -10,10 +10,10 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 ---
 
 
-## [0.21.9.2+2] - 08-06-26
+## [0.21.3.1+1] - 08-06-26
 
-E21:S09:T02 — **Change implemented:** Agent bootstrap open-work refresh (E21:S03:T01); kboard version metadata sync. SemVer **v0.4.1088+2**.
+E21:S03:T01 — **Change implemented:** Translatable content inventory; installer/CLI YAML key extraction (124 workflow-mgt keys). SemVer **v0.4.1089+1**.
 
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.21.9.2+2.md)
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.21.3.1+1.md)
 
 ---

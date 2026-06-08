@@ -22,6 +22,7 @@ locales:
     keys:
       cli: keys/cli.yaml
       errors: keys/errors.yaml
+      installer: keys/installer.yaml
   en-US:
     scaffolds:
       changelog_stub: scaffolds/changelog_stub.md
@@ -30,3 +31,4 @@ locales:
     keys:
       cli: keys/cli.yaml
       errors: keys/errors.yaml
+      installer: keys/installer.yaml
