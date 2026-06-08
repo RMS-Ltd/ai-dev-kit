@@ -143,7 +143,7 @@ Nine FR-006 target locales have on-disk trees (en-GB interim copy). See [locale-
 | **E21:S03:T03** | Complete — `locale_message()` wired at installer + CLI call sites |
 | **E21:S03:T04** | Contributor workflow, review process, guidelines — [translation-workflow-and-review.md](translation-workflow-and-review.md) |
 | **E21:S03:T05** | Management tools — [translation-management-tools.md](../../documentation/user-docs/translation-management-tools.md) (`validate_locale_translations.py`, `sync_locale_keys.py`) |
-| **E21:S03:T06** | Completeness % from registry YAML |
+| **E21:S03:T06** | Completeness % via `report_locale_completeness.py` (reads this registry + on-disk corpus) |
 
 ---
 

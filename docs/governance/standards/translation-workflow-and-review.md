@@ -165,7 +165,7 @@ Arabic (`ar`) scaffold exists; full RTL layout is owned by E21:S07. Contributors
 | **Linguistic pending** | en-GB interim copy on disk; fallback resolves at runtime | `linguistic_status: pending` |
 | **Linguistic complete** | Priority-tier content translated and reviewed | `linguistic_status: complete` (updated in S05–S07 or T06) |
 
-Until [E21:S03:T06](../../project-management/kanban/epics/epic-21/story-03-translation-and-localisation/T06-implement-translation-completeness-tracking.md) automates tracking, contributors note linguistic progress in the PR description. Maintainers update [translatable-content-registry.yaml](translatable-content-registry.yaml) when a locale tier is linguistically complete.
+Run `report_locale_completeness.py` to measure structural and linguistic completeness per locale and tier. Contributors note linguistic progress in PR descriptions; maintainers may use `--update-registry` (with `--registry-threshold`) to set `linguistic_status: complete` in [translatable-content-registry.yaml](translatable-content-registry.yaml) when thresholds are met. Guide: [translation-management-tools.md](../../documentation/user-docs/translation-management-tools.md).
 
 ---
 
@@ -178,6 +178,7 @@ Maintainer and contributor structural tooling (script-first; no `adk locale` sub
 | `validate_locale_translations.py` | YAML parse, manifest paths, en-GB key parity, `{{placeholder}}` checks |
 | `sync_locale_keys.py` | Incremental missing-key sync from en-GB |
 | `scaffold_locale_trees.py` | Full locale tree bootstrap (T02) |
+| `report_locale_completeness.py` | Completeness metrics and missing-translation alerts (T06) |
 
 **Guide:** [translation-management-tools.md](../../documentation/user-docs/translation-management-tools.md)
 
@@ -197,7 +198,7 @@ Maintainer and contributor structural tooling (script-first; no `adk locale` sub
 
 ## Out of scope
 
-- Automated completeness dashboards — E21:S03:T06
+- Web/dashboard completeness UI — optional follow-on (CLI report is canonical in T06)
 - Linguistic delivery per locale — E21:S05–S07
 - Validator `operator_validator` tier (~250 messages) — deferred per inventory Option B
 - Portal / Docusaurus i18n — ADR-024 deferred

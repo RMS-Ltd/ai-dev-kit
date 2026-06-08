@@ -119,7 +119,7 @@ Plus `tests/test_commands.py` init localisation tests (see `TestInitCommand`).
 | E21:S03:T04 | Translation workflow and review — [translation-workflow-and-review.md](../../../../docs/governance/standards/translation-workflow-and-review.md) |
 | E21:S03:T05 | Management tools — [translation-management-tools.md](../../../../docs/documentation/user-docs/translation-management-tools.md) |
 
-**Management scripts:** `validate_locale_translations.py`, `sync_locale_keys.py`, `scaffold_locale_trees.py` under `packages/frameworks/workflow-mgt/scripts/`.
+**Management scripts:** `validate_locale_translations.py`, `sync_locale_keys.py`, `scaffold_locale_trees.py`, `report_locale_completeness.py` under `packages/frameworks/workflow-mgt/scripts/`.
 
 ## Contributing translations
 

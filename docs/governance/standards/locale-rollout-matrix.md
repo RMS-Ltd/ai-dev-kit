@@ -66,7 +66,7 @@ Per [translation-workflow-and-review.md](translation-workflow-and-review.md): **
 - **T02:** Structural completeness — all manifest paths exist; key parity with en-GB.
 - **S05–S07:** Linguistic completeness per tier (P0 minimum for locale selection in installers).
 - **T04:** Contributor workflow and review process — [translation-workflow-and-review.md](translation-workflow-and-review.md).
-- **T06:** Machine-readable tracking via [translatable-content-registry.yaml](translatable-content-registry.yaml).
+- **T06:** Completeness reporting via `report_locale_completeness.py` (registry scope + tier metrics). See [translation-management-tools.md](../../documentation/user-docs/translation-management-tools.md).
 
 ---
 

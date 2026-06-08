@@ -52,6 +52,7 @@ See [`manifest.yaml`](manifest.yaml). Kanban templates: `packages/frameworks/kan
 | [`validate_locale_translations.py`](../scripts/validate_locale_translations.py) | Structural validation |
 | [`sync_locale_keys.py`](../scripts/sync_locale_keys.py) | Incremental key sync from en-GB |
 | [`scaffold_locale_trees.py`](../scripts/scaffold_locale_trees.py) | Full tree bootstrap (T02) |
+| [`report_locale_completeness.py`](../scripts/report_locale_completeness.py) | Completeness metrics and alerts (T06) |
 
 ## Phase 2 roadmap
 

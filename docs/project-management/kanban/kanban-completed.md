@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Completed Tasks
 
-**Last Updated:** 2026-06-08 (RW: E21:S03:T05 translation management tools)
-**Version:** v0.21.3.5+1
+**Last Updated:** 2026-06-08 (RW: E21:S03:T06 translation completeness tracking)
+**Version:** v0.21.3.6+1
 
 > **For MoSCOW prioritized tasks, see:** [`kboard.md`](kboard.md)  
 > **For completed FR/BR/UXR intake items, see:** [`intake-completed.md`](intake-completed.md)
@@ -19,6 +19,10 @@ housekeeping_policy: keep
 ---
 
 ## 20 Most Recently Completed Tasks
+
+#### **RW (2026-06-08)** — E21:S03:T06 @ **v0.21.3.6+1** (translation completeness tracking)
+
+- **[E21:S03:T06](epics/epic-21/story-03-translation-and-localisation/T06-implement-translation-completeness-tracking.md)** — `report_locale_completeness.py`, tier metrics, missing-translation alerts; `pytest -m fr006` green.
 
 #### **RW (2026-06-08)** — E21:S03:T05 @ **v0.21.3.5+1** (translation management tools)
 

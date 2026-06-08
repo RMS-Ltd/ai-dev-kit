@@ -10,10 +10,10 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 ---
 
 
-## [0.21.3.5+1] - 08-06-26
+## [0.21.3.6+1] - 08-06-26
 
-E21:S03:T05 — **Change implemented:** Translation management tools (`validate_locale_translations.py`, `sync_locale_keys.py`) and maintainer documentation. SemVer **v0.4.1093+1**.
+E21:S03:T06 — **Change implemented:** Translation completeness tracking (`report_locale_completeness.py`), tier metrics, and missing-translation alerts. SemVer **v0.4.1094+1**.
 
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.21.3.5+1.md)
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.21.3.6+1.md)
 
 ---

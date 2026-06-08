@@ -52,6 +52,7 @@ See [`manifest.yaml`](manifest.yaml). Kanban templates: `packages/frameworks/kan
 | [`validate_locale_translations.py`](../scripts/validate_locale_translations.py) | Structural validation |
 | [`sync_locale_keys.py`](../scripts/sync_locale_keys.py) | Incremental key sync from en-GB |
 | [`scaffold_locale_trees.py`](../scripts/scaffold_locale_trees.py) | Full tree bootstrap (T02) |
+| [`report_locale_completeness.py`](../scripts/report_locale_completeness.py) | Completeness metrics and alerts (T06) |
 
 ## Phase 2 roadmap
 
@@ -68,6 +69,7 @@ See [`manifest.yaml`](manifest.yaml). Kanban templates: `packages/frameworks/kan
 | E21:S03:T03 | Call-site wiring (`locale_message`) — installer + CLI — **COMPLETE** @ v0.21.3.3+1 |
 | E21:S03:T04 | Translation workflow — [translation-workflow-and-review.md](../../../../docs/governance/standards/translation-workflow-and-review.md) — **COMPLETE** @ v0.21.3.4+1 |
 | E21:S03:T05 | Management tools — [translation-management-tools.md](../../../../docs/documentation/user-docs/translation-management-tools.md) |
+| E21:S03:T06 | Completeness reporting — `report_locale_completeness.py` |
 
 Call-site helper: `locale_message(project_root, key, substitutions)` in [`localisation_config.py`](../scripts/localisation_config.py) (E21:S03:T03). Consumed by `install_release_workflow.py` and `cli/commands/init.py`.
 
