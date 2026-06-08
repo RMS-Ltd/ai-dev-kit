@@ -8,9 +8,9 @@ housekeeping_policy: keep
 
 # E6:S09:T06 — Planning: ECC harness phases 2–5 (FR-098)
 
-**Host Task:** [`T06-ecc-harness-phases-2-5-fr098.md`](../project-management/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T06-ecc-harness-phases-2-5-fr098.md) **(E6:S09:T06)**  
-**Planning for:** [FR-098 — Optional ECC harness layer integration](../project-management/kanban/fr-br/FR-098-ecc-optional-harness-layer-integration.md)  
-**Status:** Phases 2–5 **delivered** — host task **COMPLETE** (**v0.6.9.6+3**); FR-098 **IMPLEMENTED**. **Wave E** (public-repo ECC validation) **planned** — blocked on [FR-099](../project-management/kanban/fr-br/FR-099-spin-off-book-epic-to-private-repository.md) Phase 3.
+**Host Task:** [`T06-ecc-harness-phases-2-5-fr098.md`](../kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T06-ecc-harness-phases-2-5-fr098.md) **(E6:S09:T06)**  
+**Planning for:** [FR-098 — Optional ECC harness layer integration](../kanban/fr-br/FR-098-ecc-optional-harness-layer-integration.md)  
+**Status:** Phases 2–5 **delivered** — host task **COMPLETE** (**v0.6.9.6+3**); FR-098 **IMPLEMENTED**. **Wave E** (public-repo ECC validation) **planned** — blocked on [FR-099](../kanban/fr-br/FR-099-spin-off-book-epic-to-private-repository.md) Phase 3.
 
 > **IPW (Implementation Planning Workflow):** Produced 2026-05-26 per `.claude/commands/ipw.md`. Host task was **E6:S09:T05** invocation; T05 is **COMPLETE** (Phase 1); this package anchors **phases 2–5** on **E6:S09:T06**.  
 > **Releases (T06):** **v0.6.9.6+2** — Waves A–D (`RW --art`); **v0.6.9.6+3** — maintainer dogfood T8 dry-run (`RW --art`); **v0.6.9.6+0** — IPP §7 closure (`RW -d --doc-policy-zero`); **v0.6.9.6+4** — cheatsheet §3 throwaway E2E playbook (`RW -d --art`).
@@ -32,7 +32,7 @@ housekeeping_policy: keep
 | RF7 | **FR-098-F6:** Layered architecture (ADK project OS; ECC harness OS) in user-docs + cheatsheet cross-links | FR-098-F6 |
 | RF8 | Phase 5 book/public positioning sidebar (Head First AI-Assisted Development) linked from cheatsheet | FR-098 phased table |
 | RF9 | Deterministic validators + pytest for bridge YAML and install manifest (extend or sibling to `validate_adk_ecc_skill_pack.py`) | T05 pattern, RF3 |
-| RF10 | **Real-world validation** on public ADK repo after [FR-099](../project-management/kanban/fr-br/FR-099-spin-off-book-epic-to-private-repository.md) Phase 3: greenfield install, then cheatsheet §3 (including optional `--execute`) | Wave E, maintainer plan 2026-05-26 |
+| RF10 | **Real-world validation** on public ADK repo after [FR-099](../kanban/fr-br/FR-099-spin-off-book-epic-to-private-repository.md) Phase 3: greenfield install, then cheatsheet §3 (including optional `--execute`) | Wave E, maintainer plan 2026-05-26 |
 | RF11 | Capture **usage evidence + feedback** (UXR and/or FR) from public-repo pass; link to **E1:S04:T07** and/or follow-on E6 task | Wave E |
 | RF12 | Prove **ADK-only** path on public tree (FR-099-F6) **before** ECC overlay; ECC remains optional afterward | FR-099-NF2, RNF1 |
 
@@ -74,7 +74,7 @@ Enable adopters to **optionally** install ECC alongside ADK with a validated bri
 
 ### 2.3 Constraints
 
-- Installer step must not block [T01 FR-080](../project-management/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T01-greenfield-installation-process-fr080.md) acceptance.
+- Installer step must not block [T01 FR-080](../kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T01-greenfield-installation-process-fr080.md) acceptance.
 - Brownfield path references [ADR-003](../architecture/standards-and-adrs/ADR-003-greenfield-vs-brownfield-adoption.md) optional surfaces only.
 - kboard MoSCOW rows must avoid bare `COMPLETE` token in row text (UKW prune); use “Phase 1 shipped” wording for T05 references.
 - ECC profile pin must match documented package (`minimal` on GitHub rc vs `core` on npm 1.10.0 — spec §8).
@@ -148,7 +148,7 @@ Exemption block not used (T1–T7 not all N).
 | 9 | **Wave D:** UPDATE integration spec §10 task anchors to **T06**; UPDATE FR-098 notes | Traceability |
 | 10 | RW per wave or at end: `RW E6:S09:T06` with Step 7 four-surface (T06 kboard row replaces T05 phases-2–5 anchor) | Release |
 | **11** | **[MANDATORY] Reconcile T06 status** to `COMPLETE` + `✅ COMPLETE (v{version})` when all ACs satisfied; else `IN PROGRESS` / `BLOCKED`. | Task doc + boards — **done** **v0.6.9.6+3** |
-| 12 | **Wave E — prerequisite:** [FR-099](../project-management/kanban/fr-br/FR-099-spin-off-book-epic-to-private-repository.md) **E1:S04:T06** (public rebirth) + **E1:S04:T07** (rewire + install smoke) | Public clone ready |
+| 12 | **Wave E — prerequisite:** [FR-099](../kanban/fr-br/FR-099-spin-off-book-epic-to-private-repository.md) **E1:S04:T06** (public rebirth) + **E1:S04:T07** (rewire + install smoke) | Public clone ready |
 | 13 | **Wave E — execute:** On public clone, run [cheatsheet §3 Throwaway branch playbook](../documentation/user-docs/ecc-adk-integration-cheatsheet.md#throwaway-branch-playbook-end-to-end); allow step 4 `--execute` on feature branch | Real `.cursor/` footprint |
 | 14 | **Wave E — feedback:** File UXR/FR with evidence pack (§8.3); optional cheatsheet/install tweaks via `RW -d` | Adopter-grade signal |
 
@@ -170,7 +170,7 @@ Exemption block not used (T1–T7 not all N).
 - `docs/architecture/standards-and-adrs/ADR-003-greenfield-vs-brownfield-adoption.md` (optional ECC note)
 - `packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md` (AgentShield add-on)
 - Greenfield install surfaces (T01 doc paths / `INSTALL_IN_YOUR_PROJECT.md` as applicable)
-- `docs/project-management/kanban/fr-br/FR-098-ecc-optional-harness-layer-integration.md` (F5/F6 status)
+- `docs/kanban/fr-br/FR-098-ecc-optional-harness-layer-integration.md` (F5/F6 status)
 - Task T06, Story 009, Epic 6 (at RW)
 
 **NONE (justified):**
@@ -207,7 +207,7 @@ Exemption block not used (T1–T7 not all N).
 | D-U4 | `packages/frameworks/workflow-mgt/config/ecc-adk-bridge.yaml.template` | `disabled_hooks` examples, comments | RF4 |
 | D-U5 | `packages/frameworks/workflow-mgt/skills/README.md` | Bridge path + validator commands | RF3 |
 | D-U6 | `packages/frameworks/workflow-mgt/KB/.../release-workflow-agent-execution.md` | Step 9 AgentShield add-on (non-blocking) | RF6 |
-| D-U7 | `docs/project-management/kanban/fr-br/FR-098-*.md` | F5/F6 checkboxes when waves land | RF1, RF7 |
+| D-U7 | `docs/kanban/fr-br/FR-098-*.md` | F5/F6 checkboxes when waves land | RF1, RF7 |
 | D-U8 | T01 / install docs | Optional ECC step | RF1 |
 | D-U9 | T06, Story 009 task docs | Status, version, AC checkboxes | impl steps 1, 11 |
 
@@ -275,7 +275,7 @@ All items in §7 above — verified **v0.6.9.6+3** through **v0.6.9.6+4** (docs)
 
 ## 8. Post-delivery validation plan (Wave E — FR-099 public rebirth)
 
-**Rationale:** Maintainer dogfood on **`RMS-Ltd/ai-dev-kit-book`** (T8) validated scripts and docs with **dry-run only** — correct for the framework source repo. The **real adopter test case** is the **new public AI Dev Kit** tree after [FR-099](../project-management/kanban/fr-br/FR-099-spin-off-book-epic-to-private-repository.md) Phase 3 rebirth: framework-only, no book IP, matches FR-080 greenfield intent and FR-098 optional ECC positioning.
+**Rationale:** Maintainer dogfood on **`RMS-Ltd/ai-dev-kit-book`** (T8) validated scripts and docs with **dry-run only** — correct for the framework source repo. The **real adopter test case** is the **new public AI Dev Kit** tree after [FR-099](../kanban/fr-br/FR-099-spin-off-book-epic-to-private-repository.md) Phase 3 rebirth: framework-only, no book IP, matches FR-080 greenfield intent and FR-098 optional ECC positioning.
 
 ### 8.1 Repository roles
 
@@ -298,7 +298,7 @@ flowchart LR
 
 | Step | Owner / anchor | Action |
 | ---- | -------------- | ------ |
-| 1 | [E1:S04:T05](../project-management/kanban/epics/epic-01/story-04-repository-branding-and-renaming/T05-fr099-phase2-book-extraction-genesis.md) | Phase 2 genesis ✅ on private `dev` tree |
+| 1 | [E1:S04:T05](../kanban/epics/epic-01/story-04-repository-branding-and-renaming/T05-fr099-phase2-book-extraction-genesis.md) | Phase 2 genesis ✅ on private `dev` tree |
 | 2 | FR-099 Phase 3 | Create **public** `RMS-Ltd/ai-dev-kit` from genesis (no pre-genesis book objects on public remote) |
 | 3 | FR-099 Phase 4 / FR-080 | Clone public repo; greenfield ADK install per [INSTALL_IN_YOUR_PROJECT.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/INSTALL_IN_YOUR_PROJECT.md); verify RW, UKW, validators **without** ECC |
 | 4 | Wave E (this plan) | Feature branch on **public** clone; run [cheatsheet §3](../documentation/user-docs/ecc-adk-integration-cheatsheet.md#throwaway-branch-playbook-end-to-end) through validators; **optionally** `--execute` after dry-run review |
@@ -339,15 +339,15 @@ Record in UXR/FR or task notes:
 
 ## References
 
-- [FR-098](../project-management/kanban/fr-br/FR-098-ecc-optional-harness-layer-integration.md)
-- [T06 host task](../project-management/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T06-ecc-harness-phases-2-5-fr098.md)
+- [FR-098](../kanban/fr-br/FR-098-ecc-optional-harness-layer-integration.md)
+- [T06 host task](../kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T06-ecc-harness-phases-2-5-fr098.md)
 - [T05 Phase 1 IPP](IPP-E6S09T05-adk-ecc-workflow-skill-pack-fr098.md)
 - [IPP-E6S9T4 Phase 0](IPP-E6S09T04-ecc-harness-layer-phase0-fr098.md)
 - [Integration specification](../architecture/standards-and-adrs/ecc-adk-harness-layer-integration-specification.md)
 - [Phase 0 evaluation](../architecture/standards-and-adrs/ecc-adk-harness-layer-phase0-evaluation.md)
 - [ipw-adr-necessity-checklist](../architecture/standards-and-adrs/ipw-adr-necessity-checklist.md)
-- [FR-042 IPW](../project-management/kanban/fr-br/FR-042-implementation-planning-workflow-ipw.md)
-- [FR-099 — Public repo spin-off](../project-management/kanban/fr-br/FR-099-spin-off-book-epic-to-private-repository.md)
-- [E1:S04:T06 — FR-099 Phase 3](../project-management/kanban/epics/epic-01/story-04-repository-branding-and-renaming/T06-fr099-phase3-public-ai-dev-kit-rebirth.md) · [T07 Phase 4](../project-management/kanban/epics/epic-01/story-04-repository-branding-and-renaming/T07-fr099-phase4-rewire-and-verify.md)
+- [FR-042 IPW](../kanban/fr-br/FR-042-implementation-planning-workflow-ipw.md)
+- [FR-099 — Public repo spin-off](../kanban/fr-br/FR-099-spin-off-book-epic-to-private-repository.md)
+- [E1:S04:T06 — FR-099 Phase 3](../kanban/epics/epic-01/story-04-repository-branding-and-renaming/T06-fr099-phase3-public-ai-dev-kit-rebirth.md) · [T07 Phase 4](../kanban/epics/epic-01/story-04-repository-branding-and-renaming/T07-fr099-phase4-rewire-and-verify.md)
 - [ADR-006 — Book private spin-off](../architecture/standards-and-adrs/ADR-006-book-project-private-repository-spin-off.md)
 - [ECC + ADK cheatsheet §3](../documentation/user-docs/ecc-adk-integration-cheatsheet.md)

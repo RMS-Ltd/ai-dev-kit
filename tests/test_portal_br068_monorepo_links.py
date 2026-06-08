@@ -6,7 +6,7 @@ Executable spec T1–T2 from IPP-E05S09T11 Wave 5.
 A violation is a relative markdown link whose resolved path leaves the `docs/` tree
 (the Docusaurus docs-plugin root). Internal `../` links within `docs/` are allowed.
 
-See: docs/project-management/kanban/fr-br/BR-068-docusaurus-monorepo-markdown-links-break-strict-production-build.md
+See: docs/kanban/fr-br/BR-068-docusaurus-monorepo-markdown-links-break-strict-production-build.md
 """
 
 from __future__ import annotations

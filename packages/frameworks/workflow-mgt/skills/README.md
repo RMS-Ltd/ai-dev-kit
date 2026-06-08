@@ -1,6 +1,6 @@
 # ADK workflow skill pack (ECC-compatible)
 
-This directory hosts **portable `SKILL.md` files** for optional integration with the ECC harness layer ([FR-098](../../../../docs/project-management/kanban/fr-br/FR-098-ecc-optional-harness-layer-integration.md)).
+This directory hosts **portable `SKILL.md` files** for optional integration with the ECC harness layer ([FR-098](../../../../docs/kanban/fr-br/FR-098-ecc-optional-harness-layer-integration.md)).
 
 ## Bridge field
 

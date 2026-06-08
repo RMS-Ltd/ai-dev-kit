@@ -51,6 +51,7 @@ const config = {
           sidebarPath: './sidebars.js',
           editUrl: 'https://github.com/RMS-Ltd/ai-dev-kit/tree/main/docs/',
           exclude: [
+            'kanban/**',
             'project-management/**',
             'implementation-cycles/**',
             'maintenance/**',

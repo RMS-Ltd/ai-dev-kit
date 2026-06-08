@@ -62,7 +62,7 @@ Step-by-step procedure for executing each T10-T16 review. Tasks can run in paral
 ### Step 7: Store Deliverable
 
 Save to one of:
-- **Option A (recommended):** `docs/project-management/kanban/epics/epic-07/story-06-post-windsurf-project-review/E7S06-T{10-16}-{workflow}-windsurf-impact-review.md`
+- **Option A (recommended):** `docs/kanban/epics/epic-07/story-06-post-windsurf-project-review/E7S06-T{10-16}-{workflow}-windsurf-impact-review.md`
 - **Option B:** `docs/implementation-cycles/reviews/E7S06-T{10-16}-{workflow}-windsurf-impact-review.md`
 
 ### Step 8: Run RW

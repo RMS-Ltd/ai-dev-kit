@@ -2,12 +2,12 @@
 
 **Purpose:** Setup guide for ai-dev-kit on Apple platforms (macOS, iOS) to resolve Apple SDK license blocking issues.
 
-**Related Issue:** [BR-040](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/project-management/kanban/fr-br/BR-040-apple-sdk-license-blocking-issue.md)  
-**Task:** [E6:S06:T03](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/project-management/kanban/epics/epic-06/story-06-feature-requests/T03-apple-sdk-license-blocking-issue.md)
+**Related Issue:** [BR-040](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/kanban/fr-br/BR-040-apple-sdk-license-blocking-issue.md)  
+**Task:** [E6:S06:T03](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/kanban/epics/epic-06/story-06-feature-requests/T03-apple-sdk-license-blocking-issue.md)
 
 ### Scope (greenfield vs brownfield)
 
-This guide addresses **platform tooling** on Apple OSes. For the **greenfield framework install path** (FR-080), follow [`INSTALL_IN_YOUR_PROJECT.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/INSTALL_IN_YOUR_PROJECT.md) after platform prerequisites; see [ADR-003](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/architecture/standards-and-adrs/ADR-003-greenfield-vs-brownfield-adoption.md), [FR-081](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/project-management/kanban/fr-br/FR-081-brownfield-modular-adopter-integration.md), [IPW-E6S9T1](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/implementation-cycles/IPW-E6S09T01-greenfield-installation-fr080.md).
+This guide addresses **platform tooling** on Apple OSes. For the **greenfield framework install path** (FR-080), follow [`INSTALL_IN_YOUR_PROJECT.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/INSTALL_IN_YOUR_PROJECT.md) after platform prerequisites; see [ADR-003](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/architecture/standards-and-adrs/ADR-003-greenfield-vs-brownfield-adoption.md), [FR-081](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/kanban/fr-br/FR-081-brownfield-modular-adopter-integration.md), [IPW-E6S9T1](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/implementation-cycles/IPW-E6S09T01-greenfield-installation-fr080.md).
 
 ---
 

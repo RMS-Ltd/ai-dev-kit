@@ -19,7 +19,7 @@ def _load_module():
     return module
 
 
-def _fresh_kanban_tree(root: Path, kanban: str = "docs/project-management/kanban") -> Path:
+def _fresh_kanban_tree(root: Path, kanban: str = "docs/kanban") -> Path:
     epic1 = root / kanban / "epics" / "Epic-1" / "Epic-1.md"
     story1 = root / kanban / "epics" / "Epic-1" / "Story-009-greenfield.md"
     fr_br = root / kanban / "fr-br"
@@ -42,35 +42,35 @@ def test_generate_rw_config_yaml_includes_task_and_fr_br():
         "scripts_path": "scripts",
         "readme_file": "README.md",
         "use_kanban": True,
-        "kanban_root": "docs/project-management/kanban",
+        "kanban_root": "docs/kanban",
         "epic_doc_pattern": mod.FRESH_KANBAN_EPIC_PATTERN,
         "story_doc_pattern": mod.FRESH_KANBAN_STORY_PATTERN,
         "kanban_board": "kboard.md",
         "task_doc_pattern": mod.FRESH_KANBAN_TASK_PATTERN,
-        "fr_br_root": "docs/project-management/kanban/fr-br",
+        "fr_br_root": "docs/kanban/fr-br",
     }
     yaml_text = mod.generate_rw_config_yaml(config)
     assert "task_doc_pattern:" in yaml_text
     assert mod.FRESH_KANBAN_TASK_PATTERN in yaml_text
     assert "fr_br_root:" in yaml_text
-    assert "docs/project-management/kanban/fr-br" in yaml_text
+    assert "docs/kanban/fr-br" in yaml_text
 
 
 def test_detect_kanban_supplementary_defaults_fresh_layout():
     mod = _load_module()
     with tempfile.TemporaryDirectory() as tmp:
         root = _fresh_kanban_tree(Path(tmp))
-        kanban = "docs/project-management/kanban"
+        kanban = "docs/kanban"
         task_pat, fr_br = mod.detect_kanban_supplementary_defaults(root, kanban)
         assert task_pat == mod.FRESH_KANBAN_TASK_PATTERN
-        assert fr_br == "docs/project-management/kanban/fr-br"
+        assert fr_br == "docs/kanban/fr-br"
 
 
 def test_e2e_generated_config_epic_pattern_matches_files():
     mod = _load_module()
     with tempfile.TemporaryDirectory() as tmp:
         root = _fresh_kanban_tree(Path(tmp))
-        kanban = "docs/project-management/kanban"
+        kanban = "docs/kanban"
         epic_pat, story_pat, _ = mod.detect_kanban_doc_patterns(root, kanban)
         task_pat, fr_br = mod.detect_kanban_supplementary_defaults(root, kanban)
         config = {
@@ -113,7 +113,7 @@ def _load_signoff_module():
 
 BOOK_T03_RW_CONFIG = {
     "use_kanban": True,
-    "kanban_root": "docs/project-management/kanban",
+    "kanban_root": "docs/kanban",
     "epic_doc_pattern": "epics/epic-{epic:02d}/epic-{epic:02d}.md",
     "story_doc_pattern": "epics/epic-{epic:02d}/story-{story:03d}-*.md",
     "task_doc_pattern": "epics/epic-{epic:02d}/story-{story:03d}/t{task:02d}-*.md",
@@ -174,7 +174,7 @@ def test_signoff_br086_ready_after_br084_on_book_t03_config():
         import yaml
 
         root = Path(tmp)
-        kanban = root / "docs/project-management/kanban"
+        kanban = root / "docs/kanban"
         epic_dir = kanban / "epics" / "epic-01"
         epic_dir.mkdir(parents=True)
         (epic_dir / "epic-01.md").write_text("# Epic 1", encoding="utf-8")
@@ -227,7 +227,7 @@ def test_signoff_br083_accepts_unpadded_epic_patterns():
             yaml.dump(
                 {
                     "use_kanban": True,
-                    "kanban_root": "docs/project-management/kanban",
+                    "kanban_root": "docs/kanban",
                     "epic_doc_pattern": "epics/epic-{epic}/epic-{epic}.md",
                     "story_doc_pattern": "epics/epic-{epic}/story-{story:03d}-*.md",
                     "task_doc_pattern": "epics/epic-{epic}/story-{story:03d}/t{task:02d}-*.md",
@@ -255,7 +255,7 @@ def test_strict_zero_match_blocks_use_anyway_when_kanban_exists():
     mod = _load_module()
     with tempfile.TemporaryDirectory() as tmp:
         root = _fresh_kanban_tree(Path(tmp))
-        kanban = "docs/project-management/kanban"
+        kanban = "docs/kanban"
         bad = "epics/Epic-{epic}.md"
         good = mod.FRESH_KANBAN_EPIC_PATTERN
         answers = iter([bad, good])
@@ -285,7 +285,7 @@ def test_book_t03_contract_br084_not_not_ready():
         import yaml
 
         root = Path(tmp)
-        kanban = root / "docs/project-management/kanban"
+        kanban = root / "docs/kanban"
         epic_dir = kanban / "epics" / "epic-01"
         epic_dir.mkdir(parents=True)
         (epic_dir / "epic-01.md").write_text("# Epic 1", encoding="utf-8")

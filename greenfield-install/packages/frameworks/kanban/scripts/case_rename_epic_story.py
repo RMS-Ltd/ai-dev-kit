@@ -22,7 +22,7 @@ def case_rename(src: Path, dst: Path) -> bool:
 
 
 def main() -> None:
-    root = Path(sys.argv[1] if len(sys.argv) > 1 else "docs/project-management/kanban/epics")
+    root = Path(sys.argv[1] if len(sys.argv) > 1 else "docs/kanban/epics")
     count = 0
     for path in sorted(root.rglob("*"), key=lambda p: len(p.parts), reverse=True):
         name = path.name

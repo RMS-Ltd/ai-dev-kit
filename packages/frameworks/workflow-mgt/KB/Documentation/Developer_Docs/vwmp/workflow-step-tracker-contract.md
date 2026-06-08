@@ -9,7 +9,7 @@ housekeeping_policy: keep
 # Workflow Step Tracker Contract
 
 **Authority:** [ADR-011](../../../../../../docs/architecture/standards-and-adrs/ADR-011-workflow-step-tracker-and-agent-run-log.md)  
-**Implementing task:** [E02:S01:T23](../../../../../../docs/project-management/kanban/epics/epic-02/story-01-rw-agent-execution-and-docs/T23-tool-agnostic-workflow-step-tracking-and-runlogs.md)  
+**Implementing task:** [E02:S01:T23](../../../../../../docs/kanban/epics/epic-02/story-01-rw-agent-execution-and-docs/T23-tool-agnostic-workflow-step-tracking-and-runlogs.md)  
 **Related:** [Agent run log schema v1](../../../../../../docs/architecture/standards-and-adrs/schemas/workflow-agent-run-log-v1.schema.json) · [ADR-008 forensic journals](../../../../../../docs/architecture/standards-and-adrs/ADR-008-workflow-forensic-logging-and-checkpoints.md)
 
 ---

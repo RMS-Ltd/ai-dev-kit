@@ -8,9 +8,9 @@ housekeeping_policy: keep
 
 # E02:S01:T25 — Planning: Release Metadata Async Ingest (Umbrella IPW)
 
-**Host Task:** [`T25-changelog-structured-store-database-backed-cmw-fr115.md`](../project-management/kanban/epics/epic-02/story-01-rw-agent-execution-and-docs/T25-changelog-structured-store-database-backed-cmw-fr115.md) **(E02:S01:T25)**  
-**Co-deliverable:** [`T13-semver-registry-structured-store-shared-release-metadata-fr116.md`](../project-management/kanban/epics/epic-03/story-02-versioning-cookbook-and-examples/T13-semver-registry-structured-store-shared-release-metadata-fr116.md) **(E03:S02:T13)**  
-**Planning for:** [FR-115](../project-management/kanban/fr-br/FR-115-changelog-structured-store-database-backed-cmw.md) · [FR-116](../project-management/kanban/fr-br/FR-116-semver-registry-structured-store-shared-release-metadata.md)  
+**Host Task:** [`T25-changelog-structured-store-database-backed-cmw-fr115.md`](../kanban/epics/epic-02/story-01-rw-agent-execution-and-docs/T25-changelog-structured-store-database-backed-cmw-fr115.md) **(E02:S01:T25)**  
+**Co-deliverable:** [`T13-semver-registry-structured-store-shared-release-metadata-fr116.md`](../kanban/epics/epic-03/story-02-versioning-cookbook-and-examples/T13-semver-registry-structured-store-shared-release-metadata-fr116.md) **(E03:S02:T13)**  
+**Planning for:** [FR-115](../kanban/fr-br/FR-115-changelog-structured-store-database-backed-cmw.md) · [FR-116](../kanban/fr-br/FR-116-semver-registry-structured-store-shared-release-metadata.md)  
 **Status:** Approved (pending implementation authorization)
 
 > **Umbrella IPW:** Single planning package for shared async-ingest read model. Implementation order: **shared foundation → T13 semver → T25 changelog → cron/tooling**. RW hot path **unchanged** in v1.
@@ -400,11 +400,11 @@ RF1–RF13 map to §0 DDL + CLI contract. T13 implements RF2, RF7, RF8, RF10; T2
 
 ## References
 
-- [FR-115](../project-management/kanban/fr-br/FR-115-changelog-structured-store-database-backed-cmw.md)
-- [FR-116](../project-management/kanban/fr-br/FR-116-semver-registry-structured-store-shared-release-metadata.md)
-- [T25](../project-management/kanban/epics/epic-02/story-01-rw-agent-execution-and-docs/T25-changelog-structured-store-database-backed-cmw-fr115.md)
-- [T13](../project-management/kanban/epics/epic-03/story-02-versioning-cookbook-and-examples/T13-semver-registry-structured-store-shared-release-metadata-fr116.md)
-- [BR-074](../project-management/kanban/fr-br/BR-074-rw-release-commits-test-artifacts-and-changelog-integrity-failures.md)
+- [FR-115](../kanban/fr-br/FR-115-changelog-structured-store-database-backed-cmw.md)
+- [FR-116](../kanban/fr-br/FR-116-semver-registry-structured-store-shared-release-metadata.md)
+- [T25](../kanban/epics/epic-02/story-01-rw-agent-execution-and-docs/T25-changelog-structured-store-database-backed-cmw-fr115.md)
+- [T13](../kanban/epics/epic-03/story-02-versioning-cookbook-and-examples/T13-semver-registry-structured-store-shared-release-metadata-fr116.md)
+- [BR-074](../kanban/fr-br/BR-074-rw-release-commits-test-artifacts-and-changelog-integrity-failures.md)
 - [ADR-002](../architecture/standards-and-adrs/ADR-002-task-touch-derived-mapping.md)
 - `packages/frameworks/workflow-mgt/scripts/changelog/check_changelog_size.py`
 - `packages/frameworks/workflow-mgt/scripts/validation/validate_semver_registry_injective.py`

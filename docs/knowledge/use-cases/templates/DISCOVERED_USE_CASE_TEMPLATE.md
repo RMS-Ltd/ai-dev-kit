@@ -9,4 +9,4 @@ notion_sot: true
 
 **SoT:** Notion Engineering KB — [Discovered_Use_Case_Template](https://www.notion.so/66af6811826b36e4ccedcf30fee64246)
 
-> Migrated from `docs/knowledge/use-cases/templates/DISCOVERED_USE_CASE_TEMPLATE.md` per [FR-114](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/project-management/kanban/fr-br/FR-114-split-documentation-surfaces-docusaurus-public-notion-maintainer-kb.md). Full content lives in Notion.
+> Migrated from `docs/knowledge/use-cases/templates/DISCOVERED_USE_CASE_TEMPLATE.md` per [FR-114](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/kanban/fr-br/FR-114-split-documentation-surfaces-docusaurus-public-notion-maintainer-kb.md). Full content lives in Notion.

@@ -57,7 +57,7 @@ def test_pattern_matching_fix():
     success, stdout, stderr, exec_time = run_command(cmd)
     
     # Check for successful story doc discovery
-    if "Story doc:" in stdout and "docs/project-management/kanban/epics/Epic-6/Story-006-feature-requests.md" in stdout:
+    if "Story doc:" in stdout and "docs/kanban/epics/Epic-6/Story-006-feature-requests.md" in stdout:
         print("✅ Pattern matching: PASS - Story doc found correctly")
         pattern_success = True
     else:

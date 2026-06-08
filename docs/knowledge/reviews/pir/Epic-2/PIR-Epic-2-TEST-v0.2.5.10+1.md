@@ -9,4 +9,4 @@ notion_sot: true
 
 **SoT:** Notion Engineering KB — [Pir Epic 2 Test V0.2.5.10+1](https://www.notion.so/d6d5c4569c40fd7a12e31f567b34f808)
 
-> Migrated from `docs/knowledge/reviews/pir/Epic-2/PIR-Epic-2-TEST-v0.2.5.10+1.md` per [FR-114](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/project-management/kanban/fr-br/FR-114-split-documentation-surfaces-docusaurus-public-notion-maintainer-kb.md). Full content lives in Notion.
+> Migrated from `docs/knowledge/reviews/pir/Epic-2/PIR-Epic-2-TEST-v0.2.5.10+1.md` per [FR-114](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/kanban/fr-br/FR-114-split-documentation-surfaces-docusaurus-public-notion-maintainer-kb.md). Full content lives in Notion.

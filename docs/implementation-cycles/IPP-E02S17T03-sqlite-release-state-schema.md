@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # E02:S17:T03 — Planning: SQLite release-state schema and migration (IPW)
 
-**Host Task:** [`T03-sqlite-release-state-schema-and-migration-design.md`](../project-management/kanban/epics/epic-02/story-17-rw-semver-characterization-and-release-state-sqlite/T03-sqlite-release-state-schema-and-migration-design.md) **(E02:S17:T03)**  
-**Planning for:** [E02:S17](../project-management/kanban/epics/epic-02/story-17-rw-semver-characterization-and-release-state-sqlite.md) · [FR-045](../project-management/kanban/fr-br/FR-045-adr-002-task-touch-derived-mapping.md) · [FR-046](../project-management/kanban/fr-br/FR-046-rw-semver-tag-task-touch-mode.md)  
+**Host Task:** [`T03-sqlite-release-state-schema-and-migration-design.md`](../kanban/epics/epic-02/story-17-rw-semver-characterization-and-release-state-sqlite/T03-sqlite-release-state-schema-and-migration-design.md) **(E02:S17:T03)**  
+**Planning for:** [E02:S17](../kanban/epics/epic-02/story-17-rw-semver-characterization-and-release-state-sqlite.md) · [FR-045](../kanban/fr-br/FR-045-adr-002-task-touch-derived-mapping.md) · [FR-046](../kanban/fr-br/FR-046-rw-semver-tag-task-touch-mode.md)  
 **Status:** Approved (design phase)  
 **Functional release target:** T04 implementation via `RW E02:S17:T04 --art` after T03 design AC closure
 
@@ -59,8 +59,8 @@ Replace monolithic YAML/MD release-state reads with an indexed SQLite backend wh
 
 | RF | Design artifact |
 | -- | --------------- |
-| RF1–RF3, RF7–RF8 | [`sqlite-schema-design.md`](../project-management/kanban/epics/epic-02/story-17-rw-semver-characterization-and-release-state-sqlite/sqlite-schema-design.md) |
-| RF4–RF5, RNF2 | [`migration-manifest.md`](../project-management/kanban/epics/epic-02/story-17-rw-semver-characterization-and-release-state-sqlite/migration-manifest.md) |
+| RF1–RF3, RF7–RF8 | [`sqlite-schema-design.md`](../kanban/epics/epic-02/story-17-rw-semver-characterization-and-release-state-sqlite/sqlite-schema-design.md) |
+| RF4–RF5, RNF2 | [`migration-manifest.md`](../kanban/epics/epic-02/story-17-rw-semver-characterization-and-release-state-sqlite/migration-manifest.md) |
 | RF6 | `rw-config.yaml` keys documented in schema design §6 |
 
 ### 2.3 Constraints
@@ -184,8 +184,8 @@ Replace monolithic YAML/MD release-state reads with an indexed SQLite backend wh
 
 | Doc ID | Canonical path | Publication | Lifecycle |
 | ------ | -------------- | ----------- | --------- |
-| D-C1 | `docs/project-management/kanban/epics/epic-02/story-17-.../sqlite-schema-design.md` | NOT_APPLICABLE | evergreen |
-| D-C2 | `docs/project-management/kanban/epics/epic-02/story-17-.../migration-manifest.md` | NOT_APPLICABLE | evergreen |
+| D-C1 | `docs/kanban/epics/epic-02/story-17-.../sqlite-schema-design.md` | NOT_APPLICABLE | evergreen |
+| D-C2 | `docs/kanban/epics/epic-02/story-17-.../migration-manifest.md` | NOT_APPLICABLE | evergreen |
 | D-C4 | `docs/implementation-cycles/IPP-E02S17T03-sqlite-release-state-schema.md` | NOT_APPLICABLE | evergreen |
 
 **Inbound links:** T03 task doc §Input, T04 task doc §Dependencies, story S17 checklist.
@@ -206,8 +206,8 @@ Replace monolithic YAML/MD release-state reads with an indexed SQLite backend wh
 
 ## References
 
-- [T02 baseline pattern notes](../project-management/kanban/epics/epic-02/story-17-rw-semver-characterization-and-release-state-sqlite/baseline-pattern-notes.md)
-- [scenario-matrix.md](../project-management/kanban/epics/epic-02/story-17-rw-semver-characterization-and-release-state-sqlite/scenario-matrix.md) — T05 parity IDs
+- [T02 baseline pattern notes](../kanban/epics/epic-02/story-17-rw-semver-characterization-and-release-state-sqlite/baseline-pattern-notes.md)
+- [scenario-matrix.md](../kanban/epics/epic-02/story-17-rw-semver-characterization-and-release-state-sqlite/scenario-matrix.md) — T05 parity IDs
 - [`finalize_rw_semver_registry.py`](../../packages/frameworks/workflow-mgt/scripts/version/finalize_rw_semver_registry.py)
 - [`semver_converter.py`](../../packages/frameworks/workflow-mgt/scripts/version/semver_converter.py)
-- [FR-045 ADR-002 task-touch mapping](../project-management/kanban/fr-br/FR-045-adr-002-task-touch-derived-mapping.md)
+- [FR-045 ADR-002 task-touch mapping](../kanban/fr-br/FR-045-adr-002-task-touch-derived-mapping.md)

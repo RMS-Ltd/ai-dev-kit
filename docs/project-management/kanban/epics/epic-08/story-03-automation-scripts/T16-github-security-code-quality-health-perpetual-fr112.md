@@ -13,8 +13,8 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** Medium (ongoing)  
 **Created:** 2026-06-05  
-**Last updated:** 2026-06-08 (Wave 3d shipped **v0.8.3.16+7** — `cli/logging.py` last `py/empty-except`)  
-**Version Anchor:** v0.8.3.16+7 (Wave 3d)  
+**Last updated:** 2026-06-08 (Wave 3e shipped **v0.8.3.16+8** — autofix PR #43/#44 pytest triage)  
+**Version Anchor:** v0.8.3.16+8 (Wave 3e)  
 **Code:** E08S03T16  
 **Task Type:** Perpetual Maintenance
 
@@ -308,6 +308,22 @@ Use **`RW E08:S03:T16`** for recurring security/Code Quality hygiene (BUILD incr
 | Repo grep `except …: pass` | **0** in `*.py` |
 | Operator dashboard | **Pending** post–3d merge |
 
+### Wave 3e remediation (2026-06-08)
+
+**Theme:** Autofix PR pytest triage — [PR #43](https://github.com/RMS-Ltd/ai-dev-kit/pull/43), [PR #44](https://github.com/RMS-Ltd/ai-dev-kit/pull/44).
+
+| PR | Issue | Fix |
+| -- | ----- | --- |
+| **#43** | Copilot broke `VERSION_STRING` (`-task.` suffix) → semver `None` | Revert on branch; dismiss finding (BR-101 / versioning policy) |
+| **#44** | `PosixPath` monkeypatch on read-only `exists` | RW-V03: `--config` + `size_threshold_lines` parametrization |
+
+| Verification | Result |
+| ------------ | ------ |
+| PR #43 / #44 pytest CI | **green** pre-merge |
+| Merged to `main` | **2026-06-08** |
+| `RW E08:S03:T16 --art` | **v0.8.3.16+8** |
+| Operator dashboard | **Pending** post–3e merge |
+
 **Cross-lane notes:**
 
 - **T15:** CI green on `main` @ `4c4e9275` (PR #41 merge path); merge gate **lifted** for T16 code waves.
@@ -345,6 +361,7 @@ Use **`RW E08:S03:T16`** for recurring security/Code Quality hygiene (BUILD incr
 - [x] **AC9 (Wave 3b):** Reliability-first burn-down of **11** residuals shipped **v0.8.3.16+5**; CQG + pytest green; **TC18 closed** — **Excellent** M / **Good** R, **2** `py/empty-except` @ `635ae871`.
 - [x] **AC10 (Wave 3c):** `packages/` `py/empty-except` stragglers shipped **v0.8.3.16+6**; **1** residual @ `cli/logging.py` (operator verify).
 - [x] **AC11 (Wave 3d):** `cli/logging.py` empty-except shipped **v0.8.3.16+7**; repo grep clean; operator post-merge verify **pending**.
+- [x] **AC12 (Wave 3e):** Autofix PR #43/#44 pytest triage merged to `main`; shipped **v0.8.3.16+8**; operator dismiss #43 finding **pending**.
 
 ---
 

@@ -209,7 +209,7 @@ AI Dev Kit succeeds when:
 - **[Getting Started Guide](../guides/getting-started/README.md)** — How to start using AI Dev Kit
 - **[Framework Consumption Guide](../guides/framework-consumption/README.md)** — How to adopt frameworks
 - **[Architecture Overview](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/architecture/README.md)** — Technical architecture and standards
-- **[Kanban Governance](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/project-management/rituals/policy/kanban-governance-policy.md)** — Kanban framework policies
+- **[Kanban Governance](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/governance/kanban/kanban-governance-policy.md)** — Kanban framework policies
 
 ---
 

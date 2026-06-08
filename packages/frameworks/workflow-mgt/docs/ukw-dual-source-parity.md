@@ -10,7 +10,7 @@ housekeeping_policy: keep
 
 **Purpose:** Keep the **canonical** repo [`.cursorrules`](../../../../.cursorrules) UKW section, the **Claude slash command** [`.claude/commands/ukw.md`](../../../../.claude/commands/ukw.md), and the **VWMP guide** [`update-kanban-workflow-agent-execution.md`](../KB/Documentation/Developer_Docs/vwmp/update-kanban-workflow-agent-execution.md) aligned on **lean active boards** (FR-109), **FR-097** stamps, **UXR-012** icons, and **BR-059** coverage scope.
 
-**Related:** [rw-trigger-dual-source-parity.md](rw-trigger-dual-source-parity.md) (RW guardrails); [E02:S16:T18](../../../../docs/project-management/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T18-ukw-lean-active-board-contract-fr109.md).
+**Related:** [rw-trigger-dual-source-parity.md](rw-trigger-dual-source-parity.md) (RW guardrails); [E02:S16:T18](../../../../docs/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T18-ukw-lean-active-board-contract-fr109.md).
 
 ---
 

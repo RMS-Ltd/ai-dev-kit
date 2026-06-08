@@ -19,9 +19,9 @@ To deliver efficient, standardized intake processing for Feature Requests (FR), 
 - Configuration file `.ai-dev-kit.yaml` with intake settings
 
 ### Setup Requirements
-- Intake directory: `docs/project-management/kanban/fr-br/`
-- Completed tracking: `docs/project-management/kanban/intake-completed.md`
-- Kanban board integration: `docs/project-management/kanban/kboard.md`
+- Intake directory: `docs/kanban/fr-br/`
+- Completed tracking: `docs/kanban/intake-completed.md`
+- Kanban board integration: `docs/kanban/kboard.md`
 - Validation rules and templates configured
 
 ## ⚡ Quick Start
@@ -51,8 +51,8 @@ INTAKE --validate-only --dry-run
 # .ai-dev-kit.yaml
 intake:
   enabled: true
-  intake_directory: docs/project-management/kanban/fr-br/
-  completed_tracking: docs/project-management/kanban/intake-completed.md
+  intake_directory: docs/kanban/fr-br/
+  completed_tracking: docs/kanban/intake-completed.md
   kanban_integration: true
   auto_categorization: true
   validation_strict: true
@@ -62,8 +62,8 @@ intake:
 ### Configuration Options
 | Option | Type | Default | Description |
 |--------|------|---------|-------------|
-| intake_directory | string | docs/project-management/kanban/fr-br/ | Intake requests directory |
-| completed_tracking | string | docs/project-management/kanban/intake-completed.md | Completed requests tracking |
+| intake_directory | string | docs/kanban/fr-br/ | Intake requests directory |
+| completed_tracking | string | docs/kanban/intake-completed.md | Completed requests tracking |
 | kanban_integration | boolean | true | Update kanban board automatically |
 | auto_categorization | boolean | true | Automatic request categorization |
 | validation_strict | boolean | true | Strict validation mode |
@@ -367,8 +367,8 @@ INTAKE --help
 ```yaml
 intake:
   enabled: true
-  intake_directory: docs/project-management/kanban/fr-br/
-  completed_tracking: docs/project-management/kanban/intake-completed.md
+  intake_directory: docs/kanban/fr-br/
+  completed_tracking: docs/kanban/intake-completed.md
   kanban_integration: true
   auto_categorization: true
 ```

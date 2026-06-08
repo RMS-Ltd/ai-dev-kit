@@ -11,15 +11,15 @@ housekeeping_policy: keep
 **Status:** Accepted  
 **Date:** 2026-05-14  
 **Deciders:** User (Ruari Mears)  
-**Implementing task:** [E2:S16:T09](../../project-management/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T09-ipw-slash-command-claude-code-fr094.md)  
-**Origin FR:** [FR-094](../../project-management/kanban/fr-br/FR-094-ipw-slash-command-and-task-state-transition-mandate.md)  
-**Related:** [FR-077](../../project-management/kanban/fr-br/FR-077-ipw-built-task-status-transition-and-kboard-sync.md) — established the ownership contract that this ADR embeds in the IPP artefact
+**Implementing task:** [E2:S16:T09](../../kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T09-ipw-slash-command-claude-code-fr094.md)  
+**Origin FR:** [FR-094](../../kanban/fr-br/FR-094-ipw-slash-command-and-task-state-transition-mandate.md)  
+**Related:** [FR-077](../../kanban/fr-br/FR-077-ipw-built-task-status-transition-and-kboard-sync.md) — established the ownership contract that this ADR embeds in the IPP artefact
 
 ---
 
 ## Context
 
-[FR-077](../../project-management/kanban/fr-br/FR-077-ipw-built-task-status-transition-and-kboard-sync.md) established that task state transitions (`TODO → IN PROGRESS`, `IN PROGRESS → COMPLETE`) are owned by implementation execution — not IPW (planning). Validators (`validate_ipw_status_drift.py`, RW Step 1c) correctly detect TODO drift after implementation begins, but only after the fact, causing RW gate failures and manual intervention.
+[FR-077](../../kanban/fr-br/FR-077-ipw-built-task-status-transition-and-kboard-sync.md) established that task state transitions (`TODO → IN PROGRESS`, `IN PROGRESS → COMPLETE`) are owned by implementation execution — not IPW (planning). Validators (`validate_ipw_status_drift.py`, RW Step 1c) correctly detect TODO drift after implementation begins, but only after the fact, causing RW gate failures and manual intervention.
 
 The root cause is that the ownership contract exists in documentation, not in the artefact the implementer is directly following: the IPP (Implementation Plan document produced by IPW). Implementers who work from the IPP without re-reading ownership docs will naturally skip the transition unless it is a prescribed step in the plan they are following.
 

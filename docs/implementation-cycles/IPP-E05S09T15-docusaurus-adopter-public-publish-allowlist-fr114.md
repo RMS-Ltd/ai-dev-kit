@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # E05:S09:T15 — Planning: Docusaurus adopter-public publish allowlist (FR-114)
 
-**Host Task:** [`T15-docusaurus-adopter-public-publish-allowlist-fr114.md`](../project-management/kanban/epics/epic-05/story-09-docusaurus-documentation-portal/T15-docusaurus-adopter-public-publish-allowlist-fr114.md) **(E05:S09:T15)**  
-**Planning for:** [FR-114](../project-management/kanban/fr-br/FR-114-split-documentation-surfaces-docusaurus-public-notion-maintainer-kb.md) (F1, F2, F6, NF1)  
+**Host Task:** [`T15-docusaurus-adopter-public-publish-allowlist-fr114.md`](../kanban/epics/epic-05/story-09-docusaurus-documentation-portal/T15-docusaurus-adopter-public-publish-allowlist-fr114.md) **(E05:S09:T15)**  
+**Planning for:** [FR-114](../kanban/fr-br/FR-114-split-documentation-surfaces-docusaurus-public-notion-maintainer-kb.md) (F1, F2, F6, NF1)  
 **Status:** Approved — shipped **v0.5.9.15+1**; Wave 2 ADR-024 + IPP completion **v0.5.9.15+2**
 
 > **IPW (Implementation Planning Workflow):** Consolidated IPP per FR-042 / FR-094. Bidirectional wiring to host task **Input** and **References** is mandatory.
@@ -164,7 +164,7 @@ See §5. Wave 1 shipped in `590acb81`; Wave 2 adds ADR-024, `docs/release-notes/
 | D-U3 | `portal/sidebars.js` | Adopter IA | RF3 |
 | D-U4 | `.github/workflows/docusaurus-build.yml` | CI paths | RF5 |
 | D-U5 | Allowlisted `docs/guides/**`, `docs/documentation/**` | Link remediation | RF7 |
-| D-U6 | `docs/project-management/kanban/fr-br/FR-066-*.md` | Supersession banner | T7 |
+| D-U6 | `docs/kanban/fr-br/FR-066-*.md` | Supersession banner | T7 |
 | D-U7 | T15 task doc | IPP links; status | RF10 |
 
 ### 5.2 New documents to create
@@ -225,10 +225,10 @@ See §5. Wave 1 shipped in `590acb81`; Wave 2 adds ADR-024, `docs/release-notes/
 
 ## References
 
-- [FR-114](../project-management/kanban/fr-br/FR-114-split-documentation-surfaces-docusaurus-public-notion-maintainer-kb.md)
-- [T15 task doc](../project-management/kanban/epics/epic-05/story-09-docusaurus-documentation-portal/T15-docusaurus-adopter-public-publish-allowlist-fr114.md)
+- [FR-114](../kanban/fr-br/FR-114-split-documentation-surfaces-docusaurus-public-notion-maintainer-kb.md)
+- [T15 task doc](../kanban/epics/epic-05/story-09-docusaurus-documentation-portal/T15-docusaurus-adopter-public-publish-allowlist-fr114.md)
 - [ADR-024](../architecture/standards-and-adrs/ADR-024-docusaurus-adopter-public-publish-allowlist-fr114.md)
-- [FR-066](../project-management/kanban/fr-br/FR-066-docusaurus-canonical-docs-path-and-publish-scope.md)
+- [FR-066](../kanban/fr-br/FR-066-docusaurus-canonical-docs-path-and-publish-scope.md)
 - [portal/README.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/portal/README.md)
 - [tests/portal_allowlist.py](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/tests/portal_allowlist.py)
 - [ipw-adr-necessity-checklist.md](../architecture/standards-and-adrs/ipw-adr-necessity-checklist.md)

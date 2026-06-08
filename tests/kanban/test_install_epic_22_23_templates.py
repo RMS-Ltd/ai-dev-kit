@@ -64,7 +64,7 @@ def empty_project(tmp_path: Path) -> Path:
 
 def test_fresh_install_epic_22_23_not_placeholder(empty_project: Path) -> None:
     """T2/T3: fresh install uses real templates, not placeholder bodies."""
-    kanban_rel = "docs/project-management/kanban"
+    kanban_rel = "docs/kanban"
     cmd = [
         sys.executable,
         str(INSTALL_SCRIPT),
@@ -106,7 +106,7 @@ def test_dry_run_logs_template_paths_for_epic_22_23(empty_project: Path) -> None
         "fresh",
         "--dry-run",
         "--kanban-path",
-        "docs/project-management/kanban",
+        "docs/kanban",
     ]
     env = {**dict(subprocess.os.environ), "PYTHONPATH": str(SCRIPTS_DIR)}
     result = subprocess.run(

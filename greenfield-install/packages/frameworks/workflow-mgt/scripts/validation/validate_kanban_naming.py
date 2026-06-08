@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Validate kanban naming hygiene in docs/project-management/kanban/epics/.
+"""Validate kanban naming hygiene in docs/kanban/epics/.
 
 Exits 0 on clean tree, exits 1 with report on violations.
 Uses only Python stdlib.
@@ -16,7 +16,7 @@ if str(_KANBAN_SCRIPTS) not in sys.path:
     sys.path.insert(0, str(_KANBAN_SCRIPTS))
 import kanban_paths as kp  # noqa: E402
 
-KANBAN_EPICS = Path("docs/project-management/kanban/epics")
+KANBAN_EPICS = Path("docs/kanban/epics")
 _EPIC_DIR_RE = re.compile(r"^(?:epic|Epic)-(\d+)$", re.IGNORECASE)
 _STORY_FILE_RE = re.compile(r"^(?:story|Story)-(\d+)-.*\.md$", re.IGNORECASE)
 _STORY_DIR_RE = re.compile(r"^(?:story|Story)-(\d+)", re.IGNORECASE)
@@ -131,7 +131,7 @@ def main():
         "--epics-root",
         type=Path,
         default=KANBAN_EPICS,
-        help="Kanban epics directory (default: docs/project-management/kanban/epics)",
+        help="Kanban epics directory (default: docs/kanban/epics)",
     )
     args = parser.parse_args()
     epics_root = args.epics_root

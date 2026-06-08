@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # E6:S09:T02 — Planning: Spec, Tests, Implementation Plan (IPW)
 
-**Host Task:** [`T02-brownfield-modular-adopter-integration-fr081.md`](../project-management/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T02-brownfield-modular-adopter-integration-fr081.md) **(E6:S09:T02)**  
-**Planning for:** [FR-081 – Brownfield modular adopter integration](../project-management/kanban/fr-br/FR-081-brownfield-modular-adopter-integration.md)  
+**Host Task:** [`T02-brownfield-modular-adopter-integration-fr081.md`](../kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T02-brownfield-modular-adopter-integration-fr081.md) **(E6:S09:T02)**  
+**Planning for:** [FR-081 – Brownfield modular adopter integration](../kanban/fr-br/FR-081-brownfield-modular-adopter-integration.md)  
 **Status:** Approved
 
 > **IPW:** Consolidated planning package for FR-081. Brownfield SoT: [`INSTALL_IN_YOUR_PROJECT.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/INSTALL_IN_YOUR_PROJECT.md#brownfield-adoption-existing-repositories). Greenfield counterpart: [IPW-E6S9T1](IPW-E6S09T01-greenfield-installation-fr080.md).
@@ -196,8 +196,8 @@ Brownfield adopters with existing repositories can determine **what must be wire
 
 ## References
 
-- [T02](../project-management/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T02-brownfield-modular-adopter-integration-fr081.md)
-- [FR-081](../project-management/kanban/fr-br/FR-081-brownfield-modular-adopter-integration.md)
+- [T02](../kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T02-brownfield-modular-adopter-integration-fr081.md)
+- [FR-081](../kanban/fr-br/FR-081-brownfield-modular-adopter-integration.md)
 - [ADR-003](../architecture/standards-and-adrs/ADR-003-greenfield-vs-brownfield-adoption.md)
 - [IPW-E6S9T1](IPW-E6S09T01-greenfield-installation-fr080.md)
 - [rw-validators-consumer-layout.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/docs/rw-validators-consumer-layout.md)

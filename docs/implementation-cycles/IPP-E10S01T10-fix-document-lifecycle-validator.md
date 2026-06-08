@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # E10:S01:T10 — Planning: Fix DocumentLifecycleValidator (IPW)
 
-**Host Task:** [`T10-fix-document-lifecycle-validator.md`](../project-management/kanban/epics/epic-10/story-01-document-lifecycle-package-implementation-review/T10-fix-document-lifecycle-validator.md) **(E10:S01:T10)**  
-**Planning for:** [GAP-DOCLIFE-TEST-001](../project-management/kanban/epics/epic-10/story-01-document-lifecycle-package-implementation-review/T05-create-gap-log-and-risk-assessment.md) · [T06 remediation R3](../project-management/kanban/epics/epic-10/story-01-document-lifecycle-package-implementation-review/T06-define-rc-sign-off-criteria-and-remediation-tasks.md) · [E10S01 orchestration plan §9](./E10S01-orchestration-plan.md)  
+**Host Task:** [`T10-fix-document-lifecycle-validator.md`](../kanban/epics/epic-10/story-01-document-lifecycle-package-implementation-review/T10-fix-document-lifecycle-validator.md) **(E10:S01:T10)**  
+**Planning for:** [GAP-DOCLIFE-TEST-001](../kanban/epics/epic-10/story-01-document-lifecycle-package-implementation-review/T05-create-gap-log-and-risk-assessment.md) · [T06 remediation R3](../kanban/epics/epic-10/story-01-document-lifecycle-package-implementation-review/T06-define-rc-sign-off-criteria-and-remediation-tasks.md) · [E10S01 orchestration plan §9](./E10S01-orchestration-plan.md)  
 **Status:** Draft — planning complete; awaiting implementation authorization (FR-083)  
 **Branch:** `epic/10-doc-lifecycle-framework`
 
@@ -130,7 +130,7 @@ Restore and align the cross-package **`DocumentLifecycleValidator`** in tooling-
 | -- | ---------------- | -------------- |
 | V1 | PyYAML import | `python -c "import yaml"` succeeds in project venv; validator does not raise `NameError` |
 | V2 | Five-field enforcement | Temp doc missing `ttl_days` → issue emitted |
-| V3 | Story-folder smoke | Run validator on `docs/project-management/kanban/epics/epic-10/story-01-document-lifecycle-package-implementation-review/` — completes scan (may report issues on non-compliant samples; must not crash) |
+| V3 | Story-folder smoke | Run validator on `docs/kanban/epics/epic-10/story-01-document-lifecycle-package-implementation-review/` — completes scan (may report issues on non-compliant samples; must not crash) |
 | V4 | greenfield mirror parity | `diff` primary vs `greenfield-install/.../document_lifecycle_validator.py` — identical logic |
 | V5 | Boundary documentation | README §DocumentLifecycleValidator lists five required fields and references T08 package-local validator |
 
@@ -145,7 +145,7 @@ Restore and align the cross-package **`DocumentLifecycleValidator`** in tooling-
 | 3 | Expand `required_fields` to five spec fields; preserve enum/type validators | RF2, RF3 |
 | 4 | Update `test_document_lifecycle_validator.py`: five-field valid fixture; tests for each missing required field; retain enum failure tests | RF5, TC1–TC8 |
 | 5 | Sync `greenfield-install/packages/frameworks/tooling-automation/validators/` mirror (validator + tests) | RF7, V4 |
-| 6 | Update `packages/frameworks/tooling-automation/validators/framework/README.md` §DocumentLifecycleValidator: five required fields; boundary table vs [T08](../project-management/kanban/epics/epic-10/story-01-document-lifecycle-package-implementation-review/T08-implement-doc-housekeeping-workflow-and-scripts.md) `validate_lifecycle_metadata.py` | RF6, V5 |
+| 6 | Update `packages/frameworks/tooling-automation/validators/framework/README.md` §DocumentLifecycleValidator: five required fields; boundary table vs [T08](../kanban/epics/epic-10/story-01-document-lifecycle-package-implementation-review/T08-implement-doc-housekeeping-workflow-and-scripts.md) `validate_lifecycle_metadata.py` | RF6, V5 |
 | 7 | Run pytest: `pytest packages/frameworks/tooling-automation/validators/tests/test_document_lifecycle_validator.py -v` | TC1–TC8 |
 | 8 | Run V1–V3 manual smoke; record evidence in task doc verification table | V1–V3 |
 | 9 | Flesh T10 task doc: verification table, AC checkboxes, gap closure note for GAP-DOCLIFE-TEST-001 | RF8 |
@@ -163,8 +163,8 @@ Restore and align the cross-package **`DocumentLifecycleValidator`** in tooling-
 - UPDATE: `greenfield-install/packages/frameworks/tooling-automation/validators/framework/document_lifecycle_validator.py`
 - UPDATE: `greenfield-install/packages/frameworks/tooling-automation/validators/tests/test_document_lifecycle_validator.py`
 - UPDATE: `packages/frameworks/tooling-automation/validators/framework/README.md`
-- UPDATE: `docs/project-management/kanban/epics/epic-10/story-01-document-lifecycle-package-implementation-review/T10-fix-document-lifecycle-validator.md`
-- UPDATE (RW Step 7): `docs/project-management/kanban/kboard.md`
+- UPDATE: `docs/kanban/epics/epic-10/story-01-document-lifecycle-package-implementation-review/T10-fix-document-lifecycle-validator.md`
+- UPDATE (RW Step 7): `docs/kanban/kboard.md`
 - UPDATE (optional): `T05-create-gap-log-and-risk-assessment.md` — GAP-DOCLIFE-TEST-001 tracking closure
 
 ### 4.2 Dependency order
@@ -216,9 +216,9 @@ Restore and align the cross-package **`DocumentLifecycleValidator`** in tooling-
 | ------ | -------------- | ------------------ | ---------------------- | --------- | -------------------- |
 | D-C1 | `docs/implementation-cycles/IPP-E10S01T10-fix-document-lifecycle-validator.md` | NOT_APPLICABLE | Implementation-cycle artefact; not Docusaurus-navigated | evergreen | T10 Input + References |
 | D-U1 | `packages/frameworks/tooling-automation/validators/framework/README.md` | NOT_APPLICABLE | Framework package internal KB | evergreen | T10 References (Step 9) |
-| D-U2 | `docs/project-management/kanban/epics/epic-10/story-01-document-lifecycle-package-implementation-review/T10-fix-document-lifecycle-validator.md` | NOT_APPLICABLE | Kanban task doc | evergreen | kboard row |
-| D-U3 | `docs/project-management/kanban/epics/epic-10/story-01-document-lifecycle-package-implementation-review/T05-create-gap-log-and-risk-assessment.md` | NOT_APPLICABLE | Kanban gap log | evergreen | T10 gap closure cross-link |
-| D-U4 | `docs/project-management/kanban/kboard.md` | NOT_APPLICABLE | Active kanban board | evergreen | RW Step 7 |
+| D-U2 | `docs/kanban/epics/epic-10/story-01-document-lifecycle-package-implementation-review/T10-fix-document-lifecycle-validator.md` | NOT_APPLICABLE | Kanban task doc | evergreen | kboard row |
+| D-U3 | `docs/kanban/epics/epic-10/story-01-document-lifecycle-package-implementation-review/T05-create-gap-log-and-risk-assessment.md` | NOT_APPLICABLE | Kanban gap log | evergreen | T10 gap closure cross-link |
+| D-U4 | `docs/kanban/kboard.md` | NOT_APPLICABLE | Active kanban board | evergreen | RW Step 7 |
 
 **Housing rules:** IPP under `docs/implementation-cycles/`; validator code under `packages/frameworks/tooling-automation/`; no duplicate spec in package `doc-lifecycle/` (T08 scope).
 
@@ -241,11 +241,11 @@ Restore and align the cross-package **`DocumentLifecycleValidator`** in tooling-
 
 ## References
 
-- [T10 task doc](../project-management/kanban/epics/epic-10/story-01-document-lifecycle-package-implementation-review/T10-fix-document-lifecycle-validator.md)
-- [T05 gap log — GAP-DOCLIFE-TEST-001](../project-management/kanban/epics/epic-10/story-01-document-lifecycle-package-implementation-review/T05-create-gap-log-and-risk-assessment.md)
-- [T06 remediation R3](../project-management/kanban/epics/epic-10/story-01-document-lifecycle-package-implementation-review/T06-define-rc-sign-off-criteria-and-remediation-tasks.md)
-- [T03 lifecycle-behavior-validation-report §6](../project-management/kanban/epics/epic-10/story-01-document-lifecycle-package-implementation-review/lifecycle-behavior-validation-report.md)
-- [T08 package-local validator task](../project-management/kanban/epics/epic-10/story-01-document-lifecycle-package-implementation-review/T08-implement-doc-housekeeping-workflow-and-scripts.md)
+- [T10 task doc](../kanban/epics/epic-10/story-01-document-lifecycle-package-implementation-review/T10-fix-document-lifecycle-validator.md)
+- [T05 gap log — GAP-DOCLIFE-TEST-001](../kanban/epics/epic-10/story-01-document-lifecycle-package-implementation-review/T05-create-gap-log-and-risk-assessment.md)
+- [T06 remediation R3](../kanban/epics/epic-10/story-01-document-lifecycle-package-implementation-review/T06-define-rc-sign-off-criteria-and-remediation-tasks.md)
+- [T03 lifecycle-behavior-validation-report §6](../kanban/epics/epic-10/story-01-document-lifecycle-package-implementation-review/lifecycle-behavior-validation-report.md)
+- [T08 package-local validator task](../kanban/epics/epic-10/story-01-document-lifecycle-package-implementation-review/T08-implement-doc-housekeeping-workflow-and-scripts.md)
 - [doc-lifecycle-metadata-spec.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/doc-lifecycle/policies/doc-lifecycle-metadata-spec.md)
 - [DocumentLifecycleValidator source](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/tooling-automation/validators/framework/document_lifecycle_validator.py)
 - [E10S01 orchestration plan §9 — Wave 3 remediation](./E10S01-orchestration-plan.md)

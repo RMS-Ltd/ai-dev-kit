@@ -9,7 +9,6 @@ configuration block in .ai-dev-kit.yaml.
 import json
 import os
 import uuid
-from contextlib import suppress
 from datetime import datetime
 from pathlib import Path
 from typing import Any, Callable, Dict, Optional, TextIO, Tuple
@@ -251,13 +250,20 @@ def close_install_logger(
     if not fh or not log_dir:
         return
 
-    with suppress(Exception):  # log rotation/retention must not break installs
+    try:
         keep = config.get("install_logging.keep")
         if isinstance(keep, int) and keep > 0:
             logs = sorted(log_dir.glob("install-*.log"))
             if len(logs) > keep:
                 for old in logs[0 : len(logs) - keep]:
-                    with suppress(Exception):
+                    try:
                         old.unlink()
-    with suppress(Exception):
-        fh.close()
+                    except Exception:
+                        pass  # Retention issues must not break installs
+    except Exception:
+        pass  # Do not fail install because of log rotation/retention problems
+    finally:
+        try:
+            fh.close()
+        except Exception:
+            pass  # Stream close failure must not break install teardown

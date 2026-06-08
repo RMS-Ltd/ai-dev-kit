@@ -92,7 +92,7 @@ steps:
     dependencies:
       - step-2
     config:
-      br_fr_dir: docs/project-management/kanban/fr-br
+      br_fr_dir: docs/kanban/fr-br
 
   - id: step-7
     name: Scoped Kanban Reconciliation
@@ -107,10 +107,10 @@ steps:
     config:
       invocation_context: rw_step_7
       kanban_update_script: packages/frameworks/workflow-mgt/scripts/update_kanban_docs.py
-      epic_doc_pattern: docs/project-management/kanban/epics/Epic-{epic}/Epic-{epic}.md
-      story_doc_pattern: docs/project-management/kanban/epics/Epic-{epic}/Story-{story}-*.md
-      kanban_board: docs/project-management/kanban/kboard.md
-      fr_br_uxr_board: docs/project-management/kanban/kboard.md
+      epic_doc_pattern: docs/kanban/epics/Epic-{epic}/Epic-{epic}.md
+      story_doc_pattern: docs/kanban/epics/Epic-{epic}/Story-{story}-*.md
+      kanban_board: docs/kanban/kboard.md
+      fr_br_uxr_board: docs/kanban/kboard.md
       use_rw_config: true
 
   - id: step-8

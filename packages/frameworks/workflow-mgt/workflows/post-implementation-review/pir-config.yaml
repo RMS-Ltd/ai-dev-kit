@@ -9,9 +9,9 @@ workflow:
 
 # Default configuration values
 defaults:
-  kanban_root: "docs/project-management/kanban"
-  epic_doc_pattern: "docs/project-management/kanban/epics/Epic-{epic}/Epic-{epic}.md"
-  story_doc_pattern: "docs/project-management/kanban/epics/Epic-{epic}/Story-{story}-*.md"
+  kanban_root: "docs/kanban"
+  epic_doc_pattern: "docs/kanban/epics/Epic-{epic}/Epic-{epic}.md"
+  story_doc_pattern: "docs/kanban/epics/Epic-{epic}/Story-{story}-*.md"
 
 # Execution configuration
 execution:

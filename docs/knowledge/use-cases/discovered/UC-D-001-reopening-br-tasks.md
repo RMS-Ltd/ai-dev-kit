@@ -9,4 +9,4 @@ notion_sot: true
 
 **SoT:** Notion Engineering KB — [Uc D 001 Reopening Br Tasks](https://www.notion.so/8990eab0101eabb251a4536f59849fef)
 
-> Migrated from `docs/knowledge/use-cases/discovered/UC-D-001-reopening-br-tasks.md` per [FR-114](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/project-management/kanban/fr-br/FR-114-split-documentation-surfaces-docusaurus-public-notion-maintainer-kb.md). Full content lives in Notion.
+> Migrated from `docs/knowledge/use-cases/discovered/UC-D-001-reopening-br-tasks.md` per [FR-114](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/kanban/fr-br/FR-114-split-documentation-surfaces-docusaurus-public-notion-maintainer-kb.md). Full content lives in Notion.

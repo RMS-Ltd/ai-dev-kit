@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # E02:S13:T06 — Planning: RC Sign-Off Criteria and Remediation (IPW)
 
-**Host Task:** [`T06-define-rc-sign-off-criteria-and-remediation-tasks.md`](../project-management/kanban/epics/epic-02/story-13-workflow-management-package-implementation-review/T06-define-rc-sign-off-criteria-and-remediation-tasks.md) **(E02:S13:T06)**  
-**Planning for:** [T05 gap log](../project-management/kanban/epics/epic-02/story-13-workflow-management-package-implementation-review/T05-create-gap-log-and-risk-assessment.md) · [E07:S07:T01](../project-management/kanban/epics/epic-07/story-07-code-reviews/T01-workflow-machinery-code-review-report.md)  
+**Host Task:** [`T06-define-rc-sign-off-criteria-and-remediation-tasks.md`](../kanban/epics/epic-02/story-13-workflow-management-package-implementation-review/T06-define-rc-sign-off-criteria-and-remediation-tasks.md) **(E02:S13:T06)**  
+**Planning for:** [T05 gap log](../kanban/epics/epic-02/story-13-workflow-management-package-implementation-review/T05-create-gap-log-and-risk-assessment.md) · [E07:S07:T01](../kanban/epics/epic-07/story-07-code-reviews/T01-workflow-machinery-code-review-report.md)  
 **Status:** Released (v0.2.13.6+1 — 2026-06-05)
 
 ---
@@ -132,6 +132,6 @@ All kanban/docs paths; NOT_APPLICABLE for Docusaurus.
 
 ## References
 
-- [T06](../project-management/kanban/epics/epic-02/story-13-workflow-management-package-implementation-review/T06-define-rc-sign-off-criteria-and-remediation-tasks.md)
-- [T05](../project-management/kanban/epics/epic-02/story-13-workflow-management-package-implementation-review/T05-create-gap-log-and-risk-assessment.md)
-- [FR-050](../project-management/kanban/fr-br/FR-050-workflows-directory-structure-reorganization.md)
+- [T06](../kanban/epics/epic-02/story-13-workflow-management-package-implementation-review/T06-define-rc-sign-off-criteria-and-remediation-tasks.md)
+- [T05](../kanban/epics/epic-02/story-13-workflow-management-package-implementation-review/T05-create-gap-log-and-risk-assessment.md)
+- [FR-050](../kanban/fr-br/FR-050-workflows-directory-structure-reorganization.md)

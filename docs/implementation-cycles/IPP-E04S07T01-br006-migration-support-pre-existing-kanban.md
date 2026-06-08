@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # E04:S07:T01 — Planning: BR-006 detection/analysis verification closure (IPW)
 
-**Host Task:** [`T01-br006-detection-analysis-verification-closure.md`](../project-management/kanban/epics/epic-04/story-07-migration-support-and-installation-modes/T01-br006-detection-analysis-verification-closure.md) **(E04:S07:T01)**  
-**Planning for:** [BR-006](../project-management/kanban/fr-br/BR-006-missing-migration-support-pre-existing-kanban.md)  
+**Host Task:** [`T01-br006-detection-analysis-verification-closure.md`](../kanban/epics/epic-04/story-07-migration-support-and-installation-modes/T01-br006-detection-analysis-verification-closure.md) **(E04:S07:T01)**  
+**Planning for:** [BR-006](../kanban/fr-br/BR-006-missing-migration-support-pre-existing-kanban.md)  
 **Status:** Approved (planning complete — implementation authorized via parent IPW+RW request)
 
 > **IPW closure wave:** Story-007 marks T01 COMPLETE (`v0.4.7.1+1`) but `kboard` still lists **E04:S07:T01** as TODO. This IPP plans verification of BR-006 criteria 1–4, minimal defect remediation, four-surface kanban reconciliation, and **`RW E04:S07:T01 --art`**.
@@ -129,15 +129,15 @@ Criteria: [`ipw-adr-necessity-checklist.md`](../architecture/standards-and-adrs/
 **CREATE (IPW):**
 
 - `docs/implementation-cycles/IPP-E04S07T01-br006-migration-support-pre-existing-kanban.md`
-- `docs/project-management/kanban/epics/epic-04/story-07-migration-support-and-installation-modes/T01-br006-detection-analysis-verification-closure.md`
+- `docs/kanban/epics/epic-04/story-07-migration-support-and-installation-modes/T01-br006-detection-analysis-verification-closure.md`
 
 **UPDATE (implementation):**
 
 - `packages/frameworks/kanban/scripts/analyze_structure.py`
-- `docs/project-management/kanban/fr-br/BR-006-missing-migration-support-pre-existing-kanban.md`
-- `docs/project-management/kanban/epics/epic-04/story-07-migration-support-and-installation-modes.md`
-- `docs/project-management/kanban/kboard.md`
-- `docs/project-management/kanban/kanban-completed.md` (if entry needs discrete-task link)
+- `docs/kanban/fr-br/BR-006-missing-migration-support-pre-existing-kanban.md`
+- `docs/kanban/epics/epic-04/story-07-migration-support-and-installation-modes.md`
+- `docs/kanban/kboard.md`
+- `docs/kanban/kanban-completed.md` (if entry needs discrete-task link)
 
 ### 4.2 Dependency order
 
@@ -202,10 +202,10 @@ Criteria: [`ipw-adr-necessity-checklist.md`](../architecture/standards-and-adrs/
 
 ## References
 
-- [BR-006](../project-management/kanban/fr-br/BR-006-missing-migration-support-pre-existing-kanban.md)
-- [story-07](../project-management/kanban/epics/epic-04/story-07-migration-support-and-installation-modes.md)
-- [FR-042](../project-management/kanban/fr-br/FR-042-implementation-planning-workflow-ipw.md)
-- [FR-077](../project-management/kanban/fr-br/FR-077-ipw-built-task-status-transition-and-kboard-sync.md)
+- [BR-006](../kanban/fr-br/BR-006-missing-migration-support-pre-existing-kanban.md)
+- [story-07](../kanban/epics/epic-04/story-07-migration-support-and-installation-modes.md)
+- [FR-042](../kanban/fr-br/FR-042-implementation-planning-workflow-ipw.md)
+- [FR-077](../kanban/fr-br/FR-077-ipw-built-task-status-transition-and-kboard-sync.md)
 - `packages/frameworks/kanban/scripts/detect_existing_structure.py`
 - `packages/frameworks/kanban/scripts/analyze_structure.py`
 - `packages/frameworks/kanban/scripts/README.md`

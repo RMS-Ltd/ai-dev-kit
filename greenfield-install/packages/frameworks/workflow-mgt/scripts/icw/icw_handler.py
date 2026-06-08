@@ -110,7 +110,7 @@ class ICWHandler:
         """
         try:
             # Get Kanban root from config
-            kanban_root = Path(self.config.get('paths', {}).get('kanban_root', 'docs/project-management/kanban'))
+            kanban_root = Path(self.config.get('paths', {}).get('kanban_root', 'docs/kanban'))
             
             epic = task_components['epic']
             story = task_components['story']
@@ -140,7 +140,7 @@ class ICWHandler:
     def get_available_tasks(self, epic: int = None) -> List[str]:
         """Get list of available tasks for user guidance"""
         try:
-            kanban_root = Path(self.config.get('paths', {}).get('kanban_root', 'docs/project-management/kanban'))
+            kanban_root = Path(self.config.get('paths', {}).get('kanban_root', 'docs/kanban'))
             
             if epic:
                 # Get tasks for specific epic
@@ -181,7 +181,7 @@ class ICWHandler:
                 return False, error_msg, {}
             
             # Get the task document path for context
-            kanban_root = Path(self.config.get('paths', {}).get('kanban_root', 'docs/project-management/kanban'))
+            kanban_root = Path(self.config.get('paths', {}).get('kanban_root', 'docs/kanban'))
             epic = task_components['epic']
             story = task_components['story']
             task = task_components['task']

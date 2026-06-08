@@ -7,7 +7,7 @@ This script is designed to run in consumer projects. It:
 - optionally archives or deletes contaminated files
 
 Archive strategy:
-- contaminated files are moved under `docs/project-management/kanban/.contaminated/`
+- contaminated files are moved under `docs/kanban/.contaminated/`
   preserving relative structure
 """
 
@@ -30,7 +30,7 @@ def _archive_path(root: Path, rel: Path) -> Path:
 
 def _print_findings(findings: List[Finding]) -> None:
     if not findings:
-        print("No Kanban files found under docs/project-management/kanban/")
+        print("No Kanban files found under docs/kanban/")
         return
 
     print("Path,Classification,Reason")
@@ -88,7 +88,7 @@ def main(argv=None) -> int:
     parser.add_argument(
         "--kanban-root",
         type=str,
-        help="Path to kanban root (default: docs/project-management/kanban relative to CWD)",
+        help="Path to kanban root (default: docs/kanban relative to CWD)",
     )
     parser.add_argument(
         "--delete",

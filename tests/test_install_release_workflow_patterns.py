@@ -36,7 +36,7 @@ def test_prompt_pattern_accepts_fresh_story_default_with_epic_only_tree():
     mod = _load_module()
     with tempfile.TemporaryDirectory() as tmp:
         root = Path(tmp)
-        kanban = "docs/project-management/kanban"
+        kanban = "docs/kanban"
         epic1 = root / kanban / "epics" / "Epic-1" / "Epic-1.md"
         epic1.parent.mkdir(parents=True, exist_ok=True)
         epic1.write_text("# Epic 1", encoding="utf-8")
@@ -87,7 +87,7 @@ def test_detect_kanban_doc_patterns_prefers_lowercase_fresh_layout():
     mod = _load_module()
     with tempfile.TemporaryDirectory() as tmp:
         root = Path(tmp)
-        kanban = "docs/project-management/kanban"
+        kanban = "docs/kanban"
         epic1 = root / kanban / "epics" / "epic-1" / "epic-1.md"
         story1 = root / kanban / "epics" / "epic-1" / "story-009-greenfield.md"
         epic1.parent.mkdir(parents=True, exist_ok=True)
@@ -110,7 +110,7 @@ def test_detect_kanban_doc_patterns_unpadded_epic_only_tree():
     mod = _load_module()
     with tempfile.TemporaryDirectory() as tmp:
         root = Path(tmp)
-        kanban = "docs/project-management/kanban"
+        kanban = "docs/kanban"
         for n in (1, 2):
             epic = root / kanban / "epics" / f"epic-{n}" / f"epic-{n}.md"
             epic.parent.mkdir(parents=True, exist_ok=True)
@@ -132,7 +132,7 @@ def test_prompt_accepts_forward_looking_story_03d_on_epic_only_tree():
     mod = _load_module()
     with tempfile.TemporaryDirectory() as tmp:
         root = Path(tmp)
-        kanban = "docs/project-management/kanban"
+        kanban = "docs/kanban"
         epic1 = root / kanban / "epics" / "epic-1" / "epic-1.md"
         epic1.parent.mkdir(parents=True, exist_ok=True)
         epic1.write_text("# Epic 1", encoding="utf-8")
@@ -164,7 +164,7 @@ def test_detect_kanban_doc_patterns_legacy_capitalised_fresh_layout():
     mod = _load_module()
     with tempfile.TemporaryDirectory() as tmp:
         root = Path(tmp)
-        kanban = "docs/project-management/kanban"
+        kanban = "docs/kanban"
         epic1 = root / kanban / "epics" / "Epic-1" / "Epic-1.md"
         story1 = root / kanban / "epics" / "Epic-1" / "Story-009-greenfield.md"
         epic1.parent.mkdir(parents=True, exist_ok=True)

@@ -17,15 +17,15 @@ housekeeping_policy: keep
 **Status:** Accepted  
 **Date:** 2026-06-07  
 **Deciders:** User (Ruari Mears)  
-**Implementing task:** [E05:S08:T04](../../project-management/kanban/epics/epic-05/story-08-knowledge-base/T04-agent-notion-first-authoring-and-bootstrap-routing-fr114.md)  
+**Implementing task:** [E05:S08:T04](../../kanban/epics/epic-05/story-08-knowledge-base/T04-agent-notion-first-authoring-and-bootstrap-routing-fr114.md)  
 **Planning package:** [IPP-E05S08T04](../../implementation-cycles/IPP-E05S08T04-agent-notion-first-authoring-and-bootstrap-routing-fr114.md)  
-**Related:** [FR-114](../../project-management/kanban/fr-br/FR-114-split-documentation-surfaces-docusaurus-public-notion-maintainer-kb.md), [ADR-012](ADR-012-agent-bootstrap-and-task-routing.md), [ADR-017](ADR-017-docusaurus-ci-build-deploy-topology.md), [E05:S08:T03](../../project-management/kanban/epics/epic-05/story-08-knowledge-base/T03-big-bang-notion-migration-maintainer-kb-fr114.md), [E05:S09:T15](../../project-management/kanban/epics/epic-05/story-09-docusaurus-documentation-portal/T15-docusaurus-adopter-public-publish-allowlist-fr114.md)
+**Related:** [FR-114](../../kanban/fr-br/FR-114-split-documentation-surfaces-docusaurus-public-notion-maintainer-kb.md), [ADR-012](ADR-012-agent-bootstrap-and-task-routing.md), [ADR-017](ADR-017-docusaurus-ci-build-deploy-topology.md), [E05:S08:T03](../../kanban/epics/epic-05/story-08-knowledge-base/T03-big-bang-notion-migration-maintainer-kb-fr114.md), [E05:S09:T15](../../kanban/epics/epic-05/story-09-docusaurus-documentation-portal/T15-docusaurus-adopter-public-publish-allowlist-fr114.md)
 
 ---
 
 ## Context
 
-Maintainer operational documentation (investigations, analysis, records, maintenance runbooks) was incorrectly coupled to the Docusaurus production build, causing CI fragility ([FR-114](../../project-management/kanban/fr-br/FR-114-split-documentation-surfaces-docusaurus-public-notion-maintainer-kb.md), **BR-068**). T03 migrated maintainer corpora to Notion; T15 rescoped Docusaurus to an adopter-public allowlist. Agents still lacked a **binding policy** for where new maintainer docs are authored and which surface is authoritative per doc type.
+Maintainer operational documentation (investigations, analysis, records, maintenance runbooks) was incorrectly coupled to the Docusaurus production build, causing CI fragility ([FR-114](../../kanban/fr-br/FR-114-split-documentation-surfaces-docusaurus-public-notion-maintainer-kb.md), **BR-068**). T03 migrated maintainer corpora to Notion; T15 rescoped Docusaurus to an adopter-public allowlist. Agents still lacked a **binding policy** for where new maintainer docs are authored and which surface is authoritative per doc type.
 
 Alternatives considered:
 
@@ -45,7 +45,7 @@ Adopt a **three-surface documentation model**. Each doc type has exactly one aut
 
 | Surface | Audience | Primary content |
 | ------- | -------- | --------------- |
-| **Docusaurus** (GitHub Pages) | Adopters, public | `docs/guides/**`, adopter `docs/documentation/**`, install/consumption reference; RC ≥ 1 significant release notes ([E05:S09:T15](../../project-management/kanban/epics/epic-05/story-09-docusaurus-documentation-portal/T15-docusaurus-adopter-public-publish-allowlist-fr114.md)) |
+| **Docusaurus** (GitHub Pages) | Adopters, public | `docs/guides/**`, adopter `docs/documentation/**`, install/consumption reference; RC ≥ 1 significant release notes ([E05:S09:T15](../../kanban/epics/epic-05/story-09-docusaurus-documentation-portal/T15-docusaurus-adopter-public-publish-allowlist-fr114.md)) |
 | **Notion** (Engineering KB) | Maintainers, agents | Investigations, analysis, records, persistent KB, working drafts, non-binding architecture reference |
 | **Git** (repo SoT) | Workflows, releases | Kanban, FR/BR/UXR, changelogs, frameworks, IPP/ICW, **binding ADRs**, thin stubs linking to Notion |
 
@@ -58,7 +58,7 @@ Notion URLs: `rw-config.yaml` → `notion_hub_url`, `notion_kb_url`.
 | Adopter guides / user docs | Docusaurus (allowlisted paths) | Source in `docs/guides/`, `docs/documentation/` |
 | Maintainer investigation / analysis / records | **Notion** | Optional stub if linked from allowlisted corpus |
 | Kanban, FR/BR/UXR, task docs | **Git** | Full text |
-| IPP / ICW planning packages | **Git** | Full text ([FR-083](../../project-management/kanban/fr-br/FR-083-global-ipw-gated-implementation-contract.md)) |
+| IPP / ICW planning packages | **Git** | Full text ([FR-083](../../kanban/fr-br/FR-083-global-ipw-gated-implementation-contract.md)) |
 | Binding ADRs (workflow/kanban/release) | **Git** | Full text — never stubbed |
 | Non-binding architecture reference | **Notion** | Stub in `docs/architecture/` when pre-existing path required |
 | CHANGELOG (RC = 0) | **Git** | GitHub only |
@@ -115,7 +115,7 @@ Required frontmatter keys: `lifecycle`, `created_at`, `housekeeping_policy`, `no
 
 ### 7. Release notes (RC ≥ 1)
 
-From RC ≥ 1, publish **curated significant release notes** on Docusaurus only — not raw `CHANGELOG.md`. Policy and scaffold: [E05:S09:T15](../../project-management/kanban/epics/epic-05/story-09-docusaurus-documentation-portal/T15-docusaurus-adopter-public-publish-allowlist-fr114.md), `portal/README.md`.
+From RC ≥ 1, publish **curated significant release notes** on Docusaurus only — not raw `CHANGELOG.md`. Policy and scaffold: [E05:S09:T15](../../kanban/epics/epic-05/story-09-docusaurus-documentation-portal/T15-docusaurus-adopter-public-publish-allowlist-fr114.md), `portal/README.md`.
 
 ---
 
@@ -134,7 +134,7 @@ From RC ≥ 1, publish **curated significant release notes** on Docusaurus only 
 
 ### Neutral
 
-- Partially supersedes publish-scope assumptions in [FR-066](../../project-management/kanban/fr-br/FR-066-docusaurus-canonical-docs-path-and-publish-scope.md) for maintainer trees.
+- Partially supersedes publish-scope assumptions in [FR-066](../../kanban/fr-br/FR-066-docusaurus-canonical-docs-path-and-publish-scope.md) for maintainer trees.
 
 ---
 

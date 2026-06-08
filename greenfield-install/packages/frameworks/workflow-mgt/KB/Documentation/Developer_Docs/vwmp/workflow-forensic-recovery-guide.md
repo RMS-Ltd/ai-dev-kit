@@ -52,7 +52,7 @@ Run TTL sweep (default 7 days; failed runs 30 days):
 python -c "from pathlib import Path; from journal.journal_housekeeping import sweep; print(sweep(Path('docs/journals')))"
 ```
 
-Documentation Agent owns journal lifecycle per `docs/project-management/kanban/AGENTS.md`.
+Documentation Agent owns journal lifecycle per `docs/kanban/AGENTS.md`.
 
 ---
 

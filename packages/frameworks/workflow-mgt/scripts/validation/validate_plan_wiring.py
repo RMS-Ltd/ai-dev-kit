@@ -80,8 +80,8 @@ def main() -> int:
     parser = argparse.ArgumentParser(description="Validate planning doc <-> task bidirectional wiring")
     parser.add_argument(
         "--kanban-root",
-        default="docs/project-management/kanban",
-        help="Kanban root directory (default: docs/project-management/kanban)",
+        default="docs/kanban",
+        help="Kanban root directory (default: docs/kanban)",
     )
     args = parser.parse_args()
 

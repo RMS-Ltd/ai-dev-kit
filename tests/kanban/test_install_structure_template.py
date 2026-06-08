@@ -46,7 +46,7 @@ def empty_project(tmp_path: Path) -> Path:
 
 def test_fresh_install_creates_structure_doc_and_success(empty_project: Path) -> None:
     """T2/T3: no missing-structure warning; Final status SUCCESS."""
-    kanban_rel = "docs/project-management/kanban"
+    kanban_rel = "docs/kanban"
     cmd = [
         sys.executable,
         str(INSTALL_SCRIPT),
@@ -81,7 +81,7 @@ def test_fresh_dry_run_mentions_structure_template(empty_project: Path) -> None:
         "fresh",
         "--dry-run",
         "--kanban-path",
-        "docs/project-management/kanban",
+        "docs/kanban",
     ]
     env = {**dict(subprocess.os.environ), "PYTHONPATH": str(SCRIPTS_DIR)}
     result = subprocess.run(

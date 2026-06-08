@@ -35,9 +35,9 @@ This guide now distinguishes the **greenfield** first-run path from brownfield a
 For policy and boundaries:
 
 - [ADR-003 – Greenfield vs Brownfield adoption](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/architecture/standards-and-adrs/ADR-003-greenfield-vs-brownfield-adoption.md)
-- [FR-081 – Brownfield modular adopter integration](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/project-management/kanban/fr-br/FR-081-brownfield-modular-adopter-integration.md)
+- [FR-081 – Brownfield modular adopter integration](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/kanban/fr-br/FR-081-brownfield-modular-adopter-integration.md)
 - [IPP-E6S9T2 planning package](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/implementation-cycles/IPP-E6S09T02-brownfield-modular-adopter-integration-fr081.md)
-- [FR-080 implementing task (E6:S09:T01)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/project-management/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T01-greenfield-installation-process-fr080.md)
+- [FR-080 implementing task (E6:S09:T01)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T01-greenfield-installation-process-fr080.md)
 - [IPW-E6S9T1 planning package](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/implementation-cycles/IPW-E6S09T01-greenfield-installation-fr080.md)
 
 For the current canonical greenfield sequence (default RW-first with explicit override checkpoint), see:
@@ -689,7 +689,7 @@ python3 frameworks/kanban/scripts/install_kanban_framework.py --mode fresh
 ```
 
 **What You Get After Installation:**
-- ✅ Canonical epic templates installed in `docs/project-management/kanban/epics/Epic-\{N\}/`
+- ✅ Canonical epic templates installed in `docs/kanban/epics/Epic-\{N\}/`
 - ✅ Epic 1 contextualized with your project name (e.g., "MyProject Core", not "AI Dev Kit Core")
 - ✅ Only canonical core epics (1-8, 10, 18, 22, 23) installed
 - ✅ No ai-dev-kit project-specific epics
@@ -720,7 +720,7 @@ cat frameworks/kanban/templates/CONTEXTUALIZATION_GUIDE.md
 
 ```bash
 # ❌ WRONG - This copies ai-dev-kit's actual Kanban, not templates!
-cp -r /path/to/ai-dev-kit/docs/project-management/kanban/epics/* docs/project-management/kanban/epics/
+cp -r /path/to/ai-dev-kit/docs/kanban/epics/* docs/kanban/epics/
 ```
 
 **Why this is wrong:**
@@ -907,9 +907,9 @@ git remote -v
 
 If you installed the Kanban framework, use this checklist to confirm a clean consumer install:
 
-- **Consumer Kanban location:** Your working Kanban is at **`docs/project-management/kanban/`** at your project root. Do not use or edit the framework’s internal Kanban under `.ai-dev-kit/` or the framework package path as your project board.
-- **No ai-dev-kit–specific epics:** Under `docs/project-management/kanban/epics/` there should be **no Epic 24** (or other ai-dev-kit–only epics). A fresh install only adds canonical epics (e.g. Epic 1–8, 10, 18, 22, 23).
-- **Board file:** `docs/project-management/kanban/kboard.md` should mention your **project name** and, on first install, version placeholder **`v0.0.0.0+0`**.
+- **Consumer Kanban location:** Your working Kanban is at **`docs/kanban/`** at your project root. Do not use or edit the framework’s internal Kanban under `.ai-dev-kit/` or the framework package path as your project board.
+- **No ai-dev-kit–specific epics:** Under `docs/kanban/epics/` there should be **no Epic 24** (or other ai-dev-kit–only epics). A fresh install only adds canonical epics (e.g. Epic 1–8, 10, 18, 22, 23).
+- **Board file:** `docs/kanban/kboard.md` should mention your **project name** and, on first install, version placeholder **`v0.0.0.0+0`**.
 - **Install logs:** If install logging is enabled (default), check `logs/ai-dev-kit/install/` for a timestamped log file. For Kanban installs, the log should contain lines with **`[KANBAN_FRESH_INSTALL]`** (or other `[KANBAN_*]` phase markers) and any validation warnings. Use these logs for debugging if something goes wrong.
 
 ---

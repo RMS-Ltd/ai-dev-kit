@@ -58,7 +58,7 @@ housekeeping_policy: keep
 - **Related:** Initial framework extraction from fynd.deals Epic 15, Story 1
 
 **Policy References:**
-- **[Kanban Governance Policy](../../project-management/rituals/policy/kanban-governance-policy.md)** - Work item structure and task-level versioning requirements
+- **[Kanban Governance Policy](docs/governance/kanban/kanban-governance-policy.md)** - Work item structure and task-level versioning requirements
 - **[Versioning Strategy](../../Architecture/standards-and-adrs/versioning-strategy.md)** - Forensic traceability and canonical ordering principles
 - **[Versioning Policy (Schema)](../../Architecture/standards-and-adrs/versioning-policy.md)** - Version schema definition (RC.EPIC.STORY.TASK+BUILD)
 - **[Cursor Rules](../../../../.cursorrules)** - Fundamental system rules ⭐
@@ -79,7 +79,7 @@ The Release Workflow explains each step, its parameters, configuration options, 
 
 ### How This Workflow Implements Policy Requirements
 
-**From [Kanban Governance Policy](../../project-management/rituals/policy/kanban-governance-policy.md):**
+**From [Kanban Governance Policy](docs/governance/kanban/kanban-governance-policy.md):**
 - ✅ **Task-level versioning:** Step 1 validates version TASK matches active Kanban task
 - ✅ **Forensic markers:** Step 5 updates Epic/Story docs with version numbers (forensic markers)
 - ✅ **Work item traceability:** Step 5 maintains links between versions, tasks, and Kanban board entries
@@ -122,7 +122,7 @@ The Release Workflow consists of **14 steps** organized into 3 phases. Each step
 
 - **Step 2:** Bump Version
   - Enforces `RC.EPIC.STORY.TASK+BUILD` schema from [Versioning Policy](../../Architecture/standards-and-adrs/versioning-policy.md)
-  - Validates task-level versioning alignment per [Kanban Governance Policy](../../project-management/rituals/policy/kanban-governance-policy.md)
+  - Validates task-level versioning alignment per [Kanban Governance Policy](docs/governance/kanban/kanban-governance-policy.md)
   - **Depends on:** Step 1 (Branch Safety Check) must pass first
 
 - **Step 3:** Create Detailed Changelog
@@ -142,7 +142,7 @@ The Release Workflow consists of **14 steps** organized into 3 phases. Each step
 
 - **Step 7:** Scoped Kanban Sync (UKW Mode) (FR-038; formerly “Auto-update Kanban Docs”)
   - Scoped, UKW-style agentic kanban update for the **release E/S/T**; not a full standalone UKW run. See [UKW agent guide — Invocation context](update-kanban-workflow-agent-execution.md#invocation-context-fr-038--rw-step-7).
-  - Implements [Kanban Governance Policy](../../project-management/rituals/policy/kanban-governance-policy.md) requirement for forensic markers
+  - Implements [Kanban Governance Policy](docs/governance/kanban/kanban-governance-policy.md) requirement for forensic markers
   - Updates Epic/Story documentation with version numbers and task completion status
   - Maintains traceability grid (version ↔ epic/story/task ↔ changelogs ↔ kanban markers)
 
@@ -1274,16 +1274,16 @@ Automatically triggers Post-Implementation Review (PIR) workflow when Epic or St
 | `epic_pir_always` | boolean | ❌ No | `true` | Always trigger PIR for completed Epics |
 | `story_pir_significance_criteria` | array | ❌ No | `[...]` | Criteria for Story significance evaluation |
 | `pir_workflow_path` | string | ❌ No | `packages/frameworks/workflow-mgt/workflows/post-implementation-review/pir-workflow.yaml` | Path to PIR workflow YAML (registry SoT) |
-| `kanban_root` | string | ❌ No | `docs/project-management/kanban` | Root path to Kanban documents |
-| `epic_doc_pattern` | string | ❌ No | `docs/project-management/kanban/epics/Epic-{epic}/Epic-{epic}.md` | Pattern for Epic document paths |
-| `story_doc_pattern` | string | ❌ No | `docs/project-management/kanban/epics/Epic-{epic}/Story-{story}-*.md` | Pattern for Story document paths |
+| `kanban_root` | string | ❌ No | `docs/kanban` | Root path to Kanban documents |
+| `epic_doc_pattern` | string | ❌ No | `docs/kanban/epics/Epic-{epic}/Epic-{epic}.md` | Pattern for Epic document paths |
+| `story_doc_pattern` | string | ❌ No | `docs/kanban/epics/Epic-{epic}/Story-{story}-*.md` | Pattern for Story document paths |
 
 #### Deterministic Check Logic
 
 **Epic-Level Check:**
 ```python
 # Read Epic document
-epic_doc = read_file(f"docs/project-management/kanban/epics/Epic-{epic}/Epic-{epic}.md")
+epic_doc = read_file(f"docs/kanban/epics/Epic-{epic}/Epic-{epic}.md")
 status = extract_status(epic_doc)
 
 # Check COMPLETE status
@@ -1294,7 +1294,7 @@ if status in ["COMPLETE", "COMPLETE ✅"]:
 **Story-Level Check:**
 ```python
 # Read Story document
-story_doc = read_file(f"docs/project-management/kanban/epics/Epic-{epic}/Story-{story}-*.md")
+story_doc = read_file(f"docs/kanban/epics/Epic-{epic}/Story-{story}-*.md")
 status = extract_status(story_doc)
 
 # Check COMPLETE status
@@ -1549,7 +1549,7 @@ Steps that can run in parallel (after dependencies are met):
 ## 📚 Related Documentation
 
 **Policy Documents (This workflow implements these policies):**
-- **[Kanban Governance Policy](../../project-management/rituals/policy/kanban-governance-policy.md)** - Work item structure, task-level versioning, and release workflow requirements
+- **[Kanban Governance Policy](docs/governance/kanban/kanban-governance-policy.md)** - Work item structure, task-level versioning, and release workflow requirements
 - **[Versioning Strategy](../../Architecture/standards-and-adrs/versioning-strategy.md)** - Forensic traceability, canonical ordering, and timestamp requirements
 - **[Versioning Policy (Schema)](../../Architecture/standards-and-adrs/versioning-policy.md)** - Version schema definition (RC.EPIC.STORY.TASK+BUILD)
 - **[Cursor Rules](../../../../.cursorrules)** - Fundamental system rules that enforce all policies ⭐

@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # E02:S01:T06 — Planning: validate_version_bump story auto-detection (IPW)
 
-**Host Task:** [`story-01-rw-agent-execution-and-docs.md`](../project-management/kanban/epics/epic-02/story-01-rw-agent-execution-and-docs.md) **(E02:S01:T06)**  
-**Planning for:** [BR-001](../project-management/kanban/fr-br/BR-001-validate-version-bump-epic-story-detection-bug.md)  
+**Host Task:** [`story-01-rw-agent-execution-and-docs.md`](../kanban/epics/epic-02/story-01-rw-agent-execution-and-docs.md) **(E02:S01:T06)**  
+**Planning for:** [BR-001](../kanban/fr-br/BR-001-validate-version-bump-epic-story-detection-bug.md)  
 **Status:** Approved  
 **Functional release target:** `v0.2.1.6+{N}` via `RW E02:S01:T06 --art` (BUILD +1)
 
@@ -125,7 +125,7 @@ Restore reliable Epic/Story auto-detection in `validate_version_bump.py` so RW S
 | Doc ID | Target path | Publication |
 | ------ | ----------- | ----------- |
 | D-IPP | `docs/implementation-cycles/` | NOT_APPLICABLE (planning artifact) |
-| D-BR | `docs/project-management/kanban/fr-br/` | NOT_APPLICABLE |
+| D-BR | `docs/kanban/fr-br/` | NOT_APPLICABLE |
 
 ---
 
@@ -140,6 +140,6 @@ Restore reliable Epic/Story auto-detection in `validate_version_bump.py` so RW S
 
 ## References
 
-- [BR-001](../project-management/kanban/fr-br/BR-001-validate-version-bump-epic-story-detection-bug.md)
-- [BR-002](../project-management/kanban/fr-br/BR-002-changelog-validator-ordering-bug.md) (out of scope this wave)
+- [BR-001](../kanban/fr-br/BR-001-validate-version-bump-epic-story-detection-bug.md)
+- [BR-002](../kanban/fr-br/BR-002-changelog-validator-ordering-bug.md) (out of scope this wave)
 - `packages/frameworks/workflow-mgt/scripts/validation/validate_version_bump.py`

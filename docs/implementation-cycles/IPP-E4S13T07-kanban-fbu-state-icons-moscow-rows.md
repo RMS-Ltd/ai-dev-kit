@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # E4:S13:T07 — Planning: Kanban and FBU state icons for MoSCOW rows (IPW)
 
-**Host Task:** [T07-kanban-fbu-state-icons-for-moscow-rows-uxr012.md](../project-management/kanban/epics/epic-04/story-13-kanban-board-moscow-prioritized-task-view/T07-kanban-fbu-state-icons-for-moscow-rows-uxr012.md) **(E4:S13:T07)**  
-**Planning for:** [UXR-012](../project-management/kanban/fr-br/UXR-012-kanban-fbu-state-icons-for-moscow-rows.md)  
+**Host Task:** [T07-kanban-fbu-state-icons-for-moscow-rows-uxr012.md](../kanban/epics/epic-04/story-13-kanban-board-moscow-prioritized-task-view/T07-kanban-fbu-state-icons-for-moscow-rows-uxr012.md) **(E4:S13:T07)**  
+**Planning for:** [UXR-012](../kanban/fr-br/UXR-012-kanban-fbu-state-icons-for-moscow-rows.md)  
 **Status:** Approved (implementation executed 2026-05-20)
 
 ---
@@ -110,7 +110,7 @@ Requirements RF1–RF8 are implemented by `state_icons.py` (parse + inject), `ba
 
 - `packages/frameworks/workflow-mgt/scripts/update_kanban_docs.py`
 - `packages/frameworks/workflow-mgt/scripts/validate_release_readiness.py`
-- `docs/project-management/kanban/kboard.md`
+- `docs/kanban/kboard.md`
 - Governance and workflow docs (see §5)
 
 ---
@@ -120,7 +120,7 @@ Requirements RF1–RF8 are implemented by `state_icons.py` (parse + inject), `ba
 | Doc ID | Path | Action |
 | ------ | ---- | ------ |
 | D1 | This IPP | CREATE |
-| D2 | `docs/project-management/kanban/kanban-board-guide.md` | UPDATE — MoSCOW state icons |
+| D2 | `docs/kanban/kanban-board-guide.md` | UPDATE — MoSCOW state icons |
 | D3 | `packages/frameworks/kanban/policies/kanban-governance-policy.md` | UPDATE — icon + FR-097 pairing |
 | D4 | `update-kanban-workflow-agent-execution.md` | UPDATE — Step 6 icon rules |
 | D5 | `release-workflow-agent-execution.md` | UPDATE — Gate 9 / Step 10 |
@@ -152,7 +152,7 @@ Requirements RF1–RF8 are implemented by `state_icons.py` (parse + inject), `ba
 
 ## References
 
-- [UXR-012](../project-management/kanban/fr-br/UXR-012-kanban-fbu-state-icons-for-moscow-rows.md)
-- [FR-097](../project-management/kanban/fr-br/FR-097-board-stamp-authority-and-forensic-timestamp-recovery.md)
-- [FR-077](../project-management/kanban/fr-br/FR-077-ipw-built-task-status-transition-and-kboard-sync.md)
+- [UXR-012](../kanban/fr-br/UXR-012-kanban-fbu-state-icons-for-moscow-rows.md)
+- [FR-097](../kanban/fr-br/FR-097-board-stamp-authority-and-forensic-timestamp-recovery.md)
+- [FR-077](../kanban/fr-br/FR-077-ipw-built-task-status-transition-and-kboard-sync.md)
 - [board-stamp-authority.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/board-stamp-authority.md)

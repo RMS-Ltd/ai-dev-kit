@@ -1,16 +1,23 @@
 # Changelog Archive
-## [0.2.16.23+1] - 08-06-26
+## [0.8.3.16+8] - 08-06-26
 
-E02:S16:T23 — **Change implemented:** CQG gate relocation to IDW Phase 6b (ADR-022 v0.0.2) — task anchor + kanban wiring. SemVer **v0.4.1064+1**.
+E08:S03:T16 — **Attempted fix:** Wave 3e — autofix PR pytest triage (#43/#44). SemVer **v0.4.12+8**.
 
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.16.23+1.md)
+[Detailed changelog](CHANGELOG_v0.8.3.16+8.md)
 
 ---
-## [0.8.3.16+7] - 08-06-26
+## [0.2.17.7+2] - 08-06-26
 
-E08:S03:T16 — **Attempted fix:** Wave 3d — `cli/logging.py` `py/empty-except`. SemVer **v0.4.1062+7**.
+E02:S17:T07 — **Change implemented:** Post-merge reconciliation. SemVer **v0.4.11+2**.
 
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.8.3.16+7.md)
+[Detailed changelog](CHANGELOG_v0.2.17.7+2.md)
+
+---
+## [0.2.17.7+1] - 08-06-26
+
+E02:S17:T07 — **Change implemented:** Production SQLite semver-registry cutover. SemVer **v0.4.1059+1**.
+
+[Detailed changelog](CHANGELOG_v0.2.17.7+1.md)
 
 ---
 ## [0.8.3.16+6] - 08-06-26

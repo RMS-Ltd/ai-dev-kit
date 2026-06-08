@@ -15,7 +15,7 @@ invocation_flags:
   archive_completed_helpers: packages/frameworks/workflow-mgt/scripts/kanban/archive_completed.py
 
 config:
-  kanban_root: docs/project-management/kanban
+  kanban_root: docs/kanban
   epic_doc_pattern: epics/Epic-{epic}/Epic-{epic}.md
   story_doc_pattern: epics/Epic-{epic}/Story-{story}-*.md
   task_doc_pattern: epics/Epic-{epic}/Story-{story}/T{task}-*.md

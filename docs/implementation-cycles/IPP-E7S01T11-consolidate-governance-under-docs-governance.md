@@ -8,11 +8,11 @@ housekeeping_policy: keep
 
 # E7:S01:T11 — Planning: Spec, Tests, Implementation Plan (IPW)
 
-**Host Task:** [`T11-consolidate-governance-under-docs-governance-fr101.md`](../project-management/kanban/epics/epic-07/story-01-codebase-maintenance-tasks/T11-consolidate-governance-under-docs-governance-fr101.md) **(E7:S01:T11)**  
-**Planning for:** [FR-101](../project-management/kanban/fr-br/FR-101-consolidate-governance-under-docs-governance.md)  
+**Host Task:** [`T11-consolidate-governance-under-docs-governance-fr101.md`](../kanban/epics/epic-07/story-01-codebase-maintenance-tasks/T11-consolidate-governance-under-docs-governance-fr101.md) **(E7:S01:T11)**  
+**Planning for:** [FR-101](../kanban/fr-br/FR-101-consolidate-governance-under-docs-governance.md)  
 **Status:** Approved (planning complete — implementation blocked on AC0 maintainer sign-off)
 
-> **IPW (Implementation Planning Workflow):** Consolidated IPP per [FR-042](../project-management/kanban/fr-br/FR-042-implementation-planning-workflow-ipw.md). Bidirectional wiring to host task **Input** and **References** is mandatory before implementation.
+> **IPW (Implementation Planning Workflow):** Consolidated IPP per [FR-042](../kanban/fr-br/FR-042-implementation-planning-workflow-ipw.md). Bidirectional wiring to host task **Input** and **References** is mandatory before implementation.
 
 ---
 
@@ -27,7 +27,7 @@ housekeeping_policy: keep
 | RF3 | INDEX rows remain under `docs/architecture/standards-and-adrs/`; hub cross-links only | FR-101-F4 |
 | RF4 | **Bidirectional wiring principle** relocated to `docs/governance/principles/bidirectional-wiring-principle.md` with stub at `fr-br/BIDIRECTIONAL_WIRING_PRINCIPLE.md` | FR-101-F5, maintainer decision (IPW) |
 | RF5 | Active surfaces updated: `.cursorrules`, `.claude/commands/*`, `kanban-board-guide.md`, portable RW excerpt, `AGENTS.md`, `src/ai_dev_kit/version.py` comment if applicable | FR-101-F6, AC4, inventory §2 |
-| RF6 | Create or update `docs/maintenance/book-repo-docs-scope.md` listing `docs/governance/` as **KEEP** | AC3; coordinate [E7:S01:T10](../project-management/kanban/epics/epic-07/story-01-codebase-maintenance-tasks/T10-project-root-hygiene-and-legacy-docs-rationalization.md) |
+| RF6 | Create or update `docs/maintenance/book-repo-docs-scope.md` listing `docs/governance/` as **KEEP** | AC3; coordinate [E7:S01:T10](../kanban/epics/epic-07/story-01-codebase-maintenance-tasks/T10-project-root-hygiene-and-legacy-docs-rationalization.md) |
 | RF7 | IPP linked from task Input/References | AC2 |
 | RF8 | Populate inventory §4 execution log during Phase 2 execution | FR-101 deliverable table |
 
@@ -165,21 +165,21 @@ Doc-only relocation: structural verification (no new pytest module). Do **not** 
 - `docs/architecture/standards-and-adrs/changelog-archival-policy.md` → stub
 - `docs/architecture/standards-and-adrs/specification-and-planning-artifacts-policy.md` → stub
 - `docs/architecture/standards-and-adrs/dev-kit-ipw-ipp-vs-icw-artifacts.md` → stub
-- `docs/project-management/kanban/fr-br/BIDIRECTIONAL_WIRING_PRINCIPLE.md` → stub
+- `docs/kanban/fr-br/BIDIRECTIONAL_WIRING_PRINCIPLE.md` → stub
 
 **UPDATE (Wave E — active surfaces):**
 
 - `.cursorrules`
 - `.claude/commands/ipw.md`, `rw.md`, `ukw.md`
 - `AGENTS.md`
-- `docs/project-management/kanban/kanban-board-guide.md`
+- `docs/kanban/kanban-board-guide.md`
 - `packages/frameworks/workflow-mgt/cursorrules-rw-trigger-section.md`
 - `docs/architecture/README.md`
 - `docs/governance/README.md`
 - `docs/governance/GOVERNANCE-REHOUSING-INVENTORY.md`
 - `packages/frameworks/kanban/templates/TASK_TEMPLATE.md`
 - `docs/architecture/standards-and-adrs/task-template-cross-wiring-sop.md`
-- `docs/project-management/kanban/intake-open-taskless-queue.md`
+- `docs/kanban/intake-open-taskless-queue.md`
 - Inbound links from moved policy bodies (grep each moved filename)
 
 ### 4.2 Dependency order
@@ -221,11 +221,11 @@ housekeeping_policy: keep
 | D-U4 | `packages/frameworks/workflow-mgt/cursorrules-rw-trigger-section.md` | Parity with D-U3 | RF5, E |
 | D-U5 | `.claude/commands/ipw.md`, `rw.md`, `ukw.md` | Policy path refs | RF5, E |
 | D-U6 | `AGENTS.md` | IPW gate policy paths | RF5, E |
-| D-U7 | `docs/project-management/kanban/kanban-board-guide.md` | Kanban governance path | RF5, E |
+| D-U7 | `docs/kanban/kanban-board-guide.md` | Kanban governance path | RF5, E |
 | D-U8 | `docs/architecture/README.md` | Point to governance hub for moved policies | RF3, E |
 | D-U9 | `packages/frameworks/kanban/templates/TASK_TEMPLATE.md` | Bidirectional wiring link | RF4, D |
 | D-U10 | `docs/architecture/standards-and-adrs/task-template-cross-wiring-sop.md` | Wiring principle path | RF4, D |
-| D-U11 | `docs/project-management/kanban/intake-open-taskless-queue.md` | Governance link | RF4, D |
+| D-U11 | `docs/kanban/intake-open-taskless-queue.md` | Governance link | RF4, D |
 | D-U12 | Host task + FR-101 | Status, IPP link, closure | RF7, H |
 | D-U13 | `src/ai_dev_kit/version.py` | Comment pointer if references versioning policy path | RF5, E |
 
@@ -283,14 +283,14 @@ housekeeping_policy: keep
 
 ## References
 
-- [FR-101](../project-management/kanban/fr-br/FR-101-consolidate-governance-under-docs-governance.md)
-- [E7:S01:T11 task](../project-management/kanban/epics/epic-07/story-01-codebase-maintenance-tasks/T11-consolidate-governance-under-docs-governance-fr101.md)
+- [FR-101](../kanban/fr-br/FR-101-consolidate-governance-under-docs-governance.md)
+- [E7:S01:T11 task](../kanban/epics/epic-07/story-01-codebase-maintenance-tasks/T11-consolidate-governance-under-docs-governance-fr101.md)
 - [GOVERNANCE-REHOUSING-INVENTORY.md](../governance/GOVERNANCE-REHOUSING-INVENTORY.md)
 - [docs/governance/README.md](../governance/README.md)
 - [ipw-adr-necessity-checklist.md](../architecture/standards-and-adrs/ipw-adr-necessity-checklist.md)
 - [ADR-006](../architecture/standards-and-adrs/ADR-006-book-project-private-repository-spin-off.md)
-- [FR-042](../project-management/kanban/fr-br/FR-042-implementation-planning-workflow-ipw.md)
-- [FR-094](../project-management/kanban/fr-br/FR-094-ipw-slash-command-and-task-state-transition-mandate.md)
-- [FR-077](../project-management/kanban/fr-br/FR-077-ipw-built-task-status-transition-and-kboard-sync.md)
+- [FR-042](../kanban/fr-br/FR-042-implementation-planning-workflow-ipw.md)
+- [FR-094](../kanban/fr-br/FR-094-ipw-slash-command-and-task-state-transition-mandate.md)
+- [FR-077](../kanban/fr-br/FR-077-ipw-built-task-status-transition-and-kboard-sync.md)
 - [rw-trigger-dual-source-parity.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/docs/rw-trigger-dual-source-parity.md)
 - [.claude/commands/ipw.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/.claude/commands/ipw.md)

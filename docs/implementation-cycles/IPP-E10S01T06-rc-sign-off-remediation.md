@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # E10:S01:T06 — Planning: RC Sign-Off Criteria and Remediation (IPW)
 
-**Host Task:** [`T06-define-rc-sign-off-criteria-and-remediation-tasks.md`](../project-management/kanban/epics/epic-10/story-01-document-lifecycle-package-implementation-review/T06-define-rc-sign-off-criteria-and-remediation-tasks.md) **(E10:S01:T06)**  
-**Planning for:** [T05 gap log](../project-management/kanban/epics/epic-10/story-01-document-lifecycle-package-implementation-review/T05-create-gap-log-and-risk-assessment.md) · [E10S01 orchestration plan §7.4 T06 / §8.7](./E10S01-orchestration-plan.md) · [IPP-E02S13T06 precedent](./IPP-E02S13T06-rc-sign-off-remediation.md)  
+**Host Task:** [`T06-define-rc-sign-off-criteria-and-remediation-tasks.md`](../kanban/epics/epic-10/story-01-document-lifecycle-package-implementation-review/T06-define-rc-sign-off-criteria-and-remediation-tasks.md) **(E10:S01:T06)**  
+**Planning for:** [T05 gap log](../kanban/epics/epic-10/story-01-document-lifecycle-package-implementation-review/T05-create-gap-log-and-risk-assessment.md) · [E10S01 orchestration plan §7.4 T06 / §8.7](./E10S01-orchestration-plan.md) · [IPP-E02S13T06 precedent](./IPP-E02S13T06-rc-sign-off-remediation.md)  
 **Status:** Implementation complete — released v0.10.1.6+1 via `RW E10:S01:T06 --art`  
 **Branch:** `epic/10-doc-lifecycle-framework`
 
@@ -113,11 +113,11 @@ T06 task doc SHALL contain (mirroring E02:S13:T06 structure):
 
 | Criterion | Requirement | Evidence source (impl) |
 | --------- | ----------- | ---------------------- |
-| **C1 — Component Inventory** | Major package components inventoried and mapped to T01 expectations | [T02 `component-inventory-map.md`](../project-management/kanban/epics/epic-10/story-01-document-lifecycle-package-implementation-review/component-inventory-map.md) |
-| **C2 — Behavioral Compliance** | Documented lifecycle behavior vs observable repo state scored PASS/PARTIAL/FAIL | [T03 `lifecycle-behavior-validation-report.md`](../project-management/kanban/epics/epic-10/story-01-document-lifecycle-package-implementation-review/lifecycle-behavior-validation-report.md) |
-| **C3 — Integration Alignment** | Soft dependencies (Kanban, workflow-mgt), agent rules, ADR dual SoT, FR-110 mirror reviewed | [T04 `integration-alignment-report.md`](../project-management/kanban/epics/epic-10/story-01-document-lifecycle-package-implementation-review/integration-alignment-report.md) |
+| **C1 — Component Inventory** | Major package components inventoried and mapped to T01 expectations | [T02 `component-inventory-map.md`](../kanban/epics/epic-10/story-01-document-lifecycle-package-implementation-review/component-inventory-map.md) |
+| **C2 — Behavioral Compliance** | Documented lifecycle behavior vs observable repo state scored PASS/PARTIAL/FAIL | [T03 `lifecycle-behavior-validation-report.md`](../kanban/epics/epic-10/story-01-document-lifecycle-package-implementation-review/lifecycle-behavior-validation-report.md) |
+| **C3 — Integration Alignment** | Soft dependencies (Kanban, workflow-mgt), agent rules, ADR dual SoT, FR-110 mirror reviewed | [T04 `integration-alignment-report.md`](../kanban/epics/epic-10/story-01-document-lifecycle-package-implementation-review/integration-alignment-report.md) |
 | **C4 — Review Artefact Completeness** | T01–T05 companions complete; T05 `validate_gap_log.py --strict` pass; no blocking stubs on review chain | T01 baseline + T05 gap log + orchestration plan §4 (no E07 machinery review for pure doc package) |
-| **C5 — Gap Log and Risk Posture** | Schema-conformant gap log; 0 RC-blocking (`BLOCKER`) gaps for the package | [T05 gap log](../project-management/kanban/epics/epic-10/story-01-document-lifecycle-package-implementation-review/T05-create-gap-log-and-risk-assessment.md) |
+| **C5 — Gap Log and Risk Posture** | Schema-conformant gap log; 0 RC-blocking (`BLOCKER`) gaps for the package | [T05 gap log](../kanban/epics/epic-10/story-01-document-lifecycle-package-implementation-review/T05-create-gap-log-and-risk-assessment.md) |
 | **C6 — HIGH Gaps Filed in Kanban** | Each HIGH gap has **filed** task/FR with bidirectional links | Filed E10:S01:T08+ task docs (see §4 anticipated hosts) |
 
 **Expected sign-off posture:** **DEFER** — C1–C5 may PASS while C6 filing completes; RC sign-off withheld until Wave 3 HIGH remediation reaches verification evidence (E02:S13 DEFER pattern).
@@ -169,12 +169,12 @@ T06 task doc SHALL contain (mirroring E02:S13:T06 structure):
 
 - CREATE: `docs/implementation-cycles/IPP-E10S01T06-rc-sign-off-remediation.md` (this file)
 - CREATE (HIGH-gap hosts — **exact IDs from T05 at impl**):
-  - `docs/project-management/kanban/epics/epic-10/story-01-document-lifecycle-package-implementation-review/T08-implement-doc-housekeeping-workflow-and-scripts.md` *(anticipated — GAP-DOCLIFE-STRUCT-001 bundle)*
-  - `docs/project-management/kanban/epics/epic-10/story-01-document-lifecycle-package-implementation-review/T09-sync-architecture-adr-dual-sot.md` *(anticipated — if T05 classifies ADR drift as HIGH)*
-- UPDATE: `docs/project-management/kanban/epics/epic-10/story-01-document-lifecycle-package-implementation-review/T06-define-rc-sign-off-criteria-and-remediation-tasks.md`
-- UPDATE: `docs/project-management/kanban/epics/epic-10/story-01-document-lifecycle-package-implementation-review/T05-create-gap-log-and-risk-assessment.md` (Tracking fields)
-- UPDATE: `docs/project-management/kanban/epics/epic-10/story-01-document-lifecycle-package-implementation-review.md` (story checklist)
-- UPDATE (RW Step 7): `docs/project-management/kanban/kboard.md`
+  - `docs/kanban/epics/epic-10/story-01-document-lifecycle-package-implementation-review/T08-implement-doc-housekeeping-workflow-and-scripts.md` *(anticipated — GAP-DOCLIFE-STRUCT-001 bundle)*
+  - `docs/kanban/epics/epic-10/story-01-document-lifecycle-package-implementation-review/T09-sync-architecture-adr-dual-sot.md` *(anticipated — if T05 classifies ADR drift as HIGH)*
+- UPDATE: `docs/kanban/epics/epic-10/story-01-document-lifecycle-package-implementation-review/T06-define-rc-sign-off-criteria-and-remediation-tasks.md`
+- UPDATE: `docs/kanban/epics/epic-10/story-01-document-lifecycle-package-implementation-review/T05-create-gap-log-and-risk-assessment.md` (Tracking fields)
+- UPDATE: `docs/kanban/epics/epic-10/story-01-document-lifecycle-package-implementation-review.md` (story checklist)
+- UPDATE (RW Step 7): `docs/kanban/kboard.md`
 
 ### 4.2 Dependency order
 
@@ -237,7 +237,7 @@ Planning reconnaissance from orchestration plan §3.2, §9.1 and T02–T04 IPPs 
 | Doc ID | Canonical path | Publication status | Publication N/A reason | Lifecycle | Inbound links to add |
 | ------ | -------------- | ------------------ | ------------------------ | --------- | -------------------- |
 | D-C1 | `docs/implementation-cycles/IPP-E10S01T06-rc-sign-off-remediation.md` | NOT_APPLICABLE | Planning artefact; not Docusaurus surface | evergreen | T06 Input + References |
-| D-U1 | `docs/project-management/kanban/epics/epic-10/story-01-.../T06-*.md` | NOT_APPLICABLE | Kanban task doc | evergreen | Story checklist; T05 Next Steps |
+| D-U1 | `docs/kanban/epics/epic-10/story-01-.../T06-*.md` | NOT_APPLICABLE | Kanban task doc | evergreen | Story checklist; T05 Next Steps |
 | D-C2 | `.../T08-implement-doc-housekeeping-workflow-and-scripts.md` | NOT_APPLICABLE | Kanban task doc | evergreen | T06 backlog R1; T05 Tracking |
 | D-C3 | `.../T09-sync-architecture-adr-dual-sot.md` | NOT_APPLICABLE | Kanban task doc *(conditional)* | evergreen | T06 backlog R2; T05 Tracking |
 | D-U2 | `.../T05-create-gap-log-and-risk-assessment.md` | NOT_APPLICABLE | Gap log SoT | evergreen | T06 Input |
@@ -264,10 +264,10 @@ Planning reconnaissance from orchestration plan §3.2, §9.1 and T02–T04 IPPs 
 
 ## References
 
-- [T06 task doc](../project-management/kanban/epics/epic-10/story-01-document-lifecycle-package-implementation-review/T06-define-rc-sign-off-criteria-and-remediation-tasks.md)
-- [T05 gap log](../project-management/kanban/epics/epic-10/story-01-document-lifecycle-package-implementation-review/T05-create-gap-log-and-risk-assessment.md)
+- [T06 task doc](../kanban/epics/epic-10/story-01-document-lifecycle-package-implementation-review/T06-define-rc-sign-off-criteria-and-remediation-tasks.md)
+- [T05 gap log](../kanban/epics/epic-10/story-01-document-lifecycle-package-implementation-review/T05-create-gap-log-and-risk-assessment.md)
 - [E10S01 orchestration plan](./E10S01-orchestration-plan.md) §7.4 T06 · §8.7 · §9
 - [IPP-E02S13T06 precedent](./IPP-E02S13T06-rc-sign-off-remediation.md)
-- [E02:S13:T06 task doc](../project-management/kanban/epics/epic-02/story-13-workflow-management-package-implementation-review/T06-define-rc-sign-off-criteria-and-remediation-tasks.md)
+- [E02:S13:T06 task doc](../kanban/epics/epic-02/story-13-workflow-management-package-implementation-review/T06-define-rc-sign-off-criteria-and-remediation-tasks.md)
 - [gap-log-schema.md](../architecture/standards-and-adrs/gap-log-schema.md)
 - Package: `packages/frameworks/doc-lifecycle/`

@@ -18,11 +18,11 @@ if [[ -d docs/book-proj ]]; then
   echo "FAIL: docs/book-proj present on public tree"
   fail=1
 fi
-if [[ -d docs/project-management/kanban/epics/Epic-24 ]]; then
+if [[ -d docs/kanban/epics/Epic-24 ]]; then
   echo "FAIL: Epic-24 present on public tree"
   fail=1
 fi
-if grep -q 'Epic-24' docs/project-management/kanban/kboard.md 2>/dev/null; then
+if grep -q 'Epic-24' docs/kanban/kboard.md 2>/dev/null; then
   echo "FAIL: kboard.md references Epic-24"
   fail=1
 fi

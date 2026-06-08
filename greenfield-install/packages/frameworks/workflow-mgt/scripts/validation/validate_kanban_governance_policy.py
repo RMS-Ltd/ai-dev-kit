@@ -161,7 +161,7 @@ def _extract_moscow_rows(board_content: str) -> List[str]:
 def validate_board_timestamp_rows(project_root: Path) -> Tuple[bool, List[str]]:
     errors: List[str] = []
     boards = [
-        project_root / "docs/project-management/kanban/kboard.md",
+        project_root / "docs/kanban/kboard.md",
     ]
     ts_pattern = re.compile(r"\|\sLast modified:\s\d{4}-\d{2}-\d{2}\s\d{2}:\d{2}\sUTC\s*$")
     for board in boards:

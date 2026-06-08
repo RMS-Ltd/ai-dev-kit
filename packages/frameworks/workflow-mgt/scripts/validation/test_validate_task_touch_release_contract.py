@@ -14,6 +14,7 @@ for p in (_val_dir, _version_dir):
         sys.path.insert(0, str(p))
 
 import validate_task_touch_release_contract as vttrc  # noqa: E402
+import semver_converter  # noqa: E402
 
 
 @pytest.fixture
@@ -56,12 +57,13 @@ def task_touch_project(tmp_path, monkeypatch):
     reg_path = tmp_path / "semver-registry.yaml"
     reg_path.write_text(yaml.dump(registry, default_flow_style=False), encoding="utf-8")
     monkeypatch.chdir(tmp_path)
-    monkeypatch.setattr(vttrc, "load_semver_registry", lambda: registry)
+    monkeypatch.setattr(semver_converter, "load_semver_registry", lambda: registry)
     monkeypatch.setattr(
-        vttrc,
+        semver_converter,
         "get_semver_mapping_strategy",
         lambda: "task_touch",
     )
+    monkeypatch.setattr(semver_converter, "get_release_state_backend", lambda: "legacy")
     return tmp_path
 
 
@@ -72,12 +74,12 @@ def test_ok_when_registry_finalized(task_touch_project, monkeypatch):
         lambda _root: "internal_version: 0.2.13.4+1",
     )
     monkeypatch.setattr(
-        vttrc,
+        semver_converter,
         "convert_version_string",
         lambda _iv, strategy="task_touch", finalize=False: "0.4.941+1",
     )
     monkeypatch.setattr(
-        vttrc,
+        semver_converter,
         "get_rw_tag_info",
         lambda _iv, finalize=False: {
             "primary_tag": "v0.4.941",

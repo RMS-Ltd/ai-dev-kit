@@ -30,7 +30,7 @@ housekeeping_policy: keep
 
 ### Epic 4: Kanban Framework
 
-**File:** `docs/project-management/kanban/epics/epic-04/epic-04.md`
+**File:** `docs/kanban/epics/epic-04/epic-04.md`
 
 **Violations Found:**
 - ❌ **Lines 94-112:** Detailed Story 1 section with Status, Priority, Goal, Tasks list
@@ -71,7 +71,7 @@ Replace with brief summary and link:
 
 ### Epic 2: Workflow Management Framework
 
-**File:** `docs/project-management/kanban/epics/epic-02/epic-02.md`
+**File:** `docs/kanban/epics/epic-02/epic-02.md`
 
 **Violations Found:**
 - ❌ **Lines 90-109:** Detailed Story 1 section with Status, Priority, Goal, Tasks list

@@ -8,11 +8,11 @@ housekeeping_policy: keep
 
 # E2:S06:T01 — Planning: Spec, Tests, Implementation Plan (IPW)
 
-**Host Task:** [`story-06-package-uninstall-and-recovery.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/project-management/kanban/epics/epic-02/story-06-package-uninstall-and-recovery.md) **(E2:S06:T01)**  
-**Planning for:** [FR-008](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/project-management/kanban/fr-br/FR-008-package-uninstall-capabilities.md)  
+**Host Task:** [`story-06-package-uninstall-and-recovery.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/kanban/epics/epic-02/story-06-package-uninstall-and-recovery.md) **(E2:S06:T01)**  
+**Planning for:** [FR-008](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/kanban/fr-br/FR-008-package-uninstall-capabilities.md)  
 **Status:** Approved
 
-> **IPW (Implementation Planning Workflow):** Use this template when running **IPW** / **IPW E:S:T**. The **Host Task** link and bidirectional wiring to the task doc **Input** and **References** are **mandatory** before the plan is complete (see project **FR-042** — *Implementation Planning Workflow* in `docs/project-management/kanban/fr-br/`).
+> **IPW (Implementation Planning Workflow):** Use this template when running **IPW** / **IPW E:S:T**. The **Host Task** link and bidirectional wiring to the task doc **Input** and **References** are **mandatory** before the plan is complete (see project **FR-042** — *Implementation Planning Workflow* in `docs/kanban/fr-br/`).
 
 ---
 
@@ -142,9 +142,9 @@ The specification formalizes the requirements baseline by mapping each AC to con
 - **Modify:** `tests/test_backends.py` — add backend `remove()` unit tests
 - **Create:** `tests/cli/test_remove_command.py` — CLI remove command tests
 - **Create:** `tests/test_uninstall_package.py` — standalone script tests
-- **Modify:** `docs/project-management/kanban/fr-br/FR-008-package-uninstall-capabilities.md` — check AC-1..AC-5, NFR-1..NFR-3 boxes
-- **Modify:** `docs/project-management/kanban/epics/epic-02/story-06-package-uninstall-and-recovery.md` — update T01 status, add plan links
-- **Modify:** `docs/project-management/kanban/kboard.md` — update T01 row status
+- **Modify:** `docs/kanban/fr-br/FR-008-package-uninstall-capabilities.md` — check AC-1..AC-5, NFR-1..NFR-3 boxes
+- **Modify:** `docs/kanban/epics/epic-02/story-06-package-uninstall-and-recovery.md` — update T01 status, add plan links
+- **Modify:** `docs/kanban/kboard.md` — update T01 row status
 
 ### 4.2 Dependency order
 
@@ -172,8 +172,8 @@ The specification formalizes the requirements baseline by mapping each AC to con
 
 ## References
 
-- **Host Task:** `docs/project-management/kanban/epics/epic-02/story-06-package-uninstall-and-recovery.md`
-- **FR-008:** `docs/project-management/kanban/fr-br/FR-008-package-uninstall-capabilities.md`
+- **Host Task:** `docs/kanban/epics/epic-02/story-06-package-uninstall-and-recovery.md`
+- **FR-008:** `docs/kanban/fr-br/FR-008-package-uninstall-capabilities.md`
 - **CLI main:** `cli/main.py`
 - **CLI remove (fixed):** `cli/commands/remove.py`
 - **CLI install (correct pattern):** `cli/commands/install.py`

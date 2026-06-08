@@ -46,7 +46,7 @@ Adjust `vendor/ai-dev-kit/` to match your layout. Install scripts live under `pa
 
 ## Install error codes (FR-108 / FR-111)
 
-When acquisition or install fails, report **SemVer banner + `ADK-*` code** ([UXR-016](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/project-management/kanban/fr-br/UXR-016-install-setup-interactive-feedback-external-semver-version.md)). Run vendor preflight before installers:
+When acquisition or install fails, report **SemVer banner + `ADK-*` code** ([UXR-016](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/kanban/fr-br/UXR-016-install-setup-interactive-feedback-external-semver-version.md)). Run vendor preflight before installers:
 
 ```bash
 python3 vendor/ai-dev-kit/packages/frameworks/workflow-mgt/scripts/verify_vendor_tree.py \\
@@ -75,7 +75,7 @@ Lookup: [framework-dependency-troubleshooting-guide.md](https://github.com/RMS-L
 ## Documentation
 
 - [INSTALL_IN_YOUR_PROJECT.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/INSTALL_IN_YOUR_PROJECT.md#lean-vendor-install-greenfield-install--fr-110)
-- [FR-110](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/project-management/kanban/fr-br/FR-110-lean-adopter-distribution-footprint-and-vendor-bundle.md)
+- [FR-110](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/kanban/fr-br/FR-110-lean-adopter-distribution-footprint-and-vendor-bundle.md)
 
 ## Maintainer note
 

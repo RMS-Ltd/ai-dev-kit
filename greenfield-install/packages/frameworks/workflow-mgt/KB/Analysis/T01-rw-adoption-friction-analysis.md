@@ -81,7 +81,7 @@ This analysis identifies **all manual integration touchpoints** required when ad
    - Story file pattern: `{kanban_path}/epics/Epic-{epic}/Story-{story}-*.md`
    - Epic doc pattern: `{kanban_path}/epics/Epic-{epic}/Epic-{epic}.md`
    - Kanban board: `{kanban_path}/_index.md` or `{kanban_path}/kboard.md`
-   - Example: `docs/project-management/kanban/...`
+   - Example: `docs/kanban/...`
    - **Manual action:** Replace template/example paths
 
 2. **`workflows/release-workflow.yaml` (Step 5 config):**
@@ -160,7 +160,7 @@ These values **vary per project** and must be provided via config:
 - ✅ **Version file path** (`src/{project}/version.py` or equivalent)
 - ✅ **Main changelog path** (`CHANGELOG.md` or equivalent)
 - ✅ **Changelog archive directory** (`docs/changelog-and-release-notes/changelog-archive/` or equivalent)
-- ✅ **Kanban root path** (`docs/project-management/kanban/` or equivalent) – if using Kanban
+- ✅ **Kanban root path** (`docs/kanban/` or equivalent) – if using Kanban
 - ✅ **Validation scripts path** (`scripts/validation/` or equivalent)
 - ✅ **README path** (`README.md` or equivalent) – usually root, but configurable
 - ✅ **Project name** (for examples/comments) – optional but helpful
@@ -198,7 +198,7 @@ readme_file: README.md                          # Path to README (usually root)
 ```yaml
 # Kanban integration (optional - only if using Kanban)
 use_kanban: true                                 # Enable Kanban integration
-kanban_root: docs/project-management/kanban         # Root path for Kanban docs
+kanban_root: docs/kanban         # Root path for Kanban docs
 epic_doc_pattern: epics/Epic-{epic}/Epic-{epic}.md         # Pattern for epic docs (relative to kanban_root)
 story_doc_pattern: epics/Epic-{epic}/Story-{story}-*.md  # Pattern for story docs
 kanban_board: _index.md                         # Main Kanban board file (relative to kanban_root)
@@ -242,7 +242,7 @@ changelog_dir: docs/changelog-and-release-notes/changelog-archive
 scripts_path: tools/workflow_mgt/scripts
 readme_file: README.md
 use_kanban: true
-kanban_root: docs/project-management/kanban
+kanban_root: docs/kanban
 epic_doc_pattern: epics/Epic-{epic}.md
 story_doc_pattern: epics/Epic-{epic}/stories/Story-{story}-*.md
 kanban_board: _index.md

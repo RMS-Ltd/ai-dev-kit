@@ -56,7 +56,7 @@ def run_ukw_mode(mode: str, kanban_root: Optional[Path] = None) -> dict:
         Dict with results and status
     """
     if kanban_root is None:
-        kanban_root = Path("docs/project-management/kanban")
+        kanban_root = Path("docs/kanban")
     
     if mode in ['moscow', 'm', 'prioritization']:
         return run_moscow_prioritization_mode(kanban_root)
@@ -496,7 +496,7 @@ def parse_task_target(target_str: str, kanban_root: Optional[Path] = None) -> Li
         List of (epic, story, task) tuples in canonical order
     """
     if kanban_root is None:
-        kanban_root = Path("docs/project-management/kanban")
+        kanban_root = Path("docs/kanban")
     
     target_str = target_str.strip()
     
@@ -551,7 +551,7 @@ def validate_task_target(target_str: str, kanban_root: Optional[Path] = None) ->
         (is_valid, error_message)
     """
     if kanban_root is None:
-        kanban_root = Path("docs/project-management/kanban")
+        kanban_root = Path("docs/kanban")
     
     target_str = target_str.strip()
     

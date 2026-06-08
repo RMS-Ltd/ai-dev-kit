@@ -85,7 +85,7 @@ This document designs the Epic-level Post-Implementation Review (PIR) workflow, 
 **Purpose:** Collect all materials needed for comprehensive review
 
 **Materials to Gather:**
-- Epic document (`docs/project-management/kanban/epics/Epic-{N}/Epic-{N}.md`)
+- Epic document (`docs/kanban/epics/Epic-{N}/Epic-{N}.md`)
 - All Story documents within Epic
 - All Task documents within Stories
 - Changelog entries for Epic version range

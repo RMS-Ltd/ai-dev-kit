@@ -14,7 +14,7 @@ Arguments:
     --analysis-report REPORT  Path to analysis report JSON (default: analysis_report.json)
     --mode MODE               Installation mode: fresh, migration, update, hybrid (default: auto-detect)
     --dry-run                 Preview changes without modifying files
-    --backup-dir DIR          Directory for backups (default: docs/project-management/kanban/_backup-{timestamp})
+    --backup-dir DIR          Directory for backups (default: docs/kanban/_backup-{timestamp})
     --force                   Skip confirmation prompts
 """
 
@@ -125,7 +125,7 @@ class KanbanStructureMigrator:
             return {"references_updated": 0, "files_updated": 0}
         
         updater = ReferenceUpdater(task_mappings)
-        project_root = self.kanban_path.parent.parent.parent  # Go up from docs/project-management/kanban
+        project_root = self.kanban_path.parent.parent.parent  # Go up from docs/kanban
         
         if self.dry_run:
             print("  🔍 [DRY RUN] Would update task ID references...")
@@ -239,7 +239,7 @@ class KanbanStructureMigrator:
             depth += 1
         
         # Fallback: try to infer from kanban path structure
-        # If kanban_path is like "docs/project-management/kanban", try to get repo root
+        # If kanban_path is like "docs/kanban", try to get repo root
         if "KB" in str(self.kanban_path):
             # Try to find repo root by going up from KB
             kb_path = Path(self.kanban_path)
@@ -762,8 +762,8 @@ def main():
     parser.add_argument(
         "--kanban-path",
         type=str,
-        default="docs/project-management/kanban",
-        help="Path to Kanban directory (default: docs/project-management/kanban)"
+        default="docs/kanban",
+        help="Path to Kanban directory (default: docs/kanban)"
     )
     parser.add_argument(
         "--force",

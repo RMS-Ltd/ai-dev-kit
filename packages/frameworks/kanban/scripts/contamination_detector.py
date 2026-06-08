@@ -3,7 +3,7 @@ Contamination detector for Kanban installs in consumer projects.
 
 E6:S01:T37 – Kanban Install Consumer Board Contamination
 
-This module walks a consumer project's `docs/project-management/kanban/`
+This module walks a consumer project's `docs/kanban/`
 tree and classifies files as:
 
 - template: canonical consumer templates that are expected after a clean install
@@ -36,7 +36,7 @@ CANONICAL_EPIC_PREFIXES = {
 
 def scan_kanban_tree(root: Path) -> List[Finding]:
     """
-    Scan the docs/project-management/kanban tree rooted at `root` and classify files.
+    Scan the docs/kanban tree rooted at `root` and classify files.
     """
     findings: List[Finding] = []
     if not root.exists():

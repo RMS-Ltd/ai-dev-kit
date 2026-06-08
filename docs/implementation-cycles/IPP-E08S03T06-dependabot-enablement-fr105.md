@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # E08:S03:T06 — Planning: Spec, Tests, Implementation Plan (IPW)
 
-**Host Task:** [`T06-dependabot-enablement-fr105.md`](../project-management/kanban/epics/epic-08/story-03-automation-scripts/T06-dependabot-enablement-fr105.md) **(E08:S03:T06)**  
-**Planning for:** [FR-105](../project-management/kanban/fr-br/FR-105-dependabot-dependency-security-automation.md)  
+**Host Task:** [`T06-dependabot-enablement-fr105.md`](../kanban/epics/epic-08/story-03-automation-scripts/T06-dependabot-enablement-fr105.md) **(E08:S03:T06)**  
+**Planning for:** [FR-105](../kanban/fr-br/FR-105-dependabot-dependency-security-automation.md)  
 **Status:** Approved (implementation authorized)
 
 > **IPW:** Produced for E08:S03:T06. npm remediation: safe `npm audit fix` first, then selective `--force` only if `npm run build` stays green.
@@ -169,8 +169,8 @@ UI evidence ∥ dependabot.yml → npm audit/build → docs/tests → FR → RW.
 
 ## References
 
-- [FR-105](../project-management/kanban/fr-br/FR-105-dependabot-dependency-security-automation.md)
-- [FR-069](../project-management/kanban/fr-br/FR-069-docusaurus-ci-build-gate.md)
-- [E07:S06:T08](../project-management/kanban/epics/epic-07/story-06-post-windsurf-project-review/T08-dependency-and-tooling-audit.md)
+- [FR-105](../kanban/fr-br/FR-105-dependabot-dependency-security-automation.md)
+- [FR-069](../kanban/fr-br/FR-069-docusaurus-ci-build-gate.md)
+- [E07:S06:T08](../kanban/epics/epic-07/story-06-post-windsurf-project-review/T08-dependency-and-tooling-audit.md)
 - [ipw-adr-necessity-checklist.md](../architecture/standards-and-adrs/ipw-adr-necessity-checklist.md)
 - [`.github/workflows/docusaurus-build.yml`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/.github/workflows/docusaurus-build.yml)

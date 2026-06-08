@@ -9,4 +9,4 @@ notion_sot: true
 
 **SoT:** Notion Engineering KB — [Handover 2026 04 25 Ukw Rw E2S16T04](https://www.notion.so/2fc6bf0171129f3a4775a518ef3b2123)
 
-> Migrated from `docs/implementation-cycles/HANDOVER-2026-04-25-ukw-rw-e2s16t04.md` per [FR-114](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/project-management/kanban/fr-br/FR-114-split-documentation-surfaces-docusaurus-public-notion-maintainer-kb.md). Full content lives in Notion.
+> Migrated from `docs/implementation-cycles/HANDOVER-2026-04-25-ukw-rw-e2s16t04.md` per [FR-114](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/kanban/fr-br/FR-114-split-documentation-surfaces-docusaurus-public-notion-maintainer-kb.md). Full content lives in Notion.

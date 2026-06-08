@@ -7,7 +7,7 @@ config:
   templates_dir: templates/icw
   # Durable ICW outputs (repo SoT). Link from Kanban task; do not rely on IDE-only plan dirs — see docs/architecture/standards-and-adrs/specification-and-planning-artifacts-policy.md
   output_dir: docs/implementation-cycles
-  kanban_root: docs/project-management/kanban
+  kanban_root: docs/kanban
   workflow_registry: workflows/workflow-registry.yaml
 
 steps:

@@ -30,7 +30,7 @@ from rw_config_loader import load_rw_config  # noqa: E402
 def kanban_root(project_root: Path, config: Optional[Dict[str, Any]]) -> Path:
     if config and config.get("kanban_root"):
         return project_root / config["kanban_root"]
-    return project_root / "docs/project-management/kanban"
+    return project_root / "docs/kanban"
 
 
 def main(argv: Optional[List[str]] = None) -> int:

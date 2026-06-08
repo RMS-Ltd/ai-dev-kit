@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Update markdown links after kanban naming cleanup.
 
-Scans docs/project-management/kanban/**/*.md and updates:
+Scans docs/kanban/**/*.md and updates:
 1. Markdown link URLs pointing to renamed T0xx files -> Txx
 2. Markdown link URLs pointing to deleted duplicate stories/tasks
 3. Inline code / bare filename references to renamed files
@@ -13,7 +13,7 @@ import json
 import re
 from pathlib import Path
 
-KANBAN_ROOT = Path("docs/project-management/kanban")
+KANBAN_ROOT = Path("docs/kanban")
 _CLEANUP_DIR = Path(__file__).resolve().parent
 INVENTORY_PATH = _CLEANUP_DIR / "output" / "kanban_naming_inventory.json"
 

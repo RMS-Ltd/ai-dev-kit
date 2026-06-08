@@ -11,17 +11,15 @@ housekeeping_policy: keep
 **Status:** Accepted  
 **Date:** 2026-05-29  
 **Decision owner:** Maintainer  
-**Implementing work:** [FR-101](../../project-management/kanban/fr-br/FR-101-consolidate-governance-under-docs-governance.md) · [E7:S01:T11](../../project-management/kanban/epics/epic-07/story-01-codebase-maintenance-tasks/T11-consolidate-governance-under-docs-governance-fr101.md) · [IPP-E7S1T11](../../implementation-cycles/IPP-E7S01T11-consolidate-governance-under-docs-governance.md)
+**Implementing work:** [FR-101](../../kanban/fr-br/FR-101-consolidate-governance-under-docs-governance.md) · [E7:S01:T11](../../kanban/epics/epic-07/story-01-codebase-maintenance-tasks/T11-consolidate-governance-under-docs-governance-fr101.md) · [IPP-E7S1T11](../../implementation-cycles/IPP-E7S01T11-consolidate-governance-under-docs-governance.md) · [FR-118](../../kanban/fr-br/FR-118-promote-kanban-to-docs-kanban-retire-project-management-shell.md) · [E07:S01:T12](../../kanban/epics/epic-07/story-01-codebase-maintenance-tasks/T12-promote-kanban-to-docs-kanban-retire-project-management-fr118.md)
 
-**Related:** [ADR-006](ADR-006-book-project-private-repository-spin-off.md) (book vs public repo split), [GOVERNANCE-REHOUSING-INVENTORY.md](../../governance/GOVERNANCE-REHOUSING-INVENTORY.md)
+**Related:** [ADR-006](ADR-006-book-project-private-repository-spin-off.md) (book vs public repo split), [GOVERNANCE-REHOUSING-INVENTORY.md](../../governance/GOVERNANCE-REHOUSING-INVENTORY.md), [KANBAN-REHOUSING-INVENTORY.md](../../governance/KANBAN-REHOUSING-INVENTORY.md)
 
 ---
 
 ## Context
 
-After [ADR-006](ADR-006-book-project-private-repository-spin-off.md), the maintainer book workspace (`RMS-Ltd/ai-dev-kit-book` / local `main`) still hosts **book-active** governance policies under `docs/project-management/rituals/policy/` and `docs/architecture/standards-and-adrs/`. Agents and maintainers lack a single navigation hub; paths duplicate or conflict with **framework SoT** under `packages/frameworks/`.
-
-[FR-101](../../project-management/kanban/fr-br/FR-101-consolidate-governance-under-docs-governance.md) requires inventory-first rehousing into `docs/governance/` with stubs and targeted link sweeps.
+After [ADR-006](ADR-006-book-project-private-repository-spin-off.md), the maintainer book workspace (`RMS-Ltd/ai-dev-kit-book` / local `main`) hosted **book-active** governance policies under legacy `docs/project-management/rituals/policy/` and `docs/architecture/standards-and-adrs/`. [FR-101](../../kanban/fr-br/FR-101-consolidate-governance-under-docs-governance.md) rehoused policies into `docs/governance/`. [FR-118](../../kanban/fr-br/FR-118-promote-kanban-to-docs-kanban-retire-project-management-shell.md) promotes the Kanban work tree to **`docs/kanban/`** and retires the `project-management/` wrapper (`rw-config.yaml` `kanban_root`).
 
 ---
 
@@ -33,6 +31,7 @@ After [ADR-006](ADR-006-book-project-private-repository-spin-off.md), the mainta
 |-------|-------------------|------|
 | **Framework (adopter SoT)** | `packages/frameworks/{kanban,workflow mgt,...}/` | Portable policies, validators, templates for installed projects |
 | **Book governance (maintainer SoT)** | `docs/governance/{kanban,standards,principles}/` | Book-workspace copies and promoted principles used by RW/IPW/UKW on this repo |
+| **Book Kanban (maintainer SoT)** | `docs/kanban/` | Boards, epics/stories/tasks, `fr-br/` intake queue for this repo (`kanban_root` in `rw-config.yaml`) |
 | **Architecture (ADR + INDEX)** | `docs/architecture/standards-and-adrs/` | ADRs, operational reference guides, and **INDEX-only** docs cross-linked from `docs/governance/README.md` |
 
 ### Disposition rules

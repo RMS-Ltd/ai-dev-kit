@@ -7,8 +7,8 @@ description: >
   task under delivery-appropriate story; optional FR-nnn↔Tnn symmetry.
 
 config:
-  fr_br_dir: docs/project-management/kanban/fr-br
-  kanban_dir: docs/project-management/kanban/epics
+  fr_br_dir: docs/kanban/fr-br
+  kanban_dir: docs/kanban/epics
   version_file: src/fynd_deals/version.py
   semantic_matching:
     enabled: true

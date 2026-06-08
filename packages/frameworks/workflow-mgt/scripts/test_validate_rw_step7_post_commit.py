@@ -55,19 +55,19 @@ def _init_repo(tmp: Path) -> Path:
 
 def _write_synthetic_release_scope(repo: Path) -> dict:
     """Create the surfaces a Step 7 run would touch and commit them."""
-    kboard = repo / "docs/project-management/kanban/kboard.md"
+    kboard = repo / "docs/kanban/kboard.md"
     kboard.parent.mkdir(parents=True, exist_ok=True)
     kboard.write_text("# kboard\nrow A\n")
 
-    fbuboard = repo / "docs/project-management/kanban/kboard.md"
+    fbuboard = repo / "docs/kanban/kboard.md"
     fbuboard.write_text("# fbuboard\nrow A\n")
 
-    fbu_dir = repo / "docs/project-management/kanban/fr-br"
+    fbu_dir = repo / "docs/kanban/fr-br"
     fbu_dir.mkdir(parents=True, exist_ok=True)
     fr_doc = fbu_dir / "FR-999-test.md"
     fr_doc.write_text("# FR-999\nbody\n")
 
-    epic_dir = repo / "docs/project-management/kanban/epics/epic-02/story-15-test"
+    epic_dir = repo / "docs/kanban/epics/epic-02/story-15-test"
     epic_dir.mkdir(parents=True, exist_ok=True)
     task_doc = epic_dir / "T99-test.md"
     task_doc.write_text("# Task 99\nbody\n")
@@ -221,7 +221,7 @@ def test_fail_when_new_untracked_file_not_in_commit(tmp: Path):
     paths = _write_synthetic_release_scope(repo)
 
     # Add a new file that Step 7 "touched" but never staged
-    new_path = repo / "docs/project-management/kanban/new-kanban-file.md"
+    new_path = repo / "docs/kanban/new-kanban-file.md"
     new_path.write_text("# new\n")
     paths["new_file"] = str(new_path.resolve())
 
@@ -297,7 +297,7 @@ def test_fail_when_touched_path_never_existed(tmp: Path):
     _git(["add", paths["kboard"]], repo)
 
     # Report claims a path that was never created
-    ghost_path = str((repo / "docs/project-management/kanban/ghost.md").resolve())
+    ghost_path = str((repo / "docs/kanban/ghost.md").resolve())
     report = _write_four_surface_report(repo, paths)
     data = json.loads(report.read_text())
     data["surfaces"]["ghost"] = {

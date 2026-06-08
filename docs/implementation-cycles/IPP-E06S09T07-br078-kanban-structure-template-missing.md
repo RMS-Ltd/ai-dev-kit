@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # E06:S09:T07 — Planning: Spec, Tests, Implementation Plan (IPW)
 
-**Host Task:** [`T07-kanban-fresh-install-structure-template-missing-br078.md`](../project-management/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T07-kanban-fresh-install-structure-template-missing-br078.md) **(E06:S09:T07)**  
-**Planning for:** [BR-078](../project-management/kanban/fr-br/BR-078-kanban-fresh-install-structure-template-missing.md) · [GitHub #10](https://github.com/RMS-Ltd/ai-dev-kit/issues/10)  
+**Host Task:** [`T07-kanban-fresh-install-structure-template-missing-br078.md`](../kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T07-kanban-fresh-install-structure-template-missing-br078.md) **(E06:S09:T07)**  
+**Planning for:** [BR-078](../kanban/fr-br/BR-078-kanban-fresh-install-structure-template-missing.md) · [GitHub #10](https://github.com/RMS-Ltd/ai-dev-kit/issues/10)  
 **Status:** Implemented (2026-06-03 — pending user verification / RW)
 
 > **IPW:** Produced 2026-06-03 in plan mode. Wire task `Input` / `References` before implementation (`FR-042` / `FR-083`).
@@ -136,5 +136,5 @@ Greenfield kanban installs copy a canonical **kanban structure** document from a
 
 ## References
 
-- [BR-078](../project-management/kanban/fr-br/BR-078-kanban-fresh-install-structure-template-missing.md)
-- [BR-080](../project-management/kanban/fr-br/BR-080-kanban-fresh-mode-validation-requires-force-on-empty-repo.md) (related dry-run)
+- [BR-078](../kanban/fr-br/BR-078-kanban-fresh-install-structure-template-missing.md)
+- [BR-080](../kanban/fr-br/BR-080-kanban-fresh-mode-validation-requires-force-on-empty-repo.md) (related dry-run)

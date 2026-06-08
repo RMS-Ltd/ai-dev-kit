@@ -143,10 +143,10 @@ def classify_moscow(task: Dict) -> str:
 def scan_all_tasks(config: Optional[Dict] = None) -> List[Dict]:
     """Scan all task documents and extract metadata."""
     if config and config.get('use_kanban'):
-        kanban_root = Path(config.get('kanban_root', 'docs/project-management/kanban'))
+        kanban_root = Path(config.get('kanban_root', 'docs/kanban'))
         config.get('task_doc_pattern', 'epics/Epic-{epic}/Story-{story}/T{task}-*.md')
     else:
-        kanban_root = Path('docs/project-management/kanban')
+        kanban_root = Path('docs/kanban')
     
     tasks = []
     

@@ -8,7 +8,7 @@ housekeeping_policy: keep
 
 # E10:S01:T01 — Planning: Expectations Baseline for Document Lifecycle Package (IPW)
 
-**Host Task:** [`T01-establish-expectations-baseline-for-document-lifecycle-packa.md`](../project-management/kanban/epics/epic-10/story-01-document-lifecycle-package-implementation-review/T01-establish-expectations-baseline-for-document-lifecycle-packa.md) **(E10:S01:T01)**  
+**Host Task:** [`T01-establish-expectations-baseline-for-document-lifecycle-packa.md`](../kanban/epics/epic-10/story-01-document-lifecycle-package-implementation-review/T01-establish-expectations-baseline-for-document-lifecycle-packa.md) **(E10:S01:T01)**  
 **Planning for:** [E10S01 orchestration plan](./E10S01-orchestration-plan.md) · Story E10:S01 RC readiness review  
 **Status:** Draft — IPW complete; awaiting user authorization for implementation  
 **Branch:** `epic/10-doc-lifecycle-framework`
@@ -154,10 +154,10 @@ Task doc holds executive summary + links; companion holds full baseline body (E0
 
 | Action | Path |
 | ------ | ---- |
-| CREATE | `docs/project-management/kanban/epics/epic-10/story-01-document-lifecycle-package-implementation-review/expectations-baseline.md` |
-| UPDATE | `docs/project-management/kanban/epics/epic-10/story-01-document-lifecycle-package-implementation-review/T01-establish-expectations-baseline-for-document-lifecycle-packa.md` |
-| UPDATE | `docs/project-management/kanban/epics/epic-10/story-01-document-lifecycle-package-implementation-review.md` (checklist narrative) |
-| UPDATE (RW Step 7) | `docs/project-management/kanban/kboard.md` — T01 row status/version |
+| CREATE | `docs/kanban/epics/epic-10/story-01-document-lifecycle-package-implementation-review/expectations-baseline.md` |
+| UPDATE | `docs/kanban/epics/epic-10/story-01-document-lifecycle-package-implementation-review/T01-establish-expectations-baseline-for-document-lifecycle-packa.md` |
+| UPDATE | `docs/kanban/epics/epic-10/story-01-document-lifecycle-package-implementation-review.md` (checklist narrative) |
+| UPDATE (RW Step 7) | `docs/kanban/kboard.md` — T01 row status/version |
 | EXISTS | `docs/implementation-cycles/IPP-E10S01T01-expectations-baseline-doc-lifecycle.md` (this file) |
 
 ### 4.2 Dependency order
@@ -209,10 +209,10 @@ Task doc holds executive summary + links; companion holds full baseline body (E0
 | Doc ID | Canonical path | Publication status | Publication N/A reason | Lifecycle | Inbound links to add |
 | ------ | -------------- | ------------------ | ---------------------- | --------- | -------------------- |
 | D-C2 | `docs/implementation-cycles/IPP-E10S01T01-expectations-baseline-doc-lifecycle.md` | NOT_APPLICABLE | Internal planning artefact | evergreen | T01 Input/References |
-| D-C1 | `docs/project-management/kanban/epics/epic-10/story-01-document-lifecycle-package-implementation-review/expectations-baseline.md` | NOT_APPLICABLE | Kanban story artefact | evergreen | T01 Deliverable/References; T02 Input |
+| D-C1 | `docs/kanban/epics/epic-10/story-01-document-lifecycle-package-implementation-review/expectations-baseline.md` | NOT_APPLICABLE | Kanban story artefact | evergreen | T01 Deliverable/References; T02 Input |
 | D-U1 | `.../T01-establish-expectations-baseline-for-document-lifecycle-packa.md` | NOT_APPLICABLE | Kanban task doc | evergreen | Story checklist; kboard |
 | D-U2 | `.../story-01-document-lifecycle-package-implementation-review.md` | NOT_APPLICABLE | Story doc | evergreen | Epic-10.md |
-| D-U3 | `docs/project-management/kanban/kboard.md` | NOT_APPLICABLE | Active board | evergreen | — |
+| D-U3 | `docs/kanban/kboard.md` | NOT_APPLICABLE | Active board | evergreen | — |
 
 **Housing rules:** One authoritative baseline per package review (companion D-C1). IPP remains under `docs/implementation-cycles/`. T02+ cite D-C1 as expectations SoT.
 
@@ -234,14 +234,14 @@ Task doc holds executive summary + links; companion holds full baseline body (E0
 ## References
 
 - [E10S01 orchestration plan](./E10S01-orchestration-plan.md)
-- [T01 task doc](../project-management/kanban/epics/epic-10/story-01-document-lifecycle-package-implementation-review/T01-establish-expectations-baseline-for-document-lifecycle-packa.md)
-- [Story E10:S01](../project-management/kanban/epics/epic-10/story-01-document-lifecycle-package-implementation-review.md)
-- [E02:S13:T01 precedent — expectations baseline](../project-management/kanban/epics/epic-02/story-13-workflow-management-package-implementation-review/T01-expectations-baseline.md)
+- [T01 task doc](../kanban/epics/epic-10/story-01-document-lifecycle-package-implementation-review/T01-establish-expectations-baseline-for-document-lifecycle-packa.md)
+- [Story E10:S01](../kanban/epics/epic-10/story-01-document-lifecycle-package-implementation-review.md)
+- [E02:S13:T01 precedent — expectations baseline](../kanban/epics/epic-02/story-13-workflow-management-package-implementation-review/T01-expectations-baseline.md)
 - Package root: `packages/frameworks/doc-lifecycle/`
 - Adopter mirror: `greenfield-install/packages/frameworks/doc-lifecycle/`
-- [FR-042 — IPW](../project-management/kanban/fr-br/FR-042-implementation-planning-workflow-ipw.md)
-- [FR-094 — IPW task state mandate](../project-management/kanban/fr-br/FR-094-ipw-slash-command-and-task-state-transition-mandate.md)
-- [FR-100 — ADR necessity checklist](../project-management/kanban/fr-br/FR-100-ipw-adr-necessity-checklist-and-decision-gate.md)
+- [FR-042 — IPW](../kanban/fr-br/FR-042-implementation-planning-workflow-ipw.md)
+- [FR-094 — IPW task state mandate](../kanban/fr-br/FR-094-ipw-slash-command-and-task-state-transition-mandate.md)
+- [FR-100 — ADR necessity checklist](../kanban/fr-br/FR-100-ipw-adr-necessity-checklist-and-decision-gate.md)
 - [ipw-adr-necessity-checklist.md](../architecture/standards-and-adrs/ipw-adr-necessity-checklist.md)
 - [dev-kit-ipw-ipp-vs-icw-artifacts.md](../governance/standards/dev-kit-ipw-ipp-vs-icw-artifacts.md)
 - `.claude/commands/ipw.md`

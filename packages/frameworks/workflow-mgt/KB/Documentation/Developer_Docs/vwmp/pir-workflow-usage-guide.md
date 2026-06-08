@@ -111,7 +111,7 @@ This guide provides practical, user-friendly instructions for using the Post-Imp
 **Step 1: Identify Review Scope**
 ```bash
 # Read Epic document
-Epic: docs/project-management/kanban/epics/epic-02/epic-02.md
+Epic: docs/kanban/epics/epic-02/epic-02.md
 Status: COMPLETE ✅
 Review Level: Epic
 ```
@@ -240,7 +240,7 @@ Epic 2 successfully delivered the Workflow Management Framework...
 ```markdown
 ## Related Work
 
-- **Epic:** [Epic 2 Documentation](../../project-management/kanban/epics/epic-02/epic-02.md) (v0.2.11.9+3)
+- **Epic:** [Epic 2 Documentation](../../kanban/epics/epic-02/epic-02.md) (v0.2.11.9+3)
 - **Stories:** [Links to all stories with versions]
 - **Version Range:** v0.2.1.1+1 to v0.2.11.9+3
 ```
@@ -255,7 +255,7 @@ Epic 2 successfully delivered the Workflow Management Framework...
 
 **Step 1: Identify Review Scope**
 ```bash
-Story: docs/project-management/kanban/epics/epic-02/story-05-*.md
+Story: docs/kanban/epics/epic-02/story-05-*.md
 Status: COMPLETE ✅
 Review Level: Story
 ```

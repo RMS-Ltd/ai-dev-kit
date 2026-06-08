@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # E04:S19:T09 — Planning: Spec, Tests, Implementation Plan (IPP)
 
-**Host Task:** [`T09-two-digit-est-identifier-default-formatting-uxr014.md`](../project-management/kanban/epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T09-two-digit-est-identifier-default-formatting-uxr014.md) **(E04:S19:T09)**  
-**Planning for:** [UXR-014 — Two-digit default formatting for E/S/T identifiers](../project-management/kanban/fr-br/UXR-014-two-digit-est-identifier-default-formatting.md)  
+**Host Task:** [`T09-two-digit-est-identifier-default-formatting-uxr014.md`](../kanban/epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T09-two-digit-est-identifier-default-formatting-uxr014.md) **(E04:S19:T09)**  
+**Planning for:** [UXR-014 — Two-digit default formatting for E/S/T identifiers](../kanban/fr-br/UXR-014-two-digit-est-identifier-default-formatting.md)  
 **Status:** Published
 
 > **IPW (Implementation Planning Workflow):** Produced by IPW for E4:S19:T09. Bidirectional wiring to the host task `Input` and `References` is confirmed.
@@ -28,7 +28,7 @@ housekeeping_policy: keep
 | RF4 | Compact trigger tokens (`E02S16T04`) follow same padding on write | UXR-014 Finding 2 |
 | RF5 | `kanban-board-guide.md` documents write-default vs read-tolerance | UXR-014 R3, AC2 |
 | RF6 | UKW, RW Step 7, intake agents emit padded form on new/edited references | UXR-014 R2, AC4 |
-| RF7 | Full corpus normalization under `docs/project-management/kanban/` | User scope + AC3 |
+| RF7 | Full corpus normalization under `docs/kanban/` | User scope + AC3 |
 | RF8 | Packaged framework templates aligned to padded examples | UXR-014 R4/R5 |
 | RF9 | UXR-014 → `ACCEPTED` when AC1–AC4 satisfied | AC5 |
 
@@ -119,7 +119,7 @@ RF1–RF4 define the formatter contract. RF5–RF6 require policy and workflow s
 | 5 | Update task-naming-migration-guide examples | RF8 |
 | 6 | Update `.cursorrules`, intake skill, workflow KB | AC4 |
 | 7 | Wire formatter into `update_kanban_docs.py` | RF6 |
-| 8 | Full corpus sweep `docs/project-management/kanban/**` | AC3 |
+| 8 | Full corpus sweep `docs/kanban/**` | AC3 |
 | 9 | Template sweep `packages/frameworks/kanban/templates/**` | RF8 |
 | 10 | Add `validate_est_inline_format.py` (non-blocking) | UXR-014 R3 |
 | 11 | UXR-014 → ACCEPTED; verify AC1–AC5 | RF9 |
@@ -133,10 +133,10 @@ RF1–RF4 define the formatter contract. RF5–RF6 require policy and workflow s
 - `packages/frameworks/workflow-mgt/scripts/validation/validate_est_inline_format.py`
 - `packages/frameworks/workflow-mgt/scripts/update_kanban_docs.py`
 - `packages/frameworks/kanban/policies/kanban-governance-policy.md`
-- `docs/project-management/kanban/kanban-board-guide.md`
+- `docs/kanban/kanban-board-guide.md`
 - `docs/architecture/standards-and-adrs/task-naming-migration-guide.md`
 - `.cursorrules`, `.cursor/skills/intake-process/SKILL.md`
-- `docs/project-management/kanban/**` (corpus sweep)
+- `docs/kanban/**` (corpus sweep)
 - `packages/frameworks/kanban/templates/**`
 
 ### 4.2 Dependency order
@@ -154,12 +154,12 @@ RF1–RF4 define the formatter contract. RF5–RF6 require policy and workflow s
 | Doc ID | Path | Scope | Tied to |
 | ------ | ---- | ----- | ------- |
 | D-U1 | `packages/frameworks/kanban/policies/kanban-governance-policy.md` | E/S/T write-default | RF1, AC1 |
-| D-U2 | `docs/project-management/kanban/kanban-board-guide.md` | Notation section | AC2 |
+| D-U2 | `docs/kanban/kanban-board-guide.md` | Notation section | AC2 |
 | D-U3 | `docs/architecture/standards-and-adrs/task-naming-migration-guide.md` | Padded examples | RF8 |
 | D-U4 | `.cursorrules` | Trigger examples | AC4 |
 | D-U5 | `.cursor/skills/intake-process/SKILL.md` | Format examples | AC4 |
 | D-U6 | `update_kanban_docs.py` | Formatter integration | RF6 |
-| D-U7 | `docs/project-management/kanban/**` | Corpus normalization | AC3 |
+| D-U7 | `docs/kanban/**` | Corpus normalization | AC3 |
 | D-U8 | `packages/frameworks/kanban/templates/**` | Example callouts | RF8 |
 | D-U9 | UXR-014 + T09 task docs | ACCEPTED + IPP link | RF9 |
 
@@ -205,7 +205,7 @@ RF1–RF4 define the formatter contract. RF5–RF6 require policy and workflow s
 
 ## References
 
-- [Host task E4:S19:T09](../project-management/kanban/epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T09-two-digit-est-identifier-default-formatting-uxr014.md)
-- [UXR-014](../project-management/kanban/fr-br/UXR-014-two-digit-est-identifier-default-formatting.md)
+- [Host task E4:S19:T09](../kanban/epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T09-two-digit-est-identifier-default-formatting-uxr014.md)
+- [UXR-014](../kanban/fr-br/UXR-014-two-digit-est-identifier-default-formatting.md)
 - [task-naming-migration-guide.md](../architecture/standards-and-adrs/task-naming-migration-guide.md)
 - [kanban-governance-policy.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/kanban/policies/kanban-governance-policy.md)

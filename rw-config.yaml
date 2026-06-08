@@ -19,12 +19,12 @@ changelog_archival:
 use_kanban: true
 
 # Kanban paths (relative to kanban_root)
-kanban_root: docs/project-management/kanban
+kanban_root: docs/kanban
 epic_doc_pattern: epics/epic-{epic:02d}/epic-{epic:02d}.md
 story_doc_pattern: epics/epic-{epic:02d}/story-{story:02d}-*.md
 task_doc_pattern: epics/epic-{epic:02d}/story-{story:02d}-*/T{task:02d}-*.md
 kanban_board: kboard.md
-fr_br_root: docs/project-management/kanban/fr-br
+fr_br_root: docs/kanban/fr-br
 
 # Use dev-kit versioning schema
 versioning_schema: RC.EPIC.STORY.TASK+BUILD
@@ -51,7 +51,7 @@ release_metadata_store:
 
 ingest:
   enabled: true
-  semver_registry_file: semver-registry.yaml
+  semver_registry_file: docs/changelog-and-release-notes/changelog-archive/semver-registry-legacy-final.yaml
   incremental: true
 
 # SemVer mapping strategy: "registry" (default) or "task_touch"
@@ -59,8 +59,8 @@ ingest:
 # task_touch: ADR-002 task-touch derived mapping (strictly monotonic)
 semver_mapping_strategy: task_touch
 
-# Release-state backend (E02:S17:T04): legacy = semver-registry.yaml; sqlite = .adk/release-state.db
-release_state_backend: legacy
+# Release-state backend (E02:S17:T04/T07): legacy = semver-registry.yaml; sqlite = .adk/release-state.db
+release_state_backend: sqlite
 release_state_db: .adk/release-state.db
 
 # Versioning mode policy:

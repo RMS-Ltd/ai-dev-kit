@@ -3,7 +3,7 @@ BR-093 / E5:S09:T14: Docusaurus CI build/deploy deduplication contract.
 
 Executable spec T1–T4 from IPP-E05S09T14.
 
-See: docs/project-management/kanban/fr-br/BR-093-docusaurus-ci-duplicate-build-deploy-job-waste.md
+See: docs/kanban/fr-br/BR-093-docusaurus-ci-duplicate-build-deploy-job-waste.md
 """
 
 from __future__ import annotations

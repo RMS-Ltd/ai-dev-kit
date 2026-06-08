@@ -8,7 +8,7 @@
 
 ## Summary
 
-E02:S16:T22 — **Change implemented:** Implementation Delivery Workflow (IDW) — canonical `/idw` command, KB guide, workflow registry package, agent routing (`CLAUDE.md`, `.cursorrules`, `AGENTS.md`, manifest), cheatsheet §4b; optional lowercase `--rw` chain to local-complete RW after `IDW COMPLETE`. FR-118 filed and wired. SemVer **v0.4.1063+1**.
+E02:S16:T22 — **Change implemented:** Implementation Delivery Workflow (IDW) — canonical `/idw` command, KB guide, workflow registry package, agent routing (`CLAUDE.md`, `.cursorrules`, `AGENTS.md`, manifest), cheatsheet §4b; optional lowercase `--rw` chain to local-complete RW after `IDW COMPLETE`. FR-119 filed and wired. SemVer **v0.4.1063+1**.
 
 ---
 
@@ -29,6 +29,6 @@ E02:S16:T22 — **Change implemented:** Implementation Delivery Workflow (IDW) �
 
 ### References
 
-- [T22](../../project-management/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T22-implementation-delivery-workflow-idw-fr118.md)
-- [FR-118](../../project-management/kanban/fr-br/FR-118-implementation-delivery-workflow-idw.md)
+- [T22](../../kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T22-implementation-delivery-workflow-idw-fr118.md)
+- [FR-118](../../kanban/fr-br/FR-119-implementation-delivery-workflow-idw.md)
 - [IPP-E02S16T22](../../implementation-cycles/IPP-E02S16T22-implementation-delivery-workflow-idw-fr118.md)

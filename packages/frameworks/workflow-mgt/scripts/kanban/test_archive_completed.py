@@ -26,7 +26,7 @@ def test_perpetual_task_not_archivable():
     mod = _load_module()
     with tempfile.TemporaryDirectory() as tmp:
         root = Path(tmp)
-        kanban = root / "docs/project-management/kanban"
+        kanban = root / "docs/kanban"
         kanban.mkdir(parents=True)
         task = kanban / "epics/epic-02/Story-016/T04-perpetual.md"
         task.parent.mkdir(parents=True)
@@ -48,7 +48,7 @@ def test_complete_task_archivable():
     mod = _load_module()
     with tempfile.TemporaryDirectory() as tmp:
         root = Path(tmp)
-        kanban = root / "docs/project-management/kanban"
+        kanban = root / "docs/kanban"
         kanban.mkdir(parents=True)
         task = kanban / "epics/epic-02/Story-016/T15-done.md"
         task.parent.mkdir(parents=True)

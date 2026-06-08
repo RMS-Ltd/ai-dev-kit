@@ -22,7 +22,7 @@ def empty_project(tmp_path: Path) -> Path:
 
 def test_fresh_install_on_empty_repo_without_force(empty_project: Path) -> None:
     """T1: --mode fresh succeeds without --force when epics/ is absent."""
-    kanban_rel = "docs/project-management/kanban"
+    kanban_rel = "docs/kanban"
     cmd = [
         sys.executable,
         str(INSTALL_SCRIPT),
@@ -51,7 +51,7 @@ def test_migration_mode_still_requires_epics_dir(empty_project: Path) -> None:
     sys.path.insert(0, str(SCRIPTS_DIR))
     from validate_installation import InstallationValidator  # noqa: E402
 
-    kanban_path = empty_project / "docs/project-management/kanban"
+    kanban_path = empty_project / "docs/kanban"
     kanban_path.mkdir(parents=True)
     validator = InstallationValidator(kanban_path, empty_project)
     is_valid, errors, _warnings = validator.validate_all()
@@ -65,7 +65,7 @@ def test_fresh_dry_run_allows_missing_epics_with_warning(empty_project: Path) ->
     sys.path.insert(0, str(SCRIPTS_DIR))
     from validate_installation import InstallationValidator  # noqa: E402
 
-    kanban_path = empty_project / "docs/project-management/kanban"
+    kanban_path = empty_project / "docs/kanban"
     validator = InstallationValidator(kanban_path, empty_project)
     is_valid, errors, warnings = validator.validate_all(allow_missing_empty_skeleton=True)
     assert is_valid
@@ -82,7 +82,7 @@ def test_fresh_cli_stderr_has_no_raw_epics_error_without_hint(empty_project: Pat
         "fresh",
         "--dry-run",
         "--kanban-path",
-        "docs/project-management/kanban",
+        "docs/kanban",
     ]
     env = {**dict(subprocess.os.environ), "PYTHONPATH": str(SCRIPTS_DIR)}
     result = subprocess.run(

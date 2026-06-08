@@ -13,7 +13,7 @@ defaults:
   changelog_dir: "docs/changelog-and-release-notes/changelog-archive"
   main_changelog: "CHANGELOG.md"
   readme_file: "README.md"
-  kanban_root: "docs/project-management/kanban"
+  kanban_root: "docs/kanban"
   scripts_path: "packages/frameworks/workflow-mgt/scripts/validation"
 
 # Execution paths for different trigger types

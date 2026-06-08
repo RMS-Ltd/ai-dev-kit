@@ -19,7 +19,7 @@ paths:
   templates_dir: ../../../templates/icw
   output_dir: ../../../../docs/implementation-cycles
   scripts_dir: ../../../scripts/icw
-  kanban_root: ../../../../docs/project-management/kanban
+  kanban_root: ../../../../docs/kanban
   workflow_registry: ../workflow-registry.yaml
 
 # Template configurations

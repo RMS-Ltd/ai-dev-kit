@@ -50,7 +50,7 @@ def kanban_epics_glob(project_root: Path, config: Optional[Dict]) -> List[Path]:
     if config and config.get("use_kanban") and config.get("kanban_root"):
         kr = Path(config["kanban_root"])
         roots.append(project_root / kr if not kr.is_absolute() else kr)
-    roots.append(project_root / "docs/project-management/kanban")
+    roots.append(project_root / "docs/kanban")
     seen = set()
     out: List[Path] = []
     for r in roots:

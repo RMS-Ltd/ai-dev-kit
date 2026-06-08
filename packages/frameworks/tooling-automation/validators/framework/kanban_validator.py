@@ -81,7 +81,7 @@ class KanbanValidator(BaseValidator):
             self.kanban_root = self.config.project_root / self.config_dict['kanban_root']
         else:
             # Default fallback
-            self.kanban_root = self.config.project_root / "docs/project-management/kanban"
+            self.kanban_root = self.config.project_root / "docs/kanban"
         
         if not self.kanban_root.exists():
             self.result.issues.append(ValidationIssue(

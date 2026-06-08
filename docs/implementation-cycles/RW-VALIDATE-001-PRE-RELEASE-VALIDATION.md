@@ -9,4 +9,4 @@ notion_sot: true
 
 **SoT:** Notion Engineering KB — [Rw Validate 001 Pre Release Validation](https://www.notion.so/14fab73b9438858037dbcdf5a0f8666a)
 
-> Migrated from `docs/implementation-cycles/RW-VALIDATE-001-PRE-RELEASE-VALIDATION.md` per [FR-114](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/project-management/kanban/fr-br/FR-114-split-documentation-surfaces-docusaurus-public-notion-maintainer-kb.md). Full content lives in Notion.
+> Migrated from `docs/implementation-cycles/RW-VALIDATE-001-PRE-RELEASE-VALIDATION.md` per [FR-114](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/kanban/fr-br/FR-114-split-documentation-surfaces-docusaurus-public-notion-maintainer-kb.md). Full content lives in Notion.

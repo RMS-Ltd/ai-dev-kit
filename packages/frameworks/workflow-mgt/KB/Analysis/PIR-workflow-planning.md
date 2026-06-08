@@ -366,7 +366,7 @@ steps:
     dependencies: []
     config:
       review_level: ${config.review_level}
-      kanban_path: docs/project-management/kanban
+      kanban_path: docs/kanban
 
   - id: step-2
     name: Gather Review Materials

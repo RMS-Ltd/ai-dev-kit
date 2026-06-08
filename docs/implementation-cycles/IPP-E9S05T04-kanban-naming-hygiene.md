@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # E9:S05:T04 — Planning: Kanban Naming Hygiene and Directory Systematic Cleanup (UXR-011)
 
-**Host Task:** [`T04-kanban-naming-hygiene-and-directory-systematic-cleanup-uxr011.md`](../project-management/kanban/epics/epic-09/story-05-canonical-est-review-and-refinement/T04-kanban-naming-hygiene-and-directory-systematic-cleanup-uxr011.md) **(E9:S05:T04)**
-**Planning for:** [UXR-011](../project-management/kanban/fr-br/UXR-011-kanban-naming-hygiene-and-directory-systematic-cleanup.md)
+**Host Task:** [`T04-kanban-naming-hygiene-and-directory-systematic-cleanup-uxr011.md`](../kanban/epics/epic-09/story-05-canonical-est-review-and-refinement/T04-kanban-naming-hygiene-and-directory-systematic-cleanup-uxr011.md) **(E9:S05:T04)**
+**Planning for:** [UXR-011](../kanban/fr-br/UXR-011-kanban-naming-hygiene-and-directory-systematic-cleanup.md)
 **Status:** COMPLETE
 **Completed:** 2026-05-18
 **Version:** v0.9.5.4+1
@@ -46,7 +46,7 @@ housekeeping_policy: keep
 ### 1.3 Invariants and boundaries
 
 - **Invariants:** Epic directory structure (`Epic-X/Story-NNN-*.md` + `Epic-X/Story-NNN-slug/`) must remain valid.
-- **In scope:** `docs/project-management/kanban/epics/` tree, board docs (`kboard.md`), governance policy, regression script.
+- **In scope:** `docs/kanban/epics/` tree, board docs (`kboard.md`), governance policy, regression script.
 - **Out of scope:** Cross-epic story name collisions (epic-09 vs epic-24 book stories) — these are semantically acceptable. Fixing pre-existing dangling links in `CHANGELOG_ARCHIVE.md` (12 links) — tracked separately.
 - **Boundary:** Epic-owner input required for Epics 5, 6, 7 duplicate story reconciliation. Plan includes deferred decision points for these.
 
@@ -56,7 +56,7 @@ housekeeping_policy: keep
 
 ### 2.1 Goal
 
-Bring the entire `docs/project-management/kanban/epics/` directory tree into compliance with the current canonical naming policy: all tasks use Txx (2-digit, zero-padded), all stories use Story-NNN (3-digit, zero-padded), no duplicate files per story/task number within an epic, no orphaned directories, and all internal references updated. A regression validator ensures the tree stays clean.
+Bring the entire `docs/kanban/epics/` directory tree into compliance with the current canonical naming policy: all tasks use Txx (2-digit, zero-padded), all stories use Story-NNN (3-digit, zero-padded), no duplicate files per story/task number within an epic, no orphaned directories, and all internal references updated. A regression validator ensures the tree stays clean.
 
 ### 2.2 Specification mapping
 
@@ -161,9 +161,9 @@ Bring the entire `docs/project-management/kanban/epics/` directory tree into com
 
 ## References
 
-- [E9:S05:T04 Host Task](../project-management/kanban/epics/epic-09/story-05-canonical-est-review-and-refinement/T04-kanban-naming-hygiene-and-directory-systematic-cleanup-uxr011.md)
-- [UXR-011](../project-management/kanban/fr-br/UXR-011-kanban-naming-hygiene-and-directory-systematic-cleanup.md)
-- [E2:S02:T007](../project-management/kanban/epics/epic-02/story-02-pdca-integration-into-release-workflow/T07-implement-task-naming-change.md)
-- [E2:S02:T008](../project-management/kanban/epics/epic-02/story-02-pdca-integration-into-release-workflow/T08-update-kanban-docs-to-txx-standard.md)
+- [E9:S05:T04 Host Task](../kanban/epics/epic-09/story-05-canonical-est-review-and-refinement/T04-kanban-naming-hygiene-and-directory-systematic-cleanup-uxr011.md)
+- [UXR-011](../kanban/fr-br/UXR-011-kanban-naming-hygiene-and-directory-systematic-cleanup.md)
+- [E2:S02:T007](../kanban/epics/epic-02/story-02-pdca-integration-into-release-workflow/T07-implement-task-naming-change.md)
+- [E2:S02:T008](../kanban/epics/epic-02/story-02-pdca-integration-into-release-workflow/T08-update-kanban-docs-to-txx-standard.md)
 - [kanban-governance-policy](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/kanban/policies/kanban-governance-policy.md)
-- [FR-042](../project-management/kanban/fr-br/FR-042-implementation-planning-workflow-ipw.md)
+- [FR-042](../kanban/fr-br/FR-042-implementation-planning-workflow-ipw.md)

@@ -24,7 +24,7 @@ class TestICTaskIdentifierValidation(TestCase):
         # Mock config for testing
         self.handler.config = {
             'paths': {
-                'kanban_root': 'docs/project-management/kanban'
+                'kanban_root': 'docs/kanban'
             }
         }
     
@@ -139,7 +139,7 @@ class TestICWPlanningModeWithTask(TestCase):
         # Mock config for testing
         self.handler.config = {
             'paths': {
-                'kanban_root': 'docs/project-management/kanban'
+                'kanban_root': 'docs/kanban'
             }
         }
     
@@ -190,7 +190,7 @@ class TestICWInitializeWithTask(TestCase):
         # Mock config for testing
         self.handler.config = {
             'paths': {
-                'kanban_root': 'docs/project-management/kanban'
+                'kanban_root': 'docs/kanban'
             }
         }
     

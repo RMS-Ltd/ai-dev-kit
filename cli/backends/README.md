@@ -90,5 +90,5 @@ All backends must:
 
 - **Design:** `docs/architecture/standards-and-adrs/framework-update-cli-design.md`
 - **Architecture:** `docs/architecture/standards-and-adrs/framework-dependency-architecture.md`
-- **Story:** `docs/project-management/kanban/epics/Epic-6/Story-007-ai-dev-kit-cli-tool.md`
+- **Story:** `docs/kanban/epics/Epic-6/Story-007-ai-dev-kit-cli-tool.md`
 

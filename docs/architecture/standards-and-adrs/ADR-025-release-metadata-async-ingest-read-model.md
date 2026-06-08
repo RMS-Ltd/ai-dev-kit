@@ -11,7 +11,7 @@ housekeeping_policy: keep
 **Status:** Accepted  
 **Date:** 2026-06-07  
 **Deciders:** Operator + implementation planning (IPP-E02S01T25)  
-**Related:** [FR-115](../../project-management/kanban/fr-br/FR-115-changelog-structured-store-database-backed-cmw.md), [FR-116](../../project-management/kanban/fr-br/FR-116-semver-registry-structured-store-shared-release-metadata.md), [ADR-002](ADR-002-task-touch-derived-mapping.md)
+**Related:** [FR-115](../../kanban/fr-br/FR-115-changelog-structured-store-database-backed-cmw.md), [FR-116](../../kanban/fr-br/FR-116-semver-registry-structured-store-shared-release-metadata.md), [ADR-002](ADR-002-task-touch-derived-mapping.md)
 
 ---
 

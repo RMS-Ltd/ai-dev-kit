@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # E10:S01:T02 — Planning: Inventory Package Components and Map to Expectations (IPW)
 
-**Host Task:** [`T02-inventory-package-components-and-map-to-expectations.md`](../project-management/kanban/epics/epic-10/story-01-document-lifecycle-package-implementation-review/T02-inventory-package-components-and-map-to-expectations.md) **(E10:S01:T02)**  
-**Planning for:** [T01 expectations baseline](../project-management/kanban/epics/epic-10/story-01-document-lifecycle-package-implementation-review/expectations-baseline.md) *(planned companion — see Blockers)* · [E10S01 orchestration plan](./E10S01-orchestration-plan.md) §7.4 T02  
+**Host Task:** [`T02-inventory-package-components-and-map-to-expectations.md`](../kanban/epics/epic-10/story-01-document-lifecycle-package-implementation-review/T02-inventory-package-components-and-map-to-expectations.md) **(E10:S01:T02)**  
+**Planning for:** [T01 expectations baseline](../kanban/epics/epic-10/story-01-document-lifecycle-package-implementation-review/expectations-baseline.md) *(planned companion — see Blockers)* · [E10S01 orchestration plan](./E10S01-orchestration-plan.md) §7.4 T02  
 **Status:** Implemented — companion + task doc published; RW v0.10.1.2+1  
 **Branch:** `epic/10-doc-lifecycle-framework`
 
@@ -156,11 +156,11 @@ Task doc holds condensed gap summary + AC checkboxes; companion holds detailed t
 
 | Action | Path |
 | ------ | ---- |
-| CREATE | `docs/project-management/kanban/epics/epic-10/story-01-document-lifecycle-package-implementation-review/component-inventory-map.md` |
-| UPDATE | `docs/project-management/kanban/epics/epic-10/story-01-document-lifecycle-package-implementation-review/T02-inventory-package-components-and-map-to-expectations.md` |
-| UPDATE | `docs/project-management/kanban/epics/epic-10/story-01-document-lifecycle-package-implementation-review.md` (checklist on COMPLETE) |
-| UPDATE (optional) | `docs/project-management/kanban/epics/epic-10/story-01-document-lifecycle-package-implementation-review/expectations-baseline.md` — inventory pointer footnote |
-| UPDATE (RW Step 7) | `docs/project-management/kanban/kboard.md` — T02 row status/version |
+| CREATE | `docs/kanban/epics/epic-10/story-01-document-lifecycle-package-implementation-review/component-inventory-map.md` |
+| UPDATE | `docs/kanban/epics/epic-10/story-01-document-lifecycle-package-implementation-review/T02-inventory-package-components-and-map-to-expectations.md` |
+| UPDATE | `docs/kanban/epics/epic-10/story-01-document-lifecycle-package-implementation-review.md` (checklist on COMPLETE) |
+| UPDATE (optional) | `docs/kanban/epics/epic-10/story-01-document-lifecycle-package-implementation-review/expectations-baseline.md` — inventory pointer footnote |
+| UPDATE (RW Step 7) | `docs/kanban/kboard.md` — T02 row status/version |
 | EXISTS | `docs/implementation-cycles/IPP-E10S01T02-component-inventory-map.md` (this file) |
 
 ### 4.2 Dependency order
@@ -220,10 +220,10 @@ Task doc holds condensed gap summary + AC checkboxes; companion holds detailed t
 | Doc ID | Canonical path | Publication status | Publication N/A reason | Lifecycle | Inbound links to add |
 | ------ | -------------- | ------------------ | ---------------------- | --------- | -------------------- |
 | D-C2 | `docs/implementation-cycles/IPP-E10S01T02-component-inventory-map.md` | NOT_APPLICABLE | Internal planning artefact | evergreen | T02 Input/References |
-| D-C1 | `docs/project-management/kanban/epics/epic-10/story-01-document-lifecycle-package-implementation-review/component-inventory-map.md` | NOT_APPLICABLE | Kanban story artefact | evergreen | T02 Deliverable; T05 Input |
+| D-C1 | `docs/kanban/epics/epic-10/story-01-document-lifecycle-package-implementation-review/component-inventory-map.md` | NOT_APPLICABLE | Kanban story artefact | evergreen | T02 Deliverable; T05 Input |
 | D-U1 | `.../T02-inventory-package-components-and-map-to-expectations.md` | NOT_APPLICABLE | Kanban task doc | evergreen | Story checklist; kboard |
 | D-U2 | `.../story-01-document-lifecycle-package-implementation-review.md` | NOT_APPLICABLE | Story doc | evergreen | Epic-10.md |
-| D-U3 | `docs/project-management/kanban/kboard.md` | NOT_APPLICABLE | Active board | evergreen | — |
+| D-U3 | `docs/kanban/kboard.md` | NOT_APPLICABLE | Active board | evergreen | — |
 
 **Housing rules:** One authoritative inventory per package review (companion D-C1). IPP under `docs/implementation-cycles/`. T05 cites D-C1 gap summary as remediation input.
 
@@ -247,15 +247,15 @@ Task doc holds condensed gap summary + AC checkboxes; companion holds detailed t
 ## References
 
 - [E10S01 orchestration plan](./E10S01-orchestration-plan.md) — §3 Package snapshot, §7.4 T02, §8.5 Wave 2B
-- [T02 task doc](../project-management/kanban/epics/epic-10/story-01-document-lifecycle-package-implementation-review/T02-inventory-package-components-and-map-to-expectations.md)
+- [T02 task doc](../kanban/epics/epic-10/story-01-document-lifecycle-package-implementation-review/T02-inventory-package-components-and-map-to-expectations.md)
 - [T01 IPP](./IPP-E10S01T01-expectations-baseline-doc-lifecycle.md) — expectations SoT (companion pending)
 - [E02:S13:T02 IPP precedent](./IPP-E02S13T02-inventory-package-components-map.md)
-- [E02:S13 component inventory map precedent](../project-management/kanban/epics/epic-02/story-13-workflow-management-package-implementation-review/component-inventory-map.md)
-- [Story E10:S01](../project-management/kanban/epics/epic-10/story-01-document-lifecycle-package-implementation-review.md)
+- [E02:S13 component inventory map precedent](../kanban/epics/epic-02/story-13-workflow-management-package-implementation-review/component-inventory-map.md)
+- [Story E10:S01](../kanban/epics/epic-10/story-01-document-lifecycle-package-implementation-review.md)
 - Package root: `packages/frameworks/doc-lifecycle/`
 - Adopter mirror: `greenfield-install/packages/frameworks/doc-lifecycle/`
-- [FR-042 — IPW](../project-management/kanban/fr-br/FR-042-implementation-planning-workflow-ipw.md)
-- [FR-094 — IPW task state mandate](../project-management/kanban/fr-br/FR-094-ipw-slash-command-and-task-state-transition-mandate.md)
-- [FR-110 — greenfield-install adopter mirror](../project-management/kanban/fr-br/FR-110-lean-adopter-distribution-footprint-and-vendor-bundle.md) *(if filed)*
+- [FR-042 — IPW](../kanban/fr-br/FR-042-implementation-planning-workflow-ipw.md)
+- [FR-094 — IPW task state mandate](../kanban/fr-br/FR-094-ipw-slash-command-and-task-state-transition-mandate.md)
+- [FR-110 — greenfield-install adopter mirror](../kanban/fr-br/FR-110-lean-adopter-distribution-footprint-and-vendor-bundle.md) *(if filed)*
 - [ipw-adr-necessity-checklist.md](../architecture/standards-and-adrs/ipw-adr-necessity-checklist.md)
 - `.claude/commands/ipw.md`

@@ -132,10 +132,10 @@ The PIR workflow consists of 5 phases:
 **C.1. Read Epic/Story Document:**
 ```bash
 # Epic-level example
-Epic document: docs/project-management/kanban/epics/Epic-{N}/Epic-{N}.md
+Epic document: docs/kanban/epics/Epic-{N}/Epic-{N}.md
 
 # Story-level example
-Story document: docs/project-management/kanban/epics/Epic-{N}/Story-{N}-{name}.md
+Story document: docs/kanban/epics/Epic-{N}/Story-{N}-{name}.md
 ```
 
 **C.2. Verify Status:**
@@ -323,19 +323,19 @@ Story document: docs/project-management/kanban/epics/Epic-{N}/Story-{N}-{name}.m
 **C.1. Read Epic/Story Document:**
 ```bash
 # Epic-level
-Epic: docs/project-management/kanban/epics/Epic-{N}/Epic-{N}.md
+Epic: docs/kanban/epics/Epic-{N}/Epic-{N}.md
 
 # Story-level
-Story: docs/project-management/kanban/epics/Epic-{N}/Story-{N}-{name}.md
+Story: docs/kanban/epics/Epic-{N}/Story-{N}-{name}.md
 ```
 
 **C.2. Read Story/Task Documents:**
 ```bash
 # For Epic-level: Read all Stories
-Stories: docs/project-management/kanban/epics/Epic-{N}/Story-*.md
+Stories: docs/kanban/epics/Epic-{N}/Story-*.md
 
 # For Story-level: Read all Tasks
-Tasks: docs/project-management/kanban/epics/Epic-{N}/Story-{N}-*/Task-*.md
+Tasks: docs/kanban/epics/Epic-{N}/Story-{N}-*/Task-*.md
 ```
 
 **C.3. Read Changelog Entries:**
@@ -1156,8 +1156,8 @@ PIR Report: docs/Reviews/pir/Story-{N}/PIR-Story-{N}-v{version}.md
 - Read PIR report
 - Add/update "Related Work" section
 - Add link to Epic/Story document:
-  - Epic: `[Epic {N} Documentation](../../project-management/kanban/epics/Epic-{N}/Epic-{N}.md)`
-  - Story: `[Story {N} Documentation](../../project-management/kanban/epics/Epic-{N}/Story-{N}-{name}.md)`
+  - Epic: `[Epic {N} Documentation](../../kanban/epics/Epic-{N}/Epic-{N}.md)`
+  - Story: `[Story {N} Documentation](../../kanban/epics/Epic-{N}/Story-{N}-{name}.md)`
 - Save updated PIR report
 
 #### D. VALIDATE
@@ -1298,11 +1298,11 @@ PIR Report: docs/Reviews/pir/Story-{N}/PIR-Story-{N}-v{version}.md
 ```markdown
 ## Related Work
 
-- **Epic:** [Epic {N} Documentation](../../project-management/kanban/epics/Epic-{N}/Epic-{N}.md) (v{version})
+- **Epic:** [Epic {N} Documentation](../../kanban/epics/Epic-{N}/Epic-{N}.md) (v{version})
 - **Version Range:** {First Version} to {Last Version}
 - **Stories:**
-  - [Story {N1}](../../project-management/kanban/epics/Epic-{N}/Story-{N1}-*.md) (v{version1})
-  - [Story {N2}](../../project-management/kanban/epics/Epic-{N}/Story-{N2}-*.md) (v{version2})
+  - [Story {N1}](../../kanban/epics/Epic-{N}/Story-{N1}-*.md) (v{version1})
+  - [Story {N2}](../../kanban/epics/Epic-{N}/Story-{N2}-*.md) (v{version2})
 - **Related PIRs:** {Links to related PIR reports with versions}
 - **Follow-Up Tasks:** {Links to Kanban tasks created}
 ```

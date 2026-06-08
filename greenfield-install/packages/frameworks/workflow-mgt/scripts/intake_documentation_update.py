@@ -316,7 +316,7 @@ def main():
     # Initialize decision flow (needed for intake decision)
     from intake_decision_flow import IntakeDecisionFlow
     
-    kanban_path = Path('docs/project-management/kanban')
+    kanban_path = Path('docs/kanban')
     framework_path = Path('packages/frameworks/kanban')
     
     decision_flow = IntakeDecisionFlow(kanban_path, framework_path, config)

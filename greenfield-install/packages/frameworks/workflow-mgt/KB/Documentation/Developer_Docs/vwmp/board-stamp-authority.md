@@ -39,7 +39,7 @@ Runs `validate_board_stamps_precommit.py` on staged `kboard.md`:
    ```bash
    python "packages/frameworks/workflow-mgt/scripts/validation/validate_board_stamp_diff.py" \
      --before .kanban-snapshots/<ts>/kboard.md \
-     --after docs/project-management/kanban/kboard.md \
+     --after docs/kanban/kboard.md \
      --strict
    ```
    Repeat for `kboard.md`. **Abort** on non-zero exit.
@@ -85,5 +85,5 @@ Threshold: `board_stamp.homogeneity_threshold` in `rw-config.yaml` (default **3*
 ## References
 
 - [kanban-governance-policy.md](../../../../kanban/policies/kanban-governance-policy.md)
-- [FR-097](../../../../../../docs/project-management/kanban/fr-br/FR-097-board-stamp-authority-and-forensic-timestamp-recovery.md)
+- [FR-097](../../../../../../docs/kanban/fr-br/FR-097-board-stamp-authority-and-forensic-timestamp-recovery.md)
 - [IPP-E2S15T08](../../../../../../docs/implementation-cycles/IPP-E2S15T08-board-stamp-authority-forensic-timestamp-recovery.md)

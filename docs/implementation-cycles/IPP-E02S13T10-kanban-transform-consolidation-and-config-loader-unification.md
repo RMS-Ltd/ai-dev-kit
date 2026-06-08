@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # E02:S13:T10 — Planning: Kanban Transform Consolidation (+M1 config loader unification) (IPW)
 
-**Host Task:** [`T10-kanban-transform-consolidation`](../project-management/kanban/epics/epic-02/story-13-workflow-management-package-implementation-review/T10-kanban-transform-consolidation.md) **(E02:S13:T10)**  
-**Planning for:** [T05 gap log](../project-management/kanban/epics/epic-02/story-13-workflow-management-package-implementation-review/T05-create-gap-log-and-risk-assessment.md) · [T04 integration alignment report](../project-management/kanban/epics/epic-02/story-13-workflow-management-package-implementation-review/integration-alignment-report.md) · [FR-092](../project-management/kanban/fr-br/FR-092-canonical-rw-ukw-kanban-consistency-program.md)
+**Host Task:** [`T10-kanban-transform-consolidation`](../kanban/epics/epic-02/story-13-workflow-management-package-implementation-review/T10-kanban-transform-consolidation.md) **(E02:S13:T10)**  
+**Planning for:** [T05 gap log](../kanban/epics/epic-02/story-13-workflow-management-package-implementation-review/T05-create-gap-log-and-risk-assessment.md) · [T04 integration alignment report](../kanban/epics/epic-02/story-13-workflow-management-package-implementation-review/integration-alignment-report.md) · [FR-092](../kanban/fr-br/FR-092-canonical-rw-ukw-kanban-consistency-program.md)
 
 **Status:** Draft
 
@@ -162,7 +162,7 @@ The specification defines (1) the transform entrypoint contract as the canonical
 
 | Doc ID | Path | Scope of change | Tied to (RF/T/impl step) |
 | ------ | ---- | --------------- | ------------------------ |
-| D-U1 | `docs/project-management/kanban/epics/epic-02/story-13-workflow-management-package-implementation-review/T10-kanban-transform-consolidation.md` | Update Scope/Deliverables/AC to reflect M1 (GAP-WFMGT-INTG-002) inclusion and add explicit acceptance checks for loader unification. | RF6–RF8 · Phase 8 wiring |
+| D-U1 | `docs/kanban/epics/epic-02/story-13-workflow-management-package-implementation-review/T10-kanban-transform-consolidation.md` | Update Scope/Deliverables/AC to reflect M1 (GAP-WFMGT-INTG-002) inclusion and add explicit acceptance checks for loader unification. | RF6–RF8 · Phase 8 wiring |
 | D-U2 | `packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md` | Minor cross-reference update to clarify that the shared transform entrypoint contract is the boundary for Step 7 vs other paths. | RF3–RF4 |
 
 ### 5.2 New documents to create
@@ -190,7 +190,7 @@ The specification defines (1) the transform entrypoint contract as the canonical
 
 | Doc ID | Canonical path | Publication status | Publication N/A reason (if N/A) | Lifecycle | Inbound links to add |
 | ------ | -------------- | ------------------ | ------------------------------- | --------- | -------------------- |
-| D-U1 | `docs/project-management/kanban/epics/epic-02/story-13-workflow-management-package-implementation-review/T10-kanban-transform-consolidation.md` | PUBLISHED | Repo-level doc | evergreen | This IPP under “Input” and “References”; update task to include scope note |
+| D-U1 | `docs/kanban/epics/epic-02/story-13-workflow-management-package-implementation-review/T10-kanban-transform-consolidation.md` | PUBLISHED | Repo-level doc | evergreen | This IPP under “Input” and “References”; update task to include scope note |
 | D-U2 | `packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md` | PUBLISHED | Repo-level KB | evergreen | Add cross-reference mention from Step 7 boundary section |
 | D-C1 | `docs/architecture/standards-and-adrs/ADR-020-kanban-transform-entrypoint-contract-and-rw-config-loader-unification.md` | PUBLISHED | Repo-level ADR | evergreen | Link from this IPP §2.5 and §5 deliverables |
 | D-C2 | `packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/kanban-transform-entrypoint-boundary.md` | PUBLISHED | Repo-level KB | evergreen | Link from T10 task and boundary references from Step 7 guide |
@@ -212,9 +212,9 @@ The specification defines (1) the transform entrypoint contract as the canonical
 
 ## References
 
-- [T10-kanban-transform-consolidation](../project-management/kanban/epics/epic-02/story-13-workflow-management-package-implementation-review/T10-kanban-transform-consolidation.md)
-- [T05-create-gap-log-and-risk-assessment (GAP-WFMGT-INTG-001/002)](../project-management/kanban/epics/epic-02/story-13-workflow-management-package-implementation-review/T05-create-gap-log-and-risk-assessment.md)
-- [T04 integration alignment report](../project-management/kanban/epics/epic-02/story-13-workflow-management-package-implementation-review/integration-alignment-report.md)
-- [FR-092 canonical RW/UKW kanban consistency program](../project-management/kanban/fr-br/FR-092-canonical-rw-ukw-kanban-consistency-program.md)
+- [T10-kanban-transform-consolidation](../kanban/epics/epic-02/story-13-workflow-management-package-implementation-review/T10-kanban-transform-consolidation.md)
+- [T05-create-gap-log-and-risk-assessment (GAP-WFMGT-INTG-001/002)](../kanban/epics/epic-02/story-13-workflow-management-package-implementation-review/T05-create-gap-log-and-risk-assessment.md)
+- [T04 integration alignment report](../kanban/epics/epic-02/story-13-workflow-management-package-implementation-review/integration-alignment-report.md)
+- [FR-092 canonical RW/UKW kanban consistency program](../kanban/fr-br/FR-092-canonical-rw-ukw-kanban-consistency-program.md)
 - [`apply_canonical_row_transform_pipeline` implementation](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/scripts/update_kanban_docs.py)
 

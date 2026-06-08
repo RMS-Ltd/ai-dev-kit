@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # E4:S19:T04 — Planning: Spec, Tests, Implementation Plan (IPP)
 
-**Host Task:** [`T04-kboard-fbuboard-add-ipp-column-after-fbu-and-task-links-uxr010.md`](../project-management/kanban/epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T04-kboard-fbuboard-add-ipp-column-after-fbu-and-task-links-uxr010.md) **(E4:S19:T04)**  
-**Planning for:** [UXR-010 — kboard add `IPP` segment after FBU and task links](../project-management/kanban/fr-br/UXR-010-kboard-fbuboard-add-ipp-column-after-fbu-and-task-links.md)  
+**Host Task:** [`T04-kboard-fbuboard-add-ipp-column-after-fbu-and-task-links-uxr010.md`](../kanban/epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T04-kboard-fbuboard-add-ipp-column-after-fbu-and-task-links-uxr010.md) **(E4:S19:T04)**  
+**Planning for:** [UXR-010 — kboard add `IPP` segment after FBU and task links](../kanban/fr-br/UXR-010-kboard-fbuboard-add-ipp-column-after-fbu-and-task-links.md)  
 **Status:** Published
 
 > **IPW (Implementation Planning Workflow):** This document was produced by IPW for E4:S19:T04. Bidirectional wiring to the host task `Input` and `References` is confirmed.
@@ -108,8 +108,8 @@ The normative row contract (RF1–RF6) defines exact token text and segment orde
 
 - `packages/frameworks/workflow-mgt/scripts/update_kanban_docs.py` — add formatter/resolver
 - `packages/frameworks/workflow-mgt/scripts/test_update_kanban_docs.py` — add T1–T7 test cases
-- `docs/project-management/kanban/kboard.md` — normalize rows as needed
-- `docs/project-management/kanban/kboard.md` — normalize rows as needed
+- `docs/kanban/kboard.md` — normalize rows as needed
+- `docs/kanban/kboard.md` — normalize rows as needed
 
 ### 4.2 Dependency order
 
@@ -134,10 +134,10 @@ The normative row contract (RF1–RF6) defines exact token text and segment orde
 
 ## References
 
-- [Host task E4:S19:T04](../project-management/kanban/epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T04-kboard-fbuboard-add-ipp-column-after-fbu-and-task-links-uxr010.md)
-- [UXR-010](../project-management/kanban/fr-br/UXR-010-kboard-fbuboard-add-ipp-column-after-fbu-and-task-links.md)
-- [kboard](../project-management/kanban/kboard.md)
-- [fbuboard](../project-management/kanban/kboard.md)
+- [Host task E4:S19:T04](../kanban/epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T04-kboard-fbuboard-add-ipp-column-after-fbu-and-task-links-uxr010.md)
+- [UXR-010](../kanban/fr-br/UXR-010-kboard-fbuboard-add-ipp-column-after-fbu-and-task-links.md)
+- [kboard](../kanban/kboard.md)
+- [fbuboard](../kanban/kboard.md)
 - [update_kanban_docs.py](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/scripts/update_kanban_docs.py)
 - [test_update_kanban_docs.py](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/scripts/test_update_kanban_docs.py)
 - [PLAN_DOC_TEMPLATE.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/kanban/templates/PLAN_DOC_TEMPLATE.md)

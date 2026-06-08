@@ -30,7 +30,7 @@ This guide explains how to integrate AI Dev Kit frameworks into existing project
 - Brownfield canonical entry:
   - [`INSTALL_IN_YOUR_PROJECT.md — Brownfield adoption`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/INSTALL_IN_YOUR_PROJECT.md#brownfield-adoption-existing-repositories)
   - [ADR-003](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/architecture/standards-and-adrs/ADR-003-greenfield-vs-brownfield-adoption.md)
-  - [FR-081](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/project-management/kanban/fr-br/FR-081-brownfield-modular-adopter-integration.md)
+  - [FR-081](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/kanban/fr-br/FR-081-brownfield-modular-adopter-integration.md)
   - [IPP-E6S9T2](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/implementation-cycles/IPP-E6S09T02-brownfield-modular-adopter-integration-fr081.md)
 
 **Use Cases:**
@@ -223,7 +223,7 @@ cd my-new-project
 git init
 
 # Create basic structure
-mkdir -p src/myproject docs/project-management/kanban
+mkdir -p src/myproject docs/kanban
 ```
 
 **2. Install Frameworks:**
@@ -248,8 +248,8 @@ vim src/myproject/version.py
 # Set initial version: 0.1.1.1+1
 
 # Initialize Kanban
-mkdir -p docs/project-management/kanban/epics
-cp frameworks/kanban/templates/kboard.md docs/project-management/kanban/kboard.md
+mkdir -p docs/kanban/epics
+cp frameworks/kanban/templates/kboard.md docs/kanban/kboard.md
 ```
 
 **4. Test Setup:**
@@ -260,9 +260,9 @@ cd frameworks/workflow-mgmt
 python3 scripts/validation/validate_branch_context.py
 
 # Create first epic
-mkdir -p docs/project-management/kanban/epics/epic-01
+mkdir -p docs/kanban/epics/epic-01
 cp frameworks/kanban/templates/epic-template.md \
-   docs/project-management/kanban/epics/epic-01/epic-01.md
+   docs/kanban/epics/epic-01/epic-01.md
 
 # Test Release Workflow
 git checkout -b epic/1-setup

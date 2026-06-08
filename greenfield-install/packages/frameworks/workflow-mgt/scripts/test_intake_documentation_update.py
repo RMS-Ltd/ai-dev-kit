@@ -29,7 +29,7 @@ def test_documentation_update():
     print("🧪 Test: Documentation Update")
     
     # Test with FR-019
-    fr_br_path = Path("docs/project-management/kanban/fr-br/FR-019-intake-workflow-automation.md")
+    fr_br_path = Path("docs/kanban/fr-br/FR-019-intake-workflow-automation.md")
     
     if not fr_br_path.exists():
         print("⚠️  FR-019 not found, skipping test")
@@ -47,7 +47,7 @@ def test_documentation_update():
     }
     
     # Get intake decision
-    kanban_path = Path("docs/project-management/kanban")
+    kanban_path = Path("docs/kanban")
     framework_path = Path("packages/frameworks/kanban")
     
     decision_flow = IntakeDecisionFlow(kanban_path, framework_path, config)
@@ -60,7 +60,7 @@ def test_documentation_update():
             self.task_path = task_path
     
     created_tasks = [
-        MockTask("E2:S11:T04", "docs/project-management/kanban/epics/epic-02/story-11-intake-workflow-automation.md")
+        MockTask("E2:S11:T04", "docs/kanban/epics/epic-02/story-11-intake-workflow-automation.md")
     ]
     
     # Initialize documentation update

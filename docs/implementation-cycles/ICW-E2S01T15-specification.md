@@ -10,7 +10,7 @@ housekeeping_policy: keep
 
 **Task:** E2:S01:T15  
 **Related FR:** FR-049  
-**Host Task:** [T15-canonical-rw-step-list-single-source-of-truth-fr049.md](../project-management/kanban/epics/epic-02/story-01-rw-agent-execution-and-docs/T15-canonical-rw-step-list-single-source-of-truth-fr049.md)  
+**Host Task:** [T15-canonical-rw-step-list-single-source-of-truth-fr049.md](../kanban/epics/epic-02/story-01-rw-agent-execution-and-docs/T15-canonical-rw-step-list-single-source-of-truth-fr049.md)  
 **Created:** 2026-04-09
 
 ---

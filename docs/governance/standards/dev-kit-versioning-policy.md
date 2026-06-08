@@ -243,8 +243,8 @@ Future epics (5+) can be introduced as needed (for example, “Book Manuscript�
 
 This repo's Kanban is defined under:
 
-- `docs/project-management/kanban/_index.md`
-- `docs/project-management/kanban/epics/Epic-X/stories/Story-XXX-*.md`
+- `docs/kanban/_index.md`
+- `docs/kanban/epics/Epic-X/stories/Story-XXX-*.md`
 
 Mapping rules:
 
@@ -897,7 +897,7 @@ The versioning strategy provides **complete traceability** through a multi-dimen
 
 **Example:**
 - Version: `0.3.1.1+2`
-- Epic 3 document: `docs/project-management/kanban/epics/epic-03/epic-03.md`
+- Epic 3 document: `docs/kanban/epics/epic-03/epic-03.md`
 - Story 1 markers: Version references, commit hashes, workflow runs
 
 ### Dimension 5: Version ↔ Git History
@@ -1058,7 +1058,7 @@ The dev-kit policy:
 - `src/fynd_deals/version.py` (version file - to be renamed to dev-kit-specific path)
 - `CHANGELOG.md` (main summary changelog)
 - `docs/changelog-and-release-notes/changelog-archive/` (detailed changelog archive)
-- `docs/project-management/kanban/` (Kanban board and Epic/Story docs)
+- `docs/kanban/` (Kanban board and Epic/Story docs)
 
 **Validation Scripts:**
 - `packages/frameworks/workflow-mgt/scripts/validation/validate_branch_context.py`
@@ -1068,5 +1068,5 @@ The dev-kit policy:
 - **[Versioning Quick Reference](../../architecture/standards-and-adrs/versioning-quick-reference.md)** - 1-2 page summary for quick lookup ⚡
 - **[Dual-Versioning Guide](../../architecture/standards-and-adrs/dual-versioning-package-managers.md)** - Managing `RC.EPIC.STORY.TASK+BUILD` + SemVer for package managers ⚠️
 - `docs/architecture/standards-and-adrs/dev-kit-versioning-cookbook.md` - Practical worked examples
-- `docs/project-management/kanban/epics/epic-03/story-01-dev-kit-alignment-with-versioning-framework/T01-gap-analysis-report.md` (gap analysis)
-- `docs/project-management/kanban/epics/epic-03/story-01-dev-kit-alignment-with-versioning-framework/T02-fynd-deals-epic15-findings.md` (findings)
+- `docs/kanban/epics/epic-03/story-01-dev-kit-alignment-with-versioning-framework/T01-gap-analysis-report.md` (gap analysis)
+- `docs/kanban/epics/epic-03/story-01-dev-kit-alignment-with-versioning-framework/T02-fynd-deals-epic15-findings.md` (findings)

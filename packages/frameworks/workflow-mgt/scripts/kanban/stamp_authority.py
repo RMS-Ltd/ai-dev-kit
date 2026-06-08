@@ -81,7 +81,7 @@ class BackfillRowResult:
 def kanban_root_from_config(project_root: Path, config: Optional[Dict[str, Any]]) -> Path:
     if config and config.get("kanban_root"):
         return project_root / config["kanban_root"]
-    return project_root / "docs/project-management/kanban"
+    return project_root / "docs/kanban"
 
 
 def homogeneity_threshold_from_config(

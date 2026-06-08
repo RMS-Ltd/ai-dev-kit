@@ -169,8 +169,8 @@ Map each Phase 5 deliverable to a **canonical location** in the project document
 | Document class | Canonical location |
 | -------------- | ------------------ |
 | Planning package (this IPW) | `docs/implementation-cycles/IPP-E{E}S{S}T{T}-{slug}.md` |
-| Kanban task / story / epic | `docs/project-management/kanban/...` |
-| FR / BR / UXR | `docs/project-management/kanban/fr-br/` |
+| Kanban task / story / epic | `docs/kanban/...` |
+| FR / BR / UXR | `docs/kanban/fr-br/` |
 | Architecture / ADR / policy | `docs/architecture/standards-and-adrs/` |
 | Workflow / developer KB | `packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/` |
 | Framework package docs | Under relevant `packages/frameworks/{name}/` |
@@ -253,8 +253,8 @@ Use `rw-config.yaml` values when present. Fallbacks:
 
 - Plan doc location: `docs/implementation-cycles/`
 - Plan doc template: `packages/frameworks/kanban/templates/PLAN_DOC_TEMPLATE.md`
-- Kanban root: `docs/project-management/kanban/`
-- FR/BR/UXR root: `docs/project-management/kanban/fr-br/`
+- Kanban root: `docs/kanban/`
+- FR/BR/UXR root: `docs/kanban/fr-br/`
 
 ---
 
@@ -262,9 +262,9 @@ Use `rw-config.yaml` values when present. Fallbacks:
 
 - IPW canonical step guide: `packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/implementation-planning-workflow-agent-execution.md`
 - Plan doc template: `packages/frameworks/kanban/templates/PLAN_DOC_TEMPLATE.md`
-- FR-042 (canonical IPW definition): `docs/project-management/kanban/fr-br/FR-042-implementation-planning-workflow-ipw.md`
-- FR-094 (this command's origin): `docs/project-management/kanban/fr-br/FR-094-ipw-slash-command-and-task-state-transition-mandate.md`
-- FR-077 (status transition ownership): `docs/project-management/kanban/fr-br/FR-077-ipw-built-task-status-transition-and-kboard-sync.md`
-- BR-066 (Docusaurus / publication housing): `docs/project-management/kanban/fr-br/BR-066-ipw-missing-docusaurus-filing-for-planning-artifacts.md`
+- FR-042 (canonical IPW definition): `docs/kanban/fr-br/FR-042-implementation-planning-workflow-ipw.md`
+- FR-094 (this command's origin): `docs/kanban/fr-br/FR-094-ipw-slash-command-and-task-state-transition-mandate.md`
+- FR-077 (status transition ownership): `docs/kanban/fr-br/FR-077-ipw-built-task-status-transition-and-kboard-sync.md`
+- BR-066 (Docusaurus / publication housing): `docs/kanban/fr-br/BR-066-ipw-missing-docusaurus-filing-for-planning-artifacts.md`
 - Specification and planning artifacts policy: `docs/governance/standards/specification-and-planning-artifacts-policy.md`
 - IPW ADR necessity checklist (FR-100): `docs/architecture/standards-and-adrs/ipw-adr-necessity-checklist.md`

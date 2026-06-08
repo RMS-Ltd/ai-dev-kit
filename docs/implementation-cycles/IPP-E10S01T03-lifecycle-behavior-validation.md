@@ -8,7 +8,7 @@ housekeeping_policy: keep
 
 # E10:S01:T03 — Planning: Lifecycle Behavior Validation (IPW)
 
-**Host Task:** [`T03-validate-lifecycle-behavior-against-documented-guidance.md`](../project-management/kanban/epics/epic-10/story-01-document-lifecycle-package-implementation-review/T03-validate-lifecycle-behavior-against-documented-guidance.md) **(E10:S01:T03)**  
+**Host Task:** [`T03-validate-lifecycle-behavior-against-documented-guidance.md`](../kanban/epics/epic-10/story-01-document-lifecycle-package-implementation-review/T03-validate-lifecycle-behavior-against-documented-guidance.md) **(E10:S01:T03)**  
 **Planning for:** [E10S01 orchestration plan §7.4 T03](./E10S01-orchestration-plan.md) · [IPP-E10S01T01 expectations baseline](./IPP-E10S01T01-expectations-baseline-doc-lifecycle.md) (T01 — implementation dependency)  
 **Status:** Implemented — companion report published; RW v0.10.1.3+1  
 **Branch:** `epic/10-doc-lifecycle-framework`
@@ -155,11 +155,11 @@ Each row: expected behavior (T01 baseline + package policies), observed behavior
 ### 4.1 Files to create or modify
 
 - CREATE: `docs/implementation-cycles/IPP-E10S01T03-lifecycle-behavior-validation.md` (this file)
-- CREATE: `docs/project-management/kanban/epics/epic-10/story-01-document-lifecycle-package-implementation-review/lifecycle-behavior-validation-report.md`
-- UPDATE: `docs/project-management/kanban/epics/epic-10/story-01-document-lifecycle-package-implementation-review/T03-validate-lifecycle-behavior-against-documented-guidance.md`
-- UPDATE: `docs/project-management/kanban/epics/epic-10/story-01-document-lifecycle-package-implementation-review.md` (story checklist)
+- CREATE: `docs/kanban/epics/epic-10/story-01-document-lifecycle-package-implementation-review/lifecycle-behavior-validation-report.md`
+- UPDATE: `docs/kanban/epics/epic-10/story-01-document-lifecycle-package-implementation-review/T03-validate-lifecycle-behavior-against-documented-guidance.md`
+- UPDATE: `docs/kanban/epics/epic-10/story-01-document-lifecycle-package-implementation-review.md` (story checklist)
 - UPDATE (optional): `component-inventory-map.md` (when T02 complete)
-- UPDATE (RW Step 7): `docs/project-management/kanban/kboard.md`
+- UPDATE (RW Step 7): `docs/kanban/kboard.md`
 
 ### 4.2 Dependency order
 
@@ -224,14 +224,14 @@ Each row: expected behavior (T01 baseline + package policies), observed behavior
 
 ## References
 
-- [T03 task doc](../project-management/kanban/epics/epic-10/story-01-document-lifecycle-package-implementation-review/T03-validate-lifecycle-behavior-against-documented-guidance.md)
+- [T03 task doc](../kanban/epics/epic-10/story-01-document-lifecycle-package-implementation-review/T03-validate-lifecycle-behavior-against-documented-guidance.md)
 - [E10S01 orchestration plan §7.4 T03](./E10S01-orchestration-plan.md)
 - [IPP-E10S01T01 expectations baseline](./IPP-E10S01T01-expectations-baseline-doc-lifecycle.md)
 - [IPP-E02S13T03 precedent](./IPP-E02S13T03-workflow-behavior-validation.md)
-- [workflow-behavior-validation-report.md precedent](../project-management/kanban/epics/epic-02/story-13-workflow-management-package-implementation-review/workflow-behavior-validation-report.md)
+- [workflow-behavior-validation-report.md precedent](../kanban/epics/epic-02/story-13-workflow-management-package-implementation-review/workflow-behavior-validation-report.md)
 - [doc-lifecycle-policy.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/doc-lifecycle/policies/doc-lifecycle-policy.md)
 - [doc-lifecycle-metadata-spec.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/doc-lifecycle/policies/doc-lifecycle-metadata-spec.md)
 - [LIFECYCLE_EXAMPLES.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/doc-lifecycle/templates/LIFECYCLE_EXAMPLES.md)
 - [DocumentLifecycleValidator](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/tooling-automation/validators/framework/document_lifecycle_validator.py)
-- [FR-042](../project-management/kanban/fr-br/FR-042-implementation-planning-workflow-ipw.md)
+- [FR-042](../kanban/fr-br/FR-042-implementation-planning-workflow-ipw.md)
 - [ipw-adr-necessity-checklist.md](../architecture/standards-and-adrs/ipw-adr-necessity-checklist.md)

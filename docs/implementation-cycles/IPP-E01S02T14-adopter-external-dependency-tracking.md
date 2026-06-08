@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # E01:S02:T14 — Planning: Spec, Tests, Implementation Plan (IPW)
 
-**Host Task:** [`T14-dependency-tracking-adopters-fr003.md`](../project-management/kanban/epics/epic-01/story-02-package-and-repo-architecture/T14-dependency-tracking-adopters-fr003.md) **(E01:S02:T14)**  
-**Planning for:** [FR-003](../project-management/kanban/fr-br/FR-003-dependency-tracking-in-adopting-projects.md)  
+**Host Task:** [`T14-dependency-tracking-adopters-fr003.md`](../kanban/epics/epic-01/story-02-package-and-repo-architecture/T14-dependency-tracking-adopters-fr003.md) **(E01:S02:T14)**  
+**Planning for:** [FR-003](../kanban/fr-br/FR-003-dependency-tracking-in-adopting-projects.md)  
 **Status:** Approved (2026-06-04)
 
 ---
@@ -94,7 +94,7 @@ Adopters have one canonical guide and optional copy-paste templates so **host pr
 | E4 | Spec elsewhere | Y | This IPP + task AC |
 | E5 | Documented NONE | Y | §5.3 |
 
-**§5.3 governing docs:** [ADR-003](../architecture/standards-and-adrs/ADR-003-greenfield-vs-brownfield-adoption.md); [`packages/frameworks/numbering-versioning/README.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/numbering-versioning/README.md); [FR-003](../project-management/kanban/fr-br/FR-003-dependency-tracking-in-adopting-projects.md).
+**§5.3 governing docs:** [ADR-003](../architecture/standards-and-adrs/ADR-003-greenfield-vs-brownfield-adoption.md); [`packages/frameworks/numbering-versioning/README.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/numbering-versioning/README.md); [FR-003](../kanban/fr-br/FR-003-dependency-tracking-in-adopting-projects.md).
 
 ---
 
@@ -200,7 +200,7 @@ Adopters have one canonical guide and optional copy-paste templates so **host pr
 
 ## References
 
-- [FR-003](../project-management/kanban/fr-br/FR-003-dependency-tracking-in-adopting-projects.md)
-- [FR-002](../project-management/kanban/fr-br/FR-002-update-been-there-readme.md) (related README template)
+- [FR-003](../kanban/fr-br/FR-003-dependency-tracking-in-adopting-projects.md)
+- [FR-002](../kanban/fr-br/FR-002-update-been-there-readme.md) (related README template)
 - [ADR-003](../architecture/standards-and-adrs/ADR-003-greenfield-vs-brownfield-adoption.md)
 - [INSTALL_IN_YOUR_PROJECT.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/INSTALL_IN_YOUR_PROJECT.md)

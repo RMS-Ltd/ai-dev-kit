@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # E05:S09:T11 — Planning: Spec, Tests, Implementation Plan (IPW)
 
-**Host Task:** [`T11-docusaurus-monorepo-markdown-link-resolution-br068.md`](../project-management/kanban/epics/epic-05/story-09-docusaurus-documentation-portal/T11-docusaurus-monorepo-markdown-link-resolution-br068.md) **(E05:S09:T11)**  
-**Planning for:** [BR-068](../project-management/kanban/fr-br/BR-068-docusaurus-monorepo-markdown-links-break-strict-production-build.md)  
+**Host Task:** [`T11-docusaurus-monorepo-markdown-link-resolution-br068.md`](../kanban/epics/epic-05/story-09-docusaurus-documentation-portal/T11-docusaurus-monorepo-markdown-link-resolution-br068.md) **(E05:S09:T11)**  
+**Planning for:** [BR-068](../kanban/fr-br/BR-068-docusaurus-monorepo-markdown-links-break-strict-production-build.md)  
 **Status:** Revised — Wave 5 (governance + regression guard)
 
 > **IPW revision:** Waves 1–4 (`v0.5.9.11+5`) shipped **Strategy A** corpus normalization and closed **BR-068**. Wave 5 adds canonical IPP, bidirectional task wiring, repo-wide pytest guard, and straggler remediation.
@@ -239,10 +239,10 @@ Criteria: [`ipw-adr-necessity-checklist.md`](../architecture/standards-and-adrs/
 
 ## References
 
-- [Host task — E05:S09:T11](../project-management/kanban/epics/epic-05/story-09-docusaurus-documentation-portal/T11-docusaurus-monorepo-markdown-link-resolution-br068.md)
-- [BR-068](../project-management/kanban/fr-br/BR-068-docusaurus-monorepo-markdown-links-break-strict-production-build.md)
-- [FR-067](../project-management/kanban/fr-br/FR-067-docusaurus-production-build-corpus-triage.md)
-- [FR-069](../project-management/kanban/fr-br/FR-069-docusaurus-ci-build-gate.md)
+- [Host task — E05:S09:T11](../kanban/epics/epic-05/story-09-docusaurus-documentation-portal/T11-docusaurus-monorepo-markdown-link-resolution-br068.md)
+- [BR-068](../kanban/fr-br/BR-068-docusaurus-monorepo-markdown-links-break-strict-production-build.md)
+- [FR-067](../kanban/fr-br/FR-067-docusaurus-production-build-corpus-triage.md)
+- [FR-069](../kanban/fr-br/FR-069-docusaurus-ci-build-gate.md)
 - [Legacy IPW (deprecated)](IPW-E5S09T11-docusaurus-monorepo-markdown-links-br068.md)
 - [IPP-E05S09T13 Wave 2 BR-068 extensions](IPP-E05S09T13-docusaurus-faster-package-alignment.md)
 - [ipw-adr-necessity-checklist.md](../architecture/standards-and-adrs/ipw-adr-necessity-checklist.md) (FR-100)

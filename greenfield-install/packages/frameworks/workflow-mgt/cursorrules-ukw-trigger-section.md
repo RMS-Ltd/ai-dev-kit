@@ -51,7 +51,7 @@ If `rw-config.yaml` exists in project root and `use_kanban: true`, **MUST** load
 - `fr_br_root` → Use for FR/BR root (if specified)
 
 **Default Paths (if config not available):**
-- `kanban_root`: `docs/project-management/kanban`
+- `kanban_root`: `docs/kanban`
 - `epic_doc_pattern`: `epics/Epic-{epic}/Epic-{epic}.md`
 - `story_doc_pattern`: `epics/Epic-{epic}/Story-{story}-*.md`
 - `task_doc_pattern`: `epics/Epic-{epic}/Story-{story}/T{task}-*.md`

@@ -12,7 +12,7 @@ Usage:
 
 Arguments:
     --mode MODE               Installation mode: fresh, migration, update, hybrid, auto
-    --kanban-path PATH        Path to Kanban directory (default: docs/project-management/kanban)
+    --kanban-path PATH        Path to Kanban directory (default: docs/kanban)
     --dry-run                 Preview changes without modifying files
     --force                   Skip confirmation prompts
 """
@@ -167,7 +167,7 @@ def resolve_kanban_path_arg(project_root: Path, provided_kanban_path: str) -> tu
     If caller uses default path and rw-config.yaml has kanban_root, adopt config path.
     Returns (resolved_path, sourced_from_rw_config).
     """
-    default_path = "docs/project-management/kanban"
+    default_path = "docs/kanban"
     if provided_kanban_path != default_path:
         return Path(provided_kanban_path).resolve(), False
 
@@ -282,7 +282,7 @@ def create_consumer_board_skeleton(
         content = content.replace("{Version}", version_placeholder)
         content = content.replace("{kanban_path}", str(kanban_path.relative_to(project_root)))
         # Local policy path default – can be customized later by consumers
-        local_policy_path = "docs/project-management/kanban/policies/local-kanban-policy.md"
+        local_policy_path = "docs/kanban/policies/local-kanban-policy.md"
         content = content.replace("{local_policy_path}", local_policy_path)
         (kanban_path / "kanban-board-guide.md").write_text(content, encoding="utf-8")
         print(f"  ✅ Created consumer board guide: {kanban_path / 'kanban-board-guide.md'}")
@@ -598,8 +598,8 @@ Examples:
     parser.add_argument(
         "--kanban-path",
         type=str,
-        default="docs/project-management/kanban",
-        help="Path to Kanban directory (default: docs/project-management/kanban)"
+        default="docs/kanban",
+        help="Path to Kanban directory (default: docs/kanban)"
     )
     parser.add_argument(
         "--dry-run",

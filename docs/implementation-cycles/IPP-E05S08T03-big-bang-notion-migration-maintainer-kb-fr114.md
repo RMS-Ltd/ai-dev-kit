@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # E05:S08:T03 — Planning: Big-bang Notion migration of maintainer KB (FR-114)
 
-**Host Task:** [`T03-big-bang-notion-migration-maintainer-kb-fr114.md`](../project-management/kanban/epics/epic-05/story-08-knowledge-base/T03-big-bang-notion-migration-maintainer-kb-fr114.md) **(E05:S08:T03)**  
-**Planning for:** [FR-114](../project-management/kanban/fr-br/FR-114-split-documentation-surfaces-docusaurus-public-notion-maintainer-kb.md) (F3, NF3)  
+**Host Task:** [`T03-big-bang-notion-migration-maintainer-kb-fr114.md`](../kanban/epics/epic-05/story-08-knowledge-base/T03-big-bang-notion-migration-maintainer-kb-fr114.md) **(E05:S08:T03)**  
+**Planning for:** [FR-114](../kanban/fr-br/FR-114-split-documentation-surfaces-docusaurus-public-notion-maintainer-kb.md) (F3, NF3)  
 **Status:** Active — implementation authorized
 
 > **IPW (Implementation Planning Workflow):** Consolidated IPP per FR-042 / FR-094.
@@ -63,7 +63,7 @@ Establish Notion as canonical home for maintainer investigations and records whi
 
 ### 2.5 ADR necessity decision
 
-**Outcome:** `EXEMPT` — implements [FR-114](../project-management/kanban/fr-br/FR-114-split-documentation-surfaces-docusaurus-public-notion-maintainer-kb.md). Three-surface ADR is **E05:S08:T04** (F5).
+**Outcome:** `EXEMPT` — implements [FR-114](../kanban/fr-br/FR-114-split-documentation-surfaces-docusaurus-public-notion-maintainer-kb.md). Three-surface ADR is **E05:S08:T04** (F5).
 
 ---
 
@@ -140,6 +140,6 @@ Establish Notion as canonical home for maintainer investigations and records whi
 
 ## References
 
-- [FR-114](../project-management/kanban/fr-br/FR-114-split-documentation-surfaces-docusaurus-public-notion-maintainer-kb.md)
-- [T03 task doc](../project-management/kanban/epics/epic-05/story-08-knowledge-base/T03-big-bang-notion-migration-maintainer-kb-fr114.md)
-- [E05:S09:T15](../project-management/kanban/epics/epic-05/story-09-docusaurus-documentation-portal/T15-docusaurus-adopter-public-publish-allowlist-fr114.md) (allowlist dependency)
+- [FR-114](../kanban/fr-br/FR-114-split-documentation-surfaces-docusaurus-public-notion-maintainer-kb.md)
+- [T03 task doc](../kanban/epics/epic-05/story-08-knowledge-base/T03-big-bang-notion-migration-maintainer-kb-fr114.md)
+- [E05:S09:T15](../kanban/epics/epic-05/story-09-docusaurus-documentation-portal/T15-docusaurus-adopter-public-publish-allowlist-fr114.md) (allowlist dependency)

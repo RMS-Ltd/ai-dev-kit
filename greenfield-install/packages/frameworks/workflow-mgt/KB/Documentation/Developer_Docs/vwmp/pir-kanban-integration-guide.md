@@ -70,8 +70,8 @@ This guide documents the integration between the Post-Implementation Review (PIR
 
 **PIR Report → Epic/Story Document:**
 - PIR report contains link back to Epic/Story document
-- Link format: `[Epic {N} Documentation](../../project-management/kanban/epics/Epic-{N}/Epic-{N}.md)`
-- Link format: `[Story {N} Documentation](../../project-management/kanban/epics/Epic-{N}/Story-{N}-{name}.md)`
+- Link format: `[Epic {N} Documentation](../../kanban/epics/Epic-{N}/Epic-{N}.md)`
+- Link format: `[Story {N} Documentation](../../kanban/epics/Epic-{N}/Story-{N}-{name}.md)`
 
 ### 3. PIR Summary Section
 
@@ -303,8 +303,8 @@ Story 5 successfully delivered the Post-Implementation Review workflow with comp
 
 - [PIR Workflow Agent Execution Guide](pir-workflow-agent-execution.md) - Step 12 documentation
 - [PIR Workflow Planning](../../Analysis/PIR-workflow-planning.md) - Integration requirements
-- [Kanban Governance Policy](../../../project-management/rituals/policy/kanban-governance-policy.md) - Kanban structure
-- [Bidirectional Wiring Principle](../../../project-management/kanban/fr-br/BIDIRECTIONAL_WIRING_PRINCIPLE.md) - Linking patterns
+- [Kanban Governance Policy](docs/governance/kanban/kanban-governance-policy.md) - Kanban structure
+- [Bidirectional Wiring Principle](../../../kanban/fr-br/BIDIRECTIONAL_WIRING_PRINCIPLE.md) - Linking patterns
 
 ---
 
