@@ -95,19 +95,18 @@ Planning: [IPP-E21S02T06](../../../../docs/implementation-cycles/IPP-E21S02T06-l
 | RW selection | `tests/test_install_release_workflow_localisation.py` | T1–T9 |
 | CLI init | `tests/test_commands.py` (`TestInitCommand`) | T1–T8 |
 | Content wiring | `tests/test_content_generation_locale_wiring.py` | T1–T10 |
-| E2E | `tests/test_fr006_phase1_e2e_localisation.py` | E1–E8 |
+| E2E Phase 1 | `tests/test_fr006_phase1_e2e_localisation.py` | E1–E8 |
+| Scaffold | `tests/test_locale_scaffold_major_languages.py` | S1–S8 |
+| Lookup | `tests/test_translation_lookup_rendering.py` | L1–L7 |
+| Tools | `tests/test_translation_management_tools.py` | M1–M11 |
+| Completeness | `tests/test_translation_completeness_tracking.py` | C1–C13 |
+| **E2E Phase 3** | `tests/test_fr006_phase3_translation_locale_e2e.py` | P3E1–P3E11 |
 
 **Regression bundle:**
 
 ```bash
-pytest -m fr006 tests/test_fr006_phase1_e2e_localisation.py \
-  tests/test_install_release_workflow_localisation.py \
-  tests/test_localisation_config_read_resolve.py \
-  tests/test_content_generation_locale_wiring.py \
-  tests/test_locale_content_manifest.py
+pytest -m fr006
 ```
-
-Plus `tests/test_commands.py` init localisation tests (see `TestInitCommand`).
 
 ## Phase 3 (translation pipeline)
 
@@ -117,8 +116,9 @@ Plus `tests/test_commands.py` init localisation tests (see `TestInitCommand`).
 | E21:S03:T02 | Major-language scaffold trees — [locale-rollout-matrix.md](../../../../docs/governance/standards/locale-rollout-matrix.md) |
 | E21:S03:T03 | Translation lookup/rendering wired — [IPP-E21S03T03](../../../../docs/implementation-cycles/IPP-E21S03T03-translation-lookup-rendering.md) |
 | E21:S03:T04 | Translation workflow and review — [translation-workflow-and-review.md](../../../../docs/governance/standards/translation-workflow-and-review.md) |
-| E21:S03:T05 | Management tools — [translation-management-tools.md](../../../../docs/documentation/user-docs/translation-management-tools.md) |
-| E21:S03:T06 | Completeness reporting — `report_locale_completeness.py` |
+| E21:S03:T05 | Management tools — [translation-management-tools.md](../../../../docs/documentation/user-docs/translation-management-tools.md) — **COMPLETE** @ v0.21.3.5+1 |
+| E21:S03:T06 | Completeness reporting — `report_locale_completeness.py` — **COMPLETE** @ v0.21.3.6+1 |
+| E21:S03:T07 | Phase 3 E2E tests — [IPP-E21S03T07](../../../../docs/implementation-cycles/IPP-E21S03T07-test-translations-locale-support.md) |
 
 **Management scripts:** `validate_locale_translations.py`, `sync_locale_keys.py`, `scaffold_locale_trees.py`, `report_locale_completeness.py` under `packages/frameworks/workflow-mgt/scripts/`.
 

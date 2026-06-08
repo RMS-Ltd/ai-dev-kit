@@ -42,7 +42,7 @@ When editing this table, update `docs/project-agent-manifest.json` `taskRouting[
 
 | Task | Summary | Task doc |
 | ---- | ------- | -------- |
-| E21:S03:T07 | FR-006 Phase 3 — test translations and locale support (next epic-21 stream) | `docs/project-management/kanban/epics/epic-21/story-03-translation-and-localisation/T07-test-translations-and-locale-support.md` |
+| E21:S04:T01 | FR-006 Phase 3+ — cultural adaptation (next epic-21 stream) | `docs/project-management/kanban/epics/epic-21/story-04-cultural-adaptation/T01-research-cultural-requirements-for-target-locales.md` |
 
 Refresh from `kboard.md` when running UKW or RW Step 7; mirror into manifest `openWork[]` if changed.
 

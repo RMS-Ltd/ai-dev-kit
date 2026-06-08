@@ -30,9 +30,9 @@ housekeeping_policy: keep
   - Story: [`story-02-internationalisation-infrastructure.md`](story-02-internationalisation-infrastructure.md)
   - Tasks: T01–T07 COMPLETE
 
-- [ ] **E21:S03 – Translation and Localisation** - TODO (v0.21.3.0+0)
+- [x] **E21:S03 – Translation and Localisation** - COMPLETE (v0.21.3.7+1 — T01–T07 COMPLETE)
   - Story: [`story-03-translation-and-localisation.md`](story-03-translation-and-localisation.md)
-  - Tasks: T01-T07 TODO
+  - Tasks: T01–T07 COMPLETE
 
 - [ ] **E21:S04 – Cultural Adaptation** - TODO (v0.21.4.0+0)
   - Story: [`story-04-cultural-adaptation.md`](story-04-cultural-adaptation.md)
@@ -164,7 +164,7 @@ Implement translations and localisation for major languages.
 - [ ] E21:S03:T04 – Create translation workflow and review process
 - [x] E21:S03:T05 – Add translation management tools — ✅ COMPLETE (v0.21.3.5+1)
 - [x] E21:S03:T06 – Implement translation completeness tracking — ✅ COMPLETE (v0.21.3.6+1)
-- [ ] E21:S03:T07 – Test translations and locale support
+- [x] E21:S03:T07 – Test translations and locale support — ✅ COMPLETE (v0.21.3.7+1)
 
 > Full story: [`story-03-translation-and-localisation.md`](story-03-translation-and-localisation.md)
 

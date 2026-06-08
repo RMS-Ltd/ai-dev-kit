@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Completed Tasks
 
-**Last Updated:** 2026-06-08 (RW: E21:S03:T06 translation completeness tracking)
-**Version:** v0.21.3.6+1
+**Last Updated:** 2026-06-08 (RW: E21:S03:T07 Phase 3 translation locale E2E tests)
+**Version:** v0.21.3.7+1
 
 > **For MoSCOW prioritized tasks, see:** [`kboard.md`](kboard.md)  
 > **For completed FR/BR/UXR intake items, see:** [`intake-completed.md`](intake-completed.md)
@@ -19,6 +19,11 @@ housekeeping_policy: keep
 ---
 
 ## 20 Most Recently Completed Tasks
+
+#### **RW (2026-06-08)** — E21:S03:T07 @ **v0.21.3.7+1** (Phase 3 translation locale E2E tests; S03 closed)
+
+- **[E21:S03:T07](epics/epic-21/story-03-translation-and-localisation/T07-test-translations-and-locale-support.md)** — `test_fr006_phase3_translation_locale_e2e.py` (P3E1–P3E11); parametrized scaffold-locale setup-path + fallback tests; `pytest -m fr006` green.
+  **Completed:** `2026-06-08T14:30:00Z` | **Version:** `v0.21.3.7+1` | **Agent:** `RW E21:S03:T07 --art` | [FR-006](fr-br/FR-006-localization-language-selection-uk-us-english.md) | [IPP](../../../implementation-cycles/IPP-E21S03T07-test-translations-locale-support.md)
 
 #### **RW (2026-06-08)** — E21:S03:T06 @ **v0.21.3.6+1** (translation completeness tracking)
 

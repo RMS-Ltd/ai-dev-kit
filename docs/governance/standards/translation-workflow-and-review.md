@@ -190,7 +190,7 @@ Maintainer and contributor structural tooling (script-first; no `adk locale` sub
 | -------- | -------------------------- |
 | **RW (Release Workflow)** | Not required for translation-only PRs. RW is for versioned releases on the epic branch. |
 | **IPW / implementation** | Locale **process** changes use IPW on the host task; linguistic content uses this workflow only. |
-| **CI** | `pytest -m fr006` is the mandatory regression gate; `validate_locale_translations.py --strict` recommended when CI locale checks are added. |
+| **CI** | `pytest -m fr006` is the mandatory regression gate (includes Phase 3 E2E `tests/test_fr006_phase3_translation_locale_e2e.py` per [IPP-E21S03T07](../../implementation-cycles/IPP-E21S03T07-test-translations-locale-support.md)); `validate_locale_translations.py --strict` recommended when CI locale checks are added. |
 | **Greenfield sync** | Required when locale tree structure changes. |
 | **Management tools** | `validate_locale_translations.py` + `sync_locale_keys.py` — see [translation-management-tools.md](../../documentation/user-docs/translation-management-tools.md) |
 

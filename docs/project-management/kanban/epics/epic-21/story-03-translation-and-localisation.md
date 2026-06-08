@@ -8,12 +8,12 @@ housekeeping_policy: keep
 
 # Story 03 – Translation and Localisation
 
-**Status:** IN PROGRESS  
+**Status:** COMPLETE  
 **Priority:** LOW  
 **Estimated Effort:** [TBD]  
 **Created:** 2025-12-09  
-**Last updated:** 2026-06-08 (v0.21.3.6+1 — E21:S03:T06 COMPLETE)  
-**Version:** v0.21.3.6+1  
+**Last updated:** 2026-06-08 (v0.21.3.7+1 — E21:S03:T07 COMPLETE; story closed)  
+**Version:** v0.21.3.7+1  
 **Code:** E21S03
 
 ---
@@ -44,7 +44,7 @@ Translate framework content to major languages, establish translation workflow, 
   - Task: [`T05-add-translation-management-tools`](story-03-translation-and-localisation/T05-add-translation-management-tools.md)
 - [x] **E21:S03:T06 – Implement translation completeness tracking** - ✅ COMPLETE (v0.21.3.6+1)
   - Task: [`T06-implement-translation-completeness-tracking`](story-03-translation-and-localisation/T06-implement-translation-completeness-tracking.md)
-- [ ] **E21:S03:T07 – Test translations and locale support** - TODO
+- [x] **E21:S03:T07 – Test translations and locale support** - ✅ COMPLETE (v0.21.3.7+1)
   - Task: [`T07-test-translations-and-locale-support`](story-03-translation-and-localisation/T07-test-translations-and-locale-support.md)
 
 ---
@@ -57,7 +57,7 @@ Translate framework content to major languages, establish translation workflow, 
 - [x] Translation workflow established
 - [x] Translation management tools available
 - [x] Translation completeness tracked
-- [ ] Translations tested
+- [x] Translations tested
 
 ---
 

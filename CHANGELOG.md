@@ -10,10 +10,10 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 ---
 
 
-## [0.21.3.6+1] - 08-06-26
+## [0.21.3.7+1] - 08-06-26
 
-E21:S03:T06 — **Change implemented:** Translation completeness tracking (`report_locale_completeness.py`), tier metrics, and missing-translation alerts. SemVer **v0.4.1094+1**.
+E21:S03:T07 — **Change implemented:** Phase 3 E2E translation and locale support tests (`test_fr006_phase3_translation_locale_e2e.py`); E21:S03 story closed. SemVer **v0.4.1095+1**.
 
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.21.3.6+1.md)
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.21.3.7+1.md)
 
 ---
