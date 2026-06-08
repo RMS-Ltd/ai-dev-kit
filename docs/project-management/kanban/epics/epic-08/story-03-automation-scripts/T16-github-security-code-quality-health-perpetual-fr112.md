@@ -13,8 +13,8 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** Medium (ongoing)  
 **Created:** 2026-06-05  
-**Last updated:** 2026-06-08 (Wave 2b — autofix **17** `py/unused-import` in `release_metadata/` + `scripts/`/`tests/`; greenfield mirror in sync)  
-**Version Anchor:** v0.8.3.16+3  
+**Last updated:** 2026-06-08 (Wave 3b shipped **v0.8.3.16+5** — **11**-finding remediation; operator dashboard re-verify pending)  
+**Version Anchor:** v0.8.3.16+5 (Wave 3b)  
 **Code:** E08S03T16  
 **Task Type:** Perpetual Maintenance
 
@@ -218,7 +218,52 @@ Use **`RW E08:S03:T16`** for recurring security/Code Quality hygiene (BUILD incr
 | pytest | `release_metadata` + `tests/release_state/` — **14 passed** |
 | CQG | local monitor advisory (non-strict); `F401` proxy **0** post-fix |
 
-**Operator verify (TC14):** dashboard delta on [security/quality](https://github.com/RMS-Ltd/ai-dev-kit/security/quality) after merge to `main`.
+**Operator verify (TC14):** **CLOSED** Wave 3a — post–Wave 2b dashboard shows **3** maintainability + **8** reliability @ `main` `f7d8b155` (down from Wave 1 **146**/**28**); Wave 2b unused-import remediation **verified** (residual installer-script findings remain).
+
+---
+
+## Wave 3 re-scan manifest (2026-06-08 — Wave 3a)
+
+**Capture:** `main` @ **`f7d8b155`** (2026-06-08 11:45 UTC). Source: [Code Quality — Standard findings](https://github.com/RMS-Ltd/ai-dev-kit/security/quality) (`is:open`); code scanning `gh api` **0** open.
+
+| Surface | Open count | Score | Delta vs Wave 2b (`v0.8.3.16+3`) | Delta vs Wave 2a (`4c4e9275`) |
+| ------- | ---------- | ----- | -------------------------------- | ----------------------------- |
+| [Code scanning](https://github.com/RMS-Ltd/ai-dev-kit/security/code-scanning) | **0** | 5 fixed | unchanged | unchanged |
+| Standard — maintainability | **3** | **Good** | Wave 2b cleared `py/unused-import`; **3** residuals | score band held |
+| Standard — reliability | **8** | **Good** | installer-script residuals under Good band | score band held |
+| [AI findings](https://github.com/RMS-Ltd/ai-dev-kit/security/quality/ai-findings) | lag-accepted | — | T14 closure unchanged | — |
+
+**Standard findings rule breakdown @ `f7d8b155` (11 rules, `is:open`):**
+
+| UI rule label | CodeQL rule (approx.) | Open | Band | Wave 3b disposition |
+| ------------- | --------------------- | ---- | ---- | ------------------- |
+| 'except' clause does nothing | `py/empty-except` | **4** | Reliability | Fix — `install_kanban_framework.py` (×2) + `install_package_from_release.py` (×2 mirror) |
+| Archive extraction | `py/tarslip` | **2** | Reliability | Fix — `install_package_from_release.py` `_safe_tar_extract` (×2 mirror) |
+| Statement has no effect | `py/ineffectual-statement` | **1** | Maintainability | Fix — `ukw_syntax_parser.py` stray expr (×2 mirror) |
+| Unused local variable | `py/unused-local-variable` | **2** | Maintainability | Fix — `import_legacy.py`, `run_notion_mcp_import.py` |
+| **Subtotal maintainability** | — | **3** | **Good** | — |
+| **Subtotal reliability** | — | **8** | **Good** | — |
+
+**TC14 / Wave 2b verification note:** Operator confirms **17** unused-import fixes reflected; residual **11** standard findings are installer/CQG-targeted (not Wave 2b scope miss).
+
+### Wave 3b remediation (2026-06-08)
+
+**Theme:** Reliability-first burn-down per IPP §8 priority **#4** then maintainability **#3** — **11** targets from Wave 3a rule table.
+
+| Rule | Fix | Files |
+| ---- | --- | ----- |
+| `py/empty-except` (×4) | `contextlib.suppress` | `install_kanban_framework.py` (×2 mirror) |
+| `py/tarslip` (×2) | Per-member `tar.extract` after path validation | `install_package_from_release.py` (×2 mirror) |
+| `py/empty-except` ImportError (×2) | `suppress(ImportError)` | `install_package_from_release.py` (×2 mirror) |
+| `py/ineffectual-statement` (×1) | Remove stray path expression | `ukw_syntax_parser.py` (×2 mirror) |
+| `py/unused-local-variable` (×2) | `_build` prefix; drop unused `batch` load | `import_legacy.py`, `run_notion_mcp_import.py` |
+
+| Verification | Result |
+| ------------ | ------ |
+| `pytest tests/` | **521 passed**, 2 skipped |
+| CQG (`validate_code_quality_gate.py`) | exit **0** (advisory threshold; non-strict) |
+| `sync_greenfield_install.py --check` | in sync |
+| Operator dashboard (TC18) | **Pending** post-merge to `main` |
 
 **Cross-lane notes:**
 
@@ -252,7 +297,9 @@ Use **`RW E08:S03:T16`** for recurring security/Code Quality hygiene (BUILD incr
 - [x] **AC4:** First attributed RW records baseline open counts on `main` (code scanning + code quality) — **v0.8.3.16+1** @ `777e956`.
 - [x] **AC5 (Wave 1 re-scan):** Wave 1 manifest @ `f6aa4dca` recorded with rule breakdown + cross-lane deltas ([IPP §4 Wave 1 re-scan](../../../../../implementation-cycles/IPP-E08S03T16-github-security-code-quality-health-perpetual-fr112.md)).
 - [x] **AC6 (Wave 2a):** Wave 2 manifest @ `4c4e9275` with delta vs Wave 1 + T12 Good; shipped **v0.8.3.16+2** (docs-only).
-- [x] **AC7 (Wave 2b):** First themed remediation RW — **17** `py/unused-import` autofix (`release_metadata/` ×2 trees + `scripts/`/`tests/`); pytest green; greenfield `--check` OK; operator dashboard verify pending.
+- [x] **AC7 (Wave 2b):** First themed remediation RW — **17** `py/unused-import` autofix; pytest green; greenfield `--check` OK; **TC14 closed** Wave 3a.
+- [x] **AC8 (Wave 3a):** Wave 3 manifest **3** M + **8** R @ `f7d8b155`; shipped **v0.8.3.16+4** (docs-only).
+- [x] **AC9 (Wave 3b):** Reliability-first burn-down of **11** residuals shipped **v0.8.3.16+5**; CQG + pytest green; operator post-merge dashboard verify **pending** (TC18).
 
 ---
 

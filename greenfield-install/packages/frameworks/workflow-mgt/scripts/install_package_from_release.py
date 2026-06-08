@@ -15,6 +15,7 @@ import argparse
 import hashlib
 import sys
 import tarfile
+from contextlib import suppress
 import tempfile
 from pathlib import Path
 from typing import Optional
@@ -46,10 +47,14 @@ def _safe_tar_extract(tar: tarfile.TarFile, destination: Path) -> None:
         target = (dest / member.name).resolve()
         if target != dest and dest not in target.parents:
             raise ValueError(f"Unsafe path in archive: {member.name}")
-    extract_kwargs: dict = {}
-    if sys.version_info >= (3, 12):
-        extract_kwargs["filter"] = "data"
-    tar.extractall(dest, **extract_kwargs)
+    for member in tar.getmembers():
+        member_path = (dest / member.name).resolve()
+        if member_path != dest and dest not in member_path.parents:
+            raise ValueError(f"Unsafe path in archive: {member.name}")
+        extract_kwargs: dict = {}
+        if sys.version_info >= (3, 12):
+            extract_kwargs["filter"] = "data"
+        tar.extract(member, path=dest, **extract_kwargs)
 
 
 def parse_arguments() -> argparse.Namespace:
@@ -282,12 +287,10 @@ def extract_package(
             if renamed and verbose:
                 print(f"   ✅ Relocated {renamed} legacy framework dir(s) to slug names")
 
-            try:
+            with suppress(ImportError):
                 from install_ux_version import print_legacy_framework_layout_warning
 
                 print_legacy_framework_layout_warning(frameworks_root=install_dir)
-            except ImportError:
-                pass
             if verbose:
                 print(f"   ✅ Package extracted: {target_path}")
             

@@ -34,8 +34,26 @@ T04_DOC = (
     / "T04-implement-sqlite-changelog-semver-registry-backend.md"
 )
 PLAN_TEMPLATE = REPO_ROOT / "packages/frameworks/kanban/templates/PLAN_DOC_TEMPLATE.md"
-REGISTRY = REPO_ROOT / "semver-registry.yaml"
 MAIN_CHANGELOG = REPO_ROOT / "CHANGELOG.md"
+
+
+def resolve_registry_yaml_path() -> Path:
+    """Production registry YAML: root file pre-cutover, archive path post-cutover."""
+    root = REPO_ROOT / "semver-registry.yaml"
+    if root.exists():
+        return root
+    if RW_CONFIG.exists():
+        cfg = yaml.safe_load(RW_CONFIG.read_text(encoding="utf-8")) or {}
+        ingest = cfg.get("ingest", {}).get("semver_registry_file")
+        if ingest:
+            candidate = REPO_ROOT / ingest
+            if candidate.exists():
+                return candidate
+    archive = (
+        REPO_ROOT
+        / "docs/changelog-and-release-notes/changelog-archive/semver-registry-legacy-final.yaml"
+    )
+    return archive
 
 
 def _run_validator(script: str, args: list[str]) -> subprocess.CompletedProcess:
@@ -107,8 +125,9 @@ class TestWave4Volume:
 
     def test_RW_V04_registry_yaml_load_benchmark(self):
         """RW-V04: baseline YAML parse time for production semver-registry.yaml."""
-        assert REGISTRY.exists()
-        data = REGISTRY.read_bytes()
+        registry = resolve_registry_yaml_path()
+        assert registry.exists(), f"registry YAML not found (checked root + rw-config ingest + archive)"
+        data = registry.read_bytes()
         start = time.perf_counter()
         for _ in range(5):
             yaml.safe_load(data)
@@ -120,13 +139,14 @@ class TestWave4Volume:
 
     def test_RW_V04_sqlite_lookup_benchmark(self, tmp_path):
         """RW-V04 extension: SQLite indexed lookup vs YAML load."""
-        if not REGISTRY.exists():
+        registry = resolve_registry_yaml_path()
+        if not registry.exists():
             pytest.skip("production registry missing")
         from release_state.import_legacy import import_registry_yaml
         from release_state.store import lookup_semver_by_internal
 
         db = tmp_path / "bench.db"
-        import_registry_yaml(REGISTRY, db, changelog_dir=None)
+        import_registry_yaml(registry, db, changelog_dir=None)
         sample = "0.2.17.2+5"
         start = time.perf_counter()
         for _ in range(50):

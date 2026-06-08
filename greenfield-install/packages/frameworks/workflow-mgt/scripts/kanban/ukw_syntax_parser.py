@@ -408,7 +408,6 @@ def find_tasks_in_story(epic: int, story: int, kanban_root: Path) -> List[Tuple[
     story_path = story_dirs[0]
     
     # Find all task documents in story directory
-    story_path / "T*-*.md"
     task_files = list(story_path.glob("T*-*.md"))
     
     for task_file in task_files:
