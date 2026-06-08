@@ -12,8 +12,8 @@ housekeeping_policy: keep
 **Priority:** MEDIUM  
 **Estimated Effort:** [TBD]  
 **Created:** 2025-12-09  
-**Last updated:** 2026-06-08 (UKW — S03 translation pipeline COMPLETE @ v0.21.3.7+1; S04+ next)  
-**Version:** v0.21.3.7+1  
+**Last updated:** 2026-06-08 (v0.21.9.3+1 – Kanban documentation setup)
+**Version:** v0.21.9.3+1  
 **Branch:** `epic/21-internationalisation-localisation`  
 **Version Schema:** `0.21.S.T+B`  
 **Production URL:** [N/A for this repo]
@@ -54,9 +54,9 @@ housekeeping_policy: keep
   - Story: [`story-08-accessibility.md`](story-08-accessibility.md)
   - Tasks: T01–T03 COMPLETE; T04–T07 DEFERRED (Layers 2–5)
 
-- [ ] **E21:S09 – Epic Housekeeping** - IN PROGRESS (v0.21.9.2+2 — T01–T02 COMPLETE)
+- [ ] **E21:S09 – Epic Housekeeping** - IN PROGRESS (v0.21.9.3+1 — T01–T03 COMPLETE)
   - Story: [`story-09-epic-housekeeping.md`](story-09-epic-housekeeping.md)
-  - Tasks: T01 COMPLETE @ v0.21.9.1+1; T02 COMPLETE @ v0.21.9.2+2
+  - Tasks: T01 COMPLETE @ v0.21.9.1+1; T02 COMPLETE @ v0.21.9.2+2; T03 COMPLETE @ v0.21.9.3+1
 
 
 ---
@@ -112,7 +112,7 @@ It ensures that:
 
 **Status:** COMPLETE  
 **Priority:** MEDIUM  
-**Last updated:** 2026-06-07 (v0.21.1.7+1 — FR-006 Phase 1)
+**Last updated:** 2026-06-08 (v0.21.9.3+1 – Kanban documentation setup)
 
 **Goal:**  
 Add language selection prompt at the very beginning of all setup processes, starting with UK and US English variants.
@@ -125,7 +125,7 @@ Add language selection prompt at the very beginning of all setup processes, star
 
 **Status:** COMPLETE  
 **Priority:** MEDIUM  
-**Last updated:** 2026-06-07 (v0.21.2.7+1 — fallback chain + ADR-024)
+**Last updated:** 2026-06-08 (v0.21.9.3+1 – Kanban documentation setup)
 
 **Goal:**  
 Set up i18n infrastructure and framework for broader language support beyond UK/US English.
@@ -138,7 +138,7 @@ Set up i18n infrastructure and framework for broader language support beyond UK/
 
 **Status:** IN PROGRESS (Layer 0–1 COMPLETE)  
 **Priority:** MEDIUM  
-**Last updated:** 2026-06-07 (v0.21.8.3+1 — Layer 1 CLI shipped)
+**Last updated:** 2026-06-08 (v0.21.9.3+1 – Kanban documentation setup)
 
 **Goal:**  
 Layered accessibility programme per ADR-025; CLI-first delivery (Layers 0–1 complete; Layers 2–5 deferred).
@@ -151,7 +151,7 @@ Layered accessibility programme per ADR-025; CLI-first delivery (Layers 0–1 co
 
 **Status:** COMPLETE  
 **Priority:** LOW  
-**Last updated:** 2026-06-08 (v0.21.3.7+1 — T01–T07 COMPLETE)
+**Last updated:** 2026-06-08 (v0.21.9.3+1 – Kanban documentation setup)
 
 **Goal:**  
 Translate framework content to major languages; establish workflow, management tools, completeness tracking, and E2E verification.
@@ -167,7 +167,7 @@ Translate framework content to major languages; establish workflow, management t
 **Status:** TODO  
 **Priority:** LOW  
 **Estimated Effort:** [TBD]  
-**Last updated:** 2025-12-09 (v0.21.4.0+0 – Story created)
+**Last updated:** 2026-06-08 (v0.21.9.3+1 – Kanban documentation setup)
 
 **Goal:**  
 Adapt content and features for different cultures and regions.
