@@ -9,12 +9,10 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
----
+## [0.21.9.3+1] - 08-06-26
 
-## [0.8.3.16+9] - 08-06-26
+E21:S09:T03 — **Change implemented:** PR #47 merge hygiene, CI parity, adopter-public doc gates (pre-commit + IPW + agent rules). SemVer **v0.4.11+1**.
 
-E08:S03:T16 — **Attempted fix:** Wave 3e — autofix PR pytest triage (#43/#44). SemVer **v0.4.11+9**.
-
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.8.3.16+9.md)
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.21.9.3+1.md)
 
 ---

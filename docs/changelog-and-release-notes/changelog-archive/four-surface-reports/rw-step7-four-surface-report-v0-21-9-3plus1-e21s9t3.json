@@ -1,0 +1,99 @@
+{
+  "auxiliary_surfaces": {
+    "epic_doc": {
+      "changes": [
+        "Updated Epic Last updated and Version to v0.21.9.3+1",
+        "S09 T03 COMPLETE in story checklist"
+      ],
+      "notes": [],
+      "paths": [
+        "/Users/rms/Documents/projects/ai-dev-kit-e21/docs/kanban/epics/epic-21/Epic-21.md"
+      ],
+      "surface": "epic_doc",
+      "touched": true
+    },
+    "story_doc": {
+      "changes": [
+        "T03 marked COMPLETE @ v0.21.9.3+1",
+        "Story version anchor v0.21.9.3+1"
+      ],
+      "notes": [],
+      "paths": [
+        "/Users/rms/Documents/projects/ai-dev-kit-e21/docs/kanban/epics/epic-21/story-09-epic-housekeeping.md"
+      ],
+      "surface": "story_doc",
+      "touched": true
+    },
+    "uncategorized": {
+      "changes": [
+        "AGENTS.md openWork → E21:S04:T01",
+        "docs/project-agent-manifest.json openWork sync"
+      ],
+      "notes": [],
+      "paths": [
+        "/Users/rms/Documents/projects/ai-dev-kit-e21/AGENTS.md",
+        "/Users/rms/Documents/projects/ai-dev-kit-e21/docs/project-agent-manifest.json"
+      ],
+      "surface": "uncategorized",
+      "touched": true
+    }
+  },
+  "contract": "FR-092 / ADR-018 (RW Step 7 four-surface reconciliation)",
+  "invocation_context": "rw_step_7",
+  "release_scope": {
+    "epic": 21,
+    "story": 9,
+    "task": 3,
+    "task_id": "E21:S09:T03",
+    "version_string": "v0.21.9.3+1"
+  },
+  "stamp_evidence": {},
+  "summary": {
+    "stamps_appended_with_evidence": 0,
+    "stamps_preserved_existing": 0,
+    "stamps_skipped_no_evidence": 0,
+    "total_changes": 8,
+    "touched_surfaces": [
+      "task_doc",
+      "kboard"
+    ],
+    "untouched_surfaces": [
+      "fbu_doc"
+    ]
+  },
+  "surfaces": {
+    "fbu_doc": {
+      "changes": [],
+      "notes": [
+        "No FR/BR/UXR doc tied to this release scope."
+      ],
+      "paths": [],
+      "surface": "fbu_doc",
+      "touched": false
+    },
+    "kboard": {
+      "changes": [
+        "Board Last Updated + Version metadata → v0.21.9.3+1"
+      ],
+      "notes": [],
+      "paths": [
+        "/Users/rms/Documents/projects/ai-dev-kit-e21/docs/kanban/kboard.md"
+      ],
+      "surface": "kboard",
+      "touched": true
+    },
+    "task_doc": {
+      "changes": [
+        "T03 status COMPLETE, version anchor v0.21.9.3+1",
+        "Acceptance criteria RW checkbox closed"
+      ],
+      "notes": [],
+      "paths": [
+        "/Users/rms/Documents/projects/ai-dev-kit-e21/docs/kanban/epics/epic-21/story-09-epic-housekeeping/T03-pr-merge-ci-and-adopter-public-doc-gates.md"
+      ],
+      "surface": "task_doc",
+      "touched": true
+    }
+  },
+  "timestamp_utc": "2026-06-08 14:55 UTC"
+}

@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Board
 
-**Last Updated:** 2026-06-08 (UKW — E21:S03 closed; **E21:S04:T01** promoted S-band next stream)
-**Version:** v0.21.3.7+1
+**Last Updated:** 2026-06-08 (RW: E21:S09:T03)
+**Version:** v0.21.9.3+1
 
 **Active board contract:** **Sole active MoSCOW board** ([ADR-018](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/architecture/standards-and-adrs/ADR-018-single-kanban-board-consolidation.md)). Rows are **live work** (TODO / IN PROGRESS / OPEN / WAITING / PERPETUAL) plus filed **Could Have** backlog. **Verification (V)** band holds task-shipped / FBU-open items (`⏳ WAITING`). Remove **terminal** rows and archive prose (use [`kanban-completed.md`](kanban-completed.md) / [`intake-completed.md`](intake-completed.md)).
 
@@ -30,11 +30,11 @@ housekeeping_policy: keep
 
 *(E10:S01 story **COMPLETE** @ v0.10.1.10+2 — RC **APPROVE**; Epic 10 IN PROGRESS — E10:S02 TODO; see [`kanban-completed.md`](kanban-completed.md).)*
 
-- **E05:S09:T15** – Docusaurus adopter-public publish allowlist (FR-114) - 📋 TODO (HIGH, **v0.5.9.15+1** RW -k intake) | [Task](epics/epic-05/story-09-docusaurus-documentation-portal/T15-docusaurus-adopter-public-publish-allowlist-fr114.md) | [FR-114](fr-br/FR-114-split-documentation-surfaces-docusaurus-public-notion-maintainer-kb.md) | —No IPP— | Last modified: 2026-06-06 16:16 UTC
+- **E05:S09:T15** – Docusaurus adopter-public publish allowlist (FR-114) - 📋 TODO (HIGH, **v0.5.9.15+1** RW -k intake) | [Task](epics/epic-05/story-09-docusaurus-documentation-portal/T15-docusaurus-adopter-public-publish-allowlist-fr114.md) | [FR-114](fr-br/FR-114-split-documentation-surfaces-docusaurus-public-notion-maintainer-kb.md) | [—IPP—](../../implementation-cycles/IPP-E05S09T15-docusaurus-adopter-public-publish-allowlist-fr114.md) | Last modified: 2026-06-06 16:16 UTC
 
-- **E05:S08:T03** – Big-bang Notion migration maintainer KB (FR-114) - 🔄 IN PROGRESS (HIGH, **v0.5.8.3+2** Notion clean-slate policy) | [Task](epics/epic-05/story-08-knowledge-base/T03-big-bang-notion-migration-maintainer-kb-fr114.md) | [FR-114](fr-br/FR-114-split-documentation-surfaces-docusaurus-public-notion-maintainer-kb.md) | —No IPP— | Last modified: 2026-06-06 16:51 UTC
+- **E05:S08:T03** – Big-bang Notion migration maintainer KB (FR-114) - 🔄 IN PROGRESS (HIGH, **v0.5.8.3+2** Notion clean-slate policy) | [Task](epics/epic-05/story-08-knowledge-base/T03-big-bang-notion-migration-maintainer-kb-fr114.md) | [FR-114](fr-br/FR-114-split-documentation-surfaces-docusaurus-public-notion-maintainer-kb.md) | [—IPP—](../../implementation-cycles/IPP-E05S08T03-big-bang-notion-migration-maintainer-kb-fr114.md) | Last modified: 2026-06-06 16:51 UTC
 
-- **E05:S08:T04** – Agent Notion-first authoring and bootstrap routing (FR-114) - 📋 TODO (HIGH, **v0.5.8.4+1** RW -k intake) | [Task](epics/epic-05/story-08-knowledge-base/T04-agent-notion-first-authoring-and-bootstrap-routing-fr114.md) | [FR-114](fr-br/FR-114-split-documentation-surfaces-docusaurus-public-notion-maintainer-kb.md) | —No IPP— | Last modified: 2026-06-06 16:22 UTC
+- **E05:S08:T04** – Agent Notion-first authoring and bootstrap routing (FR-114) - 📋 TODO (HIGH, **v0.5.8.4+1** RW -k intake) | [Task](epics/epic-05/story-08-knowledge-base/T04-agent-notion-first-authoring-and-bootstrap-routing-fr114.md) | [FR-114](fr-br/FR-114-split-documentation-surfaces-docusaurus-public-notion-maintainer-kb.md) | [—IPP—](../../implementation-cycles/IPP-E05S08T04-agent-notion-first-authoring-and-bootstrap-routing-fr114.md) | Last modified: 2026-06-06 16:22 UTC
 
 - **E08:S03:T12** – Code Quality maintainability backlog (BR-099) - 🔄 IN PROGRESS (MEDIUM, **v0.8.3.12+9** wave-6 IPW; **103/Fair** @ `d5c4bca5`; **`implement wave 6`**) | [Task](epics/epic-08/story-03-automation-scripts/T12-code-quality-maintainability-backlog-br099.md) | [BR-099](fr-br/BR-099-code-quality-maintainability-backlog.md) | [—IPP—](../../implementation-cycles/IPP-E08S03T12-code-quality-maintainability-backlog-br099.md) | Last modified: 2026-06-06 17:01 UTC
 

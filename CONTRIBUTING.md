@@ -61,8 +61,10 @@ If you'd like to contribute code:
 1. **Fork the repository**
 2. **Create a feature branch** (`git checkout -b feature/AmazingFeature`)
 3. **Make your changes**
-4. **Test thoroughly**
-5. **Commit your changes** (`git commit -m 'Add some AmazingFeature'`)
+4. **Test thoroughly** — including maintainer gates when applicable:
+   - **Adopter docs** (`docs/documentation/`, `docs/guides/`): [portal link rules](docs/governance/standards/adopter-public-documentation-authoring.md) — `pytest tests/test_portal_br068_monorepo_links.py tests/test_portal_fr114_allowlist.py`
+   - **Framework packages** (`packages/frameworks/`): `python scripts/sync_greenfield_install.py` then `--check`
+5. **Commit your changes** (`git commit -m 'Add some AmazingFeature'`) — install [pre-commit](https://pre-commit.com/) hooks for automatic checks
 6. **Push to the branch** (`git push origin feature/AmazingFeature`)
 7. **Open a Pull Request**
 

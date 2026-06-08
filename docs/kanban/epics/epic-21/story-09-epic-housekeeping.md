@@ -12,8 +12,8 @@ housekeeping_policy: keep
 **Priority:** MEDIUM  
 **Estimated Effort:** Small  
 **Created:** 2026-06-08  
-**Last updated:** 2026-06-08 (v0.21.9.2+2 — T02 bootstrap open-work refresh)  
-**Version:** v0.21.9.2+2  
+**Last updated:** 2026-06-08 (v0.21.9.3+1 – Kanban documentation setup)
+**Version:** v0.21.9.3+1
 **Code:** E21S09
 
 ---
@@ -30,6 +30,8 @@ Administrative reconciliation for Epic 21 after S01–S02 and S08 Layer 0–1 sh
   - Task: [`T01-fr006-phase2-header-and-status-reconciliation`](story-09-epic-housekeeping/T01-fr006-phase2-header-and-status-reconciliation.md)
 - [x] **E21:S09:T02 – Legacy epic-21 story folder rationalization** - COMPLETE (v0.21.9.2+2)
   - Task: [`T02-legacy-story-folder-rationalization`](story-09-epic-housekeeping/T02-legacy-story-folder-rationalization.md)
+- [x] **E21:S09:T03 – PR merge CI parity and adopter-public doc gates** - COMPLETE (v0.21.9.3+1)
+  - Task: [`T03-pr-merge-ci-and-adopter-public-doc-gates`](story-09-epic-housekeeping/T03-pr-merge-ci-and-adopter-public-doc-gates.md)
 
 ---
 

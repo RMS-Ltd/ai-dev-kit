@@ -39,6 +39,24 @@ _DEFAULT_CHECKS: list[dict] = [
         "cwd": None,
     },
     {
+        "id": "portal-publish-scope",
+        "paths": [
+            "docs/guides/**",
+            "docs/documentation/**",
+            "docs/developer-tools/ide-whitelist-guide.md",
+        ],
+        "command": [
+            sys.executable,
+            "-m",
+            "pytest",
+            "tests/test_portal_br068_monorepo_links.py",
+            "tests/test_portal_fr114_allowlist.py",
+            "-q",
+            "--tb=line",
+        ],
+        "cwd": None,
+    },
+    {
         "id": "docusaurus",
         "paths": [
             "portal/**",

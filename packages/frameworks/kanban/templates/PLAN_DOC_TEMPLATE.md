@@ -154,7 +154,7 @@ Ordered doc work during implementation (derived from §5–§6), e.g. update KB 
 | ------ | -------------- | ------------------ | ------------------------------- | --------- | -------------------- |
 | D-U1 | … | PUBLISHED \| NOT_APPLICABLE | … | evergreen \| … | … |
 
-**Housing rules:** One authoritative doc per topic; prefer updating an existing doc over creating a duplicate; IPP lives under `docs/implementation-cycles/`; Docusaurus surfaces per BR-066.
+**Housing rules:** One authoritative doc per topic; prefer updating an existing doc over creating a duplicate; IPP lives under `docs/implementation-cycles/`; adopter-public paths per [adopter-public-documentation-authoring.md](../../../docs/governance/standards/adopter-public-documentation-authoring.md) (BR-068 / FR-114).
 
 ---
 
@@ -163,6 +163,8 @@ Ordered doc work during implementation (derived from §5–§6), e.g. update KB 
 - [ ] …
 - [ ] All §5 UPDATE/CREATE items implemented or explicitly deferred with reason
 - [ ] All §6 `PUBLISHED` paths exist and are linked from task doc (or validator passes)
+- [ ] **Portal (if any §6 path under `docs/guides/` or `docs/documentation/`):** `pytest tests/test_portal_br068_monorepo_links.py tests/test_portal_fr114_allowlist.py -q` green; cross-surface links use GitHub blob URLs
+- [ ] **Greenfield (if any §6 path under `packages/frameworks/`):** `python scripts/sync_greenfield_install.py --check` green; mirror committed in same change set
 
 ---
 
