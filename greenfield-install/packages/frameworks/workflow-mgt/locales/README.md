@@ -43,7 +43,9 @@ locales/
 
 See [`manifest.yaml`](manifest.yaml). Kanban templates: `packages/frameworks/kanban/locales/`.
 
-**Content inventory (E21:S03:T01):** [translatable-content-inventory.md](../../../../docs/governance/standards/translatable-content-inventory.md) — canonical catalog for translation handoffs.
+**Content inventory (E21:S03:T01):** [translatable-content-inventory.md](../../../../docs/governance/standards/translatable-content-inventory.md)  
+**Rollout matrix (E21:S03:T02):** [locale-rollout-matrix.md](../../../../docs/governance/standards/locale-rollout-matrix.md)  
+**Scaffold tool:** [`scaffold_locale_trees.py`](../scripts/scaffold_locale_trees.py)
 
 ## Phase 2 roadmap
 
@@ -55,7 +57,8 @@ See [`manifest.yaml`](manifest.yaml). Kanban templates: `packages/frameworks/kan
 | E21:S02:T05 | Date/time/number formatting (`locale_formatting.py`) — **COMPLETE** @ v0.21.2.5+1 |
 | E21:S02:T06 | `resolve_locale_key()` — **COMPLETE** @ v0.21.2.6+1 |
 | E21:S02:T07 | Extended fallback chain (`language_fallback_chain`) — **COMPLETE** @ v0.21.2.7+1 |
-| E21:S03:T01 | Extract installer/CLI keys + inventory — **IN PROGRESS** |
+| E21:S03:T01 | Extract installer/CLI keys + inventory — **COMPLETE** @ v0.21.3.1+1 |
+| E21:S03:T02 | Scaffold 9 major-language locale trees — **COMPLETE** |
 
 Detection APIs live in [`localisation_config.py`](../scripts/localisation_config.py): `detect_system_locale`, `detect_browser_locale`, `detect_env_locale`, `map_to_supported_locale`.
 

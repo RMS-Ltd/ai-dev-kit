@@ -2,17 +2,17 @@ version: 2
 default_locale: en-GB
 framework: workflow-mgt
 supported_locales:
-  - en-GB
-  - en-US
-  - es
-  - fr
-  - de
-  - zh-CN
-  - zh-TW
-  - ja
-  - pt
-  - ru
-  - ar
+- en-GB
+- en-US
+- es
+- fr
+- de
+- zh-CN
+- zh-TW
+- ja
+- pt
+- ru
+- ar
 locales:
   en-GB:
     scaffolds:
@@ -24,6 +24,87 @@ locales:
       errors: keys/errors.yaml
       installer: keys/installer.yaml
   en-US:
+    scaffolds:
+      changelog_stub: scaffolds/changelog_stub.md
+      version_scaffold_decline: scaffolds/version_scaffold_decline.txt
+      changelog_scaffold_decline: scaffolds/changelog_scaffold_decline.txt
+    keys:
+      cli: keys/cli.yaml
+      errors: keys/errors.yaml
+      installer: keys/installer.yaml
+  es:
+    scaffolds:
+      changelog_stub: scaffolds/changelog_stub.md
+      version_scaffold_decline: scaffolds/version_scaffold_decline.txt
+      changelog_scaffold_decline: scaffolds/changelog_scaffold_decline.txt
+    keys:
+      cli: keys/cli.yaml
+      errors: keys/errors.yaml
+      installer: keys/installer.yaml
+  fr:
+    scaffolds:
+      changelog_stub: scaffolds/changelog_stub.md
+      version_scaffold_decline: scaffolds/version_scaffold_decline.txt
+      changelog_scaffold_decline: scaffolds/changelog_scaffold_decline.txt
+    keys:
+      cli: keys/cli.yaml
+      errors: keys/errors.yaml
+      installer: keys/installer.yaml
+  de:
+    scaffolds:
+      changelog_stub: scaffolds/changelog_stub.md
+      version_scaffold_decline: scaffolds/version_scaffold_decline.txt
+      changelog_scaffold_decline: scaffolds/changelog_scaffold_decline.txt
+    keys:
+      cli: keys/cli.yaml
+      errors: keys/errors.yaml
+      installer: keys/installer.yaml
+  zh-CN:
+    scaffolds:
+      changelog_stub: scaffolds/changelog_stub.md
+      version_scaffold_decline: scaffolds/version_scaffold_decline.txt
+      changelog_scaffold_decline: scaffolds/changelog_scaffold_decline.txt
+    keys:
+      cli: keys/cli.yaml
+      errors: keys/errors.yaml
+      installer: keys/installer.yaml
+  zh-TW:
+    scaffolds:
+      changelog_stub: scaffolds/changelog_stub.md
+      version_scaffold_decline: scaffolds/version_scaffold_decline.txt
+      changelog_scaffold_decline: scaffolds/changelog_scaffold_decline.txt
+    keys:
+      cli: keys/cli.yaml
+      errors: keys/errors.yaml
+      installer: keys/installer.yaml
+  ja:
+    scaffolds:
+      changelog_stub: scaffolds/changelog_stub.md
+      version_scaffold_decline: scaffolds/version_scaffold_decline.txt
+      changelog_scaffold_decline: scaffolds/changelog_scaffold_decline.txt
+    keys:
+      cli: keys/cli.yaml
+      errors: keys/errors.yaml
+      installer: keys/installer.yaml
+  pt:
+    scaffolds:
+      changelog_stub: scaffolds/changelog_stub.md
+      version_scaffold_decline: scaffolds/version_scaffold_decline.txt
+      changelog_scaffold_decline: scaffolds/changelog_scaffold_decline.txt
+    keys:
+      cli: keys/cli.yaml
+      errors: keys/errors.yaml
+      installer: keys/installer.yaml
+  ru:
+    scaffolds:
+      changelog_stub: scaffolds/changelog_stub.md
+      version_scaffold_decline: scaffolds/version_scaffold_decline.txt
+      changelog_scaffold_decline: scaffolds/changelog_scaffold_decline.txt
+    keys:
+      cli: keys/cli.yaml
+      errors: keys/errors.yaml
+      installer: keys/installer.yaml
+  ar:
     scaffolds:
       changelog_stub: scaffolds/changelog_stub.md
       version_scaffold_decline: scaffolds/version_scaffold_decline.txt

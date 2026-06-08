@@ -54,7 +54,7 @@ packages/frameworks/{package}/locales/
 | `scaffolds/` | No | Yes | RW installer scaffold fragments |
 | `keys/` | Yes | Yes | YAML key catalogs for short strings |
 
-**Physical locale dirs (T02):** `en-GB`, `en-US` only. Additional FR-006 codes appear in manifest `supported_locales` until S03+ stories add on-disk trees.
+**Physical locale dirs:** `en-GB`, `en-US`, plus nine scaffold locales (`es`, `fr`, `de`, `zh-CN`, `zh-TW`, `ja`, `pt`, `ru`, `ar`) per [locale-rollout-matrix.md](locale-rollout-matrix.md) (E21:S03:T02).
 
 ### 2.2 Locale codes (BCP 47)
 
@@ -160,6 +160,7 @@ python scripts/sync_greenfield_install.py --check
 ## References
 
 - [translatable-content-inventory.md](translatable-content-inventory.md) — canonical content catalog (E21:S03:T01)
+- [locale-rollout-matrix.md](locale-rollout-matrix.md) — priority tiers and per-locale ownership (E21:S03:T02)
 - [ADR-024](../../architecture/standards-and-adrs/ADR-024-i18n-framework-strategy.md)
 - [IPP-E21S02T02](../../implementation-cycles/IPP-E21S02T02-locale-file-structure.md)
 - [kanban/locales/README.md](../../../packages/frameworks/kanban/locales/README.md)

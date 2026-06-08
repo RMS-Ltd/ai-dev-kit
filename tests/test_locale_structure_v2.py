@@ -13,6 +13,8 @@ CONVENTIONS = (
 )
 
 PHYSICAL_LOCALES = ("en-GB", "en-US")
+SCAFFOLD_LOCALES = ("es", "fr", "de", "zh-CN", "zh-TW", "ja", "pt", "ru", "ar")
+ALL_ON_DISK_LOCALES = PHYSICAL_LOCALES + SCAFFOLD_LOCALES
 KEY_FILES = ("cli.yaml", "errors.yaml")
 WF_KEY_FILES = ("cli.yaml", "errors.yaml", "installer.yaml")
 FR006_SUPPORTED = (
@@ -69,7 +71,7 @@ def test_v2_key_files_exist_both_packages():
 
 def test_v3_manifest_keys_paths_resolve(kanban_manifest, wf_manifest):
     """V3: Manifest keys category paths exist."""
-    for locale in PHYSICAL_LOCALES:
+    for locale in ALL_ON_DISK_LOCALES:
         for key_name, rel in kanban_manifest["locales"][locale]["keys"].items():
             path = KANBAN_LOCALES / locale / rel
             assert path.is_file(), f"kanban {locale} keys.{key_name}"

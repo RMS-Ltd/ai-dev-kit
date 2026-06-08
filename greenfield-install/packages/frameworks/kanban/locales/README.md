@@ -114,6 +114,7 @@ Plus `tests/test_commands.py` init localisation tests (see `TestInitCommand`).
 | Task | Change |
 | ---- | ------ |
 | E21:S03:T01 | Translatable content inventory — [translatable-content-inventory.md](../../../../docs/governance/standards/translatable-content-inventory.md) |
+| E21:S03:T02 | Major-language scaffold trees — [locale-rollout-matrix.md](../../../../docs/governance/standards/locale-rollout-matrix.md) |
 
 ## References
 

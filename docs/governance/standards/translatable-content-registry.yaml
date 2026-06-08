@@ -1,9 +1,48 @@
 # Machine-readable translatable content registry (E21:S03:T01)
 # Consumed by T06 completeness tracking; human overview in translatable-content-inventory.md
-version: 1
-task: E21:S03:T01
+version: 2
+task: E21:S03:T02
 adr: ADR-024
 validator_scope: option_b_inventory_only
+scaffold_tool: packages/frameworks/workflow-mgt/scripts/scaffold_locale_trees.py
+scaffold_source_locale: en-GB
+scaffold_locales:
+  es:
+    owner_story: E21:S05:T01
+    scaffold_status: complete
+    linguistic_status: pending
+  fr:
+    owner_story: E21:S05:T02
+    scaffold_status: complete
+    linguistic_status: pending
+  de:
+    owner_story: E21:S05:T03
+    scaffold_status: complete
+    linguistic_status: pending
+  pt:
+    owner_story: E21:S05:T04
+    scaffold_status: complete
+    linguistic_status: pending
+  zh-CN:
+    owner_story: E21:S06:T01
+    scaffold_status: complete
+    linguistic_status: pending
+  zh-TW:
+    owner_story: E21:S06:T02
+    scaffold_status: complete
+    linguistic_status: pending
+  ja:
+    owner_story: E21:S06:T03
+    scaffold_status: complete
+    linguistic_status: pending
+  ru:
+    owner_story: E21:S07:T01
+    scaffold_status: complete
+    linguistic_status: pending
+  ar:
+    owner_story: E21:S07:T02
+    scaffold_status: complete
+    linguistic_status: pending
 
 tiers:
   runtime_user:

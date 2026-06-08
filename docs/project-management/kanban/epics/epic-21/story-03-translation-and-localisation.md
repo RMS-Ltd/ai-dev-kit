@@ -12,8 +12,8 @@ housekeeping_policy: keep
 **Priority:** LOW  
 **Estimated Effort:** [TBD]  
 **Created:** 2025-12-09  
-**Last updated:** 2026-06-08 (v0.21.3.1+1 — E21:S03:T01 COMPLETE)  
-**Version:** v0.21.3.1+1  
+**Last updated:** 2026-06-08 (v0.21.3.2+1 — E21:S03:T02 COMPLETE)  
+**Version:** v0.21.3.2+1  
 **Code:** E21S03
 
 ---
@@ -34,7 +34,7 @@ Translate framework content to major languages, establish translation workflow, 
 
 - [x] **E21:S03:T01 – Identify and extract all translatable content** - ✅ COMPLETE (v0.21.3.1+1)
   - Task: [`T01-identify-and-extract-all-translatable-content`](story-03-translation-and-localisation/T01-identify-and-extract-all-translatable-content.md)
-- [ ] **E21:S03:T02 – Create translation files for major languages** - TODO
+- [x] **E21:S03:T02 – Create translation files for major languages** - ✅ COMPLETE (v0.21.3.2+1)
   - Task: [`T02-create-translation-files-for-major-languages`](story-03-translation-and-localisation/T02-create-translation-files-for-major-languages.md)
 - [ ] **E21:S03:T03 – Implement translation lookup and rendering** - TODO
   - Task: [`T03-implement-translation-lookup-and-rendering`](story-03-translation-and-localisation/T03-implement-translation-lookup-and-rendering.md)

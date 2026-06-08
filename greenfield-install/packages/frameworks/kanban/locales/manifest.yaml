@@ -2,17 +2,17 @@ version: 2
 default_locale: en-GB
 framework: kanban
 supported_locales:
-  - en-GB
-  - en-US
-  - es
-  - fr
-  - de
-  - zh-CN
-  - zh-TW
-  - ja
-  - pt
-  - ru
-  - ar
+- en-GB
+- en-US
+- es
+- fr
+- de
+- zh-CN
+- zh-TW
+- ja
+- pt
+- ru
+- ar
 locales:
   en-GB:
     templates:
@@ -30,6 +30,141 @@ locales:
       cli: keys/cli.yaml
       errors: keys/errors.yaml
   en-US:
+    templates:
+      fr: templates/FR_TEMPLATE.md
+      br: templates/BR_TEMPLATE.md
+      uxr: templates/UXR_TEMPLATE.md
+      fb: templates/FB_TEMPLATE.md
+      task: templates/TASK_TEMPLATE.md
+      story: templates/STORY_TEMPLATE.md
+      epic: templates/EPIC_TEMPLATE.md
+      plan_doc: templates/PLAN_DOC_TEMPLATE.md
+    docs:
+      setup_index: docs/setup-locale-index.md
+    keys:
+      cli: keys/cli.yaml
+      errors: keys/errors.yaml
+  es:
+    templates:
+      fr: templates/FR_TEMPLATE.md
+      br: templates/BR_TEMPLATE.md
+      uxr: templates/UXR_TEMPLATE.md
+      fb: templates/FB_TEMPLATE.md
+      task: templates/TASK_TEMPLATE.md
+      story: templates/STORY_TEMPLATE.md
+      epic: templates/EPIC_TEMPLATE.md
+      plan_doc: templates/PLAN_DOC_TEMPLATE.md
+    docs:
+      setup_index: docs/setup-locale-index.md
+    keys:
+      cli: keys/cli.yaml
+      errors: keys/errors.yaml
+  fr:
+    templates:
+      fr: templates/FR_TEMPLATE.md
+      br: templates/BR_TEMPLATE.md
+      uxr: templates/UXR_TEMPLATE.md
+      fb: templates/FB_TEMPLATE.md
+      task: templates/TASK_TEMPLATE.md
+      story: templates/STORY_TEMPLATE.md
+      epic: templates/EPIC_TEMPLATE.md
+      plan_doc: templates/PLAN_DOC_TEMPLATE.md
+    docs:
+      setup_index: docs/setup-locale-index.md
+    keys:
+      cli: keys/cli.yaml
+      errors: keys/errors.yaml
+  de:
+    templates:
+      fr: templates/FR_TEMPLATE.md
+      br: templates/BR_TEMPLATE.md
+      uxr: templates/UXR_TEMPLATE.md
+      fb: templates/FB_TEMPLATE.md
+      task: templates/TASK_TEMPLATE.md
+      story: templates/STORY_TEMPLATE.md
+      epic: templates/EPIC_TEMPLATE.md
+      plan_doc: templates/PLAN_DOC_TEMPLATE.md
+    docs:
+      setup_index: docs/setup-locale-index.md
+    keys:
+      cli: keys/cli.yaml
+      errors: keys/errors.yaml
+  zh-CN:
+    templates:
+      fr: templates/FR_TEMPLATE.md
+      br: templates/BR_TEMPLATE.md
+      uxr: templates/UXR_TEMPLATE.md
+      fb: templates/FB_TEMPLATE.md
+      task: templates/TASK_TEMPLATE.md
+      story: templates/STORY_TEMPLATE.md
+      epic: templates/EPIC_TEMPLATE.md
+      plan_doc: templates/PLAN_DOC_TEMPLATE.md
+    docs:
+      setup_index: docs/setup-locale-index.md
+    keys:
+      cli: keys/cli.yaml
+      errors: keys/errors.yaml
+  zh-TW:
+    templates:
+      fr: templates/FR_TEMPLATE.md
+      br: templates/BR_TEMPLATE.md
+      uxr: templates/UXR_TEMPLATE.md
+      fb: templates/FB_TEMPLATE.md
+      task: templates/TASK_TEMPLATE.md
+      story: templates/STORY_TEMPLATE.md
+      epic: templates/EPIC_TEMPLATE.md
+      plan_doc: templates/PLAN_DOC_TEMPLATE.md
+    docs:
+      setup_index: docs/setup-locale-index.md
+    keys:
+      cli: keys/cli.yaml
+      errors: keys/errors.yaml
+  ja:
+    templates:
+      fr: templates/FR_TEMPLATE.md
+      br: templates/BR_TEMPLATE.md
+      uxr: templates/UXR_TEMPLATE.md
+      fb: templates/FB_TEMPLATE.md
+      task: templates/TASK_TEMPLATE.md
+      story: templates/STORY_TEMPLATE.md
+      epic: templates/EPIC_TEMPLATE.md
+      plan_doc: templates/PLAN_DOC_TEMPLATE.md
+    docs:
+      setup_index: docs/setup-locale-index.md
+    keys:
+      cli: keys/cli.yaml
+      errors: keys/errors.yaml
+  pt:
+    templates:
+      fr: templates/FR_TEMPLATE.md
+      br: templates/BR_TEMPLATE.md
+      uxr: templates/UXR_TEMPLATE.md
+      fb: templates/FB_TEMPLATE.md
+      task: templates/TASK_TEMPLATE.md
+      story: templates/STORY_TEMPLATE.md
+      epic: templates/EPIC_TEMPLATE.md
+      plan_doc: templates/PLAN_DOC_TEMPLATE.md
+    docs:
+      setup_index: docs/setup-locale-index.md
+    keys:
+      cli: keys/cli.yaml
+      errors: keys/errors.yaml
+  ru:
+    templates:
+      fr: templates/FR_TEMPLATE.md
+      br: templates/BR_TEMPLATE.md
+      uxr: templates/UXR_TEMPLATE.md
+      fb: templates/FB_TEMPLATE.md
+      task: templates/TASK_TEMPLATE.md
+      story: templates/STORY_TEMPLATE.md
+      epic: templates/EPIC_TEMPLATE.md
+      plan_doc: templates/PLAN_DOC_TEMPLATE.md
+    docs:
+      setup_index: docs/setup-locale-index.md
+    keys:
+      cli: keys/cli.yaml
+      errors: keys/errors.yaml
+  ar:
     templates:
       fr: templates/FR_TEMPLATE.md
       br: templates/BR_TEMPLATE.md

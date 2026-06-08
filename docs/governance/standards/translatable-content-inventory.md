@@ -121,11 +121,25 @@ High-traffic scripts (for future priority subset): `validate_branch_context.py`,
 
 ---
 
+## Scaffold locales (E21:S03:T02)
+
+Nine FR-006 target locales have on-disk trees (en-GB interim copy). See [locale-rollout-matrix.md](locale-rollout-matrix.md) for priority tiers and S05–S07 ownership.
+
+| Code | Kanban files | Workflow-mgt files | Linguistic translation |
+| ---- | ------------ | ------------------ | ---------------------- |
+| `es`, `fr`, `de`, `pt` | 11 each | 6 each | E21:S05 |
+| `zh-CN`, `zh-TW`, `ja` | 11 each | 6 each | E21:S06 |
+| `ru`, `ar` | 11 each | 6 each | E21:S07 |
+
+**Tool:** `packages/frameworks/workflow-mgt/scripts/scaffold_locale_trees.py`
+
+---
+
 ## Handoffs
 
 | Task | Uses this inventory for |
 | ---- | ----------------------- |
-| **E21:S03:T02** | Copy en-GB trees; translate keys + whole files |
+| **E21:S03:T02** | Complete — scaffold trees + rollout matrix |
 | **E21:S03:T03** | Wire `resolve_locale_key()` at call sites per key→source map |
 | **E21:S03:T06** | Completeness % from registry YAML |
 
