@@ -12,7 +12,7 @@ housekeeping_policy: keep
 **Priority:** LOW  
 **Estimated Effort:** [TBD]  
 **Created:** 2025-12-09  
-**Last updated:** 2025-12-09 (v0.21.1.0+0 – Story created)  
+**Last updated:** 2026-06-08 (UKW — E21:S03 COMPLETE @ v0.21.3.7+1 unblocks S04)  
 **Version:** v0.21.1.0+0  
 **Code:** E21S04
 

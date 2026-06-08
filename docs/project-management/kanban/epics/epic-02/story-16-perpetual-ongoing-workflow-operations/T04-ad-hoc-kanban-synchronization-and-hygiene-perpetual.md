@@ -13,7 +13,7 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** Medium  
 **Created:** 2026-04-22  
-**Last updated:** 2026-06-08 (UKW → released as **E21:S09:T01** @ v0.21.9.1+1 on epic/21 branch)
+**Last updated:** 2026-06-08 (UKW comprehensive — E21:S03 closed; S04:T01 promoted S-band)
 **Version Anchor:** v0.2.16.4+38
 **Code:** E02S16T04
 **Task Type:** Perpetual Maintenance

@@ -12,8 +12,8 @@ housekeeping_policy: keep
 **Priority:** MEDIUM  
 **Estimated Effort:** [TBD]  
 **Created:** 2025-12-09  
-**Last updated:** 2026-06-08 (UKW bookkeeping — S01–S02 COMPLETE; S08 Layer 0–1 @ v0.21.8.3+1)  
-**Version:** v0.21.8.3+1  
+**Last updated:** 2026-06-08 (UKW — S03 translation pipeline COMPLETE @ v0.21.3.7+1; S04+ next)  
+**Version:** v0.21.3.7+1  
 **Branch:** `epic/21-internationalisation-localisation`  
 **Version Schema:** `0.21.S.T+B`  
 **Production URL:** [N/A for this repo]
@@ -78,7 +78,7 @@ It ensures that:
 - Framework is accessible to international developers
 - Disabled users can operate ADK surfaces with minimal friction (a11y)
 
-**Strategic snapshot (2026-06-08):** S01 (FR-006 Phase 1) and S02 (i18n infrastructure) are **COMPLETE**. S08 accessibility Layer 0–1 shipped (CLI audit, ADR-025, Layer 1 CLI remediation @ v0.21.8.3+1). S03–S07 and S08 Layers 2–5 remain TODO / DEFERRED.
+**Strategic snapshot (2026-06-08):** S01–S03 **COMPLETE** (FR-006 Phase 1–3 translation pipeline through E2E verification @ v0.21.3.7+1). S08 Layer 0–1 shipped @ v0.21.8.3+1. **Next stream:** S04 cultural adaptation (T01 on board). S05–S07 linguistic delivery backlog; S08 Layers 2–5 DEFERRED.
 
 ---
 
@@ -149,22 +149,14 @@ Layered accessibility programme per ADR-025; CLI-first delivery (Layers 0–1 co
 
 ### Story 3: Translation and Localisation
 
-**Status:** TODO  
+**Status:** COMPLETE  
 **Priority:** LOW  
-**Estimated Effort:** [TBD]  
-**Last updated:** 2025-12-09 (v0.21.3.0+0 – Story created)
+**Last updated:** 2026-06-08 (v0.21.3.7+1 — T01–T07 COMPLETE)
 
 **Goal:**  
-Implement translations and localisation for major languages.
+Translate framework content to major languages; establish workflow, management tools, completeness tracking, and E2E verification.
 
-**Tasks:**
-- [ ] E21:S03:T01 – Identify and extract all translatable content
-- [ ] E21:S03:T02 – Create translation files for major languages
-- [ ] E21:S03:T03 – Implement translation lookup and rendering
-- [ ] E21:S03:T04 – Create translation workflow and review process
-- [x] E21:S03:T05 – Add translation management tools — ✅ COMPLETE (v0.21.3.5+1)
-- [x] E21:S03:T06 – Implement translation completeness tracking — ✅ COMPLETE (v0.21.3.6+1)
-- [x] E21:S03:T07 – Test translations and locale support — ✅ COMPLETE (v0.21.3.7+1)
+**Tasks:** T01–T07 COMPLETE — see [`story-03-translation-and-localisation.md`](story-03-translation-and-localisation.md)
 
 > Full story: [`story-03-translation-and-localisation.md`](story-03-translation-and-localisation.md)
 

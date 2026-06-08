@@ -51,8 +51,8 @@ Translate framework content to major languages, establish translation workflow, 
 
 ## Acceptance Criteria
 
-- [ ] All translatable content identified and extracted
-- [ ] Translation files created for major languages
+- [x] All translatable content identified and extracted
+- [x] Translation files created for major languages
 - [x] Translation lookup and rendering works
 - [x] Translation workflow established
 - [x] Translation management tools available
@@ -64,7 +64,7 @@ Translate framework content to major languages, establish translation workflow, 
 ## Dependencies
 
 **Blocks:**
-- Cultural Adaptation (Story 3)
+- Cultural Adaptation (Story 4)
 
 **Blocked By:**
 - E21:S02: Internationalisation Infrastructure
