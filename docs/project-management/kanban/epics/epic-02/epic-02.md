@@ -12,7 +12,7 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** [TBD]  
 **Created:** 2025-12-02  
-**Last updated:** 2026-06-08 (v0.2.16.4+39 – Kanban documentation setup)
+**Last updated:** 2026-06-08 (v0.2.17.7+1 – Kanban documentation setup)
 **Branch:** `epic/2-workflow-management-framework`  
 **Version Schema:** `0.2.S.T+B`  
 **Production URL:** [N/A for this repo]
@@ -86,7 +86,7 @@ housekeeping_policy: keep
   - Story: [`story-16-perpetual-ongoing-workflow-operations.md`](story-16-perpetual-ongoing-workflow-operations.md)
   - Tasks: T01 ✅ COMPLETE; T11 ✅ COMPLETE (FR-096) — [FR-088](../../fr-br/FR-088-dedicated-story-for-perpetual-ongoing-tasks.md)
 
-- [ ] **E2:S17 – RW SemVer Characterization & Release State SQLite** - IN PROGRESS (v0.2.17.2+3 — T02 Wave 3 ✅)
+- [ ] **E2:S17 – RW SemVer Characterization & Release State SQLite** - IN PROGRESS (v0.2.17.7+1)
   - Story: [`story-17-rw-semver-characterization-and-release-state-sqlite.md`](story-17-rw-semver-characterization-and-release-state-sqlite.md)
   - Tasks: T01 IN PROGRESS (scenario matrix); T02–T06 TODO
 

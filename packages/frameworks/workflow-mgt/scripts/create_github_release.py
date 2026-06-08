@@ -12,6 +12,7 @@ import os
 import re
 import subprocess
 import sys
+from contextlib import suppress
 from pathlib import Path
 from typing import Dict, Optional
 
@@ -47,7 +48,7 @@ def load_env_local():
         env_local = project_root / '.env.local'
     
     if env_local.exists():
-        try:
+        with suppress(Exception):  # malformed .env.local must not break release helper
             with open(env_local, 'r') as f:
                 for line in f:
                     line = line.strip()
@@ -62,8 +63,6 @@ def load_env_local():
                         # Only set if not already in environment
                         if key and value and key not in os.environ:
                             os.environ[key] = value
-        except Exception:
-            pass  # Silently fail - don't break if .env.local has issues
 
 # Load .env.local before checking for environment variables
 load_env_local()

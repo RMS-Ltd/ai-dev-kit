@@ -13,8 +13,8 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** Medium (ongoing)  
 **Created:** 2026-06-05  
-**Last updated:** 2026-06-08 (Wave 3b shipped **v0.8.3.16+5** — **11**-finding remediation; operator dashboard re-verify pending)  
-**Version Anchor:** v0.8.3.16+5 (Wave 3b)  
+**Last updated:** 2026-06-08 (Wave 3c shipped **v0.8.3.16+6** — final `py/empty-except` stragglers)  
+**Version Anchor:** v0.8.3.16+6 (Wave 3c)  
 **Code:** E08S03T16  
 **Task Type:** Perpetual Maintenance
 
@@ -263,7 +263,36 @@ Use **`RW E08:S03:T16`** for recurring security/Code Quality hygiene (BUILD incr
 | `pytest tests/` | **521 passed**, 2 skipped |
 | CQG (`validate_code_quality_gate.py`) | exit **0** (advisory threshold; non-strict) |
 | `sync_greenfield_install.py --check` | in sync |
-| Operator dashboard (TC18) | **Pending** post-merge to `main` |
+| Operator dashboard (TC18) | **CLOSED** post–3b @ `main` `635ae871` — see Wave 3 post-verify below |
+
+### Wave 3 post–3b operator verify (2026-06-08)
+
+**Capture:** `main` @ **`635ae871`** after Wave 3b merge. Source: [Code Quality](https://github.com/RMS-Ltd/ai-dev-kit/security/quality) / [`py/empty-except`](https://github.com/RMS-Ltd/ai-dev-kit/security/quality/rules/py%2Fempty-except).
+
+| Surface | Open count | Score | Delta vs Wave 3a |
+| ------- | ---------- | ----- | ---------------- |
+| Standard — maintainability | **0** | **Excellent** | **Good → Excellent**; 3 → 0 |
+| Standard — reliability | **2** | **Good** | 8 → 2 (`py/empty-except` stragglers) |
+| [Code scanning](https://github.com/RMS-Ltd/ai-dev-kit/security/code-scanning) | **0** | — | unchanged |
+
+**Residual rule:** `py/empty-except` × **2** — `install_kanban_framework.py` logger callback + `install_ux_version.py` `finally` `chdir` (repo grep; not in Wave 3b file list).
+
+### Wave 3c remediation (2026-06-08)
+
+**Theme:** Clear remaining `py/empty-except` per [rule page](https://github.com/RMS-Ltd/ai-dev-kit/security/quality/rules/py%2Fempty-except).
+
+| File | Fix |
+| ---- | --- |
+| `install_kanban_framework.py` | `suppress(Exception)` on `INSTALL_LOGGER` callback (×2 mirror) |
+| `install_ux_version.py` | `suppress(Exception)` on `os.chdir` restore (×2 mirror) |
+| `create_github_release.py` | `suppress(Exception)` on `.env.local` parse (×2 mirror) |
+| `scripts/notion_migration_manifest.py` | `suppress(FileNotFoundError)` when `rg` missing |
+
+| Verification | Result |
+| ------------ | ------ |
+| `pytest tests/` | **521 passed** |
+| `sync_greenfield_install.py --check` | in sync |
+| Operator dashboard | **Pending** post–3c merge |
 
 **Cross-lane notes:**
 
@@ -299,7 +328,8 @@ Use **`RW E08:S03:T16`** for recurring security/Code Quality hygiene (BUILD incr
 - [x] **AC6 (Wave 2a):** Wave 2 manifest @ `4c4e9275` with delta vs Wave 1 + T12 Good; shipped **v0.8.3.16+2** (docs-only).
 - [x] **AC7 (Wave 2b):** First themed remediation RW — **17** `py/unused-import` autofix; pytest green; greenfield `--check` OK; **TC14 closed** Wave 3a.
 - [x] **AC8 (Wave 3a):** Wave 3 manifest **3** M + **8** R @ `f7d8b155`; shipped **v0.8.3.16+4** (docs-only).
-- [x] **AC9 (Wave 3b):** Reliability-first burn-down of **11** residuals shipped **v0.8.3.16+5**; CQG + pytest green; operator post-merge dashboard verify **pending** (TC18).
+- [x] **AC9 (Wave 3b):** Reliability-first burn-down of **11** residuals shipped **v0.8.3.16+5**; CQG + pytest green; **TC18 closed** — **Excellent** M / **Good** R, **2** `py/empty-except` @ `635ae871`.
+- [x] **AC10 (Wave 3c):** Final `py/empty-except` stragglers shipped **v0.8.3.16+6**; pytest green; operator post-merge verify **pending**.
 
 ---
 

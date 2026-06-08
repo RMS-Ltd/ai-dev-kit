@@ -104,11 +104,9 @@ def _log(level: str, message: str) -> None:
 
     # Delegate to external logger callback if provided
     if INSTALL_LOGGER is not None:
-        try:
+        with suppress(Exception):  # Fall back to env-based logging if the callback fails
             INSTALL_LOGGER(level, "kanban.install", message)
             return
-        except Exception:
-            pass  # Fall back to env-based logging if the callback fails
 
     # Fallback: append to env-configured log file if present
     log_path = os.getenv(_ENV_LOG_PATH_ENV_VAR)
