@@ -13,8 +13,8 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** Medium (ongoing)  
 **Created:** 2026-06-05  
-**Last updated:** 2026-06-08 (Wave 3c shipped **v0.8.3.16+6** — final `py/empty-except` stragglers)  
-**Version Anchor:** v0.8.3.16+6 (Wave 3c)  
+**Last updated:** 2026-06-08 (Wave 3d shipped **v0.8.3.16+7** — `cli/logging.py` last `py/empty-except`)  
+**Version Anchor:** v0.8.3.16+7 (Wave 3d)  
 **Code:** E08S03T16  
 **Task Type:** Perpetual Maintenance
 
@@ -292,7 +292,21 @@ Use **`RW E08:S03:T16`** for recurring security/Code Quality hygiene (BUILD incr
 | ------------ | ------ |
 | `pytest tests/` | **521 passed** |
 | `sync_greenfield_install.py --check` | in sync |
-| Operator dashboard | **Pending** post–3c merge |
+| Operator dashboard | **1** `py/empty-except` @ post–3c — see Wave 3d |
+
+### Wave 3d remediation (2026-06-08)
+
+**Theme:** Last `py/empty-except` — `cli/logging.py` `close_install_logger` (missed in Wave 3c `packages/` scope).
+
+| File | Fix |
+| ---- | --- |
+| `cli/logging.py` | `suppress(Exception)` on log retention `unlink` + `fh.close()` |
+
+| Verification | Result |
+| ------------ | ------ |
+| `pytest tests/cli/` | **39 passed** |
+| Repo grep `except …: pass` | **0** in `*.py` |
+| Operator dashboard | **Pending** post–3d merge |
 
 **Cross-lane notes:**
 
@@ -329,7 +343,8 @@ Use **`RW E08:S03:T16`** for recurring security/Code Quality hygiene (BUILD incr
 - [x] **AC7 (Wave 2b):** First themed remediation RW — **17** `py/unused-import` autofix; pytest green; greenfield `--check` OK; **TC14 closed** Wave 3a.
 - [x] **AC8 (Wave 3a):** Wave 3 manifest **3** M + **8** R @ `f7d8b155`; shipped **v0.8.3.16+4** (docs-only).
 - [x] **AC9 (Wave 3b):** Reliability-first burn-down of **11** residuals shipped **v0.8.3.16+5**; CQG + pytest green; **TC18 closed** — **Excellent** M / **Good** R, **2** `py/empty-except` @ `635ae871`.
-- [x] **AC10 (Wave 3c):** Final `py/empty-except` stragglers shipped **v0.8.3.16+6**; pytest green; operator post-merge verify **pending**.
+- [x] **AC10 (Wave 3c):** `packages/` `py/empty-except` stragglers shipped **v0.8.3.16+6**; **1** residual @ `cli/logging.py` (operator verify).
+- [x] **AC11 (Wave 3d):** `cli/logging.py` empty-except shipped **v0.8.3.16+7**; repo grep clean; operator post-merge verify **pending**.
 
 ---
 

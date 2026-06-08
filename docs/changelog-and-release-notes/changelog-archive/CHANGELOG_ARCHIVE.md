@@ -1,4 +1,11 @@
 # Changelog Archive
+## [0.8.3.16+7] - 08-06-26
+
+E08:S03:T16 — **Attempted fix:** Wave 3d — `cli/logging.py` `py/empty-except`. SemVer **v0.4.1062+7**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.8.3.16+7.md)
+
+---
 ## [0.8.3.16+6] - 08-06-26
 
 E08:S03:T16 — **Attempted fix:** Wave 3c — final `py/empty-except` stragglers. SemVer **v0.4.1061+6**.

@@ -12,7 +12,7 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** Medium  
 **Created:** 2025-12-05  
-**Last updated:** 2026-06-08 (v0.8.3.16+6 – T16 Wave 3c)
+**Last updated:** 2026-06-08 (v0.8.3.16+7 – T16 Wave 3d)
 **Branch:** `epic/8-tooling-automation`  
 **Version Schema:** `0.8.S.T+B`  
 **Production URL:** [N/A for this repo]
@@ -28,7 +28,7 @@ housekeeping_policy: keep
   - Story: [`story-02-additional-validators.md`](story-02-additional-validators.md)
 
 
-- [ ] **E8:S03 – Automation Scripts** - IN PROGRESS (v0.8.3.16+6 – T16 Wave 3c; T15 CI verified)
+- [ ] **E8:S03 – Automation Scripts** - IN PROGRESS (v0.8.3.16+7 – T16 Wave 3d; T15 CI verified)
   - Story: [`story-03-automation-scripts.md`](story-03-automation-scripts.md)
 
 
@@ -73,7 +73,7 @@ Epic 8 owns the **Tooling & Automation** framework for the ai-dev-kit repository
 **Status:** COMPLETE ✅  
 **Priority:** HIGH  
 **Estimated Effort:** Medium  
-**Last updated:** 2026-06-08 (v0.8.3.16+6 – T16 Wave 3c)
+**Last updated:** 2026-06-08 (v0.8.3.16+7 – T16 Wave 3d)
 
 **Goal:**  
 Build code generators for common framework patterns and templates.
@@ -92,7 +92,7 @@ Build code generators for common framework patterns and templates.
 **Status:** IN PROGRESS  
 **Priority:** HIGH  
 **Estimated Effort:** Medium  
-**Last updated:** 2026-06-08 (v0.8.3.16+6 – T16 Wave 3c)
+**Last updated:** 2026-06-08 (v0.8.3.16+7 – T16 Wave 3d)
 
 **Goal:**  
 Develop additional validators beyond the current 3 validation scripts.
@@ -111,7 +111,7 @@ Develop additional validators beyond the current 3 validation scripts.
 **Status:** TODO  
 **Priority:** MEDIUM  
 **Estimated Effort:** [TBD]  
-**Last updated:** 2026-06-08 (v0.8.3.16+6 – T16 Wave 3c)
+**Last updated:** 2026-06-08 (v0.8.3.16+7 – T16 Wave 3d)
 
 **Goal:**  
 Implement automation scripts for common development and maintenance tasks.

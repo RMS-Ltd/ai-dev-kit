@@ -11,10 +11,10 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
-## [0.8.3.16+6] - 08-06-26
+## [0.8.3.16+7] - 08-06-26
 
-E08:S03:T16 — **Attempted fix:** Wave 3c — final `py/empty-except` stragglers after post–3b dashboard verify (2 reliability open). SemVer **v0.4.1061+6**.
+E08:S03:T16 — **Attempted fix:** Wave 3d — last `py/empty-except` in `cli/logging.py`. SemVer **v0.4.1062+7**.
 
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.8.3.16+6.md)
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.8.3.16+7.md)
 
 ---
