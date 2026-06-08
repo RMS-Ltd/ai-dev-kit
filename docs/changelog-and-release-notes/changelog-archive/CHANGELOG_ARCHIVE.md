@@ -1,4 +1,11 @@
 # Changelog Archive
+## [0.2.17.7+2] - 08-06-26
+
+E02:S17:T07 — **Change implemented:** Post-merge reconciliation. SemVer **v0.4.11+2**.
+
+[Detailed changelog](CHANGELOG_v0.2.17.7+2.md)
+
+---
 ## [0.2.17.7+1] - 08-06-26
 
 E02:S17:T07 — **Change implemented:** Production SQLite semver-registry cutover. SemVer **v0.4.1059+1**.

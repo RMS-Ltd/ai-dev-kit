@@ -11,10 +11,10 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
-## [0.2.17.7+2] - 08-06-26
+## [0.7.1.12+1] - 08-06-26
 
-E02:S17:T07 — **Change implemented:** Post-merge reconciliation — dev/T16 merge integration, RW-V04 archived registry path, epic S17 COMPLETE sync. SemVer **v0.4.11+2**.
+E07:S01:T12 — **Change implemented:** Kanban-init — FR-118 intake (promote `docs/kanban/`, retire `project-management/` shell); task + phased plan filed. SemVer **v0.4.12+1**.
 
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.17.7+2.md)
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.7.1.12+1.md)
 
 ---

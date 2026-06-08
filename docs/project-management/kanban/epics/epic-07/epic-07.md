@@ -13,7 +13,7 @@ housekeeping_policy: keep
 **Estimated Effort:** [TBD]  
 **Created:** 2025-12-09  
 **Completed:** [Reopened – TBD]  
-**Last updated:** 2026-06-03 (v0.7.7.2+1 — E07:S07:T02 CI pytest gate / H1 remediation)
+**Last updated:** 2026-06-08 (v0.7.1.12+1 – Kanban documentation setup)
 **Branch:** `epic/7-documentation-maintenance`  
 **Version Schema:** `0.7.S.T+B`  
 **Production URL:** [N/A for this repo]
@@ -26,7 +26,7 @@ housekeeping_policy: keep
   - Story: [`story-00-uxr-repo.md`](story-00-uxr-repo.md)
   - **Note:** S00 omitted from board displays (UX optimization)
 
-- [ ] **E7:S01 – Codebase Maintenance Tasks** - IN PROGRESS (v0.7.1.9+3 — UXR-005 **Implementing Task** on **T09**; UCW **T06** still open; latest epic release **v0.7.0.2+2** is S00)
+- [ ] **E7:S01 – Codebase Maintenance Tasks** - IN PROGRESS (v0.7.1.12+1 — **T12** FR-118 kanban-init; UXR-005 on **T09**; UCW **T06** open)
 - [x] **E7:S02 – Code Review Standards and Processes** - ✅ COMPLETE (v0.7.2.4+1 – All tasks complete)
 - [x] **E7:S03 – Code Quality Metrics and Monitoring** - ✅ COMPLETE (v0.7.3.4+1 – All tasks complete)
 - [x] **E7:S04 – Maintenance Automation and Tooling** - ✅ COMPLETE (v0.7.4.4+1 – All tasks complete)
@@ -73,7 +73,7 @@ This epic works in conjunction with Epic 4 (Kanban Framework) to provide a compl
 **Status:** IN PROGRESS  
 **Priority:** HIGH  
 **Estimated Effort:** [TBD]  
-**Last updated:** 2026-04-13 (v0.7.6.18+3 – Story 6 Task 18 complete)
+**Last updated:** 2026-06-08 (v0.7.1.12+1 – Kanban documentation setup)
 
 **Goal:** Establish systematic processes for addressing IDE-flagged issues and organizing codebase maintenance work.
 
@@ -110,7 +110,7 @@ This epic works in conjunction with Epic 4 (Kanban Framework) to provide a compl
 **Status:** IN PROGRESS  
 **Priority:** MEDIUM  
 **Estimated Effort:** [TBD]  
-**Last updated:** 2026-04-13 (v0.7.6.18+3 – Story 6 Task 18 complete)
+**Last updated:** 2026-06-08 (v0.7.1.12+1 – Kanban documentation setup)
 
 **Goal:** Define code review standards and processes to ensure consistent code quality and maintainability.
 
@@ -145,7 +145,7 @@ This epic works in conjunction with Epic 4 (Kanban Framework) to provide a compl
 **Status:** COMPLETE  
 **Priority:** MEDIUM  
 **Estimated Effort:** [TBD]  
-**Last updated:** 2026-04-13 (v0.7.6.18+3 – Story 6 Task 18 complete)
+**Last updated:** 2026-06-08 (v0.7.1.12+1 – Kanban documentation setup)
 
 **Goal:** Enable comprehensive monitoring of codebase health and quality metrics, providing visibility into code quality trends.
 
@@ -181,7 +181,7 @@ This epic works in conjunction with Epic 4 (Kanban Framework) to provide a compl
 **Status:** COMPLETE  
 **Priority:** LOW  
 **Estimated Effort:** [TBD]  
-**Last updated:** 2026-04-13 (v0.7.6.18+3 – Story 6 Task 18 complete)
+**Last updated:** 2026-06-08 (v0.7.1.12+1 – Kanban documentation setup)
 
 **Goal:** Develop automation and tooling to streamline maintenance work and reduce manual effort.
 
@@ -217,7 +217,7 @@ This epic works in conjunction with Epic 4 (Kanban Framework) to provide a compl
 **Status:** COMPLETE  
 **Priority:** MEDIUM  
 **Estimated Effort:** [TBD]  
-**Last updated:** 2026-04-13 (v0.7.6.18+3 – Story 6 Task 18 complete)
+**Last updated:** 2026-06-08 (v0.7.1.12+1 – Kanban documentation setup)
 
 **Goal:** Capture and operationalize user experience research for migrating pre-existing Kanban/Sprint/Issue structures to the ai-dev-kit Kanban framework.
 
@@ -237,7 +237,7 @@ This epic works in conjunction with Epic 4 (Kanban Framework) to provide a compl
 **Status:** COMPLETE  
 **Priority:** HIGH  
 **Estimated Effort:** [TBD]  
-**Last updated:** 2026-04-13 (v0.7.6.18+3 – Story 6 Task 18 complete)
+**Last updated:** 2026-06-08 (v0.7.1.12+1 – Kanban documentation setup)
 
 **Goal:** Assess and remediate project state left by Windsurf's AI models. Decomposed by dimension: artifacts, versioning, kanban, commits, scripts, FR/BR/UXR docs, general docs, dependencies/tooling, config/git state.
 

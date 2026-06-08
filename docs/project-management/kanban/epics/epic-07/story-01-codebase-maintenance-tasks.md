@@ -10,12 +10,13 @@ housekeeping_policy: keep
 
 **Status:** IN PROGRESS  
 **Priority:** HIGH  
-**Last updated:** 2026-03-31 (v0.7.1.9+3 — UXR-005 **Implementing Task** wiring; prior BUILD 2 **validate_branch_context**)  
+**Last updated:** 2026-06-08 (v0.7.1.12+1 – Kanban documentation setup)
+**Version:** v0.7.1.12+1
 **Estimated Effort:** [TBD]  
 **Actual Effort:** [TBD]  
 **Started:** 2025-12-09  
 **Completed:** [Reopened – TBD]  
-**Version:** v0.7.1.9+1  
+**Version:** v0.7.1.12+1
 **Code:** E7S01
 
 ---
@@ -40,6 +41,7 @@ housekeeping_policy: keep
 - [x] **E07:S01:T09 – Kanban Template Governance & UXR Ownership** - ✅ COMPLETE (v0.7.1.9+5 — UXR-005 spacing validator + corpus; see task doc)
 - [ ] **E07:S01:T10 – Project Root Hygiene and Legacy Docs Rationalization** - TODO (UXR-013 intake filed; IPW pending before implementation)
 - [x] **E07:S01:T11 – Consolidate governance under `docs/governance/` (FR-101)** - ✅ COMPLETE (v0.7.1.11+8 — Waves 0–F; ADR-007) - [Task Document](story-01-codebase-maintenance-tasks/T11-consolidate-governance-under-docs-governance-fr101.md) | [IPP](../../../../implementation-cycles/IPP-E7S01T11-consolidate-governance-under-docs-governance.md) | [FR-101](../../fr-br/FR-101-consolidate-governance-under-docs-governance.md)
+- [ ] **E07:S01:T12 – Promote Kanban to `docs/kanban/` and retire `project-management/` (FR-118)** - TODO (v0.7.1.12+1 — kanban-init; IPW before moves) - [Task Document](story-01-codebase-maintenance-tasks/T12-promote-kanban-to-docs-kanban-retire-project-management-fr118.md) | [FR-118](../../fr-br/FR-118-promote-kanban-to-docs-kanban-retire-project-management-shell.md) | —No IPP—
 
 > **Format:** `Exx:Sxx:Txx` (Epic, Story, Task with 2-digit zero padding, e.g., `E07:S01:T01`, `E07:S01:T02`)  
 > **Forensic Marker Format:** `✅ COMPLETE (vRC.E.S.T+B)` (e.g., `✅ COMPLETE (v0.7.1.3+1)`)  
