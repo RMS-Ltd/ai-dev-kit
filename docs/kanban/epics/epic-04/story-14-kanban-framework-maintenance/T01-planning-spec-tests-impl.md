@@ -11,7 +11,7 @@
 
 ### 1.1 Goal
 
-Packaged RW framework must handle UKW context detection and perpetual task attribution so that UKW-triggered releases are attributed to perpetual tasks (e.g. E02:S16:T03) instead of arbitrary feature tasks, and build-number warnings are suppressed for perpetual tasks.
+Packaged RW framework must handle UKW context detection and perpetual task attribution so that UKW-triggered releases are attributed to perpetual tasks (e.g. E02:S16:T02 UKW lane, E02:S16:T01 umbrella) instead of arbitrary feature tasks, and build-number warnings are suppressed for perpetual tasks.
 
 ### 1.2 Functional Requirements
 

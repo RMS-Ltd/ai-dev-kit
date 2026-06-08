@@ -15,21 +15,21 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Status:** IN PROGRESS (T16 Wave 3e @ **v0.8.3.16+9** — autofix PR #43/#44 pytest triage; operator dashboard re-verify pending)  
 **Implementing Tasks:**
-- **E08:S03:T15** — [GitHub Actions CI health (Perpetual)](../epics/epic-08/story-03-automation-scripts/T15-github-actions-ci-health-perpetual-fr112.md)
-- **E08:S03:T16** — [GitHub Security & Code Quality health (Perpetual)](../epics/epic-08/story-03-automation-scripts/T16-github-security-code-quality-health-perpetual-fr112.md)
+- **E02:S16:T05** — [GitHub Actions CI health (Perpetual)](../epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T05-github-actions-ci-health-perpetual.md) *(Historical Anchor: E08:S03:T15)*
+- **E02:S16:T06** — [GitHub Security & Code Quality health (Perpetual)](../epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T06-github-security-code-quality-health-perpetual.md) *(Historical Anchor: E08:S03:T16)*
 
 ---
 
 ## Summary
 
-Establish **two perpetual maintenance lanes** under Epic 8 Story 3 so recurring [GitHub Actions](https://github.com/RMS-Ltd/ai-dev-kit/actions) failures and ongoing [code scanning](https://github.com/RMS-Ltd/ai-dev-kit/security/code-scanning) / [code quality](https://github.com/RMS-Ltd/ai-dev-kit/security/quality) hygiene have deterministic RW attribution after finite backlog tasks **E08:S03:T12–T14** (BR-099/100/101) complete.
+Establish **two perpetual maintenance lanes** under **E02:S16** (T05/T06) so recurring [GitHub Actions](https://github.com/RMS-Ltd/ai-dev-kit/actions) failures and ongoing [code scanning](https://github.com/RMS-Ltd/ai-dev-kit/security/code-scanning) / [code quality](https://github.com/RMS-Ltd/ai-dev-kit/security/quality) hygiene have deterministic RW attribution after finite backlog tasks **E08:S03:T12–T14** (BR-099/100/101) complete.
 
 ---
 
 ## Problem Statement
 
 - **Discrete BR pattern** (BR-058, BR-094–098) and **finite backlog tasks** (T12–T14) address point-in-time CI and Code Quality burn-down but leave no standing home for **ongoing** red builds, new alerts, or dashboard regressions.
-- **E02:S16:T10** (repo infrastructure) is too broad and lives outside Epic 8’s automation/security delivery semantics.
+- **E02:S16:T04** (repo infrastructure) is too broad and lives outside Epic 8’s automation/security delivery semantics.
 - Without perpetual lanes, operators must invent new tasks or mis-attribute hygiene RWs.
 
 ---
@@ -38,7 +38,7 @@ Establish **two perpetual maintenance lanes** under Epic 8 Story 3 so recurring 
 
 ### Functional
 
-- [ ] **FR-112:F1** — Perpetual task **E08:S03:T15** owns [GitHub Actions](https://github.com/RMS-Ltd/ai-dev-kit/actions) workflow health (Wave 2 MDX fix @ v0.8.3.15+3; pending Actions verify).
+- [ ] **FR-112:F1** — Perpetual task **E02:S16:T05** owns [GitHub Actions](https://github.com/RMS-Ltd/ai-dev-kit/actions) workflow health (Wave 2 MDX fix @ v0.8.3.15+3; pending Actions verify).
 - [x] **FR-112:F2** — Perpetual task **E08:S03:T16** owns [code scanning](https://github.com/RMS-Ltd/ai-dev-kit/security/code-scanning) and [code quality](https://github.com/RMS-Ltd/ai-dev-kit/security/quality) ongoing hygiene (re-scans, routine waves, dismiss/verify). Wave 0 baseline @ v0.8.3.16+1.
 - [ ] **FR-112:F3** — Both tasks carry `Task Type: Perpetual Maintenance` and explicit scope boundaries (including handoff from T12–T14).
 - [x] **FR-112:F4** — Story 003 checklist and `kboard.md` **Ongoing (O)** band wired bidirectionally.

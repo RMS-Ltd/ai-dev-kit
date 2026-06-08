@@ -49,6 +49,10 @@ Provide additional workflow examples that:
 - [x] **E02:S03:T06 – Document workflow customization patterns** ✅ COMPLETE (v0.2.3.6+1)
   - Task: [`T06-document-workflow-customization-patterns`](story-03-additional-workflows-and-examples/T06-document-workflow-customization-patterns.md)
 
+- [x] **E02:S03:T07 – `/ukw` slash command for Claude Code (FR-093)** — ✅ COMPLETE (re-housed from E02:S16:T08) — [Task](story-03-additional-workflows-and-examples/T07-ukw-slash-command-claude-code-fr093.md) | [FR-093](../../fr-br/FR-093-ukw-slash-command-claude-code.md)
+
+- [x] **E02:S03:T08 – Implementation Delivery Workflow / IDW (FR-118)** — ✅ COMPLETE (re-housed from E02:S16:T22) — [Task](story-03-additional-workflows-and-examples/T08-implementation-delivery-workflow-idw-fr118.md) | [FR-119](../../fr-br/FR-119-implementation-delivery-workflow-idw.md)
+
 ---
 
 ## Success Criteria

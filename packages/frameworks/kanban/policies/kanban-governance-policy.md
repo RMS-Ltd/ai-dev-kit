@@ -572,7 +572,7 @@ The following patterns are **explicitly prohibited**:
 - **Deprecated:** T0xx (T001–T099) is deprecated and MUST NOT be used
 - **Example (regular):** `E20:S07:T10` = Epic 20, Story 7, Task 10
 - **Example (regular):** `E01:S01:T01` = Epic 1, Story 1, Task 1
-- **Example (regular, padded):** `E02:S16:T04` = Epic 2, Story 16, Task 4
+- **Example (regular, padded):** `E02:S16:T02` = Epic 2, Story 16, Task 2 (UKW perpetual lane)
 - **Example (perpetual):** `E02:S16:T101` = Epic 2, Story 16, Task 101 (UKW perpetual)
 - **Tracked:** Git commits reference task ID (or equivalent in your VCS)
 

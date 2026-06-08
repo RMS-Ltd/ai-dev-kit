@@ -49,4 +49,14 @@ Eliminate IPW documentation publication drift by making ownership, filing target
 
 - [x] **E02:S15:T08 – Board stamp authority and forensic timestamp recovery (FR-097)** - ✅ COMPLETE (v0.2.15.8+3 — pre-commit, threshold 3, backfill, git-exempt Gate 8) — [Task doc](story-15-ipw-governance-and-publication-contract/T08-board-stamp-authority-forensic-timestamp-recovery-fr097.md) | [FR-097](../../fr-br/FR-097-board-stamp-authority-and-forensic-timestamp-recovery.md) | [IPP](../../../implementation-cycles/IPP-E2S15T08-board-stamp-authority-forensic-timestamp-recovery.md)
 
+- [x] **E02:S15:T09 – Establish canonical perpetual ongoing tasks story (FR-088)** — ✅ COMPLETE (re-housed from E02:S16:T01) — [Task](story-15-ipw-governance-and-publication-contract/T09-establish-canonical-perpetual-ongoing-tasks-story-fr088.md) | [FR-088](../../fr-br/FR-088-dedicated-story-for-perpetual-ongoing-tasks.md)
+
+- [x] **E02:S15:T10 – Inventory and classify workflow-related perpetual tasks** — ✅ COMPLETE (re-housed from E02:S16:T02) — [Task](story-15-ipw-governance-and-publication-contract/T10-inventory-and-classify-workflow-perpetual-tasks.md) | [IPP](../../../implementation-cycles/IPP-E2S16T02-perpetual-task-inventory.md)
+
+- [x] **E02:S15:T11 – `/ipw` slash command for Claude Code (FR-094)** — ✅ COMPLETE (re-housed from E02:S16:T09) — [Task](story-15-ipw-governance-and-publication-contract/T11-ipw-slash-command-claude-code-fr094.md) | [FR-094](../../fr-br/FR-094-ipw-slash-command-and-task-state-transition-mandate.md)
+
+- [x] **E02:S15:T12 – IPW documentation phases (FR-096)** — ✅ COMPLETE (re-housed from E02:S16:T11) — [Task](story-15-ipw-governance-and-publication-contract/T12-ipw-documentation-phases-update-create-and-housing-fr096.md) | [FR-096](../../fr-br/FR-096-ipw-documentation-phases-update-create-and-housing.md)
+
+- [x] **E02:S15:T13 – IPW ADR necessity checklist (FR-100)** — ✅ COMPLETE (re-housed from E02:S16:T12) — [Task](story-15-ipw-governance-and-publication-contract/T13-ipw-adr-necessity-checklist-fr100.md) | [FR-100](../../fr-br/FR-100-ipw-adr-necessity-checklist-and-decision-gate.md)
+
 ---

@@ -177,9 +177,9 @@
   },
   "openWork": [
     {
-      "taskId": "E08:S03:T16",
+      "taskId": "E02:S16:T06",
       "summary": "FR-112 GitHub Security & Code Quality perpetual hygiene (Wave 3e @ v0.8.3.16+9; dashboard re-verify pending)",
-      "taskDocPath": "docs/kanban/epics/epic-08/story-03-automation-scripts/T16-github-security-code-quality-health-perpetual-fr112.md",
+      "taskDocPath": "docs/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T06-github-security-code-quality-health-perpetual.md",
       "priority": "HIGH"
     }
   ]

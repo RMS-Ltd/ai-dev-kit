@@ -36,6 +36,20 @@ housekeeping_policy: keep
 - [x] **E04:S14:T04 – Kanban policy task prioritisation queue/stack (FR-037)** ✅ COMPLETE (semantic home; delivery **E05:S01:T37**)
   - Task: [`T04-kanban-policy-task-prioritisation-queue-stack-fr037.md`](story-14-kanban-framework-maintenance/T04-kanban-policy-task-prioritisation-queue-stack-fr037.md) | [FR-037](../../fr-br/FR-037-kanban-policy-task-prioritisation-queue-stack.md)
 
+- [x] **E04:S14:T05 – UKW optional reprioritization `--rp` flag (FR-085)** — ✅ COMPLETE (re-housed from E02:S16:T06) — [Task](story-14-kanban-framework-maintenance/T05-ukw-optional-reprioritization-rp-flag-fr085.md) | [FR-085](../../fr-br/FR-085-ukw-optional-reprioritization-rp-flag.md)
+
+- [x] **E04:S14:T06 – UKW extension for FR/BR/UXR temporal tracking (FR-050)** — ✅ COMPLETE (re-housed from E02:S16:T07) — [Task](story-14-kanban-framework-maintenance/T06-ukw-extension-for-fr-br-uxr-temporal-tracking-fr050.md) | [FR-050](../../fr-br/FR-050-ukw-extension-for-fr-br-uxr-temporal-tracking-and-synchronization.md)
+
+- [x] **E04:S14:T07 – BR-059: UKW MoSCOW full open-task coverage** — ✅ COMPLETE (re-housed from E02:S16:T13) — [Task](story-14-kanban-framework-maintenance/T07-br059-ukw-moscow-full-story-task-coverage.md) | [BR-059](../../fr-br/BR-059-ukw-moscow-incomplete-story-task-coverage.md)
+
+- [x] **E04:S14:T08 – UKW archive completed rows `-c` (FR-102)** — ✅ COMPLETE (re-housed from E02:S16:T16) — [Task](story-14-kanban-framework-maintenance/T08-ukw-archive-completed-board-rows-fr102.md) | [FR-102](../../fr-br/FR-102-ukw-archive-completed-board-rows.md)
+
+- [x] **E04:S14:T09 – UKW lean active board contract (FR-109)** — ✅ COMPLETE (re-housed from E02:S16:T18) — [Task](story-14-kanban-framework-maintenance/T09-ukw-lean-active-board-contract-fr109.md) | [FR-109](../../fr-br/FR-109-ukw-lean-active-board-contract.md)
+
+- [x] **E04:S14:T10 – Restore kboard IPP segment on MoSCOW rows (UXR-023)** — ✅ COMPLETE (re-housed from E02:S16:T20) — [Task](story-14-kanban-framework-maintenance/T10-restore-kboard-ipp-segment-uxr023.md) | [UXR-023](../../fr-br/UXR-023-kboard-ipp-segment-regression.md)
+
+- [ ] **E04:S14:T11 – UKW gap discovery — unfiled FR/BR (FR-043)** — 📋 TODO (re-housed from E02:S16:T14) — [Task](story-14-kanban-framework-maintenance/T11-ukw-gap-discovery-unfiled-fr-br-fr043.md) | [FR-043](../../fr-br/FR-043-ukw-gap-discovery-todo-tasks-and-unfiled-fr-br.md)
+
 ---
 
 ## Overview

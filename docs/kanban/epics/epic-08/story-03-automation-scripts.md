@@ -67,19 +67,19 @@ housekeeping_policy: keep
 - [x] **E08:S03:T14 – Code Quality AI suggestions backlog (BR-101)** — ✅ COMPLETE (**v0.8.3.14+5** wave-2b/c; lag-accepted GH panel) — [Task doc](story-03-automation-scripts/T14-code-quality-ai-suggestions-backlog-br101.md) | [BR-101](../../fr-br/BR-101-code-quality-ai-suggestions-backlog.md) | [IPP](../../../implementation-cycles/IPP-E08S03T14-code-quality-ai-suggestions-backlog-br101.md)
 
 
-- [ ] **E08:S03:T15 – GitHub Actions CI health (Perpetual)** — 🔄 PERPETUAL (**v0.8.3.15+4** — Wave 3; `main` CI green @ `f7d8b155`) — [Task doc](story-03-automation-scripts/T15-github-actions-ci-health-perpetual-fr112.md) | [FR-112](../../fr-br/FR-112-perpetual-github-ci-and-security-health-lanes.md) | [IPP](../../../implementation-cycles/IPP-E08S03T15-github-actions-ci-health-perpetual-fr112.md)
+- [~] **E08:S03:T15 – GitHub Actions CI health (Perpetual)** — SUPERSEDED → **E02:S16:T05** — [Stub](story-03-automation-scripts/T15-github-actions-ci-health-perpetual-fr112.md)
 
-
-- [ ] **E08:S03:T16 – GitHub Security & Code Quality health (Perpetual)** — 🔄 PERPETUAL (**v0.8.3.16+9** — Wave 3e autofix PR #43/#44 pytest triage) — [Task doc](story-03-automation-scripts/T16-github-security-code-quality-health-perpetual-fr112.md) | [FR-112](../../fr-br/FR-112-perpetual-github-ci-and-security-health-lanes.md) | [IPP](../../../implementation-cycles/IPP-E08S03T16-github-security-code-quality-health-perpetual-fr112.md)
-
+- [~] **E08:S03:T16 – GitHub Security & Code Quality health (Perpetual)** — SUPERSEDED → **E02:S16:T06** — [Stub](story-03-automation-scripts/T16-github-security-code-quality-health-perpetual-fr112.md)
 
 - [x] **E08:S03:T17 – Local Code Quality Gate (CQG) (FR-113)** — ✅ COMPLETE (**v0.8.3.17+2**) — [Task doc](story-03-automation-scripts/T17-local-code-quality-gate-cqg-fr113.md) | [FR-113](../../fr-br/FR-113-local-code-quality-gate-cqg.md) | [IPP](../../../implementation-cycles/IPP-E08S03T17-local-code-quality-gate-cqg-fr113.md)
+
+- [x] **E08:S03:T18 – CQG gate relocation to IDW Phase 6b (ADR-022)** — ✅ COMPLETE (re-housed from E02:S16:T23) — [Task doc](story-03-automation-scripts/T18-cqg-gate-relocation-to-idw-phase-6b-adr022.md) | [ADR-022](../../../architecture/standards-and-adrs/ADR-022-local-code-quality-gate-architecture.md)
 
 ---
 
 ## Overview
 
-Story 3 delivers repository automation and Code Quality burn-down. **T12–T14** finite burn-down **COMPLETE**. **T17** (CQG) **COMPLETE** @ **v0.8.3.17+2** (CQG gate now at IDW Phase 6b per **E02:S16:T23**). **T15** CI green on `main` @ `f7d8b155`; **T16** Wave 3e shipped @ **v0.8.3.16+9** (autofix PR #43/#44 pytest triage; perpetual hygiene active).
+Story 3 delivers repository automation and Code Quality burn-down. **T12–T14** finite burn-down **COMPLETE**. **T17** (CQG) **COMPLETE** @ **v0.8.3.17+2**. **T18** CQG→IDW relocation **COMPLETE**. Perpetual CI/security lanes moved to **E02:S16:T05/T06** (IPP-E02S16T24).
 
 ---
 

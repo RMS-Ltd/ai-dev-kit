@@ -1,0 +1,37 @@
+{
+  "report_type": "rw_step7_stamp_evidence",
+  "invocation": "RW E02:S16:T24 --art",
+  "evidence_mode": "release_scope_reconciliation",
+  "release_scope": {
+    "epic": 2,
+    "story": 16,
+    "task": 24,
+    "task_id": "E02:S16:T24",
+    "version_string": "v0.2.16.24+1"
+  },
+  "summary": {
+    "notes": "S16 perpetual-only consolidation — row removals from kboard O-band (renumber/rehouse to E02:S16:T01–T06 and E04:S14:T11); evidenced structure-prune per FR-097"
+  },
+  "rows": {
+    "E02:S16:T10": {
+      "allowed": true,
+      "reason": "Renumbered to E02:S16:T04 (repo infrastructure perpetual lane); row removed from board"
+    },
+    "E02:S16:T14": {
+      "allowed": true,
+      "reason": "Re-housed to E04:S14:T11 (FR-043 finite UKW gap discovery); row removed from O-band"
+    },
+    "E07:S01:T05": {
+      "allowed": true,
+      "reason": "Markdown perpetual merged into E02:S16:T03; E07 row removed"
+    },
+    "E08:S03:T15": {
+      "allowed": true,
+      "reason": "CI health perpetual re-housed to E02:S16:T05; E08 row removed"
+    },
+    "E08:S03:T16": {
+      "allowed": true,
+      "reason": "Security/code-quality perpetual re-housed to E02:S16:T06; E08 row removed"
+    }
+  }
+}

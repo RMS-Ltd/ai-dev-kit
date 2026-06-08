@@ -71,6 +71,14 @@ Make RW agent execution documentation fully portable, clearly distinguishing dev
 
 - [x] **E02:S01:T25 – Changelog structured store — database-backed CMW (FR-115)** - ✅ COMPLETE (**v0.2.1.25+1** — async ingest read model; umbrella with T13) — [Task doc](story-01-rw-agent-execution-and-docs/T25-changelog-structured-store-database-backed-cmw-fr115.md) | [FR-115](../../fr-br/FR-115-changelog-structured-store-database-backed-cmw.md) | [IPP](../../../implementation-cycles/IPP-E02S01T25-release-metadata-async-ingest-umbrella.md)
 
+- [x] **E02:S01:T26 – Workflow initiation cheatsheet (UXR-015)** — ✅ COMPLETE (re-housed from E02:S16:T15) — [Task](story-01-rw-agent-execution-and-docs/T26-workflow-initiation-cheatsheet-uxr015.md) | [UXR-015](../../fr-br/UXR-015-workflow-initiation-cheatsheet.md)
+
+- [x] **E02:S01:T27 – Agent bootstrap and task routing (FR-103)** — ✅ COMPLETE (re-housed from E02:S16:T17) — [Task](story-01-rw-agent-execution-and-docs/T27-agent-bootstrap-and-task-routing-fr103.md) | [FR-103](../../fr-br/FR-103-agent-bootstrap-and-task-routing.md)
+
+- [x] **E02:S01:T28 – RW `--dpz` short flag (UXR-022)** — ✅ COMPLETE (re-housed from E02:S16:T19) — [Task](story-01-rw-agent-execution-and-docs/T28-rw-dpz-short-flag-doc-policy-zero-uxr022.md) | [UXR-022](../../fr-br/UXR-022-rw-doc-policy-zero-short-flag-dpz.md)
+
+- [x] **E02:S01:T29 – RW local-release default / no push (UXR-024)** — ✅ COMPLETE (re-housed from E02:S16:T21) — [Task](story-01-rw-agent-execution-and-docs/T29-rw-local-release-default-no-push-uxr024.md) | [UXR-024](../../fr-br/UXR-024-rw-local-release-default-no-push-batch-operator-push.md)
+
 ---
 
 ## Acceptance Criteria
