@@ -14,7 +14,7 @@ housekeeping_policy: keep
 **Submitted By:** Maintainer (UKW lean-board hygiene follow-up)  
 **Priority:** HIGH  
 **Severity:** MEDIUM  
-**Status:** IMPLEMENTED (pending verification)  
+**Status:** IMPLEMENTED (validator enforcement fix @ **v0.2.16.4+41** — `*(…)*` footnotes now blocking)  
 
 **Implementing Task:** [E02:S16:T18](../epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T18-ukw-lean-active-board-contract-fr109.md)
 

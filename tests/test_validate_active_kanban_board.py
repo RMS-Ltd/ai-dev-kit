@@ -88,6 +88,19 @@ def test_blocks_journal_line(tmp_path: Path) -> None:
     assert any("journal line" in f for f in findings)
 
 
+def test_blocks_archive_footnote_placeholder_line(tmp_path: Path) -> None:
+    content = _minimal_kboard_moscow(
+        "*(E07:S01:T12 COMPLETE @ v0.7.1.12+2 — see [kanban-completed.md](kanban-completed.md).)*",
+        "- **E02:S16:T04** – UKW - 🔄 PERPETUAL - "
+        "[Task](t.md) | —No IPP— | Last modified: 2026-06-04 12:00 UTC",
+    )
+    path = tmp_path / "kboard.md"
+    path.write_text(content, encoding="utf-8")
+    ok, findings = validate_board_file(path)
+    assert not ok
+    assert any("archive/completion footnote" in f for f in findings)
+
+
 def test_blocks_legacy_statistics_section(tmp_path: Path) -> None:
     path = tmp_path / "kboard.md"
     path.write_text(

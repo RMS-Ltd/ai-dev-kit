@@ -132,6 +132,10 @@ def validate_board_file(path: Path) -> Tuple[bool, List[str]]:
         if not st or st.startswith("###"):
             continue
         if _PLACEHOLDER_LINE_RE.match(line):
+            findings.append(
+                f"{path.name}:{i}: archive/completion footnote in MoSCOW section "
+                "(ledger lives in kanban-completed.md / intake-completed.md — remove inline *(…)* prose)"
+            )
             continue
 
         if st.startswith(">"):

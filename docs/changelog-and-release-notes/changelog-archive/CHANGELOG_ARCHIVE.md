@@ -1,4 +1,11 @@
 # Changelog Archive
+## [0.2.16.4+41] - 08-06-26
+
+E02:S16:T04 — **Change implemented:** FR-109 enforcement fix — prune kboard archive prose; block *(…)* footnotes. SemVer **v0.4.12+41**.
+
+[Detailed changelog](CHANGELOG_v0.2.16.4+41.md)
+
+---
 ## [0.2.16.4+40] - 08-06-26
 
 E02:S16:T04 — **Change implemented:** UKW comprehensive kanban sync — E07:S07 closure, E08:S03 T16 Wave 3e, agent bootstrap. SemVer **v0.4.11+40**.

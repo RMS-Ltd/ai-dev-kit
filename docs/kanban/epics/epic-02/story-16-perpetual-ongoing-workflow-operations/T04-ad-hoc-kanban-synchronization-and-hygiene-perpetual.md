@@ -13,8 +13,8 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** Medium  
 **Created:** 2026-04-22  
-**Last updated:** 2026-06-08 (RW **v0.2.16.4+40** — UKW comprehensive kanban sync)
-**Version Anchor:** v0.2.16.4+40
+**Last updated:** 2026-06-08 (RW **v0.2.16.4+41** — FR-109 kboard archive-prose enforcement)
+**Version Anchor:** v0.2.16.4+41
 **Code:** E02S16T04
 **Task Type:** Perpetual Maintenance
 
