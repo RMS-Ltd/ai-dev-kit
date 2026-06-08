@@ -69,7 +69,7 @@ def test_fr067_s4_triage_note(readme_text: str, triage_text: str):
     assert TRIAGE_PATH.is_file()
     assert "docusaurus-corpus-triage-fr-067" in readme_text
     lowered = triage_text.lower()
-    if "notion_sot: true" in lowered:
+    if re.search(r"\bnotion_sot\s*:\s*true\b", triage_text, re.IGNORECASE):
         assert "notion" in lowered
         assert "fr-114" in lowered or "fr-067" in lowered
     else:
