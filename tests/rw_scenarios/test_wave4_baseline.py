@@ -70,7 +70,7 @@ class TestWave4IPW:
     def test_IPW_P03_plan_template_mandatory_transitions(self):
         """IPW-P03: IPP template prescribes TODO→IN PROGRESS and final reconciliation."""
         template = PLAN_TEMPLATE.read_text(encoding="utf-8")
-        assert "TODO → IN PROGRESS" in template or "TODO → IN PROGRESS" in template.replace("→", "→")
+        assert "TODO → IN PROGRESS" in template or "TODO → IN PROGRESS" in template.replace("➔", "→")
         assert "Reconcile task" in template or "Reconcile" in template
         assert "MANDATORY" in template
 
