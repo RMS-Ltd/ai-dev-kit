@@ -33,9 +33,10 @@ Nine target locales are scaffolded (`es`, `fr`, `de`, `pt`, `zh-CN`, `zh-TW`, `j
 1. **Fork** the repository and create a branch.
 2. **Pick a locale and tier** — see [locale-rollout-matrix.md](../../governance/standards/locale-rollout-matrix.md) (P0 = language selection prompts first).
 3. **Edit locale files** — use `en-GB` as the reference; keep all YAML keys; do not remove `{{placeholders}}`.
-4. **Run tests:**
+4. **Run validation and tests:**
 
    ```bash
+   python packages/frameworks/workflow-mgt/scripts/validate_locale_translations.py --package all
    pytest -m fr006
    ```
 
@@ -71,6 +72,12 @@ Full guidelines: [translation-workflow-and-review.md § Translation guidelines](
 
 - [Kanban locales README](../../../packages/frameworks/kanban/locales/README.md)
 - [Workflow-mgt locales README](../../../packages/frameworks/workflow-mgt/locales/README.md)
+
+---
+
+## Maintainer tools
+
+See [translation-management-tools.md](translation-management-tools.md) for `validate_locale_translations.py`, `sync_locale_keys.py`, and `scaffold_locale_trees.py`.
 
 ---
 

@@ -1,11 +1,14 @@
 # Machine-readable translatable content registry (E21:S03:T01)
 # Consumed by T06 completeness tracking; human overview in translatable-content-inventory.md
 # Contributor workflow: docs/governance/standards/translation-workflow-and-review.md
+# Management tools: docs/documentation/user-docs/translation-management-tools.md
 version: 2
 task: E21:S03:T02
 adr: ADR-024
 validator_scope: option_b_inventory_only
 scaffold_tool: packages/frameworks/workflow-mgt/scripts/scaffold_locale_trees.py
+validate_tool: packages/frameworks/workflow-mgt/scripts/validate_locale_translations.py
+sync_keys_tool: packages/frameworks/workflow-mgt/scripts/sync_locale_keys.py
 scaffold_source_locale: en-GB
 scaffold_locales:
   es:

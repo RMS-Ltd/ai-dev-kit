@@ -84,10 +84,11 @@ When either package changes, sync `greenfield-install/packages/frameworks/{kanba
 ### 3. Verify locally
 
 ```bash
+python packages/frameworks/workflow-mgt/scripts/validate_locale_translations.py --package all
 pytest -m fr006
 ```
 
-Run the full `fr006` regression bundle before opening a PR. Translation-only PRs do **not** require Release Workflow (RW).
+Run structural validation and the full `fr006` regression bundle before opening a PR. Use `--strict` on the validator when you want key parity to block locally. Translation-only PRs do **not** require Release Workflow (RW).
 
 ### 4. Open a pull request
 
@@ -168,20 +169,34 @@ Until [E21:S03:T06](../../project-management/kanban/epics/epic-21/story-03-trans
 
 ---
 
+## Management tools (E21:S03:T05)
+
+Maintainer and contributor structural tooling (script-first; no `adk locale` subcommands in T05):
+
+| Tool | Role |
+| ---- | ---- |
+| `validate_locale_translations.py` | YAML parse, manifest paths, en-GB key parity, `{{placeholder}}` checks |
+| `sync_locale_keys.py` | Incremental missing-key sync from en-GB |
+| `scaffold_locale_trees.py` | Full locale tree bootstrap (T02) |
+
+**Guide:** [translation-management-tools.md](../../documentation/user-docs/translation-management-tools.md)
+
+---
+
 ## Workflow integration
 
 | Workflow | Translation PR interaction |
 | -------- | -------------------------- |
 | **RW (Release Workflow)** | Not required for translation-only PRs. RW is for versioned releases on the epic branch. |
 | **IPW / implementation** | Locale **process** changes use IPW on the host task; linguistic content uses this workflow only. |
-| **CI** | `pytest -m fr006` is the mandatory regression gate. |
+| **CI** | `pytest -m fr006` is the mandatory regression gate; `validate_locale_translations.py --strict` recommended when CI locale checks are added. |
 | **Greenfield sync** | Required when locale tree structure changes. |
+| **Management tools** | `validate_locale_translations.py` + `sync_locale_keys.py` — see [translation-management-tools.md](../../documentation/user-docs/translation-management-tools.md) |
 
 ---
 
 ## Out of scope
 
-- Translation management scripts — [E21:S03:T05](../../project-management/kanban/epics/epic-21/story-03-translation-and-localisation/T05-add-translation-management-tools.md)
 - Automated completeness dashboards — E21:S03:T06
 - Linguistic delivery per locale — E21:S05–S07
 - Validator `operator_validator` tier (~250 messages) — deferred per inventory Option B

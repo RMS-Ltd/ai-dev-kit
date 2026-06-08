@@ -1,0 +1,92 @@
+{
+  "contract": "FR-092 / FR-091 (RW Step 7 self-sufficient four-surface reconciliation)",
+  "invocation_context": "rw_step_7",
+  "release_scope": {
+    "epic": 21,
+    "story": 3,
+    "task": 5,
+    "task_id": "E21:S03:T05",
+    "version_string": "v0.21.3.5+1"
+  },
+  "stamp_evidence": {
+    "evidence_mode": "manifest",
+    "stamps_appended_with_evidence": 1,
+    "stamps_preserved_existing": 0,
+    "stamps_skipped_no_evidence": 0
+  },
+  "summary": {
+    "stamps_appended_with_evidence": 1,
+    "stamps_preserved_existing": 0,
+    "stamps_skipped_no_evidence": 0,
+    "total_changes": 12,
+    "touched_surfaces": [
+      "task_doc",
+      "fbu_doc",
+      "kboard"
+    ],
+    "untouched_surfaces": []
+  },
+  "surfaces": {
+    "task_doc": {
+      "changes": [
+        "Task E21:S03:T05 -> COMPLETE v0.21.3.5+1",
+        "Acceptance criteria checked"
+      ],
+      "notes": [],
+      "paths": [
+        "/Users/rms/Documents/projects/ai-dev-kit-e21/docs/project-management/kanban/epics/epic-21/story-03-translation-and-localisation/T05-add-translation-management-tools.md"
+      ],
+      "surface": "task_doc",
+      "touched": true
+    },
+    "fbu_doc": {
+      "changes": [
+        "FR-006 Phase 3 T05 anchor v0.21.3.5+1 COMPLETE"
+      ],
+      "notes": [],
+      "paths": [
+        "/Users/rms/Documents/projects/ai-dev-kit-e21/docs/project-management/kanban/fr-br/FR-006-localization-language-selection-uk-us-english.md"
+      ],
+      "surface": "fbu_doc",
+      "touched": true
+    },
+    "kboard": {
+      "changes": [
+        "Pruned E21:S03:T05 terminal row",
+        "Added E21:S03:T06 next in-flight row",
+        "FR-097 homogeneity remediation on E21 C-band rows"
+      ],
+      "notes": [],
+      "paths": [
+        "/Users/rms/Documents/projects/ai-dev-kit-e21/docs/project-management/kanban/kboard.md"
+      ],
+      "surface": "kboard",
+      "touched": true
+    }
+  },
+  "auxiliary_surfaces": {
+    "story_doc": {
+      "changes": [
+        "Story T05 checklist COMPLETE"
+      ],
+      "notes": [],
+      "paths": [
+        "/Users/rms/Documents/projects/ai-dev-kit-e21/docs/project-management/kanban/epics/epic-21/story-03-translation-and-localisation.md"
+      ],
+      "surface": "story_doc",
+      "touched": true
+    },
+    "epic_doc": {
+      "changes": [
+        "Epic-21 T05 checklist COMPLETE"
+      ],
+      "notes": [],
+      "paths": [
+        "/Users/rms/Documents/projects/ai-dev-kit-e21/docs/project-management/kanban/epics/epic-21/Epic-21.md"
+      ],
+      "surface": "epic_doc",
+      "touched": true
+    }
+  },
+  "timestamp_utc": "2026-06-08 13:09 UTC"
+}

@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Completed Tasks
 
-**Last Updated:** 2026-06-08 (RW: E21:S09:T02 bootstrap open-work refresh)
-**Version:** v0.21.9.2+2
+**Last Updated:** 2026-06-08 (RW: E21:S03:T05 translation management tools)
+**Version:** v0.21.3.5+1
 
 > **For MoSCOW prioritized tasks, see:** [`kboard.md`](kboard.md)  
 > **For completed FR/BR/UXR intake items, see:** [`intake-completed.md`](intake-completed.md)
@@ -19,6 +19,11 @@ housekeeping_policy: keep
 ---
 
 ## 20 Most Recently Completed Tasks
+
+#### **RW (2026-06-08)** — E21:S03:T05 @ **v0.21.3.5+1** (translation management tools)
+
+- **[E21:S03:T05](epics/epic-21/story-03-translation-and-localisation/T05-add-translation-management-tools.md)** — `validate_locale_translations.py`, `sync_locale_keys.py`, maintainer guide; `pytest -m fr006` green.
+  **Completed:** `2026-06-08T13:09:04Z` | **Version:** `v0.21.3.5+1` | **Agent:** `RW E21:S03:T05 --art` | [FR-006](fr-br/FR-006-localization-language-selection-uk-us-english.md) | [IPP](../../../implementation-cycles/IPP-E21S03T05-translation-management-tools.md)
 
 #### **RW (2026-06-08)** — E21:S09:T02 @ **v0.21.9.2+2** (bootstrap open-work refresh)
 

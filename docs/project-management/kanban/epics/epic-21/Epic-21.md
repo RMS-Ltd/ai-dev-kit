@@ -162,7 +162,7 @@ Implement translations and localisation for major languages.
 - [ ] E21:S03:T02 – Create translation files for major languages
 - [ ] E21:S03:T03 – Implement translation lookup and rendering
 - [ ] E21:S03:T04 – Create translation workflow and review process
-- [ ] E21:S03:T05 – Add translation management tools
+- [x] E21:S03:T05 – Add translation management tools — ✅ COMPLETE (v0.21.3.5+1)
 - [ ] E21:S03:T06 – Implement translation completeness tracking
 - [ ] E21:S03:T07 – Test translations and locale support
 

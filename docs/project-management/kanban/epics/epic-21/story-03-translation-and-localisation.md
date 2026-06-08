@@ -12,8 +12,8 @@ housekeeping_policy: keep
 **Priority:** LOW  
 **Estimated Effort:** [TBD]  
 **Created:** 2025-12-09  
-**Last updated:** 2026-06-08 (v0.21.3.4+1 — E21:S03:T04 COMPLETE)  
-**Version:** v0.21.3.4+1  
+**Last updated:** 2026-06-08 (v0.21.3.5+1 — E21:S03:T05 COMPLETE)  
+**Version:** v0.21.3.5+1  
 **Code:** E21S03
 
 ---
@@ -40,7 +40,7 @@ Translate framework content to major languages, establish translation workflow, 
   - Task: [`T03-implement-translation-lookup-and-rendering`](story-03-translation-and-localisation/T03-implement-translation-lookup-and-rendering.md)
 - [x] **E21:S03:T04 – Create translation workflow and review process** - ✅ COMPLETE (v0.21.3.4+1)
   - Task: [`T04-create-translation-workflow-and-review-process`](story-03-translation-and-localisation/T04-create-translation-workflow-and-review-process.md)
-- [ ] **E21:S03:T05 – Add translation management tools** - TODO
+- [x] **E21:S03:T05 – Add translation management tools** - ✅ COMPLETE (v0.21.3.5+1)
   - Task: [`T05-add-translation-management-tools`](story-03-translation-and-localisation/T05-add-translation-management-tools.md)
 - [ ] **E21:S03:T06 – Implement translation completeness tracking** - TODO
   - Task: [`T06-implement-translation-completeness-tracking`](story-03-translation-and-localisation/T06-implement-translation-completeness-tracking.md)
@@ -55,7 +55,7 @@ Translate framework content to major languages, establish translation workflow, 
 - [ ] Translation files created for major languages
 - [x] Translation lookup and rendering works
 - [x] Translation workflow established
-- [ ] Translation management tools available
+- [x] Translation management tools available
 - [ ] Translation completeness tracked
 - [ ] Translations tested
 

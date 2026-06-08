@@ -45,7 +45,13 @@ See [`manifest.yaml`](manifest.yaml). Kanban templates: `packages/frameworks/kan
 
 **Content inventory (E21:S03:T01):** [translatable-content-inventory.md](../../../../docs/governance/standards/translatable-content-inventory.md)  
 **Rollout matrix (E21:S03:T02):** [locale-rollout-matrix.md](../../../../docs/governance/standards/locale-rollout-matrix.md)  
-**Scaffold tool:** [`scaffold_locale_trees.py`](../scripts/scaffold_locale_trees.py)
+**Management tools (E21:S03:T05):** [translation-management-tools.md](../../../../docs/documentation/user-docs/translation-management-tools.md)
+
+| Script | Role |
+| ------ | ---- |
+| [`validate_locale_translations.py`](../scripts/validate_locale_translations.py) | Structural validation |
+| [`sync_locale_keys.py`](../scripts/sync_locale_keys.py) | Incremental key sync from en-GB |
+| [`scaffold_locale_trees.py`](../scripts/scaffold_locale_trees.py) | Full tree bootstrap (T02) |
 
 ## Phase 2 roadmap
 
@@ -60,6 +66,8 @@ See [`manifest.yaml`](manifest.yaml). Kanban templates: `packages/frameworks/kan
 | E21:S03:T01 | Extract installer/CLI keys + inventory — **COMPLETE** @ v0.21.3.1+1 |
 | E21:S03:T02 | Scaffold 9 major-language locale trees — **COMPLETE** @ v0.21.3.2+1 |
 | E21:S03:T03 | Call-site wiring (`locale_message`) — installer + CLI — **COMPLETE** @ v0.21.3.3+1 |
+| E21:S03:T04 | Translation workflow — [translation-workflow-and-review.md](../../../../docs/governance/standards/translation-workflow-and-review.md) — **COMPLETE** @ v0.21.3.4+1 |
+| E21:S03:T05 | Management tools — [translation-management-tools.md](../../../../docs/documentation/user-docs/translation-management-tools.md) |
 
 Call-site helper: `locale_message(project_root, key, substitutions)` in [`localisation_config.py`](../scripts/localisation_config.py) (E21:S03:T03). Consumed by `install_release_workflow.py` and `cli/commands/init.py`.
 

@@ -8,12 +8,12 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Board
 
-**Last Updated:** 2026-06-08 (RW **v0.21.9.2+2** — E21:S09:T02 bootstrap open-work refresh)
-**Version:** v0.21.9.2+2
+**Last Updated:** 2026-06-08 (RW **v0.21.3.5+1** — E21:S03:T05 translation management tools)
+**Version:** v0.21.3.5+1
 
 **Active board contract:** **Sole active MoSCOW board** ([ADR-018](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/architecture/standards-and-adrs/ADR-018-single-kanban-board-consolidation.md)). Rows are **live work** (TODO / IN PROGRESS / OPEN / WAITING / PERPETUAL) plus filed **Could Have** backlog. **Verification (V)** band holds task-shipped / FBU-open items (`⏳ WAITING`). Remove **terminal** rows and archive prose (use [`kanban-completed.md`](kanban-completed.md) / [`intake-completed.md`](intake-completed.md)).
 
-**Note:** Epics 1, 3, 7, 11 are COMPLETE. Epics 2, 4, 5, 6, 8, **10** are IN PROGRESS. Epic 21 is IN PROGRESS (S01–S02 **COMPLETE**; S08 Layer 0–1 @ v0.21.8.3+1; **S03** T05 next; S09 admin; S04–S07 backlog; S08 Layers 2–5 deferred).
+**Note:** Epics 1, 3, 7, 11 are COMPLETE. Epics 2, 4, 5, 6, 8, **10** are IN PROGRESS. Epic 21 is IN PROGRESS (S01–S02 **COMPLETE**; S08 Layer 0–1 @ v0.21.8.3+1; **S03** T06 next; S09 admin; S04–S07 backlog; S08 Layers 2–5 deferred).
 
 **Wiring:** Every wired row includes FBU link(s) where applicable (UXR-010). Legacy `fbuboard.md` / `kanban-board.md` aliases **removed** (intake rename wave).
 
@@ -30,7 +30,7 @@ housekeeping_policy: keep
 
 *(E10:S01 story **COMPLETE** @ v0.10.1.10+2 — RC **APPROVE**; Epic 10 IN PROGRESS — E10:S02 TODO; see [`kanban-completed.md`](kanban-completed.md).)*
 
-- **E21:S03:T05** – Add translation management tools - 📋 TODO (MEDIUM, **next** FR-006 translation pipeline) | [Task](epics/epic-21/story-03-translation-and-localisation/T05-add-translation-management-tools.md) | [Story](epics/epic-21/story-03-translation-and-localisation.md) | [FR-006](fr-br/FR-006-localization-language-selection-uk-us-english.md) | —No IPP— | Last modified: 2026-06-08 12:44 UTC
+- **E21:S03:T06** – Implement translation completeness tracking - 📋 TODO (MEDIUM, **next** FR-006 translation pipeline) | [Task](epics/epic-21/story-03-translation-and-localisation/T06-implement-translation-completeness-tracking.md) | [Story](epics/epic-21/story-03-translation-and-localisation.md) | [FR-006](fr-br/FR-006-localization-language-selection-uk-us-english.md) | —No IPP— | Last modified: 2026-06-08 13:09 UTC
 
 - **E05:S09:T15** – Docusaurus adopter-public publish allowlist (FR-114) - 📋 TODO (HIGH, **v0.5.9.15+1** RW -k intake) | [Task](epics/epic-05/story-09-docusaurus-documentation-portal/T15-docusaurus-adopter-public-publish-allowlist-fr114.md) | [FR-114](fr-br/FR-114-split-documentation-surfaces-docusaurus-public-notion-maintainer-kb.md) | —No IPP— | Last modified: 2026-06-06 16:16 UTC
 
@@ -58,13 +58,13 @@ housekeeping_policy: keep
 
 - **E07:S01:T10** – FR-039: AI Dev Kit Project Review and Legacy Clean-up - 📋 TODO (LOW, Review and clean up legacy project elements) | [Task](epics/epic-07/story-01-codebase-maintenance-tasks/T10-project-root-hygiene-and-legacy-docs-rationalization.md) | [FR-039](fr-br/FR-039-ai-dev-kit-project-review-and-legacy-clean-up.md) | —No IPP— | Last modified: 2026-06-04 12:15 UTC
 
-- **E21:S04:T01** – Research cultural requirements for target locales - 📋 TODO (LOW, FR-006 Phase 3+; after S03 pipeline) | [Task](epics/epic-21/story-04-cultural-adaptation/T01-research-cultural-requirements-for-target-locales.md) | [Story](epics/epic-21/story-04-cultural-adaptation.md) | [FR-006](fr-br/FR-006-localization-language-selection-uk-us-english.md) | —No IPP— | Last modified: 2026-06-08 10:30 UTC
+- **E21:S04:T01** – Research cultural requirements for target locales - 📋 TODO (LOW, FR-006 Phase 3+; after S03 pipeline) | [Task](epics/epic-21/story-04-cultural-adaptation/T01-research-cultural-requirements-for-target-locales.md) | [Story](epics/epic-21/story-04-cultural-adaptation.md) | [FR-006](fr-br/FR-006-localization-language-selection-uk-us-english.md) | —No IPP— | Last modified: 2026-06-08 10:31 UTC
 
-- **E21:S05:T01** – Spanish (es) translation files - 📋 TODO (LOW, European languages story) | [Task](epics/epic-21/story-05-european-languages-localization/T01-spanish-es-translation-files.md) | [Story](epics/epic-21/story-05-european-languages-localization.md) | [FR-006](fr-br/FR-006-localization-language-selection-uk-us-english.md) | —No IPP— | Last modified: 2026-06-08 10:30 UTC
+- **E21:S05:T01** – Spanish (es) translation files - 📋 TODO (LOW, European languages story) | [Task](epics/epic-21/story-05-european-languages-localization/T01-spanish-es-translation-files.md) | [Story](epics/epic-21/story-05-european-languages-localization.md) | [FR-006](fr-br/FR-006-localization-language-selection-uk-us-english.md) | —No IPP— | Last modified: 2026-06-08 10:32 UTC
 
-- **E21:S06:T01** – Chinese Simplified (zh-CN) translation files - 📋 TODO (LOW, CJK story) | [Task](epics/epic-21/story-06-cjk-languages-localization/T01-chinese-simplified-zh-cn-translation-files.md) | [Story](epics/epic-21/story-06-cjk-languages-localization.md) | [FR-006](fr-br/FR-006-localization-language-selection-uk-us-english.md) | —No IPP— | Last modified: 2026-06-08 10:30 UTC
+- **E21:S06:T01** – Chinese Simplified (zh-CN) translation files - 📋 TODO (LOW, CJK story) | [Task](epics/epic-21/story-06-cjk-languages-localization/T01-chinese-simplified-zh-cn-translation-files.md) | [Story](epics/epic-21/story-06-cjk-languages-localization.md) | [FR-006](fr-br/FR-006-localization-language-selection-uk-us-english.md) | —No IPP— | Last modified: 2026-06-08 10:32 UTC
 
-- **E21:S07:T01** – Arabic (ar) translation files - 📋 TODO (LOW, RTL / extended locales) | [Task](epics/epic-21/story-07-rtl-and-extended-locales/T01-arabic-ar-translation-files.md) | [Story](epics/epic-21/story-07-rtl-and-extended-locales.md) | [FR-006](fr-br/FR-006-localization-language-selection-uk-us-english.md) | —No IPP— | Last modified: 2026-06-08 10:30 UTC
+- **E21:S07:T01** – Arabic (ar) translation files - 📋 TODO (LOW, RTL / extended locales) | [Task](epics/epic-21/story-07-rtl-and-extended-locales/T01-arabic-ar-translation-files.md) | [Story](epics/epic-21/story-07-rtl-and-extended-locales.md) | [FR-006](fr-br/FR-006-localization-language-selection-uk-us-english.md) | —No IPP— | Last modified: 2026-06-08 10:34 UTC
 
 ### Ongoing (O) - Perpetual Tasks
 
@@ -86,12 +86,12 @@ housekeeping_policy: keep
 
 ### Won't Have (W) - Deferred Tasks
 
-- **E21:S08:T04** – Docusaurus public docs portal accessibility (Layer 2) - ⏸ DEFERRED (MEDIUM, ADR-025 Layer 2; after Layer 1 CLI @ v0.21.8.3+1) | [Task](epics/epic-21/story-08-accessibility/T04-docusaurus-public-docs-portal-accessibility.md) | [Story](epics/epic-21/story-08-accessibility.md) | [FR-115](fr-br/FR-115-accessibility-standards-compatibility.md) | [ADR-025](../../architecture/standards-and-adrs/ADR-025-layered-accessibility-strategy.md) | —No IPP— | Last modified: 2026-06-08 10:30 UTC
+- **E21:S08:T04** – Docusaurus public docs portal accessibility (Layer 2) - ⏸ DEFERRED (MEDIUM, ADR-025 Layer 2; after Layer 1 CLI @ v0.21.8.3+1) | [Task](epics/epic-21/story-08-accessibility/T04-docusaurus-public-docs-portal-accessibility.md) | [Story](epics/epic-21/story-08-accessibility.md) | [FR-115](fr-br/FR-115-accessibility-standards-compatibility.md) | [ADR-025](../../architecture/standards-and-adrs/ADR-025-layered-accessibility-strategy.md) | —No IPP— | Last modified: 2026-06-08 10:35 UTC
 
-- **E21:S08:T05** – Markdown / kanban corpora accessibility (Layer 3) - ⏸ DEFERRED (MEDIUM, ADR-025 Layer 3) | [Task](epics/epic-21/story-08-accessibility/T05-markdown-and-kanban-documentation-structure.md) | [Story](epics/epic-21/story-08-accessibility.md) | [FR-115](fr-br/FR-115-accessibility-standards-compatibility.md) | —No IPP— | Last modified: 2026-06-08 10:30 UTC
+- **E21:S08:T05** – Markdown / kanban corpora accessibility (Layer 3) - ⏸ DEFERRED (MEDIUM, ADR-025 Layer 3) | [Task](epics/epic-21/story-08-accessibility/T05-markdown-and-kanban-documentation-structure.md) | [Story](epics/epic-21/story-08-accessibility.md) | [FR-115](fr-br/FR-115-accessibility-standards-compatibility.md) | —No IPP— | Last modified: 2026-06-08 10:36 UTC
 
-- **E21:S08:T06** – Agent workflow blocking-state accessibility (Layer 4) - ⏸ DEFERRED (MEDIUM, ADR-025 Layer 4) | [Task](epics/epic-21/story-08-accessibility/T06-agent-workflow-blocking-state-accessibility.md) | [Story](epics/epic-21/story-08-accessibility.md) | [FR-115](fr-br/FR-115-accessibility-standards-compatibility.md) | —No IPP— | Last modified: 2026-06-08 10:30 UTC
+- **E21:S08:T06** – Agent workflow blocking-state accessibility (Layer 4) - ⏸ DEFERRED (MEDIUM, ADR-025 Layer 4) | [Task](epics/epic-21/story-08-accessibility/T06-agent-workflow-blocking-state-accessibility.md) | [Story](epics/epic-21/story-08-accessibility.md) | [FR-115](fr-br/FR-115-accessibility-standards-compatibility.md) | —No IPP— | Last modified: 2026-06-08 10:36 UTC
 
-- **E21:S08:T07** – Accessibility testing gates and adopter guidelines (Layer 5) - ⏸ DEFERRED (MEDIUM, ADR-025 Layer 5) | [Task](epics/epic-21/story-08-accessibility/T07-accessibility-testing-gates-and-adopter-guidelines.md) | [Story](epics/epic-21/story-08-accessibility.md) | [FR-115](fr-br/FR-115-accessibility-standards-compatibility.md) | —No IPP— | Last modified: 2026-06-08 10:30 UTC
+- **E21:S08:T07** – Accessibility testing gates and adopter guidelines (Layer 5) - ⏸ DEFERRED (MEDIUM, ADR-025 Layer 5) | [Task](epics/epic-21/story-08-accessibility/T07-accessibility-testing-gates-and-adopter-guidelines.md) | [Story](epics/epic-21/story-08-accessibility.md) | [FR-115](fr-br/FR-115-accessibility-standards-compatibility.md) | —No IPP— | Last modified: 2026-06-08 10:37 UTC
 
 *(Other deferred and shipped items: see [`kanban-completed.md`](kanban-completed.md) and story checklists.)*
