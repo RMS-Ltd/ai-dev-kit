@@ -1,4 +1,11 @@
 # Changelog Archive
+## [0.8.3.16+4] - 08-06-26
+
+E08:S03:T16 — **Change implemented:** Wave 3a manifest — **3** M + **8** R @ `f7d8b155`; TC14 closed. SemVer **v0.4.1059+4**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.8.3.16+4.md)
+
+---
 ## [0.2.16.4+39] - 08-06-26
 
 E02:S16:T04 — **Change implemented:** UKW -u bookkeeping — post-T16/main merge kanban sync. SemVer **v0.4.1058+39**.

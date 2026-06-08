@@ -14,6 +14,8 @@ housekeeping_policy: keep
 
 > **IPW:** Perpetual lane for GitHub **code scanning** + **Code Quality dashboard** hygiene. **Does not** own [Actions](https://github.com/RMS-Ltd/ai-dev-kit/actions) CI (→ **E08:S03:T15**).
 >
+> **Revision (2026-06-08 — Wave 3 IPW):** Post–Wave 2b operator dashboard **3** maintainability + **8** reliability open @ `main` `f7d8b155`. Two-step: **Wave 3a** manifest + TC14 close; **Wave 3b** reliability-first remediation. See **§8 Wave 3**.
+>
 > **Revision (2026-06-07 — Wave 2+ IPW):** T12/T13/T14 **COMPLETE**; T12 operator **Good** @ `ed379ab`; RF9 deferral **lifted**. Two-step delivery: **Wave 2a** manifest-only RW after T15 on `main`; **Wave 2b** first themed remediation RW. See **§8 Rolling backlog**.
 >
 > **Revision (2026-06-05 — Wave 1 re-scan):** Operator refresh @ `main` **`f6aa4dca`**. **Maintainability 146 / Fair**; **Reliability 28 / Fair**; **AI panel 12** open.
@@ -44,6 +46,10 @@ housekeeping_policy: keep
 | RF14 | **CQG** before Wave 2b RW (`validate_code_quality_gate.py`) | FR-113 / T17 |
 | RF15 | **greenfield-install** sync after `packages/` edits in Wave 2b | FR-106 |
 | RF16 | Net-new **HIGH** CodeQL security → BR + task (BR-094); return to T16 after | T16 scope |
+| RF17 | **Wave 3a re-scan** on `main` @ SHA: explicit **3** M + **8** R open counts + rule breakdown + scores | Wave 3 IPW |
+| RF18 | **Delta** vs Wave 2a/2b and T12 Good in T16 task doc | Wave 3 IPW |
+| RF19 | **Close TC14**; Wave 2b verify note; optional changelog verification addendum | Wave 3 IPW |
+| RF20 | **Wave 3b:** reliability-first (8), then maintainability (3); one RW if all code-fixable | Wave 3 IPW |
 
 ### 1.2 Non-functional requirements (ascertained)
 
@@ -137,6 +143,10 @@ Establish **E08:S03:T16** as the operational perpetual lane for GitHub **code sc
 | TC12 | Wave 2b CQG | CQG meets `rw_threshold` (advisory warnings OK) | RF14 | 2b |
 | TC13 | Wave 2b greenfield | `sync_greenfield_install.py --check` when packages touched | RF15 | 2b |
 | TC14 | Wave 2b dashboard | Operator verifies GH UI delta post-merge | RF3 | 2b |
+| TC15 | Wave 3a manifest | **3** M + **8** R + rule table @ `main` | RF17 | 3a |
+| TC16 | Wave 3a delta + TC14 | vs Wave 2a/2b documented; TC14 closed | RF18, RF19 | 3a |
+| TC17 | Wave 3b pytest | `pytest tests/` + workflow-scripts green | RF5 | 3b |
+| TC18 | Wave 3b CQG + greenfield | CQG threshold + `--check` in sync | RF14, RF15 | 3b |
 
 **Wave 0 verification:** TC1–TC4 only (docs-only; no `--skip-tests` — TC5 deferred to Wave 1+).
 
@@ -145,6 +155,10 @@ Establish **E08:S03:T16** as the operational perpetual lane for GitHub **code sc
 **Wave 2a verification:** TC9–TC10 (docs-only manifest RW).
 
 **Wave 2b verification:** TC11–TC14 (code + operator dashboard).
+
+**Wave 3a verification:** TC15–TC16 (docs-only manifest RW).
+
+**Wave 3b verification:** TC17–TC18 (code + post-merge dashboard).
 
 ---
 
@@ -255,9 +269,11 @@ Establish **E08:S03:T16** as the operational perpetual lane for GitHub **code sc
 - [x] Wave 1 re-scan manifest @ `f6aa4dca` in T16 task doc (TC7–TC8)
 - [x] Coordination matrix reflects reliability **Fair** + **28** open (TC8)
 - [x] T16 activity **deferred** until T12–T14 sign-off documented (RF9)
-- [ ] Wave 2a manifest @ post-T15 `main` (TC9–TC10); `RW E08:S03:T16 --art`
-- [ ] Wave 2b themed remediation + CQG/pytest (TC11–TC13); `RW E08:S03:T16 --art`
-- [ ] Operator dashboard verify (TC14)
+- [x] Wave 2a manifest @ post-T15 `main` (TC9–TC10); `RW E08:S03:T16 --art` (**v0.8.3.16+2**)
+- [x] Wave 2b themed remediation + CQG/pytest (TC11–TC13); `RW E08:S03:T16 --art` (**v0.8.3.16+3**)
+- [x] Operator dashboard verify (TC14) — closed Wave 3a @ **3** M + **8** R
+- [ ] Wave 3a manifest @ post–Wave 2b `main` (TC15–TC16); `RW E08:S03:T16 --art`
+- [ ] Wave 3b reliability-first remediation (TC17–TC18); `RW E08:S03:T16 --art`
 
 ---
 
@@ -297,6 +313,27 @@ Establish **E08:S03:T16** as the operational perpetual lane for GitHub **code sc
 | 12 | Operator dashboard verify (TC14) |
 
 **RW rule:** **`RW E08:S03:T16 --art` only**; no `--doc-policy-zero` (BR-097).
+
+### Wave 3a — Post–Wave 2b manifest (docs RW)
+
+| Step | Action |
+| ---- | ------ |
+| 13 | Confirm T16 **IN PROGRESS**; capture `main` @ `f7d8b155` + UTC |
+| 14 | Record manifest: **3** maintainability + **8** reliability + rule breakdown from [Code Quality](https://github.com/RMS-Ltd/ai-dev-kit/security/quality) |
+| 15 | Close **TC14**; delta vs Wave 2a/2b; Wave 2b verify note |
+| 16 | `RW E08:S03:T16 --art` — BUILD +1 |
+| 17 | Reconcile T16 **IN PROGRESS**; AC8 Wave 3a |
+
+### Wave 3b — Reliability-first remediation (code RW)
+
+| Step | Action |
+| ---- | ------ |
+| 18 | Triage 3a rule table |
+| 19 | Fix **8** reliability (`py/empty-except`, `py/tarslip` in installer scripts + mirror) |
+| 20 | Fix **3** maintainability (`py/ineffectual-statement`, `py/unused-local-variable`) |
+| 21 | TC17–TC18; `sync_greenfield_install.py` |
+| 22 | `RW E08:S03:T16 --art` |
+| 23 | Operator post-merge dashboard verify |
 
 ---
 

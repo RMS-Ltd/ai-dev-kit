@@ -11,10 +11,10 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
-## [0.2.16.4+39] - 08-06-26
+## [0.8.3.16+4] - 08-06-26
 
-E02:S16:T04 — **Change implemented:** UKW -u bookkeeping — post-T16/main merge kanban sync (T15 CI verified, board metadata). SemVer **v0.4.1058+39**.
+E08:S03:T16 — **Change implemented:** Wave 3a manifest @ `main` `f7d8b155` — **3** M + **8** R open; TC14 closed. SemVer **v0.4.1059+4**.
 
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.16.4+39.md)
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.8.3.16+4.md)
 
 ---
