@@ -38,14 +38,19 @@ def record_all_responses() -> int:
     now = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
     total = 0
     for response_path in sorted(CHUNK_DIR.glob("*-response.json")):
-        sidecar_path = response_path.name.replace("-response.json", ".sidecar.json")
-        sidecar = json.loads((CHUNK_DIR / sidecar_path).read_text(encoding="utf-8"))
+        sidecar_file = CHUNK_DIR / response_path.name.replace("-response.json", ".sidecar.json")
+        if not sidecar_file.exists():
+            print(f"warning: missing sidecar for {response_path.name}; skipping")
+            continue
+        sidecar = json.loads(sidecar_file.read_text(encoding="utf-8"))
         response = json.loads(response_path.read_text(encoding="utf-8"))
         pages = response.get("pages", [])
         for i, page in enumerate(pages):
             if i >= len(sidecar):
                 break
-            rel = sidecar[i]["source_path"]
+            rel = sidecar[i].get("source_path")
+            if not rel:
+                continue
             if rel not in by_path:
                 continue
             entry = by_path[rel]
