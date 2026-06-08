@@ -11,10 +11,10 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
-## [0.8.3.15+4] - 08-06-26
+## [0.8.3.15+5] - 08-06-26
 
-E08:S03:T15 — **Change implemented:** RW Step 9.7 Actions CI parity gate; no-red-ship + Failed job usage policy; default RW never pushes (UXR-024 R7). SemVer **v0.4.1056+4**.
+E08:S03:T15 — **Change implemented:** Step 9.7 tests parity — isolate pytest-django; `run_tests_ci_parity.sh`. SemVer **v0.4.1057+5**.
 
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.8.3.15+4.md)
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.8.3.15+5.md)
 
 ---

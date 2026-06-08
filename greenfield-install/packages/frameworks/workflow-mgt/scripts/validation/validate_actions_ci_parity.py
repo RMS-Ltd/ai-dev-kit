@@ -32,7 +32,10 @@ _DEFAULT_CHECKS: list[dict] = [
             "setup.py",
             "setup.cfg",
         ],
-        "command": [sys.executable, "-m", "pytest", "tests/"],
+        "command": [
+            "bash",
+            "packages/frameworks/workflow-mgt/scripts/validation/run_tests_ci_parity.sh",
+        ],
         "cwd": None,
     },
     {

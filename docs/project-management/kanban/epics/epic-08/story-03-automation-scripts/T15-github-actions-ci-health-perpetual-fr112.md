@@ -13,8 +13,8 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** Small (ongoing)  
 **Created:** 2026-06-05  
-**Last updated:** 2026-06-08 (RW E08:S03:T15+4 — Step 9.7 CI parity gate shipped)  
-**Version Anchor:** v0.8.3.15+4  
+**Last updated:** 2026-06-08 (RW E08:S03:T15+5 — Step 9.7 pytest-django isolation)  
+**Version Anchor:** v0.8.3.15+5  
 **Code:** E08S03T15  
 **Task Type:** Perpetual Maintenance
 
@@ -153,6 +153,13 @@ Use **`RW E08:S03:T15`** for recurring CI hygiene passes (BUILD increments on pe
 | Operator OR-T15-1…7 + UXR-024 R7 | Wired in agent SoT |
 | `actions_ci_parity` in `rw-config.yaml` | Enabled |
 | Post-push Actions verify (AC5/AC6) | **Open** — pending operator batch push + GH green |
+
+### Wave 3b (v0.8.3.15+5)
+
+| Deliverable | Status |
+| ----------- | ------ |
+| `run_tests_ci_parity.sh` | Shipped — blocks global pytest-django; mirrors `tests.yml` |
+| Operator batch push | Use **+5** tags (`v0.8.3.15+5`, `v0.4.1057`); +4 tags pre-exist on remote |
 
 ---
 

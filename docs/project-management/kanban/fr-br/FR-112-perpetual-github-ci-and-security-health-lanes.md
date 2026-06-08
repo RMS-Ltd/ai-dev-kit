@@ -13,7 +13,7 @@ housekeeping_policy: keep
 **Submitted:** 2026-06-05  
 **Submitted By:** User (via agent — CI/security ownership gap)  
 **Priority:** HIGH  
-**Status:** IN PROGRESS (v0.8.3.15+4 — T15 Wave 3 Step 9.7 CI parity gate; **~501 min** Failed job usage burn-down; AC5/AC6 open pending GH verify)  
+**Status:** IN PROGRESS (v0.8.3.15+5 — Step 9.7 tests parity fix; AC5/AC6 open pending GH verify)  
 **Implementing Tasks:**
 - **E08:S03:T15** — [GitHub Actions CI health (Perpetual)](../epics/epic-08/story-03-automation-scripts/T15-github-actions-ci-health-perpetual-fr112.md)
 - **E08:S03:T16** — [GitHub Security & Code Quality health (Perpetual)](../epics/epic-08/story-03-automation-scripts/T16-github-security-code-quality-health-perpetual-fr112.md)
