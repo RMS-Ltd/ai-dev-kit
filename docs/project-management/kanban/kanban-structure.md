@@ -460,25 +460,7 @@ housekeeping_policy: keep
 **Priority:** MEDIUM  
 **Last Updated:** 2026-02-08 (RW: E05:S01:T37)
 
-**Stories:**
-- [ ] **E21:S00 – Language Selection at Setup (UK/US English)** - TODO (v0.21.0.0+0)
-  - Story: [`epics/epic-21/story-00-language-selection-at-setup.md`](epics/epic-21/story-00-language-selection-at-setup.md)
-  - Tasks: T01-T07 TODO
-
-
-- [ ] **E21:S01 – Internationalisation Infrastructure** - TODO (v0.21.0.0+0)
-  - Story: [`epics/epic-21/story-01-internationalisation-infrastructure.md`](epics/epic-21/story-01-internationalisation-infrastructure.md)
-  - Tasks: T01-T07 TODO
-
-
-- [ ] **E21:S02 – Translation and Localisation** - TODO (v0.21.0.0+0)
-  - Story: [`epics/epic-21/story-02-translation-and-localisation.md`](epics/epic-21/story-02-translation-and-localisation.md)
-  - Tasks: T01-T07 TODO
-
-
-- [ ] **E21:S03 – Cultural Adaptation** - TODO (v0.21.0.0+0)
-  - Story: [`epics/epic-21/story-03-cultural-adaptation.md`](epics/epic-21/story-03-cultural-adaptation.md)
-  - Tasks: T01-T07 TODO
+**Stories:** See canonical checklist in [`epics/epic-21/Epic-21.md`](epics/epic-21/Epic-21.md) (S01–S09). Legacy S00/mis-numbered paths redirect per [E21:S09:T02](epics/epic-21/story-09-epic-housekeeping/T02-legacy-story-folder-rationalization.md).
 
 **Epic Doc:** [`epics/epic-21/Epic-21.md`](epics/epic-21/Epic-21.md)
 

@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Completed Tasks
 
-**Last Updated:** 2026-06-08 (RW: E21:S09:T01 UKW Epic 21 housekeeping)
-**Version:** v0.21.9.1+1
+**Last Updated:** 2026-06-08 (RW: E21:S09:T02 legacy folder redirects)
+**Version:** v0.21.9.2+1
 
 > **For MoSCOW prioritized tasks, see:** [`kboard.md`](kboard.md)  
 > **For completed FR/BR/UXR intake items, see:** [`intake-completed.md`](intake-completed.md)
@@ -19,6 +19,11 @@ housekeeping_policy: keep
 ---
 
 ## 20 Most Recently Completed Tasks
+
+#### **RW (2026-06-08)** — E21:S09:T02 @ **v0.21.9.2+1** (legacy story folder redirects)
+
+- **[E21:S09:T02](epics/epic-21/story-09-epic-housekeeping/T02-legacy-story-folder-rationalization.md)** — Redirect stubs for S00/mis-numbered epic-21 story paths; `kanban-structure.md` defers to `Epic-21.md`.
+  **Completed:** `2026-06-08T11:18:58Z` | **Version:** `v0.21.9.2+1` | **Agent:** `RW E21:S09:T02 --art`
 
 #### **RW (2026-06-08)** — E21:S09:T01 @ **v0.21.9.1+1** (UKW Epic 21 housekeeping)
 

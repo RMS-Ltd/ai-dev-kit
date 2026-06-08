@@ -54,9 +54,9 @@ housekeeping_policy: keep
   - Story: [`story-08-accessibility.md`](story-08-accessibility.md)
   - Tasks: T01–T03 COMPLETE; T04–T07 DEFERRED (Layers 2–5)
 
-- [ ] **E21:S09 – Epic Housekeeping** - IN PROGRESS (v0.21.9.1+1 — T01 COMPLETE)
+- [ ] **E21:S09 – Epic Housekeeping** - IN PROGRESS (v0.21.9.2+1 — T01–T02 COMPLETE)
   - Story: [`story-09-epic-housekeeping.md`](story-09-epic-housekeeping.md)
-  - Tasks: T01 COMPLETE @ v0.21.9.1+1; T02 TODO (legacy folder rationalization)
+  - Tasks: T01 COMPLETE @ v0.21.9.1+1; T02 COMPLETE @ v0.21.9.2+1
 
 
 ---

@@ -8,7 +8,7 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Board
 
-**Last Updated:** 2026-06-08 (RW **v0.21.9.1+1** — E21:S09:T01 UKW Epic 21 housekeeping)
+**Last Updated:** 2026-06-08 (RW **v0.21.9.2+1** — E21:S09:T02 legacy folder redirects)
 **Version:** v0.21.9.1+1
 
 **Active board contract:** **Sole active MoSCOW board** ([ADR-018](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/architecture/standards-and-adrs/ADR-018-single-kanban-board-consolidation.md)). Rows are **live work** (TODO / IN PROGRESS / OPEN / WAITING / PERPETUAL) plus filed **Could Have** backlog. **Verification (V)** band holds task-shipped / FBU-open items (`⏳ WAITING`). Remove **terminal** rows and archive prose (use [`kanban-completed.md`](kanban-completed.md) / [`intake-completed.md`](intake-completed.md)).
@@ -31,8 +31,6 @@ housekeeping_policy: keep
 *(E10:S01 story **COMPLETE** @ v0.10.1.10+2 — RC **APPROVE**; Epic 10 IN PROGRESS — E10:S02 TODO; see [`kanban-completed.md`](kanban-completed.md).)*
 
 - **E21:S03:T01** – Identify and extract all translatable content - 📋 TODO (MEDIUM, **next** FR-006 translation pipeline; blocks S03:T02–T07) | [Task](epics/epic-21/story-03-translation-and-localisation/T01-identify-and-extract-all-translatable-content.md) | [Story](epics/epic-21/story-03-translation-and-localisation.md) | [FR-006](fr-br/FR-006-localization-language-selection-uk-us-english.md) | —No IPP— | Last modified: 2026-06-08 10:30 UTC
-
-- **E21:S09:T02** – Legacy epic-21 story folder rationalization - 📋 TODO (LOW, admin — orphan `story-00`/`01`/`02`/`03` + mis-numbered dirs) | [Task](epics/epic-21/story-09-epic-housekeeping/T02-legacy-story-folder-rationalization.md) | [Story](epics/epic-21/story-09-epic-housekeeping.md) | —No IPP— | Last modified: 2026-06-08 10:30 UTC
 
 - **E05:S09:T15** – Docusaurus adopter-public publish allowlist (FR-114) - 📋 TODO (HIGH, **v0.5.9.15+1** RW -k intake) | [Task](epics/epic-05/story-09-docusaurus-documentation-portal/T15-docusaurus-adopter-public-publish-allowlist-fr114.md) | [FR-114](fr-br/FR-114-split-documentation-surfaces-docusaurus-public-notion-maintainer-kb.md) | —No IPP— | Last modified: 2026-06-06 16:16 UTC
 

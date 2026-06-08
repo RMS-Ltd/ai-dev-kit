@@ -9,11 +9,19 @@ housekeeping_policy: keep
 # Epic 21, Story 9, Task 2: Legacy epic-21 story folder rationalization
 
 **Task ID:** E21:S09:T02  
-**Status:** TODO  
+**Status:** COMPLETE  
 **Priority:** LOW  
-**Last updated:** 2026-06-08 (UKW — filed for kboard visibility)  
-**Version:** v0.21.9.2+0  
+**Last updated:** 2026-06-08 (RW **v0.21.9.2+1**)  
+**Version Anchor:** v0.21.9.2+1  
 **Code:** E21S09T02
+
+---
+
+## Input
+
+- [Epic-21.md](../Epic-21.md) canonical story checklist (S01–S08)
+- Orphan / mis-numbered paths listed in scope below
+- [kanban-structure.md](../../kanban-structure.md) stale Epic 21 section
 
 ---
 
@@ -23,22 +31,33 @@ Audit and rationalize duplicate / mis-numbered story directories under `epics/ep
 
 ---
 
-## Input
+## Inventory (2026-06-08)
 
-- Orphan dirs: `story-00-language-selection-at-setup/`, `story-01-internationalisation-infrastructure/`, `story-02-translation-and-localisation/`, `story-03-cultural-adaptation/` (duplicate of S04)
-- Mis-numbered: `story-04-european-languages-localization/` (canonical = S05), `story-05-cjk-languages-localization/` (canonical = S06), `story-06-rtl-and-extended-locales/` (canonical = S07)
+| Legacy path | Disposition | Canonical target |
+| ----------- | ----------- | ---------------- |
+| `story-00-language-selection-at-setup.md` | Redirect stub | `story-01-language-selection-at-setup.md` |
+| `story-00-language-selection-at-setup/T01-*.md` | Redirect stub | `story-01-language-selection-at-setup/T01-*.md` |
+| `story-01-internationalisation-infrastructure.md` | Redirect stub | `story-02-internationalisation-infrastructure.md` |
+| `story-02-translation-and-localisation.md` | Redirect stub | `story-03-translation-and-localisation.md` |
+| `story-03-cultural-adaptation/` (orphan dir) | `REDIRECT.md` | `story-04-cultural-adaptation.md` |
+| `story-04-european-languages-localization/` | `REDIRECT.md` | `story-05-european-languages-localization.md` |
+| `story-05-cjk-languages-localization/` | `REDIRECT.md` | `story-06-cjk-languages-localization.md` |
+| `story-06-rtl-and-extended-locales/` | `REDIRECT.md` | `story-07-rtl-and-extended-locales.md` |
+
+Physical task folders for S01–S08 already canonical on branch; no file moves required.
 
 ---
 
 ## Deliverable
 
-- Redirect stubs or archive moves per kanban governance; no broken links from Epic/Story checklists or `kboard.md`.
-- Document inventory in task doc or epic housekeeping note.
+- Redirect stubs for legacy story paths; `kanban-structure.md` Epic 21 section defers to `Epic-21.md`.
+- Inventory table in this task doc.
+- Changelog archive / KB-INDEX historical links may still cite S00 paths — redirect stubs preserve resolution.
 
 ---
 
 ## Acceptance Criteria
 
-- [ ] Single canonical directory per story number (S01–S08)
-- [ ] Grep for stale paths returns only redirects or zero hits
-- [ ] Epic-21 story checklist links resolve
+- [x] Single canonical directory per story number (S01–S08)
+- [x] Grep for stale paths returns only redirects or zero hits (under `epics/epic-21/`)
+- [x] Epic-21 story checklist links resolve

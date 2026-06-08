@@ -12,8 +12,8 @@ housekeeping_policy: keep
 **Priority:** MEDIUM  
 **Estimated Effort:** Small  
 **Created:** 2026-06-08  
-**Last updated:** 2026-06-08 (v0.21.9.1+1 — T01 COMPLETE via RW -k --art)  
-**Version:** v0.21.9.1+1  
+**Last updated:** 2026-06-08 (v0.21.9.2+1 — T02 legacy folder redirects)  
+**Version:** v0.21.9.2+1  
 **Code:** E21S09
 
 ---
@@ -28,9 +28,8 @@ Administrative reconciliation for Epic 21 after S01–S02 and S08 Layer 0–1 sh
 
 - [x] **E21:S09:T01 – FR-006 Phase 2 header and status reconciliation** - COMPLETE (2026-06-08 — UKW housekeeping)
   - Task: [`T01-fr006-phase2-header-and-status-reconciliation`](story-09-epic-housekeeping/T01-fr006-phase2-header-and-status-reconciliation.md)
-- [ ] **E21:S09:T02 – Legacy epic-21 story folder rationalization** - TODO
+- [x] **E21:S09:T02 – Legacy epic-21 story folder rationalization** - COMPLETE (v0.21.9.2+1)
   - Task: [`T02-legacy-story-folder-rationalization`](story-09-epic-housekeeping/T02-legacy-story-folder-rationalization.md)
-  - Orphans: `story-00-*`, `story-01-internationalisation-*`, `story-02-translation-*`, mis-numbered `story-04-european-*` / `story-05-cjk-*` / `story-06-rtl-*` duplicates
 
 ---
 
@@ -38,7 +37,7 @@ Administrative reconciliation for Epic 21 after S01–S02 and S08 Layer 0–1 sh
 
 - [x] FR-006 reflects S01 + S02 shipped tasks; status IN PROGRESS (translation phase open)
 - [x] Remaining Epic 21 work visible on `kboard.md` (S03+, S08 deferred, S09 admin)
-- [ ] Legacy story directories archived or redirected without breaking canonical links
+- [x] Legacy story directories archived or redirected without breaking canonical links (T02 @ v0.21.9.2+1)
 
 ---
 
