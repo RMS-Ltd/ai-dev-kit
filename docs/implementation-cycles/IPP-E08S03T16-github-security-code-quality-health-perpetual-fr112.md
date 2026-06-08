@@ -17,6 +17,8 @@ housekeeping_policy: keep
 > **Revision (2026-06-05 — Wave 1 re-scan):** Operator refresh of [Standard findings](https://github.com/RMS-Ltd/ai-dev-kit/security/quality) @ `main` **`f6aa4dca`**. **Maintainability 146 / Fair**; **Reliability 28 / Fair** (↑ from Needs Improvement after T13 wave-2); **AI panel 12** open. T16 records manifest + coordination delta only — **no standard-finding code edits** while T12–T14 remain IN PROGRESS.
 >
 > **Revision (2026-06-05 — operator deferral):** **Postpone all T16 activity** (RWs, re-scans, remediation) until **E08:S03:T12–T14** operator sign-off. T12–T14 chew through the finite backlog first; T16 resumes at Wave 2+ handoff. Exception: net-new **HIGH** code-scanning security alerts (BR-094 pattern).
+>
+> **Revision (2026-06-08):** Operator directive — RF10–RF12 / RNF5–RNF6: hard merge gate while T15 CI red; CQG≠CI; Failed job usage accountability. See T16 §Operator requirements (OR-T16-*).
 
 ---
 
@@ -34,7 +36,10 @@ housekeeping_policy: keep
 | RF6 | First version anchor: **`RW E08:S03:T16 --art`** after baseline manifest (AC4) | T16 AC4 |
 | RF7 | Novel **HIGH** CodeQL security alerts → dedicated BR + task (BR-094 pattern); return to T16 routine hygiene after | T16 scope boundary |
 | RF8 | **Wave 1+ re-scan manifest:** refresh Standard findings rule breakdown + scores @ current `main` SHA; record delta vs prior T16 baseline; cross-lane score milestones (e.g. reliability **Fair**) | Operator refresh 2026-06-05 |
-| RF9 | **Defer T16 activity** until **T12–T14** operator sign-off; T12–T14 burn down backlog to manageable residual before T16 perpetual waves | Operator directive 2026-06-05 |
+| RF9 | **Defer T16 activity** until **T12–T14** operator sign-off; T12–T14 burn down backlog to manageable residual before T16 perpetual waves | Operator directive 2026-06-05 (**lifted** 2026-06-07) |
+| RF10 | **Hard merge gate:** no T16 merge to `dev`/`main` while T15 required Actions workflows are red on GH | OR-T16-1, extends RF5 |
+| RF11 | **CQG ≠ CI:** local CQG / green Code Quality dashboard does not authorize ship when Actions workflows fail | OR-T16-2, T17 boundary |
+| RF12 | **Failed job usage accountability:** pause T16 and escalate to T15 if T16 wave would merge atop unresolved Actions failures | OR-T16-3/4 |
 
 ### 1.2 Non-functional requirements (ascertained)
 
@@ -44,6 +49,8 @@ housekeeping_policy: keep
 | RNF2 | Changelog: **"Change implemented"** until operator verifies dashboard delta | RW rules |
 | RNF3 | Post-ship waves: **`RW E08:S03:T16 --art` only**; no `--doc-policy-zero` (BR-097) | BR-097 |
 | RNF4 | Perpetual BUILD increments; high BUILD expected on perpetual lane | dev-kit-versioning-policy |
+| RNF5 | Shared **no red ship** policy with T15 on `dev`/`main`; neither lane may bypass the other | OR-T16-5, FR-112 NF4 |
+| RNF6 | ~501 min Failed job usage (2026-06-08) — T16 must not increase waste via merges during T15 redness | Operator directive |
 
 ### 1.3 Invariants and boundaries
 

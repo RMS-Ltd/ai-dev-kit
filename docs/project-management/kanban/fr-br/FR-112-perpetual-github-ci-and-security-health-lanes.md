@@ -13,7 +13,7 @@ housekeeping_policy: keep
 **Submitted:** 2026-06-05  
 **Submitted By:** User (via agent — CI/security ownership gap)  
 **Priority:** HIGH  
-**Status:** IN PROGRESS (v0.8.3.15+3 — T15 Wave 2 MDX marker fix shipped; pending Actions verify; T16 **DEFERRED** until T12 sign-off — T13/T14 **COMPLETE** @ v0.8.3.13+4 / v0.8.3.14+5)  
+**Status:** IN PROGRESS (v0.8.3.15+4 — T15 Wave 3 Step 9.7 CI parity gate; **~501 min** Failed job usage burn-down; AC5/AC6 open pending GH verify)  
 **Implementing Tasks:**
 - **E08:S03:T15** — [GitHub Actions CI health (Perpetual)](../epics/epic-08/story-03-automation-scripts/T15-github-actions-ci-health-perpetual-fr112.md)
 - **E08:S03:T16** — [GitHub Security & Code Quality health (Perpetual)](../epics/epic-08/story-03-automation-scripts/T16-github-security-code-quality-health-perpetual-fr112.md)
@@ -31,6 +31,7 @@ Establish **two perpetual maintenance lanes** under Epic 8 Story 3 so recurring 
 - **Discrete BR pattern** (BR-058, BR-094–098) and **finite backlog tasks** (T12–T14) address point-in-time CI and Code Quality burn-down but leave no standing home for **ongoing** red builds, new alerts, or dashboard regressions.
 - **E02:S16:T10** (repo infrastructure) is too broad and lives outside Epic 8’s automation/security delivery semantics.
 - Without perpetual lanes, operators must invent new tasks or mis-attribute hygiene RWs.
+- **[Actions Performance metrics](https://github.com/RMS-Ltd/ai-dev-kit/actions/metrics/performance)** show ~**501 min** current-month **Failed job usage** (~85% job failure rate, improving vs prior month) while **required workflows still fail on `dev`/`main`** after merge — local CQG (FR-113 / T17) does not gate Actions CI. Shipping red workflows wastes runner resources and is **unacceptable** (operator directive 2026-06-08).
 
 ---
 
@@ -38,7 +39,7 @@ Establish **two perpetual maintenance lanes** under Epic 8 Story 3 so recurring 
 
 ### Functional
 
-- [ ] **FR-112:F1** — Perpetual task **E08:S03:T15** owns [GitHub Actions](https://github.com/RMS-Ltd/ai-dev-kit/actions) workflow health (Wave 2 MDX fix @ v0.8.3.15+3; pending Actions verify).
+- [ ] **FR-112:F1** — Perpetual task **E08:S03:T15** owns [GitHub Actions](https://github.com/RMS-Ltd/ai-dev-kit/actions) workflow health + [Performance metrics](https://github.com/RMS-Ltd/ai-dev-kit/actions/metrics/performance) Failed job usage burn-down (OR-T15-*; Step 9.7 @ v0.8.3.15+4).
 - [x] **FR-112:F2** — Perpetual task **E08:S03:T16** owns [code scanning](https://github.com/RMS-Ltd/ai-dev-kit/security/code-scanning) and [code quality](https://github.com/RMS-Ltd/ai-dev-kit/security/quality) ongoing hygiene (re-scans, routine waves, dismiss/verify). Wave 0 baseline @ v0.8.3.16+1.
 - [ ] **FR-112:F3** — Both tasks carry `Task Type: Perpetual Maintenance` and explicit scope boundaries (including handoff from T12–T14).
 - [x] **FR-112:F4** — Story 003 checklist and `kboard.md` **Ongoing (O)** band wired bidirectionally.
@@ -47,6 +48,10 @@ Establish **two perpetual maintenance lanes** under Epic 8 Story 3 so recurring 
 
 - [x] **FR-112:NF1** — Scope split is unambiguous: CI lane does not own CodeQL/Code Quality dashboards; security lane does not own Actions workflow failures.
 - [ ] **FR-112:NF2** — Novel **HIGH** severity CodeQL findings may still spawn dedicated BR + task; perpetual lane remains default for routine hygiene.
+- [ ] **FR-112:NF3** — **Failed job usage** ([Performance metrics](https://github.com/RMS-Ltd/ai-dev-kit/actions/metrics/performance)) is the standing KPI for **T15**; target sustained near-zero on `dev`/`main` — monthly dashboard reset is not closure.
+- [ ] **FR-112:NF4** — **No red ship:** merges to `dev`/`main` forbidden while required Actions workflows fail on GitHub; local pytest/build/CQG green is insufficient without post-push Actions verification (**T15** OR-T15-2; **T16** merge gate OR-T16-1).
+- [ ] **FR-112:NF5** — **T16** must not merge security/Code Quality waves while **T15** required workflows are red (OR-T16-1); CQG does not substitute for Actions CI (OR-T16-2).
+- [ ] **FR-112:NF6** — **RW Step 9.7** blocking `validate_actions_ci_parity.py` before commit; `--strict --all` before Step 12 or operator batch push (OR-T15-7; UXR-024 R7). Default RW **never pushes**.
 
 ---
 

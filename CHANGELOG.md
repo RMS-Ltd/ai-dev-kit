@@ -11,10 +11,10 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
-## [0.8.3.12+13] - 07-06-26
+## [0.8.3.15+4] - 08-06-26
 
-E08:S03:T12 — **Re-closed:** BR-099 terminal closure — four-surface forensic reconciliation @ +13 (dashboard Good @ +11; local CQG @ +12). SemVer **v0.4.1042+13**.
+E08:S03:T15 — **Change implemented:** RW Step 9.7 Actions CI parity gate; no-red-ship + Failed job usage policy; default RW never pushes (UXR-024 R7). SemVer **v0.4.1056+4**.
 
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.8.3.12+13.md)
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.8.3.15+4.md)
 
 ---

@@ -12,8 +12,8 @@ housekeeping_policy: keep
 **Priority:** MEDIUM  
 **Estimated Effort:** [TBD]  
 **Created:** 2025-12-05  
-**Last updated:** 2026-06-07 (RW — T12 **re-closed** @ v0.8.3.12+13)
-**Version:** v0.8.3.12+13
+**Last updated:** 2026-06-08 (v0.8.3.15+4 – Kanban documentation setup)
+**Version:** v0.8.3.15+4
 **Code:** E8S03
 
 ---
@@ -67,10 +67,10 @@ housekeeping_policy: keep
 - [x] **E08:S03:T14 – Code Quality AI suggestions backlog (BR-101)** — ✅ COMPLETE (**v0.8.3.14+5** wave-2b/c; lag-accepted GH panel) — [Task doc](story-03-automation-scripts/T14-code-quality-ai-suggestions-backlog-br101.md) | [BR-101](../../fr-br/BR-101-code-quality-ai-suggestions-backlog.md) | [IPP](../../../../implementation-cycles/IPP-E08S03T14-code-quality-ai-suggestions-backlog-br101.md)
 
 
-- [ ] **E08:S03:T15 – GitHub Actions CI health (Perpetual)** — 🔄 PERPETUAL (**v0.8.3.15+3** — Wave 2: MDX-safe ADK markers; local Docusaurus green; pending Actions verify) — [Task doc](story-03-automation-scripts/T15-github-actions-ci-health-perpetual-fr112.md) | [FR-112](../../fr-br/FR-112-perpetual-github-ci-and-security-health-lanes.md) | [IPP](../../../../implementation-cycles/IPP-E08S03T15-github-actions-ci-health-perpetual-fr112.md)
+- [ ] **E08:S03:T15 – GitHub Actions CI health (Perpetual)** — 🔄 PERPETUAL (**v0.8.3.15+4** — Step 9.7 CI parity gate; no-red-ship OR-T15; AC5/AC6 open) — [Task doc](story-03-automation-scripts/T15-github-actions-ci-health-perpetual-fr112.md) | [FR-112](../../fr-br/FR-112-perpetual-github-ci-and-security-health-lanes.md) | [IPP](../../../../implementation-cycles/IPP-E08S03T15-github-actions-ci-health-perpetual-fr112.md)
 
 
-- [ ] **E08:S03:T16 – GitHub Security & Code Quality health (Perpetual)** — 🔄 PERPETUAL (**v0.8.3.16+1** — deferral **lifted** @ T12 closure; Wave 2+ active) — [Task doc](story-03-automation-scripts/T16-github-security-code-quality-health-perpetual-fr112.md) | [FR-112](../../fr-br/FR-112-perpetual-github-ci-and-security-health-lanes.md) | [IPP](../../../../implementation-cycles/IPP-E08S03T16-github-security-code-quality-health-perpetual-fr112.md)
+- [ ] **E08:S03:T16 – GitHub Security & Code Quality health (Perpetual)** — 🔄 PERPETUAL (**v0.8.3.16+1** — merge gate OR-T16 while T15 CI red; CQG≠CI) — [Task doc](story-03-automation-scripts/T16-github-security-code-quality-health-perpetual-fr112.md) | [FR-112](../../fr-br/FR-112-perpetual-github-ci-and-security-health-lanes.md) | [IPP](../../../../implementation-cycles/IPP-E08S03T16-github-security-code-quality-health-perpetual-fr112.md)
 
 
 - [x] **E08:S03:T17 – Local Code Quality Gate (CQG) (FR-113)** — ✅ COMPLETE (**v0.8.3.17+2**) — [Task doc](story-03-automation-scripts/T17-local-code-quality-gate-cqg-fr113.md) | [FR-113](../../fr-br/FR-113-local-code-quality-gate-cqg.md) | [IPP](../../../../implementation-cycles/IPP-E08S03T17-local-code-quality-gate-cqg-fr113.md)
@@ -79,7 +79,7 @@ housekeeping_policy: keep
 
 ## Overview
 
-Story 3 delivers repository automation and Code Quality burn-down. **T04–T11** closed discrete CodeQL/security items. **T12–T14** (BR-099/100/101) finite dashboard burn-down **COMPLETE** (T12 re-closed @ **v0.8.3.12+13**). **T17** (FR-113 local CQG) @ **v0.8.3.17+2**. **T15–T16** (FR-112) perpetual lanes active; **T16** deferral lifted 2026-06-07.
+Story 3 delivers repository automation and Code Quality burn-down. **T04–T11** closed discrete CodeQL/security items. **T12–T14** (BR-099/100/101) finite dashboard burn-down **COMPLETE** (T12 re-closed @ **v0.8.3.12+13**). **T17** (FR-113 local CQG) @ **v0.8.3.17+2** — **does not** gate Actions CI. **T15–T16** (FR-112) perpetual lanes: operator directive 2026-06-08 wires **Failed job usage** KPI (~501 min) and **no-red-ship** policy on `dev`/`main`.
 
 ---
 

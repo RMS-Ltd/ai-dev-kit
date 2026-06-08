@@ -10,7 +10,9 @@ housekeeping_policy: keep
 
 **Host Task:** [`T15-github-actions-ci-health-perpetual-fr112.md`](../project-management/kanban/epics/epic-08/story-03-automation-scripts/T15-github-actions-ci-health-perpetual-fr112.md) **(E08:S03:T15)**  
 **Planning for:** [FR-112](../project-management/kanban/fr-br/FR-112-perpetual-github-ci-and-security-health-lanes.md)  
-**Status:** Approved (Wave 2 implemented @ **v0.8.3.15+3**; pending Actions verify on push)
+**Status:** Approved (Wave 3 implemented @ **v0.8.3.15+4** — Step 9.7 CI parity gate; AC5/AC6 open pending GH verify)
+
+> **Revision (2026-06-08):** Operator directive — RF7–RF9 / RNF5–RNF6: **Failed job usage** (~501 min) KPI, **no-red-ship** on `dev`/`main`, CQG≠CI boundary. See T15 §Operator requirements (OR-T15-*).
 
 > **IPW:** Perpetual lane for [GitHub Actions](https://github.com/RMS-Ltd/ai-dev-kit/actions) workflow health. **Does not** own [code scanning](https://github.com/RMS-Ltd/ai-dev-kit/security/code-scanning) / [Code Quality](https://github.com/RMS-Ltd/ai-dev-kit/security/quality) (→ **E08:S03:T16**) or finite standard-finding burn-down (**E08:S03:T12–T14**).
 
@@ -28,6 +30,11 @@ housekeeping_policy: keep
 | RF4 | Perpetual RW playbook: `RW E08:S03:T15 --art`, BUILD +1, one concern per RW when practical | T15 RW attribution |
 | RF5 | Cross-lane handoff: Code scanning / Code Quality → **E08:S03:T16**; Dependabot → **E08:S03:T06** | T15 scope boundary |
 | RF6 | Novel single-failure BRs still get dedicated E:S:T when scope exceeds routine hygiene | T15 handoff table |
+| RF7 | **Failed job usage** KPI: record [Performance metrics](https://github.com/RMS-Ltd/ai-dev-kit/actions/metrics/performance) (failed minutes + job failure rate) each hygiene pass; burn down toward near-zero on `dev`/`main` | Operator directive 2026-06-08, OR-T15-1 |
+| RF8 | **No red ship:** do not merge/push to `dev`/`main` while required Actions workflows fail on GH; post-push verification mandatory | OR-T15-2, OR-T15-4 |
+| RF9 | **CQG boundary:** T17 local CodeQL gate does not replace Actions workflow verification (Tests, Docusaurus, Greenfield, etc.) | OR-T15-3, T17 scope |
+| RF10 | **RW Step 9.7:** `validate_actions_ci_parity.py --strict` blocking before commit; `--strict --all` before push | OR-T15-7, UXR-024 R7 |
+| RF11 | **RW never pushes by default;** local-complete = push-ready via Step 9.7 | OR-T15-6, UXR-024 |
 
 ### 1.2 Non-functional requirements (ascertained)
 
@@ -37,6 +44,8 @@ housekeeping_policy: keep
 | RNF2 | Post-ship waves: **`RW E08:S03:T15 --art` only**; no `--doc-policy-zero` (BR-097) | BR-097 |
 | RNF3 | Local repro before RW: `pytest tests/` + `cd portal && npm run build` | T15 hygiene |
 | RNF4 | Perpetual BUILD increments; high BUILD expected on perpetual lane | dev-kit-versioning-policy |
+| RNF5 | Monthly Performance metrics reset does not close T15; sustained green required workflows is the success criterion | OR-T15-5 |
+| RNF6 | ~501 min current-month Failed job usage (2026-06-08) is unacceptable baseline until resolved | Operator directive |
 
 ### 1.3 Invariants and boundaries
 

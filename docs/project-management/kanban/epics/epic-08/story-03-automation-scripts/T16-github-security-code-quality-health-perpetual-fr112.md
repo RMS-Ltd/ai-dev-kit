@@ -13,7 +13,7 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** Medium (ongoing)  
 **Created:** 2026-06-05  
-**Last updated:** 2026-06-07 (RW — T12 COMPLETE @ v0.8.3.12+11; deferral **lifted**)  
+**Last updated:** 2026-06-08 (operator directive — Failed job usage / no-red-ship cross-lane policy wired)  
 **Version Anchor:** v0.8.3.16+1  
 **Code:** E08S03T16  
 **Task Type:** Perpetual Maintenance
@@ -52,6 +52,22 @@ Standing perpetual lane for **GitHub Advanced Security** hygiene:
 - Post-backlog ongoing maintenance after finite burn-down tasks complete
 
 **Source of truth:** Security tabs above — record SHA, open counts, and score at start of each hygiene RW.
+
+**Cross-lane metrics SoT:** [Actions → Metrics → Performance](https://github.com/RMS-Ltd/ai-dev-kit/actions/metrics/performance) — T16 hygiene must not increase **Failed job usage** by merging code while **E08:S03:T15** required workflows are red.
+
+---
+
+## Operator requirements (2026-06-08 — mandatory)
+
+**Context:** ~**501 min** current-month **Failed job usage** on [Performance metrics](https://github.com/RMS-Ltd/ai-dev-kit/actions/metrics/performance) (~85% job failure rate, improving vs prior month's ~100% / ~87 min). Local [CQG (T17)](T17-local-code-quality-gate-cqg-fr113.md) does not prevent Actions workflow failures; merges to `dev`/`main` have still shipped red CI — **unacceptable**.
+
+| ID | Requirement | Owner |
+| -- | ----------- | ----- |
+| **OR-T16-1** | **Merge gate (hard):** No `RW E08:S03:T16` wave that merges to `dev`/`main` while **T15 required workflows** are failing on GitHub for the target branch. Security/Code Quality hygiene is **blocked** until T15 restores green CI (extends RF5). | T16 |
+| **OR-T16-2** | **CQG is not CI:** Passing local CQG / green Code Quality dashboard does **not** authorize ship when Actions workflows (Tests, Docusaurus, Greenfield install, etc.) are red. T16 waves must cite T15 Actions status in wave manifest. | T16 |
+| **OR-T16-3** | **Failed job usage accountability:** T16-attributed merges must not land on top of unresolved T15 redness. If a T16 RW coincides with new Actions failures, **pause T16** and escalate to **T15** with run URLs. | T16 → T15 |
+| **OR-T16-4** | **Performance metrics awareness:** Record whether current-month Failed job usage increased after a T16 merge (read-only cross-check on each hygiene pass). Sustained green Actions is prerequisite for claiming dashboard progress. | T16 |
+| **OR-T16-5** | **Coordination with T15 OR-T15-2:** Both perpetual lanes share the **no red ship** policy on `dev`/`main`. T16 owns security-quality surfaces; T15 owns Actions waste burn-down — neither lane may bypass the other. | T15 + T16 |
 
 ---
 
@@ -141,7 +157,14 @@ Use **`RW E08:S03:T16`** for recurring security/Code Quality hygiene (BUILD incr
 | Code Quality: Push on main | success |
 | Push on main (CodeQL) | success |
 
-**Merge gate (RF5):** T16 code remediation on `main` is **blocked** until **E08:S03:T15** restores green **Tests** + required workflows. Wave 0 is docs-only — no merge conflict.
+**Merge gate (RF5 / OR-T16-1):** T16 code remediation on `dev`/`main` is **blocked** until **E08:S03:T15** restores green **Tests** + all required workflows on GitHub. Local CQG green does not satisfy this gate (OR-T16-2). Wave 0 is docs-only — no merge conflict.
+
+### Performance metrics cross-lane (2026-06-08)
+
+| Metric | Current month | Prior month | T16 action |
+| ------ | ------------- | ----------- | ---------- |
+| Failed job usage | **~501 min** | ~87 min | Do not merge T16 waves while contributing to this waste (OR-T16-3/4) |
+| Job failure rate | ~85% | ~100% | Improving — not sufficient without green required workflows |
 
 ---
 
@@ -203,6 +226,8 @@ Use **`RW E08:S03:T16`** for recurring security/Code Quality hygiene (BUILD incr
 - [x] **AC3:** FR-112 bidirectional link; Story 003 checklist and `kboard.md` O-band wired.
 - [x] **AC4:** First attributed RW records baseline open counts on `main` (code scanning + code quality) — **v0.8.3.16+1** @ `777e956`.
 - [x] **AC5 (Wave 1 re-scan):** Wave 1 manifest @ `f6aa4dca` recorded with rule breakdown + cross-lane deltas ([IPP §4 Wave 1 re-scan](../../../../../implementation-cycles/IPP-E08S03T16-github-security-code-quality-health-perpetual-fr112.md)).
+- [ ] **AC6 (operator — OR-T16-1/2):** Every T16 hygiene RW manifest includes T15 Actions status (required workflows pass/fail @ target SHA) before merge.
+- [ ] **AC7 (operator — OR-T16-3/4/5):** No T16-attributed merge to `dev`/`main` while Failed job usage is driven by unresolved T15 workflow failures.
 
 ---
 
@@ -216,3 +241,5 @@ Use **`RW E08:S03:T16`** for recurring security/Code Quality hygiene (BUILD incr
 - [E08:S03:T14 — BR-101 AI suggestions backlog](T14-code-quality-ai-suggestions-backlog-br101.md)
 - [Code scanning](https://github.com/RMS-Ltd/ai-dev-kit/security/code-scanning)
 - [Code Quality](https://github.com/RMS-Ltd/ai-dev-kit/security/quality)
+- [E08:S03:T17 — Local Code Quality Gate (CQG)](T17-local-code-quality-gate-cqg-fr113.md) — local complement only; not Actions CI gate (OR-T16-2)
+- [Actions Performance metrics](https://github.com/RMS-Ltd/ai-dev-kit/actions/metrics/performance)

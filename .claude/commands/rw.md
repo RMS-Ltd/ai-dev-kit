@@ -261,6 +261,21 @@ Run CMW if `check_changelog_size.py` indicated threshold exceeded. CMW failures 
 
 Check for linter/type errors in modified files. Fix where practical and re-stage. Non-blocking.
 
+### Step 9.7 — Actions CI Parity Gate (BLOCKING — E08:S03:T15 / FR-112)
+
+**Purpose:** Local-complete RW must not ship commits that will fail required GitHub Actions on `dev`/`main`. Default RW **never pushes** (UXR-024); this gate makes local releases **push-ready**.
+
+```bash
+python "packages/frameworks/workflow-mgt/scripts/validation/validate_actions_ci_parity.py" --strict
+```
+
+- Mirrors `.github/workflows/` checks (Tests, Docusaurus build, Greenfield install drift, workflow-scripts pytest) for **paths touched** by the release diff.
+- **Non-zero exit → RW ABORTED** at Step 9.7. Do not commit, tag, or push.
+- **CQG (`validate_code_quality_gate.py`) does not substitute** for Actions CI parity.
+- Skipped when `actions_ci_parity.enabled: false` in `rw-config.yaml`.
+
+**Before Step 12 (`--push`) or operator batch push:** re-run with **`--strict --all`** (full parity suite).
+
 ### Step 10 — Commit
 
 ```bash
@@ -275,9 +290,17 @@ Epic: {epic} | Story: {story} | Task: {task}"
 
 Use `semver_converter.get_rw_tag_info(internal_version, finalize=True)` to determine tags. Create annotated primary tag `v{internal_version}` and SemVer tag `vX.Y.Z` on the same commit.
 
-### Step 12 — Push to Remote (UXR-024: `--push` only)
+### Step 12 — Push to Remote (UXR-024: **NEVER** unless `--push`)
 
-**Default:** **SKIP** unless **`--push`** appears in the user's RW trigger message. When skipped, report **`RW COMPLETE (local)`** and point operator to batch push runbook (cheatsheet §2).
+**Default:** **SKIP** — **no `git push`**. Unless **`--push`** appears in the user's RW trigger message, report **`RW COMPLETE (local)`** and point operator to batch push runbook (cheatsheet §2).
+
+**Pre-push gate (mandatory when pushing):**
+
+```bash
+python "packages/frameworks/workflow-mgt/scripts/validation/validate_actions_ci_parity.py" --strict --all
+```
+
+Non-zero exit → **RW ABORTED** — do not push.
 
 **When `--push` is present:**
 

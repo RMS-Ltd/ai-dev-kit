@@ -13,8 +13,8 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** Small (ongoing)  
 **Created:** 2026-06-05  
-**Last updated:** 2026-06-05 (RW E08:S03:T15+3 — Wave 2 MDX-safe ADK markers; Docusaurus fix; pending Actions verify)  
-**Version Anchor:** v0.8.3.15+3  
+**Last updated:** 2026-06-08 (RW E08:S03:T15+4 — Step 9.7 CI parity gate shipped)  
+**Version Anchor:** v0.8.3.15+4  
 **Code:** E08S03T15  
 **Task Type:** Perpetual Maintenance
 
@@ -41,6 +41,26 @@ Standing perpetual lane for **GitHub Actions workflow health** on [RMS-Ltd/ai-de
 - Flake investigation and stabilization when reproducible
 
 **Source of truth:** [GitHub Actions](https://github.com/RMS-Ltd/ai-dev-kit/actions) — filter failing workflows on default branches before each hygiene pass.
+
+**Performance metrics SoT:** [Actions → Metrics → Performance](https://github.com/RMS-Ltd/ai-dev-kit/actions/metrics/performance) — primary operator KPI is **Failed job usage** (wasted runner minutes), not monthly reset of the dashboard alone.
+
+---
+
+## Operator requirements (2026-06-08 — mandatory)
+
+**Context:** [Performance metrics](https://github.com/RMS-Ltd/ai-dev-kit/actions/metrics/performance) show improving trend vs [previous month](https://github.com/RMS-Ltd/ai-dev-kit/actions/metrics/performance?dateRangeType=DATE_RANGE_TYPE_PREVIOUS_MONTH) (prior period ~100% job failure rate, ~87 min failed usage; current period job failure rate ~85% with **~501 min failed job usage**). Trend is positive; **waste level is not acceptable**.
+
+| ID | Requirement | Owner |
+| -- | ----------- | ----- |
+| **OR-T15-1** | **Failed job usage** on default branches (`dev`, `main`) is the standing burn-down KPI. Each T15 hygiene pass records current-month failed minutes + job failure rate from Performance metrics alongside per-workflow conclusions. | T15 |
+| **OR-T15-2** | **No red ship:** Do **not** merge or push to `dev` or `main` while any **required** workflow is failing on GitHub for that branch. Local green (`pytest`, `npm run build`, `sync_* --check`, CQG) is necessary but **insufficient** — post-push [Actions](https://github.com/RMS-Ltd/ai-dev-kit/actions) verification is mandatory before claiming a wave complete. | All contributors; T15 enforces on hygiene RW |
+| **OR-T15-3** | **CQG boundary:** [E08:S03:T17](T17-local-code-quality-gate-cqg-fr113.md) (local CodeQL gate) covers **Code Quality Standard findings** only. It does **not** gate **Tests**, **Docusaurus site build**, **Greenfield install**, or other Actions workflows — those remain T15 scope. | T15 + T16 coordination |
+| **OR-T15-4** | **Pre-merge checklist** (minimum): reproduce failing workflow locally where possible; fix; RW with `RW E08:S03:T15 --art`; confirm required workflows **success** on GH for the target branch SHA before closing the wave. | T15 playbook |
+| **OR-T15-5** | **Monthly metric reset is not success:** A new calendar month zeroing Failed job usage does not close this lane. Success = sustained green required workflows on `dev`/`main` and failed job usage held near zero operationally. | T15 perpetual |
+| **OR-T15-6** | **RW never pushes by default (UXR-024):** Full `RW` completes locally (commit + tag). Remote publication is operator batch push or explicit `RW … --push` only. | RW agent / cheatsheet §2 |
+| **OR-T15-7** | **RW Step 9.7 hard gate:** Before commit, `validate_actions_ci_parity.py --strict` (path-aware GH workflow mirror). Before push/batch push, `--strict --all`. Non-zero exit → **RW ABORTED**. Makes local releases **push-ready** without shipping red CI. | `rw-config.yaml` → `actions_ci_parity`; [UXR-024 R7](../../../fr-br/UXR-024-rw-local-release-default-no-push-batch-operator-push.md) |
+
+**Escalation:** Repeated red ships to `dev`/`main` without T15-attributed fix → file BR with Actions run links + Performance metrics snapshot.
 
 ---
 
@@ -76,6 +96,21 @@ Use **`RW E08:S03:T15`** for recurring CI hygiene passes (BUILD increments on pe
 - [x] **AC2:** Scope boundary with **E08:S03:T16** documented and unambiguous.
 - [x] **AC3:** FR-112 bidirectional link; Story 003 checklist and `kboard.md` O-band wired.
 - [x] **AC4:** First attributed RW records baseline green/red workflow snapshot on `main` (2026-06-05 16:39 UTC: Tests/Docusaurus/Greenfield **failure**; workflow-scripts-pytest/CodeQL **success**).
+- [ ] **AC5 (operator — OR-T15-1/2/5):** Required workflows green on `dev` **and** `main`; current-month **Failed job usage** near zero; Performance metrics snapshot recorded in task doc each hygiene wave until sustained.
+- [ ] **AC6 (operator — OR-T15-4):** Post-push Actions verification documented for every T15-attributed RW (SHA + per-workflow conclusion table); no wave closed on local-only green.
+
+---
+
+## Performance metrics baseline (2026-06-08)
+
+**Ref:** [Actions → Metrics → Performance](https://github.com/RMS-Ltd/ai-dev-kit/actions/metrics/performance)
+
+| Period | Job failure rate | Failed job usage | Operator note |
+| ------ | ---------------- | ---------------- | ------------- |
+| Previous month | ~100% | ~87 min | High failure rate; low absolute waste (fewer runs) |
+| Current month (2026-06-08) | ~85% (improving) | **~501 min** | **Unacceptable** — primary burn-down target (OR-T15-1) |
+
+**Directive:** Reduce failed job usage by stopping red ships (OR-T15-2), not by waiting for monthly metric rollover (OR-T15-5).
 
 ---
 
@@ -110,6 +145,15 @@ Use **`RW E08:S03:T15`** for recurring CI hygiene passes (BUILD increments on pe
 | Tests | `test_install_error_docs_sync` pass | JSX markers + generator sync |
 | Greenfield install | `sync_greenfield_install.py --check` pass | Mirror sync |
 
+### Wave 3 (v0.8.3.15+4)
+
+| Deliverable | Status |
+| ----------- | ------ |
+| `validate_actions_ci_parity.py` | Shipped — RW Step 9.7 blocking gate |
+| Operator OR-T15-1…7 + UXR-024 R7 | Wired in agent SoT |
+| `actions_ci_parity` in `rw-config.yaml` | Enabled |
+| Post-push Actions verify (AC5/AC6) | **Open** — pending operator batch push + GH green |
+
 ---
 
 ## References
@@ -117,5 +161,7 @@ Use **`RW E08:S03:T15`** for recurring CI hygiene passes (BUILD increments on pe
 - [IPP-E08S03T15 — GitHub Actions CI health (Perpetual)](../../../../../implementation-cycles/IPP-E08S03T15-github-actions-ci-health-perpetual-fr112.md)
 - [FR-112](../../../fr-br/FR-112-perpetual-github-ci-and-security-health-lanes.md)
 - [E08:S03:T16 — GitHub Security & Code Quality health (Perpetual)](T16-github-security-code-quality-health-perpetual-fr112.md)
+- [E08:S03:T17 — Local Code Quality Gate (CQG)](T17-local-code-quality-gate-cqg-fr113.md) — does not replace Actions verification (OR-T15-3)
+- [Actions Performance metrics](https://github.com/RMS-Ltd/ai-dev-kit/actions/metrics/performance)
 - [E08:S03:T04 — CI test workflow (BR-058)](T04-ci-test-workflow-pytest-remediation-br058.md)
 - [GitHub Actions](https://github.com/RMS-Ltd/ai-dev-kit/actions)
