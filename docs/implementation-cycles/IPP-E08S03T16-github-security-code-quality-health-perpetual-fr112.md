@@ -8,15 +8,19 @@ housekeeping_policy: keep
 
 # E08:S03:T16 — Planning: Spec, Tests, Implementation Plan (IPW)
 
-**Host Task:** [`T16-github-security-code-quality-health-perpetual-fr112.md`](../project-management/kanban/epics/epic-08/story-03-automation-scripts/T16-github-security-code-quality-health-perpetual-fr112.md) **(E08:S03:T16)**  
-**Planning for:** [FR-112](../project-management/kanban/fr-br/FR-112-perpetual-github-ci-and-security-health-lanes.md)  
-**Status:** Approved (Wave 0 complete @ v0.8.3.16+1; **Wave 1 re-scan revision** 2026-06-05)
+**Host Task:** [`T16-github-security-code-quality-health-perpetual-fr112.md`](../kanban/epics/epic-08/story-03-automation-scripts/T16-github-security-code-quality-health-perpetual-fr112.md) **(E08:S03:T16)**  
+**Planning for:** [FR-112](../kanban/fr-br/FR-112-perpetual-github-ci-and-security-health-lanes.md)  
+**Status:** Approved (Wave 0 @ v0.8.3.16+1; Wave 1 re-scan @ `f6aa4dca`; **Wave 2+ revision** 2026-06-07 — deferral lifted)
 
-> **IPW:** Perpetual lane for GitHub **code scanning** + **Code Quality dashboard** hygiene. **Does not** own [Actions](https://github.com/RMS-Ltd/ai-dev-kit/actions) CI (→ **E08:S03:T15**) or finite **standard-finding** burn-down while **E08:S03:T12–T14** are IN PROGRESS.
+> **IPW:** Perpetual lane for GitHub **code scanning** + **Code Quality dashboard** hygiene. **Does not** own [Actions](https://github.com/RMS-Ltd/ai-dev-kit/actions) CI (→ **E08:S03:T15**).
 >
-> **Revision (2026-06-05 — Wave 1 re-scan):** Operator refresh of [Standard findings](https://github.com/RMS-Ltd/ai-dev-kit/security/quality) @ `main` **`f6aa4dca`**. **Maintainability 146 / Fair**; **Reliability 28 / Fair** (↑ from Needs Improvement after T13 wave-2); **AI panel 12** open. T16 records manifest + coordination delta only — **no standard-finding code edits** while T12–T14 remain IN PROGRESS.
+> **Revision (2026-06-08 — Wave 3 IPW):** Post–Wave 2b operator dashboard **3** maintainability + **8** reliability open @ `main` `f7d8b155`. Two-step: **Wave 3a** manifest + TC14 close; **Wave 3b** reliability-first remediation. See **§8 Wave 3**.
 >
-> **Revision (2026-06-05 — operator deferral):** **Postpone all T16 activity** (RWs, re-scans, remediation) until **E08:S03:T12–T14** operator sign-off. T12–T14 chew through the finite backlog first; T16 resumes at Wave 2+ handoff. Exception: net-new **HIGH** code-scanning security alerts (BR-094 pattern).
+> **Revision (2026-06-07 — Wave 2+ IPW):** T12/T13/T14 **COMPLETE**; T12 operator **Good** @ `ed379ab`; RF9 deferral **lifted**. Two-step delivery: **Wave 2a** manifest-only RW after T15 on `main`; **Wave 2b** first themed remediation RW. See **§8 Rolling backlog**.
+>
+> **Revision (2026-06-05 — Wave 1 re-scan):** Operator refresh @ `main` **`f6aa4dca`**. **Maintainability 146 / Fair**; **Reliability 28 / Fair**; **AI panel 12** open.
+>
+> **Revision (2026-06-05 — operator deferral):** ~~Postpone T16 until T12–T14 sign-off~~ — **LIFTED** 2026-06-07.
 
 ---
 
@@ -34,7 +38,18 @@ housekeeping_policy: keep
 | RF6 | First version anchor: **`RW E08:S03:T16 --art`** after baseline manifest (AC4) | T16 AC4 |
 | RF7 | Novel **HIGH** CodeQL security alerts → dedicated BR + task (BR-094 pattern); return to T16 routine hygiene after | T16 scope boundary |
 | RF8 | **Wave 1+ re-scan manifest:** refresh Standard findings rule breakdown + scores @ current `main` SHA; record delta vs prior T16 baseline; cross-lane score milestones (e.g. reliability **Fair**) | Operator refresh 2026-06-05 |
-| RF9 | **Defer T16 activity** until **T12–T14** operator sign-off; T12–T14 burn down backlog to manageable residual before T16 perpetual waves | Operator directive 2026-06-05 |
+| RF9 | ~~Defer T16 activity until T12–T14 sign-off~~ — **LIFTED** 2026-06-07 | Operator directive 2026-06-05 |
+| RF10 | **Wave 2a re-scan** on `main` @ SHA + UTC: code-scanning, standard bands, AI panel, rule breakdown | Wave 2 IPW |
+| RF11 | **Delta vs Wave 1** (`f6aa4dca`) and **T12 Good** (`ed379ab`) in T16 task doc | Wave 2 IPW |
+| RF12 | **Merge gate:** No T16 **code** on `main` until T15 restores green Tests + Greenfield install | RF5 |
+| RF13 | **Wave 2b:** one theme per RW; priority: AI lag → greenfield mirror → autofix rules → reliability regression | Wave 2 IPW |
+| RF14 | **CQG** before Wave 2b RW (`validate_code_quality_gate.py`) | FR-113 / T17 |
+| RF15 | **greenfield-install** sync after `packages/` edits in Wave 2b | FR-106 |
+| RF16 | Net-new **HIGH** CodeQL security → BR + task (BR-094); return to T16 after | T16 scope |
+| RF17 | **Wave 3a re-scan** on `main` @ SHA: explicit **3** M + **8** R open counts + rule breakdown + scores | Wave 3 IPW |
+| RF18 | **Delta** vs Wave 2a/2b and T12 Good in T16 task doc | Wave 3 IPW |
+| RF19 | **Close TC14**; Wave 2b verify note; optional changelog verification addendum | Wave 3 IPW |
+| RF20 | **Wave 3b:** reliability-first (8), then maintainability (3); one RW if all code-fixable | Wave 3 IPW |
 
 ### 1.2 Non-functional requirements (ascertained)
 
@@ -122,10 +137,28 @@ Establish **E08:S03:T16** as the operational perpetual lane for GitHub **code sc
 | TC6 | Dashboard delta | Post-wave manifest with open-count delta (operator-verified) | RF3, RF8 | 1+ |
 | TC7 | Wave 1 re-scan manifest | T16 task doc: SHA `f6aa4dca`, maintainability **146**, reliability **28**, rule table matches GH UI | RF8 | 1 re-scan |
 | TC8 | Cross-lane score delta | Reliability **Needs Improvement → Fair** recorded; T13 wave-2 attribution noted | RF8 | 1 re-scan |
+| TC9 | Wave 2a manifest | T16 task doc: SHA, UTC, four surfaces populated | RF10 | 2a |
+| TC10 | Wave 2a delta | vs Wave 1 + T12 Good documented | RF11 | 2a |
+| TC11 | Wave 2b pytest | `pytest tests/` + workflow-scripts CI green | RF5, RF12 | 2b |
+| TC12 | Wave 2b CQG | CQG meets `rw_threshold` (advisory warnings OK) | RF14 | 2b |
+| TC13 | Wave 2b greenfield | `sync_greenfield_install.py --check` when packages touched | RF15 | 2b |
+| TC14 | Wave 2b dashboard | Operator verifies GH UI delta post-merge | RF3 | 2b |
+| TC15 | Wave 3a manifest | **3** M + **8** R + rule table @ `main` | RF17 | 3a |
+| TC16 | Wave 3a delta + TC14 | vs Wave 2a/2b documented; TC14 closed | RF18, RF19 | 3a |
+| TC17 | Wave 3b pytest | `pytest tests/` + workflow-scripts green | RF5 | 3b |
+| TC18 | Wave 3b CQG + greenfield | CQG threshold + `--check` in sync | RF14, RF15 | 3b |
 
 **Wave 0 verification:** TC1–TC4 only (docs-only; no `--skip-tests` — TC5 deferred to Wave 1+).
 
 **Wave 1 re-scan verification:** TC7–TC8 (docs-only manifest refresh; no `--skip-tests`).
+
+**Wave 2a verification:** TC9–TC10 (docs-only manifest RW).
+
+**Wave 2b verification:** TC11–TC14 (code + operator dashboard).
+
+**Wave 3a verification:** TC15–TC16 (docs-only manifest RW).
+
+**Wave 3b verification:** TC17–TC18 (code + post-merge dashboard).
 
 ---
 
@@ -190,11 +223,11 @@ Establish **E08:S03:T16** as the operational perpetual lane for GitHub **code sc
 
 | Doc ID | Path | Scope of change | Tied to |
 | ------ | ---- | --------------- | ------- |
-| D-U1 | `docs/project-management/kanban/epics/epic-08/story-03-automation-scripts/T16-github-security-code-quality-health-perpetual-fr112.md` | Baseline + coordination + AC4 | steps 2–4, 7 |
-| D-U2 | `docs/project-management/kanban/fr-br/FR-112-perpetual-github-ci-and-security-health-lanes.md` | F2 progress | step 5 |
-| D-U3 | `docs/project-management/kanban/epics/epic-08/story-03-automation-scripts.md` | Checklist | step 6 |
-| D-U4 | `docs/project-management/kanban/kboard.md` | O-band IPP + version stamp | step 6 |
-| D-U5 | `docs/project-management/kanban/epics/epic-08/epic-08.md` | Story line | step 6 |
+| D-U1 | `docs/kanban/epics/epic-08/story-03-automation-scripts/T16-github-security-code-quality-health-perpetual-fr112.md` | Baseline + coordination + AC4 | steps 2–4, 7 |
+| D-U2 | `docs/kanban/fr-br/FR-112-perpetual-github-ci-and-security-health-lanes.md` | F2 progress | step 5 |
+| D-U3 | `docs/kanban/epics/epic-08/story-03-automation-scripts.md` | Checklist | step 6 |
+| D-U4 | `docs/kanban/kboard.md` | O-band IPP + version stamp | step 6 |
+| D-U5 | `docs/kanban/epics/epic-08/epic-08.md` | Story line | step 6 |
 
 ### 5.2 New documents to create
 
@@ -236,18 +269,93 @@ Establish **E08:S03:T16** as the operational perpetual lane for GitHub **code sc
 - [x] Wave 1 re-scan manifest @ `f6aa4dca` in T16 task doc (TC7–TC8)
 - [x] Coordination matrix reflects reliability **Fair** + **28** open (TC8)
 - [x] T16 activity **deferred** until T12–T14 sign-off documented (RF9)
+- [x] Wave 2a manifest @ post-T15 `main` (TC9–TC10); `RW E08:S03:T16 --art` (**v0.8.3.16+2**)
+- [x] Wave 2b themed remediation + CQG/pytest (TC11–TC13); `RW E08:S03:T16 --art` (**v0.8.3.16+3**)
+- [x] Operator dashboard verify (TC14) — closed Wave 3a @ **3** M + **8** R
+- [x] Wave 3a manifest @ post–Wave 2b `main` (TC15–TC16); shipped **v0.8.3.16+4**
+- [x] Wave 3b reliability-first remediation (TC17–TC18); shipped **v0.8.3.16+5** (operator dashboard re-verify pending)
+
+---
+
+## 8. Rolling backlog (Wave 2+)
+
+**Resume trigger:** T12/T13/T14 COMPLETE; T12 **Good** @ `ed379ab`; RF9 lifted 2026-06-07.
+
+**Prerequisite:** Merge **T15 Wave 3** (`v0.8.3.15+4`) to `main`; Tests + Greenfield install green on [Actions](https://github.com/RMS-Ltd/ai-dev-kit/actions).
+
+### Wave 2a — Manifest-only (docs RW)
+
+| Step | Action |
+| ---- | ------ |
+| 1 | Confirm T16 **IN PROGRESS**; update `Last updated` |
+| 2 | Capture `main` SHA + UTC |
+| 3 | Record manifest from GH UI (code scanning, standard bands + rule breakdown, AI panel) |
+| 4 | Update coordination matrix (T15 CI, T12 Good, CQG T17) |
+| 5 | `RW E08:S03:T16 --art` — BUILD +1 on perpetual task |
+| 6 | Reconcile T16 **IN PROGRESS**; AC Wave 2a |
+
+### Wave 2b — First remediation theme (separate RW)
+
+**Theme priority (pick one after 2a manifest):**
+
+1. AI panel lag refresh (T14 lag-accepted dismissals)
+2. `greenfield-install/` mirror residuals
+3. Autofix-safe standard rules (`py/unused-import`, etc.)
+4. Reliability regression from **Good** only
+
+| Step | Action |
+| ---- | ------ |
+| 7 | Select theme from 2a manifest |
+| 8 | Triage: fix / dismiss / defer-to-BR |
+| 9 | Implement; `sync_greenfield_install.py` when implicated |
+| 10 | TC11–TC13 locally |
+| 11 | `RW E08:S03:T16 --art` |
+| 12 | Operator dashboard verify (TC14) |
+
+**RW rule:** **`RW E08:S03:T16 --art` only**; no `--doc-policy-zero` (BR-097).
+
+### Wave 3a — Post–Wave 2b manifest (docs RW)
+
+| Step | Action |
+| ---- | ------ |
+| 13 | Confirm T16 **IN PROGRESS**; capture `main` @ `f7d8b155` + UTC |
+| 14 | Record manifest: **3** maintainability + **8** reliability + rule breakdown from [Code Quality](https://github.com/RMS-Ltd/ai-dev-kit/security/quality) |
+| 15 | Close **TC14**; delta vs Wave 2a/2b; Wave 2b verify note |
+| 16 | `RW E08:S03:T16 --art` — BUILD +1 |
+| 17 | Reconcile T16 **IN PROGRESS**; AC8 Wave 3a |
+
+### Wave 3b — Reliability-first remediation (code RW)
+
+| Step | Action |
+| ---- | ------ |
+| 18 | Triage 3a rule table |
+| 19 | Fix **8** reliability (`py/empty-except`, `py/tarslip` in installer scripts + mirror) |
+| 20 | Fix **3** maintainability (`py/ineffectual-statement`, `py/unused-local-variable`) |
+| 21 | TC17–TC18; `sync_greenfield_install.py` |
+| 22 | `RW E08:S03:T16 --art` |
+| 23 | Operator post-merge dashboard verify |
+
+### Wave 3e — Autofix PR pytest triage (2026-06-08)
+
+| Step | Action |
+| ---- | ------ |
+| 24 | Triage [PR #43](https://github.com/RMS-Ltd/ai-dev-kit/pull/43) (revert bad `VERSION_STRING` autofix) and [PR #44](https://github.com/RMS-Ltd/ai-dev-kit/pull/44) (fix RW-V03 test) |
+| 25 | Push fixes to autofix branches; verify pytest CI green |
+| 26 | Merge #43 then #44 to `main`; reconcile `dev` |
+| 27 | `RW E08:S03:T16 --art` — BUILD +9 |
+| 28 | Operator dismiss #43 AI finding in Security UI |
 
 ---
 
 ## References
 
-- [FR-112](../project-management/kanban/fr-br/FR-112-perpetual-github-ci-and-security-health-lanes.md)
-- [T16 task doc](../project-management/kanban/epics/epic-08/story-03-automation-scripts/T16-github-security-code-quality-health-perpetual-fr112.md)
-- [T15 task doc](../project-management/kanban/epics/epic-08/story-03-automation-scripts/T15-github-actions-ci-health-perpetual-fr112.md)
+- [FR-112](../kanban/fr-br/FR-112-perpetual-github-ci-and-security-health-lanes.md)
+- [T16 task doc](../kanban/epics/epic-08/story-03-automation-scripts/T16-github-security-code-quality-health-perpetual-fr112.md)
+- [T15 task doc](../kanban/epics/epic-08/story-03-automation-scripts/T15-github-actions-ci-health-perpetual-fr112.md)
 - [IPP-E08S03T12](IPP-E08S03T12-code-quality-maintainability-backlog-br099.md)
 - [IPP-E08S03T13](IPP-E08S03T13-code-quality-reliability-backlog-br100.md)
 - [IPP-E08S03T14](IPP-E08S03T14-code-quality-ai-suggestions-backlog-br101.md)
 - [code-quality-monitoring-processes.md](../architecture/standards-and-adrs/code-quality-monitoring-processes.md)
 - [ipw-adr-necessity-checklist.md](../architecture/standards-and-adrs/ipw-adr-necessity-checklist.md)
-- [BR-097](../project-management/kanban/fr-br/BR-097-rw-agent-reuses-tagged-build-and-force-moves-release-tags.md)
+- [BR-097](../kanban/fr-br/BR-097-rw-agent-reuses-tagged-build-and-force-moves-release-tags.md)
 - [dev-kit-versioning-policy.md](../governance/standards/dev-kit-versioning-policy.md)

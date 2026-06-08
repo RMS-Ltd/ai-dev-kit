@@ -10,8 +10,11 @@ _VALIDATORS = Path(__file__).resolve().parents[1]
 if str(_VALIDATORS) not in sys.path:
     sys.path.insert(0, str(_VALIDATORS))
 
-from code_quality.config import CodeQualityGateConfig  # noqa: E402
-from code_quality.last_run import LastRunRecord, evaluate_monitor, MonitorDecision  # noqa: E402
+from code_quality.last_run import (  # noqa: E402
+    LastRunRecord,
+    MonitorDecision,
+    evaluate_monitor,
+)
 from code_quality.report_model import (  # noqa: E402
     Category,
     CategoryRatings,
@@ -63,7 +66,6 @@ def test_run_when_head_changed():
 
 def test_missing_config_block_raises():
     import pytest
-
     from code_quality.config import CodeQualityGateConfig
 
     with pytest.raises(ValueError, match="Missing 'code_quality_gate'"):

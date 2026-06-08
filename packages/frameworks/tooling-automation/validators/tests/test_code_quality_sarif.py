@@ -10,10 +10,10 @@ _VALIDATORS = Path(__file__).resolve().parents[1]
 if str(_VALIDATORS) not in sys.path:
     sys.path.insert(0, str(_VALIDATORS))
 
+from code_quality.config import CodeQualityGateConfig  # noqa: E402
 from code_quality.cqg_engine import CQGEngine  # noqa: E402
 from code_quality.report_model import Category, Severity  # noqa: E402
 from code_quality.sarif_parser import parse_sarif  # noqa: E402
-from code_quality.config import CodeQualityGateConfig  # noqa: E402
 
 FIXTURES = Path(__file__).resolve().parent / "fixtures" / "cqg"
 

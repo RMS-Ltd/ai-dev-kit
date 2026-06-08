@@ -8,7 +8,7 @@ housekeeping_policy: keep
 
 # Code Quality Gate (CQG) — Operator guide
 
-**Task:** E08:S03:T17 · **FR:** [FR-113](../../../../docs/project-management/kanban/fr-br/FR-113-local-code-quality-gate-cqg.md) · **ADR:** [ADR-022](../../../../docs/architecture/standards-and-adrs/ADR-022-local-code-quality-gate-architecture.md)
+**Task:** E08:S03:T17 · **FR:** [FR-113](../../../../docs/kanban/fr-br/FR-113-local-code-quality-gate-cqg.md) · **ADR:** [ADR-022](../../../../docs/architecture/standards-and-adrs/ADR-022-local-code-quality-gate-architecture.md)
 
 ---
 
@@ -17,7 +17,7 @@ housekeeping_policy: keep
 | Source | Role |
 | ------ | ---- |
 | **GitHub Code Quality dashboard (T16)** | Cloud SoT until operator accepts local parity |
-| **Local CQG** | Pre-push / cron snapshot; mirrors CodeQL `security-and-quality` Standard findings |
+| **Local CQG** | IDW Phase 6b + cron snapshot; mirrors CodeQL `security-and-quality` Standard findings |
 
 CQG does **not** replace T16 perpetual health lanes or FHM workflow checks.
 
@@ -47,26 +47,43 @@ python packages/frameworks/tooling-automation/scripts/run_cqg.py --sarif /path/t
 python packages/frameworks/tooling-automation/scripts/run_cqg.py --strict --threshold errors
 ```
 
-### RW Step 9 (advisory default)
+### IDW Phase 6b (strict default — ADR-022 v0.0.2)
 
 ```bash
-python packages/frameworks/workflow-mgt/scripts/validation/validate_code_quality_gate.py
-python packages/frameworks/workflow-mgt/scripts/validation/validate_code_quality_gate.py --strict
+python packages/frameworks/workflow-mgt/scripts/validation/validate_code_quality_gate.py \
+  --strict --requested "E08:S03:T17"
+python packages/frameworks/workflow-mgt/scripts/validation/validate_code_quality_gate.py --skip
 ```
 
-When CodeQL is missing, validator **exits 0** with `ADVISORY SKIP` unless `--sarif` is supplied.
+When CodeQL is missing during IDW, validator **exits non-zero** unless `--sarif` is supplied. RW does **not** run CQG.
 
 ### 6-hour monitor
 
-Cron: `0 */6 * * *`
+Cron: `0 */6 * * *` (00:00, 06:00, 12:00, 18:00 — local timezone of the cron daemon)
+
+**Install (recommended):**
 
 ```bash
+bash packages/frameworks/workflow-mgt/scripts/install/install_cqg_cron.sh --execute
+```
+
+Dry-run first: omit `--execute`. Uninstall: `--remove`. The installer adds a cron-safe wrapper (`cqg_monitor_cron.sh`) with Homebrew/pyenv on `PATH` for CodeQL.
+
+**Manual run / one-off test:**
+
+```bash
+bash packages/frameworks/workflow-mgt/scripts/cqg_monitor_cron.sh
+# or
 python packages/frameworks/workflow-mgt/scripts/cqg_monitor.py
 ```
+
+Do **not** paste the cron schedule line into zsh — `*/6` is glob-expanded interactively. Use `crontab -e` or the installer above.
 
 **Skip:** HEAD unchanged and `.cqg/last-run.json` age **< 12 h**  
 **Force:** age **≥ 12 h** even if HEAD unchanged  
 **Run:** HEAD changed
+
+Log file: `.cqg/monitor.log` (gitignored with `.cqg/`).
 
 Use a **clean checkout** of `dev` (no uncommitted changes) for comparable snapshots.
 
@@ -94,7 +111,7 @@ All under `.cqg/` are **gitignored**.
 | `notes` | Error, Warning, or Note |
 | `all` | Any finding |
 
-Configure default via `code_quality_gate.rw_threshold`. RW uses `rw_advisory: true` unless `--strict`.
+Configure default via `code_quality_gate.idw_threshold`. IDW uses `idw_advisory: false` (strict) unless `--no-strict`.
 
 ---
 
@@ -110,5 +127,7 @@ Follow [cqg-parity-template.md](./cqg-parity-template.md) at a pinned SHA. Targe
 | --------- | ---- |
 | Engine | `validators/code_quality/` |
 | CLI | `scripts/run_cqg.py` |
-| RW validator | `workflow-mgt/scripts/validation/validate_code_quality_gate.py` |
+| IDW validator | `workflow-mgt/scripts/validation/validate_code_quality_gate.py` |
 | Monitor | `workflow-mgt/scripts/cqg_monitor.py` |
+| Cron wrapper | `workflow-mgt/scripts/cqg_monitor_cron.sh` |
+| Cron installer | `workflow-mgt/scripts/install/install_cqg_cron.sh` |

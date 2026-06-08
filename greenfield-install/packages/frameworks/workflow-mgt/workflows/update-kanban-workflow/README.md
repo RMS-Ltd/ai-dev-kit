@@ -17,7 +17,7 @@ To maintain accurate, up-to-date kanban board documentation through intelligent 
 - Configuration file `.ai-dev-kit.yaml` with UKW settings
 
 ### Setup Requirements
-- Kanban board file: `docs/project-management/kanban/kboard.md`
+- Kanban board file: `docs/kanban/kboard.md`
 - Task documentation in epic/story directories
 - Completed tasks tracking: `kanban-completed.md`
 - FR/BR/UXR tracking: `intake-completed.md`
@@ -49,9 +49,9 @@ UKW --dry-run
 # .ai-dev-kit.yaml
 update_kanban:
   enabled: true
-  kanban_board: docs/project-management/kanban/kboard.md
-  completed_tasks: docs/project-management/kanban/kanban-completed.md
-  fr_br_uxr_completed: docs/project-management/kanban/intake-completed.md
+  kanban_board: docs/kanban/kboard.md
+  completed_tasks: docs/kanban/kanban-completed.md
+  fr_br_uxr_completed: docs/kanban/intake-completed.md
   auto_prioritize: true
   status_inference: true
   narrative_synthesis: true
@@ -60,9 +60,9 @@ update_kanban:
 ### Configuration Options
 | Option | Type | Default | Description |
 |--------|------|---------|-------------|
-| kanban_board | string | docs/project-management/kanban/kboard.md | Main kanban board file |
-| completed_tasks | string | docs/project-management/kanban/kanban-completed.md | Completed tasks file |
-| fr_br_uxr_completed | string | docs/project-management/kanban/intake-completed.md | FR/BR/UXR completed file |
+| kanban_board | string | docs/kanban/kboard.md | Main kanban board file |
+| completed_tasks | string | docs/kanban/kanban-completed.md | Completed tasks file |
+| fr_br_uxr_completed | string | docs/kanban/intake-completed.md | FR/BR/UXR completed file |
 | auto_prioritize | boolean | true | Automatic MoSCOW prioritization |
 | status_inference | boolean | true | Intelligent status inference |
 | narrative_synthesis | boolean | true | Generate progress narratives |
@@ -337,9 +337,9 @@ UKW --help
 ```yaml
 update_kanban:
   enabled: true
-  kanban_board: docs/project-management/kanban/kboard.md
-  completed_tasks: docs/project-management/kanban/kanban-completed.md
-  fr_br_uxr_completed: docs/project-management/kanban/intake-completed.md
+  kanban_board: docs/kanban/kboard.md
+  completed_tasks: docs/kanban/kanban-completed.md
+  fr_br_uxr_completed: docs/kanban/intake-completed.md
 ```
 
 #### Advanced Configuration

@@ -13,7 +13,7 @@ policy_salience:
   audience: ["agents", "developers", "epic-owners", "story-owners", "project-leadership"]
   applies_to:
     documents:
-      - "docs/project-management/kanban/**"
+      - "docs/kanban/**"
       - "packages/frameworks/kanban/**"
     activities:
       - "fr-br-intake"
@@ -364,7 +364,7 @@ Each task entry in the MoSCOW sections includes:
 
 **MoSCOW multi-line spacing (UXR-005 / E07:S01:T09):**
 - Between adjacent **multi-line** MoSCOW bullets on `kboard.md`, and related Kanban docs, require **exactly one blank line**; single-line bullets (≤100 characters in source) may stay contiguous.
-- **UXR ownership:** Kanban template and board formatting governance is owned by the UXR workflow; implementation anchor **E07:S01:T09** ([`kanban-board-guide.md`](../../../docs/project-management/kanban/kanban-board-guide.md) § Formatting Governance).
+- **UXR ownership:** Kanban template and board formatting governance is owned by the UXR workflow; implementation anchor **E07:S01:T09** ([`kanban-board-guide.md`](../../../docs/kanban/kanban-board-guide.md) § Formatting Governance).
 - **Enforcement:** `validate_kanban_moscow_spacing.py` (non-blocking Release Readiness **Gate 10**); UKW/RW agents run after MoSCOW edits.
 
 ### RW preventive vs UKW corrective separation (FR-092 / FR-091)
@@ -391,7 +391,7 @@ The Release Workflow (RW) and the Update Kanban Workflow (UKW) own **distinct, n
 - [`.cursorrules` Step 7 — Scoped Kanban Reconciliation](../../../../.cursorrules)
 - [`release-workflow-agent-execution.md` Step 7](../../workflow-mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md)
 - [`update-kanban-workflow-agent-execution.md`](../../workflow-mgt/KB/Documentation/Developer_Docs/vwmp/update-kanban-workflow-agent-execution.md)
-- [`FR-092` — Canonical RW/UKW kanban consistency program (meta)](../../../../docs/project-management/kanban/fr-br/FR-092-canonical-rw-ukw-kanban-consistency-program.md)
+- [`FR-092` — Canonical RW/UKW kanban consistency program (meta)](../../../../docs/kanban/fr-br/FR-092-canonical-rw-ukw-kanban-consistency-program.md)
 
 ### Story Checklist
 
@@ -435,12 +435,12 @@ Governing artifact for a feature set or maintenance theme.
 
 - **Location (example patterns):**
   - **Separate directories:** `docs/project-management/epics/overview/Epic XX/Epic-XX.md`  
-  - **Consolidated Kanban:** `docs/project-management/kanban/epics/Epic-XX.md` (all Kanban docs in one place)
+  - **Consolidated Kanban:** `docs/kanban/epics/Epic-XX.md` (all Kanban docs in one place)
   - Replace with your KB path for epic overview docs.
 - **Branch (example convention):** `epic/<number>-<slug>`  
   - Adjust to your branching strategy if different.
 - **Version (when using RC.EPIC.STORY.TASK+BUILD):** `RC.EPIC.STORY.TASK+BUILD` (where EPIC = epic number)
-- **Template (example):** `docs/project-management/epics/templates/EPIC_TEMPLATE.md` or `docs/project-management/kanban/epics/templates/EPIC_TEMPLATE.md`
+- **Template (example):** `docs/project-management/epics/templates/EPIC_TEMPLATE.md` or `docs/kanban/epics/templates/EPIC_TEMPLATE.md`
 
 **Consolidated Structure Pattern:**
 If using a single `kanban/` directory, Epics live at `kanban/epics/Epic-X.md` with Stories under `kanban/epics/Epic-X/stories/`. This keeps all Kanban docs discoverable in one location.
@@ -451,9 +451,9 @@ Decompose epic scope into releasable slices.
 
 - **Location (example patterns):**
   - **Separate directories:** `docs/project-management/stories/overview/Epic XX/Story-N-Title.md`
-  - **Consolidated Kanban:** `docs/project-management/kanban/epics/Epic-X/stories/Story-N-Title.md`
+  - **Consolidated Kanban:** `docs/kanban/epics/Epic-X/stories/Story-N-Title.md`
 - **Numbering (example):** `E<epic>S<story>` (e.g., `E20S7`)
-- **Template (example):** `docs/project-management/stories/templates/STORY_TEMPLATE.md` or `docs/project-management/kanban/epics/templates/STORY_TEMPLATE.md`
+- **Template (example):** `docs/project-management/stories/templates/STORY_TEMPLATE.md` or `docs/kanban/epics/templates/STORY_TEMPLATE.md`
 
 **Story Directories:** In consolidated structures, Stories live in `Epic-X/stories/` directories, allowing for associated files (diagrams, notes, etc.) alongside the Story document.
 

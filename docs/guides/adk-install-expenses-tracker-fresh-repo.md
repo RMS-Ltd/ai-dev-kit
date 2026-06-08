@@ -6,7 +6,7 @@ housekeeping_policy: keep
 
 # ADK install — Expenses Tracker (fresh repository)
 
-Use this checklist when starting from a **new blank GitHub repository** (no prior kanban tree). Validates [UXR-017](../project-management/kanban/fr-br/UXR-017-kanban-epic-story-path-lowercase-naming.md) / [E04:S19:T11](../project-management/kanban/epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T11-kanban-epic-story-path-lowercase-naming-uxr017.md) AC5.
+Use this checklist when starting from a **new blank GitHub repository** (no prior kanban tree). Validates [UXR-017](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/kanban/fr-br/UXR-017-kanban-epic-story-path-lowercase-naming.md) / [E04:S19:T11](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/kanban/epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T11-kanban-epic-story-path-lowercase-naming-uxr017.md) AC5.
 
 ## Prerequisites
 
@@ -16,9 +16,9 @@ Use this checklist when starting from a **new blank GitHub repository** (no prio
 ## Expected kanban path layout (write-default)
 
 ```text
-docs/project-management/kanban/epics/epic-04/epic-04.md
-docs/project-management/kanban/epics/epic-04/story-19-{slug}.md
-docs/project-management/kanban/epics/epic-04/story-19-{slug}/T11-{slug}.md
+docs/kanban/epics/epic-04/epic-04.md
+docs/kanban/epics/epic-04/story-19-{slug}.md
+docs/kanban/epics/epic-04/story-19-{slug}/T11-{slug}.md
 ```
 
 Rules (ADR-015):
@@ -31,7 +31,7 @@ Rules (ADR-015):
 
 ```yaml
 use_kanban: true
-kanban_root: docs/project-management/kanban
+kanban_root: docs/kanban
 epic_doc_pattern: epics/epic-{epic:02d}/epic-{epic:02d}.md
 story_doc_pattern: epics/epic-{epic:02d}/story-{story:02d}-*.md
 task_doc_pattern: epics/epic-{epic:02d}/story-{story:02d}-*/T{task:02d}-*.md
@@ -60,4 +60,4 @@ Use `--close-github-issues` only when you intend to close ready issues via `gh` 
 
 ## Record evidence
 
-Paste `ls docs/project-management/kanban/epics/epic-*` (first epic), `rw-config.yaml` kanban patterns, and `logs/ai-dev-kit/install/signoff-report.json` into T11 **Expenses Tracker verification (AC5)** when done.
+Paste `ls docs/kanban/epics/epic-*` (first epic), `rw-config.yaml` kanban patterns, and `logs/ai-dev-kit/install/signoff-report.json` into T11 **Expenses Tracker verification (AC5)** when done.

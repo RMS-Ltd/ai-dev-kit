@@ -122,5 +122,5 @@ pip install dist/ai_dev_kit-*.whl
 
 - **Design Document:** `docs/architecture/standards-and-adrs/framework-update-cli-design.md`
 - **Architecture:** `docs/architecture/standards-and-adrs/framework-dependency-architecture.md`
-- **Feature Request:** `docs/project-management/kanban/fr-br/FR-030-ai-dev-kit-cli-tool.md`
+- **Feature Request:** `docs/kanban/fr-br/FR-030-ai-dev-kit-cli-tool.md`
 

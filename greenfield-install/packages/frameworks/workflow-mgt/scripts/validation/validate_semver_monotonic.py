@@ -28,7 +28,7 @@ def get_all_git_tags() -> list:
         )
         tags = [tag.strip() for tag in result.stdout.strip().split('\n') if tag.strip()]
         # Sort tags by version number (canonical ordering)
-        tags.sort(key=lambda t: parse_version_for_sorting(t))
+        tags.sort(key=parse_version_for_sorting)
         return tags
     except subprocess.CalledProcessError as e:
         print(f"❌ Error getting git tags: {e}")

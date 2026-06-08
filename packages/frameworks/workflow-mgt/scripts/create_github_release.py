@@ -12,6 +12,7 @@ import os
 import re
 import subprocess
 import sys
+from contextlib import suppress
 from pathlib import Path
 from typing import Dict, Optional
 
@@ -22,7 +23,7 @@ script_dir = Path(__file__).parent
 sys.path.insert(0, str(script_dir / "version"))
 
 try:
-    from semver_converter import get_rw_tag_info, get_semver_mapping_strategy
+    from semver_converter import get_rw_tag_info
 except ImportError:
     # Fallback if semver_converter not available
     def get_semver_mapping_strategy() -> str:
@@ -47,7 +48,7 @@ def load_env_local():
         env_local = project_root / '.env.local'
     
     if env_local.exists():
-        try:
+        with suppress(Exception):  # malformed .env.local must not break release helper
             with open(env_local, 'r') as f:
                 for line in f:
                     line = line.strip()
@@ -62,8 +63,6 @@ def load_env_local():
                         # Only set if not already in environment
                         if key and value and key not in os.environ:
                             os.environ[key] = value
-        except Exception as _suppressed_exc:
-            del _suppressed_exc  # Silently fail - don't break if .env.local has issues
 
 # Load .env.local before checking for environment variables
 load_env_local()

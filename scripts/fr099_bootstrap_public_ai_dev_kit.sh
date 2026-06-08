@@ -44,7 +44,7 @@ for c in $(git rev-list --reverse "${GENESIS_SHA}".."${TIP}"); do
   exit 1
 done
 
-if [[ -d docs/book-proj ]] || [[ -d docs/project-management/kanban/epics/Epic-24 ]]; then
+if [[ -d docs/book-proj ]] || [[ -d docs/kanban/epics/Epic-24 ]]; then
   echo "error: book paths present on public-bound tree (AC4)" >&2
   exit 1
 fi

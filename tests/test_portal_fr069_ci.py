@@ -3,7 +3,7 @@ FR-069 / E5:S09:T05: GitHub Actions Docusaurus build gate (workflow contract).
 
 Executable spec S1–S7 (S8 is process / observational).
 
-See: docs/project-management/kanban/fr-br/FR-069-docusaurus-ci-build-gate.md
+See: docs/kanban/fr-br/FR-069-docusaurus-ci-build-gate.md
 """
 
 from __future__ import annotations
@@ -57,17 +57,24 @@ def _paths_from_trigger(trigger: Any) -> list[str]:
 
 
 def test_fr069_s2_pr_push_paths(workflow_doc: dict[str, Any]):
-    """S2 — pull_request and push filters include portal/** and docs/**."""
+    """S2 — pull_request and push filters include portal/** and FR-114 allowlist paths."""
     on = workflow_doc["on"]
     assert isinstance(on, dict)
     pr = on.get("pull_request")
     push = on.get("push")
     assert isinstance(pr, dict), "on.pull_request must be a mapping with paths"
     assert isinstance(push, dict), "on.push must be a mapping with paths"
+    required = (
+        "portal/**",
+        "docs/guides/**",
+        "docs/documentation/**",
+        "docs/developer-tools/ide-whitelist-guide.md",
+    )
     for label, trig in ("pull_request", pr), ("push", push):
         paths = _paths_from_trigger(trig)
-        assert "portal/**" in paths, f"{label} must include portal/**"
-        assert "docs/**" in paths, f"{label} must include docs/**"
+        for req in required:
+            assert req in paths, f"{label} must include {req}"
+        assert "docs/**" not in paths, f"{label} must not use bare docs/** (FR-114-NF1)"
     branches = push.get("branches")
     assert branches == ["main"], "push should be limited to main per T05 spec"
 

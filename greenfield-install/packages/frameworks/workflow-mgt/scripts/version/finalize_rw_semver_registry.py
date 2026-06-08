@@ -20,18 +20,11 @@ _SCRIPT_DIR = Path(__file__).resolve().parent
 if str(_SCRIPT_DIR) not in sys.path:
     sys.path.insert(0, str(_SCRIPT_DIR))
 
-from semver_converter import (  # noqa: E402
-    _ensure_task_touch_mode,
-    _find_mapping_entry,
-    convert_version_string,
-    get_rw_tag_info,
-    get_semver_mapping_strategy,
-    load_semver_registry,
-)
+import semver_converter  # noqa: E402
 
 
 def finalize_rw_semver_registry(internal_version: str) -> dict:
-    strategy = get_semver_mapping_strategy()
+    strategy = semver_converter.get_semver_mapping_strategy()
     if strategy != "task_touch":
         return {
             "skipped": True,
@@ -40,18 +33,24 @@ def finalize_rw_semver_registry(internal_version: str) -> dict:
         }
 
     version = internal_version.lstrip("v")
-    registry = load_semver_registry()
+    registry = semver_converter.load_semver_registry()
     rc = int(version.split(".")[0])
-    ttm = _ensure_task_touch_mode(registry, rc)
-    existing = _find_mapping_entry(ttm, version)
+    ttm = semver_converter._ensure_task_touch_mode(registry, rc)
+    existing = semver_converter._find_mapping_entry(ttm, version)
     if existing:
         semver_full = existing["semver"]
         created = False
     else:
-        semver_full = convert_version_string(version, strategy="task_touch", finalize=True)
+        semver_full = semver_converter.convert_version_string(
+            version, strategy="task_touch", finalize=True
+        )
         created = True
 
-    tag_info = get_rw_tag_info(version, finalize=False)
+    tag_info = semver_converter.get_rw_tag_info(version, finalize=False)
+    if semver_converter.get_release_state_backend() == "sqlite":
+        registry_path = str(semver_converter.get_release_state_db_path())
+    else:
+        registry_path = str(Path.cwd() / "semver-registry.yaml")
     return {
         "skipped": False,
         "created": created,
@@ -60,7 +59,7 @@ def finalize_rw_semver_registry(internal_version: str) -> dict:
         "primary_tag": tag_info["primary_tag"],
         "internal_tag": tag_info.get("internal_tag"),
         "strategy": strategy,
-        "registry_path": str(Path.cwd() / "semver-registry.yaml"),
+        "registry_path": registry_path,
     }
 
 

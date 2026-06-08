@@ -41,7 +41,7 @@ def get_all_git_tags() -> List[str]:
         )
         tags = [tag.strip() for tag in result.stdout.strip().split('\n') if tag.strip()]
         # Sort tags by version number (canonical ordering)
-        tags.sort(key=lambda t: parse_version_for_sorting(t))
+        tags.sort(key=parse_version_for_sorting)
         return tags
     except subprocess.CalledProcessError as e:
         print(f"❌ Error getting git tags: {e}")
@@ -114,7 +114,6 @@ def build_registry_from_tags(tags: List[str]) -> Dict[str, Any]:
     for idx, tag in enumerate(tags):
         try:
             rc, epic, story, task, build = parse_internal_version(tag)
-            rc_key = f"rc_{rc}"
             
             # Track first appearance of (RC, Epic)
             epic_key = (rc, epic)

@@ -21,7 +21,7 @@ class TestValidGapLogPasses:
     def test_e2_s13_t05_passes(self):
         path = (
             Path(__file__).resolve().parent.parent
-            / "docs/project-management/kanban/epics/epic-02/story-13-workflow-management-package-implementation-review/T05-create-gap-log-and-risk-assessment.md"
+            / "docs/kanban/epics/epic-02/story-13-workflow-management-package-implementation-review/T05-create-gap-log-and-risk-assessment.md"
         )
         if path.exists():
             content = path.read_text(encoding="utf-8")
@@ -32,7 +32,7 @@ class TestValidGapLogPasses:
     def test_e4_s16_t05_passes(self):
         path = (
             Path(__file__).resolve().parent.parent
-            / "docs/project-management/kanban/epics/Epic-4/Story-016-kanban-package-implementation-review/T05-create-gap-log-and-risk-assessment.md"
+            / "docs/kanban/epics/Epic-4/Story-016-kanban-package-implementation-review/T05-create-gap-log-and-risk-assessment.md"
         )
         if path.exists():
             content = path.read_text(encoding="utf-8")
@@ -43,7 +43,7 @@ class TestValidGapLogPasses:
     def test_e3_s04_t05_passes(self):
         path = (
             Path(__file__).resolve().parent.parent
-            / "docs/project-management/kanban/epics/Epic-3/Story-004-numbering-versioning-package-implementation-review/T05-gap-log-and-risk-assessment.md"
+            / "docs/kanban/epics/Epic-3/Story-004-numbering-versioning-package-implementation-review/T05-gap-log-and-risk-assessment.md"
         )
         if path.exists():
             content = path.read_text(encoding="utf-8")

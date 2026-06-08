@@ -86,7 +86,7 @@ jobs:
         id: doc-number
         run: |
           PREFIX="${{ steps.issue.outputs.prefix }}"
-          DOC_DIR="docs/project-management/kanban/fr-br"
+          DOC_DIR="docs/kanban/fr-br"
           MAX_NUM=0
           for file in "$DOC_DIR"/${PREFIX}-*.md; do
             if [ -f "$file" ]; then
@@ -106,7 +106,7 @@ jobs:
           TEMPLATE="${{ steps.issue.outputs.template }}"
           PREFIX="${{ steps.issue.outputs.prefix }}"
           FILENAME="${{ steps.doc-number.outputs.filename }}"
-          DOC_PATH="docs/project-management/kanban/fr-br/$FILENAME"
+          DOC_PATH="docs/kanban/fr-br/$FILENAME"
           TEMPLATE_PATH="packages/frameworks/kanban/templates/$TEMPLATE"
           cp "$TEMPLATE_PATH" "$DOC_PATH"
           sed -i "s/\[Title\]/${{ steps.issue.outputs.title }}/g" "$DOC_PATH"
@@ -131,7 +131,7 @@ jobs:
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add docs/project-management/kanban/fr-br/
+          git add docs/kanban/fr-br/
           git commit -m "Auto-create ${{ steps.issue.outputs.prefix }}-${{ steps.doc-number.outputs.number }} from GitHub Issue #${{ steps.issue.outputs.number }}" || exit 0
           git push
 
@@ -152,7 +152,7 @@ jobs:
                 `✅ This ${label} has been automatically converted to a Kanban document.`,
                 '',
                 `📄 **Document:** \`${docPath}\``,
-                `🔗 **Path:** \`docs/project-management/kanban/fr-br/${docPath}\``,
+                `🔗 **Path:** \`docs/kanban/fr-br/${docPath}\``,
                 '',
                 'Processed via manual workflow dispatch (BR-051/BR-053 — issue triggers disabled).',
               ].join('\\n')

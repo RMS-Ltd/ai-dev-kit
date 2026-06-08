@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # E06:S09:T08 — Planning: Spec, Tests, Implementation Plan (IPW)
 
-**Host Task:** [`T08-kanban-fresh-install-epic-22-23-templates-br079.md`](../project-management/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T08-kanban-fresh-install-epic-22-23-templates-br079.md) **(E06:S09:T08)**  
-**Planning for:** [BR-079](../project-management/kanban/fr-br/BR-079-kanban-fresh-install-epic-22-23-placeholder-only.md) · [GitHub #11](https://github.com/RMS-Ltd/ai-dev-kit/issues/11)  
+**Host Task:** [`T08-kanban-fresh-install-epic-22-23-templates-br079.md`](../kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T08-kanban-fresh-install-epic-22-23-templates-br079.md) **(E06:S09:T08)**  
+**Planning for:** [BR-079](../kanban/fr-br/BR-079-kanban-fresh-install-epic-22-23-placeholder-only.md) · [GitHub #11](https://github.com/RMS-Ltd/ai-dev-kit/issues/11)  
 **Status:** Implemented (2026-06-03 — pending user verification / RW)
 
 ---
@@ -96,4 +96,4 @@ Fresh installs produce real Epic 22/23 starter docs (or a deliberate, documented
 
 ## References
 
-- [BR-079](../project-management/kanban/fr-br/BR-079-kanban-fresh-install-epic-22-23-placeholder-only.md)
+- [BR-079](../kanban/fr-br/BR-079-kanban-fresh-install-epic-22-23-placeholder-only.md)

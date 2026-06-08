@@ -8,11 +8,11 @@ repos:
         name: FR-097 board stamp homogeneity + diff guard
         entry: python "packages/frameworks/workflow-mgt/scripts/validation/validate_board_stamps_precommit.py"
         language: system
-        files: ^docs/project-management/kanban/(kboard|fbuboard)\.md$
+        files: ^docs/kanban/(kboard|fbuboard)\.md$
         pass_filenames: false
       - id: validate-active-kanban-board
         name: FR-109 active board lean contract
         entry: python "packages/frameworks/workflow-mgt/scripts/validation/validate_active_kanban_board.py" --strict
         language: system
-        files: ^docs/project-management/kanban/(kboard|fbuboard)\.md$
+        files: ^docs/kanban/(kboard|fbuboard)\.md$
         pass_filenames: false

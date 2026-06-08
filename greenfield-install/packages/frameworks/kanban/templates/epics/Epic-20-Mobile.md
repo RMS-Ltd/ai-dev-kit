@@ -89,7 +89,7 @@ This epic encompasses mobile application development and mobile-specific feature
 - None
 - *Parallel Development Candidacy:* Safe (can be done independently)
 
-> Full story: `docs/project-management/kanban/epics/epic-20/story-01-mobile-app-foundation.md`
+> Full story: `docs/kanban/epics/epic-20/story-01-mobile-app-foundation.md`
 
 ---
 
@@ -128,7 +128,7 @@ This epic encompasses mobile application development and mobile-specific feature
 - Coordinates with Epic 7 (UXR) for mobile UX insights
 - *Parallel Development Candidacy:* Blocked (requires Story 1 foundation)
 
-> Full story: `docs/project-management/kanban/epics/epic-20/story-02-mobile-ui-implementation.md`
+> Full story: `docs/kanban/epics/epic-20/story-02-mobile-ui-implementation.md`
 
 ---
 
@@ -166,7 +166,7 @@ This epic encompasses mobile application development and mobile-specific feature
 - Depends on Story 2 (Mobile UI Implementation)
 - *Parallel Development Candidacy:* Blocked (requires Story 2 UI)
 
-> Full story: `docs/project-management/kanban/epics/epic-20/story-03-mobile-app-deployment.md`
+> Full story: `docs/kanban/epics/epic-20/story-03-mobile-app-deployment.md`
 
 ---
 

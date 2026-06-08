@@ -22,17 +22,7 @@ import yaml
 script_dir = Path(__file__).parent
 sys.path.insert(0, str(script_dir))
 
-from semver_converter import (
-    convert_internal_to_semver_task_touch,
-    convert_version_string,
-    get_epic_count,
-    get_rw_tag_info,
-    get_semver_mapping_strategy,
-    get_task_touch_counter,
-    increment_task_touch_counter,
-    save_semver_registry,
-    set_epic_count,
-)
+import semver_converter
 
 
 class TestTaskTouchMapping:
@@ -47,13 +37,13 @@ class TestTaskTouchMapping:
         # Create test config
         test_config = {
             "semver_mapping_strategy": "task_touch",
+            "release_state_backend": "legacy",
             "project_name": "test-project"
         }
         with open(self.config_file, 'w') as f:
             yaml.dump(test_config, f)
         
         # Mock the registry file path
-        import semver_converter
         self.original_find_registry = semver_converter.find_registry_file
         semver_converter.find_registry_file = lambda: self.registry_file
         
@@ -66,35 +56,34 @@ class TestTaskTouchMapping:
         shutil.rmtree(self.temp_dir)
         
         # Restore original functions
-        import semver_converter
         semver_converter.find_registry_file = self.original_find_registry
         semver_converter.load_rw_config = self.original_load_config
     
     def test_task_touch_basic_conversion(self):
         """Test basic task-touch conversion."""
         # Set up initial state
-        set_epic_count(0, 7)  # 7 epics signed off for RC 0
+        semver_converter.set_epic_count(0, 7)  # 7 epics signed off for RC 0
         
         # Derive first version (read-only; predicts next patch)
-        result1 = convert_internal_to_semver_task_touch(0, 6, 7, 101, 1)
+        result1 = semver_converter.convert_internal_to_semver_task_touch(0, 6, 7, 101, 1)
         assert result1 == (0, 7, 1, 1)  # MAJOR=0, MINOR=7, PATCH=1, BUILD=1
 
         # Finalize first version (idempotent thereafter)
-        result1f = convert_internal_to_semver_task_touch(0, 6, 7, 101, 1, finalize=True)
+        result1f = semver_converter.convert_internal_to_semver_task_touch(0, 6, 7, 101, 1, finalize=True)
         assert result1f == (0, 7, 1, 1)
-        assert get_task_touch_counter(0) == 1
+        assert semver_converter.get_task_touch_counter(0) == 1
 
         # Finalize second version (increments once)
-        result2 = convert_internal_to_semver_task_touch(0, 3, 2, 12, 2, finalize=True)
+        result2 = semver_converter.convert_internal_to_semver_task_touch(0, 3, 2, 12, 2, finalize=True)
         assert result2 == (0, 7, 2, 2)  # MAJOR=0, MINOR=7, PATCH=2, BUILD=2
 
         # Finalize third version
-        result3 = convert_internal_to_semver_task_touch(0, 2, 13, 7, 1, finalize=True)
+        result3 = semver_converter.convert_internal_to_semver_task_touch(0, 2, 13, 7, 1, finalize=True)
         assert result3 == (0, 7, 3, 1)  # MAJOR=0, MINOR=7, PATCH=3, BUILD=1
     
     def test_collision_prevention(self):
         """Test that task-touch mapping prevents collisions."""
-        set_epic_count(0, 6)  # 6 epics signed off for RC 0
+        semver_converter.set_epic_count(0, 6)  # 6 epics signed off for RC 0
         
         # These versions collided under registry mapping
         collision_versions = [
@@ -105,7 +94,7 @@ class TestTaskTouchMapping:
         
         results = []
         for rc, epic, story, task, build in collision_versions:
-            result = convert_internal_to_semver_task_touch(rc, epic, story, task, build, finalize=True)
+            result = semver_converter.convert_internal_to_semver_task_touch(rc, epic, story, task, build, finalize=True)
             results.append(result)
         
         # All should have different PATCH numbers
@@ -120,12 +109,12 @@ class TestTaskTouchMapping:
     
     def test_monotonicity(self):
         """Test that SemVer sequences are strictly monotonic."""
-        set_epic_count(0, 3)
+        semver_converter.set_epic_count(0, 3)
         
         # Generate sequence
         results = []
         for i in range(5):
-            result = convert_internal_to_semver_task_touch(0, 1, 1, 1 + i, 1, finalize=True)
+            result = semver_converter.convert_internal_to_semver_task_touch(0, 1, 1, 1 + i, 1, finalize=True)
             results.append(result)
         
         # Check that PATCH is always increasing
@@ -157,38 +146,38 @@ class TestTaskTouchMapping:
                 }
             }
         }
-        save_semver_registry(registry)
+        semver_converter.save_semver_registry(registry)
         
         # Initial counter should be 0
-        assert get_task_touch_counter(0) == 0
+        assert semver_converter.get_task_touch_counter(0) == 0
         
         # Increment counter
-        assert increment_task_touch_counter(0) == 1
-        assert get_task_touch_counter(0) == 1
+        assert semver_converter.increment_task_touch_counter(0) == 1
+        assert semver_converter.get_task_touch_counter(0) == 1
         
         # Increment again
-        assert increment_task_touch_counter(0) == 2
-        assert get_task_touch_counter(0) == 2
+        assert semver_converter.increment_task_touch_counter(0) == 2
+        assert semver_converter.get_task_touch_counter(0) == 2
         
         # Different RC should have separate counter
-        assert get_task_touch_counter(1) == 0
-        assert increment_task_touch_counter(1) == 1
-        assert get_task_touch_counter(0) == 2  # RC 0 unchanged
+        assert semver_converter.get_task_touch_counter(1) == 0
+        assert semver_converter.increment_task_touch_counter(1) == 1
+        assert semver_converter.get_task_touch_counter(0) == 2  # RC 0 unchanged
     
     def test_epic_count_management(self):
         """Test epic count management."""
         # Initial count should be 0
-        assert get_epic_count(0) == 0
+        assert semver_converter.get_epic_count(0) == 0
         
         # Set epic count
-        set_epic_count(0, 5)
-        assert get_epic_count(0) == 5
+        semver_converter.set_epic_count(0, 5)
+        assert semver_converter.get_epic_count(0) == 5
         
         # Different RC should have separate count
-        assert get_epic_count(1) == 0
-        set_epic_count(1, 3)
-        assert get_epic_count(1) == 3
-        assert get_epic_count(0) == 5  # RC 0 unchanged
+        assert semver_converter.get_epic_count(1) == 0
+        semver_converter.set_epic_count(1, 3)
+        assert semver_converter.get_epic_count(1) == 3
+        assert semver_converter.get_epic_count(0) == 5  # RC 0 unchanged
     
     def test_configuration_integration(self):
         """Test configuration integration."""
@@ -204,27 +193,27 @@ class TestTaskTouchMapping:
                 }
             }
         }
-        save_semver_registry(registry)
+        semver_converter.save_semver_registry(registry)
         
         # Test getting strategy from config
-        strategy = get_semver_mapping_strategy()
+        strategy = semver_converter.get_semver_mapping_strategy()
         assert strategy == "task_touch"
         
         # Test convert_version_string with explicit strategy (more reliable)
-        result = convert_version_string("0.6.7.101+1", strategy="task_touch", finalize=True)
+        result = semver_converter.convert_version_string("0.6.7.101+1", strategy="task_touch", finalize=True)
         print(f"Debug: Expected '0.4.1+1', got '{result}'")
         assert result == "0.4.1+1"
     
     def test_strategy_override(self):
         """Test strategy override in convert_version_string."""
-        set_epic_count(0, 2)
+        semver_converter.set_epic_count(0, 2)
         
         # Force task_touch strategy
-        result_tt = convert_version_string("0.6.7.101+1", strategy="task_touch", finalize=True)
+        result_tt = semver_converter.convert_version_string("0.6.7.101+1", strategy="task_touch", finalize=True)
         assert result_tt == "0.2.1+1"
         
         # Force registry strategy (will use existing registry logic)
-        result_reg = convert_version_string("0.6.7.101+1", strategy="registry")
+        result_reg = semver_converter.convert_version_string("0.6.7.101+1", strategy="registry")
         # Should produce different result
         assert result_tt != result_reg
 
@@ -236,28 +225,36 @@ class TestCollisionScenarios:
         """Set up test environment."""
         self.temp_dir = tempfile.mkdtemp()
         self.registry_file = Path(self.temp_dir) / "semver-registry.yaml"
-        
-        import semver_converter
+        self.test_config = {
+            "semver_mapping_strategy": "task_touch",
+            "release_state_backend": "legacy",
+        }
+
         self.original_find_registry = semver_converter.find_registry_file
         semver_converter.find_registry_file = lambda: self.registry_file
-    
+        self.original_load_config = semver_converter.load_rw_config
+        semver_converter.load_rw_config = lambda: self.test_config
+        self.original_get_backend = semver_converter.get_release_state_backend
+        semver_converter.get_release_state_backend = lambda: "legacy"
+
     def teardown_method(self):
         """Clean up test environment."""
         shutil.rmtree(self.temp_dir)
-        import semver_converter
         semver_converter.find_registry_file = self.original_find_registry
+        semver_converter.load_rw_config = self.original_load_config
+        semver_converter.get_release_state_backend = self.original_get_backend
     
     def test_incident_collision_scenario(self):
         """Test the specific collision from the incident log."""
         # Set up realistic epic count (based on registry)
-        set_epic_count(0, 6)  # 6 epics signed off
+        semver_converter.set_epic_count(0, 6)  # 6 epics signed off
         
         # The problematic versions from the incident
         versions = ["0.6.7.101+5", "0.6.7.102+5", "0.6.7.103+5"]
         
         results = []
         for version in versions:
-            result = convert_version_string(version, strategy="task_touch", finalize=True)
+            result = semver_converter.convert_version_string(version, strategy="task_touch", finalize=True)
             results.append(result)
         
         # All should be different (no collisions)
@@ -274,40 +271,39 @@ class TestCollisionScenarios:
 
     def test_read_only_conversion_does_not_increment_counter(self):
         """Repeated read-only conversion must not mutate task_touch_counter."""
-        set_epic_count(0, 6)
-        assert get_task_touch_counter(0) == 0
+        semver_converter.set_epic_count(0, 6)
+        assert semver_converter.get_task_touch_counter(0) == 0
 
-        first = convert_version_string("0.6.7.101+1", strategy="task_touch")
-        second = convert_version_string("0.6.7.101+1", strategy="task_touch")
+        first = semver_converter.convert_version_string("0.6.7.101+1", strategy="task_touch")
+        second = semver_converter.convert_version_string("0.6.7.101+1", strategy="task_touch")
 
         assert first == second
-        assert get_task_touch_counter(0) == 0
+        assert semver_converter.get_task_touch_counter(0) == 0
 
     def test_finalize_is_idempotent_for_same_internal_version(self):
         """Finalizing same version twice should not burn extra PATCH values."""
-        set_epic_count(0, 6)
-        one = convert_version_string("0.6.7.101+1", strategy="task_touch", finalize=True)
-        two = convert_version_string("0.6.7.101+1", strategy="task_touch", finalize=True)
+        semver_converter.set_epic_count(0, 6)
+        one = semver_converter.convert_version_string("0.6.7.101+1", strategy="task_touch", finalize=True)
+        two = semver_converter.convert_version_string("0.6.7.101+1", strategy="task_touch", finalize=True)
         assert one == two
-        assert get_task_touch_counter(0) == 1
+        assert semver_converter.get_task_touch_counter(0) == 1
 
     def test_get_rw_tag_info_read_only_then_finalize(self):
         """RW tag lookup should be read-only unless finalize is requested."""
-        import semver_converter
         original_load = semver_converter.load_rw_config
         semver_converter.load_rw_config = lambda: {'semver_mapping_strategy': 'task_touch'}
         try:
-            set_epic_count(0, 6)
-            assert get_task_touch_counter(0) == 0
+            semver_converter.set_epic_count(0, 6)
+            assert semver_converter.get_task_touch_counter(0) == 0
 
-            preview = get_rw_tag_info("0.6.7.101+1")
+            preview = semver_converter.get_rw_tag_info("0.6.7.101+1")
             assert preview["strategy"] == "task_touch"
             assert "+" not in preview["primary_tag"]
-            assert get_task_touch_counter(0) == 0
+            assert semver_converter.get_task_touch_counter(0) == 0
 
-            finalized = get_rw_tag_info("0.6.7.101+1", finalize=True)
+            finalized = semver_converter.get_rw_tag_info("0.6.7.101+1", finalize=True)
             assert finalized["primary_tag"] == preview["primary_tag"]
-            assert get_task_touch_counter(0) == 1
+            assert semver_converter.get_task_touch_counter(0) == 1
         finally:
             semver_converter.load_rw_config = original_load
 
@@ -340,13 +336,12 @@ class TestCollisionScenarios:
                 "task_touch_mode": {"epic_count": 0, "task_touch_counter": 0, "mapping_history": []},
             },
         }
-        save_semver_registry(registry)
+        semver_converter.save_semver_registry(registry)
         with pytest.raises(ValueError, match="PATCH collision"):
-            convert_internal_to_semver_task_touch(0, 6, 7, 102, 1, finalize=True)
+            semver_converter.convert_internal_to_semver_task_touch(0, 6, 7, 102, 1, finalize=True)
 
     def test_assert_injective_rejects_duplicate_core(self):
         """SemVer core guard blocks corrupted history with same core, different internals."""
-        from semver_converter import _assert_injective_finalize
 
         ttm = {
             "mapping_history": [
@@ -358,7 +353,7 @@ class TestCollisionScenarios:
             ]
         }
         with pytest.raises(ValueError, match="core collision"):
-            _assert_injective_finalize(
+            semver_converter._assert_injective_finalize(
                 ttm,
                 internal_version="0.6.7.102+2",
                 semver="0.4.100+2",
@@ -395,14 +390,13 @@ class TestCollisionScenarios:
                 "task_touch_mode": {"epic_count": 0, "task_touch_counter": 0, "mapping_history": []},
             },
         }
-        save_semver_registry(registry)
+        semver_converter.save_semver_registry(registry)
 
         with pytest.raises(ValueError, match="collision detected during finalize"):
-            convert_internal_to_semver_task_touch(0, 6, 7, 113, 1, finalize=True)
+            semver_converter.convert_internal_to_semver_task_touch(0, 6, 7, 113, 1, finalize=True)
 
     def test_create_rw_tags_fails_on_primary_tag_collision_without_internal_tag(self, monkeypatch):
         """RW tag creation must fail when SemVer primary exists but internal tag does not."""
-        import semver_converter
 
         monkeypatch.setattr(
             semver_converter,

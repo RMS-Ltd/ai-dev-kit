@@ -12,7 +12,7 @@ Usage:
 
 Arguments:
     --mode MODE               Installation mode: fresh, migration, update, hybrid, auto
-    --kanban-path PATH        Path to Kanban directory (default: docs/project-management/kanban)
+    --kanban-path PATH        Path to Kanban directory (default: docs/kanban)
     --dry-run                 Preview changes without modifying files
     --force                   Skip confirmation prompts
 """
@@ -104,11 +104,9 @@ def _log(level: str, message: str) -> None:
 
     # Delegate to external logger callback if provided
     if INSTALL_LOGGER is not None:
-        try:
+        with suppress(Exception):  # Fall back to env-based logging if the callback fails
             INSTALL_LOGGER(level, "kanban.install", message)
             return
-        except Exception as _suppressed_exc:
-            del _suppressed_exc  # Fall back to env-based logging if the callback fails
 
     # Fallback: append to env-configured log file if present
     log_path = os.getenv(_ENV_LOG_PATH_ENV_VAR)
@@ -169,7 +167,7 @@ def resolve_kanban_path_arg(project_root: Path, provided_kanban_path: str) -> tu
     If caller uses default path and rw-config.yaml has kanban_root, adopt config path.
     Returns (resolved_path, sourced_from_rw_config).
     """
-    default_path = "docs/project-management/kanban"
+    default_path = "docs/kanban"
     if provided_kanban_path != default_path:
         return Path(provided_kanban_path).resolve(), False
 
@@ -284,7 +282,7 @@ def create_consumer_board_skeleton(
         content = content.replace("{Version}", version_placeholder)
         content = content.replace("{kanban_path}", str(kanban_path.relative_to(project_root)))
         # Local policy path default – can be customized later by consumers
-        local_policy_path = "docs/project-management/kanban/policies/local-kanban-policy.md"
+        local_policy_path = "docs/kanban/policies/local-kanban-policy.md"
         content = content.replace("{local_policy_path}", local_policy_path)
         (kanban_path / "kanban-board-guide.md").write_text(content, encoding="utf-8")
         print(f"  ✅ Created consumer board guide: {kanban_path / 'kanban-board-guide.md'}")
@@ -367,13 +365,10 @@ def select_installation_mode(analysis_report_path: Optional[Path], requested_mod
     # If we have an analysis report, read recommended mode
     recommended_mode = None
     if analysis_report_path and analysis_report_path.exists():
-        import json
-        try:
+        with suppress(Exception):
             with open(analysis_report_path, 'r', encoding='utf-8') as f:
                 analysis = json.load(f)
             recommended_mode = analysis.get("migration_plan", {}).get("recommended_mode")
-        except Exception as _suppressed_exc:
-            del _suppressed_exc
     print("\n🔧 Step 3: Select installation mode")
     _log("INFO", "[KANBAN_MODE] Selecting installation mode")
     print("=" * 60)
@@ -387,13 +382,10 @@ def select_installation_mode(analysis_report_path: Optional[Path], requested_mod
     if recommended_mode:
         rationale = None
         if analysis_report_path and analysis_report_path.exists():
-            import json
-            try:
+            with suppress(Exception):
                 with open(analysis_report_path, 'r', encoding='utf-8') as f:
                     analysis = json.load(f)
                 rationale = analysis.get("migration_plan", {}).get("recommendation_rationale")
-            except Exception as _suppressed_exc:
-                del _suppressed_exc
         print(f"\n💡 Recommended mode: {recommended_mode}")
         if rationale:
             print(f"   Rationale: {rationale}")
@@ -606,8 +598,8 @@ Examples:
     parser.add_argument(
         "--kanban-path",
         type=str,
-        default="docs/project-management/kanban",
-        help="Path to Kanban directory (default: docs/project-management/kanban)"
+        default="docs/kanban",
+        help="Path to Kanban directory (default: docs/kanban)"
     )
     parser.add_argument(
         "--dry-run",
@@ -780,7 +772,6 @@ Examples:
                 final_status = "PARTIAL"
             if not should_continue:
                 print("⚠️  Post-installation validation found issues. Please review warnings/errors above.")
-                final_status = "FAILED"
                 emit_install_error("ADK-I02.E01", detail="post-install validation failed")
                 return 1
     

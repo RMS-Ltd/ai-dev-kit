@@ -73,7 +73,7 @@ changelog_dir: docs/changelogs
 scripts_path: tools/workflow_mgt/scripts
 readme_file: README.md
 use_kanban: true
-kanban_root: docs/project-management/kanban
+kanban_root: docs/kanban
 epic_doc_pattern: epics/Epic-{epic}.md
 story_doc_pattern: epics/Epic-{epic}/Story-{story}-*.md
 kanban_board: _index.md
@@ -160,7 +160,7 @@ Path to README.md [README.md]: README.md
 Select mode [B]: C
 
 📊 Kanban Integration:
-Kanban root directory [docs/project-management/kanban]: docs/kanban
+Kanban root directory [docs/kanban]: docs/kanban
 Epic document pattern (use {epic} placeholder) [epics/Epic-{epic}/Epic-{epic}.md]: epics/Epic-{epic}/Epic-{epic}.md
 Story document pattern (use {epic} and {story} placeholders) [epics/Epic-{epic}/Story-{story}-*.md]: epics/Epic-{epic}/Story-{story}-*.md
 Main Kanban board file [_index.md]: kanban.md

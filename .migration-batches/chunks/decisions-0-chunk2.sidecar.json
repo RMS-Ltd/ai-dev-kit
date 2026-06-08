@@ -1,0 +1,74 @@
+[
+  {
+    "source_path": "architecture/standards-and-adrs/framework-versioning-strategy.md"
+  },
+  {
+    "source_path": "architecture/standards-and-adrs/gap-log-schema.md"
+  },
+  {
+    "source_path": "architecture/standards-and-adrs/generator-framework-design.md"
+  },
+  {
+    "source_path": "architecture/standards-and-adrs/ipw-adr-necessity-checklist.md"
+  },
+  {
+    "source_path": "architecture/standards-and-adrs/kb-structure-overview.md"
+  },
+  {
+    "source_path": "architecture/standards-and-adrs/legacy-repo-analysis.md"
+  },
+  {
+    "source_path": "architecture/standards-and-adrs/maintenance-automation-requirements.md"
+  },
+  {
+    "source_path": "architecture/standards-and-adrs/maintenance-automation-scripts-and-tools.md"
+  },
+  {
+    "source_path": "architecture/standards-and-adrs/maintenance-automation-usage-guide.md"
+  },
+  {
+    "source_path": "architecture/standards-and-adrs/maintenance-automation-workflow-integration.md"
+  },
+  {
+    "source_path": "architecture/standards-and-adrs/maintenance-kanban-integration.md"
+  },
+  {
+    "source_path": "architecture/standards-and-adrs/maintenance-task-prioritization-framework.md"
+  },
+  {
+    "source_path": "architecture/standards-and-adrs/maintenance-workflow-processes.md"
+  },
+  {
+    "source_path": "architecture/standards-and-adrs/mixed-br-fr-scope-sop.md"
+  },
+  {
+    "source_path": "architecture/standards-and-adrs/package-hash-verification-spec.md"
+  },
+  {
+    "source_path": "architecture/standards-and-adrs/package-maintenance-and-release.md"
+  },
+  {
+    "source_path": "architecture/standards-and-adrs/package-management-design.md"
+  },
+  {
+    "source_path": "architecture/standards-and-adrs/package-versioning-criteria.md"
+  },
+  {
+    "source_path": "architecture/standards-and-adrs/policy-comparison-starborn-vs-ai-dev-kit-proposal.md"
+  },
+  {
+    "source_path": "architecture/standards-and-adrs/policy-salience-schema.md"
+  },
+  {
+    "source_path": "architecture/standards-and-adrs/pre-release-feedback-mechanism-design.md"
+  },
+  {
+    "source_path": "architecture/standards-and-adrs/repository-story-abstract-space-solution-design.md"
+  },
+  {
+    "source_path": "architecture/standards-and-adrs/repository-story-migration-plan.md"
+  },
+  {
+    "source_path": "architecture/standards-and-adrs/repository-story-migration-progress.md"
+  }
+]

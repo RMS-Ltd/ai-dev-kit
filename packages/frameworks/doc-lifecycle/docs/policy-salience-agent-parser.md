@@ -324,7 +324,7 @@ if __name__ == '__main__':
     
     # Check relevance
     context = {
-        'document': 'docs/project-management/kanban/epics/epic-05/Story-006.md',
+        'document': 'docs/kanban/epics/epic-05/Story-006.md',
         'activity': 'story-completion'
     }
     print(f"Relevant: {parser.is_relevant(context)}")

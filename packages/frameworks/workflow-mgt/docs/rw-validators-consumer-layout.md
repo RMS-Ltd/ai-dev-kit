@@ -85,9 +85,9 @@ When adopting CQG, add **`code_quality_gate:`** to `rw-config.yaml` (see [schema
 | -------- | ------------------------------ |
 | Engine | `{vendor}/tooling-automation/validators/code_quality/` |
 | CLI | `{vendor}/tooling-automation/scripts/run_cqg.py` |
-| RW Step 9 | `{scripts_path}/validation/validate_code_quality_gate.py` |
+| IDW Phase 6b | `{scripts_path}/validation/validate_code_quality_gate.py` |
 | Monitor | `{scripts_path}/../cqg_monitor.py` (sibling of `validation/` under `scripts/`) |
 
-RW Step 9 runs **`validate_code_quality_gate.py`** — **advisory by default** (`rw_advisory: true`); pass **`--strict`** to block on threshold breach. Requires **CodeQL CLI** on PATH for full runs; use **`--sarif`** for offline replay.
+**IDW Phase 6b** runs **`validate_code_quality_gate.py --strict`** when Python code is in scope (`idw_advisory: false` by default). Use **`--skip`** for docs-only tasks. RW does **not** run CQG (ADR-022 v0.0.2). Requires **CodeQL CLI** on PATH for full runs; use **`--sarif`** for offline replay.
 
 Operator guide: [code-quality-gate-operator-guide.md](../../tooling-automation/docs/code-quality-gate-operator-guide.md) · ADR: [ADR-022](../../../../docs/architecture/standards-and-adrs/ADR-022-local-code-quality-gate-architecture.md).

@@ -100,7 +100,7 @@ This epic encompasses user experience research activities, including user resear
 - None
 - *Parallel Development Candidacy:* Safe (can be done independently)
 
-> Full story: `docs/project-management/kanban/epics/epic-07/story-01-user-research-and-discovery.md`
+> Full story: `docs/kanban/epics/epic-07/story-01-user-research-and-discovery.md`
 
 ---
 
@@ -140,7 +140,7 @@ This epic encompasses user experience research activities, including user resear
 - Depends on Story 1 (User Research and Discovery) for user context
 - *Parallel Development Candidacy:* Blocked (requires Story 1 user understanding)
 
-> Full story: `docs/project-management/kanban/epics/epic-07/story-02-usability-testing-and-validation.md`
+> Full story: `docs/kanban/epics/epic-07/story-02-usability-testing-and-validation.md`
 
 ---
 
@@ -180,7 +180,7 @@ This epic encompasses user experience research activities, including user resear
 - None
 - *Parallel Development Candidacy:* Safe (can be done independently)
 
-> Full story: `docs/project-management/kanban/epics/epic-07/story-03-user-feedback-collection-and-analysis.md`
+> Full story: `docs/kanban/epics/epic-07/story-03-user-feedback-collection-and-analysis.md`
 
 ---
 
@@ -220,7 +220,7 @@ This epic encompasses user experience research activities, including user resear
 - Depends on Story 1 (User Research and Discovery) for user context
 - *Parallel Development Candidacy:* Blocked (requires Story 1 user understanding)
 
-> Full story: `docs/project-management/kanban/epics/epic-07/story-04-user-journey-mapping-and-experience-design.md`
+> Full story: `docs/kanban/epics/epic-07/story-04-user-journey-mapping-and-experience-design.md`
 
 ---
 
@@ -260,7 +260,7 @@ This epic encompasses user experience research activities, including user resear
 - Depends on Stories 1-4 (all UX research activities)
 - *Parallel Development Candidacy:* Blocked (requires all previous UX research stories)
 
-> Full story: `docs/project-management/kanban/epics/epic-07/story-05-ux-insights-and-recommendations.md`
+> Full story: `docs/kanban/epics/epic-07/story-05-ux-insights-and-recommendations.md`
 
 ---
 

@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # E02:S16:T17 — Planning: Spec, Tests, Implementation Plan (IPW)
 
-**Host Task:** [`T17-agent-bootstrap-and-task-routing-fr103.md`](../project-management/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T17-agent-bootstrap-and-task-routing-fr103.md) **(E02:S16:T17)**  
-**Planning for:** [FR-103 — Agent bootstrap and task routing](../project-management/kanban/fr-br/FR-103-agent-bootstrap-and-task-routing.md)  
+**Host Task:** [`T17-agent-bootstrap-and-task-routing-fr103.md`](../kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T17-agent-bootstrap-and-task-routing-fr103.md) **(E02:S16:T17)**  
+**Planning for:** [FR-103 — Agent bootstrap and task routing](../kanban/fr-br/FR-103-agent-bootstrap-and-task-routing.md)  
 **Status:** Published (implementation complete **v0.2.16.17+1**)
 
 > **IPW:** Produced for E02:S16:T17. Bidirectional wiring to task `Input` / `References` confirmed.
@@ -110,7 +110,7 @@ Deterministic cold-start path: slim `AGENTS.md` → scan manifest → load only 
 | D1 | `docs/architecture/standards-and-adrs/ADR-012-*.md` | CREATE |
 | D2–D4 | manifest.json, schema, index | CREATE |
 | D5 | `AGENTS.md` | UPDATE |
-| D6 | `docs/project-management/kanban/AGENTS.md` | UPDATE |
+| D6 | `docs/kanban/AGENTS.md` | UPDATE |
 | D7 | `CLAUDE.md`, `.cursorrules` | UPDATE |
 | D8 | `docs/governance/README.md` | UPDATE |
 
@@ -153,7 +153,7 @@ Deterministic cold-start path: slim `AGENTS.md` → scan manifest → load only 
 
 ## References
 
-- [FR-103](../project-management/kanban/fr-br/FR-103-agent-bootstrap-and-task-routing.md)
+- [FR-103](../kanban/fr-br/FR-103-agent-bootstrap-and-task-routing.md)
 - [ADR-012](../architecture/standards-and-adrs/ADR-012-agent-bootstrap-and-task-routing.md)
-- [T17](../project-management/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T17-agent-bootstrap-and-task-routing-fr103.md)
+- [T17](../kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T17-agent-bootstrap-and-task-routing-fr103.md)
 - [ipw-adr-necessity-checklist.md](../architecture/standards-and-adrs/ipw-adr-necessity-checklist.md)

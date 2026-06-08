@@ -1,0 +1,83 @@
+[
+  {
+    "source_path": "maintenance/BUILD_AND_UPLOAD.md"
+  },
+  {
+    "source_path": "maintenance/BUILD_PACKAGES.md"
+  },
+  {
+    "source_path": "maintenance/BUILD_PACKAGES_COMMANDS.md"
+  },
+  {
+    "source_path": "maintenance/README.md"
+  },
+  {
+    "source_path": "maintenance/UPLOAD_PACKAGES.md"
+  },
+  {
+    "source_path": "maintenance/book-repo-docs-scope.md"
+  },
+  {
+    "source_path": "maintenance/br087-framework-release-republish-checklist.md"
+  },
+  {
+    "source_path": "maintenance/changelog-directory-consolidation-manifest.md"
+  },
+  {
+    "source_path": "maintenance/coordinate-remediation-uxr018-e05s09t12.md"
+  },
+  {
+    "source_path": "maintenance/docusaurus-ci-dedup-verification-evidence-E05S09T14-wave2.md"
+  },
+  {
+    "source_path": "maintenance/docusaurus-corpus-triage-fr-067.md"
+  },
+  {
+    "source_path": "maintenance/fr099-phase3-public-repo-bootstrap.md"
+  },
+  {
+    "source_path": "maintenance/fr099-phase4-rewire-and-verify.md"
+  },
+  {
+    "source_path": "maintenance/logs/mmw/MMW-2026-03-16.md"
+  },
+  {
+    "source_path": "maintenance/logs/uxr-005-spacing-20260601.md"
+  },
+  {
+    "source_path": "maintenance/release-checklist-templates.md"
+  },
+  {
+    "source_path": "maintenance/release-configuration-examples.md"
+  },
+  {
+    "source_path": "maintenance/release-integration-guides.md"
+  },
+  {
+    "source_path": "maintenance/release-quick-reference.md"
+  },
+  {
+    "source_path": "maintenance/release-runbook.md"
+  },
+  {
+    "source_path": "maintenance/semver-registry-collision-repair-2026-06-04.md"
+  },
+  {
+    "source_path": "maintenance/semver-verification-evidence-E03S02T12-wave3.md"
+  },
+  {
+    "source_path": "maintenance/v-band-verification-scan-2026-06-05.md"
+  },
+  {
+    "source_path": "journals/JOURNAL_SCHEMA.md"
+  },
+  {
+    "source_path": "journals/README.md"
+  },
+  {
+    "source_path": "journals/RECOVERY_PROCEDURE.md"
+  },
+  {
+    "source_path": "journals/ROLLBACK_CONTRACT.md"
+  }
+]

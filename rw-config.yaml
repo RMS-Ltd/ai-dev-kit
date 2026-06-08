@@ -19,12 +19,12 @@ changelog_archival:
 use_kanban: true
 
 # Kanban paths (relative to kanban_root)
-kanban_root: docs/project-management/kanban
+kanban_root: docs/kanban
 epic_doc_pattern: epics/epic-{epic:02d}/epic-{epic:02d}.md
 story_doc_pattern: epics/epic-{epic:02d}/story-{story:02d}-*.md
 task_doc_pattern: epics/epic-{epic:02d}/story-{story:02d}-*/T{task:02d}-*.md
 kanban_board: kboard.md
-fr_br_root: docs/project-management/kanban/fr-br
+fr_br_root: docs/kanban/fr-br
 
 # Use dev-kit versioning schema
 versioning_schema: RC.EPIC.STORY.TASK+BUILD
@@ -44,10 +44,24 @@ rw_execution_log_truncate_on_start: true
 board_stamp:
   homogeneity_threshold: 3  # fail when ≥3 rows share identical Last modified
 
+# FR-115 / FR-116 — async ingest read model (gitignored SQLite; markdown/YAML remain SoT)
+release_metadata_store:
+  path: .data/adk-release-metadata.sqlite
+  gitignore: true
+
+ingest:
+  enabled: true
+  semver_registry_file: docs/changelog-and-release-notes/changelog-archive/semver-registry-legacy-final.yaml
+  incremental: true
+
 # SemVer mapping strategy: "registry" (default) or "task_touch"
 # registry: Hybrid approach with epic/story registry (current default)
 # task_touch: ADR-002 task-touch derived mapping (strictly monotonic)
 semver_mapping_strategy: task_touch
+
+# Release-state backend (E02:S17:T04/T07): legacy = semver-registry.yaml; sqlite = .adk/release-state.db
+release_state_backend: sqlite
+release_state_db: .adk/release-state.db
 
 # Versioning mode policy:
 # - dual: internal RC.EPIC.STORY.TASK+BUILD + external SemVer (requires task_touch)
@@ -65,11 +79,11 @@ canonical_public_pages_url: https://rms-ltd.github.io/ai-dev-kit/
 maintainer_private_repo: RMS-Ltd/ai-dev-kit-book
 maintainer_private_repo_url: https://github.com/RMS-Ltd/ai-dev-kit-book.git
 
-# Notion project hub (rmearssolutions@gmail.com — refresh URLs on T03 clean-slate bootstrap)
-notion_hub_url: https://www.notion.so/30db6f8962c181ceb811f3a6c78ecd4b
+# Notion project hub (FR-114 clean-slate bootstrap — E05:S08:T03 @ 2026-06-07)
+notion_hub_url: https://www.notion.so/378b6f8962c181dda420fb0236d9e060
 
-# Engineering KB (rmearssolutions@gmail.com — legacy pages deleted; replace URL after fresh KB root)
-notion_kb_url: https://www.notion.so/30db6f8962c1810daf71f96bb601d69b
+# Engineering KB root (child of hub; IA: Decisions, Reference, Investigations, Records)
+notion_kb_url: https://www.notion.so/378b6f8962c18189aacbe8629677403d
 
 # Epic ranges
 canonical_epic_range: "1-23"
@@ -91,8 +105,13 @@ code_quality_gate:
   reports_dir: .cqg/reports
   cache_dir: .cqg/cache
   last_run_file: .cqg/last-run.json
-  rw_threshold: warnings
-  rw_advisory: true
+  idw_threshold: warnings
+  idw_advisory: false
   retention_count: 10
   codeql_command: codeql
+
+# E08:S03:T15 / FR-112 — RW Step 9.7 Actions CI parity (mirror .github/workflows/*)
+actions_ci_parity:
+  enabled: true
+  # checks: optional override; defaults in validate_actions_ci_parity.py
 

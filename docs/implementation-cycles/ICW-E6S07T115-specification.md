@@ -40,6 +40,6 @@ Define enforceable semantics and guardrails so row-level `Last modified` stamps 
 
 ## Dependencies
 
-- [UXR-009](../project-management/kanban/fr-br/UXR-009-last-modified-stamp-forensic-integrity-and-drift-protection.md)
-- [Task E6:S07:T115](../project-management/kanban/epics/epic-06/story-07-adk-implementation-analysis-and-package-management/T115-last-modified-stamp-forensic-integrity-guardrails.md)
-- [Task E6:S07:T110](../project-management/kanban/epics/epic-06/story-07-adk-implementation-analysis-and-package-management/T110-ukw-fbuboard-scope-and-drift-concurrency-controls.md)
+- [UXR-009](../kanban/fr-br/UXR-009-last-modified-stamp-forensic-integrity-and-drift-protection.md)
+- [Task E6:S07:T115](../kanban/epics/epic-06/story-07-adk-implementation-analysis-and-package-management/T115-last-modified-stamp-forensic-integrity-guardrails.md)
+- [Task E6:S07:T110](../kanban/epics/epic-06/story-07-adk-implementation-analysis-and-package-management/T110-ukw-fbuboard-scope-and-drift-concurrency-controls.md)

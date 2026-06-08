@@ -145,7 +145,7 @@ Each version entry in `CHANGELOG.md`:
 
 **Core Policy Documents:**
 - **[Versioning Strategy](versioning-strategy.md)** - Complete versioning strategy with forensic traceability system, canonical ordering, and immutability rules
-- **[Kanban Governance Policy](../../project-management/rituals/policy/kanban-governance-policy.md)** - Work item structure (Epic → Story → Task) and how they map to version schema
+- **[Kanban Governance Policy](docs/governance/kanban/kanban-governance-policy.md)** - Work item structure (Epic → Story → Task) and how they map to version schema
 - **[Release Workflow Reference](../../Documentation/Developer_Docs/vwmp/release-workflow-reference.md)** - Automated implementation of versioning schema
 - **[Cursor Rules](../../../../.cursorrules)** - Fundamental system rules that enforce versioning requirements ⭐
 

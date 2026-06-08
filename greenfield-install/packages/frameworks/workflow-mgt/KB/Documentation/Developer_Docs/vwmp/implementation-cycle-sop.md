@@ -82,6 +82,18 @@ This SoP defines a **mandatory** implementation cycle when a project adopts the 
 
 ---
 
+## Step 2.75: Implementation Delivery Workflow (IDW) — Recommended execution surface
+
+**Purpose:** After IPW produces a linked IPP, **`IDW E:S:T`** (`.claude/commands/idw.md`) is the canonical agent workflow to execute §3–§7 of the plan: test-first, implementation, documentation delivery, and task status reconciliation.
+
+**When to use:** Any task with a wired IPP/ICW package ready for implementation. Invoking IDW satisfies FR-083 explicit authorization.
+
+**Optional chain:** `IDW E:S:T --rw` runs local-complete **RW** after `IDW COMPLETE`.
+
+**Reference:** [implementation-delivery-workflow-agent-execution.md](implementation-delivery-workflow-agent-execution.md)
+
+---
+
 ## Step 3: Requirements, Specification & Test Creation (TDD) — BLOCKING
 
 **Purpose:** Ascertain requirements and specification, then create tests **before** implementation (TDD).
@@ -171,7 +183,7 @@ This SoP defines a **mandatory** implementation cycle when a project adopts the 
 
 - Run the Release Workflow (trigger: e.g. `RW E5S01T01` / `RW E5:S01:T01` in the same message — **FR-060**)
 - RW handles: version bump, changelog creation/update, README/Kanban updates, staging, validation, commit, local tag (UXR-024: push deferred unless `RW --push` or operator batch push)
-- **Docs-only on existing E/S/T (+0):** When policy requires BUILD **+0** on an anchor whose task doc already exists, use `RW -d E:S:T --art --dpz` (alias: `--doc-policy-zero`) and ensure Step 10 passes `--dpz` to `validate_version_bump.py` (alias: `--doc-policy-zero`) (see [BR-067](../../../../../../docs/project-management/kanban/fr-br/BR-067-rw-first-doc-only-release-defaults-to-build-plus-one-not-plus-zero.md)).
+- **Docs-only on existing E/S/T (+0):** When policy requires BUILD **+0** on an anchor whose task doc already exists, use `RW -d E:S:T --art --dpz` (alias: `--doc-policy-zero`) and ensure Step 10 passes `--dpz` to `validate_version_bump.py` (alias: `--doc-policy-zero`) (see [BR-067](../../../../../../docs/kanban/fr-br/BR-067-rw-first-doc-only-release-defaults-to-build-plus-one-not-plus-zero.md)).
 
 **Validation:**
 

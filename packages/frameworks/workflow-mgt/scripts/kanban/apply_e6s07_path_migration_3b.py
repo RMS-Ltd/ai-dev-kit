@@ -10,7 +10,7 @@ from typing import Dict, List, Tuple
 
 S07 = "epic-06/story-07-adk-implementation-analysis-and-package-management"
 
-# legacy task file stem -> canonical path (under docs/project-management/kanban/epics/)
+# legacy task file stem -> canonical path (under docs/kanban/epics/)
 REPLACEMENTS: Dict[str, str] = {
     f"{S07}/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md": (
         "epic-02/story-16-perpetual-ongoing-workflow-operations/"
@@ -56,7 +56,7 @@ HISTORICAL_LINE_RE = re.compile(
 )
 
 ACTIVE_ROOTS = [
-    "docs/project-management/kanban",
+    "docs/kanban",
     "docs/guides",
     "docs/architecture",
     "packages/frameworks/workflow-mgt/docs",

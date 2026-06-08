@@ -406,10 +406,10 @@ def find_story_file(config: Optional[Dict] = None, epic: int = None, story: int 
     
     # Fallback: Search for Story files
     fallback_patterns = [
-        "docs/project-management/kanban/epics/epic-*/story-*.md",
-        "docs/project-management/kanban/epics/epic-*/stories/story-*.md",
-        "docs/project-management/kanban/epics/Epic-*/Story-*.md",
-        "docs/project-management/kanban/epics/Epic-*/stories/Story-*.md",
+        "docs/kanban/epics/epic-*/story-*.md",
+        "docs/kanban/epics/epic-*/stories/story-*.md",
+        "docs/kanban/epics/Epic-*/Story-*.md",
+        "docs/kanban/epics/Epic-*/stories/Story-*.md",
     ]
     
     for pattern in fallback_patterns:
@@ -531,9 +531,9 @@ def locate_task_doc(
             story_dir = story_file.parent / story_file.stem
     else:
         # Fallback patterns
-        story_dir = project_root / f"docs/project-management/kanban/epics/Epic-{epic}/Story-{story:03d}"
+        story_dir = project_root / f"docs/kanban/epics/Epic-{epic}/Story-{story:03d}"
         if not story_dir.exists():
-            story_dir = project_root / f"docs/project-management/kanban/epics/Epic-{epic}/Story-{story}"
+            story_dir = project_root / f"docs/kanban/epics/Epic-{epic}/Story-{story}"
         if not story_dir.exists() and story_file.exists():
             story_dir = story_file.parent / story_file.stem
     
@@ -608,7 +608,7 @@ def locate_task_doc(
     if config and config.get("use_kanban") and "kanban_root" in config:
         kr = Path(config["kanban_root"])
         search_roots.append(project_root / kr if not kr.is_absolute() else kr)
-    search_roots.append(project_root / "docs/project-management/kanban")
+    search_roots.append(project_root / "docs/kanban")
 
     seen: set = set()
     for root in search_roots:
@@ -642,7 +642,7 @@ def locate_task_doc_from_requested(epic: int, story: int, task: int, config: Opt
         if not kanban_root.is_absolute():
             kanban_root = project_root / kanban_root
     else:
-        kanban_root = project_root / "docs/project-management/kanban"
+        kanban_root = project_root / "docs/kanban"
 
     epic_dirs = [
         kanban_root / f"epics/epic-{epic:02d}",

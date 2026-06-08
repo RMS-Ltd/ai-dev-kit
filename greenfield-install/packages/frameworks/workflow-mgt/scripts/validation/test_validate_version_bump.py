@@ -17,22 +17,12 @@ script_dir = Path(__file__).resolve().parent
 if str(script_dir) not in sys.path:
     sys.path.insert(0, str(script_dir))
 
-from validate_version_bump import (
-    extract_epic_story_from_path,
-    extract_task_id_canonical,
-    find_story_file,
-    is_perpetual_task,
-    parse_requested_task_id,
-    validate_perpetual_build_increment,
-    validate_perpetual_guardrails,
-    validate_task_doc_fields,
-    validate_version_bump,
-)
+import validate_version_bump as vvb
 
 
 def test_extract_epic_story_from_path_legacy_stories_subdir():
-    path = Path("docs/project-management/kanban/epics/epic-03/stories/story-003-versioning.md")
-    assert extract_epic_story_from_path(path) == (3, 3)
+    path = Path("docs/kanban/epics/epic-03/stories/story-003-versioning.md")
+    assert vvb.extract_epic_story_from_path(path) == (3, 3)
 
 
 def test_find_story_file_ignores_references_epic_mismatch():
@@ -41,11 +31,11 @@ def test_find_story_file_ignores_references_epic_mismatch():
         orig_cwd = os.getcwd()
         try:
             os.chdir(tmp)
-            d = tmp / "docs/project-management/kanban/epics/epic-03/stories"
+            d = tmp / "docs/kanban/epics/epic-03/stories"
             d.mkdir(parents=True)
             sf = d / "story-003-versioning.md"
             sf.write_text("# Story 003\n**Code:** E3S03\n\n## References\n- Epic 4 Story 3\n")
-            found = find_story_file({"use_kanban": True, "kanban_root": "docs/project-management/kanban", "story_doc_pattern": "epics/epic-{epic:02d}/story-{story:02d}-*.md"}, 3, 3)
+            found = vvb.find_story_file({"use_kanban": True, "kanban_root": "docs/kanban", "story_doc_pattern": "epics/epic-{epic:02d}/story-{story:02d}-*.md"}, 3, 3)
             assert found and found.name == sf.name
         finally:
             os.chdir(orig_cwd)
@@ -61,7 +51,7 @@ def test_task_id_extraction_prefers_canonical_section():
 **Format:** E{epic}:S{story}:T{task}
 **Value:** `E2:S16:T03`
 """
-    result = extract_task_id_canonical(content)
+    result = vvb.extract_task_id_canonical(content)
     assert result is not None, "Should extract Task ID from canonical section"
     epic, story, task = result
     assert epic == 2 and story == 16 and task == 3, (
@@ -71,12 +61,12 @@ def test_task_id_extraction_prefers_canonical_section():
 
 # --- T2: Perpetual task detection by task number ---
 def test_perpetual_task_detection_by_task_number():
-    """is_perpetual_task(101) returns True; is_perpetual_task(103) returns True; is_perpetual_task(5) returns False."""
-    assert is_perpetual_task(101) is True
-    assert is_perpetual_task(100) is True
-    assert is_perpetual_task(103) is True  # T103 RW Maintenance
-    assert is_perpetual_task(5) is False
-    assert is_perpetual_task(99) is False
+    """vvb.is_perpetual_task(101) returns True; vvb.is_perpetual_task(103) returns True; vvb.is_perpetual_task(5) returns False."""
+    assert vvb.is_perpetual_task(101) is True
+    assert vvb.is_perpetual_task(100) is True
+    assert vvb.is_perpetual_task(103) is True  # T103 RW Maintenance
+    assert vvb.is_perpetual_task(5) is False
+    assert vvb.is_perpetual_task(99) is False
 
 
 # --- T3: Perpetual task detection by doc content ---
@@ -86,8 +76,8 @@ def test_perpetual_task_detection_by_doc_content():
 **Task Type:** Perpetual Maintenance
 **Build Warning Suppression:** true
 """
-    assert is_perpetual_task(5, content) is True
-    assert is_perpetual_task(37, "perpetual_task: true\nOther text") is True
+    assert vvb.is_perpetual_task(5, content) is True
+    assert vvb.is_perpetual_task(37, "perpetual_task: true\nOther text") is True
 
 
 # --- T4: validate_version_bump passes for perpetual task ---
@@ -116,7 +106,7 @@ VERSION_STRING = "0.6.7.101+31"
             (tmp / "rw-config.yaml").write_text("""
 version_file: src/proj/version.py
 use_kanban: true
-kanban_root: docs/project-management/kanban
+kanban_root: docs/kanban
 story_doc_pattern: epics/Epic-{epic}/Story-{story}-*.md
 """)
 
@@ -158,12 +148,12 @@ story_doc_pattern: epics/Epic-{epic}/Story-{story}-*.md
             config = {
                 "version_file": "src/proj/version.py",
                 "use_kanban": True,
-                "kanban_root": "docs/project-management/kanban",
+                "kanban_root": "docs/kanban",
                 "story_doc_pattern": "epics/Epic-{epic}/Story-{story}-*.md",
             }
 
             story_path = tmp / "docs" / "project-management" / "kanban" / "epics" / "epic-06" / "story-07-adk-implementation-analysis-and-package-management.md"
-            is_valid, errors = validate_version_bump(
+            is_valid, errors = vvb.validate_version_bump(
                 version_file, story_file=story_path, config=config
             )
             assert is_valid, f"Validation should pass for perpetual task, errors: {errors}"
@@ -185,7 +175,7 @@ def test_perpetual_task_relaxed_field_validation():
 ## Acceptance Criteria
 - [x] Criterion one
 """
-    is_valid, errors = validate_task_doc_fields(
+    is_valid, errors = vvb.validate_task_doc_fields(
         content, 6, 7, 101, relax_for_perpetual=True
     )
     input_deliverable_errors = [e for e in errors if "input" in e.lower() or "deliverable" in e.lower()]
@@ -241,8 +231,8 @@ VERSION_TASK = 101
 VERSION_BUILD = 32
 VERSION_STRING = "0.6.7.101+32"
 """)
-            config = {"use_kanban": True, "kanban_root": "docs/project-management/kanban"}
-            is_valid, _ = validate_version_bump(version_file, story_file=story_file, config=config)
+            config = {"use_kanban": True, "kanban_root": "docs/kanban"}
+            is_valid, _ = vvb.validate_version_bump(version_file, story_file=story_file, config=config)
             assert is_valid, "BUILD 32 (incremented) for perpetual task should pass"
         finally:
             os.chdir(orig_cwd)
@@ -272,7 +262,7 @@ VERSION_STRING = "0.6.7.103+1"
             (tmp / "rw-config.yaml").write_text("""
 version_file: src/proj/version.py
 use_kanban: true
-kanban_root: docs/project-management/kanban
+kanban_root: docs/kanban
 story_doc_pattern: epics/Epic-{epic}/Story-{story}-*.md
 """)
 
@@ -311,12 +301,12 @@ story_doc_pattern: epics/Epic-{epic}/Story-{story}-*.md
             config = {
                 "version_file": "src/proj/version.py",
                 "use_kanban": True,
-                "kanban_root": "docs/project-management/kanban",
+                "kanban_root": "docs/kanban",
                 "story_doc_pattern": "epics/Epic-{epic}/Story-{story}-*.md",
             }
 
             story_path = tmp / "docs" / "project-management" / "kanban" / "epics" / "epic-06" / "story-07-adk-implementation-analysis-and-package-management.md"
-            is_valid, errors = validate_version_bump(
+            is_valid, errors = vvb.validate_version_bump(
                 version_file, story_file=story_path, config=config
             )
             assert is_valid, f"Validation should pass for T103 (RW Maintenance), errors: {errors}"
@@ -347,7 +337,7 @@ VERSION_STRING = "0.6.7.103+0"
             (tmp / "rw-config.yaml").write_text("""
 version_file: src/proj/version.py
 use_kanban: true
-kanban_root: docs/project-management/kanban
+kanban_root: docs/kanban
 story_doc_pattern: epics/Epic-{epic}/Story-{story}-*.md
 """)
 
@@ -413,12 +403,12 @@ story_doc_pattern: epics/Epic-{epic}/Story-{story}-*.md
             config = {
                 "version_file": "src/proj/version.py",
                 "use_kanban": True,
-                "kanban_root": "docs/project-management/kanban",
+                "kanban_root": "docs/kanban",
                 "story_doc_pattern": "epics/Epic-{epic}/Story-{story}-*.md",
             }
 
             story_path = tmp / "docs" / "project-management" / "kanban" / "epics" / "epic-02" / "story-16-perpetual-ongoing-workflow-operations.md"
-            is_valid, errors = validate_version_bump(
+            is_valid, errors = vvb.validate_version_bump(
                 version_file,
                 story_file=story_path,
                 config=config,
@@ -432,9 +422,9 @@ story_doc_pattern: epics/Epic-{epic}/Story-{story}-*.md
 
 
 def test_parse_requested_task_id_formats():
-    assert parse_requested_task_id("E2S01T13") == (2, 1, 13)
-    assert parse_requested_task_id("E2:S01:T13") == (2, 1, 13)
-    assert parse_requested_task_id("nope") is None
+    assert vvb.parse_requested_task_id("E2S01T13") == (2, 1, 13)
+    assert vvb.parse_requested_task_id("E2:S01:T13") == (2, 1, 13)
+    assert vvb.parse_requested_task_id("nope") is None
 
 
 def test_validate_version_bump_art_requires_task_alignment():
@@ -447,7 +437,7 @@ def test_validate_version_bump_art_requires_task_alignment():
             (tmp / "rw-config.yaml").write_text("""
 version_file: src/proj/version.py
 use_kanban: true
-kanban_root: docs/project-management/kanban
+kanban_root: docs/kanban
 story_doc_pattern: epics/Epic-{epic}/Story-{story}-*.md
 """)
             version_dir = tmp / "src" / "proj"
@@ -488,7 +478,7 @@ story_doc_pattern: epics/Epic-{epic}/Story-{story}-*.md
                 )
             )
 
-            ok, errors = validate_version_bump(
+            ok, errors = vvb.validate_version_bump(
                 version_file,
                 story_file=story_file,
                 requested="E2:S01:T13",
@@ -496,7 +486,7 @@ story_doc_pattern: epics/Epic-{epic}/Story-{story}-*.md
                 config={
                     "version_file": "src/proj/version.py",
                     "use_kanban": True,
-                    "kanban_root": "docs/project-management/kanban",
+                    "kanban_root": "docs/kanban",
                     "story_doc_pattern": "epics/Epic-{epic}/Story-{story}-*.md",
                 },
             )
@@ -511,7 +501,7 @@ def test_validate_perpetual_guardrails_rejects_outside_story_016_without_overrid
 **Task ID:** E6:S07:T15
 **Task Type:** Perpetual Maintenance
 """
-    errors, warnings = validate_perpetual_guardrails(6, 7, 15, content)
+    errors, warnings = vvb.validate_perpetual_guardrails(6, 7, 15, content)
     assert len(warnings) == 0
     assert any("Perpetual placement guardrail" in e for e in errors)
 
@@ -522,7 +512,7 @@ def test_validate_perpetual_guardrails_allows_override_outside_story_016():
 **Task Type:** Perpetual Maintenance
 Perpetual Override Rationale: Legacy installer lane in transition.
 """
-    errors, warnings = validate_perpetual_guardrails(6, 7, 15, content)
+    errors, warnings = vvb.validate_perpetual_guardrails(6, 7, 15, content)
     assert errors == []
     assert warnings == []
 
@@ -532,41 +522,35 @@ def test_validate_perpetual_guardrails_rejects_t1xx_without_historical_anchor():
 **Task ID:** E2:S16:T103
 **Task Type:** Perpetual Maintenance
 """
-    errors, _ = validate_perpetual_guardrails(2, 16, 103, content)
+    errors, _ = vvb.validate_perpetual_guardrails(2, 16, 103, content)
     assert any("T1xx task IDs are legacy/historical-only" in e for e in errors)
 
 
 def test_validate_perpetual_build_increment_rejects_unchanged_build(monkeypatch):
     """BR-075: perpetual same-task with BUILD <= HEAD fails."""
-    import validate_version_bump as vvb
-
     monkeypatch.setattr(vvb, "get_version_build_from_git_ref", lambda _vf, ref: 5 if ref == "HEAD" else None)
     monkeypatch.setattr(vvb, "get_version_task_from_git_ref", lambda _vf, ref: 4 if ref == "HEAD" else None)
     version_file = Path("src/ai_dev_kit/version.py")
     content = "**Task Type:** Perpetual Maintenance\n"
-    ok, errs = validate_perpetual_build_increment(version_file, 2, 16, 4, 5, content, False)
+    ok, errs = vvb.validate_perpetual_build_increment(version_file, 2, 16, 4, 5, content, False)
     assert not ok
     assert any("BR-075" in e for e in errs)
-    ok2, errs2 = validate_perpetual_build_increment(version_file, 2, 16, 4, 6, content, False)
+    ok2, errs2 = vvb.validate_perpetual_build_increment(version_file, 2, 16, 4, 6, content, False)
     assert ok2, errs2
 
 
 def test_validate_perpetual_build_increment_allows_art_first_build_on_new_task(monkeypatch):
     """BR-075: --art new perpetual task may start at BUILD=1 when HEAD TASK differs."""
-    import validate_version_bump as vvb
-
     monkeypatch.setattr(vvb, "get_version_build_from_git_ref", lambda _vf, ref: 4 if ref == "HEAD" else None)
     monkeypatch.setattr(vvb, "get_version_task_from_git_ref", lambda _vf, ref: 12 if ref == "HEAD" else None)
     version_file = Path("src/ai_dev_kit/version.py")
     content = "**Task Type:** Perpetual Maintenance\n"
-    ok, errs = validate_perpetual_build_increment(version_file, 8, 3, 15, 1, content, False)
+    ok, errs = vvb.validate_perpetual_build_increment(version_file, 8, 3, 15, 1, content, False)
     assert ok, errs
 
 
 def test_validate_tagged_build_collision_blocks_doc_policy_zero_when_tag_exists(monkeypatch):
     """BR-067 follow-on: --doc-policy-zero must not reuse a tagged BUILD."""
-    import validate_version_bump as vvb
-
     monkeypatch.setattr(vvb, "git_ref_exists", lambda ref: ref == "v0.5.9.14+2")
     version_file = Path("src/ai_dev_kit/version.py")
     ok, errs = vvb.validate_tagged_build_collision(0, 5, 9, 14, 2, version_file, True)
@@ -576,8 +560,6 @@ def test_validate_tagged_build_collision_blocks_doc_policy_zero_when_tag_exists(
 
 def test_validate_tagged_build_collision_blocks_unchanged_build_when_tag_exists(monkeypatch):
     """Same-task release must increment BUILD when HEAD BUILD already has a git tag."""
-    import validate_version_bump as vvb
-
     monkeypatch.setattr(vvb, "get_version_build_from_git_ref", lambda _vf, ref: 2 if ref == "HEAD" else None)
     monkeypatch.setattr(vvb, "git_ref_exists", lambda ref: ref == "v0.5.9.14+2")
     version_file = Path("src/ai_dev_kit/version.py")
@@ -627,10 +609,10 @@ VERSION_STRING = "0.6.7.103+0"
             config = {
                 "version_file": "src/proj/version.py",
                 "use_kanban": True,
-                "kanban_root": "docs/project-management/kanban",
+                "kanban_root": "docs/kanban",
                 "story_doc_pattern": "epics/Epic-{epic}/Story-{story}-*.md",
             }
-            is_valid, errors = validate_version_bump(
+            is_valid, errors = vvb.validate_version_bump(
                 version_file,
                 story_file=story2_file,
                 config=config,
@@ -670,7 +652,7 @@ def test_doc_policy_zero_rejected_when_build_ge_one():
                 "**Task ID:** E05:S09:T14\n**Scope:** test\n**Deliverable:** test\n"
                 "**Version Anchor:** v0.5.9.14+2\n**Status:** COMPLETE\n"
             )
-            is_valid, errors = validate_version_bump(
+            is_valid, errors = vvb.validate_version_bump(
                 version_file,
                 story_file=story_file,
                 requested="E05:S09:T14",
@@ -745,7 +727,7 @@ def test_validate_perpetual_guardrails_warns_for_missing_marker_on_story_016_lan
 **Task ID:** E2:S16:T03
 **Status:** IN PROGRESS
 """
-    errors, warnings = validate_perpetual_guardrails(2, 16, 3, content)
+    errors, warnings = vvb.validate_perpetual_guardrails(2, 16, 3, content)
     assert errors == []
     assert any("expected to carry `Task Type: Perpetual Maintenance`" in w for w in warnings)
 

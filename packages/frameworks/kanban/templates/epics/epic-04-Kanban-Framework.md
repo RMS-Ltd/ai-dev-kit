@@ -85,7 +85,7 @@ This epic encompasses Kanban system implementation and governance, including Kan
 - None
 - *Parallel Development Candidacy:* Safe (can be done independently)
 
-> Full story: `docs/project-management/kanban/epics/epic-04/story-01-kanban-board-setup.md`
+> Full story: `docs/kanban/epics/epic-04/story-01-kanban-board-setup.md`
 
 ---
 
@@ -119,7 +119,7 @@ This epic encompasses Kanban system implementation and governance, including Kan
 - Depends on Story 1 (Kanban Board Setup)
 - *Parallel Development Candidacy:* Blocked (requires Story 1 board structure)
 
-> Full story: `docs/project-management/kanban/epics/epic-04/story-02-fr-br-intake-process.md`
+> Full story: `docs/kanban/epics/epic-04/story-02-fr-br-intake-process.md`
 
 ---
 

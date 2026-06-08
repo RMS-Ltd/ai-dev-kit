@@ -66,7 +66,7 @@ TRIGGER_REGISTRY: Dict[str, Dict] = {
         ],
         'file_patterns': [
             'fr-br/FR-*.md',
-            'docs/project-management/kanban/fr-br/FR-*.md',
+            'docs/kanban/fr-br/FR-*.md',
         ],
         'workflow': 'intake_workflow',  # Use intake workflow (E2:S11) instead of agentic_task_creation
         'confidence': ConfidenceLevel.HIGH,
@@ -83,7 +83,7 @@ TRIGGER_REGISTRY: Dict[str, Dict] = {
         ],
         'file_patterns': [
             'fr-br/BR-*.md',
-            'docs/project-management/kanban/fr-br/BR-*.md',
+            'docs/kanban/fr-br/BR-*.md',
         ],
         'workflow': 'intake_workflow',  # Use intake workflow (E2:S11) instead of agentic_task_creation
         'confidence': ConfidenceLevel.HIGH,
@@ -100,7 +100,7 @@ TRIGGER_REGISTRY: Dict[str, Dict] = {
         ],
         'file_patterns': [
             'fr-br/UXR-*.md',
-            'docs/project-management/kanban/fr-br/UXR-*.md',
+            'docs/kanban/fr-br/UXR-*.md',
         ],
         'workflow': 'intake_workflow',  # Use intake workflow (E2:S11) instead of agentic_task_creation
         'confidence': ConfidenceLevel.HIGH,
@@ -145,13 +145,13 @@ class TriggerRegistry:
         Args:
             commit_message: Git commit message
             changed_files: List of changed file paths
-            context: Optional additional context (branch, tags, etc.)
+            context: Optional additional context (branch, tags, etc.) — reserved for agentic fallback
         
         Returns:
             List of detected triggers, sorted by priority and confidence
         """
         triggers = []
-        context = context or {}
+        _ = context  # reserved for future agentic path
         
         # Fast path: Pattern matching
         for trigger_id, trigger_def in self.registry.items():

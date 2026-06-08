@@ -349,7 +349,7 @@ def main():
     
     parser = argparse.ArgumentParser(description="Intake Decision Flow Analysis")
     parser.add_argument('fr_br_path', type=Path, help='Path to FR/BR/UXR document')
-    parser.add_argument('--kanban-path', type=Path, default=Path('docs/project-management/kanban'),
+    parser.add_argument('--kanban-path', type=Path, default=Path('docs/kanban'),
                        help='Path to Kanban structure')
     parser.add_argument('--framework-path', type=Path,
                        default=Path('packages/frameworks/kanban'),

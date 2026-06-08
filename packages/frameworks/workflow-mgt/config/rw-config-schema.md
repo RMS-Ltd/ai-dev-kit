@@ -44,13 +44,13 @@ These keys are only required if using specific features:
 | Key | Type | Required When | Description | Example |
 |-----|------|---------------|-------------|---------|
 | `use_kanban` | boolean | Mode C (Full Stack) | Enable Kanban integration | `true` |
-| `kanban_root` | string | `use_kanban: true` | Root path for Kanban docs | `docs/project-management/kanban` |
+| `kanban_root` | string | `use_kanban: true` | Root path for Kanban docs | `docs/kanban` |
 | `epic_doc_pattern` | string | `use_kanban: true` | Pattern for epic docs (relative to `kanban_root`) | `epics/epic-{epic:02d}/epic-{epic:02d}.md` |
 | `story_doc_pattern` | string | `use_kanban: true` | Pattern for story docs (relative to `kanban_root`) | `epics/epic-{epic:02d}/story-{story:02d}-*.md` |
 | `kanban_board` | string | `use_kanban: true` | Active MoSCOW board file (relative to `kanban_root`); sole board per ADR-018 | `kboard.md` |
 | `fbu_board` | string | **Deprecated** | Legacy second MoSCOW board (`kboard.md`). **Do not set** on new installs — use redirect stub only. Validators skip deprecated stubs. | *(omit)* |
 | `task_doc_pattern` | string | `use_kanban: true` (recommended) | Pattern for task docs (relative to `kanban_root`; include `{epic}`, `{story}`, `{task}`) | `epics/epic-{epic:02d}/story-{story:02d}-*/T{task:02d}-*.md` |
-| `fr_br_root` | string | Optional | FR/BR directory (relative to **project root**, not `kanban_root`) | `docs/project-management/kanban/fr-br` |
+| `fr_br_root` | string | Optional | FR/BR directory (relative to **project root**, not `kanban_root`) | `docs/kanban/fr-br` |
 | `versioning_schema` | string | Optional | Version schema (default: `RC.EPIC.STORY.TASK+BUILD`) | `RC.EPIC.STORY.TASK+BUILD` |
 | `versioning_mode` | string | Optional (recommended) | Versioning model: `dual`, `semver_only`, `kanban_only` | `dual` |
 | `semver_mapping_strategy` | string | Optional | SemVer mapping strategy (`task_touch` or `registry`) | `task_touch` |
@@ -141,7 +141,7 @@ changelog_dir: docs/changelog-and-release-notes/changelog-archive
 scripts_path: tools/workflow_mgt/scripts
 readme_file: README.md
 use_kanban: true
-kanban_root: docs/project-management/kanban
+kanban_root: docs/kanban
 epic_doc_pattern: epics/epic-{epic:02d}/epic-{epic:02d}.md
 story_doc_pattern: epics/epic-{epic:02d}/story-{story:02d}-*.md
 task_doc_pattern: epics/epic-{epic:02d}/story-{story:02d}-*/T{task:02d}-*.md
@@ -217,7 +217,7 @@ The following variables can be used in path patterns:
 
 ## Code Quality Gate (`code_quality_gate`) — FR-113 / E08:S03:T17
 
-Optional block for local CodeQL Code Quality Gate (CQG). When absent, `validate_code_quality_gate.py` skips or errors per script policy.
+Optional block for local CodeQL Code Quality Gate (CQG). When absent, `validate_code_quality_gate.py` skips per script policy. **Gate runs at IDW Phase 6b**, not RW (ADR-022 v0.0.2).
 
 | Key | Type | Default | Description |
 | --- | ---- | ------- | ----------- |
@@ -231,8 +231,10 @@ Optional block for local CodeQL Code Quality Gate (CQG). When absent, `validate_
 | `reports_dir` | string | `.cqg/reports` | JSON/markdown summaries (gitignored) |
 | `cache_dir` | string | `.cqg/cache` | CodeQL DB cache (gitignored) |
 | `last_run_file` | string | `.cqg/last-run.json` | Monitor skip/force state |
-| `rw_threshold` | string | `warnings` | `errors` \| `warnings` \| `notes` \| `all` |
-| `rw_advisory` | boolean | `true` | RW Step 9 non-blocking unless `--strict` |
+| `idw_threshold` | string | `warnings` | `errors` \| `warnings` \| `notes` \| `all` — IDW Phase 6b |
+| `idw_advisory` | boolean | `false` | IDW advisory only when `true` (use `--no-strict`) |
+| `rw_threshold` | string | — | **Deprecated** — use `idw_threshold` (still read for compat) |
+| `rw_advisory` | boolean | — | **Deprecated** — use `idw_advisory` (still read for compat) |
 | `retention_count` | integer | `10` | Report retention (future) |
 | `codeql_command` | string | `codeql` | CodeQL CLI executable name |
 
@@ -244,8 +246,8 @@ code_quality_gate:
   target_branch: dev
   query_suite: security-and-quality
   language: python
-  rw_threshold: warnings
-  rw_advisory: true
+  idw_threshold: warnings
+  idw_advisory: false
 ```
 
 See [ADR-022](../../../../docs/architecture/standards-and-adrs/ADR-022-local-code-quality-gate-architecture.md) and [operator guide](../../tooling-automation/docs/code-quality-gate-operator-guide.md).

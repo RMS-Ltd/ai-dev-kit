@@ -9,11 +9,12 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+---
 
-## [0.21.3.7+1] - 08-06-26
+## [0.8.3.16+9] - 08-06-26
 
-E21:S03:T07 — **Change implemented:** Phase 3 E2E translation and locale support tests (`test_fr006_phase3_translation_locale_e2e.py`); E21:S03 story closed. SemVer **v0.4.1095+1**.
+E08:S03:T16 — **Attempted fix:** Wave 3e — autofix PR pytest triage (#43/#44). SemVer **v0.4.11+9**.
 
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.21.3.7+1.md)
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.8.3.16+9.md)
 
 ---

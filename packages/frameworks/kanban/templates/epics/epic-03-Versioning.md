@@ -85,7 +85,7 @@ This epic encompasses versioning and numbering schema framework, including versi
 - None
 - *Parallel Development Candidacy:* Safe (can be done independently)
 
-> Full story: `docs/project-management/kanban/epics/epic-03/story-01-versioning-policy-and-schema.md`
+> Full story: `docs/kanban/epics/epic-03/story-01-versioning-policy-and-schema.md`
 
 ---
 
@@ -120,7 +120,7 @@ This epic encompasses versioning and numbering schema framework, including versi
 - Coordinates with Epic 2 (Workflow Management) for workflow integration
 - *Parallel Development Candidacy:* Blocked (requires Story 1 schema)
 
-> Full story: `docs/project-management/kanban/epics/epic-03/story-02-version-management-integration.md`
+> Full story: `docs/kanban/epics/epic-03/story-02-version-management-integration.md`
 
 ---
 

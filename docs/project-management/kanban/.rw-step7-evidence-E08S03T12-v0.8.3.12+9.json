@@ -1,8 +1,0 @@
-{
-  "rows": {
-    "E08:S03:T12": {
-      "allowed": true,
-      "reason": "RW Step 7 scoped reconciliation @ v0.8.3.12+9 — T12/IPP/BR-099/kboard version anchors"
-    }
-  }
-}

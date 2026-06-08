@@ -171,13 +171,13 @@ High BUILD numbers on perpetual tasks are expected and valid — no warning shou
 
 Use `rw-config.yaml` values when present. Fallbacks:
 
-- Kanban root: `docs/project-management/kanban/`
-- Epic docs: `docs/project-management/kanban/epics/Epic-{E}/Epic-{E}.md`
-- Story docs: `docs/project-management/kanban/epics/Epic-{E}/Story-{S}-*.md`
-- Task docs: `docs/project-management/kanban/epics/Epic-{E}/Story-{S}/T{T}-*.md`
-- Kanban board: `docs/project-management/kanban/kboard.md`
-- FR/BR/UXR root: `docs/project-management/kanban/fr-br/`
-- fbuboard: `docs/project-management/kanban/kboard.md`
+- Kanban root: `docs/kanban/`
+- Epic docs: `docs/kanban/epics/Epic-{E}/Epic-{E}.md`
+- Story docs: `docs/kanban/epics/Epic-{E}/Story-{S}-*.md`
+- Task docs: `docs/kanban/epics/Epic-{E}/Story-{S}/T{T}-*.md`
+- Kanban board: `docs/kanban/kboard.md`
+- FR/BR/UXR root: `docs/kanban/fr-br/`
+- fbuboard: `docs/kanban/kboard.md`
 
 ---
 

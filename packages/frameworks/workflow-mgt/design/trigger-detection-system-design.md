@@ -121,7 +121,7 @@ TRIGGER_REGISTRY = {
         ],
         'file_patterns': [
             'fr-br/FR-*.md',
-            'docs/project-management/kanban/fr-br/FR-*.md',
+            'docs/kanban/fr-br/FR-*.md',
         ],
         'workflow': 'agentic_task_creation',
         'confidence': 'high',
@@ -138,7 +138,7 @@ TRIGGER_REGISTRY = {
         ],
         'file_patterns': [
             'fr-br/BR-*.md',
-            'docs/project-management/kanban/fr-br/BR-*.md',
+            'docs/kanban/fr-br/BR-*.md',
         ],
         'workflow': 'agentic_task_creation',
         'confidence': 'high',
@@ -155,7 +155,7 @@ TRIGGER_REGISTRY = {
         ],
         'file_patterns': [
             'fr-br/UXR-*.md',
-            'docs/project-management/kanban/fr-br/UXR-*.md',
+            'docs/kanban/fr-br/UXR-*.md',
         ],
         'workflow': 'agentic_task_creation',
         'confidence': 'high',

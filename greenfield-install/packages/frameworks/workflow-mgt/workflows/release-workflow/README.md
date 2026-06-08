@@ -60,7 +60,7 @@ defaults:
   changelog_dir: "docs/changelog-and-release-notes/changelog-archive"
   main_changelog: "CHANGELOG.md"
   readme_file: "README.md"
-  kanban_root: "docs/project-management/kanban"
+  kanban_root: "docs/kanban"
   scripts_path: "packages/frameworks/workflow-mgt/scripts/validation"
 ```
 
@@ -71,7 +71,7 @@ defaults:
 | changelog_dir | string | docs/changelog-and-release-notes/changelog-archive | Changelog archive directory |
 | main_changelog | string | CHANGELOG.md | Main changelog file |
 | readme_file | string | README.md | README to update |
-| kanban_root | string | docs/project-management/kanban | Kanban documentation root |
+| kanban_root | string | docs/kanban | Kanban documentation root |
 | scripts_path | string | packages/frameworks/workflow-mgt/scripts/validation | Validation scripts directory |
 
 ## 📋 Usage Examples

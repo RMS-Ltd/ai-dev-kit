@@ -10,7 +10,7 @@ housekeeping_policy: keep
 
 **Purpose:** Keep the **canonical** repo [`.cursorrules`](../../../../.cursorrules) RW trigger block and the **portable** excerpt [`cursorrules-rw-trigger-section.md`](../cursorrules-rw-trigger-section.md) aligned so adopters who paste only the package file do not drift from **FR-060**, **BR-056**, **FR-038**, and ABORT semantics.
 
-**Related governance:** [E2:S16:T03](../../../../docs/project-management/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md) (RW maintenance perpetual)—this doc is **consumer parity**, not a duplicate of T103 procedure.
+**Related governance:** [E2:S16:T03](../../../../docs/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md) (RW maintenance perpetual)—this doc is **consumer parity**, not a duplicate of T103 procedure.
 
 ---
 
@@ -129,6 +129,6 @@ Adopters copy **`cursorrules-rw-trigger-section.md`** into their `.cursorrules`;
 
 ## References
 
-- **FR-060** — mandatory RW task id ([FR-060](../../../../docs/project-management/kanban/fr-br/FR-060-rw-task-argument-requirement.md))
-- **FR-038** — RW Step 7 scoped UKW ([FR-038](../../../../docs/project-management/kanban/fr-br/FR-038-rw-step-7-scoped-kanban-sync-ukw-mode.md))
+- **FR-060** — mandatory RW task id ([FR-060](../../../../docs/kanban/fr-br/FR-060-rw-task-argument-requirement.md))
+- **FR-038** — RW Step 7 scoped UKW ([FR-038](../../../../docs/kanban/fr-br/FR-038-rw-step-7-scoped-kanban-sync-ukw-mode.md))
 - **Release workflow agent execution** — `KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md` (under this package tree)

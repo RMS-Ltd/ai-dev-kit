@@ -9,7 +9,7 @@ housekeeping_policy: keep
 # ICW E7:S06:T18 — Specification (UXR-007)
 
 **Host task:** E7:S06:T18 — Interactive installer Kanban pattern prompt clarity  
-**UXR:** [UXR-007](../project-management/kanban/fr-br/UXR-007-interactive-installer-kanban-pattern-prompt-clarity.md)  
+**UXR:** [UXR-007](../kanban/fr-br/UXR-007-interactive-installer-kanban-pattern-prompt-clarity.md)  
 **Release anchor:** `v0.7.6.18+1`
 
 ---

@@ -8,7 +8,7 @@ housekeeping_policy: keep
 
 # IDE whitelist — UAT and integration evidence log
 
-**Task:** [E06:S07:T107](../project-management/kanban/epics/epic-06/story-07-adk-implementation-analysis-and-package-management/T107-ide-command-whitelist-optimization.md)  
+**Task:** [E06:S07:T107](../kanban/epics/epic-06/story-07-adk-implementation-analysis-and-package-management/T107-ide-command-whitelist-optimization.md)  
 **ADR:** [ADR-013](../architecture/standards-and-adrs/ADR-013-ide-command-allowlist-catalog-and-enforcement.md)  
 **Append-only:** Add new entries at the top of [Evidence entries](#evidence-entries).
 
@@ -38,7 +38,7 @@ housekeeping_policy: keep
 | `expected` | Repo catalog consumed automatically or documented hook |
 | `observed` | **No.** Cursor does not read this YAML. Command approval uses **Cursor Settings** (Agents / Auto-Run / sandbox allowlist — exact labels vary by version). Maintainers map regex families from the catalog into UI rules manually. |
 | `result` | `pass` (honest model documented in ADR-013 + guide) |
-| `notes` | Optional future: Cursor hooks if API stabilizes. Does **not** fix [BR-039](../project-management/kanban/fr-br/BR-039-cascade-whitelist-security-prompt-usability-blocker.md) (Windsurf/Cascade vendor). |
+| `notes` | Optional future: Cursor hooks if API stabilizes. Does **not** fix [BR-039](../kanban/fr-br/BR-039-cascade-whitelist-security-prompt-usability-blocker.md) (Windsurf/Cascade vendor). |
 
 ---
 

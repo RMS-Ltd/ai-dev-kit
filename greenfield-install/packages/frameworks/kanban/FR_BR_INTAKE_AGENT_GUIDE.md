@@ -62,7 +62,7 @@ FR/BR Received
   - If BR → Use `BR_TEMPLATE.md`
 
 **Step 1.2: Create Document**
-- **Location:** `docs/project-management/kanban/fr-br/FR-XXX-[title].md` or `BR-XXX-[title].md`
+- **Location:** `docs/kanban/fr-br/FR-XXX-[title].md` or `BR-XXX-[title].md`
 - **Required Fields:**
   - Summary (one sentence)
   - Description (detailed)
@@ -86,8 +86,8 @@ FR/BR Received
 
 **Step 2.1: Search Existing Stories**
 - **Search Locations:**
-  - `docs/project-management/kanban/kboard.md`
-  - `docs/project-management/kanban/epics/Epic-X/stories/Story-XXX-*.md`
+  - `docs/kanban/kboard.md`
+  - `docs/kanban/epics/Epic-X/stories/Story-XXX-*.md`
 - **Search Criteria:**
   - Story goal/scope encompasses FR/BR requirements
   - Story addresses same problem domain
@@ -133,7 +133,7 @@ FR/BR Received
   - Approach: [Step-by-step approach]
 
 **Step 3a.3: Add Task to Story Checklist**
-- **Location:** Story document (`docs/project-management/kanban/epics/Epic-X/stories/Story-XXX-*.md`)
+- **Location:** Story document (`docs/kanban/epics/Epic-X/stories/Story-XXX-*.md`)
 - **Format (Separate File):**
   ```markdown
   - [ ] **EXX:SYY:TXXX – [Task Title]** - TODO
@@ -172,8 +172,8 @@ FR/BR Received
 
 **Step 3a.6: Update Kanban Board**
 - **Files:**
-  - `docs/project-management/kanban/kboard.md`
-  - `docs/project-management/kanban/_index.md`
+  - `docs/kanban/kboard.md`
+  - `docs/kanban/_index.md`
 - **Actions:**
   - Update Story status if needed
   - Update Story's Task count
@@ -189,8 +189,8 @@ FR/BR Received
 
 **Step 3b.1: Search Existing Epics**
 - **Search Locations:**
-  - `docs/project-management/kanban/kboard.md`
-  - `docs/project-management/kanban/epics/Epic-X.md`
+  - `docs/kanban/kboard.md`
+  - `docs/kanban/epics/Epic-X.md`
 - **Search Criteria:**
   - Epic's problem domain matches FR/BR's problem domain
   - Epic status is NOT COMPLETE or DEFERRED
@@ -216,7 +216,7 @@ FR/BR Received
 - **Calculate:** Next Story number = Highest + 1 (e.g., S04)
 
 **Step 4a.2: Create Story**
-- **Location:** `docs/project-management/kanban/epics/Epic-X/stories/Story-XXX-[title].md`
+- **Location:** `docs/kanban/epics/Epic-X/stories/Story-XXX-[title].md`
 - **Template:** Use `STORY_TEMPLATE.md`
 - **Required Fields:**
   - Status: TODO or IN PROGRESS
@@ -282,8 +282,8 @@ FR/BR Received
 
 **Step 4a.7: Update Kanban Board**
 - **Files:**
-  - `docs/project-management/kanban/kboard.md`
-  - `docs/project-management/kanban/_index.md`
+  - `docs/kanban/kboard.md`
+  - `docs/kanban/_index.md`
 - **Actions:**
   - Add new Story to board
   - Update Epic's Story count
@@ -298,13 +298,13 @@ FR/BR Received
 ### Phase 4b: Create Epic + Story + Task (No Epic Match)
 
 **Step 4b.1: Determine Epic Number**
-- **Action:** Read `docs/project-management/kanban/_index.md` or `kboard.md`
+- **Action:** Read `docs/kanban/_index.md` or `kboard.md`
 - **Find:** Highest existing Epic number (e.g., Epic 1, Epic 2, Epic 3, Epic 4, Epic 5, Epic 6, Epic 7)
 - **Calculate:** Next Epic number = Highest + 1 (e.g., Epic 8)
 - **Note:** Canonical epics are 1-7 (see `CANONICAL_EPICS.md`), so new project-specific epics start at Epic 8
 
 **Step 4b.2: Create Epic**
-- **Location:** `docs/project-management/kanban/epics/Epic-X.md`
+- **Location:** `docs/kanban/epics/Epic-X.md`
 - **Template:** Use `EPIC_TEMPLATE.md`
 - **CRITICAL:** Epic must be **broad and abstract** in concept
 - **Required Fields:**
@@ -314,7 +314,7 @@ FR/BR Received
   - Goals: [2-3 high-level goals]
 
 **Step 4b.3: Create Story**
-- **Location:** `docs/project-management/kanban/epics/Epic-X/stories/story-01-[title].md`
+- **Location:** `docs/kanban/epics/Epic-X/stories/story-01-[title].md`
 - **Template:** Use `STORY_TEMPLATE.md`
 - **Story Number:** 1 (first Story in new Epic)
 - **Required Fields:**
@@ -379,8 +379,8 @@ FR/BR Received
 
 **Step 4b.8: Update Kanban Board**
 - **Files:**
-  - `docs/project-management/kanban/kboard.md`
-  - `docs/project-management/kanban/_index.md`
+  - `docs/kanban/kboard.md`
+  - `docs/kanban/_index.md`
 - **Actions:**
   - Add new Epic to board
   - Add new Story to board
@@ -443,8 +443,8 @@ After completing intake, verify:
 ### Key Documents
 - **Intake Guide:** `packages/frameworks/kanban/FR_BR_INTAKE_GUIDE.md`
 - **Decision Flow:** `T02-decision-flow-design.md`
-- **Kanban Board:** `docs/project-management/kanban/kboard.md`
-- **Kanban Index:** `docs/project-management/kanban/_index.md`
+- **Kanban Board:** `docs/kanban/kboard.md`
+- **Kanban Index:** `docs/kanban/_index.md`
 
 ---
 

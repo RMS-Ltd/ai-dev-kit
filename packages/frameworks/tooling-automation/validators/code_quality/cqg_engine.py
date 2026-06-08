@@ -11,7 +11,6 @@ from pathlib import Path
 
 from .config import CodeQualityGateConfig, load_config, resolve_query_pack_spec
 from .last_run import (
-    LastRunRecord,
     MonitorDecision,
     evaluate_monitor,
     read_last_run,
@@ -20,7 +19,7 @@ from .last_run import (
 from .ratings import compute_ratings
 from .report_model import CategoryRatings, CodeQualityReport
 from .sarif_parser import parse_sarif
-from .thresholds import ThresholdMode, parse_threshold, threshold_breached
+from .thresholds import parse_threshold, threshold_breached
 
 
 @dataclass
@@ -134,7 +133,7 @@ class CQGEngine:
         force: bool = False,
     ) -> RunResult:
         head_sha = self.resolve_head_sha()
-        threshold_mode = parse_threshold(threshold or self.config.rw_threshold)
+        threshold_mode = parse_threshold(threshold or self.config.idw_threshold)
 
         sarif_out: Path | None = None
         if sarif_path:
@@ -208,7 +207,7 @@ def main(argv: list[str] | None = None) -> int:
     print(f"JSON: {result.summary_json}")
     print(f"Markdown: {result.summary_md}")
 
-    strict = args.strict or not engine.config.rw_advisory
+    strict = args.strict or not engine.config.idw_advisory
     if strict and result.threshold_breached:
         return 1
     return 0

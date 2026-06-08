@@ -25,7 +25,7 @@ class TestICTaskIdentifierValidation(unittest.TestCase):
         # Mock config for testing
         self.handler.config = {
             'paths': {
-                'kanban_root': 'docs/project-management/kanban'
+                'kanban_root': 'docs/kanban'
             }
         }
         

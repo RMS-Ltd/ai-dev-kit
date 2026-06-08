@@ -89,7 +89,7 @@ This epic encompasses frontend development, UI components, and user experience, 
 - None
 - *Parallel Development Candidacy:* Safe (can be done independently)
 
-> Full story: `docs/project-management/kanban/epics/epic-12/story-01-ui-framework-setup.md`
+> Full story: `docs/kanban/epics/epic-12/story-01-ui-framework-setup.md`
 
 ---
 
@@ -127,7 +127,7 @@ This epic encompasses frontend development, UI components, and user experience, 
 - Depends on Story 1 (UI Framework Setup)
 - *Parallel Development Candidacy:* Blocked (requires Story 1 framework)
 
-> Full story: `docs/project-management/kanban/epics/epic-12/story-02-core-ui-components.md`
+> Full story: `docs/kanban/epics/epic-12/story-02-core-ui-components.md`
 
 ---
 
@@ -166,7 +166,7 @@ This epic encompasses frontend development, UI components, and user experience, 
 - Coordinates with Epic 11 (API & Backend) for API consumption
 - *Parallel Development Candidacy:* Blocked (requires Story 2 components)
 
-> Full story: `docs/project-management/kanban/epics/epic-12/story-03-user-interface-implementation.md`
+> Full story: `docs/kanban/epics/epic-12/story-03-user-interface-implementation.md`
 
 ---
 

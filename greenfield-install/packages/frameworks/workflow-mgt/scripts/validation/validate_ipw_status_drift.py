@@ -104,8 +104,8 @@ def main() -> int:
     )
     parser.add_argument(
         "--kanban-root",
-        default="docs/project-management/kanban",
-        help="Kanban root directory (default: docs/project-management/kanban)",
+        default="docs/kanban",
+        help="Kanban root directory (default: docs/kanban)",
     )
     parser.add_argument(
         "--project-root",

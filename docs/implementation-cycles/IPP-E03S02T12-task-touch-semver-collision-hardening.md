@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # E03:S02:T12 — Planning: Task-touch SemVer collision remediation (IPW)
 
-**Host Task:** [`T12-implement-task-touch-semver-mapping-mode.md`](../project-management/kanban/epics/epic-03/story-02-versioning-cookbook-and-examples/T12-implement-task-touch-semver-mapping-mode.md) **(E03:S02:T12)**  
-**Planning for:** [FR-045](../project-management/kanban/fr-br/FR-045-adr-002-task-touch-derived-mapping.md) · [FR-046](../project-management/kanban/fr-br/FR-046-rw-semver-tag-task-touch-mode.md) · [BR-061](../project-management/kanban/fr-br/BR-061-semver-task-touch-counter-increments-too-often.md)  
+**Host Task:** [`T12-implement-task-touch-semver-mapping-mode.md`](../kanban/epics/epic-03/story-02-versioning-cookbook-and-examples/T12-implement-task-touch-semver-mapping-mode.md) **(E03:S02:T12)**  
+**Planning for:** [FR-045](../kanban/fr-br/FR-045-adr-002-task-touch-derived-mapping.md) · [FR-046](../kanban/fr-br/FR-046-rw-semver-tag-task-touch-mode.md) · [BR-061](../kanban/fr-br/BR-061-semver-task-touch-counter-increments-too-often.md)  
 **Status:** COMPLETE (wave 3 closed **v0.3.2.12+5** — 2026-06-05)
 
 > **IPW revision:** Follow-on wave per rolling-backlog pattern. Task **COMPLETE**; linked FBUs **REOPENED** pending user verification. Implementation gated on explicit authorization per FR-083.
@@ -306,5 +306,5 @@ Activate wave 3b if any of:
 - [IPW ADR checklist](../architecture/standards-and-adrs/ipw-adr-necessity-checklist.md)
 - [Incident log](../architecture/standards-and-adrs/semver-tag-collision-incident-2026-03-07.md)
 - [Repair report](../maintenance/semver-registry-collision-repair-2026-06-04.md)
-- [FR-077 — IPW status transition and kboard sync](../project-management/kanban/fr-br/FR-077-ipw-built-task-status-transition-and-kboard-sync.md)
+- [FR-077 — IPW status transition and kboard sync](../kanban/fr-br/FR-077-ipw-built-task-status-transition-and-kboard-sync.md)
 - [ADR-018 — V-band verification rows](../architecture/standards-and-adrs/ADR-018-single-kanban-board-consolidation.md)

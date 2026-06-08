@@ -100,7 +100,7 @@ main_changelog = config['main_changelog'] if config and 'main_changelog' in conf
 changelog_dir = config['changelog_dir'] if config and 'changelog_dir' in config else 'docs/changelogs'
 scripts_path = config['scripts_path'] if config and 'scripts_path' in config else 'scripts/validation'
 readme_file = config['readme_file'] if config and 'readme_file' in config else 'README.md'
-kanban_root = config.get('kanban_root', 'docs/project-management/kanban') if config and config.get('use_kanban') else None
+kanban_root = config.get('kanban_root', 'docs/kanban') if config and config.get('use_kanban') else None
 ```
 
 **Backward Compatibility:**
@@ -132,6 +132,7 @@ todo_write(merge=False, todos=[
     {'id': 'rw-step-9', 'status': 'pending', 'content': 'Step 9: Run Validators - branch, changelog, version bump, RW task complete, etc.'},
     {'id': 'rw-step-9.5', 'status': 'pending', 'content': 'Step 9.5: Changelog Management Workflow (CMW) - Trigger CMW if changelog size exceeds threshold (optional, non-blocking)'},
     {'id': 'rw-step-9.6', 'status': 'pending', 'content': 'Step 9.6: Check IDE-Flagged Problems - errors, warnings, infos in modified files (recommended, non-blocking)'},
+    {'id': 'rw-step-9.7', 'status': 'pending', 'content': 'Step 9.7: Actions CI Parity Gate - validate_actions_ci_parity.py --strict (BLOCKING; E08:S03:T15)'},
     {'id': 'rw-step-10', 'status': 'pending', 'content': 'Step 10: Commit Changes - Create git commit with versioned message'},
     {'id': 'rw-step-11', 'status': 'pending', 'content': 'Step 11: Create Git Tag - Internal + SemVer annotated tags'},
     {'id': 'rw-step-12', 'status': 'cancelled', 'content': 'Step 12: Push to Remote - SKIP unless --push in trigger (UXR-024)'},
@@ -267,7 +268,7 @@ For each step, follow this pattern:
    **B. IDENTIFY COMPLETED TASK (MANDATORY - ONLY IF NOT UKW):**
    - **Load config first:** If `rw-config.yaml` exists and `use_kanban: true`, read `kanban_root` and `story_doc_pattern` from config. Otherwise, use `{kanban_path}/epics/Epic-{epic}/Story-{story}-*.md` as fallback.
    - Read the Story file using config values or fallback pattern
-   - [Example: ai-dev-kit] `docs/project-management/kanban/epics/Epic-{epic}/Story-{story}-*.md` (or from `rw-config.yaml` if present)
+   - [Example: ai-dev-kit] `docs/kanban/epics/Epic-{epic}/Story-{story}-*.md` (or from `rw-config.yaml` if present)
    - Find the MOST RECENTLY COMPLETED task in the Task Checklist (marked `✅ COMPLETE`)
    - Extract the task number from the task identifier: `E{epic}:S{story}:T{task}` (e.g., `E2:S02:T08` → task number is `8`)
    - **CRITICAL:** If no task is marked complete, or you cannot identify which task was just completed, **STOP** and ask the user which task was completed
@@ -386,7 +387,7 @@ For each step, follow this pattern:
    - [Example: ai-dev-kit] `docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v{version}.md` (or from `rw-config.yaml` if present)
 4. **Update Main Changelog** - Add new entry at top: `## [version] - DD-MM-YY` (short date format for merge-to-main) with release description and link to detailed changelog. **Use config:** If `rw-config.yaml` exists, read `main_changelog` from config. Otherwise, use `CHANGELOG.md` as fallback. Follow [Keep a Changelog](https://github.com/olivierlacan/keep-a-changelog) format. **Note:** Main changelog date can be updated if merge date changes, but detailed changelog timestamp is immutable.
 5. **Update README** - **MANDATORY:** Update project version in README. **MUST update:** Version text (e.g., `**Version:** v{version}`), version badge (if present), and latest release callout (if present). **Use config:** If `rw-config.yaml` exists, read `readme_file` from config. Otherwise, use `README.md` as fallback.
-6. **Update BR/FR Docs** - Update Bug Reports and Feature Requests with fix attempt information. **Use config:** If `rw-config.yaml` exists, read `fr_br_root` from config. Otherwise, use `docs/project-management/kanban/fr-br` as fallback. **Purpose:** Document flaws, attempted fixes, and verification status so that if a bug isn't squashed, the next build can be informed by previous attempts.
+6. **Update BR/FR Docs** - Update Bug Reports and Feature Requests with fix attempt information. **Use config:** If `rw-config.yaml` exists, read `fr_br_root` from config. Otherwise, use `docs/kanban/fr-br` as fallback. **Purpose:** Document flaws, attempted fixes, and verification status so that if a bug isn't squashed, the next build can be informed by previous attempts.
    - **For Bug Reports (BR):**
      - Search for BR files linked to the completed task (via Story file, Epic file, or BR "Intake Decision" section)
      - If BR is linked, add new entry to "Fix Attempt History" section:
@@ -440,6 +441,7 @@ For each step, follow this pattern:
 9. **Run Validators** - Execute validation scripts. **Use config:** If `rw-config.yaml` exists, read `scripts_path` from config. Otherwise, use `packages/frameworks/workflow-mgt/scripts/validation/` as fallback. Run `validate_branch_context.py`, `validate_changelog_format.py`, `validate_version_bump.py`, `validate_release_tag_immutability.py`, `check_changelog_size.py`, `validate_changelog_archive_links.py`, and **`validate_board_stamp_diff.py`** (FR-097: compare Step 7 start snapshots to current `kboard.md` — **blocking** on un evidenced row stamp deltas). Run **`validate_kanban_state_icons.py`** (UXR-012 Gate 9: `--strict` on `kboard.md`). Run `validate_release_readiness.py` (Gates 1–9 including stamp homogeneity + MoSCOW state icons). All scripts read `rw-config.yaml` when available. **If RW was triggered with `--art`, propagate adoption context in Step 9** by passing `--requested "<parsed_id>" --art` to `validate_branch_context.py` and `validate_version_bump.py`. For **docs-only** releases requiring **BUILD +0** on an **existing** E/S/T, add **`--dpz`** to `validate_version_bump.py` (alias: `--doc-policy-zero`) (same **--strict** / **--requested** / **--art** line). **Note:** `validate_version_bump` supports perpetual tasks (`perpetual_task` or `Task Type: Perpetual Maintenance`). **Note:** `check_changelog_size.py` exit code 1 is non-blocking and triggers Step 9.5. **Note:** `validate_changelog_archive_links.py` is non-blocking (BR-074).
 9.5. **Changelog Management Workflow (CMW)** - **OPTIONAL, NON-BLOCKING:** If Step 9's `check_changelog_size.py` indicated threshold exceeded (exit code 1), automatically run CMW. Skip if not exceeded. CMW failures are non-blocking.
 9.6. **Check IDE-Flagged Problems (recommended before commit)** - **RECOMMENDED, NON-BLOCKING:** Before Step 10, check IDE/linter issues in modified files; fix where practical and re-stage.
+9.7. **Actions CI Parity Gate (BLOCKING — E08:S03:T15 / FR-112)** — Run `validate_actions_ci_parity.py --strict` before Step 10 on full `RW` / `RW -d`. Path-aware mirror of required GitHub Actions workflows. Non-zero exit → **RW ABORTED**. **CQG is IDW Phase 6b** (ADR-022 v0.0.2), not RW. Before Step 12 (`--push`) or operator batch push: `--strict --all`.
 10. **Commit Changes** - Create commit with message: `Release v{version}: {summary}\n\nEpic: {epic} | Story: {story} | Task: {task}`
 11. **Create Git Tag** - Create tags via canonical strategy decision:
    - **FORBIDDEN (BR-097):** Never `git tag -f` or force-push release tags. Internal tag collision → BUILD+1 and re-RW. **task_touch** SemVer core collision → finalize registry + re-RW (BUILD+1 allocates new PATCH / new `vX.Y.Z` tag).
@@ -450,9 +452,9 @@ For each step, follow this pattern:
    - **Examples**:
      - Registry mode: `v0.6.7.18+2` (internal version tag)
      - Task-touch mode: `v0.9.5` (SemVer core tag, internal traceability tag: `v0.6.7.18+2`)
-12. **Push to Remote** — **SKIPPED by default (UXR-024).** Run **only** when user typed **`--push`** in the RW trigger.
-    - **Default:** Report `RW COMPLETE (local)`; operator batch-pushes per cheatsheet §2.
-    - **With `--push`:** Push epic branch and release-scoped tags (DO NOT push to main unless ready to deploy).
+12. **Push to Remote** — **NEVER by default (UXR-024).** Run **only** when user typed **`--push`** in the RW trigger.
+    - **Default:** Report `RW COMPLETE (local)`; **no push**; operator batch-pushes per cheatsheet §2 only after `validate_actions_ci_parity.py --strict --all` passes.
+    - **With `--push`:** Re-run Step 9.7 `--strict --all` immediately before push; then push epic branch and release-scoped tags (DO NOT push to main unless ready to deploy).
     - **CRITICAL: Use `required_permissions: ['network']` for git push commands**
     - **🚨 FORBIDDEN:** `git push origin {branch} --tags` (pushes all local tags; stale SemVer tags → false failures)
     - **Use:** `python "packages/frameworks/workflow-mgt/scripts/version/push_rw_release.py" --branch "{branch}" --internal-version "{internal_version}"`
@@ -483,11 +485,11 @@ For each step, follow this pattern:
 - Changelog Archive: `{changelog_archive_path}/CHANGELOG_v{version}.md`
   - [Example: ai-dev-kit] `docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v{version}.md`
 - Kanban Board: `{kanban_path}/kboard.md` or `{kanban_path}/_index.md` (customize path)
-  - [Example: ai-dev-kit] `docs/project-management/kanban/_index.md` or `docs/project-management/kanban/kboard.md`
+  - [Example: ai-dev-kit] `docs/kanban/_index.md` or `docs/kanban/kboard.md`
 - Epic Docs: `{kanban_path}/epics/Epic-{epic}/Epic-{epic}.md` (customize path)
-  - [Example: ai-dev-kit] `docs/project-management/kanban/epics/Epic-{epic}/Epic-{epic}.md`
+  - [Example: ai-dev-kit] `docs/kanban/epics/Epic-{epic}/Epic-{epic}.md`
 - Story Docs: `{kanban_path}/epics/Epic-{epic}/Story-{story}-*.md` (customize path)
-  - [Example: ai-dev-kit] `docs/project-management/kanban/epics/Epic-{epic}/Story-{story}-*.md`
+  - [Example: ai-dev-kit] `docs/kanban/epics/Epic-{epic}/Story-{story}-*.md`
 - Validators: `{scripts_path}/validation/validate_branch_context.py`, `{scripts_path}/validation/validate_changelog_format.py`
   - [Example: ai-dev-kit] `packages/frameworks/workflow-mgt/scripts/validation/validate_branch_context.py`, `packages/frameworks/workflow-mgt/scripts/validation/validate_changelog_format.py`
 
@@ -643,7 +645,7 @@ After copying this section to your `.cursorrules`, you MUST:
 2. **Update version file location** (currently shows `src/{project}/version.py` as template)
    - [Example: ai-dev-kit] `src/fynd_deals/version.py` (legacy path, acceptable for now)
 3. **Update Kanban paths** (currently shows `{kanban_path}/...` as templates)
-   - [Example: ai-dev-kit] `docs/project-management/kanban/epics/Epic-{epic}/Epic-{epic}.md`
+   - [Example: ai-dev-kit] `docs/kanban/epics/Epic-{epic}/Epic-{epic}.md`
 4. **Update validator script paths** (currently shows `{scripts_path}/...` as templates)
    - [Example: ai-dev-kit] `packages/frameworks/workflow-mgt/scripts/validation/...`
 5. **Reference your project's versioning policy** instead of dev-kit policy
@@ -656,6 +658,6 @@ After copying this section to your `.cursorrules`, you MUST:
 When using this section in the ai-dev-kit repository itself:
 - Version file: `src/fynd_deals/version.py`
 - Changelog Archive: `docs/changelog-and-release-notes/changelog-archive/`
-- Kanban: `docs/project-management/kanban/`
+- Kanban: `docs/kanban/`
 - Validators: `packages/frameworks/workflow-mgt/scripts/validation/`
 - Versioning Policy: `docs/governance/standards/dev-kit-versioning-policy.md` (canonical SoT)

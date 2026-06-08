@@ -930,7 +930,7 @@ def collect_config_interactive(project_root: Path, mode: Optional[str] = None) -
         print("\n" + _msg(project_root, "installer.wizard.kanban_heading"))
         kanban_root = prompt_question(
             _msg(project_root, "installer.wizard.kanban_root"),
-            default="docs/project-management/kanban",
+            default="docs/kanban",
             project_root=project_root,
         )
         config['kanban_root'] = kanban_root
@@ -1121,10 +1121,10 @@ def generate_cursorrules_section(config: Dict) -> str:
         'src/{project}/version.py': version_file,
         'src/fynd_deals/version.py': version_file,
         '{project}': project_name,
-        '{kanban_path}': config.get('kanban_root', 'docs/project-management/kanban'),
+        '{kanban_path}': config.get('kanban_root', 'docs/kanban'),
         '{changelog_archive_path}': config['changelog_dir'],
         '{scripts_path}': config['scripts_path'],
-        'docs/project-management/kanban': config.get('kanban_root', 'docs/project-management/kanban'),
+        'docs/kanban': config.get('kanban_root', 'docs/kanban'),
         'docs/changelog-and-release-notes/changelog-archive': config['changelog_dir'],
     }
     

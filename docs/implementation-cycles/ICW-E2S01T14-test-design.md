@@ -10,7 +10,7 @@ housekeeping_policy: keep
 
 **Task:** E2:S01:T14  
 **Related FR:** FR-048  
-**Host Task:** [T14-rw-trigger-extensions-multiple-use-cases-fr048.md](../project-management/kanban/epics/epic-02/story-01-rw-agent-execution-and-docs/T14-rw-trigger-extensions-multiple-use-cases-fr048.md)  
+**Host Task:** [T14-rw-trigger-extensions-multiple-use-cases-fr048.md](../kanban/epics/epic-02/story-01-rw-agent-execution-and-docs/T14-rw-trigger-extensions-multiple-use-cases-fr048.md)  
 **Created:** 2026-04-09
 
 ---
@@ -24,7 +24,7 @@ Validate documentation-level traceability invariants with deterministic checks o
 ## Coverage Matrix
 
 1. **FR metadata correctness**
-   - File: `docs/project-management/kanban/fr-br/FR-048-rw-trigger-extensions-for-multiple-use-cases.md`
+   - File: `docs/kanban/fr-br/FR-048-rw-trigger-extensions-for-multiple-use-cases.md`
    - Check: `Code` is `E2:S01:T14`, implementing task link resolves.
 
 2. **Task housing correctness**
@@ -32,7 +32,7 @@ Validate documentation-level traceability invariants with deterministic checks o
    - Check: task title/ID aligns with `E2:S01:T14`.
 
 3. **Story checklist wiring**
-   - File: `docs/project-management/kanban/epics/epic-02/story-01-rw-agent-execution-and-docs.md`
+   - File: `docs/kanban/epics/epic-02/story-01-rw-agent-execution-and-docs.md`
    - Check: checklist row references `T14` task doc and `FR-048`.
 
 4. **Bidirectional links**

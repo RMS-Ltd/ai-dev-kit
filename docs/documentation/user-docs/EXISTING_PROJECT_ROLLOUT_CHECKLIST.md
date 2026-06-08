@@ -14,7 +14,7 @@ housekeeping_policy: keep
 
 ### Scope (brownfield vs greenfield)
 
-This checklist supports **existing / brownfield** repositories. **Canonical brownfield SoT:** [`INSTALL_IN_YOUR_PROJECT.md — Brownfield adoption`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/INSTALL_IN_YOUR_PROJECT.md#brownfield-adoption-existing-repositories) (FR-081 / [IPP-E6S9T2](../../implementation-cycles/IPP-E6S09T02-brownfield-modular-adopter-integration-fr081.md)). For **greenfield**, use [Greenfield Install Specification](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/INSTALL_IN_YOUR_PROJECT.md#greenfield-install-specification-wave-1-lock) and [IPW-E6S9T1](../../implementation-cycles/IPW-E6S09T01-greenfield-installation-fr080.md). Policy: [ADR-003](../../architecture/standards-and-adrs/ADR-003-greenfield-vs-brownfield-adoption.md).
+This checklist supports **existing / brownfield** repositories. **Canonical brownfield SoT:** [`INSTALL_IN_YOUR_PROJECT.md — Brownfield adoption`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/INSTALL_IN_YOUR_PROJECT.md#brownfield-adoption-existing-repositories) (FR-081 / [IPP-E6S9T2](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/implementation-cycles/IPP-E6S09T02-brownfield-modular-adopter-integration-fr081.md)). For **greenfield**, use [Greenfield Install Specification](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/INSTALL_IN_YOUR_PROJECT.md#greenfield-install-specification-wave-1-lock) and [IPW-E6S9T1](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/implementation-cycles/IPW-E6S09T01-greenfield-installation-fr080.md). Policy: [ADR-003](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/architecture/standards-and-adrs/ADR-003-greenfield-vs-brownfield-adoption.md).
 
 ---
 
@@ -97,7 +97,7 @@ git checkout -b epic/1-test
 # e.g. RW E1S01T01 or RW E1:S01:T01 in Cursor (FR-060 — task id same message as RW)
 
 # Test Kanban installer worked
-ls docs/project-management/kanban/epics/
+ls docs/kanban/epics/
 # Should show: epic-01, epic-02, epic-03, epic-04, epic-05, epic-06, epic-07, epic-08, epic-10, epic-18, epic-22, epic-23
 ```
 
@@ -164,10 +164,10 @@ python3 scripts/install_kanban_framework.py --mode fresh
 
 ```bash
 # Check epics installed
-ls docs/project-management/kanban/epics/
+ls docs/kanban/epics/
 
 # Check Epic 1 is contextualized with your project name
-grep "Epic 1:" docs/project-management/kanban/epics/epic-01/epic-01.md
+grep "Epic 1:" docs/kanban/epics/epic-01/epic-01.md
 ```
 
 ---
@@ -175,7 +175,7 @@ grep "Epic 1:" docs/project-management/kanban/epics/epic-01/epic-01.md
 ## ⚠️ Critical Warnings
 
 ### DO NOT:
-- ❌ Manually copy epics from `docs/project-management/kanban/epics/` (these are ai-dev-kit's actual epics, not templates)
+- ❌ Manually copy epics from `docs/kanban/epics/` (these are ai-dev-kit's actual epics, not templates)
 - ❌ Skip the installers (they handle configuration automatically)
 - ❌ Use ai-dev-kit's actual Kanban board (use canonical templates instead)
 
@@ -232,7 +232,7 @@ grep "Epic 1:" docs/project-management/kanban/epics/epic-01/epic-01.md
 
 **Kanban epics show "AI Dev Kit":**
 - You manually copied instead of using installer
-- Remove epics: `rm -rf docs/project-management/kanban/epics/Epic-*`
+- Remove epics: `rm -rf docs/kanban/epics/Epic-*`
 - Run installer: `python3 scripts/install_kanban_framework.py --mode fresh`
 
 **Version file not found:**

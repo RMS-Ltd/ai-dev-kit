@@ -1,0 +1,16 @@
+{
+  "report_type": "rw_step7_structure_prune",
+  "release_scope": "E08:S03:T12",
+  "version": "v0.8.3.12+11",
+  "evidence_mode": "structure_prune",
+  "rows": {
+    "E08:S03:T12": {
+      "allowed": true,
+      "reason": "T12 COMPLETE @ v0.8.3.12+11 — BR-099 RESOLVED; pruned from active kboard (kanban-completed + intake-completed)"
+    },
+    "E08:S03:T16": {
+      "allowed": true,
+      "reason": "T16 deferral lifted @ T12 closure — row text + Last modified updated (RW Step 7 v0.8.3.12+11)"
+    }
+  }
+}

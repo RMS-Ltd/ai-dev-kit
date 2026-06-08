@@ -84,5 +84,5 @@ housekeeping_policy: keep
 
 ## References
 
-- `docs/project-management/kanban/epics/Epic-{epic}/Story-{story_padded}-*.md`
+- `docs/kanban/epics/Epic-{epic}/Story-{story_padded}-*.md`
 

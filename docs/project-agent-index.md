@@ -27,10 +27,11 @@ housekeeping_policy: keep
 | Track ID | Label | Entry |
 | -------- | ----- | ----- |
 | `workflows` | RW, UKW, IPW, CMW, PVW | [Workflow cheatsheet](guides/workflow-initiation-cheatsheet.md) |
-| `kanban` | Boards + intake | [kboard.md](project-management/kanban/kboard.md) |
+| `kanban` | Boards + intake | [kboard.md](kanban/kboard.md) |
 | `governance` | Policies + ADRs | [docs/governance/README.md](governance/README.md) |
 | `frameworks` | Packaged frameworks | [workflow mgt README](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/README.md) |
 | `planning` | IPW / IPP / ICW | [.claude/commands/ipw.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/.claude/commands/ipw.md) |
+| `maintainer-kb` | Notion maintainer KB | [ADR-024](architecture/standards-and-adrs/ADR-024-documentation-surfaces-three-surface-model-fr114.md) |
 | `meta` | Bootstrap architecture | [ADR-012](architecture/standards-and-adrs/ADR-012-agent-bootstrap-and-task-routing.md) |
 
 Full routing table: [`AGENTS.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/AGENTS.md) § Task routing (mirror: manifest `taskRouting[]`).
@@ -41,10 +42,11 @@ Full routing table: [`AGENTS.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/mai
 
 - Entire [`CHANGELOG.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/CHANGELOG.md) archive tree or `docs/changelog-and-release-notes/changelog-archive/` unless doing changelog work.
 - [`docs/journals/`](journals) unless forensic/RW recovery is routed.
-- Full [`fbuboard.md`](project-management/kanban/kboard.md) MoSCOW scan unless kanban/FBU track matched.
+- Full [`fbuboard.md`](kanban/kboard.md) MoSCOW scan unless kanban/FBU track matched.
 - Agent transcripts or plan folders outside the repo.
 - Full [`.cursorrules`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/.cursorrules) ingest before reading [`AGENTS.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/AGENTS.md) — load workflow sections when `workflows` track matches.
 - [`project-agent-manifest.json`](project-agent-manifest.json) on cold start (routing is in `AGENTS.md`).
+- New maintainer docs under `docs/knowledge/`, `docs/analysis/`, `docs/maintenance/` — use Notion ([ADR-024](architecture/standards-and-adrs/ADR-024-documentation-surfaces-three-surface-model-fr114.md)).
 
 ---
 
@@ -93,5 +95,5 @@ See [agent-cold-start-checklist.md](guides/agent-cold-start-checklist.md).
 
 ## Related
 
-- [FR-103](project-management/kanban/fr-br/FR-103-agent-bootstrap-and-task-routing.md) · [E02:S16:T17](project-management/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T17-agent-bootstrap-and-task-routing-fr103.md)
-- [Kanban workflow agents](project-management/kanban/AGENTS.md)
+- [FR-103](kanban/fr-br/FR-103-agent-bootstrap-and-task-routing.md) · [E02:S16:T17](kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T17-agent-bootstrap-and-task-routing-fr103.md)
+- [Kanban workflow agents](kanban/AGENTS.md)

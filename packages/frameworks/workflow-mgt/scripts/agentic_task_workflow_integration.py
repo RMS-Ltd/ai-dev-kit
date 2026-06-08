@@ -40,7 +40,7 @@ def create_tasks_from_commit(
     Args:
         changed_files: List of changed file paths from the commit
         project_root: Root directory of the project (defaults to current directory)
-        kanban_path: Path to project's Kanban structure (defaults to docs/project-management/kanban)
+        kanban_path: Path to project's Kanban structure (defaults to docs/kanban)
         framework_path: Path to Kanban framework (defaults to packages/frameworks/kanban)
         **kwargs: Additional context from trigger (commit_message, trigger info, etc.)
     

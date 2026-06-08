@@ -14,7 +14,7 @@ housekeeping_policy: keep
 **Related Work:** Epic 20, Story 11
 **References:**
 - [Versioning Policy (Schema)](versioning-policy.md) - Schema definition
-- [Kanban Governance Policy](../../project-management/rituals/policy/kanban-governance-policy.md) - Work item structure and task-level versioning
+- [Kanban Governance Policy](docs/governance/kanban/kanban-governance-policy.md) - Work item structure and task-level versioning
 - [Release Workflow Reference](../../Documentation/Developer_Docs/vwmp/release-workflow-reference.md) - Implementation of versioning strategy
 - [Cursor Rules](../../../../.cursorrules) - Fundamental system rules
 
@@ -429,7 +429,7 @@ That document defines:
 
 **Core Policy Documents:**
 - **[Versioning Policy (Schema)](versioning-policy.md)** - Schema definition (RC.EPIC.STORY.TASK+BUILD)
-- **[Kanban Governance Policy](../../project-management/rituals/policy/kanban-governance-policy.md)** - Work item structure, task-level versioning requirements, and release workflow integration
+- **[Kanban Governance Policy](docs/governance/kanban/kanban-governance-policy.md)** - Work item structure, task-level versioning requirements, and release workflow integration
 - **[Release Workflow Reference](../../Documentation/Developer_Docs/vwmp/release-workflow-reference.md)** - Automated implementation of versioning strategy
 - **[Cursor Rules](../../../../.cursorrules)** - Fundamental system rules that underpin all policies ⭐
 

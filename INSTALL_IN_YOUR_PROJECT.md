@@ -83,7 +83,7 @@ Other guides under [`docs/documentation/user-docs/`](docs/documentation/user-doc
 | Short `README` at vendor root | `docs/project-management/` (ai-dev-kit kanban) |
 | Published install docs (link below) | `portal/`, changelog archive, `tests/` |
 
-### Target layout ([FR-110](docs/project-management/kanban/fr-br/FR-110-lean-adopter-distribution-footprint-and-vendor-bundle.md))
+### Target layout ([FR-110](docs/kanban/fr-br/FR-110-lean-adopter-distribution-footprint-and-vendor-bundle.md))
 
 The repo ships **`greenfield-install/`** — vendor or copy **that directory** (not the full maintainer tree):
 
@@ -159,7 +159,7 @@ This section defines the canonical **greenfield** path for new or template proje
 **Language first (RW installer):** `install_release_workflow.py` prompts for UK/US English **before** RW path questions and writes `ai-dev-kit-config.yaml` (separate from `rw-config.yaml`). Flags: `--language en-GB|en-US`, `--non-interactive` (default UK English), `--force` (overwrite existing localisation config). Re-runs skip the write if the file exists unless `--force` is set.
 
 - Policy anchor: [ADR-003](docs/architecture/standards-and-adrs/ADR-003-greenfield-vs-brownfield-adoption.md)
-- Brownfield is separate: see [Brownfield adoption (existing repositories)](#brownfield-adoption-existing-repositories) below; policy [FR-081](docs/project-management/kanban/fr-br/FR-081-brownfield-modular-adopter-integration.md); planning [IPP-E6S09T02](docs/implementation-cycles/IPP-E6S09T02-brownfield-modular-adopter-integration-fr081.md)
+- Brownfield is separate: see [Brownfield adoption (existing repositories)](#brownfield-adoption-existing-repositories) below; policy [FR-081](docs/kanban/fr-br/FR-081-brownfield-modular-adopter-integration.md); planning [IPP-E6S09T02](docs/implementation-cycles/IPP-E6S09T02-brownfield-modular-adopter-integration-fr081.md)
 - Greenfield planning: [IPW-E6S09T01](docs/implementation-cycles/IPW-E6S09T01-greenfield-installation-fr080.md)
 
 ### Optional harness layer (ECC)
@@ -183,7 +183,7 @@ ADK adoption does **not** require [ECC](https://github.com/affaan-m/ECC) (MIT). 
 
    Use `--execute` only after Phase 0 passes on your project.
 
-Normative contract: [ECC ↔ ADK integration specification](docs/architecture/standards-and-adrs/ecc-adk-harness-layer-integration-specification.md). Brownfield adopters: same optional surface per [ADR-003](docs/architecture/standards-and-adrs/ADR-003-greenfield-vs-brownfield-adoption.md) and [FR-081](docs/project-management/kanban/fr-br/FR-081-brownfield-modular-adopter-integration.md).
+Normative contract: [ECC ↔ ADK integration specification](docs/architecture/standards-and-adrs/ecc-adk-harness-layer-integration-specification.md). Brownfield adopters: same optional surface per [ADR-003](docs/architecture/standards-and-adrs/ADR-003-greenfield-vs-brownfield-adoption.md) and [FR-081](docs/kanban/fr-br/FR-081-brownfield-modular-adopter-integration.md).
 
 ### Scope boundary
 
@@ -221,7 +221,7 @@ The RW installer exits with the same guidance if PyYAML is missing (BR-082).
 After `install_kanban_framework.py --mode fresh`, on-disk layout is typically:
 
 ```text
-docs/project-management/kanban/
+docs/kanban/
   kboard.md                    # sole active MoSCOW board (ADR-018)
   kanban-structure.md
   epics/epic-01/epic-01.md     # lowercase fresh install (UXR-017); legacy Epic-/Story- also supported
@@ -249,13 +249,13 @@ Copy-paste fallback if you skip the installer prompts:
 
 ```yaml
 use_kanban: true
-kanban_root: docs/project-management/kanban
+kanban_root: docs/kanban
 # Lowercase fresh install (UXR-017 / book T03 Step 4.1) — installer mode C detects unpadded epic-N:
 epic_doc_pattern: epics/epic-{epic}/epic-{epic}.md
 story_doc_pattern: epics/epic-{epic}/story-{story:03d}-*.md
 task_doc_pattern: epics/epic-{epic}/story-{story:03d}/t{task:02d}-*.md
 kanban_board: kboard.md
-fr_br_root: docs/project-management/kanban/fr-br
+fr_br_root: docs/kanban/fr-br
 # Capital-case fresh install (legacy) — installer still supports Epic-/Story- paths:
 # epic_doc_pattern: epics/Epic-{epic}/Epic-{epic}.md
 # story_doc_pattern: epics/Epic-{epic}/Story-{story:03d}-*.md
@@ -386,9 +386,9 @@ Redact host paths, tokens, and internal URLs before sharing logs outside your te
 
 ### Wave 4 — Install telemetry and feedback (**FR-078** / **FR-079**)
 
-- **[FR-078](docs/project-management/kanban/fr-br/FR-078-comprehensive-install-event-contract-logging-and-feedback-quality.md)** — install **event** logging (COMPLETE): set `AI_DEV_KIT_INSTALL_LOG_PATH` before installers run; logs land under `logs/ai-dev-kit/install/`.
-- **[FR-079](docs/project-management/kanban/fr-br/FR-079-install-feedback-submission-path-and-governance.md)** — feedback submission (COMPLETE): package install evidence for maintainers via the documented CLI / submission workflow.
-- **[FR-108](docs/project-management/kanban/fr-br/FR-108-install-setup-error-code-registry-and-emission.md)** — stable `ADK-I*` error codes in console output (see [troubleshooting § install error codes](docs/documentation/user-docs/framework-dependency-troubleshooting-guide.md#install-error-codes-adk)).
+- **[FR-078](docs/kanban/fr-br/FR-078-comprehensive-install-event-contract-logging-and-feedback-quality.md)** — install **event** logging (COMPLETE): set `AI_DEV_KIT_INSTALL_LOG_PATH` before installers run; logs land under `logs/ai-dev-kit/install/`.
+- **[FR-079](docs/kanban/fr-br/FR-079-install-feedback-submission-path-and-governance.md)** — feedback submission (COMPLETE): package install evidence for maintainers via the documented CLI / submission workflow.
+- **[FR-108](docs/kanban/fr-br/FR-108-install-setup-error-code-registry-and-emission.md)** — stable `ADK-I*` error codes in console output (see [troubleshooting § install error codes](docs/documentation/user-docs/framework-dependency-troubleshooting-guide.md#install-error-codes-adk)).
 
 **Adopter practice:** Capture the SemVer banner line + any `ADK-*` code + install log path or [install receipt](docs/documentation/user-docs/install-receipt-reference.md). **Do not paste** secrets, tokens, or private URLs.
 
@@ -473,17 +473,28 @@ Legend: **R** = Required · **O** = Optional · **Rec** = Recommended · **N/A**
 
 - Prefer **`--mode migration`** or **`canonical_adoption`** when you already have boards or backlog docs.
 - Use **`--mode fresh`** only for greenfield-style empty Kanban roots; the installer prints a brownfield warning when you select fresh on an existing repo.
-- **Empty repo:** `--mode fresh` creates the Kanban skeleton (`epics/` included) before validation — **`--force` is not required** to bypass missing-directory checks on first install (see [BR-080](docs/project-management/kanban/fr-br/BR-080-kanban-fresh-mode-validation-requires-force-on-empty-repo.md)).
+- **Empty repo:** `--mode fresh` creates the Kanban skeleton (`epics/` included) before validation — **`--force` is not required** to bypass missing-directory checks on first install (see [BR-080](docs/kanban/fr-br/BR-080-kanban-fresh-mode-validation-requires-force-on-empty-repo.md)).
 - **Install outcome:** When `kboard.md` and `epics/` are created, the installer reports **`Final status: SUCCESS`** (not PARTIAL solely because board files were absent during pre-install validation). `kanban-structure.md` is copied from `templates/KANBAN_STRUCTURE_TEMPLATE.md` (BR-078).
 - **Epic 22/23 templates:** Fresh install resolves `templates/Epic-22/Epic-22.md` and `templates/Epic-23/Epic-23.md` (or `templates/epics/Epic-{n}-*.md`) — not placeholder stubs (BR-079).
 - Installer installs **canonical templates**, not ai-dev-kit maintainer epics—see [kanban/README.md](packages/frameworks/kanban/README.md).
 
 ```bash
 python3 "packages/frameworks/kanban/scripts/install_kanban_framework.py" \
-  --mode migration --kanban-path "docs/project-management/kanban"
+  --mode migration --kanban-path "docs/kanban"
 ```
 
 Align `kanban_root` in `rw-config.yaml` with your actual path before RW Step 7.
+
+### Migrating from `docs/project-management/kanban/` (FR-118)
+
+If your project still uses the legacy book-repo path:
+
+1. `git mv docs/project-management/kanban docs/kanban` (preserve history).
+2. Set `kanban_root: docs/kanban` and `fr_br_root: docs/kanban/fr-br` in `rw-config.yaml`.
+3. Run the mechanical rewriter (optional):  
+   `python packages/frameworks/workflow-mgt/scripts/kanban/apply_kanban_root_migration_fr118.py --apply`
+4. Re-run Kanban install validation:  
+   `python3 packages/frameworks/kanban/scripts/install_kanban_framework.py --mode update --kanban-path docs/kanban`
 
 ### Worked example: partial adoption (anonymized)
 
@@ -505,17 +516,17 @@ Align `kanban_root` in `rw-config.yaml` with your actual path before RW Step 7.
 
 | Topic | Status | Track in |
 |-------|--------|----------|
-| GitHub Release framework tarballs | **Available** | [FR-062](docs/project-management/kanban/fr-br/FR-062-github-release-installation-experience.md) — `install_package_from_release.py` |
-| Install logging + feedback | **Available** | [FR-078](docs/project-management/kanban/fr-br/FR-078-comprehensive-install-event-contract-logging-and-feedback-quality.md), [FR-079](docs/project-management/kanban/fr-br/FR-079-install-feedback-submission-path-and-governance.md), [install-receipt-reference.md](docs/documentation/user-docs/install-receipt-reference.md) |
-| Install error codes | **Available** | [FR-108](docs/project-management/kanban/fr-br/FR-108-install-setup-error-code-registry-and-emission.md), [FR-111](docs/project-management/kanban/fr-br/FR-111-acquisition-layer-adk-error-codes-and-install-error-doc-hygiene.md) (registry **1.1.0**) |
-| Intelligent epic matching | Document only | Kanban `canonical_adoption`; [FR-011](docs/project-management/kanban/fr-br/FR-011-intelligent-epic-matching-ai-assisted-canonical-adoption.md) |
+| GitHub Release framework tarballs | **Available** | [FR-062](docs/kanban/fr-br/FR-062-github-release-installation-experience.md) — `install_package_from_release.py` |
+| Install logging + feedback | **Available** | [FR-078](docs/kanban/fr-br/FR-078-comprehensive-install-event-contract-logging-and-feedback-quality.md), [FR-079](docs/kanban/fr-br/FR-079-install-feedback-submission-path-and-governance.md), [install-receipt-reference.md](docs/documentation/user-docs/install-receipt-reference.md) |
+| Install error codes | **Available** | [FR-108](docs/kanban/fr-br/FR-108-install-setup-error-code-registry-and-emission.md), [FR-111](docs/kanban/fr-br/FR-111-acquisition-layer-adk-error-codes-and-install-error-doc-hygiene.md) (registry **1.1.0**) |
+| Intelligent epic matching | Document only | Kanban `canonical_adoption`; [FR-011](docs/kanban/fr-br/FR-011-intelligent-epic-matching-ai-assisted-canonical-adoption.md) |
 | npm/pip framework packages | Future | Phase 3 in [framework-dependency-installation-guide.md](docs/documentation/user-docs/framework-dependency-installation-guide.md) |
 
 ---
 
 ### Package installation methods (greenfield and brownfield)
 
-**Two-phase reminder:** Every method below has an **acquisition** step (files on disk) and a separate **configuration** step (`install_release_workflow.py` and optionally `install_kanban_framework.py`). Copying or downloading frameworks alone does **not** wire RW — see [installation paths matrix](docs/project-management/kanban/epics/epic-02/story-14-workflow-management-package-installation-evaluation/installation-paths-matrix.md).
+**Two-phase reminder:** Every method below has an **acquisition** step (files on disk) and a separate **configuration** step (`install_release_workflow.py` and optionally `install_kanban_framework.py`). Copying or downloading frameworks alone does **not** wire RW — see [installation paths matrix](docs/kanban/epics/epic-02/story-14-workflow-management-package-installation-evaluation/installation-paths-matrix.md).
 
 ### Method 1: GitHub Releases (Recommended - Available Now)
 
@@ -652,7 +663,7 @@ When installing frameworks in a project, follow these steps:
 
 4. **Follow Framework-Specific Instructions:**
    - Each framework has a `README.md` with installation steps
-   - **Important:** Use interactive installers — DO NOT manually copy maintainer epics from `docs/project-management/kanban/epics/`
+   - **Important:** Use interactive installers — DO NOT manually copy maintainer epics from `docs/kanban/epics/`
 
 5. **Verify Installation:**
    - Run validation scripts
@@ -694,7 +705,7 @@ When installing frameworks in a project, follow these steps:
 - **Use Cases:** [`docs/documentation/user-docs/framework-dependency-use-cases.md`](docs/documentation/user-docs/framework-dependency-use-cases.md)
 - **FAQ:** [`docs/documentation/user-docs/framework-dependency-faq.md`](docs/documentation/user-docs/framework-dependency-faq.md)
 - **Troubleshooting:** [`docs/documentation/user-docs/framework-dependency-troubleshooting-guide.md`](docs/documentation/user-docs/framework-dependency-troubleshooting-guide.md)
-- **Installation paths matrix:** [`installation-paths-matrix.md`](docs/project-management/kanban/epics/epic-02/story-14-workflow-management-package-installation-evaluation/installation-paths-matrix.md)
+- **Installation paths matrix:** [`installation-paths-matrix.md`](docs/kanban/epics/epic-02/story-14-workflow-management-package-installation-evaluation/installation-paths-matrix.md)
 
 ---
 

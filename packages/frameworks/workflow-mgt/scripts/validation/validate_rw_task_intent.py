@@ -90,8 +90,8 @@ def find_story_file(config: Optional[Dict], epic: int, story: int) -> Optional[P
         story_pattern = config.get("story_doc_pattern", "**/Story-*.md")
         candidate_files.extend(project_root.glob(str(kanban_root / story_pattern)))
     for pattern in (
-        "docs/project-management/kanban/epics/Epic-*/Story-*.md",
-        "docs/project-management/kanban/epics/Epic-*/stories/Story-*.md",
+        "docs/kanban/epics/Epic-*/Story-*.md",
+        "docs/kanban/epics/Epic-*/stories/Story-*.md",
     ):
         candidate_files.extend(project_root.glob(pattern))
 

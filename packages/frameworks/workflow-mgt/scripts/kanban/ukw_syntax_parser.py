@@ -56,7 +56,7 @@ def run_ukw_mode(mode: str, kanban_root: Optional[Path] = None) -> dict:
         Dict with results and status
     """
     if kanban_root is None:
-        kanban_root = Path("docs/project-management/kanban")
+        kanban_root = Path("docs/kanban")
     
     if mode in ['moscow', 'm', 'prioritization']:
         return run_moscow_prioritization_mode(kanban_root)
@@ -395,7 +395,6 @@ def find_tasks_in_story(epic: int, story: int, kanban_root: Path) -> List[Tuple[
         List of (epic, story, task) tuples
     """
     tasks = []
-    kanban_root / f"epics/Epic-{epic}/Story-{story:03d}-*"
     
     # Find story directory
     story_dirs = list(kanban_root.glob(f"epics/Epic-{epic}/Story-{story:03d}-*"))
@@ -409,7 +408,6 @@ def find_tasks_in_story(epic: int, story: int, kanban_root: Path) -> List[Tuple[
     story_path = story_dirs[0]
     
     # Find all task documents in story directory
-    story_path / "T*-*.md"
     task_files = list(story_path.glob("T*-*.md"))
     
     for task_file in task_files:
@@ -498,7 +496,7 @@ def parse_task_target(target_str: str, kanban_root: Optional[Path] = None) -> Li
         List of (epic, story, task) tuples in canonical order
     """
     if kanban_root is None:
-        kanban_root = Path("docs/project-management/kanban")
+        kanban_root = Path("docs/kanban")
     
     target_str = target_str.strip()
     
@@ -553,7 +551,7 @@ def validate_task_target(target_str: str, kanban_root: Optional[Path] = None) ->
         (is_valid, error_message)
     """
     if kanban_root is None:
-        kanban_root = Path("docs/project-management/kanban")
+        kanban_root = Path("docs/kanban")
     
     target_str = target_str.strip()
     

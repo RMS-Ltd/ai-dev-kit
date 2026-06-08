@@ -116,8 +116,8 @@ housekeeping_policy: keep
 - Version: `[RC.EPIC.STORY.TASK+BUILD]`
 
 **Kanban Links:**
-- Epic: [`docs/project-management/kanban/epics/Epic-X/Epic-X.md`](path/to/Epic-X.md)
-- Story: [`docs/project-management/kanban/epics/Epic-X/Story-XXX-*.md`](path/to/Story.md)
+- Epic: [`docs/kanban/epics/Epic-X/Epic-X.md`](path/to/Epic-X.md)
+- Story: [`docs/kanban/epics/Epic-X/Story-XXX-*.md`](path/to/Story.md)
 - Task: [Link to Task in Story document]
 
 ---

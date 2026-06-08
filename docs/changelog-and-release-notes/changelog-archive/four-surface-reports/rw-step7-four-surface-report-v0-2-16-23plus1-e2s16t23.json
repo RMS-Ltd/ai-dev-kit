@@ -1,0 +1,33 @@
+{
+  "contract": "FR-092",
+  "invocation_context": "rw_step_7",
+  "release_scope": "E2:S16:T23",
+  "internal_version": "0.2.16.23+1",
+  "surfaces": {
+    "task_doc": {
+      "touched": true,
+      "paths": [
+        "docs/project-management/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T23-cqg-gate-relocation-to-idw-phase-6b-adr022.md"
+      ]
+    },
+    "fbu_doc": {
+      "touched": false
+    },
+    "kboard": {
+      "touched": true,
+      "paths": [
+        "docs/project-management/kanban/kboard.md"
+      ]
+    },
+    "story_doc": {
+      "touched": true
+    },
+    "epic_doc": {
+      "touched": true
+    },
+    "kanban_completed": {
+      "touched": true
+    }
+  },
+  "timestamp_utc": "2026-06-08 13:29 UTC"
+}

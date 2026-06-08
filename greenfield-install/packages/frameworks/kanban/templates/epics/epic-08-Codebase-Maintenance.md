@@ -87,7 +87,7 @@ This epic encompasses codebase maintenance and review activities, including addr
 - None
 - *Parallel Development Candidacy:* Safe (can be done independently)
 
-> Full story: `docs/project-management/kanban/epics/epic-08/story-01-codebase-maintenance-tasks.md`
+> Full story: `docs/kanban/epics/epic-08/story-01-codebase-maintenance-tasks.md`
 
 ---
 
@@ -121,7 +121,7 @@ This epic encompasses codebase maintenance and review activities, including addr
 - None
 - *Parallel Development Candidacy:* Safe (can be done independently)
 
-> Full story: `docs/project-management/kanban/epics/epic-08/story-02-code-review-standards-and-processes.md`
+> Full story: `docs/kanban/epics/epic-08/story-02-code-review-standards-and-processes.md`
 
 ---
 
@@ -155,7 +155,7 @@ This epic encompasses codebase maintenance and review activities, including addr
 - None
 - *Parallel Development Candidacy:* Safe (can be done independently)
 
-> Full story: `docs/project-management/kanban/epics/epic-08/story-03-code-quality-metrics-and-monitoring.md`
+> Full story: `docs/kanban/epics/epic-08/story-03-code-quality-metrics-and-monitoring.md`
 
 ---
 

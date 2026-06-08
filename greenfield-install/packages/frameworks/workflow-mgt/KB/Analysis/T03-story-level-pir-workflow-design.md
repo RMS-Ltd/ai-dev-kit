@@ -151,7 +151,7 @@ This document designs the Story-level Post-Implementation Review (PIR) workflow,
 **Purpose:** Collect all materials needed for Story review
 
 **Materials to Gather:**
-- Story document (`docs/project-management/kanban/epics/Epic-{N}/Story-{N}-{name}.md`)
+- Story document (`docs/kanban/epics/Epic-{N}/Story-{N}-{name}.md`)
 - All Task documents within Story
 - Changelog entries for Story version
 - Related BR/FR documents

@@ -16,9 +16,9 @@ housekeeping_policy: keep
 
 ## Context
 
-The lean adopter tree (`greenfield-install/`, [FR-110](../../project-management/kanban/fr-br/FR-110-lean-adopter-distribution-footprint-and-vendor-bundle.md)) is validated by `sync_greenfield_install.py --check` and CI smoke. Adopters today acquire it via sparse submodule or manual copy ([INSTALL_IN_YOUR_PROJECT.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/INSTALL_IN_YOUR_PROJECT.md)).
+The lean adopter tree (`greenfield-install/`, [FR-110](../../kanban/fr-br/FR-110-lean-adopter-distribution-footprint-and-vendor-bundle.md)) is validated by `sync_greenfield_install.py --check` and CI smoke. Adopters today acquire it via sparse submodule or manual copy ([INSTALL_IN_YOUR_PROJECT.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/INSTALL_IN_YOUR_PROJECT.md)).
 
-[UXR-021](../../project-management/kanban/fr-br/UXR-021-greenfield-install-github-packages-delivery-channel.md) identified teams that block submodules or lack git in deploy images. GitHub Packages (`ghcr.io`) can surface versioned artifacts without changing the lean layout contract: `vendor/ai-dev-kit/` = contents of `greenfield-install/` at a pinned version.
+[UXR-021](../../kanban/fr-br/UXR-021-greenfield-install-github-packages-delivery-channel.md) identified teams that block submodules or lack git in deploy images. GitHub Packages (`ghcr.io`) can surface versioned artifacts without changing the lean layout contract: `vendor/ai-dev-kit/` = contents of `greenfield-install/` at a pinned version.
 
 Alternatives considered:
 
@@ -88,8 +88,8 @@ Then run `install_greenfield_path.py` from the host project root as today.
 
 ## References
 
-- [UXR-021](../../project-management/kanban/fr-br/UXR-021-greenfield-install-github-packages-delivery-channel.md)
-- [FR-110](../../project-management/kanban/fr-br/FR-110-lean-adopter-distribution-footprint-and-vendor-bundle.md)
+- [UXR-021](../../kanban/fr-br/UXR-021-greenfield-install-github-packages-delivery-channel.md)
+- [FR-110](../../kanban/fr-br/FR-110-lean-adopter-distribution-footprint-and-vendor-bundle.md)
 - [package-management-design.md](package-management-design.md) — Releases primary; registry as complementary layer
 - [ADR-003](ADR-003-greenfield-vs-brownfield-adoption.md)
 - [IPP-E06S09T23](../../implementation-cycles/IPP-E06S09T23-greenfield-install-github-packages-delivery-uxr021.md)

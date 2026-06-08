@@ -2,7 +2,7 @@
 
 **Repo:** AI Dev Kit (RMS-Ltd) — workflow frameworks, kanban, validators, release automation for agentic development. **Human overview:** [`README.md`](README.md). **Branch:** `dev` for integration; epic branches for delivery.
 
-**Domain agent roles (UKW, intake, documentation):** [`docs/project-management/kanban/AGENTS.md`](docs/project-management/kanban/AGENTS.md)
+**Domain agent roles (UKW, intake, documentation):** [`docs/kanban/AGENTS.md`](docs/kanban/AGENTS.md)
 
 ---
 
@@ -27,11 +27,12 @@ Then:
 
 | Track | Keywords (match any) | loadFirst |
 | ----- | -------------------- | --------- |
-| `workflows` | RW, UKW, IPW, CMW, PVW, release, changelog, kanban sync, workflow | `docs/guides/workflow-initiation-cheatsheet.md`, `.claude/commands/rw.md` (terminal allowlist: `docs/developer-tools/ide-whitelist-guide.md`) |
-| `kanban-intake` | FR, BR, UXR, intake, kboard, fbuboard, MoSCOW, task doc | `docs/project-management/kanban/kboard.md`, `packages/frameworks/kanban/FR_BR_INTAKE_GUIDE.md` |
+| `workflows` | RW, UKW, IPW, IDW, CMW, PVW, release, changelog, kanban sync, workflow | `docs/guides/workflow-initiation-cheatsheet.md`, `.claude/commands/rw.md` (terminal allowlist: `docs/developer-tools/ide-whitelist-guide.md`) |
+| `kanban-intake` | FR, BR, UXR, intake, kboard, fbuboard, MoSCOW, task doc | `docs/kanban/kboard.md`, `packages/frameworks/kanban/FR_BR_INTAKE_GUIDE.md` |
 | `governance` | ADR, governance, policy, standard, versioning | `docs/governance/README.md` |
 | `framework-code` | package, validator, script, pytest, framework, workflow mgt | `packages/frameworks/workflow-mgt/README.md` |
 | `implementation-planning` | IPP, ICW, IPW, plan mode, implementation plan, specification | `.claude/commands/ipw.md`, `docs/governance/standards/dev-kit-ipw-ipp-vs-icw-artifacts.md` |
+| `maintainer-kb` | Notion, maintainer KB, knowledge base, investigation, analysis, records, maintainer doc, Engineering KB | `rw-config.yaml`, `docs/architecture/standards-and-adrs/ADR-024-documentation-surfaces-three-surface-model-fr114.md`, `docs/knowledge/README.md` |
 | `agent-bootstrap` | bootstrap, routing, cold start, AGENTS | `docs/architecture/standards-and-adrs/ADR-012-agent-bootstrap-and-task-routing.md` |
 
 When editing this table, update `docs/project-agent-manifest.json` `taskRouting[]` in the same change set.
@@ -42,7 +43,8 @@ When editing this table, update `docs/project-agent-manifest.json` `taskRouting[
 
 | Task | Summary | Task doc |
 | ---- | ------- | -------- |
-| E21:S04:T01 | FR-006 Phase 3+ — cultural adaptation (next epic-21 stream) | `docs/project-management/kanban/epics/epic-21/story-04-cultural-adaptation/T01-research-cultural-requirements-for-target-locales.md` |
+| E21:S04:T01 | FR-006 Phase 3+ — cultural adaptation (next epic-21 stream) | `docs/kanban/epics/epic-21/story-04-cultural-adaptation/T01-research-cultural-requirements-for-target-locales.md` |
+
 
 Refresh from `kboard.md` when running UKW or RW Step 7; mirror into manifest `openWork[]` if changed.
 
@@ -52,14 +54,15 @@ Refresh from `kboard.md` when running UKW or RW Step 7; mirror into manifest `op
 
 | ID | Rule | Source |
 | -- | ---- | ------ |
-| P-IPW-GATE | No implementation until IPP/ICW linked + explicit user go-ahead | [FR-083](docs/project-management/kanban/fr-br/FR-083-global-ipw-gated-implementation-contract.md) |
-| P-RW-GIT | Commit/tag via RW; push deferred (batch operator or `RW --push`) | [UXR-024](docs/project-management/kanban/fr-br/UXR-024-rw-local-release-default-no-push-batch-operator-push.md) · `.cursorrules` |
-| P-RW-TASK-TOKEN | RW requires `E:S:T` in trigger | [FR-060](docs/project-management/kanban/fr-br/FR-060-rw-task-argument-requirement.md) |
-| P-RW-STEP7 | RW Step 7 four-surface kanban reconciliation | [FR-092](docs/project-management/kanban/fr-br/FR-092-canonical-rw-ukw-kanban-consistency-program.md) |
-| P-EST-PADDING | Two-digit E/S/T in new writes | [UXR-014](docs/project-management/kanban/fr-br/UXR-014-two-digit-est-identifier-default-formatting.md) |
-| P-TRIGGER-ROUTING | `RW`/`UKW`/`IPW`/… at message start = workflow commands | [CLAUDE.md](CLAUDE.md) |
+| P-IPW-GATE | No implementation until IPP/ICW linked + explicit go-ahead (`IDW E:S:T` or `implement`) | [FR-083](docs/kanban/fr-br/FR-083-global-ipw-gated-implementation-contract.md) |
+| P-RW-GIT | Commit/tag via RW; **never push by default**; Step 9.7 CI parity before commit; `--all` before push/batch | [UXR-024](docs/kanban/fr-br/UXR-024-rw-local-release-default-no-push-batch-operator-push.md) · [E08:S03:T15](docs/kanban/epics/epic-08/story-03-automation-scripts/T15-github-actions-ci-health-perpetual-fr112.md) · `.cursorrules` |
+| P-RW-TASK-TOKEN | RW requires `E:S:T` in trigger | [FR-060](docs/kanban/fr-br/FR-060-rw-task-argument-requirement.md) |
+| P-RW-STEP7 | RW Step 7 four-surface kanban reconciliation | [FR-092](docs/kanban/fr-br/FR-092-canonical-rw-ukw-kanban-consistency-program.md) |
+| P-EST-PADDING | Two-digit E/S/T in new writes | [UXR-014](docs/kanban/fr-br/UXR-014-two-digit-est-identifier-default-formatting.md) |
+| P-TRIGGER-ROUTING | `RW`/`UKW`/`IPW`/`IDW`/… at message start = workflow commands | [CLAUDE.md](CLAUDE.md) |
 | P-INTAKE-ATOMIC | FR/BR/UXR intake needs task + links same session | [Intake guide](packages/frameworks/kanban/FR_BR_INTAKE_GUIDE.md) |
-| P-RW-BUILD | Same E:S:T → BUILD+1 default; no `git tag -f` on release tags; `--dpz` (alias: `--doc-policy-zero`) only if user-triggered + untagged | [BR-097](docs/project-management/kanban/fr-br/BR-097-rw-agent-reuses-tagged-build-and-force-moves-release-tags.md) |
+| P-RW-BUILD | Same E:S:T → BUILD+1 default; no `git tag -f` on release tags; `--dpz` (alias: `--doc-policy-zero`) only if user-triggered + untagged | [BR-097](docs/kanban/fr-br/BR-097-rw-agent-reuses-tagged-build-and-force-moves-release-tags.md) |
+| P-NOTION-FIRST | New maintainer docs → Notion MCP first; git stubs only per ADR-024 criteria | [ADR-024](docs/architecture/standards-and-adrs/ADR-024-documentation-surfaces-three-surface-model-fr114.md) |
 
 **Workflow execution SoT:** `.cursorrules` and `.claude/commands/` — load when `workflows` track applies, not at cold start.
 
@@ -81,14 +84,16 @@ If no keyword match, ask **one** clarifying question. Do not grep the whole repo
 - [`docs/project-agent-manifest.json`](docs/project-agent-manifest.json) at cold start (routing is in this file).
 - Changelog archive tree unless changelog/release work.
 - [`docs/journals/`](docs/journals/) unless forensic recovery.
-- Entire [`kboard.md`](docs/project-management/kanban/kboard.md) MoSCOW unless kanban-intake track.
+- Entire [`kboard.md`](docs/kanban/kboard.md) MoSCOW unless kanban-intake track.
+- New maintainer investigations/analysis/records under `docs/knowledge/`, `docs/analysis/`, `docs/maintenance/` — use Notion ([ADR-024](docs/architecture/standards-and-adrs/ADR-024-documentation-surfaces-three-surface-model-fr114.md)).
+- Cold-loading full Notion corpora via git stubs — route `maintainer-kb` track and use Notion MCP.
 - IDE plan folders outside repo (`~/.cursor/plans/`).
 
 ---
 
 ## IPW / implementation gate (summary)
 
-Planning-only (FR, BR, UXR, task, spec, plan): produce artifacts and **stop**. Implementation requires: (1) task `E:S:T`, (2) linked IPP or ICW under `docs/implementation-cycles/`, (3) explicit authorization (`implement`, `RW E:S:T`). **IPW:** `/ipw E:S:T` in plan mode — [`.claude/commands/ipw.md`](.claude/commands/ipw.md).
+Planning-only (FR, BR, UXR, task, spec, plan): produce artifacts and **stop**. Implementation requires: (1) task `E:S:T`, (2) linked IPP or ICW under `docs/implementation-cycles/`, (3) explicit authorization (`IDW E:S:T`, `implement`, or post-impl `RW E:S:T`). **IPW:** `/ipw E:S:T` in plan mode — [`.claude/commands/ipw.md`](.claude/commands/ipw.md). **IDW:** `/idw E:S:T [--rw]` in implementation mode — [`.claude/commands/idw.md`](.claude/commands/idw.md).
 
 **Cheatsheet:** [`docs/guides/workflow-initiation-cheatsheet.md`](docs/guides/workflow-initiation-cheatsheet.md)
 
@@ -96,4 +101,4 @@ Planning-only (FR, BR, UXR, task, spec, plan): produce artifacts and **stop**. I
 
 ## RW agent (summary)
 
-RW: version, changelog, kanban Step 7, commit, tag, push — **`RW E##:S##:T##`** or `/rw`. Details: `.cursorrules` + [release-workflow-agent-execution.md](packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md). Role detail: [kanban AGENTS.md](docs/project-management/kanban/AGENTS.md).
+RW: version, changelog, kanban Step 7, commit, tag, push — **`RW E##:S##:T##`** or `/rw`. Details: `.cursorrules` + [release-workflow-agent-execution.md](packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md). Role detail: [kanban AGENTS.md](docs/kanban/AGENTS.md).

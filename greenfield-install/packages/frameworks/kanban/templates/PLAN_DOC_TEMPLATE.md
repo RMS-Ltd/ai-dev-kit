@@ -12,7 +12,7 @@ housekeeping_policy: keep
 **Planning for:** [FR-XXX](../../../fr-br/FR-XXX-*.md) *(if applicable)*  
 **Status:** Draft | Review | Approved
 
-> **IPW (Implementation Planning Workflow):** Use this template when running **IPW** / **IPW E:S:T**. The **Host Task** link and bidirectional wiring to the task doc **Input** and **References** are **mandatory** before the plan is complete (see project **FR-042** — *Implementation Planning Workflow* in `docs/project-management/kanban/fr-br/`).
+> **IPW (Implementation Planning Workflow):** Use this template when running **IPW** / **IPW E:S:T**. The **Host Task** link and bidirectional wiring to the task doc **Input** and **References** are **mandatory** before the plan is complete (see project **FR-042** — *Implementation Planning Workflow* in `docs/kanban/fr-br/`).
 
 ---
 

@@ -118,41 +118,41 @@ IPW_GOVERNANCE_REL_CANDIDATES = (
     "ipw-governance.md",
     "packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/ipw/"
     "implementation-process-workflow-agent-execution.md",
-    "docs/project-management/kanban/AGENTS.md",
+    "docs/kanban/AGENTS.md",
 )
 
 # Supersede chain (FR-092 Wave 0).
 SUPERSEDED_FBUS = (
-    "docs/project-management/kanban/fr-br/"
+    "docs/kanban/fr-br/"
     "FR-091-rw-step-7-self-sufficient-scoped-kanban-reconciliation-without-ukw-dependency.md",
-    "docs/project-management/kanban/fr-br/"
+    "docs/kanban/fr-br/"
     "FR-090-ukw-canonical-row-transform-engine-and-board-specific-rendering-contracts.md",
-    "docs/project-management/kanban/fr-br/"
+    "docs/kanban/fr-br/"
     "FR-084-ipp-post-run-governance-reconciliation-ownership.md",
 )
 SUPERSEDED_TASKS = (
-    "docs/project-management/kanban/epics/epic-02/"
+    "docs/kanban/epics/epic-02/"
     "story-15-ipw-governance-and-publication-contract/"
     "T02-ipp-post-run-governance-reconciliation-ownership-fr084.md",
-    "docs/project-management/kanban/epics/epic-02/"
+    "docs/kanban/epics/epic-02/"
     "story-15-ipw-governance-and-publication-contract/"
     "T05-implement-ukw-rw-canonical-row-transform-engine-fr090.md",
-    "docs/project-management/kanban/epics/epic-02/"
+    "docs/kanban/epics/epic-02/"
     "story-15-ipw-governance-and-publication-contract/"
     "T06-rw-step-7-self-sufficient-scoped-kanban-reconciliation-fr091.md",
 )
 GATED_FBUS = (
-    "docs/project-management/kanban/fr-br/"
+    "docs/kanban/fr-br/"
     "BR-069-kboard-fbuboard-earliest-last-modified-timestamps-overwritten.md",
-    "docs/project-management/kanban/fr-br/"
+    "docs/kanban/fr-br/"
     "BR-070-rw-k-stage-files-completeness-gap-allows-partial-kanban-commit.md",
-    "docs/project-management/kanban/fr-br/"
+    "docs/kanban/fr-br/"
     "UXR-009-last-modified-stamp-forensic-integrity-and-drift-protection.md",
 )
 
 # Active boards subject to corpus-canonical idempotency.
 CORPUS_BOARDS_REL = (
-    "docs/project-management/kanban/kboard.md",
+    "docs/kanban/kboard.md",
 )
 
 # Phrases each governance doc MUST contain (Gate 1). Empty matches mean
@@ -516,7 +516,7 @@ def gate_2_supersede_chain(project_root: Path) -> GateVerdict:
 
     br042 = (
         project_root
-        / "docs/project-management/kanban/fr-br/"
+        / "docs/kanban/fr-br/"
         "BR-042-ukw-agent-board-cleanup-failure.md"
     )
     text = _read_text_or_none(br042)

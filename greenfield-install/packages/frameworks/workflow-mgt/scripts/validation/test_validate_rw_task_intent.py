@@ -87,12 +87,12 @@ def perpetual_ukw_fixture(tmp_path: Path) -> Path:
     cfg = (
         "version_file: src/fynd_deals/version.py\n"
         "use_kanban: true\n"
-        "kanban_root: docs/project-management/kanban\n"
+        "kanban_root: docs/kanban\n"
     )
     (tmp_path / "rw-config.yaml").write_text(cfg, encoding="utf-8")
     tdir = (
         tmp_path
-        / "docs/project-management/kanban/epics/epic-06/story-07-adk-example"
+        / "docs/kanban/epics/epic-06/story-07-adk-example"
     )
     tdir.mkdir(parents=True)
     (tdir / "T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md").write_text(
@@ -117,7 +117,7 @@ def test_full_mode_art_rejects_non_perpetual(intent_fixture: Path):
     # Add a non-perpetual E6:S07:T99 doc so --art fails (not perpetual)
     tdir = (
         intent_fixture
-        / "docs/project-management/kanban/epics/epic-06/story-07-x"
+        / "docs/kanban/epics/epic-06/story-07-x"
     )
     tdir.mkdir(parents=True)
     (tdir / "T99-not-perpetual.md").write_text(
@@ -127,7 +127,7 @@ def test_full_mode_art_rejects_non_perpetual(intent_fixture: Path):
     (intent_fixture / "rw-config.yaml").write_text(
         "version_file: src/fynd_deals/version.py\n"
         "use_kanban: true\n"
-        "kanban_root: docs/project-management/kanban\n",
+        "kanban_root: docs/kanban\n",
         encoding="utf-8",
     )
     r = _run(["--requested", "E6:S07:T99", "--art"], cwd=intent_fixture)

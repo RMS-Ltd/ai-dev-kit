@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # E02:S13:T09 — Planning: FR-050 Workflows Directory Reorganization (IPW)
 
-**Host Task:** [`T09-fr050-workflows-directory-reorganization.md`](../project-management/kanban/epics/epic-02/story-13-workflow-management-package-implementation-review/T09-fr050-workflows-directory-reorganization.md) **(E02:S13:T09)**  
-**Planning for:** [FR-050](../project-management/kanban/fr-br/FR-050-workflows-directory-structure-reorganization.md) · GAP-WFMGT-STRUCT-001  
+**Host Task:** [`T09-fr050-workflows-directory-reorganization.md`](../kanban/epics/epic-02/story-13-workflow-management-package-implementation-review/T09-fr050-workflows-directory-reorganization.md) **(E02:S13:T09)**  
+**Planning for:** [FR-050](../kanban/fr-br/FR-050-workflows-directory-structure-reorganization.md) · GAP-WFMGT-STRUCT-001  
 **Status:** Approved
 
 ---
@@ -163,5 +163,5 @@ Applies T08 RW stub pattern to six remaining flat duplicates. Intake flat YAML m
 ## References
 
 - [T08 IPP](IPP-E02S13T08-sync-packaged-workflows-live-spec.md)
-- [T05 gap log](../project-management/kanban/epics/epic-02/story-13-workflow-management-package-implementation-review/T05-create-gap-log-and-risk-assessment.md)
-- [FR-050](../project-management/kanban/fr-br/FR-050-workflows-directory-structure-reorganization.md)
+- [T05 gap log](../kanban/epics/epic-02/story-13-workflow-management-package-implementation-review/T05-create-gap-log-and-risk-assessment.md)
+- [FR-050](../kanban/fr-br/FR-050-workflows-directory-structure-reorganization.md)

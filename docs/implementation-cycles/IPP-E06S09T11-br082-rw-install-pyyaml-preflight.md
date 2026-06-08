@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # E06:S09:T11 — Planning: Spec, Tests, Implementation Plan (IPW)
 
-**Host Task:** [`T11-rw-install-pyyaml-preflight-br082.md`](../project-management/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T11-rw-install-pyyaml-preflight-br082.md) **(E06:S09:T11)**  
-**Planning for:** [BR-082](../project-management/kanban/fr-br/BR-082-rw-install-missing-pyyaml-preflight.md) · [GitHub #14](https://github.com/RMS-Ltd/ai-dev-kit/issues/14)  
+**Host Task:** [`T11-rw-install-pyyaml-preflight-br082.md`](../kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T11-rw-install-pyyaml-preflight-br082.md) **(E06:S09:T11)**  
+**Planning for:** [BR-082](../kanban/fr-br/BR-082-rw-install-missing-pyyaml-preflight.md) · [GitHub #14](https://github.com/RMS-Ltd/ai-dev-kit/issues/14)  
 **Status:** Implemented (2026-06-03 — pending user verification / RW)
 
 ---
@@ -99,5 +99,5 @@ Use `unittest.mock.patch.dict(sys.modules, {"yaml": None})` or subprocess with c
 
 ## References
 
-- [BR-082](../project-management/kanban/fr-br/BR-082-rw-install-missing-pyyaml-preflight.md)
-- [BR-083](../project-management/kanban/fr-br/BR-083-rw-install-default-patterns-mismatch-fresh-kanban-layout.md) (follow-on RW install)
+- [BR-082](../kanban/fr-br/BR-082-rw-install-missing-pyyaml-preflight.md)
+- [BR-083](../kanban/fr-br/BR-083-rw-install-default-patterns-mismatch-fresh-kanban-layout.md) (follow-on RW install)

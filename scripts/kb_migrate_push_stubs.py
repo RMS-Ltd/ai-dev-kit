@@ -19,15 +19,15 @@ DOCS_ROOT = PROJECT_ROOT / "docs"
 # (Notion page_id, repo path relative to docs/)
 STUB_MAPPINGS = [
     ("30db6f8962c1810e8785ded6c5a40395", "architecture/standards-and-adrs/legacy-repo-analysis.md"),
-    ("30db6f8962c18159a6bffa60b4936cbd", "project-management/kanban/fr-br/REOPENING_BR_AND_TASKS_GUIDE.md"),
-    ("30db6f8962c181649af3f40b31d611f7", "project-management/kanban/epics/Epic-1/Story-002-package-and-repo-architecture.md"),
-    ("30db6f8962c181fba452d3525e6f3fe7", "project-management/kanban/epics/Epic-5/Story-000-fr-repo.md"),
-    ("30db6f8962c18107ac53e74862ef5bf6", "project-management/kanban/epics/Epic-5/Story-001-fr-repo.md"),
-    ("30db6f8962c18116a663d042a095b235", "project-management/kanban/epics/Epic-6/Story-000-br-repo.md"),
-    ("30db6f8962c181669641e6b54a78df92", "project-management/kanban/epics/Epic-6/Story-001-br-repo.md"),
-    ("30db6f8962c181b5b4aff61abdb979dd", "project-management/kanban/epics/Epic-6/Story-008-ai-dev-kit-cli-tool.md"),
-    ("30db6f8962c1816998edf074fee6afb9", "project-management/kanban/epics/Epic-7/Story-000-uxr-repo.md"),
-    ("30db6f8962c1815e866be35957833740", "project-management/kanban/epics/Epic-24/Story-001-book-content-development.md"),
+    ("30db6f8962c18159a6bffa60b4936cbd", "kanban/fr-br/REOPENING_BR_AND_TASKS_GUIDE.md"),
+    ("30db6f8962c181649af3f40b31d611f7", "kanban/epics/Epic-1/Story-002-package-and-repo-architecture.md"),
+    ("30db6f8962c181fba452d3525e6f3fe7", "kanban/epics/Epic-5/Story-000-fr-repo.md"),
+    ("30db6f8962c18107ac53e74862ef5bf6", "kanban/epics/Epic-5/Story-001-fr-repo.md"),
+    ("30db6f8962c18116a663d042a095b235", "kanban/epics/Epic-6/Story-000-br-repo.md"),
+    ("30db6f8962c181669641e6b54a78df92", "kanban/epics/Epic-6/Story-001-br-repo.md"),
+    ("30db6f8962c181b5b4aff61abdb979dd", "kanban/epics/Epic-6/Story-008-ai-dev-kit-cli-tool.md"),
+    ("30db6f8962c1816998edf074fee6afb9", "kanban/epics/Epic-7/Story-000-uxr-repo.md"),
+    ("30db6f8962c1815e866be35957833740", "kanban/epics/Epic-24/Story-001-book-content-development.md"),
 ]
 
 def main():

@@ -25,7 +25,7 @@ from pathlib import Path
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 DOCS_ROOT = PROJECT_ROOT / "docs"
 OUT_DIR = PROJECT_ROOT / "docs" / "knowledge" / "kb-migration-mcp-args"
-PM_ROOT = DOCS_ROOT / "project-management" / "kanban"
+PM_ROOT = DOCS_ROOT / "kanban"
 ARCH_ROOT = DOCS_ROOT / "architecture"
 
 
@@ -44,7 +44,7 @@ def find_repo_path(title: str) -> Path | None:
     if fr_match:
         prefix, num, rest = fr_match.groups()
         num = num.zfill(3)
-        slug = slugify(rest)
+        slugify(rest)
         candidates = list(PM_ROOT.glob(f"fr-br/{prefix}-{num}-*.md"))
         if candidates:
             return candidates[0]
@@ -67,7 +67,7 @@ def find_repo_path(title: str) -> Path | None:
     if story_match:
         n, m, rest = story_match.groups()
         m = m.zfill(3)
-        slug = slugify(rest)
+        slugify(rest)
         base = PM_ROOT / f"epics/Epic-{n}"
         for p in base.glob(f"Story-{m}-*.md"):
             return p
@@ -110,7 +110,7 @@ def find_repo_path(title: str) -> Path | None:
     if story_standalone:
         m, rest = story_standalone.groups()
         m = m.zfill(3)
-        slug = slugify(rest)
+        slugify(rest)
         for epic_dir in PM_ROOT.glob("epics/Epic-*"):
             for p in epic_dir.glob(f"Story-{m}-*.md"):
                 return p
@@ -150,8 +150,8 @@ def find_repo_path(title: str) -> Path | None:
         "outstanding work summary": KNOWLEDGE_ROOT / "analysis/outstanding-work-summary.md",
         "confidentia adk analysis": KNOWLEDGE_ROOT / "analysis/projects/confidentia-adk-analysis.md",
         "fynd deals adk analysis": KNOWLEDGE_ROOT / "analysis/projects/fynd-deals-adk-analysis.md",
-        "rituals readme": DOCS_ROOT / "project-management/rituals/README.md",
-        "policy readme": DOCS_ROOT / "project-management/rituals/policy/README.md",
+        "rituals readme": DOCS_ROOT / "governance/kanban/README.md",
+        "policy readme": DOCS_ROOT / "governance/kanban/kanban-governance-policy.md",
         "uxr-003 intelligent epic matching uat": PM_ROOT / "fr-br/UXR-003-intelligent-epic-matching-canonical-adoption-uat.md",
     }
     key = title_norm.lower().strip()

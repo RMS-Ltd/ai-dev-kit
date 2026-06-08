@@ -16,6 +16,11 @@ import argparse
 import json
 import re
 import sys
+
+try:
+    import yaml
+except ImportError:
+    yaml = None  # type: ignore
 from collections import defaultdict
 from datetime import datetime, timezone
 from pathlib import Path
@@ -46,7 +51,7 @@ def parse_frontmatter(content: str) -> Tuple[Optional[Dict[str, Any]], str]:
     if not match:
         return None, content
     yaml_block, body = match.group(1).strip(), match.group(2)
-    if not yaml:
+    if yaml is None:
         return None, content
     try:
         fm = yaml.safe_load(yaml_block)

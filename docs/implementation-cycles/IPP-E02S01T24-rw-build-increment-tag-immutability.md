@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # E02:S01:T24 — Planning: RW BUILD increment enforcement and tag immutability (IPW)
 
-**Host Task:** [`T24-rw-build-increment-enforcement-and-tag-immutability-br097.md`](../project-management/kanban/epics/epic-02/story-01-rw-agent-execution-and-docs/T24-rw-build-increment-enforcement-and-tag-immutability-br097.md) **(E02:S01:T24)**  
-**Planning for:** [BR-097](../project-management/kanban/fr-br/BR-097-rw-agent-reuses-tagged-build-and-force-moves-release-tags.md)  
+**Host Task:** [`T24-rw-build-increment-enforcement-and-tag-immutability-br097.md`](../kanban/epics/epic-02/story-01-rw-agent-execution-and-docs/T24-rw-build-increment-enforcement-and-tag-immutability-br097.md) **(E02:S01:T24)**  
+**Planning for:** [BR-097](../kanban/fr-br/BR-097-rw-agent-reuses-tagged-build-and-force-moves-release-tags.md)  
 **Status:** Implemented (v0.2.1.24+1)  
 **Functional release target:** `v0.2.1.24+1` via `RW E02:S01:T24 --art` (not `--doc-policy-zero`)
 
@@ -138,6 +138,6 @@ RW triggered with E:S:T
 
 ## References
 
-- [BR-097](../project-management/kanban/fr-br/BR-097-rw-agent-reuses-tagged-build-and-force-moves-release-tags.md)
+- [BR-097](../kanban/fr-br/BR-097-rw-agent-reuses-tagged-build-and-force-moves-release-tags.md)
 - [CHANGELOG_v0.5.9.14+3](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.5.9.14%2B3.md) — partial Step 9 guard (do not re-implement)
-- [BR-067](../project-management/kanban/fr-br/BR-067-rw-first-doc-only-release-defaults-to-build-plus-one-not-plus-zero.md)
+- [BR-067](../kanban/fr-br/BR-067-rw-first-doc-only-release-defaults-to-build-plus-one-not-plus-zero.md)

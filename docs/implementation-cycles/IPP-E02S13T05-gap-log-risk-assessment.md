@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # E02:S13:T05 — Planning: Gap Log and Risk Assessment (IPW)
 
-**Host Task:** [`T05-create-gap-log-and-risk-assessment.md`](../project-management/kanban/epics/epic-02/story-13-workflow-management-package-implementation-review/T05-create-gap-log-and-risk-assessment.md) **(E02:S13:T05)**  
-**Planning for:** [T01 expectations](../project-management/kanban/epics/epic-02/story-13-workflow-management-package-implementation-review/T01-expectations-baseline.md) · [T02 inventory](../project-management/kanban/epics/epic-02/story-13-workflow-management-package-implementation-review/component-inventory-map.md) · [T03 behavior](../project-management/kanban/epics/epic-02/story-13-workflow-management-package-implementation-review/workflow-behavior-validation-report.md) · [T04 integration](../project-management/kanban/epics/epic-02/story-13-workflow-management-package-implementation-review/integration-alignment-report.md) · [E07:S07:T01 report](../project-management/kanban/epics/epic-07/story-07-code-reviews/T01-workflow-machinery-code-review-report.md)  
+**Host Task:** [`T05-create-gap-log-and-risk-assessment.md`](../kanban/epics/epic-02/story-13-workflow-management-package-implementation-review/T05-create-gap-log-and-risk-assessment.md) **(E02:S13:T05)**  
+**Planning for:** [T01 expectations](../kanban/epics/epic-02/story-13-workflow-management-package-implementation-review/T01-expectations-baseline.md) · [T02 inventory](../kanban/epics/epic-02/story-13-workflow-management-package-implementation-review/component-inventory-map.md) · [T03 behavior](../kanban/epics/epic-02/story-13-workflow-management-package-implementation-review/workflow-behavior-validation-report.md) · [T04 integration](../kanban/epics/epic-02/story-13-workflow-management-package-implementation-review/integration-alignment-report.md) · [E07:S07:T01 report](../kanban/epics/epic-07/story-07-code-reviews/T01-workflow-machinery-code-review-report.md)  
 **Status:** Implemented (2026-06-05)
 
 ---
@@ -27,7 +27,7 @@ housekeeping_policy: keep
 | RF5 | **Risk Assessment** + RC Impact Conclusion (conditional pass) | E07 §7; Story AC |
 | RF6 | Flesh T05 stub: Scope, AC, Input, Approach, Next Steps | FR-042, FR-094 |
 | RF7 | Wire IPP bidirectionally; update Story 13 checklist + AC | FR-077 |
-| RF8 | Feed [T06](../project-management/kanban/epics/epic-02/story-13-workflow-management-package-implementation-review/T06-define-rc-sign-off-criteria-and-remediation-tasks.md) RC sign-off input | Story pipeline |
+| RF8 | Feed [T06](../kanban/epics/epic-02/story-13-workflow-management-package-implementation-review/T06-define-rc-sign-off-criteria-and-remediation-tasks.md) RC sign-off input | Story pipeline |
 
 ### 1.2 Non-functional requirements (ascertained)
 
@@ -197,8 +197,8 @@ Sixteen `### Gap N` entries in T05 task doc covering structural, behavioral, int
 
 ## References
 
-- [T05 task doc](../project-management/kanban/epics/epic-02/story-13-workflow-management-package-implementation-review/T05-create-gap-log-and-risk-assessment.md)
+- [T05 task doc](../kanban/epics/epic-02/story-13-workflow-management-package-implementation-review/T05-create-gap-log-and-risk-assessment.md)
 - [gap-log-schema.md](../architecture/standards-and-adrs/gap-log-schema.md)
-- [E07:S07:T01 report](../project-management/kanban/epics/epic-07/story-07-code-reviews/T01-workflow-machinery-code-review-report.md)
-- [FR-050](../project-management/kanban/fr-br/FR-050-workflows-directory-structure-reorganization.md)
-- [FR-042](../project-management/kanban/fr-br/FR-042-implementation-planning-workflow-ipw.md)
+- [E07:S07:T01 report](../kanban/epics/epic-07/story-07-code-reviews/T01-workflow-machinery-code-review-report.md)
+- [FR-050](../kanban/fr-br/FR-050-workflows-directory-structure-reorganization.md)
+- [FR-042](../kanban/fr-br/FR-042-implementation-planning-workflow-ipw.md)

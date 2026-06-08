@@ -1,0 +1,56 @@
+[
+  {
+    "source_path": "analysis/cmw-ordering-flaw-analysis.md"
+  },
+  {
+    "source_path": "analysis/package-management-implementation-plan.md"
+  },
+  {
+    "source_path": "analysis/package-management-investigation-report.md"
+  },
+  {
+    "source_path": "analysis/package-management-prioritization-review.md"
+  },
+  {
+    "source_path": "analysis/perpetual-task-range-options-analysis.md"
+  },
+  {
+    "source_path": "analysis/phase3-package-distribution-plan.md"
+  },
+  {
+    "source_path": "analysis/repository-story-abstract-space-contradiction-analysis.md"
+  },
+  {
+    "source_path": "analysis/task-template-system-analysis.md"
+  },
+  {
+    "source_path": "analysis/ukw-versioning-reasoning-analysis.md"
+  },
+  {
+    "source_path": "implementation-cycles/ARCHIVE-AGENT-001-E24S02T01-03-RESOLUTION.md"
+  },
+  {
+    "source_path": "implementation-cycles/DOC-AGENT-001-E24S01T01-04-RESOLUTION.md"
+  },
+  {
+    "source_path": "implementation-cycles/DOC-AGENT-001-E5S03T01-03-RESOLUTION.md"
+  },
+  {
+    "source_path": "implementation-cycles/E10S01-orchestration-plan.md"
+  },
+  {
+    "source_path": "implementation-cycles/E4S19T03-e6s07-default-housing-investigation-report.md"
+  },
+  {
+    "source_path": "implementation-cycles/E6S07T104-release-automation-audit-report.md"
+  },
+  {
+    "source_path": "implementation-cycles/E6S07T104-remediation-implementation.md"
+  },
+  {
+    "source_path": "implementation-cycles/HANDOVER-2026-04-25-ukw-rw-e2s16t04.md"
+  },
+  {
+    "source_path": "implementation-cycles/IPW-E3S02T12-task-touch-semver-collision-hardening.md"
+  }
+]

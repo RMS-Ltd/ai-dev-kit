@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # E4:S19:T05 - Planning: Spec, Tests, Implementation Plan (IPP)
 
-**Host Task:** [`T05-kanban-and-fr-br-uxr-filename-normalization-uxr008.md`](../project-management/kanban/epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T05-kanban-and-fr-br-uxr-filename-normalization-uxr008.md) **(E4:S19:T05)**  
-**Planning for:** [UXR-008 - Canonical Kanban filename normalization](../project-management/kanban/fr-br/UXR-008-kboard-fbuboard-default-naming-adoption.md)  
+**Host Task:** [`T05-kanban-and-fr-br-uxr-filename-normalization-uxr008.md`](../kanban/epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T05-kanban-and-fr-br-uxr-filename-normalization-uxr008.md) **(E4:S19:T05)**  
+**Planning for:** [UXR-008 - Canonical Kanban filename normalization](../kanban/fr-br/UXR-008-kboard-fbuboard-default-naming-adoption.md)  
 **Status:** Draft
 
 ---
@@ -18,7 +18,7 @@ housekeeping_policy: keep
 
 ### 1.1 Goal
 
-Normalize kanban and FR/BR/UXR related filenames under `docs/project-management/kanban/` to a concise canonical pattern family aligned with `kboard.md`, while keeping migration safety and reference integrity.
+Normalize kanban and FR/BR/UXR related filenames under `docs/kanban/` to a concise canonical pattern family aligned with `kboard.md`, while keeping migration safety and reference integrity.
 
 ### 1.2 Functional requirements
 
@@ -36,7 +36,7 @@ Normalize kanban and FR/BR/UXR related filenames under `docs/project-management/
 | ID | Requirement |
 | ---- | ---- |
 | N1 | Determinism: same repo state should always generate same filename mapping. |
-| N2 | Safety: no broken internal markdown links in `docs/project-management/kanban/`. |
+| N2 | Safety: no broken internal markdown links in `docs/kanban/`. |
 | N3 | Traceability: migration mapping is documented and reviewable. |
 | N4 | Incrementality: migration can be split into phases if blast radius is high. |
 
@@ -44,7 +44,7 @@ Normalize kanban and FR/BR/UXR related filenames under `docs/project-management/
 
 - Renaming task docs that are canonical by task ID pattern (`Txx-...md`) unless required by policy revision.
 - Rewriting historical changelog archive filenames.
-- Broad non-kanban documentation filename refactors outside `docs/project-management/kanban/`.
+- Broad non-kanban documentation filename refactors outside `docs/kanban/`.
 
 ---
 
@@ -62,7 +62,7 @@ Normalize kanban and FR/BR/UXR related filenames under `docs/project-management/
 
 - `python3 "packages/frameworks/workflow-mgt/scripts/update_kanban_docs.py" --dry-run --mode full`
 - `python3 "packages/frameworks/workflow-mgt/scripts/test_update_kanban_docs.py" --test-category 4`
-- `rg "kanban-board\.md|fr-br-uxr-board\.md|fr-br-uxr-structure\.md|fbuboard\.md|kboard\.md" "docs/project-management/kanban"`
+- `rg "kanban-board\.md|fr-br-uxr-board\.md|fr-br-uxr-structure\.md|fbuboard\.md|kboard\.md" "docs/kanban"`
 
 ---
 
@@ -78,10 +78,10 @@ Normalize kanban and FR/BR/UXR related filenames under `docs/project-management/
 
 | Current path | Candidate canonical target | Notes |
 | ---- | ---- | ---- |
-| `docs/project-management/kanban/fr-br-uxr-structure.md` | `docs/project-management/kanban/intake-structure.md` | Align collective naming with `fbuboard` shorthand. |
-| `docs/project-management/kanban/fr-br-uxr-completed.md` | `docs/project-management/kanban/intake-completed.md` | Keep completed ledger naming parallel to board shorthand. |
-| `docs/project-management/kanban/fr-br-uxr-board.md` (legacy alias) | `docs/project-management/kanban/kboard.md` (already canonical) | Preserve as compatibility alias or redirect doc. |
-| `docs/project-management/kanban/fr-br/` | `docs/project-management/kanban/fbu/` *(decision pending)* | High-blast-radius folder rename; evaluate separately before execution. |
+| `docs/kanban/fr-br-uxr-structure.md` | `docs/kanban/intake-structure.md` | Align collective naming with `fbuboard` shorthand. |
+| `docs/kanban/fr-br-uxr-completed.md` | `docs/kanban/intake-completed.md` | Keep completed ledger naming parallel to board shorthand. |
+| `docs/kanban/fr-br-uxr-board.md` (legacy alias) | `docs/kanban/kboard.md` (already canonical) | Preserve as compatibility alias or redirect doc. |
+| `docs/kanban/fr-br/` | `docs/kanban/fbu/` *(decision pending)* | High-blast-radius folder rename; evaluate separately before execution. |
 
 ### Phase 2 - Rename and reference migration
 
@@ -108,6 +108,6 @@ Normalize kanban and FR/BR/UXR related filenames under `docs/project-management/
 
 ## References
 
-- [T05 host task](../project-management/kanban/epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T05-kanban-and-fr-br-uxr-filename-normalization-uxr008.md)
-- [UXR-008](../project-management/kanban/fr-br/UXR-008-kboard-fbuboard-default-naming-adoption.md)
-- [FR-086](../project-management/kanban/fr-br/FR-086-canonical-supporting-kanban-fbu-doc-naming-and-fbu-collective-terminology.md)
+- [T05 host task](../kanban/epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T05-kanban-and-fr-br-uxr-filename-normalization-uxr008.md)
+- [UXR-008](../kanban/fr-br/UXR-008-kboard-fbuboard-default-naming-adoption.md)
+- [FR-086](../kanban/fr-br/FR-086-canonical-supporting-kanban-fbu-doc-naming-and-fbu-collective-terminology.md)

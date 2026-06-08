@@ -8,6 +8,8 @@ __pycache__/
 htmlcov/
 tmp-*.log
 .kanban-snapshots/
+.adk/*
+!.adk/release-state.db
 logs/
 # Published maintenance evidence logs (Docusaurus links under docs/maintenance/logs/)
 !docs/maintenance/logs/
@@ -33,10 +35,17 @@ SCRATCHPAD.md
 
 # FR-044 — RW temporary execution log (local forensic artifact)
 .rw-execution.log
+# RW Step 7 stamp/snapshot scratch (canonical: changelog-archive/four-surface-reports/)
+.rw-step7-snapshot/
+.rw-step7-stamp-evidence.json
+.rw-step7-evidence-*.json
 docs/journals/agent-runs/
 
 # FR-113 / E08:S03:T17 — Local Code Quality Gate artifacts (local only)
 .cqg/
+
+# FR-115 / FR-116 — Release metadata read model (regenerable via ingest)
+.data/
 
 # RW Journal Artifacts — runtime per-run files, not operator documentation
 # Operator docs (README.md, JOURNAL_SCHEMA.md, RECOVERY_PROCEDURE.md, ROLLBACK_CONTRACT.md)

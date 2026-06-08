@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # E04:S19:T11 — Planning: Spec, Tests, Implementation Plan (IPW)
 
-**Host Task:** [`T11-kanban-epic-story-path-lowercase-naming-uxr017.md`](../project-management/kanban/epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T11-kanban-epic-story-path-lowercase-naming-uxr017.md) **(E04:S19:T11)**  
-**Planning for:** [UXR-017 — Kanban epic/story path lowercase naming](../project-management/kanban/fr-br/UXR-017-kanban-epic-story-path-lowercase-naming.md)  
+**Host Task:** [`T11-kanban-epic-story-path-lowercase-naming-uxr017.md`](../kanban/epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T11-kanban-epic-story-path-lowercase-naming-uxr017.md) **(E04:S19:T11)**  
+**Planning for:** [UXR-017 — Kanban epic/story path lowercase naming](../kanban/fr-br/UXR-017-kanban-epic-story-path-lowercase-naming.md)  
 **Status:** Approved
 
 > **IPW (Implementation Planning Workflow):** Produced by IPW for E04:S19:T11. Phased delivery: Wave 1 framework/install/tolerance; Wave 2 ai-dev-kit corpus + `rw-config.yaml`.
@@ -132,7 +132,7 @@ RF1–RF4 define path contract and documentation. RF2–RF3 define emission and 
 - `packages/frameworks/workflow-mgt/scripts/validation/validate_kanban_naming.py`
 - `packages/frameworks/kanban/templates/**` (epic/story renames)
 - `docs/architecture/standards-and-adrs/ADR-015-*.md`, `epic-story-path-migration-guide.md`
-- `docs/project-management/kanban/**` (Wave 2)
+- `docs/kanban/**` (Wave 2)
 - `rw-config.yaml` (Wave 2)
 
 ### 4.2 Dependency order
@@ -197,9 +197,9 @@ RF1–RF4 define path contract and documentation. RF2–RF3 define emission and 
 
 ## References
 
-- [Host task E04:S19:T11](../project-management/kanban/epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T11-kanban-epic-story-path-lowercase-naming-uxr017.md)
-- [UXR-017](../project-management/kanban/fr-br/UXR-017-kanban-epic-story-path-lowercase-naming.md)
+- [Host task E04:S19:T11](../kanban/epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T11-kanban-epic-story-path-lowercase-naming-uxr017.md)
+- [UXR-017](../kanban/fr-br/UXR-017-kanban-epic-story-path-lowercase-naming.md)
 - [ADR-015](../architecture/standards-and-adrs/ADR-015-kanban-epic-story-path-lowercase-convention.md)
 - [epic-story-path-migration-guide.md](../architecture/standards-and-adrs/epic-story-path-migration-guide.md)
-- [UXR-011](../project-management/kanban/fr-br/UXR-011-kanban-naming-hygiene-and-directory-systematic-cleanup.md)
-- [BR-083](../project-management/kanban/fr-br/BR-083-rw-install-default-patterns-mismatch-fresh-kanban-layout.md)
+- [UXR-011](../kanban/fr-br/UXR-011-kanban-naming-hygiene-and-directory-systematic-cleanup.md)
+- [BR-083](../kanban/fr-br/BR-083-rw-install-default-patterns-mismatch-fresh-kanban-layout.md)

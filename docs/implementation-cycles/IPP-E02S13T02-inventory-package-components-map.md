@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # E02:S13:T02 — Planning: Inventory Package Components and Map to Expectations (IPW)
 
-**Host Task:** [`T02-inventory-package-components-and-map-to-expectations.md`](../project-management/kanban/epics/epic-02/story-13-workflow-management-package-implementation-review/T02-inventory-package-components-and-map-to-expectations.md) **(E02:S13:T02)**  
-**Planning for:** [T01 expectations baseline](../project-management/kanban/epics/epic-02/story-13-workflow-management-package-implementation-review/T01-expectations-baseline.md) · [E07:S07:T01 report §1–2](../project-management/kanban/epics/epic-07/story-07-code-reviews/T01-workflow-machinery-code-review-report.md)  
+**Host Task:** [`T02-inventory-package-components-and-map-to-expectations.md`](../kanban/epics/epic-02/story-13-workflow-management-package-implementation-review/T02-inventory-package-components-and-map-to-expectations.md) **(E02:S13:T02)**  
+**Planning for:** [T01 expectations baseline](../kanban/epics/epic-02/story-13-workflow-management-package-implementation-review/T01-expectations-baseline.md) · [E07:S07:T01 report §1–2](../kanban/epics/epic-07/story-07-code-reviews/T01-workflow-machinery-code-review-report.md)  
 **Status:** Implemented (2026-06-05 — v0.2.13.2+1)
 
 ---
@@ -188,8 +188,8 @@ Seven taxonomy sections in companion file: (1) core docs, (2) KB/methodology, (3
 
 ## References
 
-- [T02 task doc](../project-management/kanban/epics/epic-02/story-13-workflow-management-package-implementation-review/T02-inventory-package-components-and-map-to-expectations.md)
-- [T01 expectations baseline](../project-management/kanban/epics/epic-02/story-13-workflow-management-package-implementation-review/T01-expectations-baseline.md)
-- [E07:S07:T01 report](../project-management/kanban/epics/epic-07/story-07-code-reviews/T01-workflow-machinery-code-review-report.md)
-- [E04:S16:T02 pattern](../project-management/kanban/epics/epic-04/story-16-kanban-package-implementation-review/T02-inventory-package-components-and-map-to-expectations.md)
-- [FR-042](../project-management/kanban/fr-br/FR-042-implementation-planning-workflow-ipw.md)
+- [T02 task doc](../kanban/epics/epic-02/story-13-workflow-management-package-implementation-review/T02-inventory-package-components-and-map-to-expectations.md)
+- [T01 expectations baseline](../kanban/epics/epic-02/story-13-workflow-management-package-implementation-review/T01-expectations-baseline.md)
+- [E07:S07:T01 report](../kanban/epics/epic-07/story-07-code-reviews/T01-workflow-machinery-code-review-report.md)
+- [E04:S16:T02 pattern](../kanban/epics/epic-04/story-16-kanban-package-implementation-review/T02-inventory-package-components-and-map-to-expectations.md)
+- [FR-042](../kanban/fr-br/FR-042-implementation-planning-workflow-ipw.md)

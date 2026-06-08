@@ -1,0 +1,74 @@
+============================= test session starts ==============================
+platform darwin -- Python 3.9.6, pytest-8.4.2, pluggy-1.6.0 -- /Applications/Xcode.app/Contents/Developer/usr/bin/python3
+cachedir: .pytest_cache
+rootdir: /Users/rms/Documents/projects/ai-dev-kit-e05
+configfile: pytest.ini
+plugins: mock-3.15.1, anyio-4.10.0, cov-7.0.0
+collecting ... collected 26 items
+
+tests/rw_scenarios/test_t06_high_stress.py::TestT06HighStress::test_RW_HS01_twenty_finalize_burst_sqlite PASSED [  3%]
+tests/rw_scenarios/test_t06_high_stress.py::TestT06HighStress::test_RW_HS02_dpz_untagged_build_zero PASSED [  7%]
+tests/rw_scenarios/test_t06_high_stress.py::TestT06HighStress::test_RW_HS03_dpz_rejected_when_build_ge_one PASSED [ 11%]
+tests/rw_scenarios/test_t06_high_stress.py::TestT06HighStress::test_RW_HS04_dpz_blocked_when_head_tagged PASSED [ 15%]
+tests/rw_scenarios/test_t06_high_stress.py::TestT06HighStress::test_RW_HS05_perpetual_high_build_suppression PASSED [ 19%]
+tests/rw_scenarios/test_t06_high_stress.py::TestT06HighStress::test_RW_HS06_production_registry_import_burst PASSED [ 23%]
+tests/rw_scenarios/test_t06_high_stress.py::TestT06HighStress::test_RW_HS07_push_tags_not_blocked_by_immutability PASSED [ 26%]
+tests/rw_scenarios/test_t06_high_stress.py::test_hs_scenarios_registered[RW-HS01] PASSED [ 30%]
+tests/rw_scenarios/test_t06_high_stress.py::test_hs_scenarios_registered[RW-HS02] PASSED [ 34%]
+tests/rw_scenarios/test_t06_high_stress.py::test_hs_scenarios_registered[RW-HS03] PASSED [ 38%]
+tests/rw_scenarios/test_t06_high_stress.py::test_hs_scenarios_registered[RW-HS04] PASSED [ 42%]
+tests/rw_scenarios/test_t06_high_stress.py::test_hs_scenarios_registered[RW-HS05] PASSED [ 46%]
+tests/rw_scenarios/test_t06_high_stress.py::test_hs_scenarios_registered[RW-HS06] PASSED [ 50%]
+tests/rw_scenarios/test_t06_high_stress.py::test_hs_scenarios_registered[RW-HS07] PASSED [ 53%]
+tests/rw_scenarios/test_t06_nasty_scenarios.py::TestNastyTagCollisionRecovery::test_RW_HS08_recovery_text_forbids_force_push PASSED [ 57%]
+tests/rw_scenarios/test_t06_nasty_scenarios.py::TestNastyTagCollisionRecovery::test_RW_HS08_forbidden_recovery_commands_blocked[git tag -f v0.4.1040] PASSED [ 61%]
+tests/rw_scenarios/test_t06_nasty_scenarios.py::TestNastyTagCollisionRecovery::test_RW_HS08_forbidden_recovery_commands_blocked[git push -f origin refs/tags/v0.4.1040] PASSED [ 65%]
+tests/rw_scenarios/test_t06_nasty_scenarios.py::TestNastyTagCollisionRecovery::test_RW_HS08_forbidden_recovery_commands_blocked[git push origin +v0.4.1040] PASSED [ 69%]
+tests/rw_scenarios/test_t06_nasty_scenarios.py::TestNastyTagCollisionRecovery::test_RW_HS08_agent_journal_with_tag_f_aborts PASSED [ 73%]
+tests/rw_scenarios/test_t06_nasty_scenarios.py::TestNastyTagCollisionRecovery::test_RW_HS08_push_tag_divergence_prescribes_re_rw_not_force PASSED [ 76%]
+tests/rw_scenarios/test_t06_nasty_scenarios.py::TestNastyBatchPush::test_RW_HS09_ten_dry_run_pushes_never_use_bulk_tags PASSED [ 80%]
+tests/rw_scenarios/test_t06_nasty_scenarios.py::TestNastyRegistryCollisionGate::test_RW_HS10_injective_validator_aborts_on_duplicate_patch PASSED [ 84%]
+tests/rw_scenarios/test_t06_nasty_scenarios.py::TestNastyRegistryCollisionGate::test_RW_HS10_collision_blocks_before_tag_step PASSED [ 88%]
+tests/rw_scenarios/test_t06_nasty_scenarios.py::test_nasty_scenarios_registered[RW-HS08] PASSED [ 92%]
+tests/rw_scenarios/test_t06_nasty_scenarios.py::test_nasty_scenarios_registered[RW-HS09] PASSED [ 96%]
+tests/rw_scenarios/test_t06_nasty_scenarios.py::test_nasty_scenarios_registered[RW-HS10] PASSED [100%]/Users/rms/Library/Python/3.9/lib/python/site-packages/coverage/control.py:946: CoverageWarning: No data was collected. (no-data-collected); see https://coverage.readthedocs.io/en/7.10.7/messages.html#warning-no-data-collected
+  self._warn("No data was collected.", slug="no-data-collected")
+
+
+================================ tests coverage ================================
+_______________ coverage: platform darwin, python 3.9.6-final-0 ________________
+
+Name                               Stmts   Miss  Cover   Missing
+----------------------------------------------------------------
+cli/__init__.py                        2      2     0%   9-10
+cli/adk_install_errors_bridge.py      45     45     0%   3-64
+cli/adk_version_display.py            44     44     0%   8-85
+cli/backends/__init__.py              11     11     0%   9-33
+cli/backends/base.py                  27     27     0%   7-130
+cli/backends/git_submodule.py        170    170     0%   5-425
+cli/backends/git_subtree.py          144    144     0%   5-364
+cli/backends/package_manager.py      237    237     0%   7-617
+cli/backends/registry.py              33     33     0%   5-116
+cli/backends/selector.py              34     34     0%   5-91
+cli/commands/__init__.py              16     16     0%   7-57
+cli/commands/check.py                 49     49     0%   7-95
+cli/commands/config.py               144    144     0%   7-274
+cli/commands/init.py                  37     37     0%   7-71
+cli/commands/install.py              156    156     0%   7-467
+cli/commands/list.py                  32     32     0%   7-73
+cli/commands/logs.py                 432    432     0%   8-648
+cli/commands/migrate.py              126    126     0%   7-229
+cli/commands/remove.py               217    217     0%   7-373
+cli/commands/status.py                53     53     0%   7-101
+cli/commands/update.py                58     58     0%   7-121
+cli/config.py                        103    103     0%   7-252
+cli/exceptions.py                    115    115     0%   7-264
+cli/logging.py                       138    138     0%   9-269
+cli/main.py                           46     46     0%   8-127
+cli/migration.py                     109    109     0%   7-255
+cli/utils.py                          36     36     0%   5-83
+cli/validation.py                     69     69     0%   7-282
+----------------------------------------------------------------
+TOTAL                               2683   2683     0%
+Coverage HTML written to dir htmlcov
+============================== 26 passed in 2.47s ==============================

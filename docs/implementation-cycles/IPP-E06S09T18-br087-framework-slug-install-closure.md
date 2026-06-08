@@ -8,9 +8,9 @@ housekeeping_policy: keep
 
 # E06:S09:T18 — Planning: BR-087 framework slug install closure (wave 2)
 
-**Host Task:** [`T18-br087-framework-slug-install-closure.md`](../project-management/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T18-br087-framework-slug-install-closure.md) **(E06:S09:T18)**  
-**Planning for:** [BR-087](../project-management/kanban/fr-br/BR-087-framework-install-directory-slug-mismatch.md) · [UXR-016 addendum](../project-management/kanban/fr-br/UXR-016-install-setup-interactive-feedback-external-semver-version.md)  
-**Predecessor:** [T17](../project-management/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T17-framework-install-directory-slugs-br087.md) (**v0.6.9.17+1**)  
+**Host Task:** [`T18-br087-framework-slug-install-closure.md`](../kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T18-br087-framework-slug-install-closure.md) **(E06:S09:T18)**  
+**Planning for:** [BR-087](../kanban/fr-br/BR-087-framework-install-directory-slug-mismatch.md) · [UXR-016 addendum](../kanban/fr-br/UXR-016-install-setup-interactive-feedback-external-semver-version.md)  
+**Predecessor:** [T17](../kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T17-framework-install-directory-slugs-br087.md) (**v0.6.9.17+1**)  
 **Status:** Approved (2026-06-05 — implementation authorized)
 
 ---

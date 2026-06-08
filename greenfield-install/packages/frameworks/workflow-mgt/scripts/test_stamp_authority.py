@@ -49,8 +49,8 @@ def test_validate_stamp_diff_manifest_allows():
     ).replace("2026-04-20 15:52 UTC", "2026-05-20 10:00 UTC", 1)
     with tempfile.TemporaryDirectory() as tmp:
         root = Path(tmp)
-        (root / "docs/project-management/kanban/fr-br").mkdir(parents=True)
-        (root / "docs/project-management/kanban/fr-br/FR-100-sample.md").write_text(
+        (root / "docs/kanban/fr-br").mkdir(parents=True)
+        (root / "docs/kanban/fr-br/FR-100-sample.md").write_text(
             "**Last updated:** 2026-05-20\n", encoding="utf-8"
         )
         passed, denied = SA.validate_stamp_diff(

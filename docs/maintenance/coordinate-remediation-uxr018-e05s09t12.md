@@ -1,59 +1,12 @@
 ---
 lifecycle: evergreen
-ttl_days: null
-created_at: 2026-06-04T16:00:00Z
-expires_at: null
+created_at: 2026-06-07T10:29:42Z
 housekeeping_policy: keep
+notion_sot: true
 ---
 
-# Coordinate remediation: UXR-018 → E05:S09:T12 (T76 retired)
+# Coordinate Remediation Uxr018 E05S09T12
 
-**Date:** 2026-06-04  
-**Trigger:** UXR-018 was mis-filed as **E05:S01:T76** on the deprecated FR historical registry (**FR-072** cutover 2026-06-01).
+**SoT:** Notion Engineering KB — [Coordinate Remediation Uxr018 E05S09T12](https://www.notion.so/378b6f8962c1816583d8dce460dfa413)
 
----
-
-## Canonical coordinates (only)
-
-| Surface | ID |
-| ------- | -- |
-| **Primary task** | **E05:S09:T12** — [task doc](../project-management/kanban/epics/epic-05/story-09-docusaurus-documentation-portal/T12-changelog-directory-consolidation-uxr018.md) |
-| **UXR** | [UXR-018](../project-management/kanban/fr-br/UXR-018-changelog-directory-consolidation.md) |
-| **IPP** | [IPP-E5S9T12](../implementation-cycles/IPP-E05S09T12-changelog-directory-consolidation.md) |
-| **Semantic version anchor** | **v0.5.9.12+2** (portal story) |
-
-**E05:S01:T76 does not exist** — task doc deleted; no redirect stub. **E05:S01** story is **CLOSED** (historical registry; no new intake).
-
----
-
-## Orphan internal version labels
-
-Git tags and archive filenames may still show **v0.5.1.76+1** / **v0.5.1.76+2** from releases filed before remediation. Those strings are **orphan labels** (wrong E/S/T in the version number). Traceability maps them to **E05:S09:T12** / **UXR-018** in updated archive changelogs and `semver-registry.yaml`.
-
----
-
-## Why mis-housing happened
-
-1. Legacy FR-repo intake habit (next Tnn on E05:S01).
-2. Epic 5 conflated with Story 1.
-3. No validator blocking new `story-01-fr-repo/T*.md` after FR-072.
-4. Intake skill guardrails not enforced at runtime.
-
----
-
-## E05:S01 intake since deprecation (2026-06-01)
-
-| Category | Count | Notes |
-| -------- | ----- | ----- |
-| Net-new primary tasks on S01 after cutover | **1** | UXR-018 (was T76; **removed**) |
-| Releases on orphan **0.5.1.76+*** labels | **2** | Remapped to **E05:S09:T12** in registry/docs |
-
----
-
-## Remediation checklist
-
-- [x] **E05:S09:T12** primary task doc
-- [x] Delete **E05:S01:T76** (no stub)
-- [x] Remove S01 checklist row for T76
-- [x] Rewire UXR, IPP, boards, ledgers, changelogs, JSON reports, `version.py`, `semver-registry.yaml`
-- [x] Intake skill hard-block on new E05:S01 tasks
+> Migrated from `docs/maintenance/coordinate-remediation-uxr018-e05s09t12.md` per [FR-114](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/kanban/fr-br/FR-114-split-documentation-surfaces-docusaurus-public-notion-maintainer-kb.md). Full content lives in Notion.

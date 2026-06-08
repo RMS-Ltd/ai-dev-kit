@@ -8,14 +8,18 @@ name: Docusaurus site build
   pull_request:
     paths:
       - "portal/**"
-      - "docs/**"
+      - "docs/guides/**"
+      - "docs/documentation/**"
+      - "docs/developer-tools/ide-whitelist-guide.md"
       - ".github/workflows/docusaurus-build.yml"
   push:
     branches:
       - main
     paths:
       - "portal/**"
-      - "docs/**"
+      - "docs/guides/**"
+      - "docs/documentation/**"
+      - "docs/developer-tools/ide-whitelist-guide.md"
       - ".github/workflows/docusaurus-build.yml"
   workflow_dispatch:
 

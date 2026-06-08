@@ -10,7 +10,7 @@ housekeeping_policy: keep
 
 **Task:** E2:S01:T17  
 **Related FR:** FR-077  
-**Host Task:** [T17-ipw-built-task-status-transition-and-kboard-sync-fr077.md](../project-management/kanban/epics/epic-02/story-01-rw-agent-execution-and-docs/T17-ipw-built-task-status-transition-and-kboard-sync-fr077.md)  
+**Host Task:** [T17-ipw-built-task-status-transition-and-kboard-sync-fr077.md](../kanban/epics/epic-02/story-01-rw-agent-execution-and-docs/T17-ipw-built-task-status-transition-and-kboard-sync-fr077.md)  
 **Created:** 2026-04-09
 
 ---
@@ -53,8 +53,8 @@ housekeeping_policy: keep
 
 - `packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/implementation-planning-workflow-agent-execution.md`
 - `packages/frameworks/workflow-mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md`
-- `docs/project-management/kanban/kboard.md`
-- `docs/project-management/kanban/kboard.md`
+- `docs/kanban/kboard.md`
+- `docs/kanban/kboard.md`
 - Existing validation/audit scripts in `packages/frameworks/workflow-mgt/scripts/validation/`
 
 ---

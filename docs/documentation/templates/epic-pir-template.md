@@ -185,7 +185,7 @@ housekeeping_policy: keep
 
 ## Related Work
 
-- **Epic:** Template path under `docs/`: `project-management/kanban/epics/Epic-\{N\}/Epic-\{N\}.md` (replace `\{N\}`; do not paste unresolved `\{N\}` into markdown links — Docusaurus validates paths).
+- **Epic:** Template path under `docs/`: `kanban/epics/Epic-\{N\}/Epic-\{N\}.md` (replace `\{N\}`; do not paste unresolved `\{N\}` into markdown links — Docusaurus validates paths).
 - **Stories:** &lbrace;Links to all stories in Epic&rbrace;
 - **Related PIRs:** &lbrace;Links to any related PIR reports&rbrace;
 - **Follow-Up Tasks:** &lbrace;Links to Kanban tasks created from this PIR&rbrace;

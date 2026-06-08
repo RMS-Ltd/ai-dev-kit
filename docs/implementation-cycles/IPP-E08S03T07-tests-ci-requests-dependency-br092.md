@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # E08:S03:T07 — Planning: Spec, Tests, Implementation Plan (IPW)
 
-**Host Task:** [`T07-tests-ci-requests-dependency-br092.md`](../project-management/kanban/epics/epic-08/story-03-automation-scripts/T07-tests-ci-requests-dependency-br092.md) **(E08:S03:T07)**  
-**Planning for:** [BR-092](../project-management/kanban/fr-br/BR-092-tests-ci-missing-requests-dev-dependency.md)  
+**Host Task:** [`T07-tests-ci-requests-dependency-br092.md`](../kanban/epics/epic-08/story-03-automation-scripts/T07-tests-ci-requests-dependency-br092.md) **(E08:S03:T07)**  
+**Planning for:** [BR-092](../kanban/fr-br/BR-092-tests-ci-missing-requests-dev-dependency.md)  
 **Status:** Approved (implementation authorized)
 
 > **IPW:** Produced for E08:S03:T07. Complements [IPP-E8S3T4](IPP-E08S03T04-ci-test-workflow-pytest-remediation-br058.md) (repo-wide Tests CI gate).
@@ -156,6 +156,6 @@ RF2 → `setup.py` `extras_require["dev"]`; RF3 → unchanged `tests.yml`; RF4 �
 
 ## References
 
-- [BR-092](../project-management/kanban/fr-br/BR-092-tests-ci-missing-requests-dev-dependency.md)
+- [BR-092](../kanban/fr-br/BR-092-tests-ci-missing-requests-dev-dependency.md)
 - [IPP-E8S3T4](IPP-E08S03T04-ci-test-workflow-pytest-remediation-br058.md)
 - [ipw-adr-necessity-checklist.md](../architecture/standards-and-adrs/ipw-adr-necessity-checklist.md)

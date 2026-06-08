@@ -15,6 +15,7 @@ import argparse
 import hashlib
 import sys
 import tarfile
+from contextlib import suppress
 import tempfile
 from pathlib import Path
 from typing import Optional
@@ -37,6 +38,23 @@ try:
 except ImportError:
     def print_session_banner(project_root=None, *, verbose=False, file=None):  # type: ignore[misc]
         return None
+
+
+def _safe_tar_extract(tar: tarfile.TarFile, destination: Path) -> None:
+    """Extract archive members only under destination (tar-slip guard)."""
+    dest = destination.resolve()
+    for member in tar.getmembers():
+        target = (dest / member.name).resolve()
+        if target != dest and dest not in target.parents:
+            raise ValueError(f"Unsafe path in archive: {member.name}")
+    for member in tar.getmembers():
+        member_path = (dest / member.name).resolve()
+        if member_path != dest and dest not in member_path.parents:
+            raise ValueError(f"Unsafe path in archive: {member.name}")
+        extract_kwargs: dict = {}
+        if sys.version_info >= (3, 12):
+            extract_kwargs["filter"] = "data"
+        tar.extract(member, path=dest, **extract_kwargs)
 
 
 def parse_arguments() -> argparse.Namespace:
@@ -261,7 +279,7 @@ def extract_package(
                 print("❌ Cannot determine package root directory", file=sys.stderr)
                 return False
             
-            tar.extractall(install_dir)
+            _safe_tar_extract(tar, install_dir)
 
             target_path = relocate_legacy_framework_dir(install_dir, root_dir, install_slug)
 
@@ -269,12 +287,10 @@ def extract_package(
             if renamed and verbose:
                 print(f"   ✅ Relocated {renamed} legacy framework dir(s) to slug names")
 
-            try:
+            with suppress(ImportError):
                 from install_ux_version import print_legacy_framework_layout_warning
 
                 print_legacy_framework_layout_warning(frameworks_root=install_dir)
-            except ImportError as _suppressed_exc:
-                del _suppressed_exc
             if verbose:
                 print(f"   ✅ Package extracted: {target_path}")
             

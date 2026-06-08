@@ -809,13 +809,13 @@ When the task document **already exists** and the release is **docs-only** but p
 4. **Constraints:** Change set MUST remain docs-only; `--dpz` requires both `--requested` and `--art`.
 5. **Default without flag:** Existing task doc + docs-only → BUILD increments (+1) unless first-time doc-init detection applies.
 
-See [BR-067 policy table](../../../../../../docs/project-management/kanban/fr-br/BR-067-rw-first-doc-only-release-defaults-to-build-plus-one-not-plus-zero.md) and [workflow-initiation-cheatsheet.md](../../../../../../docs/guides/workflow-initiation-cheatsheet.md) §2.
+See [BR-067 policy table](../../../../../../docs/kanban/fr-br/BR-067-rw-first-doc-only-release-defaults-to-build-plus-one-not-plus-zero.md) and [workflow-initiation-cheatsheet.md](../../../../../../docs/guides/workflow-initiation-cheatsheet.md) §2.
 
 **B. IDENTIFY COMPLETED TASK (MANDATORY - ONLY IF NOT UKW CONTEXT):**
 2. **ANALYZE (continued):**
    - **MANDATORY:** Read the Story file to identify completed task. **Use config paths:** If `rw-config.yaml` exists and `use_kanban: true`, use `kanban_root` and `story_doc_pattern` from config. Otherwise, use fallback patterns:
      - [Example: Confidentia] `docs/project-management/epics/overview/Epic {epic}/Story-{story}-*.md` (or from `rw-config.yaml` if present)
-     - [Example: ai-dev-kit] `docs/project-management/kanban/epics/Epic-{epic}/Story-{story}-*.md` (or from `rw-config.yaml` if present)
+     - [Example: ai-dev-kit] `docs/kanban/epics/Epic-{epic}/Story-{story}-*.md` (or from `rw-config.yaml` if present)
    - Find the MOST RECENTLY COMPLETED task in the Task Checklist (marked `✅ COMPLETE`)
    - Extract the task number from the task identifier: `E{epic}:S{story}:T{task}` (e.g., `E2:S02:T08` → task number is `8`)
    - **CRITICAL:** If no task is marked complete, or you cannot identify which task was just completed, **STOP** and ask the user which task was completed
@@ -842,7 +842,7 @@ See [BR-067 policy table](../../../../../../docs/project-management/kanban/fr-br
         - Location patterns:
           - `{kanban_root}/epics/Epic-{epic}/Story-{story}/Task-{task}-*.md`
           - `{kanban_root}/epics/Epic-{epic}/Story-{story}/T{task}-*.md`
-        - [Example: ai-dev-kit] `docs/project-management/kanban/epics/epic-04/Story-11/Task-001-*.md` or `T01-*.md`
+        - [Example: ai-dev-kit] `docs/kanban/epics/epic-04/Story-11/Task-001-*.md` or `T01-*.md`
      2. **Delimited Section Format (Alternative):**
         - Location: Within the Story file itself
         - Pattern: Section header matching `### E{epic}:S{story}:T{task} –` or `### E{epic}:S{story}:T{task} –`
@@ -912,7 +912,7 @@ See [BR-067 policy table](../../../../../../docs/project-management/kanban/fr-br
 **Example 1: Doc-Init Build (First-Time Task Document Creation)**
 - **Scenario:** Creating Task document for `E2:S10:T01` for the first time
 - **Detection (A.1):**
-  - ✅ New Task document created: `docs/project-management/kanban/epics/epic-02/story-10-doc-init-build-zero-for-new-est.md` (delimited section)
+  - ✅ New Task document created: `docs/kanban/epics/epic-02/story-10-doc-init-build-zero-for-new-est.md` (delimited section)
   - ✅ No prior version exists: No `0.2.10.1+*` in git history or changelog
   - ✅ Docs-only changes: Only `.md` files changed, no code files
 - **Task Identification (B):**
@@ -1081,10 +1081,10 @@ See [BR-067 policy table](../../../../../../docs/project-management/kanban/fr-br
 - **ALWAYS validate before and after** - Catch errors before they propagate
 - **ALWAYS document your decision** - Show your work for traceability
 - See `docs/architecture/standards-and-adrs/versioning-error-reference-guide.md` for error prevention reference
-- See `docs/project-management/kanban/fr-br/FR-017-versioning-policy-hardening-doc-init-build.md` for doc-init requirements (FR-017)
-- See `docs/project-management/kanban/fr-br/BR-067-rw-first-doc-only-release-defaults-to-build-plus-one-not-plus-zero.md` for **BUILD +0 on existing E/S/T** via **`--dpz`** (alias: `--doc-policy-zero`; BR-067)
-- See `docs/project-management/kanban/fr-br/FR-016-kanban-granularity-discrete-task-docs.md` for Task document requirements (FR-016)
-- See `docs/project-management/kanban/fr-br/FR-018-abstract-space-for-zero-numbered-est-docs.md` for abstract space concept (FR-018)
+- See `docs/kanban/fr-br/FR-017-versioning-policy-hardening-doc-init-build.md` for doc-init requirements (FR-017)
+- See `docs/kanban/fr-br/BR-067-rw-first-doc-only-release-defaults-to-build-plus-one-not-plus-zero.md` for **BUILD +0 on existing E/S/T** via **`--dpz`** (alias: `--doc-policy-zero`; BR-067)
+- See `docs/kanban/fr-br/FR-016-kanban-granularity-discrete-task-docs.md` for Task document requirements (FR-016)
+- See `docs/kanban/fr-br/FR-018-abstract-space-for-zero-numbered-est-docs.md` for abstract space concept (FR-018)
 
 ---
 
@@ -1104,7 +1104,7 @@ All work MUST follow the explicit **3-tier structure**: Epic → Story → Task.
 
 **Policy Reference:**
 - **Kanban Governance Policy:** `packages/frameworks/kanban/policies/kanban-governance-policy.md` - Section 3.3: Tasks
-- **Kanban Governance Policy (Dev-Kit):** `docs/project-management/rituals/policy/kanban-governance-policy.md` - Section 3.3: Tasks
+- **Kanban Governance Policy (Dev-Kit):** `docs/governance/kanban/kanban-governance-policy.md` - Section 3.3: Tasks
 
 ### Discrete Task Document Requirement
 
@@ -1125,8 +1125,8 @@ Tasks can be documented in one of two formats:
 - `{kanban_root}/epics/Epic-{epic}/Story-{story}/T{task}-*.md`
 
 **Examples:**
-- [Example: ai-dev-kit] `docs/project-management/kanban/epics/epic-04/Story-11/Task-001-update-kanban-policy.md`
-- [Example: ai-dev-kit] `docs/project-management/kanban/epics/epic-04/Story-11/T01-update-kanban-policy.md`
+- [Example: ai-dev-kit] `docs/kanban/epics/epic-04/Story-11/Task-001-update-kanban-policy.md`
+- [Example: ai-dev-kit] `docs/kanban/epics/epic-04/Story-11/T01-update-kanban-policy.md`
 
 **When to Use:**
 - Tasks with significant complexity or multiple phases
@@ -1205,7 +1205,7 @@ If Task document validation fails, the workflow:
 ❌ TASK DOCUMENT NOT FOUND: Task E4:S11:T01 does not have a Task document.
 
 Action Required:
-1. Create Task document at: docs/project-management/kanban/epics/epic-04/Story-11/Task-001-description.md
+1. Create Task document at: docs/kanban/epics/epic-04/Story-11/Task-001-description.md
    OR
 2. Add delimited section to Story file with header: ### E4:S11:T01 – Task Title
 
@@ -1250,7 +1250,7 @@ The Versioning Policy requires that:
 
 **Task:** E4:S11:T01 – Update Kanban Governance Policy
 
-**Location:** `docs/project-management/kanban/epics/epic-04/Story-11/Task-001-update-kanban-policy.md`
+**Location:** `docs/kanban/epics/epic-04/Story-11/Task-001-update-kanban-policy.md`
 
 **Task Checklist Entry (in Story file):**
 ```markdown
@@ -1260,7 +1260,7 @@ The Versioning Policy requires that:
 
 **RW Step 2 Behavior:**
 1. Identifies completed task: E4:S11:T01
-2. Locates Task document: `docs/project-management/kanban/epics/epic-04/Story-11/Task-001-update-kanban-policy.md`
+2. Locates Task document: `docs/kanban/epics/epic-04/Story-11/Task-001-update-kanban-policy.md`
 3. Validates required fields: ✅ All present
 4. Verifies Task ID alignment: ✅ E4:S11:T01 matches version components
 5. Proceeds to version bump
@@ -1269,7 +1269,7 @@ The Versioning Policy requires that:
 
 **Task:** E4:S11:T02 – Create Task Document Template
 
-**Location:** Delimited section within Story file: `docs/project-management/kanban/epics/epic-04/Story-11/story-11-kanban-granularity-discrete-task-docs.md`
+**Location:** Delimited section within Story file: `docs/kanban/epics/epic-04/Story-11/story-11-kanban-granularity-discrete-task-docs.md`
 
 **Task Section in Story file:**
 ```markdown
@@ -1293,7 +1293,7 @@ The Versioning Policy requires that:
 
 **Policy Documents:**
 - **Kanban Governance Policy (Canonical):** `packages/frameworks/kanban/policies/kanban-governance-policy.md`
-- **Kanban Governance Policy (Dev-Kit):** `docs/project-management/rituals/policy/kanban-governance-policy.md`
+- **Kanban Governance Policy (Dev-Kit):** `docs/governance/kanban/kanban-governance-policy.md`
 - **Versioning Policy (Dev-Kit):** `docs/architecture/standards-and-adrs/dev-kit-versioning-policy.md`
 - **Versioning Policy (Framework):** `packages/frameworks/numbering-versioning/versioning-policy.md`
 
@@ -1572,7 +1572,7 @@ The Versioning Policy requires that:
   handler: release.br_fr_update
   dependencies: [step-2]
   config:
-    fr_br_root: docs/project-management/kanban/fr-br  # Default location for FR/BR files
+    fr_br_root: docs/kanban/fr-br  # Default location for FR/BR files
     br_pattern: BR-*.md
     fr_pattern: FR-*.md
 ```
@@ -1587,7 +1587,7 @@ The Versioning Policy requires that:
    - Get release summary from workflow parameters
    - Extract Epic/Story/Task from completed task identifier
    - **Use config paths:** Find FR/BR root directory (from config `fr_br_root` or fallback):
-     - [Example: ai-dev-kit] `docs/project-management/kanban/fr-br` (or from `rw-config.yaml` if present)
+     - [Example: ai-dev-kit] `docs/kanban/fr-br` (or from `rw-config.yaml` if present)
    - Understand BR/FR linking pattern:
      - BRs/FRs are linked to Tasks via "Intake Decision" section
      - Search for BR/FR files that reference the completed task
@@ -1685,7 +1685,7 @@ The Versioning Policy requires that:
 
 ### Step 7: Scoped Kanban Reconciliation (Self-Sufficient)
 
-**Canonical name (FR-092 / FR-091, supersedes FR-038 framing):** Step 7 is **Scoped Kanban Reconciliation (Self-Sufficient)** — RW owns release-scope kanban consistency end-to-end and does **not** depend on a follow-up UKW run for release correctness. Step 7 invokes the shared kanban intelligence model with `invocation_context: rw_step_7`; **UKW remains a reactive, optional drift-repair workflow** for cumulative cross-cutting board hygiene and is **not a process dependency** for RW completion. (See [`FR-092`](../../../../../../docs/project-management/kanban/fr-br/FR-092-canonical-rw-ukw-kanban-consistency-program.md) and [`FR-091`](../../../../../../docs/project-management/kanban/fr-br/FR-091-rw-step-7-self-sufficient-scoped-kanban-reconciliation-without-ukw-dependency.md). FR-038 is wired as Bucket-D1 historical predecessor.)
+**Canonical name (FR-092 / FR-091, supersedes FR-038 framing):** Step 7 is **Scoped Kanban Reconciliation (Self-Sufficient)** — RW owns release-scope kanban consistency end-to-end and does **not** depend on a follow-up UKW run for release correctness. Step 7 invokes the shared kanban intelligence model with `invocation_context: rw_step_7`; **UKW remains a reactive, optional drift-repair workflow** for cumulative cross-cutting board hygiene and is **not a process dependency** for RW completion. (See [`FR-092`](../../../../../../docs/kanban/fr-br/FR-092-canonical-rw-ukw-kanban-consistency-program.md) and [`FR-091`](../../../../../../docs/kanban/fr-br/FR-091-rw-step-7-self-sufficient-scoped-kanban-reconciliation-without-ukw-dependency.md). FR-038 is wired as Bucket-D1 historical predecessor.)
 
 **RW preventive vs UKW corrective separation (architecture, not just operational guidance):**
 
@@ -1721,7 +1721,7 @@ The four surfaces must converge as: idempotent (repeated runs produce no changes
   config:
     kanban_update_script: packages/frameworks/workflow-mgt/scripts/update_kanban_docs.py
     epic_doc_pattern: docs/project-management/epics/overview/Epic {epic}/Epic-{epic}.md
-    kanban_board: docs/project-management/kanban/kboard.md
+    kanban_board: docs/kanban/kboard.md
     use_rw_config: true
 ```
 
@@ -2152,7 +2152,7 @@ $ python packages/frameworks/workflow-mgt/scripts/update_kanban_docs.py --dry-ru
      - `python {scripts_path}/validation/validate_board_stamp_diff.py --before <snapshot_dir>/kboard.md --after <kanban_root>/kboard.md --strict` (repeat for `kboard.md`; FR-097)
      - `python {scripts_path}/validation/validate_kanban_state_icons.py --project-root <repo-root> --strict` (UXR-012 / Gate 9)
      - `python {scripts_path}/validation/validate_active_kanban_board.py --project-root <repo-root> --strict` (FR-109 / Gate 11)
-     - `python {scripts_path}/validation/validate_code_quality_gate.py` (FR-113 / **E08:S03:T17** — **advisory** by default; `--strict` after parity; requires `code_quality_gate:` in `rw-config.yaml`; skips if CodeQL absent unless `--sarif` provided)
+     - **CQG not in RW** — local CodeQL gate runs at **IDW Phase 6b** (ADR-022 v0.0.2). RW Step 9.7 Actions CI parity remains the release ship gate for workflow checks.
      - `python {scripts_path}/validation/validate_semver_registry_injective.py` (FR-045 / **E03:S02:T12** — blocking when `semver_mapping_strategy: task_touch`)
      - `python {scripts_path}/validation/validate_task_touch_release_contract.py --strict` (blocking when `task_touch` — registry row + staged `semver-registry.yaml` for releasing internal version)
      - `python {scripts_path}/validation/validate_kanban_moscow_spacing.py --project-root <repo-root> --strict` (UXR-005 / **E07:S01:T09**; non-blocking; Release Readiness Gate 10 warn)
@@ -2443,7 +2443,7 @@ $ python packages/frameworks/workflow-mgt/scripts/update_kanban_docs.py --dry-ru
 - **Validator:** `packages/frameworks/workflow-mgt/scripts/validate_rw_step7_post_commit.py`
 - **Tests:** `packages/frameworks/workflow-mgt/scripts/test_validate_rw_step7_post_commit.py`
 - **Pre-commit gate:** Step 8 (`validate_rw_step7_completeness.py`)
-- **BR-070:** `docs/project-management/kanban/fr-br/BR-070-rw-k-stage-files-completeness-gap-allows-partial-kanban-commit.md`
+- **BR-070:** `docs/kanban/fr-br/BR-070-rw-k-stage-files-completeness-gap-allows-partial-kanban-commit.md`
 
 ---
 
@@ -3177,10 +3177,10 @@ if result.exit_code != 0:
    - **Read Epic/Story Document:**
      ```bash
      # Epic-level
-     Epic: docs/project-management/kanban/epics/Epic-{epic}/Epic-{epic}.md
+     Epic: docs/kanban/epics/Epic-{epic}/Epic-{epic}.md
      
      # Story-level
-     Story: docs/project-management/kanban/epics/Epic-{epic}/Story-{story}-*.md
+     Story: docs/kanban/epics/Epic-{epic}/Story-{story}-*.md
      ```
    
    - **Extract Status:**
@@ -3521,7 +3521,7 @@ run_terminal_cmd("python scripts/automation/release_workflow.py --auto-go")
 - **[Release Workflow Usage](release-workflow-usage.md)** - How to use the workflow
 
 **Policy Documentation:**
-- **[Kanban Governance Policy](../../project-management/rituals/policy/kanban-governance-policy.md)** - Work item structure
+- **[Kanban Governance Policy](docs/governance/kanban/kanban-governance-policy.md)** - Work item structure
 - **[Versioning Strategy](../../Architecture/standards-and-adrs/versioning-strategy.md)** - Versioning requirements
 - **[Versioning Policy](../../Architecture/standards-and-adrs/versioning-policy.md)** - Version schema
 

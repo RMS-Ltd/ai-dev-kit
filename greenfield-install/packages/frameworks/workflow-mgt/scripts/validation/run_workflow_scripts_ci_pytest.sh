@@ -20,4 +20,5 @@ exec python -m pytest \
   "${WMGT}/kanban/test_est_format.py" \
   "${WMGT}/kanban/test_discover_perpetual_task_candidates.py" \
   "${WMGT}/version/test_task_touch_mapping.py" \
+  "${WMGT}/release_metadata/test_release_metadata_ingest.py" \
   "$@"

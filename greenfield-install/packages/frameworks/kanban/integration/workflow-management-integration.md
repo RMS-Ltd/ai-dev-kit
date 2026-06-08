@@ -146,8 +146,8 @@ paths_to_configure:
     example: "docs/project-management/epics/overview/Epic 4/epic-04.md"
 
   story_docs:
-    pattern: "docs/project-management/kanban/epics/Epic-{epic}/Story-{N}-{Name}.md"
-    example: "docs/project-management/kanban/epics/epic-04/story-33-Parent-Inclusivity-and-Accessibility.md"
+    pattern: "docs/kanban/epics/Epic-{epic}/Story-{N}-{Name}.md"
+    example: "docs/kanban/epics/epic-04/story-33-Parent-Inclusivity-and-Accessibility.md"
 
 files_to_update:
   - ".cursorrules (RW trigger section, Step 4 description)"

@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # E04:S19:T10 — Planning: Spec, Tests, Implementation Plan (IPW)
 
-**Host Task:** [`T10-e7-s00-detasking-abstract-space-enforcement-br076.md`](../project-management/kanban/epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T10-e7-s00-detasking-abstract-space-enforcement-br076.md) **(E04:S19:T10)**  
-**Planning for:** [BR-076](../project-management/kanban/fr-br/BR-076-e7-s00-must-not-host-concrete-tasks.md)  
+**Host Task:** [`T10-e7-s00-detasking-abstract-space-enforcement-br076.md`](../kanban/epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T10-e7-s00-detasking-abstract-space-enforcement-br076.md) **(E04:S19:T10)**  
+**Planning for:** [BR-076](../kanban/fr-br/BR-076-e7-s00-must-not-host-concrete-tasks.md)  
 **Status:** Approved
 
 > **IPW (Implementation Planning Workflow):** Consolidated IPP for BR-076 — E7:S00 detasking to abstract-only (E5:S00 model).
@@ -79,7 +79,7 @@ RF1–RF3 delivered via story-000 rewrite and anchor banners. RF4 via T10 migrat
 | T6 | Governance contract | N | Policy text only; no new RW gate |
 | T7 | Supersedes | N | Aligns with FR-072 |
 
-**Outcome:** `ALREADY_COVERED` — [FR-072](../project-management/kanban/fr-br/FR-072-uniform-repository-abstract-space-kanban-rules.md), [dev-kit-versioning-policy.md](../governance/standards/dev-kit-versioning-policy.md) § S00
+**Outcome:** `ALREADY_COVERED` — [FR-072](../kanban/fr-br/FR-072-uniform-repository-abstract-space-kanban-rules.md), [dev-kit-versioning-policy.md](../governance/standards/dev-kit-versioning-policy.md) § S00
 
 ---
 
@@ -113,10 +113,10 @@ RF1–RF3 delivered via story-000 rewrite and anchor banners. RF4 via T10 migrat
 
 ### 4.1 Files to create or modify
 
-- `docs/project-management/kanban/epics/epic-07/story-00-uxr-repo.md`
-- `docs/project-management/kanban/epics/epic-07/story-00-uxr-repo/T0*.md` (6 files)
-- `docs/project-management/kanban/fr-br/UXR-005-*.md`, `BR-076-*.md`
-- `docs/project-management/kanban/kboard.md`
+- `docs/kanban/epics/epic-07/story-00-uxr-repo.md`
+- `docs/kanban/epics/epic-07/story-00-uxr-repo/T0*.md` (6 files)
+- `docs/kanban/fr-br/UXR-005-*.md`, `BR-076-*.md`
+- `docs/kanban/kboard.md`
 - `.cursor/skills/intake-process/SKILL.md`
 - `packages/frameworks/kanban/FR_BR_INTAKE_GUIDE.md`, `kanban-governance-policy.md`
 - T10, T08, story-019, epic-04, epic-07
@@ -177,6 +177,6 @@ RF1–RF3 delivered via story-000 rewrite and anchor banners. RF4 via T10 migrat
 
 ## References
 
-- [BR-076](../project-management/kanban/fr-br/BR-076-e7-s00-must-not-host-concrete-tasks.md)
-- [FR-072](../project-management/kanban/fr-br/FR-072-uniform-repository-abstract-space-kanban-rules.md)
-- [E5:S00](../project-management/kanban/epics/epic-05/story-00-fr-repo.md)
+- [BR-076](../kanban/fr-br/BR-076-e7-s00-must-not-host-concrete-tasks.md)
+- [FR-072](../kanban/fr-br/FR-072-uniform-repository-abstract-space-kanban-rules.md)
+- [E5:S00](../kanban/epics/epic-05/story-00-fr-repo.md)

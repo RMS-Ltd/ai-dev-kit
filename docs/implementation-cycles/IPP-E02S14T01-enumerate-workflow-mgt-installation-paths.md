@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # E02:S14:T01 — Planning: Enumerate Workflow-Mgt Installation Paths (IPW)
 
-**Host Task:** [`T01-enumerate-supported-installation-paths-for-workflow-manageme.md`](../project-management/kanban/epics/epic-02/story-14-workflow-management-package-installation-evaluation/T01-enumerate-supported-installation-paths-for-workflow-manageme.md) **(E02:S14:T01)**  
-**Planning for:** [Story 14 — Workflow Management Package Installation Evaluation](../project-management/kanban/epics/epic-02/story-14-workflow-management-package-installation-evaluation.md) · [S13 component inventory §5](../project-management/kanban/epics/epic-02/story-13-workflow-management-package-implementation-review/component-inventory-map.md)  
+**Host Task:** [`T01-enumerate-supported-installation-paths-for-workflow-manageme.md`](../kanban/epics/epic-02/story-14-workflow-management-package-installation-evaluation/T01-enumerate-supported-installation-paths-for-workflow-manageme.md) **(E02:S14:T01)**  
+**Planning for:** [Story 14 — Workflow Management Package Installation Evaluation](../kanban/epics/epic-02/story-14-workflow-management-package-installation-evaluation.md) · [S13 component inventory §5](../kanban/epics/epic-02/story-13-workflow-management-package-implementation-review/component-inventory-map.md)  
 **Status:** Implemented (2026-06-05)
 
 ---
@@ -128,7 +128,7 @@ Companion `installation-paths-matrix.md` encodes RF1–RF3 as rows with canonica
 - CREATE: `story-14-workflow-management-package-installation-evaluation/installation-paths-matrix.md`
 - UPDATE: `T01-enumerate-supported-installation-paths-for-workflow-manageme.md`
 - UPDATE (Step N): `story-14-workflow-management-package-installation-evaluation.md`
-- UPDATE (Step N): `docs/project-management/kanban/kboard.md`
+- UPDATE (Step N): `docs/kanban/kboard.md`
 
 ### 4.2 Dependency order
 
@@ -168,7 +168,7 @@ Companion `installation-paths-matrix.md` encodes RF1–RF3 as rows with canonica
 
 | Doc ID | Canonical path | Publication status | Lifecycle | Inbound links |
 | ------ | -------------- | ------------------ | --------- | ------------- |
-| D-C1 | `docs/project-management/kanban/epics/epic-02/story-14-workflow-management-package-installation-evaluation/installation-paths-matrix.md` | NOT_APPLICABLE | evergreen | T01 Deliverable; Story References; T02 Input |
+| D-C1 | `docs/kanban/epics/epic-02/story-14-workflow-management-package-installation-evaluation/installation-paths-matrix.md` | NOT_APPLICABLE | evergreen | T01 Deliverable; Story References; T02 Input |
 | D-C2 | `docs/implementation-cycles/IPP-E02S14T01-enumerate-workflow-mgt-installation-paths.md` | NOT_APPLICABLE | evergreen | T01 Input + References |
 | D-U1 | T01 task doc | NOT_APPLICABLE | evergreen | kboard row; Story checklist |
 
@@ -189,9 +189,9 @@ Companion `installation-paths-matrix.md` encodes RF1–RF3 as rows with canonica
 
 ## References
 
-- [T01 task doc](../project-management/kanban/epics/epic-02/story-14-workflow-management-package-installation-evaluation/T01-enumerate-supported-installation-paths-for-workflow-manageme.md)
-- [Story 14](../project-management/kanban/epics/epic-02/story-14-workflow-management-package-installation-evaluation.md)
-- [S13 component inventory §5](../project-management/kanban/epics/epic-02/story-13-workflow-management-package-implementation-review/component-inventory-map.md)
+- [T01 task doc](../kanban/epics/epic-02/story-14-workflow-management-package-installation-evaluation/T01-enumerate-supported-installation-paths-for-workflow-manageme.md)
+- [Story 14](../kanban/epics/epic-02/story-14-workflow-management-package-installation-evaluation.md)
+- [S13 component inventory §5](../kanban/epics/epic-02/story-13-workflow-management-package-implementation-review/component-inventory-map.md)
 - [INSTALL_IN_YOUR_PROJECT.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/INSTALL_IN_YOUR_PROJECT.md)
 - [IPP-E02S13T02 pattern](IPP-E02S13T02-inventory-package-components-map.md)
-- [FR-042](../project-management/kanban/fr-br/FR-042-implementation-planning-workflow-ipw.md)
+- [FR-042](../kanban/fr-br/FR-042-implementation-planning-workflow-ipw.md)

@@ -248,7 +248,7 @@ Adopters **vendor** this folder into their repository (copy or submodule). That 
 - Full three-way integration
 - Automated Kanban updates with version markers
 
-See `docs/project-management/kanban/epics/epic-01/story-02-package-and-repo-architecture/T04-consumption-patterns.md` for detailed step-by-step guides for each scenario.
+See `docs/kanban/epics/epic-01/story-02-package-and-repo-architecture/T04-consumption-patterns.md` for detailed step-by-step guides for each scenario.
 
 ---
 
@@ -545,7 +545,7 @@ The Intake Workflow integrates with the Trigger-Aware Release Workflow (E2:S07):
 **Example:**
 ```bash
 # Commit message: "Add FR-019: Intake Workflow Automation"
-# Changed files: ["docs/project-management/kanban/fr-br/FR-019.md"]
+# Changed files: ["docs/kanban/fr-br/FR-019.md"]
 # → RW detects trigger → Intake workflow executes automatically
 ```
 

@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # E10:S01:T09 — Planning: Sync Architecture ADR Dual SoT (IPW)
 
-**Host Task:** [`T09-sync-architecture-adr-dual-sot.md`](../project-management/kanban/epics/epic-10/story-01-document-lifecycle-package-implementation-review/T09-sync-architecture-adr-dual-sot.md) **(E10:S01:T09)**  
-**Planning for:** [GAP-DOCLIFE-INTG-001](../project-management/kanban/epics/epic-10/story-01-document-lifecycle-package-implementation-review/T05-create-gap-log-and-risk-assessment.md) · [T04 integration alignment §5](../project-management/kanban/epics/epic-10/story-01-document-lifecycle-package-implementation-review/integration-alignment-report.md) · [T06 remediation R2](../project-management/kanban/epics/epic-10/story-01-document-lifecycle-package-implementation-review/T06-define-rc-sign-off-criteria-and-remediation-tasks.md)  
+**Host Task:** [`T09-sync-architecture-adr-dual-sot.md`](../kanban/epics/epic-10/story-01-document-lifecycle-package-implementation-review/T09-sync-architecture-adr-dual-sot.md) **(E10:S01:T09)**  
+**Planning for:** [GAP-DOCLIFE-INTG-001](../kanban/epics/epic-10/story-01-document-lifecycle-package-implementation-review/T05-create-gap-log-and-risk-assessment.md) · [T04 integration alignment §5](../kanban/epics/epic-10/story-01-document-lifecycle-package-implementation-review/integration-alignment-report.md) · [T06 remediation R2](../kanban/epics/epic-10/story-01-document-lifecycle-package-implementation-review/T06-define-rc-sign-off-criteria-and-remediation-tasks.md)  
 **Status:** Approved (planning complete — awaiting implementation authorization)  
 **Branch:** `epic/10-doc-lifecycle-framework`
 
@@ -47,7 +47,7 @@ housekeeping_policy: keep
   - Package independence score (10/10) unchanged — no new hard dependencies.
   - greenfield-install must remain `diff -rq` clean vs canonical after implementation.
 - **In scope:** Policy pair sync, salience schema housing, cross-links, mirror banners, maintainer parity doc, architecture ADR, T04 re-validation notes, T05 gap tracking update.
-- **Out of scope:** Doc housekeeping workflow/scripts ([E10:S01:T08](../project-management/kanban/epics/epic-10/story-01-document-lifecycle-package-implementation-review/T08-implement-doc-housekeeping-workflow-and-scripts.md)); `DocumentLifecycleValidator` fix ([E10:S01:T10](../project-management/kanban/epics/epic-10/story-01-document-lifecycle-package-implementation-review/T10-fix-document-lifecycle-validator.md)); `.cursorrules` five-field alignment (T06 R4); `DOCUMENT_TEMPLATE` fenced-block fix (T06 R7).
+- **Out of scope:** Doc housekeeping workflow/scripts ([E10:S01:T08](../kanban/epics/epic-10/story-01-document-lifecycle-package-implementation-review/T08-implement-doc-housekeeping-workflow-and-scripts.md)); `DocumentLifecycleValidator` fix ([E10:S01:T10](../kanban/epics/epic-10/story-01-document-lifecycle-package-implementation-review/T10-fix-document-lifecycle-validator.md)); `.cursorrules` five-field alignment (T06 R4); `DOCUMENT_TEMPLATE` fenced-block fix (T06 R7).
 
 ---
 
@@ -164,8 +164,8 @@ Doc/config-only task — verification is **structural inspection and diff-based*
 - `packages/frameworks/doc-lifecycle/README.md`
 - `packages/frameworks/doc-lifecycle/PACKAGE_PROPOSAL.md`
 - `greenfield-install/packages/frameworks/doc-lifecycle/` (full tree sync)
-- `docs/project-management/kanban/epics/epic-10/story-01-document-lifecycle-package-implementation-review/T09-sync-architecture-adr-dual-sot.md`
-- `docs/project-management/kanban/epics/epic-10/story-01-document-lifecycle-package-implementation-review/T05-create-gap-log-and-risk-assessment.md` (Gap 4 tracking)
+- `docs/kanban/epics/epic-10/story-01-document-lifecycle-package-implementation-review/T09-sync-architecture-adr-dual-sot.md`
+- `docs/kanban/epics/epic-10/story-01-document-lifecycle-package-implementation-review/T05-create-gap-log-and-risk-assessment.md` (Gap 4 tracking)
 
 ### 4.2 Dependency order
 
@@ -262,12 +262,12 @@ Doc/config-only task — verification is **structural inspection and diff-based*
 
 ## References
 
-- [T09 task doc](../project-management/kanban/epics/epic-10/story-01-document-lifecycle-package-implementation-review/T09-sync-architecture-adr-dual-sot.md)
-- [T05 gap log — Gap 4 GAP-DOCLIFE-INTG-001](../project-management/kanban/epics/epic-10/story-01-document-lifecycle-package-implementation-review/T05-create-gap-log-and-risk-assessment.md)
-- [T04 integration alignment report §5](../project-management/kanban/epics/epic-10/story-01-document-lifecycle-package-implementation-review/integration-alignment-report.md)
-- [T06 remediation R2](../project-management/kanban/epics/epic-10/story-01-document-lifecycle-package-implementation-review/T06-define-rc-sign-off-criteria-and-remediation-tasks.md)
-- [T02 component inventory §7](../project-management/kanban/epics/epic-10/story-01-document-lifecycle-package-implementation-review/component-inventory-map.md)
-- [expectations-baseline.md](../project-management/kanban/epics/epic-10/story-01-document-lifecycle-package-implementation-review/expectations-baseline.md)
+- [T09 task doc](../kanban/epics/epic-10/story-01-document-lifecycle-package-implementation-review/T09-sync-architecture-adr-dual-sot.md)
+- [T05 gap log — Gap 4 GAP-DOCLIFE-INTG-001](../kanban/epics/epic-10/story-01-document-lifecycle-package-implementation-review/T05-create-gap-log-and-risk-assessment.md)
+- [T04 integration alignment report §5](../kanban/epics/epic-10/story-01-document-lifecycle-package-implementation-review/integration-alignment-report.md)
+- [T06 remediation R2](../kanban/epics/epic-10/story-01-document-lifecycle-package-implementation-review/T06-define-rc-sign-off-criteria-and-remediation-tasks.md)
+- [T02 component inventory §7](../kanban/epics/epic-10/story-01-document-lifecycle-package-implementation-review/component-inventory-map.md)
+- [expectations-baseline.md](../kanban/epics/epic-10/story-01-document-lifecycle-package-implementation-review/expectations-baseline.md)
 - [repo-structure-for-adopters.md](../documentation/user-docs/repo-structure-for-adopters.md)
 - [rw-trigger-dual-source-parity.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/docs/rw-trigger-dual-source-parity.md) (precedent)
 - [ipw-adr-necessity-checklist.md](../architecture/standards-and-adrs/ipw-adr-necessity-checklist.md)

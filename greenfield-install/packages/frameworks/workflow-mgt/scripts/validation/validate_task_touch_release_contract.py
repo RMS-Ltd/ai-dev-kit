@@ -24,15 +24,7 @@ _version_dir = _validation_dir.parent / "version"
 if str(_version_dir) not in sys.path:
     sys.path.insert(0, str(_version_dir))
 
-from semver_converter import (  # noqa: E402
-    _ensure_task_touch_mode,
-    _find_mapping_entry,
-    convert_version_string,
-    get_rw_tag_info,
-    get_semver_mapping_strategy,
-    load_semver_registry,
-    semver_core,
-)
+import semver_converter  # noqa: E402
 
 _SCRIPTS_DIR = Path(__file__).resolve().parent.parent
 if str(_SCRIPTS_DIR) not in sys.path:
@@ -68,9 +60,9 @@ def _load_internal_version(root: Path, config: Dict[str, Any]) -> Optional[str]:
     return m2.group(1) if m2 else None
 
 
-def _git_show_staged_registry(root: Path) -> Optional[str]:
+def _git_show_staged_path(root: Path, rel_path: str) -> Optional[str]:
     result = subprocess.run(
-        ["git", "show", ":semver-registry.yaml"],
+        ["git", "show", f":{rel_path}"],
         capture_output=True,
         text=True,
         cwd=root,
@@ -78,6 +70,20 @@ def _git_show_staged_registry(root: Path) -> Optional[str]:
     if result.returncode != 0:
         return None
     return result.stdout
+
+
+def _git_show_staged_registry(root: Path) -> Optional[str]:
+    return _git_show_staged_path(root, "semver-registry.yaml")
+
+
+def _git_is_staged_binary(root: Path, rel_path: str) -> bool:
+    result = subprocess.run(
+        ["git", "diff", "--cached", "--name-only", "--", rel_path],
+        capture_output=True,
+        text=True,
+        cwd=root,
+    )
+    return result.returncode == 0 and rel_path in result.stdout.splitlines()
 
 
 def _entry_in_yaml_text(yaml_text: str, internal_version: str) -> bool:
@@ -92,7 +98,7 @@ def validate_task_touch_release_contract(
     check_staged_registry: bool = True,
 ) -> Tuple[bool, List[str]]:
     root = project_root or _project_root(Path.cwd())
-    if get_semver_mapping_strategy() != "task_touch":
+    if semver_converter.get_semver_mapping_strategy() != "task_touch":
         return True, []
 
     config = load_rw_config_or_empty(root)
@@ -101,10 +107,10 @@ def validate_task_touch_release_contract(
         return False, ["Could not determine internal version from version file."]
 
     errors: List[str] = []
-    registry = load_semver_registry()
+    registry = semver_converter.load_semver_registry()
     rc = int(internal.split(".")[0])
-    ttm = _ensure_task_touch_mode(registry, rc)
-    entry = _find_mapping_entry(ttm, internal)
+    ttm = semver_converter._ensure_task_touch_mode(registry, rc)
+    entry = semver_converter._find_mapping_entry(ttm, internal)
     if not entry:
         errors.append(
             f"semver-registry missing finalized mapping_history row for {internal}. "
@@ -113,7 +119,9 @@ def validate_task_touch_release_contract(
     else:
         registry_semver = entry.get("semver")
         try:
-            predicted = convert_version_string(internal, strategy="task_touch", finalize=False)
+            predicted = semver_converter.convert_version_string(
+                internal, strategy="task_touch", finalize=False
+            )
         except Exception as exc:
             errors.append(f"SemVer prediction failed for {internal}: {exc}")
             predicted = None
@@ -121,25 +129,36 @@ def validate_task_touch_release_contract(
             errors.append(
                 f"Registry semver {registry_semver!r} != predicted {predicted!r} for {internal}."
             )
-        tag_info = get_rw_tag_info(internal, finalize=False)
+        tag_info = semver_converter.get_rw_tag_info(internal, finalize=False)
         primary = tag_info.get("primary_tag", "")
-        if registry_semver and primary != f"v{semver_core(registry_semver)}":
+        if registry_semver and primary != f"v{semver_converter.semver_core(registry_semver)}":
             errors.append(
                 f"Primary tag {primary!r} does not match registry semver core "
-                f"{semver_core(registry_semver)!r}."
+                f"{semver_converter.semver_core(registry_semver)!r}."
             )
 
     if check_staged_registry and strict:
-        staged = _git_show_staged_registry(root)
-        if staged is None:
-            errors.append(
-                "semver-registry.yaml is not staged — finalize row must be committed with the release."
-            )
-        elif not _entry_in_yaml_text(staged, internal):
-            errors.append(
-                f"Staged semver-registry.yaml lacks internal_version: {internal} "
-                "(finalize before git add)."
-            )
+        if semver_converter.get_release_state_backend() == "sqlite":
+            db_path = semver_converter.get_release_state_db_path()
+            try:
+                rel_db = db_path.relative_to(root).as_posix()
+            except ValueError:
+                rel_db = db_path.as_posix()
+            if not _git_is_staged_binary(root, rel_db):
+                errors.append(
+                    f"{rel_db} is not staged — SQLite finalize must be committed with the release."
+                )
+        else:
+            staged = _git_show_staged_registry(root)
+            if staged is None:
+                errors.append(
+                    "semver-registry.yaml is not staged — finalize row must be committed with the release."
+                )
+            elif not _entry_in_yaml_text(staged, internal):
+                errors.append(
+                    f"Staged semver-registry.yaml lacks internal_version: {internal} "
+                    "(finalize before git add)."
+                )
 
     return len(errors) == 0, errors
 

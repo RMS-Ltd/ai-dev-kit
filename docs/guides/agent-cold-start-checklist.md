@@ -8,7 +8,7 @@ housekeeping_policy: keep
 
 # Agent cold-start checklist
 
-Verification companion for [ADR-012](../architecture/standards-and-adrs/ADR-012-agent-bootstrap-and-task-routing.md). Cold start is **one file**: [AGENTS.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/AGENTS.md). Each simulation must load **≤5 files** before substantive work (manifest not required at cold start).
+Verification companion for [ADR-012](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/architecture/standards-and-adrs/ADR-012-agent-bootstrap-and-task-routing.md). Cold start is **one file**: [AGENTS.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/AGENTS.md). Each simulation must load **≤5 files** before substantive work (manifest not required at cold start).
 
 ---
 
@@ -34,7 +34,7 @@ Verification companion for [ADR-012](../architecture/standards-and-adrs/ADR-012-
 | Step | File | Purpose |
 | ---- | ---- | ------- |
 | 1 | `AGENTS.md` | Routing → `kanban-intake` |
-| 2 | `docs/project-management/kanban/kboard.md` | `loadFirst` |
+| 2 | `docs/kanban/kboard.md` | `loadFirst` |
 | 3 | `packages/frameworks/kanban/FR_BR_INTAKE_GUIDE.md` | `loadFirst` |
 | 4 | Named FBU doc (from prompt) | e.g. FR under intake |
 

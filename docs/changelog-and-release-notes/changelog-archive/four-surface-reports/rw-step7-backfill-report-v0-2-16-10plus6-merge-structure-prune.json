@@ -1,0 +1,12 @@
+{
+  "report_type": "merge_reconcile",
+  "release_scope": "E02:S16:T10",
+  "version": "v0.2.16.10+6",
+  "evidence_mode": "structure_prune",
+  "rows": {
+    "E02:S16:T10": {
+      "allowed": true,
+      "reason": "Merge origin/dev v0.2.16.10+6 — T10 perpetual row Last modified reconciled from remote RW"
+    }
+  }
+}

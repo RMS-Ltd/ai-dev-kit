@@ -10,7 +10,7 @@ housekeeping_policy: keep
 
 **Task:** E2:S01:T15  
 **Related FR:** FR-049  
-**Host Task:** [T15-canonical-rw-step-list-single-source-of-truth-fr049.md](../project-management/kanban/epics/epic-02/story-01-rw-agent-execution-and-docs/T15-canonical-rw-step-list-single-source-of-truth-fr049.md)  
+**Host Task:** [T15-canonical-rw-step-list-single-source-of-truth-fr049.md](../kanban/epics/epic-02/story-01-rw-agent-execution-and-docs/T15-canonical-rw-step-list-single-source-of-truth-fr049.md)  
 **Created:** 2026-04-09
 
 ---
@@ -24,14 +24,14 @@ Validate that canonical RW step definitions stay single-source and that all trac
 ## Coverage Matrix
 
 1. **FR metadata correctness**
-   - File: `docs/project-management/kanban/fr-br/FR-049-canonical-rw-step-list-single-source-of-truth.md`
+   - File: `docs/kanban/fr-br/FR-049-canonical-rw-step-list-single-source-of-truth.md`
    - Check: `Code` and `Implementing Task` fields point to `E2:S01:T15`.
 
 2. **Task housing correctness**
    - File path and task header align to `E2:S01:T15`.
 
 3. **Story checklist wiring**
-   - File: `docs/project-management/kanban/epics/epic-02/story-01-rw-agent-execution-and-docs.md`
+   - File: `docs/kanban/epics/epic-02/story-01-rw-agent-execution-and-docs.md`
    - Check: checklist row references `T15` and `FR-049`.
 
 4. **Canonical-step consistency**

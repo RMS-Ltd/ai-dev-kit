@@ -162,13 +162,10 @@ class AgenticTaskMapper:
     
     def _extract_task_content(self, epic_num: int, story_num: int, task_num: int) -> Optional[Dict]:
         """Extract task content from story file."""
-        story_file = self.kanban_path / "epics" / f"Epic-{epic_num}" / f"Story-{story_num:03d}-*.md"
-        
-        # Find story file (glob pattern)
         story_files = list(self.kanban_path.glob(f"epics/Epic-{epic_num}/Story-{story_num:03d}-*.md"))
         if not story_files:
             return None
-        
+
         story_file = story_files[0]
         content = story_file.read_text(encoding='utf-8')
         
@@ -346,7 +343,7 @@ def main():
     parser.add_argument(
         "--kanban-path",
         type=str,
-        default="docs/project-management/kanban",
+        default="docs/kanban",
         help="Path to Kanban structure"
     )
     parser.add_argument(

@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # E08:S03:T04 — Planning: Spec, Tests, Implementation Plan (IPW)
 
-**Host Task:** [`T04-ci-test-workflow-pytest-remediation-br058.md`](../project-management/kanban/epics/epic-08/story-03-automation-scripts/T04-ci-test-workflow-pytest-remediation-br058.md) **(E08:S03:T04)**  
-**Planning for:** [BR-058](../project-management/kanban/fr-br/BR-058-ci-test-workflow-missing-and-pytest-failures.md)  
+**Host Task:** [`T04-ci-test-workflow-pytest-remediation-br058.md`](../kanban/epics/epic-08/story-03-automation-scripts/T04-ci-test-workflow-pytest-remediation-br058.md) **(E08:S03:T04)**  
+**Planning for:** [BR-058](../kanban/fr-br/BR-058-ci-test-workflow-missing-and-pytest-failures.md)  
 **Status:** Approved (implementation authorized)
 
 > **IPW:** Produced for E08:S03:T04. Complements [IPP-E7S7T2](IPP-E07S07T02-ci-pytest-gate-for-workflow-scripts.md) (scoped workflow-mgt pytest only).
@@ -139,7 +139,7 @@ Test fixes → local green → workflow YAML → RW kanban closure
 | D-C1 | `.github/workflows/tests.yml` | CREATE | Repo-wide pytest gate |
 | D-U1 | `tests/**` | UPDATE | Remediation |
 | D-U2 | `packages/frameworks/workflow-mgt/scripts/validation/README.md` | UPDATE | Two-gate CI model |
-| D-U3 | `docs/project-management/kanban/fr-br/BR-058-*.md` | UPDATE | Resolution |
+| D-U3 | `docs/kanban/fr-br/BR-058-*.md` | UPDATE | Resolution |
 | D-U4 | Task doc, story, kboard, fbuboard | UPDATE | RW Step 7 |
 | D-C2 | This IPP | CREATE | Planning package |
 | D-N1 | Root README Contributing | NONE | cli/README already documents pytest |
@@ -170,7 +170,7 @@ Test fixes → local green → workflow YAML → RW kanban closure
 
 ## References
 
-- [BR-058](../project-management/kanban/fr-br/BR-058-ci-test-workflow-missing-and-pytest-failures.md)
+- [BR-058](../kanban/fr-br/BR-058-ci-test-workflow-missing-and-pytest-failures.md)
 - [IPP-E7S7T2](IPP-E07S07T02-ci-pytest-gate-for-workflow-scripts.md)
-- [FR-104](../project-management/kanban/fr-br/FR-104-python-minimum-version-policy-alignment.md)
+- [FR-104](../kanban/fr-br/FR-104-python-minimum-version-policy-alignment.md)
 - [ipw-adr-necessity-checklist.md](../architecture/standards-and-adrs/ipw-adr-necessity-checklist.md)

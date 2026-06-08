@@ -1,36 +1,12 @@
 ---
 lifecycle: evergreen
-ttl_days: null
-created_at: 2026-05-29T21:30:00Z
-expires_at: null
+created_at: 2026-06-07T10:29:42Z
 housekeeping_policy: keep
+notion_sot: true
 ---
 
-# Book repository documentation scope
+# Book Repo Docs Scope
 
-**Purpose:** Classify top-level `docs/` trees for the maintainer book workspace ([ADR-006](../architecture/standards-and-adrs/ADR-006-book-project-private-repository-spin-off.md), [FR-101](../project-management/kanban/fr-br/FR-101-consolidate-governance-under-docs-governance.md)).
+**SoT:** Notion Engineering KB — [Book Repo Docs Scope](https://www.notion.so/378b6f8962c181e8a3efda9286958073)
 
-**Task:** [E7:S01:T11](../project-management/kanban/epics/epic-07/story-01-codebase-maintenance-tasks/T11-consolidate-governance-under-docs-governance-fr101.md)
-
----
-
-## Scope table
-
-| Path | Disposition | Notes |
-|------|-------------|-------|
-| `docs/governance/` | **KEEP** | Book-active governance hub ([README](../governance/README.md)); standards, kanban, principles |
-| `docs/architecture/` | **KEEP** | ADRs, INDEX-only references; stubs point to `docs/governance/` for moved policies |
-| `docs/project-management/` | **KEEP** | Kanban, rituals stubs, FR/BR/UXR |
-| `docs/implementation-cycles/` | **KEEP** | IPP / ICW planning packages |
-| `docs/maintenance/` | **KEEP** | Runbooks and scope docs (this file) |
-| `docs/changelog-and-release-notes/` | **KEEP** | Changelog archive |
-| `docs/documentation/` | **KEEP** | User-facing adopters docs |
-| `docs/knowledge/` | **KEEP** | KB and use cases |
-| `packages/frameworks/` | **KEEP** | Framework SoT for adopters |
-
----
-
-## Governance hub
-
-Canonical book policies: [docs/governance/README.md](../governance/README.md)  
-Topology: [ADR-007](../architecture/standards-and-adrs/ADR-007-book-governance-document-topology.md)
+> Migrated from `docs/maintenance/book-repo-docs-scope.md` per [FR-114](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/kanban/fr-br/FR-114-split-documentation-surfaces-docusaurus-public-notion-maintainer-kb.md). Full content lives in Notion.

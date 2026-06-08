@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # E02:S13:T03 — Planning: Workflow Behavior Validation (IPW)
 
-**Host Task:** [`T03-validate-workflow-behavior-against-documented-guidance.md`](../project-management/kanban/epics/epic-02/story-13-workflow-management-package-implementation-review/T03-validate-workflow-behavior-against-documented-guidance.md) **(E02:S13:T03)**  
-**Planning for:** [T01 expectations baseline](../project-management/kanban/epics/epic-02/story-13-workflow-management-package-implementation-review/T01-expectations-baseline.md) · [T02 component inventory](../project-management/kanban/epics/epic-02/story-13-workflow-management-package-implementation-review/component-inventory-map.md) · [E07:S07:T01 report](../project-management/kanban/epics/epic-07/story-07-code-reviews/T01-workflow-machinery-code-review-report.md)  
+**Host Task:** [`T03-validate-workflow-behavior-against-documented-guidance.md`](../kanban/epics/epic-02/story-13-workflow-management-package-implementation-review/T03-validate-workflow-behavior-against-documented-guidance.md) **(E02:S13:T03)**  
+**Planning for:** [T01 expectations baseline](../kanban/epics/epic-02/story-13-workflow-management-package-implementation-review/T01-expectations-baseline.md) · [T02 component inventory](../kanban/epics/epic-02/story-13-workflow-management-package-implementation-review/component-inventory-map.md) · [E07:S07:T01 report](../kanban/epics/epic-07/story-07-code-reviews/T01-workflow-machinery-code-review-report.md)  
 **Status:** Implemented (2026-06-05)
 
 ---
@@ -199,11 +199,11 @@ Seven validation domains in companion file: (1) RW, (2) UKW, (3) CMW, (4) Intake
 
 ## References
 
-- [T03 task doc](../project-management/kanban/epics/epic-02/story-13-workflow-management-package-implementation-review/T03-validate-workflow-behavior-against-documented-guidance.md)
-- [T01 expectations baseline](../project-management/kanban/epics/epic-02/story-13-workflow-management-package-implementation-review/T01-expectations-baseline.md)
-- [T02 component inventory](../project-management/kanban/epics/epic-02/story-13-workflow-management-package-implementation-review/component-inventory-map.md)
-- [T08 sync task](../project-management/kanban/epics/epic-02/story-13-workflow-management-package-implementation-review/T08-sync-packaged-workflows-with-live-repo-implementation.md)
-- [E07:S07:T01 report](../project-management/kanban/epics/epic-07/story-07-code-reviews/T01-workflow-machinery-code-review-report.md)
-- [E04:S16:T03 pattern](../project-management/kanban/epics/epic-04/story-16-kanban-package-implementation-review/T03-validate-kanban-behavior.md)
-- [FR-042](../project-management/kanban/fr-br/FR-042-implementation-planning-workflow-ipw.md)
+- [T03 task doc](../kanban/epics/epic-02/story-13-workflow-management-package-implementation-review/T03-validate-workflow-behavior-against-documented-guidance.md)
+- [T01 expectations baseline](../kanban/epics/epic-02/story-13-workflow-management-package-implementation-review/T01-expectations-baseline.md)
+- [T02 component inventory](../kanban/epics/epic-02/story-13-workflow-management-package-implementation-review/component-inventory-map.md)
+- [T08 sync task](../kanban/epics/epic-02/story-13-workflow-management-package-implementation-review/T08-sync-packaged-workflows-with-live-repo-implementation.md)
+- [E07:S07:T01 report](../kanban/epics/epic-07/story-07-code-reviews/T01-workflow-machinery-code-review-report.md)
+- [E04:S16:T03 pattern](../kanban/epics/epic-04/story-16-kanban-package-implementation-review/T03-validate-kanban-behavior.md)
+- [FR-042](../kanban/fr-br/FR-042-implementation-planning-workflow-ipw.md)
 - [rw-trigger-dual-source-parity.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/docs/rw-trigger-dual-source-parity.md)

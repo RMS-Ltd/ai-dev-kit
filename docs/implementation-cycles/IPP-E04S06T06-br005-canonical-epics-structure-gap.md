@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # E04:S06:T06 — Planning: BR-005 canonical epics structure gap verification (IPW)
 
-**Host Task:** [`T06-br005-canonical-epics-structure-gap.md`](../project-management/kanban/epics/epic-04/story-06-comprehensive-canonical-est-template-system/T06-br005-canonical-epics-structure-gap.md) **(E04:S06:T06)**  
-**Planning for:** [BR-005](../project-management/kanban/fr-br/BR-005-kanban-framework-epic-structure-gap-uat-finding.md)  
+**Host Task:** [`T06-br005-canonical-epics-structure-gap.md`](../kanban/epics/epic-04/story-06-comprehensive-canonical-est-template-system/T06-br005-canonical-epics-structure-gap.md) **(E04:S06:T06)**  
+**Planning for:** [BR-005](../kanban/fr-br/BR-005-kanban-framework-epic-structure-gap-uat-finding.md)  
 **Status:** Approved
 
 > **IPW revision:** Post-ship verification wave. Fix 1 delivered at **v0.4.6.6+1**; story checklist COMPLETE but `kboard.md` C-band row drifted TODO. This wave verifies evidence, closes BR-005 Fix 1, and reconciles kanban four-surface consistency.
@@ -126,12 +126,12 @@ Historical implementation (v0.4.6.6+1) addressed the UAT finding root cause: age
 
 ### 4.1 Files to create or modify
 
-- `docs/project-management/kanban/epics/epic-04/story-06-comprehensive-canonical-est-template-system/T06-br005-canonical-epics-structure-gap.md` (CREATE)
+- `docs/kanban/epics/epic-04/story-06-comprehensive-canonical-est-template-system/T06-br005-canonical-epics-structure-gap.md` (CREATE)
 - `docs/implementation-cycles/IPP-E04S06T06-br005-canonical-epics-structure-gap.md` (CREATE)
-- `docs/project-management/kanban/fr-br/BR-005-kanban-framework-epic-structure-gap-uat-finding.md` (UPDATE)
-- `docs/project-management/kanban/kboard.md` (UPDATE — prune row)
-- `docs/project-management/kanban/kanban-completed.md` (UPDATE — correct entry)
-- `docs/project-management/kanban/intake-structure.md` (UPDATE — BR-005 status)
+- `docs/kanban/fr-br/BR-005-kanban-framework-epic-structure-gap-uat-finding.md` (UPDATE)
+- `docs/kanban/kboard.md` (UPDATE — prune row)
+- `docs/kanban/kanban-completed.md` (UPDATE — correct entry)
+- `docs/kanban/intake-structure.md` (UPDATE — BR-005 status)
 
 ### 4.2 Dependency order
 
@@ -148,11 +148,11 @@ Historical implementation (v0.4.6.6+1) addressed the UAT finding root cause: age
 
 | Doc ID | Path | Scope of change | Tied to |
 | ------ | ---- | --------------- | ------- |
-| D-U1 | `docs/project-management/kanban/fr-br/BR-005-*.md` | Fix 1 FIXED banner; Fix 2–4 DEFER | RF9 |
-| D-U2 | `docs/project-management/kanban/kboard.md` | Prune E04:S06:T06 C-band row | RF8 |
-| D-U3 | `docs/project-management/kanban/kanban-completed.md` | Correct T06 entry (v0.4.6.6+1) | RF8 |
-| D-U4 | `docs/project-management/kanban/intake-structure.md` | BR-005 Fix 1 FIXED | RF9 |
-| D-U5 | `docs/project-management/kanban/epics/epic-04/story-06-*.md` | Link discrete T06 task doc | RF7 |
+| D-U1 | `docs/kanban/fr-br/BR-005-*.md` | Fix 1 FIXED banner; Fix 2–4 DEFER | RF9 |
+| D-U2 | `docs/kanban/kboard.md` | Prune E04:S06:T06 C-band row | RF8 |
+| D-U3 | `docs/kanban/kanban-completed.md` | Correct T06 entry (v0.4.6.6+1) | RF8 |
+| D-U4 | `docs/kanban/intake-structure.md` | BR-005 Fix 1 FIXED | RF9 |
+| D-U5 | `docs/kanban/epics/epic-04/story-06-*.md` | Link discrete T06 task doc | RF7 |
 
 ### 5.2 New documents to create
 
@@ -177,7 +177,7 @@ Historical implementation (v0.4.6.6+1) addressed the UAT finding root cause: age
 | ------ | -------------- | ------------------ | --------- | ------------- |
 | D-C1 | `docs/implementation-cycles/IPP-E04S06T06-br005-canonical-epics-structure-gap.md` | NOT_APPLICABLE | evergreen | T06 task doc Input/References |
 | D-C2 | `.../T06-br005-canonical-epics-structure-gap.md` | NOT_APPLICABLE | evergreen | story-006 checklist, BR-005 |
-| D-U1 | `docs/project-management/kanban/fr-br/BR-005-*.md` | NOT_APPLICABLE | evergreen | kboard (pruned), intake-structure |
+| D-U1 | `docs/kanban/fr-br/BR-005-*.md` | NOT_APPLICABLE | evergreen | kboard (pruned), intake-structure |
 | D-U2–D-U4 | kanban surfaces | NOT_APPLICABLE | evergreen | RW Step 7 |
 
 ---
@@ -195,8 +195,8 @@ Historical implementation (v0.4.6.6+1) addressed the UAT finding root cause: age
 
 ## References
 
-- [BR-005](../project-management/kanban/fr-br/BR-005-kanban-framework-epic-structure-gap-uat-finding.md)
-- [story-006](../project-management/kanban/epics/epic-04/story-06-comprehensive-canonical-est-template-system.md)
-- [T06 task doc](../project-management/kanban/epics/epic-04/story-06-comprehensive-canonical-est-template-system/T06-br005-canonical-epics-structure-gap.md)
+- [BR-005](../kanban/fr-br/BR-005-kanban-framework-epic-structure-gap-uat-finding.md)
+- [story-006](../kanban/epics/epic-04/story-06-comprehensive-canonical-est-template-system.md)
+- [T06 task doc](../kanban/epics/epic-04/story-06-comprehensive-canonical-est-template-system/T06-br005-canonical-epics-structure-gap.md)
 - [ipw-adr-necessity-checklist.md](../architecture/standards-and-adrs/ipw-adr-necessity-checklist.md)
-- [FR-092](../project-management/kanban/fr-br/FR-092-canonical-rw-ukw-kanban-consistency-program.md)
+- [FR-092](../kanban/fr-br/FR-092-canonical-rw-ukw-kanban-consistency-program.md)

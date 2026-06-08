@@ -9,8 +9,8 @@ housekeeping_policy: archive
 # IPP — E07:S07:T02: CI pytest gate for workflow scripts (H1)
 
 **Task:** E07:S07:T02  
-**Host:** [T02-ci-pytest-gate-for-workflow-scripts.md](../project-management/kanban/epics/epic-07/story-07-code-reviews/T02-ci-pytest-gate-for-workflow-scripts.md)  
-**Source finding:** [T01 report H1](../project-management/kanban/epics/epic-07/story-07-code-reviews/T01-workflow-machinery-code-review-report.md)
+**Host:** [T02-ci-pytest-gate-for-workflow-scripts.md](../kanban/epics/epic-07/story-07-code-reviews/T02-ci-pytest-gate-for-workflow-scripts.md)  
+**Source finding:** [T01 report H1](../kanban/epics/epic-07/story-07-code-reviews/T01-workflow-machinery-code-review-report.md)
 
 ---
 

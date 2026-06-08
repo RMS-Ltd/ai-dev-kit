@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # E08:S03:T17 — Planning: Local Code Quality Gate (CQG) (IPW)
 
-**Host Task:** [`T17-local-code-quality-gate-cqg-fr113.md`](../project-management/kanban/epics/epic-08/story-03-automation-scripts/T17-local-code-quality-gate-cqg-fr113.md) **(E08:S03:T17)**  
-**Planning for:** [FR-113](../project-management/kanban/fr-br/FR-113-local-code-quality-gate-cqg.md)  
+**Host Task:** [`T17-local-code-quality-gate-cqg-fr113.md`](../kanban/epics/epic-08/story-03-automation-scripts/T17-local-code-quality-gate-cqg-fr113.md) **(E08:S03:T17)**  
+**Planning for:** [FR-113](../kanban/fr-br/FR-113-local-code-quality-gate-cqg.md)  
 **Status:** Approved (implementation authorized)
 
 > **IPW:** Produced for E08:S03:T17. Hybrid triggers: **6 h** monitor + RW Step 9 advisory gate + manual CLI. ADK-native layering per [ADR-022](../architecture/standards-and-adrs/ADR-022-local-code-quality-gate-architecture.md).
@@ -176,7 +176,7 @@ See [ADR-022](../architecture/standards-and-adrs/ADR-022-local-code-quality-gate
 
 ## References
 
-- [FR-113](../project-management/kanban/fr-br/FR-113-local-code-quality-gate-cqg.md)
-- [T17](../project-management/kanban/epics/epic-08/story-03-automation-scripts/T17-local-code-quality-gate-cqg-fr113.md)
+- [FR-113](../kanban/fr-br/FR-113-local-code-quality-gate-cqg.md)
+- [T17](../kanban/epics/epic-08/story-03-automation-scripts/T17-local-code-quality-gate-cqg-fr113.md)
 - [ADR-022](../architecture/standards-and-adrs/ADR-022-local-code-quality-gate-architecture.md)
 - [GitHub Code Quality metrics](https://docs.github.com/en/code-security/code-quality/reference/metrics-and-ratings)

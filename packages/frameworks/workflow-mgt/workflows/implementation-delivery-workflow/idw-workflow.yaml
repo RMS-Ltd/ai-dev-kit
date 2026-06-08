@@ -1,0 +1,50 @@
+workflow:
+  name: "Implementation Delivery Workflow"
+  abbreviation: "IDW"
+  type: implementation_delivery
+  description: >
+    Execute a linked IPP (or ICW trio) for a host task: tests, implementation,
+    documentation delivery, and task status reconciliation. Optional --rw chain
+    to Release Workflow after IDW COMPLETE.
+  version: "1.0.0"
+
+  triggers:
+    - "IDW"
+    - "idw"
+
+  flags:
+    - name: rw
+      long: "--rw"
+      description: "Chain local-complete RW for same E:S:T after IDW COMPLETE"
+    - name: push
+      long: "--push"
+      description: "With --rw only; forward to RW Step 12 push + 12.5"
+    - name: art
+      long: "--art"
+      description: "With --rw only; forward to RW version adoption"
+
+  prerequisites:
+    - linked_ipp_or_icw
+    - not_plan_mode
+    - branch_context_strict
+
+  phases:
+    - load_planning_package
+    - status_transition_step1
+    - test_first_red
+    - implement_green_refactor
+    - documentation_delivery
+    - status_reconciliation_final
+    - verify_success_criteria
+    - code_quality_gate_when_python_in_scope
+
+  optional_chain:
+    rw:
+      after: idw_complete
+      command_guide: ".claude/commands/rw.md"
+
+  documentation:
+    command: ".claude/commands/idw.md"
+    agent_execution: "KB/Documentation/Developer_Docs/vwmp/implementation-delivery-workflow-agent-execution.md"
+
+  planning_input_dir: docs/implementation-cycles
