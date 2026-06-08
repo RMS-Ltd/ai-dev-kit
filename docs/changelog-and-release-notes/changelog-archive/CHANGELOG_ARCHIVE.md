@@ -1,4 +1,11 @@
 # Changelog Archive
+## [0.2.17.7+1] - 08-06-26
+
+E02:S17:T07 — **Change implemented:** Production SQLite semver-registry cutover. SemVer **v0.4.1059+1**.
+
+[Detailed changelog](CHANGELOG_v0.2.17.7+1.md)
+
+---
 ## [0.8.3.16+6] - 08-06-26
 
 E08:S03:T16 — **Attempted fix:** Wave 3c — final `py/empty-except` stragglers. SemVer **v0.4.1061+6**.

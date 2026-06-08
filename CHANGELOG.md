@@ -11,10 +11,10 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
-## [0.2.17.7+1] - 08-06-26
+## [0.2.17.7+2] - 08-06-26
 
-E02:S17:T07 — **Change implemented:** Production SQLite semver-registry cutover — import + archive legacy YAML, `release_state_backend: sqlite`, stage `.adk/release-state.db`. SemVer **v0.4.1059+1**.
+E02:S17:T07 — **Change implemented:** Post-merge reconciliation — dev/T16 merge integration, RW-V04 archived registry path, epic S17 COMPLETE sync. SemVer **v0.4.11+2**.
 
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.17.7+1.md)
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.17.7+2.md)
 
 ---

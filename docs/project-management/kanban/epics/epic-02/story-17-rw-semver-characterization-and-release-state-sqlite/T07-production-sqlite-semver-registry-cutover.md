@@ -13,8 +13,8 @@ housekeeping_policy: keep
 **Priority:** CRITICAL  
 **Estimated Effort:** Medium  
 **Created:** 2026-06-08  
-**Last updated:** 2026-06-08 (RW v0.2.17.7+1 — cutover COMPLETE)  
-**Version Anchor:** v0.2.17.7+1  
+**Last updated:** 2026-06-08 (RW v0.2.17.7+2 — post-merge reconciliation)  
+**Version Anchor:** v0.2.17.7+2  
 **Code:** E02S17T07
 
 Publication Status: NOT_APPLICABLE
