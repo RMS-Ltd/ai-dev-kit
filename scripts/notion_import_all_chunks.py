@@ -45,7 +45,9 @@ def record_all_responses() -> int:
         for i, page in enumerate(pages):
             if i >= len(sidecar):
                 break
-            rel = sidecar[i]["source_path"]
+            rel = sidecar[i].get("source_path")
+            if not rel:
+                continue
             if rel not in by_path:
                 continue
             entry = by_path[rel]
