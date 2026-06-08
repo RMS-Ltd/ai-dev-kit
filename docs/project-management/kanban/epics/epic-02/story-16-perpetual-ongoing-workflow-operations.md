@@ -12,8 +12,8 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** Medium  
 **Created:** 2026-04-20  
-**Last updated:** 2026-06-08 (v0.2.16.22+1 – Kanban documentation setup)
-**Version:** v0.2.16.22+1
+**Last updated:** 2026-06-08 (v0.2.16.23+1 — E02:S16:T23 CQG → IDW Phase 6b)
+**Version:** v0.2.16.23+1
 **Code:** E2S16
 
 ---
@@ -110,6 +110,10 @@ Story 016 remains the operational home for perpetual workflow work. **T04** UKW 
 
 - [x] **E02:S16:T22 – Implementation Delivery Workflow (IDW) — FR-118** - ✅ COMPLETE (**v0.2.16.22+1** — `/idw` + `--rw` chain; FR-118 IMPLEMENTED)  
   - Task: [`story-16-perpetual-ongoing-workflow-operations/T22-implementation-delivery-workflow-idw-fr118.md`](story-16-perpetual-ongoing-workflow-operations/T22-implementation-delivery-workflow-idw-fr118.md) | [FR-118](../../fr-br/FR-118-implementation-delivery-workflow-idw-fr118.md) | [IPP](../../../../implementation-cycles/IPP-E02S16T22-implementation-delivery-workflow-idw-fr118.md)
+
+
+- [x] **E02:S16:T23 – CQG gate relocation to IDW Phase 6b (ADR-022 v0.0.2)** - ✅ COMPLETE (**v0.2.16.23+1** — CQG at IDW Phase 6b; RW release-only)  
+  - Task: [`story-16-perpetual-ongoing-workflow-operations/T23-cqg-gate-relocation-to-idw-phase-6b-adr022.md`](story-16-perpetual-ongoing-workflow-operations/T23-cqg-gate-relocation-to-idw-phase-6b-adr022.md) | [ADR-022](../../../../architecture/standards-and-adrs/ADR-022-local-code-quality-gate-architecture.md) | [FR-113](../../fr-br/FR-113-local-code-quality-gate-cqg.md) | —No IPP—
 
 ---
 

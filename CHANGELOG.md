@@ -11,10 +11,10 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
-## [0.2.16.22+1] - 08-06-26
+## [0.2.16.23+1] - 08-06-26
 
-E02:S16:T22 — **Change implemented:** IDW workflow (`/idw`, optional `--rw` chain), FR-118 intake, agent routing + cheatsheet §4b. SemVer **v0.4.1063+1**.
+E02:S16:T23 — **Change implemented:** CQG gate relocation to IDW Phase 6b (ADR-022 v0.0.2) — task anchor + kanban wiring. SemVer **v0.4.1064+1**.
 
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.16.22+1.md)
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.16.23+1.md)
 
 ---

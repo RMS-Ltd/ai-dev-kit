@@ -18,7 +18,7 @@ housekeeping_policy: keep
 **Status:** Accepted  
 **Date:** 2026-06-06 (v0.0.2 revised 2026-06-08)  
 **Deciders:** User (Ruari Mears)  
-**Implementing task:** [E08:S03:T17](../../project-management/kanban/epics/epic-08/story-03-automation-scripts/T17-local-code-quality-gate-cqg-fr113.md)  
+**Implementing tasks:** [E08:S03:T17](../../project-management/kanban/epics/epic-08/story-03-automation-scripts/T17-local-code-quality-gate-cqg-fr113.md) (engine) · [E02:S16:T23](../../project-management/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T23-cqg-gate-relocation-to-idw-phase-6b-adr022.md) (v0.0.2 gate relocation)  
 **Planning package:** [IPP-E08S03T17](../../implementation-cycles/IPP-E08S03T17-local-code-quality-gate-cqg-fr113.md)  
 **Related:** [FR-113](../../project-management/kanban/fr-br/FR-113-local-code-quality-gate-cqg.md), [FR-112](../../project-management/kanban/fr-br/FR-112-perpetual-github-ci-and-security-health-lanes.md), IDW (`.claude/commands/idw.md`)
 

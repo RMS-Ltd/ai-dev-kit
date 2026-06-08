@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Completed Tasks
 
-**Last Updated:** 2026-06-07 (RW: E08:S03:T12 re-close; merge spike E02:S17)
-**Version:** v0.8.3.12+13
+**Last Updated:** 2026-06-08 (RW: E02:S16:T23)
+**Version:** v0.2.16.23+1
 
 > **For MoSCOW prioritized tasks, see:** [`kboard.md`](kboard.md)  
 > **For completed FR/BR/UXR intake items, see:** [`intake-completed.md`](intake-completed.md)
@@ -19,6 +19,16 @@ housekeeping_policy: keep
 ---
 
 ## 20 Most Recently Completed Tasks
+
+#### **RW (2026-06-08)** — E02:S16:T23 @ **v0.2.16.23+1** (ADR-022 v0.0.2 CQG → IDW Phase 6b)
+
+- **[E02:S16:T23](epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T23-cqg-gate-relocation-to-idw-phase-6b-adr022.md)** — CQG gate relocation to IDW Phase 6b; canonical task anchor (implementation @ v0.2.16.22+1).
+  **Completed:** `2026-06-08T13:29:00Z` | **Version:** `v0.2.16.23+1` | **Agent:** `RW E02:S16:T23 --art` | [ADR-022](../../architecture/standards-and-adrs/ADR-022-local-code-quality-gate-architecture.md) | [FR-113](fr-br/FR-113-local-code-quality-gate-cqg.md)
+
+#### **RW (2026-06-08)** — E02:S16:T22 @ **v0.2.16.22+1** (FR-118 IDW workflow)
+
+- **[E02:S16:T22](epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T22-implementation-delivery-workflow-idw-fr118.md)** — Implementation Delivery Workflow (`/idw`, `--rw` chain); FR-118.
+  **Completed:** `2026-06-08T18:30:00Z` | **Version:** `v0.2.16.22+1` | **Agent:** `RW E02:S16:T22` | [FR-118](fr-br/FR-118-implementation-delivery-workflow-idw.md) | [IPP](../../implementation-cycles/IPP-E02S16T22-implementation-delivery-workflow-idw-fr118.md)
 
 #### **RW (2026-06-07)** — E08:S03:T12 @ **v0.8.3.12+13** (BR-099 **re-close** — terminal forensic anchor)
 

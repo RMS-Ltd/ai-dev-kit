@@ -1,4 +1,11 @@
 # Changelog Archive
+## [0.2.16.23+1] - 08-06-26
+
+E02:S16:T23 — **Change implemented:** CQG gate relocation to IDW Phase 6b (ADR-022 v0.0.2) — task anchor + kanban wiring. SemVer **v0.4.1064+1**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.16.23+1.md)
+
+---
 ## [0.8.3.16+7] - 08-06-26
 
 E08:S03:T16 — **Attempted fix:** Wave 3d — `cli/logging.py` `py/empty-except`. SemVer **v0.4.1062+7**.
