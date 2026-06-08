@@ -35,7 +35,7 @@ def triage_text() -> str:
 
 
 def _docs_exclude_globs(config_text: str) -> list[str]:
-    m = re.search(r"exclude:\s*\[([\s\S]*?)\]\s*,", config_text)
+    m = re.search(r"exclude:\s*\[([\s\S]*?)\]\s*,?", config_text)
     assert m, "docs.exclude array not found in docusaurus.config.js"
     inner = m.group(1)
     return re.findall(r"['\"]([^'\"]+)['\"]", inner)
@@ -69,7 +69,7 @@ def test_fr067_s4_triage_note(readme_text: str, triage_text: str):
     assert TRIAGE_PATH.is_file()
     assert "docusaurus-corpus-triage-fr-067" in readme_text
     lowered = triage_text.lower()
-    if "notion_sot: true" in lowered:
+    if re.search(r"\bnotion_sot\s*:\s*true\b", triage_text, re.IGNORECASE):
         assert "notion" in lowered
         assert "fr-114" in lowered or "fr-067" in lowered
     else:
