@@ -28,6 +28,7 @@ Single navigation entry for **book-active** governance: Kanban rules, versioning
 - [changelog-archival-policy.md](standards/changelog-archival-policy.md)
 - [specification-and-planning-artifacts-policy.md](standards/specification-and-planning-artifacts-policy.md)
 - [dev-kit-ipw-ipp-vs-icw-artifacts.md](standards/dev-kit-ipw-ipp-vs-icw-artifacts.md)
+- [adopter-public-documentation-authoring.md](standards/adopter-public-documentation-authoring.md) — BR-068 / FR-114 portal link + greenfield mirror gates
 
 ### Locale and translation (FR-006 / Epic 21)
 
