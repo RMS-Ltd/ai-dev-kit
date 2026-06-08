@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Completed Tasks
 
-**Last Updated:** 2026-06-07 (RW: E21:S08:T03 CLI accessibility Layer 1)
-**Version:** v0.21.8.3+1
+**Last Updated:** 2026-06-08 (RW: E21:S09:T01 UKW Epic 21 housekeeping)
+**Version:** v0.21.9.1+1
 
 > **For MoSCOW prioritized tasks, see:** [`kboard.md`](kboard.md)  
 > **For completed FR/BR/UXR intake items, see:** [`intake-completed.md`](intake-completed.md)
@@ -19,6 +19,11 @@ housekeeping_policy: keep
 ---
 
 ## 20 Most Recently Completed Tasks
+
+#### **RW (2026-06-08)** — E21:S09:T01 @ **v0.21.9.1+1** (UKW Epic 21 housekeeping)
+
+- **[E21:S09:T01](epics/epic-21/story-09-epic-housekeeping/T01-fr006-phase2-header-and-status-reconciliation.md)** — FR-006 Phase 2 header sync; Epic 21 kboard visibility (S03+/S09 admin/S08 deferred rows); S02 story COMPLETE.
+  **Completed:** `2026-06-08T10:25:52Z` | **Version:** `v0.21.9.1+1` | **Agent:** `RW -k E21:S09:T01 --art` | [FR-006](fr-br/FR-006-localization-language-selection-uk-us-english.md)
 
 #### **RW (2026-06-07)** — E21:S08:T03 @ **v0.21.8.3+1** (CLI accessibility Layer 1)
 

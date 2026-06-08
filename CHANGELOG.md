@@ -10,10 +10,10 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 ---
 
 
-## [0.21.8.3+1] - 07-06-26
+## [0.21.9.1+1] - 08-06-26
 
-E21:S08:T03 — **Change implemented:** Layer 1 CLI accessibility (text-first `print_*`, `NO_COLOR` / `--no-color`, stderr warnings, ASCII markers). SemVer **v0.4.1084+1**.
+E21:S09:T01 — **Change implemented:** UKW bookkeeping — Epic 21 kanban visibility, FR-006 Phase 2 header sync, S09 admin story. SemVer **v0.4.1086+1**.
 
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.21.8.3+1.md)
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.21.9.1+1.md)
 
 ---

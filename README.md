@@ -11,7 +11,7 @@
 
 **A comprehensive toolkit for AI-assisted development workflows**
 
-**Version (SemVer):** `v0.4.1084+1` | **Internal:** `v0.21.8.3+1` (E21:S08:T03 / CLI accessibility Layer 1) | **Last Updated:** 2026-06-07
+**Version (SemVer):** `v0.4.1086+1` | **Internal:** `v0.21.9.1+1` (E21:S09:T01 / UKW Epic 21 housekeeping) | **Last Updated:** 2026-06-08
 
 [Features](#features) • [Installation](#getting-started) • [Install in Your Project](INSTALL_IN_YOUR_PROJECT.md) • [Documentation](docs/documentation) • **Browsing docs (published site):** [https://rms-ltd.github.io/ai-dev-kit/](https://rms-ltd.github.io/ai-dev-kit/) • [Workflows](#workflows) • [Report Bug](https://github.com/RMS-Ltd/ai-dev-kit/issues) • [Request Feature](https://github.com/RMS-Ltd/ai-dev-kit/issues)
 

@@ -12,8 +12,8 @@ housekeeping_policy: keep
 **Priority:** LOW  
 **Estimated Effort:** [TBD]  
 **Created:** 2025-12-09  
-**Last updated:** 2025-12-09 (v0.21.1.0+0 – Story created)  
-**Version:** v0.21.1.0+0  
+**Last updated:** 2026-06-08 (UKW — next Epic 21 story; S01–S02 infrastructure COMPLETE)  
+**Version:** v0.21.3.0+0  
 **Code:** E21S03
 
 ---

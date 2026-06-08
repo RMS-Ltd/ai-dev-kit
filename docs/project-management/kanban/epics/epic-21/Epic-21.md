@@ -8,11 +8,12 @@ housekeeping_policy: keep
 
 # Epic 21: Internationalisation and Localisation
 
-**Status:** TODO  
+**Status:** IN PROGRESS  
 **Priority:** MEDIUM  
 **Estimated Effort:** [TBD]  
 **Created:** 2025-12-09  
-**Last updated:** 2026-06-07 (v0.21.8.3+1 — E21:S08:T03 COMPLETE; Layer 1 CLI)  
+**Last updated:** 2026-06-08 (UKW bookkeeping — S01–S02 COMPLETE; S08 Layer 0–1 @ v0.21.8.3+1)  
+**Version:** v0.21.8.3+1  
 **Branch:** `epic/21-internationalisation-localisation`  
 **Version Schema:** `0.21.S.T+B`  
 **Production URL:** [N/A for this repo]
@@ -25,7 +26,7 @@ housekeeping_policy: keep
   - Story: [`story-01-language-selection-at-setup.md`](story-01-language-selection-at-setup.md)
   - Tasks: T01–T07 COMPLETE
 
-- [ ] **E21:S02 – Internationalisation Infrastructure** - IN PROGRESS (v0.21.2.7+1 — T01–T07 COMPLETE)
+- [x] **E21:S02 – Internationalisation Infrastructure** - COMPLETE (v0.21.2.7+1 — T01–T07; ADR-024 + locale conventions)
   - Story: [`story-02-internationalisation-infrastructure.md`](story-02-internationalisation-infrastructure.md)
   - Tasks: T01–T07 COMPLETE
 
@@ -53,6 +54,10 @@ housekeeping_policy: keep
   - Story: [`story-08-accessibility.md`](story-08-accessibility.md)
   - Tasks: T01–T03 COMPLETE; T04–T07 DEFERRED (Layers 2–5)
 
+- [ ] **E21:S09 – Epic Housekeeping** - IN PROGRESS (v0.21.9.1+1 — T01 COMPLETE)
+  - Story: [`story-09-epic-housekeeping.md`](story-09-epic-housekeeping.md)
+  - Tasks: T01 COMPLETE @ v0.21.9.1+1; T02 TODO (legacy folder rationalization)
+
 
 ---
 
@@ -72,6 +77,8 @@ It ensures that:
 - Cultural preferences are respected (date/time/number formatting)
 - Framework is accessible to international developers
 - Disabled users can operate ADK surfaces with minimal friction (a11y)
+
+**Strategic snapshot (2026-06-08):** S01 (FR-006 Phase 1) and S02 (i18n infrastructure) are **COMPLETE**. S08 accessibility Layer 0–1 shipped (CLI audit, ADR-025, Layer 1 CLI remediation @ v0.21.8.3+1). S03–S07 and S08 Layers 2–5 remain TODO / DEFERRED.
 
 ---
 
@@ -103,47 +110,40 @@ It ensures that:
 
 ### Story 1: Language Selection at Setup (UK/US English)
 
-**Status:** TODO  
+**Status:** COMPLETE  
 **Priority:** MEDIUM  
-**Estimated Effort:** [TBD]  
-**Last updated:** 2025-12-09 (v0.21.1.0+0 – Story created)
+**Last updated:** 2026-06-07 (v0.21.1.7+1 — FR-006 Phase 1)
 
 **Goal:**  
-Add language selection prompt at the very beginning of all setup processes, starting with UK and US English variants. This addresses cultural preferences and makes the framework more accessible.
+Add language selection prompt at the very beginning of all setup processes, starting with UK and US English variants.
 
-**Tasks:**
-- [x] E21:S01:T01 – Add language selection prompt to template setup (GitHub template) — COMPLETE (v0.21.1.1+2)
-- [x] E21:S01:T02 – Add language selection prompt to CLI tool (`ai-dev-kit init`) — COMPLETE (v0.21.1.2+1)
-- [ ] E21:S01:T03 – Add language selection prompt to RW Installer (`install_release_workflow.py`)
-- [ ] E21:S01:T04 – Create UK/US English content variants (documentation, templates)
-- [ ] E21:S01:T05 – Implement configuration persistence (`ai-dev-kit-config.yaml`)
-- [ ] E21:S01:T06 – Update content generation to use language preference (RW, templates)
-- [ ] E21:S01:T07 – Test UK/US English selection and content generation
-
-> Full story: [`story-01-language-selection-at-setup.md`](story-01-language-selection-at-setup.md)
+**Tasks:** T01–T07 COMPLETE — see [`story-01-language-selection-at-setup.md`](story-01-language-selection-at-setup.md)
 
 ---
 
 ### Story 2: Internationalisation Infrastructure
 
-**Status:** TODO  
+**Status:** COMPLETE  
 **Priority:** MEDIUM  
-**Estimated Effort:** [TBD]  
-**Last updated:** 2025-12-09 (v0.21.2.0+0 – Story created)
+**Last updated:** 2026-06-07 (v0.21.2.7+1 — fallback chain + ADR-024)
 
 **Goal:**  
 Set up i18n infrastructure and framework for broader language support beyond UK/US English.
 
-**Tasks:**
-- [ ] E21:S02:T01 – Choose i18n framework/library
-- [ ] E21:S02:T02 – Set up translation file structure (`locales/{lang}/`)
-- [ ] E21:S02:T03 – Implement locale detection (browser/system locale)
-- [ ] E21:S02:T04 – Add language switching functionality
-- [ ] E21:S02:T05 – Configure date/time/number formatting per locale
-- [ ] E21:S02:T06 – Implement translation key system
-- [ ] E21:S02:T07 – Set up translation fallback chain (selected → UK English → US English)
+**Tasks:** T01–T07 COMPLETE — see [`story-02-internationalisation-infrastructure.md`](story-02-internationalisation-infrastructure.md)
 
-> Full story: [`story-02-internationalisation-infrastructure.md`](story-02-internationalisation-infrastructure.md)
+---
+
+### Story 8: Accessibility
+
+**Status:** IN PROGRESS (Layer 0–1 COMPLETE)  
+**Priority:** MEDIUM  
+**Last updated:** 2026-06-07 (v0.21.8.3+1 — Layer 1 CLI shipped)
+
+**Goal:**  
+Layered accessibility programme per ADR-025; CLI-first delivery (Layers 0–1 complete; Layers 2–5 deferred).
+
+**Tasks:** T01–T03 COMPLETE; T04–T07 DEFERRED — see [`story-08-accessibility.md`](story-08-accessibility.md) · [FR-115](../../fr-br/FR-115-accessibility-standards-compatibility.md)
 
 ---
 

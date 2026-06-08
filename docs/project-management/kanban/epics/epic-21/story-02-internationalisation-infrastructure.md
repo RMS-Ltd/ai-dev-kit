@@ -8,11 +8,11 @@ housekeeping_policy: keep
 
 # Story 02 – Internationalisation Infrastructure
 
-**Status:** IN PROGRESS  
+**Status:** COMPLETE  
 **Priority:** MEDIUM  
 **Estimated Effort:** [TBD]  
 **Created:** 2025-12-09  
-**Last updated:** 2026-06-07 (v0.21.2.7+1 — T07 COMPLETE; S02 fallback AC met)  
+**Last updated:** 2026-06-08 (UKW — all tasks shipped; v0.21.2.7+1)  
 **Version:** v0.21.2.7+1  
 **Code:** E21S02
 
@@ -20,7 +20,7 @@ housekeeping_policy: keep
 
 ## Overview
 
-Set up i18n infrastructure and framework for broader language support beyond UK/US English. This story establishes the foundation for multi-language support, including translation file structure, locale detection, and language switching.
+Set up i18n infrastructure and framework for broader language support beyond UK/US English. **All seven tasks complete** — ADR-024 hybrid strategy, manifest v2 locale layout, detection/switching/formatting APIs, translation key resolution, and fallback chain (en-GB → en-US).
 
 ---
 
@@ -58,8 +58,8 @@ Establish a robust internationalisation infrastructure that supports multiple la
 
 ## Acceptance Criteria
 
-- [ ] i18n framework selected and integrated
-- [ ] Translation file structure established
+- [x] i18n framework selected and integrated (T01 @ v0.21.2.1+1 — ADR-024)
+- [x] Translation file structure established (T02 @ v0.21.2.2+1)
 - [x] Locale detection works (T03 @ v0.21.2.3+1)
 - [x] Language switching works (T04 @ v0.21.2.4+1)
 - [x] Locale-specific formatting configured (T05 @ v0.21.2.5+1)
@@ -95,5 +95,5 @@ Establish a robust internationalisation infrastructure that supports multiple la
 
 ---
 
-_Last updated: 2025-12-09 (v0.21.1.0+0 – Story created)_
+_Last updated: 2026-06-08 (UKW bookkeeping — story COMPLETE @ v0.21.2.7+1)_
 

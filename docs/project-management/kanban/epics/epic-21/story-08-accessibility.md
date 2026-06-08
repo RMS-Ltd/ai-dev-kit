@@ -12,7 +12,7 @@ housekeeping_policy: keep
 **Priority:** MEDIUM  
 **Estimated Effort:** [TBD]  
 **Created:** 2026-06-07  
-**Last updated:** 2026-06-07 (v0.21.8.3+1 — T03 COMPLETE; Layer 1 shipped)  
+**Last updated:** 2026-06-08 (UKW — Layers 2–5 on kboard W-band; Layer 0–1 COMPLETE)  
 **Version:** v0.21.8.3+1  
 **Code:** E21S08
 

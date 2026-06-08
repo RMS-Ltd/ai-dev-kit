@@ -58,9 +58,9 @@ Today ADK spans multiple surfaces — CLI (`ai-dev-kit`), installers, Docusaurus
 
 ### Functional Requirements
 
-- [ ] **Baseline audit** — Inventory ADK surfaces and map gaps to WCAG 2.2 (and applicable EN 301 549 / Section 508 where relevant)
-- [ ] **Accessibility strategy ADR** — Target conformance level per surface; validation approach; exceptions process
-- [ ] **CLI / terminal** — Plain-language errors ([FR-108](FR-108-install-setup-error-code-registry-and-emission.md) alignment); no information conveyed by colour alone; predictable prompt order
+- [x] **Baseline audit** — T01 @ v0.21.8.1+1 ([baseline report](../../knowledge/analysis/adk-accessibility-baseline-layer1-cli.md))
+- [x] **Accessibility strategy ADR** — T02 @ v0.21.8.2+1 ([ADR-025](../../architecture/standards-and-adrs/ADR-025-layered-accessibility-strategy.md))
+- [x] **CLI / terminal (Layer 1)** — T03 @ v0.21.8.3+1 ([cli-accessibility-conventions](../../governance/standards/cli-accessibility-conventions.md); FR-108 banners preserved)
 - [ ] **Documentation portal** — Docusaurus public site meets agreed WCAG level (keyboard, contrast, semantics, focus)
 - [ ] **Markdown / kanban corpora** — Semantic heading hierarchy, descriptive link text, diagram alt text conventions
 - [ ] **Agent workflows** — Blocking/failure states readable without visual status icons; step progress explicit
@@ -112,10 +112,10 @@ Today ADK spans multiple surfaces — CLI (`ai-dev-kit`), installers, Docusaurus
 
 ## Acceptance Criteria (Story Level)
 
-- [ ] Accessibility baseline report published with severity-ranked gaps
-- [ ] ADR defines conformance targets and validation per surface
-- [ ] At least one surface improved with tests proving the pattern
-- [ ] Adopter accessibility guidelines linked from user docs
+- [x] Accessibility baseline report published with severity-ranked gaps — T01
+- [x] ADR defines conformance targets and validation per surface — T02 (ADR-025)
+- [x] At least one surface improved with tests proving the pattern — T03 (CLI; `tests/test_cli_accessibility.py`)
+- [x] Adopter accessibility guidelines linked from user docs — T03 (CLI reference + conventions)
 
 ---
 
@@ -123,8 +123,8 @@ Today ADK spans multiple surfaces — CLI (`ai-dev-kit`), installers, Docusaurus
 
 | Layer | Scope | Tasks | Status |
 | ----- | ----- | ----- | ------ |
-| 0 | CLI audit + strategy ADR | T01, T02 | Active |
-| 1 | CLI remediation | T03 | Active (after Layer 0) |
+| 0 | CLI audit + strategy ADR | T01, T02 | **COMPLETE** |
+| 1 | CLI remediation | T03 | **COMPLETE** @ v0.21.8.3+1 |
 | 2 | Docusaurus portal | T04 | Deferred |
 | 3 | Markdown / kanban | T05 | Deferred |
 | 4 | Agent workflows | T06 | Deferred |

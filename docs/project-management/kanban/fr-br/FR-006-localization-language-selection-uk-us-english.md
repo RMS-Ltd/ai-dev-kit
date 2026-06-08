@@ -12,7 +12,7 @@ housekeeping_policy: keep
 **Submitted:** 2025-12-09  
 **Submitted By:** User  
 **Priority:** MEDIUM  
-**Status:** PENDING
+**Status:** IN PROGRESS
 
 **Implementing Epic:** [Epic 21 – Internationalisation and Localisation](../epics/epic-21/Epic-21.md)
 
@@ -22,7 +22,9 @@ housekeeping_policy: keep
 
 **Phase 2 host story:** [E21:S02](../epics/epic-21/story-02-internationalisation-infrastructure.md) (T01–T07)
 
-**Phase 2 implementing tasks:** [E21:S02:T01](../epics/epic-21/story-02-internationalisation-infrastructure/T01-choose-i18n-frameworklibrary.md) **v0.21.2.1+1** COMPLETE ([ADR-024](../../architecture/standards-and-adrs/ADR-024-i18n-framework-strategy.md) C1 hybrid) · [E21:S02:T02](../epics/epic-21/story-02-internationalisation-infrastructure/T02-set-up-translation-file-structure-localeslang.md) **v0.21.2.2+1** COMPLETE (manifest v2 + keys scaffold) · [E21:S02:T03](../epics/epic-21/story-02-internationalisation-infrastructure/T03-implement-locale-detection-browsersystem-locale.md) **v0.21.2.3+1** COMPLETE (locale detection + precedence) · [E21:S02:T04](../epics/epic-21/story-02-internationalisation-infrastructure/T04-add-language-switching-functionality.md) **v0.21.2.4+1** COMPLETE (language switching) · E21:S02:T05–T07 TODO
+**Phase 2 implementing tasks (infrastructure — COMPLETE):** [E21:S02:T01](../epics/epic-21/story-02-internationalisation-infrastructure/T01-choose-i18n-frameworklibrary.md) **v0.21.2.1+1** COMPLETE ([ADR-024](../../architecture/standards-and-adrs/ADR-024-i18n-framework-strategy.md) C1 hybrid) · [E21:S02:T02](../epics/epic-21/story-02-internationalisation-infrastructure/T02-set-up-translation-file-structure-localeslang.md) **v0.21.2.2+1** COMPLETE (manifest v2 + keys scaffold) · [E21:S02:T03](../epics/epic-21/story-02-internationalisation-infrastructure/T03-implement-locale-detection-browsersystem-locale.md) **v0.21.2.3+1** COMPLETE (locale detection + precedence) · [E21:S02:T04](../epics/epic-21/story-02-internationalisation-infrastructure/T04-add-language-switching-functionality.md) **v0.21.2.4+1** COMPLETE (language switching) · [E21:S02:T05](../epics/epic-21/story-02-internationalisation-infrastructure/T05-configure-datetimenumber-formatting-per-locale.md) **v0.21.2.5+1** COMPLETE (Babel formatting) · [E21:S02:T06](../epics/epic-21/story-02-internationalisation-infrastructure/T06-implement-translation-key-system.md) **v0.21.2.6+1** COMPLETE (key resolution) · [E21:S02:T07](../epics/epic-21/story-02-internationalisation-infrastructure/T07-set-up-translation-fallback-chain-selected-english-us-englis.md) **v0.21.2.7+1** COMPLETE (fallback chain; E21:S02 story closed)
+
+**Phase 3+ host stories (translation / locales — TODO):** [E21:S03](../epics/epic-21/story-03-translation-and-localisation.md) · [E21:S04](../epics/epic-21/story-04-cultural-adaptation.md) · [E21:S05](../epics/epic-21/story-05-european-languages-localization.md) · [E21:S06](../epics/epic-21/story-06-cjk-languages-localization.md) · [E21:S07](../epics/epic-21/story-07-rtl-and-extended-locales.md)
 
 ---
 

@@ -12,15 +12,15 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** Medium  
 **Created:** 2026-04-20  
-**Last updated:** 2026-06-06 (RW **v0.2.16.4+36** — T04 UKW comprehensive release)
-**Version:** v0.2.16.4+36
+**Last updated:** 2026-06-08 (T04 UKW → E21:S09:T01 @ v0.21.9.1+1 on epic/21)
+**Version:** v0.2.16.4+38
 **Code:** E2S16
 
 ---
 
 ## Tactical overview
 
-Story 016 remains the operational home for perpetual workflow work. **T04** UKW **2026-06-06** — comprehensive sync: E05:S08 status alignment, E08:S03 version markers, gap scan (0 unfiled open FBUs). **T05** RW **v0.2.16.5+6** — Wave 2 link-depth hygiene. Active perpetual lanes: **T03**, **T04**, **T05**, **T10**, **T14**.
+Story 016 remains the operational home for perpetual workflow work. **T04** UKW **2026-06-08** — Epic 21 kboard visibility (released **E21:S09:T01** @ v0.21.9.1+1 on epic/21; E02 perpetual RW requires `dev`). Active perpetual lanes: **T03**, **T04**, **T05**, **T10**, **T14**.
 
 ---
 

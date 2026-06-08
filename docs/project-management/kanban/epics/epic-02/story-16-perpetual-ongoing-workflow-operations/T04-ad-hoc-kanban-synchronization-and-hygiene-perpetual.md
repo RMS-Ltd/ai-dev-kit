@@ -13,8 +13,8 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** Medium  
 **Created:** 2026-04-22  
-**Last updated:** 2026-06-06 (RW **v0.2.16.4+36** — UKW comprehensive kanban sync committed)
-**Version Anchor:** v0.2.16.4+36
+**Last updated:** 2026-06-08 (UKW → released as **E21:S09:T01** @ v0.21.9.1+1 on epic/21 branch)
+**Version Anchor:** v0.2.16.4+38
 **Code:** E02S16T04
 **Task Type:** Perpetual Maintenance
 
