@@ -11,6 +11,14 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.8.3.16+7] - 08-06-26
+
+E08:S03:T16 — **Change implemented:** Wave 3d — local CQG CodeQL warning burn-down (7 → 0); Reliability/Maintainability **Excellent** locally. SemVer **v0.4.11+7**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.8.3.16+7.md)
+
+---
+
 ## [0.7.1.12+2] - 08-06-26
 
 E07:S01:T12 — **Change implemented:** FR-118 Kanban path promotion — `docs/kanban/` live, `rw-config` + framework/greenfield rewired, rituals removed, ADR-007 updated. FR-118 IMPLEMENTED. SemVer **v0.4.11+2**.

@@ -13,8 +13,8 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** Medium (ongoing)  
 **Created:** 2026-06-05  
-**Last updated:** 2026-06-08 (Wave 3c shipped **v0.8.3.16+6** — final `py/empty-except` stragglers)  
-**Version Anchor:** v0.8.3.16+6 (Wave 3c)  
+**Last updated:** 2026-06-08 (Wave 3d shipped **v0.8.3.16+7** — local CQG 7 → 0 warnings)  
+**Version Anchor:** v0.8.3.16+7 (Wave 3d)  
 **Code:** E08S03T16  
 **Task Type:** Perpetual Maintenance
 

@@ -14,7 +14,7 @@ import argparse
 import re
 import sys
 from pathlib import Path
-from typing import Dict, Iterator, List, Tuple
+from typing import Dict, Iterator, Tuple
 
 OLD_DOCS_KANBAN = "docs/project-management/kanban"
 NEW_DOCS_KANBAN = "docs/kanban"

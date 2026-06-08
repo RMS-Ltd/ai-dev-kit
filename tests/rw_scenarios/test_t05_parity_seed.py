@@ -38,8 +38,6 @@ def parity_sqlite(tmp_path, monkeypatch):
     monkeypatch.setattr(semver_converter, "load_rw_config", lambda: config)
     monkeypatch.setattr(semver_converter, "get_release_state_backend", lambda: "sqlite")
     monkeypatch.setattr(semver_converter, "get_release_state_db_path", lambda: db_path)
-    monkeypatch.setattr(frsr, "get_release_state_backend", lambda: "sqlite")
-    monkeypatch.setattr(frsr, "get_release_state_db_path", lambda: db_path)
     return tmp_path, db_path
 
 

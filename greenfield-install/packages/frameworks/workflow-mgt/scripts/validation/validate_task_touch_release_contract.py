@@ -24,17 +24,7 @@ _version_dir = _validation_dir.parent / "version"
 if str(_version_dir) not in sys.path:
     sys.path.insert(0, str(_version_dir))
 
-from semver_converter import (  # noqa: E402
-    _ensure_task_touch_mode,
-    _find_mapping_entry,
-    convert_version_string,
-    get_release_state_backend,
-    get_release_state_db_path,
-    get_rw_tag_info,
-    get_semver_mapping_strategy,
-    load_semver_registry,
-    semver_core,
-)
+import semver_converter  # noqa: E402
 
 _SCRIPTS_DIR = Path(__file__).resolve().parent.parent
 if str(_SCRIPTS_DIR) not in sys.path:
@@ -108,7 +98,7 @@ def validate_task_touch_release_contract(
     check_staged_registry: bool = True,
 ) -> Tuple[bool, List[str]]:
     root = project_root or _project_root(Path.cwd())
-    if get_semver_mapping_strategy() != "task_touch":
+    if semver_converter.get_semver_mapping_strategy() != "task_touch":
         return True, []
 
     config = load_rw_config_or_empty(root)
@@ -117,10 +107,10 @@ def validate_task_touch_release_contract(
         return False, ["Could not determine internal version from version file."]
 
     errors: List[str] = []
-    registry = load_semver_registry()
+    registry = semver_converter.load_semver_registry()
     rc = int(internal.split(".")[0])
-    ttm = _ensure_task_touch_mode(registry, rc)
-    entry = _find_mapping_entry(ttm, internal)
+    ttm = semver_converter._ensure_task_touch_mode(registry, rc)
+    entry = semver_converter._find_mapping_entry(ttm, internal)
     if not entry:
         errors.append(
             f"semver-registry missing finalized mapping_history row for {internal}. "
@@ -129,7 +119,9 @@ def validate_task_touch_release_contract(
     else:
         registry_semver = entry.get("semver")
         try:
-            predicted = convert_version_string(internal, strategy="task_touch", finalize=False)
+            predicted = semver_converter.convert_version_string(
+                internal, strategy="task_touch", finalize=False
+            )
         except Exception as exc:
             errors.append(f"SemVer prediction failed for {internal}: {exc}")
             predicted = None
@@ -137,17 +129,17 @@ def validate_task_touch_release_contract(
             errors.append(
                 f"Registry semver {registry_semver!r} != predicted {predicted!r} for {internal}."
             )
-        tag_info = get_rw_tag_info(internal, finalize=False)
+        tag_info = semver_converter.get_rw_tag_info(internal, finalize=False)
         primary = tag_info.get("primary_tag", "")
-        if registry_semver and primary != f"v{semver_core(registry_semver)}":
+        if registry_semver and primary != f"v{semver_converter.semver_core(registry_semver)}":
             errors.append(
                 f"Primary tag {primary!r} does not match registry semver core "
-                f"{semver_core(registry_semver)!r}."
+                f"{semver_converter.semver_core(registry_semver)!r}."
             )
 
     if check_staged_registry and strict:
-        if get_release_state_backend() == "sqlite":
-            db_path = get_release_state_db_path()
+        if semver_converter.get_release_state_backend() == "sqlite":
+            db_path = semver_converter.get_release_state_db_path()
             try:
                 rel_db = db_path.relative_to(root).as_posix()
             except ValueError:

@@ -57,8 +57,6 @@ def _patch_sqlite_env(monkeypatch, tmp: Path, db_path: Path) -> None:
     monkeypatch.setattr(semver_converter, "load_rw_config", lambda: config)
     monkeypatch.setattr(semver_converter, "get_release_state_backend", lambda: "sqlite")
     monkeypatch.setattr(semver_converter, "get_release_state_db_path", lambda: db_path)
-    monkeypatch.setattr(frsr, "get_release_state_backend", lambda: "sqlite")
-    monkeypatch.setattr(frsr, "get_release_state_db_path", lambda: db_path)
 
 
 def _git_init(tmp: Path) -> None:

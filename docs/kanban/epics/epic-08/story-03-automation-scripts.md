@@ -12,8 +12,8 @@ housekeeping_policy: keep
 **Priority:** MEDIUM  
 **Estimated Effort:** [TBD]  
 **Created:** 2025-12-05  
-**Last updated:** 2026-06-08 (v0.8.3.16+6 – T16 Wave 3c)
-**Version:** v0.8.3.16+6
+**Last updated:** 2026-06-08 (v0.8.3.16+7 – Kanban documentation setup)
+**Version:** v0.8.3.16+7
 **Code:** E8S03
 
 ---
@@ -70,7 +70,7 @@ housekeeping_policy: keep
 - [ ] **E08:S03:T15 – GitHub Actions CI health (Perpetual)** — 🔄 PERPETUAL (**v0.8.3.15+4** — Wave 3; `main` CI green @ `f7d8b155`) — [Task doc](story-03-automation-scripts/T15-github-actions-ci-health-perpetual-fr112.md) | [FR-112](../../fr-br/FR-112-perpetual-github-ci-and-security-health-lanes.md) | [IPP](../../../implementation-cycles/IPP-E08S03T15-github-actions-ci-health-perpetual-fr112.md)
 
 
-- [ ] **E08:S03:T16 – GitHub Security & Code Quality health (Perpetual)** — 🔄 PERPETUAL (**v0.8.3.16+6** — Wave 3c `py/empty-except`) — [Task doc](story-03-automation-scripts/T16-github-security-code-quality-health-perpetual-fr112.md) | [FR-112](../../fr-br/FR-112-perpetual-github-ci-and-security-health-lanes.md) | [IPP](../../../implementation-cycles/IPP-E08S03T16-github-security-code-quality-health-perpetual-fr112.md)
+- [ ] **E08:S03:T16 – GitHub Security & Code Quality health (Perpetual)** — 🔄 PERPETUAL (**v0.8.3.16+7** — Wave 3d local CQG 7 → 0) — [Task doc](story-03-automation-scripts/T16-github-security-code-quality-health-perpetual-fr112.md) | [FR-112](../../fr-br/FR-112-perpetual-github-ci-and-security-health-lanes.md) | [IPP](../../../implementation-cycles/IPP-E08S03T16-github-security-code-quality-health-perpetual-fr112.md)
 
 
 - [x] **E08:S03:T17 – Local Code Quality Gate (CQG) (FR-113)** — ✅ COMPLETE (**v0.8.3.17+2**) — [Task doc](story-03-automation-scripts/T17-local-code-quality-gate-cqg-fr113.md) | [FR-113](../../fr-br/FR-113-local-code-quality-gate-cqg.md) | [IPP](../../../implementation-cycles/IPP-E08S03T17-local-code-quality-gate-cqg-fr113.md)

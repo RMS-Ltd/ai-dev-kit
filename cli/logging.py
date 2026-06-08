@@ -266,4 +266,4 @@ def close_install_logger(
         try:
             fh.close()
         except Exception:
-            pass
+            pass  # Stream close failure must not break install teardown
