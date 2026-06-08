@@ -9,10 +9,10 @@ housekeeping_policy: keep
 # Epic 21, Story 2, Task 7: Set up translation fallback chain (selected → UK English → US English)
 
 **Task ID:** E21:S02:T07  
-**Status:** TODO  
+**Status:** COMPLETE  
 **Priority:** MEDIUM  
-**Last updated:** 2026-06-07 (v0.21.2.7+0 — RW -k kanban-init doc filing)
-**Version:** v0.21.2.7+0
+**Last updated:** 2026-06-07 (v0.21.2.7+1 — RW E21:S02:T07 --art)
+**Version:** v0.21.2.7+1
 **Code:** E21S02T07
 
 ---
@@ -48,12 +48,17 @@ Set up translation fallback chain: selected English → UK English → US Englis
 
 ## Acceptance Criteria
 
-- [ ] Fallback chain implemented
-- [ ] Fallback order correct
-- [ ] Fallback tested
-- [ ] Fallback behaviour documented
+- [x] Fallback chain implemented
+- [x] Fallback order correct
+- [x] Fallback tested
+- [x] Fallback behaviour documented
 
 ---
+
+## Planning
+
+**IPP:** [IPP-E21S02T07-locale-fallback-chain.md](../../../../implementation-cycles/IPP-E21S02T07-locale-fallback-chain.md)  
+**Policy (on implementation):** [locale-fallback-conventions.md](../../../../governance/standards/locale-fallback-conventions.md)
 
 ---
 

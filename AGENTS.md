@@ -43,7 +43,8 @@ When editing this table, update `docs/project-agent-manifest.json` `taskRouting[
 
 | Task | Summary | Task doc |
 | ---- | ------- | -------- |
-| E07:S07:T03 | BR-091 — workflow validator slug path resolution (v0.7.7.3+1 released; CI verification pending) | `docs/kanban/epics/epic-07/story-07-code-reviews/T03-workflow-validator-slug-path-resolution-br091.md` |
+| E21:S04:T01 | FR-006 Phase 3+ — cultural adaptation (next epic-21 stream) | `docs/kanban/epics/epic-21/story-04-cultural-adaptation/T01-research-cultural-requirements-for-target-locales.md` |
+
 
 Refresh from `kboard.md` when running UKW or RW Step 7; mirror into manifest `openWork[]` if changed.
 

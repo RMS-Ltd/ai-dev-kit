@@ -1,0 +1,29 @@
+_meta:
+  domain: cli
+  locale: es
+keys:
+  cli.prompt.language_choice: 'Select your preferred English variant:'
+  cli.prompt.language_uk: '[1] UK English (en-GB) — colour, organise, realise  [default]'
+  cli.prompt.language_us: '[2] US English (en-US) — color, organize, realize'
+  cli.prompt.enter_choice: 'Enter choice [1-2]:'
+  cli.config.using_existing: 'Using existing localisation config: {{path}}'
+  cli.config.saved: 'Language preference saved: {{language}} ({{variant}})'
+  cli.config.path_detail: '   Localisation config: {{path}}'
+  cli.config.dry_run_write: '🔍 [DRY RUN] Would write {{path}}:'
+  cli.config.dry_run_locale: '   localisation: {{locale}}'
+  cli.status.error_label: Error
+  cli.status.success_label: Success
+  cli.status.warning_label: Warning
+  cli.status.info_label: Info
+  cli.init.no_project_root: 'No project root detected, using current directory: {{path}}'
+  cli.init.project_root_detected: 'Project root detected: {{path}}'
+  cli.init.config_exists: 'Configuration file already exists: {{path}}'
+  cli.init.use_force: Use --force to overwrite existing configuration
+  cli.init.locale_write_failed: 'Failed to write language configuration: {{error}}'
+  cli.init.locale_config_path: 'Localisation config: {{path}}'
+  cli.init.initialized: Initialized ai-dev-kit in {{path}}
+  cli.init.config_path: 'Configuration file: {{path}}'
+  cli.init.default_backend: 'Default backend: {{backend}}'
+  cli.init.failed: 'Failed to initialize ai-dev-kit: {{error}}'
+  cli.init.cancelled: Operation cancelled by user
+  cli.init.unexpected_error: 'Unexpected error: {{error}}'

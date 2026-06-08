@@ -1,0 +1,1 @@
+main_changelog not created at {{changelog_rel}}. Create before first RW, or re-run the installer and accept scaffold.

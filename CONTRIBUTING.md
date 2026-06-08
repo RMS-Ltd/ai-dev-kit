@@ -43,6 +43,15 @@ For more detailed information on submitting reports, see:
 
 See [ADR-006](docs/architecture/standards-and-adrs/ADR-006-book-project-private-repository-spin-off.md) and [FR-099 Phase 4 runbook](docs/maintenance/fr099-phase4-rewire-and-verify.md).
 
+## Contributing translations
+
+Help translate framework locale content (CLI prompts, installer strings, kanban templates) for international users.
+
+- **Quick start:** [Contributing translations](docs/documentation/user-docs/contributing-translations.md)
+- **Canonical policy:** [Translation workflow and review](docs/governance/standards/translation-workflow-and-review.md)
+
+Translation pull requests use maintainer review; run `pytest -m fr006` before opening a PR. Release Workflow (RW) is not required for translation-only changes.
+
 ## Code Contributions
 
 By contributing code or documentation to this repository, you agree that your contributions are licensed under the same [MIT License](LICENSE) as the project.

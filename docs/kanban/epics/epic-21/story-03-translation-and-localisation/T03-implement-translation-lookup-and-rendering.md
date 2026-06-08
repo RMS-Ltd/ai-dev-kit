@@ -9,10 +9,12 @@ housekeeping_policy: keep
 # Epic 21, Story 3, Task 3: Implement translation lookup and rendering
 
 **Task ID:** E21:S03:T03  
-**Status:** TODO  
+**Status:** COMPLETE  
 **Priority:** MEDIUM  
-**Last updated:** 2026-06-07 (v0.21.3.3+0 — RW -k kanban-init doc filing)
-**Version:** v0.21.3.3+0
+**Last updated:** 2026-06-08 (v0.21.3.3+1 — translation lookup/rendering wired)
+**Version:** v0.21.3.3+1
+
+✅ COMPLETE (v0.21.3.3+1)
 **Code:** E21S03T03
 
 ---
@@ -35,6 +37,7 @@ Implement translation lookup and rendering in framework surfaces.
 
 - Translation files
 - Translation key system
+- [IPP-E21S03T03](../../../../implementation-cycles/IPP-E21S03T03-translation-lookup-rendering.md)
 
 ---
 
@@ -48,10 +51,10 @@ Implement translation lookup and rendering in framework surfaces.
 
 ## Acceptance Criteria
 
-- [ ] Translation lookup works
-- [ ] Content renders with translations
-- [ ] Fallback works for missing translations
-- [ ] Translation rendering tested
+- [x] Translation lookup works
+- [x] Content renders with translations
+- [x] Fallback works for missing translations
+- [x] Translation rendering tested
 
 ---
 
@@ -84,4 +87,11 @@ RW -k E21:S03:T03 --art --dpz
 Migrated from embedded Story section via `generate_task_doc.py` (FR-016 Wave 1 tooling).
 
 **Source Story:** `docs/kanban/epics/epic-21/story-03-translation-and-localisation.md`
+
+## References
+
+- [IPP-E21S03T03](../../../../implementation-cycles/IPP-E21S03T03-translation-lookup-rendering.md)
+- [translatable-content-inventory.md](../../../../governance/standards/translatable-content-inventory.md)
+- [ADR-024](../../../../architecture/standards-and-adrs/ADR-024-i18n-framework-strategy.md)
+- [FR-006](../../../fr-br/FR-006-localization-language-selection-uk-us-english.md)
 

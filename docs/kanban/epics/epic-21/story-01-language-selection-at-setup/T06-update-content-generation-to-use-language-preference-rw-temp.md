@@ -9,10 +9,10 @@ housekeeping_policy: keep
 # Epic 21, Story 1, Task 6: Update content generation to use language preference (RW, templates)
 
 **Task ID:** E21:S01:T06  
-**Status:** TODO  
+**Status:** COMPLETE  
 **Priority:** MEDIUM  
-**Last updated:** 2026-06-07 (v0.21.1.6+0 — RW -k kanban-init doc filing)
-**Version:** v0.21.1.6+0
+**Last updated:** 2026-06-07 (v0.21.1.6+1 — RW E21:S01:T06 --art)
+**Version:** v0.21.1.6+1
 **Code:** E21S01T06
 
 ---
@@ -27,31 +27,34 @@ housekeeping_policy: keep
 
 ## Scope
 
-[To be filled during migration]
+Wire T05 read/resolve API into RW installer scaffolds (`render_changelog_stub`, decline-help strings) and kanban intake template resolution (`resolve_kanban_intake_template`). MVP surfaces only; board-install templates and E2E → T07.
+
+**Planning:** [IPP-E21S01T06-content-generation-locale-wiring.md](../../../../implementation-cycles/IPP-E21S01T06-content-generation-locale-wiring.md)
 
 ---
 
 ## Input
 
-- Language preference from configuration
-- Content generation processes (RW, templates)
+- `ai-dev-kit-config.yaml` language preference (T01–T03 write; T05 read)
+- T04 locale corpus (`workflow-mgt/locales/`, `kanban/locales/`)
 
 ---
 
 ## Deliverable
 
-- RW uses language preference for changelog generation
-- Templates use language preference for content generation
-- All generated content uses selected variant
+- `render_locale_text` + `resolve_kanban_intake_template` in `localisation_config.py`
+- RW installer scaffolds load locale fragments by configured language
+- Intake guide documents locale-resolved template paths
 
 ---
 
 ## Acceptance Criteria
 
-- [ ] RW reads language preference from config
-- [ ] RW uses selected variant for changelog generation
-- [ ] Templates use selected variant
-- [ ] All generated content uses selected variant
+- [x] RW reads language preference from config when generating scaffolds
+- [x] RW changelog stub and decline-help use selected locale variant
+- [x] Kanban intake templates resolve via manifest + config language
+- [x] Canonical `templates/` fallback when locale file absent
+- [x] Tests T1–T10 pass (`test_content_generation_locale_wiring.py`)
 
 ---
 

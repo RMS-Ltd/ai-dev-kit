@@ -1,0 +1,10 @@
+_meta:
+  domain: errors
+  locale: zh-CN
+keys:
+  errors.cli.invalid_language_choice: Invalid choice. Enter 1 or 2.
+  errors.locale.manifest_missing: 'Locale manifest not found: {{path}}'
+  errors.locale.asset_missing: Locale asset not found for key {{key}}
+  errors.installer.project_not_found: 'Project root not found: {{path}}'
+  errors.installer.config_not_found: 'Config file not found: {{path}}'
+  errors.installer.config_load_failed: 'Failed to load config: {{error}}'

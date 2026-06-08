@@ -9,10 +9,10 @@ housekeeping_policy: keep
 # Epic 21, Story 1, Task 5: Implement configuration persistence (`ai-dev-kit-config.yaml`)
 
 **Task ID:** E21:S01:T05  
-**Status:** TODO  
+**Status:** COMPLETE  
 **Priority:** MEDIUM  
-**Last updated:** 2026-06-07 (v0.21.1.5+0 — RW -k kanban-init doc filing)
-**Version:** v0.21.1.5+0
+**Last updated:** 2026-06-07 (v0.21.1.5+1 — RW E21:S01:T05 --art)
+**Version:** v0.21.1.5+1
 **Code:** E21S01T05
 
 ---
@@ -27,14 +27,16 @@ housekeeping_policy: keep
 
 ## Scope
 
-[To be filled during migration]
+**Read + resolve slice (T05):** Extend [`localisation_config.py`](../../../../../packages/frameworks/workflow-mgt/scripts/localisation_config.py) with `read_localisation_config`, `resolve_language`, `load_locale_manifest`, and `resolve_locale_asset`. Config **write** shipped in T01–T03; locale corpus in T04. Installer consumption → **E21:S01:T06**.
 
 ---
 
 ## Input
 
-- Language selection from setup processes
-- Configuration file structure
+- Language selection from setup processes (T01–T03 write path)
+- Configuration file structure ([IPP-E21S01T01](../../../../implementation-cycles/IPP-E21S01T01-template-language-selection-github.md))
+- Locale manifests ([IPP-E21S01T04](../../../../implementation-cycles/IPP-E21S01T04-ukus-content-variants-mvp.md))
+- Planning: [IPP-E21S01T05](../../../../implementation-cycles/IPP-E21S01T05-config-read-locale-resolution.md)
 
 ---
 
@@ -48,10 +50,12 @@ housekeeping_policy: keep
 
 ## Acceptance Criteria
 
-- [ ] Configuration file structure defined
-- [ ] Language preference stored in config
-- [ ] Configuration utilities created
-- [ ] Default to UK English if not specified (en-GB primary; en-US supported)
+- [x] Configuration file structure defined — ✅ T01 (v0.21.1.1+2)
+- [x] Language preference stored in config — ✅ T02/T03 (v0.21.1.2+1 / v0.21.1.3+1)
+- [x] Read utilities: `read_localisation_config`, `resolve_language` — ✅ COMPLETE (v0.21.1.5+1)
+- [x] Manifest utilities: `load_locale_manifest`, `resolve_locale_asset` — ✅ COMPLETE (v0.21.1.5+1)
+- [x] Default to UK English if not specified (en-GB primary; en-US supported) — ✅ COMPLETE (v0.21.1.5+1)
+- [ ] Installer wiring uses resolver — **deferred to E21:S01:T06**
 
 **Configuration Structure:**
 ```yaml
@@ -83,6 +87,13 @@ RW -k E21:S01:T05 --art --dpz
 ## Version Anchor
 
 **Forensic Marker Format:** `✅ COMPLETE (vRC.E.S.T+B)`
+
+---
+
+## References
+
+- [IPP-E21S01T05 — Config read and locale resolution](../../../../implementation-cycles/IPP-E21S01T05-config-read-locale-resolution.md)
+- [localisation_config.py](../../../../../packages/frameworks/workflow-mgt/scripts/localisation_config.py)
 
 ---
 

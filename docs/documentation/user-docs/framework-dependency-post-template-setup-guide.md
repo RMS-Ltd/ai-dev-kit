@@ -10,7 +10,7 @@ housekeeping_policy: keep
 
 **Status:** Active  
 **Version:** 1.0.0  
-**Last Updated:** 2025-12-07  
+**Last Updated:** 2026-06-07 (E21:S01:T01 — Step 0 language selection)  
 **Epic:** Epic 5 - Documentation Management and Maintenance  
 **Story:** Story 4 - Framework Documentation Management  
 **Task:** E05:S04:T07 - Set up ai-dev-kit repository as GitHub template
@@ -35,6 +35,7 @@ For the locked greenfield-first sequence and verification gates, pair this guide
 
 ## Quick Start Checklist
 
+- [ ] **Select language variant** (UK or US English) — Step 0 below
 - [ ] Update project name and branding
 - [ ] Configure version file
 - [ ] Reset/initialize changelog
@@ -47,6 +48,44 @@ For the locked greenfield-first sequence and verification gates, pair this guide
 ---
 
 ## Step-by-Step Setup
+
+### Step 0: Select Language Variant (UK / US English)
+
+**Do this first** — before renaming the project or running installers. This records your preferred English spelling conventions for documentation and generated content (FR-006 Phase 1).
+
+**0.1 Choose your variant:**
+
+```
+Select your preferred English variant:
+  [1] UK English (en-GB) — colour, organise, realise  [default]
+  [2] US English (en-US) — color, organize, realize
+```
+
+If you do not make an explicit choice, use **UK English (en-GB)**.
+
+**0.2 Create `ai-dev-kit-config.yaml` at the project root:**
+
+```bash
+cp packages/frameworks/workflow-mgt/config/examples/ai-dev-kit-config.example.yaml ai-dev-kit-config.yaml
+```
+
+For a **lean vendor** layout (`vendor/ai-dev-kit/`):
+
+```bash
+cp vendor/ai-dev-kit/packages/frameworks/workflow-mgt/config/examples/ai-dev-kit-config.example.yaml ai-dev-kit-config.yaml
+```
+
+**0.3 Edit for US English (if you chose option 2):**
+
+```yaml
+localisation:
+  language: "en-US"
+  variant: "US"
+```
+
+The example file ships with **en-GB** as default. **CLI alternate:** `ai-dev-kit init` prompts for language first and writes the same file ([CLI reference](framework-dependency-cli-reference.md#ai-dev-kit-init)). **RW installer:** `install_release_workflow.py` prompts first and persists the same schema ([E21:S01:T03](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/kanban/epics/epic-21/story-01-language-selection-at-setup/T03-add-language-selection-prompt-to-rw-installer-install-releas.md) COMPLETE); generated scaffolds use the configured variant ([E21:S01:T06](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/kanban/epics/epic-21/story-01-language-selection-at-setup/T06-update-content-generation-to-use-language-preference-rw-temp.md) COMPLETE).
+
+---
 
 ### Step 1: Update Project Name and Branding
 

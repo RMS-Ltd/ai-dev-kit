@@ -45,6 +45,18 @@ pip install ai-dev-kit
 
 ---
 
+## Accessibility
+
+CLI status lines always include text labels (`Error:`, `Success:`, `Warning:`, `Info:`). Emoji prefixes appear only when colour is enabled.
+
+- **`NO_COLOR`** — Set this environment variable (any value) to suppress emoji and ANSI output (see [no-color.org](https://no-color.org/)).
+- **`--no-color`** — Global flag on any command: `ai-dev-kit --no-color install workflow-mgmt` sets `NO_COLOR=1` for that run.
+- **Install errors** — Structured `ERROR [ADK-…]` banners (FR-108) are text-first and unchanged by colour settings.
+
+Maintainer conventions: [cli-accessibility-conventions.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/governance/standards/cli-accessibility-conventions.md) · Strategy: [ADR-025](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/architecture/standards-and-adrs/ADR-025-layered-accessibility-strategy.md).
+
+---
+
 ## Core Commands
 
 ### `ai-dev-kit init`

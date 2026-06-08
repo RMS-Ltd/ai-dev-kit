@@ -146,8 +146,10 @@ When users create a repository from the template, they receive:
 **Complete Structure:**
 - ✅ Full `docs/` directory structure
 - ✅ All 5 frameworks in `packages/frameworks/`
-- ✅ Configuration files and examples
+- ✅ Configuration files and examples (including `ai-dev-kit-config.example.yaml` for language preference)
 - ✅ Documentation (7 user guides)
+
+**First setup step for adopters:** [Step 0 — Select language variant](framework-dependency-post-template-setup-guide.md#step-0-select-language-variant-uk--us-english) (UK/US English) before project customization.
 - ✅ Example workflows and templates
 
 **Frameworks Included:**

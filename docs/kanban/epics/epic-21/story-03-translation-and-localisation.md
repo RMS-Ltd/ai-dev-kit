@@ -8,12 +8,12 @@ housekeeping_policy: keep
 
 # Story 03 – Translation and Localisation
 
-**Status:** TODO  
+**Status:** COMPLETE  
 **Priority:** LOW  
 **Estimated Effort:** [TBD]  
 **Created:** 2025-12-09  
-**Last updated:** 2025-12-09 (v0.21.1.0+0 – Story created)  
-**Version:** v0.21.1.0+0  
+**Last updated:** 2026-06-08 (v0.21.3.7+1 — E21:S03:T07 COMPLETE; story closed)  
+**Version:** v0.21.3.7+1  
 **Code:** E21S03
 
 ---
@@ -32,39 +32,39 @@ Translate framework content to major languages, establish translation workflow, 
 
 ## Task Checklist
 
-- [ ] **E21:S03:T01 – Identify and extract all translatable content** - TODO
+- [x] **E21:S03:T01 – Identify and extract all translatable content** - ✅ COMPLETE (v0.21.3.1+1)
   - Task: [`T01-identify-and-extract-all-translatable-content`](story-03-translation-and-localisation/T01-identify-and-extract-all-translatable-content.md)
-- [ ] **E21:S03:T02 – Create translation files for major languages** - TODO
+- [x] **E21:S03:T02 – Create translation files for major languages** - ✅ COMPLETE (v0.21.3.2+1)
   - Task: [`T02-create-translation-files-for-major-languages`](story-03-translation-and-localisation/T02-create-translation-files-for-major-languages.md)
-- [ ] **E21:S03:T03 – Implement translation lookup and rendering** - TODO
+- [x] **E21:S03:T03 – Implement translation lookup and rendering** - ✅ COMPLETE (v0.21.3.3+1)
   - Task: [`T03-implement-translation-lookup-and-rendering`](story-03-translation-and-localisation/T03-implement-translation-lookup-and-rendering.md)
-- [ ] **E21:S03:T04 – Create translation workflow and review process** - TODO
+- [x] **E21:S03:T04 – Create translation workflow and review process** - ✅ COMPLETE (v0.21.3.4+1)
   - Task: [`T04-create-translation-workflow-and-review-process`](story-03-translation-and-localisation/T04-create-translation-workflow-and-review-process.md)
-- [ ] **E21:S03:T05 – Add translation management tools** - TODO
+- [x] **E21:S03:T05 – Add translation management tools** - ✅ COMPLETE (v0.21.3.5+1)
   - Task: [`T05-add-translation-management-tools`](story-03-translation-and-localisation/T05-add-translation-management-tools.md)
-- [ ] **E21:S03:T06 – Implement translation completeness tracking** - TODO
+- [x] **E21:S03:T06 – Implement translation completeness tracking** - ✅ COMPLETE (v0.21.3.6+1)
   - Task: [`T06-implement-translation-completeness-tracking`](story-03-translation-and-localisation/T06-implement-translation-completeness-tracking.md)
-- [ ] **E21:S03:T07 – Test translations and locale support** - TODO
+- [x] **E21:S03:T07 – Test translations and locale support** - ✅ COMPLETE (v0.21.3.7+1)
   - Task: [`T07-test-translations-and-locale-support`](story-03-translation-and-localisation/T07-test-translations-and-locale-support.md)
 
 ---
 
 ## Acceptance Criteria
 
-- [ ] All translatable content identified and extracted
-- [ ] Translation files created for major languages
-- [ ] Translation lookup and rendering works
-- [ ] Translation workflow established
-- [ ] Translation management tools available
-- [ ] Translation completeness tracked
-- [ ] Translations tested
+- [x] All translatable content identified and extracted
+- [x] Translation files created for major languages
+- [x] Translation lookup and rendering works
+- [x] Translation workflow established
+- [x] Translation management tools available
+- [x] Translation completeness tracked
+- [x] Translations tested
 
 ---
 
 ## Dependencies
 
 **Blocks:**
-- Cultural Adaptation (Story 3)
+- Cultural Adaptation (Story 4)
 
 **Blocked By:**
 - E21:S02: Internationalisation Infrastructure
