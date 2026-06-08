@@ -140,7 +140,7 @@ Nine FR-006 target locales have on-disk trees (en-GB interim copy). See [locale-
 | Task | Uses this inventory for |
 | ---- | ----------------------- |
 | **E21:S03:T02** | Complete — scaffold trees + rollout matrix |
-| **E21:S03:T03** | Wire `resolve_locale_key()` at call sites per key→source map |
+| **E21:S03:T03** | Complete — `locale_message()` wired at installer + CLI call sites |
 | **E21:S03:T06** | Completeness % from registry YAML |
 
 ---

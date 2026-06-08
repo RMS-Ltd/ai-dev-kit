@@ -10,10 +10,10 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 ---
 
 
-## [0.21.3.2+1] - 08-06-26
+## [0.21.3.3+1] - 08-06-26
 
-E21:S03:T02 — **Change implemented:** Major-language locale scaffold trees (9 codes × 2 packages); rollout matrix. SemVer **v0.4.1090+1**.
+E21:S03:T03 — **Change implemented:** Translation lookup/rendering wired at installer + CLI call sites (`locale_message`). SemVer **v0.4.1091+1**.
 
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.21.3.2+1.md)
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.21.3.3+1.md)
 
 ---

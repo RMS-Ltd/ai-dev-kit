@@ -73,9 +73,9 @@ Non-English registry tags use `variant: <language>` until S03+ provides dedicate
 
 ## 4. Content reload
 
-Switching updates persisted config only. Content generators (`resolve_locale_asset`, `render_locale_text`, `resolve_kanban_intake_template`) pick up the new locale on subsequent calls via `resolve_language(project_root)`.
+Switching updates persisted config only. Content generators (`resolve_locale_asset`, `render_locale_text`, `resolve_kanban_intake_template`, `locale_message`) pick up the new locale on subsequent calls via `resolve_language(project_root)`.
 
-Non-English tags persist in config but asset resolution falls back to on-disk locales (en-GB/en-US) until S03+.
+Scaffold locales (`es`, `fr`, `de`, …) resolve on-disk trees per [locale-rollout-matrix.md](locale-rollout-matrix.md) (E21:S03:T02). Missing keys or assets fall back per [locale-fallback-conventions.md](locale-fallback-conventions.md).
 
 ---
 
@@ -86,6 +86,7 @@ Non-English tags persist in config but asset resolution falls back to on-disk lo
 | **E21:S02:T03** | Detection precedence (read path) |
 | **E21:S02:T04** | Switching (write path) — this doc |
 | **E21:S02:T06** | `resolve_locale_key()` — [locale-key-conventions.md](locale-key-conventions.md) |
+| **E21:S03:T03** | Call-site wiring (`locale_message`) — installer + CLI |
 
 ---
 

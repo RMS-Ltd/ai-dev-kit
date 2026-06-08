@@ -9,11 +9,23 @@ from pathlib import Path
 from typing import Optional
 
 from cli.exceptions import AIDevKitError
+from cli.localisation import locale_message
 
 
 def color_enabled() -> bool:
     """Return True when CLI may emit emoji/ANSI (NO_COLOR unset per no-color.org)."""
     return os.environ.get("NO_COLOR") is None
+
+
+def _status_label(
+    project_root: Optional[Path],
+    key: str,
+    fallback: str,
+) -> str:
+    try:
+        return locale_message(project_root, key)
+    except (KeyError, ValueError, FileNotFoundError):
+        return fallback
 
 
 def _format_status(level: str, message: str, *, glyph: str) -> str:
@@ -53,24 +65,28 @@ def get_project_root() -> Optional[Path]:
     return None
 
 
-def print_error(message: str) -> None:
+def print_error(message: str, project_root: Optional[Path] = None) -> None:
     """Print an error message to stderr."""
-    print(_format_status("Error", message, glyph="❌"), file=sys.stderr)
+    level = _status_label(project_root, "cli.status.error_label", "Error")
+    print(_format_status(level, message, glyph="❌"), file=sys.stderr)
 
 
-def print_success(message: str) -> None:
+def print_success(message: str, project_root: Optional[Path] = None) -> None:
     """Print a success message to stdout."""
-    print(_format_status("Success", message, glyph="✅"))
+    level = _status_label(project_root, "cli.status.success_label", "Success")
+    print(_format_status(level, message, glyph="✅"))
 
 
-def print_warning(message: str) -> None:
+def print_warning(message: str, project_root: Optional[Path] = None) -> None:
     """Print a warning message to stderr."""
-    print(_format_status("Warning", message, glyph="⚠️"), file=sys.stderr)
+    level = _status_label(project_root, "cli.status.warning_label", "Warning")
+    print(_format_status(level, message, glyph="⚠️"), file=sys.stderr)
 
 
-def print_info(message: str) -> None:
+def print_info(message: str, project_root: Optional[Path] = None) -> None:
     """Print an info message to stdout."""
-    print(_format_status("Info", message, glyph="ℹ️"))
+    level = _status_label(project_root, "cli.status.info_label", "Info")
+    print(_format_status(level, message, glyph="ℹ️"))
 
 
 def handle_error(error: Exception, debug: bool = False) -> int:
@@ -84,14 +100,24 @@ def handle_error(error: Exception, debug: bool = False) -> int:
     Returns:
         Exit code (0 for success, non-zero for failure)
     """
+    root = get_project_root()
     if isinstance(error, AIDevKitError):
-        print_error(str(error))
+        print_error(str(error), project_root=root)
         return 1
     elif isinstance(error, KeyboardInterrupt):
-        print_error("\nOperation cancelled by user")
+        cancelled = locale_message(
+            root,
+            "cli.init.cancelled",
+        ) if root else "Operation cancelled by user"
+        print_error(cancelled, project_root=root)
         return 130
     else:
-        print_error(f"Unexpected error: {str(error)}")
+        unexpected = (
+            locale_message(root, "cli.init.unexpected_error", {"error": str(error)})
+            if root
+            else f"Unexpected error: {str(error)}"
+        )
+        print_error(unexpected, project_root=root)
         if debug:
             traceback.print_exc()
         return 1

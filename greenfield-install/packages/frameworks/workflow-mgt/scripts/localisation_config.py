@@ -7,6 +7,7 @@ Consumption: E21:S01:T06 (RW scaffolds + kanban intake templates).
 Detection: E21:S02:T03 (system/browser/env precedence in resolve_language).
 Switching: E21:S02:T04 (`switch_locale`, `--locale`, `adk config locale`).
 Keys: E21:S02:T06 (`resolve_locale_key`, YAML key catalogs).
+Call sites: E21:S03:T03 (`locale_message` wrapper for installer/CLI).
 Fallback: E21:S02:T07 (`_language_fallback_chain`: selected → default → en-GB → en-US).
 
 Precedence (resolve_language): override → config file → ADK_LOCALE → system
@@ -317,6 +318,34 @@ def resolve_locale_key(
     raise KeyError(
         f"Locale key not found: package={package!r} key={key!r} "
         f"languages_tried={languages_tried}"
+    )
+
+
+def locale_message(
+    project_root: Optional[Path],
+    key: str,
+    substitutions: Optional[Dict[str, str]] = None,
+    *,
+    package: str = "workflow-mgt",
+    language: Optional[str] = None,
+    frameworks_root: Optional[Path] = None,
+) -> str:
+    """
+    Resolve a locale key for installer/CLI call sites (E21:S03:T03).
+
+    When project_root is None (pre-config bootstrap), uses DEFAULT_LANGUAGE.
+    """
+    resolved_language = language
+    if resolved_language is None and project_root is None:
+        resolved_language = DEFAULT_LANGUAGE
+    root = project_root if project_root is not None else Path.cwd()
+    return resolve_locale_key(
+        root,
+        key,
+        substitutions=substitutions,
+        package=package,
+        language=resolved_language,
+        frameworks_root=frameworks_root,
     )
 
 

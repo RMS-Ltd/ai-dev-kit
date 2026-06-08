@@ -48,6 +48,8 @@ tiers:
   runtime_user:
     description: Short strings for installer, CLI, and locale config — extracted to keys/
     extraction_status: extracted
+    wiring_status: complete
+    wiring_task: E21:S03:T03
   whole_file:
     description: Markdown templates, scaffolds, and docs — remain whole files per ADR-024 C1
     extraction_status: documented

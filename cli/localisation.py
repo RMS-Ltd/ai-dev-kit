@@ -60,6 +60,7 @@ normalize_language = _mod.normalize_language
 load_locale_manifest = _mod.load_locale_manifest
 resolve_locale_asset = _mod.resolve_locale_asset
 resolve_locale_key = _mod.resolve_locale_key
+locale_message = _mod.locale_message
 language_fallback_chain = _mod.language_fallback_chain
 default_frameworks_root = _mod.default_frameworks_root
 kanban_locales_root = _mod.kanban_locales_root
@@ -117,6 +118,7 @@ __all__ = [
     "switch_locale",
     "to_babel_locale",
     "resolve_locale_asset",
+    "locale_message",
     "resolve_locale_key",
     "language_fallback_chain",
     "resolve_kanban_intake_template",

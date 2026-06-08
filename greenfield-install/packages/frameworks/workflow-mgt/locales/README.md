@@ -58,7 +58,12 @@ See [`manifest.yaml`](manifest.yaml). Kanban templates: `packages/frameworks/kan
 | E21:S02:T06 | `resolve_locale_key()` — **COMPLETE** @ v0.21.2.6+1 |
 | E21:S02:T07 | Extended fallback chain (`language_fallback_chain`) — **COMPLETE** @ v0.21.2.7+1 |
 | E21:S03:T01 | Extract installer/CLI keys + inventory — **COMPLETE** @ v0.21.3.1+1 |
-| E21:S03:T02 | Scaffold 9 major-language locale trees — **COMPLETE** |
+| E21:S03:T02 | Scaffold 9 major-language locale trees — **COMPLETE** @ v0.21.3.2+1 |
+| E21:S03:T03 | Call-site wiring (`locale_message`) — installer + CLI — **COMPLETE** @ v0.21.3.3+1 |
+
+Call-site helper: `locale_message(project_root, key, substitutions)` in [`localisation_config.py`](../scripts/localisation_config.py) (E21:S03:T03). Consumed by `install_release_workflow.py` and `cli/commands/init.py`.
+
+**Tests:** `tests/test_translation_lookup_rendering.py` (L1–L8, marker `fr006`).
 
 Detection APIs live in [`localisation_config.py`](../scripts/localisation_config.py): `detect_system_locale`, `detect_browser_locale`, `detect_env_locale`, `map_to_supported_locale`.
 
@@ -68,4 +73,4 @@ Key APIs: `resolve_locale_key(project_root, key)` in [`localisation_config.py`](
 
 Fallback: `language_fallback_chain(locales_root, preferred)` — selected → `default_locale` → `en-GB` → `en-US` (E21:S02:T07).
 
-Planning: [IPP-E21S02T06](../../../../docs/implementation-cycles/IPP-E21S02T06-locale-key-system.md) · [IPP-E21S02T07](../../../../docs/implementation-cycles/IPP-E21S02T07-locale-fallback-chain.md) · [locale-key-conventions](../../../../docs/governance/standards/locale-key-conventions.md) · [locale-fallback-conventions](../../../../docs/governance/standards/locale-fallback-conventions.md)
+Planning: [IPP-E21S02T06](../../../../docs/implementation-cycles/IPP-E21S02T06-locale-key-system.md) · [IPP-E21S02T07](../../../../docs/implementation-cycles/IPP-E21S02T07-locale-fallback-chain.md) · [IPP-E21S03T03](../../../../docs/implementation-cycles/IPP-E21S03T03-translation-lookup-rendering.md) · [locale-key-conventions](../../../../docs/governance/standards/locale-key-conventions.md) · [locale-fallback-conventions](../../../../docs/governance/standards/locale-fallback-conventions.md)

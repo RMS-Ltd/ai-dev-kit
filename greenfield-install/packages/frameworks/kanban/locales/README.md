@@ -115,6 +115,7 @@ Plus `tests/test_commands.py` init localisation tests (see `TestInitCommand`).
 | ---- | ------ |
 | E21:S03:T01 | Translatable content inventory — [translatable-content-inventory.md](../../../../docs/governance/standards/translatable-content-inventory.md) |
 | E21:S03:T02 | Major-language scaffold trees — [locale-rollout-matrix.md](../../../../docs/governance/standards/locale-rollout-matrix.md) |
+| E21:S03:T03 | Translation lookup/rendering wired — [IPP-E21S03T03](../../../../docs/implementation-cycles/IPP-E21S03T03-translation-lookup-rendering.md) |
 
 ## References
 

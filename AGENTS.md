@@ -42,7 +42,7 @@ When editing this table, update `docs/project-agent-manifest.json` `taskRouting[
 
 | Task | Summary | Task doc |
 | ---- | ------- | -------- |
-| E21:S03:T03 | FR-006 Phase 3 — implement translation lookup and rendering (next epic-21 stream) | `docs/project-management/kanban/epics/epic-21/story-03-translation-and-localisation/T03-implement-translation-lookup-and-rendering.md` |
+| E21:S03:T04 | FR-006 Phase 3 — translation workflow and review process (next epic-21 stream) | `docs/project-management/kanban/epics/epic-21/story-03-translation-and-localisation/T04-create-translation-workflow-and-review-process.md` |
 
 Refresh from `kboard.md` when running UKW or RW Step 7; mirror into manifest `openWork[]` if changed.
 

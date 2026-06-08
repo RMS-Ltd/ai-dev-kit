@@ -87,28 +87,50 @@ resolve_locale_key(
 
 ---
 
-## 5. Usage
+## 5. Call-site helper (`locale_message`)
+
+E21:S03:T03 wires installer and CLI surfaces through `locale_message()`:
+
+```python
+from localisation_config import locale_message
+from pathlib import Path
+
+# With project config on disk — uses resolve_language chain
+text = locale_message(Path("."), "installer.wizard.config_header")
+
+# Pre-config bootstrap (deps check) — defaults to en-GB
+text = locale_message(None, "installer.deps.missing_title")
+
+# Placeholders
+path_msg = locale_message(
+    Path("."),
+    "cli.config.using_existing",
+    {"path": "/project/ai-dev-kit-config.yaml"},
+)
+```
+
+Prefer `locale_message` at user-facing call sites; use `resolve_locale_key` directly when `project_root` is always known.
+
+CLI re-export: `cli/localisation.py`.
+
+---
+
+## 6. Usage (`resolve_locale_key`)
 
 ```python
 from localisation_config import resolve_locale_key
 from pathlib import Path
 
 text = resolve_locale_key(Path("."), "cli.prompt.language_choice")
-path_msg = resolve_locale_key(
-    Path("."),
-    "cli.config.using_existing",
-    substitutions={"path": "/project/ai-dev-kit-config.yaml"},
-)
 ```
-
-CLI re-export: `cli/localisation.py`.
 
 ---
 
-## 6. Tests
+## 7. Tests
 
 ```bash
 pytest tests/test_locale_key_resolution.py
+pytest tests/test_translation_lookup_rendering.py
 pytest -m fr006
 ```
 

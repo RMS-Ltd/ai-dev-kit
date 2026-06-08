@@ -13,6 +13,7 @@ from cli.config import Config
 from cli.localisation import (
     FR006_SUPPORTED_LOCALES,
     LOCALISATION_CONFIG_FILENAME,
+    locale_message,
     resolve_language_from_args,
     write_localisation_config,
 )
@@ -69,16 +70,40 @@ class InitCommand(BaseCommand):
         project_root = get_project_root()
         if project_root is None:
             project_root = Path.cwd()
-            print_info(f"No project root detected, using current directory: {project_root}")
+            print_info(
+                locale_message(
+                    project_root,
+                    "cli.init.no_project_root",
+                    {"path": str(project_root)},
+                ),
+                project_root=project_root,
+            )
         else:
-            print_info(f"Project root detected: {project_root}")
+            print_info(
+                locale_message(
+                    project_root,
+                    "cli.init.project_root_detected",
+                    {"path": str(project_root)},
+                ),
+                project_root=project_root,
+            )
 
         print_session_banner(project_root)
 
         localisation_path = project_root / LOCALISATION_CONFIG_FILENAME
         if localisation_path.exists() and not self.args.force:
-            print_error(f"Configuration file already exists: {localisation_path}")
-            print_error("Use --force to overwrite existing configuration")
+            print_error(
+                locale_message(
+                    project_root,
+                    "cli.init.config_exists",
+                    {"path": str(localisation_path)},
+                ),
+                project_root=project_root,
+            )
+            print_error(
+                locale_message(project_root, "cli.init.use_force"),
+                project_root=project_root,
+            )
             return 1
 
         try:
@@ -89,17 +114,51 @@ class InitCommand(BaseCommand):
                 locale=locale_tag,
             )
             write_localisation_config(project_root, locale)
-            print_success(f"Language preference saved: {locale['language']} ({locale['variant']})")
-            print_info(f"Localisation config: {localisation_path}")
+            print_success(
+                locale_message(
+                    project_root,
+                    "cli.config.saved",
+                    {
+                        "language": locale["language"],
+                        "variant": locale["variant"],
+                    },
+                ),
+                project_root=project_root,
+            )
+            print_info(
+                locale_message(
+                    project_root,
+                    "cli.init.locale_config_path",
+                    {"path": str(localisation_path)},
+                ),
+                project_root=project_root,
+            )
         except Exception as e:
-            print_error(f"Failed to write language configuration: {e}")
+            print_error(
+                locale_message(
+                    project_root,
+                    "cli.init.locale_write_failed",
+                    {"error": str(e)},
+                ),
+                project_root=project_root,
+            )
             return 1
 
         config_path = project_root / ".ai-dev-kit.yaml"
         
         if config_path.exists() and not self.args.force:
-            print_error(f"Configuration file already exists: {config_path}")
-            print_error("Use --force to overwrite existing configuration")
+            print_error(
+                locale_message(
+                    project_root,
+                    "cli.init.config_exists",
+                    {"path": str(config_path)},
+                ),
+                project_root=project_root,
+            )
+            print_error(
+                locale_message(project_root, "cli.init.use_force"),
+                project_root=project_root,
+            )
             return 1
         
         try:
@@ -107,10 +166,38 @@ class InitCommand(BaseCommand):
             config.set("default_backend", self.args.backend)
             config.save()
             
-            print_success(f"Initialized ai-dev-kit in {project_root}")
-            print_info(f"Configuration file: {config_path}")
-            print_info(f"Default backend: {self.args.backend}")
+            print_success(
+                locale_message(
+                    project_root,
+                    "cli.init.initialized",
+                    {"path": str(project_root)},
+                ),
+                project_root=project_root,
+            )
+            print_info(
+                locale_message(
+                    project_root,
+                    "cli.init.config_path",
+                    {"path": str(config_path)},
+                ),
+                project_root=project_root,
+            )
+            print_info(
+                locale_message(
+                    project_root,
+                    "cli.init.default_backend",
+                    {"backend": self.args.backend},
+                ),
+                project_root=project_root,
+            )
             return 0
         except Exception as e:
-            print_error(f"Failed to initialize ai-dev-kit: {e}")
+            print_error(
+                locale_message(
+                    project_root,
+                    "cli.init.failed",
+                    {"error": str(e)},
+                ),
+                project_root=project_root,
+            )
             return 1
