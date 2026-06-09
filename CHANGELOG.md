@@ -11,6 +11,14 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.2.1.30+3] - 09-06-26
+
+E02:S01:T30 — **Change implemented:** FR-122 Wave 2 — `validate_release_coherence.py` Step 9 cross-surface gate. SemVer **v0.4.1098+3**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.1.30+3.md)
+
+---
+
 ## [0.2.1.30+2] - 09-06-26
 
 E02:S01:T30 — **Change implemented:** FR-122 Wave 1 — RW Step 1e/1f allocator + git-tag preflight gates. SemVer **v0.4.1097+2**.

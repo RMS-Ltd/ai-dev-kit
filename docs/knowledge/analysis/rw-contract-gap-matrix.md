@@ -31,7 +31,7 @@ housekeeping_policy: keep
 | Clause | Requirement | Implementation | Test | Status | Wave |
 | ------ | ----------- | -------------- | ---- | ------ | ---- |
 | C-F1 | Release identity `E:S:T` | `validate_rw_task_complete.py`, `validate_rw_task_intent.py` | RW scenario tests | MET | — |
-| C-F2 | Version coherence | `version.py`, changelogs, README, SAA | T4 coherence (planned) | PARTIAL | 2 |
+| C-F2 | Version coherence | `validate_release_coherence.py` Step 9 | T4 | MET | 2 |
 | C-F3 | Transaction abort | Step 1/1b–1d blocking in `.cursorrules` | Agent contract | PARTIAL | 3 |
 | C-F4 | Kanban atomicity | FR-092 Step 7, `update_kanban_docs.py` | `validate_release_readiness.py` | MOSTLY MET | — |
 | C-F5 | Forensic traceability | Immutable changelog timestamp, four-surface report | BR-074 guards | MET | — |
@@ -39,7 +39,7 @@ housekeeping_policy: keep
 | C-F7 | Allocator preflight | `validate_allocator_health.py` + rw-config | T1 | MET | 1 |
 | C-F8 | Git-tag occupancy | `validate_git_tag_occupancy.py` Step 1f | T2 | MET | 1 |
 | C-F9 | Single tag authority | `create_rw_tags()` exists; agent bypass observed | T3, T6 (planned) | VIOLATED | 3 |
-| C-F10 | Split-brain detection | None cross-surface | T4 (planned) | MISSING | 2 |
+| C-F10 | Split-brain detection | `validate_release_coherence.py` | T4 | MET | 2 |
 | C-NF1 | Spec single source | Contract doc (this wave) + `canonical-rw-steps.yaml` | Structural | PARTIAL | 0/4 |
 | C-NF2 | Agent/script split | ADR-027 + contract | ADR review | PLANNED | 0 |
 | C-NF3 | Idempotency | `resolve_rw_build.py` | `test_resolve_rw_build.py` | MET | — |
@@ -64,7 +64,7 @@ housekeeping_policy: keep
 | ---- | ----------- | ------------- |
 | 0 | Contract + ADR-027 + this matrix | Baseline ✅ |
 | 1 | Step 1e/1f validators | C-F7, C-F8 → MET ✅ |
-| 2 | `validate_release_coherence.py` | C-F2, C-F10 → target MET |
+| 2 | `validate_release_coherence.py` | C-F2, C-F10 → MET ✅ |
 | 3 | Step 11 tag authority | C-F9 → target MET |
 | 4 | `rw-contract.yaml` | C-NF1 → target MET |
 | 8 | 10-run streak | C-F2–F10 sustained |

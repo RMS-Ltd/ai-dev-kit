@@ -70,6 +70,8 @@ allocator_health:
   min_patch_floor: 1000
 git_tag_occupancy:
   enabled: true
+release_coherence:
+  enabled: true
 
 # Versioning mode policy:
 # - dual: internal RC.EPIC.STORY.TASK+BUILD + external SemVer (requires task_touch)

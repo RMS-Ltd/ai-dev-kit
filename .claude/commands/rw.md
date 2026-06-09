@@ -259,6 +259,7 @@ When `semver_mapping_strategy: task_touch`, also run (blocking):
 ```bash
 python "packages/frameworks/workflow-mgt/scripts/validation/validate_semver_registry_injective.py" --strict
 python "packages/frameworks/workflow-mgt/scripts/validation/validate_task_touch_release_contract.py" --strict
+python "packages/frameworks/workflow-mgt/scripts/validation/validate_release_coherence.py" --strict
 ```
 
 If `--art` was in `$ARGUMENTS`, propagate `--requested "<parsed_id>" --art` to `validate_branch_context.py` and `validate_version_bump.py`.

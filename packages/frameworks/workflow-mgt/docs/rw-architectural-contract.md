@@ -85,7 +85,7 @@ On success, all fields must be present:
 | Clause | Requirement | RW step | Status (Wave 0) |
 | ------ | ----------- | ------- | ----------------- |
 | C-F1 | Release identity `E:S:T` | 1b–1d | MET |
-| C-F2 | Version coherence | 2–5, 9, 11 | PARTIAL — Wave 2 |
+| C-F2 | Version coherence | 2–5, 9, 11 | MET — Wave 2 |
 | C-F3 | Transaction abort | all blocking | PARTIAL |
 | C-F4 | Kanban atomicity | 7 | MOSTLY MET (FR-092) |
 | C-F5 | Forensic traceability | 3, 7 | MET |
@@ -93,7 +93,7 @@ On success, all fields must be present:
 | C-F7 | Allocator preflight | 1e | MET — Wave 1 |
 | C-F8 | Git-tag occupancy | 1f | MET — Wave 1 |
 | C-F9 | Single tag authority | 11 | VIOLATED — Wave 3 |
-| C-F10 | Split-brain detection | 9 | MISSING — Wave 2 |
+| C-F10 | Split-brain detection | 9 | MET — Wave 2 |
 
 See [gap matrix](../../../docs/knowledge/analysis/rw-contract-gap-matrix.md) for implementation and test mapping.
 
