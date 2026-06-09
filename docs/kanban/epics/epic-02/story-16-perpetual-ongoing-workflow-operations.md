@@ -11,8 +11,8 @@ housekeeping_policy: keep
 **Status:** IN PROGRESS
 **Priority:** HIGH  
 **Created:** 2026-04-20  
-**Last updated:** 2026-06-08 (v0.2.16.24+1 – Kanban documentation setup)
-**Version:** v0.2.16.24+1
+**Last updated:** 2026-06-09 (v0.2.16.7+2 – T07 ad-hoc documentation maintenance lane)
+**Version:** v0.2.16.7+2
 **Code:** E2S16
 
 ---
@@ -21,7 +21,7 @@ housekeeping_policy: keep
 
 **E02:S16 is the single canonical home for all perpetual maintenance tasks** in ai-dev-kit. Finite delivery work was evacuated to semantic owning stories on 2026-06-08 ([IPP-E02S16T24](../../../implementation-cycles/IPP-E02S16T24-s16-perpetual-only-semantic-scatter.md)).
 
-Active perpetual lanes: **T01** workflow umbrella · **T02** UKW/kanban hygiene · **T03** markdown · **T04** repo infrastructure · **T05** GitHub Actions CI · **T06** security/code quality.
+Active perpetual lanes: **T01** workflow umbrella · **T02** UKW/kanban hygiene · **T03** markdown lint · **T04** repo infrastructure · **T05** GitHub Actions CI · **T06** security/code quality · **T07** ad-hoc documentation maintenance.
 
 ---
 
@@ -38,6 +38,8 @@ Active perpetual lanes: **T01** workflow umbrella · **T02** UKW/kanban hygiene 
 - [ ] **E02:S16:T05 – GitHub Actions CI health (Perpetual)** - 🔄 PERPETUAL — [Task](story-16-perpetual-ongoing-workflow-operations/T05-github-actions-ci-health-perpetual.md) | [FR-112](../../fr-br/FR-112-perpetual-github-ci-and-security-health-lanes.md)
 
 - [ ] **E02:S16:T06 – GitHub Security & Code Quality health (Perpetual)** - 🔄 PERPETUAL — [Task](story-16-perpetual-ongoing-workflow-operations/T06-github-security-code-quality-health-perpetual.md) | [FR-112](../../fr-br/FR-112-perpetual-github-ci-and-security-health-lanes.md)
+
+- [ ] **E02:S16:T07 – Ad-hoc Documentation Maintenance (Perpetual)** - 🔄 PERPETUAL (**v0.2.16.7+2**) — [Task](story-16-perpetual-ongoing-workflow-operations/T07-ad-hoc-documentation-maintenance-perpetual.md) | (T07 ID reclaimed; prior finite UKW work → E04:S14:T06)
 
 - [x] **E02:S16:T24 – S16 perpetual-only consolidation (semantic scatter)** - ✅ COMPLETE (**v0.2.16.24+1**) — [Task](story-16-perpetual-ongoing-workflow-operations/T24-s16-perpetual-only-consolidation-semantic-scatter.md) | [IPP](../../../implementation-cycles/IPP-E02S16T24-s16-perpetual-only-semantic-scatter.md)
 
@@ -64,7 +66,8 @@ Story 016 is the **only** story for perpetual maintenance tasks across all domai
 | Prior S16 ID | Canonical new home |
 | ------------ | ------------------ |
 | T01–T02 | E02:S15:T09–T10 |
-| T06–T07, T13–T14, T16, T18, T20 | E04:S14:T05–T11 |
+| T06, T13–T14, T16, T18, T20 | E04:S14:T05–T11 |
+| T07 (finite UKW extension, pre-2026-06-09) | E04:S14:T06 — **T07 ID reclaimed** for perpetual ad-hoc documentation maintenance |
 | T08, T22 | E02:S03:T07–T08 |
 | T09, T11–T12 | E02:S15:T11–T13 |
 | T15, T17, T19, T21 | E02:S01:T26–T29 |

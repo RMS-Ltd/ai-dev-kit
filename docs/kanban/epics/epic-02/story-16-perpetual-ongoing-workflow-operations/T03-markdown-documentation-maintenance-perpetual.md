@@ -55,6 +55,8 @@ Recurring markdown-only documentation maintenance is a distinct operational stre
 
 ### Out of scope
 
+- Ad-hoc documentation content refresh (owned by `E02:S16:T07`).
+- README version banner on release (RW Step 5).
 - RW/UKW/CMW behavior or script logic changes.
 - Kanban synchronization operations (owned by `E02:S16:T02`).
 - Broader workflow-maintenance operational changes (umbrella in `E02:S16:T01`).
@@ -82,3 +84,4 @@ Recurring markdown-only documentation maintenance is a distinct operational stre
 - [E02:S15:T09 — FR-088 policy](../../story-15-ipw-governance-and-publication-contract/T09-establish-canonical-perpetual-ongoing-tasks-story-fr088.md)
 - [E02:S16:T01 — Workflow maintenance (Perpetual)](T01-workflow-maintenance-perpetual.md)
 - [E02:S16:T02 — Ad-hoc Kanban synchronization and hygiene (Perpetual)](T02-ad-hoc-kanban-synchronization-and-hygiene-perpetual.md)
+- [E02:S16:T07 — Ad-hoc Documentation Maintenance (Perpetual)](T07-ad-hoc-documentation-maintenance-perpetual.md)

@@ -11,10 +11,10 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
-## [0.6.9.25+3] - 09-06-26
+## [0.2.16.7+2] - 09-06-26
 
-E06:S09:T25 — **Change implemented:** Starborn install attempt 2 closure — triage F9 (v1 vs v3 kanban catalog), attempt-02 artifacts, install SHA-256 docs. SemVer **v0.4.11+3**.
+E02:S16:T07 — **Change implemented:** Perpetual ad-hoc documentation maintenance lane (T07); README / INSTALL SHA-256 integrity and install pin alignment attributed (`--art`). SemVer **v0.4.11+2**.
 
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.6.9.25+3.md)
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.16.7+2.md)
 
 ---
