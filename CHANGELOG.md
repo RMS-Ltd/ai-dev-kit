@@ -11,10 +11,10 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
-## [0.6.7.6+1] - 08-06-26
+## [0.6.9.25+1] - 09-06-26
 
-E06:S07:T06 — **Change implemented:** Ultimate Canonical Kanban v3.2.0 analysis corpus (epic catalog ratification, E05 Project Architecture, `&` naming conventions, migration blueprint). SemVer **v0.4.12+1**.
+E06:S09:T25 — **Change implemented:** Kanban intake for UXR-025 (Starborn Legacy greenfield install diary); E06:S09:T25 task + canonical diary artifact. SemVer **v0.4.12+1**.
 
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.6.7.6+1.md)
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.6.9.25+1.md)
 
 ---

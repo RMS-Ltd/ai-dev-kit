@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Board
 
-**Last Updated:** 2026-06-08 (merge origin/dev; RW anchor E06:S07:T06)
-**Version:** v0.6.7.6+1
+**Last Updated:** 2026-06-09 (RW -k E06:S09:T25 — UXR-025 intake)
+**Version:** v0.6.9.25+1
 
 **Active board contract:** **Sole active MoSCOW board** ([ADR-018](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/architecture/standards-and-adrs/ADR-018-single-kanban-board-consolidation.md)). Rows are **live work** (TODO / IN PROGRESS / OPEN / WAITING / PERPETUAL) plus filed **Could Have** backlog. **Verification (V)** band holds task-shipped / FBU-open items (`⏳ WAITING`). Remove **terminal** rows and archive prose (use [`kanban-completed.md`](kanban-completed.md) / [`intake-completed.md`](intake-completed.md)).
 
@@ -26,6 +26,8 @@ housekeeping_policy: keep
 ### Must Have (M) - Critical Tasks
 
 ### Should Have (S) - Important Tasks
+
+- **E06:S09:T25** – Starborn Legacy greenfield install diary — triage & upstream reaction - 📋 TODO (HIGH, **v0.6.9.25+1** RW -k intake — F4 orchestrator + F5 vendor paths) | [Task](epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T25-starborn-legacy-greenfield-install-diary-triage-uxr025.md) | [UXR-025](fr-br/UXR-025-starborn-legacy-greenfield-install-diary.md) | [Diary](../knowledge/analysis/projects/starborn-legacy-greenfield-install-diary.md) | —No IPP— | Last modified: 2026-06-09 08:50 UTC
 
 - **E05:S09:T15** – Docusaurus adopter-public publish allowlist (FR-114) - 📋 TODO (HIGH, **v0.5.9.15+1** RW -k intake) | [Task](epics/epic-05/story-09-docusaurus-documentation-portal/T15-docusaurus-adopter-public-publish-allowlist-fr114.md) | [FR-114](fr-br/FR-114-split-documentation-surfaces-docusaurus-public-notion-maintainer-kb.md) | [—IPP—](../../implementation-cycles/IPP-E05S09T15-docusaurus-adopter-public-publish-allowlist-fr114.md) | Last modified: 2026-06-06 16:16 UTC
 

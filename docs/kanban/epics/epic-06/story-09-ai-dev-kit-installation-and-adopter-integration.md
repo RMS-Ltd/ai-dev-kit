@@ -13,8 +13,8 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** Large  
 **Created:** 2026-04-19  
-**Last updated:** 2026-06-05 (RW E06:S09:T24 — FR-111 doc hygiene)
-**Version:** v0.6.9.24+3
+**Last updated:** 2026-06-09 (v0.6.9.25+1 — RW -k E06:S09:T25 UXR-025 intake)
+**Version:** v0.6.9.25+1
 **Code:** E6S09
 
 ---
@@ -78,6 +78,8 @@ housekeeping_policy: keep
 - [x] **E06:S09:T23 – Greenfield lean tree GitHub Packages delivery (UXR-021)** - ✅ COMPLETE (**v0.6.9.23+3** — GHCR + FR-110-F5 tarball; ADR-021; Linux drift + release workflow fix) — [Task](story-09-ai-dev-kit-installation-and-adopter-integration/T23-greenfield-install-github-packages-delivery-uxr021.md) | [IPP-E06S09T23](../../../implementation-cycles/IPP-E06S09T23-greenfield-install-github-packages-delivery-uxr021.md) | [UXR-021](../../fr-br/UXR-021-greenfield-install-github-packages-delivery-channel.md)
 
 - [x] **E06:S09:T24 – Acquisition-layer ADK error codes (FR-111)** - ✅ COMPLETE (**v0.6.9.24+3** — registry 1.1.0 I05/I06, verify_vendor_tree, doc sync + link hygiene) — [Task](story-09-ai-dev-kit-installation-and-adopter-integration/T24-acquisition-layer-adk-error-codes-fr111.md) | [IPP-E06S09T24](../../../implementation-cycles/IPP-E06S09T24-acquisition-layer-adk-error-codes-fr111.md) | [FR-111](../../fr-br/FR-111-acquisition-layer-adk-error-codes-and-install-error-doc-hygiene.md)
+
+- [ ] **E06:S09:T25 – Starborn Legacy greenfield install diary — triage & upstream reaction (UXR-025)** - 📋 TODO (HIGH, **v0.6.9.25+1** RW -k intake — orchestrator F4/F5 triage pending) — [Task](story-09-ai-dev-kit-installation-and-adopter-integration/T25-starborn-legacy-greenfield-install-diary-triage-uxr025.md) | [UXR-025](../../fr-br/UXR-025-starborn-legacy-greenfield-install-diary.md) | [Diary](../../../knowledge/analysis/projects/starborn-legacy-greenfield-install-diary.md) | —No IPP—
 
 ---
 
