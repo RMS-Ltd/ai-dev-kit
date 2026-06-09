@@ -1,0 +1,95 @@
+{
+  "auxiliary_surfaces": {
+    "epic_doc": {
+      "changes": [
+        "Updated Epic 6 Last updated: v0.6.9.26+2 – T26 attempt 03 FB intake"
+      ],
+      "notes": [],
+      "paths": [
+        "/Users/rms/Documents/projects/ai-dev-kit/docs/kanban/epics/epic-06/epic-06.md"
+      ],
+      "surface": "epic_doc",
+      "touched": true
+    },
+    "story_doc": {
+      "changes": [
+        "Updated Story 009 checklist row E06:S09:T26 version marker v0.6.9.26+2"
+      ],
+      "notes": [],
+      "paths": [
+        "/Users/rms/Documents/projects/ai-dev-kit/docs/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration.md"
+      ],
+      "surface": "story_doc",
+      "touched": true
+    },
+    "uncategorized": {
+      "changes": [
+        "Updated T26 task doc version anchor v0.6.9.26+2",
+        "Updated T25 attempt 03 intake addendum",
+        "Updated triage matrix F9→BLOCKER; F10–F17",
+        "Updated board Last Updated / Version metadata"
+      ],
+      "notes": [],
+      "paths": [],
+      "surface": "uncategorized",
+      "touched": true
+    }
+  },
+  "contract": "FR-092 / ADR-018 (RW Step 7 four-surface reconciliation)",
+  "invocation_context": "rw_step_7",
+  "release_scope": {
+    "epic": 6,
+    "story": 9,
+    "task": 26,
+    "task_id": "E06:S09:T26",
+    "version_string": "v0.6.9.26+2"
+  },
+  "stamp_evidence": {},
+  "summary": {
+    "stamps_appended_with_evidence": 0,
+    "stamps_preserved_existing": 29,
+    "stamps_skipped_no_evidence": 0,
+    "total_changes": 8,
+    "touched_surfaces": [
+      "task_doc",
+      "kboard"
+    ],
+    "untouched_surfaces": [
+      "fbu_doc"
+    ]
+  },
+  "surfaces": {
+    "fbu_doc": {
+      "changes": [],
+      "notes": [
+        "No FR/BR/UXR source doc in release scope for attempt 03 intake."
+      ],
+      "paths": [],
+      "surface": "fbu_doc",
+      "touched": false
+    },
+    "kboard": {
+      "changes": [
+        "Updated E06:S09:T26 MoSCOW row version marker and attempt 03 links (stamp preserved per FR-097)"
+      ],
+      "notes": [],
+      "paths": [
+        "/Users/rms/Documents/projects/ai-dev-kit/docs/kanban/kboard.md"
+      ],
+      "surface": "kboard",
+      "touched": true
+    },
+    "task_doc": {
+      "changes": [
+        "Updated T26 version anchor v0.6.9.26+2; attempt log row 3; AC1–AC5"
+      ],
+      "notes": [],
+      "paths": [
+        "/Users/rms/Documents/projects/ai-dev-kit/docs/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T26-starborn-legacy-adk-install-program.md"
+      ],
+      "surface": "task_doc",
+      "touched": true
+    }
+  },
+  "timestamp_utc": "2026-06-09 14:43 UTC"
+}

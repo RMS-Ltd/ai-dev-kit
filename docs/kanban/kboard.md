@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Board
 
-**Last Updated:** 2026-06-09 (RW: E05:S08:T05)
-**Version:** v0.5.8.5+2
+**Last Updated:** 2026-06-09 (RW: E06:S09:T26)
+**Version:** v0.6.9.26+2
 
 **Active board contract:** **Sole active MoSCOW board** ([ADR-018](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/architecture/standards-and-adrs/ADR-018-single-kanban-board-consolidation.md)). Rows are **live work** (TODO / IN PROGRESS / OPEN / WAITING / PERPETUAL) plus filed **Could Have** backlog. **Verification (V)** band holds task-shipped / FBU-open items (`⏳ WAITING`). Remove **terminal** rows and archive prose (use [`kanban-completed.md`](kanban-completed.md) / [`intake-completed.md`](intake-completed.md)).
 
@@ -27,7 +27,7 @@ housekeeping_policy: keep
 
 ### Should Have (S) - Important Tasks
 
-- **E06:S09:T26** – Starborn Legacy ADK install program - 🔄 IN PROGRESS (HIGH, **v0.6.9.26+1** — attempt 3+ planning; SBL feedback loop; AC6 validator fix) | [Task](epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T26-starborn-legacy-adk-install-program.md) | [UXR-025](fr-br/UXR-025-starborn-legacy-greenfield-install-diary.md) | [Triage matrix](../knowledge/analysis/projects/starborn-legacy-install-triage-matrix.md) | —No IPP— | Last modified: 2026-06-09 12:07 UTC
+- **E06:S09:T26** – Starborn Legacy ADK install program - 🔄 IN PROGRESS (HIGH, **v0.6.9.26+2** — attempt 03 FB intake; F9→BLOCKER; F10–F17 triage) | [Task](epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T26-starborn-legacy-adk-install-program.md) | [UXR-025](fr-br/UXR-025-starborn-legacy-greenfield-install-diary.md) | [Attempt 03](../../../adk-install-into-sbl/attempt-03/README.md) | —No IPP— | Last modified: 2026-06-09 12:07 UTC
 
 - **E05:S08:T06** – ADR-026 + git-maintainer authoring bootstrap (FR-121) - 📋 TODO (HIGH, wave 2) | [Task](epics/epic-05/story-08-knowledge-base/T06-adr-026-git-maintainer-authoring-bootstrap-fr121.md) | [FR-121](fr-br/FR-121-git-internal-maintainer-kb-oss-documentation-surfaces.md) | —No IPP— | Last modified: 2026-06-09 12:41 UTC
 

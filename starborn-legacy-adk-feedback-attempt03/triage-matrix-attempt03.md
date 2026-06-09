@@ -1,6 +1,6 @@
 # Starborn Legacy install — triage matrix (attempt 03 addendum)
 
-**Extends:** [UXR-025](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/kanban/fr-br/UXR-025-starborn-legacy-greenfield-install-diary.md) · [triage matrix attempts 1–2](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/knowledge/analysis/projects/starborn-legacy-install-triage-matrix.md)
+**Extends:** [UXR-025](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/kanban/fr-br/UXR-025-starborn-legacy-greenfield-install-diary.md) · [triage matrix attempts 1–3](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/knowledge/analysis/projects/starborn-legacy-install-triage-matrix.md) (**merged** — canonical SoT is matrix file; this addendum is the adopter submission copy)
 
 **ADK pin:** `v0.4.13` tarball  
 **Session:** `20260609-attempt-03`  

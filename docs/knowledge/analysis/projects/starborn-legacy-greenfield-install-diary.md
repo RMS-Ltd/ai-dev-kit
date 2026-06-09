@@ -259,4 +259,18 @@ Installer contract checks (BR-084, UXR-017, etc.) passed for the **greenfield ex
 
 ---
 
-*Last updated: 2026-06-09 — install attempt closed; legacy E/S/T Kanban retained.*
+---
+
+## Attempt 03 pointer (2026-06-09)
+
+Attempt 3 ran on SBL with **Option A** (RW-only) then a manual dual-tree sequence for migration-test prep. Maintainer intake:
+
+- [Attempt 03 index](../../../../adk-install-into-sbl/attempt-03/README.md)
+- [FR-079 feedback package](../../../../starborn-legacy-adk-feedback-attempt03/SUBMISSION.md)
+- [Triage matrix F10–F17](starborn-legacy-install-triage-matrix.md) — **F9 upgraded to BLOCKER**
+
+**Outcome:** Dual kanban test bed succeeded; SBL → ADK Kanban v3.2 migration test **blocked** (v1 catalog installed again).
+
+---
+
+*Last updated: 2026-06-09 — attempts 1–2 closed; attempt 03 intake merged.*

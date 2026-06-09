@@ -81,6 +81,14 @@ Triage the **Starborn Legacy** greenfield install diary (`v0.4.1063` tarball) an
 | Suggested follow-on | INSTALL doc warning; defer package rewrite per [migration blueprint](../../../../knowledge/analysis/kanban-v2/07-package-migration-blueprint.md); orchestrator `--kanban-mode skip` or RW-only greenfield profile |
 | Successor task | **E06:S09:T26** — [Starborn Legacy ADK install program](T26-starborn-legacy-adk-install-program.md) @ **v0.6.9.26+1** |
 
+### Attempt 03 intake (T26 scope — 2026-06-09)
+
+| Item | Detail |
+|------|--------|
+| FB package | [starborn-legacy-adk-feedback-attempt03](../../../../../../starborn-legacy-adk-feedback-attempt03/SUBMISSION.md) — FR-079 **accepted** |
+| **F9** | Upgraded **DEFER → BLOCKER** ([F17](../../../../../../starborn-legacy-adk-feedback-attempt03/triage-matrix-attempt03.md) — third v1 catalog proof @ `v0.4.13` / `0.4.1098+1`) |
+| Triage | [F10–F17](../../../../knowledge/analysis/projects/starborn-legacy-install-triage-matrix.md) merged |
+
 ---
 
 ## Associated User Experience Research

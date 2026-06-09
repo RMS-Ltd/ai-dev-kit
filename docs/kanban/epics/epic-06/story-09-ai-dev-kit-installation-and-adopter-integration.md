@@ -13,8 +13,8 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** Large  
 **Created:** 2026-04-19  
-**Last updated:** 2026-06-09 (v0.6.9.26+1 – T26 SBL install program intake + AC6 validator fix)
-**Version:** v0.6.9.26+1
+**Last updated:** 2026-06-09 (v0.6.9.26+2 – Kanban documentation setup)
+**Version:** v0.6.9.26+2
 **Code:** E6S09
 
 ---
@@ -81,7 +81,7 @@ housekeeping_policy: keep
 
 - [x] **E06:S09:T25 – Starborn Legacy greenfield install diary — triage & upstream reaction (UXR-025)** - ✅ COMPLETE (HIGH, **v0.6.9.25+3** — F4/F5 fix **+2**; attempt 2 closure + F9 v1 catalog triage **+3**) — [Task](story-09-ai-dev-kit-installation-and-adopter-integration/T25-starborn-legacy-greenfield-install-diary-triage-uxr025.md) | [UXR-025](../../fr-br/UXR-025-starborn-legacy-greenfield-install-diary.md) | [IPP](../../../implementation-cycles/IPP-E06S09T25-starborn-legacy-greenfield-install-diary-triage-uxr025.md) | [Triage](../../../knowledge/analysis/projects/starborn-legacy-install-triage-matrix.md) | [Attempt 02](../../../../adk-install-into-sbl/attempt-02/greenfield-install-diary.md)
 
-- [ ] **E06:S09:T26 – Starborn Legacy ADK install program** - 🔄 IN PROGRESS (HIGH, **v0.6.9.26+1** — task intake + `validate_branch_context` lowercase epic/story task-doc discovery) — [Task](story-09-ai-dev-kit-installation-and-adopter-integration/T26-starborn-legacy-adk-install-program.md) | [T25 successor](story-09-ai-dev-kit-installation-and-adopter-integration/T25-starborn-legacy-greenfield-install-diary-triage-uxr025.md) | [UXR-025](../../fr-br/UXR-025-starborn-legacy-greenfield-install-diary.md) | [Triage matrix](../../../knowledge/analysis/projects/starborn-legacy-install-triage-matrix.md)
+- [ ] **E06:S09:T26 – Starborn Legacy ADK install program** - 🔄 IN PROGRESS (HIGH, **v0.6.9.26+2** — attempt 03 FB intake; F9→BLOCKER; upstream backlog F10–F17) — [Task](story-09-ai-dev-kit-installation-and-adopter-integration/T26-starborn-legacy-adk-install-program.md) | [Attempt 03](../../../../adk-install-into-sbl/attempt-03/README.md) | [FB package](../../../../starborn-legacy-adk-feedback-attempt03/SUBMISSION.md) | [Triage matrix](../../../knowledge/analysis/projects/starborn-legacy-install-triage-matrix.md)
 
 ---
 

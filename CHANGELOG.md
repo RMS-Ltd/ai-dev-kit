@@ -11,10 +11,10 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
-## [0.5.8.5+2] - 09-06-26
+## [0.6.9.26+2] - 09-06-26
 
-E05:S08:T05 / FR-121 — **Change implemented:** Reverse Notion migration — restored full maintainer KB markdown in git (218 paths). SemVer **v0.4.1101+2**.
+E06:S09:T26 — **Change implemented:** Starborn Legacy attempt 03 FR-079 feedback intake; F9→BLOCKER; triage F10–F17 merged. SemVer **v0.4.11+2**.
 
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.5.8.5+2.md)
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.6.9.26+2.md)
 
 ---

@@ -12,14 +12,14 @@ housekeeping_policy: keep
 **Status:** IN PROGRESS  
 **Priority:** HIGH  
 **Created:** 2026-06-09  
-**Last updated:** 2026-06-09 (v0.6.9.26+1 — RW E06:S09:T26 --art; task intake + AC6 validator fix)  
-**Version:** v0.6.9.26+1  
-**Version Anchor:** v0.6.9.26+1  
+**Last updated:** 2026-06-09 (v0.6.9.26+2 — RW E06:S09:T26 --art; attempt 03 FB intake)  
+**Version:** v0.6.9.26+2  
+**Version Anchor:** v0.6.9.26+2  
 **Code:** E06S09T26
 
 **Predecessor (closed):** [E06:S09:T25](T25-starborn-legacy-greenfield-install-diary-triage-uxr025.md) — UXR-025 triage + F4/F5 fixes @ **v0.6.9.25+3**
 
-**Related:** [UXR-025](../../../fr-br/UXR-025-starborn-legacy-greenfield-install-diary.md) · [FR-081](../../../fr-br/FR-081-brownfield-modular-adopter-integration.md) · [FR-080](../../../fr-br/FR-080-greenfield-installation-process.md) · [FR-079](../../../fr-br/FR-079-install-feedback-submission-path-and-governance.md) · [Triage matrix](../../../../knowledge/analysis/projects/starborn-legacy-install-triage-matrix.md) · [Attempt 02](../../../../../../adk-install-into-sbl/attempt-02/greenfield-install-diary.md)
+**Related:** [UXR-025](../../../fr-br/UXR-025-starborn-legacy-greenfield-install-diary.md) · [FR-081](../../../fr-br/FR-081-brownfield-modular-adopter-integration.md) · [FR-080](../../../fr-br/FR-080-greenfield-installation-process.md) · [FR-079](../../../fr-br/FR-079-install-feedback-submission-path-and-governance.md) · [Triage matrix](../../../../knowledge/analysis/projects/starborn-legacy-install-triage-matrix.md) · [Attempt 02](../../../../../../adk-install-into-sbl/attempt-02/greenfield-install-diary.md) · [Attempt 03](../../../../../../adk-install-into-sbl/attempt-03/README.md) · [FB package](../../../../../../starborn-legacy-adk-feedback-attempt03/SUBMISSION.md)
 
 ---
 
@@ -79,17 +79,17 @@ Attempts **1** and **2** proved installer contracts (sign-off ALL READY) but **f
 
 - Replacing SBL Flutter app delivery or unrelated SBL product work.
 - Forcing ADK template kanban adoption without explicit adopter decision.
-- Kanban v3.2 package migration waves (tracked separately; F9 **DEFER**).
+- Kanban v3.2 package migration waves (tracked separately; **F9/F17 BLOCKER** — no installer path until package rewrite ships).
 
 ---
 
 ## Acceptance criteria
 
-- [ ] **AC1:** Attempt 3 executed or explicitly deferred with written rationale on this task doc.
-- [ ] **AC2:** SBL legacy E/S/T remains operational PM unless adopter signs off on migration.
-- [ ] **AC3:** No greenfield `--mode fresh` on SBL without explicit adopter opt-in.
-- [ ] **AC4:** Each attempt has diary + transcripts (+ sign-off JSON when applicable) under `adk-install-into-sbl/`.
-- [ ] **AC5:** New findings added to triage matrix with disposition (fix / doc / defer).
+- [x] **AC1:** Attempt 3 executed — dual-tree test bed built; migration blocked on v1 catalog ([attempt 03](../../../../../../adk-install-into-sbl/attempt-03/README.md)).
+- [x] **AC2:** SBL legacy E/S/T remains operational PM — `KB/PM_and_Portfolio/` restored and unchanged alongside ADK target tree.
+- [x] **AC3:** Kanban fresh ran only as **explicit** migration-test-bed step (phase 3b), not via orchestrator surprise.
+- [x] **AC4:** Attempt 03 maintainer index + FB package linked ([attempt-03](../../../../../../adk-install-into-sbl/attempt-03/README.md), [SUBMISSION](../../../../../../starborn-legacy-adk-feedback-attempt03/SUBMISSION.md)).
+- [x] **AC5:** Findings **F10–F17** merged into [triage matrix](../../../../knowledge/analysis/projects/starborn-legacy-install-triage-matrix.md); **F9** upgraded to **BLOCKER**.
 - [x] **AC6:** `validate_branch_context --strict` finds task doc for active E06:S09:T* releases (lowercase `epic-{nn}` / `story-{nn}-*` discovery in `locate_task_doc_for_version`).
 
 ---
@@ -100,7 +100,27 @@ Attempts **1** and **2** proved installer contracts (sign-off ALL READY) but **f
 |---|---------|---------|----------|
 | 1 | `v0.4.1063` tarball | Closed — UXR-025 intake; F4/F5 failures | [Diary](../../../../knowledge/analysis/projects/starborn-legacy-greenfield-install-diary.md) |
 | 2 | `main` @ `97ff2834` | **Failed intent** — orchestrator OK; wrong kanban | [Attempt 02](../../../../../../adk-install-into-sbl/attempt-02/greenfield-install-diary.md) |
-| 3 | TBD | Planned | — |
+| 3 | `v0.4.13` (`0.4.1098+1`) | **Partial** — dual kanban OK; **F17** v1 catalog blocks v3.2 migration test | [Attempt 03](../../../../../../adk-install-into-sbl/attempt-03/README.md) · [FB package](../../../../../../starborn-legacy-adk-feedback-attempt03/SUBMISSION.md) |
+
+---
+
+## Attempt 03 intake (2026-06-09)
+
+**FR-079 package accepted.** Key outcomes:
+
+1. **F9/F17 (BLOCKER):** Third proof that `--mode fresh` deploys v1 catalog (`E05 FR Implementation` on disk); no v3.2 installer on `v0.4.13` / `main`.
+2. **F10–F14 (DOC + CODE backlog):** Migration-test-bed sequence, orchestrator `--skip-kanban` / `use_kanban: false`, legacy `KB/` vs `docs/kanban/` terminology.
+3. **Positive:** Option A + manual 4-step sequence achieved dual-tree without orchestrator overwriting legacy PM.
+
+### Upstream backlog (prioritized)
+
+| Priority | ID | Action |
+|----------|-----|--------|
+| P0 | F9/F17 | INSTALL: `--mode fresh` = v1 catalog only; block/warn until v3.2 ships; sign-off v1 fingerprint |
+| P1 | F10 | `install_greenfield_path.py`: `--skip-kanban` or honor `use_kanban: false` |
+| P1 | F12–F14 | Document migration-test-bed profile (RW defer → legacy restore → kanban → RW mode C) |
+| P2 | F11/F16 | Post-install deferred-Kanban hint; clarify consumer layout vs v3.2 spec |
+| P2 | BR-086 | Sign-off pattern padding on fresh + mode C (attempt 03: NOT READY) |
 
 ---
 
