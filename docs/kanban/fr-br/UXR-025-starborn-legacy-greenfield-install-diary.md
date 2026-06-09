@@ -13,9 +13,10 @@ housekeeping_policy: keep
 **Submitted:** 2026-06-09  
 **Submitted By:** User (Starborn Legacy greenfield install session)  
 **Priority:** HIGH (Should Have — MoSCOW **S**)  
-**Status:** OPEN  
+**Status:** RESOLVED (v0.6.9.25+2 — orchestrator F4/F5 fix + triage matrix + install docs)  
 **Version:** v0.6.9.25+1 (intake RW -k)  
-**Implementing Task:** [E06:S09:T25](../epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T25-starborn-legacy-greenfield-install-diary-triage-uxr025.md)
+**Implementing Task:** [E06:S09:T25](../epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T25-starborn-legacy-greenfield-install-diary-triage-uxr025.md)  
+**Planning package:** [IPP-E06S09T25](../../implementation-cycles/IPP-E06S09T25-starborn-legacy-greenfield-install-diary-triage-uxr025.md)
 
 **Related:** [FR-080](FR-080-greenfield-installation-process.md) · [FR-081](FR-081-brownfield-modular-adopter-integration.md) · [FR-108](FR-108-install-setup-error-code-registry-and-emission.md) · [FR-111](FR-111-acquisition-layer-adk-error-codes-and-install-error-doc-hygiene.md) · [UXR-021](UXR-021-greenfield-install-github-packages-delivery-channel.md) · [starborn-legacy-greenfield-install-diary](../../knowledge/analysis/projects/starborn-legacy-greenfield-install-diary.md)
 
@@ -44,7 +45,7 @@ First **documented client greenfield install** of the lean `greenfield-install/`
 
 **Research Method:** Adopter install diary — phased execution on wiped working tree with session logs.  
 **Context:** Starborn Legacy `ai-dev-kit` branch; official [INSTALL_IN_YOUR_PROJECT.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/INSTALL_IN_YOUR_PROJECT.md) path.  
-**Artifact:** [starborn-legacy-greenfield-install-diary.md](../../knowledge/analysis/projects/starborn-legacy-greenfield-install-diary.md)
+**Artifact:** [starborn-legacy-greenfield-install-diary.md](../../knowledge/analysis/projects/starborn-legacy-greenfield-install-diary.md) · **Triage:** [starborn-legacy-install-triage-matrix.md](../../knowledge/analysis/projects/starborn-legacy-install-triage-matrix.md)
 
 ---
 
@@ -65,10 +66,10 @@ First **documented client greenfield install** of the lean `greenfield-install/`
 
 ## Acceptance Criteria (UXR closure)
 
-- [ ] **AC1:** Triage matrix published with disposition per finding (fix / doc / defer / adopter decision).
-- [ ] **AC2:** Actionable F4/F5 items filed or implemented with traceability (BR or task children).
-- [ ] **AC3:** `INSTALL_IN_YOUR_PROJECT.md` (or greenfield README) updated for tarball + `packages` symlink when using vendor-only layout.
-- [ ] **AC4:** Diary canonical path linked from UXR, task, and (if applicable) install feedback guide ([FR-079](FR-079-install-feedback-submission-path-and-governance.md)).
+- [x] **AC1:** Triage matrix published with disposition per finding (fix / doc / defer / adopter decision).
+- [x] **AC2:** Actionable F4/F5 items filed or implemented with traceability (BR or task children).
+- [x] **AC3:** `INSTALL_IN_YOUR_PROJECT.md` (or greenfield README) updated for tarball + vendor-root script resolution.
+- [x] **AC4:** Diary canonical path linked from UXR, task, and (if applicable) install feedback guide ([FR-079](FR-079-install-feedback-submission-path-and-governance.md)).
 
 ---
 

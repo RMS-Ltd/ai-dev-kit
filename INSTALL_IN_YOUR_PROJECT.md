@@ -105,6 +105,22 @@ python3 "vendor/ai-dev-kit/packages/frameworks/workflow-mgt/scripts/install_gree
   --non-interactive
 ```
 
+**Non-interactive RW (mode C):** pass a pre-filled YAML so the orchestrator does not prompt for project metadata:
+
+```bash
+python3 "vendor/ai-dev-kit/packages/frameworks/workflow-mgt/scripts/install_greenfield_path.py" \
+  --project-root "." \
+  --vendor-root "vendor/ai-dev-kit" \
+  --non-interactive \
+  --config config/greenfield-rw-install-input.yaml
+```
+
+The orchestrator resolves installer scripts under `--vendor-root` when `packages/frameworks/` is not present at the project root (no manual `packages` symlink required). A project-root `packages/` tree, if present, takes precedence.
+
+**Lean RW expectation:** greenfield mode C scaffolds `rw-config.yaml`, `.cursorrules`, and version/changelog stubs — it does **not** copy full `workflows/` YAML into your repo (those remain under the vendor tree). Validators use `rw-config.yaml` `scripts_path`.
+
+**Adopter scope:** completing the greenfield install exercise does not require adopting ADK template kanban as your operational PM layer. Projects with legacy kanban may defer integration per [FR-081](docs/kanban/fr-br/FR-081-brownfield-modular-adopter-integration.md) (see [UXR-025](docs/kanban/fr-br/UXR-025-starborn-legacy-greenfield-install-diary.md) / [triage matrix](docs/knowledge/analysis/projects/starborn-legacy-install-triage-matrix.md)).
+
 Preflight (recommended before first install):
 
 ```bash
@@ -114,7 +130,23 @@ python3 vendor/ai-dev-kit/packages/frameworks/workflow-mgt/scripts/verify_vendor
 
 ### Acquire the lean tree
 
-1. **Sparse submodule (recommended):** submodule `RMS-Ltd/ai-dev-kit` and cone only `greenfield-install/`:
+**Clean working tree:** `git submodule add` requires a committed `.gitmodules` and clean index. After wiping or partially deleting vendor paths, run `git status` and restore or commit before submodule add ([UXR-025](docs/kanban/fr-br/UXR-025-starborn-legacy-greenfield-install-diary.md) F1).
+
+**Disk-constrained hosts:** prefer the **release tarball** (item 2) over sparse clone when free space is tight — tarball extract is ~1–2 MiB compressed / ~10 MiB expanded vs full git pack history (UXR-025 F2).
+
+1. **Release tarball (recommended when disk is tight or git is blocked):** download `greenfield-install-v{semver}.tar.gz` + `.sha256` from a [release tag](https://github.com/RMS-Ltd/ai-dev-kit/releases) (FR-110-F5 / [ADR-021](docs/architecture/standards-and-adrs/ADR-021-greenfield-install-ghcr-delivery-channel.md)):
+
+   ```bash
+   gh release download v0.4.1063 --repo RMS-Ltd/ai-dev-kit \
+     -p 'greenfield-install-v0.4.1063.tar.gz' -D /tmp/adk-dl
+   mkdir -p vendor/ai-dev-kit
+   tar -xzf /tmp/adk-dl/greenfield-install-v0.4.1063.tar.gz \
+     -C vendor/ai-dev-kit --strip-components=1
+   python3 vendor/ai-dev-kit/packages/frameworks/workflow-mgt/scripts/verify_vendor_tree.py \
+     --vendor-root vendor/ai-dev-kit
+   ```
+
+2. **Sparse submodule:** submodule `RMS-Ltd/ai-dev-kit` and cone only `greenfield-install/` (needs adequate disk for git objects):
 
    ```bash
    git submodule add https://github.com/RMS-Ltd/ai-dev-kit.git vendor/ai-dev-kit
@@ -123,9 +155,9 @@ python3 vendor/ai-dev-kit/packages/frameworks/workflow-mgt/scripts/verify_vendor
    git sparse-checkout set greenfield-install
    ```
 
-2. **Copy:** extract or copy `greenfield-install/` from a [release tag](https://github.com/RMS-Ltd/ai-dev-kit/releases) into `vendor/ai-dev-kit/`. Tagged releases may include `greenfield-install-v{semver}.tar.gz` + `.sha256` (FR-110-F5 / [ADR-021](docs/architecture/standards-and-adrs/ADR-021-greenfield-install-ghcr-delivery-channel.md)).
+3. **Copy:** extract or copy `greenfield-install/` from a release tag into `vendor/ai-dev-kit/` (same bytes as tarball).
 
-3. **GitHub Container Registry (alternate):** when submodules are blocked, pull the lean tree from `ghcr.io` and copy into `vendor/ai-dev-kit/` (same bytes as `greenfield-install/`; see [Packages](https://github.com/RMS-Ltd/ai-dev-kit/packages)):
+4. **GitHub Container Registry (alternate):** when submodules are blocked, pull the lean tree from `ghcr.io` and copy into `vendor/ai-dev-kit/` (same bytes as `greenfield-install/`; see [Packages](https://github.com/RMS-Ltd/ai-dev-kit/packages)):
 
    ```bash
    # Replace v0.4.963 with the external SemVer core from the release you are pinning.
@@ -138,9 +170,9 @@ python3 vendor/ai-dev-kit/packages/frameworks/workflow-mgt/scripts/verify_vendor
 
    Optional digest pin: `docker pull ghcr.io/rms-ltd/ai-dev-kit-greenfield@sha256:…`
 
-4. **Legacy sparse path:** `git sparse-checkout set packages/frameworks` still works on older tags; prefer `greenfield-install/` on current tags.
+5. **Legacy sparse path:** `git sparse-checkout set packages/frameworks` still works on older tags; prefer `greenfield-install/` on current tags.
 
-5. **Update upstream:** `cd vendor/ai-dev-kit && git fetch --tags && git checkout tags/v0.4.963` (use [latest release](https://github.com/RMS-Ltd/ai-dev-kit/releases)); for registry pins, `docker pull ghcr.io/rms-ltd/ai-dev-kit-greenfield:v0.4.963` (or newer SemVer core).
+6. **Update upstream:** `cd vendor/ai-dev-kit && git fetch --tags && git checkout tags/v0.4.963` (use [latest release](https://github.com/RMS-Ltd/ai-dev-kit/releases)); for registry pins, `docker pull ghcr.io/rms-ltd/ai-dev-kit-greenfield:v0.4.963` (or newer SemVer core).
 
 **Disk budget:** ~10–11 MiB for `greenfield-install/` (see `FOOTPRINT.md` in-tree) + git pack history (sparse checkout reduces working tree).
 

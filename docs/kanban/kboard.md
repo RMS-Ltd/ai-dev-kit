@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Board
 
-**Last Updated:** 2026-06-09 (RW -k E06:S09:T25 — UXR-025 intake)
-**Version:** v0.6.9.25+1
+**Last Updated:** 2026-06-09 (RW: E06:S09:T25)
+**Version:** v0.6.9.25+2
 
 **Active board contract:** **Sole active MoSCOW board** ([ADR-018](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/architecture/standards-and-adrs/ADR-018-single-kanban-board-consolidation.md)). Rows are **live work** (TODO / IN PROGRESS / OPEN / WAITING / PERPETUAL) plus filed **Could Have** backlog. **Verification (V)** band holds task-shipped / FBU-open items (`⏳ WAITING`). Remove **terminal** rows and archive prose (use [`kanban-completed.md`](kanban-completed.md) / [`intake-completed.md`](intake-completed.md)).
 
@@ -26,8 +26,6 @@ housekeeping_policy: keep
 ### Must Have (M) - Critical Tasks
 
 ### Should Have (S) - Important Tasks
-
-- **E06:S09:T25** – Starborn Legacy greenfield install diary — triage & upstream reaction - 📋 TODO (HIGH, **v0.6.9.25+1** RW -k intake — F4 orchestrator + F5 vendor paths) | [Task](epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T25-starborn-legacy-greenfield-install-diary-triage-uxr025.md) | [UXR-025](fr-br/UXR-025-starborn-legacy-greenfield-install-diary.md) | [Diary](../knowledge/analysis/projects/starborn-legacy-greenfield-install-diary.md) | —No IPP— | Last modified: 2026-06-09 08:50 UTC
 
 - **E05:S09:T15** – Docusaurus adopter-public publish allowlist (FR-114) - 📋 TODO (HIGH, **v0.5.9.15+1** RW -k intake) | [Task](epics/epic-05/story-09-docusaurus-documentation-portal/T15-docusaurus-adopter-public-publish-allowlist-fr114.md) | [FR-114](fr-br/FR-114-split-documentation-surfaces-docusaurus-public-notion-maintainer-kb.md) | [—IPP—](../../implementation-cycles/IPP-E05S09T15-docusaurus-adopter-public-publish-allowlist-fr114.md) | Last modified: 2026-06-06 16:16 UTC
 
@@ -77,7 +75,7 @@ _All perpetual lanes under **E02:S16** only ([IPP-E02S16T24](../../implementatio
 
 - **E02:S16:T05** – GitHub Actions CI health (Perpetual) - 🔄 PERPETUAL (**v0.8.3.15+4**) - [Task](epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T05-github-actions-ci-health-perpetual.md) | [FR-112](fr-br/FR-112-perpetual-github-ci-and-security-health-lanes.md) | —No IPP— | Last modified: 2026-06-07 19:01 UTC
 
-- **E02:S16:T06** – GitHub Security & Code Quality health (Perpetual) - 🔄 PERPETUAL (**v0.8.3.16+9**) - [Task](epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T06-github-security-code-quality-health-perpetual.md) | [FR-112](fr-br/FR-112-perpetual-github-ci-and-security-health-lanes.md) | [—IPP—](../../implementation-cycles/IPP-E08S03T16-github-security-code-quality-health-perpetual-fr112.md) | Last modified: 2026-06-08 13:31 UTC
+- **E02:S16:T06** – GitHub Security & Code Quality health (Perpetual) - 🔄 PERPETUAL (**v0.8.3.16+9**) - [Task](epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T06-github-security-code-quality-health-perpetual.md) | [FR-112](fr-br/FR-112-perpetual-github-ci-and-security-health-lanes.md) | [—IPP—](../../implementation-cycles/IPP-E02S16T06-ukw-rp-flag-fr085.md) | Last modified: 2026-06-08 13:31 UTC
 
 ### Won't Have (W) - Deferred Tasks
 

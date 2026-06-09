@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Completed Tasks
 
-**Last Updated:** 2026-06-08 (RW: E21:S03:T07 Phase 3 translation locale E2E tests)
-**Version:** v0.21.3.7+1
+**Last Updated:** 2026-06-09 (RW E06:S09:T25 — Starborn install diary reaction)
+**Version:** v0.6.9.25+2
 
 > **For MoSCOW prioritized tasks, see:** [`kboard.md`](kboard.md)  
 > **For completed FR/BR/UXR intake items, see:** [`intake-completed.md`](intake-completed.md)
@@ -19,6 +19,11 @@ housekeeping_policy: keep
 ---
 
 ## 20 Most Recently Completed Tasks
+
+#### **RW (2026-06-09)** — E06:S09:T25 @ **v0.6.9.25+2** (Starborn Legacy install diary — UXR-025)
+
+- **[E06:S09:T25](epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T25-starborn-legacy-greenfield-install-diary-triage-uxr025.md)** — Triage matrix + greenfield orchestrator F4/F5 fix (`resolve_frameworks_base`, `--config`, `--non-interactive` forward) + install docs.
+  **Completed:** `2026-06-09T09:11:54Z` | **Version:** `v0.6.9.25+2` | **Agent:** `RW E06:S09:T25 --art` | [UXR-025](fr-br/UXR-025-starborn-legacy-greenfield-install-diary.md) | [IPP](../../implementation-cycles/IPP-E06S09T25-starborn-legacy-greenfield-install-diary-triage-uxr025.md) | [Triage](../../knowledge/analysis/projects/starborn-legacy-install-triage-matrix.md)
 
 #### **RW (2026-06-08)** — E21:S03:T07 @ **v0.21.3.7+1** (Phase 3 translation locale E2E tests; S03 closed)
 

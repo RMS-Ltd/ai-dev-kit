@@ -14,6 +14,7 @@ import argparse
 import subprocess
 import sys
 from pathlib import Path
+from typing import List, Optional
 
 _SCRIPTS_DIR = Path(__file__).resolve().parent
 if str(_SCRIPTS_DIR) not in sys.path:
@@ -35,6 +36,78 @@ try:
 except ImportError:
     def run_verify(vendor_root, *, tarball=None, sha256=None, emit=True):  # type: ignore[misc]
         return 0, None
+
+
+def resolve_frameworks_base(project_root: Path, vendor_root: Path) -> Path:
+    """
+    Directory whose ``packages/frameworks/`` tree hosts installer scripts.
+
+    Project-root ``packages/frameworks`` wins when present; otherwise use
+    ``vendor_root`` when it contains the lean vendor layout (UXR-025 F5).
+    """
+    project_fw = project_root / "packages" / "frameworks"
+    if project_fw.is_dir():
+        return project_root
+    vendor_fw = vendor_root / "packages" / "frameworks"
+    if vendor_fw.is_dir():
+        return vendor_root
+    return project_root
+
+
+def build_rw_command(
+    frameworks_base: Path,
+    *,
+    project_root: Path,
+    rw_mode: str,
+    config: Optional[Path],
+    non_interactive: bool,
+) -> List[str]:
+    rw_script = (
+        frameworks_base
+        / "packages"
+        / "frameworks"
+        / "workflow-mgt"
+        / "scripts"
+        / "install_release_workflow.py"
+    )
+    cmd = [
+        sys.executable,
+        str(rw_script),
+        "--mode",
+        rw_mode,
+        "--project-root",
+        str(project_root),
+    ]
+    if config is not None:
+        cmd.extend(["--config", str(config)])
+    if non_interactive:
+        cmd.append("--non-interactive")
+    return cmd
+
+
+def build_kanban_command(
+    frameworks_base: Path,
+    *,
+    kanban_mode: str,
+    non_interactive: bool,
+) -> List[str]:
+    kanban_script = (
+        frameworks_base
+        / "packages"
+        / "frameworks"
+        / "kanban"
+        / "scripts"
+        / "install_kanban_framework.py"
+    )
+    cmd = [
+        sys.executable,
+        str(kanban_script),
+        "--mode",
+        kanban_mode,
+    ]
+    if non_interactive:
+        cmd.append("--force")
+    return cmd
 
 
 def run_step(command: list[str], project_root: Path, dry_run: bool) -> int:
@@ -92,7 +165,7 @@ def main() -> int:
     parser.add_argument(
         "--non-interactive",
         action="store_true",
-        help="Skip checkpoint prompts and use --order directly.",
+        help="Skip checkpoint prompts; forward non-interactive flags to child installers.",
     )
     parser.add_argument(
         "--dry-run",
@@ -110,9 +183,14 @@ def main() -> int:
         help="Mode forwarded to install_kanban_framework.py (default: fresh).",
     )
     parser.add_argument(
+        "--config",
+        default=None,
+        help="RW install config YAML forwarded to install_release_workflow.py.",
+    )
+    parser.add_argument(
         "--vendor-root",
         default=None,
-        help="Lean vendor tree root for preflight (default: project-root).",
+        help="Lean vendor tree root for preflight and installer script resolution.",
     )
     parser.add_argument(
         "--no-verify-vendor",
@@ -136,23 +214,30 @@ def main() -> int:
             print("See framework-dependency-troubleshooting-guide.md § Install error codes (ADK-*).")
             return vcode
 
+    frameworks_base = resolve_frameworks_base(project_root, vendor_root)
+    if frameworks_base == vendor_root and vendor_root != project_root:
+        print(f"\nFramework scripts resolved under vendor tree: {vendor_root}")
+
+    config_path = Path(args.config).resolve() if args.config else None
+    if config_path is not None and not config_path.is_file():
+        print(f"RW config file not found: {config_path}")
+        return 1
+
     chosen_order = choose_order(args.non_interactive, args.order)
     print(f"\nChosen order: {chosen_order}")
 
-    rw_cmd = [
-        sys.executable,
-        "packages/frameworks/workflow-mgt/scripts/install_release_workflow.py",
-        "--mode",
-        args.rw_mode,
-        "--project-root",
-        str(project_root),
-    ]
-    kanban_cmd = [
-        sys.executable,
-        "packages/frameworks/kanban/scripts/install_kanban_framework.py",
-        "--mode",
-        args.kanban_mode,
-    ]
+    rw_cmd = build_rw_command(
+        frameworks_base,
+        project_root=project_root,
+        rw_mode=args.rw_mode,
+        config=config_path,
+        non_interactive=args.non_interactive,
+    )
+    kanban_cmd = build_kanban_command(
+        frameworks_base,
+        kanban_mode=args.kanban_mode,
+        non_interactive=args.non_interactive,
+    )
 
     ordered_steps = [rw_cmd, kanban_cmd] if chosen_order == "rw-first" else [kanban_cmd, rw_cmd]
 
@@ -173,4 +258,3 @@ def main() -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
-
