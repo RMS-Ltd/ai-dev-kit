@@ -3,15 +3,14 @@
 - **Contract:** FR-092 Wave 7 release-readiness gate (Gates 1-7: governance / predecessors / parity / corpus / stage / stamps / four-surface)
 - **Invocation context:** rw_step_9_release_readiness
 - **Release scope:** E5:S8:T6 (v0.5.8.6+1)
-- **Timestamp (UTC):** 2026-06-09 16:36 UTC
+- **Timestamp (UTC):** 2026-06-09 16:37 UTC
 - **Four-surface report:** `/Users/rms/Documents/projects/ai-dev-kit/docs/changelog-and-release-notes/changelog-archive/four-surface-reports/rw-step7-four-surface-report-v0-5-8-6plus1-e5s8t6.json`
 
 ## Overall verdict
 
-- **Status:** BLOCK — RW MUST NOT commit. See blocking failures below.
-  - Gate 5: Stage-set completeness (BR-070)
+- **Status:** PASS — RW MAY proceed past Step 9.
 
-- Gates: 10/11 passed (1 failed, 0 waived).
+- Gates: 11/11 passed (0 failed, 0 waived).
 
 ## Per-gate detail
 
@@ -60,15 +59,12 @@
 
 ### Gate 5 — Stage-set completeness (BR-070)
 
-- Status: **FAIL** (severity: `block`)
-- Summary: BR-070 violation: 2 Step-7 path(s) are modified-unstaged, untracked, or missing.
-- Findings:
-  - `epic_doc` :: `/Users/rms/Documents/projects/ai-dev-kit/docs/kanban/epics/epic-05/epic-05.md` :: modified-unstaged — Step 7 mutated this file but Step 8 did not stage the change. BR-070 stage-set completeness violation — RW MUST BLOCK. Stage with `git add -A` and re-run.
-  - `story_doc` :: `/Users/rms/Documents/projects/ai-dev-kit/docs/kanban/epics/epic-05/story-08-knowledge-base.md` :: modified-unstaged — Step 7 mutated this file but Step 8 did not stage the change. BR-070 stage-set completeness violation — RW MUST BLOCK. Stage with `git add -A` and re-run.
+- Status: **PASS** (severity: `block`)
+- Summary: BR-070 satisfied: all 3 Step-7 path(s) are staged or unchanged.
 - Evidence:
   - `four_surface_report`: `/Users/rms/Documents/projects/ai-dev-kit/docs/changelog-and-release-notes/changelog-archive/four-surface-reports/rw-step7-four-surface-report-v0-5-8-6plus1-e5s8t6.json`
   - `paths_checked`: `3`
-  - `violations`: `2`
+  - `violations`: `0`
   - `release_scope`: `{'epic': 5, 'story': 8, 'task': 6, 'task_id': 'E5:S8:T6', 'version_string': 'v0.5.8.6+1'}`
 
 ### Gate 6 — Forensic stamp evidence (UXR-009)

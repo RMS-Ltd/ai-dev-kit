@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Completed Tasks
 
-**Last Updated:** 2026-06-09 (RW E05:S08:T06 — FR-121 wave 2 bootstrap)
-**Version:** v0.5.8.6+1
+**Last Updated:** 2026-06-09 (RW E05:S08:T07 — FR-121 wave 3 Obsidian install profiles)
+**Version:** v0.5.8.7+1
 
 > **For MoSCOW prioritized tasks, see:** [`kboard.md`](kboard.md)  
 > **For completed FR/BR/UXR intake items, see:** [`intake-completed.md`](intake-completed.md)
@@ -19,6 +19,10 @@ housekeeping_policy: keep
 ---
 
 ## 20 Most Recently Completed Tasks
+
+#### **RW (2026-06-09)** — E05:S08:T07 @ **v0.5.8.7+1** (FR-121 wave 3 — optional Obsidian editor profiles at greenfield install)
+
+- **[E05:S08:T07](epics/epic-05/story-08-knowledge-base/T07-optional-obsidian-editor-profiles-greenfield-install-fr121.md)** — `--maintainer-editor-profile` installer flag; `documentation_surfaces` + `maintainer_editor_profile` in rw-config; Obsidian team/personal templates; `docs/maintainer/OBSIDIAN.md`. [FR-121](fr-br/FR-121-git-internal-maintainer-kb-oss-documentation-surfaces.md) · [—IPP—](../../implementation-cycles/IPP-E05S08T07-optional-obsidian-editor-profiles-greenfield-install-fr121.md)
 
 #### **RW (2026-06-09)** — E05:S08:T06 @ **v0.5.8.6+1** (FR-121 wave 2 — ADR-026 + git-maintainer bootstrap)
 

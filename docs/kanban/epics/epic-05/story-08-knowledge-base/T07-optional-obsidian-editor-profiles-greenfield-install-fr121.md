@@ -9,11 +9,11 @@ housekeeping_policy: keep
 # Epic 5, Story 8, Task 7: Optional Obsidian editor profiles — greenfield install (**FR-121**)
 
 **Task ID:** E05:S08:T07  
-**Status:** 📋 TODO  
+**Status:** ✅ COMPLETE (v0.5.8.7+1)  
 **Priority:** MEDIUM  
 **Created:** 2026-06-09  
-**Last updated:** 2026-06-09 (FR-121 intake)  
-**Version:** — (pending RW -k)  
+**Last updated:** 2026-06-09 (v0.5.8.7+1 — FR-121 wave 3 Obsidian install profiles)  
+**Version:** v0.5.8.7+1  
 **Code:** E05S08T07
 
 Publication Status: NOT_APPLICABLE
@@ -34,6 +34,7 @@ Wave 3 of FR-121: add **optional** `maintainer_editor_profile` to greenfield / R
 
 ## Input
 
+- [IPP-E05S08T07 — Optional Obsidian editor profiles (greenfield install)](../../../../implementation-cycles/IPP-E05S08T07-optional-obsidian-editor-profiles-greenfield-install-fr121.md)
 - [FR-121](../../../fr-br/FR-121-git-internal-maintainer-kb-oss-documentation-surfaces.md)
 - [E05:S08:T06](T06-adr-026-git-maintainer-authoring-bootstrap-fr121.md) (`rw-config` schema)
 - [FR-080](../../../../fr-br/FR-080-greenfield-installation-process.md)
@@ -54,10 +55,10 @@ Wave 3 of FR-121: add **optional** `maintainer_editor_profile` to greenfield / R
 
 ## Acceptance Criteria
 
-- [ ] Default install: no Obsidian files; `maintainer_editor_profile: none`.
-- [ ] `obsidian-personal`: quick-start only; `.obsidian/` gitignored.
-- [ ] `obsidian-team`: stable config copied; `workspace.json` / cache gitignored.
-- [ ] Install docs describe all three options; git remains maintainer KB SoT in every case.
+- [x] Default install: no Obsidian files; `maintainer_editor_profile: none`.
+- [x] `obsidian-personal`: quick-start only; `.obsidian/` gitignored.
+- [x] `obsidian-team`: stable config copied; `workspace.json` / cache gitignored.
+- [x] Install docs describe all three options; git remains maintainer KB SoT in every case.
 
 ---
 
@@ -69,7 +70,15 @@ Wave 3 of FR-121: add **optional** `maintainer_editor_profile` to greenfield / R
 
 ---
 
+## Version Anchor
+
+**Forensic marker:** ✅ COMPLETE (**v0.5.8.7+1** — FR-121 wave 3: Obsidian editor profiles at install)
+
+---
+
 ## References
 
+- [IPP-E05S08T07 — Optional Obsidian editor profiles (greenfield install)](../../../../implementation-cycles/IPP-E05S08T07-optional-obsidian-editor-profiles-greenfield-install-fr121.md)
 - [FR-121](../../../fr-br/FR-121-git-internal-maintainer-kb-oss-documentation-surfaces.md)
+- [docs/maintainer/OBSIDIAN.md](../../../../maintainer/OBSIDIAN.md)
 - [INSTALL_IN_YOUR_PROJECT.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/INSTALL_IN_YOUR_PROJECT.md)

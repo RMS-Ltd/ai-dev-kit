@@ -12,8 +12,8 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** [TBD]  
 **Created:** 2025-12-18  
-**Last updated:** 2026-06-09 (v0.5.8.6+1 – Kanban documentation setup)
-**Version:** v0.5.8.6+1
+**Last updated:** 2026-06-09 (v0.5.8.7+1 – Kanban documentation setup)
+**Version:** v0.5.8.7+1
 **Code:** E5S08
 
 **Note:** This story was renumbered from S07 to S08 as part of the repository story abstract space resolution (E09:S01:T08).
@@ -45,7 +45,7 @@ housekeeping_policy: keep
   - Task: [`T06-adr-026-git-maintainer-authoring-bootstrap-fr121`](story-08-knowledge-base/T06-adr-026-git-maintainer-authoring-bootstrap-fr121.md)
 
 
-- [ ] **E05:S08:T07 – Optional Obsidian editor profiles — greenfield install ([FR-121](../../fr-br/FR-121-git-internal-maintainer-kb-oss-documentation-surfaces.md))** - 📋 TODO (MEDIUM, wave 3)
+- [x] **E05:S08:T07 – Optional Obsidian editor profiles — greenfield install ([FR-121](../../fr-br/FR-121-git-internal-maintainer-kb-oss-documentation-surfaces.md))** - ✅ COMPLETE (**v0.5.8.7+1**) — [—IPP—](../../implementation-cycles/IPP-E05S08T07-optional-obsidian-editor-profiles-greenfield-install-fr121.md)
   - Task: [`T07-optional-obsidian-editor-profiles-greenfield-install-fr121`](story-08-knowledge-base/T07-optional-obsidian-editor-profiles-greenfield-install-fr121.md)
 
 ## Overview

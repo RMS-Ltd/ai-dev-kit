@@ -124,3 +124,12 @@ keys:
   installer.run.next_copy_validators_short: 3. Copy validation scripts to your scripts_path
     if not already present
   installer.run.next_test_rw_short: 4. Test RW by typing 'RW' in your AI assistant
+  installer.wizard.editor_profile_heading: '📝 Maintainer editor profile (optional):'
+  installer.wizard.editor_profile_none: '  none — Git + IDE only (default)'
+  installer.wizard.editor_profile_personal: '  obsidian-personal — quick-start doc;
+    .obsidian/ gitignored'
+  installer.wizard.editor_profile_team: '  obsidian-team — shared stable .obsidian/
+    config in git'
+  installer.wizard.editor_profile_select: Maintainer editor profile
+  installer.wizard.editor_profile_invalid: '  ❌ Invalid profile. Choose: none, obsidian-personal,
+    or obsidian-team.'

@@ -90,7 +90,7 @@ Adopter-public allowlist only. Exclude maintainer trees from portal CI. Policy d
 
 ### 5. Obsidian (editor profile only)
 
-Obsidian may improve maintainer editing UX as a **local editor** on the git vault. It is never authoritative. Greenfield install wiring is **E05:S08:T07**; `maintainer_editor_profile: none` until then.
+Obsidian may improve maintainer editing UX as a **local editor** on the git vault. It is never authoritative. Greenfield / RW install sets `maintainer_editor_profile` (`none` default; `obsidian-personal`; `obsidian-team`). Operator guide: [`docs/maintainer/OBSIDIAN.md`](../../maintainer/OBSIDIAN.md). Implemented in [E05:S08:T07](../../kanban/epics/epic-05/story-08-knowledge-base/T07-optional-obsidian-editor-profiles-greenfield-install-fr121.md).
 
 ### 6. Notion (optional archive)
 
@@ -113,7 +113,7 @@ documentation_surfaces:
     allowlist_ref: portal/docusaurus.config.js
   external_kb:
     provider: none  # none | notion
-maintainer_editor_profile: none  # none | obsidian-personal | obsidian-team (T07)
+maintainer_editor_profile: none  # none | obsidian-personal | obsidian-team
 ```
 
 ---

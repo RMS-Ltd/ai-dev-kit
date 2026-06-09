@@ -61,6 +61,7 @@ def build_rw_command(
     rw_mode: str,
     config: Optional[Path],
     non_interactive: bool,
+    maintainer_editor_profile: Optional[str] = None,
 ) -> List[str]:
     rw_script = (
         frameworks_base
@@ -82,6 +83,8 @@ def build_rw_command(
         cmd.extend(["--config", str(config)])
     if non_interactive:
         cmd.append("--non-interactive")
+    if maintainer_editor_profile is not None:
+        cmd.extend(["--maintainer-editor-profile", maintainer_editor_profile])
     return cmd
 
 
@@ -197,6 +200,13 @@ def main() -> int:
         action="store_true",
         help="Skip ADK-I05 vendor tree preflight (FR-111).",
     )
+    parser.add_argument(
+        "--maintainer-editor-profile",
+        type=str,
+        choices=("none", "obsidian-personal", "obsidian-team"),
+        default=None,
+        help="Forward maintainer editor profile to RW installer (FR-121 / E05:S08:T07).",
+    )
     args = parser.parse_args()
 
     project_root = Path(args.project_root).resolve()
@@ -232,6 +242,7 @@ def main() -> int:
         rw_mode=args.rw_mode,
         config=config_path,
         non_interactive=args.non_interactive,
+        maintainer_editor_profile=args.maintainer_editor_profile,
     )
     kanban_cmd = build_kanban_command(
         frameworks_base,

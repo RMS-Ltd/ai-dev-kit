@@ -15,6 +15,7 @@ Usage:
     --config: Path to existing rw-config.yaml (skips questions)
     --mode: Preset mode (a=Simple RW, b=RW+Versioning, c=Full Stack)
     --check-deps: Verify installer dependencies and exit (0=OK, 1=missing)
+    --maintainer-editor-profile: none | obsidian-personal | obsidian-team (FR-121; default none)
 """
 
 import argparse
@@ -191,6 +192,21 @@ def get_yaml():
 SCRIPT_DIR = Path(__file__).parent
 FRAMEWORK_ROOT = SCRIPT_DIR.parent  # workflow mgt directory
 CURSORRULES_TEMPLATE = FRAMEWORK_ROOT / "cursorrules-rw-trigger-section.md"
+OBSIDIAN_TEAM_TEMPLATE_DIR = FRAMEWORK_ROOT / "templates" / "obsidian-team"
+OBSIDIAN_PERSONAL_QUICKSTART_TEMPLATE = (
+    FRAMEWORK_ROOT / "templates" / "obsidian-personal" / "OBSIDIAN-QUICKSTART.md"
+)
+MAINTAINER_EDITOR_PROFILES = ("none", "obsidian-personal", "obsidian-team")
+DEFAULT_MAINTAINER_EDITOR_PROFILE = "none"
+OBSIDIAN_PERSONAL_QUICKSTART_REL = "docs/maintainer/OBSIDIAN-QUICKSTART.md"
+OBSIDIAN_TEAM_GITIGNORE_LINES = (
+    "# Obsidian — team profile (E05:S08:T07); stable config under .obsidian/ is committed",
+    ".obsidian/workspace.json",
+    ".obsidian/workspace-mobile.json",
+    ".obsidian/cache/",
+    ".obsidian/plugins/",
+)
+OBSIDIAN_PERSONAL_GITIGNORE_LINES = (".obsidian/",)
 
 _ENV_LOG_PATH_ENV_VAR = "AI_DEV_KIT_INSTALL_LOG_PATH"
 
@@ -818,6 +834,142 @@ def detect_project_name(project_root: Path) -> str:
     return project_root.name
 
 
+def normalize_maintainer_editor_profile(value: Optional[str]) -> str:
+    """Return a valid maintainer_editor_profile or raise ValueError."""
+    if value is None or value == "":
+        return DEFAULT_MAINTAINER_EDITOR_PROFILE
+    normalized = value.strip().lower()
+    if normalized not in MAINTAINER_EDITOR_PROFILES:
+        allowed = ", ".join(MAINTAINER_EDITOR_PROFILES)
+        raise ValueError(f"Invalid maintainer_editor_profile '{value}' (allowed: {allowed})")
+    return normalized
+
+
+def merge_gitignore_lines(project_root: Path, lines: Tuple[str, ...], *, dry_run: bool = False) -> bool:
+    """Append gitignore lines idempotently. Returns True if file was modified."""
+    gitignore_path = project_root / ".gitignore"
+    existing = ""
+    if gitignore_path.is_file():
+        existing = gitignore_path.read_text(encoding="utf-8")
+    missing = [line for line in lines if line not in existing]
+    if not missing:
+        return False
+    suffix = "\n".join(missing)
+    if existing and not existing.endswith("\n"):
+        suffix = "\n" + suffix
+    if existing:
+        suffix = "\n" + suffix
+    if dry_run:
+        return True
+    gitignore_path.write_text(existing + suffix + "\n", encoding="utf-8")
+    return True
+
+
+def apply_maintainer_editor_profile(
+    project_root: Path,
+    profile: str,
+    *,
+    dry_run: bool = False,
+) -> ScaffoldResult:
+    """Scaffold Obsidian editor profile files and gitignore rules (FR-121 / E05:S08:T07)."""
+    profile = normalize_maintainer_editor_profile(profile)
+    if profile == "none":
+        return ScaffoldResult(status="skipped", message="maintainer_editor_profile: none")
+
+    if profile == "obsidian-personal":
+        dest = project_root / OBSIDIAN_PERSONAL_QUICKSTART_REL
+        if not OBSIDIAN_PERSONAL_QUICKSTART_TEMPLATE.is_file():
+            return ScaffoldResult(
+                status="error",
+                message=f"Template missing: {OBSIDIAN_PERSONAL_QUICKSTART_TEMPLATE}",
+            )
+        if dry_run:
+            merge_gitignore_lines(
+                project_root, OBSIDIAN_PERSONAL_GITIGNORE_LINES, dry_run=True
+            )
+            return ScaffoldResult(
+                status="dry_run",
+                rel_path=OBSIDIAN_PERSONAL_QUICKSTART_REL,
+                message=f"Would create {OBSIDIAN_PERSONAL_QUICKSTART_REL}",
+            )
+        dest.parent.mkdir(parents=True, exist_ok=True)
+        if not dest.exists():
+            dest.write_text(
+                OBSIDIAN_PERSONAL_QUICKSTART_TEMPLATE.read_text(encoding="utf-8"),
+                encoding="utf-8",
+            )
+        merge_gitignore_lines(project_root, OBSIDIAN_PERSONAL_GITIGNORE_LINES)
+        return ScaffoldResult(
+            status="created",
+            rel_path=OBSIDIAN_PERSONAL_QUICKSTART_REL,
+            message=f"✅ Obsidian personal profile: {OBSIDIAN_PERSONAL_QUICKSTART_REL}",
+        )
+
+    # obsidian-team
+    if not OBSIDIAN_TEAM_TEMPLATE_DIR.is_dir():
+        return ScaffoldResult(
+            status="error",
+            message=f"Template directory missing: {OBSIDIAN_TEAM_TEMPLATE_DIR}",
+        )
+    obsidian_dir = project_root / ".obsidian"
+    if dry_run:
+        merge_gitignore_lines(project_root, OBSIDIAN_TEAM_GITIGNORE_LINES, dry_run=True)
+        return ScaffoldResult(
+            status="dry_run",
+            rel_path=".obsidian/",
+            message="Would copy obsidian-team template to .obsidian/",
+        )
+    obsidian_dir.mkdir(parents=True, exist_ok=True)
+    for src in OBSIDIAN_TEAM_TEMPLATE_DIR.iterdir():
+        if not src.is_file():
+            continue
+        dest = obsidian_dir / src.name
+        if not dest.exists():
+            dest.write_text(src.read_text(encoding="utf-8"), encoding="utf-8")
+    merge_gitignore_lines(project_root, OBSIDIAN_TEAM_GITIGNORE_LINES)
+    return ScaffoldResult(
+        status="created",
+        rel_path=".obsidian/",
+        message="✅ Obsidian team profile: stable .obsidian/ config scaffolded",
+    )
+
+
+def prompt_maintainer_editor_profile(project_root: Path) -> str:
+    """Interactive prompt for maintainer editor profile."""
+    print("\n" + _msg(project_root, "installer.wizard.editor_profile_heading"))
+    print(_msg(project_root, "installer.wizard.editor_profile_none"))
+    print(_msg(project_root, "installer.wizard.editor_profile_personal"))
+    print(_msg(project_root, "installer.wizard.editor_profile_team"))
+    while True:
+        choice = prompt_question(
+            _msg(project_root, "installer.wizard.editor_profile_select"),
+            default=DEFAULT_MAINTAINER_EDITOR_PROFILE,
+            project_root=project_root,
+        ).strip().lower()
+        try:
+            return normalize_maintainer_editor_profile(choice)
+        except ValueError:
+            print(_msg(project_root, "installer.wizard.editor_profile_invalid"))
+
+
+def resolve_maintainer_editor_profile(
+    config: Dict,
+    *,
+    project_root: Path,
+    cli_profile: Optional[str],
+    non_interactive: bool,
+    interactive_wizard: bool,
+) -> str:
+    """Determine profile from CLI, config dict, or interactive prompt."""
+    if cli_profile is not None:
+        return normalize_maintainer_editor_profile(cli_profile)
+    if config.get("maintainer_editor_profile") is not None:
+        return normalize_maintainer_editor_profile(str(config["maintainer_editor_profile"]))
+    if non_interactive or not interactive_wizard:
+        return DEFAULT_MAINTAINER_EDITOR_PROFILE
+    return prompt_maintainer_editor_profile(project_root)
+
+
 def find_version_file(project_root: Path) -> Optional[str]:
     """Try to find version file."""
     common_patterns = [
@@ -835,8 +987,69 @@ def find_version_file(project_root: Path) -> Optional[str]:
     return None
 
 
-def collect_config_interactive(project_root: Path, mode: Optional[str] = None) -> Dict:
+def collect_config_non_interactive(
+    project_root: Path,
+    mode: Optional[str] = None,
+    *,
+    maintainer_editor_profile: Optional[str] = None,
+) -> Dict:
+    """Build rw-config answers from defaults without prompts (greenfield / CI)."""
+    detected_name = detect_project_name(project_root)
+    detected_version = find_version_file(project_root)
+    mode_choice = (mode or "B").upper()
+    config: Dict = {
+        "project_name": detected_name,
+        "version_file": detected_version or "src/myproject/version.py",
+        "main_changelog": "CHANGELOG.md",
+        "changelog_dir": "docs/changelogs",
+        "scripts_path": "tools/workflow_mgt/scripts",
+        "readme_file": "README.md",
+    }
+    if mode_choice in ("B", "C"):
+        config["versioning_schema"] = "RC.EPIC.STORY.TASK+BUILD"
+        config["versioning_mode"] = "dual"
+        config["semver_mapping_strategy"] = "task_touch"
+    if mode_choice == "C":
+        kanban_root = "docs/kanban"
+        config["use_kanban"] = True
+        config["kanban_root"] = kanban_root
+        epic_default, story_default, _ = detect_kanban_doc_patterns(project_root, kanban_root)
+        task_default, fr_br_default = detect_kanban_supplementary_defaults(
+            project_root, kanban_root
+        )
+        config["epic_doc_pattern"] = epic_default
+        config["story_doc_pattern"] = story_default
+        config["task_doc_pattern"] = task_default
+        if fr_br_default:
+            config["fr_br_root"] = fr_br_default
+        config["kanban_board"] = detect_kanban_board_default(project_root, kanban_root)
+    else:
+        config["use_kanban"] = False
+    config["maintainer_editor_profile"] = resolve_maintainer_editor_profile(
+        config,
+        project_root=project_root,
+        cli_profile=maintainer_editor_profile,
+        non_interactive=True,
+        interactive_wizard=False,
+    )
+    return config
+
+
+def collect_config_interactive(
+    project_root: Path,
+    mode: Optional[str] = None,
+    *,
+    non_interactive: bool = False,
+    maintainer_editor_profile: Optional[str] = None,
+) -> Dict:
     """Collect configuration via interactive prompts."""
+    if non_interactive:
+        return collect_config_non_interactive(
+            project_root,
+            mode,
+            maintainer_editor_profile=maintainer_editor_profile,
+        )
+
     config = {}
     
     print_section_header(_msg(project_root, "installer.wizard.config_header"), project_root)
@@ -1042,6 +1255,14 @@ def collect_config_interactive(project_root: Path, mode: Optional[str] = None) -
         )
     else:
         config['use_kanban'] = False
+
+    config["maintainer_editor_profile"] = resolve_maintainer_editor_profile(
+        config,
+        project_root=project_root,
+        cli_profile=maintainer_editor_profile,
+        non_interactive=non_interactive,
+        interactive_wizard=True,
+    )
     
     return config
 
@@ -1097,6 +1318,23 @@ def generate_rw_config_yaml(config: Dict) -> str:
     
     if config.get('project_name'):
         lines.append(f"project_name: {config['project_name']}\n")
+
+    profile = normalize_maintainer_editor_profile(
+        config.get("maintainer_editor_profile", DEFAULT_MAINTAINER_EDITOR_PROFILE)
+    )
+    lines.extend([
+        "# FR-121 / ADR-026 (E05:S08:T06) — documentation surface authority",
+        "documentation_surfaces:",
+        "  maintainer_kb:",
+        "    sot: git  # git | external (non-default)",
+        "  adopter_public:",
+        "    sot: docusaurus",
+        "    allowlist_ref: portal/docusaurus.config.js",
+        "  external_kb:  # optional enterprise; not used by ai-dev-kit OSS",
+        "    provider: none  # none | notion",
+        f"maintainer_editor_profile: {profile}  # none | obsidian-personal | obsidian-team",
+        "",
+    ])
     
     return "\n".join(lines)
 
@@ -1258,6 +1496,13 @@ Brownfield (existing repo):
         action='store_true',
         help='Overwrite existing ai-dev-kit-config.yaml when setting language preference',
     )
+    parser.add_argument(
+        '--maintainer-editor-profile',
+        type=str,
+        choices=list(MAINTAINER_EDITOR_PROFILES),
+        default=None,
+        help='Maintainer editor profile (FR-121 / E05:S08:T07); default none when non-interactive',
+    )
 
     args = parser.parse_args()
 
@@ -1345,8 +1590,20 @@ Brownfield (existing repo):
                 {"path": str(config_path)},
             )
         )
+        config["maintainer_editor_profile"] = resolve_maintainer_editor_profile(
+            config,
+            project_root=project_root,
+            cli_profile=args.maintainer_editor_profile,
+            non_interactive=args.non_interactive or bool(_locale_tag),
+            interactive_wizard=False,
+        )
     else:
-        config = collect_config_interactive(project_root, args.mode)
+        config = collect_config_interactive(
+            project_root,
+            args.mode,
+            non_interactive=args.non_interactive or bool(_locale_tag),
+            maintainer_editor_profile=args.maintainer_editor_profile,
+        )
     
     # Generate rw-config.yaml
     config_yaml = generate_rw_config_yaml(config)
@@ -1389,6 +1646,15 @@ Brownfield (existing repo):
             changelog_warnings.append(changelog_result.message)
         elif changelog_result.message and changelog_result.status == "created":
             print(changelog_result.message)
+        obsidian_result = apply_maintainer_editor_profile(
+            project_root,
+            config.get("maintainer_editor_profile", DEFAULT_MAINTAINER_EDITOR_PROFILE),
+            dry_run=False,
+        )
+        if obsidian_result.message and obsidian_result.status in ("created", "error"):
+            print(obsidian_result.message)
+            if obsidian_result.status == "error":
+                install_warnings.append(obsidian_result.message)
     else:
         print(
             "\n"
@@ -1410,6 +1676,13 @@ Brownfield (existing repo):
             dry_run=True,
             interactive=not bool(args.config),
         )
+        obsidian_dry = apply_maintainer_editor_profile(
+            project_root,
+            config.get("maintainer_editor_profile", DEFAULT_MAINTAINER_EDITOR_PROFILE),
+            dry_run=True,
+        )
+        if obsidian_dry.message:
+            print(obsidian_dry.message)
     
     # Generate .cursorrules section
     cursorrules_section = generate_cursorrules_section(config)

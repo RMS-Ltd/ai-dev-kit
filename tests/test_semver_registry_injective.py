@@ -25,6 +25,16 @@ from task_touch_registry_audit import (  # noqa: E402
 def isolated_registry(tmp_path, monkeypatch):
     reg_file = tmp_path / "semver-registry.yaml"
     monkeypatch.setattr("semver_converter.find_registry_file", lambda: reg_file)
+    # Force legacy YAML path — rw-config uses sqlite; save_semver_registry would otherwise
+    # overwrite the production .adk/release-state.db from this isolated fixture.
+    monkeypatch.setattr(
+        "semver_converter.load_rw_config",
+        lambda: {
+            "semver_mapping_strategy": "task_touch",
+            "release_state_backend": "legacy",
+        },
+    )
+    monkeypatch.setattr("semver_converter.get_release_state_backend", lambda: "legacy")
     base = {
         "rc_0": {
             "epic_to_minor": {},

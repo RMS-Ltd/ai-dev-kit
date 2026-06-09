@@ -14,7 +14,7 @@ housekeeping_policy: keep
 **Submitted By:** User (docs/KB architecture discussion)  
 **Priority:** HIGH (Should Have — MoSCOW **S**)  
 **Status:** ACCEPTED (intake versioned)  
-**Version:** v0.5.8.6+1 (E05:S08:T06 wave 2 complete @ 2026-06-09; T05 @ v0.5.8.5+2)
+**Version:** v0.5.8.7+1 (E05:S08:T07 wave 3 complete @ 2026-06-09; T06 @ v0.5.8.6+1; T05 @ v0.5.8.5+2)
 
 **Implementing Tasks:**
 
@@ -78,19 +78,19 @@ The Docusaurus CI win from FR-114 does **not** require Notion — exclude globs 
 ### Functional Requirements
 
 - [x] **FR-121-F1:** Export Notion pages listed in [`fr114-notion-migration-manifest.json`](../../knowledge/fr114-notion-migration-manifest.json) and restore **full markdown** at original `source_path` values; remove `notion_sot: true` stub indirection. (**E05:S08:T05** @ v0.5.8.5+2 — git restore from `6b563cdf^`)
-- [ ] **FR-121-F2:** Publish **ADR-026** superseding ADR-024 maintainer/Notion SoT rules; retain Docusaurus allowlist and git workflow SoT matrix from ADR-024 where still valid.
-- [ ] **FR-121-F3:** Replace **`P-NOTION-FIRST`** with **`P-GIT-MAINTAINER`** in `AGENTS.md`, `docs/project-agent-manifest.json`, and related bootstrap docs — `maintainer-kb` track loads repo paths, not Notion MCP.
-- [ ] **FR-121-F4:** Add `documentation_surfaces` and `maintainer_editor_profile` keys to `rw-config.yaml` schema (documented); default `maintainer_kb.sot: git`.
-- [ ] **FR-121-F5:** Greenfield / RW installer optional prompt for Obsidian profiles (`none` default; `obsidian-personal`; `obsidian-team` scaffolds template only).
+- [x] **FR-121-F2:** Publish **ADR-026** superseding ADR-024 maintainer/Notion SoT rules; retain Docusaurus allowlist and git workflow SoT matrix from ADR-024 where still valid. (**E05:S08:T06** @ v0.5.8.6+1)
+- [x] **FR-121-F3:** Replace **`P-NOTION-FIRST`** with **`P-GIT-MAINTAINER`** in `AGENTS.md`, `docs/project-agent-manifest.json`, and related bootstrap docs — `maintainer-kb` track loads repo paths, not Notion MCP. (**E05:S08:T06** @ v0.5.8.6+1)
+- [x] **FR-121-F4:** Add `documentation_surfaces` and `maintainer_editor_profile` keys to `rw-config.yaml` schema (documented); default `maintainer_kb.sot: git`. (**E05:S08:T06** schema; **E05:S08:T07** installer emission @ v0.5.8.7+1)
+- [x] **FR-121-F5:** Greenfield / RW installer optional prompt for Obsidian profiles (`none` default; `obsidian-personal`; `obsidian-team` scaffolds template only). (**E05:S08:T07** @ v0.5.8.7+1)
 - [ ] **FR-121-F6:** Update `docs/knowledge/README.md`, migration manifest (reverse pass or successor manifest), and deprecate Notion-first scripts policy where superseded.
-- [ ] **FR-121-F7:** Cross-link FR-114 and ADR-024 with partial-supersession banners; no silent contradiction in agent routing.
+- [x] **FR-121-F7:** Cross-link FR-114 and ADR-024 with partial-supersession banners; no silent contradiction in agent routing. (**E05:S08:T06** @ v0.5.8.6+1)
 
 ### Non-Functional Requirements
 
 - [ ] **FR-121-NF1:** Docusaurus production build remains green when maintainer trees change (exclude globs unchanged).
 - [ ] **FR-121-NF2:** Restored markdown passes project lifecycle frontmatter conventions where applicable.
 - [ ] **FR-121-NF3:** Contributor without Obsidian or Notion can read and PR-edit full maintainer KB.
-- [ ] **FR-121-NF4:** Team Obsidian profile commits only stable `.obsidian/` config; workspace state gitignored.
+- [x] **FR-121-NF4:** Team Obsidian profile commits only stable `.obsidian/` config; workspace state gitignored. (**E05:S08:T07** @ v0.5.8.7+1)
 
 ---
 
@@ -131,7 +131,7 @@ The Docusaurus CI win from FR-114 does **not** require Notion — exclude globs 
 - [ ] `AGENTS.md` / manifest: no Notion-first default for maintainer doc creation.
 - [ ] ADR-026 accepted; ADR-024 annotated as partially superseded.
 - [ ] Docusaurus `npm run build` green after representative maintainer-tree edits.
-- [ ] Install docs describe `maintainer_editor_profile` options; default path requires neither Notion nor Obsidian.
+- [x] Install docs describe `maintainer_editor_profile` options; default path requires neither Notion nor Obsidian. (**E05:S08:T07** @ v0.5.8.7+1)
 
 ---
 

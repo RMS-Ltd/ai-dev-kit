@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Board
 
-**Last Updated:** 2026-06-09 (RW: E05:S08:T06)
-**Version:** v0.5.8.6+1
+**Last Updated:** 2026-06-09 (RW: E05:S08:T07)
+**Version:** v0.5.8.7+1
 
 **Active board contract:** **Sole active MoSCOW board** ([ADR-018](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/architecture/standards-and-adrs/ADR-018-single-kanban-board-consolidation.md)). Rows are **live work** (TODO / IN PROGRESS / OPEN / WAITING / PERPETUAL) plus filed **Could Have** backlog. **Verification (V)** band holds task-shipped / FBU-open items (`⏳ WAITING`). Remove **terminal** rows and archive prose (use [`kanban-completed.md`](kanban-completed.md) / [`intake-completed.md`](intake-completed.md)).
 
@@ -41,7 +41,6 @@ housekeeping_policy: keep
 
 - **E21:S04:T01** – Research cultural requirements for target locales - 📋 TODO (MEDIUM, **next** FR-006 epic-21 stream; S03 pipeline closed @ v0.21.3.7+1) | [Task](epics/epic-21/story-04-cultural-adaptation/T01-research-cultural-requirements-for-target-locales.md) | [Story](epics/epic-21/story-04-cultural-adaptation.md) | [FR-006](fr-br/FR-006-localization-language-selection-uk-us-english.md) | —No IPP— | Last modified: 2026-06-08 15:00 UTC
 
-- **E05:S08:T07** – Optional Obsidian editor profiles — greenfield install (FR-121) - 📋 TODO (MEDIUM, wave 3) | [Task](epics/epic-05/story-08-knowledge-base/T07-optional-obsidian-editor-profiles-greenfield-install-fr121.md) | [FR-121](fr-br/FR-121-git-internal-maintainer-kb-oss-documentation-surfaces.md) | —No IPP— | Last modified: 2026-06-09 12:42 UTC
 
 ### Verification (V) - Task Shipped, FBU Verification Pending
 

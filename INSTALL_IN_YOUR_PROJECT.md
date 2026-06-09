@@ -196,6 +196,16 @@ This section defines the canonical **greenfield** path for new or template proje
 
 **Language first (RW installer):** `install_release_workflow.py` prompts for UK/US English **before** RW path questions and writes `ai-dev-kit-config.yaml` (separate from `rw-config.yaml`). Flags: `--language en-GB|en-US`, `--non-interactive` (default UK English), `--force` (overwrite existing localisation config). Re-runs skip the write if the file exists unless `--force` is set.
 
+**Maintainer editor profile (FR-121 / optional):** After mode/kanban questions, the RW installer may prompt for `maintainer_editor_profile`. Git remains maintainer KB SoT in every case.
+
+| Profile | Effect |
+| ------- | ------ |
+| `none` | Default — no Obsidian files (`--non-interactive` uses this) |
+| `obsidian-personal` | Quick-start doc; entire `.obsidian/` gitignored |
+| `obsidian-team` | Stable `.obsidian/` JSON in git; workspace/cache/plugins gitignored |
+
+Flags: `--maintainer-editor-profile {none,obsidian-personal,obsidian-team}`. Greenfield orchestrator forwards the same flag. Detail: [`docs/maintainer/OBSIDIAN.md`](docs/maintainer/OBSIDIAN.md).
+
 - Policy anchor: [ADR-003](docs/architecture/standards-and-adrs/ADR-003-greenfield-vs-brownfield-adoption.md)
 - Brownfield is separate: see [Brownfield adoption (existing repositories)](#brownfield-adoption-existing-repositories) below; policy [FR-081](docs/kanban/fr-br/FR-081-brownfield-modular-adopter-integration.md); planning [IPP-E6S09T02](docs/implementation-cycles/IPP-E6S09T02-brownfield-modular-adopter-integration-fr081.md)
 - Greenfield planning: [IPW-E6S09T01](docs/implementation-cycles/IPW-E6S09T01-greenfield-installation-fr080.md)

@@ -55,6 +55,22 @@ These keys are only required if using specific features:
 | `versioning_mode` | string | Optional (recommended) | Versioning model: `dual`, `semver_only`, `kanban_only` | `dual` |
 | `semver_mapping_strategy` | string | Optional | SemVer mapping strategy (`task_touch` or `registry`) | `task_touch` |
 | `project_name` | string | Optional | Project name (for examples/comments) | `myproject` |
+| `documentation_surfaces` | object | Optional (recommended) | Publish-surface authority (FR-121 / ADR-026) | See below |
+| `maintainer_editor_profile` | string | Optional | Obsidian editor UX on git vault: `none`, `obsidian-personal`, `obsidian-team` | `none` |
+
+### Documentation surfaces (FR-121 / ADR-026)
+
+Emitted by `install_release_workflow.py` on new installs. Git remains maintainer KB SoT.
+
+| Key | Type | Default | Description |
+|-----|------|---------|-------------|
+| `documentation_surfaces.maintainer_kb.sot` | string | `git` | Maintainer corpus authority (`git` or non-default `external`) |
+| `documentation_surfaces.adopter_public.sot` | string | `docusaurus` | Adopter-public publish surface |
+| `documentation_surfaces.adopter_public.allowlist_ref` | string | `portal/docusaurus.config.js` | Docusaurus allowlist path |
+| `documentation_surfaces.external_kb.provider` | string | `none` | Optional enterprise KB (`none` or `notion`) |
+| `maintainer_editor_profile` | string | `none` | Optional Obsidian scaffold at install; see `docs/maintainer/OBSIDIAN.md` |
+
+**Installer flags:** `--maintainer-editor-profile {none,obsidian-personal,obsidian-team}`; non-interactive default `none`.
 
 ---
 

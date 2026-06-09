@@ -11,11 +11,11 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
-## [0.5.8.6+1] - 09-06-26
+## [0.5.8.7+1] - 09-06-26
 
-E05:S08:T06 — **Change implemented:** FR-121 wave 2 — ADR-026 + git-maintainer bootstrap (`P-GIT-MAINTAINER`). SemVer **v0.4.11+1**.
+E05:S08:T07 — **Change implemented:** FR-121 wave 3 — optional Obsidian editor profiles at greenfield install. SemVer **v0.4.1102+1**.
 
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.5.8.6+1.md)
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.5.8.7+1.md)
 
 ---
 

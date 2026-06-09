@@ -1,9 +1,9 @@
 # KB Index
 
-**Generated:** 2026-06-09 16:36:14 UTC  
+**Generated:** 2026-06-09 17:29:12 UTC  
 **Scope:** /Users/rms/Documents/projects/ai-dev-kit/docs  
-**Total files:** 3078  
-**Total size:** 14.44 MB
+**Total files:** 3085  
+**Total size:** 14.47 MB
 
 ---
 
@@ -14,15 +14,16 @@
 | analysis | 9 | 152.7 KB | 9 | 0 | 9 | 0 | 0 | 0 |
 | architecture | 126 | 1.24 MB | 120 | 6 | 119 | 1 | 0 | 0 |
 | book-project | 2 | 26.5 KB | 1 | 1 | 1 | 0 | 0 | 0 |
-| changelog-and-release-notes | 1404 | 3.91 MB | 199 | 1205 | 183 | 0 | 1 | 0 |
+| changelog-and-release-notes | 1409 | 3.92 MB | 199 | 1210 | 183 | 0 | 1 | 0 |
 | developer-tools | 2 | 12.7 KB | 2 | 0 | 2 | 0 | 0 | 0 |
 | documentation | 33 | 354.3 KB | 30 | 3 | 30 | 0 | 0 | 0 |
 | governance | 21 | 168.9 KB | 21 | 0 | 21 | 0 | 0 | 0 |
 | guides | 7 | 28.9 KB | 7 | 0 | 7 | 0 | 0 | 0 |
-| implementation-cycles | 249 | 2.07 MB | 209 | 40 | 194 | 2 | 1 | 0 |
+| implementation-cycles | 250 | 2.08 MB | 210 | 40 | 195 | 2 | 1 | 0 |
 | journals | 4 | 14.7 KB | 0 | 4 | 0 | 0 | 0 | 0 |
 | kanban | 1119 | 5.18 MB | 1075 | 44 | 1045 | 0 | 3 | 0 |
 | knowledge | 75 | 1.17 MB | 72 | 3 | 69 | 1 | 2 | 3 |
+| maintainer | 1 | 2.7 KB | 1 | 0 | 1 | 0 | 0 | 0 |
 | maintenance | 24 | 138.7 KB | 13 | 11 | 9 | 3 | 0 | 0 |
 | project-agent-index.md | 1 | 4.3 KB | 1 | 0 | 1 | 0 | 0 | 0 |
 | project-management | 1 | 523 B | 1 | 0 | 1 | 0 | 0 | 0 |
@@ -31,7 +32,7 @@
 ## Optimization signals
 
 - **docs/README.md exists:** False
-- **Files missing lifecycle frontmatter:** 1317
+- **Files missing lifecycle frontmatter:** 1322
 - **Timeboxed/transient with expires_at in the past:** 3
 - **READMEs (under docs/):** 22
 
@@ -87,7 +88,7 @@
 - `changelog-and-release-notes/changelog-archive/CHANGELOG_v0.10.1.3+1.md`
 - `changelog-and-release-notes/changelog-archive/CHANGELOG_v0.10.1.4+1.md`
 - `changelog-and-release-notes/changelog-archive/CHANGELOG_v0.10.1.5+1.md`
-- ... and 1267 more
+- ... and 1272 more
 
 ### Expired (candidates for archive/delete)
 
@@ -162,7 +163,7 @@
 | architecture/standards-and-adrs/ADR-024-i18n-framework-strategy.md | 8.5 KB | 866 | evergreen | 2026-06-07T14:00:00 |  |
 | architecture/standards-and-adrs/ADR-025-layered-accessibility-strategy.md | 6.2 KB | 829 | evergreen | 2026-06-07T22:00:00 |  |
 | architecture/standards-and-adrs/ADR-025-release-metadata-async-ingest-read-model.md | 2.0 KB | 204 | evergreen | 2026-06-07T15:00:00 |  |
-| architecture/standards-and-adrs/ADR-026-git-internal-maintainer-kb-fr121.md | 8.1 KB | 796 | evergreen | 2026-06-09T16:00:00 |  |
+| architecture/standards-and-adrs/ADR-026-git-internal-maintainer-kb-fr121.md | 8.4 KB | 802 | evergreen | 2026-06-09T16:00:00 |  |
 | architecture/standards-and-adrs/ADR-027-rw-release-transaction-contract.md | 4.5 KB | 440 | evergreen | 2026-06-09T20:00:00 |  |
 | architecture/standards-and-adrs/ADR-openclaw-process-sentinel-skill.md | 10.9 KB | 1582 | timeboxed | 2026-05-26T18:30:00 | 365 |
 | architecture/standards-and-adrs/FR-046-implementation-guide.md | 7.5 KB | 947 |  |  |  |
@@ -450,6 +451,7 @@
 | implementation-cycles/IPP-E05S08T04-agent-notion-first-authoring-and-bootstrap-routing-fr114.md | 7.6 KB | 1123 | evergreen | 2026-06-07T18:00:00 |  |
 | implementation-cycles/IPP-E05S08T05-reverse-notion-migration-git-internal-maintainer-kb-fr121.md | 11.2 KB | 1595 | evergreen | 2026-06-09T12:00:00 |  |
 | implementation-cycles/IPP-E05S08T06-adr-026-git-maintainer-authoring-bootstrap-fr121.md | 16.8 KB | 2265 | evergreen | 2026-06-09T14:00:00 |  |
+| implementation-cycles/IPP-E05S08T07-optional-obsidian-editor-profiles-greenfield-install-fr121.md | 10.4 KB | 1446 | evergreen | 2026-06-09T18:00:00 |  |
 | implementation-cycles/IPP-E05S09T11-docusaurus-monorepo-markdown-link-resolution-br068.md | 14.4 KB | 1945 | evergreen | 2026-06-05T22:00:00 |  |
 | implementation-cycles/IPP-E05S09T12-changelog-directory-consolidation.md | 5.6 KB | 682 | evergreen | 2026-06-04T14:00:00 |  |
 | implementation-cycles/IPP-E05S09T13-docusaurus-faster-package-alignment.md | 18.3 KB | 2514 | evergreen | 2026-06-05T20:00:00 |  |
@@ -1013,7 +1015,7 @@
 | kanban/epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T11-kanban-epic-story-path-lowercase-naming-uxr017.md | 7.5 KB | 724 | evergreen | 2026-06-04T12:00:00 |  |
 | kanban/epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T12-fbuboard-necessity-investigation-uxr020.md | 5.2 KB | 571 | evergreen | 2026-06-05T20:00:00 |  |
 | kanban/epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake.md | 11.2 KB | 947 | evergreen | 2026-04-02T00:00:00 |  |
-| kanban/epics/epic-05/epic-05.md | 10.1 KB | 1147 | evergreen | 2025-12-05T14:00:00 |  |
+| kanban/epics/epic-05/epic-05.md | 10.1 KB | 1152 | evergreen | 2025-12-05T14:00:00 |  |
 | kanban/epics/epic-05/story-00-fr-repo.md | 4.1 KB | 505 | evergreen | 2026-01-05T18:10:00 |  |
 | kanban/epics/epic-05/story-01-fr-repo/E5S01T45-implementation-validation-report.md | 6.7 KB | 749 |  |  |  |
 | kanban/epics/epic-05/story-01-fr-repo/IPW-E5S01T42-ipw-icw-consolidation.md | 6.5 KB | 910 | evergreen | 2026-04-01T16:30:00 |  |
@@ -1107,8 +1109,8 @@
 | kanban/epics/epic-05/story-08-knowledge-base/T04-agent-notion-first-authoring-and-bootstrap-routing-fr114.md | 3.3 KB | 275 | evergreen | 2026-06-06T00:00:00 |  |
 | kanban/epics/epic-05/story-08-knowledge-base/T05-reverse-notion-migration-git-internal-maintainer-kb-fr121.md | 3.3 KB | 285 | evergreen | 2026-06-09T00:00:00 |  |
 | kanban/epics/epic-05/story-08-knowledge-base/T06-adr-026-git-maintainer-authoring-bootstrap-fr121.md | 3.4 KB | 279 | evergreen | 2026-06-09T00:00:00 |  |
-| kanban/epics/epic-05/story-08-knowledge-base/T07-optional-obsidian-editor-profiles-greenfield-install-fr121.md | 2.6 KB | 234 | evergreen | 2026-06-09T00:00:00 |  |
-| kanban/epics/epic-05/story-08-knowledge-base.md | 5.2 KB | 393 | evergreen | 2025-12-18T00:00:00 |  |
+| kanban/epics/epic-05/story-08-knowledge-base/T07-optional-obsidian-editor-profiles-greenfield-install-fr121.md | 3.2 KB | 272 | evergreen | 2026-06-09T00:00:00 |  |
+| kanban/epics/epic-05/story-08-knowledge-base.md | 5.4 KB | 393 | evergreen | 2025-12-18T00:00:00 |  |
 | kanban/epics/epic-05/story-09-docusaurus-documentation-portal/T01-docusaurus-site-identity-fr-065.md | 3.5 KB | 423 | evergreen | 2026-03-30T18:00:00 |  |
 | kanban/epics/epic-05/story-09-docusaurus-documentation-portal/T02-docusaurus-canonical-docs-path-fr-066.md | 3.5 KB | 402 | evergreen | 2026-03-30T18:00:00 |  |
 | kanban/epics/epic-05/story-09-docusaurus-documentation-portal/T03-docusaurus-build-triage-fr-067.md | 3.6 KB | 370 | evergreen | 2026-03-30T18:00:00 |  |
@@ -1662,7 +1664,7 @@
 | kanban/fr-br/FR-118-promote-kanban-to-docs-kanban-retire-project-management-shell.md | 8.2 KB | 872 | evergreen | 2026-06-08T13:30:00 |  |
 | kanban/fr-br/FR-119-implementation-delivery-workflow-idw.md | 2.7 KB | 322 | evergreen | 2026-06-08T18:00:00 |  |
 | kanban/fr-br/FR-120-semver-allocation-authority-transactional-mapping-black-box.md | 14.7 KB | 1784 | proposed | 2026-06-09T00:00:00 |  |
-| kanban/fr-br/FR-121-git-internal-maintainer-kb-oss-documentation-surfaces.md | 8.5 KB | 980 | proposed | 2026-06-09T00:00:00 |  |
+| kanban/fr-br/FR-121-git-internal-maintainer-kb-oss-documentation-surfaces.md | 8.7 KB | 1001 | proposed | 2026-06-09T00:00:00 |  |
 | kanban/fr-br/FR-122-release-workflow-architectural-contract-release-transaction.md | 11.6 KB | 1163 | proposed | 2026-06-09T18:00:00 |  |
 | kanban/fr-br/REOPENING_BR_AND_TASKS_GUIDE.md | 7.9 KB | 1115 | evergreen | 2025-12-16T13:45:00 |  |
 | kanban/fr-br/UXR-001-migration-user-experience-research.md | 12.8 KB | 1556 | evergreen | 2025-01-27T00:00:00 |  |
@@ -1697,8 +1699,8 @@
 | kanban/kanban-board-guide.md | 16.5 KB | 2136 | evergreen | 2026-01-20T00:00:00 |  |
 | kanban/kanban-completed.md | 123.6 KB | 9959 | evergreen | 2026-03-09T00:00:00 |  |
 | kanban/kanban-structure.md | 25.5 KB | 2227 | evergreen | 2026-03-09T00:00:00 |  |
-| kanban/kboard.md | 14.1 KB | 1079 | evergreen | 2025-12-04T12:02:50 |  |
-| knowledge/KB-INDEX.md | 236.2 KB | 22146 |  |  |  |
+| kanban/kboard.md | 13.8 KB | 1049 | evergreen | 2025-12-04T12:02:50 |  |
+| knowledge/KB-INDEX.md | 236.6 KB | 22205 |  |  |  |
 | knowledge/README.md | 2.5 KB | 259 | evergreen | 2026-06-07T12:00:00 |  |
 | knowledge/USE_CASE_METHODOLOGY.md | 14.3 KB | 1844 | evergreen | 2025-12-16T14:30:00 |  |
 | knowledge/analysis/abstract-anti-patterns-use-case-exposed-design-flaw.md | 13.0 KB | 1796 | evergreen | 2025-12-18T00:00:00 |  |
@@ -1773,6 +1775,7 @@
 | knowledge/use-cases/discovered/UC-D-003-pattern-discovery-workflow.md | 6.2 KB | 754 | evergreen | 2025-12-16T14:30:00 |  |
 | knowledge/use-cases/discovered/UC-D-004-story-task-docs-batch-creation.md | 8.0 KB | 1012 | evergreen | 2025-12-18T00:00:00 |  |
 | knowledge/use-cases/templates/DISCOVERED_USE_CASE_TEMPLATE.md | 2.8 KB | 386 | evergreen | ['YYYY-MM-DD'] |  |
+| maintainer/OBSIDIAN.md | 2.7 KB | 284 | evergreen | 2026-06-09T18:00:00 |  |
 | maintenance/BUILD_AND_UPLOAD.md | 3.9 KB | 433 |  |  |  |
 | maintenance/BUILD_PACKAGES.md | 2.6 KB | 248 |  |  |  |
 | maintenance/BUILD_PACKAGES_COMMANDS.md | 2.2 KB | 184 |  |  |  |
@@ -1800,5 +1803,5 @@
 | project-agent-index.md | 4.3 KB | 392 | evergreen | 2026-05-30T21:00:00 |  |
 | project-management/README.md | 523 B | 34 | evergreen | 2025-12-04T12:01:54 |  |
 | release-notes/README.md | 1.4 KB | 123 | evergreen | 2026-06-07T12:00:00 |  |
-| changelog-and-release-notes/changelog-archive/ (summary) (1402 files) | 3.91 MB | 453565 |  |  |  |
+| changelog-and-release-notes/changelog-archive/ (summary) (1407 files) | 3.92 MB | 455344 |  |  |  |
 
