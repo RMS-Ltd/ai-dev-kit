@@ -11,10 +11,10 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
-## [0.3.2.14+2] - 09-06-26
+## [0.5.8.5+1] - 09-06-26
 
-E03:S02:T14 — **Change implemented:** SemVer allocator repair — legacy registry re-import; correct `v0.3.2.14+1` external SemVer to **v0.4.1096+1**. SemVer **v0.4.1099+2**.
+E05:S08:T05 / FR-121 — **Change implemented:** Kanban init (RW `-k`) for git-internal maintainer KB reverse-migration task. SemVer **v0.4.1100+1**.
 
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.3.2.14+2.md)
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.5.8.5+1.md)
 
 ---

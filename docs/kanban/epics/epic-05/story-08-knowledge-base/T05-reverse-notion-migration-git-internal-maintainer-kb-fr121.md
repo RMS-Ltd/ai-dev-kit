@@ -12,8 +12,8 @@ housekeeping_policy: keep
 **Status:** 📋 TODO  
 **Priority:** HIGH  
 **Created:** 2026-06-09  
-**Last updated:** 2026-06-09 (FR-121 intake)  
-**Version:** — (pending RW -k)  
+**Last updated:** 2026-06-09 (v0.5.8.5+1 – Kanban documentation setup)  
+**Version:** v0.5.8.5+1  
 **Code:** E05S08T05
 
 Publication Status: NOT_APPLICABLE

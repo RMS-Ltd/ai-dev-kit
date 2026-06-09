@@ -8,12 +8,12 @@ housekeeping_policy: keep
 
 # Story 008 – Knowledge Base
 
-**Status:** COMPLETE  
+**Status:** IN PROGRESS  
 **Priority:** HIGH  
 **Estimated Effort:** [TBD]  
 **Created:** 2025-12-18  
-**Last updated:** 2026-06-07 (RW — T04 COMPLETE @ v0.5.8.4+2; FR-114 F4/F5 closed)  
-**Version:** v0.5.8.4+2  
+**Last updated:** 2026-06-09 (v0.5.8.5+1 – Kanban documentation setup)
+**Version:** v0.5.8.5+1
 **Code:** E5S08
 
 **Note:** This story was renumbered from S07 to S08 as part of the repository story abstract space resolution (E09:S01:T08).
@@ -36,9 +36,21 @@ housekeeping_policy: keep
 - [x] **E05:S08:T04 – Agent Notion-first authoring and bootstrap routing ([FR-114](../../fr-br/FR-114-split-documentation-surfaces-docusaurus-public-notion-maintainer-kb.md))** - ✅ COMPLETE (**v0.5.8.4+2**) — [—IPP—](../../../implementation-cycles/IPP-E05S08T04-agent-notion-first-authoring-and-bootstrap-routing-fr114.md)
   - Task: [`T04-agent-notion-first-authoring-and-bootstrap-routing-fr114`](story-08-knowledge-base/T04-agent-notion-first-authoring-and-bootstrap-routing-fr114.md)
 
+
+- [ ] **E05:S08:T05 – Reverse Notion migration — git-internal maintainer KB ([FR-121](../../fr-br/FR-121-git-internal-maintainer-kb-oss-documentation-surfaces.md))** - 📋 TODO (HIGH, **v0.5.8.5+1** RW `-k` kanban init)
+  - Task: [`T05-reverse-notion-migration-git-internal-maintainer-kb-fr121`](story-08-knowledge-base/T05-reverse-notion-migration-git-internal-maintainer-kb-fr121.md)
+
+
+- [ ] **E05:S08:T06 – ADR-026 + git-maintainer authoring bootstrap ([FR-121](../../fr-br/FR-121-git-internal-maintainer-kb-oss-documentation-surfaces.md))** - 📋 TODO (HIGH, wave 2)
+  - Task: [`T06-adr-026-git-maintainer-authoring-bootstrap-fr121`](story-08-knowledge-base/T06-adr-026-git-maintainer-authoring-bootstrap-fr121.md)
+
+
+- [ ] **E05:S08:T07 – Optional Obsidian editor profiles — greenfield install ([FR-121](../../fr-br/FR-121-git-internal-maintainer-kb-oss-documentation-surfaces.md))** - 📋 TODO (MEDIUM, wave 3)
+  - Task: [`T07-optional-obsidian-editor-profiles-greenfield-install-fr121`](story-08-knowledge-base/T07-optional-obsidian-editor-profiles-greenfield-install-fr121.md)
+
 ## Overview
 
-Story 008 delivers the **maintainer KB surface** under [FR-114](../../fr-br/FR-114-split-documentation-surfaces-docusaurus-public-notion-maintainer-kb.md): big-bang Notion migration (**T03** COMPLETE @ v0.5.8.3+3) and agent Notion-first authoring/bootstrap routing (**T04** COMPLETE @ v0.5.8.4+2). Story **COMPLETE** — FR-114 F4/F5 closed.
+Story 008 delivered **FR-114** (Notion migration **T03**, Notion-first bootstrap **T04**). **[FR-121](../../fr-br/FR-121-git-internal-maintainer-kb-oss-documentation-surfaces.md)** partially supersedes Notion SoT: git-internal maintainer KB (**T05** kanban init @ **v0.5.8.5+1**), bootstrap rewire (**T06**), optional Obsidian install profiles (**T07**).
 
 ---
 

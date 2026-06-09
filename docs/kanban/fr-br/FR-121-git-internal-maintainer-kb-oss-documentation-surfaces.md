@@ -13,8 +13,8 @@ housekeeping_policy: keep
 **Submitted:** 2026-06-09  
 **Submitted By:** User (docs/KB architecture discussion)  
 **Priority:** HIGH (Should Have — MoSCOW **S**)  
-**Status:** ACCEPTED (intake)  
-**Version:** — (pending RW -k)
+**Status:** ACCEPTED (intake versioned)  
+**Version:** v0.5.8.5+1 (E05:S08:T05 RW `-k` kanban init @ 2026-06-09)
 
 **Implementing Tasks:**
 
