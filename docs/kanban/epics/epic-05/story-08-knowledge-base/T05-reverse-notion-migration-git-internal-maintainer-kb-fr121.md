@@ -9,11 +9,11 @@ housekeeping_policy: keep
 # Epic 5, Story 8, Task 5: Reverse Notion migration — git-internal maintainer KB (**FR-121**)
 
 **Task ID:** E05:S08:T05  
-**Status:** 📋 TODO  
+**Status:** ✅ COMPLETE (v0.5.8.5+2)  
 **Priority:** HIGH  
 **Created:** 2026-06-09  
-**Last updated:** 2026-06-09 (v0.5.8.5+1 – Kanban documentation setup)  
-**Version:** v0.5.8.5+1  
+**Last updated:** 2026-06-09 (v0.5.8.5+2 — FR-121 wave 1 reverse migration)  
+**Version:** v0.5.8.5+2  
 **Code:** E05S08T05
 
 Publication Status: NOT_APPLICABLE
@@ -34,6 +34,7 @@ Wave 1 of FR-121: export Notion maintainer pages and restore **full markdown** a
 
 ## Input
 
+- [IPP-E05S08T05 — Reverse Notion migration (FR-121 wave 1)](../../../../implementation-cycles/IPP-E05S08T05-reverse-notion-migration-git-internal-maintainer-kb-fr121.md)
 - [FR-121](../../../fr-br/FR-121-git-internal-maintainer-kb-oss-documentation-surfaces.md)
 - [`fr114-notion-migration-manifest.json`](../../../../knowledge/fr114-notion-migration-manifest.json) (218 entries)
 - Notion Engineering KB (`rw-config.yaml` → `notion_kb_url`) — export source until decommissioned
@@ -53,10 +54,10 @@ Wave 1 of FR-121: export Notion maintainer pages and restore **full markdown** a
 
 ## Acceptance Criteria
 
-- [ ] All manifest entries with `stub_applied: true` restored to full git text or listed in manifest `exclusion_reason`.
-- [ ] `docs/knowledge/README.md` updated — git SoT stated; Notion demoted to optional archive reference.
-- [ ] Sample maintainer-tree edit does not trigger Docusaurus build failure (exclude globs unchanged).
-- [ ] Reverse migration manifest committed under `docs/knowledge/`.
+- [x] All manifest entries with `stub_applied: true` restored to full git text or listed in manifest `exclusion_reason`.
+- [x] `docs/knowledge/README.md` updated — git SoT stated; Notion demoted to optional archive reference.
+- [x] Sample maintainer-tree edit does not trigger Docusaurus build failure (exclude globs unchanged).
+- [x] Reverse migration manifest committed under `docs/knowledge/`.
 
 ---
 
@@ -70,6 +71,7 @@ Wave 1 of FR-121: export Notion maintainer pages and restore **full markdown** a
 
 ## References
 
+- [IPP-E05S08T05 — Reverse Notion migration (FR-121 wave 1)](../../../../implementation-cycles/IPP-E05S08T05-reverse-notion-migration-git-internal-maintainer-kb-fr121.md)
 - [FR-121](../../../fr-br/FR-121-git-internal-maintainer-kb-oss-documentation-surfaces.md)
 - [FR-114](../../../fr-br/FR-114-split-documentation-surfaces-docusaurus-public-notion-maintainer-kb.md)
 - [E05:S08:T03](T03-big-bang-notion-migration-maintainer-kb-fr114.md)

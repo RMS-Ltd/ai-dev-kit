@@ -12,8 +12,8 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** [TBD]  
 **Created:** 2025-12-18  
-**Last updated:** 2026-06-09 (v0.5.8.5+1 – Kanban documentation setup)
-**Version:** v0.5.8.5+1
+**Last updated:** 2026-06-09 (v0.5.8.5+2 – Kanban documentation setup)
+**Version:** v0.5.8.5+2
 **Code:** E5S08
 
 **Note:** This story was renumbered from S07 to S08 as part of the repository story abstract space resolution (E09:S01:T08).
@@ -37,7 +37,7 @@ housekeeping_policy: keep
   - Task: [`T04-agent-notion-first-authoring-and-bootstrap-routing-fr114`](story-08-knowledge-base/T04-agent-notion-first-authoring-and-bootstrap-routing-fr114.md)
 
 
-- [ ] **E05:S08:T05 – Reverse Notion migration — git-internal maintainer KB ([FR-121](../../fr-br/FR-121-git-internal-maintainer-kb-oss-documentation-surfaces.md))** - 📋 TODO (HIGH, **v0.5.8.5+1** RW `-k` kanban init)
+- [x] **E05:S08:T05 – Reverse Notion migration — git-internal maintainer KB ([FR-121](../../fr-br/FR-121-git-internal-maintainer-kb-oss-documentation-surfaces.md))** - ✅ COMPLETE (**v0.5.8.5+2**) — [—IPP—](../../implementation-cycles/IPP-E05S08T05-reverse-notion-migration-git-internal-maintainer-kb-fr121.md)
   - Task: [`T05-reverse-notion-migration-git-internal-maintainer-kb-fr121`](story-08-knowledge-base/T05-reverse-notion-migration-git-internal-maintainer-kb-fr121.md)
 
 

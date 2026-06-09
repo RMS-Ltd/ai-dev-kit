@@ -1,0 +1,2203 @@
+{
+  "schema": "fr121-reverse-migration-v1",
+  "generated_at": "2026-06-09T12:59:23Z",
+  "source_commit": "6b563cdf^",
+  "fr114_manifest": "docs/knowledge/fr114-notion-migration-manifest.json",
+  "entry_count": 218,
+  "restored_count": 218,
+  "excluded_count": 0,
+  "entries": [
+    {
+      "source_path": "knowledge/USE_CASE_METHODOLOGY.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:23Z",
+      "restore_status": "restored",
+      "link_repair_notes": [
+        "batch: \\.\\./project-management/kanban/ -> ../kanban/"
+      ],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "knowledge/analysis/abstract-anti-patterns-use-case-exposed-design-flaw.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:23Z",
+      "restore_status": "restored",
+      "link_repair_notes": [
+        "replaced \\.\\./\\.\\./project-management/kanban/ -> ../../kanban/"
+      ],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "knowledge/analysis/adk-drift-analysis.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:23Z",
+      "restore_status": "restored",
+      "link_repair_notes": [],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "knowledge/analysis/adk-hardening-recommendations.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:23Z",
+      "restore_status": "restored",
+      "link_repair_notes": [],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "knowledge/analysis/adk-implementation-analysis-execution-plan.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:23Z",
+      "restore_status": "restored",
+      "link_repair_notes": [
+        "replaced docs/project-management/kanban/ -> docs/kanban/"
+      ],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "knowledge/analysis/adk-implementation-analysis-report.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:24Z",
+      "restore_status": "restored",
+      "link_repair_notes": [],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "knowledge/analysis/adk-implementation-patterns.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:24Z",
+      "restore_status": "restored",
+      "link_repair_notes": [],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "knowledge/analysis/adk-learning-synthesis.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:24Z",
+      "restore_status": "restored",
+      "link_repair_notes": [],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "knowledge/analysis/adk-mashup-issues.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:24Z",
+      "restore_status": "restored",
+      "link_repair_notes": [],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "knowledge/analysis/ai-dev-kit-sitrep.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:24Z",
+      "restore_status": "restored",
+      "link_repair_notes": [
+        "replaced docs/project-management/kanban/ -> docs/kanban/"
+      ],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "knowledge/analysis/comprehensive-adk-analysis-framework.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:24Z",
+      "restore_status": "restored",
+      "link_repair_notes": [],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "knowledge/analysis/comprehensive-project-analysis-framework.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:24Z",
+      "restore_status": "restored",
+      "link_repair_notes": [
+        "replaced docs/project-management/kanban/ -> docs/kanban/"
+      ],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "knowledge/analysis/critical-framework-completion-plan.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:24Z",
+      "restore_status": "restored",
+      "link_repair_notes": [],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "knowledge/analysis/cursorrules-structure-analysis.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:24Z",
+      "restore_status": "restored",
+      "link_repair_notes": [
+        "replaced docs/project-management/kanban/ -> docs/kanban/"
+      ],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "knowledge/analysis/debug-path-framework-analysis.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:24Z",
+      "restore_status": "restored",
+      "link_repair_notes": [],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "knowledge/analysis/knowledge-documentation-structure-analysis.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:24Z",
+      "restore_status": "restored",
+      "link_repair_notes": [
+        "replaced docs/project-management/kanban/ -> docs/kanban/"
+      ],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "knowledge/analysis/meta-analysis-canonical-vs-legacy-matrices.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:24Z",
+      "restore_status": "restored",
+      "link_repair_notes": [],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "knowledge/analysis/meta-analysis-convergence-divergence-maps.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:24Z",
+      "restore_status": "restored",
+      "link_repair_notes": [],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "knowledge/analysis/meta-analysis-cursorrules-use-misuse.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:24Z",
+      "restore_status": "restored",
+      "link_repair_notes": [
+        "replaced docs/project-management/kanban/ -> docs/kanban/"
+      ],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "knowledge/analysis/meta-analysis-documentation-knowledge-structure.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:24Z",
+      "restore_status": "restored",
+      "link_repair_notes": [],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "knowledge/analysis/meta-analysis-executive-summary.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:24Z",
+      "restore_status": "restored",
+      "link_repair_notes": [
+        "replaced docs/project-management/kanban/ -> docs/kanban/"
+      ],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "knowledge/analysis/meta-analysis-good-bad-practices.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:24Z",
+      "restore_status": "restored",
+      "link_repair_notes": [],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "knowledge/analysis/meta-analysis-kanban-structure.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:24Z",
+      "restore_status": "restored",
+      "link_repair_notes": [],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "knowledge/analysis/meta-analysis-pattern-frequency-tables.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:24Z",
+      "restore_status": "restored",
+      "link_repair_notes": [],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "knowledge/analysis/meta-analysis-patterns-anti-patterns.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:24Z",
+      "restore_status": "restored",
+      "link_repair_notes": [
+        "replaced docs/project-management/kanban/ -> docs/kanban/"
+      ],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "knowledge/analysis/meta-analysis-workflows.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:24Z",
+      "restore_status": "restored",
+      "link_repair_notes": [],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "knowledge/analysis/outstanding-work-summary.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:24Z",
+      "restore_status": "restored",
+      "link_repair_notes": [],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "knowledge/analysis/pre-analysis-completion-strategy.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:24Z",
+      "restore_status": "restored",
+      "link_repair_notes": [],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "knowledge/analysis/projects/agentic-ide-rules-adk-analysis.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:24Z",
+      "restore_status": "restored",
+      "link_repair_notes": [
+        "replaced docs/project-management/kanban/ -> docs/kanban/"
+      ],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "knowledge/analysis/projects/ai-dev-kit-adk-analysis.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:24Z",
+      "restore_status": "restored",
+      "link_repair_notes": [
+        "replaced docs/project-management/kanban/ -> docs/kanban/"
+      ],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "knowledge/analysis/projects/been-there-adk-analysis.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:24Z",
+      "restore_status": "restored",
+      "link_repair_notes": [
+        "replaced docs/project-management/kanban/ -> docs/kanban/"
+      ],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "knowledge/analysis/projects/confidentia-adk-analysis.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:24Z",
+      "restore_status": "restored",
+      "link_repair_notes": [
+        "replaced docs/project-management/kanban/ -> docs/kanban/"
+      ],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "knowledge/analysis/projects/dev-toolkit-adk-analysis.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:24Z",
+      "restore_status": "restored",
+      "link_repair_notes": [
+        "replaced docs/project-management/kanban/ -> docs/kanban/"
+      ],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "knowledge/analysis/projects/free-party-promoter-adk-analysis.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:24Z",
+      "restore_status": "restored",
+      "link_repair_notes": [
+        "replaced docs/project-management/kanban/ -> docs/kanban/"
+      ],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "knowledge/analysis/projects/fynd-deals-adk-analysis.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:24Z",
+      "restore_status": "restored",
+      "link_repair_notes": [
+        "replaced docs/project-management/kanban/ -> docs/kanban/"
+      ],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "knowledge/analysis/projects/qa-kb-adk-analysis.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:24Z",
+      "restore_status": "restored",
+      "link_repair_notes": [
+        "replaced docs/project-management/kanban/ -> docs/kanban/"
+      ],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "knowledge/analysis/projects/starborn-legacy-adk-analysis.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:24Z",
+      "restore_status": "restored",
+      "link_repair_notes": [
+        "replaced docs/project-management/kanban/ -> docs/kanban/"
+      ],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "knowledge/analysis/projects/vwmp-adk-analysis.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:24Z",
+      "restore_status": "restored",
+      "link_repair_notes": [
+        "replaced docs/project-management/kanban/ -> docs/kanban/"
+      ],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "knowledge/analysis/task-level-kanban-structure-analysis.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:24Z",
+      "restore_status": "restored",
+      "link_repair_notes": [],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "knowledge/analysis/workflow-structure-analysis.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:24Z",
+      "restore_status": "restored",
+      "link_repair_notes": [],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "knowledge/articles/README.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:24Z",
+      "restore_status": "restored",
+      "link_repair_notes": [
+        "replaced \\.\\./\\.\\./project-management/kanban/ -> ../../kanban/"
+      ],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "knowledge/articles/cursor-scaling-long-running-autonomous-coding-agents.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:24Z",
+      "restore_status": "restored",
+      "link_repair_notes": [
+        "replaced \\.\\./\\.\\./project-management/kanban/ -> ../../kanban/"
+      ],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "knowledge/articles/hybrid-task-template-system-building-better-templates.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:24Z",
+      "restore_status": "restored",
+      "link_repair_notes": [
+        "replaced docs/project-management/kanban/ -> docs/kanban/"
+      ],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "knowledge/guides/README.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:24Z",
+      "restore_status": "restored",
+      "link_repair_notes": [
+        "replaced docs/project-management/kanban/ -> docs/kanban/"
+      ],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "knowledge/guides/badge-setup-for-private-repos.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:24Z",
+      "restore_status": "restored",
+      "link_repair_notes": [
+        "replaced \\.\\./\\.\\./project-management/kanban/ -> ../../kanban/"
+      ],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "knowledge/guides/building-persistent-knowledge.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:24Z",
+      "restore_status": "restored",
+      "link_repair_notes": [],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "knowledge/guides/package-maintenance-and-release.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:24Z",
+      "restore_status": "restored",
+      "link_repair_notes": [],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "knowledge/kb-migration-log.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:24Z",
+      "restore_status": "restored",
+      "link_repair_notes": [],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "knowledge/reviews/pir/Epic-2/PIR-Epic-2-TEST-v0.2.5.10+1.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:24Z",
+      "restore_status": "restored",
+      "link_repair_notes": [
+        "replaced \\.\\./\\.\\./project-management/kanban/ -> ../../kanban/"
+      ],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "knowledge/reviews/pir/Epic-2/PIR-TEST-EXECUTION-REPORT.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:24Z",
+      "restore_status": "restored",
+      "link_repair_notes": [],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "knowledge/reviews/pir/README.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:24Z",
+      "restore_status": "restored",
+      "link_repair_notes": [],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "knowledge/reviews/pir/Story-2/PIR-STORY-TEST-EXECUTION-REPORT.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:24Z",
+      "restore_status": "restored",
+      "link_repair_notes": [],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "knowledge/reviews/pir/Story-2/PIR-Story-2-TEST-v0.2.2.8+1.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:24Z",
+      "restore_status": "restored",
+      "link_repair_notes": [
+        "replaced \\.\\./\\.\\./project-management/kanban/ -> ../../kanban/"
+      ],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "knowledge/use-cases/discovered/README.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:24Z",
+      "restore_status": "restored",
+      "link_repair_notes": [
+        "replaced \\.\\./\\.\\./project-management/kanban/ -> ../../kanban/"
+      ],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "knowledge/use-cases/discovered/UC-D-001-reopening-br-tasks.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:24Z",
+      "restore_status": "restored",
+      "link_repair_notes": [
+        "replaced \\.\\./\\.\\./project-management/kanban/ -> ../../kanban/"
+      ],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "knowledge/use-cases/discovered/UC-D-002-bidirectional-wiring.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:24Z",
+      "restore_status": "restored",
+      "link_repair_notes": [
+        "replaced \\.\\./\\.\\./project-management/kanban/ -> ../../kanban/"
+      ],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "knowledge/use-cases/discovered/UC-D-003-pattern-discovery-workflow.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:24Z",
+      "restore_status": "restored",
+      "link_repair_notes": [
+        "replaced \\.\\./\\.\\./project-management/kanban/ -> ../../kanban/"
+      ],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "knowledge/use-cases/discovered/UC-D-004-story-task-docs-batch-creation.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:24Z",
+      "restore_status": "restored",
+      "link_repair_notes": [
+        "replaced \\.\\./\\.\\./project-management/kanban/ -> ../../kanban/"
+      ],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "knowledge/use-cases/templates/DISCOVERED_USE_CASE_TEMPLATE.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:24Z",
+      "restore_status": "restored",
+      "link_repair_notes": [],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "analysis/cmw-ordering-flaw-analysis.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:24Z",
+      "restore_status": "restored",
+      "link_repair_notes": [],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "analysis/package-management-implementation-plan.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:24Z",
+      "restore_status": "restored",
+      "link_repair_notes": [],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "analysis/package-management-investigation-report.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:24Z",
+      "restore_status": "restored",
+      "link_repair_notes": [
+        "replaced docs/project-management/kanban/ -> docs/kanban/"
+      ],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "analysis/package-management-prioritization-review.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:24Z",
+      "restore_status": "restored",
+      "link_repair_notes": [],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "analysis/perpetual-task-range-options-analysis.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:24Z",
+      "restore_status": "restored",
+      "link_repair_notes": [
+        "replaced docs/project-management/kanban/ -> docs/kanban/"
+      ],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "analysis/phase3-package-distribution-plan.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:24Z",
+      "restore_status": "restored",
+      "link_repair_notes": [],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "analysis/repository-story-abstract-space-contradiction-analysis.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:24Z",
+      "restore_status": "restored",
+      "link_repair_notes": [
+        "replaced docs/project-management/kanban/ -> docs/kanban/"
+      ],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "analysis/task-template-system-analysis.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:24Z",
+      "restore_status": "restored",
+      "link_repair_notes": [],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "analysis/ukw-versioning-reasoning-analysis.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:24Z",
+      "restore_status": "restored",
+      "link_repair_notes": [],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "maintenance/BUILD_AND_UPLOAD.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:24Z",
+      "restore_status": "restored",
+      "link_repair_notes": [],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "maintenance/BUILD_PACKAGES.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:24Z",
+      "restore_status": "restored",
+      "link_repair_notes": [],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "maintenance/BUILD_PACKAGES_COMMANDS.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:24Z",
+      "restore_status": "restored",
+      "link_repair_notes": [],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "maintenance/README.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:24Z",
+      "restore_status": "restored",
+      "link_repair_notes": [],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "maintenance/UPLOAD_PACKAGES.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:24Z",
+      "restore_status": "restored",
+      "link_repair_notes": [],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "maintenance/book-repo-docs-scope.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:24Z",
+      "restore_status": "restored",
+      "link_repair_notes": [
+        "batch: \\.\\./project-management/kanban/ -> ../kanban/"
+      ],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "maintenance/br087-framework-release-republish-checklist.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:24Z",
+      "restore_status": "restored",
+      "link_repair_notes": [
+        "batch: \\.\\./project-management/kanban/ -> ../kanban/"
+      ],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "maintenance/changelog-directory-consolidation-manifest.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:24Z",
+      "restore_status": "restored",
+      "link_repair_notes": [],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "maintenance/coordinate-remediation-uxr018-e05s09t12.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:24Z",
+      "restore_status": "restored",
+      "link_repair_notes": [
+        "batch: \\.\\./project-management/kanban/ -> ../kanban/"
+      ],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "maintenance/docusaurus-ci-dedup-verification-evidence-E05S09T14-wave2.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:24Z",
+      "restore_status": "restored",
+      "link_repair_notes": [],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "maintenance/docusaurus-corpus-triage-fr-067.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:25Z",
+      "restore_status": "restored",
+      "link_repair_notes": [
+        "batch: \\.\\./project-management/kanban/ -> ../kanban/"
+      ],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "maintenance/fr099-phase3-public-repo-bootstrap.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:25Z",
+      "restore_status": "restored",
+      "link_repair_notes": [
+        "replaced docs/project-management/kanban/ -> docs/kanban/"
+      ],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "maintenance/fr099-phase4-rewire-and-verify.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:25Z",
+      "restore_status": "restored",
+      "link_repair_notes": [
+        "replaced docs/project-management/kanban/ -> docs/kanban/"
+      ],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "maintenance/logs/mmw/MMW-2026-03-16.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:25Z",
+      "restore_status": "restored",
+      "link_repair_notes": [
+        "replaced docs/project-management/kanban/ -> docs/kanban/"
+      ],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "maintenance/logs/uxr-005-spacing-20260601.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:25Z",
+      "restore_status": "restored",
+      "link_repair_notes": [
+        "replaced \\.\\./\\.\\./project-management/kanban/ -> ../../kanban/"
+      ],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "maintenance/release-checklist-templates.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:25Z",
+      "restore_status": "restored",
+      "link_repair_notes": [
+        "replaced docs/project-management/kanban/ -> docs/kanban/"
+      ],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "maintenance/release-configuration-examples.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:25Z",
+      "restore_status": "restored",
+      "link_repair_notes": [],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "maintenance/release-integration-guides.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:25Z",
+      "restore_status": "restored",
+      "link_repair_notes": [],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "maintenance/release-quick-reference.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:25Z",
+      "restore_status": "restored",
+      "link_repair_notes": [],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "maintenance/release-runbook.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:25Z",
+      "restore_status": "restored",
+      "link_repair_notes": [
+        "replaced docs/project-management/kanban/ -> docs/kanban/"
+      ],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "maintenance/semver-registry-collision-repair-2026-06-04.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:25Z",
+      "restore_status": "restored",
+      "link_repair_notes": [],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "maintenance/semver-verification-evidence-E03S02T12-wave3.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:25Z",
+      "restore_status": "restored",
+      "link_repair_notes": [],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "maintenance/v-band-verification-scan-2026-06-05.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:25Z",
+      "restore_status": "restored",
+      "link_repair_notes": [],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "journals/JOURNAL_SCHEMA.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:25Z",
+      "restore_status": "restored",
+      "link_repair_notes": [],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "journals/README.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:25Z",
+      "restore_status": "restored",
+      "link_repair_notes": [],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "journals/RECOVERY_PROCEDURE.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:25Z",
+      "restore_status": "restored",
+      "link_repair_notes": [],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "journals/ROLLBACK_CONTRACT.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:25Z",
+      "restore_status": "restored",
+      "link_repair_notes": [],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "architecture/README.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:25Z",
+      "restore_status": "restored",
+      "link_repair_notes": [],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "architecture/standards-and-adrs/ADR-005-ollama-model-ecosystem.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:25Z",
+      "restore_status": "restored",
+      "link_repair_notes": [],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "architecture/standards-and-adrs/ADR-openclaw-process-sentinel-skill.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:25Z",
+      "restore_status": "restored",
+      "link_repair_notes": [],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "architecture/standards-and-adrs/FR-046-implementation-guide.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:25Z",
+      "restore_status": "restored",
+      "link_repair_notes": [],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "architecture/standards-and-adrs/agent-network-access-and-git-push-limitations.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:25Z",
+      "restore_status": "restored",
+      "link_repair_notes": [
+        "replaced \\.\\./\\.\\./project-management/kanban/ -> ../../kanban/"
+      ],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "architecture/standards-and-adrs/agentic-template-generator-design.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:25Z",
+      "restore_status": "restored",
+      "link_repair_notes": [],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "architecture/standards-and-adrs/ai-dev-kit-project-review.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:25Z",
+      "restore_status": "restored",
+      "link_repair_notes": [
+        "replaced docs/project-management/kanban/ -> docs/kanban/"
+      ],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "architecture/standards-and-adrs/changelog-archival-policy.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:25Z",
+      "restore_status": "restored",
+      "link_repair_notes": [],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "architecture/standards-and-adrs/changelog-management-policy.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:25Z",
+      "restore_status": "restored",
+      "link_repair_notes": [],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "architecture/standards-and-adrs/changelog-ordering-investigation-report.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:25Z",
+      "restore_status": "restored",
+      "link_repair_notes": [],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "architecture/standards-and-adrs/code-quality-kanban-integration.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:25Z",
+      "restore_status": "restored",
+      "link_repair_notes": [
+        "replaced docs/project-management/kanban/ -> docs/kanban/"
+      ],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "architecture/standards-and-adrs/code-quality-metrics-framework.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:25Z",
+      "restore_status": "restored",
+      "link_repair_notes": [
+        "replaced docs/project-management/kanban/ -> docs/kanban/"
+      ],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "architecture/standards-and-adrs/code-quality-monitoring-dashboards.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:25Z",
+      "restore_status": "restored",
+      "link_repair_notes": [
+        "replaced docs/project-management/kanban/ -> docs/kanban/"
+      ],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "architecture/standards-and-adrs/code-quality-monitoring-processes.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:25Z",
+      "restore_status": "restored",
+      "link_repair_notes": [
+        "replaced docs/project-management/kanban/ -> docs/kanban/"
+      ],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "architecture/standards-and-adrs/code-review-checklist-templates.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:25Z",
+      "restore_status": "restored",
+      "link_repair_notes": [
+        "replaced docs/project-management/kanban/ -> docs/kanban/"
+      ],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "architecture/standards-and-adrs/code-review-kanban-integration.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:25Z",
+      "restore_status": "restored",
+      "link_repair_notes": [
+        "replaced docs/project-management/kanban/ -> docs/kanban/"
+      ],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "architecture/standards-and-adrs/code-review-standards-and-guidelines.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:25Z",
+      "restore_status": "restored",
+      "link_repair_notes": [
+        "replaced docs/project-management/kanban/ -> docs/kanban/"
+      ],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "architecture/standards-and-adrs/code-review-workflow-processes.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:25Z",
+      "restore_status": "restored",
+      "link_repair_notes": [
+        "replaced docs/project-management/kanban/ -> docs/kanban/"
+      ],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "architecture/standards-and-adrs/cursor-ide-performance-considerations.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:25Z",
+      "restore_status": "restored",
+      "link_repair_notes": [
+        "replaced docs/project-management/kanban/ -> docs/kanban/"
+      ],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "architecture/standards-and-adrs/dev-kit-ipw-ipp-vs-icw-artifacts.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:25Z",
+      "restore_status": "restored",
+      "link_repair_notes": [],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "architecture/standards-and-adrs/dev-kit-kanban-versioning-rw-integration.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:25Z",
+      "restore_status": "restored",
+      "link_repair_notes": [
+        "replaced docs/project-management/kanban/ -> docs/kanban/"
+      ],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "architecture/standards-and-adrs/dev-kit-versioning-cookbook.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:25Z",
+      "restore_status": "restored",
+      "link_repair_notes": [
+        "replaced docs/project-management/kanban/ -> docs/kanban/"
+      ],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "architecture/standards-and-adrs/dev-kit-versioning-policy.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:25Z",
+      "restore_status": "restored",
+      "link_repair_notes": [
+        "replaced \\.\\./\\.\\./project-management/kanban/ -> ../../kanban/"
+      ],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "architecture/standards-and-adrs/doc-init-migration-guide.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:25Z",
+      "restore_status": "restored",
+      "link_repair_notes": [
+        "replaced docs/project-management/kanban/ -> docs/kanban/"
+      ],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "architecture/standards-and-adrs/doc-lifecycle-metadata-spec.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:25Z",
+      "restore_status": "restored",
+      "link_repair_notes": [],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "architecture/standards-and-adrs/doc-lifecycle-policy.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:25Z",
+      "restore_status": "restored",
+      "link_repair_notes": [],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "architecture/standards-and-adrs/documentation-health-monitoring.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:25Z",
+      "restore_status": "restored",
+      "link_repair_notes": [
+        "replaced docs/project-management/kanban/ -> docs/kanban/"
+      ],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "architecture/standards-and-adrs/documentation-maintenance-policy.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:25Z",
+      "restore_status": "restored",
+      "link_repair_notes": [
+        "replaced docs/project-management/kanban/ -> docs/kanban/"
+      ],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "architecture/standards-and-adrs/documentation-review-cadences.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:25Z",
+      "restore_status": "restored",
+      "link_repair_notes": [
+        "replaced docs/project-management/kanban/ -> docs/kanban/"
+      ],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "architecture/standards-and-adrs/documentation-review-workflow-guide.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:25Z",
+      "restore_status": "restored",
+      "link_repair_notes": [
+        "replaced docs/project-management/kanban/ -> docs/kanban/"
+      ],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "architecture/standards-and-adrs/documentation-update-triggers.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:25Z",
+      "restore_status": "restored",
+      "link_repair_notes": [
+        "replaced docs/project-management/kanban/ -> docs/kanban/"
+      ],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "architecture/standards-and-adrs/dual-versioning-package-managers.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:25Z",
+      "restore_status": "restored",
+      "link_repair_notes": [],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "architecture/standards-and-adrs/ecc-adk-harness-layer-integration-specification.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:25Z",
+      "restore_status": "restored",
+      "link_repair_notes": [
+        "replaced \\.\\./\\.\\./project-management/kanban/ -> ../../kanban/"
+      ],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "architecture/standards-and-adrs/ecc-adk-harness-layer-phase0-evaluation.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:25Z",
+      "restore_status": "restored",
+      "link_repair_notes": [
+        "replaced \\.\\./\\.\\./project-management/kanban/ -> ../../kanban/"
+      ],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "architecture/standards-and-adrs/environment-variables-sop.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:25Z",
+      "restore_status": "restored",
+      "link_repair_notes": [],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "architecture/standards-and-adrs/epic-story-path-migration-guide.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:25Z",
+      "restore_status": "restored",
+      "link_repair_notes": [
+        "replaced docs/project-management/kanban/ -> docs/kanban/",
+        "replaced \\.\\./\\.\\./project-management/kanban/ -> ../../kanban/"
+      ],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "architecture/standards-and-adrs/framework-auto-update-mechanisms.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:25Z",
+      "restore_status": "restored",
+      "link_repair_notes": [],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "architecture/standards-and-adrs/framework-backward-compatibility-policy.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:25Z",
+      "restore_status": "restored",
+      "link_repair_notes": [],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "architecture/standards-and-adrs/framework-compatibility-tracking.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:25Z",
+      "restore_status": "restored",
+      "link_repair_notes": [],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "architecture/standards-and-adrs/framework-dependency-architecture.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:25Z",
+      "restore_status": "restored",
+      "link_repair_notes": [
+        "replaced docs/project-management/kanban/ -> docs/kanban/"
+      ],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "architecture/standards-and-adrs/framework-health-dashboard-guide.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:25Z",
+      "restore_status": "restored",
+      "link_repair_notes": [
+        "replaced docs/project-management/kanban/ -> docs/kanban/"
+      ],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "architecture/standards-and-adrs/framework-health-metrics.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:25Z",
+      "restore_status": "restored",
+      "link_repair_notes": [
+        "replaced docs/project-management/kanban/ -> docs/kanban/"
+      ],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "architecture/standards-and-adrs/framework-health-monitoring-procedures.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:25Z",
+      "restore_status": "restored",
+      "link_repair_notes": [
+        "replaced docs/project-management/kanban/ -> docs/kanban/"
+      ],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "architecture/standards-and-adrs/framework-migration-guide.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:25Z",
+      "restore_status": "restored",
+      "link_repair_notes": [],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "architecture/standards-and-adrs/framework-release-process.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:25Z",
+      "restore_status": "restored",
+      "link_repair_notes": [
+        "replaced docs/project-management/kanban/ -> docs/kanban/"
+      ],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "architecture/standards-and-adrs/framework-update-cli-design.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:25Z",
+      "restore_status": "restored",
+      "link_repair_notes": [
+        "replaced docs/project-management/kanban/ -> docs/kanban/"
+      ],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "architecture/standards-and-adrs/framework-update-procedures.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:25Z",
+      "restore_status": "restored",
+      "link_repair_notes": [],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "architecture/standards-and-adrs/framework-version-tagging-strategy.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:25Z",
+      "restore_status": "restored",
+      "link_repair_notes": [],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "architecture/standards-and-adrs/framework-versioning-strategy.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:25Z",
+      "restore_status": "restored",
+      "link_repair_notes": [],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "architecture/standards-and-adrs/gap-log-schema.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:25Z",
+      "restore_status": "restored",
+      "link_repair_notes": [],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "architecture/standards-and-adrs/generator-framework-design.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:25Z",
+      "restore_status": "restored",
+      "link_repair_notes": [],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "architecture/standards-and-adrs/ipw-adr-necessity-checklist.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:25Z",
+      "restore_status": "restored",
+      "link_repair_notes": [
+        "replaced \\.\\./\\.\\./project-management/kanban/ -> ../../kanban/"
+      ],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "architecture/standards-and-adrs/kb-structure-overview.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:26Z",
+      "restore_status": "restored",
+      "link_repair_notes": [
+        "replaced docs/project-management/kanban/ -> docs/kanban/"
+      ],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "architecture/standards-and-adrs/legacy-repo-analysis.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:26Z",
+      "restore_status": "restored",
+      "link_repair_notes": [],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "architecture/standards-and-adrs/maintenance-automation-requirements.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:26Z",
+      "restore_status": "restored",
+      "link_repair_notes": [
+        "replaced docs/project-management/kanban/ -> docs/kanban/"
+      ],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "architecture/standards-and-adrs/maintenance-automation-scripts-and-tools.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:26Z",
+      "restore_status": "restored",
+      "link_repair_notes": [
+        "replaced docs/project-management/kanban/ -> docs/kanban/"
+      ],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "architecture/standards-and-adrs/maintenance-automation-usage-guide.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:26Z",
+      "restore_status": "restored",
+      "link_repair_notes": [
+        "replaced docs/project-management/kanban/ -> docs/kanban/"
+      ],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "architecture/standards-and-adrs/maintenance-automation-workflow-integration.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:26Z",
+      "restore_status": "restored",
+      "link_repair_notes": [
+        "replaced docs/project-management/kanban/ -> docs/kanban/"
+      ],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "architecture/standards-and-adrs/maintenance-kanban-integration.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:26Z",
+      "restore_status": "restored",
+      "link_repair_notes": [
+        "replaced docs/project-management/kanban/ -> docs/kanban/"
+      ],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "architecture/standards-and-adrs/maintenance-task-prioritization-framework.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:26Z",
+      "restore_status": "restored",
+      "link_repair_notes": [
+        "replaced docs/project-management/kanban/ -> docs/kanban/"
+      ],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "architecture/standards-and-adrs/maintenance-workflow-processes.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:26Z",
+      "restore_status": "restored",
+      "link_repair_notes": [
+        "replaced docs/project-management/kanban/ -> docs/kanban/"
+      ],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "architecture/standards-and-adrs/mixed-br-fr-scope-sop.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:26Z",
+      "restore_status": "restored",
+      "link_repair_notes": [
+        "replaced docs/project-management/kanban/ -> docs/kanban/",
+        "replaced \\.\\./\\.\\./project-management/kanban/ -> ../../kanban/"
+      ],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "architecture/standards-and-adrs/package-hash-verification-spec.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:26Z",
+      "restore_status": "restored",
+      "link_repair_notes": [],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "architecture/standards-and-adrs/package-maintenance-and-release.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:26Z",
+      "restore_status": "restored",
+      "link_repair_notes": [],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "architecture/standards-and-adrs/package-management-design.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:26Z",
+      "restore_status": "restored",
+      "link_repair_notes": [],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "architecture/standards-and-adrs/package-versioning-criteria.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:26Z",
+      "restore_status": "restored",
+      "link_repair_notes": [],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "architecture/standards-and-adrs/policy-comparison-starborn-vs-ai-dev-kit-proposal.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:26Z",
+      "restore_status": "restored",
+      "link_repair_notes": [],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "architecture/standards-and-adrs/policy-salience-schema.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:26Z",
+      "restore_status": "restored",
+      "link_repair_notes": [],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "architecture/standards-and-adrs/pre-release-feedback-mechanism-design.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:26Z",
+      "restore_status": "restored",
+      "link_repair_notes": [
+        "replaced docs/project-management/kanban/ -> docs/kanban/"
+      ],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "architecture/standards-and-adrs/repository-story-abstract-space-solution-design.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:26Z",
+      "restore_status": "restored",
+      "link_repair_notes": [
+        "replaced \\.\\./\\.\\./project-management/kanban/ -> ../../kanban/"
+      ],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "architecture/standards-and-adrs/repository-story-migration-plan.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:26Z",
+      "restore_status": "restored",
+      "link_repair_notes": [
+        "replaced \\.\\./\\.\\./project-management/kanban/ -> ../../kanban/"
+      ],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "architecture/standards-and-adrs/repository-story-migration-progress.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:26Z",
+      "restore_status": "restored",
+      "link_repair_notes": [
+        "replaced \\.\\./\\.\\./project-management/kanban/ -> ../../kanban/"
+      ],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "architecture/standards-and-adrs/repository-story-migration-status.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:26Z",
+      "restore_status": "restored",
+      "link_repair_notes": [
+        "replaced docs/project-management/kanban/ -> docs/kanban/",
+        "replaced \\.\\./\\.\\./project-management/kanban/ -> ../../kanban/"
+      ],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "architecture/standards-and-adrs/rw-changelog-commit-language-analysis.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:26Z",
+      "restore_status": "restored",
+      "link_repair_notes": [],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "architecture/standards-and-adrs/rw-pdca-integration-plan.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:26Z",
+      "restore_status": "restored",
+      "link_repair_notes": [],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "architecture/standards-and-adrs/semver-implementation-followup-spec.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:26Z",
+      "restore_status": "restored",
+      "link_repair_notes": [],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "architecture/standards-and-adrs/semver-mapping-implementation-impact.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:26Z",
+      "restore_status": "restored",
+      "link_repair_notes": [],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "architecture/standards-and-adrs/semver-mapping-proposal.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:26Z",
+      "restore_status": "restored",
+      "link_repair_notes": [],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "architecture/standards-and-adrs/semver-tag-collision-incident-2026-03-07.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:26Z",
+      "restore_status": "restored",
+      "link_repair_notes": [
+        "replaced docs/project-management/kanban/ -> docs/kanban/"
+      ],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "architecture/standards-and-adrs/specification-and-planning-artifacts-policy.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:26Z",
+      "restore_status": "restored",
+      "link_repair_notes": [],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "architecture/standards-and-adrs/task-naming-migration-guide.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:26Z",
+      "restore_status": "restored",
+      "link_repair_notes": [
+        "replaced docs/project-management/kanban/ -> docs/kanban/"
+      ],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "architecture/standards-and-adrs/task-template-cross-wiring-sop.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:26Z",
+      "restore_status": "restored",
+      "link_repair_notes": [
+        "replaced \\.\\./\\.\\./project-management/kanban/ -> ../../kanban/"
+      ],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "architecture/standards-and-adrs/task-template-generator-design.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:26Z",
+      "restore_status": "restored",
+      "link_repair_notes": [],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "architecture/standards-and-adrs/task-template-system-hybrid-adr.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:26Z",
+      "restore_status": "restored",
+      "link_repair_notes": [],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "architecture/standards-and-adrs/task-touch-mapping-examples.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:26Z",
+      "restore_status": "restored",
+      "link_repair_notes": [],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "architecture/standards-and-adrs/ultimate-canonical-cursorrules-structure.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:26Z",
+      "restore_status": "restored",
+      "link_repair_notes": [],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "architecture/standards-and-adrs/ultimate-canonical-kanban-structure.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:26Z",
+      "restore_status": "restored",
+      "link_repair_notes": [
+        "replaced docs/project-management/kanban/ -> docs/kanban/"
+      ],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "architecture/standards-and-adrs/ultimate-canonical-kb-structure.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:26Z",
+      "restore_status": "restored",
+      "link_repair_notes": [
+        "replaced \\.\\./\\.\\./project-management/kanban/ -> ../../kanban/"
+      ],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "architecture/standards-and-adrs/ultimate-canonical-workflow-structure.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:26Z",
+      "restore_status": "restored",
+      "link_repair_notes": [
+        "replaced docs/project-management/kanban/ -> docs/kanban/",
+        "replaced \\.\\./\\.\\./project-management/kanban/ -> ../../kanban/"
+      ],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "architecture/standards-and-adrs/versioning-error-reference-guide.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:26Z",
+      "restore_status": "restored",
+      "link_repair_notes": [
+        "replaced docs/project-management/kanban/ -> docs/kanban/"
+      ],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "architecture/standards-and-adrs/versioning-quick-reference.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:26Z",
+      "restore_status": "restored",
+      "link_repair_notes": [],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "architecture/standards-and-adrs/workflow-flaws-reference-guide.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:26Z",
+      "restore_status": "restored",
+      "link_repair_notes": [],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "architecture/standards-and-adrs/workflow-hardening-guide.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:26Z",
+      "restore_status": "restored",
+      "link_repair_notes": [],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "architecture/use-cases/CANONICAL_USE_CASE_TEMPLATE.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:26Z",
+      "restore_status": "restored",
+      "link_repair_notes": [],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "architecture/use-cases/README.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:26Z",
+      "restore_status": "restored",
+      "link_repair_notes": [],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "architecture/use-cases/canonical/README.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:26Z",
+      "restore_status": "restored",
+      "link_repair_notes": [],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "implementation-cycles/ARCHIVE-AGENT-001-E24S02T01-03-RESOLUTION.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:26Z",
+      "restore_status": "restored",
+      "link_repair_notes": [],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "implementation-cycles/DOC-AGENT-001-E24S01T01-04-RESOLUTION.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:26Z",
+      "restore_status": "restored",
+      "link_repair_notes": [],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "implementation-cycles/DOC-AGENT-001-E5S03T01-03-RESOLUTION.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:26Z",
+      "restore_status": "restored",
+      "link_repair_notes": [],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "implementation-cycles/E10S01-orchestration-plan.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:26Z",
+      "restore_status": "restored",
+      "link_repair_notes": [
+        "replaced docs/project-management/kanban/ -> docs/kanban/",
+        "batch: \\.\\./project-management/kanban/ -> ../kanban/"
+      ],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "implementation-cycles/E4S19T03-e6s07-default-housing-investigation-report.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:26Z",
+      "restore_status": "restored",
+      "link_repair_notes": [
+        "batch: \\.\\./project-management/kanban/ -> ../kanban/"
+      ],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "implementation-cycles/E6S07T104-release-automation-audit-report.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:26Z",
+      "restore_status": "restored",
+      "link_repair_notes": [],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "implementation-cycles/E6S07T104-remediation-implementation.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:26Z",
+      "restore_status": "restored",
+      "link_repair_notes": [],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "implementation-cycles/HANDOVER-2026-04-25-ukw-rw-e2s16t04.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:26Z",
+      "restore_status": "restored",
+      "link_repair_notes": [
+        "replaced docs/project-management/kanban/ -> docs/kanban/"
+      ],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "implementation-cycles/IPW-E3S02T12-task-touch-semver-collision-hardening.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:26Z",
+      "restore_status": "restored",
+      "link_repair_notes": [
+        "replaced docs/project-management/kanban/ -> docs/kanban/",
+        "batch: \\.\\./project-management/kanban/ -> ../kanban/"
+      ],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "implementation-cycles/IPW-E4S19T02-canonical-supporting-kanban-fbu-doc-naming-and-terminology.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:26Z",
+      "restore_status": "restored",
+      "link_repair_notes": [
+        "batch: \\.\\./project-management/kanban/ -> ../kanban/"
+      ],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "implementation-cycles/IPW-E5S09T11-docusaurus-monorepo-markdown-links-br068.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:26Z",
+      "restore_status": "restored",
+      "link_repair_notes": [
+        "batch: \\.\\./project-management/kanban/ -> ../kanban/"
+      ],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "implementation-cycles/IPW-E6S06T57-br039-vendor-blocker-planning.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:26Z",
+      "restore_status": "restored",
+      "link_repair_notes": [
+        "batch: \\.\\./project-management/kanban/ -> ../kanban/"
+      ],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "implementation-cycles/IPW-E6S06T62-global-ipw-gated-implementation-contract.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:26Z",
+      "restore_status": "restored",
+      "link_repair_notes": [
+        "batch: \\.\\./project-management/kanban/ -> ../kanban/"
+      ],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "implementation-cycles/IPW-E6S07T103-release-workflow-maintenance-perpetual.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:26Z",
+      "restore_status": "restored",
+      "link_repair_notes": [
+        "batch: \\.\\./project-management/kanban/ -> ../kanban/"
+      ],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "implementation-cycles/IPW-E6S07T112-install-feedback-submission-governance.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:26Z",
+      "restore_status": "restored",
+      "link_repair_notes": [
+        "replaced docs/project-management/kanban/ -> docs/kanban/",
+        "batch: \\.\\./project-management/kanban/ -> ../kanban/"
+      ],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "implementation-cycles/IPW-E6S07T113-rw-step-12-5-github-release-parser-hardening.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:26Z",
+      "restore_status": "restored",
+      "link_repair_notes": [
+        "replaced docs/project-management/kanban/ -> docs/kanban/",
+        "batch: \\.\\./project-management/kanban/ -> ../kanban/"
+      ],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "implementation-cycles/IPW-E6S09T01-greenfield-installation-fr080.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:26Z",
+      "restore_status": "restored",
+      "link_repair_notes": [
+        "batch: \\.\\./project-management/kanban/ -> ../kanban/"
+      ],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "implementation-cycles/IPW-E7S06T18-interactive-installer-kanban-pattern-clarity.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:26Z",
+      "restore_status": "restored",
+      "link_repair_notes": [
+        "batch: \\.\\./project-management/kanban/ -> ../kanban/"
+      ],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "implementation-cycles/IPW-PUBLICATION-BACKFILL-INVENTORY.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:26Z",
+      "restore_status": "restored",
+      "link_repair_notes": [
+        "replaced docs/project-management/kanban/ -> docs/kanban/"
+      ],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "implementation-cycles/PM-AGENT-002-COULD-HAVE-EXECUTION-SUMMARY.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:26Z",
+      "restore_status": "restored",
+      "link_repair_notes": [],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "implementation-cycles/PM-AGENT-002-COULD-HAVE-SETUP.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:26Z",
+      "restore_status": "restored",
+      "link_repair_notes": [],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "implementation-cycles/README.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:26Z",
+      "restore_status": "restored",
+      "link_repair_notes": [],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "implementation-cycles/RW-AGENT-001-RELEASE-EXECUTION-SUMMARY.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:26Z",
+      "restore_status": "restored",
+      "link_repair_notes": [],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "implementation-cycles/RW-AGENT-001-RELEASE-SETUP.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:26Z",
+      "restore_status": "restored",
+      "link_repair_notes": [],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "implementation-cycles/RW-VALIDATE-001-PRE-RELEASE-VALIDATION.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:26Z",
+      "restore_status": "restored",
+      "link_repair_notes": [],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "implementation-cycles/RW-VALIDATE-001-VALIDATION-RESULTS.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:26Z",
+      "restore_status": "restored",
+      "link_repair_notes": [
+        "replaced docs/project-management/kanban/ -> docs/kanban/"
+      ],
+      "exclusion_reason": null
+    },
+    {
+      "source_path": "implementation-cycles/archive/project-manager-coordination.md",
+      "restore_source": "git",
+      "source_commit": "6b563cdf^",
+      "export_timestamp": "2026-06-09T12:59:26Z",
+      "restore_status": "restored",
+      "link_repair_notes": [],
+      "exclusion_reason": null
+    }
+  ]
+}

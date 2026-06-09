@@ -75,9 +75,19 @@ def test_adr_024_not_stubbed() -> None:
     assert "notion_sot: true" not in frontmatter
 
 
-def test_knowledge_readme_references_adr024_stub_format() -> None:
+def test_knowledge_readme_documents_maintainer_kb_surface() -> None:
     text = KB_README.read_text(encoding="utf-8")
-    assert "ADR-024" in text
+    fr114 = json.loads(
+        (REPO_ROOT / "docs" / "knowledge" / "fr114-notion-migration-manifest.json").read_text(
+            encoding="utf-8"
+        )
+    )
+    if fr114.get("reverse_migration_complete"):
+        assert "FR-121" in text
+        assert "Git is the authoritative source" in text
+        assert "fr121-reverse-migration-manifest.json" in text
+    else:
+        assert "ADR-024" in text
     assert "interim until T04" not in text
 
 

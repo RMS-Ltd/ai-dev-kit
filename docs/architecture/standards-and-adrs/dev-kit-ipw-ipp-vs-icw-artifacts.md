@@ -1,12 +1,12 @@
 ---
 lifecycle: evergreen
-created_at: 2026-06-07T10:30:55Z
+ttl_days: null
+created_at: 2025-12-04T12:01:36Z
+expires_at: null
 housekeeping_policy: keep
-notion_sot: true
 ---
 
-# Dev Kit Ipw Ipp Vs Icw Artifacts
+> **MOVED:** Canonical location: [`docs/governance/standards/dev-kit-ipw-ipp-vs-icw-artifacts.md`](../../governance/standards/dev-kit-ipw-ipp-vs-icw-artifacts.md)  
+> **ADR:** [ADR-007](ADR-007-book-governance-document-topology.md)
 
-**SoT:** Notion Engineering KB — [Dev Kit Ipw Ipp Vs Icw Artifacts](https://www.notion.so/bfea12aedd0aceb24095af708b9c465a)
-
-> Migrated from `docs/architecture/standards-and-adrs/dev-kit-ipw-ipp-vs-icw-artifacts.md` per [FR-114](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/kanban/fr-br/FR-114-split-documentation-surfaces-docusaurus-public-notion-maintainer-kb.md). Full content lives in Notion.
+This stub replaces the former book SoT at this path. Open the link above for the current policy.

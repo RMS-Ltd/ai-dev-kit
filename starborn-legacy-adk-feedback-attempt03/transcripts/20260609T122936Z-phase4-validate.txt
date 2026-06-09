@@ -1,0 +1,31 @@
+=== attempt-03 | 20260609T122936Z UTC | phase4-validate ===
+cwd: /Users/rms/Documents/projects/starborn_legacy
+cmd: bash -c 
+set -euo pipefail
+. .venv-adk/bin/activate
+# RW-only validation gates
+python vendor/ai-dev-kit/packages/frameworks/workflow-mgt/scripts/install_release_workflow.py --check-deps
+python vendor/ai-dev-kit/packages/frameworks/workflow-mgt/scripts/verify_vendor_tree.py --vendor-root vendor/ai-dev-kit
+test -f rw-config.yaml
+test -f .cursorrules
+test -f src/starborn_legacy/version.py
+test -f CHANGELOG.md
+! test -d docs/kanban/epics
+python3 -c "import yaml; c=yaml.safe_load(open(\"rw-config.yaml\")); assert c.get(\"use_kanban\") is False; print(\"rw-config use_kanban: false OK\")"
+# Sign-off summary
+python3 -c "
+import json
+r=json.load(open(\"logs/ai-dev-kit/install/attempt-03/signoff-report.json\"))
+ready=sum(1 for i in r[\"issues\"] if i[\"ready\"])
+skip=sum(1 for i in r[\"issues\"] if i[\"skipped\"])
+not_ready=sum(1 for i in r[\"issues\"] if not i[\"ready\"] and not i[\"skipped\"])
+print(f\"sign-off: {ready} READY, {skip} SKIP, {not_ready} NOT READY (expected for RW-only / no kanban)\")
+"
+
+AI_DEV_KIT_INSTALL_LOG_PATH=/Users/rms/Documents/projects/starborn_legacy/logs/ai-dev-kit/install/attempt-03/session.log
+---
+OK: RW installer dependencies satisfied.
+  - pyyaml (pyyaml>=6.0)
+Vendor tree OK: /Users/rms/Documents/projects/starborn_legacy/vendor/ai-dev-kit
+rw-config use_kanban: false OK
+sign-off: 3 READY, 3 SKIP, 2 NOT READY (expected for RW-only / no kanban)

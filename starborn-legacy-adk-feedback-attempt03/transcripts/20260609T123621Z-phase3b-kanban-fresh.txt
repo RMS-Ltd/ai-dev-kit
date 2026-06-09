@@ -1,0 +1,103 @@
+=== attempt-03 | 20260609T123621Z UTC | phase3b-kanban-fresh ===
+cwd: /Users/rms/Documents/projects/starborn_legacy
+cmd: bash -c 
+set -euo pipefail
+. .venv-adk/bin/activate
+# ADK v3 Kanban greenfield target (legacy source remains KB/PM_and_Portfolio/)
+python vendor/ai-dev-kit/packages/frameworks/kanban/scripts/install_kanban_framework.py \
+  --mode fresh \
+  --kanban-path docs/kanban \
+  --force
+echo "--- post-kanban ---"
+test -f docs/kanban/kboard.md && echo "OK: docs/kanban/kboard.md"
+test -d docs/kanban/epics && echo "OK: docs/kanban/epics"
+ls docs/kanban/epics | head -8
+echo "ADK epic dirs:" $(ls -d docs/kanban/epics/epic-* 2>/dev/null | wc -l)
+test -f KB/PM_and_Portfolio/epics/overview/KANBAN_BOARD.md && echo "OK: legacy KB kanban still present"
+
+AI_DEV_KIT_INSTALL_LOG_PATH=/Users/rms/Documents/projects/starborn_legacy/logs/ai-dev-kit/install/attempt-03/session.log
+---
+ERROR [ADK-I04.E01] Install GitHub sign-off not ready — 2 contract check(s) not READY
+  → Run install_github_issue_signoff.py and resolve each NOT READY entry.
+AI Dev Kit v0.0.1+1
+============================================================
+[AI Dev Kit v0.0.1+1] Kanban Framework Installation
+============================================================
+📁 Project root: /Users/rms/Documents/projects/starborn_legacy
+📁 Kanban path: /Users/rms/Documents/projects/starborn_legacy/docs/kanban
+🔧 Mode: fresh
+============================================================
+
+🔍 Step 3.5: Validating installation...
+============================================================
+
+⚠️  WARNINGS (should be reviewed):
+  ⚠️  No kanban board files found (kboard.md, kanban-structure.md, or _index.md). Board files are recommended for project management.
+
+✅ Validation passed with warnings
+
+⚠️  BROWNFIELD NOTE: --mode fresh installs canonical epic *templates* into an empty Kanban root. On existing repos with backlog/docs, prefer --mode migration or canonical_adoption. See INSTALL_IN_YOUR_PROJECT.md → Brownfield adoption (FR-081).
+
+🆕 Fresh install mode: Installing canonical epics and consumer board skeleton...
+  ✅ Created consumer board: /Users/rms/Documents/projects/starborn_legacy/docs/kanban/kboard.md
+  ✅ Created consumer structure: /Users/rms/Documents/projects/starborn_legacy/docs/kanban/kanban-structure.md (template: /Users/rms/Documents/projects/starborn_legacy/vendor/ai-dev-kit/packages/frameworks/kanban/templates/KANBAN_STRUCTURE_TEMPLATE.md)
+  ✅ Created consumer board guide: /Users/rms/Documents/projects/starborn_legacy/docs/kanban/kanban-board-guide.md
+🔧 Installing canonical core epics from templates...
+  ✅ Epic 1 installed from template: epics/epic-01-Project-Core.md → epics/epic-1/epic-1.md
+  ✅ Epic 2 installed from template: epics/epic-02-Workflow-Management.md → epics/epic-2/epic-2.md
+  ✅ Epic 3 installed from template: epics/epic-03-Versioning.md → epics/epic-3/epic-3.md
+  ✅ Epic 4 installed from template: epics/epic-04-Kanban-Framework.md → epics/epic-4/epic-4.md
+  ✅ Epic 5 installed from template: epics/epic-05-FR-Implementation.md → epics/epic-5/epic-5.md
+  ✅ Epic 6 installed from template: epics/epic-06-BR-Implementation.md → epics/epic-6/epic-6.md
+  ✅ Epic 7 installed from template: epics/epic-07-UXR.md → epics/epic-7/epic-7.md
+  ✅ Epic 8 installed from template: epics/epic-08-Codebase-Maintenance.md → epics/epic-8/epic-8.md
+  ✅ Epic 10 installed from template: epics/Epic-10-Data-Management.md → epics/epic-10/epic-10.md
+  ✅ Epic 18 installed from template: epics/Epic-18-Documentation.md → epics/epic-18/epic-18.md
+  ✅ Epic 22 installed from template: epic-22/epic-22.md → epics/epic-22/epic-22.md
+  ✅ Epic 23 installed from template: epic-23/epic-23.md → epics/epic-23/epic-23.md
+✅ Fresh install complete (canonical epics and consumer board skeleton installed)
+
+============================================================
+✅ Installation complete!
+Final status: SUCCESS
+============================================================
+
+============================================================
+GitHub Issue install sign-off (contract-driven)
+============================================================
+GitHub Issue install sign-off
+  Project: /Users/rms/Documents/projects/starborn_legacy
+  Contract: github-issue-install-signoff-contract.yaml
+
+  [NOT READY] BR-084 #16 — RW install mode C missing task_doc_pattern
+           ✗ rw_config_patterns: missing key kanban_root; missing key epic_doc_pattern; missing key story_doc_pattern; missing key task_doc_pattern; epic_doc_pattern does not contain 'epic-' (got ''); story_doc_pattern does not contain 'story-' (got ''); task_doc_pattern does not contain any of ['T{task', 't{task'] (got '')
+  [SKIP] BR-083 #15 — RW install default patterns mismatch fresh kanban layout
+           blocked by dependency BR-084
+  [NOT READY] UXR-017 #20 — Kanban epic/story path lowercase naming (adopter tree)
+           ✗ no_capitalised_kanban_segments: kanban epics/ not found (install kanban first)
+           ✗ kanban_paths_padding: kanban epics/ not found
+  [SKIP] BR-080 #12 — Kanban fresh mode without --force on empty repo
+           kit_only — not evaluated on adopter install
+  [SKIP] BR-086 #17 — RW install lowercase fresh kanban patterns and sign-off
+           blocked by dependency BR-084
+  [READY] BR-088 #18 — RW install mode C missing version_file scaffold
+           ✓ version_file_exists: version_file exists: src/starborn_legacy/version.py
+  [READY] BR-089 #19 — RW install mode C does not create main_changelog (CHANGELOG.md)
+           ✓ version_file_exists: main_changelog exists: CHANGELOG.md
+  [READY] BR-082 #14 — RW install missing pyyaml preflight
+           ✓ command: exit 0
+
+Report written: /Users/rms/Documents/projects/starborn_legacy/logs/ai-dev-kit/install/signoff-report.json
+--- post-kanban ---
+OK: docs/kanban/kboard.md
+OK: docs/kanban/epics
+epic-01
+epic-02
+epic-03
+epic-04
+epic-05
+epic-06
+epic-07
+epic-08
+ADK epic dirs: 12
+OK: legacy KB kanban still present

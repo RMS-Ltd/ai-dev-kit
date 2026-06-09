@@ -1,5 +1,0 @@
-=== 20260609T093246Z UTC | verify-vendor ===
-cwd: /Users/rms/Documents/projects/starborn_legacy
-cmd: .venv/bin/python vendor/ai-dev-kit/packages/frameworks/workflow-mgt/scripts/verify_vendor_tree.py --vendor-root vendor/ai-dev-kit
----
-Vendor tree OK: /Users/rms/Documents/projects/starborn_legacy/vendor/ai-dev-kit

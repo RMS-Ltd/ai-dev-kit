@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Completed Tasks
 
-**Last Updated:** 2026-06-09 (RW E06:S09:T25 — attempt 2 + F9 triage)
-**Version:** v0.6.9.25+3
+**Last Updated:** 2026-06-09 (RW E05:S08:T05 — FR-121 reverse migration)
+**Version:** v0.5.8.5+2
 
 > **For MoSCOW prioritized tasks, see:** [`kboard.md`](kboard.md)  
 > **For completed FR/BR/UXR intake items, see:** [`intake-completed.md`](intake-completed.md)
@@ -19,6 +19,10 @@ housekeeping_policy: keep
 ---
 
 ## 20 Most Recently Completed Tasks
+
+#### **RW (2026-06-09)** — E05:S08:T05 @ **v0.5.8.5+2** (FR-121 wave 1 — reverse Notion migration to git-internal maintainer KB)
+
+- **[E05:S08:T05](epics/epic-05/story-08-knowledge-base/T05-reverse-notion-migration-git-internal-maintainer-kb-fr121.md)** — Restored 218 manifest paths from pre-stub git; `fr121-reverse-migration-manifest.json`; git SoT README. [FR-121](fr-br/FR-121-git-internal-maintainer-kb-oss-documentation-surfaces.md) · [—IPP—](../../implementation-cycles/IPP-E05S08T05-reverse-notion-migration-git-internal-maintainer-kb-fr121.md)
 
 #### **RW (2026-06-09)** — E06:S09:T25 @ **v0.6.9.25+3** (Starborn attempt 2 closure — F9 v1 catalog triage)
 

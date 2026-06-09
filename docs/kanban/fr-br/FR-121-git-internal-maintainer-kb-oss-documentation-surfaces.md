@@ -14,7 +14,7 @@ housekeeping_policy: keep
 **Submitted By:** User (docs/KB architecture discussion)  
 **Priority:** HIGH (Should Have — MoSCOW **S**)  
 **Status:** ACCEPTED (intake versioned)  
-**Version:** v0.5.8.5+1 (E05:S08:T05 RW `-k` kanban init @ 2026-06-09)
+**Version:** v0.5.8.5+2 (E05:S08:T05 wave 1 complete @ 2026-06-09)
 
 **Implementing Tasks:**
 
@@ -77,7 +77,7 @@ The Docusaurus CI win from FR-114 does **not** require Notion — exclude globs 
 
 ### Functional Requirements
 
-- [ ] **FR-121-F1:** Export Notion pages listed in [`fr114-notion-migration-manifest.json`](../../knowledge/fr114-notion-migration-manifest.json) and restore **full markdown** at original `source_path` values; remove `notion_sot: true` stub indirection.
+- [x] **FR-121-F1:** Export Notion pages listed in [`fr114-notion-migration-manifest.json`](../../knowledge/fr114-notion-migration-manifest.json) and restore **full markdown** at original `source_path` values; remove `notion_sot: true` stub indirection. (**E05:S08:T05** @ v0.5.8.5+2 — git restore from `6b563cdf^`)
 - [ ] **FR-121-F2:** Publish **ADR-026** superseding ADR-024 maintainer/Notion SoT rules; retain Docusaurus allowlist and git workflow SoT matrix from ADR-024 where still valid.
 - [ ] **FR-121-F3:** Replace **`P-NOTION-FIRST`** with **`P-GIT-MAINTAINER`** in `AGENTS.md`, `docs/project-agent-manifest.json`, and related bootstrap docs — `maintainer-kb` track loads repo paths, not Notion MCP.
 - [ ] **FR-121-F4:** Add `documentation_surfaces` and `maintainer_editor_profile` keys to `rw-config.yaml` schema (documented); default `maintainer_kb.sot: git`.

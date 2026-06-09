@@ -1,6 +1,10 @@
 #!/usr/bin/env python3
 """
 Apply FR-114 git stubs from migration manifest (E05:S08:T03).
+
+DEPRECATED (FR-121 / E05:S08:T05): Forward stub application superseded by
+git-internal maintainer KB. Use scripts/reverse_notion_migration_fr121.py to
+restore full text. Retained for forensic reference only.
 """
 
 from __future__ import annotations

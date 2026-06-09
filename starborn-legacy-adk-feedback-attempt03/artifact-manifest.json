@@ -1,0 +1,31 @@
+{
+  "session_id": "20260609-attempt-03",
+  "generated_at": "2026-06-09T12:45:00Z",
+  "path_convention": "paths relative to starborn_legacy project root",
+  "transcripts": [
+    "logs/ai-dev-kit/install/attempt-03/transcripts/20260609T122544Z-preflight.txt",
+    "logs/ai-dev-kit/install/attempt-03/transcripts/20260609T122810Z-phase1-download.txt",
+    "logs/ai-dev-kit/install/attempt-03/transcripts/20260609T122857Z-phase2-venv.txt",
+    "logs/ai-dev-kit/install/attempt-03/transcripts/20260609T122906Z-phase2-verify.txt",
+    "logs/ai-dev-kit/install/attempt-03/transcripts/20260609T122915Z-phase3-rw-only.txt",
+    "logs/ai-dev-kit/install/attempt-03/transcripts/20260609T122936Z-phase4-validate.txt",
+    "logs/ai-dev-kit/install/attempt-03/transcripts/20260609T123224Z-restore-legacy-kanban.txt",
+    "logs/ai-dev-kit/install/attempt-03/transcripts/20260609T123621Z-phase3b-kanban-fresh.txt",
+    "logs/ai-dev-kit/install/attempt-03/transcripts/20260609T123637Z-phase3c-rw-kanban-config.txt"
+  ],
+  "configs": [
+    "config/greenfield-rw-install-input.yaml",
+    "config/greenfield-rw-install-input-rw-only.yaml",
+    "config/greenfield-rw-install-input-mode-c.yaml"
+  ],
+  "outputs": [
+    "rw-config.yaml",
+    "docs/kanban/kboard.md",
+    "KB/PM_and_Portfolio/epics/overview/KANBAN_BOARD.md",
+    "logs/ai-dev-kit/install/attempt-03/signoff-report.json",
+    "logs/ai-dev-kit/install/attempt-03/session.log"
+  ],
+  "zip_bundle_project_root": "starborn-legacy-adk-feedback-attempt03.zip",
+  "package_status": "final",
+  "finalized_at": "2026-06-09T14:00:00Z"
+}

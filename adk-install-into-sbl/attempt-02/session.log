@@ -1,6 +1,0 @@
-[2026-06-09T09:33:17Z] [INFO] kanban.install [KANBAN_MODE] Kanban install starting (mode=fresh, kanban_path=/Users/rms/Documents/projects/starborn_legacy/docs/kanban, dry_run=False)
-[2026-06-09T09:33:17Z] [INFO] kanban.install [KANBAN_FRESH] Created fresh-install skeleton at /Users/rms/Documents/projects/starborn_legacy/docs/kanban
-[2026-06-09T09:33:17Z] [INFO] kanban.install [KANBAN_VALIDATE] Validating installation at /Users/rms/Documents/projects/starborn_legacy/docs/kanban
-[2026-06-09T09:33:17Z] [INFO] kanban.install [KANBAN_VALIDATE] Validation passed with warnings
-[2026-06-09T09:33:17Z] [INFO] kanban.install [KANBAN_FRESH_INSTALL] Fresh install mode: installing canonical epics and consumer board skeleton
-[2026-06-09T09:33:17Z] [INFO] kanban.install [KANBAN_FRESH_INSTALL] Fresh install complete (canonical epics and consumer board skeleton installed)

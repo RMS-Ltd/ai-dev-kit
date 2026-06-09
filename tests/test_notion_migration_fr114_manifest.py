@@ -43,6 +43,8 @@ def test_manifest_excludes_adopter_and_ipp_icw(manifest: dict) -> None:
 
 
 def test_stubbed_files_have_notion_sot_frontmatter(manifest: dict) -> None:
+    if manifest.get("reverse_migration_complete"):
+        pytest.skip("FR-121 reverse migration complete — stubs removed (E05:S08:T05)")
     for entry in manifest["entries"]:
         path = DOCS / entry["source_path"]
         assert path.exists(), entry["source_path"]

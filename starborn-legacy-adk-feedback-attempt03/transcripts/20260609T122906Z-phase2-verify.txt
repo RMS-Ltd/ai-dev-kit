@@ -1,0 +1,10 @@
+=== attempt-03 | 20260609T122906Z UTC | phase2-verify ===
+cwd: /Users/rms/Documents/projects/starborn_legacy
+cmd: bash -c 
+set -euo pipefail
+. .venv-adk/bin/activate
+python vendor/ai-dev-kit/packages/frameworks/workflow-mgt/scripts/verify_vendor_tree.py --vendor-root vendor/ai-dev-kit
+
+AI_DEV_KIT_INSTALL_LOG_PATH=/Users/rms/Documents/projects/starborn_legacy/logs/ai-dev-kit/install/attempt-03/session.log
+---
+Vendor tree OK: /Users/rms/Documents/projects/starborn_legacy/vendor/ai-dev-kit

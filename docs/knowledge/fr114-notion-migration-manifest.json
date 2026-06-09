@@ -36,9 +36,10 @@
       "notion_parent_page_id": "378b6f89-62c1-810b-bac6-cfe89a530f2a",
       "notion_url": "https://www.notion.so/9c2fa8398e0f19d176897a802097b854",
       "notion_page_id": "9c2fa8398e0f19d176897a802097b854",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:30:55Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "knowledge/analysis/abstract-anti-patterns-use-case-exposed-design-flaw.md",
@@ -47,9 +48,10 @@
       "notion_parent_page_id": "378b6f89-62c1-810b-bac6-cfe89a530f2a",
       "notion_url": "https://www.notion.so/43c3ce4bcf2fa7a755742428ad4900f6",
       "notion_page_id": "43c3ce4bcf2fa7a755742428ad4900f6",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:30:55Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "knowledge/analysis/adk-drift-analysis.md",
@@ -58,9 +60,10 @@
       "notion_parent_page_id": "378b6f89-62c1-810b-bac6-cfe89a530f2a",
       "notion_url": "https://www.notion.so/e2f8f50279f4370f28089c2bd04a70cd",
       "notion_page_id": "e2f8f50279f4370f28089c2bd04a70cd",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:30:55Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "knowledge/analysis/adk-hardening-recommendations.md",
@@ -69,9 +72,10 @@
       "notion_parent_page_id": "378b6f89-62c1-810b-bac6-cfe89a530f2a",
       "notion_url": "https://www.notion.so/5e99bd64ac4781d98a68d50249945793",
       "notion_page_id": "5e99bd64ac4781d98a68d50249945793",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:30:55Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "knowledge/analysis/adk-implementation-analysis-execution-plan.md",
@@ -80,9 +84,10 @@
       "notion_parent_page_id": "378b6f89-62c1-810b-bac6-cfe89a530f2a",
       "notion_url": "https://www.notion.so/119acdd88ed80998da68a460c2bddd65",
       "notion_page_id": "119acdd88ed80998da68a460c2bddd65",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:30:55Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "knowledge/analysis/adk-implementation-analysis-report.md",
@@ -91,9 +96,10 @@
       "notion_parent_page_id": "378b6f89-62c1-810b-bac6-cfe89a530f2a",
       "notion_url": "https://www.notion.so/2c5ba8399dbbf8a63d531f61e8bd0a18",
       "notion_page_id": "2c5ba8399dbbf8a63d531f61e8bd0a18",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:30:55Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "knowledge/analysis/adk-implementation-patterns.md",
@@ -102,9 +108,10 @@
       "notion_parent_page_id": "378b6f89-62c1-810b-bac6-cfe89a530f2a",
       "notion_url": "https://www.notion.so/e102c9316a1c5b43f44f42344401ff44",
       "notion_page_id": "e102c9316a1c5b43f44f42344401ff44",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:30:55Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "knowledge/analysis/adk-learning-synthesis.md",
@@ -113,9 +120,10 @@
       "notion_parent_page_id": "378b6f89-62c1-810b-bac6-cfe89a530f2a",
       "notion_url": "https://www.notion.so/062a1894ccf08b0c134038dedd4a852b",
       "notion_page_id": "062a1894ccf08b0c134038dedd4a852b",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:30:55Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "knowledge/analysis/adk-mashup-issues.md",
@@ -124,9 +132,10 @@
       "notion_parent_page_id": "378b6f89-62c1-810b-bac6-cfe89a530f2a",
       "notion_url": "https://www.notion.so/ec928227a3e3b12e597da8d01c894975",
       "notion_page_id": "ec928227a3e3b12e597da8d01c894975",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:30:55Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "knowledge/analysis/ai-dev-kit-sitrep.md",
@@ -135,9 +144,10 @@
       "notion_parent_page_id": "378b6f89-62c1-810b-bac6-cfe89a530f2a",
       "notion_url": "https://www.notion.so/329333e6498019df7d94616779903bd4",
       "notion_page_id": "329333e6498019df7d94616779903bd4",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:30:55Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "knowledge/analysis/comprehensive-adk-analysis-framework.md",
@@ -146,9 +156,10 @@
       "notion_parent_page_id": "378b6f89-62c1-810b-bac6-cfe89a530f2a",
       "notion_url": "https://www.notion.so/fbc8499687c21ac1d1a766b66dfec74a",
       "notion_page_id": "fbc8499687c21ac1d1a766b66dfec74a",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:30:55Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "knowledge/analysis/comprehensive-project-analysis-framework.md",
@@ -157,9 +168,10 @@
       "notion_parent_page_id": "378b6f89-62c1-810b-bac6-cfe89a530f2a",
       "notion_url": "https://www.notion.so/8f958c34b3ff7d41fe96bb6e9f1a1802",
       "notion_page_id": "8f958c34b3ff7d41fe96bb6e9f1a1802",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:30:55Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "knowledge/analysis/critical-framework-completion-plan.md",
@@ -168,9 +180,10 @@
       "notion_parent_page_id": "378b6f89-62c1-810b-bac6-cfe89a530f2a",
       "notion_url": "https://www.notion.so/1dd9d2df7ea3e4a6da54ac5281fcd9a9",
       "notion_page_id": "1dd9d2df7ea3e4a6da54ac5281fcd9a9",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:30:55Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "knowledge/analysis/cursorrules-structure-analysis.md",
@@ -179,9 +192,10 @@
       "notion_parent_page_id": "378b6f89-62c1-810b-bac6-cfe89a530f2a",
       "notion_url": "https://www.notion.so/e415c2800506ef70b2513a82888ac947",
       "notion_page_id": "e415c2800506ef70b2513a82888ac947",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:30:55Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "knowledge/analysis/debug-path-framework-analysis.md",
@@ -190,9 +204,10 @@
       "notion_parent_page_id": "378b6f89-62c1-810b-bac6-cfe89a530f2a",
       "notion_url": "https://www.notion.so/02b1ef306cecdbfcdef2efdd16ce5344",
       "notion_page_id": "02b1ef306cecdbfcdef2efdd16ce5344",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:30:55Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "knowledge/analysis/knowledge-documentation-structure-analysis.md",
@@ -201,9 +216,10 @@
       "notion_parent_page_id": "378b6f89-62c1-810b-bac6-cfe89a530f2a",
       "notion_url": "https://www.notion.so/8d5611970f4774b36be97afe401ac1f1",
       "notion_page_id": "8d5611970f4774b36be97afe401ac1f1",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:30:55Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "knowledge/analysis/meta-analysis-canonical-vs-legacy-matrices.md",
@@ -212,9 +228,10 @@
       "notion_parent_page_id": "378b6f89-62c1-810b-bac6-cfe89a530f2a",
       "notion_url": "https://www.notion.so/812dd63c1b4d95c270738f1578b434fa",
       "notion_page_id": "812dd63c1b4d95c270738f1578b434fa",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:30:55Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "knowledge/analysis/meta-analysis-convergence-divergence-maps.md",
@@ -223,9 +240,10 @@
       "notion_parent_page_id": "378b6f89-62c1-810b-bac6-cfe89a530f2a",
       "notion_url": "https://www.notion.so/2285682a65bf3fe03944698a5f619588",
       "notion_page_id": "2285682a65bf3fe03944698a5f619588",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:30:55Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "knowledge/analysis/meta-analysis-cursorrules-use-misuse.md",
@@ -234,9 +252,10 @@
       "notion_parent_page_id": "378b6f89-62c1-810b-bac6-cfe89a530f2a",
       "notion_url": "https://www.notion.so/99832e7b1458408fdb269764e50daf95",
       "notion_page_id": "99832e7b1458408fdb269764e50daf95",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:30:55Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "knowledge/analysis/meta-analysis-documentation-knowledge-structure.md",
@@ -245,9 +264,10 @@
       "notion_parent_page_id": "378b6f89-62c1-810b-bac6-cfe89a530f2a",
       "notion_url": "https://www.notion.so/543e0e3d2cdc8f864903896a0c0ecac6",
       "notion_page_id": "543e0e3d2cdc8f864903896a0c0ecac6",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:30:55Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "knowledge/analysis/meta-analysis-executive-summary.md",
@@ -256,9 +276,10 @@
       "notion_parent_page_id": "378b6f89-62c1-810b-bac6-cfe89a530f2a",
       "notion_url": "https://www.notion.so/9f799d59af96b8c4b9ce702e556e7181",
       "notion_page_id": "9f799d59af96b8c4b9ce702e556e7181",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:30:55Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "knowledge/analysis/meta-analysis-good-bad-practices.md",
@@ -267,9 +288,10 @@
       "notion_parent_page_id": "378b6f89-62c1-810b-bac6-cfe89a530f2a",
       "notion_url": "https://www.notion.so/73945f572d8324a320698ff2a99ddcf4",
       "notion_page_id": "73945f572d8324a320698ff2a99ddcf4",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:30:55Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "knowledge/analysis/meta-analysis-kanban-structure.md",
@@ -278,9 +300,10 @@
       "notion_parent_page_id": "378b6f89-62c1-810b-bac6-cfe89a530f2a",
       "notion_url": "https://www.notion.so/2d9fc6d8d89e4b41b694827d4a88c687",
       "notion_page_id": "2d9fc6d8d89e4b41b694827d4a88c687",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:30:55Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "knowledge/analysis/meta-analysis-pattern-frequency-tables.md",
@@ -289,9 +312,10 @@
       "notion_parent_page_id": "378b6f89-62c1-810b-bac6-cfe89a530f2a",
       "notion_url": "https://www.notion.so/bdc8977c119a3285a9ff069eaaa37752",
       "notion_page_id": "bdc8977c119a3285a9ff069eaaa37752",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:30:55Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "knowledge/analysis/meta-analysis-patterns-anti-patterns.md",
@@ -300,9 +324,10 @@
       "notion_parent_page_id": "378b6f89-62c1-810b-bac6-cfe89a530f2a",
       "notion_url": "https://www.notion.so/b1634410e3ae664b601818d5dd8ebe86",
       "notion_page_id": "b1634410e3ae664b601818d5dd8ebe86",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:30:55Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "knowledge/analysis/meta-analysis-workflows.md",
@@ -311,9 +336,10 @@
       "notion_parent_page_id": "378b6f89-62c1-810b-bac6-cfe89a530f2a",
       "notion_url": "https://www.notion.so/8547851069b4a07a68b43b54466f3417",
       "notion_page_id": "8547851069b4a07a68b43b54466f3417",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:30:55Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "knowledge/analysis/outstanding-work-summary.md",
@@ -322,9 +348,10 @@
       "notion_parent_page_id": "378b6f89-62c1-810b-bac6-cfe89a530f2a",
       "notion_url": "https://www.notion.so/b0a294bb418ed9375e28078f237956a4",
       "notion_page_id": "b0a294bb418ed9375e28078f237956a4",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:30:55Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "knowledge/analysis/pre-analysis-completion-strategy.md",
@@ -333,9 +360,10 @@
       "notion_parent_page_id": "378b6f89-62c1-810b-bac6-cfe89a530f2a",
       "notion_url": "https://www.notion.so/f07fcbed08f90df3250e7dd7fc0799d6",
       "notion_page_id": "f07fcbed08f90df3250e7dd7fc0799d6",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:30:55Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "knowledge/analysis/projects/agentic-ide-rules-adk-analysis.md",
@@ -344,9 +372,10 @@
       "notion_parent_page_id": "378b6f89-62c1-810b-bac6-cfe89a530f2a",
       "notion_url": "https://www.notion.so/845c4865fcf640b2f2e03ae275e65307",
       "notion_page_id": "845c4865fcf640b2f2e03ae275e65307",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:30:55Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "knowledge/analysis/projects/ai-dev-kit-adk-analysis.md",
@@ -355,9 +384,10 @@
       "notion_parent_page_id": "378b6f89-62c1-810b-bac6-cfe89a530f2a",
       "notion_url": "https://www.notion.so/fb1942ae1c7907312e3bd14cb288ecf4",
       "notion_page_id": "fb1942ae1c7907312e3bd14cb288ecf4",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:30:55Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "knowledge/analysis/projects/been-there-adk-analysis.md",
@@ -366,9 +396,10 @@
       "notion_parent_page_id": "378b6f89-62c1-810b-bac6-cfe89a530f2a",
       "notion_url": "https://www.notion.so/4849bf2410feede021c76bf83333a270",
       "notion_page_id": "4849bf2410feede021c76bf83333a270",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:30:55Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "knowledge/analysis/projects/confidentia-adk-analysis.md",
@@ -377,9 +408,10 @@
       "notion_parent_page_id": "378b6f89-62c1-810b-bac6-cfe89a530f2a",
       "notion_url": "https://www.notion.so/580eaea2ca98011bb30bc4a92bad267f",
       "notion_page_id": "580eaea2ca98011bb30bc4a92bad267f",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:30:55Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "knowledge/analysis/projects/dev-toolkit-adk-analysis.md",
@@ -388,9 +420,10 @@
       "notion_parent_page_id": "378b6f89-62c1-810b-bac6-cfe89a530f2a",
       "notion_url": "https://www.notion.so/14132fbb060bd4535a0200a32755b9bc",
       "notion_page_id": "14132fbb060bd4535a0200a32755b9bc",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:30:55Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "knowledge/analysis/projects/free-party-promoter-adk-analysis.md",
@@ -399,9 +432,10 @@
       "notion_parent_page_id": "378b6f89-62c1-810b-bac6-cfe89a530f2a",
       "notion_url": "https://www.notion.so/b57656f9bd98cfcd8cc4de3c04d5a4ff",
       "notion_page_id": "b57656f9bd98cfcd8cc4de3c04d5a4ff",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:30:55Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "knowledge/analysis/projects/fynd-deals-adk-analysis.md",
@@ -410,9 +444,10 @@
       "notion_parent_page_id": "378b6f89-62c1-810b-bac6-cfe89a530f2a",
       "notion_url": "https://www.notion.so/c930b827834207a1341aa8400742ccb7",
       "notion_page_id": "c930b827834207a1341aa8400742ccb7",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:30:55Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "knowledge/analysis/projects/qa-kb-adk-analysis.md",
@@ -421,9 +456,10 @@
       "notion_parent_page_id": "378b6f89-62c1-810b-bac6-cfe89a530f2a",
       "notion_url": "https://www.notion.so/57969066b846b9afaa7fb734903d4e2a",
       "notion_page_id": "57969066b846b9afaa7fb734903d4e2a",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:30:55Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "knowledge/analysis/projects/starborn-legacy-adk-analysis.md",
@@ -432,9 +468,10 @@
       "notion_parent_page_id": "378b6f89-62c1-810b-bac6-cfe89a530f2a",
       "notion_url": "https://www.notion.so/771b21c106ccbf3b3b8ef2a538031608",
       "notion_page_id": "771b21c106ccbf3b3b8ef2a538031608",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:30:55Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "knowledge/analysis/projects/vwmp-adk-analysis.md",
@@ -443,9 +480,10 @@
       "notion_parent_page_id": "378b6f89-62c1-810b-bac6-cfe89a530f2a",
       "notion_url": "https://www.notion.so/5bd8a2aa74078e4ef85b3f40a39dd5aa",
       "notion_page_id": "5bd8a2aa74078e4ef85b3f40a39dd5aa",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:30:55Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "knowledge/analysis/task-level-kanban-structure-analysis.md",
@@ -454,9 +492,10 @@
       "notion_parent_page_id": "378b6f89-62c1-810b-bac6-cfe89a530f2a",
       "notion_url": "https://www.notion.so/560c5cedc4d836860e7e8d2b5fc57965",
       "notion_page_id": "560c5cedc4d836860e7e8d2b5fc57965",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:30:55Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "knowledge/analysis/workflow-structure-analysis.md",
@@ -465,9 +504,10 @@
       "notion_parent_page_id": "378b6f89-62c1-810b-bac6-cfe89a530f2a",
       "notion_url": "https://www.notion.so/3e852b82d8498c13ffbd620ee3ef3c05",
       "notion_page_id": "3e852b82d8498c13ffbd620ee3ef3c05",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:30:55Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "knowledge/articles/README.md",
@@ -476,9 +516,10 @@
       "notion_parent_page_id": "378b6f89-62c1-810b-bac6-cfe89a530f2a",
       "notion_url": "https://www.notion.so/73ffd694657d2cab43062f09c02252f1",
       "notion_page_id": "73ffd694657d2cab43062f09c02252f1",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:30:55Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "knowledge/articles/cursor-scaling-long-running-autonomous-coding-agents.md",
@@ -487,9 +528,10 @@
       "notion_parent_page_id": "378b6f89-62c1-810b-bac6-cfe89a530f2a",
       "notion_url": "https://www.notion.so/f27c36e3b9959df9d59a3b78059045ca",
       "notion_page_id": "f27c36e3b9959df9d59a3b78059045ca",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:30:55Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "knowledge/articles/hybrid-task-template-system-building-better-templates.md",
@@ -498,9 +540,10 @@
       "notion_parent_page_id": "378b6f89-62c1-810b-bac6-cfe89a530f2a",
       "notion_url": "https://www.notion.so/8aa62836abc6399ad60752108fc01faf",
       "notion_page_id": "8aa62836abc6399ad60752108fc01faf",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:30:55Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "knowledge/guides/README.md",
@@ -509,9 +552,10 @@
       "notion_parent_page_id": "378b6f89-62c1-810b-bac6-cfe89a530f2a",
       "notion_url": "https://www.notion.so/7a63a2114d87150d563a9ab011169367",
       "notion_page_id": "7a63a2114d87150d563a9ab011169367",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:30:55Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "knowledge/guides/badge-setup-for-private-repos.md",
@@ -520,9 +564,10 @@
       "notion_parent_page_id": "378b6f89-62c1-810b-bac6-cfe89a530f2a",
       "notion_url": "https://www.notion.so/bc35e5313b5ee45dcbf9c3647c4cbc92",
       "notion_page_id": "bc35e5313b5ee45dcbf9c3647c4cbc92",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:30:55Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "knowledge/guides/building-persistent-knowledge.md",
@@ -531,9 +576,10 @@
       "notion_parent_page_id": "378b6f89-62c1-810b-bac6-cfe89a530f2a",
       "notion_url": "https://www.notion.so/17ae4e7ccfa537706eb89e7f6386da4c",
       "notion_page_id": "17ae4e7ccfa537706eb89e7f6386da4c",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:30:55Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "knowledge/guides/package-maintenance-and-release.md",
@@ -542,9 +588,10 @@
       "notion_parent_page_id": "378b6f89-62c1-810b-bac6-cfe89a530f2a",
       "notion_url": "https://www.notion.so/b952783fac77ea51d44a0e8f2e41c180",
       "notion_page_id": "b952783fac77ea51d44a0e8f2e41c180",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:30:55Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "knowledge/kb-migration-log.md",
@@ -553,9 +600,10 @@
       "notion_parent_page_id": "378b6f89-62c1-810b-bac6-cfe89a530f2a",
       "notion_url": "https://www.notion.so/111c94aa34b037ad6768152351d8f478",
       "notion_page_id": "111c94aa34b037ad6768152351d8f478",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:30:55Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "knowledge/reviews/pir/Epic-2/PIR-Epic-2-TEST-v0.2.5.10+1.md",
@@ -564,9 +612,10 @@
       "notion_parent_page_id": "378b6f89-62c1-810b-bac6-cfe89a530f2a",
       "notion_url": "https://www.notion.so/d6d5c4569c40fd7a12e31f567b34f808",
       "notion_page_id": "d6d5c4569c40fd7a12e31f567b34f808",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:30:55Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "knowledge/reviews/pir/Epic-2/PIR-TEST-EXECUTION-REPORT.md",
@@ -575,9 +624,10 @@
       "notion_parent_page_id": "378b6f89-62c1-810b-bac6-cfe89a530f2a",
       "notion_url": "https://www.notion.so/8a23282cd8fa9f93287e29f42fb514af",
       "notion_page_id": "8a23282cd8fa9f93287e29f42fb514af",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:30:55Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "knowledge/reviews/pir/README.md",
@@ -586,9 +636,10 @@
       "notion_parent_page_id": "378b6f89-62c1-810b-bac6-cfe89a530f2a",
       "notion_url": "https://www.notion.so/722ab43d6a8826cc6a2d80f92096184a",
       "notion_page_id": "722ab43d6a8826cc6a2d80f92096184a",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:30:55Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "knowledge/reviews/pir/Story-2/PIR-STORY-TEST-EXECUTION-REPORT.md",
@@ -597,9 +648,10 @@
       "notion_parent_page_id": "378b6f89-62c1-810b-bac6-cfe89a530f2a",
       "notion_url": "https://www.notion.so/4dfa70415bed8f9ddf962ac5ef529e05",
       "notion_page_id": "4dfa70415bed8f9ddf962ac5ef529e05",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:30:55Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "knowledge/reviews/pir/Story-2/PIR-Story-2-TEST-v0.2.2.8+1.md",
@@ -608,9 +660,10 @@
       "notion_parent_page_id": "378b6f89-62c1-810b-bac6-cfe89a530f2a",
       "notion_url": "https://www.notion.so/e52bba247b655f9c3eeccffc1bf48d8f",
       "notion_page_id": "e52bba247b655f9c3eeccffc1bf48d8f",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:30:55Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "knowledge/use-cases/discovered/README.md",
@@ -619,9 +672,10 @@
       "notion_parent_page_id": "378b6f89-62c1-810b-bac6-cfe89a530f2a",
       "notion_url": "https://www.notion.so/beaae5f70ce2a94383196f36973019d1",
       "notion_page_id": "beaae5f70ce2a94383196f36973019d1",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:30:55Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "knowledge/use-cases/discovered/UC-D-001-reopening-br-tasks.md",
@@ -630,9 +684,10 @@
       "notion_parent_page_id": "378b6f89-62c1-810b-bac6-cfe89a530f2a",
       "notion_url": "https://www.notion.so/8990eab0101eabb251a4536f59849fef",
       "notion_page_id": "8990eab0101eabb251a4536f59849fef",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:30:55Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "knowledge/use-cases/discovered/UC-D-002-bidirectional-wiring.md",
@@ -641,9 +696,10 @@
       "notion_parent_page_id": "378b6f89-62c1-810b-bac6-cfe89a530f2a",
       "notion_url": "https://www.notion.so/9082ed76c0ba2c98d60f87df60198ba7",
       "notion_page_id": "9082ed76c0ba2c98d60f87df60198ba7",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:30:55Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "knowledge/use-cases/discovered/UC-D-003-pattern-discovery-workflow.md",
@@ -652,9 +708,10 @@
       "notion_parent_page_id": "378b6f89-62c1-810b-bac6-cfe89a530f2a",
       "notion_url": "https://www.notion.so/18e3aad481dbf4872a36c8ea291bab5f",
       "notion_page_id": "18e3aad481dbf4872a36c8ea291bab5f",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:30:55Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "knowledge/use-cases/discovered/UC-D-004-story-task-docs-batch-creation.md",
@@ -663,9 +720,10 @@
       "notion_parent_page_id": "378b6f89-62c1-810b-bac6-cfe89a530f2a",
       "notion_url": "https://www.notion.so/7cbcbcc61b34dec188eb51307a16ca63",
       "notion_page_id": "7cbcbcc61b34dec188eb51307a16ca63",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:30:55Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "knowledge/use-cases/templates/DISCOVERED_USE_CASE_TEMPLATE.md",
@@ -674,9 +732,10 @@
       "notion_parent_page_id": "378b6f89-62c1-810b-bac6-cfe89a530f2a",
       "notion_url": "https://www.notion.so/66af6811826b36e4ccedcf30fee64246",
       "notion_page_id": "66af6811826b36e4ccedcf30fee64246",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:30:55Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "analysis/cmw-ordering-flaw-analysis.md",
@@ -685,9 +744,10 @@
       "notion_parent_page_id": "378b6f89-62c1-8190-8aa8-e8855d05dff3",
       "notion_url": "https://www.notion.so/17bc78f06776e721272abff2a11a8e9a",
       "notion_page_id": "17bc78f06776e721272abff2a11a8e9a",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:30:55Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "analysis/package-management-implementation-plan.md",
@@ -696,9 +756,10 @@
       "notion_parent_page_id": "378b6f89-62c1-8190-8aa8-e8855d05dff3",
       "notion_url": "https://www.notion.so/cde6fdc357f6238e00971f3a3bfe7e37",
       "notion_page_id": "cde6fdc357f6238e00971f3a3bfe7e37",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:30:55Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "analysis/package-management-investigation-report.md",
@@ -707,9 +768,10 @@
       "notion_parent_page_id": "378b6f89-62c1-8190-8aa8-e8855d05dff3",
       "notion_url": "https://www.notion.so/e076cb77590c4d6f3f87743246817533",
       "notion_page_id": "e076cb77590c4d6f3f87743246817533",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:30:55Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "analysis/package-management-prioritization-review.md",
@@ -718,9 +780,10 @@
       "notion_parent_page_id": "378b6f89-62c1-8190-8aa8-e8855d05dff3",
       "notion_url": "https://www.notion.so/e0509588c6bbc5f1ef3b19dcb47f6b69",
       "notion_page_id": "e0509588c6bbc5f1ef3b19dcb47f6b69",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:30:55Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "analysis/perpetual-task-range-options-analysis.md",
@@ -729,9 +792,10 @@
       "notion_parent_page_id": "378b6f89-62c1-8190-8aa8-e8855d05dff3",
       "notion_url": "https://www.notion.so/4337f8663db64d68f1d03b86ef1f4ae6",
       "notion_page_id": "4337f8663db64d68f1d03b86ef1f4ae6",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:30:55Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "analysis/phase3-package-distribution-plan.md",
@@ -740,9 +804,10 @@
       "notion_parent_page_id": "378b6f89-62c1-8190-8aa8-e8855d05dff3",
       "notion_url": "https://www.notion.so/5d8a8d18eb77753837f97b7fc5181bf6",
       "notion_page_id": "5d8a8d18eb77753837f97b7fc5181bf6",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:30:55Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "analysis/repository-story-abstract-space-contradiction-analysis.md",
@@ -751,9 +816,10 @@
       "notion_parent_page_id": "378b6f89-62c1-8190-8aa8-e8855d05dff3",
       "notion_url": "https://www.notion.so/00e95ebe924225e362538755fe088667",
       "notion_page_id": "00e95ebe924225e362538755fe088667",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:30:55Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "analysis/task-template-system-analysis.md",
@@ -762,9 +828,10 @@
       "notion_parent_page_id": "378b6f89-62c1-8190-8aa8-e8855d05dff3",
       "notion_url": "https://www.notion.so/39e8112b3f12af0b1e78d3e2193573bf",
       "notion_page_id": "39e8112b3f12af0b1e78d3e2193573bf",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:30:55Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "analysis/ukw-versioning-reasoning-analysis.md",
@@ -773,9 +840,10 @@
       "notion_parent_page_id": "378b6f89-62c1-8190-8aa8-e8855d05dff3",
       "notion_url": "https://www.notion.so/44f91be6a2d4144eda1e2418aa63835f",
       "notion_page_id": "44f91be6a2d4144eda1e2418aa63835f",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:30:55Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "maintenance/BUILD_AND_UPLOAD.md",
@@ -784,9 +852,10 @@
       "notion_parent_page_id": "378b6f89-62c1-819c-91f3-e980c4329562",
       "notion_url": "https://www.notion.so/378b6f8962c1813f9ba7f4faf13078c9",
       "notion_page_id": "378b6f89-62c1-813f-9ba7-f4faf13078c9",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:29:42Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "maintenance/BUILD_PACKAGES.md",
@@ -795,9 +864,10 @@
       "notion_parent_page_id": "378b6f89-62c1-819c-91f3-e980c4329562",
       "notion_url": "https://www.notion.so/378b6f8962c181a3bd69ca02d74cbb65",
       "notion_page_id": "378b6f89-62c1-81a3-bd69-ca02d74cbb65",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:29:42Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "maintenance/BUILD_PACKAGES_COMMANDS.md",
@@ -806,9 +876,10 @@
       "notion_parent_page_id": "378b6f89-62c1-819c-91f3-e980c4329562",
       "notion_url": "https://www.notion.so/378b6f8962c1811da700ec645282f4c1",
       "notion_page_id": "378b6f89-62c1-811d-a700-ec645282f4c1",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:29:42Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "maintenance/README.md",
@@ -817,9 +888,10 @@
       "notion_parent_page_id": "378b6f89-62c1-819c-91f3-e980c4329562",
       "notion_url": "https://www.notion.so/378b6f8962c1810f8730cb832bdc0e6f",
       "notion_page_id": "378b6f89-62c1-810f-8730-cb832bdc0e6f",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:29:42Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "maintenance/UPLOAD_PACKAGES.md",
@@ -828,9 +900,10 @@
       "notion_parent_page_id": "378b6f89-62c1-819c-91f3-e980c4329562",
       "notion_url": "https://www.notion.so/378b6f8962c181a6ae4fd25f039a1db8",
       "notion_page_id": "378b6f89-62c1-81a6-ae4f-d25f039a1db8",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:29:42Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "maintenance/book-repo-docs-scope.md",
@@ -839,9 +912,10 @@
       "notion_parent_page_id": "378b6f89-62c1-819c-91f3-e980c4329562",
       "notion_url": "https://www.notion.so/378b6f8962c181e8a3efda9286958073",
       "notion_page_id": "378b6f89-62c1-81e8-a3ef-da9286958073",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:29:42Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "maintenance/br087-framework-release-republish-checklist.md",
@@ -850,9 +924,10 @@
       "notion_parent_page_id": "378b6f89-62c1-819c-91f3-e980c4329562",
       "notion_url": "https://www.notion.so/378b6f8962c1814f8aebd996bd22e81c",
       "notion_page_id": "378b6f89-62c1-814f-8aeb-d996bd22e81c",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:29:42Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "maintenance/changelog-directory-consolidation-manifest.md",
@@ -861,9 +936,10 @@
       "notion_parent_page_id": "378b6f89-62c1-819c-91f3-e980c4329562",
       "notion_url": "https://www.notion.so/378b6f8962c181589406f91be0a2715c",
       "notion_page_id": "378b6f89-62c1-8158-9406-f91be0a2715c",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:29:42Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "maintenance/coordinate-remediation-uxr018-e05s09t12.md",
@@ -872,9 +948,10 @@
       "notion_parent_page_id": "378b6f89-62c1-819c-91f3-e980c4329562",
       "notion_url": "https://www.notion.so/378b6f8962c1816583d8dce460dfa413",
       "notion_page_id": "378b6f89-62c1-8165-83d8-dce460dfa413",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:29:42Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "maintenance/docusaurus-ci-dedup-verification-evidence-E05S09T14-wave2.md",
@@ -883,9 +960,10 @@
       "notion_parent_page_id": "378b6f89-62c1-819c-91f3-e980c4329562",
       "notion_url": "https://www.notion.so/378b6f8962c181c39afde4db301fc186",
       "notion_page_id": "378b6f89-62c1-81c3-9afd-e4db301fc186",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:29:42Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "maintenance/docusaurus-corpus-triage-fr-067.md",
@@ -894,9 +972,10 @@
       "notion_parent_page_id": "378b6f89-62c1-819c-91f3-e980c4329562",
       "notion_url": "https://www.notion.so/378b6f8962c181d1bfcac70359d3b4b4",
       "notion_page_id": "378b6f89-62c1-81d1-bfca-c70359d3b4b4",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:29:42Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "maintenance/fr099-phase3-public-repo-bootstrap.md",
@@ -905,9 +984,10 @@
       "notion_parent_page_id": "378b6f89-62c1-819c-91f3-e980c4329562",
       "notion_url": "https://www.notion.so/378b6f8962c181b49b24ce0c76229457",
       "notion_page_id": "378b6f89-62c1-81b4-9b24-ce0c76229457",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:29:42Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "maintenance/fr099-phase4-rewire-and-verify.md",
@@ -916,9 +996,10 @@
       "notion_parent_page_id": "378b6f89-62c1-819c-91f3-e980c4329562",
       "notion_url": "https://www.notion.so/378b6f8962c1817f8a9fe6fc660c0649",
       "notion_page_id": "378b6f89-62c1-817f-8a9f-e6fc660c0649",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:29:42Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "maintenance/logs/mmw/MMW-2026-03-16.md",
@@ -927,9 +1008,10 @@
       "notion_parent_page_id": "378b6f89-62c1-819c-91f3-e980c4329562",
       "notion_url": "https://www.notion.so/378b6f8962c181deb409d9c1813d62ae",
       "notion_page_id": "378b6f89-62c1-81de-b409-d9c1813d62ae",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:29:42Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "maintenance/logs/uxr-005-spacing-20260601.md",
@@ -938,9 +1020,10 @@
       "notion_parent_page_id": "378b6f89-62c1-819c-91f3-e980c4329562",
       "notion_url": "https://www.notion.so/378b6f8962c181a99fbbcf712a927316",
       "notion_page_id": "378b6f89-62c1-81a9-9fbb-cf712a927316",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:29:42Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "maintenance/release-checklist-templates.md",
@@ -949,9 +1032,10 @@
       "notion_parent_page_id": "378b6f89-62c1-819c-91f3-e980c4329562",
       "notion_url": "https://www.notion.so/378b6f8962c181a8a28ccdb2d47e5b8b",
       "notion_page_id": "378b6f89-62c1-81a8-a28c-cdb2d47e5b8b",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:29:42Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "maintenance/release-configuration-examples.md",
@@ -960,9 +1044,10 @@
       "notion_parent_page_id": "378b6f89-62c1-819c-91f3-e980c4329562",
       "notion_url": "https://www.notion.so/378b6f8962c181d0b9fed6477c5da290",
       "notion_page_id": "378b6f89-62c1-81d0-b9fe-d6477c5da290",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:29:42Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "maintenance/release-integration-guides.md",
@@ -971,9 +1056,10 @@
       "notion_parent_page_id": "378b6f89-62c1-819c-91f3-e980c4329562",
       "notion_url": "https://www.notion.so/378b6f8962c1810a84daf5005789e5d3",
       "notion_page_id": "378b6f89-62c1-810a-84da-f5005789e5d3",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:29:42Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "maintenance/release-quick-reference.md",
@@ -982,9 +1068,10 @@
       "notion_parent_page_id": "378b6f89-62c1-819c-91f3-e980c4329562",
       "notion_url": "https://www.notion.so/378b6f8962c1810e98d8c9d2dea8550b",
       "notion_page_id": "378b6f89-62c1-810e-98d8-c9d2dea8550b",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:29:42Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "maintenance/release-runbook.md",
@@ -993,9 +1080,10 @@
       "notion_parent_page_id": "378b6f89-62c1-819c-91f3-e980c4329562",
       "notion_url": "https://www.notion.so/378b6f8962c1810c98c3dbd283d726e4",
       "notion_page_id": "378b6f89-62c1-810c-98c3-dbd283d726e4",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:29:42Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "maintenance/semver-registry-collision-repair-2026-06-04.md",
@@ -1004,9 +1092,10 @@
       "notion_parent_page_id": "378b6f89-62c1-819c-91f3-e980c4329562",
       "notion_url": "https://www.notion.so/378b6f8962c1814580bcfeba803b782b",
       "notion_page_id": "378b6f89-62c1-8145-80bc-feba803b782b",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:29:42Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "maintenance/semver-verification-evidence-E03S02T12-wave3.md",
@@ -1015,9 +1104,10 @@
       "notion_parent_page_id": "378b6f89-62c1-819c-91f3-e980c4329562",
       "notion_url": "https://www.notion.so/378b6f8962c181edaff9edcaec07a85d",
       "notion_page_id": "378b6f89-62c1-81ed-aff9-edcaec07a85d",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:29:42Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "maintenance/v-band-verification-scan-2026-06-05.md",
@@ -1026,9 +1116,10 @@
       "notion_parent_page_id": "378b6f89-62c1-819c-91f3-e980c4329562",
       "notion_url": "https://www.notion.so/378b6f8962c181099a22e7ee6c0e7f9a",
       "notion_page_id": "378b6f89-62c1-8109-9a22-e7ee6c0e7f9a",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:29:42Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "journals/JOURNAL_SCHEMA.md",
@@ -1037,9 +1128,10 @@
       "notion_parent_page_id": "378b6f89-62c1-819c-91f3-e980c4329562",
       "notion_url": "https://www.notion.so/378b6f8962c181c29cffdd0247813303",
       "notion_page_id": "378b6f89-62c1-81c2-9cff-dd0247813303",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:29:42Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "journals/README.md",
@@ -1048,9 +1140,10 @@
       "notion_parent_page_id": "378b6f89-62c1-819c-91f3-e980c4329562",
       "notion_url": "https://www.notion.so/378b6f8962c18108a1f3ee36ba3befb8",
       "notion_page_id": "378b6f89-62c1-8108-a1f3-ee36ba3befb8",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:29:42Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "journals/RECOVERY_PROCEDURE.md",
@@ -1059,9 +1152,10 @@
       "notion_parent_page_id": "378b6f89-62c1-819c-91f3-e980c4329562",
       "notion_url": "https://www.notion.so/378b6f8962c181cdb468ffce9f6de3e2",
       "notion_page_id": "378b6f89-62c1-81cd-b468-ffce9f6de3e2",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:29:42Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "journals/ROLLBACK_CONTRACT.md",
@@ -1070,9 +1164,10 @@
       "notion_parent_page_id": "378b6f89-62c1-819c-91f3-e980c4329562",
       "notion_url": "https://www.notion.so/378b6f8962c18129997ae811a564b548",
       "notion_page_id": "378b6f89-62c1-8129-997a-e811a564b548",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:29:42Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "architecture/README.md",
@@ -1081,9 +1176,10 @@
       "notion_parent_page_id": "378b6f89-62c1-8199-a222-da811cb938b2",
       "notion_url": "https://www.notion.so/418b800c7970cb7010c85800df4bd002",
       "notion_page_id": "418b800c7970cb7010c85800df4bd002",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:30:55Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "architecture/standards-and-adrs/ADR-005-ollama-model-ecosystem.md",
@@ -1092,9 +1188,10 @@
       "notion_parent_page_id": "378b6f89-62c1-8199-a222-da811cb938b2",
       "notion_url": "https://www.notion.so/6ef2358da4e1ef6586b9a31c939ba549",
       "notion_page_id": "6ef2358da4e1ef6586b9a31c939ba549",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:30:55Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "architecture/standards-and-adrs/ADR-openclaw-process-sentinel-skill.md",
@@ -1103,9 +1200,10 @@
       "notion_parent_page_id": "378b6f89-62c1-8199-a222-da811cb938b2",
       "notion_url": "https://www.notion.so/58a8fda7fa7eb821c8d22dfd2bf1b304",
       "notion_page_id": "58a8fda7fa7eb821c8d22dfd2bf1b304",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:30:55Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "architecture/standards-and-adrs/FR-046-implementation-guide.md",
@@ -1114,9 +1212,10 @@
       "notion_parent_page_id": "378b6f89-62c1-8199-a222-da811cb938b2",
       "notion_url": "https://www.notion.so/f7a4750c5561daba96a811132752014c",
       "notion_page_id": "f7a4750c5561daba96a811132752014c",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:30:55Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "architecture/standards-and-adrs/agent-network-access-and-git-push-limitations.md",
@@ -1125,9 +1224,10 @@
       "notion_parent_page_id": "378b6f89-62c1-8199-a222-da811cb938b2",
       "notion_url": "https://www.notion.so/da3edd875c891cf2cee701d2724ab31c",
       "notion_page_id": "da3edd875c891cf2cee701d2724ab31c",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:30:55Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "architecture/standards-and-adrs/agentic-template-generator-design.md",
@@ -1136,9 +1236,10 @@
       "notion_parent_page_id": "378b6f89-62c1-8199-a222-da811cb938b2",
       "notion_url": "https://www.notion.so/3597371b8868d897c472e53d91d35acf",
       "notion_page_id": "3597371b8868d897c472e53d91d35acf",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:30:55Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "architecture/standards-and-adrs/ai-dev-kit-project-review.md",
@@ -1147,9 +1248,10 @@
       "notion_parent_page_id": "378b6f89-62c1-8199-a222-da811cb938b2",
       "notion_url": "https://www.notion.so/f622abcb76ef6aaa96708c807f648b8a",
       "notion_page_id": "f622abcb76ef6aaa96708c807f648b8a",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:30:55Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "architecture/standards-and-adrs/changelog-archival-policy.md",
@@ -1158,9 +1260,10 @@
       "notion_parent_page_id": "378b6f89-62c1-8199-a222-da811cb938b2",
       "notion_url": "https://www.notion.so/7eb3d60807c2e21b0fd8fd62f8c99f02",
       "notion_page_id": "7eb3d60807c2e21b0fd8fd62f8c99f02",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:30:55Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "architecture/standards-and-adrs/changelog-management-policy.md",
@@ -1169,9 +1272,10 @@
       "notion_parent_page_id": "378b6f89-62c1-8199-a222-da811cb938b2",
       "notion_url": "https://www.notion.so/92f62b6260aa9d275bb48516141fee31",
       "notion_page_id": "92f62b6260aa9d275bb48516141fee31",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:30:55Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "architecture/standards-and-adrs/changelog-ordering-investigation-report.md",
@@ -1180,9 +1284,10 @@
       "notion_parent_page_id": "378b6f89-62c1-8199-a222-da811cb938b2",
       "notion_url": "https://www.notion.so/bb67f297f6821f064348b672520f6d98",
       "notion_page_id": "bb67f297f6821f064348b672520f6d98",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:30:55Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "architecture/standards-and-adrs/code-quality-kanban-integration.md",
@@ -1191,9 +1296,10 @@
       "notion_parent_page_id": "378b6f89-62c1-8199-a222-da811cb938b2",
       "notion_url": "https://www.notion.so/40ba72a4f77b0f2c12728672a4c31886",
       "notion_page_id": "40ba72a4f77b0f2c12728672a4c31886",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:30:55Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "architecture/standards-and-adrs/code-quality-metrics-framework.md",
@@ -1202,9 +1308,10 @@
       "notion_parent_page_id": "378b6f89-62c1-8199-a222-da811cb938b2",
       "notion_url": "https://www.notion.so/f138ccac7073432d8be8042df12cbbd4",
       "notion_page_id": "f138ccac7073432d8be8042df12cbbd4",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:30:55Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "architecture/standards-and-adrs/code-quality-monitoring-dashboards.md",
@@ -1213,9 +1320,10 @@
       "notion_parent_page_id": "378b6f89-62c1-8199-a222-da811cb938b2",
       "notion_url": "https://www.notion.so/3566e7097dd0d5ae132c5880c0d42897",
       "notion_page_id": "3566e7097dd0d5ae132c5880c0d42897",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:30:55Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "architecture/standards-and-adrs/code-quality-monitoring-processes.md",
@@ -1224,9 +1332,10 @@
       "notion_parent_page_id": "378b6f89-62c1-8199-a222-da811cb938b2",
       "notion_url": "https://www.notion.so/b3eb9250425ca883b2c852c8421e2d55",
       "notion_page_id": "b3eb9250425ca883b2c852c8421e2d55",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:30:55Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "architecture/standards-and-adrs/code-review-checklist-templates.md",
@@ -1235,9 +1344,10 @@
       "notion_parent_page_id": "378b6f89-62c1-8199-a222-da811cb938b2",
       "notion_url": "https://www.notion.so/66ad7e2866469752937b4d48c8420493",
       "notion_page_id": "66ad7e2866469752937b4d48c8420493",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:30:55Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "architecture/standards-and-adrs/code-review-kanban-integration.md",
@@ -1246,9 +1356,10 @@
       "notion_parent_page_id": "378b6f89-62c1-8199-a222-da811cb938b2",
       "notion_url": "https://www.notion.so/86f4b54ce70d113d9112de9955cdd613",
       "notion_page_id": "86f4b54ce70d113d9112de9955cdd613",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:30:55Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "architecture/standards-and-adrs/code-review-standards-and-guidelines.md",
@@ -1257,9 +1368,10 @@
       "notion_parent_page_id": "378b6f89-62c1-8199-a222-da811cb938b2",
       "notion_url": "https://www.notion.so/d44dc8aa596ea6c24615790072549f72",
       "notion_page_id": "d44dc8aa596ea6c24615790072549f72",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:30:55Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "architecture/standards-and-adrs/code-review-workflow-processes.md",
@@ -1268,9 +1380,10 @@
       "notion_parent_page_id": "378b6f89-62c1-8199-a222-da811cb938b2",
       "notion_url": "https://www.notion.so/07643415ef247f6c3526cdae26baa081",
       "notion_page_id": "07643415ef247f6c3526cdae26baa081",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:30:55Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "architecture/standards-and-adrs/cursor-ide-performance-considerations.md",
@@ -1279,9 +1392,10 @@
       "notion_parent_page_id": "378b6f89-62c1-8199-a222-da811cb938b2",
       "notion_url": "https://www.notion.so/3de8124c3f26013229c3fc8382dc4359",
       "notion_page_id": "3de8124c3f26013229c3fc8382dc4359",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:30:55Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "architecture/standards-and-adrs/dev-kit-ipw-ipp-vs-icw-artifacts.md",
@@ -1290,9 +1404,10 @@
       "notion_parent_page_id": "378b6f89-62c1-8199-a222-da811cb938b2",
       "notion_url": "https://www.notion.so/bfea12aedd0aceb24095af708b9c465a",
       "notion_page_id": "bfea12aedd0aceb24095af708b9c465a",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:30:55Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "architecture/standards-and-adrs/dev-kit-kanban-versioning-rw-integration.md",
@@ -1301,9 +1416,10 @@
       "notion_parent_page_id": "378b6f89-62c1-8199-a222-da811cb938b2",
       "notion_url": "https://www.notion.so/5a11ac60f1046637a90f65714246242e",
       "notion_page_id": "5a11ac60f1046637a90f65714246242e",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:30:55Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "architecture/standards-and-adrs/dev-kit-versioning-cookbook.md",
@@ -1312,9 +1428,10 @@
       "notion_parent_page_id": "378b6f89-62c1-8199-a222-da811cb938b2",
       "notion_url": "https://www.notion.so/9eccd7b9b6045e0384746a542db0b8b2",
       "notion_page_id": "9eccd7b9b6045e0384746a542db0b8b2",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:30:55Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "architecture/standards-and-adrs/dev-kit-versioning-policy.md",
@@ -1323,9 +1440,10 @@
       "notion_parent_page_id": "378b6f89-62c1-8199-a222-da811cb938b2",
       "notion_url": "https://www.notion.so/74b456b85617d497fe666fca8c35f015",
       "notion_page_id": "74b456b85617d497fe666fca8c35f015",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:30:55Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "architecture/standards-and-adrs/doc-init-migration-guide.md",
@@ -1334,9 +1452,10 @@
       "notion_parent_page_id": "378b6f89-62c1-8199-a222-da811cb938b2",
       "notion_url": "https://www.notion.so/273a6158774742d47dd06567f61d98ed",
       "notion_page_id": "273a6158774742d47dd06567f61d98ed",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:30:55Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "architecture/standards-and-adrs/doc-lifecycle-metadata-spec.md",
@@ -1345,9 +1464,10 @@
       "notion_parent_page_id": "378b6f89-62c1-8199-a222-da811cb938b2",
       "notion_url": "https://www.notion.so/c0379d140f2e437e76de872f5b7df228",
       "notion_page_id": "c0379d140f2e437e76de872f5b7df228",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:30:55Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "architecture/standards-and-adrs/doc-lifecycle-policy.md",
@@ -1356,9 +1476,10 @@
       "notion_parent_page_id": "378b6f89-62c1-8199-a222-da811cb938b2",
       "notion_url": "https://www.notion.so/4de1a652d61a596e26d5bfe49d0a9aca",
       "notion_page_id": "4de1a652d61a596e26d5bfe49d0a9aca",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:30:55Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "architecture/standards-and-adrs/documentation-health-monitoring.md",
@@ -1367,9 +1488,10 @@
       "notion_parent_page_id": "378b6f89-62c1-8199-a222-da811cb938b2",
       "notion_url": "https://www.notion.so/aba9a24c7dd6cb060e1705553afdca18",
       "notion_page_id": "aba9a24c7dd6cb060e1705553afdca18",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:30:55Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "architecture/standards-and-adrs/documentation-maintenance-policy.md",
@@ -1378,9 +1500,10 @@
       "notion_parent_page_id": "378b6f89-62c1-8199-a222-da811cb938b2",
       "notion_url": "https://www.notion.so/038a53cf5cb76258ac4869ca7a925e54",
       "notion_page_id": "038a53cf5cb76258ac4869ca7a925e54",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:30:55Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "architecture/standards-and-adrs/documentation-review-cadences.md",
@@ -1389,9 +1512,10 @@
       "notion_parent_page_id": "378b6f89-62c1-8199-a222-da811cb938b2",
       "notion_url": "https://www.notion.so/402aa980da630bafe06fd18550247b79",
       "notion_page_id": "402aa980da630bafe06fd18550247b79",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:30:55Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "architecture/standards-and-adrs/documentation-review-workflow-guide.md",
@@ -1400,9 +1524,10 @@
       "notion_parent_page_id": "378b6f89-62c1-8199-a222-da811cb938b2",
       "notion_url": "https://www.notion.so/41c38c8ff66a9f741752ecf5a8f21282",
       "notion_page_id": "41c38c8ff66a9f741752ecf5a8f21282",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:30:55Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "architecture/standards-and-adrs/documentation-update-triggers.md",
@@ -1411,9 +1536,10 @@
       "notion_parent_page_id": "378b6f89-62c1-8199-a222-da811cb938b2",
       "notion_url": "https://www.notion.so/8a1041cbb86cf607fc4e4c4852d97b1f",
       "notion_page_id": "8a1041cbb86cf607fc4e4c4852d97b1f",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:30:55Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "architecture/standards-and-adrs/dual-versioning-package-managers.md",
@@ -1422,9 +1548,10 @@
       "notion_parent_page_id": "378b6f89-62c1-8199-a222-da811cb938b2",
       "notion_url": "https://www.notion.so/9885c7ed37dbc1ce8466b0eb3ef460eb",
       "notion_page_id": "9885c7ed37dbc1ce8466b0eb3ef460eb",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:30:55Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "architecture/standards-and-adrs/ecc-adk-harness-layer-integration-specification.md",
@@ -1433,9 +1560,10 @@
       "notion_parent_page_id": "378b6f89-62c1-8199-a222-da811cb938b2",
       "notion_url": "https://www.notion.so/aee5ef407d5602c257a1e3314c13628e",
       "notion_page_id": "aee5ef407d5602c257a1e3314c13628e",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:30:55Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "architecture/standards-and-adrs/ecc-adk-harness-layer-phase0-evaluation.md",
@@ -1444,9 +1572,10 @@
       "notion_parent_page_id": "378b6f89-62c1-8199-a222-da811cb938b2",
       "notion_url": "https://www.notion.so/6fa350fc2927b93dc3b2f6eab536784f",
       "notion_page_id": "6fa350fc2927b93dc3b2f6eab536784f",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:30:55Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "architecture/standards-and-adrs/environment-variables-sop.md",
@@ -1455,9 +1584,10 @@
       "notion_parent_page_id": "378b6f89-62c1-8199-a222-da811cb938b2",
       "notion_url": "https://www.notion.so/f9d338445036b76ab4e1c7b03a598c35",
       "notion_page_id": "f9d338445036b76ab4e1c7b03a598c35",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:30:55Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "architecture/standards-and-adrs/epic-story-path-migration-guide.md",
@@ -1466,9 +1596,10 @@
       "notion_parent_page_id": "378b6f89-62c1-8199-a222-da811cb938b2",
       "notion_url": "https://www.notion.so/168b34fe91d669977a1e019f181df6ea",
       "notion_page_id": "168b34fe91d669977a1e019f181df6ea",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:30:55Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "architecture/standards-and-adrs/framework-auto-update-mechanisms.md",
@@ -1477,9 +1608,10 @@
       "notion_parent_page_id": "378b6f89-62c1-8199-a222-da811cb938b2",
       "notion_url": "https://www.notion.so/a87e351a0f838ec65f9751b2e5552945",
       "notion_page_id": "a87e351a0f838ec65f9751b2e5552945",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:30:55Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "architecture/standards-and-adrs/framework-backward-compatibility-policy.md",
@@ -1488,9 +1620,10 @@
       "notion_parent_page_id": "378b6f89-62c1-8199-a222-da811cb938b2",
       "notion_url": "https://www.notion.so/b534b5f6774f4d72095d5ede83a061d8",
       "notion_page_id": "b534b5f6774f4d72095d5ede83a061d8",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:30:55Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "architecture/standards-and-adrs/framework-compatibility-tracking.md",
@@ -1499,9 +1632,10 @@
       "notion_parent_page_id": "378b6f89-62c1-8199-a222-da811cb938b2",
       "notion_url": "https://www.notion.so/5ec73f6f6a16897a9b99bfaac2ca9fcf",
       "notion_page_id": "5ec73f6f6a16897a9b99bfaac2ca9fcf",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:30:55Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "architecture/standards-and-adrs/framework-dependency-architecture.md",
@@ -1510,9 +1644,10 @@
       "notion_parent_page_id": "378b6f89-62c1-8199-a222-da811cb938b2",
       "notion_url": "https://www.notion.so/28c56e1772e18ec45a9cede7cb470eff",
       "notion_page_id": "28c56e1772e18ec45a9cede7cb470eff",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:30:55Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "architecture/standards-and-adrs/framework-health-dashboard-guide.md",
@@ -1521,9 +1656,10 @@
       "notion_parent_page_id": "378b6f89-62c1-8199-a222-da811cb938b2",
       "notion_url": "https://www.notion.so/9308a2a7429d7f3b142736974aaa7df8",
       "notion_page_id": "9308a2a7429d7f3b142736974aaa7df8",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:30:55Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "architecture/standards-and-adrs/framework-health-metrics.md",
@@ -1532,9 +1668,10 @@
       "notion_parent_page_id": "378b6f89-62c1-8199-a222-da811cb938b2",
       "notion_url": "https://www.notion.so/22d6e3d4c68d0b3b803f5bec91229206",
       "notion_page_id": "22d6e3d4c68d0b3b803f5bec91229206",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:30:55Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "architecture/standards-and-adrs/framework-health-monitoring-procedures.md",
@@ -1543,9 +1680,10 @@
       "notion_parent_page_id": "378b6f89-62c1-8199-a222-da811cb938b2",
       "notion_url": "https://www.notion.so/de059330afe711a6877909c0a9ae9d4d",
       "notion_page_id": "de059330afe711a6877909c0a9ae9d4d",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:30:55Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "architecture/standards-and-adrs/framework-migration-guide.md",
@@ -1554,9 +1692,10 @@
       "notion_parent_page_id": "378b6f89-62c1-8199-a222-da811cb938b2",
       "notion_url": "https://www.notion.so/14352670718afbab7df1e270729bddb7",
       "notion_page_id": "14352670718afbab7df1e270729bddb7",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:30:55Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "architecture/standards-and-adrs/framework-release-process.md",
@@ -1565,9 +1704,10 @@
       "notion_parent_page_id": "378b6f89-62c1-8199-a222-da811cb938b2",
       "notion_url": "https://www.notion.so/a36038f80e244a84732a6712b95bca5b",
       "notion_page_id": "a36038f80e244a84732a6712b95bca5b",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:30:55Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "architecture/standards-and-adrs/framework-update-cli-design.md",
@@ -1576,9 +1716,10 @@
       "notion_parent_page_id": "378b6f89-62c1-8199-a222-da811cb938b2",
       "notion_url": "https://www.notion.so/52288c2c084e525b7aabb59ce1d46f76",
       "notion_page_id": "52288c2c084e525b7aabb59ce1d46f76",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:30:55Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "architecture/standards-and-adrs/framework-update-procedures.md",
@@ -1587,9 +1728,10 @@
       "notion_parent_page_id": "378b6f89-62c1-8199-a222-da811cb938b2",
       "notion_url": "https://www.notion.so/b8a6f86cc45b1670daea36eb2d20bf4e",
       "notion_page_id": "b8a6f86cc45b1670daea36eb2d20bf4e",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:30:55Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "architecture/standards-and-adrs/framework-version-tagging-strategy.md",
@@ -1598,9 +1740,10 @@
       "notion_parent_page_id": "378b6f89-62c1-8199-a222-da811cb938b2",
       "notion_url": "https://www.notion.so/589155fdf6195042a1b795ef9a304390",
       "notion_page_id": "589155fdf6195042a1b795ef9a304390",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:30:55Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "architecture/standards-and-adrs/framework-versioning-strategy.md",
@@ -1609,9 +1752,10 @@
       "notion_parent_page_id": "378b6f89-62c1-8199-a222-da811cb938b2",
       "notion_url": "https://www.notion.so/e6ca46d800f5bf56b54871435abb811b",
       "notion_page_id": "e6ca46d800f5bf56b54871435abb811b",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:30:55Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "architecture/standards-and-adrs/gap-log-schema.md",
@@ -1620,9 +1764,10 @@
       "notion_parent_page_id": "378b6f89-62c1-8199-a222-da811cb938b2",
       "notion_url": "https://www.notion.so/75f3645b826b35f8bc18277df94fa642",
       "notion_page_id": "75f3645b826b35f8bc18277df94fa642",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:30:55Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "architecture/standards-and-adrs/generator-framework-design.md",
@@ -1631,9 +1776,10 @@
       "notion_parent_page_id": "378b6f89-62c1-8199-a222-da811cb938b2",
       "notion_url": "https://www.notion.so/a76d7b2bda9ca3acee8c6c9953ee3d4b",
       "notion_page_id": "a76d7b2bda9ca3acee8c6c9953ee3d4b",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:30:55Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "architecture/standards-and-adrs/ipw-adr-necessity-checklist.md",
@@ -1642,9 +1788,10 @@
       "notion_parent_page_id": "378b6f89-62c1-8199-a222-da811cb938b2",
       "notion_url": "https://www.notion.so/015647a1ddab91330ff3300839ba1d74",
       "notion_page_id": "015647a1ddab91330ff3300839ba1d74",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:30:55Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "architecture/standards-and-adrs/kb-structure-overview.md",
@@ -1653,9 +1800,10 @@
       "notion_parent_page_id": "378b6f89-62c1-8199-a222-da811cb938b2",
       "notion_url": "https://www.notion.so/c4ef327543f43bb86efc91b981b9d62a",
       "notion_page_id": "c4ef327543f43bb86efc91b981b9d62a",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:30:55Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "architecture/standards-and-adrs/legacy-repo-analysis.md",
@@ -1664,9 +1812,10 @@
       "notion_parent_page_id": "378b6f89-62c1-8199-a222-da811cb938b2",
       "notion_url": "https://www.notion.so/fa1749661d3b05481b8009f9517a6307",
       "notion_page_id": "fa1749661d3b05481b8009f9517a6307",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:30:55Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "architecture/standards-and-adrs/maintenance-automation-requirements.md",
@@ -1675,9 +1824,10 @@
       "notion_parent_page_id": "378b6f89-62c1-8199-a222-da811cb938b2",
       "notion_url": "https://www.notion.so/b27ba5cec7ea326931776c59473db63a",
       "notion_page_id": "b27ba5cec7ea326931776c59473db63a",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:30:55Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "architecture/standards-and-adrs/maintenance-automation-scripts-and-tools.md",
@@ -1686,9 +1836,10 @@
       "notion_parent_page_id": "378b6f89-62c1-8199-a222-da811cb938b2",
       "notion_url": "https://www.notion.so/71afe4d6e9b0977e0a3ba956f90e7a7d",
       "notion_page_id": "71afe4d6e9b0977e0a3ba956f90e7a7d",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:30:55Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "architecture/standards-and-adrs/maintenance-automation-usage-guide.md",
@@ -1697,9 +1848,10 @@
       "notion_parent_page_id": "378b6f89-62c1-8199-a222-da811cb938b2",
       "notion_url": "https://www.notion.so/709958c6c2bd434dbfb03199f0376684",
       "notion_page_id": "709958c6c2bd434dbfb03199f0376684",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:30:55Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "architecture/standards-and-adrs/maintenance-automation-workflow-integration.md",
@@ -1708,9 +1860,10 @@
       "notion_parent_page_id": "378b6f89-62c1-8199-a222-da811cb938b2",
       "notion_url": "https://www.notion.so/f934b565ed37065f2bf6e97c7d477b9a",
       "notion_page_id": "f934b565ed37065f2bf6e97c7d477b9a",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:30:55Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "architecture/standards-and-adrs/maintenance-kanban-integration.md",
@@ -1719,9 +1872,10 @@
       "notion_parent_page_id": "378b6f89-62c1-8199-a222-da811cb938b2",
       "notion_url": "https://www.notion.so/a815aae0ccdd4e72a22fcf76c5f8b4e9",
       "notion_page_id": "a815aae0ccdd4e72a22fcf76c5f8b4e9",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:30:55Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "architecture/standards-and-adrs/maintenance-task-prioritization-framework.md",
@@ -1730,9 +1884,10 @@
       "notion_parent_page_id": "378b6f89-62c1-8199-a222-da811cb938b2",
       "notion_url": "https://www.notion.so/41c85712739845403a8baa4454958ef5",
       "notion_page_id": "41c85712739845403a8baa4454958ef5",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:30:55Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "architecture/standards-and-adrs/maintenance-workflow-processes.md",
@@ -1741,9 +1896,10 @@
       "notion_parent_page_id": "378b6f89-62c1-8199-a222-da811cb938b2",
       "notion_url": "https://www.notion.so/5b62803ba32e6065e306ad6cadb80a68",
       "notion_page_id": "5b62803ba32e6065e306ad6cadb80a68",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:30:55Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "architecture/standards-and-adrs/mixed-br-fr-scope-sop.md",
@@ -1752,9 +1908,10 @@
       "notion_parent_page_id": "378b6f89-62c1-8199-a222-da811cb938b2",
       "notion_url": "https://www.notion.so/79dea1d348f9a4f03bbdc634589ab797",
       "notion_page_id": "79dea1d348f9a4f03bbdc634589ab797",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:30:55Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "architecture/standards-and-adrs/package-hash-verification-spec.md",
@@ -1763,9 +1920,10 @@
       "notion_parent_page_id": "378b6f89-62c1-8199-a222-da811cb938b2",
       "notion_url": "https://www.notion.so/434e1ea72efd2e2233ff18b6412f9d21",
       "notion_page_id": "434e1ea72efd2e2233ff18b6412f9d21",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:30:55Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "architecture/standards-and-adrs/package-maintenance-and-release.md",
@@ -1774,9 +1932,10 @@
       "notion_parent_page_id": "378b6f89-62c1-8199-a222-da811cb938b2",
       "notion_url": "https://www.notion.so/10344ddb838e4b6e7a0744a18d766e5c",
       "notion_page_id": "10344ddb838e4b6e7a0744a18d766e5c",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:30:55Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "architecture/standards-and-adrs/package-management-design.md",
@@ -1785,9 +1944,10 @@
       "notion_parent_page_id": "378b6f89-62c1-8199-a222-da811cb938b2",
       "notion_url": "https://www.notion.so/848abfa5e9a5f9d106fead2ff6212271",
       "notion_page_id": "848abfa5e9a5f9d106fead2ff6212271",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:30:55Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "architecture/standards-and-adrs/package-versioning-criteria.md",
@@ -1796,9 +1956,10 @@
       "notion_parent_page_id": "378b6f89-62c1-8199-a222-da811cb938b2",
       "notion_url": "https://www.notion.so/8b4110cd63eddab55db1d37e59ba67d6",
       "notion_page_id": "8b4110cd63eddab55db1d37e59ba67d6",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:30:55Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "architecture/standards-and-adrs/policy-comparison-starborn-vs-ai-dev-kit-proposal.md",
@@ -1807,9 +1968,10 @@
       "notion_parent_page_id": "378b6f89-62c1-8199-a222-da811cb938b2",
       "notion_url": "https://www.notion.so/634b3238468c91b385202e123a4d12d2",
       "notion_page_id": "634b3238468c91b385202e123a4d12d2",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:30:55Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "architecture/standards-and-adrs/policy-salience-schema.md",
@@ -1818,9 +1980,10 @@
       "notion_parent_page_id": "378b6f89-62c1-8199-a222-da811cb938b2",
       "notion_url": "https://www.notion.so/aac2624447bae70f80bce646bd67e185",
       "notion_page_id": "aac2624447bae70f80bce646bd67e185",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:30:55Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "architecture/standards-and-adrs/pre-release-feedback-mechanism-design.md",
@@ -1829,9 +1992,10 @@
       "notion_parent_page_id": "378b6f89-62c1-8199-a222-da811cb938b2",
       "notion_url": "https://www.notion.so/fd1c9039e696364631263d6dd8b4602f",
       "notion_page_id": "fd1c9039e696364631263d6dd8b4602f",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:30:55Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "architecture/standards-and-adrs/repository-story-abstract-space-solution-design.md",
@@ -1840,9 +2004,10 @@
       "notion_parent_page_id": "378b6f89-62c1-8199-a222-da811cb938b2",
       "notion_url": "https://www.notion.so/88f4e4dbd54b0a78215cfbceb312a3dc",
       "notion_page_id": "88f4e4dbd54b0a78215cfbceb312a3dc",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:30:55Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "architecture/standards-and-adrs/repository-story-migration-plan.md",
@@ -1851,9 +2016,10 @@
       "notion_parent_page_id": "378b6f89-62c1-8199-a222-da811cb938b2",
       "notion_url": "https://www.notion.so/475aa9f0eaa43105c6561a5411a92b81",
       "notion_page_id": "475aa9f0eaa43105c6561a5411a92b81",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:30:55Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "architecture/standards-and-adrs/repository-story-migration-progress.md",
@@ -1862,9 +2028,10 @@
       "notion_parent_page_id": "378b6f89-62c1-8199-a222-da811cb938b2",
       "notion_url": "https://www.notion.so/5db6c1b20c8b76c105d99ddbb329006a",
       "notion_page_id": "5db6c1b20c8b76c105d99ddbb329006a",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:30:55Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "architecture/standards-and-adrs/repository-story-migration-status.md",
@@ -1873,9 +2040,10 @@
       "notion_parent_page_id": "378b6f89-62c1-8199-a222-da811cb938b2",
       "notion_url": "https://www.notion.so/bc4bc0ddb96904b516aaad58704d26bd",
       "notion_page_id": "bc4bc0ddb96904b516aaad58704d26bd",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:30:55Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "architecture/standards-and-adrs/rw-changelog-commit-language-analysis.md",
@@ -1884,9 +2052,10 @@
       "notion_parent_page_id": "378b6f89-62c1-8199-a222-da811cb938b2",
       "notion_url": "https://www.notion.so/5ddd13a2e67ad8f47d32865de51ed0b5",
       "notion_page_id": "5ddd13a2e67ad8f47d32865de51ed0b5",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:30:55Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "architecture/standards-and-adrs/rw-pdca-integration-plan.md",
@@ -1895,9 +2064,10 @@
       "notion_parent_page_id": "378b6f89-62c1-8199-a222-da811cb938b2",
       "notion_url": "https://www.notion.so/fca7167781873e93c5319399baa30cc9",
       "notion_page_id": "fca7167781873e93c5319399baa30cc9",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:30:55Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "architecture/standards-and-adrs/semver-implementation-followup-spec.md",
@@ -1906,9 +2076,10 @@
       "notion_parent_page_id": "378b6f89-62c1-8199-a222-da811cb938b2",
       "notion_url": "https://www.notion.so/d5bd6591839eef75e2aeb8bfcc5ead0c",
       "notion_page_id": "d5bd6591839eef75e2aeb8bfcc5ead0c",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:30:55Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "architecture/standards-and-adrs/semver-mapping-implementation-impact.md",
@@ -1917,9 +2088,10 @@
       "notion_parent_page_id": "378b6f89-62c1-8199-a222-da811cb938b2",
       "notion_url": "https://www.notion.so/81366381e9b3ee0b8e427424ac34980b",
       "notion_page_id": "81366381e9b3ee0b8e427424ac34980b",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:30:55Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "architecture/standards-and-adrs/semver-mapping-proposal.md",
@@ -1928,9 +2100,10 @@
       "notion_parent_page_id": "378b6f89-62c1-8199-a222-da811cb938b2",
       "notion_url": "https://www.notion.so/4e3524d6588b27bd2b5bd03f1c8bc56e",
       "notion_page_id": "4e3524d6588b27bd2b5bd03f1c8bc56e",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:30:55Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "architecture/standards-and-adrs/semver-tag-collision-incident-2026-03-07.md",
@@ -1939,9 +2112,10 @@
       "notion_parent_page_id": "378b6f89-62c1-8199-a222-da811cb938b2",
       "notion_url": "https://www.notion.so/6aa210022cf1cb40226eb1b0d09d3e5c",
       "notion_page_id": "6aa210022cf1cb40226eb1b0d09d3e5c",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:30:55Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "architecture/standards-and-adrs/specification-and-planning-artifacts-policy.md",
@@ -1950,9 +2124,10 @@
       "notion_parent_page_id": "378b6f89-62c1-8199-a222-da811cb938b2",
       "notion_url": "https://www.notion.so/52bf0f85b282d2f197dcb524dee06359",
       "notion_page_id": "52bf0f85b282d2f197dcb524dee06359",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:30:55Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "architecture/standards-and-adrs/task-naming-migration-guide.md",
@@ -1961,9 +2136,10 @@
       "notion_parent_page_id": "378b6f89-62c1-8199-a222-da811cb938b2",
       "notion_url": "https://www.notion.so/d2c3998be53933337677d511997a163d",
       "notion_page_id": "d2c3998be53933337677d511997a163d",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:30:55Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "architecture/standards-and-adrs/task-template-cross-wiring-sop.md",
@@ -1972,9 +2148,10 @@
       "notion_parent_page_id": "378b6f89-62c1-8199-a222-da811cb938b2",
       "notion_url": "https://www.notion.so/c3315b9f1766acd4194a07280d744d68",
       "notion_page_id": "c3315b9f1766acd4194a07280d744d68",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:30:55Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "architecture/standards-and-adrs/task-template-generator-design.md",
@@ -1983,9 +2160,10 @@
       "notion_parent_page_id": "378b6f89-62c1-8199-a222-da811cb938b2",
       "notion_url": "https://www.notion.so/edbe9356a661b10ebcf68c85f3e9bee6",
       "notion_page_id": "edbe9356a661b10ebcf68c85f3e9bee6",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:30:55Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "architecture/standards-and-adrs/task-template-system-hybrid-adr.md",
@@ -1994,9 +2172,10 @@
       "notion_parent_page_id": "378b6f89-62c1-8199-a222-da811cb938b2",
       "notion_url": "https://www.notion.so/8c6232ef2b1d1f19ed6ec997643addfe",
       "notion_page_id": "8c6232ef2b1d1f19ed6ec997643addfe",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:30:55Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "architecture/standards-and-adrs/task-touch-mapping-examples.md",
@@ -2005,9 +2184,10 @@
       "notion_parent_page_id": "378b6f89-62c1-8199-a222-da811cb938b2",
       "notion_url": "https://www.notion.so/9f7fb278b22796d711af76809ee14d1f",
       "notion_page_id": "9f7fb278b22796d711af76809ee14d1f",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:30:55Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "architecture/standards-and-adrs/ultimate-canonical-cursorrules-structure.md",
@@ -2016,9 +2196,10 @@
       "notion_parent_page_id": "378b6f89-62c1-8199-a222-da811cb938b2",
       "notion_url": "https://www.notion.so/de8b25208f0e4012f1ed41df879b29b2",
       "notion_page_id": "de8b25208f0e4012f1ed41df879b29b2",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:30:55Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "architecture/standards-and-adrs/ultimate-canonical-kanban-structure.md",
@@ -2027,9 +2208,10 @@
       "notion_parent_page_id": "379b6f8962c1816b9235d1ca6c905679",
       "notion_url": "https://www.notion.so/30db6f8962c181eb8e20fb0374c2753d",
       "notion_page_id": "30db6f8962c181eb8e20fb0374c2753d",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:30:55Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "architecture/standards-and-adrs/ultimate-canonical-kb-structure.md",
@@ -2038,9 +2220,10 @@
       "notion_parent_page_id": "378b6f89-62c1-8199-a222-da811cb938b2",
       "notion_url": "https://www.notion.so/fb56792baa401eb489c513adadd1fc04",
       "notion_page_id": "fb56792baa401eb489c513adadd1fc04",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:30:55Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "architecture/standards-and-adrs/ultimate-canonical-workflow-structure.md",
@@ -2049,9 +2232,10 @@
       "notion_parent_page_id": "378b6f89-62c1-8199-a222-da811cb938b2",
       "notion_url": "https://www.notion.so/3da74f2040335211ae93cac842a401f1",
       "notion_page_id": "3da74f2040335211ae93cac842a401f1",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:30:55Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "architecture/standards-and-adrs/versioning-error-reference-guide.md",
@@ -2060,9 +2244,10 @@
       "notion_parent_page_id": "378b6f89-62c1-8199-a222-da811cb938b2",
       "notion_url": "https://www.notion.so/10d50a2d02221e063533ef47ba31de21",
       "notion_page_id": "10d50a2d02221e063533ef47ba31de21",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:30:55Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "architecture/standards-and-adrs/versioning-quick-reference.md",
@@ -2071,9 +2256,10 @@
       "notion_parent_page_id": "378b6f89-62c1-8199-a222-da811cb938b2",
       "notion_url": "https://www.notion.so/efdad102a1e9eded650324a36ca89949",
       "notion_page_id": "efdad102a1e9eded650324a36ca89949",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:30:55Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "architecture/standards-and-adrs/workflow-flaws-reference-guide.md",
@@ -2082,9 +2268,10 @@
       "notion_parent_page_id": "378b6f89-62c1-8199-a222-da811cb938b2",
       "notion_url": "https://www.notion.so/ffa9f7417a6370aaa06be77fb8f55a3b",
       "notion_page_id": "ffa9f7417a6370aaa06be77fb8f55a3b",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:30:55Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "architecture/standards-and-adrs/workflow-hardening-guide.md",
@@ -2093,9 +2280,10 @@
       "notion_parent_page_id": "378b6f89-62c1-8199-a222-da811cb938b2",
       "notion_url": "https://www.notion.so/bd062a16c0c294b1fb53e7babe1ffa78",
       "notion_page_id": "bd062a16c0c294b1fb53e7babe1ffa78",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:30:55Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "architecture/use-cases/CANONICAL_USE_CASE_TEMPLATE.md",
@@ -2104,9 +2292,10 @@
       "notion_parent_page_id": "378b6f89-62c1-8199-a222-da811cb938b2",
       "notion_url": "https://www.notion.so/79c50790436d4bc8a59226b37669dc69",
       "notion_page_id": "79c50790436d4bc8a59226b37669dc69",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:30:55Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "architecture/use-cases/README.md",
@@ -2115,9 +2304,10 @@
       "notion_parent_page_id": "378b6f89-62c1-8199-a222-da811cb938b2",
       "notion_url": "https://www.notion.so/1e75bd4fc01bf5845eb5fd70e93c32e5",
       "notion_page_id": "1e75bd4fc01bf5845eb5fd70e93c32e5",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:30:55Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "architecture/use-cases/canonical/README.md",
@@ -2126,9 +2316,10 @@
       "notion_parent_page_id": "378b6f89-62c1-8199-a222-da811cb938b2",
       "notion_url": "https://www.notion.so/80543482f8291cb74cf820eb20bb0eeb",
       "notion_page_id": "80543482f8291cb74cf820eb20bb0eeb",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:30:55Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "implementation-cycles/ARCHIVE-AGENT-001-E24S02T01-03-RESOLUTION.md",
@@ -2137,9 +2328,10 @@
       "notion_parent_page_id": "378b6f89-62c1-8190-8aa8-e8855d05dff3",
       "notion_url": "https://www.notion.so/381b79e8ccaaccf181cdfaee74f0f12e",
       "notion_page_id": "381b79e8ccaaccf181cdfaee74f0f12e",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:30:55Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "implementation-cycles/DOC-AGENT-001-E24S01T01-04-RESOLUTION.md",
@@ -2148,9 +2340,10 @@
       "notion_parent_page_id": "378b6f89-62c1-8190-8aa8-e8855d05dff3",
       "notion_url": "https://www.notion.so/dc94d0c1bb8f461d88a373e6bf7d9e27",
       "notion_page_id": "dc94d0c1bb8f461d88a373e6bf7d9e27",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:30:55Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "implementation-cycles/DOC-AGENT-001-E5S03T01-03-RESOLUTION.md",
@@ -2159,9 +2352,10 @@
       "notion_parent_page_id": "378b6f89-62c1-8190-8aa8-e8855d05dff3",
       "notion_url": "https://www.notion.so/7827151f4d76119b7b7d2f8ef57d6f75",
       "notion_page_id": "7827151f4d76119b7b7d2f8ef57d6f75",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:30:55Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "implementation-cycles/E10S01-orchestration-plan.md",
@@ -2170,9 +2364,10 @@
       "notion_parent_page_id": "378b6f89-62c1-8190-8aa8-e8855d05dff3",
       "notion_url": "https://www.notion.so/fd2c008541d2aeabe16d225f0e2efc75",
       "notion_page_id": "fd2c008541d2aeabe16d225f0e2efc75",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:30:55Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "implementation-cycles/E4S19T03-e6s07-default-housing-investigation-report.md",
@@ -2181,9 +2376,10 @@
       "notion_parent_page_id": "378b6f89-62c1-8190-8aa8-e8855d05dff3",
       "notion_url": "https://www.notion.so/b087a5c8c03a919e4c84da5a2e2c7de3",
       "notion_page_id": "b087a5c8c03a919e4c84da5a2e2c7de3",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:30:55Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "implementation-cycles/E6S07T104-release-automation-audit-report.md",
@@ -2192,9 +2388,10 @@
       "notion_parent_page_id": "378b6f89-62c1-8190-8aa8-e8855d05dff3",
       "notion_url": "https://www.notion.so/f07cc2849fa7fb17e280ed17da696701",
       "notion_page_id": "f07cc2849fa7fb17e280ed17da696701",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:30:55Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "implementation-cycles/E6S07T104-remediation-implementation.md",
@@ -2203,9 +2400,10 @@
       "notion_parent_page_id": "378b6f89-62c1-8190-8aa8-e8855d05dff3",
       "notion_url": "https://www.notion.so/8059bbaf408c41005c7afccd72931124",
       "notion_page_id": "8059bbaf408c41005c7afccd72931124",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:30:55Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "implementation-cycles/HANDOVER-2026-04-25-ukw-rw-e2s16t04.md",
@@ -2214,9 +2412,10 @@
       "notion_parent_page_id": "378b6f89-62c1-8190-8aa8-e8855d05dff3",
       "notion_url": "https://www.notion.so/2fc6bf0171129f3a4775a518ef3b2123",
       "notion_page_id": "2fc6bf0171129f3a4775a518ef3b2123",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:30:55Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "implementation-cycles/IPW-E3S02T12-task-touch-semver-collision-hardening.md",
@@ -2225,9 +2424,10 @@
       "notion_parent_page_id": "378b6f89-62c1-8190-8aa8-e8855d05dff3",
       "notion_url": "https://www.notion.so/3f244a317fe8e9606b505fd7b4c5d1cf",
       "notion_page_id": "3f244a317fe8e9606b505fd7b4c5d1cf",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:30:55Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "implementation-cycles/IPW-E4S19T02-canonical-supporting-kanban-fbu-doc-naming-and-terminology.md",
@@ -2236,9 +2436,10 @@
       "notion_parent_page_id": "378b6f89-62c1-8190-8aa8-e8855d05dff3",
       "notion_url": "https://www.notion.so/02ddd184f82475ed751bdde0fad3e1a2",
       "notion_page_id": "02ddd184f82475ed751bdde0fad3e1a2",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:30:55Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "implementation-cycles/IPW-E5S09T11-docusaurus-monorepo-markdown-links-br068.md",
@@ -2247,9 +2448,10 @@
       "notion_parent_page_id": "378b6f89-62c1-8190-8aa8-e8855d05dff3",
       "notion_url": "https://www.notion.so/3b5d98c71038c04e664420bc7c88762e",
       "notion_page_id": "3b5d98c71038c04e664420bc7c88762e",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:30:55Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "implementation-cycles/IPW-E6S06T57-br039-vendor-blocker-planning.md",
@@ -2258,9 +2460,10 @@
       "notion_parent_page_id": "378b6f89-62c1-8190-8aa8-e8855d05dff3",
       "notion_url": "https://www.notion.so/b6fda758ae3cf8345619f653aff21879",
       "notion_page_id": "b6fda758ae3cf8345619f653aff21879",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:30:55Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "implementation-cycles/IPW-E6S06T62-global-ipw-gated-implementation-contract.md",
@@ -2269,9 +2472,10 @@
       "notion_parent_page_id": "378b6f89-62c1-8190-8aa8-e8855d05dff3",
       "notion_url": "https://www.notion.so/cc5f22bf689fdbaa442780b22e5db25c",
       "notion_page_id": "cc5f22bf689fdbaa442780b22e5db25c",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:30:55Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "implementation-cycles/IPW-E6S07T103-release-workflow-maintenance-perpetual.md",
@@ -2280,9 +2484,10 @@
       "notion_parent_page_id": "378b6f89-62c1-8190-8aa8-e8855d05dff3",
       "notion_url": "https://www.notion.so/b9f5c12e37ad766309879f3c7380b8b4",
       "notion_page_id": "b9f5c12e37ad766309879f3c7380b8b4",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:30:55Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "implementation-cycles/IPW-E6S07T112-install-feedback-submission-governance.md",
@@ -2291,9 +2496,10 @@
       "notion_parent_page_id": "378b6f89-62c1-8190-8aa8-e8855d05dff3",
       "notion_url": "https://www.notion.so/085542b8cf6327717be1af9d50730e43",
       "notion_page_id": "085542b8cf6327717be1af9d50730e43",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:30:55Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "implementation-cycles/IPW-E6S07T113-rw-step-12-5-github-release-parser-hardening.md",
@@ -2302,9 +2508,10 @@
       "notion_parent_page_id": "378b6f89-62c1-8190-8aa8-e8855d05dff3",
       "notion_url": "https://www.notion.so/4a754d2826b6fbc40b618fdeaee3a2bd",
       "notion_page_id": "4a754d2826b6fbc40b618fdeaee3a2bd",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:30:55Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "implementation-cycles/IPW-E6S09T01-greenfield-installation-fr080.md",
@@ -2313,9 +2520,10 @@
       "notion_parent_page_id": "378b6f89-62c1-8190-8aa8-e8855d05dff3",
       "notion_url": "https://www.notion.so/c02251ee6cfd326fdbdb4f380eefd568",
       "notion_page_id": "c02251ee6cfd326fdbdb4f380eefd568",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:30:55Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "implementation-cycles/IPW-E7S06T18-interactive-installer-kanban-pattern-clarity.md",
@@ -2324,9 +2532,10 @@
       "notion_parent_page_id": "378b6f89-62c1-8190-8aa8-e8855d05dff3",
       "notion_url": "https://www.notion.so/5028bf9e173fad7eb430d553d7f1de07",
       "notion_page_id": "5028bf9e173fad7eb430d553d7f1de07",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:30:55Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "implementation-cycles/IPW-PUBLICATION-BACKFILL-INVENTORY.md",
@@ -2335,9 +2544,10 @@
       "notion_parent_page_id": "378b6f89-62c1-8190-8aa8-e8855d05dff3",
       "notion_url": "https://www.notion.so/8c474c8db3877d02eb7bb32d26b2c4db",
       "notion_page_id": "8c474c8db3877d02eb7bb32d26b2c4db",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:30:55Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "implementation-cycles/PM-AGENT-002-COULD-HAVE-EXECUTION-SUMMARY.md",
@@ -2346,9 +2556,10 @@
       "notion_parent_page_id": "378b6f89-62c1-8190-8aa8-e8855d05dff3",
       "notion_url": "https://www.notion.so/becf4e49f90053ba7e1f50abe8c524e1",
       "notion_page_id": "becf4e49f90053ba7e1f50abe8c524e1",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:30:55Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "implementation-cycles/PM-AGENT-002-COULD-HAVE-SETUP.md",
@@ -2357,9 +2568,10 @@
       "notion_parent_page_id": "378b6f89-62c1-8190-8aa8-e8855d05dff3",
       "notion_url": "https://www.notion.so/3f564189eed5c409e70c643f69f2ffb0",
       "notion_page_id": "3f564189eed5c409e70c643f69f2ffb0",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:30:55Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "implementation-cycles/README.md",
@@ -2368,9 +2580,10 @@
       "notion_parent_page_id": "378b6f89-62c1-8190-8aa8-e8855d05dff3",
       "notion_url": "https://www.notion.so/c04dfdb8fe46ed1ba97fc279fe48ce24",
       "notion_page_id": "c04dfdb8fe46ed1ba97fc279fe48ce24",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:30:55Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "implementation-cycles/RW-AGENT-001-RELEASE-EXECUTION-SUMMARY.md",
@@ -2379,9 +2592,10 @@
       "notion_parent_page_id": "378b6f89-62c1-8190-8aa8-e8855d05dff3",
       "notion_url": "https://www.notion.so/d27817e404d4cdfbf55494f5294fe57b",
       "notion_page_id": "d27817e404d4cdfbf55494f5294fe57b",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:30:55Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "implementation-cycles/RW-AGENT-001-RELEASE-SETUP.md",
@@ -2390,9 +2604,10 @@
       "notion_parent_page_id": "378b6f89-62c1-8190-8aa8-e8855d05dff3",
       "notion_url": "https://www.notion.so/72694470649321cd6f1853131c602d60",
       "notion_page_id": "72694470649321cd6f1853131c602d60",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:30:55Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "implementation-cycles/RW-VALIDATE-001-PRE-RELEASE-VALIDATION.md",
@@ -2401,9 +2616,10 @@
       "notion_parent_page_id": "378b6f89-62c1-8190-8aa8-e8855d05dff3",
       "notion_url": "https://www.notion.so/14fab73b9438858037dbcdf5a0f8666a",
       "notion_page_id": "14fab73b9438858037dbcdf5a0f8666a",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:30:55Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "implementation-cycles/RW-VALIDATE-001-VALIDATION-RESULTS.md",
@@ -2412,9 +2628,10 @@
       "notion_parent_page_id": "378b6f89-62c1-8190-8aa8-e8855d05dff3",
       "notion_url": "https://www.notion.so/1b7ed5e3eddd2c72efd220b02c31fa39",
       "notion_page_id": "1b7ed5e3eddd2c72efd220b02c31fa39",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:30:55Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     },
     {
       "source_path": "implementation-cycles/archive/project-manager-coordination.md",
@@ -2423,12 +2640,15 @@
       "notion_parent_page_id": "378b6f89-62c1-8190-8aa8-e8855d05dff3",
       "notion_url": "https://www.notion.so/a9402908c524546a292a694a9bd5156a",
       "notion_page_id": "a9402908c524546a292a694a9bd5156a",
-      "stub_applied": true,
+      "stub_applied": false,
       "migrated_at": "2026-06-07T10:30:55Z",
-      "exclusion_reason": null
+      "exclusion_reason": null,
+      "restored_at": "2026-06-09T12:59:23Z"
     }
   ],
-  "updated_at": "2026-06-07T10:30:55Z",
+  "updated_at": "2026-06-09T12:59:23Z",
   "imported_count": 218,
-  "synthetic_urls": true
+  "synthetic_urls": true,
+  "reverse_migration_complete": true,
+  "reverse_migrated_at": "2026-06-09T12:59:23Z"
 }

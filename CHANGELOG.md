@@ -11,10 +11,10 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
-## [0.5.8.5+1] - 09-06-26
+## [0.5.8.5+2] - 09-06-26
 
-E05:S08:T05 / FR-121 — **Change implemented:** Kanban init (RW `-k`) for git-internal maintainer KB reverse-migration task. SemVer **v0.4.1100+1**.
+E05:S08:T05 / FR-121 — **Change implemented:** Reverse Notion migration — restored full maintainer KB markdown in git (218 paths). SemVer **v0.4.1101+2**.
 
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.5.8.5+1.md)
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.5.8.5+2.md)
 
 ---
