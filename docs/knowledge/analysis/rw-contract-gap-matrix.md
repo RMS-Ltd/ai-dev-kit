@@ -36,8 +36,8 @@ housekeeping_policy: keep
 | C-F4 | Kanban atomicity | FR-092 Step 7, `update_kanban_docs.py` | `validate_release_readiness.py` | MOSTLY MET | — |
 | C-F5 | Forensic traceability | Immutable changelog timestamp, four-surface report | BR-074 guards | MET | — |
 | C-F6 | Local-complete default | UXR-024 Step 12 default off | Policy review | MET | — |
-| C-F7 | Allocator preflight | Ops doc only (`saa-operator-verification-e03s02t14.md`) | T1 (planned) | MISSING | 1 |
-| C-F8 | Git-tag occupancy | `create_rw_tags` at tag time only | T2 (planned) | MISSING | 1 |
+| C-F7 | Allocator preflight | `validate_allocator_health.py` + rw-config | T1 | MET | 1 |
+| C-F8 | Git-tag occupancy | `validate_git_tag_occupancy.py` Step 1f | T2 | MET | 1 |
 | C-F9 | Single tag authority | `create_rw_tags()` exists; agent bypass observed | T3, T6 (planned) | VIOLATED | 3 |
 | C-F10 | Split-brain detection | None cross-surface | T4 (planned) | MISSING | 2 |
 | C-NF1 | Spec single source | Contract doc (this wave) + `canonical-rw-steps.yaml` | Structural | PARTIAL | 0/4 |
@@ -63,7 +63,7 @@ housekeeping_policy: keep
 | Wave | Deliverable | Matrix update |
 | ---- | ----------- | ------------- |
 | 0 | Contract + ADR-027 + this matrix | Baseline ✅ |
-| 1 | Step 1e/1f validators | C-F7, C-F8 → target MET |
+| 1 | Step 1e/1f validators | C-F7, C-F8 → MET ✅ |
 | 2 | `validate_release_coherence.py` | C-F2, C-F10 → target MET |
 | 3 | Step 11 tag authority | C-F9 → target MET |
 | 4 | `rw-contract.yaml` | C-NF1 → target MET |

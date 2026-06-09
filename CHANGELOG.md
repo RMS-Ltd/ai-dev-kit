@@ -11,10 +11,10 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
-## [0.2.1.30+1] - 09-06-26
+## [0.2.1.30+2] - 09-06-26
 
-E02:S01:T30 — **Change implemented:** FR-122 Wave 0 — RW architectural contract, gap matrix, ADR-027 (release transaction). SemVer **v0.4.1096+1**.
+E02:S01:T30 — **Change implemented:** FR-122 Wave 1 — RW Step 1e/1f allocator + git-tag preflight gates. SemVer **v0.4.1097+2**.
 
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.1.30+1.md)
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.1.30+2.md)
 
 ---

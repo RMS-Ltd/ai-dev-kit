@@ -64,6 +64,13 @@ release_state_backend: sqlite
 release_state_db: .adk/release-state.db
 release_state_export_yaml: .adk/semver-registry-export.yaml
 
+# FR-122 / E02:S01:T30 — RW Step 1e/1f preflight (ADR-027)
+allocator_health:
+  enabled: true
+  min_patch_floor: 1000
+git_tag_occupancy:
+  enabled: true
+
 # Versioning mode policy:
 # - dual: internal RC.EPIC.STORY.TASK+BUILD + external SemVer (requires task_touch)
 # - semver_only: SemVer-only workflows

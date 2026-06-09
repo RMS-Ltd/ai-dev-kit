@@ -80,9 +80,9 @@ md_path, json_path = report.write()
 
 ---
 
-## Mandatory Gates (Steps 1 → 1b → 1c → 1d)
+## Mandatory Gates (Steps 1 → 1b → 1c → 1d → 1e → 1f)
 
-All four gates MUST pass before any file modifications. Failure at any gate = **RW ABORTED**.
+All six gates MUST pass before any file modifications. Failure at any gate = **RW ABORTED**.
 
 ### Step 1 — Branch Safety Check (BLOCKING)
 
@@ -122,20 +122,38 @@ python "packages/frameworks/workflow-mgt/scripts/validation/validate_rw_task_int
 # If --confirmed-override present: append --confirmed-override (only after explicit user confirmation)
 ```
 
-- Exit 0 → pass, proceed to Step 2.
+- Exit 0 → pass, proceed to Step 1e.
 - Non-zero exit → **RW ABORTED**. Print script output. User must confirm intent or use `--confirmed-override` on re-send after explicit confirmation.
+
+### Step 1e — Allocator Health Preflight (FR-122 / ADR-027)
+
+```bash
+python "packages/frameworks/workflow-mgt/scripts/validation/validate_allocator_health.py" --strict
+```
+
+- Exit 0 → pass, proceed to Step 1f.
+- Non-zero exit → **RW ABORTED**. Truncated SAA DB — run `import_legacy.py` (see `docs/maintenance/saa-operator-verification-e03s02t14.md`).
+
+### Step 1f — Git-Tag Occupancy Preview (FR-122 / ADR-027)
+
+```bash
+python "packages/frameworks/workflow-mgt/scripts/validation/validate_git_tag_occupancy.py" --strict
+```
+
+- Exit 0 → pass, proceed to Step 2.
+- Non-zero exit → **RW ABORTED**. Predicted SemVer core tag already exists locally.
 
 ---
 
 ## Execution Steps
 
-After all four gates pass, create a TODO list for all steps (`rw-step-1` through `rw-step-13`) and execute **autonomously without stopping for user guidance**. Follow the `ANALYZE → DETERMINE → EXECUTE → VALIDATE → PROCEED` pattern for each step.
+After all six gates pass, create a TODO list for all steps (`rw-step-1` through `rw-step-13`) and execute **autonomously without stopping for user guidance**. Follow the `ANALYZE → DETERMINE → EXECUTE → VALIDATE → PROCEED` pattern for each step.
 
 **Selected execution path by variant:**
 
 | Step | Full RW | RW -d | RW -k |
 |------|---------|-------|-------|
-| 1–1d (gates) | ✅ | ✅ | ✅ |
+| 1–1f (gates) | ✅ | ✅ | ✅ |
 | 2 Bump Version | ✅ | ✅ | ✅ |
 | 3 Create Detailed Changelog | ✅ | ✅ | ✅ |
 | 4 Update Main Changelog | ✅ | ✅ | ✅ |

@@ -72,6 +72,12 @@
    - **If the script exits non-zero:** **RW ABORTED** — same severity as Step 1 failure. **Do not** bump version, edit changelogs, or touch kanban. Print the script output. Tell the user to verify the intended Epic/Story/Task.
    - **After explicit user confirmation** that the mismatch is intentional (e.g. they meant Story 5, not 6), re-invoke RW and pass **`--confirmed-override`** on `validate_rw_task_intent.py` (only after the user clearly confirms).
    - **Exception to “never stop”:** These guardrails **require** stopping the workflow when exit code is non-zero; the user must confirm or use a new message. This overrides generic “continuous execution” until intent is resolved.
+6e. **🚨 MANDATORY: Step 1e — Allocator health preflight (FR-122 / ADR-027)** — **After Step 1d passes**, **before any RW file modifications**
+   - Run: `python "packages/frameworks/workflow-mgt/scripts/validation/validate_allocator_health.py" --strict`
+   - **Non-zero exit:** **RW ABORTED** — truncated SAA DB or counter desync; run `import_legacy.py` per `docs/maintenance/saa-operator-verification-e03s02t14.md`.
+6f. **🚨 MANDATORY: Step 1f — Git-tag occupancy preview (FR-122 / ADR-027)** — **After Step 1e passes**, **before any RW file modifications**
+   - Run: `python "packages/frameworks/workflow-mgt/scripts/validation/validate_git_tag_occupancy.py" --strict`
+   - **Non-zero exit:** **RW ABORTED** — predicted SemVer core tag already occupied; repair allocator/DB before RW.
 7. **EXECUTE INTELLIGENTLY** - Use your AI capabilities to solve problems, don't just follow rigid steps
 8. **ADAPT AND RECOVER** - When scripts fail, find alternative approaches or implement manual workarounds
 9. **Document** each step's analysis, actions, and results
@@ -99,7 +105,7 @@
 
 - **DO** handle failures intelligently and continue the workflow
 
-- **EXCEPTION (FR-060 / BR-056):** If **Step 1b, 1c, or 1d** fails (missing task token, `validate_rw_task_complete.py`, or `validate_rw_task_intent.py`), **stop immediately** (RW ABORTED); do not continue to Step 2 until the user fixes the message or confirms override as documented in Step 1d
+- **EXCEPTION (FR-060 / BR-056 / FR-122):** If **Step 1b, 1c, 1d, 1e, or 1f** fails, **stop immediately** (RW ABORTED); do not continue to Step 2 until the user fixes the message, confirms override (Step 1d), or repairs allocator/tag namespace (Steps 1e/1f)
 
 ### 🔄 CONTINUOUS EXECUTION PATTERN
 
@@ -115,11 +121,15 @@
 
 5. **IF STEP 1c PASSES** - **EXECUTE STEP 1d** — `validate_rw_task_intent.py`; if it fails, **RW ABORTED**
 
-6. **IF STEP 1d PASSES** - Continue immediately to Step 2 (version bump)
+6. **IF STEP 1d PASSES** - **EXECUTE STEP 1e** — `validate_allocator_health.py --strict`; if it fails, **RW ABORTED**
 
-7. **EXECUTE STEP 2** - Increment version and update files
+7. **IF STEP 1e PASSES** - **EXECUTE STEP 1f** — `validate_git_tag_occupancy.py --strict`; if it fails, **RW ABORTED**
 
-8. **EXECUTE STEP 3** - Update changelog (immutable guard: never overwrite existing archive changelog; use post-bump version in header)
+8. **IF STEP 1f PASSES** - Continue immediately to Step 2 (version bump)
+
+9. **EXECUTE STEP 2** - Increment version and update files
+
+10. **EXECUTE STEP 3** - Update changelog (immutable guard: never overwrite existing archive changelog; use post-bump version in header)
 
 9. **EXECUTE STEP 4** - Run kanban documentation updates
 

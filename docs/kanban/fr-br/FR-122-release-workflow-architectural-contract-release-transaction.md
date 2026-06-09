@@ -14,7 +14,7 @@ housekeeping_policy: keep
 **Submitted By:** User (RW architecture experiment after `0.6.9.26+2` split-brain SemVer release)  
 **Priority:** CRITICAL  
 **Severity:** CRITICAL  
-**Status:** IN PROGRESS (Wave 0 **v0.2.1.30+1** — Wave 1 gates next)
+**Status:** IN PROGRESS (Wave 1 **v0.2.1.30+2** — Wave 2 coherence gate next)
 
 **Implementing Task:** [E02:S01:T30](../epics/epic-02/story-01-rw-agent-execution-and-docs/T30-rw-architectural-contract-release-transaction-fr122.md)  
 **IPP:** [IPP-E02S01T30](../../implementation-cycles/IPP-E02S01T30-rw-architectural-contract-release-transaction.md)
@@ -147,7 +147,8 @@ RW correctly uses agent intelligence for kanban synthesis and recovery — but *
 
 - [x] Published **RW Architectural Contract** (invariants + phase diagram + gate table) — Wave 0 @ 2026-06-09
 - [x] **Gap matrix** (contract clause → implementation → test → status) — Wave 0 @ 2026-06-09
-- [ ] **Wave 1 shipped:** Allocator preflight + git-tag occupancy gate + mandatory `create_rw_tags` in Step 11
+- [x] **Wave 1 shipped:** Allocator preflight + git-tag occupancy gate (Step 1e/1f) — **v0.2.1.30+2**
+- [ ] **Wave 3:** mandatory `create_rw_tags` in Step 11 (tag authority hard gate)
 - [ ] **No split-brain release** in 10 consecutive RW runs on ai-dev-kit `dev`
 - [ ] IPP linked from task doc; ADR-027 if contract changes agent/script boundary
 

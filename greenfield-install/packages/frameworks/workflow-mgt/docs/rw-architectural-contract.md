@@ -90,8 +90,8 @@ On success, all fields must be present:
 | C-F4 | Kanban atomicity | 7 | MOSTLY MET (FR-092) |
 | C-F5 | Forensic traceability | 3, 7 | MET |
 | C-F6 | Local-complete default | 12 | MET (UXR-024) |
-| C-F7 | Allocator preflight | 1e | MISSING — Wave 1 |
-| C-F8 | Git-tag occupancy | 1f | MISSING — Wave 1 |
+| C-F7 | Allocator preflight | 1e | MET — Wave 1 |
+| C-F8 | Git-tag occupancy | 1f | MET — Wave 1 |
 | C-F9 | Single tag authority | 11 | VIOLATED — Wave 3 |
 | C-F10 | Split-brain detection | 9 | MISSING — Wave 2 |
 

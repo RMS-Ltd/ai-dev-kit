@@ -9,12 +9,12 @@ housekeeping_policy: keep
 # E02:S01:T30 — RW architectural contract & release transaction (FR-122)
 
 **Task ID:** E02:S01:T30  
-**Status:** 🔄 IN PROGRESS (Wave 0 complete — contract + ADR-027 + gap matrix)  
+**Status:** 🔄 IN PROGRESS (Wave 1 complete — Step 1e/1f gates)  
 **Priority:** CRITICAL  
 **Estimated Effort:** Very Large (multi-wave meta program)  
 **Created:** 2026-06-09  
-**Last updated:** 2026-06-09 (RW **v0.2.1.30+1** — Wave 0 release)  
-**Version Anchor:** v0.2.1.30+1  
+**Last updated:** 2026-06-09 (RW **v0.2.1.30+2** — Wave 1 release)  
+**Version Anchor:** v0.2.1.30+2  
 **Code:** E02S01T30
 
 Publication Status: NOT_APPLICABLE
@@ -69,7 +69,7 @@ Own the **meta program** for [FR-122](../../../fr-br/FR-122-release-workflow-arc
 | Wave | Deliverable | Status |
 | ---- | ----------- | ------ |
 | **0** | Contract doc + gap matrix + ADR-027 draft | ✅ COMPLETE (**v0.2.1.30+1**) |
-| **1** | `validate_allocator_health.py`, `validate_git_tag_occupancy.py`, Step 1e/1f wiring | TODO |
+| **1** | `validate_allocator_health.py`, `validate_git_tag_occupancy.py`, Step 1e/1f wiring | ✅ COMPLETE (**v0.2.1.30+2**) |
 | **2** | `validate_release_coherence.py` | TODO |
 | **3** | Step 11 tag-authority hard gate + dual-source RW trigger parity | TODO |
 | **4** | `rw-contract.yaml` machine manifest | TODO |

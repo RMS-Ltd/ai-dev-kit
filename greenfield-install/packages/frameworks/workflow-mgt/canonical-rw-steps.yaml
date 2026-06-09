@@ -4,8 +4,44 @@
 # Aligns with root .cursorrules "The 12 Steps" + optional 9.5, 9.6, 12.5
 # Pre-release gates 1b/1c/1d run after Step 1 (documented in portable excerpt + vwmp guide)
 #
-# Last Updated: 2026-06-03
-# Version: 2.0.0
+# Last Updated: 2026-06-09
+# Version: 2.1.0
+
+preflight_gates:
+  step_1b:
+    id: "1b"
+    name: "RW Task Token Required"
+    description: "Parse E:S:T from trigger (FR-060)"
+    mandatory: true
+    blocking: true
+  step_1c:
+    id: "1c"
+    name: "RW Task Document Releasable"
+    description: "validate_rw_task_complete.py --requested"
+    mandatory: true
+    blocking: true
+    script: "packages/frameworks/workflow-mgt/scripts/validation/validate_rw_task_complete.py"
+  step_1d:
+    id: "1d"
+    name: "RW Task Intent Guard"
+    description: "validate_rw_task_intent.py --requested (BR-056)"
+    mandatory: true
+    blocking: true
+    script: "packages/frameworks/workflow-mgt/scripts/validation/validate_rw_task_intent.py"
+  step_1e:
+    id: "1e"
+    name: "Allocator Health Preflight"
+    description: "validate_allocator_health.py --strict (FR-122 F7 / ADR-027)"
+    mandatory: true
+    blocking: true
+    script: "packages/frameworks/workflow-mgt/scripts/validation/validate_allocator_health.py"
+  step_1f:
+    id: "1f"
+    name: "Git-Tag Occupancy Preview"
+    description: "validate_git_tag_occupancy.py --strict (FR-122 F8 / ADR-027)"
+    mandatory: true
+    blocking: true
+    script: "packages/frameworks/workflow-mgt/scripts/validation/validate_git_tag_occupancy.py"
 
 canonical_rw_steps:
   step_1:
@@ -196,4 +232,4 @@ metadata:
   optional_sub_steps: [9.5, 9.6, 12.5]
   mandatory_steps: 11
   agent_tracker_steps: 12
-  notes: "Steps 1b/1c/1d (FR-060, BR-056) are mandatory pre-Step-2 gates documented in portable excerpt, not separate canonical step numbers"
+  notes: "Steps 1b–1f (FR-060, BR-056, FR-122) are mandatory pre-Step-2 gates in preflight_gates; not separate canonical step numbers"

@@ -27,6 +27,16 @@ python packages/frameworks/workflow-mgt/scripts/version/finalize_rw_semver_regis
 python packages/frameworks/workflow-mgt/scripts/validation/validate_task_touch_release_contract.py --strict
 ```
 
+## RW Step 1e (automated)
+
+When `allocator_health.enabled` in `rw-config.yaml`, RW runs:
+
+```bash
+python packages/frameworks/workflow-mgt/scripts/validation/validate_allocator_health.py --strict
+```
+
+This enforces the same floor checks as the manual bootstrap below.
+
 ## Allocator bootstrap (mandatory before RW in sqlite mode)
 
 ```bash
