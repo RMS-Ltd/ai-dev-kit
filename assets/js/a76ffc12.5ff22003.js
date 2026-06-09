@@ -47,6 +47,10 @@ const toc = [{
   "id": "scope-greenfield-vs-brownfield",
   "level": 3
 }, {
+  "value": "Accessibility",
+  "id": "accessibility",
+  "level": 2
+}, {
   "value": "Core Commands",
   "id": "core-commands",
   "level": 2
@@ -258,6 +262,54 @@ function _createMdxContent(props) {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Note:"
       }), " The CLI tool is currently available from source. PyPI distribution is planned for a future release."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "accessibility",
+      children: "Accessibility"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["CLI status lines always include text labels (", (0,jsx_runtime.jsx)(_components.code, {
+        children: "Error:"
+      }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "Success:"
+      }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "Warning:"
+      }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "Info:"
+      }), "). Emoji prefixes appear only when colour is enabled."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: (0,jsx_runtime.jsx)(_components.code, {
+            children: "NO_COLOR"
+          })
+        }), " — Set this environment variable (any value) to suppress emoji and ANSI output (see ", (0,jsx_runtime.jsx)(_components.a, {
+          href: "https://no-color.org/",
+          children: "no-color.org"
+        }), ")."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: (0,jsx_runtime.jsx)(_components.code, {
+            children: "--no-color"
+          })
+        }), " — Global flag on any command: ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "ai-dev-kit --no-color install workflow-mgmt"
+        }), " sets ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "NO_COLOR=1"
+        }), " for that run."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Install errors"
+        }), " — Structured ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "ERROR [ADK-…]"
+        }), " banners (FR-108) are text-first and unchanged by colour settings."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Maintainer conventions: ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/governance/standards/cli-accessibility-conventions.md",
+        children: "cli-accessibility-conventions.md"
+      }), " · Strategy: ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/architecture/standards-and-adrs/ADR-025-layered-accessibility-strategy.md",
+        children: "ADR-025"
+      }), "."]
     }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
       id: "core-commands",
       children: "Core Commands"

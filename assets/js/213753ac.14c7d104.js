@@ -51,6 +51,10 @@ const toc = [{
   "id": "step-by-step-setup",
   "level": 2
 }, {
+  "value": "Step 0: Select Language Variant (UK / US English)",
+  "id": "step-0-select-language-variant-uk--us-english",
+  "level": 3
+}, {
   "value": "Step 1: Update Project Name and Branding",
   "id": "step-1-update-project-name-and-branding",
   "level": 3
@@ -160,7 +164,7 @@ function _createMdxContent(props) {
         children: "Version:"
       }), " 1.0.0", (0,jsx_runtime.jsx)(_components.br, {}), "\n", (0,jsx_runtime.jsx)(_components.strong, {
         children: "Last Updated:"
-      }), " 2025-12-07", (0,jsx_runtime.jsx)(_components.br, {}), "\n", (0,jsx_runtime.jsx)(_components.strong, {
+      }), " 2026-06-07 (E21:S01", ":T01", " — Step 0 language selection)", (0,jsx_runtime.jsx)(_components.br, {}), "\n", (0,jsx_runtime.jsx)(_components.strong, {
         children: "Epic:"
       }), " Epic 5 - Documentation Management and Maintenance", (0,jsx_runtime.jsx)(_components.br, {}), "\n", (0,jsx_runtime.jsx)(_components.strong, {
         children: "Story:"
@@ -206,6 +210,14 @@ function _createMdxContent(props) {
     }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
       className: "contains-task-list",
       children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        className: "task-list-item",
+        children: [(0,jsx_runtime.jsx)(_components.input, {
+          type: "checkbox",
+          disabled: true
+        }), " ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "Select language variant"
+        }), " (UK or US English) — Step 0 below"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
         className: "task-list-item",
         children: [(0,jsx_runtime.jsx)(_components.input, {
           type: "checkbox",
@@ -258,6 +270,77 @@ function _createMdxContent(props) {
       id: "step-by-step-setup",
       children: "Step-by-Step Setup"
     }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "step-0-select-language-variant-uk--us-english",
+      children: "Step 0: Select Language Variant (UK / US English)"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Do this first"
+      }), " — before renaming the project or running installers. This records your preferred English spelling conventions for documentation and generated content (FR-006 Phase 1)."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "0.1 Choose your variant:"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        children: "Select your preferred English variant:\n  [1] UK English (en-GB) — colour, organise, realise  [default]\n  [2] US English (en-US) — color, organize, realize\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["If you do not make an explicit choice, use ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "UK English (en-GB)"
+      }), "."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsxs)(_components.strong, {
+        children: ["0.2 Create ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "ai-dev-kit-config.yaml"
+        }), " at the project root:"]
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-bash",
+        children: "cp packages/frameworks/workflow-mgt/config/examples/ai-dev-kit-config.example.yaml ai-dev-kit-config.yaml\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["For a ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "lean vendor"
+      }), " layout (", (0,jsx_runtime.jsx)(_components.code, {
+        children: "vendor/ai-dev-kit/"
+      }), "):"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-bash",
+        children: "cp vendor/ai-dev-kit/packages/frameworks/workflow-mgt/config/examples/ai-dev-kit-config.example.yaml ai-dev-kit-config.yaml\n"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "0.3 Edit for US English (if you chose option 2):"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-yaml",
+        children: "localisation:\n  language: \"en-US\"\n  variant: \"US\"\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["The example file ships with ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "en-GB"
+      }), " as default. ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "CLI alternate:"
+      }), " ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "ai-dev-kit init"
+      }), " prompts for language first and writes the same file (", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-dev-kit/docs/documentation/user-docs/framework-dependency-cli-reference#ai-dev-kit-init",
+        children: "CLI reference"
+      }), "). ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "RW installer:"
+      }), " ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "install_release_workflow.py"
+      }), " prompts first and persists the same schema (", (0,jsx_runtime.jsxs)(_components.a, {
+        href: "https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/kanban/epics/epic-21/story-01-language-selection-at-setup/T03-add-language-selection-prompt-to-rw-installer-install-releas.md",
+        children: ["E21:S01", ":T03"]
+      }), " COMPLETE); generated scaffolds use the configured variant (", (0,jsx_runtime.jsxs)(_components.a, {
+        href: "https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/kanban/epics/epic-21/story-01-language-selection-at-setup/T06-update-content-generation-to-use-language-preference-rw-temp.md",
+        children: ["E21:S01", ":T06"]
+      }), " COMPLETE)."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h3, {
       id: "step-1-update-project-name-and-branding",
       children: "Step 1: Update Project Name and Branding"
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {

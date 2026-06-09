@@ -520,11 +520,22 @@ function _createMdxContent(props) {
         children: ["✅ All 5 frameworks in ", (0,jsx_runtime.jsx)(_components.code, {
           children: "packages/frameworks/"
         })]
-      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
-        children: "✅ Configuration files and examples"
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["✅ Configuration files and examples (including ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "ai-dev-kit-config.example.yaml"
+        }), " for language preference)"]
       }), "\n", (0,jsx_runtime.jsx)(_components.li, {
         children: "✅ Documentation (7 user guides)"
-      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "First setup step for adopters:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/ai-dev-kit/docs/documentation/user-docs/framework-dependency-post-template-setup-guide#step-0-select-language-variant-uk--us-english",
+        children: "Step 0 — Select language variant"
+      }), " (UK/US English) before project customization."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
         children: "✅ Example workflows and templates"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {

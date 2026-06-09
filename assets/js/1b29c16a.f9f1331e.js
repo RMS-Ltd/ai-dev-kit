@@ -569,6 +569,19 @@ function _createMdxContent(props) {
       }), "\n", (0,jsx_runtime.jsx)(_components.li, {
         children: "✅ Example workflows and templates"
       }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "First step (language):"
+      }), " Before other customization, complete ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: (0,jsx_runtime.jsx)(_components.a, {
+          href: "/ai-dev-kit/docs/documentation/user-docs/framework-dependency-post-template-setup-guide#step-0-select-language-variant-uk--us-english",
+          children: "Step 0 — Select language variant"
+        })
+      }), " in the Post-Template Setup Guide. Copy ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "ai-dev-kit-config.example.yaml"
+      }), " to ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "ai-dev-kit-config.yaml"
+      }), " at the project root (default: UK English / en-GB)."]
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: (0,jsx_runtime.jsx)(_components.strong, {
         children: "Next Steps:"
