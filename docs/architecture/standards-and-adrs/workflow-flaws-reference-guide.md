@@ -10,8 +10,8 @@ housekeeping_policy: keep
 
 **Status:** ACTIVE REFERENCE  
 **Owner:** Engineering  
-**Last Updated:** 2025-12-04  
-**Related Work:** Epic 3, Story 3 (Versioning Integration with Kanban & RW)
+**Last Updated:** 2026-06-09  
+**Related Work:** Epic 3, Story 3 (Versioning Integration with Kanban & RW); [FR-122](../../kanban/fr-br/FR-122-release-workflow-architectural-contract-release-transaction.md) / [ADR-027](ADR-027-rw-release-transaction-contract.md)
 
 ---
 
@@ -42,6 +42,39 @@ This document serves as a **comprehensive reference** for all discovered flaws, 
 | [WF-002](#wf-002-version-bump-logic-error-step-2) | Step 2 | BUILD incremented instead of TASK for new tasks | ✅ FIXED | [Solution](#wf-002-version-bump-logic-error-step-2) |
 | [WF-003](#wf-003-brfr-fix-attempts-not-documented) | N/A (New Step 6) | Fix attempts not documented in BR/FR docs, preventing knowledge transfer between builds | ✅ FIXED | [Solution](#wf-003-brfr-fix-attempts-not-documented) |
 | [WF-004](#wf-004-story-file-missing-during-rw-update-step-7) | Step 7 | RW fails when Story file referenced in Epic doesn't exist | 🔧 TO FIX | [Solution](#wf-004-story-file-missing-during-rw-update-step-7) |
+| [WF-005](#wf-005-split-brain-release-semver-surfaces-diverge) | 2–5, 9, 11 | `version.py` / internal tag OK; README, changelog, SemVer tag, or allocator DB disagree | 🔧 IN PROGRESS | [FR-122](../../kanban/fr-br/FR-122-release-workflow-architectural-contract-release-transaction.md) Wave 1–3 |
+
+---
+
+## WF-005: Split-brain release (semver surfaces diverge)
+
+**Status:** 🔧 IN PROGRESS (Wave 0 contract filed 2026-06-09)  
+**Date Discovered:** 2026-06-09 (`0.6.9.26+2` / E06:S09:T26)  
+**Related:** [FR-122](../../kanban/fr-br/FR-122-release-workflow-architectural-contract-release-transaction.md) · [ADR-027](ADR-027-rw-release-transaction-contract.md) · [BR-097](../../kanban/fr-br/BR-097-rw-agent-reuses-tagged-build-and-force-moves-release-tags.md)
+
+### Symptom
+
+RW reports local-complete while release surfaces disagree:
+
+- `version.py` and internal tag updated
+- README / CHANGELOG show wrong SemVer
+- Allocator DB truncated or stale vs git tag namespace
+- SemVer git tag creation fails or is skipped (agent used raw `git tag`)
+
+### Root cause
+
+No **release transaction contract** enforcing cross-surface coherence before commit. Validators checked SQLite injectivity in isolation, not git-tag occupancy or README↔DB alignment.
+
+### Solution (incremental)
+
+| Wave | Fix |
+| ---- | --- |
+| 0 | Contract + gap matrix + ADR-027 |
+| 1 | `validate_allocator_health.py`, `validate_git_tag_occupancy.py` (Step 1e/1f) |
+| 2 | `validate_release_coherence.py` |
+| 3 | Step 11 `create_rw_tags` only |
+
+**Gap matrix:** [rw-contract-gap-matrix.md](../../knowledge/analysis/rw-contract-gap-matrix.md)
 
 ---
 

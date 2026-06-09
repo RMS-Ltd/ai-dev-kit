@@ -11,10 +11,10 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
-## [0.6.9.26+2] - 09-06-26
+## [0.2.1.30+1] - 09-06-26
 
-E06:S09:T26 — **Change implemented:** Starborn Legacy attempt 03 FR-079 feedback intake; F9→BLOCKER; triage F10–F17 merged. SemVer **v0.4.11+2**.
+E02:S01:T30 — **Change implemented:** FR-122 Wave 0 — RW architectural contract, gap matrix, ADR-027 (release transaction). SemVer **v0.4.1096+1**.
 
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.6.9.26+2.md)
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.1.30+1.md)
 
 ---

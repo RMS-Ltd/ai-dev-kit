@@ -13,8 +13,8 @@ housekeeping_policy: keep
 **Estimated Effort:** [TBD]  
 **Created:** 2025-12-02  
 **Completed:** N/A (story reopened for ongoing RW validation work)
-**Last updated:** 2026-06-07 (v0.2.1.25+1 — **T25** / FR-115+FR-116 async ingest v1)
-**Version:** v0.2.1.25+1
+**Last updated:** 2026-06-09 (v0.2.1.30+1 — **T30** / FR-122 Wave 0 contract)
+**Version:** v0.2.1.30+1
 **Code:** E2S01
 
 ---
@@ -78,6 +78,8 @@ Make RW agent execution documentation fully portable, clearly distinguishing dev
 - [x] **E02:S01:T28 – RW `--dpz` short flag (UXR-022)** — ✅ COMPLETE (re-housed from E02:S16:T19) — [Task](story-01-rw-agent-execution-and-docs/T28-rw-dpz-short-flag-doc-policy-zero-uxr022.md) | [UXR-022](../../fr-br/UXR-022-rw-doc-policy-zero-short-flag-dpz.md)
 
 - [x] **E02:S01:T29 – RW local-release default / no push (UXR-024)** — ✅ COMPLETE (re-housed from E02:S16:T21) — [Task](story-01-rw-agent-execution-and-docs/T29-rw-local-release-default-no-push-uxr024.md) | [UXR-024](../../fr-br/UXR-024-rw-local-release-default-no-push-batch-operator-push.md)
+
+- [ ] **E02:S01:T30 – RW architectural contract & release transaction (FR-122)** — 🔄 IN PROGRESS (**v0.2.1.30+1** Wave 0) — [Task](story-01-rw-agent-execution-and-docs/T30-rw-architectural-contract-release-transaction-fr122.md) | [FR-122](../../fr-br/FR-122-release-workflow-architectural-contract-release-transaction.md) | [IPP](../../../implementation-cycles/IPP-E02S01T30-rw-architectural-contract-release-transaction.md)
 
 ---
 
