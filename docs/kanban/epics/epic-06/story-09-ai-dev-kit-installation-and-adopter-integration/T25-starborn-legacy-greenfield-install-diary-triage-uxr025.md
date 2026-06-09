@@ -79,6 +79,7 @@ Triage the **Starborn Legacy** greenfield install diary (`v0.4.1063` tarball) an
 | Adopter intent | **Failed** — Kanban `--mode fresh` still ran despite legacy E/S/T scope |
 | **F9** | [Triage matrix F9](../../../../knowledge/analysis/projects/starborn-legacy-install-triage-matrix.md) — attempts 1 **and** 2 install **v1** packaged epic catalog (`migrate_structure._install_canonical_epics`), not [Kanban v3.2](../../../../knowledge/analysis/kanban-v2/08-executive-summary.md); sign-off ALL READY ≠ catalog generation |
 | Suggested follow-on | INSTALL doc warning; defer package rewrite per [migration blueprint](../../../../knowledge/analysis/kanban-v2/07-package-migration-blueprint.md); orchestrator `--kanban-mode skip` or RW-only greenfield profile |
+| Successor task | **E06:S09:T26** — [Starborn Legacy ADK install program](T26-starborn-legacy-adk-install-program.md) @ **v0.6.9.26+1** |
 
 ---
 

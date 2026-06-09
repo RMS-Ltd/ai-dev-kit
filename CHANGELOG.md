@@ -11,10 +11,10 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
-## [0.2.16.7+2] - 09-06-26
+## [0.6.9.26+1] - 09-06-26
 
-E02:S16:T07 — **Change implemented:** Perpetual ad-hoc documentation maintenance lane (T07); README / INSTALL SHA-256 integrity and install pin alignment attributed (`--art`). SemVer **v0.4.11+2**.
+E06:S09:T26 — **Change implemented:** Starborn Legacy ADK install program intake (T26); `validate_branch_context` lowercase epic/story task-doc discovery (AC6). SemVer **v0.4.13+1**.
 
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.16.7+2.md)
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.6.9.26+1.md)
 
 ---

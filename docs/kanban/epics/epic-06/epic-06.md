@@ -12,7 +12,7 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** [TBD]  
 **Created:** 2025-12-05  
-**Last updated:** 2026-06-09 (v0.6.9.25+3 – T25 attempt 2 + F9 triage)
+**Last updated:** 2026-06-09 (v0.6.9.26+1 – T26 SBL install program + validator hygiene)
 **Branch:** `epic/6-framework-management`  
 **Version Schema:** `0.6.S.T+B`  
 **Production URL:** [N/A for this repo]
@@ -106,7 +106,7 @@ housekeeping_policy: keep
 
 
 
-- [ ] **E6:S09 – AI Dev Kit installation and adopter integration** - IN PROGRESS (2026-06-09 — **T25** intake **v0.6.9.25+1** UXR-025; **T24** COMPLETE **v0.6.9.24+3** FR-111)
+- [ ] **E6:S09 – AI Dev Kit installation and adopter integration** - IN PROGRESS (2026-06-09 — **T26** SBL install program **v0.6.9.26+1**; **T25** COMPLETE **v0.6.9.25+3** UXR-025)
   - Story: [`story-09-ai-dev-kit-installation-and-adopter-integration.md`](story-09-ai-dev-kit-installation-and-adopter-integration.md)
   - Tasks: **T01–T06** ✅ ([FR-080](../../fr-br/FR-080-greenfield-installation-process.md), [FR-081](../../fr-br/FR-081-brownfield-modular-adopter-integration.md), [FR-082](../../fr-br/FR-082-installation-distribution-canonical-repo-alignment.md), [FR-098](../../fr-br/FR-098-ecc-optional-harness-layer-integration.md))
 
