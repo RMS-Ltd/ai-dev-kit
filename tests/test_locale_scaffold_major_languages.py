@@ -91,8 +91,8 @@ def test_s5_meta_locale_matches_directory():
                 assert data["_meta"]["locale"] == code, f"{code}/{name}"
 
 
-def test_s6_resolve_locale_key_es_interim():
-    """S6: resolve_locale_key works for scaffold locale (English interim)."""
+def test_s6_resolve_locale_key_es_translated():
+    """S6: resolve_locale_key returns Spanish catalog for es (E21:S05:T01)."""
     import sys
 
     scripts = REPO_ROOT / "packages" / "frameworks" / "workflow-mgt" / "scripts"
@@ -103,4 +103,4 @@ def test_s6_resolve_locale_key_es_interim():
     value = resolve_locale_key(
         REPO_ROOT, "cli.prompt.language_choice", language="es", package="workflow-mgt"
     )
-    assert "English variant" in value
+    assert value == "Seleccione su variante de inglés preferida:"

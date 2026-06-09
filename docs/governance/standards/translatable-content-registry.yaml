@@ -1,7 +1,3 @@
-# Machine-readable translatable content registry (E21:S03:T01)
-# Consumed by T06 completeness tracking; human overview in translatable-content-inventory.md
-# Contributor workflow: docs/governance/standards/translation-workflow-and-review.md
-# Management tools: docs/documentation/user-docs/translation-management-tools.md
 version: 2
 task: E21:S03:T02
 adr: ADR-024
@@ -15,7 +11,7 @@ scaffold_locales:
   es:
     owner_story: E21:S05:T01
     scaffold_status: complete
-    linguistic_status: pending
+    linguistic_status: complete
   fr:
     owner_story: E21:S05:T02
     scaffold_status: complete
@@ -48,20 +44,20 @@ scaffold_locales:
     owner_story: E21:S07:T02
     scaffold_status: complete
     linguistic_status: pending
-
 tiers:
   runtime_user:
-    description: Short strings for installer, CLI, and locale config — extracted to keys/
+    description: Short strings for installer, CLI, and locale config — extracted to
+      keys/
     extraction_status: extracted
     wiring_status: complete
     wiring_task: E21:S03:T03
   whole_file:
-    description: Markdown templates, scaffolds, and docs — remain whole files per ADR-024 C1
+    description: Markdown templates, scaffolds, and docs — remain whole files per
+      ADR-024 C1
     extraction_status: documented
   operator_validator:
     description: RW validation script operator messages
     extraction_status: deferred
-
 packages:
   workflow-mgt:
     locales_root: packages/frameworks/workflow-mgt/locales
@@ -70,26 +66,26 @@ packages:
         file: keys/cli.yaml
         key_count: 25
         source_surfaces:
-          - cli/commands/init.py
-          - cli/utils.py
-          - packages/frameworks/workflow-mgt/scripts/localisation_config.py
+        - cli/commands/init.py
+        - cli/utils.py
+        - packages/frameworks/workflow-mgt/scripts/localisation_config.py
       errors:
         file: keys/errors.yaml
         key_count: 6
         source_surfaces:
-          - packages/frameworks/workflow-mgt/scripts/localisation_config.py
-          - packages/frameworks/workflow-mgt/scripts/install_release_workflow.py
+        - packages/frameworks/workflow-mgt/scripts/localisation_config.py
+        - packages/frameworks/workflow-mgt/scripts/install_release_workflow.py
       installer:
         file: keys/installer.yaml
         key_count: 99
         source_surfaces:
-          - packages/frameworks/workflow-mgt/scripts/install_release_workflow.py
+        - packages/frameworks/workflow-mgt/scripts/install_release_workflow.py
     whole_file_categories:
       scaffolds:
         keys:
-          - changelog_stub
-          - version_scaffold_decline
-          - changelog_scaffold_decline
+        - changelog_stub
+        - version_scaffold_decline
+        - changelog_scaffold_decline
   kanban:
     locales_root: packages/frameworks/kanban/locales
     key_domains:
@@ -102,21 +98,20 @@ packages:
     whole_file_categories:
       templates:
         keys:
-          - fr
-          - br
-          - uxr
-          - fb
-          - task
-          - story
-          - epic
-          - plan_doc
+        - fr
+        - br
+        - uxr
+        - fb
+        - task
+        - story
+        - epic
+        - plan_doc
       docs:
         keys:
-          - setup_index
-
+        - setup_index
 deferred_surfaces:
-  - tier: operator_validator
-    path_glob: packages/frameworks/workflow-mgt/scripts/validation/*.py
-    estimated_print_calls: 250
-    proposed_domain: validator
-    follow_on: future epic task or S03 extension
+- tier: operator_validator
+  path_glob: packages/frameworks/workflow-mgt/scripts/validation/*.py
+  estimated_print_calls: 250
+  proposed_domain: validator
+  follow_on: future epic task or S03 extension

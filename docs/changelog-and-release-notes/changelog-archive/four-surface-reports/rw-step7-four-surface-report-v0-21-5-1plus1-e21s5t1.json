@@ -2,7 +2,7 @@
   "auxiliary_surfaces": {
     "epic_doc": {
       "changes": [
-        "Updated Epic Last updated: 2026-06-09 (v0.21.4.1+1 \u2013 Kanban documentation setup)"
+        "Updated Epic Last updated: 2026-06-10 (v0.21.5.1+1 \u2013 Kanban documentation setup)"
       ],
       "notes": [],
       "paths": [
@@ -13,21 +13,21 @@
     },
     "story_doc": {
       "changes": [
-        "\u2705 Story doc updated: /Users/rms/Documents/projects/ai-dev-kit/docs/kanban/epics/epic-21/story-04-cultural-adaptation.md"
+        "\u2705 Story doc updated: /Users/rms/Documents/projects/ai-dev-kit/docs/kanban/epics/epic-21/story-05-european-languages-localization.md"
       ],
       "notes": [],
       "paths": [
-        "/Users/rms/Documents/projects/ai-dev-kit/docs/kanban/epics/epic-21/story-04-cultural-adaptation.md"
+        "/Users/rms/Documents/projects/ai-dev-kit/docs/kanban/epics/epic-21/story-05-european-languages-localization.md"
       ],
       "surface": "story_doc",
       "touched": true
     },
     "uncategorized": {
       "changes": [
-        "Updated Version: v0.21.4.1+1",
-        "Updated Last updated: 2026-06-09 (v0.21.4.1+1 \u2013 Kanban documentation setup)",
-        "Updated board Last Updated: 2026-06-09 (RW: E21:S04:T01)",
-        "Updated board Version: v0.21.4.1+1"
+        "Updated Version: v0.21.5.1+1",
+        "Updated Last updated: 2026-06-10 (v0.21.5.1+1 \u2013 Kanban documentation setup)",
+        "Updated board Last Updated: 2026-06-10 (RW: E21:S05:T01)",
+        "Updated board Version: v0.21.5.1+1"
       ],
       "notes": [],
       "paths": [],
@@ -39,10 +39,10 @@
   "invocation_context": "rw_step_7",
   "release_scope": {
     "epic": 21,
-    "story": 4,
+    "story": 5,
     "task": 1,
-    "task_id": "E21:S4:T1",
-    "version_string": "v0.21.4.1+1"
+    "task_id": "E21:S5:T1",
+    "version_string": "v0.21.5.1+1"
   },
   "stamp_evidence": {},
   "summary": {
@@ -88,5 +88,5 @@
       "touched": false
     }
   },
-  "timestamp_utc": "2026-06-09 22:06 UTC"
+  "timestamp_utc": "2026-06-09 23:43 UTC"
 }

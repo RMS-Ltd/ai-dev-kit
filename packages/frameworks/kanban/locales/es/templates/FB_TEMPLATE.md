@@ -6,252 +6,251 @@ expires_at: null
 housekeeping_policy: keep
 ---
 
-# User Acceptance Testing (UAT) Report: [Title]
+# Informe de pruebas de aceptación de usuario (UAT): [Título]
 
-**Type:** User Acceptance Testing (UAT) / Feedback (FB)  
-**Submitted:** [YYYY-MM-DD]  
-**Submitted By:** [Name/Username/Project]  
-**Priority:** [HIGH/MEDIUM/LOW]  
-**Status:** [PENDING/INTAKE/ACCEPTED/REJECTED/DEFERRED]  
-**UAT Scope:** [Component/Feature/System tested]
-
----
-
-## Summary
-
-[One sentence summary of the feedback.]
+**Tipo:** Pruebas de aceptación de usuario (UAT) / Feedback (FB)  
+**Enviado:** [YYYY-MM-DD]  
+**Enviado por:** [Nombre/Usuario/Proyecto]  
+**Prioridad:** [ALTA/MEDIA/BAJA]  
+**Estado:** [PENDIENTE/INTAKE/ACEPTADO/RECHAZADO/DIFERIDO]  
+**Alcance UAT:** [Componente/funcionalidad/sistema probado]
 
 ---
 
-## UAT Context
+## Resumen
 
-**Project/Organization:** [Name of project or organization conducting UAT]  
-**Component Tested:** [e.g., Kanban Framework, Release Workflow, Versioning Framework]  
-**Version Tested:** [Version number or commit hash]  
-**Testing Period:** [Start date] to [End date]  
-**UAT Scope:** [Brief description of what was tested and acceptance criteria]
-
-**UAT Methodology:**
-- [ ] Functional Testing (does it work as specified?)
-- [ ] Integration Testing (does it integrate as expected?)
-- [ ] Adoption Testing (can it be adopted as documented?)
-- [ ] End-to-End Testing (does the full workflow work?)
-- [ ] Other: [specify]
-
-**Acceptance Criteria Tested:**
-[List the specific acceptance criteria or requirements that were tested]
-- Criterion 1: [Description]
-- Criterion 2: [Description]
-- Criterion 3: [Description]
+[Resumen en una frase del feedback.]
 
 ---
 
-## UAT Results
+## Contexto UAT
 
-### Acceptance Criteria Results
+**Proyecto/organización:** [Nombre del proyecto u organización que realiza el UAT]  
+**Componente probado:** [p. ej., Kanban Framework, Release Workflow, Versioning Framework]  
+**Versión probada:** [Número de versión o hash de commit]  
+**Periodo de pruebas:** [Fecha de inicio] a [Fecha de fin]  
+**Alcance UAT:** [Breve descripción de lo probado y criterios de aceptación]
 
-[For each acceptance criterion, document the test result]
+**Metodología UAT:**
+- [ ] Pruebas funcionales (¿funciona según lo especificado?)
+- [ ] Pruebas de integración (¿se integra según lo esperado?)
+- [ ] Pruebas de adopción (¿puede adoptarse según la documentación?)
+- [ ] Pruebas de extremo a extremo (¿funciona el flujo completo?)
+- [ ] Otro: [especificar]
 
-**Criterion 1: [Description]**
-- **Status:** [PASS/FAIL/PARTIAL]
-- **Evidence:** [Test results, screenshots, logs, etc.]
-- **Notes:** [Additional observations]
-
-**Criterion 2: [Description]**
-- **Status:** [PASS/FAIL/PARTIAL]
-- **Evidence:** [Test results, screenshots, logs, etc.]
-- **Notes:** [Additional observations]
-
-**Criterion 3: [Description]**
-- **Status:** [PASS/FAIL/PARTIAL]
-- **Evidence:** [Test results, screenshots, logs, etc.]
-- **Notes:** [Additional observations]
-
-### Test Results Summary
-
-**Total Criteria Tested:** [Number]  
-**Passed:** [Number]  
-**Failed:** [Number]  
-**Partial:** [Number]
-
-### What Worked as Expected
-
-[What aspects passed UAT and worked as specified/advertised?]
-
-- Aspect 1: [Description with evidence]
-- Aspect 2: [Description with evidence]
-- Aspect 3: [Description with evidence]
-
-### Issues Found (Failures)
-
-[What acceptance criteria failed or did not work as specified?]
-
-- **Issue 1:** [Criterion that failed]
-  - **Expected:** [What was expected]
-  - **Actual:** [What actually happened]
-  - **Evidence:** [Test results, screenshots, logs]
-  - **Severity:** [CRITICAL/HIGH/MEDIUM/LOW]
-
-- **Issue 2:** [Criterion that failed]
-  - **Expected:** [What was expected]
-  - **Actual:** [What actually happened]
-  - **Evidence:** [Test results, screenshots, logs]
-  - **Severity:** [CRITICAL/HIGH/MEDIUM/LOW]
-
-### Overall UAT Assessment
-
-**Does it work as advertised/specified?**
-- [ ] Yes, works as advertised (all criteria passed)
-- [ ] Mostly works (minor issues, non-critical criteria failed)
-- [ ] Partially works (some critical criteria failed)
-- [ ] Does not work as advertised (critical criteria failed)
-
-**UAT Recommendation:**
-- [ ] ACCEPT - Ready for use
-- [ ] ACCEPT WITH CAVEATS - Usable but with known issues
-- [ ] REJECT - Does not meet acceptance criteria
-
-**Evidence-Based Rating:** [Based on test results, not opinion]
+**Criterios de aceptación probados:**
+[Liste los criterios de aceptación o requisitos específicos que se probaron]
+- Criterio 1: [Descripción]
+- Criterio 2: [Descripción]
+- Criterio 3: [Descripción]
 
 ---
 
-## Specific Findings
+## Resultados UAT
 
-### Functionality
+### Resultados por criterio de aceptación
 
-[Detailed feedback on functionality]
+[Para cada criterio de aceptación, documente el resultado de la prueba]
 
-- Finding 1: [Description]
-- Finding 2: [Description]
+**Criterio 1: [Descripción]**
+- **Estado:** [APROBADO/FALLIDO/PARCIAL]
+- **Evidencia:** [Resultados de prueba, capturas, registros, etc.]
+- **Notas:** [Observaciones adicionales]
 
-### Usability
+**Criterio 2: [Descripción]**
+- **Estado:** [APROBADO/FALLIDO/PARCIAL]
+- **Evidencia:** [Resultados de prueba, capturas, registros, etc.]
+- **Notas:** [Observaciones adicionales]
 
-[Feedback on ease of use, documentation, onboarding]
+**Criterio 3: [Descripción]**
+- **Estado:** [APROBADO/FALLIDO/PARCIAL]
+- **Evidencia:** [Resultados de prueba, capturas, registros, etc.]
+- **Notas:** [Observaciones adicionales]
 
-- Finding 1: [Description]
-- Finding 2: [Description]
+### Resumen de resultados de prueba
 
-### Performance
+**Total de criterios probados:** [Número]  
+**Aprobados:** [Número]  
+**Fallidos:** [Número]  
+**Parciales:** [Número]
 
-[Feedback on performance, speed, resource usage]
+### Lo que funcionó según lo esperado
 
-- Finding 1: [Description]
-- Finding 2: [Description]
+[¿Qué aspectos pasaron el UAT y funcionaron según lo especificado/anunciado?]
 
-### Documentation
+- Aspecto 1: [Descripción con evidencia]
+- Aspecto 2: [Descripción con evidencia]
+- Aspecto 3: [Descripción con evidencia]
 
-[Feedback on documentation quality, completeness, clarity]
+### Problemas encontrados (fallos)
 
-- Finding 1: [Description]
-- Finding 2: [Description]
+[¿Qué criterios de aceptación fallaron o no funcionaron según lo especificado?]
 
-### Integration
+- **Problema 1:** [Criterio que falló]
+  - **Esperado:** [Lo que se esperaba]
+  - **Real:** [Lo que ocurrió realmente]
+  - **Evidencia:** [Resultados de prueba, capturas, registros]
+  - **Gravedad:** [CRÍTICA/ALTA/MEDIA/BAJA]
 
-[Feedback on integration with other tools/systems]
+- **Problema 2:** [Criterio que falló]
+  - **Esperado:** [Lo que se esperaba]
+  - **Real:** [Lo que ocurrió realmente]
+  - **Evidencia:** [Resultados de prueba, capturas, registros]
+  - **Gravedad:** [CRÍTICA/ALTA/MEDIA/BAJA]
 
-- Finding 1: [Description]
-- Finding 2: [Description]
+### Evaluación general del UAT
 
----
+**¿Funciona según lo anunciado/especificado?**
+- [ ] Sí, funciona según lo anunciado (todos los criterios aprobados)
+- [ ] Funciona en su mayor parte (problemas menores, criterios no críticos fallidos)
+- [ ] Funciona parcialmente (algunos criterios críticos fallidos)
+- [ ] No funciona según lo anunciado (criterios críticos fallidos)
 
-## Use Case Details
+**Recomendación UAT:**
+- [ ] ACEPTAR — Listo para uso
+- [ ] ACEPTAR CON SALVEDADES — Utilizable pero con problemas conocidos
+- [ ] RECHAZAR — No cumple los criterios de aceptación
 
-**Primary Use Case:** [How was this component used?]
-
-**Project Type:** [e.g., New project, Existing project migration, Framework adoption]
-
-**Project Size:** [e.g., Small, Medium, Large, Enterprise]
-
-**Team Size:** [Number of team members using the component]
-
-**Duration of Use:** [How long has it been in use?]
-
----
-
-## Supporting Evidence
-
-**Test Results:**
-- [Link to test results, screenshots, or other evidence]
-- [Link to test reports or documentation]
-
-**Examples:**
-- [Specific examples or scenarios]
-- [Code snippets or configurations]
-
-**Metrics:**
-- [Any quantitative metrics or measurements]
-
----
-
-## Impact Assessment
-
-**Impact on Project:**
-- [ ] Critical - Blocked project progress
-- [ ] High - Significant impact on project
-- [ ] Medium - Moderate impact
-- [ ] Low - Minor impact
-- [ ] Positive - Enhanced project
-
-**Impact on Team:**
-- [ ] Critical - Team productivity affected
-- [ ] High - Significant team impact
-- [ ] Medium - Moderate team impact
-- [ ] Low - Minor team impact
-- [ ] Positive - Improved team workflow
+**Calificación basada en evidencia:** [Basada en resultados de prueba, no en opinión]
 
 ---
 
-## Recommendations
+## Hallazgos específicos
 
-[What actions should be taken based on this feedback?]
+### Funcionalidad
 
-- [ ] Recommendation 1: [Description]
-- [ ] Recommendation 2: [Description]
-- [ ] Recommendation 3: [Description]
+[Feedback detallado sobre la funcionalidad]
 
-**Priority Order:**
-1. [Highest priority recommendation]
-2. [Second priority recommendation]
-3. [Third priority recommendation]
+- Hallazgo 1: [Descripción]
+- Hallazgo 2: [Descripción]
 
----
+### Usabilidad
 
-## Related Work
+[Feedback sobre facilidad de uso, documentación, incorporación]
 
-**Related BRs:** [Bug reports filed as a result of this feedback]
-**Related FRs:** [Feature requests filed as a result of this feedback]
-**Related UXR:** [User experience research related to this feedback]
+- Hallazgo 1: [Descripción]
+- Hallazgo 2: [Descripción]
 
----
+### Rendimiento
 
-## Intake Decision
+[Feedback sobre rendimiento, velocidad, uso de recursos]
 
-**Intake Status:** [PENDING/INTAKE/ACCEPTED/REJECTED/DEFERRED]  
-**Intake Date:** [YYYY-MM-DD]  
-**Intake By:** [Name/Username]
+- Hallazgo 1: [Descripción]
+- Hallazgo 2: [Descripción]
 
-**Decision Flow Results:**
-- [ ] Story Match Found: [Epic X, Story Y] → Task [T]
-- [ ] New Story Created: [Epic X, Story Y] → Task 1
-- [ ] New Epic Created: [Epic X, Story 1, Task 1]
-- [ ] Feedback Acknowledged: [No action required, feedback noted]
+### Documentación
 
-**Assigned To:**
-- Epic: [Epic number or name]
-- Story: [Story number or name]
-- Task: [Task number or name]
+[Feedback sobre calidad, completitud y claridad de la documentación]
 
-**Version:** [Version when addressed]
+- Hallazgo 1: [Descripción]
+- Hallazgo 2: [Descripción]
+
+### Integración
+
+[Feedback sobre integración con otras herramientas/sistemas]
+
+- Hallazgo 1: [Descripción]
+- Hallazgo 2: [Descripción]
 
 ---
 
-## Notes
+## Detalles del caso de uso
 
-[Additional notes or context]
+**Caso de uso principal:** [¿Cómo se usó este componente?]
+
+**Tipo de proyecto:** [p. ej., proyecto nuevo, migración de proyecto existente, adopción de framework]
+
+**Tamaño del proyecto:** [p. ej., pequeño, mediano, grande, enterprise]
+
+**Tamaño del equipo:** [Número de miembros del equipo que usan el componente]
+
+**Duración de uso:** [¿Cuánto tiempo lleva en uso?]
 
 ---
 
-**Template Usage:**
-**Locale (en-GB):** Use UK English in instructional prose (colour, organise, realise, centre).
- This FB follows the Kanban framework feedback template. Feedback submissions help improve the framework and are valuable for continuous improvement.
+## Evidencia de apoyo
 
+**Resultados de prueba:**
+- [Enlace a resultados de prueba, capturas u otra evidencia]
+- [Enlace a informes de prueba o documentación]
+
+**Ejemplos:**
+- [Ejemplos o escenarios específicos]
+- [Fragmentos de código o configuraciones]
+
+**Métricas:**
+- [Métricas cuantitativas o mediciones]
+
+---
+
+## Evaluación de impacto
+
+**Impacto en el proyecto:**
+- [ ] Crítico — bloqueó el progreso del proyecto
+- [ ] Alto — impacto significativo en el proyecto
+- [ ] Medio — impacto moderado
+- [ ] Bajo — impacto menor
+- [ ] Positivo — mejoró el proyecto
+
+**Impacto en el equipo:**
+- [ ] Crítico — afectó la productividad del equipo
+- [ ] Alto — impacto significativo en el equipo
+- [ ] Medio — impacto moderado en el equipo
+- [ ] Bajo — impacto menor en el equipo
+- [ ] Positivo — mejoró el flujo de trabajo del equipo
+
+---
+
+## Recomendaciones
+
+[¿Qué acciones deben tomarse según este feedback?]
+
+- [ ] Recomendación 1: [Descripción]
+- [ ] Recomendación 2: [Descripción]
+- [ ] Recomendación 3: [Descripción]
+
+**Orden de prioridad:**
+1. [Recomendación de mayor prioridad]
+2. [Recomendación de segunda prioridad]
+3. [Recomendación de tercera prioridad]
+
+---
+
+## Trabajo relacionado
+
+**BR relacionados:** [Informes de error registrados como resultado de este feedback]
+**FR relacionadas:** [Solicitudes de funcionalidad registradas como resultado de este feedback]
+**UXR relacionadas:** [Investigaciones de experiencia de usuario relacionadas con este feedback]
+
+---
+
+## Decisión de intake
+
+**Estado de intake:** [PENDIENTE/INTAKE/ACEPTADO/RECHAZADO/DIFERIDO]  
+**Fecha de intake:** [YYYY-MM-DD]  
+**Intake por:** [Nombre/Usuario]
+
+**Resultados del flujo de decisión:**
+- [ ] Story coincidente encontrada: [Epic X, Story Y] → Task [T]
+- [ ] Nueva Story creada: [Epic X, Story Y] → Task 1
+- [ ] Nuevo Epic creado: [Epic X, Story 1, Task 1]
+- [ ] Feedback reconocido: [No se requiere acción, feedback anotado]
+
+**Asignado a:**
+- Epic: [Número o nombre del Epic]
+- Story: [Número o nombre de la Story]
+- Task: [Número o nombre de la Task]
+
+**Versión:** [Versión cuando se abordó]
+
+---
+
+## Notas
+
+[Notas adicionales o contexto]
+
+---
+
+**Uso de la plantilla:**
+**Localización (es):** Use español técnico neutro en la prosa instructiva.
+ Este FB sigue la plantilla de feedback del Kanban framework. Los envíos de feedback ayudan a mejorar el framework y son valiosos para la mejora continua.

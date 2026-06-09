@@ -6,206 +6,205 @@ expires_at: null
 housekeeping_policy: keep
 ---
 
-# Bug Report: [Title]
+# Informe de error: [Título]
 
-**Type:** Bug Report (BR)  
-**Submitted:** [YYYY-MM-DD]  
-**Submitted By:** [Name/Username]  
-**Priority:** [CRITICAL/HIGH/MEDIUM/LOW]  
-**Severity:** [CRITICAL/HIGH/MEDIUM/LOW]  
-**Status:** [PENDING/INTAKE/ACCEPTED/REJECTED/DEFERRED]
-
----
-
-## Summary
-
-[One sentence description of the bug.]
+**Tipo:** Informe de error (BR)  
+**Enviado:** [YYYY-MM-DD]  
+**Enviado por:** [Nombre/Usuario]  
+**Prioridad:** [CRÍTICA/ALTA/MEDIA/BAJA]  
+**Gravedad:** [CRÍTICA/ALTA/MEDIA/BAJA]  
+**Estado:** [PENDIENTE/INTAKE/ACEPTADO/RECHAZADO/DIFERIDO]
 
 ---
 
-## Description
+## Resumen
 
-[Detailed description of the bug. Include:]
-- What is the bug?
-- What should happen vs. what actually happens?
-- When does it occur?
-- Who is affected?
+[Descripción en una frase del error.]
 
 ---
 
-## Affected Component
+## Descripción
 
-**Primary Component:** [e.g., User Authentication, Payment Processing, UI Component]  
-**Affected Areas:**
+[Descripción detallada del error. Incluya:]
+- ¿Cuál es el error?
+- ¿Qué debería ocurrir frente a lo que ocurre realmente?
+- ¿Cuándo ocurre?
+- ¿Quién se ve afectado?
+
+---
+
+## Componente afectado
+
+**Componente principal:** [p. ej., autenticación de usuarios, procesamiento de pagos, componente de UI]  
+**Áreas afectadas:**
 - [ ] Backend/API
 - [ ] Frontend/UI
-- [ ] Database/Schema
-- [ ] Integration/External Service
-- [ ] Documentation
-- [ ] Other: [specify]
+- [ ] Base de datos/esquema
+- [ ] Integración/servicio externo
+- [ ] Documentación
+- [ ] Otro: [especificar]
 
-**Root Cause (if known):**
-[Description of the root cause, if identified]
-
----
-
-## Steps to Reproduce
-
-1. Step 1
-2. Step 2
-3. Step 3
-4. [Expected result]
-5. [Actual result]
+**Causa raíz (si se conoce):**
+[Descripción de la causa raíz, si se ha identificado]
 
 ---
 
-## Environment
+## Pasos para reproducir
 
-**Environment:** [Production/Staging/Development]  
-**Version:** [Version number or commit hash]  
-**Browser/Platform:** [If applicable]  
-**OS:** [If applicable]
+1. Paso 1
+2. Paso 2
+3. Paso 3
+4. [Resultado esperado]
+5. [Resultado real]
 
 ---
 
-## Impact
+## Entorno
 
-**User Impact:**
-- [ ] Critical - System unusable
-- [ ] High - Major functionality broken
-- [ ] Medium - Some functionality affected
-- [ ] Low - Minor issue, workaround available
+**Entorno:** [Producción/Staging/Desarrollo]  
+**Versión:** [Número de versión o hash de commit]  
+**Navegador/plataforma:** [Si aplica]  
+**SO:** [Si aplica]
 
-**Business Impact:**
-[Description of business impact, if applicable]
+---
+
+## Impacto
+
+**Impacto en el usuario:**
+- [ ] Crítico — sistema inutilizable
+- [ ] Alto — funcionalidad principal rota
+- [ ] Medio — alguna funcionalidad afectada
+- [ ] Bajo — problema menor, existe workaround
+
+**Impacto en el negocio:**
+[Descripción del impacto en el negocio, si aplica]
 
 **Workaround:**
-[If a workaround exists, describe it here]
+[Si existe un workaround, descríbalo aquí]
 
 ---
 
-## Acceptance Criteria (Fix Requirements)
+## Criterios de aceptación (requisitos de corrección)
 
-- [ ] Criterion 1: [Specific, testable criterion for fix]
-- [ ] Criterion 2: [Specific, testable criterion for fix]
-- [ ] Criterion 3: [Specific, testable criterion for fix]
+- [ ] Criterio 1: [Criterio específico y verificable para la corrección]
+- [ ] Criterio 2: [Criterio específico y verificable para la corrección]
+- [ ] Criterio 3: [Criterio específico y verificable para la corrección]
 
-**Verification Method:**
-- [ ] Test suite execution
-- [ ] Manual testing
-- [ ] Both
+**Método de verificación:**
+- [ ] Ejecución de la suite de pruebas
+- [ ] Prueba manual
+- [ ] Ambos
 
-**Fix Verification Status:**
-- [ ] Verified (test suite passed / manual test passed)
-- [ ] Attempted Fix (pending verification)
-
----
-
-## Fix Attempt History
-
-**Purpose:** This section documents all fix attempts for this bug, ensuring that if a bug isn't squashed, the next build can be informed by previous attempts.
-
-**How to Use:**
-- Each release that attempts to fix this bug should add a new entry to this section
-- Document what was attempted, what worked, what didn't, and verification status
-- This creates a knowledge base for future fix attempts
-
-### Fix Attempts
-
-#### Attempt 1: [Version] - [Date]
-
-**Fix Description:**
-[Describe what was attempted to fix this bug]
-
-**Changes Made:**
-- [List specific changes, files modified, code changes, etc.]
-
-**Verification Status:**
-- [ ] Verified (test suite passed / manual test passed)
-- [ ] Attempted Fix (pending verification)
-- [ ] Fix Failed (bug still present)
-
-**Verification Method:**
-- [ ] Test suite execution
-- [ ] Manual testing
-- [ ] Both
-
-**Verification Evidence:**
-[Link to test results, CI/CD output, or documentation]
-
-**Result:**
-- [ ] Bug Fixed
-- [ ] Bug Partially Fixed (describe partial fix)
-- [ ] Bug Not Fixed (describe why fix didn't work)
-
-**Lessons Learned:**
-[What was learned from this attempt? What should be tried differently next time?]
-
-**Next Steps:**
-[What should be attempted in the next fix attempt?]
+**Estado de verificación de la corrección:**
+- [ ] Verificado (suite de pruebas aprobada / prueba manual aprobada)
+- [ ] Corrección intentada (pendiente de verificación)
 
 ---
 
-## Dependencies
+## Historial de intentos de corrección
 
-**Blocks:**
-- [What this BR blocks]
+**Propósito:** Esta sección documenta todos los intentos de corrección de este error, de modo que si el error no se resuelve, la siguiente versión pueda basarse en intentos anteriores.
 
-**Blocked By:**
-- [What blocks this BR]
+**Cómo usar:**
+- Cada release que intente corregir este error debe añadir una nueva entrada en esta sección
+- Documente qué se intentó, qué funcionó, qué no y el estado de verificación
+- Esto crea una base de conocimiento para futuros intentos de corrección
 
-**Related Work:**
-- [Related BRs, Stories, Tasks, or Epics]
+### Intentos de corrección
+
+#### Intento 1: [Versión] - [Fecha]
+
+**Descripción de la corrección:**
+[Describa qué se intentó para corregir este error]
+
+**Cambios realizados:**
+- [Liste cambios específicos, archivos modificados, cambios de código, etc.]
+
+**Estado de verificación:**
+- [ ] Verificado (suite de pruebas aprobada / prueba manual aprobada)
+- [ ] Corrección intentada (pendiente de verificación)
+- [ ] Corrección fallida (el error sigue presente)
+
+**Método de verificación:**
+- [ ] Ejecución de la suite de pruebas
+- [ ] Prueba manual
+- [ ] Ambos
+
+**Evidencia de verificación:**
+[Enlace a resultados de pruebas, salida CI/CD o documentación]
+
+**Resultado:**
+- [ ] Error corregido
+- [ ] Error parcialmente corregido (describa la corrección parcial)
+- [ ] Error no corregido (describa por qué la corrección no funcionó)
+
+**Lecciones aprendidas:**
+[¿Qué se aprendió de este intento? ¿Qué debería intentarse de forma distinta la próxima vez?]
+
+**Próximos pasos:**
+[¿Qué debería intentarse en el siguiente intento de corrección?]
 
 ---
 
-## Intake Decision
+## Dependencias
 
-**Intake Status:** [PENDING/INTAKE/ACCEPTED/REJECTED/DEFERRED]  
-**Intake Date:** [YYYY-MM-DD]  
-**Intake By:** [Name/Username]
+**Bloquea:**
+- [Lo que bloquea este BR]
 
-**Decision Flow Results:**
-- [ ] Story Match Found: [Epic X, Story Y] → Task [T]
-- [ ] New Story Created: [Epic X, Story Y] → Task 1
-- [ ] New Epic Created: [Epic X, Story 1, Task 1]
+**Bloqueado por:**
+- [Lo que bloquea este BR]
 
-**Assigned To:**
-- Epic: [Epic number and name]
-- Story: [Story number and name]
-- Task: [Task number and name]
-- Version: `[RC.EPIC.STORY.TASK+BUILD]`
+**Trabajo relacionado:**
+- [BR, Stories, Tasks o Epics relacionados]
 
-**Kanban Links:**
+---
+
+## Decisión de intake
+
+**Estado de intake:** [PENDIENTE/INTAKE/ACEPTADO/RECHAZADO/DIFERIDO]  
+**Fecha de intake:** [YYYY-MM-DD]  
+**Intake por:** [Nombre/Usuario]
+
+**Resultados del flujo de decisión:**
+- [ ] Story coincidente encontrada: [Epic X, Story Y] → Task [T]
+- [ ] Nueva Story creada: [Epic X, Story Y] → Task 1
+- [ ] Nuevo Epic creado: [Epic X, Story 1, Task 1]
+
+**Asignado a:**
+- Epic: [Número y nombre del Epic]
+- Story: [Número y nombre de la Story]
+- Task: [Número y nombre de la Task]
+- Versión: `[RC.EPIC.STORY.TASK+BUILD]`
+
+**Enlaces Kanban:**
 - Epic: [`docs/project-management/kanban/epics/Epic-X/Epic-X.md`](path/to/Epic-X.md)
 - Story: [`docs/project-management/kanban/epics/Epic-X/Story-XXX-*.md`](path/to/Story.md)
-- Task: [Link to Task in Story document]
+- Task: [Enlace a la Task en el documento Story]
 
 ---
 
-## Notes
+## Notas
 
-[Additional notes, context, or considerations]
-
----
-
-## References
-
-- [Related documentation, specs, diagrams, external resources]
-- [Related bug reports or issues]
+[Notas adicionales, contexto o consideraciones]
 
 ---
 
-**Template Usage:**
-**Locale (en-GB):** Use UK English in instructional prose (colour, organise, realise, centre).
+## Referencias
 
-- Copy this template when creating a new Bug Report
-- Fill in all relevant sections
-- Use the "Intake Decision" section to track the FR/BR → Task → Story → Epic conversion
-- Link to the created Task/Story/Epic for traceability
-- **CRITICAL:** Fixes must be verified through testing before being marked as "Fixed" in changelogs
+- [Documentación, especificaciones, diagramas o recursos externos relacionados]
+- [Informes de error o incidencias relacionados]
 
 ---
 
-_This template is part of the Kanban Framework. See `packages/frameworks/kanban/` for complete framework documentation._
+**Uso de la plantilla:**
+**Localización (es):** Use español técnico neutro en la prosa instructiva.
 
+- Copie esta plantilla al crear un nuevo informe de error
+- Complete todas las secciones relevantes
+- Use la sección «Decisión de intake» para rastrear la conversión FR/BR → Task → Story → Epic
+- Enlace la Task/Story/Epic creada para trazabilidad
+- **CRÍTICO:** Las correcciones deben verificarse mediante pruebas antes de marcarse como «Corregido» en los changelogs
+
+---
+
+_Esta plantilla forma parte del Kanban Framework. Consulte `packages/frameworks/kanban/` para la documentación completa del framework._

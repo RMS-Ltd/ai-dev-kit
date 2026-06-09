@@ -93,7 +93,7 @@ def test_k7_fallback_unregistered_locale(loc, project_root):
     result = loc.resolve_locale_key(
         project_root,
         "cli.prompt.language_choice",
-        language="es",
+        language="sw",
     )
     assert result == "Select your preferred English variant:"
 

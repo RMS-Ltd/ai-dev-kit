@@ -31,7 +31,7 @@ All nine target locales have on-disk trees in **kanban** and **workflow-mgt**, r
 
 | Locale | Code | Owner story | Scaffold |
 | ------ | ---- | ----------- | -------- |
-| Spanish | `es` | E21:S05:T01 | Complete |
+| Spanish | `es` | E21:S05:T01 | Complete (scaffold); linguistic @ **v0.21.5.1+1** |
 | French | `fr` | E21:S05:T02 | Complete |
 | German | `de` | E21:S05:T03 | Complete |
 | Portuguese | `pt` | E21:S05:T04 | Complete |

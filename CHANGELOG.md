@@ -11,6 +11,14 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.21.5.1+1] - 09-06-26
+
+E21:S05:T01 — **Attempted translation:** FR-006 Spanish (es) locale delivery for kanban + workflow-mgt. SemVer **v0.4.1107+1**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.21.5.1+1.md)
+
+---
+
 ## [0.21.4.1+1] - 09-06-26
 
 E21:S04:T01 — **Change implemented:** FR-006 cultural requirements research (`locale-cultural-requirements.md`). SemVer **v0.4.1106+1**.

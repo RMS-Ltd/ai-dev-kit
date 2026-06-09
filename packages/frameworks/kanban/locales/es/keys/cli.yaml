@@ -2,7 +2,7 @@ _meta:
   domain: cli
   locale: es
 keys:
-  cli.prompt.language_choice: 'Select your preferred English variant:'
-  cli.prompt.language_uk: '[1] UK English (en-GB) — colour, organise, realise  [default]'
-  cli.prompt.language_us: '[2] US English (en-US) — color, organize, realize'
-  cli.prompt.enter_choice: 'Enter choice [1-2]:'
+  cli.prompt.language_choice: "Seleccione su variante de inglés preferida:"
+  cli.prompt.language_uk: "[1] Inglés británico (en-GB) — colour, organise, realise  [predeterminado]"
+  cli.prompt.language_us: "[2] Inglés estadounidense (en-US) — color, organize, realize"
+  cli.prompt.enter_choice: "Introduzca su elección [1-2]:"

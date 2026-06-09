@@ -160,12 +160,12 @@ def test_f6_key_falls_back_to_en_us_catalog(loc):
         assert result == "US-only value"
 
 
-def test_f7_es_registry_walks_to_en_gb(loc, project_root):
-    """F7: es (no on-disk tree) falls back to en-GB key catalog."""
+def test_f7_es_resolves_on_disk_spanish_catalog(loc, project_root):
+    """F7: es resolves from on-disk Spanish catalog (E21:S05:T01)."""
     loc._KEY_CATALOG_CACHE.clear()
     result = loc.resolve_locale_key(
         project_root,
         "cli.prompt.language_choice",
         language="es",
     )
-    assert result == "Select your preferred English variant:"
+    assert result == "Seleccione su variante de inglés preferida:"

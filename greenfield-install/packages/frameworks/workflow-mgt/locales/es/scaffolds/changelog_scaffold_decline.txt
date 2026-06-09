@@ -1,1 +1,1 @@
-main_changelog not created at {{changelog_rel}}. Create before first RW, or re-run the installer and accept scaffold (UK English: organise, colour).
+main_changelog no se creó en {{changelog_rel}}. Créelo antes del primer RW, o vuelva a ejecutar el instalador y acepte el andamiaje.

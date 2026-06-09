@@ -27,6 +27,7 @@ KANBAN_LOCALES = REPO_ROOT / "packages" / "frameworks" / "kanban" / "locales"
 FRAMEWORKS_ROOT = REPO_ROOT / "packages" / "frameworks"
 
 SCAFFOLD_LOCALES = ("es", "fr", "de", "zh-CN", "zh-TW", "ja", "pt", "ru", "ar")
+INTERIM_SCAFFOLD_LOCALES = tuple(locale for locale in SCAFFOLD_LOCALES if locale != "es")
 SAMPLE_SETUP_LOCALES = ("es", "fr", "zh-CN", "ar")
 P0_KEY = "cli.prompt.language_choice"
 
@@ -127,9 +128,9 @@ def test_p3e2_locale_message_resolves_p0_key(locale: str, loc):
         assert isinstance(text, str)
 
 
-@pytest.mark.parametrize("locale", SCAFFOLD_LOCALES)
+@pytest.mark.parametrize("locale", INTERIM_SCAFFOLD_LOCALES)
 def test_p3e3_interim_copy_matches_en_gb(locale: str, loc):
-    """P3E3: interim-copy scaffold locale equals en-GB for P0 key."""
+    """P3E3: interim-copy scaffold locale equals en-GB for P0 key (es excluded post T01)."""
     with tempfile.TemporaryDirectory() as tmp:
         root = Path(tmp)
         _write_config(root, locale)

@@ -8,12 +8,12 @@ housekeeping_policy: keep
 
 # Story 05 – European Languages Localization
 
-**Status:** TODO  
+**Status:** IN PROGRESS  
 **Priority:** LOW  
 **Estimated Effort:** [TBD]  
 **Created:** 2026-06-06  
-**Last updated:** 2026-06-06 (E21 rehouse — per-locale delivery split from S02:T02)  
-**Version:** v0.21.1.0+0  
+**Last updated:** 2026-06-10 (v0.21.5.1+1 – Kanban documentation setup)
+**Version:** v0.21.5.1+1
 **Code:** E21S05
 
 ---
@@ -32,7 +32,7 @@ Populate `locales/{lang}/` for Spanish, French, German, and Portuguese with fram
 
 ## Task Checklist
 
-- [ ] **E21:S05:T01 – Spanish (es) translation files** - TODO
+- [x] **E21:S05:T01 – Spanish (es) translation files** - ✅ COMPLETE (**v0.21.5.1+1**) — [—IPP—](../../implementation-cycles/IPP-E21S05T01-spanish-es-translation-files.md)
   - Task: [`T01-spanish-es-translation-files`](story-05-european-languages-localization/T01-spanish-es-translation-files.md)
 - [ ] **E21:S05:T02 – French (fr) translation files** - TODO
   - Task: [`T02-french-fr-translation-files`](story-05-european-languages-localization/T02-french-fr-translation-files.md)

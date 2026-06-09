@@ -10,7 +10,7 @@ housekeeping_policy: keep
 
 **Host Task:** [`T07-optional-obsidian-editor-profiles-greenfield-install-fr121.md`](../kanban/epics/epic-05/story-08-knowledge-base/T07-optional-obsidian-editor-profiles-greenfield-install-fr121.md) **(E05:S08:T07)**  
 **Planning for:** [FR-121](../kanban/fr-br/FR-121-git-internal-maintainer-kb-oss-documentation-surfaces.md) (F4 installer emission, F5, NF4)  
-**Status:** Approved — ready for IDW
+**Status:** Complete — shipped @ v0.5.8.7+1 (FR-121 wave 3)
 
 > **IPW (Implementation Planning Workflow):** FR-121 wave 3. Depends on [IPP-E05S08T06](IPP-E05S08T06-adr-026-git-maintainer-authoring-bootstrap-fr121.md) (ADR-026 + `rw-config` schema @ v0.5.8.6+1).
 
@@ -70,9 +70,9 @@ Complete FR-121 wave 3: adopters may opt into Obsidian as a local editor on the 
 
 ### 2.4 Status transition intent (mandatory for IPW-derived implementation tasks)
 
-- **Current task status:** TODO
-- **Transition trigger to IN PROGRESS:** First non-planning implementation change (IPP Step 1).
-- **Transition trigger to COMPLETE:** All acceptance criteria evidenced + `RW E05:S08:T07 --art`.
+- **Current task status:** COMPLETE (v0.5.8.7+1)
+- **Transition trigger to IN PROGRESS:** First non-planning implementation change (IPP Step 1). *(Executed.)*
+- **Transition trigger to COMPLETE:** All acceptance criteria evidenced + `RW E05:S08:T07 --art`. *(Executed.)*
 - **Atomic propagation requirement:** Task doc status and kboard row update in same RW Step 7 change set.
 - **Owner:** IDW implementation execution.
 
@@ -196,14 +196,14 @@ No portal pytest AC. Greenfield sync required for `packages/frameworks/**`.
 
 ## 7. Success / verification criteria
 
-- [ ] Default / `--non-interactive`: no Obsidian files; `maintainer_editor_profile: none`
-- [ ] Personal + team profiles per task AC
-- [ ] `documentation_surfaces.maintainer_kb.sot: git` in generated configs
-- [ ] `pytest tests/test_install_obsidian_editor_profile.py tests/test_install_release_workflow_rw_config.py -q` green
-- [ ] `python scripts/sync_greenfield_install.py --check` green
-- [ ] Install docs + maintainer guide complete
-- [ ] IPP ↔ task bidirectional links
-- [ ] `RW E05:S08:T07 --art` complete
+- [x] Default / `--non-interactive`: no Obsidian files; `maintainer_editor_profile: none`
+- [x] Personal + team profiles per task AC
+- [x] `documentation_surfaces.maintainer_kb.sot: git` in generated configs
+- [x] `pytest tests/test_install_obsidian_editor_profile.py tests/test_install_release_workflow_rw_config.py -q` green
+- [x] `python scripts/sync_greenfield_install.py --check` green
+- [x] Install docs + maintainer guide complete
+- [x] IPP ↔ task bidirectional links
+- [x] `RW E05:S08:T07 --art` complete
 
 ---
 

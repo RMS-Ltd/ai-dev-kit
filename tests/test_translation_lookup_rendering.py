@@ -81,15 +81,16 @@ def test_l3_kanban_intake_template_es():
         assert "locales/es" in str(path).replace("\\", "/")
 
 
-def test_l4_key_fallback_to_en_gb():
-    """L4: Missing key in es falls back via chain."""
+def test_l4_es_uses_spanish_catalog_not_en_gb_fallback():
+    """L4: es resolves Spanish catalog (not en-GB interim copy) post E21:S05:T01."""
     loc = _load_loc()
     with tempfile.TemporaryDirectory() as tmp:
         root = Path(tmp)
         _write_config(root, "es")
         gb = loc.locale_message(root, "cli.prompt.language_choice", language="en-GB")
         es = loc.locale_message(root, "cli.prompt.language_choice", language="es")
-        assert gb == es
+        assert es != gb
+        assert "Seleccione" in es
 
 
 def test_l5_format_dependency_help_uses_keys():

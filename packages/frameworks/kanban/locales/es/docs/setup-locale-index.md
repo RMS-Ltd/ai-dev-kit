@@ -6,17 +6,17 @@ expires_at: null
 housekeeping_policy: keep
 ---
 
-# Setup locale index (en-GB)
+# Índice de localización de configuración (es)
 
-**Locale:** UK English (`en-GB` / `UK`)
+**Localización:** Español (`es` / `ES`)
 
-## Flow
+## Flujo
 
-1. **Step 0** — Select language in [post-template setup guide](../../../../../../docs/documentation/user-docs/framework-dependency-post-template-setup-guide.md#step-0-select-language-variant-uk--us-english) or via `ai-dev-kit init` / `install_release_workflow.py`.
-2. **Persist** — `ai-dev-kit-config.yaml` at project root (`localisation.language: en-GB`).
-3. **Content** — Phase 1 templates in [`../templates/`](../templates/) (manifest: [`../../manifest.yaml`](../../manifest.yaml)).
-4. **T06** — Installers will resolve manifest keys from config (not yet wired).
+1. **Paso 0** — Seleccione el idioma en la [guía de configuración posterior a la plantilla](../../../../../../docs/documentation/user-docs/framework-dependency-post-template-setup-guide.md#step-0-select-language-variant-uk--us-english) o mediante `ai-dev-kit init` / `install_release_workflow.py`.
+2. **Persistencia** — `ai-dev-kit-config.yaml` en la raíz del proyecto (`localisation.language: es`).
+3. **Contenido** — Plantillas de la Fase 1 en [`../templates/`](../templates/) (manifiesto: [`../../manifest.yaml`](../../manifest.yaml)).
+4. **T06** — Los instaladores resolverán las claves del manifiesto desde la configuración (aún no conectado).
 
-## Phase 1 seeded templates
+## Plantillas sembradas de la Fase 1
 
-FR, BR, UXR, FB, TASK, STORY, EPIC, PLAN_DOC — UK spelling in instructional prose (colour, organise, realise).
+FR, BR, UXR, FB, TASK, STORY, EPIC, PLAN_DOC — prosa instructiva en español técnico neutro.

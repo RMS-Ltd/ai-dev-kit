@@ -6,143 +6,142 @@ expires_at: null
 housekeeping_policy: keep
 ---
 
-# Feature Request: [Title]
+# Solicitud de funcionalidad: [Título]
 
-**Type:** Feature Request (FR)  
-**Submitted:** [YYYY-MM-DD]  
-**Submitted By:** [Name/Username]  
-**Priority:** [HIGH/MEDIUM/LOW]  
-**Status:** [PENDING/INTAKE/ACCEPTED/REJECTED/DEFERRED]
-
----
-
-## Summary
-
-[One sentence description of the requested feature.]
+**Tipo:** Solicitud de funcionalidad (FR)  
+**Enviada:** [YYYY-MM-DD]  
+**Enviada por:** [Nombre/Usuario]  
+**Prioridad:** [ALTA/MEDIA/BAJA]  
+**Estado:** [PENDIENTE/INTAKE/ACEPTADA/RECHAZADA/DIFERIDA]
 
 ---
 
-## Description
+## Resumen
 
-[Detailed description of the feature request. Include:]
-- What functionality is desired?
-- What problem does this solve?
-- What is the use case?
-- Who would benefit from this feature?
+[Descripción en una frase de la funcionalidad solicitada.]
 
 ---
 
-## Requirements
+## Descripción
 
-### Functional Requirements
-- [ ] Requirement 1
-- [ ] Requirement 2
-- [ ] Requirement 3
-
-### Non-Functional Requirements
-- [ ] Performance considerations
-- [ ] Security considerations
-- [ ] Usability considerations
-- [ ] Compatibility considerations
+[Descripción detallada de la solicitud de funcionalidad. Incluya:]
+- ¿Qué funcionalidad se desea?
+- ¿Qué problema resuelve?
+- ¿Cuál es el caso de uso?
+- ¿Quién se beneficiaría de esta funcionalidad?
 
 ---
 
-## Scope Analysis
+## Requisitos
 
-**Problem Domain:** [e.g., User Authentication, Data Processing, UI Components]  
-**Affected Areas:**
+### Requisitos funcionales
+- [ ] Requisito 1
+- [ ] Requisito 2
+- [ ] Requisito 3
+
+### Requisitos no funcionales
+- [ ] Consideraciones de rendimiento
+- [ ] Consideraciones de seguridad
+- [ ] Consideraciones de usabilidad
+- [ ] Consideraciones de compatibilidad
+
+---
+
+## Análisis de alcance
+
+**Dominio del problema:** [p. ej., autenticación de usuarios, procesamiento de datos, componentes de UI]  
+**Áreas afectadas:**
 - [ ] Backend/API
 - [ ] Frontend/UI
-- [ ] Database/Schema
-- [ ] Documentation
-- [ ] Testing
-- [ ] Other: [specify]
+- [ ] Base de datos/esquema
+- [ ] Documentación
+- [ ] Pruebas
+- [ ] Otro: [especificar]
 
-**Estimated Complexity:**
-- [ ] Simple (1-3 days)
-- [ ] Medium (1 week)
-- [ ] Complex (2+ weeks)
-- [ ] Very Complex (1+ month)
-
----
-
-## Use Cases
-
-**Primary Use Case:**
-[Describe the main use case for this feature]
-
-**Additional Use Cases:**
-- Use case 1
-- Use case 2
+**Complejidad estimada:**
+- [ ] Simple (1-3 días)
+- [ ] Media (1 semana)
+- [ ] Compleja (2+ semanas)
+- [ ] Muy compleja (1+ mes)
 
 ---
 
-## Acceptance Criteria
+## Casos de uso
 
-- [ ] Criterion 1: [Specific, testable criterion]
-- [ ] Criterion 2: [Specific, testable criterion]
-- [ ] Criterion 3: [Specific, testable criterion]
+**Caso de uso principal:**
+[Describa el caso de uso principal de esta funcionalidad]
 
----
-
-## Dependencies
-
-**Blocks:**
-- [What this FR blocks]
-
-**Blocked By:**
-- [What blocks this FR]
-
-**Related Work:**
-- [Related FRs, Stories, Tasks, or Epics]
+**Casos de uso adicionales:**
+- Caso de uso 1
+- Caso de uso 2
 
 ---
 
-## Intake Decision
+## Criterios de aceptación
 
-**Intake Status:** [PENDING/INTAKE/ACCEPTED/REJECTED/DEFERRED]  
-**Intake Date:** [YYYY-MM-DD]  
-**Intake By:** [Name/Username]
+- [ ] Criterio 1: [Criterio específico y verificable]
+- [ ] Criterio 2: [Criterio específico y verificable]
+- [ ] Criterio 3: [Criterio específico y verificable]
 
-**Decision Flow Results:**
-- [ ] Story Match Found: [Epic X, Story Y] → Task [T]
-- [ ] New Story Created: [Epic X, Story Y] → Task 1
-- [ ] New Epic Created: [Epic X, Story 1, Task 1]
+---
 
-**Assigned To:**
-- Epic: [Epic number and name]
-- Story: [Story number and name]
-- Task: [Task number and name]
-- Version: `[RC.EPIC.STORY.TASK+BUILD]`
+## Dependencias
 
-**Kanban Links:**
+**Bloquea:**
+- [Lo que bloquea esta FR]
+
+**Bloqueada por:**
+- [Lo que bloquea esta FR]
+
+**Trabajo relacionado:**
+- [FR, Stories, Tasks o Epics relacionados]
+
+---
+
+## Decisión de intake
+
+**Estado de intake:** [PENDIENTE/INTAKE/ACEPTADA/RECHAZADA/DIFERIDA]  
+**Fecha de intake:** [YYYY-MM-DD]  
+**Intake por:** [Nombre/Usuario]
+
+**Resultados del flujo de decisión:**
+- [ ] Story coincidente encontrada: [Epic X, Story Y] → Task [T]
+- [ ] Nueva Story creada: [Epic X, Story Y] → Task 1
+- [ ] Nuevo Epic creado: [Epic X, Story 1, Task 1]
+
+**Asignado a:**
+- Epic: [Número y nombre del Epic]
+- Story: [Número y nombre de la Story]
+- Task: [Número y nombre de la Task]
+- Versión: `[RC.EPIC.STORY.TASK+BUILD]`
+
+**Enlaces Kanban:**
 - Epic: [`docs/project-management/kanban/epics/Epic-X/Epic-X.md`](path/to/Epic-X.md)
 - Story: [`docs/project-management/kanban/epics/Epic-X/Story-XXX-*.md`](path/to/Story.md)
-- Task: [Link to Task in Story document]
+- Task: [Enlace a la Task en el documento Story]
 
 ---
 
-## Notes
+## Notas
 
-[Additional notes, context, or considerations]
-
----
-
-## References
-
-- [Related documentation, specs, diagrams, external resources]
+[Notas adicionales, contexto o consideraciones]
 
 ---
 
-**Template Usage:**
-**Locale (en-GB):** Use UK English in instructional prose (colour, organise, realise, centre).
+## Referencias
 
-- Copy this template when creating a new Feature Request
-- Fill in all relevant sections
-- Use the "Intake Decision" section to track the FR/BR → Task → Story → Epic conversion
-- Link to the created Task/Story/Epic for traceability
+- [Documentación, especificaciones, diagramas o recursos externos relacionados]
 
 ---
 
-_This template is part of the Kanban Framework. See `packages/frameworks/kanban/` for complete framework documentation._
+**Uso de la plantilla:**
+**Localización (es):** Use español técnico neutro en la prosa instructiva.
 
+- Copie esta plantilla al crear una nueva solicitud de funcionalidad
+- Complete todas las secciones relevantes
+- Use la sección «Decisión de intake» para rastrear la conversión FR/BR → Task → Story → Epic
+- Enlace la Task/Story/Epic creada para trazabilidad
+
+---
+
+_Esta plantilla forma parte del Kanban Framework. Consulte `packages/frameworks/kanban/` para la documentación completa del framework._

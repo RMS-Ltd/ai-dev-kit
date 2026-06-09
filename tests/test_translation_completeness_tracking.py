@@ -60,10 +60,10 @@ def test_c1_missing_registry_exit_2(ltu, tmp_path):
     assert result.returncode == 2
 
 
-def test_c2_scaffold_locale_zero_linguistic(ltu):
-    """C2: Scaffold es locale has 0% linguistic keys on real corpus."""
+def test_c2_es_kanban_linguistic_delivery_post_t01(ltu):
+    """C2: Post E21:S05:T01, kanban es locale is linguistically translated."""
     report = ltu.compute_locale_completeness(REPO_ROOT, "kanban", "es")
-    assert report.keys_linguistic_pct() == 0.0
+    assert report.keys_linguistic_pct() == 100.0
     assert report.keys_structural_pct() == 100.0
 
 
@@ -227,10 +227,16 @@ def test_c7_interim_alert(ltu, tmp_path):
     assert result.returncode == 1
 
 
-def test_c8_fail_under():
-    """C8: --fail-under exits 1 for scaffold locales at 0%."""
-    result = _run_report("--locale", "es", "--fail-under", "1")
+def test_c8_fail_under_scaffold_locale_still_pending():
+    """C8: --fail-under exits 1 for locales still at 0% linguistic (e.g. fr)."""
+    result = _run_report("--locale", "fr", "--fail-under", "1")
     assert result.returncode == 1
+
+
+def test_c8_es_passes_fail_under_after_t01():
+    """C8b: Post E21:S05:T01, es meets minimal completeness threshold."""
+    result = _run_report("--locale", "es", "--fail-under", "1")
+    assert result.returncode == 0, result.stdout + result.stderr
 
 
 def test_c9_json_output():

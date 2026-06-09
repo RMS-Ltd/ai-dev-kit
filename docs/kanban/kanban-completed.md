@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Completed Tasks
 
-**Last Updated:** 2026-06-09 (RW E21:S04:T01 — FR-006 cultural requirements desk research)
-**Version:** v0.21.4.1+1
+**Last Updated:** 2026-06-09 (RW E21:S05:T01 — FR-006 Spanish es locale)
+**Version:** v0.21.5.1+1
 
 > **For MoSCOW prioritized tasks, see:** [`kboard.md`](kboard.md)  
 > **For completed FR/BR/UXR intake items, see:** [`intake-completed.md`](intake-completed.md)
@@ -19,6 +19,10 @@ housekeeping_policy: keep
 ---
 
 ## 20 Most Recently Completed Tasks
+
+#### **RW (2026-06-09)** — E21:S05:T01 @ **v0.21.5.1+1** (FR-006 — Spanish es locale delivery)
+
+- **[E21:S05:T01](epics/epic-21/story-05-european-languages-localization/T01-spanish-es-translation-files.md)** — Linguistic translation of kanban + workflow-mgt `locales/es/**`; registry `linguistic_status: complete`; greenfield sync; pytest contract. [FR-006](fr-br/FR-006-localization-language-selection-uk-us-english.md) · [—IPP—](../../implementation-cycles/IPP-E21S05T01-spanish-es-translation-files.md)
 
 #### **RW (2026-06-09)** — E21:S04:T01 @ **v0.21.4.1+1** (FR-006 Phase 2 — cultural requirements desk research)
 

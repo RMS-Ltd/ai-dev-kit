@@ -2,134 +2,102 @@ _meta:
   domain: installer
   locale: es
 keys:
-  installer.deps.missing_title: 'ERROR: RW installer dependencies are missing.'
-  installer.deps.required_heading: 'Required Python packages:'
-  installer.deps.package_line: '  - {{pip_name}} ({{spec}}){{marker}}'
-  installer.deps.install_venv_heading: 'Install in your project venv before running
-    this installer:'
-  installer.deps.pip_install: '  pip install ''pyyaml>=6.0'''
-  installer.deps.editable_heading: 'Or install ai-dev-kit with dependencies from the
-    kit checkout:'
-  installer.deps.editable_cmd: '  pip install -e ./vendor/ai-dev-kit'
-  installer.deps.editable_alt: '  # or: pip install -e /path/to/ai-dev-kit'
-  installer.deps.greenfield_ref: 'Greenfield / book path: see INSTALL_IN_YOUR_PROJECT.md'
-  installer.deps.greenfield_step: '"Installer venv dependencies" — install deps before
-    Step 3 (RW install).'
-  installer.deps.preflight_cmd: 'Preflight only: python install_release_workflow.py
-    --check-deps'
-  installer.deps.satisfied: 'OK: RW installer dependencies satisfied.'
-  installer.deps.satisfied_line: '  - {{pip_name}} ({{spec}})'
-  installer.error.generic: ERROR [{{code}}]
-  installer.prompt.field_required: '  ⚠️  This field is required. Please provide a
-    value.'
-  installer.validation.pattern_missing_placeholders: '  ❌ Pattern must include placeholder(s):
-    {{placeholders}}'
-  installer.validation.preview_unavailable: '  ⚠️  Preview unavailable: {{error}}'
-  installer.validation.no_files_matched: '  ⚠️  No files matched this pattern under
-    selected kanban root.'
-  installer.validation.suggested_examples: '  Suggested examples:'
-  installer.validation.suggestion_line: '    - {{suggestion}}'
-  installer.validation.fresh_kanban_default: '  ℹ️  No matching files yet (normal
-    after fresh kanban). Accepting installer-aligned default.'
-  installer.validation.forward_looking: '  ℹ️  Forward-looking pattern (book/adopter
-    convention). Accepting before story files exist.'
-  installer.validation.zero_match_reject: '  ❌ Cannot persist a zero-match pattern
-    while kanban files exist. Choose a suggested pattern or enter one that matches
-    files on disk.'
-  installer.validation.use_pattern_prompt: Use this pattern anyway?
-  installer.validation.matched_count: '  ✅ Matched {{count}} file(s). Sample:'
-  installer.validation.sample_line: '    - {{sample}}'
-  installer.scaffold.version_dry_run: '🔍 [DRY RUN] Would offer to create version file
-    at: {{path}}'
-  installer.scaffold.version_initial: '   Initial version (dev-kit schema): {{version}}'
-  installer.scaffold.version_create_prompt: Create minimal version file at {{path}}
-    (initial {{version}})?
-  installer.scaffold.version_created: '✅ Created version file: {{path}} (initial internal
-    version {{version}})'
-  installer.scaffold.version_exists: '✅ version_file already exists: {{path}}'
-  installer.scaffold.changelog_dry_run: '🔍 [DRY RUN] Would offer to create changelog
-    at: {{path}}'
-  installer.scaffold.changelog_create_prompt: Create minimal CHANGELOG at {{path}}?
-  installer.scaffold.changelog_created: '✅ Created main changelog: {{path}}'
-  installer.scaffold.changelog_exists: '✅ main_changelog already exists: {{path}}'
-  installer.wizard.config_header: 📋 RW Configuration Setup
-  installer.wizard.project_name: Project name
-  installer.wizard.version_file: Path to version file (relative to project root)
-  installer.wizard.main_changelog: Path to main CHANGELOG.md
-  installer.wizard.changelog_dir: Directory for detailed changelog archives
-  installer.wizard.scripts_path: Path to validation scripts directory
-  installer.wizard.readme_file: Path to README.md
-  installer.wizard.mode_heading: '📦 Installation Mode:'
-  installer.wizard.mode_a: '  A) Simple RW (no Kanban, any versioning)'
-  installer.wizard.mode_b: '  B) RW + Dev-Kit Versioning'
-  installer.wizard.mode_c: '  C) Full Stack (RW + Versioning + Kanban)'
-  installer.wizard.mode_select: Select mode
-  installer.wizard.devkit_schema_prompt: Use dev-kit versioning schema (RC.EPIC.STORY.TASK+BUILD)?
-  installer.wizard.kanban_heading: '📊 Kanban Integration:'
-  installer.wizard.kanban_root: Kanban root directory
-  installer.wizard.detected_lowercase_layout: '  ℹ️  Detected lowercase fresh kanban
-    layout (epics/epic-{n}/epic-{n}.md; book story-{story:03d}-*.md).'
-  installer.wizard.detected_fresh_capitalized: '  ℹ️  Detected fresh kanban install
-    layout (epics/Epic-{n}/Epic-{n}.md, Story-{story:03d}-*.md).'
-  installer.wizard.detected_fresh_lowercase: '  ℹ️  Detected fresh kanban install
-    layout (lowercase epic/story patterns).'
-  installer.wizard.detected_existing: '  ℹ️  Detected existing kanban files; using
-    best-matching pattern defaults.'
-  installer.wizard.padding_help: '  ℹ️  Padding: {story:03d} = three-digit story files
-    (book T03); {story:02d} / {epic:02d} = ADR-015 two-digit segments.'
-  installer.wizard.task_matches: '  ℹ️  Task pattern default matches {{count}} file(s).
-    Sample:'
-  installer.wizard.task_default_future: '  ℹ️  Task pattern default (for future task
-    docs): {{pattern}}'
-  installer.wizard.fr_br_detected: '  ℹ️  FR/BR root detected: {{path}}'
-  installer.wizard.epic_pattern: Epic document pattern (relative to Kanban root, must
-    include {epic})
-  installer.wizard.story_pattern: Story document pattern (relative to Kanban root,
-    include {epic} and {story})
-  installer.wizard.kanban_board: Main Kanban board file
-  installer.run.project_not_found: '❌ ERROR: Project root not found: {{path}}'
-  installer.run.project_root: '📁 Project root: {{path}}'
-  installer.run.config_not_found: '❌ ERROR: Config file not found: {{path}}'
-  installer.run.config_load_failed: '❌ ERROR: Failed to load config: {{error}}'
-  installer.run.config_loaded: '✅ Loaded config from: {{path}}'
-  installer.run.config_generated_heading: '📝 Generated rw-config.yaml:'
-  installer.run.config_written: '✅ Written: {{path}}'
-  installer.run.dry_run_write: '🔍 [DRY RUN] Would write: {{path}}'
-  installer.run.cursorrules_heading: '📝 Generated .cursorrules RW trigger section:'
-  installer.run.cursorrules_exists: ⚠️  .cursorrules already contains RW trigger section.
-    Skipping update.
-  installer.run.cursorrules_review: '   Please manually review and update if needed.'
-  installer.run.cursorrules_appended: '✅ Appended to: {{path}}'
-  installer.run.cursorrules_created: '✅ Created: {{path}}'
-  installer.run.dry_run_cursorrules: '🔍 [DRY RUN] Would update: {{path}}'
-  installer.run.workflow_not_found: '⚠️  Workflow file not found: {{path}}'
-  installer.run.workflow_copy_hint: '   You may need to copy workflows/release-workflow/release-workflow.yaml
-    to your project.'
-  installer.run.dry_run_complete: 🔍 DRY RUN COMPLETE - No files were modified
-  installer.run.partial_heading: ⚠️  INSTALLATION PARTIAL
-  installer.run.partial_issues: 'Issues requiring follow-up:'
-  installer.run.partial_item: '{{index}}. {{warning}}'
-  installer.run.partial_status: 'Final status: PARTIAL'
-  installer.run.complete_heading: ✅ INSTALLATION COMPLETE
-  installer.run.complete_status: 'Final status: SUCCESS'
-  installer.run.next_steps: 'Next steps:'
-  installer.run.next_review_config: 1. Review rw-config.yaml and adjust paths if needed
-  installer.run.next_create_version: 2. Create version_file at the path in rw-config.yaml
-    (or re-run installer and accept scaffold)
-  installer.run.next_review_cursorrules: 3. Review .cursorrules RW trigger section
-  installer.run.next_copy_validators: 4. Copy validation scripts to your scripts_path
-    if not already present
-  installer.run.next_test_rw: 5. Test RW by typing 'RW' in your AI assistant
-  installer.run.next_review_cursorrules_short: 2. Review .cursorrules RW trigger section
-  installer.run.next_copy_validators_short: 3. Copy validation scripts to your scripts_path
-    if not already present
-  installer.run.next_test_rw_short: 4. Test RW by typing 'RW' in your AI assistant
-  installer.wizard.editor_profile_heading: '📝 Maintainer editor profile (optional):'
-  installer.wizard.editor_profile_none: '  none — Git + IDE only (default)'
-  installer.wizard.editor_profile_personal: '  obsidian-personal — quick-start doc;
-    .obsidian/ gitignored'
-  installer.wizard.editor_profile_team: '  obsidian-team — shared stable .obsidian/
-    config in git'
-  installer.wizard.editor_profile_select: Maintainer editor profile
-  installer.wizard.editor_profile_invalid: '  ❌ Invalid profile. Choose: none, obsidian-personal,
-    or obsidian-team.'
+  installer.deps.missing_title: "ERROR: Faltan dependencias del instalador RW."
+  installer.deps.required_heading: "Paquetes Python requeridos:"
+  installer.deps.package_line: "  - {{pip_name}} ({{spec}}){{marker}}"
+  installer.deps.install_venv_heading: "Instálelos en el venv de su proyecto antes de ejecutar este instalador:"
+  installer.deps.pip_install: "  pip install 'pyyaml>=6.0'"
+  installer.deps.editable_heading: "O instale ai-dev-kit con dependencias desde la copia local del kit:"
+  installer.deps.editable_cmd: "  pip install -e ./vendor/ai-dev-kit"
+  installer.deps.editable_alt: "  # o: pip install -e /ruta/a/ai-dev-kit"
+  installer.deps.greenfield_ref: "Ruta greenfield / libro: consulte INSTALL_IN_YOUR_PROJECT.md"
+  installer.deps.greenfield_step: "\"Dependencias venv del instalador\" — instale las dependencias antes del Paso 3 (instalación RW)."
+  installer.deps.preflight_cmd: "Solo comprobación previa: python install_release_workflow.py --check-deps"
+  installer.deps.satisfied: "OK: Dependencias del instalador RW satisfechas."
+  installer.deps.satisfied_line: "  - {{pip_name}} ({{spec}})"
+  installer.error.generic: "ERROR [{{code}}]"
+  installer.prompt.field_required: "  ⚠️  Este campo es obligatorio. Proporcione un valor."
+  installer.validation.pattern_missing_placeholders: "  ❌ El patrón debe incluir marcador(es) de posición: {{placeholders}}"
+  installer.validation.preview_unavailable: "  ⚠️  Vista previa no disponible: {{error}}"
+  installer.validation.no_files_matched: "  ⚠️  Ningún archivo coincide con este patrón bajo la raíz Kanban seleccionada."
+  installer.validation.suggested_examples: "  Ejemplos sugeridos:"
+  installer.validation.suggestion_line: "    - {{suggestion}}"
+  installer.validation.fresh_kanban_default: "  ℹ️  Aún no hay archivos coincidentes (normal tras un Kanban nuevo). Se acepta el valor predeterminado alineado con el instalador."
+  installer.validation.forward_looking: "  ℹ️  Patrón orientado al futuro (convención libro/adoptante). Se acepta antes de que existan archivos de story."
+  installer.validation.zero_match_reject: "  ❌ No se puede persistir un patrón sin coincidencias mientras existan archivos Kanban. Elija un patrón sugerido o introduzca uno que coincida con archivos en disco."
+  installer.validation.use_pattern_prompt: "¿Desea usar este patrón de todos modos?"
+  installer.validation.matched_count: "  ✅ Coinciden {{count}} archivo(s). Muestra:"
+  installer.validation.sample_line: "    - {{sample}}"
+  installer.scaffold.version_dry_run: "🔍 [EJECUCIÓN EN SECO] Se ofrecería crear el archivo de versión en: {{path}}"
+  installer.scaffold.version_initial: "   Versión inicial (esquema dev-kit): {{version}}"
+  installer.scaffold.version_create_prompt: "¿Desea crear un archivo de versión mínimo en {{path}} (versión inicial {{version}})?"
+  installer.scaffold.version_created: "✅ Archivo de versión creado: {{path}} (versión interna inicial {{version}})"
+  installer.scaffold.version_exists: "✅ version_file ya existe: {{path}}"
+  installer.scaffold.changelog_dry_run: "🔍 [EJECUCIÓN EN SECO] Se ofrecería crear el changelog en: {{path}}"
+  installer.scaffold.changelog_create_prompt: "¿Desea crear un CHANGELOG mínimo en {{path}}?"
+  installer.scaffold.changelog_created: "✅ Changelog principal creado: {{path}}"
+  installer.scaffold.changelog_exists: "✅ main_changelog ya existe: {{path}}"
+  installer.wizard.config_header: "📋 Configuración RW"
+  installer.wizard.project_name: "Nombre del proyecto"
+  installer.wizard.version_file: "Ruta al archivo de versión (relativa a la raíz del proyecto)"
+  installer.wizard.main_changelog: "Ruta al CHANGELOG.md principal"
+  installer.wizard.changelog_dir: "Directorio de archivos detallados del changelog"
+  installer.wizard.scripts_path: "Ruta al directorio de scripts de validación"
+  installer.wizard.readme_file: "Ruta al README.md"
+  installer.wizard.mode_heading: "📦 Modo de instalación:"
+  installer.wizard.mode_a: "  A) RW simple (sin Kanban, cualquier versionado)"
+  installer.wizard.mode_b: "  B) RW + versionado Dev-Kit"
+  installer.wizard.mode_c: "  C) Stack completo (RW + versionado + Kanban)"
+  installer.wizard.mode_select: "Seleccione el modo"
+  installer.wizard.devkit_schema_prompt: "¿Desea usar el esquema de versionado dev-kit (RC.EPIC.STORY.TASK+BUILD)?"
+  installer.wizard.kanban_heading: "📊 Integración Kanban:"
+  installer.wizard.kanban_root: "Directorio raíz Kanban"
+  installer.wizard.detected_lowercase_layout: "  ℹ️  Detectado diseño Kanban nuevo en minúsculas (epics/epic-{n}/epic-{n}.md; book story-{story:03d}-*.md)."
+  installer.wizard.detected_fresh_capitalized: "  ℹ️  Detectado diseño de instalación Kanban nuevo (epics/Epic-{n}/Epic-{n}.md, Story-{story:03d}-*.md)."
+  installer.wizard.detected_fresh_lowercase: "  ℹ️  Detectado diseño de instalación Kanban nuevo (patrones epic/story en minúsculas)."
+  installer.wizard.detected_existing: "  ℹ️  Detectados archivos Kanban existentes; se usan valores predeterminados de patrón con mejor coincidencia."
+  installer.wizard.padding_help: "  ℹ️  Relleno: {story:03d} = archivos de story de tres dígitos (libro T03); {story:02d} / {epic:02d} = segmentos de dos dígitos ADR-015."
+  installer.wizard.task_matches: "  ℹ️  El patrón de task predeterminado coincide con {{count}} archivo(s). Muestra:"
+  installer.wizard.task_default_future: "  ℹ️  Patrón de task predeterminado (para futuros documentos de task): {{pattern}}"
+  installer.wizard.fr_br_detected: "  ℹ️  Raíz FR/BR detectada: {{path}}"
+  installer.wizard.epic_pattern: "Patrón de documento Epic (relativo a la raíz Kanban, debe incluir {epic})"
+  installer.wizard.story_pattern: "Patrón de documento Story (relativo a la raíz Kanban, incluya {epic} y {story})"
+  installer.wizard.kanban_board: "Archivo principal del tablero Kanban"
+  installer.wizard.editor_profile_heading: "📝 Perfil del editor del mantenedor (opcional):"
+  installer.wizard.editor_profile_none: "  none — solo Git + IDE (predeterminado)"
+  installer.wizard.editor_profile_personal: "  obsidian-personal — documento de inicio rápido; .obsidian/ en gitignore"
+  installer.wizard.editor_profile_team: "  obsidian-team — configuración .obsidian/ compartida y estable en git"
+  installer.wizard.editor_profile_select: "Perfil del editor del mantenedor"
+  installer.wizard.editor_profile_invalid: "  ❌ Perfil no válido. Elija: none, obsidian-personal u obsidian-team."
+  installer.run.project_not_found: "❌ ERROR: No se encontró la raíz del proyecto: {{path}}"
+  installer.run.project_root: "📁 Raíz del proyecto: {{path}}"
+  installer.run.config_not_found: "❌ ERROR: No se encontró el archivo de configuración: {{path}}"
+  installer.run.config_load_failed: "❌ ERROR: No se pudo cargar la configuración: {{error}}"
+  installer.run.config_loaded: "✅ Configuración cargada desde: {{path}}"
+  installer.run.config_generated_heading: "📝 rw-config.yaml generado:"
+  installer.run.config_written: "✅ Escrito: {{path}}"
+  installer.run.dry_run_write: "🔍 [EJECUCIÓN EN SECO] Se escribiría: {{path}}"
+  installer.run.cursorrules_heading: "📝 Sección de activación RW de .cursorrules generada:"
+  installer.run.cursorrules_exists: "⚠️  .cursorrules ya contiene la sección de activación RW. Se omite la actualización."
+  installer.run.cursorrules_review: "   Revísela y actualícela manualmente si es necesario."
+  installer.run.cursorrules_appended: "✅ Añadido a: {{path}}"
+  installer.run.cursorrules_created: "✅ Creado: {{path}}"
+  installer.run.dry_run_cursorrules: "🔍 [EJECUCIÓN EN SECO] Se actualizaría: {{path}}"
+  installer.run.workflow_not_found: "⚠️  No se encontró el archivo de workflow: {{path}}"
+  installer.run.workflow_copy_hint: "   Puede que deba copiar workflows/release-workflow/release-workflow.yaml a su proyecto."
+  installer.run.dry_run_complete: "🔍 EJECUCIÓN EN SECO COMPLETADA — No se modificó ningún archivo"
+  installer.run.partial_heading: "⚠️  INSTALACIÓN PARCIAL"
+  installer.run.partial_issues: "Aspectos que requieren seguimiento:"
+  installer.run.partial_item: "{{index}}. {{warning}}"
+  installer.run.partial_status: "Estado final: PARCIAL"
+  installer.run.complete_heading: "✅ INSTALACIÓN COMPLETADA"
+  installer.run.complete_status: "Estado final: ÉXITO"
+  installer.run.next_steps: "Próximos pasos:"
+  installer.run.next_review_config: "1. Revise rw-config.yaml y ajuste las rutas si es necesario"
+  installer.run.next_create_version: "2. Cree version_file en la ruta indicada en rw-config.yaml (o vuelva a ejecutar el instalador y acepte el andamiaje)"
+  installer.run.next_review_cursorrules: "3. Revise la sección de activación RW de .cursorrules"
+  installer.run.next_copy_validators: "4. Copie los scripts de validación a su scripts_path si aún no están presentes"
+  installer.run.next_test_rw: "5. Pruebe RW escribiendo 'RW' en su asistente de IA"
+  installer.run.next_review_cursorrules_short: "2. Revise la sección de activación RW de .cursorrules"
+  installer.run.next_copy_validators_short: "3. Copie los scripts de validación a su scripts_path si aún no están presentes"
+  installer.run.next_test_rw_short: "4. Pruebe RW escribiendo 'RW' en su asistente de IA"

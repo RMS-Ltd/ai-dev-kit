@@ -2,9 +2,9 @@ _meta:
   domain: errors
   locale: es
 keys:
-  errors.cli.invalid_language_choice: Invalid choice. Enter 1 or 2.
-  errors.locale.manifest_missing: 'Locale manifest not found: {{path}}'
-  errors.locale.asset_missing: Locale asset not found for key {{key}}
-  errors.installer.project_not_found: 'Project root not found: {{path}}'
-  errors.installer.config_not_found: 'Config file not found: {{path}}'
-  errors.installer.config_load_failed: 'Failed to load config: {{error}}'
+  errors.cli.invalid_language_choice: "Elección no válida. Introduzca 1 o 2."
+  errors.locale.manifest_missing: "No se encontró el manifiesto de localización: {{path}}"
+  errors.locale.asset_missing: "No se encontró el recurso de localización para la clave {{key}}"
+  errors.installer.project_not_found: "No se encontró la raíz del proyecto: {{path}}"
+  errors.installer.config_not_found: "No se encontró el archivo de configuración: {{path}}"
+  errors.installer.config_load_failed: "No se pudo cargar la configuración: {{error}}"
