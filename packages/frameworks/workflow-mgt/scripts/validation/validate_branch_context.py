@@ -231,6 +231,24 @@ def version_anchors_perpetual_task(version: str, config: Optional[Dict]) -> bool
     return is_perpetual_task_content(content)
 
 
+def _task_doc_filename_patterns(epic: int, story: int, task: int) -> List[str]:
+    return [
+        f"Task-{task:03d}-*.md",
+        f"T{task:03d}-*.md",
+        f"T{task:02d}-*.md",
+        f"T{task}-*.md",
+        f"E{epic:02d}S{story:02d}T{task:02d}-*.md",
+    ]
+
+
+def _first_task_hit(base: Path, patterns: List[str]) -> Optional[Path]:
+    for pat in patterns:
+        hits = sorted(base.glob(pat))
+        if hits:
+            return hits[0]
+    return None
+
+
 def locate_task_doc_for_version(
     epic: int,
     story: int,
@@ -239,55 +257,81 @@ def locate_task_doc_for_version(
 ) -> Tuple[Optional[Path], Optional[str], str]:
     """
     Locate Task document for given epic/story/task.
-    
+
+    Aligns with validate_version_bump.locate_task_doc_from_requested:
+    lowercase epic-{nn}, descriptive story-* subdirs, then Task ID fallback.
+
     Returns:
         (task_doc_path, task_doc_content, format_type)
     """
     project_root = Path.cwd()
-    
+
     if config and config.get('use_kanban') and 'kanban_root' in config:
         kanban_root = Path(config['kanban_root'])
         if not kanban_root.is_absolute():
             kanban_root = project_root / kanban_root
     else:
         kanban_root = project_root / "docs/kanban"
-    
-    epic_dir = kanban_root / f"epics/Epic-{epic}"
-    
-    # Format 1: Separate file under canonical or numeric Story-* dir
-    story_dir = epic_dir / f"Story-{story:03d}"
-    if not story_dir.exists():
-        story_dir = epic_dir / f"Story-{story}"
-    if story_dir.exists():
-        task_files = list(story_dir.glob(f"Task-{task:03d}-*.md"))
-        if not task_files:
-            task_files = list(story_dir.glob(f"T{task:03d}-*.md"))
-        if not task_files:
-            task_files = list(story_dir.glob(f"T{task:02d}-*.md"))
-        if not task_files:
-            task_files = list(story_dir.glob(f"T{task}-*.md"))
-        if not task_files:
-            task_files = list(story_dir.glob(f"E{epic:02d}S{story:02d}T{task:02d}-*.md"))
-        if task_files:
-            task_file = task_files[0]
-            return (task_file, task_file.read_text(), "separate_file")
-    
-    # Format 1b: Task file under descriptive Story-* folder (e.g. story-01-codebase-maintenance-tasks/)
-    if epic_dir.is_dir():
-        patterns = [
-            f"Task-{task:03d}-*.md",
-            f"T{task:03d}-*.md",
-            f"T{task:02d}-*.md",
-            f"T{task}-*.md",
-            f"E{epic:02d}S{story:02d}T{task:02d}-*.md",
-        ]
-        for pat in patterns:
+
+    filename_patterns = _task_doc_filename_patterns(epic, story, task)
+    epic_dir_candidates = [
+        kanban_root / f"epics/epic-{epic:02d}",
+        kanban_root / f"epics/epic-{epic}",
+        kanban_root / f"epics/Epic-{epic}",
+    ]
+    story_subdir_globs = [
+        f"Story-{story:03d}-*/T{task:03d}-*.md",
+        f"Story-{story:03d}-*/T{task:02d}-*.md",
+        f"Story-{story:03d}-*/T{task}-*.md",
+        f"Story-{story:03d}-*/Task-{task:03d}-*.md",
+        f"story-{story:02d}-*/T{task:02d}-*.md",
+        f"story-{story:02d}-*/T{task:03d}-*.md",
+        f"story-{story}-*/T{task:02d}-*.md",
+    ]
+
+    for epic_dir in epic_dir_candidates:
+        if not epic_dir.is_dir():
+            continue
+
+        for story_name in (f"Story-{story:03d}", f"Story-{story}"):
+            story_dir = epic_dir / story_name
+            if story_dir.is_dir():
+                hit = _first_task_hit(story_dir, filename_patterns)
+                if hit is not None:
+                    return (hit, hit.read_text(encoding="utf-8"), "separate_file")
+
+        for pat in story_subdir_globs:
+            hits = sorted(epic_dir.glob(pat))
+            if hits:
+                task_file = hits[0]
+                return (task_file, task_file.read_text(encoding="utf-8"), "separate_file")
+
+        for pat in filename_patterns:
             hits = sorted(epic_dir.rglob(pat))
             if hits:
                 task_file = hits[0]
-                return (task_file, task_file.read_text(), "separate_file")
-    
-    # Format 2: Delimited section (would need Story file, skip for now in branch context)
+                return (task_file, task_file.read_text(encoding="utf-8"), "separate_file")
+
+    task_id_regex = re.compile(
+        rf'^\*\*Task ID:\*\*\s*E0*{epic}:S0*{story}:T0*{task}\b',
+        re.MULTILINE | re.IGNORECASE,
+    )
+    epics_root = kanban_root / "epics"
+    if epics_root.is_dir():
+        for candidate in sorted(epics_root.rglob("*.md")):
+            if candidate.name.startswith("_"):
+                continue
+            try:
+                head = candidate.read_text(encoding="utf-8", errors="replace")[:12000]
+            except OSError:
+                continue
+            if task_id_regex.search(head):
+                return (
+                    candidate,
+                    candidate.read_text(encoding="utf-8", errors="replace"),
+                    "separate_file",
+                )
+
     return (None, None, "not_found")
 
 

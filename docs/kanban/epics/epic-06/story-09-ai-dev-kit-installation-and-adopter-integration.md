@@ -13,8 +13,8 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** Large  
 **Created:** 2026-04-19  
-**Last updated:** 2026-06-09 (v0.6.9.25+3 – T25 attempt 2 + F9 triage)
-**Version:** v0.6.9.25+3
+**Last updated:** 2026-06-09 (v0.6.9.26+1 – T26 SBL install program intake + AC6 validator fix)
+**Version:** v0.6.9.26+1
 **Code:** E6S09
 
 ---

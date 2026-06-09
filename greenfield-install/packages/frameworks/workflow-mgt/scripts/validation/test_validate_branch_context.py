@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import importlib.util
 import subprocess
 import sys
 from pathlib import Path
@@ -9,6 +10,14 @@ from pathlib import Path
 import yaml
 
 SCRIPT = Path(__file__).resolve().parent / "validate_branch_context.py"
+
+
+def _load_branch_context_module():
+    spec = importlib.util.spec_from_file_location("validate_branch_context", SCRIPT)
+    assert spec and spec.loader
+    mod = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(mod)
+    return mod
 
 
 def _run(args: list[str], cwd: Path) -> subprocess.CompletedProcess:
@@ -122,4 +131,65 @@ def test_kanban_only_with_registry_passes_no_dual_invariant(tmp_path: Path):
     assert result.returncode == 0, result.stderr + result.stdout
     assert "Versioning mode: kanban_only" in result.stdout
     assert "FR-046" not in result.stdout
+
+
+def test_locate_task_doc_finds_lowercase_epic_story_subdir(tmp_path: Path, monkeypatch):
+    """Regression: epic-06/story-09-*/T25-*.md (consumer lowercase layout)."""
+    repo = tmp_path / "repo"
+    task_dir = (
+        repo
+        / "docs/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration"
+    )
+    task_dir.mkdir(parents=True)
+    monkeypatch.chdir(repo)
+    task_file = task_dir / "T25-sample-task.md"
+    task_file.write_text(
+        "**Task ID:** E06:S09:T25\n**Status:** COMPLETE\n",
+        encoding="utf-8",
+    )
+    mod = _load_branch_context_module()
+    path, content, fmt = mod.locate_task_doc_for_version(
+        6, 9, 25, {"use_kanban": True, "kanban_root": "docs/kanban"}
+    )
+    assert fmt == "separate_file"
+    assert path == task_file
+    assert "E06:S09:T25" in (content or "")
+
+
+def test_strict_no_task_doc_warning_for_lowercase_layout(tmp_path: Path):
+    repo = _init_repo(tmp_path, "epic/6-framework", version_epic=6)
+    (repo / "src/fynd_deals/version.py").write_text(
+        "\n".join(
+            [
+                "VERSION_RC = 0",
+                "VERSION_EPIC = 6",
+                "VERSION_STORY = 9",
+                "VERSION_TASK = 25",
+                "VERSION_BUILD = 3",
+                'VERSION_STRING = "0.6.9.25+3"',
+            ]
+        ),
+        encoding="utf-8",
+    )
+    task_dir = (
+        repo
+        / "docs/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration"
+    )
+    task_dir.mkdir(parents=True)
+    (task_dir / "T25-sample-task.md").write_text(
+        "**Task ID:** E06:S09:T25\n**Status:** COMPLETE\n",
+        encoding="utf-8",
+    )
+    _write_rw_config(
+        repo,
+        versioning_mode="dual",
+        semver_mapping_strategy="task_touch",
+    )
+    data = yaml.safe_load((repo / "rw-config.yaml").read_text(encoding="utf-8"))
+    data["use_kanban"] = True
+    data["kanban_root"] = "docs/kanban"
+    (repo / "rw-config.yaml").write_text(yaml.safe_dump(data, sort_keys=False), encoding="utf-8")
+    result = _run(["--strict"], cwd=repo)
+    assert result.returncode == 0, result.stderr + result.stdout
+    assert "Task document not found" not in result.stdout
 

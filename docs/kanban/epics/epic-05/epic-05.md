@@ -72,9 +72,9 @@ housekeeping_policy: keep
 
 
 
-- [x] **E5:S08 – Knowledge Base** - ✅ COMPLETE (**v0.5.8.4+2** — FR-114 T03/T04)
+- [ ] **E5:S08 – Knowledge Base** - 🔄 IN PROGRESS (**FR-121** T05–T07 — git-internal maintainer KB; supersedes FR-114 Notion SoT)
   - Story: [`story-08-knowledge-base.md`](story-08-knowledge-base.md)
-  - **Note:** Renumbered from S07 to S08 as part of repository story migration (E09:S01:T08)
+  - **Note:** Renumbered from S07 to S08 as part of repository story migration (E09:S01:T08). FR-114 T03/T04 COMPLETE @ v0.5.8.4+2.
 
 
 
