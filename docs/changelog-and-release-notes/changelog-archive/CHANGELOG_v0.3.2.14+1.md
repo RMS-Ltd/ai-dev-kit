@@ -2,7 +2,7 @@
 
 **Release Date:** 2026-06-09 11:54:56 UTC  
 **Epic:** 3 | **Story:** 2 | **Task:** 14  
-**SemVer:** v0.4.12+1 (internal: v0.3.2.14+1)
+**SemVer:** v0.4.1096+1 (internal: v0.3.2.14+1) — corrected v0.3.2.14+2 repair (truncated allocator)
 
 ---
 

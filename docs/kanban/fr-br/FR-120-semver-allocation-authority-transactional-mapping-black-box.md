@@ -13,7 +13,7 @@ housekeeping_policy: keep
 **Submitted:** 2026-06-09  
 **Submitted By:** User  
 **Priority:** HIGH  
-**Status:** IMPLEMENTED (**v0.3.2.14+1** — E03:S02:T14 RW `--art`)  
+**Status:** IMPLEMENTED (**v0.3.2.14+2** — allocator repair; legacy re-import)  
 **Implementing Task:** **E03:S02:T14** — [`T14-semver-allocation-authority-transactional-mapping-fr120.md`](../epics/epic-03/story-02-versioning-cookbook-and-examples/T14-semver-allocation-authority-transactional-mapping-fr120.md)
 
 **Operator decision (2026-06-09):** Adopt **SemVer Allocation Authority (SAA)** as the target architecture. SQLite is not only the injectivity enforcement layer — it is the **generation engine** (sequence counters, policy inputs, and `allocate` transaction). Python/RW become thin callers; `semver_converter.py` logic migrates into the allocator.

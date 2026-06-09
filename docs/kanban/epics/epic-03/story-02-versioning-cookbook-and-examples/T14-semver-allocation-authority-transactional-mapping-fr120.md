@@ -13,8 +13,8 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** Complex  
 **Created:** 2026-06-09  
-**Last updated:** 2026-06-09 (v0.3.2.14+1 — SAA shipped; RW `--art`)  
-**Version Anchor:** v0.3.2.14+1
+**Last updated:** 2026-06-09 (v0.3.2.14+2 — allocator repair; legacy re-import)  
+**Version Anchor:** v0.3.2.14+2
 **Code:** E03S02T14
 
 **Associated FR/BR:** [FR-120](../../../fr-br/FR-120-semver-allocation-authority-transactional-mapping-black-box.md) · [FR-045](../../../fr-br/FR-045-adr-002-task-touch-derived-mapping.md) · [FR-046](../../../fr-br/FR-046-rw-semver-tag-task-touch-mode.md) · [FR-116](../../../fr-br/FR-116-semver-registry-structured-store-shared-release-metadata.md) · [BR-061](../../../fr-br/BR-061-semver-task-touch-counter-increments-too-often.md) · [BR-073](../../../fr-br/BR-073-semver-task-touch-collision-retrospective-fix.md) · [BR-097](../../../fr-br/BR-097-rw-agent-reuses-tagged-build-and-force-moves-release-tags.md)

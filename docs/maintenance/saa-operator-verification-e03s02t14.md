@@ -27,6 +27,18 @@ python packages/frameworks/workflow-mgt/scripts/version/finalize_rw_semver_regis
 python packages/frameworks/workflow-mgt/scripts/validation/validate_task_touch_release_contract.py --strict
 ```
 
+## Allocator bootstrap (mandatory before RW in sqlite mode)
+
+```bash
+python packages/frameworks/workflow-mgt/scripts/release_state/import_legacy.py \
+  --yaml docs/changelog-and-release-notes/changelog-archive/semver-registry-legacy-final.yaml \
+  --db .adk/release-state.db --validate
+```
+
+Expect `counter=1095` (or current HEAD max) and `mappings=359`. **Never** ship RW with `max_patch < 1000` unless greenfield-only.
+
+**2026-06-09 repair:** Truncated DB (patch 13) caused erroneous `v0.4.12+1`; legacy re-import + `v0.3.2.14+2` RW restored line at `v0.4.1096+1` for `v0.3.2.14+1`.
+
 ## Manual checks
 
 - [ ] Two releases with decreasing internal `E.S.T` show increasing SemVer cores in `.adk/release-state.db`

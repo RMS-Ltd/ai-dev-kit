@@ -11,10 +11,10 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
-## [0.3.2.14+1] - 09-06-26
+## [0.3.2.14+2] - 09-06-26
 
-E03:S02:T14 / FR-120 — **Change implemented:** SemVer Allocation Authority (SAA) — SQL-backed `allocate()` for injective task_touch mapping; schema v2; export-on-RW YAML audit. SemVer **v0.4.12+1**.
+E03:S02:T14 — **Change implemented:** SemVer allocator repair — legacy registry re-import; correct `v0.3.2.14+1` external SemVer to **v0.4.1096+1**. SemVer **v0.4.1099+2**.
 
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.3.2.14+1.md)
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.3.2.14+2.md)
 
 ---
