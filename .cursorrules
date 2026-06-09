@@ -412,13 +412,14 @@ For each step, follow this pattern:
 
 10. **Commit Changes** - Create commit with message: `Release v{version}: {summary}\n\nEpic: {epic} | Story: {story} | Task: {task}`
 
-11. **Create Git Tag** - Create tags via canonical strategy decision:
- - **🚨 FORBIDDEN (BR-097):** Never `git tag -f` or force-push release tags. If tag exists on remote → **RW ABORTED**; bump BUILD and re-RW.
- - **A. Canonical source:** Use `semver_converter.get_rw_tag_info(internal_version, finalize=True)` to determine tags for both Step 11 and Step 12.5.
- - **B. Registry mode:** Create annotated primary tag `v{internal_version}`.
- - **C. Task-touch mode:** Create annotated primary tag `vX.Y.Z` (SemVer core; no `+BUILD` in tag name). Also create internal traceability tag `v{internal_version}` on the same commit unless explicitly disabled.
- - **D. Registry finalization:** Task-touch counter/mapping finalizes at tag-creation boundary, not read-only lookups.
- - **Note:** If both tags are created, they must reference the same commit.
+11. **Create Git Tag** - **Tag authority hard gate (FR-122 F9 / Wave 3):**
+ - **🚨 FORBIDDEN (BR-097):** Never `git tag -f`, force-push release tags, or **raw lightweight `git tag v…`** outside `create_rw_tags()`. If tag exists on remote → **RW ABORTED**; bump BUILD and re-RW.
+ - **11a. Pre-tag gate:** Run `validate_rw_tag_authority.py --strict --internal-version "<resolved>" --mode pre` when `rw_tag_authority.enabled` in `rw-config.yaml`.
+ - **11b. Create tags:** **Only** via `semver_converter.create_rw_tags(internal_version)` (uses `get_rw_tag_info(..., finalize=True)` internally). Never invoke bare `git tag` in agent commands.
+ - **11c. Post-tag gate:** Run `validate_rw_tag_authority.py --strict --internal-version "<resolved>" --mode post` — annotated tags on HEAD.
+ - **Registry mode:** Primary tag `v{internal_version}` (annotated).
+ - **Task-touch mode:** Primary tag `vX.Y.Z` (SemVer core) + internal traceability tag `v{internal_version}` on same commit unless disabled.
+ - **Note:** Task-touch counter/mapping finalizes at tag-creation boundary, not read-only lookups.
 
 12. **Push to Remote** — **NEVER by default (UXR-024 hard requirement).** Run **only** when the user typed **`--push`** in the RW trigger message.
     - **Default full RW:** Local-complete through Step 11; report **`RW COMPLETE (local)`**; **no `git push`**; operator batch-pushes later (see cheatsheet §2) **only after** Step 9.7 `--strict --all` passes on the commit(s) to publish.

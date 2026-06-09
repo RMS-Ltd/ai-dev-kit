@@ -72,6 +72,8 @@ git_tag_occupancy:
   enabled: true
 release_coherence:
   enabled: true
+rw_tag_authority:
+  enabled: true
 
 # Versioning mode policy:
 # - dual: internal RC.EPIC.STORY.TASK+BUILD + external SemVer (requires task_touch)

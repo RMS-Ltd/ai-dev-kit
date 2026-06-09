@@ -44,6 +44,7 @@ Adopters copy **`cursorrules-rw-trigger-section.md`** into their `.cursorrules`;
 - [ ] **Step 7 FR-092** — Scoped kanban self-sufficient wording (four-surface contract; no UKW handoff debt) in portable excerpt.
 - [ ] **`.claude/commands/rw.md`** — Step 9 command block matches portable excerpt validator set and `--art` / `--dpz` propagation.
 - [ ] **BR-097 (Step 2 + Step 9/11)** — `resolve_rw_build.py` before `version.py` write; `finalize_rw_semver_registry.py` after `version.py` when `task_touch`; FORBIDDEN force-tag list; `validate_release_tag_immutability.py` + `validate_task_touch_release_contract.py` in Step 9; Step 11 never `git tag -f`; task_touch SemVer collision recovery ≠ BUILD-only.
+- [ ] **FR-122 F9 (Step 11 / Wave 3)** — `validate_rw_tag_authority.py --mode pre` before tagging; `create_rw_tags()` only (no raw lightweight `git tag`); `--mode post` after tagging; `rw_tag_authority.enabled` in `rw-config.yaml`; parity in `.cursorrules`, `rw.md`, `canonical-rw-steps.yaml`.
 - [ ] **Numbering** — Root `.cursorrules` may label gates **6b/6c/6d**; the portable file may use **5b/5c/5d**. That difference is **cosmetic** if prose and commands match.
 
 ---
@@ -112,6 +113,17 @@ Adopters copy **`cursorrules-rw-trigger-section.md`** into their `.cursorrules`;
 | IPW / PLAN template | Could prescribe post-ship `--dpz` | Verification/FBU waves: `RW E:S:T --art` only |
 
 **Versioning note:** Forensic release target **v0.2.1.24+1** via `RW E02:S01:T24 --art`.
+
+### 2026-06-09 — E02:S01:T30 Wave 3 parity pass (FR-122 F9)
+
+| Area | Before | After |
+|------|--------|-------|
+| Step 11 tag creation | `get_rw_tag_info` prose; agent could raw `git tag` | `validate_rw_tag_authority` pre/post gates; **`create_rw_tags()` only** |
+| `canonical-rw-steps.yaml` step_11 | blocking: false | blocking: true; script paths for pre/post/create |
+| `rw-config.yaml` | no `rw_tag_authority` key | `rw_tag_authority.enabled: true` |
+| Gap matrix C-F9 | VIOLATED | MET |
+
+**Versioning note:** Forensic release **v0.2.1.30+4** (Wave 3 tag authority).
 
 ### 2026-06-05 — E02:S16:T21 parity pass (UXR-024)
 

@@ -303,11 +303,30 @@ git commit -m "Release v{version}: {summary}
 Epic: {epic} | Story: {story} | Task: {task}"
 ```
 
-### Step 11 — Create Git Tag
+### Step 11 — Create Git Tag (tag authority — FR-122 F9)
 
-**FORBIDDEN (BR-097):** Never `git tag -f` or force-push release tags. Internal tag collision → BUILD+1 and re-RW. **task_touch** SemVer core collision → finalize registry + re-RW (BUILD+1 allocates new PATCH / new `vX.Y.Z` tag).
+**FORBIDDEN (BR-097):** Never `git tag -f`, force-push release tags, or **raw lightweight `git tag v…`**. Internal tag collision → BUILD+1 and re-RW. **task_touch** SemVer core collision → finalize registry + re-RW (BUILD+1 allocates new PATCH / new `vX.Y.Z` tag).
 
-Use `semver_converter.get_rw_tag_info(internal_version, finalize=True)` to determine tags. Create annotated primary tag `v{internal_version}` and SemVer tag `vX.Y.Z` on the same commit.
+**11a — Pre-tag gate:**
+
+```bash
+python "packages/frameworks/workflow-mgt/scripts/validation/validate_rw_tag_authority.py" \
+  --strict --internal-version "{internal_version}" --mode pre
+```
+
+**11b — Create tags (only via canonical API):**
+
+```bash
+PYTHONPATH=packages/frameworks/workflow-mgt/scripts/version python -c \
+  "from semver_converter import create_rw_tags; create_rw_tags('{internal_version}')"
+```
+
+**11c — Post-tag gate:**
+
+```bash
+python "packages/frameworks/workflow-mgt/scripts/validation/validate_rw_tag_authority.py" \
+  --strict --internal-version "{internal_version}" --mode post
+```
 
 ### Step 12 — Push to Remote (UXR-024: **NEVER** unless `--push`)
 

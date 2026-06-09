@@ -152,10 +152,14 @@ canonical_rw_steps:
   step_11:
     number: 11
     name: "Create Git Tag"
-    description: "SemVer task-touch or registry mode via semver_converter.get_rw_tag_info"
+    description: "validate_rw_tag_authority pre/post; create_rw_tags() only (FR-122 F9); annotated tags on HEAD"
     mandatory: true
-    blocking: false
+    blocking: true
     category: "git"
+    scripts:
+      pre: "packages/frameworks/workflow-mgt/scripts/validation/validate_rw_tag_authority.py --mode pre"
+      post: "packages/frameworks/workflow-mgt/scripts/validation/validate_rw_tag_authority.py --mode post"
+      create: "semver_converter.create_rw_tags"
 
   step_12:
     number: 12

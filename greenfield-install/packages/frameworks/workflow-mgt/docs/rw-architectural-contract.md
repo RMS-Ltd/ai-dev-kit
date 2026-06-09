@@ -92,7 +92,7 @@ On success, all fields must be present:
 | C-F6 | Local-complete default | 12 | MET (UXR-024) |
 | C-F7 | Allocator preflight | 1e | MET — Wave 1 |
 | C-F8 | Git-tag occupancy | 1f | MET — Wave 1 |
-| C-F9 | Single tag authority | 11 | VIOLATED — Wave 3 |
+| C-F9 | Single tag authority | 11 | MET — Wave 3 |
 | C-F10 | Split-brain detection | 9 | MET — Wave 2 |
 
 See [gap matrix](../../../docs/knowledge/analysis/rw-contract-gap-matrix.md) for implementation and test mapping.

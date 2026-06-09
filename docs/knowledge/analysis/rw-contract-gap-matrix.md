@@ -38,7 +38,7 @@ housekeeping_policy: keep
 | C-F6 | Local-complete default | UXR-024 Step 12 default off | Policy review | MET | — |
 | C-F7 | Allocator preflight | `validate_allocator_health.py` + rw-config | T1 | MET | 1 |
 | C-F8 | Git-tag occupancy | `validate_git_tag_occupancy.py` Step 1f | T2 | MET | 1 |
-| C-F9 | Single tag authority | `create_rw_tags()` exists; agent bypass observed | T3, T6 (planned) | VIOLATED | 3 |
+| C-F9 | Single tag authority | `validate_rw_tag_authority.py` + Step 11 `create_rw_tags` only | T3, T6 | MET | 3 |
 | C-F10 | Split-brain detection | `validate_release_coherence.py` | T4 | MET | 2 |
 | C-NF1 | Spec single source | Contract doc (this wave) + `canonical-rw-steps.yaml` | Structural | PARTIAL | 0/4 |
 | C-NF2 | Agent/script split | ADR-027 + contract | ADR review | PLANNED | 0 |
@@ -65,7 +65,7 @@ housekeeping_policy: keep
 | 0 | Contract + ADR-027 + this matrix | Baseline ✅ |
 | 1 | Step 1e/1f validators | C-F7, C-F8 → MET ✅ |
 | 2 | `validate_release_coherence.py` | C-F2, C-F10 → MET ✅ |
-| 3 | Step 11 tag authority | C-F9 → target MET |
+| 3 | Step 11 tag authority | C-F9 → MET ✅ |
 | 4 | `rw-contract.yaml` | C-NF1 → target MET |
 | 8 | 10-run streak | C-F2–F10 sustained |
 

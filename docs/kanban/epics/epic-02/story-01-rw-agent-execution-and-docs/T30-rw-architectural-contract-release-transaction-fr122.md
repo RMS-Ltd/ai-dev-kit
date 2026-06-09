@@ -9,12 +9,12 @@ housekeeping_policy: keep
 # E02:S01:T30 — RW architectural contract & release transaction (FR-122)
 
 **Task ID:** E02:S01:T30  
-**Status:** 🔄 IN PROGRESS (Wave 2 complete — release coherence gate)  
+**Status:** 🔄 IN PROGRESS (Wave 3 complete — tag authority gate)  
 **Priority:** CRITICAL  
 **Estimated Effort:** Very Large (multi-wave meta program)  
 **Created:** 2026-06-09  
-**Last updated:** 2026-06-09 (RW **v0.2.1.30+3** — Wave 2 release)  
-**Version Anchor:** v0.2.1.30+3  
+**Last updated:** 2026-06-09 (RW **v0.2.1.30+4** — Wave 3 release)  
+**Version Anchor:** v0.2.1.30+4  
 **Code:** E02S01T30
 
 Publication Status: NOT_APPLICABLE
@@ -71,7 +71,7 @@ Own the **meta program** for [FR-122](../../../fr-br/FR-122-release-workflow-arc
 | **0** | Contract doc + gap matrix + ADR-027 draft | ✅ COMPLETE (**v0.2.1.30+1**) |
 | **1** | `validate_allocator_health.py`, `validate_git_tag_occupancy.py`, Step 1e/1f wiring | ✅ COMPLETE (**v0.2.1.30+2**) |
 | **2** | `validate_release_coherence.py` | ✅ COMPLETE (**v0.2.1.30+3**) |
-| **3** | Step 11 tag-authority hard gate + dual-source RW trigger parity | TODO |
+| **3** | Step 11 tag-authority hard gate + dual-source RW trigger parity | ✅ COMPLETE (**v0.2.1.30+4**) |
 | **4** | `rw-contract.yaml` machine manifest | TODO |
 | **5** | Optional thin `rw_orchestrator.py` (PREFLIGHT/VALIDATE/PUBLISH deterministic shell) | TODO |
 

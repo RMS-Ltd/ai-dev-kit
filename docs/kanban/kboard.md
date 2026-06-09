@@ -27,7 +27,7 @@ housekeeping_policy: keep
 
 ### Should Have (S) - Important Tasks
 
-- **E02:S01:T30** – RW architectural contract & release transaction (FR-122) - 🔄 IN PROGRESS (CRITICAL, **v0.2.1.30+3** Wave 2 — Wave 3 tag authority next) | [Task](epics/epic-02/story-01-rw-agent-execution-and-docs/T30-rw-architectural-contract-release-transaction-fr122.md) | [FR-122](fr-br/FR-122-release-workflow-architectural-contract-release-transaction.md)| [ADR-027](../../architecture/standards-and-adrs/ADR-027-rw-release-transaction-contract.md) | [—IPP—](../../implementation-cycles/IPP-E02S01T30-rw-architectural-contract-release-transaction.md) | Last modified: 2026-06-09 15:42 UTC
+- **E02:S01:T30** – RW architectural contract & release transaction (FR-122) - 🔄 IN PROGRESS (CRITICAL, **v0.2.1.30+4** Wave 3 — Wave 4 manifest next) | [Task](epics/epic-02/story-01-rw-agent-execution-and-docs/T30-rw-architectural-contract-release-transaction-fr122.md) | [FR-122](fr-br/FR-122-release-workflow-architectural-contract-release-transaction.md)| [ADR-027](../../architecture/standards-and-adrs/ADR-027-rw-release-transaction-contract.md) | [—IPP—](../../implementation-cycles/IPP-E02S01T30-rw-architectural-contract-release-transaction.md) | Last modified: 2026-06-09 15:42 UTC
 
 - **E06:S09:T26** – Starborn Legacy ADK install program - 🔄 IN PROGRESS (HIGH, **v0.6.9.26+2** — attempt 03 FB intake; F9→BLOCKER; F10–F17 triage) | [Task](epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T26-starborn-legacy-adk-install-program.md) | [UXR-025](fr-br/UXR-025-starborn-legacy-greenfield-install-diary.md) | [Attempt 03](../../../adk-install-into-sbl/attempt-03/README.md) | —No IPP— | Last modified: 2026-06-09 12:07 UTC
 
