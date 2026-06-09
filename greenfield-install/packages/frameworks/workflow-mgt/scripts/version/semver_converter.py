@@ -81,6 +81,29 @@ def get_semver_mapping_strategy() -> str:
     return strategy
 
 
+def _task_touch_via_saa(
+    internal_version: str,
+    *,
+    finalize: bool,
+) -> Tuple[int, int, int, int]:
+    """SQLite SAA path: allocate (finalize) or lookup-only (preview)."""
+    from release_state.allocate import allocate, lookup_or_raise
+
+    db_path = get_release_state_db_path()
+    version = internal_version.lstrip("v")
+    if finalize:
+        result = allocate(db_path, version)
+    else:
+        result = lookup_or_raise(db_path, version)
+    parts = result.semver_core.split(".")
+    return (
+        int(parts[0]),
+        int(parts[1]),
+        int(parts[2]),
+        result.build,
+    )
+
+
 def get_rw_tag_info(internal_version: str, finalize: bool = False) -> Dict[str, str]:
     """
     Get tagging information for Release Workflow based on mapping strategy.
@@ -631,9 +654,12 @@ def convert_internal_to_semver_task_touch(
     Returns:
         Tuple of (major, minor, patch, build) for SemVer
     """
+    internal_version = f"{rc}.{epic}.{story}.{task}+{build}"
+    if get_release_state_backend() == "sqlite":
+        return _task_touch_via_saa(internal_version, finalize=finalize)
+
     registry = load_semver_registry()
     task_touch_mode = _ensure_task_touch_mode(registry, rc)
-    internal_version = f"{rc}.{epic}.{story}.{task}+{build}"
 
     major = rc
     minor = task_touch_mode.get("epic_count", 0)

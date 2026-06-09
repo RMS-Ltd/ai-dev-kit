@@ -20,6 +20,7 @@ def connect(db_path: Path) -> sqlite3.Connection:
     conn.execute("PRAGMA journal_mode=WAL")
     conn.execute("PRAGMA foreign_keys=ON")
     conn.execute("PRAGMA synchronous=NORMAL")
+    conn.execute("PRAGMA busy_timeout=5000")
     return conn
 
 
@@ -38,4 +39,8 @@ def init_schema(conn: sqlite3.Connection) -> None:
 def open_db(db_path: Path) -> sqlite3.Connection:
     conn = connect(db_path)
     init_schema(conn)
+    from release_state.migrate import run_migrations
+
+    run_migrations(conn)
+    conn.commit()
     return conn

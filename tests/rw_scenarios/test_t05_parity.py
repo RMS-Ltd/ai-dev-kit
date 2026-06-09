@@ -55,7 +55,8 @@ class TestT05RegistryParity:
         leg = finalize_once("0.2.17.2+1")
         init_sqlite_backend(tmp_path / "sql", monkeypatch, counter=300)
         before2 = sc.get_task_touch_counter(0)
-        sc.convert_internal_to_semver_task_touch(0, 2, 17, 2, 1, finalize=False)
+        with pytest.raises(Exception):
+            sc.convert_internal_to_semver_task_touch(0, 2, 17, 2, 1, finalize=False)
         assert sc.get_task_touch_counter(0) == before2
         sql = finalize_once("0.2.17.2+1")
         assert_registry_parity(leg, sql, scenario_id="RW-S04")

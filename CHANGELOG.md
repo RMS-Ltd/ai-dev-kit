@@ -11,10 +11,10 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
-## [0.2.16.7+2] - 09-06-26
+## [0.3.2.14+1] - 09-06-26
 
-E02:S16:T07 — **Change implemented:** Perpetual ad-hoc documentation maintenance lane (T07); README / INSTALL SHA-256 integrity and install pin alignment attributed (`--art`). SemVer **v0.4.11+2**.
+E03:S02:T14 / FR-120 — **Change implemented:** SemVer Allocation Authority (SAA) — SQL-backed `allocate()` for injective task_touch mapping; schema v2; export-on-RW YAML audit. SemVer **v0.4.12+1**.
 
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.16.7+2.md)
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.3.2.14+1.md)
 
 ---

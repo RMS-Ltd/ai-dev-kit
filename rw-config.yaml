@@ -62,6 +62,7 @@ semver_mapping_strategy: task_touch
 # Release-state backend (E02:S17:T04/T07): legacy = semver-registry.yaml; sqlite = .adk/release-state.db
 release_state_backend: sqlite
 release_state_db: .adk/release-state.db
+release_state_export_yaml: .adk/semver-registry-export.yaml
 
 # Versioning mode policy:
 # - dual: internal RC.EPIC.STORY.TASK+BUILD + external SemVer (requires task_touch)

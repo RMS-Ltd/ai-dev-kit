@@ -8,6 +8,10 @@ from typing import Any, Dict, List, Optional, Tuple
 
 from release_state.db import open_db, utc_now_iso
 
+
+def _semver_core_from_full(semver_full: str) -> str:
+    return str(semver_full).split("+", 1)[0]
+
 _STORY_KEY_RE = re.compile(r"^\(\s*(\d+)\s*,\s*(\d+)\s*\)$")
 
 
@@ -191,16 +195,18 @@ def save_registry_to_sqlite(db_path: Path, registry: Dict[str, Any]) -> None:
                     continue
                 seen_internal.add(iv)
                 seen_patch.add(patch)
+                semver_full = entry.get("semver") or entry.get("semver_full")
                 conn.execute(
                     """
                     INSERT INTO task_touch_mapping
-                      (rc, internal_version, semver_full, patch, epic, story, task, build, finalized_at)
-                    VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+                      (rc, internal_version, semver_full, semver_core, patch, epic, story, task, build, finalized_at)
+                    VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
                     """,
                     (
                         rc,
                         entry["internal_version"],
-                        entry.get("semver") or entry.get("semver_full"),
+                        semver_full,
+                        _semver_core_from_full(str(semver_full)),
                         int(entry["patch"]),
                         int(entry.get("epic", 0)),
                         int(entry.get("story", 0)),
