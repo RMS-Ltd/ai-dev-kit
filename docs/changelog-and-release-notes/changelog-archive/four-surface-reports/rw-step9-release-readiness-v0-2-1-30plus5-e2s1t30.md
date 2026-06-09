@@ -3,7 +3,7 @@
 - **Contract:** FR-092 Wave 7 release-readiness gate (Gates 1-7: governance / predecessors / parity / corpus / stage / stamps / four-surface)
 - **Invocation context:** rw_step_9_release_readiness
 - **Release scope:** E2:S1:T30 (v0.2.1.30+5)
-- **Timestamp (UTC):** 2026-06-09 18:44 UTC
+- **Timestamp (UTC):** 2026-06-09 19:45 UTC
 - **Four-surface report:** `/Users/rms/Documents/projects/ai-dev-kit/docs/changelog-and-release-notes/changelog-archive/four-surface-reports/rw-step7-four-surface-report-v0-2-1-30plus5-e2s1t30.json`
 
 ## Overall verdict
@@ -60,10 +60,10 @@
 ### Gate 5 — Stage-set completeness (BR-070)
 
 - Status: **PASS** (severity: `block`)
-- Summary: BR-070 satisfied: all 4 Step-7 path(s) are staged or unchanged.
+- Summary: BR-070 satisfied: all 3 Step-7 path(s) are staged or unchanged.
 - Evidence:
   - `four_surface_report`: `/Users/rms/Documents/projects/ai-dev-kit/docs/changelog-and-release-notes/changelog-archive/four-surface-reports/rw-step7-four-surface-report-v0-2-1-30plus5-e2s1t30.json`
-  - `paths_checked`: `4`
+  - `paths_checked`: `3`
   - `violations`: `0`
   - `release_scope`: `{'epic': 2, 'story': 1, 'task': 30, 'task_id': 'E2:S1:T30', 'version_string': 'v0.2.1.30+5'}`
 
@@ -84,9 +84,9 @@
 - Summary: Four-surface parity satisfied: all primary surfaces present, either touched or noted-untouched, with paths existing on disk.
 - Evidence:
   - `report`: `/Users/rms/Documents/projects/ai-dev-kit/docs/changelog-and-release-notes/changelog-archive/four-surface-reports/rw-step7-four-surface-report-v0-2-1-30plus5-e2s1t30.json`
-  - `task_doc`: `{'touched': True, 'paths': ['docs/kanban/epics/epic-02/story-01-rw-agent-execution-and-docs/T30-rw-architectural-contract-release-transaction-fr122.md'], 'notes_count': 0}`
-  - `fbu_doc`: `{'touched': True, 'paths': ['docs/kanban/fr-br/FR-122-release-workflow-architectural-contract-release-transaction.md'], 'notes_count': 0}`
-  - `kboard`: `{'touched': True, 'paths': ['docs/kanban/kboard.md'], 'notes_count': 0}`
+  - `task_doc`: `{'touched': False, 'paths': [], 'notes_count': 1}`
+  - `fbu_doc`: `{'touched': False, 'paths': [], 'notes_count': 1}`
+  - `kboard`: `{'touched': False, 'paths': ['/Users/rms/Documents/projects/ai-dev-kit/docs/kanban/kboard.md'], 'notes_count': 1}`
   - `release_scope`: `{'epic': 2, 'story': 1, 'task': 30, 'task_id': 'E2:S1:T30', 'version_string': 'v0.2.1.30+5'}`
 
 ### Gate 8 — Stamp homogeneity (FR-097)

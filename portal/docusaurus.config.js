@@ -58,6 +58,7 @@ const config = {
             'analysis/**',
             'knowledge/**',
             'journals/**',
+            'maintainer/**',
             'architecture/**',
             'governance/**',
             'changelog-and-release-notes/**',

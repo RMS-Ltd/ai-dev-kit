@@ -8,7 +8,7 @@ housekeeping_policy: keep
 
 # Obsidian maintainer editor profiles (FR-121)
 
-**Authority:** Git remains the **sole source of truth** for maintainer documentation. Obsidian is an optional **local editor** on the repository vault — never authoritative. See [ADR-026](../architecture/standards-and-adrs/ADR-026-git-internal-maintainer-kb-fr121.md).
+**Authority:** Git remains the **sole source of truth** for maintainer documentation. Obsidian is an optional **local editor** on the repository vault — never authoritative. See [ADR-026](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/architecture/standards-and-adrs/ADR-026-git-internal-maintainer-kb-fr121.md).
 
 Configuration key: `maintainer_editor_profile` in `rw-config.yaml` (set at greenfield / RW install).
 
@@ -69,6 +69,6 @@ Add community plugin IDs to `community-plugins.json` when the team agrees; plugi
 
 ## References
 
-- [FR-121](../kanban/fr-br/FR-121-git-internal-maintainer-kb-oss-documentation-surfaces.md)
-- [ADR-026](../architecture/standards-and-adrs/ADR-026-git-internal-maintainer-kb-fr121.md)
+- [FR-121](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/kanban/fr-br/FR-121-git-internal-maintainer-kb-oss-documentation-surfaces.md)
+- [ADR-026](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/architecture/standards-and-adrs/ADR-026-git-internal-maintainer-kb-fr121.md)
 - [INSTALL_IN_YOUR_PROJECT.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/INSTALL_IN_YOUR_PROJECT.md)

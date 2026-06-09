@@ -1,8 +1,8 @@
 # KB Index
 
-**Generated:** 2026-06-09 18:45:27 UTC  
+**Generated:** 2026-06-09 20:02:35 UTC  
 **Scope:** /Users/rms/Documents/projects/ai-dev-kit/docs  
-**Total files:** 3086  
+**Total files:** 3090  
 **Total size:** 14.48 MB
 
 ---
@@ -14,7 +14,7 @@
 | analysis | 9 | 152.7 KB | 9 | 0 | 9 | 0 | 0 | 0 |
 | architecture | 126 | 1.24 MB | 120 | 6 | 119 | 1 | 0 | 0 |
 | book-project | 2 | 26.5 KB | 1 | 1 | 1 | 0 | 0 | 0 |
-| changelog-and-release-notes | 1410 | 3.93 MB | 199 | 1211 | 183 | 0 | 1 | 0 |
+| changelog-and-release-notes | 1414 | 3.94 MB | 199 | 1215 | 183 | 0 | 1 | 0 |
 | developer-tools | 2 | 12.7 KB | 2 | 0 | 2 | 0 | 0 | 0 |
 | documentation | 33 | 354.3 KB | 30 | 3 | 30 | 0 | 0 | 0 |
 | governance | 21 | 168.9 KB | 21 | 0 | 21 | 0 | 0 | 0 |
@@ -32,7 +32,7 @@
 ## Optimization signals
 
 - **docs/README.md exists:** False
-- **Files missing lifecycle frontmatter:** 1323
+- **Files missing lifecycle frontmatter:** 1327
 - **Timeboxed/transient with expires_at in the past:** 3
 - **READMEs (under docs/):** 22
 
@@ -88,7 +88,7 @@
 - `changelog-and-release-notes/changelog-archive/CHANGELOG_v0.10.1.3+1.md`
 - `changelog-and-release-notes/changelog-archive/CHANGELOG_v0.10.1.4+1.md`
 - `changelog-and-release-notes/changelog-archive/CHANGELOG_v0.10.1.5+1.md`
-- ... and 1273 more
+- ... and 1277 more
 
 ### Expired (candidates for archive/delete)
 
@@ -653,8 +653,8 @@
 | kanban/epics/epic-02/story-01-rw-agent-execution-and-docs/T27-agent-bootstrap-and-task-routing-fr103.md | 4.3 KB | 366 | evergreen | 2026-05-30T20:00:00 |  |
 | kanban/epics/epic-02/story-01-rw-agent-execution-and-docs/T28-rw-dpz-short-flag-doc-policy-zero-uxr022.md | 4.2 KB | 367 | evergreen | 2026-06-05T16:00:00 |  |
 | kanban/epics/epic-02/story-01-rw-agent-execution-and-docs/T29-rw-local-release-default-no-push-uxr024.md | 3.2 KB | 366 | evergreen | 2026-06-05T18:00:00 |  |
-| kanban/epics/epic-02/story-01-rw-agent-execution-and-docs/T30-rw-architectural-contract-release-transaction-fr122.md | 5.1 KB | 513 | evergreen | 2026-06-09T18:00:00 |  |
-| kanban/epics/epic-02/story-01-rw-agent-execution-and-docs.md | 12.5 KB | 1016 | evergreen | 2025-12-04T12:01:50 |  |
+| kanban/epics/epic-02/story-01-rw-agent-execution-and-docs/T30-rw-architectural-contract-release-transaction-fr122.md | 5.2 KB | 531 | evergreen | 2026-06-09T18:00:00 |  |
+| kanban/epics/epic-02/story-01-rw-agent-execution-and-docs.md | 12.5 KB | 1013 | evergreen | 2025-12-04T12:01:50 |  |
 | kanban/epics/epic-02/story-02-pdca-integration-into-release-workflow/T01-add-check-phase-step-12.md | 3.3 KB | 404 | evergreen | 2025-12-04T12:01:50 |  |
 | kanban/epics/epic-02/story-02-pdca-integration-into-release-workflow/T02-add-act-phase-step-13.md | 3.4 KB | 439 | evergreen | 2025-12-04T12:01:50 |  |
 | kanban/epics/epic-02/story-02-pdca-integration-into-release-workflow/T03-enhance-plan-phase.md | 2.9 KB | 372 | evergreen | 2025-12-04T12:01:50 |  |
@@ -1665,7 +1665,7 @@
 | kanban/fr-br/FR-119-implementation-delivery-workflow-idw.md | 2.7 KB | 322 | evergreen | 2026-06-08T18:00:00 |  |
 | kanban/fr-br/FR-120-semver-allocation-authority-transactional-mapping-black-box.md | 14.7 KB | 1784 | proposed | 2026-06-09T00:00:00 |  |
 | kanban/fr-br/FR-121-git-internal-maintainer-kb-oss-documentation-surfaces.md | 8.7 KB | 1001 | proposed | 2026-06-09T00:00:00 |  |
-| kanban/fr-br/FR-122-release-workflow-architectural-contract-release-transaction.md | 11.7 KB | 1182 | proposed | 2026-06-09T18:00:00 |  |
+| kanban/fr-br/FR-122-release-workflow-architectural-contract-release-transaction.md | 11.9 KB | 1200 | proposed | 2026-06-09T18:00:00 |  |
 | kanban/fr-br/REOPENING_BR_AND_TASKS_GUIDE.md | 7.9 KB | 1115 | evergreen | 2025-12-16T13:45:00 |  |
 | kanban/fr-br/UXR-001-migration-user-experience-research.md | 12.8 KB | 1556 | evergreen | 2025-01-27T00:00:00 |  |
 | kanban/fr-br/UXR-002-comprehensive-uat-migration-utilities.md | 10.7 KB | 1307 | evergreen | 2025-12-10T00:00:00 |  |
@@ -1699,7 +1699,7 @@
 | kanban/kanban-board-guide.md | 16.5 KB | 2136 | evergreen | 2026-01-20T00:00:00 |  |
 | kanban/kanban-completed.md | 124.3 KB | 9997 | evergreen | 2026-03-09T00:00:00 |  |
 | kanban/kanban-structure.md | 25.5 KB | 2227 | evergreen | 2026-03-09T00:00:00 |  |
-| kanban/kboard.md | 13.8 KB | 1049 | evergreen | 2025-12-04T12:02:50 |  |
+| kanban/kboard.md | 13.8 KB | 1047 | evergreen | 2025-12-04T12:02:50 |  |
 | knowledge/KB-INDEX.md | 236.6 KB | 22205 |  |  |  |
 | knowledge/README.md | 2.5 KB | 259 | evergreen | 2026-06-07T12:00:00 |  |
 | knowledge/USE_CASE_METHODOLOGY.md | 14.3 KB | 1844 | evergreen | 2025-12-16T14:30:00 |  |
@@ -1753,7 +1753,7 @@
 | knowledge/analysis/projects/starborn-legacy-greenfield-install-diary.md | 9.6 KB | 1177 | evergreen | 2026-06-09T00:00:00 |  |
 | knowledge/analysis/projects/starborn-legacy-install-triage-matrix.md | 8.5 KB | 1160 | evergreen | 2026-06-09T12:00:00 |  |
 | knowledge/analysis/projects/vwmp-adk-analysis.md | 18.9 KB | 2525 | evergreen | 2025-12-16T23:30:00 |  |
-| knowledge/analysis/rw-contract-gap-matrix.md | 3.8 KB | 561 | evergreen | 2026-06-09T20:00:00 |  |
+| knowledge/analysis/rw-contract-gap-matrix.md | 3.9 KB | 571 | evergreen | 2026-06-09T20:00:00 |  |
 | knowledge/analysis/task-level-kanban-structure-analysis.md | 21.6 KB | 3000 | evergreen | 2025-12-17T00:00:00 |  |
 | knowledge/analysis/workflow-structure-analysis.md | 24.9 KB | 2954 | evergreen | 2025-12-17T00:00:00 |  |
 | knowledge/articles/README.md | 3.6 KB | 394 | evergreen | 2025-12-22T10:50:00 |  |
@@ -1803,5 +1803,5 @@
 | project-agent-index.md | 4.3 KB | 392 | evergreen | 2026-05-30T21:00:00 |  |
 | project-management/README.md | 523 B | 34 | evergreen | 2025-12-04T12:01:54 |  |
 | release-notes/README.md | 1.4 KB | 123 | evergreen | 2026-06-07T12:00:00 |  |
-| changelog-and-release-notes/changelog-archive/ (summary) (1408 files) | 3.93 MB | 455984 |  |  |  |
+| changelog-and-release-notes/changelog-archive/ (summary) (1412 files) | 3.94 MB | 456723 |  |  |  |
 

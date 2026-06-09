@@ -13,8 +13,8 @@ housekeeping_policy: keep
 **Priority:** CRITICAL  
 **Estimated Effort:** Very Large (multi-wave meta program)  
 **Created:** 2026-06-09  
-**Last updated:** 2026-06-09 (RW **v0.2.1.30+6** — Wave 8 split-brain streak auditor)  
-**Version Anchor:** v0.2.1.30+6  
+**Last updated:** 2026-06-09 (RW **v0.2.1.30+7** — post-Wave 8 hygiene + push)  
+**Version Anchor:** v0.2.1.30+7  
 **Code:** E02S01T30
 
 Publication Status: NOT_APPLICABLE

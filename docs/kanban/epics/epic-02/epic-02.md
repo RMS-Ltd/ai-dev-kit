@@ -12,7 +12,7 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** [TBD]  
 **Created:** 2025-12-02  
-**Last updated:** 2026-06-09 (v0.2.1.30+5 – Kanban documentation setup)
+**Last updated:** 2026-06-09 (v0.2.1.30+7 – Kanban documentation setup)
 **Branch:** `epic/2-workflow-management-framework`  
 **Version Schema:** `0.2.S.T+B`  
 **Production URL:** [N/A for this repo]

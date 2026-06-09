@@ -11,10 +11,10 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
-## [0.2.1.30+6] - 09-06-26
+## [0.2.1.30+7] - 09-06-26
 
-E02:S01:T30 — **Change implemented:** FR-122 Wave 8 — split-brain streak auditor (`validate_rw_split_brain_streak.py`). SemVer **v0.4.1104+6**.
+E02:S01:T30 — **Change implemented:** FR-122 post-Wave 8 kanban hygiene + push to `origin/dev`. SemVer **v0.4.1105+7**.
 
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.1.30+6.md)
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.1.30+7.md)
 
 ---
