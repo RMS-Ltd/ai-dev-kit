@@ -14,7 +14,7 @@ housekeeping_policy: keep
 **Submitted By:** User (RW architecture experiment after `0.6.9.26+2` split-brain SemVer release)  
 **Priority:** CRITICAL  
 **Severity:** CRITICAL  
-**Status:** IN PROGRESS (Wave 4 **v0.2.1.30+5** — Wave 5 orchestrator optional / sign-off next)
+**Status:** IN PROGRESS (Wave 5 orchestrator implemented — sign-off / 10-run streak next)
 
 **Implementing Task:** [E02:S01:T30](../epics/epic-02/story-01-rw-agent-execution-and-docs/T30-rw-architectural-contract-release-transaction-fr122.md)  
 **IPP:** [IPP-E02S01T30](../../implementation-cycles/IPP-E02S01T30-rw-architectural-contract-release-transaction.md)
@@ -150,7 +150,8 @@ RW correctly uses agent intelligence for kanban synthesis and recovery — but *
 - [x] **Wave 1 shipped:** Allocator preflight + git-tag occupancy gate (Step 1e/1f) — **v0.2.1.30+2**
 - [x] **Wave 2 shipped:** `validate_release_coherence.py` Step 9 cross-surface gate — **v0.2.1.30+3**
 - [x] **Wave 3 shipped:** Step 11 tag authority (`validate_rw_tag_authority` + `create_rw_tags` only) — **v0.2.1.30+4**
-- [x] **Wave 4 shipped:** `rw-contract.yaml` machine manifest + manifest validator — **v0.2.1.30+5**
+- [x] **Wave 4 shipped:** `rw-contract.yaml` machine manifest + manifest validator — **v0.2.1.30+5** (Wave 4 slice; tag shared with Wave 5)
+- [x] **Wave 5 shipped:** `rw_orchestrator.py` thin shell + `test_rw_orchestrator.py` — **v0.2.1.30+5**
 - [ ] **No split-brain release** in 10 consecutive RW runs on ai-dev-kit `dev`
 - [ ] IPP linked from task doc; ADR-027 if contract changes agent/script boundary
 

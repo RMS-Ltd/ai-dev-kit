@@ -117,6 +117,20 @@ See [gap matrix](../../../docs/knowledge/analysis/rw-contract-gap-matrix.md) for
 
 ---
 
+## Thin orchestrator (Wave 5)
+
+Deterministic phases may be invoked via [`scripts/rw_orchestrator.py`](../scripts/rw_orchestrator.py), which reads gate definitions from [`rw-contract.yaml`](../rw-contract.yaml):
+
+```bash
+python packages/frameworks/workflow-mgt/scripts/rw_orchestrator.py preflight --requested E02:S01:T30 [--art]
+python packages/frameworks/workflow-mgt/scripts/rw_orchestrator.py validate --internal-version 0.2.1.30+5
+python packages/frameworks/workflow-mgt/scripts/rw_orchestrator.py publish --internal-version 0.2.1.30+5
+```
+
+**Agent-owned (not run by orchestrator):** MUTATE Steps 2–7, Step 8 stage, Step 10 commit. Full Step 9 validator suite beyond contract gates remains agent-scheduled per `.cursorrules`.
+
+---
+
 ## Related
 
 - [release-workflow-agent-execution.md](../KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md)

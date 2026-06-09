@@ -79,7 +79,7 @@ Make RW agent execution documentation fully portable, clearly distinguishing dev
 
 - [x] **E02:S01:T29 – RW local-release default / no push (UXR-024)** — ✅ COMPLETE (re-housed from E02:S16:T21) — [Task](story-01-rw-agent-execution-and-docs/T29-rw-local-release-default-no-push-uxr024.md) | [UXR-024](../../fr-br/UXR-024-rw-local-release-default-no-push-batch-operator-push.md)
 
-- [ ] **E02:S01:T30 – RW architectural contract & release transaction (FR-122)** — 🔄 IN PROGRESS (**v0.2.1.30+5** Wave 4) — [Task](story-01-rw-agent-execution-and-docs/T30-rw-architectural-contract-release-transaction-fr122.md) | [FR-122](../../fr-br/FR-122-release-workflow-architectural-contract-release-transaction.md) | [IPP](../../../implementation-cycles/IPP-E02S01T30-rw-architectural-contract-release-transaction.md)
+- [ ] **E02:S01:T30 – RW architectural contract & release transaction (FR-122)** — 🔄 IN PROGRESS (**v0.2.1.30+5** Wave 5 — sign-off / 10-run streak pending) — [Task](story-01-rw-agent-execution-and-docs/T30-rw-architectural-contract-release-transaction-fr122.md) | [FR-122](../../fr-br/FR-122-release-workflow-architectural-contract-release-transaction.md) | [IPP](../../../implementation-cycles/IPP-E02S01T30-rw-architectural-contract-release-transaction.md)
 
 ---
 

@@ -41,7 +41,7 @@ housekeeping_policy: keep
 | C-F9 | Single tag authority | `validate_rw_tag_authority.py` + Step 11 `create_rw_tags` only | T3, T6 | MET | 3 |
 | C-F10 | Split-brain detection | `validate_release_coherence.py` | T4 | MET | 2 |
 | C-NF1 | Spec single source | `rw-contract.yaml` + contract doc + `canonical-rw-steps.yaml` | `validate_rw_contract_manifest.py` | MET | 4 |
-| C-NF2 | Agent/script split | ADR-027 + contract | ADR review | PLANNED | 0 |
+| C-NF2 | Agent/script split | ADR-027 + `rw_orchestrator.py` | `test_rw_orchestrator.py` | MET | 5 |
 | C-NF3 | Idempotency | `resolve_rw_build.py` | `test_resolve_rw_build.py` | MET | — |
 | C-NF4 | Config portability | `rw_config_loader.py` | Validator config tests | PARTIAL | 1 |
 | C-NF5 | Observability | FR-044 logger, release readiness | Partial adoption | PARTIAL | — |
@@ -67,6 +67,7 @@ housekeeping_policy: keep
 | 2 | `validate_release_coherence.py` | C-F2, C-F10 → MET ✅ |
 | 3 | Step 11 tag authority | C-F9 → MET ✅ |
 | 4 | `rw-contract.yaml` | C-NF1 → MET ✅ |
+| 5 | `rw_orchestrator.py` | C-NF2 → MET ✅ |
 | 8 | 10-run streak | C-F2–F10 sustained |
 
 ---

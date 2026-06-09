@@ -9,11 +9,11 @@ housekeeping_policy: keep
 # E02:S01:T30 — RW architectural contract & release transaction (FR-122)
 
 **Task ID:** E02:S01:T30  
-**Status:** 🔄 IN PROGRESS (Wave 4 complete — rw-contract manifest)  
+**Status:** 🔄 IN PROGRESS (Wave 5 complete — thin orchestrator; sign-off pending)  
 **Priority:** CRITICAL  
 **Estimated Effort:** Very Large (multi-wave meta program)  
 **Created:** 2026-06-09  
-**Last updated:** 2026-06-09 (RW **v0.2.1.30+5** — Wave 4 release)  
+**Last updated:** 2026-06-09 (RW **v0.2.1.30+5** — Wave 5 orchestrator release)  
 **Version Anchor:** v0.2.1.30+5  
 **Code:** E02S01T30
 
@@ -73,7 +73,7 @@ Own the **meta program** for [FR-122](../../../fr-br/FR-122-release-workflow-arc
 | **2** | `validate_release_coherence.py` | ✅ COMPLETE (**v0.2.1.30+3**) |
 | **3** | Step 11 tag-authority hard gate + dual-source RW trigger parity | ✅ COMPLETE (**v0.2.1.30+4**) |
 | **4** | `rw-contract.yaml` machine manifest | ✅ COMPLETE (**v0.2.1.30+5**) |
-| **5** | Optional thin `rw_orchestrator.py` (PREFLIGHT/VALIDATE/PUBLISH deterministic shell) | TODO |
+| **5** | Optional thin `rw_orchestrator.py` (PREFLIGHT/VALIDATE/PUBLISH deterministic shell) | ✅ COMPLETE (**v0.2.1.30+5**) |
 
 ---
 

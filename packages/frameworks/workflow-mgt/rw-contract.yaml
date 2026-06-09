@@ -10,6 +10,7 @@ contract:
   adr: ADR-027
   human_doc: docs/rw-architectural-contract.md
   steps_ref: canonical-rw-steps.yaml
+  orchestrator: scripts/rw_orchestrator.py
 
 invariants:
   - id: I1
@@ -161,7 +162,7 @@ clauses:
   C-F9: { status: MET, wave: 3 }
   C-F10: { status: MET, wave: 2 }
   C-NF1: { status: MET, wave: 4 }
-  C-NF2: { status: MET, wave: 0 }
+  C-NF2: { status: MET, wave: 5 }
   C-NF3: { status: MET, wave: null }
   C-NF4: { status: PARTIAL, wave: 1 }
   C-NF5: { status: PARTIAL, wave: null }
