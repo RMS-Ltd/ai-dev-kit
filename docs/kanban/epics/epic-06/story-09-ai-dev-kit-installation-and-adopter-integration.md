@@ -13,8 +13,8 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** Large  
 **Created:** 2026-04-19  
-**Last updated:** 2026-06-09 (v0.6.9.25+2 – Kanban documentation setup)
-**Version:** v0.6.9.25+2
+**Last updated:** 2026-06-09 (v0.6.9.25+3 – T25 attempt 2 + F9 triage)
+**Version:** v0.6.9.25+3
 **Code:** E6S09
 
 ---
@@ -79,7 +79,7 @@ housekeeping_policy: keep
 
 - [x] **E06:S09:T24 – Acquisition-layer ADK error codes (FR-111)** - ✅ COMPLETE (**v0.6.9.24+3** — registry 1.1.0 I05/I06, verify_vendor_tree, doc sync + link hygiene) — [Task](story-09-ai-dev-kit-installation-and-adopter-integration/T24-acquisition-layer-adk-error-codes-fr111.md) | [IPP-E06S09T24](../../../implementation-cycles/IPP-E06S09T24-acquisition-layer-adk-error-codes-fr111.md) | [FR-111](../../fr-br/FR-111-acquisition-layer-adk-error-codes-and-install-error-doc-hygiene.md)
 
-- [x] **E06:S09:T25 – Starborn Legacy greenfield install diary — triage & upstream reaction (UXR-025)** - ✅ COMPLETE (HIGH, **v0.6.9.25+2** — F4/F5 orchestrator fix + triage matrix + install docs) — [Task](story-09-ai-dev-kit-installation-and-adopter-integration/T25-starborn-legacy-greenfield-install-diary-triage-uxr025.md) | [UXR-025](../../fr-br/UXR-025-starborn-legacy-greenfield-install-diary.md) | [IPP](../../../implementation-cycles/IPP-E06S09T25-starborn-legacy-greenfield-install-diary-triage-uxr025.md) | [Triage](../../../knowledge/analysis/projects/starborn-legacy-install-triage-matrix.md)
+- [x] **E06:S09:T25 – Starborn Legacy greenfield install diary — triage & upstream reaction (UXR-025)** - ✅ COMPLETE (HIGH, **v0.6.9.25+3** — F4/F5 fix **+2**; attempt 2 closure + F9 v1 catalog triage **+3**) — [Task](story-09-ai-dev-kit-installation-and-adopter-integration/T25-starborn-legacy-greenfield-install-diary-triage-uxr025.md) | [UXR-025](../../fr-br/UXR-025-starborn-legacy-greenfield-install-diary.md) | [IPP](../../../implementation-cycles/IPP-E06S09T25-starborn-legacy-greenfield-install-diary-triage-uxr025.md) | [Triage](../../../knowledge/analysis/projects/starborn-legacy-install-triage-matrix.md) | [Attempt 02](../../../../adk-install-into-sbl/attempt-02/greenfield-install-diary.md)
 
 ---
 

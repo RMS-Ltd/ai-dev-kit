@@ -3,14 +3,16 @@
 - **Contract:** FR-092 Wave 7 release-readiness gate (Gates 1-7: governance / predecessors / parity / corpus / stage / stamps / four-surface)
 - **Invocation context:** rw_step_9_release_readiness
 - **Release scope:** E21:S03:T05 (v0.21.3.5+1)
-- **Timestamp (UTC):** 2026-06-08 13:11 UTC
-- **Four-surface report:** `/Users/rms/Documents/projects/ai-dev-kit-e21/docs/changelog-and-release-notes/changelog-archive/four-surface-reports/rw-step7-four-surface-report-v0.21.3.5plus1-e21s03t05.json`
+- **Timestamp (UTC):** 2026-06-09 10:46 UTC
+- **Four-surface report:** `/Users/rms/Documents/projects/ai-dev-kit/docs/changelog-and-release-notes/changelog-archive/four-surface-reports/rw-step7-four-surface-report-v0.21.3.5plus1-e21s03t05.json`
 
 ## Overall verdict
 
-- **Status:** PASS — RW MAY proceed past Step 9.
+- **Status:** BLOCK — RW MUST NOT commit. See blocking failures below.
+  - Gate 5: Stage-set completeness (BR-070)
+  - Gate 7: Four-surface parity (FR-084)
 
-- Gates: 11/11 passed (0 failed, 0 waived).
+- Gates: 9/11 passed (2 failed, 0 waived).
 
 ## Per-gate detail
 
@@ -31,15 +33,15 @@
 - Status: **PASS** (severity: `block`)
 - Summary: Supersede chain executed: FR-091/FR-090/FR-084 banner-superseded, T02/T05/T06 redirected, BR-069/BR-070/UXR-009 gated.
 - Evidence:
-  - `docs/project-management/kanban/fr-br/FR-091-rw-step-7-self-sufficient-scoped-kanban-reconciliation-without-ukw-dependency.md`: `OK`
-  - `docs/project-management/kanban/fr-br/FR-090-ukw-canonical-row-transform-engine-and-board-specific-rendering-contracts.md`: `OK`
-  - `docs/project-management/kanban/fr-br/FR-084-ipp-post-run-governance-reconciliation-ownership.md`: `OK`
-  - `docs/project-management/kanban/epics/epic-02/story-15-ipw-governance-and-publication-contract/T02-ipp-post-run-governance-reconciliation-ownership-fr084.md`: `OK`
-  - `docs/project-management/kanban/epics/epic-02/story-15-ipw-governance-and-publication-contract/T05-implement-ukw-rw-canonical-row-transform-engine-fr090.md`: `OK`
-  - `docs/project-management/kanban/epics/epic-02/story-15-ipw-governance-and-publication-contract/T06-rw-step-7-self-sufficient-scoped-kanban-reconciliation-fr091.md`: `OK`
-  - `docs/project-management/kanban/fr-br/BR-069-kboard-fbuboard-earliest-last-modified-timestamps-overwritten.md`: `OK`
-  - `docs/project-management/kanban/fr-br/BR-070-rw-k-stage-files-completeness-gap-allows-partial-kanban-commit.md`: `OK`
-  - `docs/project-management/kanban/fr-br/UXR-009-last-modified-stamp-forensic-integrity-and-drift-protection.md`: `OK`
+  - `docs/kanban/fr-br/FR-091-rw-step-7-self-sufficient-scoped-kanban-reconciliation-without-ukw-dependency.md`: `OK`
+  - `docs/kanban/fr-br/FR-090-ukw-canonical-row-transform-engine-and-board-specific-rendering-contracts.md`: `OK`
+  - `docs/kanban/fr-br/FR-084-ipp-post-run-governance-reconciliation-ownership.md`: `OK`
+  - `docs/kanban/epics/epic-02/story-15-ipw-governance-and-publication-contract/T02-ipp-post-run-governance-reconciliation-ownership-fr084.md`: `OK`
+  - `docs/kanban/epics/epic-02/story-15-ipw-governance-and-publication-contract/T05-implement-ukw-rw-canonical-row-transform-engine-fr090.md`: `OK`
+  - `docs/kanban/epics/epic-02/story-15-ipw-governance-and-publication-contract/T06-rw-step-7-self-sufficient-scoped-kanban-reconciliation-fr091.md`: `OK`
+  - `docs/kanban/fr-br/BR-069-kboard-fbuboard-earliest-last-modified-timestamps-overwritten.md`: `OK`
+  - `docs/kanban/fr-br/BR-070-rw-k-stage-files-completeness-gap-allows-partial-kanban-commit.md`: `OK`
+  - `docs/kanban/fr-br/UXR-009-last-modified-stamp-forensic-integrity-and-drift-protection.md`: `OK`
   - `BR-042`: `OK (closed as duplicate)`
 
 ### Gate 3 — Contract enforcement parity (RW <-> UKW canonical pipeline)
@@ -47,24 +49,30 @@
 - Status: **PASS** (severity: `block`)
 - Summary: RW and UKW canonical row transform pipelines produce byte-identical output across all active boards (FR-090 shared engine verified).
 - Evidence:
-  - `docs/project-management/kanban/kboard.md`: `byte-identical`
+  - `docs/kanban/kboard.md`: `byte-identical`
 
 ### Gate 4 — Corpus canonical state
 
 - Status: **PASS** (severity: `block`)
 - Summary: Corpus canonical state holds: every active board is idempotent under canonical sweep; no duplicate tails; no synthetic stamps.
 - Evidence:
-  - `/Users/rms/Documents/projects/ai-dev-kit-e21/docs/project-management/kanban/kboard.md`: `{'rows_changed': 0, 'rows_with_duplicate_footers': 0}`
-  - `stamp_evidence_aggregate`: `{'stamps_appended_with_evidence': 0, 'stamps_skipped_no_evidence': 0, 'stamps_preserved_existing': 27}`
+  - `/Users/rms/Documents/projects/ai-dev-kit/docs/kanban/kboard.md`: `{'rows_changed': 0, 'rows_with_duplicate_footers': 0}`
+  - `stamp_evidence_aggregate`: `{'stamps_appended_with_evidence': 0, 'stamps_skipped_no_evidence': 0, 'stamps_preserved_existing': 25}`
 
 ### Gate 5 — Stage-set completeness (BR-070)
 
-- Status: **PASS** (severity: `block`)
-- Summary: BR-070 satisfied: all 5 Step-7 path(s) are staged or unchanged.
+- Status: **FAIL** (severity: `block`)
+- Summary: BR-070 violation: 5 Step-7 path(s) are modified-unstaged, untracked, or missing.
+- Findings:
+  - `task_doc` :: `/Users/rms/Documents/projects/ai-dev-kit-e21/docs/project-management/kanban/epics/epic-21/story-03-translation-and-localisation/T05-add-translation-management-tools.md` :: missing — Step-7 surface path does not exist on disk; staging cannot reach it. Likely Step 7 declared a surface that was never written, or the path was deleted before commit. Investigate before proceeding.
+  - `fbu_doc` :: `/Users/rms/Documents/projects/ai-dev-kit-e21/docs/project-management/kanban/fr-br/FR-006-localization-language-selection-uk-us-english.md` :: missing — Step-7 surface path does not exist on disk; staging cannot reach it. Likely Step 7 declared a surface that was never written, or the path was deleted before commit. Investigate before proceeding.
+  - `kboard` :: `/Users/rms/Documents/projects/ai-dev-kit-e21/docs/project-management/kanban/kboard.md` :: missing — Step-7 surface path does not exist on disk; staging cannot reach it. Likely Step 7 declared a surface that was never written, or the path was deleted before commit. Investigate before proceeding.
+  - `story_doc` :: `/Users/rms/Documents/projects/ai-dev-kit-e21/docs/project-management/kanban/epics/epic-21/story-03-translation-and-localisation.md` :: missing — Step-7 surface path does not exist on disk; staging cannot reach it. Likely Step 7 declared a surface that was never written, or the path was deleted before commit. Investigate before proceeding.
+  - `epic_doc` :: `/Users/rms/Documents/projects/ai-dev-kit-e21/docs/project-management/kanban/epics/epic-21/Epic-21.md` :: missing — Step-7 surface path does not exist on disk; staging cannot reach it. Likely Step 7 declared a surface that was never written, or the path was deleted before commit. Investigate before proceeding.
 - Evidence:
-  - `four_surface_report`: `/Users/rms/Documents/projects/ai-dev-kit-e21/docs/changelog-and-release-notes/changelog-archive/four-surface-reports/rw-step7-four-surface-report-v0.21.3.5plus1-e21s03t05.json`
+  - `four_surface_report`: `/Users/rms/Documents/projects/ai-dev-kit/docs/changelog-and-release-notes/changelog-archive/four-surface-reports/rw-step7-four-surface-report-v0.21.3.5plus1-e21s03t05.json`
   - `paths_checked`: `5`
-  - `violations`: `0`
+  - `violations`: `5`
   - `release_scope`: `{'epic': 21, 'story': 3, 'task': 5, 'task_id': 'E21:S03:T05', 'version_string': 'v0.21.3.5+1'}`
 
 ### Gate 6 — Forensic stamp evidence (UXR-009)
@@ -72,7 +80,7 @@
 - Status: **PASS** (severity: `block`)
 - Summary: Forensic stamp evidence consistent: appended=1, skipped=0, preserved=0 (mode='manifest').
 - Evidence:
-  - `report`: `/Users/rms/Documents/projects/ai-dev-kit-e21/docs/changelog-and-release-notes/changelog-archive/four-surface-reports/rw-step7-four-surface-report-v0.21.3.5plus1-e21s03t05.json`
+  - `report`: `/Users/rms/Documents/projects/ai-dev-kit/docs/changelog-and-release-notes/changelog-archive/four-surface-reports/rw-step7-four-surface-report-v0.21.3.5plus1-e21s03t05.json`
   - `evidence_mode`: `manifest`
   - `stamps_appended_with_evidence`: `1`
   - `stamps_skipped_no_evidence`: `0`
@@ -80,10 +88,12 @@
 
 ### Gate 7 — Four-surface parity (FR-084)
 
-- Status: **PASS** (severity: `block`)
-- Summary: Four-surface parity satisfied: all primary surfaces present, either touched or noted-untouched, with paths existing on disk.
+- Status: **FAIL** (severity: `block`)
+- Summary: Four-surface parity violation; see findings.
+- Findings:
+  - FR-084 violation: declared surface path(s) do not exist on disk: ['task_doc::/Users/rms/Documents/projects/ai-dev-kit-e21/docs/project-management/kanban/epics/epic-21/story-03-translation-and-localisation/T05-add-translation-management-tools.md', 'fbu_doc::/Users/rms/Documents/projects/ai-dev-kit-e21/docs/project-management/kanban/fr-br/FR-006-localization-language-selection-uk-us-english.md', 'kboard::/Users/rms/Documents/projects/ai-dev-kit-e21/docs/project-management/kanban/kboard.md'].
 - Evidence:
-  - `report`: `/Users/rms/Documents/projects/ai-dev-kit-e21/docs/changelog-and-release-notes/changelog-archive/four-surface-reports/rw-step7-four-surface-report-v0.21.3.5plus1-e21s03t05.json`
+  - `report`: `/Users/rms/Documents/projects/ai-dev-kit/docs/changelog-and-release-notes/changelog-archive/four-surface-reports/rw-step7-four-surface-report-v0.21.3.5plus1-e21s03t05.json`
   - `task_doc`: `{'touched': True, 'paths': ['/Users/rms/Documents/projects/ai-dev-kit-e21/docs/project-management/kanban/epics/epic-21/story-03-translation-and-localisation/T05-add-translation-management-tools.md'], 'notes_count': 0}`
   - `fbu_doc`: `{'touched': True, 'paths': ['/Users/rms/Documents/projects/ai-dev-kit-e21/docs/project-management/kanban/fr-br/FR-006-localization-language-selection-uk-us-english.md'], 'notes_count': 0}`
   - `kboard`: `{'touched': True, 'paths': ['/Users/rms/Documents/projects/ai-dev-kit-e21/docs/project-management/kanban/kboard.md'], 'notes_count': 0}`

@@ -1,0 +1,157 @@
+{
+  "schema_version": "1.0.0",
+  "project_root": "/Users/rms/Documents/projects/starborn_legacy",
+  "default_repo": "RMS-Ltd/ai-dev-kit",
+  "awaiting_label": "awaiting-adopter-signoff",
+  "install_attempt": {
+    "number": 2,
+    "adk_vendor": "main @ 97ff2834 (greenfield-install sparse clone)",
+    "orchestrator_exit": 0,
+    "rw_status": "PARTIAL",
+    "kanban_status": "SUCCESS",
+    "sign_off_contract": "ALL READY",
+    "uxr_025_verified": true
+  },
+  "install_attempt_closure": {
+    "status": "closed_failed_intent",
+    "closed_at": "2026-06-09",
+    "outcome": "unsuccessful_for_sbl",
+    "operational_kanban_required": "legacy E/S/T (KB/PM_and_Portfolio) — E{epic}:S{story}:T{task}",
+    "what_was_installed_instead": "ADK v1 packaged fresh template epics 1-8,10,18,22,23 under docs/kanban/epics/ (not Kanban v2/v3 v3.2)",
+    "contradiction": "Diary recorded legacy E/S/T scope but install still ran kanban --mode fresh",
+    "sign_off_all_ready_meaning": "installer contract only — path casing (UXR-017); not v3.2 catalog, not correct SBL kanban adoption",
+    "f9_v1_catalog_not_v3": "Both attempts 1 and 2: migrate_structure canonical_core_epics v1 list; package migration blueprint waves not in installer",
+    "next": "back to drawing board; archive logs zip at project root"
+  },
+  "issues": [
+    {
+      "id": "BR-084",
+      "number": 16,
+      "title": "RW install mode C missing task_doc_pattern",
+      "ready": true,
+      "skipped": false,
+      "skip_reason": "",
+      "checks": [
+        {
+          "type": "rw_config_patterns",
+          "passed": true,
+          "detail": "rw-config.yaml patterns OK"
+        }
+      ]
+    },
+    {
+      "id": "BR-083",
+      "number": 15,
+      "title": "RW install default patterns mismatch fresh kanban layout",
+      "ready": true,
+      "skipped": false,
+      "skip_reason": "",
+      "checks": [
+        {
+          "type": "rw_config_patterns",
+          "passed": true,
+          "detail": "rw-config.yaml patterns OK"
+        },
+        {
+          "type": "command",
+          "passed": true,
+          "detail": "exit 0"
+        }
+      ]
+    },
+    {
+      "id": "UXR-017",
+      "number": 20,
+      "title": "Kanban epic/story path lowercase naming (adopter tree)",
+      "ready": true,
+      "skipped": false,
+      "skip_reason": "",
+      "checks": [
+        {
+          "type": "no_capitalised_kanban_segments",
+          "passed": true,
+          "detail": "no Epic-/Story- path segments"
+        },
+        {
+          "type": "kanban_paths_padding",
+          "passed": true,
+          "detail": "canonical padding"
+        }
+      ]
+    },
+    {
+      "id": "BR-080",
+      "number": 12,
+      "title": "Kanban fresh mode without --force on empty repo",
+      "ready": false,
+      "skipped": true,
+      "skip_reason": "kit_only \u2014 not evaluated on adopter install",
+      "checks": []
+    },
+    {
+      "id": "BR-086",
+      "number": 17,
+      "title": "RW install lowercase fresh kanban patterns and sign-off",
+      "ready": true,
+      "skipped": false,
+      "skip_reason": "",
+      "checks": [
+        {
+          "type": "rw_config_patterns",
+          "passed": true,
+          "detail": "rw-config.yaml patterns OK"
+        },
+        {
+          "type": "no_capitalised_kanban_segments",
+          "passed": true,
+          "detail": "no Epic-/Story- path segments"
+        }
+      ]
+    },
+    {
+      "id": "BR-088",
+      "number": 18,
+      "title": "RW install mode C missing version_file scaffold",
+      "ready": true,
+      "skipped": false,
+      "skip_reason": "",
+      "checks": [
+        {
+          "type": "version_file_exists",
+          "passed": true,
+          "detail": "version_file exists: src/starborn_legacy/version.py"
+        }
+      ]
+    },
+    {
+      "id": "BR-089",
+      "number": 19,
+      "title": "RW install mode C does not create main_changelog (CHANGELOG.md)",
+      "ready": true,
+      "skipped": false,
+      "skip_reason": "",
+      "checks": [
+        {
+          "type": "version_file_exists",
+          "passed": true,
+          "detail": "main_changelog exists: CHANGELOG.md"
+        }
+      ]
+    },
+    {
+      "id": "BR-082",
+      "number": 14,
+      "title": "RW install missing pyyaml preflight",
+      "ready": true,
+      "skipped": false,
+      "skip_reason": "",
+      "checks": [
+        {
+          "type": "command",
+          "passed": true,
+          "detail": "exit 0"
+        }
+      ]
+    }
+  ]
+}

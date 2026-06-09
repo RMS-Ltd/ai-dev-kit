@@ -11,7 +11,7 @@
 
 **A comprehensive toolkit for AI-assisted development workflows**
 
-**Version (SemVer):** `v0.4.12+2` | **Internal:** `v0.6.9.25+2` (E06:S09:T25 / Starborn install diary reaction UXR-025) | **Last Updated:** 2026-06-09
+**Version (SemVer):** `v0.4.11+3` | **Internal:** `v0.6.9.25+3` (E06:S09:T25 / Starborn install attempt 2 + F9 triage) | **Last Updated:** 2026-06-09
 
 [Features](#features) • [Installation](#getting-started) • [Install in Your Project](INSTALL_IN_YOUR_PROJECT.md) • [Documentation](docs/documentation) • **Browsing docs (published site):** [https://rms-ltd.github.io/ai-dev-kit/](https://rms-ltd.github.io/ai-dev-kit/) • [Workflows](#workflows) • [Report Bug](https://github.com/RMS-Ltd/ai-dev-kit/issues) • [Request Feature](https://github.com/RMS-Ltd/ai-dev-kit/issues)
 
@@ -35,7 +35,7 @@
 ```bash
 # 1. Vendor ai-dev-kit (submodule at vendor/ or .ai-dev-kit/)
 git submodule add https://github.com/RMS-Ltd/ai-dev-kit.git vendor/ai-dev-kit
-cd vendor/ai-dev-kit && git checkout tags/v0.4.963 && cd ../..
+cd vendor/ai-dev-kit && git checkout tags/v0.4.1063 && cd ../..
 
 # 2. Sparse-checkout greenfield-install/ only (~10 MiB) — see INSTALL guide
 #    cd vendor/ai-dev-kit && git sparse-checkout set greenfield-install
@@ -44,7 +44,23 @@ python3 vendor/ai-dev-kit/packages/frameworks/workflow-mgt/scripts/install_green
   --project-root . --non-interactive
 ```
 
-**Alternate (no git submodule):** `docker pull ghcr.io/rms-ltd/ai-dev-kit-greenfield:v0.4.963` → extract `/opt/adk/` to `vendor/ai-dev-kit/` — see [INSTALL — GHCR](INSTALL_IN_YOUR_PROJECT.md#lean-vendor-install-greenfield-install--fr-110) and [ADR-021](docs/architecture/standards-and-adrs/ADR-021-greenfield-install-ghcr-delivery-channel.md).
+**Alternate (no git submodule):** `docker pull ghcr.io/rms-ltd/ai-dev-kit-greenfield:v0.4.1063` → extract `/opt/adk/` to `vendor/ai-dev-kit/` — see [INSTALL — GHCR](INSTALL_IN_YOUR_PROJECT.md#lean-vendor-install-greenfield-install--fr-110) and [ADR-021](docs/architecture/standards-and-adrs/ADR-021-greenfield-install-ghcr-delivery-channel.md).
+
+**Download integrity (SHA-256):** Every release tarball ships with a matching `.sha256` sidecar on [GitHub Releases](https://github.com/RMS-Ltd/ai-dev-kit/releases). Verify before extract:
+
+```bash
+gh release download v0.4.1063 --repo RMS-Ltd/ai-dev-kit \
+  -p 'greenfield-install-v0.4.1063.tar.gz' \
+  -p 'greenfield-install-v0.4.1063.tar.gz.sha256' -D /tmp/adk-dl
+shasum -a 256 -c /tmp/adk-dl/greenfield-install-v0.4.1063.tar.gz.sha256
+# Expected: greenfield-install-v0.4.1063.tar.gz: OK
+```
+
+| Asset (pin `v0.4.1063`) | SHA-256 |
+| --- | --- |
+| `greenfield-install-v0.4.1063.tar.gz` | `d7519a0642b572eece67c20b05ace026f742b91caf9a07f9901fe39a17423131` |
+
+Framework package tarballs (e.g. `kanban-v2.0.0.tar.gz`) follow the same pattern — see [Package installation guide](packages/frameworks/workflow-mgt/docs/PACKAGE_INSTALLATION_GUIDE.md). Pin a newer [release tag](https://github.com/RMS-Ltd/ai-dev-kit/releases) when upgrading; always download and verify the matching `.sha256` file.
 
 **Full copy alternative** (copies frameworks into project root): see [INSTALL_IN_YOUR_PROJECT.md — Method 2](INSTALL_IN_YOUR_PROJECT.md#method-2-git-submodule-available-now).
 
@@ -127,7 +143,8 @@ These are the main **user-typed** triggers documented in `.cursorrules`. **Human
 | **RW** | Release Workflow | Version bump, changelogs, kanban markers, commit, tag (local-default; `--push` opt-in) | **`RW E5:S01:T64`** (examples: `RW E7S01T10`, `RW E7:S01:T10`). The **task id must appear in the same message** as `RW`, `RW -d`, or `RW -k`. See [UXR-024](docs/kanban/fr-br/UXR-024-rw-local-release-default-no-push-batch-operator-push.md), [FR-060](docs/kanban/fr-br/FR-060-rw-task-argument-requirement.md) and [Release Workflow agent execution](packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md). |
 | **UKW** | Update Kanban Workflow | Bookkeeping, priorities, board sync | `UKW` (full run), or `UKW -u`, `UKW -p`, `UKW -a <target>`. See [UKW agent execution](packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/update-kanban-workflow-agent-execution.md). |
 | **PVW** | Package Version Workflow | Package-level version analysis/bumps | `PVW` (often RW Step 2.5). See [PVW agent execution](packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/package-version-workflow-agent-execution.md). |
-| **IPW** / **ICW** | Implementation Planning / Cycle | Spec → tests → implementation plan (`IPP` or ICW trio) | `IPW E02:S16:T15` or `/ipw` — **plan mode** required; then implement → **RW**. See [workflow initiation cheatsheet](docs/guides/workflow-initiation-cheatsheet.md) and [Implementation Cycle SOP](packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/implementation-cycle-sop.md). |
+| **IPW** / **ICW** | Implementation Planning / Cycle | Spec → tests → implementation plan (`IPP` or ICW trio) | `IPW E02:S16:T15` or `/ipw` — **plan mode** required. See [workflow initiation cheatsheet](docs/guides/workflow-initiation-cheatsheet.md) and [Implementation Cycle SOP](packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/implementation-cycle-sop.md). |
+| **IDW** | Implementation Delivery Workflow | Execute linked IPP/ICW (test-first implement) | `IDW E02:S16:T15` or `/idw` — **not** plan mode; optional `--rw` to chain release. See [IDW agent execution](packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/implementation-delivery-workflow-agent-execution.md). |
 
 **CMW** (Changelog Management Workflow) usually runs as **RW Step 9.5** when changelog size exceeds policy, or via the maintainer skill under [`.cursor/skills/cmw-maintain/`](.cursor/skills/cmw-maintain/SKILL.md). Package entry: [changelog-management-workflow README](packages/frameworks/workflow-mgt/workflows/changelog-management-workflow/README.md).
 

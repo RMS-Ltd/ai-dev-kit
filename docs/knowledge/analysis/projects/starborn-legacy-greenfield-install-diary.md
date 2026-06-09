@@ -159,8 +159,8 @@ Raw log: `logs/ai-dev-kit/install/rw-install-output.txt`
 |------|----------------|
 | Board | `docs/kanban/kboard.md` |
 | Structure | `kanban-structure.md`, `kanban-board-guide.md` |
-| Template epics | 1, 2, 3, 4, 5, 6, 7, 8, 10, 18, 22, 23 |
-| Layout | `epics/epic-{n}/epic-{n}.md` (lowercase, UXR-017) |
+| Template epics | 1, 2, 3, 4, 5, 6, 7, 8, 10, 18, 22, 23 (**v1 packaged** catalog — not Kanban v2/v3) |
+| Layout | `epics/epic-{n}/epic-{n}.md` (lowercase, UXR-017 — path casing only) |
 
 ### Sign-off after Kanban: **ALL READY** ✅
 
@@ -223,9 +223,10 @@ vendor/ai-dev-kit/    # gitignored (tarball extract)
 ## Lessons / upstream notes
 
 1. **Disk:** Sparse submodule needs headroom; tarball is safer on constrained disks.
-2. **Orchestrator:** Needs `--config` forwarding or vendor-aware script paths.
-3. **`packages` symlink:** Required for orchestrator/RW until frameworks copied to project root.
+2. **Orchestrator:** Needs `--config` forwarding or vendor-aware script paths (fixed attempt 2 — see [attempt-02 diary](../../../../adk-install-into-sbl/attempt-02/greenfield-install-diary.md)).
+3. **`packages` symlink:** Required for orchestrator/RW until frameworks copied to project root (fixed attempt 2 via vendor-root resolution).
 4. **Dual versioning:** `rw-config.yaml` has `versioning_mode: dual`, `semver_mapping_strategy: task_touch` — `semver-registry.yaml` created on first RW with finalize step.
+5. **F9 — v1 catalog, not v2/v3:** `--mode fresh` installs v1 packaged epics via `migrate_structure._install_canonical_epics()` (attempts 1 and 2 identical). Sign-off ALL READY does not mean [Kanban v3.2](../kanban-v2/08-executive-summary.md). See [triage matrix F9](starborn-legacy-install-triage-matrix.md).
 
 ---
 
@@ -235,7 +236,7 @@ vendor/ai-dev-kit/    # gitignored (tarball extract)
 
 ### Adopter decision: retain legacy Kanban E/S/T framework
 
-Starborn Legacy **does not adopt** the ADK fresh-install Kanban tree (`docs/kanban/` template epics 1–8, 10, 18, 22, 23) as the operational PM layer.
+Starborn Legacy **does not adopt** the ADK fresh-install Kanban tree (`docs/kanban/` **v1** template epics 1–8, 10, 18, 22, 23) as the operational PM layer. That tree is not Kanban v2/v3 (v3.2 Scenario A) and is not SBL legacy E/S/T.
 
 | Topic | Decision |
 |-------|----------|

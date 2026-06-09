@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Completed Tasks
 
-**Last Updated:** 2026-06-09 (RW E06:S09:T25 — Starborn install diary reaction)
-**Version:** v0.6.9.25+2
+**Last Updated:** 2026-06-09 (RW E06:S09:T25 — attempt 2 + F9 triage)
+**Version:** v0.6.9.25+3
 
 > **For MoSCOW prioritized tasks, see:** [`kboard.md`](kboard.md)  
 > **For completed FR/BR/UXR intake items, see:** [`intake-completed.md`](intake-completed.md)
@@ -19,6 +19,11 @@ housekeeping_policy: keep
 ---
 
 ## 20 Most Recently Completed Tasks
+
+#### **RW (2026-06-09)** — E06:S09:T25 @ **v0.6.9.25+3** (Starborn attempt 2 closure — F9 v1 catalog triage)
+
+- **[E06:S09:T25](epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T25-starborn-legacy-greenfield-install-diary-triage-uxr025.md)** — Attempt 2 forensic artifacts; triage **F9** (v1 packaged kanban vs v3.2); install SHA-256 verify docs.
+  **Completed:** `2026-06-09T10:40:32Z` | **Version:** `v0.6.9.25+3` | **Agent:** `RW E06:S09:T25 --art` | [Attempt 02](../../../adk-install-into-sbl/attempt-02/greenfield-install-diary.md) | [Triage F9](../../knowledge/analysis/projects/starborn-legacy-install-triage-matrix.md)
 
 #### **RW (2026-06-09)** — E06:S09:T25 @ **v0.6.9.25+2** (Starborn Legacy install diary — UXR-025)
 

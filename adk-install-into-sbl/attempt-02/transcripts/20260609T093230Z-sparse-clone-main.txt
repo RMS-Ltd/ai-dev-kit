@@ -1,0 +1,22 @@
+=== 20260609T093230Z UTC | sparse-clone-main ===
+cwd: /Users/rms/Documents/projects/starborn_legacy
+cmd: bash -c 
+rm -rf /tmp/adk-main-sparse
+git clone --depth 1 --filter=blob:none --sparse https://github.com/RMS-Ltd/ai-dev-kit.git /tmp/adk-main-sparse
+cd /tmp/adk-main-sparse
+git sparse-checkout set greenfield-install
+git rev-parse HEAD
+rg "resolve_frameworks_base|--config" greenfield-install/packages/frameworks/workflow-mgt/scripts/install_greenfield_path.py | head -5
+rm -rf vendor/ai-dev-kit
+mkdir -p vendor/ai-dev-kit
+cp -R greenfield-install/. vendor/ai-dev-kit/
+du -sh vendor/ai-dev-kit
+
+---
+Cloning into '/tmp/adk-main-sparse'...
+97ff2834d793a8b05f25fa91b87dcc9eb7856cc6
+def resolve_frameworks_base(project_root: Path, vendor_root: Path) -> Path:
+        cmd.extend(["--config", str(config)])
+        "--config",
+    frameworks_base = resolve_frameworks_base(project_root, vendor_root)
+ 12M	vendor/ai-dev-kit

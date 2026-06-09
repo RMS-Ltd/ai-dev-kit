@@ -134,17 +134,23 @@ python3 vendor/ai-dev-kit/packages/frameworks/workflow-mgt/scripts/verify_vendor
 
 **Disk-constrained hosts:** prefer the **release tarball** (item 2) over sparse clone when free space is tight — tarball extract is ~1–2 MiB compressed / ~10 MiB expanded vs full git pack history (UXR-025 F2).
 
-1. **Release tarball (recommended when disk is tight or git is blocked):** download `greenfield-install-v{semver}.tar.gz` + `.sha256` from a [release tag](https://github.com/RMS-Ltd/ai-dev-kit/releases) (FR-110-F5 / [ADR-021](docs/architecture/standards-and-adrs/ADR-021-greenfield-install-ghcr-delivery-channel.md)):
+1. **Release tarball (recommended when disk is tight or git is blocked):** download `greenfield-install-v{semver}.tar.gz` + matching `.sha256` from a [release tag](https://github.com/RMS-Ltd/ai-dev-kit/releases) (FR-110-F5 / [ADR-021](docs/architecture/standards-and-adrs/ADR-021-greenfield-install-ghcr-delivery-channel.md)). **Verify integrity before extract** ([FR-062](docs/kanban/fr-br/FR-062-github-release-installation-experience.md)):
 
    ```bash
    gh release download v0.4.1063 --repo RMS-Ltd/ai-dev-kit \
-     -p 'greenfield-install-v0.4.1063.tar.gz' -D /tmp/adk-dl
+     -p 'greenfield-install-v0.4.1063.tar.gz' \
+     -p 'greenfield-install-v0.4.1063.tar.gz.sha256' -D /tmp/adk-dl
+   shasum -a 256 -c /tmp/adk-dl/greenfield-install-v0.4.1063.tar.gz.sha256
+   # Expected: greenfield-install-v0.4.1063.tar.gz: OK
+   # Linux: sha256sum -c /tmp/adk-dl/greenfield-install-v0.4.1063.tar.gz.sha256
    mkdir -p vendor/ai-dev-kit
    tar -xzf /tmp/adk-dl/greenfield-install-v0.4.1063.tar.gz \
      -C vendor/ai-dev-kit --strip-components=1
    python3 vendor/ai-dev-kit/packages/frameworks/workflow-mgt/scripts/verify_vendor_tree.py \
      --vendor-root vendor/ai-dev-kit
    ```
+
+   Pin `v0.4.1063` tarball SHA-256: `d7519a0642b572eece67c20b05ace026f742b91caf9a07f9901fe39a17423131` (cross-check against the `.sha256` file on the release).
 
 2. **Sparse submodule:** submodule `RMS-Ltd/ai-dev-kit` and cone only `greenfield-install/` (needs adequate disk for git objects):
 
@@ -160,19 +166,19 @@ python3 vendor/ai-dev-kit/packages/frameworks/workflow-mgt/scripts/verify_vendor
 4. **GitHub Container Registry (alternate):** when submodules are blocked, pull the lean tree from `ghcr.io` and copy into `vendor/ai-dev-kit/` (same bytes as `greenfield-install/`; see [Packages](https://github.com/RMS-Ltd/ai-dev-kit/packages)):
 
    ```bash
-   # Replace v0.4.963 with the external SemVer core from the release you are pinning.
-   docker pull ghcr.io/rms-ltd/ai-dev-kit-greenfield:v0.4.963
+   # Replace v0.4.1063 with the external SemVer core from the release you are pinning.
+   docker pull ghcr.io/rms-ltd/ai-dev-kit-greenfield:v0.4.1063
    mkdir -p vendor/ai-dev-kit
-   cid=$(docker create ghcr.io/rms-ltd/ai-dev-kit-greenfield:v0.4.963)
+   cid=$(docker create ghcr.io/rms-ltd/ai-dev-kit-greenfield:v0.4.1063)
    docker cp "$cid:/opt/adk/." vendor/ai-dev-kit/
    docker rm "$cid"
    ```
 
-   Optional digest pin: `docker pull ghcr.io/rms-ltd/ai-dev-kit-greenfield@sha256:…`
+   Optional digest pin (strongest integrity): `docker pull ghcr.io/rms-ltd/ai-dev-kit-greenfield@sha256:<digest>` — inspect the digest on the [Packages](https://github.com/RMS-Ltd/ai-dev-kit/pkgs/container/ai-dev-kit-greenfield) page for your tag.
 
 5. **Legacy sparse path:** `git sparse-checkout set packages/frameworks` still works on older tags; prefer `greenfield-install/` on current tags.
 
-6. **Update upstream:** `cd vendor/ai-dev-kit && git fetch --tags && git checkout tags/v0.4.963` (use [latest release](https://github.com/RMS-Ltd/ai-dev-kit/releases)); for registry pins, `docker pull ghcr.io/rms-ltd/ai-dev-kit-greenfield:v0.4.963` (or newer SemVer core).
+6. **Update upstream:** `cd vendor/ai-dev-kit && git fetch --tags && git checkout tags/v0.4.1063` (use [latest release](https://github.com/RMS-Ltd/ai-dev-kit/releases)); for registry pins, `docker pull ghcr.io/rms-ltd/ai-dev-kit-greenfield:v0.4.1063` (or newer SemVer core). Re-download and verify the matching `.sha256` when using tarballs.
 
 **Disk budget:** ~10–11 MiB for `greenfield-install/` (see `FOOTPRINT.md` in-tree) + git pack history (sparse checkout reduces working tree).
 
@@ -599,7 +605,7 @@ git submodule add https://github.com/RMS-Ltd/ai-dev-kit.git .ai-dev-kit
 # Step 2: Checkout specific version (SemVer tag from GitHub Releases)
 cd .ai-dev-kit
 git fetch --tags
-git checkout tags/v0.4.963   # example; use latest from https://github.com/RMS-Ltd/ai-dev-kit/releases
+git checkout tags/v0.4.1063   # example; use latest from https://github.com/RMS-Ltd/ai-dev-kit/releases
 cd ..
 
 # Step 2b (BR-087): If packages/frameworks still has spaces in directory names,

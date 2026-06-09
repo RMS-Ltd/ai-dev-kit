@@ -59,8 +59,8 @@ Package visibility defaults to **public** so anonymous `docker pull` works for o
 ### 6. Adopter extract flow
 
 ```bash
-docker pull ghcr.io/rms-ltd/ai-dev-kit-greenfield:v0.4.963
-cid=$(docker create ghcr.io/rms-ltd/ai-dev-kit-greenfield:v0.4.963)
+docker pull ghcr.io/rms-ltd/ai-dev-kit-greenfield:v0.4.1063
+cid=$(docker create ghcr.io/rms-ltd/ai-dev-kit-greenfield:v0.4.1063)
 docker cp "$cid:/opt/adk/." vendor/ai-dev-kit/
 docker rm "$cid"
 ```

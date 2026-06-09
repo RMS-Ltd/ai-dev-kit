@@ -1,27 +1,24 @@
 {
   "contract": "FR-092 Wave 7 release-readiness gate (Gates 1-7: governance / predecessors / parity / corpus / stage / stamps / four-surface)",
-  "four_surface_report_path": "/Users/rms/Documents/projects/ai-dev-kit/docs/changelog-and-release-notes/changelog-archive/four-surface-reports/rw-step7-four-surface-report-v0.21.3.5plus1-e21s03t05.json",
+  "four_surface_report_path": "/Users/rms/Documents/projects/ai-dev-kit/docs/changelog-and-release-notes/changelog-archive/four-surface-reports/rw-step7-four-surface-report-v0-6-9-25plus3-e6s9t25.json",
   "invocation_context": "rw_step_9_release_readiness",
-  "overall_passed": false,
+  "overall_passed": true,
   "project_root": "/Users/rms/Documents/projects/ai-dev-kit",
   "release_scope": {
-    "epic": 21,
-    "story": 3,
-    "task": 5,
-    "task_id": "E21:S03:T05",
-    "version_string": "v0.21.3.5+1"
+    "epic": 6,
+    "story": 9,
+    "task": 25,
+    "task_id": "E6:S9:T25",
+    "version_string": "v0.6.9.25+3"
   },
   "summary": {
-    "blocking_failures": [
-      "Gate 5: Stage-set completeness (BR-070)",
-      "Gate 7: Four-surface parity (FR-084)"
-    ],
-    "gates_failed": 2,
-    "gates_passed": 9,
+    "blocking_failures": [],
+    "gates_failed": 0,
+    "gates_passed": 11,
     "gates_total": 11,
     "gates_waived": 0
   },
-  "timestamp_utc": "2026-06-09 10:46 UTC",
+  "timestamp_utc": "2026-06-09 10:48 UTC",
   "verdicts": [
     {
       "evidence": {
@@ -103,38 +100,32 @@
     },
     {
       "evidence": {
-        "four_surface_report": "/Users/rms/Documents/projects/ai-dev-kit/docs/changelog-and-release-notes/changelog-archive/four-surface-reports/rw-step7-four-surface-report-v0.21.3.5plus1-e21s03t05.json",
+        "four_surface_report": "/Users/rms/Documents/projects/ai-dev-kit/docs/changelog-and-release-notes/changelog-archive/four-surface-reports/rw-step7-four-surface-report-v0-6-9-25plus3-e6s9t25.json",
         "paths_checked": 5,
         "release_scope": {
-          "epic": 21,
-          "story": 3,
-          "task": 5,
-          "task_id": "E21:S03:T05",
-          "version_string": "v0.21.3.5+1"
+          "epic": 6,
+          "story": 9,
+          "task": 25,
+          "task_id": "E6:S9:T25",
+          "version_string": "v0.6.9.25+3"
         },
-        "violations": 5
+        "violations": 0
       },
-      "findings": [
-        "`task_doc` :: `/Users/rms/Documents/projects/ai-dev-kit-e21/docs/project-management/kanban/epics/epic-21/story-03-translation-and-localisation/T05-add-translation-management-tools.md` :: missing \u2014 Step-7 surface path does not exist on disk; staging cannot reach it. Likely Step 7 declared a surface that was never written, or the path was deleted before commit. Investigate before proceeding.",
-        "`fbu_doc` :: `/Users/rms/Documents/projects/ai-dev-kit-e21/docs/project-management/kanban/fr-br/FR-006-localization-language-selection-uk-us-english.md` :: missing \u2014 Step-7 surface path does not exist on disk; staging cannot reach it. Likely Step 7 declared a surface that was never written, or the path was deleted before commit. Investigate before proceeding.",
-        "`kboard` :: `/Users/rms/Documents/projects/ai-dev-kit-e21/docs/project-management/kanban/kboard.md` :: missing \u2014 Step-7 surface path does not exist on disk; staging cannot reach it. Likely Step 7 declared a surface that was never written, or the path was deleted before commit. Investigate before proceeding.",
-        "`story_doc` :: `/Users/rms/Documents/projects/ai-dev-kit-e21/docs/project-management/kanban/epics/epic-21/story-03-translation-and-localisation.md` :: missing \u2014 Step-7 surface path does not exist on disk; staging cannot reach it. Likely Step 7 declared a surface that was never written, or the path was deleted before commit. Investigate before proceeding.",
-        "`epic_doc` :: `/Users/rms/Documents/projects/ai-dev-kit-e21/docs/project-management/kanban/epics/epic-21/Epic-21.md` :: missing \u2014 Step-7 surface path does not exist on disk; staging cannot reach it. Likely Step 7 declared a surface that was never written, or the path was deleted before commit. Investigate before proceeding."
-      ],
+      "findings": [],
       "gate_id": 5,
-      "is_blocking_failure": true,
+      "is_blocking_failure": false,
       "name": "Stage-set completeness (BR-070)",
-      "passed": false,
+      "passed": true,
       "severity": "block",
-      "summary": "BR-070 violation: 5 Step-7 path(s) are modified-unstaged, untracked, or missing.",
+      "summary": "BR-070 satisfied: all 5 Step-7 path(s) are staged or unchanged.",
       "waive_reason": null,
       "waived": false
     },
     {
       "evidence": {
-        "evidence_mode": "manifest",
-        "report": "/Users/rms/Documents/projects/ai-dev-kit/docs/changelog-and-release-notes/changelog-archive/four-surface-reports/rw-step7-four-surface-report-v0.21.3.5plus1-e21s03t05.json",
-        "stamps_appended_with_evidence": 1,
+        "evidence_mode": "work_authoritative",
+        "report": "/Users/rms/Documents/projects/ai-dev-kit/docs/changelog-and-release-notes/changelog-archive/four-surface-reports/rw-step7-four-surface-report-v0-6-9-25plus3-e6s9t25.json",
+        "stamps_appended_with_evidence": 0,
         "stamps_preserved_existing": 0,
         "stamps_skipped_no_evidence": 0
       },
@@ -144,51 +135,47 @@
       "name": "Forensic stamp evidence (UXR-009)",
       "passed": true,
       "severity": "block",
-      "summary": "Forensic stamp evidence consistent: appended=1, skipped=0, preserved=0 (mode='manifest').",
+      "summary": "Forensic stamp evidence consistent: appended=0, skipped=0, preserved=0 (mode='work_authoritative').",
       "waive_reason": null,
       "waived": false
     },
     {
       "evidence": {
         "fbu_doc": {
-          "notes_count": 0,
-          "paths": [
-            "/Users/rms/Documents/projects/ai-dev-kit-e21/docs/project-management/kanban/fr-br/FR-006-localization-language-selection-uk-us-english.md"
-          ],
-          "touched": true
+          "notes_count": 1,
+          "paths": [],
+          "touched": false
         },
         "kboard": {
           "notes_count": 0,
           "paths": [
-            "/Users/rms/Documents/projects/ai-dev-kit-e21/docs/project-management/kanban/kboard.md"
+            "/Users/rms/Documents/projects/ai-dev-kit/docs/kanban/kboard.md"
           ],
           "touched": true
         },
         "release_scope": {
-          "epic": 21,
-          "story": 3,
-          "task": 5,
-          "task_id": "E21:S03:T05",
-          "version_string": "v0.21.3.5+1"
+          "epic": 6,
+          "story": 9,
+          "task": 25,
+          "task_id": "E6:S9:T25",
+          "version_string": "v0.6.9.25+3"
         },
-        "report": "/Users/rms/Documents/projects/ai-dev-kit/docs/changelog-and-release-notes/changelog-archive/four-surface-reports/rw-step7-four-surface-report-v0.21.3.5plus1-e21s03t05.json",
+        "report": "/Users/rms/Documents/projects/ai-dev-kit/docs/changelog-and-release-notes/changelog-archive/four-surface-reports/rw-step7-four-surface-report-v0-6-9-25plus3-e6s9t25.json",
         "task_doc": {
           "notes_count": 0,
           "paths": [
-            "/Users/rms/Documents/projects/ai-dev-kit-e21/docs/project-management/kanban/epics/epic-21/story-03-translation-and-localisation/T05-add-translation-management-tools.md"
+            "/Users/rms/Documents/projects/ai-dev-kit/docs/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T25-starborn-legacy-greenfield-install-diary-triage-uxr025.md"
           ],
           "touched": true
         }
       },
-      "findings": [
-        "FR-084 violation: declared surface path(s) do not exist on disk: ['task_doc::/Users/rms/Documents/projects/ai-dev-kit-e21/docs/project-management/kanban/epics/epic-21/story-03-translation-and-localisation/T05-add-translation-management-tools.md', 'fbu_doc::/Users/rms/Documents/projects/ai-dev-kit-e21/docs/project-management/kanban/fr-br/FR-006-localization-language-selection-uk-us-english.md', 'kboard::/Users/rms/Documents/projects/ai-dev-kit-e21/docs/project-management/kanban/kboard.md']."
-      ],
+      "findings": [],
       "gate_id": 7,
-      "is_blocking_failure": true,
+      "is_blocking_failure": false,
       "name": "Four-surface parity (FR-084)",
-      "passed": false,
+      "passed": true,
       "severity": "block",
-      "summary": "Four-surface parity violation; see findings.",
+      "summary": "Four-surface parity satisfied: all primary surfaces present, either touched or noted-untouched, with paths existing on disk.",
       "waive_reason": null,
       "waived": false
     },

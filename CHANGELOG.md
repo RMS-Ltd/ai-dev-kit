@@ -11,10 +11,10 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
-## [0.6.9.25+2] - 09-06-26
+## [0.6.9.25+3] - 09-06-26
 
-E06:S09:T25 — **Change implemented:** Starborn Legacy install diary reaction (UXR-025) — orchestrator F4/F5 fix, triage matrix, install docs. SemVer **v0.4.12+2**.
+E06:S09:T25 — **Change implemented:** Starborn install attempt 2 closure — triage F9 (v1 vs v3 kanban catalog), attempt-02 artifacts, install SHA-256 docs. SemVer **v0.4.11+3**.
 
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.6.9.25+2.md)
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.6.9.25+3.md)
 
 ---

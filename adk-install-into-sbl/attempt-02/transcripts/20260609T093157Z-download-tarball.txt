@@ -1,0 +1,4 @@
+=== 20260609T093157Z UTC | download-tarball ===
+cwd: /Users/rms/Documents/projects/starborn_legacy
+cmd: gh release download v0.4.1064 --repo RMS-Ltd/ai-dev-kit -p greenfield-install-v0.4.1064.tar.gz* -D /tmp/adk-dl-1064
+---

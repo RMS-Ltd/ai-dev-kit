@@ -12,9 +12,9 @@ housekeeping_policy: keep
 **Status:** COMPLETE  
 **Priority:** HIGH  
 **Created:** 2026-06-09  
-**Last updated:** 2026-06-09 (v0.6.9.25+2 — RW E06:S09:T25 --art)  
-**Version:** v0.6.9.25+2  
-**Version Anchor:** v0.6.9.25+2  
+**Last updated:** 2026-06-09 (v0.6.9.25+3 — RW E06:S09:T25 --art; attempt 2 + F9)  
+**Version:** v0.6.9.25+3  
+**Version Anchor:** v0.6.9.25+3  
 **Code:** E06S09T25
 
 **Upstream:** [UXR-025](../../../fr-br/UXR-025-starborn-legacy-greenfield-install-diary.md)  
@@ -65,6 +65,20 @@ Triage the **Starborn Legacy** greenfield install diary (`v0.4.1063` tarball) an
 1. IPW (if installer code changes required for F4/F5).
 2. Doc-only wave if triage concludes docs sufficient for F1/F2/F6.
 3. RW on `E06:S09:T25` when deliverables ship.
+
+---
+
+## Post-closure addendum — attempt 2 + F9 (2026-06-09)
+
+**Not in original T25 scope** (task COMPLETE @ v0.6.9.25+2). Recorded for attempt 3 / future install work.
+
+| Item | Detail |
+|------|--------|
+| Attempt 2 diary | [adk-install-into-sbl/attempt-02](../../../../../adk-install-into-sbl/attempt-02/greenfield-install-diary.md) |
+| UXR-025 F4/F5 | Verified on `main` @ `97ff2834`; attempt 2 orchestrator exit 0 |
+| Adopter intent | **Failed** — Kanban `--mode fresh` still ran despite legacy E/S/T scope |
+| **F9** | [Triage matrix F9](../../../../knowledge/analysis/projects/starborn-legacy-install-triage-matrix.md) — attempts 1 **and** 2 install **v1** packaged epic catalog (`migrate_structure._install_canonical_epics`), not [Kanban v3.2](../../../../knowledge/analysis/kanban-v2/08-executive-summary.md); sign-off ALL READY ≠ catalog generation |
+| Suggested follow-on | INSTALL doc warning; defer package rewrite per [migration blueprint](../../../../knowledge/analysis/kanban-v2/07-package-migration-blueprint.md); orchestrator `--kanban-mode skip` or RW-only greenfield profile |
 
 ---
 

@@ -1,0 +1,23 @@
+=== 20260609T093323Z UTC | validate-changelog ===
+cwd: /Users/rms/Documents/projects/starborn_legacy
+cmd: .venv/bin/python vendor/ai-dev-kit/packages/frameworks/workflow-mgt/scripts/validation/validate_changelog_format.py
+---
+🔍 Validating changelog format...
+
+❌ VALIDATION FAILED:
+  CHANGELOG contains version entries but format is invalid
+
+🚨 CHANGELOG FORMAT REQUIREMENTS:
+  - Old format: ## [RC.EPIC.STORY.PATCH] - YYYY-MM-DD
+  - New format: ## [RC.EPIC.STORY.TASK+BUILD] - DD-MM-YY
+  - Examples:
+    - Old: ## [0.9.21.17] - 2025-12-01
+    - New: ## [0.15.1.4+2] - 02-12-25
+
+🚨 KEEP A CHANGELOG FORMAT REQUIREMENT (Newest First):
+  - Versions MUST be ordered newest first (Keep a Changelog standard)
+  - Higher version numbers appear before lower version numbers
+  - Example: 0.2.11.10+1 must appear before 0.2.5.15+1 (newer before older)
+  - This is the industry standard format
+
+🚨 DO NOT COMMIT - Fix changelog format/ordering first!

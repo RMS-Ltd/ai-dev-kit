@@ -1,0 +1,15 @@
+=== 20260609T093323Z UTC | validate-branch ===
+cwd: /Users/rms/Documents/projects/starborn_legacy
+cmd: .venv/bin/python vendor/ai-dev-kit/packages/frameworks/workflow-mgt/scripts/validation/validate_branch_context.py --strict
+---
+🔍 Validating branch context...
+
+Versioning mode: dual
+Current branch: ai-dev-kit
+Current version: 0.1.1.1+1
+
+⚠️  WARNINGS:
+  - Branch 'ai-dev-kit' not in known mapping - cannot validate version
+  - ⚠️  Task document not found for version 0.1.1.1+1 (E1:S1:T1). This may indicate the Task document hasn't been created yet.
+
+✅ Branch context validation passed!
