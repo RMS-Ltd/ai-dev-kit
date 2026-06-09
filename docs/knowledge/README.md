@@ -6,7 +6,9 @@ housekeeping_policy: keep
 
 # Knowledge Base (maintainer)
 
-Maintainer KB for **ai-dev-kit**. **Git is the authoritative source** for all content under `docs/knowledge/`, `docs/maintenance/`, `docs/analysis/`, and related maintainer trees ([FR-121](../kanban/fr-br/FR-121-git-internal-maintainer-kb-oss-documentation-surfaces.md) wave 1 @ E05:S08:T05).
+Maintainer KB for **ai-dev-kit**. **Git is the authoritative source** for all content under `docs/knowledge/`, `docs/maintenance/`, `docs/analysis/`, and related maintainer trees.
+
+**Policy SoT:** [ADR-026 — Git-internal maintainer KB](../architecture/standards-and-adrs/ADR-026-git-internal-maintainer-kb-fr121.md) ([FR-121](../kanban/fr-br/FR-121-git-internal-maintainer-kb-oss-documentation-surfaces.md); wave 1 restore @ E05:S08:T05; bootstrap @ E05:S08:T06).
 
 ## Canonical manifests
 
@@ -17,7 +19,7 @@ Maintainer KB for **ai-dev-kit**. **Git is the authoritative source** for all co
 
 ## Git authoring (default)
 
-Create and edit maintainer documentation at **repo paths** under `docs/knowledge/`, `docs/maintenance/`, and `docs/analysis/`. Agent bootstrap rewire to git-first authoring is **E05:S08:T06** (ADR-026).
+Create and edit maintainer documentation at **repo paths** under `docs/knowledge/`, `docs/maintenance/`, and `docs/analysis/` per **P-GIT-MAINTAINER** ([ADR-026](../architecture/standards-and-adrs/ADR-026-git-internal-maintainer-kb-fr121.md)).
 
 Docusaurus publishes only adopter-public allowlisted paths; maintainer trees remain excluded from portal CI ([FR-114](../kanban/fr-br/FR-114-split-documentation-surfaces-docusaurus-public-notion-maintainer-kb.md)).
 

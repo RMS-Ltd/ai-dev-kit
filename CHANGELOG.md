@@ -11,6 +11,22 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.5.8.6+1] - 09-06-26
+
+E05:S08:T06 — **Change implemented:** FR-121 wave 2 — ADR-026 + git-maintainer bootstrap (`P-GIT-MAINTAINER`). SemVer **v0.4.11+1**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.5.8.6+1.md)
+
+---
+
+## [0.2.1.30+5] - 09-06-26
+
+E02:S01:T30 — **Change implemented:** FR-122 Wave 4 — `rw-contract.yaml` machine manifest. SemVer **v0.4.1102+5**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.1.30+5.md)
+
+---
+
 ## [0.2.1.30+4] - 09-06-26
 
 E02:S01:T30 — **Change implemented:** FR-122 Wave 3 — Step 11 tag authority gate (`create_rw_tags` only). SemVer **v0.4.1099+4**.

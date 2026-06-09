@@ -9,11 +9,11 @@ housekeeping_policy: keep
 # Epic 5, Story 8, Task 6: ADR-026 + git-maintainer authoring bootstrap (**FR-121**)
 
 **Task ID:** E05:S08:T06  
-**Status:** 📋 TODO  
+**Status:** ✅ COMPLETE (v0.5.8.6+1)  
 **Priority:** HIGH  
 **Created:** 2026-06-09  
-**Last updated:** 2026-06-09 (FR-121 intake)  
-**Version:** — (pending RW -k)  
+**Last updated:** 2026-06-09 (v0.5.8.6+1 — ADR-026 + bootstrap rewire)  
+**Version:** v0.5.8.6+1  
 **Code:** E05S08T06
 
 Publication Status: NOT_APPLICABLE
@@ -34,6 +34,7 @@ Wave 2 of FR-121: publish **ADR-026** (two publish surfaces, git maintainer SoT)
 
 ## Input
 
+- [IPP-E05S08T06 — ADR-026 + git-maintainer authoring bootstrap (FR-121 wave 2)](../../../../implementation-cycles/IPP-E05S08T06-adr-026-git-maintainer-authoring-bootstrap-fr121.md)
 - [FR-121](../../../fr-br/FR-121-git-internal-maintainer-kb-oss-documentation-surfaces.md)
 - [E05:S08:T05](T05-reverse-notion-migration-git-internal-maintainer-kb-fr121.md) (restored corpus — preferred before bootstrap finalization)
 - [`AGENTS.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/AGENTS.md)
@@ -55,10 +56,10 @@ Wave 2 of FR-121: publish **ADR-026** (two publish surfaces, git maintainer SoT)
 
 ## Acceptance Criteria
 
-- [ ] ADR-026 published under `docs/architecture/standards-and-adrs/`.
-- [ ] No agent cold-start instruction to open Notion for maintainer KB by default.
-- [ ] Manifest `taskRouting` / `canon[]` includes ADR-026.
-- [ ] FR-114 and ADR-024 cross-link FR-121 / ADR-026 supersession scope.
+- [x] ADR-026 published under `docs/architecture/standards-and-adrs/`.
+- [x] No agent cold-start instruction to open Notion for maintainer KB by default.
+- [x] Manifest `taskRouting` / `canon[]` includes ADR-026.
+- [x] FR-114 and ADR-024 cross-link FR-121 / ADR-026 supersession scope.
 
 ---
 
@@ -70,8 +71,15 @@ Wave 2 of FR-121: publish **ADR-026** (two publish surfaces, git maintainer SoT)
 
 ---
 
+## Version Anchor
+
+**Forensic marker:** ✅ COMPLETE (**v0.5.8.6+1** — FR-121 wave 2: ADR-026 + git-maintainer bootstrap)
+
+---
+
 ## References
 
+- [IPP-E05S08T06 — ADR-026 + git-maintainer authoring bootstrap (FR-121 wave 2)](../../../../implementation-cycles/IPP-E05S08T06-adr-026-git-maintainer-authoring-bootstrap-fr121.md)
 - [FR-121](../../../fr-br/FR-121-git-internal-maintainer-kb-oss-documentation-surfaces.md)
 - [FR-103](../../../../fr-br/FR-103-agent-bootstrap-and-task-routing.md)
 - [E05:S08:T04](T04-agent-notion-first-authoring-and-bootstrap-routing-fr114.md)

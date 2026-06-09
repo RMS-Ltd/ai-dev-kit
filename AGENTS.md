@@ -33,7 +33,7 @@ Then:
 | `framework-code` | package, validator, script, pytest, framework, workflow mgt | `packages/frameworks/workflow-mgt/README.md` |
 | `implementation-planning` | IPP, ICW, IPW, plan mode, implementation plan, specification | `.claude/commands/ipw.md`, `docs/governance/standards/dev-kit-ipw-ipp-vs-icw-artifacts.md` |
 | `adopter-docs` | user-docs, adopter-public, portal link, Docusaurus publish, contributing guide | `docs/governance/standards/adopter-public-documentation-authoring.md`, `portal/README.md` |
-| `maintainer-kb` | Notion, maintainer KB, knowledge base, investigation, analysis, records, maintainer doc, Engineering KB | `rw-config.yaml`, `docs/architecture/standards-and-adrs/ADR-024-documentation-surfaces-three-surface-model-fr114.md`, `docs/knowledge/README.md` |
+| `maintainer-kb` | maintainer KB, knowledge base, investigation, analysis, records, maintainer doc, Engineering KB, git maintainer | `docs/knowledge/README.md`, `docs/architecture/standards-and-adrs/ADR-026-git-internal-maintainer-kb-fr121.md`, `rw-config.yaml` |
 | `agent-bootstrap` | bootstrap, routing, cold start, AGENTS | `docs/architecture/standards-and-adrs/ADR-012-agent-bootstrap-and-task-routing.md` |
 
 When editing this table, update `docs/project-agent-manifest.json` `taskRouting[]` in the same change set.
@@ -62,7 +62,7 @@ Refresh from `kboard.md` when running UKW or RW Step 7; mirror into manifest `op
 | P-TRIGGER-ROUTING | `RW`/`UKW`/`IPW`/`IDW`/… at message start = workflow commands | [CLAUDE.md](CLAUDE.md) |
 | P-INTAKE-ATOMIC | FR/BR/UXR intake needs task + links same session | [Intake guide](packages/frameworks/kanban/FR_BR_INTAKE_GUIDE.md) |
 | P-RW-BUILD | Same E:S:T → BUILD+1 default; no `git tag -f` on release tags; `--dpz` (alias: `--doc-policy-zero`) only if user-triggered + untagged | [BR-097](docs/kanban/fr-br/BR-097-rw-agent-reuses-tagged-build-and-force-moves-release-tags.md) |
-| P-NOTION-FIRST | New maintainer docs → Notion MCP first; git stubs only per ADR-024 criteria | [ADR-024](docs/architecture/standards-and-adrs/ADR-024-documentation-surfaces-three-surface-model-fr114.md) |
+| P-GIT-MAINTAINER | New maintainer docs → repo paths (`docs/knowledge/`, `docs/maintenance/`, `docs/analysis/`); Notion optional archive only | [ADR-026](docs/architecture/standards-and-adrs/ADR-026-git-internal-maintainer-kb-fr121.md) |
 | P-PORTAL-LINKS | Edits under `docs/guides/**` or `docs/documentation/**` → GitHub blob URLs for excluded trees; run portal pytest before commit | [adopter-public-documentation-authoring.md](docs/governance/standards/adopter-public-documentation-authoring.md) · [BR-068](docs/kanban/fr-br/BR-068-docusaurus-monorepo-markdown-links-break-strict-production-build.md) |
 | P-GREENFIELD-SYNC | Edits under `packages/frameworks/**` → `sync_greenfield_install.py` + commit mirror in same change set | [FR-110](docs/kanban/fr-br/FR-110-lean-adopter-distribution-footprint-and-vendor-bundle.md) |
 
@@ -87,8 +87,8 @@ If no keyword match, ask **one** clarifying question. Do not grep the whole repo
 - Changelog archive tree unless changelog/release work.
 - [`docs/journals/`](docs/journals/) unless forensic recovery.
 - Entire [`kboard.md`](docs/kanban/kboard.md) MoSCOW unless kanban-intake track.
-- New maintainer investigations/analysis/records under `docs/knowledge/`, `docs/analysis/`, `docs/maintenance/` — use Notion ([ADR-024](docs/architecture/standards-and-adrs/ADR-024-documentation-surfaces-three-surface-model-fr114.md)).
-- Cold-loading full Notion corpora via git stubs — route `maintainer-kb` track and use Notion MCP.
+- Routing maintainer KB work to Notion MCP when git paths suffice — author in-repo per [ADR-026](docs/architecture/standards-and-adrs/ADR-026-git-internal-maintainer-kb-fr121.md).
+- Publishing maintainer corpora on Docusaurus — allowlist is adopter-public only ([FR-114](docs/kanban/fr-br/FR-114-split-documentation-surfaces-docusaurus-public-notion-maintainer-kb.md)).
 - IDE plan folders outside repo (`~/.cursor/plans/`).
 
 ---

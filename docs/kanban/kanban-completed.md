@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Completed Tasks
 
-**Last Updated:** 2026-06-09 (RW E05:S08:T05 — FR-121 reverse migration)
-**Version:** v0.5.8.5+2
+**Last Updated:** 2026-06-09 (RW E05:S08:T06 — FR-121 wave 2 bootstrap)
+**Version:** v0.5.8.6+1
 
 > **For MoSCOW prioritized tasks, see:** [`kboard.md`](kboard.md)  
 > **For completed FR/BR/UXR intake items, see:** [`intake-completed.md`](intake-completed.md)
@@ -19,6 +19,10 @@ housekeeping_policy: keep
 ---
 
 ## 20 Most Recently Completed Tasks
+
+#### **RW (2026-06-09)** — E05:S08:T06 @ **v0.5.8.6+1** (FR-121 wave 2 — ADR-026 + git-maintainer bootstrap)
+
+- **[E05:S08:T06](epics/epic-05/story-08-knowledge-base/T06-adr-026-git-maintainer-authoring-bootstrap-fr121.md)** — ADR-026 two-surface model; `P-GIT-MAINTAINER`; manifest + rw-config schema; ADR-024/FR-114 supersession banners. [FR-121](fr-br/FR-121-git-internal-maintainer-kb-oss-documentation-surfaces.md) · [—IPP—](../../implementation-cycles/IPP-E05S08T06-adr-026-git-maintainer-authoring-bootstrap-fr121.md)
 
 #### **RW (2026-06-09)** — E05:S08:T05 @ **v0.5.8.5+2** (FR-121 wave 1 — reverse Notion migration to git-internal maintainer KB)
 

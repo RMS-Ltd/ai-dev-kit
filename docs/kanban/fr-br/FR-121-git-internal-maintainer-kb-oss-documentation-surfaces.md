@@ -14,7 +14,7 @@ housekeeping_policy: keep
 **Submitted By:** User (docs/KB architecture discussion)  
 **Priority:** HIGH (Should Have — MoSCOW **S**)  
 **Status:** ACCEPTED (intake versioned)  
-**Version:** v0.5.8.5+2 (E05:S08:T05 wave 1 complete @ 2026-06-09)
+**Version:** v0.5.8.6+1 (E05:S08:T06 wave 2 complete @ 2026-06-09; T05 @ v0.5.8.5+2)
 
 **Implementing Tasks:**
 

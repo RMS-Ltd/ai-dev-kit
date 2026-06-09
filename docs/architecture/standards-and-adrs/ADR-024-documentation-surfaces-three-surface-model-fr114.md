@@ -8,10 +8,13 @@ housekeeping_policy: keep
 
 # ADR-024: Documentation surfaces — three-surface model (FR-114)
 
-### Version 0.0.1
+> **Partially superseded:** Maintainer / Notion SoT and **P-NOTION-FIRST** superseded by [ADR-026 — Git-internal maintainer KB](ADR-026-git-internal-maintainer-kb-fr121.md) ([FR-121](../../kanban/fr-br/FR-121-git-internal-maintainer-kb-oss-documentation-surfaces.md), [E05:S08:T06](../../kanban/epics/epic-05/story-08-knowledge-base/T06-adr-026-git-maintainer-authoring-bootstrap-fr121.md)). **Retained:** Docusaurus adopter-public allowlist, binding ADR policy, RC ≥ 1 release notes, historical git-stub template (deprecated post FR-121 wave 1).
+
+### Version 0.0.2
 
 | Version | Change |
 | ------- | ------ |
+| 0.0.2 | Partial supersession banner — maintainer SoT → ADR-026 / FR-121. |
 | 0.0.1 | Initial decision — Docusaurus (adopter-public), Notion (maintainer KB), git (workflow SoT). |
 
 **Status:** Accepted  

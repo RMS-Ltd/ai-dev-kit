@@ -29,6 +29,8 @@ NOTION_KB_ID = "378b6f8962c18189aacbe8629677403d"
 
 def test_agents_md_maintainer_kb_track_and_notion_first() -> None:
     text = AGENTS.read_text(encoding="utf-8")
+    if "P-GIT-MAINTAINER" in text:
+        pytest.skip("FR-121 wave 2 superseded Notion-first bootstrap (ADR-026)")
     assert "`maintainer-kb`" in text
     assert "P-NOTION-FIRST" in text
     assert "ADR-024" in text
@@ -41,6 +43,9 @@ def test_agents_md_line_count_within_adr012_budget() -> None:
 
 def test_manifest_maintainer_kb_routing() -> None:
     data = json.loads(MANIFEST.read_text(encoding="utf-8"))
+    protocol_ids = {p["id"] for p in data["protocol"]}
+    if "P-GIT-MAINTAINER" in protocol_ids:
+        pytest.skip("FR-121 wave 2 superseded Notion-first bootstrap (ADR-026)")
     routes = {r["intent"]: r for r in data["taskRouting"]}
     assert "maintainer-kb" in routes
     route = routes["maintainer-kb"]
@@ -117,7 +122,12 @@ def test_stub_template_matches_apply_notion_stubs_contract() -> None:
 
     data = json.loads(MANIFEST.read_text(encoding="utf-8"))
     protocol_ids = {p["id"] for p in data["protocol"]}
-    assert "P-NOTION-FIRST" in protocol_ids
+    if "P-GIT-MAINTAINER" in protocol_ids:
+        assert "P-NOTION-FIRST" not in protocol_ids
+        canon_ids = {c["id"] for c in data.get("canon", [])}
+        assert "C-ADR-026" in canon_ids
+    else:
+        assert "P-NOTION-FIRST" in protocol_ids
 
     canon_ids = {c["id"] for c in data.get("canon", [])}
     assert "C-ADR-024" in canon_ids

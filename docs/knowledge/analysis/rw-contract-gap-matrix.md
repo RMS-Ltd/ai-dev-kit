@@ -40,7 +40,7 @@ housekeeping_policy: keep
 | C-F8 | Git-tag occupancy | `validate_git_tag_occupancy.py` Step 1f | T2 | MET | 1 |
 | C-F9 | Single tag authority | `validate_rw_tag_authority.py` + Step 11 `create_rw_tags` only | T3, T6 | MET | 3 |
 | C-F10 | Split-brain detection | `validate_release_coherence.py` | T4 | MET | 2 |
-| C-NF1 | Spec single source | Contract doc (this wave) + `canonical-rw-steps.yaml` | Structural | PARTIAL | 0/4 |
+| C-NF1 | Spec single source | `rw-contract.yaml` + contract doc + `canonical-rw-steps.yaml` | `validate_rw_contract_manifest.py` | MET | 4 |
 | C-NF2 | Agent/script split | ADR-027 + contract | ADR review | PLANNED | 0 |
 | C-NF3 | Idempotency | `resolve_rw_build.py` | `test_resolve_rw_build.py` | MET | — |
 | C-NF4 | Config portability | `rw_config_loader.py` | Validator config tests | PARTIAL | 1 |
@@ -66,7 +66,7 @@ housekeeping_policy: keep
 | 1 | Step 1e/1f validators | C-F7, C-F8 → MET ✅ |
 | 2 | `validate_release_coherence.py` | C-F2, C-F10 → MET ✅ |
 | 3 | Step 11 tag authority | C-F9 → MET ✅ |
-| 4 | `rw-contract.yaml` | C-NF1 → target MET |
+| 4 | `rw-contract.yaml` | C-NF1 → MET ✅ |
 | 8 | 10-run streak | C-F2–F10 sustained |
 
 ---

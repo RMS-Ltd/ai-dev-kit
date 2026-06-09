@@ -1,0 +1,12 @@
+{
+  "report_type": "rw_step7_structure_prune",
+  "release_scope": "E05:S08:T06",
+  "version": "v0.5.8.6+1",
+  "evidence_mode": "structure_prune",
+  "rows": {
+    "E05:S08:T06": {
+      "allowed": true,
+      "reason": "Terminal task COMPLETE v0.5.8.6+1 — removed from active kboard S-band (kanban-completed ledger); FR-121 wave 2 ADR-026 bootstrap"
+    }
+  }
+}

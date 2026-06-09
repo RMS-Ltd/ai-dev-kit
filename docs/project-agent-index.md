@@ -31,7 +31,7 @@ housekeeping_policy: keep
 | `governance` | Policies + ADRs | [docs/governance/README.md](governance/README.md) |
 | `frameworks` | Packaged frameworks | [workflow mgt README](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/README.md) |
 | `planning` | IPW / IPP / ICW | [.claude/commands/ipw.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/.claude/commands/ipw.md) |
-| `maintainer-kb` | Notion maintainer KB | [ADR-024](architecture/standards-and-adrs/ADR-024-documentation-surfaces-three-surface-model-fr114.md) |
+| `maintainer-kb` | Git maintainer KB | [ADR-026](architecture/standards-and-adrs/ADR-026-git-internal-maintainer-kb-fr121.md) |
 | `meta` | Bootstrap architecture | [ADR-012](architecture/standards-and-adrs/ADR-012-agent-bootstrap-and-task-routing.md) |
 
 Full routing table: [`AGENTS.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/AGENTS.md) § Task routing (mirror: manifest `taskRouting[]`).
@@ -46,7 +46,7 @@ Full routing table: [`AGENTS.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/mai
 - Agent transcripts or plan folders outside the repo.
 - Full [`.cursorrules`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/.cursorrules) ingest before reading [`AGENTS.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/AGENTS.md) — load workflow sections when `workflows` track matches.
 - [`project-agent-manifest.json`](project-agent-manifest.json) on cold start (routing is in `AGENTS.md`).
-- New maintainer docs under `docs/knowledge/`, `docs/analysis/`, `docs/maintenance/` — use Notion ([ADR-024](architecture/standards-and-adrs/ADR-024-documentation-surfaces-three-surface-model-fr114.md)).
+- Routing maintainer KB to Notion when git paths suffice — author in-repo ([ADR-026](architecture/standards-and-adrs/ADR-026-git-internal-maintainer-kb-fr121.md)).
 
 ---
 

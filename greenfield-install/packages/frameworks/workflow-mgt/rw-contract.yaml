@@ -1,0 +1,167 @@
+# RW Release Transaction Contract — machine manifest (FR-122 / ADR-027)
+# Human contract: docs/rw-architectural-contract.md
+# Step list SoT: canonical-rw-steps.yaml (FR-049)
+# Last updated: 2026-06-09 (Wave 4 — E02:S01:T30)
+
+contract:
+  id: FR-122
+  version: "1.0.0"
+  task: E02:S01:T30
+  adr: ADR-027
+  human_doc: docs/rw-architectural-contract.md
+  steps_ref: canonical-rw-steps.yaml
+
+invariants:
+  - id: I1
+    name: release_tuple_complete
+    fields: [internal_version, semver_full, commit_sha, tags, four_surface_report]
+  - id: I2
+    name: allocator_finalize_boundary
+    rule: SAA writes only at finalize / create_rw_tags boundary
+  - id: I3
+    name: patch_namespace_floor
+    rule: max(git_semver_core_patches, db_max_patch) <= next_allocated_patch
+  - id: I4
+    name: staged_superset
+    rule: staged paths ⊇ four-surface touched paths
+  - id: I5
+    name: agent_script_boundary
+    rule: agent may not improvise semver, tags, or BUILD resolution
+
+phases:
+  PREFLIGHT:
+    gates: [step_1, step_1b, step_1c, step_1d, step_1e, step_1f]
+  PLAN:
+    scripts: [resolve_rw_build.py, finalize_rw_semver_registry.py]
+  MUTATE:
+    steps: [2, 3, 4, 5, 6, 7]
+    owner: agent
+  VALIDATE:
+    steps: [8, 9, 9_5, 9_6, 9_7]
+  PUBLISH:
+    steps: [10, 11, 12, 12_5]
+
+gates:
+  - id: step_1
+    clause: C-F1
+    phase: PREFLIGHT
+    step: 1
+    name: Branch Safety Check
+    script: scripts/validation/validate_branch_context.py
+    args: ["--strict"]
+    blocking: true
+    config_key: null
+
+  - id: step_1b
+    clause: C-F1
+    phase: PREFLIGHT
+    step: 1b
+    name: RW Task Token Required
+    script: null
+    blocking: true
+    policy: FR-060
+
+  - id: step_1c
+    clause: C-F1
+    phase: PREFLIGHT
+    step: 1c
+    name: RW Task Document Releasable
+    script: scripts/validation/validate_rw_task_complete.py
+    blocking: true
+    policy: FR-060
+
+  - id: step_1d
+    clause: C-F1
+    phase: PREFLIGHT
+    step: 1d
+    name: RW Task Intent Guard
+    script: scripts/validation/validate_rw_task_intent.py
+    blocking: true
+    policy: BR-056
+
+  - id: step_1e
+    clause: C-F7
+    phase: PREFLIGHT
+    step: 1e
+    name: Allocator Health Preflight
+    script: scripts/validation/validate_allocator_health.py
+    args: ["--strict"]
+    blocking: true
+    config_key: allocator_health
+
+  - id: step_1f
+    clause: C-F8
+    phase: PREFLIGHT
+    step: 1f
+    name: Git-Tag Occupancy Preview
+    script: scripts/validation/validate_git_tag_occupancy.py
+    args: ["--strict"]
+    blocking: true
+    config_key: git_tag_occupancy
+
+  - id: step_9_coherence
+    clause: C-F10
+    phase: VALIDATE
+    step: 9
+    name: Release Coherence
+    script: scripts/validation/validate_release_coherence.py
+    args: ["--strict"]
+    blocking: true
+    config_key: release_coherence
+
+  - id: step_9_ci_parity
+    clause: C-F6
+    phase: VALIDATE
+    step: 9.7
+    name: Actions CI Parity
+    script: scripts/validation/validate_actions_ci_parity.py
+    args: ["--strict"]
+    blocking: true
+    config_key: actions_ci_parity
+
+  - id: step_11_pre
+    clause: C-F9
+    phase: PUBLISH
+    step: 11a
+    name: Tag Authority Pre
+    script: scripts/validation/validate_rw_tag_authority.py
+    args: ["--strict", "--mode", "pre"]
+    blocking: true
+    config_key: rw_tag_authority
+
+  - id: step_11_create
+    clause: C-F9
+    phase: PUBLISH
+    step: 11b
+    name: Create Tags
+    script: scripts/version/semver_converter.py
+    api: create_rw_tags
+    blocking: true
+    forbidden: ["git tag -f", "git tag v without -a"]
+
+  - id: step_11_post
+    clause: C-F9
+    phase: PUBLISH
+    step: 11c
+    name: Tag Authority Post
+    script: scripts/validation/validate_rw_tag_authority.py
+    args: ["--strict", "--mode", "post"]
+    blocking: true
+    config_key: rw_tag_authority
+
+clauses:
+  C-F1: { status: MET, wave: null }
+  C-F2: { status: MET, wave: 2 }
+  C-F3: { status: PARTIAL, wave: 3 }
+  C-F4: { status: MOSTLY_MET, wave: null }
+  C-F5: { status: MET, wave: null }
+  C-F6: { status: MET, wave: null }
+  C-F7: { status: MET, wave: 1 }
+  C-F8: { status: MET, wave: 1 }
+  C-F9: { status: MET, wave: 3 }
+  C-F10: { status: MET, wave: 2 }
+  C-NF1: { status: MET, wave: 4 }
+  C-NF2: { status: MET, wave: 0 }
+  C-NF3: { status: MET, wave: null }
+  C-NF4: { status: PARTIAL, wave: 1 }
+  C-NF5: { status: PARTIAL, wave: null }

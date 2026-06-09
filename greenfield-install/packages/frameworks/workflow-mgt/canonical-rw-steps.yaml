@@ -5,7 +5,8 @@
 # Pre-release gates 1b/1c/1d run after Step 1 (documented in portable excerpt + vwmp guide)
 #
 # Last Updated: 2026-06-09
-# Version: 2.1.0
+# Version: 2.2.0
+# Contract manifest: rw-contract.yaml (FR-122 Wave 4)
 
 preflight_gates:
   step_1b:
@@ -228,9 +229,10 @@ execution_paths:
     category: "documentation"
 
 metadata:
-  version: "2.1.0"
+  version: "2.2.0"
+  contract_manifest: rw-contract.yaml
   created: "2026-03-09"
-  last_updated: "2026-06-05"
+  last_updated: "2026-06-09"
   uxr_024: "Default full RW skips step 12/12.5; --push opt-in"
   total_steps: 13
   optional_sub_steps: [9.5, 9.6, 12.5]

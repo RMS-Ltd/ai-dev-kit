@@ -59,6 +59,7 @@
       "additionalProperties": false,
       "required": ["notionHubUrl", "notionKbUrl", "configSource"],
       "properties": {
+        "maintainerKbSot": { "type": "string", "enum": ["git", "external"] },
         "notionHubUrl": { "type": "string", "format": "uri" },
         "notionKbUrl": { "type": "string", "format": "uri" },
         "configSource": { "type": "string" }

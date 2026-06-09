@@ -10,7 +10,7 @@ housekeeping_policy: keep
 
 **Authority:** [ADR-027](../../../docs/architecture/standards-and-adrs/ADR-027-rw-release-transaction-contract.md) · [FR-122](../../../docs/kanban/fr-br/FR-122-release-workflow-architectural-contract-release-transaction.md) · [IPP-E02S01T30](../../../docs/implementation-cycles/IPP-E02S01T30-rw-architectural-contract-release-transaction.md)  
 **Gap matrix:** [rw-contract-gap-matrix.md](../../../docs/knowledge/analysis/rw-contract-gap-matrix.md)  
-**Machine manifest (Wave 4):** `rw-contract.yaml` (planned)
+**Machine manifest (Wave 4):** [`rw-contract.yaml`](../rw-contract.yaml)
 
 ---
 
@@ -94,8 +94,9 @@ On success, all fields must be present:
 | C-F8 | Git-tag occupancy | 1f | MET — Wave 1 |
 | C-F9 | Single tag authority | 11 | MET — Wave 3 |
 | C-F10 | Split-brain detection | 9 | MET — Wave 2 |
+| C-NF1 | Spec single source | manifest | MET — Wave 4 |
 
-See [gap matrix](../../../docs/knowledge/analysis/rw-contract-gap-matrix.md) for implementation and test mapping.
+See [gap matrix](../../../docs/knowledge/analysis/rw-contract-gap-matrix.md) for implementation and test mapping. Machine gates: [`rw-contract.yaml`](../rw-contract.yaml).
 
 ---
 

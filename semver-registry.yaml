@@ -1,0 +1,22 @@
+rc_0:
+  epic_to_minor: {}
+  story_to_patch: {}
+  task_touch_mode:
+    epic_count: 0
+    task_touch_counter: 1
+    mapping_history:
+    - internal_version: 0.9.9.9+1
+      semver: 0.0.1+1
+      patch: 1
+      rc: 0
+      epic: 9
+      story: 9
+      task: 9
+      build: 1
+rc_1:
+  epic_to_minor: {}
+  story_to_patch: {}
+  task_touch_mode:
+    epic_count: 0
+    task_touch_counter: 0
+    mapping_history: []

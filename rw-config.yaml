@@ -91,10 +91,21 @@ canonical_public_pages_url: https://rms-ltd.github.io/ai-dev-kit/
 maintainer_private_repo: RMS-Ltd/ai-dev-kit-book
 maintainer_private_repo_url: https://github.com/RMS-Ltd/ai-dev-kit-book.git
 
-# Notion — Teamspaces → RMS (project pages at teamspace root; 2026-06-08)
+# FR-121 / ADR-026 (E05:S08:T06) — documentation surface authority
+documentation_surfaces:
+  maintainer_kb:
+    sot: git  # git | external (non-default)
+  adopter_public:
+    sot: docusaurus
+    allowlist_ref: portal/docusaurus.config.js
+  external_kb:  # optional enterprise; not used by ai-dev-kit OSS
+    provider: none  # none | notion
+maintainer_editor_profile: none  # none | obsidian-personal | obsidian-team (E05:S08:T07 install)
+
+# Notion — optional archive (not SoT post FR-121); Teamspaces → RMS
 notion_hub_url: https://www.notion.so/30db6f8962c1810daf71f96bb601d69b
 
-# AI Dev Kit maintainer KB (Decisions, Reference, Investigations, Records) — child of AI Dev Kit project page
+# AI Dev Kit maintainer KB archive — child of AI Dev Kit project page
 notion_kb_url: https://www.notion.so/378b6f8962c18189aacbe8629677403d
 
 # Epic ranges

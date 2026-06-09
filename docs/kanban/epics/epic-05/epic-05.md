@@ -12,7 +12,7 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** [TBD]  
 **Created:** 2025-12-05  
-**Last updated:** 2026-06-09 (v0.5.8.5+2 – Kanban documentation setup)
+**Last updated:** 2026-06-09 (v0.5.8.6+1 – Kanban documentation setup)
 **Branch:** `epic/5-documentation-management`  
 **Version Schema:** `0.5.S.T+B`  
 **Production URL:** [N/A for this repo]
@@ -72,9 +72,9 @@ housekeeping_policy: keep
 
 
 
-- [ ] **E5:S08 – Knowledge Base** - 🔄 IN PROGRESS (**FR-121** T05–T07 — git-internal maintainer KB; supersedes FR-114 Notion SoT)
+- [ ] **E5:S08 – Knowledge Base** - 🔄 IN PROGRESS (**FR-121** T05 ✅ @ v0.5.8.5+2 · T06 ✅ @ v0.5.8.6+1 · T07 TODO — git-internal maintainer KB)
   - Story: [`story-08-knowledge-base.md`](story-08-knowledge-base.md)
-  - **Note:** Renumbered from S07 to S08 as part of repository story migration (E09:S01:T08). FR-114 T03/T04 COMPLETE @ v0.5.8.4+2.
+  - **Note:** Renumbered from S07 to S08 (E09:S01:T08). FR-114 T03/T04 COMPLETE @ v0.5.8.4+2; FR-121 waves 1–2 COMPLETE.
 
 
 
@@ -116,7 +116,7 @@ Epic 5 owns the **Documentation Management and Maintenance** framework for the a
 **Status:** CLOSED (HISTORICAL REGISTRY)  
 **Priority:** HIGH  
 **Estimated Effort:** N/A (Historical registry)  
-**Last updated:** 2026-06-09 (v0.5.8.5+2 – Kanban documentation setup)
+**Last updated:** 2026-06-09 (v0.5.8.6+1 – Kanban documentation setup)
 
 **Goal:**  
 Historical Feature Request registry. Provides 1:1 traceability between legacy FR numbers and **E05:S01:Tnn** coordinates. **New intake uses semantic delivery stories** (FR-072 / ADR-014).
@@ -132,7 +132,7 @@ Historical Feature Request registry. Provides 1:1 traceability between legacy FR
 **Status:** IN PROGRESS  
 **Priority:** HIGH  
 **Estimated Effort:** [TBD]  
-**Last updated:** 2026-06-09 (v0.5.8.5+2 – Kanban documentation setup)
+**Last updated:** 2026-06-09 (v0.5.8.6+1 – Kanban documentation setup)
 
 **Goal:**  
 Establish a framework for maintaining documentation accuracy and consistency across the dev-kit.
@@ -154,7 +154,7 @@ Establish a framework for maintaining documentation accuracy and consistency acr
 **Status:** COMPLETE ✅  
 **Priority:** HIGH  
 **Estimated Effort:** [TBD]  
-**Last updated:** 2026-06-09 (v0.5.8.5+2 – Kanban documentation setup)
+**Last updated:** 2026-06-09 (v0.5.8.6+1 – Kanban documentation setup)
 
 **Goal:**  
 Implement quality assurance processes and tools for documentation validation.
@@ -175,7 +175,7 @@ Implement quality assurance processes and tools for documentation validation.
 **Status:** IN PROGRESS  
 **Priority:** MEDIUM  
 **Estimated Effort:** [TBD]  
-**Last updated:** 2026-06-09 (v0.5.8.5+2 – Kanban documentation setup)
+**Last updated:** 2026-06-09 (v0.5.8.6+1 – Kanban documentation setup)
 
 **Goal:**  
 Automate documentation maintenance tasks to reduce manual effort and improve consistency.
@@ -196,7 +196,7 @@ Automate documentation maintenance tasks to reduce manual effort and improve con
 **Status:** IN PROGRESS  
 **Priority:** HIGH  
 **Estimated Effort:** [TBD]  
-**Last updated:** 2026-06-09 (v0.5.8.5+2 – Kanban documentation setup)
+**Last updated:** 2026-06-09 (v0.5.8.6+1 – Kanban documentation setup)
 
 **Goal:**  
 Investigate the ramifications of the persistent knowledge base concept, including integration points, workflow impacts, tooling requirements, and agent capabilities; establish Notion hub and KB index for migration.
@@ -214,7 +214,7 @@ Investigate the ramifications of the persistent knowledge base concept, includin
 **Status:** IN PROGRESS  
 **Priority:** HIGH  
 **Estimated Effort:** [TBD]  
-**Last updated:** 2026-06-09 (v0.5.8.5+2 – Kanban documentation setup)
+**Last updated:** 2026-06-09 (v0.5.8.6+1 – Kanban documentation setup)
 
 **Goal:**  
 Complete Docusaurus adoption: canonical `docs/` ingest (with publish scope), green builds, IA, CI, hosting, search, and **production URL go-live**—tracked via **FR-065**–**FR-071** plus **E05:S09:T09** (Pages verification).

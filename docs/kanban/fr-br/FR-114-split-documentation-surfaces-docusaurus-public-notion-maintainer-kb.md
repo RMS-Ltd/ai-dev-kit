@@ -8,6 +8,8 @@ housekeeping_policy: keep
 
 # FR-114: Split documentation surfaces — Docusaurus (adopter-public) + Notion (maintainer KB)
 
+> **Partially superseded (maintainer SoT):** Notion maintainer KB authority reversed by [FR-121](FR-121-git-internal-maintainer-kb-oss-documentation-surfaces.md) / [ADR-026](../architecture/standards-and-adrs/ADR-026-git-internal-maintainer-kb-fr121.md) ([E05:S08:T05](../epics/epic-05/story-08-knowledge-base/T05-reverse-notion-migration-git-internal-maintainer-kb-fr121.md), [E05:S08:T06](../epics/epic-05/story-08-knowledge-base/T06-adr-026-git-maintainer-authoring-bootstrap-fr121.md)). **Retained:** Docusaurus adopter-public allowlist and CI decoupling from maintainer trees.
+
 **Type:** Feature Request (FR)  
 **ID:** FR-114  
 **Submitted:** 2026-06-06  
