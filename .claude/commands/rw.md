@@ -372,6 +372,24 @@ Script auto-loads `GITHUB_TOKEN` from `.env.local`. Non-blocking if token absent
 
 Mark all `rw-step-*` TODOs as `cancelled`. Clean up temporary artifacts.
 
+**FR-122 Wave 8 — split-brain streak (advisory, non-blocking):**
+
+```bash
+python "packages/frameworks/workflow-mgt/scripts/validation/validate_rw_split_brain_streak.py"
+```
+
+Reports consecutive coherent internal release tags (README ↔ `version.py` ↔ SAA DB at tag commit). Target: **10** (`split_brain_streak.min_streak` in `rw-config.yaml`). Use `--strict` only when enforcing AC4 sign-off.
+
+**FR-122 Wave 5 — optional orchestrator (deterministic gates only):**
+
+```bash
+python "packages/frameworks/workflow-mgt/scripts/rw_orchestrator.py" preflight --requested "{E:S:T}" [--art]
+python "packages/frameworks/workflow-mgt/scripts/rw_orchestrator.py" validate --requested "{E:S:T}" --internal-version "{internal_version}"
+python "packages/frameworks/workflow-mgt/scripts/rw_orchestrator.py" publish --internal-version "{internal_version}"
+```
+
+Agent still owns MUTATE (Steps 2–7, stage, commit). See `packages/frameworks/workflow-mgt/docs/rw-architectural-contract.md`.
+
 ---
 
 ## Abort / Completion Protocol

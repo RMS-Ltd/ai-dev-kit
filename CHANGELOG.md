@@ -11,16 +11,10 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
-## [0.2.1.30+5] - 09-06-26
+## [0.2.1.30+6] - 09-06-26
 
-E02:S01:T30 — **Change implemented:** FR-122 Wave 5 — `rw_orchestrator.py` thin deterministic shell (PREFLIGHT / VALIDATE / PUBLISH). SemVer **v0.4.1103+5**.
+E02:S01:T30 — **Change implemented:** FR-122 Wave 8 — split-brain streak auditor (`validate_rw_split_brain_streak.py`). SemVer **v0.4.1104+6**.
 
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.1.30+5.md)
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.1.30+6.md)
 
 ---
-
-## [0.5.8.7+1] - 09-06-26
-
-E05:S08:T07 — **Change implemented:** FR-121 wave 3 — optional Obsidian editor profiles at greenfield install. SemVer **v0.4.1102+1**.
-
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.5.8.7+1.md)

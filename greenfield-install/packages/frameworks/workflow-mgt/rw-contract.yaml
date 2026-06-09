@@ -150,6 +150,16 @@ gates:
     blocking: true
     config_key: rw_tag_authority
 
+  - id: step_13_streak
+    clause: C-F2
+    phase: HOUSEKEEPING
+    step: 13
+    name: Split-Brain Streak Audit
+    script: scripts/validation/validate_rw_split_brain_streak.py
+    args: []
+    blocking: false
+    config_key: split_brain_streak
+
 clauses:
   C-F1: { status: MET, wave: null }
   C-F2: { status: MET, wave: 2 }

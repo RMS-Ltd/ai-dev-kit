@@ -9,12 +9,12 @@ housekeeping_policy: keep
 # E02:S01:T30 — RW architectural contract & release transaction (FR-122)
 
 **Task ID:** E02:S01:T30  
-**Status:** 🔄 IN PROGRESS (Wave 5 complete — thin orchestrator; sign-off pending)  
+**Status:** 🔄 IN PROGRESS (Wave 8 streak auditor shipped — sign-off 3/10 pending)  
 **Priority:** CRITICAL  
 **Estimated Effort:** Very Large (multi-wave meta program)  
 **Created:** 2026-06-09  
-**Last updated:** 2026-06-09 (RW **v0.2.1.30+5** — Wave 5 orchestrator release)  
-**Version Anchor:** v0.2.1.30+5  
+**Last updated:** 2026-06-09 (RW **v0.2.1.30+6** — Wave 8 split-brain streak auditor)  
+**Version Anchor:** v0.2.1.30+6  
 **Code:** E02S01T30
 
 Publication Status: NOT_APPLICABLE
@@ -74,6 +74,7 @@ Own the **meta program** for [FR-122](../../../fr-br/FR-122-release-workflow-arc
 | **3** | Step 11 tag-authority hard gate + dual-source RW trigger parity | ✅ COMPLETE (**v0.2.1.30+4**) |
 | **4** | `rw-contract.yaml` machine manifest | ✅ COMPLETE (**v0.2.1.30+5**) |
 | **5** | Optional thin `rw_orchestrator.py` (PREFLIGHT/VALIDATE/PUBLISH deterministic shell) | ✅ COMPLETE (**v0.2.1.30+5**) |
+| **8** | Split-brain streak auditor (`validate_rw_split_brain_streak.py`) | ✅ COMPLETE (**v0.2.1.30+6**); sign-off **3/10** @ dev |
 
 ---
 

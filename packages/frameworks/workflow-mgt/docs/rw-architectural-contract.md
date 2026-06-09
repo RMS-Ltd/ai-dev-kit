@@ -129,6 +129,17 @@ python packages/frameworks/workflow-mgt/scripts/rw_orchestrator.py publish --int
 
 **Agent-owned (not run by orchestrator):** MUTATE Steps 2–7, Step 8 stage, Step 10 commit. Full Step 9 validator suite beyond contract gates remains agent-scheduled per `.cursorrules`.
 
+### Wave 8 — split-brain streak (sign-off)
+
+Advisory until FR-122 AC4 target met (`min_streak: 10` in `rw-config.yaml`):
+
+```bash
+python packages/frameworks/workflow-mgt/scripts/validation/validate_rw_split_brain_streak.py
+python packages/frameworks/workflow-mgt/scripts/validation/validate_rw_split_brain_streak.py --strict  # blocking when streak < min
+```
+
+Audits recent internal release tags for README ↔ `version.py` ↔ SAA DB coherence at each tag commit.
+
 ---
 
 ## Related

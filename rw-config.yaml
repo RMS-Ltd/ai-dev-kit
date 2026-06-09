@@ -72,6 +72,10 @@ git_tag_occupancy:
   enabled: true
 release_coherence:
   enabled: true
+split_brain_streak:
+  enabled: true
+  min_streak: 10
+  limit: 15
 rw_tag_authority:
   enabled: true
 
