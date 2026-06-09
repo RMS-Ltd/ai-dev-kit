@@ -11,10 +11,10 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
-## [0.2.1.30+7] - 09-06-26
+## [0.21.4.1+1] - 09-06-26
 
-E02:S01:T30 — **Change implemented:** FR-122 post-Wave 8 kanban hygiene + push to `origin/dev`. SemVer **v0.4.1105+7**.
+E21:S04:T01 — **Change implemented:** FR-006 cultural requirements research (`locale-cultural-requirements.md`). SemVer **v0.4.1106+1**.
 
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.1.30+7.md)
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.21.4.1+1.md)
 
 ---

@@ -9,10 +9,12 @@ housekeeping_policy: keep
 # Epic 21, Story 4, Task 1: Research cultural requirements for target locales
 
 **Task ID:** E21:S04:T01  
-**Status:** TODO  
+**Status:** COMPLETE  
 **Priority:** MEDIUM  
-**Last updated:** 2026-06-07 (v0.21.4.1+0 — RW -k kanban-init doc filing)
-**Version:** v0.21.4.1+0
+**Last updated:** 2026-06-09 (RW **v0.21.4.1+1** — cultural requirements research)
+**Version:** v0.21.4.1+1
+
+✅ COMPLETE (v0.21.4.1+1)
 **Code:** E21S04T01
 
 ---
@@ -33,25 +35,29 @@ Research cultural requirements for target locales.
 
 ## Input
 
-- Target locales
-- Framework content
+- Target locales — [locale-rollout-matrix.md](../../../../governance/standards/locale-rollout-matrix.md) (nine scaffolded locales)
+- Framework content — [translatable-content-inventory.md](../../../../governance/standards/translatable-content-inventory.md)
+- [FR-006 Phase 2](../../../../fr-br/FR-006-localization-language-selection-uk-us-english.md) · [ADR-024](../../../../architecture/standards-and-adrs/ADR-024-i18n-framework-strategy.md)
+- [IPP-E21S04T01-research-cultural-requirements-target-locales.md](../../../../implementation-cycles/IPP-E21S04T01-research-cultural-requirements-target-locales.md)
+
+**Publication Status:** NOT_APPLICABLE (maintainer governance deliverable per IPP §6)
 
 ---
 
 ## Deliverable
 
-- Cultural requirements research
-- Cultural considerations document
-- Adaptation recommendations
+- Cultural requirements research — [locale-cultural-requirements.md](../../../../governance/standards/locale-cultural-requirements.md)
+- Cultural considerations document (per-locale matrix in standard above)
+- Adaptation recommendations (prioritized backlog in standard above)
 
 ---
 
 ## Acceptance Criteria
 
-- [ ] Cultural requirements researched
-- [ ] Cultural considerations documented
-- [ ] Adaptation recommendations created
-- [ ] Cultural guidelines established
+- [x] Cultural requirements researched
+- [x] Cultural considerations documented
+- [x] Adaptation recommendations created
+- [x] Cultural guidelines established (draft framework in standard; T07 publishes contributor guide)
 
 ---
 
@@ -84,4 +90,23 @@ RW -k E21:S04:T01 --art --dpz
 Migrated from embedded Story section via `generate_task_doc.py` (FR-016 Wave 1 tooling).
 
 **Source Story:** `docs/kanban/epics/epic-21/story-04-cultural-adaptation.md`
+
+---
+
+## References
+
+- [IPP-E21S04T01-research-cultural-requirements-target-locales.md](../../../../implementation-cycles/IPP-E21S04T01-research-cultural-requirements-target-locales.md)
+- [FR-006](../../../../fr-br/FR-006-localization-language-selection-uk-us-english.md)
+- [E21:S04 story](../story-04-cultural-adaptation.md)
+- [locale-rollout-matrix.md](../../../../governance/standards/locale-rollout-matrix.md)
+- [locale-cultural-requirements.md](../../../../governance/standards/locale-cultural-requirements.md)
+- [translation-workflow-and-review.md](../../../../governance/standards/translation-workflow-and-review.md)
+
+---
+
+## Planning artifacts
+
+| Artifact | Path | Status |
+| -------- | ---- | ------ |
+| IPP | [`IPP-E21S04T01-research-cultural-requirements-target-locales.md`](../../../../implementation-cycles/IPP-E21S04T01-research-cultural-requirements-target-locales.md) | Approved (IPW 2026-06-09) |
 

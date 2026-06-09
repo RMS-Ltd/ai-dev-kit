@@ -8,12 +8,12 @@ housekeeping_policy: keep
 
 # Story 04 – Cultural Adaptation
 
-**Status:** TODO  
+**Status:** IN PROGRESS  
 **Priority:** LOW  
 **Estimated Effort:** [TBD]  
 **Created:** 2025-12-09  
-**Last updated:** 2026-06-08 (UKW — E21:S03 COMPLETE @ v0.21.3.7+1 unblocks S04)  
-**Version:** v0.21.1.0+0  
+**Last updated:** 2026-06-09 (v0.21.4.1+1 – Kanban documentation setup)
+**Version:** v0.21.4.1+1
 **Code:** E21S04
 
 ---
@@ -32,7 +32,7 @@ Ensure framework content and features are culturally appropriate for different r
 
 ## Task Checklist
 
-- [ ] **E21:S04:T01 – Research cultural requirements for target locales** - TODO
+- [x] **E21:S04:T01 – Research cultural requirements for target locales** - COMPLETE (**v0.21.4.1+1**)
   - Task: [`T01-research-cultural-requirements-for-target-locales`](story-04-cultural-adaptation/T01-research-cultural-requirements-for-target-locales.md)
 - [ ] **E21:S04:T02 – Adapt UI/UX for different cultures (examples, imagery)** - TODO
   - Task: [`T02-adapt-uiux-for-different-cultures-examples-imagery`](story-04-cultural-adaptation/T02-adapt-uiux-for-different-cultures-examples-imagery.md)

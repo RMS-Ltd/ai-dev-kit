@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Completed Tasks
 
-**Last Updated:** 2026-06-09 (RW E05:S08:T07 — FR-121 wave 3 Obsidian install profiles)
-**Version:** v0.5.8.7+1
+**Last Updated:** 2026-06-09 (RW E21:S04:T01 — FR-006 cultural requirements desk research)
+**Version:** v0.21.4.1+1
 
 > **For MoSCOW prioritized tasks, see:** [`kboard.md`](kboard.md)  
 > **For completed FR/BR/UXR intake items, see:** [`intake-completed.md`](intake-completed.md)
@@ -19,6 +19,11 @@ housekeeping_policy: keep
 ---
 
 ## 20 Most Recently Completed Tasks
+
+#### **RW (2026-06-09)** — E21:S04:T01 @ **v0.21.4.1+1** (FR-006 Phase 2 — cultural requirements desk research)
+
+- **[E21:S04:T01](epics/epic-21/story-04-cultural-adaptation/T01-research-cultural-requirements-for-target-locales.md)** — `locale-cultural-requirements.md` (nine-locale matrix + recommendations); `test_locale_cultural_requirements.py` (C1–C6); cross-links in rollout matrix and translatable inventory.
+  **Completed:** `2026-06-09T21:04:40Z` | **Version:** `v0.21.4.1+1` | **Agent:** `IDW E21:S04:T01 --rw` | [FR-006](fr-br/FR-006-localization-language-selection-uk-us-english.md) | [—IPP—](../../implementation-cycles/IPP-E21S04T01-research-cultural-requirements-target-locales.md)
 
 #### **RW (2026-06-09)** — E05:S08:T07 @ **v0.5.8.7+1** (FR-121 wave 3 — optional Obsidian editor profiles at greenfield install)
 

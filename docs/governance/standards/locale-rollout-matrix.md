@@ -68,6 +68,7 @@ Per [translation-workflow-and-review.md](translation-workflow-and-review.md): **
 - **T04:** Contributor workflow and review process — [translation-workflow-and-review.md](translation-workflow-and-review.md).
 - **T06:** Completeness reporting via `report_locale_completeness.py` (registry scope + tier metrics). See [translation-management-tools.md](../../documentation/user-docs/translation-management-tools.md).
 - **T07:** Phase 3 E2E verification via `tests/test_fr006_phase3_translation_locale_e2e.py` (P3E1–P3E11); full regression `pytest -m fr006`. See [IPP-E21S03T07](../../implementation-cycles/IPP-E21S03T07-test-translations-locale-support.md).
+- **E21:S04:T01:** Cultural requirements desk research — [locale-cultural-requirements.md](locale-cultural-requirements.md) (per-locale matrix + adaptation backlog).
 
 ---
 

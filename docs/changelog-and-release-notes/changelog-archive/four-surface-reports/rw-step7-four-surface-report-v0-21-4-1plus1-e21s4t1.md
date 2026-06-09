@@ -2,8 +2,8 @@
 
 - **Contract:** FR-092 / ADR-018 (RW Step 7 three-surface reconciliation)
 - **Invocation context:** rw_step_7
-- **Release scope:** E2:S1:T30 (v0.2.1.30+7)
-- **Timestamp (UTC):** 2026-06-09 20:08 UTC
+- **Release scope:** E21:S4:T1 (v0.21.4.1+1)
+- **Timestamp (UTC):** 2026-06-09 21:11 UTC
 
 ## Touched-surface summary
 
@@ -48,23 +48,23 @@
 
 - Touched: **True**
 - Path(s):
-  - `/Users/rms/Documents/projects/ai-dev-kit/docs/kanban/epics/epic-02/story-01-rw-agent-execution-and-docs.md`
+  - `/Users/rms/Documents/projects/ai-dev-kit/docs/kanban/epics/epic-21/story-04-cultural-adaptation.md`
 - Changes:
-  - ✅ Story doc updated: /Users/rms/Documents/projects/ai-dev-kit/docs/kanban/epics/epic-02/story-01-rw-agent-execution-and-docs.md
+  - ✅ Story doc updated: /Users/rms/Documents/projects/ai-dev-kit/docs/kanban/epics/epic-21/story-04-cultural-adaptation.md
 
 ### Auxiliary: `epic_doc`
 
 - Touched: **True**
 - Path(s):
-  - `/Users/rms/Documents/projects/ai-dev-kit/docs/kanban/epics/epic-02/epic-02.md`
+  - `/Users/rms/Documents/projects/ai-dev-kit/docs/kanban/epics/epic-21/epic-21.md`
 - Changes:
-  - Updated Epic Last updated: 2026-06-09 (v0.2.1.30+7 – Kanban documentation setup)
+  - Updated Epic Last updated: 2026-06-09 (v0.21.4.1+1 – Kanban documentation setup)
 
 ### Auxiliary: `uncategorized`
 
 - Touched: **True**
 - Changes:
-  - Updated Version: v0.2.1.30+7
-  - Updated Last updated: 2026-06-09 (v0.2.1.30+7 – Kanban documentation setup)
-  - Updated board Last Updated: 2026-06-09 (RW: E02:S01:T30)
-  - Updated board Version: v0.2.1.30+7
+  - Updated Version: v0.21.4.1+1
+  - Updated Last updated: 2026-06-09 (v0.21.4.1+1 – Kanban documentation setup)
+  - Updated board Last Updated: 2026-06-09 (RW: E21:S04:T01)
+  - Updated board Version: v0.21.4.1+1
