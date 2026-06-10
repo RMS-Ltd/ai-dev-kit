@@ -238,7 +238,7 @@ function _createMdxContent(props) {
               children: "MWF E02:S16:T15 delivery"
             }), " — orchestrates IPW → IDW ", (0,jsx_runtime.jsx)(_components.code, {
               children: "--rw"
-            }), " (mode-gate pauses)"]
+            }), " (continuous; sub-agent legs)"]
           })]
         }), (0,jsx_runtime.jsxs)(_components.tr, {
           children: [(0,jsx_runtime.jsx)(_components.td, {
@@ -1252,9 +1252,9 @@ function _createMdxContent(props) {
               children: "/mwf E02:S03:T09 delivery"
             })]
           }), (0,jsx_runtime.jsxs)(_components.td, {
-            children: ["Full pipeline: IPW (if no IPP) → mode gate → IDW ", (0,jsx_runtime.jsx)(_components.code, {
+            children: ["Full pipeline: IPW (if no IPP) → IDW ", (0,jsx_runtime.jsx)(_components.code, {
               children: "--rw"
-            })]
+            }), " (continuous; sub-agent legs per BR-102)"]
           })]
         }), (0,jsx_runtime.jsxs)(_components.tr, {
           children: [(0,jsx_runtime.jsx)(_components.td, {
@@ -1311,16 +1311,15 @@ function _createMdxContent(props) {
         }), (0,jsx_runtime.jsxs)(_components.tr, {
           children: [(0,jsx_runtime.jsx)(_components.td, {
             children: (0,jsx_runtime.jsx)(_components.strong, {
-              children: "Mode gates"
+              children: "Orchestration"
             })
           }), (0,jsx_runtime.jsxs)(_components.td, {
-            children: ["IPW leg: ", (0,jsx_runtime.jsx)(_components.strong, {
-              children: "plan mode"
-            }), "; IDW leg: ", (0,jsx_runtime.jsx)(_components.strong, {
-              children: "implementation mode"
-            }), " — ", (0,jsx_runtime.jsx)(_components.code, {
-              children: "MWF CHAIN PAUSED"
-            }), " between legs"]
+            children: ["MWF delegates legs via sub-agent or inline command guide — ", (0,jsx_runtime.jsx)(_components.strong, {
+              children: "no"
+            }), " operator mode-switch handoff (", (0,jsx_runtime.jsx)(_components.a, {
+              href: "https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/kanban/fr-br/BR-102-mwf-chain-paused-instead-of-subagent-leg-delegation.md",
+              children: "BR-102"
+            }), ")"]
           })]
         }), (0,jsx_runtime.jsxs)(_components.tr, {
           children: [(0,jsx_runtime.jsx)(_components.td, {
@@ -1368,6 +1367,9 @@ function _createMdxContent(props) {
         children: [(0,jsx_runtime.jsx)(_components.code, {
           children: ".claude/commands/mwf.md"
         }), " (source)"]
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/workflow-encapsulation-contract.md",
+        children: "workflow-encapsulation-contract.md"
       }), " · ", (0,jsx_runtime.jsx)(_components.a, {
         href: "https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/meta-workflow-agent-execution.md",
         children: "meta-workflow-agent-execution.md"
@@ -1537,7 +1539,7 @@ function _createMdxContent(props) {
           }), (0,jsx_runtime.jsxs)(_components.td, {
             children: [(0,jsx_runtime.jsx)(_components.strong, {
               children: "Preferred"
-            }), " full pipeline (IPW → IDW → RW) with mode-gate pauses"]
+            }), " full pipeline (IPW → IDW → RW); no manual mode-switch between legs"]
           })]
         }), (0,jsx_runtime.jsxs)(_components.tr, {
           children: [(0,jsx_runtime.jsxs)(_components.td, {
