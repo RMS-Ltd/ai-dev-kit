@@ -63,6 +63,7 @@ Implement the enhanced workflow logging system with forensic capabilities and ro
 - **Workflow Executor**: Current implementation in `packages/frameworks/workflow-mgt/scripts/workflow_executor.py`
 - **Documentation Agent**: Current jurisdiction in `docs/kanban/AGENTS.md`
 - **Housekeeping Process**: TTL enforcement mechanisms
+- **IPP (Supersession Reconciliation):** [`IPP-E07S01T10-supersession-reconciliation.md`](../../../implementation-cycles/IPP-E07S01T10-supersession-reconciliation.md) — planning artifact for closure reconciliation
 
 ---
 
@@ -222,6 +223,11 @@ Implement the enhanced workflow logging system with forensic capabilities and ro
 - **Workflow Executor**: `packages/frameworks/workflow-mgt/scripts/workflow_executor.py`
 - **Documentation Agent**: `docs/kanban/AGENTS.md`
 - **Housekeeping Process**: TTL enforcement mechanisms
+- **IPP (Supersession Reconciliation):** [`IPP-E07S01T10-supersession-reconciliation.md`](../../../implementation-cycles/IPP-E07S01T10-supersession-reconciliation.md) — planning artifact for closure reconciliation
+- **E02:S08:T08 (Canonical Delivery):** [`T08-enhanced-workflow-forensic-logging-and-rollback-hardening-fr-059.md`](../../epic-02/story-08-harden-release-workflow-reliability/T08-enhanced-workflow-forensic-logging-and-rollback-hardening-fr-059.md) — `v0.2.8.8+3` — actual implementation task
+- **IPP-E2S08T08:** [`IPP-E2S08T08-forensic-logging-rollback-fr059.md`](../../../implementation-cycles/IPP-E2S08T08-forensic-logging-rollback-fr059.md) — implementation plan for FR-059 delivery
+- **ADR-008:** [`ADR-008-workflow-forensic-logging-and-checkpoints.md`](../../../architecture/standards-and-adrs/ADR-008-workflow-forensic-logging-and-checkpoints.md) — architecture decision for forensic logging
+- **CHANGELOG v0.2.8.8+4:** Documentation release that marked this task SUPERSEDED
 
 ---
 
@@ -239,5 +245,5 @@ Implement the enhanced workflow logging system with forensic capabilities and ro
 
 ---
 
-**Last Updated:** 2026-03-17  
+**Last Updated:** 2026-06-10 (IPW wiring — IPP-E07S01T10 created)  
 **Next Review:** Upon implementation planning
