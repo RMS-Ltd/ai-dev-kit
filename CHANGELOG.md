@@ -11,6 +11,14 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.2.3.9+1] - 10-06-26
+
+E02:S03:T09 — **Change implemented:** Atomic intake for **FR-123** (`IPW … --rw` full delivery chain IPW → IDW → RW). SemVer **v0.4.1115+1**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.3.9+1.md)
+
+---
+
 ## [0.2.16.6+4] - 10-06-26
 
 E02:S16:T06 — **Attempted fix:** Wave 4b — maintainability autofix (**24** ruff fixes + manual edge cases); greenfield mirror synced. SemVer **v0.4.1114+4**.
