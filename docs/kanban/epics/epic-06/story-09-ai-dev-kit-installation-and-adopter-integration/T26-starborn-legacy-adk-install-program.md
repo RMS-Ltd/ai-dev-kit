@@ -12,9 +12,9 @@ housekeeping_policy: keep
 **Status:** IN PROGRESS  
 **Priority:** HIGH  
 **Created:** 2026-06-09  
-**Last updated:** 2026-06-10 (attempt 05 FB intake — F17 **RESOLVED** @ `v0.6.9.27+2`; F18/F19/F21 → BR-105/106/107)  
-**Version:** v0.6.9.26+2  
-**Version Anchor:** v0.6.9.26+2  
+**Last updated:** 2026-06-10 (v0.6.9.26+3 — T28–T30 closure sync; attempt 06 replay pending)  
+**Version:** v0.6.9.26+3  
+**Version Anchor:** v0.6.9.26+3  
 **Code:** E06S09T26
 
 **Predecessor (closed):** [E06:S09:T25](T25-starborn-legacy-greenfield-install-diary-triage-uxr025.md) — UXR-025 triage + F4/F5 fixes @ **v0.6.9.25+3**
@@ -26,6 +26,8 @@ housekeeping_policy: keep
 ## Summary
 
 **Ongoing maintainer task** to manage AI Dev Kit installation into **Starborn Legacy (SBL)**: run and record install attempts, ingest adopter feedback, drive upstream ADK fixes/docs, and converge on a viable integration path (RW-only greenfield, brownfield per FR-081, or hybrid) without replacing SBL’s legacy **E/S/T** PM unless explicitly decided.
+
+**Attempt 05 status (2026-06-10):** v3.2 catalog **PASS** ([T27](T27-kanban-v32-package-rewrite-installer-f9-f17.md) @ **v0.6.9.27+2**). All attempt-05 upstream findings **F18–F21** are **shipped** via child tasks [T28](T28-v32-fresh-install-signoff-story-padding-br105.md) (**v0.6.9.28+2**), [T29](T29-rw-install-non-interactive-changelog-prompt-br106.md) (**v0.6.9.29+2**), [T30](T30-kanban-installer-log-epic-path-padding-br107.md) (**v0.6.9.30+2**). **Open program work:** SBL **attempt 06 replay** on **`v0.4.1140+2`** (or later) to confirm end-to-end greenfield with fixes; residual **F10** / **F20** (orchestrator ergonomics).
 
 ---
 
@@ -93,7 +95,7 @@ Attempts **1** and **2** proved installer contracts (sign-off ALL READY) but **f
 
 - Replacing SBL Flutter app delivery or unrelated SBL product work.
 - Forcing ADK template kanban adoption without explicit adopter decision.
-- Kanban v3.2 package migration waves (tracked separately; **F9/F17 BLOCKER** — no installer path until package rewrite ships).
+- Re-implementing fixes already delivered under [T28](T28-v32-fresh-install-signoff-story-padding-br105.md) / [T29](T29-rw-install-non-interactive-changelog-prompt-br106.md) / [T30](T30-kanban-installer-log-epic-path-padding-br107.md) (sign-off padding, non-interactive CHANGELOG scaffold, kanban log padding).
 
 ---
 
@@ -107,7 +109,11 @@ Attempts **1** and **2** proved installer contracts (sign-off ALL READY) but **f
 - [x] **AC6:** `validate_branch_context --strict` finds task doc for active E06:S09:T* releases (lowercase `epic-{nn}` / `story-{nn}-*` discovery in `locate_task_doc_for_version`).
 - [x] **AC7:** Attempt 04 FB ingested; **F17 fourth proof** + **F18–F20** in triage matrix; upstream P0 = v3.2 package ([T27](T27-kanban-v32-package-rewrite-installer-f9-f17.md)).
 - [x] **AC8:** v3.2 package shipped — `--mode fresh` deploys v3.2 catalog @ **v0.6.9.27+2** (attempt 05 fingerprint PASS).
-- [x] **AC9:** Attempt 05 executed on pin **`v0.4.1133+2`** (`main` @ `0d278366`); F17 **RESOLVED**; residual F18/F19/F21 filed as [T28](T28-v32-fresh-install-signoff-story-padding-br105.md) / [T29](T29-rw-install-non-interactive-changelog-prompt-br106.md) / [T30](T30-kanban-installer-log-epic-path-padding-br107.md).
+- [x] **AC9:** Attempt 05 executed on pin **`v0.4.1133+2`** (`main` @ `0d278366`); F17 **RESOLVED**; F18/F19/F21 filed as [T28](T28-v32-fresh-install-signoff-story-padding-br105.md) / [T29](T29-rw-install-non-interactive-changelog-prompt-br106.md) / [T30](T30-kanban-installer-log-epic-path-padding-br107.md).
+- [x] **AC10:** [T28](T28-v32-fresh-install-signoff-story-padding-br105.md) **COMPLETE** @ **v0.6.9.28+2** — BR-105 / **F18** sign-off contract accepts `{story:02d}` / `T{task}` on v3.2 fresh install.
+- [x] **AC11:** [T29](T29-rw-install-non-interactive-changelog-prompt-br106.md) **COMPLETE** @ **v0.6.9.29+2** — BR-106 / **F19** non-interactive CHANGELOG scaffold (no EOF under `--non-interactive`).
+- [x] **AC12:** [T30](T30-kanban-installer-log-epic-path-padding-br107.md) **COMPLETE** @ **v0.6.9.30+2** — BR-107 / **F21** install log lines use padded epic paths matching on-disk layout.
+- [ ] **AC13:** SBL **attempt 06** replay on ADK **`v0.4.1140+2`** (or later) confirms attempt-05 findings closed in adopter environment (sign-off ALL READY; non-interactive RW path; padded kanban logs).
 
 ---
 
@@ -119,7 +125,7 @@ Attempts **1** and **2** proved installer contracts (sign-off ALL READY) but **f
 | 2 | `main` @ `97ff2834` | **Failed intent** — orchestrator OK; wrong kanban | [Attempt 02](../../../../../../adk-install-into-sbl/attempt-02/greenfield-install-diary.md) |
 | 3 | `v0.4.13` (`0.4.1098+1`) | **Partial** — dual kanban OK; **F17** v1 catalog blocks v3.2 migration test | [Attempt 03](../../../../../../adk-install-into-sbl/attempt-03/README.md) · SBL `…/attempt-03/` |
 | 4 | `v0.4.1131` tarball | **BLOCKER unchanged** — F17 **fourth proof**; RW baseline + dual-kanban PASS; BR-086 NOT READY; F18–F20 new | SBL `…/attempt-04/feedback-package/SUBMISSION.md` |
-| 5 | `main` @ `0d278366` (`v0.4.1133+2`) | **F17 RESOLVED** — v3.2 kanban PASS; dual-tree PASS; sign-off 7 READY / 1 SKIP / 1 NOT READY (F18); F19 workaround; F21 log cosmetic | SBL `starborn_legacy/logs/ai-dev-kit/install/attempt-05/` |
+| 5 | `main` @ `0d278366` (`v0.4.1133+2`) | **SUCCESS (upstream pending → closed)** — v3.2 kanban PASS; dual-tree PASS; F18–F21 upstream **shipped** T28–T30 @ **v0.6.9.28+2**–**v0.6.9.30+2** | SBL `starborn_legacy/logs/ai-dev-kit/install/attempt-05/` |
 
 > **Path convention:** `starborn_legacy/logs/ai-dev-kit/install/attempt-NN/` — see [adk-install-into-sbl/README.md](../../../../../../adk-install-into-sbl/README.md).
 
@@ -140,13 +146,43 @@ Attempts **1** and **2** proved installer contracts (sign-off ALL READY) but **f
 | **F20** | Mitigated with workaround (pre-created `version_file` + config) |
 | **F21** | **CLOSED** @ **v0.6.9.30+2** — [BR-107](../../../fr-br/BR-107-kanban-installer-log-epic-path-padding-mismatch.md) / [T30](T30-kanban-installer-log-epic-path-padding-br107.md) |
 
-### Upstream filed (ai-dev-kit — derived from FB, not a copy)
+### Upstream filed → closed (ai-dev-kit)
 
-| Finding | BR | Task |
-|---------|-----|------|
-| F18 | [BR-105](../../../fr-br/BR-105-v32-fresh-install-signoff-story-padding-mismatch.md) | [E06:S09:T28](T28-v32-fresh-install-signoff-story-padding-br105.md) |
-| F19 | [BR-106](../../../fr-br/BR-106-rw-install-non-interactive-changelog-prompt-eof.md) | [E06:S09:T29](T29-rw-install-non-interactive-changelog-prompt-br106.md) |
-| F21 | [BR-107](../../../fr-br/BR-107-kanban-installer-log-epic-path-padding-mismatch.md) | [E06:S09:T30](T30-kanban-installer-log-epic-path-padding-br107.md) |
+| Finding | BR | Task | Release | Status |
+|---------|-----|------|---------|--------|
+| F18 | [BR-105](../../../fr-br/BR-105-v32-fresh-install-signoff-story-padding-mismatch.md) | [E06:S09:T28](T28-v32-fresh-install-signoff-story-padding-br105.md) | **v0.6.9.28+2** / SemVer **v0.4.1138+2** | ✅ COMPLETE |
+| F19 | [BR-106](../../../fr-br/BR-106-rw-install-non-interactive-changelog-prompt-eof.md) | [E06:S09:T29](T29-rw-install-non-interactive-changelog-prompt-br106.md) | **v0.6.9.29+2** / SemVer **v0.4.1139+2** | ✅ COMPLETE |
+| F21 | [BR-107](../../../fr-br/BR-107-kanban-installer-log-epic-path-padding-mismatch.md) | [E06:S09:T30](T30-kanban-installer-log-epic-path-padding-br107.md) | **v0.6.9.30+2** / SemVer **v0.4.1140+2** | ✅ COMPLETE |
+
+**Recommended adopter pin for attempt 06 replay:** **`v0.4.1140+2`** (includes all three fixes).
+
+---
+
+## Upstream closure wave — T28–T30 (2026-06-10)
+
+Child tasks under this program closed the attempt-05 residual backlog:
+
+| Task | Finding | What shipped |
+|------|---------|--------------|
+| [T28](T28-v32-fresh-install-signoff-story-padding-br105.md) | **F18** / BR-105 | Sign-off contract aligned with UXR-014 `{story:02d}` / `T{task}` on v3.2 fresh install; BR-086 READY in automated replay |
+| [T29](T29-rw-install-non-interactive-changelog-prompt-br106.md) | **F19** / BR-106 | `install_release_workflow.py` respects `--non-interactive` for CHANGELOG scaffold (extends T19 `version_file` path) |
+| [T30](T30-kanban-installer-log-epic-path-padding-br107.md) | **F21** / BR-107 | `migrate_structure.py` success/dry-run logs use `kanban_paths` padded segments (`epic-01` not `epic-1`) |
+
+**Verification gap:** Automated tests pass in ai-dev-kit; **SBL attempt 06** is the adopter-side confirmation gate (AC13).
+
+---
+
+## Program status & next steps
+
+| Priority | Item | Owner | Notes |
+|----------|------|-------|-------|
+| **P0** | SBL attempt 06 on **`v0.4.1140+2`** | Adopter + maintainer | Confirms F18–F21 fixes in SBL environment; closes AC13 |
+| **P1** | **F10** — orchestrator `--skip-kanban` / `use_kanban: false` | T26 / future task | Workaround: manual 4-step dual-tree sequence |
+| **P1** | **F20** — project-aware `version_file` default | T26 / future task | Workaround: pre-create `version_file` + `--config` |
+| **P2** | **F12–F14** — migration-test-bed documentation | T26 | RW defer → legacy restore → kanban → RW mode C |
+| **P2** | Legacy E/S/T → ADK v3.2 migration exercise | T26 | Unblocked post-T27; optional brownfield pass per FR-081 |
+
+**Program milestone:** Attempt 05 + T27–T30 establish a **viable v3.2 greenfield path** for SBL. Remaining work is **adopter replay confirmation** and **orchestrator ergonomics** (F10/F20), not catalog generation.
 
 ### Key SBL artifacts (reference paths)
 
@@ -223,6 +259,8 @@ Attempts **1** and **2** proved installer contracts (sign-off ALL READY) but **f
 - [x] New ADK release published with v3.2 templates in tarball — **[E06:S09:T27](T27-kanban-v32-package-rewrite-installer-f9-f17.md)** @ **v0.6.9.27+2** / SemVer **v0.4.1133+2**
 - [x] Maintainer confirms fingerprint PASS on clean dry-run install (`tests/kanban/test_kanban_v32_fresh_install.py`)
 - [x] Adopter ran attempt 05 on **`v0.4.1133+2`** (`main` @ `0d278366`)
+- [x] Attempt-05 upstream residuals **F18–F21** closed via [T28](T28-v32-fresh-install-signoff-story-padding-br105.md)–[T30](T30-kanban-installer-log-epic-path-padding-br107.md) @ **v0.6.9.28+2**–**v0.6.9.30+2**
+- [ ] Adopter **attempt 06** replay on **`v0.4.1140+2`** (AC13)
 
 ---
 
@@ -246,7 +284,7 @@ Attempts **1** and **2** proved installer contracts (sign-off ALL READY) but **f
 | P1 | F20 | Project-aware `version_file` default (open; workaround exists) |
 | P1 | F12–F14 | Document migration-test-bed profile (RW defer → legacy restore → kanban → RW mode C) |
 | P2 | F11/F16 | Post-install deferred-Kanban hint; clarify consumer layout vs v3.2 spec |
-| P2 | BR-086 | Sign-off pattern padding (attempts 03–04: NOT READY — see F18) |
+| P2 | BR-086 | ✅ **CLOSED** via [T28](T28-v32-fresh-install-signoff-story-padding-br105.md) **v0.6.9.28+2** (F18 contract alignment) |
 
 ---
 

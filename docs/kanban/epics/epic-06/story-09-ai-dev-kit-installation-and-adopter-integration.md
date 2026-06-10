@@ -13,7 +13,7 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** Large  
 **Created:** 2026-04-19  
-**Last updated:** 2026-06-10 (v0.6.9.30+2 – Kanban documentation setup)
+**Last updated:** 2026-06-10 (v0.6.9.26+3 – Kanban documentation setup)
 **Version:** v0.6.9.30+2
 **Code:** E6S09
 
@@ -81,7 +81,7 @@ housekeeping_policy: keep
 
 - [x] **E06:S09:T25 – Starborn Legacy greenfield install diary — triage & upstream reaction (UXR-025)** - ✅ COMPLETE (HIGH, **v0.6.9.25+3** — F4/F5 fix **+2**; attempt 2 closure + F9 v1 catalog triage **+3**) — [Task](story-09-ai-dev-kit-installation-and-adopter-integration/T25-starborn-legacy-greenfield-install-diary-triage-uxr025.md) | [UXR-025](../../fr-br/UXR-025-starborn-legacy-greenfield-install-diary.md) | [IPP](../../../implementation-cycles/IPP-E06S09T25-starborn-legacy-greenfield-install-diary-triage-uxr025.md) | [Triage](../../../knowledge/analysis/projects/starborn-legacy-install-triage-matrix.md) | [Attempt 02](../../../../adk-install-into-sbl/attempt-02/greenfield-install-diary.md)
 
-- [ ] **E06:S09:T26 – Starborn Legacy ADK install program** - 🔄 IN PROGRESS (HIGH — attempt 05 complete; F17 resolved; F18/F19/F21 upstream filed) — [Task](story-09-ai-dev-kit-installation-and-adopter-integration/T26-starborn-legacy-adk-install-program.md) | SBL `starborn_legacy/logs/ai-dev-kit/install/attempt-05/` | [Triage matrix](../../../knowledge/analysis/projects/starborn-legacy-install-triage-matrix.md)
+- [ ] **E06:S09:T26 – Starborn Legacy ADK install program** - 🔄 IN PROGRESS (HIGH — T28–T30 **COMPLETE**; **attempt 06 replay** on **`v0.4.1140+2`** pending @ **v0.6.9.26+3**) — [Task](story-09-ai-dev-kit-installation-and-adopter-integration/T26-starborn-legacy-adk-install-program.md) | SBL `starborn_legacy/logs/ai-dev-kit/install/attempt-05/` | [Triage matrix](../../../knowledge/analysis/projects/starborn-legacy-install-triage-matrix.md)
 
 - [x] **E06:S09:T27 – Kanban v3.2 package rewrite for installer (F9/F17)** - ✅ COMPLETE (CRITICAL, **v0.6.9.27+2** — v3.2 installer + fingerprint validator fix; SemVer **v0.4.1133+2**) — [Task](story-09-ai-dev-kit-installation-and-adopter-integration/T27-kanban-v32-package-rewrite-installer-f9-f17.md) | [IPP](../../../implementation-cycles/IPP-E06S09T27-kanban-v32-package-rewrite-installer-f9-f17.md)
 
