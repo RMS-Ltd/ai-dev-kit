@@ -111,6 +111,36 @@ def _load_signoff_module():
     return signoff
 
 
+V32_SBL_RW_CONFIG = {
+    "use_kanban": True,
+    "kanban_root": "docs/kanban",
+    "epic_doc_pattern": "epics/epic-{epic:02d}/epic-{epic:02d}.md",
+    "story_doc_pattern": "epics/epic-{epic:02d}/story-{story:02d}-*.md",
+    "task_doc_pattern": "epics/epic-{epic:02d}/story-{story:02d}-*/T{task:02d}-*.md",
+}
+
+
+def _br086_rw_config_spec() -> dict:
+    return {
+        "require_keys": [
+            "use_kanban",
+            "kanban_root",
+            "epic_doc_pattern",
+            "story_doc_pattern",
+            "task_doc_pattern",
+        ],
+        "epic_doc_pattern_contains_any": [
+            "epic-{epic}/epic-{epic}",
+            "epic-{epic:02d}",
+        ],
+        "story_doc_pattern_contains_any": [
+            "story-{story:03d}",
+            "story-{story:02d}",
+        ],
+        "task_doc_pattern_contains_any": ["t{task", "T{task"],
+    }
+
+
 BOOK_T03_RW_CONFIG = {
     "use_kanban": True,
     "kanban_root": "docs/kanban",
@@ -118,6 +148,20 @@ BOOK_T03_RW_CONFIG = {
     "story_doc_pattern": "epics/epic-{epic:02d}/story-{story:03d}-*.md",
     "task_doc_pattern": "epics/epic-{epic:02d}/story-{story:03d}/t{task:02d}-*.md",
 }
+
+
+def test_signoff_br086_accepts_v32_sbl_rw_config():
+    import yaml
+
+    signoff = _load_signoff_module()
+    with tempfile.TemporaryDirectory() as tmp:
+        root = Path(tmp)
+        (root / "rw-config.yaml").write_text(
+            yaml.dump(V32_SBL_RW_CONFIG),
+            encoding="utf-8",
+        )
+        result = signoff._run_check_rw_config_patterns(root, _br086_rw_config_spec())
+        assert result.passed
 
 
 def test_signoff_br084_accepts_lowercase_task_pattern():
@@ -153,19 +197,7 @@ def test_signoff_br086_ready_after_br084_on_book_t03_config():
         "when_all": [
             {
                 "type": "rw_config_patterns",
-                "require_keys": [
-                    "use_kanban",
-                    "kanban_root",
-                    "epic_doc_pattern",
-                    "story_doc_pattern",
-                    "task_doc_pattern",
-                ],
-                "epic_doc_pattern_contains_any": [
-                    "epic-{epic}/epic-{epic}",
-                    "epic-{epic:02d}",
-                ],
-                "story_doc_pattern_contains": "story-{story:03d}",
-                "task_doc_pattern_contains": "t{task",
+                **_br086_rw_config_spec(),
             },
             {"type": "no_capitalised_kanban_segments"},
         ],
@@ -312,6 +344,34 @@ def test_book_t03_contract_br084_not_not_ready():
         if not i["ready"] and not i.get("skipped")
     ]
     assert not any(i["id"] == "BR-084" for i in not_ready)
+
+
+def test_v32_sbl_contract_br086_ready():
+    from unittest import mock
+
+    signoff = _load_signoff_module()
+    ok = signoff.CheckResult("command", True, "exit 0")
+
+    with tempfile.TemporaryDirectory() as tmp:
+        import yaml
+
+        root = Path(tmp)
+        kanban = root / "docs/kanban"
+        epic_dir = kanban / "epics" / "epic-01"
+        epic_dir.mkdir(parents=True)
+        (epic_dir / "epic-01.md").write_text("# Epic 1", encoding="utf-8")
+        (kanban / "kboard.md").write_text("# board", encoding="utf-8")
+        cfg = V32_SBL_RW_CONFIG.copy()
+        cfg["version_file"] = "version.py"
+        (root / "version.py").write_text("VERSION = '0.0.0.0+0'\n", encoding="utf-8")
+        (root / "rw-config.yaml").write_text(yaml.dump(cfg), encoding="utf-8")
+
+        with mock.patch.object(signoff, "_run_check_command", return_value=ok):
+            report = signoff.evaluate_all(root, signoff.CONTRACT_PATH)
+
+    by_id = {i["id"]: i for i in report["issues"]}
+    assert by_id["BR-086"]["skipped"] is False
+    assert by_id["BR-086"]["ready"] is True
 
 
 def test_install_doc_lists_task_doc_pattern_in_post_kanban_snippet():

@@ -1,0 +1,18 @@
+{
+  "report_type": "rw_structure_prune",
+  "invocation": "rw_step_7",
+  "evidence_mode": "structure_prune",
+  "release_scope": {
+    "epic": 6,
+    "story": 9,
+    "task": 28,
+    "task_id": "E06:S09:T28",
+    "version_string": "v0.6.9.28+2"
+  },
+  "rows": {
+    "E06:S09:T28": {
+      "allowed": true,
+      "reason": "Terminal COMPLETE v0.6.9.28+2 — task doc + BR-105 RESOLVED; removed C-band row; ledger appended kanban-completed.md + intake-completed.md"
+    }
+  }
+}

@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Intake Completed Items (FR/BR/UXR)
 
-**Last Updated:** 2026-06-10 (RW E02:S01:T30 — FR-122 program sign-off)
-**Version:** v0.2.1.30+8
+**Last Updated:** 2026-06-10 (RW E06:S09:T28 — BR-105 RESOLVED)
+**Version:** v0.6.9.28+2
 
 > **For open / in-flight intake items, see:** [`kboard.md`](kboard.md) (MoSCOW) and [`intake-structure.md`](intake-structure.md)  
 > **For completed Kanban tasks (E/S/T), see:** [`kanban-completed.md`](kanban-completed.md)  
@@ -33,6 +33,7 @@ This document tracks all **completed FRs (Feature Requests), BRs (Bug Reports), 
 
 | ID | Type | Description | Completed | Version | Agent |
 |----|------|-------------|-----------|---------|-------|
+| BR-105 | BR | v3.2 fresh install sign-off story padding mismatch — RESOLVED (**E06:S09:T28**; F18 contract alignment) | 2026-06-10T19:02:02Z | v0.6.9.28+2 | MWF E06:S09:T28 delivery |
 | FR-122 | FR | RW architectural contract & release transaction (meta) — COMPLETE (**E02:S01:T30**; streak 13/10) | 2026-06-10T15:56:12Z | v0.2.1.30+8 | RW E02:S01:T30 --art |
 | FR-118 | FR | Promote Kanban to `docs/kanban/`; retire `project-management/` shell | 2026-06-08 | v0.7.1.12+2 | RW E07:S01:T12 --art |
 | FR-117 | FR | MIT LICENSE file and repository legal metadata — COMPLETE (**E01:S06:T02**) | 2026-06-07T17:56:44Z | v0.1.6.2+1 | RW E01:S06:T02 --art |

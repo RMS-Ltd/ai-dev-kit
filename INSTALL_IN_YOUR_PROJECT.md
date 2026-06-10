@@ -285,6 +285,8 @@ Per [ADR-018](docs/architecture/standards-and-adrs/ADR-018-single-kanban-board-c
 
 Mode **C** of `install_release_workflow.py` **detects** this layout and pre-fills matching defaults (press Enter to accept). If detection finds files, you should see match previews instead of zero-match warnings.
 
+**Sign-off (BR-086 / BR-105):** Automated install sign-off accepts kanban v3.2 / UXR-014 patterns (`story-{story:02d}`, `T{task:02d}`) as well as book T03 patterns (`story-{story:03d}`, `t{task:02d}`). No manual Step 4.1 edit is required for either convention.
+
 ### Greenfield `version_file` scaffold (BR-088 / GitHub #18)
 
 Greenfield adopters often have **no `src/` tree** when mode C runs. After `rw-config.yaml` is written, the installer **prompts** (default **Yes**):

@@ -88,12 +88,16 @@ issues:
         epic_doc_pattern_contains_any:
           - "epic-{epic}/epic-{epic}"
           - "epic-{epic:02d}"
-        story_doc_pattern_contains: "story-{story:03d}"
-        task_doc_pattern_contains: "t{task"
+        story_doc_pattern_contains_any:
+          - "story-{story:03d}"
+          - "story-{story:02d}"
+        task_doc_pattern_contains_any:
+          - "t{task"
+          - "T{task"
       - type: no_capitalised_kanban_segments
     close_comment: |
-      ✅ **Installer sign-off (automated)** — Lowercase fresh kanban RW mode C: unpadded epic pattern matches on-disk files; forward-looking `story-{story:03d}` and lowercase `t{task}` task pattern persisted without manual Step 4.1 edit.
-      Evidence: adopter replay on `main`. Maintainer: confirm against BR-086 AC.
+      ✅ **Installer sign-off (automated)** — Lowercase fresh kanban RW mode C: epic pattern matches on-disk files; story pattern uses book `story-{story:03d}` or kanban v3.2 / UXR-014 `story-{story:02d}`; task pattern uses lowercase `t{task}` or v3.2 capital `T{task}`.
+      Evidence: adopter replay on `main`. Maintainer: confirm against BR-086 / BR-105 AC.
 
   # BR-088 (#18): version_file scaffold — E06:S09:T19
   - id: BR-088

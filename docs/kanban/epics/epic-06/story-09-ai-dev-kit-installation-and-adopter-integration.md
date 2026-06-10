@@ -85,7 +85,7 @@ housekeeping_policy: keep
 
 - [x] **E06:S09:T27 – Kanban v3.2 package rewrite for installer (F9/F17)** - ✅ COMPLETE (CRITICAL, **v0.6.9.27+2** — v3.2 installer + fingerprint validator fix; SemVer **v0.4.1133+2**) — [Task](story-09-ai-dev-kit-installation-and-adopter-integration/T27-kanban-v32-package-rewrite-installer-f9-f17.md) | [IPP](../../../implementation-cycles/IPP-E06S09T27-kanban-v32-package-rewrite-installer-f9-f17.md)
 
-- [ ] **E06:S09:T28 – v3.2 fresh install sign-off story padding (BR-105 / F18)** - 📋 TODO (MEDIUM, kanban init **v0.6.9.28+1**) — [Task](story-09-ai-dev-kit-installation-and-adopter-integration/T28-v32-fresh-install-signoff-story-padding-br105.md) | [BR-105](../../fr-br/BR-105-v32-fresh-install-signoff-story-padding-mismatch.md)
+- [x] **E06:S09:T28 – v3.2 fresh install sign-off story padding (BR-105 / F18)** - ✅ COMPLETE (v0.6.9.28+2 — contract alignment) — [Task](story-09-ai-dev-kit-installation-and-adopter-integration/T28-v32-fresh-install-signoff-story-padding-br105.md) | [BR-105](../../fr-br/BR-105-v32-fresh-install-signoff-story-padding-mismatch.md)
 
 - [ ] **E06:S09:T29 – RW install non-interactive CHANGELOG prompt (BR-106 / F19)** - 📋 TODO (HIGH, kanban init **v0.6.9.29+1**) — [Task](story-09-ai-dev-kit-installation-and-adopter-integration/T29-rw-install-non-interactive-changelog-prompt-br106.md) | [BR-106](../../fr-br/BR-106-rw-install-non-interactive-changelog-prompt-eof.md)
 

@@ -11,10 +11,10 @@ housekeeping_policy: keep
 **Bug ID:** BR-105  
 **Priority:** MEDIUM  
 **Severity:** MEDIUM (install sign-off false negative on otherwise valid v3.2 fresh install)  
-**Status:** INTAKE  
+**Status:** RESOLVED  
 **Source finding:** **F18** (Starborn Legacy install attempt 05)  
-**Related:** [BR-086](BR-086-rw-install-lowercase-fresh-kanban-patterns-signoff.md) (RESOLVED @ v0.6.9.16+3 — book replay; v3.2 SBL replay still NOT READY) · [UXR-014](UXR-014-two-digit-est-identifier-default-formatting.md) · [E06:S09:T27](../epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T27-kanban-v32-package-rewrite-installer-f9-f17.md)  
-**Implementing Task:** [E06:S09:T28](../epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T28-v32-fresh-install-signoff-story-padding-br105.md)  
+**Related:** [BR-086](BR-086-rw-install-lowercase-fresh-kanban-patterns-signoff.md) (RESOLVED @ v0.6.9.16+3 — book replay; v3.2 SBL replay fixed @ **v0.6.9.28+2**) · [UXR-014](UXR-014-two-digit-est-identifier-default-formatting.md) · [E06:S09:T27](../epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T27-kanban-v32-package-rewrite-installer-f9-f17.md)  
+**Implementing Task:** [E06:S09:T28](../epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T28-v32-fresh-install-signoff-story-padding-br105.md) (**COMPLETE** @ v0.6.9.28+2)  
 **SBL evidence:** `starborn_legacy/logs/ai-dev-kit/install/attempt-05/feedback-package/` · transcript `…/transcripts/20260610T183541Z-phase4-signoff.txt`
 
 ---
@@ -52,6 +52,6 @@ Pick one authoritative rule; document in INSTALL + sign-off contract.
 
 ## Acceptance criteria
 
-- [ ] Fresh v3.2 kanban install + RW mode C on SBL-style dual-tree profile → BR-086 **READY** (or BR-086 superseded by v3.2-specific sign-off rule with documented migration).
-- [ ] No regression on book ExpensesTracker replay that closed #17.
-- [ ] Triage matrix F18 disposition updated when fixed.
+- [x] Fresh v3.2 kanban install + RW mode C on SBL-style dual-tree profile → BR-086 **READY** (contract alignment @ v0.6.9.28+2; automated tests).
+- [x] No regression on book ExpensesTracker replay that closed #17.
+- [x] Triage matrix F18 disposition updated when fixed.

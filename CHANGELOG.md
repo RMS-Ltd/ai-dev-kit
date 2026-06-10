@@ -11,8 +11,8 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
-## [0.6.9.30+1] - 10-06-26
+## [0.6.9.28+2] - 10-06-26
 
-E06:S09:T30 — BR-107 / F21 intake kanban init (Kanban installer log epic path padding). SemVer **v0.4.1137+1**.
+E06:S09:T28 — BR-105 v3.2 fresh install sign-off story padding (F18 contract alignment). SemVer **v0.4.1138+2**.
 
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.6.9.30+1.md)
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.6.9.28+2.md)

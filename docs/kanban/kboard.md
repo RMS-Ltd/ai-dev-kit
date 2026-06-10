@@ -107,8 +107,6 @@ housekeeping_policy: keep
 
 - **E06:S09:T30** – Kanban installer log epic path padding (BR-107 / F21) - 📋 TODO (LOW, kanban init **v0.6.9.30+1**) | [Task](epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T30-kanban-installer-log-epic-path-padding-br107.md) | [BR-107](fr-br/BR-107-kanban-installer-log-epic-path-padding-mismatch.md) | —No IPP— | Last modified: 2026-06-10 18:58 UTC
 
-- **E06:S09:T28** – v3.2 fresh install sign-off story padding (BR-105 / F18) - 📋 TODO (MEDIUM, kanban init **v0.6.9.28+1**) | [Task](epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T28-v32-fresh-install-signoff-story-padding-br105.md) | [BR-105](fr-br/BR-105-v32-fresh-install-signoff-story-padding-mismatch.md) | —No IPP— | Last modified: 2026-06-10 18:56 UTC
-
 - **E08:S03:T20** – README Python prerequisites alignment (UXR-026) - ⏳ SHIPPED (MEDIUM, **v0.8.3.20+1**) | [Task](epics/epic-08/story-03-automation-scripts/T20-readme-python-prerequisites-uxr026.md) | [UXR-026](fr-br/UXR-026-readme-python-prerequisites-contradicts-311-policy.md) | [FR-104](fr-br/FR-104-python-minimum-version-policy-alignment.md) | [—IPP—](../../implementation-cycles/IPP-E08S03T20-readme-python-prerequisites-uxr026.md) | Last modified: 2026-06-10 21:30 UTC
 
 #### Epic 21 (E21) — full inventory: backlog (11 tasks)

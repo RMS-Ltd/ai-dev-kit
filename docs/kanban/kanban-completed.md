@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Completed Tasks
 
-**Last Updated:** 2026-06-10 (RW E06:S09:T27+2 — fingerprint validator path fix)
-**Version:** v0.6.9.27+2
+**Last Updated:** 2026-06-10 (RW E06:S09:T28 — BR-105 sign-off padding)
+**Version:** v0.6.9.28+2
 
 > **For MoSCOW prioritized tasks, see:** [`kboard.md`](kboard.md)  
 > **For completed FR/BR/UXR intake items, see:** [`intake-completed.md`](intake-completed.md)
@@ -19,6 +19,10 @@ housekeeping_policy: keep
 ---
 
 ## 20 Most Recently Completed Tasks
+
+#### **MWF (2026-06-10)** — E06:S09:T28 @ **v0.6.9.28+2** (BR-105 v3.2 sign-off story padding)
+
+- **[E06:S09:T28](epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T28-v32-fresh-install-signoff-story-padding-br105.md)** — Contract alignment: BR-086 accepts v3.2 UXR-014 `{story:02d}` / `T{task}` patterns; resolves F18. SemVer **v0.4.1138+2**. **Completed:** `2026-06-10T19:02:02Z` | **Version:** `v0.6.9.28+2` | **Agent:** `MWF E06:S09:T28 delivery` | [BR-105](fr-br/BR-105-v32-fresh-install-signoff-story-padding-mismatch.md) | [IPP](../../implementation-cycles/IPP-E06S09T28-br105-v32-signoff-story-padding.md)
 
 #### **RW (2026-06-10)** — E06:S09:T27 @ **v0.6.9.27+2** (v3.2 fingerprint validator path fix)
 
