@@ -21,7 +21,7 @@ housekeeping_policy: keep
 ## Task ID
 
 **Format:** `E\{epic\}:S\{story\}:T\{task\}`  
-**Full Task ID:** `E07:S01:T10`
+**Full Task ID:** `E07:S01:T10` (shares slot with historical [FR-059 logging task](E07S01T10-enhanced-workflow-logging-system.md) — `✅ COMPLETE` via E02:S08:T08; renumber pending)
 
 ---
 

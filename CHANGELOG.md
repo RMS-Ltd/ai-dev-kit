@@ -11,8 +11,8 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
-## [0.2.16.2+4] - 10-06-26
+## [0.2.16.2+5] - 10-06-26
 
-E02:S16:T02 — UKW bookkeeping: Epic 21 kanban version-marker sync post E21:S04:T05; KB-INDEX regeneration. SemVer **v0.4.1117+4**.
+E02:S16:T02 — UKW bookkeeping: E07:S01:T10 FR-059 supersession reconciliation; epic-07 story sync. SemVer **v0.4.1118+5**.
 
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.16.2+4.md)
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.16.2+5.md)

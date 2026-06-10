@@ -13,7 +13,7 @@ housekeeping_policy: keep
 **Estimated Effort:** [TBD]  
 **Created:** 2025-12-09  
 **Completed:** [Reopened – TBD]  
-**Last updated:** 2026-06-08 (v0.7.1.12+2 – Kanban documentation setup)
+**Last updated:** 2026-06-10 (E07:S01:T10 FR-059 supersession reconciliation — UKW bookkeeping)
 **Branch:** `epic/7-documentation-maintenance`  
 **Version Schema:** `0.7.S.T+B`  
 **Production URL:** [N/A for this repo]
@@ -26,7 +26,7 @@ housekeeping_policy: keep
   - Story: [`story-00-uxr-repo.md`](story-00-uxr-repo.md)
   - **Note:** S00 omitted from board displays (UX optimization)
 
-- [ ] **E7:S01 – Codebase Maintenance Tasks** - IN PROGRESS (v0.7.1.12+1 — **T12** FR-118 kanban-init; UXR-005 on **T09**; UCW **T06** open)
+- [ ] **E7:S01 – Codebase Maintenance Tasks** - IN PROGRESS (E07:S01:T10 FR-059 reconciled via E02:S08:T08; hygiene T10 TODO)
 - [x] **E7:S02 – Code Review Standards and Processes** - ✅ COMPLETE (v0.7.2.4+1 – All tasks complete)
 - [x] **E7:S03 – Code Quality Metrics and Monitoring** - ✅ COMPLETE (v0.7.3.4+1 – All tasks complete)
 - [x] **E7:S04 – Maintenance Automation and Tooling** - ✅ COMPLETE (v0.7.4.4+1 – All tasks complete)
@@ -73,7 +73,7 @@ This epic works in conjunction with Epic 4 (Kanban Framework) to provide a compl
 **Status:** IN PROGRESS  
 **Priority:** HIGH  
 **Estimated Effort:** [TBD]  
-**Last updated:** 2026-06-08 (v0.7.1.12+2 – Kanban documentation setup)
+**Last updated:** 2026-06-10 (E07:S01:T10 FR-059 supersession reconciliation — UKW bookkeeping)
 
 **Goal:** Establish systematic processes for addressing IDE-flagged issues and organizing codebase maintenance work.
 

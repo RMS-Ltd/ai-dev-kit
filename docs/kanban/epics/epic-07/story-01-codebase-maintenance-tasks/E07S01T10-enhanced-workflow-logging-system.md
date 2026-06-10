@@ -8,13 +8,14 @@ housekeeping_policy: keep
 
 # Epic 7, Story 1, Task 10: Enhanced Workflow Logging System Implementation
 
-**Task ID:** E07:S01:T10  
-**Status:** SUPERSEDED — canonical FR-059 delivery is [E02:S08:T08](../../epic-02/story-08-harden-release-workflow-reliability/T08-enhanced-workflow-forensic-logging-and-rollback-hardening-fr-059.md) (`v0.2.8.8+3`). This doc retained for historical E07 intake only.  
+**Task ID:** E07:S01:T10 (historical — FR-059 intake)  
+**Status:** COMPLETE  
+**Forensic marker:** `✅ COMPLETE (v0.2.8.8+3 via E02:S08:T08)` — scope delivered under [E02:S08:T08](../../epic-02/story-08-harden-release-workflow-reliability/T08-enhanced-workflow-forensic-logging-and-rollback-hardening-fr-059.md); supersession reconciled 2026-06-10 per [IPP-E07S01T10](../../../implementation-cycles/IPP-E07S01T10-supersession-reconciliation.md).  
 **Priority:** HIGH  
 **Created:** 2026-03-17  
 **Started:** 2026-03-17  
-**Completed:** 2026-03-17  
-**Version:** v0.7.1.10+1 (historical; not FR-059 implementation evidence)  
+**Completed:** 2026-06-10 (supersession reconciliation)  
+**Version:** v0.7.1.10+1 (historical E07 filing only; FR-059 evidence is `v0.2.8.8+3`)  
 **Related FR:** [FR-059](../../../fr-br/FR-059-enhanced-workflow-logging-system.md)  
 
 ---
@@ -245,5 +246,5 @@ Implement the enhanced workflow logging system with forensic capabilities and ro
 
 ---
 
-**Last Updated:** 2026-06-10 (IPW wiring — IPP-E07S01T10 created)  
-**Next Review:** Upon implementation planning
+**Last Updated:** 2026-06-10 (supersession reconciliation — IPP-E07S01T10 executed)  
+**Next Review:** N/A — historical closure doc only

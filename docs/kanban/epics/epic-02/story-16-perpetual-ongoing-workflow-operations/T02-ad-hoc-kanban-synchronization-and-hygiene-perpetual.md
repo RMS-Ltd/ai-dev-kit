@@ -14,8 +14,8 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** Medium  
 **Created:** 2026-04-22  
-**Last updated:** 2026-06-10 (v0.2.16.2+4 — UKW bookkeeping; Epic 21 version-marker sync)
-**Version Anchor:** v0.2.16.2+4
+**Last updated:** 2026-06-10 (v0.2.16.2+5 — UKW bookkeeping; E07:S01:T10 FR-059 supersession reconciliation)
+**Version Anchor:** v0.2.16.2+5
 **Code:** E02S16T02
 **Task Type:** Perpetual Maintenance
 

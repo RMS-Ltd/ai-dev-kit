@@ -10,7 +10,7 @@ housekeeping_policy: keep
 
 **Status:** IN PROGRESS  
 **Priority:** HIGH  
-**Last updated:** 2026-06-08 (v0.7.1.12+2 – Kanban documentation setup)
+**Last updated:** 2026-06-10 (E07:S01:T10 FR-059 supersession reconciliation)
 **Version:** v0.7.1.12+2
 **Estimated Effort:** [TBD]  
 **Actual Effort:** [TBD]  
@@ -39,7 +39,8 @@ housekeeping_policy: keep
 - [ ] **E07:S01:T08 – Task Doc Naming Standardization** - IN PROGRESS (v0.7.1.6+2 – Establishes `EddSddTdd-[title].md` canonical naming and migration plan)
   - Task: [`T08-task-doc-naming-standardization`](story-01-codebase-maintenance-tasks/T08-task-doc-naming-standardization.md)
 - [x] **E07:S01:T09 – Kanban Template Governance & UXR Ownership** - ✅ COMPLETE (v0.7.1.9+5 — UXR-005 spacing validator + corpus; see task doc)
-- [ ] **E07:S01:T10 – Project Root Hygiene and Legacy Docs Rationalization** - TODO (UXR-013 intake filed; IPW pending before implementation)
+- [x] **E07:S01:T10 – Enhanced Workflow Logging System (FR-059)** - ✅ COMPLETE (`v0.2.8.8+3` via E02:S08:T08) — [Task](story-01-codebase-maintenance-tasks/E07S01T10-enhanced-workflow-logging-system.md) | [IPP](../../../implementation-cycles/IPP-E07S01T10-supersession-reconciliation.md)
+- [ ] **E07:S01:T10 – Project Root Hygiene and Legacy Docs Rationalization (UXR-013)** - TODO (ID collision with historical FR-059 T10 — renumber pending; IPW before implementation) — [Task](story-01-codebase-maintenance-tasks/T10-project-root-hygiene-and-legacy-docs-rationalization.md)
 - [x] **E07:S01:T11 – Consolidate governance under `docs/governance/` (FR-101)** - ✅ COMPLETE (v0.7.1.11+8 — Waves 0–F; ADR-007) - [Task Document](story-01-codebase-maintenance-tasks/T11-consolidate-governance-under-docs-governance-fr101.md) | [IPP](../../../implementation-cycles/IPP-E7S01T11-consolidate-governance-under-docs-governance.md) | [FR-101](../../fr-br/FR-101-consolidate-governance-under-docs-governance.md)
 - [x] **E07:S01:T12 – Promote Kanban to `docs/kanban/` and retire `project-management/` (FR-118)** - ✅ COMPLETE (v0.7.1.12+2) - [Task Document](story-01-codebase-maintenance-tasks/T12-promote-kanban-to-docs-kanban-retire-project-management-fr118.md) | [FR-118](../../fr-br/FR-118-promote-kanban-to-docs-kanban-retire-project-management-shell.md) | [IPP](../../../implementation-cycles/IPP-E07S01T12-kanban-path-promotion-fr118.md)
 
