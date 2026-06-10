@@ -1,9 +1,9 @@
 # KB Index
 
-**Generated:** 2026-06-10 09:54:47 UTC  
+**Generated:** 2026-06-10 10:00:36 UTC  
 **Scope:** /Users/rms/Documents/projects/ai-dev-kit/docs  
-**Total files:** 3112  
-**Total size:** 14.63 MB
+**Total files:** 3116  
+**Total size:** 14.64 MB
 
 ---
 
@@ -14,12 +14,12 @@
 | analysis | 9 | 152.7 KB | 9 | 0 | 9 | 0 | 0 | 0 |
 | architecture | 126 | 1.24 MB | 120 | 6 | 119 | 1 | 0 | 0 |
 | book-project | 2 | 26.5 KB | 1 | 1 | 1 | 0 | 0 | 0 |
-| changelog-and-release-notes | 1429 | 3.98 MB | 199 | 1230 | 183 | 0 | 1 | 0 |
+| changelog-and-release-notes | 1432 | 3.98 MB | 199 | 1233 | 183 | 0 | 1 | 0 |
 | developer-tools | 2 | 12.7 KB | 2 | 0 | 2 | 0 | 0 | 0 |
 | documentation | 33 | 354.3 KB | 30 | 3 | 30 | 0 | 0 | 0 |
 | governance | 23 | 189.5 KB | 23 | 0 | 23 | 0 | 0 | 0 |
 | guides | 7 | 28.9 KB | 7 | 0 | 7 | 0 | 0 | 0 |
-| implementation-cycles | 255 | 2.13 MB | 215 | 40 | 200 | 2 | 1 | 0 |
+| implementation-cycles | 256 | 2.14 MB | 216 | 40 | 201 | 2 | 1 | 0 |
 | journals | 4 | 14.7 KB | 0 | 4 | 0 | 0 | 0 | 0 |
 | kanban | 1119 | 5.21 MB | 1075 | 44 | 1045 | 0 | 3 | 0 |
 | knowledge | 75 | 1.17 MB | 72 | 3 | 69 | 1 | 2 | 3 |
@@ -32,7 +32,7 @@
 ## Optimization signals
 
 - **docs/README.md exists:** False
-- **Files missing lifecycle frontmatter:** 1342
+- **Files missing lifecycle frontmatter:** 1345
 - **Timeboxed/transient with expires_at in the past:** 3
 - **READMEs (under docs/):** 22
 
@@ -88,7 +88,7 @@
 - `changelog-and-release-notes/changelog-archive/CHANGELOG_v0.10.1.3+1.md`
 - `changelog-and-release-notes/changelog-archive/CHANGELOG_v0.10.1.4+1.md`
 - `changelog-and-release-notes/changelog-archive/CHANGELOG_v0.10.1.5+1.md`
-- ... and 1292 more
+- ... and 1295 more
 
 ### Expired (candidates for archive/delete)
 
@@ -423,6 +423,7 @@
 | implementation-cycles/IPP-E02S14T01-enumerate-workflow-mgt-installation-paths.md | 10.5 KB | 1426 | evergreen | 2026-06-05T18:00:00 |  |
 | implementation-cycles/IPP-E02S15T01-br066-corpus-tail-phase3.md | 5.5 KB | 705 | evergreen | 2026-06-03T00:00:00 |  |
 | implementation-cycles/IPP-E02S15T01-br066-publication-backfill-phase2.md | 7.0 KB | 888 | evergreen | 2026-06-02T00:00:00 |  |
+| implementation-cycles/IPP-E02S16T06-github-security-code-quality-health-perpetual-fr112.md | 24.7 KB | 3866 | evergreen | 2026-06-05T17:00:00 |  |
 | implementation-cycles/IPP-E02S16T06-ukw-rp-flag-fr085.md | 14.9 KB | 2107 | evergreen | 2026-05-30T22:00:00 |  |
 | implementation-cycles/IPP-E02S16T13-br059-ukw-moscow-full-story-coverage.md | 10.7 KB | 1422 | evergreen | 2026-06-02T16:00:00 |  |
 | implementation-cycles/IPP-E02S16T15-workflow-initiation-cheatsheet.md | 6.9 KB | 957 | evergreen | 2026-05-30T20:00:00 |  |
@@ -488,7 +489,7 @@
 | implementation-cycles/IPP-E08S03T13-code-quality-reliability-backlog-br100.md | 29.3 KB | 4307 | evergreen | 2026-06-05T23:30:00 |  |
 | implementation-cycles/IPP-E08S03T14-code-quality-ai-suggestions-backlog-br101.md | 28.5 KB | 4171 | evergreen | 2026-06-05T23:45:00 |  |
 | implementation-cycles/IPP-E08S03T15-github-actions-ci-health-perpetual-fr112.md | 13.2 KB | 1922 | evergreen | 2026-06-05T18:00:00 |  |
-| implementation-cycles/IPP-E08S03T16-github-security-code-quality-health-perpetual-fr112.md | 20.8 KB | 3240 | evergreen | 2026-06-05T17:00:00 |  |
+| implementation-cycles/IPP-E08S03T16-github-security-code-quality-health-perpetual-fr112.md | 677 B | 39 | evergreen | 2026-06-05T17:00:00 |  |
 | implementation-cycles/IPP-E08S03T17-local-code-quality-gate-cqg-fr113.md | 8.2 KB | 1212 | evergreen | 2026-06-06T14:30:00 |  |
 | implementation-cycles/IPP-E09S01T03-gap-comparison-fr032.md | 6.6 KB | 950 | evergreen | 2026-06-04T22:00:00 |  |
 | implementation-cycles/IPP-E10S01T01-expectations-baseline-doc-lifecycle.md | 17.1 KB | 2255 | evergreen | 2026-06-06T12:00:00 |  |
@@ -799,7 +800,7 @@
 | kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T04-ad-hoc-repository-infrastructure-maintenance-perpetual.md | 2.6 KB | 310 | evergreen | 2026-05-19T00:00:00 |  |
 | kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T05-github-actions-ci-health-perpetual.md | 5.9 KB | 719 | evergreen | 2026-06-05T16:00:00 |  |
 | kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T05-markdown-documentation-maintenance-perpetual.md | 390 B | 27 | evergreen | 2026-06-08T00:00:00 |  |
-| kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T06-github-security-code-quality-health-perpetual.md | 21.8 KB | 2849 | evergreen | 2026-06-05T16:00:00 |  |
+| kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T06-github-security-code-quality-health-perpetual.md | 24.6 KB | 3259 | evergreen | 2026-06-05T16:00:00 |  |
 | kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T06-ukw-optional-reprioritization-rp-flag-fr085.md | 433 B | 27 | evergreen | 2026-06-08T00:00:00 |  |
 | kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T07-ad-hoc-documentation-maintenance-perpetual.md | 4.9 KB | 522 | evergreen | 2026-06-09T00:00:00 |  |
 | kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T07-ukw-extension-for-fr-br-uxr-temporal-tracking-fr050.md | 679 B | 42 | evergreen | 2026-06-08T00:00:00 |  |
@@ -1449,7 +1450,7 @@
 | kanban/epics/epic-21/story-04-cultural-adaptation/T05-configure-locale-specific-formatting-dates-times-numbers-cur.md | 1.7 KB | 186 | evergreen | 2026-06-05T05:06:04 |  |
 | kanban/epics/epic-21/story-04-cultural-adaptation/T06-test-cultural-adaptations.md | 1.6 KB | 174 | evergreen | 2026-06-05T05:06:04 |  |
 | kanban/epics/epic-21/story-04-cultural-adaptation/T07-document-cultural-considerations-and-guidelines.md | 1.5 KB | 167 | evergreen | 2026-06-05T05:06:04 |  |
-| kanban/epics/epic-21/story-04-cultural-adaptation.md | 3.8 KB | 341 | evergreen | 2025-12-09T18:35:00 |  |
+| kanban/epics/epic-21/story-04-cultural-adaptation.md | 3.8 KB | 340 | evergreen | 2025-12-09T18:35:00 |  |
 | kanban/epics/epic-21/story-04-european-languages-localization/REDIRECT.md | 353 B | 30 |  |  |  |
 | kanban/epics/epic-21/story-05-cjk-languages-localization/REDIRECT.md | 339 B | 29 |  |  |  |
 | kanban/epics/epic-21/story-05-european-languages-localization/T01-spanish-es-translation-files.md | 3.0 KB | 288 | evergreen | 2026-06-06T17:00:00 |  |
@@ -1706,8 +1707,8 @@
 | kanban/kanban-board-guide.md | 16.5 KB | 2136 | evergreen | 2026-01-20T00:00:00 |  |
 | kanban/kanban-completed.md | 128.5 KB | 10247 | evergreen | 2026-03-09T00:00:00 |  |
 | kanban/kanban-structure.md | 25.5 KB | 2227 | evergreen | 2026-03-09T00:00:00 |  |
-| kanban/kboard.md | 29.8 KB | 2061 | evergreen | 2025-12-04T12:02:50 |  |
-| knowledge/KB-INDEX.md | 237.2 KB | 22270 |  |  |  |
+| kanban/kboard.md | 30.2 KB | 2088 | evergreen | 2025-12-04T12:02:50 |  |
+| knowledge/KB-INDEX.md | 237.6 KB | 22309 |  |  |  |
 | knowledge/README.md | 2.5 KB | 259 | evergreen | 2026-06-07T12:00:00 |  |
 | knowledge/USE_CASE_METHODOLOGY.md | 14.3 KB | 1844 | evergreen | 2025-12-16T14:30:00 |  |
 | knowledge/analysis/abstract-anti-patterns-use-case-exposed-design-flaw.md | 13.0 KB | 1796 | evergreen | 2025-12-18T00:00:00 |  |
@@ -1810,5 +1811,5 @@
 | project-agent-index.md | 4.3 KB | 392 | evergreen | 2026-05-30T21:00:00 |  |
 | project-management/README.md | 523 B | 34 | evergreen | 2025-12-04T12:01:54 |  |
 | release-notes/README.md | 1.4 KB | 123 | evergreen | 2026-06-07T12:00:00 |  |
-| changelog-and-release-notes/changelog-archive/ (summary) (1427 files) | 3.97 MB | 460829 |  |  |  |
+| changelog-and-release-notes/changelog-archive/ (summary) (1430 files) | 3.98 MB | 461496 |  |  |  |
 

@@ -15,7 +15,7 @@ housekeeping_policy: keep
 **Estimated Effort:** Medium (ongoing)  
 **Created:** 2026-06-05  
 **Last updated:** 2026-06-10 (IPW Wave 4 — manifest @ `38d2454`; AC13/AC14)  
-**Version Anchor:** v0.8.3.16+9 (Wave 3e)  
+**Version Anchor:** v0.2.16.6+3 (Wave 4a)  
 **Code:** E02S16T06  
 **Task Type:** Perpetual Maintenance
 
@@ -386,8 +386,8 @@ Use **`RW E02:S16:T06`** for recurring security/Code Quality hygiene (BUILD incr
 - [x] **AC10 (Wave 3c):** Final `py/empty-except` stragglers shipped **v0.8.3.16+6**; pytest green; operator post-merge verify **pending**.
 - [x] **AC11 (Wave 3d):** `cli/logging.py` empty-except shipped **v0.8.3.16+7**; repo grep clean; operator post-merge verify **pending**.
 - [x] **AC12 (Wave 3e):** Autofix PR #43/#44 pytest triage merged to `main`; shipped **v0.8.3.16+9**; operator dismiss #43 finding **pending**.
-- [ ] **AC13 (Wave 4a):** Wave 4 manifest **10** M @ `38d2454`; 3c/3d/3e verify notes closed; shipped **v0.2.16.6+2**.
-- [ ] **AC14 (Wave 4b):** Maintainability burn-down of **10** findings; pytest/CQG/greenfield green; operator TC24 verify; shipped **v0.2.16.6+3**.
+- [x] **AC13 (Wave 4a):** Wave 4 manifest **10** M @ `38d2454`; 3c/3d/3e verify notes closed; shipped **v0.2.16.6+3**.
+- [ ] **AC14 (Wave 4b):** Maintainability burn-down of **10** findings; pytest/CQG/greenfield green; operator TC24 verify; shipped **v0.2.16.6+4**.
 
 ---
 
