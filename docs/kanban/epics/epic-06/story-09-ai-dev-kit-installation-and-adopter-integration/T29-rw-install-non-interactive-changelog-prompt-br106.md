@@ -9,12 +9,12 @@ housekeeping_policy: keep
 # E06:S09:T29 — RW install non-interactive CHANGELOG prompt (BR-106 / F19)
 
 **Task ID:** E06:S09:T29  
-**Status:** TODO  
+**Status:** COMPLETE  
 **Priority:** HIGH  
 **Created:** 2026-06-10  
-**Last updated:** 2026-06-10 (v0.6.9.29+1 – Kanban documentation setup)  
-**Version:** v0.6.9.29+1  
-**Version Anchor:** v0.6.9.29+1  
+**Last updated:** 2026-06-10 (v0.6.9.29+2 — BR-106 non-interactive scaffold fix)  
+**Version:** v0.6.9.29+2  
+**Version Anchor:** v0.6.9.29+2  
 **Code:** E06S09T29  
 
 **Parent program:** [E06:S09:T26](T26-starborn-legacy-adk-install-program.md)  
@@ -24,6 +24,7 @@ housekeeping_policy: keep
 
 ## Input
 
+- **IPP:** [`IPP-E06S09T29-br106-non-interactive-changelog-scaffold.md`](../../../../implementation-cycles/IPP-E06S09T29-br106-non-interactive-changelog-scaffold.md)
 - [BR-106](../../../fr-br/BR-106-rw-install-non-interactive-changelog-prompt-eof.md)
 - SBL attempt 05 FB: `starborn_legacy/logs/ai-dev-kit/install/attempt-05/feedback-package/feedback-payload.json`
 - RW bootstrap transcript: `…/attempt-05/transcripts/20260610T183451Z-phase3a-rw-bootstrap.txt`
@@ -45,6 +46,6 @@ Non-interactive RW install path with CHANGELOG scaffold defaults/tests; INSTALL 
 
 ## Acceptance criteria
 
-- [ ] `--non-interactive` RW install modes complete without CHANGELOG EOFError on clean tree.
-- [ ] Tests cover CHANGELOG + version_file non-interactive paths.
-- [ ] FR-108 error codes emitted when scaffold cannot proceed unattended.
+- [x] `--non-interactive` RW install modes complete without CHANGELOG EOFError on clean tree.
+- [x] Tests cover CHANGELOG + version_file non-interactive paths.
+- [x] FR-108 error codes emitted when scaffold cannot proceed unattended (existing `ADK-I03.E12` path unchanged).

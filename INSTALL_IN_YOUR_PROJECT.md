@@ -289,7 +289,7 @@ Mode **C** of `install_release_workflow.py` **detects** this layout and pre-fill
 
 ### Greenfield `version_file` scaffold (BR-088 / GitHub #18)
 
-Greenfield adopters often have **no `src/` tree** when mode C runs. After `rw-config.yaml` is written, the installer **prompts** (default **Yes**):
+Greenfield adopters often have **no `src/` tree** when mode C runs. After `rw-config.yaml` is written, the installer **prompts** (default **Yes**) in interactive mode:
 
 > Create minimal version file at `src/your_app/version.py` (initial `0.1.1.1+1`)?
 
@@ -297,6 +297,8 @@ Greenfield adopters often have **no `src/` tree** when mode C runs. After `rw-co
 - **No** — install reports **INSTALLATION PARTIAL** with copy-paste `mkdir` / versioning guidance (not **SUCCESS** until the file exists).
 
 Use `--dry-run` to preview without writing the stub. Book T03 Step 3.2 manual scaffold remains valid if you declined the prompt.
+
+**Non-interactive (`--non-interactive`, `--config`, or `--locale`):** the installer **does not prompt** for `version_file` or `CHANGELOG.md`. Missing paths receive deterministic stubs automatically (same defaults as accepting the interactive prompt). Unattended / CI installs should pass `--non-interactive` and may omit pre-creating those files.
 
 Copy-paste fallback if you skip the installer prompts:
 

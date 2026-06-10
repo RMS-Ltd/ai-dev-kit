@@ -1641,6 +1641,9 @@ Brownfield (existing repo):
     
     version_file_blocking = False
     changelog_warnings: List[str] = []
+    scaffold_interactive = not (
+        args.non_interactive or bool(_locale_tag) or bool(args.config)
+    )
 
     if not args.dry_run:
         config_path.write_text(config_yaml, encoding='utf-8')
@@ -1654,7 +1657,7 @@ Brownfield (existing repo):
             project_root,
             config,
             dry_run=False,
-            interactive=not bool(args.config),
+            interactive=scaffold_interactive,
         )
         if scaffold_result.version_file_missing:
             version_file_blocking = True
@@ -1663,7 +1666,7 @@ Brownfield (existing repo):
             project_root,
             config,
             dry_run=False,
-            interactive=not bool(args.config),
+            interactive=scaffold_interactive,
         )
         if changelog_result.main_changelog_missing:
             changelog_warnings.append(changelog_result.message)
@@ -1691,13 +1694,13 @@ Brownfield (existing repo):
             project_root,
             config,
             dry_run=True,
-            interactive=not bool(args.config),
+            interactive=scaffold_interactive,
         )
         ensure_main_changelog_scaffold(
             project_root,
             config,
             dry_run=True,
-            interactive=not bool(args.config),
+            interactive=scaffold_interactive,
         )
         obsidian_dry = apply_maintainer_editor_profile(
             project_root,

@@ -11,7 +11,7 @@ housekeeping_policy: keep
 **Bug ID:** BR-106  
 **Priority:** HIGH  
 **Severity:** HIGH (blocks unattended / CI install paths)  
-**Status:** INTAKE  
+**Status:** IMPLEMENTED (pending verification)  
 **Source finding:** **F19** (Starborn Legacy install attempt 05; extends attempt 04 `version_file` prompt)  
 **Related:** [BR-088](BR-088-rw-install-mode-c-missing-version-file-scaffold.md) · [FR-108](FR-108-install-setup-error-code-registry-and-emission.md) · [E06:S09:T19](../epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T19-rw-install-version-file-scaffold-br088.md)  
 **Implementing Task:** [E06:S09:T29](../epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T29-rw-install-non-interactive-changelog-prompt-br106.md)  
@@ -44,6 +44,6 @@ When `--non-interactive` is set (or `ADK_NON_INTERACTIVE=1` if that is the contr
 
 ## Acceptance criteria
 
-- [ ] `install_release_workflow.py --mode a|c --non-interactive` on empty project root completes without EOF on CHANGELOG path.
-- [ ] Regression test covers CHANGELOG + `version_file` non-interactive paths.
-- [ ] INSTALL documents non-interactive prerequisites (if any remain).
+- [x] `install_release_workflow.py --mode a|c --non-interactive` on empty project root completes without EOF on CHANGELOG path — **v0.6.9.29+2**
+- [x] Regression test covers CHANGELOG + `version_file` non-interactive paths — `test_install_release_workflow_non_interactive_scaffold.py`
+- [x] INSTALL documents non-interactive prerequisites (if any remain) — auto-scaffold note added

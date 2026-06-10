@@ -1,0 +1,16 @@
+{
+  "contract": "FR-097 structure-prune — RW Step 7 terminal task archived from active board",
+  "release_scope": {
+    "task_id": "E06:S09:T29",
+    "version_string": "v0.6.9.29+2",
+    "invocation": "RW E06:S09:T29 --art"
+  },
+  "rows": {
+    "E06:S09:T29": {
+      "allowed": true,
+      "reason": "COMPLETE v0.6.9.29+2 — archived to kanban-completed.md (RW Step 7); row pruned from kboard Should Have"
+    }
+  },
+  "board_metadata_only": true,
+  "timestamp_utc": "2026-06-10 19:07:27 UTC"
+}

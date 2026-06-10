@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Completed Tasks
 
-**Last Updated:** 2026-06-10 (RW E06:S09:T28 — BR-105 sign-off padding)
-**Version:** v0.6.9.28+2
+**Last Updated:** 2026-06-10 (RW E06:S09:T29 — BR-106 non-interactive scaffold)
+**Version:** v0.6.9.29+2
 
 > **For MoSCOW prioritized tasks, see:** [`kboard.md`](kboard.md)  
 > **For completed FR/BR/UXR intake items, see:** [`intake-completed.md`](intake-completed.md)
@@ -19,6 +19,10 @@ housekeeping_policy: keep
 ---
 
 ## 20 Most Recently Completed Tasks
+
+#### **MWF (2026-06-10)** — E06:S09:T29 @ **v0.6.9.29+2** (BR-106 non-interactive CHANGELOG scaffold)
+
+- **[E06:S09:T29](epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T29-rw-install-non-interactive-changelog-prompt-br106.md)** — `scaffold_interactive` wiring: `--non-interactive` auto-creates CHANGELOG + version_file without stdin prompts; resolves F19. SemVer **v0.4.1139+2**. **Completed:** `2026-06-10T19:07:27Z` | **Version:** `v0.6.9.29+2` | **Agent:** `MWF E06:S09:T29 delivery` | [BR-106](fr-br/BR-106-rw-install-non-interactive-changelog-prompt-eof.md) | [IPP](../../implementation-cycles/IPP-E06S09T29-br106-non-interactive-changelog-scaffold.md)
 
 #### **MWF (2026-06-10)** — E06:S09:T28 @ **v0.6.9.28+2** (BR-105 v3.2 sign-off story padding)
 

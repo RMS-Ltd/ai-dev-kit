@@ -27,7 +27,6 @@ housekeeping_policy: keep
 
 ### Should Have (S) - Important Tasks
 
-- **E06:S09:T29** – RW install non-interactive CHANGELOG prompt (BR-106 / F19) - 📋 TODO (HIGH, kanban init **v0.6.9.29+1**) | [Task](epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T29-rw-install-non-interactive-changelog-prompt-br106.md) | [BR-106](fr-br/BR-106-rw-install-non-interactive-changelog-prompt-eof.md) | —No IPP— | Last modified: 2026-06-10 18:57 UTC
 
 - **E06:S09:T26** – Starborn Legacy ADK install program - 🔄 IN PROGRESS (HIGH — attempt 05 pin **v0.4.1133**) | [Task](epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T26-starborn-legacy-adk-install-program.md) | [T27](epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T27-kanban-v32-package-rewrite-installer-f9-f17.md) | —No IPP— | Last modified: 2026-06-10 17:24 UTC
 
