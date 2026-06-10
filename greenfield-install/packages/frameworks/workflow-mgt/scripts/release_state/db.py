@@ -3,14 +3,11 @@
 from __future__ import annotations
 
 import sqlite3
-from datetime import datetime, timezone
 from pathlib import Path
 
+from release_state.time_util import utc_now_iso
+
 _SCHEMA_PATH = Path(__file__).resolve().parent / "schema.sql"
-
-
-def utc_now_iso() -> str:
-    return datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
 
 
 def connect(db_path: Path) -> sqlite3.Connection:

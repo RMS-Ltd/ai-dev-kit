@@ -21,8 +21,6 @@ except ImportError:
     yaml = None  # type: ignore
 
 _PKG_ROOT = Path(__file__).resolve().parents[2]
-_MANIFEST = _PKG_ROOT / "rw-contract.yaml"
-_STEPS = _PKG_ROOT / "canonical-rw-steps.yaml"
 
 
 def _load_yaml(path: Path) -> Dict[str, Any]:

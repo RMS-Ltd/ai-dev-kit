@@ -14,8 +14,8 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** Medium (ongoing)  
 **Created:** 2026-06-05  
-**Last updated:** 2026-06-10 (IPW Wave 4 — manifest @ `38d2454`; AC13/AC14)  
-**Version Anchor:** v0.2.16.6+4 (Wave 4b)  
+**Last updated:** 2026-06-10 (IPW Wave 5 — manifest @ `f458a215a`; Wave 5b remediation)  
+**Version Anchor:** v0.2.16.6+5 (Wave 5a manifest + Wave 5b remediation)  
 **Code:** E02S16T06  
 **Task Type:** Perpetual Maintenance
 
@@ -370,7 +370,47 @@ Use **`RW E02:S16:T06`** for recurring security/Code Quality hygiene (BUILD incr
 | ----- | ----- | ----- |
 | `ruff` `F401`/`I001`/`F841` | **0** | `packages/`, `scripts/`, `tests/`, `cli/` |
 | CQG (non-strict) | advisory | Residual `py/cyclic-import`, `py/unused-global-variable` — future wave |
-| Operator dashboard (TC24) | **Pending** | Confirm maintainability **10 → 0** on [Code Quality](https://github.com/RMS-Ltd/ai-dev-kit/security/quality) post-merge to `main` |
+| Operator dashboard (TC24) | **CLOSED partial** | **10 → 8** (not 0); score **Fair** @ `f458a215a`; Wave 5b owns burn-down |
+
+---
+
+## Wave 5 re-scan manifest (2026-06-10 — Wave 5a)
+
+**Capture:** `main` @ **`f458a215a70c3b91347a73e3a0d0aa23201dc365`** (2026-06-10). Source: [Code Quality — Standard findings](https://github.com/RMS-Ltd/ai-dev-kit/security/quality) (`is:open`); local CQG corroboration @ same SHA. Code scanning `gh api` **0** open.
+
+| Surface | Open count | Score | Delta vs Wave 4b target (TC24) |
+| ------- | ---------- | ----- | ------------------------------ |
+| [Code scanning](https://github.com/RMS-Ltd/ai-dev-kit/security/code-scanning) | **0** | 5 fixed | unchanged |
+| Standard — maintainability | **8** | **Fair** | TC24 partial: **10 → 8** (not 0); regression from Wave 3 **Excellent** |
+| Standard — reliability | **2** | **Fair** | `.git/logs` `py/syntax-error` false positives (out of Wave 5 M scope) |
+| [AI findings](https://github.com/RMS-Ltd/ai-dev-kit/security/quality/ai-findings) | lag-accepted | — | T14 closure unchanged |
+
+**TC24 closure (partial):** Wave 4b cleared autofix rules (F401/I001/F841 local proxy **0**); deferred manual CodeQL rules (`py/cyclic-import`, `py/unused-global-variable`, `py/multiple-definition`) + E21 `py/unused-local-variable` residuals account for **8** open maintainability.
+
+**Standard findings rule breakdown @ `f458a215a` (8 maintainability, operator + CQG):**
+
+| UI rule label | CodeQL rule (approx.) | Open | Band | Wave 5b disposition |
+| ------------- | --------------------- | ---- | ---- | ------------------- |
+| Variable defined multiple times | `py/multiple-definition` | **2** | Maintainability | Remove dead assignments — `apply_s16_perpetual_consolidation.py` |
+| Import cycle | `py/cyclic-import` | **2** | Maintainability | Extract `time_util.py` — `release_state/db.py` ↔ `migrate.py` |
+| Unused global variable | `py/unused-global-variable` | **2** | Maintainability | Remove `_MANIFEST` / `_STEPS` — `validate_rw_contract_manifest.py` |
+| Unused local variable | `py/unused-local-variable` | **2** | Maintainability | Fix `dt` unpack — `test_locale_cultural_formatting.py` |
+| **Subtotal maintainability** | — | **8** | **Fair** | — |
+
+### Wave 5b remediation (2026-06-10)
+
+**Theme:** Manual CodeQL maintainability burn-down per Wave 5a rule table.
+
+| Chunk | Action | Result |
+| ----- | ------ | ------ |
+| A | `py/multiple-definition` — remove dead `old_code`/`new_code` lines | `apply_s16_perpetual_consolidation.py` |
+| B | `py/unused-global-variable` — drop module-level `_MANIFEST`/`_STEPS` | `validate_rw_contract_manifest.py` |
+| C | `py/cyclic-import` — `release_state/time_util.py` + import rewiring | `db.py`, `migrate.py` |
+| D | `py/unused-local-variable` — `_` prefix / omit `dt` | `test_locale_cultural_formatting.py` |
+| greenfield | `sync_greenfield_install.py` | **1795** files in sync |
+| pytest / CQG / CI parity | TC26–TC29 | local verify @ RW |
+| `RW E02:S16:T06 --art` | Wave 5 | **v0.2.16.6+5** |
+| Operator dashboard (TC25) | **Pending** | Confirm maintainability **8 → 0** post-merge |
 
 **Cross-lane notes:**
 
@@ -411,7 +451,9 @@ Use **`RW E02:S16:T06`** for recurring security/Code Quality hygiene (BUILD incr
 - [x] **AC11 (Wave 3d):** `cli/logging.py` empty-except shipped **v0.8.3.16+7**; repo grep clean; operator post-merge verify **pending**.
 - [x] **AC12 (Wave 3e):** Autofix PR #43/#44 pytest triage merged to `main`; shipped **v0.8.3.16+9**; operator dismiss #43 finding **pending**.
 - [x] **AC13 (Wave 4a):** Wave 4 manifest **10** M @ `38d2454`; 3c/3d/3e verify notes closed; shipped **v0.2.16.6+3**.
-- [x] **AC14 (Wave 4b):** Maintainability burn-down of **10** findings; pytest/greenfield green; CQG advisory; shipped **v0.2.16.6+4**; operator TC24 verify **pending**.
+- [x] **AC14 (Wave 4b):** Maintainability burn-down of **10** findings; pytest/greenfield green; CQG advisory; shipped **v0.2.16.6+4**; operator TC24 verify **closed partial** (10→8).
+- [x] **AC15 (Wave 5a):** Wave 5 manifest **8** M @ `f458a215a`; TC24 partial closed; shipped **v0.2.16.6+5**.
+- [x] **AC16 (Wave 5b):** Manual maintainability burn-down of **8** findings; pytest/greenfield/CQG green; shipped **v0.2.16.6+5**; operator TC25 verify **pending**.
 
 ---
 

@@ -11,8 +11,8 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
-## [0.2.3.9+3] - 10-06-26
+## [0.2.16.6+5] - 10-06-26
 
-E02:S03:T09 — FR-124 MWF orchestration shipped (`mwf.md`, KB, registry, routing, cheatsheet). SemVer **v0.4.1121+3**.
+E02:S16:T06 — Wave 5 maintainability manifest (8/Fair) + manual CodeQL burn-down (cyclic-import, unused-global, multiple-definition, unused-local). SemVer **v0.4.1122+5**.
 
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.3.9+3.md)
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.16.6+5.md)

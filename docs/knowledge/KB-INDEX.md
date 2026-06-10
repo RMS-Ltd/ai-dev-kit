@@ -1,9 +1,9 @@
 # KB Index
 
-**Generated:** 2026-06-10 13:01:10 UTC  
+**Generated:** 2026-06-10 13:27:58 UTC  
 **Scope:** /Users/rms/Documents/projects/ai-dev-kit/docs  
-**Total files:** 3140  
-**Total size:** 14.72 MB
+**Total files:** 3142  
+**Total size:** 14.73 MB
 
 ---
 
@@ -14,7 +14,7 @@
 | analysis | 9 | 152.7 KB | 9 | 0 | 9 | 0 | 0 | 0 |
 | architecture | 126 | 1.24 MB | 120 | 6 | 119 | 1 | 0 | 0 |
 | book-project | 2 | 26.5 KB | 1 | 1 | 1 | 0 | 0 | 0 |
-| changelog-and-release-notes | 1450 | 4.01 MB | 199 | 1251 | 183 | 0 | 1 | 0 |
+| changelog-and-release-notes | 1452 | 4.02 MB | 199 | 1253 | 183 | 0 | 1 | 0 |
 | developer-tools | 2 | 12.7 KB | 2 | 0 | 2 | 0 | 0 | 0 |
 | documentation | 33 | 354.3 KB | 30 | 3 | 30 | 0 | 0 | 0 |
 | governance | 23 | 191.6 KB | 23 | 0 | 23 | 0 | 0 | 0 |
@@ -32,7 +32,7 @@
 ## Optimization signals
 
 - **docs/README.md exists:** False
-- **Files missing lifecycle frontmatter:** 1363
+- **Files missing lifecycle frontmatter:** 1365
 - **Timeboxed/transient with expires_at in the past:** 3
 - **READMEs (under docs/):** 22
 
@@ -88,7 +88,7 @@
 - `changelog-and-release-notes/changelog-archive/CHANGELOG_v0.10.1.3+1.md`
 - `changelog-and-release-notes/changelog-archive/CHANGELOG_v0.10.1.4+1.md`
 - `changelog-and-release-notes/changelog-archive/CHANGELOG_v0.10.1.5+1.md`
-- ... and 1313 more
+- ... and 1315 more
 
 ### Expired (candidates for archive/delete)
 
@@ -424,7 +424,7 @@
 | implementation-cycles/IPP-E02S14T01-enumerate-workflow-mgt-installation-paths.md | 10.5 KB | 1426 | evergreen | 2026-06-05T18:00:00 |  |
 | implementation-cycles/IPP-E02S15T01-br066-corpus-tail-phase3.md | 5.5 KB | 705 | evergreen | 2026-06-03T00:00:00 |  |
 | implementation-cycles/IPP-E02S15T01-br066-publication-backfill-phase2.md | 7.0 KB | 888 | evergreen | 2026-06-02T00:00:00 |  |
-| implementation-cycles/IPP-E02S16T06-github-security-code-quality-health-perpetual-fr112.md | 24.7 KB | 3863 | evergreen | 2026-06-05T17:00:00 |  |
+| implementation-cycles/IPP-E02S16T06-github-security-code-quality-health-perpetual-fr112.md | 27.7 KB | 4361 | evergreen | 2026-06-05T17:00:00 |  |
 | implementation-cycles/IPP-E02S16T06-ukw-rp-flag-fr085.md | 14.9 KB | 2107 | evergreen | 2026-05-30T22:00:00 |  |
 | implementation-cycles/IPP-E02S16T13-br059-ukw-moscow-full-story-coverage.md | 10.7 KB | 1422 | evergreen | 2026-06-02T16:00:00 |  |
 | implementation-cycles/IPP-E02S16T15-workflow-initiation-cheatsheet.md | 6.9 KB | 957 | evergreen | 2026-05-30T20:00:00 |  |
@@ -804,7 +804,7 @@
 | kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T04-ad-hoc-repository-infrastructure-maintenance-perpetual.md | 2.6 KB | 310 | evergreen | 2026-05-19T00:00:00 |  |
 | kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T05-github-actions-ci-health-perpetual.md | 5.9 KB | 719 | evergreen | 2026-06-05T16:00:00 |  |
 | kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T05-markdown-documentation-maintenance-perpetual.md | 390 B | 27 | evergreen | 2026-06-08T00:00:00 |  |
-| kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T06-github-security-code-quality-health-perpetual.md | 25.8 KB | 3431 | evergreen | 2026-06-05T16:00:00 |  |
+| kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T06-github-security-code-quality-health-perpetual.md | 29.0 KB | 3878 | evergreen | 2026-06-05T16:00:00 |  |
 | kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T06-ukw-optional-reprioritization-rp-flag-fr085.md | 433 B | 27 | evergreen | 2026-06-08T00:00:00 |  |
 | kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T07-ad-hoc-documentation-maintenance-perpetual.md | 4.9 KB | 522 | evergreen | 2026-06-09T00:00:00 |  |
 | kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T07-ukw-extension-for-fr-br-uxr-temporal-tracking-fr050.md | 679 B | 42 | evergreen | 2026-06-08T00:00:00 |  |
@@ -1666,7 +1666,7 @@
 | kanban/fr-br/FR-109-ukw-lean-active-board-contract.md | 2.7 KB | 305 | evergreen | 2026-06-04T22:00:00 |  |
 | kanban/fr-br/FR-110-lean-adopter-distribution-footprint-and-vendor-bundle.md | 11.2 KB | 1276 | proposed | 2026-06-05T00:00:00 |  |
 | kanban/fr-br/FR-111-acquisition-layer-adk-error-codes-and-install-error-doc-hygiene.md | 11.9 KB | 1266 | proposed | 2026-06-05T18:00:00 |  |
-| kanban/fr-br/FR-112-perpetual-github-ci-and-security-health-lanes.md | 4.3 KB | 445 | proposed | 2026-06-05T16:00:00 |  |
+| kanban/fr-br/FR-112-perpetual-github-ci-and-security-health-lanes.md | 4.3 KB | 446 | proposed | 2026-06-05T16:00:00 |  |
 | kanban/fr-br/FR-113-local-code-quality-gate-cqg.md | 19.0 KB | 2509 | proposed | 2026-06-06T14:00:00 |  |
 | kanban/fr-br/FR-114-split-documentation-surfaces-docusaurus-public-notion-maintainer-kb.md | 8.1 KB | 845 | proposed | 2026-06-06T00:00:00 |  |
 | kanban/fr-br/FR-115-accessibility-standards-compatibility.md | 6.5 KB | 755 | evergreen | 2026-06-07T20:00:00 |  |
@@ -1817,5 +1817,5 @@
 | project-agent-index.md | 4.3 KB | 392 | evergreen | 2026-05-30T21:00:00 |  |
 | project-management/README.md | 523 B | 34 | evergreen | 2025-12-04T12:01:54 |  |
 | release-notes/README.md | 1.4 KB | 123 | evergreen | 2026-06-07T12:00:00 |  |
-| changelog-and-release-notes/changelog-archive/ (summary) (1448 files) | 4.01 MB | 465120 |  |  |  |
+| changelog-and-release-notes/changelog-archive/ (summary) (1450 files) | 4.01 MB | 465550 |  |  |  |
 

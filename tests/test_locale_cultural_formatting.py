@@ -66,7 +66,7 @@ def test_c2_smoke_non_empty(fmt, tag):
 @pytest.mark.skipif(not _babel_installed(), reason="Babel not installed")
 def test_c3_structural_checks(fmt, smoke_data):
     """C3: Locale-specific structural assertions from fixture."""
-    d, dt, amt = date(2026, 6, 7), datetime(2026, 6, 7, 14, 30), 1234.56
+    d, _, amt = date(2026, 6, 7), datetime(2026, 6, 7, 14, 30), 1234.56
     checks = smoke_data["structural_checks"]
     de_num = fmt.format_number(amt, "de")
     assert checks["de"]["number_contains"] in de_num
@@ -79,7 +79,7 @@ def test_c3_structural_checks(fmt, smoke_data):
 @pytest.mark.skipif(not _babel_installed(), reason="Babel not installed")
 def test_c4_ar_smoke_runs(fmt):
     """C4: Arabic formatting runs without error."""
-    d, dt, amt = date(2026, 6, 7), datetime(2026, 6, 7, 14, 30), 1234.56
+    d, amt = date(2026, 6, 7), 1234.56
     out = fmt.format_date(d, "ar") + fmt.format_currency(amt, "ar")
     assert out
 

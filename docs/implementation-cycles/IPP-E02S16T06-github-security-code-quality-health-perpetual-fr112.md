@@ -10,7 +10,7 @@ housekeeping_policy: keep
 
 **Host Task:** [`T06-github-security-code-quality-health-perpetual.md`](../kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T06-github-security-code-quality-health-perpetual.md) **(E02:S16:T06)**  
 **Planning for:** [FR-112](../kanban/fr-br/FR-112-perpetual-github-ci-and-security-health-lanes.md)  
-**Status:** Approved (Wave 3e @ v0.8.3.16+9; **Wave 4 IPW revision** 2026-06-10 — maintainability ~10 @ `38d2454`)
+**Status:** Approved (Wave 4b @ v0.2.16.6+4; **Wave 5 IPW revision** 2026-06-10 — maintainability **8** / **Fair** @ `f458a215a`)
 
 > **IPW:** Perpetual lane for GitHub **code scanning** + **Code Quality dashboard** hygiene. **Does not** own [Actions](https://github.com/RMS-Ltd/ai-dev-kit/actions) CI (→ **E02:S16:T05**).
 >
@@ -22,6 +22,8 @@ housekeeping_policy: keep
 >
 
 > **Revision (2026-06-10 — Wave 4 IPW):** Operator dashboard **~10** maintainability standard findings @ `main` `38d24549445f4ed77b0d099f1aa3b927d5c61f19`. Two-step: **Wave 4a** manifest + close 3c/3d/3e verifies; **Wave 4b** maintainability autofix. See **§8 Wave 4**.
+
+> **Revision (2026-06-10 — Wave 5 IPW):** Post–Wave 4b dashboard **8** maintainability / **Fair** @ `main` `f458a215a` (TC24 partial: 10→8). Two-step: **Wave 5a** manifest + TC24 close; **Wave 5b** manual CodeQL burn-down (cyclic-import, unused-global, multiple-definition, unused-local). See **§8 Wave 5**.
 
 > **Revision (2026-06-05 — operator deferral):** ~~Postpone T16 until T12–T14 sign-off~~ — **LIFTED** 2026-06-07.
 
@@ -59,6 +61,10 @@ housekeeping_policy: keep
 | RF27 | Post-wave manifest + operator dashboard verify (TC24) | Wave 4 IPW |
 | RF28 | Perpetual RW: **`RW E02:S16:T06 --art`** (BUILD +1 per wave; BR-097) | Wave 4 IPW |
 | RF29 | Canonical IPP @ E02 path; kboard + task-doc bidirectional links | Wave 4 IPW |
+| RF30 | **Wave 5a manifest** @ current `main` SHA: **8** maintainability + rule breakdown + delta vs Wave 4b | Wave 5 IPW |
+| RF31 | **Close TC24** partial (10→8, not 0); Wave 5b owns residual burn-down | Wave 5 IPW |
+| RF32 | **Wave 5b:** fix all 8 maintainability findings (4 issue families + greenfield mirror) | Wave 5 IPW |
+| RF33 | **TC25** operator post-merge dashboard verify (8 → 0 or documented residual) | Wave 5 IPW |
 
 ### 1.2 Non-functional requirements (ascertained)
 
@@ -167,6 +173,11 @@ Establish **E02:S16:T06** as the operational perpetual lane for GitHub **code sc
 | TC22 | Greenfield mirror | `sync_greenfield_install.py --check` after `packages/` edits | RNF7 | 4b |
 | TC23 | Actions CI parity | `validate_actions_ci_parity.py --strict` before RW commit | FR-112 | 4b |
 | TC24 | Dashboard delta | Operator confirms maintainability **~10 → 0** post-merge | RF27 | 4b |
+| TC25 | Wave 5b dashboard | Operator confirms maintainability **8 → 0** post-merge | RF33 | 5b |
+| TC26 | Wave 5b pytest | `pytest tests/` + `tests/release_state/` green | RF32 | 5b |
+| TC27 | Wave 5b CQG | `validate_code_quality_gate.py` — maintainability **0** on `packages/` | RF32 | 5b |
+| TC28 | Wave 5b greenfield | `sync_greenfield_install.py --check` | RF32 | 5b |
+| TC29 | Wave 5b CI parity | `validate_actions_ci_parity.py --strict` | FR-112 | 5b |
 
 **Wave 0 verification:** TC1–TC4 only (docs-only; no `--skip-tests` — TC5 deferred to Wave 1+).
 
@@ -183,6 +194,10 @@ Establish **E02:S16:T06** as the operational perpetual lane for GitHub **code sc
 **Wave 4a verification:** TC19 (docs-only manifest RW).
 
 **Wave 4b verification:** TC20–TC24 (code + operator dashboard).
+
+**Wave 5a verification:** TC24 partial close + manifest (docs-only RW).
+
+**Wave 5b verification:** TC25–TC29 (code + operator dashboard).
 
 ---
 
@@ -301,7 +316,10 @@ Establish **E02:S16:T06** as the operational perpetual lane for GitHub **code sc
 - [x] Wave 4a manifest @ `main` `38d2454…` with **10** maintainability (TC19); shipped **v0.2.16.6+3**
 - [x] Waves 3c/3d/3e operator verifies closed in manifest (RF25)
 - [x] Wave 4b maintainability burn-down + pytest/greenfield (TC20–TC22); shipped **v0.2.16.6+4**
-- [ ] Operator dashboard TC24 verify (maintainability **~10 → 0** or documented residual)
+- [x] Operator dashboard TC24 verify — **partial** (10→8, not 0); closed Wave 5a
+- [x] Wave 5a manifest @ `main` `f458a215a` with **8** M breakdown (TC24 partial)
+- [x] Wave 5b manual maintainability burn-down (TC26–TC29); shipped **v0.2.16.6+5**
+- [ ] Operator dashboard TC25 verify (maintainability **8 → 0** or documented residual)
 
 ---
 
@@ -396,6 +414,37 @@ Establish **E02:S16:T06** as the operational perpetual lane for GitHub **code sc
 | 38 | TC20–TC23 locally |
 | 39 | `RW E02:S16:T06 --art` — BUILD +11 |
 | 40 | Operator TC24 dashboard verify; post-remediation manifest in task doc |
+
+**RW rule:** **`RW E02:S16:T06 --art` only**; no `--doc-policy-zero` (BR-097).
+
+### Wave 5a — Post–Wave 4b manifest (docs RW) — 2026-06-10
+
+| Step | Action |
+| ---- | ------ |
+| 41 | Confirm T06 **IN PROGRESS**; capture `main` @ `f458a215a` + UTC |
+| 42 | Record manifest: **8** maintainability / **Fair** + rule breakdown from [Code Quality](https://github.com/RMS-Ltd/ai-dev-kit/security/quality) |
+| 43 | Close **TC24** partial (10→8); delta vs Wave 4b; Wave 4b local proxy (F401/I001/F841 = 0) vs deferred manual rules |
+| 44 | `RW E02:S16:T06 --art` — BUILD +1 (docs-only manifest) |
+| 45 | Reconcile T06 **IN PROGRESS**; AC15 Wave 5a |
+
+### Wave 5b — Manual maintainability remediation (code RW)
+
+**Theme:** Deferred Wave 4b manual CodeQL rules + E21 locale test residuals.
+
+| Chunk | Rule | Files |
+| ----- | ---- | ----- |
+| A | `py/multiple-definition` | `apply_s16_perpetual_consolidation.py` (+ mirror) |
+| B | `py/unused-global-variable` | `validate_rw_contract_manifest.py` (+ mirror) |
+| C | `py/cyclic-import` | `release_state/db.py`, `migrate.py` → extract `time_util.py` (+ mirror) |
+| D | `py/unused-local-variable` | `tests/test_locale_cultural_formatting.py` |
+
+| Step | Action |
+| ---- | ------ |
+| 46 | Implement chunks A–D |
+| 47 | `python scripts/sync_greenfield_install.py` + `--check` |
+| 48 | TC26–TC29 locally |
+| 49 | `RW E02:S16:T06 --art` — BUILD +1 |
+| 50 | Operator TC25 dashboard verify; post-remediation manifest in task doc |
 
 **RW rule:** **`RW E02:S16:T06 --art` only**; no `--doc-policy-zero` (BR-097).
 

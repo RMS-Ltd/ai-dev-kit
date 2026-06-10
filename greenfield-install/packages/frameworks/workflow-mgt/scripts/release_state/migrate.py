@@ -4,7 +4,7 @@ from __future__ import annotations
 
 import sqlite3
 
-from release_state.db import utc_now_iso
+from release_state.time_util import utc_now_iso
 
 SCHEMA_VERSION = 2
 

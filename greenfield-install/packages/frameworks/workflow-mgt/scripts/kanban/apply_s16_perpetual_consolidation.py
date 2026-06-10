@@ -195,8 +195,6 @@ def replace_est(text: str, old: str, new: str) -> str:
     if old_u != old:
         text = text.replace(old_u, new_u)
     # Code forms E02S16T03
-    old_code = old.replace(":", "").replace("E02", "E02").replace("E04", "E04")
-    new_code = new.replace(":", "")
     old_code = re.sub(r"E(\d+):S(\d+):T(\d+)", r"E\1S\2T\3", old)
     new_code = re.sub(r"E(\d+):S(\d+):T(\d+)", r"E\1S\2T\3", new)
     text = text.replace(old_code, new_code)
