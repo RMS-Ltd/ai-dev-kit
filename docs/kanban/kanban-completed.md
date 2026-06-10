@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Completed Tasks
 
-**Last Updated:** 2026-06-10 (RW E02:S03:T10 — FR-126 + BR-102)
-**Version:** v0.2.3.10+1
+**Last Updated:** 2026-06-10 (RW E08:S03:T19 — BR-103)
+**Version:** v0.8.3.19+1
 
 > **For MoSCOW prioritized tasks, see:** [`kboard.md`](kboard.md)  
 > **For completed FR/BR/UXR intake items, see:** [`intake-completed.md`](intake-completed.md)
@@ -19,6 +19,10 @@ housekeeping_policy: keep
 ---
 
 ## 20 Most Recently Completed Tasks
+
+#### **RW (2026-06-10)** — E08:S03:T19 @ **v0.8.3.19+1** (BR-103 — workflow-scripts pytest false-green)
+
+- **[E08:S03:T19](epics/epic-08/story-03-automation-scripts/T19-workflow-scripts-pytest-tuple-return-false-green-br103.md)** — `test_stamp_evidence_gate.py` assert refactor; `pytest.ini` PytestReturnNotNoneWarning guard. **Completed:** `2026-06-10T15:32:48Z` | **Version:** `v0.8.3.19+1` | **Agent:** `MWF E08:S03:T19 delivery` | [BR-103](fr-br/BR-103-workflow-scripts-pytest-tuple-return-false-green.md) | [—IPP—](../../implementation-cycles/IPP-E08S03T19-workflow-scripts-pytest-tuple-return-br103.md)
 
 #### **RW (2026-06-10)** — E02:S03:T10 @ **v0.2.3.10+1** (FR-126 — Workflow encapsulation integrity + BR-102 MWF delegation)
 

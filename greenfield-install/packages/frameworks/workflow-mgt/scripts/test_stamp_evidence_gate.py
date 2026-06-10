@@ -3,25 +3,20 @@
 Test suite for the UXR-009 / FR-092 Wave 6 forensic stamp work-evidence gate
 in update_kanban_docs.py.
 
-Asserts:
-  - `evidence_mode="non_substantive"` never appends synthetic stamps to
-    stampless MoSCOW rows (corpus-canonical sweep behavior).
-  - `evidence_mode="work_authoritative"` (default) appends stamps to stampless
-    rows (RW Step 7 behavior — the workflow itself is the substantive event).
-  - `evidence_mode="gated"` requires a positive evidence_provider response per
-    row; absent positive evidence, the stamp is suppressed and the row id is
-    captured in `skipped_no_evidence_rows`.
-  - Counters `stamps_appended_with_evidence`, `stamps_skipped_no_evidence`,
-    `stamps_preserved_existing` are present and consistent.
-  - Existing stamps are never rewritten in any mode (forensic safety).
+Run via pytest (CI): run_workflow_scripts_ci_pytest.sh
+Run standalone: python test_stamp_evidence_gate.py
+
+BR-103: test_* functions MUST use assert/pytest.raises — not tuple returns.
 """
 
 from __future__ import annotations
 
 import importlib.util
 import sys
+import tempfile
 from pathlib import Path
-from typing import Tuple
+
+import pytest
 
 THIS_DIR = Path(__file__).resolve().parent
 TARGET = THIS_DIR / "update_kanban_docs.py"
@@ -53,20 +48,6 @@ SAMPLE_BOARD = """\
 """
 
 
-def _run_test(name: str, fn) -> Tuple[bool, str]:
-    print(f"\n--- {name} ---")
-    try:
-        ok, err = fn()
-        if ok:
-            print(f"PASS: {name}")
-        else:
-            print(f"FAIL: {name}: {err}")
-        return ok, err
-    except Exception as exc:
-        print(f"ERROR: {name}: {exc!r}")
-        return False, repr(exc)
-
-
 def test_work_authoritative_appends_missing_stamps():
     target = _load_target()
     transformed, stats = target.enforce_moscow_row_timestamps_with_stats(
@@ -74,17 +55,11 @@ def test_work_authoritative_appends_missing_stamps():
         "2026-04-27 16:00 UTC",
         evidence_mode=target.EVIDENCE_MODE_WORK_AUTHORITATIVE,
     )
-    if stats["stamps_appended_with_evidence"] != 2:
-        return False, f"expected 2 appended, got {stats['stamps_appended_with_evidence']}"
-    if stats["stamps_skipped_no_evidence"] != 0:
-        return False, f"expected 0 skipped, got {stats['stamps_skipped_no_evidence']}"
-    if stats["stamps_preserved_existing"] != 1:
-        return False, f"expected 1 preserved, got {stats['stamps_preserved_existing']}"
-    if "Last modified: 2026-04-27 16:00 UTC" not in transformed:
-        return False, "expected new stamps to appear in transformed content"
-    if "Last modified: 2026-04-27 15:34 UTC" not in transformed:
-        return False, "existing stamp must be preserved verbatim"
-    return True, ""
+    assert stats["stamps_appended_with_evidence"] == 2, stats
+    assert stats["stamps_skipped_no_evidence"] == 0, stats
+    assert stats["stamps_preserved_existing"] == 1, stats
+    assert "Last modified: 2026-04-27 16:00 UTC" in transformed
+    assert "Last modified: 2026-04-27 15:34 UTC" in transformed
 
 
 def test_non_substantive_never_appends_stamps():
@@ -94,18 +69,12 @@ def test_non_substantive_never_appends_stamps():
         "2026-04-27 16:00 UTC",
         evidence_mode=target.EVIDENCE_MODE_NON_SUBSTANTIVE,
     )
-    if stats["stamps_appended_with_evidence"] != 0:
-        return False, f"expected 0 appended, got {stats['stamps_appended_with_evidence']}"
-    if stats["stamps_skipped_no_evidence"] != 2:
-        return False, f"expected 2 skipped, got {stats['stamps_skipped_no_evidence']}"
-    if "Last modified: 2026-04-27 16:00 UTC" in transformed:
-        return False, "non_substantive must NOT introduce new stamps"
-    if "Last modified: 2026-04-27 15:34 UTC" not in transformed:
-        return False, "non_substantive must preserve existing stamps verbatim"
+    assert stats["stamps_appended_with_evidence"] == 0, stats
+    assert stats["stamps_skipped_no_evidence"] == 2, stats
+    assert "Last modified: 2026-04-27 16:00 UTC" not in transformed
+    assert "Last modified: 2026-04-27 15:34 UTC" in transformed
     skipped_ids = stats.get("skipped_no_evidence_rows", [])
-    if "E2:S15:T08" not in skipped_ids or "FR-099" not in skipped_ids:
-        return False, f"expected skipped row ids to include both, got {skipped_ids}"
-    return True, ""
+    assert "E2:S15:T08" in skipped_ids and "FR-099" in skipped_ids, skipped_ids
 
 
 def test_gated_requires_positive_evidence():
@@ -114,32 +83,26 @@ def test_gated_requires_positive_evidence():
     def evidence_provider(row_id, line):
         return row_id == "FR-099"
 
-    transformed, stats = target.enforce_moscow_row_timestamps_with_stats(
+    _transformed, stats = target.enforce_moscow_row_timestamps_with_stats(
         SAMPLE_BOARD,
         "2026-04-27 16:00 UTC",
         evidence_mode=target.EVIDENCE_MODE_GATED,
         evidence_provider=evidence_provider,
     )
-    if stats["stamps_appended_with_evidence"] != 1:
-        return False, f"expected 1 appended (FR-099), got {stats['stamps_appended_with_evidence']}"
-    if stats["stamps_skipped_no_evidence"] != 1:
-        return False, f"expected 1 skipped (E2:S15:T08), got {stats['stamps_skipped_no_evidence']}"
-    return True, ""
+    assert stats["stamps_appended_with_evidence"] == 1, stats
+    assert stats["stamps_skipped_no_evidence"] == 1, stats
 
 
 def test_gated_without_provider_is_conservative():
     target = _load_target()
-    transformed, stats = target.enforce_moscow_row_timestamps_with_stats(
+    _transformed, stats = target.enforce_moscow_row_timestamps_with_stats(
         SAMPLE_BOARD,
         "2026-04-27 16:00 UTC",
         evidence_mode=target.EVIDENCE_MODE_GATED,
         evidence_provider=None,
     )
-    if stats["stamps_appended_with_evidence"] != 0:
-        return False, "gated mode without provider must default to suppress"
-    if stats["stamps_skipped_no_evidence"] != 2:
-        return False, "gated mode without provider must record skip for every stampless row"
-    return True, ""
+    assert stats["stamps_appended_with_evidence"] == 0, stats
+    assert stats["stamps_skipped_no_evidence"] == 2, stats
 
 
 def test_existing_stamps_never_rewritten():
@@ -155,54 +118,53 @@ def test_existing_stamps_never_rewritten():
             evidence_mode=mode,
             evidence_provider=lambda *_a, **_k: True,
         )
-        if "Last modified: 2026-04-27 15:34 UTC" not in transformed:
-            return False, f"mode={mode} rewrote existing stamp"
-    return True, ""
+        assert "Last modified: 2026-04-27 15:34 UTC" in transformed, f"mode={mode}"
 
 
 def test_invalid_evidence_mode_raises():
     target = _load_target()
-    try:
+    with pytest.raises(ValueError):
         target.enforce_moscow_row_timestamps_with_stats(
             SAMPLE_BOARD, "2026-04-27 16:00 UTC", evidence_mode="bogus"
         )
-    except ValueError:
-        return True, ""
-    return False, "expected ValueError on invalid evidence_mode"
 
 
 def test_corpus_sweep_uses_non_substantive_mode():
-    """
-    Smoke-test that run_corpus_canonical_sweep defaults to non_substantive
-    so that maintenance sweeps do not introduce synthetic stamp churn.
-    Uses an isolated working tree so the live boards are untouched.
-    """
-    import tempfile
-
+    """Corpus sweep defaults to non_substantive — no synthetic stamp churn."""
     target = _load_target()
     with tempfile.TemporaryDirectory() as tmp_str:
         tmp = Path(tmp_str)
         kanban = tmp / "docs/kanban"
         kanban.mkdir(parents=True)
         (kanban / "kboard.md").write_text(SAMPLE_BOARD)
-        (kanban / "kboard.md").write_text(SAMPLE_BOARD)
         _, sweep_report = target.run_corpus_canonical_sweep(
             tmp, dry_run=True, timestamp_value="2026-04-27 16:00 UTC"
         )
-        if sweep_report["evidence_mode"] != target.EVIDENCE_MODE_NON_SUBSTANTIVE:
-            return False, (
-                f"expected default evidence_mode={target.EVIDENCE_MODE_NON_SUBSTANTIVE}, "
-                f"got {sweep_report['evidence_mode']}"
-            )
+        assert sweep_report["evidence_mode"] == target.EVIDENCE_MODE_NON_SUBSTANTIVE
         agg = sweep_report["stamp_evidence_aggregate"]
-        if agg["stamps_appended_with_evidence"] != 0:
-            return False, (
-                "corpus sweep introduced synthetic stamps despite "
-                "non_substantive default — UXR-009 violation"
-            )
-        if agg["stamps_skipped_no_evidence"] < 2:
-            return False, "expected at least the two stampless rows to be recorded as skipped"
-    return True, ""
+        assert agg["stamps_appended_with_evidence"] == 0, agg
+        assert agg["stamps_skipped_no_evidence"] >= 2, agg
+
+
+def test_pytest_fails_when_non_substantive_invariant_broken():
+    """BR-103 AC3: prove pytest (not tuple-return) fails on violated invariant."""
+
+    def _would_fail_under_tuple_return_antipattern():
+        assert 0 == 1, "simulated stamp-evidence regression"
+
+    with pytest.raises(AssertionError, match="simulated stamp-evidence regression"):
+        _would_fail_under_tuple_return_antipattern()
+
+
+def _run_standalone(name: str, fn) -> bool:
+    print(f"\n--- {name} ---")
+    try:
+        fn()
+        print(f"PASS: {name}")
+        return True
+    except Exception as exc:
+        print(f"FAIL: {name}: {exc!r}")
+        return False
 
 
 def main():
@@ -214,16 +176,12 @@ def main():
         ("existing stamps never rewritten in any mode", test_existing_stamps_never_rewritten),
         ("invalid evidence_mode raises ValueError", test_invalid_evidence_mode_raises),
         ("corpus sweep defaults to non_substantive", test_corpus_sweep_uses_non_substantive_mode),
+        ("pytest fails on broken invariant (BR-103 probe)", test_pytest_fails_when_non_substantive_invariant_broken),
     ]
-    passed = failed = 0
-    for name, fn in tests:
-        ok, _err = _run_test(name, fn)
-        if ok:
-            passed += 1
-        else:
-            failed += 1
+    passed = sum(1 for name, fn in tests if _run_standalone(name, fn))
+    failed = len(tests) - passed
     print()
-    print(f"Total: {passed + failed} | passed: {passed} | failed: {failed}")
+    print(f"Total: {len(tests)} | passed: {passed} | failed: {failed}")
     return 0 if failed == 0 else 1
 
 

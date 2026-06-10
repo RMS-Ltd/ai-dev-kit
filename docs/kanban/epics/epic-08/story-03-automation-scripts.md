@@ -75,6 +75,8 @@ housekeeping_policy: keep
 
 - [x] **E08:S03:T18 – CQG gate relocation to IDW Phase 6b (ADR-022)** — ✅ COMPLETE (re-housed from E02:S16:T23) — [Task doc](story-03-automation-scripts/T18-cqg-gate-relocation-to-idw-phase-6b-adr022.md) | [ADR-022](../../../architecture/standards-and-adrs/ADR-022-local-code-quality-gate-architecture.md)
 
+- [x] **E08:S03:T19 – Workflow-scripts pytest tuple-return false-green (BR-103)** — ✅ COMPLETE (**v0.8.3.19+1**) — [Task doc](story-03-automation-scripts/T19-workflow-scripts-pytest-tuple-return-false-green-br103.md) | [BR-103](../../fr-br/BR-103-workflow-scripts-pytest-tuple-return-false-green.md) | [IPP](../../../implementation-cycles/IPP-E08S03T19-workflow-scripts-pytest-tuple-return-br103.md)
+
 ---
 
 ## Overview

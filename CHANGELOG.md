@@ -11,8 +11,8 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
-## [0.2.3.10+1] - 10-06-26
+## [0.8.3.19+1] - 10-06-26
 
-E02:S03:T10 — FR-126 encapsulation audit Waves 2–4: CMW/PVW guides, BR-102 MWF sub-agent delegation, registry metadata, validator stub. SemVer **v0.4.1126+1**.
+E08:S03:T19 — BR-103: workflow-scripts pytest false-green fixed (assert-based stamp-evidence tests + PytestReturnNotNoneWarning guard). SemVer **v0.4.1127+1**.
 
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.3.10+1.md)
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.8.3.19+1.md)

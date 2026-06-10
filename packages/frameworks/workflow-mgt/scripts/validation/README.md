@@ -30,3 +30,17 @@ bash "packages/frameworks/workflow-mgt/scripts/validation/run_workflow_scripts_c
 pip install -e ".[dev]"
 python -m pytest tests/
 ```
+
+## BR-103 — tuple-return anti-pattern audit (E08:S03:T19)
+
+`test_stamp_evidence_gate.py` was refactored to **pytest `assert`** (not `(bool, str)` returns). `pytest.ini` sets `filterwarnings = error::pytest.PytestReturnNotNoneWarning`.
+
+**Other script-style tests using tuple-return + `main()` (not in curated CI list — audit only):**
+
+| File | In CI gate? |
+| ---- | ----------- |
+| `test_update_kanban_docs.py` | No |
+| `test_validate_rw_step7_completeness.py` | No |
+| `test_validate_rw_step7_post_commit.py` | No |
+
+Convert before adding any of these to `run_workflow_scripts_ci_pytest.sh`.

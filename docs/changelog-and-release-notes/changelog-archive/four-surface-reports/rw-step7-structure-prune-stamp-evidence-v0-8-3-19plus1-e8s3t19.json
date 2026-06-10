@@ -1,0 +1,8 @@
+{
+  "rows": {
+    "E08:S03:T19": {
+      "allowed": true,
+      "reason": "RW Step 7 v0.8.3.19+1 — terminal COMPLETE; archived to kanban-completed.md per FR-109"
+    }
+  }
+}
