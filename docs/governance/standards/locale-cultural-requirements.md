@@ -214,7 +214,7 @@ _T02 superseded @ `v0.21.4.2+1` — imagery, layout expansion, and directional-i
 
 | Task | Consumes from this doc |
 | ---- | ---------------------- |
-| [E21:S04:T03](../../kanban/epics/epic-21/story-04-cultural-adaptation/T03-implement-rtl-support-right-to-left-for-arabichebrew.md) | Arabic RTL dimensions; `he` extension note; RTL icon mirroring implementation |
+| [E21:S04:T03](../../kanban/epics/epic-21/story-04-cultural-adaptation/T03-implement-rtl-support-right-to-left-for-arabichebrew.md) | Arabic RTL dimensions; `he` extension note; RTL icon mirroring implementation — **API/conventions:** [locale-rtl-conventions.md](locale-rtl-conventions.md) |
 | [E21:S04:T04](../../kanban/epics/epic-21/story-04-cultural-adaptation/T04-adapt-content-and-examples-for-cultural-context.md) | Tone, examples, glossary, pt variant; imagery policy; layout expansion guidance; directional-icon audit checklist (absorbed from superseded T02) |
 | [E21:S04:T05](../../kanban/epics/epic-21/story-04-cultural-adaptation/T05-configure-locale-specific-formatting-dates-times-numbers-cur.md) | Per-locale formatting rows |
 | [E21:S04:T06](../../kanban/epics/epic-21/story-04-cultural-adaptation/T06-test-cultural-adaptations.md) | E2E cultural checks |

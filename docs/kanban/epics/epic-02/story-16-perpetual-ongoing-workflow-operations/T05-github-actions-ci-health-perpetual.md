@@ -14,7 +14,7 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** Small (ongoing)  
 **Created:** 2026-06-05  
-**Last updated:** 2026-06-08 (UKW -u — `main` @ `f7d8b155` Actions green: Tests + Greenfield install + Code Quality push)  
+**Last updated:** 2026-06-10 (UKW -u — scope boundary sync; T12–T14 handoff → E02:S16:T06)  
 **Version Anchor:** v0.8.3.15+4  
 **Code:** E02S16T05  
 **Task Type:** Perpetual Maintenance
@@ -46,8 +46,8 @@ Standing perpetual lane for **GitHub Actions workflow health** on [RMS-Ltd/ai-de
 
 ## What this task does NOT own
 
-- [Code scanning](https://github.com/RMS-Ltd/ai-dev-kit/security/code-scanning) alerts → **E08:S03:T16**
-- [Code Quality](https://github.com/RMS-Ltd/ai-dev-kit/security/quality) dashboard burn-down → **E08:S03:T16** (and active backlog **T12–T14** until COMPLETE)
+- [Code scanning](https://github.com/RMS-Ltd/ai-dev-kit/security/code-scanning) alerts → **E02:S16:T06**
+- [Code Quality](https://github.com/RMS-Ltd/ai-dev-kit/security/quality) dashboard burn-down → **E02:S16:T06** (finite **E08:S03:T12–T14** backlogs **COMPLETE** @ v0.8.3.12+13 / +4 / +5)
 - Dependabot configuration and dependency PR policy → **E08:S03:T06** (FR-105)
 - Large feature delivery requiring dedicated E:S:T + IPP
 - Kanban/docs/workflow perpetual lanes → **E02:S16**

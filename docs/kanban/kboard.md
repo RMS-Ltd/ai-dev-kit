@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Board
 
-**Last Updated:** 2026-06-10 (RW: E21:S04:T02)
-**Version:** v0.21.4.2+1
+**Last Updated:** 2026-06-10 (RW: E21:S04:T03)
+**Version:** v0.21.4.3+1
 
 **Active board contract:** **Sole active MoSCOW board** ([ADR-018](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/architecture/standards-and-adrs/ADR-018-single-kanban-board-consolidation.md)). Rows are **live work** (TODO / IN PROGRESS / OPEN / WAITING / PERPETUAL) plus filed **Could Have** backlog. **Verification (V)** band holds task-shipped / FBU-open items (`⏳ WAITING`). Remove **terminal** rows and archive prose (use [`kanban-completed.md`](kanban-completed.md) / [`intake-completed.md`](intake-completed.md)).
 
@@ -101,9 +101,7 @@ housekeeping_policy: keep
 
 #### Epic 21 (E21) — full inventory: backlog (13 tasks)
 
-- **E21:S04:T03** – Implement RTL support (Right-to-Left) for Arabic/Hebrew - 📋 TODO (MEDIUM, cultural adaptation) | [Task](epics/epic-21/story-04-cultural-adaptation/T03-implement-rtl-support-right-to-left-for-arabichebrew.md) | [Story](epics/epic-21/story-04-cultural-adaptation.md) | [FR-006](fr-br/FR-006-localization-language-selection-uk-us-english.md) | —No IPP— | Last modified: 2026-06-07 11:09 UTC
-
-- **E21:S04:T04** – Adapt content and examples for cultural context - 📋 TODO (MEDIUM, absorbs superseded T02) | [Task](epics/epic-21/story-04-cultural-adaptation/T04-adapt-content-and-examples-for-cultural-context.md)| [Story](epics/epic-21/story-04-cultural-adaptation.md) | [FR-006](fr-br/FR-006-localization-language-selection-uk-us-english.md) | —No IPP— | Last modified: 2026-06-09 22:00 UTC
+- **E21:S04:T04** – Adapt content and examples for cultural context - 📋 TODO (MEDIUM, absorbs superseded T02) | [Task](epics/epic-21/story-04-cultural-adaptation/T04-adapt-content-and-examples-for-cultural-context.md) | [Story](epics/epic-21/story-04-cultural-adaptation.md) | [FR-006](fr-br/FR-006-localization-language-selection-uk-us-english.md) | —No IPP— | Last modified: 2026-06-09 22:00 UTC
 
 - **E21:S04:T05** – Configure locale-specific formatting (dates, times, numbers, currency) - 📋 TODO (MEDIUM, cultural adaptation) | [Task](epics/epic-21/story-04-cultural-adaptation/T05-configure-locale-specific-formatting-dates-times-numbers-cur.md) | [Story](epics/epic-21/story-04-cultural-adaptation.md) | [FR-006](fr-br/FR-006-localization-language-selection-uk-us-english.md) | —No IPP— | Last modified: 2026-06-07 11:15 UTC
 

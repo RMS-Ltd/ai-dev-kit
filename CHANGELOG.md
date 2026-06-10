@@ -11,6 +11,14 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.21.4.3+1] - 10-06-26
+
+E21:S04:T03 — **Change implemented:** RTL locale registry and CLI/installer direction-aware formatting for `ar`/`he`; `locale-rtl-conventions.md` + tests. SemVer **v0.4.1111+1**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.21.4.3+1.md)
+
+---
+
 ## [0.21.4.2+1] - 10-06-26
 
 E21:S04:T02 — **Change implemented:** Supersede cultural UI/UX task; merge T01 handoffs (imagery, layout guidance, icon audit checklist) into E21:S04:T04. SemVer **v0.4.1110+1**.

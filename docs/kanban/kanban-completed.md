@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Completed Tasks
 
-**Last Updated:** 2026-06-10 (RW E21:S06:T01 — zh-CN locale delivery)
-**Version:** v0.21.6.1+1
+**Last Updated:** 2026-06-10 (RW E21:S04:T03 — RTL support Arabic/Hebrew)
+**Version:** v0.21.4.3+1
 
 > **For MoSCOW prioritized tasks, see:** [`kboard.md`](kboard.md)  
 > **For completed FR/BR/UXR intake items, see:** [`intake-completed.md`](intake-completed.md)
@@ -19,6 +19,10 @@ housekeeping_policy: keep
 ---
 
 ## 20 Most Recently Completed Tasks
+
+#### **RW (2026-06-10)** — E21:S04:T03 @ **v0.21.4.3+1** (FR-006 Phase 2 — RTL support Arabic/Hebrew)
+
+- **[E21:S04:T03](epics/epic-21/story-04-cultural-adaptation/T03-implement-rtl-support-right-to-left-for-arabichebrew.md)** — `RTL_LOCALES` / `is_rtl_locale` / CLI direction-aware formatting; `locale-rtl-conventions.md`; installer `_print_msg`; tests `test_locale_rtl_support.py`. **Completed:** `2026-06-10T09:52:07Z` | **Version:** `v0.21.4.3+1` | **Agent:** `RW E21:S04:T03 --art` | [FR-006](fr-br/FR-006-localization-language-selection-uk-us-english.md) | [—IPP—](../../implementation-cycles/IPP-E21S04T03-rtl-support-arabic-hebrew.md)
 
 #### **RW (2026-06-10)** — E21:S06:T01 @ **v0.21.6.1+1** (FR-006 — Chinese Simplified zh-CN locale delivery)
 
@@ -191,6 +195,9 @@ housekeeping_policy: keep
 
 - **[E10:S01:T07](epics/epic-10/story-01-document-lifecycle-package-implementation-review/T07-coordinator-orchestration-plan-and-epic-branch-bootstrap.md)** — Coordinator orchestration plan and epic branch bootstrap: E10S01 orchestration SoT, `epic/10-doc-lifecycle-framework`, triage wiring, kanban init.
   **Completed:** `2026-06-06T14:10:06Z` | **Version:** `v0.10.1.7+1` | **Agent:** `RW -k E10:S01:T07 --art --dpz` | [Orchestration](../../implementation-cycles/E10S01-orchestration-plan.md)
+
+- **[E08:S03:T12](epics/epic-08/story-03-automation-scripts/T12-code-quality-maintainability-backlog-br099.md)** — Code Quality maintainability backlog (BR-099): waves 1–6 burn-down; operator dashboard **Good** @ `main` `ed379ab`; re-closed @ **v0.8.3.12+13**; handoff **E02:S16:T06**.
+  **Completed:** `2026-06-07T18:06:22Z` | **Version:** `v0.8.3.12+13` | **Agent:** `RW E08:S03:T12 --art` | [BR-099](fr-br/BR-099-code-quality-maintainability-backlog.md) | [IPP](../../implementation-cycles/IPP-E08S03T12-code-quality-maintainability-backlog-br099.md)
 
 - **[E08:S03:T14](epics/epic-08/story-03-automation-scripts/T14-code-quality-ai-suggestions-backlog-br101.md)** — Code Quality AI suggestions backlog (BR-101): wave-1 **12/14** apply; wave-2b **AI-VENDOR-TREE** 4/4; **F-SYNC-02** waiver; lag-accepted GH panel closure.
   **Completed:** `2026-06-06T13:09:50Z` | **Version:** `v0.8.3.14+5` | **Agent:** `RW E08:S03:T14 --art` | [BR-101](fr-br/BR-101-code-quality-ai-suggestions-backlog.md) | [IPP](../../implementation-cycles/IPP-E08S03T14-code-quality-ai-suggestions-backlog-br101.md)

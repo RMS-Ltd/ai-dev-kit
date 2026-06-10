@@ -72,6 +72,9 @@ Hyphenated region subtags (`zh-CN`, `zh-TW`) are directory names as shown.
 version: 2
 default_locale: en-GB
 framework: kanban | workflow-mgt
+locale_metadata:          # optional (E21:S04:T03); code RTL_LOCALES is SoT
+  ar:
+    text_direction: rtl
 supported_locales:
   - en-GB
   - en-US

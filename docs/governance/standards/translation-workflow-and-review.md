@@ -153,7 +153,7 @@ Prefer established translations in the target language's technical community. Wh
 
 ### RTL and extended locales
 
-Arabic (`ar`) scaffold exists; full RTL layout is owned by E21:S07. Contributors should use UTF-8 and avoid hard-coded left-to-right assumptions in translated prose.
+Arabic (`ar`) scaffold exists; framework RTL layout conventions are owned by [E21:S04:T03](../../kanban/epics/epic-21/story-04-cultural-adaptation/T03-implement-rtl-support-right-to-left-for-arabichebrew.md) ([locale-rtl-conventions.md](locale-rtl-conventions.md)). Linguistic Arabic delivery: E21:S07:T01. Contributors should use UTF-8 and avoid hard-coded left-to-right assumptions in translated prose.
 
 ---
 

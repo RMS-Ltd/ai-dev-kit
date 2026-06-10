@@ -61,6 +61,12 @@ load_locale_manifest = _mod.load_locale_manifest
 resolve_locale_asset = _mod.resolve_locale_asset
 resolve_locale_key = _mod.resolve_locale_key
 locale_message = _mod.locale_message
+RTL_LOCALES = _mod.RTL_LOCALES
+is_rtl_locale = _mod.is_rtl_locale
+text_direction_for_locale = _mod.text_direction_for_locale
+format_cli_status_line = _mod.format_cli_status_line
+format_numbered_choice = _mod.format_numbered_choice
+format_locale_line_for_direction = _mod.format_locale_line_for_direction
 language_fallback_chain = _mod.language_fallback_chain
 default_frameworks_root = _mod.default_frameworks_root
 kanban_locales_root = _mod.kanban_locales_root
@@ -86,6 +92,7 @@ __all__ = [
     "DEFAULT_LANGUAGE",
     "SECONDARY_ENGLISH_LOCALE",
     "FR006_SUPPORTED_LOCALES",
+    "RTL_LOCALES",
     "LOCALE_VARIANTS",
     "LOCALISATION_CONFIG_FILENAME",
     "default_frameworks_root",
@@ -96,15 +103,19 @@ __all__ = [
     "parse_accept_language",
     "parse_locale_tag",
     "ensure_localisation_config",
+    "format_cli_status_line",
     "format_currency",
     "format_date",
     "format_datetime",
     "format_decimal",
     "format_for_project",
+    "format_locale_line_for_direction",
     "format_number",
+    "format_numbered_choice",
     "format_time",
     "get_locale_format_profile",
     "is_babel_available",
+    "is_rtl_locale",
     "locale_payload_from_tag",
     "LOCALE_FORMAT_PROFILES",
     "KANBAN_INTAKE_TEMPLATE_KEYS",
@@ -116,6 +127,7 @@ __all__ = [
     "resolve_language",
     "resolve_language_from_args",
     "switch_locale",
+    "text_direction_for_locale",
     "to_babel_locale",
     "resolve_locale_asset",
     "locale_message",

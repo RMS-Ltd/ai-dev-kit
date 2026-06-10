@@ -1,9 +1,9 @@
 # KB Index
 
-**Generated:** 2026-06-10 09:25:05 UTC  
+**Generated:** 2026-06-10 09:54:47 UTC  
 **Scope:** /Users/rms/Documents/projects/ai-dev-kit/docs  
-**Total files:** 3108  
-**Total size:** 14.60 MB
+**Total files:** 3112  
+**Total size:** 14.63 MB
 
 ---
 
@@ -14,12 +14,12 @@
 | analysis | 9 | 152.7 KB | 9 | 0 | 9 | 0 | 0 | 0 |
 | architecture | 126 | 1.24 MB | 120 | 6 | 119 | 1 | 0 | 0 |
 | book-project | 2 | 26.5 KB | 1 | 1 | 1 | 0 | 0 | 0 |
-| changelog-and-release-notes | 1427 | 3.97 MB | 199 | 1228 | 183 | 0 | 1 | 0 |
+| changelog-and-release-notes | 1429 | 3.98 MB | 199 | 1230 | 183 | 0 | 1 | 0 |
 | developer-tools | 2 | 12.7 KB | 2 | 0 | 2 | 0 | 0 | 0 |
 | documentation | 33 | 354.3 KB | 30 | 3 | 30 | 0 | 0 | 0 |
-| governance | 22 | 184.6 KB | 22 | 0 | 22 | 0 | 0 | 0 |
+| governance | 23 | 189.5 KB | 23 | 0 | 23 | 0 | 0 | 0 |
 | guides | 7 | 28.9 KB | 7 | 0 | 7 | 0 | 0 | 0 |
-| implementation-cycles | 254 | 2.12 MB | 214 | 40 | 199 | 2 | 1 | 0 |
+| implementation-cycles | 255 | 2.13 MB | 215 | 40 | 200 | 2 | 1 | 0 |
 | journals | 4 | 14.7 KB | 0 | 4 | 0 | 0 | 0 | 0 |
 | kanban | 1119 | 5.21 MB | 1075 | 44 | 1045 | 0 | 3 | 0 |
 | knowledge | 75 | 1.17 MB | 72 | 3 | 69 | 1 | 2 | 3 |
@@ -32,7 +32,7 @@
 ## Optimization signals
 
 - **docs/README.md exists:** False
-- **Files missing lifecycle frontmatter:** 1340
+- **Files missing lifecycle frontmatter:** 1342
 - **Timeboxed/transient with expires_at in the past:** 3
 - **READMEs (under docs/):** 22
 
@@ -88,7 +88,7 @@
 - `changelog-and-release-notes/changelog-archive/CHANGELOG_v0.10.1.3+1.md`
 - `changelog-and-release-notes/changelog-archive/CHANGELOG_v0.10.1.4+1.md`
 - `changelog-and-release-notes/changelog-archive/CHANGELOG_v0.10.1.5+1.md`
-- ... and 1290 more
+- ... and 1292 more
 
 ### Expired (candidates for archive/delete)
 
@@ -160,7 +160,7 @@
 | architecture/standards-and-adrs/ADR-023-doc-lifecycle-package-architecture-dual-sot.md | 4.6 KB | 411 | evergreen | 2026-06-06T23:30:00 |  |
 | architecture/standards-and-adrs/ADR-024-documentation-surfaces-three-surface-model-fr114.md | 7.9 KB | 841 | evergreen | 2026-06-07T18:00:00 |  |
 | architecture/standards-and-adrs/ADR-024-docusaurus-adopter-public-publish-allowlist-fr114.md | 5.3 KB | 502 | evergreen | 2026-06-07T12:00:00 |  |
-| architecture/standards-and-adrs/ADR-024-i18n-framework-strategy.md | 8.5 KB | 866 | evergreen | 2026-06-07T14:00:00 |  |
+| architecture/standards-and-adrs/ADR-024-i18n-framework-strategy.md | 9.0 KB | 907 | evergreen | 2026-06-07T14:00:00 |  |
 | architecture/standards-and-adrs/ADR-025-layered-accessibility-strategy.md | 6.2 KB | 829 | evergreen | 2026-06-07T22:00:00 |  |
 | architecture/standards-and-adrs/ADR-025-release-metadata-async-ingest-read-model.md | 2.0 KB | 204 | evergreen | 2026-06-07T15:00:00 |  |
 | architecture/standards-and-adrs/ADR-026-git-internal-maintainer-kb-fr121.md | 8.4 KB | 802 | evergreen | 2026-06-09T16:00:00 |  |
@@ -310,17 +310,18 @@
 | governance/standards/cli-accessibility-conventions.md | 2.2 KB | 261 | evergreen | 2026-06-07T23:00:00 |  |
 | governance/standards/dev-kit-ipw-ipp-vs-icw-artifacts.md | 3.7 KB | 319 | evergreen | 2026-05-20T12:00:00 |  |
 | governance/standards/dev-kit-versioning-policy.md | 44.3 KB | 5945 | evergreen | 2025-12-04T12:01:36 |  |
-| governance/standards/locale-cultural-requirements.md | 15.4 KB | 2126 | evergreen | 2026-06-09T21:00:00 |  |
+| governance/standards/locale-cultural-requirements.md | 15.4 KB | 2129 | evergreen | 2026-06-09T21:00:00 |  |
 | governance/standards/locale-detection-conventions.md | 3.9 KB | 394 | evergreen | 2026-06-07T19:00:00 |  |
 | governance/standards/locale-fallback-conventions.md | 2.8 KB | 242 | evergreen | 2026-06-07T23:45:00 |  |
-| governance/standards/locale-file-structure-conventions.md | 5.3 KB | 553 | evergreen | 2026-06-07T18:00:00 |  |
+| governance/standards/locale-file-structure-conventions.md | 5.4 KB | 564 | evergreen | 2026-06-07T18:00:00 |  |
 | governance/standards/locale-formatting-conventions.md | 3.9 KB | 424 | evergreen | 2026-06-07T22:00:00 |  |
 | governance/standards/locale-key-conventions.md | 4.0 KB | 395 | evergreen | 2026-06-07T23:00:00 |  |
 | governance/standards/locale-rollout-matrix.md | 4.0 KB | 389 | evergreen | 2026-06-08T14:00:00 |  |
+| governance/standards/locale-rtl-conventions.md | 4.5 KB | 467 | evergreen | 2026-06-10T12:00:00 |  |
 | governance/standards/locale-switching-conventions.md | 3.5 KB | 344 | evergreen | 2026-06-07T20:00:00 |  |
 | governance/standards/specification-and-planning-artifacts-policy.md | 7.3 KB | 826 | evergreen | 2026-04-01T16:00:00 |  |
 | governance/standards/translatable-content-inventory.md | 6.2 KB | 711 | evergreen | 2026-06-08T12:00:00 |  |
-| governance/standards/translation-workflow-and-review.md | 10.1 KB | 1124 | evergreen | 2026-06-08T20:00:00 |  |
+| governance/standards/translation-workflow-and-review.md | 10.3 KB | 1130 | evergreen | 2026-06-08T20:00:00 |  |
 | guides/README.md | 1.3 KB | 94 | evergreen | 2025-12-04T12:01:54 |  |
 | guides/adk-install-expenses-tracker-fresh-repo.md | 2.6 KB | 216 | evergreen | 2026-06-04T18:00:00 |  |
 | guides/agent-cold-start-checklist.md | 2.0 KB | 260 | evergreen | 2026-05-30T21:00:00 |  |
@@ -523,6 +524,7 @@
 | implementation-cycles/IPP-E21S03T07-test-translations-locale-support.md | 12.9 KB | 1740 | evergreen | 2026-06-08T14:00:00 |  |
 | implementation-cycles/IPP-E21S04T01-research-cultural-requirements-target-locales.md | 15.9 KB | 2016 | evergreen | 2026-06-09T20:30:00 |  |
 | implementation-cycles/IPP-E21S04T02-supersede-merge-into-t04.md | 7.9 KB | 1058 | evergreen | 2026-06-09T22:00:00 |  |
+| implementation-cycles/IPP-E21S04T03-rtl-support-arabic-hebrew.md | 9.8 KB | 1362 | evergreen | 2026-06-10T12:00:00 |  |
 | implementation-cycles/IPP-E21S05T01-spanish-es-translation-files.md | 14.6 KB | 1874 | evergreen | 2026-06-09T22:00:00 |  |
 | implementation-cycles/IPP-E21S06T01-chinese-simplified-zh-cn-translation-files.md | 5.9 KB | 764 | evergreen | 2026-06-10T08:15:00 |  |
 | implementation-cycles/IPP-E21S08T01-accessibility-layered-cli-first.md | 9.1 KB | 1369 | evergreen | 2026-06-07T20:30:00 |  |
@@ -789,15 +791,15 @@
 | kanban/epics/epic-02/story-15-ipw-governance-and-publication-contract.md | 6.8 KB | 508 | evergreen | 2026-04-14T00:00:00 |  |
 | kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T01-establish-canonical-perpetual-ongoing-tasks-story-fr088.md | 456 B | 27 | evergreen | 2026-06-08T00:00:00 |  |
 | kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T01-workflow-maintenance-perpetual.md | 8.3 KB | 800 | evergreen | 2026-04-20T18:20:00 |  |
-| kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T02-ad-hoc-kanban-synchronization-and-hygiene-perpetual.md | 3.3 KB | 298 | evergreen | 2026-04-22T00:00:00 |  |
+| kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T02-ad-hoc-kanban-synchronization-and-hygiene-perpetual.md | 3.3 KB | 300 | evergreen | 2026-04-22T00:00:00 |  |
 | kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T02-inventory-and-classify-workflow-perpetual-tasks.md | 448 B | 27 | evergreen | 2026-06-08T00:00:00 |  |
 | kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T03-markdown-documentation-maintenance-perpetual.md | 3.6 KB | 364 | evergreen | 2026-04-22T00:00:00 |  |
 | kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md | 376 B | 27 | evergreen | 2026-06-08T00:00:00 |  |
 | kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T04-ad-hoc-kanban-synchronization-and-hygiene-perpetual.md | 397 B | 27 | evergreen | 2026-06-08T00:00:00 |  |
 | kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T04-ad-hoc-repository-infrastructure-maintenance-perpetual.md | 2.6 KB | 310 | evergreen | 2026-05-19T00:00:00 |  |
-| kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T05-github-actions-ci-health-perpetual.md | 5.9 KB | 721 | evergreen | 2026-06-05T16:00:00 |  |
+| kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T05-github-actions-ci-health-perpetual.md | 5.9 KB | 719 | evergreen | 2026-06-05T16:00:00 |  |
 | kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T05-markdown-documentation-maintenance-perpetual.md | 390 B | 27 | evergreen | 2026-06-08T00:00:00 |  |
-| kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T06-github-security-code-quality-health-perpetual.md | 21.8 KB | 2847 | evergreen | 2026-06-05T16:00:00 |  |
+| kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T06-github-security-code-quality-health-perpetual.md | 21.8 KB | 2849 | evergreen | 2026-06-05T16:00:00 |  |
 | kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T06-ukw-optional-reprioritization-rp-flag-fr085.md | 433 B | 27 | evergreen | 2026-06-08T00:00:00 |  |
 | kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T07-ad-hoc-documentation-maintenance-perpetual.md | 4.9 KB | 522 | evergreen | 2026-06-09T00:00:00 |  |
 | kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T07-ukw-extension-for-fr-br-uxr-temporal-tracking-fr050.md | 679 B | 42 | evergreen | 2026-06-08T00:00:00 |  |
@@ -1442,12 +1444,12 @@
 | kanban/epics/epic-21/story-03-translation-and-localisation.md | 3.4 KB | 297 | evergreen | 2025-12-09T18:35:00 |  |
 | kanban/epics/epic-21/story-04-cultural-adaptation/T01-research-cultural-requirements-for-target-locales.md | 3.3 KB | 249 | evergreen | 2026-06-05T05:06:04 |  |
 | kanban/epics/epic-21/story-04-cultural-adaptation/T02-adapt-uiux-for-different-cultures-examples-imagery.md | 3.3 KB | 337 | evergreen | 2026-06-05T05:06:04 |  |
-| kanban/epics/epic-21/story-04-cultural-adaptation/T03-implement-rtl-support-right-to-left-for-arabichebrew.md | 1.5 KB | 166 | evergreen | 2026-06-05T05:06:04 |  |
+| kanban/epics/epic-21/story-04-cultural-adaptation/T03-implement-rtl-support-right-to-left-for-arabichebrew.md | 3.3 KB | 258 | evergreen | 2026-06-05T05:06:04 |  |
 | kanban/epics/epic-21/story-04-cultural-adaptation/T04-adapt-content-and-examples-for-cultural-context.md | 3.7 KB | 390 | evergreen | 2026-06-05T05:06:04 |  |
 | kanban/epics/epic-21/story-04-cultural-adaptation/T05-configure-locale-specific-formatting-dates-times-numbers-cur.md | 1.7 KB | 186 | evergreen | 2026-06-05T05:06:04 |  |
 | kanban/epics/epic-21/story-04-cultural-adaptation/T06-test-cultural-adaptations.md | 1.6 KB | 174 | evergreen | 2026-06-05T05:06:04 |  |
 | kanban/epics/epic-21/story-04-cultural-adaptation/T07-document-cultural-considerations-and-guidelines.md | 1.5 KB | 167 | evergreen | 2026-06-05T05:06:04 |  |
-| kanban/epics/epic-21/story-04-cultural-adaptation.md | 3.6 KB | 335 | evergreen | 2025-12-09T18:35:00 |  |
+| kanban/epics/epic-21/story-04-cultural-adaptation.md | 3.8 KB | 341 | evergreen | 2025-12-09T18:35:00 |  |
 | kanban/epics/epic-21/story-04-european-languages-localization/REDIRECT.md | 353 B | 30 |  |  |  |
 | kanban/epics/epic-21/story-05-cjk-languages-localization/REDIRECT.md | 339 B | 29 |  |  |  |
 | kanban/epics/epic-21/story-05-european-languages-localization/T01-spanish-es-translation-files.md | 3.0 KB | 288 | evergreen | 2026-06-06T17:00:00 |  |
@@ -1702,10 +1704,10 @@
 | kanban/intake-open-taskless-queue.md | 5.3 KB | 724 | evergreen | 2026-03-31T12:00:00 |  |
 | kanban/intake-structure.md | 18.1 KB | 1870 | evergreen | 2026-03-09T15:20:00 |  |
 | kanban/kanban-board-guide.md | 16.5 KB | 2136 | evergreen | 2026-01-20T00:00:00 |  |
-| kanban/kanban-completed.md | 127.3 KB | 10168 | evergreen | 2026-03-09T00:00:00 |  |
+| kanban/kanban-completed.md | 128.5 KB | 10247 | evergreen | 2026-03-09T00:00:00 |  |
 | kanban/kanban-structure.md | 25.5 KB | 2227 | evergreen | 2026-03-09T00:00:00 |  |
-| kanban/kboard.md | 30.6 KB | 2122 | evergreen | 2025-12-04T12:02:50 |  |
-| knowledge/KB-INDEX.md | 237.1 KB | 22257 |  |  |  |
+| kanban/kboard.md | 29.8 KB | 2061 | evergreen | 2025-12-04T12:02:50 |  |
+| knowledge/KB-INDEX.md | 237.2 KB | 22270 |  |  |  |
 | knowledge/README.md | 2.5 KB | 259 | evergreen | 2026-06-07T12:00:00 |  |
 | knowledge/USE_CASE_METHODOLOGY.md | 14.3 KB | 1844 | evergreen | 2025-12-16T14:30:00 |  |
 | knowledge/analysis/abstract-anti-patterns-use-case-exposed-design-flaw.md | 13.0 KB | 1796 | evergreen | 2025-12-18T00:00:00 |  |
@@ -1808,5 +1810,5 @@
 | project-agent-index.md | 4.3 KB | 392 | evergreen | 2026-05-30T21:00:00 |  |
 | project-management/README.md | 523 B | 34 | evergreen | 2025-12-04T12:01:54 |  |
 | release-notes/README.md | 1.4 KB | 123 | evergreen | 2026-06-07T12:00:00 |  |
-| changelog-and-release-notes/changelog-archive/ (summary) (1425 files) | 3.97 MB | 460439 |  |  |  |
+| changelog-and-release-notes/changelog-archive/ (summary) (1427 files) | 3.97 MB | 460829 |  |  |  |
 

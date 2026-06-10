@@ -14,7 +14,7 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** Medium (ongoing)  
 **Created:** 2026-06-05  
-**Last updated:** 2026-06-08 (Wave 3e shipped **v0.8.3.16+9** — autofix PR #43/#44 pytest triage)  
+**Last updated:** 2026-06-10 (IPW Wave 4 — manifest @ `38d2454`; AC13/AC14)  
 **Version Anchor:** v0.8.3.16+9 (Wave 3e)  
 **Code:** E02S16T06  
 **Task Type:** Perpetual Maintenance
@@ -73,11 +73,8 @@ Standing perpetual lane for **GitHub Advanced Security** hygiene:
 
 ## What this task does NOT own
 
-- [GitHub Actions](https://github.com/RMS-Ltd/ai-dev-kit/actions) workflow failures (red CI builds) → **E08:S03:T15**
-- **Active finite backlogs** while still IN PROGRESS:
-  - **E08:S03:T12** (BR-099 maintainability)
-  - **E08:S03:T13** (BR-100 reliability)
-  - **E08:S03:T14** (BR-101 AI suggestions)
+- [GitHub Actions](https://github.com/RMS-Ltd/ai-dev-kit/actions) workflow failures (red CI builds) → **E02:S16:T05**
+- **Finite backlog burn-down** (closed — routine hygiene only): **E08:S03:T12–T14** **COMPLETE**; residuals and new waves → **E02:S16:T06**
 - Dependabot version/security PR policy → **E08:S03:T06**
 - Novel **HIGH** severity findings that need focused IPP — file dedicated BR + task (BR-094–098 pattern), then return routine hygiene here
 
@@ -103,7 +100,7 @@ When **T12**, **T13**, and **T14** reach **COMPLETE** / terminal verification:
 
 Use **`RW E02:S16:T06`** for recurring security/Code Quality hygiene (BUILD increments on perpetual task). Prefer one wave theme per RW.
 
-**Deferred:** No T16 RW until **T12–T14** sign-off (see [Activity deferral](#activity-deferral-operator-directive--2026-06-05)).
+**Deferred:** Lifted 2026-06-07 — **T12–T14** sign-off complete; use **`RW E02:S16:T06`** for hygiene waves (see [Activity deferral](#activity-deferral-operator-directive--2026-06-05)).
 
 ---
 
@@ -292,7 +289,16 @@ Use **`RW E02:S16:T06`** for recurring security/Code Quality hygiene (BUILD incr
 | ------------ | ------ |
 | `pytest tests/` | **521 passed** |
 | `sync_greenfield_install.py --check` | in sync |
-| Operator dashboard | **Pending** post–3c merge |
+| Operator dashboard | **CLOSED** Wave 4a — Excellent M / Good R held @ `38d2454`; see Wave 4 manifest |
+
+### Wave 3d remediation (2026-06-08)
+
+**Theme:** Local CQG warning burn-down (`cli/logging.py` empty-except).
+
+| Verification | Result |
+| ------------ | ------ |
+| `RW E02:S16:T06 --art` | **v0.8.3.16+7** |
+| Operator dashboard | **CLOSED** Wave 4a @ `38d2454` |
 
 ### Wave 3e remediation (2026-06-08)
 
@@ -308,7 +314,39 @@ Use **`RW E02:S16:T06`** for recurring security/Code Quality hygiene (BUILD incr
 | PR #43 / #44 pytest CI | **green** pre-merge |
 | Merged to `main` | **2026-06-08** |
 | `RW E02:S16:T06 --art` | **v0.8.3.16+9** |
-| Operator dashboard | **Pending** post–3e merge |
+| Operator dismiss #43 finding | **Pending** (BR-101 / Security UI) |
+| Operator dashboard (standard bands) | **CLOSED** Wave 4a @ `38d2454` |
+
+---
+
+## Wave 4 re-scan manifest (2026-06-10 — Wave 4a)
+
+**Capture:** `main` @ **`38d24549445f4ed77b0d099f1aa3b927d5c61f19`** (2026-06-09 12:16 UTC). Source: [Code Quality — Standard findings](https://github.com/RMS-Ltd/ai-dev-kit/security/quality) (`is:open`); code scanning `gh api` **0** open. Operator-confirmed maintainability **~10**.
+
+| Surface | Open count | Score | Delta vs Wave 3 post-3b (`635ae871`) |
+| ------- | ---------- | ----- | ------------------------------------ |
+| [Code scanning](https://github.com/RMS-Ltd/ai-dev-kit/security/code-scanning) | **0** | 5 fixed | unchanged |
+| Standard — maintainability | **10** | **Good** | regression from **Excellent** / **0** — E02:S17 `release_metadata/` + `release_state/` + localization landing |
+| Standard — reliability | **0** | **Good** | unchanged |
+| [AI findings](https://github.com/RMS-Ltd/ai-dev-kit/security/quality/ai-findings) | lag-accepted | — | T14 closure unchanged |
+
+**Standard findings rule breakdown @ `38d2454` (operator + local ruff proxy):**
+
+| UI rule label | CodeQL rule (approx.) | Open | Band | Wave 4b disposition |
+| ------------- | --------------------- | ---- | ---- | ------------------- |
+| Unused import | `py/unused-import` | **4** | Maintainability | Autofix `ruff --select F401` |
+| Module is imported with 'import' and 'import from' | `py/import-and-import-from` | **4** | Maintainability | Autofix `ruff --select I001` |
+| Unused local variable | `py/unused-local-variable` | **1** | Maintainability | Manual prefix `_` |
+| Module is imported more than once | `py/repeated-import` | **1** | Maintainability | `I001` / import consolidation |
+| **Subtotal maintainability** | — | **10** | **Good** | — |
+
+**Wave 3c/3d/3e operator verify closure (Wave 4a):**
+
+| Wave | Prior status | Wave 4a disposition |
+| ---- | ------------ | --------------------- |
+| **3c** | pending post-merge | **CLOSED** — `py/empty-except` stragglers cleared; reliability **Good** @ `38d2454` |
+| **3d** | pending post-merge | **CLOSED** — CQG local gate clean; no reliability regression |
+| **3e** | pending dashboard | **CLOSED** (standard bands); PR #43 AI dismiss remains operator action |
 
 **Cross-lane notes:**
 
@@ -348,6 +386,8 @@ Use **`RW E02:S16:T06`** for recurring security/Code Quality hygiene (BUILD incr
 - [x] **AC10 (Wave 3c):** Final `py/empty-except` stragglers shipped **v0.8.3.16+6**; pytest green; operator post-merge verify **pending**.
 - [x] **AC11 (Wave 3d):** `cli/logging.py` empty-except shipped **v0.8.3.16+7**; repo grep clean; operator post-merge verify **pending**.
 - [x] **AC12 (Wave 3e):** Autofix PR #43/#44 pytest triage merged to `main`; shipped **v0.8.3.16+9**; operator dismiss #43 finding **pending**.
+- [ ] **AC13 (Wave 4a):** Wave 4 manifest **10** M @ `38d2454`; 3c/3d/3e verify notes closed; shipped **v0.2.16.6+2**.
+- [ ] **AC14 (Wave 4b):** Maintainability burn-down of **10** findings; pytest/CQG/greenfield green; operator TC24 verify; shipped **v0.2.16.6+3**.
 
 ---
 

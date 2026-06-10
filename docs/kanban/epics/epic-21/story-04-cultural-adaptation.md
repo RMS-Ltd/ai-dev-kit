@@ -12,8 +12,8 @@ housekeeping_policy: keep
 **Priority:** LOW  
 **Estimated Effort:** [TBD]  
 **Created:** 2025-12-09  
-**Last updated:** 2026-06-10 (v0.21.4.2+1 – Kanban documentation setup)
-**Version:** v0.21.4.2+1
+**Last updated:** 2026-06-10 (v0.21.4.3+1 – Kanban documentation setup)
+**Version:** v0.21.4.3+1
 **Code:** E21S04
 
 ---
@@ -36,8 +36,9 @@ Ensure framework content and features are culturally appropriate for different r
   - Task: [`T01-research-cultural-requirements-for-target-locales`](story-04-cultural-adaptation/T01-research-cultural-requirements-for-target-locales.md)
 - [x] **E21:S04:T02 – Adapt UI/UX for different cultures (examples, imagery)** - SUPERSEDED (**v0.21.4.2+1**; merged into **E21:S04:T04**; [IPP-E21S04T02](../../implementation-cycles/IPP-E21S04T02-supersede-merge-into-t04.md))
   - Task: [`T02-adapt-uiux-for-different-cultures-examples-imagery`](story-04-cultural-adaptation/T02-adapt-uiux-for-different-cultures-examples-imagery.md)
-- [ ] **E21:S04:T03 – Implement RTL support (Right-to-Left) for Arabic/Hebrew** - TODO
+- [x] **E21:S04:T03 – Implement RTL support (Right-to-Left) for Arabic/Hebrew** - COMPLETE (**v0.21.4.3+1**)
   - Task: [`T03-implement-rtl-support-right-to-left-for-arabichebrew`](story-04-cultural-adaptation/T03-implement-rtl-support-right-to-left-for-arabichebrew.md)
+  - Planning: [IPP-E21S04T03](../../implementation-cycles/IPP-E21S04T03-rtl-support-arabic-hebrew.md) · [locale-rtl-conventions](../../governance/standards/locale-rtl-conventions.md)
 - [ ] **E21:S04:T04 – Adapt content and examples for cultural context** - TODO (absorbs superseded T02 imagery/layout scope)
   - Task: [`T04-adapt-content-and-examples-for-cultural-context`](story-04-cultural-adaptation/T04-adapt-content-and-examples-for-cultural-context.md)
 - [ ] **E21:S04:T05 – Configure locale-specific formatting (dates, times, numbers, currency)** - TODO
@@ -53,7 +54,7 @@ Ensure framework content and features are culturally appropriate for different r
 
 - [ ] Cultural requirements researched
 - [ ] UI/UX adapted for different cultures (via T04 content/presentation policy + T03 RTL — not a separate task after T02 supersede)
-- [ ] RTL support implemented
+- [x] RTL support implemented (T03 @ v0.21.4.3+1)
 - [ ] Content adapted for cultural context
 - [ ] Locale-specific formatting configured
 - [ ] Cultural adaptations tested

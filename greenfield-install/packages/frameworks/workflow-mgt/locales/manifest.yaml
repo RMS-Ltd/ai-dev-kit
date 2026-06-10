@@ -1,6 +1,9 @@
 version: 2
 default_locale: en-GB
 framework: workflow-mgt
+locale_metadata:
+  ar:
+    text_direction: rtl
 supported_locales:
 - en-GB
 - en-US

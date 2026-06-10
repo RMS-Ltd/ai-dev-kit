@@ -13,7 +13,7 @@ housekeeping_policy: keep
 **Submitted:** 2026-06-05  
 **Submitted By:** User (via agent — CI/security ownership gap)  
 **Priority:** HIGH  
-**Status:** IN PROGRESS (T16 Wave 3e @ **v0.8.3.16+9** — autofix PR #43/#44 pytest triage; operator dashboard re-verify pending)  
+**Status:** IN PROGRESS (T06 Wave 4 IPW @ 2026-06-10 — **~10** maintainability @ `main` `38d2454`; Wave 4a manifest + Wave 4b remediation planned)  
 **Implementing Tasks:**
 - **E02:S16:T05** — [GitHub Actions CI health (Perpetual)](../epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T05-github-actions-ci-health-perpetual.md) *(Historical Anchor: E08:S03:T15)*
 - **E02:S16:T06** — [GitHub Security & Code Quality health (Perpetual)](../epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T06-github-security-code-quality-health-perpetual.md) *(Historical Anchor: E08:S03:T16)*

@@ -8,6 +8,7 @@ Detection: E21:S02:T03 (system/browser/env precedence in resolve_language).
 Switching: E21:S02:T04 (`switch_locale`, `--locale`, `adk config locale`).
 Keys: E21:S02:T06 (`resolve_locale_key`, YAML key catalogs).
 Call sites: E21:S03:T03 (`locale_message` wrapper for installer/CLI).
+RTL: E21:S04:T03 (`is_rtl_locale`, `text_direction_for_locale`, CLI formatting helpers).
 Fallback: E21:S02:T07 (`_language_fallback_chain`: selected → default → en-GB → en-US).
 
 Precedence (resolve_language): override → config file → ADK_LOCALE → system
@@ -21,7 +22,7 @@ from __future__ import annotations
 import locale
 import os
 from pathlib import Path
-from typing import Any, Dict, List, Mapping, Optional, Sequence, Tuple
+from typing import Any, Dict, List, Literal, Mapping, Optional, Sequence, Tuple
 
 import yaml
 
@@ -50,6 +51,17 @@ FR006_SUPPORTED_LOCALES: Tuple[str, ...] = (
     "pt",
     "ru",
     "ar",
+)
+
+# E21:S04:T03 — code registry is SoT; manifest locale_metadata is documentary.
+RTL_LOCALES: frozenset[str] = frozenset({"ar", "he"})
+
+_STATUS_LINE_PREFIXES: Tuple[str, ...] = (
+    "✅ ",
+    "❌ ",
+    "⚠️  ",
+    "ℹ️  ",
+    "🔍 ",
 )
 
 
@@ -105,6 +117,61 @@ def map_to_supported_locale(
         if candidate.split("-", 1)[0] == language:
             return candidate
     return DEFAULT_LANGUAGE
+
+
+def _rtl_language_from_tag(tag: Optional[str]) -> Optional[str]:
+    parsed = parse_locale_tag(tag)
+    if parsed is None:
+        return None
+    return parsed.split("-", 1)[0]
+
+
+def is_rtl_locale(tag: Optional[str]) -> bool:
+    """Return True when the locale uses right-to-left text direction (E21:S04:T03)."""
+    language = _rtl_language_from_tag(tag)
+    return language in RTL_LOCALES if language is not None else False
+
+
+def text_direction_for_locale(tag: Optional[str]) -> Literal["ltr", "rtl"]:
+    """Return text direction for a locale tag; unknown/None defaults to ltr."""
+    return "rtl" if is_rtl_locale(tag) else "ltr"
+
+
+def format_cli_status_line(
+    locale: Optional[str],
+    icon: str,
+    message: str,
+) -> str:
+    """Format a CLI status line with direction-aware icon placement."""
+    icon = icon.strip()
+    message = message.strip()
+    if not icon:
+        return message
+    if text_direction_for_locale(locale) == "rtl":
+        return f"{message} {icon}"
+    return f"{icon} {message}"
+
+
+def format_numbered_choice(
+    locale: Optional[str],
+    index: int,
+    label: str,
+) -> str:
+    """Format a numbered CLI/menu choice with direction-aware index placement."""
+    label = label.strip()
+    if text_direction_for_locale(locale) == "rtl":
+        return f"  {label} [{index}]"
+    return f"  [{index}] {label}"
+
+
+def format_locale_line_for_direction(locale: Optional[str], line: str) -> str:
+    """Reorder a resolved locale string when it starts with a known status prefix."""
+    for prefix in _STATUS_LINE_PREFIXES:
+        if line.startswith(prefix):
+            icon = prefix.strip()
+            rest = line[len(prefix) :].lstrip()
+            return format_cli_status_line(locale, icon, rest)
+    return line
 
 
 def detect_env_locale(environ: Optional[Mapping[str, str]] = None) -> Optional[str]:
@@ -363,21 +430,33 @@ def _resolve_locale_key_or_none(
         return None
 
 
+def _locale_for_cli_prompt(project_root: Optional[Path]) -> str:
+    if project_root is None:
+        return DEFAULT_LANGUAGE
+    try:
+        return resolve_language(project_root)
+    except (ValueError, FileNotFoundError, OSError):
+        return DEFAULT_LANGUAGE
+
+
 def prompt_language_choice(project_root: Optional[Path] = None) -> Dict[str, str]:
     """Interactive prompt for UK/US English variant (FR-006 numbered format)."""
+    active_locale = _locale_for_cli_prompt(project_root)
     print()
     print(
         _resolve_locale_key_or_none(project_root, "cli.prompt.language_choice")
         or "Select your preferred English variant:"
     )
-    print(
+    uk_label = (
         _resolve_locale_key_or_none(project_root, "cli.prompt.language_uk")
-        or "  [1] UK English (en-GB) — colour, organise, realise  [default]"
+        or "UK English (en-GB) — colour, organise, realise  [default]"
     )
-    print(
+    us_label = (
         _resolve_locale_key_or_none(project_root, "cli.prompt.language_us")
-        or "  [2] US English (en-US) — color, organize, realize"
+        or "US English (en-US) — color, organize, realize"
     )
+    print(format_numbered_choice(active_locale, 1, uk_label))
+    print(format_numbered_choice(active_locale, 2, us_label))
     invalid_msg = (
         _resolve_locale_key_or_none(project_root, "errors.cli.invalid_language_choice")
         or "  Invalid choice. Enter 1 or 2."

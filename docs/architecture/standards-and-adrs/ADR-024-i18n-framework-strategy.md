@@ -104,8 +104,9 @@ Adopt **C1: Hybrid extension of the Phase 1 incumbent** as the canonical i18n st
 | **E21:S03:T05** | Management tools (script-first): `validate_locale_translations.py`, `sync_locale_keys.py`; `scaffold_locale_trees.py` (T02). Guide: [translation-management-tools.md](../../documentation/user-docs/translation-management-tools.md) |
 | **E21:S03:T06** | Completeness metrics (script-first): `report_locale_completeness.py`; registry scope from [translatable-content-registry.yaml](../../governance/standards/translatable-content-registry.yaml); tier breakdown per [locale-rollout-matrix.md](../../governance/standards/locale-rollout-matrix.md). Guide: [translation-management-tools.md](../../documentation/user-docs/translation-management-tools.md) — **COMPLETE** @ v0.21.3.6+1 |
 | **E21:S03:T07** | Phase 3 E2E tests (test-only): `tests/test_fr006_phase3_translation_locale_e2e.py` (P3E1–P3E11); parametrized scaffold-locale setup-path + fallback verification; regression `pytest -m fr006`. Planning: [IPP-E21S03T07](../../implementation-cycles/IPP-E21S03T07-test-translations-locale-support.md) |
+| **E21:S04:T03** | RTL registry (`RTL_LOCALES`, `is_rtl_locale`, `text_direction_for_locale`) + CLI/installer direction-aware formatting helpers in `localisation_config.py`; `he` API extension without locale tree. Policy: [locale-rtl-conventions.md](../../governance/standards/locale-rtl-conventions.md). Portal RTL **deferred** (same row as below). Planning: [IPP-E21S04T03](../../implementation-cycles/IPP-E21S04T03-rtl-support-arabic-hebrew.md) |
 | **E21:S03+** | Major-language file trees (T02); linguistic delivery S05–S07 |
-| **Portal (deferred)** | If Docusaurus i18n is required, evaluate i18next or Docusaurus native i18n in a **separate** task — not part of C1 core |
+| **Portal (deferred)** | If Docusaurus i18n is required, evaluate i18next or Docusaurus native i18n in a **separate** task — not part of C1 core; RTL layout for portal follows `is_rtl_locale` when pursued |
 
 ### Performance
 

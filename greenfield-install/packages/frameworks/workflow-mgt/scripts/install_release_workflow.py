@@ -77,8 +77,10 @@ except ImportError:
 try:
     from localisation_config import (
         ensure_localisation_config,
+        format_locale_line_for_direction,
         locale_message,
         render_locale_text,
+        resolve_language,
         workflow_locales_root,
     )
 except ImportError:
@@ -92,14 +94,22 @@ except ImportError:
         sys.modules["localisation_config"] = _mod_loc
         _spec_loc.loader.exec_module(_mod_loc)
         ensure_localisation_config = _mod_loc.ensure_localisation_config
+        format_locale_line_for_direction = _mod_loc.format_locale_line_for_direction
         locale_message = _mod_loc.locale_message
         render_locale_text = _mod_loc.render_locale_text
+        resolve_language = _mod_loc.resolve_language
         workflow_locales_root = _mod_loc.workflow_locales_root
     else:
         def ensure_localisation_config(*args, **kwargs):  # type: ignore[misc]
             return None
 
         def locale_message(*args, **kwargs):  # type: ignore[misc]
+            raise RuntimeError("localisation_config not available")
+
+        def format_locale_line_for_direction(line, locale=None):  # type: ignore[misc]
+            return line
+
+        def resolve_language(*args, **kwargs):  # type: ignore[misc]
             raise RuntimeError("localisation_config not available")
 
         def render_locale_text(*args, **kwargs):  # type: ignore[misc]
@@ -116,6 +126,25 @@ def _msg(
 ) -> str:
     """Shorthand for locale_message at installer call sites (E21:S03:T03)."""
     return locale_message(project_root, key, substitutions=substitutions)
+
+
+def _active_installer_locale(project_root: Optional[Path]) -> Optional[str]:
+    if project_root is None:
+        return None
+    try:
+        return resolve_language(project_root)
+    except (ValueError, FileNotFoundError, OSError):
+        return None
+
+
+def _print_msg(
+    project_root: Optional[Path],
+    key: str,
+    substitutions: Optional[Dict[str, str]] = None,
+) -> None:
+    """Print a locale message with RTL-aware status prefix ordering (E21:S04:T03)."""
+    line = _msg(project_root, key, substitutions)
+    print(format_locale_line_for_direction(_active_installer_locale(project_root), line))
 
 # Minimal RW installer runtime dependencies (see repo setup.py).
 INSTALLER_DEPENDENCIES: Tuple[Tuple[str, str, str], ...] = (
@@ -1531,12 +1560,10 @@ Brownfield (existing repo):
     project_root = Path(args.project_root).resolve()
     
     if not project_root.exists():
-        print(
-            _msg(
-                project_root,
-                "installer.run.project_not_found",
-                {"path": str(project_root)},
-            )
+        _print_msg(
+            project_root,
+            "installer.run.project_not_found",
+            {"path": str(project_root)},
         )
         sys.exit(1)
 
@@ -1583,12 +1610,10 @@ Brownfield (existing repo):
                 )
             )
             sys.exit(1)
-        print(
-            _msg(
-                project_root,
-                "installer.run.config_loaded",
-                {"path": str(config_path)},
-            )
+        _print_msg(
+            project_root,
+            "installer.run.config_loaded",
+            {"path": str(config_path)},
         )
         config["maintainer_editor_profile"] = resolve_maintainer_editor_profile(
             config,
@@ -1619,13 +1644,11 @@ Brownfield (existing repo):
 
     if not args.dry_run:
         config_path.write_text(config_yaml, encoding='utf-8')
-        print(
-            "\n"
-            + _msg(
-                project_root,
-                "installer.run.config_written",
-                {"path": str(config_path)},
-            )
+        print()
+        _print_msg(
+            project_root,
+            "installer.run.config_written",
+            {"path": str(config_path)},
         )
         scaffold_result = ensure_version_file_scaffold(
             project_root,

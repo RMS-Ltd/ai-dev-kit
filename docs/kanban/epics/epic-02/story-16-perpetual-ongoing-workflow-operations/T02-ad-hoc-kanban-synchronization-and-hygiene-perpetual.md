@@ -14,7 +14,7 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** Medium  
 **Created:** 2026-04-22  
-**Last updated:** 2026-06-10 (RW **v0.2.16.2+3** — UKW -u E05 FR-114 terminal row prune)
+**Last updated:** 2026-06-10 (UKW -u — E08:S03:T12 terminal prune from `kboard.md`; T05/T06 handoff text sync)
 **Version Anchor:** v0.2.16.2+3
 **Code:** E02S16T02
 **Task Type:** Perpetual Maintenance
