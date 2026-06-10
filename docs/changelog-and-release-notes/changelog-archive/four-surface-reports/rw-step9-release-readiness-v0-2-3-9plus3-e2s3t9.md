@@ -2,9 +2,9 @@
 
 - **Contract:** FR-092 Wave 7 release-readiness gate (Gates 1-7: governance / predecessors / parity / corpus / stage / stamps / four-surface)
 - **Invocation context:** rw_step_9_release_readiness
-- **Release scope:** E2:S3:T9 (v0.2.3.9+2)
-- **Timestamp (UTC):** 2026-06-10 12:50 UTC
-- **Four-surface report:** `/Users/rms/Documents/projects/ai-dev-kit/docs/changelog-and-release-notes/changelog-archive/four-surface-reports/rw-step7-four-surface-report-v0-2-3-9plus2-e2s3t9.json`
+- **Release scope:** E2:S3:T9 (v0.2.3.9+3)
+- **Timestamp (UTC):** 2026-06-10 12:58 UTC
+- **Four-surface report:** `/Users/rms/Documents/projects/ai-dev-kit/docs/changelog-and-release-notes/changelog-archive/four-surface-reports/rw-step7-four-surface-report-v0-2-3-9plus3-e2s3t9.json`
 
 ## Overall verdict
 
@@ -55,24 +55,24 @@
 - Summary: Corpus canonical state holds: every active board is idempotent under canonical sweep; no duplicate tails; no synthetic stamps.
 - Evidence:
   - `/Users/rms/Documents/projects/ai-dev-kit/docs/kanban/kboard.md`: `{'rows_changed': 0, 'rows_with_duplicate_footers': 0}`
-  - `stamp_evidence_aggregate`: `{'stamps_appended_with_evidence': 0, 'stamps_skipped_no_evidence': 0, 'stamps_preserved_existing': 65}`
+  - `stamp_evidence_aggregate`: `{'stamps_appended_with_evidence': 0, 'stamps_skipped_no_evidence': 0, 'stamps_preserved_existing': 64}`
 
 ### Gate 5 — Stage-set completeness (BR-070)
 
 - Status: **PASS** (severity: `block`)
 - Summary: BR-070 satisfied: all 5 Step-7 path(s) are staged or unchanged.
 - Evidence:
-  - `four_surface_report`: `/Users/rms/Documents/projects/ai-dev-kit/docs/changelog-and-release-notes/changelog-archive/four-surface-reports/rw-step7-four-surface-report-v0-2-3-9plus2-e2s3t9.json`
+  - `four_surface_report`: `/Users/rms/Documents/projects/ai-dev-kit/docs/changelog-and-release-notes/changelog-archive/four-surface-reports/rw-step7-four-surface-report-v0-2-3-9plus3-e2s3t9.json`
   - `paths_checked`: `5`
   - `violations`: `0`
-  - `release_scope`: `{'epic': 2, 'story': 3, 'task': 9, 'task_id': 'E2:S3:T9', 'version_string': 'v0.2.3.9+2'}`
+  - `release_scope`: `{'epic': 2, 'story': 3, 'task': 9, 'task_id': 'E2:S3:T9', 'version_string': 'v0.2.3.9+3'}`
 
 ### Gate 6 — Forensic stamp evidence (UXR-009)
 
 - Status: **PASS** (severity: `block`)
 - Summary: Forensic stamp evidence consistent: appended=1, skipped=0, preserved=0 (mode=None).
 - Evidence:
-  - `report`: `/Users/rms/Documents/projects/ai-dev-kit/docs/changelog-and-release-notes/changelog-archive/four-surface-reports/rw-step7-four-surface-report-v0-2-3-9plus2-e2s3t9.json`
+  - `report`: `/Users/rms/Documents/projects/ai-dev-kit/docs/changelog-and-release-notes/changelog-archive/four-surface-reports/rw-step7-four-surface-report-v0-2-3-9plus3-e2s3t9.json`
   - `evidence_mode`: `None`
   - `stamps_appended_with_evidence`: `1`
   - `stamps_skipped_no_evidence`: `0`
@@ -83,11 +83,11 @@
 - Status: **PASS** (severity: `block`)
 - Summary: Four-surface parity satisfied: all primary surfaces present, either touched or noted-untouched, with paths existing on disk.
 - Evidence:
-  - `report`: `/Users/rms/Documents/projects/ai-dev-kit/docs/changelog-and-release-notes/changelog-archive/four-surface-reports/rw-step7-four-surface-report-v0-2-3-9plus2-e2s3t9.json`
+  - `report`: `/Users/rms/Documents/projects/ai-dev-kit/docs/changelog-and-release-notes/changelog-archive/four-surface-reports/rw-step7-four-surface-report-v0-2-3-9plus3-e2s3t9.json`
   - `task_doc`: `{'touched': True, 'paths': ['/Users/rms/Documents/projects/ai-dev-kit/docs/kanban/epics/epic-02/story-03-additional-workflows-and-examples/T09-ipw-full-delivery-chain-idf-rw-fr123.md'], 'notes_count': 0}`
-  - `fbu_doc`: `{'touched': True, 'paths': ['/Users/rms/Documents/projects/ai-dev-kit/docs/kanban/fr-br/FR-124-meta-workflow-orchestration-composite-workflow-chains.md', '/Users/rms/Documents/projects/ai-dev-kit/docs/kanban/fr-br/FR-123-ipw-full-delivery-chain-idf-rw.md'], 'notes_count': 0}`
+  - `fbu_doc`: `{'touched': True, 'paths': ['/Users/rms/Documents/projects/ai-dev-kit/docs/kanban/fr-br/FR-124-meta-workflow-orchestration-composite-workflow-chains.md'], 'notes_count': 0}`
   - `kboard`: `{'touched': True, 'paths': ['/Users/rms/Documents/projects/ai-dev-kit/docs/kanban/kboard.md'], 'notes_count': 0}`
-  - `release_scope`: `{'epic': 2, 'story': 3, 'task': 9, 'task_id': 'E2:S3:T9', 'version_string': 'v0.2.3.9+2'}`
+  - `release_scope`: `{'epic': 2, 'story': 3, 'task': 9, 'task_id': 'E2:S3:T9', 'version_string': 'v0.2.3.9+3'}`
 
 ### Gate 8 — Stamp homogeneity (FR-097)
 

@@ -8,7 +8,7 @@ housekeeping_policy: keep
 
 # Workflow initiation cheatsheet
 
-**Last verified against:** 2026-06-08 (`.cursorrules`, `.claude/commands/rw.md`, `ukw.md`, `ipw.md`, `idw.md`; IDW `--rw` chain; FR-085 `UKW --rp` / ADR-009; FR-102 `UKW -c` / ADR-010; BR-067 `RW -d --dpz`; UXR-022; UXR-024 local-default RW)
+**Last verified against:** 2026-06-10 (`.cursorrules`, `.claude/commands/rw.md`, `ukw.md`, `ipw.md`, `idw.md`, `mwf.md`; MWF `delivery` recipe; IDW `--rw` chain; FR-124; FR-085 `UKW --rp` / ADR-009; FR-102 `UKW -c` / ADR-010; BR-067 `RW -d --dpz`; UXR-022; UXR-024 local-default RW)
 
 > **Agent source of truth:** If this cheatsheet and [`.cursorrules` (source)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/.cursorrules) or [`.claude/commands/` (source)](https://github.com/RMS-Ltd/ai-dev-kit/tree/main/.claude/commands) diverge, **`.cursorrules` wins** for agent behavior. This page is a human quick-reference for *which command to type* — not full execution steps.
 
@@ -23,6 +23,7 @@ housekeeping_policy: keep
 | Release completed work | `RW E02:S16:T15` (full), `RW -d E02:S16:T15` (docs-only), or `RW -k E02:S16:T15` (kanban-init) |
 | Plan before implementing | `IPW E02:S16:T15` (**plan mode first**) or `/ipw E02:S16:T15` |
 | Implement from IPP | `IDW E02:S16:T15` or `/idw E02:S16:T15` (implementation mode; linked IPP required) |
+| Full pipeline (plan → implement → release) | `MWF E02:S16:T15 delivery` — orchestrates IPW → IDW `--rw` (mode-gate pauses) |
 | Implement + release (chain) | `IDW E02:S16:T15 --rw` — local-complete RW after `IDW COMPLETE` |
 | Sync all kanban docs (global) | `UKW` then `RW` |
 | Clear completed rows from active boards (archive to completed ledgers) | `UKW -c` then `RW` |
@@ -101,6 +102,7 @@ Or per release: `python packages/frameworks/workflow-mgt/scripts/version/push_rw
 | `--rp` | **UKW** | **RePrioritise** — standalone deep MoSCOW reorder (not `RW -d`, not `UKW -a`; distinct from `UKW -p`) |
 | `-c` | **UKW** | **Archive completed** — move terminal rows to completed ledgers (not `RW -d`, not `UKW -a`) |
 | `--rw` | **IDW** | Chain **local-complete RW** after `IDW COMPLETE` (lowercase; not an RW flag) |
+| `--push` / `--art` | **MWF** | Forward to IDW `--rw` leg when using `MWF E:S:T delivery` |
 
 **`-a` target syntax:** single task `E02:S16:T15`; multiple `E02:S16:T13,E02:S16:T14`; range `E02:S16:T13-E02:S16:T15`; story `E02:S16`; epic `E02`; all unprioritized `all` or `*`.
 
@@ -158,6 +160,27 @@ Or per release: `python packages/frameworks/workflow-mgt/scripts/version/push_rw
 
 ---
 
+## 4c. Meta-Workflow (MWF)
+
+| Invocation | Meaning |
+| ---------- | ------- |
+| `MWF E02:S03:T09 delivery` / `/mwf E02:S03:T09 delivery` | Full pipeline: IPW (if no IPP) → mode gate → IDW `--rw` |
+| `MWF E02:S03:T09 ipw,idw,rw` | Alias for `delivery` |
+| `MWF E02:S03:T09 delivery --art` | Forward `--art` to IDW `--rw` leg |
+| `MWF E02:S03:T09 delivery --push` | Forward `--push` to IDW `--rw` leg |
+
+| | |
+| --- | --- |
+| **Prerequisites** | Tool access; parseable `E:S:T` and recipe |
+| **Mode gates** | IPW leg: **plan mode**; IDW leg: **implementation mode** — `MWF CHAIN PAUSED` between legs |
+| **Resume** | When IPP already linked on task, skip IPW; run IDW `--rw` only |
+| **vs IDW `--rw`** | **MWF** = multi-leg (IPW→IDW→RW); **IDW `--rw`** = two-leg (impl→RW) |
+| **Blocked (tools)** | `MWF BLOCKED: tool execution is unavailable in this session. Switch to a session with tool access and retry.` |
+
+**Deep dive:** [`.claude/commands/mwf.md` (source)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/.claude/commands/mwf.md) · [meta-workflow-agent-execution.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/meta-workflow-agent-execution.md) · [FR-124](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/kanban/fr-br/FR-124-meta-workflow-orchestration-composite-workflow-chains.md)
+
+---
+
 ## 5. Changelog Management Workflow (CMW)
 
 | Invocation | Meaning |
@@ -192,8 +215,10 @@ Or per release: `python packages/frameworks/workflow-mgt/scripts/version/push_rw
 
 | Sequence | When |
 | -------- | ---- |
-| `IPW E02:S16:T15` → `IDW E02:S16:T15` → `RW E02:S16:T15` | New work with planning gate (canonical three-step) |
-| `IPW E02:S16:T15` → `IDW E02:S16:T15 --rw` | Plan, implement, local release in one IDW chain |
+| `MWF E02:S16:T15 delivery` | **Preferred** full pipeline (IPW → IDW → RW) with mode-gate pauses |
+| `IPW E02:S16:T15` → `IDW E02:S16:T15` → `RW E02:S16:T15` | New work with planning gate (manual three-step) |
+| `IPW E02:S16:T15` → `IDW E02:S16:T15 --rw` | Plan, implement, local release (manual; IDW chains RW) |
+| `MWF E02:S16:T15 delivery` (IPP exists) | Resume: IDW `--rw` only (skips IPW leg) |
 | `UKW` → `RW` | Global kanban sync then commit |
 | `CMW` → `RW` | Changelog maintenance then commit |
 | `UKW -ad kboard,fbuboard` → `RW` | Targeted drift repair (**planned**) |
@@ -212,6 +237,7 @@ Or per release: `python packages/frameworks/workflow-mgt/scripts/version/push_rw
 | UKW slash command | [`.claude/commands/ukw.md` (source)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/.claude/commands/ukw.md) |
 | IPW slash command | [`.claude/commands/ipw.md` (source)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/.claude/commands/ipw.md) |
 | IDW slash command | [`.claude/commands/idw.md` (source)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/.claude/commands/idw.md) |
+| MWF slash command | [`.claude/commands/mwf.md` (source)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/.claude/commands/mwf.md) |
 | Claude routing | [`CLAUDE.md` (source)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/CLAUDE.md) |
 | Config paths | [`rw-config.yaml` (source)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/rw-config.yaml) |
 | Guides index | [`docs/guides/README.md`](README.md) |

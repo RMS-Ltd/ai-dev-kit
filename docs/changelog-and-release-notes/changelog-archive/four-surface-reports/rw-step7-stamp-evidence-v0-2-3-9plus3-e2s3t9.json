@@ -1,0 +1,8 @@
+{
+  "rows": {
+    "E02:S03:T09": {
+      "allowed": true,
+      "reason": "RW Step 7 v0.2.3.9+3 — T09 COMPLETE; pruned from kboard to kanban-completed.md"
+    }
+  }
+}

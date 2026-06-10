@@ -144,10 +144,10 @@ All paths per §5; PUBLISHED under repo canonical locations. IPP path linked fro
 
 ## 7. Success / verification criteria
 
-- [ ] V1–V9 pass
-- [ ] FR-124 AC1–AC5 satisfied
-- [ ] RW release anchor on E02:S03:T09
-- [ ] Operator can run `MWF E:S:T delivery` (or pause at mode gate with clear resume instructions)
+- [x] V1–V9 pass (2026-06-10)
+- [x] FR-124 AC1–AC5 satisfied (v0.2.3.9+3)
+- [x] RW release anchor on E02:S03:T09
+- [x] Operator can run `MWF E:S:T delivery` (or pause at mode gate with clear resume instructions)
 
 ---
 

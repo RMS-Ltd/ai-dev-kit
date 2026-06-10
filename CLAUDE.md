@@ -145,6 +145,33 @@ Do not silently no-op.
 
 ---
 
+## MWF Trigger Routing
+
+**When the user message begins with `MWF` or `mwf` (case-insensitive), treat it as a Meta-Workflow orchestration trigger command — equivalent to the `/mwf` slash command with the remainder of the message as arguments.**
+
+Examples of plain-text triggers that MUST invoke the MWF engine:
+
+- `MWF E2:S03:T09 delivery` → full pipeline: IPW (if no IPP) → mode gate → IDW --rw
+- `MWF E2:S03:T09 ipw,idw,rw` → same as `delivery`
+- `MWF E2:S03:T09 delivery --art` → forward `--art` to IDW `--rw` leg
+- `mwf E2:S03:T09 delivery --push` → forward `--push` to IDW `--rw` leg
+
+**DO NOT treat these as conversational text.** Execute the Meta-Workflow per `.claude/commands/mwf.md`.
+
+**Preferred invocation:** `/mwf E2:S03:T09 delivery`
+
+**Mode gates:** IPW leg requires plan mode; IDW leg requires implementation mode. Emit `MWF CHAIN PAUSED` when mode transition is needed — do not auto-switch modes.
+
+### MWF blocked session (AC3)
+
+If Bash/tool execution is NOT available in this session, respond with:
+
+> **MWF BLOCKED: tool execution is unavailable in this session. Switch to a session with tool access and retry.**
+
+Do not silently no-op.
+
+---
+
 ## Other Workflow Triggers
 
 - `CMW` — Changelog Management Workflow. Instructions in `.cursorrules`.
@@ -156,7 +183,7 @@ When any of these triggers appear at the start of a user message, treat them as 
 
 ## Key Conventions
 
-- **Workflow triggers (human cheatsheet):** [`docs/guides/workflow-initiation-cheatsheet.md`](docs/guides/workflow-initiation-cheatsheet.md) — RW, UKW, IPW, CMW, PVW invocation quick-reference (agent SoT remains `.cursorrules`).
+- **Workflow triggers (human cheatsheet):** [`docs/guides/workflow-initiation-cheatsheet.md`](docs/guides/workflow-initiation-cheatsheet.md) — RW, UKW, IPW, IDW, MWF, CMW, PVW invocation quick-reference (agent SoT remains `.cursorrules`).
 - All commits and tags go through RW — never `git commit` or `git push` directly outside RW.
 - Version schema: `RC.EPIC.STORY.TASK+BUILD` (internal); SemVer for external display.
 - Config-driven paths: `rw-config.yaml` at project root is the single source of truth for file paths.

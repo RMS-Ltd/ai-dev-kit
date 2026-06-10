@@ -34,7 +34,7 @@
     },
     {
       "id": "P-TRIGGER-ROUTING",
-      "rule": "Plain-text RW/UKW/IPW/IDW/CMW/PVW at message start are workflow commands, not chat.",
+      "rule": "Plain-text RW/UKW/IPW/IDW/MWF/CMW/PVW at message start are workflow commands, not chat.",
       "sourcePath": "CLAUDE.md"
     },
     {
@@ -61,7 +61,7 @@
   "taskRouting": [
     {
       "intent": "workflows",
-      "keywords": ["RW", "UKW", "IPW", "IDW", "CMW", "PVW", "release", "changelog", "kanban sync", "workflow"],
+      "keywords": ["RW", "UKW", "IPW", "IDW", "MWF", "CMW", "PVW", "release", "changelog", "kanban sync", "workflow"],
       "loadFirst": [
         "docs/guides/workflow-initiation-cheatsheet.md",
         ".claude/commands/rw.md"

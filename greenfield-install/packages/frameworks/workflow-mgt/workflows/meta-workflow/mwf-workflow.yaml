@@ -1,0 +1,41 @@
+workflow:
+  name: "Meta-Workflow"
+  abbreviation: "MWF"
+  type: meta_workflow
+  description: >
+    Orchestrate composite workflow chains by delegating to encapsulated atomic
+    workflows. v1 delivery recipe: IPW → (mode gate) → IDW --rw.
+  version: "1.0.0"
+
+  triggers:
+    - "MWF"
+    - "mwf"
+
+  flags:
+    - name: push
+      long: "--push"
+      description: "Forward to IDW --rw leg for RW Step 12 push + 12.5"
+    - name: art
+      long: "--art"
+      description: "Forward to IDW --rw leg for RW version adoption"
+
+  recipes:
+    delivery:
+      aliases: ["ipw,idw,rw"]
+      legs:
+        - workflow: ipw
+          when: no_linked_ipp
+          mode: plan
+          guide: ".claude/commands/ipw.md"
+        - workflow: idw_rw
+          mode: implementation
+          guide: ".claude/commands/idw.md"
+          flags: ["--rw"]
+
+  prerequisites:
+    - parseable_est_token
+    - recipe_specified
+
+  documentation:
+    command: ".claude/commands/mwf.md"
+    agent_execution: "KB/Documentation/Developer_Docs/vwmp/meta-workflow-agent-execution.md"

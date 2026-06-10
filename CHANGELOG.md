@@ -11,8 +11,8 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
-## [0.2.3.9+2] - 10-06-26
+## [0.2.3.9+3] - 10-06-26
 
-E02:S03:T09 — FR-124 meta-workflow (MWF) intake + IPP; FR-123 superseded. SemVer **v0.4.1120+2**.
+E02:S03:T09 — FR-124 MWF orchestration shipped (`mwf.md`, KB, registry, routing, cheatsheet). SemVer **v0.4.1121+3**.
 
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.3.9+2.md)
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.3.9+3.md)

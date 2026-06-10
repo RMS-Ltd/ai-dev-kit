@@ -1,0 +1,26 @@
+{
+  "report_type": "rw_structure_prune",
+  "invocation": "RW E02:S03:T09 --art",
+  "evidence_mode": "structure_prune",
+  "release_scope": {
+    "epic": 2,
+    "story": 3,
+    "task": 9,
+    "task_id": "E02:S03:T09",
+    "version_string": "v0.2.3.9+3"
+  },
+  "summary": {
+    "kboard_pruned": 1,
+    "ledger_before_removal": true,
+    "notes": "Terminal COMPLETE row removed from active MoSCOW per FR-109; ledger entry in kanban-completed.md"
+  },
+  "archived": {
+    "kboard": ["E02:S03:T09"]
+  },
+  "rows": {
+    "E02:S03:T09": {
+      "allowed": true,
+      "reason": "RW release COMPLETE v0.2.3.9+3; terminal task pruned from active board"
+    }
+  }
+}

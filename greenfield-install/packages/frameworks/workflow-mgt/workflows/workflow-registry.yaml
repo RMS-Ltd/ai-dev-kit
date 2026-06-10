@@ -1,6 +1,6 @@
 workflow_registry:
-  version: "1.2.0"
-  last_updated: "2026-06-05"
+  version: "1.3.0"
+  last_updated: "2026-06-10"
   
   workflows:
     release-workflow:
@@ -142,7 +142,26 @@ workflow_registry:
       triggers: ["IDW"]
       steps: 6
       notes: "Command guide .claude/commands/idw.md; --rw/--push/--art flags lowercase"
+
+    meta-workflow:
+      name: "Meta-Workflow"
+      abbreviation: "MWF"
+      description: "Composite workflow orchestration (v1 delivery: IPW → IDW --rw). Delegates to atomic workflow command guides. See KB vwmp meta-workflow-agent-execution.md."
+      directory: "meta-workflow/"
+      main_file: "mwf-workflow.yaml"
+      config_file: "mwf-config.yaml"
+      documentation: "README.md"
+      triggers: ["MWF"]
+      steps: 5
+      notes: "Command guide .claude/commands/mwf.md; FR-124; no IPW --rw"
       
+  composite_workflows:
+    mwf:
+      delivery:
+        legs: [ipw, idw_rw]
+        aliases: ["ipw,idw,rw"]
+        description: "Full delivery pipeline (plan → implement → local-complete release)"
+
   common_components:
     templates: "common/templates/"
     schemas: "common/schemas/"

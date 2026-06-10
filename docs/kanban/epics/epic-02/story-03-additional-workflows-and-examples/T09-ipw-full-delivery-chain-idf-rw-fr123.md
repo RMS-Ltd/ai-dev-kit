@@ -9,11 +9,11 @@ housekeeping_policy: keep
 # Epic 2, Story 3, Task 9: Meta-workflow orchestration (MWF) — FR-124
 
 **Task ID:** E02:S03:T09  
-**Status:** IN PROGRESS  
+**Status:** ✅ COMPLETE  
 **Priority:** HIGH  
 **Created:** 2026-06-10  
-**Last updated:** 2026-06-10 (v0.2.3.9+2 — FR-124 intake + IPP banked)  
-**Version:** v0.2.3.9+2  
+**Last updated:** 2026-06-10 (v0.2.3.9+3 — FR-124 MWF delivery)  
+**Version:** v0.2.3.9+3  
 **Code:** E02S03T09  
 
 > **Filename note:** Path retains `fr123` from intake banking release; canonical scope is **FR-124**.
@@ -42,10 +42,9 @@ Implement **meta-workflow orchestration (`MWF`)**: an agent-driven orchestrator 
 
 ## Deliverable
 
-- `.claude/commands/mwf.md` + KB `meta-workflow-agent-execution.md` (or equivalent)
+- `.claude/commands/mwf.md` + KB `meta-workflow-agent-execution.md`
 - Workflow registry composite recipes; cheatsheet §MWF; agent routing
 - v1 `delivery` recipe; abort/mode-gate contract
-- IPP + RW release anchor
 
 ---
 
@@ -58,8 +57,8 @@ Implement **meta-workflow orchestration (`MWF`)**: an agent-driven orchestrator 
 
 ## Acceptance Criteria
 
-- [ ] **AC1:** `MWF` trigger + `mwf.md` documented; atomic workflows remain encapsulated.
-- [ ] **AC2:** v1 delivery recipe: IPW → mode gate → `IDW E:S:T --rw` with optional `--push`/`--art` forwarding.
-- [ ] **AC3:** FR-123 superseded; no shipped `IPW --rw` requirement.
-- [ ] **AC4:** Cheatsheet distinguishes MWF (multi-leg) vs `IDW --rw` (two-leg).
-- [ ] **AC5:** FR-124 ↔ T09 ↔ IPP wired; RW version anchor.
+- [x] **AC1:** `MWF` trigger + `mwf.md` documented; atomic workflows remain encapsulated.
+- [x] **AC2:** v1 delivery recipe: IPW → mode gate → `IDW E:S:T --rw` with optional `--push`/`--art` forwarding.
+- [x] **AC3:** FR-123 superseded; no shipped `IPW --rw` requirement.
+- [x] **AC4:** Cheatsheet distinguishes MWF (multi-leg) vs `IDW --rw` (two-leg).
+- [x] **AC5:** FR-124 ↔ T09 ↔ IPP wired; RW version anchor @ **v0.2.3.9+3**.

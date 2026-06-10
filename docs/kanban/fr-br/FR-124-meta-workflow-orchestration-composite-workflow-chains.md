@@ -14,7 +14,7 @@ housekeeping_policy: keep
 **Submitted By:** User — workflow composition / delivery pipeline ergonomics  
 **Priority:** HIGH  
 **Severity:** MEDIUM  
-**Status:** OPEN
+**Status:** IMPLEMENTED @ **v0.2.3.9+3** (2026-06-10)
 
 **Implementing Task:** [E02:S03:T09](../epics/epic-02/story-03-additional-workflows-and-examples/T09-ipw-full-delivery-chain-idf-rw-fr123.md)
 

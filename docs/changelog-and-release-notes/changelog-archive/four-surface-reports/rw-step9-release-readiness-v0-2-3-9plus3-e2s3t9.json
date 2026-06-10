@@ -1,6 +1,6 @@
 {
   "contract": "FR-092 Wave 7 release-readiness gate (Gates 1-7: governance / predecessors / parity / corpus / stage / stamps / four-surface)",
-  "four_surface_report_path": "/Users/rms/Documents/projects/ai-dev-kit/docs/changelog-and-release-notes/changelog-archive/four-surface-reports/rw-step7-four-surface-report-v0-2-3-9plus2-e2s3t9.json",
+  "four_surface_report_path": "/Users/rms/Documents/projects/ai-dev-kit/docs/changelog-and-release-notes/changelog-archive/four-surface-reports/rw-step7-four-surface-report-v0-2-3-9plus3-e2s3t9.json",
   "invocation_context": "rw_step_9_release_readiness",
   "overall_passed": true,
   "project_root": "/Users/rms/Documents/projects/ai-dev-kit",
@@ -9,7 +9,7 @@
     "story": 3,
     "task": 9,
     "task_id": "E2:S3:T9",
-    "version_string": "v0.2.3.9+2"
+    "version_string": "v0.2.3.9+3"
   },
   "summary": {
     "blocking_failures": [],
@@ -18,7 +18,7 @@
     "gates_total": 11,
     "gates_waived": 0
   },
-  "timestamp_utc": "2026-06-10 12:50 UTC",
+  "timestamp_utc": "2026-06-10 12:58 UTC",
   "verdicts": [
     {
       "evidence": {
@@ -84,7 +84,7 @@
         },
         "stamp_evidence_aggregate": {
           "stamps_appended_with_evidence": 0,
-          "stamps_preserved_existing": 65,
+          "stamps_preserved_existing": 64,
           "stamps_skipped_no_evidence": 0
         }
       },
@@ -100,14 +100,14 @@
     },
     {
       "evidence": {
-        "four_surface_report": "/Users/rms/Documents/projects/ai-dev-kit/docs/changelog-and-release-notes/changelog-archive/four-surface-reports/rw-step7-four-surface-report-v0-2-3-9plus2-e2s3t9.json",
+        "four_surface_report": "/Users/rms/Documents/projects/ai-dev-kit/docs/changelog-and-release-notes/changelog-archive/four-surface-reports/rw-step7-four-surface-report-v0-2-3-9plus3-e2s3t9.json",
         "paths_checked": 5,
         "release_scope": {
           "epic": 2,
           "story": 3,
           "task": 9,
           "task_id": "E2:S3:T9",
-          "version_string": "v0.2.3.9+2"
+          "version_string": "v0.2.3.9+3"
         },
         "violations": 0
       },
@@ -124,7 +124,7 @@
     {
       "evidence": {
         "evidence_mode": null,
-        "report": "/Users/rms/Documents/projects/ai-dev-kit/docs/changelog-and-release-notes/changelog-archive/four-surface-reports/rw-step7-four-surface-report-v0-2-3-9plus2-e2s3t9.json",
+        "report": "/Users/rms/Documents/projects/ai-dev-kit/docs/changelog-and-release-notes/changelog-archive/four-surface-reports/rw-step7-four-surface-report-v0-2-3-9plus3-e2s3t9.json",
         "stamps_appended_with_evidence": 1,
         "stamps_preserved_existing": 0,
         "stamps_skipped_no_evidence": 0
@@ -144,8 +144,7 @@
         "fbu_doc": {
           "notes_count": 0,
           "paths": [
-            "/Users/rms/Documents/projects/ai-dev-kit/docs/kanban/fr-br/FR-124-meta-workflow-orchestration-composite-workflow-chains.md",
-            "/Users/rms/Documents/projects/ai-dev-kit/docs/kanban/fr-br/FR-123-ipw-full-delivery-chain-idf-rw.md"
+            "/Users/rms/Documents/projects/ai-dev-kit/docs/kanban/fr-br/FR-124-meta-workflow-orchestration-composite-workflow-chains.md"
           ],
           "touched": true
         },
@@ -161,9 +160,9 @@
           "story": 3,
           "task": 9,
           "task_id": "E2:S3:T9",
-          "version_string": "v0.2.3.9+2"
+          "version_string": "v0.2.3.9+3"
         },
-        "report": "/Users/rms/Documents/projects/ai-dev-kit/docs/changelog-and-release-notes/changelog-archive/four-surface-reports/rw-step7-four-surface-report-v0-2-3-9plus2-e2s3t9.json",
+        "report": "/Users/rms/Documents/projects/ai-dev-kit/docs/changelog-and-release-notes/changelog-archive/four-surface-reports/rw-step7-four-surface-report-v0-2-3-9plus3-e2s3t9.json",
         "task_doc": {
           "notes_count": 0,
           "paths": [

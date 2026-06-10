@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Completed Tasks
 
-**Last Updated:** 2026-06-10 (RW E21:S04:T03 — RTL support Arabic/Hebrew)
-**Version:** v0.21.4.3+1
+**Last Updated:** 2026-06-10 (RW E02:S03:T09 — FR-124 MWF orchestration)
+**Version:** v0.2.3.9+3
 
 > **For MoSCOW prioritized tasks, see:** [`kboard.md`](kboard.md)  
 > **For completed FR/BR/UXR intake items, see:** [`intake-completed.md`](intake-completed.md)
@@ -19,6 +19,10 @@ housekeeping_policy: keep
 ---
 
 ## 20 Most Recently Completed Tasks
+
+#### **RW (2026-06-10)** — E02:S03:T09 @ **v0.2.3.9+3** (FR-124 — Meta-workflow orchestration / MWF)
+
+- **[E02:S03:T09](epics/epic-02/story-03-additional-workflows-and-examples/T09-ipw-full-delivery-chain-idf-rw-fr123.md)** — MWF `delivery` recipe (`mwf.md`, KB, registry, routing, cheatsheet §4c). **Completed:** `2026-06-10T12:56:42Z` | **Version:** `v0.2.3.9+3` | **Agent:** `IDW E02:S03:T09 --rw` | [FR-124](fr-br/FR-124-meta-workflow-orchestration-composite-workflow-chains.md) | [—IPP—](../../implementation-cycles/IPP-E02S03T09-meta-workflow-orchestration-mwf-fr124.md)
 
 #### **RW (2026-06-10)** — E21:S04:T03 @ **v0.21.4.3+1** (FR-006 Phase 2 — RTL support Arabic/Hebrew)
 

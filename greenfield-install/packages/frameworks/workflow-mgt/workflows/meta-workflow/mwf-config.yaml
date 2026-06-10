@@ -1,0 +1,23 @@
+mwf:
+  version: "1.0.0"
+  description: "Configuration for Meta-Workflow (MWF) orchestration"
+
+  command_guide: ".claude/commands/mwf.md"
+  agent_execution_guide: "KB/Documentation/Developer_Docs/vwmp/meta-workflow-agent-execution.md"
+
+  planning_package:
+    base_dir: "docs/implementation-cycles"
+    preferred_pattern: "IPP-E{epic}S{story}T{task}-*.md"
+
+  recipes:
+    delivery:
+      normalize_aliases: ["ipw,idw,rw"]
+      idw_chain_flags:
+        rw: "--rw"
+        push: "--push"
+        art: "--art"
+
+  leg_guides:
+    ipw: ".claude/commands/ipw.md"
+    idw: ".claude/commands/idw.md"
+    rw: ".claude/commands/rw.md"

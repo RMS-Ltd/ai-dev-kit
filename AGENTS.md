@@ -27,7 +27,7 @@ Then:
 
 | Track | Keywords (match any) | loadFirst |
 | ----- | -------------------- | --------- |
-| `workflows` | RW, UKW, IPW, IDW, CMW, PVW, release, changelog, kanban sync, workflow | `docs/guides/workflow-initiation-cheatsheet.md`, `.claude/commands/rw.md` (terminal allowlist: `docs/developer-tools/ide-whitelist-guide.md`) |
+| `workflows` | RW, UKW, IPW, IDW, MWF, CMW, PVW, release, changelog, kanban sync, workflow | `docs/guides/workflow-initiation-cheatsheet.md`, `.claude/commands/rw.md` (terminal allowlist: `docs/developer-tools/ide-whitelist-guide.md`) |
 | `kanban-intake` | FR, BR, UXR, intake, kboard, fbuboard, MoSCOW, task doc | `docs/kanban/kboard.md`, `packages/frameworks/kanban/FR_BR_INTAKE_GUIDE.md` |
 | `governance` | ADR, governance, policy, standard, versioning | `docs/governance/README.md` |
 | `framework-code` | package, validator, script, pytest, framework, workflow mgt | `packages/frameworks/workflow-mgt/README.md` |
@@ -59,7 +59,7 @@ Refresh from `kboard.md` when running UKW or RW Step 7; mirror into manifest `op
 | P-RW-TASK-TOKEN | RW requires `E:S:T` in trigger | [FR-060](docs/kanban/fr-br/FR-060-rw-task-argument-requirement.md) |
 | P-RW-STEP7 | RW Step 7 four-surface kanban reconciliation | [FR-092](docs/kanban/fr-br/FR-092-canonical-rw-ukw-kanban-consistency-program.md) |
 | P-EST-PADDING | Two-digit E/S/T in new writes | [UXR-014](docs/kanban/fr-br/UXR-014-two-digit-est-identifier-default-formatting.md) |
-| P-TRIGGER-ROUTING | `RW`/`UKW`/`IPW`/`IDW`/… at message start = workflow commands | [CLAUDE.md](CLAUDE.md) |
+| P-TRIGGER-ROUTING | `RW`/`UKW`/`IPW`/`IDW`/`MWF`/… at message start = workflow commands | [CLAUDE.md](CLAUDE.md) |
 | P-INTAKE-ATOMIC | FR/BR/UXR intake needs task + links same session | [Intake guide](packages/frameworks/kanban/FR_BR_INTAKE_GUIDE.md) |
 | P-RW-BUILD | Same E:S:T → BUILD+1 default; no `git tag -f` on release tags; `--dpz` (alias: `--doc-policy-zero`) only if user-triggered + untagged | [BR-097](docs/kanban/fr-br/BR-097-rw-agent-reuses-tagged-build-and-force-moves-release-tags.md) |
 | P-GIT-MAINTAINER | New maintainer docs → repo paths (`docs/knowledge/`, `docs/maintenance/`, `docs/analysis/`); Notion optional archive only | [ADR-026](docs/architecture/standards-and-adrs/ADR-026-git-internal-maintainer-kb-fr121.md) |

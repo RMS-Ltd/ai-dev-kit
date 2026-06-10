@@ -773,9 +773,29 @@ If ICW detects implementation mode:
 
 **Default:** IDW runs **alone**. IPW does **not** chain to IDW or RW by default.
 
-**Canonical sequence:** `IPW E:S:T` → review IPP → `IDW E:S:T` → `RW E:S:T` (or `IDW E:S:T --rw` for opt-in chain).
+**Canonical sequence:** `IPW E:S:T` → review IPP → `IDW E:S:T` → `RW E:S:T` (or `IDW E:S:T --rw` for opt-in chain; or `MWF E:S:T delivery` for full pipeline orchestration).
 
 **Reference:** `.claude/commands/idw.md` · `packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/implementation-delivery-workflow-agent-execution.md`
+
+---
+
+### 🔄 META-WORKFLOW (MWF) TRIGGER
+
+> **Claude Code users:** Use `/mwf E:S:T delivery [--push] [--art]` (`.claude/commands/mwf.md`) — composite workflow orchestration.
+
+**When the user types "MWF" or "mwf" (case-insensitive), execute the Meta-Workflow as an intelligent agent:**
+
+1. **DO NOT** reimplement IPW, IDW, or RW steps inline — **delegate** to `.claude/commands/ipw.md`, `idw.md`, `rw.md` (via IDW `--rw` chain).
+2. **DO** execute MWF using the **intelligent agent-driven execution pattern** per `mwf.md`.
+3. **PARSE:** `E:S:T`, recipe (`delivery` | `ipw,idw,rw`), optional `--push` / `--art` (forward to IDW `--rw` leg).
+4. **v1 `delivery` recipe:** IPW when no linked IPP → `MWF CHAIN PAUSED` (exit plan mode) → `IDW E:S:T --rw` (+ forwarded flags).
+5. **Resume:** When linked IPP exists, skip IPW leg; run IDW `--rw` only.
+6. **Abort propagation:** Any leg `ABORTED` → **`MWF ABORTED (leg: IPW|IDW|RW)`** — no commit/tag from aborted chain.
+7. **DO NOT** add `IPW --rw` — superseded by MWF ([FR-124](docs/kanban/fr-br/FR-124-meta-workflow-orchestration-composite-workflow-chains.md)).
+
+**Terminal states:** `MWF COMPLETE`, `MWF CHAIN PAUSED`, `MWF ABORTED (leg: …)`.
+
+**Reference:** `.claude/commands/mwf.md` · `packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/meta-workflow-agent-execution.md`
 
 ---
 

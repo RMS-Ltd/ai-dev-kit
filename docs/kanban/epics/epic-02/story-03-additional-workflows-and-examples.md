@@ -12,8 +12,8 @@ housekeeping_policy: keep
 **Priority:** MEDIUM  
 **Estimated Effort:** [TBD]  
 **Created:** 2025-12-03  
-**Last updated:** 2025-12-03 (v0.2.3.6+1 – All tasks complete)  
-**Version:** v0.2.3.6+1  
+**Last updated:** 2026-06-10 (v0.2.3.9+3 – Kanban documentation setup)
+**Version:** v0.2.3.9+3
 **Code:** E2S03
 
 ---
@@ -53,7 +53,7 @@ Provide additional workflow examples that:
 
 - [x] **E02:S03:T08 – Implementation Delivery Workflow / IDW (FR-118)** — ✅ COMPLETE (re-housed from E02:S16:T22) — [Task](story-03-additional-workflows-and-examples/T08-implementation-delivery-workflow-idw-fr118.md) | [FR-119](../../fr-br/FR-119-implementation-delivery-workflow-idw.md)
 
-- [ ] **E02:S03:T09 – Meta-workflow orchestration / MWF (`delivery` = IPW → IDW → RW) (FR-124)** — 🔄 IN PROGRESS (**v0.2.3.9+2** FR-124 intake + IPP) — [Task](story-03-additional-workflows-and-examples/T09-ipw-full-delivery-chain-idf-rw-fr123.md) | [FR-124](../../fr-br/FR-124-meta-workflow-orchestration-composite-workflow-chains.md) | [IPP](../../implementation-cycles/IPP-E02S03T09-meta-workflow-orchestration-mwf-fr124.md) | [FR-123](../../fr-br/FR-123-ipw-full-delivery-chain-idf-rw.md) superseded
+- [x] **E02:S03:T09 – Meta-workflow orchestration / MWF (`delivery` = IPW → IDW → RW) (FR-124)** — ✅ COMPLETE (**v0.2.3.9+3**) — [Task](story-03-additional-workflows-and-examples/T09-ipw-full-delivery-chain-idf-rw-fr123.md) | [FR-124](../../fr-br/FR-124-meta-workflow-orchestration-composite-workflow-chains.md) | [IPP](../../implementation-cycles/IPP-E02S03T09-meta-workflow-orchestration-mwf-fr124.md)
 
 ---
 
