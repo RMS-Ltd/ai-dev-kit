@@ -14,8 +14,8 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Status:** PROPOSED
 
-**Implementing Task:** [E02:S16:T03](../epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T03-markdown-documentation-maintenance-perpetual.md)  
-**Historical registry:** E07:S01:T05 → E02:S16:T03 (IPP-E02S16T24)
+**Implementing Task:** [E02:S16:T03](../epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T03-ad-hoc-documentation-maintenance-perpetual.md)  
+**Historical registry:** E07:S01:T05 → E02:S16:T03 (IPP-E02S16T24) · scope expanded [FR-125](FR-125-consolidate-e02s16t03-t07-documentation-maintenance-lanes.md) (T07 merged into T03, 2026-06-10)
 
 ---
 

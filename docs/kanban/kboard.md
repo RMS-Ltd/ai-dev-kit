@@ -148,7 +148,7 @@ _All perpetual lanes under **E02:S16** only ([IPP-E02S16T24](../../implementatio
 
 - **E02:S16:T02** – Ad-hoc Kanban synchronization and hygiene (Perpetual) - 🔄 PERPETUAL (**v0.2.16.2+6** — UKW comprehensive; E21:S04:T03 V-band gap closed) - [Task](epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T02-ad-hoc-kanban-synchronization-and-hygiene-perpetual.md) | [Story](epics/epic-02/story-16-perpetual-ongoing-workflow-operations.md) | [FR-023](fr-br/FR-023-update-kanban-workflow-ukw.md) | [—IPP—](../../implementation-cycles/IPP-E2S16T02-perpetual-task-inventory.md) | Last modified: 2026-06-10 08:07 UTC
 
-- **E02:S16:T03** – Markdown Documentation Maintenance (Perpetual) - 🔄 PERPETUAL (**v0.2.16.5+6**) - [Task](epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T03-markdown-documentation-maintenance-perpetual.md) | [Story](epics/epic-02/story-16-perpetual-ongoing-workflow-operations.md) | [FR-058](fr-br/FR-058-markdown-maintenance-workflow.md) | [—IPP—](../../implementation-cycles/IPP-E2S16T03-rehouse-workflow-perpetual-tasks.md) | Last modified: 2026-06-05 10:38 UTC
+- **E02:S16:T03** – Ad-hoc Documentation Maintenance (Perpetual) - 🔄 PERPETUAL (**v0.2.16.3+7**) - [Task](epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T03-ad-hoc-documentation-maintenance-perpetual.md) | [Story](epics/epic-02/story-16-perpetual-ongoing-workflow-operations.md) | [FR-125](fr-br/FR-125-consolidate-e02s16t03-t07-documentation-maintenance-lanes.md) | —No IPP— | Last modified: 2026-06-10 13:57 UTC
 
 - **E02:S16:T04** – Ad-hoc Repository Infrastructure Maintenance (Perpetual) - 🔄 PERPETUAL (**v0.2.16.10+7**) - [Task](epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T04-ad-hoc-repository-infrastructure-maintenance-perpetual.md) | [Story](epics/epic-02/story-16-perpetual-ongoing-workflow-operations.md) | —No IPP— | Last modified: 2026-06-07 17:00 UTC
 
@@ -156,9 +156,10 @@ _All perpetual lanes under **E02:S16** only ([IPP-E02S16T24](../../implementatio
 
 - **E02:S16:T06** – GitHub Security & Code Quality health (Perpetual) - 🔄 PERPETUAL (**v0.2.16.6+5**) - [Task](epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T06-github-security-code-quality-health-perpetual.md) | [FR-112](fr-br/FR-112-perpetual-github-ci-and-security-health-lanes.md) | [—IPP—](../../implementation-cycles/IPP-E02S16T06-github-security-code-quality-health-perpetual-fr112.md) | Last modified: 2026-06-08 13:31 UTC
 
-- **E02:S16:T07** – Ad-hoc Documentation Maintenance (Perpetual) - 🔄 PERPETUAL (**v0.2.16.7+2**) - [Task](epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T07-ad-hoc-documentation-maintenance-perpetual.md) | [Story](epics/epic-02/story-16-perpetual-ongoing-workflow-operations.md) | [FR-062](fr-br/FR-062-github-release-installation-experience.md) | [—IPP—](../../implementation-cycles/IPP-E2S16T07-ukw-fbu-temporal-tracking-fr050.md) | Last modified: 2026-06-09 11:05 UTC
-
 ### Won't Have (W) - Deferred Tasks
+
+- **E02:S16:T07** – Ad-hoc Documentation Maintenance (Perpetual) - ⏭️ SUPERSEDED (merged into **E02:S16:T03** per [FR-125](fr-br/FR-125-consolidate-e02s16t03-t07-documentation-maintenance-lanes.md), 2026-06-10) | [redirect](epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T07-ad-hoc-documentation-maintenance-perpetual.md) → [T03](epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T03-ad-hoc-documentation-maintenance-perpetual.md) | —No IPP— | Last modified: 2026-06-10 12:00 UTC
+
 
 #### Epic 21 (E21) — full inventory: deferred / superseded (5 tasks)
 

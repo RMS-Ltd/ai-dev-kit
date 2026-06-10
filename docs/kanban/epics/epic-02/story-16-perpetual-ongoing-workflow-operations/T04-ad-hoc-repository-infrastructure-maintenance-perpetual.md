@@ -47,7 +47,7 @@ Catch-all perpetual lane for ad-hoc repository infrastructure patches that do no
 - Feature-level releases (use the relevant E:S:T)
 - Kanban board synchronization (owned by E02:S16:T02)
 - Markdown lint / link hygiene (owned by E02:S16:T03)
-- Ad-hoc documentation content refresh (owned by E02:S16:T07)
+- Ad-hoc documentation maintenance (owned by E02:S16:T03)
 - Workflow engine redesigns (use dedicated FR/BR tasks)
 - Package management changes (owned by Epic 6)
 
@@ -66,7 +66,6 @@ Catch-all perpetual lane for ad-hoc repository infrastructure patches that do no
 
 - [E02:S16:T01 — Workflow maintenance (Perpetual)](T01-workflow-maintenance-perpetual.md) — umbrella workflow maintenance
 - [E02:S16:T02 — Ad-hoc Kanban synchronization and hygiene (Perpetual)](T02-ad-hoc-kanban-synchronization-and-hygiene-perpetual.md) — kanban operational lane
-- [E02:S16:T03 — Markdown Documentation Maintenance (Perpetual)](T03-markdown-documentation-maintenance-perpetual.md) — docs-only lane
-- [E02:S16:T07 — Ad-hoc Documentation Maintenance (Perpetual)](T07-ad-hoc-documentation-maintenance-perpetual.md) — doc content
+- [E02:S16:T03 — Ad-hoc Documentation Maintenance (Perpetual)](T03-ad-hoc-documentation-maintenance-perpetual.md) — documentation lane (format + content)
 
 ---

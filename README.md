@@ -11,7 +11,7 @@
 
 **A comprehensive toolkit for AI-assisted development workflows**
 
-**Version (SemVer):** `v0.4.1122+5` | **Internal:** `v0.2.16.6+5` (E02:S16:T06 Wave 5 maintainability) | **Last Updated:** 2026-06-10
+**Version (SemVer):** `v0.4.1123+7` | **Internal:** `v0.2.16.3+7` (E02:S16:T03 FR-125 doc lane consolidation) | **Last Updated:** 2026-06-10
 
 [Features](#features) • [Installation](#getting-started) • [Install in Your Project](INSTALL_IN_YOUR_PROJECT.md) • [Documentation](docs/documentation) • **Browsing docs (published site):** [https://rms-ltd.github.io/ai-dev-kit/](https://rms-ltd.github.io/ai-dev-kit/) • [Workflows](#workflows) • [Report Bug](https://github.com/RMS-Ltd/ai-dev-kit/issues) • [Request Feature](https://github.com/RMS-Ltd/ai-dev-kit/issues)
 
@@ -92,7 +92,7 @@ Framework package tarballs (e.g. `kanban-v2.0.0.tar.gz`) follow the same pattern
 - [Architecture Documentation](docs/architecture)
 - [Framework Development Guides](packages/frameworks)
 - [Workflow Documentation](packages/frameworks/workflow-mgt/docs)
-- **Workflow library** — [11 registered workflows](#workflows) in [`workflow-registry.yaml`](packages/frameworks/workflow-mgt/workflows/workflow-registry.yaml) (see [Workflow Management README](packages/frameworks/workflow-mgt/README.md) for tables and methodology)
+- **Workflow library** — [13 registered workflows](#workflows) in [`workflow-registry.yaml`](packages/frameworks/workflow-mgt/workflows/workflow-registry.yaml) (see [Workflow Management README](packages/frameworks/workflow-mgt/README.md) for tables and methodology)
 - **Maintainers:** [Build and upload runbooks](docs/maintenance/README.md) (package build/publish)
 
 ### 🔍 I'm looking for a specific framework
@@ -100,7 +100,7 @@ Framework package tarballs (e.g. `kanban-v2.0.0.tar.gz`) follow the same pattern
 **→ Jump to:** [Frameworks](#frameworks)
 
 **Available Frameworks:**
-- **Workflow Management** (`v2.3.0`) — [11 workflows](#workflows) in the package registry + agent execution guides
+- **Workflow Management** (`v2.3.0`) — [13 workflows](#workflows) in the package registry + agent execution guides
 - **Kanban** (`v2.2.0`) - Project management and task tracking
 - **Numbering & Versioning** (`v2.0.0`) - Version schema and policies
 - **Document Lifecycle** (`v1.0.0`) - Documentation management
@@ -132,7 +132,7 @@ Each framework includes installation guides, usage examples, and comprehensive d
 
 ## Workflows
 
-**Canonical registry:** Eleven workflows are defined in [`packages/frameworks/workflow-mgt/workflows/workflow-registry.yaml`](packages/frameworks/workflow-mgt/workflows/workflow-registry.yaml). Some are invoked primarily through **Cursor agent rules** (see [`.cursorrules`](.cursorrules)); others are run via scripts or followed from package YAML/READMEs.
+**Canonical registry:** Thirteen workflows are defined in [`packages/frameworks/workflow-mgt/workflows/workflow-registry.yaml`](packages/frameworks/workflow-mgt/workflows/workflow-registry.yaml), plus **composite recipes** under `composite_workflows:` (e.g. MWF `delivery`). Some are invoked primarily through **Cursor agent rules** (see [`.cursorrules`](.cursorrules)); others are run via scripts or followed from package YAML/READMEs.
 
 ### Primary Cursor triggers (this repo)
 
@@ -145,6 +145,7 @@ These are the main **user-typed** triggers documented in `.cursorrules`. **Human
 | **PVW** | Package Version Workflow | Package-level version analysis/bumps | `PVW` (often RW Step 2.5). See [PVW agent execution](packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/package-version-workflow-agent-execution.md). |
 | **IPW** / **ICW** | Implementation Planning / Cycle | Spec → tests → implementation plan (`IPP` or ICW trio) | `IPW E02:S16:T15` or `/ipw` — **plan mode** required. See [workflow initiation cheatsheet](docs/guides/workflow-initiation-cheatsheet.md) and [Implementation Cycle SOP](packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/implementation-cycle-sop.md). |
 | **IDW** | Implementation Delivery Workflow | Execute linked IPP/ICW (test-first implement) | `IDW E02:S16:T15` or `/idw` — **not** plan mode; optional `--rw` to chain release. See [IDW agent execution](packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/implementation-delivery-workflow-agent-execution.md). |
+| **MWF** | Meta-Workflow | Full delivery orchestration (IPW → IDW `--rw`) | `MWF E02:S03:T09 delivery` or `/mwf` — mode-gate pauses between legs. See [MWF agent execution](packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/meta-workflow-agent-execution.md) and [FR-124](docs/kanban/fr-br/FR-124-meta-workflow-orchestration-composite-workflow-chains.md). |
 
 **CMW** (Changelog Management Workflow) usually runs as **RW Step 9.5** when changelog size exceeds policy, or via the maintainer skill under [`.cursor/skills/cmw-maintain/`](.cursor/skills/cmw-maintain/SKILL.md). Package entry: [changelog-management-workflow README](packages/frameworks/workflow-mgt/workflows/changelog-management-workflow/README.md).
 
@@ -162,7 +163,9 @@ These are the main **user-typed** triggers documented in `.cursorrules`. **Human
 | Testing Workflow | TESTING | `TESTING` | [testing-workflow](packages/frameworks/workflow-mgt/workflows/testing-workflow/README.md) |
 | Package Version Workflow | PKG-VERSION / PVW | `PKG-VERSION` (Cursor: **PVW**) | [package-version-workflow](packages/frameworks/workflow-mgt/workflows/package-version-workflow/README.md) |
 | Framework Health Monitoring | FHM | `FHM` | [framework-health-monitoring-workflow](packages/frameworks/workflow-mgt/workflows/framework-health-monitoring-workflow/README.md) |
-| Implementation Cycle Workflow | ICW | `ICW` | [implementation-cycle-workflow](packages/frameworks/workflow-mgt/workflows/implementation-cycle-workflow/README.md) |
+| Implementation Cycle Workflow | ICW / IPW | `IPW`, `ICW` | [implementation-cycle-workflow](packages/frameworks/workflow-mgt/workflows/implementation-cycle-workflow/README.md) |
+| Implementation Delivery Workflow | IDW | `IDW` | [implementation-delivery-workflow](packages/frameworks/workflow-mgt/workflows/implementation-delivery-workflow/README.md) |
+| Meta-Workflow | MWF | `MWF` | [meta-workflow](packages/frameworks/workflow-mgt/workflows/meta-workflow/README.md) |
 
 ### Agent execution guides (deep dives)
 
@@ -172,6 +175,7 @@ These are the main **user-typed** triggers documented in `.cursorrules`. **Human
 - [Intake Workflow](packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/intake-workflow-agent-execution.md)
 - [Migration](packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/migration-workflow-agent-execution.md) · [Refactor](packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/refactor-workflow-agent-execution.md) · [Testing](packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/testing-workflow-agent-execution.md)
 - [PIR](packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/pir-workflow-agent-execution.md)
+- [Implementation Planning (IPW)](packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/implementation-planning-workflow-agent-execution.md) · [Implementation Delivery (IDW)](packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/implementation-delivery-workflow-agent-execution.md) · [Meta-Workflow (MWF)](packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/meta-workflow-agent-execution.md)
 
 For the full framework overview and validation tooling, see **[Workflow Management README](packages/frameworks/workflow-mgt/README.md)**.
 
