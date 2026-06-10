@@ -11,8 +11,8 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
-## [0.2.16.2+5] - 10-06-26
+## [0.2.16.2+6] - 10-06-26
 
-E02:S16:T02 — UKW bookkeeping: E07:S01:T10 FR-059 supersession reconciliation; epic-07 story sync. SemVer **v0.4.1118+5**.
+E02:S16:T02 — UKW comprehensive: E21:S04:T03 Verification band; Epic-21 S04 sync; E07:T10 hygiene IPP wiring. SemVer **v0.4.1119+6**.
 
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.16.2+5.md)
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.16.2+6.md)

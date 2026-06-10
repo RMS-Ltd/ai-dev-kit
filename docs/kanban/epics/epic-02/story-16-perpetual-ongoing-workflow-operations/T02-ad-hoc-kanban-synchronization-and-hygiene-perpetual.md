@@ -14,8 +14,8 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** Medium  
 **Created:** 2026-04-22  
-**Last updated:** 2026-06-10 (v0.2.16.2+5 — UKW bookkeeping; E07:S01:T10 FR-059 supersession reconciliation)
-**Version Anchor:** v0.2.16.2+5
+**Last updated:** 2026-06-10 (v0.2.16.2+6 — UKW comprehensive; E21:S04:T03 Verification band; E07:T10 hygiene IPP wiring corrected)
+**Version Anchor:** v0.2.16.2+6
 **Code:** E02S16T02
 **Task Type:** Perpetual Maintenance
 

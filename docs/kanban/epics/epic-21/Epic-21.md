@@ -164,20 +164,20 @@ Translate framework content to major languages; establish workflow, management t
 
 ### Story 4: Cultural Adaptation
 
-**Status:** TODO  
+**Status:** IN PROGRESS  
 **Priority:** LOW  
 **Estimated Effort:** [TBD]  
-**Last updated:** 2026-06-10 (v0.21.4.5+1 – Kanban documentation setup)
+**Last updated:** 2026-06-10 (v0.21.4.5+1 – T01/T03/T05 shipped; T02 superseded into T04)
 
 **Goal:**  
 Adapt content and features for different cultures and regions.
 
 **Tasks:**
-- [ ] E21:S04:T01 – Research cultural requirements for target locales
-- [ ] E21:S04:T02 – Adapt UI/UX for different cultures (examples, imagery)
-- [ ] E21:S04:T03 – Implement RTL support (Right-to-Left) for Arabic/Hebrew
+- [x] E21:S04:T01 – Research cultural requirements for target locales (**v0.21.4.1+1**)
+- [x] E21:S04:T02 – Adapt UI/UX for different cultures (examples, imagery) — SUPERSEDED (**v0.21.4.2+1** → T04)
+- [x] E21:S04:T03 – Implement RTL support (Right-to-Left) for Arabic/Hebrew (**v0.21.4.3+1**)
 - [ ] E21:S04:T04 – Adapt content and examples for cultural context
-- [ ] E21:S04:T05 – Configure locale-specific formatting (dates, times, numbers, currency)
+- [x] E21:S04:T05 – Cultural formatting validation (dates, times, numbers, currency) (**v0.21.4.5+1**)
 - [ ] E21:S04:T06 – Test cultural adaptations
 - [ ] E21:S04:T07 – Document cultural considerations and guidelines
 

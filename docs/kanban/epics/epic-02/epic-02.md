@@ -12,7 +12,7 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** [TBD]  
 **Created:** 2025-12-02  
-**Last updated:** 2026-06-10 (v0.2.16.2+5 – E02:S16:T02 UKW E07:T10 supersession reconciliation)
+**Last updated:** 2026-06-10 (v0.2.16.2+6 – E02:S16:T02 UKW comprehensive)
 **Branch:** `epic/2-workflow-management-framework`  
 **Version Schema:** `0.2.S.T+B`  
 **Production URL:** [N/A for this repo]
