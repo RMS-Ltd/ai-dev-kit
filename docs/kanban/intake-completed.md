@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Intake Completed Items (FR/BR/UXR)
 
-**Last Updated:** 2026-06-10 (RW E06:S09:T28 — BR-105 RESOLVED)
-**Version:** v0.6.9.28+2
+**Last Updated:** 2026-06-10 (UKW — BR-106/BR-107 intake sync)
+**Version:** v0.6.9.30+2
 
 > **For open / in-flight intake items, see:** [`kboard.md`](kboard.md) (MoSCOW) and [`intake-structure.md`](intake-structure.md)  
 > **For completed Kanban tasks (E/S/T), see:** [`kanban-completed.md`](kanban-completed.md)  
@@ -33,6 +33,8 @@ This document tracks all **completed FRs (Feature Requests), BRs (Bug Reports), 
 
 | ID | Type | Description | Completed | Version | Agent |
 |----|------|-------------|-----------|---------|-------|
+| BR-107 | BR | Kanban installer log epic path padding mismatch — FIXED (**E06:S09:T30**; F21) | 2026-06-10T19:15:18Z | v0.6.9.30+2 | MWF E06:S09:T30 delivery |
+| BR-106 | BR | RW install non-interactive CHANGELOG prompt EOF — FIXED (**E06:S09:T29**; F19) | 2026-06-10T18:45:00Z | v0.6.9.29+2 | MWF E06:S09:T29 delivery |
 | BR-105 | BR | v3.2 fresh install sign-off story padding mismatch — RESOLVED (**E06:S09:T28**; F18 contract alignment) | 2026-06-10T19:02:02Z | v0.6.9.28+2 | MWF E06:S09:T28 delivery |
 | FR-122 | FR | RW architectural contract & release transaction (meta) — COMPLETE (**E02:S01:T30**; streak 13/10) | 2026-06-10T15:56:12Z | v0.2.1.30+8 | RW E02:S01:T30 --art |
 | FR-118 | FR | Promote Kanban to `docs/kanban/`; retire `project-management/` shell | 2026-06-08 | v0.7.1.12+2 | RW E07:S01:T12 --art |

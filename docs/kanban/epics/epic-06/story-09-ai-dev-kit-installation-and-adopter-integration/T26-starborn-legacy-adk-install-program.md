@@ -135,10 +135,10 @@ Attempts **1** and **2** proved installer contracts (sign-off ALL READY) but **f
 |--------|--------|
 | **F17 (was BLOCKER)** | **RESOLVED** — Epic 5 on disk is **Project Architecture** (v3.2); no standalone FR Implementation epic |
 | **Dual kanban test bed** | **PASS** — legacy `KB/PM_and_Portfolio/` + ADK `docs/kanban/` coexist; rollback retained `KB/` + `logs/` |
-| **Sign-off** | **7 READY, 1 SKIP, 1 NOT READY** — BR-086 / **F18** (`{story:03d}`/`t{task}` contract vs `{story:02d}`/`T{task}` reality) |
-| **F19** | **OPEN** — `--non-interactive` EOF on CHANGELOG prompt; workaround: pre-create `CHANGELOG.md` + `--config` |
+| **Sign-off** | **PASS** @ **v0.6.9.28+2** — F18/BR-105 contract alignment shipped |
+| **F19** | **CLOSED** @ **v0.6.9.29+2** — [BR-106](../../../fr-br/BR-106-rw-install-non-interactive-changelog-prompt-eof.md) / [T29](T29-rw-install-non-interactive-changelog-prompt-br106.md) |
 | **F20** | Mitigated with workaround (pre-created `version_file` + config) |
-| **F21** | **NEW (LOW)** — install logs show `epic-1/` but disk has `epic-01/` |
+| **F21** | **CLOSED** @ **v0.6.9.30+2** — [BR-107](../../../fr-br/BR-107-kanban-installer-log-epic-path-padding-mismatch.md) / [T30](T30-kanban-installer-log-epic-path-padding-br107.md) |
 
 ### Upstream filed (ai-dev-kit — derived from FB, not a copy)
 
@@ -240,9 +240,9 @@ Attempts **1** and **2** proved installer contracts (sign-off ALL READY) but **f
 |----------|-----|--------|
 | P0 | F9/F17 | ✅ **CLOSED** @ [T27](T27-kanban-v32-package-rewrite-installer-f9-f17.md) **v0.6.9.27+2** — attempt 05 fingerprint PASS |
 | P1 | F10 | `install_greenfield_path.py`: `--skip-kanban` or honor `use_kanban: false` |
-| P1 | F18 | [BR-105](../../../fr-br/BR-105-v32-fresh-install-signoff-story-padding-mismatch.md) → [T28](T28-v32-fresh-install-signoff-story-padding-br105.md) |
-| P1 | F19 | [BR-106](../../../fr-br/BR-106-rw-install-non-interactive-changelog-prompt-eof.md) → [T29](T29-rw-install-non-interactive-changelog-prompt-br106.md) |
-| P2 | F21 | [BR-107](../../../fr-br/BR-107-kanban-installer-log-epic-path-padding-mismatch.md) → [T30](T30-kanban-installer-log-epic-path-padding-br107.md) |
+| P1 | F18 | ✅ **CLOSED** @ [T28](T28-v32-fresh-install-signoff-story-padding-br105.md) **v0.6.9.28+2** |
+| P1 | F19 | ✅ **CLOSED** @ [T29](T29-rw-install-non-interactive-changelog-prompt-br106.md) **v0.6.9.29+2** |
+| P2 | F21 | ✅ **CLOSED** @ [T30](T30-kanban-installer-log-epic-path-padding-br107.md) **v0.6.9.30+2** |
 | P1 | F20 | Project-aware `version_file` default (open; workaround exists) |
 | P1 | F12–F14 | Document migration-test-bed profile (RW defer → legacy restore → kanban → RW mode C) |
 | P2 | F11/F16 | Post-install deferred-Kanban hint; clarify consumer layout vs v3.2 spec |

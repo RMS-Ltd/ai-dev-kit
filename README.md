@@ -11,7 +11,7 @@
 
 **A comprehensive toolkit for AI-assisted development workflows**
 
-**Version (SemVer):** `v0.4.1140+2` | **Internal:** `v0.6.9.30+2` (E06:S09:T30 Kanban installer log epic path padding) | **Last Updated:** 2026-06-10
+**Version (SemVer):** `v0.4.1141+7` | **Internal:** `v0.2.16.2+7` (E02:S16:T02 UKW comprehensive kanban sync) | **Last Updated:** 2026-06-10
 
 [Features](#features) • [Installation](#getting-started) • [Install in Your Project](INSTALL_IN_YOUR_PROJECT.md) • [Documentation](docs/documentation) • **Browsing docs (published site):** [https://rms-ltd.github.io/ai-dev-kit/](https://rms-ltd.github.io/ai-dev-kit/) • [Workflows](#workflows) • [Report Bug](https://github.com/RMS-Ltd/ai-dev-kit/issues) • [Request Feature](https://github.com/RMS-Ltd/ai-dev-kit/issues)
 

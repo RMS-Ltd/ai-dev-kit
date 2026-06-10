@@ -11,8 +11,8 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
-## [0.6.9.30+2] - 10-06-26
+## [0.2.16.2+7] - 10-06-26
 
-E06:S09:T30 — Kanban installer log epic path padding (BR-107 / F21). SemVer **v0.4.1140+2**.
+E02:S16:T02 — UKW comprehensive kanban sync (perpetual). SemVer **v0.4.1141+7**.
 
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.6.9.30+2.md)
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.16.2+7.md)
