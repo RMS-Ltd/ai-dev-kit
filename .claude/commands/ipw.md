@@ -270,9 +270,24 @@ Use `rw-config.yaml` values when present. Fallbacks:
 
 ---
 
+## Handoff (no auto-chain)
+
+IPW ends at **`IPW COMPLETE`**. It does **not** chain to IDW or RW by default.
+
+| Next step | When |
+| --------- | ---- |
+| **`IDW E:S:T`** | Implement the linked IPP (implementation mode; FR-083 authorization) |
+| **`MWF E:S:T delivery`** | Full pipeline — resume from implementation session after mode gate (or start fresh when IPP exists) |
+| **`RW E:S:T`** | Release only after separate IDW (or use `IDW … --rw`) |
+
+Do **not** add **`IPW --rw`** — superseded by **MWF** ([FR-124](docs/kanban/fr-br/FR-124-meta-workflow-orchestration-composite-workflow-chains.md); [FR-123](docs/kanban/fr-br/FR-123-ipw-full-delivery-chain-idf-rw.md) withdrawn).
+
+---
+
 ## Reference Documentation
 
 - IPW canonical step guide: `packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/implementation-planning-workflow-agent-execution.md`
+- MWF (full pipeline): `.claude/commands/mwf.md`
 - Plan doc template: `packages/frameworks/kanban/templates/PLAN_DOC_TEMPLATE.md`
 - FR-042 (canonical IPW definition): `docs/kanban/fr-br/FR-042-implementation-planning-workflow-ipw.md`
 - FR-094 (this command's origin): `docs/kanban/fr-br/FR-094-ipw-slash-command-and-task-state-transition-mandate.md`

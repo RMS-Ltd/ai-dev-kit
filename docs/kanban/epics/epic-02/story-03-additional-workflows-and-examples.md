@@ -55,6 +55,8 @@ Provide additional workflow examples that:
 
 - [x] **E02:S03:T09 – Meta-workflow orchestration / MWF (`delivery` = IPW → IDW → RW) (FR-124)** — ✅ COMPLETE (**v0.2.3.9+3**) — [Task](story-03-additional-workflows-and-examples/T09-ipw-full-delivery-chain-idf-rw-fr123.md) | [FR-124](../../fr-br/FR-124-meta-workflow-orchestration-composite-workflow-chains.md) | [IPP](../../implementation-cycles/IPP-E02S03T09-meta-workflow-orchestration-mwf-fr124.md)
 
+- [ ] **E02:S03:T10 – Workflow encapsulation integrity audit (MWF leverage) (FR-126)** — 📋 TODO — [Task](story-03-additional-workflows-and-examples/T10-workflow-encapsulation-integrity-mwf-fr126.md) | [FR-126](../../fr-br/FR-126-workflow-encapsulation-integrity-mwf-leverage.md) | —No IPP—
+
 ---
 
 ## Success Criteria

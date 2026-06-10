@@ -553,7 +553,7 @@ def locate_task_doc(
             # E07S01T09-*.md style (E/S/T two-digit — canonical task-doc naming on some epics)
             task_files = list(story_dir.glob(f"E{epic:02d}S{story:02d}T{task:02d}-*.md"))
         if task_files:
-            task_file = task_files[0]
+            task_file = sorted(task_files)[0]
             return (task_file, task_file.read_text(), "separate_file")
     
     # Format 2: Delimited section in Story file

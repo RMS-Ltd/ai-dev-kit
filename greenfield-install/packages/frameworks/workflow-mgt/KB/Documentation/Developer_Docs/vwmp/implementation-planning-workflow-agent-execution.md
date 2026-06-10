@@ -154,6 +154,7 @@ See [`FR-092` — Canonical RW/UKW kanban consistency program (meta)](../../../.
 ## Integration
 
 - **IDW (Implementation Delivery):** After IPW, run **`IDW E:S:T`** (or `/idw`) in implementation mode to execute the linked IPP — see [implementation-delivery-workflow-agent-execution.md](implementation-delivery-workflow-agent-execution.md). Invoking IDW satisfies FR-083 explicit authorization. Optional **`--rw`** chains local-complete RW after `IDW COMPLETE`.
+- **MWF (Meta-Workflow):** For the full plan → implement → release pipeline, use **`MWF E:S:T delivery`** (or resume after `IPW COMPLETE` with IPP linked) — see [meta-workflow-agent-execution.md](meta-workflow-agent-execution.md). MWF delegates to IPW and IDW `--rw`; it does **not** add an `IPW --rw` flag ([FR-124](../../../../../../docs/kanban/fr-br/FR-124-meta-workflow-orchestration-composite-workflow-chains.md); [FR-123](../../../../../../docs/kanban/fr-br/FR-123-ipw-full-delivery-chain-idf-rw.md) superseded).
 - **Implementation Cycle (TDD):** IDW operationalizes [implementation-cycle-sop.md](implementation-cycle-sop.md) Steps 3–4 against the IPP (failing tests, then implementation).
 - **RW:** Run **RW** after shippable work (standalone or via `IDW … --rw`). RW Step 7 owns release-scope four-surface reconciliation (FR-092 / FR-091, absorbing FR-084's post-run reconciliation contract).
 

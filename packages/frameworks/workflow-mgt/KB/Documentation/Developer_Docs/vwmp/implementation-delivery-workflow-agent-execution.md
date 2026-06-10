@@ -40,7 +40,8 @@ housekeeping_policy: keep
 | **RW** | Release | Version, changelog, kanban Step 7, commit, tag |
 
 **Default chain:** none. Operator sequence: `IPW` → review IPP → `IDW` → `RW`.  
-**Opt-in chain:** `IDW E:S:T --rw` runs RW immediately after `IDW COMPLETE`.
+**Opt-in chain:** `IDW E:S:T --rw` runs RW immediately after `IDW COMPLETE`.  
+**Full pipeline:** `MWF E:S:T delivery` orchestrates IPW → (mode gate) → IDW `--rw` — see [meta-workflow-agent-execution.md](meta-workflow-agent-execution.md). Do **not** use `IPW --rw` ([FR-124](../../../../../../docs/kanban/fr-br/FR-124-meta-workflow-orchestration-composite-workflow-chains.md)).
 
 Invoking **IDW** satisfies FR-083 **explicit user execution authorization** for implementation on the parsed task.
 
@@ -97,13 +98,16 @@ Board row propagation for a release is **RW Step 7** when shipping via `--rw` or
 ## Integration
 
 - **IPW:** Must complete first; IDW does not plan.
+- **MWF:** `MWF E:S:T delivery` sequences IPW (when no IPP) then IDW `--rw`; IDW `--rw` remains the two-leg implement+release chain inside MWF Leg 2.
 - **Implementation Cycle SoP:** IDW operationalizes SoP Steps 3–4 (tests + implementation) against the IPP.
 - **RW:** Separate unless `--rw`; UXR-024 local-default RW still applies (no push unless `--push` on the chain).
 
 ## References
 
 - `.claude/commands/idw.md`
+- `.claude/commands/mwf.md`
 - [implementation-planning-workflow-agent-execution.md](implementation-planning-workflow-agent-execution.md)
+- [meta-workflow-agent-execution.md](meta-workflow-agent-execution.md)
 - [release-workflow-agent-execution.md](release-workflow-agent-execution.md)
 - [implementation-cycle-sop.md](implementation-cycle-sop.md)
 - [FR-083](../../../../../../docs/kanban/fr-br/FR-083-global-ipw-gated-implementation-contract.md)

@@ -16,7 +16,7 @@ The packaged workflow (historically **ICW**) provides a structured planning appr
 3. **Test Design**
 4. **Implementation Planning**
 
-For TDD and release, use the **Implementation Cycle SoP** and **RW** separately.
+For TDD execution, use **IDW** after IPW. For release, use **RW** or chain via **`IDW … --rw`**. For the full pipeline in one orchestrated flow, use **`MWF E:S:T delivery`** ([meta-workflow-agent-execution.md](../../KB/Documentation/Developer_Docs/vwmp/meta-workflow-agent-execution.md)) — not `IPW --rw`.
 
 ## 🎯 Purpose
 
@@ -157,6 +157,7 @@ Each phase uses structured templates:
 ### Workflow Dependencies
 - **Required:** Kanban system with task documents
 - **Implementation Delivery Workflow (IDW):** Execute linked IPP after planning (`IDW E:S:T`; optional `--rw` chain)
+- **Meta-Workflow (MWF):** Full pipeline orchestration (`MWF E:S:T delivery` → IPW → IDW `--rw`; not `IPW --rw`)
 - **Optional:** Release Workflow (RW) for post-implementation releases (standalone or via `IDW … --rw`)
 - **Enhanced by:** Testing Workflow (test-driven development)
 

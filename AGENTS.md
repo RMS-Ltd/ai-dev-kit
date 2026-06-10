@@ -95,7 +95,7 @@ If no keyword match, ask **one** clarifying question. Do not grep the whole repo
 
 ## IPW / implementation gate (summary)
 
-Planning-only (FR, BR, UXR, task, spec, plan): produce artifacts and **stop**. Implementation requires: (1) task `E:S:T`, (2) linked IPP or ICW under `docs/implementation-cycles/`, (3) explicit authorization (`IDW E:S:T`, `implement`, or post-impl `RW E:S:T`). **IPW:** `/ipw E:S:T` in plan mode — [`.claude/commands/ipw.md`](.claude/commands/ipw.md). **IDW:** `/idw E:S:T [--rw]` in implementation mode — [`.claude/commands/idw.md`](.claude/commands/idw.md).
+Planning-only (FR, BR, UXR, task, spec, plan): produce artifacts and **stop**. Implementation requires: (1) task `E:S:T`, (2) linked IPP or ICW under `docs/implementation-cycles/`, (3) explicit authorization (`IDW E:S:T`, `implement`, or post-impl `RW E:S:T`). **IPW:** `/ipw E:S:T` in plan mode — [`.claude/commands/ipw.md`](.claude/commands/ipw.md). **IDW:** `/idw E:S:T [--rw]` in implementation mode — [`.claude/commands/idw.md`](.claude/commands/idw.md). **MWF:** `/mwf E:S:T delivery [--push] [--art]` orchestrates IPW → IDW `--rw` — [`.claude/commands/mwf.md`](.claude/commands/mwf.md) ([FR-124](docs/kanban/fr-br/FR-124-meta-workflow-orchestration-composite-workflow-chains.md)).
 
 **Cheatsheet:** [`docs/guides/workflow-initiation-cheatsheet.md`](docs/guides/workflow-initiation-cheatsheet.md)
 

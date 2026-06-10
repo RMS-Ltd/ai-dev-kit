@@ -210,6 +210,12 @@ IDW must **not** commit, tag, or bump version itself — RW owns release surface
 
 ---
 
+## Full pipeline (MWF)
+
+For plan → implement → release orchestration, use **`MWF E:S:T delivery`** (`.claude/commands/mwf.md`) — not `IPW --rw`. MWF Leg 2 invokes **`IDW E:S:T --rw`** (plus forwarded `--push` / `--art`). See [FR-124](docs/kanban/fr-br/FR-124-meta-workflow-orchestration-composite-workflow-chains.md).
+
+---
+
 ## Abort / Completion Protocol
 
 - Always end in **`IDW COMPLETE`**, **`IDW COMPLETE` + RW outcome**, or **`IDW ABORTED (Phase/Gate X: reason)`** — never ambiguous.
@@ -231,6 +237,7 @@ Use `rw-config.yaml` when present. Fallbacks:
 ## Reference Documentation
 
 - IDW agent execution guide: `packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/implementation-delivery-workflow-agent-execution.md`
+- MWF (full pipeline): `.claude/commands/mwf.md`
 - IPW (planning): `.claude/commands/ipw.md`
 - RW (release): `.claude/commands/rw.md`
 - FR-083 (implementation gate): `docs/project-management/kanban/fr-br/FR-083-global-ipw-gated-implementation-contract.md`

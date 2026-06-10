@@ -32,16 +32,26 @@ IDW E:S:T     →  IDW COMPLETE
 RW E:S:T      →  RW COMPLETE (local)
 ```
 
-One-shot delivery + release:
+One-shot implement + release:
 
 ```text
 IDW E:S:T --rw
 ```
 
+Full pipeline (plan → implement → release) via orchestrator:
+
+```text
+MWF E:S:T delivery
+```
+
+MWF delegates to IPW (when no IPP) then IDW `--rw` with mode-gate pauses. Do **not** use `IPW --rw` — use MWF ([FR-124](../../../../../../docs/kanban/fr-br/FR-124-meta-workflow-orchestration-composite-workflow-chains.md)).
+
 ## Documentation
 
 - Command: `.claude/commands/idw.md`
+- Orchestrator: `.claude/commands/mwf.md`
 - Agent guide: `KB/Documentation/Developer_Docs/vwmp/implementation-delivery-workflow-agent-execution.md`
+- MWF guide: `KB/Documentation/Developer_Docs/vwmp/meta-workflow-agent-execution.md`
 - Planning upstream: `implementation-cycle-workflow/` (IPW / ICW alias)
 - Release downstream: `release-workflow/` (RW)
 

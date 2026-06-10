@@ -14,8 +14,8 @@ housekeeping_policy: keep
 **Priority:** HIGH
 **Estimated Effort:** Medium (per RW wave)
 **Created:** 2026-04-22
-**Last updated:** 2026-06-10 (v0.2.16.3+7 — FR-125 released; T07 merged into T03)
-**Version Anchor:** v0.2.16.3+7
+**Last updated:** 2026-06-10 (v0.2.16.3+8 — MWF documentation alignment)
+**Version Anchor:** v0.2.16.3+8
 **Code:** E02S16T03
 **Task Type:** Perpetual Maintenance
 

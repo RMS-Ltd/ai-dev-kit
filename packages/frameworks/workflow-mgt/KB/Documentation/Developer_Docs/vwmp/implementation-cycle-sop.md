@@ -94,6 +94,18 @@ This SoP defines a **mandatory** implementation cycle when a project adopts the 
 
 ---
 
+## Step 2.8: Meta-Workflow (MWF) — Optional full delivery orchestration
+
+**Purpose:** **`MWF E:S:T delivery`** (`.claude/commands/mwf.md`) orchestrates the full pipeline: **IPW** (when no linked IPP) → mode gate → **IDW `--rw`** — without embedding chain logic in IPW or IDW entry points.
+
+**When to use:** Operator wants one orchestrated entry point for plan → implement → local-complete release. When IPP already exists, MWF resumes at the IDW `--rw` leg.
+
+**Do not use:** `IPW --rw` — withdrawn; superseded by MWF ([FR-124](../../../../../../docs/kanban/fr-br/FR-124-meta-workflow-orchestration-composite-workflow-chains.md)).
+
+**Reference:** [meta-workflow-agent-execution.md](meta-workflow-agent-execution.md)
+
+---
+
 ## Step 3: Requirements, Specification & Test Creation (TDD) — BLOCKING
 
 **Purpose:** Ascertain requirements and specification, then create tests **before** implementation (TDD).
@@ -225,5 +237,7 @@ Before starting Step 4, verify:
 
 - **Kanban:** Task creation and status align with Kanban Governance Policy; RW updates Kanban docs.
 - **IPW:** Step 2.5; [implementation-planning-workflow-agent-execution.md](implementation-planning-workflow-agent-execution.md) (**FR-042**).
+- **IDW:** Step 2.75; [implementation-delivery-workflow-agent-execution.md](implementation-delivery-workflow-agent-execution.md).
+- **MWF:** Step 2.8; [meta-workflow-agent-execution.md](meta-workflow-agent-execution.md) (**FR-124**).
 - **Release Workflow:** Step 5 invokes the project's RW; see Release Workflow Agent Execution Guide.
 - **.cursorrules:** Reference this SoP, **IPW** for planning, and enforce Step 3 as blocking.

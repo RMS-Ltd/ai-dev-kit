@@ -9,15 +9,15 @@ housekeeping_policy: keep
 # Workflow Management Framework
 
 **Version:** 2.3.0  
-**Last Updated:** 2026-04-13  
-**Purpose:** Complete workflow management framework with **11** YAML-defined workflows (see registry below), documentation standards, and automated validation  
-**Key Features:** **11** registry workflows with full READMEs, standardized templates, style guide, validation tools, and automated quality assurance; agent methodology guides (`KB`/`vwmp`) are separate from registry rows
+**Last Updated:** 2026-06-10  
+**Purpose:** Complete workflow management framework with **13** YAML-defined workflows (see registry below), documentation standards, and automated validation  
+**Key Features:** **13** registry workflows with full READMEs, standardized templates, style guide, validation tools, and automated quality assurance; agent methodology guides (`KB`/`vwmp`) are separate from registry rows
 
 **📦 Dependency Architecture (Epic 6):** This framework is transitioning from copy-paste to **dependency-based installation** with automatic updates. See [Framework Dependency Architecture](../../../docs/architecture/standards-and-adrs/framework-dependency-architecture.md) for details on installing as a Git submodule, via CLI tool, or package manager.
 
 **🌱 Adopter distribution (FR-110):** Consumer projects receive this package via the **lean vendor tree** — `greenfield-install/packages/frameworks/workflow-mgt/` or sparse-checkout of `packages/frameworks/` from [`RMS-Ltd/ai-dev-kit`](https://github.com/RMS-Ltd/ai-dev-kit) (~11 MiB). Installers and RW validators live under **`scripts/` in this package** (not ai-dev-kit repo-root `scripts/`). Entry: [INSTALL_IN_YOUR_PROJECT.md — Lean vendor install](../../../INSTALL_IN_YOUR_PROJECT.md#lean-vendor-install-greenfield-install--fr-110).
 
-**Canonical workflow list:** The authoritative machine-readable set is [`workflows/workflow-registry.yaml`](workflows/workflow-registry.yaml) — **11** entries under `workflows:`. Agent execution guides under `KB/Documentation/Developer_Docs/vwmp/` describe methodology and step counts; they are not additional registry workflows.
+**Canonical workflow list:** The authoritative machine-readable set is [`workflows/workflow-registry.yaml`](workflows/workflow-registry.yaml) — **13** entries under `workflows:`. Agent execution guides under `KB/Documentation/Developer_Docs/vwmp/` describe methodology and step counts; they are not additional registry workflows. **Composite recipes** (e.g. MWF `delivery`) are listed under `composite_workflows:` in the same registry file.
 
 **RW trigger dual-source (maintainers):** The repo root [`.cursorrules`](../../../.cursorrules) and the portable excerpt [`cursorrules-rw-trigger-section.md`](cursorrules-rw-trigger-section.md) must stay aligned on **FR-060 / FR-038 / BR-056** guardrails. See [RW trigger dual-source parity](docs/rw-trigger-dual-source-parity.md) for the checklist and merge order.
 
@@ -31,7 +31,7 @@ housekeeping_policy: keep
 
 ## 📋 What's Included
 
-This package contains a comprehensive workflow management framework with **11** YAML-defined workflows (per [`workflow-registry.yaml`](workflows/workflow-registry.yaml)), standardized templates, and automated validation tools. The framework enables AI assistants to execute various workflows using intelligent agent-driven execution with support for multiple workflow types:
+This package contains a comprehensive workflow management framework with **13** YAML-defined workflows (per [`workflow-registry.yaml`](workflows/workflow-registry.yaml)), standardized templates, and automated validation tools. The framework enables AI assistants to execute various workflows using intelligent agent-driven execution with support for multiple workflow types:
 
 ### Core Workflows (4)
 - **Testing Workflow (TESTING)** - Quality assurance and coverage analysis
@@ -48,7 +48,11 @@ This package contains a comprehensive workflow management framework with **11** 
 - **Intake Workflow** - FR/BR/UXR automation and processing
 - **Package Version Workflow (PKG-VERSION)** - Version management and updates
 - **Framework Health Monitoring Workflow (FHM)** - System health monitoring
-- **Implementation Cycle Workflow (ICW)** - Structured implementation process
+- **Implementation Cycle Workflow (ICW / IPW)** - Structured implementation planning (canonical trigger: **IPW**)
+
+### Delivery Workflows (2)
+- **Implementation Delivery Workflow (IDW)** - Execute linked IPP; optional `--rw` chain to local-complete release
+- **Meta-Workflow (MWF)** - Composite orchestration (v1 `delivery` recipe: IPW → IDW `--rw`; [FR-124](../../../docs/kanban/fr-br/FR-124-meta-workflow-orchestration-composite-workflow-chains.md))
 
 _Documentation quality_ (templates, style guide, per-workflow READMEs) is governed by the [Workflow Documentation Style Guide](docs/workflow-documentation-style-guide.md) and the **Documentation Standards** subsection later in this README; there is no separate “Documentation Workflow” in the registry.
 
@@ -59,6 +63,9 @@ _Documentation quality_ (templates, style guide, per-workflow READMEs) is govern
 - `docs/documentation/Developer_Docs/vwmp/portable-workflow-implementation-guide.md` - Detailed implementation guide
 - `docs/documentation/Developer_Docs/vwmp/intake-workflow-agent-execution.md` - Step-by-step guide for executing the 7-step Intake Workflow (FR/BR/UXR automation)
 - `docs/documentation/Developer_Docs/vwmp/update-kanban-workflow-agent-execution.md` - Step-by-step guide for executing the 8-step Update Kanban Workflow (UKW - kanban sync)
+- `KB/Documentation/Developer_Docs/vwmp/implementation-planning-workflow-agent-execution.md` - IPW planning workflow (canonical planning trigger; ICW is deprecated alias)
+- `KB/Documentation/Developer_Docs/vwmp/implementation-delivery-workflow-agent-execution.md` - IDW implementation execution against linked IPP; optional `--rw` chain
+- `KB/Documentation/Developer_Docs/vwmp/meta-workflow-agent-execution.md` - MWF composite orchestration (`delivery` recipe: IPW → IDW `--rw`)
 
 ### Versioning Policy Documents
 - `docs/architecture/standards-and-adrs/versioning-policy.md` - Version schema definition (RC.EPIC.STORY.TASK+BUILD)
@@ -66,14 +73,16 @@ _Documentation quality_ (templates, style guide, per-workflow READMEs) is govern
 
 ### 🚀 Workflow Overview
 
-The AI Dev Kit workflow management framework provides **11** YAML-defined workflows (see [`workflows/workflow-registry.yaml`](workflows/workflow-registry.yaml)) for systematic development operations. Each registry workflow follows consistent documentation standards and includes comprehensive usage instructions.
+The AI Dev Kit workflow management framework provides **13** YAML-defined workflows (see [`workflows/workflow-registry.yaml`](workflows/workflow-registry.yaml)) for systematic development operations. Each registry workflow follows consistent documentation standards and includes comprehensive usage instructions.
 
 #### 📋 Available Workflows
 
 | Workflow | Abbreviation | Purpose | Documentation |
 |-----------|--------------|---------|----------------|
 | **Release Workflow** | RW | Complete release process with version management | [README](workflows/release-workflow/README.md) |
-| **Implementation Cycle Workflow** | ICW | Structured three-phase implementation workflow | [README](workflows/implementation-cycle-workflow/README.md) |
+| **Implementation Cycle Workflow** | ICW / IPW | Structured planning workflow (canonical: **IPW**) | [README](workflows/implementation-cycle-workflow/README.md) |
+| **Implementation Delivery Workflow** | IDW | Execute linked IPP; optional `--rw` release chain | [README](workflows/implementation-delivery-workflow/README.md) |
+| **Meta-Workflow** | MWF | Composite orchestration (v1 `delivery`: IPW → IDW `--rw`) | [README](workflows/meta-workflow/README.md) |
 | **Changelog Management Workflow** | CMW | Manage changelog size and organization | [README](workflows/changelog-management-workflow/README.md) |
 | **Update Kanban Workflow** | UKW | Update Kanban board documentation | [README](workflows/update-kanban-workflow/README.md) |
 | **Post-Implementation Review** | PIR | Review implementation after release | [README](workflows/post-implementation-review/README.md) |
@@ -87,7 +96,9 @@ The AI Dev Kit workflow management framework provides **11** YAML-defined workfl
 #### 🎯 Quick Workflow Selection
 
 - **For Releases**: Use **Release Workflow (RW)** for version management and distribution
-- **For Implementation**: Use **Implementation Cycle Workflow (ICW)** for structured development
+- **For Planning**: Use **IPW** (Implementation Planning Workflow; ICW is deprecated alias)
+- **For Implementation**: Use **IDW** after IPW; optional **`IDW … --rw`** for implement + local release
+- **For Full Pipeline**: Use **MWF `delivery`** — IPW → (mode gate) → IDW `--rw` ([FR-124](../../../docs/kanban/fr-br/FR-124-meta-workflow-orchestration-composite-workflow-chains.md))
 - **For Kanban Updates**: Use **Update Kanban Workflow (UKW)** for board synchronization
 - **For Quality**: Use **Testing Workflow (TESTING)** for comprehensive testing
 - **For Maintenance**: Use **Changelog Management (CMW)** for documentation upkeep
@@ -112,7 +123,9 @@ For detailed documentation standards, see: [Workflow Documentation Style Guide](
 - `workflows/migration-workflow/migration-workflow.yaml` - YAML definition of the Migration Workflow structure
 - `workflows/refactor-workflow/refactor-workflow.yaml` - YAML definition of the Refactor Workflow structure
 - `workflows/testing-workflow/testing-workflow.yaml` - YAML definition of the Testing Workflow structure
-- `workflows/implementation-cycle-workflow/icw-workflow.yaml` - YAML definition of the Implementation Cycle Workflow structure (ICW - systematic implementation workflow)
+- `workflows/implementation-cycle-workflow/icw-workflow.yaml` - YAML definition of the Implementation Cycle Workflow structure (ICW / IPW - planning workflow)
+- `workflows/implementation-delivery-workflow/idw-workflow.yaml` - YAML definition of the Implementation Delivery Workflow structure (IDW)
+- `workflows/meta-workflow/mwf-workflow.yaml` - YAML definition of the Meta-Workflow structure (MWF composite orchestration)
 - `workflows/package-version-workflow/package-version-workflow.yaml` - YAML definition of the Package Version Workflow structure
 - `workflows/framework-health-monitoring-workflow/framework-health-monitoring-workflow.yaml` - YAML definition of the Framework Health Monitoring Workflow structure
 - `workflows/workflow-registry.yaml` - Registry of all workflows with metadata

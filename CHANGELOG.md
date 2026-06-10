@@ -11,8 +11,8 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
-## [0.2.16.3+7] - 10-06-26
+## [0.2.16.3+8] - 10-06-26
 
-E02:S16:T03 — FR-125: merge T07 into T03; unified Ad-hoc Documentation Maintenance perpetual lane. SemVer **v0.4.1123+7**.
+E02:S16:T03 — MWF (FR-124) documentation alignment: packaged workflow-mgt, command guides, AGENTS, README (13 workflows). SemVer **v0.4.1124+8**.
 
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.16.3+7.md)
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.16.3+8.md)
