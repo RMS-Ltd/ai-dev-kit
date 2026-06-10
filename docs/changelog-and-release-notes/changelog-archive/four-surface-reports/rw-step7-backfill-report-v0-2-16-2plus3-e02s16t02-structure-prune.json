@@ -1,0 +1,24 @@
+{
+  "report_type": "rw_step7_structure_prune",
+  "release_scope": "E02:S16:T02",
+  "version": "v0.2.16.2+3",
+  "evidence_mode": "structure_prune",
+  "rows": {
+    "E02:S16:T02": {
+      "allowed": true,
+      "reason": "RW E02:S16:T02 v0.2.16.2+3 — perpetual UKW row version/stamp sync after UKW -u"
+    },
+    "E05:S08:T03": {
+      "allowed": true,
+      "reason": "Terminal COMPLETE v0.5.8.3+3 — UKW -u removed stale S-band row; kanban-completed ledger"
+    },
+    "E05:S08:T04": {
+      "allowed": true,
+      "reason": "Terminal COMPLETE v0.5.8.4+2 — UKW -u removed stale S-band row; kanban-completed ledger"
+    },
+    "E05:S09:T15": {
+      "allowed": true,
+      "reason": "Terminal COMPLETE v0.5.9.15+2 — UKW -u removed stale S-band row; kanban-completed ledger"
+    }
+  }
+}

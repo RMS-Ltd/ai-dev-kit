@@ -1,0 +1,19 @@
+{
+  "report_type": "ukw_structure_prune",
+  "invocation": "UKW -u",
+  "evidence_mode": "structure_prune",
+  "rows": {
+    "E05:S08:T03": {
+      "allowed": true,
+      "reason": "Terminal COMPLETE v0.5.8.3+3 — task doc + story checklist; removed stale S-band row; ledger appended kanban-completed.md"
+    },
+    "E05:S08:T04": {
+      "allowed": true,
+      "reason": "Terminal COMPLETE v0.5.8.4+2 — task doc + story checklist; removed stale S-band row; ledger appended kanban-completed.md"
+    },
+    "E05:S09:T15": {
+      "allowed": true,
+      "reason": "Terminal COMPLETE v0.5.9.15+2 — task doc + story checklist; removed stale S-band row; ledger appended kanban-completed.md"
+    }
+  }
+}

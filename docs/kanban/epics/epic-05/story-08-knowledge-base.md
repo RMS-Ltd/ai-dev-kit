@@ -8,11 +8,11 @@ housekeeping_policy: keep
 
 # Story 008 – Knowledge Base
 
-**Status:** IN PROGRESS  
+**Status:** COMPLETE  
 **Priority:** HIGH  
 **Estimated Effort:** [TBD]  
 **Created:** 2025-12-18  
-**Last updated:** 2026-06-09 (v0.5.8.7+1 – Kanban documentation setup)
+**Last updated:** 2026-06-10 (UKW -u — all tasks T01–T07 COMPLETE)
 **Version:** v0.5.8.7+1
 **Code:** E5S08
 

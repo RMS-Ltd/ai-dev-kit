@@ -2,7 +2,7 @@
   "contract": "FR-092 Wave 7 release-readiness gate (Gates 1-7: governance / predecessors / parity / corpus / stage / stamps / four-surface)",
   "four_surface_report_path": "/Users/rms/Documents/projects/ai-dev-kit/docs/changelog-and-release-notes/changelog-archive/four-surface-reports/rw-step7-four-surface-report-v0-8-3-12plus10-e8s3t12.json",
   "invocation_context": "rw_step_9_release_readiness",
-  "overall_passed": true,
+  "overall_passed": false,
   "project_root": "/Users/rms/Documents/projects/ai-dev-kit",
   "release_scope": {
     "epic": 8,
@@ -12,13 +12,16 @@
     "version_string": "v0.8.3.12+10"
   },
   "summary": {
-    "blocking_failures": [],
-    "gates_failed": 0,
-    "gates_passed": 11,
+    "blocking_failures": [
+      "Gate 5: Stage-set completeness (BR-070)",
+      "Gate 7: Four-surface parity (FR-084)"
+    ],
+    "gates_failed": 2,
+    "gates_passed": 9,
     "gates_total": 11,
     "gates_waived": 0
   },
-  "timestamp_utc": "2026-06-07 17:23 UTC",
+  "timestamp_utc": "2026-06-10 08:08 UTC",
   "verdicts": [
     {
       "evidence": {
@@ -42,15 +45,15 @@
     {
       "evidence": {
         "BR-042": "OK (closed as duplicate)",
-        "docs/project-management/kanban/epics/epic-02/story-15-ipw-governance-and-publication-contract/T02-ipp-post-run-governance-reconciliation-ownership-fr084.md": "OK",
-        "docs/project-management/kanban/epics/epic-02/story-15-ipw-governance-and-publication-contract/T05-implement-ukw-rw-canonical-row-transform-engine-fr090.md": "OK",
-        "docs/project-management/kanban/epics/epic-02/story-15-ipw-governance-and-publication-contract/T06-rw-step-7-self-sufficient-scoped-kanban-reconciliation-fr091.md": "OK",
-        "docs/project-management/kanban/fr-br/BR-069-kboard-fbuboard-earliest-last-modified-timestamps-overwritten.md": "OK",
-        "docs/project-management/kanban/fr-br/BR-070-rw-k-stage-files-completeness-gap-allows-partial-kanban-commit.md": "OK",
-        "docs/project-management/kanban/fr-br/FR-084-ipp-post-run-governance-reconciliation-ownership.md": "OK",
-        "docs/project-management/kanban/fr-br/FR-090-ukw-canonical-row-transform-engine-and-board-specific-rendering-contracts.md": "OK",
-        "docs/project-management/kanban/fr-br/FR-091-rw-step-7-self-sufficient-scoped-kanban-reconciliation-without-ukw-dependency.md": "OK",
-        "docs/project-management/kanban/fr-br/UXR-009-last-modified-stamp-forensic-integrity-and-drift-protection.md": "OK"
+        "docs/kanban/epics/epic-02/story-15-ipw-governance-and-publication-contract/T02-ipp-post-run-governance-reconciliation-ownership-fr084.md": "OK",
+        "docs/kanban/epics/epic-02/story-15-ipw-governance-and-publication-contract/T05-implement-ukw-rw-canonical-row-transform-engine-fr090.md": "OK",
+        "docs/kanban/epics/epic-02/story-15-ipw-governance-and-publication-contract/T06-rw-step-7-self-sufficient-scoped-kanban-reconciliation-fr091.md": "OK",
+        "docs/kanban/fr-br/BR-069-kboard-fbuboard-earliest-last-modified-timestamps-overwritten.md": "OK",
+        "docs/kanban/fr-br/BR-070-rw-k-stage-files-completeness-gap-allows-partial-kanban-commit.md": "OK",
+        "docs/kanban/fr-br/FR-084-ipp-post-run-governance-reconciliation-ownership.md": "OK",
+        "docs/kanban/fr-br/FR-090-ukw-canonical-row-transform-engine-and-board-specific-rendering-contracts.md": "OK",
+        "docs/kanban/fr-br/FR-091-rw-step-7-self-sufficient-scoped-kanban-reconciliation-without-ukw-dependency.md": "OK",
+        "docs/kanban/fr-br/UXR-009-last-modified-stamp-forensic-integrity-and-drift-protection.md": "OK"
       },
       "findings": [],
       "gate_id": 2,
@@ -64,7 +67,7 @@
     },
     {
       "evidence": {
-        "docs/project-management/kanban/kboard.md": "byte-identical"
+        "docs/kanban/kboard.md": "byte-identical"
       },
       "findings": [],
       "gate_id": 3,
@@ -78,13 +81,13 @@
     },
     {
       "evidence": {
-        "/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/kboard.md": {
+        "/Users/rms/Documents/projects/ai-dev-kit/docs/kanban/kboard.md": {
           "rows_changed": 0,
           "rows_with_duplicate_footers": 0
         },
         "stamp_evidence_aggregate": {
           "stamps_appended_with_evidence": 0,
-          "stamps_preserved_existing": 22,
+          "stamps_preserved_existing": 23,
           "stamps_skipped_no_evidence": 0
         }
       },
@@ -109,15 +112,21 @@
           "task_id": "E8:S3:T12",
           "version_string": "v0.8.3.12+10"
         },
-        "violations": 0
+        "violations": 5
       },
-      "findings": [],
+      "findings": [
+        "`fbu_doc` :: `/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/fr-br/BR-099-code-quality-maintainability-backlog.md` :: missing \u2014 Step-7 surface path does not exist on disk; staging cannot reach it. Likely Step 7 declared a surface that was never written, or the path was deleted before commit. Investigate before proceeding.",
+        "`kboard` :: `/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/kboard.md` :: missing \u2014 Step-7 surface path does not exist on disk; staging cannot reach it. Likely Step 7 declared a surface that was never written, or the path was deleted before commit. Investigate before proceeding.",
+        "`task_doc` :: `/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/epic-08/story-03-automation-scripts/T12-code-quality-maintainability-backlog-br099.md` :: missing \u2014 Step-7 surface path does not exist on disk; staging cannot reach it. Likely Step 7 declared a surface that was never written, or the path was deleted before commit. Investigate before proceeding.",
+        "`epic_doc` :: `/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/epic-08/epic-08.md` :: missing \u2014 Step-7 surface path does not exist on disk; staging cannot reach it. Likely Step 7 declared a surface that was never written, or the path was deleted before commit. Investigate before proceeding.",
+        "`story_doc` :: `/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/epic-08/story-03-automation-scripts.md` :: missing \u2014 Step-7 surface path does not exist on disk; staging cannot reach it. Likely Step 7 declared a surface that was never written, or the path was deleted before commit. Investigate before proceeding."
+      ],
       "gate_id": 5,
-      "is_blocking_failure": false,
+      "is_blocking_failure": true,
       "name": "Stage-set completeness (BR-070)",
-      "passed": true,
+      "passed": false,
       "severity": "block",
-      "summary": "BR-070 satisfied: all 5 Step-7 path(s) are staged or unchanged.",
+      "summary": "BR-070 violation: 5 Step-7 path(s) are modified-unstaged, untracked, or missing.",
       "waive_reason": null,
       "waived": false
     },
@@ -171,13 +180,15 @@
           "touched": true
         }
       },
-      "findings": [],
+      "findings": [
+        "FR-084 violation: declared surface path(s) do not exist on disk: ['task_doc::/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/epic-08/story-03-automation-scripts/T12-code-quality-maintainability-backlog-br099.md', 'fbu_doc::/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/fr-br/BR-099-code-quality-maintainability-backlog.md', 'kboard::/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/kboard.md']."
+      ],
       "gate_id": 7,
-      "is_blocking_failure": false,
+      "is_blocking_failure": true,
       "name": "Four-surface parity (FR-084)",
-      "passed": true,
+      "passed": false,
       "severity": "block",
-      "summary": "Four-surface parity satisfied: all primary surfaces present, either touched or noted-untouched, with paths existing on disk.",
+      "summary": "Four-surface parity violation; see findings.",
       "waive_reason": null,
       "waived": false
     },

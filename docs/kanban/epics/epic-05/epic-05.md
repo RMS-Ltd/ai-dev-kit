@@ -12,7 +12,7 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** [TBD]  
 **Created:** 2025-12-05  
-**Last updated:** 2026-06-09 (v0.5.8.7+1 – Kanban documentation setup)
+**Last updated:** 2026-06-10 (UKW -u — S08/S09 story COMPLETE sync)
 **Branch:** `epic/5-documentation-management`  
 **Version Schema:** `0.5.S.T+B`  
 **Production URL:** [N/A for this repo]
@@ -72,9 +72,9 @@ housekeeping_policy: keep
 
 
 
-- [ ] **E5:S08 – Knowledge Base** - 🔄 IN PROGRESS (**FR-121** T05 ✅ @ v0.5.8.5+2 · T06 ✅ @ v0.5.8.6+1 · T07 TODO — git-internal maintainer KB)
+- [x] **E5:S08 – Knowledge Base** - ✅ COMPLETE (**v0.5.8.7+1** — FR-114 T03/T04 + FR-121 T05–T07)
   - Story: [`story-08-knowledge-base.md`](story-08-knowledge-base.md)
-  - **Note:** Renumbered from S07 to S08 (E09:S01:T08). FR-114 T03/T04 COMPLETE @ v0.5.8.4+2; FR-121 waves 1–2 COMPLETE.
+  - **Note:** Renumbered from S07 to S08 (E09:S01:T08). All tasks T01–T07 terminal; git-internal maintainer KB per ADR-026.
 
 
 

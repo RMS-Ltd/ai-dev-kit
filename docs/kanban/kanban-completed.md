@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Completed Tasks
 
-**Last Updated:** 2026-06-09 (RW E21:S05:T01 — FR-006 Spanish es locale)
-**Version:** v0.21.5.1+1
+**Last Updated:** 2026-06-10 (RW E02:S16:T02 — UKW kanban hygiene)
+**Version:** v0.2.16.2+3
 
 > **For MoSCOW prioritized tasks, see:** [`kboard.md`](kboard.md)  
 > **For completed FR/BR/UXR intake items, see:** [`intake-completed.md`](intake-completed.md)
@@ -19,6 +19,12 @@ housekeeping_policy: keep
 ---
 
 ## 20 Most Recently Completed Tasks
+
+#### **UKW (2026-06-10)** — Board hygiene: archived terminal E05 FR-114 rows (already shipped)
+
+- **[E05:S09:T15](epics/epic-05/story-09-docusaurus-documentation-portal/T15-docusaurus-adopter-public-publish-allowlist-fr114.md)** — Docusaurus adopter-public allowlist; ADR-024; Wave 2 @ **v0.5.9.15+2**. [FR-114](fr-br/FR-114-split-documentation-surfaces-docusaurus-public-notion-maintainer-kb.md) · [—IPP—](../../implementation-cycles/IPP-E05S09T15-docusaurus-adopter-public-publish-allowlist-fr114.md)
+- **[E05:S08:T04](epics/epic-05/story-08-knowledge-base/T04-agent-notion-first-authoring-and-bootstrap-routing-fr114.md)** — Agent Notion-first authoring + bootstrap routing @ **v0.5.8.4+2**. [FR-114](fr-br/FR-114-split-documentation-surfaces-docusaurus-public-notion-maintainer-kb.md) · [—IPP—](../../implementation-cycles/IPP-E05S08T04-agent-notion-first-authoring-and-bootstrap-routing-fr114.md)
+- **[E05:S08:T03](epics/epic-05/story-08-knowledge-base/T03-big-bang-notion-migration-maintainer-kb-fr114.md)** — Big-bang Notion maintainer KB migration @ **v0.5.8.3+3** (later superseded maintainer SoT by FR-121 T05). [FR-114](fr-br/FR-114-split-documentation-surfaces-docusaurus-public-notion-maintainer-kb.md) · [—IPP—](../../implementation-cycles/IPP-E05S08T03-big-bang-notion-migration-maintainer-kb-fr114.md)
 
 #### **RW (2026-06-09)** — E21:S05:T01 @ **v0.21.5.1+1** (FR-006 — Spanish es locale delivery)
 

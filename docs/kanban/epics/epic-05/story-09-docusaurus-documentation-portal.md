@@ -8,11 +8,11 @@ housekeeping_policy: keep
 
 # Story 009 – Docusaurus Documentation Portal
 
-**Status:** IN PROGRESS
+**Status:** COMPLETE
 **Priority:** HIGH  
 **Estimated Effort:** [TBD]  
 **Created:** 2026-03-30  
-**Last updated:** 2026-06-07 (v0.5.9.15+2 — **T15** FR-114 Wave 2 ADR-024 ✅)  
+**Last updated:** 2026-06-10 (UKW -u — T01–T15 all COMPLETE; story closed)  
 **Version:** v0.5.9.15+2
 **Code:** E5S09
 

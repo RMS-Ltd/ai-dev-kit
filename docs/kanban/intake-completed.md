@@ -8,7 +8,7 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Intake Completed Items (FR/BR/UXR)
 
-**Last Updated:** 2026-06-07 (RW — **BR-099** re-close @ T12 +13)
+**Last Updated:** 2026-06-10 (UKW -u — temporal sync; no new FBU closures)
 **Version:** v0.8.3.12+13
 
 > **For open / in-flight intake items, see:** [`kboard.md`](kboard.md) (MoSCOW) and [`intake-structure.md`](intake-structure.md)  

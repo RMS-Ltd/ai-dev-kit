@@ -12,7 +12,7 @@ housekeeping_policy: keep
 **Priority:** MEDIUM  
 **Estimated Effort:** [TBD]  
 **Created:** 2025-12-09  
-**Last updated:** 2026-06-10 (v0.21.5.1+1 – Kanban documentation setup)
+**Last updated:** 2026-06-10 (UKW -u — S04/S05 checklist sync)
 **Version:** v0.21.9.3+1  
 **Branch:** `epic/21-internationalisation-localisation`  
 **Version Schema:** `0.21.S.T+B`  
@@ -34,13 +34,13 @@ housekeeping_policy: keep
   - Story: [`story-03-translation-and-localisation.md`](story-03-translation-and-localisation.md)
   - Tasks: T01–T07 COMPLETE
 
-- [ ] **E21:S04 – Cultural Adaptation** - TODO (v0.21.4.0+0)
+- [ ] **E21:S04 – Cultural Adaptation** - IN PROGRESS (v0.21.4.1+1 — T01 COMPLETE)
   - Story: [`story-04-cultural-adaptation.md`](story-04-cultural-adaptation.md)
-  - Tasks: T01-T07 TODO
+  - Tasks: T01 ✅; T02–T07 TODO
 
-- [ ] **E21:S05 – European Languages Localization** - TODO (v0.21.5.0+0)
+- [ ] **E21:S05 – European Languages Localization** - IN PROGRESS (v0.21.5.1+1 — T01 COMPLETE)
   - Story: [`story-05-european-languages-localization.md`](story-05-european-languages-localization.md)
-  - Tasks: T01-T04 TODO
+  - Tasks: T01 ✅; T02–T04 TODO
 
 - [ ] **E21:S06 – CJK Languages Localization** - TODO (v0.21.6.0+0)
   - Story: [`story-06-cjk-languages-localization.md`](story-06-cjk-languages-localization.md)

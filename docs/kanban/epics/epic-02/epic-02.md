@@ -12,7 +12,7 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** [TBD]  
 **Created:** 2025-12-02  
-**Last updated:** 2026-06-09 (v0.2.1.30+7 – Kanban documentation setup)
+**Last updated:** 2026-06-10 (v0.2.16.2+3 – Kanban documentation setup)
 **Branch:** `epic/2-workflow-management-framework`  
 **Version Schema:** `0.2.S.T+B`  
 **Production URL:** [N/A for this repo]
@@ -82,7 +82,7 @@ housekeeping_policy: keep
   - Story: [`story-15-ipw-governance-and-publication-contract.md`](story-15-ipw-governance-and-publication-contract.md)
   - Tasks: T01, T03, T04, T07, T08 ✅ COMPLETE; T02/T05/T06 superseded → T07
 
-- [ ] **E2:S16 – Perpetual Ongoing Operations** - IN PROGRESS (v0.2.16.24+1)
+- [ ] **E2:S16 – Perpetual Ongoing Operations** - IN PROGRESS (v0.2.16.2+3)
   - Story: [`story-16-perpetual-ongoing-workflow-operations.md`](story-16-perpetual-ongoing-workflow-operations.md)
   - Perpetual lanes: T01–T06 — [FR-088](../../fr-br/FR-088-dedicated-story-for-perpetual-ongoing-tasks.md) | [IPP-E02S16T24](../../implementation-cycles/IPP-E02S16T24-s16-perpetual-only-semantic-scatter.md)
 
