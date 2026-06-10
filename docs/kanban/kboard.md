@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Board
 
-**Last Updated:** 2026-06-10 (RW: E02:S16:T03)
-**Version:** v0.2.16.3+8
+**Last Updated:** 2026-06-10 (RW: E02:S03:T11 v0.2.3.11+1)
+**Version:** v0.2.3.11+1
 
 **Active board contract:** **Sole active MoSCOW board** ([ADR-018](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/architecture/standards-and-adrs/ADR-018-single-kanban-board-consolidation.md)). Rows are **live work** (TODO / IN PROGRESS / OPEN / WAITING / PERPETUAL) plus filed **Could Have** backlog. **Verification (V)** band holds task-shipped / FBU-open items (`⏳ WAITING`). Remove **terminal** rows and archive prose (use [`kanban-completed.md`](kanban-completed.md) / [`intake-completed.md`](intake-completed.md)).
 
@@ -32,6 +32,10 @@ housekeeping_policy: keep
 - **E06:S09:T26** – Starborn Legacy ADK install program - 🔄 IN PROGRESS (HIGH, **v0.6.9.26+2** — attempt 03 FB intake; F9→BLOCKER; F10–F17 triage) | [Task](epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T26-starborn-legacy-adk-install-program.md) | [UXR-025](fr-br/UXR-025-starborn-legacy-greenfield-install-diary.md) | [Attempt 03](../../../adk-install-into-sbl/attempt-03/README.md) | —No IPP— | Last modified: 2026-06-09 12:07 UTC
 
 - **E08:S03:T12** – Code Quality maintainability backlog (BR-099) - 🔄 IN PROGRESS (MEDIUM, **v0.8.3.12+9** wave-6 IPW; **103/Fair** @ `d5c4bca5`; **`implement wave 6`**) | [Task](epics/epic-08/story-03-automation-scripts/T12-code-quality-maintainability-backlog-br099.md) | [BR-099](fr-br/BR-099-code-quality-maintainability-backlog.md) | [—IPP—](../../implementation-cycles/IPP-E08S03T12-code-quality-maintainability-backlog-br099.md) | Last modified: 2026-06-06 17:01 UTC
+
+- **E02:S03:T11** – MWF sub-agent leg delegation (BR-102) - 🔄 IN PROGRESS (HIGH, **v0.2.3.11+1** — BR-102 banked; fix pending) | [Task](epics/epic-02/story-03-additional-workflows-and-examples/T11-mwf-subagent-leg-delegation-br102.md) | [Story](epics/epic-02/story-03-additional-workflows-and-examples.md) | [BR-102](fr-br/BR-102-mwf-chain-paused-instead-of-subagent-leg-delegation.md) | —No IPP— | Last modified: 2026-06-10 14:53 UTC
+
+- **E02:S03:T10** – Workflow encapsulation integrity audit (MWF leverage) (FR-126) - 📋 TODO (HIGH, MWF follow-on — audit all atomic workflows for delegatable contract) | [Task](epics/epic-02/story-03-additional-workflows-and-examples/T10-workflow-encapsulation-integrity-mwf-fr126.md) | [Story](epics/epic-02/story-03-additional-workflows-and-examples.md) | [FR-126](fr-br/FR-126-workflow-encapsulation-integrity-mwf-leverage.md) | —No IPP— | Last modified: 2026-06-10 15:00 UTC
 
 ### Verification (V) - Task Shipped, FBU Verification Pending
 

@@ -1,0 +1,28 @@
+{
+  "release": "0.2.3.11+1",
+  "semver": "0.4.1125+1",
+  "task": "E02:S03:T11",
+  "timestamp_utc": "2026-06-10T14:53:51Z",
+  "surfaces": [
+    {
+      "id": "task_doc",
+      "path": "docs/kanban/epics/epic-02/story-03-additional-workflows-and-examples/T11-mwf-subagent-leg-delegation-br102.md",
+      "action": "version_anchor_and_status"
+    },
+    {
+      "id": "br_doc",
+      "path": "docs/kanban/fr-br/BR-102-mwf-chain-paused-instead-of-subagent-leg-delegation.md",
+      "action": "status_banked"
+    },
+    {
+      "id": "kboard",
+      "path": "docs/kanban/kboard.md",
+      "action": "row_and_metadata"
+    },
+    {
+      "id": "story_doc",
+      "path": "docs/kanban/epics/epic-02/story-03-additional-workflows-and-examples.md",
+      "action": "checklist_version"
+    }
+  ]
+}

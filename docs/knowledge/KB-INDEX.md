@@ -1,8 +1,8 @@
 # KB Index
 
-**Generated:** 2026-06-10 14:07:24 UTC  
+**Generated:** 2026-06-10 14:12:57 UTC  
 **Scope:** /Users/rms/Documents/projects/ai-dev-kit/docs  
-**Total files:** 3149  
+**Total files:** 3150  
 **Total size:** 14.75 MB
 
 ---
@@ -21,7 +21,7 @@
 | guides | 7 | 30.9 KB | 7 | 0 | 7 | 0 | 0 | 0 |
 | implementation-cycles | 259 | 2.16 MB | 219 | 40 | 204 | 2 | 1 | 0 |
 | journals | 4 | 14.7 KB | 0 | 4 | 0 | 0 | 0 | 0 |
-| kanban | 1125 | 5.25 MB | 1081 | 44 | 1051 | 0 | 3 | 0 |
+| kanban | 1126 | 5.25 MB | 1082 | 44 | 1052 | 0 | 3 | 0 |
 | knowledge | 75 | 1.17 MB | 72 | 3 | 69 | 1 | 2 | 3 |
 | maintainer | 1 | 2.9 KB | 1 | 0 | 1 | 0 | 0 | 0 |
 | maintenance | 24 | 138.7 KB | 13 | 11 | 9 | 3 | 0 | 0 |
@@ -684,7 +684,8 @@
 | kanban/epics/epic-02/story-03-additional-workflows-and-examples/T07-ukw-slash-command-claude-code-fr093.md | 2.7 KB | 304 | evergreen | 2026-05-13T00:00:00 |  |
 | kanban/epics/epic-02/story-03-additional-workflows-and-examples/T08-implementation-delivery-workflow-idw-fr118.md | 2.4 KB | 200 | evergreen | 2026-06-08T18:00:00 |  |
 | kanban/epics/epic-02/story-03-additional-workflows-and-examples/T09-ipw-full-delivery-chain-idf-rw-fr123.md | 2.6 KB | 244 | evergreen | 2026-06-10T12:00:00 |  |
-| kanban/epics/epic-02/story-03-additional-workflows-and-examples.md | 4.0 KB | 351 | evergreen | 2025-12-04T12:01:50 |  |
+| kanban/epics/epic-02/story-03-additional-workflows-and-examples/T10-workflow-encapsulation-integrity-mwf-fr126.md | 4.0 KB | 395 | evergreen | 2026-06-10T15:00:00 |  |
+| kanban/epics/epic-02/story-03-additional-workflows-and-examples.md | 4.4 KB | 378 | evergreen | 2025-12-04T12:01:50 |  |
 | kanban/epics/epic-02/story-04-rw-installer-and-plug-and-play-adoption/T01-analyze-current-rw-adoption-friction-and-required-config.md | 1.4 KB | 157 | evergreen | 2026-06-05T04:49:59 |  |
 | kanban/epics/epic-02/story-04-rw-installer-and-plug-and-play-adoption/T02-design-rw-config-schema-rw-configyaml-and-modes.md | 1.4 KB | 160 | evergreen | 2026-06-05T04:49:59 |  |
 | kanban/epics/epic-02/story-04-rw-installer-and-plug-and-play-adoption/T03-implement-rw-installer-cli.md | 1.4 KB | 159 | evergreen | 2026-06-05T04:49:59 |  |
@@ -1716,8 +1717,8 @@
 | kanban/kanban-board-guide.md | 16.5 KB | 2136 | evergreen | 2026-01-20T00:00:00 |  |
 | kanban/kanban-completed.md | 129.1 KB | 10286 | evergreen | 2026-03-09T00:00:00 |  |
 | kanban/kanban-structure.md | 25.5 KB | 2227 | evergreen | 2026-03-09T00:00:00 |  |
-| kanban/kboard.md | 30.9 KB | 2122 | evergreen | 2025-12-04T12:02:50 |  |
-| knowledge/KB-INDEX.md | 238.7 KB | 22413 |  |  |  |
+| kanban/kboard.md | 31.4 KB | 2160 | evergreen | 2025-12-04T12:02:50 |  |
+| knowledge/KB-INDEX.md | 238.8 KB | 22426 |  |  |  |
 | knowledge/README.md | 2.5 KB | 259 | evergreen | 2026-06-07T12:00:00 |  |
 | knowledge/USE_CASE_METHODOLOGY.md | 14.3 KB | 1844 | evergreen | 2025-12-16T14:30:00 |  |
 | knowledge/analysis/abstract-anti-patterns-use-case-exposed-design-flaw.md | 13.0 KB | 1796 | evergreen | 2025-12-18T00:00:00 |  |
@@ -1820,5 +1821,5 @@
 | project-agent-index.md | 4.3 KB | 392 | evergreen | 2026-05-30T21:00:00 |  |
 | project-management/README.md | 523 B | 34 | evergreen | 2025-12-04T12:01:54 |  |
 | release-notes/README.md | 1.4 KB | 123 | evergreen | 2026-06-07T12:00:00 |  |
-| changelog-and-release-notes/changelog-archive/ (summary) (1454 files) | 4.02 MB | 466526 |  |  |  |
+| changelog-and-release-notes/changelog-archive/ (summary) (1454 files) | 4.03 MB | 466657 |  |  |  |
 

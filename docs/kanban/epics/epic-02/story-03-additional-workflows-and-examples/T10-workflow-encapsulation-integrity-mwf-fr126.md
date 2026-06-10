@@ -79,6 +79,10 @@ Audit **all registered atomic workflows** for **encapsulation integrity** so the
 
 - [E02:S03:T09](T09-ipw-full-delivery-chain-idf-rw-fr123.md) — MWF v1 shipped (COMPLETE)
 
+**Blocked By:**
+
+- [E02:S03:T11](T11-mwf-subagent-leg-delegation-br102.md) / [BR-102](../../../fr-br/BR-102-mwf-chain-paused-instead-of-subagent-leg-delegation.md) — `MWF … delivery` must delegate legs via sub-agents before full-pipeline invoke is reliable
+
 **Blocks:**
 
 - Future MWF recipes beyond `delivery` (e.g. `ukw,rw`, `cmw,rw`)

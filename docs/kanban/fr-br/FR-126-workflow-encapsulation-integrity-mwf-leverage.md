@@ -18,7 +18,7 @@ housekeeping_policy: keep
 
 **Implementing Task:** [E02:S03:T10](../epics/epic-02/story-03-additional-workflows-and-examples/T10-workflow-encapsulation-integrity-mwf-fr126.md)
 
-**Depends on:** [FR-124](FR-124-meta-workflow-orchestration-composite-workflow-chains.md) (MWF v1 `delivery` shipped @ v0.2.3.9+3)
+**Depends on:** [FR-124](FR-124-meta-workflow-orchestration-composite-workflow-chains.md) (MWF v1 `delivery` shipped @ v0.2.3.9+3) · [BR-102](BR-102-mwf-chain-paused-instead-of-subagent-leg-delegation.md) (MWF sub-agent delegation — blocks reliable full-pipeline invoke)
 
 ---
 

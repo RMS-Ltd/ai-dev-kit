@@ -11,8 +11,8 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
-## [0.2.16.3+8] - 10-06-26
+## [0.2.3.11+1] - 10-06-26
 
-E02:S16:T03 — MWF (FR-124) documentation alignment: packaged workflow-mgt, command guides, AGENTS, README (13 workflows). SemVer **v0.4.1124+8**.
+E02:S03:T11 — BR-102 intake: MWF sub-agent leg delegation bug filed; task T11 banked (**IN PROGRESS**). SemVer **v0.4.1125+1**.
 
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.16.3+8.md)
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.3.11+1.md)
