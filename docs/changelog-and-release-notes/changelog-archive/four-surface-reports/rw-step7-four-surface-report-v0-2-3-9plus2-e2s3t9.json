@@ -1,0 +1,82 @@
+{
+  "auxiliary_surfaces": {
+    "story_doc": {
+      "changes": [
+        "Updated E02:S03:T09 checklist entry (v0.2.3.9+2 FR-124 intake + IPP)"
+      ],
+      "notes": [],
+      "paths": [
+        "/Users/rms/Documents/projects/ai-dev-kit/docs/kanban/epics/epic-02/story-03-additional-workflows-and-examples.md"
+      ],
+      "surface": "story_doc",
+      "touched": true
+    }
+  },
+  "contract": "FR-092 / ADR-018 (RW Step 7 four-surface reconciliation)",
+  "invocation_context": "rw_step_7",
+  "release_scope": {
+    "epic": 2,
+    "story": 3,
+    "task": 9,
+    "task_id": "E2:S3:T9",
+    "version_string": "v0.2.3.9+2"
+  },
+  "stamp_evidence": {
+    "E02:S03:T09": {
+      "action": "row_stamp",
+      "new_stamp": "2026-06-10 12:47 UTC",
+      "reason": "RW Step 7 release-scope reconciliation"
+    }
+  },
+  "summary": {
+    "stamps_appended_with_evidence": 1,
+    "stamps_preserved_existing": 0,
+    "stamps_skipped_no_evidence": 0,
+    "total_changes": 6,
+    "touched_surfaces": [
+      "task_doc",
+      "fbu_doc",
+      "kboard"
+    ],
+    "untouched_surfaces": []
+  },
+  "surfaces": {
+    "fbu_doc": {
+      "changes": [
+        "FR-124 intake banked @ v0.2.3.9+2",
+        "FR-123 SUPERSEDED BY FR-124 retained"
+      ],
+      "notes": [],
+      "paths": [
+        "/Users/rms/Documents/projects/ai-dev-kit/docs/kanban/fr-br/FR-124-meta-workflow-orchestration-composite-workflow-chains.md",
+        "/Users/rms/Documents/projects/ai-dev-kit/docs/kanban/fr-br/FR-123-ipw-full-delivery-chain-idf-rw.md"
+      ],
+      "surface": "fbu_doc",
+      "touched": true
+    },
+    "kboard": {
+      "changes": [
+        "E02:S03:T09 row version v0.2.3.9+2 + stamp",
+        "Board metadata Last Updated / Version"
+      ],
+      "notes": [],
+      "paths": [
+        "/Users/rms/Documents/projects/ai-dev-kit/docs/kanban/kboard.md"
+      ],
+      "surface": "kboard",
+      "touched": true
+    },
+    "task_doc": {
+      "changes": [
+        "Version v0.2.3.9+2",
+        "Last updated forensic marker"
+      ],
+      "notes": [],
+      "paths": [
+        "/Users/rms/Documents/projects/ai-dev-kit/docs/kanban/epics/epic-02/story-03-additional-workflows-and-examples/T09-ipw-full-delivery-chain-idf-rw-fr123.md"
+      ],
+      "surface": "task_doc",
+      "touched": true
+    }
+  }
+}

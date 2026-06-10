@@ -14,15 +14,17 @@ housekeeping_policy: keep
 **Submitted By:** User — workflow chaining ergonomics  
 **Priority:** HIGH  
 **Severity:** MEDIUM  
-**Status:** OPEN (intake banked @ v0.2.3.9+1)
+**Status:** SUPERSEDED BY [FR-124](FR-124-meta-workflow-orchestration-composite-workflow-chains.md) (2026-06-10 — scope pivot: meta-workflow orchestration replaces `IPW --rw` chain flag)
 
-**Implementing Task:** [E02:S03:T09](../epics/epic-02/story-03-additional-workflows-and-examples/T09-ipw-full-delivery-chain-idf-rw-fr123.md)
+**Implementing Task:** [E02:S03:T09](../epics/epic-02/story-03-additional-workflows-and-examples/T09-ipw-full-delivery-chain-idf-rw-fr123.md) — **delivery continues under FR-124**
+
+**Superseded by:** [FR-124 — Meta-workflow orchestration](FR-124-meta-workflow-orchestration-composite-workflow-chains.md)
 
 ---
 
 ## Summary
 
-Add an optional **`--rw`** flag to **IPW** that, after `IPW COMPLETE`, chains **IDW** then **local-complete RW** for the same host task — a single meta-workflow for plan → implement → release, mirroring the existing **`IDW … --rw`** pattern at the planning entry point.
+~~Add an optional **`--rw`** flag to **IPW**~~ **Withdrawn.** Original intent (single-trigger plan → implement → release) is delivered by **[FR-124](FR-124-meta-workflow-orchestration-composite-workflow-chains.md)** meta-workflow orchestration (`MWF`), preserving encapsulated IPW / IDW / RW workflows.
 
 ---
 

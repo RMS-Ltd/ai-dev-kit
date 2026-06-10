@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Board
 
-**Last Updated:** 2026-06-10 (RW: E02:S16:T02)
-**Version:** v0.2.16.2+6
+**Last Updated:** 2026-06-10 (RW: E02:S03:T09)
+**Version:** v0.2.3.9+2
 
 **Active board contract:** **Sole active MoSCOW board** ([ADR-018](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/architecture/standards-and-adrs/ADR-018-single-kanban-board-consolidation.md)). Rows are **live work** (TODO / IN PROGRESS / OPEN / WAITING / PERPETUAL) plus filed **Could Have** backlog. **Verification (V)** band holds task-shipped / FBU-open items (`⏳ WAITING`). Remove **terminal** rows and archive prose (use [`kanban-completed.md`](kanban-completed.md) / [`intake-completed.md`](intake-completed.md)).
 
@@ -125,7 +125,7 @@ housekeeping_policy: keep
 
 - **E21:S07:T02** – Russian (ru) translation files - 📋 TODO (LOW, RTL / extended locales) | [Task](epics/epic-21/story-07-rtl-and-extended-locales/T02-russian-ru-translation-files.md) | [Story](epics/epic-21/story-07-rtl-and-extended-locales.md) | [FR-006](fr-br/FR-006-localization-language-selection-uk-us-english.md) | —No IPP— | Last modified: 2026-06-07 11:51 UTC
 
-- **E02:S03:T09** – IPW full delivery chain (`IPW … --rw` → IPW → IDW → RW) (FR-123) - 🔄 IN PROGRESS (HIGH, **v0.2.3.9+1** intake banked) | [Task](epics/epic-02/story-03-additional-workflows-and-examples/T09-ipw-full-delivery-chain-idf-rw-fr123.md) | [FR-123](fr-br/FR-123-ipw-full-delivery-chain-idf-rw.md) | —No IPP— | Last modified: 2026-06-10 10:40 UTC
+- **E02:S03:T09** – Meta-workflow orchestration / MWF (`delivery` = IPW → IDW → RW) (FR-124) - 🔄 IN PROGRESS (HIGH, **v0.2.3.9+2** intake + IPP) | [Task](epics/epic-02/story-03-additional-workflows-and-examples/T09-ipw-full-delivery-chain-idf-rw-fr123.md) | [FR-124](fr-br/FR-124-meta-workflow-orchestration-composite-workflow-chains.md) | [—IPP—](../../implementation-cycles/IPP-E02S03T09-meta-workflow-orchestration-mwf-fr124.md) | Last modified: 2026-06-10 12:47 UTC
 
 - **E02:S14:T02** – Validate fresh install steps for each path - 📋 TODO (HIGH, Epic 2 workflow-mgt install evaluation) | [Task](epics/epic-02/story-14-workflow-management-package-installation-evaluation/T02-validate-fresh-install-steps-for-each-path.md) | [Story](epics/epic-02/story-14-workflow-management-package-installation-evaluation.md) | —No IPP— | Last modified: 2026-06-05 13:08 UTC
 
@@ -139,7 +139,7 @@ housekeeping_policy: keep
 
 - **E04:S14:T11** – UKW gap discovery — unfiled FR/BR (FR-043) - 📋 TODO (HIGH, re-housed from E02:S16:T14) | [Task](epics/epic-04/story-14-kanban-framework-maintenance/T11-ukw-gap-discovery-unfiled-fr-br-fr043.md) | [FR-043](fr-br/FR-043-ukw-gap-discovery-todo-tasks-and-unfiled-fr-br.md) | —No IPP— | Last modified: 2026-05-30 13:36 UTC
 
-- **E07:S01:T10** – FR-039: AI Dev Kit Project Review and Legacy Clean-up - 📋 TODO (LOW, hygiene task; historical FR-059 T10 reconciled) | [Task](epics/epic-07/story-01-codebase-maintenance-tasks/T10-project-root-hygiene-and-legacy-docs-rationalization.md) | [FR-039](fr-br/FR-039-ai-dev-kit-project-review-and-legacy-clean-up.md) | —No IPP— | Last modified: 2026-06-04 12:15 UTC
+- **E07:S01:T10** – FR-039: AI Dev Kit Project Review and Legacy Clean-up - 📋 TODO (LOW, hygiene task; historical FR-059 T10 reconciled) | [Task](epics/epic-07/story-01-codebase-maintenance-tasks/T10-project-root-hygiene-and-legacy-docs-rationalization.md) | [FR-039](fr-br/FR-039-ai-dev-kit-project-review-and-legacy-clean-up.md) | [—IPP—](../../implementation-cycles/IPP-E07S01T10-supersession-reconciliation.md) | Last modified: 2026-06-04 12:15 UTC
 
 
 ### Ongoing (O) - Perpetual Tasks
