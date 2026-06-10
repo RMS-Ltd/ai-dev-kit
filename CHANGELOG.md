@@ -11,8 +11,8 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
-## [0.6.9.27+2] - 10-06-26
+## [0.2.1.31+1] - 10-06-26
 
-E06:S09:T27 — Fix v3.2 fingerprint validator import path (`parents[5]`). SemVer **v0.4.1133+2**.
+E02:S01:T31 — GitHub Actions run title external SemVer (UXR-027). RW commit subject uses SemVer; internal version in body. SemVer **v0.4.1134+1**.
 
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.6.9.27+2.md)
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.1.31+1.md)

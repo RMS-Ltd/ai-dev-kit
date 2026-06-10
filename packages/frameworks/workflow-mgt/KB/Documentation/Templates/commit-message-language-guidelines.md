@@ -120,14 +120,21 @@ Is this a bug fix?
 
 ## Commit Message Format
 
-**Standard Format:**
+**Standard Format (UXR-027):** Subject uses **external SemVer**; internal `RC.EPIC.STORY.TASK+BUILD` in body for forensic traceability (GitHub Actions run titles follow the subject on push).
+
 ```
-Release v{VERSION}: {Summary}
+Release v{SEMVER}: {Summary}
+
+Internal: v{INTERNAL}
+
+Epic: {epic} | Story: {story} | Task: {task}
 
 - {Change 1}
 - {Change 2}
 - {Change 3}
 ```
+
+Build via `packages/frameworks/workflow-mgt/scripts/version/build_rw_commit_message.py` at RW Step 10.
 
 **With Verification Status:**
 ```

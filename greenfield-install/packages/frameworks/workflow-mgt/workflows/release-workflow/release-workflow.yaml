@@ -191,7 +191,8 @@ steps:
       - step-9.5
       - step-9.6
     config:
-      message_template: "Release v{version}: {summary}"
+      message_template: "Release v{semver_version}: {summary}"
+      body_template: "Internal: v{internal_version}\n\nEpic: {epic} | Story: {story} | Task: {task}"
 
   - id: step-11
     name: Create Git Tag

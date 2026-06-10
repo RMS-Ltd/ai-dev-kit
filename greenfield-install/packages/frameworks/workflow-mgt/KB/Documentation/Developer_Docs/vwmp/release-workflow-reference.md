@@ -894,14 +894,19 @@ config:
 0.21.0.2 - 🐞 Fix: VWMP designer renders Release Workflow
 ```
 
-**Custom template example:**
+**Custom template example (UXR-027 — SemVer subject, internal body):**
 ```yaml
 config:
-  message_template: "Release v{version}: {summary}"
+  message_template: "Release v{semver_version}: {summary}"
+  body_template: "Internal: v{internal_version}\n\nEpic: {epic} | Story: {story} | Task: {task}"
 ```
 **Result:**
 ```
-Release v0.21.0.2: 🐞 Fix: VWMP designer renders Release Workflow
+Release v0.4.802+1: 🐞 Fix: VWMP designer renders Release Workflow
+
+Internal: v0.21.0.2+1
+
+Epic: 21 | Story: 0 | Task: 2
 ```
 
 #### Data Sources

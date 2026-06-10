@@ -297,10 +297,28 @@ python "packages/frameworks/workflow-mgt/scripts/validation/validate_actions_ci_
 
 ### Step 10 — Commit
 
-```bash
-git commit -m "Release v{version}: {summary}
+**Subject uses external SemVer** (GitHub Actions run title on push). **Body** retains internal traceability (UXR-027).
 
-Epic: {epic} | Story: {story} | Task: {task}"
+```bash
+python "packages/frameworks/workflow-mgt/scripts/version/build_rw_commit_message.py" \
+  --internal-version "{internal_version}" \
+  --summary "{summary}" \
+  --epic {epic} --story {story} --task {task}
+
+git commit -m "$(python "packages/frameworks/workflow-mgt/scripts/version/build_rw_commit_message.py" \
+  --internal-version "{internal_version}" \
+  --summary "{summary}" \
+  --epic {epic} --story {story} --task {task})"
+```
+
+Equivalent shape:
+
+```text
+Release v{semver}: {summary}
+
+Internal: v{internal}
+
+Epic: {epic} | Story: {story} | Task: {task}
 ```
 
 ### Step 11 — Create Git Tag (tag authority — FR-122 F9)

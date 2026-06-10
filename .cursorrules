@@ -410,7 +410,7 @@ For each step, follow this pattern:
    - **CQG runs at IDW Phase 6b**, not RW — Actions CI parity (T15) and local CodeQL (T17) are separate surfaces.
    - **Purpose (UXR-024 + operator policy):** Default RW **never pushes**; local-complete releases must still be **push-ready** so operator batch push or `RW --push` does not ship red CI to `dev`/`main`.
 
-10. **Commit Changes** - Create commit with message: `Release v{version}: {summary}\n\nEpic: {epic} | Story: {story} | Task: {task}`
+10. **Commit Changes** - Build commit via `build_rw_commit_message.py` (or equivalent): **subject** `Release v{semver}: {summary}` (external SemVer — GitHub Actions run title on push); **body** `Internal: v{internal}\n\nEpic: {epic} | Story: {story} | Task: {task}`
 
 11. **Create Git Tag** - **Tag authority hard gate (FR-122 F9 / Wave 3):**
  - **🚨 FORBIDDEN (BR-097):** Never `git tag -f`, force-push release tags, or **raw lightweight `git tag v…`** outside `create_rw_tags()`. If tag exists on remote → **RW ABORTED**; bump BUILD and re-RW.
