@@ -49,10 +49,10 @@ def smoke_data():
 def test_c1_smoke_fixture_exists(smoke_data):
     """C1: Fixture defines nine rollout locales and canonical inputs."""
     assert smoke_data["fixture"]["date"] == "2026-06-07"
-    assert len(smoke_data["rollout_locales"]) == 9
+    assert len(smoke_data["rollout_locales"]) == 10
 
 
-@pytest.mark.parametrize("tag", ["es", "fr", "de", "pt", "zh-CN", "zh-TW", "ja", "ru", "ar", "en-GB", "en-US"])
+@pytest.mark.parametrize("tag", ["es", "fr", "de", "pt-BR", "pt-PT", "zh-CN", "zh-TW", "ja", "ru", "ar", "en-GB", "en-US"])
 @pytest.mark.skipif(not _babel_installed(), reason="Babel not installed")
 def test_c2_smoke_non_empty(fmt, tag):
     """C2: format_* returns non-empty strings for rollout + baseline locales."""

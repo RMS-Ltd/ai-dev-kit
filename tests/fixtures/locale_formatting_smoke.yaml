@@ -2,7 +2,7 @@ fixture:
   date: "2026-06-07"
   time: "14:30"
   amount: 1234.56
-rollout_locales: [es, fr, de, pt, zh-CN, zh-TW, ja, ru, ar]
+rollout_locales: [es, fr, de, pt-BR, pt-PT, zh-CN, zh-TW, ja, ru, ar]
 structural_checks:
   de:
     number_contains: ","

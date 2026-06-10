@@ -1,0 +1,12 @@
+{
+  "report_type": "rw_step7_release",
+  "release_scope": "E21:S04:T04",
+  "version": "v0.21.4.4+1",
+  "evidence_mode": "rw_step_7",
+  "rows": {
+    "E21:S04:T04": {
+      "allowed": true,
+      "reason": "RW E21:S04:T04 --art COMPLETE v0.21.4.4+1 — moved C-band TODO to Should Have SHIPPED; stamp from task doc Last updated"
+    }
+  }
+}

@@ -48,7 +48,8 @@ FR006_SUPPORTED_LOCALES: Tuple[str, ...] = (
     "zh-CN",
     "zh-TW",
     "ja",
-    "pt",
+    "pt-BR",
+    "pt-PT",
     "ru",
     "ar",
 )
@@ -113,6 +114,10 @@ def map_to_supported_locale(
         if region in ("TW", "HANT"):
             return "zh-TW" if "zh-TW" in registry_set else DEFAULT_LANGUAGE
         return "zh-CN" if "zh-CN" in registry_set else DEFAULT_LANGUAGE
+    if language == "pt":
+        if region == "PT":
+            return "pt-PT" if "pt-PT" in registry_set else DEFAULT_LANGUAGE
+        return "pt-BR" if "pt-BR" in registry_set else DEFAULT_LANGUAGE
     for candidate in registry:
         if candidate.split("-", 1)[0] == language:
             return candidate

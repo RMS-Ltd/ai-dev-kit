@@ -11,8 +11,8 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
-## [0.8.3.19+1] - 10-06-26
+## [0.21.4.4+1] - 10-06-26
 
-E08:S03:T19 — BR-103: workflow-scripts pytest false-green fixed (assert-based stamp-evidence tests + PytestReturnNotNoneWarning guard). SemVer **v0.4.1127+1**.
+E21:S04:T04 — Cultural content policy, loanword glossary, directional-icon audit, pt-BR/pt-PT locale split, neutral English installer examples. SemVer **v0.4.1128+1**.
 
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.8.3.19+1.md)
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.21.4.4+1.md)

@@ -6,7 +6,7 @@ expires_at: null
 housekeeping_policy: keep
 ---
 
-# Epic 21, Story 5, Task 4: Portuguese (pt) translation files
+# Epic 21, Story 5, Task 4: Portuguese (pt-BR / pt-PT) translation files
 
 **Task ID:** E21:S05:T04  
 **Status:** TODO  
@@ -21,7 +21,7 @@ housekeeping_policy: keep
 
 ## Scope
 
-Create and review Portuguese (`pt` / `locales/pt/`) translation files for priority user-facing framework content.
+Create and review Portuguese translation files for **`pt-BR`** and **`pt-PT`** locale trees (split @ E21:S04:T04; generic `pt` retired).
 
 ---
 
@@ -35,14 +35,14 @@ Create and review Portuguese (`pt` / `locales/pt/`) translation files for priori
 
 ## Deliverable
 
-- `locales/pt/` translation files populated for priority strings
-- Completeness report for Portuguese locale
+- `locales/pt-BR/` and `locales/pt-PT/` translation files populated for priority strings
+- Completeness report per variant
 
 ---
 
 ## Acceptance Criteria
 
-- [ ] Portuguese translation files created under `locales/pt/`
+- [ ] Portuguese translation files created under `locales/pt-BR/` and `locales/pt-PT/`
 - [ ] Setup prompts, README, and core guides translated (priority tier)
 - [ ] Missing keys fall back to English per S01 fallback chain
 - [ ] Review completed (native or professional review)

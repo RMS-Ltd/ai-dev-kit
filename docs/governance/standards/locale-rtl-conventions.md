@@ -71,7 +71,7 @@ Use when implementing or reviewing RTL-facing work (from [locale-cultural-requir
 1. **Mirror** — navigation, wizard steps, table alignment for web/UI surfaces (portal deferred).
 2. **Digits** — Eastern Arabic digits optional; formatting owned by E21:S04:T05.
 3. **Punctuation** — bidirectional text in translated strings; preserve `{{placeholders}}`.
-4. **Icons** — directional chevrons and progress indicators; audit checklist in E21:S04:T04; implementation hooks here.
+4. **Icons** — directional chevrons and progress indicators; **completed audit:** [locale-directional-icon-audit.md](locale-directional-icon-audit.md) (E21:S04:T04); implementation hooks here.
 5. **Registry** — call `is_rtl_locale` / `text_direction_for_locale` instead of hard-coding `ar`.
 
 ---

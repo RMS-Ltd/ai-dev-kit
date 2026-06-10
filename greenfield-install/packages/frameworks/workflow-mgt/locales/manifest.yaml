@@ -13,7 +13,8 @@ supported_locales:
 - zh-CN
 - zh-TW
 - ja
-- pt
+- pt-BR
+- pt-PT
 - ru
 - ar
 locales:
@@ -89,7 +90,16 @@ locales:
       cli: keys/cli.yaml
       errors: keys/errors.yaml
       installer: keys/installer.yaml
-  pt:
+  pt-BR:
+    scaffolds:
+      changelog_stub: scaffolds/changelog_stub.md
+      version_scaffold_decline: scaffolds/version_scaffold_decline.txt
+      changelog_scaffold_decline: scaffolds/changelog_scaffold_decline.txt
+    keys:
+      cli: keys/cli.yaml
+      errors: keys/errors.yaml
+      installer: keys/installer.yaml
+  pt-PT:
     scaffolds:
       changelog_stub: scaffolds/changelog_stub.md
       version_scaffold_decline: scaffolds/version_scaffold_decline.txt

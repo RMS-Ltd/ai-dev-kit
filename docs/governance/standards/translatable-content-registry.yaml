@@ -20,7 +20,11 @@ scaffold_locales:
     owner_story: E21:S05:T03
     scaffold_status: complete
     linguistic_status: pending
-  pt:
+  pt-BR:
+    owner_story: E21:S05:T04
+    scaffold_status: complete
+    linguistic_status: pending
+  pt-PT:
     owner_story: E21:S05:T04
     scaffold_status: complete
     linguistic_status: pending

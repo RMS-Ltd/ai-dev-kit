@@ -29,7 +29,8 @@ DEFAULT_TARGETS = (
     "zh-CN",
     "zh-TW",
     "ja",
-    "pt",
+    "pt-BR",
+    "pt-PT",
     "ru",
     "ar",
 )

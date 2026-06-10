@@ -10,7 +10,7 @@ CULTURAL_DOC = (
 )
 ROLLOUT_MATRIX = REPO_ROOT / "docs" / "governance" / "standards" / "locale-rollout-matrix.md"
 
-LOCALE_CODES = ("es", "fr", "de", "pt", "zh-CN", "zh-TW", "ja", "ru", "ar")
+LOCALE_CODES = ("es", "fr", "de", "pt-BR", "pt-PT", "zh-CN", "zh-TW", "ja", "ru", "ar")
 
 REQUIRED_SECTIONS = (
     "## Research method",

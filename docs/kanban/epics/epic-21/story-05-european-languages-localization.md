@@ -38,7 +38,7 @@ Populate `locales/{lang}/` for Spanish, French, German, and Portuguese with fram
   - Task: [`T02-french-fr-translation-files`](story-05-european-languages-localization/T02-french-fr-translation-files.md)
 - [ ] **E21:S05:T03 – German (de) translation files** - TODO
   - Task: [`T03-german-de-translation-files`](story-05-european-languages-localization/T03-german-de-translation-files.md)
-- [ ] **E21:S05:T04 – Portuguese (pt) translation files** - TODO
+- [ ] **E21:S05:T04 – Portuguese (pt-BR / pt-PT) translation files** - TODO
   - Task: [`T04-portuguese-pt-translation-files`](story-05-european-languages-localization/T04-portuguese-pt-translation-files.md)
 
 ---

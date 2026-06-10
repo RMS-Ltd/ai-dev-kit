@@ -26,7 +26,7 @@ WF_LOCALES = REPO_ROOT / "packages" / "frameworks" / "workflow-mgt" / "locales"
 KANBAN_LOCALES = REPO_ROOT / "packages" / "frameworks" / "kanban" / "locales"
 FRAMEWORKS_ROOT = REPO_ROOT / "packages" / "frameworks"
 
-SCAFFOLD_LOCALES = ("es", "fr", "de", "zh-CN", "zh-TW", "ja", "pt", "ru", "ar")
+SCAFFOLD_LOCALES = ("es", "fr", "de", "zh-CN", "zh-TW", "ja", "pt-BR", "pt-PT", "ru", "ar")
 INTERIM_SCAFFOLD_LOCALES = tuple(
     locale for locale in SCAFFOLD_LOCALES if locale not in ("es", "zh-CN")
 )

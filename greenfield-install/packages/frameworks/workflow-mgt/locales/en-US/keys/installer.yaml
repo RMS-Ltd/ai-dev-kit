@@ -12,7 +12,7 @@ keys:
     kit checkout:'
   installer.deps.editable_cmd: '  pip install -e ./vendor/ai-dev-kit'
   installer.deps.editable_alt: '  # or: pip install -e /path/to/ai-dev-kit'
-  installer.deps.greenfield_ref: 'Greenfield / book path: see INSTALL_IN_YOUR_PROJECT.md'
+  installer.deps.greenfield_ref: 'Greenfield / adopter project path: see INSTALL_IN_YOUR_PROJECT.md'
   installer.deps.greenfield_step: '"Installer venv dependencies" — install deps before
     Step 3 (RW install).'
   installer.deps.preflight_cmd: 'Preflight only: python install_release_workflow.py
@@ -31,7 +31,7 @@ keys:
   installer.validation.suggestion_line: '    - {{suggestion}}'
   installer.validation.fresh_kanban_default: '  ℹ️  No matching files yet (normal
     after fresh kanban). Accepting installer-aligned default.'
-  installer.validation.forward_looking: '  ℹ️  Forward-looking pattern (book/adopter
+  installer.validation.forward_looking: '  ℹ️  Forward-looking pattern (adopter project
     convention). Accepting before story files exist.'
   installer.validation.zero_match_reject: '  ❌ Cannot persist a zero-match pattern
     while kanban files exist. Choose a suggested pattern or enter one that matches
@@ -68,7 +68,7 @@ keys:
   installer.wizard.kanban_heading: '📊 Kanban Integration:'
   installer.wizard.kanban_root: Kanban root directory
   installer.wizard.detected_lowercase_layout: '  ℹ️  Detected lowercase fresh kanban
-    layout (epics/epic-{n}/epic-{n}.md; book story-{story:03d}-*.md).'
+    layout (epics/epic-{n}/epic-{n}.md; adopter story-{story:03d}-*.md).'
   installer.wizard.detected_fresh_capitalized: '  ℹ️  Detected fresh kanban install
     layout (epics/Epic-{n}/Epic-{n}.md, Story-{story:03d}-*.md).'
   installer.wizard.detected_fresh_lowercase: '  ℹ️  Detected fresh kanban install
@@ -76,7 +76,7 @@ keys:
   installer.wizard.detected_existing: '  ℹ️  Detected existing kanban files; using
     best-matching pattern defaults.'
   installer.wizard.padding_help: '  ℹ️  Padding: {story:03d} = three-digit story files
-    (book T03); {story:02d} / {epic:02d} = ADR-015 two-digit segments.'
+    (example story-003); {story:02d} / {epic:02d} = ADR-015 two-digit segments.'
   installer.wizard.task_matches: '  ℹ️  Task pattern default matches {{count}} file(s).
     Sample:'
   installer.wizard.task_default_future: '  ℹ️  Task pattern default (for future task

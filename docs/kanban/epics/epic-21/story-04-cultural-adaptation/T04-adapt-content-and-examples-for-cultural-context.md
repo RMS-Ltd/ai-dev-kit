@@ -9,13 +9,15 @@ housekeeping_policy: keep
 # Epic 21, Story 4, Task 4: Adapt content and examples for cultural context
 
 **Task ID:** E21:S04:T04  
-**Status:** TODO  
+**Status:** COMPLETE  
 **Priority:** MEDIUM  
-**Last updated:** 2026-06-09 (scope expanded — absorbs superseded E21:S04:T02)  
-**Version:** v0.21.4.4+0
+**Last updated:** 2026-06-10 (RW **v0.21.4.4+1** — cultural content adaptation)  
+**Version:** v0.21.4.4+1
+
+✅ COMPLETE (v0.21.4.4+1)
 **Code:** E21S04T04
 
-**Planning:** [IPP-E21S04T02-supersede-merge-into-t04.md](../../../../implementation-cycles/IPP-E21S04T02-supersede-merge-into-t04.md) (scope merge from T02)  
+**Planning:** [IPP-E21S04T04-cultural-content-adaptation.md](../../../../implementation-cycles/IPP-E21S04T04-cultural-content-adaptation.md) · [IPP-E21S04T02-supersede-merge-into-t04.md](../../../../implementation-cycles/IPP-E21S04T02-supersede-merge-into-t04.md) (T02 scope merge)  
 **Supersedes scope from:** [E21:S04:T02](T02-adapt-uiux-for-different-cultures-examples-imagery.md) (SUPERSEDED)
 
 ---
@@ -45,6 +47,10 @@ Adapt content and examples for cultural context across FR-006 target locales.
 ## Input
 
 - [Cultural requirements research](T01-research-cultural-requirements-for-target-locales.md) · [locale-cultural-requirements.md](../../../../governance/standards/locale-cultural-requirements.md)
+- [IPP-E21S04T04-cultural-content-adaptation.md](../../../../implementation-cycles/IPP-E21S04T04-cultural-content-adaptation.md)
+- [locale-cultural-content-policy.md](../../../../governance/standards/locale-cultural-content-policy.md)
+- [locale-loanword-glossary.md](../../../../governance/standards/locale-loanword-glossary.md)
+- [locale-directional-icon-audit.md](../../../../governance/standards/locale-directional-icon-audit.md)
 - [Superseded T02](T02-adapt-uiux-for-different-cultures-examples-imagery.md) — merged scope reference
 - Framework content (locale YAML, templates, installer strings)
 
@@ -57,22 +63,22 @@ Adapt content and examples for cultural context across FR-006 target locales.
 - Imagery/iconography policy and directional-icon audit checklist (from T02 merge)
 - String-length guidance for long-locale installer copy (`de`, `fr`, `ja`)
 - Glossary table for loanwords per locale
-- `pt` scaffold variant resolution (`pt-BR` vs `pt-PT`)
+- `pt-BR` / `pt-PT` scaffold variant resolution (generic `pt` retired)
 - Content adaptations documented
 
 ---
 
 ## Acceptance Criteria
 
-- [ ] Content adapted for cultural context
-- [ ] Examples culturally appropriate (neutral RW/git/kanban metaphors)
-- [ ] Imagery/iconography policy documented for CLI/installer locale keys
-- [ ] String-length expansion guidance documented for `de`, `fr`, `ja`
-- [ ] Directional-icon audit checklist completed (RTL mirroring impl verified under T03)
-- [ ] Glossary table for loanwords per locale
-- [ ] `pt` variant resolved before S05 translation ship
-- [ ] Cultural sensitivity ensured
-- [ ] Content adaptations tested (structural or E2E per T06 handoff)
+- [x] Content adapted for cultural context
+- [x] Examples culturally appropriate (neutral RW/git/kanban metaphors)
+- [x] Imagery/iconography policy documented for CLI/installer locale keys
+- [x] String-length expansion guidance documented for `de`, `fr`, `ja`
+- [x] Directional-icon audit checklist completed (RTL mirroring impl verified under T03)
+- [x] Glossary table for loanwords per locale
+- [x] `pt` variant resolved before S05 translation ship (`pt-BR` + `pt-PT`)
+- [x] Cultural sensitivity ensured
+- [x] Content adaptations tested (structural; E2E handoff to T06)
 
 ---
 
@@ -97,6 +103,16 @@ RW -k E21:S04:T04 --art --dpz
 ## Version Anchor
 
 **Forensic Marker Format:** `✅ COMPLETE (vRC.E.S.T+B)`
+
+---
+
+## References
+
+- [IPP-E21S04T04-cultural-content-adaptation.md](../../../../implementation-cycles/IPP-E21S04T04-cultural-content-adaptation.md)
+- [locale-cultural-content-policy.md](../../../../governance/standards/locale-cultural-content-policy.md)
+- [locale-loanword-glossary.md](../../../../governance/standards/locale-loanword-glossary.md)
+- [locale-directional-icon-audit.md](../../../../governance/standards/locale-directional-icon-audit.md)
+- [ADR-024](../../../../architecture/standards-and-adrs/ADR-024-i18n-framework-strategy.md)
 
 ---
 

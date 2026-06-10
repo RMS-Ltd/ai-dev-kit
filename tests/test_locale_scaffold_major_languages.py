@@ -15,7 +15,7 @@ REGISTRY = (
     REPO_ROOT / "docs" / "governance" / "standards" / "translatable-content-registry.yaml"
 )
 
-SCAFFOLD_LOCALES = ("es", "fr", "de", "zh-CN", "zh-TW", "ja", "pt", "ru", "ar")
+SCAFFOLD_LOCALES = ("es", "fr", "de", "zh-CN", "zh-TW", "ja", "pt-BR", "pt-PT", "ru", "ar")
 SOURCE_LOCALE = "en-GB"
 
 

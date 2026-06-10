@@ -24,7 +24,8 @@ LOCALE_FORMAT_PROFILES: Dict[str, Dict[str, str]] = {
     "zh-CN": {"currency": "CNY", "date_style": "medium", "time_style": "short"},
     "zh-TW": {"currency": "TWD", "date_style": "medium", "time_style": "short"},
     "ja": {"currency": "JPY", "date_style": "medium", "time_style": "short"},
-    "pt": {"currency": "EUR", "date_style": "medium", "time_style": "short"},
+    "pt-BR": {"currency": "BRL", "date_style": "medium", "time_style": "short"},
+    "pt-PT": {"currency": "EUR", "date_style": "medium", "time_style": "short"},
     "ru": {"currency": "RUB", "date_style": "medium", "time_style": "short"},
     "ar": {"currency": "SAR", "date_style": "medium", "time_style": "short"},
 }

@@ -34,7 +34,8 @@ All nine target locales have on-disk trees in **kanban** and **workflow-mgt**, r
 | Spanish | `es` | E21:S05:T01 | Complete (scaffold); linguistic @ **v0.21.5.1+1** |
 | French | `fr` | E21:S05:T02 | Complete |
 | German | `de` | E21:S05:T03 | Complete |
-| Portuguese | `pt` | E21:S05:T04 | Complete |
+| Portuguese (Brazil) | `pt-BR` | E21:S05:T04 | Complete |
+| Portuguese (Portugal) | `pt-PT` | E21:S05:T04 | Complete |
 | Chinese Simplified | `zh-CN` | E21:S06:T01 | Complete (scaffold); linguistic @ **v0.21.6.1+1** |
 | Chinese Traditional | `zh-TW` | E21:S06:T02 | Complete |
 | Japanese | `ja` | E21:S06:T03 | Complete |

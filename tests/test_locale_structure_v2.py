@@ -13,7 +13,7 @@ CONVENTIONS = (
 )
 
 PHYSICAL_LOCALES = ("en-GB", "en-US")
-SCAFFOLD_LOCALES = ("es", "fr", "de", "zh-CN", "zh-TW", "ja", "pt", "ru", "ar")
+SCAFFOLD_LOCALES = ("es", "fr", "de", "zh-CN", "zh-TW", "ja", "pt-BR", "pt-PT", "ru", "ar")
 ALL_ON_DISK_LOCALES = PHYSICAL_LOCALES + SCAFFOLD_LOCALES
 KEY_FILES = ("cli.yaml", "errors.yaml")
 WF_KEY_FILES = ("cli.yaml", "errors.yaml", "installer.yaml")
@@ -26,7 +26,8 @@ FR006_SUPPORTED = (
     "zh-CN",
     "zh-TW",
     "ja",
-    "pt",
+    "pt-BR",
+    "pt-PT",
     "ru",
     "ar",
 )

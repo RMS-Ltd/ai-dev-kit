@@ -54,13 +54,13 @@ packages/frameworks/{package}/locales/
 | `scaffolds/` | No | Yes | RW installer scaffold fragments |
 | `keys/` | Yes | Yes | YAML key catalogs for short strings |
 
-**Physical locale dirs:** `en-GB`, `en-US`, plus nine scaffold locales (`es`, `fr`, `de`, `zh-CN`, `zh-TW`, `ja`, `pt`, `ru`, `ar`) per [locale-rollout-matrix.md](locale-rollout-matrix.md) (E21:S03:T02).
+**Physical locale dirs:** `en-GB`, `en-US`, plus ten scaffold locales (`es`, `fr`, `de`, `zh-CN`, `zh-TW`, `ja`, `pt-BR`, `pt-PT`, `ru`, `ar`) per [locale-rollout-matrix.md](locale-rollout-matrix.md) (E21:S03:T02; pt split @ E21:S04:T04).
 
 ### 2.2 Locale codes (BCP 47)
 
 Use tags from FR-006 Phase 2 registry:
 
-`en-GB`, `en-US`, `es`, `fr`, `de`, `zh-CN`, `zh-TW`, `ja`, `pt`, `ru`, `ar`
+`en-GB`, `en-US`, `es`, `fr`, `de`, `zh-CN`, `zh-TW`, `ja`, `pt-BR`, `pt-PT`, `ru`, `ar`
 
 Hyphenated region subtags (`zh-CN`, `zh-TW`) are directory names as shown.
 

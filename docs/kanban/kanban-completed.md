@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Completed Tasks
 
-**Last Updated:** 2026-06-10 (RW E08:S03:T19 — BR-103)
-**Version:** v0.8.3.19+1
+**Last Updated:** 2026-06-10 (RW E21:S04:T04 — cultural content adaptation)
+**Version:** v0.21.4.4+1
 
 > **For MoSCOW prioritized tasks, see:** [`kboard.md`](kboard.md)  
 > **For completed FR/BR/UXR intake items, see:** [`intake-completed.md`](intake-completed.md)
@@ -19,6 +19,10 @@ housekeeping_policy: keep
 ---
 
 ## 20 Most Recently Completed Tasks
+
+#### **RW (2026-06-10)** — E21:S04:T04 @ **v0.21.4.4+1** (FR-006 Phase 2 — cultural content adaptation)
+
+- **[E21:S04:T04](epics/epic-21/story-04-cultural-adaptation/T04-adapt-content-and-examples-for-cultural-context.md)** — Cultural content policy, loanword glossary, directional-icon audit; pt-BR/pt-PT locale split; neutral English installer examples. **Completed:** `2026-06-10T20:30:00Z` | **Version:** `v0.21.4.4+1` | **Agent:** `RW E21:S04:T04 --art` | [FR-006](fr-br/FR-006-localization-language-selection-uk-us-english.md) | [—IPP—](../../implementation-cycles/IPP-E21S04T04-cultural-content-adaptation.md)
 
 #### **RW (2026-06-10)** — E08:S03:T19 @ **v0.8.3.19+1** (BR-103 — workflow-scripts pytest false-green)
 
