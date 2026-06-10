@@ -9,10 +9,11 @@ housekeeping_policy: keep
 # Epic 21, Story 6, Task 1: Chinese Simplified (zh-CN) translation files
 
 **Task ID:** E21:S06:T01  
-**Status:** TODO  
+**Status:** COMPLETE  
 **Priority:** LOW  
-**Last updated:** 2026-06-07 (v0.21.6.1+0 — RW -k kanban-init doc filing)
-**Version:** v0.21.6.1+0
+**Last updated:** 2026-06-10 (v0.21.6.1+1 — RW E21:S06:T01 zh-CN translation delivery)  
+**Completed:** 2026-06-10  
+**Version:** v0.21.6.1+1
 **Code:** E21S06T01
 
 **Associated FR:** [FR-006](../../../fr-br/FR-006-localization-language-selection-uk-us-english.md) (Phase 2)
@@ -30,6 +31,7 @@ Create and review Chinese Simplified (`zh-CN` / `locales/zh-CN/`) translation fi
 - Translation keys from E21:S03:T01
 - Locale structure from E21:S01
 - Rollout matrix from E21:S03:T02
+- **IPP:** [`IPP-E21S06T01-chinese-simplified-zh-cn-translation-files.md`](../../../../implementation-cycles/IPP-E21S06T01-chinese-simplified-zh-cn-translation-files.md) (E21:S06:T01)
 
 ---
 
@@ -42,11 +44,11 @@ Create and review Chinese Simplified (`zh-CN` / `locales/zh-CN/`) translation fi
 
 ## Acceptance Criteria
 
-- [ ] zh-CN translation files created under `locales/zh-CN/`
-- [ ] Setup prompts, README, and core guides translated (priority tier)
-- [ ] Missing keys fall back to English per S01 fallback chain
-- [ ] Review completed (native or professional review)
-- [ ] Completeness tracked in E21:S03:T06 tooling
+- [x] zh-CN translation files created under `locales/zh-CN/`
+- [x] Setup prompts, README, and core guides translated (priority tier)
+- [x] Missing keys fall back to English per S01 fallback chain
+- [ ] Review completed (native or professional review) — **professional zh-CN review pending** (maintainer delivery @ v0.21.6.1+1)
+- [x] Completeness tracked in E21:S03:T06 tooling
 
 ---
 
@@ -70,4 +72,24 @@ RW -k E21:S06:T01 --art --dpz
 
 **Forensic Marker Format:** `✅ COMPLETE (vRC.E.S.T+B)`
 
+✅ COMPLETE (v0.21.6.1+1)
+
 **Source Story:** `docs/kanban/epics/epic-21/story-06-cjk-languages-localization.md`
+
+---
+
+## References
+
+- [IPP-E21S06T01-chinese-simplified-zh-cn-translation-files.md](../../../../implementation-cycles/IPP-E21S06T01-chinese-simplified-zh-cn-translation-files.md) — consolidated implementation plan (FR-042)
+- [locale-cultural-requirements.md](../../../../governance/standards/locale-cultural-requirements.md) § Chinese Simplified (zh-CN)
+- [IPP-E21S05T01-spanish-es-translation-files.md](../../../../implementation-cycles/IPP-E21S05T01-spanish-es-translation-files.md) — delivery pattern (es @ v0.21.5.1+1)
+
+---
+
+## Review notes
+
+**Glossary (maintainer):** 工作流 (workflow), 看板 (Kanban brand).
+
+**Maintainer review:** OK for scaffold delivery — concise Simplified Chinese, imperative CLI tone, placeholders preserved.
+
+**Professional zh-CN review:** **Pending** for P0/P1 installer/CLI strings per cultural matrix. Changelog uses "Attempted translation" until confirmed.

@@ -93,6 +93,20 @@ def test_l4_es_uses_spanish_catalog_not_en_gb_fallback():
         assert "Seleccione" in es
 
 
+def test_l4b_zh_cn_uses_simplified_chinese_catalog_not_en_gb_fallback():
+    """L4b: zh-CN resolves Simplified Chinese catalog post E21:S06:T01."""
+    import re
+
+    loc = _load_loc()
+    with tempfile.TemporaryDirectory() as tmp:
+        root = Path(tmp)
+        _write_config(root, "zh-CN")
+        gb = loc.locale_message(root, "cli.prompt.language_choice", language="en-GB")
+        zh = loc.locale_message(root, "cli.prompt.language_choice", language="zh-CN")
+        assert zh != gb
+        assert re.search(r"[\u4e00-\u9fff]", zh)
+
+
 def test_l5_format_dependency_help_uses_keys():
     """L5: format_dependency_help uses locale keys not hardcoded title."""
     mod = _load_installer()

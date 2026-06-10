@@ -2,9 +2,9 @@ _meta:
   domain: errors
   locale: zh-CN
 keys:
-  errors.cli.invalid_language_choice: Invalid choice. Enter 1 or 2.
-  errors.locale.manifest_missing: 'Locale manifest not found: {{path}}'
-  errors.locale.asset_missing: Locale asset not found for key {{key}}
-  errors.installer.project_not_found: 'Project root not found: {{path}}'
-  errors.installer.config_not_found: 'Config file not found: {{path}}'
-  errors.installer.config_load_failed: 'Failed to load config: {{error}}'
+  errors.cli.invalid_language_choice: "无效选项。请输入 1 或 2。"
+  errors.locale.manifest_missing: "未找到本地化清单：{{path}}"
+  errors.locale.asset_missing: "未找到键 {{key}} 的本地化资源"
+  errors.installer.project_not_found: "未找到项目根目录：{{path}}"
+  errors.installer.config_not_found: "未找到配置文件：{{path}}"
+  errors.installer.config_load_failed: "加载配置失败：{{error}}"

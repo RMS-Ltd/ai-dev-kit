@@ -1,0 +1,12 @@
+{
+  "report_type": "rw_step7_structure_prune",
+  "release_scope": "E21:S06:T01",
+  "version": "v0.21.6.1+1",
+  "evidence_mode": "structure_prune",
+  "rows": {
+    "E21:S06:T01": {
+      "allowed": true,
+      "reason": "Terminal task COMPLETE v0.21.6.1+1 — removed from active kboard C-band (kanban-completed ledger); FR-006 Chinese Simplified zh-CN delivery"
+    }
+  }
+}

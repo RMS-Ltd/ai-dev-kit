@@ -2,7 +2,7 @@ _meta:
   domain: cli
   locale: zh-CN
 keys:
-  cli.prompt.language_choice: 'Select your preferred English variant:'
-  cli.prompt.language_uk: '[1] UK English (en-GB) — colour, organise, realise  [default]'
-  cli.prompt.language_us: '[2] US English (en-US) — color, organize, realize'
-  cli.prompt.enter_choice: 'Enter choice [1-2]:'
+  cli.prompt.language_choice: "请选择您偏好的英语变体："
+  cli.prompt.language_uk: "[1] 英式英语 (en-GB) — colour, organise, realise  [默认]"
+  cli.prompt.language_us: "[2] 美式英语 (en-US) — color, organize, realize"
+  cli.prompt.enter_choice: "请输入选项 [1-2]："

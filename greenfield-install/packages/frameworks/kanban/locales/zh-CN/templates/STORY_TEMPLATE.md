@@ -26,25 +26,25 @@ housekeeping_policy: keep
 - [ ] **EXX:SYY:T02 – [Task Title]**
 - [ ] **EXX:SYY:T03 – [Task Title]**
 
-> **Format:** `Exx:Sxx:Txx` (Epic, Story, Task with 2-digit zero padding, e.g., `E01:S01:T01`, `E02:S04:T05`)  
+> **Format:** `Exx:Sxx:Txx` (Epic、Story、Task，2 位零填充，例如 `E01:S01:T01`、`E02:S04:T05`)  
 > **Forensic Marker Format:** `✅ COMPLETE (vRC.E.S.T+B)` (e.g., `✅ COMPLETE (v0.4.1.3+1)`)  
-> **Release Workflow Requirement:** When Release Workflow (RW) Step 4 updates Epic documentation, it MUST update **ALL sections**:
-> - Epic header `Last updated` field
-> - Epic Story Checklist (status and version markers)
-> - Epic detailed story sections (Status, Last updated, task checkboxes)
-> - Any other references to this story/task
+> **Release Workflow Requirement:** 当 Release Workflow (RW) Step 4 更新 Epic 文档时，**必须**更新**所有**章节：
+> - Epic 页眉 `Last updated` 字段
+> - Epic Story Checklist（状态与版本标记）
+> - Epic story 详细章节（Status、Last updated、task 复选框）
+> - 任何其他指向本 story/task 的引用
 > 
-> **Consistency Check:** After each RW, verify that Story file, Epic header, Epic Story Checklist, and Epic detailed sections all match.
+> **Consistency Check:** 每次 RW 后，验证 Story 文件、Epic 页眉、Epic Story Checklist 与 Epic 详细章节一致。
 
 ---
 
-## Overview
+## 概述
 
-[One sentence. What this story accomplishes.]
+[一句话。本 story 要完成什么。]
 
 ---
 
-## Goals
+## 目标
 
 - [ ] Goal one
 - [ ] Goal two
@@ -54,41 +54,41 @@ housekeeping_policy: keep
 
 ## Tasks
 
-> **CRITICAL: Tier Delegation Principle**
+> **关键：层级委派原则**
 > 
-> **Story documents MUST delegate Task detail to Task documents.** This Story template should NOT duplicate Task-level implementation details (Approach steps, detailed acceptance criteria, etc.). Instead, Story documents should:
-> - Reference tasks via Task Checklist (above)
-> - Provide brief task summaries or links to Task documents
-> - Delegate all detailed Task information to Task documents
+> **Story 文档必须将 Task 细节委派给 Task 文档。** 本 Story 模板**不得**重复 Task 级实现细节（Approach 步骤、详细验收标准等）。Story 文档应：
+> - 通过上方 Task Checklist 引用 task
+> - 提供简要 task 摘要或链接至 Task 文档
+> - 将所有 Task 详细信息委派给 Task 文档
 > 
-> **What belongs in Story:**
-> - ✅ Task Checklist (references only, with status/version markers)
-> - ✅ Brief task summaries (1 sentence per task)
-> - ✅ Links to Task documents (for separate file format)
-> - ✅ Story-level acceptance criteria (not task-level)
-> - ✅ Story-level goals and overview
+> **Story 应包含：**
+> - ✅ Task Checklist（仅引用，含状态/版本标记）
+> - ✅ 简要 task 摘要（每个 task 一句）
+> - ✅ 链接至 Task 文档（独立文件格式时）
+> - ✅ Story 级验收标准（非 task 级）
+> - ✅ Story 级目标与概述
 > 
-> **What does NOT belong in Story:**
-> - ❌ Detailed task descriptions
-> - ❌ Task implementation details (Approach steps)
-> - ❌ Task-level acceptance criteria (these belong in Task docs)
-> - ❌ Task input/deliverable details (unless brief summary)
+> **Story 不应包含：**
+> - ❌ 详细 task 描述
+> - ❌ Task 实现细节（Approach 步骤）
+> - ❌ Task 级验收标准（属于 Task 文档）
+> - ❌ Task 输入/交付物细节（除非简要摘要）
 
-**CRITICAL: Task Document Requirements**
+**关键：Task 文档要求**
 
-Every Task MUST have a discrete Task document. Tasks can be documented in one of two formats:
+每个 Task **必须**有独立的 Task 文档。可采用以下两种格式之一：
 
 ### Format 1: Separate Task File (Recommended)
 
 **Location:** `kanban/epics/epic-XX/story-YY/TYY-description.md` or `kanban/epics/epic-XX/story-YY/TYY-description.md`
 
-**Example:** `kanban/epics/epic-04/story-11/T01-update-kanban-policy.md` (2-digit epic/story/task when ≤ 99; 3-digit when > 99)
+**Example:** `kanban/epics/epic-04/story-11/T01-update-kanban-policy.md` (epic/story/task ≤99 时用 2 位；>99 时用 3 位)
 
 **When to Use:**
-- Tasks with significant complexity or multiple phases
-- Tasks that may have associated files (diagrams, notes, etc.)
-- Tasks that benefit from standalone documentation
-- Projects requiring maximum traceability
+- 复杂度较高或多阶段的 task
+- 可能有附属文件（图示、笔记等）的 task
+- 适合独立文档的 task
+- 需要最大可追溯性的项目
 
 **Task Checklist Reference:**
 - [ ] **EXX:SYY:T01 – [Task Title]** ✅ COMPLETE (vX.Y.Z.T+B)
@@ -96,15 +96,15 @@ Every Task MUST have a discrete Task document. Tasks can be documented in one of
 
 ### Format 2: Delimited Section Within Story (Alternative)
 
-**Location:** Within this Story document, using Task ID as a clear header
+**Location:** 在本 Story 文档内，以 Task ID 为清晰标题
 
-**Format:** `### E{epic}:S{story}:T{task} – Task Name` followed by task content
+**Format:** `### E{epic}:S{story}:T{task} – Task Name` 后接 task 内容
 
 **When to Use:**
-- Simple, straightforward tasks
-- Tasks with minimal documentation needs
-- Projects with tight documentation requirements
-- Tasks that are tightly coupled to the Story
+- 简单、直接的 task
+- 文档需求较少的 task
+- 文档要求紧凑的项目
+- 与 Story 紧密耦合的 task
 
 **Example Structure:**
 ```markdown
@@ -128,20 +128,20 @@ Every Task MUST have a discrete Task document. Tasks can be documented in one of
 
 ### Task Documentation Requirements
 
-Regardless of format, every Task MUST include:
+无论采用何种格式，每个 Task **必须**包含：
 
 - **Task ID:** `E{epic}:S{story}:T{task}` (e.g., `E04:S11:T01`)
-- **Scope:** Clear description of what the task accomplishes
-- **Acceptance Criteria:** Measurable criteria for task completion
-- **Status:** Current status (TODO, IN PROGRESS, COMPLETE)
-- **Version Anchor:** Version marker when task is complete (e.g., `✅ COMPLETE (v0.4.11.1+1)`)
-- **Input:** What is required to start this task
-- **Deliverable:** What is produced by this task
-- **Dependencies:** Other tasks or work items this task depends on
-- **Blocker:** Tasks or work items that block this task
-- **Related BR/FR Links:** Links to related Bug Reports or Feature Requests
+- **Scope:** 清晰描述 task 要完成什么
+- **Acceptance Criteria:** 可衡量的完成标准
+- **Status:** 当前状态 (TODO, IN PROGRESS, COMPLETE)
+- **Version Anchor:** task 完成时的版本标记 (e.g., `✅ COMPLETE (v0.4.11.1+1)`)
+- **Input:** 启动本 task 所需内容
+- **Deliverable:** 本 task 产出物
+- **Dependencies:** 本 task 依赖的其他 task 或工作项
+- **Blocker:** 阻塞本 task 的 task 或工作项
+- **Related BR/FR Links:** 相关 Bug Report 或 Feature Request 链接
 
-**Template:** Use `packages/frameworks/kanban/templates/TASK_TEMPLATE.md` for separate Task files.
+**Template:** 独立 Task 文件请使用 `packages/frameworks/kanban/templates/TASK_TEMPLATE.md`。
 
 **Examples:**
 - **Separate File Format:** See `packages/frameworks/kanban/examples/Task-001-Example-Separate-File.md`
@@ -159,15 +159,15 @@ Regardless of format, every Task MUST include:
 
 #### Example: Delimited Section Format
 
-> **Note:** Even when using delimited sections within the Story document, the Task content should be self-contained and complete. The Story document serves as a container, but the Task section should contain all Task-level detail (Input, Deliverable, Approach, Acceptance Criteria, etc.).
+> **Note:** 即使在 Story 文档内使用分隔章节，Task 内容也应自包含且完整。Story 文档作为容器，Task 章节应包含所有 Task 级细节（Input、Deliverable、Approach、Acceptance Criteria 等）。
 
 ### EXX:SYY:T01 – [Task Title]
 
 > **Format:** Always use full `Exx:Sxx:Txx` format (e.g., `E01:S01:T01`, not `T01` alone)
 
-**Brief Summary:** [One sentence description of what this task accomplishes]
+**Brief Summary:** [一句话说明本 task 要完成什么]
 
-**Task Document:** This task is documented as a delimited section within this Story document. For detailed Task information (Input, Deliverable, Approach, Acceptance Criteria, Dependencies, etc.), see the Task section below.
+**Task Document:** 本 task 以 Story 文档内的分隔章节记录。详细 Task 信息（Input、Deliverable、Approach、Acceptance Criteria、Dependencies 等）见下方 Task 章节。
 
 **Input:** [What this task requires]  
 **Deliverable:** [What this task produces]  
@@ -184,7 +184,7 @@ Regardless of format, every Task MUST include:
 - [ ] Criterion one (measurable, testable)
 - [ ] Criterion two (measurable, testable)
 
-> **Note:** When using delimited sections, all Task-level detail lives in the Task section. The Story document provides the container, but does not duplicate Task information elsewhere.
+> **Note:** 使用分隔章节时，所有 Task 级细节位于 Task 章节内。Story 文档提供容器，不在其他位置重复 Task 信息。
 
 ---
 
@@ -196,28 +196,28 @@ Regardless of format, every Task MUST include:
 
 ---
 
-## Dependencies
+## 依赖
 
 **Blocks:**
-- [What this story blocks]
+- [本 story 阻塞的内容]
 
 **Blocked By:**
-- [What blocks this story]
+- [阻塞本 story 的内容]
 
 **Coordinates With:**
-- [Epic/Story coordination points]
+- [Epic/Story 协调点]
 
 ---
 
 ## Completion Summary
 
-[What was delivered. Lessons learned. Metrics achieved.]
+[交付内容。经验教训。达成的指标。]
 
 ---
 
-## References
+## 参考
 
-- [Related docs, PRs, commits, diagrams]
+- [相关文档、PR、commit、图示]
 
 ---
 
@@ -228,4 +228,4 @@ Regardless of format, every Task MUST include:
 
 ---
 
-**Locale (en-GB):** Use UK English in instructional prose (colour, organise, realise, centre).
+**本地化 (zh-CN)：** 指导性正文使用简体技术中文。

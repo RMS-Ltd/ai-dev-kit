@@ -2,28 +2,28 @@ _meta:
   domain: cli
   locale: zh-CN
 keys:
-  cli.prompt.language_choice: 'Select your preferred English variant:'
-  cli.prompt.language_uk: '[1] UK English (en-GB) — colour, organise, realise  [default]'
-  cli.prompt.language_us: '[2] US English (en-US) — color, organize, realize'
-  cli.prompt.enter_choice: 'Enter choice [1-2]:'
-  cli.config.using_existing: 'Using existing localisation config: {{path}}'
-  cli.config.saved: 'Language preference saved: {{language}} ({{variant}})'
-  cli.config.path_detail: '   Localisation config: {{path}}'
-  cli.config.dry_run_write: '🔍 [DRY RUN] Would write {{path}}:'
-  cli.config.dry_run_locale: '   localisation: {{locale}}'
-  cli.status.error_label: Error
-  cli.status.success_label: Success
-  cli.status.warning_label: Warning
-  cli.status.info_label: Info
-  cli.init.no_project_root: 'No project root detected, using current directory: {{path}}'
-  cli.init.project_root_detected: 'Project root detected: {{path}}'
-  cli.init.config_exists: 'Configuration file already exists: {{path}}'
-  cli.init.use_force: Use --force to overwrite existing configuration
-  cli.init.locale_write_failed: 'Failed to write language configuration: {{error}}'
-  cli.init.locale_config_path: 'Localisation config: {{path}}'
-  cli.init.initialized: Initialized ai-dev-kit in {{path}}
-  cli.init.config_path: 'Configuration file: {{path}}'
-  cli.init.default_backend: 'Default backend: {{backend}}'
-  cli.init.failed: 'Failed to initialize ai-dev-kit: {{error}}'
-  cli.init.cancelled: Operation cancelled by user
-  cli.init.unexpected_error: 'Unexpected error: {{error}}'
+  cli.prompt.language_choice: "请选择您偏好的英语变体："
+  cli.prompt.language_uk: "[1] 英式英语 (en-GB) — colour, organise, realise  [默认]"
+  cli.prompt.language_us: "[2] 美式英语 (en-US) — color, organize, realize"
+  cli.prompt.enter_choice: "请输入选项 [1-2]："
+  cli.config.using_existing: "使用现有本地化配置：{{path}}"
+  cli.config.saved: "语言偏好已保存：{{language}} ({{variant}})"
+  cli.config.path_detail: "   本地化配置：{{path}}"
+  cli.config.dry_run_write: "🔍 [试运行] 将写入 {{path}}："
+  cli.config.dry_run_locale: "   本地化：{{locale}}"
+  cli.status.error_label: "错误"
+  cli.status.success_label: "成功"
+  cli.status.warning_label: "警告"
+  cli.status.info_label: "信息"
+  cli.init.no_project_root: "未检测到项目根目录，使用当前目录：{{path}}"
+  cli.init.project_root_detected: "已检测到项目根目录：{{path}}"
+  cli.init.config_exists: "配置文件已存在：{{path}}"
+  cli.init.use_force: "使用 --force 覆盖现有配置"
+  cli.init.locale_write_failed: "写入语言配置失败：{{error}}"
+  cli.init.locale_config_path: "本地化配置：{{path}}"
+  cli.init.initialized: "已在 {{path}} 初始化 ai-dev-kit"
+  cli.init.config_path: "配置文件：{{path}}"
+  cli.init.default_backend: "默认后端：{{backend}}"
+  cli.init.failed: "初始化 ai-dev-kit 失败：{{error}}"
+  cli.init.cancelled: "用户已取消操作"
+  cli.init.unexpected_error: "意外错误：{{error}}"

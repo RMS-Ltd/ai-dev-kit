@@ -104,3 +104,20 @@ def test_s6_resolve_locale_key_es_translated():
         REPO_ROOT, "cli.prompt.language_choice", language="es", package="workflow-mgt"
     )
     assert value == "Seleccione su variante de inglés preferida:"
+
+
+def test_s7_resolve_locale_key_zh_cn_translated():
+    """S7: resolve_locale_key returns zh-CN catalog (E21:S06:T01)."""
+    import re
+    import sys
+
+    scripts = REPO_ROOT / "packages" / "frameworks" / "workflow-mgt" / "scripts"
+    if str(scripts) not in sys.path:
+        sys.path.insert(0, str(scripts))
+    from localisation_config import resolve_locale_key
+
+    value = resolve_locale_key(
+        REPO_ROOT, "cli.prompt.language_choice", language="zh-CN", package="workflow-mgt"
+    )
+    assert re.search(r"[\u4e00-\u9fff]", value)
+    assert value != "Select your preferred English variant:"

@@ -6,17 +6,17 @@ expires_at: null
 housekeeping_policy: keep
 ---
 
-# Setup locale index (en-GB)
+# 配置本地化索引 (zh-CN)
 
-**Locale:** UK English (`en-GB` / `UK`)
+**本地化：** 简体中文 (`zh-CN` / `CN`)
 
-## Flow
+## 流程
 
-1. **Step 0** — Select language in [post-template setup guide](../../../../../../docs/documentation/user-docs/framework-dependency-post-template-setup-guide.md#step-0-select-language-variant-uk--us-english) or via `ai-dev-kit init` / `install_release_workflow.py`.
-2. **Persist** — `ai-dev-kit-config.yaml` at project root (`localisation.language: en-GB`).
-3. **Content** — Phase 1 templates in [`../templates/`](../templates/) (manifest: [`../../manifest.yaml`](../../manifest.yaml)).
-4. **T06** — Installers will resolve manifest keys from config (not yet wired).
+1. **Step 0** — 在[模板后配置指南](../../../../../../docs/documentation/user-docs/framework-dependency-post-template-setup-guide.md#step-0-select-language-variant-uk--us-english)中选择语言，或通过 `ai-dev-kit init` / `install_release_workflow.py`。
+2. **持久化** — 项目根目录 `ai-dev-kit-config.yaml`（`localisation.language: zh-CN`）。
+3. **内容** — Phase 1 模板位于 [`../templates/`](../templates/)（清单：[`../../manifest.yaml`](../../manifest.yaml)）。
+4. **T06** — 安装程序将从配置解析清单键（尚未接入）。
 
-## Phase 1 seeded templates
+## Phase 1 种子模板
 
-FR, BR, UXR, FB, TASK, STORY, EPIC, PLAN_DOC — UK spelling in instructional prose (colour, organise, realise).
+FR、BR、UXR、FB、TASK、STORY、EPIC、PLAN_DOC — 指导性正文使用简体技术中文。

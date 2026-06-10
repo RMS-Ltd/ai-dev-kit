@@ -27,7 +27,7 @@ scaffold_locales:
   zh-CN:
     owner_story: E21:S06:T01
     scaffold_status: complete
-    linguistic_status: pending
+    linguistic_status: complete
   zh-TW:
     owner_story: E21:S06:T02
     scaffold_status: complete

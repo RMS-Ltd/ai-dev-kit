@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Completed Tasks
 
-**Last Updated:** 2026-06-10 (RW E02:S16:T02 — UKW kanban hygiene)
-**Version:** v0.2.16.2+3
+**Last Updated:** 2026-06-10 (RW E21:S06:T01 — zh-CN locale delivery)
+**Version:** v0.21.6.1+1
 
 > **For MoSCOW prioritized tasks, see:** [`kboard.md`](kboard.md)  
 > **For completed FR/BR/UXR intake items, see:** [`intake-completed.md`](intake-completed.md)
@@ -19,6 +19,10 @@ housekeeping_policy: keep
 ---
 
 ## 20 Most Recently Completed Tasks
+
+#### **RW (2026-06-10)** — E21:S06:T01 @ **v0.21.6.1+1** (FR-006 — Chinese Simplified zh-CN locale delivery)
+
+- **[E21:S06:T01](epics/epic-21/story-06-cjk-languages-localization/T01-chinese-simplified-zh-cn-translation-files.md)** — Linguistic translation of kanban + workflow-mgt `locales/zh-CN/**`; registry `linguistic_status: complete`; greenfield sync; pytest contract. [FR-006](fr-br/FR-006-localization-language-selection-uk-us-english.md) · [—IPP—](../../implementation-cycles/IPP-E21S06T01-chinese-simplified-zh-cn-translation-files.md)
 
 #### **UKW (2026-06-10)** — Board hygiene: archived terminal E05 FR-114 rows (already shipped)
 

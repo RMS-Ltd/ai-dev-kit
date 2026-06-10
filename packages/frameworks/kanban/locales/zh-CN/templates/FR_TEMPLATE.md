@@ -16,23 +16,23 @@ housekeeping_policy: keep
 
 ---
 
-## Summary
+## 摘要
 
-[One sentence description of the requested feature.]
-
----
-
-## Description
-
-[Detailed description of the feature request. Include:]
-- What functionality is desired?
-- What problem does this solve?
-- What is the use case?
-- Who would benefit from this feature?
+[用一句话描述所请求的功能。]
 
 ---
 
-## Requirements
+## 描述
+
+[详细描述功能请求。请包含：]
+- 期望实现什么功能？
+- 解决什么问题？
+- 使用场景是什么？
+- 哪些用户会受益？
+
+---
+
+## 需求
 
 ### Functional Requirements
 - [ ] Requirement 1
@@ -47,9 +47,9 @@ housekeeping_policy: keep
 
 ---
 
-## Scope Analysis
+## 范围分析
 
-**Problem Domain:** [e.g., User Authentication, Data Processing, UI Components]  
+**Problem Domain:** [例如：用户认证、数据处理、UI 组件]  
 **Affected Areas:**
 - [ ] Backend/API
 - [ ] Frontend/UI
@@ -66,10 +66,10 @@ housekeeping_policy: keep
 
 ---
 
-## Use Cases
+## 用例
 
 **Primary Use Case:**
-[Describe the main use case for this feature]
+[描述该功能的主要使用场景]
 
 **Additional Use Cases:**
 - Use case 1
@@ -79,22 +79,22 @@ housekeeping_policy: keep
 
 ## Acceptance Criteria
 
-- [ ] Criterion 1: [Specific, testable criterion]
-- [ ] Criterion 2: [Specific, testable criterion]
-- [ ] Criterion 3: [Specific, testable criterion]
+- [ ] Criterion 1: [可验证、可测试的标准]
+- [ ] Criterion 2: [可验证、可测试的标准]
+- [ ] Criterion 3: [可验证、可测试的标准]
 
 ---
 
-## Dependencies
+## 依赖
 
 **Blocks:**
-- [What this FR blocks]
+- [本 FR 阻塞的内容]
 
 **Blocked By:**
-- [What blocks this FR]
+- [阻塞本 FR 的内容]
 
 **Related Work:**
-- [Related FRs, Stories, Tasks, or Epics]
+- [相关 FR、Story、Task 或 Epic]
 
 ---
 
@@ -122,27 +122,26 @@ housekeeping_policy: keep
 
 ---
 
-## Notes
+## 备注
 
-[Additional notes, context, or considerations]
+[补充说明、上下文或考量]
 
 ---
 
-## References
+## 参考
 
-- [Related documentation, specs, diagrams, external resources]
+- [相关文档、规格、图示或外部资源]
 
 ---
 
 **Template Usage:**
-**Locale (en-GB):** Use UK English in instructional prose (colour, organise, realise, centre).
+**本地化 (zh-CN)：** 指导性正文使用简体技术中文。
 
-- Copy this template when creating a new Feature Request
-- Fill in all relevant sections
-- Use the "Intake Decision" section to track the FR/BR → Task → Story → Epic conversion
-- Link to the created Task/Story/Epic for traceability
+- 创建新 Feature Request 时复制本模板
+- 填写所有相关章节
+- 使用「Intake Decision」章节跟踪 FR/BR → Task → Story → Epic 转换
+- 链接已创建的 Task/Story/Epic 以保持可追溯性
 
 ---
 
 _This template is part of the Kanban Framework. See `packages/frameworks/kanban/` for complete framework documentation._
-

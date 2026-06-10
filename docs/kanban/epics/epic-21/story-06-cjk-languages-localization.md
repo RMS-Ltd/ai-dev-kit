@@ -8,12 +8,12 @@ housekeeping_policy: keep
 
 # Story 06 – CJK Languages Localization
 
-**Status:** TODO  
+**Status:** IN PROGRESS  
 **Priority:** LOW  
 **Estimated Effort:** [TBD]  
 **Created:** 2026-06-06  
-**Last updated:** 2026-06-06 (E21 rehouse — per-locale delivery split from S02:T02)  
-**Version:** v0.21.1.0+0  
+**Last updated:** 2026-06-10 (v0.21.6.1+1 – Kanban documentation setup)
+**Version:** v0.21.6.1+1
 **Code:** E21S06
 
 ---
@@ -32,7 +32,7 @@ Populate `locales/zh-CN/`, `locales/zh-TW/`, and `locales/ja/` with framework us
 
 ## Task Checklist
 
-- [ ] **E21:S06:T01 – Chinese Simplified (zh-CN) translation files** - TODO
+- [x] **E21:S06:T01 – Chinese Simplified (zh-CN) translation files** - COMPLETE (v0.21.6.1+1)
   - Task: [`T01-chinese-simplified-zh-cn-translation-files`](story-06-cjk-languages-localization/T01-chinese-simplified-zh-cn-translation-files.md)
 - [ ] **E21:S06:T02 – Chinese Traditional (zh-TW) translation files** - TODO
   - Task: [`T02-chinese-traditional-zh-tw-translation-files`](story-06-cjk-languages-localization/T02-chinese-traditional-zh-tw-translation-files.md)

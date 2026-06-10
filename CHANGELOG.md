@@ -11,6 +11,14 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.21.6.1+1] - 10-06-26
+
+E21:S06:T01 — **Attempted translation:** FR-006 Chinese Simplified (zh-CN) locale delivery for kanban + workflow-mgt. SemVer **v0.4.1109+1**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.21.6.1+1.md)
+
+---
+
 ## [0.2.16.2+3] - 10-06-26
 
 E02:S16:T02 — **Change implemented:** UKW bookkeeping — pruned terminal E05 FR-114 rows from `kboard.md`; epic/story sync; kanban-completed ledger. SemVer **v0.4.1108+3**.

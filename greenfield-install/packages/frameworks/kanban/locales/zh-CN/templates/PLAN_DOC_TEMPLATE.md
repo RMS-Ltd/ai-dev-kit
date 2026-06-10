@@ -12,7 +12,7 @@ housekeeping_policy: keep
 **Planning for:** [FR-XXX](../../../fr-br/FR-XXX-*.md) *(if applicable)*  
 **Status:** Draft | Review | Approved
 
-> **IPW (Implementation Planning Workflow):** Use this template when running **IPW** / **IPW E:S:T**. The **Host Task** link and bidirectional wiring to the task doc **Input** and **References** are **mandatory** before the plan is complete (see project **FR-042** — *Implementation Planning Workflow* in `docs/project-management/kanban/fr-br/`).
+> **IPW (Implementation Planning Workflow):** 运行 **IPW** / **IPW E:S:T** 时使用本模板。**Host Task** 链接及与 task 文档 **Input**、**References** 的双向连线在计划完成前为**强制**（见项目 **FR-042** — *Implementation Planning Workflow*，位于 `docs/project-management/kanban/fr-br/`）。
 
 ---
 
@@ -42,11 +42,11 @@ housekeeping_policy: keep
 
 ### 2.1 Goal
 
-[One paragraph: what outcome this plan enables.]
+[一段话：本计划要达成的结果。]
 
 ### 2.2 Specification mapping from ascertained requirements
 
-Describe how the specification formalizes the requirements baseline above.
+说明规格如何将上述需求基线形式化。
 
 ### 2.3 Constraints
 
@@ -55,14 +55,14 @@ Describe how the specification formalizes the requirements baseline above.
 ### 2.4 Status transition intent (mandatory for IPW-derived implementation tasks)
 
 - **Current task status:** TODO | IN PROGRESS | COMPLETE
-- **Transition trigger to IN PROGRESS:** First non-planning implementation change lands.
-- **Transition trigger to COMPLETE:** Acceptance evidence is recorded (tests/verification notes linked).
-- **Atomic propagation requirement:** Task doc status and kboard row status must update in the same change set/session.
-- **Owner:** Implementation execution step (not planning-only IPW creation).
+- **Transition trigger to IN PROGRESS:** 首个非规划类实现变更落地。
+- **Transition trigger to COMPLETE:** 已记录验收证据（链接测试/验证说明）。
+- **Atomic propagation requirement:** task 文档状态与 kboard 行状态须在同一变更集/会话中更新。
+- **Owner:** 实现执行步骤（非仅规划类 IPW 创建）。
 
 ### 2.5 ADR necessity decision (mandatory — IPW Phase 5.0)
 
-Score each trigger **Y** or **N** with one-line evidence. Criteria: [`ipw-adr-necessity-checklist.md`](../../../docs/architecture/standards-and-adrs/ipw-adr-necessity-checklist.md) (FR-100).
+为每个触发项打 **Y** 或 **N** 并附一行证据。准则：[`ipw-adr-necessity-checklist.md`](../../../docs/architecture/standards-and-adrs/ipw-adr-necessity-checklist.md) (FR-100)。
 
 | ID | Trigger | Y/N | Evidence |
 | -- | ------- | --- | -------- |
@@ -76,9 +76,9 @@ Score each trigger **Y** or **N** with one-line evidence. Criteria: [`ipw-adr-ne
 
 **Outcome:** `REQUIRED` | `EXEMPT` | `ALREADY_COVERED` (link existing ADR)
 
-If **REQUIRED:** §5 must include ADR `CREATE` or `UPDATE` before Phase 5 doc inventory completes.
+若 **REQUIRED：** §5 须在 Phase 5 文档清单完成前包含 ADR `CREATE` 或 `UPDATE`。
 
-If **EXEMPT:** all T1–T7 = N and E1–E5 pass (see checklist policy); record §5.3 governing-doc citation.
+若 **EXEMPT：** 全部 T1–T7 = N 且 E1–E5 通过（见 checklist 策略）；在 §5.3 记录治理文档引用。
 
 | ID | Exemption (only if all T = N) | Pass? | Evidence |
 | -- | --------------------------- | ----- | -------- |
@@ -102,11 +102,11 @@ If **EXEMPT:** all T1–T7 = N and E1–E5 pass (see checklist policy); record �
 
 | Step | Action | Deliverable |
 | ---- | ------ | ----------- |
-| **1** | **[MANDATORY] Transition task `E{epic}:S{story}:T{task}` status `TODO → IN PROGRESS`** in task doc. Update `Last updated` date. | Task doc `Status` = `IN PROGRESS` |
+| **1** | **[MANDATORY] 将 task `E{epic}:S{story}:T{task}` 状态由 `TODO → IN PROGRESS`**（在 task 文档中）。更新 `Last updated` 日期。 | Task 文档 `Status` = `IN PROGRESS` |
 | … | … | … |
-| **N** | **[MANDATORY] Reconcile task `E{epic}:S{story}:T{task}` status** to actual implementation state: `COMPLETE` + `✅ COMPLETE (v{version})` if all ACs satisfied; `IN PROGRESS` if ongoing; `BLOCKED` + reason if blocked. Update `Last updated`. | Task doc status reflects actual state |
+| **N** | **[MANDATORY] 将 task `E{epic}:S{story}:T{task}` 状态**与实现实际状态对齐：`COMPLETE` + `✅ COMPLETE (v{version})`（若全部 AC 满足）；`IN PROGRESS`（若进行中）；`BLOCKED` + 原因（若阻塞）。更新 `Last updated`。 | Task 文档状态反映实际状态 |
 
-**RW verification / FBU wave rule (BR-097):** Any post-ship verification or FBU-closure step in §4 must prescribe **`RW E{epic}:S{story}:T{task} --art`** only. Do **not** prescribe `--doc-policy-zero` for follow-on releases after a tagged BUILD.
+**RW verification / FBU wave rule (BR-097):** §4 中任何发布后验证或 FBU 关闭步骤**仅**应规定 **`RW E{epic}:S{story}:T{task} --art`**。已打 tag 的 BUILD 之后**不得**规定 `--doc-policy-zero` 用于后续 release。
 
 ### 4.1 Files to create or modify
 
@@ -118,13 +118,13 @@ If **EXEMPT:** all T1–T7 = N and E1–E5 pass (see checklist policy); record �
 
 ### 4.3 Documentation implementation steps (optional)
 
-Ordered doc work during implementation (derived from §5–§6), e.g. update KB guide before user docs.
+实现期间的有序文档工作（源自 §5–§6），例如先更新 KB 指南再更新用户文档。
 
 ---
 
 ## 5. Documentation deliverables
 
-*Populated in IPW Phase 5 — after implementation planning, before housing.*
+*在 IPW Phase 5 填写 — 实现规划之后、housing 之前。*
 
 ### 5.1 Existing documents to update
 
@@ -148,21 +148,21 @@ Ordered doc work during implementation (derived from §5–§6), e.g. update KB 
 
 ## 6. Documentation housing
 
-*Populated in IPW Phase 6 — canonical paths and publication intent.*
+*在 IPW Phase 6 填写 — 规范路径与发布意图。*
 
 | Doc ID | Canonical path | Publication status | Publication N/A reason (if N/A) | Lifecycle | Inbound links to add |
 | ------ | -------------- | ------------------ | ------------------------------- | --------- | -------------------- |
 | D-U1 | … | PUBLISHED \| NOT_APPLICABLE | … | evergreen \| … | … |
 
-**Housing rules:** One authoritative doc per topic; prefer updating an existing doc over creating a duplicate; IPP lives under `docs/implementation-cycles/`; Docusaurus surfaces per BR-066.
+**Housing rules:** 每个主题一份权威文档；优先更新既有文档而非新建重复；IPP 位于 `docs/implementation-cycles/`；Docusaurus 展示按 BR-066。
 
 ---
 
 ## 7. Success / verification criteria
 
 - [ ] …
-- [ ] All §5 UPDATE/CREATE items implemented or explicitly deferred with reason
-- [ ] All §6 `PUBLISHED` paths exist and are linked from task doc (or validator passes)
+- [ ] 所有 §5 UPDATE/CREATE 项已实现或已明确延期并说明原因
+- [ ] 所有 §6 `PUBLISHED` 路径存在且已从 task 文档链接（或 validator 通过）
 
 ---
 
@@ -172,4 +172,4 @@ Ordered doc work during implementation (derived from §5–§6), e.g. update KB 
 
 ---
 
-**Locale (en-GB):** Use UK English in instructional prose (colour, organise, realise, centre).
+**本地化 (zh-CN)：** 指导性正文使用简体技术中文。

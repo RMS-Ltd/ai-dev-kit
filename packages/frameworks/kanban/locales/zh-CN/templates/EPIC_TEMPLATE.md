@@ -25,92 +25,92 @@ housekeeping_policy: keep
 - [ ] **EXX:S02 – [Story Title]** - [Status]
 - [ ] **EXX:S03 – [Story Title]** - [Status]
 
-> **CRITICAL:** This Story Checklist is the **SINGLE SOURCE OF TRUTH** for story status and version markers.  
+> **关键：** 本 Story Checklist 是 story 状态与版本标记的**唯一事实来源**。  
 > **Forensic Marker Format:** `✅ COMPLETE (vRC.E.S.T+B)` (e.g., `✅ COMPLETE (v0.4.1.3+1)`)  
-> **Release Workflow Requirement:** When Release Workflow (RW) Step 4 updates this Epic document, it MUST update **ALL sections**:
-> - Epic header `Last updated` field
-> - Story Checklist (status and version markers)
-> - Detailed story sections (Status, Last updated, task checkboxes)
-> - Any other references to the story/task being released
+> **Release Workflow Requirement:** 当 Release Workflow (RW) Step 4 更新本 Epic 文档时，**必须**更新**所有**章节：
+> - Epic 页眉 `Last updated` 字段
+> - Story Checklist（状态与版本标记）
+> - Story 详细章节（Status、Last updated、task 复选框）
+> - 任何其他指向所发布 story/task 的引用
 > 
-> **Consistency Check:** After each RW, verify that Epic header, Story Checklist, and detailed sections all match.
+> **Consistency Check:** 每次 RW 后，验证 Epic 页眉、Story Checklist 与详细章节一致。
 
 ---
 
-## Overview
+## 概述
 
-[One paragraph. The epic's purpose, scope, and motivation.]
+[一段话。Epic 的目的、范围与动机。]
 
 ---
 
-## Goals
+## 目标
 
-1. Goal headline with brief description
-2. Goal headline with brief description
-3. Goal headline with brief description
+1. 目标标题及简要说明
+2. 目标标题及简要说明
+3. 目标标题及简要说明
 
 ---
 
 ## Stories
 
-> **CRITICAL: Tier Delegation Principle**
+> **关键：层级委派原则**
 > 
-> **Epic documents MUST delegate Story detail to Story documents.** This Epic template should NOT duplicate Story-level information (Status, Priority, Goals, Tasks, Acceptance Criteria, etc.). Instead, Epic documents should:
-> - Reference stories via Story Checklist (above)
-> - Provide brief story summaries or links to Story documents
-> - Delegate all detailed Story information to Story documents
+> **Epic 文档必须将 Story 细节委派给 Story 文档。** 本 Epic 模板**不得**重复 Story 级信息（Status、Priority、Goals、Tasks、Acceptance Criteria 等）。Epic 文档应：
+> - 通过上方 Story Checklist 引用 story
+> - 提供简要 story 摘要或链接至 Story 文档
+> - 将所有 Story 详细信息委派给 Story 文档
 > 
-> **What belongs in Epic:**
-> - ✅ Story Checklist (references only, with status/version markers)
-> - ✅ Brief story summaries (1-2 sentences per story)
-> - ✅ Links to Story documents
-> - ✅ Epic-level dependencies and coordination
+> **Epic 应包含：**
+> - ✅ Story Checklist（仅引用，含状态/版本标记）
+> - ✅ 简要 story 摘要（每个 story 1–2 句）
+> - ✅ 链接至 Story 文档
+> - ✅ Epic 级依赖与协调
 > 
-> **What does NOT belong in Epic:**
-> - ❌ Detailed story descriptions
-> - ❌ Story-level goals, tasks, acceptance criteria
-> - ❌ Task-level details
-> - ❌ Story implementation details
+> **Epic 不应包含：**
+> - ❌ 详细 story 描述
+> - ❌ Story 级目标、task、验收标准
+> - ❌ Task 级细节
+> - ❌ Story 实现细节
 
 ### Story Y: [Story Title]
 
-**Brief Summary:** [One sentence description of what this story accomplishes]
+**Brief Summary:** [一句话说明本 story 要完成什么]
 
 **Story Document:** [`Story-YYY-story-title.md`](Story-YYY-story-title.md) or [`epics/Epic-X/Story-YYY-story-title.md`](epics/Epic-X/Story-YYY-story-title.md)
 
-> **Note:** For detailed Story information (Status, Priority, Goals, Tasks, Acceptance Criteria, Dependencies, etc.), see the Story document linked above. This Epic document only provides a high-level reference.
+> **Note:** 详细 Story 信息（Status、Priority、Goals、Tasks、Acceptance Criteria、Dependencies 等）见上方链接的 Story 文档。本 Epic 文档仅提供高层引用。
 
 ---
 
-## Dependencies
+## 依赖
 
 **Blocks:**
-- [What this epic blocks]
+- [本 epic 阻塞的内容]
 
 **Blocked By:**
-- [What blocks this epic]
+- [阻塞本 epic 的内容]
 
 **Coordinates With:**
-- [Epic/Story coordination points]
+- [Epic/Story 协调点]
 
 ---
 
-## Risks & Mitigations
+## 风险与缓解
 
-- Risk description — mitigation
-- Risk description — mitigation
+- 风险描述 — 缓解措施
+- 风险描述 — 缓解措施
 
 ---
 
-## References
+## 参考
 
-- [Related docs, specs, diagrams]
+- [相关文档、规格、图示]
 
 ---
 
 ## Maintenance Cadence
 
-_For maintenance epics only._
+_仅适用于维护类 epic。_
 
 - **Weekly:** [schedule items]
 - **Monthly:** [schedule items]
@@ -119,4 +119,4 @@ _For maintenance epics only._
 
 ---
 
-**Locale (en-GB):** Use UK English in instructional prose (colour, organise, realise, centre).
+**本地化 (zh-CN)：** 指导性正文使用简体技术中文。

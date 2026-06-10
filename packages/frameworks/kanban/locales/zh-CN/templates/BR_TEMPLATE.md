@@ -17,25 +17,25 @@ housekeeping_policy: keep
 
 ---
 
-## Summary
+## 摘要
 
-[One sentence description of the bug.]
-
----
-
-## Description
-
-[Detailed description of the bug. Include:]
-- What is the bug?
-- What should happen vs. what actually happens?
-- When does it occur?
-- Who is affected?
+[用一句话描述该缺陷。]
 
 ---
 
-## Affected Component
+## 描述
 
-**Primary Component:** [e.g., User Authentication, Payment Processing, UI Component]  
+[详细描述该缺陷。请包含：]
+- 缺陷是什么？
+- 预期行为与实际行为的差异？
+- 何时发生？
+- 影响哪些用户？
+
+---
+
+## 受影响组件
+
+**Primary Component:** [例如：用户认证、支付处理、UI 组件]  
 **Affected Areas:**
 - [ ] Backend/API
 - [ ] Frontend/UI
@@ -45,21 +45,21 @@ housekeeping_policy: keep
 - [ ] Other: [specify]
 
 **Root Cause (if known):**
-[Description of the root cause, if identified]
+[若已识别，描述根本原因]
 
 ---
 
-## Steps to Reproduce
+## 复现步骤
 
-1. Step 1
-2. Step 2
-3. Step 3
-4. [Expected result]
-5. [Actual result]
+1. 步骤 1
+2. 步骤 2
+3. 步骤 3
+4. [预期结果]
+5. [实际结果]
 
 ---
 
-## Environment
+## 环境
 
 **Environment:** [Production/Staging/Development]  
 **Version:** [Version number or commit hash]  
@@ -68,7 +68,7 @@ housekeeping_policy: keep
 
 ---
 
-## Impact
+## 影响
 
 **User Impact:**
 - [ ] Critical - System unusable
@@ -77,18 +77,18 @@ housekeeping_policy: keep
 - [ ] Low - Minor issue, workaround available
 
 **Business Impact:**
-[Description of business impact, if applicable]
+[若适用，描述业务影响]
 
 **Workaround:**
-[If a workaround exists, describe it here]
+[若存在变通方案，在此描述]
 
 ---
 
 ## Acceptance Criteria (Fix Requirements)
 
-- [ ] Criterion 1: [Specific, testable criterion for fix]
-- [ ] Criterion 2: [Specific, testable criterion for fix]
-- [ ] Criterion 3: [Specific, testable criterion for fix]
+- [ ] Criterion 1: [可验证、可测试的修复标准]
+- [ ] Criterion 2: [可验证、可测试的修复标准]
+- [ ] Criterion 3: [可验证、可测试的修复标准]
 
 **Verification Method:**
 - [ ] Test suite execution
@@ -103,22 +103,22 @@ housekeeping_policy: keep
 
 ## Fix Attempt History
 
-**Purpose:** This section documents all fix attempts for this bug, ensuring that if a bug isn't squashed, the next build can be informed by previous attempts.
+**Purpose:** 本节记录针对该缺陷的所有修复尝试，以便若缺陷未消除，后续版本可参考既往尝试。
 
 **How to Use:**
-- Each release that attempts to fix this bug should add a new entry to this section
-- Document what was attempted, what worked, what didn't, and verification status
-- This creates a knowledge base for future fix attempts
+- 每次尝试修复该缺陷的 release 应在本节新增一条记录
+- 记录尝试内容、有效部分、无效部分及验证状态
+- 为后续修复尝试积累知识库
 
 ### Fix Attempts
 
 #### Attempt 1: [Version] - [Date]
 
 **Fix Description:**
-[Describe what was attempted to fix this bug]
+[描述针对该缺陷的修复尝试]
 
 **Changes Made:**
-- [List specific changes, files modified, code changes, etc.]
+- [列出具体变更、修改文件、代码改动等]
 
 **Verification Status:**
 - [ ] Verified (test suite passed / manual test passed)
@@ -131,7 +131,7 @@ housekeeping_policy: keep
 - [ ] Both
 
 **Verification Evidence:**
-[Link to test results, CI/CD output, or documentation]
+[链接至测试结果、CI/CD 输出或文档]
 
 **Result:**
 - [ ] Bug Fixed
@@ -139,23 +139,23 @@ housekeeping_policy: keep
 - [ ] Bug Not Fixed (describe why fix didn't work)
 
 **Lessons Learned:**
-[What was learned from this attempt? What should be tried differently next time?]
+[本次尝试的教训？下次应如何调整？]
 
 **Next Steps:**
-[What should be attempted in the next fix attempt?]
+[下次修复尝试应做什么？]
 
 ---
 
-## Dependencies
+## 依赖
 
 **Blocks:**
-- [What this BR blocks]
+- [本 BR 阻塞的内容]
 
 **Blocked By:**
-- [What blocks this BR]
+- [阻塞本 BR 的内容]
 
 **Related Work:**
-- [Related BRs, Stories, Tasks, or Epics]
+- [相关 BR、Story、Task 或 Epic]
 
 ---
 
@@ -183,29 +183,28 @@ housekeeping_policy: keep
 
 ---
 
-## Notes
+## 备注
 
-[Additional notes, context, or considerations]
+[补充说明、上下文或考量]
 
 ---
 
-## References
+## 参考
 
-- [Related documentation, specs, diagrams, external resources]
-- [Related bug reports or issues]
+- [相关文档、规格、图示或外部资源]
+- [相关缺陷报告或 issue]
 
 ---
 
 **Template Usage:**
-**Locale (en-GB):** Use UK English in instructional prose (colour, organise, realise, centre).
+**本地化 (zh-CN)：** 指导性正文使用简体技术中文。
 
-- Copy this template when creating a new Bug Report
-- Fill in all relevant sections
-- Use the "Intake Decision" section to track the FR/BR → Task → Story → Epic conversion
-- Link to the created Task/Story/Epic for traceability
-- **CRITICAL:** Fixes must be verified through testing before being marked as "Fixed" in changelogs
+- 创建新 Bug Report 时复制本模板
+- 填写所有相关章节
+- 使用「Intake Decision」章节跟踪 FR/BR → Task → Story → Epic 转换
+- 链接已创建的 Task/Story/Epic 以保持可追溯性
+- **关键：** 修复须经测试验证后，方可在 changelog 中标记为「Fixed」
 
 ---
 
 _This template is part of the Kanban Framework. See `packages/frameworks/kanban/` for complete framework documentation._
-

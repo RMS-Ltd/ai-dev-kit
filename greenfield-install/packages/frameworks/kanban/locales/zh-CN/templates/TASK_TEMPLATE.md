@@ -30,21 +30,21 @@ housekeeping_policy: keep
 
 ## Scope
 
-[Clear description of what this task accomplishes. What problem does it solve? What value does it deliver?]
+[清晰描述本 task 要完成什么。解决什么问题？交付什么价值？]
 
 ---
 
 ## Input
 
-[What is required to start this task? Dependencies, prerequisites, inputs from other tasks or external sources.]
+[启动本 task 需要什么？依赖、前置条件、来自其他 task 或外部的输入。]
 
-**IPW planning artifact (when used):** If you ran **IPW** / **IPW E:S:T** for this task, link the plan doc here (and under **References**) using the **same relative path** in both places. The plan doc must link back to this task in its **Host Task** header (**FR-042**).
+**IPW planning artifact (when used):** 若为本 task 运行了 **IPW** / **IPW E:S:T**，在此（及 **References** 下）用**相同相对路径**链接计划文档。计划文档须在其 **Host Task** 页眉回链至本 task（**FR-042**）。
 
 ---
 
 ## Deliverable
 
-[What is produced by this task? Specific artifacts, documents, code, or outcomes.]
+[本 task 产出什么？具体制品、文档、代码或结果。]
 
 ---
 
@@ -82,20 +82,20 @@ housekeeping_policy: keep
 
 ## Cross-Wiring
 
-> **Bidirectional Wiring Required:** Every cross-wire must be bidirectional. If Task A links to Task B, Task B must link back to Task A. See [`BIDIRECTIONAL_WIRING_PRINCIPLE.md`](../../../docs/governance/principles/bidirectional-wiring-principle.md) for complete guidance.
+> **Bidirectional Wiring Required:** 每条交叉连线必须双向。若 Task A 链接 Task B，Task B 必须回链 Task A。完整指引见 [`BIDIRECTIONAL_WIRING_PRINCIPLE.md`](../../../docs/governance/principles/bidirectional-wiring-principle.md)。
 >
-> **Context Required:** Every cross-wire must include context explaining *why* tasks are related. Generic links (e.g., "related task") are prohibited.
+> **Context Required:** 每条交叉连线必须说明*为何*相关。禁止泛化链接（例如「相关 task」）。
 >
-> **See:** [`task-template-cross-wiring-sop.md`](../../../docs/architecture/standards-and-adrs/task-template-cross-wiring-sop.md) for the Standard Operating Procedure.
+> **See:** 标准作业程序见 [`task-template-cross-wiring-sop.md`](../../../docs/architecture/standards-and-adrs/task-template-cross-wiring-sop.md)。
 
 **Relationship Types:**
 
-- **Complements** — Tasks that work together to achieve a goal
-- **Coordinates With** — Tasks that need to be synchronized
-- **Informs** — Tasks that provide context or information
-- **Follows** — Tasks that logically come after (non-blocking)
-- **Precedes** — Tasks that logically come before (non-blocking)
-- **Related To** — General relationship (use when specific type doesn't fit)
+- **Complements** — 协同达成目标的 task
+- **Coordinates With** — 需要同步的 task
+- **Informs** — 提供上下文或信息的 task
+- **Follows** — 逻辑上在后的 task（非阻塞）
+- **Precedes** — 逻辑上在前的 task（非阻塞）
+- **Related To** — 一般关系（无更合适类型时使用）
 
 **Related Tasks:**
 
@@ -108,7 +108,7 @@ housekeeping_policy: keep
 
 **Cross-Wiring Notes:**
 
-[Additional notes about cross-wiring, coordination requirements, or relationship context]
+[关于交叉连线、协调要求或关系上下文的补充说明]
 
 ### Dependencies vs Cross-Wiring
 
@@ -116,7 +116,7 @@ housekeeping_policy: keep
 |--------|-------------|--------------|
 | **Nature** | Blocking / sequential | Contextual / informational |
 | **Direction** | `Depends On` / `Blocks` | Bidirectional (always both ways) |
-| **Usage** | Task cannot start until dependency resolves | Tasks can proceed independently but share context |
+| **Usage** | 依赖未解决前 task 不能启动 | task 可独立推进但共享上下文 |
 | **Examples** | "Blocked by: E02:S01:T01" | "Informs: E02:S01:T03 — provides analysis for design" |
 
 ### Cross-Wiring Examples
@@ -140,7 +140,7 @@ housekeeping_policy: keep
 
 ## Related Work
 
-> **Bidirectional Wiring Reminder:** Every link in this section must be bidirectional. If you link to a BR/FR, task, or story, that item must link back to this task. See [`BIDIRECTIONAL_WIRING_PRINCIPLE.md`](../../../docs/governance/principles/bidirectional-wiring-principle.md) for guidance. For task-to-task relationships with relationship types, use the **Cross-Wiring** section above.
+> **Bidirectional Wiring Reminder:** 本节每条链接必须双向。若链接 BR/FR、task 或 story，对方必须回链本 task。指引见 [`BIDIRECTIONAL_WIRING_PRINCIPLE.md`](../../../docs/governance/principles/bidirectional-wiring-principle.md)。带关系类型的 task 间关系请使用上方 **Cross-Wiring** 章节。
 
 **Related BR/FR Links:**
 - [BR-XXX: Bug Report Title](path/to/BR-XXX.md) — *Bidirectional: BR must link back to this task in its Kanban Links section*
@@ -159,29 +159,29 @@ housekeeping_policy: keep
 **Forensic Marker Format:** `✅ COMPLETE (vRC.E.S.T+B)` (e.g., `✅ COMPLETE (v0.4.11.1+1)`)
 
 **When Task is Complete:**
-- Add forensic marker to Task document
-- Add forensic marker to Story checklist
-- Update version file with task completion
-- Update changelog with task completion
+- 在 Task 文档添加 forensic marker
+- 在 Story checklist 添加 forensic marker
+- 更新 version 文件中的 task 完成信息
+- 在 changelog 中记录 task 完成
 
 ---
 
-## Notes
+## 备注
 
-[Additional notes, context, or considerations for this task.]
+[本 task 的补充说明、上下文或考量。]
 
 ---
 
 ## Completion Summary
 
-[To be filled when task is complete. What was delivered? Lessons learned? Metrics achieved?]
+[task 完成时填写。交付了什么？经验教训？达成了哪些指标？]
 
 ---
 
-## References
+## 参考
 
-- [Related docs, PRs, commits, diagrams]
-- [External resources, documentation, standards]
+- [相关文档、PR、commit、图示]
+- [外部资源、文档、标准]
 
 ---
 
@@ -192,4 +192,4 @@ housekeeping_policy: keep
 
 ---
 
-**Locale (en-GB):** Use UK English in instructional prose (colour, organise, realise, centre).
+**本地化 (zh-CN)：** 指导性正文使用简体技术中文。

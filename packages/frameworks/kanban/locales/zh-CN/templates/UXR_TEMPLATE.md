@@ -16,42 +16,42 @@ housekeeping_policy: keep
 
 ---
 
-## Summary
+## 摘要
 
-[One sentence summary of the UX research findings.]
-
----
-
-## Research Objective
-
-[What was the goal of this research? What question were you trying to answer?]
+[用一句话概括 UX 研究结论。]
 
 ---
 
-## Methodology
+## 研究目标
 
-**Research Method:** [e.g., user interviews, usability testing, surveys, field studies]  
-**Participants:** [Number and description of participants]  
-**Duration:** [Duration of study]  
-**Tools/Platforms:** [Tools or platforms used for research]
+[本研究的目标是什么？要回答什么问题？]
+
+---
+
+## 方法论
+
+**Research Method:** [例如：用户访谈、可用性测试、问卷、实地研究]  
+**Participants:** [参与者数量与描述]  
+**Duration:** [研究时长]  
+**Tools/Platforms:** [研究所用工具或平台]
 
 **Research Details:**
-- [Additional methodology details]
+- [补充方法论细节]
 
 ---
 
-## Key Findings
+## 主要发现
 
-[Main findings from the research. Include:]
+[研究的主要发现。请包含：]
 - Finding 1
 - Finding 2
 - Finding 3
 
 ---
 
-## User Pain Points
+## 用户痛点
 
-[What problems or frustrations did users experience?]
+[用户遇到哪些问题或挫折？]
 
 - Pain point 1
 - Pain point 2
@@ -59,22 +59,22 @@ housekeeping_policy: keep
 
 ---
 
-## Recommendations
+## 建议
 
-[What actions should be taken based on these findings?]
+[基于发现应采取哪些行动？]
 
 - [ ] Recommendation 1: [Description]
 - [ ] Recommendation 2: [Description]
 - [ ] Recommendation 3: [Description]
 
 **Priority Order:**
-1. [Highest priority recommendation]
-2. [Second priority recommendation]
-3. [Third priority recommendation]
+1. [最高优先级建议]
+2. [次高优先级建议]
+3. [第三优先级建议]
 
 ---
 
-## Affected Areas
+## 受影响范围
 
 **Affected Components:**
 - [ ] UI Components
@@ -84,25 +84,25 @@ housekeeping_policy: keep
 - [ ] Other: [specify]
 
 **Specific Areas:**
-- [List specific UI components, features, or flows affected]
+- [列出受影响的 UI 组件、功能或流程]
 
 ---
 
-## Supporting Evidence
+## 支撑证据
 
 **Research Artifacts:**
-- [Link to recordings, transcripts, notes, or other supporting materials]
-- [Link to research data or analysis]
-- [Link to visualizations or diagrams]
+- [链接至录音、转录、笔记或其他支撑材料]
+- [链接至研究数据或分析]
+- [链接至可视化或图示]
 
 **Quotes or Examples:**
-- [Relevant user quotes or examples]
+- [相关用户引述或示例]
 
 ---
 
-## Next Steps
+## 后续步骤
 
-[What should happen next?]
+[接下来应做什么？]
 
 - [ ] Next step 1
 - [ ] Next step 2
@@ -110,16 +110,16 @@ housekeeping_policy: keep
 
 ---
 
-## Dependencies
+## 依赖
 
 **Blocks:**
-- [What this UXR blocks]
+- [本 UXR 阻塞的内容]
 
 **Blocked By:**
-- [What blocks this UXR]
+- [阻塞本 UXR 的内容]
 
 **Related Work:**
-- [Related FRs, BRs, Stories, or Epics]
+- [相关 FR、BR、Story 或 Epic]
 
 ---
 
@@ -147,29 +147,28 @@ housekeeping_policy: keep
 
 ---
 
-## Notes
+## 备注
 
-[Additional notes, context, or considerations]
+[补充说明、上下文或考量]
 
 ---
 
-## References
+## 参考
 
-- [Related documentation, research papers, external resources]
-- [Related UX research or usability studies]
+- [相关文档、研究论文或外部资源]
+- [相关 UX 研究或可用性研究]
 - [GitHub Issue: #[number]](https://github.com/[org]/[repo]/issues/[number])
 
 ---
 
 **Template Usage:**
-**Locale (en-GB):** Use UK English in instructional prose (colour, organise, realise, centre).
+**本地化 (zh-CN)：** 指导性正文使用简体技术中文。
 
-- Copy this template when creating a new User Experience Research report
-- Fill in all relevant sections
-- Use the "Intake Decision" section to track the UXR → Task → Story → Epic conversion
-- Link to the created Task/Story/Epic for traceability
+- 创建新 User Experience Research 报告时复制本模板
+- 填写所有相关章节
+- 使用「Intake Decision」章节跟踪 UXR → Task → Story → Epic 转换
+- 链接已创建的 Task/Story/Epic 以保持可追溯性
 
 ---
 
 _This template is part of the Kanban Framework. See `packages/frameworks/kanban/` for complete framework documentation._
-

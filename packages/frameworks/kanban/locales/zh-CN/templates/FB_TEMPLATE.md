@@ -17,19 +17,19 @@ housekeeping_policy: keep
 
 ---
 
-## Summary
+## 摘要
 
-[One sentence summary of the feedback.]
+[用一句话概括反馈内容。]
 
 ---
 
 ## UAT Context
 
-**Project/Organization:** [Name of project or organization conducting UAT]  
-**Component Tested:** [e.g., Kanban Framework, Release Workflow, Versioning Framework]  
+**Project/Organization:** [开展 UAT 的项目或组织名称]  
+**Component Tested:** [例如：Kanban Framework、Release Workflow、Versioning Framework]  
 **Version Tested:** [Version number or commit hash]  
 **Testing Period:** [Start date] to [End date]  
-**UAT Scope:** [Brief description of what was tested and acceptance criteria]
+**UAT Scope:** [简要描述测试范围与验收标准]
 
 **UAT Methodology:**
 - [ ] Functional Testing (does it work as specified?)
@@ -39,7 +39,7 @@ housekeeping_policy: keep
 - [ ] Other: [specify]
 
 **Acceptance Criteria Tested:**
-[List the specific acceptance criteria or requirements that were tested]
+[列出所测试的具体验收标准或需求]
 - Criterion 1: [Description]
 - Criterion 2: [Description]
 - Criterion 3: [Description]
@@ -50,7 +50,7 @@ housekeeping_policy: keep
 
 ### Acceptance Criteria Results
 
-[For each acceptance criterion, document the test result]
+[针对每条验收标准记录测试结果]
 
 **Criterion 1: [Description]**
 - **Status:** [PASS/FAIL/PARTIAL]
@@ -76,7 +76,7 @@ housekeeping_policy: keep
 
 ### What Worked as Expected
 
-[What aspects passed UAT and worked as specified/advertised?]
+[哪些方面通过 UAT，符合规格/宣传？]
 
 - Aspect 1: [Description with evidence]
 - Aspect 2: [Description with evidence]
@@ -84,7 +84,7 @@ housekeeping_policy: keep
 
 ### Issues Found (Failures)
 
-[What acceptance criteria failed or did not work as specified?]
+[哪些验收标准未通过或不符合规格？]
 
 - **Issue 1:** [Criterion that failed]
   - **Expected:** [What was expected]
@@ -119,35 +119,35 @@ housekeeping_policy: keep
 
 ### Functionality
 
-[Detailed feedback on functionality]
+[功能方面的详细反馈]
 
 - Finding 1: [Description]
 - Finding 2: [Description]
 
 ### Usability
 
-[Feedback on ease of use, documentation, onboarding]
+[易用性、文档、上手体验方面的反馈]
 
 - Finding 1: [Description]
 - Finding 2: [Description]
 
 ### Performance
 
-[Feedback on performance, speed, resource usage]
+[性能、速度、资源占用方面的反馈]
 
 - Finding 1: [Description]
 - Finding 2: [Description]
 
 ### Documentation
 
-[Feedback on documentation quality, completeness, clarity]
+[文档质量、完整性、清晰度方面的反馈]
 
 - Finding 1: [Description]
 - Finding 2: [Description]
 
 ### Integration
 
-[Feedback on integration with other tools/systems]
+[与其他工具/系统集成方面的反馈]
 
 - Finding 1: [Description]
 - Finding 2: [Description]
@@ -156,30 +156,30 @@ housekeeping_policy: keep
 
 ## Use Case Details
 
-**Primary Use Case:** [How was this component used?]
+**Primary Use Case:** [该组件如何被使用？]
 
-**Project Type:** [e.g., New project, Existing project migration, Framework adoption]
+**Project Type:** [例如：新项目、既有项目迁移、框架采用]
 
-**Project Size:** [e.g., Small, Medium, Large, Enterprise]
+**Project Size:** [例如：Small, Medium, Large, Enterprise]
 
-**Team Size:** [Number of team members using the component]
+**Team Size:** [使用该组件的团队成员数量]
 
-**Duration of Use:** [How long has it been in use?]
+**Duration of Use:** [已使用多长时间？]
 
 ---
 
 ## Supporting Evidence
 
 **Test Results:**
-- [Link to test results, screenshots, or other evidence]
-- [Link to test reports or documentation]
+- [链接至测试结果、截图或其他证据]
+- [链接至测试报告或文档]
 
 **Examples:**
-- [Specific examples or scenarios]
-- [Code snippets or configurations]
+- [具体示例或场景]
+- [代码片段或配置]
 
 **Metrics:**
-- [Any quantitative metrics or measurements]
+- [任何量化指标或测量值]
 
 ---
 
@@ -203,24 +203,24 @@ housekeeping_policy: keep
 
 ## Recommendations
 
-[What actions should be taken based on this feedback?]
+[基于本反馈应采取哪些行动？]
 
 - [ ] Recommendation 1: [Description]
 - [ ] Recommendation 2: [Description]
 - [ ] Recommendation 3: [Description]
 
 **Priority Order:**
-1. [Highest priority recommendation]
-2. [Second priority recommendation]
-3. [Third priority recommendation]
+1. [最高优先级建议]
+2. [次高优先级建议]
+3. [第三优先级建议]
 
 ---
 
 ## Related Work
 
-**Related BRs:** [Bug reports filed as a result of this feedback]
-**Related FRs:** [Feature requests filed as a result of this feedback]
-**Related UXR:** [User experience research related to this feedback]
+**Related BRs:** [基于本反馈提交的 Bug Report]
+**Related FRs:** [基于本反馈提交的 Feature Request]
+**Related UXR:** [与本反馈相关的用户体验研究]
 
 ---
 
@@ -245,13 +245,13 @@ housekeeping_policy: keep
 
 ---
 
-## Notes
+## 备注
 
-[Additional notes or context]
+[补充说明或上下文]
 
 ---
 
 **Template Usage:**
-**Locale (en-GB):** Use UK English in instructional prose (colour, organise, realise, centre).
- This FB follows the Kanban framework feedback template. Feedback submissions help improve the framework and are valuable for continuous improvement.
+**本地化 (zh-CN)：** 指导性正文使用简体技术中文。
 
+本 FB 遵循 Kanban framework 反馈模板。反馈提交有助于改进框架，对持续改进具有重要价值。
