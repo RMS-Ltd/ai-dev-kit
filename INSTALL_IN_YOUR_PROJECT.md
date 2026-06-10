@@ -266,14 +266,17 @@ The RW installer exits with the same guidance if PyYAML is missing (BR-082).
 
 ### Post-kanban RW install (`--mode c` pattern defaults)
 
-After `install_kanban_framework.py --mode fresh`, on-disk layout is typically:
+After `install_kanban_framework.py --mode fresh`, the installer ships the **Kanban v3.2.0 Small-tier** catalog (E01–E10): FR/BR/UXR intake lives under **E04:S02–S04**, not standalone Epic 5–7. Epic 5 is **Project Architecture**. Verify with `validate_kanban_v32_fingerprint.py --strict --kanban-path docs/kanban`.
+
+On-disk layout is typically:
 
 ```text
 docs/kanban/
   kboard.md                    # sole active MoSCOW board (ADR-018)
   kanban-structure.md
-  epics/epic-01/epic-01.md     # lowercase fresh install (UXR-017); legacy Epic-/Story- also supported
-  epics/epic-01/story-009-*.md
+  epics/epic-01/epic-01.md     # Repository Infrastructure & Maintenance (v3.2)
+  epics/epic-04/story-02-fr-implementation.md
+  epics/epic-05/epic-05.md     # Project Architecture (not v1 FR Implementation)
 ```
 
 Per [ADR-018](docs/architecture/standards-and-adrs/ADR-018-single-kanban-board-consolidation.md), fresh installs emit **`kboard.md` only** — no `fbuboard.md` or `kanban-board.md` redirect stubs.

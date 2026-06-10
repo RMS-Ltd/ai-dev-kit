@@ -11,8 +11,8 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
-## [0.8.3.20+1] - 10-06-26
+## [0.6.9.27+1] - 10-06-26
 
-E08:S03:T20 — README Python prerequisites aligned to 3.11+ (UXR-026 regression fix). SemVer **v0.4.1131+1**.
+E06:S09:T27 — Kanban v3.2 greenfield installer (F9/F17): `--mode fresh` ships v3.2 catalog; unblocks SBL attempt 05. SemVer **v0.4.1132+1**.
 
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.8.3.20+1.md)
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.6.9.27+1.md)

@@ -264,10 +264,22 @@ class KanbanStructureMigrator:
         Resolve canonical epic template for a given epic number (BR-079 / E06:S09:T08).
 
         Search order:
+        0. v3.2 slug from ``kanban_v32_catalog.V32_EPIC_TEMPLATE_SLUGS`` (E06:S09:T27)
         1. ``templates/epics/epic-{n}-*.md`` (primary pack layout)
         2. ``templates/epic-{n}/epic-{n}.md`` (directory layout for 22, 23, etc.)
         """
         template_dir = self._get_template_path()
+        try:
+            from kanban_v32_catalog import V32_EPIC_TEMPLATE_SLUGS
+
+            slug = V32_EPIC_TEMPLATE_SLUGS.get(epic_num)
+            if slug:
+                explicit = template_dir / f"{slug}.md"
+                if explicit.is_file():
+                    return explicit
+        except ImportError:
+            pass
+
         sn = kp.segment_number(epic_num)
         for pattern in (
             f"epic-{sn}-*.md",
@@ -300,16 +312,20 @@ class KanbanStructureMigrator:
         return content
     
     def _install_canonical_epics(self):
-        """Install canonical core epics (1-8, 10, 18, 22, 23) from templates."""
+        """Install v3.2 Small-tier epics (E01–E10) from templates (E06:S09:T27)."""
         if self.mode == "hybrid":
             print("🔧 Hybrid mode: Installing canonical core epics alongside project epics...")
         elif self.mode == "canonical_adoption":
             print("🔧 Canonical adoption mode: Installing canonical core epics...")
         else:
-            print("🔧 Installing canonical core epics from templates...")
-        
-        # Canonical core epics: 1-8, 10, 18, 22, 23
-        canonical_core_epics = [1, 2, 3, 4, 5, 6, 7, 8, 10, 18, 22, 23]
+            print("🔧 Installing Kanban v3.2 Small-tier epics from templates...")
+
+        try:
+            from kanban_v32_catalog import fresh_epic_list
+
+            canonical_core_epics = fresh_epic_list()
+        except ImportError:
+            canonical_core_epics = [1, 2, 3, 4, 5, 6, 7, 8, 10, 18, 22, 23]
         
         # Get project name for contextualization
         project_name = self._get_project_name()
@@ -403,6 +419,64 @@ class KanbanStructureMigrator:
                 "epic_number": epic_num,
                 "path": str(epic_dir.relative_to(self.kanban_path)),
                 "source": "canonical_template" if template_used else "canonical_framework"
+            })
+
+    def _install_v32_core_stories(self):
+        """Install v3.2 core stories for fresh mode (FR/BR/UXR under E04)."""
+        try:
+            from kanban_v32_catalog import V32_FRESH_STORIES
+        except ImportError:
+            return
+
+        script_dir = Path(__file__).parent
+        stories_root = script_dir.parent / "templates" / "stories"
+        if not stories_root.is_dir():
+            stories_root = script_dir.parent / "templates"
+
+        print("🔧 Installing Kanban v3.2 core stories...")
+        for epic_num, story_num in V32_FRESH_STORIES:
+            epic_dir = self.kanban_path / "epics" / kp.epic_dir_name(epic_num)
+            if self.dry_run:
+                print(f"  🔍 [DRY RUN] Would install E{epic_num:02d}:S{story_num:02d} story")
+                continue
+
+            epic_dir.mkdir(parents=True, exist_ok=True)
+            sn = kp.segment_number(story_num)
+            en = kp.segment_number(epic_num)
+            candidates = sorted(
+                (stories_root / kp.epic_dir_name(epic_num)).glob(f"story-{sn}*.md")
+            )
+            if not candidates:
+                candidates = sorted(
+                    (stories_root / f"epic-{en}").glob(f"story-{sn}*.md")
+                )
+            if not candidates:
+                stub_name = f"story-{sn}-v32-placeholder.md"
+                dest = epic_dir / stub_name
+                if not dest.exists():
+                    dest.write_text(
+                        f"# Epic {epic_num}, Story {story_num}: [v3.2 story]\n\n"
+                        f"*Kanban v3.2 core story stub — extend from package templates.*\n",
+                        encoding="utf-8",
+                    )
+                    print(f"  ⚠️  E{epic_num}:S{story_num} story stub (no template found)")
+                continue
+
+            src = candidates[0]
+            dest = epic_dir / src.name
+            if dest.exists():
+                continue
+            content = src.read_text(encoding="utf-8")
+            project_name = self._get_project_name()
+            content = self._contextualize_template(content, project_name)
+            dest.write_text(content, encoding="utf-8")
+            print(f"  ✅ E{epic_num}:S{story_num} installed from {src.name}")
+            self.migration_log.append({
+                "type": "story",
+                "action": "installed",
+                "epic_number": epic_num,
+                "story_number": story_num,
+                "path": str(dest.relative_to(self.kanban_path)),
             })
     
     def _adopt_canonical_structure(self):
@@ -875,8 +949,9 @@ def install_canonical_epics_only(
         force=force,
     )
 
-    # Directly install canonical epics without full migrate() pipeline
+    # Directly install canonical epics + v3.2 core stories without full migrate() pipeline
     migrator._install_canonical_epics()
+    migrator._install_v32_core_stories()
 
     epics_installed = len([e for e in migrator.migration_log if e.get("type") == "epic"])
     files_created = len([e for e in migrator.migration_log if e.get("action") == "installed"])

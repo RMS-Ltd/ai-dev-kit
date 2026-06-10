@@ -1,0 +1,41 @@
+{
+  "session_id": "20260610-attempt-04",
+  "generated_at": "2026-06-10T17:10:00Z",
+  "path_convention": "paths relative to starborn_legacy project root",
+  "transcripts": [
+    "logs/ai-dev-kit/install/attempt-04/transcripts/20260610T170647Z-preflight.txt",
+    "logs/ai-dev-kit/install/attempt-04/transcripts/20260610T170700Z-phase1-download.txt",
+    "logs/ai-dev-kit/install/attempt-04/transcripts/20260610T170728Z-phase1-verify.txt",
+    "logs/ai-dev-kit/install/attempt-04/transcripts/20260610T170732Z-phase1-inspect.txt",
+    "logs/ai-dev-kit/install/attempt-04/transcripts/20260610T170746Z-phase2-venv.txt",
+    "logs/ai-dev-kit/install/attempt-04/transcripts/20260610T170754Z-phase2-verify.txt",
+    "logs/ai-dev-kit/install/attempt-04/transcripts/20260610T170840Z-phase3a-rw-bootstrap.txt",
+    "logs/ai-dev-kit/install/attempt-04/transcripts/20260610T170846Z-phase3b-legacy-restore.txt",
+    "logs/ai-dev-kit/install/attempt-04/transcripts/20260610T170900Z-phase3c-kanban-fresh.txt",
+    "logs/ai-dev-kit/install/attempt-04/transcripts/20260610T170924Z-phase3d-rw-kanban-config.txt",
+    "logs/ai-dev-kit/install/attempt-04/transcripts/20260610T170935Z-phase4-validate.txt",
+    "logs/ai-dev-kit/install/attempt-04/transcripts/20260610T170941Z-phase4-signoff.txt"
+  ],
+  "configs": [
+    "rw-config.yaml",
+    "ai-dev-kit-config.yaml"
+  ],
+  "outputs": [
+    "rw-config.yaml",
+    "docs/kanban/kboard.md",
+    "docs/kanban/kanban-structure.md",
+    "docs/kanban/kanban-board-guide.md",
+    "docs/kanban/epics/",
+    "KB/PM_and_Portfolio/epics/overview/KANBAN_BOARD.md",
+    "src/starborn_legacy/version.py",
+    "CHANGELOG.md",
+    ".cursorrules",
+    "logs/ai-dev-kit/install/attempt-04/signoff-report.json",
+    "logs/ai-dev-kit/install/attempt-04/session.log",
+    ".venv-adk/",
+    "vendor/ai-dev-kit/"
+  ],
+  "zip_bundle_project_root": "starborn-legacy-adk-feedback-attempt04.zip",
+  "package_status": "final",
+  "finalized_at": "2026-06-10T17:10:00Z"
+}

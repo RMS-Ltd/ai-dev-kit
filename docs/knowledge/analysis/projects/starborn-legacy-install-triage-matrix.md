@@ -17,7 +17,7 @@ housekeeping_policy: keep
 
 **Task (attempt 3+):** [E06:S09:T26](../../../kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T26-starborn-legacy-adk-install-program.md)
 
-**Attempt artifacts:** [attempt-02](../../../../adk-install-into-sbl/attempt-02/greenfield-install-diary.md) · [attempt-03](../../../../adk-install-into-sbl/attempt-03/README.md) · [FB package](../../../../starborn-legacy-adk-feedback-attempt03/SUBMISSION.md) (repo root)
+**Attempt artifacts:** [attempt-02](../../../../adk-install-into-sbl/attempt-02/greenfield-install-diary.md) · [attempt-03](../../../../adk-install-into-sbl/attempt-03/README.md) · [FB 03](../../../../starborn-legacy-adk-feedback-attempt03/SUBMISSION.md) · [FB 04](../../../../adk-install-attempt-4-fb-package/SUBMISSION.md) (repo root)
 
 ---
 
@@ -41,7 +41,10 @@ housekeeping_policy: keep
 | F14 | Dual kanban test bed required manual 4-step sequence (3a→restore→3b→3c) | MEDIUM | **DOC + CODE** | Documented profile or orchestrator phases |
 | F15 | Migration not started — `KB/` → `docs/kanban` detector pending | INFO | **RECORD** | Next SBL session |
 | F16 | Fresh install = v1 catalog; adopter diary labels “ADK v3 Kanban” (consumer layout ≠ v3.2 spec) | MEDIUM | **DOC** | Terminology: `docs/kanban/` layout vs Kanban v3.2 package rewrite |
-| F17 | Attempt 03 installed v1 again — `E05 FR Implementation` on disk; blocks SBL → v3.2 migration test | **CRITICAL** | **PRODUCT** | Same root cause as F9; third independent proof @ `v0.4.13` |
+| F17 | Attempts 03–04 installed v1 again — `E05 FR Implementation` on disk; blocks SBL → v3.2 migration test | **CRITICAL** | **PRODUCT** | Same root cause as F9; **fourth** proof @ `v0.4.1131` (attempt 04) |
+| F18 | BR-086 expects `{story:03d}` / `t{task`; fresh install produces `{story:02d}` / `T{task}` | MEDIUM | **CODE** | Align sign-off contract or installer template padding |
+| F19 | `--non-interactive` EOFError on `version_file` scaffold prompt | HIGH | **CODE** | `install_release_workflow.py` must not prompt when non-interactive |
+| F20 | Mode a default `version_file: src/myproject/version.py` — not project-aware | MEDIUM | **CODE** | Derive from project name / layout |
 
 ---
 
@@ -99,6 +102,33 @@ housekeeping_policy: keep
 | Catalog | 1–8, 10, 18, 22, 23 from `_install_canonical_epics` | v3.2 remap per [07-package-migration-blueprint](../kanban-v2/07-package-migration-blueprint.md) |
 
 **Requested maintainer actions:** INSTALL v1-only warning; orchestrator skip-Kanban (F10); migration-test-bed recipe (F12–F14); optional sign-off v1 fingerprint gate.
+
+---
+
+## Attempt 4 addendum (2026-06-10) — [E06:S09:T26](../../../kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T26-starborn-legacy-adk-install-program.md)
+
+| Topic | Result |
+|-------|--------|
+| ADK pin | `v0.4.1131` greenfield tarball (sha256 verified) |
+| Adopter expectation | Re-test whether F17 resolved in newer ADK release |
+| Catalog generation (F9/F17) | **BLOCKER — unchanged** — epic-05 title still **“Epic 5: FR Implementation”**; **fourth** independent v1 proof |
+| Root cause (confirmed) | `migrate_structure._install_canonical_epics()` + v1 `packages/frameworks/kanban/templates/` — [v3.2 package blueprint](../kanban-v2/07-package-migration-blueprint.md) Waves 1–4 **not executed** (gated on Phase 5 sign-off) |
+| Orchestrator (F10) | **Not addressed** — no `--skip-kanban` |
+| Dual kanban test bed | **PASS** — 4-step sequence reliable |
+| BR-084 / UXR-017 | **READY** — improvements since attempt 03 |
+| BR-086 | **NOT READY** — F18 contract vs reality mismatch |
+| New findings | **F18–F20** — padding, non-interactive EOF, default version path |
+| FB package | [adk-install-attempt-4-fb-package](../../../../adk-install-attempt-4-fb-package/SUBMISSION.md) — FR-079 intake **accepted** |
+
+### Why attempt 04 still got v1 (not a failed fix)
+
+| What improved in ADK | What did **not** change |
+|----------------------|-------------------------|
+| F4/F5 orchestrator (T25) | Kanban template tree |
+| BR-084 task_doc_pattern | `_install_canonical_epics` epic list (1–8, 10, 18, 22, 23) |
+| UXR-017 lowercase path validators | v3.2 remap (FR → E04:S02, etc.) |
+
+**Conclusion:** Any ADK release that ships the current `greenfield-install/` kanban templates will reproduce F17 until the v3.2 **package rewrite** lands or INSTALL explicitly documents v1-only `--mode fresh`.
 
 ---
 
