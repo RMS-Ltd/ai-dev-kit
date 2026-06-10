@@ -16,16 +16,24 @@ def current_schema_version(conn: sqlite3.Connection) -> int:
     return int(row["version"])
 
 
-def migrate_to_v2(conn: sqlite3.Connection) -> None:
-    """Add semver_core column and UNIQUE constraints on semver_core / semver_full."""
+def _semver_core_column_exists(conn: sqlite3.Connection) -> bool:
     cols = {
         row["name"]
         for row in conn.execute("PRAGMA table_info(task_touch_mapping)").fetchall()
     }
-    if "semver_core" not in cols:
-        conn.execute(
-            "ALTER TABLE task_touch_mapping ADD COLUMN semver_core TEXT"
-        )
+    return "semver_core" in cols
+
+
+def migrate_to_v2(conn: sqlite3.Connection) -> None:
+    """Add semver_core column and UNIQUE constraints on semver_core / semver_full."""
+    if not _semver_core_column_exists(conn):
+        try:
+            conn.execute(
+                "ALTER TABLE task_touch_mapping ADD COLUMN semver_core TEXT"
+            )
+        except sqlite3.OperationalError as exc:
+            if "duplicate column" not in str(exc).lower():
+                raise
         conn.execute(
             """
             UPDATE task_touch_mapping
@@ -68,6 +76,13 @@ def migrate_to_v2(conn: sqlite3.Connection) -> None:
 
 
 def run_migrations(conn: sqlite3.Connection) -> None:
-    version = current_schema_version(conn)
-    if version < 2:
-        migrate_to_v2(conn)
+    """Apply pending migrations under an exclusive transaction (parallel-safe)."""
+    conn.execute("BEGIN IMMEDIATE")
+    try:
+        version = current_schema_version(conn)
+        if version < 2:
+            migrate_to_v2(conn)
+        conn.execute("COMMIT")
+    except Exception:
+        conn.execute("ROLLBACK")
+        raise

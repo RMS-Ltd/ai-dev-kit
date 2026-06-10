@@ -11,8 +11,8 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
-## [0.2.1.30+8] - 10-06-26
+## [0.8.3.20+1] - 10-06-26
 
-E02:S01:T30 — FR-122 program sign-off: split-brain streak 13/10 (AC4 met); RW architectural contract meta-program COMPLETE. SemVer **v0.4.1129+8**.
+E08:S03:T20 — README Python prerequisites aligned to 3.11+ (UXR-026 regression fix). SemVer **v0.4.1131+1**.
 
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.1.30+8.md)
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.8.3.20+1.md)

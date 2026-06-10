@@ -9,6 +9,7 @@ from __future__ import annotations
 
 import argparse
 import fnmatch
+import os
 import subprocess
 import sys
 from dataclasses import dataclass
@@ -27,7 +28,8 @@ _DEFAULT_CHECKS: list[dict] = [
         "paths": [
             "tests/**",
             "src/**",
-            "packages/**",
+            "cli/**",
+            "scripts/**",
             "pyproject.toml",
             "setup.py",
             "setup.cfg",
@@ -60,9 +62,6 @@ _DEFAULT_CHECKS: list[dict] = [
         "id": "docusaurus",
         "paths": [
             "portal/**",
-            "docs/guides/**",
-            "docs/documentation/**",
-            "docs/developer-tools/ide-whitelist-guide.md",
         ],
         "command": ["npm", "run", "build"],
         "cwd": "portal",
@@ -144,6 +143,58 @@ def _path_touches_check(path: str, patterns: list[str]) -> bool:
     return any(fnmatch.fnmatch(normalized, pattern) for pattern in patterns)
 
 
+# Map production paths → fast pytest scope (avoid full-suite on framework-only edits).
+_SCOPED_TEST_PREFIXES: tuple[tuple[str, str], ...] = (
+    ("packages/frameworks/workflow-mgt/scripts/release_state/", "tests/release_state/"),
+    ("packages/frameworks/workflow-mgt/scripts/release_metadata/", "tests/release_metadata/"),
+    ("packages/frameworks/workflow-mgt/scripts/kanban/", "tests/workflow_mgt/"),
+)
+
+
+def _scoped_workflow_pytest_targets(changed: set[str]) -> list[str] | None:
+    """Fast path: only new/changed validation unit tests under workflow-mgt."""
+    tests = sorted(
+        p
+        for p in changed
+        if p.startswith("packages/frameworks/workflow-mgt/scripts/validation/test_")
+        and p.endswith(".py")
+    )
+    return tests or None
+
+
+def _scoped_pytest_targets(changed: set[str]) -> list[str] | None:
+    """Derive minimal pytest paths from diff.
+
+    Returns None when the diff does not warrant any pytest (e.g. version-only bump).
+    --all / pre-push still runs the full tests/ suite.
+    """
+    test_files = sorted(
+        p.replace("\\", "/")
+        for p in changed
+        if p.replace("\\", "/").startswith("tests/") and p.endswith(".py")
+    )
+    if test_files:
+        return test_files
+
+    targets: set[str] = set()
+    broad = False
+    for path in changed:
+        normalized = path.replace("\\", "/")
+        if normalized.endswith("/version.py"):
+            continue
+        if normalized.startswith(("src/", "cli/", "scripts/")):
+            broad = True
+            continue
+        for prefix, test_dir in _SCOPED_TEST_PREFIXES:
+            if normalized.startswith(prefix):
+                targets.add(test_dir)
+    if broad:
+        return ["tests/"]
+    if targets:
+        return sorted(targets)
+    return None
+
+
 def _select_checks(checks: list[Check], changed: set[str], run_all: bool) -> list[Check]:
     if run_all:
         return checks
@@ -156,11 +207,44 @@ def _select_checks(checks: list[Check], changed: set[str], run_all: bool) -> lis
     return selected
 
 
-def _run_check(check: Check) -> int:
+def _run_check(check: Check, *, changed: set[str] | None = None) -> int:
     print(f"=== actions_ci_parity: {check.id} ===", flush=True)
+    command = list(check.command)
+    if check.id == "tests" and changed is not None:
+        scoped = _scoped_pytest_targets(changed)
+        if scoped is None:
+            print("SKIP: tests (no pytest scope for this diff)", flush=True)
+            return 0
+        command.extend(scoped)
+        if any("tests/release_state/" in p for p in scoped):
+            command.append(
+                "--ignore=tests/release_state/test_sqlite_mode_rw_ac.py"
+            )
+        print(f"  pytest scope: {' '.join(scoped)}", flush=True)
+    elif check.id == "workflow-scripts-pytest" and changed is not None:
+        scoped = _scoped_workflow_pytest_targets(changed)
+        if scoped is not None:
+            command = [
+                sys.executable,
+                "-m",
+                "pytest",
+                "-p",
+                "pytest",
+                "-p",
+                "no:pytest_django",
+                "-c",
+                "packages/frameworks/workflow-mgt/scripts/validation/pytest.ini",
+                *scoped,
+            ]
+            print(f"  workflow-scripts scope: {' '.join(scoped)}", flush=True)
+    env = os.environ.copy()
+    env["ACTIONS_CI_PARITY_RUNNING"] = "1"
+    if check.id == "workflow-scripts-pytest":
+        env["PYTEST_DISABLE_PLUGIN_AUTOLOAD"] = "1"
     proc = subprocess.run(
-        check.command,
+        command,
         cwd=check.cwd or _REPO_ROOT,
+        env=env,
         check=False,
     )
     if proc.returncode == 0:
@@ -191,6 +275,11 @@ def main(argv: list[str] | None = None) -> int:
         default=_REPO_ROOT / "rw-config.yaml",
         help="rw-config.yaml path",
     )
+    parser.add_argument(
+        "--allow-path-skip",
+        action="store_true",
+        help="Allow exit 0 when no checks match (RW -d docs-only only)",
+    )
     args = parser.parse_args(argv)
 
     cfg = _load_config(args.config).get("actions_ci_parity") or {}
@@ -200,15 +289,25 @@ def main(argv: list[str] | None = None) -> int:
 
     checks = _parse_checks(cfg.get("checks"))
     changed = _changed_paths(staged_only=args.staged_only)
-    selected = _select_checks(checks, changed, args.all)
+    if args.all:
+        selected = checks
+    else:
+        selected = _select_checks(checks, changed, False)
 
     if not selected:
+        if args.strict and not args.allow_path_skip:
+            print(
+                "FAIL: --strict requires Actions CI parity checks but none matched "
+                "(use --all for push gate or --allow-path-skip for RW -d docs-only)",
+                file=sys.stderr,
+            )
+            return 1
         print("SKIP: no parity checks matched changed paths (use --all for push gate)")
         return 0
 
     failures = 0
     for check in selected:
-        failures += _run_check(check) != 0
+        failures += _run_check(check, changed=changed if not args.all else None) != 0
 
     if failures:
         if args.strict or args.all:

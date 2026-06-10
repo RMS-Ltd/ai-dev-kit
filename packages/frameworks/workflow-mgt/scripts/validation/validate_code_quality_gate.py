@@ -47,6 +47,12 @@ def main(argv: list[str] | None = None) -> int:
         print("SKIP: CQG not required for this implementation scope")
         return 0
 
+    print(
+        "NOTE: CQG (local CodeQL) is NOT the Actions CI ship gate. "
+        "RW Step 9.7 validate_actions_ci_parity.py mirrors Tests/Docusaurus/"
+        "Greenfield workflows; CQG runs at IDW Phase 6b only (ADR-022)."
+    )
+
     if not args.config.is_file():
         print(f"SKIP: rw-config.yaml not found at {args.config}", file=sys.stderr)
         return 0

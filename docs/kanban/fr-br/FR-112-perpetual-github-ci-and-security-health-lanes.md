@@ -13,7 +13,7 @@ housekeeping_policy: keep
 **Submitted:** 2026-06-05  
 **Submitted By:** User (via agent — CI/security ownership gap)  
 **Priority:** HIGH  
-**Status:** IN PROGRESS (T06 Wave 5 @ **v0.2.16.6+5** — manifest + manual maintainability burn-down; operator TC25 verify pending)  
+**Status:** IN PROGRESS (T05 Wave 4 @ pending RW — CQG≠CI ship gap; T06 Wave 5 operator TC25 verify pending)  
 **Implementing Tasks:**
 - **E02:S16:T05** — [GitHub Actions CI health (Perpetual)](../epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T05-github-actions-ci-health-perpetual.md) *(Historical Anchor: E08:S03:T15)*
 - **E02:S16:T06** — [GitHub Security & Code Quality health (Perpetual)](../epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T06-github-security-code-quality-health-perpetual.md) *(Historical Anchor: E08:S03:T16)*
@@ -38,7 +38,7 @@ Establish **two perpetual maintenance lanes** under **E02:S16** (T05/T06) so rec
 
 ### Functional
 
-- [ ] **FR-112:F1** — Perpetual task **E02:S16:T05** owns [GitHub Actions](https://github.com/RMS-Ltd/ai-dev-kit/actions) workflow health (Wave 2 MDX fix @ v0.8.3.15+3; pending Actions verify).
+- [x] **FR-112:F1** — Perpetual task **E02:S16:T05** owns [GitHub Actions](https://github.com/RMS-Ltd/ai-dev-kit/actions) workflow health (Wave 4 @ pending RW — Step 9.7 hardening + remote no-red-ship; [BR-104](BR-104-codeql-cqg-green-does-not-imply-actions-ci-green.md)).
 - [x] **FR-112:F2** — Perpetual task **E08:S03:T16** owns [code scanning](https://github.com/RMS-Ltd/ai-dev-kit/security/code-scanning) and [code quality](https://github.com/RMS-Ltd/ai-dev-kit/security/quality) ongoing hygiene (re-scans, routine waves, dismiss/verify). Wave 0 baseline @ v0.8.3.16+1.
 - [ ] **FR-112:F3** — Both tasks carry `Task Type: Perpetual Maintenance` and explicit scope boundaries (including handoff from T12–T14).
 - [x] **FR-112:F4** — Story 003 checklist and `kboard.md` **Ongoing (O)** band wired bidirectionally.

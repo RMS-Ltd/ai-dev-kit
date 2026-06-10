@@ -109,7 +109,7 @@ Steps 1–11 produce version anchors, changelogs, kanban reconciliation, **local
 - [x] **AC3:** Packaged + `greenfield-install/` mirrors aligned.
 - [x] **AC4:** Operator batch push runbook present in cheatsheet and vwmp guide.
 - [x] **AC5:** Agents skip Step 12/12.5 unless `--push` in user message (shipped **v0.2.16.21+1**).
-- [ ] **AC6:** RW Step **9.7** `validate_actions_ci_parity.py` blocking before commit; `--strict --all` before push/batch push (wired 2026-06-08; implementation via E08:S03:T15).
+- [x] **AC6:** RW Step **9.7** `validate_actions_ci_parity.py` blocking before commit (`--strict` no silent skip; `--allow-path-skip` for `RW -d` only); `--strict --all` + `validate_github_actions_remote.py --strict` before push/batch push (Wave 4 @ **E02:S16:T05** / [BR-104](BR-104-codeql-cqg-green-does-not-imply-actions-ci-green.md)).
 
 ---
 

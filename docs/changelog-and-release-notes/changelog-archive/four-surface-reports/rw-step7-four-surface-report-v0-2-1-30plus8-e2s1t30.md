@@ -1,52 +1,46 @@
 # RW Step 7 four-surface reconciliation report
 
-- **Contract:** FR-092 / ADR-018 (RW Step 7 four-surface reconciliation)
+- **Contract:** FR-092 / ADR-018 (RW Step 7 three-surface reconciliation)
 - **Invocation context:** rw_step_7
-- **Release scope:** E02:S01:T30 (v0.2.1.30+8)
-- **Timestamp (UTC):** 2026-06-10 15:56 UTC
+- **Release scope:** E2:S1:T30 (v0.2.1.30+8)
+- **Timestamp (UTC):** 2026-06-10 16:19 UTC
 
 ## Touched-surface summary
 
-- Touched: `task_doc, fbu_doc, kboard`
-- Untouched: `(none in release scope)`
-- Total changes recorded: 8
+- Touched: `(none)`
+- Untouched: `task_doc, fbu_doc, kboard`
+- Total changes recorded: 6
 
 ## Forensic stamp evidence (UXR-009 / FR-092 Wave 6)
 
 - Evidence mode: `work_authoritative`
 - Stamps appended with evidence: **0**
-- Stamps skipped (no evidence delta): **1** (kboard metadata only)
+- Stamps skipped (no evidence delta): **0**
 - Stamps preserved (existing footer): **0**
 
 ## Per-surface detail
 
 ### Surface: `task_doc`
 
-- Touched: **True**
-- Path(s):
-  - `docs/kanban/epics/epic-02/story-01-rw-agent-execution-and-docs/T30-rw-architectural-contract-release-transaction-fr122.md`
-- Changes:
-  - Status → COMPLETE (FR-122 AC4 sign-off; streak 13/10)
-  - Version anchor → v0.2.1.30+8
-  - Wave 8 sign-off evidence updated
+- Touched: **False**
+- Path(s): (none resolved)
+- Notes:
+  - No path resolved by RW Step 7. Task / FBU surfaces are owned by implementation execution; absence here is informational, not a failure.
 
 ### Surface: `fbu_doc`
 
-- Touched: **True**
-- Path(s):
-  - `docs/kanban/fr-br/FR-122-release-workflow-architectural-contract-release-transaction.md`
-- Changes:
-  - Status → COMPLETE
-  - AC4 checked (13/10 split-brain streak @ dev)
+- Touched: **False**
+- Path(s): (none resolved)
+- Notes:
+  - No path resolved by RW Step 7. Task / FBU surfaces are owned by implementation execution; absence here is informational, not a failure.
 
 ### Surface: `kboard`
 
-- Touched: **True**
+- Touched: **False**
 - Path(s):
-  - `docs/kanban/kboard.md`
-- Changes:
-  - Removed E02:S01:T30 from active Should Have (terminal COMPLETE → kanban-completed.md)
-  - Board metadata Last Updated / Version aligned to v0.2.1.30+8
+  - `/Users/rms/Documents/projects/ai-dev-kit/docs/kanban/kboard.md`
+- Notes:
+  - Surface within release scope but not touched by this run (idempotent no-op or already canonical).
 
 ## Auxiliary surfaces (Story / Epic propagation)
 
@@ -54,23 +48,23 @@
 
 - Touched: **True**
 - Path(s):
-  - `docs/kanban/epics/epic-02/story-01-rw-agent-execution-and-docs.md`
+  - `/Users/rms/Documents/projects/ai-dev-kit/docs/kanban/epics/epic-02/story-01-rw-agent-execution-and-docs.md`
 - Changes:
-  - T30 checklist → COMPLETE (v0.2.1.30+8)
-  - Story Last updated / Version → v0.2.1.30+8
+  - ✅ Story doc updated: /Users/rms/Documents/projects/ai-dev-kit/docs/kanban/epics/epic-02/story-01-rw-agent-execution-and-docs.md
 
-### Auxiliary: `kanban_completed`
+### Auxiliary: `epic_doc`
 
 - Touched: **True**
 - Path(s):
-  - `docs/kanban/kanban-completed.md`
+  - `/Users/rms/Documents/projects/ai-dev-kit/docs/kanban/epics/epic-02/epic-02.md`
 - Changes:
-  - Appended E02:S01:T30 completion entry
+  - Updated Epic Last updated: 2026-06-10 (v0.2.1.30+8 – Kanban documentation setup)
 
-### Auxiliary: `intake_completed`
+### Auxiliary: `uncategorized`
 
 - Touched: **True**
-- Path(s):
-  - `docs/kanban/intake-completed.md`
 - Changes:
-  - Appended FR-122 completion entry
+  - Updated Version: v0.2.1.30+8
+  - Updated Last updated: 2026-06-10 (v0.2.1.30+8 – Kanban documentation setup)
+  - Updated board Last Updated: 2026-06-10 (RW: E02:S01:T30)
+  - Updated board Version: v0.2.1.30+8

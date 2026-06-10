@@ -120,6 +120,17 @@ gates:
     blocking: true
     config_key: actions_ci_parity
 
+  - id: step_12_remote_ci
+    clause: C-F6
+    phase: PUBLISH
+    step: 12
+    name: Remote Actions No-Red-Ship
+    script: scripts/validation/validate_github_actions_remote.py
+    args: ["--strict"]
+    blocking: true
+    config_key: actions_ci_parity
+    trigger_flag: "--push"
+
   - id: step_11_pre
     clause: C-F9
     phase: PUBLISH

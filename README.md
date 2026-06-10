@@ -11,7 +11,7 @@
 
 **A comprehensive toolkit for AI-assisted development workflows**
 
-**Version (SemVer):** `v0.4.1129+8` | **Internal:** `v0.2.1.30+8` (E02:S01:T30 FR-122 program sign-off) | **Last Updated:** 2026-06-10
+**Version (SemVer):** `v0.4.1131+1` | **Internal:** `v0.8.3.20+1` (E08:S03:T20 README Python 3.11 prerequisites / UXR-026) | **Last Updated:** 2026-06-10
 
 [Features](#features) • [Installation](#getting-started) • [Install in Your Project](INSTALL_IN_YOUR_PROJECT.md) • [Documentation](docs/documentation) • **Browsing docs (published site):** [https://rms-ltd.github.io/ai-dev-kit/](https://rms-ltd.github.io/ai-dev-kit/) • [Workflows](#workflows) • [Report Bug](https://github.com/RMS-Ltd/ai-dev-kit/issues) • [Request Feature](https://github.com/RMS-Ltd/ai-dev-kit/issues)
 
@@ -223,7 +223,7 @@ The toolkit is designed to be:
 
 ### Prerequisites
 
-- **Python** 3.8 or newer
+- **Python** 3.11 or newer
 - **Git**
 
 ### Installation

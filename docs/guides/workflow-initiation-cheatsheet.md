@@ -51,10 +51,13 @@ housekeeping_policy: keep
 
 **Same-task follow-on release (BR-097):** Default is **BUILD +1** (`RW E02:S16:T15 --art`). Never reuse a tagged BUILD; never `git tag -f` on release tags — bump BUILD and re-RW instead.
 
-**Operator batch push (after local RW runs):** Run the **Actions CI parity gate** on the commit(s) you are about to publish, then push branch once and each pending release tag explicitly — never `git push origin {branch} --tags`.
+**CQG ≠ CI ship gate:** Local CodeQL (CQG at IDW Phase 6b) and GitHub CodeQL workflows do **not** replace **Tests**, **Docusaurus**, or **Greenfield install**. RW Step **9.7** (`validate_actions_ci_parity.py`) is the release ship gate for workflow checks ([BR-104](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/kanban/fr-br/BR-104-codeql-cqg-green-does-not-imply-actions-ci-green.md)).
+
+**Operator batch push (after local RW runs):** Run local parity **and** remote no-red-ship check on the commit(s) you are about to publish, then push branch once and each pending release tag explicitly — never `git push origin {branch} --tags`.
 
 ```bash
 python "packages/frameworks/workflow-mgt/scripts/validation/validate_actions_ci_parity.py" --strict --all
+python "packages/frameworks/workflow-mgt/scripts/validation/validate_github_actions_remote.py" --strict --branch "$(git branch --show-current)"
 git push origin "$(git branch --show-current)"
 git push origin refs/tags/v{internal_version}   # repeat per local RW not yet pushed
 # task-touch mode: also git push origin refs/tags/v{semver_core}
@@ -68,8 +71,8 @@ Or per release: `python packages/frameworks/workflow-mgt/scripts/version/push_rw
 | --- | --- |
 | **Prerequisites** | Tool/bash access; on correct epic branch; task token in message |
 | **Blocking gates (before edits)** | Step 1 branch safety → 1b task token → 1c task complete → 1d task intent |
-| **Blocking gates (before commit)** | Step **9.7** Actions CI parity (`validate_actions_ci_parity.py --strict`) — push-ready local release |
-| **Handoff** | Commits + local tags via RW; **never push by default**; **push** only after Step 9.7 `--all` passes (batch runbook or `RW … --push`) |
+| **Blocking gates (before commit)** | Step **9.7** Actions CI parity (`validate_actions_ci_parity.py --strict`; use `--allow-path-skip` only for `RW -d` docs-only) |
+| **Handoff** | Commits + local tags via RW; **never push by default**; **push** only after Step 9.7 `--strict --all` **and** `validate_github_actions_remote.py --strict` pass |
 | **Completion** | `RW COMPLETE (local)` default · `RW COMPLETE (pushed)` when `--push` used |
 | **Blocked session** | `RW BLOCKED: tool execution is unavailable in this session. Switch to a session with tool access and retry.` |
 

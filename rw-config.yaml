@@ -140,5 +140,7 @@ code_quality_gate:
 # E08:S03:T15 / FR-112 — RW Step 9.7 Actions CI parity (mirror .github/workflows/*)
 actions_ci_parity:
   enabled: true
+  remote_check: true
+  # remote_workflows: optional override; defaults in validate_github_actions_remote.py
   # checks: optional override; defaults in validate_actions_ci_parity.py
 

@@ -24,7 +24,7 @@ This guide covers manual installation of framework packages.
 
 ## Prerequisites
 
-- **Python 3.8+** (for installation scripts and package verification)
+- **Python 3.11+** (for installation scripts and package verification)
 - **Git** (for Git submodule installation method, optional)
 - **Internet access** (to download packages from GitHub Releases)
 - **Basic command-line knowledge**

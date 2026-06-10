@@ -14,15 +14,15 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** Small (ongoing)  
 **Created:** 2026-06-05  
-**Last updated:** 2026-06-10 (UKW -u — scope boundary sync; T12–T14 handoff → E02:S16:T06)  
-**Version Anchor:** v0.8.3.15+4  
+**Last updated:** 2026-06-10 (Wave 4 — CQG≠CI boundary, Step 9.7 hardening, migration race fix)  
+**Version Anchor:** v0.2.16.5+7  
 **Code:** E02S16T05  
 **Task Type:** Perpetual Maintenance
 
 
 **Upstream:** [FR-112 — Perpetual GitHub CI and security health lanes](../../../fr-br/FR-112-perpetual-github-ci-and-security-health-lanes.md)
 
-**Input:** [IPP-E08S03T15 — GitHub Actions CI health (Perpetual)](../../../../implementation-cycles/IPP-E08S03T15-github-actions-ci-health-perpetual-fr112.md)
+**Input:** [IPP-E02S16T05 — GitHub Actions CI health (Perpetual)](../../../../implementation-cycles/IPP-E02S16T05-github-actions-ci-health-perpetual-fr112.md) · [BR-104](../../../fr-br/BR-104-codeql-cqg-green-does-not-imply-actions-ci-green.md)
 
 Publication Status: NOT_APPLICABLE
 
@@ -122,10 +122,40 @@ Use **`RW E02:S16:T05`** for recurring CI hygiene passes (BUILD increments on pe
 
 ---
 
+## Operator requirements (OR-T15)
+
+| ID | Requirement |
+| -- | ----------- |
+| OR-T15-1 | Record [Performance metrics](https://github.com/RMS-Ltd/ai-dev-kit/actions/metrics/performance) failed-job minutes each hygiene pass |
+| OR-T15-2 | **No red ship:** do not push/merge to `dev`/`main` while required workflows fail on GitHub |
+| OR-T15-3 | **CQG ≠ CI:** local CodeQL (IDW Phase 6b) and GitHub CodeQL workflows do not replace Tests/Docusaurus/Greenfield |
+| OR-T15-4 | Post-push verification mandatory after each wave |
+| OR-T15-6 | Default RW local-complete; batch push only after Step 9.7 `--strict --all` |
+| OR-T15-7 | Step 9.7 blocking before commit; `validate_github_actions_remote.py --strict` before push |
+
+---
+
+## Wave 4 — CQG/CodeQL vs Actions CI ship gap (2026-06-10)
+
+**Incident:** `main` @ `1bce576` — CodeQL + Code Quality **success**, **Tests failure** ([run 27290068587](https://github.com/RMS-Ltd/ai-dev-kit/actions/runs/27290068587)).
+
+| Component | Fix |
+| --------- | --- |
+| `migrate_to_v2` race | `BEGIN IMMEDIATE` + duplicate-column guard ([BR-104](../../../fr-br/BR-104-codeql-cqg-green-does-not-imply-actions-ci-green.md)) |
+| Step 9.7 | `--strict` fails when zero checks match; `--allow-path-skip` for `RW -d` only |
+| Pre-push | `validate_github_actions_remote.py --strict` |
+| CQG banner | `validate_code_quality_gate.py` emits CQG ≠ CI ship gate note |
+
+**Post-RW verification:** Re-check [Actions](https://github.com/RMS-Ltd/ai-dev-kit/actions) — Tests green on `dev`/`main`.
+
+---
+
 ## References
 
 - [IPP-E02S16T05 — GitHub Actions CI health (Perpetual)](../../../../implementation-cycles/IPP-E02S16T05-github-actions-ci-health-perpetual-fr112.md)
+- [IPP-E08S03T15 (historical)](../../../../implementation-cycles/IPP-E08S03T15-github-actions-ci-health-perpetual-fr112.md)
+- [BR-104 — CodeQL/CQG green ≠ Actions CI green](../../../fr-br/BR-104-codeql-cqg-green-does-not-imply-actions-ci-green.md)
 - [FR-112](../../../fr-br/FR-112-perpetual-github-ci-and-security-health-lanes.md)
-- [E08:S03:T16 — GitHub Security & Code Quality health (Perpetual)](T16-github-security-code-quality-health-perpetual-fr112.md)
+- [E02:S16:T06 — GitHub Security & Code Quality health (Perpetual)](T06-github-security-code-quality-health-perpetual.md)
 - [E08:S03:T04 — CI test workflow (BR-058)](T04-ci-test-workflow-pytest-remediation-br058.md)
 - [GitHub Actions](https://github.com/RMS-Ltd/ai-dev-kit/actions)

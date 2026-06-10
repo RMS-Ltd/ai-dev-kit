@@ -136,7 +136,7 @@ canonical_rw_steps:
   step_9_7:
     number: 9.7
     name: "Actions CI Parity Gate"
-    description: "validate_actions_ci_parity.py --strict (path-aware GH workflow mirror); blocking; E08:S03:T15 / FR-112; --strict --all before push"
+    description: "validate_actions_ci_parity.py --strict (path-aware GH workflow mirror); blocking; E02:S16:T05 / FR-112 / BR-104; --strict --all + validate_github_actions_remote.py before push"
     mandatory: true
     blocking: true
     category: "validation"
@@ -200,7 +200,7 @@ execution_paths:
   full_release_push:
     trigger: "RW --push"
     steps: [1, 2, 3, 4, 5, 6, 7, 8, 9, 9.5, 9.6, 9.7, 10, 11, 12, 12.5, 13]
-    description: "Full release with remote push + GitHub Release (user must type --push); Step 9.7 --all before Step 12"
+    description: "Full release with remote push + GitHub Release (user must type --push); Step 9.7 --all + validate_github_actions_remote.py before Step 12"
     category: "full"
     completion_status: "RW COMPLETE (pushed)"
 

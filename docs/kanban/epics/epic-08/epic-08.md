@@ -12,7 +12,7 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** Medium  
 **Created:** 2025-12-05  
-**Last updated:** 2026-06-10 (v0.8.3.19+1 – Kanban documentation setup)
+**Last updated:** 2026-06-10 (v0.8.3.20+1 – E08:S03:T20 README Python prerequisites UXR-026)
 **Branch:** `epic/8-tooling-automation`  
 **Version Schema:** `0.8.S.T+B`  
 **Production URL:** [N/A for this repo]

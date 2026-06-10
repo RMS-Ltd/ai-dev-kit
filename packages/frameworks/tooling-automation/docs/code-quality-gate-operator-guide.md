@@ -16,10 +16,11 @@ housekeeping_policy: keep
 
 | Source | Role |
 | ------ | ---- |
-| **GitHub Code Quality dashboard (T16)** | Cloud SoT until operator accepts local parity |
+| **GitHub Code Quality dashboard (T06)** | Cloud SoT until operator accepts local parity |
 | **Local CQG** | IDW Phase 6b + cron snapshot; mirrors CodeQL `security-and-quality` Standard findings |
+| **RW Step 9.7** (`validate_actions_ci_parity.py`) | **Release ship gate** for Tests / Docusaurus / Greenfield / workflow-scripts CI |
 
-CQG does **not** replace T16 perpetual health lanes or FHM workflow checks.
+CQG does **not** replace T06 perpetual health lanes, **Actions CI workflows**, or RW Step 9.7 ([BR-104](../../../../docs/kanban/fr-br/BR-104-codeql-cqg-green-does-not-imply-actions-ci-green.md)). Green CodeQL on GitHub does not imply green **Tests**.
 
 ---
 

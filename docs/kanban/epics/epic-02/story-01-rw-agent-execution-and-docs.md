@@ -13,7 +13,7 @@ housekeeping_policy: keep
 **Estimated Effort:** [TBD]  
 **Created:** 2025-12-02  
 **Completed:** N/A (story reopened for ongoing RW validation work)
-**Last updated:** 2026-06-10 (v0.2.1.30+8 – FR-122 program sign-off)
+**Last updated:** 2026-06-10 (v0.2.1.30+8 – Kanban documentation setup)
 **Version:** v0.2.1.30+8
 **Code:** E2S01
 
