@@ -11,6 +11,14 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.21.4.2+1] - 10-06-26
+
+E21:S04:T02 — **Change implemented:** Supersede cultural UI/UX task; merge T01 handoffs (imagery, layout guidance, icon audit checklist) into E21:S04:T04. SemVer **v0.4.1110+1**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.21.4.2+1.md)
+
+---
+
 ## [0.21.6.1+1] - 10-06-26
 
 E21:S06:T01 — **Attempted translation:** FR-006 Chinese Simplified (zh-CN) locale delivery for kanban + workflow-mgt. SemVer **v0.4.1109+1**.

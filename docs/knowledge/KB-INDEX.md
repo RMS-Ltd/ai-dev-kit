@@ -1,9 +1,9 @@
 # KB Index
 
-**Generated:** 2026-06-10 08:32:30 UTC  
+**Generated:** 2026-06-10 09:25:05 UTC  
 **Scope:** /Users/rms/Documents/projects/ai-dev-kit/docs  
-**Total files:** 3103  
-**Total size:** 14.56 MB
+**Total files:** 3108  
+**Total size:** 14.60 MB
 
 ---
 
@@ -14,14 +14,14 @@
 | analysis | 9 | 152.7 KB | 9 | 0 | 9 | 0 | 0 | 0 |
 | architecture | 126 | 1.24 MB | 120 | 6 | 119 | 1 | 0 | 0 |
 | book-project | 2 | 26.5 KB | 1 | 1 | 1 | 0 | 0 | 0 |
-| changelog-and-release-notes | 1423 | 3.96 MB | 199 | 1224 | 183 | 0 | 1 | 0 |
+| changelog-and-release-notes | 1427 | 3.97 MB | 199 | 1228 | 183 | 0 | 1 | 0 |
 | developer-tools | 2 | 12.7 KB | 2 | 0 | 2 | 0 | 0 | 0 |
 | documentation | 33 | 354.3 KB | 30 | 3 | 30 | 0 | 0 | 0 |
-| governance | 22 | 184.3 KB | 22 | 0 | 22 | 0 | 0 | 0 |
+| governance | 22 | 184.6 KB | 22 | 0 | 22 | 0 | 0 | 0 |
 | guides | 7 | 28.9 KB | 7 | 0 | 7 | 0 | 0 | 0 |
-| implementation-cycles | 253 | 2.11 MB | 213 | 40 | 198 | 2 | 1 | 0 |
+| implementation-cycles | 254 | 2.12 MB | 214 | 40 | 199 | 2 | 1 | 0 |
 | journals | 4 | 14.7 KB | 0 | 4 | 0 | 0 | 0 | 0 |
-| kanban | 1119 | 5.18 MB | 1075 | 44 | 1045 | 0 | 3 | 0 |
+| kanban | 1119 | 5.21 MB | 1075 | 44 | 1045 | 0 | 3 | 0 |
 | knowledge | 75 | 1.17 MB | 72 | 3 | 69 | 1 | 2 | 3 |
 | maintainer | 1 | 2.9 KB | 1 | 0 | 1 | 0 | 0 | 0 |
 | maintenance | 24 | 138.7 KB | 13 | 11 | 9 | 3 | 0 | 0 |
@@ -32,7 +32,7 @@
 ## Optimization signals
 
 - **docs/README.md exists:** False
-- **Files missing lifecycle frontmatter:** 1336
+- **Files missing lifecycle frontmatter:** 1340
 - **Timeboxed/transient with expires_at in the past:** 3
 - **READMEs (under docs/):** 22
 
@@ -88,7 +88,7 @@
 - `changelog-and-release-notes/changelog-archive/CHANGELOG_v0.10.1.3+1.md`
 - `changelog-and-release-notes/changelog-archive/CHANGELOG_v0.10.1.4+1.md`
 - `changelog-and-release-notes/changelog-archive/CHANGELOG_v0.10.1.5+1.md`
-- ... and 1286 more
+- ... and 1290 more
 
 ### Expired (candidates for archive/delete)
 
@@ -310,7 +310,7 @@
 | governance/standards/cli-accessibility-conventions.md | 2.2 KB | 261 | evergreen | 2026-06-07T23:00:00 |  |
 | governance/standards/dev-kit-ipw-ipp-vs-icw-artifacts.md | 3.7 KB | 319 | evergreen | 2026-05-20T12:00:00 |  |
 | governance/standards/dev-kit-versioning-policy.md | 44.3 KB | 5945 | evergreen | 2025-12-04T12:01:36 |  |
-| governance/standards/locale-cultural-requirements.md | 15.1 KB | 2087 | evergreen | 2026-06-09T21:00:00 |  |
+| governance/standards/locale-cultural-requirements.md | 15.4 KB | 2126 | evergreen | 2026-06-09T21:00:00 |  |
 | governance/standards/locale-detection-conventions.md | 3.9 KB | 394 | evergreen | 2026-06-07T19:00:00 |  |
 | governance/standards/locale-fallback-conventions.md | 2.8 KB | 242 | evergreen | 2026-06-07T23:45:00 |  |
 | governance/standards/locale-file-structure-conventions.md | 5.3 KB | 553 | evergreen | 2026-06-07T18:00:00 |  |
@@ -522,6 +522,7 @@
 | implementation-cycles/IPP-E21S03T06-translation-completeness-tracking.md | 18.0 KB | 2343 | evergreen | 2026-06-08T23:30:00 |  |
 | implementation-cycles/IPP-E21S03T07-test-translations-locale-support.md | 12.9 KB | 1740 | evergreen | 2026-06-08T14:00:00 |  |
 | implementation-cycles/IPP-E21S04T01-research-cultural-requirements-target-locales.md | 15.9 KB | 2016 | evergreen | 2026-06-09T20:30:00 |  |
+| implementation-cycles/IPP-E21S04T02-supersede-merge-into-t04.md | 7.9 KB | 1058 | evergreen | 2026-06-09T22:00:00 |  |
 | implementation-cycles/IPP-E21S05T01-spanish-es-translation-files.md | 14.6 KB | 1874 | evergreen | 2026-06-09T22:00:00 |  |
 | implementation-cycles/IPP-E21S06T01-chinese-simplified-zh-cn-translation-files.md | 5.9 KB | 764 | evergreen | 2026-06-10T08:15:00 |  |
 | implementation-cycles/IPP-E21S08T01-accessibility-layered-cli-first.md | 9.1 KB | 1369 | evergreen | 2026-06-07T20:30:00 |  |
@@ -1409,7 +1410,7 @@
 | kanban/epics/epic-11/story-02-debug-path-package-installation-evaluation/T05-document-failure-modes-and-rollback-guidance.md | 1013 B | 109 | evergreen | 2026-06-05T05:04:11 |  |
 | kanban/epics/epic-11/story-02-debug-path-package-installation-evaluation/T06-capture-documentation-gaps-and-improvements.md | 1016 B | 107 | evergreen | 2026-06-05T05:04:11 |  |
 | kanban/epics/epic-11/story-02-debug-path-package-installation-evaluation.md | 2.7 KB | 246 | evergreen | 2026-01-18T16:44:08 |  |
-| kanban/epics/epic-21/Epic-21.md | 11.9 KB | 1578 | evergreen | 2025-12-09T18:30:00 |  |
+| kanban/epics/epic-21/Epic-21.md | 11.9 KB | 1577 | evergreen | 2025-12-09T18:30:00 |  |
 | kanban/epics/epic-21/story-00-language-selection-at-setup/T01-add-language-selection-prompt-to-template-setup-github-templ.md | 233 B | 15 |  |  |  |
 | kanban/epics/epic-21/story-00-language-selection-at-setup.md | 325 B | 28 | transient | 2026-06-08T11:20:00 |  |
 | kanban/epics/epic-21/story-01-internationalisation-infrastructure.md | 474 B | 33 | transient | 2026-06-08T11:20:00 |  |
@@ -1440,13 +1441,13 @@
 | kanban/epics/epic-21/story-03-translation-and-localisation/T07-test-translations-and-locale-support.md | 2.6 KB | 207 | evergreen | 2026-06-05T05:06:04 |  |
 | kanban/epics/epic-21/story-03-translation-and-localisation.md | 3.4 KB | 297 | evergreen | 2025-12-09T18:35:00 |  |
 | kanban/epics/epic-21/story-04-cultural-adaptation/T01-research-cultural-requirements-for-target-locales.md | 3.3 KB | 249 | evergreen | 2026-06-05T05:06:04 |  |
-| kanban/epics/epic-21/story-04-cultural-adaptation/T02-adapt-uiux-for-different-cultures-examples-imagery.md | 1.5 KB | 172 | evergreen | 2026-06-05T05:06:04 |  |
+| kanban/epics/epic-21/story-04-cultural-adaptation/T02-adapt-uiux-for-different-cultures-examples-imagery.md | 3.3 KB | 337 | evergreen | 2026-06-05T05:06:04 |  |
 | kanban/epics/epic-21/story-04-cultural-adaptation/T03-implement-rtl-support-right-to-left-for-arabichebrew.md | 1.5 KB | 166 | evergreen | 2026-06-05T05:06:04 |  |
-| kanban/epics/epic-21/story-04-cultural-adaptation/T04-adapt-content-and-examples-for-cultural-context.md | 1.5 KB | 170 | evergreen | 2026-06-05T05:06:04 |  |
+| kanban/epics/epic-21/story-04-cultural-adaptation/T04-adapt-content-and-examples-for-cultural-context.md | 3.7 KB | 390 | evergreen | 2026-06-05T05:06:04 |  |
 | kanban/epics/epic-21/story-04-cultural-adaptation/T05-configure-locale-specific-formatting-dates-times-numbers-cur.md | 1.7 KB | 186 | evergreen | 2026-06-05T05:06:04 |  |
 | kanban/epics/epic-21/story-04-cultural-adaptation/T06-test-cultural-adaptations.md | 1.6 KB | 174 | evergreen | 2026-06-05T05:06:04 |  |
 | kanban/epics/epic-21/story-04-cultural-adaptation/T07-document-cultural-considerations-and-guidelines.md | 1.5 KB | 167 | evergreen | 2026-06-05T05:06:04 |  |
-| kanban/epics/epic-21/story-04-cultural-adaptation.md | 3.3 KB | 309 | evergreen | 2025-12-09T18:35:00 |  |
+| kanban/epics/epic-21/story-04-cultural-adaptation.md | 3.6 KB | 335 | evergreen | 2025-12-09T18:35:00 |  |
 | kanban/epics/epic-21/story-04-european-languages-localization/REDIRECT.md | 353 B | 30 |  |  |  |
 | kanban/epics/epic-21/story-05-cjk-languages-localization/REDIRECT.md | 339 B | 29 |  |  |  |
 | kanban/epics/epic-21/story-05-european-languages-localization/T01-spanish-es-translation-files.md | 3.0 KB | 288 | evergreen | 2026-06-06T17:00:00 |  |
@@ -1457,7 +1458,7 @@
 | kanban/epics/epic-21/story-06-cjk-languages-localization/T01-chinese-simplified-zh-cn-translation-files.md | 2.9 KB | 271 | evergreen | 2026-06-06T17:00:00 |  |
 | kanban/epics/epic-21/story-06-cjk-languages-localization/T02-chinese-traditional-zh-tw-translation-files.md | 1.7 KB | 190 | evergreen | 2026-06-06T17:00:00 |  |
 | kanban/epics/epic-21/story-06-cjk-languages-localization/T03-japanese-ja-translation-files.md | 1.7 KB | 188 | evergreen | 2026-06-06T17:00:00 |  |
-| kanban/epics/epic-21/story-06-cjk-languages-localization.md | 2.3 KB | 233 | evergreen | 2026-06-06T17:00:00 |  |
+| kanban/epics/epic-21/story-06-cjk-languages-localization.md | 2.3 KB | 232 | evergreen | 2026-06-06T17:00:00 |  |
 | kanban/epics/epic-21/story-06-rtl-and-extended-locales/REDIRECT.md | 325 B | 29 |  |  |  |
 | kanban/epics/epic-21/story-07-rtl-and-extended-locales/T01-arabic-ar-translation-files.md | 1.8 KB | 200 | evergreen | 2026-06-06T17:00:00 |  |
 | kanban/epics/epic-21/story-07-rtl-and-extended-locales/T02-russian-ru-translation-files.md | 1.7 KB | 188 | evergreen | 2026-06-06T17:00:00 |  |
@@ -1703,8 +1704,8 @@
 | kanban/kanban-board-guide.md | 16.5 KB | 2136 | evergreen | 2026-01-20T00:00:00 |  |
 | kanban/kanban-completed.md | 127.3 KB | 10168 | evergreen | 2026-03-09T00:00:00 |  |
 | kanban/kanban-structure.md | 25.5 KB | 2227 | evergreen | 2026-03-09T00:00:00 |  |
-| kanban/kboard.md | 11.2 KB | 876 | evergreen | 2025-12-04T12:02:50 |  |
-| knowledge/KB-INDEX.md | 237.0 KB | 22244 |  |  |  |
+| kanban/kboard.md | 30.6 KB | 2122 | evergreen | 2025-12-04T12:02:50 |  |
+| knowledge/KB-INDEX.md | 237.1 KB | 22257 |  |  |  |
 | knowledge/README.md | 2.5 KB | 259 | evergreen | 2026-06-07T12:00:00 |  |
 | knowledge/USE_CASE_METHODOLOGY.md | 14.3 KB | 1844 | evergreen | 2025-12-16T14:30:00 |  |
 | knowledge/analysis/abstract-anti-patterns-use-case-exposed-design-flaw.md | 13.0 KB | 1796 | evergreen | 2025-12-18T00:00:00 |  |
@@ -1807,5 +1808,5 @@
 | project-agent-index.md | 4.3 KB | 392 | evergreen | 2026-05-30T21:00:00 |  |
 | project-management/README.md | 523 B | 34 | evergreen | 2025-12-04T12:01:54 |  |
 | release-notes/README.md | 1.4 KB | 123 | evergreen | 2026-06-07T12:00:00 |  |
-| changelog-and-release-notes/changelog-archive/ (summary) (1421 files) | 3.95 MB | 458926 |  |  |  |
+| changelog-and-release-notes/changelog-archive/ (summary) (1425 files) | 3.97 MB | 460439 |  |  |  |
 

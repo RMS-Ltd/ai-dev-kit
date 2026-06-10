@@ -31,7 +31,7 @@ policy_salience:
 - **Source:** Structured desk research (public i18n/l10n guidance, BCP 47 locale norms, FR-006 rollout matrix). **Not** native-speaker verified.
 - **Scope:** Nine scaffolded locales from [locale-rollout-matrix.md](locale-rollout-matrix.md); `en-GB` / `en-US` baseline comparison only.
 - **Evidence gaps:** Rows marked **Review gap** require native or professional review before treating as ship-ready (per [translation-workflow-and-review.md](translation-workflow-and-review.md) P0/P1 recommendation).
-- **Implementation boundary:** This document informs E21:S04:T02–T06; does not implement RTL, formatting code, or translation YAML.
+- **Implementation boundary:** This document informs E21:S04:T03–T06 (E21:S04:T02 superseded — scope merged into T04 @ `v0.21.4.2+1`); does not implement RTL, formatting code, or translation YAML.
 
 ---
 
@@ -45,7 +45,7 @@ Shared axes evaluated in every per-locale matrix below:
 | **Text direction** | LTR vs RTL layout and mirroring | E21:S04:T03 (`ar`; Hebrew `he` extension) |
 | **Tone and formality** | Technical docs, CLI prompts, installer wizard register | E21:S04:T04 |
 | **Examples and metaphors** | Kanban, RW, git, agile vocabulary in dev-kit context | E21:S04:T04 |
-| **Imagery and iconography** | Directional icons, hand gestures, colour connotations | E21:S04:T02 |
+| **Imagery and iconography** | Directional icons, hand gestures, colour connotations | E21:S04:T04 (RTL mirroring impl: T03) |
 | **Naming and inclusivity** | Gendered language, honorifics, inclusive defaults | E21:S04:T04 |
 | **Translation review tier** | P0–P3 alignment from rollout matrix | S05–S07 + workflow policy |
 
@@ -73,7 +73,7 @@ Shared axes evaluated in every per-locale matrix below:
 | Text direction | LTR | No |
 | Tone and formality | **Vouvoiement** (*vous*) standard for installer and governance docs; **tu** only if CLI brand voice explicitly informal. | Medium |
 | Examples and metaphors | Prefer European regulatory/neutral examples; avoid UK/US-specific tax or date idioms in samples. | Low |
-| Imagery | Minimal text in icons; French UI often expects longer strings — allow layout expansion (T02). | Medium |
+| Imagery | Minimal text in icons; French UI often expects longer strings — allow layout expansion (T04). | Medium |
 | Naming and inclusivity | Écriture inclusive (*développeur·euse*) is politicised; default to epicene phrasing or masculine generic only where project policy explicitly allows — document choice in T07. | High |
 | Translation review tier | P0/P1: native review recommended | Yes |
 
@@ -83,7 +83,7 @@ Shared axes evaluated in every per-locale matrix below:
 | --------- | ------------------- | ----------- |
 | Formatting | `de-DE`: comma decimal, dot thousands; `DD.MM.YYYY`; 24h clock | Low |
 | Text direction | LTR | No |
-| Tone and formality | **Sie** for installer and maintainer docs; **du** possible for CLI developer tools if consistent with en-US informal CLI tone. Compound nouns increase string length — plan UI width (T02). | Medium |
+| Tone and formality | **Sie** for installer and maintainer docs; **du** possible for CLI developer tools if consistent with en-US informal CLI tone. Compound nouns increase string length — plan UI width (T04). | Medium |
 | Examples and metaphors | Prefer precise technical terms (*Release*, *Build*, *Tag*) with glossary; avoid mixed Denglish without glossary entry. | Medium |
 | Imagery | Functional iconography preferred over decorative metaphors. | Low |
 | Naming and inclusivity | Gender-neutral *Entwicklerin/Entwickler* or neutral *Entwicklungsperson* in inclusive mode; capitalisation rules (nouns) affect YAML key display not values. | Medium |
@@ -109,7 +109,7 @@ Shared axes evaluated in every per-locale matrix below:
 | Text direction | LTR (CJK horizontal); vertical text out of scope | No |
 | Tone and formality | Technical simplified Chinese uses concise imperative; avoid overly literal English calques for “workflow” (*工作流* vs *流程* — pick one glossary term). | High |
 | Examples and metaphors | Use region-neutral tech examples; avoid political/geographic sensitivities in sample epic names. | High |
-| Imagery | Red = positive/luck in CN marketing but error in UI — keep semantic colour mapping from design system (T02). | Medium |
+| Imagery | Red = positive/luck in CN marketing but error in UI — keep semantic colour mapping from design system (T04). | Medium |
 | Naming and inclusivity | Gender rarely marked in UI strings; focus on clarity and sentence length. | Low |
 | Translation review tier | P0/P1: professional zh-CN review required before ship | Yes |
 
@@ -121,7 +121,7 @@ Shared axes evaluated in every per-locale matrix below:
 | Text direction | LTR horizontal | No |
 | Tone and formality | Traditional technical tone slightly more formal than mainland CLI; maintain glossary separation from zh-CN. | High |
 | Examples and metaphors | Do not reuse zh-CN strings as “translation”; distinct lexical choices required. | High |
-| Imagery | Same colour semantics caution as zh-CN; typography may need different fonts (T02). | Medium |
+| Imagery | Same colour semantics caution as zh-CN; typography may need different fonts (T04). | Medium |
 | Naming and inclusivity | As zh-CN — clarity over gender marking | Low |
 | Translation review tier | P0/P1: professional zh-TW review required | Yes |
 
@@ -133,7 +133,7 @@ Shared axes evaluated in every per-locale matrix below:
 | Text direction | LTR horizontal; ruby text out of scope | No |
 | Tone and formality | **Desu/masu** register for installer; **da/dearu** or concise neutral for CLI errors acceptable if consistent. Honorifics generally omit for machine-directed messages. | High |
 | Examples and metaphors | Katakana for loanwords (*リリース*, *タグ*); provide glossary. Avoid literal translation of MoSCOW acronyms without explanation. | High |
-| Imagery | Minimalist icon style; crowded labels problematic — allow vertical space (T02). | Medium |
+| Imagery | Minimalist icon style; crowded labels problematic — allow vertical space (T04). | Medium |
 | Naming and inclusivity | Avoid assumed gender in second-person; use neutral *ユーザー* / *開発者* | Medium |
 | Translation review tier | P0/P1: native ja review strongly recommended | Yes |
 
@@ -182,11 +182,11 @@ No further English cultural research required in T01; downstream tasks use selec
 | Priority | Recommendation | Owner task | Evidence gap? |
 | -------- | -------------- | ---------- | ------------- |
 | P0 | Mirror RTL layout shell for `ar` (nav, wizard steps, table alignment) before linguistic translation ship | E21:S04:T03 | Yes — layout QA |
-| P0 | Allow 30–40% horizontal expansion for `de`, `fr`, `ja` installer strings in wizard UI | E21:S04:T02 | Medium |
+| P0 | Allow 30–40% horizontal expansion for `de`, `fr`, `ja` installer strings in wizard UI | E21:S04:T04 | Medium |
 | P1 | Publish locale formatting smoke examples per locale using `locale_formatting.py` wrappers | E21:S04:T05 | Low |
 | P1 | Replace US-centric RW/git examples in whole-file templates with neutral metaphors | E21:S04:T04 | Medium |
 | P1 | Define glossary table for loanwords (*Release*, *Kanban*, *tag*, *workflow*) per locale | E21:S04:T04 | High |
-| P2 | Audit directional icons and progress indicators for RTL mirroring | E21:S04:T02 | Yes |
+| P2 | Audit directional icons and progress indicators for RTL mirroring (checklist T04; impl T03) | E21:S04:T04 | Yes |
 | P2 | Resolve `pt` scaffold into `pt-BR` or `pt-PT` before S05 translation | E21:S04:T04 | High |
 | P3 | Add cultural adaptation E2E checks alongside translation locale tests | E21:S04:T06 | Medium |
 
@@ -210,11 +210,12 @@ Outline for **E21:S04:T07** contributor cultural guidelines (not final prose):
 
 ## Handoffs
 
+_T02 superseded @ `v0.21.4.2+1` — imagery, layout expansion, and directional-icon audit checklist merged into T04 ([IPP-E21S04T02](../../implementation-cycles/IPP-E21S04T02-supersede-merge-into-t04.md))._
+
 | Task | Consumes from this doc |
 | ---- | ---------------------- |
-| [E21:S04:T02](../../kanban/epics/epic-21/story-04-cultural-adaptation/T02-adapt-uiux-for-different-cultures-examples-imagery.md) | Imagery, layout expansion, RTL icon mirroring |
-| [E21:S04:T03](../../kanban/epics/epic-21/story-04-cultural-adaptation/T03-implement-rtl-support-right-to-left-for-arabichebrew.md) | Arabic RTL dimensions; `he` extension note |
-| [E21:S04:T04](../../kanban/epics/epic-21/story-04-cultural-adaptation/T04-adapt-content-and-examples-for-cultural-context.md) | Tone, examples, glossary, pt variant |
+| [E21:S04:T03](../../kanban/epics/epic-21/story-04-cultural-adaptation/T03-implement-rtl-support-right-to-left-for-arabichebrew.md) | Arabic RTL dimensions; `he` extension note; RTL icon mirroring implementation |
+| [E21:S04:T04](../../kanban/epics/epic-21/story-04-cultural-adaptation/T04-adapt-content-and-examples-for-cultural-context.md) | Tone, examples, glossary, pt variant; imagery policy; layout expansion guidance; directional-icon audit checklist (absorbed from superseded T02) |
 | [E21:S04:T05](../../kanban/epics/epic-21/story-04-cultural-adaptation/T05-configure-locale-specific-formatting-dates-times-numbers-cur.md) | Per-locale formatting rows |
 | [E21:S04:T06](../../kanban/epics/epic-21/story-04-cultural-adaptation/T06-test-cultural-adaptations.md) | E2E cultural checks |
 | [E21:S04:T07](../../kanban/epics/epic-21/story-04-cultural-adaptation/T07-document-cultural-considerations-and-guidelines.md) | Guideline framework (draft) → polished guide |

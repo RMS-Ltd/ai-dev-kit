@@ -23,7 +23,6 @@ REQUIRED_SECTIONS = (
 )
 
 DOWNSTREAM_TASKS = (
-    "E21:S04:T02",
     "E21:S04:T03",
     "E21:S04:T04",
     "E21:S04:T05",
@@ -53,10 +52,20 @@ def test_c3_required_top_level_sections_present():
 
 
 def test_c4_recommendations_map_to_downstream_tasks():
-    """C4: Recommendations reference E21:S04:T02–T06."""
+    """C4: Recommendations reference E21:S04:T03–T06 (T02 superseded → T04)."""
     text = CULTURAL_DOC.read_text(encoding="utf-8")
     rec_section = text.split("## Adaptation recommendations", 1)[-1]
+    assert "E21:S04:T02" not in rec_section
     assert any(task in rec_section for task in DOWNSTREAM_TASKS)
+
+
+def test_c7_handoffs_t04_absorbs_imagery_scope():
+    """C7: Handoffs — T04 owns absorbed imagery scope; no active T02 handoff row."""
+    text = CULTURAL_DOC.read_text(encoding="utf-8")
+    handoffs = text.split("## Handoffs", 1)[-1].split("## References", 1)[0]
+    assert "E21:S04:T02" not in handoffs or "superseded" in handoffs.lower()
+    assert "imagery" in handoffs.lower()
+    assert "E21:S04:T04" in handoffs
 
 
 def test_c5_outbound_cross_links():
