@@ -32192,6 +32192,7 @@ __webpack_require__.d(__webpack_exports__, {
             "analysis/**",
             "knowledge/**",
             "journals/**",
+            "maintainer/**",
             "architecture/**",
             "governance/**",
             "changelog-and-release-notes/**",

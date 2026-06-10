@@ -15,7 +15,7 @@ __webpack_require__.d(__webpack_exports__, {
 });
 
 ;// CONCATENATED MODULE: ./.docusaurus/docusaurus-plugin-content-docs/default/site-docs-guides-workflow-initiation-cheatsheet-md-292.json
-var site_docs_guides_workflow_initiation_cheatsheet_md_292_namespaceObject = JSON.parse('{"id":"guides/workflow-initiation-cheatsheet","title":"Workflow initiation cheatsheet","description":"Last verified against: 2026-06-08 (.cursorrules, .claude/commands/rw.md, ukw.md, ipw.md, idw.md; IDW --rw chain; FR-085 UKW --rp / ADR-009; FR-102 UKW -c / ADR-010; BR-067 RW -d --dpz; UXR-022; UXR-024 local-default RW)","source":"@site/../docs/guides/workflow-initiation-cheatsheet.md","sourceDirName":"guides","slug":"/guides/workflow-initiation-cheatsheet","permalink":"/ai-dev-kit/docs/guides/workflow-initiation-cheatsheet","draft":false,"unlisted":false,"editUrl":"https://github.com/RMS-Ltd/ai-dev-kit/tree/main/docs/../docs/guides/workflow-initiation-cheatsheet.md","tags":[],"version":"current","frontMatter":{"lifecycle":"evergreen","ttl_days":null,"created_at":"2026-05-30T20:00:00.000Z","expires_at":null,"housekeeping_policy":"keep"},"sidebar":"docsSidebar","previous":{"title":"Getting Started","permalink":"/ai-dev-kit/docs/guides/getting-started/"},"next":{"title":"Documentation portal index","permalink":"/ai-dev-kit/docs/documentation/docusaurus-portal-index"}}')
+var site_docs_guides_workflow_initiation_cheatsheet_md_292_namespaceObject = JSON.parse('{"id":"guides/workflow-initiation-cheatsheet","title":"Workflow initiation cheatsheet","description":"Last verified against: 2026-06-10 (.cursorrules, .claude/commands/rw.md, ukw.md, ipw.md, idw.md, mwf.md; MWF delivery recipe; IDW --rw chain; FR-124; FR-085 UKW --rp / ADR-009; FR-102 UKW -c / ADR-010; BR-067 RW -d --dpz; UXR-022; UXR-024 local-default RW)","source":"@site/../docs/guides/workflow-initiation-cheatsheet.md","sourceDirName":"guides","slug":"/guides/workflow-initiation-cheatsheet","permalink":"/ai-dev-kit/docs/guides/workflow-initiation-cheatsheet","draft":false,"unlisted":false,"editUrl":"https://github.com/RMS-Ltd/ai-dev-kit/tree/main/docs/../docs/guides/workflow-initiation-cheatsheet.md","tags":[],"version":"current","frontMatter":{"lifecycle":"evergreen","ttl_days":null,"created_at":"2026-05-30T20:00:00.000Z","expires_at":null,"housekeeping_policy":"keep"},"sidebar":"docsSidebar","previous":{"title":"Getting Started","permalink":"/ai-dev-kit/docs/guides/getting-started/"},"next":{"title":"Documentation portal index","permalink":"/ai-dev-kit/docs/documentation/docusaurus-portal-index"}}')
 // EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
 var jsx_runtime = __webpack_require__(4848);
 // EXTERNAL MODULE: ./node_modules/@mdx-js/react/lib/index.js
@@ -57,6 +57,10 @@ const toc = [{
 }, {
   "value": "4b. Implementation Delivery Workflow (IDW)",
   "id": "4b-implementation-delivery-workflow-idw",
+  "level": 2
+}, {
+  "value": "4c. Meta-Workflow (MWF)",
+  "id": "4c-meta-workflow-mwf",
   "level": 2
 }, {
   "value": "5. Changelog Management Workflow (CMW)",
@@ -112,7 +116,7 @@ function _createMdxContent(props) {
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Last verified against:"
-      }), " 2026-06-08 (", (0,jsx_runtime.jsx)(_components.code, {
+      }), " 2026-06-10 (", (0,jsx_runtime.jsx)(_components.code, {
         children: ".cursorrules"
       }), ", ", (0,jsx_runtime.jsx)(_components.code, {
         children: ".claude/commands/rw.md"
@@ -122,9 +126,13 @@ function _createMdxContent(props) {
         children: "ipw.md"
       }), ", ", (0,jsx_runtime.jsx)(_components.code, {
         children: "idw.md"
-      }), "; IDW ", (0,jsx_runtime.jsx)(_components.code, {
+      }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "mwf.md"
+      }), "; MWF ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "delivery"
+      }), " recipe; IDW ", (0,jsx_runtime.jsx)(_components.code, {
         children: "--rw"
-      }), " chain; FR-085 ", (0,jsx_runtime.jsx)(_components.code, {
+      }), " chain; FR-124; FR-085 ", (0,jsx_runtime.jsx)(_components.code, {
         children: "UKW --rp"
       }), " / ADR-009; FR-102 ", (0,jsx_runtime.jsx)(_components.code, {
         children: "UKW -c"
@@ -221,6 +229,16 @@ function _createMdxContent(props) {
             }), " or ", (0,jsx_runtime.jsx)(_components.code, {
               children: "/idw E02:S16:T15"
             }), " (implementation mode; linked IPP required)"]
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Full pipeline (plan → implement → release)"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.code, {
+              children: "MWF E02:S16:T15 delivery"
+            }), " — orchestrates IPW → IDW ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "--rw"
+            }), " (mode-gate pauses)"]
           })]
         }), (0,jsx_runtime.jsxs)(_components.tr, {
           children: [(0,jsx_runtime.jsx)(_components.td, {
@@ -833,6 +851,24 @@ function _createMdxContent(props) {
               children: "IDW COMPLETE"
             }), " (lowercase; not an RW flag)"]
           })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.code, {
+              children: "--push"
+            }), " / ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "--art"
+            })]
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "MWF"
+            })
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: ["Forward to IDW ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "--rw"
+            }), " leg when using ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "MWF E:S:T delivery"
+            })]
+          })]
         })]
       })]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
@@ -1196,6 +1232,150 @@ function _createMdxContent(props) {
         children: "implementation-delivery-workflow-agent-execution.md"
       })]
     }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "4c-meta-workflow-mwf",
+      children: "4c. Meta-Workflow (MWF)"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Invocation"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Meaning"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.code, {
+              children: "MWF E02:S03:T09 delivery"
+            }), " / ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "/mwf E02:S03:T09 delivery"
+            })]
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: ["Full pipeline: IPW (if no IPP) → mode gate → IDW ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "--rw"
+            })]
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "MWF E02:S03:T09 ipw,idw,rw"
+            })
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: ["Alias for ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "delivery"
+            })]
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "MWF E02:S03:T09 delivery --art"
+            })
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: ["Forward ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "--art"
+            }), " to IDW ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "--rw"
+            }), " leg"]
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "MWF E02:S03:T09 delivery --push"
+            })
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: ["Forward ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "--push"
+            }), " to IDW ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "--rw"
+            }), " leg"]
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {}), (0,jsx_runtime.jsx)(_components.th, {})]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Prerequisites"
+            })
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: ["Tool access; parseable ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "E:S:T"
+            }), " and recipe"]
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Mode gates"
+            })
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: ["IPW leg: ", (0,jsx_runtime.jsx)(_components.strong, {
+              children: "plan mode"
+            }), "; IDW leg: ", (0,jsx_runtime.jsx)(_components.strong, {
+              children: "implementation mode"
+            }), " — ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "MWF CHAIN PAUSED"
+            }), " between legs"]
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Resume"
+            })
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: ["When IPP already linked on task, skip IPW; run IDW ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "--rw"
+            }), " only"]
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsxs)(_components.strong, {
+              children: ["vs IDW ", (0,jsx_runtime.jsx)(_components.code, {
+                children: "--rw"
+              })]
+            })
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.strong, {
+              children: "MWF"
+            }), " = multi-leg (IPW→IDW→RW); ", (0,jsx_runtime.jsxs)(_components.strong, {
+              children: ["IDW ", (0,jsx_runtime.jsx)(_components.code, {
+                children: "--rw"
+              })]
+            }), " = two-leg (impl→RW)"]
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Blocked (tools)"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "MWF BLOCKED: tool execution is unavailable in this session. Switch to a session with tool access and retry."
+            })
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Deep dive:"
+      }), " ", (0,jsx_runtime.jsxs)(_components.a, {
+        href: "https://github.com/RMS-Ltd/ai-dev-kit/blob/main/.claude/commands/mwf.md",
+        children: [(0,jsx_runtime.jsx)(_components.code, {
+          children: ".claude/commands/mwf.md"
+        }), " (source)"]
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/meta-workflow-agent-execution.md",
+        children: "meta-workflow-agent-execution.md"
+      }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/kanban/fr-br/FR-124-meta-workflow-orchestration-composite-workflow-chains.md",
+        children: "FR-124"
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
       id: "5-changelog-management-workflow-cmw",
       children: "5. Changelog Management Workflow (CMW)"
     }), "\n", (0,jsx_runtime.jsxs)(_components.table, {
@@ -1350,6 +1530,16 @@ function _createMdxContent(props) {
         })
       }), (0,jsx_runtime.jsxs)(_components.tbody, {
         children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "MWF E02:S16:T15 delivery"
+            })
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.strong, {
+              children: "Preferred"
+            }), " full pipeline (IPW → IDW → RW) with mode-gate pauses"]
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
           children: [(0,jsx_runtime.jsxs)(_components.td, {
             children: [(0,jsx_runtime.jsx)(_components.code, {
               children: "IPW E02:S16:T15"
@@ -1359,7 +1549,7 @@ function _createMdxContent(props) {
               children: "RW E02:S16:T15"
             })]
           }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "New work with planning gate (canonical three-step)"
+            children: "New work with planning gate (manual three-step)"
           })]
         }), (0,jsx_runtime.jsxs)(_components.tr, {
           children: [(0,jsx_runtime.jsxs)(_components.td, {
@@ -1369,7 +1559,17 @@ function _createMdxContent(props) {
               children: "IDW E02:S16:T15 --rw"
             })]
           }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Plan, implement, local release in one IDW chain"
+            children: "Plan, implement, local release (manual; IDW chains RW)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.code, {
+              children: "MWF E02:S16:T15 delivery"
+            }), " (IPP exists)"]
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: ["Resume: IDW ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "--rw"
+            }), " only (skips IPW leg)"]
           })]
         }), (0,jsx_runtime.jsxs)(_components.tr, {
           children: [(0,jsx_runtime.jsxs)(_components.td, {
@@ -1484,6 +1684,17 @@ function _createMdxContent(props) {
               href: "https://github.com/RMS-Ltd/ai-dev-kit/blob/main/.claude/commands/idw.md",
               children: [(0,jsx_runtime.jsx)(_components.code, {
                 children: ".claude/commands/idw.md"
+              }), " (source)"]
+            })
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "MWF slash command"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsxs)(_components.a, {
+              href: "https://github.com/RMS-Ltd/ai-dev-kit/blob/main/.claude/commands/mwf.md",
+              children: [(0,jsx_runtime.jsx)(_components.code, {
+                children: ".claude/commands/mwf.md"
               }), " (source)"]
             })
           })]
