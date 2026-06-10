@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Board
 
-**Last Updated:** 2026-06-10 (RW: E06:S09:T28)
-**Version:** v0.6.9.28+1
+**Last Updated:** 2026-06-10 (RW: E06:S09:T29)
+**Version:** v0.6.9.29+1
 
 **Active board contract:** **Sole active MoSCOW board** ([ADR-018](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/architecture/standards-and-adrs/ADR-018-single-kanban-board-consolidation.md)). Rows are **live work** (TODO / IN PROGRESS / OPEN / WAITING / PERPETUAL) plus filed **Could Have** backlog. **Verification (V)** band holds task-shipped / FBU-open items (`⏳ WAITING`). Remove **terminal** rows and archive prose (use [`kanban-completed.md`](kanban-completed.md) / [`intake-completed.md`](intake-completed.md)).
 
@@ -26,6 +26,8 @@ housekeeping_policy: keep
 ### Must Have (M) - Critical Tasks
 
 ### Should Have (S) - Important Tasks
+
+- **E06:S09:T29** – RW install non-interactive CHANGELOG prompt (BR-106 / F19) - 📋 TODO (HIGH, kanban init **v0.6.9.29+1**) | [Task](epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T29-rw-install-non-interactive-changelog-prompt-br106.md) | [BR-106](fr-br/BR-106-rw-install-non-interactive-changelog-prompt-eof.md) | —No IPP— | Last modified: 2026-06-10 18:57 UTC
 
 - **E06:S09:T26** – Starborn Legacy ADK install program - 🔄 IN PROGRESS (HIGH — attempt 05 pin **v0.4.1133**) | [Task](epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T26-starborn-legacy-adk-install-program.md) | [T27](epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T27-kanban-v32-package-rewrite-installer-f9-f17.md) | —No IPP— | Last modified: 2026-06-10 17:24 UTC
 
