@@ -47,7 +47,7 @@ housekeeping_policy: keep
 | F18 | BR-086 expects `{story:03d}` / `t{task}`; v3.2 fresh install produces `{story:02d}` / `T{task}` | MEDIUM | **RESOLVED** @ v0.6.9.28+2 | [BR-105](../../../kanban/fr-br/BR-105-v32-fresh-install-signoff-story-padding-mismatch.md) → [T28](../../../kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T28-v32-fresh-install-signoff-story-padding-br105.md) |
 | F19 | `--non-interactive` EOFError on CHANGELOG (and historically `version_file`) scaffold prompts | HIGH | **RESOLVED** @ v0.6.9.29+2 (pending SBL replay) | [BR-106](../../../kanban/fr-br/BR-106-rw-install-non-interactive-changelog-prompt-eof.md) → [T29](../../../kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T29-rw-install-non-interactive-changelog-prompt-br106.md) |
 | F20 | Mode a default `version_file: src/myproject/version.py` — not project-aware | MEDIUM | **CODE** | Derive from project name / layout (workaround in attempt 05) |
-| F21 | Kanban v3.2 install logs unpadded `epic-N` paths; disk uses `epic-0N` | LOW | **CODE** | [BR-107](../../../kanban/fr-br/BR-107-kanban-installer-log-epic-path-padding-mismatch.md) → [T30](../../../kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T30-kanban-installer-log-epic-path-padding-br107.md) |
+| F21 | Kanban v3.2 install logs unpadded `epic-N` paths; disk uses `epic-0N` | LOW | **RESOLVED** @ v0.6.9.30+2 | [BR-107](../../../kanban/fr-br/BR-107-kanban-installer-log-epic-path-padding-mismatch.md) → [T30](../../../kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T30-kanban-installer-log-epic-path-padding-br107.md) |
 
 ---
 

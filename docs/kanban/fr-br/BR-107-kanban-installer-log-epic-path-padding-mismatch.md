@@ -11,7 +11,8 @@ housekeeping_policy: keep
 **Bug ID:** BR-107  
 **Priority:** LOW  
 **Severity:** LOW (cosmetic / operator confusion; install succeeds)  
-**Status:** INTAKE  
+**Status:** FIXED  
+**Fixed in:** v0.6.9.30+2 (E06:S09:T30)  
 **Source finding:** **F21** (Starborn Legacy install attempt 05)  
 **Related:** [UXR-017](UXR-017-kanban-epic-story-path-lowercase-naming.md) · [E06:S09:T27](../epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T27-kanban-v32-package-rewrite-installer-f9-f17.md)  
 **Implementing Task:** [E06:S09:T30](../epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T30-kanban-installer-log-epic-path-padding-br107.md)  
@@ -44,5 +45,5 @@ Install stdout/log lines reflect **actual** written paths (`epic-{epic:02d}/epic
 
 ## Acceptance criteria
 
-- [ ] Fresh v3.2 install log lines match on-disk epic directory names.
-- [ ] No change to valid on-disk layout (padding remains UXR-017 compliant).
+- [x] Fresh v3.2 install log lines match on-disk epic directory names.
+- [x] No change to valid on-disk layout (padding remains UXR-017 compliant).

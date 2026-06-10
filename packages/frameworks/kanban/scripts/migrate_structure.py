@@ -367,8 +367,13 @@ class KanbanStructureMigrator:
                         rel_tpl = template_file.relative_to(templates_root)
                     except ValueError:
                         rel_tpl = template_file.name
+                    dest_rel = (
+                        f"epics/{kp.epic_dir_name(epic_num)}/"
+                        f"{kp.epic_doc_basename(epic_num)}"
+                    )
                     print(
-                        f"  🔍 [DRY RUN] Would install Epic {epic_num} from template: {rel_tpl}"
+                        f"  🔍 [DRY RUN] Would install Epic {epic_num} from template: {rel_tpl} "
+                        f"→ {dest_rel}"
                     )
                 else:
                     print(
@@ -396,9 +401,13 @@ class KanbanStructureMigrator:
                     rel_tpl = template_file.relative_to(templates_root)
                 except ValueError:
                     rel_tpl = template_file.name
+                dest_rel = (
+                    f"epics/{kp.epic_dir_name(epic_num)}/"
+                    f"{kp.epic_doc_basename(epic_num)}"
+                )
                 print(
                     f"  ✅ Epic {epic_num} installed from template: {rel_tpl} "
-                    f"→ epics/epic-{epic_num}/epic-{epic_num}.md"
+                    f"→ {dest_rel}"
                 )
             else:
                 if not epic_doc.exists():

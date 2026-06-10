@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Completed Tasks
 
-**Last Updated:** 2026-06-10 (RW E06:S09:T29 — BR-106 non-interactive scaffold)
-**Version:** v0.6.9.29+2
+**Last Updated:** 2026-06-10 (RW E06:S09:T30 — BR-107 log padding)
+**Version:** v0.6.9.30+2
 
 > **For MoSCOW prioritized tasks, see:** [`kboard.md`](kboard.md)  
 > **For completed FR/BR/UXR intake items, see:** [`intake-completed.md`](intake-completed.md)
@@ -19,6 +19,10 @@ housekeeping_policy: keep
 ---
 
 ## 20 Most Recently Completed Tasks
+
+#### **IDW (2026-06-10)** — E06:S09:T30 @ **v0.6.9.30+2** (BR-107 Kanban installer log epic path padding)
+
+- **[E06:S09:T30](epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T30-kanban-installer-log-epic-path-padding-br107.md)** — Install stdout/dry-run destination hints use `kanban_paths` padded segments (`epic-01` not `epic-1`); resolves F21. SemVer **v0.4.1140+2**. **Completed:** `2026-06-10T19:15:18Z` | **Version:** `v0.6.9.30+2` | **Agent:** `IDW E06:S09:T30 --rw` | [BR-107](fr-br/BR-107-kanban-installer-log-epic-path-padding-mismatch.md) | [IPP](../../implementation-cycles/IPP-E06S09T30-kanban-installer-log-epic-path-padding-br107.md)
 
 #### **MWF (2026-06-10)** — E06:S09:T29 @ **v0.6.9.29+2** (BR-106 non-interactive CHANGELOG scaffold)
 

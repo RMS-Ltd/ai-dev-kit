@@ -9,12 +9,12 @@ housekeeping_policy: keep
 # E06:S09:T30 — Kanban installer log epic path padding (BR-107 / F21)
 
 **Task ID:** E06:S09:T30  
-**Status:** TODO  
+**Status:** ✅ COMPLETE (v0.6.9.30+2)  
 **Priority:** LOW  
 **Created:** 2026-06-10  
-**Last updated:** 2026-06-10 (v0.6.9.30+1 – Kanban documentation setup)  
-**Version:** v0.6.9.30+1  
-**Version Anchor:** v0.6.9.30+1  
+**Last updated:** 2026-06-10 (v0.6.9.30+2 — BR-107 log padding fix)  
+**Version:** v0.6.9.30+2  
+**Version Anchor:** v0.6.9.30+2  
 **Code:** E06S09T30  
 
 **Parent program:** [E06:S09:T26](T26-starborn-legacy-adk-install-program.md)  
@@ -25,7 +25,14 @@ housekeeping_policy: keep
 ## Input
 
 - [BR-107](../../../fr-br/BR-107-kanban-installer-log-epic-path-padding-mismatch.md)
+- [IPP-E06S09T30-kanban-installer-log-epic-path-padding-br107.md](../../../../implementation-cycles/IPP-E06S09T30-kanban-installer-log-epic-path-padding-br107.md) (IPW planning package)
 - SBL attempt 05 transcript: `starborn_legacy/logs/ai-dev-kit/install/attempt-05/transcripts/20260610T183509Z-phase3c-kanban-v3dot2.txt`
+
+---
+
+## References
+
+- [IPP-E06S09T30-kanban-installer-log-epic-path-padding-br107.md](../../../../implementation-cycles/IPP-E06S09T30-kanban-installer-log-epic-path-padding-br107.md)
 
 ---
 
@@ -43,5 +50,5 @@ Install stdout/log lines match on-disk epic directory names; no layout change to
 
 ## Acceptance criteria
 
-- [ ] Install stdout shows padded epic paths matching written directories.
-- [ ] No layout change to on-disk kanban tree.
+- [x] Install stdout shows padded epic paths matching written directories.
+- [x] No layout change to on-disk kanban tree.

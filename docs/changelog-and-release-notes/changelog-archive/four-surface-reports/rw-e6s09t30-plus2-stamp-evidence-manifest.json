@@ -1,0 +1,8 @@
+{
+  "rows": {
+    "E06:S09:T30": {
+      "allowed": true,
+      "reason": "RW Step 7 v0.6.9.30+2 — status TODO→COMPLETE; BR-107 log padding fix shipped"
+    }
+  }
+}

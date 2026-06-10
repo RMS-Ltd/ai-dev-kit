@@ -89,7 +89,7 @@ housekeeping_policy: keep
 
 - [x] **E06:S09:T29 – RW install non-interactive CHANGELOG prompt (BR-106 / F19)** - ✅ COMPLETE (**v0.6.9.29+2** — scaffold_interactive wiring) — [Task](story-09-ai-dev-kit-installation-and-adopter-integration/T29-rw-install-non-interactive-changelog-prompt-br106.md) | [BR-106](../../fr-br/BR-106-rw-install-non-interactive-changelog-prompt-eof.md) | [IPP](../../../implementation-cycles/IPP-E06S09T29-br106-non-interactive-changelog-scaffold.md)
 
-- [ ] **E06:S09:T30 – Kanban installer log epic path padding (BR-107 / F21)** - 📋 TODO (LOW, kanban init **v0.6.9.30+1**) — [Task](story-09-ai-dev-kit-installation-and-adopter-integration/T30-kanban-installer-log-epic-path-padding-br107.md) | [BR-107](../../fr-br/BR-107-kanban-installer-log-epic-path-padding-mismatch.md)
+- [x] **E06:S09:T30 – Kanban installer log epic path padding (BR-107 / F21)** - ✅ COMPLETE (**v0.6.9.30+2** — padded log paths via kanban_paths) — [Task](story-09-ai-dev-kit-installation-and-adopter-integration/T30-kanban-installer-log-epic-path-padding-br107.md) | [BR-107](../../fr-br/BR-107-kanban-installer-log-epic-path-padding-mismatch.md) | [IPP](../../../implementation-cycles/IPP-E06S09T30-kanban-installer-log-epic-path-padding-br107.md)
 
 ---
 

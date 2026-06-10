@@ -1,0 +1,26 @@
+{
+  "report_type": "rw_closure_archive_proof",
+  "invocation": "RW E06:S09:T30 --art",
+  "evidence_mode": "structure_prune",
+  "release_scope": {
+    "epic": 6,
+    "story": 9,
+    "task": 30,
+    "task_id": "E06:S09:T30",
+    "version_string": "v0.6.9.30+2"
+  },
+  "summary": {
+    "kboard_c_band_pruned": 1,
+    "ledger_before_removal": true
+  },
+  "archived": {
+    "kboard": ["E06:S09:T30"]
+  },
+  "rows": {
+    "E06:S09:T30": {
+      "allowed": true,
+      "reason": "Closure COMPLETE; kanban-completed.md 2026-06-10T19:15:18Z; BR-107 log padding fix"
+    }
+  },
+  "timestamp": "2026-06-10T19:15:18Z"
+}
