@@ -1,0 +1,12 @@
+fixture:
+  date: "2026-06-07"
+  time: "14:30"
+  amount: 1234.56
+rollout_locales: [es, fr, de, pt, zh-CN, zh-TW, ja, ru, ar]
+structural_checks:
+  de:
+    number_contains: ","
+  en-US:
+    currency_contains_any: ["$", "USD"]
+  fr:
+    date_contains: "2026"

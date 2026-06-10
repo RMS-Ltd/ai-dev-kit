@@ -79,3 +79,14 @@ def test_c6_rollout_matrix_links_back():
     """C6: Rollout matrix links to cultural requirements doc."""
     text = ROLLOUT_MATRIX.read_text(encoding="utf-8")
     assert "locale-cultural-requirements.md" in text
+
+
+def test_c8_handoff_t05_links_smoke_section():
+    """C8: T05 handoff references locale-formatting-conventions §7 smoke examples."""
+    text = CULTURAL_DOC.read_text(encoding="utf-8")
+    handoffs = text.split("## Handoffs", 1)[-1]
+    assert "E21:S04:T05" in handoffs
+    assert "locale-formatting-conventions" in text
+    assert "## 7. Per-locale smoke examples" in (
+        REPO_ROOT / "docs" / "governance" / "standards" / "locale-formatting-conventions.md"
+    ).read_text(encoding="utf-8")

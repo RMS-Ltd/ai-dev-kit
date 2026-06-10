@@ -112,9 +112,31 @@ CLI re-exports: `cli/localisation.py`.
 ## 6. Tests
 
 ```bash
-pytest tests/test_locale_formatting.py
+pytest tests/test_locale_formatting.py tests/test_locale_cultural_formatting.py
 pytest -m fr006
 ```
+
+---
+
+## 7. Per-locale smoke examples
+
+**Fixture:** `2026-06-07`, `14:30`, amount `1234.56` — see [`tests/fixtures/locale_formatting_smoke.yaml`](../../tests/fixtures/locale_formatting_smoke.yaml).
+
+| Locale | Date | Time | Number | Currency |
+| ------ | ---- | ---- | ------ | -------- |
+| `es` | 7 jun 2026 | 14:30 | 1.234,56 | 1.234,56 € |
+| `fr` | 7 juin 2026 | 14:30 | 1 234,56 | 1 234,56 € |
+| `de` | 07.06.2026 | 14:30 | 1.234,56 | 1.234,56 € |
+| `pt` | 7 de jun. de 2026 | 14:30 | 1.234,56 | € 1.234,56 |
+| `zh-CN` | 2026年6月7日 | 14:30 | 1,234.56 | ¥1,234.56 |
+| `zh-TW` | 2026年6月7日 | 下午2:30 | 1,234.56 | $1,234.56 |
+| `ja` | 2026/06/07 | 14:30 | 1,234.56 | ￥1,235 |
+| `ru` | 7 июн. 2026 г. | 14:30 | 1 234,56 | 1 234,56 ₽ |
+| `ar` | 07/06/2026 | 2:30 م | 1,234.56 | 1,234.56 ر.س. |
+| `en-GB` | 7 Jun 2026 | 14:30 | 1,234.56 | £1,234.56 |
+| `en-US` | Jun 7, 2026 | 2:30 PM | 1,234.56 | $1,234.56 |
+
+**Validation:** E21:S04:T05 — [`IPP-E21S04T05`](../../implementation-cycles/IPP-E21S04T05-cultural-formatting-validation.md).
 
 ---
 

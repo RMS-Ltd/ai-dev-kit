@@ -35,6 +35,7 @@ Test cultural adaptations across target locales.
 
 - Complete cultural adaptations
 - All locale configurations
+- Formatting smoke fixture: [`tests/fixtures/locale_formatting_smoke.yaml`](../../../../tests/fixtures/locale_formatting_smoke.yaml) (E21:S04:T05 @ v0.21.4.5+1)
 
 ---
 

@@ -8,12 +8,12 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Board
 
-**Last Updated:** 2026-06-10 (RW: E02:S03:T09)
-**Version:** v0.2.3.9+1
+**Last Updated:** 2026-06-10 (RW: E21:S04:T05)
+**Version:** v0.21.4.5+1
 
 **Active board contract:** **Sole active MoSCOW board** ([ADR-018](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/architecture/standards-and-adrs/ADR-018-single-kanban-board-consolidation.md)). Rows are **live work** (TODO / IN PROGRESS / OPEN / WAITING / PERPETUAL) plus filed **Could Have** backlog. **Verification (V)** band holds task-shipped / FBU-open items (`⏳ WAITING`). Remove **terminal** rows and archive prose (use [`kanban-completed.md`](kanban-completed.md) / [`intake-completed.md`](intake-completed.md)).
 
-**Note:** Epics 1, 3, 7, 11 are COMPLETE. Epics 2, 4, 5, 6, 8, **10** are IN PROGRESS. Epic 5 **S08/S09 COMPLETE** (FR-114/FR-121). Epic 21 IN PROGRESS — **all 47 tasks on board** (S01–S03 COMPLETE; S04:T01 + S05:T01 + S06:T01 + S08 L0–1 shipped; S09 admin COMPLETE; S04 T02–T07 + S05–S07 locale backlog; S08 L2–5 deferred).
+**Note:** Epics 1, 3, 7, 11 are COMPLETE. Epics 2, 4, 5, 6, 8, **10** are IN PROGRESS. Epic 5 **S08/S09 COMPLETE** (FR-114/FR-121). Epic 21 IN PROGRESS — **all 47 tasks on board** (S01–S03 COMPLETE; S04:T01 + T05 + S05:T01 + S06:T01 + S08 L0–1 shipped; S09 admin COMPLETE; S04 T04/T06/T07 + S05–S07 locale backlog; S08 L2–5 deferred).
 
 **Wiring:** Every wired row includes FBU link(s) where applicable (UXR-010). Legacy `fbuboard.md` / `kanban-board.md` aliases **removed** (intake rename wave).
 
@@ -35,7 +35,7 @@ housekeeping_policy: keep
 
 ### Verification (V) - Task Shipped, FBU Verification Pending
 
-#### Epic 21 (E21) — full inventory: shipped (30 tasks)
+#### Epic 21 (E21) — full inventory: shipped (31 tasks)
 
 - **E21:S01:T01** – Add language selection prompt to template setup (GitHub template) - ⏳ SHIPPED (MEDIUM, **v0.21.1.1+2**) | [Task](epics/epic-21/story-01-language-selection-at-setup/T01-add-language-selection-prompt-to-template-setup-github-templ.md) | [Story](epics/epic-21/story-01-language-selection-at-setup.md) | [FR-006](fr-br/FR-006-localization-language-selection-uk-us-english.md) | [—IPP—](../../implementation-cycles/IPP-E21S01T01-template-language-selection-github.md) | Last modified: 2026-06-07 10:18 UTC
 
@@ -81,6 +81,8 @@ housekeeping_policy: keep
 
 - **E21:S04:T01** – Research cultural requirements for target locales - ⏳ SHIPPED (LOW, **v0.21.4.1+1**) | [Task](epics/epic-21/story-04-cultural-adaptation/T01-research-cultural-requirements-for-target-locales.md) | [Story](epics/epic-21/story-04-cultural-adaptation.md) | [FR-006](fr-br/FR-006-localization-language-selection-uk-us-english.md) | [—IPP—](../../implementation-cycles/IPP-E21S04T01-research-cultural-requirements-target-locales.md) | Last modified: 2026-06-07 11:03 UTC
 
+- **E21:S04:T05** – Cultural formatting validation (dates, times, numbers, currency) - ⏳ SHIPPED (MEDIUM, **v0.21.4.5+1**) | [Task](epics/epic-21/story-04-cultural-adaptation/T05-configure-locale-specific-formatting-dates-times-numbers-cur.md) | [Story](epics/epic-21/story-04-cultural-adaptation.md) | [FR-006](fr-br/FR-006-localization-language-selection-uk-us-english.md) | [—IPP—](../../implementation-cycles/IPP-E21S04T05-cultural-formatting-validation.md) | Last modified: 2026-06-07 11:15 UTC
+
 - **E21:S05:T01** – Spanish (es) translation files - ⏳ SHIPPED (LOW, **v0.21.5.1+1**) | [Task](epics/epic-21/story-05-european-languages-localization/T01-spanish-es-translation-files.md) | [Story](epics/epic-21/story-05-european-languages-localization.md) | [FR-006](fr-br/FR-006-localization-language-selection-uk-us-english.md) | [—IPP—](../../implementation-cycles/IPP-E21S05T01-spanish-es-translation-files.md) | Last modified: 2026-06-07 11:18 UTC
 
 - **E21:S06:T01** – Chinese Simplified (zh-CN) translation files - ⏳ SHIPPED (LOW, **v0.21.6.1+1**) | [Task](epics/epic-21/story-06-cjk-languages-localization/T01-chinese-simplified-zh-cn-translation-files.md) | [Story](epics/epic-21/story-06-cjk-languages-localization.md) | [FR-006](fr-br/FR-006-localization-language-selection-uk-us-english.md) | [—IPP—](../../implementation-cycles/IPP-E21S06T01-chinese-simplified-zh-cn-translation-files.md) | Last modified: 2026-06-07 11:33 UTC
@@ -99,11 +101,9 @@ housekeeping_policy: keep
 
 ### Could Have (C) - Nice-to-Have Tasks
 
-#### Epic 21 (E21) — full inventory: backlog (13 tasks)
+#### Epic 21 (E21) — full inventory: backlog (12 tasks)
 
 - **E21:S04:T04** – Adapt content and examples for cultural context - 📋 TODO (MEDIUM, absorbs superseded T02) | [Task](epics/epic-21/story-04-cultural-adaptation/T04-adapt-content-and-examples-for-cultural-context.md) | [Story](epics/epic-21/story-04-cultural-adaptation.md) | [FR-006](fr-br/FR-006-localization-language-selection-uk-us-english.md) | —No IPP— | Last modified: 2026-06-09 22:00 UTC
-
-- **E21:S04:T05** – Configure locale-specific formatting (dates, times, numbers, currency) - 📋 TODO (MEDIUM, cultural adaptation) | [Task](epics/epic-21/story-04-cultural-adaptation/T05-configure-locale-specific-formatting-dates-times-numbers-cur.md) | [Story](epics/epic-21/story-04-cultural-adaptation.md) | [FR-006](fr-br/FR-006-localization-language-selection-uk-us-english.md) | —No IPP— | Last modified: 2026-06-07 11:15 UTC
 
 - **E21:S04:T06** – Test cultural adaptations - 📋 TODO (MEDIUM, cultural adaptation) | [Task](epics/epic-21/story-04-cultural-adaptation/T06-test-cultural-adaptations.md) | [Story](epics/epic-21/story-04-cultural-adaptation.md) | [FR-006](fr-br/FR-006-localization-language-selection-uk-us-english.md) | —No IPP— | Last modified: 2026-06-07 11:18 UTC
 

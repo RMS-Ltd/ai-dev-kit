@@ -208,6 +208,21 @@ Outline for **E21:S04:T07** contributor cultural guidelines (not final prose):
 
 ---
 
+## Formatting validation (E21:S04:T05)
+
+Smoke examples for date, time, number, and currency across all nine rollout locales are published in [locale-formatting-conventions.md §7](locale-formatting-conventions.md#7-per-locale-smoke-examples), generated from `locale_formatting.py` with fixture `2026-06-07 14:30` / amount `1234.56`. Fixture: [`tests/fixtures/locale_formatting_smoke.yaml`](../../tests/fixtures/locale_formatting_smoke.yaml).
+
+| Locale | Matrix alignment | Notes |
+| ------ | ---------------- | ----- |
+| `es`, `fr`, `de`, `pt` | Aligned | European decimal comma / grouping per Babel |
+| `zh-CN`, `zh-TW`, `ja` | Aligned | CJK date glyphs; TW 12h time |
+| `ru` | Aligned | Cyrillic month abbreviation |
+| `ar` | Review gap | Western digits in smoke output; Eastern Arabic digits deferred to T06 when locale data permits |
+
+Planning: [IPP-E21S04T05](../../implementation-cycles/IPP-E21S04T05-cultural-formatting-validation.md). Infra SoT: [IPP-E21S02T05](../../implementation-cycles/IPP-E21S02T05-locale-formatting.md).
+
+---
+
 ## Handoffs
 
 _T02 superseded @ `v0.21.4.2+1` — imagery, layout expansion, and directional-icon audit checklist merged into T04 ([IPP-E21S04T02](../../implementation-cycles/IPP-E21S04T02-supersede-merge-into-t04.md))._
@@ -216,7 +231,7 @@ _T02 superseded @ `v0.21.4.2+1` — imagery, layout expansion, and directional-i
 | ---- | ---------------------- |
 | [E21:S04:T03](../../kanban/epics/epic-21/story-04-cultural-adaptation/T03-implement-rtl-support-right-to-left-for-arabichebrew.md) | Arabic RTL dimensions; `he` extension note; RTL icon mirroring implementation — **API/conventions:** [locale-rtl-conventions.md](locale-rtl-conventions.md) |
 | [E21:S04:T04](../../kanban/epics/epic-21/story-04-cultural-adaptation/T04-adapt-content-and-examples-for-cultural-context.md) | Tone, examples, glossary, pt variant; imagery policy; layout expansion guidance; directional-icon audit checklist (absorbed from superseded T02) |
-| [E21:S04:T05](../../kanban/epics/epic-21/story-04-cultural-adaptation/T05-configure-locale-specific-formatting-dates-times-numbers-cur.md) | Per-locale formatting rows |
+| [E21:S04:T05](../../kanban/epics/epic-21/story-04-cultural-adaptation/T05-configure-locale-specific-formatting-dates-times-numbers-cur.md) | Per-locale formatting rows — **validated** via §7 smoke table |
 | [E21:S04:T06](../../kanban/epics/epic-21/story-04-cultural-adaptation/T06-test-cultural-adaptations.md) | E2E cultural checks |
 | [E21:S04:T07](../../kanban/epics/epic-21/story-04-cultural-adaptation/T07-document-cultural-considerations-and-guidelines.md) | Guideline framework (draft) → polished guide |
 

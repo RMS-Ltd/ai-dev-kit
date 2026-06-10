@@ -11,58 +11,8 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
-## [0.2.3.9+1] - 10-06-26
+## [0.21.4.5+1] - 10-06-26
 
-E02:S03:T09 — **Change implemented:** Atomic intake for **FR-123** (`IPW … --rw` full delivery chain IPW → IDW → RW). SemVer **v0.4.1115+1**.
+E21:S04:T05 — Cultural formatting validation: per-locale smoke examples (§7), T01 matrix cross-check, cultural smoke tests. Infra SoT remains E21:S02:T05. SemVer **v0.4.1116+1**.
 
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.3.9+1.md)
-
----
-
-## [0.2.16.6+4] - 10-06-26
-
-E02:S16:T06 — **Attempted fix:** Wave 4b — maintainability autofix (**24** ruff fixes + manual edge cases); greenfield mirror synced. SemVer **v0.4.1114+4**.
-
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.16.6+4.md)
-
----
-
-## [0.21.4.2+1] - 10-06-26
-
-E21:S04:T02 — **Change implemented:** Supersede cultural UI/UX task; merge T01 handoffs (imagery, layout guidance, icon audit checklist) into E21:S04:T04. SemVer **v0.4.1110+1**.
-
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.21.4.2+1.md)
-
----
-
-## [0.21.6.1+1] - 10-06-26
-
-E21:S06:T01 — **Attempted translation:** FR-006 Chinese Simplified (zh-CN) locale delivery for kanban + workflow-mgt. SemVer **v0.4.1109+1**.
-
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.21.6.1+1.md)
-
----
-
-## [0.2.16.2+3] - 10-06-26
-
-E02:S16:T02 — **Change implemented:** UKW bookkeeping — pruned terminal E05 FR-114 rows from `kboard.md`; epic/story sync; kanban-completed ledger. SemVer **v0.4.1108+3**.
-
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.16.2+3.md)
-
----
-
-## [0.21.5.1+1] - 09-06-26
-
-E21:S05:T01 — **Attempted translation:** FR-006 Spanish (es) locale delivery for kanban + workflow-mgt. SemVer **v0.4.1107+1**.
-
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.21.5.1+1.md)
-
----
-
-## [0.21.4.1+1] - 09-06-26
-
-E21:S04:T01 — **Change implemented:** FR-006 cultural requirements research (`locale-cultural-requirements.md`). SemVer **v0.4.1106+1**.
-
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.21.4.1+1.md)
-
----
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.21.4.5+1.md)

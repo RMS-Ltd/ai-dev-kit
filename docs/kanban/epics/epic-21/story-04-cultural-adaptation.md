@@ -12,8 +12,8 @@ housekeeping_policy: keep
 **Priority:** LOW  
 **Estimated Effort:** [TBD]  
 **Created:** 2025-12-09  
-**Last updated:** 2026-06-10 (v0.21.4.3+1 – Kanban documentation setup)
-**Version:** v0.21.4.3+1
+**Last updated:** 2026-06-10 (v0.21.4.5+1 – E21:S04:T05 cultural formatting validation)
+**Version:** v0.21.4.5+1
 **Code:** E21S04
 
 ---
@@ -41,8 +41,9 @@ Ensure framework content and features are culturally appropriate for different r
   - Planning: [IPP-E21S04T03](../../implementation-cycles/IPP-E21S04T03-rtl-support-arabic-hebrew.md) · [locale-rtl-conventions](../../governance/standards/locale-rtl-conventions.md)
 - [ ] **E21:S04:T04 – Adapt content and examples for cultural context** - TODO (absorbs superseded T02 imagery/layout scope)
   - Task: [`T04-adapt-content-and-examples-for-cultural-context`](story-04-cultural-adaptation/T04-adapt-content-and-examples-for-cultural-context.md)
-- [ ] **E21:S04:T05 – Configure locale-specific formatting (dates, times, numbers, currency)** - TODO
+- [x] **E21:S04:T05 – Cultural formatting validation (dates, times, numbers, currency)** - COMPLETE (**v0.21.4.5+1**)
   - Task: [`T05-configure-locale-specific-formatting-dates-times-numbers-cur`](story-04-cultural-adaptation/T05-configure-locale-specific-formatting-dates-times-numbers-cur.md)
+  - Planning: [IPP-E21S04T05](../../implementation-cycles/IPP-E21S04T05-cultural-formatting-validation.md) · [locale-formatting-conventions §7](../../governance/standards/locale-formatting-conventions.md)
 - [ ] **E21:S04:T06 – Test cultural adaptations** - TODO
   - Task: [`T06-test-cultural-adaptations`](story-04-cultural-adaptation/T06-test-cultural-adaptations.md)
 - [ ] **E21:S04:T07 – Document cultural considerations and guidelines** - TODO
@@ -56,7 +57,7 @@ Ensure framework content and features are culturally appropriate for different r
 - [ ] UI/UX adapted for different cultures (via T04 content/presentation policy + T03 RTL — not a separate task after T02 supersede)
 - [x] RTL support implemented (T03 @ v0.21.4.3+1)
 - [ ] Content adapted for cultural context
-- [ ] Locale-specific formatting configured
+- [x] Locale-specific formatting configured (T05 validation @ v0.21.4.5+1)
 - [ ] Cultural adaptations tested
 - [ ] Cultural considerations documented
 
