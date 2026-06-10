@@ -17,9 +17,10 @@ _SCRIPTS = _SCRIPT_DIR.parent
 if str(_SCRIPTS) not in sys.path:
     sys.path.insert(0, str(_SCRIPTS))
 
+from rw_config_loader import find_project_root  # noqa: E402
+
 from release_state.db import open_db, utc_now_iso  # noqa: E402
 from release_state.store import save_registry_to_sqlite  # noqa: E402
-from rw_config_loader import find_project_root  # noqa: E402
 
 _VERSION_FILE_RE = re.compile(r"CHANGELOG_v(?P<ver>[\d.]+(?:\+\d+)?)\.md$", re.I)
 

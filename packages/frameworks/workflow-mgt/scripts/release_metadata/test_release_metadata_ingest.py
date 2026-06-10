@@ -17,7 +17,11 @@ if str(_SCRIPTS) not in sys.path:
 
 from release_metadata.audit_semver import audit_collisions  # noqa: E402
 from release_metadata.ingest import run_ingest  # noqa: E402
-from release_metadata.ingest_semver import db_mapping_count, ingest_semver_registry, yaml_mapping_count  # noqa: E402
+from release_metadata.ingest_semver import (  # noqa: E402
+    db_mapping_count,
+    ingest_semver_registry,
+    yaml_mapping_count,
+)
 from release_metadata.query import query_by_version  # noqa: E402
 from release_metadata.store import init_schema, open_store  # noqa: E402
 

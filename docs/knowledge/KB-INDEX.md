@@ -1,6 +1,6 @@
 # KB Index
 
-**Generated:** 2026-06-10 10:00:36 UTC  
+**Generated:** 2026-06-10 10:02:58 UTC  
 **Scope:** /Users/rms/Documents/projects/ai-dev-kit/docs  
 **Total files:** 3116  
 **Total size:** 14.64 MB

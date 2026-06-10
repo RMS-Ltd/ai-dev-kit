@@ -15,7 +15,6 @@ sys.path.insert(0, str(SCRIPTS))
 
 from release_state.allocate import (  # noqa: E402
     PreviewNotAllowed,
-    SemVerCollisionError,
     allocate,
     audit,
     lookup,

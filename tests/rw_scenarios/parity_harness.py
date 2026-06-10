@@ -5,10 +5,9 @@ from __future__ import annotations
 from pathlib import Path
 from typing import Any
 
-import yaml
-
 import finalize_rw_semver_registry as frsr
 import semver_converter as sc
+import yaml
 from release_state.import_legacy import import_registry_yaml
 from release_state.store import load_registry_from_sqlite
 

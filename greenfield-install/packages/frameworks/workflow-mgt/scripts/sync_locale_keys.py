@@ -16,7 +16,11 @@ import sys
 from pathlib import Path
 from typing import List
 
-from locale_translation_utils import PACKAGES, repo_root_from_script, sync_locale_keys_for_package
+from locale_translation_utils import (
+    PACKAGES,
+    repo_root_from_script,
+    sync_locale_keys_for_package,
+)
 
 
 def main(argv: List[str] | None = None) -> int:

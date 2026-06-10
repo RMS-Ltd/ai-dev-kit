@@ -29,6 +29,7 @@ for _p in (_validation_dir, _version_dir, _scripts_dir):
     if str(_p) not in sys.path:
         sys.path.insert(0, str(_p))
 
+from rw_config_loader import load_rw_config_or_empty  # noqa: E402
 from validate_release_coherence import (  # noqa: E402
     _CHANGELOG_ENTRY_RE,
     _CHANGELOG_SEMVER_RE,
@@ -38,7 +39,6 @@ from validate_release_coherence import (  # noqa: E402
     _parse_version_file,
     _project_root,
 )
-from rw_config_loader import load_rw_config_or_empty  # noqa: E402
 
 _INTERNAL_TAG_RE = re.compile(r"^v(\d+\.\d+\.\d+\.\d+\+\d+)$")
 
@@ -157,7 +157,6 @@ def audit_release_at_tag(
     version_text = _git_show(root, tag, version_rel)
     if not version_text:
         errors.append(f"missing {version_rel} at tag")
-        parsed = None
     else:
         parsed = _parse_version_file(version_text)
         if not parsed:

@@ -5,8 +5,6 @@ from __future__ import annotations
 import sys
 from pathlib import Path
 
-import pytest
-
 _scripts = Path(__file__).resolve().parent.parent
 for p in (_scripts, _scripts / "version", _scripts / "kanban"):
     if str(p) not in sys.path:

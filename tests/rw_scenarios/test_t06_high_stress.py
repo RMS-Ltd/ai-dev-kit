@@ -30,8 +30,13 @@ sys.path.insert(0, str(VERSION_DIR))
 
 import resolve_rw_build as rrb  # noqa: E402
 from parity_harness import finalize_once, init_sqlite_backend  # noqa: E402
-from validate_release_tag_immutability import validate_release_tag_immutability  # noqa: E402
-from validate_version_bump import is_perpetual_task, validate_perpetual_build_increment  # noqa: E402
+from validate_release_tag_immutability import (
+    validate_release_tag_immutability,  # noqa: E402
+)
+from validate_version_bump import (  # noqa: E402
+    is_perpetual_task,
+    validate_perpetual_build_increment,
+)
 
 
 def _git_init(tmp: Path, version_rel: str, *, story=17, task=2, build=0) -> Path:

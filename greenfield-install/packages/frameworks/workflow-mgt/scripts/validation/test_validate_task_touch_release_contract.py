@@ -13,8 +13,8 @@ for p in (_val_dir, _version_dir):
     if str(p) not in sys.path:
         sys.path.insert(0, str(p))
 
-import validate_task_touch_release_contract as vttrc  # noqa: E402
 import semver_converter  # noqa: E402
+import validate_task_touch_release_contract as vttrc  # noqa: E402
 
 
 @pytest.fixture

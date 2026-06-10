@@ -6,7 +6,6 @@ See docs/implementation-cycles/IPP-E02S16T24-s16-perpetual-only-semantic-scatter
 from __future__ import annotations
 
 import re
-import shutil
 from pathlib import Path
 
 REPO = Path(__file__).resolve().parents[5]

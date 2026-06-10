@@ -15,8 +15,8 @@ import argparse
 import hashlib
 import sys
 import tarfile
-from contextlib import suppress
 import tempfile
+from contextlib import suppress
 from pathlib import Path
 from typing import Optional
 

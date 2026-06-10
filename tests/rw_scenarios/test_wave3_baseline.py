@@ -17,7 +17,6 @@ import tempfile
 from contextlib import redirect_stdout
 from pathlib import Path
 
-
 REPO_ROOT = Path(__file__).resolve().parents[2]
 SCRIPTS = REPO_ROOT / "packages/frameworks/workflow-mgt/scripts"
 VERSION_DIR = SCRIPTS / "version"
@@ -29,7 +28,9 @@ sys.path.insert(0, str(VALIDATION_DIR))
 import push_rw_release as prr  # noqa: E402
 import resolve_rw_build as rrb  # noqa: E402
 from tag_collision_recovery import format_tag_collision_recovery  # noqa: E402
-from validate_release_tag_immutability import validate_release_tag_immutability  # noqa: E402
+from validate_release_tag_immutability import (
+    validate_release_tag_immutability,  # noqa: E402
+)
 
 
 def _run_validator(script: str, args: list[str]) -> subprocess.CompletedProcess:

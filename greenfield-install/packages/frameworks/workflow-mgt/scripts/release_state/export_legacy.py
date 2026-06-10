@@ -14,8 +14,9 @@ _SCRIPTS = _SCRIPT_DIR.parent
 if str(_SCRIPTS) not in sys.path:
     sys.path.insert(0, str(_SCRIPTS))
 
-from release_state.store import load_registry_from_sqlite  # noqa: E402
 from rw_config_loader import find_project_root  # noqa: E402
+
+from release_state.store import load_registry_from_sqlite  # noqa: E402
 
 
 def export_registry_yaml(db_path: Path, yaml_out: Path) -> None:

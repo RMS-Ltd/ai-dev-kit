@@ -15,7 +15,7 @@ housekeeping_policy: keep
 **Estimated Effort:** Medium (ongoing)  
 **Created:** 2026-06-05  
 **Last updated:** 2026-06-10 (IPW Wave 4 — manifest @ `38d2454`; AC13/AC14)  
-**Version Anchor:** v0.2.16.6+3 (Wave 4a)  
+**Version Anchor:** v0.2.16.6+4 (Wave 4b)  
 **Code:** E02S16T06  
 **Task Type:** Perpetual Maintenance
 
@@ -348,6 +348,20 @@ Use **`RW E02:S16:T06`** for recurring security/Code Quality hygiene (BUILD incr
 | **3d** | pending post-merge | **CLOSED** — CQG local gate clean; no reliability regression |
 | **3e** | pending dashboard | **CLOSED** (standard bands); PR #43 AI dismiss remains operator action |
 
+### Wave 4b remediation (2026-06-10)
+
+**Theme:** Maintainability autofix per Wave 4a rule table — `py/unused-import`, import hygiene, `py/unused-local-variable`.
+
+| Action | Result |
+| ------ | ------ |
+| `ruff --fix F401,I001` | **24** fixes across `packages/`, `tests/`, `scripts/` |
+| Manual `F841` | `localisation_config.py` dead assignment; `validate_rw_split_brain_streak.py` unused branch |
+| `sync_greenfield_install.py` | **1791** files in sync |
+| `pytest tests/` | **843 passed**, 5 skipped |
+| CQG | advisory threshold (non-strict); cyclic-import / unused-global residuals deferred |
+| `RW E02:S16:T06 --art` | **v0.2.16.6+4** |
+| Operator dashboard (TC24) | **Pending** post-merge |
+
 **Cross-lane notes:**
 
 - **T15:** CI green on `main` @ `4c4e9275` (PR #41 merge path); merge gate **lifted** for T16 code waves.
@@ -387,7 +401,7 @@ Use **`RW E02:S16:T06`** for recurring security/Code Quality hygiene (BUILD incr
 - [x] **AC11 (Wave 3d):** `cli/logging.py` empty-except shipped **v0.8.3.16+7**; repo grep clean; operator post-merge verify **pending**.
 - [x] **AC12 (Wave 3e):** Autofix PR #43/#44 pytest triage merged to `main`; shipped **v0.8.3.16+9**; operator dismiss #43 finding **pending**.
 - [x] **AC13 (Wave 4a):** Wave 4 manifest **10** M @ `38d2454`; 3c/3d/3e verify notes closed; shipped **v0.2.16.6+3**.
-- [ ] **AC14 (Wave 4b):** Maintainability burn-down of **10** findings; pytest/CQG/greenfield green; operator TC24 verify; shipped **v0.2.16.6+4**.
+- [x] **AC14 (Wave 4b):** Maintainability burn-down of **10** findings; pytest/greenfield green; CQG advisory; shipped **v0.2.16.6+4**; operator TC24 verify **pending**.
 
 ---
 

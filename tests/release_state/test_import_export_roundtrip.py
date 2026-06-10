@@ -14,7 +14,10 @@ sys.path.insert(0, str(SCRIPTS))
 sys.path.insert(0, str(SCRIPTS / "version"))
 
 from release_state.export_legacy import export_registry_yaml  # noqa: E402
-from release_state.import_legacy import import_registry_yaml, validate_import  # noqa: E402
+from release_state.import_legacy import (  # noqa: E402
+    import_registry_yaml,
+    validate_import,
+)
 from release_state.store import load_registry_from_sqlite  # noqa: E402
 
 FIXTURE_YAML = REPO_ROOT / "tests/fixtures/semver-registry-mini.yaml"

@@ -7,7 +7,7 @@ import argparse
 import json
 import re
 import subprocess
-from collections import Counter, defaultdict
+from collections import defaultdict
 from dataclasses import asdict, dataclass, field
 from pathlib import Path
 from typing import Any, Dict, List, Optional, Set, Tuple

@@ -5,8 +5,6 @@ from __future__ import annotations
 import sys
 from pathlib import Path
 
-import pytest
-
 _val_dir = Path(__file__).resolve().parent
 _pkg = _val_dir.parents[1]
 if str(_val_dir) not in sys.path:

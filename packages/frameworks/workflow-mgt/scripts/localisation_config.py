@@ -514,7 +514,6 @@ def switch_locale(
         current = prompt_language_choice(project_root)
     else:
         current = locale_payload_from_tag(locale_tag)
-    config_path = project_root / LOCALISATION_CONFIG_FILENAME
     if dry_run:
         return {
             "previous": previous,

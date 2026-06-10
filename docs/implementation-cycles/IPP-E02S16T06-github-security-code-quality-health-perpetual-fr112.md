@@ -298,9 +298,9 @@ Establish **E02:S16:T06** as the operational perpetual lane for GitHub **code sc
 - [x] Operator dashboard verify (TC14) — closed Wave 3a @ **3** M + **8** R
 - [x] Wave 3a manifest @ post–Wave 2b `main` (TC15–TC16); shipped **v0.8.3.16+4**
 - [x] Wave 3b reliability-first remediation (TC17–TC18); shipped **v0.8.3.16+5** (operator dashboard re-verify pending)
-- [ ] Wave 4a manifest @ `main` `38d2454…` with **~10** maintainability (TC19); shipped **v0.8.3.16+10**
-- [ ] Waves 3c/3d/3e operator verifies closed in manifest (RF25)
-- [ ] Wave 4b maintainability burn-down + pytest/CQG/greenfield (TC20–TC22); shipped **v0.8.3.16+11**
+- [x] Wave 4a manifest @ `main` `38d2454…` with **10** maintainability (TC19); shipped **v0.2.16.6+3**
+- [x] Waves 3c/3d/3e operator verifies closed in manifest (RF25)
+- [x] Wave 4b maintainability burn-down + pytest/greenfield (TC20–TC22); shipped **v0.2.16.6+4**
 - [ ] Operator dashboard TC24 verify (maintainability **~10 → 0** or documented residual)
 
 ---

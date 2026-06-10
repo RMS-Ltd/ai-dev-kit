@@ -34,8 +34,9 @@ sys.path.insert(0, str(VALIDATION_DIR))
 import push_rw_release as prr  # noqa: E402
 from tag_collision_recovery import format_tag_collision_recovery  # noqa: E402
 from task_touch_registry_audit import audit_registry, has_collisions  # noqa: E402
-from validate_release_tag_immutability import validate_release_tag_immutability  # noqa: E402
-
+from validate_release_tag_immutability import (
+    validate_release_tag_immutability,  # noqa: E402
+)
 
 SCENARIO_NASTY = ["RW-HS08", "RW-HS09", "RW-HS10"]
 

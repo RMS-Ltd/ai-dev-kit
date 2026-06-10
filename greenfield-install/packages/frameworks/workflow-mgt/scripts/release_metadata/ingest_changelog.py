@@ -12,7 +12,10 @@ _SCRIPTS = Path(__file__).resolve().parent.parent
 if str(_SCRIPTS) not in sys.path:
     sys.path.insert(0, str(_SCRIPTS))
 
-from changelog.changelog_utils import ChangelogEntry, extract_changelog_entries  # noqa: E402
+from changelog.changelog_utils import (  # noqa: E402
+    ChangelogEntry,
+    extract_changelog_entries,
+)
 
 from .hashutil import row_hash_payload, sha256_text
 from .ingest_semver import normalize_internal_version, parse_internal_version
