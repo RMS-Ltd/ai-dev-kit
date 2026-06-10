@@ -362,6 +362,16 @@ Use **`RW E02:S16:T06`** for recurring security/Code Quality hygiene (BUILD incr
 | `RW E02:S16:T06 --art` | **v0.2.16.6+4** |
 | Operator dashboard (TC24) | **Pending** post-merge |
 
+### Wave 4 post–4b local verify (2026-06-10)
+
+**Capture:** `dev` @ **`820e13a7`** (post Wave 4b RW). Local proxy (supplementary):
+
+| Proxy | Count | Notes |
+| ----- | ----- | ----- |
+| `ruff` `F401`/`I001`/`F841` | **0** | `packages/`, `scripts/`, `tests/`, `cli/` |
+| CQG (non-strict) | advisory | Residual `py/cyclic-import`, `py/unused-global-variable` — future wave |
+| Operator dashboard (TC24) | **Pending** | Confirm maintainability **10 → 0** on [Code Quality](https://github.com/RMS-Ltd/ai-dev-kit/security/quality) post-merge to `main` |
+
 **Cross-lane notes:**
 
 - **T15:** CI green on `main` @ `4c4e9275` (PR #41 merge path); merge gate **lifted** for T16 code waves.
