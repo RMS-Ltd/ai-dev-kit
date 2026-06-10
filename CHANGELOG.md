@@ -11,8 +11,8 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
-## [0.6.9.29+1] - 10-06-26
+## [0.6.9.30+1] - 10-06-26
 
-E06:S09:T29 — BR-106 / F19 intake kanban init (RW install non-interactive CHANGELOG prompt). SemVer **v0.4.1136+1**.
+E06:S09:T30 — BR-107 / F21 intake kanban init (Kanban installer log epic path padding). SemVer **v0.4.1137+1**.
 
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.6.9.29+1.md)
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.6.9.30+1.md)

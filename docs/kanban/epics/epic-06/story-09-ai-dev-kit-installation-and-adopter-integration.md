@@ -13,8 +13,8 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** Large  
 **Created:** 2026-04-19  
-**Last updated:** 2026-06-10 (v0.6.9.29+1 – Kanban documentation setup)
-**Version:** v0.6.9.29+1
+**Last updated:** 2026-06-10 (v0.6.9.30+1 – Kanban documentation setup)
+**Version:** v0.6.9.30+1
 **Code:** E6S09
 
 ---
@@ -88,6 +88,8 @@ housekeeping_policy: keep
 - [ ] **E06:S09:T28 – v3.2 fresh install sign-off story padding (BR-105 / F18)** - 📋 TODO (MEDIUM, kanban init **v0.6.9.28+1**) — [Task](story-09-ai-dev-kit-installation-and-adopter-integration/T28-v32-fresh-install-signoff-story-padding-br105.md) | [BR-105](../../fr-br/BR-105-v32-fresh-install-signoff-story-padding-mismatch.md)
 
 - [ ] **E06:S09:T29 – RW install non-interactive CHANGELOG prompt (BR-106 / F19)** - 📋 TODO (HIGH, kanban init **v0.6.9.29+1**) — [Task](story-09-ai-dev-kit-installation-and-adopter-integration/T29-rw-install-non-interactive-changelog-prompt-br106.md) | [BR-106](../../fr-br/BR-106-rw-install-non-interactive-changelog-prompt-eof.md)
+
+- [ ] **E06:S09:T30 – Kanban installer log epic path padding (BR-107 / F21)** - 📋 TODO (LOW, kanban init **v0.6.9.30+1**) — [Task](story-09-ai-dev-kit-installation-and-adopter-integration/T30-kanban-installer-log-epic-path-padding-br107.md) | [BR-107](../../fr-br/BR-107-kanban-installer-log-epic-path-padding-mismatch.md)
 
 ---
 
