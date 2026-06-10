@@ -9,12 +9,12 @@ housekeeping_policy: keep
 # E02:S01:T30 — RW architectural contract & release transaction (FR-122)
 
 **Task ID:** E02:S01:T30  
-**Status:** 🔄 IN PROGRESS (Wave 8 streak auditor shipped — sign-off 3/10 pending)  
+**Status:** ✅ COMPLETE (**v0.2.1.30+8** — FR-122 program sign-off; streak **13/10**)  
 **Priority:** CRITICAL  
 **Estimated Effort:** Very Large (multi-wave meta program)  
 **Created:** 2026-06-09  
-**Last updated:** 2026-06-09 (RW **v0.2.1.30+7** — post-Wave 8 hygiene + push)  
-**Version Anchor:** v0.2.1.30+7  
+**Last updated:** 2026-06-10 (RW **v0.2.1.30+8** — FR-122 AC4 sign-off)  
+**Version Anchor:** v0.2.1.30+8  
 **Code:** E02S01T30
 
 Publication Status: NOT_APPLICABLE
@@ -74,13 +74,13 @@ Own the **meta program** for [FR-122](../../../fr-br/FR-122-release-workflow-arc
 | **3** | Step 11 tag-authority hard gate + dual-source RW trigger parity | ✅ COMPLETE (**v0.2.1.30+4**) |
 | **4** | `rw-contract.yaml` machine manifest | ✅ COMPLETE (**v0.2.1.30+5**) |
 | **5** | Optional thin `rw_orchestrator.py` (PREFLIGHT/VALIDATE/PUBLISH deterministic shell) | ✅ COMPLETE (**v0.2.1.30+5**) |
-| **8** | Split-brain streak auditor (`validate_rw_split_brain_streak.py`) | ✅ COMPLETE (**v0.2.1.30+6**); sign-off **3/10** @ dev |
+| **8** | Split-brain streak auditor + sign-off evidence | ✅ COMPLETE (**v0.2.1.30+8**); streak **13/10** @ dev |
 
 ---
 
 ## Acceptance Criteria
 
-Mirror [FR-122 AC](../../../fr-br/FR-122-release-workflow-architectural-contract-release-transaction.md#acceptance-criteria).
+Mirror [FR-122 AC](../../../fr-br/FR-122-release-workflow-architectural-contract-release-transaction.md#acceptance-criteria). **All ACs satisfied** @ v0.2.1.30+8.
 
 ---
 
@@ -96,14 +96,6 @@ Mirror [FR-122 AC](../../../fr-br/FR-122-release-workflow-architectural-contract
 
 - [IPP-E02S01T30](../../../../implementation-cycles/IPP-E02S01T30-rw-architectural-contract-release-transaction.md)
 - [FR-092 / E02:S15:T07](../../story-15-ipw-governance-and-publication-contract/T07-canonical-rw-ukw-kanban-consistency-program-fr092.md) — precedent meta program
-
----
-
-## Next steps
-
-1. **`IDW E02:S01:T30`** — Wave 0 (contract + gap matrix + ADR-027 draft)
-2. Operator review Wave 0 → then Wave 1 preflight gates
-3. Per-wave **`RW E02:S01:T30 --art`**
 
 ---
 

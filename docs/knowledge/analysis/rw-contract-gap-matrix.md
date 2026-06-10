@@ -10,7 +10,7 @@ housekeeping_policy: keep
 
 **Program:** [FR-122](../../kanban/fr-br/FR-122-release-workflow-architectural-contract-release-transaction.md) · [E02:S01:T30](../../kanban/epics/epic-02/story-01-rw-agent-execution-and-docs/T30-rw-architectural-contract-release-transaction-fr122.md)  
 **Contract:** [rw-architectural-contract.md](../../../packages/frameworks/workflow-mgt/docs/rw-architectural-contract.md) · [ADR-027](../../architecture/standards-and-adrs/ADR-027-rw-release-transaction-contract.md)  
-**Last updated:** 2026-06-09 (Wave 8 — streak auditor in progress)
+**Last updated:** 2026-06-10 (Wave 8 sign-off — streak **13/10** @ v0.2.1.30+8)
 
 **Legend:** MET · PARTIAL · MISSING · VIOLATED · PLANNED
 
@@ -68,7 +68,7 @@ housekeeping_policy: keep
 | 3 | Step 11 tag authority | C-F9 → MET ✅ |
 | 4 | `rw-contract.yaml` | C-NF1 → MET ✅ |
 | 5 | `rw_orchestrator.py` | C-NF2 → MET ✅ |
-| 8 | `validate_rw_split_brain_streak.py` + 10-run evidence | C-F2–F10 sustained (3/10 @ dev post **v0.2.1.30+6**) |
+| 8 | `validate_rw_split_brain_streak.py` + 10-run evidence | C-F2–F10 sustained (**13/10** @ dev post **v0.2.1.30+8** sign-off) ✅ |
 
 ---
 

@@ -14,7 +14,7 @@ housekeeping_policy: keep
 **Submitted By:** User (RW architecture experiment after `0.6.9.26+2` split-brain SemVer release)  
 **Priority:** CRITICAL  
 **Severity:** CRITICAL  
-**Status:** IN PROGRESS (Wave 8 shipped **v0.2.1.30+6** — sign-off 3/10 @ dev)
+**Status:** COMPLETE (program sign-off **v0.2.1.30+8** — streak **13/10** @ dev)
 
 **Implementing Task:** [E02:S01:T30](../epics/epic-02/story-01-rw-agent-execution-and-docs/T30-rw-architectural-contract-release-transaction-fr122.md)  
 **IPP:** [IPP-E02S01T30](../../implementation-cycles/IPP-E02S01T30-rw-architectural-contract-release-transaction.md)
@@ -153,8 +153,8 @@ RW correctly uses agent intelligence for kanban synthesis and recovery — but *
 - [x] **Wave 4 shipped:** `rw-contract.yaml` machine manifest + manifest validator — **v0.2.1.30+5** (Wave 4 slice; tag shared with Wave 5)
 - [x] **Wave 5 shipped:** `rw_orchestrator.py` thin shell + `test_rw_orchestrator.py` — **v0.2.1.30+5**
 - [x] **Wave 8 shipped:** `validate_rw_split_brain_streak.py` + tests + `split_brain_streak` config — **v0.2.1.30+6**
-- [ ] **No split-brain release** in 10 consecutive RW runs on ai-dev-kit `dev` (current streak: **3/10** after this release)
-- [ ] IPP linked from task doc; ADR-027 if contract changes agent/script boundary
+- [x] **No split-brain release** in 10 consecutive RW runs on ai-dev-kit `dev` (streak: **13/10** @ sign-off **v0.2.1.30+8**)
+- [x] IPP linked from task doc; ADR-027 if contract changes agent/script boundary
 
 ---
 

@@ -11,8 +11,8 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
-## [0.21.4.4+1] - 10-06-26
+## [0.2.1.30+8] - 10-06-26
 
-E21:S04:T04 — Cultural content policy, loanword glossary, directional-icon audit, pt-BR/pt-PT locale split, neutral English installer examples. SemVer **v0.4.1128+1**.
+E02:S01:T30 — FR-122 program sign-off: split-brain streak 13/10 (AC4 met); RW architectural contract meta-program COMPLETE. SemVer **v0.4.1129+8**.
 
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.21.4.4+1.md)
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.1.30+8.md)

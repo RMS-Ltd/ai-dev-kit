@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Completed Tasks
 
-**Last Updated:** 2026-06-10 (RW E21:S04:T04 — cultural content adaptation)
-**Version:** v0.21.4.4+1
+**Last Updated:** 2026-06-10 (RW E02:S01:T30 — FR-122 program sign-off)
+**Version:** v0.2.1.30+8
 
 > **For MoSCOW prioritized tasks, see:** [`kboard.md`](kboard.md)  
 > **For completed FR/BR/UXR intake items, see:** [`intake-completed.md`](intake-completed.md)
@@ -19,6 +19,10 @@ housekeeping_policy: keep
 ---
 
 ## 20 Most Recently Completed Tasks
+
+#### **RW (2026-06-10)** — E02:S01:T30 @ **v0.2.1.30+8** (FR-122 — RW architectural contract & release transaction sign-off)
+
+- **[E02:S01:T30](epics/epic-02/story-01-rw-agent-execution-and-docs/T30-rw-architectural-contract-release-transaction-fr122.md)** — FR-122 meta-program COMPLETE: contract + gap matrix + ADR-027; Waves 0–5 + 8 gates shipped; split-brain streak **13/10** (AC4). **Completed:** `2026-06-10T15:56:12Z` | **Version:** `v0.2.1.30+8` | **Agent:** `RW E02:S01:T30 --art` | [FR-122](fr-br/FR-122-release-workflow-architectural-contract-release-transaction.md) | [ADR-027](../../architecture/standards-and-adrs/ADR-027-rw-release-transaction-contract.md) | [—IPP—](../../implementation-cycles/IPP-E02S01T30-rw-architectural-contract-release-transaction.md)
 
 #### **RW (2026-06-10)** — E21:S04:T04 @ **v0.21.4.4+1** (FR-006 Phase 2 — cultural content adaptation)
 

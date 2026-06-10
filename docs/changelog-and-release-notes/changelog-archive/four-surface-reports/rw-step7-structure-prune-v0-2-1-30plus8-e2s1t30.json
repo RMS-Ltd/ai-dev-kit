@@ -1,0 +1,18 @@
+{
+  "contract": "FR-097 structure-prune — COMPLETE task row removal (RW Step 7 E02:S01:T30 sign-off v0.2.1.30+8)",
+  "release_scope": {
+    "task_id": "E02:S01:T30",
+    "version_string": "v0.2.1.30+8"
+  },
+  "evidence_mode": "structure_prune",
+  "archived": {
+    "kboard": ["E02:S01:T30"],
+    "kanban_completed": ["E02:S01:T30"]
+  },
+  "rows": {
+    "E02:S01:T30": {
+      "allowed": true,
+      "reason": "COMPLETE v0.2.1.30+8 — FR-122 program sign-off; kboard prune to kanban-completed.md"
+    }
+  }
+}
