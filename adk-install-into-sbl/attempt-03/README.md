@@ -19,18 +19,18 @@
 
 ## Canonical feedback package (FR-079)
 
-Adopter-submitted bundle at repo root — **intake accepted** 2026-06-09:
+**SBL-owned path** (not duplicated in `ai-dev-kit`) — intake accepted 2026-06-09:
 
-| Artifact | Path |
-|----------|------|
-| Cover | [starborn-legacy-adk-feedback-attempt03/SUBMISSION.md](../../starborn-legacy-adk-feedback-attempt03/SUBMISSION.md) |
-| Triage addendum | [triage-matrix-attempt03.md](../../starborn-legacy-adk-feedback-attempt03/triage-matrix-attempt03.md) |
-| Narrative | [starborn-legacy-attempt03-feedback.md](../../starborn-legacy-adk-feedback-attempt03/starborn-legacy-attempt03-feedback.md) |
-| Payload | [feedback-payload.json](../../starborn-legacy-adk-feedback-attempt03/feedback-payload.json) |
-| v1 proof excerpt | [evidence/.../epic-05.md](../../starborn-legacy-adk-feedback-attempt03/evidence/docs/kanban/epics/epic-05/epic-05.md) |
-| Zip | `starborn-legacy-adk-feedback-attempt03.zip` (project root when submitted from SBL) |
+| Artifact | Path (Starborn Legacy repo) |
+|----------|----------------------------|
+| Root | `starborn_legacy/logs/ai-dev-kit/install/attempt-03/` |
+| Cover | `…/feedback-package/SUBMISSION.md` |
+| Triage addendum | `…/feedback-package/triage-matrix-attempt03.md` |
+| Payload | `…/feedback-package/feedback-payload.json` |
+| Diary | `…/greenfield-install-diary.md` |
+| Transcripts | `…/transcripts/` |
 
-Full diary, transcripts, and `signoff-report.json` are bundled in the FB package (`greenfield-install-diary.md`, `transcripts/`, etc.).
+> Historical note: attempt 03 was briefly mirrored at `ai-dev-kit/starborn-legacy-adk-feedback-attempt03/`; that copy is **removed** per FR-079 adopter-repo ownership.
 
 ---
 

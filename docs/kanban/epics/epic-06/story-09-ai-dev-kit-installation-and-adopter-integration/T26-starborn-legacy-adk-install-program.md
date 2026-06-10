@@ -12,14 +12,14 @@ housekeeping_policy: keep
 **Status:** IN PROGRESS  
 **Priority:** HIGH  
 **Created:** 2026-06-09  
-**Last updated:** 2026-06-10 (attempt 04 FB intake — F17 **fourth proof** @ `v0.4.1131`)  
+**Last updated:** 2026-06-10 (attempt 05 FB intake — F17 **RESOLVED** @ `v0.6.9.27+2`; F18/F19/F21 → BR-105/106/107)  
 **Version:** v0.6.9.26+2  
 **Version Anchor:** v0.6.9.26+2  
 **Code:** E06S09T26
 
 **Predecessor (closed):** [E06:S09:T25](T25-starborn-legacy-greenfield-install-diary-triage-uxr025.md) — UXR-025 triage + F4/F5 fixes @ **v0.6.9.25+3**
 
-**Related:** [UXR-025](../../../fr-br/UXR-025-starborn-legacy-greenfield-install-diary.md) · [FR-081](../../../fr-br/FR-081-brownfield-modular-adopter-integration.md) · [FR-080](../../../fr-br/FR-080-greenfield-installation-process.md) · [FR-079](../../../fr-br/FR-079-install-feedback-submission-path-and-governance.md) · [Triage matrix](../../../../knowledge/analysis/projects/starborn-legacy-install-triage-matrix.md) · [Attempt 02](../../../../../../adk-install-into-sbl/attempt-02/greenfield-install-diary.md) · [Attempt 03](../../../../../../adk-install-into-sbl/attempt-03/README.md) · [FB attempt 03](../../../../../../starborn-legacy-adk-feedback-attempt03/SUBMISSION.md) · [FB attempt 04](../../../../../../adk-install-attempt-4-fb-package/SUBMISSION.md)
+**Related:** [UXR-025](../../../fr-br/UXR-025-starborn-legacy-greenfield-install-diary.md) · [FR-081](../../../fr-br/FR-081-brownfield-modular-adopter-integration.md) · [FR-080](../../../fr-br/FR-080-greenfield-installation-process.md) · [FR-079](../../../fr-br/FR-079-install-feedback-submission-path-and-governance.md) · [Triage matrix](../../../../knowledge/analysis/projects/starborn-legacy-install-triage-matrix.md) · [Maintainer index](../../../../../../adk-install-into-sbl/README.md) · SBL FB roots: `starborn_legacy/logs/ai-dev-kit/install/attempt-{03,04,05}/`
 
 ---
 
@@ -84,7 +84,7 @@ Attempts **1** and **2** proved installer contracts (sign-off ALL READY) but **f
 ### In scope
 
 - Plan and execute **attempt 3** (and follow-ons) with explicit install flags / path (RW-only, `--kanban-mode skip` when available, FR-081 brownfield).
-- Maintain forensic artifacts under `adk-install-into-sbl/attempt-NN/` and maintainer analysis copies.
+- Maintain **maintainer indexes** under `adk-install-into-sbl/`; canonical FB/diary/transcripts remain in **SBL** per [FR-079](../../../fr-br/FR-079-install-feedback-submission-path-and-governance.md) (`starborn_legacy/logs/ai-dev-kit/install/attempt-NN/`).
 - Respond to **SBL feedback** via [FR-079](../../../fr-br/FR-079-install-feedback-submission-path-and-governance.md) hygiene.
 - File or implement upstream reactions (INSTALL docs, orchestrator, installer catalog F9, validator path discovery).
 - Update [triage matrix](../../../../knowledge/analysis/projects/starborn-legacy-install-triage-matrix.md) for new findings.
@@ -102,12 +102,12 @@ Attempts **1** and **2** proved installer contracts (sign-off ALL READY) but **f
 - [x] **AC1:** Attempt 3 executed — dual-tree test bed built; migration blocked on v1 catalog ([attempt 03](../../../../../../adk-install-into-sbl/attempt-03/README.md)).
 - [x] **AC2:** SBL legacy E/S/T remains operational PM — `KB/PM_and_Portfolio/` restored and unchanged alongside ADK target tree.
 - [x] **AC3:** Kanban fresh ran only as **explicit** migration-test-bed step (phase 3b), not via orchestrator surprise.
-- [x] **AC4:** Attempt 03 maintainer index + FB package linked ([attempt-03](../../../../../../adk-install-into-sbl/attempt-03/README.md), [SUBMISSION](../../../../../../starborn-legacy-adk-feedback-attempt03/SUBMISSION.md)).
+- [x] **AC4:** Attempt 03 maintainer index + SBL FB path linked ([attempt-03](../../../../../../adk-install-into-sbl/attempt-03/README.md), SBL `…/attempt-03/feedback-package/SUBMISSION.md`).
 - [x] **AC5:** Findings **F10–F17** merged into [triage matrix](../../../../knowledge/analysis/projects/starborn-legacy-install-triage-matrix.md); **F9** upgraded to **BLOCKER**.
 - [x] **AC6:** `validate_branch_context --strict` finds task doc for active E06:S09:T* releases (lowercase `epic-{nn}` / `story-{nn}-*` discovery in `locate_task_doc_for_version`).
-- [ ] **AC7:** Attempt 04 FB package ingested; **F17 fourth proof** + **F18–F20** in triage matrix; upstream P0 actions explicit (v3.2 package vs v1 warn/block).
-- [ ] **AC8:** INSTALL / orchestrator docs state clearly: `--mode fresh` = **v1 catalog only** until v3.2 package ships (no false “fixed in v0.4.1131” impression).
-- [x] **AC9:** Kanban v3.2 package rewrite shipped @ **v0.6.9.27+1** ([T27](T27-kanban-v32-package-rewrite-installer-f9-f17.md)); attempt 05 authorized — pin **v0.4.1132**.
+- [x] **AC7:** Attempt 04 FB ingested; **F17 fourth proof** + **F18–F20** in triage matrix; upstream P0 = v3.2 package ([T27](T27-kanban-v32-package-rewrite-installer-f9-f17.md)).
+- [x] **AC8:** v3.2 package shipped — `--mode fresh` deploys v3.2 catalog @ **v0.6.9.27+2** (attempt 05 fingerprint PASS).
+- [x] **AC9:** Attempt 05 executed on pin **`v0.4.1133+2`** (`main` @ `0d278366`); F17 **RESOLVED**; residual F18/F19/F21 filed as [T28](T28-v32-fresh-install-signoff-story-padding-br105.md) / [T29](T29-rw-install-non-interactive-changelog-prompt-br106.md) / [T30](T30-kanban-installer-log-epic-path-padding-br107.md).
 
 ---
 
@@ -117,14 +117,53 @@ Attempts **1** and **2** proved installer contracts (sign-off ALL READY) but **f
 |---|---------|---------|----------|
 | 1 | `v0.4.1063` tarball | Closed — UXR-025 intake; F4/F5 failures | [Diary](../../../../knowledge/analysis/projects/starborn-legacy-greenfield-install-diary.md) |
 | 2 | `main` @ `97ff2834` | **Failed intent** — orchestrator OK; wrong kanban | [Attempt 02](../../../../../../adk-install-into-sbl/attempt-02/greenfield-install-diary.md) |
-| 3 | `v0.4.13` (`0.4.1098+1`) | **Partial** — dual kanban OK; **F17** v1 catalog blocks v3.2 migration test | [Attempt 03](../../../../../../adk-install-into-sbl/attempt-03/README.md) · [FB 03](../../../../../../starborn-legacy-adk-feedback-attempt03/SUBMISSION.md) |
-| 4 | `v0.4.1131` tarball | **BLOCKER unchanged** — F17 **fourth proof**; RW baseline + dual-kanban PASS; BR-086 NOT READY; F18–F20 new | [FB 04](../../../../../../adk-install-attempt-4-fb-package/SUBMISSION.md) |
+| 3 | `v0.4.13` (`0.4.1098+1`) | **Partial** — dual kanban OK; **F17** v1 catalog blocks v3.2 migration test | [Attempt 03](../../../../../../adk-install-into-sbl/attempt-03/README.md) · SBL `…/attempt-03/` |
+| 4 | `v0.4.1131` tarball | **BLOCKER unchanged** — F17 **fourth proof**; RW baseline + dual-kanban PASS; BR-086 NOT READY; F18–F20 new | SBL `…/attempt-04/feedback-package/SUBMISSION.md` |
+| 5 | `main` @ `0d278366` (`v0.4.1133+2`) | **F17 RESOLVED** — v3.2 kanban PASS; dual-tree PASS; sign-off 7 READY / 1 SKIP / 1 NOT READY (F18); F19 workaround; F21 log cosmetic | SBL `starborn_legacy/logs/ai-dev-kit/install/attempt-05/` |
+
+> **Path convention:** `starborn_legacy/logs/ai-dev-kit/install/attempt-NN/` — see [adk-install-into-sbl/README.md](../../../../../../adk-install-into-sbl/README.md).
+
+---
+
+## Attempt 05 intake (2026-06-10)
+
+**FR-079 package accepted** — canonical root: `starborn_legacy/logs/ai-dev-kit/install/attempt-05/` (not copied into `ai-dev-kit`).
+
+### Outcome
+
+| Result | Detail |
+|--------|--------|
+| **F17 (was BLOCKER)** | **RESOLVED** — Epic 5 on disk is **Project Architecture** (v3.2); no standalone FR Implementation epic |
+| **Dual kanban test bed** | **PASS** — legacy `KB/PM_and_Portfolio/` + ADK `docs/kanban/` coexist; rollback retained `KB/` + `logs/` |
+| **Sign-off** | **7 READY, 1 SKIP, 1 NOT READY** — BR-086 / **F18** (`{story:03d}`/`t{task}` contract vs `{story:02d}`/`T{task}` reality) |
+| **F19** | **OPEN** — `--non-interactive` EOF on CHANGELOG prompt; workaround: pre-create `CHANGELOG.md` + `--config` |
+| **F20** | Mitigated with workaround (pre-created `version_file` + config) |
+| **F21** | **NEW (LOW)** — install logs show `epic-1/` but disk has `epic-01/` |
+
+### Upstream filed (ai-dev-kit — derived from FB, not a copy)
+
+| Finding | BR | Task |
+|---------|-----|------|
+| F18 | [BR-105](../../../fr-br/BR-105-v32-fresh-install-signoff-story-padding-mismatch.md) | [E06:S09:T28](T28-v32-fresh-install-signoff-story-padding-br105.md) |
+| F19 | [BR-106](../../../fr-br/BR-106-rw-install-non-interactive-changelog-prompt-eof.md) | [E06:S09:T29](T29-rw-install-non-interactive-changelog-prompt-br106.md) |
+| F21 | [BR-107](../../../fr-br/BR-107-kanban-installer-log-epic-path-padding-mismatch.md) | [E06:S09:T30](T30-kanban-installer-log-epic-path-padding-br107.md) |
+
+### Key SBL artifacts (reference paths)
+
+| Artifact | Path |
+|----------|------|
+| FB cover | `…/attempt-05/feedback-package/SUBMISSION.md` |
+| Payload | `…/attempt-05/feedback-package/feedback-payload.json` |
+| Diary | `…/attempt-05/greenfield-install-diary.md` |
+| Kanban v3.2 transcript | `…/attempt-05/transcripts/20260610T183509Z-phase3c-kanban-v3dot2.txt` |
+| Sign-off transcript | `…/attempt-05/transcripts/20260610T183541Z-phase4-signoff.txt` |
+| RW bootstrap transcript | `…/attempt-05/transcripts/20260610T183451Z-phase3a-rw-bootstrap.txt` |
 
 ---
 
 ## Attempt 04 intake (2026-06-10)
 
-**FR-079 package accepted** ([`adk-install-attempt-4-fb-package`](../../../../../../adk-install-attempt-4-fb-package/SUBMISSION.md)). Adopter re-tested on **`v0.4.1131`** expecting F17 resolution. **It did not resolve.**
+**FR-079 package accepted** (SBL `starborn_legacy/logs/ai-dev-kit/install/attempt-04/feedback-package/SUBMISSION.md`). Adopter re-tested on **`v0.4.1131`** expecting F17 resolution. **It did not resolve.**
 
 ### Outcome
 
@@ -183,7 +222,7 @@ Attempts **1** and **2** proved installer contracts (sign-off ALL READY) but **f
 
 - [x] New ADK release published with v3.2 templates in tarball — **[E06:S09:T27](T27-kanban-v32-package-rewrite-installer-f9-f17.md)** @ **v0.6.9.27+2** / SemVer **v0.4.1133+2**
 - [x] Maintainer confirms fingerprint PASS on clean dry-run install (`tests/kanban/test_kanban_v32_fresh_install.py`)
-- [ ] Adopter briefed with **new pin** **`v0.4.1133`** (not `v0.4.1131`)
+- [x] Adopter ran attempt 05 on **`v0.4.1133+2`** (`main` @ `0d278366`)
 
 ---
 
@@ -199,9 +238,12 @@ Attempts **1** and **2** proved installer contracts (sign-off ALL READY) but **f
 
 | Priority | ID | Action |
 |----------|-----|--------|
-| P0 | F9/F17 | **Package rewrite** — execute [07-blueprint](../../../../knowledge/analysis/kanban-v2/07-package-migration-blueprint.md) Waves 1–4; **or** block/warn `--mode fresh` as v1-only + sign-off v1 fingerprint. Attempt 04 confirms releases without this **will** ship v1. |
+| P0 | F9/F17 | ✅ **CLOSED** @ [T27](T27-kanban-v32-package-rewrite-installer-f9-f17.md) **v0.6.9.27+2** — attempt 05 fingerprint PASS |
 | P1 | F10 | `install_greenfield_path.py`: `--skip-kanban` or honor `use_kanban: false` |
-| P1 | F18–F20 | BR-086 padding alignment; `--non-interactive` EOFError; project-aware `version_file` |
+| P1 | F18 | [BR-105](../../../fr-br/BR-105-v32-fresh-install-signoff-story-padding-mismatch.md) → [T28](T28-v32-fresh-install-signoff-story-padding-br105.md) |
+| P1 | F19 | [BR-106](../../../fr-br/BR-106-rw-install-non-interactive-changelog-prompt-eof.md) → [T29](T29-rw-install-non-interactive-changelog-prompt-br106.md) |
+| P2 | F21 | [BR-107](../../../fr-br/BR-107-kanban-installer-log-epic-path-padding-mismatch.md) → [T30](T30-kanban-installer-log-epic-path-padding-br107.md) |
+| P1 | F20 | Project-aware `version_file` default (open; workaround exists) |
 | P1 | F12–F14 | Document migration-test-bed profile (RW defer → legacy restore → kanban → RW mode C) |
 | P2 | F11/F16 | Post-install deferred-Kanban hint; clarify consumer layout vs v3.2 spec |
 | P2 | BR-086 | Sign-off pattern padding (attempts 03–04: NOT READY — see F18) |

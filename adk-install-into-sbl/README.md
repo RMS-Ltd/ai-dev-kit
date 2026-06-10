@@ -1,0 +1,37 @@
+# Starborn Legacy — ADK install attempts (maintainer index)
+
+**Program task:** [E06:S09:T26](../docs/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T26-starborn-legacy-adk-install-program.md)  
+**Triage matrix:** [starborn-legacy-install-triage-matrix.md](../docs/knowledge/analysis/projects/starborn-legacy-install-triage-matrix.md)
+
+---
+
+## Artifact ownership ([FR-079](../docs/kanban/fr-br/FR-079-install-feedback-submission-path-and-governance.md))
+
+**Feedback packages, diaries, transcripts, and session logs live in the Starborn Legacy repo** — not copied into `ai-dev-kit`.
+
+| Attempt | SBL canonical root |
+|---------|-------------------|
+| 03 | `starborn_legacy/logs/ai-dev-kit/install/attempt-03/` |
+| 04 | `starborn_legacy/logs/ai-dev-kit/install/attempt-04/` |
+| 05 | `starborn_legacy/logs/ai-dev-kit/install/attempt-05/` |
+
+Each attempt folder typically contains:
+
+- `feedback-package/` — `SUBMISSION.md`, `feedback-payload.json`, triage addendum
+- `greenfield-install-diary.md`
+- `transcripts/`
+- `session.log`
+- `run-logged.sh`
+
+**This tree** (`adk-install-into-sbl/`) holds **maintainer indexes only** (outcome summary + pointers).
+
+---
+
+## Maintainer indexes
+
+| Attempt | Index | ADK pin |
+|---------|-------|---------|
+| 02 | [attempt-02/greenfield-install-diary.md](attempt-02/greenfield-install-diary.md) (copy in knowledge analysis) | `main` @ `97ff2834` |
+| 03 | [attempt-03/README.md](attempt-03/README.md) | `v0.4.13` (`0.4.1098+1`) |
+| 04 | — (SBL path only) | `v0.4.1131` |
+| 05 | — (SBL path only) | `main` @ `0d278366` (`v0.6.9.27+2` / SemVer `v0.4.1133+2`) |

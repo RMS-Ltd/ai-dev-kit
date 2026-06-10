@@ -17,7 +17,9 @@ housekeeping_policy: keep
 
 **Task (attempt 3+):** [E06:S09:T26](../../../kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T26-starborn-legacy-adk-install-program.md)
 
-**Attempt artifacts:** [attempt-02](../../../../adk-install-into-sbl/attempt-02/greenfield-install-diary.md) · [attempt-03](../../../../adk-install-into-sbl/attempt-03/README.md) · [FB 03](../../../../starborn-legacy-adk-feedback-attempt03/SUBMISSION.md) · [FB 04](../../../../adk-install-attempt-4-fb-package/SUBMISSION.md) (repo root)
+**Attempt artifacts:** [Maintainer index](../../../../adk-install-into-sbl/README.md) · [attempt-02 diary](starborn-legacy-greenfield-install-diary.md) · [attempt-03 index](../../../../adk-install-into-sbl/attempt-03/README.md)
+
+**SBL-owned FB roots ([FR-079](../../../kanban/fr-br/FR-079-install-feedback-submission-path-and-governance.md)):** `starborn_legacy/logs/ai-dev-kit/install/attempt-{03,04,05}/` — diaries, `feedback-package/`, `transcripts/`, `session.log`. **Not** duplicated in `ai-dev-kit`.
 
 ---
 
@@ -33,7 +35,7 @@ housekeeping_policy: keep
 | F6 | RW mode C partial — no local `workflows/` (expected lean) | LOW | **DOC** | INSTALL: lean RW expectation documented |
 | F7 | Kanban fresh + sign-off ALL READY | — | **RECORD** | Installer contract only (BR-083–086, UXR-017 path casing) — see **F9** for catalog generation |
 | F8 | Adopter retains legacy E/S/T kanban — scope closure | INFO | **DOC** | FR-081 brownfield deferral; not a greenfield defect |
-| F9 | `--mode fresh` installs **v1** packaged epic catalog (1–8, 10, 18, 22, 23), not Kanban v2/v3 (v3.2 Scenario A) — **attempts 1–3** | **CRITICAL** | **BLOCKER** + **DOC** | No installer path to v3.2; [migration blueprint](../kanban-v2/07-package-migration-blueprint.md) not executed; INSTALL must warn v1-only; sign-off should fingerprint v1 catalog (**F17**) |
+| F9 | `--mode fresh` installed **v1** catalog (attempts 1–4); v3.2 path required for SBL migration test | **CRITICAL** | **PRODUCT** | **RESOLVED** @ [T27](../../../kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T27-kanban-v32-package-rewrite-installer-f9-f17.md) — attempt 05 confirms v3.2 on disk |
 | F10 | Option A only obvious path — orchestrator cannot skip Kanban; RW-only misread as “no ADK kanban ever” | HIGH | **DOC + CODE** | Document migration-test-bed sequence; orchestrator `--skip-kanban` or honor `use_kanban: false` |
 | F11 | `use_kanban: false` post-install — no `docs/` dir; deferred vs excluded confusion | HIGH | **DOC + UX** | Post-install hint when Kanban deferred |
 | F12 | Legacy `KB/` vs ADK `docs/kanban/` not explained at install time | MEDIUM | **DOC** | FR-081 / INSTALL: source vs target roots (Starborn example) |
@@ -41,10 +43,11 @@ housekeeping_policy: keep
 | F14 | Dual kanban test bed required manual 4-step sequence (3a→restore→3b→3c) | MEDIUM | **DOC + CODE** | Documented profile or orchestrator phases |
 | F15 | Migration not started — `KB/` → `docs/kanban` detector pending | INFO | **RECORD** | Next SBL session |
 | F16 | Fresh install = v1 catalog; adopter diary labels “ADK v3 Kanban” (consumer layout ≠ v3.2 spec) | MEDIUM | **DOC** | Terminology: `docs/kanban/` layout vs Kanban v3.2 package rewrite |
-| F17 | Attempts 03–04 installed v1 again — `E05 FR Implementation` on disk; blocks SBL → v3.2 migration test | **CRITICAL** | **PRODUCT** | Same root cause as F9; **fourth** proof @ `v0.4.1131` (attempt 04) |
-| F18 | BR-086 expects `{story:03d}` / `t{task`; fresh install produces `{story:02d}` / `T{task}` | MEDIUM | **CODE** | Align sign-off contract or installer template padding |
-| F19 | `--non-interactive` EOFError on `version_file` scaffold prompt | HIGH | **CODE** | `install_release_workflow.py` must not prompt when non-interactive |
-| F20 | Mode a default `version_file: src/myproject/version.py` — not project-aware | MEDIUM | **CODE** | Derive from project name / layout |
+| F17 | Attempts 03–04 installed v1 again — `E05 FR Implementation` on disk; blocks SBL → v3.2 migration test | **CRITICAL** | **PRODUCT** | **RESOLVED** @ attempt 05 / [T27](../../../kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T27-kanban-v32-package-rewrite-installer-f9-f17.md) **v0.6.9.27+2** |
+| F18 | BR-086 expects `{story:03d}` / `t{task}`; v3.2 fresh install produces `{story:02d}` / `T{task}` | MEDIUM | **CODE** | [BR-105](../../../kanban/fr-br/BR-105-v32-fresh-install-signoff-story-padding-mismatch.md) → [T28](../../../kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T28-v32-fresh-install-signoff-story-padding-br105.md) |
+| F19 | `--non-interactive` EOFError on CHANGELOG (and historically `version_file`) scaffold prompts | HIGH | **CODE** | [BR-106](../../../kanban/fr-br/BR-106-rw-install-non-interactive-changelog-prompt-eof.md) → [T29](../../../kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T29-rw-install-non-interactive-changelog-prompt-br106.md) |
+| F20 | Mode a default `version_file: src/myproject/version.py` — not project-aware | MEDIUM | **CODE** | Derive from project name / layout (workaround in attempt 05) |
+| F21 | Kanban v3.2 install logs unpadded `epic-N` paths; disk uses `epic-0N` | LOW | **CODE** | [BR-107](../../../kanban/fr-br/BR-107-kanban-installer-log-epic-path-padding-mismatch.md) → [T30](../../../kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T30-kanban-installer-log-epic-path-padding-br107.md) |
 
 ---
 
@@ -68,7 +71,10 @@ housekeeping_policy: keep
 | F14 | Attempt 3 phase3b + phase3c transcripts | Manual RW defer → restore → kanban → RW mode C |
 | F15 | Attempt 3 diary Phase 5 | Migration exercise not started |
 | F16 | Attempt 3 diary “ADK v3 Kanban fresh” wording | Consumer path label vs v3.2 catalog spec |
-| F17 | [FB evidence excerpt](../../../../starborn-legacy-adk-feedback-attempt03/evidence/docs/kanban/epics/epic-05/epic-05.md); phase3b transcript | Title “Epic 5: FR Implementation”; v3.2 expects FR at **E04:S02** |
+| F17 | SBL `…/attempt-03/feedback-package/evidence/…/epic-05.md`; attempt 05 phase3c transcript | v1: “Epic 5: FR Implementation”; v3.2 PASS: Epic 5 = **Project Architecture** |
+| F18 | SBL `…/attempt-05/transcripts/20260610T183541Z-phase4-signoff.txt` | BR-086 NOT READY on `{story:03d}` / `t{task}` vs `{story:02d}` / `T{task}` |
+| F19 | SBL `…/attempt-05/transcripts/20260610T183451Z-phase3a-rw-bootstrap.txt` | CHANGELOG prompt EOF under `--non-interactive` |
+| F21 | SBL `…/attempt-05/transcripts/20260610T183509Z-phase3c-kanban-v3dot2.txt` | Log `epic-1/` vs disk `epic-01/` |
 
 ---
 
@@ -91,7 +97,7 @@ housekeeping_policy: keep
 | Dual kanban test bed | **PASS** — `KB/PM_and_Portfolio/` (legacy source) + `docs/kanban/` (ADK target) coexist |
 | Catalog generation (F9/F17) | **BLOCKER** — v1 packaged templates again; SBL → v3.2 migration test **cannot proceed** |
 | Sign-off (post 3c) | 6 READY, 1 SKIP, 1 NOT READY (BR-086 pattern padding) |
-| FB package | [starborn-legacy-adk-feedback-attempt03](../../../../starborn-legacy-adk-feedback-attempt03/SUBMISSION.md) — FR-079 intake **accepted** |
+| FB package | SBL `starborn_legacy/logs/ai-dev-kit/install/attempt-03/feedback-package/` — FR-079 intake **accepted** |
 
 ### F17 — v1 vs v3.2 fingerprint (on disk)
 
@@ -118,7 +124,7 @@ housekeeping_policy: keep
 | BR-084 / UXR-017 | **READY** — improvements since attempt 03 |
 | BR-086 | **NOT READY** — F18 contract vs reality mismatch |
 | New findings | **F18–F20** — padding, non-interactive EOF, default version path |
-| FB package | [adk-install-attempt-4-fb-package](../../../../adk-install-attempt-4-fb-package/SUBMISSION.md) — FR-079 intake **accepted** |
+| FB package | SBL `starborn_legacy/logs/ai-dev-kit/install/attempt-04/feedback-package/` — FR-079 intake **accepted** |
 
 ### Why attempt 04 still got v1 (not a failed fix)
 
@@ -132,6 +138,29 @@ housekeeping_policy: keep
 
 ---
 
+## Attempt 5 addendum (2026-06-10) — [E06:S09:T26](../../../kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T26-starborn-legacy-adk-install-program.md)
+
+| Topic | Result |
+|-------|--------|
+| ADK pin | `main` @ `0d278366` (internal **`v0.6.9.27+2`** / SemVer **`v0.4.1133+2`**) |
+| Catalog generation (F9/F17) | **RESOLVED** — v3.2 templates on disk; Epic 5 = **Project Architecture**; no standalone FR/BR/UXR epics |
+| Dual kanban test bed | **PASS** — legacy `KB/PM_and_Portfolio/` + ADK `docs/kanban/`; rollback kept `KB/` + `logs/` |
+| Sign-off | **7 READY, 1 SKIP, 1 NOT READY** — BR-086 / **F18** padding mismatch on v3.2 fresh install |
+| F19 | **OPEN** — CHANGELOG prompt EOF under `--non-interactive`; workaround: pre-create files + `--config` |
+| F21 | **NEW (LOW)** — install stdout logs `epic-1/`; disk has `epic-01/` |
+| FB package | SBL `starborn_legacy/logs/ai-dev-kit/install/attempt-05/feedback-package/` — FR-079 intake **accepted** |
+| Upstream filed | [BR-105](../../../kanban/fr-br/BR-105-v32-fresh-install-signoff-story-padding-mismatch.md) / [T28](../../../kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T28-v32-fresh-install-signoff-story-padding-br105.md) · [BR-106](../../../kanban/fr-br/BR-106-rw-install-non-interactive-changelog-prompt-eof.md) / [T29](../../../kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T29-rw-install-non-interactive-changelog-prompt-br106.md) · [BR-107](../../../kanban/fr-br/BR-107-kanban-installer-log-epic-path-padding-mismatch.md) / [T30](../../../kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T30-kanban-installer-log-epic-path-padding-br107.md) |
+
+### F17 resolution fingerprint (attempt 05)
+
+| Signal | v1 (attempts 1–4) | v3.2 (attempt 05 — PASS) |
+|--------|---------------------|--------------------------|
+| Epic 5 | Standalone **FR Implementation** | **Project Architecture** |
+| Epic 6–7 | BR, UXR standalone epics | Absent — intake at **E04:S02–S04** |
+| FR intake | Epic-level | **E04:S02** story |
+
+---
+
 ## Adopter decision (not upstream defects)
 
-Starborn Legacy **closed** install attempts 1 and 2 without adopting ADK template kanban (v1 or v3). Attempt 3 built a **dual-tree migration test bed** but **cannot run** legacy → v3.2 migration until ADK ships the package rewrite. RW scaffold may be reused in a future brownfield pass per [FR-081](../../../kanban/fr-br/FR-081-brownfield-modular-adopter-integration.md). **F9/F17** are upstream **product lag** (installer vs ratified v3.2 spec), not SBL-specific defects.
+Starborn Legacy **closed** install attempts 1 and 2 without adopting ADK template kanban (v1 or v3). Attempts 3–4 built a **dual-tree migration test bed** but were **blocked** on v1 catalog (**F9/F17**). Attempt 5 confirms **v3.2** on disk — migration exercise can proceed; residual installer UX (**F18/F19/F21**) tracked as upstream BRs. RW scaffold may be reused in a future brownfield pass per [FR-081](../../../kanban/fr-br/FR-081-brownfield-modular-adopter-integration.md).
