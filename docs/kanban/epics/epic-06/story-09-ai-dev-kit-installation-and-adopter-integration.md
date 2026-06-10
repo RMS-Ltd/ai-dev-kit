@@ -13,8 +13,8 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** Large  
 **Created:** 2026-04-19  
-**Last updated:** 2026-06-09 (v0.6.9.26+2 – Kanban documentation setup)
-**Version:** v0.6.9.26+2
+**Last updated:** 2026-06-10 (v0.6.9.27+2 – Kanban documentation setup)
+**Version:** v0.6.9.27+2
 **Code:** E6S09
 
 ---
@@ -83,7 +83,7 @@ housekeeping_policy: keep
 
 - [ ] **E06:S09:T26 – Starborn Legacy ADK install program** - 🔄 IN PROGRESS (HIGH — attempt 05 awaits T27 release) — [Task](story-09-ai-dev-kit-installation-and-adopter-integration/T26-starborn-legacy-adk-install-program.md) | [FB 04](../../../../adk-install-attempt-4-fb-package/SUBMISSION.md) | [Triage matrix](../../../knowledge/analysis/projects/starborn-legacy-install-triage-matrix.md)
 
-- [x] **E06:S09:T27 – Kanban v3.2 package rewrite for installer (F9/F17)** - ✅ COMPLETE (CRITICAL, **v0.6.9.27+1** — v3.2 fresh-install; SemVer **v0.4.1132+1**; attempt 05 authorized) — [Task](story-09-ai-dev-kit-installation-and-adopter-integration/T27-kanban-v32-package-rewrite-installer-f9-f17.md) | [IPP](../../../implementation-cycles/IPP-E06S09T27-kanban-v32-package-rewrite-installer-f9-f17.md)
+- [x] **E06:S09:T27 – Kanban v3.2 package rewrite for installer (F9/F17)** - ✅ COMPLETE (CRITICAL, **v0.6.9.27+2** — v3.2 installer + fingerprint validator fix; SemVer **v0.4.1133+2**) — [Task](story-09-ai-dev-kit-installation-and-adopter-integration/T27-kanban-v32-package-rewrite-installer-f9-f17.md) | [IPP](../../../implementation-cycles/IPP-E06S09T27-kanban-v32-package-rewrite-installer-f9-f17.md)
 
 ---
 

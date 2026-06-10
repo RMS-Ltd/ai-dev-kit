@@ -1,9 +1,9 @@
 # KB Index
 
-**Generated:** 2026-06-10 16:48:53 UTC  
+**Generated:** 2026-06-10 18:14:51 UTC  
 **Scope:** /Users/rms/Documents/projects/ai-dev-kit/docs  
-**Total files:** 3175  
-**Total size:** 14.85 MB
+**Total files:** 3184  
+**Total size:** 14.89 MB
 
 ---
 
@@ -14,14 +14,14 @@
 | analysis | 9 | 152.7 KB | 9 | 0 | 9 | 0 | 0 | 0 |
 | architecture | 126 | 1.24 MB | 120 | 6 | 119 | 1 | 0 | 0 |
 | book-project | 2 | 26.5 KB | 1 | 1 | 1 | 0 | 0 | 0 |
-| changelog-and-release-notes | 1469 | 4.05 MB | 199 | 1270 | 183 | 0 | 1 | 0 |
+| changelog-and-release-notes | 1473 | 4.06 MB | 199 | 1274 | 183 | 0 | 1 | 0 |
 | developer-tools | 2 | 12.7 KB | 2 | 0 | 2 | 0 | 0 | 0 |
 | documentation | 33 | 354.3 KB | 30 | 3 | 30 | 0 | 0 | 0 |
 | governance | 26 | 206.0 KB | 26 | 0 | 26 | 0 | 0 | 0 |
 | guides | 7 | 31.8 KB | 7 | 0 | 7 | 0 | 0 | 0 |
-| implementation-cycles | 263 | 2.18 MB | 222 | 41 | 207 | 2 | 1 | 0 |
+| implementation-cycles | 265 | 2.19 MB | 223 | 42 | 208 | 2 | 1 | 0 |
 | journals | 4 | 14.7 KB | 0 | 4 | 0 | 0 | 0 | 0 |
-| kanban | 1131 | 5.28 MB | 1087 | 44 | 1057 | 0 | 3 | 0 |
+| kanban | 1134 | 5.30 MB | 1090 | 44 | 1060 | 0 | 3 | 0 |
 | knowledge | 75 | 1.17 MB | 72 | 3 | 69 | 1 | 2 | 3 |
 | maintainer | 1 | 2.9 KB | 1 | 0 | 1 | 0 | 0 | 0 |
 | maintenance | 24 | 138.7 KB | 13 | 11 | 9 | 3 | 0 | 0 |
@@ -32,7 +32,7 @@
 ## Optimization signals
 
 - **docs/README.md exists:** False
-- **Files missing lifecycle frontmatter:** 1383
+- **Files missing lifecycle frontmatter:** 1388
 - **Timeboxed/transient with expires_at in the past:** 3
 - **READMEs (under docs/):** 22
 
@@ -88,7 +88,7 @@
 - `changelog-and-release-notes/changelog-archive/CHANGELOG_v0.10.1.3+1.md`
 - `changelog-and-release-notes/changelog-archive/CHANGELOG_v0.10.1.4+1.md`
 - `changelog-and-release-notes/changelog-archive/CHANGELOG_v0.10.1.5+1.md`
-- ... and 1333 more
+- ... and 1338 more
 
 ### Expired (candidates for archive/delete)
 
@@ -482,6 +482,7 @@
 | implementation-cycles/IPP-E06S09T23-greenfield-install-github-packages-delivery-uxr021.md | 7.2 KB | 992 | evergreen | 2026-06-05T12:00:00 |  |
 | implementation-cycles/IPP-E06S09T24-acquisition-layer-adk-error-codes-fr111.md | 5.0 KB | 728 | evergreen | 2026-06-05T15:00:00 |  |
 | implementation-cycles/IPP-E06S09T25-starborn-legacy-greenfield-install-diary-triage-uxr025.md | 6.2 KB | 803 | evergreen | 2026-06-09T12:00:00 |  |
+| implementation-cycles/IPP-E06S09T27-kanban-v32-package-rewrite-installer-f9-f17.md | 4.9 KB | 621 | evergreen | 2026-06-10T18:00:00 |  |
 | implementation-cycles/IPP-E07S01T09-kanban-template-governance-uxr005.md | 8.4 KB | 1290 | evergreen | 2026-06-01T18:00:00 |  |
 | implementation-cycles/IPP-E07S01T10-supersession-reconciliation.md | 10.6 KB | 1392 | evergreen | 2026-06-10T00:00:00 |  |
 | implementation-cycles/IPP-E07S01T12-kanban-path-promotion-fr118.md | 7.0 KB | 810 | evergreen | 2026-06-08T13:00:00 |  |
@@ -499,6 +500,7 @@
 | implementation-cycles/IPP-E08S03T16-github-security-code-quality-health-perpetual-fr112.md | 677 B | 39 | evergreen | 2026-06-05T17:00:00 |  |
 | implementation-cycles/IPP-E08S03T17-local-code-quality-gate-cqg-fr113.md | 8.2 KB | 1212 | evergreen | 2026-06-06T14:30:00 |  |
 | implementation-cycles/IPP-E08S03T19-workflow-scripts-pytest-tuple-return-br103.md | 2.4 KB | 301 |  |  |  |
+| implementation-cycles/IPP-E08S03T20-readme-python-prerequisites-uxr026.md | 2.0 KB | 265 |  |  |  |
 | implementation-cycles/IPP-E09S01T03-gap-comparison-fr032.md | 6.6 KB | 950 | evergreen | 2026-06-04T22:00:00 |  |
 | implementation-cycles/IPP-E10S01T01-expectations-baseline-doc-lifecycle.md | 17.1 KB | 2255 | evergreen | 2026-06-06T12:00:00 |  |
 | implementation-cycles/IPP-E10S01T02-component-inventory-map.md | 17.9 KB | 2418 | evergreen | 2026-06-06T14:00:00 |  |
@@ -1261,8 +1263,9 @@
 | kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T23-greenfield-install-github-packages-delivery-uxr021.md | 5.1 KB | 447 | evergreen | 2026-06-05T00:00:00 |  |
 | kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T24-acquisition-layer-adk-error-codes-fr111.md | 3.3 KB | 277 | evergreen | 2026-06-05T18:00:00 |  |
 | kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T25-starborn-legacy-greenfield-install-diary-triage-uxr025.md | 5.5 KB | 542 | evergreen | 2026-06-09T00:00:00 |  |
-| kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T26-starborn-legacy-adk-install-program.md | 8.0 KB | 863 | evergreen | 2026-06-09T12:00:00 |  |
-| kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration.md | 14.6 KB | 920 | evergreen | 2026-04-19T00:00:00 |  |
+| kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T26-starborn-legacy-adk-install-program.md | 15.3 KB | 1798 | evergreen | 2026-06-09T12:00:00 |  |
+| kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T27-kanban-v32-package-rewrite-installer-f9-f17.md | 3.9 KB | 382 | evergreen | 2026-06-10T18:00:00 |  |
+| kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration.md | 14.9 KB | 942 | evergreen | 2026-04-19T00:00:00 |  |
 | kanban/epics/epic-07/epic-07.md | 13.4 KB | 1686 | evergreen | 2025-12-09T02:00:00 |  |
 | kanban/epics/epic-07/story-00-uxr-repo/T01-uxr-001-repository-anchor.md | 1.8 KB | 167 | evergreen | 2026-03-31T16:30:00 |  |
 | kanban/epics/epic-07/story-00-uxr-repo/T02-uxr-002-repository-anchor.md | 1.5 KB | 136 | evergreen | 2026-03-31T16:30:00 |  |
@@ -1333,7 +1336,7 @@
 | kanban/epics/epic-07/story-07-code-reviews/T02-ci-pytest-gate-for-workflow-scripts.md | 3.0 KB | 279 | evergreen | 2026-06-03T21:40:00 |  |
 | kanban/epics/epic-07/story-07-code-reviews/T03-workflow-validator-slug-path-resolution-br091.md | 2.5 KB | 159 | evergreen | 2026-06-05T12:00:00 |  |
 | kanban/epics/epic-07/story-07-code-reviews.md | 3.8 KB | 319 | evergreen | 2026-06-03T20:15:00 |  |
-| kanban/epics/epic-08/epic-08.md | 4.1 KB | 457 | evergreen | 2025-12-05T14:20:00 |  |
+| kanban/epics/epic-08/epic-08.md | 4.2 KB | 459 | evergreen | 2025-12-05T14:20:00 |  |
 | kanban/epics/epic-08/story-01-code-generators/T01-create-generator-framework.md | 1002 B | 105 | evergreen | 2026-06-05T04:59:58 |  |
 | kanban/epics/epic-08/story-01-code-generators/T02-build-template-based-generators.md | 1000 B | 104 | evergreen | 2026-06-05T04:59:58 |  |
 | kanban/epics/epic-08/story-01-code-generators/T03-establish-generator-patterns.md | 983 B | 103 | evergreen | 2026-06-05T04:59:58 |  |
@@ -1361,7 +1364,8 @@
 | kanban/epics/epic-08/story-03-automation-scripts/T17-local-code-quality-gate-cqg-fr113.md | 8.5 KB | 994 | evergreen | 2026-06-06T14:00:00 |  |
 | kanban/epics/epic-08/story-03-automation-scripts/T18-cqg-gate-relocation-to-idw-phase-6b-adr022.md | 3.5 KB | 352 | evergreen | 2026-06-08T20:00:00 |  |
 | kanban/epics/epic-08/story-03-automation-scripts/T19-workflow-scripts-pytest-tuple-return-false-green-br103.md | 3.8 KB | 312 | evergreen | 2026-06-10T16:30:00 |  |
-| kanban/epics/epic-08/story-03-automation-scripts.md | 6.7 KB | 488 | evergreen | 2025-12-05T14:20:00 |  |
+| kanban/epics/epic-08/story-03-automation-scripts/T20-readme-python-prerequisites-uxr026.md | 3.4 KB | 299 | evergreen | 2026-06-10T21:00:00 |  |
+| kanban/epics/epic-08/story-03-automation-scripts.md | 7.1 KB | 510 | evergreen | 2025-12-05T14:20:00 |  |
 | kanban/epics/epic-08/story-04-tooling-automation-package-implementation-review/T01-establish-expectations-baseline-for-tooling-automation-packa.md | 1.0 KB | 110 | evergreen | 2026-06-05T04:59:58 |  |
 | kanban/epics/epic-08/story-04-tooling-automation-package-implementation-review/T02-inventory-package-components-and-map-to-expectations.md | 1.0 KB | 110 | evergreen | 2026-06-05T04:59:58 |  |
 | kanban/epics/epic-08/story-04-tooling-automation-package-implementation-review/T03-validate-tooling-behavior-against-documented-guidance.md | 1.0 KB | 108 | evergreen | 2026-06-05T04:59:58 |  |
@@ -1723,14 +1727,15 @@
 | kanban/fr-br/UXR-023-kboard-ipp-segment-regression.md | 6.2 KB | 692 | evergreen | 2026-06-05T16:30:00 |  |
 | kanban/fr-br/UXR-024-rw-local-release-default-no-push-batch-operator-push.md | 6.5 KB | 827 | evergreen | 2026-06-05T18:00:00 |  |
 | kanban/fr-br/UXR-025-starborn-legacy-greenfield-install-diary.md | 4.9 KB | 533 | evergreen | 2026-06-09T00:00:00 |  |
+| kanban/fr-br/UXR-026-readme-python-prerequisites-contradicts-311-policy.md | 4.9 KB | 524 | evergreen | 2026-06-10T21:00:00 |  |
 | kanban/intake-completed.md | 24.4 KB | 3297 | evergreen | 2026-03-09T15:20:00 |  |
 | kanban/intake-open-taskless-queue.md | 5.3 KB | 724 | evergreen | 2026-03-31T12:00:00 |  |
 | kanban/intake-structure.md | 18.1 KB | 1870 | evergreen | 2026-03-09T15:20:00 |  |
 | kanban/kanban-board-guide.md | 16.5 KB | 2136 | evergreen | 2026-01-20T00:00:00 |  |
-| kanban/kanban-completed.md | 132.1 KB | 10488 | evergreen | 2026-03-09T00:00:00 |  |
+| kanban/kanban-completed.md | 133.1 KB | 10563 | evergreen | 2026-03-09T00:00:00 |  |
 | kanban/kanban-structure.md | 25.5 KB | 2227 | evergreen | 2026-03-09T00:00:00 |  |
-| kanban/kboard.md | 30.7 KB | 2093 | evergreen | 2025-12-04T12:02:50 |  |
-| knowledge/KB-INDEX.md | 240.5 KB | 22593 |  |  |  |
+| kanban/kboard.md | 31.1 KB | 2113 | evergreen | 2025-12-04T12:02:50 |  |
+| knowledge/KB-INDEX.md | 241.2 KB | 22656 |  |  |  |
 | knowledge/README.md | 2.5 KB | 259 | evergreen | 2026-06-07T12:00:00 |  |
 | knowledge/USE_CASE_METHODOLOGY.md | 14.3 KB | 1844 | evergreen | 2025-12-16T14:30:00 |  |
 | knowledge/analysis/abstract-anti-patterns-use-case-exposed-design-flaw.md | 13.0 KB | 1796 | evergreen | 2025-12-18T00:00:00 |  |
@@ -1781,7 +1786,7 @@
 | knowledge/analysis/projects/qa-kb-adk-analysis.md | 18.1 KB | 2403 | evergreen | 2025-12-16T23:45:00 |  |
 | knowledge/analysis/projects/starborn-legacy-adk-analysis.md | 34.2 KB | 4321 | evergreen | 2025-12-16T22:00:00 |  |
 | knowledge/analysis/projects/starborn-legacy-greenfield-install-diary.md | 9.6 KB | 1177 | evergreen | 2026-06-09T00:00:00 |  |
-| knowledge/analysis/projects/starborn-legacy-install-triage-matrix.md | 8.5 KB | 1160 | evergreen | 2026-06-09T12:00:00 |  |
+| knowledge/analysis/projects/starborn-legacy-install-triage-matrix.md | 10.9 KB | 1470 | evergreen | 2026-06-09T12:00:00 |  |
 | knowledge/analysis/projects/vwmp-adk-analysis.md | 18.9 KB | 2525 | evergreen | 2025-12-16T23:30:00 |  |
 | knowledge/analysis/rw-contract-gap-matrix.md | 3.9 KB | 574 | evergreen | 2026-06-09T20:00:00 |  |
 | knowledge/analysis/task-level-kanban-structure-analysis.md | 21.6 KB | 3000 | evergreen | 2025-12-17T00:00:00 |  |
@@ -1833,5 +1838,5 @@
 | project-agent-index.md | 4.3 KB | 392 | evergreen | 2026-05-30T21:00:00 |  |
 | project-management/README.md | 523 B | 34 | evergreen | 2025-12-04T12:01:54 |  |
 | release-notes/README.md | 1.4 KB | 123 | evergreen | 2026-06-07T12:00:00 |  |
-| changelog-and-release-notes/changelog-archive/ (summary) (1467 files) | 4.05 MB | 469511 |  |  |  |
+| changelog-and-release-notes/changelog-archive/ (summary) (1471 files) | 4.06 MB | 470089 |  |  |  |
 

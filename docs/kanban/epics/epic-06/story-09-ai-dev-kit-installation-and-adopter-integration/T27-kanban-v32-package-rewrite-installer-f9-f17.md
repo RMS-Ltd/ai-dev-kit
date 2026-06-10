@@ -12,9 +12,9 @@ housekeeping_policy: keep
 **Status:** COMPLETE  
 **Priority:** CRITICAL  
 **Created:** 2026-06-10  
-**Last updated:** 2026-06-10 (v0.6.9.27+1 — RW E06:S09:T27 --art; Kanban v3.2 installer)  
-**Version:** v0.6.9.27+1  
-**Version Anchor:** v0.6.9.27+1  
+**Last updated:** 2026-06-10 (v0.6.9.27+2 — RW E06:S09:T27; fingerprint validator path fix)  
+**Version:** v0.6.9.27+2  
+**Version Anchor:** v0.6.9.27+2  
 **Code:** E06S09T27
 
 **Parent program:** [E06:S09:T26](T26-starborn-legacy-adk-install-program.md) — Attempt 05 gate  

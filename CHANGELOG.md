@@ -11,8 +11,8 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
-## [0.6.9.27+1] - 10-06-26
+## [0.6.9.27+2] - 10-06-26
 
-E06:S09:T27 — Kanban v3.2 greenfield installer (F9/F17): `--mode fresh` ships v3.2 catalog; unblocks SBL attempt 05. SemVer **v0.4.1132+1**.
+E06:S09:T27 — Fix v3.2 fingerprint validator import path (`parents[5]`). SemVer **v0.4.1133+2**.
 
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.6.9.27+1.md)
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.6.9.27+2.md)

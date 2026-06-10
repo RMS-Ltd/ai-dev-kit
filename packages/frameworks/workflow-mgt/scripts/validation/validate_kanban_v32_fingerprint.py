@@ -9,7 +9,8 @@ from pathlib import Path
 
 
 def _repo_root() -> Path:
-    return Path(__file__).resolve().parents[4]
+    # validation/ → scripts/ → workflow-mgt/ → frameworks/ → packages/ → repo root
+    return Path(__file__).resolve().parents[5]
 
 
 def _load_catalog():

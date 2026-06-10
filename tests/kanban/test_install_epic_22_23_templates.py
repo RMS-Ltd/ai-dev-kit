@@ -1,4 +1,9 @@
-"""BR-079 / E06:S09:T08: Epic 22/23 template resolution on fresh install."""
+"""BR-079 / E06:S09:T08 + v3.2 (T27): epic template resolution on fresh install.
+
+v3.2 Small-tier fresh install ships E01–E10 only. Legacy E22/E23 CI/CD epics
+consolidate into E07 Process Automation & CI/CD; templates for 22/23 remain in
+the package for brownfield/migration but are not installed on --mode fresh.
+"""
 
 from __future__ import annotations
 
@@ -27,6 +32,7 @@ def _template_path_logged(combined: str, epic_num: int) -> bool:
             f"epic-{sn}.md",
             f"Epic-{sn}/Epic-{sn}.md",
             f"Epic-{sn}.md",
+            f"epic-{sn}-",
         )
     )
 
@@ -40,8 +46,8 @@ def _load_migrate_module():
     return module
 
 
-def test_epic_22_23_templates_exist_in_package():
-    """T1: Epic 22/23 templates resolve via directory layout."""
+def test_epic_22_23_templates_still_in_package_for_migration():
+    """T1: Epic 22/23 directory templates remain for brownfield (not v3.2 fresh list)."""
     mod = _load_migrate_module()
     migrator = mod.KanbanStructureMigrator(
         analysis_report={"semantic_matches": []},
@@ -62,8 +68,8 @@ def empty_project(tmp_path: Path) -> Path:
     return tmp_path
 
 
-def test_fresh_install_epic_22_23_not_placeholder(empty_project: Path) -> None:
-    """T2/T3: fresh install uses real templates, not placeholder bodies."""
+def test_fresh_install_v32_e07_not_placeholder(empty_project: Path) -> None:
+    """T2: v3.2 fresh installs E07 (ex-E22/E23) from template, not E22/E23 dirs."""
     kanban_rel = "docs/kanban"
     cmd = [
         sys.executable,
@@ -85,20 +91,17 @@ def test_fresh_install_epic_22_23_not_placeholder(empty_project: Path) -> None:
     )
     combined = result.stdout + result.stderr
     assert result.returncode == 0, combined
-    assert "Epic 22 created with placeholder" not in combined
-    assert "Epic 23 created with placeholder" not in combined
     assert "installed from template" in combined
-    e22 = empty_project / kanban_rel / "epics" / "epic-22" / "epic-22.md"
-    e23 = empty_project / kanban_rel / "epics" / "epic-23" / "epic-23.md"
-    assert e22.is_file() and e23.is_file()
-    assert PLACEHOLDER_SNIPPET not in e22.read_text(encoding="utf-8").lower()
-    assert PLACEHOLDER_SNIPPET not in e23.read_text(encoding="utf-8").lower()
-    assert "Architecture Refactoring" in e22.read_text(encoding="utf-8")
-    assert "Process Automation" in e23.read_text(encoding="utf-8")
+    e07 = empty_project / kanban_rel / "epics" / "epic-07" / "epic-07.md"
+    assert e07.is_file()
+    assert PLACEHOLDER_SNIPPET not in e07.read_text(encoding="utf-8").lower()
+    assert "Process Automation" in e07.read_text(encoding="utf-8")
+    assert not (empty_project / kanban_rel / "epics" / "epic-22").exists()
+    assert not (empty_project / kanban_rel / "epics" / "epic-23").exists()
 
 
-def test_dry_run_logs_template_paths_for_epic_22_23(empty_project: Path) -> None:
-    """T3: dry-run distinguishes template resolution for E22/E23."""
+def test_dry_run_logs_v32_e07_template_not_e22_e23(empty_project: Path) -> None:
+    """T3: v3.2 dry-run installs E07 template; E22/E23 not in fresh epic list."""
     cmd = [
         sys.executable,
         str(INSTALL_SCRIPT),
@@ -118,7 +121,7 @@ def test_dry_run_logs_template_paths_for_epic_22_23(empty_project: Path) -> None
         timeout=120,
     )
     combined = result.stdout + result.stderr
-    assert _template_path_logged(combined, 22)
-    assert _template_path_logged(combined, 23)
-    assert "Would install Epic 22 from template" in combined
-    assert "Would install Epic 23 from template" in combined
+    assert _template_path_logged(combined, 7)
+    assert "Would install Epic 7 from template" in combined
+    assert "Would install Epic 22 from template" not in combined
+    assert "Would install Epic 23 from template" not in combined

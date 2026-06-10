@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Completed Tasks
 
-**Last Updated:** 2026-06-10 (RW E06:S09:T27 — Kanban v3.2 greenfield installer)
-**Version:** v0.6.9.27+1
+**Last Updated:** 2026-06-10 (RW E06:S09:T27+2 — fingerprint validator path fix)
+**Version:** v0.6.9.27+2
 
 > **For MoSCOW prioritized tasks, see:** [`kboard.md`](kboard.md)  
 > **For completed FR/BR/UXR intake items, see:** [`intake-completed.md`](intake-completed.md)
@@ -19,6 +19,10 @@ housekeeping_policy: keep
 ---
 
 ## 20 Most Recently Completed Tasks
+
+#### **RW (2026-06-10)** — E06:S09:T27 @ **v0.6.9.27+2** (v3.2 fingerprint validator path fix)
+
+- **[E06:S09:T27](epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T27-kanban-v32-package-rewrite-installer-f9-f17.md)** — Fix `validate_kanban_v32_fingerprint.py` repo-root (`parents[5]`); SemVer **v0.4.1133+2**. **Completed:** `2026-06-10T18:10:39Z` | **Version:** `v0.6.9.27+2` | **Agent:** `RW E06:S09:T27 --push`
 
 #### **RW (2026-06-10)** — E06:S09:T27 @ **v0.6.9.27+1** (Kanban v3.2 greenfield installer — F9/F17)
 

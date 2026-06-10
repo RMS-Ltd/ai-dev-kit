@@ -181,9 +181,9 @@ Attempts **1** and **2** proved installer contracts (sign-off ALL READY) but **f
 
 ### Attempt 05 is **not** authorized until
 
-- [x] New ADK release published with v3.2 templates in tarball — **[E06:S09:T27](T27-kanban-v32-package-rewrite-installer-f9-f17.md)** @ **v0.6.9.27+1** / SemVer **v0.4.1132+1**
+- [x] New ADK release published with v3.2 templates in tarball — **[E06:S09:T27](T27-kanban-v32-package-rewrite-installer-f9-f17.md)** @ **v0.6.9.27+2** / SemVer **v0.4.1133+2**
 - [x] Maintainer confirms fingerprint PASS on clean dry-run install (`tests/kanban/test_kanban_v32_fresh_install.py`)
-- [ ] Adopter briefed with **new pin** **`v0.4.1132`** (not `v0.4.1131`)
+- [ ] Adopter briefed with **new pin** **`v0.4.1133`** (not `v0.4.1131`)
 
 ---
 
