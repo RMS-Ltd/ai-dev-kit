@@ -11,8 +11,8 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
-## [0.21.4.5+1] - 10-06-26
+## [0.2.16.2+4] - 10-06-26
 
-E21:S04:T05 — Cultural formatting validation: per-locale smoke examples (§7), T01 matrix cross-check, cultural smoke tests. Infra SoT remains E21:S02:T05. SemVer **v0.4.1116+1**.
+E02:S16:T02 — UKW bookkeeping: Epic 21 kanban version-marker sync post E21:S04:T05; KB-INDEX regeneration. SemVer **v0.4.1117+4**.
 
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.21.4.5+1.md)
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.16.2+4.md)

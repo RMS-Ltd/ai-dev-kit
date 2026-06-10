@@ -12,7 +12,7 @@ housekeeping_policy: keep
 **Priority:** LOW  
 **Estimated Effort:** [TBD]  
 **Created:** 2025-12-09  
-**Last updated:** 2026-06-10 (v0.21.4.5+1 – E21:S04:T05 cultural formatting validation)
+**Last updated:** 2026-06-10 (v0.21.4.5+1 – Kanban documentation setup)
 **Version:** v0.21.4.5+1
 **Code:** E21S04
 

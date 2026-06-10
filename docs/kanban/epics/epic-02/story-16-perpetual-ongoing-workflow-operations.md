@@ -11,8 +11,8 @@ housekeeping_policy: keep
 **Status:** IN PROGRESS
 **Priority:** HIGH  
 **Created:** 2026-04-20  
-**Last updated:** 2026-06-10 (v0.2.16.6+4 – Kanban documentation setup)
-**Version:** v0.2.16.6+4
+**Last updated:** 2026-06-10 (v0.2.16.2+4 – E02:S16:T02 UKW kanban bookkeeping)
+**Version:** v0.2.16.2+4
 **Code:** E2S16
 
 ---
