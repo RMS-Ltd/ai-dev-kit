@@ -1,0 +1,12 @@
+{
+  "rows": {
+    "E02:S03:T10": {
+      "allowed": true,
+      "reason": "RW Step 7 v0.2.3.10+1 — terminal COMPLETE; archived to kanban-completed.md per FR-109"
+    },
+    "E02:S03:T11": {
+      "allowed": true,
+      "reason": "RW Step 7 v0.2.3.10+1 — terminal COMPLETE; archived to kanban-completed.md per FR-109"
+    }
+  }
+}

@@ -9,10 +9,11 @@ housekeeping_policy: keep
 # Epic 2, Story 3, Task 10: Workflow encapsulation integrity audit (MWF leverage) — FR-126
 
 **Task ID:** E02:S03:T10  
-**Status:** TODO  
+**Status:** ✅ COMPLETE (v0.2.3.10+1)  
 **Priority:** HIGH  
 **Created:** 2026-06-10  
-**Last updated:** 2026-06-10 (intake — FR-126)  
+**Last updated:** 2026-06-10  
+**Version Anchor:** v0.2.3.10+1  
 **Code:** E02S03T10  
 
 **Upstream:** [FR-126 — Workflow encapsulation integrity audit for MWF leverage](../../../fr-br/FR-126-workflow-encapsulation-integrity-mwf-leverage.md)  
@@ -28,6 +29,7 @@ Audit **all registered atomic workflows** for **encapsulation integrity** so the
 
 ## Input
 
+- [IPP-E02S03T10 — Workflow encapsulation integrity (FR-126)](../../../../implementation-cycles/IPP-E02S03T10-workflow-encapsulation-integrity-mwf-fr126.md)
 - [FR-126](../../../fr-br/FR-126-workflow-encapsulation-integrity-mwf-leverage.md)
 - [workflow-registry.yaml](../../../../../packages/frameworks/workflow-mgt/workflows/workflow-registry.yaml) — 13 atomic workflows + `composite_workflows`
 - Existing command guides: `.claude/commands/{ipw,idw,rw,ukw,mwf}.md`
@@ -54,11 +56,11 @@ Audit **all registered atomic workflows** for **encapsulation integrity** so the
 
 ## Acceptance Criteria
 
-- [ ] **AC1:** Encapsulation contract published; all 13 registry workflows assessed against it.
-- [ ] **AC2:** Each workflow classified: **delegatable** / **partial** / **not-ready** with evidence (guide path, terminal states, routing).
-- [ ] **AC3:** P0 remediation wave scoped (RW, UKW, CMW, PVW + routing parity) with concrete deliverables list.
-- [ ] **AC4:** MWF `delivery` verified compliant — delegates via `idw.md`, no inline RW steps in `mwf.md`.
-- [ ] **AC5:** FR-126 ↔ T10 links bidirectional; story checklist and board row updated.
+- [x] **AC1:** Encapsulation contract published; all 13 registry workflows assessed against it. *(Wave 1 @ MWF Leg 2)*
+- [x] **AC2:** Each workflow classified: **delegatable** / **partial** / **not-ready** with evidence (guide path, terminal states, routing). *(inventory matrix)*
+- [x] **AC3:** P0 remediation wave scoped (RW, UKW, CMW, PVW + routing parity) with concrete deliverables list. *(matrix §2 P0)*
+- [x] **AC4:** MWF `delivery` verified compliant — delegates via `idw.md` / sub-agent contract; no inline RW steps in `mwf.md`. *(Wave 3 BR-102)*
+- [x] **AC5:** FR-126 ↔ T10 links bidirectional; story checklist and board row updated. *(RW Step 7)*
 
 ---
 
@@ -79,9 +81,9 @@ Audit **all registered atomic workflows** for **encapsulation integrity** so the
 
 - [E02:S03:T09](T09-ipw-full-delivery-chain-idf-rw-fr123.md) — MWF v1 shipped (COMPLETE)
 
-**Blocked By:**
+**Coordinates with:**
 
-- [E02:S03:T11](T11-mwf-subagent-leg-delegation-br102.md) / [BR-102](../../../fr-br/BR-102-mwf-chain-paused-instead-of-subagent-leg-delegation.md) — `MWF … delivery` must delegate legs via sub-agents before full-pipeline invoke is reliable
+- [E02:S03:T11](T11-mwf-subagent-leg-delegation-br102.md) / [BR-102](../../../fr-br/BR-102-mwf-chain-paused-instead-of-subagent-leg-delegation.md) — MWF sub-agent delegation (Wave 3 / IPP §4)
 
 **Blocks:**
 

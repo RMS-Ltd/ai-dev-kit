@@ -21,7 +21,7 @@ Parse `$ARGUMENTS` to determine:
 
 1. **Task token:** Extract `E…S…T…` identifier (e.g. `E2:S03:T09`, `E2S03T09`). Flexible parsing — colons and zero-padding optional.
 2. **Recipe:** Positional token after task (required). **v1 built-in recipes:**
-   - `delivery` — full pipeline: IPW → (mode gate) → IDW `--rw`
+   - `delivery` — full pipeline: IPW → IDW `--rw` (continuous orchestration)
    - `ipw,idw,rw` — alias normalized to `delivery`
 3. **`--push` flag:** Forward to IDW `--rw` leg when present.
 4. **`--art` flag:** Forward to IDW `--rw` leg when present.
@@ -34,7 +34,7 @@ If no recipe → **`MWF ABORTED: no recipe specified. v1: use delivery or ipw,id
 
 ---
 
-## Orchestration Contract (FR-124)
+## Orchestration Contract (FR-124 / BR-102)
 
 MWF is a **meta-workflow orchestrator**. It **delegates** each leg to existing command specs — it does **not** reimplement IPW phases, IDW phases, or RW steps inline.
 
@@ -43,9 +43,38 @@ MWF is a **meta-workflow orchestrator**. It **delegates** each leg to existing c
 | 1 (when needed) | IPW | `.claude/commands/ipw.md` |
 | 2 | IDW `--rw` | `.claude/commands/idw.md` |
 
-**Terminal states:** `MWF COMPLETE`, `MWF ABORTED (leg: IPW|IDW|RW)`, `MWF CHAIN PAUSED`.
+**Terminal states:** `MWF COMPLETE`, `MWF ABORTED (leg: IPW|IDW|RW)`, `MWF CHAIN PAUSED` (narrow — see below).
 
 **Abort propagation:** Any leg `ABORTED` terminates the chain; name the failing leg. No partial RW commit/tag from an aborted chain.
+
+### Sub-agent leg delegation (BR-102)
+
+The orchestrator **must not** require the operator to switch IDE plan/implementation mode between legs.
+
+| Leg | Delegation rule |
+| --- | ---------------- |
+| **IPW** | Spawn **sub-agent** (Task tool `generalPurpose`) **or** execute `ipw.md` inline as delegate — parent session plan mode **not** required |
+| **IDW `--rw`** | Continue in parent implementation session **or** spawn implementation sub-agent — parent plan mode **not** required after IPW |
+
+**Sub-agent prompt template (Leg 1):**
+
+```text
+Execute IPW for {E:S:T} per .claude/commands/ipw.md. Produce IPP under docs/implementation-cycles/. Wire IPP to host task. End with IPW COMPLETE or IPW ABORTED.
+```
+
+**Sub-agent prompt template (Leg 2):**
+
+```text
+Execute IDW {E:S:T} --rw [--art] [--push] per .claude/commands/idw.md. End with IDW COMPLETE + RW outcome, or IDW ABORTED / MWF ABORTED (leg: RW).
+```
+
+### `MWF CHAIN PAUSED` (narrow semantics only)
+
+| Allowed | Forbidden |
+| ------- | --------- |
+| Sub-agent / Task tool unavailable | Parent not in plan mode (delegate instead) |
+| Leg `ABORTED` awaiting explicit operator decision | Routine IPW→IDW handoff |
+| Documented operator review gate (rare) | After IPW: "exit plan mode and re-invoke" |
 
 ---
 
@@ -56,27 +85,20 @@ MWF is a **meta-workflow orchestrator**. It **delegates** each leg to existing c
 Before starting legs, resolve whether a linked planning package exists for the host task:
 
 - Check host task doc **Input** / **References** for `IPP-E…S…T…-*.md` or ICW trio under `docs/implementation-cycles/`.
-- **If linked IPP/ICW exists:** skip Leg 1 (IPW); proceed to Leg 2 prerequisites.
+- **If linked IPP/ICW exists:** skip Leg 1 (IPW); proceed to Leg 2.
 - **If no linked IPP/ICW:** Leg 1 (IPW) is required.
 
 ### Leg 1 — IPW (planning)
 
-**Requires plan mode.**
-
-- If plan mode is **NOT** active → **`MWF CHAIN PAUSED: enter plan mode, then invoke MWF delivery again (or run IPW E:S:T first).`**
-- Execute IPW per `ipw.md` for the parsed `E:S:T`.
-- **Gate:** `IPW COMPLETE` before continuing.
+- **Delegate** per `ipw.md` (sub-agent or inline). **Do not** gate on parent session plan mode.
+- **Gate:** `IPW COMPLETE` + linked IPP on host task before Leg 2.
 - On `IPW ABORTED` → **`MWF ABORTED (leg: IPW)`** — stop.
-
-After `IPW COMPLETE` → **`MWF CHAIN PAUSED: exit plan mode, then invoke MWF E:S:T delivery` again (or IDW E:S:T --rw) from an implementation session.`**
+- **Continue immediately to Leg 2** on success — no operator re-invoke.
 
 ### Leg 2 — IDW `--rw` (implement + release)
 
-**Requires implementation mode (not plan mode).**
-
-- If plan mode **IS** active → **`MWF CHAIN PAUSED: exit plan mode, then invoke /mwf E:S:T delivery again from an implementation session.`**
-- Build IDW trigger: `IDW <E:S:T> --rw` plus forwarded `--push` / `--art` when present on MWF trigger.
-- Execute full IDW per `idw.md` (including embedded RW when `--rw` is set).
+- **Delegate** per `idw.md` with `IDW <E:S:T> --rw` plus forwarded `--push` / `--art`.
+- **Do not** pause for mode switch after Leg 1.
 - On `IDW ABORTED` → **`MWF ABORTED (leg: IDW)`** — stop.
 - On `RW ABORTED` within IDW chain → **`MWF ABORTED (leg: RW)`** — stop.
 
@@ -93,44 +115,30 @@ After `IPW COMPLETE` → **`MWF CHAIN PAUSED: exit plan mode, then invoke MWF E:
 
 `--skip-tests` is **IPW-only** — not forwarded to IDW.
 
-`--push` without `--rw` on IDW is invalid; MWF always invokes IDW with `--rw` for the `delivery` recipe.
-
 ---
 
 ## Authorization (FR-083)
 
 - **Leg 1 (IPW):** planning only; does not authorize implementation.
-- **Leg 2 (IDW):** invoking MWF `delivery` with IDP leg (or resume to IDW) satisfies FR-083 for the implementation leg when IDW runs.
+- **Leg 2 (IDW):** MWF `delivery` satisfies FR-083 for the implementation leg when IDW runs.
 
 ---
 
 ## Phase Execution
 
-Create a TODO list for orchestration phases before starting. Mark each phase complete before advancing.
+Create a TODO list for orchestration phases. Execute continuously — **do not** stop between legs for operator guidance.
 
 Execute `ANALYZE → DETERMINE → EXECUTE → VALIDATE → PROCEED` for each phase.
 
 ### Phase 0 — Parse and resolve recipe
 
-Confirm recipe maps to `delivery`. Resolve host task doc path via `rw-config.yaml` kanban patterns.
-
-### Phase 1 — Determine legs
-
-Apply resume semantics (IPP exists → skip IPW).
+### Phase 1 — Determine legs (IPP resume semantics)
 
 ### Phase 2 — Execute Leg 1 (IPW) when required
 
-Delegate to `ipw.md`. Stop on pause or abort per above.
+### Phase 3 — Execute Leg 2 (IDW `--rw`) immediately on Leg 1 success
 
-### Phase 3 — Mode gate
-
-Confirm not in plan mode before Leg 2.
-
-### Phase 4 — Execute Leg 2 (IDW `--rw`)
-
-Delegate to `idw.md` with constructed arguments.
-
-### Phase 5 — Terminal state
+### Phase 4 — Terminal state
 
 Report `MWF COMPLETE` or abort reason.
 
@@ -138,16 +146,15 @@ Report `MWF COMPLETE` or abort reason.
 
 ## Abort / Completion Protocol
 
-- Never leave MWF ambiguous — always end in **`MWF COMPLETE`**, **`MWF CHAIN PAUSED`**, or **`MWF ABORTED (leg: …)`**.
+- Never leave MWF ambiguous — end in **`MWF COMPLETE`**, **`MWF CHAIN PAUSED`** (narrow), or **`MWF ABORTED (leg: …)`**.
 - MWF does **not** commit, tag, or bump version — RW owns release surfaces (via IDW `--rw` chain).
-- Do **not** add `IPW --rw` — use MWF for full pipeline ([FR-124](docs/kanban/fr-br/FR-124-meta-workflow-orchestration-composite-workflow-chains.md)).
+- Do **not** add `IPW --rw` — use MWF ([FR-124](docs/kanban/fr-br/FR-124-meta-workflow-orchestration-composite-workflow-chains.md)).
 
 ---
 
 ## Reference Documentation
 
-- MWF agent execution guide: `packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/meta-workflow-agent-execution.md`
-- IPW: `.claude/commands/ipw.md`
-- IDW: `.claude/commands/idw.md`
-- RW: `.claude/commands/rw.md`
-- FR-124: `docs/kanban/fr-br/FR-124-meta-workflow-orchestration-composite-workflow-chains.md`
+- [meta-workflow-agent-execution.md](packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/meta-workflow-agent-execution.md)
+- [workflow-encapsulation-contract.md](packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/workflow-encapsulation-contract.md)
+- [BR-102](docs/kanban/fr-br/BR-102-mwf-chain-paused-instead-of-subagent-leg-delegation.md)
+- IPW: `.claude/commands/ipw.md` · IDW: `.claude/commands/idw.md` · RW: `.claude/commands/rw.md`

@@ -14,7 +14,7 @@ housekeeping_policy: keep
 **Submitted By:** User — workflow composition / MWF follow-on  
 **Priority:** HIGH  
 **Severity:** MEDIUM  
-**Status:** ACCEPTED (intake)
+**Status:** IMPLEMENTED (T10 COMPLETE — pending operator verification)
 
 **Implementing Task:** [E02:S03:T10](../epics/epic-02/story-03-additional-workflows-and-examples/T10-workflow-encapsulation-integrity-mwf-fr126.md)
 

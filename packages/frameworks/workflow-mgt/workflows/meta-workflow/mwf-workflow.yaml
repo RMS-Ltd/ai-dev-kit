@@ -4,8 +4,8 @@ workflow:
   type: meta_workflow
   description: >
     Orchestrate composite workflow chains by delegating to encapsulated atomic
-    workflows. v1 delivery recipe: IPW → (mode gate) → IDW --rw.
-  version: "1.0.0"
+    workflows. v1 delivery recipe: IPW → IDW --rw (continuous; BR-102 sub-agent delegation).
+  version: "1.1.0"
 
   triggers:
     - "MWF"
@@ -25,9 +25,11 @@ workflow:
       legs:
         - workflow: ipw
           when: no_linked_ipp
+          delegate: subagent
           mode: plan
           guide: ".claude/commands/ipw.md"
         - workflow: idw_rw
+          delegate: parent_or_subagent
           mode: implementation
           guide: ".claude/commands/idw.md"
           flags: ["--rw"]

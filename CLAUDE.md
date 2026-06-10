@@ -151,7 +151,7 @@ Do not silently no-op.
 
 Examples of plain-text triggers that MUST invoke the MWF engine:
 
-- `MWF E2:S03:T09 delivery` → full pipeline: IPW (if no IPP) → mode gate → IDW --rw
+- `MWF E2:S03:T09 delivery` → full pipeline: IPW (if no IPP) → IDW --rw (continuous; sub-agent legs)
 - `MWF E2:S03:T09 ipw,idw,rw` → same as `delivery`
 - `MWF E2:S03:T09 delivery --art` → forward `--art` to IDW `--rw` leg
 - `mwf E2:S03:T09 delivery --push` → forward `--push` to IDW `--rw` leg
@@ -160,7 +160,7 @@ Examples of plain-text triggers that MUST invoke the MWF engine:
 
 **Preferred invocation:** `/mwf E2:S03:T09 delivery`
 
-**Mode gates:** IPW leg requires plan mode; IDW leg requires implementation mode. Emit `MWF CHAIN PAUSED` when mode transition is needed — do not auto-switch modes.
+**Orchestration (BR-102):** Delegate each leg via sub-agent (Task tool) or inline command guide — do **not** pause for operator plan↔implementation mode switches. `MWF CHAIN PAUSED` only when sub-agent spawn is unavailable or a leg needs explicit operator decision.
 
 ### MWF blocked session (AC3)
 
@@ -174,8 +174,8 @@ Do not silently no-op.
 
 ## Other Workflow Triggers
 
-- `CMW` — Changelog Management Workflow. Instructions in `.cursorrules`.
-- `PVW` — Package Version Workflow. Instructions in `.cursorrules`.
+- `CMW` — Changelog Management Workflow. See `.claude/commands/cmw.md`.
+- `PVW` — Package Version Workflow. See `.claude/commands/pvw.md`.
 
 When any of these triggers appear at the start of a user message, treat them as workflow commands and follow the relevant instructions in `.cursorrules`.
 

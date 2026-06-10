@@ -137,6 +137,17 @@ Adopters copy **`cursorrules-rw-trigger-section.md`** into their `.cursorrules`;
 
 **Versioning note:** Doc wave under **E02:S16:T21**; forensic RW pending implementation wave.
 
+### 2026-06-10 — E2:S03:T10 workflow encapsulation parity (FR-126 P0)
+
+| Area | Before | After |
+|------|--------|-------|
+| CMW / PVW command guides | `.cursorrules` only | `.claude/commands/cmw.md`, `.claude/commands/pvw.md` |
+| MWF orchestration | Parent plan-mode `CHAIN PAUSED` between legs | Sub-agent / inline delegation per BR-102 |
+| Registry | No `command_guide` / encapsulation metadata | `workflow-registry.yaml` v1.4.0 + `validate_workflow_encapsulation.py` (advisory) |
+| Cheatsheet §4c | Mode-gate pauses | Continuous orchestration wording |
+
+**Note:** UKW already had `.claude/commands/ukw.md`; CMW/PVW now match the dual-source pattern (command guide + `.cursorrules` section).
+
 ---
 
 ## References

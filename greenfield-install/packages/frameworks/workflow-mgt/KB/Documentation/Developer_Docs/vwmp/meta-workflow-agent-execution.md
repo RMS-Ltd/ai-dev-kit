@@ -27,23 +27,23 @@ housekeeping_policy: keep
 
 ## v1 recipe: `delivery`
 
-| Step | Workflow | Mode | Completion token |
-| ---- | -------- | ---- | ---------------- |
-| 1 (if no IPP) | IPW | Plan | `IPW COMPLETE` |
-| — | Mode gate | — | `MWF CHAIN PAUSED` |
-| 2 | IDW `--rw` | Implementation | `IDW COMPLETE` (+ RW outcome) |
+| Step | Workflow | Delegation | Completion token |
+| ---- | -------- | ---------- | ---------------- |
+| 1 (if no IPP) | IPW | Sub-agent or inline per `ipw.md` | `IPW COMPLETE` |
+| 2 | IDW `--rw` | Parent or sub-agent per `idw.md` | `IDW COMPLETE` (+ RW outcome) |
 
 **Resume:** When linked IPP/ICW already exists on the host task, skip Leg 1 and run Leg 2 only.
 
-## Mode gates
+**Continuous orchestration (BR-102):** The orchestrator **does not** pause for operator plan↔implementation mode switches. Delegate each leg via sub-agent (Task tool) or inline execution of the command guide.
+
+## `MWF CHAIN PAUSED` (narrow)
 
 | Situation | Response |
 | --------- | -------- |
-| IPP missing; not in plan mode | `MWF CHAIN PAUSED` — enter plan mode for IPW leg |
-| IPW complete; still in plan mode | `MWF CHAIN PAUSED` — exit plan mode for IDW leg |
-| IDW invoked in plan mode | `IDW BLOCKED` (per IDW contract) |
-
-Cursor cannot auto-switch modes — operator must re-invoke after mode change.
+| Sub-agent spawn unavailable | `MWF CHAIN PAUSED` — Task tool blocked |
+| Leg `ABORTED` needs operator decision | `MWF ABORTED (leg: …)` preferred |
+| ~~IPP missing; not in plan mode~~ | **Delegate IPW** — not a pause ([BR-102](../../../../../../docs/kanban/fr-br/BR-102-mwf-chain-paused-instead-of-subagent-leg-delegation.md)) |
+| ~~IPW complete; still in plan mode~~ | **Continue to Leg 2** — not a pause |
 
 ## MWF vs `IDW --rw`
 
@@ -79,9 +79,14 @@ composite_workflows:
 - **FR-083:** IDW leg satisfies implementation authorization.
 - **UXR-024:** RW in chain remains local-complete unless `--push` forwarded.
 
+## Encapsulation contract
+
+Atomic legs must satisfy the [workflow encapsulation contract](workflow-encapsulation-contract.md) (FR-126). Inventory matrix: [T10-workflow-encapsulation-inventory-matrix.md](../../Analysis/T10-workflow-encapsulation-inventory-matrix.md).
+
 ## References
 
 - `.claude/commands/mwf.md`
+- [workflow-encapsulation-contract.md](workflow-encapsulation-contract.md)
 - [FR-124](../../../../../../docs/kanban/fr-br/FR-124-meta-workflow-orchestration-composite-workflow-chains.md)
 - [implementation-planning-workflow-agent-execution.md](implementation-planning-workflow-agent-execution.md)
 - [implementation-delivery-workflow-agent-execution.md](implementation-delivery-workflow-agent-execution.md)

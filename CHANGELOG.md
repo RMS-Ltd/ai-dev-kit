@@ -11,8 +11,8 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
-## [0.2.3.11+1] - 10-06-26
+## [0.2.3.10+1] - 10-06-26
 
-E02:S03:T11 — BR-102 intake: MWF sub-agent leg delegation bug filed; task T11 banked (**IN PROGRESS**). SemVer **v0.4.1125+1**.
+E02:S03:T10 — FR-126 encapsulation audit Waves 2–4: CMW/PVW guides, BR-102 MWF sub-agent delegation, registry metadata, validator stub. SemVer **v0.4.1126+1**.
 
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.3.11+1.md)
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.3.10+1.md)

@@ -23,7 +23,7 @@ housekeeping_policy: keep
 | Release completed work | `RW E02:S16:T15` (full), `RW -d E02:S16:T15` (docs-only), or `RW -k E02:S16:T15` (kanban-init) |
 | Plan before implementing | `IPW E02:S16:T15` (**plan mode first**) or `/ipw E02:S16:T15` |
 | Implement from IPP | `IDW E02:S16:T15` or `/idw E02:S16:T15` (implementation mode; linked IPP required) |
-| Full pipeline (plan → implement → release) | `MWF E02:S16:T15 delivery` — orchestrates IPW → IDW `--rw` (mode-gate pauses) |
+| Full pipeline (plan → implement → release) | `MWF E02:S16:T15 delivery` — orchestrates IPW → IDW `--rw` (continuous; sub-agent legs) |
 | Implement + release (chain) | `IDW E02:S16:T15 --rw` — local-complete RW after `IDW COMPLETE` |
 | Sync all kanban docs (global) | `UKW` then `RW` |
 | Clear completed rows from active boards (archive to completed ledgers) | `UKW -c` then `RW` |
@@ -164,7 +164,7 @@ Or per release: `python packages/frameworks/workflow-mgt/scripts/version/push_rw
 
 | Invocation | Meaning |
 | ---------- | ------- |
-| `MWF E02:S03:T09 delivery` / `/mwf E02:S03:T09 delivery` | Full pipeline: IPW (if no IPP) → mode gate → IDW `--rw` |
+| `MWF E02:S03:T09 delivery` / `/mwf E02:S03:T09 delivery` | Full pipeline: IPW (if no IPP) → IDW `--rw` (continuous; sub-agent legs per BR-102) |
 | `MWF E02:S03:T09 ipw,idw,rw` | Alias for `delivery` |
 | `MWF E02:S03:T09 delivery --art` | Forward `--art` to IDW `--rw` leg |
 | `MWF E02:S03:T09 delivery --push` | Forward `--push` to IDW `--rw` leg |
@@ -172,12 +172,12 @@ Or per release: `python packages/frameworks/workflow-mgt/scripts/version/push_rw
 | | |
 | --- | --- |
 | **Prerequisites** | Tool access; parseable `E:S:T` and recipe |
-| **Mode gates** | IPW leg: **plan mode**; IDW leg: **implementation mode** — `MWF CHAIN PAUSED` between legs |
+| **Orchestration** | MWF delegates legs via sub-agent or inline command guide — **no** operator mode-switch handoff ([BR-102](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/kanban/fr-br/BR-102-mwf-chain-paused-instead-of-subagent-leg-delegation.md)) |
 | **Resume** | When IPP already linked on task, skip IPW; run IDW `--rw` only |
 | **vs IDW `--rw`** | **MWF** = multi-leg (IPW→IDW→RW); **IDW `--rw`** = two-leg (impl→RW) |
 | **Blocked (tools)** | `MWF BLOCKED: tool execution is unavailable in this session. Switch to a session with tool access and retry.` |
 
-**Deep dive:** [`.claude/commands/mwf.md` (source)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/.claude/commands/mwf.md) · [meta-workflow-agent-execution.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/meta-workflow-agent-execution.md) · [FR-124](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/kanban/fr-br/FR-124-meta-workflow-orchestration-composite-workflow-chains.md)
+**Deep dive:** [`.claude/commands/mwf.md` (source)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/.claude/commands/mwf.md) · [workflow-encapsulation-contract.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/workflow-encapsulation-contract.md) · [meta-workflow-agent-execution.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/meta-workflow-agent-execution.md) · [FR-124](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/kanban/fr-br/FR-124-meta-workflow-orchestration-composite-workflow-chains.md)
 
 ---
 
@@ -215,7 +215,7 @@ Or per release: `python packages/frameworks/workflow-mgt/scripts/version/push_rw
 
 | Sequence | When |
 | -------- | ---- |
-| `MWF E02:S16:T15 delivery` | **Preferred** full pipeline (IPW → IDW → RW) with mode-gate pauses |
+| `MWF E02:S16:T15 delivery` | **Preferred** full pipeline (IPW → IDW → RW); no manual mode-switch between legs |
 | `IPW E02:S16:T15` → `IDW E02:S16:T15` → `RW E02:S16:T15` | New work with planning gate (manual three-step) |
 | `IPW E02:S16:T15` → `IDW E02:S16:T15 --rw` | Plan, implement, local release (manual; IDW chains RW) |
 | `MWF E02:S16:T15 delivery` (IPP exists) | Resume: IDW `--rw` only (skips IPW leg) |

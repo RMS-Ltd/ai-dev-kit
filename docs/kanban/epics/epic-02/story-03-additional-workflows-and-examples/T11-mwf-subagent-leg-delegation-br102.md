@@ -9,10 +9,11 @@ housekeeping_policy: keep
 # Epic 2, Story 3, Task 11: MWF sub-agent leg delegation (BR-102)
 
 **Task ID:** E02:S03:T11  
-**Status:** IN PROGRESS  
+**Status:** ✅ COMPLETE (v0.2.3.10+1)  
+**Version Anchor:** v0.2.3.10+1  
 **Priority:** HIGH  
 **Created:** 2026-06-10  
-**Last updated:** 2026-06-10 (v0.2.3.11+1 — BR-102 intake banking)  
+**Last updated:** 2026-06-10 (fix shipped via T10 @ v0.2.3.10+1)  
 **Version:** v0.2.3.11+1  
 **Code:** E02S03T11  
 
@@ -56,11 +57,11 @@ Fix MWF orchestration so the **parent orchestrator delegates each recipe leg to 
 
 ## Acceptance Criteria
 
-- [ ] **AC1:** Leg 1 delegates IPW via sub-agent; parent does not gate on parent-session plan mode.
-- [ ] **AC2:** Leg 2 delegates IDW `--rw`; flags forwarded; no mandatory operator re-invoke after IPW success.
-- [ ] **AC3:** `MWF CHAIN PAUSED` documented only for delegation-unavailable or explicit operator-review gates.
-- [ ] **AC4:** End-to-end verification on test host task (e.g. E02:S03:T10 or dedicated fixture task).
-- [ ] **AC5:** BR-102 ↔ T11 links bidirectional; board row updated.
+- [x] **AC1:** Leg 1 delegates IPW via sub-agent; parent does not gate on parent-session plan mode.
+- [x] **AC2:** Leg 2 delegates IDW `--rw`; flags forwarded; no mandatory operator re-invoke after IPW success.
+- [x] **AC3:** `MWF CHAIN PAUSED` documented only for delegation-unavailable or explicit operator-review gates.
+- [x] **AC4:** End-to-end verification on E02:S03:T10 MWF `delivery` (continuous orchestration; no mode-switch pause).
+- [x] **AC5:** BR-102 ↔ T11 links bidirectional; board row updated.
 
 ---
 

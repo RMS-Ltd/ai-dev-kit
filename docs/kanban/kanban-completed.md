@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Completed Tasks
 
-**Last Updated:** 2026-06-10 (RW E02:S03:T09 — FR-124 MWF orchestration)
-**Version:** v0.2.3.9+3
+**Last Updated:** 2026-06-10 (RW E02:S03:T10 — FR-126 + BR-102)
+**Version:** v0.2.3.10+1
 
 > **For MoSCOW prioritized tasks, see:** [`kboard.md`](kboard.md)  
 > **For completed FR/BR/UXR intake items, see:** [`intake-completed.md`](intake-completed.md)
@@ -19,6 +19,12 @@ housekeeping_policy: keep
 ---
 
 ## 20 Most Recently Completed Tasks
+
+#### **RW (2026-06-10)** — E02:S03:T10 @ **v0.2.3.10+1** (FR-126 — Workflow encapsulation integrity + BR-102 MWF delegation)
+
+- **[E02:S03:T10](epics/epic-02/story-03-additional-workflows-and-examples/T10-workflow-encapsulation-integrity-mwf-fr126.md)** — Encapsulation contract, CMW/PVW command guides, registry metadata, `validate_workflow_encapsulation.py`, BR-102 sub-agent MWF orchestration. **Completed:** `2026-06-10T15:10:33Z` | **Version:** `v0.2.3.10+1` | **Agent:** `MWF E02:S03:T10 delivery` | [FR-126](fr-br/FR-126-workflow-encapsulation-integrity-mwf-leverage.md) | [—IPP—](../../implementation-cycles/IPP-E02S03T10-workflow-encapsulation-integrity-mwf-fr126.md)
+
+- **[E02:S03:T11](epics/epic-02/story-03-additional-workflows-and-examples/T11-mwf-subagent-leg-delegation-br102.md)** — BR-102 fix shipped via T10 Wave 3 (`mwf.md`, KB, cheatsheet). **Completed:** `2026-06-10T15:10:33Z` | **Version:** `v0.2.3.10+1` | [BR-102](fr-br/BR-102-mwf-chain-paused-instead-of-subagent-leg-delegation.md) | —No IPP—
 
 #### **RW (2026-06-10)** — E02:S03:T09 @ **v0.2.3.9+3** (FR-124 — Meta-workflow orchestration / MWF)
 

@@ -14,7 +14,7 @@ housekeeping_policy: keep
 **Submitted By:** User — MWF `delivery` invocation (`MWF E02:S03:T10 delivery`)  
 **Priority:** HIGH  
 **Severity:** HIGH  
-**Status:** ACCEPTED (banked @ **v0.2.3.11+1**)
+**Status:** IMPLEMENTED (attempted fix @ T10 Wave 3 — pending operator verification)
 
 **Implementing Task:** [E02:S03:T11](../epics/epic-02/story-03-additional-workflows-and-examples/T11-mwf-subagent-leg-delegation-br102.md)
 
