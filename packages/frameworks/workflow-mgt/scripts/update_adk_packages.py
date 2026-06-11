@@ -58,6 +58,40 @@ def normalize_tag(tag: str) -> str:
     return value
 
 
+def semver_core_tag(tag: str) -> str:
+    """Task-touch SemVer git tag is core only (v0.4.1145), not v0.4.1145+1."""
+    normalized = normalize_tag(tag)
+    return normalized.split("+", 1)[0]
+
+
+def tags_match_target(current: Optional[str], target: str) -> bool:
+    if not current:
+        return False
+    cur = normalize_tag(current)
+    tgt = normalize_tag(target)
+    if cur == tgt:
+        return True
+    return semver_core_tag(cur) == semver_core_tag(tgt)
+
+
+def git_checkout_candidates(target_tag: str) -> List[str]:
+    """Refs to try for task-touch (core + internal) and legacy exact tags."""
+    normalized = normalize_tag(target_tag)
+    raw: List[str] = [
+        normalized,
+        f"tags/{normalized}",
+        semver_core_tag(normalized),
+        f"tags/{semver_core_tag(normalized)}",
+    ]
+    seen: set[str] = set()
+    out: List[str] = []
+    for ref in raw:
+        if ref not in seen:
+            seen.add(ref)
+            out.append(ref)
+    return out
+
+
 def git_vendor_root(vendor_root: Path) -> bool:
     return (vendor_root / ".git").is_dir()
 
@@ -127,17 +161,23 @@ def update_git_vendor(
     if not git_vendor_root(vendor_root):
         raise SystemExit(f"ERROR: vendor root is not a git repo: {vendor_root}")
     previous = current_git_tag(vendor_root)
-    if previous == target_tag:
-        print(f"vendor already at {target_tag}")
+    if tags_match_target(previous, target_tag):
+        resolved = previous or semver_core_tag(target_tag)
+        print(f"vendor already at {resolved} (target {target_tag})")
         return False, previous
+    checkout_ref = git_checkout_candidates(target_tag)[0]
     if dry_run:
-        print(f"[dry-run] would git checkout {target_tag} (from {previous or 'unknown'})")
+        print(
+            f"[dry-run] would git checkout {checkout_ref} "
+            f"(from {previous or 'unknown'}; target {target_tag})"
+        )
         return True, previous
     subprocess.run(
         ["git", "-C", str(vendor_root), "fetch", "--tags"],
         check=True,
     )
-    for ref in (target_tag, f"tags/{target_tag}"):
+    last_stderr = ""
+    for ref in git_checkout_candidates(target_tag):
         proc = subprocess.run(
             ["git", "-C", str(vendor_root), "checkout", ref],
             capture_output=True,
@@ -145,11 +185,13 @@ def update_git_vendor(
             check=False,
         )
         if proc.returncode == 0:
-            print(f"checked out {ref} in {vendor_root}")
+            print(f"checked out {ref} in {vendor_root} (target {target_tag})")
             return True, previous
+        last_stderr = proc.stderr.strip()
     raise SystemExit(
         f"ERROR: could not checkout {target_tag} in {vendor_root}\n"
-        f"{proc.stderr.strip()}"
+        f"Tried: {', '.join(git_checkout_candidates(target_tag))}\n"
+        f"{last_stderr}"
     )
 
 
@@ -191,11 +233,16 @@ def run_check(
     current = pinned
     if channel == "git" and git_vendor_root(vendor_root):
         current = current_git_tag(vendor_root) or current or "unknown"
+    target_core = semver_core_tag(target_tag)
+    current_core = semver_core_tag(current) if current and current != "unknown" else current
     print(f"channel:     {channel}")
     print(f"vendor root: {vendor_root}")
     print(f"current:     {current or 'unknown'}")
     print(f"target:      {target_tag}")
-    if current == target_tag:
+    if tags_match_target(current if current != "unknown" else None, target_tag):
+        print("status:      up to date")
+        return 0
+    if current_core == target_core:
         print("status:      up to date")
         return 0
     print("status:      update available")
@@ -245,7 +292,7 @@ def run_update(
 
     updated = update_vendor_pins(
         manifest,
-        pinned_semver=target_tag,
+        pinned_semver=semver_core_tag(target_tag),
         pinned_internal=target_tag,
         channel=channel,
     )

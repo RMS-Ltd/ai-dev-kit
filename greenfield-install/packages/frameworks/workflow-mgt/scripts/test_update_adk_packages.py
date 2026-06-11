@@ -22,8 +22,11 @@ from adk_manifest import (  # noqa: E402
 )
 from update_adk_packages import (  # noqa: E402
     emit_scaffold_report,
+    git_checkout_candidates,
     normalize_tag,
+    semver_core_tag,
     sync_packages_from_source,
+    tags_match_target,
 )
 from verify_vendor_tree import run_verify  # noqa: E402
 
@@ -76,6 +79,22 @@ def test_normalize_tag():
     assert normalize_tag("0.4.1144") == "v0.4.1144"
     assert normalize_tag("v0.4.1144+1") == "v0.4.1144+1"
     assert normalize_tag("refs/tags/v0.4.1144") == "v0.4.1144"
+
+
+def test_semver_core_tag_strips_build():
+    assert semver_core_tag("v0.4.1145+1") == "v0.4.1145"
+    assert semver_core_tag("v0.6.9.33+1") == "v0.6.9.33"
+
+
+def test_tags_match_target_semver_core():
+    assert tags_match_target("v0.4.1145", "v0.4.1145+1")
+    assert tags_match_target("v0.4.1145+1", "v0.4.1145")
+
+
+def test_git_checkout_candidates_includes_core():
+    refs = git_checkout_candidates("v0.4.1145+1")
+    assert "v0.4.1145+1" in refs
+    assert "v0.4.1145" in refs
 
 
 def test_manifest_round_trip(tmp_path: Path):
@@ -198,6 +217,7 @@ def test_cli_update_copy_sync(tmp_path: Path):
     )
     assert proc.returncode == 0, proc.stderr
     manifest = load_manifest(project)
-    assert manifest["vendor"]["pinned_semver"] == "v0.4.1144+1"
+    assert manifest["vendor"]["pinned_semver"] == "v0.4.1144"
+    assert manifest["vendor"]["pinned_internal"] == "v0.4.1144+1"
     code, _ = run_verify(vendor, emit=False)
     assert code == 0

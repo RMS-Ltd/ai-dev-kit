@@ -87,7 +87,7 @@ housekeeping_policy: keep
 
 - [ ] **E06:S09:T32 – Detect structure zero-padded epic names (BR-108 / F23)** - 📋 TODO (MEDIUM — filed from attempt 06) — [Task](story-09-ai-dev-kit-installation-and-adopter-integration/T32-detect-structure-zero-padded-epic-br108.md) | [BR-108](../../fr-br/BR-108-detect-existing-structure-zero-padded-epic-names.md) | —No IPP—
 
-- [x] **E06:S09:T33 – ADK package update mechanism (FR-129)** — ✅ COMPLETE (**v0.6.9.33+1** — update_adk_packages v1; SBL fixture replay pending verify) — [Task](story-09-ai-dev-kit-installation-and-adopter-integration/T33-adk-package-update-mechanism-fr129.md) | [FR-129](../../fr-br/FR-129-adk-package-update-mechanism-fr129.md) | [IPP-E06S09T33](../../../implementation-cycles/IPP-E06S09T33-adk-package-update-mechanism-fr129.md)
+- [x] **E06:S09:T33 – ADK package update mechanism (FR-129)** — ✅ COMPLETE (**v0.6.9.33+2** — tag-resolution fix; SBL AC1 validated) — [Task](story-09-ai-dev-kit-installation-and-adopter-integration/T33-adk-package-update-mechanism-fr129.md) | [FR-129](../../fr-br/FR-129-adk-package-update-mechanism-fr129.md) | [IPP-E06S09T33](../../../implementation-cycles/IPP-E06S09T33-adk-package-update-mechanism-fr129.md)
 
 - [x] **E06:S09:T27 – Kanban v3.2 package rewrite for installer (F9/F17)** - ✅ COMPLETE (CRITICAL, **v0.6.9.27+2** — v3.2 installer + fingerprint validator fix; SemVer **v0.4.1133+2**) — [Task](story-09-ai-dev-kit-installation-and-adopter-integration/T27-kanban-v32-package-rewrite-installer-f9-f17.md) | [IPP](../../../implementation-cycles/IPP-E06S09T27-kanban-v32-package-rewrite-installer-f9-f17.md)
 

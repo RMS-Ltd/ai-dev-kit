@@ -12,9 +12,9 @@ housekeeping_policy: keep
 **Status:** COMPLETE  
 **Priority:** HIGH (**Must Have**)  
 **Created:** 2026-06-11  
-**Last updated:** 2026-06-11 (**v0.6.9.33+1** — FR-129 v1 shipped; SBL fixture replay pending operator verify)  
+**Last updated:** 2026-06-11 (**v0.6.9.33+2** — task-touch SemVer tag resolution fix; SBL AC1 replay validated)  
 **Code:** E06S09T33  
-**Version anchor:** **v0.6.9.33+1** (SemVer **v0.4.1145+1**)
+**Version anchor:** **v0.6.9.33+2** (SemVer **v0.4.1146+2**)
 
 **Planning:** [`IPP-E06S09T33-adk-package-update-mechanism-fr129.md`](../../../../implementation-cycles/IPP-E06S09T33-adk-package-update-mechanism-fr129.md)
 
@@ -58,7 +58,7 @@ Motivated by SBL vendor bump gap after FR-128 and FR-110 NF2 "submodule bump" wi
 - [x] **AC4:** Check mode reports available upstream release.
 - [x] **AC5:** INSTALL documents submodule, tarball, GHCR update paths.
 - [x] **AC6:** CI update dry-run smoke passes (`test_update_adk_packages.py`).
-- [ ] **AC1:** SBL fixture: `v0.4.1140+2` → `v0.4.1144+1` via one command; `verify_vendor_tree` pass (copy-sync path tested in pytest; **SBL replay pending operator**).
+- [x] **AC1:** SBL fixture: `v0.4.1140+2` → `v0.4.1145+1` via one command; `verify_vendor_tree` pass (**validated 2026-06-11** @ `v0.6.9.33+2` tag-resolution fix).
 - [x] **AC2:** Host scaffold report for IPW/IDW command files when not auto-patched.
 - [x] **AC3:** RW-only brownfield updates workflow-mgt without Kanban re-fresh (vendor packages scope only).
 

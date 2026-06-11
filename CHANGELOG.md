@@ -11,8 +11,8 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
-## [0.6.9.33+1] - 11-06-26
+## [0.6.9.33+2] - 11-06-26
 
-E06:S09:T33 — ADK package update mechanism (FR-129). SemVer **v0.4.1145+1**.
+E06:S09:T33 — ADK update tag resolution fix (FR-129). SemVer **v0.4.1146+2**.
 
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.6.9.33+1.md)
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.6.9.33+2.md)
