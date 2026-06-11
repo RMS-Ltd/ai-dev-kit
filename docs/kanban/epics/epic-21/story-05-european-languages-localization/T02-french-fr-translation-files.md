@@ -9,10 +9,10 @@ housekeeping_policy: keep
 # Epic 21, Story 5, Task 2: French (fr) translation files
 
 **Task ID:** E21:S05:T02  
-**Status:** ✅ COMPLETE (v0.21.5.2+1)  
+**Status:** ✅ COMPLETE (v0.21.5.2+2)  
 **Priority:** LOW  
-**Last updated:** 2026-06-11 (v0.21.5.2+1 — French fr locale delivery)  
-**Version:** v0.21.5.2+1
+**Last updated:** 2026-06-11 (v0.21.5.2+2 — Kanban documentation hygiene)  
+**Version:** v0.21.5.2+2
 **Code:** E21S05T02
 
 **Associated FR:** [FR-006](../../../fr-br/FR-006-localization-language-selection-uk-us-english.md) (Phase 2)
