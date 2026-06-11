@@ -12,7 +12,7 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** [TBD]  
 **Created:** 2025-12-02  
-**Last updated:** 2026-06-05 (**E04:S19:T12** intake rename wave **v0.4.19.12+5**)
+**Last updated:** 2026-06-11 (**E04:S19:T13** kboard template v2.2.0 **v0.4.19.13+1**)
 **Branch:** `epic/4-kanban-framework`  
 **Version Schema:** `0.4.S.T+B`  
 **Production URL:** [N/A for this repo]

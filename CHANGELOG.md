@@ -11,8 +11,8 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
-## [0.6.9.26+3] - 10-06-26
+## [0.4.19.13+1] - 11-06-26
 
-E06:S09:T26 — SBL install program T28–T30 closure sync. SemVer **v0.4.1142+3**.
+E04:S19:T13 — kboard v3.2 packaged template (UXR-028). SemVer **v0.4.1143+1**.
 
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.6.9.26+3.md)
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.4.19.13+1.md)

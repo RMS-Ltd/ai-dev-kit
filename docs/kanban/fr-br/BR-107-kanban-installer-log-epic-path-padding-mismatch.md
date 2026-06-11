@@ -16,7 +16,7 @@ housekeeping_policy: keep
 **Source finding:** **F21** (Starborn Legacy install attempt 05)  
 **Related:** [UXR-017](UXR-017-kanban-epic-story-path-lowercase-naming.md) · [E06:S09:T27](../epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T27-kanban-v32-package-rewrite-installer-f9-f17.md)  
 **Implementing Task:** [E06:S09:T30](../epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T30-kanban-installer-log-epic-path-padding-br107.md)  
-**SBL evidence:** `starborn_legacy/logs/ai-dev-kit/install/attempt-05/transcripts/20260610T183509Z-phase3c-kanban-v3dot2.txt`
+**SBL evidence:** attempt 05 `…/attempt-05/transcripts/20260610T183509Z-phase3c-kanban-v3dot2.txt` · attempt 06 replay `…/attempt-06/transcripts/20260610T194420Z-phase3c-kanban-v3dot2.txt` (padded logs)
 
 ---
 

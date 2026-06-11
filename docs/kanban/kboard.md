@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Board
 
-**Last Updated:** 2026-06-10 (RW: E06:S09:T26)
-**Version:** v0.6.9.26+3
+**Last Updated:** 2026-06-11 (RW: E04:S19:T13)
+**Version:** v0.4.19.13+1
 
 **Active board contract:** **Sole active MoSCOW board** ([ADR-018](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/architecture/standards-and-adrs/ADR-018-single-kanban-board-consolidation.md)). Rows are **live work** (TODO / IN PROGRESS / OPEN / WAITING / PERPETUAL) plus filed **Could Have** backlog. **Verification (V)** band holds task-shipped / FBU-open items (`⏳ WAITING`). Remove **terminal** rows and archive prose (use [`kanban-completed.md`](kanban-completed.md) / [`intake-completed.md`](intake-completed.md)).
 
@@ -28,7 +28,12 @@ housekeeping_policy: keep
 ### Should Have (S) - Important Tasks
 
 
-- **E06:S09:T26** – Starborn Legacy ADK install program - 🔄 IN PROGRESS (HIGH — T28–T30 **COMPLETE** @ **v0.4.1140+2**; **attempt 06 replay** pending) | [Task](epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T26-starborn-legacy-adk-install-program.md) | [T27](epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T27-kanban-v32-package-rewrite-installer-f9-f17.md) | —No IPP— | Last modified: 2026-06-10 17:24 UTC
+- **E06:S09:T26** – Starborn Legacy ADK install program - 🔄 IN PROGRESS (HIGH — FR-079 **accepted**; adopter sign-off final; greenfield program closed) | [Task](epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T26-starborn-legacy-adk-install-program.md) | [attempt-06 index](../../../../adk-install-into-sbl/attempt-06/README.md) | —No IPP— | Last modified: 2026-06-10 17:24 UTC
+
+- **E06:S09:T31** – Agentic kanban migration agent (FR-127 / F22) - 📋 TODO (HIGH — attempt 06 intake) | [Task](epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T31-agentic-kanban-migration-agent-fr127.md) | [FR-127](fr-br/FR-127-agentic-kanban-migration-agent-replace-tool-pipeline.md) | —No IPP— | Last modified: 2026-06-11 10:40 UTC
+
+- **E06:S09:T32** – Detect structure zero-padded epic names (BR-108 / F23) - 📋 TODO (MEDIUM — attempt 06 intake) | [Task](epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T32-detect-structure-zero-padded-epic-br108.md) | [BR-108](fr-br/BR-108-detect-existing-structure-zero-padded-epic-names.md) | —No IPP— | Last modified: 2026-06-11 10:41 UTC
+
 
 - **E08:S03:T12** – Code Quality maintainability backlog (BR-099) - 🔄 IN PROGRESS (MEDIUM, **v0.8.3.12+9** wave-6 IPW; **103/Fair** @ `d5c4bca5`; **`implement wave 6`**) | [Task](epics/epic-08/story-03-automation-scripts/T12-code-quality-maintainability-backlog-br099.md) | [BR-099](fr-br/BR-099-code-quality-maintainability-backlog.md) | [—IPP—](../../implementation-cycles/IPP-E08S03T12-code-quality-maintainability-backlog-br099.md) | Last modified: 2026-06-06 17:01 UTC
 

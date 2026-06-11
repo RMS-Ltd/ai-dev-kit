@@ -15,7 +15,7 @@ housekeeping_policy: keep
 **Source finding:** **F19** (Starborn Legacy install attempt 05; extends attempt 04 `version_file` prompt)  
 **Related:** [BR-088](BR-088-rw-install-mode-c-missing-version-file-scaffold.md) · [FR-108](FR-108-install-setup-error-code-registry-and-emission.md) · [E06:S09:T19](../epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T19-rw-install-version-file-scaffold-br088.md)  
 **Implementing Task:** [E06:S09:T29](../epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T29-rw-install-non-interactive-changelog-prompt-br106.md)  
-**SBL evidence:** `starborn_legacy/logs/ai-dev-kit/install/attempt-05/feedback-package/` · transcript `…/transcripts/20260610T183451Z-phase3a-rw-bootstrap.txt`
+**SBL evidence:** attempt 05 `…/attempt-05/feedback-package/` · attempt 06 replay `…/attempt-06/transcripts/20260610T194358Z-phase3a-rw-bootstrap.txt` (no EOF)
 
 ---
 

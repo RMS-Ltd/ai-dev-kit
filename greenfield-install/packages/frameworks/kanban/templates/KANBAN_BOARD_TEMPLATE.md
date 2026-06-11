@@ -8,12 +8,14 @@ housekeeping_policy: keep
 
 # {Project Name} – Kanban Board
 
-**Last Updated:** {Date}  
-**Version:** {Version}
+**Last Updated:** {YYYY-MM-DD} (UKW: bootstrap)
+**Version:** {vX.X.X.X+X}
 
-**Note:** {Optional status note about epics or overall project status}
+**Note:** {Epic-level status summary — which epics are COMPLETE, IN PROGRESS, PLANNING.}
 
-> **For rules, explanations, and how-to content, see:** [`kanban-board-guide.md`](kanban-board-guide.md)
+**Active board contract:** Sole active MoSCOW board ([ADR-018 lean board](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/architecture/standards-and-adrs/ADR-018-single-kanban-board-consolidation.md)). Rows are live work plus filed Could Have backlog. Terminal rows → [`kanban-completed.md`](kanban-completed.md) / [`intake-completed.md`](intake-completed.md).
+
+> **Structure:** [`kanban-structure.md`](kanban-structure.md) · **Guide:** [`kanban-board-guide.md`](kanban-board-guide.md) · **Completed:** [`kanban-completed.md`](kanban-completed.md) · **FBU inventory:** [`intake-structure.md`](intake-structure.md)
 
 ---
 
@@ -21,51 +23,52 @@ housekeeping_policy: keep
 
 ### Must Have (M) - Critical Tasks
 
-- **{E{epic}:S{story}:T{task}}** – {Task description}  
-  *Last updated: {Date}* | [Task](epics/epic-{epic}/story-{story}-{name}/T{task}-{task-name}.md) | [Story](epics/epic-{epic}/story-{story}-{name}.md) | —No IPP— | Last modified: {Date} UTC
+- **E{epic}:S{story}:T{task}** – {Description} — {Status} ({Priority}) | [Task](epics/epic-{epic}/story-{story}-{name}/T{task}-{task-name}.md) | [Story](epics/epic-{epic}/story-{story}-{name}.md) | [FR-XXX](fr-br/FR-XXX-*.md) | —No IPP— | Last modified: {YYYY-MM-DD} UTC
 
 ### Should Have (S) - Important Tasks
 
-- **{E{epic}:S{story}:T{task}}** – {Task description}  
-  *Last updated: {Date}* | [Task](epics/epic-{epic}/story-{story}-{name}/T{task}-{task-name}.md) | [Story](epics/epic-{epic}/story-{story}-{name}.md) | —No IPP— | Last modified: {Date} UTC
+- **E{epic}:S{story}:T{task}** – {Description} — {Status} ({Priority}) | [Task](epics/epic-{epic}/story-{story}-{name}/T{task}-{task-name}.md) | [Story](epics/epic-{epic}/story-{story}-{name}.md) | —No FR— | —No IPP— | Last modified: {YYYY-MM-DD} UTC
 
-### Verification (V) - Task Shipped, FBU Open
+### Verification (V) - Task Shipped, FBU Verification Pending
 
-Rows where the **task is terminal** but the **FBU remains open** (verification pending). Use `⏳ WAITING` status per ADR-018 / FR-109.
+Rows where the **task is terminal** but the **FBU remains open**. Use `⏳ WAITING` per ADR-018 / FR-109.
 
-- **{E{epic}:S{story}:T{task}}** – {Task description} — ⏳ WAITING (HIGH, task shipped · FBU verification pending) | [Task Doc](…) | [FR-XXX](fr-br/FR-XXX-*.md) | —No IPP— | Last modified: {Date} UTC
+- **E{epic}:S{story}:T{task}** – {Description} — ⏳ WAITING ({Priority}, task shipped · FBU verification pending) | [Task](epics/epic-{epic}/story-{story}-{name}/T{task}-{task-name}.md) | [Story](epics/epic-{epic}/story-{story}-{name}.md) | [FR-XXX](fr-br/FR-XXX-*.md) | —No IPP— | Last modified: {YYYY-MM-DD} UTC
 
 ### Could Have (C) - Nice-to-Have Tasks
 
-- **{E{epic}:S{story}:T{task}}** – {Task description}  
-  *Last updated: {Date}* | [Task](epics/epic-{epic}/story-{story}-{name}/T{task}-{task-name}.md) | [Story](epics/epic-{epic}/story-{story}-{name}.md) | —No IPP— | Last modified: {Date} UTC
+- **E{epic}:S{story}:T{task}** – {Description} — {Status} ({Priority}) | [Task](epics/epic-{epic}/story-{story}-{name}/T{task}-{task-name}.md) | [Story](epics/epic-{epic}/story-{story}-{name}.md) | —No FR— | —No IPP— | Last modified: {YYYY-MM-DD} UTC
 
 ### Ongoing (O) - Perpetual Tasks
 
-- **{E{epic}:S{story}:T{task}}** – {Task description} - Perpetual Task - {Status}  
-  *Last updated: {Date}* | [Task](epics/epic-{epic}/story-{story}-{name}/T{task}-{task-name}.md) | [Story](epics/epic-{epic}/story-{story}-{name}.md) | —No IPP— | Last modified: {Date} UTC
+#### Canonical (E01–E10) — ADK framework perpetuals
+
+_Framework perpetual lanes typically under **E02:S16** ([FR-088](fr-br/FR-088-dedicated-story-for-perpetual-ongoing-tasks.md))._
+
+- **E02:S16:T01** – Workflow maintenance — 🔄 PERPETUAL | [Task](epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T01-workflow-maintenance-perpetual.md) | [Story](epics/epic-02/story-16-perpetual-ongoing-workflow-operations.md) | —No IPP— | Last modified: {YYYY-MM-DD} UTC
+
+- **E02:S16:T02** – Ad-hoc Kanban synchronization and hygiene (UKW) — 🔄 PERPETUAL | [Task](epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T02-ad-hoc-kanban-synchronization-and-hygiene-perpetual.md) | [Story](epics/epic-02/story-16-perpetual-ongoing-workflow-operations.md) | —No IPP— | Last modified: {YYYY-MM-DD} UTC
+
+- **E02:S16:T03** – Ad-hoc Documentation Maintenance — 🔄 PERPETUAL | [Task](epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T03-ad-hoc-documentation-maintenance-perpetual.md) | [Story](epics/epic-02/story-16-perpetual-ongoing-workflow-operations.md) | —No IPP— | Last modified: {YYYY-MM-DD} UTC
+
+- **E02:S16:T04** – Ad-hoc Repository Infrastructure Maintenance — 🔄 PERPETUAL | [Task](epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T04-ad-hoc-repository-infrastructure-maintenance-perpetual.md) | [Story](epics/epic-02/story-16-perpetual-ongoing-workflow-operations.md) | —No IPP— | Last modified: {YYYY-MM-DD} UTC
+
+- **E02:S16:T05** – GitHub Actions CI health — 🔄 PERPETUAL | [Task](epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T05-github-actions-ci-health-perpetual.md) | [Story](epics/epic-02/story-16-perpetual-ongoing-workflow-operations.md) | —No IPP— | Last modified: {YYYY-MM-DD} UTC
+
+- **E02:S16:T06** – GitHub Security & Code Quality health — 🔄 PERPETUAL | [Task](epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T06-github-security-code-quality-health-perpetual.md) | [Story](epics/epic-02/story-16-perpetual-ongoing-workflow-operations.md) | —No IPP— | Last modified: {YYYY-MM-DD} UTC
+
+#### Domain (E21+) — project perpetuals
+
+_Add domain-specific perpetual or ongoing rows after migration or when project epics exceed E10._
+
+- **E{epic}:S{story}:T{task}** – {Domain perpetual description} — 🔄 ONGOING | [Task](epics/epic-{epic}/story-{story}-{name}/T{task}-{task-name}.md) | [Story](epics/epic-{epic}/story-{story}-{name}.md) | —No IPP— | Last modified: {YYYY-MM-DD} UTC
 
 ### Won't Have (W) - Deferred Tasks
 
----
-
-## Epics
-
-### Epic {X}: {Epic Name}
-
-**Status:** {Status}  
-**Priority:** {Priority}  
-**Last Updated:** {Version}
-
-**Stories:**
-- [x] **E{epic}:S{story} – {Story name}** - {Status} ({version})
-  - Story: [`story-{story}-{name}.md`](epics/epic-{epic}/story-{story}-{name}.md)
-
-**Epic Doc:** [`epics/epic-{epic}/epic-{epic}.md`](epics/epic-{epic}/epic-{epic}.md)
+_No tasks currently deferred._
 
 ---
 
-**Template Version:** 2.1.0  
-**Last Updated:** 2026-06-05  
-**Based On:** Kanban board info-only split (E04:S18:T01); ADR-018 Verification (V) band (E04:S19:T12 Wave 3)
-
+**Template Version:** 2.2.0  
+**Last Updated:** {YYYY-MM-DD}  
+**Based On:** [UXR-028](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/kanban/fr-br/UXR-028-kboard-v3dot2-packaged-template-alignment.md) · SBL attempt 06 `kboard-template-v3dot2.md` · ADR-018 lean board · UXR-010 IPP segment

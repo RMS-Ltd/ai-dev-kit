@@ -14,6 +14,7 @@
 | 03 | `starborn_legacy/logs/ai-dev-kit/install/attempt-03/` |
 | 04 | `starborn_legacy/logs/ai-dev-kit/install/attempt-04/` |
 | 05 | `starborn_legacy/logs/ai-dev-kit/install/attempt-05/` |
+| 06 | `starborn_legacy/logs/ai-dev-kit/install/attempt-06/` |
 
 Each attempt folder typically contains:
 
@@ -35,3 +36,4 @@ Each attempt folder typically contains:
 | 03 | [attempt-03/README.md](attempt-03/README.md) | `v0.4.13` (`0.4.1098+1`) |
 | 04 | — (SBL path only) | `v0.4.1131` |
 | 05 | — (SBL path only) | `main` @ `0d278366` (`v0.6.9.27+2` / SemVer `v0.4.1133+2`) |
+| 06 | [attempt-06/README.md](attempt-06/README.md) · [preflight checklist](attempt-06-preflight-checklist.md) | `v0.4.1140+2` → `256259fb2` — FR-079 **accepted**; adopter sign-off final; FR-127/BR-108 filed |

@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Completed Tasks
 
-**Last Updated:** 2026-06-10 (RW E06:S09:T30 — BR-107 log padding)
-**Version:** v0.6.9.30+2
+**Last Updated:** 2026-06-11 (RW E04:S19:T13 — UXR-028 kboard template v2.2.0)
+**Version:** v0.4.19.13+1
 
 > **For MoSCOW prioritized tasks, see:** [`kboard.md`](kboard.md)  
 > **For completed FR/BR/UXR intake items, see:** [`intake-completed.md`](intake-completed.md)
@@ -19,6 +19,10 @@ housekeeping_policy: keep
 ---
 
 ## 20 Most Recently Completed Tasks
+
+#### **RW (2026-06-11)** — E04:S19:T13 @ **v0.4.19.13+1** (UXR-028 kboard v3.2 packaged template)
+
+- **[E04:S19:T13](epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T13-kboard-v3dot2-packaged-template-uxr028.md)** — **KANBAN_BOARD_TEMPLATE.md v2.2.0** from SBL attempt 06: single-line rows, V band, split Ongoing, lean board (no epic rollup); greenfield mirror synced. SemVer **v0.4.1143+1**. **Completed:** `2026-06-11T10:31:16Z` | **Version:** `v0.4.19.13+1` | **Agent:** `RW E04:S19:T13 --art` | [UXR-028](fr-br/UXR-028-kboard-v3dot2-packaged-template-alignment.md)
 
 #### **IDW (2026-06-10)** — E06:S09:T30 @ **v0.6.9.30+2** (BR-107 Kanban installer log epic path padding)
 

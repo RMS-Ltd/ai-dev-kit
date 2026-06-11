@@ -12,14 +12,14 @@ housekeeping_policy: keep
 **Status:** IN PROGRESS  
 **Priority:** HIGH  
 **Created:** 2026-06-09  
-**Last updated:** 2026-06-10 (v0.6.9.26+3 — T28–T30 closure sync; attempt 06 replay pending)  
+**Last updated:** 2026-06-11 (FR-079 attempt 06 **accepted** — adopter sign-off final; F22→FR-127/T31, F23→BR-108/T32)  
 **Version:** v0.6.9.26+3  
 **Version Anchor:** v0.6.9.26+3  
 **Code:** E06S09T26
 
 **Predecessor (closed):** [E06:S09:T25](T25-starborn-legacy-greenfield-install-diary-triage-uxr025.md) — UXR-025 triage + F4/F5 fixes @ **v0.6.9.25+3**
 
-**Related:** [UXR-025](../../../fr-br/UXR-025-starborn-legacy-greenfield-install-diary.md) · [FR-081](../../../fr-br/FR-081-brownfield-modular-adopter-integration.md) · [FR-080](../../../fr-br/FR-080-greenfield-installation-process.md) · [FR-079](../../../fr-br/FR-079-install-feedback-submission-path-and-governance.md) · [Triage matrix](../../../../knowledge/analysis/projects/starborn-legacy-install-triage-matrix.md) · [Maintainer index](../../../../../../adk-install-into-sbl/README.md) · SBL FB roots: `starborn_legacy/logs/ai-dev-kit/install/attempt-{03,04,05}/`
+**Related:** [UXR-025](../../../fr-br/UXR-025-starborn-legacy-greenfield-install-diary.md) · [FR-081](../../../fr-br/FR-081-brownfield-modular-adopter-integration.md) · [FR-080](../../../fr-br/FR-080-greenfield-installation-process.md) · [FR-079](../../../fr-br/FR-079-install-feedback-submission-path-and-governance.md) · [Triage matrix](../../../../knowledge/analysis/projects/starborn-legacy-install-triage-matrix.md) · [Maintainer index](../../../../../../adk-install-into-sbl/README.md) · SBL FB roots: `starborn_legacy/logs/ai-dev-kit/install/attempt-{03,04,05,06}/`
 
 ---
 
@@ -27,7 +27,7 @@ housekeeping_policy: keep
 
 **Ongoing maintainer task** to manage AI Dev Kit installation into **Starborn Legacy (SBL)**: run and record install attempts, ingest adopter feedback, drive upstream ADK fixes/docs, and converge on a viable integration path (RW-only greenfield, brownfield per FR-081, or hybrid) without replacing SBL’s legacy **E/S/T** PM unless explicitly decided.
 
-**Attempt 05 status (2026-06-10):** v3.2 catalog **PASS** ([T27](T27-kanban-v32-package-rewrite-installer-f9-f17.md) @ **v0.6.9.27+2**). All attempt-05 upstream findings **F18–F21** are **shipped** via child tasks [T28](T28-v32-fresh-install-signoff-story-padding-br105.md) (**v0.6.9.28+2**), [T29](T29-rw-install-non-interactive-changelog-prompt-br106.md) (**v0.6.9.29+2**), [T30](T30-kanban-installer-log-epic-path-padding-br107.md) (**v0.6.9.30+2**). **Open program work:** SBL **attempt 06 replay** on **`v0.4.1140+2`** (or later) to confirm end-to-end greenfield with fixes; residual **F10** / **F20** (orchestrator ergonomics).
+**Attempt 06 status (2026-06-11):** SBL **attempt 06** FR-079 package **accepted** with **adopter sign-off final** (`package_status: final`, `final_signoff` @ `20260611T094319Z` — **7 READY / 1 SKIP / 0 NOT READY**). Pin **`v0.4.1140+2`** (`256259fb2`). **AC13–AC15 PASS**; full ADK greenfield + agentic migration (72 stories). Intake filed: **[FR-127](../../../fr-br/FR-127-agentic-kanban-migration-agent-replace-tool-pipeline.md)** / [T31](T31-agentic-kanban-migration-agent-fr127.md) (**F22**) · **[BR-108](../../../fr-br/BR-108-detect-existing-structure-zero-padded-epic-names.md)** / [T32](T32-detect-structure-zero-padded-epic-br108.md) (**F23**). **Open:** **F10** / **F20** orchestrator ergonomics.
 
 ---
 
@@ -113,7 +113,10 @@ Attempts **1** and **2** proved installer contracts (sign-off ALL READY) but **f
 - [x] **AC10:** [T28](T28-v32-fresh-install-signoff-story-padding-br105.md) **COMPLETE** @ **v0.6.9.28+2** — BR-105 / **F18** sign-off contract accepts `{story:02d}` / `T{task}` on v3.2 fresh install.
 - [x] **AC11:** [T29](T29-rw-install-non-interactive-changelog-prompt-br106.md) **COMPLETE** @ **v0.6.9.29+2** — BR-106 / **F19** non-interactive CHANGELOG scaffold (no EOF under `--non-interactive`).
 - [x] **AC12:** [T30](T30-kanban-installer-log-epic-path-padding-br107.md) **COMPLETE** @ **v0.6.9.30+2** — BR-107 / **F21** install log lines use padded epic paths matching on-disk layout.
-- [ ] **AC13:** SBL **attempt 06** replay on ADK **`v0.4.1140+2`** (or later) confirms attempt-05 findings closed in adopter environment (sign-off ALL READY; non-interactive RW path; padded kanban logs).
+- [x] **AC13:** SBL **attempt 06** replay on ADK **`v0.4.1140+2`** (`256259fb2`) confirms attempt-05 findings closed in adopter environment — sign-off **ALL READY**; F19 non-interactive RW clean; F21 padded kanban logs @ **2026-06-11**.
+- [x] **AC14:** Full ADK greenfield install on SBL — workflows, frameworks, `rw-config.yaml`, `src/starborn_legacy/version.py`, Obsidian + Docusaurus surfaces @ attempt 06.
+- [x] **AC15:** Legacy E/S/T → ADK v3.2 migration exercise — 19 legacy epics → 10 canonical + 8 domain epics; 72 stories migrated; legacy `KB/PM_and_Portfolio/` preserved @ attempt 06 (agentic method; migration tools **F22** inadequate).
+- [x] **AC16:** FR-079 attempt 06 package **accepted** — adopter sign-off final @ 2026-06-11; F22/F23 filed as FR-127/T31 and BR-108/T32.
 
 ---
 
@@ -126,6 +129,7 @@ Attempts **1** and **2** proved installer contracts (sign-off ALL READY) but **f
 | 3 | `v0.4.13` (`0.4.1098+1`) | **Partial** — dual kanban OK; **F17** v1 catalog blocks v3.2 migration test | [Attempt 03](../../../../../../adk-install-into-sbl/attempt-03/README.md) · SBL `…/attempt-03/` |
 | 4 | `v0.4.1131` tarball | **BLOCKER unchanged** — F17 **fourth proof**; RW baseline + dual-kanban PASS; BR-086 NOT READY; F18–F20 new | SBL `…/attempt-04/feedback-package/SUBMISSION.md` |
 | 5 | `main` @ `0d278366` (`v0.4.1133+2`) | **SUCCESS (upstream pending → closed)** — v3.2 kanban PASS; dual-tree PASS; F18–F21 upstream **shipped** T28–T30 @ **v0.6.9.28+2**–**v0.6.9.30+2** | SBL `starborn_legacy/logs/ai-dev-kit/install/attempt-05/` |
+| 6 | `v0.4.1140+2` → `256259fb2` | **SUCCESS** — adopter sign-off final; AC13–AC16; FR-079 accepted; F22→[FR-127](../../../fr-br/FR-127-agentic-kanban-migration-agent-replace-tool-pipeline.md)/[T31](T31-agentic-kanban-migration-agent-fr127.md); F23→[BR-108](../../../fr-br/BR-108-detect-existing-structure-zero-padded-epic-names.md)/[T32](T32-detect-structure-zero-padded-epic-br108.md) | [Attempt 06 index](../../../../../../adk-install-into-sbl/attempt-06/README.md) · SBL `…/attempt-06/` |
 
 > **Path convention:** `starborn_legacy/logs/ai-dev-kit/install/attempt-NN/` — see [adk-install-into-sbl/README.md](../../../../../../adk-install-into-sbl/README.md).
 
@@ -172,28 +176,63 @@ Child tasks under this program closed the attempt-05 residual backlog:
 
 ---
 
+## Attempt 06 intake (2026-06-11)
+
+**FR-079 package accepted** — canonical root: `starborn_legacy/logs/ai-dev-kit/install/attempt-06/` ([maintainer index](../../../../../../adk-install-into-sbl/attempt-06/README.md)). **Adopter sign-off:** `package_status: final` · `finalized_at: 2026-06-11T09:40:00Z` · final sign-off transcript `20260611T094319Z-final-signoff.txt` (**7 READY / 1 SKIP / 0 NOT READY**).
+
+### Outcome
+
+| Result | Detail |
+|--------|--------|
+| **AC13 (F17/F18/F19/F21)** | **ALL PASS** — v3.2 catalog; sign-off **7 READY / 1 SKIP / 0 NOT READY**; `--non-interactive` RW without EOF; kanban logs show `epic-01` matching disk |
+| **Dual kanban** | **PASS** — `KB/PM_and_Portfolio/` (107 files) preserved alongside `docs/kanban/` |
+| **Full ADK install** | **PASS** — 15 workflow YAMLs, workflow-mgt + kanban + numbering-versioning + doc-lifecycle + debug-path + code-quality scripts |
+| **Doc surfaces** | Obsidian personal profile (`docs/maintainer/OBSIDIAN-QUICKSTART.md`); Docusaurus `portal/` built OK |
+| **Versioning** | `src/starborn_legacy/version.py` + `semver-registry.yaml` + `rw-config.yaml` |
+| **Legacy migration** | **PASS (agentic)** — 19 legacy epics → 10 canonical (E01–E10) + 8 domain (E21–E28); **72 stories** migrated |
+| **Migration tools** | **FAIL** — `detect→analyze→migrate` detected **0/80+** stories; semantic matcher useless for domain projects → **F22** |
+| **F23** | `detect_existing_structure.py` — `Epic-01.md` zero-padding bug (`int('01')` → epic-1 mismatch) |
+
+### New findings (attempt 06)
+
+| ID | Finding | Disposition |
+|----|---------|-------------|
+| F22 | Kanban migration tool pipeline inadequate for domain-specific adopters; agentic approach migrated 72 stories vs 0 | **FILED** → [FR-127](../../../fr-br/FR-127-agentic-kanban-migration-agent-replace-tool-pipeline.md) / [T31](T31-agentic-kanban-migration-agent-fr127.md) |
+| F23 | Zero-padded legacy epic filenames not recognised by `detect_existing_structure.py` | **FILED** → [BR-108](../../../fr-br/BR-108-detect-existing-structure-zero-padded-epic-names.md) / [T32](T32-detect-structure-zero-padded-epic-br108.md) |
+
+See SBL `…/attempt-06/feedback-package/kanban-migration-experiment-report.md` for full comparison.
+
+### Key SBL artifacts (attempt 06)
+
+| Artifact | Path |
+|----------|------|
+| FB cover | `…/attempt-06/feedback-package/SUBMISSION.md` |
+| Payload | `…/attempt-06/feedback-package/feedback-payload.json` |
+| Migration report | `…/attempt-06/feedback-package/kanban-migration-experiment-report.md` |
+| Kboard template (adopter) | `…/attempt-06/feedback-package/kboard-template-v3dot2.md` |
+| Kboard example (SBL) | `…/attempt-06/feedback-package/kboard-populated-example.md` |
+| Artifact manifest | `…/attempt-06/feedback-package/artifact-manifest.json` |
+| Sign-off | `…/attempt-06/signoff-report.json` |
+| AC13 sign-off transcript | `…/attempt-06/transcripts/20260610T194439Z-phase4-signoff.txt` |
+| Final sign-off transcript | `…/attempt-06/transcripts/20260611T094319Z-final-signoff.txt` |
+| Kanban v3.2 transcript | `…/attempt-06/transcripts/20260610T194420Z-phase3c-kanban-v3dot2.txt` |
+| Full workflow install | `…/attempt-06/transcripts/20260611T091104Z-install-all-workflows.txt` |
+
+---
+
 ## Program status & next steps
 
 | Priority | Item | Owner | Notes |
 |----------|------|-------|-------|
-| **P0** | SBL attempt 06 on **`v0.4.1140+2`** | Adopter + maintainer | Confirms F18–F21 fixes in SBL environment; closes AC13 |
-| **P1** | **F10** — orchestrator `--skip-kanban` / `use_kanban: false` | T26 / future task | Workaround: manual 4-step dual-tree sequence |
+| **P0** | ~~SBL attempt 06 FR-079 intake~~ | — | ✅ **ACCEPTED** @ 2026-06-11 — adopter sign-off final |
+| **P1** | **F22** — agentic migration agent | [T31](T31-agentic-kanban-migration-agent-fr127.md) | [FR-127](../../../fr-br/FR-127-agentic-kanban-migration-agent-replace-tool-pipeline.md) filed |
+| **P1** | **F23** — zero-padded epic detection | [T32](T32-detect-structure-zero-padded-epic-br108.md) | [BR-108](../../../fr-br/BR-108-detect-existing-structure-zero-padded-epic-names.md) filed |
+| **P1** | **F10** — orchestrator `--skip-kanban` / `use_kanban: false` | T26 / future task | Workaround: manual 4-step dual-tree sequence (still used in attempt 06) |
 | **P1** | **F20** — project-aware `version_file` default | T26 / future task | Workaround: pre-create `version_file` + `--config` |
 | **P2** | **F12–F14** — migration-test-bed documentation | T26 | RW defer → legacy restore → kanban → RW mode C |
-| **P2** | Legacy E/S/T → ADK v3.2 migration exercise | T26 | Unblocked post-T27; optional brownfield pass per FR-081 |
+| **P2** | SBL production RW on new scaffold | Adopter | First real release on `ai-dev-kit` branch post-install |
 
-**Program milestone:** Attempt 05 + T27–T30 establish a **viable v3.2 greenfield path** for SBL. Remaining work is **adopter replay confirmation** and **orchestrator ergonomics** (F10/F20), not catalog generation.
-
-### Key SBL artifacts (reference paths)
-
-| Artifact | Path |
-|----------|------|
-| FB cover | `…/attempt-05/feedback-package/SUBMISSION.md` |
-| Payload | `…/attempt-05/feedback-package/feedback-payload.json` |
-| Diary | `…/attempt-05/greenfield-install-diary.md` |
-| Kanban v3.2 transcript | `…/attempt-05/transcripts/20260610T183509Z-phase3c-kanban-v3dot2.txt` |
-| Sign-off transcript | `…/attempt-05/transcripts/20260610T183541Z-phase4-signoff.txt` |
-| RW bootstrap transcript | `…/attempt-05/transcripts/20260610T183451Z-phase3a-rw-bootstrap.txt` |
+**Program milestone:** Attempt 06 **adopter sign-off** closes the **SBL greenfield install program** — v3.2 path verified, full framework deployed, legacy kanban migrated, FR-079 accepted. Remaining upstream work: **F10/F20** ergonomics; **F22/F23** implementation via T31/T32; SBL operational RW releases on `ai-dev-kit` branch.
 
 ---
 
@@ -260,7 +299,7 @@ Child tasks under this program closed the attempt-05 residual backlog:
 - [x] Maintainer confirms fingerprint PASS on clean dry-run install (`tests/kanban/test_kanban_v32_fresh_install.py`)
 - [x] Adopter ran attempt 05 on **`v0.4.1133+2`** (`main` @ `0d278366`)
 - [x] Attempt-05 upstream residuals **F18–F21** closed via [T28](T28-v32-fresh-install-signoff-story-padding-br105.md)–[T30](T30-kanban-installer-log-epic-path-padding-br107.md) @ **v0.6.9.28+2**–**v0.6.9.30+2**
-- [ ] Adopter **attempt 06** replay on **`v0.4.1140+2`** (AC13)
+- [x] Adopter **attempt 06** replay on **`v0.4.1140+2`** (AC13) @ 2026-06-11
 
 ---
 
@@ -283,6 +322,8 @@ Child tasks under this program closed the attempt-05 residual backlog:
 | P2 | F21 | ✅ **CLOSED** @ [T30](T30-kanban-installer-log-epic-path-padding-br107.md) **v0.6.9.30+2** |
 | P1 | F20 | Project-aware `version_file` default (open; workaround exists) |
 | P1 | F12–F14 | Document migration-test-bed profile (RW defer → legacy restore → kanban → RW mode C) |
+| P1 | F22 | ✅ **FILED** → [FR-127](../../../fr-br/FR-127-agentic-kanban-migration-agent-replace-tool-pipeline.md) / [T31](T31-agentic-kanban-migration-agent-fr127.md) |
+| P1 | F23 | ✅ **FILED** → [BR-108](../../../fr-br/BR-108-detect-existing-structure-zero-padded-epic-names.md) / [T32](T32-detect-structure-zero-padded-epic-br108.md) |
 | P2 | F11/F16 | Post-install deferred-Kanban hint; clarify consumer layout vs v3.2 spec |
 | P2 | BR-086 | ✅ **CLOSED** via [T28](T28-v32-fresh-install-signoff-story-padding-br105.md) **v0.6.9.28+2** (F18 contract alignment) |
 
