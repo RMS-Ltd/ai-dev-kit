@@ -6,143 +6,142 @@ expires_at: null
 housekeeping_policy: keep
 ---
 
-# Feature Request: [Title]
+# Demande de fonctionnalité: [Titre]
 
-**Type:** Feature Request (FR)  
-**Submitted:** [YYYY-MM-DD]  
-**Submitted By:** [Name/Username]  
-**Priority:** [HIGH/MEDIUM/LOW]  
-**Status:** [PENDING/INTAKE/ACCEPTED/REJECTED/DEFERRED]
+**Type :** Demande de fonctionnalité (FR)  
+**Soumise:** [YYYY-MM-DD]  
+**Soumise por:** [Nom/Utilisateur]  
+**Priorité:** [HAUTE/MOYENNE/BASSE]  
+**État:** [EN ATTENTE/INTAKE/ACCEPTÉE/REJETÉE/DIFFÉRÉE]
 
 ---
 
-## Summary
+## Résumé
 
-[One sentence description of the requested feature.]
+[Description en una frase de la funcionalidad solicitada.]
 
 ---
 
 ## Description
 
-[Detailed description of the feature request. Include:]
-- What functionality is desired?
-- What problem does this solve?
-- What is the use case?
-- Who would benefit from this feature?
+[Description detallada de la solicitud de funcionalidad. Incluya:]
+- Quelle fonctionnalité est souhaitée ?
+- Quel problème cela résout-il ?
+- Quel est le cas d'usage ?
+- Qui bénéficierait de cette fonctionnalité ?
 
 ---
 
-## Requirements
+## Exigences
 
-### Functional Requirements
-- [ ] Requirement 1
-- [ ] Requirement 2
-- [ ] Requirement 3
+### Exigences funcionales
+- [ ] Requisito 1
+- [ ] Requisito 2
+- [ ] Requisito 3
 
-### Non-Functional Requirements
-- [ ] Performance considerations
-- [ ] Security considerations
-- [ ] Usability considerations
-- [ ] Compatibility considerations
+### Exigences no funcionales
+- [ ] Consideraciones de rendimiento
+- [ ] Consideraciones de seguridad
+- [ ] Consideraciones de usabilidad
+- [ ] Consideraciones de compatibilidad
 
 ---
 
-## Scope Analysis
+## Analyse du périmètre
 
-**Problem Domain:** [e.g., User Authentication, Data Processing, UI Components]  
-**Affected Areas:**
+**Domaine du problème:** [p. ex., autenticación de usuarios, procesamiento de datos, componentes de UI]  
+**Zones concernées:**
 - [ ] Backend/API
 - [ ] Frontend/UI
-- [ ] Database/Schema
+- [ ] Base de datos/esquema
 - [ ] Documentation
-- [ ] Testing
-- [ ] Other: [specify]
+- [ ] Pruebas
+- [ ] Otro: [especificar]
 
-**Estimated Complexity:**
-- [ ] Simple (1-3 days)
-- [ ] Medium (1 week)
-- [ ] Complex (2+ weeks)
-- [ ] Very Complex (1+ month)
-
----
-
-## Use Cases
-
-**Primary Use Case:**
-[Describe the main use case for this feature]
-
-**Additional Use Cases:**
-- Use case 1
-- Use case 2
+**Complexité estimée:**
+- [ ] Simple (1-3 días)
+- [ ] Media (1 semana)
+- [ ] Compleja (2+ semanas)
+- [ ] Muy compleja (1+ mes)
 
 ---
 
-## Acceptance Criteria
+## Cas d'usage
 
-- [ ] Criterion 1: [Specific, testable criterion]
-- [ ] Criterion 2: [Specific, testable criterion]
-- [ ] Criterion 3: [Specific, testable criterion]
+**Cas d'usage principal:**
+[Describa el caso de uso principal de esta funcionalidad]
 
----
-
-## Dependencies
-
-**Blocks:**
-- [What this FR blocks]
-
-**Blocked By:**
-- [What blocks this FR]
-
-**Related Work:**
-- [Related FRs, Stories, Tasks, or Epics]
+**Cas d'usage adicionales:**
+- Caso de uso 1
+- Caso de uso 2
 
 ---
 
-## Intake Decision
+## Critères d'acceptation
 
-**Intake Status:** [PENDING/INTAKE/ACCEPTED/REJECTED/DEFERRED]  
-**Intake Date:** [YYYY-MM-DD]  
-**Intake By:** [Name/Username]
+- [ ] Critère 1 : [Criterio específico y verificable]
+- [ ] Critère 2 : [Criterio específico y verificable]
+- [ ] Critère 3 : [Criterio específico y verificable]
 
-**Decision Flow Results:**
-- [ ] Story Match Found: [Epic X, Story Y] → Task [T]
-- [ ] New Story Created: [Epic X, Story Y] → Task 1
-- [ ] New Epic Created: [Epic X, Story 1, Task 1]
+---
 
-**Assigned To:**
-- Epic: [Epic number and name]
-- Story: [Story number and name]
-- Task: [Task number and name]
+## Dépendances
+
+**Bloquea:**
+- [Ce que cette FR bloque]
+
+**Bloqueada por:**
+- [Ce que cette FR bloque]
+
+**Travail connexe:**
+- [FR, Stories, Tasks o Epics relacionados]
+
+---
+
+## Décision d'intake
+
+**État d'intake:** [EN ATTENTE/INTAKE/ACCEPTÉE/REJETÉE/DIFFÉRÉE]  
+**Date d'intake:** [YYYY-MM-DD]  
+**Intake par:** [Nom/Utilisateur]
+
+**Résultats du flux de décision:**
+- [ ] Story coincidente encontrada: [Epic X, Story Y] → Task [T]
+- [ ] Nueva Story creada: [Epic X, Story Y] → Task 1
+- [ ] Nuevo Epic creado: [Epic X, Story 1, Task 1]
+
+**Assigné à:**
+- Epic: [Numéro et nom de l'Epic]
+- Story: [Numéro et nom de la Story]
+- Task: [Numéro et nom de la tâche]
 - Version: `[RC.EPIC.STORY.TASK+BUILD]`
 
-**Kanban Links:**
+**Liens Kanban:**
 - Epic: [`docs/project-management/kanban/epics/Epic-X/Epic-X.md`](path/to/Epic-X.md)
 - Story: [`docs/project-management/kanban/epics/Epic-X/Story-XXX-*.md`](path/to/Story.md)
-- Task: [Link to Task in Story document]
+- Task: [Lien vers la tâche dans le document Story]
 
 ---
 
 ## Notes
 
-[Additional notes, context, or considerations]
+[Notes adicionales, contexto o consideraciones]
 
 ---
 
-## References
+## Références
 
-- [Related documentation, specs, diagrams, external resources]
-
----
-
-**Template Usage:**
-**Locale (en-GB):** Use UK English in instructional prose (colour, organise, realise, centre).
-
-- Copy this template when creating a new Feature Request
-- Fill in all relevant sections
-- Use the "Intake Decision" section to track the FR/BR → Task → Story → Epic conversion
-- Link to the created Task/Story/Epic for traceability
+- [Documentation, especificaciones, diagramas o recursos externos relacionados]
 
 ---
 
-_This template is part of the Kanban Framework. See `packages/frameworks/kanban/` for complete framework documentation._
+**Utilisation du modèle :**
+**Localisation (fr) :** Utilisez un français technique neutre dans la prose instructive.
 
+- Copiez ce modèle lors de la création d'un una nouvelle demande de fonctionnalité
+- Remplissez toutes les sections pertinentes
+- Utilisez la section «Décision d'intake» pour suivre la conversion FR/BR → Task → Story → Epic
+- Liez la tâche/Story/Epic creada pour la traçabilité
+
+---
+
+_Ce modèle fait partie du Kanban Framework. Consultezz `packages/frameworks/kanban/` pour la documentation complète du framework._

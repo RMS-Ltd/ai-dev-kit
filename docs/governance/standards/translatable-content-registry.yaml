@@ -15,7 +15,7 @@ scaffold_locales:
   fr:
     owner_story: E21:S05:T02
     scaffold_status: complete
-    linguistic_status: pending
+    linguistic_status: complete
   de:
     owner_story: E21:S05:T03
     scaffold_status: complete

@@ -6,170 +6,170 @@ expires_at: null
 housekeeping_policy: keep
 ---
 
-# E{epic}:S{story}:T{task} — Planning: Spec, Tests, Implementation Plan (IPW)
+# E{epic}:S{story}:T{task} — Planificación: especificación, pruebas, plan de implementación (IPW)
 
 **Host Task:** [`T{task}-[slug].md`](T{task}-[slug].md) **(E{epic}:S{story}:T{task})**  
-**Planning for:** [FR-XXX](../../../fr-br/FR-XXX-*.md) *(if applicable)*  
-**Status:** Draft | Review | Approved
+**Planificación para:** [FR-XXX](../../../fr-br/FR-XXX-*.md) *(si aplica)*  
+**État:** Borrador | Revisión | Aprobado
 
-> **IPW (Implementation Planning Workflow):** Use this template when running **IPW** / **IPW E:S:T**. The **Host Task** link and bidirectional wiring to the task doc **Input** and **References** are **mandatory** before the plan is complete (see project **FR-042** — *Implementation Planning Workflow* in `docs/project-management/kanban/fr-br/`).
+> **IPW (Implementation Planning Workflow):** Use esta plantilla al ejecutar **IPW** / **IPW E:S:T**. El enlace **Host Task** y el cableado bidireccional con el documento de task en **Entrées** y **Références** son **obligatorios** antes de que el plan esté completo (consultez **FR-042** — *Implementation Planning Workflow* en `docs/project-management/kanban/fr-br/`).
 
 ---
 
-## 1. Requirements (Ascertained Baseline)
+## 1. Exigences (línea base determinada)
 
-### 1.1 Functional requirements (ascertained)
+### 1.1 Exigences funcionales (determinados)
 
-| ID | Requirement | Source (FR/BR/Task) |
+| ID | Requisito | Fuente (FR/BR/Task) |
 | -- | ----------- | ------------------- |
 | RF1 | … | … |
 
-### 1.2 Non-functional requirements (ascertained)
+### 1.2 Exigences no funcionales (determinados)
 
-| ID | Requirement | Source (FR/BR/Task) |
+| ID | Requisito | Fuente (FR/BR/Task) |
 | -- | ----------- | ------------------- |
 | RNF1 | … | … |
 
-### 1.3 Invariants and boundaries
+### 1.3 Invariantes y límites
 
-- **Invariants:** …
-- **In scope:** …
-- **Out of scope:** …
+- **Invariantes:** …
+- **En alcance:** …
+- **Fuera de alcance:** …
 
 ---
 
-## 2. Specification
+## 2. Especificación
 
-### 2.1 Goal
+### 2.1 Objetivo
 
-[One paragraph: what outcome this plan enables.]
+[Un párrafo: qué resultado habilita este plan.]
 
-### 2.2 Specification mapping from ascertained requirements
+### 2.2 Mapeo de especificación desde requisitos determinados
 
-Describe how the specification formalizes the requirements baseline above.
+Describa cómo la especificación formaliza la línea base de requisitos anterior.
 
-### 2.3 Constraints
+### 2.3 Restricciones
 
 - …
 
-### 2.4 Status transition intent (mandatory for IPW-derived implementation tasks)
+### 2.4 Intención de transición de estado (obligatorio para tasks derivadas de IPW)
 
-- **Current task status:** TODO | IN PROGRESS | COMPLETE
-- **Transition trigger to IN PROGRESS:** First non-planning implementation change lands.
-- **Transition trigger to COMPLETE:** Acceptance evidence is recorded (tests/verification notes linked).
-- **Atomic propagation requirement:** Task doc status and kboard row status must update in the same change set/session.
-- **Owner:** Implementation execution step (not planning-only IPW creation).
+- **État actual de la task:** TODO | IN PROGRESS | COMPLETE
+- **Disparador de transición a IN PROGRESS:** Primer cambio de implementación no planificador.
+- **Disparador de transición a COMPLETE:** Evidencia de aceptación registrada (pruebas/notas de verificación enlazadas).
+- **Requisito de propagación atómica:** El estado del documento Task y el estado de la fila en kboard deben actualizarse en el mismo conjunto de cambios/sesión.
+- **Responsable:** Paso de ejecución de implementación (no la creación planificadora de IPW).
 
-### 2.5 ADR necessity decision (mandatory — IPW Phase 5.0)
+### 2.5 Decisión de necesidad de ADR (obligatorio — IPW Fase 5.0)
 
-Score each trigger **Y** or **N** with one-line evidence. Criteria: [`ipw-adr-necessity-checklist.md`](../../../docs/architecture/standards-and-adrs/ipw-adr-necessity-checklist.md) (FR-100).
+Califique cada disparador **Y** o **N** con evidencia de una línea. Criterios: [`ipw-adr-necessity-checklist.md`](../../../docs/architecture/standards-and-adrs/ipw-adr-necessity-checklist.md) (FR-100).
 
-| ID | Trigger | Y/N | Evidence |
+| ID | Disparador | Y/N | Evidencia |
 | -- | ------- | --- | -------- |
-| T1 | Alternatives | | |
-| T2 | Reversibility | | |
-| T3 | Blast radius | | |
-| T4 | Precedent | | |
-| T5 | Constraint trade-off | | |
-| T6 | Governance contract | | |
-| T7 | Supersedes | | |
+| T1 | Alternativas | | |
+| T2 | Reversibilidad | | |
+| T3 | Radio de impacto | | |
+| T4 | Précèdente | | |
+| T5 | Compromiso de restricciones | | |
+| T6 | Contrato de gobernanza | | |
+| T7 | Supersede | | |
 
-**Outcome:** `REQUIRED` | `EXEMPT` | `ALREADY_COVERED` (link existing ADR)
+**Résultat:** `REQUIRED` | `EXEMPT` | `ALREADY_COVERED` (enlace al ADR existente)
 
-If **REQUIRED:** §5 must include ADR `CREATE` or `UPDATE` before Phase 5 doc inventory completes.
+Si **REQUIRED:** §5 debe incluir ADR `CREATE` o `UPDATE` antes de que el inventario de documentos de la Fase 5 se complete.
 
-If **EXEMPT:** all T1–T7 = N and E1–E5 pass (see checklist policy); record §5.3 governing-doc citation.
+Si **EXEMPT:** todos T1–T7 = N y E1–E5 pasan (consultez la política de la checklist); registre la cita del documento rector en §5.3.
 
-| ID | Exemption (only if all T = N) | Pass? | Evidence |
+| ID | Exención (solo si todos T = N) | ¿Pasa? | Evidencia |
 | -- | --------------------------- | ----- | -------- |
-| E1 | Single locus | | |
-| E2 | No new options | | |
-| E3 | Reversible in one task | | |
-| E4 | Spec elsewhere | | |
-| E5 | Documented NONE | | |
+| E1 | Locus único | | |
+| E2 | Sin nuevas opciones | | |
+| E3 | Reversible en una task | | |
+| E4 | Especificación en otro lugar | | |
+| E5 | NONE documentado | | |
 
 ---
 
-## 3. Test design
+## 3. Diseño de pruebas
 
-| ID | Behavior / layer | Expected check |
+| ID | Comportamiento / capa | Comprobación esperada |
 | -- | ---------------- | -------------- |
 | T1 | … | … |
 
 ---
 
-## 4. Implementation plan
+## 4. Plan de implementación
 
-| Step | Action | Deliverable |
+| Paso | Acción | Livrable |
 | ---- | ------ | ----------- |
-| **1** | **[MANDATORY] Transition task `E{epic}:S{story}:T{task}` status `TODO → IN PROGRESS`** in task doc. Update `Last updated` date. | Task doc `Status` = `IN PROGRESS` |
+| **1** | **[OBLIGATORIO] Transicionar el estado de la task `E{epic}:S{story}:T{task}` de `TODO → IN PROGRESS`** en el documento task. Actualizar la fecha `Dernière mise à jour`. | `Status` del documento task = `IN PROGRESS` |
 | … | … | … |
-| **N** | **[MANDATORY] Reconcile task `E{epic}:S{story}:T{task}` status** to actual implementation state: `COMPLETE` + `✅ COMPLETE (v{version})` if all ACs satisfied; `IN PROGRESS` if ongoing; `BLOCKED` + reason if blocked. Update `Last updated`. | Task doc status reflects actual state |
+| **N** | **[OBLIGATORIO] Reconciliar el estado de la task `E{epic}:S{story}:T{task}`** con el estado real de implementación: `COMPLETE` + `✅ COMPLETE (v{version})` si se cumplen todos los CA; `IN PROGRESS` si está en curso; `BLOCKED` + razón si está bloqueada. Actualizar `Dernière mise à jour`. | El estado del documento task refleja el estado real |
 
-**RW verification / FBU wave rule (BR-097):** Any post-ship verification or FBU-closure step in §4 must prescribe **`RW E{epic}:S{story}:T{task} --art`** only. Do **not** prescribe `--doc-policy-zero` for follow-on releases after a tagged BUILD.
+**Regla RW de verificación / ola FBU (BR-097):** Cualquier paso de verificación post-envío o cierre FBU en §4 debe prescribir **`RW E{epic}:S{story}:T{task} --art`** únicamente. No prescriba `--doc-policy-zero` para releases de seguimiento tras un BUILD etiquetado.
 
-### 4.1 Files to create or modify
+### 4.1 Archivos a crear o modificar
 
 - …
 
-### 4.2 Dependency order
+### 4.2 Orden de dependencias
 
 1. …
 
-### 4.3 Documentation implementation steps (optional)
+### 4.3 Pasos de implementación de documentación (facultatif)
 
-Ordered doc work during implementation (derived from §5–§6), e.g. update KB guide before user docs.
+Trabajo documental ordenado durante la implementación (derivado de §5–§6), p. ex. actualizar la guía KB antes que la documentación de usuario.
 
 ---
 
-## 5. Documentation deliverables
+## 5. Livrables de documentación
 
-*Populated in IPW Phase 5 — after implementation planning, before housing.*
+*Completado en IPW Fase 5 — tras la planificación de implementación, antes del alojamiento.*
 
-### 5.1 Existing documents to update
+### 5.1 Documentos existentes a actualizar
 
-| Doc ID | Path | Scope of change | Tied to (RF/T/impl step) |
+| Doc ID | Ruta | Périmètre del cambio | Vinculado a (RF/T/paso impl) |
 | ------ | ---- | --------------- | ------------------------ |
 | D-U1 | … | … | … |
 
-### 5.2 New documents to create
+### 5.2 Documentos nuevos a crear
 
-| Doc ID | Proposed path (draft) | Purpose | Tied to (RF/T/impl step) |
+| Doc ID | Ruta propuesta (borrador) | Propósito | Vinculado a (RF/T/paso impl) |
 | ------ | --------------------- | ------- | ------------------------ |
 | D-C1 | … | … | … |
 
-### 5.3 Documentation gaps and explicit non-changes
+### 5.3 Brechas documentales y no-cambios explícitos
 
-| Gap / topic | Resolution (CREATE row above, or NONE + reason) |
+| Brecha / tema | Resolución (fila CREATE arriba, o NONE + razón) |
 | ----------- | ----------------------------------------------- |
 | … | … |
 
 ---
 
-## 6. Documentation housing
+## 6. Alojamiento de documentación
 
-*Populated in IPW Phase 6 — canonical paths and publication intent.*
+*Completado en IPW Fase 6 — rutas canónicas e intención de publicación.*
 
-| Doc ID | Canonical path | Publication status | Publication N/A reason (if N/A) | Lifecycle | Inbound links to add |
+| Doc ID | Ruta canónica | État de publicación | Razón N/A de publicación (si N/A) | Ciclo de vida | Enlaces entrantes a añadir |
 | ------ | -------------- | ------------------ | ------------------------------- | --------- | -------------------- |
 | D-U1 | … | PUBLISHED \| NOT_APPLICABLE | … | evergreen \| … | … |
 
-**Housing rules:** One authoritative doc per topic; prefer updating an existing doc over creating a duplicate; IPP lives under `docs/implementation-cycles/`; Docusaurus surfaces per BR-066.
+**Reglas de alojamiento:** Un documento autoritativo por tema; prefiera actualizar un documento existente antes que crear un duplicado; el IPP vive bajo `docs/implementation-cycles/`; superficies Docusaurus según BR-066.
 
 ---
 
-## 7. Success / verification criteria
+## 7. Criterios de éxito / verificación
 
 - [ ] …
-- [ ] All §5 UPDATE/CREATE items implemented or explicitly deferred with reason
-- [ ] All §6 `PUBLISHED` paths exist and are linked from task doc (or validator passes)
+- [ ] Todos los elementos UPDATE/CREATE de §5 implementados o diferidos explícitamente con razón
+- [ ] Todas las rutas `PUBLISHED` de §6 existen y están enlazadas desde el documento task (o el validador pasa)
 
 ---
 
-## References
+## Références
 
 - …
 
 ---
 
-**Locale (en-GB):** Use UK English in instructional prose (colour, organise, realise, centre).
+**Localisation (fr) :** Utilisez un français technique neutre dans la prose instructive.

@@ -1,3 +1,3 @@
-version_file not created at {{version_rel}}. Create it before running RW, for example:
+version_file n'a pas été créé dans {{version_rel}}. Créez-le avant d'exécuter RW, par exemple :
   mkdir -p {{parent}}
-  # Add VERSION_* constants per dev-kit versioning policy, then re-run the installer (UK English: organise, colour)
+  # Ajoutez les constantes VERSION_* selon la politique de versionnement dev-kit et relancez l'installateur
