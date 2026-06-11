@@ -12,8 +12,8 @@ housekeeping_policy: keep
 **Priority:** MEDIUM  
 **Estimated Effort:** [TBD]  
 **Created:** 2025-12-03  
-**Last updated:** 2026-06-11 (FR-128 intake — T12 filed)
-**Version:** v0.2.3.10+1
+**Last updated:** 2026-06-11 (v0.2.3.12+1 – Kanban documentation setup)
+**Version:** v0.2.3.12+1
 **Code:** E2S03
 
 ---

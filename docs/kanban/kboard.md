@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Board
 
-**Last Updated:** 2026-06-11 (RW: E02:S03:T12)
-**Version:** v0.2.3.12+1
+**Last Updated:** 2026-06-11 (RW: E06:S09:T33+2)
+**Version:** v0.6.9.33+2
 
 **Active board contract:** **Sole active MoSCOW board** ([ADR-018](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/architecture/standards-and-adrs/ADR-018-single-kanban-board-consolidation.md)). Rows are **live work** (TODO / IN PROGRESS / OPEN / WAITING / PERPETUAL) plus filed **Could Have** backlog. **Verification (V)** band holds task-shipped / FBU-open items (`⏳ WAITING`). Remove **terminal** rows and archive prose (use [`kanban-completed.md`](kanban-completed.md) / [`intake-completed.md`](intake-completed.md)).
 
@@ -24,6 +24,7 @@ housekeeping_policy: keep
 ## MoSCOW Prioritized In-Progress Tasks
 
 ### Must Have (M) - Critical Tasks
+
 
 ### Should Have (S) - Important Tasks
 
@@ -41,6 +42,8 @@ housekeeping_policy: keep
 ### Verification (V) - Task Shipped, FBU Verification Pending
 
 - **E02:S03:T12** – Environment-aware workflow execution (FR-128) - ⏳ SHIPPED (HIGH — **v0.2.3.12+1**; AC1–AC7 runtime verify pending) | [Task](epics/epic-02/story-03-additional-workflows-and-examples/T12-environment-aware-workflow-execution-fr128.md) | [FR-128](fr-br/FR-128-environment-aware-workflow-execution-fr128.md) | [—IPP—](../../implementation-cycles/IPP-E02S03T12-environment-aware-workflow-execution-fr128.md) | Last modified: 2026-06-11 10:49 UTC
+
+- **E06:S09:T33** – ADK package update mechanism (FR-129) - ⏳ SHIPPED (**Must Have** — **v0.6.9.33+2**; SBL AC1 validated; host scaffold merge pending) | [Task](epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T33-adk-package-update-mechanism-fr129.md) | [FR-129](fr-br/FR-129-adk-package-update-mechanism-fr129.md) | [—IPP—](../../implementation-cycles/IPP-E06S09T33-adk-package-update-mechanism-fr129.md) | Last modified: 2026-06-11 11:16 UTC
 
 #### Epic 21 (E21) — full inventory: shipped (32 tasks)
 
