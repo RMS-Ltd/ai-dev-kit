@@ -8,11 +8,11 @@ housekeeping_policy: keep
 
 # Story 003 – Additional Workflows & Examples
 
-**Status:** COMPLETE (T10/T11 shipped @ v0.2.3.10+1)  
+**Status:** IN PROGRESS (T12 — FR-128 environment-aware workflow execution)  
 **Priority:** MEDIUM  
 **Estimated Effort:** [TBD]  
 **Created:** 2025-12-03  
-**Last updated:** 2026-06-10 (v0.2.3.10+1 – Kanban documentation setup)
+**Last updated:** 2026-06-11 (FR-128 intake — T12 filed)
 **Version:** v0.2.3.10+1
 **Code:** E2S03
 
@@ -58,6 +58,8 @@ Provide additional workflow examples that:
 - [x] **E02:S03:T10 – Workflow encapsulation integrity audit (MWF leverage) (FR-126)** — ✅ COMPLETE (**v0.2.3.10+1**) — [Task](story-03-additional-workflows-and-examples/T10-workflow-encapsulation-integrity-mwf-fr126.md) | [FR-126](../../fr-br/FR-126-workflow-encapsulation-integrity-mwf-fr126.md) | [IPP](../../implementation-cycles/IPP-E02S03T10-workflow-encapsulation-integrity-mwf-fr126.md)
 
 - [x] **E02:S03:T11 – MWF sub-agent leg delegation (BR-102)** — ✅ COMPLETE (fix @ **v0.2.3.10+1**) — [Task](story-03-additional-workflows-and-examples/T11-mwf-subagent-leg-delegation-br102.md) | [BR-102](../../fr-br/BR-102-mwf-chain-paused-instead-of-subagent-leg-delegation.md) | —No IPP—
+
+- [x] **E02:S03:T12 – Environment-aware workflow execution (FR-128)** — ✅ COMPLETE (**v0.2.3.12+1**) — [Task](story-03-additional-workflows-and-examples/T12-environment-aware-workflow-execution-fr128.md) | [FR-128](../../fr-br/FR-128-environment-aware-workflow-execution.md) | [—IPP—](../../implementation-cycles/IPP-E02S03T12-environment-aware-workflow-execution-fr128.md)
 
 ---
 

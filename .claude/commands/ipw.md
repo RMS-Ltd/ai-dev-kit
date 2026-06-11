@@ -6,14 +6,33 @@
 
 ---
 
-## Plan Mode Check (MANDATORY FIRST)
+## Environment & Mode Check (MANDATORY FIRST)
 
-IPW is a **planning-only** workflow. It **MUST** run in plan mode.
+IPW is a **planning-only** workflow. Gate on **detected runtime** — not a single-environment assumption (FR-128).
 
-Check whether plan mode is active in this session (a plan mode system-reminder will be present in your context):
+**Detect runtime** (honour `WORKFLOW_ENV` override first):
 
-- If plan mode is **NOT** active: respond with **`IPW BLOCKED: plan mode required. Type /plan to enter plan mode, then invoke /ipw again from within the plan session.`** — do not proceed further.
-- If plan mode **IS** active: proceed to Environment Check.
+| Signal | Runtime |
+| ------ | ------- |
+| `WORKFLOW_ENV=cursor` (or probe: `CURSOR_MODE` / `TERM_PROGRAM=cursor`) | **Cursor** |
+| `WORKFLOW_ENV=claude-code` (or probe: `CLAUDE_CODE` / claude in argv) | **Claude Code** |
+| `WORKFLOW_ENV=opencode` (or probe: `OPENCODE`) | **OpenCode** |
+| None matched | **unknown** |
+
+**Mode gate per runtime:**
+
+| Runtime | Plan mode active? | Action |
+| ------- | ----------------- | ------ |
+| **Cursor** | `CURSOR_MODE=plan` | Proceed to Environment Check |
+| **Cursor** | `CURSOR_MODE=agent` or unset | **`IPW BLOCKED: plan mode required. Switch to plan mode and retry.`** |
+| **Claude Code** | `/plan` session or `PLANNING_MODE=true` | Proceed |
+| **Claude Code** | otherwise | **`IPW BLOCKED: plan mode required. Type /plan to enter plan mode, then invoke /ipw again.`** |
+| **OpenCode** | N/A (no native plan mode) | **Sub-agent delegation (preferred):** spawn Task sub-agent with `PLANNING_MODE=true` and prompt: `Execute IPW for {E:S:T} per .claude/commands/ipw.md. Produce IPP under docs/implementation-cycles/. Wire IPP to host task. End with IPW COMPLETE or IPW ABORTED.` Await result; do not inline IPW in parent. If sub-agent spawn unavailable → **`IPW BLOCKED: plan mode unavailable in OpenCode. Use MWF E:S:T delivery or run IPW in Cursor plan mode / Claude Code /plan.`** |
+| **unknown** | N/A | **`IPW BLOCKED: environment not recognised. Set WORKFLOW_ENV to cursor, claude-code, or opencode; or run in a supported agent runtime.`** |
+
+**MWF orchestration:** When IPW is Leg 1 of MWF, parent session plan mode is **not** required — delegate per [BR-102](docs/kanban/fr-br/BR-102-mwf-chain-paused-instead-of-subagent-leg-delegation.md) / [mwf.md](mwf.md).
+
+**Python helper:** `packages/frameworks/workflow-mgt/scripts/icw/workflow_env.py` — `WorkflowEnvironment.detect()`, `is_plan_session()`, `can_spawn_subagent()`.
 
 ---
 

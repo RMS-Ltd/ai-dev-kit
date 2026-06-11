@@ -139,6 +139,13 @@ workflow_registry:
       encapsulation_status: delegatable
       command_guide: ".claude/commands/ipw.md"
       terminal_states: ["IPW COMPLETE", "IPW ABORTED"]
+      mode_requirement:
+        plan: true
+        plan_alternative: subagent
+        environments:
+          cursor: plan_mode_required
+          claude-code: plan_mode_required
+          opencode: subagent_only
       description: "Planning workflow (spec, test design, impl plan). Canonical Cursor/agent trigger is IPW (Implementation Planning Workflow, FR-042 / E5:S01:T42). ICW is a deprecated alias — same steps. See KB vwmp implementation-planning-workflow-agent-execution.md."
       directory: "implementation-cycle-workflow/"
       main_file: "icw-workflow.yaml"
@@ -153,6 +160,12 @@ workflow_registry:
       encapsulation_status: delegatable
       command_guide: ".claude/commands/idw.md"
       terminal_states: ["IDW COMPLETE", "IDW ABORTED"]
+      mode_requirement:
+        plan: false
+        environments:
+          cursor: impl_mode_required
+          claude-code: impl_mode_required
+          opencode: always_allowed
       description: "Implementation execution against linked IPP/ICW (tests, code, docs, task status). Optional --rw chain to RW after IDW COMPLETE. See KB vwmp implementation-delivery-workflow-agent-execution.md."
       directory: "implementation-delivery-workflow/"
       main_file: "idw-workflow.yaml"
@@ -168,6 +181,14 @@ workflow_registry:
       encapsulation_status: partial
       command_guide: ".claude/commands/mwf.md"
       terminal_states: ["MWF COMPLETE", "MWF CHAIN PAUSED", "MWF ABORTED (leg: IPW)", "MWF ABORTED (leg: IDW)", "MWF ABORTED (leg: RW)"]
+      mode_requirement:
+        plan: false
+        orchestration: continuous
+        leg_delegation: subagent_when_mode_mismatch
+        environments:
+          cursor: parent_impl_delegates_ipw
+          claude-code: parent_impl_delegates_ipw
+          opencode: subagent_ipw_inline_idw
       description: "Composite workflow orchestration (v1 delivery: IPW → IDW --rw; BR-102 sub-agent delegation). See KB vwmp meta-workflow-agent-execution.md."
       directory: "meta-workflow/"
       main_file: "mwf-workflow.yaml"

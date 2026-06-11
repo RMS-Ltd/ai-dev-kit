@@ -13,6 +13,8 @@ Confirm Bash/tool execution is available in this session.
 - If Bash tool calls are **NOT** available: respond with **`MWF BLOCKED: tool execution is unavailable in this session. Switch to a session with tool access and retry.`** — do not proceed further.
 - If Bash tool calls **ARE** available: proceed to Argument Parsing.
 
+**Runtime detection (FR-128):** MWF does **not** require parent plan mode. Use `packages/frameworks/workflow-mgt/scripts/icw/workflow_env.py` (`WorkflowEnvironment.detect()`, `can_spawn_subagent()`) when logging orchestration context. Leg 1 IPW delegates via sub-agent when parent lacks plan mode (OpenCode, Cursor agent mode, Claude Code outside `/plan`).
+
 ---
 
 ## Argument Parsing

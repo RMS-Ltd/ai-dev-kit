@@ -100,9 +100,7 @@ Examples of plain-text triggers that MUST invoke the IPW engine:
 
 **Preferred invocation (more reliable):** Use the `/ipw` slash command — e.g. `/ipw E2:S16:T09`. The command file at `.claude/commands/ipw.md` contains the full execution instructions.
 
-**CRITICAL:** IPW **MUST** run in plan mode. If not already in plan mode, respond with:
-
-> **IPW BLOCKED: plan mode required. Type `/plan` to enter plan mode, then invoke `/ipw` again from within the plan session.**
+**CRITICAL — environment-aware mode gate (FR-128):** Apply `.claude/commands/ipw.md` §Environment & Mode Check — detect runtime (Cursor / Claude Code / OpenCode / unknown) and gate per environment. Claude Code outside `/plan`: **`IPW BLOCKED: plan mode required. Type /plan to enter plan mode, then invoke /ipw again.`** Cursor outside plan mode: switch to plan mode. OpenCode: delegate IPW to sub-agent with `PLANNING_MODE=true`, or suggest `MWF E:S:T delivery`. See `packages/frameworks/workflow-mgt/scripts/icw/workflow_env.py`.
 
 ### IPW blocked session (AC3)
 
@@ -129,7 +127,7 @@ Examples of plain-text triggers that MUST invoke the IDW engine:
 
 **Preferred invocation (more reliable):** Use the `/idw` slash command — e.g. `/idw E2:S16:T09 --rw`. The command file at `.claude/commands/idw.md` contains the full execution instructions.
 
-**CRITICAL:** IDW **MUST NOT** run in plan mode. If plan mode is active, respond with:
+**CRITICAL — environment-aware mode gate (FR-128):** Apply `.claude/commands/idw.md` §Environment & Mode Check — block plan mode in Cursor/Claude Code; OpenCode always allowed. If plan mode is active in Claude Code:
 
 > **IDW BLOCKED: plan mode is active. Exit plan mode, then invoke /idw again from an implementation session.**
 

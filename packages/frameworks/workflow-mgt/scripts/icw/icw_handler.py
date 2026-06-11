@@ -36,27 +36,10 @@ class ICWHandler:
         self.task_context = None
         
     def _detect_execution_mode(self) -> str:
-        """Detect if running in planning mode or implementation mode"""
-        # Check for planning mode indicators
-        planning_indicators = [
-            os.environ.get('PLANNING_MODE', '').lower() == 'true',
-        ]
-        
-        # Check for implementation mode indicators  
-        impl_indicators = [
-            os.environ.get('IMPLEMENTATION_MODE', '').lower() == 'true',
-        ]
-        
-        # Only use explicit environment variables for mode detection
-        # Avoid path-based detection which can be unreliable
-        
-        if any(planning_indicators):
-            return 'planning'
-        elif any(impl_indicators):
-            return 'implementation'
-        else:
-            # Default to requiring planning mode
-            return 'unknown'
+        """Detect if running in planning mode or implementation mode."""
+        from workflow_env import WorkflowEnvironment
+
+        return WorkflowEnvironment.execution_mode()
         
     def parse_task_identifier(self, task_id: str) -> Dict[str, int]:
         """Parse task identifier into Epic/Story/Task components

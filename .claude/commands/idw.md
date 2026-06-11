@@ -6,12 +6,26 @@
 
 ---
 
-## Mode Check (MANDATORY FIRST)
+## Environment & Mode Check (MANDATORY FIRST)
 
-IDW is an **implementation** workflow. It **MUST NOT** run in plan mode.
+IDW is an **implementation** workflow. Gate on **detected runtime** (FR-128) — inverted from IPW.
 
-- If plan mode **IS** active: respond with **`IDW BLOCKED: plan mode is active. Exit plan mode, then invoke /idw again from an implementation session.`** — do not proceed.
-- If plan mode is **NOT** active: proceed to Environment Check.
+**Detect runtime** (same probes as [ipw.md](ipw.md) §Environment & Mode Check; honour `WORKFLOW_ENV` override).
+
+**Mode gate per runtime:**
+
+| Runtime | Plan mode active? | Action |
+| ------- | ----------------- | ------ |
+| **Cursor** | `CURSOR_MODE=plan` | **`IDW BLOCKED: plan mode is active. Switch to agent/implementation mode and retry.`** |
+| **Cursor** | agent/unset | Proceed to Environment Check |
+| **Claude Code** | `/plan` session or `PLANNING_MODE=true` | **`IDW BLOCKED: plan mode is active. Exit plan mode, then invoke /idw again.`** |
+| **Claude Code** | otherwise | Proceed |
+| **OpenCode** | N/A | Proceed inline (always implementation context) |
+| **unknown** | N/A | Proceed if `IMPLEMENTATION_MODE=true`; else **`IDW BLOCKED: environment not recognised. Set WORKFLOW_ENV or IMPLEMENTATION_MODE=true.`** |
+
+**MWF orchestration:** Leg 2 runs in parent implementation session after IPW Leg 1 — no operator mode switch required ([BR-102](docs/kanban/fr-br/BR-102-mwf-chain-paused-instead-of-subagent-leg-delegation.md)).
+
+**Python helper:** `packages/frameworks/workflow-mgt/scripts/icw/workflow_env.py`.
 
 ---
 

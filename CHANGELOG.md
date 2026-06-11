@@ -11,8 +11,8 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
-## [0.4.19.13+1] - 11-06-26
+## [0.2.3.12+1] - 11-06-26
 
-E04:S19:T13 — kboard v3.2 packaged template (UXR-028). SemVer **v0.4.1143+1**.
+E02:S03:T12 — Environment-aware workflow execution (FR-128). SemVer **v0.4.1144+1**.
 
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.4.19.13+1.md)
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.3.12+1.md)
