@@ -178,7 +178,29 @@ python3 vendor/ai-dev-kit/packages/frameworks/workflow-mgt/scripts/verify_vendor
 
 5. **Legacy sparse path:** `git sparse-checkout set packages/frameworks` still works on older tags; prefer `greenfield-install/` on current tags.
 
-6. **Update upstream:** `cd vendor/ai-dev-kit && git fetch --tags && git checkout tags/v0.4.1063` (use [latest release](https://github.com/RMS-Ltd/ai-dev-kit/releases)); for registry pins, `docker pull ghcr.io/rms-ltd/ai-dev-kit-greenfield:v0.4.1063` (or newer SemVer core). Re-download and verify the matching `.sha256` when using tarballs.
+6. **Update upstream (productized — FR-129):** Prefer the update command over manual tag checkout when your project has `.ai-dev-kit.yaml`:
+
+   ```bash
+   # Bootstrap manifest after first install (once)
+   python vendor/ai-dev-kit/packages/frameworks/workflow-mgt/scripts/update_adk_packages.py \
+     init-manifest --channel git --target-tag v0.4.1144
+
+   # Check for a newer release
+   python vendor/ai-dev-kit/packages/frameworks/workflow-mgt/scripts/update_adk_packages.py \
+     check --target-tag v0.4.1144+1
+
+   # Git vendor submodule: fetch + checkout tag (vendor packages only; host scaffold unchanged)
+   python vendor/ai-dev-kit/packages/frameworks/workflow-mgt/scripts/update_adk_packages.py \
+     update --target-tag v0.4.1144+1
+
+   # Tarball / CI fixture path: sync from a fresh vendor tree without git
+   python vendor/ai-dev-kit/packages/frameworks/workflow-mgt/scripts/update_adk_packages.py \
+     update --target-tag v0.4.1144+1 --source-vendor /path/to/fresh/vendor-tree
+   ```
+
+   After update, review the **host scaffold report** (`.cursorrules`, `rw-config.yaml`, `.claude/commands/*`, `CLAUDE.md`, `AGENTS.md`) — these are never auto-overwritten. Post-update verification runs `verify_vendor_tree` automatically.
+
+   **Legacy manual path:** `cd vendor/ai-dev-kit && git fetch --tags && git checkout tags/v0.4.1063` (use [latest release](https://github.com/RMS-Ltd/ai-dev-kit/releases)); for registry pins, `docker pull ghcr.io/rms-ltd/ai-dev-kit-greenfield:v0.4.1063` (or newer SemVer core). Re-download and verify the matching `.sha256` when using tarballs.
 
 **Disk budget:** ~10–11 MiB for `greenfield-install/` (see `FOOTPRINT.md` in-tree) + git pack history (sparse checkout reduces working tree).
 
