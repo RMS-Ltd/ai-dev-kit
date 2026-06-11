@@ -8,7 +8,7 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Board
 
-**Last Updated:** 2026-06-11 (RW: E06:S09:T33+2)
+**Last Updated:** 2026-06-11 (RW: E06:S09:T33)
 **Version:** v0.6.9.33+2
 
 **Active board contract:** **Sole active MoSCOW board** ([ADR-018](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/architecture/standards-and-adrs/ADR-018-single-kanban-board-consolidation.md)). Rows are **live work** (TODO / IN PROGRESS / OPEN / WAITING / PERPETUAL) plus filed **Could Have** backlog. **Verification (V)** band holds task-shipped / FBU-open items (`⏳ WAITING`). Remove **terminal** rows and archive prose (use [`kanban-completed.md`](kanban-completed.md) / [`intake-completed.md`](intake-completed.md)).
@@ -123,7 +123,7 @@ housekeeping_policy: keep
 
 - **E21:S04:T07** – Document cultural considerations and guidelines - 📋 TODO (MEDIUM, cultural adaptation) | [Task](epics/epic-21/story-04-cultural-adaptation/T07-document-cultural-considerations-and-guidelines.md) | [Story](epics/epic-21/story-04-cultural-adaptation.md) | [FR-006](fr-br/FR-006-localization-language-selection-uk-us-english.md) | —No IPP— | Last modified: 2026-06-07 11:21 UTC
 
-- **E21:S05:T02** – French (fr) translation files - 📋 TODO (LOW, European locales) | [Task](epics/epic-21/story-05-european-languages-localization/T02-french-fr-translation-files.md) | [Story](epics/epic-21/story-05-european-languages-localization.md) | [FR-006](fr-br/FR-006-localization-language-selection-uk-us-english.md) | —No IPP— | Last modified: 2026-06-07 11:21 UTC
+- **E21:S05:T02** – French (fr) translation files - ⏳ SHIPPED (LOW, **v0.21.5.2+1**) | [Task](epics/epic-21/story-05-european-languages-localization/T02-french-fr-translation-files.md) | [Story](epics/epic-21/story-05-european-languages-localization.md) | [FR-006](fr-br/FR-006-localization-language-selection-uk-us-english.md) | [—IPP—](../../implementation-cycles/IPP-E21S05T02-french-fr-translation-files.md) | Last modified: 2026-06-11 14:30 UTC
 
 - **E21:S05:T03** – German (de) translation files - 📋 TODO (LOW, European locales) | [Task](epics/epic-21/story-05-european-languages-localization/T03-german-de-translation-files.md) | [Story](epics/epic-21/story-05-european-languages-localization.md) | [FR-006](fr-br/FR-006-localization-language-selection-uk-us-english.md) | —No IPP— | Last modified: 2026-06-07 11:24 UTC
 

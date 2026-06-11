@@ -6,170 +6,169 @@ expires_at: null
 housekeeping_policy: keep
 ---
 
-# User Experience Research: [Title]
+# Investigación de experiencia de usuario: [Titre]
 
-**Type:** User Experience Research (UXR)  
-**Submitted:** [YYYY-MM-DD]  
-**Submitted By:** [Name/Username]  
-**Priority:** [HIGH/MEDIUM/LOW]  
-**Status:** [PENDING/INTAKE/ACCEPTED/REJECTED/DEFERRED]
-
----
-
-## Summary
-
-[One sentence summary of the UX research findings.]
+**Type :** Investigación de experiencia de usuario (UXR)  
+**Soumise:** [YYYY-MM-DD]  
+**Soumise por:** [Nom/Utilisateur]  
+**Priorité:** [HAUTE/MOYENNE/BASSE]  
+**État:** [EN ATTENTE/INTAKE/ACCEPTÉE/REJETÉE/DIFFÉRÉE]
 
 ---
 
-## Research Objective
+## Résumé
 
-[What was the goal of this research? What question were you trying to answer?]
-
----
-
-## Methodology
-
-**Research Method:** [e.g., user interviews, usability testing, surveys, field studies]  
-**Participants:** [Number and description of participants]  
-**Duration:** [Duration of study]  
-**Tools/Platforms:** [Tools or platforms used for research]
-
-**Research Details:**
-- [Additional methodology details]
+[Résumé en una frase de los hallazgos de la investigación UX.]
 
 ---
 
-## Key Findings
+## Objetivo de la investigación
 
-[Main findings from the research. Include:]
-- Finding 1
-- Finding 2
-- Finding 3
+[¿Cuál era el objetivo de esta investigación? ¿Qué pregunta se intentaba responder?]
 
 ---
 
-## User Pain Points
+## Metodología
 
-[What problems or frustrations did users experience?]
+**Método de investigación:** [p. ex., entrevistas con usuarios, pruebas de usabilidad, encuestas, estudios de campo]  
+**Participantes:** [Número y descripción de los participantes]  
+**Duración:** [Duración del estudio]  
+**Herramientas/plataformas:** [Herramientas o plataformas usadas en la investigación]
 
-- Pain point 1
-- Pain point 2
-- Pain point 3
-
----
-
-## Recommendations
-
-[What actions should be taken based on these findings?]
-
-- [ ] Recommendation 1: [Description]
-- [ ] Recommendation 2: [Description]
-- [ ] Recommendation 3: [Description]
-
-**Priority Order:**
-1. [Highest priority recommendation]
-2. [Second priority recommendation]
-3. [Third priority recommendation]
+**Detalles de la investigación:**
+- [Detalles adicionales de la metodología]
 
 ---
 
-## Affected Areas
+## Hallazgos clave
 
-**Affected Components:**
-- [ ] UI Components
-- [ ] User Flows
-- [ ] Features
+[Principales hallazgos de la investigación. Incluya:]
+- Hallazgo 1
+- Hallazgo 2
+- Hallazgo 3
+
+---
+
+## Puntos de dolor del usuario
+
+[¿Qué problemas o frustraciones experimentaron los usuarios?]
+
+- Punto de dolor 1
+- Punto de dolor 2
+- Punto de dolor 3
+
+---
+
+## Recommandations
+
+[¿Qué acciones deben tomarse según estos hallazgos?]
+
+- [ ] Recomendación 1: [Description]
+- [ ] Recomendación 2: [Description]
+- [ ] Recomendación 3: [Description]
+
+**Ordre de priorité:**
+1. [Recommandation prioritaire]
+2. [Recommandation secondaire]
+3. [Recommandation tertiaire]
+
+---
+
+## Zones concernées
+
+**Componentes afectados:**
+- [ ] Componentes de UI
+- [ ] Flujos de usuario
+- [ ] Fonctionnalitées
 - [ ] Documentation
-- [ ] Other: [specify]
+- [ ] Otro: [especificar]
 
-**Specific Areas:**
-- [List specific UI components, features, or flows affected]
-
----
-
-## Supporting Evidence
-
-**Research Artifacts:**
-- [Link to recordings, transcripts, notes, or other supporting materials]
-- [Link to research data or analysis]
-- [Link to visualizations or diagrams]
-
-**Quotes or Examples:**
-- [Relevant user quotes or examples]
+**Áreas específicas:**
+- [Liste componentes de UI, funcionalidades o flujos afectados]
 
 ---
 
-## Next Steps
+## Preuves à l'appui
 
-[What should happen next?]
+**Artefactos de investigación:**
+- [Enlace a grabaciones, transcripciones, notas u otros materiales de apoyo]
+- [Enlace a datos o análisis de la investigación]
+- [Enlace a visualizaciones o diagramas]
 
-- [ ] Next step 1
-- [ ] Next step 2
-- [ ] Follow-up research needed: [Description]
-
----
-
-## Dependencies
-
-**Blocks:**
-- [What this UXR blocks]
-
-**Blocked By:**
-- [What blocks this UXR]
-
-**Related Work:**
-- [Related FRs, BRs, Stories, or Epics]
+**Citas o ejemplos:**
+- [Citas de usuarios o ejemplos relevantes]
 
 ---
 
-## Intake Decision
+## Prochaines étapes
 
-**Intake Status:** [PENDING/INTAKE/ACCEPTED/REJECTED/DEFERRED]  
-**Intake Date:** [YYYY-MM-DD]  
-**Intake By:** [Name/Username]
+[¿Qué debe ocurrir a continuación?]
 
-**Decision Flow Results:**
-- [ ] Story Match Found: [Epic X, Story Y] → Task [T]
-- [ ] New Story Created: [Epic X, Story Y] → Task 1
-- [ ] New Epic Created: [Epic X, Story 1, Task 1]
+- [ ] Próximo paso 1
+- [ ] Próximo paso 2
+- [ ] Investigación de seguimiento necesaria: [Description]
 
-**Assigned To:**
-- Epic: [Epic number and name]
-- Story: [Story number and name]
-- Task: [Task number and name]
+---
+
+## Dépendances
+
+**Bloquea:**
+- [Lo que bloquea esta UXR]
+
+**Bloqueada por:**
+- [Lo que bloquea esta UXR]
+
+**Travail connexe:**
+- [FR, BR, Stories o Epics relacionados]
+
+---
+
+## Décision d'intake
+
+**État d'intake:** [EN ATTENTE/INTAKE/ACCEPTÉE/REJETÉE/DIFFÉRÉE]  
+**Date d'intake:** [YYYY-MM-DD]  
+**Intake par:** [Nom/Utilisateur]
+
+**Résultats du flux de décision:**
+- [ ] Story coincidente encontrada: [Epic X, Story Y] → Task [T]
+- [ ] Nueva Story creada: [Epic X, Story Y] → Task 1
+- [ ] Nuevo Epic creado: [Epic X, Story 1, Task 1]
+
+**Assigné à:**
+- Epic: [Numéro et nom de l'Epic]
+- Story: [Numéro et nom de la Story]
+- Task: [Numéro et nom de la tâche]
 - Version: `[RC.EPIC.STORY.TASK+BUILD]`
 
-**Kanban Links:**
+**Liens Kanban:**
 - Epic: [`docs/project-management/kanban/epics/Epic-X/Epic-X.md`](path/to/Epic-X.md)
 - Story: [`docs/project-management/kanban/epics/Epic-X/Story-XXX-*.md`](path/to/Story.md)
-- Task: [Link to Task in Story document]
+- Task: [Lien vers la tâche dans le document Story]
 
 ---
 
 ## Notes
 
-[Additional notes, context, or considerations]
+[Notes adicionales, contexto o consideraciones]
 
 ---
 
-## References
+## Références
 
-- [Related documentation, research papers, external resources]
-- [Related UX research or usability studies]
-- [GitHub Issue: #[number]](https://github.com/[org]/[repo]/issues/[number])
-
----
-
-**Template Usage:**
-**Locale (en-GB):** Use UK English in instructional prose (colour, organise, realise, centre).
-
-- Copy this template when creating a new User Experience Research report
-- Fill in all relevant sections
-- Use the "Intake Decision" section to track the UXR → Task → Story → Epic conversion
-- Link to the created Task/Story/Epic for traceability
+- [Documentation, artículos de investigación o recursos externos relacionados]
+- [Investigaciones UX o estudios de usabilidad relacionados]
+- [Incidencia de GitHub: #[número]](https://github.com/[org]/[repo]/issues/[number])
 
 ---
 
-_This template is part of the Kanban Framework. See `packages/frameworks/kanban/` for complete framework documentation._
+**Utilisation du modèle :**
+**Localisation (fr) :** Utilisez un français technique neutre dans la prose instructive.
 
+- Copiez ce modèle lors de la création d'un un nuevo informe de investigación de experiencia de usuario
+- Remplissez toutes les sections pertinentes
+- Utilisez la section «Décision d'intake» pour suivre la conversión UXR → Task → Story → Epic
+- Liez la tâche/Story/Epic creada pour la traçabilité
+
+---
+
+_Ce modèle fait partie du Kanban Framework. Consultezz `packages/frameworks/kanban/` pour la documentation complète du framework._

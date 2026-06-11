@@ -1,0 +1,12 @@
+{
+  "report_type": "rw_step7_release",
+  "release_scope": "E21:S05:T02",
+  "version": "v0.21.5.2+1",
+  "evidence_mode": "rw_release",
+  "rows": {
+    "E21:S05:T02": {
+      "allowed": true,
+      "reason": "RW Step 7 release-scope row update — French fr delivery COMPLETE v0.21.5.2+1; task doc + kboard SHIPPED sync"
+    }
+  }
+}

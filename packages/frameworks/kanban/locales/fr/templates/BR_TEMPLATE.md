@@ -6,206 +6,205 @@ expires_at: null
 housekeeping_policy: keep
 ---
 
-# Bug Report: [Title]
+# Rapport de bogue: [Titre]
 
-**Type:** Bug Report (BR)  
-**Submitted:** [YYYY-MM-DD]  
-**Submitted By:** [Name/Username]  
-**Priority:** [CRITICAL/HIGH/MEDIUM/LOW]  
-**Severity:** [CRITICAL/HIGH/MEDIUM/LOW]  
-**Status:** [PENDING/INTAKE/ACCEPTED/REJECTED/DEFERRED]
+**Type :** Rapport de bogue (BR)  
+**Soumis:** [YYYY-MM-DD]  
+**Soumis por:** [Nom/Utilisateur]  
+**Priorité:** [CRITIQUE/HAUTE/MOYENNE/BASSE]  
+**Gravité:** [CRITIQUE/HAUTE/MOYENNE/BASSE]  
+**État:** [EN ATTENTE/INTAKE/ACCEPTÉ/REJETÉ/DIFFÉRÉ]
 
 ---
 
-## Summary
+## Résumé
 
-[One sentence description of the bug.]
+[Description en una frase del error.]
 
 ---
 
 ## Description
 
-[Detailed description of the bug. Include:]
-- What is the bug?
-- What should happen vs. what actually happens?
-- When does it occur?
-- Who is affected?
+[Description detallada del error. Incluya:]
+- Quel est le bogue ?
+- Que devrait-il se passer par rapport à ce qui se passe réellement ?
+- Quand cela se produit-il ?
+- Qui est concerné ?
 
 ---
 
-## Affected Component
+## Composant concerné
 
-**Primary Component:** [e.g., User Authentication, Payment Processing, UI Component]  
-**Affected Areas:**
+**Componente principal:** [p. ex., autenticación de usuarios, procesamiento de pagos, componente de UI]  
+**Zones concernées:**
 - [ ] Backend/API
 - [ ] Frontend/UI
-- [ ] Database/Schema
-- [ ] Integration/External Service
+- [ ] Base de datos/esquema
+- [ ] Intégration/servicio externo
 - [ ] Documentation
-- [ ] Other: [specify]
+- [ ] Otro: [especificar]
 
-**Root Cause (if known):**
-[Description of the root cause, if identified]
-
----
-
-## Steps to Reproduce
-
-1. Step 1
-2. Step 2
-3. Step 3
-4. [Expected result]
-5. [Actual result]
+**Cause racine (si connue):**
+[Description de la causa raíz, si se ha identificado]
 
 ---
 
-## Environment
+## Étapes de reproduction
 
-**Environment:** [Production/Staging/Development]  
-**Version:** [Version number or commit hash]  
-**Browser/Platform:** [If applicable]  
-**OS:** [If applicable]
+1. Étape 1
+2. Étape 2
+3. Étape 3
+4. [Résultat esperado]
+5. [Résultat real]
+
+---
+
+## Environnement
+
+**Environnement:** [Production/Staging/Développement]  
+**Version:** [Numéro de version ou hash de commit]  
+**Navigateur/plateforme:** [Si applicable]  
+**SO:** [Si applicable]
 
 ---
 
 ## Impact
 
-**User Impact:**
-- [ ] Critical - System unusable
-- [ ] High - Major functionality broken
-- [ ] Medium - Some functionality affected
-- [ ] Low - Minor issue, workaround available
+**Impact en el usuario:**
+- [ ] Crítico — sistema inutilizable
+- [ ] Alto — funcionalidad principal rota
+- [ ] Medio — alguna funcionalidad afectada
+- [ ] Bajo — problema menor, existe workaround
 
-**Business Impact:**
-[Description of business impact, if applicable]
+**Impact en el negocio:**
+[Description del impacto en el negocio, si aplica]
 
-**Workaround:**
-[If a workaround exists, describe it here]
-
----
-
-## Acceptance Criteria (Fix Requirements)
-
-- [ ] Criterion 1: [Specific, testable criterion for fix]
-- [ ] Criterion 2: [Specific, testable criterion for fix]
-- [ ] Criterion 3: [Specific, testable criterion for fix]
-
-**Verification Method:**
-- [ ] Test suite execution
-- [ ] Manual testing
-- [ ] Both
-
-**Fix Verification Status:**
-- [ ] Verified (test suite passed / manual test passed)
-- [ ] Attempted Fix (pending verification)
+**Contournement:**
+[S'il existe un contournement, décrivez-le ici]
 
 ---
 
-## Fix Attempt History
+## Critères d'acceptation (requisitos de corrección)
 
-**Purpose:** This section documents all fix attempts for this bug, ensuring that if a bug isn't squashed, the next build can be informed by previous attempts.
+- [ ] Critère 1 : [Criterio específico y verificable para la corrección]
+- [ ] Critère 2 : [Criterio específico y verificable para la corrección]
+- [ ] Critère 3 : [Criterio específico y verificable para la corrección]
 
-**How to Use:**
-- Each release that attempts to fix this bug should add a new entry to this section
-- Document what was attempted, what worked, what didn't, and verification status
-- This creates a knowledge base for future fix attempts
+**Méthode de vérification:**
+- [ ] Ejecución de la suite de pruebas
+- [ ] Prueba manual
+- [ ] Ambos
 
-### Fix Attempts
-
-#### Attempt 1: [Version] - [Date]
-
-**Fix Description:**
-[Describe what was attempted to fix this bug]
-
-**Changes Made:**
-- [List specific changes, files modified, code changes, etc.]
-
-**Verification Status:**
-- [ ] Verified (test suite passed / manual test passed)
-- [ ] Attempted Fix (pending verification)
-- [ ] Fix Failed (bug still present)
-
-**Verification Method:**
-- [ ] Test suite execution
-- [ ] Manual testing
-- [ ] Both
-
-**Verification Evidence:**
-[Link to test results, CI/CD output, or documentation]
-
-**Result:**
-- [ ] Bug Fixed
-- [ ] Bug Partially Fixed (describe partial fix)
-- [ ] Bug Not Fixed (describe why fix didn't work)
-
-**Lessons Learned:**
-[What was learned from this attempt? What should be tried differently next time?]
-
-**Next Steps:**
-[What should be attempted in the next fix attempt?]
+**État de vérification de la corrección:**
+- [ ] Verificado (suite de pruebas aprobada / prueba manual aprobada)
+- [ ] Corrección intentada (pendiente de verificación)
 
 ---
 
-## Dependencies
+## Historial des tentatives de correction
 
-**Blocks:**
-- [What this BR blocks]
+**Propósito:** Esta sección documenta todos los intentos de corrección de este error, de modo que si el error no se resuelve, la siguiente versión pueda basarse en intentos anteriores.
 
-**Blocked By:**
-- [What blocks this BR]
+**Cómo usar:**
+- Cada release que intente corregir este error debe añadir una nueva entrada en esta sección
+- Documente qué se intentó, qué funcionó, qué no y el estado de verificación
+- Esto crea una base de conocimiento para futuros intentos de corrección
 
-**Related Work:**
-- [Related BRs, Stories, Tasks, or Epics]
+### Tentatives de correction
+
+#### Tentative 1: [Version] - [Fecha]
+
+**Description de la corrección:**
+[Describa qué se intentó para corregir este error]
+
+**Modifications effectuées:**
+- [Listez les modifications, fichiers, changements de code, etc.]
+
+**État de vérification:**
+- [ ] Verificado (suite de pruebas aprobada / prueba manual aprobada)
+- [ ] Corrección intentada (pendiente de verificación)
+- [ ] Corrección fallida (el error sigue presente)
+
+**Méthode de vérification:**
+- [ ] Ejecución de la suite de pruebas
+- [ ] Prueba manual
+- [ ] Ambos
+
+**Preuve de vérification:**
+[Lien vers résultats de tests, sortie CI/CD ou documentation]
+
+**Résultat:**
+- [ ] Error corregido
+- [ ] Error parcialmente corregido (describa la corrección parcial)
+- [ ] Error no corregido (describa por qué la corrección no funcionó)
+
+**Enseignements tirés:**
+[Qu'avez-vous appris ? Que tenter différemment la prochaine fois ?]
+
+**Prochaines étapes:**
+[Que tenter lors de la prochaine tentative de correction ?]
 
 ---
 
-## Intake Decision
+## Dépendances
 
-**Intake Status:** [PENDING/INTAKE/ACCEPTED/REJECTED/DEFERRED]  
-**Intake Date:** [YYYY-MM-DD]  
-**Intake By:** [Name/Username]
+**Bloquea:**
+- [Ce que ce BR bloque]
 
-**Decision Flow Results:**
-- [ ] Story Match Found: [Epic X, Story Y] → Task [T]
-- [ ] New Story Created: [Epic X, Story Y] → Task 1
-- [ ] New Epic Created: [Epic X, Story 1, Task 1]
+**Bloqué par:**
+- [Ce que ce BR bloque]
 
-**Assigned To:**
-- Epic: [Epic number and name]
-- Story: [Story number and name]
-- Task: [Task number and name]
+**Travail connexe:**
+- [BR, Stories, Tasks o Epics relacionados]
+
+---
+
+## Décision d'intake
+
+**État d'intake:** [EN ATTENTE/INTAKE/ACCEPTÉ/REJETÉ/DIFFÉRÉ]  
+**Date d'intake:** [YYYY-MM-DD]  
+**Intake par:** [Nom/Utilisateur]
+
+**Résultats du flux de décision:**
+- [ ] Story coincidente encontrada: [Epic X, Story Y] → Task [T]
+- [ ] Nueva Story creada: [Epic X, Story Y] → Task 1
+- [ ] Nuevo Epic creado: [Epic X, Story 1, Task 1]
+
+**Assigné à:**
+- Epic: [Numéro et nom de l'Epic]
+- Story: [Numéro et nom de la Story]
+- Task: [Numéro et nom de la tâche]
 - Version: `[RC.EPIC.STORY.TASK+BUILD]`
 
-**Kanban Links:**
+**Liens Kanban:**
 - Epic: [`docs/project-management/kanban/epics/Epic-X/Epic-X.md`](path/to/Epic-X.md)
 - Story: [`docs/project-management/kanban/epics/Epic-X/Story-XXX-*.md`](path/to/Story.md)
-- Task: [Link to Task in Story document]
+- Task: [Lien vers la tâche dans le document Story]
 
 ---
 
 ## Notes
 
-[Additional notes, context, or considerations]
+[Notes adicionales, contexto o consideraciones]
 
 ---
 
-## References
+## Références
 
-- [Related documentation, specs, diagrams, external resources]
-- [Related bug reports or issues]
-
----
-
-**Template Usage:**
-**Locale (en-GB):** Use UK English in instructional prose (colour, organise, realise, centre).
-
-- Copy this template when creating a new Bug Report
-- Fill in all relevant sections
-- Use the "Intake Decision" section to track the FR/BR → Task → Story → Epic conversion
-- Link to the created Task/Story/Epic for traceability
-- **CRITICAL:** Fixes must be verified through testing before being marked as "Fixed" in changelogs
+- [Documentation, especificaciones, diagramas o recursos externos relacionados]
+- [Rapports de bogues ou incidents connexes]
 
 ---
 
-_This template is part of the Kanban Framework. See `packages/frameworks/kanban/` for complete framework documentation._
+**Utilisation du modèle :**
+**Localisation (fr) :** Utilisez un français technique neutre dans la prose instructive.
 
+- Copiez ce modèle lors de la création d'un un nouveau rapport de bogue
+- Remplissez toutes les sections pertinentes
+- Utilisez la section «Décision d'intake» pour suivre la conversion FR/BR → Task → Story → Epic
+- Liez la tâche/Story/Epic creada pour la traçabilité
+- **CRITIQUE:** Las correcciones deben verificarse mediante pruebas antes de marcarse como «Corregido» en los changelogs
+
+---
+
+_Ce modèle fait partie du Kanban Framework. Consultezz `packages/frameworks/kanban/` pour la documentation complète du framework._

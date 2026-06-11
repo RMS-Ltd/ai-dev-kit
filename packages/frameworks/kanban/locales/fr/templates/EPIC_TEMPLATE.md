@@ -6,117 +6,117 @@ expires_at: null
 housekeeping_policy: keep
 ---
 
-# Epic X: [Title]
+# Epic X: [Titre]
 
-**Status:** [TODO/IN PROGRESS/COMPLETE]
-**Priority:** [HIGH/MEDIUM/LOW]
-**Estimated Effort:** [X-Y hours]
-**Created:** [YYYY-MM-DD]
-**Last updated:** [YYYY-MM-DD] (vX.Y.Z.T+B – [summary])
-**Branch:** `epic/X-slug`
-**Version Schema:** `0.X.S.T+B`
-**Production URL:** [Optional]
+**État:** [TODO/IN PROGRESS/COMPLETE]
+**Priorité:** [HAUTE/MOYENNE/BASSE]
+**Effort estimé:** [X-Y heures]
+**Créé:** [YYYY-MM-DD]
+**Dernière mise à jour:** [YYYY-MM-DD] (vX.Y.Z.T+B – [résumé])
+**Branche:** `epic/X-slug`
+**Schéma de version:** `0.X.S.T+B`
+**URL de production:** [Facultatif]
 
 ---
 
-## Story Checklist
+## Liste de contrôle des stories
 
-- [ ] **EXX:S01 – [Story Title]** - [Status]
-- [ ] **EXX:S02 – [Story Title]** - [Status]
-- [ ] **EXX:S03 – [Story Title]** - [Status]
+- [ ] **EXX:S01 – [Titre de la story]** - [État]
+- [ ] **EXX:S02 – [Titre de la story]** - [État]
+- [ ] **EXX:S03 – [Titre de la story]** - [État]
 
-> **CRITICAL:** This Story Checklist is the **SINGLE SOURCE OF TRUTH** for story status and version markers.  
-> **Forensic Marker Format:** `✅ COMPLETE (vRC.E.S.T+B)` (e.g., `✅ COMPLETE (v0.4.1.3+1)`)  
-> **Release Workflow Requirement:** When Release Workflow (RW) Step 4 updates this Epic document, it MUST update **ALL sections**:
-> - Epic header `Last updated` field
-> - Story Checklist (status and version markers)
-> - Detailed story sections (Status, Last updated, task checkboxes)
-> - Any other references to the story/task being released
+> **CRITIQUE:** Esta Liste de contrôle des stories es la **ÚNICA FUENTE DE VERDAD** para el estado de stories y marcadores de versión.  
+> **Format du marqueur forensique:** `✅ COMPLETE (vRC.E.S.T+B)` (p. ex., `✅ COMPLETE (v0.4.1.3+1)`)  
+> **Requisito del Release Workflow:** Cuando el Release Workflow (RW) Étape 4 actualice este documento Epic, DEBE actualizar **TODAS las secciones**:
+> - Campo `Dernière mise à jour` del encabezado del Epic
+> - Liste de contrôle des stories (estado y marcadores de versión)
+> - Secciones detalladas de stories (État, Dernière mise à jour, casillas de tasks)
+> - Cualquier otra referencia a la story/task que se libera
 > 
-> **Consistency Check:** After each RW, verify that Epic header, Story Checklist, and detailed sections all match.
+> **Contrôle de cohérence:** Tras cada RW, verifique que el encabezado del Epic, la Liste de contrôle des stories y las secciones detalladas coinciden.
 
 ---
 
-## Overview
+## Vue d'ensemble
 
-[One paragraph. The epic's purpose, scope, and motivation.]
+[Un paragraphe. Le but, le périmètre et la motivation de l'epic.]
 
 ---
 
-## Goals
+## Objectifs
 
-1. Goal headline with brief description
-2. Goal headline with brief description
-3. Goal headline with brief description
+1. Intitulé d'objectif avec brève description
+2. Intitulé d'objectif avec brève description
+3. Intitulé d'objectif avec brève description
 
 ---
 
 ## Stories
 
-> **CRITICAL: Tier Delegation Principle**
+> **CRITIQUE: Principe de délégation par niveaux**
 > 
-> **Epic documents MUST delegate Story detail to Story documents.** This Epic template should NOT duplicate Story-level information (Status, Priority, Goals, Tasks, Acceptance Criteria, etc.). Instead, Epic documents should:
-> - Reference stories via Story Checklist (above)
-> - Provide brief story summaries or links to Story documents
-> - Delegate all detailed Story information to Story documents
+> **Los documentos Epic DEBEN delegar el detalle de Story a documentos Story.** Esta plantilla Epic NO debe duplicar información a nivel Story (État, Priorité, Objectifs, Tasks, Critères d'acceptation, etc.). En su lugar, los documentos Epic deben:
+> - Referenciar stories mediante la Liste de contrôle des stories (arriba)
+> - Proporcionar resúmenes breves de stories o enlaces a documentos Story
+> - Delegar toda la información detallada de Story a documentos Story
 > 
-> **What belongs in Epic:**
-> - ✅ Story Checklist (references only, with status/version markers)
-> - ✅ Brief story summaries (1-2 sentences per story)
-> - ✅ Links to Story documents
-> - ✅ Epic-level dependencies and coordination
+> **Qué pertenece a Epic:**
+> - ✅ Liste de contrôle des stories (solo referencias, con marcadores de estado/versión)
+> - ✅ Resúmenes breves de stories (1-2 frases por story)
+> - ✅ Enlaces a documentos Story
+> - ✅ Dépendances y coordinación a nivel epic
 > 
-> **What does NOT belong in Epic:**
-> - ❌ Detailed story descriptions
-> - ❌ Story-level goals, tasks, acceptance criteria
-> - ❌ Task-level details
-> - ❌ Story implementation details
+> **Qué NO pertenece a Epic:**
+> - ❌ Descripciones detalladas de stories
+> - ❌ Objectifs, tasks o criterios de aceptación a nivel story
+> - ❌ Detalles a nivel task
+> - ❌ Detalles de implementación de stories
 
-### Story Y: [Story Title]
+### Story Y: [Titre de la story]
 
-**Brief Summary:** [One sentence description of what this story accomplishes]
+**Résumé breve:** [Una frase que describe lo que logra esta story]
 
-**Story Document:** [`Story-YYY-story-title.md`](Story-YYY-story-title.md) or [`epics/Epic-X/Story-YYY-story-title.md`](epics/Epic-X/Story-YYY-story-title.md)
+**Document Story :** [`Story-YYY-story-title.md`](Story-YYY-story-title.md) o [`epics/Epic-X/Story-YYY-story-title.md`](epics/Epic-X/Story-YYY-story-title.md)
 
-> **Note:** For detailed Story information (Status, Priority, Goals, Tasks, Acceptance Criteria, Dependencies, etc.), see the Story document linked above. This Epic document only provides a high-level reference.
-
----
-
-## Dependencies
-
-**Blocks:**
-- [What this epic blocks]
-
-**Blocked By:**
-- [What blocks this epic]
-
-**Coordinates With:**
-- [Epic/Story coordination points]
+> **Nota:** Para información detallada de la Story (État, Priorité, Objectifs, Tasks, Critères d'acceptation, Dépendances, etc.), consultez el documento Story enlazado arriba. Este documento Epic solo proporciona una referencia de alto nivel.
 
 ---
 
-## Risks & Mitigations
+## Dépendances
 
-- Risk description — mitigation
-- Risk description — mitigation
+**Bloquea:**
+- [Ce que cet epic bloque]
 
----
+**Bloqué par:**
+- [Ce que cet epic bloque]
 
-## References
-
-- [Related docs, specs, diagrams]
-
----
-
-## Maintenance Cadence
-
-_For maintenance epics only._
-
-- **Weekly:** [schedule items]
-- **Monthly:** [schedule items]
-- **Quarterly:** [schedule items]
-- **As Needed:** [schedule items]
+**Coordonne avec:**
+- [Points de coordination Epic/Story]
 
 ---
 
-**Locale (en-GB):** Use UK English in instructional prose (colour, organise, realise, centre).
+## Risques et atténuations
+
+- Description del riesgo — mitigación
+- Description del riesgo — mitigación
+
+---
+
+## Références
+
+- [Documentos, especificaciones o diagramas relacionados]
+
+---
+
+## Cadence de maintenance
+
+_Uniquement pour les epics de maintenance._
+
+- **Hebdomadaire:** [éléments planifiés]
+- **Mensuel:** [éléments planifiés]
+- **Trimestriel:** [éléments planifiés]
+- **Selon les besoins:** [éléments planifiés]
+
+---
+
+**Localisation (fr) :** Utilisez un français technique neutre dans la prose instructive.

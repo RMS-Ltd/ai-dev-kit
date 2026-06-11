@@ -228,14 +228,20 @@ def test_c7_interim_alert(ltu, tmp_path):
 
 
 def test_c8_fail_under_scaffold_locale_still_pending():
-    """C8: --fail-under exits 1 for locales still at 0% linguistic (e.g. fr)."""
-    result = _run_report("--locale", "fr", "--fail-under", "1")
+    """C8: --fail-under exits 1 for locales still at 0% linguistic (e.g. de)."""
+    result = _run_report("--locale", "de", "--fail-under", "1")
     assert result.returncode == 1
 
 
 def test_c8_es_passes_fail_under_after_t01():
     """C8b: Post E21:S05:T01, es meets minimal completeness threshold."""
     result = _run_report("--locale", "es", "--fail-under", "1")
+    assert result.returncode == 0, result.stdout + result.stderr
+
+
+def test_c8_fr_passes_fail_under_after_t02():
+    """C8c: Post E21:S05:T02, fr meets minimal completeness threshold."""
+    result = _run_report("--locale", "fr", "--fail-under", "1")
     assert result.returncode == 0, result.stdout + result.stderr
 
 

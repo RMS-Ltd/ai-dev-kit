@@ -80,6 +80,10 @@ housekeeping_policy: keep
 - **[E05:S08:T04](epics/epic-05/story-08-knowledge-base/T04-agent-notion-first-authoring-and-bootstrap-routing-fr114.md)** — Agent Notion-first authoring + bootstrap routing @ **v0.5.8.4+2**. [FR-114](fr-br/FR-114-split-documentation-surfaces-docusaurus-public-notion-maintainer-kb.md) · [—IPP—](../../implementation-cycles/IPP-E05S08T04-agent-notion-first-authoring-and-bootstrap-routing-fr114.md)
 - **[E05:S08:T03](epics/epic-05/story-08-knowledge-base/T03-big-bang-notion-migration-maintainer-kb-fr114.md)** — Big-bang Notion maintainer KB migration @ **v0.5.8.3+3** (later superseded maintainer SoT by FR-121 T05). [FR-114](fr-br/FR-114-split-documentation-surfaces-docusaurus-public-notion-maintainer-kb.md) · [—IPP—](../../implementation-cycles/IPP-E05S08T03-big-bang-notion-migration-maintainer-kb-fr114.md)
 
+#### **RW (2026-06-11)** — E21:S05:T02 @ **v0.21.5.2+1** (FR-006 — French fr locale delivery)
+
+- **[E21:S05:T02](epics/epic-21/story-05-european-languages-localization/T02-french-fr-translation-files.md)** — Linguistic translation of kanban + workflow-mgt `locales/fr/**`; registry `linguistic_status: complete`; greenfield sync; pytest contract. [FR-006](fr-br/FR-006-localization-language-selection-uk-us-english.md) · [—IPP—](../../implementation-cycles/IPP-E21S05T02-french-fr-translation-files.md)
+
 #### **RW (2026-06-09)** — E21:S05:T01 @ **v0.21.5.1+1** (FR-006 — Spanish es locale delivery)
 
 - **[E21:S05:T01](epics/epic-21/story-05-european-languages-localization/T01-spanish-es-translation-files.md)** — Linguistic translation of kanban + workflow-mgt `locales/es/**`; registry `linguistic_status: complete`; greenfield sync; pytest contract. [FR-006](fr-br/FR-006-localization-language-selection-uk-us-english.md) · [—IPP—](../../implementation-cycles/IPP-E21S05T01-spanish-es-translation-files.md)
