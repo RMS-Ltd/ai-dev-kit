@@ -10,7 +10,7 @@ housekeeping_policy: keep
 
 **Host Task:** [`T06-github-security-code-quality-health-perpetual.md`](../kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T06-github-security-code-quality-health-perpetual.md) **(E02:S16:T06)**  
 **Planning for:** [FR-112](../kanban/fr-br/FR-112-perpetual-github-ci-and-security-health-lanes.md)  
-**Status:** Approved (Wave 4b @ v0.2.16.6+4; **Wave 5 IPW revision** 2026-06-10 — maintainability **8** / **Fair** @ `f458a215a`)
+**Status:** Approved (Wave 5b @ v0.2.16.6+5; **Wave 6 IPW revision** 2026-06-12 — Dependabot alert #5 `joi` CVE-2026-48038)
 
 > **IPW:** Perpetual lane for GitHub **code scanning** + **Code Quality dashboard** hygiene. **Does not** own [Actions](https://github.com/RMS-Ltd/ai-dev-kit/actions) CI (→ **E02:S16:T05**).
 >
@@ -24,6 +24,8 @@ housekeeping_policy: keep
 > **Revision (2026-06-10 — Wave 4 IPW):** Operator dashboard **~10** maintainability standard findings @ `main` `38d24549445f4ed77b0d099f1aa3b927d5c61f19`. Two-step: **Wave 4a** manifest + close 3c/3d/3e verifies; **Wave 4b** maintainability autofix. See **§8 Wave 4**.
 
 > **Revision (2026-06-10 — Wave 5 IPW):** Post–Wave 4b dashboard **8** maintainability / **Fair** @ `main` `f458a215a` (TC24 partial: 10→8). Two-step: **Wave 5a** manifest + TC24 close; **Wave 5b** manual CodeQL burn-down (cyclic-import, unused-global, multiple-definition, unused-local). See **§8 Wave 5**.
+
+> **Revision (2026-06-12 — Wave 6 IPW):** [Dependabot alert #5](https://github.com/RMS-Ltd/ai-dev-kit/security/dependabot/5) — **GHSA-q7cg-457f-vx79** / **CVE-2026-48038** (`joi` **17.13.3** → **18.2.1** via `portal/package.json` override). Single open Dependabot alert. See **§8 Wave 6**.
 
 > **Revision (2026-06-05 — operator deferral):** ~~Postpone T16 until T12–T14 sign-off~~ — **LIFTED** 2026-06-07.
 
@@ -65,6 +67,12 @@ housekeeping_policy: keep
 | RF31 | **Close TC24** partial (10→8, not 0); Wave 5b owns residual burn-down | Wave 5 IPW |
 | RF32 | **Wave 5b:** fix all 8 maintainability findings (4 issue families + greenfield mirror) | Wave 5 IPW |
 | RF33 | **TC25** operator post-merge dashboard verify (8 → 0 or documented residual) | Wave 5 IPW |
+| RF34 | **Wave 6 manifest** in T06 task doc: Dependabot alert #5 metadata + dependency chain | Wave 6 IPW |
+| RF35 | Remediate alert by pinning **`joi@18.2.1`** via `portal/package.json` **overrides** | Wave 6 IPW |
+| RF36 | Regenerate `portal/package-lock.json`; confirm single resolved `joi` version | Wave 6 IPW |
+| RF37 | Verify portal build + Actions CI parity (Docusaurus lane) | Wave 6 IPW |
+| RF38 | Close Dependabot alert #5 on GitHub post-merge | Wave 6 IPW |
+| RF39 | Ship via **`RW E02:S16:T06 --art`** (BUILD +1; BR-097) | Wave 6 IPW |
 
 ### 1.2 Non-functional requirements (ascertained)
 
@@ -79,6 +87,10 @@ housekeeping_policy: keep
 | RNF7 | **`sync_greenfield_install.py`** after `packages/` edits (FR-106) | Wave 4 IPW |
 | RNF8 | Changelog **"Change implemented"** / **"Attempted fix"** until operator verifies | RW rules |
 | RNF9 | Do not remediate reliability-band findings in Wave 4b unless merge gate blocked | Wave 4 IPW |
+| RNF10 | **Node >= 20** in `portal/package.json` satisfies joi 18 engine floor | Wave 6 IPW |
+| RNF11 | No `--doc-policy-zero` on post-ship wave (BR-097) | Wave 6 IPW |
+| RNF12 | Changelog **"Change implemented"** until operator confirms alert closed | Wave 6 IPW |
+| RNF13 | Do not force `npm audit fix --force` / Docusaurus downgrade (FR-105 precedent) | Wave 6 IPW |
 
 ### 1.3 Invariants and boundaries
 
@@ -178,6 +190,12 @@ Establish **E02:S16:T06** as the operational perpetual lane for GitHub **code sc
 | TC27 | Wave 5b CQG | `validate_code_quality_gate.py` — maintainability **0** on `packages/` | RF32 | 5b |
 | TC28 | Wave 5b greenfield | `sync_greenfield_install.py --check` | RF32 | 5b |
 | TC29 | Wave 5b CI parity | `validate_actions_ci_parity.py --strict` | FR-112 | 5b |
+| TC30 | Wave 6 joi version | `npm ls joi` shows single **18.2.1** | RF36 | 6 |
+| TC31 | Wave 6 portal build | `cd portal && npm ci && npm run build` exits **0** | RF37, RNF10 | 6 |
+| TC32 | Wave 6 CI parity | `validate_actions_ci_parity.py --strict` Docusaurus lane green | RF37 | 6 |
+| TC33 | Wave 6 npm audit | joi / GHSA-q7cg-457f-vx79 absent (or documented lag) | RF35 | 6 |
+| TC34 | Wave 6 Dependabot | Alert #5 state **fixed** post-merge | RF38 | 6 |
+| TC35 | Wave 6 portal pytest | `test_portal_br068_monorepo_links.py` + `test_portal_fr114_allowlist.py` pass | RF37 | 6 |
 
 **Wave 0 verification:** TC1–TC4 only (docs-only; no `--skip-tests` — TC5 deferred to Wave 1+).
 
@@ -198,6 +216,8 @@ Establish **E02:S16:T06** as the operational perpetual lane for GitHub **code sc
 **Wave 5a verification:** TC24 partial close + manifest (docs-only RW).
 
 **Wave 5b verification:** TC25–TC29 (code + operator dashboard).
+
+**Wave 6 verification:** TC30–TC35 (portal override + build + operator Dependabot verify).
 
 ---
 
@@ -320,6 +340,9 @@ Establish **E02:S16:T06** as the operational perpetual lane for GitHub **code sc
 - [x] Wave 5a manifest @ `main` `f458a215a` with **8** M breakdown (TC24 partial)
 - [x] Wave 5b manual maintainability burn-down (TC26–TC29); shipped **v0.2.16.6+5**
 - [ ] Operator dashboard TC25 verify (maintainability **8 → 0** or documented residual)
+- [x] Wave 6 `joi@18.2.1` override + lockfile (TC30–TC33, TC35)
+- [ ] Dependabot alert #5 closed (TC34) — operator post-merge
+- [x] `RW E02:S16:T06 --art` Wave 6 shipped (**v0.2.16.6+9**)
 
 ---
 
@@ -447,6 +470,23 @@ Establish **E02:S16:T06** as the operational perpetual lane for GitHub **code sc
 | 50 | Operator TC25 dashboard verify; post-remediation manifest in task doc |
 
 **RW rule:** **`RW E02:S16:T06 --art` only**; no `--doc-policy-zero` (BR-097).
+
+### Wave 6 — Dependabot joi CVE remediation (code RW) — 2026-06-12
+
+**Theme:** [Dependabot alert #5](https://github.com/RMS-Ltd/ai-dev-kit/security/dependabot/5) — **GHSA-q7cg-457f-vx79** / **CVE-2026-48038**; transitive `joi@17.13.3` via `@docusaurus/core@3.10.1` → `@docusaurus/utils-validation` and `@docusaurus/types`.
+
+| Step | Action |
+| ---- | ------ |
+| 51 | Confirm T06 **IN PROGRESS**; record Wave 6 manifest in task doc (alert metadata, dependency chain, open alerts **1 → 0** target) |
+| 52 | Add `"joi": "18.2.1"` to `portal/package.json` **overrides** (same pattern as `uuid` / `serialize-javascript`) |
+| 53 | `cd portal && npm install` — regenerate `package-lock.json` |
+| 54 | TC30–TC33, TC35 locally |
+| 55 | `RW E02:S16:T06 --art` — BUILD +1 |
+| 56 | Operator TC34: confirm Dependabot #5 **fixed** post-merge |
+
+**RW rule:** **`RW E02:S16:T06 --art` only**; no `--doc-policy-zero` (BR-097).
+
+**Fallback:** If `npm run build` fails with mixed joi schemas, abort RW; try clean `npm ci` or defer to upstream Docusaurus joi bump.
 
 ---
 

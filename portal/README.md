@@ -93,7 +93,8 @@ The docs plugin only ingests **[`docs/`](../docs/)**. Markdown links that use **
 2. **npm / Docusaurus pins:** Do **not** merge major downgrades of `@docusaurus/*` or React without a deliberate upgrade task and local `npm run build`.
 3. **pip PRs:** Review `requirements.txt` / `setup.py` lower-bound bumps; run targeted pytest if CLI paths change.
 4. **Defer with reason:** Transitive dev-only advisories (e.g. `webpack-dev-server` → `sockjs` / `uuid`) may remain until a planned Docusaurus upgrade — record deferral in the PR or linked task.
-5. **Ignore rules:** Use GitHub **dependabot ignore** only with a documented rationale in the PR body.
+5. **npm overrides:** `package.json` `overrides` pin patched transitive versions when upstream `@docusaurus/*` still ranges on vulnerable deps — e.g. `joi@18.2.1` (Dependabot #5 / CVE-2026-48038, E02:S16:T06 Wave 6), `uuid`, `serialize-javascript`. Re-run `npm ci` + `npm run build` after override changes.
+6. **Ignore rules:** Use GitHub **dependabot ignore** only with a documented rationale in the PR body.
 
 ### Local verification after lockfile changes
 

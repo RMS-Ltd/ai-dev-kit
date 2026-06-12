@@ -11,8 +11,8 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
-## [0.2.16.6+8] - 12-06-26
+## [0.2.16.6+9] - 12-06-26
 
-E02:S16:T06 — Kanban Step 7 hygiene (publication wiring + version stamp alignment). SemVer **v0.4.1157+8**.
+E02:S16:T06 — Wave 6 Dependabot joi CVE remediation (`joi@18.2.1` npm override). SemVer **v0.4.1158+9**.
 
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.16.6+8.md)
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.16.6+9.md)

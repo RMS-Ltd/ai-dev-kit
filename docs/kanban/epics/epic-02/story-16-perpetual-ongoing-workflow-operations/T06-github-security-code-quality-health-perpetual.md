@@ -14,8 +14,8 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** Medium (ongoing)  
 **Created:** 2026-06-05  
-**Last updated:** 2026-06-12 (v0.2.16.6+8 — kanban Step 7 hygiene)  
-**Version Anchor:** v0.2.16.6+8  
+**Last updated:** 2026-06-12 (v0.2.16.6+9 — Wave 6 Dependabot joi CVE)  
+**Version Anchor:** v0.2.16.6+9  
 **Code:** E02S16T06  
 **Task Type:** Perpetual Maintenance
 
@@ -422,6 +422,45 @@ Use **`RW E02:S16:T06`** for recurring security/Code Quality hygiene (BUILD incr
 
 ---
 
+## Wave 6 manifest (2026-06-12 — Dependabot joi CVE)
+
+**Capture:** 2026-06-12 UTC. Source: [Dependabot alert #5](https://github.com/RMS-Ltd/ai-dev-kit/security/dependabot/5) — sole open Dependabot alert @ capture.
+
+| Field | Value |
+| ----- | ----- |
+| Alert # | **5** |
+| GHSA / CVE | **GHSA-q7cg-457f-vx79** / **CVE-2026-48038** |
+| Package | `joi` (npm, transitive, runtime) |
+| Manifest | `portal/package-lock.json` |
+| Severity | Medium (CVSS 5.3 — DoS via uncaught `RangeError` on deeply nested `link()` schemas) |
+| Vulnerable | **17.13.3** |
+| Patched | **>= 18.2.1** |
+| Dependency chain | `@docusaurus/core@3.10.1` → `@docusaurus/utils-validation` → `joi`; `@docusaurus/types@3.10.1` → `joi` |
+
+| Surface | Open count | Delta vs prior |
+| ------- | ---------- | -------------- |
+| [Dependabot](https://github.com/RMS-Ltd/ai-dev-kit/security/dependabot) | **1** → **0** (target post-merge) | First Dependabot alert since FR-105 enablement |
+| [Code scanning](https://github.com/RMS-Ltd/ai-dev-kit/security/code-scanning) | **0** | unchanged |
+| Code Quality standard bands | unchanged | TC25 still **pending** |
+
+**Cross-lane notes:** Dependabot **policy/config** → **E08:S03:T06** (FR-105); open alert **remediation** → **E02:S16:T06** perpetual hygiene.
+
+### Wave 6 remediation (2026-06-12)
+
+**Theme:** `joi` override per [IPP §8 Wave 6](../../../../implementation-cycles/IPP-E02S16T06-github-security-code-quality-health-perpetual-fr112.md).
+
+| Action | Result |
+| ------ | ------ |
+| `portal/package.json` override `"joi": "18.2.1"` | Same pattern as `uuid` / `serialize-javascript` |
+| `npm install` / lockfile | `joi@18.2.1` sole resolved version (`npm ls joi`) |
+| `npm ci && npm run build` | **green** (TC31) |
+| Portal pytest (TC35) | **9 passed** |
+| `npm audit` | joi / GHSA-q7cg-457f-vx79 **absent**; residual `shell-quote` critical deferred (out of Wave 6 scope) |
+| `RW E02:S16:T06 --art` | **v0.2.16.6+9** |
+| Operator Dependabot #5 verify (TC34) | **pending** post-merge |
+
+---
+
 ## Coordination matrix (T12–T17 vs T16)
 
 | Task | Surface | Status | T16 may remediate? |
@@ -455,6 +494,7 @@ Use **`RW E02:S16:T06`** for recurring security/Code Quality hygiene (BUILD incr
 - [x] **AC14 (Wave 4b):** Maintainability burn-down of **10** findings; pytest/greenfield green; CQG advisory; shipped **v0.2.16.6+4**; operator TC24 verify **closed partial** (10→8).
 - [x] **AC15 (Wave 5a):** Wave 5 manifest **8** M @ `f458a215a`; TC24 partial closed; shipped **v0.2.16.6+5**.
 - [x] **AC16 (Wave 5b):** Manual maintainability burn-down of **8** findings; pytest/greenfield/CQG green; shipped **v0.2.16.6+5**; operator TC25 verify **pending**.
+- [x] **AC17 (Wave 6):** Dependabot alert #5 `joi` CVE remediated via `portal/package.json` override **18.2.1**; portal build green; shipped **v0.2.16.6+9**; operator TC34 verify **pending**.
 
 ---
 
