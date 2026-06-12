@@ -13,8 +13,8 @@ housekeeping_policy: keep
 **Estimated Effort:** [TBD]  
 **Created:** 2026-04-14  
 **Completed:** 2026-06-03 (T08 FR-097 shipped **v0.2.15.8+3**; FR-092 program complete)  
-**Last updated:** 2026-06-12 (T14 COMPLETE — ADR-029 stamp immutability defaults **v0.2.15.14+1**)
-**Version:** v0.2.15.8+3
+**Last updated:** 2026-06-12 (v0.2.15.14+1 – Kanban documentation setup)
+**Version:** v0.2.15.14+1
 **Code:** E2S15
 
 ---

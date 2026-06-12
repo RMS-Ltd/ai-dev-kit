@@ -11,8 +11,8 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
-## [0.2.15.14+1] - 12-06-26
+## [0.2.16.2+8] - 12-06-26
 
-E02:S15:T14 — Kanban stamp immutability ADR-029 framework defaults (FR-130). SemVer **v0.4.1151+1**.
+E02:S16:T02 — UKW -u kanban bookkeeping post-T14 story/epic reconciliation. SemVer **v0.4.1152+8**.
 
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.15.14+1.md)
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.16.2+8.md)
