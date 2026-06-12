@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Validate Kanban v3.2 fresh-install fingerprint (F9/F17 / E06:S09:T27)."""
+"""Validate Kanban v3.4 fresh-install fingerprint (supersedes v3.2/v3.3 gate)."""
 
 from __future__ import annotations
 
@@ -17,13 +17,13 @@ def _load_catalog():
     kanban_scripts = _repo_root() / "packages" / "frameworks" / "kanban" / "scripts"
     if str(kanban_scripts) not in sys.path:
         sys.path.insert(0, str(kanban_scripts))
-    from kanban_v32_catalog import assert_v32_fingerprint
+    from kanban_v34_catalog import assert_v34_fingerprint
 
-    return assert_v32_fingerprint
+    return assert_v34_fingerprint
 
 
 def main() -> int:
-    parser = argparse.ArgumentParser(description="Kanban v3.2 install fingerprint gate")
+    parser = argparse.ArgumentParser(description="Kanban v3.4 install fingerprint gate")
     parser.add_argument(
         "--kanban-path",
         type=Path,
@@ -41,10 +41,10 @@ def main() -> int:
     assert_v32_fingerprint = _load_catalog()
     ok, errors = assert_v32_fingerprint(kanban_path)
     if ok:
-        print(f"PASS: Kanban v3.2 fingerprint OK at {kanban_path}")
+        print(f"PASS: Kanban v3.4 fingerprint OK at {kanban_path}")
         return 0
 
-    print(f"FAIL: Kanban v3.2 fingerprint ({len(errors)} issue(s)):")
+    print(f"FAIL: Kanban v3.4 fingerprint ({len(errors)} issue(s)):")
     for err in errors:
         print(f"  - {err}")
     return 1 if args.strict else 0

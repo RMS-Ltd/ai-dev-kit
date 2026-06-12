@@ -11,8 +11,8 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
-## [0.2.16.6+8] - 12-06-26
+## [0.6.9.34+1] - 12-06-26
 
-E02:S16:T06 — Kanban Step 7 hygiene (publication wiring + version stamp alignment). SemVer **v0.4.1157+8**.
+E06:S09:T34 — Kanban v3.5 packaged catalog (Small tier): fresh-install E01–E08 stories/tasks, installer task copy, fingerprint validator. SemVer **v0.4.1159+1**.
 
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.16.6+8.md)
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.6.9.34+1.md)

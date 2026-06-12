@@ -97,6 +97,8 @@ housekeeping_policy: keep
 
 - [x] **E06:S09:T30 – Kanban installer log epic path padding (BR-107 / F21)** - ✅ COMPLETE (**v0.6.9.30+2** — padded log paths via kanban_paths) — [Task](story-09-ai-dev-kit-installation-and-adopter-integration/T30-kanban-installer-log-epic-path-padding-br107.md) | [BR-107](../../fr-br/BR-107-kanban-installer-log-epic-path-padding-mismatch.md) | [IPP](../../../implementation-cycles/IPP-E06S09T30-kanban-installer-log-epic-path-padding-br107.md)
 
+- [x] **E06:S09:T34 – Kanban v3.5 packaged catalog (Small tier)** - ✅ COMPLETE (**v0.6.9.34+1** — v3.5 fresh-install catalog + task installer; SemVer **v0.4.1159+1**) — [Task](story-09-ai-dev-kit-installation-and-adopter-integration/T34-kanban-v35-packaged-catalog-small-tier.md) | [12-v35 delta](../../../knowledge/analysis/kanban-v2/12-v35-catalog-delta-bootstrap-stories.md) | —No IPP—
+
 ---
 
 ## Overview

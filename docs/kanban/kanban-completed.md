@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Completed Tasks
 
-**Last Updated:** 2026-06-12 (MWF E02:S15:T14 — ADR-029 stamp immutability defaults)
-**Version:** v0.2.15.14+1
+**Last Updated:** 2026-06-12 (RW E06:S09:T34 — Kanban v3.5 packaged catalog)
+**Version:** v0.6.9.34+1
 
 > **For MoSCOW prioritized tasks, see:** [`kboard.md`](kboard.md)  
 > **For completed FR/BR/UXR intake items, see:** [`intake-completed.md`](intake-completed.md)
@@ -19,6 +19,10 @@ housekeeping_policy: keep
 ---
 
 ## 20 Most Recently Completed Tasks
+
+#### **RW (2026-06-12)** — E06:S09:T34 @ **v0.6.9.34+1** (Kanban v3.5 packaged catalog — Small tier)
+
+- **[E06:S09:T34](epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T34-kanban-v35-packaged-catalog-small-tier.md)** — v3.5 fresh-install catalog (8 epics / 15 stories / 36 tasks), `_install_core_tasks`, fingerprint validator, greenfield mirror. SemVer **v0.4.1159+1**. **Completed:** `2026-06-12T17:31:44Z` | **Version:** `v0.6.9.34+1` | **Agent:** `RW E06:S09:T34 --art` | [12-v35 delta](../../knowledge/analysis/kanban-v2/12-v35-catalog-delta-bootstrap-stories.md)
 
 #### **MWF (2026-06-12)** — E02:S15:T14 @ **v0.2.15.14+1** (FR-130 ADR-029 stamp immutability defaults)
 
