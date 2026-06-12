@@ -1,41 +1,71 @@
 # RW Step 7 four-surface reconciliation report
 
-- **Contract:** FR-092 / ADR-018 (RW Step 7 four-surface reconciliation)
+- **Contract:** FR-092 / ADR-018 (RW Step 7 three-surface reconciliation)
 - **Invocation context:** rw_step_7
 - **Release scope:** E2:S16:T23 (v0.2.16.23+1)
-- **Timestamp (UTC):** 2026-06-08 13:29 UTC
+- **Timestamp (UTC):** 2026-06-08 13:38 UTC
 
 ## Touched-surface summary
 
-- Touched: `task_doc, story_doc, epic_doc, kboard, kanban_completed`
-- Untouched: `fbu_doc`
-- Total changes recorded: 8
+- Touched: `(none)`
+- Untouched: `task_doc, fbu_doc, kboard`
+- Total changes recorded: 7
+
+## Forensic stamp evidence (UXR-009 / FR-092 Wave 6)
+
+- Evidence mode: `work_authoritative`
+- Stamps appended with evidence: **0**
+- Stamps skipped (no evidence delta): **0**
+- Stamps preserved (existing footer): **0**
 
 ## Per-surface detail
 
 ### Surface: `task_doc`
 
-- Touched: **True**
-- Path(s): `docs/project-management/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T23-cqg-gate-relocation-to-idw-phase-6b-adr022.md`
-- Notes: Status COMPLETE; version anchor v0.2.16.23+1; AC5 checked.
+- Touched: **False**
+- Path(s): (none resolved)
+- Notes:
+  - No path resolved by RW Step 7. Task / FBU surfaces are owned by implementation execution; absence here is informational, not a failure.
 
 ### Surface: `fbu_doc`
 
 - Touched: **False**
-- Notes: No FR/BR/UXR primary intake doc for this operator-directed follow-on.
+- Path(s): (none resolved)
+- Notes:
+  - No path resolved by RW Step 7. Task / FBU surfaces are owned by implementation execution; absence here is informational, not a failure.
 
 ### Surface: `kboard`
 
+- Touched: **False**
+- Path(s):
+  - `/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/kboard.md`
+- Notes:
+  - Surface within release scope but not touched by this run (idempotent no-op or already canonical).
+
+## Auxiliary surfaces (Story / Epic propagation)
+
+### Auxiliary: `story_doc`
+
 - Touched: **True**
-- Path(s): `docs/project-management/kanban/kboard.md`
-- Notes: Board metadata + Should Have completion footnote for E02:S16:T23.
+- Path(s):
+  - `/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations.md`
+- Changes:
+  - ✅ Story doc updated: /Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations.md
 
-### Surface: `story_doc` / `epic_doc`
-
-- Touched: **True**
-- Notes: Story 016 checklist T23 COMPLETE; epic-02 last-updated.
-
-### Surface: `kanban_completed`
+### Auxiliary: `epic_doc`
 
 - Touched: **True**
-- Notes: T23 + T22 ledger entries at head.
+- Path(s):
+  - `/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/epic-02/epic-02.md`
+- Changes:
+  - Updated Epic Last updated: 2026-06-08 (v0.2.16.23+1 – Kanban documentation setup)
+
+### Auxiliary: `uncategorized`
+
+- Touched: **True**
+- Changes:
+  - Updated Version: v0.2.16.23+1
+  - Updated Last updated: 2026-06-08 (v0.2.16.23+1 – Kanban documentation setup)
+  - Updated Story 16 checklist entry
+  - Updated board Last Updated: 2026-06-08 (RW: E02:S16:T23)
+  - Updated board Version: v0.2.16.23+1
