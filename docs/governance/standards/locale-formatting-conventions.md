@@ -112,7 +112,8 @@ CLI re-exports: `cli/localisation.py`.
 ## 6. Tests
 
 ```bash
-pytest tests/test_locale_formatting.py tests/test_locale_cultural_formatting.py
+pytest tests/test_locale_formatting.py
+pytest tests/test_locale_cultural_formatting.py
 pytest -m fr006
 ```
 
@@ -120,15 +121,16 @@ pytest -m fr006
 
 ## 7. Per-locale smoke examples
 
-**Fixture:** `2026-06-07`, `14:30`, amount `1234.56` — see [`tests/fixtures/locale_formatting_smoke.yaml`](../../tests/fixtures/locale_formatting_smoke.yaml).
+**Authority:** E21:S04:T05 cultural validation · [IPP-E21S04T05](../../implementation-cycles/IPP-E21S04T05-cultural-formatting-validation.md)  
+**Fixture inputs:** date `2026-06-07`, time `14:30`, amount `1234.56`  
+**Engine:** Babel when installed (dev-kit `requirements.txt`); regenerate with `locale_formatting.format_*` if profiles change.
 
-| Locale | Date | Time | Number | Currency |
-| ------ | ---- | ---- | ------ | -------- |
+| Locale | Date (medium) | Time (short) | Number | Currency |
+| ------ | ------------- | ------------ | ------ | -------- |
 | `es` | 7 jun 2026 | 14:30 | 1.234,56 | 1.234,56 € |
 | `fr` | 7 juin 2026 | 14:30 | 1 234,56 | 1 234,56 € |
 | `de` | 07.06.2026 | 14:30 | 1.234,56 | 1.234,56 € |
-| `pt-BR` | 7 de jun. de 2026 | 14:30 | 1.234,56 | R$ 1.234,56 |
-| `pt-PT` | 07/06/2026 | 14:30 | 1 234,56 | 1 234,56 € |
+| `pt` | 7 de jun. de 2026 | 14:30 | 1.234,56 | € 1.234,56 |
 | `zh-CN` | 2026年6月7日 | 14:30 | 1,234.56 | ¥1,234.56 |
 | `zh-TW` | 2026年6月7日 | 下午2:30 | 1,234.56 | $1,234.56 |
 | `ja` | 2026/06/07 | 14:30 | 1,234.56 | ￥1,235 |
@@ -137,7 +139,8 @@ pytest -m fr006
 | `en-GB` | 7 Jun 2026 | 14:30 | 1,234.56 | £1,234.56 |
 | `en-US` | Jun 7, 2026 | 2:30 PM | 1,234.56 | $1,234.56 |
 
-**Validation:** E21:S04:T05 — [`IPP-E21S04T05`](../../implementation-cycles/IPP-E21S04T05-cultural-formatting-validation.md).
+**Cross-check:** [locale-cultural-requirements.md § Formatting validation](locale-cultural-requirements.md#formatting-validation-e21s04t05) maps T01 desk-research rows to this table.  
+**Tests:** `tests/fixtures/locale_formatting_smoke.yaml` · `tests/test_locale_cultural_formatting.py`
 
 ---
 
@@ -145,4 +148,5 @@ pytest -m fr006
 
 - [ADR-024](../../architecture/standards-and-adrs/ADR-024-i18n-framework-strategy.md)
 - [IPP-E21S02T05](../../implementation-cycles/IPP-E21S02T05-locale-formatting.md)
+- [IPP-E21S04T05](../../implementation-cycles/IPP-E21S04T05-cultural-formatting-validation.md)
 - [FR-006](../../project-management/kanban/fr-br/FR-006-localization-language-selection-uk-us-english.md)

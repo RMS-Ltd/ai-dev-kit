@@ -11,9 +11,11 @@ housekeeping_policy: keep
 **Task ID:** E21:S04:T05  
 **Status:** COMPLETE  
 **Priority:** MEDIUM  
-**Last updated:** 2026-06-10 (v0.21.4.5+1 — cultural formatting validation)  
-**Version:** v0.21.4.5+1  
+**Last updated:** 2026-06-10 (v0.21.4.5+1 — cultural formatting validation)
+**Version:** v0.21.4.5+1
 **Code:** E21S04T05
+
+✅ **COMPLETE (v0.21.4.5+1)**
 
 ---
 
@@ -27,40 +29,44 @@ housekeeping_policy: keep
 
 ## Scope
 
-Cultural validation layer for locale-specific formatting — smoke examples, T01 matrix cross-check, and cultural smoke tests. **Does not** re-implement formatting infrastructure (owned by **E21:S02:T05**).
+Validate that E21:S02:T05 formatting profiles align with E21:S04:T01 cultural expectations: publish per-locale smoke examples, cross-check desk-research matrix rows, and add cultural smoke tests for downstream T06/T07. **Does not** re-implement `locale_formatting.py`.
 
 ---
 
 ## Input
 
-- [IPP-E21S04T05](../../../implementation-cycles/IPP-E21S04T05-cultural-formatting-validation.md)
-- [locale_formatting.py](../../../../packages/frameworks/workflow-mgt/scripts/locale_formatting.py) (S02:T05 SoT)
-- [locale-cultural-requirements.md](../../../governance/standards/locale-cultural-requirements.md) formatting rows
+- [E21:S02:T05](../../../../implementation-cycles/IPP-E21S02T05-locale-formatting.md) — formatting infrastructure SoT
+- [locale-formatting-conventions.md](../../../../governance/standards/locale-formatting-conventions.md)
+- [locale-cultural-requirements.md](../../../../governance/standards/locale-cultural-requirements.md) — T01 formatting rows
+- [IPP-E21S04T05-cultural-formatting-validation.md](../../../../implementation-cycles/IPP-E21S04T05-cultural-formatting-validation.md)
+
+**Publication Status:** NOT_APPLICABLE (maintainer governance deliverable per IPP §6)
 
 ---
 
 ## Deliverable
 
-- §7 per-locale smoke examples in [locale-formatting-conventions.md](../../../governance/standards/locale-formatting-conventions.md)
-- Formatting validation cross-check in [locale-cultural-requirements.md](../../../governance/standards/locale-cultural-requirements.md)
+- Per-locale smoke example table in `locale-formatting-conventions.md` §7
+- Formatting validation cross-check in `locale-cultural-requirements.md`
 - `tests/fixtures/locale_formatting_smoke.yaml` + `tests/test_locale_cultural_formatting.py`
 
 ---
 
 ## Acceptance Criteria
 
-- [x] Smoke examples published for date, time, number, currency × nine rollout locales
+- [x] Date formatting smoke examples published per locale
+- [x] Time formatting smoke examples published per locale
+- [x] Number formatting smoke examples published per locale
+- [x] Currency formatting smoke examples published per locale
 - [x] Cultural matrix cross-check documented (aligned vs review-gap)
-- [x] Cultural smoke tests green under `pytest -m fr006`
-- [x] IPP ↔ task bidirectional links
+- [x] Formatting tested across locales (`pytest -m fr006`)
 
 ---
 
 ## Planning
 
-**IPP:** [IPP-E21S04T05-cultural-formatting-validation.md](../../../implementation-cycles/IPP-E21S04T05-cultural-formatting-validation.md)
-
-**Infra SoT:** [IPP-E21S02T05-locale-formatting.md](../../../implementation-cycles/IPP-E21S02T05-locale-formatting.md)
+**IPP:** [IPP-E21S04T05-cultural-formatting-validation.md](../../../../implementation-cycles/IPP-E21S04T05-cultural-formatting-validation.md)  
+**Infra SoT:** [E21:S02:T05](../../story-02-internationalisation-infrastructure/T05-configure-datetimenumber-formatting-per-locale.md) @ `v0.21.2.5+1`
 
 ---
 
@@ -68,13 +74,19 @@ Cultural validation layer for locale-specific formatting — smoke examples, T01
 
 **Released:** `v0.21.4.5+0` — RW -k --art --dpz (2026-06-07)
 
-**Branch:** `dev`
+**Branch:** `epic/21-internationalisation-localisation`
+
+**Trigger:**
+
+```text
+RW -k E21:S04:T05 --art --dpz
+```
+
+**Target version anchor:** `v0.21.4.5+0` (doc-init BUILD +0 per [BR-067](../../../fr-br/BR-067-rw-first-doc-only-release-defaults-to-build-plus-one-not-plus-zero.md)).
 
 ---
 
 ## Version Anchor
-
-**Forensic Marker:** `✅ COMPLETE (v0.21.4.5+1)`
 
 **Forensic Marker Format:** `✅ COMPLETE (vRC.E.S.T+B)`
 
@@ -85,3 +97,14 @@ Cultural validation layer for locale-specific formatting — smoke examples, T01
 Migrated from embedded Story section via `generate_task_doc.py` (FR-016 Wave 1 tooling).
 
 **Source Story:** `docs/kanban/epics/epic-21/story-04-cultural-adaptation.md`
+
+---
+
+## References
+
+- [IPP-E21S04T05-cultural-formatting-validation.md](../../../../implementation-cycles/IPP-E21S04T05-cultural-formatting-validation.md)
+- [IPP-E21S02T05-locale-formatting.md](../../../../implementation-cycles/IPP-E21S02T05-locale-formatting.md)
+- [locale-formatting-conventions.md](../../../../governance/standards/locale-formatting-conventions.md)
+- [locale-cultural-requirements.md](../../../../governance/standards/locale-cultural-requirements.md)
+- [FR-006](../../../fr-br/FR-006-localization-language-selection-uk-us-english.md)
+- [E21:S04 story](../story-04-cultural-adaptation.md)

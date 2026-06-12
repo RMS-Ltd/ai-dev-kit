@@ -2,8 +2,8 @@
 
 - **Contract:** FR-092 / ADR-018 (RW Step 7 three-surface reconciliation)
 - **Invocation context:** rw_step_7
-- **Release scope:** E2:S16:T23 (v0.2.16.23+1)
-- **Timestamp (UTC):** 2026-06-08 13:38 UTC
+- **Release scope:** E2:S16:T6 (v0.2.16.6+7)
+- **Timestamp (UTC):** 2026-06-12 10:37 UTC
 
 ## Touched-surface summary
 
@@ -13,7 +13,7 @@
 
 ## Forensic stamp evidence (UXR-009 / FR-092 Wave 6)
 
-- Evidence mode: `work_authoritative`
+- Evidence mode: `non_substantive`
 - Stamps appended with evidence: **0**
 - Stamps skipped (no evidence delta): **0**
 - Stamps preserved (existing footer): **0**
@@ -38,7 +38,7 @@
 
 - Touched: **False**
 - Path(s):
-  - `/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/kboard.md`
+  - `/Users/rms/Documents/projects/ai-dev-kit/docs/kanban/kboard.md`
 - Notes:
   - Surface within release scope but not touched by this run (idempotent no-op or already canonical).
 
@@ -48,24 +48,24 @@
 
 - Touched: **True**
 - Path(s):
-  - `/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations.md`
+  - `/Users/rms/Documents/projects/ai-dev-kit/docs/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations.md`
 - Changes:
-  - ✅ Story doc updated: /Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations.md
+  - ✅ Story doc updated: /Users/rms/Documents/projects/ai-dev-kit/docs/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations.md
 
 ### Auxiliary: `epic_doc`
 
 - Touched: **True**
 - Path(s):
-  - `/Users/rms/Documents/projects/ai-dev-kit/docs/project-management/kanban/epics/epic-02/epic-02.md`
+  - `/Users/rms/Documents/projects/ai-dev-kit/docs/kanban/epics/epic-02/epic-02.md`
 - Changes:
-  - Updated Epic Last updated: 2026-06-08 (v0.2.16.23+1 – Kanban documentation setup)
+  - Updated Epic Last updated: 2026-06-12 (v0.2.16.6+7 – Kanban documentation setup)
 
 ### Auxiliary: `uncategorized`
 
 - Touched: **True**
 - Changes:
-  - Updated Version: v0.2.16.23+1
-  - Updated Last updated: 2026-06-08 (v0.2.16.23+1 – Kanban documentation setup)
+  - Updated Version: v0.2.16.6+7
+  - Updated Last updated: 2026-06-12 (v0.2.16.6+7 – Kanban documentation setup)
   - Updated Story 16 checklist entry
-  - Updated board Last Updated: 2026-06-08 (RW: E02:S16:T23)
-  - Updated board Version: v0.2.16.23+1
+  - Updated board Last Updated: 2026-06-12 (RW: E02:S16:T06)
+  - Updated board Version: v0.2.16.6+7

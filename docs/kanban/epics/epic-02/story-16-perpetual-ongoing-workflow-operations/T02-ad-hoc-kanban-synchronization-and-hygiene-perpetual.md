@@ -14,8 +14,8 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** Medium  
 **Created:** 2026-04-22  
-**Last updated:** 2026-06-12 (v0.2.16.2+8 – UKW -u bookkeeping post-T14)
-**Version Anchor:** v0.2.16.2+8
+**Last updated:** 2026-06-12 (v0.2.16.2+10 – T23 four-surface forensic report v0.2.16.23+1)
+**Version Anchor:** v0.2.16.2+10
 **Code:** E02S16T02
 **Task Type:** Perpetual Maintenance
 

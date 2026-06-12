@@ -14,15 +14,16 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** Medium (ongoing)  
 **Created:** 2026-06-05  
-**Last updated:** 2026-06-10 (IPW Wave 5 — manifest @ `f458a215a`; Wave 5b remediation)  
-**Version Anchor:** v0.2.16.6+5 (Wave 5a manifest + Wave 5b remediation)  
+**Last updated:** 2026-06-12 (v0.2.16.6+8 — kanban Step 7 hygiene)  
+**Version Anchor:** v0.2.16.6+8  
 **Code:** E02S16T06  
 **Task Type:** Perpetual Maintenance
 
 
 **Upstream:** [FR-112 — Perpetual GitHub CI and security health lanes](../../../fr-br/FR-112-perpetual-github-ci-and-security-health-lanes.md)
 
-Publication Status: NOT_APPLICABLE
+Publication Status: NOT_APPLICABLE  
+Publication N/A Reason: Perpetual maintainer kanban task; repo SoT per BR-066 — not Docusaurus-published.
 
 ---
 
