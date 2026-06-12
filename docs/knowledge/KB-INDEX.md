@@ -1,9 +1,9 @@
 # KB Index
 
-**Generated:** 2026-06-12 09:22:52 UTC  
+**Generated:** 2026-06-12 09:43:35 UTC  
 **Scope:** /Users/rms/Documents/projects/ai-dev-kit/docs  
-**Total files:** 3240  
-**Total size:** 15.11 MB
+**Total files:** 3246  
+**Total size:** 15.15 MB
 
 ---
 
@@ -12,16 +12,16 @@
 | Section | Files | Size | With frontmatter | Without | evergreen | timeboxed | transient | Expired |
 |---------|-------|------|------------------|---------|-----------|-----------|-----------|--------|
 | analysis | 9 | 152.7 KB | 9 | 0 | 9 | 0 | 0 | 0 |
-| architecture | 127 | 1.24 MB | 121 | 6 | 120 | 1 | 0 | 0 |
+| architecture | 128 | 1.25 MB | 122 | 6 | 121 | 1 | 0 | 0 |
 | book-project | 2 | 26.5 KB | 1 | 1 | 1 | 0 | 0 | 0 |
-| changelog-and-release-notes | 1501 | 4.11 MB | 199 | 1302 | 183 | 0 | 1 | 0 |
+| changelog-and-release-notes | 1503 | 4.12 MB | 199 | 1304 | 183 | 0 | 1 | 0 |
 | developer-tools | 2 | 12.7 KB | 2 | 0 | 2 | 0 | 0 | 0 |
 | documentation | 33 | 354.3 KB | 30 | 3 | 30 | 0 | 0 | 0 |
 | governance | 26 | 206.0 KB | 26 | 0 | 26 | 0 | 0 | 0 |
 | guides | 7 | 31.8 KB | 7 | 0 | 7 | 0 | 0 | 0 |
-| implementation-cycles | 274 | 2.26 MB | 232 | 42 | 217 | 2 | 1 | 0 |
+| implementation-cycles | 275 | 2.26 MB | 233 | 42 | 218 | 2 | 1 | 0 |
 | journals | 4 | 14.7 KB | 0 | 4 | 0 | 0 | 0 | 0 |
-| kanban | 1152 | 5.39 MB | 1108 | 44 | 1077 | 0 | 3 | 0 |
+| kanban | 1154 | 5.41 MB | 1110 | 44 | 1079 | 0 | 3 | 0 |
 | knowledge | 75 | 1.18 MB | 72 | 3 | 69 | 1 | 2 | 3 |
 | maintainer | 1 | 2.9 KB | 1 | 0 | 1 | 0 | 0 | 0 |
 | maintenance | 24 | 138.7 KB | 13 | 11 | 9 | 3 | 0 | 0 |
@@ -32,7 +32,7 @@
 ## Optimization signals
 
 - **docs/README.md exists:** False
-- **Files missing lifecycle frontmatter:** 1416
+- **Files missing lifecycle frontmatter:** 1418
 - **Timeboxed/transient with expires_at in the past:** 3
 - **READMEs (under docs/):** 22
 
@@ -88,7 +88,7 @@
 - `changelog-and-release-notes/changelog-archive/CHANGELOG_v0.10.1.3+1.md`
 - `changelog-and-release-notes/changelog-archive/CHANGELOG_v0.10.1.4+1.md`
 - `changelog-and-release-notes/changelog-archive/CHANGELOG_v0.10.1.5+1.md`
-- ... and 1366 more
+- ... and 1368 more
 
 ### Expired (candidates for archive/delete)
 
@@ -166,7 +166,7 @@
 | architecture/standards-and-adrs/ADR-026-git-internal-maintainer-kb-fr121.md | 8.4 KB | 802 | evergreen | 2026-06-09T16:00:00 |  |
 | architecture/standards-and-adrs/ADR-027-rw-release-transaction-contract.md | 4.5 KB | 440 | evergreen | 2026-06-09T20:00:00 |  |
 | architecture/standards-and-adrs/ADR-028-agentic-kanban-migration-brownfield-fr127.md | 3.6 KB | 419 | evergreen | 2026-06-12T10:00:00 |  |
-| architecture/standards-and-adrs/ADR-029-kanban-stamp-immutability-substantive-work-only.md | — | — | evergreen | 2026-06-12T00:00:00 | Accepted; FR-130 / E02:S15:T14 |
+| architecture/standards-and-adrs/ADR-029-kanban-stamp-immutability-substantive-work-only.md | 12.0 KB | 1300 | evergreen | 2026-06-12T00:00:00 |  |
 | architecture/standards-and-adrs/ADR-openclaw-process-sentinel-skill.md | 10.9 KB | 1582 | timeboxed | 2026-05-26T18:30:00 | 365 |
 | architecture/standards-and-adrs/FR-046-implementation-guide.md | 7.5 KB | 947 |  |  |  |
 | architecture/standards-and-adrs/agent-network-access-and-git-push-limitations.md | 13.3 KB | 1667 | evergreen | 2025-12-04T12:10:00 |  |
@@ -432,6 +432,7 @@
 | implementation-cycles/IPP-E02S14T01-enumerate-workflow-mgt-installation-paths.md | 10.5 KB | 1426 | evergreen | 2026-06-05T18:00:00 |  |
 | implementation-cycles/IPP-E02S15T01-br066-corpus-tail-phase3.md | 5.5 KB | 705 | evergreen | 2026-06-03T00:00:00 |  |
 | implementation-cycles/IPP-E02S15T01-br066-publication-backfill-phase2.md | 7.0 KB | 888 | evergreen | 2026-06-02T00:00:00 |  |
+| implementation-cycles/IPP-E02S15T14-kanban-stamp-immutability-adr029-fr130.md | 3.8 KB | 425 | evergreen | 2026-06-12T14:00:00 |  |
 | implementation-cycles/IPP-E02S16T05-github-actions-ci-health-perpetual-fr112.md | 5.9 KB | 854 | evergreen | 2026-06-10T18:00:00 |  |
 | implementation-cycles/IPP-E02S16T06-github-security-code-quality-health-perpetual-fr112.md | 27.7 KB | 4361 | evergreen | 2026-06-05T17:00:00 |  |
 | implementation-cycles/IPP-E02S16T06-ukw-rp-flag-fr085.md | 14.9 KB | 2107 | evergreen | 2026-05-30T22:00:00 |  |
@@ -655,7 +656,7 @@
 | kanban/epics/epic-01/story-06-repository-ci-cd-setup/T01-setup-byob-badges-for-private-repository.md | 8.1 KB | 1119 | evergreen | 2025-12-18T00:00:00 |  |
 | kanban/epics/epic-01/story-06-repository-ci-cd-setup/T02-mit-license-file-and-repository-legal-metadata-fr117.md | 2.6 KB | 323 | evergreen | 2026-06-07T18:55:00 |  |
 | kanban/epics/epic-01/story-06-repository-ci-cd-setup.md | 2.7 KB | 297 | evergreen | 2025-12-18T00:00:00 |  |
-| kanban/epics/epic-02/epic-02.md | 7.6 KB | 833 | evergreen | 2025-12-04T12:01:51 |  |
+| kanban/epics/epic-02/epic-02.md | 7.6 KB | 829 | evergreen | 2025-12-04T12:01:51 |  |
 | kanban/epics/epic-02/story-01-rw-agent-execution-and-docs/T01-audit-report.md | 9.3 KB | 1022 | evergreen | 2025-12-04T12:01:50 |  |
 | kanban/epics/epic-02/story-01-rw-agent-execution-and-docs/T02-tag-confidentiafynddeals-examples-and-add-dev-kit-examples-c.md | 1.2 KB | 131 | evergreen | 2026-06-05T04:49:57 |  |
 | kanban/epics/epic-02/story-01-rw-agent-execution-and-docs/T03-align-cursorrules-rw-trigger-section-with-dev-kit-policy-com.md | 1.2 KB | 137 | evergreen | 2026-06-05T04:49:57 |  |
@@ -817,7 +818,8 @@
 | kanban/epics/epic-02/story-15-ipw-governance-and-publication-contract/T11-ipw-slash-command-claude-code-fr094.md | 5.1 KB | 547 | evergreen | 2026-05-14T00:00:00 |  |
 | kanban/epics/epic-02/story-15-ipw-governance-and-publication-contract/T12-ipw-documentation-phases-update-create-and-housing-fr096.md | 3.3 KB | 324 | evergreen | 2026-05-20T12:00:00 |  |
 | kanban/epics/epic-02/story-15-ipw-governance-and-publication-contract/T13-ipw-adr-necessity-checklist-fr100.md | 2.4 KB | 192 | evergreen | 2026-05-26T18:00:00 |  |
-| kanban/epics/epic-02/story-15-ipw-governance-and-publication-contract.md | 6.8 KB | 508 | evergreen | 2026-04-14T00:00:00 |  |
+| kanban/epics/epic-02/story-15-ipw-governance-and-publication-contract/T14-kanban-stamp-immutability-adr029-framework-defaults-fr130.md | 4.4 KB | 374 | evergreen | 2026-06-12T12:00:00 |  |
+| kanban/epics/epic-02/story-15-ipw-governance-and-publication-contract.md | 7.3 KB | 534 | evergreen | 2026-04-14T00:00:00 |  |
 | kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T01-establish-canonical-perpetual-ongoing-tasks-story-fr088.md | 456 B | 27 | evergreen | 2026-06-08T00:00:00 |  |
 | kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T01-workflow-maintenance-perpetual.md | 8.3 KB | 800 | evergreen | 2026-04-20T18:20:00 |  |
 | kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T02-ad-hoc-kanban-synchronization-and-hygiene-perpetual.md | 3.3 KB | 293 | evergreen | 2026-04-22T00:00:00 |  |
@@ -1277,7 +1279,7 @@
 | kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T23-greenfield-install-github-packages-delivery-uxr021.md | 5.1 KB | 447 | evergreen | 2026-06-05T00:00:00 |  |
 | kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T24-acquisition-layer-adk-error-codes-fr111.md | 3.3 KB | 277 | evergreen | 2026-06-05T18:00:00 |  |
 | kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T25-starborn-legacy-greenfield-install-diary-triage-uxr025.md | 5.5 KB | 542 | evergreen | 2026-06-09T00:00:00 |  |
-| kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T26-starborn-legacy-adk-install-program.md | 26.7 KB | 2955 | evergreen | 2026-06-09T12:00:00 |  |
+| kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T26-starborn-legacy-adk-install-program.md | 27.1 KB | 2973 | evergreen | 2026-06-09T12:00:00 |  |
 | kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T27-kanban-v32-package-rewrite-installer-f9-f17.md | 3.9 KB | 382 | evergreen | 2026-06-10T18:00:00 |  |
 | kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T28-v32-fresh-install-signoff-story-padding-br105.md | 1.9 KB | 162 | evergreen | 2026-06-10T20:00:00 |  |
 | kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T29-rw-install-non-interactive-changelog-prompt-br106.md | 1.9 KB | 144 | evergreen | 2026-06-10T20:00:00 |  |
@@ -1693,7 +1695,7 @@
 | kanban/fr-br/FR-094-ipw-slash-command-and-task-state-transition-mandate.md | 12.5 KB | 1738 | evergreen | 2026-05-13T00:00:00 |  |
 | kanban/fr-br/FR-095-auto-detect-github-remote-in-release-script.md | 2.3 KB | 286 | evergreen | 2026-05-19T00:00:00 |  |
 | kanban/fr-br/FR-096-ipw-documentation-phases-update-create-and-housing.md | 3.2 KB | 350 | evergreen | 2026-05-20T12:00:00 |  |
-| kanban/fr-br/FR-097-board-stamp-authority-and-forensic-timestamp-recovery.md | 8.5 KB | 983 | evergreen | 2026-05-20T16:00:00 |  |
+| kanban/fr-br/FR-097-board-stamp-authority-and-forensic-timestamp-recovery.md | 9.4 KB | 1040 | evergreen | 2026-05-20T16:00:00 |  |
 | kanban/fr-br/FR-098-ecc-optional-harness-layer-integration.md | 11.8 KB | 1322 | evergreen | 2026-05-26T12:00:00 |  |
 | kanban/fr-br/FR-099-spin-off-book-epic-to-private-repository.md | 12.7 KB | 1481 | evergreen | 2026-05-26T14:00:00 |  |
 | kanban/fr-br/FR-100-ipw-adr-necessity-checklist-and-decision-gate.md | 6.4 KB | 814 | evergreen | 2026-05-26T18:00:00 |  |
@@ -1727,6 +1729,7 @@
 | kanban/fr-br/FR-127-agentic-kanban-migration-agent-replace-tool-pipeline.md | 3.8 KB | 373 | proposed | 2026-06-11T10:00:00 |  |
 | kanban/fr-br/FR-128-environment-aware-workflow-execution.md | 11.9 KB | 1375 | evergreen | 2026-06-11T00:00:00 |  |
 | kanban/fr-br/FR-129-adk-package-update-mechanism.md | 8.7 KB | 952 | evergreen | 2026-06-11T12:00:00 |  |
+| kanban/fr-br/FR-130-kanban-stamp-immutability-adr029-framework-defaults.md | 7.8 KB | 760 | evergreen | 2026-06-12T12:00:00 |  |
 | kanban/fr-br/REOPENING_BR_AND_TASKS_GUIDE.md | 7.9 KB | 1115 | evergreen | 2025-12-16T13:45:00 |  |
 | kanban/fr-br/UXR-001-migration-user-experience-research.md | 12.8 KB | 1556 | evergreen | 2025-01-27T00:00:00 |  |
 | kanban/fr-br/UXR-002-comprehensive-uat-migration-utilities.md | 10.7 KB | 1307 | evergreen | 2025-12-10T00:00:00 |  |
@@ -1761,10 +1764,10 @@
 | kanban/intake-open-taskless-queue.md | 5.3 KB | 724 | evergreen | 2026-03-31T12:00:00 |  |
 | kanban/intake-structure.md | 18.1 KB | 1870 | evergreen | 2026-03-09T15:20:00 |  |
 | kanban/kanban-board-guide.md | 16.5 KB | 2136 | evergreen | 2026-01-20T00:00:00 |  |
-| kanban/kanban-completed.md | 138.1 KB | 10906 | evergreen | 2026-03-09T00:00:00 |  |
+| kanban/kanban-completed.md | 138.9 KB | 10956 | evergreen | 2026-03-09T00:00:00 |  |
 | kanban/kanban-structure.md | 25.5 KB | 2227 | evergreen | 2026-03-09T00:00:00 |  |
 | kanban/kboard.md | 32.1 KB | 2182 | evergreen | 2025-12-04T12:02:50 |  |
-| knowledge/KB-INDEX.md | 244.7 KB | 22981 |  |  |  |
+| knowledge/KB-INDEX.md | 245.3 KB | 23036 |  |  |  |
 | knowledge/README.md | 2.5 KB | 259 | evergreen | 2026-06-07T12:00:00 |  |
 | knowledge/USE_CASE_METHODOLOGY.md | 14.3 KB | 1844 | evergreen | 2025-12-16T14:30:00 |  |
 | knowledge/analysis/abstract-anti-patterns-use-case-exposed-design-flaw.md | 13.0 KB | 1796 | evergreen | 2025-12-18T00:00:00 |  |
@@ -1867,5 +1870,5 @@
 | project-agent-index.md | 4.3 KB | 392 | evergreen | 2026-05-30T21:00:00 |  |
 | project-management/README.md | 523 B | 34 | evergreen | 2025-12-04T12:01:54 |  |
 | release-notes/README.md | 1.4 KB | 123 | evergreen | 2026-06-07T12:00:00 |  |
-| changelog-and-release-notes/changelog-archive/ (summary) (1499 files) | 4.11 MB | 476076 |  |  |  |
+| changelog-and-release-notes/changelog-archive/ (summary) (1501 files) | 4.11 MB | 476470 |  |  |  |
 
