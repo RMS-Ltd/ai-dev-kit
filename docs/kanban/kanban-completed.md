@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Completed Tasks
 
-**Last Updated:** 2026-06-11 (RW E04:S19:T13 — UXR-028 kboard template v2.2.0)
-**Version:** v0.4.19.13+1
+**Last Updated:** 2026-06-12 (MWF E06:S09:T32 — BR-108 zero-padded epic detection)
+**Version:** v0.6.9.32+1
 
 > **For MoSCOW prioritized tasks, see:** [`kboard.md`](kboard.md)  
 > **For completed FR/BR/UXR intake items, see:** [`intake-completed.md`](intake-completed.md)
@@ -20,9 +20,17 @@ housekeeping_policy: keep
 
 ## 20 Most Recently Completed Tasks
 
+#### **MWF (2026-06-12)** — E06:S09:T32 @ **v0.6.9.32+1** (BR-108 zero-padded legacy epic detection)
+
+- **[E06:S09:T32](epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T32-detect-structure-zero-padded-epic-br108.md)** — `detect_existing_structure.py` recognises `Epic-01.md`–`Epic-09.md` legacy layouts; unit tests + greenfield sync. SemVer **v0.4.1149+1**. **Completed:** `2026-06-12T07:52:33Z` | **Version:** `v0.6.9.32+1` | **Agent:** `MWF E06:S09:T32 delivery` | [BR-108](fr-br/BR-108-detect-existing-structure-zero-padded-epic-names.md) | [IPP](../../implementation-cycles/IPP-E06S09T32-detect-structure-zero-padded-epic-br108.md)
+
 #### **RW (2026-06-11)** — E04:S19:T13 @ **v0.4.19.13+1** (UXR-028 kboard v3.2 packaged template)
 
 - **[E04:S19:T13](epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T13-kboard-v3dot2-packaged-template-uxr028.md)** — **KANBAN_BOARD_TEMPLATE.md v2.2.0** from SBL attempt 06: single-line rows, V band, split Ongoing, lean board (no epic rollup); greenfield mirror synced. SemVer **v0.4.1143+1**. **Completed:** `2026-06-11T10:31:16Z` | **Version:** `v0.4.19.13+1` | **Agent:** `RW E04:S19:T13 --art` | [UXR-028](fr-br/UXR-028-kboard-v3dot2-packaged-template-alignment.md)
+
+#### **MWF (2026-06-12)** — E06:S09:T32 @ **v0.6.9.32+1** (BR-108 zero-padded legacy epic detection)
+
+- **[E06:S09:T32](epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T32-detect-structure-zero-padded-epic-br108.md)** — `detect_existing_structure.py` recognises `Epic-01.md`–`Epic-09.md` legacy layouts; unit tests + greenfield sync. SemVer **v0.4.1149+1**. **Completed:** `2026-06-12T07:52:33Z` | **Version:** `v0.6.9.32+1` | **Agent:** `MWF E06:S09:T32 delivery` | [BR-108](fr-br/BR-108-detect-existing-structure-zero-padded-epic-names.md) | [IPP](../../implementation-cycles/IPP-E06S09T32-detect-structure-zero-padded-epic-br108.md)
 
 #### **IDW (2026-06-10)** — E06:S09:T30 @ **v0.6.9.30+2** (BR-107 Kanban installer log epic path padding)
 

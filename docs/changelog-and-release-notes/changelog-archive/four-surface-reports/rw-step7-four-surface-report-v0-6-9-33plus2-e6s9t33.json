@@ -2,32 +2,32 @@
   "auxiliary_surfaces": {
     "epic_doc": {
       "changes": [
-        "Updated Epic Last updated: 2026-06-11 (v0.21.5.2+2 \u2013 Kanban documentation setup)"
+        "Updated Epic Last updated: 2026-06-11 (v0.6.9.33+2 \u2013 Kanban documentation setup)"
       ],
       "notes": [],
       "paths": [
-        "/Users/rms/Documents/projects/ai-dev-kit/docs/kanban/epics/epic-21/epic-21.md"
+        "/Users/rms/Documents/projects/ai-dev-kit/docs/kanban/epics/epic-06/epic-06.md"
       ],
       "surface": "epic_doc",
       "touched": true
     },
     "story_doc": {
       "changes": [
-        "\u2705 Story doc updated: /Users/rms/Documents/projects/ai-dev-kit/docs/kanban/epics/epic-21/story-05-european-languages-localization.md"
+        "\u2705 Story doc updated: /Users/rms/Documents/projects/ai-dev-kit/docs/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration.md"
       ],
       "notes": [],
       "paths": [
-        "/Users/rms/Documents/projects/ai-dev-kit/docs/kanban/epics/epic-21/story-05-european-languages-localization.md"
+        "/Users/rms/Documents/projects/ai-dev-kit/docs/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration.md"
       ],
       "surface": "story_doc",
       "touched": true
     },
     "uncategorized": {
       "changes": [
-        "Updated Version: v0.21.5.2+2",
-        "Updated Last updated: 2026-06-11 (v0.21.5.2+2 \u2013 Kanban documentation setup)",
-        "Updated board Last Updated: 2026-06-11 (RW: E21:S05:T02)",
-        "Updated board Version: v0.21.5.2+2"
+        "Updated Version: v0.6.9.33+2",
+        "Updated Last updated: 2026-06-11 (v0.6.9.33+2 \u2013 Kanban documentation setup)",
+        "Updated board Last Updated: 2026-06-11 (RW: E06:S09:T33)",
+        "Updated board Version: v0.6.9.33+2"
       ],
       "notes": [],
       "paths": [],
@@ -38,11 +38,11 @@
   "contract": "FR-092 / ADR-018 (RW Step 7 three-surface reconciliation)",
   "invocation_context": "rw_step_7",
   "release_scope": {
-    "epic": 21,
-    "story": 5,
-    "task": 2,
-    "task_id": "E21:S5:T2",
-    "version_string": "v0.21.5.2+2"
+    "epic": 6,
+    "story": 9,
+    "task": 33,
+    "task_id": "E6:S9:T33",
+    "version_string": "v0.6.9.33+2"
   },
   "stamp_evidence": {},
   "summary": {
@@ -88,5 +88,5 @@
       "touched": false
     }
   },
-  "timestamp_utc": "2026-06-11 16:57 UTC"
+  "timestamp_utc": "2026-06-11 11:38 UTC"
 }

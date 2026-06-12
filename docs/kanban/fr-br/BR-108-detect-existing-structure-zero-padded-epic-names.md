@@ -11,7 +11,7 @@ housekeeping_policy: keep
 **Bug ID:** BR-108  
 **Priority:** MEDIUM  
 **Severity:** MEDIUM (migration detection false negative)  
-**Status:** OPEN  
+**Status:** IN PROGRESS (fix shipped v0.6.9.32+1 — operator SBL verification pending)  
 **Source finding:** **F23** (Starborn Legacy install attempt 06)  
 **Related:** [FR-127](FR-127-agentic-kanban-migration-agent-replace-tool-pipeline.md) · [UXR-017](UXR-017-kanban-epic-story-path-lowercase-naming.md) · [E06:S09:T26](../epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T26-starborn-legacy-adk-install-program.md)  
 **Implementing Task:** [E06:S09:T32](../epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T32-detect-structure-zero-padded-epic-br108.md)  
@@ -41,6 +41,8 @@ Detector matches zero-padded legacy epic filenames and normalises to canonical `
 
 ## Acceptance criteria
 
-- [ ] `Epic-01.md` … `Epic-09.md` detected and mapped to epic 1–9.
-- [ ] Unit test with SBL-style legacy layout fixture.
-- [ ] No regression on unpadded `Epic-1.md` / lowercase `epic-01` layouts.
+- [x] `Epic-01.md` … `Epic-09.md` detected and mapped to epic 1–9. (v0.6.9.32+1 — unit tests)
+- [x] Unit test with SBL-style legacy layout fixture. (v0.6.9.32+1)
+- [x] No regression on unpadded `Epic-1.md` / lowercase `epic-01` layouts. (v0.6.9.32+1)
+
+**Fix attempt:** [E06:S09:T32](../epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T32-detect-structure-zero-padded-epic-br108.md) @ `v0.6.9.32+1` — awaiting operator SBL re-run for end-to-end verification.
