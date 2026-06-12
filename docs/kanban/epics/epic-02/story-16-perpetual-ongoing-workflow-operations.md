@@ -11,7 +11,7 @@ housekeeping_policy: keep
 **Status:** IN PROGRESS
 **Priority:** HIGH  
 **Created:** 2026-04-20  
-**Last updated:** 2026-06-12 (RW E02:S16:T02 — T23 four-surface forensic report v0.2.16.23+1)
+**Last updated:** 2026-06-12 (v0.2.16.2+10 – Kanban documentation setup)
 **Version:** v0.2.16.2+10
 **Code:** E2S16
 

@@ -11,8 +11,8 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
-## [0.2.16.2+10] - 12-06-26
+## [0.2.16.6+7] - 12-06-26
 
-E02:S16:T02 — T23 four-surface forensic report for v0.2.16.23+1 (stash recovery). SemVer **v0.4.1155+10**.
+E02:S16:T06 — Locale doc contract test alignment (FR-006 CI parity). SemVer **v0.4.1156+7**.
 
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.16.2+10.md)
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.16.6+7.md)

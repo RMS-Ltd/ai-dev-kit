@@ -14,8 +14,8 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** Medium (ongoing)  
 **Created:** 2026-06-05  
-**Last updated:** 2026-06-12 (v0.2.16.6+6 — Epic 21 locale WIP restore from stash)  
-**Version Anchor:** v0.2.16.6+6  
+**Last updated:** 2026-06-12 (v0.2.16.6+7 — locale doc CI parity fix)  
+**Version Anchor:** v0.2.16.6+7  
 **Code:** E02S16T06  
 **Task Type:** Perpetual Maintenance
 
