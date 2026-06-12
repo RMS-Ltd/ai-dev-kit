@@ -68,6 +68,16 @@ def test_c7_handoffs_t04_absorbs_imagery_scope():
     assert "E21:S04:T04" in handoffs
 
 
+def test_c8_handoffs_t05_links_smoke_section():
+    """C8: Handoffs — T05 row links to locale-formatting-conventions §7 smoke table."""
+    text = CULTURAL_DOC.read_text(encoding="utf-8")
+    handoffs = text.split("## Handoffs", 1)[-1].split("## References", 1)[0]
+    assert "E21:S04:T05" in handoffs
+    assert "7-per-locale-smoke-examples" in handoffs or "locale-formatting-conventions.md" in handoffs
+    validation = text.split("## Formatting validation", 1)[-1].split("## Handoffs", 1)[0]
+    assert "locale-formatting-conventions.md" in validation
+
+
 def test_c5_outbound_cross_links():
     """C5: Doc links to rollout matrix and translation workflow."""
     text = CULTURAL_DOC.read_text(encoding="utf-8")

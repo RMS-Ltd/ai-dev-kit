@@ -11,8 +11,8 @@ housekeeping_policy: keep
 **Status:** IN PROGRESS
 **Priority:** HIGH  
 **Created:** 2026-04-20  
-**Last updated:** 2026-06-12 (UKW -u — post-T14 E02 story/epic version reconciliation)
-**Version:** v0.2.16.2+8
+**Last updated:** 2026-06-12 (RW E02:S16:T06 — Epic 21 locale WIP restore)
+**Version:** v0.2.16.6+6
 **Code:** E2S16
 
 ---

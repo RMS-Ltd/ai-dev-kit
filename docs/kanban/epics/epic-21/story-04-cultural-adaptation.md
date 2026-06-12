@@ -12,8 +12,8 @@ housekeeping_policy: keep
 **Priority:** LOW  
 **Estimated Effort:** [TBD]  
 **Created:** 2025-12-09  
-**Last updated:** 2026-06-10 (v0.21.4.4+1 – Kanban documentation setup)
-**Version:** v0.21.4.4+1
+**Last updated:** 2026-06-10 (v0.21.4.5+1 – Kanban documentation setup)
+**Version:** v0.21.4.5+1
 **Code:** E21S04
 
 ---
@@ -39,9 +39,8 @@ Ensure framework content and features are culturally appropriate for different r
 - [x] **E21:S04:T03 – Implement RTL support (Right-to-Left) for Arabic/Hebrew** - COMPLETE (**v0.21.4.3+1**)
   - Task: [`T03-implement-rtl-support-right-to-left-for-arabichebrew`](story-04-cultural-adaptation/T03-implement-rtl-support-right-to-left-for-arabichebrew.md)
   - Planning: [IPP-E21S04T03](../../implementation-cycles/IPP-E21S04T03-rtl-support-arabic-hebrew.md) · [locale-rtl-conventions](../../governance/standards/locale-rtl-conventions.md)
-- [x] **E21:S04:T04 – Adapt content and examples for cultural context** - COMPLETE (**v0.21.4.4+1**)
+- [ ] **E21:S04:T04 – Adapt content and examples for cultural context** - TODO (absorbs superseded T02 imagery/layout scope)
   - Task: [`T04-adapt-content-and-examples-for-cultural-context`](story-04-cultural-adaptation/T04-adapt-content-and-examples-for-cultural-context.md)
-  - Planning: [IPP-E21S04T04](../../implementation-cycles/IPP-E21S04T04-cultural-content-adaptation.md)
 - [x] **E21:S04:T05 – Cultural formatting validation (dates, times, numbers, currency)** - COMPLETE (**v0.21.4.5+1**)
   - Task: [`T05-configure-locale-specific-formatting-dates-times-numbers-cur`](story-04-cultural-adaptation/T05-configure-locale-specific-formatting-dates-times-numbers-cur.md)
   - Planning: [IPP-E21S04T05](../../implementation-cycles/IPP-E21S04T05-cultural-formatting-validation.md) · [locale-formatting-conventions §7](../../governance/standards/locale-formatting-conventions.md)
@@ -57,8 +56,8 @@ Ensure framework content and features are culturally appropriate for different r
 - [ ] Cultural requirements researched
 - [ ] UI/UX adapted for different cultures (via T04 content/presentation policy + T03 RTL — not a separate task after T02 supersede)
 - [x] RTL support implemented (T03 @ v0.21.4.3+1)
-- [x] Content adapted for cultural context (T04 @ v0.21.4.4+1)
-- [x] Locale-specific formatting configured (T05 validation @ v0.21.4.5+1)
+- [ ] Content adapted for cultural context
+- [x] Locale-specific formatting configured (T05 @ v0.21.4.5+1)
 - [ ] Cultural adaptations tested
 - [ ] Cultural considerations documented
 

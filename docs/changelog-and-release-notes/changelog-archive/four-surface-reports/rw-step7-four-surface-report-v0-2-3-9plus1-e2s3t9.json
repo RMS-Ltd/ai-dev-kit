@@ -2,7 +2,7 @@
   "auxiliary_surfaces": {
     "epic_doc": {
       "changes": [
-        "Updated Epic Last updated: 2026-06-10 (v0.2.16.6+4 \u2013 Kanban documentation setup)"
+        "Updated Epic Last updated: 2026-06-10 (v0.2.3.9+1 \u2013 Kanban documentation setup)"
       ],
       "notes": [],
       "paths": [
@@ -13,22 +13,21 @@
     },
     "story_doc": {
       "changes": [
-        "\u2705 Story doc updated: /Users/rms/Documents/projects/ai-dev-kit/docs/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations.md"
+        "\u2705 Story doc updated: /Users/rms/Documents/projects/ai-dev-kit/docs/kanban/epics/epic-02/story-03-additional-workflows-and-examples.md"
       ],
       "notes": [],
       "paths": [
-        "/Users/rms/Documents/projects/ai-dev-kit/docs/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations.md"
+        "/Users/rms/Documents/projects/ai-dev-kit/docs/kanban/epics/epic-02/story-03-additional-workflows-and-examples.md"
       ],
       "surface": "story_doc",
       "touched": true
     },
     "uncategorized": {
       "changes": [
-        "Updated Version: v0.2.16.6+4",
-        "Updated Last updated: 2026-06-10 (v0.2.16.6+4 \u2013 Kanban documentation setup)",
-        "Updated Story 16 checklist entry",
-        "Updated board Last Updated: 2026-06-10 (RW: E02:S16:T06)",
-        "Updated board Version: v0.2.16.6+4"
+        "Updated Version: v0.2.3.9+1",
+        "Updated Last updated: 2026-06-10 (v0.2.3.9+1 \u2013 Kanban documentation setup)",
+        "Updated board Last Updated: 2026-06-10 (RW: E02:S03:T09)",
+        "Updated board Version: v0.2.3.9+1"
       ],
       "notes": [],
       "paths": [],
@@ -40,17 +39,17 @@
   "invocation_context": "rw_step_7",
   "release_scope": {
     "epic": 2,
-    "story": 16,
-    "task": 6,
-    "task_id": "E2:S16:T6",
-    "version_string": "v0.2.16.6+4"
+    "story": 3,
+    "task": 9,
+    "task_id": "E2:S3:T9",
+    "version_string": "v0.2.3.9+1"
   },
   "stamp_evidence": {},
   "summary": {
     "stamps_appended_with_evidence": 0,
     "stamps_preserved_existing": 0,
     "stamps_skipped_no_evidence": 0,
-    "total_changes": 7,
+    "total_changes": 6,
     "touched_surfaces": [],
     "untouched_surfaces": [
       "task_doc",
@@ -89,5 +88,5 @@
       "touched": false
     }
   },
-  "timestamp_utc": "2026-06-10 10:18 UTC"
+  "timestamp_utc": "2026-06-10 10:36 UTC"
 }

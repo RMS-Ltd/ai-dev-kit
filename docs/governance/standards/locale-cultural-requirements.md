@@ -89,29 +89,29 @@ Shared axes evaluated in every per-locale matrix below:
 | Naming and inclusivity | Gender-neutral *Entwicklerin/Entwickler* or neutral *Entwicklungsperson* in inclusive mode; capitalisation rules (nouns) affect YAML key display not values. | Medium |
 | Translation review tier | P0/P1: native review recommended | Yes |
 
-### Portuguese — Brazilian (pt-BR)
+### Brazilian Portuguese (pt-BR)
 
 | Dimension | Desk research notes | Review gap? |
 | --------- | ------------------- | ----------- |
-| Formatting | Brazilian decimal comma; BRL currency — see [locale-formatting-conventions.md](locale-formatting-conventions.md) §7 | Low |
+| Formatting | Comma decimal, dot thousands; `DD/MM/YYYY`; resolve from generic `pt` scaffold in S05 before ship | High |
 | Text direction | LTR | No |
-| Tone and formality | Enterprise UX often informal *você*; consistent within tree | High |
-| Examples and metaphors | Avoid Spanish loan false friends; neutral git/RW examples | Medium |
-| Imagery | Avoid US-centric clip art | Low |
-| Naming and inclusivity | Gendered adjectives; prefer neutral instructions | Medium |
-| Translation review tier | P0/P1: native pt-BR review | Yes |
+| Tone and formality | Brazilian enterprise UX often informal *você*; pick one register per locale tree. | High |
+| Examples and metaphors | Avoid Spanish loan false friends; use locale-appropriate git/hosting examples. | Medium |
+| Imagery | Similar to Spanish LATAM — avoid US-centric clip art. | Low |
+| Naming and inclusivity | Gendered adjectives must agree (*configurado/configurada*); prefer neutral instructions (“concluído” → passive or noun phrases). | Medium |
+| Translation review tier | P0/P1: native pt-BR review recommended | Yes |
 
-### Portuguese — European (pt-PT)
+### European Portuguese (pt-PT)
 
 | Dimension | Desk research notes | Review gap? |
 | --------- | ------------------- | ----------- |
-| Formatting | European grouping; EUR — distinct from pt-BR | Low |
+| Formatting | Comma decimal; space thousands; `DD/MM/YYYY`; distinct from pt-BR in samples and YAML locale keys | High |
 | Text direction | LTR | No |
-| Tone and formality | More formal register than pt-BR; separate locale tree | High |
-| Examples and metaphors | Do not reuse pt-BR strings as “translation” | High |
-| Imagery | Same policy as pt-BR | Low |
-| Naming and inclusivity | European Portuguese agreement rules | Medium |
-| Translation review tier | P0/P1: native pt-PT review | Yes |
+| Tone and formality | European Portuguese more formal than Brazilian default; maintain separate glossary from pt-BR. | High |
+| Examples and metaphors | Do not reuse pt-BR strings; lexical and spelling differences required. | High |
+| Imagery | Neutral DevOps iconography; avoid LATAM-specific clip art. | Low |
+| Naming and inclusivity | Gender agreement as pt-BR; prefer neutral passive constructions where possible. | Medium |
+| Translation review tier | P0/P1: native pt-PT review recommended | Yes |
 
 ### Chinese Simplified (zh-CN)
 
@@ -199,7 +199,7 @@ No further English cultural research required in T01; downstream tasks use selec
 | P1 | Replace US-centric RW/git examples in whole-file templates with neutral metaphors | E21:S04:T04 | Medium |
 | P1 | Define glossary table for loanwords (*Release*, *Kanban*, *tag*, *workflow*) per locale | E21:S04:T04 | High |
 | P2 | Audit directional icons and progress indicators for RTL mirroring (checklist T04; impl T03) | E21:S04:T04 | Yes |
-| P2 | ~~Resolve `pt` scaffold~~ **Done** — `pt-BR` + `pt-PT` trees @ E21:S04:T04 | E21:S05:T04 | Medium |
+| P2 | Resolve `pt` scaffold into `pt-BR` or `pt-PT` before S05 translation | E21:S04:T04 | High |
 | P3 | Add cultural adaptation E2E checks alongside translation locale tests | E21:S04:T06 | Medium |
 
 ---
@@ -222,16 +222,21 @@ Outline for **E21:S04:T07** contributor cultural guidelines (not final prose):
 
 ## Formatting validation (E21:S04:T05)
 
-Smoke examples for date, time, number, and currency across all nine rollout locales are published in [locale-formatting-conventions.md §7](locale-formatting-conventions.md#7-per-locale-smoke-examples), generated from `locale_formatting.py` with fixture `2026-06-07 14:30` / amount `1234.56`. Fixture: [`tests/fixtures/locale_formatting_smoke.yaml`](../../tests/fixtures/locale_formatting_smoke.yaml).
+**Smoke table:** [locale-formatting-conventions.md §7](locale-formatting-conventions.md#7-per-locale-smoke-examples) · **Tests:** `tests/fixtures/locale_formatting_smoke.yaml` · [IPP-E21S04T05](../../implementation-cycles/IPP-E21S04T05-cultural-formatting-validation.md)
 
-| Locale | Matrix alignment | Notes |
-| ------ | ---------------- | ----- |
-| `es`, `fr`, `de`, `pt-BR`, `pt-PT` | Aligned | pt-BR BRL; pt-PT EUR per T04 split |
-| `zh-CN`, `zh-TW`, `ja` | Aligned | CJK date glyphs; TW 12h time |
-| `ru` | Aligned | Cyrillic month abbreviation |
-| `ar` | Review gap | Western digits in smoke output; Eastern Arabic digits deferred to T06 when locale data permits |
+| Locale | T01 matrix expectation | Smoke output alignment | Notes |
+| ------ | ---------------------- | ---------------------- | ----- |
+| es | Comma decimal, dot thousands; `DD/MM/YYYY` | Aligned | 24h time in smoke |
+| fr | Space thousands; comma decimal; `DD/MM/YYYY` | Aligned | Narrow no-break space in Babel output |
+| de | Comma decimal; dot thousands; `DD.MM.YYYY` | Aligned | |
+| pt | pt-BR vs pt-PT variant TBD | Partial | Generic `pt` scaffold — **Review gap** until S05 resolves variant |
+| zh-CN | `YYYY年M月D日` or ISO; grouping 万/亿 | Aligned (date) | Number uses Western grouping in Babel — **Review gap** for 万/亿 display |
+| zh-TW | `YYYY/MM/DD`; terminology differs from zh-CN | Aligned | TWD currency in smoke |
+| ja | `YYYY/MM/DD`; JPY rounding | Aligned | JPY rounds to integer in smoke |
+| ru | Comma decimal; space thousands | Aligned | |
+| ar | RTL context; locale digits | Aligned | Digit shaping varies by Babel — structural test only |
 
-Planning: [IPP-E21S04T05](../../implementation-cycles/IPP-E21S04T05-cultural-formatting-validation.md). Infra SoT: [IPP-E21S02T05](../../implementation-cycles/IPP-E21S02T05-locale-formatting.md).
+**Infrastructure:** formatting APIs and `LOCALE_FORMAT_PROFILES` remain [E21:S02:T05](../../implementation-cycles/IPP-E21S02T05-locale-formatting.md) — this section validates cultural fit only.
 
 ---
 
@@ -242,20 +247,10 @@ _T02 superseded @ `v0.21.4.2+1` — imagery, layout expansion, and directional-i
 | Task | Consumes from this doc |
 | ---- | ---------------------- |
 | [E21:S04:T03](../../kanban/epics/epic-21/story-04-cultural-adaptation/T03-implement-rtl-support-right-to-left-for-arabichebrew.md) | Arabic RTL dimensions; `he` extension note; RTL icon mirroring implementation — **API/conventions:** [locale-rtl-conventions.md](locale-rtl-conventions.md) |
-| [E21:S04:T04](../../kanban/epics/epic-21/story-04-cultural-adaptation/T04-adapt-content-and-examples-for-cultural-context.md) | **Policy:** [locale-cultural-content-policy.md](locale-cultural-content-policy.md) · [locale-loanword-glossary.md](locale-loanword-glossary.md) · [locale-directional-icon-audit.md](locale-directional-icon-audit.md); pt-BR/pt-PT split; English-source example neutralization |
-| [E21:S04:T05](../../kanban/epics/epic-21/story-04-cultural-adaptation/T05-configure-locale-specific-formatting-dates-times-numbers-cur.md) | Per-locale formatting rows — **validated** via §7 smoke table |
+| [E21:S04:T04](../../kanban/epics/epic-21/story-04-cultural-adaptation/T04-adapt-content-and-examples-for-cultural-context.md) | Tone, examples, glossary, pt variant; imagery policy; layout expansion guidance; directional-icon audit checklist (absorbed from superseded T02) |
+| [E21:S04:T05](../../kanban/epics/epic-21/story-04-cultural-adaptation/T05-configure-locale-specific-formatting-dates-times-numbers-cur.md) | Per-locale formatting rows — **smoke evidence:** [locale-formatting-conventions.md §7](locale-formatting-conventions.md#7-per-locale-smoke-examples) |
 | [E21:S04:T06](../../kanban/epics/epic-21/story-04-cultural-adaptation/T06-test-cultural-adaptations.md) | E2E cultural checks |
 | [E21:S04:T07](../../kanban/epics/epic-21/story-04-cultural-adaptation/T07-document-cultural-considerations-and-guidelines.md) | Guideline framework (draft) → polished guide |
-
----
-
-## Cultural content policy (E21:S04:T04)
-
-Delivered @ E21:S04:T04 — [IPP-E21S04T04](../../implementation-cycles/IPP-E21S04T04-cultural-content-adaptation.md):
-
-- [locale-cultural-content-policy.md](locale-cultural-content-policy.md) — imagery, string-length, examples
-- [locale-loanword-glossary.md](locale-loanword-glossary.md) — per-locale loanwords
-- [locale-directional-icon-audit.md](locale-directional-icon-audit.md) — completed audit checklist
 
 ---
 

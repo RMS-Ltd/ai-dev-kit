@@ -14,8 +14,8 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** Medium (ongoing)  
 **Created:** 2026-06-05  
-**Last updated:** 2026-06-10 (IPW Wave 5 — manifest @ `f458a215a`; Wave 5b remediation)  
-**Version Anchor:** v0.2.16.6+5 (Wave 5a manifest + Wave 5b remediation)  
+**Last updated:** 2026-06-12 (v0.2.16.6+6 — Epic 21 locale WIP restore from stash)  
+**Version Anchor:** v0.2.16.6+6  
 **Code:** E02S16T06  
 **Task Type:** Perpetual Maintenance
 

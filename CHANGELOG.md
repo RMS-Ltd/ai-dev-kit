@@ -11,8 +11,8 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
-## [0.2.16.2+8] - 12-06-26
+## [0.2.16.6+6] - 12-06-26
 
-E02:S16:T02 — UKW -u kanban bookkeeping post-T14 story/epic reconciliation. SemVer **v0.4.1152+8**.
+E02:S16:T06 — Epic 21 locale cultural-adaptation WIP restore + perpetual lane release. SemVer **v0.4.1153+6**.
 
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.16.2+8.md)
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.16.6+6.md)
