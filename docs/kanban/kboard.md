@@ -32,8 +32,6 @@ housekeeping_policy: keep
 - **E06:S09:T26** – Starborn Legacy ADK install program - 🔄 IN PROGRESS (HIGH — FR-079 **accepted**; adopter sign-off final; greenfield program closed) | [Task](epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T26-starborn-legacy-adk-install-program.md) | [attempt-06 index](../../../../adk-install-into-sbl/attempt-06/README.md) | —No IPP— | Last modified: 2026-06-10 17:24 UTC
 
 
-- **E06:S09:T31** – Agentic kanban migration agent (FR-127 / F22) - 📋 TODO (HIGH — attempt 06 intake) | [Task](epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T31-agentic-kanban-migration-agent-fr127.md) | [FR-127](fr-br/FR-127-agentic-kanban-migration-agent-replace-tool-pipeline.md) | —No IPP— | Last modified: 2026-06-11 10:40 UTC
-
 - **E08:S03:T12** – Code Quality maintainability backlog (BR-099) - 🔄 IN PROGRESS (MEDIUM, **v0.8.3.12+9** wave-6 IPW; **103/Fair** @ `d5c4bca5`; **`implement wave 6`**) | [Task](epics/epic-08/story-03-automation-scripts/T12-code-quality-maintainability-backlog-br099.md) | [BR-099](fr-br/BR-099-code-quality-maintainability-backlog.md) | [—IPP—](../../implementation-cycles/IPP-E08S03T12-code-quality-maintainability-backlog-br099.md) | Last modified: 2026-06-06 17:01 UTC
 
 ### Verification (V) - Task Shipped, FBU Verification Pending

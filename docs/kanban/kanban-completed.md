@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Completed Tasks
 
-**Last Updated:** 2026-06-12 (MWF E06:S09:T32 — BR-108 zero-padded epic detection)
-**Version:** v0.6.9.32+1
+**Last Updated:** 2026-06-12 (MWF E06:S09:T31 — KMA brownfield kanban migration)
+**Version:** v0.6.9.31+1
 
 > **For MoSCOW prioritized tasks, see:** [`kboard.md`](kboard.md)  
 > **For completed FR/BR/UXR intake items, see:** [`intake-completed.md`](intake-completed.md)
@@ -19,6 +19,10 @@ housekeeping_policy: keep
 ---
 
 ## 20 Most Recently Completed Tasks
+
+#### **MWF (2026-06-12)** — E06:S09:T31 @ **v0.6.9.31+1** (FR-127 KMA brownfield kanban migration)
+
+- **[E06:S09:T31](epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T31-agentic-kanban-migration-agent-fr127.md)** — Kanban Migration Agent (KMA) workflow, ADR-028, gated installer migration modes, SBL fixture + tests, INSTALL brownfield section. SemVer **v0.4.1150+1**. **Completed:** `2026-06-12T08:05:06Z` | **Version:** `v0.6.9.31+1` | **Agent:** `MWF E06:S09:T31 delivery` | [FR-127](fr-br/FR-127-agentic-kanban-migration-agent-replace-tool-pipeline.md) | [IPP](../../implementation-cycles/IPP-E06S09T31-agentic-kanban-migration-agent-fr127.md)
 
 #### **MWF (2026-06-12)** — E06:S09:T32 @ **v0.6.9.32+1** (BR-108 zero-padded legacy epic detection)
 

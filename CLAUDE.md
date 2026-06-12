@@ -170,6 +170,20 @@ Do not silently no-op.
 
 ---
 
+## KMA Trigger Routing
+
+**When the user message begins with `KMA` or `kma` (case-insensitive), treat it as a Kanban Migration Agent trigger command — equivalent to the `/kma` slash command.**
+
+Examples:
+- `KMA` → execute KMA workflow (infer legacy root from context)
+- `KMA /path/to/legacy/kanban` → ingest from explicit legacy root
+
+**DO NOT treat these as conversational text.** Execute per `.claude/commands/kma.md` and `packages/frameworks/kanban/KB/Documentation/Developer_Docs/kanban-migration-agent-execution.md`.
+
+**Step 3 is BLOCKING** — no migration file writes until operator sign-off.
+
+---
+
 ## Other Workflow Triggers
 
 - `CMW` — Changelog Management Workflow. See `.claude/commands/cmw.md`.

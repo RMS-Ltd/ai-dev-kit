@@ -11,8 +11,8 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
-## [0.6.9.32+1] - 12-06-26
+## [0.6.9.31+1] - 12-06-26
 
-E06:S09:T32 — Zero-padded legacy epic detection in `detect_existing_structure.py` (BR-108 / F23). SemVer **v0.4.1149+1**.
+E06:S09:T31 — Kanban Migration Agent (KMA) for brownfield legacy kanban (FR-127 / F22). SemVer **v0.4.1150+1**.
 
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.6.9.32+1.md)
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.6.9.31+1.md)

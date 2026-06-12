@@ -7,6 +7,10 @@ and integrates detection, analysis, and migration utilities.
 
 Part of Epic 4, Story 7, Task 2 (FR-007): Migration utilities and installation modes.
 
+DEPRECATION (FR-127 / ADR-028): Brownfield legacy migration modes (migration, hybrid,
+canonical_adoption) are gated. Use Kanban Migration Agent (KMA) instead. Retained:
+--mode fresh (empty root) and --mode update (path refresh).
+
 Usage:
     python3 install_kanban_framework.py [--mode MODE] [--kanban-path PATH] [--dry-run]
 
@@ -90,6 +94,34 @@ except ImportError:
 
 INSTALL_LOGGER = None
 _ENV_LOG_PATH_ENV_VAR = "AI_DEV_KIT_INSTALL_LOG_PATH"
+
+# FR-127 / ADR-028: gated installer modes (exit 2 + KMA pointer)
+_DEPRECATED_MIGRATION_MODES = frozenset({"migration", "hybrid", "canonical_adoption"})
+_KMA_GUIDE = (
+    "packages/frameworks/kanban/KB/Documentation/Developer_Docs/"
+    "kanban-migration-agent-execution.md"
+)
+_DEPRECATION_GUIDE = "packages/frameworks/kanban/guides/migration-tool-pipeline-deprecation.md"
+
+
+def gate_deprecated_migration_mode(mode: str, *, file=None) -> bool:
+    """
+    Print deprecation message and return True if mode is gated (caller should exit 2).
+
+    Retained automated paths: fresh, update.
+    """
+    if mode not in _DEPRECATED_MIGRATION_MODES:
+        return False
+    out = file or sys.stderr
+    print(
+        f"DEPRECATED: install_kanban_framework.py --mode {mode} is gated (FR-127 / ADR-028).\n"
+        f"Use Kanban Migration Agent (KMA): {_KMA_GUIDE}\n"
+        f"Deprecation plan: {_DEPRECATION_GUIDE}\n"
+        "Brownfield: INSTALL_IN_YOUR_PROJECT.md → Agentic legacy migration (KMA)\n"
+        "For empty Kanban roots, use --mode fresh.",
+        file=out,
+    )
+    return True
 
 
 def _log(level: str, message: str) -> None:
@@ -637,6 +669,10 @@ Examples:
                         help="With --generate-task-templates, allow overwrite")
 
     args = parser.parse_args()
+
+    if gate_deprecated_migration_mode(args.mode):
+        emit_install_error("ADK-I02.E01", detail=f"mode {args.mode} deprecated; use KMA")
+        return 2
     
     project_root = Path.cwd()
     kanban_path, sourced_from_rw = resolve_kanban_path_arg(project_root, args.kanban_path)
@@ -683,6 +719,10 @@ Examples:
     
     if args.mode == "auto":
         args.mode = select_installation_mode(analysis_report, None)
+
+    if gate_deprecated_migration_mode(args.mode):
+        emit_install_error("ADK-I02.E01", detail=f"mode {args.mode} deprecated; use KMA")
+        return 2
     
     # Step 3.5: Validate installation (before migration)
     if args.mode == "fresh":
@@ -708,8 +748,8 @@ Examples:
     if args.mode == "fresh":
         print(
             "\n⚠️  BROWNFIELD NOTE: --mode fresh installs canonical epic *templates* into an empty "
-            "Kanban root. On existing repos with backlog/docs, prefer --mode migration or "
-            "canonical_adoption. See INSTALL_IN_YOUR_PROJECT.md → Brownfield adoption (FR-081)."
+            "Kanban root. On existing repos with legacy kanban, use KMA (Kanban Migration Agent) — "
+            "see INSTALL_IN_YOUR_PROJECT.md → Agentic legacy migration (KMA) (FR-127)."
         )
         print("\n🆕 Fresh install mode: Installing canonical epics and consumer board skeleton...")
         _log("INFO", "[KANBAN_FRESH_INSTALL] Fresh install mode: installing canonical epics and consumer board skeleton")

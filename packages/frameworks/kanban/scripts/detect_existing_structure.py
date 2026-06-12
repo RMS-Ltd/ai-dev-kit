@@ -2,6 +2,10 @@
 """
 Detection Utility for Existing Kanban Structures
 
+DEPRECATED (FR-127 / ADR-028): Use Kanban Migration Agent (KMA) for brownfield legacy
+migration. See packages/frameworks/kanban/KB/Documentation/Developer_Docs/
+kanban-migration-agent-execution.md
+
 Scans a project directory to detect existing Kanban (Epic/Story/Task) structures
 and generates a detection report.
 

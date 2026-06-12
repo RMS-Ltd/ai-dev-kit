@@ -497,7 +497,7 @@ Existing repo?
   ├─ Need versioned releases + agent RW only?
   │     └─ RW-only (use_kanban: false)
   ├─ Need RW + task/epic docs in-repo?
-  │     └─ RW + Kanban (migration or canonical_adoption)
+  │     └─ RW + Kanban (KMA for legacy corpus, or --mode fresh for empty root)
   └─ Need full ADK governance stack?
         └─ Full stack (RW + Kanban + versioning policy + optional doc-lifecycle)
 ```
@@ -509,7 +509,7 @@ Legend: **R** = Required · **O** = Optional · **Rec** = Recommended · **N/A**
 | Profile | Release Workflow (RW) | Kanban | Versioning policy | Doc lifecycle | Validators when RW enabled |
 |---------|----------------------|--------|-------------------|---------------|----------------------------|
 | **RW-only** | **R** — `install_release_workflow.py`, `rw-config.yaml`, `.cursorrules` RW section | **O** — set `use_kanban: false` | **Rec** — host `version.py` + schema doc | **O** | Branch safety, changelog format, version bump; FR-060 task token guards **only if** you maintain task docs |
-| **RW + Kanban** | **R** | **R** — host epics or **canonical templates** via `migration` / `canonical_adoption` | **Rec** | **O** | Above + `validate_rw_task_complete.py`, `validate_rw_task_intent.py` when releasing with task docs |
+| **RW + Kanban** | **R** | **R** — host epics via **KMA** or **canonical templates** via `--mode fresh` | **Rec** | **O** | Above + `validate_rw_task_complete.py`, `validate_rw_task_intent.py` when releasing with task docs |
 | **Full stack** | **R** | **R** | **R** — adopt [dev-kit-versioning-policy](docs/architecture/standards-and-adrs/dev-kit-versioning-policy.md) or mapped equivalent | **O** | Full RW Step 7 four-surface reconciliation (`kboard` + task + FBU docs; sole active board per [ADR-018](docs/architecture/standards-and-adrs/ADR-018-single-kanban-board-consolidation.md)) |
 
 **Contract-first wiring:** All paths assume you map ADK contracts to **your** tree. See [RW validators and consumer layout](packages/frameworks/workflow-mgt/docs/rw-validators-consumer-layout.md).
@@ -546,18 +546,32 @@ Legend: **R** = Required · **O** = Optional · **Rec** = Recommended · **N/A**
 
 5. **First release:** work on `epic/{n}-*` branch; trigger `RW E{n}:S{nn}:T{nn}` with your host Epic/Story/Task ids (FR-060).
 
+### Agentic legacy migration (KMA)
+
+When you have an **existing legacy kanban corpus** (non-canonical story naming, inline tasks, domain epics), use the **Kanban Migration Agent (KMA)** — not the deprecated installer migration modes.
+
+1. Trigger **`KMA`** or **`/kma`** in your IDE agent session.
+2. Follow [kanban-migration-agent-execution.md](packages/frameworks/kanban/KB/Documentation/Developer_Docs/kanban-migration-agent-execution.md) (ingest → propose → **operator review** → execute → validate).
+3. Review and sign off on `migration-proposal.md` before any file writes.
+
+**Policy:** [ADR-028](docs/architecture/standards-and-adrs/ADR-028-agentic-kanban-migration-brownfield-fr127.md) · [FR-127](docs/kanban/fr-br/FR-127-agentic-kanban-migration-agent-replace-tool-pipeline.md). Installer modes `migration`, `hybrid`, and `canonical_adoption` are **gated** (exit 2) with a pointer to KMA.
+
+**Evidence:** Starborn Legacy attempt 06 — tool pipeline detected 0/80+ stories; KMA-style agentic migration moved 72 stories (see [migration-tool-pipeline-deprecation.md](packages/frameworks/kanban/guides/migration-tool-pipeline-deprecation.md)).
+
 ### Adding Kanban later
 
-- Prefer **`--mode migration`** or **`canonical_adoption`** when you already have boards or backlog docs.
-- Use **`--mode fresh`** only for greenfield-style empty Kanban roots; the installer prints a brownfield warning when you select fresh on an existing repo.
+- **Legacy corpus:** use **KMA** (section above).
+- Use **`--mode fresh`** only for greenfield-style **empty** Kanban roots; the installer prints a brownfield warning when you select fresh on an existing repo.
+- Use **`--mode update`** to refresh paths on an existing ADK v3.2 layout.
 - **Empty repo:** `--mode fresh` creates the Kanban skeleton (`epics/` included) before validation — **`--force` is not required** to bypass missing-directory checks on first install (see [BR-080](docs/kanban/fr-br/BR-080-kanban-fresh-mode-validation-requires-force-on-empty-repo.md)).
 - **Install outcome:** When `kboard.md` and `epics/` are created, the installer reports **`Final status: SUCCESS`** (not PARTIAL solely because board files were absent during pre-install validation). `kanban-structure.md` is copied from `templates/KANBAN_STRUCTURE_TEMPLATE.md` (BR-078).
 - **Epic 22/23 templates:** Fresh install resolves `templates/Epic-22/Epic-22.md` and `templates/Epic-23/Epic-23.md` (or `templates/epics/Epic-{n}-*.md`) — not placeholder stubs (BR-079).
 - Installer installs **canonical templates**, not ai-dev-kit maintainer epics—see [kanban/README.md](packages/frameworks/kanban/README.md).
 
 ```bash
+# Empty Kanban root only — legacy corpus → use KMA (Agentic legacy migration above)
 python3 "packages/frameworks/kanban/scripts/install_kanban_framework.py" \
-  --mode migration --kanban-path "docs/kanban"
+  --mode fresh --kanban-path "docs/kanban"
 ```
 
 Align `kanban_root` in `rw-config.yaml` with your actual path before RW Step 7.

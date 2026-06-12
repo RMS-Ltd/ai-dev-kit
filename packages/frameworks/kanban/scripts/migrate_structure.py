@@ -2,6 +2,9 @@
 """
 Migration Utility for Kanban Structures
 
+DEPRECATED (FR-127 / ADR-028): Migration modes gated on installer; use KMA for
+brownfield legacy corpus. Retained: fresh canonical epic install helpers.
+
 Migrates existing Kanban structures to canonical ai-dev-kit format, preserving
 all work items and forensic markers.
 

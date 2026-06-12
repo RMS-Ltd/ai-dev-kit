@@ -88,7 +88,7 @@ This package is designed to be **fully modular** with maximum flexibility. You c
 
 **⚠️ CRITICAL: Lean vendor (FR-110), not full maintainer repo**
 
-Adopters **vendor** the lean tree (`greenfield-install/` or `packages/frameworks/` only) — see [INSTALL — Lean vendor install](../../../INSTALL_IN_YOUR_PROJECT.md#lean-vendor-install-greenfield-install--fr-110). On **brownfield** repos, prefer `install_kanban_framework.py --mode migration` or `canonical_adoption`—not `--mode fresh` unless the Kanban root is empty. See [INSTALL — Brownfield adoption](../../../INSTALL_IN_YOUR_PROJECT.md#brownfield-adoption-existing-repositories) (FR-081).
+Adopters **vendor** the lean tree (`greenfield-install/` or `packages/frameworks/` only) — see [INSTALL — Lean vendor install](../../../INSTALL_IN_YOUR_PROJECT.md#lean-vendor-install-greenfield-install--fr-110). On **brownfield** repos with legacy kanban, use **KMA** (Kanban Migration Agent) — see [INSTALL — Agentic legacy migration](../../../INSTALL_IN_YOUR_PROJECT.md#agentic-legacy-migration-kma) (FR-127). Use `--mode fresh` only when the Kanban root is empty. See [INSTALL — Brownfield adoption](../../../INSTALL_IN_YOUR_PROJECT.md#brownfield-adoption-existing-repositories) (FR-081).
 
 **Recommended (greenfield):** Keep `packages/frameworks/kanban/` inside `vendor/ai-dev-kit/` and run `scripts/install_kanban_framework.py` from the host project root (paths reference the vendored tree).
 
@@ -513,37 +513,25 @@ step_6:
   see: "integration/workflow-management-integration.md"
 ```
 
-### Migration Support
+### Migration Support (KMA — FR-127)
 
-If you have an existing Kanban structure (from another system or older framework version), the framework provides migration utilities:
+**Brownfield legacy kanban:** Use the **Kanban Migration Agent (KMA)** — not the deprecated `detect→analyze→migrate` tool pipeline.
 
-**Migration Workflow:**
+**Trigger:** `KMA` or `/kma` in your IDE agent session.
 
-1. **Detect existing structure:**
-   ```bash
-   python3 scripts/detect_existing_structure.py --kanban-path docs/kanban
-   ```
+**Workflow:** Ingest → Propose → **Operator review (blocking)** → Execute → Validate.
 
-2. **Analyze structure:**
-   ```bash
-   python3 scripts/analyze_structure.py --detection-report detection_report.json
-   ```
+- **Guide:** [`KB/Documentation/Developer_Docs/kanban-migration-agent-execution.md`](KB/Documentation/Developer_Docs/kanban-migration-agent-execution.md)
+- **Proposal template:** [`templates/MIGRATION_PROPOSAL_TEMPLATE.md`](templates/MIGRATION_PROPOSAL_TEMPLATE.md)
+- **Deprecation:** [`guides/migration-tool-pipeline-deprecation.md`](guides/migration-tool-pipeline-deprecation.md)
+- **INSTALL:** [Agentic legacy migration](../../../INSTALL_IN_YOUR_PROJECT.md#agentic-legacy-migration-kma)
 
-3. **Review migration plan:**
-   - Check `analysis_report.json` for conflicts, gaps, and recommended mode
-   - Review epic/story/task mappings
-
-4. **Migrate structure:**
-   ```bash
-   python3 scripts/migrate_structure.py --analysis-report analysis_report.json --mode migration
-   ```
-
-**Or use the integrated installer:**
+**Empty Kanban root (automated):**
 ```bash
-python3 scripts/install_kanban_framework.py --mode migration
+python3 scripts/install_kanban_framework.py --mode fresh --kanban-path docs/kanban
 ```
 
-See [`scripts/README.md`](scripts/README.md) for detailed migration documentation.
+Installer modes `migration`, `hybrid`, and `canonical_adoption` are **gated** (exit 2). See [`scripts/README.md`](scripts/README.md).
 
 ---
 

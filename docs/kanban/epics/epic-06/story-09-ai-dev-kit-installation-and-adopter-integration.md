@@ -83,7 +83,7 @@ housekeeping_policy: keep
 
 - [ ] **E06:S09:T26 – Starborn Legacy ADK install program** - 🔄 IN PROGRESS (HIGH — FR-079 **accepted** @ 2026-06-11; adopter sign-off final; greenfield program closed; F10/F20 open) — [Task](story-09-ai-dev-kit-installation-and-adopter-integration/T26-starborn-legacy-adk-install-program.md) | SBL `…/attempt-06/` · [index](../../../../adk-install-into-sbl/attempt-06/README.md) | [Triage matrix](../../../knowledge/analysis/projects/starborn-legacy-install-triage-matrix.md)
 
-- [ ] **E06:S09:T31 – Agentic kanban migration agent (FR-127 / F22)** - 📋 TODO (HIGH — filed from attempt 06) — [Task](story-09-ai-dev-kit-installation-and-adopter-integration/T31-agentic-kanban-migration-agent-fr127.md) | [FR-127](../../fr-br/FR-127-agentic-kanban-migration-agent-replace-tool-pipeline.md) | —No IPP—
+- [x] **E06:S09:T31 – Agentic kanban migration agent (FR-127 / F22)** - ✅ COMPLETE (v0.6.9.31+1 — KMA workflow + gated installer) — [Task](story-09-ai-dev-kit-installation-and-adopter-integration/T31-agentic-kanban-migration-agent-fr127.md) | [FR-127](../../fr-br/FR-127-agentic-kanban-migration-agent-replace-tool-pipeline.md) | [IPP](../../../implementation-cycles/IPP-E06S09T31-agentic-kanban-migration-agent-fr127.md)
 
 - [x] **E06:S09:T32 – Detect structure zero-padded epic names (BR-108 / F23)** - ✅ COMPLETE (v0.6.9.32+1) — [Task](story-09-ai-dev-kit-installation-and-adopter-integration/T32-detect-structure-zero-padded-epic-br108.md) | [BR-108](../../fr-br/BR-108-detect-existing-structure-zero-padded-epic-names.md) | [IPP](../../implementation-cycles/IPP-E06S09T32-detect-structure-zero-padded-epic-br108.md)
 
