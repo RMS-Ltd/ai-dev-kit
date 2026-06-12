@@ -1,5 +1,41 @@
 {
-  "contract": "FR-092 / ADR-018 (RW Step 7 four-surface reconciliation)",
+  "auxiliary_surfaces": {
+    "epic_doc": {
+      "changes": [
+        "Updated Epic Last updated: 2026-06-11 (v0.21.5.2+2 \u2013 Kanban documentation setup)"
+      ],
+      "notes": [],
+      "paths": [
+        "/Users/rms/Documents/projects/ai-dev-kit/docs/kanban/epics/epic-21/epic-21.md"
+      ],
+      "surface": "epic_doc",
+      "touched": true
+    },
+    "story_doc": {
+      "changes": [
+        "\u2705 Story doc updated: /Users/rms/Documents/projects/ai-dev-kit/docs/kanban/epics/epic-21/story-05-european-languages-localization.md"
+      ],
+      "notes": [],
+      "paths": [
+        "/Users/rms/Documents/projects/ai-dev-kit/docs/kanban/epics/epic-21/story-05-european-languages-localization.md"
+      ],
+      "surface": "story_doc",
+      "touched": true
+    },
+    "uncategorized": {
+      "changes": [
+        "Updated Version: v0.21.5.2+2",
+        "Updated Last updated: 2026-06-11 (v0.21.5.2+2 \u2013 Kanban documentation setup)",
+        "Updated board Last Updated: 2026-06-11 (RW: E21:S05:T02)",
+        "Updated board Version: v0.21.5.2+2"
+      ],
+      "notes": [],
+      "paths": [],
+      "surface": "uncategorized",
+      "touched": true
+    }
+  },
+  "contract": "FR-092 / ADR-018 (RW Step 7 three-surface reconciliation)",
   "invocation_context": "rw_step_7",
   "release_scope": {
     "epic": 21,
@@ -8,23 +44,49 @@
     "task_id": "E21:S5:T2",
     "version_string": "v0.21.5.2+2"
   },
+  "stamp_evidence": {},
   "summary": {
-    "total_changes": 5,
-    "touched_surfaces": ["epic_doc", "story_doc", "task_doc", "kboard"]
+    "stamps_appended_with_evidence": 0,
+    "stamps_preserved_existing": 0,
+    "stamps_skipped_no_evidence": 0,
+    "total_changes": 6,
+    "touched_surfaces": [],
+    "untouched_surfaces": [
+      "task_doc",
+      "fbu_doc",
+      "kboard"
+    ]
   },
   "surfaces": {
-    "task_doc": {
-      "changes": ["Version anchor v0.21.5.2+2; Last updated hygiene"],
-      "paths": ["docs/kanban/epics/epic-21/story-05-european-languages-localization/T02-french-fr-translation-files.md"],
-      "surface": "task_doc",
-      "touched": true
+    "fbu_doc": {
+      "changes": [],
+      "notes": [
+        "No path resolved by RW Step 7. Task / FBU surfaces are owned by implementation execution; absence here is informational, not a failure."
+      ],
+      "paths": [],
+      "surface": "fbu_doc",
+      "touched": false
     },
     "kboard": {
-      "changes": ["Board header Version/Last Updated @ v0.21.5.2+2"],
-      "paths": ["docs/kanban/kboard.md"],
+      "changes": [],
+      "notes": [
+        "Surface within release scope but not touched by this run (idempotent no-op or already canonical)."
+      ],
+      "paths": [
+        "/Users/rms/Documents/projects/ai-dev-kit/docs/kanban/kboard.md"
+      ],
       "surface": "kboard",
-      "touched": true
+      "touched": false
+    },
+    "task_doc": {
+      "changes": [],
+      "notes": [
+        "No path resolved by RW Step 7. Task / FBU surfaces are owned by implementation execution; absence here is informational, not a failure."
+      ],
+      "paths": [],
+      "surface": "task_doc",
+      "touched": false
     }
   },
-  "timestamp_utc": "2026-06-11 16:15 UTC"
+  "timestamp_utc": "2026-06-11 16:57 UTC"
 }

@@ -11,8 +11,8 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
-## [0.21.5.2+2] - 11-06-26
+## [0.2.15.14+1] - 12-06-26
 
-E21:S05:T02 — Kanban doc hygiene + Step 7 four-surface report (post fr delivery). SemVer **v0.4.1148+2**.
+E02:S15:T14 — Kanban stamp immutability ADR-029 framework defaults (FR-130). SemVer **v0.4.1151+1**.
 
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.21.5.2+2.md)
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.15.14+1.md)

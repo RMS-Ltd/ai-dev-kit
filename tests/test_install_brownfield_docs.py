@@ -26,3 +26,10 @@ def test_greenfield_boundary_points_to_brownfield():
     idx_greenfield_boundary = text.find("### Scope boundary")
     idx_brownfield = text.find("## Brownfield adoption")
     assert idx_greenfield_boundary < idx_brownfield
+
+
+def test_install_agentic_legacy_migration_kma():
+    text = INSTALL.read_text(encoding="utf-8")
+    assert "### Agentic legacy migration (KMA)" in text
+    assert "kanban-migration-agent-execution.md" in text
+    assert "ADR-028" in text

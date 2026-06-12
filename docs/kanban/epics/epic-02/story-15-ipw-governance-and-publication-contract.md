@@ -8,12 +8,12 @@ housekeeping_policy: keep
 
 # Story 015 – IPW Governance and Publication Contract
 
-**Status:** ✅ COMPLETE  
+**Status:** ✅ COMPLETE (T14 FR-130 shipped **v0.2.15.14+1**)  
 **Priority:** HIGH  
 **Estimated Effort:** [TBD]  
 **Created:** 2026-04-14  
 **Completed:** 2026-06-03 (T08 FR-097 shipped **v0.2.15.8+3**; FR-092 program complete)  
-**Last updated:** 2026-06-05 (story closure — all active tasks T01/T03/T04/T07/T08 COMPLETE; T02/T05/T06 superseded by T07)
+**Last updated:** 2026-06-12 (T14 COMPLETE — ADR-029 stamp immutability defaults **v0.2.15.14+1**)
 **Version:** v0.2.15.8+3
 **Code:** E2S15
 
@@ -58,5 +58,7 @@ Eliminate IPW documentation publication drift by making ownership, filing target
 - [x] **E02:S15:T12 – IPW documentation phases (FR-096)** — ✅ COMPLETE (re-housed from E02:S16:T11) — [Task](story-15-ipw-governance-and-publication-contract/T12-ipw-documentation-phases-update-create-and-housing-fr096.md) | [FR-096](../../fr-br/FR-096-ipw-documentation-phases-update-create-and-housing.md)
 
 - [x] **E02:S15:T13 – IPW ADR necessity checklist (FR-100)** — ✅ COMPLETE (re-housed from E02:S16:T12) — [Task](story-15-ipw-governance-and-publication-contract/T13-ipw-adr-necessity-checklist-fr100.md) | [FR-100](../../fr-br/FR-100-ipw-adr-necessity-checklist-and-decision-gate.md)
+
+- [x] **E02:S15:T14 – Kanban stamp immutability ADR-029 framework defaults (FR-130)** — ✅ COMPLETE (**v0.2.15.14+1** — MWF delivery) — [Task](story-15-ipw-governance-and-publication-contract/T14-kanban-stamp-immutability-adr029-framework-defaults-fr130.md) | [FR-130](../../fr-br/FR-130-kanban-stamp-immutability-adr029-framework-defaults.md) | [ADR-029](../../architecture/standards-and-adrs/ADR-029-kanban-stamp-immutability-substantive-work-only.md) | [IPP](../../../implementation-cycles/IPP-E02S15T14-kanban-stamp-immutability-adr029-fr130.md)
 
 ---

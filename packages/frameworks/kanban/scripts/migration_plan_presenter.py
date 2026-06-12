@@ -2,6 +2,8 @@
 """
 Migration plan presentation helpers for Kanban framework installation.
 
+DEPRECATED (FR-127 / ADR-028): Superseded by KMA migration-proposal.md artifact.
+
 Part of Epic 4, Story 8, Task 5 (FR-009): Migration plan presentation.
 """
 

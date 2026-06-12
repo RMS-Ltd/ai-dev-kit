@@ -1058,7 +1058,7 @@ def apply_canonical_row_transform_pipeline(
     timestamp_value: str,
     contract: RowTransformContract,
     *,
-    evidence_mode: str = EVIDENCE_MODE_WORK_AUTHORITATIVE,
+    evidence_mode: str = EVIDENCE_MODE_NON_SUBSTANTIVE,
     evidence_provider=None,
 ) -> Tuple[str, Dict[str, Any]]:
     """
@@ -1185,6 +1185,7 @@ def update_kanban_board(
         project_root=Path.cwd(),
         timestamp_value=timestamp_now,
         contract=ROW_TRANSFORM_CONTRACT_RW_STEP7,
+        evidence_mode=EVIDENCE_MODE_NON_SUBSTANTIVE,
     )
     dup_report = row_pipeline_diagnostics["dup_report"]
     timestamp_report = row_pipeline_diagnostics["timestamp_report"]
@@ -1371,7 +1372,7 @@ def enforce_moscow_row_timestamps_with_stats(
     board_content: str,
     timestamp_value: str,
     *,
-    evidence_mode: str = EVIDENCE_MODE_WORK_AUTHORITATIVE,
+    evidence_mode: str = EVIDENCE_MODE_NON_SUBSTANTIVE,
     evidence_provider=None,
 ) -> Tuple[str, Dict[str, int]]:
     """
@@ -1386,12 +1387,12 @@ def enforce_moscow_row_timestamps_with_stats(
     `evidence_mode` controls whether a missing-stamp row is allowed to receive
     a synthetic stamp:
 
-    - `work_authoritative` (default): the caller asserts that the invocation
-      itself constitutes substantive work evidence (e.g. RW Step 7 advancing a
-      task). Missing stamps are appended; existing stamps preserved.
-    - `non_substantive`: the caller declares that this run is a board-hygiene
-      pass (corpus-canonical sweep, alias migration, formatting reconciliation,
-      etc.) and MUST NOT introduce stamps. Existing stamps preserved.
+    - `non_substantive` (default, ADR-029): hygiene/meta-work (corpus sweep,
+      alias migration, UKW synthesis, RW Step 7 structural pass) — MUST NOT
+      append stamps; existing stamps preserved.
+    - `work_authoritative`: caller asserts substantive task advancement (e.g.
+      release-scope COMPLETE with evidence manifest). Missing stamps appended;
+      existing stamps preserved.
     - `gated`: caller supplies an `evidence_provider(row_id, line) -> bool`
       callable. A row receives a stamp only when the provider asserts that the
       underlying canonical source (linked task / FR / BR / UXR) has a
@@ -2306,7 +2307,7 @@ class FourSurfaceReport:
         lines.append("## Forensic stamp evidence (UXR-009 / FR-092 Wave 6)")
         lines.append("")
         lines.append(
-            f"- Evidence mode: `{self.stamp_evidence.get('evidence_mode', 'work_authoritative')}`"
+            f"- Evidence mode: `{self.stamp_evidence.get('evidence_mode', 'non_substantive')}`"
         )
         lines.append(
             f"- Stamps appended with evidence: **{d['summary']['stamps_appended_with_evidence']}**"

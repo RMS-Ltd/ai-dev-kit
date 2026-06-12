@@ -323,6 +323,7 @@ See SBL `…/attempt-06/feedback-package/kanban-migration-experiment-report.md` 
 | P1 | F20 | Project-aware `version_file` default (open; workaround exists) |
 | P1 | F12–F14 | Document migration-test-bed profile (RW defer → legacy restore → kanban → RW mode C) |
 | P1 | F22 | ✅ **FILED** → [FR-127](../../../fr-br/FR-127-agentic-kanban-migration-agent-replace-tool-pipeline.md) / [T31](T31-agentic-kanban-migration-agent-fr127.md) |
+| P1 | — | ✅ **FILED** (attempt 06 stamp churn) → [ADR-029](../../../../architecture/standards-and-adrs/ADR-029-kanban-stamp-immutability-substantive-work-only.md) / [FR-130](../../../fr-br/FR-130-kanban-stamp-immutability-adr029-framework-defaults.md) / [E02:S15:T14](../../epic-02/story-15-ipw-governance-and-publication-contract/T14-kanban-stamp-immutability-adr029-framework-defaults-fr130.md) |
 | P1 | F23 | ✅ **FILED** → [BR-108](../../../fr-br/BR-108-detect-existing-structure-zero-padded-epic-names.md) / [T32](T32-detect-structure-zero-padded-epic-br108.md) |
 | P2 | F11/F16 | Post-install deferred-Kanban hint; clarify consumer layout vs v3.2 spec |
 | P2 | BR-086 | ✅ **CLOSED** via [T28](T28-v32-fresh-install-signoff-story-padding-br105.md) **v0.6.9.28+2** (F18 contract alignment) |

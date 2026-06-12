@@ -2,6 +2,10 @@
 """
 Detection Utility for Existing Kanban Structures
 
+DEPRECATED (FR-127 / ADR-028): Use Kanban Migration Agent (KMA) for brownfield legacy
+migration. See packages/frameworks/kanban/KB/Documentation/Developer_Docs/
+kanban-migration-agent-execution.md
+
 Scans a project directory to detect existing Kanban (Epic/Story/Task) structures
 and generates a detection report.
 
@@ -105,17 +109,31 @@ class KanbanStructureDetector:
     
     def _find_epic_document(self, epic_dir: Path, epic_num: int) -> Optional[str]:
         """Find the epic document in an epic directory."""
-        # Look for Epic-X.md or Epic-X-*.md
-        patterns = [
-            f"Epic-{epic_num}.md",
-            f"Epic-{epic_num}-*.md"
-        ]
-        
+        # Unpadded and zero-padded basenames (BR-108: legacy Epic-01.md layouts).
+        basename_candidates = []
+        for fmt in (str(epic_num), f"{epic_num:02d}"):
+            if fmt not in basename_candidates:
+                basename_candidates.append(fmt)
+
+        patterns = []
+        for base in basename_candidates:
+            patterns.append(f"Epic-{base}.md")
+            patterns.append(f"Epic-{base}-*.md")
+
         for pattern in patterns:
             matches = list(epic_dir.glob(pattern))
             if matches:
                 return str(matches[0].relative_to(self.kanban_path))
-        
+
+        # Fallback: any Epic-*.md whose numeric segment normalises to epic_num.
+        epic_doc_pattern = re.compile(
+            rf"^Epic-0*{epic_num}(?:-.*)?\.md$",
+            re.IGNORECASE,
+        )
+        for item in sorted(epic_dir.iterdir()):
+            if item.is_file() and epic_doc_pattern.match(item.name):
+                return str(item.relative_to(self.kanban_path))
+
         return None
     
     def _detect_stories(self):

@@ -2,6 +2,8 @@
 """
 Semantic Matching Utility for Epic and Task Matching
 
+DEPRECATED (FR-127 / ADR-028): Superseded by KMA domain-aware mapping.
+
 Provides semantic similarity analysis for matching user epics/tasks to canonical epics/stories.
 
 Part of Epic 4, Story 8, Task 1 (FR-009): Semantic epic matching implementation.

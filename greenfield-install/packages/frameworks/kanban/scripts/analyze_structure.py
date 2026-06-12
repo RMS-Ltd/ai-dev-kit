@@ -2,6 +2,9 @@
 """
 Analysis Utility for Existing Kanban Structures
 
+DEPRECATED (FR-127 / ADR-028): Use Kanban Migration Agent (KMA) for brownfield legacy
+migration. See packages/frameworks/kanban/guides/migration-tool-pipeline-deprecation.md
+
 Analyzes detected Kanban structures and maps them to canonical E/S/T format,
 identifying conflicts and generating migration plans.
 
