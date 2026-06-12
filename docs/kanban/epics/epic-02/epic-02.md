@@ -78,9 +78,9 @@ housekeeping_policy: keep
 - [ ] **E2:S14 – Workflow Management Package Installation Evaluation** - IN PROGRESS (v0.2.1.9+2)
   - Story: [`story-14-workflow-management-package-installation-evaluation.md`](story-14-workflow-management-package-installation-evaluation.md)
 
-- [x] **E2:S15 – IPW Governance and Publication Contract** - COMPLETE ✅ (v0.2.15.8+3 – FR-092 program + FR-097 stamp authority; T02/T05/T06 superseded by T07)
+- [x] **E2:S15 – IPW Governance and Publication Contract** - COMPLETE ✅ (v0.2.15.14+1 — T14 ADR-029 stamp immutability defaults)
   - Story: [`story-15-ipw-governance-and-publication-contract.md`](story-15-ipw-governance-and-publication-contract.md)
-  - Tasks: T01, T03, T04, T07, T08 ✅ COMPLETE; T02/T05/T06 superseded → T07
+  - Tasks: T01, T03, T04, T07, T08, T14 ✅ COMPLETE; T02/T05/T06 superseded → T07
 
 - [ ] **E2:S16 – Perpetual Ongoing Operations** - IN PROGRESS (v0.2.16.5+7)
   - Story: [`story-16-perpetual-ongoing-workflow-operations.md`](story-16-perpetual-ongoing-workflow-operations.md)

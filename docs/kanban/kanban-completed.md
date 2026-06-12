@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Completed Tasks
 
-**Last Updated:** 2026-06-12 (MWF E06:S09:T31 — KMA brownfield kanban migration)
-**Version:** v0.6.9.31+1
+**Last Updated:** 2026-06-12 (MWF E02:S15:T14 — ADR-029 stamp immutability defaults)
+**Version:** v0.2.15.14+1
 
 > **For MoSCOW prioritized tasks, see:** [`kboard.md`](kboard.md)  
 > **For completed FR/BR/UXR intake items, see:** [`intake-completed.md`](intake-completed.md)
@@ -19,6 +19,10 @@ housekeeping_policy: keep
 ---
 
 ## 20 Most Recently Completed Tasks
+
+#### **MWF (2026-06-12)** — E02:S15:T14 @ **v0.2.15.14+1** (FR-130 ADR-029 stamp immutability defaults)
+
+- **[E02:S15:T14](epics/epic-02/story-15-ipw-governance-and-publication-contract/T14-kanban-stamp-immutability-adr029-framework-defaults-fr130.md)** — Flip stamp pipeline defaults to `non_substantive`; RW Step 7 explicit mode; governance policy + tests; greenfield sync. SemVer **v0.4.1151+1**. **Completed:** `2026-06-12T09:36:32Z` | **Version:** `v0.2.15.14+1` | **Agent:** `MWF E02:S15:T14 delivery` | [FR-130](fr-br/FR-130-kanban-stamp-immutability-adr029-framework-defaults.md) | [ADR-029](../architecture/standards-and-adrs/ADR-029-kanban-stamp-immutability-substantive-work-only.md) | [IPP](../../implementation-cycles/IPP-E02S15T14-kanban-stamp-immutability-adr029-fr130.md)
 
 #### **MWF (2026-06-12)** — E06:S09:T31 @ **v0.6.9.31+1** (FR-127 KMA brownfield kanban migration)
 

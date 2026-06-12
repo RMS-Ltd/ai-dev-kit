@@ -131,8 +131,15 @@ New **`backfill_board_row_stamps.py`** (or subcommand):
 
 ---
 
+## ADR follow-on (SBL origin)
+
+[ADR-029](../../architecture/standards-and-adrs/ADR-029-kanban-stamp-immutability-substantive-work-only.md) (**Accepted**, 2026-06-12) elevates FR-097's evidence-mode contract to a **framework-wide invariant**: `non_substantive` as the default on all stamp entrypoints; explicit `work_authoritative` / `--stamp-substantive` only for substantive task advancement. Supersedes FR-097's permissive default edges on `enforce_moscow_row_timestamps_with_stats` and `apply_canonical_row_transform_pipeline`. Implementation: [FR-130](FR-130-kanban-stamp-immutability-adr029-framework-defaults.md) → [E02:S15:T14](../epics/epic-02/story-15-ipw-governance-and-publication-contract/T14-kanban-stamp-immutability-adr029-framework-defaults-fr130.md).
+
+---
+
 ## References
 
+- [ADR-029](../../architecture/standards-and-adrs/ADR-029-kanban-stamp-immutability-substantive-work-only.md) — Kanban stamp immutability invariant (SBL → ADK)
 - [kanban-governance-policy.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/kanban/policies/kanban-governance-policy.md) — Timestamp governance / evidence modes
 - [update_kanban_docs.py](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/scripts/update_kanban_docs.py) — `_cleanup_fbuboard_active_rows`, `EVIDENCE_MODE_*`
 - [test_stamp_evidence_gate.py](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/scripts/test_stamp_evidence_gate.py)

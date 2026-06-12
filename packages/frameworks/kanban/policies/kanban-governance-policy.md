@@ -341,13 +341,13 @@ Each task entry in the MoSCOW sections includes:
 - RW/UKW/automation that creates or updates rows must append or refresh this field.
 - Human-readable timestamp values must use UTC and 24-hour format (`YYYY-MM-DD HH:MM UTC`).
 - **Forensic semantics (UXR-009 / FR-092 Wave 6):** Stamps mutate **only when underlying work evidence exists** on the linked record (status change, content delta, version anchor update, AC progression, or new evidence link). No-op board rewrites, sorting, formatting, alias migration, or metadata refresh **must not** mutate `Last modified`. Synthetic stamp churn at write boundary is blocked.
-- **Evidence modes (FR-092 Wave 6 implementation):** The row-mutation pipeline in `update_kanban_docs.py` exposes three evidence modes:
-  - `work_authoritative`: caller asserts the invocation itself is substantive evidence (e.g. RW Step 7 advancing a task). Missing stamps may be appended; existing stamps are preserved verbatim.
-  - `non_substantive`: caller declares this run is board-hygiene (corpus-canonical sweep, alias migration, formatting reconciliation). The pipeline **must not** introduce synthetic stamps; existing stamps are preserved verbatim. This is the **default** for `run_corpus_canonical_sweep`.
+- **Evidence modes (FR-092 Wave 6; default invariant ADR-029 / FR-130):** The row-mutation pipeline in `update_kanban_docs.py` exposes three evidence modes. **`non_substantive` is the framework default** on `enforce_moscow_row_timestamps_with_stats` and `apply_canonical_row_transform_pipeline` — meta-work must not stamp rows unless the caller passes `work_authoritative` or `--stamp-substantive` explicitly:
+  - `non_substantive` (**default**): board-hygiene, UKW synthesis, RW Step 7 structural passes, corpus sweep, migration. **Must not** introduce synthetic stamps; existing stamps preserved verbatim.
+  - `work_authoritative`: caller asserts substantive task advancement (e.g. release-scope task COMPLETE with evidence manifest). Missing stamps may be appended; existing stamps preserved verbatim.
   - `gated`: caller supplies a per-row `evidence_provider(row_id, line) -> bool`. Only rows for which the provider asserts a substantive evidence delta receive a stamp.
 - **Audit counters (FR-092 Wave 6, surfaced on RW Step 7 four-surface report and on the corpus-sweep report):** `stamps_appended_with_evidence`, `stamps_skipped_no_evidence`, `stamps_preserved_existing`. Mass synthetic stamp anomalies (e.g. `stamps_skipped_no_evidence` very high while reconciliation report shows substantive surface changes) are forensic warning signals and feed the Wave 7 release-readiness gate.
 
-**Board Stamp Authority (FR-097 / E2:S15:T08):**
+**Board Stamp Authority (FR-097 / E2:S15:T08; ADR-029 / FR-130 / E2:S15:T14):**
 - **STRUCTURE** edits (prune terminal rows, sort MoSCOW, dedupe footers, board header `Last Updated`) **must not** change row `Last modified`.
 - **CONTENT** edits (linked FR/BR/UXR/task substantive delta, version anchor, release-scope manifest) **may** change row stamps with provenance.
 - **Write boundary:** `validate_board_stamp_diff.py` compares before/after board snapshots; UKW and RW **abort** when any row stamp changes without evidence (manifest or linked-source fingerprint delta).

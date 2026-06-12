@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Board
 
-**Last Updated:** 2026-06-11 (RW: E21:S05:T02)
-**Version:** v0.21.5.2+2
+**Last Updated:** 2026-06-12 (RW: E02:S15:T14)
+**Version:** v0.2.15.14+1
 
 **Active board contract:** **Sole active MoSCOW board** ([ADR-018](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/architecture/standards-and-adrs/ADR-018-single-kanban-board-consolidation.md)). Rows are **live work** (TODO / IN PROGRESS / OPEN / WAITING / PERPETUAL) plus filed **Could Have** backlog. **Verification (V)** band holds task-shipped / FBU-open items (`⏳ WAITING`). Remove **terminal** rows and archive prose (use [`kanban-completed.md`](kanban-completed.md) / [`intake-completed.md`](intake-completed.md)).
 
@@ -27,7 +27,6 @@ housekeeping_policy: keep
 
 
 ### Should Have (S) - Important Tasks
-
 
 - **E06:S09:T26** – Starborn Legacy ADK install program - 🔄 IN PROGRESS (HIGH — FR-079 **accepted**; adopter sign-off final; greenfield program closed) | [Task](epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T26-starborn-legacy-adk-install-program.md) | [attempt-06 index](../../../../adk-install-into-sbl/attempt-06/README.md) | —No IPP— | Last modified: 2026-06-10 17:24 UTC
 

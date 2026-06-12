@@ -129,6 +129,35 @@ def test_invalid_evidence_mode_raises():
         )
 
 
+def test_default_evidence_mode_is_non_substantive():
+    """ADR-029 / FR-130: default-args enforce must not append stamps."""
+    target = _load_target()
+    _transformed, stats = target.enforce_moscow_row_timestamps_with_stats(
+        SAMPLE_BOARD,
+        "2026-04-27 16:00 UTC",
+    )
+    assert stats["evidence_mode"] == target.EVIDENCE_MODE_NON_SUBSTANTIVE, stats
+    assert stats["stamps_appended_with_evidence"] == 0, stats
+    assert stats["stamps_skipped_no_evidence"] == 2, stats
+
+
+def test_apply_pipeline_default_is_non_substantive():
+    """ADR-029 / FR-130: default-args pipeline must not append stamps."""
+    target = _load_target()
+    with tempfile.TemporaryDirectory() as tmp_str:
+        tmp = Path(tmp_str)
+        transformed, diagnostics = target.apply_canonical_row_transform_pipeline(
+            board_content=SAMPLE_BOARD,
+            project_root=tmp,
+            timestamp_value="2026-04-27 16:00 UTC",
+            contract=target.ROW_TRANSFORM_CONTRACT_STANDALONE,
+        )
+        ts_rep = diagnostics["timestamp_report"]
+        assert ts_rep["evidence_mode"] == target.EVIDENCE_MODE_NON_SUBSTANTIVE, ts_rep
+        assert ts_rep["stamps_appended_with_evidence"] == 0, ts_rep
+        assert "Last modified: 2026-04-27 16:00 UTC" not in transformed
+
+
 def test_corpus_sweep_uses_non_substantive_mode():
     """Corpus sweep defaults to non_substantive — no synthetic stamp churn."""
     target = _load_target()
@@ -175,6 +204,8 @@ def main():
         ("gated without provider is conservative", test_gated_without_provider_is_conservative),
         ("existing stamps never rewritten in any mode", test_existing_stamps_never_rewritten),
         ("invalid evidence_mode raises ValueError", test_invalid_evidence_mode_raises),
+        ("default evidence_mode is non_substantive", test_default_evidence_mode_is_non_substantive),
+        ("apply pipeline default is non_substantive", test_apply_pipeline_default_is_non_substantive),
         ("corpus sweep defaults to non_substantive", test_corpus_sweep_uses_non_substantive_mode),
         ("pytest fails on broken invariant (BR-103 probe)", test_pytest_fails_when_non_substantive_invariant_broken),
     ]
