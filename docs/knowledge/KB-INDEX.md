@@ -1,8 +1,8 @@
 # KB Index
 
-**Generated:** 2026-06-12 10:33:55 UTC  
+**Generated:** 2026-06-12 10:37:00 UTC  
 **Scope:** /Users/rms/Documents/projects/ai-dev-kit/docs  
-**Total files:** 3253  
+**Total files:** 3254  
 **Total size:** 15.16 MB
 
 ---
@@ -14,10 +14,10 @@
 | analysis | 9 | 152.7 KB | 9 | 0 | 9 | 0 | 0 | 0 |
 | architecture | 128 | 1.25 MB | 122 | 6 | 121 | 1 | 0 | 0 |
 | book-project | 2 | 26.5 KB | 1 | 1 | 1 | 0 | 0 | 0 |
-| changelog-and-release-notes | 1510 | 4.13 MB | 199 | 1311 | 183 | 0 | 1 | 0 |
+| changelog-and-release-notes | 1511 | 4.13 MB | 199 | 1312 | 183 | 0 | 1 | 0 |
 | developer-tools | 2 | 12.7 KB | 2 | 0 | 2 | 0 | 0 | 0 |
 | documentation | 33 | 354.3 KB | 30 | 3 | 30 | 0 | 0 | 0 |
-| governance | 26 | 206.7 KB | 26 | 0 | 26 | 0 | 0 | 0 |
+| governance | 26 | 206.9 KB | 26 | 0 | 26 | 0 | 0 | 0 |
 | guides | 7 | 31.8 KB | 7 | 0 | 7 | 0 | 0 | 0 |
 | implementation-cycles | 275 | 2.26 MB | 233 | 42 | 218 | 2 | 1 | 0 |
 | journals | 4 | 14.7 KB | 0 | 4 | 0 | 0 | 0 | 0 |
@@ -32,7 +32,7 @@
 ## Optimization signals
 
 - **docs/README.md exists:** False
-- **Files missing lifecycle frontmatter:** 1425
+- **Files missing lifecycle frontmatter:** 1426
 - **Timeboxed/transient with expires_at in the past:** 3
 - **READMEs (under docs/):** 22
 
@@ -88,7 +88,7 @@
 - `changelog-and-release-notes/changelog-archive/CHANGELOG_v0.10.1.3+1.md`
 - `changelog-and-release-notes/changelog-archive/CHANGELOG_v0.10.1.4+1.md`
 - `changelog-and-release-notes/changelog-archive/CHANGELOG_v0.10.1.5+1.md`
-- ... and 1375 more
+- ... and 1376 more
 
 ### Expired (candidates for archive/delete)
 
@@ -313,7 +313,7 @@
 | governance/standards/dev-kit-ipw-ipp-vs-icw-artifacts.md | 3.7 KB | 319 | evergreen | 2026-05-20T12:00:00 |  |
 | governance/standards/dev-kit-versioning-policy.md | 44.3 KB | 5945 | evergreen | 2025-12-04T12:01:36 |  |
 | governance/standards/locale-cultural-content-policy.md | 5.2 KB | 613 | evergreen | 2026-06-10T20:00:00 |  |
-| governance/standards/locale-cultural-requirements.md | 17.7 KB | 2460 | evergreen | 2026-06-09T21:00:00 |  |
+| governance/standards/locale-cultural-requirements.md | 17.9 KB | 2463 | evergreen | 2026-06-09T21:00:00 |  |
 | governance/standards/locale-detection-conventions.md | 3.9 KB | 394 | evergreen | 2026-06-07T19:00:00 |  |
 | governance/standards/locale-directional-icon-audit.md | 2.6 KB | 271 | evergreen | 2026-06-10T20:00:00 |  |
 | governance/standards/locale-fallback-conventions.md | 2.8 KB | 242 | evergreen | 2026-06-07T23:45:00 |  |
@@ -831,7 +831,7 @@
 | kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T04-ad-hoc-repository-infrastructure-maintenance-perpetual.md | 2.4 KB | 302 | evergreen | 2026-05-19T00:00:00 |  |
 | kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T05-github-actions-ci-health-perpetual.md | 7.8 KB | 928 | evergreen | 2026-06-05T16:00:00 |  |
 | kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T05-markdown-documentation-maintenance-perpetual.md | 388 B | 27 | evergreen | 2026-06-08T00:00:00 |  |
-| kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T06-github-security-code-quality-health-perpetual.md | 29.0 KB | 3870 | evergreen | 2026-06-05T16:00:00 |  |
+| kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T06-github-security-code-quality-health-perpetual.md | 29.0 KB | 3868 | evergreen | 2026-06-05T16:00:00 |  |
 | kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T06-ukw-optional-reprioritization-rp-flag-fr085.md | 433 B | 27 | evergreen | 2026-06-08T00:00:00 |  |
 | kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T07-ad-hoc-documentation-maintenance-perpetual.md | 740 B | 44 | evergreen | 2026-06-09T00:00:00 |  |
 | kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T07-ukw-extension-for-fr-br-uxr-temporal-tracking-fr050.md | 765 B | 47 | evergreen | 2026-06-08T00:00:00 |  |
@@ -1870,5 +1870,5 @@
 | project-agent-index.md | 4.3 KB | 392 | evergreen | 2026-05-30T21:00:00 |  |
 | project-management/README.md | 523 B | 34 | evergreen | 2025-12-04T12:01:54 |  |
 | release-notes/README.md | 1.4 KB | 123 | evergreen | 2026-06-07T12:00:00 |  |
-| changelog-and-release-notes/changelog-archive/ (summary) (1508 files) | 4.13 MB | 477901 |  |  |  |
+| changelog-and-release-notes/changelog-archive/ (summary) (1509 files) | 4.13 MB | 477981 |  |  |  |
 
