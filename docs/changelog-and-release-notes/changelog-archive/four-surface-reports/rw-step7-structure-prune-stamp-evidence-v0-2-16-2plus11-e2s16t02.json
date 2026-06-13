@@ -1,0 +1,16 @@
+{
+  "report_type": "rw_step7_structure_prune",
+  "release_scope": "E02:S16:T02",
+  "version": "v0.2.16.2+11",
+  "evidence_mode": "structure_prune",
+  "rows": {
+    "E08:S03:T12": {
+      "allowed": true,
+      "reason": "Terminal COMPLETE @ v0.8.3.12+13 — stale active row pruned (kanban-completed ledger); UKW -c drift repair"
+    },
+    "E02:S16:T02": {
+      "allowed": true,
+      "reason": "RW Step 7 @ v0.2.16.2+11 — perpetual row metadata sync (E08:S03:T12 terminal prune)"
+    }
+  }
+}

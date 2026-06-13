@@ -10,18 +10,9 @@ import re
 from pathlib import Path
 from typing import List, Tuple
 
-from kanban_v34_catalog import assert_v34_fingerprint, fresh_epic_list
-from kanban_v33_catalog import (  # noqa: F401
-    V1_FRESH_EPICS,
-    V33_FRESH_EPICS,
-    V33_FRESH_STORIES,
-    V33_EPIC_TEMPLATE_SLUGS,
-    V34_FRESH_EPICS,
-    V1_FINGERPRINT_FAIL_PATTERNS,
-    assert_v33_fingerprint,
-)
+from kanban_v33_catalog import V33_EPIC_TEMPLATE_SLUGS, V33_FRESH_STORIES, V34_FRESH_EPICS
+from kanban_v34_catalog import assert_v34_fingerprint
 
-# v3.2 names — alias v3.4 for callers not yet updated
 V32_FRESH_EPICS = V34_FRESH_EPICS
 V32_FRESH_STORIES = V33_FRESH_STORIES
 V32_EPIC_TEMPLATE_SLUGS = V33_EPIC_TEMPLATE_SLUGS

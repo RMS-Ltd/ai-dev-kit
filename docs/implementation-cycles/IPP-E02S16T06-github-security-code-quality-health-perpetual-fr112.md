@@ -10,7 +10,7 @@ housekeeping_policy: keep
 
 **Host Task:** [`T06-github-security-code-quality-health-perpetual.md`](../kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T06-github-security-code-quality-health-perpetual.md) **(E02:S16:T06)**  
 **Planning for:** [FR-112](../kanban/fr-br/FR-112-perpetual-github-ci-and-security-health-lanes.md)  
-**Status:** Approved (Wave 4b @ v0.2.16.6+4; **Wave 5 IPW revision** 2026-06-10 — maintainability **8** / **Fair** @ `f458a215a`)
+**Status:** Approved (Wave 5b @ v0.2.16.6+5; **Wave 6 IPW revision** 2026-06-12 — **12** M + **2** R @ `main` `55f4310e`)
 
 > **IPW:** Perpetual lane for GitHub **code scanning** + **Code Quality dashboard** hygiene. **Does not** own [Actions](https://github.com/RMS-Ltd/ai-dev-kit/actions) CI (→ **E02:S16:T05**).
 >
@@ -24,6 +24,8 @@ housekeeping_policy: keep
 > **Revision (2026-06-10 — Wave 4 IPW):** Operator dashboard **~10** maintainability standard findings @ `main` `38d24549445f4ed77b0d099f1aa3b927d5c61f19`. Two-step: **Wave 4a** manifest + close 3c/3d/3e verifies; **Wave 4b** maintainability autofix. See **§8 Wave 4**.
 
 > **Revision (2026-06-10 — Wave 5 IPW):** Post–Wave 4b dashboard **8** maintainability / **Fair** @ `main` `f458a215a` (TC24 partial: 10→8). Two-step: **Wave 5a** manifest + TC24 close; **Wave 5b** manual CodeQL burn-down (cyclic-import, unused-global, multiple-definition, unused-local). See **§8 Wave 5**.
+
+> **Revision (2026-06-12 — Wave 6 IPW):** Post–Wave 5b operator dashboard **12** maintainability + **2** reliability @ `main` `55f4310e` (TC25 superseded). Two-step: **Wave 6a** manifest + TC25 close; **Wave 6b** reliability-first then maintainability burn-down (Kanban v3.5 catalog regressions). See **§8 Wave 6**.
 
 > **Revision (2026-06-05 — operator deferral):** ~~Postpone T16 until T12–T14 sign-off~~ — **LIFTED** 2026-06-07.
 
@@ -65,6 +67,13 @@ housekeeping_policy: keep
 | RF31 | **Close TC24** partial (10→8, not 0); Wave 5b owns residual burn-down | Wave 5 IPW |
 | RF32 | **Wave 5b:** fix all 8 maintainability findings (4 issue families + greenfield mirror) | Wave 5 IPW |
 | RF33 | **TC25** operator post-merge dashboard verify (8 → 0 or documented residual) | Wave 5 IPW |
+| RF34 | **Wave 6a manifest** on `main` @ SHA + UTC: **12** M + **2** R open counts, band scores, full rule breakdown from GitHub UI (`is:open`) | Wave 6 IPW |
+| RF35 | **Delta** vs Wave 5a (`f458a215a`) and Wave 5b ship (`v0.2.16.6+5`); document TC25 closure as **superseded** by Wave 6 baseline | Wave 6 IPW |
+| RF36 | **Wave 6a docs-only RW:** `RW E02:S16:T06 --art` (BUILD +1); no code remediation in 6a | Wave 6 IPW |
+| RF37 | **Merge gate (RF5/RF12):** Wave 6b code blocked until [Actions](https://github.com/RMS-Ltd/ai-dev-kit/actions) green on target branch (T15 owns fixes) | Wave 6 IPW |
+| RF38 | **Wave 6b:** reliability-first (**2**), then maintainability (**12**); one theme per RW; triage fix / dismiss / defer-to-BR per rule row | Wave 6 IPW |
+| RF39 | **Wave 6b verification:** CQG (`validate_code_quality_gate.py`), `pytest`, `sync_greenfield_install.py --check`, `validate_actions_ci_parity.py --strict` before RW | Wave 6 IPW |
+| RF40 | **TC36** operator post-merge dashboard verify: **12+2 → 0** or documented residual with evidence | Wave 6 IPW |
 
 ### 1.2 Non-functional requirements (ascertained)
 
@@ -178,6 +187,13 @@ Establish **E02:S16:T06** as the operational perpetual lane for GitHub **code sc
 | TC27 | Wave 5b CQG | `validate_code_quality_gate.py` — maintainability **0** on `packages/` | RF32 | 5b |
 | TC28 | Wave 5b greenfield | `sync_greenfield_install.py --check` | RF32 | 5b |
 | TC29 | Wave 5b CI parity | `validate_actions_ci_parity.py --strict` | FR-112 | 5b |
+| TC30 | Wave 6a manifest | Task doc contains SHA, UTC, 12/2 counts, rule table, delta vs Wave 5 | RF34–RF36 | 6a |
+| TC31 | TC25 supersession | TC25 marked closed with Wave 6a note | RF35 | 6a |
+| TC32 | Wave 6b pytest | `pytest tests/` (+ scoped kanban tests if touched) green | RF39 | 6b |
+| TC33 | Wave 6b CQG | `validate_code_quality_gate.py` — maintainability proxy 0 on touched `packages/` paths | RF39 | 6b |
+| TC34 | Wave 6b greenfield | `sync_greenfield_install.py --check` when `packages/` edited | RF39 | 6b |
+| TC35 | Wave 6b CI parity | `validate_actions_ci_parity.py --strict` | RF39, FR-112 | 6b |
+| TC36 | Operator verify | Dashboard **12+2 → 0** (or residual table with dismiss evidence) | RF40 | 6b |
 
 **Wave 0 verification:** TC1–TC4 only (docs-only; no `--skip-tests` — TC5 deferred to Wave 1+).
 
@@ -198,6 +214,10 @@ Establish **E02:S16:T06** as the operational perpetual lane for GitHub **code sc
 **Wave 5a verification:** TC24 partial close + manifest (docs-only RW).
 
 **Wave 5b verification:** TC25–TC29 (code + operator dashboard).
+
+**Wave 6a verification:** TC30–TC31 (docs-only manifest RW).
+
+**Wave 6b verification:** TC32–TC36 (code + operator dashboard).
 
 ---
 
@@ -319,7 +339,9 @@ Establish **E02:S16:T06** as the operational perpetual lane for GitHub **code sc
 - [x] Operator dashboard TC24 verify — **partial** (10→8, not 0); closed Wave 5a
 - [x] Wave 5a manifest @ `main` `f458a215a` with **8** M breakdown (TC24 partial)
 - [x] Wave 5b manual maintainability burn-down (TC26–TC29); shipped **v0.2.16.6+5**
-- [ ] Operator dashboard TC25 verify (maintainability **8 → 0** or documented residual)
+- [x] Operator dashboard TC25 verify — **CLOSED superseded** (Wave 6a baseline documents **8 → 12** M regression @ `55f4310e`)
+- [x] Wave 6a manifest @ `main` `55f4310e` with **12** M + **2** R breakdown (TC30–TC31); shipped **v0.2.16.6+10**
+- [x] Wave 6b reliability-first + maintainability burn-down (TC32–TC35); shipped **v0.2.16.6+11**; operator TC36 verify **pending**
 
 ---
 
@@ -445,6 +467,38 @@ Establish **E02:S16:T06** as the operational perpetual lane for GitHub **code sc
 | 48 | TC26–TC29 locally |
 | 49 | `RW E02:S16:T06 --art` — BUILD +1 |
 | 50 | Operator TC25 dashboard verify; post-remediation manifest in task doc |
+
+**RW rule:** **`RW E02:S16:T06 --art` only**; no `--doc-policy-zero` (BR-097).
+
+### Wave 6a — Post–Wave 5b manifest (docs RW) — 2026-06-12
+
+| Step | Action |
+| ---- | ------ |
+| 51 | Confirm T06 **IN PROGRESS**; capture `main` @ `55f4310e` + UTC |
+| 52 | Record manifest: **12** maintainability + **2** reliability / **Fair** + rule breakdown from [Code Quality](https://github.com/RMS-Ltd/ai-dev-kit/security/quality) |
+| 53 | Close **TC25** as **superseded** (Wave 5b expected 8→0; regression documented); delta vs Wave 5a/5b |
+| 54 | `RW E02:S16:T06 --art` — BUILD +1 (docs-only manifest) |
+| 55 | Reconcile T06 **IN PROGRESS**; AC17 Wave 6a |
+
+### Wave 6b — Reliability-first + maintainability remediation (code RW)
+
+**Theme:** Burn down **12** M + **2** R per Wave 6a rule table (Kanban v3.5 catalog + test shim regressions on `main`).
+
+| Chunk | Rule | Files |
+| ----- | ---- | ----- |
+| R1 | `py/empty-except` | `migrate_structure.py` (+ mirror) |
+| M1 | `py/cyclic-import` | `kanban_v34_catalog.py` ↔ `kanban_v35_catalog.py` → `kanban_catalog_fingerprint.py` |
+| M2 | `py/unused-import` | `kanban_v32`/`v33` catalog shims, test compat modules, workflow test scripts |
+| M3 | `py/unused-global-variable` | `kanban_v32_catalog.py` metadata guards |
+
+| Step | Action |
+| ---- | ------ |
+| 56 | Confirm T15 merge gate green on target branch |
+| 57 | Implement chunks R1–M3 per rule table |
+| 58 | `python scripts/sync_greenfield_install.py` + `--check` |
+| 59 | TC32–TC35 locally |
+| 60 | `RW E02:S16:T06 --art` — BUILD +1 |
+| 61 | Operator TC36 dashboard verify; post-remediation manifest in task doc |
 
 **RW rule:** **`RW E02:S16:T06 --art` only**; no `--doc-policy-zero` (BR-097).
 

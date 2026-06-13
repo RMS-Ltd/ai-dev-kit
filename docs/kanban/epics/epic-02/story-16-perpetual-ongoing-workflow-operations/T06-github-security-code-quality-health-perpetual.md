@@ -14,8 +14,8 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** Medium (ongoing)  
 **Created:** 2026-06-05  
-**Last updated:** 2026-06-12 (v0.2.16.6+8 — kanban Step 7 hygiene)  
-**Version Anchor:** v0.2.16.6+8  
+**Last updated:** 2026-06-13 (Wave 6b burn-down @ v0.2.16.6+11)  
+**Version Anchor:** v0.2.16.6+11  
 **Code:** E02S16T06  
 **Task Type:** Perpetual Maintenance
 
@@ -411,14 +411,72 @@ Use **`RW E02:S16:T06`** for recurring security/Code Quality hygiene (BUILD incr
 | greenfield | `sync_greenfield_install.py` | **1795** files in sync |
 | pytest / CQG / CI parity | TC26–TC29 | local verify @ RW |
 | `RW E02:S16:T06 --art` | Wave 5 | **v0.2.16.6+5** |
-| Operator dashboard (TC25) | **Pending** | Confirm maintainability **8 → 0** post-merge |
+| Operator dashboard (TC25) | **CLOSED superseded** | Wave 6a baseline: **8 → 12** M regression @ `55f4310e`; Wave 6b owns burn-down |
+
+---
+
+## Wave 6 re-scan manifest (2026-06-12 — Wave 6a)
+
+**Capture:** `main` @ **`55f4310eedb0d6ba35ec9b3cb401724cd214b249`** (2026-06-13 UTC). Source: [Code Quality — Standard findings](https://github.com/RMS-Ltd/ai-dev-kit/security/quality) (`is:open`); operator report + local CQG corroboration on merged Kanban v3.5 surface. Code scanning `gh api` **0** open.
+
+| Surface | Open count | Score | Delta vs Wave 5b target (TC25) |
+| ------- | ---------- | ----- | ------------------------------ |
+| [Code scanning](https://github.com/RMS-Ltd/ai-dev-kit/security/code-scanning) | **0** | 5 fixed | unchanged |
+| Standard — maintainability | **12** | **Fair** | TC25 superseded: expected **8 → 0**; regression from post–Wave 5b merges (Kanban v3.5 catalog, installer/tests) |
+| Standard — reliability | **2** | **Fair** | **1** `py/empty-except` + **1** `.git/logs` `py/syntax-error` false positive (dismiss per Wave 5 precedent) |
+| [AI findings](https://github.com/RMS-Ltd/ai-dev-kit/security/quality/ai-findings) | lag-accepted | — | T14 closure unchanged |
+
+**TC25 closure (superseded):** Wave 5b shipped manual burn-down @ **v0.2.16.6+5**; operator never confirmed **8 → 0**. Post-merge dashboard refresh shows **12** M open — regression documented, not silent. Wave 6b owns burn-down to **0** (or documented residual).
+
+**Standard findings rule breakdown @ `55f4310e` (12 maintainability + 2 reliability, operator + CQG):**
+
+| UI rule label | CodeQL rule (approx.) | Open | Band | Wave 6b disposition |
+| ------------- | --------------------- | ---- | ---- | ------------------- |
+| Import cycle | `py/cyclic-import` | **4** | Maintainability | Extract `kanban_catalog_fingerprint.py`; decouple v34↔v35 |
+| Module not used | `py/unused-import` | **6** | Maintainability | Catalog shims + test compat modules + workflow test scripts |
+| Unused global variable | `py/unused-global-variable` | **2** | Maintainability | Guard metadata in `kanban_v32_catalog.py` (dev branch) |
+| Empty except | `py/empty-except` | **1** | Reliability | Comment + narrow in `migrate_structure.py` |
+| Syntax error | `py/syntax-error` | **1** | Reliability | `.git/logs` false positive — dismiss (out of code scope) |
+| **Subtotal** | — | **12** M + **2** R | **Fair** | — |
+
+### Wave 6b remediation (shipped @ v0.2.16.6+11)
+
+**Theme:** Reliability-first (**1** code + **1** dismiss), then maintainability (**12**) per rule table.
+
+| Chunk | Action | Result |
+| ----- | ------ | ------ |
+| R1 | `py/empty-except` — explanatory comment on optional catalog import | `migrate_structure.py` |
+| M1 | `py/cyclic-import` — shared fingerprint module | `kanban_catalog_fingerprint.py`, v34/v35 |
+| M2 | `py/unused-import` — trim compat re-exports; wrapper test modules; remove unused `pytest` from workflow test scripts | catalog + `tests/kanban/` + `test_build_rw_commit_message.py`, `test_update_adk_packages.py` |
+| M3 | `py/unused-global-variable` / metadata guards | `kanban_v32_catalog.py` |
+| M4 | Stale pre-v3.5 template drift (dev-only) | removed legacy templates not on `main` |
+| greenfield | `sync_greenfield_install.py` | **1898** files in sync |
+| pytest / CQG / CI parity | TC32–TC35 | **green** @ RW |
+| `RW E02:S16:T06 --art` | Wave 6b | **v0.2.16.6+11** |
+| Operator dashboard (TC36) | **Pending** | Confirm **12+2 → 0** post-merge; dismiss `.git/logs` `py/syntax-error` if still shown |
+
+**Local CQG @ RW:** **0** findings — **Excellent** maintainability / **Excellent** reliability.
+
+### Operator TC36 verify (pending post-merge)
+
+After `dev` merges to `main` and CodeQL re-scans:
+
+1. Open [Code Quality — Standard findings](https://github.com/RMS-Ltd/ai-dev-kit/security/quality) (`is:open`).
+2. **Expected:** maintainability **0** / reliability **0** (or **Good/Excellent** bands).
+3. If **`.git/logs` `py/syntax-error`** persists: dismiss as false positive (binary log file — same precedent as Wave 5).
+4. Record outcome in this section and close TC36 in [IPP §7](../../../../implementation-cycles/IPP-E02S16T06-github-security-code-quality-health-perpetual-fr112.md).
+
+| Check | Status | Notes |
+| ----- | ------ | ----- |
+| Dashboard **12+2 → 0** | **Pending** | Local CQG **0** @ Wave 6b RW; GitHub UI confirms after merge |
+| `.git/logs` dismiss | **Pending** | Operator action if rule still listed |
 
 **Cross-lane notes:**
 
-- **T15:** CI green on `main` @ `4c4e9275` (PR #41 merge path); merge gate **lifted** for T16 code waves.
+- **T15:** CI green on `main` @ merge gate; Wave 6b blocked until Actions green on release branch.
 - **T12/T13:** operator **Good/Good** @ `ed379ab`; finite backlogs **COMPLETE**.
-- **T14:** lag-accepted AI groups; panel refresh optional Wave 2b theme 1.
-- **T17 (CQG):** local gate run before Wave 2b RW; report cited in changelog.
+- **T14:** lag-accepted AI groups unchanged.
+- **dev/main divergence:** `dev` @ `68d42d78` lacks Kanban v3.5 until merged; Wave 6b applies fixes on integration branch ahead of next `main` merge.
 
 ---
 
@@ -454,7 +512,9 @@ Use **`RW E02:S16:T06`** for recurring security/Code Quality hygiene (BUILD incr
 - [x] **AC13 (Wave 4a):** Wave 4 manifest **10** M @ `38d2454`; 3c/3d/3e verify notes closed; shipped **v0.2.16.6+3**.
 - [x] **AC14 (Wave 4b):** Maintainability burn-down of **10** findings; pytest/greenfield green; CQG advisory; shipped **v0.2.16.6+4**; operator TC24 verify **closed partial** (10→8).
 - [x] **AC15 (Wave 5a):** Wave 5 manifest **8** M @ `f458a215a`; TC24 partial closed; shipped **v0.2.16.6+5**.
-- [x] **AC16 (Wave 5b):** Manual maintainability burn-down of **8** findings; pytest/greenfield/CQG green; shipped **v0.2.16.6+5**; operator TC25 verify **pending**.
+- [x] **AC16 (Wave 5b):** Manual maintainability burn-down of **8** findings; pytest/greenfield/CQG green; shipped **v0.2.16.6+5**; operator TC25 verify **closed superseded** (Wave 6a).
+- [x] **AC17 (Wave 6a):** Wave 6 manifest **12** M + **2** R @ `55f4310e`; TC25 superseded; shipped **v0.2.16.6+10**.
+- [x] **AC18 (Wave 6b):** Reliability-first + maintainability burn-down shipped **v0.2.16.6+11**; pytest/greenfield/CQG/CI parity green; operator TC36 verify **pending**.
 
 ---
 

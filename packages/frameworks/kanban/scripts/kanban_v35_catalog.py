@@ -10,9 +10,13 @@ import re
 from pathlib import Path
 from typing import Dict, List, Tuple
 
-from kanban_v34_catalog import V34_FRESH_EPICS, V34_EPIC_TEMPLATE_SLUGS  # noqa: F401
+from kanban_catalog_fingerprint import (
+    V1_FINGERPRINT_FAIL_PATTERNS,
+    V32_VERSIONING_EPIC_FAIL,
+    V33_TESTING_EPIC_FAIL,
+)
 
-V35_FRESH_EPICS: List[int] = list(V34_FRESH_EPICS)
+V35_FRESH_EPICS: List[int] = list(range(1, 9))
 
 V35_FRESH_STORY_FILES: Dict[Tuple[int, int], str] = {
     (1, 1): "story-01-perpetual-operations.md",
@@ -34,7 +38,6 @@ V35_FRESH_STORY_FILES: Dict[Tuple[int, int], str] = {
 
 V35_FRESH_STORIES: List[Tuple[int, int]] = list(V35_FRESH_STORY_FILES.keys())
 
-# Stories that ship discrete task docs on fresh install (templates/tasks/epic-NN/story-NN/)
 V35_FRESH_TASK_STORIES: List[Tuple[int, int]] = [
     (1, 1),
     (1, 2),
@@ -47,13 +50,16 @@ V35_FRESH_TASK_STORIES: List[Tuple[int, int]] = [
     (8, 2),
 ]
 
-from kanban_v34_catalog import (  # noqa: E402
-    V1_FINGERPRINT_FAIL_PATTERNS,
-    V32_VERSIONING_EPIC_FAIL,
-    V33_TESTING_EPIC_FAIL,
-)
-
-V35_EPIC_TEMPLATE_SLUGS = V34_EPIC_TEMPLATE_SLUGS
+V35_EPIC_TEMPLATE_SLUGS: Dict[int, str] = {
+    1: "epic-01-Repository-Infrastructure-and-Maintenance",
+    2: "epic-02-Workflow-Management",
+    3: "epic-03-Kanban-Framework",
+    4: "epic-04-Project-Architecture",
+    5: "epic-05-Documentation",
+    6: "epic-06-Process-Automation-and-CICD",
+    7: "epic-07-Security",
+    8: "epic-08-Code-Quality",
+}
 
 
 def fresh_epic_list() -> List[int]:

@@ -1,0 +1,44 @@
+{
+  "contract": "FR-092 / ADR-018",
+  "invocation_context": "rw_step_7",
+  "release_scope": "E02:S16:T02",
+  "internal_version": "v0.2.16.2+11",
+  "timestamp_utc": "2026-06-13 16:36 UTC",
+  "surfaces": {
+    "task_doc": {
+      "touched": true,
+      "paths": [
+        "docs/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T02-ad-hoc-kanban-synchronization-and-hygiene-perpetual.md"
+      ],
+      "changes": [
+        "Version anchor v0.2.16.2+11; last-updated E08:S03:T12 terminal prune"
+      ]
+    },
+    "fbu_doc": {
+      "touched": false,
+      "paths": [],
+      "notes": ["No FR/BR/UXR in release scope"]
+    },
+    "kboard": {
+      "touched": true,
+      "paths": ["docs/kanban/kboard.md"],
+      "changes": [
+        "Pruned E08:S03:T12 terminal row (COMPLETE @ v0.8.3.12+13)",
+        "Updated E02:S16:T02 perpetual row @ v0.2.16.2+11",
+        "Board metadata Version v0.2.16.2+11; Last Updated RW E02:S16:T02"
+      ]
+    }
+  },
+  "structure_prune": {
+    "E08:S03:T12": {
+      "allowed": true,
+      "reason": "Terminal COMPLETE; kanban-completed.md entry exists; stale active row removed"
+    }
+  },
+  "stamp_evidence": {
+    "E02:S16:T02": {
+      "allowed": true,
+      "reason": "RW Step 7 release evidence @ v0.2.16.2+11"
+    }
+  }
+}

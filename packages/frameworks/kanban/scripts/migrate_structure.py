@@ -281,6 +281,7 @@ class KanbanStructureMigrator:
                 if explicit.is_file():
                     return explicit
         except ImportError:
+            # Optional v3.5 catalog slug map when packaged
             pass
 
         sn = kp.segment_number(epic_num)

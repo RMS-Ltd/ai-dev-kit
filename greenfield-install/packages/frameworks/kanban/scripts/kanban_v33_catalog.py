@@ -9,19 +9,12 @@ from __future__ import annotations
 from pathlib import Path
 from typing import List, Tuple
 
-from kanban_v34_catalog import (  # noqa: F401
-    V1_FRESH_EPICS,
-    V32_FRESH_EPICS,
-    V33_FRESH_EPICS,
+from kanban_v34_catalog import (
+    V34_EPIC_TEMPLATE_SLUGS,
     V34_FRESH_EPICS,
     V34_FRESH_STORIES,
     V34_FRESH_STORY_FILES,
-    V34_EPIC_TEMPLATE_SLUGS,
-    V1_FINGERPRINT_FAIL_PATTERNS,
-    V32_VERSIONING_EPIC_FAIL,
-    V33_TESTING_EPIC_FAIL,
     assert_v34_fingerprint,
-    fresh_epic_list,
 )
 
 V33_FRESH_EPICS = V34_FRESH_EPICS
