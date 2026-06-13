@@ -233,7 +233,7 @@ def allocate(db_path: Path, internal_version: str, *, rc: Optional[int] = None) 
     parsed = parse_internal_version(internal_version)
     rc_val = parsed.rc if rc is None else rc
     last_locked: Optional[sqlite3.OperationalError] = None
-    for attempt in range(8):
+    for attempt in range(12):
         try:
             return _allocate_once(db_path, parsed, rc_val)
         except sqlite3.OperationalError as exc:

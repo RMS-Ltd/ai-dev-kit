@@ -77,6 +77,8 @@ def migrate_to_v2(conn: sqlite3.Connection) -> None:
 
 def run_migrations(conn: sqlite3.Connection) -> None:
     """Apply pending migrations under an exclusive transaction (parallel-safe)."""
+    if current_schema_version(conn) >= SCHEMA_VERSION:
+        return
     conn.execute("BEGIN IMMEDIATE")
     try:
         version = current_schema_version(conn)
