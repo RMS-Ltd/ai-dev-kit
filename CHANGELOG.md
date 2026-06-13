@@ -11,8 +11,8 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
-## [0.2.16.2+11] - 13-06-26
+## [0.2.16.6+10] - 13-06-26
 
-E02:S16:T02 — Kanban hygiene: pruned stale **E08:S03:T12** terminal row from `kboard.md` (COMPLETE @ v0.8.3.12+13; drift repair). SemVer **v0.4.1160+11**.
+E02:S16:T06 — Wave 6a Code Quality manifest: **12** maintainability + **2** reliability @ `main` `55f4310e`; TC25 superseded; IPP §8 Wave 6 tables. SemVer **v0.4.1161+10**.
 
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.16.2+11.md)
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.16.6+10.md)
