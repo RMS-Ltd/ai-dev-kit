@@ -11,7 +11,7 @@ housekeeping_policy: keep
 **Status:** IN PROGRESS  
 **Priority:** HIGH  
 **Created:** [YYYY-MM-DD]  
-**Last updated:** [YYYY-MM-DD] (v0.1.0.0+0 – Kanban v3.2 template)  
+**Last updated:** [YYYY-MM-DD] (v0.1.0.0+0 – Kanban v3.3 template)  
 **Branch:** `epic/01-infrastructure`  
 **Version Schema:** `0.1.S.T+B`
 
@@ -20,8 +20,10 @@ housekeeping_policy: keep
 ## Story Checklist
 
 - [ ] **E01:S01 – Perpetual Operations** - IN PROGRESS (perpetual)
+- [ ] **E01:S02 – Versioning & release numbering** - TODO
+- [ ] **E01:S03 – Test harness & gates** - TODO
 
-> **Kanban v3.2:** E01 runs the repository machine. Perpetual hygiene lives in **E01:S01** (adopter package). Maintainer dogfood may use E02:S16.
+> **Kanban v3.4:** S01 perpetual · S02 versioning · S03 test harness (finite). Maintainer dogfood may use E02:S16.
 
 ---
 

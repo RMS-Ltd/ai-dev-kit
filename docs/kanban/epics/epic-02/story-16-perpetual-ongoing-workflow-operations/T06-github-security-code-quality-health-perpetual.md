@@ -14,8 +14,8 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** Medium (ongoing)  
 **Created:** 2026-06-05  
-**Last updated:** 2026-06-13 (Wave 6a manifest @ v0.2.16.6+10)  
-**Version Anchor:** v0.2.16.6+10  
+**Last updated:** 2026-06-13 (Wave 6b burn-down @ v0.2.16.6+11)  
+**Version Anchor:** v0.2.16.6+11  
 **Code:** E02S16T06  
 **Task Type:** Perpetual Maintenance
 
@@ -439,7 +439,7 @@ Use **`RW E02:S16:T06`** for recurring security/Code Quality hygiene (BUILD incr
 | Syntax error | `py/syntax-error` | **1** | Reliability | `.git/logs` false positive — dismiss (out of code scope) |
 | **Subtotal** | — | **12** M + **2** R | **Fair** | — |
 
-### Wave 6b remediation (planned)
+### Wave 6b remediation (shipped @ v0.2.16.6+11)
 
 **Theme:** Reliability-first (**1** code + **1** dismiss), then maintainability (**12**) per rule table.
 
@@ -447,12 +447,29 @@ Use **`RW E02:S16:T06`** for recurring security/Code Quality hygiene (BUILD incr
 | ----- | ------ | ------ |
 | R1 | `py/empty-except` — explanatory comment on optional catalog import | `migrate_structure.py` |
 | M1 | `py/cyclic-import` — shared fingerprint module | `kanban_catalog_fingerprint.py`, v34/v35 |
-| M2 | `py/unused-import` — trim compat re-exports; wrapper test modules | catalog + `tests/kanban/` |
+| M2 | `py/unused-import` — trim compat re-exports; wrapper test modules; remove unused `pytest` from workflow test scripts | catalog + `tests/kanban/` + `test_build_rw_commit_message.py`, `test_update_adk_packages.py` |
 | M3 | `py/unused-global-variable` / metadata guards | `kanban_v32_catalog.py` |
-| greenfield | `sync_greenfield_install.py` | mirror when `packages/` touched |
-| pytest / CQG / CI parity | TC32–TC35 | local verify @ RW |
-| `RW E02:S16:T06 --art` | Wave 6b | pending |
-| Operator dashboard (TC36) | **Pending** | Confirm **12+2 → 0** post-merge |
+| M4 | Stale pre-v3.5 template drift (dev-only) | removed legacy templates not on `main` |
+| greenfield | `sync_greenfield_install.py` | **1898** files in sync |
+| pytest / CQG / CI parity | TC32–TC35 | **green** @ RW |
+| `RW E02:S16:T06 --art` | Wave 6b | **v0.2.16.6+11** |
+| Operator dashboard (TC36) | **Pending** | Confirm **12+2 → 0** post-merge; dismiss `.git/logs` `py/syntax-error` if still shown |
+
+**Local CQG @ RW:** **0** findings — **Excellent** maintainability / **Excellent** reliability.
+
+### Operator TC36 verify (pending post-merge)
+
+After `dev` merges to `main` and CodeQL re-scans:
+
+1. Open [Code Quality — Standard findings](https://github.com/RMS-Ltd/ai-dev-kit/security/quality) (`is:open`).
+2. **Expected:** maintainability **0** / reliability **0** (or **Good/Excellent** bands).
+3. If **`.git/logs` `py/syntax-error`** persists: dismiss as false positive (binary log file — same precedent as Wave 5).
+4. Record outcome in this section and close TC36 in [IPP §7](../../../../implementation-cycles/IPP-E02S16T06-github-security-code-quality-health-perpetual-fr112.md).
+
+| Check | Status | Notes |
+| ----- | ------ | ----- |
+| Dashboard **12+2 → 0** | **Pending** | Local CQG **0** @ Wave 6b RW; GitHub UI confirms after merge |
+| `.git/logs` dismiss | **Pending** | Operator action if rule still listed |
 
 **Cross-lane notes:**
 
@@ -497,7 +514,7 @@ Use **`RW E02:S16:T06`** for recurring security/Code Quality hygiene (BUILD incr
 - [x] **AC15 (Wave 5a):** Wave 5 manifest **8** M @ `f458a215a`; TC24 partial closed; shipped **v0.2.16.6+5**.
 - [x] **AC16 (Wave 5b):** Manual maintainability burn-down of **8** findings; pytest/greenfield/CQG green; shipped **v0.2.16.6+5**; operator TC25 verify **closed superseded** (Wave 6a).
 - [x] **AC17 (Wave 6a):** Wave 6 manifest **12** M + **2** R @ `55f4310e`; TC25 superseded; shipped **v0.2.16.6+10**.
-- [ ] **AC18 (Wave 6b):** Reliability-first + maintainability burn-down; pytest/greenfield/CQG/CI parity green; operator TC36 verify **pending**.
+- [x] **AC18 (Wave 6b):** Reliability-first + maintainability burn-down shipped **v0.2.16.6+11**; pytest/greenfield/CQG/CI parity green; operator TC36 verify **pending**.
 
 ---
 

@@ -341,7 +341,7 @@ Establish **E02:S16:T06** as the operational perpetual lane for GitHub **code sc
 - [x] Wave 5b manual maintainability burn-down (TC26–TC29); shipped **v0.2.16.6+5**
 - [x] Operator dashboard TC25 verify — **CLOSED superseded** (Wave 6a baseline documents **8 → 12** M regression @ `55f4310e`)
 - [x] Wave 6a manifest @ `main` `55f4310e` with **12** M + **2** R breakdown (TC30–TC31); shipped **v0.2.16.6+10**
-- [ ] Wave 6b reliability-first + maintainability burn-down (TC32–TC35); operator TC36 verify **pending**
+- [x] Wave 6b reliability-first + maintainability burn-down (TC32–TC35); shipped **v0.2.16.6+11**; operator TC36 verify **pending**
 
 ---
 
