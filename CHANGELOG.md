@@ -11,8 +11,8 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
-## [0.2.16.6+8] - 12-06-26
+## [0.2.16.2+11] - 13-06-26
 
-E02:S16:T06 — Kanban Step 7 hygiene (publication wiring + version stamp alignment). SemVer **v0.4.1157+8**.
+E02:S16:T02 — Kanban hygiene: pruned stale **E08:S03:T12** terminal row from `kboard.md` (COMPLETE @ v0.8.3.12+13; drift repair). SemVer **v0.4.1160+11**.
 
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.16.6+8.md)
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.16.2+11.md)
