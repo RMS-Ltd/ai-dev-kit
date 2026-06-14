@@ -8,7 +8,9 @@ housekeeping_policy: keep
 
 # Comprehensive Canonical Epics/Stories/Tasks Structure
 
-**Purpose:** This document defines a complete, scalable canonical structure of Epics, Stories, and Tasks that can be contextualized for projects of any size—from tiny solo projects to ambitious multi-epic projects like Confidentia and fynd.deals.
+> **⚠️ DEPRECATED for installer SoT.** Use Kanban v4: `kanban_v4_catalog.py` and [13-v4-three-tier-catalogue.md](../../../docs/knowledge/analysis/kanban-v2/13-v4-three-tier-catalogue.md).
+
+**Purpose:** This document defines a complete, scalable canonical structure
 
 **Usage:** When adopting ai-dev-kit as a template, use this structure as the foundation. Contextualize placeholders (e.g., `{PROJECT_NAME}`, `{DOMAIN}`) to match your project, then add project-specific epics as needed.
 

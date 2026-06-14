@@ -1,0 +1,69 @@
+# Canonical Abstract Task Library (CATL) manifest — Kanban v4
+# SoT for task archetypes; consumed by generate_task_templates.py (tasks only)
+
+version: "1.0.0"
+catalog: v4
+
+archetypes:
+  PERPETUAL_RUN:
+    description: Hygiene workflows with perpetual_task flag
+    homes:
+      - epic: 1
+        story: 1
+  BOOTSTRAP_GATE:
+    description: One-time greenfield repository bootstrap
+    homes:
+      - epic: 2
+        story: 2
+        task_count: 7
+  SCAFFOLD_FINITE:
+    description: Repo capability one-time setup
+    homes:
+      - { epic: 4, story: 1 }
+      - { epic: 5, story: 1 }
+      - { epic: 6, story: 1 }
+      - { epic: 7, story: 1 }
+      - { epic: 8, story: 1 }
+      - { epic: 8, story: 2 }
+  INTAKE_PROCESS:
+    description: FR/BR/UXR filing patterns
+    homes:
+      - { epic: 3, story: 2 }
+      - { epic: 3, story: 3 }
+      - { epic: 3, story: 4 }
+  DELIVERY_FEATURE:
+    description: Domain story work — abstract in package
+    homes:
+      - { epic: 24, story: 1 }
+  GOVERNANCE_ABSTRACT:
+    description: S00 abstract space rules
+    refs:
+      - FR-018
+      - FR-072
+
+bootstrap_tasks:
+  epic: 2
+  story: 2
+  narrative: docs/knowledge/analysis/kanban-v2/05-day-in-the-life-narratives.md
+  tasks:
+    - id: T01
+      title: Repository layout under REPO_ROOT
+      slug: repository-layout
+    - id: T02
+      title: VCS init and remote wiring
+      slug: vcs-init-and-remote
+    - id: T03
+      title: Dev environment and tooling baseline
+      slug: dev-environment-baseline
+    - id: T04
+      title: rw-config.yaml and framework paths
+      slug: rw-config-and-paths
+    - id: T05
+      title: AGENTS.md and agent bootstrap docs
+      slug: agents-bootstrap-docs
+    - id: T06
+      title: Validator smoke test
+      slug: validator-smoke-test
+    - id: T07
+      title: Bootstrap gate sign-off
+      slug: bootstrap-gate-signoff

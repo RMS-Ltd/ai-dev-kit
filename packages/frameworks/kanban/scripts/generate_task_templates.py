@@ -498,8 +498,24 @@ def main():
         action='store_true',
         help='Verbose output'
     )
-    
+    parser.add_argument(
+        '--catl-manifest',
+        action='store_true',
+        help='Print CATL manifest from templates/v4/tasks/catl_manifest.yaml and exit',
+    )
+
     args = parser.parse_args()
+
+    if args.catl_manifest:
+        script_dir = Path(__file__).resolve().parent
+        manifest = script_dir.parent / "templates" / "v4" / "tasks" / "catl_manifest.yaml"
+        if manifest.is_file():
+            print(f"CATL manifest: {manifest}")
+            print(manifest.read_text(encoding='utf-8'))
+        else:
+            print(f"CATL manifest not found: {manifest}", file=sys.stderr)
+            sys.exit(1)
+        sys.exit(0)
     
     # Validate arguments
     if args.story and not args.epic:

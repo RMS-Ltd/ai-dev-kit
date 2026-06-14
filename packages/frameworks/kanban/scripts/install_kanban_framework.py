@@ -628,10 +628,16 @@ Examples:
         help="Installation mode (default: auto-detect, canonical_adoption recommended for semantic matches)"
     )
     parser.add_argument(
+        "--catalog",
+        choices=["v3.5", "v4"],
+        default="v4",
+        help="Kanban catalogue version for fresh install (default: v4)",
+    )
+    parser.add_argument(
         "--kanban-path",
         type=str,
         default="docs/kanban",
-        help="Path to Kanban directory (default: docs/kanban)"
+        help="Path to Kanban directory (default: docs/kanban)",
     )
     parser.add_argument(
         "--dry-run",
@@ -763,6 +769,7 @@ Examples:
                 kanban_path,
                 dry_run=args.dry_run,
                 force=args.force,
+                catalog=getattr(args, "catalog", "v4"),
             )
             if result.get("status") != "completed":
                 print("❌ Canonical epic installation did not complete successfully.")
