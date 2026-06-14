@@ -48,6 +48,9 @@ def install_v4_epics_and_stories(
 
     log: List[Dict] = []
     kanban_path = Path(kanban_path)
+    templates_root = _templates_root()
+
+    print("🔧 Installing Kanban v4 Core-tier epics from templates...")
 
     for epic_num in epic_numbers:
         epic = V4_EPIC_BY_NUM.get(epic_num)
@@ -56,11 +59,30 @@ def install_v4_epics_and_stories(
         epic_dir = epic_template_dir(epic)
         src_epic = epic_dir / f"epic-{epic_num:02d}.md"
         if not src_epic.is_file():
+            if dry_run:
+                print(
+                    f"  🔍 [DRY RUN] Would skip Epic {epic_num} — no template "
+                    f"(v4/templates/tiers/core/epic-{epic_num:02d}-*)"
+                )
+            else:
+                print(f"  ⚠️  Epic {epic_num} skipped — no v4 template at {src_epic}")
             continue
         dest_epic_dir = kanban_path / "epics" / kp.epic_dir_name(epic_num)
         dest_epic = dest_epic_dir / kp.epic_doc_basename(epic_num)
+        try:
+            rel_tpl = src_epic.relative_to(templates_root)
+        except ValueError:
+            rel_tpl = src_epic.name
+        dest_rel = (
+            f"epics/{kp.epic_dir_name(epic_num)}/"
+            f"{kp.epic_doc_basename(epic_num)}"
+        )
 
         if dry_run:
+            print(
+                f"  🔍 [DRY RUN] Would install Epic {epic_num} from template: {rel_tpl} "
+                f"→ {dest_rel}"
+            )
             log.append({"type": "epic", "action": "dry_run", "epic_number": epic_num})
             continue
 
@@ -69,6 +91,10 @@ def install_v4_epics_and_stories(
             dest_epic.write_text(
                 _contextualize(src_epic.read_text(encoding="utf-8"), project_name),
                 encoding="utf-8",
+            )
+            print(
+                f"  ✅ Epic {epic_num} installed from template: {rel_tpl} "
+                f"→ {dest_rel}"
             )
             log.append({"type": "epic", "action": "installed", "epic_number": epic_num})
 

@@ -11,8 +11,8 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
-## [0.6.9.35+2] - 14-06-26
+## [0.2.16.5+7] - 14-06-26
 
-E06:S09:T35 follow-on — agentic KMA migration playbook, guardrails, agentic vs automated benchmark tests, kma_ingest inline task fix. SemVer **v0.4.1164+2**.
+E02:S16:T05 — GitHub Actions CI health (Wave 5): v4 fresh-install stdout parity for Tests workflow — `install_v4_catalog.py` logs padded epic paths and `installed from template` lines expected by kanban install pytest. SemVer **v0.4.1165+7**.
 
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.6.9.35+2.md)
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.16.5+7.md)

@@ -1,55 +1,32 @@
-# Changelog v0.2.16.5+7
+# CHANGELOG_v0.2.16.5+7
 
-**Release Date:** 2026-06-10 20:15:00 UTC  
-**Epic | Story | Task:** E02:S16:T05 (`RW --art`)  
+**Release Date:** 2026-06-14 18:55:00 UTC
 
-## Summary
+## Release Summary
 
-**Change implemented:** Wave 4 — close CQG/CodeQL vs Actions CI ship gap ([BR-104](../../kanban/fr-br/BR-104-codeql-cqg-green-does-not-imply-actions-ci-green.md)): migration race fix, Step 9.7 hardening, remote no-red-ship validator, operator docs.
+`RW E02:S16:T05 --art` — Wave 5 GitHub Actions CI hygiene: restore **Tests** workflow green on `dev` after v4 fresh-install default dropped v3.5 stdout parity. `install_v4_catalog.py` now emits padded epic destination logs (`installed from template`, dry-run `Would install Epic N`) matching existing pytest contract.
 
-## Attempted Fixes
+## Internal and SemVer
 
-### Release-state migration (Tests CI failure @ `main` `1bce576`)
+- Internal version: `0.2.16.5+7`
+- SemVer (`task_touch`): `0.4.1165+7`
 
-- **Root cause:** `migrate_to_v2` TOCTOU under parallel `open_db` — `duplicate column name: semver_core`.
-- **Fix:** `BEGIN IMMEDIATE` in `run_migrations`; duplicate-column guard on `ALTER TABLE`; regression test `test_migrate.py`.
+## Included Changes
 
-### Step 9.7 Actions CI parity
+### Attempted fix — v4 fresh install stdout parity (Tests CI)
 
-- `--strict` fails when zero checks match (no silent skip).
-- `--allow-path-skip` for `RW -d` docs-only.
-- Python-surface diff forces full check set.
+- `packages/frameworks/kanban/scripts/install_v4_catalog.py` — Core-tier epic install/dry-run logging aligned with `migrate_structure` v3.5 format
+- `greenfield-install/` mirror sync (FR-110)
 
-### Pre-push remote gate
+### Root cause (identified)
 
-- **New:** `validate_github_actions_remote.py` — `gh run list` no-red-ship check before push/batch push.
-- Wired in `rw-config.yaml`, cheatsheet §2, `rw-contract.yaml`, canonical RW steps.
-
-### CQG boundary
-
-- `validate_code_quality_gate.py` emits **CQG ≠ CI ship gate** banner.
-- Operator guide + cheatsheet updated.
-
-## Changed
-
-- `packages/frameworks/workflow-mgt/scripts/release_state/migrate.py`
-- `packages/frameworks/workflow-mgt/scripts/validation/validate_actions_ci_parity.py`
-- `packages/frameworks/workflow-mgt/scripts/validation/validate_github_actions_remote.py` (new)
-- `packages/frameworks/workflow-mgt/scripts/validation/validate_code_quality_gate.py`
-- `tests/release_state/test_migrate.py` (new)
-- `docs/implementation-cycles/IPP-E02S16T05-github-actions-ci-health-perpetual-fr112.md` (new)
-- `docs/kanban/fr-br/BR-104-codeql-cqg-green-does-not-imply-actions-ci-green.md` (new)
-- `greenfield-install/` mirror sync
+- FR-132 changed fresh install default `--catalog` to `v4`; v4 installer created epics silently while pytest asserts on stdout tokens (`installed from template`, `epics/epic-01/epic-01.md`, dry-run epic hints)
 
 ## Verification
 
-- `pytest tests/release_state/test_migrate.py tests/release_state/test_allocate.py::TestParallelAllocate` — pass (local)
-- `pytest packages/frameworks/workflow-mgt/scripts/validation/test_actions_ci_parity.py packages/frameworks/workflow-mgt/scripts/validation/test_github_actions_remote.py` — pass (local)
-- GitHub Actions re-verify — **pending** operator check on `dev`/`main` after push
+- Local: `pytest tests/kanban/test_install_epic_22_23_templates.py tests/kanban/test_migrate_structure_log_epic_padding.py` — 6 passed
+- Post-push: re-check [GitHub Actions Tests on dev](https://github.com/RMS-Ltd/ai-dev-kit/actions)
 
-## References
+## Kanban
 
-- [T05](../../kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T05-github-actions-ci-health-perpetual.md)
-- [IPP-E02S16T05](../../implementation-cycles/IPP-E02S16T05-github-actions-ci-health-perpetual-fr112.md)
-- [FR-112](../../kanban/fr-br/FR-112-perpetual-github-ci-and-security-health-lanes.md)
-- [GitHub Actions](https://github.com/RMS-Ltd/ai-dev-kit/actions)
+- E02:S16:T05 perpetual CI health lane (FR-112)
