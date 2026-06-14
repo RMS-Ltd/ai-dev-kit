@@ -996,6 +996,7 @@ def install_canonical_epics_only(
     kanban_path: Path,
     dry_run: bool = False,
     force: bool = False,
+    catalog: str = "v4",
 ) -> Dict:
     """
     Install canonical core epics into the given Kanban path without performing a full migration.
@@ -1033,7 +1034,39 @@ def install_canonical_epics_only(
         force=force,
     )
 
-    # Directly install canonical epics + v3.5 core stories/tasks without full migrate() pipeline
+    project_name = migrator._get_project_name()
+
+    if catalog == "v4":
+        try:
+            from install_v4_catalog import install_v4_epics_and_stories
+
+            v4_result = install_v4_epics_and_stories(
+                kanban_path,
+                dry_run=dry_run,
+                force=force,
+                project_name=project_name,
+            )
+            from install_v4_catalog import install_v4_core_tasks
+
+            task_count = install_v4_core_tasks(
+                kanban_path,
+                dry_run=dry_run,
+                force=force,
+                project_name=project_name,
+            )
+            epics_installed = v4_result.get("epics_installed", 0)
+            files_created = v4_result.get("files_created", 0) + task_count
+            return {
+                "status": "completed",
+                "epics_installed": epics_installed,
+                "files_created": files_created,
+                "kanban_path": str(kanban_path),
+                "catalog": "v4",
+            }
+        except ImportError:
+            pass
+
+    # Fallback: v3.5 canonical epics + stories + tasks
     migrator._install_canonical_epics()
     migrator._install_v34_core_stories()
     migrator._install_core_tasks()

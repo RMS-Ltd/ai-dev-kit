@@ -14,7 +14,7 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** Small (ongoing)  
 **Created:** 2026-06-05  
-**Last updated:** 2026-06-10 (Wave 4 — CQG≠CI boundary, Step 9.7 hardening, migration race fix)  
+**Last updated:** 2026-06-14 (Wave 5 — v4 fresh-install stdout parity; Tests CI red on dev)  
 **Version Anchor:** v0.2.16.5+7  
 **Code:** E02S16T05  
 **Task Type:** Perpetual Maintenance
@@ -145,6 +145,20 @@ Use **`RW E02:S16:T05`** for recurring CI hygiene passes (BUILD increments on pe
 | Step 9.7 | `--strict` fails when zero checks match; `--allow-path-skip` for `RW -d` only |
 | Pre-push | `validate_github_actions_remote.py --strict` |
 | CQG banner | `validate_code_quality_gate.py` emits CQG ≠ CI ship gate note |
+
+**Post-RW verification:** Re-check [Actions](https://github.com/RMS-Ltd/ai-dev-kit/actions) — Tests green on `dev`/`main`.
+
+---
+
+## Wave 5 — v4 fresh-install stdout parity (2026-06-14)
+
+**Incident:** `dev` @ `90bbdf78` — **Tests failure** ([run 27506627320](https://github.com/RMS-Ltd/ai-dev-kit/actions/runs/27506627320)); Greenfield install **success**.
+
+| Workflow | Root cause | Fix |
+| -------- | ---------- | --- |
+| Tests | FR-132 v4 default catalog — `install_v4_catalog.py` silent install; pytest expects v3.5 stdout tokens | Epic install/dry-run logging parity in `install_v4_catalog.py` |
+
+**Failing tests (4):** `test_install_epic_22_23_templates.py` (×2), `test_migrate_structure_log_epic_padding.py` (×2).
 
 **Post-RW verification:** Re-check [Actions](https://github.com/RMS-Ltd/ai-dev-kit/actions) — Tests green on `dev`/`main`.
 

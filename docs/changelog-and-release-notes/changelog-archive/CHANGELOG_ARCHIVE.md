@@ -1,4 +1,11 @@
 # Changelog Archive
+## [0.2.16.6+11] - 13-06-26
+
+E02:S16:T06 — Wave 6b Code Quality burn-down: cyclic-import extraction, unused-import/global cleanup, empty-except comment; CQG **0** findings; kanban v3.2–v3.5 fresh-install pytest green. Operator TC36 verify pending. SemVer **v0.4.1162+11**.
+
+[Detailed changelog](CHANGELOG_v0.2.16.6+11.md)
+
+---
 ## [0.2.16.3+7] - 10-06-26
 
 E02:S16:T03 — FR-125: merge T07 into T03; unified Ad-hoc Documentation Maintenance perpetual lane. SemVer **v0.4.1123+7**.

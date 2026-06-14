@@ -19,7 +19,7 @@ housekeeping_policy: keep
 
 **Predecessor (closed):** [E06:S09:T25](T25-starborn-legacy-greenfield-install-diary-triage-uxr025.md) — UXR-025 triage + F4/F5 fixes @ **v0.6.9.25+3**
 
-**Related:** [UXR-025](../../../fr-br/UXR-025-starborn-legacy-greenfield-install-diary.md) · [FR-081](../../../fr-br/FR-081-brownfield-modular-adopter-integration.md) · [FR-080](../../../fr-br/FR-080-greenfield-installation-process.md) · [FR-079](../../../fr-br/FR-079-install-feedback-submission-path-and-governance.md) · [Triage matrix](../../../../knowledge/analysis/projects/starborn-legacy-install-triage-matrix.md) · [Maintainer index](../../../../../../adk-install-into-sbl/README.md) · SBL FB roots: `starborn_legacy/logs/ai-dev-kit/install/attempt-{03,04,05,06}/`
+**Related:** [UXR-025](../../../fr-br/UXR-025-starborn-legacy-greenfield-install-diary.md) · [FR-081](../../../fr-br/FR-081-brownfield-modular-adopter-integration.md) · [FR-080](../../../fr-br/FR-080-greenfield-installation-process.md) · [FR-079](../../../fr-br/FR-079-install-feedback-submission-path-and-governance.md) · [FR-132](../../../fr-br/FR-132-kanban-v4-three-tier-catalogue.md) · [Issue #51](https://github.com/RMS-Ltd/ai-dev-kit/issues/51) · [SBL attempt 09 replay](../../../../knowledge/analysis/projects/sbl-attempt-09-kanban-v4-replay.md)
 
 ---
 

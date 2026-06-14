@@ -550,13 +550,16 @@ Legend: **R** = Required · **O** = Optional · **Rec** = Recommended · **N/A**
 
 When you have an **existing legacy kanban corpus** (non-canonical story naming, inline tasks, domain epics), use the **Kanban Migration Agent (KMA)** — not the deprecated installer migration modes.
 
+**Agentic-first:** The agent owns **read → reason → propose → sign-off → synthesise**. Python scripts (`kma_ingest.py`, `validate_migration_map.py`) are **optional advisory helpers only** — not a migration engine.
+
 1. Trigger **`KMA`** or **`/kma`** in your IDE agent session.
-2. Follow [kanban-migration-agent-execution.md](packages/frameworks/kanban/KB/Documentation/Developer_Docs/kanban-migration-agent-execution.md) (ingest → propose → **operator review** → execute → validate).
-3. Review and sign off on `migration-proposal.md` before any file writes.
+2. Read [ADK_KANBAN_MIGRATION_FOR_ADOPTER_AGENTS.md](packages/frameworks/kanban/guides/ADK_KANBAN_MIGRATION_FOR_ADOPTER_AGENTS.md) and follow [kanban-migration-agent-execution.md](packages/frameworks/kanban/KB/Documentation/Developer_Docs/kanban-migration-agent-execution.md).
+3. Emit [DUPLICATE_EPIC_POLICY.md](packages/frameworks/kanban/guides/DUPLICATE_EPIC_POLICY.md) matrix in Step 2; draft `migration-proposal.md` from the template.
+4. Review and sign off on the proposal before any file writes (**blocking gate**).
 
 **Policy:** [ADR-028](docs/architecture/standards-and-adrs/ADR-028-agentic-kanban-migration-brownfield-fr127.md) · [FR-127](docs/kanban/fr-br/FR-127-agentic-kanban-migration-agent-replace-tool-pipeline.md). Installer modes `migration`, `hybrid`, and `canonical_adoption` are **gated** (exit 2) with a pointer to KMA.
 
-**Evidence:** Starborn Legacy attempt 06 — tool pipeline detected 0/80+ stories; KMA-style agentic migration moved 72 stories (see [migration-tool-pipeline-deprecation.md](packages/frameworks/kanban/guides/migration-tool-pipeline-deprecation.md)).
+**Evidence:** Starborn Legacy attempt 06 — automated pipeline detected **0** stories; agentic KMA migrated **72** stories. Regression benchmark: `pytest tests/kanban/test_kma_agentic_vs_automated.py` (see [migration-tool-pipeline-deprecation.md](packages/frameworks/kanban/guides/migration-tool-pipeline-deprecation.md)).
 
 ### Adding Kanban later
 

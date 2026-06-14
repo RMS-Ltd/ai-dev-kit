@@ -16,24 +16,29 @@ housekeeping_policy: keep
 
 ## Overview
 
-The **Kanban Migration Agent (KMA)** is an intelligent agent-driven workflow for migrating legacy kanban corpora into ADK v3.2 layout. It replaces the deprecated `detect→analyze→migrate` tool pipeline for brownfield/domain adopters.
+The **Kanban Migration Agent (KMA)** is an intelligent agent-driven workflow for migrating legacy kanban corpora into ADK v3.2/v4 layout. It replaces the deprecated `detect→analyze→migrate` tool pipeline for brownfield/domain adopters.
 
 **Trigger:** `KMA` or `/kma` (optional: legacy root path, target `kanban_root`).
 
-**Evidence:** SBL attempt 06 — tool pipeline 0/80+ stories detected; agentic migration 72 stories into E01–E10 + E21–E28.
+**Adopter playbook:** [ADK_KANBAN_MIGRATION_FOR_ADOPTER_AGENTS.md](../../../guides/ADK_KANBAN_MIGRATION_FOR_ADOPTER_AGENTS.md)  
+**Guardrails:** [kma-agent-guardrails.yaml](../../../manifests/kma-agent-guardrails.yaml) (`mode: agentic_intelligence_required`)
+
+**Evidence:** SBL attempt 06 — tool pipeline **0** stories detected; agentic migration **72** stories into E01–E10 + E21–E28. Fixture benchmark: `pytest tests/kanban/test_kma_agentic_vs_automated.py`.
 
 ---
 
 ## Intelligence requirements
 
-KMA is **not** a deterministic script. The agent MUST:
+KMA is **not** a deterministic script. The agent MUST follow **read → reason → propose → sign-off → synthesise**:
 
-- Read full corpus content (not directory listing only)
-- Propose **domain-aware** epic structure (canonical shell E01–E10 + domain epics E21+ when appropriate)
-- Synthesise epic overviews from multiple legacy sources
-- Identify keep / drop / merge rationale explicitly
-- **Block file writes** until operator sign-off
+- **Read** full corpus content (not directory listing only)
+- **Reason** with DUPLICATE_EPIC_POLICY before epic map
+- **Propose** domain-aware epic structure (canonical shell E01–E10 + domain epics E24+ when appropriate)
+- **Sign-off** — block file writes until operator confirms
+- **Synthesise** epic overviews from multiple legacy sources; identify keep / drop / merge rationale explicitly
 - Preserve legacy tree (read-only ingest; writes to separate `kanban_root`)
+
+Optional helpers (`kma_ingest.py`, `validate_migration_map.py`) are **advisory only**.
 
 ---
 
@@ -54,7 +59,8 @@ KMA is **not** a deterministic script. The agent MUST:
 ### Step 2 — Propose
 
 1. Draft `migration-proposal.md` from [MIGRATION_PROPOSAL_TEMPLATE.md](../../../templates/MIGRATION_PROPOSAL_TEMPLATE.md).
-2. Include:
+2. **🚨 v4 gate (FR-132 / Issue #51):** Emit [DUPLICATE_EPIC_POLICY.md](../../../guides/DUPLICATE_EPIC_POLICY.md) decision matrix mapping **before** epic map table — one home per concern; flag dual mappings.
+3. Include:
    - Epic map table (legacy → target)
    - Keep / Drop / Merge sections with rationale
    - Domain rationale (why E21+ epics vs canonical-only)
@@ -85,10 +91,17 @@ Run post-migration checks:
 
 ```bash
 python packages/frameworks/kanban/scripts/validate_installation.py --kanban-path docs/kanban
-python packages/frameworks/kanban/scripts/validate_kanban_v32_fingerprint.py  # when fresh shell present
+python packages/frameworks/kanban/scripts/validate_v4_template_completeness.py --strict
+python packages/frameworks/kanban/scripts/validate_migration_map.py --proposal migration-proposal.md --strict  # advisory
 ```
 
 Spot-check links, epic/story counts vs proposal, and dual-tree integrity (legacy mtime unchanged).
+
+**Benchmark regression (fixture):**
+
+```bash
+pytest tests/kanban/test_kma_agentic_vs_automated.py -v
+```
 
 ---
 
@@ -97,7 +110,7 @@ Spot-check links, epic/story counts vs proposal, and dual-tree integrity (legacy
 | Scenario | Path |
 | -------- | ---- |
 | Legacy corpus (non-canonical naming, domain epics) | **KMA** |
-| Empty Kanban root | `install_kanban_framework.py --mode fresh` |
+| Empty Kanban root | `install_kanban_framework.py --mode fresh --catalog v4` |
 | Existing ADK layout path refresh | `install_kanban_framework.py --mode update` |
 | Deprecated migration modes | **Gated** — use KMA instead |
 
@@ -107,4 +120,11 @@ See [migration-tool-pipeline-deprecation.md](../../../guides/migration-tool-pipe
 
 ## Reference fixture
 
-`tests/fixtures/sbl-legacy-kanban-minimal/` — anonymized SBL-style corpus for replay tests. Full SBL corpus optional via `SBL_LEGACY_KANBAN_ROOT` env (integration tests).
+`tests/fixtures/sbl-legacy-kanban-minimal/` — anonymized SBL-style corpus for replay tests (3 epics, 8 stories, 9 inline tasks).
+
+- Ground truth: `benchmark-ground-truth.yaml`
+- Example proposal (unsigned E24 merge): `migration-proposal-example.md`
+- Benchmark module: `tests/kanban/kma_migration_benchmark.py`
+- Regression: `tests/kanban/test_kma_agentic_vs_automated.py` (automated ~0 vs agentic 1.0)
+
+Full SBL corpus optional via `SBL_LEGACY_KANBAN_ROOT` env (integration tests).

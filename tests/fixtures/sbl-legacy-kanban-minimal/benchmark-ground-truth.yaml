@@ -1,0 +1,62 @@
+# Ground truth for KMA migration benchmark (FR-127 UAT)
+# Fixture: tests/fixtures/sbl-legacy-kanban-minimal/
+
+fixture_id: sbl-legacy-kanban-minimal
+description: Anonymized SBL-style legacy corpus — flat Epic-NN.md + stories/E{n}-S{m}.md + inline E:S:T
+
+counts:
+  epics: 3
+  stories: 8
+  inline_tasks: 9
+
+epics:
+  - legacy_id: E01
+    file: Epic-01.md
+    title: Core Game Loop
+  - legacy_id: E02
+    file: Epic-02.md
+    title: Colony Systems
+  - legacy_id: E03
+    file: Epic-03.md
+    title: Space Exploration
+
+stories:
+  - { epic: 1, story: 1, file: stories/E01-S01.md, title: Turn resolution }
+  - { epic: 1, story: 2, file: stories/E01-S02.md, title: Combat basics }
+  - { epic: 1, story: 3, file: stories/E01-S03.md, title: Resource tick }
+  - { epic: 2, story: 1, file: stories/E02-S01.md, title: Colony founding }
+  - { epic: 2, story: 2, file: stories/E02-S02.md, title: Population growth }
+  - { epic: 2, story: 3, file: stories/E02-S03.md, title: Building placement }
+  - { epic: 3, story: 1, file: stories/E03-S01.md, title: Star map }
+  - { epic: 3, story: 2, file: stories/E03-S02.md, title: Sensor range }
+
+inline_tasks:
+  - E01:S01:T01
+  - E01:S01:T02
+  - E01:S02:T01
+  - E01:S03:T01
+  - E02:S01:T01
+  - E02:S02:T01
+  - E02:S03:T01
+  - E03:S01:T01
+  - E03:S02:T01
+
+naming_patterns:
+  - epic_file
+  - E{n}-S{m}
+  - inline_E:S:T
+
+# SBL attempt 06 evidence (full corpus — not minimal fixture)
+sbl_attempt_06:
+  corpus: starborn_legacy/KB/PM_and_Portfolio
+  automated_pipeline:
+    stories_detected: 0
+    stories_ground_truth_min: 80
+  agentic_kma:
+    stories_migrated: 72
+  score_delta: "0 vs 72"
+
+benchmark_expectations:
+  automated_story_recall_max: 0.05
+  agentic_story_recall_min: 1.0
+  scoring_metric: story_recall

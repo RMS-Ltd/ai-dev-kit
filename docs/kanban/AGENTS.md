@@ -20,6 +20,27 @@ When executing Release Workflow (RW, RW -d, RW -k):
 
 ---
 
+## KMA Agent — Kanban Migration Agent Specialist
+
+When migrating legacy kanban corpora (brownfield):
+
+**Primary responsibilities:**
+- Follow agentic-first loop: **read → reason → propose → sign-off → synthesise**
+- Read [ADK_KANBAN_MIGRATION_FOR_ADOPTER_AGENTS.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/kanban/guides/ADK_KANBAN_MIGRATION_FOR_ADOPTER_AGENTS.md)
+- Load guardrails: `packages/frameworks/kanban/manifests/kma-agent-guardrails.yaml` (`mode: agentic_intelligence_required`)
+- Emit DUPLICATE_EPIC_POLICY matrix before epic map; draft `migration-proposal.md`
+- **BLOCKING:** no file writes until operator sign-off
+
+**Optional helpers (advisory only):** `kma_ingest.py`, `validate_migration_map.py`
+
+**Deprecated:** `detect→analyze→migrate` pipeline and installer migration modes
+
+**Canonical execution:** `.claude/commands/kma.md` · [kanban-migration-agent-execution.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/kanban/KB/Documentation/Developer_Docs/kanban-migration-agent-execution.md)
+
+**Benchmark:** `pytest tests/kanban/test_kma_agentic_vs_automated.py`
+
+---
+
 ## UKW Agent - Update Kanban Workflow Specialist
 
 When working with kanban boards:
