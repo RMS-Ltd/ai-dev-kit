@@ -54,7 +54,8 @@ KMA is **not** a deterministic script. The agent MUST:
 ### Step 2 — Propose
 
 1. Draft `migration-proposal.md` from [MIGRATION_PROPOSAL_TEMPLATE.md](../../../templates/MIGRATION_PROPOSAL_TEMPLATE.md).
-2. Include:
+2. **🚨 v4 gate (FR-132 / Issue #51):** Emit [DUPLICATE_EPIC_POLICY.md](../../../guides/DUPLICATE_EPIC_POLICY.md) decision matrix mapping **before** epic map table — one home per concern; flag dual mappings.
+3. Include:
    - Epic map table (legacy → target)
    - Keep / Drop / Merge sections with rationale
    - Domain rationale (why E21+ epics vs canonical-only)
@@ -85,7 +86,8 @@ Run post-migration checks:
 
 ```bash
 python packages/frameworks/kanban/scripts/validate_installation.py --kanban-path docs/kanban
-python packages/frameworks/kanban/scripts/validate_kanban_v32_fingerprint.py  # when fresh shell present
+python packages/frameworks/kanban/scripts/validate_v4_template_completeness.py --strict
+python packages/frameworks/kanban/scripts/validate_migration_map.py --proposal migration-proposal.md --strict
 ```
 
 Spot-check links, epic/story counts vs proposal, and dual-tree integrity (legacy mtime unchanged).
@@ -97,7 +99,7 @@ Spot-check links, epic/story counts vs proposal, and dual-tree integrity (legacy
 | Scenario | Path |
 | -------- | ---- |
 | Legacy corpus (non-canonical naming, domain epics) | **KMA** |
-| Empty Kanban root | `install_kanban_framework.py --mode fresh` |
+| Empty Kanban root | `install_kanban_framework.py --mode fresh --catalog v4` |
 | Existing ADK layout path refresh | `install_kanban_framework.py --mode update` |
 | Deprecated migration modes | **Gated** — use KMA instead |
 

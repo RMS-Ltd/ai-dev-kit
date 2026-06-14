@@ -8,7 +8,9 @@ housekeeping_policy: keep
 
 # Canonical Epics for Kanban Framework
 
-**Purpose:** This document lists the canonical set of epics that are part of the Kanban framework package. These epics represent the standard organisational structure for projects using the Kanban framework.
+> **⚠️ DEPRECATED numbering for installer SoT.** Fresh installs use **Kanban v4** catalogue: `packages/frameworks/kanban/scripts/kanban_v4_catalog.py` and `docs/knowledge/analysis/kanban-v2/13-v4-three-tier-catalogue.md`. This document retains historical E11–E23 layout for reference only.
+
+**Purpose:** This document lists the canonical set of epics that are part of the Kanban framework package.
 
 **Usage:** When adopting the Kanban framework, these canonical epics provide the foundation for organizing work. Projects can add additional epics as needed, but these represent the core framework structure.
 

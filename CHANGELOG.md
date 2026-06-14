@@ -11,8 +11,8 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
-## [0.2.16.6+11] - 13-06-26
+## [0.6.9.35+1] - 14-06-26
 
-E02:S16:T06 — Wave 6b Code Quality burn-down: cyclic-import extraction, unused-import/global cleanup, empty-except comment; CQG **0** findings; kanban v3.2–v3.5 fresh-install pytest green. Operator TC36 verify pending. SemVer **v0.4.1162+11**.
+E06:S09:T35 — Kanban v4 three-tier catalogue (FR-132): Core/Ancillary/Domain templates, CATL bootstrap, v4 fresh install default, migration validators, KMA duplicate-epic gate. SemVer **v0.4.1163+1**.
 
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.16.6+11.md)
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.6.9.35+1.md)

@@ -16,6 +16,12 @@ notion_sot: true
 
 Packaged ADK kanban templates carry **structural debt** (triple layout, epic 9/18 swap, scattered perpetual patterns) while v2.0.0 reorganised semantics into Pre-Design/Design phases that **diverge from installer reality**. ADK live dogfoods E02:S16 perpetual consolidation — elegant for maintainers, opaque for adopters.
 
+## v4 decision (2026-06-14)
+
+**Kanban v4** introduces an explicit **Core (E01–E10) / Ancillary (E11–E23) / Domain (E24+)** catalogue with mutual-exclusivity policy ([Issue #51](https://github.com/RMS-Ltd/ai-dev-kit/issues/51)). SoT: [13-v4-three-tier-catalogue.md](13-v4-three-tier-catalogue.md) · `kanban_v4_catalog.py`. Fresh install default: **`--catalog v4`**.
+
+---
+
 ## Method
 
 Cross-repo corpus analysis (packaged templates, ADK live, Confidentia, fynd.deals, Starborn) via `kanban_corpus_extractor.py`; PM elegance scorecard; comparison of Scenarios A/B/C.
