@@ -37,3 +37,14 @@ python3 packages/frameworks/kanban/scripts/validate_migration_map.py --proposal 
 - No duplicate Security/Testing/CI epics in proposal
 - Confidentia E15 → **E15 COMPLY**; scraper work → **E24+**
 - Fresh E01–E08 match v4 template depth (Purpose + `{PROJECT_NAME}`)
+- KMA benchmark passes: `pytest tests/kanban/test_kma_agentic_vs_automated.py` (automated pipeline ~0 story recall vs agentic 1.0 on minimal fixture; SBL attempt 06 evidence **0 vs 72** on full corpus)
+
+## Benchmark reference
+
+| Corpus | Automated detect→analyze | Agentic KMA |
+| ------ | ------------------------ | ----------- |
+| `tests/fixtures/sbl-legacy-kanban-minimal/` | ~0 story recall | 1.0 (8/8 stories) |
+| SBL full (`KB/PM_and_Portfolio`) | 0 detected | 72 migrated |
+
+Ground truth: `tests/fixtures/sbl-legacy-kanban-minimal/benchmark-ground-truth.yaml`  
+Playbook: [ADK_KANBAN_MIGRATION_FOR_ADOPTER_AGENTS.md](../../../packages/frameworks/kanban/guides/ADK_KANBAN_MIGRATION_FOR_ADOPTER_AGENTS.md)

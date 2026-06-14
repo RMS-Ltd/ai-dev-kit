@@ -11,8 +11,8 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
-## [0.6.9.35+1] - 14-06-26
+## [0.6.9.35+2] - 14-06-26
 
-E06:S09:T35 — Kanban v4 three-tier catalogue (FR-132): Core/Ancillary/Domain templates, CATL bootstrap, v4 fresh install default, migration validators, KMA duplicate-epic gate. SemVer **v0.4.1163+1**.
+E06:S09:T35 follow-on — agentic KMA migration playbook, guardrails, agentic vs automated benchmark tests, kma_ingest inline task fix. SemVer **v0.4.1164+2**.
 
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.6.9.35+1.md)
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.6.9.35+2.md)

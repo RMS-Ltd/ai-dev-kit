@@ -6,7 +6,9 @@ housekeeping_policy: keep
 
 # Legacy kanban migration (v4 playbook)
 
-**Use with:** KMA (Kanban Migration Agent) · [FR-127](../../../docs/kanban/fr-br/FR-127-agentic-kanban-migration-agent-replace-tool-pipeline.md) · [Issue #51](https://github.com/RMS-Ltd/ai-dev-kit/issues/51)
+**Use with:** KMA (Kanban Migration Agent) · [ADK_KANBAN_MIGRATION_FOR_ADOPTER_AGENTS.md](ADK_KANBAN_MIGRATION_FOR_ADOPTER_AGENTS.md) · [FR-127](../../../docs/kanban/fr-br/FR-127-agentic-kanban-migration-agent-replace-tool-pipeline.md) · [Issue #51](https://github.com/RMS-Ltd/ai-dev-kit/issues/51)
+
+**Mode:** Agentic intelligence required — read → reason → propose → sign-off → synthesise. Scripts are advisory helpers only.
 
 ## Paths
 
@@ -38,9 +40,13 @@ housekeeping_policy: keep
 ## Validation
 
 ```bash
+# Advisory — dual-mapping lint on proposal (not a migration engine)
 python3 packages/frameworks/kanban/scripts/validate_migration_map.py --proposal migration-proposal.md --strict
 python3 packages/frameworks/kanban/scripts/validate_v4_template_completeness.py --strict
+pytest tests/kanban/test_kma_agentic_vs_automated.py -v
 ```
+
+**Benchmark fixture:** `tests/fixtures/sbl-legacy-kanban-minimal/` · ground truth `benchmark-ground-truth.yaml` · example proposal `migration-proposal-example.md`
 
 ## Renumber map
 

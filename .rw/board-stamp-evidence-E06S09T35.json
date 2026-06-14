@@ -1,0 +1,6 @@
+{
+  "E06:S09:T35": {
+    "allowed": true,
+    "reason": "RW Step 7 release-scope reconciliation @ v0.6.9.35+2"
+  }
+}

@@ -1,9 +1,9 @@
 # KB Index
 
-**Generated:** 2026-06-13 17:01:35 UTC  
+**Generated:** 2026-06-14 17:53:10 UTC  
 **Scope:** /Users/ruari/Projects/ai-dev-kit/docs  
-**Total files:** 3263  
-**Total size:** 15.14 MB
+**Total files:** 3276  
+**Total size:** 15.18 MB
 
 ---
 
@@ -14,15 +14,15 @@
 | analysis | 9 | 152.7 KB | 0 | 9 | 0 | 0 | 0 | 0 |
 | architecture | 128 | 1.25 MB | 0 | 128 | 0 | 0 | 0 | 0 |
 | book-project | 2 | 26.5 KB | 0 | 2 | 0 | 0 | 0 | 0 |
-| changelog-and-release-notes | 1520 | 4.14 MB | 0 | 1520 | 0 | 0 | 0 | 0 |
+| changelog-and-release-notes | 1524 | 4.15 MB | 0 | 1524 | 0 | 0 | 0 | 0 |
 | developer-tools | 2 | 12.7 KB | 0 | 2 | 0 | 0 | 0 | 0 |
 | documentation | 33 | 354.3 KB | 0 | 33 | 0 | 0 | 0 | 0 |
 | governance | 26 | 206.9 KB | 0 | 26 | 0 | 0 | 0 | 0 |
 | guides | 7 | 31.8 KB | 0 | 7 | 0 | 0 | 0 | 0 |
 | implementation-cycles | 275 | 2.26 MB | 0 | 275 | 0 | 0 | 0 | 0 |
 | journals | 4 | 14.7 KB | 0 | 4 | 0 | 0 | 0 | 0 |
-| kanban | 1154 | 5.41 MB | 0 | 1154 | 0 | 0 | 0 | 0 |
-| knowledge | 75 | 1.14 MB | 0 | 75 | 0 | 0 | 0 | 0 |
+| kanban | 1158 | 5.43 MB | 0 | 1158 | 0 | 0 | 0 | 0 |
+| knowledge | 80 | 1.16 MB | 0 | 80 | 0 | 0 | 0 | 0 |
 | maintainer | 1 | 2.9 KB | 0 | 1 | 0 | 0 | 0 | 0 |
 | maintenance | 24 | 138.7 KB | 0 | 24 | 0 | 0 | 0 | 0 |
 | project-agent-index.md | 1 | 4.3 KB | 0 | 1 | 0 | 0 | 0 | 0 |
@@ -32,7 +32,7 @@
 ## Optimization signals
 
 - **docs/README.md exists:** False
-- **Files missing lifecycle frontmatter:** 3263
+- **Files missing lifecycle frontmatter:** 3276
 - **Timeboxed/transient with expires_at in the past:** 0
 - **READMEs (under docs/):** 22
 
@@ -88,7 +88,7 @@
 - `architecture/standards-and-adrs/changelog-archival-policy.md`
 - `architecture/standards-and-adrs/changelog-management-policy.md`
 - `architecture/standards-and-adrs/changelog-ordering-investigation-report.md`
-- ... and 3213 more
+- ... and 3226 more
 
 ### README locations
 
@@ -607,7 +607,7 @@
 | journals/README.md | 2.7 KB | 341 |  |  |  |
 | journals/RECOVERY_PROCEDURE.md | 3.7 KB | 580 |  |  |  |
 | journals/ROLLBACK_CONTRACT.md | 4.8 KB | 770 |  |  |  |
-| kanban/AGENTS.md | 6.0 KB | 687 |  |  |  |
+| kanban/AGENTS.md | 7.1 KB | 764 |  |  |  |
 | kanban/README.md | 2.0 KB | 227 |  |  |  |
 | kanban/_index.md | 3.1 KB | 357 |  |  |  |
 | kanban/epics/epic-01/epic-01.md | 7.7 KB | 944 |  |  |  |
@@ -1273,7 +1273,7 @@
 | kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T23-greenfield-install-github-packages-delivery-uxr021.md | 5.1 KB | 459 |  |  |  |
 | kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T24-acquisition-layer-adk-error-codes-fr111.md | 3.3 KB | 289 |  |  |  |
 | kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T25-starborn-legacy-greenfield-install-diary-triage-uxr025.md | 5.5 KB | 554 |  |  |  |
-| kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T26-starborn-legacy-adk-install-program.md | 27.1 KB | 2985 |  |  |  |
+| kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T26-starborn-legacy-adk-install-program.md | 27.1 KB | 2984 |  |  |  |
 | kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T27-kanban-v32-package-rewrite-installer-f9-f17.md | 3.9 KB | 394 |  |  |  |
 | kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T28-v32-fresh-install-signoff-story-padding-br105.md | 1.9 KB | 174 |  |  |  |
 | kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T29-rw-install-non-interactive-changelog-prompt-br106.md | 1.9 KB | 156 |  |  |  |
@@ -1281,7 +1281,9 @@
 | kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T31-agentic-kanban-migration-agent-fr127.md | 2.7 KB | 208 |  |  |  |
 | kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T32-detect-structure-zero-padded-epic-br108.md | 1.6 KB | 133 |  |  |  |
 | kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T33-adk-package-update-mechanism-fr129.md | 3.6 KB | 392 |  |  |  |
-| kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration.md | 17.4 KB | 1115 |  |  |  |
+| kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T34-kanban-v35-packaged-catalog-small-tier.md | 4.1 KB | 387 |  |  |  |
+| kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T35-kanban-v4-three-tier-catalogue-fr132.md | 3.8 KB | 335 |  |  |  |
+| kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration.md | 18.3 KB | 1177 |  |  |  |
 | kanban/epics/epic-07/epic-07.md | 13.4 KB | 1698 |  |  |  |
 | kanban/epics/epic-07/story-00-uxr-repo/T01-uxr-001-repository-anchor.md | 1.8 KB | 179 |  |  |  |
 | kanban/epics/epic-07/story-00-uxr-repo/T02-uxr-002-repository-anchor.md | 1.5 KB | 148 |  |  |  |
@@ -1724,6 +1726,8 @@
 | kanban/fr-br/FR-128-environment-aware-workflow-execution.md | 11.9 KB | 1387 |  |  |  |
 | kanban/fr-br/FR-129-adk-package-update-mechanism.md | 8.7 KB | 964 |  |  |  |
 | kanban/fr-br/FR-130-kanban-stamp-immutability-adr029-framework-defaults.md | 7.8 KB | 772 |  |  |  |
+| kanban/fr-br/FR-131-canonical-abstract-task-library-catl.md | 1.6 KB | 150 |  |  |  |
+| kanban/fr-br/FR-132-kanban-v4-three-tier-catalogue.md | 1.8 KB | 164 |  |  |  |
 | kanban/fr-br/REOPENING_BR_AND_TASKS_GUIDE.md | 7.9 KB | 1127 |  |  |  |
 | kanban/fr-br/UXR-001-migration-user-experience-research.md | 12.8 KB | 1568 |  |  |  |
 | kanban/fr-br/UXR-002-comprehensive-uat-migration-utilities.md | 10.7 KB | 1319 |  |  |  |
@@ -1758,10 +1762,10 @@
 | kanban/intake-open-taskless-queue.md | 5.3 KB | 736 |  |  |  |
 | kanban/intake-structure.md | 18.1 KB | 1882 |  |  |  |
 | kanban/kanban-board-guide.md | 16.5 KB | 2148 |  |  |  |
-| kanban/kanban-completed.md | 138.9 KB | 10968 |  |  |  |
+| kanban/kanban-completed.md | 139.4 KB | 11016 |  |  |  |
 | kanban/kanban-structure.md | 25.5 KB | 2239 |  |  |  |
-| kanban/kboard.md | 31.7 KB | 2163 |  |  |  |
-| knowledge/KB-INDEX.md | 201.2 KB | 19789 |  |  |  |
+| kanban/kboard.md | 32.1 KB | 2201 |  |  |  |
+| knowledge/KB-INDEX.md | 202.2 KB | 19888 |  |  |  |
 | knowledge/README.md | 2.5 KB | 267 |  |  |  |
 | knowledge/USE_CASE_METHODOLOGY.md | 14.3 KB | 1856 |  |  |  |
 | knowledge/analysis/abstract-anti-patterns-use-case-exposed-design-flaw.md | 13.0 KB | 1808 |  |  |  |
@@ -1787,8 +1791,12 @@
 | knowledge/analysis/kanban-v2/05-day-in-the-life-narratives.md | 1.2 KB | 180 |  |  |  |
 | knowledge/analysis/kanban-v2/06-validation-gates-report.md | 1.3 KB | 188 |  |  |  |
 | knowledge/analysis/kanban-v2/07-package-migration-blueprint.md | 3.6 KB | 550 |  |  |  |
-| knowledge/analysis/kanban-v2/08-executive-summary.md | 2.7 KB | 377 |  |  |  |
+| knowledge/analysis/kanban-v2/08-executive-summary.md | 3.1 KB | 410 |  |  |  |
 | knowledge/analysis/kanban-v2/09-ultimate-canonical-kanban-structure-v3.md | 6.6 KB | 1096 |  |  |  |
+| knowledge/analysis/kanban-v2/10-v33-catalog-delta-versioning-under-e01s02.md | 6.3 KB | 909 |  |  |  |
+| knowledge/analysis/kanban-v2/11-v34-catalog-delta-testing-under-e01s03.md | 1.5 KB | 235 |  |  |  |
+| knowledge/analysis/kanban-v2/12-v35-catalog-delta-bootstrap-stories.md | 2.2 KB | 299 |  |  |  |
+| knowledge/analysis/kanban-v2/13-v4-three-tier-catalogue.md | 3.6 KB | 498 |  |  |  |
 | knowledge/analysis/knowledge-documentation-structure-analysis.md | 21.9 KB | 2533 |  |  |  |
 | knowledge/analysis/meta-analysis-canonical-vs-legacy-matrices.md | 18.5 KB | 2632 |  |  |  |
 | knowledge/analysis/meta-analysis-convergence-divergence-maps.md | 14.9 KB | 2125 |  |  |  |
@@ -1810,6 +1818,7 @@
 | knowledge/analysis/projects/free-party-promoter-adk-analysis.md | 27.1 KB | 3570 |  |  |  |
 | knowledge/analysis/projects/fynd-deals-adk-analysis.md | 35.8 KB | 4396 |  |  |  |
 | knowledge/analysis/projects/qa-kb-adk-analysis.md | 18.1 KB | 2415 |  |  |  |
+| knowledge/analysis/projects/sbl-attempt-09-kanban-v4-replay.md | 2.2 KB | 217 |  |  |  |
 | knowledge/analysis/projects/starborn-legacy-adk-analysis.md | 34.2 KB | 4333 |  |  |  |
 | knowledge/analysis/projects/starborn-legacy-greenfield-install-diary.md | 9.6 KB | 1191 |  |  |  |
 | knowledge/analysis/projects/starborn-legacy-install-triage-matrix.md | 17.0 KB | 2002 |  |  |  |
@@ -1864,5 +1873,5 @@
 | project-agent-index.md | 4.3 KB | 404 |  |  |  |
 | project-management/README.md | 523 B | 46 |  |  |  |
 | release-notes/README.md | 1.4 KB | 137 |  |  |  |
-| changelog-and-release-notes/changelog-archive/ (summary) (1518 files) | 4.14 MB | 482251 |  |  |  |
+| changelog-and-release-notes/changelog-archive/ (summary) (1522 files) | 4.15 MB | 483388 |  |  |  |
 

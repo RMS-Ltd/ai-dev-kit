@@ -1,0 +1,37 @@
+# KMA agent guardrails — invariants only (FR-127 / ADR-028)
+# Consumed by adopter agents; not a deterministic workflow engine.
+
+version: "1.0.0"
+workflow: kma
+mode: agentic_intelligence_required
+
+invariants:
+  - id: read_full_corpus
+    description: Agent reads legacy file content recursively — not directory listing only.
+
+  - id: dual_tree_read_only
+    description: Legacy kanban root remains read-only; all writes go to ADK kanban_root.
+
+  - id: sign_off_before_writes
+    description: No migration file writes until operator explicitly signs off on migration-proposal.md.
+
+  - id: duplicate_epic_policy_first
+    description: DUPLICATE_EPIC_POLICY matrix emitted before epic map table in Step 2 (Propose).
+
+  - id: one_home_per_concern
+    description: Each concern maps to exactly one v4 home epic; no dual Security/Testing/CI epics.
+
+  - id: domain_vertical_e24_plus
+    description: Vertical product work maps to E24+ DOMAIN; not new ancillary epics.
+
+  - id: synthesise_not_verbatim
+    description: Epic overviews are synthesised from legacy sources — not verbatim copy.
+
+  - id: deprecated_pipeline_forbidden
+    description: detect→analyze→migrate tool pipeline and installer migration modes are forbidden for brownfield legacy.
+
+  - id: fresh_mode_preserved
+    description: install_kanban_framework.py --mode fresh remains the automated path for empty kanban roots.
+
+  - id: helpers_advisory_only
+    description: kma_ingest.py and validate_migration_map.py are optional advisory helpers — not migration engines.

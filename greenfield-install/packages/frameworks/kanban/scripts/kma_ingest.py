@@ -88,6 +88,14 @@ def ingest_legacy_corpus(legacy_root: Path) -> IngestReport:
                 }
             )
             patterns_seen.add("E{n}-S{m}" if story_m.group(1) else "Story-{n}")
+            try:
+                text = path.read_text(encoding="utf-8", errors="replace")
+                for m in _INLINE_EST_RE.finditer(text):
+                    token = f"E{m.group(1)}:S{m.group(2)}:T{m.group(3)}"
+                    report.inline_task_tokens.add(token)
+                    patterns_seen.add("inline_E:S:T")
+            except OSError:
+                pass
             continue
 
         # Inline tokens in any markdown file

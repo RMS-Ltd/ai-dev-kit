@@ -12,9 +12,9 @@ housekeeping_policy: keep
 **Status:** COMPLETE  
 **Priority:** HIGH  
 **Created:** 2026-06-14  
-**Last updated:** 2026-06-14 (**v0.6.9.35+1** — v4 catalogue shipped; RW E06:S09:T35)  
+**Last updated:** 2026-06-14 (**v0.6.9.35+2** — agentic KMA UAT + benchmark; RW E06:S09:T35 --art)  
 **Code:** E06S09T35  
-**Version anchor:** **v0.6.9.35+1** (SemVer **v0.4.1163+1**)
+**Version anchor:** **v0.6.9.35+2** (SemVer **v0.4.1164+2**)
 
 **Parent program:** [E06:S09:T26](T26-starborn-legacy-adk-install-program.md) · [Issue #51](https://github.com/RMS-Ltd/ai-dev-kit/issues/51)
 

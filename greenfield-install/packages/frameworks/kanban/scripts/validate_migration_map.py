@@ -1,5 +1,11 @@
 #!/usr/bin/env python3
-"""Validate KMA migration proposal — no dual epic mapping (Issue #51 P2)."""
+"""Advisory lint for KMA migration proposals — dual epic mapping check (Issue #51 P2).
+
+ADVISORY ONLY (FR-127): This script does not ingest legacy corpora, propose mappings,
+or execute migrations. KMA agents own read→reason→propose→sign-off→synthesise;
+run this helper optionally after drafting migration-proposal.md to flag dual homes
+or mega-story patterns before operator review.
+"""
 
 from __future__ import annotations
 
