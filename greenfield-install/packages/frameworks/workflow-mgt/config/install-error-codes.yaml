@@ -64,7 +64,7 @@ codes:
     summary: Install RC checklist failed
     symptom: validate_install_rc.py exited non-zero after greenfield orchestration (--run-install-rc).
     remediation:
-      - "Run validate_install_rc.py --profile <path> --strict and fix failing rows."
+      - "Run `validate_install_rc.py --profile <path> --strict` and fix failing rows."
       - "See docs/governance/standards/install-rc-checklist.md."
     see_also:
       - UXR-029

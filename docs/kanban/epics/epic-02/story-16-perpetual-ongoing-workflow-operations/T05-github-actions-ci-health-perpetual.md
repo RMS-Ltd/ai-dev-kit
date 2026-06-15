@@ -14,8 +14,8 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** Small (ongoing)  
 **Created:** 2026-06-05  
-**Last updated:** 2026-06-15 (Wave 6 — Docusaurus CI red on dev @ run 27550217005)  
-**Version Anchor:** v0.2.16.5+8  
+**Last updated:** 2026-06-15 (Wave 7 — Tests+Docusaurus unified pin)  
+**Version Anchor:** v0.2.16.5+9  
 **Code:** E02S16T05  
 **Task Type:** Perpetual Maintenance
 
@@ -174,6 +174,20 @@ Use **`RW E02:S16:T05`** for recurring CI hygiene passes (BUILD increments on pe
 | Docusaurus site build | MDX parses `<path>` as JSX in troubleshooting guide line 1228 | Inline code backticks |
 
 **Post-RW verification:** Re-check [Actions](https://github.com/RMS-Ltd/ai-dev-kit/actions) — Docusaurus build green on `dev`/`main`.
+
+---
+
+## Wave 7 — Tests + Docusaurus unified pin (2026-06-15)
+
+**Incident:** Split pin — `+8` Docusaurus green / Tests red (`test_install_error_docs_sync`); `7978c29` Tests green / Docusaurus red.
+
+| Fix | Detail |
+| --- | ------ |
+| Registry | `ADK-I01.S03` remediation backticks in `install-error-codes.yaml` |
+| Guide | Regenerated `{/* ADK-ERROR-CODES:* */}` block (not hand-edited) |
+| Mirror | `sync_greenfield_install.py` |
+
+**Post-RW verification:** Re-check [Actions](https://github.com/RMS-Ltd/ai-dev-kit/actions) — Tests + Docusaurus green on `dev`/`main`.
 
 ---
 

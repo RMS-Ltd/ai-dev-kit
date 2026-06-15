@@ -11,8 +11,8 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
-## [0.2.16.5+8] - 15-06-26
+## [0.2.16.5+9] - 15-06-26
 
-E02:S16:T05 — Docusaurus CI hygiene: BR-068 blob URLs in adk-feedback mirror pointer; MDX-safe `<path>` in install troubleshooting guide. SemVer **v0.4.1169+8**.
+E02:S16:T05 — Registry-sourced MDX fix for ADK-I01.S03; regenerated install error appendix (Tests + Docusaurus aligned). SemVer **v0.4.1170+9**.
 
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.16.5+8.md)
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.16.5+9.md)
