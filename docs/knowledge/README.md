@@ -44,6 +44,10 @@ Notion Engineering KB is **no longer SoT** for ADK maintainer content. URLs in `
 - [`KB-INDEX.md`](KB-INDEX.md) — human-readable inventory (`scripts/kb_index.py`)
 - [`KB-INDEX.json`](KB-INDEX.json) — machine-readable
 
+## Featured articles
+
+- [Greenfield vs brownfield selective adoption (SBL attempt 09)](articles/greenfield-brownfield-selective-adoption-sbl-attempt-09.md) — Adopter Path Selector evidence ([#52](https://github.com/RMS-Ltd/ai-dev-kit/issues/52))
+
 ## Scripts
 
 | Script | Purpose |

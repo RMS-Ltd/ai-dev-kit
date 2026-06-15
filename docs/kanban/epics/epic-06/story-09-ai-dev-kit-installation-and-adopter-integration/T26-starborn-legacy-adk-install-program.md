@@ -19,7 +19,7 @@ housekeeping_policy: keep
 
 **Predecessor (closed):** [E06:S09:T25](T25-starborn-legacy-greenfield-install-diary-triage-uxr025.md) — UXR-025 triage + F4/F5 fixes @ **v0.6.9.25+3**
 
-**Related:** [UXR-025](../../../fr-br/UXR-025-starborn-legacy-greenfield-install-diary.md) · [FR-081](../../../fr-br/FR-081-brownfield-modular-adopter-integration.md) · [FR-080](../../../fr-br/FR-080-greenfield-installation-process.md) · [FR-079](../../../fr-br/FR-079-install-feedback-submission-path-and-governance.md) · [FR-132](../../../fr-br/FR-132-kanban-v4-three-tier-catalogue.md) · [Issue #51](https://github.com/RMS-Ltd/ai-dev-kit/issues/51) · [SBL attempt 09 replay](../../../../knowledge/analysis/projects/sbl-attempt-09-kanban-v4-replay.md)
+**Related:** [UXR-025](../../../fr-br/UXR-025-starborn-legacy-greenfield-install-diary.md) · [FR-081](../../../fr-br/FR-081-brownfield-modular-adopter-integration.md) · [FR-080](../../../fr-br/FR-080-greenfield-installation-process.md) · [FR-079](../../../fr-br/FR-079-install-feedback-submission-path-and-governance.md) · [FR-132](../../../fr-br/FR-132-kanban-v4-three-tier-catalogue.md) · [UXR-029](../../../fr-br/UXR-029-adk-install-path-experiment.md) · [Issue #51](https://github.com/RMS-Ltd/ai-dev-kit/issues/51) · [Issue #52](https://github.com/RMS-Ltd/ai-dev-kit/issues/52) · [SBL attempt 09 replay](../../../../knowledge/analysis/projects/sbl-attempt-09-kanban-v4-replay.md) · [T36](T36-adopter-path-selector-install-rc-uxr029.md)
 
 ---
 
@@ -130,6 +130,9 @@ Attempts **1** and **2** proved installer contracts (sign-off ALL READY) but **f
 | 4 | `v0.4.1131` tarball | **BLOCKER unchanged** — F17 **fourth proof**; RW baseline + dual-kanban PASS; BR-086 NOT READY; F18–F20 new | SBL `…/attempt-04/feedback-package/SUBMISSION.md` |
 | 5 | `main` @ `0d278366` (`v0.4.1133+2`) | **SUCCESS (upstream pending → closed)** — v3.2 kanban PASS; dual-tree PASS; F18–F21 upstream **shipped** T28–T30 @ **v0.6.9.28+2**–**v0.6.9.30+2** | SBL `starborn_legacy/logs/ai-dev-kit/install/attempt-05/` |
 | 6 | `v0.4.1140+2` → `256259fb2` | **SUCCESS** — adopter sign-off final; AC13–AC16; FR-079 accepted; F22→[FR-127](../../../fr-br/FR-127-agentic-kanban-migration-agent-replace-tool-pipeline.md)/[T31](T31-agentic-kanban-migration-agent-fr127.md); F23→[BR-108](../../../fr-br/BR-108-detect-existing-structure-zero-padded-epic-names.md)/[T32](T32-detect-structure-zero-padded-epic-br108.md) | [Attempt 06 index](../../../../../../adk-install-into-sbl/attempt-06/README.md) · SBL `…/attempt-06/` |
+| 7 | `v0.4.1161` | **Partial PASS** — greenfield install; sign-off friction | SBL `…/attempt-07/` |
+| 8 | `0d0e5ab3` | **FAIL** — in-place legacy migration abandoned | [#51](https://github.com/RMS-Ltd/ai-dev-kit/issues/51) · SBL `…/attempt-08/` |
+| 9 | `v0.4.1164` @ `7a08a906` | **Arm B** — KMA PASS; Install RC ~50% FAIL; PRIMARY synthesis → [T36](T36-adopter-path-selector-install-rc-uxr029.md) | [#52](https://github.com/RMS-Ltd/ai-dev-kit/issues/52) · [Attempt 09 index](../../../../../../adk-install-into-sbl/attempt-09/README.md) · [Synthesis article](../../../../knowledge/articles/greenfield-brownfield-selective-adoption-sbl-attempt-09.md) |
 
 > **Path convention:** `starborn_legacy/logs/ai-dev-kit/install/attempt-NN/` — see [adk-install-into-sbl/README.md](../../../../../../adk-install-into-sbl/README.md).
 

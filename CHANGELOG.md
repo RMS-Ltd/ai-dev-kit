@@ -11,8 +11,8 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
-## [0.2.16.5+7] - 14-06-26
+## [0.6.9.36+1] - 15-06-26
 
-E02:S16:T05 — GitHub Actions CI health (Wave 5): v4 fresh-install stdout parity for Tests workflow — `install_v4_catalog.py` logs padded epic paths and `installed from template` lines expected by kanban install pytest. SemVer **v0.4.1165+7**.
+E06:S09:T36 — Adopter Path Selector + Install RC (UXR-029): Phase 0 kit for #52 — Install RC validator, DOCUMENTATION_SCHEMA, sqlite pre-RW init, orchestrator adoption-path flags, attempt-10 preflight. SemVer **v0.4.1166+1**.
 
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.16.5+7.md)
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.6.9.36+1.md)

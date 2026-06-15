@@ -1,0 +1,17 @@
+{
+  "schema_version": "1.0.0",
+  "release": "0.6.9.36+1",
+  "task": "E06:S09:T36",
+  "rows": {
+    "E06:S09:T36": {
+      "allowed": true,
+      "reason": "rw_step_7 new Verification band row for Phase 0 kit release",
+      "stamp": "2026-06-15 11:22 UTC",
+      "surface": "kboard.md"
+    }
+  },
+  "board_metadata": {
+    "allowed": true,
+    "reason": "rw_step_7 release-scope board Last Updated / Version metadata"
+  }
+}

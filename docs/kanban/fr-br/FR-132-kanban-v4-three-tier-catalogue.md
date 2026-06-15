@@ -31,7 +31,7 @@ Ship **Kanban v4** — explicit Core / Ancillary / Domain catalogue, duplicate-e
 - [x] **FR-132-F3:** `DUPLICATE_EPIC_POLICY.md` + `LEGACY_KANBAN_MIGRATION.md`
 - [x] **FR-132-F4:** `install_kanban_framework.py --catalog v4` (default)
 - [x] **FR-132-F5:** `validate_v4_template_completeness.py` + `validate_migration_map.py`
-- [ ] **FR-132-F6:** SBL attempt 09 replay verification (operator)
+- [ ] **FR-132-F6:** SBL attempt 09 replay verification (operator) — see [T36](../epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T36-adopter-path-selector-install-rc-uxr029.md) / [UXR-029](UXR-029-adk-install-path-experiment.md)
 
 ---
 

@@ -471,18 +471,87 @@ Redact host paths, tokens, and internal URLs before sharing logs outside your te
 
 ---
 
+## Adopter Path Selector (mature repositories)
+
+**Policy:** [ADR-003](docs/architecture/standards-and-adrs/ADR-003-greenfield-vs-brownfield-adoption.md) (host sovereignty) · [ADR-030](docs/architecture/standards-and-adrs/ADR-030-selective-adoption-three-path-model.md) (three-path model) · [UXR-029](docs/kanban/fr-br/UXR-029-adk-install-path-experiment.md) · **Evidence:** [SBL attempt 09 synthesis](docs/knowledge/articles/greenfield-brownfield-selective-adoption-sbl-attempt-09.md) · [#52](https://github.com/RMS-Ltd/ai-dev-kit/issues/52)
+
+Mature adopters face more than a greenfield vs brownfield binary. Use this selector **before** installers when the repo has established `docs/`, PM/kanban, or release history.
+
+| Entry | Situation | Path |
+|-------|-----------|------|
+| Empty or template repo | Little structure to preserve | [Greenfield Install Specification](#greenfield-install-specification-wave-1-lock) (FR-080) |
+| Existing repo, topology already ADK-aligned | Continuity-critical; incremental hops suffice | **Path 1** — [Brownfield in-place](#path-1--brownfield-in-place-arm-a) (FR-081) |
+| Existing repo, PM/kanban drift or validator failures | Full git history; wrong legacy topology | **Path 2** — [Shell + selective migration](#path-2--shell--selective-migration-arm-b) (**default** for messy mature + git) |
+| Cannot wipe PM yet | Must run dual-tree for a bounded period | **Path 3** — [Strangler coexist](#path-3--strangler-coexist-sub-mode) |
+
+**Cross-cutting (all paths):** SQLite before first RW · ADK documentation end-schema · Install RC checklist · kit-owned KMA (0 ad-hoc scripts at RC) · comprehension test (state kanban root, docs authority, version truth, and what was **not** performed — *restore ≠ migrate*).
+
+### Path 1 — Brownfield in-place (Arm A)
+
+**For:** structurally aligned repos; production tags; continuity-critical.
+
+**Procedure:** Run installers in place; wire `rw-config.yaml`; `import_legacy.py` when moving from YAML registry; incremental path fixes. Kanban: **KMA** only when legacy corpus exists but topology is otherwise compatible.
+
+**Programme controls:** fynd.deals, Confidentia (Arm A experiment — [UXR-029](docs/kanban/fr-br/UXR-029-adk-install-path-experiment.md)).
+
+### Path 2 — Shell + selective migration (Arm B)
+
+**For:** PM/KB/kanban drift; duplicate-epic confusion; in-place mapping failed or was abandoned (see [#51](https://github.com/RMS-Ltd/ai-dev-kit/issues/51)).
+
+**Procedure:**
+
+1. Archive legacy PM/docs (e.g. `docs-pre-ai-dev-kit/`) — git preserves history.
+2. Lean vendor install ([FR-110](#lean-vendor-install-greenfield-install--fr-110)).
+3. [Layered install sequence](#layered-install-sequence-phase-0) (not monolithic `mode c` alone).
+4. Operator-authored target E/S tree **before** KMA.
+5. **KMA** with [DUPLICATE_EPIC_POLICY](packages/frameworks/kanban/guides/DUPLICATE_EPIC_POLICY.md) matrix — [LEGACY_KANBAN_MIGRATION](packages/frameworks/kanban/guides/LEGACY_KANBAN_MIGRATION.md).
+6. Eliminate dual-tree; single canonical `kanban_root`.
+7. First RW only after Install RC + sign-off.
+
+**Exemplar:** Starborn Legacy attempt 09 — [maintainer index](adk-install-into-sbl/attempt-09/README.md).
+
+### Path 3 — Strangler coexist (sub-mode)
+
+**For:** cannot wipe PM layer yet.
+
+**Rules:** Declare canonical `kanban_root` immediately; legacy tree read-only + redirect stubs; time-box coexistence; **block install-complete** until a single active root; plan mandatory **eliminate** phase ([ADR-030](docs/architecture/standards-and-adrs/ADR-030-selective-adoption-three-path-model.md)).
+
+### Layered install sequence (Phase 0)
+
+Target orchestrator ordering for **Path 2** (and full-stack brownfield). Orchestrator flags: `install_greenfield_path.py --adoption-path arm-b --init-sqlite --run-install-rc` ([E06:S09:T36](docs/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T36-adopter-path-selector-install-rc-uxr029.md)):
+
+```text
+0  vendor + venv
+1  rw-config skeleton
+2  sqlite — import_legacy.py or init empty .adk/release-state.db
+3  RW installer scaffold (install_release_workflow.py)
+3½ documentation schema profile — [DOCUMENTATION_SCHEMA.md](docs/governance/standards/DOCUMENTATION_SCHEMA.md)
+3c UKW / cursorrules wiring
+4  kanban fresh — install_kanban_framework.py --mode fresh --catalog v4
+5  KMA — proposal sign-off before writes
+6  sign-off + [Install RC checklist](docs/governance/standards/install-rc-checklist.md)
+7  first RW
+```
+
+See [release-state-sqlite-mode.md](packages/frameworks/workflow-mgt/docs/release-state-sqlite-mode.md) for step 2 · [adopter-install-attempt-preflight.md](docs/guides/adopter-install-attempt-preflight.md) for attempt 10 / brownfield prep.
+
+---
+
 ## Brownfield adoption (existing repositories)
 
-**Policy anchor:** [ADR-003 – Greenfield vs Brownfield adoption](docs/architecture/standards-and-adrs/ADR-003-greenfield-vs-brownfield-adoption.md) · **FR-081** · **IPP:** [IPP-E6S09T02](docs/implementation-cycles/IPP-E6S09T02-brownfield-modular-adopter-integration-fr081.md)
+**Policy anchor:** [ADR-003 – Greenfield vs Brownfield adoption](docs/architecture/standards-and-adrs/ADR-003-greenfield-vs-brownfield-adoption.md) · [ADR-030](docs/architecture/standards-and-adrs/ADR-030-selective-adoption-three-path-model.md) · **FR-081** · **IPP:** [IPP-E6S09T02](docs/implementation-cycles/IPP-E6S09T02-brownfield-modular-adopter-integration-fr081.md)
 
 Use this section when the **host project already has** its own layout, tooling, and governance. The host team owns architecture; AI Dev Kit supplies **modular surfaces** and **contracts**—not a mandatory copy of the ai-dev-kit reference repository tree.
+
+**Start with:** [Adopter Path Selector](#adopter-path-selector-mature-repositories) when the repo is mature (not empty/template).
 
 ### When to use brownfield vs greenfield
 
 | Situation | Path |
 |-----------|------|
 | New or template repo with little structure to preserve | [Greenfield Install Specification](#greenfield-install-specification-wave-1-lock) (FR-080) |
-| Existing codebase, established `docs/`, PM process, or custom paths | **This section** (FR-081) |
+| Existing codebase — aligned topology, in-place install | **Path 1** — this section (FR-081) |
+| Existing codebase — PM/kanban drift, failed in-place migration | **Path 2** — [Shell + selective migration](#path-2--shell--selective-migration-arm-b) |
 
 ### Non-goals (brownfield)
 

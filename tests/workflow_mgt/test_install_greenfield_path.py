@@ -84,6 +84,7 @@ def test_build_kanban_command_force_when_non_interactive(tmp_path, greenfield_mo
     cmd = greenfield_mod.build_kanban_command(
         base,
         kanban_mode="fresh",
+        catalog="v4",
         non_interactive=True,
     )
 
@@ -121,3 +122,39 @@ def test_dry_run_uses_vendor_script_paths(tmp_path):
     rw_path = str(vendor / _RW_REL)
     assert rw_path in result.stdout
     assert "--non-interactive" in result.stdout
+
+
+def test_dry_run_adoption_path_and_sqlite_flags(tmp_path):
+    project = tmp_path / "project"
+    vendor = tmp_path / "vendor" / "ai-dev-kit"
+    project.mkdir(parents=True)
+    vendor.mkdir(parents=True)
+    _write_stub_scripts(vendor)
+
+    script = _SCRIPTS / "install_greenfield_path.py"
+    result = subprocess.run(
+        [
+            sys.executable,
+            str(script),
+            "--project-root",
+            str(project),
+            "--vendor-root",
+            str(vendor),
+            "--non-interactive",
+            "--no-verify-vendor",
+            "--dry-run",
+            "--adoption-path",
+            "arm-b",
+            "--init-sqlite",
+            "--run-install-rc",
+        ],
+        cwd=project,
+        capture_output=True,
+        text=True,
+        check=False,
+    )
+
+    assert result.returncode == 0, result.stderr
+    assert "arm-b" in result.stdout
+    assert "init_release_state_db" in result.stdout or "import_legacy" in result.stdout
+    assert "validate_install_rc" in result.stdout

@@ -1182,6 +1182,18 @@ Registry version: **1.1.0**. When install fails, copy the `ERROR [ADK-…]` line
 
 Canonical registry: `packages/frameworks/workflow-mgt/config/install-error-codes.yaml`.
 
+### ADK-I01.S00 {/* #adk-i01-s00 */}
+
+**Summary:** Greenfield SQLite release-state init failed
+
+**Symptom:** init_release_state_db.py or import_legacy.py exited non-zero during --init-sqlite orchestration.
+
+**Remediation:**
+- Confirm rw-config release_state_backend is sqlite when using --init-sqlite.
+- Run init_release_state_db.py or import_legacy.py manually and capture stderr.
+
+**See also:** FR-080, UXR-029
+
 ### ADK-I01.S01 {/* #adk-i01-s01 */}
 
 **Summary:** Greenfield RW install step failed
@@ -1205,6 +1217,18 @@ Canonical registry: `packages/frameworks/workflow-mgt/config/install-error-codes
 - Confirm kanban_root and fresh-mode options match your layout.
 
 **See also:** FR-080
+
+### ADK-I01.S03 {/* #adk-i01-s03 */}
+
+**Summary:** Install RC checklist failed
+
+**Symptom:** validate_install_rc.py exited non-zero after greenfield orchestration (--run-install-rc).
+
+**Remediation:**
+- Run validate_install_rc.py --profile <path> --strict and fix failing rows.
+- See docs/governance/standards/install-rc-checklist.md.
+
+**See also:** UXR-029
 
 ### ADK-I02.E01 {/* #adk-i02-e01 */}
 

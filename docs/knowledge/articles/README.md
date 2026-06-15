@@ -30,6 +30,15 @@ This directory contains comprehensive articles and blog-style posts covering:
 
 ### Internal Articles
 
+#### Adoption paths — SBL attempt 09 synthesis
+
+- **[Greenfield, Brownfield, and the Third Path](greenfield-brownfield-selective-adoption-sbl-attempt-09.md)**
+  - **Published:** 2026-06-15 (mirrored from SBL FR-079 attempt 09)
+  - **ADK pin:** `v0.4.1164`
+  - **Epic:** E06 (Installation and adopter integration)
+  - **Task:** [E06:S09:T36](../../kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T36-adopter-path-selector-install-rc-uxr029.md) · [UXR-029](../../kanban/fr-br/UXR-029-adk-install-path-experiment.md)
+  - **Summary:** Industry-informed three-path adoption model (brownfield, shell + selective migration, strangler coexist) from Starborn attempts 07–09; drives Adopter Path Selector and Install RC programme.
+
 #### Hybrid Task Template System
 
 - **[Building Better Templates: How We Solved the 300-Template Problem with a Hybrid Approach](hybrid-task-template-system-building-better-templates.md)**

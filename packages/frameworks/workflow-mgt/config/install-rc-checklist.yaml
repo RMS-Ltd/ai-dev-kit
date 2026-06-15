@@ -1,0 +1,187 @@
+# Install RC checklist contract (machine-readable).
+# Evaluated by validate_install_rc.py — adopter install-complete gate (UXR-029 / T36).
+#
+# Distinct from github-issue-install-signoff-contract.yaml (issue closure triggers).
+#
+# Usage:
+#   validate_install_rc.py --project-root PATH --profile arm-b [--strict]
+#
+# Check types:
+#   rw_config_exists       — rw-config.yaml is a non-empty file
+#   rw_config_key          — key present in rw-config
+#   file_exists            — path relative to project_root (or rw_config_key resolved)
+#   sqlite_release_state   — when backend=sqlite, .adk/release-state.db exists
+#   documentation_surfaces — documentation_surfaces object in rw-config OR schema doc path
+#   path_exists            — directory or file at relative path
+#   path_not_exists        — path must not exist (dual-tree guard)
+#   glob_count_max         — glob match count <= max (adhoc script guard)
+#   command                — subprocess exit 0
+#   comprehension_marker   — file contains required substring(s)
+
+schema_version: "1.0.0"
+documentation_schema_rel: docs/governance/standards/DOCUMENTATION_SCHEMA.md
+
+profiles:
+  cross_cutting:
+    - id: rc-rw-config
+      label: rw-config.yaml present
+      blocking: true
+      check:
+        type: rw_config_exists
+
+    - id: rc-sqlite-before-rw
+      label: SQLite release state before first RW
+      blocking: true
+      check:
+        type: sqlite_release_state
+
+    - id: rc-docs-schema
+      label: Documentation surfaces or schema doc linked
+      blocking: true
+      check:
+        type: documentation_surfaces
+
+    - id: rc-version-file
+      label: version_file exists
+      blocking: true
+      check:
+        type: file_exists
+        rw_config_key: version_file
+
+    - id: rc-changelog
+      label: main_changelog exists
+      blocking: true
+      check:
+        type: file_exists
+        rw_config_key: main_changelog
+
+    - id: rc-single-kanban-board
+      label: Sole active kanban board (kboard.md)
+      blocking: true
+      when:
+        rw_config_key: use_kanban
+        equals: true
+      check:
+        type: file_exists
+        rw_config_key: kanban_board
+        under_kanban_root: true
+
+  greenfield:
+    - id: rc-greenfield-vendor
+      label: Lean vendor tree or packages/frameworks present
+      blocking: false
+      check:
+        type: path_exists
+        path_any:
+          - packages/frameworks/workflow-mgt/scripts
+          - vendor/ai-dev-kit/packages/frameworks/workflow-mgt/scripts
+
+  arm_a:
+    - id: rc-in-place-continuity
+      label: Install task doc or COMPREHENSION.md present
+      blocking: false
+      check:
+        type: path_exists
+        path_any:
+          - COMPREHENSION.md
+          - docs/adk-feedback
+          - adk-feedback
+
+    - id: rc-incremental-kma
+      label: migration-map valid when present
+      blocking: true
+      when:
+        path_exists: docs/kanban/migration-map.yaml
+      check:
+        type: command
+        command: python
+        args:
+          - "{kanban_scripts}/validate_migration_map.py"
+          - "--project-root"
+          - "{project_root}"
+
+  arm_b:
+    - id: rc-legacy-archived
+      label: Legacy PM archived outside active kanban root
+      blocking: true
+      check:
+        type: path_exists
+        path_any:
+          - docs-pre-ai-dev-kit
+          - docs/_archive-pre-adk
+          - archive/docs-pre-ai-dev-kit
+
+    - id: rc-kanban-v4
+      label: v4 template completeness (when kanban installed)
+      blocking: true
+      when:
+        rw_config_key: use_kanban
+        equals: true
+      check:
+        type: command
+        command: python
+        args:
+          - "{kanban_scripts}/validate_v4_template_completeness.py"
+          - "--strict"
+          - "--project-root"
+          - "{project_root}"
+
+    - id: rc-kma-migration-map
+      label: KMA migration map valid when present
+      blocking: true
+      when:
+        path_exists: docs/kanban/migration-map.yaml
+      check:
+        type: command
+        command: python
+        args:
+          - "{kanban_scripts}/validate_migration_map.py"
+          - "--project-root"
+          - "{project_root}"
+
+    - id: rc-zero-adhoc-kma
+      label: No ad-hoc KMA scripts in scripts/ or tools/
+      blocking: true
+      check:
+        type: glob_count_max
+        globs:
+          - scripts/*kma*.py
+          - scripts/*migrate*kanban*.py
+          - tools/*kma*.py
+          - tools/*migrate*kanban*.py
+        max: 0
+        exclude_kit_paths:
+          - packages/frameworks
+
+    - id: rc-comprehension
+      label: Comprehension test (restore ≠ migrate)
+      blocking: true
+      check:
+        type: comprehension_marker
+        path_any:
+          - COMPREHENSION.md
+          - docs/adk-feedback/COMPREHENSION.md
+          - install-receipt.md
+        require_any_substrings:
+          - "restore"
+          - "migrate"
+          - "kanban root"
+          - "kanban_root"
+
+  strangler:
+    - id: rc-strangler-canonical-root
+      label: rw-config declares single kanban_root
+      blocking: true
+      check:
+        type: rw_config_key
+        key: kanban_root
+
+    - id: rc-strangler-no-dual-active
+      label: No second active MoSCOW board beside kboard.md
+      blocking: true
+      when:
+        rw_config_key: use_kanban
+        equals: true
+      check:
+        type: path_not_exists
+        path: docs/kanban/kboard-legacy.md

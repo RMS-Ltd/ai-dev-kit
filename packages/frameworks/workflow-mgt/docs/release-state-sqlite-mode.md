@@ -6,10 +6,21 @@ When `rw-config.yaml` sets `release_state_backend: sqlite`:
 
 ## Setup (once per worktree)
 
+**Greenfield (no legacy YAML):**
+
+```bash
+python packages/frameworks/workflow-mgt/scripts/release_state/init_release_state_db.py \
+  --project-root .
+```
+
+**Brownfield import from legacy YAML:**
+
 ```bash
 python packages/frameworks/workflow-mgt/scripts/release_state/import_legacy.py \
   --validate --skip-changelog
 ```
+
+**Orchestrator:** `install_greenfield_path.py --init-sqlite` runs the appropriate step automatically.
 
 ## RW Steps 2–11 (registry)
 

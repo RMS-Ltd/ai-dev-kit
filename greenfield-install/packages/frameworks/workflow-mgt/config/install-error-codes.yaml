@@ -29,6 +29,17 @@ processes:
     script: cli/commands/install.py
 
 codes:
+  ADK-I01.S00:
+    summary: Greenfield SQLite release-state init failed
+    symptom: init_release_state_db.py or import_legacy.py exited non-zero during --init-sqlite orchestration.
+    remediation:
+      - "Confirm rw-config release_state_backend is sqlite when using --init-sqlite."
+      - "Run init_release_state_db.py or import_legacy.py manually and capture stderr."
+    see_also:
+      - FR-080
+      - UXR-029
+    introduced_in_adk_semver: "0.4.1166"
+
   ADK-I01.S01:
     summary: Greenfield RW install step failed
     symptom: The Release Workflow installer subprocess exited non-zero during greenfield orchestration.
@@ -48,6 +59,16 @@ codes:
     see_also:
       - FR-080
     introduced_in_adk_semver: "0.4.900"
+
+  ADK-I01.S03:
+    summary: Install RC checklist failed
+    symptom: validate_install_rc.py exited non-zero after greenfield orchestration (--run-install-rc).
+    remediation:
+      - "Run validate_install_rc.py --profile <path> --strict and fix failing rows."
+      - "See docs/governance/standards/install-rc-checklist.md."
+    see_also:
+      - UXR-029
+    introduced_in_adk_semver: "0.4.1166"
 
   ADK-I02.E01:
     summary: Kanban framework install failed
