@@ -148,6 +148,8 @@ housekeeping_policy: keep
 
 - **E04:S14:T11** – UKW gap discovery — unfiled FR/BR (FR-043) - 📋 TODO (HIGH, re-housed from E02:S16:T14) | [Task](epics/epic-04/story-14-kanban-framework-maintenance/T11-ukw-gap-discovery-unfiled-fr-br-fr043.md) | [FR-043](fr-br/FR-043-ukw-gap-discovery-todo-tasks-and-unfiled-fr-br.md) | —No IPP— | Last modified: 2026-05-30 13:36 UTC
 
+- **E04:S14:T12** – SQLite kanban-completed ledger + UKW PDF report (FR-134) - 📋 TODO (MEDIUM — **v0.4.14.12+1** kanban init) | [Task](epics/epic-04/story-14-kanban-framework-maintenance/T12-kanban-completed-sqlite-ledger-pdf-report-fr134.md) | [FR-134](fr-br/FR-134-kanban-completed-sqlite-ledger-pdf-report.md) | —No IPP— | Last modified: 2026-06-15 20:01 UTC
+
 - **E07:S01:T10** – FR-039: AI Dev Kit Project Review and Legacy Clean-up - 📋 TODO (LOW, hygiene task; historical FR-059 T10 reconciled) | [Task](epics/epic-07/story-01-codebase-maintenance-tasks/T10-project-root-hygiene-and-legacy-docs-rationalization.md) | [FR-039](fr-br/FR-039-ai-dev-kit-project-review-and-legacy-clean-up.md) | [—IPP—](../../implementation-cycles/IPP-E07S01T10-supersession-reconciliation.md) | Last modified: 2026-06-04 12:15 UTC
 
 

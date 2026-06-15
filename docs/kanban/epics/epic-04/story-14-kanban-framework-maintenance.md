@@ -12,8 +12,8 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** [TBD]  
 **Created:** 2025-12-18  
-**Last updated:** 2026-02-22 (v0.4.14.1+1 – T01 complete: validate_version_bump perpetual task support)  
-**Version:** v0.4.14.1+1  
+**Last updated:** 2026-06-15 (v0.4.14.12+1 — T12 kanban init FR-134)  
+**Version:** v0.4.14.12+1  
 **Code:** E4S14
 
 ---
@@ -49,6 +49,8 @@ housekeeping_policy: keep
 - [x] **E04:S14:T10 – Restore kboard IPP segment on MoSCOW rows (UXR-023)** — ✅ COMPLETE (re-housed from E02:S16:T20) — [Task](story-14-kanban-framework-maintenance/T10-restore-kboard-ipp-segment-uxr023.md) | [UXR-023](../../fr-br/UXR-023-kboard-ipp-segment-regression.md)
 
 - [ ] **E04:S14:T11 – UKW gap discovery — unfiled FR/BR (FR-043)** — 📋 TODO (re-housed from E02:S16:T14) — [Task](story-14-kanban-framework-maintenance/T11-ukw-gap-discovery-unfiled-fr-br-fr043.md) | [FR-043](../../fr-br/FR-043-ukw-gap-discovery-todo-tasks-and-unfiled-fr-br.md)
+
+- [ ] **E04:S14:T12 – SQLite kanban-completed ledger + UKW PDF report (FR-134)** — 📋 TODO (**v0.4.14.12+1** kanban init) — [Task](story-14-kanban-framework-maintenance/T12-kanban-completed-sqlite-ledger-pdf-report-fr134.md) | [FR-134](../../fr-br/FR-134-kanban-completed-sqlite-ledger-pdf-report.md)
 
 ---
 

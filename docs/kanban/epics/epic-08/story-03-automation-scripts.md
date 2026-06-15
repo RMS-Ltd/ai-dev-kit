@@ -12,7 +12,7 @@ housekeeping_policy: keep
 **Priority:** MEDIUM  
 **Estimated Effort:** [TBD]  
 **Created:** 2025-12-05  
-**Last updated:** 2026-06-15 (v0.8.3.22+1 – E08:S03:T22 pytest warning cleanup UXR-030 Wave 2)
+**Last updated:** 2026-06-15 (v0.8.3.22+1 – Kanban documentation setup)
 **Version:** v0.8.3.22+1
 **Code:** E8S03
 
