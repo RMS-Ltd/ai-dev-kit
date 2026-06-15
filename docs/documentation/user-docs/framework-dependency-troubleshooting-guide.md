@@ -1225,7 +1225,7 @@ Canonical registry: `packages/frameworks/workflow-mgt/config/install-error-codes
 **Symptom:** validate_install_rc.py exited non-zero after greenfield orchestration (--run-install-rc).
 
 **Remediation:**
-- Run validate_install_rc.py --profile <path> --strict and fix failing rows.
+- Run `validate_install_rc.py --profile <path> --strict` and fix failing rows.
 - See docs/governance/standards/install-rc-checklist.md.
 
 **See also:** UXR-029

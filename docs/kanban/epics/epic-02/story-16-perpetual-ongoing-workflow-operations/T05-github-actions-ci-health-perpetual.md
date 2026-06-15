@@ -14,8 +14,8 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** Small (ongoing)  
 **Created:** 2026-06-05  
-**Last updated:** 2026-06-14 (Wave 5 — v4 fresh-install stdout parity; Tests CI red on dev)  
-**Version Anchor:** v0.2.16.5+7  
+**Last updated:** 2026-06-15 (Wave 6 — Docusaurus CI red on dev @ run 27550217005)  
+**Version Anchor:** v0.2.16.5+8  
 **Code:** E02S16T05  
 **Task Type:** Perpetual Maintenance
 
@@ -161,6 +161,19 @@ Use **`RW E02:S16:T05`** for recurring CI hygiene passes (BUILD increments on pe
 **Failing tests (4):** `test_install_epic_22_23_templates.py` (×2), `test_migrate_structure_log_epic_padding.py` (×2).
 
 **Post-RW verification:** Re-check [Actions](https://github.com/RMS-Ltd/ai-dev-kit/actions) — Tests green on `dev`/`main`.
+
+---
+
+## Wave 6 — Docusaurus production build (2026-06-15)
+
+**Incident:** `dev` — **Docusaurus site build failure** ([run 27550217005](https://github.com/RMS-Ltd/ai-dev-kit/actions/runs/27550217005)); Tests / Greenfield install **success**.
+
+| Workflow | Root cause | Fix |
+| -------- | ---------- | --- |
+| Docusaurus site build | `docs/adk-feedback/attempt-09/README.md` relative link to excluded `kanban/fr-br/FR-079-…` | GitHub blob URLs (BR-068) |
+| Docusaurus site build | MDX parses `<path>` as JSX in troubleshooting guide line 1228 | Inline code backticks |
+
+**Post-RW verification:** Re-check [Actions](https://github.com/RMS-Ltd/ai-dev-kit/actions) — Docusaurus build green on `dev`/`main`.
 
 ---
 
