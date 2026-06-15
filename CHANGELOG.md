@@ -11,6 +11,14 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.6.9.37+1] - 15-06-26
+
+Kanban init (`RW -k`): **FR-133** painless adopter migration workflow + **E06:S09:T37** intake. SemVer **v0.4.1172+1**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.6.9.37+1.md)
+
+---
+
 ## [0.2.16.6+12] - 15-06-26
 
 E02:S16:T06 — Wave 7 Code Quality maintainability burn-down (4 standard findings). SemVer **v0.4.1171+12**.

@@ -7,14 +7,12 @@
 
 ## Artifact ownership ([FR-079](../docs/kanban/fr-br/FR-079-install-feedback-submission-path-and-governance.md))
 
-**Feedback packages, diaries, transcripts, and session logs live in the Starborn Legacy repo** — not copied into `ai-dev-kit`.
+**Feedback packages live in the Starborn Legacy repo** — not copied into `ai-dev-kit`.
 
 | Attempt | SBL canonical root |
 |---------|-------------------|
-| 03 | `starborn_legacy/logs/ai-dev-kit/install/attempt-03/` |
-| 04 | `starborn_legacy/logs/ai-dev-kit/install/attempt-04/` |
-| 05 | `starborn_legacy/logs/ai-dev-kit/install/attempt-05/` |
-| 06 | `starborn_legacy/logs/ai-dev-kit/install/attempt-06/` |
+| 03–06 | `starborn_legacy/logs/ai-dev-kit/install/attempt-{NN}/` |
+| 09–10 | `starborn_legacy/docs/adk-feedback/attempt-{NN}/` (git mirror) + `logs/attempt-{NN}/` (local forensic, gitignored) |
 
 Each attempt folder typically contains:
 
@@ -39,4 +37,4 @@ Each attempt folder typically contains:
 | 06 | [attempt-06/README.md](attempt-06/README.md) · [preflight checklist](attempt-06-preflight-checklist.md) | `v0.4.1140+2` → `256259fb2` — FR-079 **accepted**; adopter sign-off final; FR-127/BR-108 filed |
 | 07–08 | SBL `logs/` only | Attempt 08 → [#51](https://github.com/RMS-Ltd/ai-dev-kit/issues/51) (migration abandoned) |
 | 09 | [attempt-09/README.md](attempt-09/README.md) | `v0.4.1164` @ `7a08a906` — Arm B; [#52](https://github.com/RMS-Ltd/ai-dev-kit/issues/52); PRIMARY synthesis mirrored |
-| 10 | [attempt-10/README.md](attempt-10/README.md) | **PENDING** — Phase 0 kit prep; Arm B RC PASS target |
+| 10 | [attempt-10/README.md](attempt-10/README.md) | `v0.4.1171` @ `448a79e1` — Arm B **PASS**; FR-079 **final**; T36 AC7 satisfied ([#52](https://github.com/RMS-Ltd/ai-dev-kit/issues/52)) |
