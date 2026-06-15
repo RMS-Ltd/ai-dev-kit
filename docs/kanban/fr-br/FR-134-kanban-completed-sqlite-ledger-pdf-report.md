@@ -13,8 +13,8 @@ housekeeping_policy: keep
 **Submitted:** 2026-06-15  
 **Submitted By:** Operator (kanban ledger architecture discussion)  
 **Priority:** MEDIUM (Could Have — MoSCOW **C**)  
-**Status:** ACCEPTED  
-**Version:** v0.4.14.12+1 (kanban init)
+**Status:** IMPLEMENTED  
+**Version:** v0.4.14.12+2 (delivery)
 
 **Implementing Task:** [E04:S14:T12](../epics/epic-04/story-14-kanban-framework-maintenance/T12-kanban-completed-sqlite-ledger-pdf-report-fr134.md)
 

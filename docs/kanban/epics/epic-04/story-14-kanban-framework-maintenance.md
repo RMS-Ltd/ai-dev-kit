@@ -12,8 +12,8 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** [TBD]  
 **Created:** 2025-12-18  
-**Last updated:** 2026-06-15 (v0.4.14.12+1 — T12 kanban init FR-134)  
-**Version:** v0.4.14.12+1  
+**Last updated:** 2026-06-15 (v0.4.14.12+2 – Kanban documentation setup)
+**Version:** v0.4.14.12+2
 **Code:** E4S14
 
 ---
@@ -50,7 +50,7 @@ housekeeping_policy: keep
 
 - [ ] **E04:S14:T11 – UKW gap discovery — unfiled FR/BR (FR-043)** — 📋 TODO (re-housed from E02:S16:T14) — [Task](story-14-kanban-framework-maintenance/T11-ukw-gap-discovery-unfiled-fr-br-fr043.md) | [FR-043](../../fr-br/FR-043-ukw-gap-discovery-todo-tasks-and-unfiled-fr-br.md)
 
-- [ ] **E04:S14:T12 – SQLite kanban-completed ledger + UKW PDF report (FR-134)** — 📋 TODO (**v0.4.14.12+1** kanban init) — [Task](story-14-kanban-framework-maintenance/T12-kanban-completed-sqlite-ledger-pdf-report-fr134.md) | [FR-134](../../fr-br/FR-134-kanban-completed-sqlite-ledger-pdf-report.md)
+- [x] **E04:S14:T12 – SQLite kanban-completed ledger + UKW PDF report (FR-134)** — ✅ COMPLETE (**v0.4.14.12+2**) — [Task](story-14-kanban-framework-maintenance/T12-kanban-completed-sqlite-ledger-pdf-report-fr134.md) | [FR-134](../../fr-br/FR-134-kanban-completed-sqlite-ledger-pdf-report.md) | [IPP](../../implementation-cycles/IPP-E04S14T12-kanban-completed-sqlite-ledger-pdf-report.md)
 
 ---
 
@@ -90,7 +90,7 @@ Ensure the Kanban Framework package remains current, well-maintained, and proper
 
 ---
 
-**Last Updated:** 2026-01-19 (v0.4.14.2+1 – T02 complete: RC review artifacts restored)  
-**Version:** v0.4.14.2+1  
+**Last Updated:** 2026-06-15 (v0.4.14.12+2 – Kanban documentation setup)
+**Version:** v0.4.14.12+2
 **Status:** IN PROGRESS
 

@@ -1,11 +1,11 @@
 # greenfield-install footprint
 
-**Measured:** 2026-06-15 19:25:11 UTC
+**Measured:** 2026-06-15 20:07:12 UTC
 
 | Tree | MiB |
 | ---- | --- |
-| `greenfield-install/` | 9.32 |
-| `packages/frameworks/` (source) | 9.31 |
+| `greenfield-install/` | 9.34 |
+| `packages/frameworks/` (source) | 9.33 |
 | Full repo (tracked baseline, 2026-06-05) | ~27.00 |
 
 **AC1 target:** lean tree ≤ 50% of full repo (~≤14 MiB).

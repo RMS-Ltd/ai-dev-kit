@@ -12,7 +12,7 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** [TBD]  
 **Created:** 2025-12-02  
-**Last updated:** 2026-06-11 (**E04:S19:T13** kboard template v2.2.0 **v0.4.19.13+1**)
+**Last updated:** 2026-06-15 (v0.4.14.12+2 – Kanban documentation setup)
 **Branch:** `epic/4-kanban-framework`  
 **Version Schema:** `0.4.S.T+B`  
 **Production URL:** [N/A for this repo]
@@ -82,7 +82,7 @@ housekeeping_policy: keep
   - Tasks: T01 ✅ COMPLETE (v0.4.13.1+1), T02 ✅ COMPLETE (v0.4.13.2+1), T03 ✅ COMPLETE (v0.4.13.3+1), T04 ✅ COMPLETE (v0.4.13.4+3), T05 ✅ COMPLETE (v0.4.13.5+1), T06 ✅ COMPLETE (v0.4.13.6+1)
 
 
-- [ ] **E4:S14 – Kanban Framework Maintenance** - IN PROGRESS (v0.4.14.1+1 – T01 complete: validate_version_bump perpetual task support)
+- [ ] **E4:S14 – Kanban Framework Maintenance** - IN PROGRESS (v0.4.14.12+2)
   - Story: [`story-14-kanban-framework-maintenance.md`](story-14-kanban-framework-maintenance.md)
   - Tasks: T01 ✅ COMPLETE (v0.4.14.1+1), T02 ✅ COMPLETE (v0.4.14.2+1)
 
@@ -152,7 +152,7 @@ It ensures that:
 **Status:** COMPLETE  
 **Priority:** HIGH  
 **Estimated Effort:** [TBD]  
-**Last updated:** 2026-05-14 (v0.4.19.4+5 – Story 19 Task 4 complete)
+**Last updated:** 2026-06-15 (v0.4.14.12+2 – Kanban documentation setup)
 
 **Goal:**  
 Fully align the dev-kit Kanban board, stories, and governance policy with the Kanban framework package. Establish `ai-dev-kit` as the canonical SoT for Kanban policies, templates, and governance.
@@ -173,7 +173,7 @@ Fully align the dev-kit Kanban board, stories, and governance policy with the Ka
 **Status:** COMPLETE  
 **Priority:** HIGH  
 **Estimated Effort:** [TBD]  
-**Last updated:** 2026-05-14 (v0.4.19.4+5 – Story 19 Task 4 complete)
+**Last updated:** 2026-06-15 (v0.4.14.12+2 – Kanban documentation setup)
 
 **Goal:**  
 Design and implement a clear, actionable flow for converting incoming Feature Requests (FRs) and Bug Reports (BRs) into Kanban Tasks. This story ensures that all work entering the dev-kit is properly structured, tracked, and aligned with the Kanban → Versioning → Release Workflow system.
@@ -195,7 +195,7 @@ Design and implement a clear, actionable flow for converting incoming Feature Re
 **Status:** COMPLETE  
 **Priority:** HIGH  
 **Estimated Effort:** [TBD]  
-**Last updated:** 2026-05-14 (v0.4.19.4+5 – Story 19 Task 4 complete)
+**Last updated:** 2026-06-15 (v0.4.14.12+2 – Kanban documentation setup)
 
 **Goal:**  
 Ensure seamless integration between Kanban, Versioning, and Release Workflow (RW) systems within the dev-kit. This story validates that the three frameworks work together cohesively, providing end-to-end traceability from Feature Requests/Bug Reports through Kanban Tasks to versioned releases.

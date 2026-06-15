@@ -9,15 +9,17 @@ housekeeping_policy: keep
 # E04:S14:T12 — SQLite kanban-completed ledger + UKW PDF report (FR-134)
 
 **Task ID:** E04:S14:T12  
-**Status:** TODO  
+**Status:** COMPLETE  
 **Priority:** MEDIUM  
 **Task Type:** Discrete delivery  
 **Created:** 2026-06-15  
-**Last updated:** 2026-06-15 (v0.4.14.12+1 — RW -k kanban init FR-134 / E04:S14:T12)  
-**Version Anchor:** v0.4.14.12+1  
+**Last updated:** 2026-06-15 (implementation — FR-134 SQLite ledger + PDF)  
+**Version Anchor:** v0.4.14.12+2  
 **Code:** E04S14T12
 
 **Upstream:** [FR-134 — SQLite completed-task ledger with UKW-generated PDF report](../../../fr-br/FR-134-kanban-completed-sqlite-ledger-pdf-report.md)
+
+**IPW:** [IPP-E04S14T12](../../../../implementation-cycles/IPP-E04S14T12-kanban-completed-sqlite-ledger-pdf-report.md)
 
 Publication Status: NOT_APPLICABLE
 
@@ -37,7 +39,7 @@ Replace **`kanban-completed.md`** as the completed-task ledger with **`.adk/kanb
 - Precedent: [release-state SQLite mode](../../../../../packages/frameworks/workflow-mgt/docs/release-state-sqlite-mode.md)
 - Supersedes (format): [FR-049](../../../fr-br/FR-049-enhanced-kanban-completed-with-timestamps-and-recent-tasks.md) markdown-era ledger
 
-**IPW planning artifact (when used):** Link `IPP-E04S14T12-*.md` here when created.
+**IPW planning artifact (when used):** [IPP-E04S14T12](../../../../implementation-cycles/IPP-E04S14T12-kanban-completed-sqlite-ledger-pdf-report.md)
 
 ---
 
@@ -55,10 +57,10 @@ Replace **`kanban-completed.md`** as the completed-task ledger with **`.adk/kanb
 
 ## Acceptance Criteria
 
-- [ ] **AC1:** FR-134 functional requirements F1–F8 satisfied.
-- [ ] **AC2:** FR-134 acceptance criteria AC1–AC5 satisfied at release RW.
-- [ ] **AC3:** No agent/skill path writes markdown ledger body post-cutover.
-- [ ] **AC4:** UKW comprehensive + `UKW -c` regenerate PDF; documented in cheatsheet + UKW guide.
+- [x] **AC1:** FR-134 functional requirements F1–F8 satisfied.
+- [x] **AC2:** FR-134 acceptance criteria AC1–AC5 satisfied at release RW.
+- [x] **AC3:** No agent/skill path writes markdown ledger body post-cutover.
+- [x] **AC4:** UKW comprehensive + `UKW -c` regenerate PDF; documented in cheatsheet + UKW guide.
 
 ---
 
