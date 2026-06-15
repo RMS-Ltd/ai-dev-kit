@@ -42,6 +42,8 @@ Each **concern** has exactly **one home epic**. Do not create a second epic when
 
 **Step 2 (Propose)** must emit this matrix mapping **before** epic map writes. Flag any legacy epic that maps to two v4 homes.
 
+**Filename collisions:** When fresh Core templates occupy `story-{nn}-*.md`, legacy-import targets use `story-{nn}-legacy-{slug}.md` — see [KANBAN_MIGRATION_DEPTH_AND_RATIONALIZATION.md](KANBAN_MIGRATION_DEPTH_AND_RATIONALIZATION.md) §4.
+
 ## Tags
 
 Resolve homes via `short_tag` in `kanban_v4_catalog.py` (e.g. `SEC` → E07, `VENDOR` → E17).

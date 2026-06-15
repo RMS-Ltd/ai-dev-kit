@@ -13,7 +13,7 @@ housekeeping_policy: keep
 **Submitted:** 2026-06-15  
 **Submitted By:** Maintainer (SBL attempt 10 phase-2 structural analysis)  
 **Priority:** HIGH (Should Have — MoSCOW **S**)  
-**Status:** OPEN  
+**Status:** IMPLEMENTED
 
 **North star:** Ship ADK so **mature-repo migration is as painless as possible** — minimal decisions, no ad-hoc scripts, clear “done,” optional optimization later.
 
@@ -66,27 +66,27 @@ FR-127 shipped agentic KMA but not a **single adopter journey** that says: *defa
 
 ### Functional — painless default path
 
-- [ ] **FR-133-F1:** Document **one Arm B migration journey** (install → archive → KMA → RC → RW) as the primary adopter surface in INSTALL + KMA guide.
-- [ ] **FR-133-F2:** **Default depth = L1** (route & preserve): legacy stories routed, forensic tokens OK, RC PASS = migration-complete for shipping.
-- [ ] **FR-133-F3:** **Opt-in L2/L3** with separate sign-off; never block Install RC or first RW on rationalization.
-- [ ] **FR-133-F4:** Adopter-facing **“you are done”** checklist (RC PASS + comprehension + zero ad-hoc migration scripts).
-- [ ] **FR-133-F5:** **Collision playbook** — template Core vs legacy import naming (`story-*-legacy-*` pattern class); linked from KMA guide so agents don’t improvise.
-- [ ] **FR-133-F6:** **Megastory policy** — default preserve at L1; when/how to split at L3; no forced fan-out on install path.
+- [x] **FR-133-F1:** Document **one Arm B migration journey** (install → archive → KMA → RC → RW) as the primary adopter surface in INSTALL + KMA guide.
+- [x] **FR-133-F2:** **Default depth = L1** (route & preserve): legacy stories routed, forensic tokens OK, RC PASS = migration-complete for shipping.
+- [x] **FR-133-F3:** **Opt-in L2/L3** with separate sign-off; never block Install RC or first RW on rationalization.
+- [x] **FR-133-F4:** Adopter-facing **“you are done”** checklist (RC PASS + comprehension + zero ad-hoc migration scripts).
+- [x] **FR-133-F5:** **Collision playbook** — template Core vs legacy import naming (`story-*-legacy-*` pattern class); linked from KMA guide so agents don’t improvise.
+- [x] **FR-133-F6:** **Megastory policy** — default preserve at L1; when/how to split at L3; no forced fan-out on install path.
 
 ### Functional — depth model & agent guide
 
-- [ ] **FR-133-F7:** Define L1/L2/L3 with entry/exit criteria (internal + agent appendix).
-- [ ] **FR-133-F8:** Publish abstract playbook `packages/frameworks/kanban/guides/KANBAN_MIGRATION_DEPTH_AND_RATIONALIZATION.md` (no project-specific routing tables).
-- [ ] **FR-133-F9:** Parameterized epic band model (Core / Domain / Reserved) — filled from ingest + policy.
-- [ ] **FR-133-F10:** Cross-link INSTALL, KMA execution, `LEGACY_KANBAN_MIGRATION.md`, `DUPLICATE_EPIC_POLICY.md`.
-- [ ] **FR-133-F11:** Optional templates: `migration-rationalization.md`, structural scorecard; FR-079 depth field.
+- [x] **FR-133-F7:** Define L1/L2/L3 with entry/exit criteria (internal + agent appendix).
+- [x] **FR-133-F8:** Publish abstract playbook `packages/frameworks/kanban/guides/KANBAN_MIGRATION_DEPTH_AND_RATIONALIZATION.md` (no project-specific routing tables).
+- [x] **FR-133-F9:** Parameterized epic band model (Core / Domain / Reserved) — filled from ingest + policy.
+- [x] **FR-133-F10:** Cross-link INSTALL, KMA execution, `LEGACY_KANBAN_MIGRATION.md`, `DUPLICATE_EPIC_POLICY.md`.
+- [x] **FR-133-F11:** Optional templates: `migration-rationalization.md`, structural scorecard; FR-079 depth field.
 
 ### Non-functional
 
-- [ ] **FR-133-NF1:** **Painlessness metric:** adopter completes Arm B without custom `scripts/*kma*` or invented phase scripts (SBL attempt 10 bar).
-- [ ] **FR-133-NF2:** Guide usable with **zero** prior knowledge of any single adopter project.
-- [ ] **FR-133-NF3:** Do not weaken Install RC; depth model orthogonal to RC PASS.
-- [ ] **FR-133-NF4:** Progressive disclosure — adopter INSTALL prose stays simple; depth detail in framework guide.
+- [x] **FR-133-NF1:** **Painlessness metric:** adopter completes Arm B without custom `scripts/*kma*` or invented phase scripts (SBL attempt 10 bar).
+- [x] **FR-133-NF2:** Guide usable with **zero** prior knowledge of any single adopter project.
+- [x] **FR-133-NF3:** Do not weaken Install RC; depth model orthogonal to RC PASS.
+- [x] **FR-133-NF4:** Progressive disclosure — adopter INSTALL prose stays simple; depth detail in framework guide.
 
 ### Future (evaluate in IPW if needed for painlessness)
 
@@ -98,12 +98,12 @@ FR-127 shipped agentic KMA but not a **single adopter journey** that says: *defa
 
 ## Acceptance criteria
 
-- [ ] **AC1:** INSTALL presents **one default Arm B migration path**; adopter not required to read maintainer KB to migrate.
-- [ ] **AC2:** Framework guide published; KMA agent load path includes painless-default + depth appendix.
-- [ ] **AC3:** `COMPREHENSION.md` / install receipt template includes **depth achieved (L1 default)** and explicit **not performed** list.
-- [ ] **AC4:** Collision + megastory sections prevent common SBL-class rework (abstract examples only).
-- [ ] **AC5:** Documented bar matches attempt 10: **0** ad-hoc KMA scripts, RC strict PASS sufficient for “migration shipped.”
-- [ ] **AC6:** L2/L3 documented as opt-in; FR-127 / UXR-029 / #52 programme consistent.
+- [x] **AC1:** INSTALL presents **one default Arm B migration path**; adopter not required to read maintainer KB to migrate.
+- [x] **AC2:** Framework guide published; KMA agent load path includes painless-default + depth appendix.
+- [x] **AC3:** `COMPREHENSION.md` / install receipt template includes **depth achieved (L1 default)** and explicit **not performed** list.
+- [x] **AC4:** Collision + megastory sections prevent common SBL-class rework (abstract examples only).
+- [x] **AC5:** Documented bar matches attempt 10: **0** ad-hoc KMA scripts, RC strict PASS sufficient for “migration shipped.”
+- [x] **AC6:** L2/L3 documented as opt-in; FR-127 / UXR-029 / #52 programme consistent.
 
 ---
 
@@ -124,4 +124,5 @@ FR-127 shipped agentic KMA but not a **single adopter journey** that says: *defa
 
 ## Release trace
 
+- **v0.6.9.37+2** (SemVer **v0.4.1173+2**, E06:S09:T37, `MWF delivery`) — FR-133 implementation: depth guide, INSTALL Migrate (default), COMPREHENSION template, KMA defaults
 - **v0.6.9.37+1** (SemVer **v0.4.1172+1**, E06:S09:T37, `RW -k --art`) — Kanban init; FR-133 + T37 intake filed

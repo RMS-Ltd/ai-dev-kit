@@ -415,7 +415,9 @@ def main() -> int:
     if args.adoption_path in ("arm-b", "strangler"):
         print("  • KMA — kit first pass on archived legacy only (no pre-authored target E/S tree)")
         print("  • See LEGACY_KANBAN_MIGRATION.md; FR-127 proposal sign-off before writes")
-        print("  • Write COMPREHENSION.md (kanban root, docs authority, restore ≠ migrate)")
+        print("  • Copy COMPREHENSION template → repo-root COMPREHENSION.md")
+        print("    packages/frameworks/workflow-mgt/templates/COMPREHENSION_TEMPLATE.md")
+        print("  • Default migration depth L1 — see KANBAN_MIGRATION_DEPTH_AND_RATIONALIZATION.md")
 
     if args.run_install_rc:
         rc_profile = _rc_profile_for_adoption(args.adoption_path)

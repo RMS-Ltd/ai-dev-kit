@@ -9,12 +9,12 @@ housekeeping_policy: keep
 # E06:S09:T37 — Painless adopter kanban migration workflow (FR-133)
 
 **Task ID:** E06:S09:T37  
-**Status:** TODO  
+**Status:** COMPLETE  
 **Priority:** HIGH  
 **Created:** 2026-06-15  
-**Last updated:** 2026-06-15 (v0.6.9.37+1 – Kanban documentation setup)  
+**Last updated:** 2026-06-15 (v0.6.9.37+2 — FR-133 painless migration workflow)  
 **Code:** E06S09T37  
-**Version anchor:** v0.6.9.37+1 (kanban init)
+**Version anchor:** v0.6.9.37+2
 
 **North star:** Ship ADK with a **migration workflow as painless as possible** for mature-repo adopters.
 
@@ -34,8 +34,18 @@ Package the **default painless migration path** (Arm B: orchestrator → blind K
 ## Input
 
 - [FR-133](../../../fr-br/FR-133-kanban-migration-depth-rationalization-adopter-guide.md)
+- **[IPP-E06S09T37](../../../../implementation-cycles/IPP-E06S09T37-kanban-migration-depth-rationalization-fr133.md)** — consolidated implementation plan (IPW 2026-06-15)
 - SBL pain catalogue: invented phases, collisions, unclear done-state (attempts 06–09); painless bar (attempt 10)
 - Existing surfaces: INSTALL Arm B ([T36](T36-adopter-path-selector-install-rc-uxr029.md)), KMA ([T31](T31-agentic-kanban-migration-agent-fr127.md))
+
+## References
+
+- [IPP-E06S09T37](../../../../implementation-cycles/IPP-E06S09T37-kanban-migration-depth-rationalization-fr133.md) — spec, tests, implementation plan (§1–§7)
+- [FR-133](../../../fr-br/FR-133-kanban-migration-depth-rationalization-adopter-guide.md)
+- [E06:S09:T36](T36-adopter-path-selector-install-rc-uxr029.md) · [E06:S09:T31](T31-agentic-kanban-migration-agent-fr127.md)
+- [IPP-E06S09T31](../../../../implementation-cycles/IPP-E06S09T31-agentic-kanban-migration-agent-fr127.md)
+- [ADR-028](../../../../architecture/standards-and-adrs/ADR-028-agentic-kanban-migration-brownfield-fr127.md) · [ADR-030](../../../../architecture/standards-and-adrs/ADR-030-selective-adoption-three-path-model.md)
+- [attempt-10 README](../../../../../../adk-install-into-sbl/attempt-10/README.md)
 
 ---
 
@@ -72,12 +82,31 @@ Package the **default painless migration path** (Arm B: orchestrator → blind K
 
 ## Acceptance criteria
 
-- [ ] **AC1:** Adopter can follow INSTALL + KMA only; no maintainer KB required (FR-133 AC1).
-- [ ] **AC2:** Default path documented end-to-end; depth appendix for agents (FR-133 AC2).
-- [ ] **AC3:** COMPREHENSION template ships with L1 default + not-performed list (FR-133 AC3).
-- [ ] **AC4:** Collision/megastory guidance reduces rework class from attempt 10 FB (FR-133 AC4).
-- [ ] **AC5:** Painlessness bar documented: 0 ad-hoc KMA scripts + RC PASS (FR-133 AC5).
-- [ ] **AC6:** Greenfield mirror sync per FR-110 when touching `packages/frameworks/`.
+- [x] **AC1:** Adopter can follow INSTALL + KMA only; no maintainer KB required (FR-133 AC1).
+- [x] **AC2:** Default path documented end-to-end; depth appendix for agents (FR-133 AC2).
+- [x] **AC3:** COMPREHENSION template ships with L1 default + not-performed list (FR-133 AC3).
+- [x] **AC4:** Collision/megastory guidance reduces rework class from attempt 10 FB (FR-133 AC4).
+- [x] **AC5:** Painlessness bar documented: 0 ad-hoc KMA scripts + RC PASS (FR-133 AC5).
+- [x] **AC6:** Greenfield mirror sync per FR-110 when touching `packages/frameworks/`.
+
+---
+
+## Verification (V1–V12)
+
+| ID | Result | Evidence |
+| -- | ------ | -------- |
+| V1 | PASS | INSTALL `### Migrate (default)` under Path 2 |
+| V2 | PASS | `KANBAN_MIGRATION_DEPTH_AND_RATIONALIZATION.md` L1/L2/L3 |
+| V3 | PASS | Depth guide §2 — L2/L3 opt-in; RC orthogonal |
+| V4 | PASS | `COMPREHENSION_TEMPLATE.md` depth + not-performed |
+| V5 | PASS | Depth guide §4 + KMA Step 2 collision bullets |
+| V6 | PASS | Depth guide §5 + execution guide megastory default |
+| V7 | PASS | `kma.md` load order — depth guide first |
+| V8 | PASS | Cross-links INSTALL ↔ depth ↔ LEGACY ↔ DUPLICATE ↔ kma |
+| V9 | PASS | Painlessness bar in depth guide + INSTALL checklist |
+| V10 | PASS | `sync_greenfield_install.py --check` (post-sync) |
+| V11 | PASS | No SBL E/S reference tree in kit docs |
+| V12 | PASS | `install-rc-checklist.yaml` unchanged (no L3 blocking rows) |
 
 ---
 

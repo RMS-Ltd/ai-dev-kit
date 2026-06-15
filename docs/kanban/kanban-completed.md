@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Completed Tasks
 
-**Last Updated:** 2026-06-12 (RW E06:S09:T34 — Kanban v3.5 packaged catalog)
-**Version:** v0.6.9.34+1
+**Last Updated:** 2026-06-15 (MWF E06:S09:T37 — FR-133 painless migration workflow)
+**Version:** v0.6.9.37+2
 
 > **For MoSCOW prioritized tasks, see:** [`kboard.md`](kboard.md)  
 > **For completed FR/BR/UXR intake items, see:** [`intake-completed.md`](intake-completed.md)
@@ -19,6 +19,10 @@ housekeeping_policy: keep
 ---
 
 ## 20 Most Recently Completed Tasks
+
+#### **MWF (2026-06-15)** — E06:S09:T37 @ **v0.6.9.37+2** (FR-133 painless adopter migration workflow)
+
+- **[E06:S09:T37](epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T37-kanban-migration-depth-rationalization-fr133.md)** — L1 default depth guide, INSTALL Migrate (default), COMPREHENSION template, KMA collision/megastory defaults. SemVer **v0.4.1173+2**. **Completed:** `2026-06-15T17:43:58Z` | **Version:** `v0.6.9.37+2` | **Agent:** `MWF E06:S09:T37 delivery` | [FR-133](fr-br/FR-133-kanban-migration-depth-rationalization-adopter-guide.md) | [IPP](../../implementation-cycles/IPP-E06S09T37-kanban-migration-depth-rationalization-fr133.md)
 
 #### **RW (2026-06-12)** — E06:S09:T34 @ **v0.6.9.34+1** (Kanban v3.5 packaged catalog — Small tier)
 

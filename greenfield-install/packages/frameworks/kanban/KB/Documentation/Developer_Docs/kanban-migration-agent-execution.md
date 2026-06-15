@@ -60,12 +60,14 @@ Optional helpers (`kma_ingest.py`, `validate_migration_map.py`) are **advisory o
 
 1. Draft `migration-proposal.md` from [MIGRATION_PROPOSAL_TEMPLATE.md](../../../templates/MIGRATION_PROPOSAL_TEMPLATE.md).
 2. **🚨 v4 gate (FR-132 / Issue #51):** Emit [DUPLICATE_EPIC_POLICY.md](../../../guides/DUPLICATE_EPIC_POLICY.md) decision matrix mapping **before** epic map table — one home per concern; flag dual mappings.
-3. Include:
+3. **Default depth L1 (FR-133):** State **preserve megastories** and inline task tokens unless operator explicitly requests L3 rationalization. See [KANBAN_MIGRATION_DEPTH_AND_RATIONALIZATION.md](../../../guides/KANBAN_MIGRATION_DEPTH_AND_RATIONALIZATION.md) §5.
+4. **Collision check (FR-133):** Before epic map writes, scan for fresh Core `story-{nn}-*.md` vs legacy-import targets; document `story-{nn}-legacy-{slug}.md` resolution in proposal. See depth guide §4.
+5. Include:
    - Epic map table (legacy → target)
    - Keep / Drop / Merge sections with rationale
    - Domain rationale (why E21+ epics vs canonical-only)
    - Operator sign-off block (unchecked)
-3. Present proposal to operator. **DO NOT** write migration files yet.
+6. Present proposal to operator. **DO NOT** write migration files yet.
 
 ### Step 3 — Review (BLOCKING)
 

@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Board
 
-**Last Updated:** 2026-06-15 (RW: E06:S09:T37)
-**Version:** v0.6.9.37+2
+**Last Updated:** 2026-06-15 (RW: E06:S09:T36)
+**Version:** v0.6.9.36+3
 
 **Active board contract:** **Sole active MoSCOW board** ([ADR-018](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/architecture/standards-and-adrs/ADR-018-single-kanban-board-consolidation.md)). Rows are **live work** (TODO / IN PROGRESS / OPEN / WAITING / PERPETUAL) plus filed **Could Have** backlog. **Verification (V)** band holds task-shipped / FBU-open items (`⏳ WAITING`). Remove **terminal** rows and archive prose (use [`kanban-completed.md`](kanban-completed.md) / [`intake-completed.md`](intake-completed.md)).
 
@@ -39,6 +39,8 @@ housekeeping_policy: keep
 - **E06:S09:T35** – Kanban v4 three-tier catalogue (FR-132) - ⏳ SHIPPED (HIGH — **v0.6.9.35+2**; agentic KMA UAT + benchmark; FR-132-F6 pending) | [Task](epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T35-kanban-v4-three-tier-catalogue-fr132.md) | [FR-132](fr-br/FR-132-kanban-v4-three-tier-catalogue.md) | [FR-131](fr-br/FR-131-canonical-abstract-task-library-catl.md) | —No IPP— | Last modified: 2026-06-14 17:55 UTC
 
 - **E06:S09:T36** – Adopter Path Selector + Install RC (UXR-029) - ⏳ SHIPPED (HIGH — **v0.6.9.36+3** INSTALL + orchestrator blind KMA; AC7 pending) | [Task](epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T36-adopter-path-selector-install-rc-uxr029.md) | [UXR-029](fr-br/UXR-029-adk-install-path-experiment.md) | [#52](https://github.com/RMS-Ltd/ai-dev-kit/issues/52) | —No IPP— | Last modified: 2026-06-15 13:33 UTC
+
+- **E06:S09:T37** – Painless adopter kanban migration workflow (FR-133) - ⏳ TODO (HIGH — default L1 Arm B path; opt-in rationalization) | [Task](epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T37-kanban-migration-depth-rationalization-fr133.md) | [FR-133](fr-br/FR-133-kanban-migration-depth-rationalization-adopter-guide.md) | —No IPP— | Last modified: 2026-06-15 18:00 UTC
 
 #### Epic 21 (E21) — full inventory: shipped (32 tasks)
 

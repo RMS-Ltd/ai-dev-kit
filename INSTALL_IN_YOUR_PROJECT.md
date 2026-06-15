@@ -498,7 +498,20 @@ Mature adopters face more than a greenfield vs brownfield binary. Use this selec
 
 **For:** PM/KB/kanban drift; duplicate-epic confusion; in-place mapping failed or was abandoned (see [#51](https://github.com/RMS-Ltd/ai-dev-kit/issues/51)).
 
-**Procedure:**
+### Migrate (default) {#migrate-default}
+
+**One journey — default depth L1.** Follow the layered sequence below with kit KMA only. You are **done** when Install RC strict PASS + `COMPREHENSION.md` + **zero** ad-hoc migration scripts. L2/L3 optimization is **opt-in** after ship ([depth guide](packages/frameworks/kanban/guides/KANBAN_MIGRATION_DEPTH_AND_RATIONALIZATION.md)).
+
+1. Archive legacy PM/docs (git preserves history).
+2. Run orchestrator: `install_greenfield_path.py --adoption-path arm-b --init-sqlite --run-install-rc`.
+3. Complete layered steps 0–4 (vendor → kanban fresh Core).
+4. **KMA** blind first pass on archive only — `/kma` or [kma.md](.claude/commands/kma.md); sign-off before writes.
+5. Copy [COMPREHENSION template](packages/frameworks/workflow-mgt/templates/COMPREHENSION_TEMPLATE.md) → repo-root `COMPREHENSION.md` (depth **L1** default).
+6. Install RC strict PASS → first domain `RW`.
+
+**Done checklist:** RC PASS · comprehension filled · 0 ad-hoc `*kma*` scripts · legacy archive read-only · single `kanban_root`.
+
+**Procedure (detail):**
 
 1. Archive legacy PM/docs (e.g. `docs-pre-ai-dev-kit/`) — git preserves history.
 2. Lean vendor install ([FR-110](#lean-vendor-install-greenfield-install--fr-110)).

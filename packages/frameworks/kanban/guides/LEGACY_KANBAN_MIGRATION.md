@@ -6,7 +6,7 @@ housekeeping_policy: keep
 
 # Legacy kanban migration (v4 playbook)
 
-**Use with:** KMA (Kanban Migration Agent) · [ADK_KANBAN_MIGRATION_FOR_ADOPTER_AGENTS.md](ADK_KANBAN_MIGRATION_FOR_ADOPTER_AGENTS.md) · [FR-127](../../../docs/kanban/fr-br/FR-127-agentic-kanban-migration-agent-replace-tool-pipeline.md) · [Issue #51](https://github.com/RMS-Ltd/ai-dev-kit/issues/51)
+**Use with:** KMA (Kanban Migration Agent) · [KANBAN_MIGRATION_DEPTH_AND_RATIONALIZATION.md](KANBAN_MIGRATION_DEPTH_AND_RATIONALIZATION.md) (L1 default) · [ADK_KANBAN_MIGRATION_FOR_ADOPTER_AGENTS.md](ADK_KANBAN_MIGRATION_FOR_ADOPTER_AGENTS.md) · [FR-127](../../../docs/kanban/fr-br/FR-127-agentic-kanban-migration-agent-replace-tool-pipeline.md) · [Issue #51](https://github.com/RMS-Ltd/ai-dev-kit/issues/51)
 
 **Mode:** Agentic intelligence required — read → reason → propose → sign-off → synthesise. Scripts are advisory helpers only.
 
@@ -21,10 +21,12 @@ housekeeping_policy: keep
 
 ## KMA step 2 checklist
 
-1. Inventory legacy epics (titles + concerns).
-2. Run [DUPLICATE_EPIC_POLICY.md](DUPLICATE_EPIC_POLICY.md) matrix — one home each.
-3. Map vertical product work → **E24+**; cross-adopter capabilities → **E11–E20**.
-4. Present `migration-proposal.md` — **no writes** until sign-off.
+1. Confirm **L1 default** (preserve megastories) — [KANBAN_MIGRATION_DEPTH_AND_RATIONALIZATION.md](KANBAN_MIGRATION_DEPTH_AND_RATIONALIZATION.md).
+2. Inventory legacy epics (titles + concerns).
+3. Run [DUPLICATE_EPIC_POLICY.md](DUPLICATE_EPIC_POLICY.md) matrix — one home each.
+4. **Collision scan:** fresh Core `story-{nn}-*.md` vs legacy targets → `story-{nn}-legacy-{slug}.md` if needed (depth guide §4).
+5. Map vertical product work → **E24+**; cross-adopter capabilities → **E11–E20**.
+6. Present `migration-proposal.md` — **no writes** until sign-off.
 
 ## Example rows (Confidentia / fynd)
 

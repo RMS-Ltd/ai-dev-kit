@@ -11,6 +11,14 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.6.9.37+2] - 15-06-26
+
+FR-133 painless Arm B migration workflow: L1 default depth guide, INSTALL Migrate (default), COMPREHENSION template, KMA defaults. SemVer **v0.4.1173+2**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.6.9.37+2.md)
+
+---
+
 ## [0.6.9.37+1] - 15-06-26
 
 Kanban init (`RW -k`): **FR-133** painless adopter migration workflow + **E06:S09:T37** intake. SemVer **v0.4.1172+1**.

@@ -1,0 +1,8 @@
+{
+  "rows": {
+    "E06:S09:T37": {
+      "allowed": true,
+      "reason": "Terminal row prune — E06:S09:T37 COMPLETE v0.6.9.37+2; ledger append kanban-completed.md (FR-109 lean board)"
+    }
+  }
+}
