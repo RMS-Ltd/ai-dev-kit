@@ -9,12 +9,12 @@ housekeeping_policy: keep
 # E06:S09:T36 — Adopter Path Selector + Install RC (UXR-029)
 
 **Task ID:** E06:S09:T36  
-**Status:** IN PROGRESS (kit Phase 0 @ v0.6.9.36+1; AC7 SBL attempt 10 pending)  
+**Status:** IN PROGRESS (kit Phase 0 @ v0.6.9.36+2; AC7 SBL attempt 10 pending)  
 **Priority:** HIGH  
 **Created:** 2026-06-15  
-**Last updated:** 2026-06-15 (v0.6.9.36+1 — Phase 0 kit shipped; AC7 operator replay pending)  
+**Last updated:** 2026-06-15 (v0.6.9.36+2 — blind KMA attempt-10 preflight; AC7 operator replay pending)  
 **Code:** E06S09T36  
-**Version anchor:** **v0.6.9.36+1** (SemVer **v0.4.1166+1**)
+**Version anchor:** **v0.6.9.36+2** (SemVer **v0.4.1167+2**)
 
 **Parent program:** [E06:S09:T26](T26-starborn-legacy-adk-install-program.md) · [Issue #52](https://github.com/RMS-Ltd/ai-dev-kit/issues/52)
 

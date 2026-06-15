@@ -13,7 +13,7 @@ housekeeping_policy: keep
 **Submitted:** 2026-06-15  
 **Submitted By:** Starborn Legacy (FR-079 attempt 09)  
 **Priority:** HIGH (Must Have — MoSCOW **M**)  
-**Status:** IN PROGRESS (kit Phase 0 @ v0.6.9.36+1 — AC5–AC6 adopter replay pending)  
+**Status:** IN PROGRESS (kit Phase 0 @ v0.6.9.36+2 — AC5–AC6 adopter replay pending)  
 **Implementing Task:** [E06:S09:T36](../epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T36-adopter-path-selector-install-rc-uxr029.md)
 
 **Related:** [Issue #52](https://github.com/RMS-Ltd/ai-dev-kit/issues/52) · [Issue #51](https://github.com/RMS-Ltd/ai-dev-kit/issues/51) · [UXR-025](UXR-025-starborn-legacy-greenfield-install-diary.md) · [FR-080](FR-080-greenfield-installation-process.md) · [FR-081](FR-081-brownfield-modular-adopter-integration.md) · [ADR-003](../../architecture/standards-and-adrs/ADR-003-greenfield-vs-brownfield-adoption.md) · [ADR-030](../../architecture/standards-and-adrs/ADR-030-selective-adoption-three-path-model.md) · [E06:S09:T26](../epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T26-starborn-legacy-adk-install-program.md)

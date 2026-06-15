@@ -13,8 +13,8 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** Large  
 **Created:** 2026-04-19  
-**Last updated:** 2026-06-15 (v0.6.9.36+1 – Kanban documentation setup)
-**Version:** v0.6.9.36+1
+**Last updated:** 2026-06-15 (v0.6.9.36+2 – Kanban documentation setup)
+**Version:** v0.6.9.36+2
 **Code:** E6S09
 
 ---
@@ -100,7 +100,7 @@ housekeeping_policy: keep
 - [x] **E06:S09:T34 – Kanban v3.5 packaged catalog (Small tier)** - ✅ COMPLETE (**v0.6.9.34+1** — v3.5 fresh-install catalog + task installer; SemVer **v0.4.1159+1**) — [Task](story-09-ai-dev-kit-installation-and-adopter-integration/T34-kanban-v35-packaged-catalog-small-tier.md) | [12-v35 delta](../../../knowledge/analysis/kanban-v2/12-v35-catalog-delta-bootstrap-stories.md) | —No IPP—
 - [x] **E06:S09:T35 – Kanban v4 three-tier catalogue (FR-132)** - ✅ COMPLETE (**v0.6.9.35+2** — v4 catalog + agentic KMA UAT/benchmark; SemVer **v0.4.1164+2**) — [Task](story-09-ai-dev-kit-installation-and-adopter-integration/T35-kanban-v4-three-tier-catalogue-fr132.md) | [FR-132](../../fr-br/FR-132-kanban-v4-three-tier-catalogue.md) | [FR-131](../../fr-br/FR-131-canonical-abstract-task-library-catl.md) | [13-v4 spec](../../../knowledge/analysis/kanban-v2/13-v4-three-tier-catalogue.md)
 
-- [ ] **E06:S09:T36 – Adopter Path Selector + Install RC (UXR-029)** - ⏳ SHIPPED (HIGH — **v0.6.9.36+1** Phase 0 kit; AC7 SBL attempt 10 pending) — [Task](story-09-ai-dev-kit-installation-and-adopter-integration/T36-adopter-path-selector-install-rc-uxr029.md) | [UXR-029](../../fr-br/UXR-029-adk-install-path-experiment.md) | [#52](https://github.com/RMS-Ltd/ai-dev-kit/issues/52) | [attempt-10](../../../../adk-install-into-sbl/attempt-10/README.md)
+- [ ] **E06:S09:T36 – Adopter Path Selector + Install RC (UXR-029)** - ⏳ SHIPPED (HIGH — **v0.6.9.36+2** blind KMA preflight; AC7 SBL attempt 10 pending) — [Task](story-09-ai-dev-kit-installation-and-adopter-integration/T36-adopter-path-selector-install-rc-uxr029.md) | [UXR-029](../../fr-br/UXR-029-adk-install-path-experiment.md) | [#52](https://github.com/RMS-Ltd/ai-dev-kit/issues/52) | [attempt-10](../../../../adk-install-into-sbl/attempt-10/README.md)
 
 ---
 

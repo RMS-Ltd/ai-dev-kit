@@ -1,0 +1,102 @@
+{
+  "auxiliary_surfaces": {
+    "epic_doc": {
+      "changes": [
+        "Updated epic-06 S09 story checklist pointer v0.6.9.36+2"
+      ],
+      "notes": [],
+      "paths": [
+        "docs/kanban/epics/epic-06/epic-06.md"
+      ],
+      "surface": "epic_doc",
+      "touched": true
+    },
+    "story_doc": {
+      "changes": [
+        "Updated story-09 T36 checklist and version v0.6.9.36+2"
+      ],
+      "notes": [],
+      "paths": [
+        "docs/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration.md"
+      ],
+      "surface": "story_doc",
+      "touched": true
+    }
+  },
+  "contract": "FR-092 / FR-091 (RW Step 7 self-sufficient four-surface reconciliation)",
+  "invocation_context": "rw_step_7",
+  "release_scope": {
+    "epic": 6,
+    "story": 9,
+    "task": 36,
+    "task_id": "E06:S09:T36",
+    "version_string": "v0.6.9.36+2",
+    "art_adopted": true
+  },
+  "stamp_evidence": {
+    "manifest": "docs/changelog-and-release-notes/changelog-archive/four-surface-reports/rw-e6s9t36-stamp-evidence-manifest.json"
+  },
+  "summary": {
+    "stamps_appended_with_evidence": 1,
+    "stamps_preserved_existing": 0,
+    "stamps_skipped_no_evidence": 0,
+    "total_changes": 5,
+    "touched_surfaces": [
+      "task_doc",
+      "fbu_doc",
+      "kboard",
+      "story_doc",
+      "epic_doc"
+    ],
+    "untouched_surfaces": [
+      "fbuboard"
+    ]
+  },
+  "surfaces": {
+    "fbu_doc": {
+      "changes": [
+        "Updated UXR-029 status version anchor v0.6.9.36+2"
+      ],
+      "notes": [],
+      "paths": [
+        "docs/kanban/fr-br/UXR-029-adk-install-path-experiment.md"
+      ],
+      "surface": "fbu_doc",
+      "touched": true
+    },
+    "fbuboard": {
+      "changes": [],
+      "notes": [
+        "No fbuboard row changes for E06:S09:T36 release."
+      ],
+      "paths": [
+        "docs/kanban/fr-br-uxr-board.md"
+      ],
+      "surface": "fbuboard",
+      "touched": false
+    },
+    "kboard": {
+      "changes": [
+        "Updated kboard E06:S09:T36 version v0.6.9.36+2 + Last modified stamp"
+      ],
+      "notes": [],
+      "paths": [
+        "docs/kanban/kboard.md"
+      ],
+      "surface": "kboard",
+      "touched": true
+    },
+    "task_doc": {
+      "changes": [
+        "Updated T36 task doc version anchor and forensic marker v0.6.9.36+2"
+      ],
+      "notes": [],
+      "paths": [
+        "docs/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T36-adopter-path-selector-install-rc-uxr029.md"
+      ],
+      "surface": "task_doc",
+      "touched": true
+    }
+  },
+  "timestamp_utc": "2026-06-15 12:58 UTC"
+}

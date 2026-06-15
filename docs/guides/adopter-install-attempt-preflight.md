@@ -50,7 +50,8 @@ Record in attempt README:
 ### Arm B (SBL attempt 10)
 
 - [ ] Legacy PM archived (`docs-pre-ai-dev-kit/` or equivalent)
-- [ ] Operator E/S tree documented **before** KMA
+- [ ] Kit KMA **first pass blind** — no operator on proposal/synthesise; no `KMA-REFERENCE-EST-TREE` in agent context ([#52](https://github.com/RMS-Ltd/ai-dev-kit/issues/52))
+- [ ] Post-KMA: score kit tree vs held-out reference (maintainer/operator only); minimal tweaks → SBL `FB-ADK-KMA-KANBAN-MIGRATION.md` §4
 - [ ] Target: **0** ad-hoc KMA scripts
 - [ ] Preflight index: [adk-install-into-sbl/attempt-10/README.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/adk-install-into-sbl/attempt-10/README.md)
 
