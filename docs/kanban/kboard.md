@@ -165,7 +165,7 @@ _All perpetual lanes under **E02:S16** only ([IPP-E02S16T24](../../implementatio
 
 - **E02:S16:T05** – GitHub Actions CI health (Perpetual) - 🔄 PERPETUAL (**v0.2.16.5+11**) - [Task](epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T05-github-actions-ci-health-perpetual.md) | [FR-112](fr-br/FR-112-perpetual-github-ci-and-security-health-lanes.md) | [IPP-E02S16T05](../implementation-cycles/IPP-E02S16T05-github-actions-ci-health-perpetual-fr112.md) | [BR-104](fr-br/BR-104-codeql-cqg-green-does-not-imply-actions-ci-green.md) | [—IPP—](../../implementation-cycles/IPP-E02S16T05-github-actions-ci-health-perpetual-fr112.md) | Last modified: 2026-06-15 20:36 UTC
 
-- **E02:S16:T06** – GitHub Security & Code Quality health (Perpetual) - 🔄 PERPETUAL (**v0.2.16.6+13** — Wave 8 Dependabot ws/js-yaml hygiene) - [Task](epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T06-github-security-code-quality-health-perpetual.md) | [FR-112](fr-br/FR-112-perpetual-github-ci-and-security-health-lanes.md) | [—IPP—](../../implementation-cycles/IPP-E02S16T06-github-security-code-quality-health-perpetual-fr112.md) | Last modified: 2026-06-16 00:25 UTC
+- **E02:S16:T06** – GitHub Security & Code Quality health (Perpetual) - 🔄 PERPETUAL (**v0.2.16.6+14** — Wave 8b js-yaml 4.2.0 complete) - [Task](epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T06-github-security-code-quality-health-perpetual.md) | [FR-112](fr-br/FR-112-perpetual-github-ci-and-security-health-lanes.md) | [—IPP—](../../implementation-cycles/IPP-E02S16T06-github-security-code-quality-health-perpetual-fr112.md) | Last modified: 2026-06-16 01:10 UTC
 
 ### Won't Have (W) - Deferred Tasks
 

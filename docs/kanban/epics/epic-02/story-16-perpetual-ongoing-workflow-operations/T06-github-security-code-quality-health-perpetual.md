@@ -14,8 +14,8 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** Medium (ongoing)  
 **Created:** 2026-06-05  
-**Last updated:** 2026-06-16 (Wave 8 Dependabot @ v0.2.16.6+13)  
-**Version Anchor:** v0.2.16.6+13  
+**Last updated:** 2026-06-16 (Wave 8b js-yaml complete @ v0.2.16.6+14)  
+**Version Anchor:** v0.2.16.6+14  
 **Code:** E02S16T06  
 **Task Type:** Perpetual Maintenance
 
@@ -520,6 +520,22 @@ After `dev` merges to `main` and CodeQL re-scans:
 
 ---
 
+## Wave 8b remediation (shipped @ v0.2.16.6+14)
+
+**Theme:** Complete [Dependabot #8](https://github.com/RMS-Ltd/ai-dev-kit/security/dependabot/8) — eliminate nested `gray-matter` **js-yaml@3.14.2** (semver `3.14.2 <= 4.1.1` still flagged).
+
+| Action | Result |
+| ------ | ------ |
+| `"gray-matter": { "js-yaml": "4.2.0" }` override | lock dedupes to single **4.2.0** |
+| `portal/scripts/patch-gray-matter-js-yaml.cjs` postinstall | `safeLoad`/`safeDump` → `load`/`dump` |
+| Lock regen | no `gray-matter/node_modules/js-yaml` |
+| `npm audit` | **0** vulnerabilities (local) |
+| `npm run build` | **SUCCESS** |
+| `RW E02:S16:T06 --art` | **v0.2.16.6+14** |
+| Operator Dependabot dashboard (TC38) | **Pending** post-merge |
+
+---
+
 ## Coordination matrix (T12–T17 vs T16)
 
 | Task | Surface | Status | T16 may remediate? |
@@ -557,6 +573,7 @@ After `dev` merges to `main` and CodeQL re-scans:
 - [x] **AC18 (Wave 6b):** Reliability-first + maintainability burn-down shipped **v0.2.16.6+11**; pytest/greenfield/CQG/CI parity green; operator TC36 verify **closed partial** (Wave 7).
 - [x] **AC19 (Wave 7):** Maintainability burn-down of **4** findings shipped **v0.2.16.6+12**; ruff/pytest/greenfield green; operator TC37 verify **pending**.
 - [x] **AC20 (Wave 8):** Dependabot hygiene — `ws@7.5.11` override + `js-yaml@4.2.0` retained; portal build green; shipped **v0.2.16.6+13**; operator TC38 Dependabot verify **pending**.
+- [x] **AC21 (Wave 8b):** Complete js-yaml **4.2.0** (gray-matter override + postinstall patch); `npm audit` 0 locally; shipped **v0.2.16.6+14**; operator TC38 verify **pending**.
 
 ---
 
