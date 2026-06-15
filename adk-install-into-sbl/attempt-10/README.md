@@ -1,104 +1,98 @@
-# Starborn Legacy — ADK install attempt 10 (preflight)
+# Starborn Legacy — ADK install attempt 10 (maintainer index)
 
-**Status:** **PENDING** — run after ai-dev-kit Phase 0 lands (T36 AC5–AC6)  
-**Predecessor:** [attempt 09](../attempt-09/README.md) · **GitHub:** [ai-dev-kit #52](https://github.com/RMS-Ltd/ai-dev-kit/issues/52)  
-**Arm:** **B** — shell + selective migration (KMA)  
+**Session:** `20260615-attempt-10`  
+**ADK pin:** `v0.4.1171`  
+**SBL branch / HEAD:** `dev` @ `448a79e1` (package freeze `1551ae14`)  
+**Arm:** **B** — greenfield shell + blind kit KMA  
 **Maintainer task:** [E06:S09:T26](../../docs/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T26-starborn-legacy-adk-install-program.md) · [E06:S09:T36](../../docs/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T36-adopter-path-selector-install-rc-uxr029.md)
 
----
+**GitHub:** [ai-dev-kit #52](https://github.com/RMS-Ltd/ai-dev-kit/issues/52)
 
-## Phase 0 kit prerequisites (ai-dev-kit)
-
-Before starting attempt 10, confirm the pinned ADK release includes:
-
-| Gate | Artifact |
-| ---- | -------- |
-| Install RC checklist | `validate_install_rc.py` + `install-rc-checklist.yaml` |
-| Docs schema | [DOCUMENTATION_SCHEMA.md](../../docs/governance/standards/DOCUMENTATION_SCHEMA.md) |
-| Layered orchestrator | `install_greenfield_path.py --adoption-path arm-b --init-sqlite --run-install-rc` |
-| SQLite before RW | `init_release_state_db.py` or `import_legacy.py` |
-| KMA kit-owned | **0** ad-hoc scripts under `scripts/` / `tools/` |
-
-**Operator freeze (from attempt 09):** No domain RW on SBL until Install RC **PASS**.
+**FR-079 status:** Adopter sign-off **final** @ `2026-06-15T17:16:37Z` — maintainer intake **accepted** (T36 AC7 satisfied)
 
 ---
 
-## Attempt 10 success criteria
+## Outcome
 
-| Metric | Attempt 09 | Attempt 10 target |
-| ------ | ---------- | ----------------- |
-| Install RC | ~50% FAIL | **PASS** (`--profile arm-b --strict`) |
+| Result | Detail |
+|--------|--------|
+| Vendor preflight | **PASS** — tarball `v0.4.1171`, SHA-256 verified |
+| Greenfield orchestrator | **PASS** — `arm-b`, `--init-sqlite`, `--catalog v4`, Install RC gate |
+| Install RC (`arm-b`, strict) | **PASS** — 10 blocking / 1 skip (`rc-kma-migration-map` N/A) |
+| Sign-off contract | **7 READY / 0 NOT READY / 1 SKIP** (BR-080 kit-only) |
+| Blind KMA | **PASS** — kit-owned; **0** ad-hoc scripts |
+| Release authority | **SQLite** — `.adk/release-state.db` before first domain RW |
+| First domain RW | **COMPLETE** — `207924fb` · E02:S02:T01 · `v0.2.2.1+1` |
+| Post-install UKW | **COMPLETE** — `1551ae14` · E02:S16:T02 · `v0.2.16.2+1` |
+
+---
+
+## vs attempt 09
+
+| Metric | Attempt 09 | Attempt 10 |
+| ------ | ---------- | ------------ |
+| Install RC strict | FAIL (~50%) | **PASS** |
 | Ad-hoc KMA scripts | 6 | **0** |
-| Release state | Legacy YAML (4 RWs) | **SQLite** before first RW |
-| Sign-off vs RC | 7 READY / RC FAIL | Both aligned |
+| RW release state | Legacy YAML | **SQLite** |
+| Sign-off vs RC | 7 READY / RC FAIL | **Aligned** |
 
 ---
 
-## Recommended command sequence
+## Canonical feedback package (FR-079)
 
-```bash
-# 1. Pin ADK (record tag in this README when started)
-# 2. Archive legacy (if not already): docs-pre-ai-dev-kit/
+**Git mirror on SBL `dev`** (authoritative for remote triage):
 
-# 3. Orchestrator (from vendor tree or packages/frameworks)
-python packages/frameworks/workflow-mgt/scripts/install_greenfield_path.py \
-  --project-root . \
-  --vendor-root vendor/ai-dev-kit \
-  --non-interactive \
-  --adoption-path arm-b \
-  --init-sqlite \
-  --catalog v4 \
-  --run-install-rc \
-  --install-rc-strict
+| Artifact | URL |
+| -------- | --- |
+| Cover | [SUBMISSION.md](https://github.com/RMS-Ltd/starborn-legacy/blob/dev/docs/adk-feedback/attempt-10/SUBMISSION.md) |
+| Payload | [feedback-payload.json](https://github.com/RMS-Ltd/starborn-legacy/blob/dev/docs/adk-feedback/attempt-10/feedback-payload.json) |
+| Install RC | [install-rc-report-final.json](https://github.com/RMS-Ltd/starborn-legacy/blob/dev/docs/adk-feedback/attempt-10/install-rc-report-final.json) |
+| Sign-off | [signoff-report.json](https://github.com/RMS-Ltd/starborn-legacy/blob/dev/docs/adk-feedback/attempt-10/signoff-report.json) |
+| KMA report | [FB-ADK-KMA-KANBAN-MIGRATION.md](https://github.com/RMS-Ltd/starborn-legacy/blob/dev/docs/adk-feedback/attempt-10/FB-ADK-KMA-KANBAN-MIGRATION.md) |
+| Migration proposal | [migration-proposal.md](https://github.com/RMS-Ltd/starborn-legacy/blob/dev/docs/adk-feedback/attempt-10/migration-proposal.md) |
+| Index | [docs/adk-feedback/README.md](https://github.com/RMS-Ltd/starborn-legacy/blob/dev/docs/adk-feedback/README.md) |
 
-# 4. KMA (kit-owned first pass — blind; no operator, no reference tree)
-#    Inputs: archived legacy only + DUPLICATE_EPIC_POLICY + kit KMA guides.
-#    Do NOT load KMA-REFERENCE-EST-TREE or operator tweak narrative before/during KMA.
+**Local forensic tree** (gitignored): `logs/attempt-10/` — transcripts, diary, `session.log`
 
-# 5. COMPREHENSION.md — state kanban root, docs authority, restore ≠ migrate
-
-# 6. Re-run Install RC until PASS, then first domain RW
-python packages/frameworks/workflow-mgt/scripts/validation/validate_install_rc.py \
-  --project-root . --profile arm-b --strict
-```
+**Installed-state evidence on `dev`:** [`COMPREHENSION.md`](https://github.com/RMS-Ltd/starborn-legacy/blob/dev/COMPREHENSION.md) · `docs/kanban/` · `docs-pre-ai-dev-kit/`
 
 ---
 
-## Blind KMA evaluation (attempt 10 programme)
+## Blind KMA programme
 
-Per [#52](https://github.com/RMS-Ltd/ai-dev-kit/issues/52) and SBL `docs/adk-feedback/` mirrors on `starborn-legacy` `dev`:
-
-| Phase | Who | Inputs | Output |
-| ----- | --- | ------ | ------ |
-| **1 — Kit KMA** | ADK agent (`KMA` / `/kma`) | Archived legacy corpus only; `DUPLICATE_EPIC_POLICY.md`; kit playbooks | `migration-proposal.md` → sign-off → synthesised `docs/kanban/` |
-| **2 — Score** | Maintainer / operator (**not** the KMA agent) | Kit KMA tree vs held-out reference | Structural diff report (E/S/T counts, mapping deltas) |
-| **3 — Tweaks** | Operator (minimal) | Kit candidate + domain judgement | Logged in SBL `FB-ADK-KMA-KANBAN-MIGRATION.md` §4 with rationale |
-
-**Held-out reference (do not feed to KMA):** [KMA-REFERENCE-EST-TREE-ATTEMPT-09.md](https://github.com/RMS-Ltd/starborn-legacy/blob/dev/docs/adk-feedback/attempt-09/KMA-REFERENCE-EST-TREE-ATTEMPT-09.md) — 19 epics · 105 stories · 473 tasks @ `docs/kanban/` freeze `7a08a906`. Structural baseline only; lives on **SBL repo**, not mirrored into ai-dev-kit KMA agent context.
-
-**ai-dev-kit guardrails:**
-
-- Do **not** mirror the reference tree into `packages/frameworks/kanban/`, KMA manifests, or `.claude/commands/kma.md` load paths.
-- `tests/fixtures/sbl-legacy-kanban-minimal/benchmark-ground-truth.yaml` is a **minimal CI fixture** (pipeline vs agentic recall) — not the attempt 10 scoring baseline.
-- Attempt 09 operator tree (`TARGET-ES-TREE-E30-RATIONALISED.md`) is **historical evidence** only; attempt 10 measures kit KMA **without** that precondition.
+| Phase | Status |
+| ----- | ------ |
+| 1 — Kit KMA (blind) | **Complete** — archived legacy only |
+| 2 — Structural score vs reference | **Maintainer** — [KMA-REFERENCE-EST-TREE-ATTEMPT-09.md](https://github.com/RMS-Ltd/starborn-legacy/blob/dev/docs/adk-feedback/attempt-09/KMA-REFERENCE-EST-TREE-ATTEMPT-09.md) |
+| 3 — Operator tweaks | Log in FB §4 if any |
 
 ---
 
-## FR-079 package layout (SBL repo)
+## Open kit feedback (from payload)
 
-Mirror attempt 09 under `starborn_legacy/logs/attempt-10/`:
+| ID | Theme |
+| -- | ----- |
+| `FB-ADK-adopter-bootstrap-prerequisites` | Phase 0 bootstrap checklist in INSTALL |
+| `FB-ADK-KMA-KANBAN-MIGRATION` | KMA filename collision / megastory routing |
+| `FB-ADK-post-install-rw-and-task-distribution` | RW-ready task doc; `--art` for first domain RW |
 
-- `feedback-package/feedback-payload.json`
-- `greenfield-install-diary.md`
-- `install-rc-report.json` (from `--report-json`)
-- Post-KMA: `FB-ADK-KMA-KANBAN-MIGRATION.md` (scaffold on SBL `dev` — kit output + §4 operator tweak log)
+**Filed (maintainer intake):** [FR-133](../../docs/kanban/fr-br/FR-133-kanban-migration-depth-rationalization-adopter-guide.md) → [E06:S09:T37](../../docs/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T37-kanban-migration-depth-rationalization-fr133.md) — **painless default migration path** (L1 = ship); L2/L3 opt-in.
 
-**Not in attempt 10 logs before kit KMA:** operator optimal E/S/T tree or reference diff artifacts.
+---
+
+## Maintainer next steps
+
+1. **T36 AC7** — close on maintainer RW (kanban + task doc).
+2. **UXR-029** — update H1 evidence row (attempt 10 RC PASS).
+3. **#52** — maintainer acceptance comment; optional issue-body refresh to attempt 10.
+4. **Phase 2** — KMA structural diff vs attempt-09 reference (maintainer-only).
+5. **Programme** — fynd.deals / Confidentia Arm A recon per [preflight](../../docs/guides/adopter-install-attempt-preflight.md).
 
 ---
 
 ## References
 
+- [PRE-INSTALL-LOGGING.md](PRE-INSTALL-LOGGING.md)
+- [attempt-09 README](../attempt-09/README.md)
 - [adopter-install-attempt-preflight.md](../../docs/guides/adopter-install-attempt-preflight.md)
-- [greenfield-brownfield synthesis](../../docs/knowledge/articles/greenfield-brownfield-selective-adoption-sbl-attempt-09.md)
 - [UXR-029](../../docs/kanban/fr-br/UXR-029-adk-install-path-experiment.md)

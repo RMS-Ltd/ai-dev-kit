@@ -1,0 +1,8 @@
+{
+  "rows": {
+    "E04:S14:T12": {
+      "allowed": true,
+      "reason": "RW Step 7 v0.4.14.12+2 — task COMPLETE; prune active kboard row; archived to kanban-completed.db"
+    }
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "auxiliary_surfaces": {
+    "epic_doc": {
+      "changes": [],
+      "notes": ["No epic-level delta required for Wave 7 hygiene RW."],
+      "paths": [
+        "docs/kanban/epics/epic-02/epic-02.md"
+      ],
+      "surface": "epic_doc",
+      "touched": false
+    },
+    "story_doc": {
+      "changes": [],
+      "notes": ["Story checklist unchanged; T06 perpetual IN PROGRESS."],
+      "paths": [
+        "docs/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations.md"
+      ],
+      "surface": "story_doc",
+      "touched": false
+    }
+  },
+  "contract": "FR-092 / ADR-018 (RW Step 7 four-surface reconciliation)",
+  "invocation_context": "rw_step_7",
+  "release_scope": {
+    "epic": 2,
+    "story": 16,
+    "task": 6,
+    "task_id": "E02:S16:T06",
+    "version_string": "v0.2.16.6+12",
+    "art_adopted": true
+  },
+  "stamp_evidence": {
+    "manifest": ".rw-step7-stamp-evidence.json",
+    "stamps_appended_with_evidence": 1,
+    "stamps_preserved_existing": 0,
+    "stamps_skipped_no_evidence": 0
+  },
+  "summary": {
+    "stamps_appended_with_evidence": 1,
+    "stamps_preserved_existing": 0,
+    "stamps_skipped_no_evidence": 0,
+    "total_changes": 4,
+    "touched_surfaces": ["task_doc", "kboard"],
+    "untouched_surfaces": ["fbu_doc"]
+  },
+  "surfaces": {
+    "fbu_doc": {
+      "changes": [],
+      "notes": ["No FR/BR/UXR doc in release scope for Wave 7 hygiene."],
+      "paths": [],
+      "surface": "fbu_doc",
+      "touched": false
+    },
+    "kboard": {
+      "changes": [
+        "E02:S16:T06 row version anchor v0.2.16.6+12 + Last modified stamp"
+      ],
+      "notes": [],
+      "paths": [
+        "docs/kanban/kboard.md"
+      ],
+      "surface": "kboard",
+      "touched": true
+    },
+    "task_doc": {
+      "changes": [
+        "Wave 7 remediation section + AC19 + version anchor v0.2.16.6+12"
+      ],
+      "notes": [],
+      "paths": [
+        "docs/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T06-github-security-code-quality-health-perpetual.md"
+      ],
+      "surface": "task_doc",
+      "touched": true
+    }
+  },
+  "timestamp_utc": "2026-06-15 15:01 UTC"
+}

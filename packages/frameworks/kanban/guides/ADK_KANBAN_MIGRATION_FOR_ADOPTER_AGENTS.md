@@ -10,7 +10,9 @@ housekeeping_policy: keep
 **Mode:** Agentic intelligence required — **not** scripted migration  
 **Canonical execution:** [kanban-migration-agent-execution.md](../KB/Documentation/Developer_Docs/kanban-migration-agent-execution.md)  
 **Guardrails:** [kma-agent-guardrails.yaml](../manifests/kma-agent-guardrails.yaml)  
-**Policy:** [FR-127](../../../docs/kanban/fr-br/FR-127-agentic-kanban-migration-agent-replace-tool-pipeline.md) · [ADR-028](../../../docs/architecture/standards-and-adrs/ADR-028-agentic-kanban-migration-brownfield-fr127.md)
+**Policy:** [FR-127](../../../docs/kanban/fr-br/FR-127-agentic-kanban-migration-agent-replace-tool-pipeline.md) · [FR-133](../../../docs/kanban/fr-br/FR-133-kanban-migration-depth-rationalization-adopter-guide.md) · [ADR-028](../../../docs/architecture/standards-and-adrs/ADR-028-agentic-kanban-migration-brownfield-fr127.md)
+
+**Load order:** [KANBAN_MIGRATION_DEPTH_AND_RATIONALIZATION.md](KANBAN_MIGRATION_DEPTH_AND_RATIONALIZATION.md) (L1 default) → [INSTALL Migrate (default)](../../../../INSTALL_IN_YOUR_PROJECT.md#migrate-default) → this playbook → execution guide.
 
 ---
 
@@ -41,12 +43,13 @@ KMA is an **agent workflow**, not a Python migration script. The agent owns reas
 
 ### 2. Reason (domain mapping)
 
-1. Emit [DUPLICATE_EPIC_POLICY.md](DUPLICATE_EPIC_POLICY.md) matrix **before** the epic map table.
-2. Classify each legacy epic:
+1. Confirm **migration depth = L1 (default)** unless operator signed L3 rationalization — [KANBAN_MIGRATION_DEPTH_AND_RATIONALIZATION.md](KANBAN_MIGRATION_DEPTH_AND_RATIONALIZATION.md).
+2. Emit [DUPLICATE_EPIC_POLICY.md](DUPLICATE_EPIC_POLICY.md) matrix **before** the epic map table.
+3. Classify each legacy epic:
    - **Repo / workflow / intake / CI** → Core E01–E08 (or specific story homes).
    - **Cross-adopter capability** (auth, API, compliance) → Ancillary E11–E20.
    - **Vertical product work** (game loop, scrapers, domain features) → **E24+ DOMAIN**.
-3. Document keep / drop / merge with explicit rationale (zombie epics, duplicates, synthesis notes).
+4. Document keep / drop / merge with explicit rationale (zombie epics, duplicates, synthesis notes).
 
 ### 3. Propose (artifact)
 

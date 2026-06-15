@@ -500,6 +500,30 @@ def get_completed_task(story_file: Path, version_task: Optional[int] = None) -> 
     return max(completed_tasks)
 
 
+def _is_superseded_task_doc(path: Path) -> bool:
+    """True when file is a redirect stub, not the active task doc."""
+    try:
+        head = path.read_text(encoding="utf-8", errors="replace")[:1200]
+    except OSError:
+        return False
+    if re.search(r"^#\s+SUPERSEDED\b", head, re.MULTILINE | re.IGNORECASE):
+        return True
+    if re.search(r"\*\*Status:\*\*\s*SUPERSEDED", head, re.IGNORECASE):
+        return True
+    return False
+
+
+def _select_active_task_doc(candidates: List[Path]) -> Optional[Path]:
+    """Prefer non-superseded task docs when multiple T##-* files exist."""
+    if not candidates:
+        return None
+    ordered = sorted(candidates)
+    for path in ordered:
+        if not _is_superseded_task_doc(path):
+            return path
+    return ordered[0]
+
+
 def locate_task_doc(
     story_file: Path,
     epic: int,
@@ -553,7 +577,9 @@ def locate_task_doc(
             # E07S01T09-*.md style (E/S/T two-digit — canonical task-doc naming on some epics)
             task_files = list(story_dir.glob(f"E{epic:02d}S{story:02d}T{task:02d}-*.md"))
         if task_files:
-            task_file = sorted(task_files)[0]
+            task_file = _select_active_task_doc(task_files)
+            if task_file is None:
+                task_file = sorted(task_files)[0]
             return (task_file, task_file.read_text(), "separate_file")
     
     # Format 2: Delimited section in Story file
@@ -665,7 +691,7 @@ def locate_task_doc_from_requested(epic: int, story: int, task: int, config: Opt
     for pat in patterns:
         hits = sorted(epic_dir.glob(pat))
         if hits:
-            task_doc = hits[0]
+            task_doc = _select_active_task_doc(hits) or hits[0]
             story_dir = task_doc.parent
             story_file = epic_dir / f"{story_dir.name}.md"
             return (task_doc, story_file if story_file.exists() else None)

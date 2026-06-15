@@ -1,0 +1,50 @@
+{
+  "contract": "FR-092 / ADR-018 (RW Step 7 four-surface reconciliation)",
+  "invocation_context": "rw_step_7",
+  "release_scope": {
+    "epic": 2,
+    "story": 16,
+    "task": 5,
+    "task_id": "E02:S16:T05",
+    "version_string": "v0.2.16.5+11",
+    "art_adopted": true,
+    "docs_only": true
+  },
+  "stamp_evidence": {
+    "manifest": "rw-e2s16t05-plus11-stamp-evidence-manifest.json",
+    "stamps_appended_with_evidence": 1,
+    "stamps_preserved_existing": 0,
+    "stamps_skipped_no_evidence": 0
+  },
+  "summary": {
+    "stamps_appended_with_evidence": 1,
+    "stamps_preserved_existing": 0,
+    "stamps_skipped_no_evidence": 0,
+    "total_changes": 4,
+    "touched_surfaces": ["task_doc", "fbu_doc", "kboard"],
+    "untouched_surfaces": []
+  },
+  "surfaces": {
+    "fbu_doc": {
+      "changes": ["BR-104 status FIXED; TC2–TC7 checked @ v0.2.16.5+11"],
+      "paths": ["docs/kanban/fr-br/BR-104-codeql-cqg-green-does-not-imply-actions-ci-green.md"],
+      "surface": "fbu_doc",
+      "touched": true
+    },
+    "kboard": {
+      "changes": ["E02:S16:T05 row v0.2.16.5+11 + stamp"],
+      "paths": ["docs/kanban/kboard.md"],
+      "surface": "kboard",
+      "touched": true
+    },
+    "task_doc": {
+      "changes": ["Wave 9 BR-104 closure section"],
+      "paths": [
+        "docs/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T05-github-actions-ci-health-perpetual.md"
+      ],
+      "surface": "task_doc",
+      "touched": true
+    }
+  },
+  "timestamp_utc": "2026-06-15 20:36 UTC"
+}

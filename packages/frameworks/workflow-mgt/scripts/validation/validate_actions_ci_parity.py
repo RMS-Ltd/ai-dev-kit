@@ -41,6 +41,20 @@ _DEFAULT_CHECKS: list[dict] = [
         "cwd": None,
     },
     {
+        "id": "cli-coverage",
+        "paths": [
+            "cli/**",
+            "tests/cli/**",
+            "pytest-cli-cov.ini",
+            "scripts/run_cli_pytest_coverage.sh",
+        ],
+        "command": [
+            "bash",
+            "scripts/run_cli_pytest_coverage.sh",
+        ],
+        "cwd": None,
+    },
+    {
         "id": "portal-publish-scope",
         "paths": [
             "docs/guides/**",

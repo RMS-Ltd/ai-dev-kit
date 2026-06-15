@@ -1,28 +1,28 @@
-# Detailed Changelog — v0.2.16.1+1
+# Changelog v0.2.16.1+1
 
-**Release date:** 20-04-26  
-**Task:** E2:S16:T01  
-**Mode:** RW with `--art`  
-**SemVer:** v0.4.764+1
+**Release Date:** 2026-06-15 22:43:57 UTC  
+**Epic:** 2 | **Story:** 16 | **Task:** 1  
+**SemVer:** v0.4.1181+1
+
+---
 
 ## Summary
 
-Established a dedicated Epic 2 story for perpetual ongoing workflow operations, with a canonical FR/task anchor and board wiring to prevent future default-housing drift.
+E02:S16:T01 — portal dependency hygiene: pin transitive `js-yaml` to **4.2.0** via npm override (Docusaurus dependency tree).
 
-## Included
+---
 
-- New FR intake:
-  - `docs/project-management/kanban/fr-br/FR-088-dedicated-story-for-perpetual-ongoing-tasks.md`
-- New story and task anchors:
-  - `docs/project-management/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations.md`
-  - `docs/project-management/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T01-establish-canonical-perpetual-ongoing-tasks-story-fr088.md`
-- Epic and board wiring:
-  - `docs/project-management/kanban/epics/epic-02/epic-02.md`
-  - `docs/project-management/kanban/kboard.md`
-  - `docs/project-management/kanban/fbuboard.md`
+## Change implemented
 
-## Verification
+### Portal / npm
 
-- `python3 "packages/frameworks/workflow mgt/scripts/validation/validate_branch_context.py" --requested "E2:S16:T01" --art` ✅
-- `python3 "packages/frameworks/workflow mgt/scripts/validation/validate_rw_task_complete.py" --requested "E2:S16:T01"` ✅
-- `python3 "packages/frameworks/workflow mgt/scripts/validation/validate_rw_task_intent.py" --requested "E2:S16:T01" --art` ✅
+- Added `"js-yaml": "4.2.0"` under `overrides` in [`portal/package.json`](../../../portal/package.json).
+- Nested override `"gray-matter": { "js-yaml": "3.14.2" }` — `gray-matter@4.0.3` still calls `yaml.safeLoad` (removed in js-yaml 4); keeps Docusaurus front-matter parsing working.
+- Refreshed [`portal/package-lock.json`](../../../portal/package-lock.json); Docusaurus tree on `js-yaml@4.2.0`, `gray-matter` retains isolated `3.14.2`.
+
+---
+
+## Related
+
+- [E02:S16:T01 — Workflow maintenance (Perpetual)](../../../kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T01-workflow-maintenance-perpetual.md)
+- [FR-088 — Dedicated story for perpetual ongoing tasks](../../../kanban/fr-br/FR-088-dedicated-story-for-perpetual-ongoing-tasks.md)

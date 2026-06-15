@@ -9,13 +9,21 @@ configuration block in .ai-dev-kit.yaml.
 import json
 import os
 import uuid
-from datetime import datetime
+from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any, Callable, Dict, Optional, TextIO, Tuple
 
 from cli.utils import print_warning, redact
 
 LogFunc = Callable[..., None]
+
+
+def _utc_filename_stamp() -> str:
+    return datetime.now(timezone.utc).strftime("%Y%m%d-%H%M%S")
+
+
+def _utc_iso_z() -> str:
+    return datetime.now(timezone.utc).isoformat(timespec="seconds").replace("+00:00", "Z")
 
 
 def _noop_log(_level: str, _context: str, _message: str, **_kwargs: Any) -> None:
@@ -126,7 +134,7 @@ def create_install_logger(
         log_dir.mkdir(parents=True, exist_ok=True)
 
         # Open timestamped log file
-        timestamp = datetime.utcnow().strftime("%Y%m%d-%H%M%S")
+        timestamp = _utc_filename_stamp()
         log_file = log_dir / f"install-{timestamp}.log"
         fh = log_file.open("a", encoding="utf-8")
 
@@ -172,7 +180,7 @@ def create_install_logger(
             ) -> None:
                 nonlocal sequence
                 sequence += 1
-                ts = datetime.utcnow().isoformat(timespec="seconds") + "Z"
+                ts = _utc_iso_z()
                 safe = redact(message)
                 event_payload = event or _default_event_contract(level, context, safe)
                 if strict_event_contract:
@@ -205,7 +213,7 @@ def create_install_logger(
                 parent_step_id: Optional[str] = None,
             ) -> None:
                 del event, step_id, parent_step_id
-                ts = datetime.utcnow().isoformat(timespec="seconds") + "Z"
+                ts = _utc_iso_z()
                 safe = redact(message)
                 fh.write(f"[{ts}] [{level}] [{context}] {safe}\n")
                 fh.flush()

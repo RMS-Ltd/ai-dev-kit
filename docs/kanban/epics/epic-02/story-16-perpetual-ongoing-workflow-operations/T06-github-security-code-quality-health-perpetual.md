@@ -14,8 +14,8 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** Medium (ongoing)  
 **Created:** 2026-06-05  
-**Last updated:** 2026-06-13 (Wave 6b burn-down @ v0.2.16.6+11)  
-**Version Anchor:** v0.2.16.6+11  
+**Last updated:** 2026-06-16 (Wave 8 Dependabot @ v0.2.16.6+13)  
+**Version Anchor:** v0.2.16.6+13  
 **Code:** E02S16T06  
 **Task Type:** Perpetual Maintenance
 
@@ -468,8 +468,28 @@ After `dev` merges to `main` and CodeQL re-scans:
 
 | Check | Status | Notes |
 | ----- | ------ | ----- |
-| Dashboard **12+2 → 0** | **Pending** | Local CQG **0** @ Wave 6b RW; GitHub UI confirms after merge |
+| Dashboard **12+2 → 0** | **CLOSED partial** | Wave 6b @ `v0.2.16.6+11`; Wave 7 cleared **4** M residuals @ `v0.2.16.6+12` — operator verify pending |
 | `.git/logs` dismiss | **Pending** | Operator action if rule still listed |
+
+---
+
+## Wave 7 remediation (shipped @ v0.2.16.6+12)
+
+**Theme:** Maintainability burn-down — **4** open standard findings @ operator report (post–Wave 6b).
+
+| Rule | Fix | Files |
+| ---- | --- | ----- |
+| `py/unused-import` | Remove unused `field` | `kanban_v4_catalog.py` |
+| `py/unused-local-variable` | Remove dead `tags` assignment | `validate_migration_map.py` |
+| Import hygiene | `ruff --fix I001` | `kanban_v32_catalog.py`, `generate_v4_est_templates.py` |
+
+| Verification | Result |
+| ------------ | ------ |
+| `ruff check` (implicated scripts) | **0** findings |
+| `sync_greenfield_install.py` | mirror in sync |
+| `pytest tests/kanban/` | green @ RW |
+| `RW E02:S16:T06 --art` | **v0.2.16.6+12** |
+| Operator dashboard (TC37) | **Pending** post-merge |
 
 **Cross-lane notes:**
 
@@ -477,6 +497,26 @@ After `dev` merges to `main` and CodeQL re-scans:
 - **T12/T13:** operator **Good/Good** @ `ed379ab`; finite backlogs **COMPLETE**.
 - **T14:** lag-accepted AI groups unchanged.
 - **dev/main divergence:** `dev` @ `68d42d78` lacks Kanban v3.5 until merged; Wave 6b applies fixes on integration branch ahead of next `main` merge.
+
+---
+
+## Wave 8 remediation (shipped @ v0.2.16.6+13)
+
+**Theme:** [Dependabot](https://github.com/RMS-Ltd/ai-dev-kit/security/dependabot) cross-lane hygiene — **2** open alerts @ operator capture (2026-06-16).
+
+| Alert | Package | Severity | Fix |
+| ----- | ------- | -------- | --- |
+| #7 | `ws` | High (CVE-2026-48779) | `"webpack-bundle-analyzer": { "ws": "7.5.11" }` npm override |
+| #8 | `js-yaml` | Medium | Retain top-level `"js-yaml": "4.2.0"` override (patched ≥4.2.0) |
+
+| Verification | Result |
+| ------------ | ------ |
+| `npm run build` (portal) | **SUCCESS** |
+| `npm ls ws` | `webpack-bundle-analyzer` → **7.5.11**; `webpack-dev-server` → **8.21.0** |
+| `RW E02:S16:T06 --art` | **v0.2.16.6+13** |
+| Operator Dependabot dashboard (TC38) | **Pending** post-merge |
+
+**Scope note:** Dependabot enablement policy → **E08:S03:T06** (FR-105); alert remediation shipped under FR-112 perpetual security hygiene.
 
 ---
 
@@ -514,7 +554,9 @@ After `dev` merges to `main` and CodeQL re-scans:
 - [x] **AC15 (Wave 5a):** Wave 5 manifest **8** M @ `f458a215a`; TC24 partial closed; shipped **v0.2.16.6+5**.
 - [x] **AC16 (Wave 5b):** Manual maintainability burn-down of **8** findings; pytest/greenfield/CQG green; shipped **v0.2.16.6+5**; operator TC25 verify **closed superseded** (Wave 6a).
 - [x] **AC17 (Wave 6a):** Wave 6 manifest **12** M + **2** R @ `55f4310e`; TC25 superseded; shipped **v0.2.16.6+10**.
-- [x] **AC18 (Wave 6b):** Reliability-first + maintainability burn-down shipped **v0.2.16.6+11**; pytest/greenfield/CQG/CI parity green; operator TC36 verify **pending**.
+- [x] **AC18 (Wave 6b):** Reliability-first + maintainability burn-down shipped **v0.2.16.6+11**; pytest/greenfield/CQG/CI parity green; operator TC36 verify **closed partial** (Wave 7).
+- [x] **AC19 (Wave 7):** Maintainability burn-down of **4** findings shipped **v0.2.16.6+12**; ruff/pytest/greenfield green; operator TC37 verify **pending**.
+- [x] **AC20 (Wave 8):** Dependabot hygiene — `ws@7.5.11` override + `js-yaml@4.2.0` retained; portal build green; shipped **v0.2.16.6+13**; operator TC38 Dependabot verify **pending**.
 
 ---
 

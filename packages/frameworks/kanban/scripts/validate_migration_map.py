@@ -56,7 +56,6 @@ def validate_proposal(path: Path) -> list[str]:
 
     target_homes: dict[str, list[str]] = {}
     for legacy, target in rows:
-        tags = re.findall(r"\bE\d{2}(?::S\d{2})?\b|\b[A-Z]{3,8}\b", target)
         home = target.strip()
         if home in target_homes:
             target_homes[home].append(legacy)

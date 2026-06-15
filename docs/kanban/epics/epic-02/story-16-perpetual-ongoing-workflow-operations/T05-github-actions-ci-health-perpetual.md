@@ -14,8 +14,8 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** Small (ongoing)  
 **Created:** 2026-06-05  
-**Last updated:** 2026-06-15 (Wave 7 — Tests+Docusaurus unified pin)  
-**Version Anchor:** v0.2.16.5+9  
+**Last updated:** 2026-06-15 (Wave 9 — BR-104 closure docs)  
+**Version Anchor:** v0.2.16.5+11  
 **Code:** E02S16T05  
 **Task Type:** Perpetual Maintenance
 
@@ -188,6 +188,37 @@ Use **`RW E02:S16:T05`** for recurring CI hygiene passes (BUILD increments on pe
 | Mirror | `sync_greenfield_install.py` |
 
 **Post-RW verification:** Re-check [Actions](https://github.com/RMS-Ltd/ai-dev-kit/actions) — Tests + Docusaurus green on `dev`/`main`.
+
+---
+
+## Wave 8 — SAA migration concurrency (2026-06-15)
+
+**Incident:** Local Step 9.7 / full pytest suite — `test_parallel_open_db_migrations_no_duplicate_column` failed with `sqlite3.OperationalError: database is locked` (Wave 4 duplicate-column guard alone insufficient).
+
+| Component | Fix |
+| --------- | --- |
+| `open_db()` | Per-DB-path `threading.Lock` around `init_schema` + `run_migrations` |
+| `run_migrations()` | Re-check `schema_version` inside `BEGIN IMMEDIATE` before `migrate_to_v2` |
+| Greenfield | `sync_greenfield_install.py` mirror |
+
+**Verification:** `validate_actions_ci_parity.py --strict --all` — 921 tests passed. BR-104 TC1 closed locally @ **v0.2.16.5+10**.
+
+**Post-RW verification:** Re-check [Actions](https://github.com/RMS-Ltd/ai-dev-kit/actions) — Tests green on `dev`/`main`.
+
+---
+
+## Wave 9 — BR-104 closure (2026-06-15)
+
+**Scope:** Documentation-only RW — reconcile BR-104 acceptance criteria and operator verification; **BR-104 → FIXED**.
+
+| Item | Detail |
+| ---- | ------ |
+| TC2–TC4 | Checked @ **v0.2.16.5+7** (Wave 4 parity hardening) |
+| TC6 | Checked @ **v0.2.16.5+7** (`validate_github_actions_remote.py`) |
+| TC7 | Checked @ **v0.2.16.5+11** — [Actions](https://github.com/RMS-Ltd/ai-dev-kit/actions) green on `dev`/`main` for Tests / Greenfield / workflow-scripts on recent HEADs |
+| BR-104 | **FIXED** @ **v0.2.16.5+11** |
+
+**Note:** E02:S16:T05 remains **IN PROGRESS** (perpetual lane); BR closure does not retire the task.
 
 ---
 

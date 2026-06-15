@@ -91,7 +91,7 @@ Or per release: `python packages/frameworks/workflow-mgt/scripts/version/push_rw
 | `UKW -u -p`, `UKW -u -a <target>`, etc. | Combined sub-workflows per flag matrix |
 | `UKW -ad <targets>` | **Address Drift** — targeted project-state kanban reconciliation — **planned** |
 | `UKW --rp` | **Deep reprioritization** (standalone) — intent/dependency/blocker/impact analysis on kboard + fbuboard; emits rationale ([ADR-009](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/architecture/standards-and-adrs/ADR-009-ukw-deep-reprioritization-rp-flag.md)). **Not** combinable with `-u`, `-p`, or `-a` |
-| `UKW -c` | **Archive completed** (standalone) — append [kanban-completed.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/kanban/kanban-completed.md) / [intake-completed.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/kanban/intake-completed.md) then remove terminal MoSCOW rows ([ADR-010](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/architecture/standards-and-adrs/ADR-010-ukw-archive-completed-c-flag.md)). **Not** combinable with `-u`, `-p`, `-a`, or `--rp` |
+| `UKW -c` | **Archive completed** (standalone) — upsert `.adk/kanban-completed.db` via `append_kanban_completed.py`, refresh `kanban-completed.pdf`, append [intake-completed.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/kanban/intake-completed.md), then remove terminal MoSCOW rows ([ADR-010](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/architecture/standards-and-adrs/ADR-010-ukw-archive-completed-c-flag.md), [FR-134](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/kanban/fr-br/FR-134-kanban-completed-sqlite-ledger-pdf-report.md)). **Not** combinable with `-u`, `-p`, `-a`, or `--rp` |
 
 **Flag disambiguation (easy to confuse):**
 

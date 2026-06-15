@@ -144,3 +144,9 @@ actions_ci_parity:
   # remote_workflows: optional override; defaults in validate_github_actions_remote.py
   # checks: optional override; defaults in validate_actions_ci_parity.py
 
+# FR-134 / E04:S14:T12 — completed-task ledger (SQLite SoT + PDF report)
+kanban_completed:
+  db: .adk/kanban-completed.db
+  pdf: docs/kanban/kanban-completed.pdf
+  legacy_markdown: docs/kanban/kanban-completed.md
+

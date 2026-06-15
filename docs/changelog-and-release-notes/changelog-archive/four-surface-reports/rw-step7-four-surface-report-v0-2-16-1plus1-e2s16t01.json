@@ -1,0 +1,59 @@
+{
+  "contract": "FR-092 / ADR-018 (RW Step 7 four-surface reconciliation)",
+  "invocation_context": "rw_step_7",
+  "release_scope": {
+    "epic": 2,
+    "story": 16,
+    "task": 1,
+    "task_id": "E02:S16:T01",
+    "version_string": "v0.2.16.1+1",
+    "art_adopted": true,
+    "docs_only": false
+  },
+  "stamp_evidence": {
+    "manifest": "rw-e2s16t01-plus1-stamp-evidence-manifest.json",
+    "stamps_appended_with_evidence": 1,
+    "stamps_preserved_existing": 0,
+    "stamps_skipped_no_evidence": 0
+  },
+  "summary": {
+    "stamps_appended_with_evidence": 1,
+    "stamps_preserved_existing": 0,
+    "stamps_skipped_no_evidence": 0,
+    "total_changes": 3,
+    "touched_surfaces": ["task_doc", "story_doc", "kboard"],
+    "untouched_surfaces": ["fbu_doc"]
+  },
+  "surfaces": {
+    "task_doc": {
+      "changes": ["version anchor v0.2.16.1+1 + last-updated"],
+      "paths": [
+        "docs/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T01-workflow-maintenance-perpetual.md"
+      ],
+      "surface": "task_doc",
+      "touched": true
+    },
+    "story_doc": {
+      "changes": ["T01 checklist perpetual version marker"],
+      "paths": [
+        "docs/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations.md"
+      ],
+      "surface": "story_doc",
+      "touched": true
+    },
+    "kboard": {
+      "changes": ["E02:S16:T01 row v0.2.16.1+1 + stamp; board Last Updated metadata"],
+      "paths": ["docs/kanban/kboard.md"],
+      "surface": "kboard",
+      "touched": true
+    },
+    "fbu_doc": {
+      "changes": [],
+      "paths": [],
+      "surface": "fbu_doc",
+      "touched": false,
+      "notes": ["No linked FR/BR/UXR intake or closure — portal npm dependency hygiene only"]
+    }
+  },
+  "timestamp_utc": "2026-06-15 22:43 UTC"
+}

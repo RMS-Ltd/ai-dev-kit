@@ -1,0 +1,795 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+2 0 obj
+<< /Length 2986 >>
+stream
+BT
+/F1 10 Tf
+50 800 Td
+(Kanban Completed Tasks) Tj
+0 -14 Td
+(Generated: 2026-06-15T20:05:09Z) Tj
+0 -14 Td
+(Total rows: 228) Tj
+0 -14 Td
+() Tj
+0 -14 Td
+(20 Most Recently Completed) Tj
+0 -14 Td
+(-------------------------) Tj
+0 -14 Td
+(E04:S14:T12 | 2026-06-15T20:04:56Z | v0.4.14.12+2 | MWF E04:S14:T12 delivery) Tj
+0 -14 Td
+(FR-134 SQLite ledger + UKW PDF report) Tj
+0 -14 Td
+() Tj
+0 -14 Td
+(E02:S01:T30 | 2026-06-15T20:04:09Z | v0.21.4.4+1 | import) Tj
+0 -14 Td
+(**E02:S01:T30** ? FR-122 meta-program COMPLETE: contract + gap matrix + ADR-027; Waves 0?5) Tj
+0 -14 Td
+(+ 8 gates shipped; split-brain streak **13/10** \(AC4\). **Completed:**) Tj
+0 -14 Td
+(`2026-06-10T15:56:12Z` | **Version:** `v0.2.1.30+8` | **Agent:** `RW E02:S01:T30 --art` |) Tj
+0 -14 Td
+(FR-122 | ADR-027 | ?IPP?) Tj
+0 -14 Td
+() Tj
+0 -14 Td
+(E02:S03:T09 | 2026-06-15T20:04:09Z | v0.21.4.3+1 | import) Tj
+0 -14 Td
+(**E02:S03:T09** ? MWF `delivery` recipe \(`mwf.md`, KB, registry, routing, cheatsheet �4c\).) Tj
+0 -14 Td
+(**Completed:** `2026-06-10T12:56:42Z` | **Version:** `v0.2.3.9+3` | **Agent:** `IDW) Tj
+0 -14 Td
+(E02:S03:T09 --rw` | FR-124 | ?IPP?) Tj
+0 -14 Td
+() Tj
+0 -14 Td
+(E02:S03:T10 | 2026-06-15T20:04:09Z | v0.0.0.0+0 | import) Tj
+0 -14 Td
+(**E02:S03:T10** ? Encapsulation contract, CMW/PVW command guides, registry metadata,) Tj
+0 -14 Td
+(`validate_workflow_encapsulation.py`, BR-102 sub-agent MWF orchestration. **Completed:**) Tj
+0 -14 Td
+(`2026-06-10T15:10:33Z` | **Version:** `v0.2.3.10+1` | **Agent:** `MWF E02:S03:T10) Tj
+0 -14 Td
+(delivery` | FR-126 | ?IPP?) Tj
+0 -14 Td
+() Tj
+0 -14 Td
+(E02:S03:T11 | 2026-06-15T20:04:09Z | v0.2.3.9+3 | import) Tj
+0 -14 Td
+(**E02:S03:T11** ? BR-102 fix shipped via T10 Wave 3 \(`mwf.md`, KB, cheatsheet\).) Tj
+0 -14 Td
+(**Completed:** `2026-06-10T15:10:33Z` | **Version:** `v0.2.3.10+1` | BR-102 | ?No IPP?) Tj
+0 -14 Td
+() Tj
+0 -14 Td
+(E02:S15:T14 | 2026-06-15T20:04:09Z | v0.6.9.31+1 | import) Tj
+0 -14 Td
+(**E02:S15:T14** ? Flip stamp pipeline defaults to `non_substantive`; RW Step 7 explicit) Tj
+0 -14 Td
+(mode; governance policy + tests; greenfield sync. SemVer **v0.4.1151+1**. **Completed:**) Tj
+0 -14 Td
+(`2026-06-12T09:36:32Z` | **Version:** `v0.2.15.14+1` | **Agent:** `MWF E02:S15:T14) Tj
+0 -14 Td
+(delivery` | FR-130 | ADR-029 | IPP) Tj
+0 -14 Td
+() Tj
+0 -14 Td
+(E04:S19:T13 | 2026-06-15T20:04:09Z | v0.6.9.32+1 | import) Tj
+0 -14 Td
+(**E04:S19:T13** ? **KANBAN_BOARD_TEMPLATE.md v2.2.0** from SBL attempt 06: single-line) Tj
+0 -14 Td
+(rows, V band, split Ongoing, lean board \(no epic rollup\); greenfield mirror synced. SemVer) Tj
+0 -14 Td
+(**v0.4.1143+1**. **Completed:** `2026-06-11T10:31:16Z` | **Version:** `v0.4.19.13+1` |) Tj
+0 -14 Td
+(**Agent:** `RW E04:S19:T13 --art` | UXR-028) Tj
+0 -14 Td
+() Tj
+0 -14 Td
+(E05:S08:T03 | 2026-06-15T20:04:09Z | v0.21.5.2+1 | import) Tj
+0 -14 Td
+(**E05:S08:T03** ? Big-bang Notion maintainer KB migration @ **v0.5.8.3+3** \(later) Tj
+0 -14 Td
+(superseded maintainer SoT by FR-121 T05\). FR-114 � ?IPP?) Tj
+ET
+endstream
+endobj
+3 0 obj
+<< /Type /Page /Parent 18 0 R /MediaBox [0 0 612 842] /Contents 2 0 R /Resources << /Font << /F1 1 0 R >> >> >>
+endobj
+4 0 obj
+<< /Length 2895 >>
+stream
+BT
+/F1 10 Tf
+50 800 Td
+() Tj
+0 -14 Td
+(E05:S08:T04 | 2026-06-15T20:04:09Z | v0.0.0.0+0 | import) Tj
+0 -14 Td
+(**E05:S08:T04** ? Agent Notion-first authoring + bootstrap routing @ **v0.5.8.4+2**.) Tj
+0 -14 Td
+(FR-114 � ?IPP?) Tj
+0 -14 Td
+() Tj
+0 -14 Td
+(E05:S08:T05 | 2026-06-15T20:04:09Z | v0.6.9.25+3 | import) Tj
+0 -14 Td
+(**E05:S08:T05** ? Restored 218 manifest paths from pre-stub git; `fr121-reverse-migration-) Tj
+0 -14 Td
+(manifest.json`; git SoT README. FR-121 � ?IPP?) Tj
+0 -14 Td
+() Tj
+0 -14 Td
+(E05:S08:T06 | 2026-06-15T20:04:09Z | v0.5.8.5+2 | import) Tj
+0 -14 Td
+(**E05:S08:T06** ? ADR-026 two-surface model; `P-GIT-MAINTAINER`; manifest + rw-config) Tj
+0 -14 Td
+(schema; ADR-024/FR-114 supersession banners. FR-121 � ?IPP?) Tj
+0 -14 Td
+() Tj
+0 -14 Td
+(E05:S08:T07 | 2026-06-15T20:04:09Z | v0.5.8.6+1 | import) Tj
+0 -14 Td
+(**E05:S08:T07** ? `--maintainer-editor-profile` installer flag; `documentation_surfaces` +) Tj
+0 -14 Td
+(`maintainer_editor_profile` in rw-config; Obsidian team/personal templates;) Tj
+0 -14 Td
+(`docs/maintainer/OBSIDIAN.md`. FR-121 � ?IPP?) Tj
+0 -14 Td
+() Tj
+0 -14 Td
+(E05:S09:T15 | 2026-06-15T20:04:09Z | v0.0.0.0+0 | import) Tj
+0 -14 Td
+(**E05:S09:T15** ? Docusaurus adopter-public allowlist; ADR-024; Wave 2 @ **v0.5.9.15+2**.) Tj
+0 -14 Td
+(FR-114 � ?IPP?) Tj
+0 -14 Td
+() Tj
+0 -14 Td
+(E06:S09:T04 | 2026-06-15T20:04:09Z | v0.0.0.0+0 | import) Tj
+0 -14 Td
+(**E06:S09:T04** ? **FR-098 Phase 0** ECC harness compatibility evaluation ? ? COMPLETE) Tj
+0 -14 Td
+(\(Phase 0 GO\)) Tj
+0 -14 Td
+() Tj
+0 -14 Td
+(E06:S09:T05 | 2026-06-15T20:04:09Z | v0.0.0.0+0 | import) Tj
+0 -14 Td
+(**E06:S09:T05** ? **FR-098 Phase 1** ADK ECC workflow skill pack ? ? COMPLETE) Tj
+0 -14 Td
+(\(**v0.6.9.5+3**\)) Tj
+0 -14 Td
+() Tj
+0 -14 Td
+(E06:S09:T27 | 2026-06-15T20:04:09Z | v0.2.1.30+8 | import) Tj
+0 -14 Td
+(**E06:S09:T27** ? v3.2 Small-tier catalog on `--mode fresh`; FR/BR/UXR at E04:S02?S04;) Tj
+0 -14 Td
+(SemVer **v0.4.1132+1**; unblocks SBL attempt 05. **Completed:** `2026-06-10T17:24:23Z` |) Tj
+0 -14 Td
+(**Version:** `v0.6.9.27+1` | **Agent:** `MWF E06:S09:T27 delivery` | IPP) Tj
+0 -14 Td
+() Tj
+0 -14 Td
+(E06:S09:T28 | 2026-06-15T20:04:09Z | v0.6.9.27+2 | import) Tj
+0 -14 Td
+(**E06:S09:T28** ? Contract alignment: BR-086 accepts v3.2 UXR-014 `{story:02d}` /) Tj
+0 -14 Td
+(`T{task}` patterns; resolves F18. SemVer **v0.4.1138+2**. **Completed:**) Tj
+0 -14 Td
+(`2026-06-10T19:02:02Z` | **Version:** `v0.6.9.28+2` | **Agent:** `MWF E06:S09:T28) Tj
+0 -14 Td
+(delivery` | BR-105 | IPP) Tj
+0 -14 Td
+() Tj
+0 -14 Td
+(E06:S09:T29 | 2026-06-15T20:04:09Z | v0.6.9.28+2 | import) Tj
+0 -14 Td
+(**E06:S09:T29** ? `scaffold_interactive` wiring: `--non-interactive` auto-creates) Tj
+0 -14 Td
+(CHANGELOG + version_file without stdin prompts; resolves F19. SemVer **v0.4.1139+2**.) Tj
+0 -14 Td
+(**Completed:** `2026-06-10T19:07:27Z` | **Version:** `v0.6.9.29+2` | **Agent:** `MWF) Tj
+ET
+endstream
+endobj
+5 0 obj
+<< /Type /Page /Parent 18 0 R /MediaBox [0 0 612 842] /Contents 4 0 R /Resources << /Font << /F1 1 0 R >> >> >>
+endobj
+6 0 obj
+<< /Length 5670 >>
+stream
+BT
+/F1 10 Tf
+50 800 Td
+(E06:S09:T29 delivery` | BR-106 | IPP) Tj
+0 -14 Td
+() Tj
+0 -14 Td
+(E06:S09:T30 | 2026-06-15T20:04:09Z | v0.6.9.29+2 | import) Tj
+0 -14 Td
+(**E06:S09:T30** ? Install stdout/dry-run destination hints use `kanban_paths` padded) Tj
+0 -14 Td
+(segments \(`epic-01` not `epic-1`\); resolves F21. SemVer **v0.4.1140+2**. **Completed:**) Tj
+0 -14 Td
+(`2026-06-10T19:15:18Z` | **Version:** `v0.6.9.30+2` | **Agent:** `IDW E06:S09:T30 --rw` |) Tj
+0 -14 Td
+(BR-107 | IPP) Tj
+0 -14 Td
+() Tj
+0 -14 Td
+(E06:S09:T31 | 2026-06-15T20:04:09Z | v0.6.9.32+1 | import) Tj
+0 -14 Td
+(**E06:S09:T31** ? Kanban Migration Agent \(KMA\) workflow, ADR-028, gated installer) Tj
+0 -14 Td
+(migration modes, SBL fixture + tests, INSTALL brownfield section. SemVer **v0.4.1150+1**.) Tj
+0 -14 Td
+(**Completed:** `2026-06-12T08:05:06Z` | **Version:** `v0.6.9.31+1` | **Agent:** `MWF) Tj
+0 -14 Td
+(E06:S09:T31 delivery` | FR-127 | IPP) Tj
+0 -14 Td
+() Tj
+0 -14 Td
+() Tj
+0 -14 Td
+(Full Ledger \(by E:S:T\)) Tj
+0 -14 Td
+(-------------------) Tj
+0 -14 Td
+(E01:S02:T13 | 2026-06-05T01:29:00Z | v0.1.2.13+1 | **E01:S02:T13** ? **FR-002**: README hygiene ? removed book-workspace branding from public README.) Tj
+0 -14 Td
+(E01:S02:T14 | 2026-06-04T19:57:56Z | v0.1.2.14+1 | **E01:S02:T14** ? **FR-003**: Adopter external resource dependency tracking \(guide + copy-paste templates\).) Tj
+0 -14 Td
+(E01:S04:T03 | 2026-05-26T00:00:00Z | v0.1.4.3+3 | **E01:S04:T03** ? **FR-099 Phase 0**: inventory + ADR-006 outline; E01:S04:T02 superseded; phase split **v0.1.4.3+3**.) Tj
+0 -14 Td
+(E01:S04:T04 | 2026-05-26T00:00:00Z | v0.1.4.4+1 | **E01:S04:T04** ? **FR-099 Phase 1**: privatize + rename to `RMS-Ltd/hf-ai-dev-kit`.) Tj
+0 -14 Td
+(E01:S04:T05 | 2026-05-26T12:17:16Z | v0.1.4.5+1 | **E01:S04:T05** ? **FR-099 Phase 2**: book extraction genesis on private `hf-ai-dev-kit` \(genesis RW **v0.1.4.3+1**; kan) Tj
+0 -14 Td
+(E01:S04:T06 | 2026-05-26T16:01:04Z | v0.1.4.6+2 | **E01:S04:T06** ? **FR-099 Phase 3**: public `earlution/ai-dev-kit` bootstrap \(orphan + replay from `f21bac102`\).) Tj
+0 -14 Td
+(E01:S04:T07 | 2026-05-26T16:15:00Z | v0.1.4.7+2 | **E01:S04:T07** ? **FR-099 Phase 4**: rewire install URLs + public smoke; FR-099 IMPLEMENTED.) Tj
+0 -14 Td
+(E01:S06:T01 | 2026-03-12T14:00:00Z | v0.1.6.1+1 | **E01:S06:T01** ? Set up BYOB badges for private repository) Tj
+0 -14 Td
+(E02:S01:T06 | 2026-06-05T19:15:00Z | v0.2.1.6+2 | **E02:S01:T06** ? **BR-001** validate_version_bump path/Code detection.) Tj
+0 -14 Td
+(E02:S01:T08 | 2026-05-29T00:00:00Z | v0.2.1.8+1 | **E02:S01:T08** ? **FR-024**: RW Step 9.6 IDE/linter check before commit \(story-level task\).) Tj
+0 -14 Td
+(E02:S01:T13 | 2026-04-07T15:52:33Z | v0.2.1.13+2 | **E02:S01:T13** ? **BR-063**: `RW -k` task attribution drift ? forensic-strict mismatch guard, `--art` adoption path, `v) Tj
+0 -14 Td
+(E02:S01:T18 | 2026-05-15T00:00:00Z | v0.2.1.18+1 | **E02:S01:T18** ? BR-070 AC4 post-commit verification validator implementation. Implemented `validate_rw_step7_post_comm) Tj
+0 -14 Td
+(E02:S01:T19 | 2026-05-13T13:52:05Z | v0.2.1.19+1 | **E02:S01:T19** ? **BR-071** RW trigger routing execution regression fix \(created `CLAUDE.md` + `.claude/commands/rw.md`) Tj
+0 -14 Td
+(E02:S01:T20 | 2026-05-15T00:00:00Z | v0.2.1.18+1 | **E02:S01:T20** ? BR-073 SemVer task-touch collision retrospective fix. Patched `semver-registry.yaml` to add retroactiv) Tj
+0 -14 Td
+(E02:S01:T22 | 2026-05-29T15:00:00Z | v0.2.1.22+1 | **E02:S01:T22** ? **BR-075**: perpetual RW `VERSION_BUILD` must increment in `version_file` \(validator fail-closed\).) Tj
+0 -14 Td
+(E02:S01:T23 | 2026-05-30T17:02:00Z | v0.2.1.23+1 | **E02:S01:T23** ? Tool-agnostic workflow step tracking + agent run log v1 \(ADR-011\).) Tj
+0 -14 Td
+(E02:S01:T24 | 2026-06-05T06:13:58Z | v0.2.1.24+3 | **E02:S01:T24** ? **BR-097**: RW BUILD increment enforcement + release-tag immutability \(`resolve_rw_build.py`, tag immu) Tj
+0 -14 Td
+(E02:S01:T30 | 2026-06-15T20:04:09Z | v0.21.4.4+1 | **E02:S01:T30** ? FR-122 meta-program COMPLETE: contract + gap matrix + ADR-027; Waves 0?5 + 8 gates shipped; split-brai) Tj
+0 -14 Td
+(E02:S03:T09 | 2026-06-15T20:04:09Z | v0.21.4.3+1 | **E02:S03:T09** ? MWF `delivery` recipe \(`mwf.md`, KB, registry, routing, cheatsheet �4c\). **Completed:** `2026-06-10T12) Tj
+0 -14 Td
+(E02:S03:T10 | 2026-06-15T20:04:09Z | v0.0.0.0+0 | **E02:S03:T10** ? Encapsulation contract, CMW/PVW command guides, registry metadata, `validate_workflow_encapsulation.py) Tj
+0 -14 Td
+(E02:S03:T11 | 2026-06-15T20:04:09Z | v0.2.3.9+3 | **E02:S03:T11** ? BR-102 fix shipped via T10 Wave 3 \(`mwf.md`, KB, cheatsheet\). **Completed:** `2026-06-10T15:10:33Z` | ) Tj
+0 -14 Td
+(E02:S06:T01 | 2026-05-15T00:00:00Z | v0.2.6.1+2 | **E02:S06:T01** ? FR-008 uninstall command and safety rails ? **RE-IMPLEMENTED**. Fixed broken CLI `remove` command \(`se) Tj
+0 -14 Td
+(E02:S07:T01 | 2026-06-05T03:55:22Z | v0.2.16.4+7 | **E02:S07:T01** ? **FR-013** trigger-aware RW verification closure \(parallel E04 wave merge\).) Tj
+0 -14 Td
+(E02:S07:T05 | 2026-06-05T03:55:22Z | v0.2.16.4+7 | **E02:S07:T05** ? **FR-014** RW trigger for FR/BR commits verification closure.) Tj
+0 -14 Td
+(E02:S10:T00 | 2026-06-05T03:55:22Z | v0.2.10.7+1 | **E02:S10:T00** ? **FR-017** doc-init build \(+0\) policy hardening.) Tj
+0 -14 Td
+(E02:S10:T06 | 2026-06-05T03:55:22Z | v0.2.10.7+1 | **E02:S10:T06** ? **FR-020** version validator abstract-space awareness.) Tj
+0 -14 Td
+(E02:S11:T00 | 2026-06-05T03:55:22Z | v0.2.11.12+1 | **E02:S11:T00** ? **FR-019** intake workflow automation.) Tj
+0 -14 Td
+(E02:S11:T11 | 2026-06-05T03:55:22Z | v0.2.11.11+1 | **E02:S11:T11** ? **BR-002** changelog validator ordering.) Tj
+ET
+endstream
+endobj
+7 0 obj
+<< /Type /Page /Parent 18 0 R /MediaBox [0 0 612 842] /Contents 6 0 R /Resources << /Font << /F1 1 0 R >> >> >>
+endobj
+8 0 obj
+<< /Length 7317 >>
+stream
+BT
+/F1 10 Tf
+50 800 Td
+(E02:S11:T12 | 2026-03-30T16:00:00Z | v0.2.11.12+2 | **E02:S11:T12** ? GitHub Actions intake \(**BR-053**\) ? **COMPLETE \(workaround, v0.2.11.12+2\)** ? workflow unregistered \() Tj
+0 -14 Td
+(E02:S11:T13 | 2026-06-05T19:30:00Z | v0.2.11.13+3 | **E02:S11:T13** ? **BR-051** GHA workflow spam hygiene.) Tj
+0 -14 Td
+(E02:S11:T14 | 2026-06-05T20:00:00Z | v0.2.11.14+2 | **E02:S11:T14** ? **BR-052** GHA workflow optimization.) Tj
+0 -14 Td
+(E02:S13:T02 | 2026-06-05T14:00:00Z | v0.2.13.2+1 | **E02:S13:T02** ? Workflow-mgt component inventory mapped to T01 expectations.) Tj
+0 -14 Td
+(E02:S13:T03 | 2026-06-05T05:55:07Z | v0.2.13.3+1 | **E02:S13:T03** ? Workflow-mgt behavior validation against documented guidance.) Tj
+0 -14 Td
+(E02:S13:T04 | 2026-06-05T06:01:11Z | v0.2.13.4+1 | **E02:S13:T04** ? Workflow-mgt integration and dependency alignment review.) Tj
+0 -14 Td
+(E02:S13:T05 | 2026-06-05T06:06:01Z | v0.2.13.5+1 | **E02:S13:T05** ? Workflow-mgt gap log and risk assessment \(16 gaps; conditional RC\).) Tj
+0 -14 Td
+(E02:S13:T06 | 2026-06-05T06:24:18Z | v0.2.13.6+1 | **E02:S13:T06** ? Workflow-mgt RC sign-off criteria and remediation \(DEFER; T09/T10 filed\).) Tj
+0 -14 Td
+(E02:S13:T08 | 2026-06-03T21:00:00Z | v0.2.13.8+2 | **E02:S13:T08** ? **FR-106**: Sync packaged workflows with live repo \(YAML, registry, dual-source RW/UKW parity\).) Tj
+0 -14 Td
+(E02:S13:T09 | 2026-06-05T18:30:00Z | v0.2.13.9+1 | **E02:S13:T09** ? **FR-050**: Workflows directory reorganization \(flat YAML stubs; nested SoT\).) Tj
+0 -14 Td
+(E02:S13:T10 | 2026-06-05T07:38:22Z | v0.2.13.10+1 | **E02:S13:T10** ? Kanban transform consolidation + `rw_config_loader` unification \(GAP-INTG-001/002\).) Tj
+0 -14 Td
+(E02:S14:T01 | 2026-06-05T08:02:29Z | v0.2.14.1+1 | **E02:S14:T01** ? Enumerate workflow-mgt installation paths \(19-row matrix; two-phase acquisition/configuration model\).) Tj
+0 -14 Td
+(E02:S15:T01 | 2026-06-02T12:49:39Z | v0.2.15.1+2 | **E02:S15:T01** ? **BR-066** Phase 2: bulk publication audit, validator hardening, targeted backfill \(supersedes Phase 1) Tj
+0 -14 Td
+(E02:S15:T03 | 2026-04-21T12:00:00Z | v0.2.15.3+2 | **E02:S15:T03** ? **FR-089** board-row traceability-churn hardening \(duplicate-footer dual-agreement, divergence signali) Tj
+0 -14 Td
+(E02:S15:T07 | 2026-04-27T00:00:00Z | v0.2.15.7+1 | **E02:S15:T07** ? **FR-092** canonical RW/UKW kanban consistency program \(Waves 0?8 delivered; four-surface reconciliati) Tj
+0 -14 Td
+(E02:S15:T14 | 2026-06-15T20:04:09Z | v0.6.9.31+1 | **E02:S15:T14** ? Flip stamp pipeline defaults to `non_substantive`; RW Step 7 explicit mode; governance policy + tests;) Tj
+0 -14 Td
+(E02:S16:T01 | 2026-04-27T12:34:00Z | v0.2.16.1+4 | **E02:S16:T01** ? **FR-088** establish canonical perpetual ongoing tasks story \(Story 016 ownership, scope boundaries, r) Tj
+0 -14 Td
+(E02:S16:T02 | 2026-04-20T18:20:00Z | v0.0.0.0+0 | **E02:S16:T02** ? Perpetual task inventory and classification \(IPP\).) Tj
+0 -14 Td
+(E02:S16:T07 | 2026-05-29T15:15:00Z | v0.2.16.7+1 | **E02:S16:T07** ? **FR-050**: UKW FBU temporal sync, `intake-completed` dashboard, agent docs + skill wiring.) Tj
+0 -14 Td
+(E02:S16:T11 | 2026-05-20T08:43:35Z | v0.2.16.11+1 | **E02:S16:T11** ? **FR-096**: IPW mandatory Phases 5?6 \(documentation update/create + housing\); IPP �5?�7; ten-phase `/i) Tj
+0 -14 Td
+(E02:S16:T12 | 2026-05-26T14:15:00Z | v0.2.16.12+2 | **E02:S16:T12** ? **FR-100**: IPW Phase 5.0 ADR necessity gate; policy `ipw-adr-necessity-checklist.md`; IPP �2.5; Phase) Tj
+0 -14 Td
+(E02:S16:T13 | 2026-06-03T12:00:00Z | v0.2.16.13+1 | **E02:S16:T13** ? **BR-059**: UKW MoSCOW full open-task coverage per story \(Part B.1 + validator\).) Tj
+0 -14 Td
+(E02:S16:T16 | 2026-05-30T16:30:00Z | v0.2.16.16+2 | **E02:S16:T16** ? **FR-102**: UKW archive completed \(`UKW -c`\) ? ADR-010, agent SoT, Option A prune gating.) Tj
+0 -14 Td
+(E02:S16:T17 | 2026-05-30T22:30:00Z | v0.2.16.17+2 | **E02:S16:T17** ? **FR-103**: Agent bootstrap and task routing ? ADR-012, single-step `AGENTS.md`, manifest mirror.) Tj
+0 -14 Td
+(E02:S16:T18 | 2026-06-04T22:15:00Z | v0.2.16.18+1 | **E02:S16:T18** ? **FR-109**: UKW lean active board contract ? validator, Gate 11, dual-source parity.) Tj
+0 -14 Td
+(E02:S16:T19 | 2026-06-05T15:12:49Z | v0.2.16.19+2 | **E02:S16:T19** ? RW `--dpz` short flag for doc-policy-zero \(UXR-022\): parsers, tests, cheatsheet, agent SoT.) Tj
+0 -14 Td
+(E02:S16:T20 | 2026-06-05T19:45:00Z | v0.2.16.20+2 | **E02:S16:T20** ? Restore kboard IPP segment on MoSCOW rows \(UXR-023\): normalizer, validator, corpus repair.) Tj
+0 -14 Td
+(E02:S16:T21 | 2026-06-05T15:22:51Z | v0.2.16.21+1 | **E02:S16:T21** ? RW local-default no push \(UXR-024\): agent SoT, `--push` opt-in, batch-push runbook, packaged parity.) Tj
+0 -14 Td
+(E03:S02:T12 | 2026-06-04T22:00:00Z | v0.3.2.12+4 | **E03:S02:T12** ? **FR-045** / **FR-046** / **BR-061**: Task-touch SemVer collision remediation wave 2.) Tj
+0 -14 Td
+(E04:S04:T01 | 2025-11-01T16:00:00Z | v0.11.1.1+1 | **E04:S04:T01** ? Refactor board structure) Tj
+0 -14 Td
+(E04:S05:T01 | 2025-11-05T16:00:00Z | v0.4.5.1+1 | **E04:S05:T01** ? Create canonical Epic structure) Tj
+0 -14 Td
+(E04:S07:T01 | 2026-06-05T03:38:55Z | v0.4.7.1+1 | **E04:S07:T01** ? BR-006 detection/analysis utilities for existing structures. Implemented `detect_existing_structure.py) Tj
+0 -14 Td
+(E04:S07:T02 | 2026-05-15T00:00:00Z | v0.4.7.2+1 | **E04:S07:T02** ? FR-007 migration utilities and installation modes. Implemented `migrate_structure.py` \(backups, migrat) Tj
+0 -14 Td
+(E04:S08:T07 | 2026-05-29T15:30:00Z | v0.4.8.7+1 | **E04:S08:T07** ? **FR-011**: multi-epic task split engine, CLI, intake hook, tests.) Tj
+0 -14 Td
+(E04:S09:T01 | 2026-05-15T00:00:00Z | v0.4.9.1+1 | **E04:S09:T01** ? BR-007 fix multiple kanban package installation defects. Fixed missing `Tuple` import in `analyze_stru) Tj
+0 -14 Td
+(E04:S09:T05 | 2026-05-15T00:00:00Z | v0.4.9.1+1 | **E04:S09:T05** ? BR-008 remove arbitrary 80% threshold contradicting agentic intelligence. Removed all blocking thresho) Tj
+0 -14 Td
+(E04:S09:T06 | 2026-05-15T00:00:00Z | v0.4.9.1+1 | **E04:S09:T06** ? FR-010 implement actual agentic intelligence for task mapping. Foundation implemented with extensible ) Tj
+0 -14 Td
+(E04:S10:T01 | 2026-05-15T00:00:00Z | v0.4.10.1+0 | **E04:S10:T01** ? FR-012 agentic kanban task creation from intake documents. Design document created: `agentic-fr-br-ana) Tj
+0 -14 Td
+(E04:S11:T07 | 2026-03-12T14:00:00Z | v0.4.11.7+1 | **E04:S11:T07** ? Migrate Embedded Tasks to Discrete Task Documents) Tj
+0 -14 Td
+(E04:S13:T06 | 2025-12-15T14:00:00Z | v0.4.13.6+2 | **E04:S13:T06** ? Update other affected packages \(MoSCOW board workstream\)) Tj
+0 -14 Td
+(E04:S14:T04 | 2026-06-05T03:55:22Z | v0.5.1.37+3 | **E04:S14:T04** ? **FR-037** Kanban policy task prioritisation queue stack.) Tj
+0 -14 Td
+(E04:S14:T12 | 2026-06-15T20:04:56Z | v0.4.14.12+2 | FR-134 SQLite ledger + UKW PDF report) Tj
+0 -14 Td
+(E04:S15:T05 | 2026-06-05T12:30:00Z | v0.4.15.5+1 | **E04:S15:T05** ? **FR-029** hybrid task template docs.) Tj
+0 -14 Td
+(E04:S19:T07 | 2026-06-01T18:40:00Z | v0.4.19.8+2 | **E04:S19:T07** ? FR-021 supersession \(merged into T08\).) Tj
+0 -14 Td
+(E04:S19:T08 | 2026-06-01T18:40:00Z | v0.4.19.8+2 | **E04:S19:T08** ? FR-072 Approach D D2?D4; ADR-014; merged T07/FR-021 supersession.) Tj
+ET
+endstream
+endobj
+9 0 obj
+<< /Type /Page /Parent 18 0 R /MediaBox [0 0 612 842] /Contents 8 0 R /Resources << /Font << /F1 1 0 R >> >> >>
+endobj
+10 0 obj
+<< /Length 7935 >>
+stream
+BT
+/F1 10 Tf
+50 800 Td
+(E04:S19:T10 | 2026-05-30T13:28:56Z | v0.4.19.10+2 | **E04:S19:T10** ? **BR-076**: E7:S00 abstract-only detasking; historical UXR anchors; intake S00 ban.) Tj
+0 -14 Td
+(E04:S19:T11 | 2026-06-04T23:07:14Z | v0.4.19.11+1 | **E04:S19:T11** ? **UXR-017**: Kanban epic/story path lowercase naming ? kit shipped; GH #12?#20 closed.) Tj
+0 -14 Td
+(E04:S19:T12 | 2026-06-05T01:42:57Z | v0.4.19.12+4 | **E04:S19:T12** ? **UXR-020 R3**: Single-board consolidation ? `kboard` sole active MoSCOW; `fbuboard` deprecated stub; ) Tj
+0 -14 Td
+(E04:S19:T13 | 2026-06-15T20:04:09Z | v0.6.9.32+1 | **E04:S19:T13** ? **KANBAN_BOARD_TEMPLATE.md v2.2.0** from SBL attempt 06: single-line rows, V band, split Ongoing, lean) Tj
+0 -14 Td
+(E05:S01:T31 | 2026-05-29T00:00:00Z | v0.5.1.31+0 | **E05:S01:T31** ? **FR-031**: Multi-agent coordination feasibility ? **WON'T HAVE** \(deferred off active board\).) Tj
+0 -14 Td
+(E05:S01:T34 | 2026-03-11T15:45:00Z | v0.5.1.34+1 | **E05:S01:T34** ? UKW Granular Control and Use Case Flags) Tj
+0 -14 Td
+(E05:S01:T35 | 2026-05-15T00:00:00Z | v0.5.1.35+1 | **E05:S01:T35** ? FR-035 task template cross-wiring section. Enhanced `TASK_TEMPLATE.md` with explicit `## Cross-Wiring`) Tj
+0 -14 Td
+(E05:S01:T36 | 2026-03-11T15:50:00Z | v0.5.1.36+1 | **E05:S01:T36** ? RW Update Kanban Board on Task Completion) Tj
+0 -14 Td
+(E05:S01:T37 | 2026-03-11T15:55:00Z | v0.5.1.37+3 | **E05:S01:T37** ? Kanban Policy Task Prioritisation and Queue/Stack) Tj
+0 -14 Td
+(E05:S01:T44 | 2026-06-05T05:44:26Z | v0.5.1.44+1 | **E05:S01:T44** ? **FR-044** RW temporary execution log \(incremental dual-write logging\).) Tj
+0 -14 Td
+(E05:S01:T46 | 2026-05-30T08:55:34Z | v0.5.1.46+7 | **E05:S01:T46** ? **FR-046**: Dual-version RW SemVer task-touch tagging ? closure wave audit + IPP.) Tj
+0 -14 Td
+(E05:S01:T48 | 2026-03-11T16:20:00Z | v0.5.1.48+1 | **E05:S01:T48** ? ICW Task Identifier Argument) Tj
+0 -14 Td
+(E05:S01:T49 | 2026-03-11T16:30:00Z | v0.5.1.49+2 | **E05:S01:T49** ? Enhanced kanban-completed.md with Timestamps and Recent Tasks) Tj
+0 -14 Td
+(E05:S01:T56 | 2026-05-15T00:00:00Z | v0.5.1.56+1 | **E05:S01:T56** ? FR-056 standardize packaged workflow documentation and instructions. Fixed `validate-workflow-docs.py`) Tj
+0 -14 Td
+(E05:S01:T62 | 2026-05-29T16:00:00Z | v0.5.1.62+1 | **E05:S01:T62** ? **FR-062**: install receipt JSON, release CI workflow, installer hardening \(published artifacts may fo) Tj
+0 -14 Td
+(E05:S01:T63 | 2026-03-25T16:26:47Z | v0.5.1.63+1 | **E05:S01:T63** ? RW Task Argument Requirement / FR-060 \(strict task token; `validate_rw_task_complete.py`; docs; T63 re) Tj
+0 -14 Td
+(E05:S01:T65 | 2026-03-30T10:40:14Z | v0.5.1.65+2 | **E05:S01:T65** ? Align workflow mgt README with registry count \(**11** + `workflow-registry.yaml` SoT; Specialized \(4\);) Tj
+0 -14 Td
+(E05:S01:T66 | 2026-03-30T10:48:54Z | v0.5.1.66+2 | **E05:S01:T66** ? `.cursorrules` vs packaged RW trigger parity \(parity doc; excerpt **1b/1c/1d** todos; FR citations; ro) Tj
+0 -14 Td
+(E05:S01:T67 | 2026-03-30T11:29:20Z | v0.5.1.67+2 | **E05:S01:T67** ? Adopter install docs ? mandatory **RW** + task id same message \(**FR-060**\); INSTALL + user-docs + wor) Tj
+0 -14 Td
+(E05:S01:T68 | 2026-03-30T12:15:00Z | v0.5.1.68+2 | **E05:S01:T68** ? Packaged frameworks ? `rw-config`/`scripts_path` consumer doc; packages README semver policy; numberin) Tj
+0 -14 Td
+(E05:S01:T69 | 2026-03-30T12:44:00Z | v0.5.1.69+1 | **E05:S01:T69** ? Retire **`shields`** branch \(FR-064\): delete `update-badges.yml` BYOB; README static-badge policy; `gi) Tj
+0 -14 Td
+(E05:S01:T74 | 2026-05-29T00:00:00Z | v0.5.1.74+3 | **E05:S01:T74** ? **FR-074**: Kanban intake atomic KG-R2 / semantic KG-R6 governance.) Tj
+0 -14 Td
+(E05:S01:T75 | 2026-04-01T15:46:20Z | v0.5.1.75+1 | **E05:S01:T75** ? **ICW durable planning artifacts** in repo documentation \(**FR-075**\): `specification-and-planning-art) Tj
+0 -14 Td
+(E05:S07:T01 | 2025-12-12T00:00:00Z | v0.5.7.1+1 | **E05:S07:T01** ? Policy Docs machine-readable salience section \(FR-022\): schema, template, guides, key policy updates.) Tj
+0 -14 Td
+(E05:S08:T03 | 2026-06-15T20:04:09Z | v0.21.5.2+1 | **E05:S08:T03** ? Big-bang Notion maintainer KB migration @ **v0.5.8.3+3** \(later superseded maintainer SoT by FR-121 T0) Tj
+0 -14 Td
+(E05:S08:T04 | 2026-06-15T20:04:09Z | v0.0.0.0+0 | **E05:S08:T04** ? Agent Notion-first authoring + bootstrap routing @ **v0.5.8.4+2**. FR-114 � ?IPP?) Tj
+0 -14 Td
+(E05:S08:T05 | 2026-06-15T20:04:09Z | v0.6.9.25+3 | **E05:S08:T05** ? Restored 218 manifest paths from pre-stub git; `fr121-reverse-migration-manifest.json`; git SoT README) Tj
+0 -14 Td
+(E05:S08:T06 | 2026-06-15T20:04:09Z | v0.5.8.5+2 | **E05:S08:T06** ? ADR-026 two-surface model; `P-GIT-MAINTAINER`; manifest + rw-config schema; ADR-024/FR-114 supersessio) Tj
+0 -14 Td
+(E05:S08:T07 | 2026-06-15T20:04:09Z | v0.5.8.6+1 | **E05:S08:T07** ? `--maintainer-editor-profile` installer flag; `documentation_surfaces` + `maintainer_editor_profile` i) Tj
+0 -14 Td
+(E05:S09:T01 | 2026-03-30T20:35:00Z | v0.5.9.1+2 | **E05:S09:T01** ? Docusaurus site identity \(**FR-065**\): `portal/docusaurus.config.js`, `portal/README.md`, `tests/test_) Tj
+0 -14 Td
+(E05:S09:T02 | 2026-03-30T21:45:00Z | v0.5.9.2+2 | **E05:S09:T02** ? Canonical **`docs/`** path and publish scope \(**FR-066**\): `portal/docusaurus.config.js`, `portal/READ) Tj
+0 -14 Td
+(E05:S09:T03 | 2026-03-30T22:30:00Z | v0.5.9.3+1 | **E05:S09:T03** ? Docusaurus production build corpus triage \(**FR-067**\): MDX/placeholder escapes, `onBrokenLinks`/`onBr) Tj
+0 -14 Td
+(E05:S09:T04 | 2026-03-30T15:27:28Z | v0.5.9.4+1 | **E05:S09:T04** ? Docusaurus navigation / sidebar IA / landing \(**FR-068**\): `portal/sidebars.js`, `portal/docusaurus.co) Tj
+0 -14 Td
+(E05:S09:T05 | 2026-03-30T15:52:14Z | v0.5.9.5+1 | **E05:S09:T05** ? Docusaurus CI build gate \(**FR-069**\): `.github/workflows/docusaurus-build.yml`, `tests/test_portal_fr) Tj
+0 -14 Td
+(E05:S09:T06 | 2026-03-30T16:11:41Z | v0.5.9.6+1 | **E05:S09:T06** ? Docusaurus GitHub Pages deployment \(**FR-070**\): `.github/workflows/docusaurus-deploy.yml`, portal hos) Tj
+0 -14 Td
+(E05:S09:T07 | 2026-03-30T16:59:05Z | v0.5.9.7+1 | **E05:S09:T07** ? Docusaurus site search \(**FR-071**\): `@easyops-cn/docusaurus-search-local` in `portal/docusaurus.confi) Tj
+0 -14 Td
+(E05:S09:T08 | 2026-04-01T14:30:00Z | v0.5.9.8+2 | **E05:S09:T08** ? Docusaurus **strict** broken **links** \(**`throw`**\) post?**FR-067** \(**FU-1** closed\): corpus link re) Tj
+0 -14 Td
+(E05:S09:T09 | 2026-03-31T12:10:00Z | v0.5.9.9+2 | **E05:S09:T09** ? GitHub Pages **go-live** \(**FR-070** follow-up\): `epic/5` ? **`main`**, Actions run **23796236180** gr) Tj
+0 -14 Td
+(E05:S09:T10 | 2026-04-01T15:17:58Z | v0.5.9.10+2 | **E05:S09:T10** ? Docusaurus **strict broken anchors** \(`onBrokenAnchors: 'throw'`\) post?**T08** \(**FR-067 FU-3**\): corp) Tj
+0 -14 Td
+(E05:S09:T11 | 2026-04-19T23:59:00Z | v0.5.9.11+5 | **E05:S09:T11** ? **BR-068** monorepo cross-root Markdown / MDX link resolution \(**IPW-E5S9T11** Waves **1?4**\); **`port) Tj
+0 -14 Td
+(E05:S09:T12 | 2026-06-04T14:35:00Z | v0.5.9.12+3 | **E05:S09:T12** ? **UXR-018**: Changelog directory consolidation ? retired `docs/changelog/` and knowledge mirror; singl) Tj
+0 -14 Td
+(E05:S09:T13 | 2026-06-05T00:30:47Z | v0.5.9.13+1 | **E05:S09:T13** ? **BR-090**: Docusaurus `@docusaurus/faster@3.10.1` + package.json alignment.) Tj
+0 -14 Td
+(E05:S09:T14 | 2026-06-05T00:23:30Z | v0.5.9.14+2 | **E05:S09:T14** ? **BR-093**: Docusaurus CI build/deploy deduplication ? merged workflow + artifact handoff \(ADR-017\).) Tj
+0 -14 Td
+(E05:S09:T15 | 2026-06-15T20:04:09Z | v0.0.0.0+0 | **E05:S09:T15** ? Docusaurus adopter-public allowlist; ADR-024; Wave 2 @ **v0.5.9.15+2**. FR-114 � ?IPP?) Tj
+0 -14 Td
+(E06:S01:T38 | 2026-05-13T00:00:00Z | v0.6.1.38+2 | **E06:S01:T38** ? **BR-072** UKW completed-task removal fix \(UKW definition restructured ? Part A/B separation of comple) Tj
+ET
+endstream
+endobj
+11 0 obj
+<< /Type /Page /Parent 18 0 R /MediaBox [0 0 612 842] /Contents 10 0 R /Resources << /Font << /F1 1 0 R >> >> >>
+endobj
+12 0 obj
+<< /Length 7426 >>
+stream
+BT
+/F1 10 Tf
+50 800 Td
+(E06:S06:T02 | 2026-03-11T16:45:00Z | v0.6.6.2+8 | **E06:S06:T02** ? Fix Release Workflow Micromanagement Issues) Tj
+0 -14 Td
+(E06:S06:T03 | 2026-03-11T16:00:00Z | v0.6.6.3+1 | **E06:S06:T03** ? Investigate Apple SDK License Blocking Issue) Tj
+0 -14 Td
+(E06:S06:T41 | 2026-03-11T16:05:00Z | v0.6.6.41+1 | **E06:S06:T41** ? Windsurf: Investigate how to leverage AGENTS.md and SKILL.md for workflows) Tj
+0 -14 Td
+(E06:S06:T42 | 2026-03-11T16:15:00Z | v0.6.6.41+1 | **E06:S06:T42** ? Fix UKW Agent Board Cleanup Failure) Tj
+0 -14 Td
+(E06:S06:T56 | 2026-03-25T12:55:31Z | v0.6.6.56+4 | **E06:S06:T56** ? RW ambiguous task identifier typo risk \(BR-056 verified\)) Tj
+0 -14 Td
+(E06:S06:T57 | 2026-04-02T16:00:00Z | v0.6.6.57+6 | **E06:S06:T57** ? **BR-039** **repo** implementation **COMPLETE**: traceability, evidence, **Cursor-only** maintainer po) Tj
+0 -14 Td
+(E06:S06:T63 | 2026-05-17T15:48:00Z | v0.6.6.63+2 | **E06:S06:T63** ? **BR-038** active scope: RW Recovery Journal and Rollback Contract \(`RWJournal`, `RecoveryReport`, `Ro) Tj
+0 -14 Td
+(E06:S06:T999 | 2026-03-11T16:10:00Z | v0.6.6.41+1 | **E06:S06:T999** ? Board Cleanup Test Task) Tj
+0 -14 Td
+(E06:S07:T18 | 2026-03-12T14:00:00Z | v0.6.7.18+1 | **E06:S07:T18** ? Tool-Agnostic Workflow Step Tracking + Persisted Run Logs) Tj
+0 -14 Td
+(E06:S07:T106 | 2026-03-12T11:09:00Z | v0.7.1.5+4 | **E06:S07:T106** ? Windsurf Migration: .cursorrules to Workflow Equivalents) Tj
+0 -14 Td
+(E06:S07:T107 | 2026-05-30T23:59:00Z | v0.6.7.107+3 | **E06:S07:T107** ? IDE command whitelist ? ADR-013 catalog, validator, Cursor maintainer playbook.) Tj
+0 -14 Td
+(E06:S07:T108 | 2026-03-11T17:15:00Z | v0.6.7.108+1 | **E06:S07:T108** ? UKW Extension for FR/BR/UXR Temporal Tracking and Synchronization) Tj
+0 -14 Td
+(E06:S09:T01 | 2026-04-19T17:10:00Z | v0.6.9.1+8 | **E06:S09:T01** ? **FR-080** end-to-end **greenfield** installation: spec + `install_greenfield_path.py` + INSTALL/user-) Tj
+0 -14 Td
+(E06:S09:T02 | 2026-05-29T12:30:00Z | v0.6.9.2+2 | **E06:S09:T02** ? **FR-081**: brownfield modular adoption ? INSTALL chapter, matrices, worked example, installer messagi) Tj
+0 -14 Td
+(E06:S09:T03 | 2026-05-28T17:25:00Z | v0.6.9.3+2 | **E06:S09:T03** ? **FR-082**: bootstrap public `RMS-Ltd/ai-dev-kit` + rewire canonical install/docs URLs.) Tj
+0 -14 Td
+(E06:S09:T04 | 2026-06-15T20:04:09Z | v0.0.0.0+0 | **E06:S09:T04** ? **FR-098 Phase 0** ECC harness compatibility evaluation ? ? COMPLETE \(Phase 0 GO\)) Tj
+0 -14 Td
+(E06:S09:T05 | 2026-06-15T20:04:09Z | v0.0.0.0+0 | **E06:S09:T05** ? **FR-098 Phase 1** ADK ECC workflow skill pack ? ? COMPLETE \(**v0.6.9.5+3**\)) Tj
+0 -14 Td
+(E06:S09:T06 | 2026-05-26T14:59:56Z | v0.6.9.6+3 | **E06:S09:T06** ? **FR-098 phases 2?5**: bridge validator, optional install helper, hooks/AgentShield docs, cheatsheet; ) Tj
+0 -14 Td
+(E06:S09:T07 | 2026-06-03T20:25:00Z | v0.6.9.7+2 | **E06:S09:T07** ? **BR-078**: Ship `KANBAN_STRUCTURE_TEMPLATE`; fresh install SUCCESS when board + epics.) Tj
+0 -14 Td
+(E06:S09:T09 | 2026-06-03T19:15:00Z | v0.6.9.9+2 | **E06:S09:T09** ? **BR-080**: Fresh kanban install on empty repo without `--force` \(skeleton-before-validate\).) Tj
+0 -14 Td
+(E06:S09:T10 | 2026-06-04T18:04:56Z | v0.6.9.10+2 | **E06:S09:T10** ? **BR-081**: Kanban install `datetime.utcnow\(\)` deprecation fix.) Tj
+0 -14 Td
+(E06:S09:T11 | 2026-06-03T19:19:22Z | v0.6.9.11+2 | **E06:S09:T11** ? **BR-082**: RW install PyYAML preflight \(`--check-deps`, INSTALL Step 3b\).) Tj
+0 -14 Td
+(E06:S09:T12 | 2026-06-03T19:50:30Z | v0.6.9.12+2 | **E06:S09:T12** ? **BR-083**: RW mode C kanban pattern defaults.) Tj
+0 -14 Td
+(E06:S09:T13 | 2026-06-03T19:55:09Z | v0.6.9.13+2 | **E06:S09:T13** ? **BR-084**: RW mode C `task_doc_pattern` + `fr_br_root`.) Tj
+0 -14 Td
+(E06:S09:T14 | 2026-06-06T16:34:00Z | v0.10.1.10+2 | **E06:S09:T14** ? **BR-085**: RW mode C story pattern prompt loop after fresh kanban \(`{story:03d}` validation + epic-on) Tj
+0 -14 Td
+(E06:S09:T15 | 2026-06-04T12:00:00Z | v0.6.9.15+2 | **E06:S09:T15** ? **UXR-016**: Install/setup interactive feedback shows external SemVer \(banners + telemetry; reclassifi) Tj
+0 -14 Td
+(E06:S09:T16 | 2026-06-04T23:09:08Z | v0.6.9.16+3 | **E06:S09:T16** ? **BR-086**: RW install lowercase fresh kanban patterns & sign-off ? #17 closed.) Tj
+0 -14 Td
+(E06:S09:T17 | 2026-06-04T12:53:00Z | v0.6.9.17+1 | **E06:S09:T17** ? **BR-087** wave 1: framework install directory slugs.) Tj
+0 -14 Td
+(E06:S09:T18 | 2026-06-04T16:00:30Z | v0.6.9.18+2 | **E06:S09:T18** ? **BR-087** wave 2: framework slug install closure \(registry, GitHub release\).) Tj
+0 -14 Td
+(E06:S09:T19 | 2026-06-04T17:08:38Z | v0.6.9.19+1 | **E06:S09:T19** ? **BR-088**: RW mode C `version_file` scaffold when no `src/`.) Tj
+0 -14 Td
+(E06:S09:T20 | 2026-06-04T17:32:25Z | v0.6.9.20+2 | **E06:S09:T20** ? **FR-108**: Install/setup `ADK-*` error code registry + emission + docs.) Tj
+0 -14 Td
+(E06:S09:T21 | 2026-06-05T10:00:22Z | v0.6.9.21+4 | **E06:S09:T21** ? Lean adopter distribution footprint \(`greenfield-install/` tree, sync script, CI drift guard\).) Tj
+0 -14 Td
+(E06:S09:T22 | 2026-06-05T12:00:00Z | v0.6.9.22+1 | **E06:S09:T22** ? Package documentation greenfield-install alignment \(FR-110 framework READMEs + install guides\).) Tj
+0 -14 Td
+(E06:S09:T23 | 2026-06-05T14:30:00Z | v0.6.9.23+3 | **E06:S09:T23** ? Greenfield GHCR delivery \(`ghcr.io/rms-ltd/ai-dev-kit-greenfield`, FR-110-F5 tarball, ADR-021\).) Tj
+0 -14 Td
+(E06:S09:T24 | 2026-06-05T15:30:00Z | v0.6.9.24+2 | **E06:S09:T24** ? Acquisition-layer ADK error codes \(registry 1.1.0 I05/I06, `verify_vendor_tree.py`, CLI I06, doc-sync ) Tj
+0 -14 Td
+(E06:S09:T25 | 2026-06-09T09:11:54Z | v0.6.9.25+2 | **E06:S09:T25** ? Triage matrix + greenfield orchestrator F4/F5 fix \(`resolve_frameworks_base`, `--config`, `--non-inter) Tj
+0 -14 Td
+(E06:S09:T27 | 2026-06-15T20:04:09Z | v0.2.1.30+8 | **E06:S09:T27** ? v3.2 Small-tier catalog on `--mode fresh`; FR/BR/UXR at E04:S02?S04; SemVer **v0.4.1132+1**; unblocks ) Tj
+0 -14 Td
+(E06:S09:T28 | 2026-06-15T20:04:09Z | v0.6.9.27+2 | **E06:S09:T28** ? Contract alignment: BR-086 accepts v3.2 UXR-014 `{story:02d}` / `T{task}` patterns; resolves F18. SemV) Tj
+0 -14 Td
+(E06:S09:T29 | 2026-06-15T20:04:09Z | v0.6.9.28+2 | **E06:S09:T29** ? `scaffold_interactive` wiring: `--non-interactive` auto-creates CHANGELOG + version_file without stdin) Tj
+0 -14 Td
+(E06:S09:T30 | 2026-06-15T20:04:09Z | v0.6.9.29+2 | **E06:S09:T30** ? Install stdout/dry-run destination hints use `kanban_paths` padded segments \(`epic-01` not `epic-1`\); ) Tj
+0 -14 Td
+(E06:S09:T31 | 2026-06-15T20:04:09Z | v0.6.9.32+1 | **E06:S09:T31** ? Kanban Migration Agent \(KMA\) workflow, ADR-028, gated installer migration modes, SBL fixture + tests, ) Tj
+0 -14 Td
+(E06:S09:T32 | 2026-06-15T20:04:09Z | v0.6.9.30+2 | **E06:S09:T32** ? `detect_existing_structure.py` recognises `Epic-01.md`?`Epic-09.md` legacy layouts; unit tests + green) Tj
+0 -14 Td
+(E06:S09:T34 | 2026-06-15T20:04:09Z | v0.2.15.14+1 | **E06:S09:T34** ? v3.5 fresh-install catalog \(8 epics / 15 stories / 36 tasks\), `_install_core_tasks`, fingerprint valid) Tj
+0 -14 Td
+(E06:S09:T37 | 2026-06-15T20:04:09Z | v0.6.9.34+1 | **E06:S09:T37** ? L1 default depth guide, INSTALL Migrate \(default\), COMPREHENSION template, KMA collision/megastory def) Tj
+0 -14 Td
+(E07:S01:T06 | 2026-03-16T17:00:00Z | v0.7.1.7+4 | **E07:S01:T06** ? Implement Update Changelog Workflow \(UCW\)) Tj
+ET
+endstream
+endobj
+13 0 obj
+<< /Type /Page /Parent 18 0 R /MediaBox [0 0 612 842] /Contents 12 0 R /Resources << /Font << /F1 1 0 R >> >> >>
+endobj
+14 0 obj
+<< /Length 7557 >>
+stream
+BT
+/F1 10 Tf
+50 800 Td
+(E07:S01:T07 | 2026-03-16T17:30:00Z | v0.7.1.7+4 | **E07:S01:T07** ? Markdown Maintenance Workflow \(MMW\)) Tj
+0 -14 Td
+(E07:S01:T08 | 2026-03-16T17:45:00Z | v0.7.1.8+4 | **E07:S01:T08** ? Task Doc Naming Standardization) Tj
+0 -14 Td
+(E07:S01:T09 | 2026-06-01T18:00:00Z | v0.7.1.9+5 | **E07:S01:T09** ? UXR-005 MoSCOW spacing validator, corpus pass, RW/UKW Gate 10.) Tj
+0 -14 Td
+(E07:S01:T11 | 2026-05-29T21:30:00Z | v0.7.1.11+8 | **E07:S01:T11** ? **FR-101**: Consolidate governance under `docs/governance/` \(Waves 0?F; ADR-007\).) Tj
+0 -14 Td
+(E07:S06:T03 | 2026-03-25T12:00:00Z | v0.7.6.3+1 | **E07:S06:T03** ? Kanban documentation consistency \(live SoT, E9/E18 disambiguation, cross-refs, epic-09 S05 stub\)) Tj
+0 -14 Td
+(E07:S06:T04 | 2026-03-25T14:17:31Z | v0.7.6.4+1 | **E07:S06:T04** ? Recent commit review \(last ~15 commits: RW compliance, batch scope, quality; no BR/FR filed\)) Tj
+0 -14 Td
+(E07:S06:T05 | 2026-03-25T14:25:32Z | v0.7.6.5+1 | **E07:S06:T05** ? Workflow script integrity \(ukw_syntax_parser, task_inference, orchestrator/executor; canonical_steps +) Tj
+0 -14 Td
+(E07:S06:T06 | 2026-03-25T14:30:53Z | v0.7.6.6+1 | **E07:S06:T06** ? FR/BR/UXR intake documentation quality \(aggregate doc audit; `../epics/` link fixes in nine fr-br file) Tj
+0 -14 Td
+(E07:S06:T07 | 2026-03-25T14:34:13Z | v0.7.6.7+1 | **E07:S06:T07** ? General documentation and cross-reference integrity \(README path spot-check; docs tree; fr-br `\(epics/) Tj
+0 -14 Td
+(E07:S06:T08 | 2026-03-25T15:00:00Z | v0.7.6.8+1 | **E07:S06:T08** ? Dependency and tooling audit \(setup.py vs requirements; pytest 85/92; CI `Tests` gap; BR-058; `test_va) Tj
+0 -14 Td
+(E07:S06:T09 | 2026-03-25T15:15:34Z | v0.7.6.9+1 | **E07:S06:T09** ? Config and git state validation \(rw-config path matrix; version vs branch; git baseline; `.cursorrules) Tj
+0 -14 Td
+(E07:S06:T18 | 2026-04-18T15:23:00Z | v0.7.6.18+3 | **E07:S06:T18** ? **UXR-007** interactive installer Kanban pattern / prompt clarity; publication-aligned ICW split; RW *) Tj
+0 -14 Td
+(E07:S07:T01 | 2026-06-03T20:28:00Z | v0.7.7.1+1 | **E07:S07:T01** ? **FR-107**: Workflow machinery code review report \(severity-ranked findings\).) Tj
+0 -14 Td
+(E07:S07:T03 | 2026-06-05T00:34:25Z | v0.7.7.3+1 | **E07:S07:T03** ? **BR-091**: Workflow validator slug path resolution \(`workflow-mgt` first, legacy fallback\).) Tj
+0 -14 Td
+(E08:S03:T04 | 2026-06-04T22:32:54Z | v0.8.3.4+1 | **E08:S03:T04** ? **BR-058**: Repo-wide Tests CI workflow + pytest remediation.) Tj
+0 -14 Td
+(E08:S03:T05 | 2026-06-03T15:00:00Z | v0.8.3.5+2 | **E08:S03:T05** ? **FR-104** / **BR-077**: Python 3.11+ minimum policy alignment.) Tj
+0 -14 Td
+(E08:S03:T06 | 2026-06-03T16:00:00Z | v0.8.3.6+2 | **E08:S03:T06** ? **FR-105**: Dependabot pip + portal npm, security updates, npm audit triage.) Tj
+0 -14 Td
+(E08:S03:T07 | 2026-06-04T23:51:26Z | v0.8.3.7+1 | **E08:S03:T07** ? **BR-092**: Tests CI `requests` dependency ? `setup.py` [dev] extras + `tests/requirements.txt` parity) Tj
+0 -14 Td
+(E08:S03:T08 | 2026-06-05T00:10:09Z | v0.8.3.8+1 | **E08:S03:T08** ? **BR-094**: CodeQL `git_tag_handler.py` indentation syntax fix.) Tj
+0 -14 Td
+(E08:S03:T09 | 2026-06-05T01:03:42Z | v0.8.3.9+1 | **E08:S03:T09** ? **BR-095**: CodeQL insecure `tempfile.mktemp` ? replace with `NamedTemporaryFile`.) Tj
+0 -14 Td
+(E08:S03:T10 | 2026-06-05T01:06:43Z | v0.8.3.10+1 | **E08:S03:T10** ? **BR-096**: CodeQL incomplete URL substring sanitization ? `urlparse` hostname check in portal test.) Tj
+0 -14 Td
+(E08:S03:T12 | 2026-06-07T18:06:22Z | v0.8.3.12+13 | **E08:S03:T12** ? Code Quality maintainability backlog \(BR-099\): waves 1?6 burn-down; operator dashboard **Good** @ `mai) Tj
+0 -14 Td
+(E08:S03:T13 | 2026-06-06T13:02:41Z | v0.8.3.13+4 | **E08:S03:T13** ? Code Quality reliability backlog \(BR-100\): waves 1?3 burn-down \(**133?28** open; **12** exit/quit fixe) Tj
+0 -14 Td
+(E08:S03:T14 | 2026-06-06T13:09:50Z | v0.8.3.14+5 | **E08:S03:T14** ? Code Quality AI suggestions backlog \(BR-101\): wave-1 **12/14** apply; wave-2b **AI-VENDOR-TREE** 4/4; ) Tj
+0 -14 Td
+(E08:S03:T17 | 2026-06-06T16:00:00Z | v0.8.3.17+4 | **E08:S03:T17** ? Local Code Quality Gate \(CQG\) \(FR-113\): CodeQL engine, RW Step 9 advisory validator, 6 h monitor, ADR-) Tj
+0 -14 Td
+(E08:S03:T19 | 2026-06-15T20:04:09Z | v0.2.3.10+1 | **E08:S03:T19** ? `test_stamp_evidence_gate.py` assert refactor; `pytest.ini` PytestReturnNotNoneWarning guard. **Comple) Tj
+0 -14 Td
+(E08:S04:T01 | 2026-03-12T14:00:00Z | v0.8.4.1+1 | **E08:S04:T01** ? Tooling & Automation expectations baseline) Tj
+0 -14 Td
+(E09:S01:T03 | 2026-06-04T22:15:00Z | v0.9.1.3+1 | **E09:S01:T03** ? **FR-032.3**: RC gap comparison ? T01 inventory, T02 RC=1 criteria, gap matrix report.) Tj
+0 -14 Td
+(E09:S05:T04 | 2026-05-18T00:00:00Z | v0.9.5.4+2 | **E09:S05:T04** ? UXR-011: Kanban naming hygiene and directory systematic cleanup. Systematically cleaned up naming and ) Tj
+0 -14 Td
+(E10:S01:T01 | 2026-06-06T14:45:56Z | v0.10.1.1+1 | **E10:S01:T01** ? Establish expectations baseline for Document Lifecycle package) Tj
+0 -14 Td
+(E10:S01:T02 | 2026-06-06T14:47:28Z | v0.10.1.2+1 | **E10:S01:T02** ? Inventory package components and map to expectations: companion inventory map, task doc fleshed, V1?V8) Tj
+0 -14 Td
+(E10:S01:T04 | 2026-06-06T14:48:05Z | v0.10.1.4+1 | **E10:S01:T04** ? Review integrations and dependency alignment) Tj
+0 -14 Td
+(E10:S01:T05 | 2026-06-06T14:51:20Z | v0.10.1.5+1 | **E10:S01:T05** ? Create gap log and risk assessment: 16 `GAP-DOCLIFE-*` entries consolidated from T01?T04; conditional ) Tj
+0 -14 Td
+(E10:S01:T06 | 2026-06-06T16:05:00Z | v0.10.1.6+4 | **E10:S01:T06** ? RC sign-off criteria and remediation \(**APPROVE**\).) Tj
+0 -14 Td
+(E10:S01:T07 | 2026-06-06T14:10:06Z | v0.10.1.7+1 | **E10:S01:T07** ? Coordinator orchestration plan and epic branch bootstrap: E10S01 orchestration SoT, `epic/10-doc-lifec) Tj
+0 -14 Td
+(E10:S01:T08 | 2026-06-06T15:04:48Z | v0.10.1.8+1 | **E10:S01:T08** ? Doc housekeeping workflow and scripts \(GAP-DOCLIFE-STRUCT-001/002/003\).) Tj
+0 -14 Td
+(E10:S01:T09 | 2026-06-06T15:06:47Z | v0.10.1.9+1 | **E10:S01:T09** ? Sync architecture ADR dual SoT \(GAP-DOCLIFE-INTG-001\).) Tj
+0 -14 Td
+(E10:S01:T10 | 2026-06-06T16:05:00Z | v0.10.1.10+1 | **E10:S01:T10** ? Fix DocumentLifecycleValidator \(GAP-DOCLIFE-TEST-001\).) Tj
+0 -14 Td
+(E11:S01:T01 | 2026-03-12T14:00:00Z | v0.11.1.1+1 | **E11:S01:T01** ? Debug path expectations baseline) Tj
+0 -14 Td
+(E21:S01:T01 | 2026-06-06T16:34:00Z | v0.10.1.10+2 | **E21:S01:T01** ? Add language selection prompt to template setup \(GitHub template\) ? Step 0 post-template guide + `ai-d) Tj
+0 -14 Td
+(E21:S01:T02 | 2026-06-07T10:33:49Z | v0.21.1.2+1 | **E21:S01:T02** ? Add language selection prompt to CLI tool \(`ai-dev-kit init`\) ? language-first init + `ai-dev-kit-conf) Tj
+0 -14 Td
+(E21:S01:T03 | 2026-06-07T10:43:33Z | v0.21.1.3+1 | **E21:S01:T03** ? Add language selection prompt to RW Installer \(`install_release_workflow.py`\) ? language-first install) Tj
+0 -14 Td
+(E21:S01:T04 | 2026-06-07T10:49:24Z | v0.21.1.4+1 | **E21:S01:T04** ? Create UK/US English content variants ? kanban locale manifest + 8 core templates; workflow-mgt scaffo) Tj
+0 -14 Td
+(E21:S01:T05 | 2026-06-07T10:54:27Z | v0.21.1.5+1 | **E21:S01:T05** ? Configuration read/resolve API \(`read_localisation_config`, `resolve_locale_asset`\).) Tj
+0 -14 Td
+(E21:S01:T06 | 2026-06-07T10:57:19Z | v0.21.1.6+1 | **E21:S01:T06** ? Wire RW installer scaffolds and kanban intake templates to locale manifest \(`render_locale_text`, `res) Tj
+ET
+endstream
+endobj
+15 0 obj
+<< /Type /Page /Parent 18 0 R /MediaBox [0 0 612 842] /Contents 14 0 R /Resources << /Font << /F1 1 0 R >> >> >>
+endobj
+16 0 obj
+<< /Length 3718 >>
+stream
+BT
+/F1 10 Tf
+50 800 Td
+(E21:S01:T07 | 2026-06-07T16:28:44Z | v0.21.1.7+1 | **E21:S01:T07** ? FR-006 Phase 1 E2E test suite \(`test_fr006_phase1_e2e_localisation.py` E1?E8\); E21:S01 story complete.) Tj
+0 -14 Td
+(E21:S02:T01 | 2026-06-15T20:04:09Z | v0.21.1.7+1 | **E21:S02:T01** ? i18n framework selection: evaluation matrix, ADR-024, IPP, S02:T02?T07 integration handoffs.) Tj
+0 -14 Td
+(E21:S02:T02 | 2026-06-15T20:04:09Z | v0.21.2.1+1 | **E21:S02:T02** ? Manifest v2, en-GB/en-US `keys/` catalogs, `supported_locales` registry, structure conventions policy.) Tj
+0 -14 Td
+(E21:S02:T03 | 2026-06-15T20:04:09Z | v0.21.2.2+1 | **E21:S02:T03** ? System/browser/env detection APIs; `resolve_language` precedence chain; locale-detection-conventions p) Tj
+0 -14 Td
+(E21:S02:T04 | 2026-06-15T20:04:09Z | v0.21.2.3+1 | **E21:S02:T04** ? `switch_locale`, `adk config locale`, `--locale` on init/installer, FR-006 config round-trip.) Tj
+0 -14 Td
+(E21:S02:T05 | 2026-06-15T20:04:09Z | v0.21.2.4+1 | **E21:S02:T05** ? `locale_formatting.py` Babel wrappers + stdlib fallback; `format_for_project`; locale-formatting-conve) Tj
+0 -14 Td
+(E21:S02:T06 | 2026-06-15T20:04:09Z | v0.21.2.5+1 | **E21:S02:T06** ? `resolve_locale_key`, YAML catalog cache, `prompt_language_choice` key integration; locale-key-convent) Tj
+0 -14 Td
+(E21:S02:T07 | 2026-06-15T20:04:09Z | v0.21.2.6+1 | **E21:S02:T07** ? ADR-024 fallback chain \(`language_fallback_chain`, en-US step\); locale-fallback-conventions policy.) Tj
+0 -14 Td
+(E21:S03:T05 | 2026-06-08T13:09:04Z | v0.21.3.5+1 | **E21:S03:T05** ? `validate_locale_translations.py`, `sync_locale_keys.py`, maintainer guide; `pytest -m fr006` green.) Tj
+0 -14 Td
+(E21:S03:T06 | 2026-06-15T20:04:09Z | v0.21.3.5+1 | **E21:S03:T06** ? `report_locale_completeness.py`, tier metrics, missing-translation alerts; `pytest -m fr006` green.) Tj
+0 -14 Td
+(E21:S03:T07 | 2026-06-08T14:30:00Z | v0.21.3.7+1 | **E21:S03:T07** ? `test_fr006_phase3_translation_locale_e2e.py` \(P3E1?P3E11\); parametrized scaffold-locale setup-path + ) Tj
+0 -14 Td
+(E21:S04:T01 | 2026-06-09T21:04:40Z | v0.21.4.1+1 | **E21:S04:T01** ? `locale-cultural-requirements.md` \(nine-locale matrix + recommendations\); `test_locale_cultural_requir) Tj
+0 -14 Td
+(E21:S04:T03 | 2026-06-15T20:04:09Z | v0.21.6.1+1 | **E21:S04:T03** ? `RTL_LOCALES` / `is_rtl_locale` / CLI direction-aware formatting; `locale-rtl-conventions.md`; install) Tj
+0 -14 Td
+(E21:S04:T04 | 2026-06-15T20:04:09Z | v0.8.3.19+1 | **E21:S04:T04** ? Cultural content policy, loanword glossary, directional-icon audit; pt-BR/pt-PT locale split; neutral ) Tj
+0 -14 Td
+(E21:S05:T01 | 2026-06-15T20:04:09Z | v0.21.4.1+1 | **E21:S05:T01** ? Linguistic translation of kanban + workflow-mgt `locales/es/**`; registry `linguistic_status: complete) Tj
+0 -14 Td
+(E21:S05:T02 | 2026-06-15T20:04:09Z | v0.21.5.1+1 | **E21:S05:T02** ? Linguistic translation of kanban + workflow-mgt `locales/fr/**`; registry `linguistic_status: complete) Tj
+0 -14 Td
+(E21:S06:T01 | 2026-06-15T20:04:09Z | v0.0.0.0+0 | **E21:S06:T01** ? Linguistic translation of kanban + workflow-mgt `locales/zh-CN/**`; registry `linguistic_status: compl) Tj
+0 -14 Td
+(E21:S08:T03 | 2026-06-15T20:04:09Z | v0.21.2.7+1 | **E21:S08:T03** ? Text-first `print_*`, `NO_COLOR` / `--no-color`, stderr warnings, ASCII markers; cli-accessibility-con) Tj
+0 -14 Td
+(E21:S09:T01 | 2026-06-08T10:25:52Z | v0.21.9.1+1 | **E21:S09:T01** ? FR-006 Phase 2 header sync; Epic 21 kboard visibility \(S03+/S09 admin/S08 deferred rows\); S02 story CO) Tj
+0 -14 Td
+(E21:S09:T02 | 2026-06-08T11:18:58Z | v0.21.9.2+1 | **E21:S09:T02** ? Redirect stubs for S00/mis-numbered epic-21 story paths; `kanban-structure.md` defers to `Epic-21.md`.) Tj
+ET
+endstream
+endobj
+17 0 obj
+<< /Type /Page /Parent 18 0 R /MediaBox [0 0 612 842] /Contents 16 0 R /Resources << /Font << /F1 1 0 R >> >> >>
+endobj
+18 0 obj
+<< /Type /Pages /Kids [3 0 R 5 0 R 7 0 R 9 0 R 11 0 R 13 0 R 15 0 R 17 0 R] /Count 8 >>
+endobj
+19 0 obj
+<< /Type /Catalog /Pages 18 0 R >>
+endobj
+xref
+0 20
+0000000000 65535 f 
+0000000009 00000 n 
+0000000079 00000 n 
+0000003117 00000 n 
+0000003244 00000 n 
+0000006191 00000 n 
+0000006318 00000 n 
+0000012040 00000 n 
+0000012167 00000 n 
+0000019536 00000 n 
+0000019663 00000 n 
+0000027651 00000 n 
+0000027780 00000 n 
+0000035259 00000 n 
+0000035388 00000 n 
+0000042998 00000 n 
+0000043127 00000 n 
+0000046898 00000 n 
+0000047027 00000 n 
+0000047131 00000 n 
+trailer
+<< /Size 20 /Root 19 0 R >>
+startxref
+47182
+%%EOF

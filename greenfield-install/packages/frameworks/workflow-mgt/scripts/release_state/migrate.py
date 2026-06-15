@@ -81,8 +81,10 @@ def run_migrations(conn: sqlite3.Connection) -> None:
         return
     conn.execute("BEGIN IMMEDIATE")
     try:
-        version = current_schema_version(conn)
-        if version < 2:
+        if current_schema_version(conn) >= SCHEMA_VERSION:
+            conn.execute("COMMIT")
+            return
+        if current_schema_version(conn) < 2:
             migrate_to_v2(conn)
         conn.execute("COMMIT")
     except Exception:

@@ -1,0 +1,68 @@
+{
+  "auxiliary_surfaces": {
+    "epic_doc": {
+      "changes": [],
+      "notes": ["No epic-level delta required for Wave 8 hygiene RW."],
+      "paths": ["docs/kanban/epics/epic-02/epic-02.md"],
+      "surface": "epic_doc",
+      "touched": false
+    },
+    "story_doc": {
+      "changes": [],
+      "notes": ["T05 perpetual IN PROGRESS; checklist unchanged."],
+      "paths": ["docs/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations.md"],
+      "surface": "story_doc",
+      "touched": false
+    }
+  },
+  "contract": "FR-092 / ADR-018 (RW Step 7 four-surface reconciliation)",
+  "invocation_context": "rw_step_7",
+  "release_scope": {
+    "epic": 2,
+    "story": 16,
+    "task": 5,
+    "task_id": "E02:S16:T05",
+    "version_string": "v0.2.16.5+10",
+    "art_adopted": true
+  },
+  "stamp_evidence": {
+    "manifest": "rw-e2s16t05-plus10-stamp-evidence-manifest.json",
+    "stamps_appended_with_evidence": 1,
+    "stamps_preserved_existing": 0,
+    "stamps_skipped_no_evidence": 0
+  },
+  "summary": {
+    "stamps_appended_with_evidence": 1,
+    "stamps_preserved_existing": 0,
+    "stamps_skipped_no_evidence": 0,
+    "total_changes": 4,
+    "touched_surfaces": ["task_doc", "fbu_doc", "kboard"],
+    "untouched_surfaces": []
+  },
+  "surfaces": {
+    "fbu_doc": {
+      "changes": ["BR-104 TC1 checked; status note v0.2.16.5+10"],
+      "notes": [],
+      "paths": ["docs/kanban/fr-br/BR-104-codeql-cqg-green-does-not-imply-actions-ci-green.md"],
+      "surface": "fbu_doc",
+      "touched": true
+    },
+    "kboard": {
+      "changes": ["E02:S16:T05 row version anchor v0.2.16.5+10 + Last modified stamp"],
+      "notes": [],
+      "paths": ["docs/kanban/kboard.md"],
+      "surface": "kboard",
+      "touched": true
+    },
+    "task_doc": {
+      "changes": ["Wave 8 section + version anchor v0.2.16.5+10"],
+      "notes": [],
+      "paths": [
+        "docs/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T05-github-actions-ci-health-perpetual.md"
+      ],
+      "surface": "task_doc",
+      "touched": true
+    }
+  },
+  "timestamp_utc": "2026-06-15 19:07 UTC"
+}

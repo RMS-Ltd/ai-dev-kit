@@ -3,8 +3,9 @@
 UKW -c archive-completed helpers (FR-102 / ADR-010).
 
 Row discovery and doc-status gates for agent-driven archival.
-Does not write boards or ledgers — agents use kanban_completed_update /
-fr_br_uxr_completed_update skills after evaluating candidates.
+Does not write boards or ledgers — after evaluating candidates, call
+`append_kanban_completed.py` (FR-134 SQLite ledger) then prune kboard rows.
+Legacy skill `kanban_completed_update` is retired for markdown body edits.
 """
 
 from __future__ import annotations
