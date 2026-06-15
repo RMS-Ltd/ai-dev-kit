@@ -503,12 +503,12 @@ Mature adopters face more than a greenfield vs brownfield binary. Use this selec
 1. Archive legacy PM/docs (e.g. `docs-pre-ai-dev-kit/`) — git preserves history.
 2. Lean vendor install ([FR-110](#lean-vendor-install-greenfield-install--fr-110)).
 3. [Layered install sequence](#layered-install-sequence-phase-0) (not monolithic `mode c` alone).
-4. Operator-authored target E/S tree **before** KMA.
-5. **KMA** with [DUPLICATE_EPIC_POLICY](packages/frameworks/kanban/guides/DUPLICATE_EPIC_POLICY.md) matrix — [LEGACY_KANBAN_MIGRATION](packages/frameworks/kanban/guides/LEGACY_KANBAN_MIGRATION.md).
+4. **KMA** — kit-owned first pass on archived legacy only ([`DUPLICATE_EPIC_POLICY`](packages/frameworks/kanban/guides/DUPLICATE_EPIC_POLICY.md), [`LEGACY_KANBAN_MIGRATION`](packages/frameworks/kanban/guides/LEGACY_KANBAN_MIGRATION.md)). Do **not** pre-author a target E/S tree or load a held-out reference into the KMA agent ([attempt-10 preflight](adk-install-into-sbl/attempt-10/README.md) · [#52](https://github.com/RMS-Ltd/ai-dev-kit/issues/52)).
+5. Post-KMA scoring and minimal operator tweaks (install experiments) happen **after** kit output — not as input to the first pass.
 6. Eliminate dual-tree; single canonical `kanban_root`.
 7. First RW only after Install RC + sign-off.
 
-**Exemplar:** Starborn Legacy attempt 09 — [maintainer index](adk-install-into-sbl/attempt-09/README.md).
+**Exemplars:** Starborn attempt 09 (historical operator-assisted KMA) — [attempt-09](adk-install-into-sbl/attempt-09/README.md) · attempt 10 (blind kit KMA eval) — [attempt-10](adk-install-into-sbl/attempt-10/README.md).
 
 ### Path 3 — Strangler coexist (sub-mode)
 
@@ -528,7 +528,8 @@ Target orchestrator ordering for **Path 2** (and full-stack brownfield). Orchest
 3½ documentation schema profile — [DOCUMENTATION_SCHEMA.md](docs/governance/standards/DOCUMENTATION_SCHEMA.md)
 3c UKW / cursorrules wiring
 4  kanban fresh — install_kanban_framework.py --mode fresh --catalog v4
-5  KMA — proposal sign-off before writes
+5  KMA — kit first pass on archived legacy only (no pre-authored target E/S tree)
+5b post-KMA scoring / tweaks — after kit output (install eval programmes only)
 6  sign-off + [Install RC checklist](docs/governance/standards/install-rc-checklist.md)
 7  first RW
 ```

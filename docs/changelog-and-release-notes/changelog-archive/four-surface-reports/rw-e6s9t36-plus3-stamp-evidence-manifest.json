@@ -1,0 +1,8 @@
+{
+  "rows": {
+    "E06:S09:T36": {
+      "allowed": true,
+      "reason": "RW Step 7 v0.6.9.36+3 — kboard T36 row version + Last modified (INSTALL + orchestrator blind KMA)"
+    }
+  }
+}

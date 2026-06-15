@@ -57,7 +57,8 @@ Layered install sequence (Path 2 / full-stack brownfield target):
   3½ documentation schema — DOCUMENTATION_SCHEMA.md / documentation_surfaces
   3c UKW / cursorrules wiring (manual until orchestrated)
   4  kanban fresh --catalog v4
-  5  KMA — proposal sign-off before writes
+  5  KMA — kit first pass on archived legacy only (no pre-authored target E/S tree)
+  5b post-KMA scoring / tweaks — after kit output (eval programmes only)
   6  sign-off + Install RC checklist
   7  first domain RW
 """
@@ -412,7 +413,8 @@ def main() -> int:
     print("  • Apply DOCUMENTATION_SCHEMA.md profile (documentation_surfaces in rw-config)")
     print("  • UKW / cursorrules wiring if not emitted by RW installer")
     if args.adoption_path in ("arm-b", "strangler"):
-        print("  • KMA with operator sign-off — see LEGACY_KANBAN_MIGRATION.md")
+        print("  • KMA — kit first pass on archived legacy only (no pre-authored target E/S tree)")
+        print("  • See LEGACY_KANBAN_MIGRATION.md; FR-127 proposal sign-off before writes")
         print("  • Write COMPREHENSION.md (kanban root, docs authority, restore ≠ migrate)")
 
     if args.run_install_rc:

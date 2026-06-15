@@ -11,8 +11,8 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
-## [0.6.9.36+2] - 15-06-26
+## [0.6.9.36+3] - 15-06-26
 
-E06:S09:T36 — Blind KMA evaluation protocol for SBL attempt 10 (#52): attempt-10 preflight + adopter preflight guides; held-out reference tree stays off kit KMA agent context. SemVer **v0.4.1167+2**.
+E06:S09:T36 — INSTALL Path 2 + greenfield orchestrator aligned to blind KMA protocol (kit first pass, no pre-authored target tree). SemVer **v0.4.1168+3**.
 
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.6.9.36+2.md)
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.6.9.36+3.md)
