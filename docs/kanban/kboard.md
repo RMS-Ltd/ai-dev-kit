@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Board
 
-**Last Updated:** 2026-06-15 (RW: E06:S09:T37)
-**Version:** v0.6.9.37+2
+**Last Updated:** 2026-06-15 (RW: E08:S03:T21)
+**Version:** v0.8.3.21+1
 
 **Active board contract:** **Sole active MoSCOW board** ([ADR-018](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/architecture/standards-and-adrs/ADR-018-single-kanban-board-consolidation.md)). Rows are **live work** (TODO / IN PROGRESS / OPEN / WAITING / PERPETUAL) plus filed **Could Have** backlog. **Verification (V)** band holds task-shipped / FBU-open items (`⏳ WAITING`). Remove **terminal** rows and archive prose (use [`kanban-completed.md`](kanban-completed.md) / [`intake-completed.md`](intake-completed.md)).
 
@@ -111,6 +111,8 @@ housekeeping_policy: keep
 ### Could Have (C) - Nice-to-Have Tasks
 
 - **E08:S03:T20** – README Python prerequisites alignment (UXR-026) - ⏳ SHIPPED (MEDIUM, **v0.8.3.20+1**) | [Task](epics/epic-08/story-03-automation-scripts/T20-readme-python-prerequisites-uxr026.md) | [UXR-026](fr-br/UXR-026-readme-python-prerequisites-contradicts-311-policy.md) | [FR-104](fr-br/FR-104-python-minimum-version-policy-alignment.md) | [—IPP—](../../implementation-cycles/IPP-E08S03T20-readme-python-prerequisites-uxr026.md) | Last modified: 2026-06-10 21:30 UTC
+
+- **E08:S03:T21** – CLI pytest coverage dedicated target (UXR-030) - ⏳ SHIPPED (MEDIUM, **v0.8.3.21+1**) | [Task](epics/epic-08/story-03-automation-scripts/T21-cli-pytest-coverage-dedicated-target-uxr030.md) | [UXR-030](fr-br/UXR-030-default-pytest-cli-coverage-misleading-zero-percent.md) | —No IPP— | Last modified: 2026-06-15 19:22 UTC
 
 #### Epic 21 (E21) — full inventory: backlog (11 tasks)
 

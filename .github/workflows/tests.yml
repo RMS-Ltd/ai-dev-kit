@@ -1,28 +1,37 @@
 # E08:S03:T04 / BR-058 — repo-wide pytest gate for root tests/ suite.
+# CLI coverage is opt-in via pytest-cli-cov.ini + cli-coverage job (not default addopts).
 # E02:S11:T14 / BR-052 — path filters + pip cache to skip doc-only pushes.
 name: Tests
 
 "on":
   pull_request:
     paths:
+      - "cli/**"
       - "tests/**"
       - "src/**"
       - "packages/**"
       - "pyproject.toml"
       - "setup.py"
       - "setup.cfg"
+      - "pytest.ini"
+      - "pytest-cli-cov.ini"
+      - "scripts/run_cli_pytest_coverage.sh"
       - ".github/workflows/tests.yml"
   push:
     branches:
       - main
       - dev
     paths:
+      - "cli/**"
       - "tests/**"
       - "src/**"
       - "packages/**"
       - "pyproject.toml"
       - "setup.py"
       - "setup.cfg"
+      - "pytest.ini"
+      - "pytest-cli-cov.ini"
+      - "scripts/run_cli_pytest_coverage.sh"
       - ".github/workflows/tests.yml"
 
 permissions:
@@ -51,3 +60,22 @@ jobs:
 
       - name: Run pytest
         run: python -m pytest tests/
+
+  cli-coverage:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+          cache-dependency-path: setup.py
+
+      - name: Install test dependencies
+        run: pip install -e ".[dev]"
+
+      - name: Run pytest with CLI coverage
+        run: bash scripts/run_cli_pytest_coverage.sh

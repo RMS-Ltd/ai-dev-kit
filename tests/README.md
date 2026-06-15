@@ -18,6 +18,18 @@ pip install -r tests/requirements.txt
 pytest
 ```
 
+Default `pytest.ini` does **not** enable CLI coverage (avoids misleading 0% when running portal or other non-CLI tests).
+
+### Run CLI Coverage (dedicated target)
+
+```bash
+bash scripts/run_cli_pytest_coverage.sh
+# Or:
+python -m pytest -c pytest-cli-cov.ini tests/
+```
+
+Coverage report: `htmlcov/cli/index.html`.
+
 ### Run Specific Test Files
 
 ```bash
@@ -28,11 +40,11 @@ pytest tests/test_backends.py
 
 ### Run with Coverage
 
-```bash
-pytest --cov=cli --cov-report=html
-```
+Use the dedicated CLI coverage config (not default `pytest`):
 
-Coverage report will be generated in `htmlcov/index.html`.
+```bash
+bash scripts/run_cli_pytest_coverage.sh
+```
 
 ### Run Specific Test Categories
 
@@ -109,14 +121,14 @@ Available pytest fixtures (defined in `conftest.py`):
 
 ## Continuous Integration
 
-Tests should be run in CI/CD pipelines:
+GitHub Actions [`tests.yml`](../../.github/workflows/tests.yml) runs two jobs:
+
+- **pytest** — full `tests/` suite (no coverage in default config)
+- **cli-coverage** — same suite via `scripts/run_cli_pytest_coverage.sh` with CLI coverage report
 
 ```yaml
-# Example GitHub Actions workflow
-- name: Run tests
-  run: |
-    pip install -e ".[dev]"
-    pytest --cov=cli --cov-report=xml
+- name: Run pytest with CLI coverage
+  run: bash scripts/run_cli_pytest_coverage.sh
 ```
 
 ## Coverage Goals

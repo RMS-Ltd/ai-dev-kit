@@ -11,6 +11,14 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.8.3.21+1] - 15-06-26
+
+E08:S03:T21 — CLI pytest coverage opt-in target (UXR-030); dedicated CI job; default pytest without misleading 0% CLI reports. SemVer **v0.4.1175+1**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.8.3.21+1.md)
+
+---
+
 ## [0.2.16.5+10] - 15-06-26
 
 E02:S16:T05 Wave 8 — SAA migration concurrency hardening (BR-104 TC1); Step 9.7 full-suite stable. SemVer **v0.4.1174+10**.

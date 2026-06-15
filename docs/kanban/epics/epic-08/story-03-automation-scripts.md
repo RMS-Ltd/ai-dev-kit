@@ -12,8 +12,8 @@ housekeeping_policy: keep
 **Priority:** MEDIUM  
 **Estimated Effort:** [TBD]  
 **Created:** 2025-12-05  
-**Last updated:** 2026-06-10 (v0.8.3.20+1 – E08:S03:T20 README Python prerequisites UXR-026)
-**Version:** v0.8.3.20+1
+**Last updated:** 2026-06-15 (v0.8.3.21+1 – Kanban documentation setup)
+**Version:** v0.8.3.21+1
 **Code:** E8S03
 
 ---
@@ -79,6 +79,9 @@ housekeeping_policy: keep
 
 
 - [x] **E08:S03:T20 – README Python prerequisites alignment (UXR-026)** — ✅ COMPLETE (v0.8.3.20+1) — [Task doc](story-03-automation-scripts/T20-readme-python-prerequisites-uxr026.md) | [UXR-026](../../fr-br/UXR-026-readme-python-prerequisites-contradicts-311-policy.md) | [IPP](../../../implementation-cycles/IPP-E08S03T20-readme-python-prerequisites-uxr026.md)
+
+
+- [x] **E08:S03:T21 – CLI pytest coverage dedicated target (UXR-030)** — ✅ COMPLETE (v0.8.3.21+1) — [Task doc](story-03-automation-scripts/T21-cli-pytest-coverage-dedicated-target-uxr030.md) | [UXR-030](../../fr-br/UXR-030-default-pytest-cli-coverage-misleading-zero-percent.md)
 
 ---
 

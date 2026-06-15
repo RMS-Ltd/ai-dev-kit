@@ -66,11 +66,11 @@ pip install -r tests/requirements.txt
 ### Running Tests
 
 ```bash
-# Run all tests
+# Run all tests (no CLI coverage noise on non-CLI runs)
 pytest
 
-# Run with coverage
-pytest --cov=cli --cov-report=html
+# CLI coverage (dedicated target)
+bash scripts/run_cli_pytest_coverage.sh
 
 # Run specific test file
 pytest tests/test_commands.py

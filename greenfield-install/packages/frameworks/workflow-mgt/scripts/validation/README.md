@@ -22,7 +22,7 @@ bash "packages/frameworks/workflow-mgt/scripts/validation/run_workflow_scripts_c
 | Workflow | Scope | Trigger |
 | -------- | ----- | ------- |
 | [`workflow-scripts-pytest.yml`](../../../../../../.github/workflows/workflow-scripts-pytest.yml) | Workflow Management validation corpus + curated co-located tests | Path filter: `packages/frameworks/workflow-mgt/**` |
-| [`tests.yml`](../../../../../../.github/workflows/tests.yml) | Repo-wide root `tests/` suite | Every PR + push to `main`/`dev` |
+| [`tests.yml`](../../../../../../.github/workflows/tests.yml) | Repo-wide root `tests/` suite + optional `cli-coverage` job | Path filter: `tests/**`, `cli/**`, … |
 
 **Local repo-wide pytest:**
 
@@ -30,6 +30,15 @@ bash "packages/frameworks/workflow-mgt/scripts/validation/run_workflow_scripts_c
 pip install -e ".[dev]"
 python -m pytest tests/
 ```
+
+**Local CLI coverage (opt-in):**
+
+```bash
+bash scripts/run_cli_pytest_coverage.sh
+# HTML report: htmlcov/cli/index.html
+```
+
+Default root `pytest.ini` does not enable `--cov=cli` (avoids misleading 0% when running portal or other non-CLI tests). Use `pytest-cli-cov.ini` or the runner above.
 
 ## BR-103 — tuple-return anti-pattern audit (E08:S03:T19)
 

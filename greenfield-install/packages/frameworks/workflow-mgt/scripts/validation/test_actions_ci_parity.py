@@ -38,6 +38,7 @@ def test_strict_all_lists_all_check_ids():
     ids = {c.id for c in selected}
     assert ids == {
         "tests",
+        "cli-coverage",
         "portal-publish-scope",
         "docusaurus",
         "greenfield-install",
@@ -81,6 +82,7 @@ def test_scoped_workflow_pytest_targets_only_validation_tests():
     "changed,expected",
     [
         ({"docs/guides/foo.md"}, {"portal-publish-scope"}),
+        ({"cli/main.py"}, {"cli-coverage", "tests"}),
         ({"portal/docusaurus.config.js"}, {"docusaurus"}),
         ({"src/ai_dev_kit/version.py"}, set()),
     ],

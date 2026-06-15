@@ -104,8 +104,8 @@ pip install --index-url https://test.pypi.org/simple/ ai-dev-kit
 # Run all tests
 pytest
 
-# Run with coverage
-pytest --cov=cli --cov-report=html
+# Run with CLI coverage (dedicated target)
+bash scripts/run_cli_pytest_coverage.sh
 ```
 
 ---
