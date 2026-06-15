@@ -14,8 +14,8 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** Large  
 **Created:** 2026-04-20  
-**Last updated:** 2026-06-03 (RW **v0.2.16.3+6** — BR-059 RESOLVED + corpus scan)  
-**Version anchor:** v0.2.16.3+6
+**Last updated:** 2026-06-15 (RW **v0.2.16.1+1** — portal js-yaml 4.2.0 npm override)  
+**Version anchor:** v0.2.16.1+1
 **Code:** E02S16T01
 **Task Type:** Perpetual Maintenance
 

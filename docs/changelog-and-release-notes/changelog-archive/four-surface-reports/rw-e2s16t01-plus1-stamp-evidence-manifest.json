@@ -1,0 +1,8 @@
+{
+  "rows": {
+    "E02:S16:T01": {
+      "allowed": true,
+      "reason": "RW Step 7 release-scope — portal js-yaml 4.2.0; version anchor v0.2.16.1+1"
+    }
+  }
+}

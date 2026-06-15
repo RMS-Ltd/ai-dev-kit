@@ -27,7 +27,7 @@ Active perpetual lanes: **T01** workflow umbrella · **T02** UKW/kanban hygiene 
 
 ## Task Checklist
 
-- [ ] **E02:S16:T01 – Workflow maintenance (Perpetual)** - IN PROGRESS — [Task](story-16-perpetual-ongoing-workflow-operations/T01-workflow-maintenance-perpetual.md) | [FR-088](../../fr-br/FR-088-dedicated-story-for-perpetual-ongoing-tasks.md)
+- [ ] **E02:S16:T01 – Workflow maintenance (Perpetual)** - 🔄 PERPETUAL (**v0.2.16.1+1** — portal js-yaml 4.2.0) — [Task](story-16-perpetual-ongoing-workflow-operations/T01-workflow-maintenance-perpetual.md) | [FR-088](../../fr-br/FR-088-dedicated-story-for-perpetual-ongoing-tasks.md)
 
 - [ ] **E02:S16:T02 – Ad-hoc Kanban synchronization and hygiene (Perpetual)** - 🔄 PERPETUAL (**v0.2.16.2+11** — E08:S03:T12 terminal prune; UKW -c drift repair) — [Task](story-16-perpetual-ongoing-workflow-operations/T02-ad-hoc-kanban-synchronization-and-hygiene-perpetual.md) | [FR-023](../../fr-br/FR-023-update-kanban-workflow-ukw.md)
 
