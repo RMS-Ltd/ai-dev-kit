@@ -181,12 +181,20 @@ const toc = [{
   "id": "install-error-codes-adk",
   "level": 2
 }, {
+  "value": "ADK-I01.S00",
+  "id": "adk-i01-s00",
+  "level": 3
+}, {
   "value": "ADK-I01.S01",
   "id": "adk-i01-s01",
   "level": 3
 }, {
   "value": "ADK-I01.S02",
   "id": "adk-i01-s02",
+  "level": 3
+}, {
+  "value": "ADK-I01.S03",
+  "id": "adk-i01-s03",
   "level": 3
 }, {
   "value": "ADK-I02.E01",
@@ -1782,6 +1790,31 @@ function _createMdxContent(props) {
         children: "packages/frameworks/workflow-mgt/config/install-error-codes.yaml"
       }), "."]
     }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "adk-i01-s00",
+      children: "ADK-I01.S00"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Summary:"
+      }), " Greenfield SQLite release-state init failed"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Symptom:"
+      }), " init_release_state_db.py or import_legacy.py exited non-zero during --init-sqlite orchestration."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Remediation:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Confirm rw-config release_state_backend is sqlite when using --init-sqlite."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Run init_release_state_db.py or import_legacy.py manually and capture stderr."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "See also:"
+      }), " FR-080, UXR-029"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
       id: "adk-i01-s01",
       children: "ADK-I01.S01"
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
@@ -1831,6 +1864,33 @@ function _createMdxContent(props) {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "See also:"
       }), " FR-080"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "adk-i01-s03",
+      children: "ADK-I01.S03"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Summary:"
+      }), " Install RC checklist failed"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Symptom:"
+      }), " validate_install_rc.py exited non-zero after greenfield orchestration (--run-install-rc)."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Remediation:"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Run ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "validate_install_rc.py --profile <path> --strict"
+        }), " and fix failing rows."]
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "See docs/governance/standards/install-rc-checklist.md."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "See also:"
+      }), " UXR-029"]
     }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
       id: "adk-i02-e01",
       children: "ADK-I02.E01"
