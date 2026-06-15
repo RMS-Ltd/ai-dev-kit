@@ -13,11 +13,11 @@ housekeeping_policy: keep
 **Submitted:** 2026-06-15  
 **Submitted By:** User / maintainer  
 **Priority:** MEDIUM (Could Have — MoSCOW **C**)  
-**Status:** IMPLEMENTED (v0.8.3.21+1 — E08:S03:T21)  
-**Version:** v0.8.3.21+1  
-**Implementing Task:** [E08:S03:T21](../epics/epic-08/story-03-automation-scripts/T21-cli-pytest-coverage-dedicated-target-uxr030.md)
+**Status:** IMPLEMENTED (v0.8.3.21+1 — E08:S03:T21); **Wave 2:** IMPLEMENTED (v0.8.3.22+1 — E08:S03:T22)  
+**Version:** v0.8.3.21+1 (Wave 1)  
+**Implementing Task:** [E08:S03:T21](../epics/epic-08/story-03-automation-scripts/T21-cli-pytest-coverage-dedicated-target-uxr030.md) (Wave 1) · [E08:S03:T22](../epics/epic-08/story-03-automation-scripts/T22-pytest-warning-cleanup-uxr030-wave2.md) (Wave 2)
 
-**Related:** [E08:S03:T04](../epics/epic-08/story-03-automation-scripts/T04-ci-test-workflow-pytest-remediation-br058.md) · [E08:S03:T19](../epics/epic-08/story-03-automation-scripts/T19-workflow-scripts-pytest-tuple-return-false-green-br103.md) · [BR-058](BR-058-ci-test-workflow-missing-and-pytest-failures.md)
+**Related:** [E08:S03:T04](../epics/epic-08/story-03-automation-scripts/T04-ci-test-workflow-pytest-remediation-br058.md) · [E08:S03:T19](../epics/epic-08/story-03-automation-scripts/T19-workflow-scripts-pytest-tuple-return-false-green-br103.md) · [BR-058](BR-058-ci-test-workflow-missing-and-pytest-failures.md) · [BR-081](BR-081-kanban-install-datetime-utcnow-deprecated.md) · [BR-103](BR-103-workflow-scripts-pytest-tuple-return-false-green.md)
 
 ---
 
@@ -104,6 +104,31 @@ Workflow-scripts pytest uses an **isolated** `pytest.ini` without root coverage 
 - Epic: E08 — Tooling & Automation
 - Story: E08:S03 — Automation Scripts
 - Task: E08:S03:T21 — CLI pytest coverage dedicated target (UXR-030)
+
+**Wave 2 intake (2026-06-15):** Task **E08:S03:T22** — pytest warning cleanup.
+
+---
+
+## Wave 2 — Pytest warning noise (2026-06-15)
+
+**Follow-on task:** [E08:S03:T22](../epics/epic-08/story-03-automation-scripts/T22-pytest-warning-cleanup-uxr030-wave2.md)  
+**Planning:** [IPP-E08S03T22](../../implementation-cycles/IPP-E08S03T22-pytest-warning-cleanup-uxr030-wave2.md)
+
+After Wave 1, a full-suite run (`921 passed, 8 skipped, 46 warnings`) still produces warning clutter that erodes operator trust.
+
+### Finding 4: `cli/logging.py` uses deprecated `datetime.utcnow()` (Severity: Medium)
+
+~43 DeprecationWarnings on Python 3.14 during install-logging tests. Same class as [BR-081](BR-081-kanban-install-datetime-utcnow-deprecated.md).
+
+### Finding 5: `tests/test_rw_performance.py` script-style returns (Severity: Medium)
+
+Three `test_*` functions return `tuple`/`bool` → `PytestReturnNotNoneWarning`. Same anti-pattern as [BR-103](BR-103-workflow-scripts-pytest-tuple-return-false-green.md).
+
+### Wave 2 acceptance criteria (E08:S03:T22)
+
+- [x] Zero `utcnow` DeprecationWarnings from `cli/logging.py` on full suite.
+- [x] Zero `PytestReturnNotNoneWarning` from `tests/test_rw_performance.py`.
+- [x] UXR-030 ↔ E08:S03:T22 bidirectional links; board row on RW.
 
 ---
 

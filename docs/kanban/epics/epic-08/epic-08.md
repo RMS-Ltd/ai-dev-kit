@@ -12,7 +12,7 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** Medium  
 **Created:** 2025-12-05  
-**Last updated:** 2026-06-15 (v0.8.3.21+1 – Kanban documentation setup)
+**Last updated:** 2026-06-15 (v0.8.3.22+1 – E08:S03:T22 pytest warning cleanup UXR-030 Wave 2)
 **Branch:** `epic/8-tooling-automation`  
 **Version Schema:** `0.8.S.T+B`  
 **Production URL:** [N/A for this repo]
@@ -28,7 +28,7 @@ housekeeping_policy: keep
   - Story: [`story-02-additional-validators.md`](story-02-additional-validators.md)
 
 
-- [ ] **E8:S03 – Automation Scripts** - IN PROGRESS (v0.8.3.21+1 – T21 CLI pytest coverage UXR-030)
+- [ ] **E8:S03 – Automation Scripts** - IN PROGRESS (v0.8.3.22+1 – T22 pytest warning cleanup UXR-030 Wave 2)
   - Story: [`story-03-automation-scripts.md`](story-03-automation-scripts.md)
 
 

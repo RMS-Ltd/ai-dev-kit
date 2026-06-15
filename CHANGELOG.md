@@ -11,6 +11,14 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.8.3.22+1] - 15-06-26
+
+E08:S03:T22 — Pytest warning cleanup (UXR-030 Wave 2): utcnow fix in cli/logging; assert refactor test_rw_performance. SemVer **v0.4.1176+1**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.8.3.22+1.md)
+
+---
+
 ## [0.8.3.21+1] - 15-06-26
 
 E08:S03:T21 — CLI pytest coverage opt-in target (UXR-030); dedicated CI job; default pytest without misleading 0% CLI reports. SemVer **v0.4.1175+1**.

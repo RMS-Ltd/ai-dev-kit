@@ -1,6 +1,6 @@
 # KB Index
 
-**Generated:** 2026-06-15 19:24:47 UTC  
+**Generated:** 2026-06-15 19:33:21 UTC  
 **Scope:** /Users/ruari/Projects/ai-dev-kit/docs  
 **Total files:** 3313  
 **Total size:** 15.50 MB

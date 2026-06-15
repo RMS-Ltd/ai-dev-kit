@@ -12,8 +12,8 @@ housekeeping_policy: keep
 **Priority:** MEDIUM  
 **Estimated Effort:** [TBD]  
 **Created:** 2025-12-05  
-**Last updated:** 2026-06-15 (v0.8.3.21+1 – Kanban documentation setup)
-**Version:** v0.8.3.21+1
+**Last updated:** 2026-06-15 (v0.8.3.22+1 – E08:S03:T22 pytest warning cleanup UXR-030 Wave 2)
+**Version:** v0.8.3.22+1
 **Code:** E8S03
 
 ---
@@ -82,6 +82,9 @@ housekeeping_policy: keep
 
 
 - [x] **E08:S03:T21 – CLI pytest coverage dedicated target (UXR-030)** — ✅ COMPLETE (v0.8.3.21+1) — [Task doc](story-03-automation-scripts/T21-cli-pytest-coverage-dedicated-target-uxr030.md) | [UXR-030](../../fr-br/UXR-030-default-pytest-cli-coverage-misleading-zero-percent.md)
+
+
+- [x] **E08:S03:T22 – Pytest warning cleanup (UXR-030 Wave 2)** — ✅ COMPLETE (v0.8.3.22+1) — [Task doc](story-03-automation-scripts/T22-pytest-warning-cleanup-uxr030-wave2.md) | [UXR-030](../../fr-br/UXR-030-default-pytest-cli-coverage-misleading-zero-percent.md) | [IPP](../../../implementation-cycles/IPP-E08S03T22-pytest-warning-cleanup-uxr030-wave2.md)
 
 ---
 

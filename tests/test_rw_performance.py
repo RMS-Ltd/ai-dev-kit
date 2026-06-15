@@ -25,133 +25,101 @@ def run_command(cmd, cwd=None):
         execution_time = end_time - start_time
         return False, "", str(e), execution_time
 
+
+def _kanban_init_run():
+    """Run kanban_init and return success, stdout, stderr, execution time."""
+    cmd = (
+        f'{sys.executable} "packages/frameworks/workflow-mgt/scripts/update_kanban_docs.py" '
+        "--mode kanban_init"
+    )
+    return run_command(cmd)
+
+
 def test_kanban_init_performance():
     """Test kanban_init mode performance target."""
-    print("🧪 Testing kanban_init performance...")
-    
-    cmd = 'python "packages/frameworks/workflow-mgt/scripts/update_kanban_docs.py" --mode kanban_init'
-    success, stdout, stderr, exec_time = run_command(cmd)
-    
-    print(f"⏱️  Execution time: {exec_time:.3f} seconds")
-    print(f"✅ Success: {success}")
-    
-    if success:
-        print("📊 Performance: PASS - Well under 2-minute target")
-        if exec_time < 5:
-            print("🚀 Excellent: Under 5 seconds")
-        elif exec_time < 30:
-            print("⚡ Good: Under 30 seconds")
-        else:
-            print("⚠️  Slow: Over 30 seconds")
-    else:
-        print("❌ Performance: FAIL - Script failed")
-        print(f"Error: {stderr}")
-    
-    return success, exec_time
+    success, _stdout, stderr, exec_time = _kanban_init_run()
+    assert success, f"kanban_init failed: {stderr}"
+    assert exec_time < 300, f"kanban_init took {exec_time:.3f}s (expected under 5 minutes)"
+
 
 def test_pattern_matching_fix():
-    """Test that pattern matching issues are resolved."""
-    print("\n🧪 Testing pattern matching fixes...")
-    
-    cmd = 'python "packages/frameworks/workflow-mgt/scripts/update_kanban_docs.py" --mode kanban_init'
-    success, stdout, stderr, exec_time = run_command(cmd)
-    
-    # Check for successful story doc discovery
-    if "Story doc:" in stdout and "docs/kanban/epics/Epic-6/Story-006-feature-requests.md" in stdout:
-        print("✅ Pattern matching: PASS - Story doc found correctly")
-        pattern_success = True
-    else:
-        print("❌ Pattern matching: FAIL - Story doc not found")
-        pattern_success = False
-    
-    # Check for successful updates
-    if "Successfully made" in stdout and "changes" in stdout:
-        print("✅ Updates: PASS - Documents updated successfully")
-        update_success = True
-    else:
-        print("❌ Updates: FAIL - Documents not updated")
-        update_success = False
-    
-    return success and pattern_success and update_success
+    """Test that kanban_init discovers story docs and applies updates."""
+    success, stdout, stderr, _exec_time = _kanban_init_run()
+    assert success, f"kanban_init failed: {stderr}"
+    assert "Story doc:" in stdout, "Story doc discovery line missing from output"
+    assert "story-" in stdout.lower() or "epic-" in stdout.lower(), (
+        "Expected lowercase epic/story path in story doc line"
+    )
+    assert "Successfully made" in stdout and "changes" in stdout
+
 
 def test_error_recovery():
-    """Test error recovery and fallback mechanisms."""
-    print("\n🧪 Testing error recovery...")
-    
-    # Test with a non-existent story to trigger fallback
-    cmd = 'python "packages/frameworks/workflow-mgt/scripts/update_kanban_docs.py" --mode kanban_init --version-file /tmp/nonexistent_version.py'
-    success, stdout, stderr, exec_time = run_command(cmd)
-    
-    if "Attempting manual discovery" in stdout or "Suggestion:" in stdout:
-        print("✅ Error recovery: PASS - Fallback mechanisms triggered")
-        recovery_success = True
-    else:
-        print("⚠️  Error recovery: UNKNOWN - Could not validate fallback behavior")
-        recovery_success = None
-    
-    return recovery_success
+    """Test explicit failure when version file path is invalid."""
+    cmd = (
+        f'{sys.executable} "packages/frameworks/workflow-mgt/scripts/update_kanban_docs.py" '
+        "--mode kanban_init --version-file /tmp/nonexistent_version.py"
+    )
+    success, stdout, stderr, _exec_time = run_command(cmd)
+    combined = f"{stdout}\n{stderr}"
+    assert not success, "kanban_init should fail for missing version file"
+    assert "Version file not found" in combined
+
 
 def test_continuous_execution():
     """Test that script runs continuously without stopping."""
-    print("\n🧪 Testing continuous execution...")
-    
-    cmd = 'python "packages/frameworks/workflow-mgt/scripts/update_kanban_docs.py" --mode kanban_init'
-    success, stdout, stderr, exec_time = run_command(cmd)
-    
-    # Check that it completed without requiring user input
-    if success and exec_time < 300:  # Under 5 minutes indicates no user intervention
-        print("✅ Continuous execution: PASS - Completed without user intervention")
-        continuous_success = True
-    else:
-        print("❌ Continuous execution: FAIL - Required user intervention or took too long")
-        continuous_success = False
-    
-    return continuous_success
+    success, _stdout, _stderr, exec_time = _kanban_init_run()
+    assert success, "kanban_init did not complete successfully"
+    assert exec_time < 300, f"kanban_init took {exec_time:.3f}s (possible user intervention)"
+
 
 def main():
     """Run all performance and reliability tests."""
     print("🚀 E6S06T02 Release Workflow Performance Test Suite")
     print("=" * 60)
-    
+
     project_root = Path.cwd()
     print(f"📁 Project root: {project_root}")
-    
-    # Run tests
+
     results = {}
-    
-    # Test 1: Performance
-    perf_success, perf_time = test_kanban_init_performance()
-    results['performance'] = perf_success
-    
-    # Test 2: Pattern Matching
-    pattern_success = test_pattern_matching_fix()
-    results['pattern_matching'] = pattern_success
-    
-    # Test 3: Error Recovery
-    recovery_success = test_error_recovery()
-    results['error_recovery'] = recovery_success
-    
-    # Test 4: Continuous Execution
-    continuous_success = test_continuous_execution()
-    results['continuous_execution'] = continuous_success
-    
-    # Summary
+
+    try:
+        test_kanban_init_performance()
+        results["performance"] = True
+    except AssertionError:
+        results["performance"] = False
+
+    try:
+        test_pattern_matching_fix()
+        results["pattern_matching"] = True
+    except AssertionError:
+        results["pattern_matching"] = False
+
+    try:
+        test_error_recovery()
+        results["error_recovery"] = True
+    except AssertionError:
+        results["error_recovery"] = False
+
+    try:
+        test_continuous_execution()
+        results["continuous_execution"] = True
+    except AssertionError:
+        results["continuous_execution"] = False
+
     print("\n" + "=" * 60)
     print("📊 TEST RESULTS SUMMARY")
     print("=" * 60)
-    
+
     for test_name, result in results.items():
-        status = "✅ PASS" if result is True else "❌ FAIL" if result is False else "⚠️  UNKNOWN"
+        status = "✅ PASS" if result is True else "❌ FAIL"
         print(f"{test_name.replace('_', ' ').title()}: {status}")
-    
-    # Overall assessment
+
     passed = sum(1 for r in results.values() if r is True)
     failed = sum(1 for r in results.values() if r is False)
-    unknown = sum(1 for r in results.values() if r is None)
     total = len(results)
-    
-    print(f"\n🎯 Overall: {passed}/{total} passed, {failed} failed, {unknown} unknown")
-    
+
+    print(f"\n🎯 Overall: {passed}/{total} passed, {failed} failed")
+
     if failed == 0:
         print("🎉 ALL CRITICAL TESTS PASSED!")
         print("✅ Release Workflow micromanagement issues have been resolved")
@@ -159,8 +127,9 @@ def main():
         print("✅ Ready for production use")
     else:
         print("⚠️  Some tests failed - review results above")
-    
+
     return 0 if failed == 0 else 1
+
 
 if __name__ == "__main__":
     sys.exit(main())
