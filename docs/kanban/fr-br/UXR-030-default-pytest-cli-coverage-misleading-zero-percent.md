@@ -13,7 +13,7 @@ housekeeping_policy: keep
 **Submitted:** 2026-06-15  
 **Submitted By:** User / maintainer  
 **Priority:** MEDIUM (Could Have — MoSCOW **C**)  
-**Status:** IMPLEMENTED (v0.8.3.21+1 — E08:S03:T21); **Wave 2:** IMPLEMENTED (v0.8.3.22+1 — E08:S03:T22)  
+**Status:** IMPLEMENTED (v0.8.3.21+1 — E08:S03:T21); **Wave 2:** IMPLEMENTED (v0.8.3.22+2 — E08:S03:T22)  
 **Version:** v0.8.3.21+1 (Wave 1)  
 **Implementing Task:** [E08:S03:T21](../epics/epic-08/story-03-automation-scripts/T21-cli-pytest-coverage-dedicated-target-uxr030.md) (Wave 1) · [E08:S03:T22](../epics/epic-08/story-03-automation-scripts/T22-pytest-warning-cleanup-uxr030-wave2.md) (Wave 2)
 
@@ -124,10 +124,15 @@ After Wave 1, a full-suite run (`921 passed, 8 skipped, 46 warnings`) still prod
 
 Three `test_*` functions return `tuple`/`bool` → `PytestReturnNotNoneWarning`. Same anti-pattern as [BR-103](BR-103-workflow-scripts-pytest-tuple-return-false-green.md).
 
+### Finding 6: `update_kanban_docs.py` board stamp uses `utcnow()` (Severity: Low)
+
+One DeprecationWarning per full suite from four-surface report / board stamp paths (L1737, L2473). Same class as [BR-081](BR-081-kanban-install-datetime-utcnow-deprecated.md). Addressed in T22 follow-on BUILD.
+
 ### Wave 2 acceptance criteria (E08:S03:T22)
 
 - [x] Zero `utcnow` DeprecationWarnings from `cli/logging.py` on full suite.
 - [x] Zero `PytestReturnNotNoneWarning` from `tests/test_rw_performance.py`.
+- [x] Zero `utcnow` DeprecationWarnings from `update_kanban_docs.py` on full suite.
 - [x] UXR-030 ↔ E08:S03:T22 bidirectional links; board row on RW.
 
 ---

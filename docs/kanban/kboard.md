@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Board
 
-**Last Updated:** 2026-06-15 (RW: E04:S14:T12)
-**Version:** v0.4.14.12+2
+**Last Updated:** 2026-06-15 (RW: E02:S16:T05)
+**Version:** v0.2.16.5+11
 
 **Active board contract:** **Sole active MoSCOW board** ([ADR-018](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/architecture/standards-and-adrs/ADR-018-single-kanban-board-consolidation.md)). Rows are **live work** (TODO / IN PROGRESS / OPEN / WAITING / PERPETUAL) plus filed **Could Have** backlog. **Verification (V)** band holds task-shipped / FBU-open items (`⏳ WAITING`). Remove **terminal** rows and archive prose (use [`kanban-completed.md`](kanban-completed.md) / [`intake-completed.md`](intake-completed.md)).
 
@@ -114,7 +114,7 @@ housekeeping_policy: keep
 
 - **E08:S03:T21** – CLI pytest coverage dedicated target (UXR-030) - ⏳ SHIPPED (MEDIUM, **v0.8.3.21+1**) | [Task](epics/epic-08/story-03-automation-scripts/T21-cli-pytest-coverage-dedicated-target-uxr030.md) | [UXR-030](fr-br/UXR-030-default-pytest-cli-coverage-misleading-zero-percent.md) | —No IPP— | Last modified: 2026-06-15 19:22 UTC
 
-- **E08:S03:T22** – Pytest warning cleanup (UXR-030 Wave 2) - ⏳ SHIPPED (MEDIUM, **v0.8.3.22+1**) | [Task](epics/epic-08/story-03-automation-scripts/T22-pytest-warning-cleanup-uxr030-wave2.md) | [UXR-030](fr-br/UXR-030-default-pytest-cli-coverage-misleading-zero-percent.md) | [—IPP—](../../implementation-cycles/IPP-E08S03T22-pytest-warning-cleanup-uxr030-wave2.md) | Last modified: 2026-06-15 19:44 UTC
+- **E08:S03:T22** – Pytest warning cleanup (UXR-030 Wave 2) - ⏳ SHIPPED (MEDIUM, **v0.8.3.22+2**) | [Task](epics/epic-08/story-03-automation-scripts/T22-pytest-warning-cleanup-uxr030-wave2.md) | [UXR-030](fr-br/UXR-030-default-pytest-cli-coverage-misleading-zero-percent.md) | [—IPP—](../../implementation-cycles/IPP-E08S03T22-pytest-warning-cleanup-uxr030-wave2.md) | Last modified: 2026-06-15 19:44 UTC
 
 #### Epic 21 (E21) — full inventory: backlog (11 tasks)
 

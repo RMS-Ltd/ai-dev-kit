@@ -28,7 +28,7 @@ import os
 import re
 import sys
 from dataclasses import dataclass, field
-from datetime import datetime
+from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any, Dict, List, Optional, Tuple
 
@@ -36,6 +36,11 @@ _KANBAN_SCRIPT_DIR = Path(__file__).resolve().parent / "kanban"
 if str(_KANBAN_SCRIPT_DIR) not in sys.path:
     sys.path.insert(0, str(_KANBAN_SCRIPT_DIR))
 from est_format import format_est_reference  # noqa: E402
+
+
+def _board_stamp_utc() -> str:
+    """UTC board/report stamp (BR-081 timezone-aware pattern)."""
+    return datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
 
 # Recovery playbooks for common error scenarios (Step 16-17 from T01 analysis)
 RECOVERY_PLAYBOOKS = {
@@ -1151,7 +1156,6 @@ def update_kanban_board(
         return False, [f"Error reading board: {e}"]
     
     # Update board metadata
-    from datetime import datetime
     today = datetime.now().strftime("%Y-%m-%d")
     version_string = target_state['version_string']
     
@@ -1734,7 +1738,7 @@ def run_corpus_canonical_sweep(
         project_root / "docs/kanban/kboard.md",
         ]
     if timestamp_value is None:
-        timestamp_value = datetime.utcnow().strftime("%Y-%m-%d %H:%M UTC")
+        timestamp_value = _board_stamp_utc()
 
     changes: List[str] = []
     aggregate_stamp_evidence: Dict[str, int] = {
@@ -2470,7 +2474,7 @@ def build_four_surface_report(
       - `stamps_skipped_no_evidence`
       - `stamps_preserved_existing`
     """
-    timestamp_utc = datetime.utcnow().strftime("%Y-%m-%d %H:%M UTC")
+    timestamp_utc = _board_stamp_utc()
     report = FourSurfaceReport(
         invocation_context=invocation_context,
         epic=epic,

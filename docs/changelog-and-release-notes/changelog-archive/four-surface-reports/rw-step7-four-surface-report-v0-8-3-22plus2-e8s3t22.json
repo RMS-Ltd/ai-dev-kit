@@ -1,0 +1,96 @@
+{
+  "auxiliary_surfaces": {
+    "epic_doc": {
+      "changes": [
+        "Updated Epic Last updated: 2026-06-15 (v0.8.3.22+2 – T22 update_kanban_docs utcnow follow-on)"
+      ],
+      "notes": [],
+      "paths": [
+        "/Users/ruari/Projects/ai-dev-kit/docs/kanban/epics/epic-08/epic-08.md"
+      ],
+      "surface": "epic_doc",
+      "touched": true
+    },
+    "story_doc": {
+      "changes": [
+        "Updated T22 checklist to v0.8.3.22+2",
+        "Updated story Last updated / Version markers"
+      ],
+      "notes": [],
+      "paths": [
+        "/Users/ruari/Projects/ai-dev-kit/docs/kanban/epics/epic-08/story-03-automation-scripts.md"
+      ],
+      "surface": "story_doc",
+      "touched": true
+    },
+    "uncategorized": {
+      "changes": [
+        "Updated IPP-E08S03T22 verification section",
+        "Updated UXR-030 Wave 2 Finding 6 closure"
+      ],
+      "notes": [],
+      "paths": [],
+      "surface": "uncategorized",
+      "touched": true
+    }
+  },
+  "contract": "FR-092 / ADR-018 (RW Step 7 three-surface reconciliation)",
+  "invocation_context": "rw_step_7",
+  "release_scope": {
+    "epic": 8,
+    "story": 3,
+    "task": 22,
+    "task_id": "E8:S3:T22",
+    "version_string": "v0.8.3.22+2",
+    "art_adopted": true
+  },
+  "stamp_evidence": {},
+  "summary": {
+    "stamps_appended_with_evidence": 0,
+    "stamps_preserved_existing": 1,
+    "stamps_skipped_no_evidence": 0,
+    "total_changes": 8,
+    "touched_surfaces": [
+      "task_doc",
+      "fbu_doc",
+      "kboard"
+    ],
+    "untouched_surfaces": []
+  },
+  "surfaces": {
+    "fbu_doc": {
+      "changes": [
+        "UXR-030 Wave 2 status v0.8.3.22+2; Finding 6 closed; AC update_kanban_docs checked"
+      ],
+      "notes": [],
+      "paths": [
+        "/Users/ruari/Projects/ai-dev-kit/docs/kanban/fr-br/UXR-030-default-pytest-cli-coverage-misleading-zero-percent.md"
+      ],
+      "surface": "fbu_doc",
+      "touched": true
+    },
+    "kboard": {
+      "changes": [
+        "E08:S03:T22 row version v0.8.3.22+2 (SHIPPED); stamp preserved per FR-097"
+      ],
+      "notes": [],
+      "paths": [
+        "/Users/ruari/Projects/ai-dev-kit/docs/kanban/kboard.md"
+      ],
+      "surface": "kboard",
+      "touched": true
+    },
+    "task_doc": {
+      "changes": [
+        "Status COMPLETE v0.8.3.22+2; AC5 checked; scope extended for update_kanban_docs.py"
+      ],
+      "notes": [],
+      "paths": [
+        "/Users/ruari/Projects/ai-dev-kit/docs/kanban/epics/epic-08/story-03-automation-scripts/T22-pytest-warning-cleanup-uxr030-wave2.md"
+      ],
+      "surface": "task_doc",
+      "touched": true
+    }
+  },
+  "timestamp_utc": "2026-06-15 20:43 UTC"
+}
