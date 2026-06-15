@@ -14,8 +14,8 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** Medium (ongoing)  
 **Created:** 2026-06-05  
-**Last updated:** 2026-06-15 (Wave 7 burn-down @ v0.2.16.6+12)  
-**Version Anchor:** v0.2.16.6+12  
+**Last updated:** 2026-06-16 (Wave 8 Dependabot @ v0.2.16.6+13)  
+**Version Anchor:** v0.2.16.6+13  
 **Code:** E02S16T06  
 **Task Type:** Perpetual Maintenance
 
@@ -500,6 +500,26 @@ After `dev` merges to `main` and CodeQL re-scans:
 
 ---
 
+## Wave 8 remediation (shipped @ v0.2.16.6+13)
+
+**Theme:** [Dependabot](https://github.com/RMS-Ltd/ai-dev-kit/security/dependabot) cross-lane hygiene — **2** open alerts @ operator capture (2026-06-16).
+
+| Alert | Package | Severity | Fix |
+| ----- | ------- | -------- | --- |
+| #7 | `ws` | High (CVE-2026-48779) | `"webpack-bundle-analyzer": { "ws": "7.5.11" }` npm override |
+| #8 | `js-yaml` | Medium | Retain top-level `"js-yaml": "4.2.0"` override (patched ≥4.2.0) |
+
+| Verification | Result |
+| ------------ | ------ |
+| `npm run build` (portal) | **SUCCESS** |
+| `npm ls ws` | `webpack-bundle-analyzer` → **7.5.11**; `webpack-dev-server` → **8.21.0** |
+| `RW E02:S16:T06 --art` | **v0.2.16.6+13** |
+| Operator Dependabot dashboard (TC38) | **Pending** post-merge |
+
+**Scope note:** Dependabot enablement policy → **E08:S03:T06** (FR-105); alert remediation shipped under FR-112 perpetual security hygiene.
+
+---
+
 ## Coordination matrix (T12–T17 vs T16)
 
 | Task | Surface | Status | T16 may remediate? |
@@ -536,6 +556,7 @@ After `dev` merges to `main` and CodeQL re-scans:
 - [x] **AC17 (Wave 6a):** Wave 6 manifest **12** M + **2** R @ `55f4310e`; TC25 superseded; shipped **v0.2.16.6+10**.
 - [x] **AC18 (Wave 6b):** Reliability-first + maintainability burn-down shipped **v0.2.16.6+11**; pytest/greenfield/CQG/CI parity green; operator TC36 verify **closed partial** (Wave 7).
 - [x] **AC19 (Wave 7):** Maintainability burn-down of **4** findings shipped **v0.2.16.6+12**; ruff/pytest/greenfield green; operator TC37 verify **pending**.
+- [x] **AC20 (Wave 8):** Dependabot hygiene — `ws@7.5.11` override + `js-yaml@4.2.0` retained; portal build green; shipped **v0.2.16.6+13**; operator TC38 Dependabot verify **pending**.
 
 ---
 

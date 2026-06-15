@@ -11,15 +11,15 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
-## [0.2.16.1+1] - 15-06-26
+## [0.2.16.6+13] - 16-06-26
 
-E02:S16:T01 — portal `js-yaml` override to 4.2.0 (npm dependency hygiene). SemVer **v0.4.1181+1**.
+E02:S16:T06 Wave 8 — Dependabot hygiene: portal `ws` override **7.5.11** (CVE-2026-48779); retain `js-yaml@4.2.0`. SemVer **v0.4.1182+13**.
 
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.16.1+1.md)
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.16.6+13.md)
 
 ---
 
-## [0.8.3.22+2] - 15-06-26
+## [0.2.16.1+1] - 15-06-26
 
 E08:S03:T22 follow-on — `update_kanban_docs.py` timezone-aware board stamps (UXR-030 Wave 2). SemVer **v0.4.1180+2**.
 
