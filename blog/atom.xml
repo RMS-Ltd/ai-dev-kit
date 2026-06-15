@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://rms-ltd.github.io/ai-dev-kit/blog</id>
     <title>AI Dev Kit Blog</title>
-    <updated>2026-06-15T22:33:11.000Z</updated>
+    <updated>2026-06-15T23:20:36.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://rms-ltd.github.io/ai-dev-kit/blog"/>
     <subtitle>AI Dev Kit Blog</subtitle>
@@ -11,7 +11,7 @@
         <title type="html"><![CDATA[Significant release notes policy (RC ≥ 1)]]></title>
         <id>https://rms-ltd.github.io/ai-dev-kit/blog/RELEASE-NOTES-POLICY</id>
         <link href="https://rms-ltd.github.io/ai-dev-kit/blog/RELEASE-NOTES-POLICY"/>
-        <updated>2026-06-15T22:33:11.000Z</updated>
+        <updated>2026-06-15T23:20:36.000Z</updated>
         <summary type="html"><![CDATA[{/ truncate /}]]></summary>
         <content type="html"><![CDATA[
 <p><strong>Status:</strong> Scaffold — no curated posts until first RC public milestone.<br>
