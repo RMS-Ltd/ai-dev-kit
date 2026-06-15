@@ -13,7 +13,7 @@ housekeeping_policy: keep
 **Submitted:** 2026-06-10  
 **Priority:** HIGH  
 **Severity:** HIGH — red **Tests** on `main` while CodeQL workflows report success  
-**Status:** IN PROGRESS (fix shipped **v0.2.16.5+7**; operator Actions verify pending)  
+**Status:** IN PROGRESS (TC1 shipped **v0.2.16.5+10**; TC7 operator Actions verify pending)  
 **Implementing Task:** [E02:S16:T05](../epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T05-github-actions-ci-health-perpetual.md)
 
 ---
@@ -57,7 +57,7 @@ Operators and automation can treat **green CodeQL / Code Quality** GitHub workfl
 
 ## Acceptance criteria
 
-- [ ] TC1: Parallel migration test stable (50+ threads)
+- [x] TC1: Parallel migration test stable under full Step 9.7 suite (**v0.2.16.5+10** — per-DB init lock + in-transaction version re-check)
 - [ ] TC2–TC4: Parity validator strict/skip behavior
 - [ ] TC6: Remote validator blocks when Tests red on branch HEAD
 - [ ] TC7: Required workflows green on `main`/`dev` post-fix

@@ -11,6 +11,14 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.2.16.5+10] - 15-06-26
+
+E02:S16:T05 Wave 8 — SAA migration concurrency hardening (BR-104 TC1); Step 9.7 full-suite stable. SemVer **v0.4.1174+10**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.16.5+10.md)
+
+---
+
 ## [0.6.9.37+2] - 15-06-26
 
 FR-133 painless Arm B migration workflow: L1 default depth guide, INSTALL Migrate (default), COMPREHENSION template, KMA defaults. SemVer **v0.4.1173+2**.
