@@ -38,7 +38,7 @@ Establish **two perpetual maintenance lanes** under **E02:S16** (T05/T06) so rec
 
 ### Functional
 
-- [x] **FR-112:F1** — Perpetual task **E02:S16:T05** owns [GitHub Actions](https://github.com/RMS-Ltd/ai-dev-kit/actions) workflow health (Wave 4 @ pending RW — Step 9.7 hardening + remote no-red-ship; [BR-104](BR-104-codeql-cqg-green-does-not-imply-actions-ci-green.md)).
+- [x] **FR-112:F1** — Perpetual task **E02:S16:T05** owns [GitHub Actions](https://github.com/RMS-Ltd/ai-dev-kit/actions) workflow health (Wave 4 Step 9.7 hardening + remote no-red-ship; [BR-104](BR-104-codeql-cqg-green-does-not-imply-actions-ci-green.md) **FIXED** @ **v0.2.16.5+11**).
 - [x] **FR-112:F2** — Perpetual task **E08:S03:T16** owns [code scanning](https://github.com/RMS-Ltd/ai-dev-kit/security/code-scanning) and [code quality](https://github.com/RMS-Ltd/ai-dev-kit/security/quality) ongoing hygiene (re-scans, routine waves, dismiss/verify). Wave 0 baseline @ v0.8.3.16+1.
 - [ ] **FR-112:F3** — Both tasks carry `Task Type: Perpetual Maintenance` and explicit scope boundaries (including handoff from T12–T14).
 - [x] **FR-112:F4** — Story 003 checklist and `kboard.md` **Ongoing (O)** band wired bidirectionally.

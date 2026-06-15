@@ -11,6 +11,14 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.2.16.5+11] - 15-06-26
+
+E02:S16:T05 Wave 9 — BR-104 FIXED (TC2–TC7 reconciled; Actions verified on dev/main). SemVer **v0.4.1179+11**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.16.5+11.md)
+
+---
+
 ## [0.4.14.12+2] - 15-06-26
 
 E04:S14:T12 — FR-134 SQLite kanban-completed ledger + UKW PDF report (MWF delivery). SemVer **v0.4.1178+2**.

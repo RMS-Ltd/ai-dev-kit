@@ -13,7 +13,8 @@ housekeeping_policy: keep
 **Submitted:** 2026-06-10  
 **Priority:** HIGH  
 **Severity:** HIGH — red **Tests** on `main` while CodeQL workflows report success  
-**Status:** IN PROGRESS (TC1 shipped **v0.2.16.5+10**; TC7 operator Actions verify pending)  
+**Status:** FIXED ✅  
+**Closed:** 2026-06-15 — **v0.2.16.5+11** (Wave 9 docs RW). Operator verified [GitHub Actions](https://github.com/RMS-Ltd/ai-dev-kit/actions) green on `dev`/`main` for required triggered workflows post–Wave 8 (`v0.2.16.5+10`).  
 **Implementing Task:** [E02:S16:T05](../epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T05-github-actions-ci-health-perpetual.md)
 
 ---
@@ -58,10 +59,10 @@ Operators and automation can treat **green CodeQL / Code Quality** GitHub workfl
 ## Acceptance criteria
 
 - [x] TC1: Parallel migration test stable under full Step 9.7 suite (**v0.2.16.5+10** — per-DB init lock + in-transaction version re-check)
-- [ ] TC2–TC4: Parity validator strict/skip behavior
-- [ ] TC6: Remote validator blocks when Tests red on branch HEAD
-- [ ] TC7: Required workflows green on `main`/`dev` post-fix
-- [ ] BR linked from T05, FR-112, IPP-E02S16T05
+- [x] TC2–TC4: Parity validator strict/skip behavior (**v0.2.16.5+7** — Wave 4; `validate_actions_ci_parity.py` + unit tests)
+- [x] TC6: Remote validator blocks when Tests red on branch HEAD (**v0.2.16.5+7** — `validate_github_actions_remote.py` + mock `gh` tests)
+- [x] TC7: Required workflows green on `main`/`dev` post-fix (**v0.2.16.5+11** — `dev` @ `1c48ba58`, Wave 8 @ `d20a91ab`; Docusaurus path-filter advisory on non-portal HEAD)
+- [x] BR linked from T05, FR-112, IPP-E02S16T05
 
 ---
 

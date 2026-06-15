@@ -11,7 +11,7 @@
 
 **A comprehensive toolkit for AI-assisted development workflows**
 
-**Version (SemVer):** `v0.4.1178+2` | **Internal:** `v0.4.14.12+2` (E04:S14:T12 FR-134 SQLite completed ledger) | **Last Updated:** 2026-06-15
+**Version (SemVer):** `v0.4.1179+11` | **Internal:** `v0.2.16.5+11` (E02:S16:T05 BR-104 closure) | **Last Updated:** 2026-06-15
 
 [Features](#features) • [Installation](#getting-started) • [Install in Your Project](INSTALL_IN_YOUR_PROJECT.md) • [Documentation](docs/documentation) • **Browsing docs (published site):** [https://rms-ltd.github.io/ai-dev-kit/](https://rms-ltd.github.io/ai-dev-kit/) • [Workflows](#workflows) • [Report Bug](https://github.com/RMS-Ltd/ai-dev-kit/issues) • [Request Feature](https://github.com/RMS-Ltd/ai-dev-kit/issues)
 

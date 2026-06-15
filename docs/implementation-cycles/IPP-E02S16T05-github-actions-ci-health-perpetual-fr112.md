@@ -128,7 +128,7 @@ Close the operator gap where **CodeQL/Code Quality workflows pass on GitHub whil
 
 ## 7. Success / verification criteria
 
-- [ ] Tests workflow **success** on `main` and `dev` (TC7 — pending post-push)
+- [x] Tests workflow **success** on `main` and `dev` (TC7 — verified **v0.2.16.5+11**; `dev` @ `1c48ba58`, Wave 8 @ `d20a91ab`)
 - [x] `--strict` cannot silently skip all parity checks (TC2)
 - [x] Remote GH check in batch-push runbook (TC6)
 - [x] IPP bidirectionally linked from T05 + kboard

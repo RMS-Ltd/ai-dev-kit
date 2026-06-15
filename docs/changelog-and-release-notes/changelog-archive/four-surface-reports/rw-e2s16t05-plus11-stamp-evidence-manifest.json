@@ -1,0 +1,8 @@
+{
+  "rows": {
+    "E02:S16:T05": {
+      "allowed": true,
+      "reason": "RW Step 7 docs-only — BR-104 closure; version anchor v0.2.16.5+11"
+    }
+  }
+}
