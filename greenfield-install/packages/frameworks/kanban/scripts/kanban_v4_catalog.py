@@ -6,7 +6,7 @@ Ratified: docs/knowledge/analysis/kanban-v2/13-v4-three-tier-catalogue.md
 
 from __future__ import annotations
 
-from dataclasses import dataclass, field
+from dataclasses import dataclass
 from pathlib import Path
 from typing import Dict, List, Optional, Tuple
 

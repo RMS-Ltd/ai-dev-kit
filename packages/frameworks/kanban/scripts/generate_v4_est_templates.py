@@ -59,14 +59,14 @@ def _narrative_purpose(epic: EpicRecord) -> str:
         )
     if epic.epic_num == GOLD_EPIC:
         return (
-            f"For **{{PROJECT_NAME}}**, **E07 SEC** owns the **repository security baseline** — "
-            f"policies and automated hooks on **{{REPO_ROOT}}** — not product login (**E14 AUTH**) "
-            f"or regulatory compliance (**E15 COMPLY**)."
+            "For **{PROJECT_NAME}**, **E07 SEC** owns the **repository security baseline** — "
+            "policies and automated hooks on **{REPO_ROOT}** — not product login (**E14 AUTH**) "
+            "or regulatory compliance (**E15 COMPLY**)."
         )
     if epic.epic_num == 15:
         return (
-            f"For **{{PROJECT_NAME}}**, **E15 COMPLY** owns **product and process compliance** "
-            f"under **{{REGULATORY_REGIME}}** — not repo security (**E07 SEC**)."
+            "For **{PROJECT_NAME}**, **E15 COMPLY** owns **product and process compliance** "
+            "under **{REGULATORY_REGIME}** — not repo security (**E07 SEC**)."
         )
     return (
         f"For **{{PROJECT_NAME}}**, **E{epic.epic_num:02d} {epic.short_tag}** ({epic.display_title}) "
@@ -88,10 +88,10 @@ def _narrative_overview_epic(epic: EpicRecord) -> str:
 def _story_summary(epic: EpicRecord, story: StoryRecord) -> str:
     if (epic.epic_num, story.story_num) == GOLD_STORY:
         return (
-            f"When **{{PROJECT_NAME}}** processes personal data under **{{REGULATORY_REGIME}}**, "
-            f"this story implements **product-facing privacy controls**: consent capture, subject "
-            f"export/delete paths, and privacy-by-design review gates before release. Repo secret "
-            f"scanning remains **E07 SEC**; processor contracts live in **E15:S03**."
+            "When **{PROJECT_NAME}** processes personal data under **{REGULATORY_REGIME}**, "
+            "this story implements **product-facing privacy controls**: consent capture, subject "
+            "export/delete paths, and privacy-by-design review gates before release. Repo secret "
+            "scanning remains **E07 SEC**; processor contracts live in **E15:S03**."
         )
     tokens = " ".join(story.placeholder_tokens)
     return (

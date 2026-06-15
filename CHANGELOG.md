@@ -11,8 +11,8 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
-## [0.2.16.5+9] - 15-06-26
+## [0.2.16.6+12] - 15-06-26
 
-E02:S16:T05 — Registry-sourced MDX fix for ADK-I01.S03; regenerated install error appendix (Tests + Docusaurus aligned). SemVer **v0.4.1170+9**.
+E02:S16:T06 — Wave 7 Code Quality maintainability burn-down (4 standard findings). SemVer **v0.4.1171+12**.
 
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.16.5+9.md)
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.16.6+12.md)
