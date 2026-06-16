@@ -35,22 +35,21 @@ if (source === patched) {
   process.exit(0);
 }
 
+function toErrorMessage(err) {
+  if (err instanceof Error) return err.message;
+  if (typeof err === 'string') return err;
+  try {
+    return JSON.stringify(err) || String(err);
+  } catch (_) {
+    return String(err);
+  }
+}
+
 try {
   fs.writeFileSync(enginesPath, patched);
   console.log('patched gray-matter/lib/engines.js for js-yaml@4.x');
 } catch (err) {
-  const errorMessage =
-    err instanceof Error
-      ? err.message
-      : typeof err === 'string'
-        ? err
-        : (() => {
-            try {
-              return JSON.stringify(err) || String(err);
-            } catch (_) {
-              return String(err);
-            }
-          })();
+  const errorMessage = toErrorMessage(err);
 
   console.error(
     `Failed to patch gray-matter/lib/engines.js at ${enginesPath}: ${errorMessage}. ` +
