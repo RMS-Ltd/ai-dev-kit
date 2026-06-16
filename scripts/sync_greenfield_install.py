@@ -292,8 +292,10 @@ def _resolve_current_semver_core() -> str:
         check=False,
     )
     if result.returncode != 0:
+        stderr_msg = (result.stderr or "").strip()
+        stdout_msg = (result.stdout or "").strip()
         raise RuntimeError(
-            f"Failed to resolve SemVer for {internal}: {(result.stderr or result.stdout).strip()}"
+            f"Failed to resolve SemVer for {internal}. stderr: {stderr_msg}, stdout: {stdout_msg}"
         )
     return result.stdout.strip().split("+", 1)[0]
 
