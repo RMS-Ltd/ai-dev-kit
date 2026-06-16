@@ -60,26 +60,26 @@ Lookup: [framework-dependency-troubleshooting-guide.md](https://github.com/RMS-L
 Release tarballs ship with a matching `.sha256` sidecar on [GitHub Releases](https://github.com/RMS-Ltd/ai-dev-kit/releases). Verify before extract:
 
 ```bash
-gh release download v0.4.1063 --repo RMS-Ltd/ai-dev-kit \\
-  -p 'greenfield-install-v0.4.1063.tar.gz' \\
-  -p 'greenfield-install-v0.4.1063.tar.gz.sha256' -D /tmp/adk-dl
-shasum -a 256 -c /tmp/adk-dl/greenfield-install-v0.4.1063.tar.gz.sha256
-# Expected: greenfield-install-v0.4.1063.tar.gz: OK
+gh release download v{semver} --repo RMS-Ltd/ai-dev-kit \\
+  -p 'greenfield-install-v{semver}.tar.gz' \\
+  -p 'greenfield-install-v{semver}.tar.gz.sha256' -D /tmp/adk-dl
+shasum -a 256 -c /tmp/adk-dl/greenfield-install-v{semver}.tar.gz.sha256
+# Expected: greenfield-install-v{semver}.tar.gz: OK
 ```
 
-Pin `v0.4.1063` SHA-256: `d7519a0642b572eece67c20b05ace026f742b91caf9a07f9901fe39a17423131`
+Pin the SHA-256 from `greenfield-install-v{semver}.tar.gz.sha256` (release sidecar).
 
 ## Update upstream
 
-- **Submodule / sparse checkout:** `cd vendor/ai-dev-kit && git fetch --tags && git checkout tags/v0.4.1063` (see [releases](https://github.com/RMS-Ltd/ai-dev-kit/releases)).
+- **Submodule / sparse checkout:** `cd vendor/ai-dev-kit && git fetch --tags && git checkout tags/v{semver}` (see [releases](https://github.com/RMS-Ltd/ai-dev-kit/releases)).
 - **Copy refresh:** re-copy this tree from a tagged `greenfield-install/` export or verified `greenfield-install-v{semver}.tar.gz` on [releases](https://github.com/RMS-Ltd/ai-dev-kit/releases).
 - **GitHub Container Registry (alternate):** when submodules are blocked, pull the lean image and copy `/opt/adk/` into `vendor/ai-dev-kit/` (same bytes as this tree; [ADR-021](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/architecture/standards-and-adrs/ADR-021-greenfield-install-ghcr-delivery-channel.md)):
 
   ```bash
-  # Replace v0.4.1063 with the external SemVer core you are pinning.
-  docker pull ghcr.io/rms-ltd/ai-dev-kit-greenfield:v0.4.1063
+  # Replace v{semver} with the external SemVer core you are pinning.
+  docker pull ghcr.io/rms-ltd/ai-dev-kit-greenfield:v{semver}
   mkdir -p vendor/ai-dev-kit
-  cid=$(docker create ghcr.io/rms-ltd/ai-dev-kit-greenfield:v0.4.1063)
+  cid=$(docker create ghcr.io/rms-ltd/ai-dev-kit-greenfield:v{semver})
   docker cp "$cid:/opt/adk/." vendor/ai-dev-kit/
   docker rm "$cid"
   ```
@@ -241,8 +241,67 @@ def _copy_tree(src: Path, dest: Path, ignore_globs: List[str]) -> int:
     return len(rel_paths)
 
 
+def _resolve_internal_version() -> str:
+    """Read current internal version from configured version.py."""
+    version_file = REPO_ROOT / "src" / "ai_dev_kit" / "version.py"
+    config_path = REPO_ROOT / "rw-config.yaml"
+    if config_path.exists() and yaml is not None:
+        raw: Dict[str, Any] = yaml.safe_load(config_path.read_text(encoding="utf-8")) or {}
+        configured = raw.get("version_file")
+        if isinstance(configured, str) and configured.strip():
+            version_file = REPO_ROOT / configured.strip()
+    content = version_file.read_text(encoding="utf-8")
+    for line in content.splitlines():
+        line = line.strip()
+        if line.startswith("VERSION_STRING") and '"' in line:
+            candidate = line.split('"')[1]
+            if "{" not in candidate:
+                return candidate
+    values: Dict[str, int] = {}
+    for key in ("VERSION_RC", "VERSION_EPIC", "VERSION_STORY", "VERSION_TASK", "VERSION_BUILD"):
+        for line in content.splitlines():
+            line = line.strip()
+            if line.startswith(f"{key} ="):
+                values[key] = int(line.split("=", 1)[1].strip())
+                break
+    return (
+        f"{values['VERSION_RC']}."
+        f"{values['VERSION_EPIC']}."
+        f"{values['VERSION_STORY']}."
+        f"{values['VERSION_TASK']}+{values['VERSION_BUILD']}"
+    )
+
+
+def _resolve_current_semver_core() -> str:
+    """Convert internal version to outward SemVer and strip +BUILD."""
+    internal = _resolve_internal_version()
+    converter = (
+        REPO_ROOT
+        / "packages"
+        / "frameworks"
+        / "workflow-mgt"
+        / "scripts"
+        / "version"
+        / "semver_converter.py"
+    )
+    result = subprocess.run(
+        ["python3", str(converter), internal],
+        cwd=REPO_ROOT,
+        capture_output=True,
+        text=True,
+        check=False,
+    )
+    if result.returncode != 0:
+        raise RuntimeError(
+            f"Failed to resolve SemVer for {internal}: {(result.stderr or result.stdout).strip()}"
+        )
+    return result.stdout.strip().split("+", 1)[0]
+
+
 def _write_readme(dest_root: Path) -> None:
-    (dest_root / "README.md").write_text(README_TEMPLATE.strip() + "\n", encoding="utf-8")
+    semver = _resolve_current_semver_core()
+    content = README_TEMPLATE.format(semver=semver)
+    (dest_root / "README.md").write_text(content.strip() + "\n", encoding="utf-8")
 
 
 def _write_footprint(dest_root: Path, manifest: Manifest) -> None:

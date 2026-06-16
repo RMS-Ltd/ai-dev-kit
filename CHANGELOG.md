@@ -11,6 +11,14 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.2.16.6+15] - 16-06-26
+
+E02:S16:T06 follow-on — greenfield installer README pins now auto-track current SemVer during sync. SemVer **v0.4.1184+15**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.16.6+15.md)
+
+---
+
 ## [0.2.16.6+14] - 16-06-26
 
 E02:S16:T06 Wave 8b — Complete js-yaml **4.2.0** (gray-matter override + postinstall patch); Dependabot alert #8. SemVer **v0.4.1183+14**.

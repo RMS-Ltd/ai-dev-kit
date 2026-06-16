@@ -11,8 +11,8 @@ housekeeping_policy: keep
 **Status:** IN PROGRESS
 **Priority:** HIGH  
 **Created:** 2026-04-20  
-**Last updated:** 2026-06-15 (v0.2.16.6+12 – Wave 7 Code Quality hygiene)
-**Version:** v0.2.16.6+12
+**Last updated:** 2026-06-16 (v0.2.16.6+15 – Kanban documentation setup)
+**Version:** v0.2.16.6+15
 **Code:** E2S16
 
 ---
