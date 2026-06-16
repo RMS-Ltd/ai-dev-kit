@@ -12,8 +12,8 @@ housekeeping_policy: keep
 **Priority:** MEDIUM  
 **Estimated Effort:** [TBD]  
 **Created:** 2025-12-05  
-**Last updated:** 2026-06-15 (v0.8.3.22+2 – T22 update_kanban_docs utcnow follow-on)
-**Version:** v0.8.3.22+2
+**Last updated:** 2026-06-16 (v0.8.3.23+1 – Kanban documentation setup)
+**Version:** v0.8.3.23+1
 **Code:** E8S03
 
 ---
@@ -85,6 +85,9 @@ housekeeping_policy: keep
 
 
 - [x] **E08:S03:T22 – Pytest warning cleanup (UXR-030 Wave 2)** — ✅ COMPLETE (v0.8.3.22+2) — [Task doc](story-03-automation-scripts/T22-pytest-warning-cleanup-uxr030-wave2.md) | [UXR-030](../../fr-br/UXR-030-default-pytest-cli-coverage-misleading-zero-percent.md) | [IPP](../../../implementation-cycles/IPP-E08S03T22-pytest-warning-cleanup-uxr030-wave2.md)
+
+
+- [ ] **E08:S03:T23 – Greenfield sync autofix CI hardening (BR-109)** — TODO — [Task doc](story-03-automation-scripts/T23-greenfield-sync-autofix-ci-hardening-br109.md) | [BR-109](../../fr-br/BR-109-greenfield-autofix-dual-tree-sync-drift-recurring-ci-failures.md)
 
 ---
 

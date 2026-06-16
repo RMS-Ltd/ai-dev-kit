@@ -11,6 +11,14 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.8.3.23+1] - 16-06-26
+
+Kanban documentation setup (RW `-k`) for **BR-109** — greenfield autofix dual-tree sync drift; atomic intake **E08:S03:T23**. SemVer **v0.4.1186+1**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.8.3.23+1.md)
+
+---
+
 ## [0.2.16.6+16] - 16-06-26
 
 E02:S16:T06 follow-on — greenfield sync version parsing hardening + post-release autofix merges. SemVer **v0.4.1185+16**.

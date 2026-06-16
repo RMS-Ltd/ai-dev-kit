@@ -158,6 +158,7 @@ ai-dev-kit/                          # maintainer repo (full corpus)
 - [FR-081](FR-081-brownfield-modular-adopter-integration.md) — brownfield modular adoption
 - [FR-082](FR-082-installation-distribution-canonical-repo-alignment.md) — canonical repo coordinates
 - [FR-099](FR-099-spin-off-book-epic-to-private-repository.md) — book split clarifies what stays public
+- [BR-109](BR-109-greenfield-autofix-dual-tree-sync-drift-recurring-ci-failures.md) — autofix PR single-tree edits vs dual-tree sync (E08:S03:T23)
 - [ADR-003](../../architecture/standards-and-adrs/ADR-003-greenfield-vs-brownfield-adoption.md) — adoption policy anchor
 - [INSTALL_IN_YOUR_PROJECT.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/INSTALL_IN_YOUR_PROJECT.md)
 
