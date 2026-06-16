@@ -5,31 +5,47 @@ from __future__ import annotations
 import concurrent.futures
 import math
 import os
-import sys
 import time
 from pathlib import Path
 
 import pytest
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
-SCRIPTS = REPO_ROOT / "packages/frameworks/workflow-mgt/scripts"
-sys.path.insert(0, str(SCRIPTS))
-
-from release_state.allocate import (  # noqa: E402
-    PreviewNotAllowed,
-    allocate,
-    audit,
-    lookup,
-    lookup_or_raise,
-    parse_internal_version,
-)
-from release_state.import_legacy import import_registry_yaml  # noqa: E402
-
 FIXTURE_YAML = REPO_ROOT / "tests/fixtures/semver-registry-mini.yaml"
 
 
 @pytest.fixture
 def saa_db(tmp_path):
+    import sys
+
+    scripts = REPO_ROOT / "packages/frameworks/workflow-mgt/scripts"
+    original_sys_path = list(sys.path)
+    try:
+        sys.path.insert(0, str(scripts))
+        from release_state.allocate import (
+            PreviewNotAllowed,
+            allocate,
+            audit,
+            lookup,
+            lookup_or_raise,
+            parse_internal_version,
+        )
+        from release_state.import_legacy import import_registry_yaml
+    finally:
+        sys.path[:] = original_sys_path
+
+    globals().update(
+        {
+            "PreviewNotAllowed": PreviewNotAllowed,
+            "allocate": allocate,
+            "audit": audit,
+            "lookup": lookup,
+            "lookup_or_raise": lookup_or_raise,
+            "parse_internal_version": parse_internal_version,
+            "import_registry_yaml": import_registry_yaml,
+        }
+    )
+
     db_path = tmp_path / ".adk" / "release-state.db"
     yaml_path = tmp_path / "semver-registry.yaml"
     yaml_path.write_bytes(FIXTURE_YAML.read_bytes())
