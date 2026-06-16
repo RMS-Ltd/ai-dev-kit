@@ -24,10 +24,7 @@ if (!fs.existsSync(enginesPath)) {
 
 const source = fs.readFileSync(enginesPath, 'utf8');
 const patched = source
-  .replace(
-    /yaml\.safeLoad\.bind\(yaml\)/g,
-    'function(str){ return yaml.load(str); }',
-  )
+  .replace(/yaml\.safeLoad\.bind\(yaml\)/g, 'yaml.load.bind(yaml)')
   .replace(/yaml\.safeDump\.bind\(yaml\)/g, 'yaml.dump.bind(yaml)');
 
 if (source === patched) {
