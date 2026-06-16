@@ -14,8 +14,8 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** Medium (ongoing)  
 **Created:** 2026-06-05  
-**Last updated:** 2026-06-16 (Wave 10 AI autofix moratorium @ v0.2.16.6+18)  
-**Version Anchor:** v0.2.16.6+18  
+**Last updated:** 2026-06-16 (Wave 11 standard findings burn-down @ v0.2.16.6+19)  
+**Version Anchor:** v0.2.16.6+19  
 **Code:** E02S16T06  
 **Task Type:** Perpetual Maintenance
 
@@ -603,6 +603,30 @@ Between 2026-06-16 09:54–15:03 UTC, **23** `ai-findings-autofix/*` PRs merged 
 
 ---
 
+## Wave 11 remediation (shipped @ v0.2.16.6+19)
+
+**Theme:** [Standard findings](https://github.com/RMS-Ltd/ai-dev-kit/security/quality) burn-down — operator capture **3** maintainability + **2** reliability open @ post–Wave 10 `main`.
+
+| Rule | Band | Fix | Files |
+| ---- | ---- | --- | ----- |
+| `py/cyclic-import` | M | Inline `validate_v4_templates` in catalog module | `kanban_v4_catalog.py`, `validate_v4_template_completeness.py` |
+| `py/unused-local-variable` | M | Remove dead `y` | `kanban_completed/export_pdf.py` |
+| `py/unused-import` | M | Drop unused `pytest` | `tests/kanban/test_kanban_completed_ledger.py` |
+| `py/empty-except` | R | Comment on `OSError` pass | `kma_ingest.py` |
+| `.git` remote ref noise | R | Prune stale `ai-findings-autofix/*` remote-tracking ref | operator `git remote prune origin` |
+
+| Verification | Result |
+| ------------ | ------ |
+| `pytest tests/kanban/` (ledger) | **3 passed** |
+| `validate_v4_template_completeness.py` | **OK** |
+| `sync_greenfield_install.py` | **1990** files |
+| `RW E02:S16:T06` | **v0.2.16.6+19** |
+| Operator dashboard (TC39) | **Pending** — confirm **3M+2R → 0** on [standard findings](https://github.com/RMS-Ltd/ai-dev-kit/security/quality) |
+
+**MWF note:** `MWF E02:S16:T06 delivery` — IPP skipped (linked); IDW Wave 11 + RW chain.
+
+---
+
 ## Coordination matrix (T12–T17 vs T16)
 
 | Task | Surface | Status | T16 may remediate? |
@@ -643,6 +667,7 @@ Between 2026-06-16 09:54–15:03 UTC, **23** `ai-findings-autofix/*` PRs merged 
 - [x] **AC21 (Wave 8b):** Complete js-yaml **4.2.0** (gray-matter override + postinstall patch); `npm audit` 0 locally; shipped **v0.2.16.6+14**; operator TC38 verify **pending**.
 - [x] **AC22 (Wave 9):** AI autofix PR #70 CI repair — `conftest.py` path setup + `test_allocate` import restore; pytest green; shipped **v0.2.16.6+17**; PR #70 CI re-verify **pending**.
 - [x] **AC23 (Wave 10):** AI autofix moratorium documented; canonical hot files reconciled on `dev`; operator stops merging `ai-findings-autofix/*` to `main`; lag-accepted for stale AI panel rows; shipped **v0.2.16.6+18** via **`RW E02:S16:T06`**.
+- [ ] **AC24 (Wave 11):** Standard findings **3M+2R** burn-down shipped **v0.2.16.6+19**; operator TC39 dashboard verify **pending**.
 
 ---
 

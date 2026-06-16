@@ -77,7 +77,6 @@ def write_completed_ledger_pdf(
 
     font_num = add_obj("<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>")
     for page_lines in pages:
-        y = 800
         stream_parts = ["BT", "/F1 10 Tf", "50 800 Td"]
         first = True
         for line in page_lines:

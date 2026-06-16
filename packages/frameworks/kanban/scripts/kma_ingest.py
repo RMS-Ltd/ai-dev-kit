@@ -95,6 +95,7 @@ def ingest_legacy_corpus(legacy_root: Path) -> IngestReport:
                     report.inline_task_tokens.add(token)
                     patterns_seen.add("inline_E:S:T")
             except OSError:
+                # Unreadable file — skip inline E:S:T harvest for this story path.
                 pass
             continue
 

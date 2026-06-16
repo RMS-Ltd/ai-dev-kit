@@ -6,6 +6,7 @@ Ratified: docs/knowledge/analysis/kanban-v2/13-v4-three-tier-catalogue.md
 
 from __future__ import annotations
 
+import re
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Dict, List, Optional, Tuple
@@ -488,6 +489,89 @@ def catalog_epics_for_tier(install_tier: str = "small") -> List[int]:
     return list(V4_FRESH_EPICS)
 
 
+_V4_EPIC_SECTIONS = (
+    "## Purpose",
+    "## Scope",
+    "## Excludes / wrong homes",
+    "## Overview",
+    "## Stories",
+    "## Dependencies",
+    "## References",
+)
+
+_V4_STORY_SECTIONS = (
+    "## Overview",
+    "## Goals",
+    "## Acceptance criteria",
+    "## Out of scope",
+    "## Dependencies",
+    "## References",
+)
+
+_V4_ALLOWED_PLACEHOLDERS = frozenset(
+    {
+        "PROJECT_NAME",
+        "REPO_ROOT",
+        "KANBAN_ROOT",
+        "DOMAIN_NAME",
+        "domain-slug",
+        "PRIMARY_LOCALE",
+        "HOSTING_PLATFORM",
+        "REGULATORY_REGIME",
+    }
+)
+
+_V4_PLACEHOLDER_RE = re.compile(r"\{([A-Za-z0-9_-]+)\}")
+
+
+def _v4_unknown_placeholders(text: str) -> List[str]:
+    bad: List[str] = []
+    for m in _V4_PLACEHOLDER_RE.finditer(text):
+        token = m.group(1)
+        if token not in _V4_ALLOWED_PLACEHOLDERS and not token.startswith("YYYY"):
+            bad.append(token)
+    return bad
+
+
+def validate_v4_templates(*, strict: bool = False) -> List[str]:
+    """Validate v4 epic/story template files under V4_TEMPLATE_ROOT."""
+    _ = strict  # reserved for future strict-mode rules
+    errors: List[str] = []
+    if not V4_TEMPLATE_ROOT.is_dir():
+        return ["v4 template root missing: " + str(V4_TEMPLATE_ROOT)]
+
+    for epic in V4_EPICS:
+        epic_dir = epic_template_dir(epic)
+        epic_path = epic_dir / f"epic-{epic.epic_num:02d}.md"
+        if not epic_path.is_file():
+            errors.append(f"Missing epic template: {epic_path.relative_to(V4_TEMPLATE_ROOT)}")
+            continue
+        epic_text = epic_path.read_text(encoding="utf-8")
+        for sec in _V4_EPIC_SECTIONS:
+            if sec not in epic_text:
+                errors.append(f"{epic_path.name}: missing section {sec}")
+        if "{PROJECT_NAME}" not in epic_text:
+            errors.append(f"{epic_path.name}: missing {{PROJECT_NAME}} in narrative")
+        for bad in _v4_unknown_placeholders(epic_text):
+            errors.append(f"{epic_path.name}: unknown placeholder {{{bad}}}")
+
+        for story in epic.stories:
+            sp = epic_dir / "stories" / f"story-{story.story_num:02d}-{story.story_slug}.md"
+            if not sp.is_file():
+                errors.append(f"Missing story template: {sp.relative_to(V4_TEMPLATE_ROOT)}")
+                continue
+            st = sp.read_text(encoding="utf-8")
+            for sec in _V4_STORY_SECTIONS:
+                if sec not in st:
+                    errors.append(f"{sp.name}: missing section {sec}")
+            if "{PROJECT_NAME}" not in st:
+                errors.append(f"{sp.name}: missing {{PROJECT_NAME}} in Overview")
+            for bad in _v4_unknown_placeholders(st):
+                errors.append(f"{sp.name}: unknown placeholder {{{bad}}}")
+
+    return errors
+
+
 def assert_v4_fingerprint(kanban_path: Path, *, templates_only: bool = False) -> Tuple[bool, List[str]]:
     """Return (ok, errors) for v4 catalog fingerprint."""
     errors: List[str] = []
@@ -496,11 +580,6 @@ def assert_v4_fingerprint(kanban_path: Path, *, templates_only: bool = False) ->
         if not ok_v35:
             errors.extend(v35_errors)
 
-    try:
-        from validate_v4_template_completeness import validate_v4_templates
-
-        errors.extend(validate_v4_templates(strict=True))
-    except ImportError as exc:
-        errors.append(f"validate_v4_template_completeness import failed: {exc}")
+    errors.extend(validate_v4_templates(strict=True))
 
     return (len(errors) == 0, errors)
