@@ -101,7 +101,7 @@ class TestPerformance:
             allocate(saa_db, f"0.3.2.{100 + i}+1")
             timings.append(time.perf_counter() - start)
         timings.sort()
-        p95_index = max(0, math.ceil(0.95 * len(timings)) - 1)
+        p95_index = max(0, int(0.95 * len(timings)))
         p95 = timings[p95_index]
         # Local development target: 50ms p95.
         # In GitHub Actions, shared-runner contention can cause higher variance during
