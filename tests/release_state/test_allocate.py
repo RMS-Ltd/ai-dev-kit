@@ -101,8 +101,6 @@ class TestPerformance:
             allocate(saa_db, f"0.3.2.{100 + i}+1")
             timings.append(time.perf_counter() - start)
         timings.sort()
-        if not timings:
-            pytest.fail("No timing samples collected for p95 calculation")
         p95_index = min(len(timings) - 1, max(0, math.ceil(0.95 * len(timings)) - 1))
         p95 = timings[p95_index]
         # Local development target: 50ms p95.
