@@ -11,6 +11,7 @@ from __future__ import annotations
 import argparse
 import fnmatch
 import hashlib
+import re
 import shutil
 import subprocess
 import sys
@@ -251,10 +252,14 @@ def _resolve_internal_version() -> str:
         if isinstance(configured, str) and configured.strip():
             version_file = REPO_ROOT / configured.strip()
     content = version_file.read_text(encoding="utf-8")
+    version_string_pattern = re.compile(
+        r"""^VERSION_STRING\s*=\s*(?:[rRuUbBfF]{0,2})?(['"])(.*?)\1\s*$"""
+    )
     for line in content.splitlines():
         line = line.strip()
-        if line.startswith("VERSION_STRING") and '"' in line:
-            candidate = line.split('"')[1]
+        match = version_string_pattern.match(line)
+        if match:
+            candidate = match.group(2)
             if "{" not in candidate:
                 return candidate
     values: Dict[str, int] = {}
