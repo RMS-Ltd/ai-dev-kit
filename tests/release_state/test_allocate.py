@@ -22,6 +22,8 @@ from release_state.import_legacy import import_registry_yaml
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
 FIXTURE_YAML = REPO_ROOT / "tests/fixtures/semver-registry-mini.yaml"
+GITHUB_ACTIONS_THRESHOLD_S = 0.25
+LOCAL_THRESHOLD_S = 0.05
 
 
 @pytest.fixture
@@ -102,5 +104,9 @@ class TestPerformance:
         p95_index = max(0, math.ceil(0.95 * len(timings)) - 1)
         p95 = timings[p95_index]
         # Local dev: 50ms p95. GitHub Actions shared runners vary under full-suite load (BR-104).
-        threshold_s = 0.25 if os.environ.get("GITHUB_ACTIONS") == "true" else 0.05
+        threshold_s = (
+            GITHUB_ACTIONS_THRESHOLD_S
+            if os.environ.get("GITHUB_ACTIONS") == "true"
+            else LOCAL_THRESHOLD_S
+        )
         assert p95 < threshold_s, f"p95 allocate {p95 * 1000:.1f}ms exceeds {threshold_s * 1000:.0f}ms"
