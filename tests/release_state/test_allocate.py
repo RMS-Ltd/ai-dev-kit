@@ -11,6 +11,16 @@ from pathlib import Path
 
 import pytest
 
+from release_state.allocate import (
+    PreviewNotAllowed,
+    allocate,
+    audit,
+    lookup,
+    lookup_or_raise,
+    parse_internal_version,
+)
+from release_state.import_legacy import import_registry_yaml
+
 REPO_ROOT = Path(__file__).resolve().parents[2]
 SCRIPTS = REPO_ROOT / "packages/frameworks/workflow-mgt/scripts"
 sys.path.insert(0, str(SCRIPTS))
