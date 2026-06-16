@@ -704,15 +704,21 @@ function _createMdxContent(props) {
           }), (0,jsx_runtime.jsxs)(_components.td, {
             children: [(0,jsx_runtime.jsx)(_components.strong, {
               children: "Archive completed"
-            }), " (standalone) — append ", (0,jsx_runtime.jsx)(_components.a, {
-              href: "https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/kanban/kanban-completed.md",
-              children: "kanban-completed.md"
-            }), " / ", (0,jsx_runtime.jsx)(_components.a, {
+            }), " (standalone) — upsert ", (0,jsx_runtime.jsx)(_components.code, {
+              children: ".adk/kanban-completed.db"
+            }), " via ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "append_kanban_completed.py"
+            }), ", refresh ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "kanban-completed.pdf"
+            }), ", append ", (0,jsx_runtime.jsx)(_components.a, {
               href: "https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/kanban/intake-completed.md",
               children: "intake-completed.md"
-            }), " then remove terminal MoSCOW rows (", (0,jsx_runtime.jsx)(_components.a, {
+            }), ", then remove terminal MoSCOW rows (", (0,jsx_runtime.jsx)(_components.a, {
               href: "https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/architecture/standards-and-adrs/ADR-010-ukw-archive-completed-c-flag.md",
               children: "ADR-010"
+            }), ", ", (0,jsx_runtime.jsx)(_components.a, {
+              href: "https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/kanban/fr-br/FR-134-kanban-completed-sqlite-ledger-pdf-report.md",
+              children: "FR-134"
             }), "). ", (0,jsx_runtime.jsx)(_components.strong, {
               children: "Not"
             }), " combinable with ", (0,jsx_runtime.jsx)(_components.code, {

@@ -366,7 +366,7 @@ function _createMdxContent(props) {
     }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
       children: (0,jsx_runtime.jsx)(_components.code, {
         className: "language-bash",
-        children: "# Run all tests\npytest\n\n# Run with coverage\npytest --cov=cli --cov-report=html\n"
+        children: "# Run all tests\npytest\n\n# Run with CLI coverage (dedicated target)\nbash scripts/run_cli_pytest_coverage.sh\n"
       })
     }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
       id: "publishing-to-pypi",
