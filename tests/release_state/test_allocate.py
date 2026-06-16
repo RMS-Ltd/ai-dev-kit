@@ -90,7 +90,7 @@ class TestParallelAllocate:
 
 
 class TestPerformance:
-    def test_allocate_p95_under_50ms(self, saa_db):
+    def test_allocate_p95_performance(self, saa_db):
         # Warm-up: discard cold-start / import overhead (flaky on shared CI runners).
         for i in range(5):
             allocate(saa_db, f"0.3.2.{90 + i}+1")
@@ -103,7 +103,10 @@ class TestPerformance:
         timings.sort()
         p95_index = max(0, math.ceil(0.95 * len(timings)) - 1)
         p95 = timings[p95_index]
-        # Local dev: 50ms p95. GitHub Actions shared runners vary under full-suite load (BR-104).
+        # Local development target: 50ms p95.
+        # In GitHub Actions, shared-runner contention can cause higher variance during
+        # full-suite execution, so CI uses a relaxed threshold. BR-104 tracks this
+        # known CI timing-variance behavior.
         threshold_s = (
             GITHUB_ACTIONS_THRESHOLD_S
             if os.environ.get("GITHUB_ACTIONS") == "true"
