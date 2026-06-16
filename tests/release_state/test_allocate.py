@@ -90,7 +90,7 @@ class TestParallelAllocate:
 
 
 class TestPerformance:
-    def test_allocate_p95_under_50ms(self, saa_db):
+    def test_allocate_p95_performance(self, saa_db):
         # Warm-up: discard cold-start / import overhead (flaky on shared CI runners).
         for i in range(5):
             allocate(saa_db, f"0.3.2.{90 + i}+1")
