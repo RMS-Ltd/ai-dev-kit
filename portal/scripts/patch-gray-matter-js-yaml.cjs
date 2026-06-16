@@ -26,7 +26,7 @@ const source = fs.readFileSync(enginesPath, 'utf8');
 const patched = source
   .replace(
     /yaml\.safeLoad\.bind\(yaml\)/g,
-    'function(str){ return yaml.load(str, { schema: yaml.FAILSAFE_SCHEMA }); }',
+    'function(str){ return yaml.load(str); }',
   )
   .replace(/yaml\.safeDump\.bind\(yaml\)/g, 'yaml.dump.bind(yaml)');
 
@@ -40,7 +40,7 @@ try {
   console.log('patched gray-matter/lib/engines.js for js-yaml@4.x');
 } catch (err) {
   console.error(
-    `Failed to patch gray-matter/lib/engines.js at ${enginesPath}: ${err && err.message ? err.message : err}`,
+    `Failed to patch gray-matter/lib/engines.js at ${enginesPath}: ${err?.message || err}`,
   );
   process.exit(1);
 }
