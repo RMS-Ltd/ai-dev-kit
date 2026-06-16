@@ -79,6 +79,10 @@ class TestAllocateBasics:
 class TestParallelAllocate:
     def test_parallel_distinct_internals_no_duplicate_patch(self, tmp_path):
         db_path = tmp_path / "state.db"
+        yaml_path = tmp_path / "semver-registry.yaml"
+        yaml_path.write_bytes(FIXTURE_YAML.read_bytes())
+        import_registry_yaml(yaml_path, db_path, changelog_dir=None)
+
         internals = [f"0.2.1.{i}+1" for i in range(1, 8)]
 
         def _alloc(iv: str):
