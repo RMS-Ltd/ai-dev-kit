@@ -5,17 +5,12 @@ from __future__ import annotations
 import concurrent.futures
 import math
 import os
-import sys
 import time
 from pathlib import Path
 
 import pytest
 
-REPO_ROOT = Path(__file__).resolve().parents[2]
-SCRIPTS = REPO_ROOT / "packages/frameworks/workflow-mgt/scripts"
-sys.path.insert(0, str(SCRIPTS))
-
-from release_state.allocate import (  # noqa: E402
+from release_state.allocate import (
     PreviewNotAllowed,
     allocate,
     audit,
@@ -23,8 +18,9 @@ from release_state.allocate import (  # noqa: E402
     lookup_or_raise,
     parse_internal_version,
 )
-from release_state.import_legacy import import_registry_yaml  # noqa: E402
+from release_state.import_legacy import import_registry_yaml
 
+REPO_ROOT = Path(__file__).resolve().parents[2]
 FIXTURE_YAML = REPO_ROOT / "tests/fixtures/semver-registry-mini.yaml"
 
 
@@ -79,6 +75,10 @@ class TestAllocateBasics:
 class TestParallelAllocate:
     def test_parallel_distinct_internals_no_duplicate_patch(self, tmp_path):
         db_path = tmp_path / "state.db"
+        yaml_path = tmp_path / "semver-registry.yaml"
+        yaml_path.write_bytes(FIXTURE_YAML.read_bytes())
+        import_registry_yaml(yaml_path, db_path, changelog_dir=None)
+
         internals = [f"0.2.1.{i}+1" for i in range(1, 8)]
 
         def _alloc(iv: str):
