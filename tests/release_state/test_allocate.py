@@ -23,7 +23,7 @@ from release_state.import_legacy import import_registry_yaml
 REPO_ROOT = Path(__file__).resolve().parents[2]
 FIXTURE_YAML = REPO_ROOT / "tests/fixtures/semver-registry-mini.yaml"
 GITHUB_ACTIONS_THRESHOLD_S = 0.25
-LOCAL_THRESHOLD_S = 0.05
+LOCAL_THRESHOLD_S = 0.05  # 50ms p95 performance target for local development.
 
 
 @pytest.fixture
@@ -101,7 +101,7 @@ class TestPerformance:
             allocate(saa_db, f"0.3.2.{100 + i}+1")
             timings.append(time.perf_counter() - start)
         timings.sort()
-        p95_index = max(0, math.ceil(0.95 * len(timings)) - 1)
+        p95_index = max(0, int(0.95 * len(timings)))
         p95 = timings[p95_index]
         # Local development target: 50ms p95.
         # In GitHub Actions, shared-runner contention can cause higher variance during
