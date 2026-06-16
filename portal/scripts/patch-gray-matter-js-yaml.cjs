@@ -4,6 +4,9 @@
 /**
  * gray-matter@4.0.3 pins js-yaml ^3 and calls safeLoad/safeDump (removed in js-yaml 4).
  * With npm overrides forcing js-yaml@4.2.0, patch engines to use load/dump instead.
+ *
+ * Canonical implementation (Wave 8b + Wave 10): FAILSAFE_SCHEMA, replaceAll, write guard.
+ * Do not merge further ai-findings-autofix PRs for this file — see E02:S16:T06 Wave 10.
  */
 const fs = require('fs');
 const path = require('path');
@@ -35,5 +38,13 @@ if (source === patched) {
   process.exit(0);
 }
 
-fs.writeFileSync(enginesPath, patched);
-console.log('patched gray-matter/lib/engines.js for js-yaml@4.x');
+try {
+  fs.writeFileSync(enginesPath, patched);
+  console.log('patched gray-matter/lib/engines.js for js-yaml@4.x');
+} catch (err) {
+  const message = err instanceof Error ? err.message : String(err);
+  console.error(
+    `Failed to patch gray-matter/lib/engines.js at ${enginesPath}: ${message}`,
+  );
+  process.exit(1);
+}
