@@ -112,4 +112,4 @@ class TestPerformance:
             if os.environ.get("GITHUB_ACTIONS") == "true"
             else LOCAL_THRESHOLD_S
         )
-        assert p95 < threshold_s, f"p95 allocate {p95 * 1000:.1f}ms exceeds {threshold_s * 1000:.0f}ms"
+        assert p95 < threshold_s, f"p95 allocate {p95 * 1000:.1f}ms exceeds {threshold_s * 1000:.1f}ms"
