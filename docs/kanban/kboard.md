@@ -8,12 +8,12 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Board
 
-**Last Updated:** 2026-06-16 (RW: E08:S03:T23)
-**Version:** v0.8.3.23+2
+**Last Updated:** 2026-06-16 (RW: E02:S16:T02)
+**Version:** v0.2.16.2+12
 
 **Active board contract:** **Sole active MoSCOW board** ([ADR-018](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/architecture/standards-and-adrs/ADR-018-single-kanban-board-consolidation.md)). Rows are **live work** (TODO / IN PROGRESS / OPEN / WAITING / PERPETUAL) plus filed **Could Have** backlog. **Verification (V)** band holds task-shipped / FBU-open items (`⏳ WAITING`). Remove **terminal** rows and archive prose (use [`kanban-completed.md`](kanban-completed.md) / [`intake-completed.md`](intake-completed.md)).
 
-**Note:** Epics 1, 3, 7, 11 are COMPLETE. Epics 2, 4, 5, 6, 8, **10** are IN PROGRESS. Epic 5 **S08/S09 COMPLETE** (FR-114/FR-121). Epic 21 IN PROGRESS — **all 47 tasks on board** (S01–S03 COMPLETE; S04:T01 + T03 + T05 + S05:T01 + S06:T01 + S08 L0–1 shipped; S09 admin COMPLETE; S04 T04/T06/T07 + S05–S07 locale backlog; S08 L2–5 deferred).
+**Note:** Epics 1, 7, 11 are COMPLETE. Epics 2, 3, 4, 5, 6, 8, **10** are IN PROGRESS. Epic 5 **S08/S09 COMPLETE** (FR-114/FR-121). Epic 21 IN PROGRESS — **all 47 tasks on board** (S01–S03 COMPLETE; S04:T01 + T03 + T05 + S05:T01 + S06:T01 + S08 L0–1 shipped; S09 admin COMPLETE; S04 T04/T06/T07 + S05–S07 locale backlog; S08 L2–5 deferred).
 
 **Wiring:** Every wired row includes FBU link(s) where applicable (UXR-010). Legacy `fbuboard.md` / `kanban-board.md` aliases **removed** (intake rename wave).
 
@@ -117,6 +117,8 @@ housekeeping_policy: keep
 - **E08:S03:T22** – Pytest warning cleanup (UXR-030 Wave 2) - ⏳ SHIPPED (MEDIUM, **v0.8.3.22+2**) | [Task](epics/epic-08/story-03-automation-scripts/T22-pytest-warning-cleanup-uxr030-wave2.md) | [UXR-030](fr-br/UXR-030-default-pytest-cli-coverage-misleading-zero-percent.md) | [—IPP—](../../implementation-cycles/IPP-E08S03T22-pytest-warning-cleanup-uxr030-wave2.md) | Last modified: 2026-06-15 19:44 UTC
 
 - **E08:S03:T23** – Greenfield sync autofix CI hardening (BR-109) - ⏳ SHIPPED (HIGH — **v0.8.3.23+2**; recurring autofix PR `greenfield-install` drift #60–#62, #68) | [Task](epics/epic-08/story-03-automation-scripts/T23-greenfield-sync-autofix-ci-hardening-br109.md) | [BR-109](fr-br/BR-109-greenfield-autofix-dual-tree-sync-drift-recurring-ci-failures.md) | [FR-110](fr-br/FR-110-lean-adopter-distribution-footprint-and-vendor-bundle.md) | [—IPP—](../../implementation-cycles/IPP-E08S03T23-greenfield-sync-autofix-ci-hardening-br109.md) | Last modified: 2026-06-16 12:00 UTC
+
+- **E03:S02:T15** – SemVer external `+BUILD` redundancy evaluation & policy decision (UXR-031) - 📋 TODO (MEDIUM, outward SemVer UX clarity) | [Task](epics/epic-03/story-02-versioning-cookbook-and-examples/T15-semver-external-build-metadata-redundancy-uxr031.md) | [UXR-031](fr-br/UXR-031-semver-plusbuild-redundancy-in-task-touch.md) | [FR-045](fr-br/FR-045-adr-002-task-touch-derived-mapping.md) | [BR-061](fr-br/BR-061-semver-task-touch-counter-increments-too-often.md) | —No IPP— | Last modified: 2026-06-08 14:03 UTC
 
 #### Epic 21 (E21) — full inventory: backlog (11 tasks)
 

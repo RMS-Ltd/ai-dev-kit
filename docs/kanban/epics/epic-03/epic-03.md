@@ -12,7 +12,7 @@ housekeeping_policy: keep
 **Priority:** HIGH
 **Estimated Effort:** [TBD]
 **Created:** 2025-12-02
-**Last updated:** 2026-06-09 (v0.3.2.14+2 — E03:S02:T14 allocator repair)
+**Last updated:** 2026-06-16 (v0.2.16.2+12 – E03:S02:T15 kanban init via E02:S16:T02)
 **Branch:** `epic/3-numbering-and-versioning-framework`
 **Version Schema:** `0.3.S.T+B`
 **Production URL:** [N/A for this repo]

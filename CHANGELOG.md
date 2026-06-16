@@ -11,6 +11,14 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.2.16.2+12] - 16-06-26
+
+Kanban documentation setup (RW `-k`) for **UXR-031** — SemVer `+BUILD` redundancy in `task_touch` mode; atomic intake **E03:S02:T15** + `kboard.md` row. SemVer **v0.4.1188+12**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.16.2+12.md)
+
+---
+
 ## [0.8.3.23+2] - 16-06-26
 
 E08:S03:T23 — Greenfield dual-tree sync autofix drift guard rails (BR-109): add `--autofix-reconcile` + PR autofix reconciliation workflow (Mode A/Mode B deterministic remediation). SemVer **v0.4.1187+2**.

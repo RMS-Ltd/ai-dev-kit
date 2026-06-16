@@ -14,8 +14,8 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** Medium  
 **Created:** 2026-04-22  
-**Last updated:** 2026-06-13 (v0.2.16.2+11 – E08:S03:T12 terminal prune; UKW -c drift repair)
-**Version Anchor:** v0.2.16.2+11
+**Last updated:** 2026-06-16 (v0.2.16.2+12 – Kanban documentation setup; UXR-031 intake + E03:S02:T15)
+**Version Anchor:** v0.2.16.2+12
 **Code:** E02S16T02
 **Task Type:** Perpetual Maintenance
 
