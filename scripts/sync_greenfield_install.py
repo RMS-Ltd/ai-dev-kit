@@ -125,9 +125,11 @@ def _ignored(rel_posix: str, ignore_globs: List[str]) -> bool:
             return True
         # Also match path segments for patterns like **/__pycache__
         parts = rel_posix.split("/")
+        pattern_parts = [p for p in pattern.split("/") if p and p != "**"]
         for part in parts:
-            if fnmatch.fnmatch(part, pattern.strip("*/")):
-                return True
+            for pattern_part in pattern_parts:
+                if fnmatch.fnmatch(part, pattern_part):
+                    return True
     return False
 
 
