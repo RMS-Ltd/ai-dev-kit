@@ -4,7 +4,7 @@
         <title>AI Dev Kit Blog</title>
         <link>https://rms-ltd.github.io/ai-dev-kit/blog</link>
         <description>AI Dev Kit Blog</description>
-        <lastBuildDate>Tue, 16 Jun 2026 14:53:05 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 16 Jun 2026 14:56:46 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
@@ -12,7 +12,7 @@
             <title><![CDATA[Significant release notes policy (RC ≥ 1)]]></title>
             <link>https://rms-ltd.github.io/ai-dev-kit/blog/RELEASE-NOTES-POLICY</link>
             <guid>https://rms-ltd.github.io/ai-dev-kit/blog/RELEASE-NOTES-POLICY</guid>
-            <pubDate>Tue, 16 Jun 2026 14:53:05 GMT</pubDate>
+            <pubDate>Tue, 16 Jun 2026 14:56:46 GMT</pubDate>
             <description><![CDATA[{/ truncate /}]]></description>
             <content:encoded><![CDATA[
 <p><strong>Status:</strong> Scaffold — no curated posts until first RC public milestone.<br>
