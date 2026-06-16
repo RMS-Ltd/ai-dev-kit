@@ -269,7 +269,12 @@ def _resolve_internal_version() -> str:
         for line in content.splitlines():
             line = line.strip()
             if line.startswith(f"{key} ="):
-                values[key] = int(line.split("=", 1)[1].strip())
+                raw_value = line.split("=", 1)[1].strip()
+                if not re.fullmatch(r"[+-]?\d+", raw_value):
+                    raise RuntimeError(
+                        f"Invalid integer value for {key} in {version_file}: {raw_value!r}"
+                    )
+                values[key] = int(raw_value)
                 break
     return (
         f"{values['VERSION_RC']}."
