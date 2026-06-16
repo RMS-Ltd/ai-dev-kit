@@ -1,7 +1,7 @@
 """
 AI Dev Kit Version File
 
-See: docs/governance/standards/dev-kit-versioning-policy.md
+See: docs/governance/standards/ for versioning policy details.
 """
 
 VERSION_RC = 0
