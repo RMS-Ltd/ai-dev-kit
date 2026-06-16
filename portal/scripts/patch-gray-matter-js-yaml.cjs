@@ -39,8 +39,21 @@ try {
   fs.writeFileSync(enginesPath, patched);
   console.log('patched gray-matter/lib/engines.js for js-yaml@4.x');
 } catch (err) {
+  const errorMessage =
+    err instanceof Error
+      ? err.message
+      : typeof err === 'string'
+        ? err
+        : (() => {
+            try {
+              return JSON.stringify(err) || String(err);
+            } catch (_) {
+              return String(err);
+            }
+          })();
+
   console.error(
-    `Failed to patch gray-matter/lib/engines.js at ${enginesPath}: ${err?.message || err}. ` +
+    `Failed to patch gray-matter/lib/engines.js at ${enginesPath}: ${errorMessage}. ` +
       'Troubleshooting: verify write permissions for node_modules and this file, ensure dependencies are installed, ' +
       'and if this is a permissions error, rerun the install/patch step with appropriate privileges.',
   );
