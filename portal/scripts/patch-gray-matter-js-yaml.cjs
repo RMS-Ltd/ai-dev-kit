@@ -40,7 +40,7 @@ try {
   console.log('patched gray-matter/lib/engines.js for js-yaml@4.x');
 } catch (err) {
   console.error(
-    `Failed to patch gray-matter/lib/engines.js at ${enginesPath}: ${err && err.message ? err.message : err}`,
+    `Failed to patch gray-matter/lib/engines.js at ${enginesPath}: ${err?.message || err}`,
   );
   process.exit(1);
 }
