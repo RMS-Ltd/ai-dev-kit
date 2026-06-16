@@ -9,11 +9,11 @@ housekeeping_policy: keep
 # Epic 8, Story 3, Task 23: Greenfield sync autofix CI hardening (BR-109)
 
 **Task ID:** E08:S03:T23  
-**Status:** TODO  
-**Version Anchor:** v0.8.3.23+1  
+**Status:** ✅ COMPLETE (v0.8.3.23+2)  
+**Version Anchor:** v0.8.3.23+2  
 **Priority:** HIGH  
 **Created:** 2026-06-16  
-**Last updated:** 2026-06-16 (v0.8.3.23+1 – Kanban documentation setup / BR-109 intake)  
+**Last updated:** 2026-06-16 (RW Step 7: scoped kanban reconciliation for v0.8.3.23+2)  
 **Code:** E08S03T23  
 
 **Upstream:** [BR-109 — Greenfield dual-tree sync drift on autofix PRs](../../../fr-br/BR-109-greenfield-autofix-dual-tree-sync-drift-recurring-ci-failures.md)  
@@ -45,6 +45,7 @@ Manual `python scripts/sync_greenfield_install.py` on each PR is reactive and do
 - [FR-110](../../../fr-br/FR-110-lean-adopter-distribution-footprint-and-vendor-bundle.md) dual-tree contract
 - [`scripts/sync_greenfield_install.py`](../../../../../scripts/sync_greenfield_install.py) and [`greenfield-install-manifest.yaml`](../../../../../scripts/greenfield-install-manifest.yaml)
 - [`.github/workflows/greenfield-install.yml`](../../../../../.github/workflows/greenfield-install.yml)
+- [IPP-E08S03T23-greenfield-sync-autofix-ci-hardening-br109](../../../../implementation-cycles/IPP-E08S03T23-greenfield-sync-autofix-ci-hardening-br109.md) (plan doc: spec + tests + executor steps)
 - **IPW** package (required before implementation per FR-083)
 
 ---
@@ -76,8 +77,16 @@ Manual `python scripts/sync_greenfield_install.py` on each PR is reactive and do
 
 ---
 
+## Evidence
+- Pytest run: `scripts/test_sync_greenfield_install.py` (Mode A/Mode B + idempotency + ambiguous-dual-tree guidance + remediation workflow-marker existence) — 9 passing assertions.
+- Reconciliation invariant: the Mode A/Mode B reconcile path executes the existing `sync_greenfield_install.py --check` guard after applying repairs.
+- CI/autofix wiring: new workflow `.github/workflows/greenfield-autofix-reconcile.yml` plus hardened dual-tree drift messaging surfaced by `sync_greenfield_install.py --check`.
+
+---
+
 ## References
 
 - [BR-109](../../../fr-br/BR-109-greenfield-autofix-dual-tree-sync-drift-recurring-ci-failures.md)
+- [IPP-E08S03T23-greenfield-sync-autofix-ci-hardening-br109](../../../../implementation-cycles/IPP-E08S03T23-greenfield-sync-autofix-ci-hardening-br109.md)
 - [`.github/workflows/greenfield-install.yml`](../../../../../.github/workflows/greenfield-install.yml)
 - [`scripts/sync_greenfield_install.py`](../../../../../scripts/sync_greenfield_install.py)

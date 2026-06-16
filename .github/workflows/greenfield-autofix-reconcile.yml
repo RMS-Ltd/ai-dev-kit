@@ -1,0 +1,61 @@
+# BR-109 — autofix-class PR remediation (dual-tree drift reconciliation)
+name: Greenfield autofix reconcile
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened, labeled]
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: greenfield-autofix-reconcile-${{ github.workflow }}-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+
+jobs:
+  reconcile:
+    runs-on: ubuntu-latest
+    # Gate: only run for autofix-class PR patterns (keeps this workflow from "bot-editing" every PR).
+    if: >
+      contains(github.head_ref, 'finding-autofix') ||
+      contains(github.head_ref, 'copilot') ||
+      contains(join(github.event.pull_request.labels.*.name, ','), 'autofix')
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install "pyyaml>=6.0"
+
+      - name: Run dual-tree autofix reconcile
+        env:
+          BASE_SHA: ${{ github.event.pull_request.base.sha }}
+          HEAD_SHA: ${{ github.event.pull_request.head.sha }}
+        run: |
+          set -euo pipefail
+          python scripts/sync_greenfield_install.py \
+            --autofix-reconcile \
+            --diff-base "$BASE_SHA" \
+            --diff-head "$HEAD_SHA"
+
+      - name: Commit + push if reconciliation changed files
+        run: |
+          set -euo pipefail
+          if [ -z "$(git status --porcelain)" ]; then
+            echo "No changes after reconcile; exiting."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "autofix: reconcile greenfield dual-tree drift (BR-109)"
+          git push
+

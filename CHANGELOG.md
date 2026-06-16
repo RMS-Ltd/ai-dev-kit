@@ -11,6 +11,14 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.8.3.23+2] - 16-06-26
+
+E08:S03:T23 — Greenfield dual-tree sync autofix drift guard rails (BR-109): add `--autofix-reconcile` + PR autofix reconciliation workflow (Mode A/Mode B deterministic remediation). SemVer **v0.4.1187+2**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.8.3.23+2.md)
+
+---
+
 ## [0.8.3.23+1] - 16-06-26
 
 Kanban documentation setup (RW `-k`) for **BR-109** — greenfield autofix dual-tree sync drift; atomic intake **E08:S03:T23**. SemVer **v0.4.1186+1**.

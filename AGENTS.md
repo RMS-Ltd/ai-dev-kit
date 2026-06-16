@@ -64,7 +64,7 @@ Refresh from `kboard.md` when running UKW or RW Step 7; mirror into manifest `op
 | P-RW-BUILD | Same E:S:T → BUILD+1 default; no `git tag -f` on release tags; `--dpz` (alias: `--doc-policy-zero`) only if user-triggered + untagged | [BR-097](docs/kanban/fr-br/BR-097-rw-agent-reuses-tagged-build-and-force-moves-release-tags.md) |
 | P-GIT-MAINTAINER | New maintainer docs → repo paths (`docs/knowledge/`, `docs/maintenance/`, `docs/analysis/`); Notion optional archive only | [ADR-026](docs/architecture/standards-and-adrs/ADR-026-git-internal-maintainer-kb-fr121.md) |
 | P-PORTAL-LINKS | Edits under `docs/guides/**` or `docs/documentation/**` → GitHub blob URLs for excluded trees; run portal pytest before commit | [adopter-public-documentation-authoring.md](docs/governance/standards/adopter-public-documentation-authoring.md) · [BR-068](docs/kanban/fr-br/BR-068-docusaurus-monorepo-markdown-links-break-strict-production-build.md) |
-| P-GREENFIELD-SYNC | Edits under `packages/frameworks/**` → `sync_greenfield_install.py` + commit mirror in same change set | [FR-110](docs/kanban/fr-br/FR-110-lean-adopter-distribution-footprint-and-vendor-bundle.md) |
+| P-GREENFIELD-SYNC | Edits under `packages/frameworks/**` → `sync_greenfield_install.py` + commit mirror in same change set. For autofix-class PRs, CI may run `.github/workflows/greenfield-autofix-reconcile.yml` to reconcile dual-tree drift automatically; canonical framework logic should still be authored in `packages/frameworks/**` (source) | [FR-110](docs/kanban/fr-br/FR-110-lean-adopter-distribution-footprint-and-vendor-bundle.md) |
 
 **Workflow execution SoT:** `.cursorrules` and `.claude/commands/` — load when `workflows` track applies, not at cold start.
 

@@ -15,7 +15,7 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Severity:** MEDIUM  
 **Status:** ACCEPTED  
-**Version:** v0.8.3.23+1 (intake @ RW `-k`)
+**Version:** v0.8.3.23+2 (full RW after IDW)
 
 **Implementing Task:** [E08:S03:T23](../epics/epic-08/story-03-automation-scripts/T23-greenfield-sync-autofix-ci-hardening-br109.md)
 
@@ -92,11 +92,13 @@ Autofix tooling has **no awareness** of the FR-110 dual-tree contract:
 **Minimum (structural):**
 
 1. **Autofix PR workflow** — GitHub Action on `pull_request` (label or branch pattern `finding-autofix-*` / Copilot autofix) that:
-   - Detects drift via `sync_greenfield_install.py --check`
-   - Runs sync; if Mode B (mirror-only edits), copy reconciled paths back to source per manifest rules
-   - Commits with bot identity when diff non-empty
-2. **CI message hardening** — Extend `greenfield-install` job failure text with dual-tree policy link (FR-110, AGENTS.md P-GREENFIELD-SYNC).
-3. **Maintainer docs** — Cheatsheet note: autofix PRs require sync; prefer merging fix via `dev` + RW.
+   - Runs only for autofix-class PR patterns (gated in `.github/workflows/greenfield-autofix-reconcile.yml`)
+   - Reconciles dual-tree drift via `python scripts/sync_greenfield_install.py --autofix-reconcile` using PR base/head SHAs
+   - Commits with bot identity only when reconciliation produces a non-empty diff (`git status --porcelain`)
+2. **CI message hardening** — Implemented via `sync_greenfield_install.py --check` drift output:
+   it now includes explicit Mode A vs Mode B guidance and points maintainers to
+   `.github/workflows/greenfield-autofix-reconcile.yml` when auto-remediation is appropriate.
+3. **Maintainer docs** — Updated `AGENTS.md` (P-GREENFIELD-SYNC) with “autofix-as-hint” behavior and reminders that canonical logic remains in `packages/frameworks/**` (source).
 
 **Optional (policy):**
 
@@ -125,6 +127,31 @@ Autofix tooling has **no awareness** of the FR-110 dual-tree contract:
 | [#68](https://github.com/RMS-Ltd/ai-dev-kit/pull/68) | Mode B — `kma_ingest.py` | Re-apply fix to `packages/frameworks/kanban/scripts/kma_ingest.py`, then sync |
 
 **Scripts / workflows:** `scripts/sync_greenfield_install.py`, `scripts/greenfield-install-manifest.yaml`, `.github/workflows/greenfield-install.yml`, `.pre-commit-config.yaml` (`validate-greenfield-install-sync`).
+
+---
+
+## Fix Attempt History
+
+### Fix Attempt 1: E08:S03:T23 dual-tree reconciliation guards (2026-06-16)
+
+**Fix Description:**
+Implemented deterministic dual-tree autofix reconciliation so autofix-class PRs no longer repeatedly fail `greenfield-install` drift checks.
+
+**Changes Made:**
+- Added `--autofix-reconcile` mode to `scripts/sync_greenfield_install.py` for Mode A (source-only stale) and Mode B (mirror-only stale) remediation.
+- Created `.github/workflows/greenfield-autofix-reconcile.yml` to run reconciliation automatically on autofix-class PR events.
+- Extended `scripts/test_sync_greenfield_install.py` with Mode A/Mode B idempotency coverage and workflow marker existence checks.
+- Updated maintainer guidance in `AGENTS.md` (P-GREENFIELD-SYNC) to document autofix-as-hint operational workflow.
+
+**Fix Verification Status:**
+- [x] Attempted resolution verified via pytest for Mode A/Mode B reconciliation and idempotency.
+- [ ] Attempted Fix (pending manual operator verification / recurrence window).
+
+**Verification Evidence:**
+- `scripts/test_sync_greenfield_install.py` passing assertions for Mode A and Mode B reconciliation + ambiguous dual-tree guidance.
+
+**Result:**
+- [x] Attempted Fix (resolution attempted; operator verification pending).
 
 ---
 

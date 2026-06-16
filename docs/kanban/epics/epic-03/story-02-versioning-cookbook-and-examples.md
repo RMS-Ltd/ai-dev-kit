@@ -48,6 +48,9 @@ housekeeping_policy: keep
 
 - [x] **E03:S02:T14 – SemVer Allocation Authority (FR-120)** - ✅ COMPLETE (**v0.3.2.14+2** — SAA + allocator repair) — [Task doc](story-02-versioning-cookbook-and-examples/T14-semver-allocation-authority-transactional-mapping-fr120.md) | [FR-120](../../fr-br/FR-120-semver-allocation-authority-transactional-mapping-black-box.md) | [IPP](../../../implementation-cycles/IPP-E03S02T14-semver-allocation-authority.md)
 
+- [ ] **E03:S02:T15 — SemVer external `+BUILD` redundancy evaluation & policy decision (UXR-031)** - INTAKE
+  - Task: [`T15-semver-external-build-metadata-redundancy-uxr031`](story-02-versioning-cookbook-and-examples/T15-semver-external-build-metadata-redundancy-uxr031.md)
+
 ---
 
 ## Overview

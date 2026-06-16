@@ -50,7 +50,7 @@ jobs:
       - name: Install dependencies
         run: pip install pytest "pyyaml>=6.0"
 
-      - name: Drift check (sources vs greenfield-install/)
+      - name: Drift check (dual-tree guard + remediation guidance)
         run: python scripts/sync_greenfield_install.py --check
 
       - name: Install orchestrator dry-run from greenfield-install/

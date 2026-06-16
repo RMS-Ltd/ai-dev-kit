@@ -4,6 +4,10 @@ Sync maintainer sources into greenfield-install/ (FR-110 / E06:S09:T21).
 
 Idempotent copy of packages/frameworks/ plus generated adopter README and footprint
 report. Use --check in CI to fail when sources change without re-sync.
+
+Autofix-class PR reconciliation:
+`--autofix-reconcile` performs dual-tree correction (Mode A vs Mode B) and then
+re-runs the existing sync + drift-check invariant.
 """
 
 from __future__ import annotations
@@ -401,12 +405,125 @@ def check(manifest: Manifest) -> int:
         for err in errors:
             print(f"DRIFT: {err}", file=sys.stderr)
         print(
-            "Run: python scripts/sync_greenfield_install.py",
+            "Dual-tree drift guard fired.\n"
+            "- If you edited only `packages/frameworks/**` (Mode A), re-run sync to regenerate "
+            "`greenfield-install/packages/frameworks/**`.\n"
+            "- If you edited only `greenfield-install/packages/frameworks/**` (Mode B), copy "
+            "changed framework files back into `packages/frameworks/**` and then regenerate "
+            "the mirror.\n"
+            "\n"
+            "For autofix-class PR remediation, see:\n"
+            "  .github/workflows/greenfield-autofix-reconcile.yml\n"
+            "\n"
+            "Manual remediation quickstart:\n"
+            "  python scripts/sync_greenfield_install.py\n",
             file=sys.stderr,
         )
         return 1
     print("greenfield-install/ in sync with sources")
     return 0
+
+
+def _parse_changed_files_csv(changed_files: str) -> List[str]:
+    parts = [p.strip() for p in (changed_files or "").split(",")]
+    return [p for p in parts if p]
+
+
+def _compute_changed_files(diff_base: str, diff_head: str) -> List[str]:
+    # Git diff outputs repo-relative file paths.
+    result = subprocess.run(
+        ["git", "diff", "--name-only", f"{diff_base}...{diff_head}"],
+        cwd=REPO_ROOT,
+        capture_output=True,
+        text=True,
+        check=False,
+    )
+    if result.returncode != 0:
+        raise RuntimeError(
+            "Failed to compute diff for autofix reconciliation: "
+            f"exit={result.returncode} stderr={(result.stderr or '').strip()}"
+        )
+    return [line.strip() for line in (result.stdout or "").splitlines() if line.strip()]
+
+
+def _classify_autofix_mode(changed_files: List[str]) -> str:
+    # Mode A: sources touched but mirror not touched.
+    # Mode B: mirror touched but sources not touched.
+    # Anything else (or neither) is ambiguous / non-autofix.
+    norm = [p.replace("\\", "/") for p in changed_files]
+    src_prefix = "packages/frameworks/"
+    mirror_prefix = "greenfield-install/packages/frameworks/"
+
+    touches_src = any(p.startswith(src_prefix) for p in norm)
+    touches_mirror = any(p.startswith(mirror_prefix) for p in norm)
+
+    if touches_src and not touches_mirror:
+        return "MODE_A"
+    if touches_mirror and not touches_src:
+        return "MODE_B"
+    if not touches_src and not touches_mirror:
+        return "NONE"
+    return "AMBIGUOUS"
+
+
+def autofix_reconcile(manifest: Manifest, *, changed_files: List[str]) -> int:
+    mode = _classify_autofix_mode(changed_files)
+    if mode == "NONE":
+        print("autofix reconcile: no dual-tree touched; skipping")
+        return 0
+
+    if mode == "AMBIGUOUS":
+        print(
+            "autofix reconcile: ambiguous diff (both Mode A + Mode B trees appear touched). "
+            "Refusing to guess.\n"
+            "Dual-tree guidance:\n"
+            "- Mode A = edit only `packages/frameworks/**` then regenerate mirror.\n"
+            "- Mode B = edit only `greenfield-install/packages/frameworks/**` then copy back "
+            "to `packages/frameworks/**` and regenerate mirror.\n"
+            "\n"
+            "Remediation workflow:\n"
+            "  .github/workflows/greenfield-autofix-reconcile.yml\n",
+            file=sys.stderr,
+        )
+        return 1
+
+    if mode == "MODE_A":
+        print("autofix reconcile: Mode A selected (sources touched only) → regenerate mirror")
+        rc = sync(manifest)
+        if rc != 0:
+            return rc
+        return check(manifest)
+
+    # MODE_B: copy changed mirror files back into the source tree first.
+    print("autofix reconcile: Mode B selected (mirror touched only) → copy back then regenerate mirror")
+    mirror_prefix = "greenfield-install/packages/frameworks/"
+    copied_any = 0
+
+    for p in changed_files:
+        norm = p.replace("\\", "/")
+        if not norm.startswith(mirror_prefix):
+            continue
+        rel = norm[len(mirror_prefix) :]
+        src_path = REPO_ROOT / "greenfield-install/packages/frameworks" / rel
+        dest_path = REPO_ROOT / "packages/frameworks" / rel
+        if not src_path.is_file():
+            continue
+        dest_path.parent.mkdir(parents=True, exist_ok=True)
+        shutil.copy2(src_path, dest_path)
+        copied_any += 1
+
+    if copied_any == 0:
+        print(
+            "autofix reconcile: Mode B selected but no mirror-side files were copyable "
+            "(changed-files likely includes deletions/renames). Refusing to guess.",
+            file=sys.stderr,
+        )
+        return 1
+
+    rc = sync(manifest)
+    if rc != 0:
+        return rc
+    return check(manifest)
 
 
 def main() -> int:
@@ -428,8 +545,50 @@ def main() -> int:
         action="store_true",
         help="Copy sources into greenfield-install/ (default)",
     )
+    group.add_argument(
+        "--autofix-reconcile",
+        action="store_true",
+        help="Classify Mode A vs Mode B from diff input, apply dual-tree correction, then enforce drift-check",
+    )
+    parser.add_argument(
+        "--changed-files",
+        type=str,
+        default=None,
+        help="Comma-separated repo-relative changed file paths (used for Mode A/B classification)",
+    )
+    parser.add_argument(
+        "--diff-base",
+        type=str,
+        default=None,
+        help="Git ref used to compute PR diff base for Mode A/B classification",
+    )
+    parser.add_argument(
+        "--diff-head",
+        type=str,
+        default=None,
+        help="Git ref used to compute PR diff head for Mode A/B classification",
+    )
     args = parser.parse_args()
     manifest = _load_manifest(args.manifest.resolve())
+
+    if args.autofix_reconcile:
+        if args.check or args.sync:
+            print("--autofix-reconcile cannot be combined with --check/--sync", file=sys.stderr)
+            return 2
+
+        if args.changed_files:
+            changed_files = _parse_changed_files_csv(args.changed_files)
+        elif args.diff_base and args.diff_head:
+            changed_files = _compute_changed_files(args.diff_base, args.diff_head)
+        else:
+            print(
+                "autofix reconcile requires either --changed-files or both --diff-base and --diff-head",
+                file=sys.stderr,
+            )
+            return 2
+
+        return autofix_reconcile(manifest, changed_files=changed_files)
+
     if args.check:
         return check(manifest)
     return sync(manifest)
