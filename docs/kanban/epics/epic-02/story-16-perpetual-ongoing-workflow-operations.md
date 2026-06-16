@@ -11,8 +11,8 @@ housekeeping_policy: keep
 **Status:** IN PROGRESS
 **Priority:** HIGH  
 **Created:** 2026-04-20  
-**Last updated:** 2026-06-16 (v0.2.16.2+12 – Kanban documentation setup)
-**Version:** v0.2.16.2+12
+**Last updated:** 2026-06-16 (v0.2.16.2+13 – UKW -c E21 archive wave)
+**Version:** v0.2.16.2+13
 **Code:** E2S16
 
 ---
@@ -29,7 +29,7 @@ Active perpetual lanes: **T01** workflow umbrella · **T02** UKW/kanban hygiene 
 
 - [ ] **E02:S16:T01 – Workflow maintenance (Perpetual)** - 🔄 PERPETUAL (**v0.2.16.1+1** — portal js-yaml 4.2.0) — [Task](story-16-perpetual-ongoing-workflow-operations/T01-workflow-maintenance-perpetual.md) | [FR-088](../../fr-br/FR-088-dedicated-story-for-perpetual-ongoing-tasks.md)
 
-- [ ] **E02:S16:T02 – Ad-hoc Kanban synchronization and hygiene (Perpetual)** - 🔄 PERPETUAL (**v0.2.16.2+12** — UXR-031 intake + E03:S02:T15 board wiring) — [Task](story-16-perpetual-ongoing-workflow-operations/T02-ad-hoc-kanban-synchronization-and-hygiene-perpetual.md) | [FR-023](../../fr-br/FR-023-update-kanban-workflow-ukw.md)
+- [ ] **E02:S16:T02 – Ad-hoc Kanban synchronization and hygiene (Perpetual)** - 🔄 PERPETUAL (**v0.2.16.2+13** — UKW -c E21 V-band archive; 41 ledger upserts) — [Task](story-16-perpetual-ongoing-workflow-operations/T02-ad-hoc-kanban-synchronization-and-hygiene-perpetual.md) | [FR-023](../../fr-br/FR-023-update-kanban-workflow-ukw.md)
 
 - [ ] **E02:S16:T03 – Ad-hoc Documentation Maintenance (Perpetual)** - 🔄 PERPETUAL (**v0.2.16.3+8**) — [Task](story-16-perpetual-ongoing-workflow-operations/T03-ad-hoc-documentation-maintenance-perpetual.md) | [FR-125](../../fr-br/FR-125-consolidate-e02s16t03-t07-documentation-maintenance-lanes.md) · [FR-058](../../fr-br/FR-058-markdown-maintenance-workflow.md) (historical) · [FR-124](../../fr-br/FR-124-meta-workflow-orchestration-composite-workflow-chains.md) (MWF docs wave)
 

@@ -50,7 +50,7 @@ housekeeping_policy: keep
 - [x] `python scripts/sync_greenfield_install.py --check` green
 - [x] `pytest -m fr006` green (109 tests)
 - [x] RW complete with forensic version anchor on this task @ **v0.21.9.3+1**
-- [ ] PR #47 CI green after push (operator verify post-RW)
+- [x] PR #47 CI green after push (operator verify post-RW) — ✅ verified 2026-06-16 (merged 2026-06-08; Docusaurus + greenfield-install SUCCESS)
 
 ---
 

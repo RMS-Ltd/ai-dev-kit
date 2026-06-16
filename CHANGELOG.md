@@ -11,11 +11,11 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
-## [0.2.16.2+12] - 16-06-26
+## [0.2.16.2+13] - 16-06-26
 
-Kanban documentation setup (RW `-k`) for **UXR-031** — SemVer `+BUILD` redundancy in `task_touch` mode; atomic intake **E03:S02:T15** + `kboard.md` row. SemVer **v0.4.1188+12**.
+E02:S16:T02 — UKW `-c` archive: **34** Epic 21 shipped verification rows + cross-epic terminal rows to kanban-completed ledger; lean `kboard.md` (E21 locale backlog + deferred only). SemVer **v0.4.1189+13**.
 
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.16.2+12.md)
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.16.2+13.md)
 
 ---
 

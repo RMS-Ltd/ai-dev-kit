@@ -28,6 +28,8 @@ housekeeping_policy: keep
 
 **Phase 3+ host stories (linguistic delivery):** [E21:S04](../epics/epic-21/story-04-cultural-adaptation.md) · [E21:S05](../epics/epic-21/story-05-european-languages-localization.md) · [E21:S06](../epics/epic-21/story-06-cjk-languages-localization.md) · [E21:S07](../epics/epic-21/story-07-rtl-and-extended-locales.md)
 
+**Operator verification (shipped tasks, 2026-06-16):** S01–S03 + shipped S04/S05/S06/S08/S09 tasks signed off for kanban archive — PR #47 merged with green CI; task-doc AC + verification tables authoritative. FR remains **IN PROGRESS** until S04–S07 locale backlog and deferred S08 layers complete.
+
 ---
 
 ## Summary
