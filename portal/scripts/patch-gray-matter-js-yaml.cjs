@@ -24,7 +24,10 @@ if (!fs.existsSync(enginesPath)) {
 
 const source = fs.readFileSync(enginesPath, 'utf8');
 const patched = source
-  .replace(/yaml\.safeLoad\.bind\(yaml\)/g, 'yaml.load.bind(yaml)')
+  .replace(
+    /yaml\.safeLoad\.bind\(yaml\)/g,
+    '(src, opts) => yaml.load(src, { ...(opts || {}), schema: yaml.DEFAULT_SCHEMA })',
+  )
   .replace(/yaml\.safeDump\.bind\(yaml\)/g, 'yaml.dump.bind(yaml)');
 
 if (source === patched) {
@@ -37,7 +40,9 @@ try {
   console.log('patched gray-matter/lib/engines.js for js-yaml@4.x');
 } catch (err) {
   console.error(
-    `Failed to patch gray-matter/lib/engines.js at ${enginesPath}: ${err?.message || err}`,
+    `Failed to patch gray-matter/lib/engines.js at ${enginesPath}: ${err?.message || err}. ` +
+      'Troubleshooting: verify write permissions for node_modules and this file, ensure dependencies are installed, ' +
+      'and if this is a permissions error, rerun the install/patch step with appropriate privileges.',
   );
   process.exit(1);
 }
