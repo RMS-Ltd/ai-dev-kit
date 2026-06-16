@@ -11,6 +11,14 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.2.16.6+17] - 16-06-26
+
+E02:S16:T06 Wave 9 — Repair AI autofix PR #70 CI regression: `tests/release_state/conftest.py` path setup + restore `test_allocate` module imports. SemVer **v0.4.1191+17**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.16.6+17.md)
+
+---
+
 ## [0.6.9.26+4] - 16-06-26
 
 E06:S09:T26 — SBL ADK install program **COMPLETE** after ten attempts; attempt 10 Arm B Install RC PASS, 0 ad-hoc KMA scripts, operational RW/UKW on SBL `dev`. Programme Phase 1 closed; Phase 2 Arm A recon next. SemVer **v0.4.1190+4**.
