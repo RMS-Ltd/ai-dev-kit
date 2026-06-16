@@ -14,8 +14,8 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** Medium (ongoing)  
 **Created:** 2026-06-05  
-**Last updated:** 2026-06-16 (Wave 9 AI autofix PR #70 CI repair @ v0.2.16.6+17)  
-**Version Anchor:** v0.2.16.6+17  
+**Last updated:** 2026-06-16 (Wave 10 AI autofix moratorium @ v0.2.16.6+18)  
+**Version Anchor:** v0.2.16.6+18  
 **Code:** E02S16T06  
 **Task Type:** Perpetual Maintenance
 
@@ -553,6 +553,56 @@ After `dev` merges to `main` and CodeQL re-scans:
 
 ---
 
+## Wave 10 — AI autofix moratorium (2026-06-16)
+
+**Theme:** Stop circular [AI findings](https://github.com/RMS-Ltd/ai-dev-kit/security/quality/ai-findings) churn; reconcile hot files; reinstate BR-101 lag-accepted policy under perpetual T06.
+
+### Incident summary (PRs #58–#82)
+
+Between 2026-06-16 09:54–15:03 UTC, **23** `ai-findings-autofix/*` PRs merged **directly to `main`**. Two files ping-ponged with non-converging Copilot suggestions:
+
+| File | Merged autofix PRs | Churn pattern |
+| ---- | ------------------ | ------------- |
+| `portal/scripts/patch-gray-matter-js-yaml.cjs` | #59, #63, #66, #69, #71, #74, #77, #78, #81 | `FAILSAFE` ↔ `DEFAULT` ↔ `SAFE` schema; `replaceAll` ↔ regex; `load.bind` ↔ wrapper |
+| `tests/release_state/test_allocate.py` | #70, #73, #75, #76, #79, #80, #82 | p95 index formula, constants, comments, spacing (#82: `50ms` → `50 ms`) |
+
+**Cost:** PR #70 broke CI (import regression → Wave 9 repair); `main`/`dev` drift on portal patch; zero net quality gain on cosmetic rounds.
+
+### Operator policy (effective immediately)
+
+| Rule | Action |
+| ---- | ------ |
+| **Do not merge** `ai-findings-autofix/*` PRs on autopilot | Triage in GH UI only; no direct-to-`main` merges |
+| **Real bugs** | Fix on `dev` / epic branch → test → **`RW E02:S16:T06`** |
+| **Cosmetic / stylistic AI suggestions** | **Ignore** — lag-accepted per [BR-101](../../../fr-br/BR-101-code-quality-ai-suggestions-backlog.md) (no GH dismiss API) |
+| **Frozen file groups** | No further autofix merges for portal patch + `test_allocate` unless a **functional** regression is demonstrated |
+
+### Canonical implementations (frozen)
+
+| File | Canonical choice | Rationale |
+| ---- | ---------------- | --------- |
+| `portal/scripts/patch-gray-matter-js-yaml.cjs` | `replaceAll` + `FAILSAFE_SCHEMA` + try/catch on write | Wave 8b security intent; write guard from autofix round without schema churn |
+| `tests/release_state/test_allocate.py` | Module-level imports; `conftest.py` path setup; `math.ceil(0.95 * n) - 1` p95; inline CI/local thresholds | Wave 9 repair; ignore spacing/constant-extraction suggestions |
+
+### Reconciliation
+
+| Surface | Action |
+| ------- | ------ |
+| `dev` | Portal patch updated to canonical (above); `test_allocate` already aligned with `main` post–Wave 9 |
+| `main` | Reconcile on next `dev` → `main` merge (not per-autofix PR) |
+
+### Verification
+
+| Check | Result |
+| ----- | ------ |
+| `pytest tests/release_state/test_allocate.py` | **9 passed** |
+| `npm run build` (portal) | **SUCCESS** |
+| `RW E02:S16:T06` | **v0.2.16.6+18** |
+
+**Shipped:** Wave 10 moratorium + portal patch reconcile @ **v0.2.16.6+18**.
+
+---
+
 ## Coordination matrix (T12–T17 vs T16)
 
 | Task | Surface | Status | T16 may remediate? |
@@ -592,6 +642,7 @@ After `dev` merges to `main` and CodeQL re-scans:
 - [x] **AC20 (Wave 8):** Dependabot hygiene — `ws@7.5.11` override + `js-yaml@4.2.0` retained; portal build green; shipped **v0.2.16.6+13**; operator TC38 Dependabot verify **pending**.
 - [x] **AC21 (Wave 8b):** Complete js-yaml **4.2.0** (gray-matter override + postinstall patch); `npm audit` 0 locally; shipped **v0.2.16.6+14**; operator TC38 verify **pending**.
 - [x] **AC22 (Wave 9):** AI autofix PR #70 CI repair — `conftest.py` path setup + `test_allocate` import restore; pytest green; shipped **v0.2.16.6+17**; PR #70 CI re-verify **pending**.
+- [x] **AC23 (Wave 10):** AI autofix moratorium documented; canonical hot files reconciled on `dev`; operator stops merging `ai-findings-autofix/*` to `main`; lag-accepted for stale AI panel rows; shipped **v0.2.16.6+18** via **`RW E02:S16:T06`**.
 
 ---
 

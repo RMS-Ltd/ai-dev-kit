@@ -11,6 +11,14 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.2.16.6+18] - 16-06-26
+
+E02:S16:T06 Wave 10 — AI autofix moratorium (PRs #58–#82 churn); canonical portal gray-matter/js-yaml patch on `dev`. SemVer **v0.4.1192+18**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.16.6+18.md)
+
+---
+
 ## [0.2.16.6+17] - 16-06-26
 
 E02:S16:T06 Wave 9 — Repair AI autofix PR #70 CI regression: `tests/release_state/conftest.py` path setup + restore `test_allocate` module imports. SemVer **v0.4.1191+17**.

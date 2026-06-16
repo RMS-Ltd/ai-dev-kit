@@ -44,7 +44,7 @@ When editing this table, update `docs/project-agent-manifest.json` `taskRouting[
 
 | Task | Summary | Task doc |
 | ---- | ------- | -------- |
-| E02:S16:T06 | FR-112 — GitHub Security & Code Quality perpetual hygiene (Wave 3e @ v0.8.3.16+9; dashboard re-verify pending) | `docs/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T06-github-security-code-quality-health-perpetual.md` |
+| E02:S16:T06 | FR-112 — Wave 10 AI autofix moratorium @ v0.2.16.6+18; stop merging ai-findings-autofix PRs | `docs/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T06-github-security-code-quality-health-perpetual.md` |
 
 Refresh from `kboard.md` when running UKW or RW Step 7; mirror into manifest `openWork[]` if changed.
 
