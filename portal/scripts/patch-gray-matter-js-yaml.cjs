@@ -24,11 +24,11 @@ if (!fs.existsSync(enginesPath)) {
 
 const source = fs.readFileSync(enginesPath, 'utf8');
 const patched = source
-  .replaceAll(
-    'yaml.safeLoad.bind(yaml)',
+  .replace(
+    /yaml\.safeLoad\.bind\(yaml\)/g,
     'function(str){ return yaml.load(str, { schema: yaml.FAILSAFE_SCHEMA }); }',
   )
-  .replaceAll('yaml.safeDump.bind(yaml)', 'yaml.dump.bind(yaml)');
+  .replace(/yaml\.safeDump\.bind\(yaml\)/g, 'yaml.dump.bind(yaml)');
 
 if (source === patched) {
   console.log('gray-matter/lib/engines.js already compatible; no patch needed');
