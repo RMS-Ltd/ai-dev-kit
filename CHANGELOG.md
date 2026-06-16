@@ -11,6 +11,14 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.2.16.6+16] - 16-06-26
+
+E02:S16:T06 follow-on — greenfield sync version parsing hardening + post-release autofix merges. SemVer **v0.4.1185+16**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.16.6+16.md)
+
+---
+
 ## [0.2.16.6+15] - 16-06-26
 
 E02:S16:T06 follow-on — greenfield installer README pins now auto-track current SemVer during sync. SemVer **v0.4.1184+15**.
