@@ -24,16 +24,23 @@ if (!fs.existsSync(enginesPath)) {
 
 const source = fs.readFileSync(enginesPath, 'utf8');
 const patched = source
-  .replaceAll(
-    'yaml.safeLoad.bind(yaml)',
+  .replace(
+    /yaml\.safeLoad\.bind\(yaml\)/g,
     'function(str){ return yaml.load(str, { schema: yaml.FAILSAFE_SCHEMA }); }',
   )
-  .replaceAll('yaml.safeDump.bind(yaml)', 'yaml.dump.bind(yaml)');
+  .replace(/yaml\.safeDump\.bind\(yaml\)/g, 'yaml.dump.bind(yaml)');
 
 if (source === patched) {
   console.log('gray-matter/lib/engines.js already compatible; no patch needed');
   process.exit(0);
 }
 
-fs.writeFileSync(enginesPath, patched);
-console.log('patched gray-matter/lib/engines.js for js-yaml@4.x');
+try {
+  fs.writeFileSync(enginesPath, patched);
+  console.log('patched gray-matter/lib/engines.js for js-yaml@4.x');
+} catch (err) {
+  console.error(
+    `Failed to patch gray-matter/lib/engines.js at ${enginesPath}: ${err && err.message ? err.message : err}`,
+  );
+  process.exit(1);
+}
