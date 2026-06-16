@@ -316,6 +316,9 @@ def _write_footprint(dest_root: Path, manifest: Manifest) -> None:
     dest_bytes = _dir_size_bytes(dest_root, manifest.ignore_globs)
     frameworks_src = REPO_ROOT / "packages" / "frameworks"
     src_bytes = _dir_size_bytes(frameworks_src, manifest.ignore_globs)
+    # NOTE: This row is an intentionally fixed historical reference baseline.
+    # It is not computed dynamically to preserve a stable comparison point across runs.
+    # Keep the date/value in sync via periodic manual review as repository size evolves.
     lines = [
         "# greenfield-install footprint",
         "",
