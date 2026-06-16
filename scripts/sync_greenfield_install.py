@@ -254,6 +254,9 @@ def _resolve_internal_version() -> str:
         if isinstance(configured, str) and configured.strip():
             version_file = REPO_ROOT / configured.strip()
     content = version_file.read_text(encoding="utf-8")
+    # Match: VERSION_STRING = <optional python string prefix><quoted value>
+    # Optional prefixes: r/R, u/U, b/B, f/F. Group 1 captures quote char (' or "),
+    # and \1 enforces the same closing quote; group 2 captures the version value.
     version_string_pattern = re.compile(
         r"""^VERSION_STRING\s*=\s*(?:[rRuUbBfF])?(['"])(.*?)\1\s*$"""
     )
