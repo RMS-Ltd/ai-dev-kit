@@ -253,7 +253,7 @@ def _resolve_internal_version() -> str:
             version_file = REPO_ROOT / configured.strip()
     content = version_file.read_text(encoding="utf-8")
     version_string_pattern = re.compile(
-        r"""^VERSION_STRING\s*=\s*(?:[rRuUbBfF]{0,2})?(['"])(.*?)\1\s*$"""
+        r"""^VERSION_STRING\s*=\s*(?:[rRuUbBfF])?(['"])(.*?)\1\s*$"""
     )
     for line in content.splitlines():
         line = line.strip()
