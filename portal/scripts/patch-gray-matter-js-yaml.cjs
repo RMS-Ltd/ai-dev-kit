@@ -24,8 +24,8 @@ if (!fs.existsSync(enginesPath)) {
 
 const source = fs.readFileSync(enginesPath, 'utf8');
 const patched = source
-  .replace('yaml.safeLoad.bind(yaml)', 'yaml.load.bind(yaml)')
-  .replace('yaml.safeDump.bind(yaml)', 'yaml.dump.bind(yaml)');
+  .replaceAll('yaml.safeLoad.bind(yaml)', 'yaml.load.bind(yaml)')
+  .replaceAll('yaml.safeDump.bind(yaml)', 'yaml.dump.bind(yaml)');
 
 if (source === patched) {
   console.log('gray-matter/lib/engines.js already compatible; no patch needed');
