@@ -16,7 +16,7 @@ housekeeping_policy: keep
 
 ## 1. Default journey (L1 — ship here)
 
-**Default depth = L1.** When you complete Arm B with blind kit KMA and Install RC strict PASS, you have **migrated enough to ship** — no mandatory megastory split, task fan-out, or maintainer reference tree.
+**Default depth = L1.** When you complete Arm B (brownfield migration path) with blind kit KMA and Install RC strict PASS, you have **migrated enough to ship** — no mandatory megastory split, task fan-out, or maintainer reference tree.
 
 | Step | Action | Kit surface |
 | ---- | ------ | ----------- |
