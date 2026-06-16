@@ -125,9 +125,11 @@ def _ignored(rel_posix: str, ignore_globs: List[str]) -> bool:
             return True
         # Also match path segments for patterns like **/__pycache__
         parts = rel_posix.split("/")
+        pattern_parts = [p for p in pattern.split("/") if p and p != "**"]
         for part in parts:
-            if fnmatch.fnmatch(part, pattern.strip("*/")):
-                return True
+            for pattern_part in pattern_parts:
+                if fnmatch.fnmatch(part, pattern_part):
+                    return True
     return False
 
 
@@ -253,7 +255,7 @@ def _resolve_internal_version() -> str:
             version_file = REPO_ROOT / configured.strip()
     content = version_file.read_text(encoding="utf-8")
     version_string_pattern = re.compile(
-        r"""^VERSION_STRING\s*=\s*(?:[rRuUbBfF]{0,2})?(['"])(.*?)\1\s*$"""
+        r"""^VERSION_STRING\s*=\s*(?:[rRuUbBfF])?(['"])(.*?)\1\s*$"""
     )
     for line in content.splitlines():
         line = line.strip()
@@ -316,6 +318,9 @@ def _write_footprint(dest_root: Path, manifest: Manifest) -> None:
     dest_bytes = _dir_size_bytes(dest_root, manifest.ignore_globs)
     frameworks_src = REPO_ROOT / "packages" / "frameworks"
     src_bytes = _dir_size_bytes(frameworks_src, manifest.ignore_globs)
+    # NOTE: This row is an intentionally fixed historical reference baseline.
+    # It is not computed dynamically to preserve a stable comparison point across runs.
+    # Keep the date/value in sync via periodic manual review as repository size evolves.
     lines = [
         "# greenfield-install footprint",
         "",

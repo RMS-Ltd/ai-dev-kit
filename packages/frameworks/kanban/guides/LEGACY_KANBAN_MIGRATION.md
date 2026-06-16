@@ -4,7 +4,7 @@ created_at: 2026-06-14T12:00:00Z
 housekeeping_policy: keep
 ---
 
-# Legacy kanban migration (v4 playbook)
+# Legacy kanban migration to v4
 
 **Use with:** KMA (Kanban Migration Agent) · [KANBAN_MIGRATION_DEPTH_AND_RATIONALIZATION.md](KANBAN_MIGRATION_DEPTH_AND_RATIONALIZATION.md) (L1 default) · [ADK_KANBAN_MIGRATION_FOR_ADOPTER_AGENTS.md](ADK_KANBAN_MIGRATION_FOR_ADOPTER_AGENTS.md) · [FR-127](../../../docs/kanban/fr-br/FR-127-agentic-kanban-migration-agent-replace-tool-pipeline.md) · [Issue #51](https://github.com/RMS-Ltd/ai-dev-kit/issues/51)
 
