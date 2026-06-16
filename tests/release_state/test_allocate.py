@@ -73,23 +73,18 @@ class TestAllocateBasics:
 
 
 class TestParallelAllocate:
-    def test_parallel_distinct_internals_no_duplicate_patch(self, tmp_path):
-        db_path = tmp_path / "state.db"
-        yaml_path = tmp_path / "semver-registry.yaml"
-        yaml_path.write_bytes(FIXTURE_YAML.read_bytes())
-        import_registry_yaml(yaml_path, db_path, changelog_dir=None)
-
+    def test_parallel_distinct_internals_no_duplicate_patch(self, saa_db):
         internals = [f"0.2.1.{i}+1" for i in range(1, 8)]
 
         def _alloc(iv: str):
-            return allocate(db_path, iv)
+            return allocate(saa_db, iv)
 
         with concurrent.futures.ThreadPoolExecutor(max_workers=4) as pool:
             results = list(pool.map(_alloc, internals))
 
         patches = [r.patch_sequence for r in results]
         assert len(patches) == len(set(patches))
-        assert audit(db_path)["ok"] is True
+        assert audit(saa_db)["ok"] is True
 
 
 class TestPerformance:
