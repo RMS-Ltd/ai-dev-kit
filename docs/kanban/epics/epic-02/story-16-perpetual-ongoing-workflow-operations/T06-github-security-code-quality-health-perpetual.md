@@ -14,8 +14,8 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** Medium (ongoing)  
 **Created:** 2026-06-05  
-**Last updated:** 2026-06-16 (Wave 8b js-yaml complete @ v0.2.16.6+14)  
-**Version Anchor:** v0.2.16.6+14  
+**Last updated:** 2026-06-16 (Wave 9 AI autofix PR #70 CI repair @ v0.2.16.6+17)  
+**Version Anchor:** v0.2.16.6+17  
 **Code:** E02S16T06  
 **Task Type:** Perpetual Maintenance
 
@@ -536,6 +536,23 @@ After `dev` merges to `main` and CodeQL re-scans:
 
 ---
 
+## Wave 9 remediation (shipped @ v0.2.16.6+17)
+
+**Theme:** AI autofix PR [#70](https://github.com/RMS-Ltd/ai-dev-kit/pull/70) CI repair — `test_allocate` import regression.
+
+| Action | Result |
+| ------ | ------ |
+| `tests/release_state/conftest.py` | shared `sys.path` setup for release_state tests |
+| Restore module-level imports in `test_allocate.py` | fixes `NameError` on `test_parse_internal` |
+| PR branch push | `f16c0ae8` on `ai-findings-autofix/tests-release_state-test_allocate.py` |
+| `pytest tests/release_state/test_allocate.py` | **9 passed** |
+| `RW E02:S16:T06 --art` | **v0.2.16.6+17** |
+| PR #70 CI (pytest + cli-coverage) | **Pending** post-push re-run |
+
+**Root cause:** Copilot autofix moved `release_state` imports into `saa_db` fixture with `globals().update()` — tests not using the fixture lost symbols.
+
+---
+
 ## Coordination matrix (T12–T17 vs T16)
 
 | Task | Surface | Status | T16 may remediate? |
@@ -574,6 +591,7 @@ After `dev` merges to `main` and CodeQL re-scans:
 - [x] **AC19 (Wave 7):** Maintainability burn-down of **4** findings shipped **v0.2.16.6+12**; ruff/pytest/greenfield green; operator TC37 verify **pending**.
 - [x] **AC20 (Wave 8):** Dependabot hygiene — `ws@7.5.11` override + `js-yaml@4.2.0` retained; portal build green; shipped **v0.2.16.6+13**; operator TC38 Dependabot verify **pending**.
 - [x] **AC21 (Wave 8b):** Complete js-yaml **4.2.0** (gray-matter override + postinstall patch); `npm audit` 0 locally; shipped **v0.2.16.6+14**; operator TC38 verify **pending**.
+- [x] **AC22 (Wave 9):** AI autofix PR #70 CI repair — `conftest.py` path setup + `test_allocate` import restore; pytest green; shipped **v0.2.16.6+17**; PR #70 CI re-verify **pending**.
 
 ---
 
