@@ -18,6 +18,7 @@ const enginesPath = path.join(
 );
 
 if (!fs.existsSync(enginesPath)) {
+  console.log('gray-matter/lib/engines.js not found; skipping patch');
   process.exit(0);
 }
 
@@ -27,6 +28,7 @@ const patched = source
   .replace('yaml.safeDump.bind(yaml)', 'yaml.dump.bind(yaml)');
 
 if (source === patched) {
+  console.log('gray-matter/lib/engines.js already compatible; no patch needed');
   process.exit(0);
 }
 
