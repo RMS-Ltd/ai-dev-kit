@@ -23,7 +23,7 @@ from release_state.import_legacy import import_registry_yaml
 REPO_ROOT = Path(__file__).resolve().parents[2]
 FIXTURE_YAML = REPO_ROOT / "tests/fixtures/semver-registry-mini.yaml"
 GITHUB_ACTIONS_THRESHOLD_S = 0.25
-LOCAL_THRESHOLD_S = 0.05
+LOCAL_THRESHOLD_S = 0.05  # 50ms p95 performance target for local development.
 
 
 @pytest.fixture
