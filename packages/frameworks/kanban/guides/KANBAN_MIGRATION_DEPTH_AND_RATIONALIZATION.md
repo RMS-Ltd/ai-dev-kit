@@ -16,7 +16,7 @@ housekeeping_policy: keep
 
 ## 1. Default journey (L1 — ship here)
 
-**Default depth = L1.** When you complete Arm B with blind kit KMA and Install RC strict PASS, you have **migrated enough to ship** — no mandatory megastory split, task fan-out, or maintainer reference tree.
+**Default depth = L1.** When you complete Arm B (brownfield migration path) with blind kit KMA and Install RC strict PASS, you have **migrated enough to ship** — no mandatory megastory split, task fan-out, or maintainer reference tree.
 
 | Step | Action | Kit surface |
 | ---- | ------ | ----------- |
@@ -24,7 +24,7 @@ housekeeping_policy: keep
 | 1 | `rw-config` skeleton | INSTALL layered sequence |
 | 2 | SQLite allocator | `import_legacy.py` or empty `.adk/release-state.db` |
 | 3 | RW installer scaffold | `install_release_workflow.py` |
-| 3½ | Documentation schema profile | `DOCUMENTATION_SCHEMA.md` |
+| 3.5 | Documentation schema profile | `DOCUMENTATION_SCHEMA.md` |
 | 3c | UKW / cursorrules wiring | INSTALL |
 | 4 | Kanban fresh Core | `install_kanban_framework.py --mode fresh --catalog v4` |
 | 5 | **KMA** — kit first pass on **archived legacy only** | `/kma` · [kma.md](../../../../.claude/commands/kma.md) |
