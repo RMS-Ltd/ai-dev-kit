@@ -11,6 +11,14 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.6.9.26+4] - 16-06-26
+
+E06:S09:T26 — SBL ADK install program **COMPLETE** after ten attempts; attempt 10 Arm B Install RC PASS, 0 ad-hoc KMA scripts, operational RW/UKW on SBL `dev`. Programme Phase 1 closed; Phase 2 Arm A recon next. SemVer **v0.4.1190+4**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.6.9.26+4.md)
+
+---
+
 ## [0.2.16.2+13] - 16-06-26
 
 E02:S16:T02 — UKW `-c` archive: **34** Epic 21 shipped verification rows + cross-epic terminal rows to kanban-completed ledger; lean `kboard.md` (E21 locale backlog + deferred only). SemVer **v0.4.1189+13**.

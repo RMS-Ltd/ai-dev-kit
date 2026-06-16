@@ -37,4 +37,6 @@ Each attempt folder typically contains:
 | 06 | [attempt-06/README.md](attempt-06/README.md) · [preflight checklist](attempt-06-preflight-checklist.md) | `v0.4.1140+2` → `256259fb2` — FR-079 **accepted**; adopter sign-off final; FR-127/BR-108 filed |
 | 07–08 | SBL `logs/` only | Attempt 08 → [#51](https://github.com/RMS-Ltd/ai-dev-kit/issues/51) (migration abandoned) |
 | 09 | [attempt-09/README.md](attempt-09/README.md) | `v0.4.1164` @ `7a08a906` — Arm B; [#52](https://github.com/RMS-Ltd/ai-dev-kit/issues/52); PRIMARY synthesis mirrored |
-| 10 | [attempt-10/README.md](attempt-10/README.md) | `v0.4.1171` @ `448a79e1` — Arm B **PASS**; FR-079 **final**; T36 AC7 satisfied ([#52](https://github.com/RMS-Ltd/ai-dev-kit/issues/52)) |
+| 10 | [attempt-10/README.md](attempt-10/README.md) | `v0.4.1171` @ `448a79e1` — Arm B **PASS**; FR-079 **final**; T26 programme **Phase 1 closed** ([#52](https://github.com/RMS-Ltd/ai-dev-kit/issues/52)) |
+
+**Programme status:** SBL install program ([E06:S09:T26](../docs/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T26-starborn-legacy-adk-install-program.md)) **COMPLETE** @ **v0.6.9.26+4** — ten attempts; SBL proceeds with domain development on `dev`. Maintainer **Phase 2** = Arm A recon (fynd.deals, Confidentia).

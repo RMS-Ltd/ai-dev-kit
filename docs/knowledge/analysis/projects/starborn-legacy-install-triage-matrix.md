@@ -190,4 +190,30 @@ housekeeping_policy: keep
 
 ## Adopter decision (not upstream defects)
 
-Starborn Legacy **closed** install attempts 1 and 2 without adopting ADK template kanban (v1 or v3). Attempts 3–4 built a **dual-tree migration test bed** but were **blocked** on v1 catalog (**F9/F17**). Attempt 5 confirmed **v3.2** on disk; attempt 6 **adopter sign-off final** — full ADK install + agentic migration; FR-079 accepted; **F22/F23** filed as FR-127/T31 and BR-108/T32. Residual upstream: orchestrator ergonomics (**F10/F20**).
+Starborn Legacy **closed** install attempts 1 and 2 without adopting ADK template kanban (v1 or v3). Attempts 3–4 built a **dual-tree migration test bed** but were **blocked** on v1 catalog (**F9/F17**). Attempt 5 confirmed **v3.2** on disk; attempt 6 **adopter sign-off final** — full ADK install + agentic migration; FR-079 accepted; **F22/F23** filed as FR-127/T31 and BR-108/T32. Attempts **7–8** explored in-place migration (abandoned @ 8). Attempts **9–10** validated **Arm B** selective adoption: attempt 10 Install RC strict **PASS**, **0** ad-hoc KMA scripts, SQLite, first domain RW — programme **Phase 1** closed @ [T26](../../../kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T26-starborn-legacy-adk-install-program.md) **v0.6.9.26+4**.
+
+---
+
+## Attempt 9 addendum (2026-06-15) — Arm B
+
+| Topic | Result |
+|-------|--------|
+| ADK pin | `v0.4.1164` @ `7a08a906` |
+| Arm | **B** — greenfield shell + selective KMA |
+| KMA | **PASS** (manual; 6 ad-hoc scripts) |
+| Install RC | **~50% FAIL** — Phase 0 kit gaps (sqlite, UKW, docs schema) |
+| Synthesis | PRIMARY → [T36](../../../kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T36-adopter-path-selector-install-rc-uxr029.md) / [UXR-029](../../../kanban/fr-br/UXR-029-adk-install-path-experiment.md) / [#52](https://github.com/RMS-Ltd/ai-dev-kit/issues/52) |
+
+---
+
+## Attempt 10 addendum (2026-06-15) — Arm B closure
+
+| Topic | Result |
+|-------|--------|
+| ADK pin | `v0.4.1171` @ `448a79e1` |
+| Install RC (strict) | **PASS** — 10 blocking / 1 skip |
+| KMA | **PASS** — kit-owned; **0** ad-hoc scripts |
+| Release authority | **SQLite** — `.adk/release-state.db` |
+| Operational | First domain RW + post-install UKW on SBL `dev` |
+| Programme | [T26](../../../kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T26-starborn-legacy-adk-install-program.md) **COMPLETE** @ **v0.6.9.26+4** |
+| Index | [attempt-10/README.md](../../../../adk-install-into-sbl/attempt-10/README.md) |

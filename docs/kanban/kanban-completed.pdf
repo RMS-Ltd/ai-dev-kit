@@ -3,22 +3,30 @@
 << /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
 endobj
 2 0 obj
-<< /Length 2272 >>
+<< /Length 2311 >>
 stream
 BT
 /F1 10 Tf
 50 800 Td
 (Kanban Completed Tasks) Tj
 0 -14 Td
-(Generated: 2026-06-16T13:42:13Z) Tj
+(Generated: 2026-06-16T14:01:01Z) Tj
 0 -14 Td
-(Total rows: 243) Tj
+(Total rows: 244) Tj
 0 -14 Td
 () Tj
 0 -14 Td
 (20 Most Recently Completed) Tj
 0 -14 Td
 (-------------------------) Tj
+0 -14 Td
+(E06:S09:T26 | 2026-06-16T13:57:07Z | v0.6.9.26+4 | RW Step 7) Tj
+0 -14 Td
+(SBL ADK install program COMPLETE ? ten attempts; attempt 10 Arm B Install RC PASS;) Tj
+0 -14 Td
+(programme Phase 1 closed) Tj
+0 -14 Td
+() Tj
 0 -14 Td
 (E02:S03:T12 | 2026-06-16T12:00:00Z | v0.2.3.12+1 | UKW -c) Tj
 0 -14 Td
@@ -89,14 +97,6 @@ BT
 (E21:S01:T05 | 2026-06-16T12:00:00Z | v0.21.1.5+1 | UKW -c) Tj
 0 -14 Td
 (Implement configuration persistence \(`ai-dev-kit-config.yaml`\)) Tj
-0 -14 Td
-() Tj
-0 -14 Td
-(E21:S01:T06 | 2026-06-16T12:00:00Z | v0.21.1.6+1 | UKW -c) Tj
-0 -14 Td
-(Update content generation to use language preference \(RW, templates\)) Tj
-0 -14 Td
-() Tj
 ET
 endstream
 endobj
@@ -104,11 +104,19 @@ endobj
 << /Type /Page /Parent 16 0 R /MediaBox [0 0 612 842] /Contents 2 0 R /Resources << /Font << /F1 1 0 R >> >> >>
 endobj
 4 0 obj
-<< /Length 4749 >>
+<< /Length 4615 >>
 stream
 BT
 /F1 10 Tf
 50 800 Td
+() Tj
+0 -14 Td
+(E21:S01:T06 | 2026-06-16T12:00:00Z | v0.21.1.6+1 | UKW -c) Tj
+0 -14 Td
+(Update content generation to use language preference \(RW, templates\)) Tj
+0 -14 Td
+() Tj
+0 -14 Td
 (E21:S01:T07 | 2026-06-16T12:00:00Z | v0.21.1.7+1 | UKW -c) Tj
 0 -14 Td
 (Test UK/US English selection and content generation) Tj
@@ -142,12 +150,6 @@ BT
 (E21:S02:T05 | 2026-06-16T12:00:00Z | v0.21.2.5+1 | UKW -c) Tj
 0 -14 Td
 (Configure date/time/number formatting per locale) Tj
-0 -14 Td
-() Tj
-0 -14 Td
-(E21:S02:T06 | 2026-06-16T12:00:00Z | v0.21.2.6+1 | UKW -c) Tj
-0 -14 Td
-(Implement translation key system) Tj
 0 -14 Td
 () Tj
 0 -14 Td
@@ -196,8 +198,6 @@ BT
 (E02:S03:T09 | 2026-06-15T20:04:09Z | v0.21.4.3+1 | **E02:S03:T09** ? MWF `delivery` recipe \(`mwf.md`, KB, registry, routing, cheatsheet §4c\). **Completed:** `2026-06-10T12) Tj
 0 -14 Td
 (E02:S03:T10 | 2026-06-15T20:04:09Z | v0.0.0.0+0 | **E02:S03:T10** ? Encapsulation contract, CMW/PVW command guides, registry metadata, `validate_workflow_encapsulation.py) Tj
-0 -14 Td
-(E02:S03:T11 | 2026-06-15T20:04:09Z | v0.2.3.9+3 | **E02:S03:T11** ? BR-102 fix shipped via T10 Wave 3 \(`mwf.md`, KB, cheatsheet\). **Completed:** `2026-06-10T15:10:33Z` | ) Tj
 ET
 endstream
 endobj
@@ -205,11 +205,13 @@ endobj
 << /Type /Page /Parent 16 0 R /MediaBox [0 0 612 842] /Contents 4 0 R /Resources << /Font << /F1 1 0 R >> >> >>
 endobj
 6 0 obj
-<< /Length 7342 >>
+<< /Length 7344 >>
 stream
 BT
 /F1 10 Tf
 50 800 Td
+(E02:S03:T11 | 2026-06-15T20:04:09Z | v0.2.3.9+3 | **E02:S03:T11** ? BR-102 fix shipped via T10 Wave 3 \(`mwf.md`, KB, cheatsheet\). **Completed:** `2026-06-10T15:10:33Z` | ) Tj
+0 -14 Td
 (E02:S03:T12 | 2026-06-16T12:00:00Z | v0.2.3.12+1 | Environment-aware workflow execution \(FR-128\)) Tj
 0 -14 Td
 (E02:S06:T01 | 2026-05-15T00:00:00Z | v0.2.6.1+2 | **E02:S06:T01** ? FR-008 uninstall command and safety rails ? **RE-IMPLEMENTED**. Fixed broken CLI `remove` command \(`se) Tj
@@ -297,8 +299,6 @@ BT
 (E04:S09:T01 | 2026-05-15T00:00:00Z | v0.4.9.1+1 | **E04:S09:T01** ? BR-007 fix multiple kanban package installation defects. Fixed missing `Tuple` import in `analyze_stru) Tj
 0 -14 Td
 (E04:S09:T05 | 2026-05-15T00:00:00Z | v0.4.9.1+1 | **E04:S09:T05** ? BR-008 remove arbitrary 80% threshold contradicting agentic intelligence. Removed all blocking thresho) Tj
-0 -14 Td
-(E04:S09:T06 | 2026-05-15T00:00:00Z | v0.4.9.1+1 | **E04:S09:T06** ? FR-010 implement actual agentic intelligence for task mapping. Foundation implemented with extensible ) Tj
 ET
 endstream
 endobj
@@ -306,11 +306,13 @@ endobj
 << /Type /Page /Parent 16 0 R /MediaBox [0 0 612 842] /Contents 6 0 R /Resources << /Font << /F1 1 0 R >> >> >>
 endobj
 8 0 obj
-<< /Length 7582 >>
+<< /Length 7578 >>
 stream
 BT
 /F1 10 Tf
 50 800 Td
+(E04:S09:T06 | 2026-05-15T00:00:00Z | v0.4.9.1+1 | **E04:S09:T06** ? FR-010 implement actual agentic intelligence for task mapping. Foundation implemented with extensible ) Tj
+0 -14 Td
 (E04:S10:T01 | 2026-05-15T00:00:00Z | v0.4.10.1+0 | **E04:S10:T01** ? FR-012 agentic kanban task creation from intake documents. Design document created: `agentic-fr-br-ana) Tj
 0 -14 Td
 (E04:S11:T07 | 2026-03-12T14:00:00Z | v0.4.11.7+1 | **E04:S11:T07** ? Migrate Embedded Tasks to Discrete Task Documents) Tj
@@ -398,8 +400,6 @@ BT
 (E05:S09:T06 | 2026-03-30T16:11:41Z | v0.5.9.6+1 | **E05:S09:T06** ? Docusaurus GitHub Pages deployment \(**FR-070**\): `.github/workflows/docusaurus-deploy.yml`, portal hos) Tj
 0 -14 Td
 (E05:S09:T07 | 2026-03-30T16:59:05Z | v0.5.9.7+1 | **E05:S09:T07** ? Docusaurus site search \(**FR-071**\): `@easyops-cn/docusaurus-search-local` in `portal/docusaurus.confi) Tj
-0 -14 Td
-(E05:S09:T08 | 2026-04-01T14:30:00Z | v0.5.9.8+2 | **E05:S09:T08** ? Docusaurus **strict** broken **links** \(**`throw`**\) post?**FR-067** \(**FU-1** closed\): corpus link re) Tj
 ET
 endstream
 endobj
@@ -407,11 +407,13 @@ endobj
 << /Type /Page /Parent 16 0 R /MediaBox [0 0 612 842] /Contents 8 0 R /Resources << /Font << /F1 1 0 R >> >> >>
 endobj
 10 0 obj
-<< /Length 7442 >>
+<< /Length 7445 >>
 stream
 BT
 /F1 10 Tf
 50 800 Td
+(E05:S09:T08 | 2026-04-01T14:30:00Z | v0.5.9.8+2 | **E05:S09:T08** ? Docusaurus **strict** broken **links** \(**`throw`**\) post?**FR-067** \(**FU-1** closed\): corpus link re) Tj
+0 -14 Td
 (E05:S09:T09 | 2026-03-31T12:10:00Z | v0.5.9.9+2 | **E05:S09:T09** ? GitHub Pages **go-live** \(**FR-070** follow-up\): `epic/5` ? **`main`**, Actions run **23796236180** gr) Tj
 0 -14 Td
 (E05:S09:T10 | 2026-04-01T15:17:58Z | v0.5.9.10+2 | **E05:S09:T10** ? Docusaurus **strict broken anchors** \(`onBrokenAnchors: 'throw'`\) post?**T08** \(**FR-067 FU-3**\): corp) Tj
@@ -499,8 +501,6 @@ BT
 (E06:S09:T24 | 2026-06-05T15:30:00Z | v0.6.9.24+2 | **E06:S09:T24** ? Acquisition-layer ADK error codes \(registry 1.1.0 I05/I06, `verify_vendor_tree.py`, CLI I06, doc-sync ) Tj
 0 -14 Td
 (E06:S09:T25 | 2026-06-09T09:11:54Z | v0.6.9.25+2 | **E06:S09:T25** ? Triage matrix + greenfield orchestrator F4/F5 fix \(`resolve_frameworks_base`, `--config`, `--non-inter) Tj
-0 -14 Td
-(E06:S09:T27 | 2026-06-15T20:04:09Z | v0.2.1.30+8 | **E06:S09:T27** ? v3.2 Small-tier catalog on `--mode fresh`; FR/BR/UXR at E04:S02?S04; SemVer **v0.4.1132+1**; unblocks ) Tj
 ET
 endstream
 endobj
@@ -508,11 +508,15 @@ endobj
 << /Type /Page /Parent 16 0 R /MediaBox [0 0 612 842] /Contents 10 0 R /Resources << /Font << /F1 1 0 R >> >> >>
 endobj
 12 0 obj
-<< /Length 7356 >>
+<< /Length 7383 >>
 stream
 BT
 /F1 10 Tf
 50 800 Td
+(E06:S09:T26 | 2026-06-16T13:57:07Z | v0.6.9.26+4 | SBL ADK install program COMPLETE ? ten attempts; attempt 10 Arm B Install RC PASS; programme Phase 1 closed) Tj
+0 -14 Td
+(E06:S09:T27 | 2026-06-15T20:04:09Z | v0.2.1.30+8 | **E06:S09:T27** ? v3.2 Small-tier catalog on `--mode fresh`; FR/BR/UXR at E04:S02?S04; SemVer **v0.4.1132+1**; unblocks ) Tj
+0 -14 Td
 (E06:S09:T28 | 2026-06-15T20:04:09Z | v0.6.9.27+2 | **E06:S09:T28** ? Contract alignment: BR-086 accepts v3.2 UXR-014 `{story:02d}` / `T{task}` patterns; resolves F18. SemV) Tj
 0 -14 Td
 (E06:S09:T29 | 2026-06-15T20:04:09Z | v0.6.9.28+2 | **E06:S09:T29** ? `scaffold_interactive` wiring: `--non-interactive` auto-creates CHANGELOG + version_file without stdin) Tj
@@ -598,10 +602,6 @@ BT
 (E09:S01:T03 | 2026-06-04T22:15:00Z | v0.9.1.3+1 | **E09:S01:T03** ? **FR-032.3**: RC gap comparison ? T01 inventory, T02 RC=1 criteria, gap matrix report.) Tj
 0 -14 Td
 (E09:S05:T04 | 2026-05-18T00:00:00Z | v0.9.5.4+2 | **E09:S05:T04** ? UXR-011: Kanban naming hygiene and directory systematic cleanup. Systematically cleaned up naming and ) Tj
-0 -14 Td
-(E10:S01:T01 | 2026-06-06T14:45:56Z | v0.10.1.1+1 | **E10:S01:T01** ? Establish expectations baseline for Document Lifecycle package) Tj
-0 -14 Td
-(E10:S01:T02 | 2026-06-06T14:47:28Z | v0.10.1.2+1 | **E10:S01:T02** ? Inventory package components and map to expectations: companion inventory map, task doc fleshed, V1?V8) Tj
 ET
 endstream
 endobj
@@ -609,11 +609,15 @@ endobj
 << /Type /Page /Parent 16 0 R /MediaBox [0 0 612 842] /Contents 12 0 R /Resources << /Font << /F1 1 0 R >> >> >>
 endobj
 14 0 obj
-<< /Length 5127 >>
+<< /Length 5459 >>
 stream
 BT
 /F1 10 Tf
 50 800 Td
+(E10:S01:T01 | 2026-06-06T14:45:56Z | v0.10.1.1+1 | **E10:S01:T01** ? Establish expectations baseline for Document Lifecycle package) Tj
+0 -14 Td
+(E10:S01:T02 | 2026-06-06T14:47:28Z | v0.10.1.2+1 | **E10:S01:T02** ? Inventory package components and map to expectations: companion inventory map, task doc fleshed, V1?V8) Tj
+0 -14 Td
 (E10:S01:T04 | 2026-06-06T14:48:05Z | v0.10.1.4+1 | **E10:S01:T04** ? Review integrations and dependency alignment) Tj
 0 -14 Td
 (E10:S01:T05 | 2026-06-06T14:51:20Z | v0.10.1.5+1 | **E10:S01:T05** ? Create gap log and risk assessment: 16 `GAP-DOCLIFE-*` entries consolidated from T01?T04; conditional ) Tj
@@ -714,23 +718,23 @@ xref
 0000000000 65535 f 
 0000000009 00000 n 
 0000000079 00000 n 
-0000002403 00000 n 
-0000002530 00000 n 
-0000007331 00000 n 
-0000007458 00000 n 
-0000014852 00000 n 
-0000014979 00000 n 
-0000022613 00000 n 
-0000022740 00000 n 
-0000030235 00000 n 
-0000030364 00000 n 
-0000037773 00000 n 
-0000037902 00000 n 
-0000043082 00000 n 
-0000043211 00000 n 
-0000043308 00000 n 
+0000002442 00000 n 
+0000002569 00000 n 
+0000007236 00000 n 
+0000007363 00000 n 
+0000014759 00000 n 
+0000014886 00000 n 
+0000022516 00000 n 
+0000022643 00000 n 
+0000030141 00000 n 
+0000030270 00000 n 
+0000037706 00000 n 
+0000037835 00000 n 
+0000043347 00000 n 
+0000043476 00000 n 
+0000043573 00000 n 
 trailer
 << /Size 18 /Root 17 0 R >>
 startxref
-43359
+43624
 %%EOF

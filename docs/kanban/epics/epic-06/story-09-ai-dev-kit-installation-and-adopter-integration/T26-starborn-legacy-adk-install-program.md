@@ -9,17 +9,17 @@ housekeeping_policy: keep
 # Epic 6, Story 9, Task 26: Starborn Legacy ADK install program
 
 **Task ID:** E06:S09:T26  
-**Status:** IN PROGRESS  
+**Status:** COMPLETE  
 **Priority:** HIGH  
 **Created:** 2026-06-09  
-**Last updated:** 2026-06-11 (FR-079 attempt 06 **accepted** — adopter sign-off final; F22→FR-127/T31, F23→BR-108/T32)  
-**Version:** v0.6.9.26+3  
-**Version Anchor:** v0.6.9.26+3  
+**Last updated:** 2026-06-16 (attempt **10** Arm B PASS — programme **Phase 1** closed @ **v0.6.9.26+4**)  
+**Version:** v0.6.9.26+4  
+**Version Anchor:** v0.6.9.26+4  
 **Code:** E06S09T26
 
 **Predecessor (closed):** [E06:S09:T25](T25-starborn-legacy-greenfield-install-diary-triage-uxr025.md) — UXR-025 triage + F4/F5 fixes @ **v0.6.9.25+3**
 
-**Related:** [UXR-025](../../../fr-br/UXR-025-starborn-legacy-greenfield-install-diary.md) · [FR-081](../../../fr-br/FR-081-brownfield-modular-adopter-integration.md) · [FR-080](../../../fr-br/FR-080-greenfield-installation-process.md) · [FR-079](../../../fr-br/FR-079-install-feedback-submission-path-and-governance.md) · [FR-132](../../../fr-br/FR-132-kanban-v4-three-tier-catalogue.md) · [UXR-029](../../../fr-br/UXR-029-adk-install-path-experiment.md) · [Issue #51](https://github.com/RMS-Ltd/ai-dev-kit/issues/51) · [Issue #52](https://github.com/RMS-Ltd/ai-dev-kit/issues/52) · [SBL attempt 09 replay](../../../../knowledge/analysis/projects/sbl-attempt-09-kanban-v4-replay.md) · [T36](T36-adopter-path-selector-install-rc-uxr029.md)
+**Related:** [UXR-025](../../../fr-br/UXR-025-starborn-legacy-greenfield-install-diary.md) · [FR-081](../../../fr-br/FR-081-brownfield-modular-adopter-integration.md) · [FR-080](../../../fr-br/FR-080-greenfield-installation-process.md) · [FR-079](../../../fr-br/FR-079-install-feedback-submission-path-and-governance.md) · [FR-132](../../../fr-br/FR-132-kanban-v4-three-tier-catalogue.md) · [FR-133](../../../fr-br/FR-133-kanban-migration-depth-rationalization-adopter-guide.md) · [UXR-029](../../../fr-br/UXR-029-adk-install-path-experiment.md) · [Issue #51](https://github.com/RMS-Ltd/ai-dev-kit/issues/51) · [Issue #52](https://github.com/RMS-Ltd/ai-dev-kit/issues/52) · [SBL attempt 09 replay](../../../../knowledge/analysis/projects/sbl-attempt-09-kanban-v4-replay.md) · [T36](T36-adopter-path-selector-install-rc-uxr029.md) · [attempt-10 index](../../../../../../adk-install-into-sbl/attempt-10/README.md)
 
 ---
 
@@ -27,7 +27,9 @@ housekeeping_policy: keep
 
 **Ongoing maintainer task** to manage AI Dev Kit installation into **Starborn Legacy (SBL)**: run and record install attempts, ingest adopter feedback, drive upstream ADK fixes/docs, and converge on a viable integration path (RW-only greenfield, brownfield per FR-081, or hybrid) without replacing SBL’s legacy **E/S/T** PM unless explicitly decided.
 
-**Attempt 06 status (2026-06-11):** SBL **attempt 06** FR-079 package **accepted** with **adopter sign-off final** (`package_status: final`, `final_signoff` @ `20260611T094319Z` — **7 READY / 1 SKIP / 0 NOT READY**). Pin **`v0.4.1140+2`** (`256259fb2`). **AC13–AC15 PASS**; full ADK greenfield + agentic migration (72 stories). Intake filed: **[FR-127](../../../fr-br/FR-127-agentic-kanban-migration-agent-replace-tool-pipeline.md)** / [T31](T31-agentic-kanban-migration-agent-fr127.md) (**F22**) · **[BR-108](../../../fr-br/BR-108-detect-existing-structure-zero-padded-epic-names.md)** / [T32](T32-detect-structure-zero-padded-epic-br108.md) (**F23**). **Open:** **F10** / **F20** orchestrator ergonomics.
+**Programme closure (2026-06-16):** Ten attempts validated the install path. **Arm B** selective adoption (attempts **9–10**) is the adopted SBL model: greenfield shell + kit-owned KMA + Install RC PASS + SQLite + first domain RW. SBL proceeds with **domain development** on `dev`; maintainer programme **Phase 2** = Arm A recon (fynd.deals, Confidentia). See [attempt-10 index](../../../../../../adk-install-into-sbl/attempt-10/README.md).
+
+**Attempt 06 status (2026-06-11):** SBL **attempt 06** FR-079 package **accepted** with **adopter sign-off final** (`package_status: final`, `final_signoff` @ `20260611T094319Z` — **7 READY / 1 SKIP / 0 NOT READY**). Pin **`v0.4.1140+2`** (`256259fb2`). **AC13–AC15 PASS**; full ADK greenfield + agentic migration (72 stories). Intake filed: **[FR-127](../../../fr-br/FR-127-agentic-kanban-migration-agent-replace-tool-pipeline.md)** / [T31](T31-agentic-kanban-migration-agent-fr127.md) (**F22**) · **[BR-108](../../../fr-br/BR-108-detect-existing-structure-zero-padded-epic-names.md)** / [T32](T32-detect-structure-zero-padded-epic-br108.md) (**F23**).
 
 ---
 
@@ -117,6 +119,10 @@ Attempts **1** and **2** proved installer contracts (sign-off ALL READY) but **f
 - [x] **AC14:** Full ADK greenfield install on SBL — workflows, frameworks, `rw-config.yaml`, `src/starborn_legacy/version.py`, Obsidian + Docusaurus surfaces @ attempt 06.
 - [x] **AC15:** Legacy E/S/T → ADK v3.2 migration exercise — 19 legacy epics → 10 canonical + 8 domain epics; 72 stories migrated; legacy `KB/PM_and_Portfolio/` preserved @ attempt 06 (agentic method; migration tools **F22** inadequate).
 - [x] **AC16:** FR-079 attempt 06 package **accepted** — adopter sign-off final @ 2026-06-11; F22/F23 filed as FR-127/T31 and BR-108/T32.
+- [x] **AC17:** Attempt 09 ingested — PRIMARY synthesis → [T36](T36-adopter-path-selector-install-rc-uxr029.md) / [UXR-029](../../../fr-br/UXR-029-adk-install-path-experiment.md) / [ADR-030](../../../../architecture/standards-and-adrs/ADR-030-selective-adoption-three-path-model.md); Install RC ~50% FAIL documented.
+- [x] **AC18:** Attempt 10 Arm B replay — Install RC strict **PASS**; **0** ad-hoc KMA scripts; SQLite before first RW @ pin **`v0.4.1171`** (`448a79e1`).
+- [x] **AC19:** FR-079 attempt 10 package **accepted** — adopter sign-off final @ 2026-06-15; [attempt-10 index](../../../../../../adk-install-into-sbl/attempt-10/README.md).
+- [x] **AC20:** SBL operational — first domain RW (`E02:S02:T01` · `v0.2.2.1+1`) + post-install UKW (`E02:S16:T02` · `v0.2.16.2+1`) on SBL `dev`.
 
 ---
 
@@ -133,6 +139,7 @@ Attempts **1** and **2** proved installer contracts (sign-off ALL READY) but **f
 | 7 | `v0.4.1161` | **Partial PASS** — greenfield install; sign-off friction | SBL `…/attempt-07/` |
 | 8 | `0d0e5ab3` | **FAIL** — in-place legacy migration abandoned | [#51](https://github.com/RMS-Ltd/ai-dev-kit/issues/51) · SBL `…/attempt-08/` |
 | 9 | `v0.4.1164` @ `7a08a906` | **Arm B** — KMA PASS; Install RC ~50% FAIL; PRIMARY synthesis → [T36](T36-adopter-path-selector-install-rc-uxr029.md) | [#52](https://github.com/RMS-Ltd/ai-dev-kit/issues/52) · [Attempt 09 index](../../../../../../adk-install-into-sbl/attempt-09/README.md) · [Synthesis article](../../../../knowledge/articles/greenfield-brownfield-selective-adoption-sbl-attempt-09.md) |
+| 10 | `v0.4.1171` @ `448a79e1` | **Arm B PASS** — Install RC strict PASS; 0 ad-hoc KMA; first domain RW + UKW; FR-079 **final**; programme **Phase 1** closed | [Attempt 10 index](../../../../../../adk-install-into-sbl/attempt-10/README.md) · SBL `docs/adk-feedback/attempt-10/` |
 
 > **Path convention:** `starborn_legacy/logs/ai-dev-kit/install/attempt-NN/` — see [adk-install-into-sbl/README.md](../../../../../../adk-install-into-sbl/README.md).
 
@@ -227,15 +234,14 @@ See SBL `…/attempt-06/feedback-package/kanban-migration-experiment-report.md` 
 
 | Priority | Item | Owner | Notes |
 |----------|------|-------|-------|
-| **P0** | ~~SBL attempt 06 FR-079 intake~~ | — | ✅ **ACCEPTED** @ 2026-06-11 — adopter sign-off final |
-| **P1** | **F22** — agentic migration agent | [T31](T31-agentic-kanban-migration-agent-fr127.md) | [FR-127](../../../fr-br/FR-127-agentic-kanban-migration-agent-replace-tool-pipeline.md) filed |
-| **P1** | **F23** — zero-padded epic detection | [T32](T32-detect-structure-zero-padded-epic-br108.md) | [BR-108](../../../fr-br/BR-108-detect-existing-structure-zero-padded-epic-names.md) filed |
-| **P1** | **F10** — orchestrator `--skip-kanban` / `use_kanban: false` | T26 / future task | Workaround: manual 4-step dual-tree sequence (still used in attempt 06) |
-| **P1** | **F20** — project-aware `version_file` default | T26 / future task | Workaround: pre-create `version_file` + `--config` |
-| **P2** | **F12–F14** — migration-test-bed documentation | T26 | RW defer → legacy restore → kanban → RW mode C |
-| **P2** | SBL production RW on new scaffold | Adopter | First real release on `ai-dev-kit` branch post-install |
+| — | ~~SBL install program (T26)~~ | — | ✅ **COMPLETE** @ **v0.6.9.26+4** — attempt 10 Arm B PASS |
+| **P0** | Programme **Phase 2** — fynd.deals / Confidentia Arm A recon | Maintainer | Per [adopter-install-attempt-preflight](../../../../guides/adopter-install-attempt-preflight.md) |
+| **P1** | **F22** — agentic migration agent | [T31](T31-agentic-kanban-migration-agent-fr127.md) | [FR-127](../../../fr-br/FR-127-agentic-kanban-migration-agent-replace-tool-pipeline.md) |
+| **P1** | **F23** — zero-padded epic detection | [T32](T32-detect-structure-zero-padded-epic-br108.md) | [BR-108](../../../fr-br/BR-108-detect-existing-structure-zero-padded-epic-names.md) |
+| **P2** | **F10** / **F20** — orchestrator ergonomics | Future installer task | Workarounds documented; not SBL blockers |
+| **P2** | SBL domain development + normal RW/UKW | Adopter | Operational on `dev` post attempt 10; optional L2/L3 per [FR-133](../../../fr-br/FR-133-kanban-migration-depth-rationalization-adopter-guide.md) |
 
-**Program milestone:** Attempt 06 **adopter sign-off** closes the **SBL greenfield install program** — v3.2 path verified, full framework deployed, legacy kanban migrated, FR-079 accepted. Remaining upstream work: **F10/F20** ergonomics; **F22/F23** implementation via T31/T32; SBL operational RW releases on `ai-dev-kit` branch.
+**Programme milestone:** Attempt **10** closes the **SBL ADK install program** — Arm B validated end-to-end (RC PASS, kit-owned KMA, SQLite, first RW). Ten attempts total: v3.2 catalog arc (1–6), abandoned in-place migration (8), selective adoption proof (9–10). Maintainer focus shifts to **Arm A** control repos; SBL continues as operational adopter.
 
 ---
 

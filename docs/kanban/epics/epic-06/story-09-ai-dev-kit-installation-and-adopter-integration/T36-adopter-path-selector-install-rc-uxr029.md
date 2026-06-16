@@ -93,7 +93,7 @@ Deliver the **Adopter Path Selector**, **layered install sequence**, and **Insta
 - [x] **AC4:** INSTALL contains Adopter Path Selector (Paths 1–3) + layered sequence.
 - [x] **AC5:** Install RC checklist extended with Arm B blocking rows.
 - [x] **AC6:** Greenfield orchestrator implements Phase 0 layered steps (sqlite, adoption-path, Install RC gate).
-- [ ] **AC7:** SBL attempt 10 Arm B replay — 0 ad-hoc KMA scripts; RC PASS target.
+- [x] **AC7:** SBL attempt 10 Arm B replay — 0 ad-hoc KMA scripts; RC PASS target. ✅ Satisfied @ attempt 10 (`v0.4.1171`); closed via [T26](T26-starborn-legacy-adk-install-program.md) @ **v0.6.9.26+4**.
 
 ---
 

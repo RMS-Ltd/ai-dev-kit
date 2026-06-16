@@ -13,7 +13,7 @@ housekeeping_policy: keep
 **Submitted:** 2026-06-15  
 **Submitted By:** Starborn Legacy (FR-079 attempt 09)  
 **Priority:** HIGH (Must Have — MoSCOW **M**)  
-**Status:** IN PROGRESS (kit Phase 0 @ v0.6.9.36+3 — AC7 adopter replay pending)  
+**Status:** IN PROGRESS (kit Phase 0 @ v0.6.9.36+3 — AC5/AC7 satisfied @ attempt 10)  
 **Implementing Task:** [E06:S09:T36](../epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T36-adopter-path-selector-install-rc-uxr029.md)
 
 **Related:** [Issue #52](https://github.com/RMS-Ltd/ai-dev-kit/issues/52) · [Issue #51](https://github.com/RMS-Ltd/ai-dev-kit/issues/51) · [UXR-025](UXR-025-starborn-legacy-greenfield-install-diary.md) · [FR-080](FR-080-greenfield-installation-process.md) · [FR-081](FR-081-brownfield-modular-adopter-integration.md) · [ADR-003](../../architecture/standards-and-adrs/ADR-003-greenfield-vs-brownfield-adoption.md) · [ADR-030](../../architecture/standards-and-adrs/ADR-030-selective-adoption-three-path-model.md) · [E06:S09:T26](../epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T26-starborn-legacy-adk-install-program.md)
@@ -44,11 +44,11 @@ Formalise a **three-path adoption experiment** for mature repositories: **Arm A*
 
 ## Hypotheses
 
-| ID | Statement | Measurement | Attempt 09 |
-|----|-----------|-------------|------------|
-| **H0 (Arm A)** | Brownfield in-place → faster install-complete, less dual-tree confusion | Install RC % READY; time to first RW | **Not tested** |
-| **H1 (Arm B)** | Shell + migration → cleaner ADK shape, fewer validator failures | `validate_v4_template_completeness --strict`; RC % | **Partial support** — kanban PASS; RC ~50% |
-| **H-null** | Path choice matters less than kit completeness | RC FAIL rows attributable to orchestration vs path | **Strong support** |
+| ID | Statement | Measurement | Attempt 09 | Attempt 10 |
+|----|-----------|-------------|------------|------------|
+| **H0 (Arm A)** | Brownfield in-place → faster install-complete, less dual-tree confusion | Install RC % READY; time to first RW | **Not tested** | **Not tested** |
+| **H1 (Arm B)** | Shell + migration → cleaner ADK shape, fewer validator failures | `validate_v4_template_completeness --strict`; RC % | **Partial** — kanban PASS; RC ~50% | **Supported** — RC strict **PASS**; 0 ad-hoc KMA |
+| **H-null** | Path choice matters less than kit completeness | RC FAIL rows attributable to orchestration vs path | **Strong support** | **Confirmed** — Phase 0 kit fixes closed RC gap |
 
 ---
 
@@ -94,7 +94,7 @@ Phase 4 — Synthesis → Adopter Path Selector at RC
 - [x] **AC2:** INSTALL publishes **Adopter Path Selector** with Paths 1–3 + cross-cutting requirements.
 - [x] **AC3:** Install RC checklist includes Arm B rows (archive, KMA gate, sqlite, comprehension test).
 - [x] **AC4:** Layered orchestrator sequence documented and wired (Phase 0 — sqlite, adoption-path, RC gate).
-- [ ] **AC5:** SBL attempt 10 replay on Arm B with **0** ad-hoc KMA scripts.
+- [x] **AC5:** SBL attempt 10 replay on Arm B with **0** ad-hoc KMA scripts. ✅ @ `v0.4.1171` — [attempt-10 index](../../../adk-install-into-sbl/attempt-10/README.md).
 - [ ] **AC6:** At least one Arm A attempt (fynd.deals or Confidentia) with scorecard comparison.
 
 ---
