@@ -5,7 +5,7 @@ from __future__ import annotations
 import re
 import sqlite3
 from dataclasses import dataclass
-from typing import Iterable, List, Optional
+from typing import Iterable, List, Optional, TypedDict
 
 from kanban_completed.db import utc_now_iso
 
@@ -13,6 +13,16 @@ EST_RE = re.compile(r"E(\d+):S(\d+):T(\d+)", re.I)
 VERSION_RE = re.compile(r"v(\d+\.\d+\.\d+\.\d+\+\d+)")
 COMPLETED_RE = re.compile(r"\*\*Completed:\*\*\s*`([^`]+)`", re.I)
 AGENT_RE = re.compile(r"\*\*Agent:\*\*\s*`([^`]+)`", re.I)
+
+
+class LedgerAccum(TypedDict, total=False):
+    epic: int
+    story: int
+    task: int
+    summary: str
+    internal_version: str
+    completed_at: str
+    completing_agent: str
 
 
 @dataclass
@@ -110,7 +120,7 @@ def _row_from_sql(r: sqlite3.Row) -> CompletedTaskRow:
 def parse_markdown_ledger(text: str) -> Iterable[CompletedTaskRow]:
     """Best-effort import from legacy kanban-completed.md."""
     archived_at = utc_now_iso()
-    current: dict = {}
+    current: LedgerAccum = {}
     for raw in text.splitlines():
         line = raw.strip()
         m = EST_RE.search(line)
@@ -143,7 +153,7 @@ def parse_markdown_ledger(text: str) -> Iterable[CompletedTaskRow]:
         yield _entry_from_accum(current, archived_at)
 
 
-def _entry_from_accum(data: dict, archived_at: str) -> CompletedTaskRow:
+def _entry_from_accum(data: LedgerAccum, archived_at: str) -> CompletedTaskRow:
     version = data.get("internal_version") or "v0.0.0.0+0"
     if not version.startswith("v"):
         version = f"v{version}"
