@@ -19,7 +19,7 @@ housekeeping_policy: keep
 
 **Related:** [UXR-010](UXR-010-kboard-fbuboard-add-ipp-column-after-fbu-and-task-links.md) · [UXR-014](UXR-014-two-digit-est-identifier-default-formatting.md) · [UXR-017](UXR-017-kanban-epic-story-path-lowercase-naming.md) · [UXR-020](UXR-020-fbuboard-necessity-after-task-fbu-wiring.md) · [ADR-018](../../architecture/standards-and-adrs/ADR-018-single-kanban-board-consolidation.md) · [E06:S09:T26](../epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T26-starborn-legacy-adk-install-program.md) · [FR-127](FR-127-agentic-kanban-migration-agent-replace-tool-pipeline.md)
 
-**SBL evidence:** `starborn_legacy/logs/ai-dev-kit/install/attempt-06/feedback-package/kboard-template-v3dot2.md` · `kboard-populated-example.md`
+**SBL evidence:** `adk-install-into-sbl/attempt-06/feedback-package/kboard-template-v3dot2.md` · `kboard-populated-example.md`
 
 ---
 

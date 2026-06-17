@@ -220,4 +220,4 @@ Operators running Kanban v3.2 `--mode fresh` see install success lines that matc
 - [E06:S09:T27](IPP-E06S09T27-kanban-v32-package-rewrite-installer-f9-f17.md) — v3.2 installer context
 - [`migrate_structure.py`](../../packages/frameworks/kanban/scripts/migrate_structure.py) — root cause ~L399–401
 - [`kanban_paths.py`](../../packages/frameworks/kanban/scripts/kanban_paths.py) — `epic_dir_name`, `epic_doc_basename`
-- SBL evidence: `starborn_legacy/logs/ai-dev-kit/install/attempt-05/transcripts/20260610T183509Z-phase3c-kanban-v3dot2.txt`
+- SBL evidence: `adk-install-into-sbl/attempt-05/transcripts/20260610T183509Z-phase3c-kanban-v3dot2.txt`

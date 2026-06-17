@@ -18,7 +18,7 @@ housekeeping_policy: keep
 **Code:** E04S19T13
 
 **Upstream:** [UXR-028](../../../fr-br/UXR-028-kboard-v3dot2-packaged-template-alignment.md)  
-**SBL evidence:** `starborn_legacy/logs/ai-dev-kit/install/attempt-06/feedback-package/kboard-template-v3dot2.md` · `kboard-populated-example.md`
+**SBL evidence:** `adk-install-into-sbl/attempt-06/feedback-package/kboard-template-v3dot2.md` · `kboard-populated-example.md`
 
 ---
 

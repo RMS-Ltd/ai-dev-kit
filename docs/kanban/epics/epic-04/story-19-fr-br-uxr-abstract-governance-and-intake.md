@@ -54,7 +54,7 @@ housekeeping_policy: keep
 
 - [x] **E04:S19:T12 – Single-board consolidation — retire `fbuboard` (UXR-020 R3)** - ✅ COMPLETE (**v0.4.19.12+5** — intake rename: `fbu-*` → `intake-*`; `fbuboard`/`kanban-board` deleted) — [Task doc](story-19-fr-br-uxr-abstract-governance-and-intake/T12-fbuboard-necessity-investigation-uxr020.md) | [UXR-020](../../fr-br/UXR-020-fbuboard-necessity-after-task-fbu-wiring.md) | [ADR-018](../../../architecture/standards-and-adrs/ADR-018-single-kanban-board-consolidation.md) | [IPP-E4S19T12](../../../implementation-cycles/IPP-E04S19T12-single-board-consolidation-uxr020.md)
 
-- [x] **E04:S19:T13 – kboard v3.2 packaged template (UXR-028)** - ✅ COMPLETE (HIGH, **v0.4.19.13+1** — template v2.2.0 + greenfield sync; AC3/AC4 deferred) — [Task doc](story-19-fr-br-uxr-abstract-governance-and-intake/T13-kboard-v3dot2-packaged-template-uxr028.md) | [UXR-028](../../fr-br/UXR-028-kboard-v3dot2-packaged-template-alignment.md) | SBL `…/attempt-06/feedback-package/kboard-template-v3dot2.md` | —No IPP—
+- [x] **E04:S19:T13 – kboard v3.2 packaged template (UXR-028)** - ✅ COMPLETE (HIGH, **v0.4.19.13+1** — template v2.2.0 + greenfield sync; AC3/AC4 deferred) — [Task doc](story-19-fr-br-uxr-abstract-governance-and-intake/T13-kboard-v3dot2-packaged-template-uxr028.md) | [UXR-028](../../fr-br/UXR-028-kboard-v3dot2-packaged-template-alignment.md) | [kboard-template evidence](../../../../adk-install-into-sbl/attempt-06/feedback-package/kboard-template-v3dot2.md) | —No IPP—
 
 ---
 

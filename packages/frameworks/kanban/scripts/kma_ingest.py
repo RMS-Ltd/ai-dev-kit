@@ -4,7 +4,7 @@ KMA ingest helper — deterministic legacy corpus inventory (read-only).
 
 Used by KMA Step 1 and replay tests. Does not modify the legacy tree.
 
-Part of FR-127 / E06:S09:T31.
+Part of FR-127 / E06:S09:T31. Extended FR-136 / E06:S09:T39 (--dedup inventory).
 """
 
 from __future__ import annotations
@@ -15,7 +15,7 @@ import re
 import sys
 from dataclasses import dataclass, field
 from pathlib import Path
-from typing import Dict, List, Set
+from typing import Dict, List, Set, Tuple
 
 # Epic doc patterns (brownfield variants)
 _EPIC_FILE_RE = re.compile(
@@ -45,14 +45,38 @@ class IngestReport:
             "epic_count": len(self.epics),
             "story_count": len(self.stories),
             "inline_task_count": len(self.inline_task_tokens),
+            "inline_task_raw_count": getattr(self, "inline_task_raw_count", len(self.inline_task_tokens)),
             "naming_patterns": self.naming_patterns,
             "epics": self.epics,
             "stories": self.stories,
             "inline_task_tokens": sorted(self.inline_task_tokens),
+            "duplicate_aliases": getattr(self, "duplicate_aliases", []),
         }
 
 
-def ingest_legacy_corpus(legacy_root: Path) -> IngestReport:
+def dedupe_est_tokens(tokens: Set[str]) -> Tuple[Set[str], List[Dict[str, str]]]:
+    """
+    Return unique E:S:T set and alias log for duplicate raw forms.
+
+    Normalizes tokens to E{n}:S{n}:T{nn} canonical form.
+    """
+    canonical: Set[str] = set()
+    aliases: List[Dict[str, str]] = []
+    seen_raw: Dict[str, str] = {}
+    for raw in tokens:
+        m = _INLINE_EST_RE.search(raw)
+        if not m:
+            continue
+        norm = f"E{int(m.group(1))}:S{int(m.group(2))}:T{int(m.group(3)):02d}"
+        if norm in seen_raw and seen_raw[norm] != raw:
+            aliases.append({"canonical": norm, "alias": raw, "first_seen": seen_raw[norm]})
+        else:
+            seen_raw.setdefault(norm, raw)
+        canonical.add(norm)
+    return canonical, aliases
+
+
+def ingest_legacy_corpus(legacy_root: Path, dedup: bool = False) -> IngestReport:
     """Read-only inventory of legacy kanban corpus."""
     legacy_root = legacy_root.resolve()
     report = IngestReport(legacy_root=str(legacy_root))
@@ -110,6 +134,11 @@ def ingest_legacy_corpus(legacy_root: Path) -> IngestReport:
             patterns_seen.add("inline_E:S:T")
 
     report.naming_patterns = sorted(patterns_seen)
+    if dedup:
+        report.inline_task_raw_count = len(report.inline_task_tokens)
+        unique, aliases = dedupe_est_tokens(report.inline_task_tokens)
+        report.duplicate_aliases = aliases
+        report.inline_task_tokens = unique
     return report
 
 
@@ -117,15 +146,24 @@ def main() -> int:
     parser = argparse.ArgumentParser(description="KMA legacy corpus ingest (read-only)")
     parser.add_argument("--legacy-root", type=Path, required=True, help="Legacy kanban root")
     parser.add_argument("--json", action="store_true", help="Emit JSON report")
+    parser.add_argument(
+        "--dedup",
+        action="store_true",
+        help="Dedupe inline E:S:T tokens; report unique count and aliases",
+    )
     args = parser.parse_args()
 
-    report = ingest_legacy_corpus(args.legacy_root)
+    report = ingest_legacy_corpus(args.legacy_root, dedup=args.dedup)
     if args.json:
         print(json.dumps(report.to_dict(), indent=2))
     else:
         d = report.to_dict()
         print(f"Legacy root: {d['legacy_root']}")
         print(f"Epics: {d['epic_count']}, Stories: {d['story_count']}, Inline tasks: {d['inline_task_count']}")
+        if args.dedup and d.get("inline_task_raw_count") != d["inline_task_count"]:
+            print(
+                f"Deduped: {d['inline_task_raw_count']} raw → {d['inline_task_count']} unique"
+            )
         print(f"Patterns: {', '.join(d['naming_patterns']) or '(none)'}")
     return 0
 

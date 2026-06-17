@@ -73,6 +73,29 @@ KMA ingests the legacy corpus **read-only**. Target writes go to the ADK `kanban
 
 ---
 
+## Guided mode and Target Structure Pack (TSP) — FR-136 / E06:S09:T39
+
+### 6. KMA supports blind, guided, and score modes
+
+| Mode | Purpose |
+| ---- | ------- |
+| `blind` | Default — policy-only KMA without operator target tree (FR-127) |
+| `guided` | Consumes **Target Structure Pack** (`target_est_tree` + optional companion YAML/MD) as structural anchor |
+| `score` | Maintainer diff only — structural scorer emits JSON/markdown; **no file writes** |
+
+**TSP contract:** Generic templates under `packages/frameworks/kanban/reference/`. Worked SBL exemplar remains in `adk-install-into-sbl/kanban-reference/` (not vendored into framework defaults).
+
+**Guided invariants:**
+
+- `target_est_tree` MUST be present and readable — **fail fast** when `kma_mode: guided` and TSP is missing.
+- Step 3 operator sign-off gate **unchanged** — guided mode does not auto-write migration files.
+- Deterministic helpers (M02 collision, M03 dedup, M08 scorer) are **advisory**; agent remains responsible for synthesis (M01, M04–M06).
+- Pass threshold for guided structural score: **≥ 0.85** weighted (see `SCORING-RUBRIC.yaml`).
+
+**Related:** [FR-136](../../kanban/fr-br/FR-136-guided-kma-target-structure-pack.md) · [TSP reference README](../../packages/frameworks/kanban/reference/README.md) · [E06:S09:T39](../../kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T39-guided-kma-target-structure-pack-fr136.md)
+
+---
+
 ## Supersedes
 
 Supersedes kanban README § Migration Support instructions that recommend the `detect→analyze→migrate` tool pipeline for brownfield repos.

@@ -19,7 +19,7 @@ housekeeping_policy: keep
 
 **Related:** [FR-081](FR-081-brownfield-modular-adopter-integration.md) · [UXR-025](UXR-025-starborn-legacy-greenfield-install-diary.md) · [E06:S09:T26](../epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T26-starborn-legacy-adk-install-program.md) · triage **F22**
 
-**SBL evidence:** `starborn_legacy/logs/ai-dev-kit/install/attempt-06/feedback-package/kanban-migration-experiment-report.md` · `feedback-payload.json` (`requested_improvements[0–1]`)
+**SBL evidence:** `adk-install-into-sbl/attempt-06/feedback-package/kanban-migration-experiment-report.md` · `feedback-payload.json` (`requested_improvements[0–1]`)
 
 ---
 

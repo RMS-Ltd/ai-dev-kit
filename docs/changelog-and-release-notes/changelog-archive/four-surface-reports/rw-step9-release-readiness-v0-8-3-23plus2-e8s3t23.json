@@ -2,7 +2,7 @@
   "contract": "FR-092 Wave 7 release-readiness gate (Gates 1-7: governance / predecessors / parity / corpus / stage / stamps / four-surface)",
   "four_surface_report_path": "/Users/ruari/Projects/ai-dev-kit/docs/changelog-and-release-notes/changelog-archive/four-surface-reports/rw-step7-four-surface-report-v0-8-3-23plus2-e8s3t23.json",
   "invocation_context": "rw_step_9_release_readiness",
-  "overall_passed": true,
+  "overall_passed": false,
   "project_root": "/Users/ruari/Projects/ai-dev-kit",
   "release_scope": {
     "epic": 8,
@@ -12,13 +12,15 @@
     "version_string": "v0.8.3.23+2"
   },
   "summary": {
-    "blocking_failures": [],
-    "gates_failed": 0,
-    "gates_passed": 11,
+    "blocking_failures": [
+      "Gate 4: Corpus canonical state"
+    ],
+    "gates_failed": 1,
+    "gates_passed": 10,
     "gates_total": 11,
     "gates_waived": 0
   },
-  "timestamp_utc": "2026-06-16 15:19 UTC",
+  "timestamp_utc": "2026-06-17 14:34 UTC",
   "verdicts": [
     {
       "evidence": {
@@ -79,22 +81,24 @@
     {
       "evidence": {
         "/Users/ruari/Projects/ai-dev-kit/docs/kanban/kboard.md": {
-          "rows_changed": 0,
+          "rows_changed": 1,
           "rows_with_duplicate_footers": 0
         },
         "stamp_evidence_aggregate": {
           "stamps_appended_with_evidence": 0,
-          "stamps_preserved_existing": 29,
+          "stamps_preserved_existing": 30,
           "stamps_skipped_no_evidence": 0
         }
       },
-      "findings": [],
+      "findings": [
+        "`/Users/ruari/Projects/ai-dev-kit/docs/kanban/kboard.md`: rows_changed=1 under non_substantive corpus sweep \u2014 corpus is not idempotent."
+      ],
       "gate_id": 4,
-      "is_blocking_failure": false,
+      "is_blocking_failure": true,
       "name": "Corpus canonical state",
-      "passed": true,
+      "passed": false,
       "severity": "block",
-      "summary": "Corpus canonical state holds: every active board is idempotent under canonical sweep; no duplicate tails; no synthetic stamps.",
+      "summary": "Corpus canonical state violated; see findings.",
       "waive_reason": null,
       "waived": false
     },

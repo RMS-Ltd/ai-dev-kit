@@ -29,6 +29,38 @@ housekeeping_policy: keep
 
 ---
 
+## Guided mode (when `kma_mode: guided`)
+
+**TSP paths:**
+
+| File | Path |
+| ---- | ---- |
+| `target_est_tree` | `{TARGET_EST_TREE}` |
+| `scoring_rubric` | `{SCORING_RUBRIC}` |
+| `legacy_epic_remap` | `{LEGACY_EPIC_REMAP}` (optional) |
+| `target_folder_map` | `{TARGET_FOLDER_MAP}` (optional) |
+
+**Deduped unique task count:** {UNIQUE_EST_COUNT} (not raw source line count — M03)
+
+**Story basename collisions (M02):**
+
+| Epic | Basename | Paths |
+| ---- | -------- | ----- |
+| | | |
+
+{collision table from `kma_collision_detect.py --json` or "none detected"}
+
+**Lazy fan-out policy (M06):**
+
+- [x] **Lazy default** — inline `E:S:T` in story files; dedicated `T*.md` only for in-flight / operator-requested tasks
+- [ ] Full fan-out — one task file per TSP row (explicit operator opt-in)
+
+**TSP anchor epic map:** {reference TARGET-EST-TREE.md epic bands}
+
+**Structural score (M08):** {weighted_total} / threshold 0.85 — {PASS|REVIEW}
+
+---
+
 ## Epic map
 
 | Legacy | Target | Action | Rationale |

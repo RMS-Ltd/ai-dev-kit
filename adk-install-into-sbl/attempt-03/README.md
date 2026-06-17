@@ -19,18 +19,15 @@
 
 ## Canonical feedback package (FR-079)
 
-**SBL-owned path** (not duplicated in `ai-dev-kit`) — intake accepted 2026-06-09:
+**ADK maintainer mirror** — intake accepted 2026-06-09 ([#85](https://github.com/RMS-Ltd/ai-dev-kit/issues/85)):
 
-| Artifact | Path (Starborn Legacy repo) |
-|----------|----------------------------|
-| Root | `starborn_legacy/logs/ai-dev-kit/install/attempt-03/` |
-| Cover | `…/feedback-package/SUBMISSION.md` |
-| Triage addendum | `…/feedback-package/triage-matrix-attempt03.md` |
-| Payload | `…/feedback-package/feedback-payload.json` |
-| Diary | `…/greenfield-install-diary.md` |
-| Transcripts | `…/transcripts/` |
+| Artifact | Path |
+|----------|------|
+| Root | [attempt-03/](.) |
+| Cover | `feedback-package/SUBMISSION.md` (SBL-local; not git-recovered) |
+| Payload | `feedback-package/feedback-payload.json` (SBL-local; not git-recovered) |
 
-> Historical note: attempt 03 was briefly mirrored at `ai-dev-kit/starborn-legacy-adk-feedback-attempt03/`; that copy is **removed** per FR-079 adopter-repo ownership.
+See [triage matrix](../../docs/knowledge/analysis/projects/starborn-legacy-install-triage-matrix.md) for findings **F10–F17**.
 
 ---
 

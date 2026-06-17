@@ -2,7 +2,7 @@
 
 **Session:** `20260614-attempt-09`  
 **ADK pin:** `v0.4.1164`  
-**SBL branch / HEAD:** `dev` @ `7a08a906`  
+**SBL branch / HEAD:** `dev` @ `7a08a906` — **pre-revert snapshot**  
 **Arm:** **B** — greenfield shell + selective migration (KMA)  
 **Maintainer task:** [E06:S09:T26](../../docs/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T26-starborn-legacy-adk-install-program.md) · [E06:S09:T36](../../docs/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T36-adopter-path-selector-install-rc-uxr029.md)
 
@@ -40,16 +40,15 @@
 
 ## Canonical feedback package (FR-079)
 
-**SBL-owned path** (not duplicated in `ai-dev-kit`):
+**ADK mirror** ([#85](https://github.com/RMS-Ltd/ai-dev-kit/issues/85) — SBL `dev` reverts to `pre-adk-install`):
 
-| Artifact | Path (Starborn Legacy repo) |
-|----------|----------------------------|
-| Root | `starborn_legacy/logs/attempt-09/` |
-| Package | `…/feedback-package/` |
-| PRIMARY (source) | `…/feedback-package/FB-ADK-install-paths-industry-patterns.md` |
-| Payload | `…/feedback-package/feedback-payload.json` |
-| Diary | `…/greenfield-install-diary.md` |
-| Operator tree | `…/TARGET-ES-TREE-E30-RATIONALISED.md` |
+| Artifact | Path |
+|----------|------|
+| Root | [feedback-package/](feedback-package/) |
+| Package | [feedback-package/SUBMISSION.md](feedback-package/SUBMISSION.md) |
+| PRIMARY (source) | [feedback-package/FB-ADK-install-paths-industry-patterns.md](feedback-package/FB-ADK-install-paths-industry-patterns.md) |
+| Payload | [feedback-package/feedback-payload.json](feedback-package/feedback-payload.json) |
+| Operator tree | [feedback-package/KMA-REFERENCE-EST-TREE-ATTEMPT-09.md](feedback-package/KMA-REFERENCE-EST-TREE-ATTEMPT-09.md) |
 
 ---
 
@@ -67,4 +66,5 @@
 
 1. Phase 0 kit fixes — **landed in ai-dev-kit** (Install RC, docs schema, orchestrator flags) — [T36](../../docs/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T36-adopter-path-selector-install-rc-uxr029.md)
 2. SBL attempt 10 — [attempt-10/README.md](../attempt-10/README.md) (Arm B validation replay)
-3. fynd.deals + Confidentia Arm A recon — [adopter-install-attempt-preflight.md](../../docs/guides/adopter-install-attempt-preflight.md)
+3. SBL attempt 11 TSP — [attempt-11/README.md](../attempt-11/README.md) ([#85](https://github.com/RMS-Ltd/ai-dev-kit/issues/85))
+4. fynd.deals + Confidentia Arm A recon — [adopter-install-attempt-preflight.md](../../docs/guides/adopter-install-attempt-preflight.md)

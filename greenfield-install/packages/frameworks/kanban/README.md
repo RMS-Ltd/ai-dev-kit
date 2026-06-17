@@ -513,9 +513,11 @@ step_6:
   see: "integration/workflow-management-integration.md"
 ```
 
-### Migration Support (KMA — FR-127)
+### Migration Support (KMA — FR-127 / FR-136)
 
 **Brownfield legacy kanban:** Use the **Kanban Migration Agent (KMA)** — not the deprecated `detect→analyze→migrate` tool pipeline.
+
+**Modes:** `blind` (default) · `guided` (Target Structure Pack anchor) · `score` (structural diff only). See [TSP reference pack](reference/README.md) (FR-136).
 
 **Trigger:** `KMA` or `/kma` in your IDE agent session.
 

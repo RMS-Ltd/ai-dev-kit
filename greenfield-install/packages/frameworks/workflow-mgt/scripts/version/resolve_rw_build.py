@@ -182,6 +182,13 @@ def resolve_rw_build(
         next_build = head_build + 1
         reason = "same_task_build_plus_one"
     elif same_task and doc_policy_zero:
+        if head_build >= 1:
+            errors.append(
+                f"--doc-policy-zero blocked: same-task anchor BUILD is {head_build} "
+                "(requires untagged BUILD=0 path). Use normal `RW --art` for BUILD +1. "
+                "See BR-067 / BR-097."
+            )
+            return False, {}, errors
         tag = internal_version_tag_name(rc, anchor_epic, anchor_story, anchor_task, head_build)
         if git_ref_exists(tag):
             errors.append(

@@ -80,7 +80,7 @@ housekeeping_policy: keep
 
 Replace the inadequate `detect→analyze→migrate` tool pipeline for brownfield/domain adopters with a documented **Kanban Migration Agent (KMA)** workflow that ingests legacy corpus, proposes a domain-aware target structure, requires operator review before writes, executes synthesis migration, and validates results — while gating legacy migration installer modes and pointing adopters to KMA + retained `--mode fresh`.
 
-**Evidence:** SBL attempt 06 — tool pipeline detected **0/80+** stories; agentic approach migrated **72 stories** into E01–E10 + E21–E28 ([kanban-migration-experiment-report](https://github.com/RMS-Ltd/starborn_legacy/blob/main/logs/ai-dev-kit/install/attempt-06/feedback-package/kanban-migration-experiment-report.md)).
+**Evidence:** SBL attempt 06 — tool pipeline detected **0/80+** stories; agentic approach migrated **72 stories** into E01–E10 + E21–E28 ([kanban-migration-experiment-report](../../adk-install-into-sbl/attempt-06/feedback-package/kanban-migration-experiment-report.md)).
 
 ### 2.2 Specification mapping from ascertained requirements
 
@@ -313,7 +313,7 @@ Replace the inadequate `detect→analyze→migrate` tool pipeline for brownfield
 - [E06:S09:T31 task doc](../kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T31-agentic-kanban-migration-agent-fr127.md)
 - [E06:S09:T26 program](../kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T26-starborn-legacy-adk-install-program.md)
 - [FR-081](../kanban/fr-br/FR-081-brownfield-modular-adopter-integration.md) · [ADR-003](ADR-003-greenfield-vs-brownfield-adoption.md)
-- SBL migration experiment report (external): `starborn_legacy/logs/ai-dev-kit/install/attempt-06/feedback-package/kanban-migration-experiment-report.md`
+- [kanban-migration-experiment-report](../../adk-install-into-sbl/attempt-06/feedback-package/kanban-migration-experiment-report.md)
 - [adk-install-into-sbl/attempt-06/README.md](../../adk-install-into-sbl/attempt-06/README.md)
 - [UKW agent execution guide](../../packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/update-kanban-workflow-agent-execution.md) (pattern reference)
 - [ipw-adr-necessity-checklist.md](ipw-adr-necessity-checklist.md)

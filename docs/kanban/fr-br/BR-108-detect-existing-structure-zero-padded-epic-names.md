@@ -15,7 +15,7 @@ housekeeping_policy: keep
 **Source finding:** **F23** (Starborn Legacy install attempt 06)  
 **Related:** [FR-127](FR-127-agentic-kanban-migration-agent-replace-tool-pipeline.md) · [UXR-017](UXR-017-kanban-epic-story-path-lowercase-naming.md) · [E06:S09:T26](../epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T26-starborn-legacy-adk-install-program.md)  
 **Implementing Task:** [E06:S09:T32](../epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T32-detect-structure-zero-padded-epic-br108.md)  
-**SBL evidence:** `starborn_legacy/logs/ai-dev-kit/install/attempt-06/feedback-package/kanban-migration-experiment-report.md` · `feedback-payload.json` (`requested_improvements[2]`)
+**SBL evidence:** `adk-install-into-sbl/attempt-06/feedback-package/kanban-migration-experiment-report.md` · `feedback-payload.json` (`requested_improvements[2]`)
 
 ---
 

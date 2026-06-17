@@ -1,0 +1,8 @@
+# M05 — Target folder layout per epic
+version: 1
+project: adopter
+folders:
+  - epic: 1
+    path: docs/kanban/epics/epic-01
+  - epic: 2
+    path: docs/kanban/epics/epic-02

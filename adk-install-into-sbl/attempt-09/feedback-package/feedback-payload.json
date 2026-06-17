@@ -1,0 +1,141 @@
+{
+  "schema_version": "1.0.0",
+  "feedback_contract_version": "1.1.0",
+  "generated_at_utc": "2026-06-15T10:29:49Z",
+  "install_run_id": "20260614-attempt-09",
+  "package_status": "final",
+  "submitted_at_utc": "2026-06-15T10:45:00Z",
+  "final_signoff_at_utc": "2026-06-15T18:30:00Z",
+  "adopter_signoff_scope": "FR-079 submission complete for attempt 09; Install RC FAIL documented; programme continued in attempt 10",
+  "intake_issue": {
+    "repo": "RMS-Ltd/ai-dev-kit",
+    "number": 52,
+    "url": "https://github.com/RMS-Ltd/ai-dev-kit/issues/52"
+  },
+  "attempt": "09",
+  "source": {
+    "install_log_path": "logs/attempt-09",
+    "project_root": "starborn_legacy",
+    "project_repo": "RMS-Ltd/starborn_legacy",
+    "branch": "dev",
+    "head_sha": "7a08a906c375d082480a6be930b4ca73b8132a16",
+    "event_contract": "T111-install-log-event-contract",
+    "payload_population": "manual",
+    "payload_population_note": "ai-dev-kit logs prepare-feedback-payload unavailable at ADK pin v0.4.1164; populated per contract 1.1.0 from session.log and package artifacts"
+  },
+  "context": {
+    "install_arm": "B",
+    "install_arm_label": "greenfield_shell_plus_migration",
+    "adk_pin": "v0.4.1164",
+    "adk_semver": "0.4.1164",
+    "adk_internal_version": null,
+    "frameworks": ["flutter", "python"],
+    "event_count": 42,
+    "warning_count": 9,
+    "error_count": 5,
+    "primary_adk_error_codes": [
+      "ADK-I03.E90",
+      "ADK-I04.E01",
+      "ADK-I02.E08"
+    ],
+    "error_registry_version": null,
+    "signoff_ready_count": 7,
+    "signoff_not_ready_count": 0,
+    "signoff_skipped_count": 1,
+    "install_rc_checklist_blocking_pass_rate": 0.5,
+    "install_rc_verdict": "pending_kit_deconfound",
+    "rw_releases_on_legacy_yaml": 4,
+    "custom_migration_scripts_count": 6,
+    "kanban_root_canonical": "docs/kanban",
+    "release_state_backend_actual": "legacy_yaml",
+    "release_state_backend_expected": "sqlite"
+  },
+  "triage": {
+    "recommended_flow": "E06:S09 install programme — Phase 0 kit fixes before Arm A/B comparison",
+    "reproduction_hint": "Replay from logs/attempt-09/greenfield-install-diary.md; orchestrator input config/greenfield-rw-install-input.yaml; ADK pin v0.4.1164",
+    "t111_t112_boundary": "T111 session.log + transcripts; T112 this payload + SUBMISSION.md",
+    "adk_error_code_hint": "ADK-I03.E90 RW partial (lean greenfield expected); ADK-I04.E01 sign-off during orchestrator before PATH fix; ADK-I02.E08 kanban contamination resolved with --force",
+    "priority_order": [
+      "FB-ADK-greenfield-sqlite-before-rw",
+      "FB-ADK-canonical-maintainer-documentation-schema",
+      "FB-ADK-optimal-greenfield-install-sequence",
+      "UXR-ADK-install-path-experiment",
+      "FB-ADK-install-paths-industry-patterns"
+    ],
+    "related_github_issues": [
+      {
+        "number": 51,
+        "url": "https://github.com/RMS-Ltd/ai-dev-kit/issues/51",
+        "title": "Legacy Kanban migration — attempt 08",
+        "followup_status": "comment_posted_2026-06-15",
+        "followup_comment_url": "https://github.com/RMS-Ltd/ai-dev-kit/issues/51#issuecomment-4707011288",
+        "followup_evidence": "logs/attempt-09/feedback-package/ISSUE-51-ATTEMPT-08-FOLLOWUP.md",
+        "issue_recommendation": "keep_open_until_kit_p0"
+      }
+    ]
+  },
+  "requested_improvements": [
+    {
+      "id": "FB-ADK-greenfield-sqlite-before-rw",
+      "title": "Greenfield install must bootstrap SQLite release-state before RW",
+      "severity": "high",
+      "summary": "install_release_workflow.py mode C leaves release_state_backend at legacy YAML default; ADK production path uses .adk/release-state.db for SemVer SAA. SQLite + optional changelog ingest should be orchestrator steps before first RW.",
+      "evidence": "logs/attempt-09/feedback-package/FB-ADK-greenfield-sqlite-before-rw.md",
+      "suggested_routing": "ADK greenfield orchestrator / install_release_workflow.py / INSTALL_IN_YOUR_PROJECT.md"
+    },
+    {
+      "id": "FB-ADK-canonical-maintainer-documentation-schema",
+      "title": "ADK must publish and install canonical maintainer documentation schema",
+      "severity": "high",
+      "summary": "Greenfield leaves adopters without homogeneous internal docs. Obsidian-on-git is needed; Docusaurus defaults are wrong for application adopters. ADK should own versioned topology + frontmatter + surface rules (informed by kit docs), install scaffold at Phase 3½, and validators — adopters migrate content only.",
+      "evidence": "logs/attempt-09/feedback-package/FB-ADK-canonical-maintainer-documentation-schema.md",
+      "suggested_routing": "E05 Documentation / doc-lifecycle / FR-121 / install_release_workflow.py / install_greenfield_path.py"
+    },
+    {
+      "id": "FB-ADK-optimal-greenfield-install-sequence",
+      "title": "Greenfield orchestrator should follow layered install sequence",
+      "severity": "medium",
+      "summary": "Consolidated reference sequence: vendor → config → SQLite → RW wiring → documentation schema → workflow triggers → kanban → KMA → sign-off → first RW. Replaces ad-hoc RW-first default.",
+      "evidence": "logs/attempt-09/feedback-package/FB-ADK-optimal-greenfield-install-sequence.md",
+      "suggested_routing": "E06:S09 install programme / install_greenfield_path.py"
+    },
+    {
+      "id": "UXR-ADK-install-path-experiment",
+      "title": "Mature adopter install path experiment (brownfield vs greenfield+migration)",
+      "severity": "high",
+      "summary": "Multi-repo research design: Arm A (fynd.deals, Confidentia brownfield) vs Arm B (SBL greenfield shell + KMA). Shared Install RC checklist and metrics. Attempt 09 = Arm B baseline; verdict pending kit Phase 0.",
+      "evidence": "logs/attempt-09/feedback-package/UXR-ADK-install-path-experiment.md",
+      "suggested_routing": "E06:S09 install programme / UXR intake / INSTALL_IN_YOUR_PROJECT.md adopter path selector"
+    },
+    {
+      "id": "FB-ADK-install-paths-industry-patterns",
+      "title": "Install paths industry patterns and Adopter Path Selector (blog synthesis) — PRIMARY",
+      "severity": "high",
+      "summary": "Blog-format PRIMARY package document: greenfield/brownfield/hybrid (SAP SDT, Strangler Fig, Terraform import); framework comparators (Rails, Django, Angular, Nx); attempts 07-09 learnings; web research bibliography; proposed RC Adopter Path Selector. Git mirror: docs/adk-feedback/attempt-09/FB-ADK-install-paths-industry-patterns.md",
+      "evidence": "docs/adk-feedback/attempt-09/FB-ADK-install-paths-industry-patterns.md",
+      "evidence_logs_mirror": "logs/attempt-09/feedback-package/FB-ADK-install-paths-industry-patterns.md",
+      "suggested_routing": "E06:S09 install programme / INSTALL_IN_YOUR_PROJECT.md / adopter documentation corpus"
+    }
+  ],
+  "evidence_index": [
+    "docs/adk-feedback/attempt-09/FB-ADK-install-paths-industry-patterns.md",
+    "docs/adk-feedback/attempt-09/KMA-REFERENCE-EST-TREE-ATTEMPT-09.md",
+    "logs/attempt-09/feedback-package/SUBMISSION.md",
+    "logs/attempt-09/feedback-package/attempt-09-scorecard.json",
+    "logs/attempt-09/greenfield-install-diary.md",
+    "logs/attempt-09/signoff-report.json",
+    "logs/attempt-09/session.log",
+    "logs/attempt-09/TARGET-ES-TREE-E30-RATIONALISED.md",
+    "logs/attempt-09/migration-proposal.md",
+    "config/greenfield-rw-install-input.yaml",
+    "rw-config.yaml",
+    "semver-registry.yaml"
+  ],
+  "redaction": {
+    "checked": true,
+    "checked_at_utc": "2026-06-15T10:29:49Z",
+    "method": "manual_review",
+    "violations": [],
+    "notes": "session.log and transcripts contain local paths only; no API keys or credentials observed"
+  }
+}

@@ -35,5 +35,5 @@
 
 ## References
 
-- SBL evidence: `starborn_legacy/logs/ai-dev-kit/install/attempt-06/feedback-package/kboard-template-v3dot2.md`
+- SBL evidence: `adk-install-into-sbl/attempt-06/feedback-package/kboard-template-v3dot2.md`
 - [attempt-06 maintainer index](../../../adk-install-into-sbl/attempt-06/README.md)

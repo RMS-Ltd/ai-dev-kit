@@ -1,0 +1,104 @@
+{
+  "schema_version": "1.0.0",
+  "feedback_contract_version": "1.1.0",
+  "generated_at_utc": "2026-06-15T17:16:37Z",
+  "install_run_id": "20260615-attempt-10",
+  "package_status": "final",
+  "submitted_at_utc": "2026-06-15T16:59:47Z",
+  "final_signoff_at_utc": "2026-06-15T17:16:37Z",
+  "intake_issue": {
+    "repo": "RMS-Ltd/ai-dev-kit",
+    "number": 57,
+    "url": "https://github.com/RMS-Ltd/ai-dev-kit/issues/57"
+  },
+  "prior_intake_issue": {
+    "number": 52,
+    "url": "https://github.com/RMS-Ltd/ai-dev-kit/issues/52",
+    "attempt": "09"
+  },
+  "attempt": "10",
+  "source": {
+    "install_log_path": "logs/attempt-10",
+    "git_mirror_path": "docs/adk-feedback/attempt-10",
+    "project_root": "starborn_legacy",
+    "project_repo": "RMS-Ltd/starborn_legacy",
+    "branch": "dev",
+    "head_sha": "1551ae1483960aff59d6c38e361175b9e8921f4e",
+    "event_contract": "T111-install-log-event-contract",
+    "payload_population": "manual",
+    "payload_population_note": "Hand-populated per contract 1.1.0; signoff re-run 2026-06-15T17:16:37Z"
+  },
+  "context": {
+    "install_arm": "B",
+    "install_arm_label": "greenfield_shell_plus_blind_kma",
+    "adk_pin": "v0.4.1171",
+    "adk_semver": "0.4.1171",
+    "signoff_ready_count": 7,
+    "signoff_not_ready_count": 0,
+    "signoff_skipped_count": 1,
+    "install_rc_strict_pass": true,
+    "install_rc_rows_pass": 10,
+    "install_rc_rows_fail": 0,
+    "install_rc_rows_skip": 1,
+    "install_rc_verdict": "pass",
+    "custom_migration_scripts_count": 0,
+    "kanban_root_canonical": "docs/kanban",
+    "release_state_backend_actual": "sqlite",
+    "release_state_backend_expected": "sqlite",
+    "first_domain_rw": {
+      "task": "E02:S02:T01",
+      "internal_version": "0.2.2.1+1",
+      "commit": "207924fba95d99672e48264bdcb0d80f2426f300"
+    },
+    "ukw_rw": {
+      "task": "E02:S16:T02",
+      "internal_version": "0.2.16.2+1",
+      "commit": "1551ae1483960aff59d6c38e361175b9e8921f4e"
+    }
+  },
+  "triage": {
+    "recommended_flow": "E06:S09:T36 AC7 satisfied — maintainer phase-2 KMA structural score vs attempt-09 reference",
+    "t36_ac7": "pass",
+    "prior_attempt": "09",
+    "prior_attempt_delta": {
+      "install_rc_strict": "fail_to_pass",
+      "adhoc_kma_scripts": "6_to_0",
+      "release_state": "yaml_to_sqlite"
+    }
+  },
+  "requested_improvements": [
+    {
+      "id": "FB-ADK-adopter-bootstrap-prerequisites",
+      "severity": "high",
+      "evidence": "docs/adk-feedback/attempt-10/FB-ADK-adopter-bootstrap-prerequisites.md"
+    },
+    {
+      "id": "FB-ADK-KMA-KANBAN-MIGRATION",
+      "severity": "high",
+      "evidence": "docs/adk-feedback/attempt-10/FB-ADK-KMA-KANBAN-MIGRATION.md"
+    },
+    {
+      "id": "FB-ADK-post-install-rw-and-task-distribution",
+      "severity": "medium",
+      "evidence": "docs/adk-feedback/attempt-10/FB-ADK-post-install-rw-and-task-distribution.md"
+    }
+  ],
+  "evidence_index": [
+    "docs/adk-feedback/attempt-10/SUBMISSION.md",
+    "docs/adk-feedback/attempt-10/feedback-payload.json",
+    "docs/adk-feedback/attempt-10/signoff-report.json",
+    "docs/adk-feedback/attempt-10/install-rc-report-final.json",
+    "docs/adk-feedback/attempt-10/migration-proposal.md",
+    "docs/adk-feedback/attempt-09/FB-ADK-install-paths-industry-patterns.md",
+    "docs/adk-feedback/attempt-09/KMA-REFERENCE-EST-TREE-ATTEMPT-09.md",
+    "COMPREHENSION.md",
+    "rw-config.yaml"
+  ],
+  "redaction": {
+    "checked": true,
+    "checked_at_utc": "2026-06-15T17:16:37Z",
+    "method": "manual_review",
+    "violations": [],
+    "notes": "Local paths in logs only; git mirror contains no credentials"
+  }
+}

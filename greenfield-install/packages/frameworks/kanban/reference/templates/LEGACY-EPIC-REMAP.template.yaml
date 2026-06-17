@@ -1,0 +1,7 @@
+# M01 — Legacy epic → target epic remap (adopter-specific)
+version: 1
+project: adopter
+remaps:
+  - legacy: "E08"
+    target: "E41"
+    reason: "UAT stories canonical home"

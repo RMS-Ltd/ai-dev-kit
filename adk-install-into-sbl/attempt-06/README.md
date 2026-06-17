@@ -27,24 +27,17 @@
 
 ## Canonical feedback package (FR-079)
 
-**SBL-owned path** (not duplicated in `ai-dev-kit`) — intake accepted 2026-06-11:
+**ADK maintainer mirror** — intake accepted 2026-06-11 ([#85](https://github.com/RMS-Ltd/ai-dev-kit/issues/85)):
 
-| Artifact | Path (Starborn Legacy repo) |
-|----------|----------------------------|
-| Root | `starborn_legacy/logs/ai-dev-kit/install/attempt-06/` |
-| Cover | `…/feedback-package/SUBMISSION.md` |
-| Package README | `…/feedback-package/README.md` |
-| Narrative | `…/feedback-package/starborn-legacy-attempt06-feedback.md` |
-| Migration report | `…/feedback-package/kanban-migration-experiment-report.md` |
-| Migration analysis | `…/feedback-package/sbl-v3dot2-migration-analysis.md` |
-| Kboard template | `…/feedback-package/kboard-template-v3dot2.md` |
-| Kboard example (SBL) | `…/feedback-package/kboard-populated-example.md` |
-| Payload | `…/feedback-package/feedback-payload.json` |
-| Manifest | `…/feedback-package/artifact-manifest.json` |
-| Diary | `…/greenfield-install-diary.md` |
-| Sign-off | `…/signoff-report.json` |
-| Final sign-off transcript | `…/transcripts/20260611T094319Z-final-signoff.txt` |
-| Transcripts | `…/transcripts/` (15 files) |
+| Artifact | Path |
+|----------|------|
+| Root | [attempt-06/](.) |
+| Index | [feedback-package/README.md](feedback-package/README.md) |
+| Migration report | [feedback-package/kanban-migration-experiment-report.md](feedback-package/kanban-migration-experiment-report.md) |
+| Kboard template | [feedback-package/kboard-template-v3dot2.md](feedback-package/kboard-template-v3dot2.md) |
+| Kboard example | [feedback-package/kboard-populated-example.md](feedback-package/kboard-populated-example.md) |
+
+Original SBL-local logs were gitignored; synopses and recovered artifacts live on ADK per [ADR-026](../../docs/architecture/standards-and-adrs/ADR-026-git-internal-maintainer-kb-fr121.md).
 
 ---
 

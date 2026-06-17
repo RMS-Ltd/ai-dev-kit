@@ -31,4 +31,4 @@
 ## References
 
 - [UXR-017](../../kanban/fr-br/UXR-017-kanban-epic-story-path-lowercase-naming.md)
-- SBL evidence: `starborn_legacy/logs/ai-dev-kit/install/attempt-05/`
+- SBL evidence: `adk-install-into-sbl/attempt-05/`

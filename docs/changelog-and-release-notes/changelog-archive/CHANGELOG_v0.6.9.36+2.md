@@ -22,6 +22,6 @@ Change implemented: Document **blind KMA evaluation** protocol for SBL attempt 1
 
 ## Related
 
-- [Issue #52](https://github.com/RMS-Ltd/ai-dev-kit/issues/52) — SBL `KMA-REFERENCE-EST-TREE-ATTEMPT-09.md` (held out on adopter repo)
-- [UXR-029](docs/kanban/fr-br/UXR-029-adk-install-path-experiment.md)
-- [E06:S09:T36](docs/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T36-adopter-path-selector-install-rc-uxr029.md)
+- [KMA-REFERENCE-EST-TREE-ATTEMPT-09.md](../../../../adk-install-into-sbl/attempt-09/feedback-package/KMA-REFERENCE-EST-TREE-ATTEMPT-09.md) (ADK mirror; SBL pre-revert)
+- [UXR-029](../../kanban/fr-br/UXR-029-adk-install-path-experiment.md)
+- [E06:S09:T36](../../kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T36-adopter-path-selector-install-rc-uxr029.md)
