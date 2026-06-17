@@ -1,0 +1,8 @@
+{
+  "rows": {
+    "E02:S03:T13": {
+      "allowed": true,
+      "reason": "RW Step 7 v0.2.3.13+0 — kboard row stamp update for kanban-init intake (FR-137)"
+    }
+  }
+}

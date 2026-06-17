@@ -8,12 +8,12 @@ housekeeping_policy: keep
 
 # Story 003 – Additional Workflows & Examples
 
-**Status:** IN PROGRESS (T12 — FR-128 environment-aware workflow execution)  
+**Status:** IN PROGRESS (T13 — FR-137 MWF delivery RW intent preflight)  
 **Priority:** MEDIUM  
 **Estimated Effort:** [TBD]  
 **Created:** 2025-12-03  
-**Last updated:** 2026-06-11 (v0.2.3.12+1 – Kanban documentation setup)
-**Version:** v0.2.3.12+1
+**Last updated:** 2026-06-17 (v0.2.3.13+0 – Kanban documentation setup)
+**Version:** v0.2.3.13+0
 **Code:** E2S03
 
 ---
@@ -60,6 +60,8 @@ Provide additional workflow examples that:
 - [x] **E02:S03:T11 – MWF sub-agent leg delegation (BR-102)** — ✅ COMPLETE (fix @ **v0.2.3.10+1**) — [Task](story-03-additional-workflows-and-examples/T11-mwf-subagent-leg-delegation-br102.md) | [BR-102](../../fr-br/BR-102-mwf-chain-paused-instead-of-subagent-leg-delegation.md) | —No IPP—
 
 - [x] **E02:S03:T12 – Environment-aware workflow execution (FR-128)** — ✅ COMPLETE (**v0.2.3.12+1**) — [Task](story-03-additional-workflows-and-examples/T12-environment-aware-workflow-execution-fr128.md) | [FR-128](../../fr-br/FR-128-environment-aware-workflow-execution.md) | [—IPP—](../../implementation-cycles/IPP-E02S03T12-environment-aware-workflow-execution-fr128.md)
+
+- [ ] **E02:S03:T13 – MWF `delivery` RW intent preflight (FR-137)** — 📋 TODO (HIGH — kanban-init **v0.2.3.13+0**) — [Task](story-03-additional-workflows-and-examples/T13-mwf-delivery-rw-intent-preflight-fr137.md) | [FR-137](../../fr-br/FR-137-mwf-delivery-rw-intent-preflight-art-forwarding.md) | —No IPP—
 
 ---
 

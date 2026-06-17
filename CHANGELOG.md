@@ -11,6 +11,14 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.2.3.13+0] - 17-06-26
+
+E02:S03:T13 — **Kanban-init (FR-137):** MWF `delivery` RW intent preflight intake — early abort + `--art` hint contract. SemVer **v0.4.1199+0**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.3.13+0.md)
+
+---
+
 ## [0.3.2.15+1] - 17-06-26
 
 E03:S02:T15 — **SemVer external `+BUILD` policy (UXR-031):** Option B — keep `+BUILD` in outward display; ordering = SemVer core; ADR-031 + policy memo + README/RW guide alignment. SemVer **v0.4.1198+1**.
