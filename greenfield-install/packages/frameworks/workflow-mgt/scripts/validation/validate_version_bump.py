@@ -853,6 +853,34 @@ def is_documentation_file(file_path: Path) -> bool:
     return False
 
 
+def _normalize_repo_relpath(path: str) -> str:
+    """Normalize a repo-relative path for allowlist comparisons."""
+    return str(Path(path).as_posix()).lstrip("./")
+
+
+def get_staged_changed_files(project_root: Path = None) -> List[Path]:
+    """Return paths changed in the git index (staged only)."""
+    if project_root is None:
+        project_root = Path.cwd()
+    project_root = project_root.resolve()
+    staged: List[Path] = []
+    try:
+        result = subprocess.run(
+            ["git", "diff", "--cached", "--name-only"],
+            cwd=project_root,
+            capture_output=True,
+            text=True,
+            check=False,
+        )
+        if result.returncode == 0:
+            for line in result.stdout.strip().split("\n"):
+                if line.strip():
+                    staged.append((project_root / line.strip()).resolve())
+    except Exception as _suppressed_exc:
+        del _suppressed_exc
+    return staged
+
+
 def get_changed_files(project_root: Path = None) -> List[Path]:
     """
     Get list of changed files from git (staged + unstaged).
@@ -962,6 +990,9 @@ def detect_first_time_est_doc(
         # T-prefix format (e.g. T01-*.md in story-06-post-windsurf-project-review/)
         re.compile(rf'.*Epic-{epic}/Story-{story:03d}[^/]*/T{task:02d}-.*\.md$'),
         re.compile(rf'.*Epic-{epic}/Story-{story}[^/]*/T{task}-.*\.md$'),
+        # Kanban v3.2 lowercase paths (epic-06/story-09-*/T38-*.md)
+        re.compile(rf'.*epic-{epic:02d}/story-{story:02d}[^/]*/T{task:02d}-.*\.md$', re.IGNORECASE),
+        re.compile(rf'.*epic-{epic}/story-{story}[^/]*/T{task:02d}-.*\.md$', re.IGNORECASE),
     ]
     
     new_est_doc_found = False
@@ -1150,7 +1181,12 @@ def validate_doc_init_build(
         allowed_non_doc_relpaths.add(str(resolved_vf.relative_to(project_root.resolve())))
     except Exception as _suppressed_exc:
         del _suppressed_exc
-    changed_files = get_changed_files(project_root)
+    if config:
+        for key in ("release_state_db", "release_state_export_yaml"):
+            rel = config.get(key)
+            if rel:
+                allowed_non_doc_relpaths.add(_normalize_repo_relpath(str(rel)))
+    changed_files = get_staged_changed_files(project_root)
     
     if not changed_files:
         # No changed files - this might be a validation run before changes are staged
@@ -1165,9 +1201,9 @@ def validate_doc_init_build(
             continue
         
         try:
-            rel_path = str(file_path.relative_to(project_root))
+            rel_path = _normalize_repo_relpath(str(file_path.relative_to(project_root.resolve())))
         except ValueError:
-            rel_path = str(file_path)
+            rel_path = _normalize_repo_relpath(str(file_path))
         
         if rel_path in allowed_non_doc_relpaths:
             continue
@@ -1321,13 +1357,32 @@ def validate_version_bump(
         if not doc_init_valid:
             errors.extend(doc_init_errors)
     elif doc_policy_zero:
-        # BR-097: --doc-policy-zero only applies to BUILD=0 doc-init; never for follow-on BUILD≥1
-        errors.append(
-            "❌ --doc-policy-zero blocked: flag is only valid when VERSION_BUILD=0 (doc-init / explicit BUILD +0). "
-            f"Current VERSION_BUILD={current_build}. Same-task follow-on releases require BUILD +1 "
-            f"(normal `RW E{epic}:S{story}:T{current_task} --art`). "
-            "See BR-097 / CHANGELOG_v0.2.16.3+3."
+        file_epic, file_story, file_task = (
+            version_components[1],
+            version_components[2],
+            version_components[3],
         )
+        art_cross_task = bool(
+            art
+            and requested_est is not None
+            and (file_epic, file_story, file_task) != requested_est
+        )
+        if art_cross_task and current_build == 0 and (file_epic, file_story, file_task) == (
+            epic,
+            story,
+            current_task,
+        ):
+            print(
+                "✅ --doc-policy-zero: BUILD +0 accepted for art-adopted doc-init (BR-110)."
+            )
+        elif not art_cross_task:
+            # BR-097: same-anchor follow-on when VERSION_BUILD>=1 in file
+            errors.append(
+                "❌ --doc-policy-zero blocked: flag is only valid when VERSION_BUILD=0 (doc-init / explicit BUILD +0). "
+                f"Current VERSION_BUILD={current_build}. Same-task follow-on releases require BUILD +1 "
+                f"(normal `RW E{epic}:S{story}:T{current_task} --art`). "
+                "See BR-097 / CHANGELOG_v0.2.16.3+3."
+            )
     else:
         # Normal build (BUILD >= 1) - validate that it's not incorrectly using doc-init
         # This is handled in version bump logic validation below

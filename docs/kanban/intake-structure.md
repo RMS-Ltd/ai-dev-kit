@@ -36,6 +36,7 @@ This document provides **complete listings of all FBU items** in the AI Dev Kit 
 
 ### High Priority (Should Have - S)
 
+- **FR-135** – Guided install orchestrator — zero undocumented manual steps - OPEN (HIGH, one-command install; choice menus; sqlite/UKW/ledgers/comprehension in orchestrator) - [FR-135](fr-br/FR-135-guided-install-orchestrator-zero-manual-steps.md) | [E06:S09:T38](epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T38-guided-install-orchestrator-fr135.md) | [#85](https://github.com/RMS-Ltd/ai-dev-kit/issues/85)
 - **FR-118** – Promote Kanban to `docs/kanban/` and retire `project-management/` shell - OPEN (HIGH, RC structural hygiene — inventory + IPW before moves) - [FR-118](fr-br/FR-118-promote-kanban-to-docs-kanban-retire-project-management-shell.md) | [E07:S01:T12](epics/epic-07/story-01-codebase-maintenance-tasks/T12-promote-kanban-to-docs-kanban-retire-project-management-fr118.md)
 - **FR-051** – FBU Prioritization Board - ✅ COMPLETED (HIGH, Create prioritization board for FRs, BRs, and UXRs) - [FR-051](fr-br/FR-051-fr-br-uxr-prioritization-board.md) | [E06:S06:T01](epics/epic-06/story-06-feature-requests/T01-fr-br-uxr-prioritization-board.md) ✅ *IMPLEMENTED - BOARD CREATED*
 - **FR-045** – ADR-002 Task-Touch Derived Mapping (Kanban → SemVer) - TODO (HIGH, SemVer mapping for task_touch and Kanban integration) - [FR-045](fr-br/FR-045-adr-002-task-touch-derived-mapping.md) | [E05:S01:T45](epics/epic-05/story-01-fr-repo/T45-adr-002-task-touch-derived-mapping.md)

@@ -28,6 +28,8 @@ housekeeping_policy: keep
 
 ### Should Have (S) - Important Tasks
 
+- **E06:S09:T38** – Guided install orchestrator (FR-135) - 📋 TODO (HIGH — one-command install; choice menus; sqlite/UKW/ledgers/comprehension in orchestrator) | [Task](epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T38-guided-install-orchestrator-fr135.md) | [FR-135](fr-br/FR-135-guided-install-orchestrator-zero-manual-steps.md) | [FR-133](fr-br/FR-133-kanban-migration-depth-rationalization-adopter-guide.md) | [#85](https://github.com/RMS-Ltd/ai-dev-kit/issues/85)| v0.6.9.38+0 | —No IPP— | Last modified: 2026-06-17 14:29 UTC
+
 ### Verification (V) - Task Shipped, FBU Verification Pending
 
 - **E06:S09:T36** – Adopter Path Selector + Install RC (UXR-029) - ⏳ SHIPPED (HIGH — **v0.6.9.36+3**; AC7 satisfied @ attempt 10) | [Task](epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T36-adopter-path-selector-install-rc-uxr029.md) | [UXR-029](fr-br/UXR-029-adk-install-path-experiment.md) | [#52](https://github.com/RMS-Ltd/ai-dev-kit/issues/52) | —No IPP— | Last modified: 2026-06-16 13:57 UTC

@@ -24,7 +24,7 @@ housekeeping_policy: keep
 
 - [FR-127](../../../fr-br/FR-127-agentic-kanban-migration-agent-replace-tool-pipeline.md)
 - **[IPP-E06S09T31](../../../../implementation-cycles/IPP-E06S09T31-agentic-kanban-migration-agent-fr127.md)** — consolidated implementation plan (IPW 2026-06-12)
-- SBL attempt 06: `starborn_legacy/logs/ai-dev-kit/install/attempt-06/feedback-package/kanban-migration-experiment-report.md`
+- SBL attempt 06: `adk-install-into-sbl/attempt-06/feedback-package/kanban-migration-experiment-report.md`
 - Reference artifacts: `…/kboard-template-v3dot2.md`, `…/kboard-populated-example.md`
 
 ## References

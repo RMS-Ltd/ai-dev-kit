@@ -106,7 +106,7 @@ housekeeping_policy: keep
 
 
 
-- [ ] **E6:S09 – AI Dev Kit installation and adopter integration** - IN PROGRESS (2026-06-16 — **T26** **v0.6.9.26+4** COMPLETE SBL programme Phase 1; **T37** FR-133; **T36** AC7 satisfied)
+- [ ] **E6:S09 – AI Dev Kit installation and adopter integration** - IN PROGRESS (2026-06-17 — **T38** FR-135 guided orchestrator filed; **T26** Phase 1 closed; **T37** FR-133; **T36** AC7 satisfied)
   - Story: [`story-09-ai-dev-kit-installation-and-adopter-integration.md`](story-09-ai-dev-kit-installation-and-adopter-integration.md)
   - Tasks: **T01–T06** ✅ ([FR-080](../../fr-br/FR-080-greenfield-installation-process.md), [FR-081](../../fr-br/FR-081-brownfield-modular-adopter-integration.md), [FR-082](../../fr-br/FR-082-installation-distribution-canonical-repo-alignment.md), [FR-098](../../fr-br/FR-098-ecc-optional-harness-layer-integration.md))
 

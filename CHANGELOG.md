@@ -11,6 +11,14 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.6.9.38+0] - 17-06-26
+
+E06:S09:T38 — **RW -k kanban init (`--art --dpz`):** FR-135 guided install orchestrator intake + BR-110 `--dpz` cross-task fix; attempt 11 maintainer prep. SemVer **v0.4.1194+0**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.6.9.38+0.md)
+
+---
+
 ## [0.2.16.6+19] - 16-06-26
 
 E02:S16:T06 Wave 11 — Standard findings burn-down (3 maintainability + 2 reliability). SemVer **v0.4.1193+19**.

@@ -15,7 +15,7 @@ housekeeping_policy: keep
 **Programme:** E06:S09 install RC · [E06:S09:T36](../../kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T36-adopter-path-selector-install-rc-uxr029.md)  
 **Audience:** ADK maintainers, install programme owners, mature adopters
 
-> **Mirror provenance:** Canonical FR-079 package remains in SBL `logs/attempt-09/feedback-package/` (gitignored). This file is the **committed maintainer mirror** per [ADR-026](../../architecture/standards-and-adrs/ADR-026-git-internal-maintainer-kb-fr121.md). Index: [adk-install-into-sbl/attempt-09/README.md](../../../adk-install-into-sbl/attempt-09/README.md).
+> **Mirror provenance:** FR-079 package mirrored on ADK per [ADR-026](../../architecture/standards-and-adrs/ADR-026-git-internal-maintainer-kb-fr121.md). Index: [adk-install-into-sbl/attempt-09/README.md](../../../adk-install-into-sbl/attempt-09/README.md) · package: [attempt-09/feedback-package/](../../../adk-install-into-sbl/attempt-09/feedback-package/).
 
 ---
 
@@ -224,7 +224,7 @@ Adopter-facing summary: [INSTALL_IN_YOUR_PROJECT.md — Adopter Path Selector](.
 | SBL `attempt-09-scorecard.json` | Arm B metrics |
 | SBL `greenfield-install-diary.md` | Full narrative |
 
-**Package root (adopter):** `starborn_legacy/logs/attempt-09/feedback-package/`  
+**Package root (adopter):** `adk-install-into-sbl/attempt-09/feedback-package/`  
 **Maintainer mirror:** this file · [attempt-09 index](../../../adk-install-into-sbl/attempt-09/README.md)
 
 ---

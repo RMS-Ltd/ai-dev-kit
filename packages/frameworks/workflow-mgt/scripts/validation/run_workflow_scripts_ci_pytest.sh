@@ -10,7 +10,7 @@ export PYTEST_DISABLE_PLUGIN_AUTOLOAD=1
 PYTEST_INI="packages/frameworks/workflow-mgt/scripts/validation/pytest.ini"
 WMGT="packages/frameworks/workflow-mgt/scripts"
 
-exec python -m pytest \
+exec python3 -m pytest \
   -p pytest \
   -p no:pytest_django \
   -c "$PYTEST_INI" \

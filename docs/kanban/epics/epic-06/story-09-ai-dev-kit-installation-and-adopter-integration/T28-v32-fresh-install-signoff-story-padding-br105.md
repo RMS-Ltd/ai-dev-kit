@@ -26,7 +26,7 @@ housekeeping_policy: keep
 
 - [IPP-E06S09T28 — BR-105 v3.2 sign-off story padding](../../../../implementation-cycles/IPP-E06S09T28-br105-v32-signoff-story-padding.md)
 - [BR-105](../../../fr-br/BR-105-v32-fresh-install-signoff-story-padding-mismatch.md)
-- SBL attempt 05 FB: `starborn_legacy/logs/ai-dev-kit/install/attempt-05/feedback-package/SUBMISSION.md`
+- SBL attempt 05 FB: `adk-install-into-sbl/attempt-05/feedback-package/SUBMISSION.md`
 - Sign-off transcript: `…/attempt-05/transcripts/20260610T183541Z-phase4-signoff.txt`
 - [BR-086](../../../fr-br/BR-086-rw-install-lowercase-fresh-kanban-patterns-signoff.md) (prior fix — book replay)
 

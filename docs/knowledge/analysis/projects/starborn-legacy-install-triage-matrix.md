@@ -19,7 +19,7 @@ housekeeping_policy: keep
 
 **Attempt artifacts:** [Maintainer index](../../../../adk-install-into-sbl/README.md) · [attempt-02 diary](starborn-legacy-greenfield-install-diary.md) · [attempt-03 index](../../../../adk-install-into-sbl/attempt-03/README.md)
 
-**SBL-owned FB roots ([FR-079](../../../kanban/fr-br/FR-079-install-feedback-submission-path-and-governance.md)):** `starborn_legacy/logs/ai-dev-kit/install/attempt-{03,04,05,06}/` — diaries, `feedback-package/`, `transcripts/`, `session.log`. **Not** duplicated in `ai-dev-kit`.
+**ADK maintainer mirrors ([FR-079](../../../kanban/fr-br/FR-079-install-feedback-submission-path-and-governance.md), [#85](https://github.com/RMS-Ltd/ai-dev-kit/issues/85)):** [adk-install-into-sbl/attempt-{03,04,05,06}/](../../../../adk-install-into-sbl/README.md) — attempts 03–05 were SBL-local gitignored logs (synopses where full package unavailable); attempt 06+ indexed under same tree. Attempts **09–11** full packages under [adk-install-into-sbl/attempt-09/](../../../../adk-install-into-sbl/attempt-09/README.md) etc.
 
 ---
 
@@ -73,10 +73,10 @@ housekeeping_policy: keep
 | F14 | Attempt 3 phase3b + phase3c transcripts | Manual RW defer → restore → kanban → RW mode C |
 | F15 | Attempt 3 diary Phase 5 | Migration exercise not started |
 | F16 | Attempt 3 diary “ADK v3 Kanban fresh” wording | Consumer path label vs v3.2 catalog spec |
-| F17 | SBL `…/attempt-03/feedback-package/evidence/…/epic-05.md`; attempt 05 phase3c transcript | v1: “Epic 5: FR Implementation”; v3.2 PASS: Epic 5 = **Project Architecture** |
-| F18 | SBL `…/attempt-05/transcripts/20260610T183541Z-phase4-signoff.txt` | BR-086 NOT READY on `{story:03d}` / `t{task}` vs `{story:02d}` / `T{task}` |
-| F19 | SBL `…/attempt-05/transcripts/20260610T183451Z-phase3a-rw-bootstrap.txt` | CHANGELOG prompt EOF under `--non-interactive` |
-| F21 | SBL `…/attempt-05/transcripts/20260610T183509Z-phase3c-kanban-v3dot2.txt` | Log `epic-1/` vs disk `epic-01/` |
+| F17 | [attempt-03/feedback-package/](../../../../adk-install-into-sbl/attempt-03/README.md); [attempt-05 transcript](../../../../adk-install-into-sbl/attempt-05/transcripts/20260610T183509Z-phase3c-kanban-v3dot2.txt) | v1: “Epic 5: FR Implementation”; v3.2 PASS: Epic 5 = **Project Architecture** |
+| F18 | attempt 05 phase4 signoff transcript (SBL-local; not git-recovered) | BR-086 NOT READY on `{story:03d}` / `t{task}` vs `{story:02d}` / `T{task}` |
+| F19 | attempt 05 phase3a RW transcript (SBL-local; not git-recovered) | CHANGELOG prompt EOF under `--non-interactive` |
+| F21 | [attempt-05/transcripts/20260610T183509Z-phase3c-kanban-v3dot2.txt](../../../../adk-install-into-sbl/attempt-05/transcripts/20260610T183509Z-phase3c-kanban-v3dot2.txt) | Log `epic-1/` vs disk `epic-01/` |
 
 ---
 
@@ -99,7 +99,7 @@ housekeeping_policy: keep
 | Dual kanban test bed | **PASS** — `KB/PM_and_Portfolio/` (legacy source) + `docs/kanban/` (ADK target) coexist |
 | Catalog generation (F9/F17) | **BLOCKER** — v1 packaged templates again; SBL → v3.2 migration test **cannot proceed** |
 | Sign-off (post 3c) | 6 READY, 1 SKIP, 1 NOT READY (BR-086 pattern padding) |
-| FB package | SBL `starborn_legacy/logs/ai-dev-kit/install/attempt-03/feedback-package/` — FR-079 intake **accepted** |
+| FB package | [attempt-03/feedback-package/](../../../../adk-install-into-sbl/attempt-03/README.md) — FR-079 intake **accepted** |
 
 ### F17 — v1 vs v3.2 fingerprint (on disk)
 
@@ -126,7 +126,7 @@ housekeeping_policy: keep
 | BR-084 / UXR-017 | **READY** — improvements since attempt 03 |
 | BR-086 | **NOT READY** — F18 contract vs reality mismatch |
 | New findings | **F18–F20** — padding, non-interactive EOF, default version path |
-| FB package | SBL `starborn_legacy/logs/ai-dev-kit/install/attempt-04/feedback-package/` — FR-079 intake **accepted** |
+| FB package | [attempt-04/feedback-package/](../../../../adk-install-into-sbl/README.md) — FR-079 intake **accepted** (SBL-local; synopsis via triage) |
 
 ### Why attempt 04 still got v1 (not a failed fix)
 
@@ -150,7 +150,7 @@ housekeeping_policy: keep
 | Sign-off | **7 READY, 1 SKIP, 1 NOT READY** — BR-086 / **F18** padding mismatch on v3.2 fresh install |
 | F19 | **RESOLVED** @ v0.6.9.29+2 — `scaffold_interactive` wiring; SBL replay pending |
 | F21 | **NEW (LOW)** — install stdout logs `epic-1/`; disk has `epic-01/` |
-| FB package | SBL `starborn_legacy/logs/ai-dev-kit/install/attempt-05/feedback-package/` — FR-079 intake **accepted** |
+| FB package | [attempt-05/feedback-package/](../../../../adk-install-into-sbl/attempt-05/feedback-package/README.md) — FR-079 intake **accepted** |
 | Upstream filed | [BR-105](../../../kanban/fr-br/BR-105-v32-fresh-install-signoff-story-padding-mismatch.md) / [T28](../../../kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T28-v32-fresh-install-signoff-story-padding-br105.md) · [BR-106](../../../kanban/fr-br/BR-106-rw-install-non-interactive-changelog-prompt-eof.md) / [T29](../../../kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T29-rw-install-non-interactive-changelog-prompt-br106.md) · [BR-107](../../../kanban/fr-br/BR-107-kanban-installer-log-epic-path-padding-mismatch.md) / [T30](../../../kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T30-kanban-installer-log-epic-path-padding-br107.md) |
 
 ### F17 resolution fingerprint (attempt 05)
@@ -174,8 +174,8 @@ housekeeping_policy: keep
 | Full ADK install | **PASS** — 15 workflows, 6 frameworks, versioning, Obsidian + Docusaurus |
 | Legacy migration | **PASS (agentic)** — 72 stories → E01–E10 + E21–E28; tool pipeline **0 stories** |
 | New findings | **F22–F23** → [FR-127](../../../kanban/fr-br/FR-127-agentic-kanban-migration-agent-replace-tool-pipeline.md)/[T31](../../../kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T31-agentic-kanban-migration-agent-fr127.md) · [BR-108](../../../kanban/fr-br/BR-108-detect-existing-structure-zero-padded-epic-names.md)/[T32](../../../kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T32-detect-structure-zero-padded-epic-br108.md) |
-| Adopter artifacts | `kboard-template-v3dot2.md`, `kboard-populated-example.md` in feedback-package |
-| FB package | SBL `…/attempt-06/feedback-package/` — FR-079 **accepted**; adopter sign-off **final** @ `20260611T094319Z` |
+| Adopter artifacts | [kboard-template-v3dot2.md](../../../../adk-install-into-sbl/attempt-06/feedback-package/kboard-template-v3dot2.md), [kboard-populated-example.md](../../../../adk-install-into-sbl/attempt-06/feedback-package/kboard-populated-example.md) |
+| FB package | [attempt-06/feedback-package/](../../../../adk-install-into-sbl/attempt-06/feedback-package/README.md) — FR-079 **accepted**; adopter sign-off **final** @ `20260611T094319Z` |
 | Maintainer index | [attempt-06/README.md](../../../../adk-install-into-sbl/attempt-06/README.md) |
 
 ### F18/F19/F21 SBL replay confirmation (attempt 06)
@@ -217,3 +217,17 @@ Starborn Legacy **closed** install attempts 1 and 2 without adopting ADK templat
 | Operational | First domain RW + post-install UKW on SBL `dev` |
 | Programme | [T26](../../../kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T26-starborn-legacy-adk-install-program.md) **COMPLETE** @ **v0.6.9.26+4** |
 | Index | [attempt-10/README.md](../../../../adk-install-into-sbl/attempt-10/README.md) |
+
+---
+
+## Attempt 11 addendum (2026-06-16) — guided KMA / TSP ([#85](https://github.com/RMS-Ltd/ai-dev-kit/issues/85))
+
+| Topic | Result |
+|-------|--------|
+| ADK pin | `v0.4.1171` |
+| Arm | **B** follow-on — Target Structure Pack (not full install re-run) |
+| Track A | TSP + KMA-METHODS + rubric — complete locally pre-revert |
+| Track B | Install execution — pending new `dev` from `pre-adk-install` |
+| ADK mirror | [attempt-11/feedback-package/](../../../../adk-install-into-sbl/attempt-11/feedback-package/) · [kanban-reference/](../../../../adk-install-into-sbl/kanban-reference/TARGET-EST-TREE.md) |
+| Kit follow-on | [FR-135](../../../kanban/fr-br/FR-135-guided-install-orchestrator-zero-manual-steps.md) · [E06:S09:T38](../../../kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T38-guided-install-orchestrator-fr135.md) — guided orchestrator (replace manual install tail) |
+| Index | [attempt-11/README.md](../../../../adk-install-into-sbl/attempt-11/README.md) |

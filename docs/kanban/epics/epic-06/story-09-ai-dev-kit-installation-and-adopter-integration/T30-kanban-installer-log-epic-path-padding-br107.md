@@ -26,7 +26,7 @@ housekeeping_policy: keep
 
 - [BR-107](../../../fr-br/BR-107-kanban-installer-log-epic-path-padding-mismatch.md)
 - [IPP-E06S09T30-kanban-installer-log-epic-path-padding-br107.md](../../../../implementation-cycles/IPP-E06S09T30-kanban-installer-log-epic-path-padding-br107.md) (IPW planning package)
-- SBL attempt 05 transcript: `starborn_legacy/logs/ai-dev-kit/install/attempt-05/transcripts/20260610T183509Z-phase3c-kanban-v3dot2.txt`
+- SBL attempt 05 transcript: `adk-install-into-sbl/attempt-05/transcripts/20260610T183509Z-phase3c-kanban-v3dot2.txt`
 
 ---
 

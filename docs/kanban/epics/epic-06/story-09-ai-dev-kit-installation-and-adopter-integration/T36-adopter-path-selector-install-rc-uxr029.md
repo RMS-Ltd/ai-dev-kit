@@ -81,7 +81,7 @@ Deliver the **Adopter Path Selector**, **layered install sequence**, and **Insta
 | 4 | [ADR-030](../../../../architecture/standards-and-adrs/ADR-030-selective-adoption-three-path-model.md) | ✅ Draft accepted |
 | 5 | INSTALL Adopter Path Selector + layered sequence | ✅ Initial |
 | 6 | Install RC checklist Arm B rows | ✅ YAML + validator + governance doc |
-| 7 | Orchestrator layered sequence implementation | ✅ Phase 0 (sqlite, RC, adoption-path; KMA/UKW manual) |
+| 7 | Orchestrator layered sequence implementation | ✅ Phase 0 partial (sqlite, RC, adoption-path) — **follow-on:** [E06:S09:T38](T38-guided-install-orchestrator-fr135.md) / [FR-135](../../../fr-br/FR-135-guided-install-orchestrator-zero-manual-steps.md) (UKW/KMA/ledgers/comprehension in orchestrator) |
 
 ---
 

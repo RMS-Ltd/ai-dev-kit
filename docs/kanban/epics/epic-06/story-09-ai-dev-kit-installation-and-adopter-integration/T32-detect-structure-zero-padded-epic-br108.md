@@ -25,7 +25,7 @@ housekeeping_policy: keep
 
 - [IPP-E06S09T32](../../../../implementation-cycles/IPP-E06S09T32-detect-structure-zero-padded-epic-br108.md) (implementation plan)
 - [BR-108](../../../fr-br/BR-108-detect-existing-structure-zero-padded-epic-names.md)
-- SBL attempt 06: `starborn_legacy/logs/ai-dev-kit/install/attempt-06/feedback-package/kanban-migration-experiment-report.md`
+- SBL attempt 06: `adk-install-into-sbl/attempt-06/feedback-package/kanban-migration-experiment-report.md`
 
 ## References
 

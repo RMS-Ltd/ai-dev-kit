@@ -19,7 +19,7 @@ housekeeping_policy: keep
 **North star:** Ship ADK with a **migration workflow as painless as possible** for mature-repo adopters.
 
 **Upstream:** [FR-133](../../../fr-br/FR-133-kanban-migration-depth-rationalization-adopter-guide.md)  
-**Related:** [FR-127](../../../fr-br/FR-127-agentic-kanban-migration-agent-replace-tool-pipeline.md) · [UXR-029](../../../fr-br/UXR-029-adk-install-path-experiment.md) · [E06:S09:T36](T36-adopter-path-selector-install-rc-uxr029.md) · [E06:S09:T31](T31-agentic-kanban-migration-agent-fr127.md) · [#52](https://github.com/RMS-Ltd/ai-dev-kit/issues/52)
+**Related:** [FR-127](../../../fr-br/FR-127-agentic-kanban-migration-agent-replace-tool-pipeline.md) · [FR-135](../../../fr-br/FR-135-guided-install-orchestrator-zero-manual-steps.md) · [E06:S09:T38](T38-guided-install-orchestrator-fr135.md) (follow-on — orchestrator implements painless path) · [UXR-029](../../../fr-br/UXR-029-adk-install-path-experiment.md) · [E06:S09:T36](T36-adopter-path-selector-install-rc-uxr029.md) · [E06:S09:T31](T31-agentic-kanban-migration-agent-fr127.md) · [#52](https://github.com/RMS-Ltd/ai-dev-kit/issues/52)
 
 **Evidence:** SBL attempt 10 — painless bar met (0 ad-hoc scripts, RC PASS, first RW); phase-2 compare shows L3 optimization is **optional**, not required to ship.
 
