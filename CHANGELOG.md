@@ -11,6 +11,14 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.8.3.23+3] - 17-06-26
+
+E08:S03:T23 — **Forensic closure:** BR-110 attributed on filed task anchor (implementation @ v0.6.9.38+0); doc-init Step 1 staged-only guard. SemVer **v0.4.1195+3**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.8.3.23+3.md)
+
+---
+
 ## [0.6.9.38+0] - 17-06-26
 
 E06:S09:T38 — **RW -k kanban init (`--art --dpz`):** FR-135 guided install orchestrator intake + BR-110 `--dpz` cross-task fix; attempt 11 maintainer prep. SemVer **v0.4.1194+0**.

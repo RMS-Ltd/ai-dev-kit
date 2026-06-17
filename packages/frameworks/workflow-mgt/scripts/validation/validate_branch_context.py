@@ -508,7 +508,28 @@ def validate_doc_init_build(version: str, config: Optional[Dict] = None) -> Tupl
         allowed_non_doc_relpaths.add(str(vp))
     except Exception as _suppressed_exc:
         del _suppressed_exc
-    changed_files = get_changed_files(project_root)
+    if config:
+        for key in ("release_state_db", "release_state_export_yaml"):
+            rel = config.get(key)
+            if rel:
+                allowed_non_doc_relpaths.add(str(Path(rel).as_posix()).lstrip("./"))
+    # Doc-init gate applies to staged release payload only (ignore unstaged/untracked noise).
+    staged_files: List[Path] = []
+    try:
+        result = subprocess.run(
+            ["git", "diff", "--cached", "--name-only"],
+            cwd=project_root,
+            capture_output=True,
+            text=True,
+            check=False,
+        )
+        if result.returncode == 0:
+            for line in result.stdout.strip().split("\n"):
+                if line.strip():
+                    staged_files.append((project_root / line.strip()).resolve())
+    except Exception as _suppressed_exc:
+        del _suppressed_exc
+    changed_files = staged_files
     
     if not changed_files:
         # No changed files - this might be a validation run before changes are staged

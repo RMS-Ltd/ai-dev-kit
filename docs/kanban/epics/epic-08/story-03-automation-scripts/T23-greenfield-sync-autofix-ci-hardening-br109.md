@@ -9,15 +9,15 @@ housekeeping_policy: keep
 # Epic 8, Story 3, Task 23: Greenfield sync autofix CI hardening (BR-109)
 
 **Task ID:** E08:S03:T23  
-**Status:** ✅ COMPLETE (v0.8.3.23+2)  
-**Version Anchor:** v0.8.3.23+2  
+**Status:** ✅ COMPLETE (v0.8.3.23+3)  
+**Version Anchor:** v0.8.3.23+3  
 **Priority:** HIGH  
 **Created:** 2026-06-16  
-**Last updated:** 2026-06-16 (RW Step 7: scoped kanban reconciliation for v0.8.3.23+2)  
+**Last updated:** 2026-06-17 (RW Step 7: BR-110 forensic closure @ v0.8.3.23+3)  
 **Code:** E08S03T23  
 
-**Upstream:** [BR-109 — Greenfield dual-tree sync drift on autofix PRs](../../../fr-br/BR-109-greenfield-autofix-dual-tree-sync-drift-recurring-ci-failures.md)  
-**Related:** [FR-110](../../../fr-br/FR-110-lean-adopter-distribution-footprint-and-vendor-bundle.md) · [E06:S09:T21](../../epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T21-lean-adopter-distribution-footprint-fr110.md) · [E02:S16:T05](../../epic-02/story-16-perpetual-ongoing-workflow-operations/T05-github-actions-ci-health-perpetual.md) · [FR-112](../../../fr-br/FR-112-perpetual-github-ci-and-security-health-lanes.md)
+**Upstream:** [BR-109 — Greenfield dual-tree sync drift on autofix PRs](../../../fr-br/BR-109-greenfield-autofix-dual-tree-sync-drift-recurring-ci-failures.md) · [BR-110 — RW -k `--art --dpz` doc-init guard](../../../fr-br/BR-110-rw-k-dpz-rejection-doc-init-build-zero-guard-mismatch.md)  
+**Related:** [FR-110](../../../fr-br/FR-110-lean-adopter-distribution-footprint-and-vendor-bundle.md) · [E06:S09:T21](../../epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T21-lean-adopter-distribution-footprint-fr110.md) · [E06:S09:T38](../../epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T38-guided-install-orchestrator-fr135.md) (BR-110 code @ v0.6.9.38+0) · [E02:S16:T05](../../epic-02/story-16-perpetual-ongoing-workflow-operations/T05-github-actions-ci-health-perpetual.md) · [FR-112](../../../fr-br/FR-112-perpetual-github-ci-and-security-health-lanes.md)
 
 ---
 
@@ -74,6 +74,12 @@ Manual `python scripts/sync_greenfield_install.py` on each PR is reactive and do
 - Reuse `scripts/sync_greenfield_install.py` and manifest — do not duplicate mirror logic.
 - Coordinate with [E06:S09:T21](../../epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T21-lean-adopter-distribution-footprint-fr110.md) for FR-110 policy alignment.
 - **IPW required** before implementation ([FR-083](../../../fr-br/FR-083-global-ipw-gated-implementation-contract.md)).
+
+---
+
+## BR-110 forensic closure (v0.8.3.23+3)
+
+[BR-110](../../../fr-br/BR-110-rw-k-dpz-rejection-doc-init-build-zero-guard-mismatch.md) was filed on this task. The `art_doc_policy_zero` resolver fix landed in **v0.6.9.38+0** (E06:S09:T38 kanban-init wave). Release **v0.8.3.23+3** provides a dedicated **E08:S03:T23** commit/tag for traceability cleanliness without re-shipping that code.
 
 ---
 

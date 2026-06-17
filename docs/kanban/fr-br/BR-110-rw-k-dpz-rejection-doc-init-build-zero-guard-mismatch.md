@@ -13,7 +13,7 @@ housekeeping_policy: keep
 **Task ID:** E08:S03:T23  
 **Priority:** HIGH  
 **Severity:** MEDIUM-HIGH (breaks documented `--dpz` “BUILD+0 doc-init” workflow; forces unintended +1 versions)  
-**Status:** RESOLVED (v0.6.9.38+0 — `art_doc_policy_zero` in `resolve_rw_build.py`; regression test added)
+**Status:** RESOLVED (implementation v0.6.9.38+0 — `art_doc_policy_zero` in `resolve_rw_build.py`; forensic closure v0.8.3.23+3 on filed task E08:S03:T23)
 
 **Implementing Task:** [E08:S03:T23](../epics/epic-08/story-03-automation-scripts/T23-greenfield-sync-autofix-ci-hardening-br109.md)  
 **Trigger Command (reported):** `RW -k 8.3.23 --art --dpz`

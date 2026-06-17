@@ -1,0 +1,91 @@
+{
+  "auxiliary_surfaces": {
+    "epic_doc": {
+      "changes": [],
+      "notes": [],
+      "paths": [
+        "docs/kanban/epics/epic-08/epic-08.md"
+      ],
+      "surface": "epic_doc",
+      "touched": false
+    },
+    "story_doc": {
+      "changes": [
+        "Story checklist: E08:S03:T23 forensic closure @ v0.8.3.23+3; BR-110 cross-link"
+      ],
+      "notes": [],
+      "paths": [
+        "docs/kanban/epics/epic-08/story-03-automation-scripts.md"
+      ],
+      "surface": "story_doc",
+      "touched": true
+    },
+    "uncategorized": {
+      "changes": [
+        "Updated board Last Updated and Version metadata for E08:S03:T23 forensic release"
+      ],
+      "notes": [],
+      "paths": [],
+      "surface": "uncategorized",
+      "touched": true
+    }
+  },
+  "contract": "FR-092 / ADR-018 (RW Step 7 three-surface reconciliation)",
+  "invocation_context": "rw_step_7",
+  "release_scope": {
+    "epic": 8,
+    "story": 3,
+    "task": 23,
+    "task_id": "E08:S03:T23",
+    "version_string": "v0.8.3.23+3"
+  },
+  "stamp_evidence": {},
+  "summary": {
+    "stamps_appended_with_evidence": 0,
+    "stamps_preserved_existing": 0,
+    "stamps_skipped_no_evidence": 0,
+    "total_changes": 6,
+    "touched_surfaces": [
+      "task_doc",
+      "fbu_doc",
+      "kboard"
+    ],
+    "untouched_surfaces": []
+  },
+  "surfaces": {
+    "fbu_doc": {
+      "changes": [
+        "BR-110 status: forensic closure v0.8.3.23+3 on filed task; implementation note @ v0.6.9.38+0"
+      ],
+      "notes": [],
+      "paths": [
+        "docs/kanban/fr-br/BR-110-rw-k-dpz-rejection-doc-init-build-zero-guard-mismatch.md"
+      ],
+      "surface": "fbu_doc",
+      "touched": true
+    },
+    "kboard": {
+      "changes": [
+        "Board metadata Last Updated + Version only (no new MoSCOW row; T23 terminal COMPLETE)"
+      ],
+      "notes": [],
+      "paths": [
+        "docs/kanban/kboard.md"
+      ],
+      "surface": "kboard",
+      "touched": true
+    },
+    "task_doc": {
+      "changes": [
+        "Version anchor v0.8.3.23+3; BR-110 forensic closure section; upstream/related cross-links"
+      ],
+      "notes": [],
+      "paths": [
+        "docs/kanban/epics/epic-08/story-03-automation-scripts/T23-greenfield-sync-autofix-ci-hardening-br109.md"
+      ],
+      "surface": "task_doc",
+      "touched": true
+    }
+  },
+  "timestamp_utc": "2026-06-17 14:42 UTC"
+}
