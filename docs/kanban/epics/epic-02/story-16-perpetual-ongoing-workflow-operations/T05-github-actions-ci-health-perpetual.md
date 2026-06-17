@@ -14,8 +14,8 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** Small (ongoing)  
 **Created:** 2026-06-05  
-**Last updated:** 2026-06-15 (Wave 9 — BR-104 closure docs)  
-**Version Anchor:** v0.2.16.5+11  
+**Last updated:** 2026-06-17 (v0.2.16.5+12 — Wave 10 adk-feedback BR-068 recurrence)  
+**Version Anchor:** v0.2.16.5+12  
 **Code:** E02S16T05  
 **Task Type:** Perpetual Maintenance
 
@@ -219,6 +219,19 @@ Use **`RW E02:S16:T05`** for recurring CI hygiene passes (BUILD increments on pe
 | BR-104 | **FIXED** @ **v0.2.16.5+11** |
 
 **Note:** E02:S16:T05 remains **IN PROGRESS** (perpetual lane); BR closure does not retire the task.
+
+---
+
+## Wave 10 — adk-feedback mirror links + MDX placeholder (2026-06-17)
+
+**Incident:** Post-push `validate_actions_ci_parity --strict --all` — **Docusaurus site build** failed on `docs/adk-feedback/attempt-{09,10,11}/README.md` (links to excluded `knowledge/**` and repo-root `adk-install-into-sbl/**`) and `framework-dependency-troubleshooting-guide.md` ADK-I01.S06 (`<path>` JSX).
+
+| Fix | Detail |
+| --- | ------ |
+| attempt 09–11 README | GitHub blob/tree URLs per BR-068 Strategy A |
+| ADK-I01.S06 remediation | `{path}` placeholder + backticks on filename |
+
+**Verification:** `portal/npm run build` SUCCESS; `validate_actions_ci_parity.py --strict` portal-publish-scope 9/9 @ **v0.2.16.5+12**.
 
 ---
 
