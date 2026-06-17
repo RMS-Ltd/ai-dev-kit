@@ -13,8 +13,8 @@ housekeeping_policy: keep
 **Submitted:** 2026-06-17  
 **Submitted By:** Operator (SBL install programme / adopter UX session)  
 **Priority:** HIGH (Should Have — MoSCOW **S**)  
-**Status:** OPEN  
-**Version anchor:** v0.6.9.38+0 (kanban init 2026-06-17)
+**Status:** IN PROGRESS  
+**Version anchor:** v0.6.9.38+1 (implementation @ RW 2026-06-17)
 
 **North star:** An adopter runs **one install command** and reaches Install RC PASS with **no hunting** INSTALL appendices, separate sqlite scripts, or cursorrules paste steps — choosing only where the answer changes behaviour.
 

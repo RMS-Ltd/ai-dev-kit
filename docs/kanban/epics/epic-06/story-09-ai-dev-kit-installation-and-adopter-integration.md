@@ -13,8 +13,8 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** Large  
 **Created:** 2026-04-19  
-**Last updated:** 2026-06-17 (v0.6.9.39+1 – Kanban documentation setup)
-**Version:** v0.6.9.39+1
+**Last updated:** 2026-06-17 (v0.6.9.38+1 – Kanban documentation setup)
+**Version:** v0.6.9.38+1
 **Code:** E6S09
 
 ---
@@ -104,7 +104,7 @@ housekeeping_policy: keep
 
 - [x] **E06:S09:T37 – Painless adopter kanban migration workflow (FR-133)** - ✅ COMPLETE (v0.6.9.37+2 — FR-133 depth guide, INSTALL Migrate default, COMPREHENSION template) — [Task](story-09-ai-dev-kit-installation-and-adopter-integration/T37-kanban-migration-depth-rationalization-fr133.md) | [FR-133](../../fr-br/FR-133-kanban-migration-depth-rationalization-adopter-guide.md) | [IPP](../../implementation-cycles/IPP-E06S09T37-kanban-migration-depth-rationalization-fr133.md)
 
-- [ ] **E06:S09:T38 – Guided install orchestrator (FR-135)** - 📋 TODO (HIGH — zero undocumented manual steps; choice menus + sqlite/triggers/ledgers in orchestrator) — [Task](story-09-ai-dev-kit-installation-and-adopter-integration/T38-guided-install-orchestrator-fr135.md) | [FR-135](../../fr-br/FR-135-guided-install-orchestrator-zero-manual-steps.md) | —No IPP— | v0.6.9.38+0 | [#85](https://github.com/RMS-Ltd/ai-dev-kit/issues/85)
+- [x] **E06:S09:T38 – Guided install orchestrator (FR-135)** - ✅ COMPLETE (**v0.6.9.38+1** — guided v2 profile + phases A–F; AC2/AC3 SBL replay pending) — [Task](story-09-ai-dev-kit-installation-and-adopter-integration/T38-guided-install-orchestrator-fr135.md) | [FR-135](../../fr-br/FR-135-guided-install-orchestrator-zero-manual-steps.md) | [IPP-E06S09T38](../../../implementation-cycles/IPP-E06S09T38-guided-install-orchestrator-fr135.md) | [#85](https://github.com/RMS-Ltd/ai-dev-kit/issues/85)
 
 - [x] **E06:S09:T39 – Guided KMA Target Structure Pack (FR-136)** - ✅ COMPLETE (**v0.6.9.39+1** — guided/score modes, TSP pack, scorer, pytest) — [Task](story-09-ai-dev-kit-installation-and-adopter-integration/T39-guided-kma-target-structure-pack-fr136.md) | [IPP-E06S09T39](../../../implementation-cycles/IPP-E06S09T39-guided-kma-target-structure-pack-fr136.md) | [FR-136](../../fr-br/FR-136-guided-kma-target-structure-pack.md) | [#85](https://github.com/RMS-Ltd/ai-dev-kit/issues/85)
 

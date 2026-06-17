@@ -2,7 +2,7 @@
   "auxiliary_surfaces": {
     "epic_doc": {
       "changes": [
-        "Updated Epic Last updated: 2026-06-17 (v0.6.9.39+1 \u2013 Kanban documentation setup)"
+        "Updated Epic Last updated: 2026-06-17 (v0.6.9.38+1 \u2013 Kanban documentation setup)"
       ],
       "notes": [],
       "paths": [
@@ -24,10 +24,10 @@
     },
     "uncategorized": {
       "changes": [
-        "Updated Version: v0.6.9.39+1",
-        "Updated Last updated: 2026-06-17 (v0.6.9.39+1 \u2013 Kanban documentation setup)",
-        "Updated board Last Updated: 2026-06-17 (RW: E06:S09:T39)",
-        "Updated board Version: v0.6.9.39+1"
+        "Updated Version: v0.6.9.38+1",
+        "Updated Last updated: 2026-06-17 (v0.6.9.38+1 \u2013 Kanban documentation setup)",
+        "Updated board Last Updated: 2026-06-17 (RW: E06:S09:T38)",
+        "Updated board Version: v0.6.9.38+1"
       ],
       "notes": [],
       "paths": [],
@@ -40,9 +40,9 @@
   "release_scope": {
     "epic": 6,
     "story": 9,
-    "task": 39,
-    "task_id": "E6:S9:T39",
-    "version_string": "v0.6.9.39+1"
+    "task": 38,
+    "task_id": "E6:S9:T38",
+    "version_string": "v0.6.9.38+1"
   },
   "stamp_evidence": {},
   "summary": {
@@ -88,5 +88,5 @@
       "touched": false
     }
   },
-  "timestamp_utc": "2026-06-17 15:02 UTC"
+  "timestamp_utc": "2026-06-17 15:26 UTC"
 }

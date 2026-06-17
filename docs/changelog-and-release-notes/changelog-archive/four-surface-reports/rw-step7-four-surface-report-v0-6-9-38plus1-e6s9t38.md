@@ -2,8 +2,8 @@
 
 - **Contract:** FR-092 / ADR-018 (RW Step 7 three-surface reconciliation)
 - **Invocation context:** rw_step_7
-- **Release scope:** E6:S9:T39 (v0.6.9.39+1)
-- **Timestamp (UTC):** 2026-06-17 15:02 UTC
+- **Release scope:** E6:S9:T38 (v0.6.9.38+1)
+- **Timestamp (UTC):** 2026-06-17 15:26 UTC
 
 ## Touched-surface summary
 
@@ -58,13 +58,13 @@
 - Path(s):
   - `/Users/ruari/Projects/ai-dev-kit/docs/kanban/epics/epic-06/epic-06.md`
 - Changes:
-  - Updated Epic Last updated: 2026-06-17 (v0.6.9.39+1 – Kanban documentation setup)
+  - Updated Epic Last updated: 2026-06-17 (v0.6.9.38+1 – Kanban documentation setup)
 
 ### Auxiliary: `uncategorized`
 
 - Touched: **True**
 - Changes:
-  - Updated Version: v0.6.9.39+1
-  - Updated Last updated: 2026-06-17 (v0.6.9.39+1 – Kanban documentation setup)
-  - Updated board Last Updated: 2026-06-17 (RW: E06:S09:T39)
-  - Updated board Version: v0.6.9.39+1
+  - Updated Version: v0.6.9.38+1
+  - Updated Last updated: 2026-06-17 (v0.6.9.38+1 – Kanban documentation setup)
+  - Updated board Last Updated: 2026-06-17 (RW: E06:S09:T38)
+  - Updated board Version: v0.6.9.38+1

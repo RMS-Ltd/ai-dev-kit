@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Board
 
-**Last Updated:** 2026-06-17 (RW: E06:S09:T39)
-**Version:** v0.6.9.39+1
+**Last Updated:** 2026-06-17 (RW: E06:S09:T38)
+**Version:** v0.6.9.38+1
 
 **Active board contract:** **Sole active MoSCOW board** ([ADR-018](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/architecture/standards-and-adrs/ADR-018-single-kanban-board-consolidation.md)). Rows are **live work** (TODO / IN PROGRESS / OPEN / WAITING / PERPETUAL) plus filed **Could Have** backlog. **Verification (V)** band holds task-shipped / FBU-open items (`⏳ WAITING`). Remove **terminal** rows and archive prose (use [`kanban-completed.md`](kanban-completed.md) / [`intake-completed.md`](intake-completed.md)).
 
@@ -28,7 +28,6 @@ housekeeping_policy: keep
 
 ### Should Have (S) - Important Tasks
 
-- **E06:S09:T38** – Guided install orchestrator (FR-135) - 📋 TODO (HIGH — one-command install; choice menus; sqlite/UKW/ledgers/comprehension in orchestrator) | [Task](epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T38-guided-install-orchestrator-fr135.md) | [FR-135](fr-br/FR-135-guided-install-orchestrator-zero-manual-steps.md) | [FR-133](fr-br/FR-133-kanban-migration-depth-rationalization-adopter-guide.md) | [#85](https://github.com/RMS-Ltd/ai-dev-kit/issues/85)| v0.6.9.38+0 | —No IPP— | Last modified: 2026-06-17 14:29 UTC
 
 ### Verification (V) - Task Shipped, FBU Verification Pending
 

@@ -102,10 +102,13 @@ Install from your **host project root** (framework paths relative to where you p
 python3 "vendor/ai-dev-kit/packages/frameworks/workflow-mgt/scripts/install_greenfield_path.py" \
   --project-root "." \
   --vendor-root "vendor/ai-dev-kit" \
-  --non-interactive
+  --non-interactive \
+  --config vendor/ai-dev-kit/packages/frameworks/workflow-mgt/config/install-profile.example.yaml
 ```
 
-**Non-interactive RW (mode C):** pass a pre-filled YAML so the orchestrator does not prompt for project metadata:
+**One command (FR-135 guided v2):** the install profile records adoption path, SQLite backend, UKW trigger bundle, kanban-completed ledger init, and Install RC — no post-install manual step banner. Customize `install-profile.yaml` from the example under `packages/frameworks/workflow-mgt/config/`. Choice reference: [install-profile.example.yaml](packages/frameworks/workflow-mgt/config/install-profile.example.yaml).
+
+**Legacy non-interactive RW (mode C):** pass a pre-filled YAML so the orchestrator does not prompt for project metadata:
 
 ```bash
 python3 "vendor/ai-dev-kit/packages/frameworks/workflow-mgt/scripts/install_greenfield_path.py" \

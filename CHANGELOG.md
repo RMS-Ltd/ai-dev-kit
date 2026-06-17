@@ -11,6 +11,14 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.6.9.38+1] - 17-06-26
+
+E06:S09:T38 — **Guided install orchestrator (FR-135):** install profile + phases A–F, sqlite/UKW/ledgers/comprehension orchestration, Install RC extensions. SemVer **v0.4.1197+1**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.6.9.38+1.md)
+
+---
+
 ## [0.6.9.39+1] - 17-06-26
 
 E06:S09:T39 — **Guided KMA Target Structure Pack (FR-136):** `kma_mode` blind/guided/score, TSP reference pack, structural scorer, collision + dedup helpers, pytest fixture replay. SemVer **v0.4.1196+1**.

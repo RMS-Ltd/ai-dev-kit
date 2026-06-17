@@ -1348,6 +1348,26 @@ def generate_rw_config_yaml(config: Dict) -> str:
     if config.get('project_name'):
         lines.append(f"project_name: {config['project_name']}\n")
 
+    backend = str(config.get("release_state_backend", "")).strip().lower()
+    if backend:
+        lines.append(f"release_state_backend: {backend}")
+        if backend == "sqlite":
+            db_path = config.get("release_state_db", ".adk/release-state.db")
+            lines.append(f"release_state_db: {db_path}")
+        lines.append("")
+
+    if config.get("install_trigger_bundle"):
+        lines.append(f"install_trigger_bundle: {config['install_trigger_bundle']}\n")
+
+    kc = config.get("kanban_completed")
+    if isinstance(kc, dict) and kc:
+        lines.append("kanban_completed:")
+        if kc.get("db"):
+            lines.append(f"  db: {kc['db']}")
+        if kc.get("pdf"):
+            lines.append(f"  pdf: {kc['pdf']}")
+        lines.append("")
+
     profile = normalize_maintainer_editor_profile(
         config.get("maintainer_editor_profile", DEFAULT_MAINTAINER_EDITOR_PROFILE)
     )

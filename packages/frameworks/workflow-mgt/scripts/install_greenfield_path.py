@@ -11,15 +11,21 @@ Phase 0 extensions (T36 / #52):
 - --adoption-path for profile-aware guidance and Install RC
 - --init-sqlite before RW when config declares sqlite backend
 - --run-install-rc post-install gate
+
+Guided orchestrator v2 (FR-135 / E06:S09:T38):
+- install-profile.yaml via --config (schema_version 1.x)
+- Phases A–F: path, release authority, trigger bundle, ledgers, KMA offer, RC
 """
 
 from __future__ import annotations
 
 import argparse
+import json
 import subprocess
 import sys
+from datetime import datetime, timezone
 from pathlib import Path
-from typing import List, Optional
+from typing import List, Optional, Tuple
 
 _SCRIPTS_DIR = Path(__file__).resolve().parent
 if str(_SCRIPTS_DIR) not in sys.path:
@@ -42,11 +48,34 @@ except ImportError:
     def run_verify(vendor_root, *, tarball=None, sha256=None, emit=True):  # type: ignore[misc]
         return 0, None
 
+try:
+    from install_profile import (
+        InstallProfile,
+        load_config_file,
+        profile_summary_dict,
+        resolve_interactive,
+        write_temp_rw_config,
+    )
+except ImportError:
+    InstallProfile = None  # type: ignore[misc,assignment]
+    load_config_file = None  # type: ignore[misc,assignment]
+
+try:
+    from install_cursorrules_bundle import append_sections, bundle_for_trigger
+except ImportError:
+    append_sections = None  # type: ignore[misc,assignment]
+    bundle_for_trigger = None  # type: ignore[misc,assignment]
+
 _RELEASE_STATE_SCRIPT = (
     _SCRIPTS_DIR / "release_state" / "init_release_state_db.py"
 )
 _IMPORT_LEGACY_SCRIPT = _SCRIPTS_DIR / "release_state" / "import_legacy.py"
+_INIT_KANBAN_COMPLETED = _SCRIPTS_DIR / "kanban" / "init_kanban_completed_db.py"
+_IMPORT_KANBAN_COMPLETED = _SCRIPTS_DIR / "kanban" / "import_kanban_completed_md.py"
 _VALIDATE_RC_SCRIPT = _SCRIPTS_DIR / "validation" / "validate_install_rc.py"
+_COMPREHENSION_TEMPLATE = (
+    _SCRIPTS_DIR.parent / "templates" / "COMPREHENSION_TEMPLATE.md"
+)
 
 _LAYERED_SEQUENCE = """
 Layered install sequence (Path 2 / full-stack brownfield target):
@@ -55,7 +84,7 @@ Layered install sequence (Path 2 / full-stack brownfield target):
   2  sqlite — import_legacy.py or init_release_state_db.py
   3  RW installer scaffold
   3½ documentation schema — DOCUMENTATION_SCHEMA.md / documentation_surfaces
-  3c UKW / cursorrules wiring (manual until orchestrated)
+  3c UKW / cursorrules wiring (orchestrated in Phase C)
   4  kanban fresh --catalog v4
   5  KMA — kit first pass on archived legacy only (no pre-authored target E/S tree)
   5b post-KMA scoring / tweaks — after kit output (eval programmes only)
@@ -142,23 +171,57 @@ def build_kanban_command(
     return cmd
 
 
-def build_init_sqlite_command(project_root: Path, config_path: Optional[Path]) -> List[str]:
+def build_init_sqlite_command(
+    project_root: Path,
+    *,
+    import_mode: str = "auto",
+    skip_changelog_import: bool = True,
+) -> List[str]:
     """Prefer import_legacy when semver-registry.yaml exists; else empty DB init."""
     yaml_path = project_root / "semver-registry.yaml"
-    if yaml_path.is_file() and _IMPORT_LEGACY_SCRIPT.is_file():
-        return [
+    mode = import_mode
+    if mode == "auto":
+        mode = "import" if yaml_path.is_file() else "fresh"
+    if mode == "legacy_yaml":
+        return []
+    if mode == "import" and yaml_path.is_file() and _IMPORT_LEGACY_SCRIPT.is_file():
+        cmd = [
             sys.executable,
             str(_IMPORT_LEGACY_SCRIPT),
             "--yaml",
             str(yaml_path),
             "--validate",
-            "--skip-changelog",
         ]
+        if skip_changelog_import:
+            cmd.append("--skip-changelog")
+        return cmd
+    if _RELEASE_STATE_SCRIPT.is_file():
+        return [
+            sys.executable,
+            str(_RELEASE_STATE_SCRIPT),
+            "--project-root",
+            str(project_root),
+        ]
+    return []
+
+
+def build_kanban_completed_init_command(project_root: Path) -> List[str]:
+    if not _INIT_KANBAN_COMPLETED.is_file():
+        return []
+    return [sys.executable, str(_INIT_KANBAN_COMPLETED), "--project-root", str(project_root)]
+
+
+def build_kanban_completed_import_command(project_root: Path) -> List[str]:
+    md = project_root / "docs" / "kanban" / "kanban-completed.md"
+    if not md.is_file() or not _IMPORT_KANBAN_COMPLETED.is_file():
+        return []
     return [
         sys.executable,
-        str(_RELEASE_STATE_SCRIPT),
+        str(_IMPORT_KANBAN_COMPLETED),
         "--project-root",
         str(project_root),
+        "--markdown",
+        str(md),
     ]
 
 
@@ -195,6 +258,8 @@ def _read_sqlite_backend(project_root: Path, config_path: Optional[Path]) -> boo
 
 
 def run_step(command: list[str], project_root: Path, dry_run: bool) -> int:
+    if not command:
+        return 0
     printable = " ".join(command)
     print(f"\n▶ {printable}")
     if dry_run:
@@ -254,6 +319,186 @@ def print_adoption_guidance(adoption_path: str) -> None:
         print("Greenfield — empty/template repo (FR-080).")
 
 
+def scaffold_comprehension(project_root: Path, profile: "InstallProfile", dry_run: bool) -> None:
+    if not profile.scaffold_comprehension:
+        return
+    dest = project_root / "COMPREHENSION.md"
+    if dest.is_file():
+        print(f"\nCOMPREHENSION.md already exists: {dest}")
+        return
+    if not _COMPREHENSION_TEMPLATE.is_file():
+        print("\n⚠️  COMPREHENSION template not found — skip scaffold")
+        return
+    text = _COMPREHENSION_TEMPLATE.read_text(encoding="utf-8")
+    if text.startswith("---"):
+        end = text.find("---", 3)
+        if end != -1:
+            text = text[end + 3 :].lstrip("\n")
+    header = (
+        f"<!-- Generated by install_greenfield_path.py — adoption_path={profile.adoption_path} -->\n\n"
+    )
+    if dry_run:
+        print(f"\n[dry-run] Would scaffold COMPREHENSION.md from template")
+        return
+    dest.write_text(header + text, encoding="utf-8")
+    print(f"\n✅ Scaffolded COMPREHENSION.md from template")
+
+
+def emit_kma_handoff(profile: "InstallProfile") -> None:
+    if profile.kma_offer == "skip":
+        return
+    print("\n--- Phase E — KMA handoff (no auto-run) ---")
+    if profile.kma_offer == "blind_l1":
+        print("Next: run KMA for blind L1 migration on archived legacy only.")
+        print("  Command: KMA /path/to/archived/legacy/kanban")
+        print("  Guide: packages/frameworks/kanban/guides/ADK_KANBAN_MIGRATION_FOR_ADOPTER_AGENTS.md")
+    elif profile.kma_offer == "guided":
+        print("Next: guided KMA kit mode when target-structure pack is available (FR-136).")
+        print("  See: https://github.com/RMS-Ltd/ai-dev-kit/issues/85")
+
+
+def write_guided_receipt(project_root: Path, profile: "InstallProfile", *, dry_run: bool) -> None:
+    receipt_dir = project_root / "logs" / "ai-dev-kit" / "install"
+    payload = {
+        "receipt_type": "guided_install_orchestrator",
+        "schema_version": profile.schema_version,
+        "timestamp_utc": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
+        "choices": profile_summary_dict(profile),
+    }
+    if dry_run:
+        print(f"\n[dry-run] Install receipt: {json.dumps(payload, indent=2)}")
+        return
+    receipt_dir.mkdir(parents=True, exist_ok=True)
+    out = receipt_dir / f"guided-install-{payload['timestamp_utc'].replace(':', '')}.json"
+    out.write_text(json.dumps(payload, indent=2) + "\n", encoding="utf-8")
+    print(f"\nInstall receipt: {out.relative_to(project_root)}")
+
+
+def run_phase_c_cursorrules(project_root: Path, profile: "InstallProfile", dry_run: bool) -> None:
+    if append_sections is None or bundle_for_trigger is None:
+        return
+    include_ukw, include_delivery = bundle_for_trigger(profile.trigger_bundle)
+    if not include_ukw and not include_delivery:
+        return
+    path = project_root / ".cursorrules"
+    actions = append_sections(
+        path,
+        include_ukw=include_ukw,
+        include_delivery=include_delivery,
+        dry_run=dry_run,
+    )
+    for action in actions:
+        print(f"  Phase C: {action}")
+
+
+def run_guided_install(
+    project_root: Path,
+    vendor_root: Path,
+    profile: "InstallProfile",
+    *,
+    frameworks_base: Path,
+    config_path: Optional[Path],
+    dry_run: bool,
+    maintainer_editor_profile: Optional[str],
+) -> int:
+    """Execute FR-135 phases A–F on a resolved InstallProfile."""
+    ni = profile.non_interactive
+    print("\n=== Guided install orchestrator v2 (FR-135) ===")
+    print_adoption_guidance(profile.adoption_path)
+
+    pre_sqlite = profile.release_state_backend == "sqlite"
+    if pre_sqlite:
+        sqlite_cmd = build_init_sqlite_command(
+            project_root,
+            import_mode=profile.release_state_import,
+            skip_changelog_import=profile.skip_changelog_import,
+        )
+        code = run_step(sqlite_cmd, project_root, dry_run)
+        if code != 0:
+            emit_install_error("ADK-I01.S00", detail="sqlite init before RW failed")
+            return code
+
+    rw_config_path = config_path
+    if profile.rw_config or profile.release_state_backend:
+        merged = profile.to_rw_install_dict(project_root)
+        if not dry_run:
+            rw_config_path = write_temp_rw_config(project_root, merged)
+        elif config_path is None:
+            rw_config_path = project_root / ".adk-install-rw-config.yaml"
+
+    chosen_order = profile.install_order or choose_order(ni, "rw-first")
+    print(f"\nChosen order: {chosen_order}")
+
+    rw_cmd = build_rw_command(
+        frameworks_base,
+        project_root=project_root,
+        rw_mode=profile.rw_mode,
+        config=rw_config_path,
+        non_interactive=ni,
+        maintainer_editor_profile=maintainer_editor_profile,
+    )
+    kanban_cmd = build_kanban_command(
+        frameworks_base,
+        kanban_mode=profile.kanban_mode,
+        catalog=profile.kanban_catalog,
+        non_interactive=ni,
+    )
+    ordered = [rw_cmd, kanban_cmd] if chosen_order == "rw-first" else [kanban_cmd, rw_cmd]
+
+    for step in ordered:
+        code = run_step(step, project_root, dry_run)
+        if code != 0:
+            is_rw = "install_release_workflow" in step[1]
+            err = "ADK-I01.S01" if is_rw else "ADK-I01.S02"
+            emit_install_error(err, detail=f"subprocess exit {code}")
+            return code
+
+    run_phase_c_cursorrules(project_root, profile, dry_run)
+
+    if profile.init_kanban_completed:
+        code = run_step(build_kanban_completed_init_command(project_root), project_root, dry_run)
+        if code != 0:
+            emit_install_error("ADK-I01.S04", detail="kanban-completed db init failed")
+            return code
+    if profile.import_kanban_completed_md:
+        code = run_step(
+            build_kanban_completed_import_command(project_root), project_root, dry_run
+        )
+        if code != 0:
+            emit_install_error("ADK-I01.S05", detail="kanban-completed md import failed")
+            return code
+
+    scaffold_comprehension(project_root, profile, dry_run)
+    emit_kma_handoff(profile)
+
+    rc_passed = True
+    if profile.run_install_rc:
+        rc_profile = _rc_profile_for_adoption(profile.adoption_path)
+        rc_cmd = build_install_rc_command(
+            project_root, rc_profile, strict=profile.install_rc_strict
+        )
+        code = run_step(rc_cmd, project_root, dry_run)
+        if code != 0:
+            emit_install_error("ADK-I01.S03", detail="Install RC checklist failed")
+            rc_passed = False
+            if profile.install_rc_strict:
+                return code
+
+    write_guided_receipt(project_root, profile, dry_run=dry_run)
+
+    print("\n=== Install phase summary (FR-135-F7) ===")
+    print(f"  Adoption path: {profile.adoption_path}")
+    print(f"  Release backend: {profile.release_state_backend}")
+    print(f"  Trigger bundle: {profile.trigger_bundle}")
+    print(f"  Kanban completed DB: {'yes' if profile.init_kanban_completed else 'no'}")
+    print(f"  Install RC: {'PASS' if rc_passed else 'FAIL (see above)'}")
+    if rc_passed:
+        print("\nNext step: run your first domain RW when ready (not executed by installer).")
+    else:
+        print("\nResolve Install RC failures before first domain RW.")
+    return 0 if rc_passed else 1
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(
         description="Run canonical greenfield installation path with explicit checkpoint."
@@ -297,7 +542,7 @@ def main() -> int:
     parser.add_argument(
         "--config",
         default=None,
-        help="RW install config YAML forwarded to install_release_workflow.py.",
+        help="Install profile YAML (schema_version 1.x) or legacy RW install input.",
     )
     parser.add_argument(
         "--vendor-root",
@@ -319,13 +564,13 @@ def main() -> int:
     parser.add_argument(
         "--adoption-path",
         choices=("greenfield", "arm-a", "arm-b", "strangler"),
-        default="greenfield",
+        default=None,
         help="Adopter path profile for guidance and Install RC (ADR-030).",
     )
     parser.add_argument(
         "--init-sqlite",
         action="store_true",
-        help="Initialize SQLite release state before RW (or after RW when config exists).",
+        help="Initialize SQLite release state before RW (legacy flag; profile preferred).",
     )
     parser.add_argument(
         "--run-install-rc",
@@ -345,7 +590,6 @@ def main() -> int:
         return 1
 
     print_session_banner(project_root)
-    print_adoption_guidance(args.adoption_path)
 
     vendor_root = Path(args.vendor_root).resolve() if args.vendor_root else project_root
     if not args.dry_run and not args.no_verify_vendor:
@@ -361,12 +605,48 @@ def main() -> int:
 
     config_path = Path(args.config).resolve() if args.config else None
     if config_path is not None and not config_path.is_file():
+        emit_install_error("ADK-I01.S06", detail=f"config not found: {config_path}")
+        return 1
+
+    # Guided v2 path when install-profile.yaml is supplied
+    if config_path and load_config_file is not None and InstallProfile is not None:
+        try:
+            kind, loaded = load_config_file(config_path)
+        except ValueError as exc:
+            emit_install_error("ADK-I01.S07", detail=str(exc))
+            return 1
+        if kind == "install_profile":
+            profile: InstallProfile = loaded
+            if args.non_interactive:
+                profile.non_interactive = True
+            if args.adoption_path:
+                profile.adoption_path = args.adoption_path
+            profile = resolve_interactive(
+                profile,
+                cli_adoption_path=args.adoption_path,
+                cli_non_interactive=args.non_interactive,
+            )
+            return run_guided_install(
+                project_root,
+                vendor_root,
+                profile,
+                frameworks_base=frameworks_base,
+                config_path=config_path,
+                dry_run=args.dry_run,
+                maintainer_editor_profile=args.maintainer_editor_profile,
+            )
+
+    # Legacy orchestrator path (pre FR-135)
+    adoption_path = args.adoption_path or "greenfield"
+    print_adoption_guidance(adoption_path)
+
+    if config_path is not None and not config_path.is_file():
         print(f"RW config file not found: {config_path}")
         return 1
 
     pre_rw_sqlite = args.init_sqlite or _read_sqlite_backend(project_root, config_path)
     if pre_rw_sqlite and config_path is not None:
-        sqlite_cmd = build_init_sqlite_command(project_root, config_path)
+        sqlite_cmd = build_init_sqlite_command(project_root)
         code = run_step(sqlite_cmd, project_root, args.dry_run)
         if code != 0:
             emit_install_error("ADK-I01.S00", detail="sqlite init before RW failed")
@@ -399,11 +679,10 @@ def main() -> int:
             err = "ADK-I01.S01" if is_rw else "ADK-I01.S02"
             emit_install_error(err, detail=f"subprocess exit {code}")
             print(f"\nInstallation halted due to step failure (exit {code}).")
-            print("See subprocess output above for ADK-I02.* or ADK-I03.* detail codes.")
             return code
 
     if pre_rw_sqlite and config_path is None:
-        sqlite_cmd = build_init_sqlite_command(project_root, None)
+        sqlite_cmd = build_init_sqlite_command(project_root)
         code = run_step(sqlite_cmd, project_root, args.dry_run)
         if code != 0:
             emit_install_error("ADK-I01.S00", detail="sqlite init after RW failed")
@@ -412,27 +691,22 @@ def main() -> int:
     print("\nPost-install manual steps (until fully orchestrated):")
     print("  • Apply DOCUMENTATION_SCHEMA.md profile (documentation_surfaces in rw-config)")
     print("  • UKW / cursorrules wiring if not emitted by RW installer")
-    if args.adoption_path in ("arm-b", "strangler"):
-        print("  • KMA — kit first pass on archived legacy only (no pre-authored target E/S tree)")
-        print("  • See LEGACY_KANBAN_MIGRATION.md; FR-127 proposal sign-off before writes")
+    if adoption_path in ("arm-b", "strangler"):
+        print("  • KMA — kit first pass on archived legacy only")
         print("  • Copy COMPREHENSION template → repo-root COMPREHENSION.md")
-        print("    packages/frameworks/workflow-mgt/templates/COMPREHENSION_TEMPLATE.md")
-        print("  • Default migration depth L1 — see KANBAN_MIGRATION_DEPTH_AND_RATIONALIZATION.md")
 
     if args.run_install_rc:
-        rc_profile = _rc_profile_for_adoption(args.adoption_path)
+        rc_profile = _rc_profile_for_adoption(adoption_path)
         rc_cmd = build_install_rc_command(
             project_root, rc_profile, strict=args.install_rc_strict
         )
         code = run_step(rc_cmd, project_root, args.dry_run)
         if code != 0:
             emit_install_error("ADK-I01.S03", detail="Install RC checklist failed")
-            print("\nInstall RC FAILED — do not run first domain RW until resolved.")
             return code
 
     print("\nGreenfield orchestration finished.")
-    print("Next: manual verification gates from INSTALL_IN_YOUR_PROJECT.md")
-    print("Install RC: validate_install_rc.py --profile", _rc_profile_for_adoption(args.adoption_path))
+    print("Tip: use install-profile.example.yaml with --config for guided v2 (FR-135).")
     return 0
 
 

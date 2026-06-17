@@ -1230,6 +1230,53 @@ Canonical registry: `packages/frameworks/workflow-mgt/config/install-error-codes
 
 **See also:** UXR-029
 
+### ADK-I01.S04 {/* #adk-i01-s04 */}
+
+**Summary:** kanban-completed SQLite ledger init failed
+
+**Symptom:** init_kanban_completed_db.py exited non-zero during guided install Phase D.
+
+**Remediation:**
+- Confirm rw-config kanban_completed.db path and .adk/ is writable.
+- Run init_kanban_completed_db.py manually and capture stderr.
+
+**See also:** FR-134, FR-135
+
+### ADK-I01.S05 {/* #adk-i01-s05 */}
+
+**Summary:** kanban-completed markdown import failed
+
+**Symptom:** import_kanban_completed_md.py exited non-zero when profile requested import_md.
+
+**Remediation:**
+- Verify kanban-completed.md path and markdown format.
+- Re-run import with --markdown pointing at the ledger file.
+
+**See also:** FR-134, FR-135
+
+### ADK-I01.S06 {/* #adk-i01-s06 */}
+
+**Summary:** Install profile or config file not found
+
+**Symptom:** --config path does not exist.
+
+**Remediation:**
+- Copy install-profile.example.yaml and pass --non-interactive --config <path>.
+
+**See also:** FR-135
+
+### ADK-I01.S07 {/* #adk-i01-s07 */}
+
+**Summary:** Install profile validation failed
+
+**Symptom:** install-profile.yaml failed schema or field validation.
+
+**Remediation:**
+- Compare against packages/frameworks/workflow-mgt/config/install-profile.example.yaml.
+- Fix adoption_path, trigger_bundle, or release_state fields.
+
+**See also:** FR-135
+
 ### ADK-I02.E01 {/* #adk-i02-e01 */}
 
 **Summary:** Kanban framework install failed

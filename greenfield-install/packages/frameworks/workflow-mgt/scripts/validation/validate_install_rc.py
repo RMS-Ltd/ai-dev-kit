@@ -209,6 +209,27 @@ def _run_check(
         sample = hits[0] if hits else "?"
         return False, f"{count} ad-hoc script(s) > {max_allowed}, e.g. {sample}"
 
+    if ctype == "sqlite_kanban_completed":
+        kc = config.get("kanban_completed")
+        if not isinstance(kc, dict):
+            return True, "kanban_completed not configured — skipped"
+        db_rel = kc.get("db", ".adk/kanban-completed.db")
+        db_path = project_root / str(db_rel)
+        if db_path.is_file():
+            return True, f"exists: {db_path.relative_to(project_root)}"
+        return False, f"{db_rel} missing (run init_kanban_completed_db.py)"
+
+    if ctype == "file_contains":
+        rel = spec.get("path", ".cursorrules")
+        p = project_root / str(rel)
+        if not p.is_file():
+            return False, f"not found: {rel}"
+        needles = [str(s) for s in (spec.get("require_any_substrings") or [])]
+        text = p.read_text(encoding="utf-8", errors="replace")
+        if any(n in text for n in needles):
+            return True, f"marker in {rel}"
+        return False, f"{rel} missing required substring(s)"
+
     if ctype == "comprehension_marker":
         paths = spec.get("path_any") or []
         needles = [str(s).lower() for s in (spec.get("require_any_substrings") or [])]

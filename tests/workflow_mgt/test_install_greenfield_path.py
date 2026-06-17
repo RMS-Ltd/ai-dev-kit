@@ -158,3 +158,48 @@ def test_dry_run_adoption_path_and_sqlite_flags(tmp_path):
     assert "arm-b" in result.stdout
     assert "init_release_state_db" in result.stdout or "import_legacy" in result.stdout
     assert "validate_install_rc" in result.stdout
+
+
+def test_dry_run_guided_profile_shows_phases(tmp_path):
+    project = tmp_path / "project"
+    vendor = tmp_path / "vendor" / "ai-dev-kit"
+    project.mkdir(parents=True)
+    vendor.mkdir(parents=True)
+    _write_stub_scripts(vendor)
+
+    example = (
+        _REPO
+        / "packages"
+        / "frameworks"
+        / "workflow-mgt"
+        / "config"
+        / "install-profile.example.yaml"
+    )
+    profile_copy = project / "install-profile.yaml"
+    profile_copy.write_text(example.read_text(encoding="utf-8"), encoding="utf-8")
+
+    script = _SCRIPTS / "install_greenfield_path.py"
+    result = subprocess.run(
+        [
+            sys.executable,
+            str(script),
+            "--project-root",
+            str(project),
+            "--vendor-root",
+            str(vendor),
+            "--non-interactive",
+            "--no-verify-vendor",
+            "--dry-run",
+            "--config",
+            str(profile_copy),
+        ],
+        cwd=project,
+        capture_output=True,
+        text=True,
+        check=False,
+    )
+
+    assert result.returncode == 0, result.stderr + result.stdout
+    assert "Guided install orchestrator v2" in result.stdout
+    assert "Install phase summary" in result.stdout
+    assert "Post-install manual steps" not in result.stdout

@@ -66,6 +66,39 @@ profiles:
         rw_config_key: kanban_board
         under_kanban_root: true
 
+    - id: rc-kanban-completed-db
+      label: kanban-completed SQLite ledger when configured
+      blocking: true
+      when:
+        rw_config_key: use_kanban
+        equals: true
+      check:
+        type: sqlite_kanban_completed
+
+    - id: rc-ukw-trigger
+      label: UKW trigger present in .cursorrules when standard bundle
+      blocking: true
+      when:
+        rw_config_key: install_trigger_bundle
+        equals: rw_ukw
+      check:
+        type: file_contains
+        path: .cursorrules
+        require_any_substrings:
+          - "UPDATE KANBAN WORKFLOW (UKW)"
+
+    - id: rc-ukw-delivery-trigger
+      label: UKW trigger present when delivery bundle configured
+      blocking: true
+      when:
+        rw_config_key: install_trigger_bundle
+        equals: rw_ukw_delivery
+      check:
+        type: file_contains
+        path: .cursorrules
+        require_any_substrings:
+          - "UPDATE KANBAN WORKFLOW (UKW)"
+
   greenfield:
     - id: rc-greenfield-vendor
       label: Lean vendor tree or packages/frameworks present

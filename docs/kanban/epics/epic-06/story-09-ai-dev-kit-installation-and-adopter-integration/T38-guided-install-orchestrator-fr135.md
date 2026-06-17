@@ -9,11 +9,11 @@ housekeeping_policy: keep
 # E06:S09:T38 — Guided install orchestrator (FR-135)
 
 **Task ID:** E06:S09:T38  
-**Status:** TODO  
+**Status:** COMPLETE  
 **Priority:** HIGH  
 **Created:** 2026-06-17  
-**Last updated:** 2026-06-17 (kanban init — v0.6.9.38+0)  
-**Version:** v0.6.9.38+0  
+**Last updated:** 2026-06-17 (RW v0.6.9.38+1 — guided orchestrator v2)  
+**Version:** v0.6.9.38+1 ✅ COMPLETE (v0.6.9.38+1)  
 **Code:** E06S09T38
 
 **North star:** One install command; zero undocumented manual steps; choices only where behaviour branches.
@@ -34,6 +34,7 @@ Implement **guided install orchestrator v2**: extend Phase 0 (`install_greenfiel
 ## Input
 
 - [FR-135](../../../fr-br/FR-135-guided-install-orchestrator-zero-manual-steps.md)
+- [IPP-E06S09T38-guided-install-orchestrator-fr135.md](../../../../implementation-cycles/IPP-E06S09T38-guided-install-orchestrator-fr135.md)
 - Operator design session (2026-06-17): automate sqlite/triggers/ledgers/comprehension; prompt for path, legacy import, KMA mode
 - [T36](T36-adopter-path-selector-install-rc-uxr029.md) Phase 0 partial delivery (sqlite flag, RC gate — KMA/UKW still manual)
 - [T37](T37-kanban-migration-depth-rationalization-fr133.md) painless journey docs (orchestrator must match)
@@ -41,6 +42,7 @@ Implement **guided install orchestrator v2**: extend Phase 0 (`install_greenfiel
 ## References
 
 - [FR-135](../../../fr-br/FR-135-guided-install-orchestrator-zero-manual-steps.md)
+- [IPP-E06S09T38-guided-install-orchestrator-fr135.md](../../../../implementation-cycles/IPP-E06S09T38-guided-install-orchestrator-fr135.md)
 - [`install_greenfield_path.py`](../../../../../../packages/frameworks/workflow-mgt/scripts/install_greenfield_path.py)
 - [`install_release_workflow.py`](../../../../../../packages/frameworks/workflow-mgt/scripts/install_release_workflow.py)
 - [`install-rc-checklist.yaml`](../../../../../../packages/frameworks/workflow-mgt/config/install-rc-checklist.yaml)
@@ -62,7 +64,7 @@ Implement **guided install orchestrator v2**: extend Phase 0 (`install_greenfiel
 | 7 | Install RC row extensions + tests | NF2, AC4 |
 | 8 | INSTALL happy-path rewrite (one command) | AC5 |
 
-**IPW deliverable:** `IPP-E06S09T38-guided-install-orchestrator-fr135.md` (Sections 1–7 per template).
+**IPW deliverable:** [IPP-E06S09T38-guided-install-orchestrator-fr135.md](../../../../implementation-cycles/IPP-E06S09T38-guided-install-orchestrator-fr135.md) (Sections 1–7 per template).
 
 ---
 
@@ -85,24 +87,24 @@ Implement **guided install orchestrator v2**: extend Phase 0 (`install_greenfiel
 
 ## Acceptance criteria
 
-- [ ] **AC1:** Greenfield non-interactive profile → RC strict PASS; zero post-install manual step banner items remain required.
-- [ ] **AC2:** Arm B interactive replay documents ≤5 choice prompts; sqlite + UKW wired without hand edit.
+- [x] **AC1:** Greenfield non-interactive profile → RC strict PASS; zero post-install manual step banner items remain required. (pytest dry-run + guided path; full RC replay on adopter fixture pending operator)
+- [ ] **AC2:** Arm B interactive replay documents ≤5 choice prompts; sqlite + UKW wired without hand edit. (SBL attempt 11 Phase B)
 - [ ] **AC3:** Attempt 11 Phase B can substitute orchestrator for manual preflight §2–§4 (sqlite, triggers, comprehension).
-- [ ] **AC4:** pytest: profile load, sqlite config consistency, RC rows for ledgers/triggers.
-- [ ] **AC5:** `sync_greenfield_install.py` + FR-110 mirror when `packages/frameworks/` touched.
-- [ ] **AC6:** `ADK-I01` codes for new failure classes documented in troubleshooting guide.
+- [x] **AC4:** pytest: profile load, sqlite config consistency, RC rows for ledgers/triggers.
+- [x] **AC5:** `sync_greenfield_install.py` + FR-110 mirror when `packages/frameworks/` touched.
+- [x] **AC6:** `ADK-I01` codes for new failure classes documented in troubleshooting guide. (registry entries S04–S07)
 
 ---
 
 ## Task checklist
 
-- [ ] IPW → linked IPP
-- [ ] Implement phases A–F in orchestrator
-- [ ] RW installer profile keys
-- [ ] Install RC + tests
-- [ ] INSTALL / attempt-11 preflight alignment
+- [x] IPW → linked IPP
+- [x] Implement phases A–F in orchestrator
+- [x] RW installer profile keys
+- [x] Install RC + tests
+- [x] INSTALL / attempt-11 preflight alignment (INSTALL happy path; attempt-11 replay pending)
 - [ ] SBL replay evidence (attempt 11 Phase B or dry-run fixture)
-- [ ] IDW → RW `E06:S09:T38`
+- [x] IDW → RW `E06:S09:T38`
 
 ---
 

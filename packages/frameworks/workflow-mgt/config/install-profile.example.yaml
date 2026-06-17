@@ -1,0 +1,47 @@
+# Guided install profile (FR-135 / E06:S09:T38)
+# Usage:
+#   install_greenfield_path.py --non-interactive --config install-profile.example.yaml
+#
+schema_version: "1.0.0"
+adoption_path: greenfield
+non_interactive: true
+
+release_state:
+  backend: sqlite
+  import_mode: fresh
+  skip_changelog_import: true
+
+trigger_bundle: rw_ukw  # rw | rw_ukw | rw_ukw_delivery
+
+kanban_completed:
+  init_db: true
+  import_md: false
+
+comprehension:
+  scaffold: true
+
+kma_offer: skip  # blind_l1 | skip | guided (Arm B / strangler)
+
+install_rc:
+  run: true
+  strict: true
+
+rw_mode: c
+kanban_mode: fresh
+kanban_catalog: v4
+install_order: rw-first
+
+# Optional RW installer overrides (merged into generated rw-config)
+rw_install:
+  version_file: src/myproject/version.py
+  main_changelog: CHANGELOG.md
+  changelog_dir: docs/changelog-archive
+  scripts_path: packages/frameworks/workflow-mgt/scripts
+  readme_file: README.md
+  use_kanban: true
+  kanban_root: docs/kanban
+  kanban_board: kboard.md
+  epic_doc_pattern: epics/epic-{epic}/epic-{epic}.md
+  story_doc_pattern: epics/epic-{epic}/story-{story}-*.md
+  task_doc_pattern: epics/epic-{epic}/story-{story}/T{task}-*.md
+  fr_br_root: fr-br
