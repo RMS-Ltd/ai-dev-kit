@@ -96,7 +96,7 @@ codes:
     summary: Install profile or config file not found
     symptom: --config path does not exist.
     remediation:
-      - "Copy install-profile.example.yaml and pass --non-interactive --config <path>."
+      - "Copy `install-profile.example.yaml` and pass `--non-interactive --config <path>`."
     see_also:
       - FR-135
     introduced_in_adk_semver: "0.6.938"

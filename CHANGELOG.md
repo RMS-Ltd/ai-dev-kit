@@ -11,6 +11,14 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.2.16.5+13] - 17-06-26
+
+E02:S16:T05 — **Install error docs sync (FR-111):** ADK-I01.S06 MDX-safe YAML + regenerated troubleshooting appendix; greenfield mirror. SemVer **v0.4.1201+13**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.16.5+13.md)
+
+---
+
 ## [0.2.16.5+12] - 17-06-26
 
 E02:S16:T05 — **Docusaurus CI fix (BR-068):** adk-feedback attempt 09–11 GitHub blob links; MDX-safe `{path}` in install-profile remediation. SemVer **v0.4.1200+12**.

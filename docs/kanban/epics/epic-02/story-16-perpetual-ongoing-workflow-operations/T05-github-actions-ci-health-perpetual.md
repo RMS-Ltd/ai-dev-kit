@@ -14,8 +14,8 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** Small (ongoing)  
 **Created:** 2026-06-05  
-**Last updated:** 2026-06-17 (v0.2.16.5+12 — Wave 10 adk-feedback BR-068 recurrence)  
-**Version Anchor:** v0.2.16.5+12  
+**Last updated:** 2026-06-17 (v0.2.16.5+13 — Wave 11 install error docs sync)  
+**Version Anchor:** v0.2.16.5+13  
 **Code:** E02S16T05  
 **Task Type:** Perpetual Maintenance
 
@@ -231,7 +231,19 @@ Use **`RW E02:S16:T05`** for recurring CI hygiene passes (BUILD increments on pe
 | attempt 09–11 README | GitHub blob/tree URLs per BR-068 Strategy A |
 | ADK-I01.S06 remediation | `{path}` placeholder + backticks on filename |
 
-**Verification:** `portal/npm run build` SUCCESS; `validate_actions_ci_parity.py --strict` portal-publish-scope 9/9 @ **v0.2.16.5+12**.
+**Verification:** `pytest tests/workflow_mgt/test_install_error_docs_sync.py` 2/2; `portal/npm run build` SUCCESS @ **v0.2.16.5+13**.
+
+---
+
+## Wave 11 — Install error docs sync (2026-06-17)
+
+**Incident:** `validate_actions_ci_parity --all` — **Tests** failed `test_troubleshooting_adk_section_matches_generator` after Wave 10 manual `{path}` edit drifted from generator output.
+
+| Fix | Detail |
+| --- | ------ |
+| `install-error-codes.yaml` ADK-I01.S06 | Inline backticks around CLI (`<path>` inside code span — MDX-safe) |
+| Troubleshooting guide | Regenerated `{/* ADK-ERROR-CODES:* */}` block from `generate_install_error_docs.py` |
+| Greenfield | `sync_greenfield_install.py` mirror |
 
 ---
 

@@ -1261,7 +1261,7 @@ Canonical registry: `packages/frameworks/workflow-mgt/config/install-error-codes
 **Symptom:** --config path does not exist.
 
 **Remediation:**
-- Copy `install-profile.example.yaml` and pass `--non-interactive --config {path}`.
+- Copy `install-profile.example.yaml` and pass `--non-interactive --config <path>`.
 
 **See also:** FR-135
 
