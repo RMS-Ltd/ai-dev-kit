@@ -1,0 +1,8 @@
+{
+  "rows": {
+    "E03:S02:T15": {
+      "allowed": true,
+      "reason": "RW Step 7 v0.3.2.15+1 — terminal COMPLETE task pruned from active MoSCOW per FR-109 lean board"
+    }
+  }
+}

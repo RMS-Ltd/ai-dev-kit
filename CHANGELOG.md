@@ -11,6 +11,14 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.3.2.15+1] - 17-06-26
+
+E03:S02:T15 — **SemVer external `+BUILD` policy (UXR-031):** Option B — keep `+BUILD` in outward display; ordering = SemVer core; ADR-031 + policy memo + README/RW guide alignment. SemVer **v0.4.1198+1**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.3.2.15+1.md)
+
+---
+
 ## [0.6.9.38+1] - 17-06-26
 
 E06:S09:T38 — **Guided install orchestrator (FR-135):** install profile + phases A–F, sqlite/UKW/ledgers/comprehension orchestration, Install RC extensions. SemVer **v0.4.1197+1**.

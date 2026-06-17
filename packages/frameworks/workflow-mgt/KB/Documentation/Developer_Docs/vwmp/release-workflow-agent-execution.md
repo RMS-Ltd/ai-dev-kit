@@ -238,6 +238,7 @@ Rules:
 - For **external surfaces** (README, GitHub releases, badges, package manifests), RW treats **SemVer as the primary version**.
 - For **internal coordination** (Kanban markers, detailed changelogs, validators), RW treats the internal version as the **forensic coordinate**.
 - RW MUST always generate SemVer **from** the internal version; the internal version remains the single source of truth for Kanban alignment.
+- In **`task_touch` mode** ([ADR-031](../../../../../../../docs/architecture/standards-and-adrs/ADR-031-external-semver-build-metadata-display-policy.md)): external **ordering / precedence = SemVer core** (`MAJOR.MINOR.PATCH`). If `semver_full` includes `+BUILD`, it is trace-only metadata mirroring internal `VERSION_BUILD`. Primary Git tags use core only (`get_rw_tag_info`); internal tags carry the full internal version.
 
 RW consults project configuration (for example, `rw-config.yaml`) to determine:
 

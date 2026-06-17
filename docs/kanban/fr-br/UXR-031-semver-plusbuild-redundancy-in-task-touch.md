@@ -13,8 +13,9 @@ housekeeping_policy: keep
 **Submitted:** 2026-06-16  
 **Submitted By:** User  
 **Priority:** MEDIUM (Could Have — MoSCOW **C**)  
-**Status:** INTAKE  
-**Implementing Task:** [E03:S02:T15](../epics/epic-03/story-02-versioning-cookbook-and-examples/T15-semver-external-build-metadata-redundancy-uxr031.md)
+**Status:** IMPLEMENTED  
+**Implementing Task:** [E03:S02:T15](../epics/epic-03/story-02-versioning-cookbook-and-examples/T15-semver-external-build-metadata-redundancy-uxr031.md)  
+**Policy:** [semver-external-display-policy-decision.md](../epics/epic-03/story-02-versioning-cookbook-and-examples/semver-external-display-policy-decision.md) — Option B (trace-only `+BUILD`; ordering = SemVer core)
 
 **Related:** [FR-045](FR-045-adr-002-task-touch-derived-mapping.md) · [BR-061](BR-061-semver-task-touch-counter-increments-too-often.md) · [docs/governance/standards/dev-kit-versioning-policy.md](../../governance/standards/dev-kit-versioning-policy.md)
 
@@ -89,10 +90,11 @@ Determine whether external SemVer should include `+BUILD` in `task_touch` mode, 
 
 ## Acceptance Criteria (delivery task)
 
-- [ ] T15 converts this UXR into a concrete policy decision:
-  - “keep `+BUILD` externally” vs “show core only externally”
-- [ ] The policy decision updates the relevant outward-facing docs (at minimum: README + versioning policy guidance), keeping internal forensic trace intact.
-- [ ] UXR-031 ↔ E03:S02:T15 bidirectional links are wired (task references this UXR and this UXR references the task).
+- [x] T15 converts this UXR into a concrete policy decision: **Option B** — keep `+BUILD` externally; ordering = SemVer core
+- [x] The policy decision updates the relevant outward-facing docs (README + versioning policy + ADR-031), keeping internal forensic trace intact.
+- [x] UXR-031 ↔ E03:S02:T15 bidirectional links are wired (task references this UXR and this UXR references the task).
+
+**Implemented @ v0.3.2.15+1** (SemVer v0.4.1198+1) — 2026-06-17
 
 ---
 

@@ -38,11 +38,13 @@ The dev-kit follows the framework’s **dual-version model**:
 - **Release version (SemVer `MAJOR.MINOR.PATCH+BUILD`)**
   - External-facing version shown in README badges, GitHub releases, and package managers.
   - Always derived from the internal version using the mapping defined in Section 2.1.
+  - In **`task_touch` mode**, the **ordering / precedence signal for external consumers is the SemVer core** (`MAJOR.MINOR.PATCH`). The `+BUILD` suffix mirrors internal `VERSION_BUILD` as **trace-only build metadata** — not the monotonic release stream. See [ADR-031](../architecture/standards-and-adrs/ADR-031-external-semver-build-metadata-display-policy.md) and §2.1.1.
 
 In practice:
 
 - When talking to **external consumers**, the dev-kit presents **SemVer first**, optionally followed by the internal version in parentheses, for example:
   - `v0.3.19+2 (internal: v0.6.7.101+2)`.
+  - Compare releases by **SemVer core** (`v0.3.19` vs `v0.3.20`); treat `+2` as forensic build metadata within the same task-touch allocation.
 - When talking about **Kanban, tasks, and workflow internals**, the dev-kit uses `RC.EPIC.STORY.TASK+BUILD` directly.
 
 ## 2. Schema (Adopted)
@@ -150,6 +152,21 @@ Existing projects can migrate by:
 3. Switching configuration to `task_touch` mode
 4. Verifying no collisions in test environment
 
+#### Outward SemVer semantics (`task_touch` mode) — ADR-031
+
+**Policy (Option B):** External surfaces may display SemVer **with** `+BUILD` (for example `v0.4.1197+1`). This is intentional trace metadata, not the ordering signal.
+
+| Component | Role in `task_touch` |
+| --------- | -------------------- |
+| **SemVer core** (`MAJOR.MINOR.PATCH`) | **Ordering / precedence** for external consumers; `PATCH` from global task-touch counter |
+| **`+BUILD`** | Trace-only mirror of internal `VERSION_BUILD`; compare only after core is equal |
+| **Primary Git tag** | Core only (`vMAJOR.MINOR.PATCH`) — `+BUILD` stripped at tag boundary |
+| **Internal tag** | Full internal version (`vRC.EPIC.STORY.TASK+BUILD`) |
+
+**Decision memo:** [semver-external-display-policy-decision.md](../../kanban/epics/epic-03/story-02-versioning-cookbook-and-examples/semver-external-display-policy-decision.md)
+
+**Optional follow-on (Option A):** Core-only display in README/changelog emission — presentation change only; does not alter mapping or tag authority.
+
 ---
 
 ### Registry Structure
@@ -187,7 +204,9 @@ Both tags reference the same commit. Internal tag maintains backward compatibili
 **RW Step 5** automatically:
 - Generates SemVer from internal version using `semver_converter.py`
 - Updates README with SemVer (e.g., `**Version:** v0.3.19+2`)
-- Internal version remains in version file (`src/fynd_deals/version.py`) for internal tracking
+- Internal version remains in version file (`src/ai_dev_kit/version.py`) for internal tracking
+
+**`task_touch` ordering rule (ADR-031):** When README shows `vX.Y.Z+N`, use **`X.Y.Z` (SemVer core)** to determine which release is newer. The `+N` suffix traces the internal build instance — it is not an independent progression axis. Primary Git tags already use core-only naming.
 
 **Rationale:** External users and package managers expect monotonically increasing SemVer versions. The internal `RC.EPIC.STORY.TASK+BUILD` format is for internal development traceability only.
 

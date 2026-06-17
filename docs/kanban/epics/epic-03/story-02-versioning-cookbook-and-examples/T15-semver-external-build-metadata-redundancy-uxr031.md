@@ -9,12 +9,13 @@ housekeeping_policy: keep
 # E03:S02:T15 — SemVer external `+BUILD` redundancy evaluation & policy decision (UXR-031)
 
 **Task ID:** E03:S02:T15  
-**Status:** INTAKE  
+**Status:** COMPLETE  
 **Priority:** MEDIUM  
 **Estimated Effort:** Low–Medium (policy + docs; possible follow-on code)  
 **Created:** 2026-06-16  
-**Last updated:** 2026-06-16 (v0.2.16.2+12 – Kanban documentation setup; UXR-031 intake)
-**Version:** v0.2.16.2+12  
+**Last updated:** 2026-06-17 (v0.3.2.15+1 — RW `--art` release)  
+**Version:** v0.3.2.15+1  
+**Version Anchor:** v0.3.2.15+1  
 **Code:** E03S02T15
 
 ---
@@ -40,32 +41,32 @@ This task does not change internal allocation invariants by itself; it creates t
 ## Input
 
 - [UXR-031](../../../fr-br/UXR-031-semver-plusbuild-redundancy-in-task-touch.md)
+- **IPW plan:** [`IPP-E03S02T15-semver-external-build-metadata-redundancy.md`](../../../../implementation-cycles/IPP-E03S02T15-semver-external-build-metadata-redundancy.md)
+- **Policy decision:** [semver-external-display-policy-decision.md](semver-external-display-policy-decision.md) — **Option B** accepted
+- **ADR:** [ADR-031](../../../../architecture/standards-and-adrs/ADR-031-external-semver-build-metadata-display-policy.md)
 - `rw-config.yaml` (`semver_mapping_strategy: task_touch`)
 - `packages/frameworks/workflow-mgt/scripts/version/semver_converter.py`
   - `convert_internal_to_semver_task_touch(...)` (PATCH allocator vs preserved internal BUILD)
   - `semver_tag = semver_full.split('+')[0]` (primary Git tag core only)
-- `docs/governance/standards/dev-kit-versioning-policy.md` (internal vs external dual-version model)
-- `README.md` outward version line (currently includes `+BUILD`)
+- `docs/governance/standards/dev-kit-versioning-policy.md` (internal vs external dual-version model; §2.1.1)
+- `README.md` outward version line (includes `+BUILD` with ordering clarification)
 
 ---
 
 ## Deliverable
 
-1. **Policy decision memo** (stored in this story) stating the chosen outward SemVer representation.
-2. **Docs impact checklist** listing the exact surfaces to update (README, versioning policy guidance, changelog/Release summary conventions).
-3. **Follow-on implementation plan** (if Option A is chosen and requires code/template changes):
-   - what must change in RW/README/changelog emission
-   - what must remain stable for injectivity + validator compatibility
+1. **Policy decision memo** — [semver-external-display-policy-decision.md](semver-external-display-policy-decision.md): **Option B** (keep `+BUILD` visible; ordering = SemVer core).
+2. **Docs impact checklist** — see policy memo §Follow-on surfaces inventory.
+3. **Follow-on implementation plan** — Option A (core-only display) deferred as optional presentation-layer change; mapping/tag invariants unchanged.
 
 ---
 
 ## Acceptance Criteria
 
-- [ ] UXR-031 ↔ E03:S02:T15 bidirectional wiring is present (UXR references this task; task references UXR-031).
-- [ ] A single, explicit outward SemVer UX decision is documented:
-  - either Option A or Option B
-- [ ] The decision includes a clear statement of what external consumers should use for ordering/precedence.
-- [ ] The decision provides a concrete list of files/sections for follow-on delivery (even if implementation is deferred).
+- [x] UXR-031 ↔ E03:S02:T15 bidirectional wiring is present (UXR references this task; task references UXR-031).
+- [x] A single, explicit outward SemVer UX decision is documented: **Option B**
+- [x] The decision includes a clear statement of what external consumers should use for ordering/precedence: **SemVer core (`MAJOR.MINOR.PATCH`)**
+- [x] The decision provides a concrete list of files/sections for follow-on delivery (policy memo inventory).
 
 ---
 
@@ -78,6 +79,8 @@ This task does not change internal allocation invariants by itself; it creates t
 3. Choose the least confusing outward representation and update guidance accordingly.
 4. If Option A is selected, produce a follow-on plan scoped to “display/presentation”, preserving internal traceability and allocation invariants.
 
+**Outcome:** Option B selected; documentation and ADR updated; Option A remains optional follow-on.
+
 ---
 
 ## Dependencies
@@ -85,3 +88,10 @@ This task does not change internal allocation invariants by itself; it creates t
 - UXR-031 evidence + maintainer interpretation.
 - Current SemVer emission behavior in RW Step 10/11 commit subject + README/changelog update surfaces.
 
+---
+
+## References
+
+- **IPW plan:** [`IPP-E03S02T15-semver-external-build-metadata-redundancy.md`](../../../../implementation-cycles/IPP-E03S02T15-semver-external-build-metadata-redundancy.md)
+- **Policy memo:** [semver-external-display-policy-decision.md](semver-external-display-policy-decision.md)
+- **ADR:** [ADR-031](../../../../architecture/standards-and-adrs/ADR-031-external-semver-build-metadata-display-policy.md)
