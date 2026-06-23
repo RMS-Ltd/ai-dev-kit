@@ -91,6 +91,7 @@ def _normalize_semver(text: str) -> str:
 
 
 def _allocator_semver(root: Path, internal: str) -> Optional[str]:
+    """Return core-only SemVer for external-surface coherence checks (ADR-031 Option A)."""
     if semver_converter.get_release_state_backend() != "sqlite":
         return None
     from release_state.allocate import lookup
@@ -99,7 +100,9 @@ def _allocator_semver(root: Path, internal: str) -> Optional[str]:
     if not db_path.is_absolute():
         db_path = root / db_path
     row = lookup(db_path, internal)
-    return row.semver_full if row else None
+    if not row:
+        return None
+    return row.semver_core
 
 
 def validate_release_coherence(

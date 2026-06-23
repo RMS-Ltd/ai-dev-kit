@@ -3,7 +3,7 @@
 Build RW Step 10 release commit message with external SemVer subject and internal body traceability.
 
 Subject (GitHub Actions run title on push):
-  Release v{semver}: {summary}
+  Release v{semver_core}: {summary}
 
 Body:
   Internal: v{internal}
@@ -22,7 +22,10 @@ _SCRIPTS_DIR = Path(__file__).resolve().parent.parent
 if str(_SCRIPTS_DIR) not in sys.path:
     sys.path.insert(0, str(_SCRIPTS_DIR))
 
-from version.semver_converter import convert_version_string  # noqa: E402
+from version.semver_converter import (  # noqa: E402
+    convert_version_string,
+    external_display_semver,
+)
 
 
 def build_rw_commit_message(
@@ -37,7 +40,8 @@ def build_rw_commit_message(
     if internal.startswith("v"):
         internal = internal[1:]
 
-    semver = convert_version_string(internal, finalize=False)
+    semver_full = convert_version_string(internal, finalize=False)
+    semver = external_display_semver(semver_full) or semver_full
     subject = f"Release v{semver}: {summary.strip()}"
     body = (
         f"Internal: v{internal}\n\n"
@@ -48,6 +52,7 @@ def build_rw_commit_message(
         "body": body,
         "message": f"{subject}\n\n{body}",
         "semver": semver,
+        "semver_full": semver_full,
         "internal": internal,
     }
 

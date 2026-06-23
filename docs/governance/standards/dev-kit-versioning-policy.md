@@ -42,9 +42,9 @@ The dev-kit follows the framework’s **dual-version model**:
 
 In practice:
 
-- When talking to **external consumers**, the dev-kit presents **SemVer first**, optionally followed by the internal version in parentheses, for example:
-  - `v0.3.19+2 (internal: v0.6.7.101+2)`.
-  - Compare releases by **SemVer core** (`v0.3.19` vs `v0.3.20`); treat `+2` as forensic build metadata within the same task-touch allocation.
+- When talking to **external consumers**, the dev-kit presents **SemVer core first** (for example `v0.4.1201`), with the full internal version on a separate trace line:
+  - `v0.4.1201 (internal: v0.2.16.5+13)`.
+  - Compare releases by **SemVer core** (`v0.4.1201` vs `v0.4.1202`); internal `+BUILD` is not part of external display ([ADR-031](../architecture/standards-and-adrs/ADR-031-external-semver-build-metadata-display-policy.md)).
 - When talking about **Kanban, tasks, and workflow internals**, the dev-kit uses `RC.EPIC.STORY.TASK+BUILD` directly.
 
 ## 2. Schema (Adopted)
@@ -154,18 +154,18 @@ Existing projects can migrate by:
 
 #### Outward SemVer semantics (`task_touch` mode) — ADR-031
 
-**Policy (Option B):** External surfaces may display SemVer **with** `+BUILD` (for example `v0.4.1197+1`). This is intentional trace metadata, not the ordering signal.
+**Policy (Option A — implemented):** External surfaces display SemVer **core only** (for example `v0.4.1201`). Internal `+BUILD` appears on the internal version line, internal Git tag, and allocator `semver_full` — not on README, commit subjects, or changelog SemVer lines.
 
 | Component | Role in `task_touch` |
 | --------- | -------------------- |
-| **SemVer core** (`MAJOR.MINOR.PATCH`) | **Ordering / precedence** for external consumers; `PATCH` from global task-touch counter |
-| **`+BUILD`** | Trace-only mirror of internal `VERSION_BUILD`; compare only after core is equal |
-| **Primary Git tag** | Core only (`vMAJOR.MINOR.PATCH`) — `+BUILD` stripped at tag boundary |
+| **SemVer core** (`MAJOR.MINOR.PATCH`) | **Ordering / precedence** and **external display** for consumers; `PATCH` from global task-touch counter |
+| **`+BUILD`** | Internal forensic only (`VERSION_BUILD`); mirrored in `semver_full` / internal tag — **not** shown on external surfaces |
+| **Primary Git tag** | Core only (`vMAJOR.MINOR.PATCH`) |
 | **Internal tag** | Full internal version (`vRC.EPIC.STORY.TASK+BUILD`) |
 
-**Decision memo:** [semver-external-display-policy-decision.md](../../kanban/epics/epic-03/story-02-versioning-cookbook-and-examples/semver-external-display-policy-decision.md)
+**Helpers:** `external_display_semver()` / `semver_display` in `semver_converter.py`; RW commit subject via `build_rw_commit_message.py`.
 
-**Optional follow-on (Option A):** Core-only display in README/changelog emission — presentation change only; does not alter mapping or tag authority.
+**Decision memo:** [semver-external-display-policy-decision.md](../../kanban/epics/epic-03/story-02-versioning-cookbook-and-examples/semver-external-display-policy-decision.md)
 
 ---
 

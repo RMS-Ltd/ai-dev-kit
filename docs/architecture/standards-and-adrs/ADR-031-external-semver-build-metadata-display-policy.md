@@ -8,7 +8,7 @@ housekeeping_policy: keep
 
 # ADR-031: External SemVer `+BUILD` display policy (`task_touch` mode)
 
-**Status:** Accepted  
+**Status:** Accepted (amended 2026-06-17 — Option A implemented)  
 **Date:** 2026-06-17  
 **Related:** [ADR-002](ADR-002-task-touch-derived-mapping.md) · [UXR-031](../../kanban/fr-br/UXR-031-semver-plusbuild-redundancy-in-task-touch.md) · [E03:S02:T15](../../kanban/epics/epic-03/story-02-versioning-cookbook-and-examples/T15-semver-external-build-metadata-redundancy-uxr031.md) · [semver-external-display-policy-decision.md](../../kanban/epics/epic-03/story-02-versioning-cookbook-and-examples/semver-external-display-policy-decision.md)
 
@@ -28,20 +28,33 @@ Evidence ([UXR-031](../../kanban/fr-br/UXR-031-semver-plusbuild-redundancy-in-ta
 
 ## Decision
 
-### 1. Outward display policy (Option B)
+### 1. Outward display policy (Option A — implemented 2026-06-17)
 
-Continue displaying external SemVer **with** `+BUILD` on README, changelog, and release summaries, but document explicitly that:
+External SemVer on **README, RW commit subjects, and changelog SemVer lines** uses **core only** (`vMAJOR.MINOR.PATCH`). Internal `+BUILD` remains on:
 
-- **Ordering / precedence for external consumers = SemVer core** (`MAJOR.MINOR.PATCH`).
-- **`+BUILD` = trace-only build metadata** mirroring internal `VERSION_BUILD`; it does not define the monotonic release stream in `task_touch` mode.
+- Internal version coordinate (`RC.EPIC.STORY.TASK+BUILD`)
+- Internal Git tag (`vRC.EPIC.STORY.TASK+BUILD`)
+- Allocator/registry `semver_full` (forensic trace)
+
+**Ordering / precedence for external consumers = SemVer core** (`MAJOR.MINOR.PATCH`).
 
 ### 2. Tag boundary semantics (unchanged)
 
 - **Primary tag:** `vMAJOR.MINOR.PATCH` (core only).
 - **Internal traceability tag:** `vRC.EPIC.STORY.TASK+BUILD`.
-- `semver_full` retains `+BUILD` for converter trace usage; finalize side effects remain at tag boundary only.
+- `semver_full` retains `+BUILD` for allocator/registry trace; `external_display_semver()` / `semver_display` emit core for outward surfaces.
 
-### 3. Internal forensic coordinate (unchanged)
+### 3. Implementation surfaces
+
+| Surface | SemVer shown |
+| ------- | ------------- |
+| README `**Version (SemVer):**` | Core only |
+| RW commit subject / Actions run title | Core only (`build_rw_commit_message.py`) |
+| CHANGELOG SemVer line | Core only |
+| Primary Git tag / GitHub Release | Core only (unchanged) |
+| Internal tag / version file | Full internal `RC.EPIC.STORY.TASK+BUILD` |
+
+### 4. Internal forensic coordinate (unchanged)
 
 Internal `RC.EPIC.STORY.TASK+BUILD` remains the Kanban/workflow anchor regardless of outward display policy.
 
@@ -51,8 +64,8 @@ Internal `RC.EPIC.STORY.TASK+BUILD` remains the Kanban/workflow anchor regardles
 
 | Option | Description | Outcome |
 | ------ | ----------- | ------- |
-| **A — Core-only display** | Show `vX.Y.Z` externally; keep `+BUILD` only in internal tag / changelog trace | Deferred as optional follow-on (presentation-layer change) |
-| **B — Visible trace-only `+BUILD`** | Keep current `semver_full` display; clarify ordering semantics in policy/docs | **Accepted** |
+| **A — Core-only display** | Show `vX.Y.Z` externally; keep `+BUILD` only in internal tag / allocator trace | **Implemented** (presentation-layer; mapping unchanged) |
+| **B — Visible trace-only `+BUILD`** | Keep `semver_full` display on external surfaces | Superseded by Option A |
 | **C — Hide SemVer externally** | Show internal version only | Rejected — breaks dual-version model and package-manager expectations |
 
 ---
@@ -61,19 +74,12 @@ Internal `RC.EPIC.STORY.TASK+BUILD` remains the Kanban/workflow anchor regardles
 
 ### Positive
 
-- Eliminates ambiguity about which component drives "newer release" comparisons.
-- No change to allocator, injectivity, or tag authority in this wave.
-- Aligns documentation with existing `semver_converter` and RW tag behavior.
+- External version strings match primary Git tags (no `+BUILD` suffix on outward surfaces).
+- `semver_full` with `+BUILD` remains in allocator/DB for forensic correlation.
 
 ### Negative / trade-offs
 
-- External strings remain longer (`+BUILD` visible) until a future Option A presentation change.
-- Consumers must read policy guidance to avoid misinterpreting `+BUILD` as precedence.
-
-### Follow-on (optional)
-
-- Option A presentation change scoped to README/changelog emission (no mapping algorithm change).
-- Adopter-public versioning cookbook examples if published guidance references ordering.
+- Operators must read the **Internal:** line (or internal tag) to see build instance within the same task-touch PATCH.
 
 ---
 

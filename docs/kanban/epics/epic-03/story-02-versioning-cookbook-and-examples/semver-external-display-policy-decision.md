@@ -17,9 +17,9 @@ housekeeping_policy: keep
 
 ## Decision
 
-**Chosen option: Option B — keep `+BUILD` visible externally, documented as trace-only metadata.**
+**Chosen option: Option A — core-only SemVer on external surfaces (implemented 2026-06-17).**
 
-External SemVer strings in `task_touch` mode continue to include `+BUILD` (for example `v0.4.1197+1`). The `+BUILD` suffix mirrors the internal `VERSION_BUILD` for forensic traceability. It is **not** the monotonic ordering or precedence signal for external consumers.
+README, RW commit subjects, and changelog SemVer lines show **core only** (for example `v0.4.1201`). Internal `+BUILD` stays on the internal version line, internal Git tag, and allocator `semver_full`.
 
 ---
 
@@ -32,7 +32,7 @@ External SemVer strings in `task_touch` mode continue to include `+BUILD` (for e
 | **Git primary tag** | SemVer core only (`vMAJOR.MINOR.PATCH`) — `+BUILD` is stripped at tag boundary per `semver_converter.get_rw_tag_info(...)` |
 | **Git internal traceability tag** | Full internal version (`vRC.EPIC.STORY.TASK+BUILD`) |
 
-**Rule:** When comparing two releases for external precedence, compare SemVer core first. Treat `+BUILD` as build metadata that traces the internal build instance within the same task-touch allocation — not as an independent progression axis.
+**Rule:** When comparing two releases for external precedence, compare SemVer core. Resolve build instance via the **Internal:** line or internal tag — not via a `+BUILD` suffix on external SemVer (Option A).
 
 ---
 
@@ -49,15 +49,14 @@ External SemVer strings in `task_touch` mode continue to include `+BUILD` (for e
 
 ## Follow-on surfaces inventory
 
-| Surface | Action in this delivery | Future follow-on (if Option A) |
-| ------- | ----------------------- | ------------------------------ |
-| `docs/governance/standards/dev-kit-versioning-policy.md` | §2.1.1 outward SemVer semantics added | Adjust examples to core-only display |
-| `README.md` | Clarify version line semantics (ordering = core; `+BUILD` = trace) | Emit core-only SemVer in version line |
-| `packages/frameworks/workflow-mgt/KB/.../release-workflow-agent-execution.md` | Align RW SemVer guidance with ordering rule | Optional RW Step 5 template change |
-| `semver_converter.py` / RW Step 5 | **No change** — behavior already correct | Optional `display_semver` helper for core-only |
-| GitHub release body / commit subject | **No change** — subject uses SemVer; body carries internal version | Optional core-only release title |
-| `validate_semver_registry_injective.py` / tag authority | **No change** — injectivity on core + internal tags | N/A |
-| Adopter-public Docusaurus pages | N/A (governance/maintainer surfaces) | Review if published versioning guides reference `+BUILD` ordering |
+| Surface | Action |
+| ------- | ------ |
+| `docs/governance/standards/dev-kit-versioning-policy.md` | §2.1.1 — Option A outward semantics |
+| `README.md` | Core-only SemVer in version line |
+| `build_rw_commit_message.py` | Core-only commit subject |
+| `validate_release_coherence.py` | Coherence gate compares `semver_core` |
+| `release-workflow-agent-execution.md` | RW Step 5 / Step 2.5 guidance |
+| `semver_converter.py` | `external_display_semver()` helper |
 
 ---
 

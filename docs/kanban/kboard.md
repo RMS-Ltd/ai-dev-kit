@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Board
 
-**Last Updated:** 2026-06-17 (RW: E02:S16:T05)
-**Version:** v0.2.16.5+13
+**Last Updated:** 2026-06-23 (RW: E03:S02:T15)
+**Version:** v0.3.2.15+2
 
 **Active board contract:** **Sole active MoSCOW board** ([ADR-018](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/architecture/standards-and-adrs/ADR-018-single-kanban-board-consolidation.md)). Rows are **live work** (TODO / IN PROGRESS / OPEN / WAITING / PERPETUAL) plus filed **Could Have** backlog. **Verification (V)** band holds task-shipped / FBU-open items (`⏳ WAITING`). Remove **terminal** rows and archive prose (use [`kanban-completed.md`](kanban-completed.md) / [`intake-completed.md`](intake-completed.md)).
 
@@ -32,9 +32,13 @@ housekeeping_policy: keep
 
 ### Verification (V) - Task Shipped, FBU Verification Pending
 
+- **E03:S02:T15** – SemVer core-only external display (UXR-031 Option A) - ⏳ SHIPPED (MEDIUM — **v0.3.2.15+2**; verify Actions run title = core-only on next push) | [Task](epics/epic-03/story-02-versioning-cookbook-and-examples/T15-semver-external-build-metadata-redundancy-uxr031.md) | [UXR-031](fr-br/UXR-031-semver-plusbuild-redundancy-in-task-touch.md) | [ADR-031](../architecture/standards-and-adrs/ADR-031-external-semver-build-metadata-display-policy.md) | [—IPP—](../../implementation-cycles/IPP-E03S02T15-semver-external-build-metadata-redundancy.md) | Last modified: 2026-06-23 10:16 UTC
+
 - **E06:S09:T36** – Adopter Path Selector + Install RC (UXR-029) - ⏳ SHIPPED (HIGH — **v0.6.9.36+3**; AC7 satisfied @ attempt 10) | [Task](epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T36-adopter-path-selector-install-rc-uxr029.md) | [UXR-029](fr-br/UXR-029-adk-install-path-experiment.md) | [#52](https://github.com/RMS-Ltd/ai-dev-kit/issues/52) | —No IPP— | Last modified: 2026-06-16 13:57 UTC
 
 ### Could Have (C) - Nice-to-Have Tasks
+
+- **E08:S03:T24** – CLI package test coverage gap closure (FR-138) - 📋 TODO (MEDIUM — kanban-init pending; baseline **54%** → target **≥70%**) | [Task](epics/epic-08/story-03-automation-scripts/T24-cli-package-test-coverage-gap-closure-fr138.md) | [FR-138](fr-br/FR-138-cli-package-test-coverage-gap-closure.md) | —No IPP— | Last modified: 2026-06-23 10:14 UTC
 
 - **E21:S04:T06** – Test cultural adaptations - 📋 TODO (MEDIUM, cultural adaptation) | [Task](epics/epic-21/story-04-cultural-adaptation/T06-test-cultural-adaptations.md) | [Story](epics/epic-21/story-04-cultural-adaptation.md) | [FR-006](fr-br/FR-006-localization-language-selection-uk-us-english.md) | —No IPP— | Last modified: 2026-06-07 11:18 UTC
 

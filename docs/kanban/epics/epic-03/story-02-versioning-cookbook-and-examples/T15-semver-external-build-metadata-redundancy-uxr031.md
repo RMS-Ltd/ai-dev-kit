@@ -13,9 +13,9 @@ housekeeping_policy: keep
 **Priority:** MEDIUM  
 **Estimated Effort:** Low–Medium (policy + docs; possible follow-on code)  
 **Created:** 2026-06-16  
-**Last updated:** 2026-06-17 (v0.3.2.15+1 — RW `--art` release)  
-**Version:** v0.3.2.15+1  
-**Version Anchor:** v0.3.2.15+1  
+**Last updated:** 2026-06-23 (v0.3.2.15+2 — Option A core-only display)  
+**Version:** v0.3.2.15+2  
+**Version Anchor:** v0.3.2.15+2  
 **Code:** E03S02T15
 
 ---
@@ -42,7 +42,7 @@ This task does not change internal allocation invariants by itself; it creates t
 
 - [UXR-031](../../../fr-br/UXR-031-semver-plusbuild-redundancy-in-task-touch.md)
 - **IPW plan:** [`IPP-E03S02T15-semver-external-build-metadata-redundancy.md`](../../../../implementation-cycles/IPP-E03S02T15-semver-external-build-metadata-redundancy.md)
-- **Policy decision:** [semver-external-display-policy-decision.md](semver-external-display-policy-decision.md) — **Option B** accepted
+- **Policy decision:** [semver-external-display-policy-decision.md](semver-external-display-policy-decision.md) — **Option A** implemented (core-only external display)
 - **ADR:** [ADR-031](../../../../architecture/standards-and-adrs/ADR-031-external-semver-build-metadata-display-policy.md)
 - `rw-config.yaml` (`semver_mapping_strategy: task_touch`)
 - `packages/frameworks/workflow-mgt/scripts/version/semver_converter.py`
@@ -55,16 +55,16 @@ This task does not change internal allocation invariants by itself; it creates t
 
 ## Deliverable
 
-1. **Policy decision memo** — [semver-external-display-policy-decision.md](semver-external-display-policy-decision.md): **Option B** (keep `+BUILD` visible; ordering = SemVer core).
-2. **Docs impact checklist** — see policy memo §Follow-on surfaces inventory.
-3. **Follow-on implementation plan** — Option A (core-only display) deferred as optional presentation-layer change; mapping/tag invariants unchanged.
+1. **Policy decision memo** — [semver-external-display-policy-decision.md](semver-external-display-policy-decision.md): **Option A** (core-only external SemVer display).
+2. **Implementation** — `external_display_semver()`, `build_rw_commit_message.py`, coherence validators, ADR-031 amendment.
+3. **Follow-on** — adopter-public cookbook examples if published guidance still references `+BUILD` on external surfaces.
 
 ---
 
 ## Acceptance Criteria
 
 - [x] UXR-031 ↔ E03:S02:T15 bidirectional wiring is present (UXR references this task; task references UXR-031).
-- [x] A single, explicit outward SemVer UX decision is documented: **Option B**
+- [x] A single, explicit outward SemVer UX decision is documented: **Option A** (core-only display; implemented @ v0.3.2.15+2)
 - [x] The decision includes a clear statement of what external consumers should use for ordering/precedence: **SemVer core (`MAJOR.MINOR.PATCH`)**
 - [x] The decision provides a concrete list of files/sections for follow-on delivery (policy memo inventory).
 
@@ -79,7 +79,7 @@ This task does not change internal allocation invariants by itself; it creates t
 3. Choose the least confusing outward representation and update guidance accordingly.
 4. If Option A is selected, produce a follow-on plan scoped to “display/presentation”, preserving internal traceability and allocation invariants.
 
-**Outcome:** Option B selected; documentation and ADR updated; Option A remains optional follow-on.
+**Outcome:** Option A implemented @ v0.3.2.15+2 (SemVer v0.4.1202); ADR-031 amended; presentation-layer only — mapping/tag invariants unchanged.
 
 ---
 

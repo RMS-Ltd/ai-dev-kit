@@ -130,13 +130,13 @@ def _lookup_semver_at_commit(
         conn.row_factory = sqlite3.Row
         row = conn.execute(
             """
-            SELECT semver_full FROM task_touch_mapping
+            SELECT semver_core FROM task_touch_mapping
             WHERE internal_version = ?
             """,
             (internal,),
         ).fetchone()
         conn.close()
-        return str(row["semver_full"]) if row else None
+        return str(row["semver_core"]) if row else None
     finally:
         tmp_path.unlink(missing_ok=True)
 

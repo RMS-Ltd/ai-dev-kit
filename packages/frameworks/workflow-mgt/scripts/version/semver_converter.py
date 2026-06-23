@@ -81,6 +81,18 @@ def get_semver_mapping_strategy() -> str:
     return strategy
 
 
+def semver_core_from_full(semver_full: str) -> str:
+    """Strip SemVer build metadata (`+BUILD`) for external display (ADR-031 Option A)."""
+    return str(semver_full).split("+", 1)[0]
+
+
+def external_display_semver(semver_full: Optional[str]) -> Optional[str]:
+    """SemVer for README, commit subjects, and changelog — core only; `+BUILD` stays internal."""
+    if semver_full is None:
+        return None
+    return semver_core_from_full(semver_full)
+
+
 def _task_touch_via_saa(
     internal_version: str,
     *,
@@ -117,6 +129,7 @@ def get_rw_tag_info(internal_version: str, finalize: bool = False) -> Dict[str, 
         - primary_tag: Main tag to create (e.g., "v0.6.7.18+2" or "v0.9.5")
         - internal_tag: Internal version tag (optional, for traceability)
         - semver_full: Full SemVer with BUILD (e.g., "0.9.5+2")
+        - semver_display: Core-only SemVer for external surfaces (e.g., "0.9.5")
         - tag_message: Tag message content
     """
     strategy = get_semver_mapping_strategy()
@@ -124,13 +137,14 @@ def get_rw_tag_info(internal_version: str, finalize: bool = False) -> Dict[str, 
     if strategy == "task_touch":
         # Task-touch mode: use SemVer as primary tag
         semver_full = convert_version_string(internal_version, strategy="task_touch", finalize=finalize)
-        semver_tag = semver_full.split('+')[0]  # Remove BUILD for tag name
+        semver_tag = semver_core_from_full(semver_full)
         
         return {
             "strategy": "task_touch",
             "primary_tag": f"v{semver_tag}",
             "internal_tag": f"v{internal_version}",
             "semver_full": semver_full,
+            "semver_display": semver_tag,
             "tag_message": f"Release {semver_tag} (Internal: {internal_version})"
         }
     else:
@@ -140,6 +154,7 @@ def get_rw_tag_info(internal_version: str, finalize: bool = False) -> Dict[str, 
             "primary_tag": f"v{internal_version}",
             "internal_tag": None,
             "semver_full": None,
+            "semver_display": None,
             "tag_message": f"Release {internal_version}"
         }
 

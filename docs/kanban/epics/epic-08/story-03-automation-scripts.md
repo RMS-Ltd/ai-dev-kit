@@ -89,6 +89,9 @@ housekeeping_policy: keep
 
 - [x] **E08:S03:T23 – Greenfield sync autofix CI hardening (BR-109; BR-110 forensic closure @ v0.8.3.23+3)** ✅ COMPLETE — [Task doc](story-03-automation-scripts/T23-greenfield-sync-autofix-ci-hardening-br109.md) | [BR-109](../../fr-br/BR-109-greenfield-autofix-dual-tree-sync-drift-recurring-ci-failures.md) | [BR-110](../../fr-br/BR-110-rw-k-dpz-rejection-doc-init-build-zero-guard-mismatch.md) | [IPP](../../../implementation-cycles/IPP-E08S03T23-greenfield-sync-autofix-ci-hardening-br109.md)
 
+
+- [ ] **E08:S03:T24 – CLI package test coverage gap closure (FR-138)** — 📋 TODO (MEDIUM — kanban-init pending) — [Task doc](story-03-automation-scripts/T24-cli-package-test-coverage-gap-closure-fr138.md) | [FR-138](../../fr-br/FR-138-cli-package-test-coverage-gap-closure.md) | —No IPP—
+
 ---
 
 ## Overview

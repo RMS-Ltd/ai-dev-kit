@@ -3,13 +3,13 @@
 - **Contract:** FR-092 / ADR-018 (RW Step 7 three-surface reconciliation)
 - **Invocation context:** rw_step_7
 - **Release scope:** E2:S16:T5 (v0.2.16.5+13)
-- **Timestamp (UTC):** 2026-06-17 16:50 UTC
+- **Timestamp (UTC):** 2026-06-23 10:10 UTC
 
 ## Touched-surface summary
 
 - Touched: `(none)`
 - Untouched: `task_doc, fbu_doc, kboard`
-- Total changes recorded: 8
+- Total changes recorded: 7
 
 ## Forensic stamp evidence (UXR-009 / FR-092 Wave 6)
 
@@ -54,18 +54,18 @@
 
 ### Auxiliary: `epic_doc`
 
-- Touched: **False**
+- Touched: **True**
 - Path(s):
   - `/Users/ruari/Projects/ai-dev-kit/docs/kanban/epics/epic-02/epic-02.md`
+- Changes:
+  - Updated Epic Last updated: 2026-06-23 (v0.2.16.5+13 – Kanban documentation setup)
 
 ### Auxiliary: `uncategorized`
 
 - Touched: **True**
 - Changes:
   - Updated Version: v0.2.16.5+13
-  - Updated Last updated: 2026-06-17 (v0.2.16.5+13 – Kanban documentation setup)
-  - Updated Status: IN PROGRESS
+  - Updated Last updated: 2026-06-23 (v0.2.16.5+13 – Kanban documentation setup)
   - Updated Story 16 checklist entry
-  - Updated Epic Last updated: 2026-06-17 (v0.2.16.5+13 – Story 16 Task 5 complete)
-  - Updated board Last Updated: 2026-06-17 (RW: E02:S16:T05)
+  - Updated board Last Updated: 2026-06-23 (RW: E02:S16:T05)
   - Updated board Version: v0.2.16.5+13

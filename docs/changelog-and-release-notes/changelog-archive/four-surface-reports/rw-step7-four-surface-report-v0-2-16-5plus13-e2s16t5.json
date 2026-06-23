@@ -1,13 +1,15 @@
 {
   "auxiliary_surfaces": {
     "epic_doc": {
-      "changes": [],
+      "changes": [
+        "Updated Epic Last updated: 2026-06-23 (v0.2.16.5+13 \u2013 Kanban documentation setup)"
+      ],
       "notes": [],
       "paths": [
         "/Users/ruari/Projects/ai-dev-kit/docs/kanban/epics/epic-02/epic-02.md"
       ],
       "surface": "epic_doc",
-      "touched": false
+      "touched": true
     },
     "story_doc": {
       "changes": [
@@ -23,11 +25,9 @@
     "uncategorized": {
       "changes": [
         "Updated Version: v0.2.16.5+13",
-        "Updated Last updated: 2026-06-17 (v0.2.16.5+13 \u2013 Kanban documentation setup)",
-        "Updated Status: IN PROGRESS",
+        "Updated Last updated: 2026-06-23 (v0.2.16.5+13 \u2013 Kanban documentation setup)",
         "Updated Story 16 checklist entry",
-        "Updated Epic Last updated: 2026-06-17 (v0.2.16.5+13 \u2013 Story 16 Task 5 complete)",
-        "Updated board Last Updated: 2026-06-17 (RW: E02:S16:T05)",
+        "Updated board Last Updated: 2026-06-23 (RW: E02:S16:T05)",
         "Updated board Version: v0.2.16.5+13"
       ],
       "notes": [],
@@ -50,7 +50,7 @@
     "stamps_appended_with_evidence": 0,
     "stamps_preserved_existing": 0,
     "stamps_skipped_no_evidence": 0,
-    "total_changes": 8,
+    "total_changes": 7,
     "touched_surfaces": [],
     "untouched_surfaces": [
       "task_doc",
@@ -89,5 +89,5 @@
       "touched": false
     }
   },
-  "timestamp_utc": "2026-06-17 16:50 UTC"
+  "timestamp_utc": "2026-06-23 10:10 UTC"
 }
