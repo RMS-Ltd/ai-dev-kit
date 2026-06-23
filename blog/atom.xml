@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://rms-ltd.github.io/ai-dev-kit/blog</id>
     <title>AI Dev Kit Blog</title>
-    <updated>2026-06-16T15:22:13.000Z</updated>
+    <updated>2026-06-23T13:47:04.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://rms-ltd.github.io/ai-dev-kit/blog"/>
     <subtitle>AI Dev Kit Blog</subtitle>
@@ -11,11 +11,11 @@
         <title type="html"><![CDATA[Significant release notes policy (RC ≥ 1)]]></title>
         <id>https://rms-ltd.github.io/ai-dev-kit/blog/RELEASE-NOTES-POLICY</id>
         <link href="https://rms-ltd.github.io/ai-dev-kit/blog/RELEASE-NOTES-POLICY"/>
-        <updated>2026-06-16T15:22:13.000Z</updated>
+        <updated>2026-06-23T13:47:04.000Z</updated>
         <summary type="html"><![CDATA[{/ truncate /}]]></summary>
         <content type="html"><![CDATA[
 <p><strong>Status:</strong> Scaffold — no curated posts until first RC public milestone.<br>
-<strong>Authority:</strong> <a href="https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/kanban/fr-br/FR-114-split-documentation-surfaces-docusaurus-public-notion-maintainer-kb.md" target="_blank" rel="noopener noreferrer" class="">FR-114</a> (F6) · <a href="https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/kanban/epics/epic-05/story-09-docusaurus-documentation-portal/T15-docusaurus-adopter-public-publish-allowlist-fr114.md" target="_blank" rel="noopener noreferrer" class="">E05:S09<!-- -->:T15</a></p>
+<strong>Authority:</strong> <a href="https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/kanban/fbu/FR-114-split-documentation-surfaces-docusaurus-public-notion-maintainer-kb.md" target="_blank" rel="noopener noreferrer" class="">FR-114</a> (F6) · <a href="https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/kanban/epics/epic-05/story-09-docusaurus-documentation-portal/T15-docusaurus-adopter-public-publish-allowlist-fr114.md" target="_blank" rel="noopener noreferrer" class="">E05:S09<!-- -->:T15</a></p>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="rules">Rules<a href="https://rms-ltd.github.io/ai-dev-kit/blog/RELEASE-NOTES-POLICY#rules" class="hash-link" aria-label="Direct link to Rules" title="Direct link to Rules" translate="no">​</a></h2>
 <ul>
 <li class=""><strong>RC = 0 (development):</strong> Release history stays on GitHub (<code>CHANGELOG.md</code>, archive) only.</li>
@@ -106,7 +106,7 @@
 <li class="">Monorepo links to <code>packages/</code>, <code>.cursorrules</code>, scripts, and repo-root files use Strategy A or in-corpus stubs</li>
 <li class="">Lockfile, <code>package.json</code>, and Docusaurus feature flags stay aligned</li>
 </ul>
-<p>That work shipped across <a href="https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/kanban/fr-br/BR-090-docusaurus-faster-missing-dependabot-310-lockfile-drift.md" target="_blank" rel="noopener noreferrer" class="">BR-090</a> (dependency alignment) and a full corpus link remediation wave (<strong>v0.5.9.13+2</strong> through <strong>+4</strong>).</p>
+<p>That work shipped across <a href="https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/kanban/fbu/BR-090-docusaurus-faster-missing-dependabot-310-lockfile-drift.md" target="_blank" rel="noopener noreferrer" class="">BR-090</a> (dependency alignment) and a full corpus link remediation wave (<strong>v0.5.9.13+2</strong> through <strong>+4</strong>).</p>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="further-reading">Further reading<a href="https://rms-ltd.github.io/ai-dev-kit/blog/getting-docusaurus-working#further-reading" class="hash-link" aria-label="Direct link to Further reading" title="Direct link to Further reading" translate="no">​</a></h2>
 <ul>
 <li class=""><a href="https://github.com/RMS-Ltd/ai-dev-kit/blob/main/portal/README.md" target="_blank" rel="noopener noreferrer" class="">Portal README — publish scope and BR-068</a></li>
