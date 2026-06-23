@@ -14,8 +14,8 @@ housekeeping_policy: keep
 **Submitted By:** Operator (documentation structure / policy analysis)  
 **Priority:** MEDIUM (Could Have — MoSCOW **C**)  
 **Status:** ACCEPTED  
-**Version:** v0.5.2.7+0  
-**Last updated:** 2026-06-23 (RW -k E05:S02:T07 — kanban documentation setup)
+**Version:** v0.5.2.7+1  
+**Last updated:** 2026-06-23 (v0.5.2.7+1 – RW -k § heading convention scope FR-139-F9/F10)
 
 **Implementing Task:** [E05:S02:T07](../epics/epic-05/story-02-documentation-maintenance-framework/T07-unified-documentation-governance-strategy-fr139.md)
 
@@ -60,6 +60,8 @@ Operators and agents must **synthesize** these sources ad hoc. Template thinking
 - [ ] **FR-139-F6:** Reconcile structure SoT — declare `DOCUMENTATION_SCHEMA.md` + ADRs as layout authority; banner or supersede `ultimate-canonical-kb-structure.md` with explicit pointer to current model.
 - [ ] **FR-139-F7:** Update `docs/governance/README.md` hub to list the strategy doc under Standards.
 - [ ] **FR-139-F8:** Cross-link from `AGENTS.md` governance/maintainer-kb routing hints (one-line pointer only; no cold-start bloat).
+- [ ] **FR-139-F9:** Codify **section-heading convention** — numbered section headings in policy, standard, IPP/ICW, and other governance-class docs use the **§** symbol in the heading text (e.g. `## §1 — Purpose`, `### §2.3 — Acceptance criteria`); prose cross-references use `§N` or `§N–§M` (consistent with existing IPP practice such as §5–§6). **Default:** § in headings for maintainer/workflow SoT surfaces (`docs/governance/**`, `docs/implementation-cycles/**`, `packages/frameworks/**/KB/**`, vwmp SOP guides). **Adopter-public** (`docs/guides/**`, portal allowlist): § allowed when Docusaurus renders correctly; otherwise spell out “Section N” in that surface only (document the exception in the strategy index).
+- [ ] **FR-139-F10:** Align `PLAN_DOC_TEMPLATE.md` (and optionally other kanban planning templates) section headings to the § convention where numbered sections are used — without breaking IPW section-ID mapping in `.claude/commands/ipw.md`.
 
 ### Non-functional
 
@@ -71,11 +73,12 @@ Operators and agents must **synthesize** these sources ad hoc. Template thinking
 
 ## Acceptance criteria
 
-- [ ] **AC1:** `documentation-governance-strategy.md` exists with policy salience and all FR-139-F2..F4 sections populated.
+- [ ] **AC1:** `documentation-governance-strategy.md` exists with policy salience and all FR-139-F2..F4 sections populated, **including § section-heading convention (FR-139-F9)**.
 - [ ] **AC2:** Workflow matrix has ≥6 workflow rows with bidirectional links to execution SOPs and templates.
 - [ ] **AC3:** `ultimate-canonical-kb-structure.md` carries supersession/mirror banner pointing to `DOCUMENTATION_SCHEMA.md` (or equivalent disposition recorded in strategy doc).
 - [ ] **AC4:** `docs/governance/README.md` indexes the strategy; no dangling links from strategy hub.
 - [ ] **AC5:** IPW package (`IPP-E05S02T07-*.md`) produced before implementation (`IPW E05:S02:T07`); implementation via `IDW` then `RW`.
+- [ ] **AC6:** `PLAN_DOC_TEMPLATE.md` (minimum) uses § in numbered section headings per FR-139-F10, or strategy doc records explicit deferral with rationale.
 
 ---
 
@@ -136,5 +139,6 @@ Operators and agents must **synthesize** these sources ad hoc. Template thinking
 ## References
 
 - Operator analysis (2026-06-23): policy vs SOP vs template layering; five-class taxonomy; workflow matrix pattern
+- Operator preference (2026-06-23): **§** in numbered section headings and cross-references (FR-139-F9/F10)
 - [policy-salience-schema.md](../../architecture/standards-and-adrs/policy-salience-schema.md)
 - [kanban-governance-policy.md](../../governance/kanban/kanban-governance-policy.md) — template + SOP patterns to generalize

@@ -45,7 +45,7 @@ This document provides **complete listings of all FBU items** in the AI Dev Kit 
 
 ### Medium Priority (Could Have - C)
 
-- **FR-139** – Unified documentation governance strategy (policy–SOP–template alignment) - ACCEPTED (MEDIUM, kanban-init **v0.5.2.7+0**; governance strategy index under `docs/governance/standards/`) - [FR-139](fr-br/FR-139-unified-documentation-governance-strategy.md) | [E05:S02:T07](epics/epic-05/story-02-documentation-maintenance-framework/T07-unified-documentation-governance-strategy-fr139.md)
+- **FR-139** – Unified documentation governance strategy (policy–SOP–template alignment) - ACCEPTED (MEDIUM, **v0.5.2.7+1**; § heading convention F9/F10) - [FR-139](fr-br/FR-139-unified-documentation-governance-strategy.md) | [E05:S02:T07](epics/epic-05/story-02-documentation-maintenance-framework/T07-unified-documentation-governance-strategy-fr139.md)
 - **FR-035** – Task Template Cross-Wiring Section - TODO (MEDIUM, Cross-wiring section in task templates) - [FR-035](fr-br/FR-035-task-template-cross-wiring-section.md) | [E05:S01:T35](epics/epic-05/story-01-fr-repo/T35-task-template-cross-wiring-section.md)
 - **FR-034** – UKW Granular Control and Use Case Flags - TODO (MEDIUM, Granular control for Update Kanban Workflow) - [FR-034](fr-br/FR-034-ukw-granular-control-and-use-case-flags.md)
 - **FR-032** – Release Candidate Readiness Gap Analysis - TODO (MEDIUM, Analyze gaps in release candidate readiness) - [FR-032](fr-br/FR-032-release-candidate-readiness-gap-analysis.md)

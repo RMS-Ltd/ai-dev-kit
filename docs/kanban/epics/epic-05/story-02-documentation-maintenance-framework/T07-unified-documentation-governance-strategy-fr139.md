@@ -11,8 +11,8 @@ housekeeping_policy: keep
 **Task ID:** E05:S02:T07  
 **Status:** TODO  
 **Priority:** MEDIUM  
-**Last updated:** 2026-06-23 (v0.5.2.7+0 – RW -k kanban documentation setup)  
-**Version:** v0.5.2.7+0  
+**Last updated:** 2026-06-23 (v0.5.2.7+1 – RW -k § heading convention FR-139-F9/F10)  
+**Version:** v0.5.2.7+1  
 **Code:** E05S02T07
 
 ---
@@ -25,7 +25,7 @@ housekeeping_policy: keep
 
 ## Scope
 
-Compose distributed documentation policies, standards, templates, and workflow SOPs into a **single governance strategy index** (`documentation-governance-strategy.md`) that answers: what doc classes exist, where they live, which workflows require which artifacts, and how conflicts resolve — **without** rewriting existing policy bodies.
+Compose distributed documentation policies, standards, templates, and workflow SOPs into a **single governance strategy index** (`documentation-governance-strategy.md`) that answers: what doc classes exist, where they live, which workflows require which artifacts, how conflicts resolve, and **how numbered sections are headed (§ convention)** — **without** rewriting existing policy bodies.
 
 ---
 
@@ -36,26 +36,30 @@ Compose distributed documentation policies, standards, templates, and workflow S
 - Workflow SOPs: `.claude/commands/`, `packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/`
 - Templates: `packages/frameworks/kanban/templates/`, `packages/frameworks/doc-lifecycle/`
 
+- Operator preference: numbered section headings use **§** (e.g. `## §1 — Purpose`); cross-refs `§N` / `§N–§M` — codify in strategy (FR-139-F9); align `PLAN_DOC_TEMPLATE.md` (FR-139-F10)
+
 **IPW planning artifact (required before implementation):** `IPP-E05S02T07-*.md` under `docs/implementation-cycles/` — run `IPW E05:S02:T07` in plan mode.
 
 ---
 
 ## Deliverable
 
-1. `docs/governance/standards/documentation-governance-strategy.md` (with policy salience)
+1. `docs/governance/standards/documentation-governance-strategy.md` (with policy salience; **§ section-heading convention**)
 2. Supersession/mirror banner on `ultimate-canonical-kb-structure.md` (or documented disposition in strategy)
 3. Hub entry in `docs/governance/README.md`
 4. Optional one-line cross-link from `AGENTS.md` maintainer/governance routing
+5. `PLAN_DOC_TEMPLATE.md` — §-prefixed numbered section headings (FR-139-F10)
 
 ---
 
 ## Acceptance Criteria
 
-- [ ] **AC1:** Strategy doc published with doc taxonomy, surface map, workflow ↔ artifact matrix (≥6 workflows), conflict ladder, enforcement index (FR-139 AC1–AC2).
+- [ ] **AC1:** Strategy doc published with doc taxonomy, surface map, workflow ↔ artifact matrix (≥6 workflows), conflict ladder, enforcement index, **§ heading convention** (FR-139 AC1).
 - [ ] **AC2:** Structure SoT reconciliation complete — `DOCUMENTATION_SCHEMA.md` authoritative; legacy 6-pillar doc bannered (FR-139 AC3).
 - [ ] **AC3:** Governance README indexes strategy; link check passes (FR-139 AC4).
 - [ ] **AC4:** Linked IPP exists; task doc **Planning artifacts** section updated with IPP path after IPW.
 - [ ] **AC5:** Shipped via `IDW E05:S02:T07` then `RW E05:S02:T07` (FR-139 AC5).
+- [ ] **AC6:** `PLAN_DOC_TEMPLATE.md` uses § in numbered section headings (FR-139-F10 / AC6).
 
 ---
 

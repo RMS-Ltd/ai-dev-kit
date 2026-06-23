@@ -32,7 +32,7 @@ housekeeping_policy: keep
 
 
 
-- [ ] **E5:S02 – Documentation Maintenance Framework** - IN PROGRESS (T02-T04 complete, T06 ✅ v0.5.2.6+1; T07 kanban-init **v0.5.2.7+0** FR-139; T01, T05 TODO — FR-063 impl pending)
+- [ ] **E5:S02 – Documentation Maintenance Framework** - IN PROGRESS (T02-T04 complete, T06 ✅ v0.5.2.6+1; T07 **v0.5.2.7+1** FR-139 § convention; T01, T05 TODO — FR-063 impl pending)
   - Story: [`story-02-documentation-maintenance-framework.md`](story-02-documentation-maintenance-framework.md)
   - **Note:** Renumbered from S01 to S02 as part of repository story migration (E09:S01:T08)
 
