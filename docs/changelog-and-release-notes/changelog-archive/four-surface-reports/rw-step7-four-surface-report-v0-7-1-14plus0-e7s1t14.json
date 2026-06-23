@@ -1,0 +1,89 @@
+{
+  "auxiliary_surfaces": {
+    "epic_doc": {
+      "changes": [
+        "Updated E7:S01 checklist marker (E07:S01:T14 @ v0.7.1.14+0)"
+      ],
+      "notes": [],
+      "paths": [
+        "docs/kanban/epics/epic-07/epic-07.md"
+      ],
+      "surface": "epic_doc",
+      "touched": true
+    },
+    "story_doc": {
+      "changes": [
+        "Updated E07:S01:T14 checklist entry with v0.7.1.14+0 RW -k marker",
+        "Updated story Last updated field"
+      ],
+      "notes": [],
+      "paths": [
+        "docs/kanban/epics/epic-07/story-01-codebase-maintenance-tasks.md"
+      ],
+      "surface": "story_doc",
+      "touched": true
+    }
+  },
+  "contract": "FR-092 / ADR-018 (RW Step 7 three-surface reconciliation)",
+  "invocation_context": "rw_step_7",
+  "release_scope": {
+    "epic": 7,
+    "story": 1,
+    "task": 14,
+    "task_id": "E7:S1:T14",
+    "version_string": "v0.7.1.14+0"
+  },
+  "stamp_evidence": {
+    "kboard_e07s01t14": "2026-06-23 11:54 UTC — RW -k kanban init"
+  },
+  "E07:S01:T14": true,
+  "summary": {
+    "stamps_appended_with_evidence": 1,
+    "stamps_preserved_existing": 0,
+    "stamps_skipped_no_evidence": 0,
+    "total_changes": 11,
+    "touched_surfaces": [
+      "task_doc",
+      "fbu_doc",
+      "kboard"
+    ],
+    "untouched_surfaces": []
+  },
+  "surfaces": {
+    "fbu_doc": {
+      "changes": [
+        "UXR-034 version v0.7.1.14+0; RW -k checked"
+      ],
+      "notes": [],
+      "paths": [
+        "docs/kanban/fr-br/UXR-034-comprehensive-repository-file-level-audit-within-audited-directories.md"
+      ],
+      "surface": "fbu_doc",
+      "touched": true
+    },
+    "kboard": {
+      "changes": [
+        "Board header version v0.7.1.14+0",
+        "E07:S01:T14 row stamp 2026-06-23 11:54 UTC"
+      ],
+      "notes": [],
+      "paths": [
+        "docs/kanban/kboard.md"
+      ],
+      "surface": "kboard",
+      "touched": true
+    },
+    "task_doc": {
+      "changes": [
+        "T14 version anchor v0.7.1.14+0; RW -k marker"
+      ],
+      "notes": [],
+      "paths": [
+        "docs/kanban/epics/epic-07/story-01-codebase-maintenance-tasks/T14-comprehensive-repository-file-level-audit-uxr034.md"
+      ],
+      "surface": "task_doc",
+      "touched": true
+    }
+  },
+  "timestamp_utc": "2026-06-23 11:54 UTC"
+}

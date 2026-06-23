@@ -26,7 +26,7 @@ housekeeping_policy: keep
   - Story: [`story-00-uxr-repo.md`](story-00-uxr-repo.md)
   - **Note:** S00 omitted from board displays (UX optimization)
 
-- [ ] **E7:S01 – Codebase Maintenance Tasks** - IN PROGRESS (E07:S01:T13 @ v0.7.1.13+0 RW -k; T10 hygiene TODO)
+- [ ] **E7:S01 – Codebase Maintenance Tasks** - IN PROGRESS (E07:S01:T14 @ v0.7.1.14+0 RW -k; E07:S01:T13 @ v0.7.1.13+0; T10 hygiene TODO)
 - [x] **E7:S02 – Code Review Standards and Processes** - ✅ COMPLETE (v0.7.2.4+1 – All tasks complete)
 - [x] **E7:S03 – Code Quality Metrics and Monitoring** - ✅ COMPLETE (v0.7.3.4+1 – All tasks complete)
 - [x] **E7:S04 – Maintenance Automation and Tooling** - ✅ COMPLETE (v0.7.4.4+1 – All tasks complete)

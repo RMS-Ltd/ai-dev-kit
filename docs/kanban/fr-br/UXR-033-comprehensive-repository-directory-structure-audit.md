@@ -37,6 +37,21 @@ This UXR is **investigation and planning only**. Execution of moves, merges, arc
 
 ---
 
+## Contextual relationship to UXR-034
+
+| Layer | UXR | Scope | Task |
+| ----- | --- | ----- | ---- |
+| **Directory** | **UXR-033** (this) | Whole-repo **directory** tree — purpose, placement, wave plan | [E07:S01:T13](../epics/epic-07/story-01-codebase-maintenance-tasks/T13-comprehensive-repository-directory-structure-audit-uxr033.md) |
+| **File** | [UXR-034](UXR-034-comprehensive-repository-file-level-audit-within-audited-directories.md) | **Files within** directories classified as in-scope by UXR-033 | [E07:S01:T14](../epics/epic-07/story-01-codebase-maintenance-tasks/T14-comprehensive-repository-file-level-audit-uxr034.md) |
+
+**Bidirectional awareness (mandatory for operators and agents):**
+
+- **UXR-034 consumes** this UXR's audited directory list, purpose classes, and exclusions as scope authority for per-file valuation.
+- **UXR-033 informs** UXR-034: directory orphans and suboptimal placements define file-investigation priorities; T13 wave plan should reference T14 for drill-down.
+- **UXR-034 feeds back** this UXR: file-level rollups may refine directory purpose statements or ripple-risk before T13 sign-off.
+
+---
+
 ## Methodology
 
 **Research Method:** Repository information-architecture audit with maintainer valuation rubric  
@@ -84,6 +99,7 @@ This UXR is **investigation and planning only**. Execution of moves, merges, arc
 - [ ] **R4:** Identify **framework SoT vs dev-kit-local vs install-mirror** boundaries for every `packages/` and `greenfield-install/` subtree.
 - [ ] **R5:** Feed wave-1 execution candidates into existing tasks where scope overlaps ([E07:S01:T10](../epics/epic-07/story-01-codebase-maintenance-tasks/T10-project-root-hygiene-and-legacy-docs-rationalization.md) for root; [FR-039](FR-039-ai-dev-kit-project-review-and-legacy-clean-up.md) for broader cleanup) rather than opening parallel uncoordinated movers.
 - [ ] **R6:** Add validator or CI advisory (optional follow-on) that flags new top-level directories without documented purpose — only after rubric is stable.
+- [ ] **R7:** Hand off in-scope directories to [UXR-034](UXR-034-comprehensive-repository-file-level-audit-within-audited-directories.md) / [E07:S01:T14](../epics/epic-07/story-01-codebase-maintenance-tasks/T14-comprehensive-repository-file-level-audit-uxr034.md) for per-file valuation; incorporate T14 rollups before T13 sign-off where practical.
 
 **Priority Order:**
 
@@ -159,6 +175,7 @@ This UXR is **investigation and planning only**. Execution of moves, merges, arc
 - [UXR-013](UXR-013-project-root-hygiene-and-legacy-docs-rationalization.md)
 - [UXR-011](UXR-011-kanban-naming-hygiene-and-directory-systematic-cleanup.md)
 - [UXR-032](UXR-032-fr-br-directory-rename-to-fbu.md) — intake path rename (coordinate ripple section)
+- [UXR-034](UXR-034-comprehensive-repository-file-level-audit-within-audited-directories.md) · [E07:S01:T14](../epics/epic-07/story-01-codebase-maintenance-tasks/T14-comprehensive-repository-file-level-audit-uxr034.md) — **paired file-level audit** (consumes T13 scope; may feed back rollups)
 - [E07:S01:T11](../epics/epic-07/story-01-codebase-maintenance-tasks/T11-consolidate-governance-under-docs-governance-fr101.md) · [E07:S01:T12](../epics/epic-07/story-01-codebase-maintenance-tasks/T12-promote-kanban-to-docs-kanban-retire-project-management-fr118.md)
 
 ---
@@ -191,7 +208,7 @@ This UXR is **investigation and planning only**. Execution of moves, merges, arc
 
 ## Notes
 
-Scope is deliberately **whole-repo** and **directory-level**. File-level root hygiene remains with UXR-013 / E07:S01:T10. This UXR produces the valuation matrix and wave plan that those tasks and FR-039 should consume — not replace.
+Scope is deliberately **whole-repo** and **directory-level**. File-level root hygiene remains with UXR-013 / E07:S01:T10. **File-level audit within audited directories** is [UXR-034](UXR-034-comprehensive-repository-file-level-audit-within-audited-directories.md) / [E07:S01:T14](../epics/epic-07/story-01-codebase-maintenance-tasks/T14-comprehensive-repository-file-level-audit-uxr034.md) — paired layer with bidirectional contextual awareness (T13 scope authority; T14 file drill-down and rollup feedback). This UXR produces the directory valuation matrix and wave plan that UXR-034, T10, and FR-039 should consume — not replace.
 
 ---
 

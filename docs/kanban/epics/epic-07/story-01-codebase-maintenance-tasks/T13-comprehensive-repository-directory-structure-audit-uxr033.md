@@ -108,6 +108,7 @@ Deliver [UXR-033](../../../fr-br/UXR-033-comprehensive-repository-directory-stru
 **Blocks:**
 
 - Prioritized, evidence-based repository reorganization waves
+- [E07:S01:T14](T14-comprehensive-repository-file-level-audit-uxr034.md) / [UXR-034](../../../fr-br/UXR-034-comprehensive-repository-file-level-audit-within-audited-directories.md) — file-level drill-down within audited directories
 - Informed execution on [E07:S01:T10](T10-project-root-hygiene-and-legacy-docs-rationalization.md) and [FR-039](../../../fr-br/FR-039-ai-dev-kit-project-review-and-legacy-clean-up.md)
 
 **Coordinates With:**
@@ -124,6 +125,7 @@ Deliver [UXR-033](../../../fr-br/UXR-033-comprehensive-repository-directory-stru
 **Associated UXR:**
 
 - **[UXR-033: Comprehensive repository directory structure audit](../../../fr-br/UXR-033-comprehensive-repository-directory-structure-audit.md)** — **Informs** — Defines investigation scope and rubric.
+- **[UXR-034: Comprehensive repository file-level audit within audited directories](../../../fr-br/UXR-034-comprehensive-repository-file-level-audit-within-audited-directories.md)** / **[E07:S01:T14](T14-comprehensive-repository-file-level-audit-uxr034.md)** — **Paired file layer** — Consumes T13 audited directory scope; may feed back file-level rollups before T13 sign-off.
 
 **Related FR:**
 

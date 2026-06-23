@@ -11,6 +11,14 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.7.1.14+0] - 23-06-26
+
+E07:S01:T14 — **Kanban-init (UXR-034):** Comprehensive repository file-level audit within audited directories — per-file valuation rubric paired with UXR-033; investigation-only. SemVer **v0.4.1206**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.7.1.14+0.md)
+
+---
+
 ## [0.7.1.13+0] - 23-06-26
 
 E07:S01:T13 — **Kanban-init (UXR-033):** Comprehensive repository directory structure audit intake — whole-repo directory valuation rubric; investigation-only. SemVer **v0.4.1205**.
