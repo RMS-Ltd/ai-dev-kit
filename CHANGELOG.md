@@ -11,6 +11,14 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.5.2.7+2] - 23-06-26
+
+E05:S02:T07 — **Change implemented (FR-139):** Documentation governance strategy index (`documentation-governance-strategy.md`), § section-heading convention, `PLAN_DOC_TEMPLATE` alignment, legacy KB structure banner. SemVer **v0.4.1210+2**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.5.2.7+2.md)
+
+---
+
 ## [0.5.2.7+1] - 23-06-26
 
 E05:S02:T07 — **Kanban update (FR-139):** § section-heading convention codified (F9/F10/AC6) in FR and task doc; IPW/implementation pending. SemVer **v0.4.1209+1**.

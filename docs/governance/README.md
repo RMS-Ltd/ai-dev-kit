@@ -24,6 +24,8 @@ Single navigation entry for **book-active** governance: Kanban rules, versioning
 
 ## Standards (`governance/standards/`)
 
+- [documentation-governance-strategy.md](standards/documentation-governance-strategy.md) — composition index (taxonomy, surfaces, § headings, workflow matrix) · [FR-139](../kanban/fr-br/FR-139-unified-documentation-governance-strategy.md)
+- [DOCUMENTATION_SCHEMA.md](standards/DOCUMENTATION_SCHEMA.md) — adopter post-install layout
 - [dev-kit-versioning-policy.md](standards/dev-kit-versioning-policy.md)
 - [changelog-archival-policy.md](standards/changelog-archival-policy.md)
 - [specification-and-planning-artifacts-policy.md](standards/specification-and-planning-artifacts-policy.md)

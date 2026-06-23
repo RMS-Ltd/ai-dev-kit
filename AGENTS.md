@@ -29,7 +29,7 @@ Then:
 | ----- | -------------------- | --------- |
 | `workflows` | RW, UKW, IPW, IDW, MWF, CMW, PVW, release, changelog, kanban sync, workflow | `docs/guides/workflow-initiation-cheatsheet.md`, `.claude/commands/rw.md` (terminal allowlist: `docs/developer-tools/ide-whitelist-guide.md`) |
 | `kanban-intake` | FR, BR, UXR, intake, kboard, fbuboard, MoSCOW, task doc | `docs/kanban/kboard.md`, `packages/frameworks/kanban/FR_BR_INTAKE_GUIDE.md` |
-| `governance` | ADR, governance, policy, standard, versioning | `docs/governance/README.md` |
+| `governance` | ADR, governance, policy, standard, versioning | `docs/governance/README.md`, `docs/governance/standards/documentation-governance-strategy.md` |
 | `framework-code` | package, validator, script, pytest, framework, workflow mgt | `packages/frameworks/workflow-mgt/README.md` |
 | `implementation-planning` | IPP, ICW, IPW, plan mode, implementation plan, specification | `.claude/commands/ipw.md`, `docs/governance/standards/dev-kit-ipw-ipp-vs-icw-artifacts.md` |
 | `adopter-docs` | user-docs, adopter-public, portal link, Docusaurus publish, contributing guide | `docs/governance/standards/adopter-public-documentation-authoring.md`, `portal/README.md` |

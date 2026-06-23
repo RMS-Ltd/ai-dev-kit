@@ -3,22 +3,40 @@
 << /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
 endobj
 2 0 obj
-<< /Length 2311 >>
+<< /Length 2259 >>
 stream
 BT
 /F1 10 Tf
 50 800 Td
 (Kanban Completed Tasks) Tj
 0 -14 Td
-(Generated: 2026-06-16T14:01:01Z) Tj
+(Generated: 2026-06-23T12:45:35Z) Tj
 0 -14 Td
-(Total rows: 244) Tj
+(Total rows: 247) Tj
 0 -14 Td
 () Tj
 0 -14 Td
 (20 Most Recently Completed) Tj
 0 -14 Td
 (-------------------------) Tj
+0 -14 Td
+(E05:S02:T07 | 2026-06-23T17:30:00Z | v0.5.2.7+2 | RW E05:S02:T07) Tj
+0 -14 Td
+(Unified documentation governance strategy \(FR-139\)) Tj
+0 -14 Td
+() Tj
+0 -14 Td
+(E08:S03:T24 | 2026-06-23T12:17:44Z | v0.8.3.24+3 | UKW) Tj
+0 -14 Td
+(FR-138 CLI coverage Wave 4 hardening ? 82% aggregate) Tj
+0 -14 Td
+() Tj
+0 -14 Td
+(E06:S09:T38 | 2026-06-17T15:22:52Z | v0.6.9.38+1 | RW E06:S09:T38) Tj
+0 -14 Td
+(Guided install orchestrator v2 \(FR-135\)) Tj
+0 -14 Td
+() Tj
 0 -14 Td
 (E06:S09:T26 | 2026-06-16T13:57:07Z | v0.6.9.26+4 | RW Step 7) Tj
 0 -14 Td
@@ -79,7 +97,18 @@ BT
 (E21:S01:T02 | 2026-06-16T12:00:00Z | v0.21.1.2+1 | UKW -c) Tj
 0 -14 Td
 (Add language selection prompt to CLI tool \(`ai-dev-kit init`\)) Tj
-0 -14 Td
+ET
+endstream
+endobj
+3 0 obj
+<< /Type /Page /Parent 18 0 R /MediaBox [0 0 612 842] /Contents 2 0 R /Resources << /Font << /F1 1 0 R >> >> >>
+endobj
+4 0 obj
+<< /Length 4688 >>
+stream
+BT
+/F1 10 Tf
+50 800 Td
 () Tj
 0 -14 Td
 (E21:S01:T03 | 2026-06-16T12:00:00Z | v0.21.1.3+1 | UKW -c) Tj
@@ -97,18 +126,7 @@ BT
 (E21:S01:T05 | 2026-06-16T12:00:00Z | v0.21.1.5+1 | UKW -c) Tj
 0 -14 Td
 (Implement configuration persistence \(`ai-dev-kit-config.yaml`\)) Tj
-ET
-endstream
-endobj
-3 0 obj
-<< /Type /Page /Parent 16 0 R /MediaBox [0 0 612 842] /Contents 2 0 R /Resources << /Font << /F1 1 0 R >> >> >>
-endobj
-4 0 obj
-<< /Length 4615 >>
-stream
-BT
-/F1 10 Tf
-50 800 Td
+0 -14 Td
 () Tj
 0 -14 Td
 (E21:S01:T06 | 2026-06-16T12:00:00Z | v0.21.1.6+1 | UKW -c) Tj
@@ -132,24 +150,6 @@ BT
 (E21:S02:T02 | 2026-06-16T12:00:00Z | v0.21.2.2+1 | UKW -c) Tj
 0 -14 Td
 (Set up translation file structure \(`locales/{lang}/`\)) Tj
-0 -14 Td
-() Tj
-0 -14 Td
-(E21:S02:T03 | 2026-06-16T12:00:00Z | v0.21.2.3+1 | UKW -c) Tj
-0 -14 Td
-(Implement locale detection \(browser/system locale\)) Tj
-0 -14 Td
-() Tj
-0 -14 Td
-(E21:S02:T04 | 2026-06-16T12:00:00Z | v0.21.2.4+1 | UKW -c) Tj
-0 -14 Td
-(Add language switching functionality) Tj
-0 -14 Td
-() Tj
-0 -14 Td
-(E21:S02:T05 | 2026-06-16T12:00:00Z | v0.21.2.5+1 | UKW -c) Tj
-0 -14 Td
-(Configure date/time/number formatting per locale) Tj
 0 -14 Td
 () Tj
 0 -14 Td
@@ -202,7 +202,7 @@ ET
 endstream
 endobj
 5 0 obj
-<< /Type /Page /Parent 16 0 R /MediaBox [0 0 612 842] /Contents 4 0 R /Resources << /Font << /F1 1 0 R >> >> >>
+<< /Type /Page /Parent 18 0 R /MediaBox [0 0 612 842] /Contents 4 0 R /Resources << /Font << /F1 1 0 R >> >> >>
 endobj
 6 0 obj
 << /Length 7344 >>
@@ -303,10 +303,10 @@ ET
 endstream
 endobj
 7 0 obj
-<< /Type /Page /Parent 16 0 R /MediaBox [0 0 612 842] /Contents 6 0 R /Resources << /Font << /F1 1 0 R >> >> >>
+<< /Type /Page /Parent 18 0 R /MediaBox [0 0 612 842] /Contents 6 0 R /Resources << /Font << /F1 1 0 R >> >> >>
 endobj
 8 0 obj
-<< /Length 7578 >>
+<< /Length 7508 >>
 stream
 BT
 /F1 10 Tf
@@ -375,6 +375,8 @@ BT
 0 -14 Td
 (E05:S01:T75 | 2026-04-01T15:46:20Z | v0.5.1.75+1 | **E05:S01:T75** ? **ICW durable planning artifacts** in repo documentation \(**FR-075**\): `specification-and-planning-art) Tj
 0 -14 Td
+(E05:S02:T07 | 2026-06-23T17:30:00Z | v0.5.2.7+2 | Unified documentation governance strategy \(FR-139\)) Tj
+0 -14 Td
 (E05:S07:T01 | 2025-12-12T00:00:00Z | v0.5.7.1+1 | **E05:S07:T01** ? Policy Docs machine-readable salience section \(FR-022\): schema, template, guides, key policy updates.) Tj
 0 -14 Td
 (E05:S08:T03 | 2026-06-15T20:04:09Z | v0.21.5.2+1 | **E05:S08:T03** ? Big-bang Notion maintainer KB migration @ **v0.5.8.3+3** \(later superseded maintainer SoT by FR-121 T0) Tj
@@ -398,13 +400,11 @@ BT
 (E05:S09:T05 | 2026-03-30T15:52:14Z | v0.5.9.5+1 | **E05:S09:T05** ? Docusaurus CI build gate \(**FR-069**\): `.github/workflows/docusaurus-build.yml`, `tests/test_portal_fr) Tj
 0 -14 Td
 (E05:S09:T06 | 2026-03-30T16:11:41Z | v0.5.9.6+1 | **E05:S09:T06** ? Docusaurus GitHub Pages deployment \(**FR-070**\): `.github/workflows/docusaurus-deploy.yml`, portal hos) Tj
-0 -14 Td
-(E05:S09:T07 | 2026-03-30T16:59:05Z | v0.5.9.7+1 | **E05:S09:T07** ? Docusaurus site search \(**FR-071**\): `@easyops-cn/docusaurus-search-local` in `portal/docusaurus.confi) Tj
 ET
 endstream
 endobj
 9 0 obj
-<< /Type /Page /Parent 16 0 R /MediaBox [0 0 612 842] /Contents 8 0 R /Resources << /Font << /F1 1 0 R >> >> >>
+<< /Type /Page /Parent 18 0 R /MediaBox [0 0 612 842] /Contents 8 0 R /Resources << /Font << /F1 1 0 R >> >> >>
 endobj
 10 0 obj
 << /Length 7445 >>
@@ -412,6 +412,8 @@ stream
 BT
 /F1 10 Tf
 50 800 Td
+(E05:S09:T07 | 2026-03-30T16:59:05Z | v0.5.9.7+1 | **E05:S09:T07** ? Docusaurus site search \(**FR-071**\): `@easyops-cn/docusaurus-search-local` in `portal/docusaurus.confi) Tj
+0 -14 Td
 (E05:S09:T08 | 2026-04-01T14:30:00Z | v0.5.9.8+2 | **E05:S09:T08** ? Docusaurus **strict** broken **links** \(**`throw`**\) post?**FR-067** \(**FU-1** closed\): corpus link re) Tj
 0 -14 Td
 (E05:S09:T09 | 2026-03-31T12:10:00Z | v0.5.9.9+2 | **E05:S09:T09** ? GitHub Pages **go-live** \(**FR-070** follow-up\): `epic/5` ? **`main`**, Actions run **23796236180** gr) Tj
@@ -499,20 +501,20 @@ BT
 (E06:S09:T23 | 2026-06-05T14:30:00Z | v0.6.9.23+3 | **E06:S09:T23** ? Greenfield GHCR delivery \(`ghcr.io/rms-ltd/ai-dev-kit-greenfield`, FR-110-F5 tarball, ADR-021\).) Tj
 0 -14 Td
 (E06:S09:T24 | 2026-06-05T15:30:00Z | v0.6.9.24+2 | **E06:S09:T24** ? Acquisition-layer ADK error codes \(registry 1.1.0 I05/I06, `verify_vendor_tree.py`, CLI I06, doc-sync ) Tj
-0 -14 Td
-(E06:S09:T25 | 2026-06-09T09:11:54Z | v0.6.9.25+2 | **E06:S09:T25** ? Triage matrix + greenfield orchestrator F4/F5 fix \(`resolve_frameworks_base`, `--config`, `--non-inter) Tj
 ET
 endstream
 endobj
 11 0 obj
-<< /Type /Page /Parent 16 0 R /MediaBox [0 0 612 842] /Contents 10 0 R /Resources << /Font << /F1 1 0 R >> >> >>
+<< /Type /Page /Parent 18 0 R /MediaBox [0 0 612 842] /Contents 10 0 R /Resources << /Font << /F1 1 0 R >> >> >>
 endobj
 12 0 obj
-<< /Length 7383 >>
+<< /Length 7316 >>
 stream
 BT
 /F1 10 Tf
 50 800 Td
+(E06:S09:T25 | 2026-06-09T09:11:54Z | v0.6.9.25+2 | **E06:S09:T25** ? Triage matrix + greenfield orchestrator F4/F5 fix \(`resolve_frameworks_base`, `--config`, `--non-inter) Tj
+0 -14 Td
 (E06:S09:T26 | 2026-06-16T13:57:07Z | v0.6.9.26+4 | SBL ADK install program COMPLETE ? ten attempts; attempt 10 Arm B Install RC PASS; programme Phase 1 closed) Tj
 0 -14 Td
 (E06:S09:T27 | 2026-06-15T20:04:09Z | v0.2.1.30+8 | **E06:S09:T27** ? v3.2 Small-tier catalog on `--mode fresh`; FR/BR/UXR at E04:S02?S04; SemVer **v0.4.1132+1**; unblocks ) Tj
@@ -534,6 +536,8 @@ BT
 (E06:S09:T35 | 2026-06-16T12:00:00Z | v0.6.9.35+2 | Kanban v4 three-tier catalogue \(FR-132\)) Tj
 0 -14 Td
 (E06:S09:T37 | 2026-06-15T20:04:09Z | v0.6.9.34+1 | **E06:S09:T37** ? L1 default depth guide, INSTALL Migrate \(default\), COMPREHENSION template, KMA collision/megastory def) Tj
+0 -14 Td
+(E06:S09:T38 | 2026-06-17T15:22:52Z | v0.6.9.38+1 | Guided install orchestrator v2 \(FR-135\)) Tj
 0 -14 Td
 (E07:S01:T06 | 2026-03-16T17:00:00Z | v0.7.1.7+4 | **E07:S01:T06** ? Implement Update Changelog Workflow \(UCW\)) Tj
 0 -14 Td
@@ -597,23 +601,25 @@ BT
 0 -14 Td
 (E08:S03:T23 | 2026-06-16T12:00:00Z | v0.8.3.23+2 | Greenfield sync autofix CI hardening \(BR-109\)) Tj
 0 -14 Td
+(E08:S03:T24 | 2026-06-23T12:17:44Z | v0.8.3.24+3 | FR-138 CLI coverage Wave 4 hardening ? 82% aggregate) Tj
+ET
+endstream
+endobj
+13 0 obj
+<< /Type /Page /Parent 18 0 R /MediaBox [0 0 612 842] /Contents 12 0 R /Resources << /Font << /F1 1 0 R >> >> >>
+endobj
+14 0 obj
+<< /Length 5716 >>
+stream
+BT
+/F1 10 Tf
+50 800 Td
 (E08:S04:T01 | 2026-03-12T14:00:00Z | v0.8.4.1+1 | **E08:S04:T01** ? Tooling & Automation expectations baseline) Tj
 0 -14 Td
 (E09:S01:T03 | 2026-06-04T22:15:00Z | v0.9.1.3+1 | **E09:S01:T03** ? **FR-032.3**: RC gap comparison ? T01 inventory, T02 RC=1 criteria, gap matrix report.) Tj
 0 -14 Td
 (E09:S05:T04 | 2026-05-18T00:00:00Z | v0.9.5.4+2 | **E09:S05:T04** ? UXR-011: Kanban naming hygiene and directory systematic cleanup. Systematically cleaned up naming and ) Tj
-ET
-endstream
-endobj
-13 0 obj
-<< /Type /Page /Parent 16 0 R /MediaBox [0 0 612 842] /Contents 12 0 R /Resources << /Font << /F1 1 0 R >> >> >>
-endobj
-14 0 obj
-<< /Length 5459 >>
-stream
-BT
-/F1 10 Tf
-50 800 Td
+0 -14 Td
 (E10:S01:T01 | 2026-06-06T14:45:56Z | v0.10.1.1+1 | **E10:S01:T01** ? Establish expectations baseline for Document Lifecycle package) Tj
 0 -14 Td
 (E10:S01:T02 | 2026-06-06T14:47:28Z | v0.10.1.2+1 | **E10:S01:T02** ? Inventory package components and map to expectations: companion inventory map, task doc fleshed, V1?V8) Tj
@@ -697,44 +703,57 @@ BT
 (E21:S08:T03 | 2026-06-16T12:00:00Z | v0.21.8.3+1 | CLI and terminal output accessibility \(Layer 1\)) Tj
 0 -14 Td
 (E21:S09:T01 | 2026-06-16T12:00:00Z | v0.21.9.1+1 | FR-006 Phase 2 header and status reconciliation) Tj
-0 -14 Td
+ET
+endstream
+endobj
+15 0 obj
+<< /Type /Page /Parent 18 0 R /MediaBox [0 0 612 842] /Contents 14 0 R /Resources << /Font << /F1 1 0 R >> >> >>
+endobj
+16 0 obj
+<< /Length 238 >>
+stream
+BT
+/F1 10 Tf
+50 800 Td
 (E21:S09:T02 | 2026-06-16T12:00:00Z | v0.21.9.2+2 | Legacy epic-21 story folder rationalization) Tj
 0 -14 Td
 (E21:S09:T03 | 2026-06-16T12:00:00Z | v0.21.9.3+1 | PR merge CI parity and adopter-public doc gates) Tj
 ET
 endstream
 endobj
-15 0 obj
-<< /Type /Page /Parent 16 0 R /MediaBox [0 0 612 842] /Contents 14 0 R /Resources << /Font << /F1 1 0 R >> >> >>
-endobj
-16 0 obj
-<< /Type /Pages /Kids [3 0 R 5 0 R 7 0 R 9 0 R 11 0 R 13 0 R 15 0 R] /Count 7 >>
-endobj
 17 0 obj
-<< /Type /Catalog /Pages 16 0 R >>
+<< /Type /Page /Parent 18 0 R /MediaBox [0 0 612 842] /Contents 16 0 R /Resources << /Font << /F1 1 0 R >> >> >>
+endobj
+18 0 obj
+<< /Type /Pages /Kids [3 0 R 5 0 R 7 0 R 9 0 R 11 0 R 13 0 R 15 0 R 17 0 R] /Count 8 >>
+endobj
+19 0 obj
+<< /Type /Catalog /Pages 18 0 R >>
 endobj
 xref
-0 18
+0 20
 0000000000 65535 f 
 0000000009 00000 n 
 0000000079 00000 n 
-0000002442 00000 n 
-0000002569 00000 n 
-0000007236 00000 n 
-0000007363 00000 n 
-0000014759 00000 n 
-0000014886 00000 n 
-0000022516 00000 n 
-0000022643 00000 n 
-0000030141 00000 n 
-0000030270 00000 n 
-0000037706 00000 n 
-0000037835 00000 n 
-0000043347 00000 n 
-0000043476 00000 n 
-0000043573 00000 n 
+0000002390 00000 n 
+0000002517 00000 n 
+0000007257 00000 n 
+0000007384 00000 n 
+0000014780 00000 n 
+0000014907 00000 n 
+0000022467 00000 n 
+0000022594 00000 n 
+0000030092 00000 n 
+0000030221 00000 n 
+0000037590 00000 n 
+0000037719 00000 n 
+0000043488 00000 n 
+0000043617 00000 n 
+0000043907 00000 n 
+0000044036 00000 n 
+0000044140 00000 n 
 trailer
-<< /Size 18 /Root 17 0 R >>
+<< /Size 20 /Root 19 0 R >>
 startxref
-43624
+44191
 %%EOF

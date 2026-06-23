@@ -1,0 +1,47 @@
+{
+  "contract": "FR-092 / ADR-018",
+  "invocation_context": "rw_step_7",
+  "release_scope": {
+    "epic": 5,
+    "story": 2,
+    "task": 7,
+    "task_id": "E5:S2:T7",
+    "version_string": "v0.5.2.7+2"
+  },
+  "stamp_evidence": {
+    "evidence_mode": "structure_prune",
+    "manifest_path": "docs/changelog-and-release-notes/changelog-archive/four-surface-reports/rw-step7-structure-prune-v0-5-2-7plus2-e5s2t7.json"
+  },
+  "summary": {
+    "stamps_appended_with_evidence": 0,
+    "stamps_preserved_existing": 0,
+    "stamps_skipped_no_evidence": 0,
+    "total_changes": 12,
+    "touched_surfaces": ["task_doc", "fbu_doc", "kboard", "story_doc"],
+    "untouched_surfaces": ["epic_doc"]
+  },
+  "surfaces": {
+    "task_doc": {
+      "touched": true,
+      "paths": ["docs/kanban/epics/epic-05/story-02-documentation-maintenance-framework/T07-unified-documentation-governance-strategy-fr139.md"]
+    },
+    "fbu_doc": {
+      "touched": true,
+      "paths": ["docs/kanban/fr-br/FR-139-unified-documentation-governance-strategy.md"]
+    },
+    "kboard": {
+      "touched": true,
+      "paths": ["docs/kanban/kboard.md"],
+      "changes": ["Pruned COMPLETE row E05:S02:T07 to kanban-completed ledger", "Updated board version v0.5.2.7+2"]
+    },
+    "story_doc": {
+      "touched": true,
+      "paths": ["docs/kanban/epics/epic-05/story-02-documentation-maintenance-framework.md"]
+    },
+    "epic_doc": {
+      "touched": false,
+      "paths": ["docs/kanban/epics/epic-05/epic-05.md"]
+    }
+  },
+  "timestamp_utc": "2026-06-23T17:30:00Z"
+}

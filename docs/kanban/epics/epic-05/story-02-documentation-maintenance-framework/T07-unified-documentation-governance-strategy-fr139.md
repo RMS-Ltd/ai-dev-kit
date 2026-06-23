@@ -9,10 +9,11 @@ housekeeping_policy: keep
 # Epic 5, Story 2, Task 7: Unified documentation governance strategy (FR-139)
 
 **Task ID:** E05:S02:T07  
-**Status:** TODO  
+**Status:** COMPLETE  
 **Priority:** MEDIUM  
-**Last updated:** 2026-06-23 (v0.5.2.7+1 – RW -k § heading convention FR-139-F9/F10)  
-**Version:** v0.5.2.7+1  
+**Last updated:** 2026-06-23 (v0.5.2.7+2 – IDW/MWF delivery FR-139)  
+**Version:** v0.5.2.7+2  
+**Version Anchor:** v0.5.2.7+2  
 **Code:** E05S02T07
 
 ---
@@ -54,12 +55,12 @@ Compose distributed documentation policies, standards, templates, and workflow S
 
 ## Acceptance Criteria
 
-- [ ] **AC1:** Strategy doc published with doc taxonomy, surface map, workflow ↔ artifact matrix (≥6 workflows), conflict ladder, enforcement index, **§ heading convention** (FR-139 AC1).
-- [ ] **AC2:** Structure SoT reconciliation complete — `DOCUMENTATION_SCHEMA.md` authoritative; legacy 6-pillar doc bannered (FR-139 AC3).
-- [ ] **AC3:** Governance README indexes strategy; link check passes (FR-139 AC4).
-- [ ] **AC4:** Linked IPP exists; task doc **Planning artifacts** section updated with IPP path after IPW.
-- [ ] **AC5:** Shipped via `IDW E05:S02:T07` then `RW E05:S02:T07` (FR-139 AC5).
-- [ ] **AC6:** `PLAN_DOC_TEMPLATE.md` uses § in numbered section headings (FR-139-F10 / AC6).
+- [x] **AC1:** Strategy doc published with doc taxonomy, surface map, workflow ↔ artifact matrix (≥6 workflows), conflict ladder, enforcement index, **§ heading convention** (FR-139 AC1).
+- [x] **AC2:** Structure SoT reconciliation complete — `DOCUMENTATION_SCHEMA.md` authoritative; legacy 6-pillar doc bannered (FR-139 AC3).
+- [x] **AC3:** Governance README indexes strategy; link check passes (FR-139 AC4).
+- [x] **AC4:** Linked IPP exists; task doc **Planning artifacts** section updated with IPP path after IPW.
+- [x] **AC5:** Shipped via `IDW E05:S02:T07` then `RW E05:S02:T07` (FR-139 AC5).
+- [x] **AC6:** `PLAN_DOC_TEMPLATE.md` uses § in numbered section headings (FR-139-F10 / AC6).
 
 ---
 
@@ -100,7 +101,7 @@ Compose distributed documentation policies, standards, templates, and workflow S
 
 ## Planning artifacts
 
-- **IPP:** —No IPP— (run `IPW E05:S02:T07`)
+- **IPP:** [IPP-E05S02T07-unified-documentation-governance-strategy-fr139.md](../../../../implementation-cycles/IPP-E05S02T07-unified-documentation-governance-strategy-fr139.md)
 
 ---
 

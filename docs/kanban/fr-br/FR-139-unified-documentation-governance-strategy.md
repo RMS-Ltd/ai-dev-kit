@@ -13,9 +13,9 @@ housekeeping_policy: keep
 **Submitted:** 2026-06-23  
 **Submitted By:** Operator (documentation structure / policy analysis)  
 **Priority:** MEDIUM (Could Have — MoSCOW **C**)  
-**Status:** ACCEPTED  
-**Version:** v0.5.2.7+1  
-**Last updated:** 2026-06-23 (v0.5.2.7+1 – RW -k § heading convention scope FR-139-F9/F10)
+**Status:** IMPLEMENTED  
+**Version:** v0.5.2.7+2  
+**Last updated:** 2026-06-23 (v0.5.2.7+2 – IDW/MWF delivery complete)
 
 **Implementing Task:** [E05:S02:T07](../epics/epic-05/story-02-documentation-maintenance-framework/T07-unified-documentation-governance-strategy-fr139.md)
 
@@ -52,33 +52,33 @@ Operators and agents must **synthesize** these sources ad hoc. Template thinking
 
 ### Functional
 
-- [ ] **FR-139-F1:** Create `docs/governance/standards/documentation-governance-strategy.md` with **policy salience** (FR-022) suitable for agent enforcement hints.
-- [ ] **FR-139-F2:** Define **doc taxonomy** with binding vs advisory classes: Policy, Standard, SOP, Template, Guide/Reference, ADR — and placement rules per class.
-- [ ] **FR-139-F3:** Publish **workflow ↔ artifact matrix** covering at minimum: IPW/IDW, RW (incl. Step 7), UKW, intake (FR/BR/UXR), KMA, adopter-public authoring — each row: required durable artifacts, template(s), enforcing policy/standard, validators where applicable.
-- [ ] **FR-139-F4:** Document **conflict-resolution ladder** (extend pattern from specification-and-planning-artifacts-policy): task doc > linked FR/BR/UXR > IPP/ICW > governance standard > architecture mirror > IDE-local scratch.
-- [ ] **FR-139-F5:** **Index, don’t duplicate** — strategy doc links to existing policies; substantive rules remain in authoritative siblings.
-- [ ] **FR-139-F6:** Reconcile structure SoT — declare `DOCUMENTATION_SCHEMA.md` + ADRs as layout authority; banner or supersede `ultimate-canonical-kb-structure.md` with explicit pointer to current model.
-- [ ] **FR-139-F7:** Update `docs/governance/README.md` hub to list the strategy doc under Standards.
-- [ ] **FR-139-F8:** Cross-link from `AGENTS.md` governance/maintainer-kb routing hints (one-line pointer only; no cold-start bloat).
-- [ ] **FR-139-F9:** Codify **section-heading convention** — numbered section headings in policy, standard, IPP/ICW, and other governance-class docs use the **§** symbol in the heading text (e.g. `## §1 — Purpose`, `### §2.3 — Acceptance criteria`); prose cross-references use `§N` or `§N–§M` (consistent with existing IPP practice such as §5–§6). **Default:** § in headings for maintainer/workflow SoT surfaces (`docs/governance/**`, `docs/implementation-cycles/**`, `packages/frameworks/**/KB/**`, vwmp SOP guides). **Adopter-public** (`docs/guides/**`, portal allowlist): § allowed when Docusaurus renders correctly; otherwise spell out “Section N” in that surface only (document the exception in the strategy index).
-- [ ] **FR-139-F10:** Align `PLAN_DOC_TEMPLATE.md` (and optionally other kanban planning templates) section headings to the § convention where numbered sections are used — without breaking IPW section-ID mapping in `.claude/commands/ipw.md`.
+- [x] **FR-139-F1:** Create `docs/governance/standards/documentation-governance-strategy.md` with **policy salience** (FR-022) suitable for agent enforcement hints.
+- [x] **FR-139-F2:** Define **doc taxonomy** with binding vs advisory classes: Policy, Standard, SOP, Template, Guide/Reference, ADR — and placement rules per class.
+- [x] **FR-139-F3:** Publish **workflow ↔ artifact matrix** covering at minimum: IPW/IDW, RW (incl. Step 7), UKW, intake (FR/BR/UXR), KMA, adopter-public authoring — each row: required durable artifacts, template(s), enforcing policy/standard, validators where applicable.
+- [x] **FR-139-F4:** Document **conflict-resolution ladder** (extend pattern from specification-and-planning-artifacts-policy): task doc > linked FR/BR/UXR > IPP/ICW > governance standard > architecture mirror > IDE-local scratch.
+- [x] **FR-139-F5:** **Index, don’t duplicate** — strategy doc links to existing policies; substantive rules remain in authoritative siblings.
+- [x] **FR-139-F6:** Reconcile structure SoT — declare `DOCUMENTATION_SCHEMA.md` + ADRs as layout authority; banner or supersede `ultimate-canonical-kb-structure.md` with explicit pointer to current model.
+- [x] **FR-139-F7:** Update `docs/governance/README.md` hub to list the strategy doc under Standards.
+- [x] **FR-139-F8:** Cross-link from `AGENTS.md` governance/maintainer-kb routing hints (one-line pointer only; no cold-start bloat).
+- [x] **FR-139-F9:** Codify **section-heading convention** — numbered section headings in policy, standard, IPP/ICW, and other governance-class docs use the **§** symbol in the heading text (e.g. `## §1 — Purpose`, `### §2.3 — Acceptance criteria`); prose cross-references use `§N` or `§N–§M` (consistent with existing IPP practice such as §5–§6). **Default:** § in headings for maintainer/workflow SoT surfaces (`docs/governance/**`, `docs/implementation-cycles/**`, `packages/frameworks/**/KB/**`, vwmp SOP guides). **Adopter-public** (`docs/guides/**`, portal allowlist): § allowed when Docusaurus renders correctly; otherwise spell out “Section N” in that surface only (document the exception in the strategy index).
+- [x] **FR-139-F10:** Align `PLAN_DOC_TEMPLATE.md` (and optionally other kanban planning templates) section headings to the § convention where numbered sections are used — without breaking IPW section-ID mapping in `.claude/commands/ipw.md`.
 
 ### Non-functional
 
-- [ ] **FR-139-NF1:** Strategy doc stays **index-like** (target ≤ ~200 lines prose; tables encouraged).
-- [ ] **FR-139-NF2:** Framework package SoT vs book mirror pattern preserved (ADR-023 style) where doc-lifecycle topics are referenced.
-- [ ] **FR-139-NF3:** No new validators required for closure; optional follow-on FR if matrix rows need automated gates.
+- [x] **FR-139-NF1:** Strategy doc stays **index-like** (target ≤ ~200 lines prose; tables encouraged).
+- [x] **FR-139-NF2:** Framework package SoT vs book mirror pattern preserved (ADR-023 style) where doc-lifecycle topics are referenced.
+- [x] **FR-139-NF3:** No new validators required for closure; optional follow-on FR if matrix rows need automated gates.
 
 ---
 
 ## Acceptance criteria
 
-- [ ] **AC1:** `documentation-governance-strategy.md` exists with policy salience and all FR-139-F2..F4 sections populated, **including § section-heading convention (FR-139-F9)**.
-- [ ] **AC2:** Workflow matrix has ≥6 workflow rows with bidirectional links to execution SOPs and templates.
-- [ ] **AC3:** `ultimate-canonical-kb-structure.md` carries supersession/mirror banner pointing to `DOCUMENTATION_SCHEMA.md` (or equivalent disposition recorded in strategy doc).
-- [ ] **AC4:** `docs/governance/README.md` indexes the strategy; no dangling links from strategy hub.
-- [ ] **AC5:** IPW package (`IPP-E05S02T07-*.md`) produced before implementation (`IPW E05:S02:T07`); implementation via `IDW` then `RW`.
-- [ ] **AC6:** `PLAN_DOC_TEMPLATE.md` (minimum) uses § in numbered section headings per FR-139-F10, or strategy doc records explicit deferral with rationale.
+- [x] **AC1:** `documentation-governance-strategy.md` exists with policy salience and all FR-139-F2..F4 sections populated, **including § section-heading convention (FR-139-F9)**.
+- [x] **AC2:** Workflow matrix has ≥6 workflow rows with bidirectional links to execution SOPs and templates.
+- [x] **AC3:** `ultimate-canonical-kb-structure.md` carries supersession/mirror banner pointing to `DOCUMENTATION_SCHEMA.md` (or equivalent disposition recorded in strategy doc).
+- [x] **AC4:** `docs/governance/README.md` indexes the strategy; no dangling links from strategy hub.
+- [x] **AC5:** IPW package (`IPP-E05S02T07-*.md`) produced before implementation (`IPW E05:S02:T07`); implementation via `IDW` then `RW`.
+- [x] **AC6:** `PLAN_DOC_TEMPLATE.md` (minimum) uses § in numbered section headings per FR-139-F10, or strategy doc records explicit deferral with rationale.
 
 ---
 

@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Board
 
-**Last Updated:** 2026-06-23 (RW: E05:S02:T07)  
-**Version:** v0.5.2.7+2
+**Last Updated:** 2026-06-23 (RW: E05:S02:T07)
+**Version:** v0.5.2.7+1
 
 **Active board contract:** **Sole active MoSCOW board** ([ADR-018](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/architecture/standards-and-adrs/ADR-018-single-kanban-board-consolidation.md)). Rows are **live work** (TODO / IN PROGRESS / OPEN / WAITING / PERPETUAL) plus filed **Could Have** backlog. **Verification (V)** band holds task-shipped / FBU-open items (`⏳ WAITING`). Remove **terminal** rows and archive prose (use [`kanban-completed.md`](kanban-completed.md) / [`intake-completed.md`](intake-completed.md)).
 
@@ -37,6 +37,8 @@ housekeeping_policy: keep
 - **E06:S09:T36** – Adopter Path Selector + Install RC (UXR-029) - ⏳ SHIPPED (HIGH — **v0.6.9.36+3**; AC7 satisfied @ attempt 10) | [Task](epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T36-adopter-path-selector-install-rc-uxr029.md) | [UXR-029](fr-br/UXR-029-adk-install-path-experiment.md) | [#52](https://github.com/RMS-Ltd/ai-dev-kit/issues/52) | —No IPP— | Last modified: 2026-06-16 13:57 UTC
 
 ### Could Have (C) - Nice-to-Have Tasks
+
+- **E05:S02:T07** – Unified documentation governance strategy (FR-139) - ✅ COMPLETE (MEDIUM — **v0.5.2.7+2**; documentation governance strategy index) | [Task](epics/epic-05/story-02-documentation-maintenance-framework/T07-unified-documentation-governance-strategy-fr139.md) | [FR-139](fr-br/FR-139-unified-documentation-governance-strategy.md) | [IPP](../implementation-cycles/IPP-E05S02T07-unified-documentation-governance-strategy-fr139.md) | Last modified: 2026-06-23 16:00 UTC
 
 - **E21:S04:T06** – Test cultural adaptations - 📋 TODO (MEDIUM, cultural adaptation) | [Task](epics/epic-21/story-04-cultural-adaptation/T06-test-cultural-adaptations.md) | [Story](epics/epic-21/story-04-cultural-adaptation.md) | [FR-006](fr-br/FR-006-localization-language-selection-uk-us-english.md) | —No IPP— | Last modified: 2026-06-07 11:18 UTC
 

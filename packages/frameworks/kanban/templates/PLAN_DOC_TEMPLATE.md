@@ -16,21 +16,21 @@ housekeeping_policy: keep
 
 ---
 
-## 1. Requirements (Ascertained Baseline)
+## §1 — Requirements (Ascertained Baseline)
 
-### 1.1 Functional requirements (ascertained)
+### §1.1 Functional requirements (ascertained)
 
 | ID | Requirement | Source (FR/BR/Task) |
 | -- | ----------- | ------------------- |
 | RF1 | … | … |
 
-### 1.2 Non-functional requirements (ascertained)
+### §1.2 Non-functional requirements (ascertained)
 
 | ID | Requirement | Source (FR/BR/Task) |
 | -- | ----------- | ------------------- |
 | RNF1 | … | … |
 
-### 1.3 Invariants and boundaries
+### §1.3 Invariants and boundaries
 
 - **Invariants:** …
 - **In scope:** …
@@ -38,21 +38,21 @@ housekeeping_policy: keep
 
 ---
 
-## 2. Specification
+## §2 — Specification
 
-### 2.1 Goal
+### §2.1 Goal
 
 [One paragraph: what outcome this plan enables.]
 
-### 2.2 Specification mapping from ascertained requirements
+### §2.2 Specification mapping from ascertained requirements
 
 Describe how the specification formalizes the requirements baseline above.
 
-### 2.3 Constraints
+### §2.3 Constraints
 
 - …
 
-### 2.4 Status transition intent (mandatory for IPW-derived implementation tasks)
+### §2.4 Status transition intent (mandatory for IPW-derived implementation tasks)
 
 - **Current task status:** TODO | IN PROGRESS | COMPLETE
 - **Transition trigger to IN PROGRESS:** First non-planning implementation change lands.
@@ -60,7 +60,7 @@ Describe how the specification formalizes the requirements baseline above.
 - **Atomic propagation requirement:** Task doc status and kboard row status must update in the same change set/session.
 - **Owner:** Implementation execution step (not planning-only IPW creation).
 
-### 2.5 ADR necessity decision (mandatory — IPW Phase 5.0)
+### §2.5 ADR necessity decision (mandatory — IPW Phase 5.0)
 
 Score each trigger **Y** or **N** with one-line evidence. Criteria: [`ipw-adr-necessity-checklist.md`](../../../docs/architecture/standards-and-adrs/ipw-adr-necessity-checklist.md) (FR-100).
 
@@ -90,7 +90,7 @@ If **EXEMPT:** all T1–T7 = N and E1–E5 pass (see checklist policy); record �
 
 ---
 
-## 3. Test design
+## §3 — Test design
 
 | ID | Behavior / layer | Expected check |
 | -- | ---------------- | -------------- |
@@ -98,7 +98,7 @@ If **EXEMPT:** all T1–T7 = N and E1–E5 pass (see checklist policy); record �
 
 ---
 
-## 4. Implementation plan
+## §4 — Implementation plan
 
 | Step | Action | Deliverable |
 | ---- | ------ | ----------- |
@@ -108,37 +108,37 @@ If **EXEMPT:** all T1–T7 = N and E1–E5 pass (see checklist policy); record �
 
 **RW verification / FBU wave rule (BR-097):** Any post-ship verification or FBU-closure step in §4 must prescribe **`RW E{epic}:S{story}:T{task} --art`** only. Do **not** prescribe `--doc-policy-zero` for follow-on releases after a tagged BUILD.
 
-### 4.1 Files to create or modify
+### §4.1 Files to create or modify
 
 - …
 
-### 4.2 Dependency order
+### §4.2 Dependency order
 
 1. …
 
-### 4.3 Documentation implementation steps (optional)
+### §4.3 Documentation implementation steps (optional)
 
 Ordered doc work during implementation (derived from §5–§6), e.g. update KB guide before user docs.
 
 ---
 
-## 5. Documentation deliverables
+## §5 — Documentation deliverables
 
 *Populated in IPW Phase 5 — after implementation planning, before housing.*
 
-### 5.1 Existing documents to update
+### §5.1 Existing documents to update
 
 | Doc ID | Path | Scope of change | Tied to (RF/T/impl step) |
 | ------ | ---- | --------------- | ------------------------ |
 | D-U1 | … | … | … |
 
-### 5.2 New documents to create
+### §5.2 New documents to create
 
 | Doc ID | Proposed path (draft) | Purpose | Tied to (RF/T/impl step) |
 | ------ | --------------------- | ------- | ------------------------ |
 | D-C1 | … | … | … |
 
-### 5.3 Documentation gaps and explicit non-changes
+### §5.3 Documentation gaps and explicit non-changes
 
 | Gap / topic | Resolution (CREATE row above, or NONE + reason) |
 | ----------- | ----------------------------------------------- |
@@ -146,7 +146,7 @@ Ordered doc work during implementation (derived from §5–§6), e.g. update KB 
 
 ---
 
-## 6. Documentation housing
+## §6 — Documentation housing
 
 *Populated in IPW Phase 6 — canonical paths and publication intent.*
 
@@ -158,7 +158,7 @@ Ordered doc work during implementation (derived from §5–§6), e.g. update KB 
 
 ---
 
-## 7. Success / verification criteria
+## §7 — Success / verification criteria
 
 - [ ] …
 - [ ] All §5 UPDATE/CREATE items implemented or explicitly deferred with reason
