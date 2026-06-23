@@ -10,8 +10,8 @@ housekeeping_policy: keep
 
 **Status:** IN PROGRESS  
 **Priority:** HIGH  
-**Last updated:** 2026-06-23 (v0.7.1.15+0 – Kanban documentation setup)
-**Version:** v0.7.1.15+0
+**Last updated:** 2026-06-23 (v0.7.1.13+2 – RW -d docs reconciliation)
+**Version:** v0.7.1.13+2
 **Estimated Effort:** [TBD]  
 **Actual Effort:** [TBD]  
 **Started:** 2025-12-09  
@@ -43,7 +43,7 @@ housekeeping_policy: keep
 - [ ] **E07:S01:T10 – Project Root Hygiene and Legacy Docs Rationalization (UXR-013)** - TODO (ID collision with historical FR-059 T10 — renumber pending; IPW before implementation) — [Task](story-01-codebase-maintenance-tasks/T10-project-root-hygiene-and-legacy-docs-rationalization.md)
 - [x] **E07:S01:T11 – Consolidate governance under `docs/governance/` (FR-101)** - ✅ COMPLETE (v0.7.1.11+8 — Waves 0–F; ADR-007) - [Task Document](story-01-codebase-maintenance-tasks/T11-consolidate-governance-under-docs-governance-fr101.md) | [IPP](../../../implementation-cycles/IPP-E7S01T11-consolidate-governance-under-docs-governance.md) | [FR-101](../../fbu/FR-101-consolidate-governance-under-docs-governance.md)
 - [x] **E07:S01:T12 – Promote Kanban to `docs/kanban/` and retire `project-management/` (FR-118)** - ✅ COMPLETE (v0.7.1.12+2) - [Task Document](story-01-codebase-maintenance-tasks/T12-promote-kanban-to-docs-kanban-retire-project-management-fr118.md) | [FR-118](../../fbu/FR-118-promote-kanban-to-docs-kanban-retire-project-management-shell.md) | [IPP](../../../implementation-cycles/IPP-E07S01T12-kanban-path-promotion-fr118.md)
-- [ ] **E07:S01:T13 – Comprehensive repository directory structure audit (UXR-033)** - 🔄 IN PROGRESS (v0.7.1.13+1 — audit report delivered; sign-off pending; cartography leg A under [FR-140](../../fbu/FR-140-repository-information-architecture-steady-state-governance.md)) — [Task Document](story-01-codebase-maintenance-tasks/T13-comprehensive-repository-directory-structure-audit-uxr033.md) | [UXR-033](../../fbu/UXR-033-comprehensive-repository-directory-structure-audit.md) | [—IPP—](../../../implementation-cycles/IPP-E07S01T13-comprehensive-repository-directory-structure-audit.md)
+- [ ] **E07:S01:T13 – Comprehensive repository directory structure audit (UXR-033)** - 🔄 IN PROGRESS (v0.7.1.13+2 — RW -d docs reconciliation; sign-off §4 pending; cartography leg A under [FR-140](../../fbu/FR-140-repository-information-architecture-steady-state-governance.md)) — [Task Document](story-01-codebase-maintenance-tasks/T13-comprehensive-repository-directory-structure-audit-uxr033.md) | [UXR-033](../../fbu/UXR-033-comprehensive-repository-directory-structure-audit.md) | [—IPP—](../../../implementation-cycles/IPP-E07S01T13-comprehensive-repository-directory-structure-audit.md)
 - [ ] **E07:S01:T14 – Comprehensive repository file-level audit within audited directories (UXR-034)** - TODO (v0.7.1.14+0 — RW -k kanban init; HIGH; **IPW unblocked** per FR-140-F13; paired with T13) — [Task Document](story-01-codebase-maintenance-tasks/T14-comprehensive-repository-file-level-audit-uxr034.md) | [UXR-034](../../fbu/UXR-034-comprehensive-repository-file-level-audit-within-audited-directories.md) | [FR-140](../../fbu/FR-140-repository-information-architecture-steady-state-governance.md) | —No IPP—
 - [ ] **E07:S01:T15 – Repository information architecture steady-state governance (FR-140)** - TODO (v0.7.1.15+0 — RW -k kanban init; HIGH — program umbrella; policy + manifest + gates; wires T13/T14) — [Task Document](story-01-codebase-maintenance-tasks/T15-repository-information-architecture-steady-state-governance-fr140.md) | [FR-140](../../fbu/FR-140-repository-information-architecture-steady-state-governance.md) | —No IPP—
 

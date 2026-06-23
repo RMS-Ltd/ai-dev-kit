@@ -14,7 +14,7 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Status:** ACCEPTED  
 **Code:** UXR-033  
-**Last updated:** 2026-06-23 (investigation report @ v0.7.1.13+1 pending RW)  
+**Last updated:** 2026-06-23 (v0.7.1.13+2 — RW -d docs reconciliation)  
 **Implementing Task:** [E07:S01:T13](../epics/epic-07/story-01-codebase-maintenance-tasks/T13-comprehensive-repository-directory-structure-audit-uxr033.md)
 
 ---
@@ -101,7 +101,7 @@ This UXR is **investigation and planning only**. Execution of moves, merges, arc
 - [x] **R4:** Identify **framework SoT vs dev-kit-local vs install-mirror** boundaries for `packages/` and `greenfield-install/` subtrees.
 - [x] **R5:** Feed wave-1 execution candidates into existing tasks (T10, FR-039, etc.).
 - [ ] **R6:** Add validator or CI advisory for new top-level directories — deferred follow-on.
-- [ ] **R7:** Hand off in-scope directories to [UXR-034](UXR-034-comprehensive-repository-file-level-audit-within-audited-directories.md) / [E07:S01:T14](../epics/epic-07/story-01-codebase-maintenance-tasks/T14-comprehensive-repository-file-level-audit-uxr034.md) for per-file valuation; incorporate T14 rollups before T13 sign-off where practical.
+- [x] **R7:** Hand off in-scope directories to [UXR-034](UXR-034-comprehensive-repository-file-level-audit-within-audited-directories.md) / [E07:S01:T14](../epics/epic-07/story-01-codebase-maintenance-tasks/T14-comprehensive-repository-file-level-audit-uxr034.md) for per-file valuation; incorporate T14 rollups before T13 sign-off where practical.
 
 **Priority Order:**
 
@@ -153,10 +153,11 @@ This UXR is **investigation and planning only**. Execution of moves, merges, arc
 
 - [x] Atomic intake: UXR-033 + E07:S01:T13 + story checklist wiring
 - [x] **RW -k** kanban init @ v0.7.1.13+0 (`--art --dpz`)
-- [ ] **IPW** on E07:S01:T13 — investigation plan, rubric template, report housing, exclusion rules
-- [ ] Execute directory inventory and valuation (investigation phase on task)
-- [ ] Maintainer sign-off on audit report before any structural IDW waves
-- [ ] **RW** release on epic-7 branch when intake artifacts are versioned
+- [x] **IPW** on E07:S01:T13 — IPP review-only (existing IPP sufficient)
+- [x] Execute directory inventory and valuation — [REPOSITORY-DIRECTORY-AUDIT.md](../../maintenance/REPOSITORY-DIRECTORY-AUDIT.md) @ v0.7.1.13+1
+- [x] **RW -d** docs reconciliation @ v0.7.1.13+2 (T14 handoff §5; FR-140 cross-ref)
+- [ ] Maintainer sign-off on audit report §4 before task COMPLETE or structural IDW waves
+- [ ] **RW E07:S01:T13 --art** completion release when AC5 satisfied
 
 ---
 

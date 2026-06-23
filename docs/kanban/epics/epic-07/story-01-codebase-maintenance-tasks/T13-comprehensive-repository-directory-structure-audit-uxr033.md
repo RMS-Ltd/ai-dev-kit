@@ -13,8 +13,8 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** Large (inventory + valuation matrix + maintainer sign-off)  
 **Created:** 2026-06-23  
-**Last updated:** 2026-06-23 (investigation deliverable — sign-off pending)  
-**Version Anchor:** v0.7.1.13+1  
+**Last updated:** 2026-06-23 (v0.7.1.13+2 — RW -d docs reconciliation; sign-off §4 pending)  
+**Version Anchor:** v0.7.1.13+2  
 **Code:** E07S01T13
 
 Publication Status: NOT_APPLICABLE (investigation report delivered; maintainer sign-off pending per audit §4)

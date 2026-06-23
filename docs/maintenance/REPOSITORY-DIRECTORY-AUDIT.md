@@ -156,6 +156,7 @@ Depth-2 inventory: 91 paths (including `.cursor/skills`). Command: IPP Step 3 de
 - **E07:S01:T12 / FR-118** — kanban promotion **COMPLETE**; `docs/project-management/` removal completes residual shell.
 - **E04:S19:T14 / UXR-032** — `docs/kanban/fbu/` path rename; coordinate link sweeps with wave **remove/archive**.
 - **FR-039** — consumes this audit for prioritization.
+- **FR-140 / E07:S01:T15** — program umbrella for steady-state IA governance; T13 is cartography leg A.
 - **E07:S01:T14 / UXR-034** — file-level drill-down within directories marked `keep` or `consolidate`.
 
 ---

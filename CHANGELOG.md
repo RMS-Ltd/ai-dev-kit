@@ -11,6 +11,14 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.7.1.13+2] - 23-06-26
+
+E07:S01:T13 — **Change implemented (UXR-033, RW -d):** Post-IPW docs reconciliation; UXR/T14 handoff hygiene; FR-140 cross-ref in audit. Sign-off §4 still pending — task IN PROGRESS. SemVer **v0.4.1215+2** (docs-only; no tags).
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.7.1.13+2.md)
+
+---
+
 ## [0.7.1.15+0] - 23-06-26
 
 E07:S01:T15 — **Change implemented (FR-140):** Repository IA steady-state governance program filed; wires T13/T14 cartography legs + aggregation map; T14 IPW unblocked per FR-140-F13. Kanban-init @ BUILD+0. SemVer **v0.4.1214+0**.
