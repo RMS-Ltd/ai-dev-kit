@@ -391,7 +391,7 @@ The Release Workflow (RW) and the Update Kanban Workflow (UKW) own **distinct, n
 - [`.cursorrules` Step 7 — Scoped Kanban Reconciliation](../../../../.cursorrules)
 - [`release-workflow-agent-execution.md` Step 7](../../workflow-mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md)
 - [`update-kanban-workflow-agent-execution.md`](../../workflow-mgt/KB/Documentation/Developer_Docs/vwmp/update-kanban-workflow-agent-execution.md)
-- [`FR-092` — Canonical RW/UKW kanban consistency program (meta)](../../../../docs/kanban/fr-br/FR-092-canonical-rw-ukw-kanban-consistency-program.md)
+- [`FR-092` — Canonical RW/UKW kanban consistency program (meta)](../../../../docs/kanban/fbu/FR-092-canonical-rw-ukw-kanban-consistency-program.md)
 
 ### Story Checklist
 

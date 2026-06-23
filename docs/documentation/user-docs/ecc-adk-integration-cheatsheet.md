@@ -286,7 +286,7 @@ Prefer **namespaced** `adk-*` skills for governance and **ECC** skills for domai
 | ----- | -------- |
 | Full contract | [Integration specification](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/architecture/standards-and-adrs/ecc-adk-harness-layer-integration-specification.md) |
 | GO/NO-GO matrix | [Phase 0 evaluation](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/architecture/standards-and-adrs/ecc-adk-harness-layer-phase0-evaluation.md) |
-| FR scope / phases | [FR-098](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/kanban/fr-br/FR-098-ecc-optional-harness-layer-integration.md) |
+| FR scope / phases | [FR-098](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/kanban/fbu/FR-098-ecc-optional-harness-layer-integration.md) |
 | Throwaway dogfood (E2E) | §3 **Throwaway branch playbook** (this doc) |
 | Greenfield install | [INSTALL_IN_YOUR_PROJECT.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/INSTALL_IN_YOUR_PROJECT.md) |
 | RW detail | `packages/frameworks/workflow-mgt/KB/.../release-workflow-agent-execution.md` |

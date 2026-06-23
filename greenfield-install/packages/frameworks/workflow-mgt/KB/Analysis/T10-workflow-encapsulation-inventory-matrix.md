@@ -97,4 +97,4 @@ housekeeping_policy: keep
 ## References
 
 - [IPP-E02S03T10](../../../../docs/implementation-cycles/IPP-E02S03T10-workflow-encapsulation-integrity-mwf-fr126.md)
-- [FR-126](../../../../docs/kanban/fr-br/FR-126-workflow-encapsulation-integrity-mwf-leverage.md)
+- [FR-126](../../../../docs/kanban/fbu/FR-126-workflow-encapsulation-integrity-mwf-leverage.md)

@@ -117,6 +117,6 @@ Source: [`kboard.md`](../../../kboard.md) (v0.1.2.14+1).
 ## References
 
 - [Story 1](../story-01-rc-readiness-gap-analysis.md)
-- [FR-032](../../../fr-br/FR-032-release-candidate-readiness-gap-analysis.md)
+- [FR-032](../../../fbu/FR-032-release-candidate-readiness-gap-analysis.md)
 - [kboard.md](../../../kboard.md)
 - [dev-kit-versioning-policy.md](../../../../governance/standards/dev-kit-versioning-policy.md)

@@ -8,7 +8,7 @@ housekeeping_policy: keep
 
 # SBL Attempt 06 — Preflight Checklist
 
-> **Status: COMPLETE (2026-06-11)** — FR-079 **accepted**; adopter sign-off **final**; AC13–AC16. Maintainer index: [attempt-06/README.md](attempt-06/README.md). SBL package: `starborn_legacy/logs/ai-dev-kit/install/attempt-06/`.
+> **Status: COMPLETE (2026-06-11)** — FR-079 **accepted**; adopter sign-off **final**; AC13–AC16. Maintainer index: [attempt-06/README.md](attempt-06/README.md). ADK package: [attempt-06/](attempt-06/).
 
 **Purpose:** Adopter-side confirmation of attempt-05 fixes ([E06:S09:T26](../docs/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T26-starborn-legacy-adk-install-program.md) **AC13**). This is a **verification replay**, not new product delivery.
 
@@ -16,7 +16,7 @@ housekeeping_policy: keep
 **Triage matrix:** [starborn-legacy-install-triage-matrix.md](../docs/knowledge/analysis/projects/starborn-legacy-install-triage-matrix.md)  
 **Maintainer index:** [README.md](README.md)
 
-**SBL artifact root:** `starborn_legacy/logs/ai-dev-kit/install/attempt-06/`
+**ADK artifact root:** [attempt-06/](attempt-06/)
 
 ---
 

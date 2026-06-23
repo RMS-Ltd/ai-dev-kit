@@ -9,7 +9,7 @@ housekeeping_policy: keep
 # E21:S04:T01 — Planning: Research cultural requirements for target locales (IPW)
 
 **Host Task:** [`T01-research-cultural-requirements-for-target-locales.md`](../kanban/epics/epic-21/story-04-cultural-adaptation/T01-research-cultural-requirements-for-target-locales.md) **(E21:S04:T01)**  
-**Planning for:** [FR-006 Phase 2](../kanban/fr-br/FR-006-localization-language-selection-uk-us-english.md) · [E21:S04](../kanban/epics/epic-21/story-04-cultural-adaptation.md) · [ADR-024](../architecture/standards-and-adrs/ADR-024-i18n-framework-strategy.md)  
+**Planning for:** [FR-006 Phase 2](../kanban/fbu/FR-006-localization-language-selection-uk-us-english.md) · [E21:S04](../kanban/epics/epic-21/story-04-cultural-adaptation.md) · [ADR-024](../architecture/standards-and-adrs/ADR-024-i18n-framework-strategy.md)  
 **Status:** Complete — released `v0.21.4.1+1` (`RW E21:S04:T01 --art`)  
 **Branch:** `epic/21-internationalisation-localisation`
 
@@ -60,7 +60,7 @@ Establish the authoritative desk-research baseline for cultural adaptation acros
 
 ### 2.2 Specification mapping from ascertained requirements
 
-Implements FR-006 Phase 2 "Cultural adaptations" research prerequisite ([FR-006](../kanban/fr-br/FR-006-localization-language-selection-uk-us-english.md) Phase 2 AC). Formalizes the nine-locale scaffold from S03:T02 into a cultural dimension matrix with prioritized recommendations — parallel to how S03:T01 inventory enabled translation workflow (S03:T04).
+Implements FR-006 Phase 2 "Cultural adaptations" research prerequisite ([FR-006](../kanban/fbu/FR-006-localization-language-selection-uk-us-english.md) Phase 2 AC). Formalizes the nine-locale scaffold from S03:T02 into a cultural dimension matrix with prioritized recommendations — parallel to how S03:T01 inventory enabled translation workflow (S03:T04).
 
 ### 2.3 Constraints
 
@@ -243,7 +243,7 @@ No `--skip-tests` — verification is structural doc contract, not native-langua
 
 - [T01 task doc](../kanban/epics/epic-21/story-04-cultural-adaptation/T01-research-cultural-requirements-for-target-locales.md)
 - [E21:S04 story](../kanban/epics/epic-21/story-04-cultural-adaptation.md)
-- [FR-006](../kanban/fr-br/FR-006-localization-language-selection-uk-us-english.md)
+- [FR-006](../kanban/fbu/FR-006-localization-language-selection-uk-us-english.md)
 - [ADR-024](../architecture/standards-and-adrs/ADR-024-i18n-framework-strategy.md)
 - [locale-rollout-matrix.md](../governance/standards/locale-rollout-matrix.md)
 - [translation-workflow-and-review.md](../governance/standards/translation-workflow-and-review.md)

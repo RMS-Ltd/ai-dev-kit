@@ -1,0 +1,43 @@
+{
+  "contract": "FR-092 / ADR-018",
+  "invocation_context": "rw_step_7",
+  "release_scope": {
+    "epic": 5,
+    "story": 2,
+    "task": 7,
+    "task_id": "E5:S2:T7",
+    "version_string": "v0.5.2.7+1"
+  },
+  "stamp_evidence": {},
+  "summary": {
+    "stamps_appended_with_evidence": 0,
+    "stamps_preserved_existing": 1,
+    "stamps_skipped_no_evidence": 0,
+    "total_changes": 8,
+    "touched_surfaces": ["task_doc", "fbu_doc", "kboard", "story_doc", "epic_doc"],
+    "untouched_surfaces": []
+  },
+  "surfaces": {
+    "task_doc": {
+      "touched": true,
+      "paths": ["docs/kanban/epics/epic-05/story-02-documentation-maintenance-framework/T07-unified-documentation-governance-strategy-fr139.md"]
+    },
+    "fbu_doc": {
+      "touched": true,
+      "paths": ["docs/kanban/fr-br/FR-139-unified-documentation-governance-strategy.md"]
+    },
+    "kboard": {
+      "touched": true,
+      "paths": ["docs/kanban/kboard.md"]
+    },
+    "story_doc": {
+      "touched": true,
+      "paths": ["docs/kanban/epics/epic-05/story-02-documentation-maintenance-framework.md"]
+    },
+    "epic_doc": {
+      "touched": true,
+      "paths": ["docs/kanban/epics/epic-05/epic-05.md"]
+    }
+  },
+  "timestamp_utc": "2026-06-23T12:37:55Z"
+}

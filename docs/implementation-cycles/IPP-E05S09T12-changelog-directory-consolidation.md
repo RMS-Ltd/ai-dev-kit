@@ -9,7 +9,7 @@ housekeeping_policy: keep
 # E05:S09:T12 — Planning: Spec, Tests, Implementation Plan (IPW)
 
 **Host Task:** [`T12-changelog-directory-consolidation-uxr018.md`](../kanban/epics/epic-05/story-09-docusaurus-documentation-portal/T12-changelog-directory-consolidation-uxr018.md) **(E05:S09:T12)**  
-**Planning for:** [UXR-018](../kanban/fr-br/UXR-018-changelog-directory-consolidation.md)  
+**Planning for:** [UXR-018](../kanban/fbu/UXR-018-changelog-directory-consolidation.md)  
 **Status:** Approved  
 
 **Host:** **E05:S09:T12** only. Orphan release labels **v0.5.1.76+1/+2** retired — see [coordinate remediation](../maintenance/coordinate-remediation-uxr018-e05s09t12.md).
@@ -127,7 +127,7 @@ Deliver a single changelog documentation pillar under `docs/changelog-and-releas
 
 ## References
 
-- [UXR-018](../kanban/fr-br/UXR-018-changelog-directory-consolidation.md)
+- [UXR-018](../kanban/fbu/UXR-018-changelog-directory-consolidation.md)
 - [T12](../kanban/epics/epic-05/story-09-docusaurus-documentation-portal/T12-changelog-directory-consolidation-uxr018.md)
 - [Coordinate remediation](../maintenance/coordinate-remediation-uxr018-e05s09t12.md)
 - [changelog-management-policy.md](../architecture/standards-and-adrs/changelog-management-policy.md)

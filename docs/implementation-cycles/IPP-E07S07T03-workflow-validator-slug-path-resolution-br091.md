@@ -9,7 +9,7 @@ housekeeping_policy: archive
 # E07:S07:T03 — Planning: Workflow validator slug path resolution (BR-091) (IPW)
 
 **Host Task:** [`T03-workflow-validator-slug-path-resolution-br091.md`](../kanban/epics/epic-07/story-07-code-reviews/T03-workflow-validator-slug-path-resolution-br091.md) **(E07:S07:T03)**  
-**Planning for:** [BR-091](../kanban/fr-br/BR-091-workflow-validator-legacy-workflow-mgt-path-hardcoded.md)  
+**Planning for:** [BR-091](../kanban/fbu/BR-091-workflow-validator-legacy-workflow-mgt-path-hardcoded.md)  
 **Status:** Implemented (2026-06-05 — release via RW E07:S07:T03 v0.7.7.3+1)
 
 > **IPW (Implementation Planning Workflow):** Bidirectional wiring to the host task **Input** and **References** is mandatory (FR-042).
@@ -188,7 +188,7 @@ FR-098 validators locate the Workflow Management package using canonical install
 
 ## References
 
-- [BR-091](../kanban/fr-br/BR-091-workflow-validator-legacy-workflow-mgt-path-hardcoded.md)
-- [BR-087](../kanban/fr-br/BR-087-framework-install-directory-slug-mismatch.md)
+- [BR-091](../kanban/fbu/BR-091-workflow-validator-legacy-workflow-mgt-path-hardcoded.md)
+- [BR-087](../kanban/fbu/BR-087-framework-install-directory-slug-mismatch.md)
 - [IPP-E7S7T2](IPP-E07S07T02-ci-pytest-gate-for-workflow-scripts.md)
 - [package-management-design.md](../architecture/standards-and-adrs/package-management-design.md)

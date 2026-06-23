@@ -1,9 +1,32 @@
 # KMA agent guardrails — invariants only (FR-127 / ADR-028)
+# Extended FR-136 / E06:S09:T39 — guided + score modes
 # Consumed by adopter agents; not a deterministic workflow engine.
 
-version: "1.0.0"
+version: "1.1.0"
 workflow: kma
 mode: agentic_intelligence_required
+
+# Public mode: blind | guided | score
+# Internal rubric alias: score maps to score_only
+kma_mode: blind
+
+guided_inputs:
+  required:
+    - target_est_tree
+  optional:
+    - target_est_aliases
+    - band_parity
+    - title_resolution_rules
+    - legacy_epic_remap
+    - target_folder_map
+    - scoring_rubric
+    - kma_methods
+
+score_mode:
+  file_writes: forbidden
+  required:
+    - target_est_tree
+    - kanban_root
 
 invariants:
   - id: read_full_corpus
@@ -14,6 +37,12 @@ invariants:
 
   - id: sign_off_before_writes
     description: No migration file writes until operator explicitly signs off on migration-proposal.md.
+
+  - id: guided_tsp_required
+    description: When kma_mode is guided, target_est_tree MUST exist and be readable — fail fast otherwise.
+
+  - id: score_mode_no_writes
+    description: When kma_mode is score, agent runs structural scorer only — no kanban_root writes.
 
   - id: duplicate_epic_policy_first
     description: DUPLICATE_EPIC_POLICY matrix emitted before epic map table in Step 2 (Propose).
@@ -34,4 +63,4 @@ invariants:
     description: install_kanban_framework.py --mode fresh remains the automated path for empty kanban roots.
 
   - id: helpers_advisory_only
-    description: kma_ingest.py and validate_migration_map.py are optional advisory helpers — not migration engines.
+    description: kma_ingest.py, validate_migration_map.py, score_kma_structure.py, kma_collision_detect.py are optional advisory helpers — not migration engines.

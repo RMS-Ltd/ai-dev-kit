@@ -8,6 +8,8 @@ housekeeping_policy: keep
 
 # Ultimate Canonical docs/documentation Structure
 
+> **⚠️ SUPERSEDED (book workspace):** For ai-dev-kit maintainer layout, use [DOCUMENTATION_SCHEMA.md](../../governance/standards/DOCUMENTATION_SCHEMA.md) and [documentation-governance-strategy.md](../../governance/standards/documentation-governance-strategy.md) §2. This file remains as **historical meta-analysis** (E6:S06:T06); do not use for new writes.
+
 **Purpose:** Definitive specification for the canonical docs/documentation structure  
 **Status:** COMPLETE  
 **Version:** 1.0.0  

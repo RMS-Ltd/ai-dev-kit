@@ -32,4 +32,4 @@
 
 - [BR-088](../../kanban/fr-br/BR-088-rw-install-mode-c-missing-version-file-scaffold.md)
 - [E06:S09:T19](../../kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T19-rw-install-version-file-scaffold-br088.md)
-- SBL evidence: `starborn_legacy/logs/ai-dev-kit/install/attempt-05/`
+- SBL evidence: `adk-install-into-sbl/attempt-05/`

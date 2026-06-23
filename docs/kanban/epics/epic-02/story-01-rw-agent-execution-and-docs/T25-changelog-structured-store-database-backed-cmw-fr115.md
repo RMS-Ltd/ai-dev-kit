@@ -32,9 +32,9 @@ Implement a **changelog read model** (SQLite default) fed by **async ingestion**
 ## Input
 
 - [IPP-E02S01T25-release-metadata-async-ingest-umbrella.md](../../../../implementation-cycles/IPP-E02S01T25-release-metadata-async-ingest-umbrella.md) — **umbrella IPW** (FR-115 + FR-116 / T25 + T13)
-- [FR-115](../../../fr-br/FR-115-changelog-structured-store-database-backed-cmw.md) — feature request, options analysis, acceptance criteria
-- [FR-025](../../../fr-br/FR-025-changelog-management-and-archival-workflow.md) — prior CMW implementation (markdown SoT)
-- [BR-074](../../../fr-br/BR-074-rw-release-commits-test-artifacts-and-changelog-integrity-failures.md) — immutability and archive integrity lessons
+- [FR-115](../../../fbu/FR-115-changelog-structured-store-database-backed-cmw.md) — feature request, options analysis, acceptance criteria
+- [FR-025](../../../fbu/FR-025-changelog-management-and-archival-workflow.md) — prior CMW implementation (markdown SoT)
+- [BR-074](../../../fbu/BR-074-rw-release-commits-test-artifacts-and-changelog-integrity-failures.md) — immutability and archive integrity lessons
 - `packages/frameworks/workflow-mgt/scripts/changelog/` — current CMW script suite
 - `docs/governance/standards/changelog-archival-policy.md`
 - `rw-config.yaml` — path configuration SoT
@@ -68,7 +68,7 @@ Implement a **changelog read model** (SQLite default) fed by **async ingestion**
 
 ## Associated Feature Request
 
-- [FR-115: Changelog Structured Store — Database-Backed CMW](../../../fr-br/FR-115-changelog-structured-store-database-backed-cmw.md)
+- [FR-115: Changelog Structured Store — Database-Backed CMW](../../../fbu/FR-115-changelog-structured-store-database-backed-cmw.md)
 
 ---
 

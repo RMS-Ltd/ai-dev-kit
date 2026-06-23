@@ -128,4 +128,4 @@ Migrated from embedded Story section via `generate_task_doc.py` (FR-016 Wave 1 t
 - [Integration alignment report](integration-alignment-report.md)
 - [IPP-E02S13T04](../../../../implementation-cycles/IPP-E02S13T04-integration-dependency-alignment.md)
 - [framework-dependency-architecture.md](../../../../architecture/standards-and-adrs/framework-dependency-architecture.md)
-- [FR-098 — ECC optional harness layer](../../../fr-br/FR-098-ecc-optional-harness-layer-integration.md)
+- [FR-098 — ECC optional harness layer](../../../fbu/FR-098-ecc-optional-harness-layer-integration.md)

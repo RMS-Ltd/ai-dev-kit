@@ -9,7 +9,7 @@ housekeeping_policy: keep
 # E07:S07:T01 — Planning: Comprehensive Workflow Machinery Code Review (IPW)
 
 **Host Task:** [`T01-comprehensive-workflow-machinery-code-review.md`](../kanban/epics/epic-07/story-07-code-reviews/T01-comprehensive-workflow-machinery-code-review.md) **(E07:S07:T01)**  
-**Planning for:** [FR-107](../kanban/fr-br/FR-107-comprehensive-workflow-machinery-code-review.md)  
+**Planning for:** [FR-107](../kanban/fbu/FR-107-comprehensive-workflow-machinery-code-review.md)  
 **Status:** Implemented (2026-06-03 — review report published; release via `RW E07:S07:T01`)
 
 > **IPW (Implementation Planning Workflow):** Bidirectional wiring to the host task **Input** and **References** is mandatory (FR-042).
@@ -251,7 +251,7 @@ Criteria: [`ipw-adr-necessity-checklist.md`](../architecture/standards-and-adrs/
 ## References
 
 - [T01 task doc](../kanban/epics/epic-07/story-07-code-reviews/T01-comprehensive-workflow-machinery-code-review.md)
-- [FR-107](../kanban/fr-br/FR-107-comprehensive-workflow-machinery-code-review.md)
+- [FR-107](../kanban/fbu/FR-107-comprehensive-workflow-machinery-code-review.md)
 - [E07:S07 – Code Reviews](../kanban/epics/epic-07/story-07-code-reviews.md)
 - [E02:S13:T01 expectations baseline](../kanban/epics/epic-02/story-13-workflow-management-package-implementation-review/T01-expectations-baseline.md)
 - [E02:S13:T08 sync report](../kanban/epics/epic-02/story-13-workflow-management-package-implementation-review/T08-sync-packaged-workflows-with-live-repo-implementation.md)

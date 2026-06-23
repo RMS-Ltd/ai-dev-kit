@@ -52,7 +52,7 @@ This package contains a comprehensive workflow management framework with **13** 
 
 ### Delivery Workflows (2)
 - **Implementation Delivery Workflow (IDW)** - Execute linked IPP; optional `--rw` chain to local-complete release
-- **Meta-Workflow (MWF)** - Composite orchestration (v1 `delivery` recipe: IPW → IDW `--rw`; [FR-124](../../../docs/kanban/fr-br/FR-124-meta-workflow-orchestration-composite-workflow-chains.md))
+- **Meta-Workflow (MWF)** - Composite orchestration (v1 `delivery` recipe: IPW → IDW `--rw`; [FR-124](../../../docs/kanban/fbu/FR-124-meta-workflow-orchestration-composite-workflow-chains.md))
 
 _Documentation quality_ (templates, style guide, per-workflow READMEs) is governed by the [Workflow Documentation Style Guide](docs/workflow-documentation-style-guide.md) and the **Documentation Standards** subsection later in this README; there is no separate “Documentation Workflow” in the registry.
 
@@ -98,7 +98,7 @@ The AI Dev Kit workflow management framework provides **13** YAML-defined workfl
 - **For Releases**: Use **Release Workflow (RW)** for version management and distribution
 - **For Planning**: Use **IPW** (Implementation Planning Workflow; ICW is deprecated alias)
 - **For Implementation**: Use **IDW** after IPW; optional **`IDW … --rw`** for implement + local release
-- **For Full Pipeline**: Use **MWF `delivery`** — IPW → (mode gate) → IDW `--rw` ([FR-124](../../../docs/kanban/fr-br/FR-124-meta-workflow-orchestration-composite-workflow-chains.md))
+- **For Full Pipeline**: Use **MWF `delivery`** — IPW → (mode gate) → IDW `--rw` ([FR-124](../../../docs/kanban/fbu/FR-124-meta-workflow-orchestration-composite-workflow-chains.md))
 - **For Kanban Updates**: Use **Update Kanban Workflow (UKW)** for board synchronization
 - **For Quality**: Use **Testing Workflow (TESTING)** for comprehensive testing
 - **For Maintenance**: Use **Changelog Management (CMW)** for documentation upkeep
@@ -301,7 +301,7 @@ python scripts/install_release_workflow.py --mode c
 python scripts/install_release_workflow.py --mode c --dry-run
 ```
 
-After a **fresh kanban install**, mode C detects epic/story patterns on disk (BR-083), emits **`task_doc_pattern`** and **`fr_br_root`** in generated `rw-config.yaml`, and blocks persisting zero-match epic/story patterns when the kanban tree exists (BR-084). See `INSTALL_IN_YOUR_PROJECT.md` § Post-kanban RW install.
+After a **fresh kanban install**, mode C detects epic/story patterns on disk (BR-083), emits **`task_doc_pattern`** and **`fbu_root`** in generated `rw-config.yaml`, and blocks persisting zero-match epic/story patterns when the kanban tree exists (BR-084). See `INSTALL_IN_YOUR_PROJECT.md` § Post-kanban RW install.
 
 ### What the Installer Does
 
@@ -558,7 +558,7 @@ The Intake Workflow integrates with the Trigger-Aware Release Workflow (E2:S07):
 **Example:**
 ```bash
 # Commit message: "Add FR-019: Intake Workflow Automation"
-# Changed files: ["docs/kanban/fr-br/FR-019.md"]
+# Changed files: ["docs/kanban/fbu/FR-019.md"]
 # → RW detects trigger → Intake workflow executes automatically
 ```
 

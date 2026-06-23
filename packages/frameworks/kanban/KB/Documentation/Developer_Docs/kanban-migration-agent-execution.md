@@ -8,9 +8,9 @@ housekeeping_policy: keep
 
 # Kanban Migration Agent (KMA) — Agent Execution Guide
 
-**Version:** 1.0.0  
-**Last Updated:** 2026-06-12  
-**Related:** [FR-127](../../../../../../docs/kanban/fr-br/FR-127-agentic-kanban-migration-agent-replace-tool-pipeline.md) · [ADR-028](../../../../../../docs/architecture/standards-and-adrs/ADR-028-agentic-kanban-migration-brownfield-fr127.md) · [E06:S09:T31](../../../../../../docs/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T31-agentic-kanban-migration-agent-fr127.md)
+**Version:** 1.1.0  
+**Last Updated:** 2026-06-17  
+**Related:** [FR-127](../../../../../../docs/kanban/fbu/FR-127-agentic-kanban-migration-agent-replace-tool-pipeline.md) · [FR-136](../../../../../../docs/kanban/fbu/FR-136-guided-kma-target-structure-pack.md) · [ADR-028](../../../../../../docs/architecture/standards-and-adrs/ADR-028-agentic-kanban-migration-brownfield-fr127.md) · [E06:S09:T31](../../../../../../docs/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T31-agentic-kanban-migration-agent-fr127.md) · [E06:S09:T39](../../../../../../docs/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T39-guided-kma-target-structure-pack-fr136.md)
 
 ---
 
@@ -38,7 +38,21 @@ KMA is **not** a deterministic script. The agent MUST follow **read → reason �
 - **Synthesise** epic overviews from multiple legacy sources; identify keep / drop / merge rationale explicitly
 - Preserve legacy tree (read-only ingest; writes to separate `kanban_root`)
 
-Optional helpers (`kma_ingest.py`, `validate_migration_map.py`) are **advisory only**.
+Optional helpers (`kma_ingest.py`, `validate_migration_map.py`, `score_kma_structure.py`, `kma_collision_detect.py`) are **advisory only**.
+
+---
+
+## KMA modes (FR-136)
+
+| Mode | `kma_mode` | TSP required | Writes |
+| ---- | ---------- | ------------ | ------ |
+| Blind | `blind` | No | After sign-off (default) |
+| Guided | `guided` | Yes — `target_est_tree` | After sign-off; proposal anchored to TSP |
+| Score | `score` | Yes | **None** — scorer only |
+
+Load [TSP reference pack](../../../reference/README.md) when running guided or score mode.
+
+**Guided fail-fast:** If `kma_mode: guided` and `target_est_tree` is missing or unreadable, abort before Step 2 — do not proceed to propose.
 
 ---
 
@@ -47,22 +61,29 @@ Optional helpers (`kma_ingest.py`, `validate_migration_map.py`) are **advisory o
 ### Step 1 — Ingest
 
 1. Load `rw-config.yaml` when present; resolve `kanban_root` for target writes.
-2. Recursively read **legacy kanban root** (read-only): epic docs, story files, inline `E:S:T` tokens, board/MoSCOW state if present.
-3. Use `kma_ingest.py` for deterministic inventory counts when helpful:
+2. Load `kma-agent-guardrails.yaml` — if `kma_mode: guided`, validate `target_est_tree` exists (**fail fast** if missing).
+3. Recursively read **legacy kanban root** (read-only): epic docs, story files, inline `E:S:T` tokens, board/MoSCOW state if present.
+4. Use `kma_ingest.py` for deterministic inventory counts when helpful:
 
    ```bash
-   python packages/frameworks/kanban/scripts/kma_ingest.py --legacy-root PATH --json
+   python3 packages/frameworks/kanban/scripts/kma_ingest.py --legacy-root PATH --dedup --json
    ```
 
-4. Document ingest summary: epic count, story count, inline task token count, naming patterns observed.
+5. Document ingest summary: epic count, story count, **deduped unique** inline task token count, naming patterns observed.
 
 ### Step 2 — Propose
 
 1. Draft `migration-proposal.md` from [MIGRATION_PROPOSAL_TEMPLATE.md](../../../templates/MIGRATION_PROPOSAL_TEMPLATE.md).
 2. **🚨 v4 gate (FR-132 / Issue #51):** Emit [DUPLICATE_EPIC_POLICY.md](../../../guides/DUPLICATE_EPIC_POLICY.md) decision matrix mapping **before** epic map table — one home per concern; flag dual mappings.
 3. **Default depth L1 (FR-133):** State **preserve megastories** and inline task tokens unless operator explicitly requests L3 rationalization. See [KANBAN_MIGRATION_DEPTH_AND_RATIONALIZATION.md](../../../guides/KANBAN_MIGRATION_DEPTH_AND_RATIONALIZATION.md) §5.
-4. **Collision check (FR-133):** Before epic map writes, scan for fresh Core `story-{nn}-*.md` vs legacy-import targets; document `story-{nn}-legacy-{slug}.md` resolution in proposal. See depth guide §4.
-5. Include:
+4. **Collision check (FR-133 / M02):** Run collision detector; include table in proposal:
+
+   ```bash
+   python3 packages/frameworks/kanban/scripts/kma_collision_detect.py --kanban-root PATH --json
+   ```
+
+5. **Guided mode:** Populate **Guided mode** section in proposal — TSP paths, deduped unique count, collision table, lazy fan-out policy, TSP anchor epic map.
+6. Include:
    - Epic map table (legacy → target)
    - Keep / Drop / Merge sections with rationale
    - Domain rationale (why E21+ epics vs canonical-only)
@@ -92,10 +113,21 @@ After sign-off only:
 Run post-migration checks:
 
 ```bash
-python packages/frameworks/kanban/scripts/validate_installation.py --kanban-path docs/kanban
-python packages/frameworks/kanban/scripts/validate_v4_template_completeness.py --strict
-python packages/frameworks/kanban/scripts/validate_migration_map.py --proposal migration-proposal.md --strict  # advisory
+python3 packages/frameworks/kanban/scripts/validate_installation.py --kanban-path docs/kanban
+python3 packages/frameworks/kanban/scripts/validate_v4_template_completeness.py --strict
+python3 packages/frameworks/kanban/scripts/validate_migration_map.py --proposal migration-proposal.md --strict  # advisory
 ```
+
+**Guided / score structural check (M08):**
+
+```bash
+python3 packages/frameworks/kanban/scripts/score_kma_structure.py \
+  --tsp path/to/TARGET-EST-TREE.md \
+  --kanban-root docs/kanban \
+  --mode score_only --json score.json --markdown structural-score.md
+```
+
+Pass threshold: **≥ 0.85** weighted (`guided_pass` in rubric). Score mode performs **no file writes** beyond report outputs.
 
 Spot-check links, epic/story counts vs proposal, and dual-tree integrity (legacy mtime unchanged).
 

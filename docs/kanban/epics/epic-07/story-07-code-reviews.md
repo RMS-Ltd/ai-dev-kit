@@ -19,7 +19,7 @@ housekeeping_policy: keep
 
 ## Task Checklist
 
-- [x] **E07:S07:T01 – Comprehensive workflow machinery code review** - ✅ COMPLETE (v0.7.7.1+1 — machinery review report; 0 Critical / 3 High findings) ([FR-107](../../fr-br/FR-107-comprehensive-workflow-machinery-code-review.md))
+- [x] **E07:S07:T01 – Comprehensive workflow machinery code review** - ✅ COMPLETE (v0.7.7.1+1 — machinery review report; 0 Critical / 3 High findings) ([FR-107](../../fbu/FR-107-comprehensive-workflow-machinery-code-review.md))
   - Task Doc: [`T01-comprehensive-workflow-machinery-code-review.md`](story-07-code-reviews/T01-comprehensive-workflow-machinery-code-review.md)
   - IPP: [`IPP-E7S7T1-workflow-machinery-code-review.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/implementation-cycles/IPP-E7S7T1-workflow-machinery-code-review.md)
   - Report: [`T01-workflow-machinery-code-review-report.md`](story-07-code-reviews/T01-workflow-machinery-code-review-report.md)
@@ -29,7 +29,7 @@ housekeeping_policy: keep
   - IPP: [`IPP-E7S7T2-ci-pytest-gate-for-workflow-scripts.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/implementation-cycles/IPP-E7S7T2-ci-pytest-gate-for-workflow-scripts.md)
   - Source: [T01 report H1](story-07-code-reviews/T01-workflow-machinery-code-review-report.md)
 
-- [x] **E07:S07:T03 – Workflow validator slug path resolution ([BR-091](../../fr-br/BR-091-workflow-validator-legacy-workflow-mgt-path-hardcoded.md))** — ✅ COMPLETE (v0.7.7.3+1 — BR-091 **FIXED**; CI + local pytest verified)
+- [x] **E07:S07:T03 – Workflow validator slug path resolution ([BR-091](../../fbu/BR-091-workflow-validator-legacy-workflow-mgt-path-hardcoded.md))** — ✅ COMPLETE (v0.7.7.3+1 — BR-091 **FIXED**; CI + local pytest verified)
   - Task Doc: [`T03-workflow-validator-slug-path-resolution-br091.md`](story-07-code-reviews/T03-workflow-validator-slug-path-resolution-br091.md)
   - IPP: [`IPP-E7S7T3-workflow-validator-slug-path-resolution-br091.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/implementation-cycles/IPP-E7S7T3-workflow-validator-slug-path-resolution-br091.md)
 
@@ -46,7 +46,7 @@ Home for **subsystem code review execution** — one task per substantive review
 **Program model:**
 
 - **Story** — backlog of reviews and shared output contract (inventory, severity matrix, remediation handoff).
-- **Task** — one scoped review (analysis-only; implementation spawns follow-on tasks / FRs with IPP per [FR-083](../../fr-br/FR-083-global-ipw-gated-implementation-contract.md)).
+- **Task** — one scoped review (analysis-only; implementation spawns follow-on tasks / FRs with IPP per [FR-083](../../fbu/FR-083-global-ipw-gated-implementation-contract.md)).
 - **Domain RC stories** (e.g. [E02:S13](../epic-02/story-13-workflow-management-package-implementation-review.md)) may **consume** review outputs as sign-off gates without hosting the review task.
 
 ---

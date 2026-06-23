@@ -9,7 +9,7 @@ housekeeping_policy: keep
 # E06:S09:T20 — Planning: Spec, Tests, Implementation Plan (IPW)
 
 **Host Task:** [`T20-install-setup-error-code-registry-fr108.md`](../kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T20-install-setup-error-code-registry-fr108.md) **(E06:S09:T20)**  
-**Planning for:** [FR-108](../kanban/fr-br/FR-108-install-setup-error-code-registry-and-emission.md)  
+**Planning for:** [FR-108](../kanban/fbu/FR-108-install-setup-error-code-registry-and-emission.md)  
 **Status:** Implemented (**v0.6.9.20+1**)
 
 ---
@@ -151,7 +151,7 @@ Registry YAML is SoT; `adk_install_errors.py` loads and emits; installers call `
 
 ## References
 
-- [FR-108](../kanban/fr-br/FR-108-install-setup-error-code-registry-and-emission.md)
+- [FR-108](../kanban/fbu/FR-108-install-setup-error-code-registry-and-emission.md)
 - [ADR-016](../architecture/standards-and-adrs/ADR-016-install-setup-error-code-taxonomy.md)
-- [FR-078](../kanban/fr-br/FR-078-comprehensive-install-event-contract-logging-and-feedback-quality.md)
-- [FR-079](../kanban/fr-br/FR-079-install-feedback-submission-path-and-governance.md)
+- [FR-078](../kanban/fbu/FR-078-comprehensive-install-event-contract-logging-and-feedback-quality.md)
+- [FR-079](../kanban/fbu/FR-079-install-feedback-submission-path-and-governance.md)

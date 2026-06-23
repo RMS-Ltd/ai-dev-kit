@@ -1,0 +1,28 @@
+# Minimal TSP for guided KMA pytest fixture
+version: 1
+project: kma-guided-fixture
+reference_pack: tests/fixtures/kma-guided-tsp-minimal/
+
+dimensions:
+  unique_task_coverage:
+    weight: 0.25
+  epic_band_parity:
+    weight: 0.20
+  title_coverage:
+    weight: 0.15
+  story_filename_collision:
+    weight: 0.15
+  folder_alignment:
+    weight: 0.15
+  orphan_and_reserved:
+    weight: 0.10
+
+thresholds:
+  guided_pass: 0.85
+  guided_review: 0.75
+
+scoring_modes:
+  guided:
+    pass_threshold: 0.85
+  score_only:
+    pass_threshold: 0.85

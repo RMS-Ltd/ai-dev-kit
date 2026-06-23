@@ -38,4 +38,4 @@
 
 - [BR-086](../../kanban/fr-br/BR-086-rw-install-lowercase-fresh-kanban-patterns-signoff.md)
 - [E06:S09:T26](../../kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T26-starborn-legacy-adk-install-program.md)
-- SBL evidence: `starborn_legacy/logs/ai-dev-kit/install/attempt-05/`
+- SBL evidence: `adk-install-into-sbl/attempt-05/`

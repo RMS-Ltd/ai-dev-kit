@@ -101,7 +101,7 @@ $ python .../validate_version_bump.py --strict --requested E02:S13:T04 --art
 | RW Step 7 four-surface contract | FR-092 in live `.cursorrules` + portable excerpt; release-workflow README Step 7 | **ALIGNED** |
 | UKW bottom-up sync | UKW guide + `cursorrules-ukw-trigger-section.md` | **ALIGNED** |
 | Single active board (ADR-018) | `kanban_board: kboard.md`; `fbu_board` deprecated in schema | **ALIGNED** |
-| `fr_br_root` for intake | Live: `docs/kanban/fr-br` | **ALIGNED** |
+| `fbu_root` for intake | Live: `docs/kanban/fbu` | **ALIGNED** |
 | README Kanban at RW Step 4 | README §With Kanban Package: "Step 4" / "skip Step 4" | **PARTIAL** (I4) — live spec is Step 7 |
 
 **Evidence (V4):** `rw-config.yaml` lines 18–27 vs `config/rw-config-schema.md` Mode C example.
@@ -267,5 +267,5 @@ $ python .../validate_version_bump.py --strict --requested E02:S13:T04 --art
 - [T02 component inventory](component-inventory-map.md)
 - [rw-config-schema.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/config/rw-config-schema.md)
 - [framework-dependency-architecture.md](../../../../architecture/standards-and-adrs/framework-dependency-architecture.md)
-- [FR-092](../../../fr-br/FR-092-canonical-rw-ukw-kanban-consistency-program.md)
-- [FR-098](../../../fr-br/FR-098-ecc-optional-harness-layer-integration.md)
+- [FR-092](../../../fbu/FR-092-canonical-rw-ukw-kanban-consistency-program.md)
+- [FR-098](../../../fbu/FR-098-ecc-optional-harness-layer-integration.md)

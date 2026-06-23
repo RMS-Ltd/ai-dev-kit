@@ -15,7 +15,7 @@ housekeeping_policy: keep
 **Created:** 2026-03-25  
 **Last updated:** 2026-03-25 (v0.5.2.6+1 – RW)
 
-**Associated FR:** [FR-063](../../../fr-br/FR-063-cmw-epic-5-execution-context.md)
+**Associated FR:** [FR-063](../../../fbu/FR-063-cmw-epic-5-execution-context.md)
 
 ---
 
@@ -31,7 +31,7 @@ housekeeping_policy: keep
 
 ## Scope
 
-Implement [FR-063](../../../fr-br/FR-063-cmw-epic-5-execution-context.md): **document and enforce Epic 5 execution context for standalone Changelog Management Workflow (CMW)** so branch/`version.py` alignment matches **Release Workflow (RW)** branch safety, while **RW Step 9.5** continues to run CMW on the **active RW epic branch**.
+Implement [FR-063](../../../fbu/FR-063-cmw-epic-5-execution-context.md): **document and enforce Epic 5 execution context for standalone Changelog Management Workflow (CMW)** so branch/`version.py` alignment matches **Release Workflow (RW)** branch safety, while **RW Step 9.5** continues to run CMW on the **active RW epic branch**.
 
 **Includes:**
 
@@ -45,7 +45,7 @@ Implement [FR-063](../../../fr-br/FR-063-cmw-epic-5-execution-context.md): **doc
 
 ## Input
 
-- [FR-063](../../../fr-br/FR-063-cmw-epic-5-execution-context.md)
+- [FR-063](../../../fbu/FR-063-cmw-epic-5-execution-context.md)
 - `packages/frameworks/workflow-mgt/scripts/changelog/cmw.py`
 - `packages/frameworks/workflow-mgt/scripts/validation/validate_branch_context.py`
 - Epic 5 branch: `epic/5-documentation-management` ([epic-05.md](../epic-05.md))
@@ -83,5 +83,5 @@ Implement [FR-063](../../../fr-br/FR-063-cmw-epic-5-execution-context.md): **doc
 
 ## References
 
-- **FR-063:** [FR-063-cmw-epic-5-execution-context.md](../../../fr-br/FR-063-cmw-epic-5-execution-context.md)
+- **FR-063:** [FR-063-cmw-epic-5-execution-context.md](../../../fbu/FR-063-cmw-epic-5-execution-context.md)
 - **CMW perpetual task:** [T102 — CMW](../../epic-02/story-16-perpetual-ongoing-workflow-operations/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md)

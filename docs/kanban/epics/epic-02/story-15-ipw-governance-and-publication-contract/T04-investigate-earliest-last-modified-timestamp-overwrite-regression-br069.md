@@ -9,7 +9,7 @@ housekeeping_policy: keep
 # Epic 2, Story 15, Task 4: Investigate row-footer timestamp overwrite and task-ID multiplication regression (BR-069)
 
 **Task ID:** E02:S15:T04  
-**Status:** COMPLETE (structural); **forensic stamp truth REOPENED** via [FR-097](../../../fr-br/FR-097-board-stamp-authority-and-forensic-timestamp-recovery.md) / [E02:S15:T08](T08-board-stamp-authority-forensic-timestamp-recovery-fr097.md)  
+**Status:** COMPLETE (structural); **forensic stamp truth REOPENED** via [FR-097](../../../fbu/FR-097-board-stamp-authority-and-forensic-timestamp-recovery.md) / [E02:S15:T08](T08-board-stamp-authority-forensic-timestamp-recovery-fr097.md)  
 **Priority:** CRITICAL  
 **Estimated Effort:** Medium  
 **Created:** 2026-04-21  
@@ -17,7 +17,7 @@ housekeeping_policy: keep
 **Code:** E02S15T04
 **Version Anchor:** v0.2.15.4+4
 
-**Upstream:** [BR-069 – kboard earliest `Last modified` timestamps are being overwritten](../../../fr-br/BR-069-kboard-fbuboard-earliest-last-modified-timestamps-overwritten.md)
+**Upstream:** [BR-069 – kboard earliest `Last modified` timestamps are being overwritten](../../../fbu/BR-069-kboard-fbuboard-earliest-last-modified-timestamps-overwritten.md)
 
 **Planning artifact (IPP):** [IPP-E2S15T4 — BR-069 row-tail normalization and terminal timestamp interaction](../../../../implementation-cycles/IPP-E2S15T04-br069-row-tail-normalization-and-terminal-timestamp-interaction.md)
 
@@ -27,8 +27,8 @@ housekeeping_policy: keep
 
 - User report that earliest historical row timestamps appear to have been overwritten.
 - User report that task IDs are being multiplied on rows during board mutation/reconciliation flows.
-- Existing timestamp integrity stream: [UXR-009](../../../fr-br/UXR-009-last-modified-stamp-forensic-integrity-and-drift-protection.md), [E06:S07:T115](T08-board-stamp-authority-forensic-timestamp-recovery-fr097.md).
-- Existing governance hardening stream: [E02:S15:T03](T03-ipw-board-row-footer-duplication-validation-hardening-fr089.md), [FR-089](../../../fr-br/FR-089-ipw-board-row-footer-duplication-validation-hardening.md).
+- Existing timestamp integrity stream: [UXR-009](../../../fbu/UXR-009-last-modified-stamp-forensic-integrity-and-drift-protection.md), [E06:S07:T115](T08-board-stamp-authority-forensic-timestamp-recovery-fr097.md).
+- Existing governance hardening stream: [E02:S15:T03](T03-ipw-board-row-footer-duplication-validation-hardening-fr089.md), [FR-089](../../../fbu/FR-089-ipw-board-row-footer-duplication-validation-hardening.md).
 - Current board mutation logic in `update_kanban_docs.py`.
 
 ---
@@ -75,7 +75,7 @@ Additionally, row traceability fidelity requires exactly one canonical task-ID s
 ## References
 
 - [IPP-E2S15T4 — BR-069 row-tail normalization and terminal timestamp interaction](../../../../implementation-cycles/IPP-E2S15T04-br069-row-tail-normalization-and-terminal-timestamp-interaction.md)
-- [BR-069](../../../fr-br/BR-069-kboard-fbuboard-earliest-last-modified-timestamps-overwritten.md)
-- [UXR-009](../../../fr-br/UXR-009-last-modified-stamp-forensic-integrity-and-drift-protection.md)
-- [FR-089](../../../fr-br/FR-089-ipw-board-row-footer-duplication-validation-hardening.md)
+- [BR-069](../../../fbu/BR-069-kboard-fbuboard-earliest-last-modified-timestamps-overwritten.md)
+- [UXR-009](../../../fbu/UXR-009-last-modified-stamp-forensic-integrity-and-drift-protection.md)
+- [FR-089](../../../fbu/FR-089-ipw-board-row-footer-duplication-validation-hardening.md)
 - [E02:S15:T03](T03-ipw-board-row-footer-duplication-validation-hardening-fr089.md)

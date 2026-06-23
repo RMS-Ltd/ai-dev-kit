@@ -9,7 +9,7 @@ housekeeping_policy: keep
 # E21:S01:T05 — Planning: Config read and locale resolution (IPW)
 
 **Host Task:** [`T05-implement-configuration-persistence-ai-dev-kit-configyaml.md`](../project-management/kanban/epics/epic-21/story-01-language-selection-at-setup/T05-implement-configuration-persistence-ai-dev-kit-configyaml.md) **(E21:S01:T05)**  
-**Planning for:** [FR-006 Phase 1](../project-management/kanban/fr-br/FR-006-localization-language-selection-uk-us-english.md) · [IPP-E21S01T04](IPP-E21S01T04-ukus-content-variants-mvp.md)  
+**Planning for:** [FR-006 Phase 1](../project-management/kanban/fbu/FR-006-localization-language-selection-uk-us-english.md) · [IPP-E21S01T04](IPP-E21S01T04-ukus-content-variants-mvp.md)  
 **Status:** Complete — released `v0.21.1.5+1` (`RW E21:S01:T05 --art`)  
 **Branch:** `epic/21-internationalisation-localisation`
 

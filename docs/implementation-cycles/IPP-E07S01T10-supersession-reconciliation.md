@@ -9,7 +9,7 @@ housekeeping_policy: keep
 # E07:S01:T10 — Planning: Supersession Reconciliation (E02:S08:T08 delivery)
 
 **Host Task:** [`E07S01T10-enhanced-workflow-logging-system.md`](../kanban/epics/epic-07/story-01-codebase-maintenance-tasks/E07S01T10-enhanced-workflow-logging-system.md) **(E07:S01:T10)**  
-**Planning for:** [FR-059](../kanban/fr-br/FR-059-enhanced-workflow-logging-system.md)  
+**Planning for:** [FR-059](../kanban/fbu/FR-059-enhanced-workflow-logging-system.md)  
 **Status:** Complete — closure reconciliation executed 2026-06-10
 
 > **IPW (Implementation Planning Workflow):** This IPP plans the **closure reconciliation** of E07:S01:T10 (SUPERSEDED), whose FR-059 scope was delivered under [E02:S08:T08](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/kanban/epics/epic-02/story-08-harden-release-workflow-reliability/T08-enhanced-workflow-forensic-logging-and-rollback-hardening-fr-059.md) at `v0.2.8.8+3`. This is a documentation-only reconciliation — no code changes.
@@ -189,9 +189,9 @@ Criteria: [`ipw-adr-necessity-checklist.md`](../architecture/standards-and-adrs/
 
 ## References
 
-- [FR-059](../kanban/fr-br/FR-059-enhanced-workflow-logging-system.md)
+- [FR-059](../kanban/fbu/FR-059-enhanced-workflow-logging-system.md)
 - [E02:S08:T08 task doc](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/kanban/epics/epic-02/story-08-harden-release-workflow-reliability/T08-enhanced-workflow-forensic-logging-and-rollback-hardening-fr-059.md)
 - [IPP-E2S08T08](../implementation-cycles/IPP-E2S08T08-forensic-logging-rollback-fr059.md)
 - [ADR-008](../architecture/standards-and-adrs/ADR-008-workflow-forensic-logging-and-checkpoints.md)
 - [CHANGELOG v0.2.8.8+4](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.8.8%2B4.md)
-- [FR-042 IPW](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/kanban/fr-br/FR-042-implementation-planning-workflow-ipw.md)
+- [FR-042 IPW](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/kanban/fbu/FR-042-implementation-planning-workflow-ipw.md)

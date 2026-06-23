@@ -77,13 +77,13 @@ Document: `"UKW wired to perpetual task E{X}:S{Y}:T{Z}"`
 
 ### Step 2 — Analyze Recent Activity
 
-Run `git log --since="7 days ago" --oneline --all`. Parse commit messages for `E{X}:S{Y}:T{Z}` identifiers. Scan `{kanban_root}/fr-br/` for recently modified FR/BR/UXR files. Check `git status` for modified kanban files. Build activity summary mapping commits and FR/BR/UXRs to affected kanban documents.
+Run `git log --since="7 days ago" --oneline --all`. Parse commit messages for `E{X}:S{Y}:T{Z}` identifiers. Scan `{kanban_root}/fbu/` for recently modified FR/BR/UXR files. Check `git status` for modified kanban files. Build activity summary mapping commits and FR/BR/UXRs to affected kanban documents.
 
 ### Step 2.5 — Discover Board Gaps (Comprehensive only)
 
 **(a) TODO tasks not on board:** Scan all task documents for TODO/IN PROGRESS status. Cross-reference with the board's MoSCOW section. Add missing tasks to the board with an appropriate MoSCOW classification.
 
-**(b) Open FRs/BRs without tasks:** Scan `{kanban_root}/fr-br/` for docs with status `OPEN`, `PENDING`, `REOPENED`, `Proposed`, `IN PROGRESS`, or `INTAKE`. Cross-reference with board and story checklists. Present a formatted table of unlinked items to the user. Seek user intention: leave as is, or file tasks. If filing, create task docs per kanban governance and wire FR/BR ↔ task bidirectionally.
+**(b) Open FRs/BRs without tasks:** Scan `{kanban_root}/fbu/` for docs with status `OPEN`, `PENDING`, `REOPENED`, `Proposed`, `IN PROGRESS`, or `INTAKE`. Cross-reference with board and story checklists. Present a formatted table of unlinked items to the user. Seek user intention: leave as is, or file tasks. If filing, create task docs per kanban governance and wire FR/BR ↔ task bidirectionally.
 
 **Pause for user response on Part (b) before proceeding.**
 
@@ -176,7 +176,7 @@ Use `rw-config.yaml` values when present. Fallbacks:
 - Story docs: `docs/kanban/epics/Epic-{E}/Story-{S}-*.md`
 - Task docs: `docs/kanban/epics/Epic-{E}/Story-{S}/T{T}-*.md`
 - Kanban board: `docs/kanban/kboard.md`
-- FR/BR/UXR root: `docs/kanban/fr-br/`
+- FR/BR/UXR root: `docs/kanban/fbu/`
 - fbuboard: `docs/kanban/kboard.md`
 
 ---

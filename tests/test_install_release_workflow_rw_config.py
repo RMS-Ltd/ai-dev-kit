@@ -22,17 +22,17 @@ def _load_module():
 def _fresh_kanban_tree(root: Path, kanban: str = "docs/kanban") -> Path:
     epic1 = root / kanban / "epics" / "Epic-1" / "Epic-1.md"
     story1 = root / kanban / "epics" / "Epic-1" / "Story-009-greenfield.md"
-    fr_br = root / kanban / "fr-br"
+    fbu = root / kanban / "fbu"
     epic1.parent.mkdir(parents=True, exist_ok=True)
     epic1.write_text("# Epic 1", encoding="utf-8")
     story1.write_text("# Story", encoding="utf-8")
-    fr_br.mkdir(parents=True, exist_ok=True)
-    (fr_br / "BR-001.md").write_text("# BR", encoding="utf-8")
+    fbu.mkdir(parents=True, exist_ok=True)
+    (fbu / "BR-001.md").write_text("# BR", encoding="utf-8")
     (root / kanban / "kboard.md").write_text("# board", encoding="utf-8")
     return root
 
 
-def test_generate_rw_config_yaml_includes_task_and_fr_br():
+def test_generate_rw_config_yaml_includes_task_and_fbu_root():
     mod = _load_module()
     config = {
         "project_name": "test",
@@ -47,13 +47,13 @@ def test_generate_rw_config_yaml_includes_task_and_fr_br():
         "story_doc_pattern": mod.FRESH_KANBAN_STORY_PATTERN,
         "kanban_board": "kboard.md",
         "task_doc_pattern": mod.FRESH_KANBAN_TASK_PATTERN,
-        "fr_br_root": "docs/kanban/fr-br",
+        "fbu_root": "docs/kanban/fbu",
     }
     yaml_text = mod.generate_rw_config_yaml(config)
     assert "task_doc_pattern:" in yaml_text
     assert mod.FRESH_KANBAN_TASK_PATTERN in yaml_text
-    assert "fr_br_root:" in yaml_text
-    assert "docs/kanban/fr-br" in yaml_text
+    assert "fbu_root:" in yaml_text
+    assert "docs/kanban/fbu" in yaml_text
 
 
 def test_detect_kanban_supplementary_defaults_fresh_layout():
@@ -61,9 +61,9 @@ def test_detect_kanban_supplementary_defaults_fresh_layout():
     with tempfile.TemporaryDirectory() as tmp:
         root = _fresh_kanban_tree(Path(tmp))
         kanban = "docs/kanban"
-        task_pat, fr_br = mod.detect_kanban_supplementary_defaults(root, kanban)
+        task_pat, fbu = mod.detect_kanban_supplementary_defaults(root, kanban)
         assert task_pat == mod.FRESH_KANBAN_TASK_PATTERN
-        assert fr_br == "docs/kanban/fr-br"
+        assert fbu == "docs/kanban/fbu"
 
 
 def test_e2e_generated_config_epic_pattern_matches_files():
@@ -72,7 +72,7 @@ def test_e2e_generated_config_epic_pattern_matches_files():
         root = _fresh_kanban_tree(Path(tmp))
         kanban = "docs/kanban"
         epic_pat, story_pat, _ = mod.detect_kanban_doc_patterns(root, kanban)
-        task_pat, fr_br = mod.detect_kanban_supplementary_defaults(root, kanban)
+        task_pat, fbu = mod.detect_kanban_supplementary_defaults(root, kanban)
         config = {
             "project_name": "test",
             "version_file": "version.py",
@@ -87,8 +87,8 @@ def test_e2e_generated_config_epic_pattern_matches_files():
             "kanban_board": mod.detect_kanban_board_default(root, kanban),
             "task_doc_pattern": task_pat,
         }
-        if fr_br:
-            config["fr_br_root"] = fr_br
+        if fbu:
+            config["fbu_root"] = fbu
         yaml_text = mod.generate_rw_config_yaml(config)
         assert "task_doc_pattern:" in yaml_text
         count, _, err = mod.preview_pattern_matches(root, kanban, epic_pat)
@@ -378,4 +378,4 @@ def test_install_doc_lists_task_doc_pattern_in_post_kanban_snippet():
     text = INSTALL_DOC.read_text(encoding="utf-8")
     assert "Post-kanban RW install" in text
     assert "task_doc_pattern:" in text
-    assert "fr_br_root:" in text
+    assert "fbu_root:" in text

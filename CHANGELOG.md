@@ -11,6 +11,150 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.2.16.6+20] - 23-06-26
+
+E02:S16:T06 — **Change implemented:** Wave 12 Dependabot hygiene — `http-proxy-middleware@2.0.10` npm override (alert #10; Dependabot auto-update blocked by `webpack-dev-server` constraint). SemVer **v0.4.1212+20**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.16.6+20.md)
+
+---
+
+## [0.4.19.14+1] - 23-06-26
+
+E04:S19:T14 — **Change implemented:** Intake directory rename `fr-br/` → `fbu/`; `fbu_root` config key; ADR-032; framework read-compat and validator guard (UXR-032). SemVer **v0.4.1211+1**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.4.19.14+1.md)
+
+---
+
+## [0.5.2.7+2] - 23-06-26
+
+E05:S02:T07 — **Change implemented (FR-139):** Documentation governance strategy index (`documentation-governance-strategy.md`), § section-heading convention, `PLAN_DOC_TEMPLATE` alignment, legacy KB structure banner. SemVer **v0.4.1210+2**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.5.2.7+2.md)
+
+---
+
+## [0.5.2.7+1] - 23-06-26
+
+E05:S02:T07 — **Kanban update (FR-139):** § section-heading convention codified (F9/F10/AC6) in FR and task doc; IPW/implementation pending. SemVer **v0.4.1209+1**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.5.2.7+1.md)
+
+---
+
+## [0.5.2.7+0] - 23-06-26
+
+E05:S02:T07 — **Kanban-init (FR-139):** Unified documentation governance strategy intake — policy–SOP–template alignment index; composition doc under `docs/governance/standards/` (IPW before implementation). SemVer **v0.4.1208+0**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.5.2.7+0.md)
+
+---
+
+## [0.8.3.24+3] - 23-06-26
+
+E08:S03:T24 — **FR-138 Phase 2 (Wave 4):** CLI package test coverage hardening — aggregate **82%**, per-module targets met; floor **70%** retained in `cli-coverage` lane. SemVer **v0.4.1207**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.8.3.24+3.md)
+
+---
+
+## [0.7.1.14+0] - 23-06-26
+
+E07:S01:T14 — **Kanban-init (UXR-034):** Comprehensive repository file-level audit within audited directories — per-file valuation rubric paired with UXR-033; investigation-only. SemVer **v0.4.1206**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.7.1.14+0.md)
+
+---
+
+## [0.7.1.13+0] - 23-06-26
+
+E07:S01:T13 — **Kanban-init (UXR-033):** Comprehensive repository directory structure audit intake — whole-repo directory valuation rubric; investigation-only. SemVer **v0.4.1205**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.7.1.13+0.md)
+
+---
+
+## [0.8.3.24+2] - 23-06-26
+
+E08:S03:T24 — **Change implemented (FR-138):** CLI coverage closure waves completed; dedicated `cli/` gate now enforced at **≥70%** via `pytest-cli-cov.ini`. SemVer **v0.4.1204**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.8.3.24+2.md)
+
+---
+
+## [0.8.3.24+1] - 23-06-26
+
+E08:S03:T24 — **Kanban-init (FR-138):** CLI package test coverage gap closure intake — 54% baseline, ≥70% target, phased waves. SemVer **v0.4.1203**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.8.3.24+1.md)
+
+---
+
+## [0.3.2.15+2] - 23-06-26
+
+E03:S02:T15 — **SemVer core-only external display (ADR-031 Option A):** `external_display_semver()`; core-only commit subjects/README/changelog; coherence gate uses `semver_core`. SemVer **v0.4.1202**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.3.2.15+2.md)
+
+---
+
+## [0.2.16.5+12] - 17-06-26
+
+E02:S16:T05 — **Docusaurus CI fix (BR-068):** adk-feedback attempt 09–11 GitHub blob links; MDX-safe `{path}` in install-profile remediation. SemVer **v0.4.1200+12**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.16.5+12.md)
+
+---
+
+## [0.2.3.13+0] - 17-06-26
+
+E02:S03:T13 — **Kanban-init (FR-137):** MWF `delivery` RW intent preflight intake — early abort + `--art` hint contract. SemVer **v0.4.1199+0**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.3.13+0.md)
+
+---
+
+## [0.3.2.15+1] - 17-06-26
+
+E03:S02:T15 — **SemVer external `+BUILD` policy (UXR-031):** Option B — keep `+BUILD` in outward display; ordering = SemVer core; ADR-031 + policy memo + README/RW guide alignment. SemVer **v0.4.1198+1**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.3.2.15+1.md)
+
+---
+
+## [0.6.9.38+1] - 17-06-26
+
+E06:S09:T38 — **Guided install orchestrator (FR-135):** install profile + phases A–F, sqlite/UKW/ledgers/comprehension orchestration, Install RC extensions. SemVer **v0.4.1197+1**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.6.9.38+1.md)
+
+---
+
+## [0.6.9.39+1] - 17-06-26
+
+E06:S09:T39 — **Guided KMA Target Structure Pack (FR-136):** `kma_mode` blind/guided/score, TSP reference pack, structural scorer, collision + dedup helpers, pytest fixture replay. SemVer **v0.4.1196+1**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.6.9.39+1.md)
+
+---
+
+## [0.8.3.23+3] - 17-06-26
+
+E08:S03:T23 — **Forensic closure:** BR-110 attributed on filed task anchor (implementation @ v0.6.9.38+0); doc-init Step 1 staged-only guard. SemVer **v0.4.1195+3**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.8.3.23+3.md)
+
+---
+
+## [0.6.9.38+0] - 17-06-26
+
+E06:S09:T38 — **RW -k kanban init (`--art --dpz`):** FR-135 guided install orchestrator intake + BR-110 `--dpz` cross-task fix; attempt 11 maintainer prep. SemVer **v0.4.1194+0**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.6.9.38+0.md)
+
+---
+
 ## [0.2.16.6+19] - 16-06-26
 
 E02:S16:T06 Wave 11 — Standard findings burn-down (3 maintainability + 2 reliability). SemVer **v0.4.1193+19**.

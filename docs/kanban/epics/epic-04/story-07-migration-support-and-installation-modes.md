@@ -62,9 +62,9 @@ Provide safe adoption paths for projects with pre-existing Kanban/Sprint/Issue s
 
 ## References
 
-- BR-006: `docs/kanban/fr-br/BR-006-missing-migration-support-pre-existing-kanban.md`
-- FR-007: `docs/kanban/fr-br/FR-007-migration-utilities-and-installation-modes.md`
-- UXR-001 (inputs): `docs/kanban/fr-br/UXR-001-migration-user-experience-research.md`
+- BR-006: `docs/kanban/fbu/BR-006-missing-migration-support-pre-existing-kanban.md`
+- FR-007: `docs/kanban/fbu/FR-007-migration-utilities-and-installation-modes.md`
+- UXR-001 (inputs): `docs/kanban/fbu/UXR-001-migration-user-experience-research.md`
 
 ---
 

@@ -17,15 +17,15 @@ housekeeping_policy: keep
 **Version Anchor:** v0.6.9.32+1
 
 **Parent program:** [E06:S09:T26](T26-starborn-legacy-adk-install-program.md)  
-**Upstream:** [BR-108](../../../fr-br/BR-108-detect-existing-structure-zero-padded-epic-names.md) · triage **F23**
+**Upstream:** [BR-108](../../../fbu/BR-108-detect-existing-structure-zero-padded-epic-names.md) · triage **F23**
 
 ---
 
 ## Input
 
 - [IPP-E06S09T32](../../../../implementation-cycles/IPP-E06S09T32-detect-structure-zero-padded-epic-br108.md) (implementation plan)
-- [BR-108](../../../fr-br/BR-108-detect-existing-structure-zero-padded-epic-names.md)
-- SBL attempt 06: `starborn_legacy/logs/ai-dev-kit/install/attempt-06/feedback-package/kanban-migration-experiment-report.md`
+- [BR-108](../../../fbu/BR-108-detect-existing-structure-zero-padded-epic-names.md)
+- SBL attempt 06: `adk-install-into-sbl/attempt-06/feedback-package/kanban-migration-experiment-report.md`
 
 ## References
 

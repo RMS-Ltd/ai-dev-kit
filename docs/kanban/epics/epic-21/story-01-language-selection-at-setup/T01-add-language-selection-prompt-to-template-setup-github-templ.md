@@ -34,7 +34,7 @@ Document UK/US English language selection as **Step 0** in the GitHub-template p
 ## Input
 
 - GitHub template setup process ([post-template guide](../../../../documentation/user-docs/framework-dependency-post-template-setup-guide.md))
-- [FR-006](../../../fr-br/FR-006-localization-language-selection-uk-us-english.md) Phase 1 requirements
+- [FR-006](../../../fbu/FR-006-localization-language-selection-uk-us-english.md) Phase 1 requirements
 - [IPP-E21S01T01](../../../../implementation-cycles/IPP-E21S01T01-template-language-selection-github.md)
 
 ---
@@ -94,7 +94,7 @@ Document UK/US English language selection as **Step 0** in the GitHub-template p
 ## References
 
 - [IPP-E21S01T01](../../../../implementation-cycles/IPP-E21S01T01-template-language-selection-github.md)
-- [FR-006](../../../fr-br/FR-006-localization-language-selection-uk-us-english.md)
+- [FR-006](../../../fbu/FR-006-localization-language-selection-uk-us-english.md)
 - [story-01-language-selection-at-setup.md](../story-01-language-selection-at-setup.md)
 - [Post-Template Setup Guide](../../../../documentation/user-docs/framework-dependency-post-template-setup-guide.md)
 - [ai-dev-kit-config.example.yaml](../../../../../../packages/frameworks/workflow-mgt/config/examples/ai-dev-kit-config.example.yaml)

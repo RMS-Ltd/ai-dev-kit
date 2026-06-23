@@ -19,7 +19,7 @@ housekeeping_policy: keep
 
 **Scope:** Resolve CodeQL **actions/missing-workflow-permissions** alerts #1–#3 by adding explicit least-privilege `permissions` blocks to affected workflows.
 
-**Upstream:** [BR-098 — CodeQL missing workflow permissions](../../../fr-br/BR-098-codeql-missing-workflow-permissions.md)
+**Upstream:** [BR-098 — CodeQL missing workflow permissions](../../../fbu/BR-098-codeql-missing-workflow-permissions.md)
 
 Publication Status: NOT_APPLICABLE
 
@@ -27,7 +27,7 @@ Publication Status: NOT_APPLICABLE
 
 ## Input
 
-- [BR-098](../../../fr-br/BR-098-codeql-missing-workflow-permissions.md)
+- [BR-098](../../../fbu/BR-098-codeql-missing-workflow-permissions.md)
 - [CodeQL alert #1](https://github.com/RMS-Ltd/ai-dev-kit/security/code-scanning/1) — `tests.yml`
 - [CodeQL alert #2](https://github.com/RMS-Ltd/ai-dev-kit/security/code-scanning/2) — `docusaurus-build.yml`
 - [CodeQL alert #3](https://github.com/RMS-Ltd/ai-dev-kit/security/code-scanning/3) — `workflow-scripts-pytest.yml`
@@ -56,7 +56,7 @@ Publication Status: NOT_APPLICABLE
 
 ## References
 
-- [BR-098](../../../fr-br/BR-098-codeql-missing-workflow-permissions.md)
-- [BR-094](../../../fr-br/BR-094-codeql-git-tag-handler-syntax-error.md)
-- [BR-095](../../../fr-br/BR-095-codeql-insecure-temporary-file-mktemp.md)
-- [BR-096](../../../fr-br/BR-096-codeql-incomplete-url-substring-sanitization.md)
+- [BR-098](../../../fbu/BR-098-codeql-missing-workflow-permissions.md)
+- [BR-094](../../../fbu/BR-094-codeql-git-tag-handler-syntax-error.md)
+- [BR-095](../../../fbu/BR-095-codeql-insecure-temporary-file-mktemp.md)
+- [BR-096](../../../fbu/BR-096-codeql-incomplete-url-substring-sanitization.md)

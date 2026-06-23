@@ -14,7 +14,7 @@ housekeeping_policy: keep
 **Method:** Official greenfield path — [INSTALL_IN_YOUR_PROJECT.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/INSTALL_IN_YOUR_PROJECT.md)  
 **ADK release pin:** `v0.4.1063` (2026-06-08)  
 **Install log:** `logs/ai-dev-kit/install/session.log` (`AI_DEV_KIT_INSTALL_LOG_PATH`)  
-**UXR:** [UXR-025](../../../kanban/fr-br/UXR-025-starborn-legacy-greenfield-install-diary.md) · **Task:** [E06:S09:T25](../../../kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T25-starborn-legacy-greenfield-install-diary-triage-uxr025.md)
+**UXR:** [UXR-025](../../../kanban/fbu/UXR-025-starborn-legacy-greenfield-install-diary.md) · **Task:** [E06:S09:T25](../../../kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T25-starborn-legacy-greenfield-install-diary-triage-uxr025.md)
 
 ---
 
@@ -266,7 +266,7 @@ Installer contract checks (BR-084, UXR-017, etc.) passed for the **greenfield ex
 Attempt 3 ran on SBL with **Option A** (RW-only) then a manual dual-tree sequence for migration-test prep. Maintainer intake:
 
 - [Attempt 03 index](../../../../adk-install-into-sbl/attempt-03/README.md)
-- FR-079 feedback package: SBL `starborn_legacy/logs/ai-dev-kit/install/attempt-03/feedback-package/SUBMISSION.md`
+- FR-079 feedback package: SBL `adk-install-into-sbl/attempt-03/feedback-package/SUBMISSION.md`
 - [Triage matrix F10–F17](starborn-legacy-install-triage-matrix.md) — **F9 upgraded to BLOCKER**
 
 **Outcome:** Dual kanban test bed succeeded; SBL → ADK Kanban v3.2 migration test **blocked** (v1 catalog installed again).

@@ -127,8 +127,8 @@ All tasks complete:
 ## References
 
 - **E4:S11:** `docs/kanban/epics/epic-04/story-11-kanban-granularity-discrete-task-docs.md` (Kanban-specific work)
-- **FR-016:** `docs/kanban/fr-br/FR-016-kanban-granularity-discrete-task-docs.md`
-- **FR-017:** `docs/kanban/fr-br/FR-017-versioning-policy-hardening-doc-init-build.md`
+- **FR-016:** `docs/kanban/fbu/FR-016-kanban-granularity-discrete-task-docs.md`
+- **FR-017:** `docs/kanban/fbu/FR-017-versioning-policy-hardening-doc-init-build.md`
 - **RW Agent Execution Guide:** `packages/frameworks/workflow-mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md`
 - **Validation Scripts:** `packages/frameworks/workflow-mgt/scripts/validation/`
 

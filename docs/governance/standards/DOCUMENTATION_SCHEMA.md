@@ -43,7 +43,7 @@ docs/
 ├── kanban/                    # Workflow SoT — single active root (ADR-018)
 │   ├── kboard.md              # Sole active MoSCOW board
 │   ├── epics/                 # Lowercase padded paths (UXR-014)
-│   └── fr-br/                 # FR / BR / UXR intake
+│   └── fbu/                 # FR / BR / UXR intake
 ├── governance/                # Host policies + adopted ADK standards (optional mirror)
 ├── guides/                    # Adopter-public guides (portal allowlist when used)
 ├── changelog-and-release-notes/

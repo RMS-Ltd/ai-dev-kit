@@ -108,4 +108,4 @@ pytest -m fr006
 - [ADR-024](../../architecture/standards-and-adrs/ADR-024-i18n-framework-strategy.md)
 - [IPP-E21S02T03](../../implementation-cycles/IPP-E21S02T03-locale-detection.md)
 - [locale-formatting-conventions.md](locale-formatting-conventions.md) (E21:S02:T05)
-- [FR-006](../../project-management/kanban/fr-br/FR-006-localization-language-selection-uk-us-english.md)
+- [FR-006](../../project-management/kanban/fbu/FR-006-localization-language-selection-uk-us-english.md)

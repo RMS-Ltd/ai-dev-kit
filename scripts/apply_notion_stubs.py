@@ -20,7 +20,7 @@ DOCS = REPO_ROOT / "docs"
 MANIFEST_PATH = DOCS / "knowledge" / "fr114-notion-migration-manifest.json"
 FR114_LINK = (
     "https://github.com/RMS-Ltd/ai-dev-kit/blob/main/"
-    "docs/kanban/fr-br/"
+    "docs/kanban/fbu/"
     "FR-114-split-documentation-surfaces-docusaurus-public-notion-maintainer-kb.md"
 )
 

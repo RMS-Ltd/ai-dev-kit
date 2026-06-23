@@ -78,7 +78,91 @@ __all__ = [
     "FRESH_EPIC_PATTERNS",
     "FRESH_STORY_PATTERNS",
     "FRESH_TASK_PATTERNS",
+    "DEFAULT_FBU_SUBDIR",
+    "LEGACY_FR_BR_SUBDIR",
+    "resolve_fbu_root_path",
+    "resolve_fbu_root_config_relative",
+    "config_fbu_root_key",
+    "config_fbu_root_relative",
 ]
+
+# --- FBU intake directory (UXR-032 / ADR-032) ---
+
+DEFAULT_FBU_SUBDIR = "fbu"
+LEGACY_FR_BR_SUBDIR = "fr-br"
+
+# Deprecated alias for transition callers
+DEFAULT_FR_BR_SUBDIR = LEGACY_FR_BR_SUBDIR
+
+
+def _normalize_kanban_root(kanban_root: str) -> str:
+    return kanban_root.replace("\\", "/").strip("/")
+
+
+def _fbu_dir_exists(project_root: Path, kanban_root: str, subdir: str) -> bool:
+    return (project_root / kanban_root / subdir).resolve().is_dir()
+
+
+def resolve_fbu_root_config_relative(project_root: Path, kanban_root: str) -> Optional[str]:
+    """
+    Detect project-root-relative FBU intake path for rw-config emit.
+
+    Write-default: ``{kanban_root}/fbu``. Read-tolerance: legacy ``fr-br``.
+    """
+    kn = _normalize_kanban_root(kanban_root)
+    if _fbu_dir_exists(project_root, kn, DEFAULT_FBU_SUBDIR):
+        return f"{kn}/{DEFAULT_FBU_SUBDIR}"
+    if _fbu_dir_exists(project_root, kn, LEGACY_FR_BR_SUBDIR):
+        return f"{kn}/{LEGACY_FR_BR_SUBDIR}"
+    return None
+
+
+def config_fbu_root_key(config: Optional[dict]) -> Optional[str]:
+    """Return rw-config value for FBU root (``fbu_root`` preferred, ``fbu_root`` legacy)."""
+    if not config:
+        return None
+    for key in ("fbu_root", "fbu_root"):
+        val = config.get(key)
+        if val:
+            return str(val).replace("\\", "/")
+    return None
+
+
+def resolve_fbu_root_path(
+    project_root: Path,
+    kanban_root: str,
+    config: Optional[dict] = None,
+) -> Optional[Path]:
+    """
+    Resolve absolute path to FBU intake directory.
+
+    Order: config ``fbu_root`` / ``fbu_root`` (if dir exists) → on-disk ``fbu/`` → ``fbu/``.
+    """
+    kn = _normalize_kanban_root(kanban_root)
+    configured = config_fbu_root_key(config)
+    if configured:
+        candidate = (project_root / configured).resolve()
+        if candidate.is_dir():
+            return candidate
+    if _fbu_dir_exists(project_root, kn, DEFAULT_FBU_SUBDIR):
+        return (project_root / kn / DEFAULT_FBU_SUBDIR).resolve()
+    if _fbu_dir_exists(project_root, kn, LEGACY_FR_BR_SUBDIR):
+        return (project_root / kn / LEGACY_FR_BR_SUBDIR).resolve()
+    return None
+
+
+def config_fbu_root_relative(
+    project_root: Path,
+    kanban_root: str,
+    config: Optional[dict] = None,
+) -> Optional[str]:
+    """Project-root-relative FBU path string from config or on-disk detection."""
+    configured = config_fbu_root_key(config)
+    if configured:
+        candidate = (project_root / configured).resolve()
+        if candidate.is_dir():
+            return configured
+    return resolve_fbu_root_config_relative(project_root, kanban_root)
 
 EPIC_DIR_PREFIX = "epic-"
 EPIC_FILE_PREFIX = "epic-"

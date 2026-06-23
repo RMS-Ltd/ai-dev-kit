@@ -32,7 +32,7 @@ Author an ADR defining the **layered** ADK accessibility programme: Layer 0–5 
 
 ## Input
 
-- [FR-115](../../../../fr-br/FR-115-accessibility-standards-compatibility.md)
+- [FR-115](../../../../fbu/FR-115-accessibility-standards-compatibility.md)
 - [T01 baseline audit](../../../../../knowledge/analysis/adk-accessibility-baseline-layer1-cli.md)
 - [IPP-E21S08T01](../../../../../implementation-cycles/IPP-E21S08T01-accessibility-layered-cli-first.md)
 
@@ -74,4 +74,4 @@ Author an ADR defining the **layered** ADK accessibility programme: Layer 0–5 
 
 - [ADR-025](../../../../architecture/standards-and-adrs/ADR-025-layered-accessibility-strategy.md)
 - [Baseline audit](../../../../../knowledge/analysis/adk-accessibility-baseline-layer1-cli.md)
-- [FR-115](../../../../fr-br/FR-115-accessibility-standards-compatibility.md)
+- [FR-115](../../../../fbu/FR-115-accessibility-standards-compatibility.md)

@@ -35,4 +35,4 @@ Repeat for `numbering-versioning-*.tar.gz` if published.
 ## Adopter verification
 
 - Submodule checkout of `main` → `ls packages/frameworks/` shows slug names only.
-- Expenses Tracker replay documented in [BR-087](../kanban/fr-br/BR-087-framework-install-directory-slug-mismatch.md).
+- Expenses Tracker replay documented in [BR-087](../kanban/fbu/BR-087-framework-install-directory-slug-mismatch.md).

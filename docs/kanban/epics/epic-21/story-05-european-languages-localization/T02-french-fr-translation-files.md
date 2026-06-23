@@ -15,7 +15,7 @@ housekeeping_policy: keep
 **Version:** v0.21.5.2+2
 **Code:** E21S05T02
 
-**Associated FR:** [FR-006](../../../fr-br/FR-006-localization-language-selection-uk-us-english.md) (Phase 2)
+**Associated FR:** [FR-006](../../../fbu/FR-006-localization-language-selection-uk-us-english.md) (Phase 2)
 
 ---
 
@@ -73,12 +73,12 @@ Create and review French (`fr` / `locales/fr/`) translation files for priority u
 RW -k E21:S05:T02 --art --dpz
 ```
 
-**Target version anchor:** `v0.21.5.2+0` (doc-init BUILD +0 per [BR-067](../../../fr-br/BR-067-rw-first-doc-only-release-defaults-to-build-plus-one-not-plus-zero.md)).
+**Target version anchor:** `v0.21.5.2+0` (doc-init BUILD +0 per [BR-067](../../../fbu/BR-067-rw-first-doc-only-release-defaults-to-build-plus-one-not-plus-zero.md)).
 
 ## References
 
 - [IPP-E21S05T02 — French (fr) translation files (FR-006)](../../../../implementation-cycles/IPP-E21S05T02-french-fr-translation-files.md)
-- [FR-006](../../../fr-br/FR-006-localization-language-selection-uk-us-english.md)
+- [FR-006](../../../fbu/FR-006-localization-language-selection-uk-us-english.md)
 - [locale-rollout-matrix.md](../../../../governance/standards/locale-rollout-matrix.md)
 - [locale-cultural-requirements.md](../../../../governance/standards/locale-cultural-requirements.md) § French (fr)
 - [translation-workflow-and-review.md](../../../../governance/standards/translation-workflow-and-review.md)

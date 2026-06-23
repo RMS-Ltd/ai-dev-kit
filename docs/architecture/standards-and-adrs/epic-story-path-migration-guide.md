@@ -113,5 +113,5 @@ Until migration completes, framework scripts accept both casings via `kanban_pat
 ## References
 
 - [ADR-015](ADR-015-kanban-epic-story-path-lowercase-convention.md)
-- [UXR-017](../../kanban/fr-br/UXR-017-kanban-epic-story-path-lowercase-naming.md)
+- [UXR-017](../../kanban/fbu/UXR-017-kanban-epic-story-path-lowercase-naming.md)
 - `packages/frameworks/kanban/scripts/kanban_paths.py`

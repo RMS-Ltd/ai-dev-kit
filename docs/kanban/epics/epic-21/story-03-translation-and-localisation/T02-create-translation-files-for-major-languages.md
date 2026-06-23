@@ -84,7 +84,7 @@ Create translation files for major target languages (rollout matrix). **T02 deli
 - [locale-rollout-matrix.md](../../../../governance/standards/locale-rollout-matrix.md)
 - [translatable-content-registry.yaml](../../../../governance/standards/translatable-content-registry.yaml)
 - [scaffold_locale_trees.py](../../../../../packages/frameworks/workflow-mgt/scripts/scaffold_locale_trees.py)
-- [FR-006](../../../fr-br/FR-006-localization-language-selection-uk-us-english.md)
+- [FR-006](../../../fbu/FR-006-localization-language-selection-uk-us-english.md)
 
 ---
 

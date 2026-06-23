@@ -8,7 +8,7 @@ housekeeping_policy: keep
 
 # E09:S01:T03 — FR-032.3 Gap Comparison Report (RC=0 → RC=1)
 
-**Task:** [E09:S01:T03](T03-gap-analysis-fr032.md) · **FR:** [FR-032](../../../fr-br/FR-032-release-candidate-readiness-gap-analysis.md)  
+**Task:** [E09:S01:T03](T03-gap-analysis-fr032.md) · **FR:** [FR-032](../../../fbu/FR-032-release-candidate-readiness-gap-analysis.md)  
 **Snapshot:** 2026-06-04 UTC  
 **IPP:** [IPP-E9S1T3](../../../../implementation-cycles/IPP-E09S01T03-gap-comparison-fr032.md)
 

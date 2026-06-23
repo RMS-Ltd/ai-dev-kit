@@ -7,7 +7,7 @@ housekeeping_policy: keep
 # ADK install comprehension (copy to repo root as `COMPREHENSION.md`)
 
 **Purpose:** Install RC evidence — states what ran, what did **not** run, and migration depth achieved.  
-**Template:** [COMPREHENSION_TEMPLATE.md](COMPREHENSION_TEMPLATE.md) (workflow-mgt) · [FR-133](../../../docs/kanban/fr-br/FR-133-kanban-migration-depth-rationalization-adopter-guide.md)
+**Template:** [COMPREHENSION_TEMPLATE.md](COMPREHENSION_TEMPLATE.md) (workflow-mgt) · [FR-133](../../../docs/kanban/fbu/FR-133-kanban-migration-depth-rationalization-adopter-guide.md)
 
 > Copy this file to your repository root as `COMPREHENSION.md` and fill every section before Install RC.
 

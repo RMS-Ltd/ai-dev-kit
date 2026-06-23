@@ -16,23 +16,23 @@ housekeeping_policy: keep
 **Code:** E06S09T31
 
 **Parent program:** [E06:S09:T26](T26-starborn-legacy-adk-install-program.md)  
-**Upstream:** [FR-127](../../../fr-br/FR-127-agentic-kanban-migration-agent-replace-tool-pipeline.md) · triage **F22**
+**Upstream:** [FR-127](../../../fbu/FR-127-agentic-kanban-migration-agent-replace-tool-pipeline.md) · triage **F22**
 
 ---
 
 ## Input
 
-- [FR-127](../../../fr-br/FR-127-agentic-kanban-migration-agent-replace-tool-pipeline.md)
+- [FR-127](../../../fbu/FR-127-agentic-kanban-migration-agent-replace-tool-pipeline.md)
 - **[IPP-E06S09T31](../../../../implementation-cycles/IPP-E06S09T31-agentic-kanban-migration-agent-fr127.md)** — consolidated implementation plan (IPW 2026-06-12)
-- SBL attempt 06: `starborn_legacy/logs/ai-dev-kit/install/attempt-06/feedback-package/kanban-migration-experiment-report.md`
+- SBL attempt 06: `adk-install-into-sbl/attempt-06/feedback-package/kanban-migration-experiment-report.md`
 - Reference artifacts: `…/kboard-template-v3dot2.md`, `…/kboard-populated-example.md`
 
 ## References
 
 - [IPP-E06S09T31](../../../../implementation-cycles/IPP-E06S09T31-agentic-kanban-migration-agent-fr127.md) — spec, tests, implementation plan (§1–§7)
-- [FR-127](../../../fr-br/FR-127-agentic-kanban-migration-agent-replace-tool-pipeline.md)
+- [FR-127](../../../fbu/FR-127-agentic-kanban-migration-agent-replace-tool-pipeline.md)
 - [E06:S09:T26](T26-starborn-legacy-adk-install-program.md) — parent program (attempt 06 evidence)
-- [FR-081](../../../fr-br/FR-081-brownfield-modular-adopter-integration.md) · [ADR-003](../../../../architecture/standards-and-adrs/ADR-003-greenfield-vs-brownfield-adoption.md)
+- [FR-081](../../../fbu/FR-081-brownfield-modular-adopter-integration.md) · [ADR-003](../../../../architecture/standards-and-adrs/ADR-003-greenfield-vs-brownfield-adoption.md)
 - [adk-install-into-sbl/attempt-06/README.md](../../../../../../adk-install-into-sbl/attempt-06/README.md)
 
 ---
@@ -56,4 +56,4 @@ Design and deliver an agentic kanban migration workflow replacing the `detect→
 - [x] **AC1:** Agent workflow documented with operator review gate (`kanban-migration-agent-execution.md`, `kma.md`).
 - [x] **AC2:** SBL-style corpus — `tests/fixtures/sbl-legacy-kanban-minimal/` + replay tests.
 - [x] **AC3:** Migration modes gated; deprecation guide + INSTALL KMA section.
-- [x] **AC4:** SBL kboard template → packaged `KANBAN_BOARD_TEMPLATE.md` v2.2.0 via [UXR-028](../../../fr-br/UXR-028-kboard-v3dot2-packaged-template-alignment.md) / [E04:S19:T13](../../epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T13-kboard-v3dot2-packaged-template-uxr028.md). Populated example (R6) remains optional stretch on T13.
+- [x] **AC4:** SBL kboard template → packaged `KANBAN_BOARD_TEMPLATE.md` v2.2.0 via [UXR-028](../../../fbu/UXR-028-kboard-v3dot2-packaged-template-alignment.md) / [E04:S19:T13](../../epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T13-kboard-v3dot2-packaged-template-uxr028.md). Populated example (R6) remains optional stretch on T13.

@@ -8,7 +8,7 @@ housekeeping_policy: keep
 
 # RW Architectural Contract
 
-**Authority:** [ADR-027](../../../docs/architecture/standards-and-adrs/ADR-027-rw-release-transaction-contract.md) · [FR-122](../../../docs/kanban/fr-br/FR-122-release-workflow-architectural-contract-release-transaction.md) · [IPP-E02S01T30](../../../docs/implementation-cycles/IPP-E02S01T30-rw-architectural-contract-release-transaction.md)  
+**Authority:** [ADR-027](../../../docs/architecture/standards-and-adrs/ADR-027-rw-release-transaction-contract.md) · [FR-122](../../../docs/kanban/fbu/FR-122-release-workflow-architectural-contract-release-transaction.md) · [IPP-E02S01T30](../../../docs/implementation-cycles/IPP-E02S01T30-rw-architectural-contract-release-transaction.md)  
 **Gap matrix:** [rw-contract-gap-matrix.md](../../../docs/knowledge/analysis/rw-contract-gap-matrix.md)  
 **Machine manifest (Wave 4):** [`rw-contract.yaml`](../rw-contract.yaml)
 
@@ -16,7 +16,7 @@ housekeeping_policy: keep
 
 ## What is a release?
 
-A **release** is an atomic transaction that publishes one forensic version anchor (`RC.EPIC.STORY.TASK+BUILD`) with mutually consistent outward surfaces. A release **succeeds** only when all blocking gates pass; otherwise RW ends in **RW ABORTED** with no commit (or no tag if commit already made — recovery = new BUILD + re-RW per [BR-097](../../../docs/kanban/fr-br/BR-097-rw-agent-reuses-tagged-build-and-force-moves-release-tags.md)).
+A **release** is an atomic transaction that publishes one forensic version anchor (`RC.EPIC.STORY.TASK+BUILD`) with mutually consistent outward surfaces. A release **succeeds** only when all blocking gates pass; otherwise RW ends in **RW ABORTED** with no commit (or no tag if commit already made — recovery = new BUILD + re-RW per [BR-097](../../../docs/kanban/fbu/BR-097-rw-agent-reuses-tagged-build-and-force-moves-release-tags.md)).
 
 ### Release tuple (invariant I1)
 
@@ -28,7 +28,7 @@ On success, all fields must be present:
 | `semver_full` | SAA allocator + `semver_converter.py` |
 | `commit_sha` | Git commit from Step 10 |
 | `tags[]` | `create_rw_tags()` output (internal + SemVer core per strategy) |
-| `four_surface_report` | RW Step 7 reconciliation report ([FR-092](../../../docs/kanban/fr-br/FR-092-canonical-rw-ukw-kanban-consistency-program.md)) |
+| `four_surface_report` | RW Step 7 reconciliation report ([FR-092](../../../docs/kanban/fbu/FR-092-canonical-rw-ukw-kanban-consistency-program.md)) |
 
 ---
 

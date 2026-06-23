@@ -22,7 +22,7 @@ Publication Status: NOT_APPLICABLE
 
 ## Associated FR
 
-- [FR-121 — Git-internal maintainer KB (OSS documentation surfaces)](../../../fr-br/FR-121-git-internal-maintainer-kb-oss-documentation-surfaces.md)
+- [FR-121 — Git-internal maintainer KB (OSS documentation surfaces)](../../../fbu/FR-121-git-internal-maintainer-kb-oss-documentation-surfaces.md)
 
 ---
 
@@ -35,7 +35,7 @@ Wave 1 of FR-121: export Notion maintainer pages and restore **full markdown** a
 ## Input
 
 - [IPP-E05S08T05 — Reverse Notion migration (FR-121 wave 1)](../../../../implementation-cycles/IPP-E05S08T05-reverse-notion-migration-git-internal-maintainer-kb-fr121.md)
-- [FR-121](../../../fr-br/FR-121-git-internal-maintainer-kb-oss-documentation-surfaces.md)
+- [FR-121](../../../fbu/FR-121-git-internal-maintainer-kb-oss-documentation-surfaces.md)
 - [`fr114-notion-migration-manifest.json`](../../../../knowledge/fr114-notion-migration-manifest.json) (218 entries)
 - Notion Engineering KB (`rw-config.yaml` → `notion_kb_url`) — export source until decommissioned
 - Existing scripts: `scripts/notion_migration_manifest.py`, `scripts/apply_notion_stubs.py` (reference / extend or successor)
@@ -72,7 +72,7 @@ Wave 1 of FR-121: export Notion maintainer pages and restore **full markdown** a
 ## References
 
 - [IPP-E05S08T05 — Reverse Notion migration (FR-121 wave 1)](../../../../implementation-cycles/IPP-E05S08T05-reverse-notion-migration-git-internal-maintainer-kb-fr121.md)
-- [FR-121](../../../fr-br/FR-121-git-internal-maintainer-kb-oss-documentation-surfaces.md)
-- [FR-114](../../../fr-br/FR-114-split-documentation-surfaces-docusaurus-public-notion-maintainer-kb.md)
+- [FR-121](../../../fbu/FR-121-git-internal-maintainer-kb-oss-documentation-surfaces.md)
+- [FR-114](../../../fbu/FR-114-split-documentation-surfaces-docusaurus-public-notion-maintainer-kb.md)
 - [E05:S08:T03](T03-big-bang-notion-migration-maintainer-kb-fr114.md)
 - [ADR-024](../../../../architecture/standards-and-adrs/ADR-024-documentation-surfaces-three-surface-model-fr114.md)

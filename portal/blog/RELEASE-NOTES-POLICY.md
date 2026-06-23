@@ -3,7 +3,7 @@
 {/* truncate */}
 
 **Status:** Scaffold — no curated posts until first RC public milestone.  
-**Authority:** [FR-114](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/kanban/fr-br/FR-114-split-documentation-surfaces-docusaurus-public-notion-maintainer-kb.md) (F6) · [E05:S09:T15](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/kanban/epics/epic-05/story-09-docusaurus-documentation-portal/T15-docusaurus-adopter-public-publish-allowlist-fr114.md)
+**Authority:** [FR-114](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/kanban/fbu/FR-114-split-documentation-surfaces-docusaurus-public-notion-maintainer-kb.md) (F6) · [E05:S09:T15](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/kanban/epics/epic-05/story-09-docusaurus-documentation-portal/T15-docusaurus-adopter-public-publish-allowlist-fr114.md)
 
 ## Rules
 

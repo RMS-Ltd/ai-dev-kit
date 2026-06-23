@@ -143,7 +143,7 @@ Set up i18n infrastructure and framework for broader language support beyond UK/
 **Goal:**  
 Layered accessibility programme per ADR-025; CLI-first delivery (Layers 0–1 complete; Layers 2–5 deferred).
 
-**Tasks:** T01–T03 COMPLETE; T04–T07 DEFERRED — see [`story-08-accessibility.md`](story-08-accessibility.md) · [FR-115](../../fr-br/FR-115-accessibility-standards-compatibility.md)
+**Tasks:** T01–T03 COMPLETE; T04–T07 DEFERRED — see [`story-08-accessibility.md`](story-08-accessibility.md) · [FR-115](../../fbu/FR-115-accessibility-standards-compatibility.md)
 
 ---
 
@@ -187,7 +187,7 @@ Adapt content and features for different cultures and regions.
 
 ## Kanban-init intake (`RW -k`)
 
-Run **on branch** `epic/21-internationalisation-localisation` — one task per release. Each command adopts the task as version anchor (`--art`) with doc-init BUILD +0 (`--dpz`; [BR-067](../../fr-br/BR-067-rw-first-doc-only-release-defaults-to-build-plus-one-not-plus-zero.md)).
+Run **on branch** `epic/21-internationalisation-localisation` — one task per release. Each command adopts the task as version anchor (`--art`) with doc-init BUILD +0 (`--dpz`; [BR-067](../../fbu/BR-067-rw-first-doc-only-release-defaults-to-build-plus-one-not-plus-zero.md)).
 
 ### E21:S01 — Language selection at setup
 
@@ -298,8 +298,8 @@ Per-task triggers are also recorded in each task doc under **Kanban-init intake*
 ## References
 
 - `packages/frameworks/kanban/templates/COMPREHENSIVE_CANONICAL_EST_STRUCTURE.md` - Epic 21 canonical definition
-- `docs/kanban/fr-br/FR-006-localization-language-selection-uk-us-english.md` - Feature request
-- `docs/kanban/fr-br/FR-115-accessibility-standards-compatibility.md` - Accessibility (a11y)
+- `docs/kanban/fbu/FR-006-localization-language-selection-uk-us-english.md` - Feature request
+- `docs/kanban/fbu/FR-115-accessibility-standards-compatibility.md` - Accessibility (a11y)
 - `docs/documentation/user-docs/framework-dependency-post-template-setup-guide.md` - Setup process
 - `packages/frameworks/workflow-mgt/scripts/install_release_workflow.py` - RW installer
 

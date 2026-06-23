@@ -24,7 +24,7 @@ housekeeping_policy: keep
 
 - [x] **E09:S01:T01 – Current State Inventory** - ✅ COMPLETE (2026-06-04 — [T01 inventory](story-01-rc-readiness-gap-analysis/T01-current-state-inventory.md))
 - [x] **E09:S01:T02 – RC=1 Criteria Definition** - ✅ COMPLETE (2026-06-04 — [T02 criteria](story-01-rc-readiness-gap-analysis/T02-rc1-criteria-definition.md))
-- [x] **E09:S01:T03 – Gap Comparison (FR-032.3)** - ✅ COMPLETE (v0.9.1.3+1) — [Task](story-01-rc-readiness-gap-analysis/T03-gap-analysis-fr032.md) | [Report](story-01-rc-readiness-gap-analysis/T03-gap-comparison-fr032-report.md) | [IPP](../../../implementation-cycles/IPP-E09S01T03-gap-comparison-fr032.md) | [FR-032](../../fr-br/FR-032-release-candidate-readiness-gap-analysis.md)
+- [x] **E09:S01:T03 – Gap Comparison (FR-032.3)** - ✅ COMPLETE (v0.9.1.3+1) — [Task](story-01-rc-readiness-gap-analysis/T03-gap-analysis-fr032.md) | [Report](story-01-rc-readiness-gap-analysis/T03-gap-comparison-fr032-report.md) | [IPP](../../../implementation-cycles/IPP-E09S01T03-gap-comparison-fr032.md) | [FR-032](../../fbu/FR-032-release-candidate-readiness-gap-analysis.md)
 - [ ] **E09:S01:T04 – Task Prioritization Review** - TODO
 - [ ] **E09:S01:T05 – Missing Work Identification** - TODO
 - [ ] **E09:S01:T06 – RC Readiness Checklist Creation** - TODO
@@ -146,7 +146,7 @@ This gap analysis must be aware of the comprehensive framework review scope defi
 ## Dependencies
 
 **Depends On:**
-- [FR-032: Release Candidate Readiness Gap Analysis](../../fr-br/FR-032-release-candidate-readiness-gap-analysis.md) (provides context and requirements)
+- [FR-032: Release Candidate Readiness Gap Analysis](../../fbu/FR-032-release-candidate-readiness-gap-analysis.md) (provides context and requirements)
 
 **Blocks:**
 - Strategic release planning decisions
@@ -165,7 +165,7 @@ This gap analysis must be aware of the comprehensive framework review scope defi
 ## Related Work
 
 **Related BR/FR Links:**
-- [FR-032: Release Candidate Readiness Gap Analysis](../../fr-br/FR-032-release-candidate-readiness-gap-analysis.md)
+- [FR-032: Release Candidate Readiness Gap Analysis](../../fbu/FR-032-release-candidate-readiness-gap-analysis.md)
 
 **Related Stories:**
 - [E9:S02: Kanban Framework RC Readiness Review](story-02-kanban-framework-rc-readiness-review.md) (depends on gap analysis)

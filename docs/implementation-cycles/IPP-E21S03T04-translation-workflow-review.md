@@ -9,7 +9,7 @@ housekeeping_policy: keep
 # E21:S03:T04 — Planning: Translation workflow and review process (IPW)
 
 **Host Task:** [`T04-create-translation-workflow-and-review-process.md`](../project-management/kanban/epics/epic-21/story-03-translation-and-localisation/T04-create-translation-workflow-and-review-process.md) **(E21:S03:T04)**  
-**Planning for:** [FR-006 Phase 3+](../project-management/kanban/fr-br/FR-006-localization-language-selection-uk-us-english.md) · [IPP-E21S03T01](IPP-E21S03T01-identify-extract-translatable-content.md) · [IPP-E21S03T02](IPP-E21S03T02-create-translation-files-major-languages.md) · [IPP-E21S03T03](IPP-E21S03T03-translation-lookup-rendering.md)  
+**Planning for:** [FR-006 Phase 3+](../project-management/kanban/fbu/FR-006-localization-language-selection-uk-us-english.md) · [IPP-E21S03T01](IPP-E21S03T01-identify-extract-translatable-content.md) · [IPP-E21S03T02](IPP-E21S03T02-create-translation-files-major-languages.md) · [IPP-E21S03T03](IPP-E21S03T03-translation-lookup-rendering.md)  
 **Status:** Complete — released `v0.21.3.4+1` (`RW E21:S03:T04 --art`)  
 **Branch:** `epic/21-internationalisation-localisation`
 
@@ -200,5 +200,5 @@ Implements FR-006 “Translation workflow and management” process portion; def
 - [contributing-translations.md](../documentation/user-docs/contributing-translations.md)
 - [ADR-024](../architecture/standards-and-adrs/ADR-024-i18n-framework-strategy.md)
 - [translatable-content-inventory.md](../governance/standards/translatable-content-inventory.md)
-- [FR-006](../project-management/kanban/fr-br/FR-006-localization-language-selection-uk-us-english.md)
+- [FR-006](../project-management/kanban/fbu/FR-006-localization-language-selection-uk-us-english.md)
 - [IPP-E21S03T03](IPP-E21S03T03-translation-lookup-rendering.md)

@@ -30,6 +30,18 @@ python -m pytest -c pytest-cli-cov.ini tests/
 
 Coverage report: `htmlcov/cli/index.html`.
 
+The dedicated CLI config enforces a hard floor:
+
+- `pytest-cli-cov.ini` includes `--cov-fail-under=70`
+- aggregate `cli/` coverage must stay at or above 70% in the `cli-coverage` lane
+- default `pytest.ini` remains coverage-free by design (UXR-030 isolation contract)
+
+### FR-138 Wave Plan (CLI coverage closure)
+
+- **Wave 1 (backends + migration):** `cli/backends/*`, `cli/migration.py`, `cli/commands/migrate.py`
+- **Wave 2 (core commands + error bridge):** `cli/commands/check.py`, `status.py`, `update.py`, `cli/adk_install_errors_bridge.py`, `cli/exceptions.py`
+- **Wave 3 (remaining branch gaps):** `cli/commands/config.py`, install/remove/logs branch gaps, `cli/config.py`, `cli/logging.py`, `cli/utils.py`
+
 ### Run Specific Test Files
 
 ```bash

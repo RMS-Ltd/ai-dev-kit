@@ -30,43 +30,43 @@ housekeeping_policy: keep
 
 
 - [x] **E06:S06:T02 – Fix Release Workflow Micromanagement Issues** - 🔄 IN PROGRESS, BLOCKED (CRITICAL, User pain and frustration with tool discovery, pattern matching failures, and excessive manual intervention; blocking productive work. Root cause identified as Cascade whitelist security prompts.)
-  - Task: [`T02-fix-release-workflow-micromanagement-issues.md`](story-06-feature-requests/T02-fix-release-workflow-micromanagement-issues.md) | [BR-038](../../fr-br/BR-038-release-workflow-micromanagement-and-tool-discovery-issues.md)
+  - Task: [`T02-fix-release-workflow-micromanagement-issues.md`](story-06-feature-requests/T02-fix-release-workflow-micromanagement-issues.md) | [BR-038](../../fbu/BR-038-release-workflow-micromanagement-and-tool-discovery-issues.md)
 
 
 - [x] **E06:S06:T03 – Investigate Apple SDK License Blocking Issue** - ✅ COMPLETED (HIGH priority, Apple SDK license blocking issue prevents proper installation or usage of ai-dev-kit components on Apple platforms; needs investigation to understand root cause and implement solution)
-  - Task: [`T03-apple-sdk-license-blocking-issue.md`](story-06-feature-requests/T03-apple-sdk-license-blocking-issue.md) | [BR-040](../../fr-br/BR-040-apple-sdk-license-blocking-issue.md)
+  - Task: [`T03-apple-sdk-license-blocking-issue.md`](story-06-feature-requests/T03-apple-sdk-license-blocking-issue.md) | [BR-040](../../fbu/BR-040-apple-sdk-license-blocking-issue.md)
 
 
 - [x] **E06:S06:T41 – Windsurf: Investigate how to leverage AGENTS.md and SKILL.md for workflows** - ✅ COMPLETED (CRITICAL, Implement AGENTS.md and SKILL.md to define specialized workflow agents and capabilities, enabling Cascade to execute workflows autonomously without manual intervention. This addresses fundamental workflow execution issues including terminal interaction problems and agent behavior inconsistencies.)
-  - Task: [`T41-implementation-summary.md`](story-06-feature-requests/T41-implementation-summary.md) | [FR-041](../../fr-br/FR-041-windsurf-investigate-agents-skills-for-workflows.md)
+  - Task: [`T41-implementation-summary.md`](story-06-feature-requests/T41-implementation-summary.md) | [FR-041](../../fbu/FR-041-windsurf-investigate-agents-skills-for-workflows.md)
 
 
 - [x] **E06:S06:T42 – Fix UKW Agent Board Cleanup Failure** - ✅ COMPLETED (HIGH priority, UKW Agent does not properly clean up completed tasks from MoSCOW sections, leaving completed tasks listed in active priority sections despite being marked as COMPLETE. This impairs autonomous workflow reliability and requires manual intervention.)
-  - Task: [`T42-fix-ukw-agent-board-cleanup-failure.md`](story-06-feature-requests/T42-fix-ukw-agent-board-cleanup-failure.md) | [BR-042](../../fr-br/BR-042-ukw-agent-board-cleanup-failure.md)
+  - Task: [`T42-fix-ukw-agent-board-cleanup-failure.md`](story-06-feature-requests/T42-fix-ukw-agent-board-cleanup-failure.md) | [BR-042](../../fbu/BR-042-ukw-agent-board-cleanup-failure.md)
 
 
 - [x] **E06:S06:T56 – RW Ambiguous Task Identifier Typo Risk** - ✅ COMPLETE (v0.6.6.56+4) (HIGH priority, BR-056: validate_rw_task_intent + Step 1b; live verification 2026-03-25)
-  - Task: [`T56-rw-ambiguous-task-identifier-typo-risk.md`](story-06-feature-requests/T56-rw-ambiguous-task-identifier-typo-risk.md) | [BR-056](../../fr-br/BR-056-rw-ambiguous-task-identifier-typo-risk.md)
+  - Task: [`T56-rw-ambiguous-task-identifier-typo-risk.md`](story-06-feature-requests/T56-rw-ambiguous-task-identifier-typo-risk.md) | [BR-056](../../fbu/BR-056-rw-ambiguous-task-identifier-typo-risk.md)
 
 
-- [x] **E06:S06:T57 – BR-039: Cascade whitelist / security prompt usability (vendor)** - ✅ COMPLETE (**`RW -k`** v0.6.6.57+5 **v0.4.704+5** — Option B SemVer; **[BR-039](../../fr-br/BR-039-cascade-whitelist-security-prompt-usability-blocker.md)** **IN PROGRESS** for **product**)
-  - Task: [`T57-br039-cascade-whitelist-security-prompt-blocker.md`](story-06-feature-requests/T57-br039-cascade-whitelist-security-prompt-blocker.md) | [BR-039](../../fr-br/BR-039-cascade-whitelist-security-prompt-usability-blocker.md)
+- [x] **E06:S06:T57 – BR-039: Cascade whitelist / security prompt usability (vendor)** - ✅ COMPLETE (**`RW -k`** v0.6.6.57+5 **v0.4.704+5** — Option B SemVer; **[BR-039](../../fbu/BR-039-cascade-whitelist-security-prompt-usability-blocker.md)** **IN PROGRESS** for **product**)
+  - Task: [`T57-br039-cascade-whitelist-security-prompt-blocker.md`](story-06-feature-requests/T57-br039-cascade-whitelist-security-prompt-blocker.md) | [BR-039](../../fbu/BR-039-cascade-whitelist-security-prompt-usability-blocker.md)
 
 
 - [x] **E06:S06:T58 - RW `--art` flag should work in all RW modes** - ✅ COMPLETE (v0.6.6.58+2) (HIGH priority, BR-060: all-mode support implemented; follow-up cleanup release for board consistency and repo hygiene)
-  - Task: [`T58-rw-art-flag-all-modes-support.md`](story-06-feature-requests/T58-rw-art-flag-all-modes-support.md) | [BR-060](../../fr-br/BR-060-rw-art-flag-should-work-in-all-rw-modes.md)
+  - Task: [`T58-rw-art-flag-all-modes-support.md`](story-06-feature-requests/T58-rw-art-flag-all-modes-support.md) | [BR-060](../../fbu/BR-060-rw-art-flag-should-work-in-all-rw-modes.md)
 
 
 - [ ] **E06:S06:T61 – UXR-006: MoSCOW row last-modified UTC stamps** - 🔄 IN PROGRESS (v0.6.6.61+1 — **RW**; HIGH — drift / IPW; optional **AC-4** tooling open)
-  - Task: [`T61-uxr-006-kanban-moscow-last-modified-stamps.md`](story-06-feature-requests/T61-uxr-006-kanban-moscow-last-modified-stamps.md) | [UXR-006](../../fr-br/UXR-006-kanban-moscow-row-last-modified-utc-stamp.md)
+  - Task: [`T61-uxr-006-kanban-moscow-last-modified-stamps.md`](story-06-feature-requests/T61-uxr-006-kanban-moscow-last-modified-stamps.md) | [UXR-006](../../fbu/UXR-006-kanban-moscow-row-last-modified-utc-stamp.md)
 
 
 - [x] **E06:S06:T62 – Global IPW-gated implementation contract (FR-083)** - ✅ COMPLETE (v0.6.6.62+2, policy gate enforced in `AGENTS.md` + `.cursorrules`, IPW housed and linked)
-  - Task: [`T62-global-ipw-gated-implementation-contract-fr083.md`](story-06-feature-requests/T62-global-ipw-gated-implementation-contract-fr083.md) | [FR-083](../../fr-br/FR-083-global-ipw-gated-implementation-contract.md)
+  - Task: [`T62-global-ipw-gated-implementation-contract-fr083.md`](story-06-feature-requests/T62-global-ipw-gated-implementation-contract-fr083.md) | [FR-083](../../fbu/FR-083-global-ipw-gated-implementation-contract.md)
 
 
 - [x] **E06:S06:T63 – RW recovery journal and rollback contract (BR-038 follow-on)** - ✅ COMPLETE (v0.6.6.63+2) (HIGH, deterministic per-run journaling, structured recovery reporting, and rollback/compensation contract for RW failures)
-  - Task: [`T63-rw-recovery-journal-and-rollback-contract-br038.md`](story-06-feature-requests/T63-rw-recovery-journal-and-rollback-contract-br038.md) | [BR-038](../../fr-br/BR-038-release-workflow-micromanagement-and-tool-discovery-issues.md)
+  - Task: [`T63-rw-recovery-journal-and-rollback-contract-br038.md`](story-06-feature-requests/T63-rw-recovery-journal-and-rollback-contract-br038.md) | [BR-038](../../fbu/BR-038-release-workflow-micromanagement-and-tool-discovery-issues.md)
 
 
 - [x] **E06:S06:T999 – Board Cleanup Test Task** - ✅ COMPLETED (LOW priority, Dummy task for testing UKW Agent board cleanup functionality. This task will be marked as COMPLETE to trigger board cleanup and verify removal from active sections.)

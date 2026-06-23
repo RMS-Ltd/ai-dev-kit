@@ -116,10 +116,10 @@ Introduce a formal **doc-init build `+0`** for newly created Epic/Story/Task (E/
 
 ## References
 
-- **FR-017:** `docs/kanban/fr-br/FR-017-versioning-policy-hardening-doc-init-build.md`
-- **FR-016:** `docs/kanban/fr-br/FR-016-kanban-granularity-discrete-task-docs.md`
-- **FR-018:** `docs/kanban/fr-br/FR-018-abstract-space-zero-numbered-est-docs.md`
-- **FR-020:** `docs/kanban/fr-br/FR-020-version-validator-abstract-space-awareness.md`
+- **FR-017:** `docs/kanban/fbu/FR-017-versioning-policy-hardening-doc-init-build.md`
+- **FR-016:** `docs/kanban/fbu/FR-016-kanban-granularity-discrete-task-docs.md`
+- **FR-018:** `docs/kanban/fbu/FR-018-abstract-space-zero-numbered-est-docs.md`
+- **FR-020:** `docs/kanban/fbu/FR-020-version-validator-abstract-space-awareness.md`
 - **RW Agent Execution Guide:** `packages/frameworks/workflow-mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md`
 - **Versioning Policy (Dev-Kit):** `docs/architecture/standards-and-adrs/dev-kit-versioning-policy.md`
 - **Versioning Policy (Framework):** `packages/frameworks/numbering-versioning/versioning-policy.md`

@@ -9,7 +9,7 @@ housekeeping_policy: keep
 # Adopter-public documentation authoring (BR-068 / FR-114)
 
 **Status:** Active  
-**Authority:** [BR-068](../../kanban/fr-br/BR-068-docusaurus-monorepo-markdown-links-break-strict-production-build.md) · [FR-114](../../kanban/fr-br/FR-114-split-documentation-surfaces-docusaurus-public-notion-maintainer-kb.md) · [ADR-024](../../architecture/standards-and-adrs/ADR-024-documentation-surfaces-three-surface-model-fr114.md) · [portal/README.md BR-068 section](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/portal/README.md#br-068-monorepo-links-outside-the-docs-plugin-e5s09t11)
+**Authority:** [BR-068](../../kanban/fbu/BR-068-docusaurus-monorepo-markdown-links-break-strict-production-build.md) · [FR-114](../../kanban/fbu/FR-114-split-documentation-surfaces-docusaurus-public-notion-maintainer-kb.md) · [ADR-024](../../architecture/standards-and-adrs/ADR-024-documentation-surfaces-three-surface-model-fr114.md) · [portal/README.md BR-068 section](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/portal/README.md#br-068-monorepo-links-outside-the-docs-plugin-e5s09t11)
 
 ---
 

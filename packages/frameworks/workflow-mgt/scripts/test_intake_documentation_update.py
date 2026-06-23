@@ -29,7 +29,7 @@ def test_documentation_update():
     print("🧪 Test: Documentation Update")
     
     # Test with FR-019
-    fr_br_path = Path("docs/kanban/fr-br/FR-019-intake-workflow-automation.md")
+    fr_br_path = Path("docs/kanban/fbu/FR-019-intake-workflow-automation.md")
     
     if not fr_br_path.exists():
         print("⚠️  FR-019 not found, skipping test")

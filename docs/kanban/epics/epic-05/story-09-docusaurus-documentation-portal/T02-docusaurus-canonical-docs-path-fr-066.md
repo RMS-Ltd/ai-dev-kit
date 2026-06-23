@@ -16,7 +16,7 @@ housekeeping_policy: keep
 **Last updated:** 2026-03-30 (v0.5.9.2+2 — FR-066 RW)  
 **Code:** E05S09T02
 
-**Feature Request:** [FR-066 – Canonical docs path](../../../fr-br/FR-066-docusaurus-canonical-docs-path-and-publish-scope.md)
+**Feature Request:** [FR-066 – Canonical docs path](../../../fbu/FR-066-docusaurus-canonical-docs-path-and-publish-scope.md)
 
 ---
 
@@ -28,7 +28,7 @@ Implement **FR-066**: point the Docusaurus docs plugin at repository **`docs/`**
 
 ## Input
 
-- [FR-066](../../../fr-br/FR-066-docusaurus-canonical-docs-path-and-publish-scope.md)
+- [FR-066](../../../fbu/FR-066-docusaurus-canonical-docs-path-and-publish-scope.md)
 - `docs/architecture/standards-and-adrs/ultimate-canonical-kb-structure.md`
 - Completed or in-progress **FR-065** (site identity)
 
@@ -58,7 +58,7 @@ Implement **FR-066**: point the Docusaurus docs plugin at repository **`docs/`**
 
 - **RW -k:** v0.5.9.2+1 — task T02 version marker (kanban init sequencing per user request).
 - **Implementation (2026-03-30):** `portal/docusaurus.config.js` — `path: '../docs'`, `exclude` for changelog archive paths, docs `editUrl` → `tree/main/docs/`; `portal/README.md` **Publish scope**; `docs/documentation/docusaurus-portal-index.md`; scaffold cleared from `portal/docs/`; `tests/test_portal_fr066_docs_path.py`; FR-065 `editUrl` test + `PORTAL_BUILD_STRICT` for green build (**FR-067**).
-- **`npm run build` (post–FR-066):** fails on **MDX compilation** in corpus (e.g. `docs/kanban/fr-br/FR-009-*.md` unexpected character in JSX; `FR-014` acorn parse; `FR-059` similar) — actionable for **FR-067**, not path misconfiguration.
+- **`npm run build` (post–FR-066):** fails on **MDX compilation** in corpus (e.g. `docs/kanban/fbu/FR-009-*.md` unexpected character in JSX; `FR-014` acorn parse; `FR-059` similar) — actionable for **FR-067**, not path misconfiguration.
 
 ---
 

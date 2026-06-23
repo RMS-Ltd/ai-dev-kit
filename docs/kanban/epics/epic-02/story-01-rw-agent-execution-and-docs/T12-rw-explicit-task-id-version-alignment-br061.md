@@ -27,7 +27,7 @@ Resolve BR-061 by reducing false Step 1 friction when RW is invoked with explici
 
 ## Input
 
-- [BR-061](../../../fr-br/BR-061-rw-explicit-task-id-requires-manual-version-alignment.md)
+- [BR-061](../../../fbu/BR-061-rw-explicit-task-id-requires-manual-version-alignment.md)
 - `packages/frameworks/workflow-mgt/scripts/validation/validate_branch_context.py`
 - `packages/frameworks/workflow-mgt/scripts/validation/validate_rw_task_intent.py`
 - RW execution docs and `.cursorrules` trigger semantics
@@ -56,7 +56,7 @@ Resolve BR-061 by reducing false Step 1 friction when RW is invoked with explici
 
 ## Links
 
-- [BR-061](../../../fr-br/BR-061-rw-explicit-task-id-requires-manual-version-alignment.md)
+- [BR-061](../../../fbu/BR-061-rw-explicit-task-id-requires-manual-version-alignment.md)
 - [Story E2:S01](../story-01-rw-agent-execution-and-docs.md)
 - [ICW-E2S1T12-specification](../../../../implementation-cycles/ICW-E2S01T12-implementation-plan.md)
 - [ICW-E2S1T12-test-design](../../../../implementation-cycles/ICW-E2S01T12-implementation-plan.md)

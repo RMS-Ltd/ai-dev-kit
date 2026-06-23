@@ -92,7 +92,7 @@ Use when implementing or reviewing RTL-facing work (from [locale-cultural-requir
 
 ## References
 
-- [FR-006](../../kanban/fr-br/FR-006-localization-language-selection-uk-us-english.md)
+- [FR-006](../../kanban/fbu/FR-006-localization-language-selection-uk-us-english.md)
 - [locale-file-structure-conventions.md](locale-file-structure-conventions.md) — `locale_metadata`
 - [translation-workflow-and-review.md](translation-workflow-and-review.md)
 - [IPP-E21S04T03](../../implementation-cycles/IPP-E21S04T03-rtl-support-arabic-hebrew.md)

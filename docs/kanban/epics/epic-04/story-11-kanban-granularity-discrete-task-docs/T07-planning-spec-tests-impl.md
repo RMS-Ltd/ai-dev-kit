@@ -18,7 +18,7 @@ Migrate all ~784 embedded task references in Story documents to discrete Task do
 
 ## Input
 
-- [FR-016: Kanban Granularity & Discrete Task Docs](../../../fr-br/FR-016-kanban-granularity-discrete-task-docs.md)
+- [FR-016: Kanban Granularity & Discrete Task Docs](../../../fbu/FR-016-kanban-granularity-discrete-task-docs.md)
 - [Migration plan: Embedded → Discrete Task Documents](migration-plan-embedded-to-discrete-tasks.md)
 - [IPP E04:S11:T07 — FR-016 discrete task docs migration](../../../../implementation-cycles/IPP-E04S11T07-fr016-discrete-task-docs-migration.md) *(consolidated IPW package)*
 - [ICW E04:S11:T07 specification](../../../../implementation-cycles/ICW-E4S11T07-specification.md) *(retrospective; folded into IPP)*
@@ -267,7 +267,7 @@ Exit:   0 if valid, 1 if issues
 ## References
 
 - [IPP E04:S11:T07 — FR-016 discrete task docs migration](../../../../implementation-cycles/IPP-E04S11T07-fr016-discrete-task-docs-migration.md)
-- [FR-016](../../../fr-br/FR-016-kanban-granularity-discrete-task-docs.md)
+- [FR-016](../../../fbu/FR-016-kanban-granularity-discrete-task-docs.md)
 - [Migration plan](migration-plan-embedded-to-discrete-tasks.md)
 - [Migration guide](migration-guide.md)
 - [Migration completion report](migration-completion-report.md)

@@ -9,7 +9,7 @@ housekeeping_policy: keep
 # E21:S06:T01 — Planning: Chinese Simplified (zh-CN) translation files (FR-006)
 
 **Host Task:** [`T01-chinese-simplified-zh-cn-translation-files.md`](../kanban/epics/epic-21/story-06-cjk-languages-localization/T01-chinese-simplified-zh-cn-translation-files.md) **(E21:S06:T01)**  
-**Planning for:** [FR-006 Phase 3+](../kanban/fr-br/FR-006-localization-language-selection-uk-us-english.md) · [E21:S06](../kanban/epics/epic-21/story-06-cjk-languages-localization.md)  
+**Planning for:** [FR-006 Phase 3+](../kanban/fbu/FR-006-localization-language-selection-uk-us-english.md) · [E21:S06](../kanban/epics/epic-21/story-06-cjk-languages-localization.md)  
 **Status:** Active — implementation authorized
 
 > **IPW (Implementation Planning Workflow):** Consolidated IPP per FR-042 / FR-094. Scaffold trees from [E21:S03:T02](IPP-E21S03T02-create-translation-files-major-languages.md). Cultural guidance: [locale-cultural-requirements.md](../governance/standards/locale-cultural-requirements.md) § Chinese Simplified (zh-CN). **Glossary:** 工作流 (workflow), 看板 (Kanban brand).
@@ -138,7 +138,7 @@ IPP and locale assets: NOT_APPLICABLE, evergreen. Greenfield sync required.
 
 ## References
 
-- [FR-006](../kanban/fr-br/FR-006-localization-language-selection-uk-us-english.md)
+- [FR-006](../kanban/fbu/FR-006-localization-language-selection-uk-us-english.md)
 - [T01 task doc](../kanban/epics/epic-21/story-06-cjk-languages-localization/T01-chinese-simplified-zh-cn-translation-files.md)
 - [locale-cultural-requirements.md](../governance/standards/locale-cultural-requirements.md) § zh-CN
 - [IPP-E21S05T01](IPP-E21S05T01-spanish-es-translation-files.md) (delivery pattern)

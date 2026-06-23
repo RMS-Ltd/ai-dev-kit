@@ -12,7 +12,7 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** [TBD]  
 **Created:** 2025-12-05  
-**Last updated:** 2026-06-15 (v0.6.9.37+2 – Story 9 Task 37 complete)
+**Last updated:** 2026-06-17 (v0.6.9.38+1 – Kanban documentation setup)
 **Branch:** `epic/6-framework-management`  
 **Version Schema:** `0.6.S.T+B`  
 **Production URL:** [N/A for this repo]
@@ -101,14 +101,14 @@ housekeeping_policy: keep
 - [x] **E6:S08 – ai-dev-kit CLI Tool** - COMPLETE ✅ (v0.6.8.13+1, migrated from v0.6.7.13+1 – T01-T13 complete: Architecture, commands, backend abstraction, all four backends, configuration management, error handling, migration utilities, remove command, documentation, testing, validation, PyPI packaging)
   - Story: [`story-08-ai-dev-kit-cli-tool.md`](story-08-ai-dev-kit-cli-tool.md)
   - Tasks: T00 ✅ COMPLETE, T01-T13 ✅ COMPLETE (CLI tool implementation: architecture, commands, backends, config, migration, testing, packaging - ALL COMPLETE)
-  - **Feature Request:** [FR-030](../../fr-br/FR-030-ai-dev-kit-cli-tool.md)
+  - **Feature Request:** [FR-030](../../fbu/FR-030-ai-dev-kit-cli-tool.md)
   - **Note:** Renumbered from S07 to S08 as part of repository story migration (E09:S01:T08).
 
 
 
-- [ ] **E6:S09 – AI Dev Kit installation and adopter integration** - IN PROGRESS (2026-06-16 — **T26** **v0.6.9.26+4** COMPLETE SBL programme Phase 1; **T37** FR-133; **T36** AC7 satisfied)
+- [ ] **E6:S09 – AI Dev Kit installation and adopter integration** - IN PROGRESS (2026-06-17 — **T38** FR-135 guided orchestrator filed; **T26** Phase 1 closed; **T37** FR-133; **T36** AC7 satisfied)
   - Story: [`story-09-ai-dev-kit-installation-and-adopter-integration.md`](story-09-ai-dev-kit-installation-and-adopter-integration.md)
-  - Tasks: **T01–T06** ✅ ([FR-080](../../fr-br/FR-080-greenfield-installation-process.md), [FR-081](../../fr-br/FR-081-brownfield-modular-adopter-integration.md), [FR-082](../../fr-br/FR-082-installation-distribution-canonical-repo-alignment.md), [FR-098](../../fr-br/FR-098-ecc-optional-harness-layer-integration.md))
+  - Tasks: **T01–T06** ✅ ([FR-080](../../fbu/FR-080-greenfield-installation-process.md), [FR-081](../../fbu/FR-081-brownfield-modular-adopter-integration.md), [FR-082](../../fbu/FR-082-installation-distribution-canonical-repo-alignment.md), [FR-098](../../fbu/FR-098-ecc-optional-harness-layer-integration.md))
 
 ---
 
@@ -146,7 +146,7 @@ Epic 6 owns the **Framework Management and Maintenance** processes for the ai-de
 **Status:** IN PROGRESS  
 **Priority:** HIGH  
 **Estimated Effort:** [TBD]  
-**Last updated:** 2026-06-15 (v0.6.9.37+2 – Story 9 Task 37 complete)
+**Last updated:** 2026-06-17 (v0.6.9.38+1 – Kanban documentation setup)
 
 **Goal:**  
 Establish version management processes for framework packages.
@@ -167,7 +167,7 @@ Establish version management processes for framework packages.
 **Status:** TODO  
 **Priority:** HIGH  
 **Estimated Effort:** [TBD]  
-**Last updated:** 2026-06-15 (v0.6.9.37+2 – Story 9 Task 37 complete)
+**Last updated:** 2026-06-17 (v0.6.9.38+1 – Kanban documentation setup)
 
 **Goal:**  
 Implement processes for updating and migrating framework packages.
@@ -188,7 +188,7 @@ Implement processes for updating and migrating framework packages.
 **Status:** COMPLETE  
 **Priority:** MEDIUM  
 **Estimated Effort:** [TBD]  
-**Last updated:** 2026-06-15 (v0.6.9.37+2 – Story 9 Task 37 complete)
+**Last updated:** 2026-06-17 (v0.6.9.38+1 – Kanban documentation setup)
 
 **Goal:**  
 Build monitoring and health tracking for framework packages.

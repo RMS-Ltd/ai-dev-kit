@@ -37,7 +37,7 @@ Research cultural requirements for target locales.
 
 - Target locales — [locale-rollout-matrix.md](../../../../governance/standards/locale-rollout-matrix.md) (nine scaffolded locales)
 - Framework content — [translatable-content-inventory.md](../../../../governance/standards/translatable-content-inventory.md)
-- [FR-006 Phase 2](../../../../fr-br/FR-006-localization-language-selection-uk-us-english.md) · [ADR-024](../../../../architecture/standards-and-adrs/ADR-024-i18n-framework-strategy.md)
+- [FR-006 Phase 2](../../../../fbu/FR-006-localization-language-selection-uk-us-english.md) · [ADR-024](../../../../architecture/standards-and-adrs/ADR-024-i18n-framework-strategy.md)
 - [IPP-E21S04T01-research-cultural-requirements-target-locales.md](../../../../implementation-cycles/IPP-E21S04T01-research-cultural-requirements-target-locales.md)
 
 **Publication Status:** NOT_APPLICABLE (maintainer governance deliverable per IPP §6)
@@ -75,7 +75,7 @@ Research cultural requirements for target locales.
 RW -k E21:S04:T01 --art --dpz
 ```
 
-**Target version anchor:** `v0.21.4.1+0` (doc-init BUILD +0 per [BR-067](../../../fr-br/BR-067-rw-first-doc-only-release-defaults-to-build-plus-one-not-plus-zero.md)).
+**Target version anchor:** `v0.21.4.1+0` (doc-init BUILD +0 per [BR-067](../../../fbu/BR-067-rw-first-doc-only-release-defaults-to-build-plus-one-not-plus-zero.md)).
 
 ---
 
@@ -96,7 +96,7 @@ Migrated from embedded Story section via `generate_task_doc.py` (FR-016 Wave 1 t
 ## References
 
 - [IPP-E21S04T01-research-cultural-requirements-target-locales.md](../../../../implementation-cycles/IPP-E21S04T01-research-cultural-requirements-target-locales.md)
-- [FR-006](../../../../fr-br/FR-006-localization-language-selection-uk-us-english.md)
+- [FR-006](../../../../fbu/FR-006-localization-language-selection-uk-us-english.md)
 - [E21:S04 story](../story-04-cultural-adaptation.md)
 - [locale-rollout-matrix.md](../../../../governance/standards/locale-rollout-matrix.md)
 - [locale-cultural-requirements.md](../../../../governance/standards/locale-cultural-requirements.md)

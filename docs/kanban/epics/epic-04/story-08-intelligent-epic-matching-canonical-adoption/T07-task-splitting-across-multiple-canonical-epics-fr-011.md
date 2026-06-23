@@ -11,7 +11,7 @@ housekeeping_policy: keep
 **Task ID:** E04:S08:T07  
 **Status:** COMPLETE  
 **Priority:** MEDIUM  
-**Feature Request:** [FR-011](../../../fr-br/FR-011-task-splitting-multiple-canonical-epics.md)
+**Feature Request:** [FR-011](../../../fbu/FR-011-task-splitting-multiple-canonical-epics.md)
 
 **Planning artifact (IPP):** [IPP-E4S8T7-task-split-multi-epic-fr011.md](../../../../implementation-cycles/IPP-E4S08T07-task-split-multi-epic-fr011.md)
 
@@ -29,7 +29,7 @@ Implement task-level split planning so mixed-responsibility source epics can map
 ## Input
 
 - Existing semantic epic matching in Story 008 (FR-009 lineage).  
-- [FR-011](../../../fr-br/FR-011-task-splitting-multiple-canonical-epics.md) requirements and acceptance criteria.
+- [FR-011](../../../fbu/FR-011-task-splitting-multiple-canonical-epics.md) requirements and acceptance criteria.
 - [IPP-E4S8T7-task-split-multi-epic-fr011.md](../../../../implementation-cycles/IPP-E4S08T07-task-split-multi-epic-fr011.md)
 - [ICW-E4S8T7-specification](../../../../implementation-cycles/ICW-E4S08T07-implementation-plan.md)
 - [ICW-E4S8T7-test-design](../../../../implementation-cycles/ICW-E4S08T07-implementation-plan.md)
@@ -62,7 +62,7 @@ Implement task-level split planning so mixed-responsibility source epics can map
 
 ## Links
 
-- Feature Request: [FR-011](../../../fr-br/FR-011-task-splitting-multiple-canonical-epics.md)
+- Feature Request: [FR-011](../../../fbu/FR-011-task-splitting-multiple-canonical-epics.md)
 - Planning artifact: [IPP-E4S8T7-task-split-multi-epic-fr011.md](../../../../implementation-cycles/IPP-E4S08T07-task-split-multi-epic-fr011.md)
 - Planning artifact: [ICW-E4S8T7-specification](../../../../implementation-cycles/ICW-E4S08T07-implementation-plan.md)
 - Planning artifact: [ICW-E4S8T7-test-design](../../../../implementation-cycles/ICW-E4S08T07-implementation-plan.md)

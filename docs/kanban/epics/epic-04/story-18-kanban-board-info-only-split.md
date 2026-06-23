@@ -73,6 +73,6 @@ Split the Kanban board into two documents: structured information only (`kboard.
 
 ## References
 
-- **FR-036:** [`docs/kanban/fr-br/FR-036-kanban-board-info-only-split.md`](../../fr-br/FR-036-kanban-board-info-only-split.md)
+- **FR-036:** [`docs/kanban/fbu/FR-036-kanban-board-info-only-split.md`](../../fbu/FR-036-kanban-board-info-only-split.md)
 - **Current Board:** `docs/kanban/kboard.md`
 - **Board Template:** `packages/frameworks/kanban/templates/KANBAN_BOARD_TEMPLATE.md`

@@ -9,7 +9,7 @@ housekeeping_policy: keep
 # E5:S01:T42 - Planning: Spec, Tests, Implementation Plan (IPP)
 
 **Host Task:** [`T42-implementation-planning-workflow-ipw.md`](../kanban/epics/epic-05/story-01-fr-repo/T42-implementation-planning-workflow-ipw.md) **(E5:S01:T42)**  
-**Planning for:** [FR-042 - Implementation Planning Workflow (IPW)](../kanban/fr-br/FR-042-implementation-planning-workflow-ipw.md)  
+**Planning for:** [FR-042 - Implementation Planning Workflow (IPW)](../kanban/fbu/FR-042-implementation-planning-workflow-ipw.md)  
 **Status:** Published
 
 ---
@@ -99,7 +99,7 @@ Close FR-042 reopen follow-up by codifying the canonical IPW sequence so "Ascert
 
 ## References
 
-- [FR-042](../kanban/fr-br/FR-042-implementation-planning-workflow-ipw.md)
+- [FR-042](../kanban/fbu/FR-042-implementation-planning-workflow-ipw.md)
 - [Host task E5:S01:T42](../kanban/epics/epic-05/story-01-fr-repo/T42-implementation-planning-workflow-ipw.md)
 - [IPW execution guide](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/implementation-planning-workflow-agent-execution.md)
 - [Plan doc template](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/kanban/templates/PLAN_DOC_TEMPLATE.md)

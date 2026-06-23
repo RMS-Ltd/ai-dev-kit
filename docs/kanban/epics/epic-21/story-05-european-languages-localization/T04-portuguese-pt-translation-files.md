@@ -15,7 +15,7 @@ housekeeping_policy: keep
 **Version:** v0.21.5.4+0
 **Code:** E21S05T04
 
-**Associated FR:** [FR-006](../../../fr-br/FR-006-localization-language-selection-uk-us-english.md) (Phase 2)
+**Associated FR:** [FR-006](../../../fbu/FR-006-localization-language-selection-uk-us-english.md) (Phase 2)
 
 ---
 
@@ -64,7 +64,7 @@ Create and review Portuguese translation files for **`pt-BR`** and **`pt-PT`** l
 RW -k E21:S05:T04 --art --dpz
 ```
 
-**Target version anchor:** `v0.21.5.4+0` (doc-init BUILD +0 per [BR-067](../../../fr-br/BR-067-rw-first-doc-only-release-defaults-to-build-plus-one-not-plus-zero.md)).
+**Target version anchor:** `v0.21.5.4+0` (doc-init BUILD +0 per [BR-067](../../../fbu/BR-067-rw-first-doc-only-release-defaults-to-build-plus-one-not-plus-zero.md)).
 
 ## Version Anchor
 

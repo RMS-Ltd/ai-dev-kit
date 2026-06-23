@@ -12,7 +12,7 @@ housekeeping_policy: keep
 **Priority:** CRITICAL  
 **Last updated:** 2026-03-09 (Technical implementation evaluation completed - all core components implemented and tested)  
 **Version:** v0.6.1.37+1  
-**Bug Report:** [BR-037 – Kanban Install Consumer Board Contamination](../../../fr-br/BR-037-kanban-install-consumer-board-contamination.md)  
+**Bug Report:** [BR-037 – Kanban Install Consumer Board Contamination](../../../fbu/BR-037-kanban-install-consumer-board-contamination.md)  
 
 ---
 
@@ -87,7 +87,7 @@ Implement a detector that:
 
 - Encodes explicit rules for:
   - Board title contamination (`AI Dev Kit – Kanban Board`).
-  - Dev-kit FR/BR repo documents under `docs/kanban/fr-br/`.
+  - Dev-kit FR/BR repo documents under `docs/kanban/fbu/`.
   - Dev-kit repository stories and specific epics known to be framework-internal.
 
 - Returns a list of findings `(path, classification, reason)` suitable for:

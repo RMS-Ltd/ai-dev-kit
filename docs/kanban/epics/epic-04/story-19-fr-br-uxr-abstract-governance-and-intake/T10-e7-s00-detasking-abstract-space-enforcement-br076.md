@@ -16,8 +16,8 @@ housekeeping_policy: keep
 **Version Anchor:** v0.4.19.10+2 (implementation); RW -d trace **v0.4.19.10+3**  
 **Code:** E04S19T10
 
-**Upstream:** [BR-076 — E7:S00 must not host concrete tasks](../../../fr-br/BR-076-e7-s00-must-not-host-concrete-tasks.md)  
-**Related:** [FR-072](../../../fr-br/FR-072-uniform-repository-abstract-space-kanban-rules.md), [E04:S19:T08](T08-fr072-approach-d-phase-d2-d4-migration-and-doc-sweep.md), [E07:S00 story-00-uxr-repo](../../epic-07/story-00-uxr-repo.md)
+**Upstream:** [BR-076 — E7:S00 must not host concrete tasks](../../../fbu/BR-076-e7-s00-must-not-host-concrete-tasks.md)  
+**Related:** [FR-072](../../../fbu/FR-072-uniform-repository-abstract-space-kanban-rules.md), [E04:S19:T08](T08-fr072-approach-d-phase-d2-d4-migration-and-doc-sweep.md), [E07:S00 story-00-uxr-repo](../../epic-07/story-00-uxr-repo.md)
 
 Publication Status: NOT_APPLICABLE  
 Publication N/A Reason: Consolidated IPP is planning SoT — [`IPP-E4S19T10-e7-s00-detasking-br076.md`](../../../../implementation-cycles/IPP-E04S19T10-e7-s00-detasking-br076.md)
@@ -26,9 +26,9 @@ Publication N/A Reason: Consolidated IPP is planning SoT — [`IPP-E4S19T10-e7-s
 
 ## Input
 
-- [BR-076](../../../fr-br/BR-076-e7-s00-must-not-host-concrete-tasks.md)
+- [BR-076](../../../fbu/BR-076-e7-s00-must-not-host-concrete-tasks.md)
 - [IPP-E4S19T10](../../../../implementation-cycles/IPP-E04S19T10-e7-s00-detasking-br076.md)
-- [FR-072](../../../fr-br/FR-072-uniform-repository-abstract-space-kanban-rules.md) (Approach A — E7 conforms to E5 S00 model)
+- [FR-072](../../../fbu/FR-072-uniform-repository-abstract-space-kanban-rules.md) (Approach A — E7 conforms to E5 S00 model)
 - [dev-kit-versioning-policy.md](../../../../governance/standards/dev-kit-versioning-policy.md) — S00 Abstract Space and Repository-Anchor Transition
 - [E5:S00 abstract-only reference](../../epic-05/story-00-fr-repo.md)
 
@@ -74,8 +74,8 @@ Publication N/A Reason: Consolidated IPP is planning SoT — [`IPP-E4S19T10-e7-s
 
 ## References
 
-- [BR-076](../../../fr-br/BR-076-e7-s00-must-not-host-concrete-tasks.md)
+- [BR-076](../../../fbu/BR-076-e7-s00-must-not-host-concrete-tasks.md)
 - [IPP-E4S19T10](../../../../implementation-cycles/IPP-E04S19T10-e7-s00-detasking-br076.md)
-- [FR-072](../../../fr-br/FR-072-uniform-repository-abstract-space-kanban-rules.md)
+- [FR-072](../../../fbu/FR-072-uniform-repository-abstract-space-kanban-rules.md)
 - [E04:S19:T08](T08-fr072-approach-d-phase-d2-d4-migration-and-doc-sweep.md)
 - [Story 019](../story-19-fr-br-uxr-abstract-governance-and-intake.md)

@@ -103,10 +103,10 @@ The MoSCOW priority list is updated LAST.
 - Scan MoSCOW for terminal rows (`COMPLETE`, `RESOLVED`, shipped Won't) and **prune** after ledger update
 - **Forbidden:** archive footnote paragraphs on `kboard.md`; `**YYYY-MM-DD:**` journal lines between rows; leaving `✅ COMPLETE` on the active board
 - **BR-059 (narrow):** do not auto-add every story-checklist `TODO` during UKW — keep existing **Could Have** backlog; prune terminal rows + journal/footnote bloat only (FR-109)
-- Active board = live priorities; backlog remains in story checklists and `fr-br/` until promoted
+- Active board = live priorities; backlog remains in story checklists and `fbu/` until promoted
 
 **Step 7: FR/BR/UXR Board Cleanup (`kboard.md`) — FR-050 / FR-076 / FR-097**
-- Analyze FR/BR/UXR completion status from linked `fr-br/*.md` source docs
+- Analyze FR/BR/UXR completion status from linked `fbu/*.md` source docs
 - Treat fbuboard sync as **required** in comprehensive and bookkeeping paths (not best-effort)
 - Apply deterministic active-row reconciliation:
   - Prune active MoSCOW rows when linked source status is terminal (`COMPLETE`, `COMPLETED`, `IMPLEMENTED`, `FIXED`, `RESOLVED`)
@@ -130,7 +130,7 @@ The MoSCOW priority list is updated LAST.
 - Deduplicate dashboard IDs; preserve link integrity to source FR/BR/UXR docs
 
 **Step 9: FR/BR/UXR Cross-Document Consistency — FR-050**
-- Update `intake-structure.md` inventory when `fr-br/` changed
+- Update `intake-structure.md` inventory when `fbu/` changed
 - Validate `kboard.md` ↔ `intake-completed.md` ↔ `intake-structure.md`:
   - No terminal FBUs on active board (except documented exceptions)
   - Pruned FBUs present in completed archive with timestamps

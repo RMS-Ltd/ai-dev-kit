@@ -16,7 +16,7 @@ housekeeping_policy: keep
 **Completed:** 2026-03-11  
 **Version:** v0.6.6.41+1  
 
-**Associated BR:** [BR-042](../../../fr-br/BR-042-ukw-agent-board-cleanup-failure.md)
+**Associated BR:** [BR-042](../../../fbu/BR-042-ukw-agent-board-cleanup-failure.md)
 
 ---
 

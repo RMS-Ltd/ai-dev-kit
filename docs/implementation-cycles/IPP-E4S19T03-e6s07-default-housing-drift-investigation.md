@@ -9,7 +9,7 @@ housekeeping_policy: keep
 # E4:S19:T03 - Planning: Spec, Tests, Implementation Plan (IPP)
 
 **Host Task:** [`T03-e6s07-default-housing-drift-investigation-and-closure-decision-fr087.md`](../kanban/epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T03-e6s07-default-housing-drift-investigation-and-closure-decision-fr087.md) **(E4:S19:T03)**  
-**Planning for:** [FR-087 - Investigate `E6:S07` default-housing drift, codification points, and closure decision](../kanban/fr-br/FR-087-e6s07-default-housing-root-cause-and-closure-decision.md)  
+**Planning for:** [FR-087 - Investigate `E6:S07` default-housing drift, codification points, and closure decision](../kanban/fbu/FR-087-e6s07-default-housing-root-cause-and-closure-decision.md)  
 **Status:** Published (Wave 1 IPP); Wave 2–3 investigation report delivered — see [`E4S19T03-e6s07-default-housing-investigation-report.md`](E4S19T03-e6s07-default-housing-investigation-report.md); Wave 4 migrations and guardrail filing remain open
 
 ---
@@ -50,10 +50,10 @@ housekeeping_policy: keep
 ### 1.4 Referenced sources
 
 - Host task: [`T03-e6s07-default-housing-drift-investigation-and-closure-decision-fr087.md`](../kanban/epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T03-e6s07-default-housing-drift-investigation-and-closure-decision-fr087.md)
-- Upstream FR: [`FR-087`](../kanban/fr-br/FR-087-e6s07-default-housing-root-cause-and-closure-decision.md)
+- Upstream FR: [`FR-087`](../kanban/fbu/FR-087-e6s07-default-housing-root-cause-and-closure-decision.md)
 - Story container: [`story-19-fr-br-uxr-abstract-governance-and-intake.md`](../kanban/epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake.md)
 - Subject under investigation: [`story-07-adk-implementation-analysis-and-package-management.md`](../kanban/epics/epic-06/story-07-adk-implementation-analysis-and-package-management.md)
-- AC6 evidence (re-housing precedent): [`BR-069`](../kanban/fr-br/BR-069-kboard-fbuboard-earliest-last-modified-timestamps-overwritten.md) -> [`E2:S15:T04`](../kanban/epics/epic-02/story-15-ipw-governance-and-publication-contract/T04-investigate-earliest-last-modified-timestamp-overwrite-regression-br069.md)
+- AC6 evidence (re-housing precedent): [`BR-069`](../kanban/fbu/BR-069-kboard-fbuboard-earliest-last-modified-timestamps-overwritten.md) -> [`E2:S15:T04`](../kanban/epics/epic-02/story-15-ipw-governance-and-publication-contract/T04-investigate-earliest-last-modified-timestamp-overwrite-regression-br069.md)
 - Adjacent governance contract (perpetual-task placement, deliberately not duplicated here): [`IPP-E2S16T1`](IPP-E2S16T01-canonical-perpetual-ongoing-tasks-story.md)
 - Adjacent governance contract (FBU meta governance shape reference): [`IPP-E4S19T6`](IPP-E4S19T06-fbu-meta-normalization-and-intake-governance.md)
 - IPW execution guide: [`implementation-planning-workflow-agent-execution.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/implementation-planning-workflow-agent-execution.md)
@@ -301,7 +301,7 @@ Wave 4 is the operational consequence of the disposition decision and lives enti
 
 - `docs/implementation-cycles/IPP-E4S19T3-e6s07-default-housing-drift-investigation.md` (new - this file)
 - `docs/kanban/epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T03-e6s07-default-housing-drift-investigation-and-closure-decision-fr087.md`
-- `docs/kanban/fr-br/FR-087-e6s07-default-housing-root-cause-and-closure-decision.md`
+- `docs/kanban/fbu/FR-087-e6s07-default-housing-root-cause-and-closure-decision.md`
 - `docs/kanban/epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake.md`
 - `docs/kanban/kboard.md`
 - `docs/kanban/kboard.md`
@@ -330,10 +330,10 @@ Deliverable checks:
 
 - [Host task E4:S19:T03](../kanban/epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T03-e6s07-default-housing-drift-investigation-and-closure-decision-fr087.md)
 - [Investigation report (Wave 2–3)](E4S19T03-e6s07-default-housing-investigation-report.md)
-- [FR-087 - Investigate `E6:S07` default-housing drift, codification points, and closure decision](../kanban/fr-br/FR-087-e6s07-default-housing-root-cause-and-closure-decision.md)
+- [FR-087 - Investigate `E6:S07` default-housing drift, codification points, and closure decision](../kanban/fbu/FR-087-e6s07-default-housing-root-cause-and-closure-decision.md)
 - [Story 019 - FR/BR/UXR abstract governance and intake](../kanban/epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake.md)
 - [Story 007 - ADK implementation analysis and package management (subject under investigation)](../kanban/epics/epic-06/story-07-adk-implementation-analysis-and-package-management.md)
-- [BR-069 - Last-modified timestamp overwrite (re-housing precedent)](../kanban/fr-br/BR-069-kboard-fbuboard-earliest-last-modified-timestamps-overwritten.md)
+- [BR-069 - Last-modified timestamp overwrite (re-housing precedent)](../kanban/fbu/BR-069-kboard-fbuboard-earliest-last-modified-timestamps-overwritten.md)
 - [E2:S15:T04 - BR-069 investigation (re-housing target)](../kanban/epics/epic-02/story-15-ipw-governance-and-publication-contract/T04-investigate-earliest-last-modified-timestamp-overwrite-regression-br069.md)
 - [IPP-E2S16T1 - Canonical perpetual ongoing tasks story (delegated perpetual scope)](IPP-E2S16T01-canonical-perpetual-ongoing-tasks-story.md)
 - [IPP-E4S19T6 - FBU meta normalization and intake governance (governance shape reference)](IPP-E4S19T06-fbu-meta-normalization-and-intake-governance.md)
@@ -341,4 +341,4 @@ Deliverable checks:
 - [FR/BR intake guide](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/kanban/FR_BR_INTAKE_GUIDE.md)
 - [Intake skill](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/.cursor/skills/intake-process/SKILL.md)
 - [IPW execution guide](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/implementation-planning-workflow-agent-execution.md)
-- [FR-042 - IPW canonical workflow](../kanban/fr-br/FR-042-implementation-planning-workflow-ipw.md)
+- [FR-042 - IPW canonical workflow](../kanban/fbu/FR-042-implementation-planning-workflow-ipw.md)

@@ -3,7 +3,7 @@ BR-090 / E5:S09:T13: Docusaurus @docusaurus/faster + 3.10.1 alignment contract.
 
 Executable spec T1–T6 from IPP-E05S09T13.
 
-See: docs/kanban/fr-br/BR-090-docusaurus-faster-missing-dependabot-310-lockfile-drift.md
+See: docs/kanban/fbu/BR-090-docusaurus-faster-missing-dependabot-310-lockfile-drift.md
 """
 
 from __future__ import annotations

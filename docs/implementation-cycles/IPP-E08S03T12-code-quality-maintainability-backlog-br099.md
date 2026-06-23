@@ -10,10 +10,10 @@ housekeeping_policy: keep
 # E08:S03:T12 — Planning: Spec, Tests, Implementation Plan (IPW)
 
 **Host Task:** [`T12-code-quality-maintainability-backlog-br099.md`](../kanban/epics/epic-08/story-03-automation-scripts/T12-code-quality-maintainability-backlog-br099.md) **(E08:S03:T12)**  
-**Planning for:** [BR-099](../kanban/fr-br/BR-099-code-quality-maintainability-backlog.md)  
+**Planning for:** [BR-099](../kanban/fbu/BR-099-code-quality-maintainability-backlog.md)  
 **Status:** Revised — wave 6 **PLANNED** @ **v0.8.3.12+9**; step-28 **103/Fair** @ `d5c4bca5`; **Path B**; **`implement wave 6`** authorized
 
-> **IPW:** Produced for E08:S03:T12. Bulk **Code Quality maintainability** burn-down; complements security CodeQL tasks E08:S03:T08–T11 and defers reliability ([BR-100](../kanban/fr-br/BR-100-code-quality-reliability-backlog.md) / E08:S03:T13).
+> **IPW:** Produced for E08:S03:T12. Bulk **Code Quality maintainability** burn-down; complements security CodeQL tasks E08:S03:T08–T11 and defers reliability ([BR-100](../kanban/fbu/BR-100-code-quality-reliability-backlog.md) / E08:S03:T13).
 >
 > **Revision (2026-06-05):** Wave-1 shipped @ v0.8.3.12+1–+3. Dashboard re-scan: **560→145** open maintainability (−74.1%) @ `main` `cadb0c3`; score still **Fair**.
 >
@@ -93,7 +93,7 @@ housekeeping_policy: keep
 
 ### 2.1 Goal
 
-Three-phase maintainability burn-down per [BR-099](../kanban/fr-br/BR-099-code-quality-maintainability-backlog.md), extended with waves 4–5 and closure:
+Three-phase maintainability burn-down per [BR-099](../kanban/fbu/BR-099-code-quality-maintainability-backlog.md), extended with waves 4–5 and closure:
 
 - **Phase A (wave 1 — complete):** Autofix-safe hygiene across full Python corpus; ≥50% open-count reduction; CI green.
 - **Phase B (wave 2 — complete):** Script/test cleanup (`py/print-during-import` + fold rules) in scope dirs; post-wave-2 manifest and RW release @ v0.8.3.12+4.
@@ -482,7 +482,7 @@ Score each trigger **Y** or **N** with one-line evidence. Criteria: [`ipw-adr-ne
 | Doc ID | Path | Scope of change | Tied to (RF/T/impl step) |
 | ------ | ---- | --------------- | ------------------------ |
 | D-U1 | `docs/kanban/epics/epic-08/story-03-automation-scripts/T12-code-quality-maintainability-backlog-br099.md` | Wave 1–5 manifests (**done**); post-merge manifest @ **103/Fair** (**done**); wave-6 pre-manifest + triage (**done** @ IPW); post-wave-6 (**open**) | RF13, RF22, RF23 |
-| D-U2 | `docs/kanban/fr-br/BR-099-code-quality-maintainability-backlog.md` | Wave-6 narrative (**done** @ IPW); resolution (**open** — Good+ only) | RF6, steps 58/29a |
+| D-U2 | `docs/kanban/fbu/BR-099-code-quality-maintainability-backlog.md` | Wave-6 narrative (**done** @ IPW); resolution (**open** — Good+ only) | RF6, steps 58/29a |
 | D-U3 | `docs/kanban/epics/epic-08/story-03-automation-scripts.md` | T12 checklist — wave 6 planned (**done** @ IPW) | step 59 |
 | D-U4 | `docs/kanban/kboard.md` | T12 row — wave 6 planned (**done** @ IPW); terminal RW stamp (**open**) | steps 59/29a |
 | D-U5 | `setup.py` | `ruff` dev dependency (**done**) | step 3, RNF1 |
@@ -500,7 +500,7 @@ Score each trigger **Y** or **N** with one-line evidence. Criteria: [`ipw-adr-ne
 
 | Gap / topic | Resolution (CREATE row above, or NONE + reason) |
 | ----------- | ----------------------------------------------- |
-| Code quality burn-down methodology | NONE — BR-099 wave table is authoritative; governed by [BR-099](../kanban/fr-br/BR-099-code-quality-maintainability-backlog.md) and [code-quality-monitoring-processes.md](../architecture/standards-and-adrs/code-quality-monitoring-processes.md) |
+| Code quality burn-down methodology | NONE — BR-099 wave table is authoritative; governed by [BR-099](../kanban/fbu/BR-099-code-quality-maintainability-backlog.md) and [code-quality-monitoring-processes.md](../architecture/standards-and-adrs/code-quality-monitoring-processes.md) |
 | New ADR for hygiene approach | NONE — EXEMPT per §2.5 |
 | New CI quality gate workflow | NONE — out of scope; dashboard verification manual at steps 12/28 |
 | Dedicated baseline manifest file | NONE — AC requires manifest in task doc only |
@@ -518,7 +518,7 @@ Score each trigger **Y** or **N** with one-line evidence. Criteria: [`ipw-adr-ne
 | ------ | -------------- | ------------------ | ------------------------------- | --------- | -------------------- |
 | D-C1 | `docs/implementation-cycles/IPP-E08S03T12-code-quality-maintainability-backlog-br099.md` | NOT_APPLICABLE | Planning artifact; not Docusaurus-facing | evergreen | Task doc Input + References |
 | D-U1 | `docs/kanban/epics/epic-08/story-03-automation-scripts/T12-code-quality-maintainability-backlog-br099.md` | NOT_APPLICABLE | Kanban internal | evergreen | BR-099 implementing task link (exists) |
-| D-U2 | `docs/kanban/fr-br/BR-099-code-quality-maintainability-backlog.md` | NOT_APPLICABLE | Kanban internal | evergreen | Task doc upstream link (exists) |
+| D-U2 | `docs/kanban/fbu/BR-099-code-quality-maintainability-backlog.md` | NOT_APPLICABLE | Kanban internal | evergreen | Task doc upstream link (exists) |
 | D-U3 | `docs/kanban/epics/epic-08/story-03-automation-scripts.md` | NOT_APPLICABLE | Kanban internal | evergreen | Story checklist |
 | D-U4 | `docs/kanban/kboard.md` | NOT_APPLICABLE | Kanban internal | evergreen | MoSCOW row |
 | D-U5 | `setup.py` | NOT_APPLICABLE | Dev dependency manifest | evergreen | None required |
@@ -597,8 +597,8 @@ Score each trigger **Y** or **N** with one-line evidence. Criteria: [`ipw-adr-ne
 
 ## References
 
-- [BR-099](../kanban/fr-br/BR-099-code-quality-maintainability-backlog.md)
-- [BR-100](../kanban/fr-br/BR-100-code-quality-reliability-backlog.md)
+- [BR-099](../kanban/fbu/BR-099-code-quality-maintainability-backlog.md)
+- [BR-100](../kanban/fbu/BR-100-code-quality-reliability-backlog.md)
 - [IPP-E08S03T13](IPP-E08S03T13-code-quality-reliability-backlog-br100.md) — T13 wave-2 print-at-import deferral (**16** → T12 wave 4 @ +6)
 - [CQG operator guide](../../packages/frameworks/tooling-automation/docs/code-quality-gate-operator-guide.md) — wave-6 verification (FR-113 / E08:S03:T17)
 - [scripts/sync_greenfield_install.py](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/scripts/sync_greenfield_install.py) — mirror sync after wave-6 packages edits
@@ -608,8 +608,8 @@ Score each trigger **Y** or **N** with one-line evidence. Criteria: [`ipw-adr-ne
 - [IPP-E08S03T04](IPP-E08S03T04-ci-test-workflow-pytest-remediation-br058.md)
 - [code-quality-monitoring-processes.md](../architecture/standards-and-adrs/code-quality-monitoring-processes.md)
 - [ipw-adr-necessity-checklist.md](../architecture/standards-and-adrs/ipw-adr-necessity-checklist.md)
-- [FR-042](../kanban/fr-br/FR-042-implementation-planning-workflow-ipw.md)
-- [BR-097](../kanban/fr-br/BR-097-rw-agent-reuses-tagged-build-and-force-moves-release-tags.md)
+- [FR-042](../kanban/fbu/FR-042-implementation-planning-workflow-ipw.md)
+- [BR-097](../kanban/fbu/BR-097-rw-agent-reuses-tagged-build-and-force-moves-release-tags.md)
 
 ---
 

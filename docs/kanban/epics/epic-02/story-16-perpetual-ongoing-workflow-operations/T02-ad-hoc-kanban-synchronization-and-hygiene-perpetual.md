@@ -19,13 +19,13 @@ housekeeping_policy: keep
 **Code:** E02S16T02
 **Task Type:** Perpetual Maintenance
 
-**Upstream:** [FR-088 - Dedicated story for perpetual ongoing tasks](../../../fr-br/FR-088-dedicated-story-for-perpetual-ongoing-tasks.md)
+**Upstream:** [FR-088 - Dedicated story for perpetual ongoing tasks](../../../fbu/FR-088-dedicated-story-for-perpetual-ongoing-tasks.md)
 
 ---
 
 ## Input
 
-- [FR-088](../../../fr-br/FR-088-dedicated-story-for-perpetual-ongoing-tasks.md) requirements.
+- [FR-088](../../../fbu/FR-088-dedicated-story-for-perpetual-ongoing-tasks.md) requirements.
 - Story-level perpetual ownership model in [Story 016](../story-16-perpetual-ongoing-workflow-operations.md).
 - Canonical policy IPP: [`IPP-E2S16T1-canonical-perpetual-ongoing-tasks-story.md`](../../../../implementation-cycles/IPP-E2S16T01-canonical-perpetual-ongoing-tasks-story.md).
 

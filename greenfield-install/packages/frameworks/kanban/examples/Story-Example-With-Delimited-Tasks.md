@@ -188,8 +188,8 @@ Implement Kanban-specific components of FR-016: Kanban Granularity & Discrete Ta
 ## References
 
 - **E2:S09:** `docs/kanban/epics/epic-02/story-09-kanban-granularity-discrete-task-docs.md`
-- **FR-016:** `docs/kanban/fr-br/FR-016-kanban-granularity-discrete-task-docs.md`
-- **FR-017:** `docs/kanban/fr-br/FR-017-versioning-policy-hardening-doc-init-build.md`
+- **FR-016:** `docs/kanban/fbu/FR-016-kanban-granularity-discrete-task-docs.md`
+- **FR-017:** `docs/kanban/fbu/FR-017-versioning-policy-hardening-doc-init-build.md`
 - **Kanban Governance Policy (Canonical):** `packages/frameworks/kanban/policies/kanban-governance-policy.md`
 - **Task Template:** `packages/frameworks/kanban/templates/TASK_TEMPLATE.md`
 - **Story Template:** `packages/frameworks/kanban/templates/STORY_TEMPLATE.md`

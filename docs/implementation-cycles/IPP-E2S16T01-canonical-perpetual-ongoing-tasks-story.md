@@ -9,7 +9,7 @@ housekeeping_policy: keep
 # E2:S16:T01 - Planning: Spec, Tests, Implementation Plan (IPP)
 
 **Host Task:** [`T01-establish-canonical-perpetual-ongoing-tasks-story-fr088.md`](../kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T01-establish-canonical-perpetual-ongoing-tasks-story-fr088.md) **(E2:S16:T01)**  
-**Planning for:** [FR-088 - Dedicated story for perpetual ongoing tasks](../kanban/fr-br/FR-088-dedicated-story-for-perpetual-ongoing-tasks.md)  
+**Planning for:** [FR-088 - Dedicated story for perpetual ongoing tasks](../kanban/fbu/FR-088-dedicated-story-for-perpetual-ongoing-tasks.md)  
 **Status:** Published (planning artifact; downstream waves owned by `E2:S16:T03`)
 
 ---
@@ -43,16 +43,16 @@ housekeeping_policy: keep
   - Perpetual task documents must carry the canonical `Task Type: Perpetual Maintenance` marker so the existing validator pattern (`validate_version_bump.py:78`) can detect them.
   - Existing perpetual `BUILD` history is preserved across any renumbering; legacy IDs survive only as historical aliases, not active anchors.
 - **In scope:** Story 016 ownership policy, perpetual-task inclusion criteria, legacy `T101+` renumbering map, ratification of follow-on tasks, guardrail contract for downstream enforcement, bidirectional wiring contract.
-- **Out of scope:** Executing the inventory and disposition (owned by [`E2:S16:T02`](../kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T02-inventory-and-classify-workflow-perpetual-tasks.md)), executing migrations and validator/policy implementation (owned by [`E2:S16:T03`](../kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md)), routing-away-from-`E6:S07` enforcement (owned by [FR-087](../kanban/fr-br/FR-087-e6s07-default-housing-root-cause-and-closure-decision.md) / `E4:S19:T03`).
+- **Out of scope:** Executing the inventory and disposition (owned by [`E2:S16:T02`](../kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T02-inventory-and-classify-workflow-perpetual-tasks.md)), executing migrations and validator/policy implementation (owned by [`E2:S16:T03`](../kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md)), routing-away-from-`E6:S07` enforcement (owned by [FR-087](../kanban/fbu/FR-087-e6s07-default-housing-root-cause-and-closure-decision.md) / `E4:S19:T03`).
 
 ### 1.4 Referenced sources
 
 - Host task: [`T01-establish-canonical-perpetual-ongoing-tasks-story-fr088.md`](../kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T01-establish-canonical-perpetual-ongoing-tasks-story-fr088.md)
-- Upstream FR: [`FR-088`](../kanban/fr-br/FR-088-dedicated-story-for-perpetual-ongoing-tasks.md)
+- Upstream FR: [`FR-088`](../kanban/fbu/FR-088-dedicated-story-for-perpetual-ongoing-tasks.md)
 - Story container: [`story-16-perpetual-ongoing-workflow-operations.md`](../kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations.md)
 - Versioning policy §6.1.1: [`dev-kit-versioning-policy.md`](../architecture/standards-and-adrs/dev-kit-versioning-policy.md)
 - IPW execution guide: [`implementation-planning-workflow-agent-execution.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/implementation-planning-workflow-agent-execution.md)
-- Related FRs: [`FR-041`](../kanban/fr-br/FR-041-perpetual-task-for-release-workflow-maintenance.md) (RW maintenance), [`FR-026`](../kanban/fr-br/FR-026-canonical-perpetual-task-for-changelog-maintenance.md) (CMW), [`FR-087`](../kanban/fr-br/FR-087-e6s07-default-housing-root-cause-and-closure-decision.md) (E6:S07 default-housing drift)
+- Related FRs: [`FR-041`](../kanban/fbu/FR-041-perpetual-task-for-release-workflow-maintenance.md) (RW maintenance), [`FR-026`](../kanban/fbu/FR-026-canonical-perpetual-task-for-changelog-maintenance.md) (CMW), [`FR-087`](../kanban/fbu/FR-087-e6s07-default-housing-root-cause-and-closure-decision.md) (E6:S07 default-housing drift)
 
 ---
 
@@ -223,7 +223,7 @@ Wave 3 landed under `T03` as the substantive guardrail enforcement layer. T01 re
 
 - `docs/implementation-cycles/IPP-E2S16T1-canonical-perpetual-ongoing-tasks-story.md` (new — this file)
 - `docs/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T01-establish-canonical-perpetual-ongoing-tasks-story-fr088.md`
-- `docs/kanban/fr-br/FR-088-dedicated-story-for-perpetual-ongoing-tasks.md`
+- `docs/kanban/fbu/FR-088-dedicated-story-for-perpetual-ongoing-tasks.md`
 - `docs/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations.md`
 
 ### 4.6 Additional files touched by Wave 2 and Wave 3
@@ -264,7 +264,7 @@ Deliverable checks:
 ## 6. References
 
 - [Host task E2:S16:T01](../kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T01-establish-canonical-perpetual-ongoing-tasks-story-fr088.md)
-- [FR-088 - Dedicated story for perpetual ongoing tasks](../kanban/fr-br/FR-088-dedicated-story-for-perpetual-ongoing-tasks.md)
+- [FR-088 - Dedicated story for perpetual ongoing tasks](../kanban/fbu/FR-088-dedicated-story-for-perpetual-ongoing-tasks.md)
 - [Story 016 - Perpetual ongoing workflow operations](../kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations.md)
 - [E2:S16:T02 - Inventory and classify workflow perpetual tasks](../kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T02-inventory-and-classify-workflow-perpetual-tasks.md)
 - [E2:S16:T03 - Workflow maintenance perpetual umbrella](../kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md)
@@ -273,7 +273,7 @@ Deliverable checks:
 - [E2:S16:T06 - UKW optional reprioritization `--rp` flag (FR-085)](../kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T06-ukw-optional-reprioritization-rp-flag-fr085.md)
 - [Dev-kit versioning policy §6.1.1 - Perpetual tasks](../architecture/standards-and-adrs/dev-kit-versioning-policy.md)
 - [IPW execution guide](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/implementation-planning-workflow-agent-execution.md)
-- [FR-042 - IPW canonical workflow](../kanban/fr-br/FR-042-implementation-planning-workflow-ipw.md)
-- [FR-041 - Perpetual task for RW maintenance](../kanban/fr-br/FR-041-perpetual-task-for-release-workflow-maintenance.md)
-- [FR-026 - Canonical perpetual task for changelog maintenance](../kanban/fr-br/FR-026-canonical-perpetual-task-for-changelog-maintenance.md)
-- [FR-087 - E6:S07 default-housing drift investigation](../kanban/fr-br/FR-087-e6s07-default-housing-root-cause-and-closure-decision.md)
+- [FR-042 - IPW canonical workflow](../kanban/fbu/FR-042-implementation-planning-workflow-ipw.md)
+- [FR-041 - Perpetual task for RW maintenance](../kanban/fbu/FR-041-perpetual-task-for-release-workflow-maintenance.md)
+- [FR-026 - Canonical perpetual task for changelog maintenance](../kanban/fbu/FR-026-canonical-perpetual-task-for-changelog-maintenance.md)
+- [FR-087 - E6:S07 default-housing drift investigation](../kanban/fbu/FR-087-e6s07-default-housing-root-cause-and-closure-decision.md)

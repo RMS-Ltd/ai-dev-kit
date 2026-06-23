@@ -130,7 +130,7 @@ See [contributing-translations.md](../../../../docs/documentation/user-docs/cont
 
 - [translation-workflow-and-review.md](../../../../docs/governance/standards/translation-workflow-and-review.md)
 - [translatable-content-inventory.md](../../../../docs/governance/standards/translatable-content-inventory.md)
-- [FR-006](../../../../docs/project-management/kanban/fr-br/FR-006-localization-language-selection-uk-us-english.md)
+- [FR-006](../../../../docs/project-management/kanban/fbu/FR-006-localization-language-selection-uk-us-english.md)
 - [ADR-024](../../../../docs/architecture/standards-and-adrs/ADR-024-i18n-framework-strategy.md)
 - [IPP-E21S02T01](../../../../docs/implementation-cycles/IPP-E21S02T01-choose-i18n-framework.md)
 - [IPP-E21S01T04](../../../../docs/implementation-cycles/IPP-E21S01T04-ukus-content-variants-mvp.md)

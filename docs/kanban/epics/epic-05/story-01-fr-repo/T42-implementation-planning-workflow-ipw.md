@@ -47,9 +47,9 @@ This task covers:
 
 - **IPW planning artifact (spec / test design / impl plan):** [IPP-E5S1T42-ascertain-requirements-sequence-closure.md](../../../../implementation-cycles/IPP-E5S01T42-ascertain-requirements-sequence-closure.md)
 - **IPP closure artifact (R14/AC13):** [IPP-E5S1T42-ascertain-requirements-sequence-closure.md](../../../../implementation-cycles/IPP-E5S01T42-ascertain-requirements-sequence-closure.md)
-- [FR-042 — IPW + ICW consolidation](../../../fr-br/FR-042-implementation-planning-workflow-ipw.md)
+- [FR-042 — IPW + ICW consolidation](../../../fbu/FR-042-implementation-planning-workflow-ipw.md)
 - `packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/implementation-cycle-sop.md`
-- **Prior ICW work (historical):** [FR-040](../../../fr-br/FR-040-implementation-cycle-workflow-icw.md), [E05:S01:T40](T40-implementation-cycle-workflow-icw.md), [FR-048](../../../fr-br/FR-048-icw-task-identifier-argument.md), [E05:S01:T48](T48-icw-task-identifier-argument.md)
+- **Prior ICW work (historical):** [FR-040](../../../fbu/FR-040-implementation-cycle-workflow-icw.md), [E05:S01:T40](T40-implementation-cycle-workflow-icw.md), [FR-048](../../../fbu/FR-048-icw-task-identifier-argument.md), [E05:S01:T48](T48-icw-task-identifier-argument.md)
 
 ---
 

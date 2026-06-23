@@ -1,0 +1,69 @@
+{
+  "contract": "FR-092 / ADR-018 (RW Step 7 scoped kanban reconciliation)",
+  "invocation_context": "rw_step_7",
+  "release_scope": {
+    "epic": 5,
+    "story": 2,
+    "task": 7,
+    "task_id": "E5:S2:T7",
+    "version_string": "v0.5.2.7+0"
+  },
+  "stamp_evidence": {},
+  "summary": {
+    "stamps_appended_with_evidence": 0,
+    "stamps_preserved_existing": 1,
+    "stamps_skipped_no_evidence": 0,
+    "total_changes": 10,
+    "touched_surfaces": [
+      "task_doc",
+      "fbu_doc",
+      "kboard",
+      "story_doc",
+      "epic_doc"
+    ],
+    "untouched_surfaces": []
+  },
+  "surfaces": {
+    "task_doc": {
+      "touched": true,
+      "paths": [
+        "docs/kanban/epics/epic-05/story-02-documentation-maintenance-framework/T07-unified-documentation-governance-strategy-fr139.md"
+      ],
+      "changes": [
+        "Version anchor v0.5.2.7+0; RW -k kanban init marker"
+      ]
+    },
+    "fbu_doc": {
+      "touched": true,
+      "paths": [
+        "docs/kanban/fr-br/FR-139-unified-documentation-governance-strategy.md"
+      ],
+      "changes": [
+        "Version v0.5.2.7+0; status ACCEPTED"
+      ]
+    },
+    "kboard": {
+      "touched": true,
+      "paths": [
+        "docs/kanban/kboard.md"
+      ],
+      "changes": [
+        "Board header version v0.5.2.7+0",
+        "E05:S02:T07 row kanban-init token (stamp preserved)"
+      ]
+    },
+    "story_doc": {
+      "touched": true,
+      "paths": [
+        "docs/kanban/epics/epic-05/story-02-documentation-maintenance-framework.md"
+      ]
+    },
+    "epic_doc": {
+      "touched": true,
+      "paths": [
+        "docs/kanban/epics/epic-05/epic-05.md"
+      ]
+    }
+  },
+  "timestamp_utc": "2026-06-23 12:24:01 UTC"
+}

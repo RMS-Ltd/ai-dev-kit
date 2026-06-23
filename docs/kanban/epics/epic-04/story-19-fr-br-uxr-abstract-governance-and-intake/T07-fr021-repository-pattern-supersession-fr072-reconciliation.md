@@ -16,9 +16,9 @@ housekeeping_policy: keep
 **Version Anchor:** v0.4.19.7+1  
 **Code:** E04S19T07
 
-**Upstream:** [FR-021 — FR/BR/UXR repository stories](../../../fr-br/FR-021-fr-br-uxr-repository-stories.md)  
+**Upstream:** [FR-021 — FR/BR/UXR repository stories](../../../fbu/FR-021-fr-br-uxr-repository-stories.md)  
 **Merged into:** [E04:S19:T08](T08-fr072-approach-d-phase-d2-d4-migration-and-doc-sweep.md)  
-**Related:** [FR-072](../../../fr-br/FR-072-uniform-repository-abstract-space-kanban-rules.md), [ADR-014](../../../../architecture/standards-and-adrs/ADR-014-repository-abstract-space-fr072-approach-d.md)  
+**Related:** [FR-072](../../../fbu/FR-072-uniform-repository-abstract-space-kanban-rules.md), [ADR-014](../../../../architecture/standards-and-adrs/ADR-014-repository-abstract-space-fr072-approach-d.md)  
 **Historical registry:** [E05:S01:T21](../../epic-05/story-01-fr-repo/T21-fr-br-uxr-repository-stories.md)
 
 Publication Status: NOT_APPLICABLE  
@@ -28,7 +28,7 @@ Publication N/A Reason: Delivered via [IPP-E4S19T8](../../../../implementation-c
 
 ## Input
 
-- [FR-021](../../../fr-br/FR-021-fr-br-uxr-repository-stories.md); [FR-072](../../../fr-br/FR-072-uniform-repository-abstract-space-kanban-rules.md) (Approach D).
+- [FR-021](../../../fbu/FR-021-fr-br-uxr-repository-stories.md); [FR-072](../../../fbu/FR-072-uniform-repository-abstract-space-kanban-rules.md) (Approach D).
 - [IPP-E4S19T8](../../../../implementation-cycles/IPP-E04S19T08-fr072-approach-d-d2-d4-migration-and-doc-sweep.md)
 
 ---
@@ -45,6 +45,6 @@ Publication N/A Reason: Delivered via [IPP-E4S19T8](../../../../implementation-c
 
 ## References
 
-- [FR-021](../../../fr-br/FR-021-fr-br-uxr-repository-stories.md)
-- [FR-072](../../../fr-br/FR-072-uniform-repository-abstract-space-kanban-rules.md)
+- [FR-021](../../../fbu/FR-021-fr-br-uxr-repository-stories.md)
+- [FR-072](../../../fbu/FR-072-uniform-repository-abstract-space-kanban-rules.md)
 - [E04:S19:T08](T08-fr072-approach-d-phase-d2-d4-migration-and-doc-sweep.md)

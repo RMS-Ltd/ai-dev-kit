@@ -13,9 +13,9 @@ housekeeping_policy: keep
 **Accepted:** 2026-06-12  
 **Deciders:** Maintainer  
 **Implementing task:** [E02:S15:T14](../../kanban/epics/epic-02/story-15-ipw-governance-and-publication-contract/T14-kanban-stamp-immutability-adr029-framework-defaults-fr130.md)  
-**Origin FR:** [FR-130](../../kanban/fr-br/FR-130-kanban-stamp-immutability-adr029-framework-defaults.md)  
+**Origin FR:** [FR-130](../../kanban/fbu/FR-130-kanban-stamp-immutability-adr029-framework-defaults.md)  
 **Origin:** Drafted at Starborn Legacy during [E06:S09:T26](../../kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T26-starborn-legacy-adk-install-program.md) (ADK install program). **ADK numbering:** ADR-029 — [ADR-028](ADR-028-agentic-kanban-migration-brownfield-fr127.md) is reserved for agentic KMA brownfield migration.  
-**Related:** [FR-097](../../kanban/fr-br/FR-097-board-stamp-authority-and-forensic-timestamp-recovery.md) · [ADR-009](ADR-009-ukw-deep-reprioritization-rp-flag.md) · [UXR-009](../../kanban/fr-br/UXR-009-last-modified-stamp-forensic-integrity-and-drift-protection.md)
+**Related:** [FR-097](../../kanban/fbu/FR-097-board-stamp-authority-and-forensic-timestamp-recovery.md) · [ADR-009](ADR-009-ukw-deep-reprioritization-rp-flag.md) · [UXR-009](../../kanban/fbu/UXR-009-last-modified-stamp-forensic-integrity-and-drift-protection.md)
 
 ---
 
@@ -36,7 +36,7 @@ Each of these operations can stamp every touched row with `now()`, even when zer
 
 ### The root cause
 
-No previous ADR has formally defined the boundary between **substantive work** and **meta-work** for the purpose of timestamp writes at the **architectural invariant** layer. [FR-097](../../kanban/fr-br/FR-097-board-stamp-authority-and-forensic-timestamp-recovery.md) (Board stamp authority) and `enforce_moscow_row_timestamps_with_stats` introduced evidence modes (`non_substantive`, `gated`, `work_authoritative`) but:
+No previous ADR has formally defined the boundary between **substantive work** and **meta-work** for the purpose of timestamp writes at the **architectural invariant** layer. [FR-097](../../kanban/fbu/FR-097-board-stamp-authority-and-forensic-timestamp-recovery.md) (Board stamp authority) and `enforce_moscow_row_timestamps_with_stats` introduced evidence modes (`non_substantive`, `gated`, `work_authoritative`) but:
 
 - The default `evidence_mode` on `enforce_moscow_row_timestamps_with_stats` and `apply_canonical_row_transform_pipeline` remains `work_authoritative` (stamp-friendly)
 - No architectural invariant prohibits stamping during meta-work at the framework default layer
@@ -73,7 +73,7 @@ No previous ADR has formally defined the boundary between **substantive work** a
 
 4. **All ADK workflows** (RW, UKW, MWF, KMA board-touch legs, etc.) MUST invoke timestamp operations in `non_substantive` mode by default. Only the specific RW Step 7 sub-step that marks tasks COMPLETE with release evidence may use `work_authoritative`.
 
-5. **`validate_board_stamp_diff.py`** ([FR-097](../../kanban/fr-br/FR-097-board-stamp-authority-and-forensic-timestamp-recovery.md) Wave 2) is **mandatory and blocking** in all workflows that touch boards — not advisory. A stamp delta without matching evidence in the same change set aborts the workflow.
+5. **`validate_board_stamp_diff.py`** ([FR-097](../../kanban/fbu/FR-097-board-stamp-authority-and-forensic-timestamp-recovery.md) Wave 2) is **mandatory and blocking** in all workflows that touch boards — not advisory. A stamp delta without matching evidence in the same change set aborts the workflow.
 
 6. **Migration scripts** (`install_kanban_framework.py` migration modes, struct converters, KMA write phases, etc.) MUST NOT stamp rows. They may set timestamps to `null` or omit them entirely; they may not fabricate `now()`.
 
@@ -108,7 +108,7 @@ For the purpose of timestamp writes, **substantive work** means:
 
 ### Negative / trade-offs
 
-- **Existing timestamps may be "wrong"** (set by prior meta-work) and won't self-correct. Backfill ([FR-097](../../kanban/fr-br/FR-097-board-stamp-authority-and-forensic-timestamp-recovery.md) Wave 4 / `backfill_board_row_stamps.py`) addresses this; it is a separate operation.
+- **Existing timestamps may be "wrong"** (set by prior meta-work) and won't self-correct. Backfill ([FR-097](../../kanban/fbu/FR-097-board-stamp-authority-and-forensic-timestamp-recovery.md) Wave 4 / `backfill_board_row_stamps.py`) addresses this; it is a separate operation.
 - **Agents doing legitimate substantive work** must pass `--stamp-substantive` / `work_authoritative` explicitly (or the workflow step handles it). Training/onboarding cost.
 - **Breaking change**: any adopter workflow that relied on automatic timestamp updates will see them stop. Mitigation: the flag is additive; existing scripts don't break, they preserve stamps.
 
@@ -133,15 +133,15 @@ For the purpose of timestamp writes, **substantive work** means:
 | `validate_board_stamp_diff.py` blocking on all board-touching workflows (verify no advisory bypass) | Done (FR-097; unchanged) |
 | [kanban-governance-policy.md](../../../packages/frameworks/kanban/policies/kanban-governance-policy.md) cross-link ADR-029 | Done (v0.2.15.14+1) |
 | FR-097: ADR-029 supersedes permissive default edges (Wave 3 hardening now mandated) | Done |
-| **Release** | **v0.2.15.14+1** — [FR-130](../../kanban/fr-br/FR-130-kanban-stamp-immutability-adr029-framework-defaults.md) / [E02:S15:T14](../../kanban/epics/epic-02/story-15-ipw-governance-and-publication-contract/T14-kanban-stamp-immutability-adr029-framework-defaults-fr130.md) |
+| **Release** | **v0.2.15.14+1** — [FR-130](../../kanban/fbu/FR-130-kanban-stamp-immutability-adr029-framework-defaults.md) / [E02:S15:T14](../../kanban/epics/epic-02/story-15-ipw-governance-and-publication-contract/T14-kanban-stamp-immutability-adr029-framework-defaults-fr130.md) |
 
 ---
 
 ## References
 
-- [FR-097: Board stamp authority, blocking validation, and forensic timestamp recovery](../../kanban/fr-br/FR-097-board-stamp-authority-and-forensic-timestamp-recovery.md)
+- [FR-097: Board stamp authority, blocking validation, and forensic timestamp recovery](../../kanban/fbu/FR-097-board-stamp-authority-and-forensic-timestamp-recovery.md)
 - [ADR-009: UKW deep reprioritization (`--rp` flag)](ADR-009-ukw-deep-reprioritization-rp-flag.md) — §7: no batch rewrite of row `Last modified` stamps
-- [UXR-009: Last-modified stamp forensic integrity and drift protection](../../kanban/fr-br/UXR-009-last-modified-stamp-forensic-integrity-and-drift-protection.md)
+- [UXR-009: Last-modified stamp forensic integrity and drift protection](../../kanban/fbu/UXR-009-last-modified-stamp-forensic-integrity-and-drift-protection.md)
 - [kanban-governance-policy.md](../../../packages/frameworks/kanban/policies/kanban-governance-policy.md) — Board Stamp Authority section
 - [update_kanban_docs.py](../../../packages/frameworks/workflow-mgt/scripts/update_kanban_docs.py) — `enforce_moscow_row_timestamps_with_stats`, `EVIDENCE_MODE_*`
 - [validate_board_stamp_diff.py](../../../packages/frameworks/workflow-mgt/scripts/validation/validate_board_stamp_diff.py)

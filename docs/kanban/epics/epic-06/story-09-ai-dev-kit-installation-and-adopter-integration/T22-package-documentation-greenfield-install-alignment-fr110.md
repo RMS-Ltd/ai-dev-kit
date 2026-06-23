@@ -16,7 +16,7 @@ housekeeping_policy: keep
 **Version:** v0.6.9.22+1  
 **Code:** E06S09T22
 
-**Upstream:** [FR-110](../../../fr-br/FR-110-lean-adopter-distribution-footprint-and-vendor-bundle.md)
+**Upstream:** [FR-110](../../../fbu/FR-110-lean-adopter-distribution-footprint-and-vendor-bundle.md)
 
 **Related:** [E06:S09:T21](T21-lean-adopter-distribution-footprint-fr110.md) · [INSTALL_IN_YOUR_PROJECT.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/INSTALL_IN_YOUR_PROJECT.md#lean-vendor-install-greenfield-install--fr-110)
 
@@ -30,7 +30,7 @@ Align **all framework package READMEs and install-facing docs** so adopters unde
 
 ## Input
 
-- [FR-110](../../../fr-br/FR-110-lean-adopter-distribution-footprint-and-vendor-bundle.md) — lean adopter distribution model (accepted 2026-06-05)
+- [FR-110](../../../fbu/FR-110-lean-adopter-distribution-footprint-and-vendor-bundle.md) — lean adopter distribution model (accepted 2026-06-05)
 - [E06:S09:T21](T21-lean-adopter-distribution-footprint-fr110.md) — entry docs (`INSTALL_IN_YOUR_PROJECT.md`, root `README.md`) shipped in v0.6.9.21+3
 - Framework packages under `packages/frameworks/` with existing README/install guides
 
@@ -74,5 +74,5 @@ Align **all framework package READMEs and install-facing docs** so adopters unde
 
 ## References
 
-- [FR-110](../../../fr-br/FR-110-lean-adopter-distribution-footprint-and-vendor-bundle.md)
+- [FR-110](../../../fbu/FR-110-lean-adopter-distribution-footprint-and-vendor-bundle.md)
 - [Story 009](../story-09-ai-dev-kit-installation-and-adopter-integration.md)

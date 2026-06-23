@@ -233,5 +233,5 @@ Each row: expected behavior (T01 baseline + package policies), observed behavior
 - [doc-lifecycle-metadata-spec.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/doc-lifecycle/policies/doc-lifecycle-metadata-spec.md)
 - [LIFECYCLE_EXAMPLES.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/doc-lifecycle/templates/LIFECYCLE_EXAMPLES.md)
 - [DocumentLifecycleValidator](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/tooling-automation/validators/framework/document_lifecycle_validator.py)
-- [FR-042](../kanban/fr-br/FR-042-implementation-planning-workflow-ipw.md)
+- [FR-042](../kanban/fbu/FR-042-implementation-planning-workflow-ipw.md)
 - [ipw-adr-necessity-checklist.md](../architecture/standards-and-adrs/ipw-adr-necessity-checklist.md)

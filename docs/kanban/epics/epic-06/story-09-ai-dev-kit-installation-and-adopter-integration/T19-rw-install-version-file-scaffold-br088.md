@@ -18,15 +18,15 @@ housekeeping_policy: keep
 
 **Planning package:** [IPP-E6S9T19](../../../../implementation-cycles/IPP-E06S09T19-br088-version-file-scaffold.md)
 
-**Upstream:** [BR-088](../../../fr-br/BR-088-rw-install-mode-c-missing-version-file-scaffold.md)  
-**Related:** [BR-086](../../../fr-br/BR-086-rw-install-lowercase-fresh-kanban-patterns-signoff.md) · [#17](https://github.com/RMS-Ltd/ai-dev-kit/issues/17) · [#18](https://github.com/RMS-Ltd/ai-dev-kit/issues/18)
+**Upstream:** [BR-088](../../../fbu/BR-088-rw-install-mode-c-missing-version-file-scaffold.md)  
+**Related:** [BR-086](../../../fbu/BR-086-rw-install-lowercase-fresh-kanban-patterns-signoff.md) · [#17](https://github.com/RMS-Ltd/ai-dev-kit/issues/17) · [#18](https://github.com/RMS-Ltd/ai-dev-kit/issues/18)
 
 ---
 
 ## Input
 
 - [IPP-E6S9T19](../../../../implementation-cycles/IPP-E06S09T19-br088-version-file-scaffold.md)
-- [BR-088](../../../fr-br/BR-088-rw-install-mode-c-missing-version-file-scaffold.md)
+- [BR-088](../../../fbu/BR-088-rw-install-mode-c-missing-version-file-scaffold.md)
 - [GitHub #18](https://github.com/RMS-Ltd/ai-dev-kit/issues/18)
 - `install_release_workflow.py` — mode C `version_file` prompt and post-write hooks
 - `INSTALL_IN_YOUR_PROJECT.md` — greenfield / submodule-only spine

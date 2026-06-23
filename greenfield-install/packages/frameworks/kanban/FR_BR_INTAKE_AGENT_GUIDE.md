@@ -62,7 +62,7 @@ FR/BR Received
   - If BR → Use `BR_TEMPLATE.md`
 
 **Step 1.2: Create Document**
-- **Location:** `docs/kanban/fr-br/FR-XXX-[title].md` or `BR-XXX-[title].md`
+- **Location:** `docs/kanban/fbu/FR-XXX-[title].md` or `BR-XXX-[title].md`
 - **Required Fields:**
   - Summary (one sentence)
   - Description (detailed)

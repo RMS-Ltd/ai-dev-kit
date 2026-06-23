@@ -41,7 +41,7 @@ This task:
 
 ## Input
 
-- **FR-046:** [`FR-046-rw-semver-tag-task-touch-mode.md`](../../../fr-br/FR-046-rw-semver-tag-task-touch-mode.md)
+- **FR-046:** [`FR-046-rw-semver-tag-task-touch-mode.md`](../../../fbu/FR-046-rw-semver-tag-task-touch-mode.md)
 - **FR-045:** ADR-002 Task-Touch Derived Mapping (prerequisite).
 - **IPP (closure wave):** [`IPP-E5S1T46-fr046-closure-wave.md`](../../../../implementation-cycles/IPP-E5S01T46-fr046-closure-wave.md)
 - [ICW E05:S01:T46 specification](../../../../implementation-cycles/ICW-E5S01T46-specification.md)
@@ -137,5 +137,5 @@ Full matrix: [`IPP-E5S1T46-fr046-closure-wave.md`](../../../../implementation-cy
 
 - **IPP (closure):** [`IPP-E5S1T46-fr046-closure-wave.md`](../../../../implementation-cycles/IPP-E5S01T46-fr046-closure-wave.md)
 - **FR Repo Story:** [`story-01-fr-repo.md`](../story-01-fr-repo.md)
-- **FR-046:** [`docs/kanban/fr-br/FR-046-rw-semver-tag-task-touch-mode.md`](../../../fr-br/FR-046-rw-semver-tag-task-touch-mode.md)
+- **FR-046:** [`docs/kanban/fbu/FR-046-rw-semver-tag-task-touch-mode.md`](../../../fbu/FR-046-rw-semver-tag-task-touch-mode.md)
 - **Superseded duplicate:** [`E02:S13:T07`](../../epic-02/story-13-workflow-management-package-implementation-review/T07-rw-semver-tag-when-task-touch-enabled.md)

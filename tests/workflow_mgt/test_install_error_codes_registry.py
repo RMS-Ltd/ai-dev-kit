@@ -18,7 +18,7 @@ REGISTRY_PATH = (
 )
 CODE_RE = re.compile(r"^ADK-[IVR]\d{2}(\.[A-Z]\d{2})+(:[WR]\d{2})?$")
 REPO_ROOT = Path(__file__).resolve().parents[2]
-FR_BR_ROOT = REPO_ROOT / "docs" / "kanban" / "fr-br"
+FBU_ROOT = REPO_ROOT / "docs" / "kanban" / "fbu"
 ADR_ROOT = REPO_ROOT / "docs" / "architecture" / "standards-and-adrs"
 
 
@@ -56,5 +56,5 @@ def test_see_also_references_exist(registry):
             if ref.startswith("ADR-"):
                 matches = list(ADR_ROOT.glob(f"{ref}*.md"))
             else:
-                matches = list(FR_BR_ROOT.glob(f"{ref}*.md"))
+                matches = list(FBU_ROOT.glob(f"{ref}*.md"))
             assert matches, f"{key} see_also missing doc for {ref}"

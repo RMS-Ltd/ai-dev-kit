@@ -23,7 +23,7 @@ IDW is an **implementation** workflow. Gate on **detected runtime** (FR-128) —
 | **OpenCode** | N/A | Proceed inline (always implementation context) |
 | **unknown** | N/A | Proceed if `IMPLEMENTATION_MODE=true`; else **`IDW BLOCKED: environment not recognised. Set WORKFLOW_ENV or IMPLEMENTATION_MODE=true.`** |
 
-**MWF orchestration:** Leg 2 runs in parent implementation session after IPW Leg 1 — no operator mode switch required ([BR-102](docs/kanban/fr-br/BR-102-mwf-chain-paused-instead-of-subagent-leg-delegation.md)).
+**MWF orchestration:** Leg 2 runs in parent implementation session after IPW Leg 1 — no operator mode switch required ([BR-102](docs/kanban/fbu/BR-102-mwf-chain-paused-instead-of-subagent-leg-delegation.md)).
 
 **Python helper:** `packages/frameworks/workflow-mgt/scripts/icw/workflow_env.py`.
 
@@ -226,7 +226,7 @@ IDW must **not** commit, tag, or bump version itself — RW owns release surface
 
 ## Full pipeline (MWF)
 
-For plan → implement → release orchestration, use **`MWF E:S:T delivery`** (`.claude/commands/mwf.md`) — not `IPW --rw`. MWF Leg 2 invokes **`IDW E:S:T --rw`** (plus forwarded `--push` / `--art`). See [FR-124](docs/kanban/fr-br/FR-124-meta-workflow-orchestration-composite-workflow-chains.md).
+For plan → implement → release orchestration, use **`MWF E:S:T delivery`** (`.claude/commands/mwf.md`) — not `IPW --rw`. MWF Leg 2 invokes **`IDW E:S:T --rw`** (plus forwarded `--push` / `--art`). See [FR-124](docs/kanban/fbu/FR-124-meta-workflow-orchestration-composite-workflow-chains.md).
 
 ---
 
@@ -254,6 +254,6 @@ Use `rw-config.yaml` when present. Fallbacks:
 - MWF (full pipeline): `.claude/commands/mwf.md`
 - IPW (planning): `.claude/commands/ipw.md`
 - RW (release): `.claude/commands/rw.md`
-- FR-083 (implementation gate): `docs/project-management/kanban/fr-br/FR-083-global-ipw-gated-implementation-contract.md`
-- FR-077 (status transitions): `docs/project-management/kanban/fr-br/FR-077-ipw-built-task-status-transition-and-kboard-sync.md`
+- FR-083 (implementation gate): `docs/project-management/kanban/fbu/FR-083-global-ipw-gated-implementation-contract.md`
+- FR-077 (status transitions): `docs/project-management/kanban/fbu/FR-077-ipw-built-task-status-transition-and-kboard-sync.md`
 - Implementation Cycle SoP: `packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/implementation-cycle-sop.md`

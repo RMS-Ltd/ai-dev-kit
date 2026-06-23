@@ -1,0 +1,4 @@
+Maintainer mirror placeholder — SBL attempt 05 phase 3c kanban v3.2 transcript.
+Original: logs/ai-dev-kit/install/attempt-05/transcripts/20260610T183509Z-phase3c-kanban-v3dot2.txt (gitignored; not recovered pre-revert).
+Evidence cited in IPP-E06S09T30 / BR-107 / T30.
+See adk-install-into-sbl/attempt-05/feedback-package/README.md and docs/knowledge/analysis/projects/starborn-legacy-install-triage-matrix.md.

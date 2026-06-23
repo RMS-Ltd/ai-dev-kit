@@ -211,7 +211,7 @@ After completing UKW, users typically run RW to commit the kanban documentation 
      - Parse commit messages for Epic/Story/Task identifiers (E4:S13:T06, etc.)
      - Map commits to kanban documents
    - **Recent FR/BR/UXRs:**
-     - List files in `{kanban_root}/fr-br/` sorted by modification date
+     - List files in `{kanban_root}/fbu/` sorted by modification date
      - Check last 7 days (or configured window)
      - Extract Epic/Story/Task links from FR/BR/UXR files
    - **File Changes:**
@@ -277,7 +277,7 @@ After completing UKW, users typically run RW to commit the kanban documentation 
 **Part (b) – Open FRs/BRs Without Tasks:**
 
 1. **ANALYZE:**
-   - Scan `{kanban_root}/fr-br/` for FR and BR documents
+   - Scan `{kanban_root}/fbu/` for FR and BR documents
    - Extract Status (OPEN, PENDING, REOPENED, Proposed, IN PROGRESS, INTAKE)
    - Cross-reference with Kanban board and story task checklists
    - Identify FRs/BRs that have no linked task (no E{X}:S{Y}:T{Z} in board or story checklists)
@@ -563,7 +563,7 @@ After completing UKW, users typically run RW to commit the kanban documentation 
    - **Part B.1 — Story checklist enumeration (BR-059; before MoSCOW classification):**
      - For each story **IN PROGRESS** (or with ≥2 open checklist tasks): extract open tasks from the story checklist; compare to `kboard.md` MoSCOW rows for that story.
      - Add missing `E:S:T` rows **only** when task-doc status is **IN PROGRESS** or **OPEN**, or the operator promotes the item to **M/S** this cycle.
-     - Do **not** bulk-add every checklist `TODO` to Could Have (backlog stays in story docs + `fr-br/` until promoted).
+     - Do **not** bulk-add every checklist `TODO` to Could Have (backlog stays in story docs + `fbu/` until promoted).
      - Defer unpromoted gaps to **Won't Have** with one-line rationale, or leave off the active board per lean contract.
      - Advisory: `python "packages/frameworks/workflow-mgt/scripts/kanban/validate_story_moscow_coverage.py" --story E##:S##`.
      - If gaps remain, Step 9 must include `## Story MoSCOW coverage` (story id, open count, board count, missing ids).
@@ -609,7 +609,7 @@ After completing UKW, users typically run RW to commit the kanban documentation 
 
 1. **ANALYZE:**
    - Read active MoSCOW sections (`Must`, `Should`, `Could`, `Ongoing`) in fbuboard.
-   - Resolve each row's linked `fr-br/*.md` source document.
+   - Resolve each row's linked `fbu/*.md` source document.
    - Parse source `**Status:**` for terminal vs non-terminal state.
 
 2. **DETERMINE:**
@@ -635,7 +635,7 @@ After completing UKW, users typically run RW to commit the kanban documentation 
 
 **Scope:** Runs on **comprehensive** (`UKW` no flags) and **bookkeeping** (`UKW -u`) paths. Skipped on `-p` / `-a` only runs.
 
-**Related:** [FR-050](../../../../../../docs/kanban/fr-br/FR-050-ukw-extension-for-fr-br-uxr-temporal-tracking-and-synchronization.md), [FR-076](../../../../../../docs/kanban/fr-br/FR-076-ukw-fbuboard-scope-and-drift-concurrency-controls.md), [FR-097](../../../../../../docs/kanban/fr-br/FR-097-board-stamp-authority-and-forensic-timestamp-recovery.md) (stamp authority).
+**Related:** [FR-050](../../../../../../docs/kanban/fbu/FR-050-ukw-extension-for-fr-br-uxr-temporal-tracking-and-synchronization.md), [FR-076](../../../../../../docs/kanban/fbu/FR-076-ukw-fbuboard-scope-and-drift-concurrency-controls.md), [FR-097](../../../../../../docs/kanban/fbu/FR-097-board-stamp-authority-and-forensic-timestamp-recovery.md) (stamp authority).
 
 ---
 
@@ -649,7 +649,7 @@ After completing UKW, users typically run RW to commit the kanban documentation 
 
 1. **ANALYZE:**
    - Collect FBU IDs pruned in Step 6.5 (terminal source status, no unresolved-verification exception).
-   - Read linked `fr-br/*.md` for title, type (FR/BR/UXR), implementing task, and release version when available.
+   - Read linked `fbu/*.md` for title, type (FR/BR/UXR), implementing task, and release version when available.
    - Load `intake-completed.md` and `kanban-completed.md` for dashboard format parity.
 
 2. **DETERMINE:**
@@ -683,9 +683,9 @@ After completing UKW, users typically run RW to commit the kanban documentation 
 **Agent Execution:**
 
 1. **ANALYZE:**
-   - **fbuboard ↔ source:** active MoSCOW rows must not reference terminal `fr-br/*.md` status (except documented verification exceptions).
+   - **fbuboard ↔ source:** active MoSCOW rows must not reference terminal `fbu/*.md` status (except documented verification exceptions).
    - **intake-completed ↔ source:** every dashboard/archive entry for an open FBU must match source terminal status; completed FBUs must not remain on active fbuboard rows.
-   - **intake-structure ↔ inventory:** structure doc inventory matches `fr-br/` (and linked UXR paths); links resolve.
+   - **intake-structure ↔ inventory:** structure doc inventory matches `fbu/` (and linked UXR paths); links resolve.
 
 2. **DETERMINE:**
    - Drift items: stale active rows, missing completed entries, broken links, version marker mismatches.

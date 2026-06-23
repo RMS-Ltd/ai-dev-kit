@@ -10,10 +10,10 @@ housekeeping_policy: keep
 # E08:S03:T14 — Planning: Spec, Tests, Implementation Plan (IPW)
 
 **Host Task:** [`T14-code-quality-ai-suggestions-backlog-br101.md`](../kanban/epics/epic-08/story-03-automation-scripts/T14-code-quality-ai-suggestions-backlog-br101.md) **(E08:S03:T14)**  
-**Planning for:** [BR-101](../kanban/fr-br/BR-101-code-quality-ai-suggestions-backlog.md)  
+**Planning for:** [BR-101](../kanban/fbu/BR-101-code-quality-ai-suggestions-backlog.md)  
 **Status:** Revised — wave-1 complete; FBU +0–+4; wave-2b/c **COMPLETE** @ v0.8.3.14+5
 
-> **IPW:** Produced for E08:S03:T14. Triage and resolve **14** GitHub Code Quality **AI-powered** suggestions; complements maintainability task [E08:S03:T12](IPP-E08S03T12-code-quality-maintainability-backlog-br099.md) / [BR-099](../kanban/fr-br/BR-099-code-quality-maintainability-backlog.md) and reliability task [E08:S03:T13](IPP-E08S03T13-code-quality-reliability-backlog-br100.md) / [BR-100](../kanban/fr-br/BR-100-code-quality-reliability-backlog.md) with explicit deduplication.
+> **IPW:** Produced for E08:S03:T14. Triage and resolve **14** GitHub Code Quality **AI-powered** suggestions; complements maintainability task [E08:S03:T12](IPP-E08S03T12-code-quality-maintainability-backlog-br099.md) / [BR-099](../kanban/fbu/BR-099-code-quality-maintainability-backlog.md) and reliability task [E08:S03:T13](IPP-E08S03T13-code-quality-reliability-backlog-br100.md) / [BR-100](../kanban/fbu/BR-100-code-quality-reliability-backlog.md) with explicit deduplication.
 >
 > **Revision (2026-06-05, wave-2 FBU):** Wave-1 shipped @ v0.8.3.14+0–+1. FBU waves @ +2 (`cadb0c3`, **14** open), +3 (post-merge wait @ `main` `f6aa4dca`), +4 (FBU verification). Operator GH UI Re-scan B: **17** open across **5** file groups — use **AID** tokens (not `#` numbers) in [ai-findings panel](https://github.com/RMS-Ltd/ai-dev-kit/security/quality/ai-findings). **GH AI panel has no dismiss / won't-fix action** — doc-only waiver for dismiss dispositions. Pending: **AI-VENDOR-TREE** triage (4 new); **F-SYNC-02** dual-branch decision (leave `rglob("*")` or apply `rglob("**/*")`). **AI suggestions only** — not Standard findings (T12/T13); not Code Scanning security (T08–T11). Post-closure handoff to [E08:S03:T16](../kanban/epics/epic-08/story-03-automation-scripts/T16-github-security-code-quality-health-perpetual-fr112.md) (FR-112 perpetual lane).
 
@@ -71,7 +71,7 @@ housekeeping_policy: keep
 
 ### 2.1 Goal
 
-Multi-phase **AI-powered Code Quality suggestions** triage per [BR-101](../kanban/fr-br/BR-101-code-quality-ai-suggestions-backlog.md):
+Multi-phase **AI-powered Code Quality suggestions** triage per [BR-101](../kanban/fbu/BR-101-code-quality-ai-suggestions-backlog.md):
 
 - **Phase A (wave 1 — complete):** Inventory, dedupe, triage, and apply 12/14 suggestions; document 2 dismissals; CI green.
 - **Phase B (wave 2a — complete):** FBU re-scan manifests; AID/F-SYNC identifiers; post-merge lag documentation; WAITING status @ +3/+4.
@@ -267,7 +267,7 @@ Score each trigger **Y** or **N** with one-line evidence. Criteria: [`ipw-adr-ne
 
 **RW verification / FBU wave rule (BR-097):** Post-ship verification prescribes **`RW E08:S03:T14 --art`** only. Do **not** prescribe `--doc-policy-zero` for follow-on releases after a tagged BUILD.
 
-**T16 handoff:** On COMPLETE, ongoing AI suggestion monitoring transfers to [E08:S03:T16](../kanban/epics/epic-08/story-03-automation-scripts/T16-github-security-code-quality-health-perpetual-fr112.md) per [FR-112](../kanban/fr-br/FR-112-perpetual-github-ci-and-security-health-lanes.md).
+**T16 handoff:** On COMPLETE, ongoing AI suggestion monitoring transfers to [E08:S03:T16](../kanban/epics/epic-08/story-03-automation-scripts/T16-github-security-code-quality-health-perpetual-fr112.md) per [FR-112](../kanban/fbu/FR-112-perpetual-github-ci-and-security-health-lanes.md).
 
 ### 4.2 Files to create or modify
 
@@ -301,7 +301,7 @@ Score each trigger **Y** or **N** with one-line evidence. Criteria: [`ipw-adr-ne
 | ------ | ---- | --------------- | ------------------------ |
 | D-C1 | `docs/implementation-cycles/IPP-E08S03T14-code-quality-ai-suggestions-backlog-br101.md` | Wave-2 FBU revision (this document) | IPW |
 | D-U1 | `docs/kanban/epics/epic-08/story-03-automation-scripts/T14-code-quality-ai-suggestions-backlog-br101.md` | Inventory + triage + post-triage manifests (**done**); Re-scan D + AI-VENDOR-TREE triage + F-SYNC-02 branch (**open**) | RF1, RF2, RF4, RF9, RF13, RF14, RF15, steps 19–21/25 |
-| D-U2 | `docs/kanban/fr-br/BR-101-code-quality-ai-suggestions-backlog.md` | Fix-attempt / resolution (interim **done**; final closure **open**) | RF6, RF11, step 23 |
+| D-U2 | `docs/kanban/fbu/BR-101-code-quality-ai-suggestions-backlog.md` | Fix-attempt / resolution (interim **done**; final closure **open**) | RF6, RF11, step 23 |
 | D-U3 | `docs/kanban/epics/epic-08/story-03-automation-scripts.md` | Checklist on RW | steps 10/24 |
 | D-U4 | `docs/kanban/kboard.md` | RW Step 7 row | steps 10/24 |
 
@@ -330,7 +330,7 @@ Score each trigger **Y** or **N** with one-line evidence. Criteria: [`ipw-adr-ne
 | ------ | -------------- | ------------------ | ------------------------------- | --------- | -------------------- |
 | D-C1 | `docs/implementation-cycles/IPP-E08S03T14-code-quality-ai-suggestions-backlog-br101.md` | NOT_APPLICABLE | Planning artifact; not Docusaurus-facing | evergreen | Task doc Input + References |
 | D-U1 | `docs/kanban/epics/epic-08/story-03-automation-scripts/T14-code-quality-ai-suggestions-backlog-br101.md` | NOT_APPLICABLE | Kanban internal | evergreen | BR-101 implementing task link (exists) |
-| D-U2 | `docs/kanban/fr-br/BR-101-code-quality-ai-suggestions-backlog.md` | NOT_APPLICABLE | Kanban internal | evergreen | Task doc upstream link (exists) |
+| D-U2 | `docs/kanban/fbu/BR-101-code-quality-ai-suggestions-backlog.md` | NOT_APPLICABLE | Kanban internal | evergreen | Task doc upstream link (exists) |
 | D-U3 | `docs/kanban/epics/epic-08/story-03-automation-scripts.md` | NOT_APPLICABLE | Kanban internal | evergreen | Story checklist |
 | D-U4 | `docs/kanban/kboard.md` | NOT_APPLICABLE | Kanban internal | evergreen | MoSCOW row |
 
@@ -385,10 +385,10 @@ Score each trigger **Y** or **N** with one-line evidence. Criteria: [`ipw-adr-ne
 
 ## References
 
-- [BR-101](../kanban/fr-br/BR-101-code-quality-ai-suggestions-backlog.md)
-- [BR-099](../kanban/fr-br/BR-099-code-quality-maintainability-backlog.md)
-- [BR-100](../kanban/fr-br/BR-100-code-quality-reliability-backlog.md)
-- [FR-112](../kanban/fr-br/FR-112-perpetual-github-ci-and-security-health-lanes.md)
+- [BR-101](../kanban/fbu/BR-101-code-quality-ai-suggestions-backlog.md)
+- [BR-099](../kanban/fbu/BR-099-code-quality-maintainability-backlog.md)
+- [BR-100](../kanban/fbu/BR-100-code-quality-reliability-backlog.md)
+- [FR-112](../kanban/fbu/FR-112-perpetual-github-ci-and-security-health-lanes.md)
 - [T14 task doc](../kanban/epics/epic-08/story-03-automation-scripts/T14-code-quality-ai-suggestions-backlog-br101.md) — Re-scan C section
 - [IPP-E08S03T12](IPP-E08S03T12-code-quality-maintainability-backlog-br099.md)
 - [IPP-E08S03T13](IPP-E08S03T13-code-quality-reliability-backlog-br100.md)
@@ -400,5 +400,5 @@ Score each trigger **Y** or **N** with one-line evidence. Criteria: [`ipw-adr-ne
 - [CHANGELOG v0.8.3.14+4](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.8.3.14+4.md)
 - [code-quality-monitoring-processes.md](../architecture/standards-and-adrs/code-quality-monitoring-processes.md)
 - [ipw-adr-necessity-checklist.md](../architecture/standards-and-adrs/ipw-adr-necessity-checklist.md)
-- [FR-042](../kanban/fr-br/FR-042-implementation-planning-workflow-ipw.md)
-- [BR-097](../kanban/fr-br/BR-097-rw-agent-reuses-tagged-build-and-force-moves-release-tags.md)
+- [FR-042](../kanban/fbu/FR-042-implementation-planning-workflow-ipw.md)
+- [BR-097](../kanban/fbu/BR-097-rw-agent-reuses-tagged-build-and-force-moves-release-tags.md)

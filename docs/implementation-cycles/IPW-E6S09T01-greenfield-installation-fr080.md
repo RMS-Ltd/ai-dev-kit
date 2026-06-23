@@ -9,7 +9,7 @@ housekeeping_policy: keep
 # E6:S09:T01 - Planning: Spec, Tests, Implementation Plan (IPW)
 
 **Host Task:** [`T01-greenfield-installation-process-fr080.md`](../kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T01-greenfield-installation-process-fr080.md) **(E6:S09:T01)**  
-**Planning for:** [FR-080 – End-to-end greenfield installation process](../kanban/fr-br/FR-080-greenfield-installation-process.md)  
+**Planning for:** [FR-080 – End-to-end greenfield installation process](../kanban/fbu/FR-080-greenfield-installation-process.md)  
 **Status:** Draft
 
 ---
@@ -28,19 +28,19 @@ Deliver an **opinionated, reproducible greenfield path**: from acquiring AI Dev 
 | **F2** | **Reproducible** path (scripts, CLI, and/or deterministic checklist). | See **§1.5 Decisions**. |
 | **F3** | **Mandatory installer steps** — not copy-only. | [`install_release_workflow.py`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/scripts/install_release_workflow.py), [`install_kanban_framework.py`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/kanban/scripts/install_kanban_framework.py) (or documented successors). |
 | **F4** | **Verification gates** (validators, smoke, checklist) vs `rw-config.yaml` / consumer layout. | Tie to [rw-validators-consumer-layout.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/docs/rw-validators-consumer-layout.md). |
-| **F5** | **Adopter docs** — greenfield-only narrative; pointers to brownfield. | [`INSTALL_IN_YOUR_PROJECT.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/INSTALL_IN_YOUR_PROJECT.md) and user-docs; cross-link [FR-081](../kanban/fr-br/FR-081-brownfield-modular-adopter-integration.md). |
+| **F5** | **Adopter docs** — greenfield-only narrative; pointers to brownfield. | [`INSTALL_IN_YOUR_PROJECT.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/INSTALL_IN_YOUR_PROJECT.md) and user-docs; cross-link [FR-081](../kanban/fbu/FR-081-brownfield-modular-adopter-integration.md). |
 
 ### 1.3 Non-functional requirements
 
 | ID | Requirement | Planning note |
 |----|-------------|----------------|
 | **NF1** | Maintainable as framework packages version independently. | Doc and script boundaries; version pins called out in install spec. |
-| **NF2** | Align with install **logging / feedback** contracts. | Coordinate with [FR-078](../kanban/fr-br/FR-078-comprehensive-install-event-contract-logging-and-feedback-quality.md) / [FR-079](../kanban/fr-br/FR-079-install-feedback-submission-path-and-governance.md); **T01** does not replace those FRs—extends greenfield narrative and **example-run** capture (§1.6). |
+| **NF2** | Align with install **logging / feedback** contracts. | Coordinate with [FR-078](../kanban/fbu/FR-078-comprehensive-install-event-contract-logging-and-feedback-quality.md) / [FR-079](../kanban/fbu/FR-079-install-feedback-submission-path-and-governance.md); **T01** does not replace those FRs—extends greenfield narrative and **example-run** capture (§1.6). |
 
 ### 1.4 Out of scope
 
-- **Brownfield** integration and modular host surfaces → [FR-081](../kanban/fr-br/FR-081-brownfield-modular-adopter-integration.md) / **E6:S09:T02**.
-- **Canonical repo / distribution coordinates** as the lead problem → [FR-082](../kanban/fr-br/FR-082-installation-distribution-canonical-repo-alignment.md) / **E6:S09:T03** (coordinate; may reorder work).
+- **Brownfield** integration and modular host surfaces → [FR-081](../kanban/fbu/FR-081-brownfield-modular-adopter-integration.md) / **E6:S09:T02**.
+- **Canonical repo / distribution coordinates** as the lead problem → [FR-082](../kanban/fbu/FR-082-installation-distribution-canonical-repo-alignment.md) / **E6:S09:T03** (coordinate; may reorder work).
 
 ### 1.5 Decisions / alternatives (to resolve during implementation)
 
@@ -145,7 +145,7 @@ Normative prose (ordering, checkpoints, identifiers) must not run ahead of locke
 | 5.1 | Update **FR-080** checkboxes / **T01** acceptance with evidence links. | **AC1** closure or explicit deferrals. |
 | 5.2 | Align with **E6:S09:T03** if copy-paste examples depend on canonical coordinates. | Coordination note in task Progress. |
 
-**Delivered (Wave 5):** [FR-080](../kanban/fr-br/FR-080-greenfield-installation-process.md) functional/NFR boxes checked with **Implementation evidence** section; [T01](../kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T01-greenfield-installation-process-fr080.md) acceptance criteria checked with evidence links; **T03** coordination sentence under task Dependencies.
+**Delivered (Wave 5):** [FR-080](../kanban/fbu/FR-080-greenfield-installation-process.md) functional/NFR boxes checked with **Implementation evidence** section; [T01](../kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T01-greenfield-installation-process-fr080.md) acceptance criteria checked with evidence links; **T03** coordination sentence under task Dependencies.
 
 **Files likely touched (living list):**
 
@@ -159,7 +159,7 @@ Normative prose (ordering, checkpoints, identifiers) must not run ahead of locke
 
 ## 4. Success / verification criteria
 
-- [x] Task **AC1:** FR-080 requirements satisfied or deferred with rationale in FR/task ([FR-080](../kanban/fr-br/FR-080-greenfield-installation-process.md)).
+- [x] Task **AC1:** FR-080 requirements satisfied or deferred with rationale in FR/task ([FR-080](../kanban/fbu/FR-080-greenfield-installation-process.md)).
 - [x] Task **AC2:** Documented scenario runs end-to-end without undocumented manual steps ([`INSTALL_IN_YOUR_PROJECT.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/INSTALL_IN_YOUR_PROJECT.md) Wave 4 reference + Method 2 path).
 - [x] Task **AC3:** Install docs link **ADR-003** and **FR-081**.
 - [x] **F3** evidenced: installers are part of the canonical greenfield story.
@@ -171,9 +171,9 @@ Normative prose (ordering, checkpoints, identifiers) must not run ahead of locke
 ## References
 
 - [Host task E6:S09:T01](../kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T01-greenfield-installation-process-fr080.md)
-- [FR-080](../kanban/fr-br/FR-080-greenfield-installation-process.md)
+- [FR-080](../kanban/fbu/FR-080-greenfield-installation-process.md)
 - [ADR-003](../architecture/standards-and-adrs/ADR-003-greenfield-vs-brownfield-adoption.md)
-- [FR-081](../kanban/fr-br/FR-081-brownfield-modular-adopter-integration.md)
+- [FR-081](../kanban/fbu/FR-081-brownfield-modular-adopter-integration.md)
 - [IPP-E6S9T2](IPP-E6S09T02-brownfield-modular-adopter-integration-fr081.md) (brownfield counterpart)
-- [FR-078](../kanban/fr-br/FR-078-comprehensive-install-event-contract-logging-and-feedback-quality.md)
-- [FR-079](../kanban/fr-br/FR-079-install-feedback-submission-path-and-governance.md)
+- [FR-078](../kanban/fbu/FR-078-comprehensive-install-event-contract-logging-and-feedback-quality.md)
+- [FR-079](../kanban/fbu/FR-079-install-feedback-submission-path-and-governance.md)

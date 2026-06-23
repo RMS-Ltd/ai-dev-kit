@@ -73,9 +73,9 @@ Implement support for a dedicated `dev` branch in RW branch-context validation u
 
 ## Links
 
-- [UXR-006](../../../fr-br/UXR-006-dev-branch-and-rw-validator-relaxation.md)
+- [UXR-006](../../../fbu/UXR-006-dev-branch-and-rw-validator-relaxation.md)
 - [Story E2:S01](../story-01-rw-agent-execution-and-docs.md)
-- [BR-003](../../../fr-br/BR-003-rw-branch-validation-update-branches.md)
+- [BR-003](../../../fbu/BR-003-rw-branch-validation-update-branches.md)
 
 ---
 

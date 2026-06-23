@@ -22,7 +22,7 @@ Publication Status: NOT_APPLICABLE
 
 ## Associated FR
 
-- [FR-121 — Git-internal maintainer KB (OSS documentation surfaces)](../../../fr-br/FR-121-git-internal-maintainer-kb-oss-documentation-surfaces.md)
+- [FR-121 — Git-internal maintainer KB (OSS documentation surfaces)](../../../fbu/FR-121-git-internal-maintainer-kb-oss-documentation-surfaces.md)
 
 ---
 
@@ -35,7 +35,7 @@ Wave 2 of FR-121: publish **ADR-026** (two publish surfaces, git maintainer SoT)
 ## Input
 
 - [IPP-E05S08T06 — ADR-026 + git-maintainer authoring bootstrap (FR-121 wave 2)](../../../../implementation-cycles/IPP-E05S08T06-adr-026-git-maintainer-authoring-bootstrap-fr121.md)
-- [FR-121](../../../fr-br/FR-121-git-internal-maintainer-kb-oss-documentation-surfaces.md)
+- [FR-121](../../../fbu/FR-121-git-internal-maintainer-kb-oss-documentation-surfaces.md)
 - [E05:S08:T05](T05-reverse-notion-migration-git-internal-maintainer-kb-fr121.md) (restored corpus — preferred before bootstrap finalization)
 - [`AGENTS.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/AGENTS.md)
 - [`docs/project-agent-manifest.json`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/project-agent-manifest.json)
@@ -80,6 +80,6 @@ Wave 2 of FR-121: publish **ADR-026** (two publish surfaces, git maintainer SoT)
 ## References
 
 - [IPP-E05S08T06 — ADR-026 + git-maintainer authoring bootstrap (FR-121 wave 2)](../../../../implementation-cycles/IPP-E05S08T06-adr-026-git-maintainer-authoring-bootstrap-fr121.md)
-- [FR-121](../../../fr-br/FR-121-git-internal-maintainer-kb-oss-documentation-surfaces.md)
-- [FR-103](../../../../fr-br/FR-103-agent-bootstrap-and-task-routing.md)
+- [FR-121](../../../fbu/FR-121-git-internal-maintainer-kb-oss-documentation-surfaces.md)
+- [FR-103](../../../../fbu/FR-103-agent-bootstrap-and-task-routing.md)
 - [E05:S08:T04](T04-agent-notion-first-authoring-and-bootstrap-routing-fr114.md)

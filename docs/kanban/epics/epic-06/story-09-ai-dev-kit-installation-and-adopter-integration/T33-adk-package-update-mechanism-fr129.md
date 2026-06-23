@@ -18,9 +18,9 @@ housekeeping_policy: keep
 
 **Planning:** [`IPP-E06S09T33-adk-package-update-mechanism-fr129.md`](../../../../implementation-cycles/IPP-E06S09T33-adk-package-update-mechanism-fr129.md)
 
-**Upstream:** [FR-129](../../../fr-br/FR-129-adk-package-update-mechanism-fr129.md)
+**Upstream:** [FR-129](../../../fbu/FR-129-adk-package-update-mechanism-fr129.md)
 
-**Related:** [FR-030](../../../fr-br/FR-030-ai-dev-kit-cli-tool.md) · [FR-110](../../../fr-br/FR-110-lean-adopter-distribution-footprint-and-vendor-bundle.md) · [FR-128](../../../fr-br/FR-128-environment-aware-workflow-execution.md) · [T26](T26-starborn-legacy-adk-install-program.md)
+**Related:** [FR-030](../../../fbu/FR-030-ai-dev-kit-cli-tool.md) · [FR-110](../../../fbu/FR-110-lean-adopter-distribution-footprint-and-vendor-bundle.md) · [FR-128](../../../fbu/FR-128-environment-aware-workflow-execution.md) · [T26](T26-starborn-legacy-adk-install-program.md)
 
 ---
 
@@ -34,8 +34,8 @@ Motivated by SBL vendor bump gap after FR-128 and FR-110 NF2 "submodule bump" wi
 
 ## Input
 
-- [FR-129](../../../fr-br/FR-129-adk-package-update-mechanism-fr129.md)
-- [FR-030](../../../fr-br/FR-030-ai-dev-kit-cli-tool.md) — CLI update/check sketch (E06:S08)
+- [FR-129](../../../fbu/FR-129-adk-package-update-mechanism-fr129.md)
+- [FR-030](../../../fbu/FR-030-ai-dev-kit-cli-tool.md) — CLI update/check sketch (E06:S08)
 - [INSTALL_IN_YOUR_PROJECT.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/INSTALL_IN_YOUR_PROJECT.md) — manual update notes only today
 - SBL attempt 06 pin → FR-128 upgrade path (manual)
 
@@ -87,4 +87,4 @@ Motivated by SBL vendor bump gap after FR-128 and FR-110 NF2 "submodule bump" wi
 
 ## Associated feature requests
 
-- [FR-129 — ADK package update mechanism](../../../fr-br/FR-129-adk-package-update-mechanism-fr129.md) (primary)
+- [FR-129 — ADK package update mechanism](../../../fbu/FR-129-adk-package-update-mechanism-fr129.md) (primary)

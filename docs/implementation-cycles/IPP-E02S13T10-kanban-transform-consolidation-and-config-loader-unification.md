@@ -9,7 +9,7 @@ housekeeping_policy: keep
 # E02:S13:T10 — Planning: Kanban Transform Consolidation (+M1 config loader unification) (IPW)
 
 **Host Task:** [`T10-kanban-transform-consolidation`](../kanban/epics/epic-02/story-13-workflow-management-package-implementation-review/T10-kanban-transform-consolidation.md) **(E02:S13:T10)**  
-**Planning for:** [T05 gap log](../kanban/epics/epic-02/story-13-workflow-management-package-implementation-review/T05-create-gap-log-and-risk-assessment.md) · [T04 integration alignment report](../kanban/epics/epic-02/story-13-workflow-management-package-implementation-review/integration-alignment-report.md) · [FR-092](../kanban/fr-br/FR-092-canonical-rw-ukw-kanban-consistency-program.md)
+**Planning for:** [T05 gap log](../kanban/epics/epic-02/story-13-workflow-management-package-implementation-review/T05-create-gap-log-and-risk-assessment.md) · [T04 integration alignment report](../kanban/epics/epic-02/story-13-workflow-management-package-implementation-review/integration-alignment-report.md) · [FR-092](../kanban/fbu/FR-092-canonical-rw-ukw-kanban-consistency-program.md)
 
 **Status:** Draft
 
@@ -215,6 +215,6 @@ The specification defines (1) the transform entrypoint contract as the canonical
 - [T10-kanban-transform-consolidation](../kanban/epics/epic-02/story-13-workflow-management-package-implementation-review/T10-kanban-transform-consolidation.md)
 - [T05-create-gap-log-and-risk-assessment (GAP-WFMGT-INTG-001/002)](../kanban/epics/epic-02/story-13-workflow-management-package-implementation-review/T05-create-gap-log-and-risk-assessment.md)
 - [T04 integration alignment report](../kanban/epics/epic-02/story-13-workflow-management-package-implementation-review/integration-alignment-report.md)
-- [FR-092 canonical RW/UKW kanban consistency program](../kanban/fr-br/FR-092-canonical-rw-ukw-kanban-consistency-program.md)
+- [FR-092 canonical RW/UKW kanban consistency program](../kanban/fbu/FR-092-canonical-rw-ukw-kanban-consistency-program.md)
 - [`apply_canonical_row_transform_pipeline` implementation](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/scripts/update_kanban_docs.py)
 

@@ -1,0 +1,111 @@
+{
+  "schema_version": "1.0.0",
+  "feedback_contract_version": "1.1.0",
+  "generated_at_utc": "2026-06-17T12:45:00Z",
+  "install_run_id": "20260617-attempt-11",
+  "package_status": "draft",
+  "submitted_at_utc": null,
+  "final_signoff_at_utc": null,
+  "intake_issue": {
+    "repo": "RMS-Ltd/ai-dev-kit",
+    "number": 85,
+    "url": "https://github.com/RMS-Ltd/ai-dev-kit/issues/85"
+  },
+  "prior_intake_issue": {
+    "number": 57,
+    "url": "https://github.com/RMS-Ltd/ai-dev-kit/issues/57",
+    "attempt": "10"
+  },
+  "attempt": "11",
+  "programme_phase": "A_prep_complete_B_execution_pending",
+  "branching": {
+    "prep_branch": "dev",
+    "prep_head_sha": "a77fa4b4",
+    "prep_note": "TSP/METHODS spec only — not install execution evidence; do not push for #85",
+    "execution_base": "pre-adk-install",
+    "execution_branch": "dev",
+    "execution_head_sha": null
+  },
+  "source": {
+    "install_log_path": null,
+    "git_mirror_path": "docs/adk-feedback/attempt-11",
+    "project_root": "starborn_legacy",
+    "project_repo": "RMS-Ltd/starborn_legacy",
+    "branch": "dev",
+    "head_sha": null,
+    "head_sha_prep_placeholder": "a77fa4b4",
+    "event_contract": "T111-install-log-event-contract",
+    "payload_population": "manual",
+    "payload_population_note": "Phase A prep complete on old dev; phase B install from pre-adk-install pending — see EXECUTION-CHECKLIST.md"
+  },
+  "context": {
+    "install_arm": "B-follow-on",
+    "install_arm_label": "guided_kma_tsp_programme",
+    "adk_pin": "v0.4.1171",
+    "adk_semver": "0.4.1171",
+    "kanban_root_canonical": "docs/kanban",
+    "tsp_path": "docs/kanban/reference/TARGET-EST-TREE.md",
+    "tsp_unique_tasks": 377,
+    "tsp_named_pct": 0.889,
+    "structural_score_repo_weighted": 0.732,
+    "structural_score_tsp_self_test": 0.983,
+    "guided_pass_threshold": 0.85,
+    "custom_migration_scripts_count": 0,
+    "post_kma_tooling": [
+      "tools/kanban/build_target_est_tree.py",
+      "tools/kanban/score_kma_structure.py"
+    ],
+    "prior_attempt_10_head": "1551ae14"
+  },
+  "triage": {
+    "recommended_flow": "Route TSP + KMA-METHODS to kit; implement kma_mode guided + target_est_tree input",
+    "prior_attempt": "10",
+    "prior_attempt_delta": {
+      "kma_mode": "blind_to_guided_spec",
+      "target_tree_in_repo": "false_to_true",
+      "structural_scoring": "none_to_rubric",
+      "operator_tweak_count": "4_to_methods_encoded"
+    }
+  },
+  "requested_improvements": [
+    {
+      "id": "FB-ADK-GUIDED-KMA-TARGET-STRUCTURE-PACK",
+      "severity": "high",
+      "evidence": "docs/adk-feedback/attempt-11/FB-ADK-GUIDED-KMA-TARGET-STRUCTURE-PACK.md"
+    },
+    {
+      "id": "FB-ADK-KMA-KANBAN-MIGRATION",
+      "severity": "high",
+      "evidence": "docs/adk-feedback/attempt-10/FB-ADK-KMA-KANBAN-MIGRATION.md",
+      "note": "carry-forward blind pass gaps; superseded by guided spec for attempt 11"
+    },
+    {
+      "id": "FB-ADK-install-paths-industry-patterns",
+      "severity": "high",
+      "evidence": "docs/adk-feedback/attempt-09/FB-ADK-install-paths-industry-patterns.md",
+      "note": "carry-forward PRIMARY"
+    }
+  ],
+  "evidence_index": [
+    "docs/adk-feedback/attempt-11/EXECUTION-CHECKLIST.md",
+    "docs/adk-feedback/attempt-11/SUBMISSION.md",
+    "docs/adk-feedback/attempt-11/feedback-payload.json",
+    "docs/adk-feedback/attempt-11/FB-ADK-GUIDED-KMA-TARGET-STRUCTURE-PACK.md",
+    "docs/adk-feedback/attempt-11/migration-proposal-guided.md",
+    "docs/adk-feedback/attempt-11/THREE-WAY-STRUCTURAL-DIFF.md",
+    "docs/kanban/reference/TARGET-EST-TREE.md",
+    "docs/kanban/reference/KMA-METHODS.md",
+    "docs/kanban/reference/SCORING-RUBRIC.yaml",
+    "docs/kanban/reference/KMA-SCORE-LATEST.json",
+    "tools/kanban/score_kma_structure.py",
+    "tools/kanban/build_target_est_tree.py",
+    "docs/adk-feedback/attempt-10/feedback-payload.json"
+  ],
+  "redaction": {
+    "checked": true,
+    "checked_at_utc": "2026-06-17T12:45:00Z",
+    "method": "manual_review",
+    "violations": [],
+    "notes": "No credentials; temp/ operator source retained locally"
+  }
+}

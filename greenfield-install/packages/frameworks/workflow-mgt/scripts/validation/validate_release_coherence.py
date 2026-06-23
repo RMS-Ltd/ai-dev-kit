@@ -90,7 +90,14 @@ def _normalize_semver(text: str) -> str:
     return text.strip().lstrip("v")
 
 
+def _coherence_semver_core(text: str) -> str:
+    """SemVer core for README/changelog ↔ allocator checks (ADR-031 Option A)."""
+    normalized = _normalize_semver(text)
+    return normalized.split("+", 1)[0] if "+" in normalized else normalized
+
+
 def _allocator_semver(root: Path, internal: str) -> Optional[str]:
+    """Return core-only SemVer for external-surface coherence checks (ADR-031 Option A)."""
     if semver_converter.get_release_state_backend() != "sqlite":
         return None
     from release_state.allocate import lookup
@@ -99,7 +106,9 @@ def _allocator_semver(root: Path, internal: str) -> Optional[str]:
     if not db_path.is_absolute():
         db_path = root / db_path
     row = lookup(db_path, internal)
-    return row.semver_full if row else None
+    if not row:
+        return None
+    return row.semver_core
 
 
 def validate_release_coherence(
@@ -152,7 +161,7 @@ def validate_release_coherence(
         im = _README_INTERNAL_RE.search(readme_text)
         if not sm:
             errors.append("release_coherence: README missing **Version (SemVer):** line")
-        elif db_semver and _normalize_semver(sm.group(1)) != _normalize_semver(db_semver):
+        elif db_semver and _coherence_semver_core(sm.group(1)) != _coherence_semver_core(db_semver):
             errors.append(
                 f"release_coherence: README SemVer v{sm.group(1)} != allocator {db_semver}"
             )
@@ -173,7 +182,7 @@ def validate_release_coherence(
                 f"release_coherence: CHANGELOG top entry [{entry.group(1)}] != internal {internal}"
             )
         csm = _CHANGELOG_SEMVER_RE.search(changelog_text)
-        if csm and _normalize_semver(csm.group(1)) != _normalize_semver(db_semver):
+        if csm and _coherence_semver_core(csm.group(1)) != _coherence_semver_core(db_semver):
             errors.append(
                 f"release_coherence: CHANGELOG SemVer {csm.group(1)} != allocator {db_semver}"
             )

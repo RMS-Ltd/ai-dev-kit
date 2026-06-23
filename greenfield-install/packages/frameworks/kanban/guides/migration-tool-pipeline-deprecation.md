@@ -50,7 +50,7 @@ Scripts remain in-tree for one adoption cycle with module docstring banners. **R
 
 - Legacy kanban root: **read-only** during KMA ingest
 - Target writes: ADK `kanban_root` only
-- See [ADR-028](../../../docs/architecture/standards-and-adrs/ADR-028-agentic-kanban-migration-brownfield-fr127.md) and [FR-081](../../../docs/kanban/fr-br/FR-081-brownfield-modular-adopter-integration.md)
+- See [ADR-028](../../../docs/architecture/standards-and-adrs/ADR-028-agentic-kanban-migration-brownfield-fr127.md) and [FR-081](../../../docs/kanban/fbu/FR-081-brownfield-modular-adopter-integration.md)
 
 ---
 

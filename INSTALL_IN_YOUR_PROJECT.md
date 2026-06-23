@@ -83,7 +83,7 @@ Other guides under [`docs/documentation/user-docs/`](docs/documentation/user-doc
 | Short `README` at vendor root | `docs/project-management/` (ai-dev-kit kanban) |
 | Published install docs (link below) | `portal/`, changelog archive, `tests/` |
 
-### Target layout ([FR-110](docs/kanban/fr-br/FR-110-lean-adopter-distribution-footprint-and-vendor-bundle.md))
+### Target layout ([FR-110](docs/kanban/fbu/FR-110-lean-adopter-distribution-footprint-and-vendor-bundle.md))
 
 The repo ships **`greenfield-install/`** — vendor or copy **that directory** (not the full maintainer tree):
 
@@ -102,10 +102,13 @@ Install from your **host project root** (framework paths relative to where you p
 python3 "vendor/ai-dev-kit/packages/frameworks/workflow-mgt/scripts/install_greenfield_path.py" \
   --project-root "." \
   --vendor-root "vendor/ai-dev-kit" \
-  --non-interactive
+  --non-interactive \
+  --config vendor/ai-dev-kit/packages/frameworks/workflow-mgt/config/install-profile.example.yaml
 ```
 
-**Non-interactive RW (mode C):** pass a pre-filled YAML so the orchestrator does not prompt for project metadata:
+**One command (FR-135 guided v2):** the install profile records adoption path, SQLite backend, UKW trigger bundle, kanban-completed ledger init, and Install RC — no post-install manual step banner. Customize `install-profile.yaml` from the example under `packages/frameworks/workflow-mgt/config/`. Choice reference: [install-profile.example.yaml](packages/frameworks/workflow-mgt/config/install-profile.example.yaml).
+
+**Legacy non-interactive RW (mode C):** pass a pre-filled YAML so the orchestrator does not prompt for project metadata:
 
 ```bash
 python3 "vendor/ai-dev-kit/packages/frameworks/workflow-mgt/scripts/install_greenfield_path.py" \
@@ -119,7 +122,7 @@ The orchestrator resolves installer scripts under `--vendor-root` when `packages
 
 **Lean RW expectation:** greenfield mode C scaffolds `rw-config.yaml`, `.cursorrules`, and version/changelog stubs — it does **not** copy full `workflows/` YAML into your repo (those remain under the vendor tree). Validators use `rw-config.yaml` `scripts_path`.
 
-**Adopter scope:** completing the greenfield install exercise does not require adopting ADK template kanban as your operational PM layer. Projects with legacy kanban may defer integration per [FR-081](docs/kanban/fr-br/FR-081-brownfield-modular-adopter-integration.md) (see [UXR-025](docs/kanban/fr-br/UXR-025-starborn-legacy-greenfield-install-diary.md) / [triage matrix](docs/knowledge/analysis/projects/starborn-legacy-install-triage-matrix.md)).
+**Adopter scope:** completing the greenfield install exercise does not require adopting ADK template kanban as your operational PM layer. Projects with legacy kanban may defer integration per [FR-081](docs/kanban/fbu/FR-081-brownfield-modular-adopter-integration.md) (see [UXR-025](docs/kanban/fbu/UXR-025-starborn-legacy-greenfield-install-diary.md) / [triage matrix](docs/knowledge/analysis/projects/starborn-legacy-install-triage-matrix.md)).
 
 Preflight (recommended before first install):
 
@@ -130,11 +133,11 @@ python3 vendor/ai-dev-kit/packages/frameworks/workflow-mgt/scripts/verify_vendor
 
 ### Acquire the lean tree
 
-**Clean working tree:** `git submodule add` requires a committed `.gitmodules` and clean index. After wiping or partially deleting vendor paths, run `git status` and restore or commit before submodule add ([UXR-025](docs/kanban/fr-br/UXR-025-starborn-legacy-greenfield-install-diary.md) F1).
+**Clean working tree:** `git submodule add` requires a committed `.gitmodules` and clean index. After wiping or partially deleting vendor paths, run `git status` and restore or commit before submodule add ([UXR-025](docs/kanban/fbu/UXR-025-starborn-legacy-greenfield-install-diary.md) F1).
 
 **Disk-constrained hosts:** prefer the **release tarball** (item 2) over sparse clone when free space is tight — tarball extract is ~1–2 MiB compressed / ~10 MiB expanded vs full git pack history (UXR-025 F2).
 
-1. **Release tarball (recommended when disk is tight or git is blocked):** download `greenfield-install-v{semver}.tar.gz` + matching `.sha256` from a [release tag](https://github.com/RMS-Ltd/ai-dev-kit/releases) (FR-110-F5 / [ADR-021](docs/architecture/standards-and-adrs/ADR-021-greenfield-install-ghcr-delivery-channel.md)). **Verify integrity before extract** ([FR-062](docs/kanban/fr-br/FR-062-github-release-installation-experience.md)):
+1. **Release tarball (recommended when disk is tight or git is blocked):** download `greenfield-install-v{semver}.tar.gz` + matching `.sha256` from a [release tag](https://github.com/RMS-Ltd/ai-dev-kit/releases) (FR-110-F5 / [ADR-021](docs/architecture/standards-and-adrs/ADR-021-greenfield-install-ghcr-delivery-channel.md)). **Verify integrity before extract** ([FR-062](docs/kanban/fbu/FR-062-github-release-installation-experience.md)):
 
    ```bash
    gh release download v0.4.1063 --repo RMS-Ltd/ai-dev-kit \
@@ -214,7 +217,7 @@ python3 vendor/ai-dev-kit/packages/frameworks/workflow-mgt/scripts/verify_vendor
 
 This section defines the canonical **greenfield** path for new or template projects per **FR-080** (E6:S09:T01).
 
-**Language first (template repos):** After creating a repository from the GitHub template, complete **[Step 0 — Select language variant](docs/documentation/user-docs/framework-dependency-post-template-setup-guide.md#step-0-select-language-variant-uk--us-english)** (UK/US English → `ai-dev-kit-config.yaml`) before other setup steps. See [FR-006](docs/project-management/kanban/fr-br/FR-006-localization-language-selection-uk-us-english.md) Phase 1.
+**Language first (template repos):** After creating a repository from the GitHub template, complete **[Step 0 — Select language variant](docs/documentation/user-docs/framework-dependency-post-template-setup-guide.md#step-0-select-language-variant-uk--us-english)** (UK/US English → `ai-dev-kit-config.yaml`) before other setup steps. See [FR-006](docs/project-management/kanban/fbu/FR-006-localization-language-selection-uk-us-english.md) Phase 1.
 
 **Language first (RW installer):** `install_release_workflow.py` prompts for UK/US English **before** RW path questions and writes `ai-dev-kit-config.yaml` (separate from `rw-config.yaml`). Flags: `--language en-GB|en-US`, `--non-interactive` (default UK English), `--force` (overwrite existing localisation config). Re-runs skip the write if the file exists unless `--force` is set.
 
@@ -229,7 +232,7 @@ This section defines the canonical **greenfield** path for new or template proje
 Flags: `--maintainer-editor-profile {none,obsidian-personal,obsidian-team}`. Greenfield orchestrator forwards the same flag. Detail: [`docs/maintainer/OBSIDIAN.md`](docs/maintainer/OBSIDIAN.md).
 
 - Policy anchor: [ADR-003](docs/architecture/standards-and-adrs/ADR-003-greenfield-vs-brownfield-adoption.md)
-- Brownfield is separate: see [Brownfield adoption (existing repositories)](#brownfield-adoption-existing-repositories) below; policy [FR-081](docs/kanban/fr-br/FR-081-brownfield-modular-adopter-integration.md); planning [IPP-E6S09T02](docs/implementation-cycles/IPP-E6S09T02-brownfield-modular-adopter-integration-fr081.md)
+- Brownfield is separate: see [Brownfield adoption (existing repositories)](#brownfield-adoption-existing-repositories) below; policy [FR-081](docs/kanban/fbu/FR-081-brownfield-modular-adopter-integration.md); planning [IPP-E6S09T02](docs/implementation-cycles/IPP-E6S09T02-brownfield-modular-adopter-integration-fr081.md)
 - Greenfield planning: [IPW-E6S09T01](docs/implementation-cycles/IPW-E6S09T01-greenfield-installation-fr080.md)
 
 ### Optional harness layer (ECC)
@@ -253,7 +256,7 @@ ADK adoption does **not** require [ECC](https://github.com/affaan-m/ECC) (MIT). 
 
    Use `--execute` only after Phase 0 passes on your project.
 
-Normative contract: [ECC ↔ ADK integration specification](docs/architecture/standards-and-adrs/ecc-adk-harness-layer-integration-specification.md). Brownfield adopters: same optional surface per [ADR-003](docs/architecture/standards-and-adrs/ADR-003-greenfield-vs-brownfield-adoption.md) and [FR-081](docs/kanban/fr-br/FR-081-brownfield-modular-adopter-integration.md).
+Normative contract: [ECC ↔ ADK integration specification](docs/architecture/standards-and-adrs/ecc-adk-harness-layer-integration-specification.md). Brownfield adopters: same optional surface per [ADR-003](docs/architecture/standards-and-adrs/ADR-003-greenfield-vs-brownfield-adoption.md) and [FR-081](docs/kanban/fbu/FR-081-brownfield-modular-adopter-integration.md).
 
 ### Scope boundary
 
@@ -332,13 +335,13 @@ epic_doc_pattern: epics/epic-{epic}/epic-{epic}.md
 story_doc_pattern: epics/epic-{epic}/story-{story:03d}-*.md
 task_doc_pattern: epics/epic-{epic}/story-{story:03d}/t{task:02d}-*.md
 kanban_board: kboard.md
-fr_br_root: docs/kanban/fr-br
+fbu_root: docs/kanban/fbu
 # Capital-case fresh install (legacy) — installer still supports Epic-/Story- paths:
 # epic_doc_pattern: epics/Epic-{epic}/Epic-{epic}.md
 # story_doc_pattern: epics/Epic-{epic}/Story-{story:03d}-*.md
 ```
 
-Mode C also **detects** `fr-br/` when present and refuses to persist zero-match epic/story patterns while kanban files exist (BR-084).
+Mode C also **detects** `fbu/` when present and refuses to persist zero-match epic/story patterns while kanban files exist (BR-084).
 
 ### Outputs
 
@@ -463,9 +466,9 @@ Redact host paths, tokens, and internal URLs before sharing logs outside your te
 
 ### Wave 4 — Install telemetry and feedback (**FR-078** / **FR-079**)
 
-- **[FR-078](docs/kanban/fr-br/FR-078-comprehensive-install-event-contract-logging-and-feedback-quality.md)** — install **event** logging (COMPLETE): set `AI_DEV_KIT_INSTALL_LOG_PATH` before installers run; logs land under `logs/ai-dev-kit/install/`.
-- **[FR-079](docs/kanban/fr-br/FR-079-install-feedback-submission-path-and-governance.md)** — feedback submission (COMPLETE): package install evidence for maintainers via the documented CLI / submission workflow.
-- **[FR-108](docs/kanban/fr-br/FR-108-install-setup-error-code-registry-and-emission.md)** — stable `ADK-I*` error codes in console output (see [troubleshooting § install error codes](docs/documentation/user-docs/framework-dependency-troubleshooting-guide.md#install-error-codes-adk)).
+- **[FR-078](docs/kanban/fbu/FR-078-comprehensive-install-event-contract-logging-and-feedback-quality.md)** — install **event** logging (COMPLETE): set `AI_DEV_KIT_INSTALL_LOG_PATH` before installers run; logs land under `logs/ai-dev-kit/install/`.
+- **[FR-079](docs/kanban/fbu/FR-079-install-feedback-submission-path-and-governance.md)** — feedback submission (COMPLETE): package install evidence for maintainers via the documented CLI / submission workflow.
+- **[FR-108](docs/kanban/fbu/FR-108-install-setup-error-code-registry-and-emission.md)** — stable `ADK-I*` error codes in console output (see [troubleshooting § install error codes](docs/documentation/user-docs/framework-dependency-troubleshooting-guide.md#install-error-codes-adk)).
 
 **Adopter practice:** Capture the SemVer banner line + any `ADK-*` code + install log path or [install receipt](docs/documentation/user-docs/install-receipt-reference.md). **Do not paste** secrets, tokens, or private URLs.
 
@@ -473,7 +476,7 @@ Redact host paths, tokens, and internal URLs before sharing logs outside your te
 
 ## Adopter Path Selector (mature repositories)
 
-**Policy:** [ADR-003](docs/architecture/standards-and-adrs/ADR-003-greenfield-vs-brownfield-adoption.md) (host sovereignty) · [ADR-030](docs/architecture/standards-and-adrs/ADR-030-selective-adoption-three-path-model.md) (three-path model) · [UXR-029](docs/kanban/fr-br/UXR-029-adk-install-path-experiment.md) · **Evidence:** [SBL attempt 09 synthesis](docs/knowledge/articles/greenfield-brownfield-selective-adoption-sbl-attempt-09.md) · [#52](https://github.com/RMS-Ltd/ai-dev-kit/issues/52)
+**Policy:** [ADR-003](docs/architecture/standards-and-adrs/ADR-003-greenfield-vs-brownfield-adoption.md) (host sovereignty) · [ADR-030](docs/architecture/standards-and-adrs/ADR-030-selective-adoption-three-path-model.md) (three-path model) · [UXR-029](docs/kanban/fbu/UXR-029-adk-install-path-experiment.md) · **Evidence:** [SBL attempt 09 synthesis](docs/knowledge/articles/greenfield-brownfield-selective-adoption-sbl-attempt-09.md) · [#52](https://github.com/RMS-Ltd/ai-dev-kit/issues/52)
 
 Mature adopters face more than a greenfield vs brownfield binary. Use this selector **before** installers when the repo has established `docs/`, PM/kanban, or release history.
 
@@ -492,7 +495,7 @@ Mature adopters face more than a greenfield vs brownfield binary. Use this selec
 
 **Procedure:** Run installers in place; wire `rw-config.yaml`; `import_legacy.py` when moving from YAML registry; incremental path fixes. Kanban: **KMA** only when legacy corpus exists but topology is otherwise compatible.
 
-**Programme controls:** fynd.deals, Confidentia (Arm A experiment — [UXR-029](docs/kanban/fr-br/UXR-029-adk-install-path-experiment.md)).
+**Programme controls:** fynd.deals, Confidentia (Arm A experiment — [UXR-029](docs/kanban/fbu/UXR-029-adk-install-path-experiment.md)).
 
 ### Path 2 — Shell + selective migration (Arm B)
 
@@ -640,7 +643,7 @@ When you have an **existing legacy kanban corpus** (non-canonical story naming, 
 3. Emit [DUPLICATE_EPIC_POLICY.md](packages/frameworks/kanban/guides/DUPLICATE_EPIC_POLICY.md) matrix in Step 2; draft `migration-proposal.md` from the template.
 4. Review and sign off on the proposal before any file writes (**blocking gate**).
 
-**Policy:** [ADR-028](docs/architecture/standards-and-adrs/ADR-028-agentic-kanban-migration-brownfield-fr127.md) · [FR-127](docs/kanban/fr-br/FR-127-agentic-kanban-migration-agent-replace-tool-pipeline.md). Installer modes `migration`, `hybrid`, and `canonical_adoption` are **gated** (exit 2) with a pointer to KMA.
+**Policy:** [ADR-028](docs/architecture/standards-and-adrs/ADR-028-agentic-kanban-migration-brownfield-fr127.md) · [FR-127](docs/kanban/fbu/FR-127-agentic-kanban-migration-agent-replace-tool-pipeline.md). Installer modes `migration`, `hybrid`, and `canonical_adoption` are **gated** (exit 2) with a pointer to KMA.
 
 **Evidence:** Starborn Legacy attempt 06 — automated pipeline detected **0** stories; agentic KMA migrated **72** stories. Regression benchmark: `pytest tests/kanban/test_kma_agentic_vs_automated.py` (see [migration-tool-pipeline-deprecation.md](packages/frameworks/kanban/guides/migration-tool-pipeline-deprecation.md)).
 
@@ -649,7 +652,7 @@ When you have an **existing legacy kanban corpus** (non-canonical story naming, 
 - **Legacy corpus:** use **KMA** (section above).
 - Use **`--mode fresh`** only for greenfield-style **empty** Kanban roots; the installer prints a brownfield warning when you select fresh on an existing repo.
 - Use **`--mode update`** to refresh paths on an existing ADK v3.2 layout.
-- **Empty repo:** `--mode fresh` creates the Kanban skeleton (`epics/` included) before validation — **`--force` is not required** to bypass missing-directory checks on first install (see [BR-080](docs/kanban/fr-br/BR-080-kanban-fresh-mode-validation-requires-force-on-empty-repo.md)).
+- **Empty repo:** `--mode fresh` creates the Kanban skeleton (`epics/` included) before validation — **`--force` is not required** to bypass missing-directory checks on first install (see [BR-080](docs/kanban/fbu/BR-080-kanban-fresh-mode-validation-requires-force-on-empty-repo.md)).
 - **Install outcome:** When `kboard.md` and `epics/` are created, the installer reports **`Final status: SUCCESS`** (not PARTIAL solely because board files were absent during pre-install validation). `kanban-structure.md` is copied from `templates/KANBAN_STRUCTURE_TEMPLATE.md` (BR-078).
 - **Epic 22/23 templates:** Fresh install resolves `templates/Epic-22/Epic-22.md` and `templates/Epic-23/Epic-23.md` (or `templates/epics/Epic-{n}-*.md`) — not placeholder stubs (BR-079).
 - Installer installs **canonical templates**, not ai-dev-kit maintainer epics—see [kanban/README.md](packages/frameworks/kanban/README.md).
@@ -667,7 +670,7 @@ Align `kanban_root` in `rw-config.yaml` with your actual path before RW Step 7.
 If your project still uses the legacy book-repo path:
 
 1. `git mv docs/project-management/kanban docs/kanban` (preserve history).
-2. Set `kanban_root: docs/kanban` and `fr_br_root: docs/kanban/fr-br` in `rw-config.yaml`.
+2. Set `kanban_root: docs/kanban` and `fbu_root: docs/kanban/fbu` in `rw-config.yaml`.
 3. Run the mechanical rewriter (optional):  
    `python packages/frameworks/workflow-mgt/scripts/kanban/apply_kanban_root_migration_fr118.py --apply`
 4. Re-run Kanban install validation:  
@@ -693,10 +696,10 @@ If your project still uses the legacy book-repo path:
 
 | Topic | Status | Track in |
 |-------|--------|----------|
-| GitHub Release framework tarballs | **Available** | [FR-062](docs/kanban/fr-br/FR-062-github-release-installation-experience.md) — `install_package_from_release.py` |
-| Install logging + feedback | **Available** | [FR-078](docs/kanban/fr-br/FR-078-comprehensive-install-event-contract-logging-and-feedback-quality.md), [FR-079](docs/kanban/fr-br/FR-079-install-feedback-submission-path-and-governance.md), [install-receipt-reference.md](docs/documentation/user-docs/install-receipt-reference.md) |
-| Install error codes | **Available** | [FR-108](docs/kanban/fr-br/FR-108-install-setup-error-code-registry-and-emission.md), [FR-111](docs/kanban/fr-br/FR-111-acquisition-layer-adk-error-codes-and-install-error-doc-hygiene.md) (registry **1.1.0**) |
-| Intelligent epic matching | Document only | Kanban `canonical_adoption`; [FR-011](docs/kanban/fr-br/FR-011-intelligent-epic-matching-ai-assisted-canonical-adoption.md) |
+| GitHub Release framework tarballs | **Available** | [FR-062](docs/kanban/fbu/FR-062-github-release-installation-experience.md) — `install_package_from_release.py` |
+| Install logging + feedback | **Available** | [FR-078](docs/kanban/fbu/FR-078-comprehensive-install-event-contract-logging-and-feedback-quality.md), [FR-079](docs/kanban/fbu/FR-079-install-feedback-submission-path-and-governance.md), [install-receipt-reference.md](docs/documentation/user-docs/install-receipt-reference.md) |
+| Install error codes | **Available** | [FR-108](docs/kanban/fbu/FR-108-install-setup-error-code-registry-and-emission.md), [FR-111](docs/kanban/fbu/FR-111-acquisition-layer-adk-error-codes-and-install-error-doc-hygiene.md) (registry **1.1.0**) |
+| Intelligent epic matching | Document only | Kanban `canonical_adoption`; [FR-011](docs/kanban/fbu/FR-011-intelligent-epic-matching-ai-assisted-canonical-adoption.md) |
 | npm/pip framework packages | Future | Phase 3 in [framework-dependency-installation-guide.md](docs/documentation/user-docs/framework-dependency-installation-guide.md) |
 
 ---

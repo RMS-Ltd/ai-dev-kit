@@ -14,13 +14,13 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** Medium (ongoing)  
 **Created:** 2026-06-05  
-**Last updated:** 2026-06-16 (Wave 11 standard findings burn-down @ v0.2.16.6+19)  
-**Version Anchor:** v0.2.16.6+19  
+**Last updated:** 2026-06-23 (Wave 12 Dependabot http-proxy-middleware @ v0.2.16.6+20)  
+**Version Anchor:** v0.2.16.6+20  
 **Code:** E02S16T06  
 **Task Type:** Perpetual Maintenance
 
 
-**Upstream:** [FR-112 — Perpetual GitHub CI and security health lanes](../../../fr-br/FR-112-perpetual-github-ci-and-security-health-lanes.md)
+**Upstream:** [FR-112 — Perpetual GitHub CI and security health lanes](../../../fbu/FR-112-perpetual-github-ci-and-security-health-lanes.md)
 
 Publication Status: NOT_APPLICABLE  
 Publication N/A Reason: Perpetual maintainer kanban task; repo SoT per BR-066 — not Docusaurus-published.
@@ -30,7 +30,7 @@ Publication N/A Reason: Perpetual maintainer kanban task; repo SoT per BR-066 �
 ## Input
 
 - [IPP-E02S16T06](../../../../implementation-cycles/IPP-E02S16T06-github-security-code-quality-health-perpetual-fr112.md)
-- [FR-112](../../../fr-br/FR-112-perpetual-github-ci-and-security-health-lanes.md)
+- [FR-112](../../../fbu/FR-112-perpetual-github-ci-and-security-health-lanes.md)
 - [E08:S03:T15 — Actions CI (Perpetual)](T15-github-actions-ci-health-perpetual-fr112.md) — merge gate owner
 - [IPP-E08S03T12](../../../../implementation-cycles/IPP-E08S03T12-code-quality-maintainability-backlog-br099.md) · [IPP-E08S03T13](../../../../implementation-cycles/IPP-E08S03T13-code-quality-reliability-backlog-br100.md) · [IPP-E08S03T14](../../../../implementation-cycles/IPP-E08S03T14-code-quality-ai-suggestions-backlog-br101.md)
 
@@ -574,7 +574,7 @@ Between 2026-06-16 09:54–15:03 UTC, **23** `ai-findings-autofix/*` PRs merged 
 | ---- | ------ |
 | **Do not merge** `ai-findings-autofix/*` PRs on autopilot | Triage in GH UI only; no direct-to-`main` merges |
 | **Real bugs** | Fix on `dev` / epic branch → test → **`RW E02:S16:T06`** |
-| **Cosmetic / stylistic AI suggestions** | **Ignore** — lag-accepted per [BR-101](../../../fr-br/BR-101-code-quality-ai-suggestions-backlog.md) (no GH dismiss API) |
+| **Cosmetic / stylistic AI suggestions** | **Ignore** — lag-accepted per [BR-101](../../../fbu/BR-101-code-quality-ai-suggestions-backlog.md) (no GH dismiss API) |
 | **Frozen file groups** | No further autofix merges for portal patch + `test_allocate` unless a **functional** regression is demonstrated |
 
 ### Canonical implementations (frozen)
@@ -627,6 +627,26 @@ Between 2026-06-16 09:54–15:03 UTC, **23** `ai-findings-autofix/*` PRs merged 
 
 ---
 
+## Wave 12 remediation (shipped @ v0.2.16.6+20)
+
+**Theme:** [Dependabot #10](https://github.com/RMS-Ltd/ai-dev-kit/security/dependabot/10) — `http-proxy-middleware` Host-header routing bypass (CVE). Dependabot security updates [#1431585500](https://github.com/RMS-Ltd/ai-dev-kit/network/updates/1431585500) and [#1431587338](https://github.com/RMS-Ltd/ai-dev-kit/network/updates/1431587338) failed with `security_update_not_possible` — `webpack-dev-server@5.2.5` requires `^2.0.9`; earliest fixed **2.0.10**.
+
+| Alert | Package | Severity | Fix |
+| ----- | ------- | -------- | --- |
+| #10 | `http-proxy-middleware` | Medium | `"http-proxy-middleware": "2.0.10"` npm override |
+
+| Verification | Result |
+| ------------ | ------ |
+| `npm ls http-proxy-middleware` | **2.0.10** overridden (via `webpack-dev-server`) |
+| `npm audit` | **0** vulnerabilities |
+| `npm run build` (portal) | **SUCCESS** |
+| `RW E02:S16:T06 --art` | **v0.2.16.6+20** |
+| Operator Dependabot dashboard (TC40) | **Pending** post-merge |
+
+**Scope note:** Same override pattern as Wave 8 (`ws`, `js-yaml`). Dependabot enablement policy → **E08:S03:T06** (FR-105).
+
+---
+
 ## Coordination matrix (T12–T17 vs T16)
 
 | Task | Surface | Status | T16 may remediate? |
@@ -668,13 +688,14 @@ Between 2026-06-16 09:54–15:03 UTC, **23** `ai-findings-autofix/*` PRs merged 
 - [x] **AC22 (Wave 9):** AI autofix PR #70 CI repair — `conftest.py` path setup + `test_allocate` import restore; pytest green; shipped **v0.2.16.6+17**; PR #70 CI re-verify **pending**.
 - [x] **AC23 (Wave 10):** AI autofix moratorium documented; canonical hot files reconciled on `dev`; operator stops merging `ai-findings-autofix/*` to `main`; lag-accepted for stale AI panel rows; shipped **v0.2.16.6+18** via **`RW E02:S16:T06`**.
 - [ ] **AC24 (Wave 11):** Standard findings **3M+2R** burn-down shipped **v0.2.16.6+19**; operator TC39 dashboard verify **pending**.
+- [x] **AC25 (Wave 12):** Dependabot **#10** `http-proxy-middleware@2.0.10` override; portal build + `npm audit` 0; shipped **v0.2.16.6+20**; operator TC40 Dependabot verify **pending**.
 
 ---
 
 ## References
 
 - [IPP-E02S16T06](../../../../implementation-cycles/IPP-E02S16T06-github-security-code-quality-health-perpetual-fr112.md)
-- [FR-112](../../../fr-br/FR-112-perpetual-github-ci-and-security-health-lanes.md)
+- [FR-112](../../../fbu/FR-112-perpetual-github-ci-and-security-health-lanes.md)
 - [E08:S03:T15 — GitHub Actions CI health (Perpetual)](T15-github-actions-ci-health-perpetual-fr112.md)
 - [E08:S03:T12 — BR-099 maintainability backlog](T12-code-quality-maintainability-backlog-br099.md)
 - [E08:S03:T13 — BR-100 reliability backlog](T13-code-quality-reliability-backlog-br100.md)

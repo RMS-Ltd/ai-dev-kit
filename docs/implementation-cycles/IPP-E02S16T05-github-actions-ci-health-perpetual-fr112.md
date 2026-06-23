@@ -9,7 +9,7 @@ housekeeping_policy: keep
 # E02:S16:T05 — Planning: CQG/CodeQL vs Actions CI ship gap (IPW)
 
 **Host Task:** [`T05-github-actions-ci-health-perpetual.md`](../kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T05-github-actions-ci-health-perpetual.md) **(E02:S16:T05)**  
-**Planning for:** [FR-112](../kanban/fr-br/FR-112-perpetual-github-ci-and-security-health-lanes.md) · [BR-104](../kanban/fr-br/BR-104-codeql-cqg-green-does-not-imply-actions-ci-green.md)  
+**Planning for:** [FR-112](../kanban/fbu/FR-112-perpetual-github-ci-and-security-health-lanes.md) · [BR-104](../kanban/fbu/BR-104-codeql-cqg-green-does-not-imply-actions-ci-green.md)  
 **Status:** Approved — Wave 4 (CQG≠CI boundary + Step 9.7 hardening + migration race fix)  
 **Predecessor:** [IPP-E08S03T15](IPP-E08S03T15-github-actions-ci-health-perpetual-fr112.md) (historical anchor E08:S03:T15)
 
@@ -108,7 +108,7 @@ Close the operator gap where **CodeQL/Code Quality workflows pass on GitHub whil
 | Doc ID | Path | Action |
 | ------ | ---- | ------ |
 | D-C1 | This IPP | CREATE |
-| D-C2 | `docs/kanban/fr-br/BR-104-*.md` | CREATE |
+| D-C2 | `docs/kanban/fbu/BR-104-*.md` | CREATE |
 | D-U1 | T05 task doc | UPDATE |
 | D-U2 | FR-112 | UPDATE |
 | D-U3 | UXR-024 | UPDATE |
@@ -122,7 +122,7 @@ Close the operator gap where **CodeQL/Code Quality workflows pass on GitHub whil
 | Doc ID | Path | Lifecycle |
 | ------ | ---- | --------- |
 | D-C1 | `docs/implementation-cycles/IPP-E02S16T05-github-actions-ci-health-perpetual-fr112.md` | evergreen |
-| D-C2 | `docs/kanban/fr-br/BR-104-codeql-cqg-green-does-not-imply-actions-ci-green.md` | evergreen |
+| D-C2 | `docs/kanban/fbu/BR-104-codeql-cqg-green-does-not-imply-actions-ci-green.md` | evergreen |
 
 ---
 
@@ -139,8 +139,8 @@ Close the operator gap where **CodeQL/Code Quality workflows pass on GitHub whil
 
 ## References
 
-- [FR-112](../kanban/fr-br/FR-112-perpetual-github-ci-and-security-health-lanes.md)
-- [BR-104](../kanban/fr-br/BR-104-codeql-cqg-green-does-not-imply-actions-ci-green.md)
+- [FR-112](../kanban/fbu/FR-112-perpetual-github-ci-and-security-health-lanes.md)
+- [BR-104](../kanban/fbu/BR-104-codeql-cqg-green-does-not-imply-actions-ci-green.md)
 - [IPP-E08S03T15](IPP-E08S03T15-github-actions-ci-health-perpetual-fr112.md)
-- [UXR-024](../kanban/fr-br/UXR-024-rw-local-release-default-no-push-batch-operator-push.md)
+- [UXR-024](../kanban/fbu/UXR-024-rw-local-release-default-no-push-batch-operator-push.md)
 - [GitHub Actions](https://github.com/RMS-Ltd/ai-dev-kit/actions)

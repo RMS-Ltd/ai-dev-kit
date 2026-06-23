@@ -8,14 +8,14 @@ housekeeping_policy: keep
 
 # Task E07:S00:T06 – UXR-006 Repository Anchor
 
-> **HISTORICAL REGISTRY ANCHOR** — Do not use for RW or new intake. **Primary implementing task:** [E06:S06:T61](../../epic-06/story-06-feature-requests/T61-uxr-006-kanban-moscow-last-modified-stamps.md). Detasked per [BR-076](../../../fr-br/BR-076-e7-s00-must-not-host-concrete-tasks.md).
+> **HISTORICAL REGISTRY ANCHOR** — Do not use for RW or new intake. **Primary implementing task:** [E06:S06:T61](../../epic-06/story-06-feature-requests/T61-uxr-006-kanban-moscow-last-modified-stamps.md). Detasked per [BR-076](../../../fbu/BR-076-e7-s00-must-not-host-concrete-tasks.md).
 
 **Task ID:** E07:S00:T06  
 **Status:** HISTORICAL (superseded)  
 **Priority:** N/A  
 **Version Anchor:** v0.7.0.6+0 (historical)  
 
-**UXR:** [UXR-006](../../../fr-br/UXR-006-kanban-moscow-row-last-modified-utc-stamp.md)  
+**UXR:** [UXR-006](../../../fbu/UXR-006-kanban-moscow-row-last-modified-utc-stamp.md)  
 **Primary implementing task:** [E06:S06:T61](../../epic-06/story-06-feature-requests/T61-uxr-006-kanban-moscow-last-modified-stamps.md)
 
 ---
@@ -28,7 +28,7 @@ Repository anchor for **UXR-006** (MoSCOW row `Last modified` UTC stamps); deliv
 
 ## Input
 
-- [UXR-006](../../../fr-br/UXR-006-kanban-moscow-row-last-modified-utc-stamp.md)  
+- [UXR-006](../../../fbu/UXR-006-kanban-moscow-row-last-modified-utc-stamp.md)  
 - [E06:S06:T61](../../epic-06/story-06-feature-requests/T61-uxr-006-kanban-moscow-last-modified-stamps.md)
 
 ---

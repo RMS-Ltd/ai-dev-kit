@@ -50,7 +50,7 @@ This includes:
 - [T03 – Behavioral validation report](workflow-behavior-validation-report.md)
 - [T04 – Integration alignment report](integration-alignment-report.md)
 - [E07:S07:T01 – Workflow machinery code review report §5–§7](../../epic-07/story-07-code-reviews/T01-workflow-machinery-code-review-report.md)
-- [FR-050 – Workflows directory reorganization](../../../fr-br/FR-050-workflows-directory-structure-reorganization.md)
+- [FR-050 – Workflows directory reorganization](../../../fbu/FR-050-workflows-directory-structure-reorganization.md)
 - [IPP-E02S13T05](../../../../implementation-cycles/IPP-E02S13T05-gap-log-risk-assessment.md)
 
 ---
@@ -91,12 +91,12 @@ A **gap log and risk assessment** (this document) listing all identified gaps wi
 - **ID:** GAP-WFMGT-STRUCT-001
 - **Category:** Structural
 - **Description:** Six non-deprecated flat workflow YAML files at `workflows/*.yaml` duplicate nested workflow SoT directories, creating adopter confusion about which file is authoritative. RW flat stub is deprecated; intake, UKW, CMW, and other flat copies remain active duplicates.
-- **Source:** E07 H2; T03 D10; T02 inventory summary; [FR-050](../../../fr-br/FR-050-workflows-directory-structure-reorganization.md)
+- **Source:** E07 H2; T03 D10; T02 inventory summary; [FR-050](../../../fbu/FR-050-workflows-directory-structure-reorganization.md)
 - **Ownership:** Workflow Management package
 - **Severity:** HIGH
 - **Likelihood:** HIGH (adopters may edit wrong YAML)
 - **RC Impact:** NON-BLOCKING (remediation scheduled; doc-aligned adopters use nested dirs)
-- **Tracking:** [FR-050](../../../fr-br/FR-050-workflows-directory-structure-reorganization.md); [E02:S13:T09](T09-fr050-workflows-directory-reorganization.md) (filed)
+- **Tracking:** [FR-050](../../../fbu/FR-050-workflows-directory-structure-reorganization.md); [E02:S13:T09](T09-fr050-workflows-directory-reorganization.md) (filed)
 
 ---
 
@@ -376,7 +376,7 @@ All 16 gaps are **Workflow Management package implementation or documentation ga
 
 - **For follow-on (E02:S13:T06):**
   - [x] Define RC sign-off criteria from this gap log → [T06](T06-define-rc-sign-off-criteria-and-remediation-tasks.md)
-  - [x] File remediation tasks for Gap 1 → [T09](T09-fr050-workflows-directory-reorganization.md) + [FR-050](../../../fr-br/FR-050-workflows-directory-structure-reorganization.md)
+  - [x] File remediation tasks for Gap 1 → [T09](T09-fr050-workflows-directory-reorganization.md) + [FR-050](../../../fbu/FR-050-workflows-directory-structure-reorganization.md)
   - [x] File remediation task for Gap 2 → [T10](T10-kanban-transform-consolidation.md)
   - [x] Schedule doc-fix backlog (Gaps 5, 7, 11, 12, 16) → T06 remediation R4
   - [ ] Gap 4 (shared config loader) → T06 remediation R3 (proposed host)
@@ -393,8 +393,8 @@ All 16 gaps are **Workflow Management package implementation or documentation ga
 - [T06 RC sign-off task](T06-define-rc-sign-off-criteria-and-remediation-tasks.md)
 - [IPP-E02S13T05](../../../../implementation-cycles/IPP-E02S13T05-gap-log-risk-assessment.md)
 - [gap-log-schema.md](../../../../architecture/standards-and-adrs/gap-log-schema.md)
-- [FR-050](../../../fr-br/FR-050-workflows-directory-structure-reorganization.md)
-- [FR-107](../../../fr-br/FR-107-comprehensive-workflow-machinery-code-review.md)
+- [FR-050](../../../fbu/FR-050-workflows-directory-structure-reorganization.md)
+- [FR-107](../../../fbu/FR-107-comprehensive-workflow-machinery-code-review.md)
 
 ---
 

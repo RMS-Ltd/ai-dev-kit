@@ -13,7 +13,7 @@ housekeeping_policy: keep
 **Severity:** HIGH  
 **Status:** DOCUMENTED  
 **Version:** 1.0.0  
-**Anchored To:** [BR-010 – RW Doc-Init Detection Bug](../../kanban/fr-br/BR-010-rw-doc-init-detection-bug-story-task-docs-batch-creation.md)  
+**Anchored To:** [BR-010 – RW Doc-Init Detection Bug](../../kanban/fbu/BR-010-rw-doc-init-detection-bug-story-task-docs-batch-creation.md)  
 **Related:** E4:S13:T04 – Assess system impacts
 
 ---
@@ -53,13 +53,13 @@ An **abstract anti-pattern** is a pattern where:
 
 ## Concrete Example: RW Doc-Init Detection Bug
 
-**Canonical Reference:** [BR-010 – RW Doc-Init Detection Bug](../../kanban/fr-br/BR-010-rw-doc-init-detection-bug-story-task-docs-batch-creation.md) serves as the authoritative source for this concrete example. This abstract anti-pattern document generalizes the pattern from that bug report.
+**Canonical Reference:** [BR-010 – RW Doc-Init Detection Bug](../../kanban/fbu/BR-010-rw-doc-init-detection-bug-story-task-docs-batch-creation.md) serves as the authoritative source for this concrete example. This abstract anti-pattern document generalizes the pattern from that bug report.
 
 ### The Use Case
 
 **Scenario:** Story + all task docs created together in story's abstract space (v0.E.S.0+0)
 
-**See:** [BR-010](../../kanban/fr-br/BR-010-rw-doc-init-detection-bug-story-task-docs-batch-creation.md) for complete bug details.
+**See:** [BR-010](../../kanban/fbu/BR-010-rw-doc-init-detection-bug-story-task-docs-batch-creation.md) for complete bug details.
 
 **Workflow:**
 1. Developer creates a new Story document
@@ -269,7 +269,7 @@ System logic that determines state based on incomplete information, leading to i
 
 ### Related Knowledge
 
-- **Canonical Source:** [BR-010 – RW Doc-Init Detection Bug](../../kanban/fr-br/BR-010-rw-doc-init-detection-bug-story-task-docs-batch-creation.md) - **PRIMARY ANCHOR** - The authoritative bug report that documents the concrete example
+- **Canonical Source:** [BR-010 – RW Doc-Init Detection Bug](../../kanban/fbu/BR-010-rw-doc-init-detection-bug-story-task-docs-batch-creation.md) - **PRIMARY ANCHOR** - The authoritative bug report that documents the concrete example
 - **Use Case:** [UC-D-004 – Story + Task Docs Batch Creation](../use-cases/discovered/UC-D-004-story-task-docs-batch-creation.md) - The valid use case that exposed the bug (anchored to BR-010)
 - **Task Document:** [E4:S13:T04 – Assess system impacts](../../kanban/epics/epic-04/story-13-kanban-board-moscow-prioritized-task-view/T04-assess-system-impacts.md) - Where the bug was fixed
 - **State Detection Logic:** The design flaw pattern category
@@ -332,6 +332,6 @@ This knowledge is **persistent** and **curated**, forming part of the agentic li
 **Last Updated:** 2025-12-18T00:00:00Z  
 **Version:** 1.0.0  
 **Status:** DOCUMENTED  
-**Canonical Anchor:** [BR-010 – RW Doc-Init Detection Bug](../../kanban/fr-br/BR-010-rw-doc-init-detection-bug-story-task-docs-batch-creation.md)  
+**Canonical Anchor:** [BR-010 – RW Doc-Init Detection Bug](../../kanban/fbu/BR-010-rw-doc-init-detection-bug-story-task-docs-batch-creation.md)  
 **Related Work:** E4:S13:T04 – Assess system impacts
 

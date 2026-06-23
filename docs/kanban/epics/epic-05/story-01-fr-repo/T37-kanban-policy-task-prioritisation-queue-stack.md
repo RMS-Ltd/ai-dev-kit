@@ -39,7 +39,7 @@ Anchor task for FR-037: update the framework Kanban governance policy to incorpo
 
 ## Input
 
-- **FR-037:** [`FR-037-kanban-policy-task-prioritisation-queue-stack.md`](../../../fr-br/FR-037-kanban-policy-task-prioritisation-queue-stack.md)
+- **FR-037:** [`FR-037-kanban-policy-task-prioritisation-queue-stack.md`](../../../fbu/FR-037-kanban-policy-task-prioritisation-queue-stack.md)
 - **Governance policy:** `packages/frameworks/kanban/policies/kanban-governance-policy.md`
 - **Board guide template:** `packages/frameworks/kanban/templates/KANBAN_BOARD_GUIDE_TEMPLATE.md`
 - **Source:** Starborn Legacy Kanban Governance Policy (2025-12-01) – MoSCOW prioritisation and COMPLETE, queue/stack
@@ -99,5 +99,5 @@ Concrete governance policy changes required to satisfy FR-037:
 
 ## References
 
-- **FR-037:** [`docs/kanban/fr-br/FR-037-kanban-policy-task-prioritisation-queue-stack.md`](../../../fr-br/FR-037-kanban-policy-task-prioritisation-queue-stack.md)
+- **FR-037:** [`docs/kanban/fbu/FR-037-kanban-policy-task-prioritisation-queue-stack.md`](../../../fbu/FR-037-kanban-policy-task-prioritisation-queue-stack.md)
 - **Epic 5 Story 01:** [`story-01-fr-repo.md`](../story-01-fr-repo.md)

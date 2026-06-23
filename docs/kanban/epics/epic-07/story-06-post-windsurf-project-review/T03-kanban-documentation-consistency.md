@@ -45,8 +45,8 @@ Kanban docs under `docs/kanban/`, [`kanban-governance-policy.md` (framework pack
 
 ## Acceptance Criteria
 
-- [x] Live kanban E9/E18 (and related) narrative disambiguated or corrected per SoT; historical docs not misread as ADK live map — **Renumbering note** in this doc; callouts in [story-06-comprehensive-canonical-est-template-system.md](../../epic-04/story-06-comprehensive-canonical-est-template-system.md) and [BR-005](../../../fr-br/BR-005-kanban-framework-epic-structure-gap-uat-finding.md); board + story-006 + epic-07 wording updated.
-- [x] Cross-references validated under `docs/kanban/**` — Fixed **kanban-structure** epic-01 story link (`story-01-vibe-dev-kit-…`); **kanban-board** FR-060/061 paths (`fr-br/…`); **epic-01.md** full-story path; added missing **epic-09 `story-05-canonical-est-review-and-refinement.md`** stub linked from epic-09 and structure. Full-tree link scan still reports many legacy breaks (esp. `kanban-completed.md`, FR placeholder links); logged for **E07:S06:T07**.
+- [x] Live kanban E9/E18 (and related) narrative disambiguated or corrected per SoT; historical docs not misread as ADK live map — **Renumbering note** in this doc; callouts in [story-06-comprehensive-canonical-est-template-system.md](../../epic-04/story-06-comprehensive-canonical-est-template-system.md) and [BR-005](../../../fbu/BR-005-kanban-framework-epic-structure-gap-uat-finding.md); board + story-006 + epic-07 wording updated.
+- [x] Cross-references validated under `docs/kanban/**` — Fixed **kanban-structure** epic-01 story link (`story-01-vibe-dev-kit-…`); **kanban-board** FR-060/061 paths (`fbu/…`); **epic-01.md** full-story path; added missing **epic-09 `story-05-canonical-est-review-and-refinement.md`** stub linked from epic-09 and structure. Full-tree link scan still reports many legacy breaks (esp. `kanban-completed.md`, FR placeholder links); logged for **E07:S06:T07**.
 - [x] Structure aligned with governance — Task remains under story-006 with discrete task doc; epic-09 story checklist now resolves to on-disk story file; policy link verified to `packages/frameworks/kanban/policies/kanban-governance-policy.md`.
 
 ## Findings / changes
@@ -56,7 +56,7 @@ Kanban docs under `docs/kanban/`, [`kanban-governance-policy.md` (framework pack
 | SoT | Documented: `kanban-structure.md` + `epics/Epic-*` = live ADK map; Epic 9 = RC Readiness; no live `epics/epic-18/`. |
 | E9:S05 | Created [story-05-canonical-est-review-and-refinement.md](../../epic-09/story-05-canonical-est-review-and-refinement.md) (stub) so epic-09 and kanban-structure links resolve. |
 | epic-01 | `kanban-structure` + `epic-01.md` pointed at wrong story-001 filename; corrected to `story-01-vibe-dev-kit-kanban-and-versioning.md`. |
-| kanban-board | FR-060/061 links corrected to `fr-br/…`; T03 MoSCOW blurb aligned with SoT narrative. |
+| kanban-board | FR-060/061 links corrected to `fbu/…`; T03 MoSCOW blurb aligned with SoT narrative. |
 | Templates / BR | epic-04 story-006: **ADK live vs templates** subsection; BR-005: top callout to live `kanban-structure.md`. |
 | Branch sync | Merged `origin/main` into `epic/7-documentation-maintenance` so `CHANGELOG.md` matches `latest_only` policy before RW. |
 | Out of scope | ~200+ broken relative links remain in historical `kanban-completed.md` and example paths in FR docs — **E07:S06:T07**. |

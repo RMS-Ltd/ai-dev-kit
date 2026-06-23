@@ -72,7 +72,7 @@ Implement translation lookup and rendering in framework surfaces.
 RW -k E21:S03:T03 --art --dpz
 ```
 
-**Target version anchor:** `v0.21.3.3+0` (doc-init BUILD +0 per [BR-067](../../../fr-br/BR-067-rw-first-doc-only-release-defaults-to-build-plus-one-not-plus-zero.md)).
+**Target version anchor:** `v0.21.3.3+0` (doc-init BUILD +0 per [BR-067](../../../fbu/BR-067-rw-first-doc-only-release-defaults-to-build-plus-one-not-plus-zero.md)).
 
 ---
 
@@ -93,5 +93,5 @@ Migrated from embedded Story section via `generate_task_doc.py` (FR-016 Wave 1 t
 - [IPP-E21S03T03](../../../../implementation-cycles/IPP-E21S03T03-translation-lookup-rendering.md)
 - [translatable-content-inventory.md](../../../../governance/standards/translatable-content-inventory.md)
 - [ADR-024](../../../../architecture/standards-and-adrs/ADR-024-i18n-framework-strategy.md)
-- [FR-006](../../../fr-br/FR-006-localization-language-selection-uk-us-english.md)
+- [FR-006](../../../fbu/FR-006-localization-language-selection-uk-us-english.md)
 

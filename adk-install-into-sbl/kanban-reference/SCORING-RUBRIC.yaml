@@ -1,0 +1,107 @@
+# KMA structural scoring rubric — starborn_legacy attempt 11
+# Used with TARGET-EST-TREE.md (TSP) as reference output.
+version: 1
+project: starborn_legacy
+reference_pack: docs/kanban/reference/
+
+dimensions:
+  unique_task_coverage:
+    weight: 0.25
+    description: >
+      Fraction of TSP unique E:S:T IDs present in candidate output (set intersection / |TSP|).
+    formula: "|TSP ∩ output| / |TSP|"
+    perfect: 1.0
+
+  epic_band_parity:
+    weight: 0.20
+    description: >
+      Per-epic story and task counts vs TSP headers. Score = 1 − mean(relative error) capped at 0.
+    formula: "1 − avg(|Δstories|/max(TSP,1), |Δtasks|/max(TSP,1)) per epic"
+    notes: See BAND-PARITY.md; E08/E41 split expected after UAT remap.
+
+  title_coverage:
+    weight: 0.15
+    description: >
+      Named titles on matched tasks (non-unresolved per TITLE-RESOLUTION-RULES.md).
+    formula: "named_matched / matched_tasks"
+    tsp_baseline: 0.889
+
+  story_filename_collision:
+    weight: 0.15
+    description: >
+      Penalty for duplicate story basenames within an epic folder (UXR-017).
+    formula: "1 if zero collisions else max(0, 1 − collisions/10)"
+    perfect: 1.0
+
+  folder_alignment:
+    weight: 0.15
+    description: >
+      Every TSP epic has a folder per TARGET-FOLDER-MAP.yaml; no story file under wrong epic-NN.
+    formula: "aligned_epics / tsp_epics"
+    perfect: 1.0
+
+  orphan_and_reserved:
+    weight: 0.10
+    description: >
+      Penalty for orphan folders (epic-43, epic-44, …) and undeclared epic-NN dirs.
+    formula: "1 − (orphans + undeclared) / max(folder_count, 1)"
+    known_orphans_attempt_11:
+      - docs/kanban/epics/epic-35
+      - docs/kanban/epics/epic-43
+      - docs/kanban/epics/epic-44
+
+thresholds:
+  guided_pass: 0.85
+  guided_review: 0.75
+  blind_typical: 0.60
+
+baselines:
+  tsp_freeze:
+    source: docs/kanban/reference/TARGET-EST-TREE.md
+    unique_tasks: 377
+    epic_bands: 19
+    named_pct: 0.889
+    duplicate_id_variants: 58
+    band_mismatches_logged: 159
+
+  temp_operator_source:
+    source: temp/sbl-operator-kanban-est-tree-titled.md
+    source_lines: 473
+  # 473 lines ≠ 473 unique tasks; dedup required (M03)
+
+  attempt_10_blind_pre_tweak:
+    source: docs/adk-feedback/attempt-10/FB-ADK-KMA-KANBAN-MIGRATION.md
+    estimated_scores:
+      unique_task_coverage: 0.70
+      epic_band_parity: 0.55
+      title_coverage: 0.75
+      story_filename_collision: 0.0
+      folder_alignment: 0.80
+      orphan_and_reserved: 0.85
+      weighted_total: 0.62
+    notes: Collisions fixed in operator pass 2; structural tree still diverges from TSP.
+
+  attempt_10_post_tweak:
+    estimated_scores:
+      story_filename_collision: 1.0
+      weighted_total: 0.72
+    notes: UXR-017 READY; TSP parity not attempted.
+
+scoring_modes:
+  blind:
+    description: Policy-only KMA without TSP input
+    pass_threshold: null
+    use: ADK regression baseline only
+
+  guided:
+    description: KMA with TSP pack as target_est_tree
+    pass_threshold: 0.85
+    required_inputs:
+      - TARGET-EST-TREE.md
+      - TARGET-FOLDER-MAP.yaml
+      - LEGACY-EPIC-REMAP.yaml
+      - KMA-METHODS.md
+
+  score_only:
+    description: Maintainer diff; no file writes
+    output: structural-diff.md + score JSON

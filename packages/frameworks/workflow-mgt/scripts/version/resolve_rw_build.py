@@ -131,12 +131,6 @@ def resolve_rw_build(
 
     if doc_policy_zero and not art:
         errors.append("--doc-policy-zero requires --art with --requested.")
-    if doc_policy_zero and file_build >= 1:
-        errors.append(
-            "--doc-policy-zero is only valid for BUILD=0 (doc-init). "
-            f"Current VERSION_BUILD={file_build}. Same-task follow-on requires BUILD +1 "
-            f"(normal `RW E{req_epic}:S{req_story}:T{req_task} --art`). See BR-097."
-        )
 
     head_est = head_est_from_git(version_file)
     head_build = get_version_build_from_git_ref(version_file, "HEAD")
@@ -160,7 +154,25 @@ def resolve_rw_build(
 
     if art and not same_task:
         max_tagged = max_tagged_build_for_est(rc, anchor_epic, anchor_story, anchor_task)
-        if max_tagged > 0:
+        if doc_policy_zero:
+            if max_tagged > 0:
+                errors.append(
+                    f"--doc-policy-zero blocked: requested E{anchor_epic}:S{anchor_story}:T{anchor_task} "
+                    f"already has tagged builds (max +{max_tagged}). Use normal `RW --art` for BUILD +1. "
+                    "See BR-097 / BR-110."
+                )
+                return False, {}, errors
+            tag0 = internal_version_tag_name(rc, anchor_epic, anchor_story, anchor_task, 0)
+            if git_ref_exists(tag0):
+                errors.append(
+                    f"Tagged BUILD reuse blocked: git tag {tag0} exists. "
+                    f"Use `RW E{anchor_epic}:S{anchor_story}:T{anchor_task} --art` for BUILD +1. "
+                    "See BR-097 / BR-067."
+                )
+                return False, {}, errors
+            next_build = 0
+            reason = "art_doc_policy_zero"
+        elif max_tagged > 0:
             next_build = max_tagged + 1
             reason = "art_tagged_follow_on"
         else:
@@ -170,6 +182,13 @@ def resolve_rw_build(
         next_build = head_build + 1
         reason = "same_task_build_plus_one"
     elif same_task and doc_policy_zero:
+        if head_build >= 1:
+            errors.append(
+                f"--doc-policy-zero blocked: same-task anchor BUILD is {head_build} "
+                "(requires untagged BUILD=0 path). Use normal `RW --art` for BUILD +1. "
+                "See BR-067 / BR-097."
+            )
+            return False, {}, errors
         tag = internal_version_tag_name(rc, anchor_epic, anchor_story, anchor_task, head_build)
         if git_ref_exists(tag):
             errors.append(

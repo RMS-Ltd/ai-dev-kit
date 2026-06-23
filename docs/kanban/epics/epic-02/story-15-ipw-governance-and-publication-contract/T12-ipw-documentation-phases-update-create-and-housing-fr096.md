@@ -18,7 +18,7 @@ housekeeping_policy: keep
 **Version Anchor:** v0.2.16.11+1  
 **Code:** E02S15T12
 
-**Upstream:** [FR-096 — IPW mandatory documentation phases (update/create + housing)](../../../fr-br/FR-096-ipw-documentation-phases-update-create-and-housing.md)
+**Upstream:** [FR-096 — IPW mandatory documentation phases (update/create + housing)](../../../fbu/FR-096-ipw-documentation-phases-update-create-and-housing.md)
 
 Publication Status: NOT_APPLICABLE  
 Publication N/A Reason: Workflow and template governance only; no new Docusaurus publication package beyond existing IPW KB paths.
@@ -33,9 +33,9 @@ Operationalize FR-042 documentation planning intent by adding IPW **Phase 5** (d
 
 ## Input
 
-- [FR-096](../../../fr-br/FR-096-ipw-documentation-phases-update-create-and-housing.md)
-- [FR-042](../../../fr-br/FR-042-implementation-planning-workflow-ipw.md) — formal steps 5–6 (previously not enforced in `/ipw`)
-- [FR-094](../../../fr-br/FR-094-ipw-slash-command-and-task-state-transition-mandate.md) — phase-gate pattern
+- [FR-096](../../../fbu/FR-096-ipw-documentation-phases-update-create-and-housing.md)
+- [FR-042](../../../fbu/FR-042-implementation-planning-workflow-ipw.md) — formal steps 5–6 (previously not enforced in `/ipw`)
+- [FR-094](../../../fbu/FR-094-ipw-slash-command-and-task-state-transition-mandate.md) — phase-gate pattern
 - `.claude/commands/ipw.md`, `PLAN_DOC_TEMPLATE.md`, `implementation-planning-workflow-agent-execution.md`
 
 ---
@@ -74,6 +74,6 @@ Operationalize FR-042 documentation planning intent by adding IPW **Phase 5** (d
 
 ## References
 
-- [FR-096](../../../fr-br/FR-096-ipw-documentation-phases-update-create-and-housing.md)
-- [FR-042](../../../fr-br/FR-042-implementation-planning-workflow-ipw.md)
+- [FR-096](../../../fbu/FR-096-ipw-documentation-phases-update-create-and-housing.md)
+- [FR-042](../../../fbu/FR-042-implementation-planning-workflow-ipw.md)
 - [Story 016](../story-16-perpetual-ongoing-workflow-operations.md)

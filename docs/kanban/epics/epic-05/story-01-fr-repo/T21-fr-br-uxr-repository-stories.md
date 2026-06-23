@@ -32,8 +32,8 @@ Track **FR-021** — formal **FR / BR / UXR repository story** pattern: PERPETUA
 
 ## Input
 
-- [FR-021](../../../fr-br/FR-021-fr-br-uxr-repository-stories.md)  
-- [FR-072](../../../fr-br/FR-072-uniform-repository-abstract-space-kanban-rules.md) · [E05:S01:T72](T72-uniform-repository-abstract-space-kanban-rules.md)  
+- [FR-021](../../../fbu/FR-021-fr-br-uxr-repository-stories.md)  
+- [FR-072](../../../fbu/FR-072-uniform-repository-abstract-space-kanban-rules.md) · [E05:S01:T72](T72-uniform-repository-abstract-space-kanban-rules.md)  
 - [story-01-fr-repo.md](../story-01-fr-repo.md) · [story-00-uxr-repo](../../epic-07/story-00-uxr-repo.md)
 
 ---
@@ -67,4 +67,4 @@ Track **FR-021** — formal **FR / BR / UXR repository story** pattern: PERPETUA
 
 ---
 
-**Feature Request:** [FR-021](../../../fr-br/FR-021-fr-br-uxr-repository-stories.md)
+**Feature Request:** [FR-021](../../../fbu/FR-021-fr-br-uxr-repository-stories.md)

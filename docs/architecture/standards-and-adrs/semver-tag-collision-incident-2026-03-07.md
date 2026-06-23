@@ -101,7 +101,7 @@ Under `task_touch`, finalize guards initially checked only full `semver+BUILD` s
 - `docs/architecture/standards-and-adrs/dev-kit-versioning-policy.md`
 - `packages/frameworks/numbering-versioning/versioning-policy.md`
 - `docs/architecture/standards-and-adrs/semver-implementation-followup-spec.md`
-- `docs/kanban/fr-br/FR-045-adr-002-task-touch-derived-mapping.md`
-- `docs/kanban/fr-br/FR-046-rw-semver-tag-task-touch-mode.md`
+- `docs/kanban/fbu/FR-045-adr-002-task-touch-derived-mapping.md`
+- `docs/kanban/fbu/FR-046-rw-semver-tag-task-touch-mode.md`
 - `packages/frameworks/workflow-mgt/scripts/version/semver_converter.py`
 - `semver-registry.yaml`

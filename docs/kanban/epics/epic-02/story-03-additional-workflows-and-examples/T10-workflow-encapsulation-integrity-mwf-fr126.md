@@ -16,8 +16,8 @@ housekeeping_policy: keep
 **Version Anchor:** v0.2.3.10+1  
 **Code:** E02S03T10  
 
-**Upstream:** [FR-126 — Workflow encapsulation integrity audit for MWF leverage](../../../fr-br/FR-126-workflow-encapsulation-integrity-mwf-leverage.md)  
-**Related:** [FR-124 — MWF v1 `delivery`](../../../fr-br/FR-124-meta-workflow-orchestration-composite-workflow-chains.md) · [T09 — MWF implementation](T09-ipw-full-delivery-chain-idf-rw-fr123.md)
+**Upstream:** [FR-126 — Workflow encapsulation integrity audit for MWF leverage](../../../fbu/FR-126-workflow-encapsulation-integrity-mwf-leverage.md)  
+**Related:** [FR-124 — MWF v1 `delivery`](../../../fbu/FR-124-meta-workflow-orchestration-composite-workflow-chains.md) · [T09 — MWF implementation](T09-ipw-full-delivery-chain-idf-rw-fr123.md)
 
 ---
 
@@ -30,7 +30,7 @@ Audit **all registered atomic workflows** for **encapsulation integrity** so the
 ## Input
 
 - [IPP-E02S03T10 — Workflow encapsulation integrity (FR-126)](../../../../implementation-cycles/IPP-E02S03T10-workflow-encapsulation-integrity-mwf-fr126.md)
-- [FR-126](../../../fr-br/FR-126-workflow-encapsulation-integrity-mwf-leverage.md)
+- [FR-126](../../../fbu/FR-126-workflow-encapsulation-integrity-mwf-leverage.md)
 - [workflow-registry.yaml](../../../../../packages/frameworks/workflow-mgt/workflows/workflow-registry.yaml) — 13 atomic workflows + `composite_workflows`
 - Existing command guides: `.claude/commands/{ipw,idw,rw,ukw,mwf}.md`
 - [meta-workflow-agent-execution.md](../../../../../packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/meta-workflow-agent-execution.md)
@@ -50,7 +50,7 @@ Audit **all registered atomic workflows** for **encapsulation integrity** so the
 
 ## Associated Feature Requests
 
-- [FR-126 — Workflow encapsulation integrity audit for MWF leverage](../../../fr-br/FR-126-workflow-encapsulation-integrity-mwf-leverage.md) (primary)
+- [FR-126 — Workflow encapsulation integrity audit for MWF leverage](../../../fbu/FR-126-workflow-encapsulation-integrity-mwf-leverage.md) (primary)
 
 ---
 
@@ -83,7 +83,7 @@ Audit **all registered atomic workflows** for **encapsulation integrity** so the
 
 **Coordinates with:**
 
-- [E02:S03:T11](T11-mwf-subagent-leg-delegation-br102.md) / [BR-102](../../../fr-br/BR-102-mwf-chain-paused-instead-of-subagent-leg-delegation.md) — MWF sub-agent delegation (Wave 3 / IPP §4)
+- [E02:S03:T11](T11-mwf-subagent-leg-delegation-br102.md) / [BR-102](../../../fbu/BR-102-mwf-chain-paused-instead-of-subagent-leg-delegation.md) — MWF sub-agent delegation (Wave 3 / IPP §4)
 
 **Blocks:**
 
@@ -96,6 +96,6 @@ Audit **all registered atomic workflows** for **encapsulation integrity** so the
 
 ## References
 
-- [FR-126](../../../fr-br/FR-126-workflow-encapsulation-integrity-mwf-leverage.md)
-- [FR-124](../../../fr-br/FR-124-meta-workflow-orchestration-composite-workflow-chains.md)
+- [FR-126](../../../fbu/FR-126-workflow-encapsulation-integrity-mwf-leverage.md)
+- [FR-124](../../../fbu/FR-124-meta-workflow-orchestration-composite-workflow-chains.md)
 - [workflow-registry.yaml](../../../../../packages/frameworks/workflow-mgt/workflows/workflow-registry.yaml)

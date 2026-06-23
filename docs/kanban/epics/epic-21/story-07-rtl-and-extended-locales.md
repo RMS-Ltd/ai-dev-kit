@@ -67,7 +67,7 @@ Populate `locales/ar/` and `locales/ru/` with framework user-facing content. Ara
 
 ## References
 
-- `docs/kanban/fr-br/FR-006-localization-language-selection-uk-us-english.md`
+- `docs/kanban/fbu/FR-006-localization-language-selection-uk-us-english.md`
 - `docs/kanban/epics/epic-21/story-04-cultural-adaptation.md`
 
 ---

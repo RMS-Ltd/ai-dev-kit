@@ -1,0 +1,8 @@
+{
+  "rows": {
+    "E02:S16:T05": {
+      "allowed": true,
+      "reason": "RW Step 7 v0.2.16.5+12 — perpetual lane version stamp + Last modified"
+    }
+  }
+}

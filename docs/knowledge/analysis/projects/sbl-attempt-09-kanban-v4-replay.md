@@ -8,7 +8,7 @@ housekeeping_policy: archive
 # SBL attempt 09 — Kanban v4 replay plan
 
 **Program:** [E06:S09:T26](../../../kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T26-starborn-legacy-adk-install-program.md) · [T36](../../../kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T36-adopter-path-selector-install-rc-uxr029.md)  
-**Drivers:** [Issue #51](https://github.com/RMS-Ltd/ai-dev-kit/issues/51) · [Issue #52](https://github.com/RMS-Ltd/ai-dev-kit/issues/52) · [FR-132](../../../kanban/fr-br/FR-132-kanban-v4-three-tier-catalogue.md) · [UXR-029](../../../kanban/fr-br/UXR-029-adk-install-path-experiment.md)
+**Drivers:** [Issue #51](https://github.com/RMS-Ltd/ai-dev-kit/issues/51) · [Issue #52](https://github.com/RMS-Ltd/ai-dev-kit/issues/52) · [FR-132](../../../kanban/fbu/FR-132-kanban-v4-three-tier-catalogue.md) · [UXR-029](../../../kanban/fbu/UXR-029-adk-install-path-experiment.md)
 
 **PRIMARY synthesis:** [greenfield-brownfield-selective-adoption-sbl-attempt-09.md](../../../knowledge/articles/greenfield-brownfield-selective-adoption-sbl-attempt-09.md)
 

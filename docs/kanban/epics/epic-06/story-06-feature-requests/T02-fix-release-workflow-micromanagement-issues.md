@@ -17,7 +17,7 @@ housekeeping_policy: keep
 **Version:** v0.6.6.2+8  
 **Task ID:** E06:S06:T02  
 **Code:** E06:S06:T02  
-**Associated BR:** [BR-038](../../../fr-br/BR-038-release-workflow-micromanagement-and-tool-discovery-issues.md) — **canonical implementing task** for **BR-038**
+**Associated BR:** [BR-038](../../../fbu/BR-038-release-workflow-micromanagement-and-tool-discovery-issues.md) — **canonical implementing task** for **BR-038**
 
 **Progress:** Phase 1 ✅ COMPLETED - Phase 2 ✅ COMPLETED - Phase 3 ✅ COMPLETED - Terminal hang issues resolved, autonomous execution achieved
 
@@ -25,7 +25,7 @@ housekeeping_policy: keep
 
 ## Input
 
-- [BR-038](../../../fr-br/BR-038-release-workflow-micromanagement-and-tool-discovery-issues.md); RW execution evidence (videos in repo root); `.cursorrules` and workflow framework docs.
+- [BR-038](../../../fbu/BR-038-release-workflow-micromanagement-and-tool-discovery-issues.md); RW execution evidence (videos in repo root); `.cursorrules` and workflow framework docs.
 
 ## Deliverable
 

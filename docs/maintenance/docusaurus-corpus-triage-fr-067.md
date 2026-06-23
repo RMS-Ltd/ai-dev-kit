@@ -8,7 +8,7 @@ housekeeping_policy: keep
 
 # Docusaurus corpus triage (FR-067 / E5:S09:T03)
 
-**FR:** [FR-067](../kanban/fr-br/FR-067-docusaurus-production-build-corpus-triage.md)  
+**FR:** [FR-067](../kanban/fbu/FR-067-docusaurus-production-build-corpus-triage.md)  
 **Task:** [E5:S09:T03](../kanban/epics/epic-05/story-09-docusaurus-documentation-portal/T03-docusaurus-build-triage-fr-067.md)
 
 ## Summary
@@ -47,9 +47,9 @@ Do **not** rely on conversation memory. Later work is on **FR / task**:
 
 | Item | Owner |
 |------|--------|
-| ~~Switch link check from **`warn` → `throw`** after corpus link repair~~ | **Done — E5:S09:T08** at **`v0.5.9.8+2`**. Ongoing hygiene: **[FR-058](../kanban/fr-br/FR-058-markdown-maintenance-workflow.md)**. **FU-1** closed on **[FR-067](../kanban/fr-br/FR-067-docusaurus-production-build-corpus-triage.md)**. |
-| Populate **GitHub Releases** for SemVer tags | **[E2:S16:T03](../kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md)** (RW Step 12.5); **[FR-041](../kanban/fr-br/FR-041-perpetual-task-for-release-workflow-maintenance.md)**; **FU-2** on **[FR-067](../kanban/fr-br/FR-067-docusaurus-production-build-corpus-triage.md)** |
-| ~~**Strict broken anchors** (`onBrokenAnchors` → **`throw`**)~~ | **Done — E5:S09:T10** at **`v0.5.9.10+2`**. **FR-067 FU-3** closed on **[FR-067](../kanban/fr-br/FR-067-docusaurus-production-build-corpus-triage.md)**. |
+| ~~Switch link check from **`warn` → `throw`** after corpus link repair~~ | **Done — E5:S09:T08** at **`v0.5.9.8+2`**. Ongoing hygiene: **[FR-058](../kanban/fbu/FR-058-markdown-maintenance-workflow.md)**. **FU-1** closed on **[FR-067](../kanban/fbu/FR-067-docusaurus-production-build-corpus-triage.md)**. |
+| Populate **GitHub Releases** for SemVer tags | **[E2:S16:T03](../kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md)** (RW Step 12.5); **[FR-041](../kanban/fbu/FR-041-perpetual-task-for-release-workflow-maintenance.md)**; **FU-2** on **[FR-067](../kanban/fbu/FR-067-docusaurus-production-build-corpus-triage.md)** |
+| ~~**Strict broken anchors** (`onBrokenAnchors` → **`throw`**)~~ | **Done — E5:S09:T10** at **`v0.5.9.10+2`**. **FR-067 FU-3** closed on **[FR-067](../kanban/fbu/FR-067-docusaurus-production-build-corpus-triage.md)**. |
 
 ## Verification
 

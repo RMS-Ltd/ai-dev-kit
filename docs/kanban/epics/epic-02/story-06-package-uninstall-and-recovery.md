@@ -93,7 +93,7 @@ Provide safe uninstall, cleanup, recovery, and rollback capabilities for ai-dev-
 
 ## References
 
-- FR-008: `docs/kanban/fr-br/FR-008-package-uninstall-capabilities.md`
+- FR-008: `docs/kanban/fbu/FR-008-package-uninstall-capabilities.md`
 - Implementation Plan: `docs/implementation-cycles/IPP-E2S6T1-package-uninstall-reimplementation.md`
 - Framework dependency guides under `docs/documentation/user-docs/`
 

@@ -8,7 +8,7 @@ housekeeping_policy: keep
 
 # RW Contract Gap Matrix
 
-**Program:** [FR-122](../../kanban/fr-br/FR-122-release-workflow-architectural-contract-release-transaction.md) · [E02:S01:T30](../../kanban/epics/epic-02/story-01-rw-agent-execution-and-docs/T30-rw-architectural-contract-release-transaction-fr122.md)  
+**Program:** [FR-122](../../kanban/fbu/FR-122-release-workflow-architectural-contract-release-transaction.md) · [E02:S01:T30](../../kanban/epics/epic-02/story-01-rw-agent-execution-and-docs/T30-rw-architectural-contract-release-transaction-fr122.md)  
 **Contract:** [rw-architectural-contract.md](../../../packages/frameworks/workflow-mgt/docs/rw-architectural-contract.md) · [ADR-027](../../architecture/standards-and-adrs/ADR-027-rw-release-transaction-contract.md)  
 **Last updated:** 2026-06-10 (Wave 8 sign-off — streak **13/10** @ v0.2.1.30+8)
 

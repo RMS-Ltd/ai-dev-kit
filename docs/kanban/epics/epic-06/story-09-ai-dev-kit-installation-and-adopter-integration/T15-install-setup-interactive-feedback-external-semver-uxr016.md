@@ -17,7 +17,7 @@ housekeeping_policy: keep
 
 **Version Anchor:** v0.6.9.15+2
 
-**Upstream:** [UXR-016](../../../fr-br/UXR-016-install-setup-interactive-feedback-external-semver-version.md)
+**Upstream:** [UXR-016](../../../fbu/UXR-016-install-setup-interactive-feedback-external-semver-version.md)
 
 ---
 
@@ -29,7 +29,7 @@ housekeeping_policy: keep
 
 ## Scope
 
-Implement [UXR-016](../../../fr-br/UXR-016-install-setup-interactive-feedback-external-semver-version.md): all install and setup **interactive user-facing feedback** must display the **external SemVer** of AI Dev Kit in use (the same outward-facing version shown in README and GitHub releases).
+Implement [UXR-016](../../../fbu/UXR-016-install-setup-interactive-feedback-external-semver-version.md): all install and setup **interactive user-facing feedback** must display the **external SemVer** of AI Dev Kit in use (the same outward-facing version shown in README and GitHub releases).
 
 Covers CLI install/setup commands, framework installers, and greenfield orchestration entry points—not RW/UKW runtime workflows.
 
@@ -37,7 +37,7 @@ Covers CLI install/setup commands, framework installers, and greenfield orchestr
 
 ## Input
 
-- [UXR-016](../../../fr-br/UXR-016-install-setup-interactive-feedback-external-semver-version.md) research findings, recommendations, and acceptance criteria
+- [UXR-016](../../../fbu/UXR-016-install-setup-interactive-feedback-external-semver-version.md) research findings, recommendations, and acceptance criteria
 - Existing version sources: `src/fynd_deals/version.py`, `cli/__init__.py`, `semver_converter.py`
 - Install event contract from FR-078 (align displayed SemVer with logged fields)
 - **IPW planning artifact:** [IPP-E6S9T15-install-setup-interactive-feedback-external-semver.md](../../../../implementation-cycles/IPP-E06S09T15-install-setup-interactive-feedback-external-semver.md)
@@ -92,10 +92,10 @@ Covers CLI install/setup commands, framework installers, and greenfield orchestr
 
 **Related BR/FR/UXR Links:**
 
-- [UXR-016: Install/setup interactive feedback external SemVer](../../../fr-br/UXR-016-install-setup-interactive-feedback-external-semver-version.md) — **Implements** — primary UXR source (reclassified from deleted FR-108)
-- [FR-080: Greenfield installation process](../../../fr-br/FR-080-greenfield-installation-process.md) — **Related To** — greenfield entry points in scope
-- [FR-078: Install event contract logging](../../../fr-br/FR-078-comprehensive-install-event-contract-logging-and-feedback-quality.md) — **Complements** — align human-visible and logged SemVer
-- [FR-079: Install feedback submission](../../../fr-br/FR-079-install-feedback-submission-path-and-governance.md) — **Complements** — feedback UX should match install banners
+- [UXR-016: Install/setup interactive feedback external SemVer](../../../fbu/UXR-016-install-setup-interactive-feedback-external-semver-version.md) — **Implements** — primary UXR source (reclassified from deleted FR-108)
+- [FR-080: Greenfield installation process](../../../fbu/FR-080-greenfield-installation-process.md) — **Related To** — greenfield entry points in scope
+- [FR-078: Install event contract logging](../../../fbu/FR-078-comprehensive-install-event-contract-logging-and-feedback-quality.md) — **Complements** — align human-visible and logged SemVer
+- [FR-079: Install feedback submission](../../../fbu/FR-079-install-feedback-submission-path-and-governance.md) — **Complements** — feedback UX should match install banners
 
 **Related Stories:**
 
@@ -111,7 +111,7 @@ Covers CLI install/setup commands, framework installers, and greenfield orchestr
 
 ## References
 
-- [UXR-016](../../../fr-br/UXR-016-install-setup-interactive-feedback-external-semver-version.md)
+- [UXR-016](../../../fbu/UXR-016-install-setup-interactive-feedback-external-semver-version.md)
 - [IPP-E6S9T15 — Install/setup external SemVer display](../../../../implementation-cycles/IPP-E06S09T15-install-setup-interactive-feedback-external-semver.md)
 - [dev-kit-versioning-policy.md](../../../../governance/standards/dev-kit-versioning-policy.md)
 - [`semver_converter.py`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/scripts/version/semver_converter.py)

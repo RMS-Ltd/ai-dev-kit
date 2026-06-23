@@ -42,8 +42,8 @@ Enhance RW Step 7 (Auto-update Kanban Docs) to automatically update the main Kan
 
 ## Input
 
-- **FR-040:** [`FR-040-rw-update-kanban-board-on-task-completion.md`](../../../fr-br/FR-040-rw-update-kanban-board-on-task-completion.md)
-- **FR-015:** [`FR-015-harden-kanban-docs-update-in-release-workflow.md`](../../../fr-br/FR-015-harden-kanban-docs-update-in-release-workflow.md) (related - board updates are part of FR-015:R06)
+- **FR-040:** [`FR-040-rw-update-kanban-board-on-task-completion.md`](../../../fbu/FR-040-rw-update-kanban-board-on-task-completion.md)
+- **FR-015:** [`FR-015-harden-kanban-docs-update-in-release-workflow.md`](../../../fbu/FR-015-harden-kanban-docs-update-in-release-workflow.md) (related - board updates are part of FR-015:R06)
 - **RW Step 7 Script:** `packages/frameworks/workflow-mgt/scripts/update_kanban_docs.py`
 - **RW Step 7 Documentation:** `packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md`
 - **Kanban Board:** `docs/kanban/kboard.md`

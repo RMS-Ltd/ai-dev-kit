@@ -16,7 +16,7 @@ housekeeping_policy: keep
 **Last updated:** 2026-05-26 (v0.1.4.4+1 – Kanban documentation setup)
 **Code:** E01S04T04
 
-**Upstream:** [FR-099 — Spin off book epic to a private repository](../../../fr-br/FR-099-spin-off-book-epic-to-private-repository.md)  
+**Upstream:** [FR-099 — Spin off book epic to a private repository](../../../fbu/FR-099-spin-off-book-epic-to-private-repository.md)  
 **Planning package:** [IPP-E1S04-fr099-book-private-public-migration.md](../../../../implementation-cycles/IPP-E1S04-fr099-book-private-public-migration.md) — **§4.2 Phase 1**  
 **Depends on:** [E01:S04:T03 — Phase 0](T03-fr099-phase0-inventory-adr-approval.md)  
 **Migration ADR:** [ADR-006](../../../../architecture/standards-and-adrs/ADR-006-book-project-private-repository-spin-off.md)
@@ -25,7 +25,7 @@ housekeeping_policy: keep
 
 ## Input
 
-- [FR-099](../../../fr-br/FR-099-spin-off-book-epic-to-private-repository.md)
+- [FR-099](../../../fbu/FR-099-spin-off-book-epic-to-private-repository.md)
 - [E01:S04:T03 — Phase 0](T03-fr099-phase0-inventory-adr-approval.md) ✅
 - Maintainer approval of private repo name per ADR-006
 
@@ -74,5 +74,5 @@ Private GitHub repository `RMS-Ltd/hf-ai-dev-kit` with full history retained.
 ## References
 
 - [IPP-E1S04-fr099-book-private-public-migration.md](../../../../implementation-cycles/IPP-E1S04-fr099-book-private-public-migration.md)
-- [FR-099](../../../fr-br/FR-099-spin-off-book-epic-to-private-repository.md)
+- [FR-099](../../../fbu/FR-099-spin-off-book-epic-to-private-repository.md)
 - [ADR-006](../../../../architecture/standards-and-adrs/ADR-006-book-project-private-repository-spin-off.md)

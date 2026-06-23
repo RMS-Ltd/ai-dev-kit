@@ -28,7 +28,7 @@ housekeeping_policy: keep
 - **[Kanban Governance Policy](docs/governance/kanban/kanban-governance-policy.md)** - Work item structure and task-level versioning requirements
 - **[Versioning Strategy](../../Architecture/standards-and-adrs/versioning-strategy.md)** - Forensic traceability and canonical ordering principles
 - **[Versioning Policy (Schema)](../../Architecture/standards-and-adrs/versioning-policy.md)** - Version schema definition (RC.EPIC.STORY.TASK+BUILD)
-- **[Bidirectional Wiring Principle](../../kanban/fr-br/BIDIRECTIONAL_WIRING_PRINCIPLE.md)** - Linking patterns for traceability
+- **[Bidirectional Wiring Principle](../../kanban/fbu/BIDIRECTIONAL_WIRING_PRINCIPLE.md)** - Linking patterns for traceability
 
 ---
 
@@ -59,7 +59,7 @@ The PIR workflow enables **continuous improvement** through structured reflectio
 - ✅ **Version range (Epic):** Epic-level PIRs reference version range (first to last)
 - ✅ **Single version (Story):** Story-level PIRs reference single version (last in Story)
 
-**From [Bidirectional Wiring Principle](../../kanban/fr-br/BIDIRECTIONAL_WIRING_PRINCIPLE.md):**
+**From [Bidirectional Wiring Principle](../../kanban/fbu/BIDIRECTIONAL_WIRING_PRINCIPLE.md):**
 - ✅ **Bidirectional links:** Step 12, 14 establish bidirectional links (Epic/Story ↔ PIR report)
 - ✅ **Traceability:** Complete traceability through version references and links
 

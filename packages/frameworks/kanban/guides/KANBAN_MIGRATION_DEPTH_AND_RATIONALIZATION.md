@@ -8,7 +8,7 @@ housekeeping_policy: keep
 
 **Audience:** Adopter operators and IDE agents (brownfield Arm B)  
 **North star:** Migration is **as painless as possible** — one kit-owned path, clear “done,” optional optimization later.  
-**Policy:** [FR-133](../../../docs/kanban/fr-br/FR-133-kanban-migration-depth-rationalization-adopter-guide.md) · [ADR-028](../../../docs/architecture/standards-and-adrs/ADR-028-agentic-kanban-migration-brownfield-fr127.md) · [ADR-030](../../../docs/architecture/standards-and-adrs/ADR-030-selective-adoption-three-path-model.md)
+**Policy:** [FR-133](../../../docs/kanban/fbu/FR-133-kanban-migration-depth-rationalization-adopter-guide.md) · [ADR-028](../../../docs/architecture/standards-and-adrs/ADR-028-agentic-kanban-migration-brownfield-fr127.md) · [ADR-030](../../../docs/architecture/standards-and-adrs/ADR-030-selective-adoption-three-path-model.md)
 
 **Related:** [INSTALL Path 2 — Migrate (default)](../../../../INSTALL_IN_YOUR_PROJECT.md#migrate-default) · [LEGACY_KANBAN_MIGRATION.md](LEGACY_KANBAN_MIGRATION.md) · [DUPLICATE_EPIC_POLICY.md](DUPLICATE_EPIC_POLICY.md) · [kanban-migration-agent-execution.md](../KB/Documentation/Developer_Docs/kanban-migration-agent-execution.md)
 

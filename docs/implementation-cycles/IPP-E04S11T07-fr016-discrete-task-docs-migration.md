@@ -9,7 +9,7 @@ housekeeping_policy: keep
 # E04:S11:T07 — Planning: Spec, Tests, Implementation Plan (IPW)
 
 **Host Task:** [`T07-planning-spec-tests-impl.md`](../kanban/epics/epic-04/story-11-kanban-granularity-discrete-task-docs/T07-planning-spec-tests-impl.md) **(E04:S11:T07)**  
-**Planning for:** [FR-016](../kanban/fr-br/FR-016-kanban-granularity-discrete-task-docs.md)  
+**Planning for:** [FR-016](../kanban/fbu/FR-016-kanban-granularity-discrete-task-docs.md)  
 **Status:** Approved
 
 > **IPW:** Consolidated IPP for FR-016 embedded-to-discrete Task document migration (~784 embedded tasks). Supersedes split planning in task doc §1–§3 and references [ICW-E4S11T07-specification.md](ICW-E4S11T07-specification.md) as retrospective input (folded per [dev-kit-ipw-ipp-vs-icw-artifacts.md](../governance/standards/dev-kit-ipw-ipp-vs-icw-artifacts.md)). Operational migration detail: [migration-plan-embedded-to-discrete-tasks.md](../kanban/epics/epic-04/story-11-kanban-granularity-discrete-task-docs/migration-plan-embedded-to-discrete-tasks.md).
@@ -158,7 +158,7 @@ RF1–RF3 are satisfied by the hybrid migration pipeline (extract → generate �
 | `docs/kanban/epics/epic-04/story-11-kanban-granularity-discrete-task-docs/migration-plan-embedded-to-discrete-tasks.md` | UPDATE | 0, 5 |
 | `docs/kanban/epics/epic-04/story-11-kanban-granularity-discrete-task-docs/T07-planning-spec-tests-impl.md` | UPDATE | IPW, closure |
 | `docs/kanban/epics/epic-04/story-11-kanban-granularity-discrete-task-docs.md` | UPDATE | per Epic wave |
-| `docs/kanban/fr-br/FR-016-kanban-granularity-discrete-task-docs.md` | UPDATE | closure |
+| `docs/kanban/fbu/FR-016-kanban-granularity-discrete-task-docs.md` | UPDATE | closure |
 | `docs/kanban/kboard.md` | UPDATE | each RW |
 | Per-Story `epics/epic-*/story-*/` | UPDATE | Waves 2–3 |
 | Per-Task `T{task:02d}-*.md` | CREATE | Waves 2–3 |
@@ -245,11 +245,11 @@ Wave 0 (catalog) → Wave 1 (tooling + T1–T8)
 
 ## References
 
-- [FR-016](../kanban/fr-br/FR-016-kanban-granularity-discrete-task-docs.md)
+- [FR-016](../kanban/fbu/FR-016-kanban-granularity-discrete-task-docs.md)
 - [T07 task doc](../kanban/epics/epic-04/story-11-kanban-granularity-discrete-task-docs/T07-planning-spec-tests-impl.md)
 - [Migration plan](../kanban/epics/epic-04/story-11-kanban-granularity-discrete-task-docs/migration-plan-embedded-to-discrete-tasks.md)
 - [ICW-E4S11T07 specification](ICW-E4S11T07-specification.md) *(retrospective; folded into this IPP)*
 - [dev-kit-ipw-ipp-vs-icw-artifacts.md](../governance/standards/dev-kit-ipw-ipp-vs-icw-artifacts.md)
 - [TASK_TEMPLATE.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/kanban/templates/TASK_TEMPLATE.md)
-- [FR-017](../kanban/fr-br/FR-017-versioning-policy-hardening-doc-init-build.md) — doc-init for new Task docs
+- [FR-017](../kanban/fbu/FR-017-versioning-policy-hardening-doc-init-build.md) — doc-init for new Task docs
 - [ipw-adr-necessity-checklist.md](../architecture/standards-and-adrs/ipw-adr-necessity-checklist.md)

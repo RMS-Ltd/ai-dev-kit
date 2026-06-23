@@ -41,7 +41,7 @@ housekeeping_policy: keep
 
 **Default chain:** none. Operator sequence: `IPW` → review IPP → `IDW` → `RW`.  
 **Opt-in chain:** `IDW E:S:T --rw` runs RW immediately after `IDW COMPLETE`.  
-**Full pipeline:** `MWF E:S:T delivery` orchestrates IPW → (mode gate) → IDW `--rw` — see [meta-workflow-agent-execution.md](meta-workflow-agent-execution.md). Do **not** use `IPW --rw` ([FR-124](../../../../../../docs/kanban/fr-br/FR-124-meta-workflow-orchestration-composite-workflow-chains.md)).
+**Full pipeline:** `MWF E:S:T delivery` orchestrates IPW → (mode gate) → IDW `--rw` — see [meta-workflow-agent-execution.md](meta-workflow-agent-execution.md). Do **not** use `IPW --rw` ([FR-124](../../../../../../docs/kanban/fbu/FR-124-meta-workflow-orchestration-composite-workflow-chains.md)).
 
 Invoking **IDW** satisfies FR-083 **explicit user execution authorization** for implementation on the parsed task.
 
@@ -110,5 +110,5 @@ Board row propagation for a release is **RW Step 7** when shipping via `--rw` or
 - [meta-workflow-agent-execution.md](meta-workflow-agent-execution.md)
 - [release-workflow-agent-execution.md](release-workflow-agent-execution.md)
 - [implementation-cycle-sop.md](implementation-cycle-sop.md)
-- [FR-083](../../../../../../docs/kanban/fr-br/FR-083-global-ipw-gated-implementation-contract.md)
-- [FR-077](../../../../../../docs/kanban/fr-br/FR-077-ipw-built-task-status-transition-and-kboard-sync.md)
+- [FR-083](../../../../../../docs/kanban/fbu/FR-083-global-ipw-gated-implementation-contract.md)
+- [FR-077](../../../../../../docs/kanban/fbu/FR-077-ipw-built-task-status-transition-and-kboard-sync.md)

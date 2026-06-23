@@ -77,7 +77,7 @@ Deliver a robust, documented hybrid template system where:
 ## References
 
 - `docs/architecture/standards-and-adrs/task-template-system-hybrid-adr.md`
-- `docs/kanban/fr-br/FR-029-procedural-task-template-generation-hybrid-strategy.md`
+- `docs/kanban/fbu/FR-029-procedural-task-template-generation-hybrid-strategy.md`
 - `packages/frameworks/kanban/templates/COMPREHENSIVE_CANONICAL_EST_STRUCTURE.md`
 - `packages/frameworks/kanban/templates/TASK_TEMPLATE.md`
 

@@ -15,7 +15,7 @@ housekeeping_policy: keep
 **Created:** 2026-04-09  
 **Code:** E06S07T112
 
-**Upstream:** [FR-079 - Install feedback submission path and governance](../../../fr-br/FR-079-install-feedback-submission-path-and-governance.md)
+**Upstream:** [FR-079 - Install feedback submission path and governance](../../../fbu/FR-079-install-feedback-submission-path-and-governance.md)
 **Depends on:** [E06:S07:T111](T111-comprehensive-install-event-contract-logging-and-feedback-quality.md) local event-contract logging outputs
 
 ---
@@ -63,8 +63,8 @@ Released **v0.6.7.112+2** (SemVer **v0.4.726+2**): implemented deterministic fee
 
 ## References
 
-- [FR-079](../../../fr-br/FR-079-install-feedback-submission-path-and-governance.md)
-- [FR-078](../../../fr-br/FR-078-comprehensive-install-event-contract-logging-and-feedback-quality.md)
+- [FR-079](../../../fbu/FR-079-install-feedback-submission-path-and-governance.md)
+- [FR-078](../../../fbu/FR-078-comprehensive-install-event-contract-logging-and-feedback-quality.md)
 - [IPW-E6S7T112-install-feedback-submission-governance](../../../../implementation-cycles/IPW-E6S07T112-install-feedback-submission-governance.md)
 
 ## Planning artifacts (publication)

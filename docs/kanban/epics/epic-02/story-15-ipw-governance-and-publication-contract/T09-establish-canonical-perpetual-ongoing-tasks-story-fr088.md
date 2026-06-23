@@ -18,7 +18,7 @@ housekeeping_policy: keep
 **Code:** E02S15T09
 **Version Anchor:** v0.2.16.1+4
 
-**Upstream:** [FR-088 - Dedicated story for perpetual ongoing tasks](../../../fr-br/FR-088-dedicated-story-for-perpetual-ongoing-tasks.md)
+**Upstream:** [FR-088 - Dedicated story for perpetual ongoing tasks](../../../fbu/FR-088-dedicated-story-for-perpetual-ongoing-tasks.md)
 
 Publication Status: NOT_APPLICABLE
 Publication N/A Reason: Single durable IPP per FR-042 §7 consolidated planning model; planning published as one IPP artifact rather than three separate specification/test-design/implementation-plan files.
@@ -29,7 +29,7 @@ Publication N/A Reason: Single durable IPP per FR-042 §7 consolidated planning 
 
 ## Input
 
-- [FR-088](../../../fr-br/FR-088-dedicated-story-for-perpetual-ongoing-tasks.md) requirements.
+- [FR-088](../../../fbu/FR-088-dedicated-story-for-perpetual-ongoing-tasks.md) requirements.
 - Existing perpetual-task patterns and current placements.
 - Canonical IPP: [`IPP-E2S16T1-canonical-perpetual-ongoing-tasks-story.md`](../../../../implementation-cycles/IPP-E2S16T01-canonical-perpetual-ongoing-tasks-story.md)
 
@@ -102,7 +102,7 @@ This task plans migration for **all workflow-related perpetual tasks** to Story 
 ## References
 
 - [Canonical IPP: `IPP-E2S16T1-canonical-perpetual-ongoing-tasks-story.md`](../../../../implementation-cycles/IPP-E2S16T01-canonical-perpetual-ongoing-tasks-story.md)
-- [FR-088 - Dedicated story for perpetual ongoing tasks](../../../fr-br/FR-088-dedicated-story-for-perpetual-ongoing-tasks.md)
+- [FR-088 - Dedicated story for perpetual ongoing tasks](../../../fbu/FR-088-dedicated-story-for-perpetual-ongoing-tasks.md)
 - [Story 016 - Perpetual ongoing workflow operations](../story-16-perpetual-ongoing-workflow-operations.md)
 - [Dev-kit versioning policy §6.1.1 - Perpetual tasks](../../../../governance/standards/dev-kit-versioning-policy.md)
 - [E02:S16:T02 - Inventory and classify workflow perpetual tasks](T02-inventory-and-classify-workflow-perpetual-tasks.md) | [IPP-E2S16T2 inventory](../../../../implementation-cycles/IPP-E2S16T02-perpetual-task-inventory.md)

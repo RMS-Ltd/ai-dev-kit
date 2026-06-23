@@ -519,7 +519,7 @@ This SoP defines the standard procedure for cross-wiring (interconnecting) tasks
 
 ## References
 
-- **FR-035:** [`FR-035-task-template-cross-wiring-section.md`](../../kanban/fr-br/FR-035-task-template-cross-wiring-section.md)
+- **FR-035:** [`FR-035-task-template-cross-wiring-section.md`](../../kanban/fbu/FR-035-task-template-cross-wiring-section.md)
 - **Bidirectional Wiring Principle:** [`bidirectional-wiring-principle.md`](../../governance/principles/bidirectional-wiring-principle.md)
 - **Task Template:** `packages/frameworks/kanban/templates/TASK_TEMPLATE.md`
 - **Kanban Policy:** `packages/frameworks/kanban/policies/kanban-governance-policy.md`

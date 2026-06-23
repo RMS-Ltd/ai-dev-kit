@@ -9,7 +9,7 @@ housekeeping_policy: keep
 # E04:S19:T12 — Planning: Single-board consolidation — retire `fbuboard` (UXR-020 R3)
 
 **Host Task:** [`T12-fbuboard-necessity-investigation-uxr020.md`](../kanban/epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T12-fbuboard-necessity-investigation-uxr020.md) **(E04:S19:T12)**  
-**Planning for:** [UXR-020 — `fbuboard` necessity after task–FBU wiring](../kanban/fr-br/UXR-020-fbuboard-necessity-after-task-fbu-wiring.md)  
+**Planning for:** [UXR-020 — `fbuboard` necessity after task–FBU wiring](../kanban/fbu/UXR-020-fbuboard-necessity-after-task-fbu-wiring.md)  
 **Status:** COMPLETE (Waves 1–4 shipped; **v0.4.19.12+4** closure 2026-06-05)
 
 > **IPW:** Produced for E04:S19:T12 after user selected **R3 (full single-board)**. Implementation gated on explicit execution authorization per FR-083.
@@ -27,7 +27,7 @@ housekeeping_policy: keep
 | RF3 | **Verification band (V):** New MoSCOW subsection for task-complete / FBU-open rows (replaces fbuboard M/S-only lane) | UXR-020 R3 |
 | RF4 | **Migrate** all active `kboard.md` rows into `kboard.md` without losing verification-pending visibility | UXR-020 F2 |
 | RF5 | **Deprecate `kboard.md`:** Replace with redirect stub; no active MoSCOW on deprecated file | UXR-020 R3 |
-| RF6 | **Preserve** `intake-completed.md`, `intake-structure.md`, and `fr-br/*.md` as FBU SoT surfaces | KG-R2, FR-051 legacy |
+| RF6 | **Preserve** `intake-completed.md`, `intake-structure.md`, and `fbu/*.md` as FBU SoT surfaces | KG-R2, FR-051 legacy |
 | RF7 | **Task-only rows** (no FBU) remain valid on `kboard` unchanged | UXR-020 F3 |
 | RF8 | **Taskless open FBUs** appear on `kboard` with FBU-primary key + `—No Task—` until intake wires `E:S:T` | FR-073, intake-open-taskless-queue |
 | RF9 | **FR-092 contract:** RW Step 7 becomes **three-surface** (task doc, FBU doc, `kboard`) + completed ledgers; drop active `fbuboard` as fourth surface | FR-092 amendment |
@@ -50,7 +50,7 @@ housekeeping_policy: keep
 
 - **Invariants:** Bidirectional FBU ↔ task wiring (KG-R2); `kanban-completed.md` / `intake-completed.md` terminal ledgers unchanged in role.
 - **In scope:** ai-dev-kit corpus, kanban governance policy, workflow-mgt validators/scripts, UKW/RW agent guides, framework kanban templates.
-- **Out of scope:** Deleting `fr-br/` corpus; merging `intake-structure.md` into `kanban-structure.md`; changing FBU doc templates.
+- **Out of scope:** Deleting `fbu/` corpus; merging `intake-structure.md` into `kanban-structure.md`; changing FBU doc templates.
 
 ---
 
@@ -164,7 +164,7 @@ Release-scope reconciliation outputs:
 | `packages/frameworks/kanban/policies/kanban-governance-policy.md` | Policy |
 | `docs/kanban/kanban-board-guide.md` | Guide |
 | `docs/kanban/README.md` | Five-way → four-way active surfaces |
-| `docs/kanban/fr-br/FR-092-*.md` | Three-surface note |
+| `docs/kanban/fbu/FR-092-*.md` | Three-surface note |
 | `packages/frameworks/workflow-mgt/scripts/update_kanban_docs.py` | Logic |
 | `packages/frameworks/workflow-mgt/scripts/validation/validate_active_kanban_board.py` | Logic |
 | `.cursorrules`, `.claude/commands/ukw.md`, `.claude/commands/rw.md` | Scope |

@@ -41,7 +41,7 @@ Concrete implementation work (CLI changes, tests, docs) will be carried out unde
 
 ## Input
 
-- **FR-047:** [`FR-047-install-logging-for-framework-dependencies.md`](../../../fr-br/FR-047-install-logging-for-framework-dependencies.md)
+- **FR-047:** [`FR-047-install-logging-for-framework-dependencies.md`](../../../fbu/FR-047-install-logging-for-framework-dependencies.md)
 - CLI docs and designs:
   - `cli/commands/install.py`
   - `cli/backends/*`

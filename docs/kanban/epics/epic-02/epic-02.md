@@ -12,7 +12,7 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** [TBD]  
 **Created:** 2025-12-02  
-**Last updated:** 2026-06-16 (v0.2.16.2+13 – UKW -c E21 archive wave)
+**Last updated:** 2026-06-23 (v0.2.16.5+13 – Kanban documentation setup)
 **Branch:** `epic/2-workflow-management-framework`  
 **Version Schema:** `0.2.S.T+B`  
 **Production URL:** [N/A for this repo]
@@ -23,7 +23,7 @@ housekeeping_policy: keep
 
 - [ ] **E2:S01 – RW Agent Execution & Docs** - IN PROGRESS (reopened 2026-04-02; **E02:S01:T24** ✅ **v0.2.1.24+3** — BR-097 task_touch collision guards)
   - Story: [`story-01-rw-agent-execution-and-docs.md`](story-01-rw-agent-execution-and-docs.md)
-  - Tasks: T01–T21 with T21 ✅ COMPLETE (v0.2.1.21+1) — [BR-074](../../fr-br/BR-074-rw-release-commits-test-artifacts-and-changelog-integrity-failures.md)
+  - Tasks: T01–T21 with T21 ✅ COMPLETE (v0.2.1.21+1) — [BR-074](../../fbu/BR-074-rw-release-commits-test-artifacts-and-changelog-integrity-failures.md)
 
 - [x] **E2:S02 – PDCA Integration into Release Workflow** - COMPLETE ✅ (v0.2.2.8+1 – All tasks complete: PDCA phases integrated into RW, docs, templates, and examples)
   - Story: [`story-02-pdca-integration-into-release-workflow.md`](story-02-pdca-integration-into-release-workflow.md)
@@ -82,9 +82,9 @@ housekeeping_policy: keep
   - Story: [`story-15-ipw-governance-and-publication-contract.md`](story-15-ipw-governance-and-publication-contract.md)
   - Tasks: T01, T03, T04, T07, T08, T14 ✅ COMPLETE; T02/T05/T06 superseded → T07
 
-- [ ] **E2:S16 – Perpetual Ongoing Operations** - IN PROGRESS (v0.2.16.2+13)
+- [ ] **E2:S16 – Perpetual Ongoing Operations** - IN PROGRESS (v0.2.16.5+13)
   - Story: [`story-16-perpetual-ongoing-workflow-operations.md`](story-16-perpetual-ongoing-workflow-operations.md)
-  - Perpetual lanes: T01–T06 — [FR-088](../../fr-br/FR-088-dedicated-story-for-perpetual-ongoing-tasks.md) | [IPP-E02S16T24](../../implementation-cycles/IPP-E02S16T24-s16-perpetual-only-semantic-scatter.md)
+  - Perpetual lanes: T01–T06 — [FR-088](../../fbu/FR-088-dedicated-story-for-perpetual-ongoing-tasks.md) | [IPP-E02S16T24](../../implementation-cycles/IPP-E02S16T24-s16-perpetual-only-semantic-scatter.md)
 
 - [ ] **E2:S17 – RW SemVer Characterization & Release State SQLite** - IN PROGRESS (v0.2.17.2+3 — T02 Wave 3 ✅)
   - Story: [`story-17-rw-semver-characterization-and-release-state-sqlite.md`](story-17-rw-semver-characterization-and-release-state-sqlite.md)

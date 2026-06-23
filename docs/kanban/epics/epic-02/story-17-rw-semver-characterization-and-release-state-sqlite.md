@@ -59,8 +59,8 @@ Characterize Release Workflow (RW) and Implementation Planning Workflow (IPW) fr
 | -------- | ------------ |
 | [E02:S01:T24](story-01-rw-agent-execution-and-docs/T24-rw-build-increment-enforcement-and-tag-immutability-br097.md) | BUILD/tag immutability guards — scenario class |
 | [E03:S02:T12](../epic-03/story-02-versioning-cookbook-and-examples/T12-implement-task-touch-semver-mapping-mode.md) | task_touch SemVer mapping — collision class |
-| [FR-045](../fr-br/FR-045-adr-002-task-touch-derived-mapping.md) · [FR-046](../fr-br/FR-046-rw-semver-tag-task-touch-mode.md) | SemVer registry invariants |
-| [BR-097](../fr-br/BR-097-rw-agent-reuses-tagged-build-and-force-moves-release-tags.md) | Agent friction precedent |
+| [FR-045](../fbu/FR-045-adr-002-task-touch-derived-mapping.md) · [FR-046](../fbu/FR-046-rw-semver-tag-task-touch-mode.md) | SemVer registry invariants |
+| [BR-097](../fbu/BR-097-rw-agent-reuses-tagged-build-and-force-moves-release-tags.md) | Agent friction precedent |
 | `tests/test_rw_performance.py` | Existing RW performance harness — extend, do not duplicate |
 | `semver-registry.yaml` | Legacy SoT (~2.5k lines) — migration source |
 

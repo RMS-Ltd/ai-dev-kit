@@ -9,7 +9,7 @@ housekeeping_policy: keep
 # E02:S03:T12 — Planning: Environment-aware workflow execution (FR-128)
 
 **Host Task:** [`T12-environment-aware-workflow-execution-fr128.md`](../kanban/epics/epic-02/story-03-additional-workflows-and-examples/T12-environment-aware-workflow-execution-fr128.md) **(E02:S03:T12)**  
-**Planning for:** [FR-128 — Environment-aware workflow execution](../kanban/fr-br/FR-128-environment-aware-workflow-execution.md)  
+**Planning for:** [FR-128 — Environment-aware workflow execution](../kanban/fbu/FR-128-environment-aware-workflow-execution.md)  
 **Status:** Published (MWF Leg 1 — IPW)
 
 ---
@@ -122,7 +122,7 @@ Make IPW, IDW, and MWF **portable across Cursor, Claude Code, and OpenCode** via
 | D-U6 | `packages/frameworks/workflow-mgt/workflows/workflow-registry.yaml` | UPDATE |
 | D-U7 | `CLAUDE.md` | UPDATE |
 | D-N1 | `.cursorrules` IPW/IDW sections | UPDATE (pointer only) |
-| D-N2 | `docs/kanban/fr-br/FR-094-*.md` | NONE (P2 defer) |
+| D-N2 | `docs/kanban/fbu/FR-094-*.md` | NONE (P2 defer) |
 
 ---
 
@@ -142,6 +142,6 @@ All framework paths under `packages/frameworks/workflow-mgt/` — **PUBLISHED**;
 
 ## References
 
-- [FR-128](../kanban/fr-br/FR-128-environment-aware-workflow-execution.md)
+- [FR-128](../kanban/fbu/FR-128-environment-aware-workflow-execution.md)
 - [IPP-E02S03T10](IPP-E02S03T10-workflow-encapsulation-integrity-mwf-fr126.md)
-- [BR-102](../kanban/fr-br/BR-102-mwf-chain-paused-instead-of-subagent-leg-delegation.md)
+- [BR-102](../kanban/fbu/BR-102-mwf-chain-paused-instead-of-subagent-leg-delegation.md)

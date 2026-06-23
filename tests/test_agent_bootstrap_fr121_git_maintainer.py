@@ -32,7 +32,7 @@ FR_114 = (
     REPO_ROOT
     / "docs"
     / "kanban"
-    / "fr-br"
+    / "fbu"
     / "FR-114-split-documentation-surfaces-docusaurus-public-notion-maintainer-kb.md"
 )
 KB_README = REPO_ROOT / "docs" / "knowledge" / "README.md"

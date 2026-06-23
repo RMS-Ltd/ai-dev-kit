@@ -28,7 +28,7 @@ Fix `validate_version_bump.py` `find_story_file()` Epic/Story auto-detection: us
 
 ## Input
 
-- [BR-001](../../../fr-br/BR-001-validate-version-bump-epic-story-detection-bug.md)
+- [BR-001](../../../fbu/BR-001-validate-version-bump-epic-story-detection-bug.md)
 - [IPP-E02S01T06](../../../../implementation-cycles/IPP-E02S01T06-validate-version-bump-story-detection-br001.md)
 - `packages/frameworks/workflow-mgt/scripts/validation/validate_version_bump.py`
 
@@ -55,5 +55,5 @@ Fix `validate_version_bump.py` `find_story_file()` Epic/Story auto-detection: us
 
 ## References
 
-- [BR-002](../../../fr-br/BR-002-changelog-validator-ordering-bug.md) (deferred)
+- [BR-002](../../../fbu/BR-002-changelog-validator-ordering-bug.md) (deferred)
 - [story-01-rw-agent-execution-and-docs.md](../story-01-rw-agent-execution-and-docs.md) §T06

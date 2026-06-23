@@ -34,7 +34,7 @@ Add UK/US English language selection as the **first interactive step** in `ai-de
 ## Input
 
 - CLI tool ([`cli/commands/init.py`](../../../../../../cli/commands/init.py))
-- [FR-006](../../../fr-br/FR-006-localization-language-selection-uk-us-english.md) Phase 1 CLI requirements
+- [FR-006](../../../fbu/FR-006-localization-language-selection-uk-us-english.md) Phase 1 CLI requirements
 - [IPP-E21S01T01](../../../../implementation-cycles/IPP-E21S01T01-template-language-selection-github.md) config contract
 - [IPP-E21S01T02](../../../../implementation-cycles/IPP-E21S01T02-cli-init-language-selection.md)
 
@@ -104,7 +104,7 @@ RW -k E21:S01:T02 --art --dpz
 
 - [IPP-E21S01T02](../../../../implementation-cycles/IPP-E21S01T02-cli-init-language-selection.md)
 - [IPP-E21S01T01](../../../../implementation-cycles/IPP-E21S01T01-template-language-selection-github.md)
-- [FR-006](../../../fr-br/FR-006-localization-language-selection-uk-us-english.md)
+- [FR-006](../../../fbu/FR-006-localization-language-selection-uk-us-english.md)
 - [cli/localisation.py](../../../../../../cli/localisation.py)
 - [CLI reference](../../../../documentation/user-docs/framework-dependency-cli-reference.md)
 

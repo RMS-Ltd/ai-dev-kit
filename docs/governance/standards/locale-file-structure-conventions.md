@@ -23,7 +23,7 @@ policy_salience:
 
 **Authority:** Implements [ADR-024](../../architecture/standards-and-adrs/ADR-024-i18n-framework-strategy.md) §T02 handoff. **Planning:** [IPP-E21S02T02](../../implementation-cycles/IPP-E21S02T02-locale-file-structure.md).
 
-**Related:** [FR-006](../../project-management/kanban/fr-br/FR-006-localization-language-selection-uk-us-english.md) Phase 2 · [localisation_config.py](../../../packages/frameworks/workflow-mgt/scripts/localisation_config.py)
+**Related:** [FR-006](../../project-management/kanban/fbu/FR-006-localization-language-selection-uk-us-english.md) Phase 2 · [localisation_config.py](../../../packages/frameworks/workflow-mgt/scripts/localisation_config.py)
 
 ---
 

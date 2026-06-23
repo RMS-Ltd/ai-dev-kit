@@ -19,15 +19,15 @@ housekeeping_policy: keep
 **Deciders:** User (Ruari Mears)  
 **Implementing task:** [E05:S08:T06](../../kanban/epics/epic-05/story-08-knowledge-base/T06-adr-026-git-maintainer-authoring-bootstrap-fr121.md)  
 **Planning package:** [IPP-E05S08T06](../../implementation-cycles/IPP-E05S08T06-adr-026-git-maintainer-authoring-bootstrap-fr121.md)  
-**Related:** [FR-121](../../kanban/fr-br/FR-121-git-internal-maintainer-kb-oss-documentation-surfaces.md), [ADR-024](ADR-024-documentation-surfaces-three-surface-model-fr114.md) (partial supersession), [ADR-012](ADR-012-agent-bootstrap-and-task-routing.md), [E05:S08:T05](../../kanban/epics/epic-05/story-08-knowledge-base/T05-reverse-notion-migration-git-internal-maintainer-kb-fr121.md), [E05:S08:T07](../../kanban/epics/epic-05/story-08-knowledge-base/T07-optional-obsidian-editor-profiles-greenfield-install-fr121.md)
+**Related:** [FR-121](../../kanban/fbu/FR-121-git-internal-maintainer-kb-oss-documentation-surfaces.md), [ADR-024](ADR-024-documentation-surfaces-three-surface-model-fr114.md) (partial supersession), [ADR-012](ADR-012-agent-bootstrap-and-task-routing.md), [E05:S08:T05](../../kanban/epics/epic-05/story-08-knowledge-base/T05-reverse-notion-migration-git-internal-maintainer-kb-fr121.md), [E05:S08:T07](../../kanban/epics/epic-05/story-08-knowledge-base/T07-optional-obsidian-editor-profiles-greenfield-install-fr121.md)
 
 ---
 
 ## Context
 
-[FR-114](../../kanban/fr-br/FR-114-split-documentation-surfaces-docusaurus-public-notion-maintainer-kb.md) correctly separated Docusaurus (adopter-public) from maintainer corpora and migrated maintainer content to Notion ([E05:S08:T03](../../kanban/epics/epic-05/story-08-knowledge-base/T03-big-bang-notion-migration-maintainer-kb-fr114.md)). [ADR-024](ADR-024-documentation-surfaces-three-surface-model-fr114.md) bound **Notion-first** maintainer authoring ([E05:S08:T04](../../kanban/epics/epic-05/story-08-knowledge-base/T04-agent-notion-first-authoring-and-bootstrap-routing-fr114.md)).
+[FR-114](../../kanban/fbu/FR-114-split-documentation-surfaces-docusaurus-public-notion-maintainer-kb.md) correctly separated Docusaurus (adopter-public) from maintainer corpora and migrated maintainer content to Notion ([E05:S08:T03](../../kanban/epics/epic-05/story-08-knowledge-base/T03-big-bang-notion-migration-maintainer-kb-fr114.md)). [ADR-024](ADR-024-documentation-surfaces-three-surface-model-fr114.md) bound **Notion-first** maintainer authoring ([E05:S08:T04](../../kanban/epics/epic-05/story-08-knowledge-base/T04-agent-notion-first-authoring-and-bootstrap-routing-fr114.md)).
 
-[FR-121](../../kanban/fr-br/FR-121-git-internal-maintainer-kb-oss-documentation-surfaces.md) reverses maintainer SoT to **git** for the public OSS repository: wave 1 restored full markdown from pre-stub commits ([E05:S08:T05](../../kanban/epics/epic-05/story-08-knowledge-base/T05-reverse-notion-migration-git-internal-maintainer-kb-fr121.md) @ v0.5.8.5+2). Wave 2 (this ADR) publishes the binding policy and rewrites agent bootstrap.
+[FR-121](../../kanban/fbu/FR-121-git-internal-maintainer-kb-oss-documentation-surfaces.md) reverses maintainer SoT to **git** for the public OSS repository: wave 1 restored full markdown from pre-stub commits ([E05:S08:T05](../../kanban/epics/epic-05/story-08-knowledge-base/T05-reverse-notion-migration-git-internal-maintainer-kb-fr121.md) @ v0.5.8.5+2). Wave 2 (this ADR) publishes the binding policy and rewrites agent bootstrap.
 
 Alternatives considered:
 
@@ -66,7 +66,7 @@ Configuration: `rw-config.yaml` → `documentation_surfaces`, `maintainer_editor
 | Maintainer investigation / analysis / records | **Git** | `docs/knowledge/`, `docs/maintenance/`, `docs/analysis/` |
 | Adopter guides / user docs | **Docusaurus** (allowlisted paths) | Source in `docs/guides/`, `docs/documentation/` |
 | Kanban, FR/BR/UXR, task docs | **Git** | Full text |
-| IPP / ICW planning packages | **Git** | Full text ([FR-083](../../kanban/fr-br/FR-083-global-ipw-gated-implementation-contract.md)) |
+| IPP / ICW planning packages | **Git** | Full text ([FR-083](../../kanban/fbu/FR-083-global-ipw-gated-implementation-contract.md)) |
 | Binding ADRs (workflow/kanban/release) | **Git** | Full text — never stubbed |
 | Non-binding architecture reference | **Git** | Full text in OSS repo |
 | CHANGELOG (RC = 0) | **Git** | GitHub only |
@@ -133,7 +133,7 @@ maintainer_editor_profile: none  # none | obsidian-personal | obsidian-team
 ### Neutral
 
 - Partially supersedes [ADR-024](ADR-024-documentation-surfaces-three-surface-model-fr114.md) maintainer/Notion sections and **P-NOTION-FIRST**.
-- Partially supersedes [FR-114](../../kanban/fr-br/FR-114-split-documentation-surfaces-docusaurus-public-notion-maintainer-kb.md) maintainer SoT (Docusaurus split retained).
+- Partially supersedes [FR-114](../../kanban/fbu/FR-114-split-documentation-surfaces-docusaurus-public-notion-maintainer-kb.md) maintainer SoT (Docusaurus split retained).
 
 ---
 

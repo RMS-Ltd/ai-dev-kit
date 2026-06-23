@@ -20,7 +20,7 @@ housekeeping_policy: keep
 
 **Wave 2 (2026-06-05):** Full build triage + BR-068 Strategy A link remediation; local + CI `npm run build` green; pytest T8–T11 green. **Main** Actions **26992999149** (build + deploy) after PR #26 merge.
 
-**Upstream:** [BR-090 — Docusaurus 3.10 build fails: missing `@docusaurus/faster` and lockfile drift](../../../fr-br/BR-090-docusaurus-faster-missing-dependabot-310-lockfile-drift.md)
+**Upstream:** [BR-090 — Docusaurus 3.10 build fails: missing `@docusaurus/faster` and lockfile drift](../../../fbu/BR-090-docusaurus-faster-missing-dependabot-310-lockfile-drift.md)
 
 Publication Status: NOT_APPLICABLE
 
@@ -29,7 +29,7 @@ Publication Status: NOT_APPLICABLE
 ## Input
 
 - [IPP-E05S09T13 — Docusaurus `@docusaurus/faster` + 3.10.1 alignment](../../../../implementation-cycles/IPP-E05S09T13-docusaurus-faster-package-alignment.md) (IPW planning package — **§8 Wave 2**)
-- [BR-090](../../../fr-br/BR-090-docusaurus-faster-missing-dependabot-310-lockfile-drift.md)
+- [BR-090](../../../fbu/BR-090-docusaurus-faster-missing-dependabot-310-lockfile-drift.md)
 - [`portal/docusaurus.config.js`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/portal/docusaurus.config.js) — `future.v4: true`
 - [`portal/package.json`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/portal/package.json) / [`portal/package-lock.json`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/portal/package-lock.json)
 - [`.github/workflows/docusaurus-build.yml`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/.github/workflows/docusaurus-build.yml)
@@ -63,7 +63,7 @@ Restore green Docusaurus production build on CI after Dependabot Docusaurus 3.10
 ## References
 
 - [IPP-E05S09T13 — §8 Wave 2](../../../../implementation-cycles/IPP-E05S09T13-docusaurus-faster-package-alignment.md#8-wave-2--mdx-link-remediation--ci-verification-br-090-build-closure)
-- [BR-090](../../../fr-br/BR-090-docusaurus-faster-missing-dependabot-310-lockfile-drift.md)
+- [BR-090](../../../fbu/BR-090-docusaurus-faster-missing-dependabot-310-lockfile-drift.md)
 - [E05:S09:T05 — CI build gate (FR-069)](T05-docusaurus-ci-fr-069.md)
 - [E05:S09:T11 — BR-068 monorepo links](T11-docusaurus-monorepo-markdown-link-resolution-br068.md)
-- [BR-093](../../../fr-br/BR-093-docusaurus-ci-duplicate-build-deploy-job-waste.md) — separate CI efficiency fix
+- [BR-093](../../../fbu/BR-093-docusaurus-ci-duplicate-build-deploy-job-waste.md) — separate CI efficiency fix

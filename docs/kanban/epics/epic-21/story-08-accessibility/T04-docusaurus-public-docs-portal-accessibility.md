@@ -20,7 +20,7 @@ housekeeping_policy: keep
 
 ## Scope
 
-**Deferred until Layer 1 COMPLETE.** Remediate and validate the public Docusaurus documentation portal ([FR-114](../../../../fr-br/FR-114-split-documentation-surfaces-docusaurus-public-notion-maintainer-kb.md), E05:S09) for keyboard navigation, focus management, contrast, semantic structure, and reduced-motion support.
+**Deferred until Layer 1 COMPLETE.** Remediate and validate the public Docusaurus documentation portal ([FR-114](../../../../fbu/FR-114-split-documentation-surfaces-docusaurus-public-notion-maintainer-kb.md), E05:S09) for keyboard navigation, focus management, contrast, semantic structure, and reduced-motion support.
 
 ---
 

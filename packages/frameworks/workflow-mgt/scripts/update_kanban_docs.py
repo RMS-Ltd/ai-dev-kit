@@ -32,6 +32,11 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any, Dict, List, Optional, Tuple
 
+_KANBAN_FRAMEWORK_SCRIPTS = Path(__file__).resolve().parent.parent.parent / "kanban" / "scripts"
+if str(_KANBAN_FRAMEWORK_SCRIPTS) not in sys.path:
+    sys.path.insert(0, str(_KANBAN_FRAMEWORK_SCRIPTS))
+import kanban_paths as _kanban_paths  # noqa: E402
+
 _KANBAN_SCRIPT_DIR = Path(__file__).resolve().parent / "kanban"
 if str(_KANBAN_SCRIPT_DIR) not in sys.path:
     sys.path.insert(0, str(_KANBAN_SCRIPT_DIR))
@@ -1664,7 +1669,7 @@ def _cleanup_kboard_intake_active_rows(
         "timestamps_added_missing": 0,
     }
 
-    frbr_link_pattern = re.compile(r"\((fr-br/[^)]+\.md)\)")
+    frbr_link_pattern = re.compile(r"\(((?:fbu|fr-br)/[^)]+\.md)\)")
 
     for line in lines:
         stripped = line.strip()
@@ -2214,7 +2219,7 @@ def validate_updates(
 #   - .cursorrules Step 7
 #   - packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md
 #   - packages/frameworks/kanban/policies/kanban-governance-policy.md
-#   - docs/kanban/fr-br/FR-092-canonical-rw-ukw-kanban-consistency-program.md
+#   - docs/kanban/fbu/FR-092-canonical-rw-ukw-kanban-consistency-program.md
 ###############################################################################
 
 
@@ -2424,6 +2429,7 @@ def discover_release_scope_task_doc(
 def discover_release_scope_fbu_docs(
     task_doc_path: Optional[Path],
     project_root: Path,
+    config: Optional[Dict] = None,
 ) -> List[Path]:
     """
     Discover linked FR/BR/UXR docs by parsing the task doc's Upstream/Source
@@ -2435,13 +2441,18 @@ def discover_release_scope_fbu_docs(
         content = task_doc_path.read_text()
     except Exception:
         return []
-    fbu_root = project_root / "docs/kanban/fr-br"
+    kanban_root_str = "docs/kanban"
+    if config and config.get("kanban_root"):
+        kanban_root_str = str(config["kanban_root"])
+    fbu_dir = _kanban_paths.resolve_fbu_root_path(project_root, kanban_root_str, config)
+    if not fbu_dir:
+        return []
     candidates: List[Path] = []
     seen: set = set()
     pattern = re.compile(r"(FR-\d+|BR-\d+|UXR-\d+)[^\s]*?\.md", re.IGNORECASE)
     for match in pattern.finditer(content):
         fragment = match.group(0)
-        rel_path = fbu_root / Path(fragment).name
+        rel_path = fbu_dir / Path(fragment).name
         if rel_path.exists():
             resolved = rel_path.resolve()
             if str(resolved) not in seen:
@@ -2461,6 +2472,7 @@ def build_four_surface_report(
     paths: Dict[str, Path],
     all_changes: List[str],
     stamp_evidence_aggregate: Optional[Dict[str, Any]] = None,
+    config: Optional[Dict] = None,
 ) -> FourSurfaceReport:
     """
     Build the four-surface reconciliation report from the resolved release-scope
@@ -2486,7 +2498,7 @@ def build_four_surface_report(
     )
 
     task_doc_path = discover_release_scope_task_doc(epic, story, task, project_root)
-    fbu_doc_paths = discover_release_scope_fbu_docs(task_doc_path, project_root)
+    fbu_doc_paths = discover_release_scope_fbu_docs(task_doc_path, project_root, config)
     kboard_path = paths.get("kanban_board")
     if kboard_path is None:
         candidate = project_root / "docs/kanban/kboard.md"
@@ -2874,6 +2886,7 @@ def main():
         project_root=project_root,
         paths=paths,
         all_changes=all_changes,
+        config=config,
     )
 
     print("\n📊 RW Step 7 four-surface reconciliation report")

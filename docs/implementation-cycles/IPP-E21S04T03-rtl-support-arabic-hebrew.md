@@ -9,7 +9,7 @@ housekeeping_policy: keep
 # E21:S04:T03 — Planning: RTL support (Arabic/Hebrew) (IPW)
 
 **Host Task:** [`T03-implement-rtl-support-right-to-left-for-arabichebrew.md`](../kanban/epics/epic-21/story-04-cultural-adaptation/T03-implement-rtl-support-right-to-left-for-arabichebrew.md) **(E21:S04:T03)**  
-**Planning for:** [FR-006 Phase 2](../kanban/fr-br/FR-006-localization-language-selection-uk-us-english.md) · [E21:S04](../kanban/epics/epic-21/story-04-cultural-adaptation.md) · [ADR-024](../architecture/standards-and-adrs/ADR-024-i18n-framework-strategy.md) · [locale-cultural-requirements.md](../governance/standards/locale-cultural-requirements.md)  
+**Planning for:** [FR-006 Phase 2](../kanban/fbu/FR-006-localization-language-selection-uk-us-english.md) · [E21:S04](../kanban/epics/epic-21/story-04-cultural-adaptation.md) · [ADR-024](../architecture/standards-and-adrs/ADR-024-i18n-framework-strategy.md) · [locale-cultural-requirements.md](../governance/standards/locale-cultural-requirements.md)  
 **Status:** Complete — released `v0.21.4.3+1` (`RW E21:S04:T03 --art`)  
 **Branch:** `dev`
 

@@ -9,7 +9,7 @@ housekeeping_policy: keep
 # E6:S09:T05 — Planning: ADK ECC workflow skill pack (FR-098 Phase 1)
 
 **Host Task:** [`T05-adk-workflow-skill-pack-ecc-fr098.md`](../kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T05-adk-workflow-skill-pack-ecc-fr098.md) **(E6:S09:T05)**  
-**Planning for:** [FR-098 — Optional ECC harness layer integration](../kanban/fr-br/FR-098-ecc-optional-harness-layer-integration.md)  
+**Planning for:** [FR-098 — Optional ECC harness layer integration](../kanban/fbu/FR-098-ecc-optional-harness-layer-integration.md)  
 **Status:** Approved (implementation complete targeting v0.6.9.5+2)
 
 ---
@@ -86,6 +86,6 @@ Repository SoT paths; ECC upstream stays reference-install only.
 
 ## References
 
-- [FR-098](../kanban/fr-br/FR-098-ecc-optional-harness-layer-integration.md)
+- [FR-098](../kanban/fbu/FR-098-ecc-optional-harness-layer-integration.md)
 - [Integration specification](../architecture/standards-and-adrs/ecc-adk-harness-layer-integration-specification.md)
 

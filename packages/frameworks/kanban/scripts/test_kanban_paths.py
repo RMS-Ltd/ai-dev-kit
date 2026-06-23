@@ -48,6 +48,31 @@ class TestKanbanPaths(unittest.TestCase):
             violations = kp.capitalised_segment_violations(epics)
             self.assertTrue(any("Epic-01" in v for v in violations))
 
+    def test_resolve_fbu_root_prefers_fbu_subdir(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            kanban = root / "docs" / "kanban"
+            (kanban / "fbu").mkdir(parents=True)
+            (kanban / "fbu" / "FR-001.md").write_text("# FR", encoding="utf-8")
+            resolved = kp.resolve_fbu_root_path(root, "docs/kanban")
+            self.assertEqual(resolved, (kanban / "fbu").resolve())
+
+    def test_resolve_fbu_root_fallback_fr_br(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            kanban = root / "docs" / "kanban"
+            (kanban / "fr-br").mkdir(parents=True)
+            resolved = kp.resolve_fbu_root_path(root, "docs/kanban")
+            self.assertEqual(resolved, (kanban / "fr-br").resolve())
+
+    def test_detect_config_relative_prefers_fbu(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            kanban = "docs/kanban"
+            (root / kanban / "fbu").mkdir(parents=True)
+            rel = kp.resolve_fbu_root_config_relative(root, kanban)
+            self.assertEqual(rel, "docs/kanban/fbu")
+
 
 if __name__ == "__main__":
     unittest.main()

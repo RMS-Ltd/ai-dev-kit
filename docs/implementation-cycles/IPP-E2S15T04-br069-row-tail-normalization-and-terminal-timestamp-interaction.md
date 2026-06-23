@@ -9,7 +9,7 @@ housekeeping_policy: keep
 # E2:S15:T04 - Planning: Spec, Tests, Implementation Plan (IPP)
 
 **Host Task:** [`T04-investigate-earliest-last-modified-timestamp-overwrite-regression-br069.md`](../kanban/epics/epic-02/story-15-ipw-governance-and-publication-contract/T04-investigate-earliest-last-modified-timestamp-overwrite-regression-br069.md) **(E2:S15:T04)**  
-**Planning for:** [BR-069 - kboard earliest `Last modified` timestamps overwritten / task-ID multiplication](../kanban/fr-br/BR-069-kboard-fbuboard-earliest-last-modified-timestamps-overwritten.md)  
+**Planning for:** [BR-069 - kboard earliest `Last modified` timestamps overwritten / task-ID multiplication](../kanban/fbu/BR-069-kboard-fbuboard-earliest-last-modified-timestamps-overwritten.md)  
 **Status:** Published
 
 ---
@@ -42,7 +42,7 @@ Isolate why MoSCOW rows on `kboard.md` still exhibit **forensic timestamp churn*
 
 ### 1.5 Constraints
 
-- UKW (`enforce_terminal_timestamps_on_boards`) is already documented as **not** a full corpus repair pass ([BR-069](../kanban/fr-br/BR-069-kboard-fbuboard-earliest-last-modified-timestamps-overwritten.md)); remediation must address **code**, not expectations that UKW alone heals all rows.
+- UKW (`enforce_terminal_timestamps_on_boards`) is already documented as **not** a full corpus repair pass ([BR-069](../kanban/fbu/BR-069-kboard-fbuboard-earliest-last-modified-timestamps-overwritten.md)); remediation must address **code**, not expectations that UKW alone heals all rows.
 
 ---
 
@@ -173,9 +173,9 @@ flowchart LR
 ## References
 
 - [Host task E2:S15:T04](../kanban/epics/epic-02/story-15-ipw-governance-and-publication-contract/T04-investigate-earliest-last-modified-timestamp-overwrite-regression-br069.md)
-- [BR-069](../kanban/fr-br/BR-069-kboard-fbuboard-earliest-last-modified-timestamps-overwritten.md)
+- [BR-069](../kanban/fbu/BR-069-kboard-fbuboard-earliest-last-modified-timestamps-overwritten.md)
 - [IPP-E2S15T3 – duplicate footer / divergence guardrails](IPP-E2S15T03-duplicate-footer-validation-hardening-and-timestamp-divergence-guardrails.md)
-- [FR-089](../kanban/fr-br/FR-089-ipw-board-row-footer-duplication-validation-hardening.md)
-- [UXR-009](../kanban/fr-br/UXR-009-last-modified-stamp-forensic-integrity-and-drift-protection.md)
+- [FR-089](../kanban/fbu/FR-089-ipw-board-row-footer-duplication-validation-hardening.md)
+- [UXR-009](../kanban/fbu/UXR-009-last-modified-stamp-forensic-integrity-and-drift-protection.md)
 - [Story 015](../kanban/epics/epic-02/story-15-ipw-governance-and-publication-contract.md)
 - Tests: [`packages/frameworks/workflow-mgt/scripts/test_update_kanban_docs.py`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/scripts/test_update_kanban_docs.py)

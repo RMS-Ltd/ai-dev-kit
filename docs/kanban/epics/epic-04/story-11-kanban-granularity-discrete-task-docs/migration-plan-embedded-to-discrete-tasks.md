@@ -517,7 +517,7 @@ This document provides a comprehensive migration plan to convert **784 embedded 
 
 ## 10. References
 
-- `docs/kanban/fr-br/FR-016-kanban-granularity-discrete-task-docs.md` - FR-016 requirements
+- `docs/kanban/fbu/FR-016-kanban-granularity-discrete-task-docs.md` - FR-016 requirements
 - `packages/frameworks/kanban/templates/TASK_TEMPLATE.md` - Task document template
 - `docs/project-management/rituals/policy/kanban-governance-policy.md` - Kanban governance policy
 - `docs/kanban/epics/epic-04/story-11-kanban-granularity-discrete-task-docs.md` - Parent story

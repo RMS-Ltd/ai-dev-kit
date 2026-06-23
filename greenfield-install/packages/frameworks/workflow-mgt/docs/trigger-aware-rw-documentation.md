@@ -84,7 +84,7 @@ integration = TriggerIntegration()
 # Check triggers with custom commit message
 triggers = integration.check_triggers(
     commit_message='v0.1.0+1 - FR012: New feature',
-    changed_files=['docs/kanban/fr-br/FR-012-new-feature.md']
+    changed_files=['docs/kanban/fbu/FR-012-new-feature.md']
 )
 
 for trigger in triggers:
@@ -102,7 +102,7 @@ The **Intake Workflow** (E2:S11) is a complete workflow that automatically execu
 **Example:**
 ```python
 # Commit message: "Add FR-019: Intake Workflow Automation"
-# Changed files: ["docs/kanban/fr-br/FR-019.md"]
+# Changed files: ["docs/kanban/fbu/FR-019.md"]
 # → RW detects trigger → Intake workflow executes automatically
 ```
 
@@ -154,9 +154,9 @@ The system detects Feature Requests, Bug Reports, and User Experience Research c
 
 The system also detects triggers from file paths:
 
-- `fr-br/FR-*.md` - Matches FR files
-- `fr-br/BR-*.md` - Matches BR files
-- `fr-br/UXR-*.md` - Matches UXR files
+- `fbu/FR-*.md` - Matches FR files
+- `fbu/BR-*.md` - Matches BR files
+- `fbu/UXR-*.md` - Matches UXR files
 
 ---
 

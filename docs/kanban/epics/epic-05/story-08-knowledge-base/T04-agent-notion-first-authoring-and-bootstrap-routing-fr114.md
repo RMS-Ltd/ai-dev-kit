@@ -22,14 +22,14 @@ Publication Status: NOT_APPLICABLE
 
 ## Associated FR
 
-- [FR-114 — Split documentation surfaces (Docusaurus public + Notion maintainer KB)](../../../fr-br/FR-114-split-documentation-surfaces-docusaurus-public-notion-maintainer-kb.md)
+- [FR-114 — Split documentation surfaces (Docusaurus public + Notion maintainer KB)](../../../fbu/FR-114-split-documentation-surfaces-docusaurus-public-notion-maintainer-kb.md)
 
 ---
 
 ## Input
 
 - [IPP-E05S08T04 — Agent Notion-first authoring and bootstrap routing (FR-114)](../../../../implementation-cycles/IPP-E05S08T04-agent-notion-first-authoring-and-bootstrap-routing-fr114.md)
-- [FR-114](../../../fr-br/FR-114-split-documentation-surfaces-docusaurus-public-notion-maintainer-kb.md) agent authoring decision (Notion-first via MCP)
+- [FR-114](../../../fbu/FR-114-split-documentation-surfaces-docusaurus-public-notion-maintainer-kb.md) agent authoring decision (Notion-first via MCP)
 - [`AGENTS.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/AGENTS.md) · [`docs/project-agent-manifest.json`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/project-agent-manifest.json)
 - [ADR-012](../../../../architecture/standards-and-adrs/ADR-012-agent-bootstrap-and-task-routing.md)
 - `rw-config.yaml` → `notion_hub_url`, `notion_kb_url` (`rmearssolutions@gmail.com` workspace; URLs refreshed by T03 clean-slate bootstrap)
@@ -66,7 +66,7 @@ Wire agent bootstrap and maintainer documentation policy so **new maintainer/dev
 
 - [IPP-E05S08T04](../../../../implementation-cycles/IPP-E05S08T04-agent-notion-first-authoring-and-bootstrap-routing-fr114.md)
 - [ADR-024](../../../../architecture/standards-and-adrs/ADR-024-documentation-surfaces-three-surface-model-fr114.md)
-- [FR-114](../../../fr-br/FR-114-split-documentation-surfaces-docusaurus-public-notion-maintainer-kb.md)
+- [FR-114](../../../fbu/FR-114-split-documentation-surfaces-docusaurus-public-notion-maintainer-kb.md)
 - [E05:S08:T03](T03-big-bang-notion-migration-maintainer-kb-fr114.md)
 - [E05:S09:T15](../story-09-docusaurus-documentation-portal/T15-docusaurus-adopter-public-publish-allowlist-fr114.md)
-- [FR-103](../../../../fr-br/FR-103-agent-bootstrap-and-task-routing.md)
+- [FR-103](../../../../fbu/FR-103-agent-bootstrap-and-task-routing.md)

@@ -67,11 +67,11 @@ def coherence_project(tmp_path, monkeypatch):
         encoding="utf-8",
     )
     (tmp_path / "README.md").write_text(
-        "**Version (SemVer):** `v0.4.1097+2` | **Internal:** `v0.2.1.30+2`\n",
+        "**Version (SemVer):** `v0.4.1097` | **Internal:** `v0.2.1.30+2`\n",
         encoding="utf-8",
     )
     (tmp_path / "CHANGELOG.md").write_text(
-        "## [0.2.1.30+2] - 09-06-26\n\nSemVer **v0.4.1097+2**.\n",
+        "## [0.2.1.30+2] - 09-06-26\n\nSemVer **v0.4.1097**.\n",
         encoding="utf-8",
     )
     (tmp_path / "rw-config.yaml").write_text(
@@ -116,7 +116,7 @@ def test_coherent_release_passes(coherence_project):
 def test_readme_semver_mismatch_fails(coherence_project):
     readme = coherence_project / "README.md"
     readme.write_text(
-        "**Version (SemVer):** `v0.4.11+2` | **Internal:** `v0.2.1.30+2`\n",
+        "**Version (SemVer):** `v0.4.11` | **Internal:** `v0.2.1.30+2`\n",
         encoding="utf-8",
     )
     ok, lines = vrc.validate_release_coherence(

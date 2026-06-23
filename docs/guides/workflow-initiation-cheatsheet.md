@@ -12,7 +12,7 @@ housekeeping_policy: keep
 
 > **Agent source of truth:** If this cheatsheet and [`.cursorrules` (source)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/.cursorrules) or [`.claude/commands/` (source)](https://github.com/RMS-Ltd/ai-dev-kit/tree/main/.claude/commands) diverge, **`.cursorrules` wins** for agent behavior. This page is a human quick-reference for *which command to type* — not full execution steps.
 
-**Task:** [E02:S16:T15](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T15-workflow-initiation-cheatsheet-uxr015.md) · [UXR-015](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/kanban/fr-br/UXR-015-workflow-initiation-cheatsheet.md) · [E02:S16:T19](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T19-rw-dpz-short-flag-doc-policy-zero-uxr022.md) · [UXR-022](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/kanban/fr-br/UXR-022-rw-doc-policy-zero-short-flag-dpz.md) · [E02:S16:T21](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T21-rw-local-release-default-no-push-uxr024.md) · [UXR-024](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/kanban/fr-br/UXR-024-rw-local-release-default-no-push-batch-operator-push.md)
+**Task:** [E02:S16:T15](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T15-workflow-initiation-cheatsheet-uxr015.md) · [UXR-015](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/kanban/fbu/UXR-015-workflow-initiation-cheatsheet.md) · [E02:S16:T19](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T19-rw-dpz-short-flag-doc-policy-zero-uxr022.md) · [UXR-022](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/kanban/fbu/UXR-022-rw-doc-policy-zero-short-flag-dpz.md) · [E02:S16:T21](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T21-rw-local-release-default-no-push-uxr024.md) · [UXR-024](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/kanban/fbu/UXR-024-rw-local-release-default-no-push-batch-operator-push.md)
 
 ---
 
@@ -32,7 +32,7 @@ housekeeping_policy: keep
 | Bump package versions | `PVW` (or automatic at RW Step 2.5) |
 | Reduce Cursor terminal approval friction | See [IDE whitelist guide](../developer-tools/ide-whitelist-guide.md) (pattern catalog + validator; [E06:S07:T107](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/kanban/epics/epic-06/story-07-adk-implementation-analysis-and-package-management/T107-ide-command-whitelist-optimization.md)) |
 
-**Examples use padded E/S/T** ([UXR-014](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/kanban/fr-br/UXR-014-two-digit-est-identifier-default-formatting.md)): `E02:S16:T15`, compact `E02S16T15`.
+**Examples use padded E/S/T** ([UXR-014](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/kanban/fbu/UXR-014-two-digit-est-identifier-default-formatting.md)): `E02:S16:T15`, compact `E02S16T15`.
 
 ---
 
@@ -40,18 +40,18 @@ housekeeping_policy: keep
 
 | Invocation | Meaning |
 | ---------- | ------- |
-| `RW E02:S16:T15` / `/rw E02:S16:T15` | **Local-complete release** (version, changelog, kanban, commit, tag) — **no push** ([UXR-024](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/kanban/fr-br/UXR-024-rw-local-release-default-no-push-batch-operator-push.md)) |
+| `RW E02:S16:T15` / `/rw E02:S16:T15` | **Local-complete release** (version, changelog, kanban, commit, tag) — **no push** ([UXR-024](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/kanban/fbu/UXR-024-rw-local-release-default-no-push-batch-operator-push.md)) |
 | `RW E02:S16:T15 --push` | Full release **with** Step 12 push + Step 12.5 GitHub Release |
-| `RW -d E02:S16:T15` | **Docs-only release** (documentation path; not kanban drift repair). On an **existing** E:S:T use `--art` and optionally `--dpz` (`--doc-policy-zero` alias; BUILD +0 policy; see [BR-067](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/kanban/fr-br/BR-067-rw-first-doc-only-release-defaults-to-build-plus-one-not-plus-zero.md)) |
+| `RW -d E02:S16:T15` | **Docs-only release** (documentation path; not kanban drift repair). On an **existing** E:S:T use `--art` and optionally `--dpz` (`--doc-policy-zero` alias; BUILD +0 policy; see [BR-067](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/kanban/fbu/BR-067-rw-first-doc-only-release-defaults-to-build-plus-one-not-plus-zero.md)) |
 | `RW -k E02:S16:T15` | Kanban-init release (local-default; add `--push` for immediate remote) |
 | `… --art` | Adopt requested E:S:T as canonical version anchor |
-| `… --dpz` | BUILD +0 only when **you** typed it, HEAD BUILD is **untagged**, and BUILD=0 doc-init path (alias: `--doc-policy-zero`; [BR-067](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/kanban/fr-br/BR-067-rw-first-doc-only-release-defaults-to-build-plus-one-not-plus-zero.md)) |
+| `… --dpz` | BUILD +0 only when **you** typed it, HEAD BUILD is **untagged**, and BUILD=0 doc-init path (alias: `--doc-policy-zero`; [BR-067](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/kanban/fbu/BR-067-rw-first-doc-only-release-defaults-to-build-plus-one-not-plus-zero.md)) |
 | `… --push` | Opt-in Step 12 + 12.5 (remote push + GitHub Release) — **you must type it** |
 | `… --confirmed-override` | Step 1d intent override (after explicit user confirmation) |
 
 **Same-task follow-on release (BR-097):** Default is **BUILD +1** (`RW E02:S16:T15 --art`). Never reuse a tagged BUILD; never `git tag -f` on release tags — bump BUILD and re-RW instead.
 
-**CQG ≠ CI ship gate:** Local CodeQL (CQG at IDW Phase 6b) and GitHub CodeQL workflows do **not** replace **Tests**, **Docusaurus**, or **Greenfield install**. RW Step **9.7** (`validate_actions_ci_parity.py`) is the release ship gate for workflow checks ([BR-104](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/kanban/fr-br/BR-104-codeql-cqg-green-does-not-imply-actions-ci-green.md)).
+**CQG ≠ CI ship gate:** Local CodeQL (CQG at IDW Phase 6b) and GitHub CodeQL workflows do **not** replace **Tests**, **Docusaurus**, or **Greenfield install**. RW Step **9.7** (`validate_actions_ci_parity.py`) is the release ship gate for workflow checks ([BR-104](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/kanban/fbu/BR-104-codeql-cqg-green-does-not-imply-actions-ci-green.md)).
 
 **Operator batch push (after local RW runs):** Run local parity **and** remote no-red-ship check on the commit(s) you are about to publish, then push branch once and each pending release tag explicitly — never `git push origin {branch} --tags`.
 
@@ -84,14 +84,14 @@ Or per release: `python packages/frameworks/workflow-mgt/scripts/version/push_rw
 
 | Invocation | Meaning |
 | ---------- | ------- |
-| `UKW` / `/ukw` | **Comprehensive** — bookkeeping + priorities + gap discovery (Step 2.5); Step 6 **Part B.1** enumerates all open story-checklist tasks onto MoSCOW ([BR-059](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/kanban/fr-br/BR-059-ukw-moscow-incomplete-story-task-coverage.md)) |
+| `UKW` / `/ukw` | **Comprehensive** — bookkeeping + priorities + gap discovery (Step 2.5); Step 6 **Part B.1** enumerates all open story-checklist tasks onto MoSCOW ([BR-059](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/kanban/fbu/BR-059-ukw-moscow-incomplete-story-task-coverage.md)) |
 | `UKW -u` | Bookkeeping only (no MoSCOW reprioritization; no Step 2.5) |
 | `UKW -p` | Update MoSCOW priorities only |
 | `UKW -a E02:S16:T15` | Assign priorities to target(s) only — **not** drift repair |
 | `UKW -u -p`, `UKW -u -a <target>`, etc. | Combined sub-workflows per flag matrix |
 | `UKW -ad <targets>` | **Address Drift** — targeted project-state kanban reconciliation — **planned** |
 | `UKW --rp` | **Deep reprioritization** (standalone) — intent/dependency/blocker/impact analysis on kboard + fbuboard; emits rationale ([ADR-009](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/architecture/standards-and-adrs/ADR-009-ukw-deep-reprioritization-rp-flag.md)). **Not** combinable with `-u`, `-p`, or `-a` |
-| `UKW -c` | **Archive completed** (standalone) — upsert `.adk/kanban-completed.db` via `append_kanban_completed.py`, refresh `kanban-completed.pdf`, append [intake-completed.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/kanban/intake-completed.md), then remove terminal MoSCOW rows ([ADR-010](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/architecture/standards-and-adrs/ADR-010-ukw-archive-completed-c-flag.md), [FR-134](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/kanban/fr-br/FR-134-kanban-completed-sqlite-ledger-pdf-report.md)). **Not** combinable with `-u`, `-p`, `-a`, or `--rp` |
+| `UKW -c` | **Archive completed** (standalone) — upsert `.adk/kanban-completed.db` via `append_kanban_completed.py`, refresh `kanban-completed.pdf`, append [intake-completed.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/kanban/intake-completed.md), then remove terminal MoSCOW rows ([ADR-010](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/architecture/standards-and-adrs/ADR-010-ukw-archive-completed-c-flag.md), [FR-134](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/kanban/fbu/FR-134-kanban-completed-sqlite-ledger-pdf-report.md)). **Not** combinable with `-u`, `-p`, `-a`, or `--rp` |
 
 **Flag disambiguation (easy to confuse):**
 
@@ -99,7 +99,7 @@ Or per release: `python packages/frameworks/workflow-mgt/scripts/version/push_rw
 | ---- | -------- | ------- |
 | `-d` | **RW** | Docs-only **release** |
 | `--dpz` | **RW** | **D**oc-**p**olicy-**z**ero — explicit BUILD +0 override (alias: `--doc-policy-zero`) |
-| `--push` | **RW** | Opt-in Step 12 + 12.5 (remote push + GitHub Release); default RW is local-only ([UXR-024](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/kanban/fr-br/UXR-024-rw-local-release-default-no-push-batch-operator-push.md)) |
+| `--push` | **RW** | Opt-in Step 12 + 12.5 (remote push + GitHub Release); default RW is local-only ([UXR-024](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/kanban/fbu/UXR-024-rw-local-release-default-no-push-batch-operator-push.md)) |
 | `-a` | **UKW** | Assign **priorities** to targets |
 | `-ad` | **UKW** (planned) | **Address** kanban **d**rift vs project state |
 | `--rp` | **UKW** | **RePrioritise** — standalone deep MoSCOW reorder (not `RW -d`, not `UKW -a`; distinct from `UKW -p`) |
@@ -135,7 +135,7 @@ Or per release: `python packages/frameworks/workflow-mgt/scripts/version/push_rw
 | **Blocked (plan mode)** | `IPW BLOCKED: plan mode required. Type /plan to enter plan mode, then invoke /ipw again from within the plan session.` |
 | **Blocked (tools)** | `IPW BLOCKED: tool execution is unavailable in this session. Switch to a session with tool access and retry.` |
 
-**Deep dive:** [`.claude/commands/ipw.md` (source)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/.claude/commands/ipw.md) · [FR-042](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/kanban/fr-br/FR-042-implementation-planning-workflow-ipw.md)
+**Deep dive:** [`.claude/commands/ipw.md` (source)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/.claude/commands/ipw.md) · [FR-042](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/kanban/fbu/FR-042-implementation-planning-workflow-ipw.md)
 
 ---
 
@@ -175,12 +175,12 @@ Or per release: `python packages/frameworks/workflow-mgt/scripts/version/push_rw
 | | |
 | --- | --- |
 | **Prerequisites** | Tool access; parseable `E:S:T` and recipe |
-| **Orchestration** | MWF delegates legs via sub-agent or inline command guide — **no** operator mode-switch handoff ([BR-102](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/kanban/fr-br/BR-102-mwf-chain-paused-instead-of-subagent-leg-delegation.md)) |
+| **Orchestration** | MWF delegates legs via sub-agent or inline command guide — **no** operator mode-switch handoff ([BR-102](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/kanban/fbu/BR-102-mwf-chain-paused-instead-of-subagent-leg-delegation.md)) |
 | **Resume** | When IPP already linked on task, skip IPW; run IDW `--rw` only |
 | **vs IDW `--rw`** | **MWF** = multi-leg (IPW→IDW→RW); **IDW `--rw`** = two-leg (impl→RW) |
 | **Blocked (tools)** | `MWF BLOCKED: tool execution is unavailable in this session. Switch to a session with tool access and retry.` |
 
-**Deep dive:** [`.claude/commands/mwf.md` (source)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/.claude/commands/mwf.md) · [workflow-encapsulation-contract.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/workflow-encapsulation-contract.md) · [meta-workflow-agent-execution.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/meta-workflow-agent-execution.md) · [FR-124](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/kanban/fr-br/FR-124-meta-workflow-orchestration-composite-workflow-chains.md)
+**Deep dive:** [`.claude/commands/mwf.md` (source)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/.claude/commands/mwf.md) · [workflow-encapsulation-contract.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/workflow-encapsulation-contract.md) · [meta-workflow-agent-execution.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/meta-workflow-agent-execution.md) · [FR-124](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/kanban/fbu/FR-124-meta-workflow-orchestration-composite-workflow-chains.md)
 
 ---
 
@@ -195,7 +195,7 @@ Or per release: `python packages/frameworks/workflow-mgt/scripts/version/push_rw
 | --- | --- |
 | **Prerequisites** | Tool access for manual runs |
 | **Handoff** | **`CMW` then `RW`** — attributes perpetual CMW task |
-| **Deep dive** | `.cursorrules` CMW section · [FR-057](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/kanban/fr-br/FR-057-update-changelog-workflow.md) |
+| **Deep dive** | `.cursorrules` CMW section · [FR-057](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/kanban/fbu/FR-057-update-changelog-workflow.md) |
 
 ---
 
@@ -249,6 +249,6 @@ Or per release: `python packages/frameworks/workflow-mgt/scripts/version/push_rw
 
 ## Related workflows (not detailed here)
 
-- **Intake** — FR/BR/UXR → task in same session ([`FR_BR_INTAKE_GUIDE.md` (source)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/kanban/FR_BR_INTAKE_GUIDE.md), [intake-process skill (source)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/.cursor/skills/intake-process/SKILL.md)); never primary tasks on **`S00`** ([BR-076](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/kanban/fr-br/BR-076-e7-s00-must-not-host-concrete-tasks.md))
+- **Intake** — FR/BR/UXR → task in same session ([`FR_BR_INTAKE_GUIDE.md` (source)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/kanban/FR_BR_INTAKE_GUIDE.md), [intake-process skill (source)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/.cursor/skills/intake-process/SKILL.md)); never primary tasks on **`S00`** ([BR-076](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/kanban/fbu/BR-076-e7-s00-must-not-host-concrete-tasks.md))
 - **ICW** — legacy Cursor planning trigger (prefer **IPW**)
 - **Global implementation gate** — IPW/IPP required; **`IDW E:S:T`** or `implement` to execute ([`AGENTS.md` (source)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/AGENTS.md), `.cursorrules`)

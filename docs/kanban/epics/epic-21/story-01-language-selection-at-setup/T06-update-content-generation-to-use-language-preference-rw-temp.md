@@ -72,7 +72,7 @@ Wire T05 read/resolve API into RW installer scaffolds (`render_changelog_stub`, 
 RW -k E21:S01:T06 --art --dpz
 ```
 
-**Target version anchor:** `v0.21.1.6+0` (doc-init BUILD +0 per [BR-067](../../../fr-br/BR-067-rw-first-doc-only-release-defaults-to-build-plus-one-not-plus-zero.md)).
+**Target version anchor:** `v0.21.1.6+0` (doc-init BUILD +0 per [BR-067](../../../fbu/BR-067-rw-first-doc-only-release-defaults-to-build-plus-one-not-plus-zero.md)).
 
 ---
 

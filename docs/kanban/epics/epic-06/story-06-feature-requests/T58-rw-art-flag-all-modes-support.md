@@ -14,7 +14,7 @@ housekeeping_policy: keep
 **Estimated Effort:** Small (0.5-1 day)  
 **Created:** 2026-04-08
 
-**Associated BR:** [BR-060](../../../fr-br/BR-060-rw-art-flag-should-work-in-all-rw-modes.md)
+**Associated BR:** [BR-060](../../../fbu/BR-060-rw-art-flag-should-work-in-all-rw-modes.md)
 
 ---
 
@@ -33,7 +33,7 @@ Make `--art` usable across all Release Workflow modes (`RW`, `RW -d`, `RW -k`) b
 
 ## Input
 
-- [BR-060](../../../fr-br/BR-060-rw-art-flag-should-work-in-all-rw-modes.md)
+- [BR-060](../../../fbu/BR-060-rw-art-flag-should-work-in-all-rw-modes.md)
 - `packages/frameworks/workflow-mgt/scripts/validation/validate_rw_task_intent.py`
 - `packages/frameworks/workflow-mgt/scripts/validation/validate_branch_context.py`
 - `packages/frameworks/workflow-mgt/scripts/validation/validate_version_bump.py`

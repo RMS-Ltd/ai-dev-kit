@@ -17,9 +17,9 @@ housekeeping_policy: keep
 **Version Anchor:** v0.8.3.20+1  
 **Code:** E08S03T20
 
-**Upstream:** [UXR-026 — README Python prerequisites contradict 3.11 policy](../../../fr-br/UXR-026-readme-python-prerequisites-contradicts-311-policy.md)  
+**Upstream:** [UXR-026 — README Python prerequisites contradict 3.11 policy](../../../fbu/UXR-026-readme-python-prerequisites-contradicts-311-policy.md)  
 **Planning:** [IPP-E08S03T20](../../../../implementation-cycles/IPP-E08S03T20-readme-python-prerequisites-uxr026.md)  
-**Related:** [FR-104](../../../fr-br/FR-104-python-minimum-version-policy-alignment.md) · [BR-077](../../../fr-br/BR-077-documented-python-38-contradicts-repo-310-requirement.md) · [E08:S03:T05](T05-python-minimum-version-fr104-br077.md)
+**Related:** [FR-104](../../../fbu/FR-104-python-minimum-version-policy-alignment.md) · [BR-077](../../../fbu/BR-077-documented-python-38-contradicts-repo-310-requirement.md) · [E08:S03:T05](T05-python-minimum-version-fr104-br077.md)
 
 Publication Status: NOT_APPLICABLE
 
@@ -44,9 +44,9 @@ Repo policy: `setup.py` `python_requires>=3.11`, `.python-version` = `3.11`, CI 
 
 ## Input
 
-- [UXR-026](../../../fr-br/UXR-026-readme-python-prerequisites-contradicts-311-policy.md)
+- [UXR-026](../../../fbu/UXR-026-readme-python-prerequisites-contradicts-311-policy.md)
 - [IPP-E08S03T20](../../../../implementation-cycles/IPP-E08S03T20-readme-python-prerequisites-uxr026.md)
-- [FR-104](../../../fr-br/FR-104-python-minimum-version-policy-alignment.md) · [BR-077](../../../fr-br/BR-077-documented-python-38-contradicts-repo-310-requirement.md)
+- [FR-104](../../../fbu/FR-104-python-minimum-version-policy-alignment.md) · [BR-077](../../../fbu/BR-077-documented-python-38-contradicts-repo-310-requirement.md)
 - [`README.md`](../../../../../README.md) · [`PACKAGE_INSTALLATION_GUIDE.md`](../../../../../packages/frameworks/workflow-mgt/docs/PACKAGE_INSTALLATION_GUIDE.md)
 
 ---
@@ -70,12 +70,12 @@ Repo policy: `setup.py` `python_requires>=3.11`, `.python-version` = `3.11`, CI 
 
 ## Associated User Experience Research
 
-- [UXR-026 — README Python prerequisites contradict 3.11 policy](../../../fr-br/UXR-026-readme-python-prerequisites-contradicts-311-policy.md) (primary)
+- [UXR-026 — README Python prerequisites contradict 3.11 policy](../../../fbu/UXR-026-readme-python-prerequisites-contradicts-311-policy.md) (primary)
 
 ---
 
 ## References
 
-- [FR-104 — Python minimum version policy alignment](../../../fr-br/FR-104-python-minimum-version-policy-alignment.md)
-- [BR-077 — Documented Python 3.8+ contradicts repo requirement](../../../fr-br/BR-077-documented-python-38-contradicts-repo-310-requirement.md)
+- [FR-104 — Python minimum version policy alignment](../../../fbu/FR-104-python-minimum-version-policy-alignment.md)
+- [BR-077 — Documented Python 3.8+ contradicts repo requirement](../../../fbu/BR-077-documented-python-38-contradicts-repo-310-requirement.md)
 - [E08:S03:T05 — Python minimum version policy alignment](T05-python-minimum-version-fr104-br077.md)

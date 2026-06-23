@@ -9,7 +9,7 @@ housekeeping_policy: keep
 # E05:S08:T06 — Planning: ADR-026 + git-maintainer authoring bootstrap (FR-121)
 
 **Host Task:** [`T06-adr-026-git-maintainer-authoring-bootstrap-fr121.md`](../kanban/epics/epic-05/story-08-knowledge-base/T06-adr-026-git-maintainer-authoring-bootstrap-fr121.md) **(E05:S08:T06)**  
-**Planning for:** [FR-121](../kanban/fr-br/FR-121-git-internal-maintainer-kb-oss-documentation-surfaces.md) (F2–F4 partial, F7; NF1, NF3)  
+**Planning for:** [FR-121](../kanban/fbu/FR-121-git-internal-maintainer-kb-oss-documentation-surfaces.md) (F2–F4 partial, F7; NF1, NF3)  
 **Status:** Draft — ready for IDW
 
 > **IPW (Implementation Planning Workflow):** Consolidated IPP per FR-042 / FR-094. Wave 2 follows [IPP-E05S08T05](IPP-E05S08T05-reverse-notion-migration-git-internal-maintainer-kb-fr121.md) (corpus restored @ v0.5.8.5+2).
@@ -163,7 +163,7 @@ ADR-026 **supersedes** ADR-024 §§1–3 maintainer/Notion SoT and **P-NOTION-FI
 - `docs/project-agent-index.md`
 - `rw-config.yaml`
 - `docs/architecture/standards-and-adrs/ADR-024-documentation-surfaces-three-surface-model-fr114.md`
-- `docs/kanban/fr-br/FR-114-split-documentation-surfaces-docusaurus-public-notion-maintainer-kb.md`
+- `docs/kanban/fbu/FR-114-split-documentation-surfaces-docusaurus-public-notion-maintainer-kb.md`
 - `docs/knowledge/README.md`
 - Task T06 doc (IPP links, status)
 - Story checklist row (RW Step 7)
@@ -225,7 +225,7 @@ Notion URLs (`notion_hub_url`, `notion_kb_url`) remain as **optional archive** p
 | Doc ID | Path | Scope of change | Tied to (RF/T/step) |
 | ------ | ---- | --------------- | ------------------- |
 | D-U1 | `docs/architecture/standards-and-adrs/ADR-024-*.md` | Partial supersession banner; historical Notion sections annotated | RF6; step 3 |
-| D-U2 | `docs/kanban/fr-br/FR-114-*.md` | Supersession banner (maintainer SoT) | RF7; step 4 |
+| D-U2 | `docs/kanban/fbu/FR-114-*.md` | Supersession banner (maintainer SoT) | RF7; step 4 |
 | D-U3 | `AGENTS.md` | Track, binding rule, anti-patterns | RF2–RF4; step 5 |
 | D-U4 | `docs/project-agent-manifest.json` | protocol, routing, canon, surfaces | RF2, RF8, RF9; step 6 |
 | D-U5 | `docs/project-agent-manifest.schema.json` | Optional `maintainerKbSot` on documentationSurfaces | RF5; step 7 |
@@ -289,10 +289,10 @@ No `packages/frameworks/**` → **no greenfield sync**.
 
 ## References
 
-- [FR-121](../kanban/fr-br/FR-121-git-internal-maintainer-kb-oss-documentation-surfaces.md)
+- [FR-121](../kanban/fbu/FR-121-git-internal-maintainer-kb-oss-documentation-surfaces.md)
 - [T06 task doc](../kanban/epics/epic-05/story-08-knowledge-base/T06-adr-026-git-maintainer-authoring-bootstrap-fr121.md)
 - [IPP-E05S08T05](IPP-E05S08T05-reverse-notion-migration-git-internal-maintainer-kb-fr121.md) (wave 1 corpus)
 - [IPP-E05S08T04](IPP-E05S08T04-agent-notion-first-authoring-and-bootstrap-routing-fr114.md) (inverse — Notion-first)
 - [ADR-024](../architecture/standards-and-adrs/ADR-024-documentation-surfaces-three-surface-model-fr114.md)
 - [ADR-012](../architecture/standards-and-adrs/ADR-012-agent-bootstrap-and-task-routing.md)
-- [FR-103](../kanban/fr-br/FR-103-agent-bootstrap-and-task-routing.md)
+- [FR-103](../kanban/fbu/FR-103-agent-bootstrap-and-task-routing.md)

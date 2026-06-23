@@ -17,14 +17,14 @@ housekeeping_policy: keep
 **Code:** E06S01T38  
 **Version Anchor:** v0.6.1.38+2
 
-**Bug Report:** [BR-072 – UKW completed tasks not removed from kboard](../../../fr-br/BR-072-ukw-completed-tasks-not-removed-from-kboard.md)  
+**Bug Report:** [BR-072 – UKW completed tasks not removed from kboard](../../../fbu/BR-072-ukw-completed-tasks-not-removed-from-kboard.md)  
 **Publication Status:** NOT_APPLICABLE (single consolidated IPP — see [`IPP-E6S1T38-ukw-completed-task-removal-defect.md`](../../../../implementation-cycles/IPP-E6S01T38-ukw-completed-task-removal-defect.md))
 
 ---
 
 ## Input
 
-- [BR-072](../../../fr-br/BR-072-ukw-completed-tasks-not-removed-from-kboard.md) — bug report with observed behaviour, reproduction steps, and acceptance criteria
+- [BR-072](../../../fbu/BR-072-ukw-completed-tasks-not-removed-from-kboard.md) — bug report with observed behaviour, reproduction steps, and acceptance criteria
 - [IPP-E6S1T38](../../../../implementation-cycles/IPP-E6S01T38-ukw-completed-task-removal-defect.md) — consolidated planning artifact (specification, test design, implementation plan)
 - UKW definition files: `cursorrules-ukw-trigger-section.md`, `update-kanban-workflow.yaml`, `agents/ukw/AGENTS.md`
 - Known test fixtures on `kboard.md`: `E02:S16:T01` (COMPLETE × 2 sections), `E02:S15:T07` (COMPLETE × 1 section)
@@ -71,7 +71,7 @@ The UKW cursorrules definition does include "Remove completed tasks from 'In Pro
 
 ## References
 
-- [BR-072](../../../fr-br/BR-072-ukw-completed-tasks-not-removed-from-kboard.md)
+- [BR-072](../../../fbu/BR-072-ukw-completed-tasks-not-removed-from-kboard.md)
 - [Story 001 – BR Repo](../story-01-br-repo.md)
 - [IPP-E6S1T38 – UKW completed task removal defect](../../../../implementation-cycles/IPP-E6S01T38-ukw-completed-task-removal-defect.md)
 - [UKW cursorrules trigger definition](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/cursorrules-ukw-trigger-section.md)

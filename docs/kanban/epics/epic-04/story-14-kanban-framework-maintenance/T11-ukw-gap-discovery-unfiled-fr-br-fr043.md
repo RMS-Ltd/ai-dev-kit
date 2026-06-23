@@ -17,7 +17,7 @@ housekeeping_policy: keep
 **Version Anchor:** v0.2.16.14+2  
 **Code:** E04S14T11
 
-**Upstream:** [FR-043 — UKW gap discovery](../../../fr-br/FR-043-ukw-gap-discovery-todo-tasks-and-unfiled-fr-br.md)  
+**Upstream:** [FR-043 — UKW gap discovery](../../../fbu/FR-043-ukw-gap-discovery-todo-tasks-and-unfiled-fr-br.md)  
 **Historical registry:** [E05:S01:T43](../../epic-05/story-01-fr-repo/T43-ukw-gap-discovery-todo-tasks-and-unfiled-fr-br.md)  
 **Coordinates:** [E02:S16:T02 — UKW/kanban perpetual](../../../epic-02/story-16-perpetual-ongoing-workflow-operations/T02-ad-hoc-kanban-synchronization-and-hygiene-perpetual.md)
 
@@ -27,7 +27,7 @@ Publication Status: NOT_APPLICABLE
 
 ## Input
 
-- [FR-043](../../../fr-br/FR-043-ukw-gap-discovery-todo-tasks-and-unfiled-fr-br.md); [E02:S16:T04](T04-ad-hoc-kanban-synchronization-and-hygiene-perpetual.md).
+- [FR-043](../../../fbu/FR-043-ukw-gap-discovery-todo-tasks-and-unfiled-fr-br.md); [E02:S16:T04](T04-ad-hoc-kanban-synchronization-and-hygiene-perpetual.md).
 
 ---
 
@@ -43,4 +43,4 @@ Implement and document **UKW Step 2.5** gap discovery: surface TODO/IN PROGRESS 
 
 ## References
 
-- [FR-043](../../../fr-br/FR-043-ukw-gap-discovery-todo-tasks-and-unfiled-fr-br.md)
+- [FR-043](../../../fbu/FR-043-ukw-gap-discovery-todo-tasks-and-unfiled-fr-br.md)

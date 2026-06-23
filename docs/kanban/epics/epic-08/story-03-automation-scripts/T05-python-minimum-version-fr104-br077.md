@@ -17,8 +17,8 @@ housekeeping_policy: keep
 **Version Anchor:** v0.8.3.5+2  
 **Code:** E08S03T05
 
-**Upstream:** [FR-104 — Python minimum version policy alignment](../../../fr-br/FR-104-python-minimum-version-policy-alignment.md)  
-**Upstream:** [BR-077 — Documented Python 3.8+ contradicts repo 3.10+ requirement](../../../fr-br/BR-077-documented-python-38-contradicts-repo-310-requirement.md)  
+**Upstream:** [FR-104 — Python minimum version policy alignment](../../../fbu/FR-104-python-minimum-version-policy-alignment.md)  
+**Upstream:** [BR-077 — Documented Python 3.8+ contradicts repo 3.10+ requirement](../../../fbu/BR-077-documented-python-38-contradicts-repo-310-requirement.md)  
 **Related audit:** [E07:S06:T08](../../epic-07/story-06-post-windsurf-project-review/T08-dependency-and-tooling-audit.md)
 
 Publication Status: NOT_APPLICABLE
@@ -39,7 +39,7 @@ Align declared Python minimum version (`setup.py`, README, install guides) with 
 
 ## Input
 
-- [FR-104](../../../fr-br/FR-104-python-minimum-version-policy-alignment.md), [BR-077](../../../fr-br/BR-077-documented-python-38-contradicts-repo-310-requirement.md)
+- [FR-104](../../../fbu/FR-104-python-minimum-version-policy-alignment.md), [BR-077](../../../fbu/BR-077-documented-python-38-contradicts-repo-310-requirement.md)
 - [E07:S06:T08](../../epic-07/story-06-post-windsurf-project-review/T08-dependency-and-tooling-audit.md) audit findings
 - [IPP-E8S3T5-python-minimum-version-fr104-br077.md](../../../../implementation-cycles/IPP-E08S03T05-python-minimum-version-fr104-br077.md) (IPW)
 
@@ -65,5 +65,5 @@ Single coherent **Python version policy** for ai-dev-kit: update `setup.py`, REA
 ## References
 
 - [IPP-E8S3T5-python-minimum-version-fr104-br077.md](../../../../implementation-cycles/IPP-E08S03T05-python-minimum-version-fr104-br077.md)
-- [FR-104](../../../fr-br/FR-104-python-minimum-version-policy-alignment.md)
-- [BR-077](../../../fr-br/BR-077-documented-python-38-contradicts-repo-310-requirement.md)
+- [FR-104](../../../fbu/FR-104-python-minimum-version-policy-alignment.md)
+- [BR-077](../../../fbu/BR-077-documented-python-38-contradicts-repo-310-requirement.md)

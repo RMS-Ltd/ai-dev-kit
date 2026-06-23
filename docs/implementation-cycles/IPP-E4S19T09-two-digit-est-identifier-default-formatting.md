@@ -9,7 +9,7 @@ housekeeping_policy: keep
 # E04:S19:T09 — Planning: Spec, Tests, Implementation Plan (IPP)
 
 **Host Task:** [`T09-two-digit-est-identifier-default-formatting-uxr014.md`](../kanban/epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T09-two-digit-est-identifier-default-formatting-uxr014.md) **(E04:S19:T09)**  
-**Planning for:** [UXR-014 — Two-digit default formatting for E/S/T identifiers](../kanban/fr-br/UXR-014-two-digit-est-identifier-default-formatting.md)  
+**Planning for:** [UXR-014 — Two-digit default formatting for E/S/T identifiers](../kanban/fbu/UXR-014-two-digit-est-identifier-default-formatting.md)  
 **Status:** Published
 
 > **IPW (Implementation Planning Workflow):** Produced by IPW for E4:S19:T09. Bidirectional wiring to the host task `Input` and `References` is confirmed.
@@ -206,6 +206,6 @@ RF1–RF4 define the formatter contract. RF5–RF6 require policy and workflow s
 ## References
 
 - [Host task E4:S19:T09](../kanban/epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T09-two-digit-est-identifier-default-formatting-uxr014.md)
-- [UXR-014](../kanban/fr-br/UXR-014-two-digit-est-identifier-default-formatting.md)
+- [UXR-014](../kanban/fbu/UXR-014-two-digit-est-identifier-default-formatting.md)
 - [task-naming-migration-guide.md](../architecture/standards-and-adrs/task-naming-migration-guide.md)
 - [kanban-governance-policy.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/kanban/policies/kanban-governance-policy.md)

@@ -19,7 +19,7 @@ housekeeping_policy: keep
 
 **Scope:** Resolve CodeQL **py/incomplete-url-substring-sanitization** alert #5 in `tests/test_portal_fr065_identity.py`.
 
-**Upstream:** [BR-096 — CodeQL incomplete URL substring sanitization](../../../fr-br/BR-096-codeql-incomplete-url-substring-sanitization.md)
+**Upstream:** [BR-096 — CodeQL incomplete URL substring sanitization](../../../fbu/BR-096-codeql-incomplete-url-substring-sanitization.md)
 
 Publication Status: NOT_APPLICABLE
 
@@ -27,7 +27,7 @@ Publication Status: NOT_APPLICABLE
 
 ## Input
 
-- [BR-096](../../../fr-br/BR-096-codeql-incomplete-url-substring-sanitization.md)
+- [BR-096](../../../fbu/BR-096-codeql-incomplete-url-substring-sanitization.md)
 - [CodeQL alert #5](https://github.com/RMS-Ltd/ai-dev-kit/security/code-scanning/5)
 - [`tests/test_portal_fr065_identity.py`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/tests/test_portal_fr065_identity.py)
 - [E08:S03:T09 — CodeQL mktemp fix (BR-095)](T09-codeql-insecure-temporary-file-mktemp-br095.md)
@@ -56,5 +56,5 @@ In `test_fr065_s3_url_not_example()`:
 
 ## References
 
-- [BR-096](../../../fr-br/BR-096-codeql-incomplete-url-substring-sanitization.md)
-- [BR-095](../../../fr-br/BR-095-codeql-insecure-temporary-file-mktemp.md)
+- [BR-096](../../../fbu/BR-096-codeql-incomplete-url-substring-sanitization.md)
+- [BR-095](../../../fbu/BR-095-codeql-insecure-temporary-file-mktemp.md)

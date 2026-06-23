@@ -10,7 +10,7 @@ housekeeping_policy: keep
 
 **Status:** Active  
 **Purpose:** Canonical **pre-implementation** workflow: produce a **single durable plan document** (spec + test design + implementation plan) bound to a **host Kanban task**, with **mandatory bidirectional wiring**.  
-**Product definition (ai-dev-kit):** `docs/kanban/fr-br/FR-042-implementation-planning-workflow-ipw.md`  
+**Product definition (ai-dev-kit):** `docs/kanban/fbu/FR-042-implementation-planning-workflow-ipw.md`  
 **Template:** `packages/frameworks/kanban/templates/PLAN_DOC_TEMPLATE.md`  
 **Relationship:** **IPW** subsumes the **planning** scope of the legacy **ICW** Cursor trigger; **ICW** is a **deprecated alias** — same steps, same artifacts (**FR-042** §7).
 
@@ -101,7 +101,7 @@ See `PLAN_DOC_TEMPLATE.md` Section 4 for the canonical placeholder rows. See [AD
 | -------------- | ------------------ |
 | Planning package (IPP) | `docs/implementation-cycles/IPP-E{epic}S{story}T{task}-{slug}.md` |
 | Kanban | `docs/kanban/` |
-| FR / BR / UXR | `docs/kanban/fr-br/` |
+| FR / BR / UXR | `docs/kanban/fbu/` |
 | Architecture / ADR / policy | `docs/architecture/standards-and-adrs/` |
 | Workflow KB | `packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/` |
 | User docs | `docs/documentation/user-docs/` |
@@ -143,7 +143,7 @@ When IPW or implementation execution mutates substantive task fields (status, AC
 
 **RW Step 7 (Scoped Kanban Reconciliation, Self-Sufficient) is the canonical post-run reconciliation surface for release-scope work.** Its correctness is self-contained: no follow-up UKW run is required for release-scope consistency. Out-of-scope corpus drift may be addressed by UKW (reactive, optional, not a process dependency).
 
-See [`FR-092` — Canonical RW/UKW kanban consistency program (meta)](../../../../../../docs/kanban/fr-br/FR-092-canonical-rw-ukw-kanban-consistency-program.md) (absorbing [`FR-084`](../../../../../../docs/kanban/fr-br/FR-084-ipp-post-run-governance-reconciliation-ownership.md), [`FR-091`](../../../../../../docs/kanban/fr-br/FR-091-rw-step-7-self-sufficient-scoped-kanban-reconciliation-without-ukw-dependency.md)).
+See [`FR-092` — Canonical RW/UKW kanban consistency program (meta)](../../../../../../docs/kanban/fbu/FR-092-canonical-rw-ukw-kanban-consistency-program.md) (absorbing [`FR-084`](../../../../../../docs/kanban/fbu/FR-084-ipp-post-run-governance-reconciliation-ownership.md), [`FR-091`](../../../../../../docs/kanban/fbu/FR-091-rw-step-7-self-sufficient-scoped-kanban-reconciliation-without-ukw-dependency.md)).
 
 ## Outputs
 
@@ -154,7 +154,7 @@ See [`FR-092` — Canonical RW/UKW kanban consistency program (meta)](../../../.
 ## Integration
 
 - **IDW (Implementation Delivery):** After IPW, run **`IDW E:S:T`** (or `/idw`) in implementation mode to execute the linked IPP — see [implementation-delivery-workflow-agent-execution.md](implementation-delivery-workflow-agent-execution.md). Invoking IDW satisfies FR-083 explicit authorization. Optional **`--rw`** chains local-complete RW after `IDW COMPLETE`.
-- **MWF (Meta-Workflow):** For the full plan → implement → release pipeline, use **`MWF E:S:T delivery`** (or resume after `IPW COMPLETE` with IPP linked) — see [meta-workflow-agent-execution.md](meta-workflow-agent-execution.md). MWF delegates to IPW and IDW `--rw`; it does **not** add an `IPW --rw` flag ([FR-124](../../../../../../docs/kanban/fr-br/FR-124-meta-workflow-orchestration-composite-workflow-chains.md); [FR-123](../../../../../../docs/kanban/fr-br/FR-123-ipw-full-delivery-chain-idf-rw.md) superseded).
+- **MWF (Meta-Workflow):** For the full plan → implement → release pipeline, use **`MWF E:S:T delivery`** (or resume after `IPW COMPLETE` with IPP linked) — see [meta-workflow-agent-execution.md](meta-workflow-agent-execution.md). MWF delegates to IPW and IDW `--rw`; it does **not** add an `IPW --rw` flag ([FR-124](../../../../../../docs/kanban/fbu/FR-124-meta-workflow-orchestration-composite-workflow-chains.md); [FR-123](../../../../../../docs/kanban/fbu/FR-123-ipw-full-delivery-chain-idf-rw.md) superseded).
 - **Implementation Cycle (TDD):** IDW operationalizes [implementation-cycle-sop.md](implementation-cycle-sop.md) Steps 3–4 against the IPP (failing tests, then implementation).
 - **RW:** Run **RW** after shippable work (standalone or via `IDW … --rw`). RW Step 7 owns release-scope four-surface reconciliation (FR-092 / FR-091, absorbing FR-084's post-run reconciliation contract).
 

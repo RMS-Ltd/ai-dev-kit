@@ -19,7 +19,7 @@ housekeeping_policy: keep
 
 **Scope:** Triage and resolve GitHub Code Quality **AI-powered suggestions** on recently changed files. GH UI groups by **file path** (no `#` numbers) — use **AID** tokens below in [ai-findings](https://github.com/RMS-Ltd/ai-dev-kit/security/quality/ai-findings).
 
-**Upstream:** [BR-101 — Code Quality AI suggestions backlog](../../../fr-br/BR-101-code-quality-ai-suggestions-backlog.md)
+**Upstream:** [BR-101 — Code Quality AI suggestions backlog](../../../fbu/BR-101-code-quality-ai-suggestions-backlog.md)
 
 Publication Status: NOT_APPLICABLE
 
@@ -28,7 +28,7 @@ Publication Status: NOT_APPLICABLE
 ## Input
 
 - [IPP-E08S03T14](../../../../implementation-cycles/IPP-E08S03T14-code-quality-ai-suggestions-backlog-br101.md)
-- [BR-101](../../../fr-br/BR-101-code-quality-ai-suggestions-backlog.md)
+- [BR-101](../../../fbu/BR-101-code-quality-ai-suggestions-backlog.md)
 - [AI findings panel](https://github.com/RMS-Ltd/ai-dev-kit/security/quality/ai-findings) — canonical UI (not exposed via `code-scanning/alerts` API)
 - [E08:S03:T12](T12-code-quality-maintainability-backlog-br099.md) · [E08:S03:T13](T13-code-quality-reliability-backlog-br100.md) (dedupe overlaps)
 - [E08:S03:T16 — GitHub Security & Code Quality health (Perpetual)](T16-github-security-code-quality-health-perpetual-fr112.md) — post-backlog handoff (FR-112)
@@ -86,7 +86,7 @@ Legacy **R** IDs map wave-1 rows to **AID** file groups. Use **AID** for GH UI n
 | R13 | AI-PORTAL-BR068 | same | Rename `_iter_publish_scope_markdown` | **apply** | → `_get_publish_scope_markdown_files` |
 | R14 | AI-PORTAL-BR068 | same | Assertion message include violation count | **apply** | clearer failure output |
 
-**Follow-on (tests green):** `contamination_detector.py` — case-insensitive canonical epic match + `fr-br/` root path (both package trees); exposed by Epic-casing test fix (R01–R02).
+**Follow-on (tests green):** `contamination_detector.py` — case-insensitive canonical epic match + `fbu/` root path (both package trees); exposed by Epic-casing test fix (R01–R02).
 
 **Dedupe:** No overlap with BR-099/100 maintainability/reliability waves on wave-1 rows.
 
@@ -214,6 +214,6 @@ Four findings on `tests/workflow_mgt/test_verify_vendor_tree.py` (post wave-1; l
 ## References
 
 - [IPP-E08S03T14](../../../../implementation-cycles/IPP-E08S03T14-code-quality-ai-suggestions-backlog-br101.md) — revised 2026-06-05 (wave-2b/c plan; FBU +0–+4; GH no-dismiss; F-SYNC dual branch; lag-accepted closure policy)
-- [BR-101](../../../fr-br/BR-101-code-quality-ai-suggestions-backlog.md)
-- [BR-099](../../../fr-br/BR-099-code-quality-maintainability-backlog.md)
-- [BR-100](../../../fr-br/BR-100-code-quality-reliability-backlog.md)
+- [BR-101](../../../fbu/BR-101-code-quality-ai-suggestions-backlog.md)
+- [BR-099](../../../fbu/BR-099-code-quality-maintainability-backlog.md)
+- [BR-100](../../../fbu/BR-100-code-quality-reliability-backlog.md)

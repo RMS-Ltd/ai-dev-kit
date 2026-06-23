@@ -15,9 +15,9 @@ housekeeping_policy: keep
 **Created:** 2026-04-09  
 **Code:** E06S07T110
 
-**Upstream:** [FR-076 – UKW scope expansion to fbuboard with concurrency and temporal-drift controls](../../../fr-br/FR-076-ukw-fbuboard-scope-and-drift-concurrency-controls.md)
+**Upstream:** [FR-076 – UKW scope expansion to fbuboard with concurrency and temporal-drift controls](../../../fbu/FR-076-ukw-fbuboard-scope-and-drift-concurrency-controls.md)
 
-**Coordinates:** [E02:S16:T03](../../epic-02/story-16-perpetual-ongoing-workflow-operations/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md) (UKW perpetual), [FR-050](../../../fr-br/FR-050-ukw-extension-for-fr-br-uxr-temporal-tracking-and-synchronization.md), [E06:S07:T108](T108-ukw-extension-for-fr-br-uxr-temporal-tracking-and-synchronization.md)
+**Coordinates:** [E02:S16:T03](../../epic-02/story-16-perpetual-ongoing-workflow-operations/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md) (UKW perpetual), [FR-050](../../../fbu/FR-050-ukw-extension-for-fr-br-uxr-temporal-tracking-and-synchronization.md), [E06:S07:T108](T108-ukw-extension-for-fr-br-uxr-temporal-tracking-and-synchronization.md)
 
 ---
 
@@ -78,6 +78,6 @@ Forensic marker: RW `v0.6.7.110+1` — UKW fbuboard parity + drift/concurrency c
 
 ## References
 
-- [FR-076](../../../fr-br/FR-076-ukw-fbuboard-scope-and-drift-concurrency-controls.md)
+- [FR-076](../../../fbu/FR-076-ukw-fbuboard-scope-and-drift-concurrency-controls.md)
 - [kboard.md](../../../kboard.md)
 - [T101 UKW perpetual task](../../epic-02/story-16-perpetual-ongoing-workflow-operations/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md)

@@ -16,7 +16,7 @@ housekeeping_policy: keep
 **Last updated:** 2026-03-30 (v0.5.9.6+1 — FR-070 GitHub Pages deploy workflow + docs)  
 **Code:** E05S09T06
 
-**Feature Request:** [FR-070 – Deployment and hosting](../../../fr-br/FR-070-docusaurus-deployment-and-hosting.md)
+**Feature Request:** [FR-070 – Deployment and hosting](../../../fbu/FR-070-docusaurus-deployment-and-hosting.md)
 
 ---
 
@@ -28,7 +28,7 @@ Implement **FR-070**: GitHub Pages hosting aligned with `url` / `baseUrl`, autom
 
 ## Input
 
-- [FR-070](../../../fr-br/FR-070-docusaurus-deployment-and-hosting.md)
+- [FR-070](../../../fbu/FR-070-docusaurus-deployment-and-hosting.md)
 - **E05:S09:T03**–**T05** outcomes
 
 ---

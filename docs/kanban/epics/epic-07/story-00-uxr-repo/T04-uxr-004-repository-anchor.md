@@ -8,14 +8,14 @@ housekeeping_policy: keep
 
 # Task E07:S00:T04 – UXR-004 Repository Anchor
 
-> **HISTORICAL REGISTRY ANCHOR** — Do not use for RW or new intake. **Primary implementing task:** [E07:S05:T04](../story-05-migration-uxr-research.md). Detasked per [BR-076](../../../fr-br/BR-076-e7-s00-must-not-host-concrete-tasks.md).
+> **HISTORICAL REGISTRY ANCHOR** — Do not use for RW or new intake. **Primary implementing task:** [E07:S05:T04](../story-05-migration-uxr-research.md). Detasked per [BR-076](../../../fbu/BR-076-e7-s00-must-not-host-concrete-tasks.md).
 
 **Task ID:** E07:S00:T04  
 **Status:** HISTORICAL (superseded)  
 **Priority:** N/A  
 **Version Anchor:** v0.7.0.4+0 (historical)  
 
-**UXR:** [UXR-004](../../../fr-br/UXR-004-kanban-package-installation-uat.md)  
+**UXR:** [UXR-004](../../../fbu/UXR-004-kanban-package-installation-uat.md)  
 **Primary implementing task:** [E07:S05:T04](../story-05-migration-uxr-research.md)
 
 ---
@@ -28,7 +28,7 @@ Canonical **repository** task for **UXR-004** (Kanban package installation UAT) 
 
 ## Input
 
-- [UXR-004](../../../fr-br/UXR-004-kanban-package-installation-uat.md)  
+- [UXR-004](../../../fbu/UXR-004-kanban-package-installation-uat.md)  
 - [E07:S05:T04](../story-05-migration-uxr-research.md) (synthesis complete)
 
 ---

@@ -9,7 +9,7 @@ housekeeping_policy: keep
 # E21:S05:T02 — Planning: French (fr) translation files (FR-006)
 
 **Host Task:** [`T02-french-fr-translation-files.md`](../kanban/epics/epic-21/story-05-european-languages-localization/T02-french-fr-translation-files.md) **(E21:S05:T02)**  
-**Planning for:** [FR-006 Phase 3+](../kanban/fr-br/FR-006-localization-language-selection-uk-us-english.md) · [E21:S05](../kanban/epics/epic-21/story-05-european-languages-localization.md)  
+**Planning for:** [FR-006 Phase 3+](../kanban/fbu/FR-006-localization-language-selection-uk-us-english.md) · [E21:S05](../kanban/epics/epic-21/story-05-european-languages-localization.md)  
 **Status:** Complete — shipped @ v0.21.5.2+1
 
 > **IPW:** Consolidated IPP per FR-042 / FR-094. Scaffold trees from E21:S03:T02. Cultural guidance: [locale-cultural-requirements.md](../governance/standards/locale-cultural-requirements.md) § French (fr). Precedent: [IPP-E21S05T01](IPP-E21S05T01-spanish-es-translation-files.md).
@@ -95,7 +95,7 @@ Same surfaces as [IPP-E21S05T01](IPP-E21S05T01-spanish-es-translation-files.md) 
 
 ## References
 
-- [FR-006](../kanban/fr-br/FR-006-localization-language-selection-uk-us-english.md)
+- [FR-006](../kanban/fbu/FR-006-localization-language-selection-uk-us-english.md)
 - [T02 task doc](../kanban/epics/epic-21/story-05-european-languages-localization/T02-french-fr-translation-files.md)
 - [locale-cultural-requirements.md](../governance/standards/locale-cultural-requirements.md) § French (fr)
 - [IPP-E21S05T01](IPP-E21S05T01-spanish-es-translation-files.md)

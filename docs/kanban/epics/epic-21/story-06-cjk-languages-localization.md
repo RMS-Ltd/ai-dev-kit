@@ -67,7 +67,7 @@ Populate `locales/zh-CN/`, `locales/zh-TW/`, and `locales/ja/` with framework us
 
 ## References
 
-- `docs/kanban/fr-br/FR-006-localization-language-selection-uk-us-english.md`
+- `docs/kanban/fbu/FR-006-localization-language-selection-uk-us-english.md`
 - `docs/kanban/epics/epic-21/story-03-translation-and-localization.md`
 
 ---

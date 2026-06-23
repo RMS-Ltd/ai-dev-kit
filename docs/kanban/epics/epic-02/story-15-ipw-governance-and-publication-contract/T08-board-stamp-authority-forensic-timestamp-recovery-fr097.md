@@ -17,16 +17,16 @@ housekeeping_policy: keep
 **Version Anchor:** v0.2.15.8+3  
 **Code:** E02S15T08
 
-**Upstream:** [FR-097 — Board stamp authority, blocking validation, and forensic timestamp recovery](../../../fr-br/FR-097-board-stamp-authority-and-forensic-timestamp-recovery.md)
+**Upstream:** [FR-097 — Board stamp authority, blocking validation, and forensic timestamp recovery](../../../fbu/FR-097-board-stamp-authority-and-forensic-timestamp-recovery.md)
 
 **Planning artifact (IPP):** [IPP-E2S15T8 — Board stamp authority and forensic timestamp recovery](../../../../implementation-cycles/IPP-E2S15T08-board-stamp-authority-forensic-timestamp-recovery.md)
 
 **Reopens closure for:**
 
-- [BR-069](../../../fr-br/BR-069-kboard-fbuboard-earliest-last-modified-timestamps-overwritten.md) — [E02:S15:T04](T04-investigate-earliest-last-modified-timestamp-overwrite-regression-br069.md) (historical delivery retained; forensic truth owned here)
-- [UXR-009](../../../fr-br/UXR-009-last-modified-stamp-forensic-integrity-and-drift-protection.md) — [E06:S07:T115](T08-board-stamp-authority-forensic-timestamp-recovery-fr097.md) (Wave 6 script gate retained; agentic + backfill owned here)
+- [BR-069](../../../fbu/BR-069-kboard-fbuboard-earliest-last-modified-timestamps-overwritten.md) — [E02:S15:T04](T04-investigate-earliest-last-modified-timestamp-overwrite-regression-br069.md) (historical delivery retained; forensic truth owned here)
+- [UXR-009](../../../fbu/UXR-009-last-modified-stamp-forensic-integrity-and-drift-protection.md) — [E06:S07:T115](T08-board-stamp-authority-forensic-timestamp-recovery-fr097.md) (Wave 6 script gate retained; agentic + backfill owned here)
 
-**Predecessor:** [E02:S15:T07](T07-canonical-rw-ukw-kanban-consistency-program-fr092.md) / [FR-092](../../../fr-br/FR-092-canonical-rw-ukw-kanban-consistency-program.md)
+**Predecessor:** [E02:S15:T07](T07-canonical-rw-ukw-kanban-consistency-program-fr092.md) / [FR-092](../../../fbu/FR-092-canonical-rw-ukw-kanban-consistency-program.md)
 
 ---
 

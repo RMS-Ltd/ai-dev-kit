@@ -304,7 +304,7 @@ Story 5 successfully delivered the Post-Implementation Review workflow with comp
 - [PIR Workflow Agent Execution Guide](pir-workflow-agent-execution.md) - Step 12 documentation
 - [PIR Workflow Planning](../../Analysis/PIR-workflow-planning.md) - Integration requirements
 - [Kanban Governance Policy](docs/governance/kanban/kanban-governance-policy.md) - Kanban structure
-- [Bidirectional Wiring Principle](../../../kanban/fr-br/BIDIRECTIONAL_WIRING_PRINCIPLE.md) - Linking patterns
+- [Bidirectional Wiring Principle](../../../kanban/fbu/BIDIRECTIONAL_WIRING_PRINCIPLE.md) - Linking patterns
 
 ---
 

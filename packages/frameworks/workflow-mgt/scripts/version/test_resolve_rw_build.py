@@ -212,6 +212,31 @@ def test_dpz_cli_alias_blocked_when_tag_exists(monkeypatch):
             os.chdir(orig)
 
 
+def test_art_cross_task_dpz_doc_init_build_zero(monkeypatch):
+    """BR-110: --art + --dpz on new E:S:T while HEAD is unrelated task with BUILD>=1."""
+    with tempfile.TemporaryDirectory() as tmpdir:
+        tmp = Path(tmpdir)
+        version_rel = "src/proj/version.py"
+        orig = os.getcwd()
+        try:
+            os.chdir(tmp)
+            _git_init_with_version(tmp, version_rel, epic=2, story=16, task=6, build=19)
+            vf = tmp / version_rel
+            monkeypatch.setattr(rrb, "git_ref_exists", lambda _ref: False)
+            ok, payload, errors = rrb.resolve_rw_build(
+                vf,
+                "E06:S09:T38",
+                art=True,
+                doc_policy_zero=True,
+            )
+            assert ok, errors
+            assert payload["next_build"] == 0
+            assert payload["internal_version"] == "0.6.9.38+0"
+            assert payload["reason"] == "art_doc_policy_zero"
+        finally:
+            os.chdir(orig)
+
+
 def test_cli_json_output(monkeypatch, tmp_path):
     vf = tmp_path / "src" / "fynd_deals" / "version.py"
     _write_version(vf, epic=2, story=1, task=24, build=0)

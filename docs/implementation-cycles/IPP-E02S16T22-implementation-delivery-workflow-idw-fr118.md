@@ -9,7 +9,7 @@ housekeeping_policy: keep
 # E02:S16:T22 — Planning: IDW workflow (FR-118)
 
 **Host Task:** [`T22-implementation-delivery-workflow-idw-fr118.md`](../kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T22-implementation-delivery-workflow-idw-fr118.md) **(E02:S16:T22)**  
-**Planning for:** [FR-119 — Implementation Delivery Workflow (IDW)](../kanban/fr-br/FR-119-implementation-delivery-workflow-idw.md)  
+**Planning for:** [FR-119 — Implementation Delivery Workflow (IDW)](../kanban/fbu/FR-119-implementation-delivery-workflow-idw.md)  
 **Status:** Published
 
 ---
@@ -107,5 +107,5 @@ All paths per §5; PUBLISHED under repo canonical locations.
 
 ## References
 
-- [FR-118](../kanban/fr-br/FR-119-implementation-delivery-workflow-idw.md)
-- [FR-083](../kanban/fr-br/FR-083-global-ipw-gated-implementation-contract.md)
+- [FR-118](../kanban/fbu/FR-119-implementation-delivery-workflow-idw.md)
+- [FR-083](../kanban/fbu/FR-083-global-ipw-gated-implementation-contract.md)

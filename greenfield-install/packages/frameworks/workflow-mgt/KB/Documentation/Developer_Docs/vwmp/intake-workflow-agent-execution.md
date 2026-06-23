@@ -161,7 +161,7 @@ For each step, the agent follows this pattern:
 from pathlib import Path
 
 # Load FR/BR/UXR document
-fr_br_path = Path("docs/kanban/fr-br/FR-019.md")
+fr_br_path = Path("docs/kanban/fbu/FR-019.md")
 content = fr_br_path.read_text(encoding='utf-8')
 
 # Parse document structure
@@ -669,13 +669,13 @@ report = generate_intake_report(
 **Single FR/BR/UXR:**
 ```bash
 # Process a single FR
-python intake_workflow.py --fr docs/kanban/fr-br/FR-019.md
+python intake_workflow.py --fr docs/kanban/fbu/FR-019.md
 
 # Process a single BR
-python intake_workflow.py --br docs/kanban/fr-br/BR-001.md
+python intake_workflow.py --br docs/kanban/fbu/BR-001.md
 
 # Process a single UXR
-python intake_workflow.py --uxr docs/kanban/fr-br/UXR-001.md
+python intake_workflow.py --uxr docs/kanban/fbu/UXR-001.md
 ```
 
 **Batch Processing:**
@@ -694,7 +694,7 @@ python intake_workflow.py --fr FR-019.md FR-020.md FR-021.md
 **Example Trigger:**
 ```bash
 # Commit message: "Add FR-019: Intake Workflow Automation"
-# Changed files: ["docs/kanban/fr-br/FR-019.md"]
+# Changed files: ["docs/kanban/fbu/FR-019.md"]
 # → RW detects trigger → Intake workflow executes automatically
 ```
 

@@ -8,7 +8,7 @@ housekeeping_policy: keep
 
 # E1:S04 — Planning: FR-099 book/private/public repository migration (ADR-006)
 
-**Host program:** [FR-099 — Spin off book epic to a private repository](../kanban/fr-br/FR-099-spin-off-book-epic-to-private-repository.md)  
+**Host program:** [FR-099 — Spin off book epic to a private repository](../kanban/fbu/FR-099-spin-off-book-epic-to-private-repository.md)  
 **Governing ADR:** [ADR-006 — Book project private repository spin-off](../architecture/standards-and-adrs/ADR-006-book-project-private-repository-spin-off.md)  
 **Story:** [Story 004 — Repository branding and renaming](../kanban/epics/epic-01/story-04-repository-branding-and-renaming.md)  
 **Status:** **Complete** — Phases 0–4 implemented; **FR-099** IMPLEMENTED (**v0.1.4.7+2**)
@@ -151,6 +151,6 @@ Repository SoT under `docs/` and root install docs; no manuscript in public gene
 
 ## References
 
-- [FR-099](../kanban/fr-br/FR-099-spin-off-book-epic-to-private-repository.md)
+- [FR-099](../kanban/fbu/FR-099-spin-off-book-epic-to-private-repository.md)
 - [ADR-006](../architecture/standards-and-adrs/ADR-006-book-project-private-repository-spin-off.md)
 - [IPP-E6S9T6 — ECC / Wave E](IPP-E6S09T06-ecc-harness-phases-2-5-fr098.md)

@@ -16,7 +16,7 @@ housekeeping_policy: keep
 **Last updated:** 2026-04-27 (superseded by FR-092 meta-task on day of intake; ownership transferred to E02:S15:T07 Wave 2)  
 **Code:** E02S15T06
 
-**Upstream (historical):** [FR-091 — RW Step 7 self-sufficient scoped kanban reconciliation without UKW dependency](../../../fr-br/FR-091-rw-step-7-self-sufficient-scoped-kanban-reconciliation-without-ukw-dependency.md)  
+**Upstream (historical):** [FR-091 — RW Step 7 self-sufficient scoped kanban reconciliation without UKW dependency](../../../fbu/FR-091-rw-step-7-self-sufficient-scoped-kanban-reconciliation-without-ukw-dependency.md)  
 **Current owner:** [E02:S15:T07 — Canonical RW/UKW kanban consistency program (FR-092 meta)](T07-canonical-rw-ukw-kanban-consistency-program-fr092.md)  
 **Current IPP:** [IPP-E2S15T7](../../../../implementation-cycles/IPP-E2S15T07-canonical-rw-ukw-kanban-consistency-program.md)
 
@@ -80,7 +80,7 @@ This task also documents the intent behind that contract: UKW exists because can
 
 ## References
 
-- [FR-091](../../../fr-br/FR-091-rw-step-7-self-sufficient-scoped-kanban-reconciliation-without-ukw-dependency.md)
-- [FR-038](../../../fr-br/FR-038-rw-step-7-scoped-kanban-sync-ukw-mode.md)
-- [FR-090](../../../fr-br/FR-090-ukw-canonical-row-transform-engine-and-board-specific-rendering-contracts.md)
-- [FR-084](../../../fr-br/FR-084-ipp-post-run-governance-reconciliation-ownership.md)
+- [FR-091](../../../fbu/FR-091-rw-step-7-self-sufficient-scoped-kanban-reconciliation-without-ukw-dependency.md)
+- [FR-038](../../../fbu/FR-038-rw-step-7-scoped-kanban-sync-ukw-mode.md)
+- [FR-090](../../../fbu/FR-090-ukw-canonical-row-transform-engine-and-board-specific-rendering-contracts.md)
+- [FR-084](../../../fbu/FR-084-ipp-post-run-governance-reconciliation-ownership.md)

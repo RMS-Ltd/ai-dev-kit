@@ -19,7 +19,7 @@ housekeeping_policy: keep
 **Deciders:** User (Ruari Mears)  
 **Implementing task:** [E08:S03:T17](../../kanban/epics/epic-08/story-03-automation-scripts/T17-local-code-quality-gate-cqg-fr113.md)  
 **Planning package:** [IPP-E08S03T17](../../implementation-cycles/IPP-E08S03T17-local-code-quality-gate-cqg-fr113.md)  
-**Related:** [FR-113](../../kanban/fr-br/FR-113-local-code-quality-gate-cqg.md), [FR-112](../../kanban/fr-br/FR-112-perpetual-github-ci-and-security-health-lanes.md)
+**Related:** [FR-113](../../kanban/fbu/FR-113-local-code-quality-gate-cqg.md), [FR-112](../../kanban/fbu/FR-112-perpetual-github-ci-and-security-health-lanes.md)
 
 ---
 

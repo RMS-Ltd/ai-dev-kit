@@ -20,7 +20,7 @@ housekeeping_policy: keep
 
 **Repository Pattern:** FR-049 = E05:S01:T49 (first build: v0.5.1.49+0, implementation: v0.5.1.49+1)
 
-**Associated FR:** [FR-049](../../../fr-br/FR-049-enhanced-kanban-completed-with-timestamps-and-recent-tasks.md)
+**Associated FR:** [FR-049](../../../fbu/FR-049-enhanced-kanban-completed-with-timestamps-and-recent-tasks.md)
 
 ---
 
@@ -152,7 +152,7 @@ Documentation Agent.update_kanban_completed({
 ## References
 
 - **FR Repo Story:** [`story-01-fr-repo.md`](../story-01-fr-repo.md)
-- **FR-049:** [`docs/kanban/fr-br/FR-049-enhanced-kanban-completed-with-timestamps-and-recent-tasks.md`](../../../fr-br/FR-049-enhanced-kanban-completed-with-timestamps-and-recent-tasks.md)
+- **FR-049:** [`docs/kanban/fbu/FR-049-enhanced-kanban-completed-with-timestamps-and-recent-tasks.md`](../../../fbu/FR-049-enhanced-kanban-completed-with-timestamps-and-recent-tasks.md)
 - **kanban-completed.md:** [`docs/kanban/kanban-completed.md`](../../../kanban-completed.md)
 - **AGENTS.md:** [`docs/kanban/AGENTS.md`](../../../AGENTS.md)
 

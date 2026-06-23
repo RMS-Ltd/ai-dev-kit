@@ -17,7 +17,7 @@ housekeeping_policy: keep
 **Version:** v0.9.1.3+1  
 **Code:** E09S01T03
 
-**Upstream:** [FR-032 — Release candidate readiness gap analysis](../../../fr-br/FR-032-release-candidate-readiness-gap-analysis.md)  
+**Upstream:** [FR-032 — Release candidate readiness gap analysis](../../../fbu/FR-032-release-candidate-readiness-gap-analysis.md)  
 **Historical registry:** [E05:S01:T32](../../epic-05/story-01-fr-repo/T32-release-candidate-readiness-gap-analysis.md)  
 **Story:** [story-01-rc-readiness-gap-analysis](../story-01-rc-readiness-gap-analysis.md) (T01–T07 programme)
 
@@ -39,7 +39,7 @@ Publication N/A Reason: Kanban and implementation-cycle artifacts are repo SoT p
 - [IPP-E9S1T3-gap-comparison-fr032.md](../../../../implementation-cycles/IPP-E09S01T03-gap-comparison-fr032.md)
 - [T01 — Current state inventory (FR-032.1)](T01-current-state-inventory.md)
 - [T02 — RC=1 criteria (FR-032.2)](T02-rc1-criteria-definition.md)
-- [FR-032](../../../fr-br/FR-032-release-candidate-readiness-gap-analysis.md)
+- [FR-032](../../../fbu/FR-032-release-candidate-readiness-gap-analysis.md)
 - [E07:S07:T01 workflow machinery review report](../../epic-07/story-07-code-reviews/T01-workflow-machinery-code-review-report.md)
 
 ---
@@ -64,6 +64,6 @@ Publication N/A Reason: Kanban and implementation-cycle artifacts are repo SoT p
 
 ## References
 
-- [FR-032](../../../fr-br/FR-032-release-candidate-readiness-gap-analysis.md)
+- [FR-032](../../../fbu/FR-032-release-candidate-readiness-gap-analysis.md)
 - [Gap comparison report](T03-gap-comparison-fr032-report.md)
 - [IPP](../../../../implementation-cycles/IPP-E09S01T03-gap-comparison-fr032.md)

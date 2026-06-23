@@ -73,7 +73,7 @@ Implement translation completeness tracking per locale.
 RW -k E21:S03:T06 --art --dpz
 ```
 
-**Target version anchor:** `v0.21.3.6+0` (doc-init BUILD +0 per [BR-067](../../../fr-br/BR-067-rw-first-doc-only-release-defaults-to-build-plus-one-not-plus-zero.md)).
+**Target version anchor:** `v0.21.3.6+0` (doc-init BUILD +0 per [BR-067](../../../fbu/BR-067-rw-first-doc-only-release-defaults-to-build-plus-one-not-plus-zero.md)).
 
 ---
 
@@ -94,7 +94,7 @@ Migrated from embedded Story section via `generate_task_doc.py` (FR-016 Wave 1 t
 ## References
 
 - [IPP-E21S03T06-translation-completeness-tracking.md](../../../../implementation-cycles/IPP-E21S03T06-translation-completeness-tracking.md) — specification, tests, implementation plan (IPW)
-- [FR-006](../../../fr-br/FR-006-localization-language-selection-uk-us-english.md) — Phase 3 completeness tracking requirement
+- [FR-006](../../../fbu/FR-006-localization-language-selection-uk-us-english.md) — Phase 3 completeness tracking requirement
 - [ADR-024](../../../../architecture/standards-and-adrs/ADR-024-i18n-framework-strategy.md) — T06 integration plan row
 - [translation-management-tools.md](../../../../documentation/user-docs/translation-management-tools.md) — maintainer tool suite (extended in T06)
 - [translation-workflow-and-review.md](../../../../governance/standards/translation-workflow-and-review.md) — completeness states policy

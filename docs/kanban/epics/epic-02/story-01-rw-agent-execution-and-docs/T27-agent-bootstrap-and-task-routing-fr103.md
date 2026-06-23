@@ -22,13 +22,13 @@ housekeeping_policy: keep
 
 Publication Status: NOT_APPLICABLE
 
-**Upstream:** [FR-103 — Agent bootstrap and task routing](../../../fr-br/FR-103-agent-bootstrap-and-task-routing.md)
+**Upstream:** [FR-103 — Agent bootstrap and task routing](../../../fbu/FR-103-agent-bootstrap-and-task-routing.md)
 
 ---
 
 ## Input
 
-- [FR-103](../../../fr-br/FR-103-agent-bootstrap-and-task-routing.md)
+- [FR-103](../../../fbu/FR-103-agent-bootstrap-and-task-routing.md)
 - [IPP-E2S16T17](../../../../implementation-cycles/IPP-E02S01T27-agent-bootstrap-and-task-routing-fr103.md) — IPW planning package
 - [ADR-012](../../../../architecture/standards-and-adrs/ADR-012-agent-bootstrap-and-task-routing.md)
 - [`docs/project-agent-manifest.json`](../../../../../project-agent-manifest.json) · [`docs/project-agent-index.md`](../../../../../project-agent-index.md)
@@ -80,11 +80,11 @@ Cold-started agents lack a deterministic, low-token bootstrap path. Full `.curso
 
 ## References
 
-- [FR-103](../../../fr-br/FR-103-agent-bootstrap-and-task-routing.md)
+- [FR-103](../../../fbu/FR-103-agent-bootstrap-and-task-routing.md)
 - [IPP-E2S16T17](../../../../implementation-cycles/IPP-E02S01T27-agent-bootstrap-and-task-routing-fr103.md)
 - [ADR-012](../../../../architecture/standards-and-adrs/ADR-012-agent-bootstrap-and-task-routing.md)
 - [project-agent-index.md](../../../../../project-agent-index.md)
 - [Story 016](../story-16-perpetual-ongoing-workflow-operations.md)
-- [FR-041](../../../fr-br/FR-041-windsurf-investigate-agents-skills-for-workflows.md)
-- [FR-022](../../../fr-br/FR-022-policy-docs-machine-readable-salience.md)
+- [FR-041](../../../fbu/FR-041-windsurf-investigate-agents-skills-for-workflows.md)
+- [FR-022](../../../fbu/FR-022-policy-docs-machine-readable-salience.md)
 - [UXR-015 / cheatsheet](../../../../guides/workflow-initiation-cheatsheet.md)

@@ -240,7 +240,7 @@ Implementation SHALL author **`### Gap N`** entries in the T05 task doc. Plannin
 - [E02:S13 T05 gap log](../kanban/epics/epic-02/story-13-workflow-management-package-implementation-review/T05-create-gap-log-and-risk-assessment.md)
 - [IPP-E10S01T01](./IPP-E10S01T01-expectations-baseline-doc-lifecycle.md) · [IPP-E10S01T02](./IPP-E10S01T02-component-inventory-map.md) · [IPP-E10S01T03](./IPP-E10S01T03-lifecycle-behavior-validation.md) · [IPP-E10S01T04](./IPP-E10S01T04-integration-dependency-alignment.md)
 - [T06 RC sign-off task](../kanban/epics/epic-10/story-01-document-lifecycle-package-implementation-review/T06-define-rc-sign-off-criteria-and-remediation-tasks.md)
-- [FR-042](../kanban/fr-br/FR-042-implementation-planning-workflow-ipw.md)
-- [FR-094](../kanban/fr-br/FR-094-ipw-slash-command-and-task-state-transition-mandate.md)
+- [FR-042](../kanban/fbu/FR-042-implementation-planning-workflow-ipw.md)
+- [FR-094](../kanban/fbu/FR-094-ipw-slash-command-and-task-state-transition-mandate.md)
 - [ipw-adr-necessity-checklist.md](../architecture/standards-and-adrs/ipw-adr-necessity-checklist.md)
 - Package root: `packages/frameworks/doc-lifecycle/`

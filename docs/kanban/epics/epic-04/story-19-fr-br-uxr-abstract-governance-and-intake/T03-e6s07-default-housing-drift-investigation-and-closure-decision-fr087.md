@@ -17,7 +17,7 @@ housekeeping_policy: keep
 **Last updated:** 2026-05-29 (Wave 4 landed: T109→E02:S16:T13, T18→E02:S01:T23, Story 007 In/Out of Scope; doc release **v0.4.19.3+0**)  
 **Code:** E04S19T03
 
-**Upstream:** [FR-087 - Investigate `E6:S07` default-housing drift, codification points, and closure decision](../../../fr-br/FR-087-e6s07-default-housing-root-cause-and-closure-decision.md)
+**Upstream:** [FR-087 - Investigate `E6:S07` default-housing drift, codification points, and closure decision](../../../fbu/FR-087-e6s07-default-housing-root-cause-and-closure-decision.md)
 
 Publication Status: NOT_APPLICABLE
 Publication N/A Reason: Single durable IPP per FR-042 §7 consolidated planning model; planning published as one IPP artifact rather than three separate specification/test-design/implementation-plan files.
@@ -28,7 +28,7 @@ Publication N/A Reason: Single durable IPP per FR-042 §7 consolidated planning 
 
 ## Input
 
-- [FR-087](../../../fr-br/FR-087-e6s07-default-housing-root-cause-and-closure-decision.md) requirements.
+- [FR-087](../../../fbu/FR-087-e6s07-default-housing-root-cause-and-closure-decision.md) requirements.
 - Current `E6:S07` charter and task inventory.
 - Governance/policy/rules/templates/validator/workflow sources affecting task placement.
 - Canonical IPP: [`IPP-E4S19T3-e6s07-default-housing-drift-investigation.md`](../../../../implementation-cycles/IPP-E4S19T03-e6s07-default-housing-drift-investigation.md)
@@ -79,9 +79,9 @@ Publication N/A Reason: Single durable IPP per FR-042 §7 consolidated planning 
 
 - [Canonical IPP: `IPP-E4S19T3-e6s07-default-housing-drift-investigation.md`](../../../../implementation-cycles/IPP-E4S19T03-e6s07-default-housing-drift-investigation.md)
 - [Investigation report: `E4S19T03-e6s07-default-housing-investigation-report.md`](../../../../implementation-cycles/E4S19T03-e6s07-default-housing-investigation-report.md)
-- [FR-087](../../../fr-br/FR-087-e6s07-default-housing-root-cause-and-closure-decision.md)
+- [FR-087](../../../fbu/FR-087-e6s07-default-housing-root-cause-and-closure-decision.md)
 - [Story 019](../story-19-fr-br-uxr-abstract-governance-and-intake.md)
 - [Story 007](../../epic-06/story-07-adk-implementation-analysis-and-package-management.md)
-- [BR-069](../../../fr-br/BR-069-kboard-fbuboard-earliest-last-modified-timestamps-overwritten.md)
+- [BR-069](../../../fbu/BR-069-kboard-fbuboard-earliest-last-modified-timestamps-overwritten.md)
 - [E02:S15:T04](../../epic-02/story-15-ipw-governance-and-publication-contract/T04-investigate-earliest-last-modified-timestamp-overwrite-regression-br069.md)
 - [IPP-E2S16T1 - Canonical perpetual ongoing tasks story (delegated perpetual-task placement scope)](../../../../implementation-cycles/IPP-E2S16T01-canonical-perpetual-ongoing-tasks-story.md)

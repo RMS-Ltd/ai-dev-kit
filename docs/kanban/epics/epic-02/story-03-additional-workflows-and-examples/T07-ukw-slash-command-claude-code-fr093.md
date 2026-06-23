@@ -17,7 +17,7 @@ housekeeping_policy: keep
 **Last updated:** 2026-05-13 ✅ COMPLETE (v0.2.16.8+1)  
 **Code:** E02S03T07
 
-**Upstream:** [FR-093 — `/ukw` slash command for Claude Code](../../../fr-br/FR-093-ukw-slash-command-claude-code.md)
+**Upstream:** [FR-093 — `/ukw` slash command for Claude Code](../../../fbu/FR-093-ukw-slash-command-claude-code.md)
 
 Publication Status: NOT_APPLICABLE  
 Publication N/A Reason: Tooling/config task — no specification/test-design/implementation-plan publication set required.
@@ -26,7 +26,7 @@ Publication N/A Reason: Tooling/config task — no specification/test-design/imp
 
 ## Input
 
-- [FR-093](../../../fr-br/FR-093-ukw-slash-command-claude-code.md) requirements.
+- [FR-093](../../../fbu/FR-093-ukw-slash-command-claude-code.md) requirements.
 - Existing `/rw` slash command at `.claude/commands/rw.md` as pattern reference.
 - UKW canonical step guide: `packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/update-kanban-workflow-agent-execution.md`.
 - UKW trigger spec: `.cursorrules` → `### 🔄 UPDATE KANBAN WORKFLOW (UKW) TRIGGER`.
@@ -66,7 +66,7 @@ UKW had no dedicated `/ukw` slash command in Claude Code. Invocation relied on p
 
 ## References
 
-- [FR-093](../../../fr-br/FR-093-ukw-slash-command-claude-code.md)
+- [FR-093](../../../fbu/FR-093-ukw-slash-command-claude-code.md)
 - [Story 016](../story-16-perpetual-ongoing-workflow-operations.md)
 - `.claude/commands/ukw.md`
 - `.claude/commands/rw.md`

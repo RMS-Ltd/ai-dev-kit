@@ -15,7 +15,7 @@ housekeeping_policy: keep
 **Completed:** 2026-01-03  
 **Version:** v0.6.7.14+1
 
-**Feature Request:** [FR-027](../../../fr-br/FR-027-add-cmw-to-workflow-management-package-documentation.md)  
+**Feature Request:** [FR-027](../../../fbu/FR-027-add-cmw-to-workflow-management-package-documentation.md)  
 **Code:** E06S07T14
 
 ---
@@ -49,7 +49,7 @@ Add Changelog Management Workflow (CMW) to the workflow management package docum
 
 ## Input
 
-- **Feature Request:** [`FR-027-add-cmw-to-workflow-management-package-documentation.md`](../../../fr-br/FR-027-add-cmw-to-workflow-management-package-documentation.md)
+- **Feature Request:** [`FR-027-add-cmw-to-workflow-management-package-documentation.md`](../../../fbu/FR-027-add-cmw-to-workflow-management-package-documentation.md)
   - Problem statement and proposed solution
   - Acceptance criteria
 

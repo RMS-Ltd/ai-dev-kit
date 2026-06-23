@@ -45,7 +45,7 @@ python scripts/install_release_workflow.py --mode c
 ```
 
 **What happens:**
-- **First prompt:** UK/US English variant → writes `ai-dev-kit-config.yaml` at project root ([FR-006 Phase 1](../../../../../../../docs/project-management/kanban/fr-br/FR-006-localization-language-selection-uk-us-english.md))
+- **First prompt:** UK/US English variant → writes `ai-dev-kit-config.yaml` at project root ([FR-006 Phase 1](../../../../../../../docs/project-management/kanban/fbu/FR-006-localization-language-selection-uk-us-english.md))
 - Installer prompts for project-specific paths
 - Generates `rw-config.yaml` with your answers
 - Updates `.cursorrules` with RW trigger section

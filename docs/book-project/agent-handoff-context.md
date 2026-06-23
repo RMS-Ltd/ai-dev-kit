@@ -233,7 +233,7 @@ git submodule add https://github.com/RMS-Ltd/ai-dev-kit.git .ai-dev-kit
 | `docs/book-proj/` | Manuscript drafts |
 | `docs/kanban/epics/epic-24/` | Book Kanban |
 | [ADR-006](../architecture/standards-and-adrs/ADR-006-book-project-private-repository-spin-off.md) | Same ADR (retained in history) |
-| [FR-099](../kanban/fr-br/FR-099-spin-off-book-epic-to-private-repository.md) | Migration FR (retained in history) |
+| [FR-099](../kanban/fbu/FR-099-spin-off-book-epic-to-private-repository.md) | Migration FR (retained in history) |
 
 ---
 

@@ -44,7 +44,7 @@ Normative detail lives in the **framework** policy (single SoT): [`kanban-govern
 
 **In short (this repo):**
 
-- **Atomic intake:** New `fr-br/*.md` **MUST** ship in the **same change set** as its **task document** and **bidirectional** links (`Implementing Task:` ↔ task body). No “file FR now, task later.”
+- **Atomic intake:** New `fbu/*.md` **MUST** ship in the **same change set** as its **task document** and **bidirectional** links (`Implementing Task:` ↔ task body). No “file FR now, task later.”
 - **≥1 task per report:** Every **FR**, **BR**, and **UXR** resolves to at least one Kanban task (shared task allowed if explicitly cited by every report).
 - **Story semantics over id symmetry:** The **primary** task SHOULD live under the story that matches **delivery**. Matching FR-047 to E5:S01:T47 is **optional**, not required.
 

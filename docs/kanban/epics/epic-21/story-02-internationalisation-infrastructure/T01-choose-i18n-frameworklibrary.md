@@ -35,7 +35,7 @@ Evaluate i18n framework/library options for ai-dev-kit Phase 2 (FR-006 internati
 
 ## Input
 
-- [FR-006 Phase 2](../../../fr-br/FR-006-localization-language-selection-uk-us-english.md) translation infrastructure requirements
+- [FR-006 Phase 2](../../../fbu/FR-006-localization-language-selection-uk-us-english.md) translation infrastructure requirements
 - Phase 1 incumbent: [`localisation_config.py`](../../../../../packages/frameworks/workflow-mgt/scripts/localisation_config.py), kanban/workflow `locales/` trees
 - [IPP-E21S02T01](../../../../implementation-cycles/IPP-E21S02T01-choose-i18n-framework.md)
 - [ADR-024](../../../../architecture/standards-and-adrs/ADR-024-i18n-framework-strategy.md)
@@ -108,7 +108,7 @@ Evaluate i18n framework/library options for ai-dev-kit Phase 2 (FR-006 internati
 - [IPP-E21S02T01](../../../../implementation-cycles/IPP-E21S02T01-choose-i18n-framework.md)
 - [ADR-024](../../../../architecture/standards-and-adrs/ADR-024-i18n-framework-strategy.md)
 - [i18n-framework-evaluation-matrix](../../../../architecture/standards-and-adrs/i18n-framework-evaluation-matrix.md)
-- [FR-006](../../../fr-br/FR-006-localization-language-selection-uk-us-english.md)
+- [FR-006](../../../fbu/FR-006-localization-language-selection-uk-us-english.md)
 - [story-02-internationalisation-infrastructure.md](../story-02-internationalisation-infrastructure.md)
 - [localisation_config.py](../../../../../packages/frameworks/workflow-mgt/scripts/localisation_config.py)
 

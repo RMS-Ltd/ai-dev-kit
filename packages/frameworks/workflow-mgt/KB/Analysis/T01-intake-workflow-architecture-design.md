@@ -180,7 +180,7 @@ preflight:
 
 **Config:**
 ```yaml
-fr_br_dir: docs/kanban/fr-br
+fr_br_dir: docs/kanban/fbu
 document_patterns:
   fr: FR-*.md
   br: BR-*.md
@@ -472,7 +472,7 @@ type: intake
 description: Automated intake workflow for FR/BR/UXR reports
 
 config:
-  fr_br_dir: docs/kanban/fr-br
+  fr_br_dir: docs/kanban/fbu
   kanban_dir: docs/kanban/epics
   version_file: src/fynd_deals/version.py
   semantic_matching:
@@ -711,7 +711,7 @@ The Intake Workflow uses a config-driven approach:
 
 **Example Config:**
 ```yaml
-fr_br_dir: docs/kanban/fr-br
+fr_br_dir: docs/kanban/fbu
 kanban_dir: docs/kanban/epics
 version_file: src/fynd_deals/version.py
 templates:

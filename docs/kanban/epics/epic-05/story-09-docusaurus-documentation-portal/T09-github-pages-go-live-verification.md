@@ -15,7 +15,7 @@ housekeeping_policy: keep
 **Last updated:** 2026-03-31 — **v0.5.9.9+2** go-live verified (merge `main`, Actions, Pages API, `curl` **200**)  
 **Code:** E05S09T09
 
-**Upstream:** [FR-070 – Deployment and hosting](../../../fr-br/FR-070-docusaurus-deployment-and-hosting.md) (automation shipped in **T06**); this task **closes the operational gap** between “`gh-pages` branch updated by Actions” and “canonical URL returns **200** for readers.”
+**Upstream:** [FR-070 – Deployment and hosting](../../../fbu/FR-070-docusaurus-deployment-and-hosting.md) (automation shipped in **T06**); this task **closes the operational gap** between “`gh-pages` branch updated by Actions” and “canonical URL returns **200** for readers.”
 
 ---
 
@@ -33,7 +33,7 @@ housekeeping_policy: keep
 | **S1** | AC1 | Canonical URL in [portal/README.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/portal/README.md) returns **HTTP 2xx** (verified `curl -sI`). |
 | **S2** | Deliverable | [Docusaurus deploy to GitHub Pages](https://github.com/RMS-Ltd/ai-dev-kit/actions/workflows/docusaurus-deploy.yml) on **`main`** succeeds (run **23796236180**, 2026-03-31). |
 | **S3** | AC2 | This **Evidence** lists commands, run id, Pages enablement. |
-| **S4** | AC3 | [FR-070](../../../fr-br/FR-070-docusaurus-deployment-and-hosting.md) **R01** validated live (**200**). |
+| **S4** | AC3 | [FR-070](../../../fbu/FR-070-docusaurus-deployment-and-hosting.md) **R01** validated live (**200**). |
 
 ---
 
@@ -47,7 +47,7 @@ The **Docusaurus deploy to GitHub Pages** workflow can succeed and **`gh-pages`*
 
 ## Input
 
-- **E05:S09:T06** / [FR-070](../../../fr-br/FR-070-docusaurus-deployment-and-hosting.md) — deploy workflow and [portal hosting docs](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/portal/README.md).
+- **E05:S09:T06** / [FR-070](../../../fbu/FR-070-docusaurus-deployment-and-hosting.md) — deploy workflow and [portal hosting docs](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/portal/README.md).
 - **Public** `RMS-Ltd/ai-dev-kit` repo; maintainer access to **Settings → Pages** and **Actions**.
 - Remote **`gh-pages`** branch present (Actions publish from `main`).
 
@@ -66,7 +66,7 @@ The **Docusaurus deploy to GitHub Pages** workflow can succeed and **`gh-pages`*
 
 - [x] AC1: **`https://rms-ltd.github.io/ai-dev-kit/`** returns success (not 404) after configuration/propagation. *(HTTP 200, 2026-03-31.)*
 - [x] AC2: Evidence recorded; **Evidence** lists verification command/date or Actions narrative.
-- [x] AC3: [FR-070](../../../fr-br/FR-070-docusaurus-deployment-and-hosting.md) **R01** “reachable” **validated** for the deployed site.
+- [x] AC3: [FR-070](../../../fbu/FR-070-docusaurus-deployment-and-hosting.md) **R01** “reachable” **validated** for the deployed site.
 
 ---
 

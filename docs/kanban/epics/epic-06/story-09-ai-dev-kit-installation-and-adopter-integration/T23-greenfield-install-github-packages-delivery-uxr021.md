@@ -16,9 +16,9 @@ housekeeping_policy: keep
 **Version:** v0.6.9.23+8  
 **Code:** E06S09T23
 
-**Upstream:** [UXR-021](../../../fr-br/UXR-021-greenfield-install-github-packages-delivery-channel.md)
+**Upstream:** [UXR-021](../../../fbu/UXR-021-greenfield-install-github-packages-delivery-channel.md)
 
-**Related:** [FR-110](../../../fr-br/FR-110-lean-adopter-distribution-footprint-and-vendor-bundle.md) · [E06:S09:T21](T21-lean-adopter-distribution-footprint-fr110.md) · [FR-062](../../../fr-br/FR-062-github-release-installation-experience.md) · [INSTALL_IN_YOUR_PROJECT.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/INSTALL_IN_YOUR_PROJECT.md#lean-vendor-install-greenfield-install--fr-110)
+**Related:** [FR-110](../../../fbu/FR-110-lean-adopter-distribution-footprint-and-vendor-bundle.md) · [E06:S09:T21](T21-lean-adopter-distribution-footprint-fr110.md) · [FR-062](../../../fbu/FR-062-github-release-installation-experience.md) · [INSTALL_IN_YOUR_PROJECT.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/INSTALL_IN_YOUR_PROJECT.md#lean-vendor-install-greenfield-install--fr-110)
 
 ---
 
@@ -31,8 +31,8 @@ Add **GitHub Packages** (`ghcr.io`) as an **alternate delivery channel** for the
 ## Input
 
 - [IPP-E06S09T23](../../../../implementation-cycles/IPP-E06S09T23-greenfield-install-github-packages-delivery-uxr021.md) — specification, tests, implementation plan (IPW)
-- [UXR-021](../../../fr-br/UXR-021-greenfield-install-github-packages-delivery-channel.md) — research findings, recommendations, acceptance criteria
-- [FR-110](../../../fr-br/FR-110-lean-adopter-distribution-footprint-and-vendor-bundle.md) — lean tree contract; optional F5 tarball
+- [UXR-021](../../../fbu/UXR-021-greenfield-install-github-packages-delivery-channel.md) — research findings, recommendations, acceptance criteria
+- [FR-110](../../../fbu/FR-110-lean-adopter-distribution-footprint-and-vendor-bundle.md) — lean tree contract; optional F5 tarball
 - [ADR-021](../../../../architecture/standards-and-adrs/ADR-021-greenfield-install-ghcr-delivery-channel.md) — GHCR delivery channel decision
 - [E06:S09:T21](T21-lean-adopter-distribution-footprint-fr110.md) — `greenfield-install/` tree + `sync_greenfield_install.py` + drift CI
 - [`.github/workflows/greenfield-install.yml`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/.github/workflows/greenfield-install.yml)
@@ -89,7 +89,7 @@ Add **GitHub Packages** (`ghcr.io`) as an **alternate delivery channel** for the
 
 ## Notes
 
-- **IPW complete** — [IPP-E06S09T23](../../../../implementation-cycles/IPP-E06S09T23-greenfield-install-github-packages-delivery-uxr021.md) linked ([FR-083](../../../fr-br/FR-083-global-ipw-gated-implementation-contract.md)).
+- **IPW complete** — [IPP-E06S09T23](../../../../implementation-cycles/IPP-E06S09T23-greenfield-install-github-packages-delivery-uxr021.md) linked ([FR-083](../../../fbu/FR-083-global-ipw-gated-implementation-contract.md)).
 - Publish permissions: `GITHUB_TOKEN` with `packages: write` on tag workflow; package visibility public per [ADR-021](../../../../architecture/standards-and-adrs/ADR-021-greenfield-install-ghcr-delivery-channel.md).
 
 ---
@@ -98,4 +98,4 @@ Add **GitHub Packages** (`ghcr.io`) as an **alternate delivery channel** for the
 
 - [IPP-E06S09T23](../../../../implementation-cycles/IPP-E06S09T23-greenfield-install-github-packages-delivery-uxr021.md)
 - [ADR-021](../../../../architecture/standards-and-adrs/ADR-021-greenfield-install-ghcr-delivery-channel.md)
-- [UXR-021](../../../fr-br/UXR-021-greenfield-install-github-packages-delivery-channel.md)
+- [UXR-021](../../../fbu/UXR-021-greenfield-install-github-packages-delivery-channel.md)

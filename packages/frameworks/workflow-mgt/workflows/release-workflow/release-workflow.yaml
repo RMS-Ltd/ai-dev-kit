@@ -92,7 +92,7 @@ steps:
     dependencies:
       - step-2
     config:
-      br_fr_dir: docs/kanban/fr-br
+      br_fr_dir: docs/kanban/fbu
 
   - id: step-7
     name: Scoped Kanban Reconciliation

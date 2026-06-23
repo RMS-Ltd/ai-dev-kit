@@ -11,7 +11,7 @@ housekeeping_policy: keep
 **Status:** Accepted  
 **Date:** 2026-06-05  
 **Task:** [E02:S01:T24](../../kanban/epics/epic-02/story-01-rw-agent-execution-and-docs/T24-rw-build-increment-enforcement-and-tag-immutability-br097.md)  
-**FBU:** [BR-097](../../kanban/fr-br/BR-097-rw-agent-reuses-tagged-build-and-force-moves-release-tags.md)
+**FBU:** [BR-097](../../kanban/fbu/BR-097-rw-agent-reuses-tagged-build-and-force-moves-release-tags.md)
 
 ---
 

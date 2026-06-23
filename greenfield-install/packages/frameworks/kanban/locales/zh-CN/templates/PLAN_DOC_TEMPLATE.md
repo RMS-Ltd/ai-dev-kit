@@ -9,10 +9,10 @@ housekeeping_policy: keep
 # E{epic}:S{story}:T{task} — Planning: Spec, Tests, Implementation Plan (IPW)
 
 **Host Task:** [`T{task}-[slug].md`](T{task}-[slug].md) **(E{epic}:S{story}:T{task})**  
-**Planning for:** [FR-XXX](../../../fr-br/FR-XXX-*.md) *(if applicable)*  
+**Planning for:** [FR-XXX](../../../fbu/FR-XXX-*.md) *(if applicable)*  
 **Status:** Draft | Review | Approved
 
-> **IPW (Implementation Planning Workflow):** 运行 **IPW** / **IPW E:S:T** 时使用本模板。**Host Task** 链接及与 task 文档 **Input**、**References** 的双向连线在计划完成前为**强制**（见项目 **FR-042** — *Implementation Planning Workflow*，位于 `docs/project-management/kanban/fr-br/`）。
+> **IPW (Implementation Planning Workflow):** 运行 **IPW** / **IPW E:S:T** 时使用本模板。**Host Task** 链接及与 task 文档 **Input**、**References** 的双向连线在计划完成前为**强制**（见项目 **FR-042** — *Implementation Planning Workflow*，位于 `docs/project-management/kanban/fbu/`）。
 
 ---
 

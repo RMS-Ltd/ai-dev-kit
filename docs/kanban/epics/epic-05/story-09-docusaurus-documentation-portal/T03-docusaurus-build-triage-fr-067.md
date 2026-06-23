@@ -17,7 +17,7 @@ housekeeping_policy: keep
 **Version:** v0.5.9.3+1  
 **Code:** E05S09T03
 
-**Feature Request:** [FR-067 – Production build triage](../../../fr-br/FR-067-docusaurus-production-build-corpus-triage.md)
+**Feature Request:** [FR-067 – Production build triage](../../../fbu/FR-067-docusaurus-production-build-corpus-triage.md)
 
 ---
 
@@ -29,7 +29,7 @@ Implement **FR-067**: after FR-066, achieve **`npm run build` = 0** for the agre
 
 ## Input
 
-- [FR-067](../../../fr-br/FR-067-docusaurus-production-build-corpus-triage.md)
+- [FR-067](../../../fbu/FR-067-docusaurus-production-build-corpus-triage.md)
 - **E05:S09:T02** complete (docs path + scope)
 
 ---
@@ -85,4 +85,4 @@ Implement **FR-067**: after FR-066, achieve **`npm run build` = 0** for the agre
 ## Related
 
 - **FR-058** (MMW) for systematic markdown maintenance.
-- **E05:S09:T08** — [Strict broken-link mode (`throw`) after link debt cleared](T08-docusaurus-strict-broken-links-post-fr067.md) (**FU-1** on [FR-067](../../../fr-br/FR-067-docusaurus-production-build-corpus-triage.md)); carries all deferred “warn → throw” intent.
+- **E05:S09:T08** — [Strict broken-link mode (`throw`) after link debt cleared](T08-docusaurus-strict-broken-links-post-fr067.md) (**FU-1** on [FR-067](../../../fbu/FR-067-docusaurus-production-build-corpus-triage.md)); carries all deferred “warn → throw” intent.

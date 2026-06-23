@@ -9,7 +9,7 @@ housekeeping_policy: keep
 # E21:S01:T02 — Planning: CLI init language selection (IPW)
 
 **Host Task:** [`T02-add-language-selection-prompt-to-cli-tool-ai-dev-kit-init.md`](../project-management/kanban/epics/epic-21/story-01-language-selection-at-setup/T02-add-language-selection-prompt-to-cli-tool-ai-dev-kit-init.md) **(E21:S01:T02)**  
-**Planning for:** [FR-006 Phase 1](../project-management/kanban/fr-br/FR-006-localization-language-selection-uk-us-english.md) · [IPP-E21S01T01](IPP-E21S01T01-template-language-selection-github.md)  
+**Planning for:** [FR-006 Phase 1](../project-management/kanban/fbu/FR-006-localization-language-selection-uk-us-english.md) · [IPP-E21S01T01](IPP-E21S01T01-template-language-selection-github.md)  
 **Status:** Complete — released `v0.21.1.2+1` (`RW E21:S01:T02 --art`)  
 **Branch:** `epic/21-internationalisation-localisation`
 

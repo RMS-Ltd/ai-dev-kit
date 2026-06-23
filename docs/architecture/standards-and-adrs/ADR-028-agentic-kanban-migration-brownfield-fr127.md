@@ -10,7 +10,7 @@ housekeeping_policy: keep
 
 **Status:** Accepted  
 **Date:** 2026-06-12  
-**Related:** [FR-127](../../kanban/fr-br/FR-127-agentic-kanban-migration-agent-replace-tool-pipeline.md) · [ADR-003](ADR-003-greenfield-vs-brownfield-adoption.md) · [E06:S09:T31](../../kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T31-agentic-kanban-migration-agent-fr127.md)
+**Related:** [FR-127](../../kanban/fbu/FR-127-agentic-kanban-migration-agent-replace-tool-pipeline.md) · [ADR-003](ADR-003-greenfield-vs-brownfield-adoption.md) · [E06:S09:T31](../../kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T31-agentic-kanban-migration-agent-fr127.md)
 
 ---
 
@@ -70,6 +70,29 @@ KMA ingests the legacy corpus **read-only**. Target writes go to the ADK `kanban
 - Migration requires an IDE agent session (not a single CLI command).
 - BR-108 tool fixes (E06:S09:T32) remain useful for any legacy tooling but are not the brownfield migration path.
 - Script file removal is a separate future task after adoption window.
+
+---
+
+## Guided mode and Target Structure Pack (TSP) — FR-136 / E06:S09:T39
+
+### 6. KMA supports blind, guided, and score modes
+
+| Mode | Purpose |
+| ---- | ------- |
+| `blind` | Default — policy-only KMA without operator target tree (FR-127) |
+| `guided` | Consumes **Target Structure Pack** (`target_est_tree` + optional companion YAML/MD) as structural anchor |
+| `score` | Maintainer diff only — structural scorer emits JSON/markdown; **no file writes** |
+
+**TSP contract:** Generic templates under `packages/frameworks/kanban/reference/`. Worked SBL exemplar remains in `adk-install-into-sbl/kanban-reference/` (not vendored into framework defaults).
+
+**Guided invariants:**
+
+- `target_est_tree` MUST be present and readable — **fail fast** when `kma_mode: guided` and TSP is missing.
+- Step 3 operator sign-off gate **unchanged** — guided mode does not auto-write migration files.
+- Deterministic helpers (M02 collision, M03 dedup, M08 scorer) are **advisory**; agent remains responsible for synthesis (M01, M04–M06).
+- Pass threshold for guided structural score: **≥ 0.85** weighted (see `SCORING-RUBRIC.yaml`).
+
+**Related:** [FR-136](../../kanban/fbu/FR-136-guided-kma-target-structure-pack.md) · [TSP reference README](../../packages/frameworks/kanban/reference/README.md) · [E06:S09:T39](../../kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T39-guided-kma-target-structure-pack-fr136.md)
 
 ---
 

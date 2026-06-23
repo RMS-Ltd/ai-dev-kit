@@ -40,7 +40,7 @@ Repository anchor task for **FR-038: RW Step 7 – Scoped Kanban Sync (UKW Mode)
 
 ## Input
 
-- **FR-038:** [`FR-038-rw-step-7-scoped-kanban-sync-ukw-mode.md`](../../../fr-br/FR-038-rw-step-7-scoped-kanban-sync-ukw-mode.md)
+- **FR-038:** [`FR-038-rw-step-7-scoped-kanban-sync-ukw-mode.md`](../../../fbu/FR-038-rw-step-7-scoped-kanban-sync-ukw-mode.md)
 - **Existing RW/UKW docs:**
   - `packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md`
   - `packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/update-kanban-workflow-agent-execution.md` (UKW)
@@ -88,5 +88,5 @@ Repository anchor task for **FR-038: RW Step 7 – Scoped Kanban Sync (UKW Mode)
 ## References
 
 - **FR Repo Story:** [`story-01-fr-repo.md`](../story-01-fr-repo.md)
-- **FR-038:** [`docs/kanban/fr-br/FR-038-rw-step-7-scoped-kanban-sync-ukw-mode.md`](../../../fr-br/FR-038-rw-step-7-scoped-kanban-sync-ukw-mode.md)
+- **FR-038:** [`docs/kanban/fbu/FR-038-rw-step-7-scoped-kanban-sync-ukw-mode.md`](../../../fbu/FR-038-rw-step-7-scoped-kanban-sync-ukw-mode.md)
 

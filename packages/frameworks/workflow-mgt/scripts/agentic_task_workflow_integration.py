@@ -181,9 +181,9 @@ def _extract_fr_br_files(changed_files: List[str], project_root: Path) -> List[P
     
     # Patterns for FR/BR/UXR files
     patterns = [
-        '**/fr-br/FR-*.md',
-        '**/fr-br/BR-*.md',
-        '**/fr-br/UXR-*.md',
+        '**/fbu/FR-*.md',
+        '**/fbu/BR-*.md',
+        '**/fbu/UXR-*.md',
         '**/FR-*.md',
         '**/BR-*.md',
         '**/UXR-*.md',

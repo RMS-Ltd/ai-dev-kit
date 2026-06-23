@@ -9,7 +9,7 @@ housekeeping_policy: keep
 # E06:S09:T31 — Planning: Agentic kanban migration agent (IPW)
 
 **Host Task:** [`T31-agentic-kanban-migration-agent-fr127.md`](../kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T31-agentic-kanban-migration-agent-fr127.md) **(E06:S09:T31)**  
-**Planning for:** [FR-127](../kanban/fr-br/FR-127-agentic-kanban-migration-agent-replace-tool-pipeline.md) · triage **F22** · SBL attempt 06  
+**Planning for:** [FR-127](../kanban/fbu/FR-127-agentic-kanban-migration-agent-replace-tool-pipeline.md) · triage **F22** · SBL attempt 06  
 **Status:** Approved
 
 ---
@@ -80,7 +80,7 @@ housekeeping_policy: keep
 
 Replace the inadequate `detect→analyze→migrate` tool pipeline for brownfield/domain adopters with a documented **Kanban Migration Agent (KMA)** workflow that ingests legacy corpus, proposes a domain-aware target structure, requires operator review before writes, executes synthesis migration, and validates results — while gating legacy migration installer modes and pointing adopters to KMA + retained `--mode fresh`.
 
-**Evidence:** SBL attempt 06 — tool pipeline detected **0/80+** stories; agentic approach migrated **72 stories** into E01–E10 + E21–E28 ([kanban-migration-experiment-report](https://github.com/RMS-Ltd/starborn_legacy/blob/main/logs/ai-dev-kit/install/attempt-06/feedback-package/kanban-migration-experiment-report.md)).
+**Evidence:** SBL attempt 06 — tool pipeline detected **0/80+** stories; agentic approach migrated **72 stories** into E01–E10 + E21–E28 ([kanban-migration-experiment-report](../../adk-install-into-sbl/attempt-06/feedback-package/kanban-migration-experiment-report.md)).
 
 ### 2.2 Specification mapping from ascertained requirements
 
@@ -209,7 +209,7 @@ Replace the inadequate `detect→analyze→migrate` tool pipeline for brownfield
 - `packages/frameworks/kanban/scripts/README.md`
 - `INSTALL_IN_YOUR_PROJECT.md`
 - `CLAUDE.md`
-- `docs/kanban/fr-br/FR-127-agentic-kanban-migration-agent-replace-tool-pipeline.md`
+- `docs/kanban/fbu/FR-127-agentic-kanban-migration-agent-replace-tool-pipeline.md`
 - `docs/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T31-agentic-kanban-migration-agent-fr127.md`
 - `docs/kanban/kboard.md` (RW Step 7)
 - `greenfield-install/` mirror (sync)
@@ -246,7 +246,7 @@ Replace the inadequate `detect→analyze→migrate` tool pipeline for brownfield
 | D-U2 | `packages/frameworks/kanban/README.md` | Replace § Migration Support tool pipeline with KMA pointer | RF7, Step 12 |
 | D-U3 | `packages/frameworks/kanban/scripts/README.md` | Mark migration scripts DEPRECATED; KMA pointer | RF8, Step 12 |
 | D-U4 | `CLAUDE.md` | Add KMA trigger routing block | Step 4 |
-| D-U5 | `docs/kanban/fr-br/FR-127-*.md` | Status → IMPLEMENTED when ACs met; evidence links | Step 13 |
+| D-U5 | `docs/kanban/fbu/FR-127-*.md` | Status → IMPLEMENTED when ACs met; evidence links | Step 13 |
 | D-U6 | `docs/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T31-*.md` | Status, AC checkboxes, version marker | Steps 1, 17 |
 | D-U7 | `docs/kanban/kboard.md` | T31 row status + IPP link | RW Step 7 |
 | D-U8 | `docs/knowledge/analysis/projects/starborn-legacy-install-triage-matrix.md` | F22 delivery note | Step 13 |
@@ -309,12 +309,12 @@ Replace the inadequate `detect→analyze→migrate` tool pipeline for brownfield
 
 ## References
 
-- [FR-127](../kanban/fr-br/FR-127-agentic-kanban-migration-agent-replace-tool-pipeline.md)
+- [FR-127](../kanban/fbu/FR-127-agentic-kanban-migration-agent-replace-tool-pipeline.md)
 - [E06:S09:T31 task doc](../kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T31-agentic-kanban-migration-agent-fr127.md)
 - [E06:S09:T26 program](../kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T26-starborn-legacy-adk-install-program.md)
-- [FR-081](../kanban/fr-br/FR-081-brownfield-modular-adopter-integration.md) · [ADR-003](ADR-003-greenfield-vs-brownfield-adoption.md)
-- SBL migration experiment report (external): `starborn_legacy/logs/ai-dev-kit/install/attempt-06/feedback-package/kanban-migration-experiment-report.md`
+- [FR-081](../kanban/fbu/FR-081-brownfield-modular-adopter-integration.md) · [ADR-003](ADR-003-greenfield-vs-brownfield-adoption.md)
+- [kanban-migration-experiment-report](../../adk-install-into-sbl/attempt-06/feedback-package/kanban-migration-experiment-report.md)
 - [adk-install-into-sbl/attempt-06/README.md](../../adk-install-into-sbl/attempt-06/README.md)
 - [UKW agent execution guide](../../packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/update-kanban-workflow-agent-execution.md) (pattern reference)
 - [ipw-adr-necessity-checklist.md](ipw-adr-necessity-checklist.md)
-- [BR-108](../kanban/fr-br/BR-108-detect-existing-structure-zero-padded-epic-names.md) / [E06:S09:T32](IPP-E06S09T32-detect-structure-zero-padded-epic-br108.md) (parallel, out of scope)
+- [BR-108](../kanban/fbu/BR-108-detect-existing-structure-zero-padded-epic-names.md) / [E06:S09:T32](IPP-E06S09T32-detect-structure-zero-padded-epic-br108.md) (parallel, out of scope)

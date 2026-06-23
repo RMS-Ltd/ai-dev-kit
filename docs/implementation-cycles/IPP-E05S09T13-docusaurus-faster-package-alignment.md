@@ -9,7 +9,7 @@ housekeeping_policy: keep
 # E05:S09:T13 — Planning: Spec, Tests, Implementation Plan (IPW)
 
 **Host Task:** [`T13-docusaurus-faster-package-alignment-br090.md`](../kanban/epics/epic-05/story-09-docusaurus-documentation-portal/T13-docusaurus-faster-package-alignment-br090.md) **(E05:S09:T13)**  
-**Planning for:** [BR-090](../kanban/fr-br/BR-090-docusaurus-faster-missing-dependabot-310-lockfile-drift.md)  
+**Planning for:** [BR-090](../kanban/fbu/BR-090-docusaurus-faster-missing-dependabot-310-lockfile-drift.md)  
 **Status:** Revised — Wave 2 (build closure)
 
 > **IPW revision:** Wave 1 (`v0.5.9.13+1`) shipped `@docusaurus/faster@3.10.1` and aligned pins. Wave 2 closes **BR-090** via full build triage, BR-068 Strategy A link remediation, pytest T8–T11, and CI verification.
@@ -132,7 +132,7 @@ Criteria: [`ipw-adr-necessity-checklist.md`](../architecture/standards-and-adrs/
 | 4 | Verify `npm ci && npm run build` locally | Build exit 0 |
 | 5 | Add [`tests/test_portal_br090_faster_alignment.py`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/tests/test_portal_br090_faster_alignment.py) (T1–T6) | Pytest green |
 | 6 | Update [`portal/README.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/portal/README.md) — faster + 3.10.x install/build notes | RF7 |
-| 7 | Update [BR-090](../kanban/fr-br/BR-090-docusaurus-faster-missing-dependabot-310-lockfile-drift.md) deploy AC wording | BR hygiene |
+| 7 | Update [BR-090](../kanban/fbu/BR-090-docusaurus-faster-missing-dependabot-310-lockfile-drift.md) deploy AC wording | BR hygiene |
 | 8 | Release via **`RW E05:S09:T13`** (version bump, changelog, Step 7 four-surface kanban) | Tagged release |
 | **N** | **[MANDATORY] Reconcile task `E05:S09:T13` status** to actual implementation state: `COMPLETE` + `✅ COMPLETE (v{version})` if all ACs satisfied; `IN PROGRESS` if ongoing; `BLOCKED` + reason if blocked. Update `Last updated`. | Task doc + kboard + fbuboard |
 
@@ -166,7 +166,7 @@ Criteria: [`ipw-adr-necessity-checklist.md`](../architecture/standards-and-adrs/
 | D-U1 | `portal/package.json` | Docusaurus 3.10.1 + faster dep | RF1–RF2; Step 2 |
 | D-U2 | `portal/package-lock.json` | Regenerated lock | RF3; Step 3 |
 | D-U3 | `portal/README.md` | Install/build + faster note; version references | RF7; Step 6 |
-| D-U4 | `docs/kanban/fr-br/BR-090-*.md` | Deploy AC wording; status on verification | Step 7 |
+| D-U4 | `docs/kanban/fbu/BR-090-*.md` | Deploy AC wording; status on verification | Step 7 |
 | D-U5 | Host task T13 | Status transitions; IPP links; completion marker on RW | Steps 1, N |
 
 ### 5.2 New documents to create
@@ -310,9 +310,9 @@ Criteria: [`ipw-adr-necessity-checklist.md`](../architecture/standards-and-adrs/
 ## References
 
 - [T13 — Docusaurus `@docusaurus/faster` + package.json 3.10.1 alignment (BR-090)](../kanban/epics/epic-05/story-09-docusaurus-documentation-portal/T13-docusaurus-faster-package-alignment-br090.md)
-- [BR-090 — Docusaurus 3.10 build fails: missing `@docusaurus/faster` and lockfile drift](../kanban/fr-br/BR-090-docusaurus-faster-missing-dependabot-310-lockfile-drift.md)
-- [FR-069 — Docusaurus CI build gate](../kanban/fr-br/FR-069-docusaurus-ci-build-gate.md)
-- [FR-070 — Docusaurus deployment and hosting](../kanban/fr-br/FR-070-docusaurus-deployment-and-hosting.md)
+- [BR-090 — Docusaurus 3.10 build fails: missing `@docusaurus/faster` and lockfile drift](../kanban/fbu/BR-090-docusaurus-faster-missing-dependabot-310-lockfile-drift.md)
+- [FR-069 — Docusaurus CI build gate](../kanban/fbu/FR-069-docusaurus-ci-build-gate.md)
+- [FR-070 — Docusaurus deployment and hosting](../kanban/fbu/FR-070-docusaurus-deployment-and-hosting.md)
 - [ADR-017 — Docusaurus CI build/deploy topology](../architecture/standards-and-adrs/ADR-017-docusaurus-ci-build-deploy-topology.md)
 - [ipw-adr-necessity-checklist.md](../architecture/standards-and-adrs/ipw-adr-necessity-checklist.md) (FR-100)
 - [Docusaurus 3.10 release notes](https://docusaurus.io/blog/releases/3.10)

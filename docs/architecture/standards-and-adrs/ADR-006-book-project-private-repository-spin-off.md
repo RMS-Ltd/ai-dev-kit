@@ -12,7 +12,7 @@ housekeeping_policy: keep
 **Date:** 2026-05-26  
 **Decision owner:** Maintainer  
 **Private repository (live):** [RMS-Ltd/ai-dev-kit-book](https://github.com/RMS-Ltd/ai-dev-kit-book) — **private**
-**Implementing work:** [FR-099](../../kanban/fr-br/FR-099-spin-off-book-epic-to-private-repository.md) · **E1:S04:T03–T07** (one task per phase; see [Story 004](../../kanban/epics/epic-01/story-04-repository-branding-and-renaming.md))
+**Implementing work:** [FR-099](../../kanban/fbu/FR-099-spin-off-book-epic-to-private-repository.md) · **E1:S04:T03–T07** (one task per phase; see [Story 004](../../kanban/epics/epic-01/story-04-repository-branding-and-renaming.md))
 
 **Supersedes:** [E1:S04:T02](../../kanban/epics/epic-01/story-04-repository-branding-and-renaming.md) (conditional public rename of `ai-dev-kit` → `head-first-ai-dev-kit`)
 
@@ -156,11 +156,11 @@ Before public genesis push: abort by re-publicizing the private line under its t
 
 ## Related
 
-- [FR-099 — Spin off book epic to private repository](../../kanban/fr-br/FR-099-spin-off-book-epic-to-private-repository.md)
+- [FR-099 — Spin off book epic to private repository](../../kanban/fbu/FR-099-spin-off-book-epic-to-private-repository.md)
 - [E1:S04:T06 — Phase 3 public rebirth](../../kanban/epics/epic-01/story-04-repository-branding-and-renaming/T06-fr099-phase3-public-ai-dev-kit-rebirth.md)
 - [E1:S04:T07 — Phase 4 rewire](../../kanban/epics/epic-01/story-04-repository-branding-and-renaming/T07-fr099-phase4-rewire-and-verify.md)
 - [FR-099 phase tasks T03–T07](../../kanban/epics/epic-01/story-04-repository-branding-and-renaming.md) (umbrella [redirect](../../kanban/epics/epic-01/story-04-repository-branding-and-renaming/T03-spin-off-book-epic-private-repo-fr099.md))
 - [E1:S04:T02 — superseded](../../kanban/epics/epic-01/story-04-repository-branding-and-renaming.md) (public Head First rename)
-- [FR-064](../../kanban/fr-br/FR-064-shields-branch-private-repo-badges.md) — prior private-repo hygiene pattern
-- [FR-080](../../kanban/fr-br/FR-080-greenfield-installation-process.md) — consumer Kanban must not include Epic 24
+- [FR-064](../../kanban/fbu/FR-064-shields-branch-private-repo-badges.md) — prior private-repo hygiene pattern
+- [FR-080](../../kanban/fbu/FR-080-greenfield-installation-process.md) — consumer Kanban must not include Epic 24
 - [ADR-003](ADR-003-greenfield-vs-brownfield-adoption.md) — public ADK remains reference implementation for adopters

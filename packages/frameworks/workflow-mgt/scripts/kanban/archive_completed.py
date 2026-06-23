@@ -23,7 +23,7 @@ ROW_FBU_PATTERNS = [
     re.compile(r"\[((?:FR|BR|UXR)-\d+)\]\("),
 ]
 TASK_LINK_RE = re.compile(r"\((epics/[^)]+\.md)\)")
-FRBR_LINK_RE = re.compile(r"\((fr-br/[^)]+\.md)\)")
+FRBR_LINK_RE = re.compile(r"\(((?:fbu|fr-br)/[^)]+\.md)\)")
 KEEP_ON_BOARD_MARKERS = (
     "keep on board",
     "remain on board",

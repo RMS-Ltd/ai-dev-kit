@@ -9,7 +9,7 @@ housekeeping_policy: keep
 # E02:S11:T14 — Planning: Spec, Tests, Implementation Plan (IPW)
 
 **Host Task:** [`T14-github-actions-workflow-optimization-br052.md`](../kanban/epics/epic-02/story-11-intake-workflow-automation/T14-github-actions-workflow-optimization-br052.md) **(E02:S11:T14)**  
-**Planning for:** [BR-052](../kanban/fr-br/BR-052-github-actions-workflow-optimization.md)  
+**Planning for:** [BR-052](../kanban/fbu/BR-052-github-actions-workflow-optimization.md)  
 **Status:** Approved
 
 > **IPW (Implementation Planning Workflow):** Consolidated IPP per FR-042 / FR-083. Bidirectional wiring to host task **Input** and **References** is mandatory before implementation.
@@ -140,7 +140,7 @@ Criteria: [`ipw-adr-necessity-checklist.md`](../architecture/standards-and-adrs/
 - `.github/workflows/fr-br-intake.yml.DISABLED-AGAIN` — DELETE (dedupe)
 - `tests/test_gha_workflow_br052.py` — CREATE
 - `docs/kanban/epics/epic-02/story-11-intake-workflow-automation/T14-github-actions-workflow-optimization-br052.md` — UPDATE
-- `docs/kanban/fr-br/BR-052-github-actions-workflow-optimization.md` — UPDATE
+- `docs/kanban/fbu/BR-052-github-actions-workflow-optimization.md` — UPDATE
 - Kanban surfaces via RW Step 7
 
 ### 4.2 Dependency order
@@ -204,8 +204,8 @@ Criteria: [`ipw-adr-necessity-checklist.md`](../architecture/standards-and-adrs/
 
 ## References
 
-- [BR-052](../kanban/fr-br/BR-052-github-actions-workflow-optimization.md)
-- [BR-053](../kanban/fr-br/BR-053-github-actions-workflow-push-trigger-bug.md)
+- [BR-052](../kanban/fbu/BR-052-github-actions-workflow-optimization.md)
+- [BR-053](../kanban/fbu/BR-053-github-actions-workflow-push-trigger-bug.md)
 - [T14 task doc](../kanban/epics/epic-02/story-11-intake-workflow-automation/T14-github-actions-workflow-optimization-br052.md)
 - [E02:S11:T12 task doc](../kanban/epics/epic-02/story-11-intake-workflow-automation/T12-github-actions-workflow-bug-resolution.md)
 - [ipw-adr-necessity-checklist.md](../architecture/standards-and-adrs/ipw-adr-necessity-checklist.md)

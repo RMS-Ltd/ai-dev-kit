@@ -248,10 +248,10 @@ Capture and operationalize user experience research for migrating pre-existing K
 
 ## References
 
-- UXR-001: `docs/kanban/fr-br/UXR-001-migration-user-experience-research.md`
-- UXR-002: `docs/kanban/fr-br/UXR-002-comprehensive-uat-migration-utilities.md`
-- UXR-003: `docs/kanban/fr-br/UXR-003-intelligent-epic-matching-canonical-adoption-uat.md`
-- UXR-004: `docs/kanban/fr-br/UXR-004-kanban-package-installation-uat.md`
+- UXR-001: `docs/kanban/fbu/UXR-001-migration-user-experience-research.md`
+- UXR-002: `docs/kanban/fbu/UXR-002-comprehensive-uat-migration-utilities.md`
+- UXR-003: `docs/kanban/fbu/UXR-003-intelligent-epic-matching-canonical-adoption-uat.md`
+- UXR-004: `docs/kanban/fbu/UXR-004-kanban-package-installation-uat.md`
 - BR-006 / FR-007 (consumers of UXR-001): see Epic 4 Story 7
 - BR-007 / BR-008 / FR-010 (consumers of UXR-004): see Epic 4 Story 9
 - FR-009 (consumer of UXR-002/UXR-003): see Epic 4 Story 8

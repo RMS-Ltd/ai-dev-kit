@@ -489,7 +489,7 @@ The hybrid approach isn't a compromise—it's a synthesis. And that's what makes
 - **Analysis Document:** `docs/analysis/task-template-system-analysis.md`
 - **Architecture Decision Record:** `docs/architecture/standards-and-adrs/task-template-system-hybrid-adr.md`
 - **Design Document:** `docs/architecture/standards-and-adrs/task-template-generator-design.md`
-- **Feature Request:** `docs/kanban/fr-br/FR-029-procedural-task-template-generation-hybrid-strategy.md`
+- **Feature Request:** `docs/kanban/fbu/FR-029-procedural-task-template-generation-hybrid-strategy.md`
 - **Story:** `docs/kanban/epics/epic-04/story-15-procedural-task-template-generation-and-hybrid-strategy.md`
 - **Generator Script:** `packages/frameworks/kanban/scripts/generate_task_templates.py`
 - **Kanban Framework README:** `packages/frameworks/kanban/README.md`

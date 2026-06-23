@@ -3,7 +3,7 @@ FR-069 / E5:S09:T05: GitHub Actions Docusaurus build gate (workflow contract).
 
 Executable spec S1–S7 (S8 is process / observational).
 
-See: docs/kanban/fr-br/FR-069-docusaurus-ci-build-gate.md
+See: docs/kanban/fbu/FR-069-docusaurus-ci-build-gate.md
 """
 
 from __future__ import annotations

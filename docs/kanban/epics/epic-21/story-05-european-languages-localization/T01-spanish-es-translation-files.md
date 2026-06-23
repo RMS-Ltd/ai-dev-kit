@@ -15,7 +15,7 @@ housekeeping_policy: keep
 **Version:** v0.21.5.1+1
 **Code:** E21S05T01
 
-**Associated FR:** [FR-006](../../../fr-br/FR-006-localization-language-selection-uk-us-english.md) (Phase 2)
+**Associated FR:** [FR-006](../../../fbu/FR-006-localization-language-selection-uk-us-english.md) (Phase 2)
 
 ---
 
@@ -62,7 +62,7 @@ Create and review Spanish (`es` / `locales/es/`) translation files for priority 
 ## References
 
 - [IPP-E21S05T01 — Spanish (es) translation files (FR-006)](../../../../implementation-cycles/IPP-E21S05T01-spanish-es-translation-files.md)
-- [FR-006](../../../fr-br/FR-006-localization-language-selection-uk-us-english.md)
+- [FR-006](../../../fbu/FR-006-localization-language-selection-uk-us-english.md)
 - [locale-rollout-matrix.md](../../../../governance/standards/locale-rollout-matrix.md)
 - [locale-cultural-requirements.md](../../../../governance/standards/locale-cultural-requirements.md) § Spanish (es)
 - [translation-workflow-and-review.md](../../../../governance/standards/translation-workflow-and-review.md)
@@ -81,7 +81,7 @@ Create and review Spanish (`es` / `locales/es/`) translation files for priority 
 RW -k E21:S05:T01 --art --dpz
 ```
 
-**Target version anchor:** `v0.21.5.1+0` (doc-init BUILD +0 per [BR-067](../../../fr-br/BR-067-rw-first-doc-only-release-defaults-to-build-plus-one-not-plus-zero.md)).
+**Target version anchor:** `v0.21.5.1+0` (doc-init BUILD +0 per [BR-067](../../../fbu/BR-067-rw-first-doc-only-release-defaults-to-build-plus-one-not-plus-zero.md)).
 
 ## Version Anchor
 

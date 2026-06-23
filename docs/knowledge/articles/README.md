@@ -36,7 +36,7 @@ This directory contains comprehensive articles and blog-style posts covering:
   - **Published:** 2026-06-15 (mirrored from SBL FR-079 attempt 09)
   - **ADK pin:** `v0.4.1164`
   - **Epic:** E06 (Installation and adopter integration)
-  - **Task:** [E06:S09:T36](../../kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T36-adopter-path-selector-install-rc-uxr029.md) · [UXR-029](../../kanban/fr-br/UXR-029-adk-install-path-experiment.md)
+  - **Task:** [E06:S09:T36](../../kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T36-adopter-path-selector-install-rc-uxr029.md) · [UXR-029](../../kanban/fbu/UXR-029-adk-install-path-experiment.md)
   - **Summary:** Industry-informed three-path adoption model (brownfield, shell + selective migration, strangler coexist) from Starborn attempts 07–09; drives Adopter Path Selector and Install RC programme.
 
 #### Hybrid Task Template System
@@ -57,7 +57,7 @@ This directory contains comprehensive articles and blog-style posts covering:
   - **Author:** Wilson Lin (Cursor)
   - **Source:** [cursor.com/blog/scaling-agents](https://cursor.com/blog/scaling-agents)
   - **Summary:** Research findings from Cursor's experiments with hundreds of concurrent agents working on large-scale projects. Covers planner/worker architecture, coordination mechanisms, model selection, and lessons learned from running agents for weeks on ambitious projects (browser from scratch, Solid→React migration, etc.).
-  - **Related:** [FR-031: Multi-Agent Coordination Feasibility Investigation](../../kanban/fr-br/FR-031-multi-agent-coordination-feasibility-investigation.md)
+  - **Related:** [FR-031: Multi-Agent Coordination Feasibility Investigation](../../kanban/fbu/FR-031-multi-agent-coordination-feasibility-investigation.md)
 
 ---
 

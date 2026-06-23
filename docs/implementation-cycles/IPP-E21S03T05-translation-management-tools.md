@@ -9,7 +9,7 @@ housekeeping_policy: keep
 # E21:S03:T05 — Planning: Translation management tools (IPW)
 
 **Host Task:** [`T05-add-translation-management-tools.md`](../project-management/kanban/epics/epic-21/story-03-translation-and-localisation/T05-add-translation-management-tools.md) **(E21:S03:T05)**  
-**Planning for:** [FR-006 Phase 3+](../project-management/kanban/fr-br/FR-006-localization-language-selection-uk-us-english.md) · [IPP-E21S03T04](IPP-E21S03T04-translation-workflow-review.md) · [IPP-E21S03T03](IPP-E21S03T03-translation-lookup-rendering.md) · [ADR-024](../architecture/standards-and-adrs/ADR-024-i18n-framework-strategy.md)  
+**Planning for:** [FR-006 Phase 3+](../project-management/kanban/fbu/FR-006-localization-language-selection-uk-us-english.md) · [IPP-E21S03T04](IPP-E21S03T04-translation-workflow-review.md) · [IPP-E21S03T03](IPP-E21S03T03-translation-lookup-rendering.md) · [ADR-024](../architecture/standards-and-adrs/ADR-024-i18n-framework-strategy.md)  
 **Status:** Complete — released `v0.21.3.5+1` (`RW E21:S03:T05 --art`)  
 **Branch:** `epic/21-internationalisation-localisation`
 
@@ -216,7 +216,7 @@ python packages/frameworks/workflow-mgt/scripts/sync_locale_keys.py \
 | D-U5 | `packages/frameworks/*/locales/README.md` (+ greenfield) | Management tools § with three commands | RF3, RF6 |
 | D-U6 | `docs/architecture/standards-and-adrs/ADR-024-i18n-framework-strategy.md` | Integration plan T05 row | §2.5 REQUIRED |
 | D-U7 | T05 task doc | IPP links; AC checkboxes on completion | Phase 8 |
-| D-U8 | `docs/project-management/kanban/fr-br/FR-006-*.md` | T05 anchor when released | Step 12 |
+| D-U8 | `docs/project-management/kanban/fbu/FR-006-*.md` | T05 anchor when released | Step 12 |
 
 ### 5.2 New documents to create
 
@@ -275,6 +275,6 @@ python packages/frameworks/workflow-mgt/scripts/sync_locale_keys.py \
 - [IPP-E21S03T04](IPP-E21S03T04-translation-workflow-review.md)
 - [scaffold_locale_trees.py](../../packages/frameworks/workflow-mgt/scripts/scaffold_locale_trees.py)
 - [ADR-024](../architecture/standards-and-adrs/ADR-024-i18n-framework-strategy.md)
-- [FR-006](../project-management/kanban/fr-br/FR-006-localization-language-selection-uk-us-english.md)
+- [FR-006](../project-management/kanban/fbu/FR-006-localization-language-selection-uk-us-english.md)
 - [locale-file-structure-conventions.md](../governance/standards/locale-file-structure-conventions.md)
 - [locale-key-conventions.md](../governance/standards/locale-key-conventions.md)

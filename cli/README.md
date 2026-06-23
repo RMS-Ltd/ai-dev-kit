@@ -80,6 +80,18 @@ pytest -m unit
 pytest -m integration
 ```
 
+The dedicated coverage lane is intentionally isolated from default pytest runs:
+
+- `pytest-cli-cov.ini` is the only config that enables `--cov=cli`
+- `pytest-cli-cov.ini` enforces `--cov-fail-under=70`
+- default `pytest.ini` does not enable CLI coverage (avoids misleading 0% output in non-CLI runs)
+
+### CLI Coverage Waves (FR-138)
+
+- **Wave 1:** backend and migration modules
+- **Wave 2:** check/status/update commands and install error bridge
+- **Wave 3:** remaining command/config/logging/utils branch gaps
+
 ### Code Quality
 
 ```bash
@@ -122,5 +134,5 @@ pip install dist/ai_dev_kit-*.whl
 
 - **Design Document:** `docs/architecture/standards-and-adrs/framework-update-cli-design.md`
 - **Architecture:** `docs/architecture/standards-and-adrs/framework-dependency-architecture.md`
-- **Feature Request:** `docs/kanban/fr-br/FR-030-ai-dev-kit-cli-tool.md`
+- **Feature Request:** `docs/kanban/fbu/FR-030-ai-dev-kit-cli-tool.md`
 

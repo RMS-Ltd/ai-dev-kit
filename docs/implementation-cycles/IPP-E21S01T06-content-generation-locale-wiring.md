@@ -9,7 +9,7 @@ housekeeping_policy: keep
 # E21:S01:T06 — Planning: Content generation locale wiring (IPW)
 
 **Host Task:** [`T06-update-content-generation-to-use-language-preference-rw-temp.md`](../project-management/kanban/epics/epic-21/story-01-language-selection-at-setup/T06-update-content-generation-to-use-language-preference-rw-temp.md) **(E21:S01:T06)**  
-**Planning for:** [FR-006 Phase 1](../project-management/kanban/fr-br/FR-006-localization-language-selection-uk-us-english.md) · [IPP-E21S01T05](IPP-E21S01T05-config-read-locale-resolution.md) · [IPP-E21S01T04](IPP-E21S01T04-ukus-content-variants-mvp.md)  
+**Planning for:** [FR-006 Phase 1](../project-management/kanban/fbu/FR-006-localization-language-selection-uk-us-english.md) · [IPP-E21S01T05](IPP-E21S01T05-config-read-locale-resolution.md) · [IPP-E21S01T04](IPP-E21S01T04-ukus-content-variants-mvp.md)  
 **Status:** Complete — released `v0.21.1.6+1` (`RW E21:S01:T06 --art`)  
 **Branch:** `epic/21-internationalisation-localisation`
 

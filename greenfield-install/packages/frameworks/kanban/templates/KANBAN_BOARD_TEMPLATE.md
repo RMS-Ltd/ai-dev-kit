@@ -23,7 +23,7 @@ housekeeping_policy: keep
 
 ### Must Have (M) - Critical Tasks
 
-- **E{epic}:S{story}:T{task}** – {Description} — {Status} ({Priority}) | [Task](epics/epic-{epic}/story-{story}-{name}/T{task}-{task-name}.md) | [Story](epics/epic-{epic}/story-{story}-{name}.md) | [FR-XXX](fr-br/FR-XXX-*.md) | —No IPP— | Last modified: {YYYY-MM-DD} UTC
+- **E{epic}:S{story}:T{task}** – {Description} — {Status} ({Priority}) | [Task](epics/epic-{epic}/story-{story}-{name}/T{task}-{task-name}.md) | [Story](epics/epic-{epic}/story-{story}-{name}.md) | [FR-XXX](fbu/FR-XXX-*.md) | —No IPP— | Last modified: {YYYY-MM-DD} UTC
 
 ### Should Have (S) - Important Tasks
 
@@ -33,7 +33,7 @@ housekeeping_policy: keep
 
 Rows where the **task is terminal** but the **FBU remains open**. Use `⏳ WAITING` per ADR-018 / FR-109.
 
-- **E{epic}:S{story}:T{task}** – {Description} — ⏳ WAITING ({Priority}, task shipped · FBU verification pending) | [Task](epics/epic-{epic}/story-{story}-{name}/T{task}-{task-name}.md) | [Story](epics/epic-{epic}/story-{story}-{name}.md) | [FR-XXX](fr-br/FR-XXX-*.md) | —No IPP— | Last modified: {YYYY-MM-DD} UTC
+- **E{epic}:S{story}:T{task}** – {Description} — ⏳ WAITING ({Priority}, task shipped · FBU verification pending) | [Task](epics/epic-{epic}/story-{story}-{name}/T{task}-{task-name}.md) | [Story](epics/epic-{epic}/story-{story}-{name}.md) | [FR-XXX](fbu/FR-XXX-*.md) | —No IPP— | Last modified: {YYYY-MM-DD} UTC
 
 ### Could Have (C) - Nice-to-Have Tasks
 
@@ -43,7 +43,7 @@ Rows where the **task is terminal** but the **FBU remains open**. Use `⏳ WAITI
 
 #### Canonical (E01–E10) — ADK framework perpetuals
 
-_Framework perpetual lanes typically under **E02:S16** ([FR-088](fr-br/FR-088-dedicated-story-for-perpetual-ongoing-tasks.md))._
+_Framework perpetual lanes typically under **E02:S16** ([FR-088](fbu/FR-088-dedicated-story-for-perpetual-ongoing-tasks.md))._
 
 - **E02:S16:T01** – Workflow maintenance — 🔄 PERPETUAL | [Task](epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T01-workflow-maintenance-perpetual.md) | [Story](epics/epic-02/story-16-perpetual-ongoing-workflow-operations.md) | —No IPP— | Last modified: {YYYY-MM-DD} UTC
 
@@ -71,4 +71,4 @@ _No tasks currently deferred._
 
 **Template Version:** 2.2.0  
 **Last Updated:** {YYYY-MM-DD}  
-**Based On:** [UXR-028](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/kanban/fr-br/UXR-028-kboard-v3dot2-packaged-template-alignment.md) · SBL attempt 06 `kboard-template-v3dot2.md` · ADR-018 lean board · UXR-010 IPP segment
+**Based On:** [UXR-028](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/kanban/fbu/UXR-028-kboard-v3dot2-packaged-template-alignment.md) · SBL attempt 06 `kboard-template-v3dot2.md` · ADR-018 lean board · UXR-010 IPP segment

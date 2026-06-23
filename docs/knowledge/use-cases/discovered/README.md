@@ -29,14 +29,14 @@ Discovered use cases are patterns, practices, or scenarios discovered during act
   - **Discovered:** 2025-12-16
   - **Discovered In:** BR-002 reopening work, Task E2:S01:T06
   - **Location:** [UC-D-001-reopening-br-tasks.md](UC-D-001-reopening-br-tasks.md)
-  - **Related:** [REOPENING_BR_AND_TASKS_GUIDE.md](../../../kanban/fr-br/REOPENING_BR_AND_TASKS_GUIDE.md), BR-002, Task E2:S01:T06
+  - **Related:** [REOPENING_BR_AND_TASKS_GUIDE.md](../../../kanban/fbu/REOPENING_BR_AND_TASKS_GUIDE.md), BR-002, Task E2:S01:T06
 
 - **UC-D-002:** Bidirectional Wiring Between BR/FR, Tasks, and Documentation
   - **Status:** Active (Promoted to Canonical)
   - **Discovered:** 2025-12-16
   - **Discovered In:** BR-002/T06 wiring work
   - **Location:** [UC-D-002-bidirectional-wiring.md](UC-D-002-bidirectional-wiring.md)
-  - **Related:** [BIDIRECTIONAL_WIRING_PRINCIPLE.md](../../../kanban/fr-br/BIDIRECTIONAL_WIRING_PRINCIPLE.md), BR-002, Task E2:S01:T06
+  - **Related:** [BIDIRECTIONAL_WIRING_PRINCIPLE.md](../../../kanban/fbu/BIDIRECTIONAL_WIRING_PRINCIPLE.md), BR-002, Task E2:S01:T06
   - **Promoted To:** UC-050 (Bidirectional Wiring Principle)
 
 ### Pattern Discovery
@@ -109,8 +109,8 @@ _None yet_
 
 - [USE_CASE_METHODOLOGY.md](../../USE_CASE_METHODOLOGY.md) - Methodology guide
 - [Discovered Use Case Template](../templates/DISCOVERED_USE_CASE_TEMPLATE.md) - Template for creating discovered use cases
-- [BIDIRECTIONAL_WIRING_PRINCIPLE.md](../../../kanban/fr-br/BIDIRECTIONAL_WIRING_PRINCIPLE.md) - Example discovered use case (promoted)
-- [REOPENING_BR_AND_TASKS_GUIDE.md](../../../kanban/fr-br/REOPENING_BR_AND_TASKS_GUIDE.md) - Example discovered use case
+- [BIDIRECTIONAL_WIRING_PRINCIPLE.md](../../../kanban/fbu/BIDIRECTIONAL_WIRING_PRINCIPLE.md) - Example discovered use case (promoted)
+- [REOPENING_BR_AND_TASKS_GUIDE.md](../../../kanban/fbu/REOPENING_BR_AND_TASKS_GUIDE.md) - Example discovered use case
 
 ---
 

@@ -36,8 +36,8 @@ Deliver **FR-075**: codify that **ICW** persists spec / test design / implementa
 
 ## Input
 
-- **FR:** [FR-075](../../../fr-br/FR-075-icw-durable-planning-artifacts-documentation-system.md)
-- **Prior art:** [FR-040](../../../fr-br/FR-040-implementation-cycle-workflow-icw.md), [FR-048](../../../fr-br/FR-048-icw-task-identifier-argument.md)
+- **FR:** [FR-075](../../../fbu/FR-075-icw-durable-planning-artifacts-documentation-system.md)
+- **Prior art:** [FR-040](../../../fbu/FR-040-implementation-cycle-workflow-icw.md), [FR-048](../../../fbu/FR-048-icw-task-identifier-argument.md)
 - **Existing ICW output config:** `packages/frameworks/workflow-mgt/workflows/implementation-cycle-workflow/icw-workflow.yaml`
 
 ---

@@ -9,7 +9,7 @@ housekeeping_policy: keep
 # E2:S15:T08 — Planning: Board Stamp Authority and Forensic Timestamp Recovery (IPW)
 
 **Host Task:** [T08-board-stamp-authority-forensic-timestamp-recovery-fr097.md](../kanban/epics/epic-02/story-15-ipw-governance-and-publication-contract/T08-board-stamp-authority-forensic-timestamp-recovery-fr097.md) **(E2:S15:T08)**  
-**Planning for:** [FR-097](../kanban/fr-br/FR-097-board-stamp-authority-and-forensic-timestamp-recovery.md)  
+**Planning for:** [FR-097](../kanban/fbu/FR-097-board-stamp-authority-and-forensic-timestamp-recovery.md)  
 **Status:** Approved (implementation delivered 2026-05-20)
 
 ---
@@ -90,6 +90,6 @@ See attached IPW plan: RF1–RF8, RNF1–RNF4. User locked: automatic backfill, 
 
 ## References
 
-- [FR-097](../kanban/fr-br/FR-097-board-stamp-authority-and-forensic-timestamp-recovery.md)
+- [FR-097](../kanban/fbu/FR-097-board-stamp-authority-and-forensic-timestamp-recovery.md)
 - [IPP-E2S15T7](IPP-E2S15T07-canonical-rw-ukw-kanban-consistency-program.md)
 - [IPP-E2S15T4](IPP-E2S15T04-br069-row-tail-normalization-and-terminal-timestamp-interaction.md)

@@ -17,7 +17,7 @@ housekeeping_policy: keep
 **Version Anchor:** v0.4.14.12+2  
 **Code:** E04S14T12
 
-**Upstream:** [FR-134 — SQLite completed-task ledger with UKW-generated PDF report](../../../fr-br/FR-134-kanban-completed-sqlite-ledger-pdf-report.md)
+**Upstream:** [FR-134 — SQLite completed-task ledger with UKW-generated PDF report](../../../fbu/FR-134-kanban-completed-sqlite-ledger-pdf-report.md)
 
 **IPW:** [IPP-E04S14T12](../../../../implementation-cycles/IPP-E04S14T12-kanban-completed-sqlite-ledger-pdf-report.md)
 
@@ -33,11 +33,11 @@ Replace **`kanban-completed.md`** as the completed-task ledger with **`.adk/kanb
 
 ## Input
 
-- [FR-134](../../../fr-br/FR-134-kanban-completed-sqlite-ledger-pdf-report.md)
+- [FR-134](../../../fbu/FR-134-kanban-completed-sqlite-ledger-pdf-report.md)
 - Legacy ledger: [`kanban-completed.md`](../../../kanban-completed.md)
 - Archival helpers: [`archive_completed.py`](../../../../../packages/frameworks/workflow-mgt/scripts/kanban/archive_completed.py)
 - Precedent: [release-state SQLite mode](../../../../../packages/frameworks/workflow-mgt/docs/release-state-sqlite-mode.md)
-- Supersedes (format): [FR-049](../../../fr-br/FR-049-enhanced-kanban-completed-with-timestamps-and-recent-tasks.md) markdown-era ledger
+- Supersedes (format): [FR-049](../../../fbu/FR-049-enhanced-kanban-completed-with-timestamps-and-recent-tasks.md) markdown-era ledger
 
 **IPW planning artifact (when used):** [IPP-E04S14T12](../../../../implementation-cycles/IPP-E04S14T12-kanban-completed-sqlite-ledger-pdf-report.md)
 
@@ -66,7 +66,7 @@ Replace **`kanban-completed.md`** as the completed-task ledger with **`.adk/kanb
 
 ## References
 
-- [FR-134](../../../fr-br/FR-134-kanban-completed-sqlite-ledger-pdf-report.md)
-- [FR-102](../../../fr-br/FR-102-ukw-archive-completed-board-rows.md)
-- [FR-109](../../../fr-br/FR-109-ukw-lean-active-board-contract.md)
+- [FR-134](../../../fbu/FR-134-kanban-completed-sqlite-ledger-pdf-report.md)
+- [FR-102](../../../fbu/FR-102-ukw-archive-completed-board-rows.md)
+- [FR-109](../../../fbu/FR-109-ukw-lean-active-board-contract.md)
 - [T08 — UKW archive completed `-c`](T08-ukw-archive-completed-board-rows-fr102.md)

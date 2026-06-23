@@ -16,7 +16,7 @@ housekeeping_policy: keep
 **Last updated:** 2026-03-10  
 **Version:** v0.6.6.3+1  
 
-**Associated BR:** [BR-040](../../../fr-br/BR-040-apple-sdk-license-blocking-issue.md)
+**Associated BR:** [BR-040](../../../fbu/BR-040-apple-sdk-license-blocking-issue.md)
 
 ---
 
@@ -80,7 +80,7 @@ Investigate Apple SDK license blocking issues, identify root causes, and impleme
 
 ## Input
 
-- **BR-040:** [`BR-040-apple-sdk-license-blocking-issue.md`](../../../fr-br/BR-040-apple-sdk-license-blocking-issue.md)
+- **BR-040:** [`BR-040-apple-sdk-license-blocking-issue.md`](../../../fbu/BR-040-apple-sdk-license-blocking-issue.md)
 - **Platform Documentation:** Apple SDK licensing requirements and restrictions
 - **Installation Logs:** Existing install logs from Apple platform users
 - **Error Reports:** User reports of Apple SDK license blocking

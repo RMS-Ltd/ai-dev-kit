@@ -10,7 +10,7 @@ housekeeping_policy: keep
 
 **Task ID:** E6:S06:T57  
 **Host Task:** [T57-br039-cascade-whitelist-security-prompt-blocker.md](../kanban/epics/epic-06/story-06-feature-requests/T57-br039-cascade-whitelist-security-prompt-blocker.md)  
-**Intake BR:** [BR-039-cascade-whitelist-security-prompt-usability-blocker.md](../kanban/fr-br/BR-039-cascade-whitelist-security-prompt-usability-blocker.md)  
+**Intake BR:** [BR-039-cascade-whitelist-security-prompt-usability-blocker.md](../kanban/fbu/BR-039-cascade-whitelist-security-prompt-usability-blocker.md)  
 **Scope type:** Vendor blocker with repository-owned traceability and validation workflow
 
 ---

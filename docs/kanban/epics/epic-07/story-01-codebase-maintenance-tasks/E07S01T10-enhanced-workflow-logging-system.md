@@ -16,7 +16,7 @@ housekeeping_policy: keep
 **Started:** 2026-03-17  
 **Completed:** 2026-06-10 (supersession reconciliation)  
 **Version:** v0.7.1.10+1 (historical E07 filing only; FR-059 evidence is `v0.2.8.8+3`)  
-**Related FR:** [FR-059](../../../fr-br/FR-059-enhanced-workflow-logging-system.md)  
+**Related FR:** [FR-059](../../../fbu/FR-059-enhanced-workflow-logging-system.md)  
 
 ---
 

@@ -69,7 +69,7 @@ Execution order is strictly **bottom-up**: Tasks → Stories → Epics → Board
    - Write one archive entry to `kanban-completed.md` — do not write duplicate entries if the same task ID appeared in multiple sections
    - Archive entry format:
      ```
-     - **[E#:S#:T##](path/to/task.md)** — [FR/BR ref] [description]; **[FR/BR link](fr-br/...)** STATUS.
+     - **[E#:S#:T##](path/to/task.md)** — [FR/BR ref] [description]; **[FR/BR link](fbu/...)** STATUS.
        **Completed:** `YYYY-MM-DDTHH:MM:SSZ` | **Version:** `vX.X.X.X+N` | **Agent:** `UKW`
      ```
 3. Deduplication pass: scan all remaining sections for any task ID still appearing more than once; retain the entry in the highest-priority section (Must Have > Should Have > Could Have > Ongoing > Won't Have) and remove the others

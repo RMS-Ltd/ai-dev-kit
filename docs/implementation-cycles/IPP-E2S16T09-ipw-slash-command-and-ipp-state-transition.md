@@ -9,7 +9,7 @@ housekeeping_policy: keep
 # E2:S16:T09 — Planning: Spec, Tests, Implementation Plan (IPW)
 
 **Host Task:** [`T09-ipw-slash-command-claude-code-fr094.md`](../kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T09-ipw-slash-command-claude-code-fr094.md) **(E2:S16:T09)**  
-**Planning for:** [FR-094](../kanban/fr-br/FR-094-ipw-slash-command-and-task-state-transition-mandate.md)  
+**Planning for:** [FR-094](../kanban/fbu/FR-094-ipw-slash-command-and-task-state-transition-mandate.md)  
 **Status:** Approved
 
 > **IPW (Implementation Planning Workflow):** This document was produced by `/ipw E2:S16:T09` under plan mode. It is the canonical IPP artefact for E2:S16:T09, bidirectionally wired to the host task doc.
@@ -127,7 +127,7 @@ All RF1–RF12 requirements map directly to the ten deliverable files listed in 
 - `packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/implementation-planning-workflow-agent-execution.md`
 - `.cursorrules`
 - `AGENTS.md`
-- `docs/kanban/fr-br/FR-077-ipw-built-task-status-transition-and-kboard-sync.md`
+- `docs/kanban/fbu/FR-077-ipw-built-task-status-transition-and-kboard-sync.md`
 - `docs/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T09-ipw-slash-command-claude-code-fr094.md`
 
 ### 4.3 Dependency order
@@ -156,8 +156,8 @@ All RF1–RF12 requirements map directly to the ten deliverable files listed in 
 ## References
 
 - [Host Task E2:S16:T09](../kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T09-ipw-slash-command-claude-code-fr094.md)
-- [FR-094](../kanban/fr-br/FR-094-ipw-slash-command-and-task-state-transition-mandate.md)
-- [FR-077](../kanban/fr-br/FR-077-ipw-built-task-status-transition-and-kboard-sync.md)
+- [FR-094](../kanban/fbu/FR-094-ipw-slash-command-and-task-state-transition-mandate.md)
+- [FR-077](../kanban/fbu/FR-077-ipw-built-task-status-transition-and-kboard-sync.md)
 - [ADR-004](../architecture/standards-and-adrs/ADR-004-ipp-state-transition-contract.md)
 - `.claude/commands/ipw.md`
 - `packages/frameworks/kanban/templates/PLAN_DOC_TEMPLATE.md`

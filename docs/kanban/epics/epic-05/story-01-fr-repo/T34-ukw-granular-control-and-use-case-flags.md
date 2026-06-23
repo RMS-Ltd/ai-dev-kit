@@ -49,8 +49,8 @@ Add granular control to UKW (Update Kanban Workflow) via use case flags and flex
 
 ## Input
 
-- **FR-034:** [`FR-034-ukw-granular-control-and-use-case-flags.md`](../../../fr-br/FR-034-ukw-granular-control-and-use-case-flags.md)
-- **BR-033:** [`BR-033-ukw-board-disorganization.md`](../../../fr-br/BR-033-ukw-board-disorganization.md) (related bug report)
+- **FR-034:** [`FR-034-ukw-granular-control-and-use-case-flags.md`](../../../fbu/FR-034-ukw-granular-control-and-use-case-flags.md)
+- **BR-033:** [`BR-033-ukw-board-disorganization.md`](../../../fbu/BR-033-ukw-board-disorganization.md) (related bug report)
 - **UKW Documentation:** `packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/update-kanban-workflow-agent-execution.md`
 - **UKW Workflow:** `packages/frameworks/workflow-mgt/workflows/update-kanban-workflow.yaml`
 - **Kanban Board:** `docs/kanban/kboard.md`
@@ -177,8 +177,8 @@ Add granular control to UKW (Update Kanban Workflow) via use case flags and flex
 ## Related Work
 
 **Related BR/FR Links:**
-- [FR-034: UKW Granular Control and Use Case Flags](../../../fr-br/FR-034-ukw-granular-control-and-use-case-flags.md)
-- [BR-033: UKW Board Disorganization](../../../fr-br/BR-033-ukw-board-disorganization.md) (related bug report)
+- [FR-034: UKW Granular Control and Use Case Flags](../../../fbu/FR-034-ukw-granular-control-and-use-case-flags.md)
+- [BR-033: UKW Board Disorganization](../../../fbu/BR-033-ukw-board-disorganization.md) (related bug report)
 
 **Related Tasks:**
 - [E06:S00:T33: UKW Board Disorganization](../../epic-06/story-00-br-repo/T33-ukw-board-disorganization.md) - Related bug fix

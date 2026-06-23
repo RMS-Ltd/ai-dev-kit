@@ -12,7 +12,7 @@ housekeeping_policy: keep
 **Status:** Planning complete — implementation executed per §4  
 **Planning doc created:** 2026-05-26
 
-**FR:** [FR-100](../kanban/fr-br/FR-100-ipw-adr-necessity-checklist-and-decision-gate.md)
+**FR:** [FR-100](../kanban/fbu/FR-100-ipw-adr-necessity-checklist-and-decision-gate.md)
 
 ---
 

@@ -126,5 +126,5 @@ Scores: **1** (poor fit) → **5** (excellent fit). Higher is better.
 
 - [ADR-024](ADR-024-i18n-framework-strategy.md)
 - [IPP-E21S02T01](../../implementation-cycles/IPP-E21S02T01-choose-i18n-framework.md)
-- [FR-006](../../project-management/kanban/fr-br/FR-006-localization-language-selection-uk-us-english.md)
+- [FR-006](../../project-management/kanban/fbu/FR-006-localization-language-selection-uk-us-english.md)
 - [localisation_config.py](../../../packages/frameworks/workflow-mgt/scripts/localisation_config.py)

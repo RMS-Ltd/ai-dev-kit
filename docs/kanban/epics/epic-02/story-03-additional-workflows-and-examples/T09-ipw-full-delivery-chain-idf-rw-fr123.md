@@ -18,8 +18,8 @@ housekeeping_policy: keep
 
 > **Filename note:** Path retains `fr123` from intake banking release; canonical scope is **FR-124**.
 
-**Upstream:** [FR-124 — Meta-workflow orchestration](../../../fr-br/FR-124-meta-workflow-orchestration-composite-workflow-chains.md)  
-**Historical:** [FR-123 — superseded `IPW --rw` approach](../../../fr-br/FR-123-ipw-full-delivery-chain-idf-rw.md)
+**Upstream:** [FR-124 — Meta-workflow orchestration](../../../fbu/FR-124-meta-workflow-orchestration-composite-workflow-chains.md)  
+**Historical:** [FR-123 — superseded `IPW --rw` approach](../../../fbu/FR-123-ipw-full-delivery-chain-idf-rw.md)
 
 ---
 
@@ -32,10 +32,10 @@ Implement **meta-workflow orchestration (`MWF`)**: an agent-driven orchestrator 
 ## Input
 
 - [IPP-E02S03T09 — Meta-workflow orchestration (MWF)](../../../../implementation-cycles/IPP-E02S03T09-meta-workflow-orchestration-mwf-fr124.md)
-- [FR-124](../../../fr-br/FR-124-meta-workflow-orchestration-composite-workflow-chains.md)
-- [FR-123](../../../fr-br/FR-123-ipw-full-delivery-chain-idf-rw.md) (superseded — historical)
-- [FR-119](../../../fr-br/FR-119-implementation-delivery-workflow-idw.md) (IDW `--rw` two-leg chain)
-- [FR-042](../../../fr-br/FR-042-implementation-planning-workflow-ipw.md) (IPW)
+- [FR-124](../../../fbu/FR-124-meta-workflow-orchestration-composite-workflow-chains.md)
+- [FR-123](../../../fbu/FR-123-ipw-full-delivery-chain-idf-rw.md) (superseded — historical)
+- [FR-119](../../../fbu/FR-119-implementation-delivery-workflow-idw.md) (IDW `--rw` two-leg chain)
+- [FR-042](../../../fbu/FR-042-implementation-planning-workflow-ipw.md) (IPW)
 - Pattern: [T08 / IDW delivery](T08-implementation-delivery-workflow-idw-fr118.md)
 
 ---
@@ -50,8 +50,8 @@ Implement **meta-workflow orchestration (`MWF`)**: an agent-driven orchestrator 
 
 ## Associated Feature Requests
 
-- [FR-124 — Meta-workflow orchestration](../../../fr-br/FR-124-meta-workflow-orchestration-composite-workflow-chains.md) (primary)
-- [FR-123](../../../fr-br/FR-123-ipw-full-delivery-chain-idf-rw.md) (superseded)
+- [FR-124 — Meta-workflow orchestration](../../../fbu/FR-124-meta-workflow-orchestration-composite-workflow-chains.md) (primary)
+- [FR-123](../../../fbu/FR-123-ipw-full-delivery-chain-idf-rw.md) (superseded)
 
 ---
 

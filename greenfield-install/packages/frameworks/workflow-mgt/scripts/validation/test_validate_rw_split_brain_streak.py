@@ -49,20 +49,22 @@ def _write_release(
     internal: str,
     semver: str,
     *,
+    display_semver: str | None = None,
     tag: bool = True,
 ) -> None:
     rc, epic, story, task, build = internal.replace("+", ".").split(".")
+    shown = display_semver or semver.split("+", 1)[0]
     (repo / "src/v.py").write_text(
         f"VERSION_RC = {rc}\nVERSION_EPIC = {epic}\nVERSION_STORY = {story}\n"
         f"VERSION_TASK = {task}\nVERSION_BUILD = {build}\n",
         encoding="utf-8",
     )
     (repo / "README.md").write_text(
-        f"**Version (SemVer):** `v{semver}` | **Internal:** `v{internal}`\n",
+        f"**Version (SemVer):** `v{shown}` | **Internal:** `v{internal}`\n",
         encoding="utf-8",
     )
     (repo / "CHANGELOG.md").write_text(
-        f"## [{internal}] - 09-06-26\n\nSemVer **v{semver}**.\n",
+        f"## [{internal}] - 09-06-26\n\nSemVer **v{shown}**.\n",
         encoding="utf-8",
     )
     # Minimal sqlite mapping
@@ -107,8 +109,8 @@ def test_compute_streak_breaks_on_first_failure():
 
 
 def test_streak_two_coherent_releases(mini_repo):
-    _write_release(mini_repo, "0.2.1.1+1", "0.4.1+1")
-    _write_release(mini_repo, "0.2.1.1+2", "0.4.2+2")
+    _write_release(mini_repo, "0.2.1.1+1", "0.4.1+1", display_semver="0.4.1")
+    _write_release(mini_repo, "0.2.1.1+2", "0.4.2+2", display_semver="0.4.2")
     ok, payload = streak.validate_rw_split_brain_streak(
         project_root=mini_repo,
         min_streak=2,

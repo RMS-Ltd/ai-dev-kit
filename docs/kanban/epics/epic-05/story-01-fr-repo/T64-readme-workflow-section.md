@@ -42,7 +42,7 @@ Add a comprehensive "Workflows" section to the project README.md that documents 
 
 ## Input
 
-- **FR-061:** [`FR-061-readme-workflow-section.md`](../../../fr-br/FR-061-readme-workflow-section.md)
+- **FR-061:** [`FR-061-readme-workflow-section.md`](../../../fbu/FR-061-readme-workflow-section.md)
 - **Current README:** `README.md`
 - **Workflow Documentation:** `packages/frameworks/workflow-mgt/KB/Documentation/`
 - **Workflow Scripts:** `packages/frameworks/workflow-mgt/scripts/`

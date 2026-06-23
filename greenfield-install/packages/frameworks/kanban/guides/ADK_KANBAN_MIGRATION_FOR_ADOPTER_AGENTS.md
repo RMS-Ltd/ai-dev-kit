@@ -10,7 +10,7 @@ housekeeping_policy: keep
 **Mode:** Agentic intelligence required — **not** scripted migration  
 **Canonical execution:** [kanban-migration-agent-execution.md](../KB/Documentation/Developer_Docs/kanban-migration-agent-execution.md)  
 **Guardrails:** [kma-agent-guardrails.yaml](../manifests/kma-agent-guardrails.yaml)  
-**Policy:** [FR-127](../../../docs/kanban/fr-br/FR-127-agentic-kanban-migration-agent-replace-tool-pipeline.md) · [FR-133](../../../docs/kanban/fr-br/FR-133-kanban-migration-depth-rationalization-adopter-guide.md) · [ADR-028](../../../docs/architecture/standards-and-adrs/ADR-028-agentic-kanban-migration-brownfield-fr127.md)
+**Policy:** [FR-127](../../../docs/kanban/fbu/FR-127-agentic-kanban-migration-agent-replace-tool-pipeline.md) · [FR-133](../../../docs/kanban/fbu/FR-133-kanban-migration-depth-rationalization-adopter-guide.md) · [ADR-028](../../../docs/architecture/standards-and-adrs/ADR-028-agentic-kanban-migration-brownfield-fr127.md)
 
 **Load order:** [KANBAN_MIGRATION_DEPTH_AND_RATIONALIZATION.md](KANBAN_MIGRATION_DEPTH_AND_RATIONALIZATION.md) (L1 default) → [INSTALL Migrate (default)](../../../../INSTALL_IN_YOUR_PROJECT.md#migrate-default) → this playbook → execution guide.
 

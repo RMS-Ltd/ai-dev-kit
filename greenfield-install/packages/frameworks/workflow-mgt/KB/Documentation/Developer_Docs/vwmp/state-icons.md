@@ -11,12 +11,12 @@ Prefix every active MoSCOW row on `kboard.md` with a **canonical Set A (emoji)**
 | `IN_REVIEW` | `IN REVIEW` (aliases: `UNDER REVIEW`, `PEER REVIEW`) | magnifying glass | U+25CE |
 | `WAITING` | `WAITING` (aliases: `WAITING FOR SIGN-OFF`, `AWAITING SIGN-OFF`, `WAITING FOR APPROVAL`) | hourglass | U+231B |
 
-**Semantics:** `IN REVIEW` = deliverable ready, peer/maintainer review in flight. `WAITING` = external gate (sign-off, adopter replay, PO acceptance) — not `BLOCKED`. See [UXR-019](../../../../../../docs/kanban/fr-br/UXR-019-kanban-task-waiting-in-review-state-icons.md).
+**Semantics:** `IN REVIEW` = deliverable ready, peer/maintainer review in flight. `WAITING` = external gate (sign-off, adopter replay, PO acceptance) — not `BLOCKED`. See [UXR-019](../../../../../../docs/kanban/fbu/UXR-019-kanban-task-waiting-in-review-state-icons.md).
 
 ## Source of truth
 
 - **Python module:** `packages/frameworks/workflow-mgt/scripts/kanban/state_icons.py` — primary/fallback tables, alias normalization, `inject_primary_icon_into_moscow_line`, `apply_icons_to_moscow_board_content`.
-- **Research / policy:** `docs/kanban/fr-br/UXR-012-kanban-fbu-state-icons-for-moscow-rows.md`, `kanban-board-guide.md`, `kanban-governance-policy.md`.
+- **Research / policy:** `docs/kanban/fbu/UXR-012-kanban-fbu-state-icons-for-moscow-rows.md`, `kanban-board-guide.md`, `kanban-governance-policy.md`.
 
 ## Operator commands
 

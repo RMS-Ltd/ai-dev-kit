@@ -34,7 +34,7 @@ Phase 1 MVP locale corpus: `packages/frameworks/kanban/locales/` (manifest + 8 c
 ## Input
 
 - Existing US English content (canonical kanban templates)
-- Language selection requirements ([FR-006](../../../fr-br/FR-006-localization-language-selection-uk-us-english.md) Phase 1)
+- Language selection requirements ([FR-006](../../../fbu/FR-006-localization-language-selection-uk-us-english.md) Phase 1)
 - Planning: [IPP-E21S01T04](../../../../implementation-cycles/IPP-E21S01T04-ukus-content-variants-mvp.md)
 - Upstream: T01–T03 (`ai-dev-kit-config.yaml` write path)
 
@@ -79,7 +79,7 @@ Phase 1 MVP locale corpus: `packages/frameworks/kanban/locales/` (manifest + 8 c
 RW -k E21:S01:T04 --art --dpz
 ```
 
-**Target version anchor:** `v0.21.1.4+0` (doc-init BUILD +0 per [BR-067](../../../fr-br/BR-067-rw-first-doc-only-release-defaults-to-build-plus-one-not-plus-zero.md)).
+**Target version anchor:** `v0.21.1.4+0` (doc-init BUILD +0 per [BR-067](../../../fbu/BR-067-rw-first-doc-only-release-defaults-to-build-plus-one-not-plus-zero.md)).
 
 ---
 

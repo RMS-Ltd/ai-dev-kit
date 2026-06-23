@@ -28,7 +28,7 @@ config:
   snapshot_boards_script: packages/frameworks/workflow-mgt/scripts/kanban/snapshot_kanban_boards.py
   validate_board_stamp_diff_script: packages/frameworks/workflow-mgt/scripts/validation/validate_board_stamp_diff.py
   kanban_structure: kanban-structure.md
-  fr_br_root: fr-br
+  fbu_root: fbu
   git_commit_history_days: 7
   use_rw_config: true
   fbu_recent_dashboard_limit: 20
@@ -166,7 +166,7 @@ steps:
       - step-6
     config:
       fr_br_uxr_board: ${config.fr_br_uxr_board}
-      fr_br_root: ${config.fr_br_root}
+      fbu_root: ${config.fbu_root}
       kanban_root: ${config.kanban_root}
       remove_terminal_from_active: true
       terminal_statuses:
@@ -226,10 +226,10 @@ steps:
       fr_br_uxr_board: ${config.fr_br_uxr_board}
       fr_br_uxr_completed: ${config.fr_br_uxr_completed}
       fr_br_uxr_structure: ${config.fr_br_uxr_structure}
-      fr_br_root: ${config.fr_br_root}
+      fbu_root: ${config.fbu_root}
       check_active_board_vs_source_status: true
       check_completed_archive_vs_source: true
-      check_structure_inventory_vs_fr_br_root: true
+      check_structure_inventory_vs_fbu_root: true
       check_link_integrity: true
       check_version_marker_alignment: true
 

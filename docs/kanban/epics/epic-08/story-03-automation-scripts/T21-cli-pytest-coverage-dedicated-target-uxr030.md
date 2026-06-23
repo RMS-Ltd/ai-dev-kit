@@ -17,8 +17,8 @@ housekeeping_policy: keep
 **Version Anchor:** v0.8.3.21+1  
 **Code:** E08S03T21
 
-**Upstream:** [UXR-030 — Default pytest CLI coverage misleading 0%](../../../fr-br/UXR-030-default-pytest-cli-coverage-misleading-zero-percent.md)  
-**Related:** [E08:S03:T04](T04-ci-test-workflow-pytest-remediation-br058.md) · [E08:S03:T19](T19-workflow-scripts-pytest-tuple-return-false-green-br103.md) · [BR-058](../../../fr-br/BR-058-ci-test-workflow-missing-and-pytest-failures.md)
+**Upstream:** [UXR-030 — Default pytest CLI coverage misleading 0%](../../../fbu/UXR-030-default-pytest-cli-coverage-misleading-zero-percent.md)  
+**Related:** [E08:S03:T04](T04-ci-test-workflow-pytest-remediation-br058.md) · [E08:S03:T19](T19-workflow-scripts-pytest-tuple-return-false-green-br103.md) · [BR-058](../../../fbu/BR-058-ci-test-workflow-missing-and-pytest-failures.md)
 
 Publication Status: NOT_APPLICABLE
 
@@ -38,7 +38,7 @@ Default `pytest.ini` included `--cov=cli` in `addopts`. Portal/kanban/workflow-o
 
 ## Input
 
-- [UXR-030](../../../fr-br/UXR-030-default-pytest-cli-coverage-misleading-zero-percent.md)
+- [UXR-030](../../../fbu/UXR-030-default-pytest-cli-coverage-misleading-zero-percent.md)
 - [`pytest.ini`](../../../../../pytest.ini) · [`pytest-cli-cov.ini`](../../../../../pytest-cli-cov.ini)
 - [`.github/workflows/tests.yml`](../../../../../.github/workflows/tests.yml)
 
@@ -67,7 +67,7 @@ Default `pytest.ini` included `--cov=cli` in `addopts`. Portal/kanban/workflow-o
 
 ## Associated User Experience Research
 
-- [UXR-030 — Default pytest CLI coverage misleading 0%](../../../fr-br/UXR-030-default-pytest-cli-coverage-misleading-zero-percent.md) (primary)
+- [UXR-030 — Default pytest CLI coverage misleading 0%](../../../fbu/UXR-030-default-pytest-cli-coverage-misleading-zero-percent.md) (primary)
 
 ---
 

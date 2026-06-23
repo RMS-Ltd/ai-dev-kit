@@ -7,7 +7,7 @@ housekeeping_policy: keep
 # E4:S08:T07 — Planning: FR-011 multi-epic task split (IPP)
 
 **Host Task:** [`T07-task-splitting-across-multiple-canonical-epics-fr-011.md`](../kanban/epics/epic-04/story-08-intelligent-epic-matching-canonical-adoption/T07-task-splitting-across-multiple-canonical-epics-fr-011.md) **(E4:S08:T07)**  
-**Planning for:** [FR-011](../kanban/fr-br/FR-011-task-splitting-multiple-canonical-epics.md)  
+**Planning for:** [FR-011](../kanban/fbu/FR-011-task-splitting-multiple-canonical-epics.md)  
 **Status:** Published
 
 **Supersedes (consolidated):** [ICW-E4S8T7-specification.md](ICW-E4S08T07-implementation-plan.md), [ICW-E4S8T7-test-design.md](ICW-E4S08T07-implementation-plan.md), [ICW-E4S8T7-implementation-plan.md](ICW-E4S08T07-implementation-plan.md)

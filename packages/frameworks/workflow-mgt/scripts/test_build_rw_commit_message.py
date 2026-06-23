@@ -13,6 +13,21 @@ sys.path.insert(0, str(_SCRIPTS))
 from version.build_rw_commit_message import build_rw_commit_message  # noqa: E402
 
 
+def test_subject_uses_semver_core_without_build():
+    result = build_rw_commit_message(
+        "0.2.1.31+1",
+        "GitHub Actions run title external SemVer",
+        epic=2,
+        story=1,
+        task=31,
+    )
+    assert result["subject"].startswith("Release v")
+    assert "+1" not in result["subject"]
+    assert "0.2.1.31" not in result["subject"]
+    assert "GitHub Actions run title external SemVer" in result["subject"]
+    assert result["semver_full"].endswith("+1")
+
+
 def test_subject_uses_semver_prefix():
     result = build_rw_commit_message(
         "0.2.1.31+1",

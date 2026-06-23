@@ -91,15 +91,15 @@ Falls back to `packages/frameworks/kanban/templates/` when locale files are abse
 
 **For Feature Requests:**
 - Use locale-resolved `FR_TEMPLATE.md` (see above) or canonical `FR_TEMPLATE.md`
-- Location: `docs/kanban/fr-br/FR-XXX-[title].md` (or project-specific location)
+- Location: `docs/kanban/fbu/FR-XXX-[title].md` (or project-specific location)
 
 **For Bug Reports:**
 - Use locale-resolved `BR_TEMPLATE.md` or canonical `BR_TEMPLATE.md`
-- Location: `docs/kanban/fr-br/BR-XXX-[title].md` (or project-specific location)
+- Location: `docs/kanban/fbu/BR-XXX-[title].md` (or project-specific location)
 
 
 **For UXR (where used):**
-- Location: `docs/kanban/fr-br/UXR-XXX-[title].md` (or project-specific location)
+- Location: `docs/kanban/fbu/UXR-XXX-[title].md` (or project-specific location)
 
 **Required Information:**
 - Summary (one sentence)

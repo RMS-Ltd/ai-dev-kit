@@ -9,7 +9,7 @@ housekeeping_policy: keep
 # E21:S02:T01 — Planning: Choose i18n framework/library (IPW)
 
 **Host Task:** [`T01-choose-i18n-frameworklibrary.md`](../project-management/kanban/epics/epic-21/story-02-internationalisation-infrastructure/T01-choose-i18n-frameworklibrary.md) **(E21:S02:T01)**  
-**Planning for:** [FR-006 Phase 2](../project-management/kanban/fr-br/FR-006-localization-language-selection-uk-us-english.md) · [E21:S02](../project-management/kanban/epics/epic-21/story-02-internationalisation-infrastructure.md)  
+**Planning for:** [FR-006 Phase 2](../project-management/kanban/fbu/FR-006-localization-language-selection-uk-us-english.md) · [E21:S02](../project-management/kanban/epics/epic-21/story-02-internationalisation-infrastructure.md)  
 **Status:** Complete — released `v0.21.2.1+1` (`RW E21:S02:T01 --art`)  
 **Branch:** `epic/21-internationalisation-localisation`
 
@@ -149,7 +149,7 @@ T01 is documentation/decision-only. Verification is **structural + traceability*
 
 - `docs/project-management/kanban/epics/epic-21/story-02-internationalisation-infrastructure/T01-choose-i18n-frameworklibrary.md`
 - `docs/project-management/kanban/epics/epic-21/story-02-internationalisation-infrastructure.md`
-- `docs/project-management/kanban/fr-br/FR-006-localization-language-selection-uk-us-english.md`
+- `docs/project-management/kanban/fbu/FR-006-localization-language-selection-uk-us-english.md`
 - `packages/frameworks/kanban/locales/README.md`
 
 **NONE:**
@@ -236,7 +236,7 @@ T01 is documentation/decision-only. Verification is **structural + traceability*
 
 - [ADR-024](../architecture/standards-and-adrs/ADR-024-i18n-framework-strategy.md)
 - [i18n-framework-evaluation-matrix.md](../architecture/standards-and-adrs/i18n-framework-evaluation-matrix.md)
-- [FR-006](../project-management/kanban/fr-br/FR-006-localization-language-selection-uk-us-english.md)
+- [FR-006](../project-management/kanban/fbu/FR-006-localization-language-selection-uk-us-english.md)
 - [story-02-internationalisation-infrastructure.md](../project-management/kanban/epics/epic-21/story-02-internationalisation-infrastructure.md)
 - [localisation_config.py](../../packages/frameworks/workflow-mgt/scripts/localisation_config.py)
 - [IPP-E21S01T05](IPP-E21S01T05-config-read-locale-resolution.md)

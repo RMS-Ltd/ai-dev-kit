@@ -14,7 +14,7 @@ housekeeping_policy: keep
 **Created:** 2026-06-03  
 **Code:** E06S09T11
 
-**Upstream:** [BR-082](../../../fr-br/BR-082-rw-install-missing-pyyaml-preflight.md) · [GitHub #14](https://github.com/RMS-Ltd/ai-dev-kit/issues/14)
+**Upstream:** [BR-082](../../../fbu/BR-082-rw-install-missing-pyyaml-preflight.md) · [GitHub #14](https://github.com/RMS-Ltd/ai-dev-kit/issues/14)
 
 ## Version Anchor
 
@@ -30,7 +30,7 @@ Improve `install_release_workflow.py` first-run UX: preflight or docs for `pyyam
 
 ## Input
 
-- [BR-082](../../../fr-br/BR-082-rw-install-missing-pyyaml-preflight.md)
+- [BR-082](../../../fbu/BR-082-rw-install-missing-pyyaml-preflight.md)
 - `install_release_workflow.py` and RW install docs
 - **IPW:** [IPP-E6S9T11-br082-rw-install-pyyaml-preflight.md](../../../../implementation-cycles/IPP-E06S09T11-br082-rw-install-pyyaml-preflight.md) — **Publication Status: PUBLISHED**
 
@@ -57,6 +57,6 @@ Improve `install_release_workflow.py` first-run UX: preflight or docs for `pyyam
 
 ## Links
 
-- [BR-082](../../../fr-br/BR-082-rw-install-missing-pyyaml-preflight.md)
+- [BR-082](../../../fbu/BR-082-rw-install-missing-pyyaml-preflight.md)
 - [IPP-E6S9T11](../../../../implementation-cycles/IPP-E06S09T11-br082-rw-install-pyyaml-preflight.md)
 - [Story 009](../story-09-ai-dev-kit-installation-and-adopter-integration.md)

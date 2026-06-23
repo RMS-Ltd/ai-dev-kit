@@ -74,4 +74,4 @@ Locale and setup prompts use numbered options with explicit defaults in text (se
 
 - [ADR-025](../../architecture/standards-and-adrs/ADR-025-layered-accessibility-strategy.md)
 - [Baseline audit](../../knowledge/analysis/adk-accessibility-baseline-layer1-cli.md)
-- [FR-108](../../project-management/kanban/fr-br/FR-108-install-setup-error-code-registry-and-emission.md)
+- [FR-108](../../project-management/kanban/fbu/FR-108-install-setup-error-code-registry-and-emission.md)

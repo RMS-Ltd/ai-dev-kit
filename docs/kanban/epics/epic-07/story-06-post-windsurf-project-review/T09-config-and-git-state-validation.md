@@ -60,7 +60,7 @@ All paths resolved from repository root; **all OK**.
 | `readme_file` | `README.md` | OK (file) |
 | `kanban_root` | `docs/kanban` | OK (dir) |
 | `kanban_board` | `kboard.md` (under `kanban_root`) | OK (file) |
-| `fr_br_root` | `docs/kanban/fr-br` | OK (dir) |
+| `fbu_root` | `docs/kanban/fbu` | OK (dir) |
 
 **Pattern spot-check (Epic 7):**
 

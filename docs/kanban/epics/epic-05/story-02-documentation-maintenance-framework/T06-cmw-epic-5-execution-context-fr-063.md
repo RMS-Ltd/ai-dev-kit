@@ -33,7 +33,7 @@ housekeeping_policy: keep
 
 ## Input
 
-[FR-063](../../../fr-br/FR-063-cmw-epic-5-execution-context.md); `cmw.py`; `validate_branch_context.py`; Epic 5 branch `epic/5-documentation-management`
+[FR-063](../../../fbu/FR-063-cmw-epic-5-execution-context.md); `cmw.py`; `validate_branch_context.py`; Epic 5 branch `epic/5-documentation-management`
 
 ---
 

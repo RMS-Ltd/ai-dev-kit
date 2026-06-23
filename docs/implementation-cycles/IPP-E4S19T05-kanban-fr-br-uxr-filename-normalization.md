@@ -9,7 +9,7 @@ housekeeping_policy: keep
 # E4:S19:T05 - Planning: Spec, Tests, Implementation Plan (IPP)
 
 **Host Task:** [`T05-kanban-and-fr-br-uxr-filename-normalization-uxr008.md`](../kanban/epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T05-kanban-and-fr-br-uxr-filename-normalization-uxr008.md) **(E4:S19:T05)**  
-**Planning for:** [UXR-008 - Canonical Kanban filename normalization](../kanban/fr-br/UXR-008-kboard-fbuboard-default-naming-adoption.md)  
+**Planning for:** [UXR-008 - Canonical Kanban filename normalization](../kanban/fbu/UXR-008-kboard-fbuboard-default-naming-adoption.md)  
 **Status:** Draft
 
 ---
@@ -78,10 +78,10 @@ Normalize kanban and FR/BR/UXR related filenames under `docs/kanban/` to a conci
 
 | Current path | Candidate canonical target | Notes |
 | ---- | ---- | ---- |
-| `docs/kanban/fr-br-uxr-structure.md` | `docs/kanban/intake-structure.md` | Align collective naming with `fbuboard` shorthand. |
-| `docs/kanban/fr-br-uxr-completed.md` | `docs/kanban/intake-completed.md` | Keep completed ledger naming parallel to board shorthand. |
-| `docs/kanban/fr-br-uxr-board.md` (legacy alias) | `docs/kanban/kboard.md` (already canonical) | Preserve as compatibility alias or redirect doc. |
-| `docs/kanban/fr-br/` | `docs/kanban/fbu/` *(decision pending)* | High-blast-radius folder rename; evaluate separately before execution. |
+| `docs/kanban/fbu-uxr-structure.md` | `docs/kanban/intake-structure.md` | Align collective naming with `fbuboard` shorthand. |
+| `docs/kanban/fbu-uxr-completed.md` | `docs/kanban/intake-completed.md` | Keep completed ledger naming parallel to board shorthand. |
+| `docs/kanban/fbu-uxr-board.md` (legacy alias) | `docs/kanban/kboard.md` (already canonical) | Preserve as compatibility alias or redirect doc. |
+| `docs/kanban/fbu/` | `docs/kanban/fbu/` *(decision pending)* | High-blast-radius folder rename; evaluate separately before execution. |
 
 ### Phase 2 - Rename and reference migration
 
@@ -109,5 +109,5 @@ Normalize kanban and FR/BR/UXR related filenames under `docs/kanban/` to a conci
 ## References
 
 - [T05 host task](../kanban/epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T05-kanban-and-fr-br-uxr-filename-normalization-uxr008.md)
-- [UXR-008](../kanban/fr-br/UXR-008-kboard-fbuboard-default-naming-adoption.md)
-- [FR-086](../kanban/fr-br/FR-086-canonical-supporting-kanban-fbu-doc-naming-and-fbu-collective-terminology.md)
+- [UXR-008](../kanban/fbu/UXR-008-kboard-fbuboard-default-naming-adoption.md)
+- [FR-086](../kanban/fbu/FR-086-canonical-supporting-kanban-fbu-doc-naming-and-fbu-collective-terminology.md)

@@ -15,7 +15,7 @@ housekeeping_policy: keep
 **Started:** 2026-03-12  
 **Completed:** 2026-03-30  
 **Version:** v0.2.11.12+2  
-**Related BR:** [BR-053](../../../fr-br/BR-053-github-actions-workflow-push-trigger-bug.md)  
+**Related BR:** [BR-053](../../../fbu/BR-053-github-actions-workflow-push-trigger-bug.md)  
 **GitHub Issue:** [#21](https://github.com/RMS-Ltd/ai-dev-kit/issues/21)
 
 ---
@@ -34,7 +34,7 @@ Resolve the critical GitHub Actions behavior where the FR/BR/UXR intake workflow
 
 ## Input
 
-- [BR-053](../../../fr-br/BR-053-github-actions-workflow-push-trigger-bug.md) and GitHub Issue #21  
+- [BR-053](../../../fbu/BR-053-github-actions-workflow-push-trigger-bug.md) and GitHub Issue #21  
 - `gh` CLI access to audit `fr-br-intake` workflow runs  
 - Maintainer agreement to disable the runnable workflow file until triggers are trustworthy  
 

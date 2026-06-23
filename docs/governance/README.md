@@ -8,7 +8,7 @@ housekeeping_policy: keep
 
 # Governance documentation (book workspace)
 
-**Status:** Active (FR-101 complete **v0.7.1.11+8**) — [ADR-007](../architecture/standards-and-adrs/ADR-007-book-governance-document-topology.md) · [FR-101](../kanban/fr-br/FR-101-consolidate-governance-under-docs-governance.md)
+**Status:** Active (FR-101 complete **v0.7.1.11+8**) — [ADR-007](../architecture/standards-and-adrs/ADR-007-book-governance-document-topology.md) · [FR-101](../kanban/fbu/FR-101-consolidate-governance-under-docs-governance.md)
 
 ---
 
@@ -24,6 +24,8 @@ Single navigation entry for **book-active** governance: Kanban rules, versioning
 
 ## Standards (`governance/standards/`)
 
+- [documentation-governance-strategy.md](standards/documentation-governance-strategy.md) — composition index (taxonomy, surfaces, § headings, workflow matrix) · [FR-139](../kanban/fbu/FR-139-unified-documentation-governance-strategy.md)
+- [DOCUMENTATION_SCHEMA.md](standards/DOCUMENTATION_SCHEMA.md) — adopter post-install layout
 - [dev-kit-versioning-policy.md](standards/dev-kit-versioning-policy.md)
 - [changelog-archival-policy.md](standards/changelog-archival-policy.md)
 - [specification-and-planning-artifacts-policy.md](standards/specification-and-planning-artifacts-policy.md)
@@ -68,7 +70,7 @@ Single navigation entry for **book-active** governance: Kanban rules, versioning
 
 ## Book Kanban work (`docs/kanban/`)
 
-- **Board:** [kboard.md](../kanban/kboard.md) · **Intake:** [fr-br/](../kanban/fr-br/)
+- **Board:** [kboard.md](../kanban/kboard.md) · **Intake:** [fbu/](../kanban/fbu/)
 - **Kanban rehousing (FR-118):** [KANBAN-REHOUSING-INVENTORY.md](KANBAN-REHOUSING-INVENTORY.md) · [IPP-E07S01T12](../implementation-cycles/IPP-E07S01T12-kanban-path-promotion-fr118.md)
 
 ---

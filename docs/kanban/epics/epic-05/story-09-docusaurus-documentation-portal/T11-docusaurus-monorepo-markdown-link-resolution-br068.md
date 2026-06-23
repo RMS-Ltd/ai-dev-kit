@@ -17,7 +17,7 @@ housekeeping_policy: keep
 **Code:** E05S09T11  
 **Version anchor:** v0.5.9.11+6 (**BR-068** enforcement; IPP §7.2 satisfied)  
 
-**Origin:** **[BR-068](../../../fr-br/BR-068-docusaurus-monorepo-markdown-links-break-strict-production-build.md)** — strict MDX resolution (`onBrokenMarkdownLinks: 'throw'`) fails on relative links from `docs/` to repository paths outside the `@docusaurus/plugin-content-docs` root (`../docs`), including **`INSTALL_IN_YOUR_PROJECT.md`** (repo root) and **`packages/frameworks/...`**.
+**Origin:** **[BR-068](../../../fbu/BR-068-docusaurus-monorepo-markdown-links-break-strict-production-build.md)** — strict MDX resolution (`onBrokenMarkdownLinks: 'throw'`) fails on relative links from `docs/` to repository paths outside the `@docusaurus/plugin-content-docs` root (`../docs`), including **`INSTALL_IN_YOUR_PROJECT.md`** (repo root) and **`packages/frameworks/...`**.
 
 ---
 
@@ -28,7 +28,7 @@ housekeeping_policy: keep
 
 - **2026-04-19 — Wave 3 (verification — TD1–TD3):** **TD1:** `cd portal && npm run build` → **SUCCESS** (strict **`onBrokenLinks`** / **`onBrokenMarkdownLinks`** / **`onBrokenAnchors`** unchanged). **TD2:** Spot-checked Strategy A targets vs BR-068 failure classes — **`INSTALL_IN_YOUR_PROJECT.md`** (**`docs/documentation/user-docs/install-receipt-reference.md`**, **`ADR-003`**), **`packages/frameworks/**`** (**`docs/implementation-cycles/IPW-E6S7T103-release-workflow-maintenance-perpetual.md`**, Kanban tasks already on GitHub **`blob`** URLs). **TD3:** No intentional internal corpus relaxations; regression covered by successive green strict builds since Wave 2.
 
-- **2026-04-19 — Wave 4 (traceability):** **[BR-068](../../../fr-br/BR-068-docusaurus-monorepo-markdown-links-break-strict-production-build.md)** **`Status: COMPLETE`** + **Resolution** + acceptance criteria checked; legacy IPW §4 success criteria satisfied; **`fr-br-uxr-board`** hygiene (row retired to **`fr-br-uxr-completed`**). Release **`v0.5.9.11+5`**.
+- **2026-04-19 — Wave 4 (traceability):** **[BR-068](../../../fbu/BR-068-docusaurus-monorepo-markdown-links-break-strict-production-build.md)** **`Status: COMPLETE`** + **Resolution** + acceptance criteria checked; legacy IPW §4 success criteria satisfied; **`fr-br-uxr-board`** hygiene (row retired to **`fr-br-uxr-completed`**). Release **`v0.5.9.11+5`**.
 
 - **2026-06-05 — Wave 5 (governance + regression guard):** Canonical **[IPP-E05S09T11](../../../../implementation-cycles/IPP-E05S09T11-docusaurus-monorepo-markdown-link-resolution-br068.md)**; **`tests/test_portal_br068_monorepo_links.py`** publish-scope guard; Strategy A straggler repairs; triage doc Wave 5 row. Release **`v0.5.9.11+6`**.
 
@@ -45,8 +45,8 @@ housekeeping_policy: keep
 ## Input
 
 - **[IPP — spec, tests, implementation plan](../../../../implementation-cycles/IPP-E05S09T11-docusaurus-monorepo-markdown-link-resolution-br068.md)** (**E05:S09:T11** / **BR-068**)
-- [BR-068](../../../fr-br/BR-068-docusaurus-monorepo-markdown-links-break-strict-production-build.md)
-- [FR-067](../../../fr-br/FR-067-docusaurus-production-build-corpus-triage.md) — strict mode intent; T08/T10 follow-ups
+- [BR-068](../../../fbu/BR-068-docusaurus-monorepo-markdown-links-break-strict-production-build.md)
+- [FR-067](../../../fbu/FR-067-docusaurus-production-build-corpus-triage.md) — strict mode intent; T08/T10 follow-ups
 - [`portal/docusaurus.config.js`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/portal/docusaurus.config.js)
 - [`docs/maintenance/docusaurus-corpus-triage-fr-067.md`](../../../../maintenance/docusaurus-corpus-triage-fr-067.md) — failure classes (update when policy is chosen)
 - [Legacy IPW (deprecated)](../../../../implementation-cycles/IPW-E5S09T11-docusaurus-monorepo-markdown-links-br068.md)

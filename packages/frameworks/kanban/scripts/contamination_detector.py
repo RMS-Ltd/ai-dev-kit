@@ -61,7 +61,7 @@ def _classify_md(rel: Path, text: str) -> tuple[Classification, str]:
         return "template", "consumer board"
 
     # FR/BR repos – these should never live in consumer kanban trees
-    if rel_str.startswith("fr-br/") or "/fr-br/" in rel_str:
+    if rel_str.startswith("fbu/") or "/fbu/" in rel_str:
         if "Bug Report:" in text or "Feature Request:" in text:
             return "contaminated", "FR/BR repo document"
 

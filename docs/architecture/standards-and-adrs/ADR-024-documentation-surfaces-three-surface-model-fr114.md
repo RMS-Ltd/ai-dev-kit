@@ -8,7 +8,7 @@ housekeeping_policy: keep
 
 # ADR-024: Documentation surfaces — three-surface model (FR-114)
 
-> **Partially superseded:** Maintainer / Notion SoT and **P-NOTION-FIRST** superseded by [ADR-026 — Git-internal maintainer KB](ADR-026-git-internal-maintainer-kb-fr121.md) ([FR-121](../../kanban/fr-br/FR-121-git-internal-maintainer-kb-oss-documentation-surfaces.md), [E05:S08:T06](../../kanban/epics/epic-05/story-08-knowledge-base/T06-adr-026-git-maintainer-authoring-bootstrap-fr121.md)). **Retained:** Docusaurus adopter-public allowlist, binding ADR policy, RC ≥ 1 release notes, historical git-stub template (deprecated post FR-121 wave 1).
+> **Partially superseded:** Maintainer / Notion SoT and **P-NOTION-FIRST** superseded by [ADR-026 — Git-internal maintainer KB](ADR-026-git-internal-maintainer-kb-fr121.md) ([FR-121](../../kanban/fbu/FR-121-git-internal-maintainer-kb-oss-documentation-surfaces.md), [E05:S08:T06](../../kanban/epics/epic-05/story-08-knowledge-base/T06-adr-026-git-maintainer-authoring-bootstrap-fr121.md)). **Retained:** Docusaurus adopter-public allowlist, binding ADR policy, RC ≥ 1 release notes, historical git-stub template (deprecated post FR-121 wave 1).
 
 ### Version 0.0.2
 
@@ -22,13 +22,13 @@ housekeeping_policy: keep
 **Deciders:** User (Ruari Mears)  
 **Implementing task:** [E05:S08:T04](../../kanban/epics/epic-05/story-08-knowledge-base/T04-agent-notion-first-authoring-and-bootstrap-routing-fr114.md)  
 **Planning package:** [IPP-E05S08T04](../../implementation-cycles/IPP-E05S08T04-agent-notion-first-authoring-and-bootstrap-routing-fr114.md)  
-**Related:** [FR-114](../../kanban/fr-br/FR-114-split-documentation-surfaces-docusaurus-public-notion-maintainer-kb.md), [ADR-012](ADR-012-agent-bootstrap-and-task-routing.md), [ADR-017](ADR-017-docusaurus-ci-build-deploy-topology.md), [E05:S08:T03](../../kanban/epics/epic-05/story-08-knowledge-base/T03-big-bang-notion-migration-maintainer-kb-fr114.md), [E05:S09:T15](../../kanban/epics/epic-05/story-09-docusaurus-documentation-portal/T15-docusaurus-adopter-public-publish-allowlist-fr114.md)
+**Related:** [FR-114](../../kanban/fbu/FR-114-split-documentation-surfaces-docusaurus-public-notion-maintainer-kb.md), [ADR-012](ADR-012-agent-bootstrap-and-task-routing.md), [ADR-017](ADR-017-docusaurus-ci-build-deploy-topology.md), [E05:S08:T03](../../kanban/epics/epic-05/story-08-knowledge-base/T03-big-bang-notion-migration-maintainer-kb-fr114.md), [E05:S09:T15](../../kanban/epics/epic-05/story-09-docusaurus-documentation-portal/T15-docusaurus-adopter-public-publish-allowlist-fr114.md)
 
 ---
 
 ## Context
 
-Maintainer operational documentation (investigations, analysis, records, maintenance runbooks) was incorrectly coupled to the Docusaurus production build, causing CI fragility ([FR-114](../../kanban/fr-br/FR-114-split-documentation-surfaces-docusaurus-public-notion-maintainer-kb.md), **BR-068**). T03 migrated maintainer corpora to Notion; T15 rescoped Docusaurus to an adopter-public allowlist. Agents still lacked a **binding policy** for where new maintainer docs are authored and which surface is authoritative per doc type.
+Maintainer operational documentation (investigations, analysis, records, maintenance runbooks) was incorrectly coupled to the Docusaurus production build, causing CI fragility ([FR-114](../../kanban/fbu/FR-114-split-documentation-surfaces-docusaurus-public-notion-maintainer-kb.md), **BR-068**). T03 migrated maintainer corpora to Notion; T15 rescoped Docusaurus to an adopter-public allowlist. Agents still lacked a **binding policy** for where new maintainer docs are authored and which surface is authoritative per doc type.
 
 Alternatives considered:
 
@@ -61,7 +61,7 @@ Notion URLs: `rw-config.yaml` → `notion_hub_url`, `notion_kb_url`.
 | Adopter guides / user docs | Docusaurus (allowlisted paths) | Source in `docs/guides/`, `docs/documentation/` |
 | Maintainer investigation / analysis / records | **Notion** | Optional stub if linked from allowlisted corpus |
 | Kanban, FR/BR/UXR, task docs | **Git** | Full text |
-| IPP / ICW planning packages | **Git** | Full text ([FR-083](../../kanban/fr-br/FR-083-global-ipw-gated-implementation-contract.md)) |
+| IPP / ICW planning packages | **Git** | Full text ([FR-083](../../kanban/fbu/FR-083-global-ipw-gated-implementation-contract.md)) |
 | Binding ADRs (workflow/kanban/release) | **Git** | Full text — never stubbed |
 | Non-binding architecture reference | **Notion** | Stub in `docs/architecture/` when pre-existing path required |
 | CHANGELOG (RC = 0) | **Git** | GitHub only |
@@ -137,7 +137,7 @@ From RC ≥ 1, publish **curated significant release notes** on Docusaurus only 
 
 ### Neutral
 
-- Partially supersedes publish-scope assumptions in [FR-066](../../kanban/fr-br/FR-066-docusaurus-canonical-docs-path-and-publish-scope.md) for maintainer trees.
+- Partially supersedes publish-scope assumptions in [FR-066](../../kanban/fbu/FR-066-docusaurus-canonical-docs-path-and-publish-scope.md) for maintainer trees.
 
 ---
 

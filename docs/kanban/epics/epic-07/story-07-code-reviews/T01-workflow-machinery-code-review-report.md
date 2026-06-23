@@ -9,7 +9,7 @@ housekeeping_policy: keep
 # Workflow Machinery Code Review Report — E07:S07:T01
 
 **Task:** [E07:S07:T01](T01-comprehensive-workflow-machinery-code-review.md)  
-**FR:** [FR-107](../../../fr-br/FR-107-comprehensive-workflow-machinery-code-review.md)  
+**FR:** [FR-107](../../../fbu/FR-107-comprehensive-workflow-machinery-code-review.md)  
 **Review date:** 2026-06-03  
 **Package:** `packages/frameworks/workflow-mgt/`  
 **Inputs:** [E02:S13:T01](../../epic-02/story-13-workflow-management-package-implementation-review/T01-expectations-baseline.md), [E02:S13:T08 sync report](../../epic-02/story-13-workflow-management-package-implementation-review/T08-sync-packaged-workflows-with-live-repo-implementation.md), [IPP-E7S7T1](../../../../implementation-cycles/IPP-E07S07T01-workflow-machinery-code-review.md)
@@ -213,8 +213,8 @@ The Workflow Management package is **functionally rich** (~107 production Python
 **Cross-links:**
 
 - [story-013](../../epic-02/story-13-workflow-management-package-implementation-review.md) — code review gate satisfied by this report
-- [FR-050](../../../fr-br/FR-050-workflows-directory-structure-reorganization.md) — primary structural remediation
-- [FR-106](../../../fr-br/FR-106-packaged-workflows-sync-with-live-repo-implementation.md) — doc parity (complete); machinery review complements
+- [FR-050](../../../fbu/FR-050-workflows-directory-structure-reorganization.md) — primary structural remediation
+- [FR-106](../../../fbu/FR-106-packaged-workflows-sync-with-live-repo-implementation.md) — doc parity (complete); machinery review complements
 
 ---
 

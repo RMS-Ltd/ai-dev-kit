@@ -239,9 +239,9 @@ Task doc holds executive summary + links; companion holds full baseline body (E0
 - [E02:S13:T01 precedent — expectations baseline](../kanban/epics/epic-02/story-13-workflow-management-package-implementation-review/T01-expectations-baseline.md)
 - Package root: `packages/frameworks/doc-lifecycle/`
 - Adopter mirror: `greenfield-install/packages/frameworks/doc-lifecycle/`
-- [FR-042 — IPW](../kanban/fr-br/FR-042-implementation-planning-workflow-ipw.md)
-- [FR-094 — IPW task state mandate](../kanban/fr-br/FR-094-ipw-slash-command-and-task-state-transition-mandate.md)
-- [FR-100 — ADR necessity checklist](../kanban/fr-br/FR-100-ipw-adr-necessity-checklist-and-decision-gate.md)
+- [FR-042 — IPW](../kanban/fbu/FR-042-implementation-planning-workflow-ipw.md)
+- [FR-094 — IPW task state mandate](../kanban/fbu/FR-094-ipw-slash-command-and-task-state-transition-mandate.md)
+- [FR-100 — ADR necessity checklist](../kanban/fbu/FR-100-ipw-adr-necessity-checklist-and-decision-gate.md)
 - [ipw-adr-necessity-checklist.md](../architecture/standards-and-adrs/ipw-adr-necessity-checklist.md)
 - [dev-kit-ipw-ipp-vs-icw-artifacts.md](../governance/standards/dev-kit-ipw-ipp-vs-icw-artifacts.md)
 - `.claude/commands/ipw.md`

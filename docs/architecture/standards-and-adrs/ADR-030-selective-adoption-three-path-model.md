@@ -10,7 +10,7 @@ housekeeping_policy: keep
 
 **Status:** Accepted  
 **Date:** 2026-06-15  
-**Related:** [ADR-003](ADR-003-greenfield-vs-brownfield-adoption.md) · [ADR-028](ADR-028-agentic-kanban-migration-brownfield-fr127.md) · [UXR-029](../../kanban/fr-br/UXR-029-adk-install-path-experiment.md) · [E06:S09:T36](../../kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T36-adopter-path-selector-install-rc-uxr029.md) · [Issue #52](https://github.com/RMS-Ltd/ai-dev-kit/issues/52)
+**Related:** [ADR-003](ADR-003-greenfield-vs-brownfield-adoption.md) · [ADR-028](ADR-028-agentic-kanban-migration-brownfield-fr127.md) · [UXR-029](../../kanban/fbu/UXR-029-adk-install-path-experiment.md) · [E06:S09:T36](../../kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T36-adopter-path-selector-install-rc-uxr029.md) · [Issue #52](https://github.com/RMS-Ltd/ai-dev-kit/issues/52)
 
 **Evidence:** [greenfield-brownfield-selective-adoption-sbl-attempt-09.md](../../knowledge/articles/greenfield-brownfield-selective-adoption-sbl-attempt-09.md) (SBL FR-079 attempt 09)
 
@@ -83,7 +83,7 @@ Path 2 and Path 3 use [ADR-028](ADR-028-agentic-kanban-migration-brownfield-fr12
 ### Positive
 
 - Adopters and agents get explicit vocabulary: **shell + selective migration** vs mislabelled “greenfield.”
-- Install programme can measure paths with shared Install RC checklist ([UXR-029](../../kanban/fr-br/UXR-029-adk-install-path-experiment.md)).
+- Install programme can measure paths with shared Install RC checklist ([UXR-029](../../kanban/fbu/UXR-029-adk-install-path-experiment.md)).
 - Reduces repeat of attempt 08 (in-place agent mapping without policy).
 
 ### Negative / follow-up
@@ -96,6 +96,6 @@ Path 2 and Path 3 use [ADR-028](ADR-028-agentic-kanban-migration-brownfield-fr12
 ## Related
 
 - [INSTALL_IN_YOUR_PROJECT.md — Adopter Path Selector](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/INSTALL_IN_YOUR_PROJECT.md#adopter-path-selector-mature-repositories)
-- [FR-080](../../kanban/fr-br/FR-080-greenfield-installation-process.md) · [FR-081](../../kanban/fr-br/FR-081-brownfield-modular-adopter-integration.md)
+- [FR-080](../../kanban/fbu/FR-080-greenfield-installation-process.md) · [FR-081](../../kanban/fbu/FR-081-brownfield-modular-adopter-integration.md)
 - [LEGACY_KANBAN_MIGRATION.md](../../../packages/frameworks/kanban/guides/LEGACY_KANBAN_MIGRATION.md)
 - [adk-install-into-sbl/attempt-09/README.md](../../../adk-install-into-sbl/attempt-09/README.md)

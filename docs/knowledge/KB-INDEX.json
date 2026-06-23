@@ -4202,7 +4202,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "kanban/fr-br/BIDIRECTIONAL_WIRING_PRINCIPLE.md",
+      "path": "kanban/fbu/BIDIRECTIONAL_WIRING_PRINCIPLE.md",
       "size": 13090,
       "words": 1507,
       "lifecycle": "evergreen",
@@ -4212,7 +4212,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "kanban/fr-br/BR-001-validate-version-bump-epic-story-detection-bug.md",
+      "path": "kanban/fbu/BR-001-validate-version-bump-epic-story-detection-bug.md",
       "size": 8382,
       "words": 1109,
       "lifecycle": "evergreen",
@@ -4222,7 +4222,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "kanban/fr-br/BR-002-changelog-validator-ordering-bug.md",
+      "path": "kanban/fbu/BR-002-changelog-validator-ordering-bug.md",
       "size": 9658,
       "words": 1291,
       "lifecycle": "evergreen",
@@ -4232,7 +4232,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "kanban/fr-br/BR-003-rw-branch-validation-update-branches.md",
+      "path": "kanban/fbu/BR-003-rw-branch-validation-update-branches.md",
       "size": 9713,
       "words": 1271,
       "lifecycle": "evergreen",
@@ -4242,7 +4242,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "kanban/fr-br/BR-004-kanban-installation-includes-project-specific-epics.md",
+      "path": "kanban/fbu/BR-004-kanban-installation-includes-project-specific-epics.md",
       "size": 13792,
       "words": 1737,
       "lifecycle": "evergreen",
@@ -4252,7 +4252,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "kanban/fr-br/BR-005-kanban-framework-epic-structure-gap-uat-finding.md",
+      "path": "kanban/fbu/BR-005-kanban-framework-epic-structure-gap-uat-finding.md",
       "size": 18964,
       "words": 2600,
       "lifecycle": "evergreen",
@@ -4262,7 +4262,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "kanban/fr-br/BR-006-missing-migration-support-pre-existing-kanban.md",
+      "path": "kanban/fbu/BR-006-missing-migration-support-pre-existing-kanban.md",
       "size": 13054,
       "words": 1671,
       "lifecycle": "evergreen",
@@ -4272,7 +4272,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "kanban/fr-br/BR-007-multiple-bugs-kanban-package-installation.md",
+      "path": "kanban/fbu/BR-007-multiple-bugs-kanban-package-installation.md",
       "size": 8012,
       "words": 1018,
       "lifecycle": "evergreen",
@@ -4282,7 +4282,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "kanban/fr-br/BR-008-arbitrary-80-threshold-contradicts-agentic-intelligence.md",
+      "path": "kanban/fbu/BR-008-arbitrary-80-threshold-contradicts-agentic-intelligence.md",
       "size": 9890,
       "words": 1308,
       "lifecycle": "evergreen",
@@ -4292,7 +4292,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "kanban/fr-br/BR-009-installer-discoverability-and-documentation.md",
+      "path": "kanban/fbu/BR-009-installer-discoverability-and-documentation.md",
       "size": 11273,
       "words": 1400,
       "lifecycle": "evergreen",
@@ -4302,7 +4302,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "kanban/fr-br/BR-010-rw-doc-init-detection-bug-story-task-docs-batch-creation.md",
+      "path": "kanban/fbu/BR-010-rw-doc-init-detection-bug-story-task-docs-batch-creation.md",
       "size": 12204,
       "words": 1593,
       "lifecycle": "evergreen",
@@ -4312,7 +4312,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "kanban/fr-br/BR-033-ukw-board-disorganization.md",
+      "path": "kanban/fbu/BR-033-ukw-board-disorganization.md",
       "size": 7366,
       "words": 918,
       "lifecycle": "evergreen",
@@ -4322,7 +4322,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "kanban/fr-br/BR-034-ukw-moscow-prioritization-missing.md",
+      "path": "kanban/fbu/BR-034-ukw-moscow-prioritization-missing.md",
       "size": 7237,
       "words": 1000,
       "lifecycle": "evergreen",
@@ -4332,7 +4332,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "kanban/fr-br/BR-035-rw-housekeeping-step-not-working.md",
+      "path": "kanban/fbu/BR-035-rw-housekeeping-step-not-working.md",
       "size": 5431,
       "words": 729,
       "lifecycle": "evergreen",
@@ -4342,7 +4342,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "kanban/fr-br/BR-036-rw-step-7-board-update-bugs.md",
+      "path": "kanban/fbu/BR-036-rw-step-7-board-update-bugs.md",
       "size": 6731,
       "words": 900,
       "lifecycle": "evergreen",
@@ -4352,7 +4352,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "kanban/fr-br/FR-002-update-been-there-readme.md",
+      "path": "kanban/fbu/FR-002-update-been-there-readme.md",
       "size": 5781,
       "words": 734,
       "lifecycle": "evergreen",
@@ -4362,7 +4362,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "kanban/fr-br/FR-003-dependency-tracking-in-adopting-projects.md",
+      "path": "kanban/fbu/FR-003-dependency-tracking-in-adopting-projects.md",
       "size": 6397,
       "words": 828,
       "lifecycle": "evergreen",
@@ -4372,7 +4372,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "kanban/fr-br/FR-004-github-submission-for-fr-br-uxr.md",
+      "path": "kanban/fbu/FR-004-github-submission-for-fr-br-uxr.md",
       "size": 7827,
       "words": 1059,
       "lifecycle": "evergreen",
@@ -4382,7 +4382,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "kanban/fr-br/FR-005-systematic-canonical-epics-stories-tasks-templates.md",
+      "path": "kanban/fbu/FR-005-systematic-canonical-epics-stories-tasks-templates.md",
       "size": 12722,
       "words": 1566,
       "lifecycle": "evergreen",
@@ -4392,7 +4392,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "kanban/fr-br/FR-006-localization-language-selection-uk-us-english.md",
+      "path": "kanban/fbu/FR-006-localization-language-selection-uk-us-english.md",
       "size": 14891,
       "words": 1968,
       "lifecycle": "evergreen",
@@ -4402,7 +4402,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "kanban/fr-br/FR-007-migration-utilities-and-installation-modes.md",
+      "path": "kanban/fbu/FR-007-migration-utilities-and-installation-modes.md",
       "size": 10717,
       "words": 1408,
       "lifecycle": "evergreen",
@@ -4412,7 +4412,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "kanban/fr-br/FR-008-package-uninstall-capabilities.md",
+      "path": "kanban/fbu/FR-008-package-uninstall-capabilities.md",
       "size": 11540,
       "words": 1539,
       "lifecycle": "evergreen",
@@ -4422,7 +4422,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "kanban/fr-br/FR-009-intelligent-epic-matching-ai-assisted-canonical-adoption.md",
+      "path": "kanban/fbu/FR-009-intelligent-epic-matching-ai-assisted-canonical-adoption.md",
       "size": 11840,
       "words": 1587,
       "lifecycle": "evergreen",
@@ -4432,7 +4432,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "kanban/fr-br/FR-010-implement-actual-agentic-intelligence-task-mapping.md",
+      "path": "kanban/fbu/FR-010-implement-actual-agentic-intelligence-task-mapping.md",
       "size": 9409,
       "words": 1307,
       "lifecycle": "evergreen",
@@ -4442,7 +4442,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "kanban/fr-br/FR-010-template-task-installation-two-phase-migration.md",
+      "path": "kanban/fbu/FR-010-template-task-installation-two-phase-migration.md",
       "size": 5791,
       "words": 822,
       "lifecycle": "evergreen",
@@ -4452,7 +4452,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "kanban/fr-br/FR-011-task-splitting-multiple-canonical-epics.md",
+      "path": "kanban/fbu/FR-011-task-splitting-multiple-canonical-epics.md",
       "size": 6046,
       "words": 837,
       "lifecycle": "evergreen",
@@ -4462,7 +4462,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "kanban/fr-br/FR-012-agentic-kanban-task-creation-from-fr-br.md",
+      "path": "kanban/fbu/FR-012-agentic-kanban-task-creation-from-fr-br.md",
       "size": 7264,
       "words": 1014,
       "lifecycle": "evergreen",
@@ -4472,7 +4472,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "kanban/fr-br/FR-013-trigger-aware-release-workflow.md",
+      "path": "kanban/fbu/FR-013-trigger-aware-release-workflow.md",
       "size": 8671,
       "words": 1159,
       "lifecycle": "evergreen",
@@ -4482,7 +4482,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "kanban/fr-br/FR-014-rw-trigger-for-fr-br-commits.md",
+      "path": "kanban/fbu/FR-014-rw-trigger-for-fr-br-commits.md",
       "size": 6881,
       "words": 992,
       "lifecycle": "evergreen",
@@ -4492,7 +4492,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "kanban/fr-br/FR-015-harden-kanban-docs-update-in-release-workflow.md",
+      "path": "kanban/fbu/FR-015-harden-kanban-docs-update-in-release-workflow.md",
       "size": 10209,
       "words": 1422,
       "lifecycle": "evergreen",
@@ -4502,7 +4502,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "kanban/fr-br/FR-016-kanban-granularity-discrete-task-docs.md",
+      "path": "kanban/fbu/FR-016-kanban-granularity-discrete-task-docs.md",
       "size": 8779,
       "words": 1246,
       "lifecycle": "evergreen",
@@ -4512,7 +4512,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "kanban/fr-br/FR-017-versioning-policy-hardening-doc-init-build.md",
+      "path": "kanban/fbu/FR-017-versioning-policy-hardening-doc-init-build.md",
       "size": 8625,
       "words": 1208,
       "lifecycle": "evergreen",
@@ -4522,7 +4522,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "kanban/fr-br/FR-018-abstract-space-zero-numbered-est-docs.md",
+      "path": "kanban/fbu/FR-018-abstract-space-zero-numbered-est-docs.md",
       "size": 9506,
       "words": 1276,
       "lifecycle": "evergreen",
@@ -4532,7 +4532,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "kanban/fr-br/FR-019-intake-workflow-automation.md",
+      "path": "kanban/fbu/FR-019-intake-workflow-automation.md",
       "size": 10447,
       "words": 1347,
       "lifecycle": "evergreen",
@@ -4542,7 +4542,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "kanban/fr-br/FR-020-version-validator-abstract-space-awareness.md",
+      "path": "kanban/fbu/FR-020-version-validator-abstract-space-awareness.md",
       "size": 11078,
       "words": 1537,
       "lifecycle": "evergreen",
@@ -4552,7 +4552,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "kanban/fr-br/FR-021-fr-br-uxr-repository-stories.md",
+      "path": "kanban/fbu/FR-021-fr-br-uxr-repository-stories.md",
       "size": 14074,
       "words": 1877,
       "lifecycle": "evergreen",
@@ -4562,7 +4562,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "kanban/fr-br/FR-022-policy-docs-machine-readable-salience.md",
+      "path": "kanban/fbu/FR-022-policy-docs-machine-readable-salience.md",
       "size": 12761,
       "words": 1684,
       "lifecycle": "evergreen",
@@ -4572,7 +4572,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "kanban/fr-br/FR-023-update-kanban-workflow-ukw.md",
+      "path": "kanban/fbu/FR-023-update-kanban-workflow-ukw.md",
       "size": 7820,
       "words": 1005,
       "lifecycle": "evergreen",
@@ -4582,7 +4582,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "kanban/fr-br/FR-024-ide-linter-check-before-commit-in-release-workflow.md",
+      "path": "kanban/fbu/FR-024-ide-linter-check-before-commit-in-release-workflow.md",
       "size": 14167,
       "words": 1955,
       "lifecycle": "evergreen",
@@ -4592,7 +4592,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "kanban/fr-br/FR-025-changelog-management-and-archival-workflow.md",
+      "path": "kanban/fbu/FR-025-changelog-management-and-archival-workflow.md",
       "size": 13651,
       "words": 1618,
       "lifecycle": "evergreen",
@@ -4602,7 +4602,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "kanban/fr-br/FR-026-canonical-perpetual-task-for-changelog-maintenance.md",
+      "path": "kanban/fbu/FR-026-canonical-perpetual-task-for-changelog-maintenance.md",
       "size": 4699,
       "words": 618,
       "lifecycle": "evergreen",
@@ -4612,7 +4612,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "kanban/fr-br/FR-027-add-cmw-to-workflow-management-package-documentation.md",
+      "path": "kanban/fbu/FR-027-add-cmw-to-workflow-management-package-documentation.md",
       "size": 6294,
       "words": 770,
       "lifecycle": "evergreen",
@@ -4622,7 +4622,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "kanban/fr-br/FR-028-cursor-ide-performance-considerations-awareness.md",
+      "path": "kanban/fbu/FR-028-cursor-ide-performance-considerations-awareness.md",
       "size": 5511,
       "words": 646,
       "lifecycle": "evergreen",
@@ -4632,7 +4632,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "kanban/fr-br/FR-029-procedural-task-template-generation-hybrid-strategy.md",
+      "path": "kanban/fbu/FR-029-procedural-task-template-generation-hybrid-strategy.md",
       "size": 5692,
       "words": 723,
       "lifecycle": "evergreen",
@@ -4642,7 +4642,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "kanban/fr-br/FR-030-ai-dev-kit-cli-tool.md",
+      "path": "kanban/fbu/FR-030-ai-dev-kit-cli-tool.md",
       "size": 14044,
       "words": 1763,
       "lifecycle": "evergreen",
@@ -4652,7 +4652,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "kanban/fr-br/FR-031-multi-agent-coordination-feasibility-investigation.md",
+      "path": "kanban/fbu/FR-031-multi-agent-coordination-feasibility-investigation.md",
       "size": 16189,
       "words": 2037,
       "lifecycle": "evergreen",
@@ -4662,7 +4662,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "kanban/fr-br/FR-032-release-candidate-readiness-gap-analysis.md",
+      "path": "kanban/fbu/FR-032-release-candidate-readiness-gap-analysis.md",
       "size": 13544,
       "words": 1887,
       "lifecycle": "evergreen",
@@ -4672,7 +4672,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "kanban/fr-br/FR-034-ukw-granular-control-and-use-case-flags.md",
+      "path": "kanban/fbu/FR-034-ukw-granular-control-and-use-case-flags.md",
       "size": 12240,
       "words": 1599,
       "lifecycle": "evergreen",
@@ -4682,7 +4682,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "kanban/fr-br/FR-035-task-template-cross-wiring-section.md",
+      "path": "kanban/fbu/FR-035-task-template-cross-wiring-section.md",
       "size": 9940,
       "words": 1196,
       "lifecycle": "evergreen",
@@ -4692,7 +4692,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "kanban/fr-br/FR-036-kanban-board-info-only-split.md",
+      "path": "kanban/fbu/FR-036-kanban-board-info-only-split.md",
       "size": 8423,
       "words": 993,
       "lifecycle": "evergreen",
@@ -4702,7 +4702,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "kanban/fr-br/FR-036-rw-update-kanban-board-on-task-completion.md",
+      "path": "kanban/fbu/FR-036-rw-update-kanban-board-on-task-completion.md",
       "size": 8058,
       "words": 1121,
       "lifecycle": "evergreen",
@@ -4712,7 +4712,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "kanban/fr-br/FR-037-kanban-policy-task-prioritisation-queue-stack.md",
+      "path": "kanban/fbu/FR-037-kanban-policy-task-prioritisation-queue-stack.md",
       "size": 10160,
       "words": 1430,
       "lifecycle": "evergreen",
@@ -4722,7 +4722,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "kanban/fr-br/FR-038-rw-step-7-scoped-kanban-sync-ukw-mode.md",
+      "path": "kanban/fbu/FR-038-rw-step-7-scoped-kanban-sync-ukw-mode.md",
       "size": 6758,
       "words": 962,
       "lifecycle": "evergreen",
@@ -4732,7 +4732,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "kanban/fr-br/FR-039-ai-dev-kit-project-review-and-legacy-clean-up.md",
+      "path": "kanban/fbu/FR-039-ai-dev-kit-project-review-and-legacy-clean-up.md",
       "size": 6363,
       "words": 850,
       "lifecycle": "evergreen",
@@ -4742,7 +4742,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "kanban/fr-br/REOPENING_BR_AND_TASKS_GUIDE.md",
+      "path": "kanban/fbu/REOPENING_BR_AND_TASKS_GUIDE.md",
       "size": 8136,
       "words": 1115,
       "lifecycle": "evergreen",
@@ -4752,7 +4752,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "kanban/fr-br/UXR-001-migration-user-experience-research.md",
+      "path": "kanban/fbu/UXR-001-migration-user-experience-research.md",
       "size": 12510,
       "words": 1542,
       "lifecycle": "evergreen",
@@ -4762,7 +4762,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "kanban/fr-br/UXR-002-comprehensive-uat-migration-utilities.md",
+      "path": "kanban/fbu/UXR-002-comprehensive-uat-migration-utilities.md",
       "size": 10267,
       "words": 1284,
       "lifecycle": "evergreen",
@@ -4772,7 +4772,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "kanban/fr-br/UXR-003-intelligent-epic-matching-canonical-adoption-uat.md",
+      "path": "kanban/fbu/UXR-003-intelligent-epic-matching-canonical-adoption-uat.md",
       "size": 7568,
       "words": 902,
       "lifecycle": "evergreen",
@@ -4782,7 +4782,7 @@
       "housekeeping_policy": "keep"
     },
     {
-      "path": "kanban/fr-br/UXR-004-kanban-package-installation-uat.md",
+      "path": "kanban/fbu/UXR-004-kanban-package-installation-uat.md",
       "size": 6567,
       "words": 844,
       "lifecycle": "evergreen",
@@ -5321,7 +5321,7 @@
       "maintenance/README.md",
       "project-management/README.md",
       "kanban/README.md",
-      "kanban/fr-br/FR-002-update-been-there-readme.md",
+      "kanban/fbu/FR-002-update-been-there-readme.md",
       "project-management/rituals/README.md",
       "project-management/rituals/policy/README.md"
     ],

@@ -443,8 +443,8 @@ def test_4_3_kboard_intake_reconciliation_prunes_and_keeps_exception():
 
 ### Must Have (M) - Critical Tasks
 
-- **FR-900** – terminal row - TODO - [FR-900](fr-br/FR-900-terminal.md) | Last modified: 2026-04-01 10:00 UTC
-- **BR-901** – exception row - TODO - [BR-901](fr-br/BR-901-exception.md) | Last modified: 2026-03-28 09:41 UTC
+- **FR-900** – terminal row - TODO - [FR-900](fbu/FR-900-terminal.md) | Last modified: 2026-04-01 10:00 UTC
+- **BR-901** – exception row - TODO - [BR-901](fbu/BR-901-exception.md) | Last modified: 2026-03-28 09:41 UTC
 """,
             encoding="utf-8",
         )
@@ -653,13 +653,13 @@ def test_4_8_traceability_segment_normalization_for_fbuboard_rows():
 
         line = (
             "- **UXR-010** – kboard add IPP segment - OPEN "
-            "- [UXR-010](fr-br/UXR-010-kboard-fbuboard-add-ipp-column-after-fbu-and-task-links.md) "
+            "- [UXR-010](fbu/UXR-010-kboard-fbuboard-add-ipp-column-after-fbu-and-task-links.md) "
             "| [E4:S19:T04](epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/"
             "T04-kboard-fbuboard-add-ipp-column-after-fbu-and-task-links-uxr010.md) "
             "| Last modified: 2026-04-20 21:35 UTC"
         )
         normalized = mod._normalize_traceability_segments_for_row(line, Path(test_dir))
-        if "[UXR-010](fr-br/UXR-010-kboard-fbuboard-add-ipp-column-after-fbu-and-task-links.md)" not in normalized:
+        if "[UXR-010](fbu/UXR-010-kboard-fbuboard-add-ipp-column-after-fbu-and-task-links.md)" not in normalized:
             return False, f"FBU link segment not preserved: {normalized}"
         if "[E4:S19:T04](epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T04-kboard-fbuboard-add-ipp-column-after-fbu-and-task-links-uxr010.md)" not in normalized:
             return False, f"Task link segment not preserved: {normalized}"
@@ -811,7 +811,7 @@ def test_4_13_br069_pipeline_order_divergence_and_non_terminal_footer_append():
 
         header = "## MoSCOW Priority\n\n### Must Have\n\n"
         dup_row = (
-            '- **[BR-069](fr-br/BR-069.md)** – OPEN | '
+            '- **[BR-069](fbu/BR-069.md)** – OPEN | '
             "[E2:S15:T04](epics/E2/T04.md) | [—IPP—](../../implementation-cycles/x.md) | "
             "Last modified: 2024-01-01 08:00 UTC | "
             "Last modified: 2026-04-21 10:00 UTC\n"
@@ -836,7 +836,7 @@ def test_4_13_br069_pipeline_order_divergence_and_non_terminal_footer_append():
             return False, "Expected unified contract step order between RW and standalone paths"
 
         single_row = (
-            '- **[BR-069](fr-br/BR-069.md)** – OPEN | '
+            '- **[BR-069](fbu/BR-069.md)** – OPEN | '
             "[E2:S15:T04](epics/E2/T04.md) | Last modified: 2024-06-01 09:00 UTC\n"
         )
         doc_single = header + single_row
@@ -874,7 +874,7 @@ def test_4_14_phase1_canonical_entrypoint_exposes_contract_selected_order():
         now = "2099-06-15 18:00 UTC"
         header = "## MoSCOW Priority\n\n### Must Have\n\n"
         row = (
-            '- **[BR-069](fr-br/BR-069.md)** – OPEN | '
+            '- **[BR-069](fbu/BR-069.md)** – OPEN | '
             "[E2:S15:T04](epics/E2/T04.md) | [—IPP—](../../implementation-cycles/x.md) | "
             "Last modified: 2024-01-01 08:00 UTC | "
             "Last modified: 2026-04-21 10:00 UTC\n"
@@ -933,10 +933,10 @@ def test_4_15_phase3_parity_and_repeated_run_idempotency_matrix():
 
         header = "## MoSCOW Priority\n\n### Must Have\n\n"
         fixture = (
-            '- **[BR-069](fr-br/BR-069.md)** – OPEN | '
+            '- **[BR-069](fbu/BR-069.md)** – OPEN | '
             "[E2:S15:T04](epics/E2/T04.md) | [—IPP—](../../implementation-cycles/x.md) | "
             "Last modified: 2024-01-01 08:00 UTC | Last modified: 2026-04-21 10:00 UTC\n"
-            '- **[FR-090](fr-br/FR-090.md)** – IN PROGRESS | '
+            '- **[FR-090](fbu/FR-090.md)** – IN PROGRESS | '
             "[E2:S15:T05](epics/E2/T05.md) | Last modified: 2025-02-01 09:30 UTC\n"
         )
         content = header + fixture
@@ -1019,25 +1019,25 @@ def test_4_16_t04_phase_a_reproduction_harness_fixed_orders():
 
         fixtures = {
             "single_footer": (
-                '- **[BR-069](fr-br/BR-069.md)** – OPEN | '
+                '- **[BR-069](fbu/BR-069.md)** – OPEN | '
                 "[E2:S15:T04](epics/E2/T04.md) | "
                 "Last modified: 2024-06-01 09:00 UTC\n"
             ),
             "dual_footer_pass": (
-                '- **[BR-069](fr-br/BR-069.md)** – OPEN | '
+                '- **[BR-069](fbu/BR-069.md)** – OPEN | '
                 "[E2:S15:T04](epics/E2/T04.md) | [—IPP—](../../implementation-cycles/x.md) | "
                 "Last modified: 2024-01-01 08:00 UTC | "
                 "Last modified: 2026-04-21 10:00 UTC\n"
             ),
             "dual_footer_divergence": (
-                '- **[BR-069](fr-br/BR-069.md)** – OPEN | '
+                '- **[BR-069](fbu/BR-069.md)** – OPEN | '
                 "[E2:S15:T04](epics/E2/T04.md) | "
                 "Last modified: 2026-04-21 10:00 UTC | "
                 "Last modified: 2024-01-01 08:00 UTC\n"
             ),
             "fbu_task_ipp_shape": (
-                '- **[BR-069](fr-br/BR-069.md)** – OPEN | '
-                "[BR-069](fr-br/BR-069.md) | "
+                '- **[BR-069](fbu/BR-069.md)** – OPEN | '
+                "[BR-069](fbu/BR-069.md) | "
                 "[E2:S15:T04](epics/E2/T04.md) | "
                 "[—IPP—](../../implementation-cycles/x.md) | "
                 "Last modified: 2024-06-01 09:00 UTC\n"
@@ -1134,7 +1134,7 @@ def test_4_18_four_surface_reconciliation_report_classifies_changes_and_resolves
         (kb_dir / "kboard.md").write_text("# Kanban\n", encoding="utf-8")
         (story_dir / "T07-test-task.md").write_text(
             "# Task T07\n\n"
-            "Upstream: [FR-092](../../../fr-br/FR-092-canonical-rw-ukw-kanban-consistency-program.md)\n",
+            "Upstream: [FR-092](../../../fbu/FR-092-canonical-rw-ukw-kanban-consistency-program.md)\n",
             encoding="utf-8",
         )
         (frbr_dir / "FR-092-canonical-rw-ukw-kanban-consistency-program.md").write_text(
@@ -1229,7 +1229,7 @@ def test_4_20_fr092_wave4_b1_drift_eliminates_duplicate_inline_fbu_link():
         before = board_path.read_text(encoding="utf-8")
 
         for fbu_id in ("FR-092", "BR-069", "FR-090"):
-            inline_count = before.count(f"[{fbu_id}](fr-br/{fbu_id}-")
+            inline_count = before.count(f"[{fbu_id}](fbu/{fbu_id}-")
             if inline_count < 2:
                 return False, f"Pre-condition failed: expected duplicate {fbu_id} inline link in fixture, got count={inline_count}"
 
@@ -1237,7 +1237,7 @@ def test_4_20_fr092_wave4_b1_drift_eliminates_duplicate_inline_fbu_link():
         after = board_path.read_text(encoding="utf-8")
 
         for fbu_id in ("FR-092", "BR-069", "FR-090"):
-            inline_count = after.count(f"[{fbu_id}](fr-br/{fbu_id}-")
+            inline_count = after.count(f"[{fbu_id}](fbu/{fbu_id}-")
             if inline_count != 1:
                 return False, f"Expected exactly one canonical {fbu_id} link after sweep, got count={inline_count}"
 
@@ -1289,7 +1289,7 @@ def test_4_21_kboard_live_task_link_ipp_segment_normalization():
         no_ipp_row = (
             "- **E08:S03:T12** – Code Quality - ⏳ WAITING "
             "| [Task](epics/epic-08/story-03/T12.md) "
-            "| [BR-099](fr-br/BR-099.md) "
+            "| [BR-099](fbu/BR-099.md) "
             "| Last modified: 2026-06-05 11:42 UTC"
         )
         normalized_no = mod._normalize_traceability_segments_for_row(no_ipp_row, root)
@@ -1301,7 +1301,7 @@ def test_4_21_kboard_live_task_link_ipp_segment_normalization():
         ipp_row = (
             "- **E02:S16:T20** – Restore IPP - 🔄 IN PROGRESS "
             "| [Task](epics/epic-02/T20.md) "
-            "| [UXR-023](fr-br/UXR-023.md) "
+            "| [UXR-023](fbu/UXR-023.md) "
             "| Last modified: 2026-06-05 16:30 UTC"
         )
         normalized_ipp = mod._normalize_traceability_segments_for_row(ipp_row, root)

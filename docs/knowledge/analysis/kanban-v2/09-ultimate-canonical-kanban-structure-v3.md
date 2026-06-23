@@ -213,7 +213,7 @@ Product, game, and domain epics from **E24** per ADR-006. Ex-packaged E01:S03 â†
 | Concern | Adopter v3.2 | ai-dev-kit live |
 |---------|--------------|-----------------|
 | Perpetual | E01:S01 | E02:S16 |
-| Intake | E04 stories | FR/BR under `docs/kanban/fr-br` |
+| Intake | E04 stories | FR/BR under `docs/kanban/fbu` |
 | Project architecture | E05 | `docs/architecture/` (live dogfood) |
 | Code quality | E10 | E07/E08 split (dogfood divergence) |
 

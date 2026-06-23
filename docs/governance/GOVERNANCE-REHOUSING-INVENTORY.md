@@ -8,7 +8,7 @@ housekeeping_policy: keep
 
 # Governance rehousing inventory (Phase 0)
 
-**FR:** [FR-101](../kanban/fr-br/FR-101-consolidate-governance-under-docs-governance.md)  
+**FR:** [FR-101](../kanban/fbu/FR-101-consolidate-governance-under-docs-governance.md)  
 **Task:** [E7:S01:T11](../kanban/epics/epic-07/story-01-codebase-maintenance-tasks/T11-consolidate-governance-under-docs-governance-fr101.md)  
 **Status:** COMPLETE — execution finished **v0.7.1.11+8** (2026-05-29)
 
@@ -48,11 +48,11 @@ housekeeping_policy: keep
 | `docs/architecture/standards-and-adrs/ADR-006-book-project-private-repository-spin-off.md` | **INDEX** | — | Repo-boundary ADR |
 | `docs/architecture/standards-and-adrs/workflow-flaws-reference-guide.md` | **INDEX** | — | Operational reference |
 | `docs/architecture/standards-and-adrs/versioning-error-reference-guide.md` | **INDEX** | — | Operational reference |
-| `docs/kanban/fr-br/BIDIRECTIONAL_WIRING_PRINCIPLE.md` | **MOVE** | `docs/governance/principles/bidirectional-wiring-principle.md` | Maintainer decision (IPW E7:S01:T11): promote to principles; stub at `fr-br/`; update templates, `intake-open-taskless-queue.md`, cross-wiring SoP |
+| `docs/kanban/fbu/BIDIRECTIONAL_WIRING_PRINCIPLE.md` | **MOVE** | `docs/governance/principles/bidirectional-wiring-principle.md` | Maintainer decision (IPW E7:S01:T11): promote to principles; stub at `fbu/`; update templates, `intake-open-taskless-queue.md`, cross-wiring SoP |
 | `packages/frameworks/kanban/policies/kanban-governance-policy.md` | **OUT** | — | Framework SoT; book stub points here |
 | `docs/kanban/kboard.md` | **OUT** | — | Board surface |
 | `docs/kanban/kboard.md` | **OUT** | — | Board surface |
-| `docs/kanban/fr-br/` (intake queue) | **OUT** | — | Except principles promoted per FIX row |
+| `docs/kanban/fbu/` (intake queue) | **OUT** | — | Except principles promoted per FIX row |
 | `docs/maintenance/*` | **OUT** | — | Runbooks; index-only from governance README |
 | `docs/maintenance/book-repo-docs-scope.md` | **FIX** | Created (Wave F) | AC3: `docs/governance/` **KEEP** |
 
@@ -64,7 +64,7 @@ housekeeping_policy: keep
 - `.claude/commands/ipw.md`, `rw.md`, `ukw.md`
 - `docs/kanban/kanban-board-guide.md`
 - `rw-config.yaml` comments / doc pointers (if any)
-- Top-level `fr-br/` cross-links in open FRs
+- Top-level `fbu/` cross-links in open FRs
 - `packages/frameworks/workflow-mgt/cursorrules-rw-trigger-section.md` (portable excerpt)
 
 ---

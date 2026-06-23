@@ -14,4 +14,4 @@ housekeeping_policy: keep
 
 **Historical attribution:** Releases through **v0.6.6.60+1** used task id **E06:S06:T60**; changelogs and validators may still reference that id for those builds.
 
-**BR:** [BR-060](../../../fr-br/BR-060-rw-in-progress-task-gate-blocks-build-releases.md)
+**BR:** [BR-060](../../../fbu/BR-060-rw-in-progress-task-gate-blocks-build-releases.md)

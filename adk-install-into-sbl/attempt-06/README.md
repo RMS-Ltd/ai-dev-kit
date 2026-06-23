@@ -21,30 +21,23 @@
 | Full ADK install | **PASS** — 15 workflows, 6 frameworks, versioning, doc-lifecycle, debug-path |
 | Doc surfaces | Obsidian (personal profile) + Docusaurus (`portal/` built OK) |
 | Legacy migration | **PASS (agentic)** — 19 legacy epics → 10 canonical (E01–E10) + 8 domain (E21–E28); 72 stories migrated |
-| Upstream filed | **F22** → [FR-127](../../docs/kanban/fr-br/FR-127-agentic-kanban-migration-agent-replace-tool-pipeline.md) / [T31](../../docs/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T31-agentic-kanban-migration-agent-fr127.md) · **F23** → [BR-108](../../docs/kanban/fr-br/BR-108-detect-existing-structure-zero-padded-epic-names.md) / [T32](../../docs/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T32-detect-structure-zero-padded-epic-br108.md) · **kboard template** → [UXR-028](../../docs/kanban/fr-br/UXR-028-kboard-v3dot2-packaged-template-alignment.md) / [E04:S19:T13](../../docs/kanban/epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T13-kboard-v3dot2-packaged-template-uxr028.md) |
+| Upstream filed | **F22** → [FR-127](../../docs/kanban/fbu/FR-127-agentic-kanban-migration-agent-replace-tool-pipeline.md) / [T31](../../docs/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T31-agentic-kanban-migration-agent-fr127.md) · **F23** → [BR-108](../../docs/kanban/fbu/BR-108-detect-existing-structure-zero-padded-epic-names.md) / [T32](../../docs/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T32-detect-structure-zero-padded-epic-br108.md) · **kboard template** → [UXR-028](../../docs/kanban/fbu/UXR-028-kboard-v3dot2-packaged-template-alignment.md) / [E04:S19:T13](../../docs/kanban/epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T13-kboard-v3dot2-packaged-template-uxr028.md) |
 
 ---
 
 ## Canonical feedback package (FR-079)
 
-**SBL-owned path** (not duplicated in `ai-dev-kit`) — intake accepted 2026-06-11:
+**ADK maintainer mirror** — intake accepted 2026-06-11 ([#85](https://github.com/RMS-Ltd/ai-dev-kit/issues/85)):
 
-| Artifact | Path (Starborn Legacy repo) |
-|----------|----------------------------|
-| Root | `starborn_legacy/logs/ai-dev-kit/install/attempt-06/` |
-| Cover | `…/feedback-package/SUBMISSION.md` |
-| Package README | `…/feedback-package/README.md` |
-| Narrative | `…/feedback-package/starborn-legacy-attempt06-feedback.md` |
-| Migration report | `…/feedback-package/kanban-migration-experiment-report.md` |
-| Migration analysis | `…/feedback-package/sbl-v3dot2-migration-analysis.md` |
-| Kboard template | `…/feedback-package/kboard-template-v3dot2.md` |
-| Kboard example (SBL) | `…/feedback-package/kboard-populated-example.md` |
-| Payload | `…/feedback-package/feedback-payload.json` |
-| Manifest | `…/feedback-package/artifact-manifest.json` |
-| Diary | `…/greenfield-install-diary.md` |
-| Sign-off | `…/signoff-report.json` |
-| Final sign-off transcript | `…/transcripts/20260611T094319Z-final-signoff.txt` |
-| Transcripts | `…/transcripts/` (15 files) |
+| Artifact | Path |
+|----------|------|
+| Root | [attempt-06/](.) |
+| Index | [feedback-package/README.md](feedback-package/README.md) |
+| Migration report | [feedback-package/kanban-migration-experiment-report.md](feedback-package/kanban-migration-experiment-report.md) |
+| Kboard template | [feedback-package/kboard-template-v3dot2.md](feedback-package/kboard-template-v3dot2.md) |
+| Kboard example | [feedback-package/kboard-populated-example.md](feedback-package/kboard-populated-example.md) |
+
+Original SBL-local logs were gitignored; synopses and recovered artifacts live on ADK per [ADR-026](../../docs/architecture/standards-and-adrs/ADR-026-git-internal-maintainer-kb-fr121.md).
 
 ---
 

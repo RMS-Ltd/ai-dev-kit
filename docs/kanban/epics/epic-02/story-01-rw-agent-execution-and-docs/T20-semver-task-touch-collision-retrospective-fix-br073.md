@@ -16,7 +16,7 @@ housekeeping_policy: keep
 **Version Anchor:** v0.2.1.20+1  
 **Code:** E02S01T20
 
-**Upstream:** [BR-073](../../../fr-br/BR-073-semver-task-touch-collision-retrospective-fix.md)
+**Upstream:** [BR-073](../../../fbu/BR-073-semver-task-touch-collision-retrospective-fix.md)
 
 ---
 
@@ -28,7 +28,7 @@ Retroactively fix the SemVer collision where two internal versions (`0.24.1.6+1`
 
 ## Input
 
-- [BR-073](../../../fr-br/BR-073-semver-task-touch-collision-retrospective-fix.md) — defect report with root cause, impact, and acceptance criteria
+- [BR-073](../../../fbu/BR-073-semver-task-touch-collision-retrospective-fix.md) — defect report with root cause, impact, and acceptance criteria
 - `semver-registry.yaml` — canonical SemVer mapping registry
 - `README.md` — version badge line to correct
 
@@ -71,7 +71,7 @@ Retroactively fix the SemVer collision where two internal versions (`0.24.1.6+1`
 
 ## References
 
-- [BR-073](../../../fr-br/BR-073-semver-task-touch-collision-retrospective-fix.md)
+- [BR-073](../../../fbu/BR-073-semver-task-touch-collision-retrospective-fix.md)
 - `semver-registry.yaml`
 - `README.md`
 - `packages/frameworks/workflow-mgt/scripts/version/semver_converter.py`

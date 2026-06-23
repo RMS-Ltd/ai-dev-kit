@@ -72,7 +72,7 @@ Test-only Phase 3 E2E verification: parametrized translation/locale/fallback tes
 RW -k E21:S03:T07 --art --dpz
 ```
 
-**Target version anchor:** `v0.21.3.7+0` (doc-init BUILD +0 per [BR-067](../../../fr-br/BR-067-rw-first-doc-only-release-defaults-to-build-plus-one-not-plus-zero.md)).
+**Target version anchor:** `v0.21.3.7+0` (doc-init BUILD +0 per [BR-067](../../../fbu/BR-067-rw-first-doc-only-release-defaults-to-build-plus-one-not-plus-zero.md)).
 
 ---
 
@@ -95,6 +95,6 @@ Migrated from embedded Story section via `generate_task_doc.py` (FR-016 Wave 1 t
 - [IPP-E21S03T07-test-translations-locale-support.md](../../../../implementation-cycles/IPP-E21S03T07-test-translations-locale-support.md)
 - [IPP-E21S03T06-translation-completeness-tracking.md](../../../../implementation-cycles/IPP-E21S03T06-translation-completeness-tracking.md)
 - [IPP-E21S01T07-fr006-phase1-e2e-tests.md](../../../../implementation-cycles/IPP-E21S01T07-fr006-phase1-e2e-tests.md)
-- [FR-006](../../../fr-br/FR-006-localization-language-selection-uk-us-english.md)
+- [FR-006](../../../fbu/FR-006-localization-language-selection-uk-us-english.md)
 - [ADR-024](../../../../architecture/standards-and-adrs/ADR-024-i18n-framework-strategy.md)
 

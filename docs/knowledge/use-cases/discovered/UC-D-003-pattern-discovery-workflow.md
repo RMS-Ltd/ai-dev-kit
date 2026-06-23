@@ -106,10 +106,10 @@ When work reveals a reusable pattern, document it and wire it bidirectionally to
 - **Tasks:** 
   - [E2:S01:T06 - Fix changelog validator ordering bug](../../../kanban/epics/epic-02/story-01-rw-agent-execution-and-docs.md)
   - [E2:S11:T10 - Investigate CHANGELOG Entry Removal](../../../kanban/epics/epic-02/story-11-intake-workflow-automation/Task-010-Investigate-CHANGELOG-Entry-Removal-and-Harden-Processes.md)
-- **BR:** [BR-002: Changelog Validator Ordering Bug](../../../kanban/fr-br/BR-002-changelog-validator-ordering-bug.md)
+- **BR:** [BR-002: Changelog Validator Ordering Bug](../../../kanban/fbu/BR-002-changelog-validator-ordering-bug.md)
 - **Documentation:** 
-  - [REOPENING_BR_AND_TASKS_GUIDE.md](../../../kanban/fr-br/REOPENING_BR_AND_TASKS_GUIDE.md)
-  - [BIDIRECTIONAL_WIRING_PRINCIPLE.md](../../../kanban/fr-br/BIDIRECTIONAL_WIRING_PRINCIPLE.md)
+  - [REOPENING_BR_AND_TASKS_GUIDE.md](../../../kanban/fbu/REOPENING_BR_AND_TASKS_GUIDE.md)
+  - [BIDIRECTIONAL_WIRING_PRINCIPLE.md](../../../kanban/fbu/BIDIRECTIONAL_WIRING_PRINCIPLE.md)
   - [USE_CASE_METHODOLOGY.md](../../USE_CASE_METHODOLOGY.md)
 - **Epic/Story:** Epic 2, Stories 1 and 11
 
@@ -184,8 +184,8 @@ When work reveals a reusable pattern, document it and wire it bidirectionally to
 ## References
 
 - [USE_CASE_METHODOLOGY.md](../../USE_CASE_METHODOLOGY.md) - Methodology that includes this workflow
-- [BIDIRECTIONAL_WIRING_PRINCIPLE.md](../../../kanban/fr-br/BIDIRECTIONAL_WIRING_PRINCIPLE.md) - Related principle
-- [REOPENING_BR_AND_TASKS_GUIDE.md](../../../kanban/fr-br/REOPENING_BR_AND_TASKS_GUIDE.md) - Example documentation created through this workflow
+- [BIDIRECTIONAL_WIRING_PRINCIPLE.md](../../../kanban/fbu/BIDIRECTIONAL_WIRING_PRINCIPLE.md) - Related principle
+- [REOPENING_BR_AND_TASKS_GUIDE.md](../../../kanban/fbu/REOPENING_BR_AND_TASKS_GUIDE.md) - Example documentation created through this workflow
 
 ---
 

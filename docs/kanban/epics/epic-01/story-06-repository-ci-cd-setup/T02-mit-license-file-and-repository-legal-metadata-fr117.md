@@ -28,7 +28,7 @@ housekeeping_policy: keep
 
 ## Associated Feature Request
 
-- [FR-117: MIT LICENSE file and repository legal metadata](../../../fr-br/FR-117-mit-license-file-and-repository-legal-metadata.md)
+- [FR-117: MIT LICENSE file and repository legal metadata](../../../fbu/FR-117-mit-license-file-and-repository-legal-metadata.md)
 
 ---
 
@@ -42,7 +42,7 @@ Close the open-source licensing gap: README claimed MIT but no `LICENSE` file ex
 
 - Maintainer decision: MIT (permissive; adoption-friendly; matches README badge)
 - Existing README MIT badge and License section
-- [FR-117](../../../fr-br/FR-117-mit-license-file-and-repository-legal-metadata.md) acceptance criteria
+- [FR-117](../../../fbu/FR-117-mit-license-file-and-repository-legal-metadata.md) acceptance criteria
 
 **IPW planning artifact:** Not required (docs-only; no behaviour change).
 

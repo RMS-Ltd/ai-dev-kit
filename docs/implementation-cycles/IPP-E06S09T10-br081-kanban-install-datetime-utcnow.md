@@ -9,7 +9,7 @@ housekeeping_policy: keep
 # E06:S09:T10 — Planning: Spec, Tests, Implementation Plan (IPW)
 
 **Host Task:** [`T10-kanban-install-datetime-utcnow-br081.md`](../kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T10-kanban-install-datetime-utcnow-br081.md) **(E06:S09:T10)**  
-**Planning for:** [BR-081](../kanban/fr-br/BR-081-kanban-install-datetime-utcnow-deprecated.md) · [GitHub #13](https://github.com/RMS-Ltd/ai-dev-kit/issues/13)  
+**Planning for:** [BR-081](../kanban/fbu/BR-081-kanban-install-datetime-utcnow-deprecated.md) · [GitHub #13](https://github.com/RMS-Ltd/ai-dev-kit/issues/13)  
 **Status:** Approved (implementation complete — released via RW E06:S09:T10)
 
 ---
@@ -115,7 +115,7 @@ Eliminate deprecation noise during book/adopter dry-runs of `install_kanban_fram
 - `tests/kanban/test_install_kanban_logging.py`
 - `docs/implementation-cycles/IPP-E6S9T10-br081-kanban-install-datetime-utcnow.md` (this file)
 - `docs/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T10-kanban-install-datetime-utcnow-br081.md`
-- `docs/kanban/fr-br/BR-081-kanban-install-datetime-utcnow-deprecated.md`
+- `docs/kanban/fbu/BR-081-kanban-install-datetime-utcnow-deprecated.md`
 - `packages/frameworks/kanban/CHANGELOG.md`
 
 ### 4.2 Dependency order
@@ -172,7 +172,7 @@ Eliminate deprecation noise during book/adopter dry-runs of `install_kanban_fram
 
 ## References
 
-- [BR-081](../kanban/fr-br/BR-081-kanban-install-datetime-utcnow-deprecated.md)
+- [BR-081](../kanban/fbu/BR-081-kanban-install-datetime-utcnow-deprecated.md)
 - [GitHub #13](https://github.com/RMS-Ltd/ai-dev-kit/issues/13)
 - [`install_receipt.py`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/scripts/install_receipt.py)
 - [ipw-adr-necessity-checklist.md](../architecture/standards-and-adrs/ipw-adr-necessity-checklist.md)

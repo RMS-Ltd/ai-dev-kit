@@ -12,8 +12,8 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** [TBD]  
 **Created:** 2025-12-03  
-**Last updated:** 2026-06-16 (v0.2.16.2+12 — **T15** INTAKE UXR-031)
-**Version:** v0.2.16.2+12
+**Last updated:** 2026-06-23 (v0.3.2.15+2 — **T15** Option A display)
+**Version:** v0.3.2.15+2
 **Code:** E3S02
 
 ---
@@ -44,11 +44,11 @@ housekeeping_policy: keep
   - Task: [`T11-implement-semver-mapping-for-rw`](story-02-versioning-cookbook-and-examples/T11-implement-semver-mapping-for-rw.md)
 - [x] **E03:S02:T12 – Implement ADR-002 Task-Touch SemVer Mapping Mode** - ✅ COMPLETE (**v0.3.2.12+5** — wave 3 verification + FR-045/046/BR-061 closure) - [Task Doc](story-02-versioning-cookbook-and-examples/T12-implement-task-touch-semver-mapping-mode.md)
 
-- [x] **E03:S02:T13 – SemVer registry structured store — shared release metadata (FR-116)** - ✅ COMPLETE (**v0.2.1.25+1** — async ingest read model; umbrella with T25) — [Task doc](story-02-versioning-cookbook-and-examples/T13-semver-registry-structured-store-shared-release-metadata-fr116.md) | [FR-116](../../fr-br/FR-116-semver-registry-structured-store-shared-release-metadata.md) | [IPP](../../../implementation-cycles/IPP-E02S01T25-release-metadata-async-ingest-umbrella.md)
+- [x] **E03:S02:T13 – SemVer registry structured store — shared release metadata (FR-116)** - ✅ COMPLETE (**v0.2.1.25+1** — async ingest read model; umbrella with T25) — [Task doc](story-02-versioning-cookbook-and-examples/T13-semver-registry-structured-store-shared-release-metadata-fr116.md) | [FR-116](../../fbu/FR-116-semver-registry-structured-store-shared-release-metadata.md) | [IPP](../../../implementation-cycles/IPP-E02S01T25-release-metadata-async-ingest-umbrella.md)
 
-- [x] **E03:S02:T14 – SemVer Allocation Authority (FR-120)** - ✅ COMPLETE (**v0.3.2.14+2** — SAA + allocator repair) — [Task doc](story-02-versioning-cookbook-and-examples/T14-semver-allocation-authority-transactional-mapping-fr120.md) | [FR-120](../../fr-br/FR-120-semver-allocation-authority-transactional-mapping-black-box.md) | [IPP](../../../implementation-cycles/IPP-E03S02T14-semver-allocation-authority.md)
+- [x] **E03:S02:T14 – SemVer Allocation Authority (FR-120)** - ✅ COMPLETE (**v0.3.2.14+2** — SAA + allocator repair) — [Task doc](story-02-versioning-cookbook-and-examples/T14-semver-allocation-authority-transactional-mapping-fr120.md) | [FR-120](../../fbu/FR-120-semver-allocation-authority-transactional-mapping-black-box.md) | [IPP](../../../implementation-cycles/IPP-E03S02T14-semver-allocation-authority.md)
 
-- [ ] **E03:S02:T15 — SemVer external `+BUILD` redundancy evaluation & policy decision (UXR-031)** - INTAKE (**v0.2.16.2+12** — Kanban documentation setup)
+- [x] **E03:S02:T15 — SemVer external `+BUILD` redundancy evaluation & policy decision (UXR-031)** ✅ COMPLETE (**v0.3.2.15+2** — Option A core-only display + ADR-031)
   - Task: [`T15-semver-external-build-metadata-redundancy-uxr031`](story-02-versioning-cookbook-and-examples/T15-semver-external-build-metadata-redundancy-uxr031.md)
 
 ---

@@ -16,7 +16,7 @@ housekeeping_policy: keep
 **Code:** E01S02T14  
 **Version Anchor:** v0.1.2.14+1
 
-**Upstream:** [FR-003 — Dependency tracking in adopting projects](../../../fr-br/FR-003-dependency-tracking-in-adopting-projects.md)  
+**Upstream:** [FR-003 — Dependency tracking in adopting projects](../../../fbu/FR-003-dependency-tracking-in-adopting-projects.md)  
 **Historical registry:** E05:S01:T03 (abstract FR registry slot)
 
 Publication Status: NOT_APPLICABLE
@@ -65,6 +65,6 @@ Document and provide copy-paste templates for **dependency tracking** patterns s
 
 ## References
 
-- [FR-003](../../../fr-br/FR-003-dependency-tracking-in-adopting-projects.md)
+- [FR-003](../../../fbu/FR-003-dependency-tracking-in-adopting-projects.md)
 - [IPP-E1S2T14](../../../../implementation-cycles/IPP-E01S02T14-adopter-external-dependency-tracking.md)
 - [FR-002 / T13](T13-readme-template-best-readme-fr002.md) (related README template — separate task)

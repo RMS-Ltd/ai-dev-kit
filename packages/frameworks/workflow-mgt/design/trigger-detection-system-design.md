@@ -91,9 +91,9 @@ This document designs the trigger detection system for the Release Workflow (RW)
 **Pattern Format:** File path patterns (glob or regex)
 
 **Examples:**
-- `fr-br/FR-*.md` - Matches FR files in fr-br directory
-- `fr-br/BR-*.md` - Matches BR files in fr-br directory
-- `fr-br/UXR-*.md` - Matches UXR files in fr-br directory
+- `fbu/FR-*.md` - Matches FR files in fr-br directory
+- `fbu/BR-*.md` - Matches BR files in fr-br directory
+- `fbu/UXR-*.md` - Matches UXR files in fr-br directory
 
 ### 3. Manual Triggers
 
@@ -120,8 +120,8 @@ TRIGGER_REGISTRY = {
             r'FR-\d+',          # Explicit dash format
         ],
         'file_patterns': [
-            'fr-br/FR-*.md',
-            'docs/kanban/fr-br/FR-*.md',
+            'fbu/FR-*.md',
+            'docs/kanban/fbu/FR-*.md',
         ],
         'workflow': 'agentic_task_creation',
         'confidence': 'high',
@@ -137,8 +137,8 @@ TRIGGER_REGISTRY = {
             r'BR-\d+',          # Explicit dash format
         ],
         'file_patterns': [
-            'fr-br/BR-*.md',
-            'docs/kanban/fr-br/BR-*.md',
+            'fbu/BR-*.md',
+            'docs/kanban/fbu/BR-*.md',
         ],
         'workflow': 'agentic_task_creation',
         'confidence': 'high',
@@ -154,8 +154,8 @@ TRIGGER_REGISTRY = {
             r'UXR-\d+',          # Explicit dash format
         ],
         'file_patterns': [
-            'fr-br/UXR-*.md',
-            'docs/kanban/fr-br/UXR-*.md',
+            'fbu/UXR-*.md',
+            'docs/kanban/fbu/UXR-*.md',
         ],
         'workflow': 'agentic_task_creation',
         'confidence': 'high',

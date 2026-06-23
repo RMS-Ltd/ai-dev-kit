@@ -39,7 +39,7 @@ Address UXR-007 by improving interactive installer wording and guidance for Kanb
 
 ## Input
 
-- [UXR-007](../../../fr-br/UXR-007-interactive-installer-kanban-pattern-prompt-clarity.md)
+- [UXR-007](../../../fbu/UXR-007-interactive-installer-kanban-pattern-prompt-clarity.md)
 - Planning package: [spec](../../../../implementation-cycles/ICW-E7S06T18-implementation-plan.md) · [tests](../../../../implementation-cycles/ICW-E7S06T18-implementation-plan.md) · [plan](../../../../implementation-cycles/ICW-E7S06T18-implementation-plan.md); [IPW index](../../../../implementation-cycles/IPW-E7S06T18-interactive-installer-kanban-pattern-clarity.md)
 - Installer prompt flow for Kanban integration in interactive mode
 - `rw-config.yaml` keys: `kanban_root`, `epic_doc_pattern`, `story_doc_pattern`
@@ -64,7 +64,7 @@ Address UXR-007 by improving interactive installer wording and guidance for Kanb
 
 ## Related Work
 
-- [UXR-007](../../../fr-br/UXR-007-interactive-installer-kanban-pattern-prompt-clarity.md)
+- [UXR-007](../../../fbu/UXR-007-interactive-installer-kanban-pattern-prompt-clarity.md)
 - [E07:S06:T06](T06-fr-br-uxr-intake-documentation-quality.md)
 
 ## Version Anchor
@@ -74,7 +74,7 @@ Address UXR-007 by improving interactive installer wording and guidance for Kanb
 ## References
 
 - [ICW specification E07:S06:T18](../../../../implementation-cycles/ICW-E7S06T18-implementation-plan.md)
-- [UXR-007](../../../fr-br/UXR-007-interactive-installer-kanban-pattern-prompt-clarity.md)
+- [UXR-007](../../../fbu/UXR-007-interactive-installer-kanban-pattern-prompt-clarity.md)
 
 ## Planning artifacts (publication)
 

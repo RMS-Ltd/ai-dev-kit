@@ -29,19 +29,19 @@ Publication Status: NOT_APPLICABLE (IPP required before implementation — see A
 
 ## Scope
 
-Deliver [FR-118](../../../fr-br/FR-118-promote-kanban-to-docs-kanban-retire-project-management-shell.md): inventory-first promotion of the book-repo Kanban tree from `docs/kanban/` to **`docs/kanban/`**, deletion of vestigial `docs/project-management/rituals/`, and repository-wide path rewire before RC.
+Deliver [FR-118](../../../fbu/FR-118-promote-kanban-to-docs-kanban-retire-project-management-shell.md): inventory-first promotion of the book-repo Kanban tree from `docs/kanban/` to **`docs/kanban/`**, deletion of vestigial `docs/project-management/rituals/`, and repository-wide path rewire before RC.
 
 **Problem:** `project-management/` is an empty shell around `kanban/` after FR-101; `rituals/` is stub-only. Legacy paths propagate through `rw-config`, framework installer defaults, agent bootstrap, validators, and ~100+ script/doc touchpoints.
 
-**Solution:** Mirror [E07:S01:T11](T11-consolidate-governance-under-docs-governance-fr101.md) / [FR-101](../../../fr-br/FR-101-consolidate-governance-under-docs-governance.md) — inventory → IPW → phased `git mv` + link sweeps → verification gates.
+**Solution:** Mirror [E07:S01:T11](T11-consolidate-governance-under-docs-governance-fr101.md) / [FR-101](../../../fbu/FR-101-consolidate-governance-under-docs-governance.md) — inventory → IPW → phased `git mv` + link sweeps → verification gates.
 
 ---
 
 ## Source FR/BR/UXR
 
-- **[FR-118](../../../fr-br/FR-118-promote-kanban-to-docs-kanban-retire-project-management-shell.md)** — requirements and acceptance criteria
-- **[UXR-013](../../../fr-br/UXR-013-project-root-hygiene-and-legacy-docs-rationalization.md)** — legacy structural rationalization (related)
-- **[FR-039](../../../fr-br/FR-039-ai-dev-kit-project-review-and-legacy-clean-up.md)** — project review / clean-up (related; T10)
+- **[FR-118](../../../fbu/FR-118-promote-kanban-to-docs-kanban-retire-project-management-shell.md)** — requirements and acceptance criteria
+- **[UXR-013](../../../fbu/UXR-013-project-root-hygiene-and-legacy-docs-rationalization.md)** — legacy structural rationalization (related)
+- **[FR-039](../../../fbu/FR-039-ai-dev-kit-project-review-and-legacy-clean-up.md)** — project review / clean-up (related; T10)
 
 ---
 
@@ -72,7 +72,7 @@ Deliver [FR-118](../../../fr-br/FR-118-promote-kanban-to-docs-kanban-retire-proj
 ## Acceptance Criteria
 
 - [x] **AC0:** Kanban rehousing inventory complete and **maintainer-approved** before any `git mv`.
-- [x] **AC1:** [FR-118](../../../fr-br/FR-118-promote-kanban-to-docs-kanban-retire-project-management-shell.md) FR-118-F1..F8 satisfied.
+- [x] **AC1:** [FR-118](../../../fbu/FR-118-promote-kanban-to-docs-kanban-retire-project-management-shell.md) FR-118-F1..F8 satisfied.
 - [x] **AC2:** IPP linked from this task before implementation (`IPP-E07S01T12-*.md`).
 - [x] **AC3:** `kanban_root: docs/kanban` in `rw-config.yaml`; RW Step 7 four-surface reconciliation passes on final wave.
 - [x] **AC4:** Active-surface `rg` for `project-management/kanban` returns clean (changelog archive exempt per FR-118-F7).
@@ -102,11 +102,11 @@ Deliver [FR-118](../../../fr-br/FR-118-promote-kanban-to-docs-kanban-retire-proj
 
 **Depends On:**
 
-- [FR-101](../../../fr-br/FR-101-consolidate-governance-under-docs-governance.md) / [T11](T11-consolidate-governance-under-docs-governance-fr101.md) — governance already under `docs/governance/` (rituals stubs are safe to remove after sweep)
+- [FR-101](../../../fbu/FR-101-consolidate-governance-under-docs-governance.md) / [T11](T11-consolidate-governance-under-docs-governance-fr101.md) — governance already under `docs/governance/` (rituals stubs are safe to remove after sweep)
 
 **Blocks / enables:**
 
-- Cleaner RC docs layout; reduces agent cold-start path confusion ([FR-103](../../../fr-br/FR-103-agent-bootstrap-and-task-routing.md) routing table paths)
+- Cleaner RC docs layout; reduces agent cold-start path confusion ([FR-103](../../../fbu/FR-103-agent-bootstrap-and-task-routing.md) routing table paths)
 - Framework adopter default path alignment (coordinate with E04/E06 if package version bump required)
 
 ---
@@ -127,7 +127,7 @@ Deliver [FR-118](../../../fr-br/FR-118-promote-kanban-to-docs-kanban-retire-proj
 
 ## References
 
-- [FR-118](../../../fr-br/FR-118-promote-kanban-to-docs-kanban-retire-project-management-shell.md)
+- [FR-118](../../../fbu/FR-118-promote-kanban-to-docs-kanban-retire-project-management-shell.md)
 - [T11 — FR-101 governance consolidation](T11-consolidate-governance-under-docs-governance-fr101.md)
 - [IPP-E07S01T12 — kanban path promotion](../../../../implementation-cycles/IPP-E07S01T12-kanban-path-promotion-fr118.md)
 - [IPP-E7S01T11 — governance IPP](../../../../implementation-cycles/IPP-E7S01T11-consolidate-governance-under-docs-governance.md) (methodology reference)

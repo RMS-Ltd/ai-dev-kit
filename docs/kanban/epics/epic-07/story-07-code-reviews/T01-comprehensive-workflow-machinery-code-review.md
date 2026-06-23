@@ -18,7 +18,7 @@ housekeeping_policy: keep
 **Epic:** E07 – Codebase Maintenance and Review  
 **Story:** E07:S07 – Code Reviews  
 **Code:** E07S07T01  
-**Source FR:** [FR-107](../../../fr-br/FR-107-comprehensive-workflow-machinery-code-review.md)
+**Source FR:** [FR-107](../../../fbu/FR-107-comprehensive-workflow-machinery-code-review.md)
 
 ---
 
@@ -37,7 +37,7 @@ Perform a **full engineering code review** of the Workflow Management package (`
 
 **Out of scope:**
 
-- Implementing remediation (spawn follow-on tasks + IPP per [FR-083](../../../fr-br/FR-083-global-ipw-gated-implementation-contract.md)).
+- Implementing remediation (spawn follow-on tasks + IPP per [FR-083](../../../fbu/FR-083-global-ipw-gated-implementation-contract.md)).
 - Re-doing [E02:S13:T08](../../epic-02/story-13-workflow-management-package-implementation-review/T08-sync-packaged-workflows-with-live-repo-implementation.md) doc/YAML sync work (use T08 sync report as input).
 - Deep review of `packages/frameworks/kanban/` policy corpus except workflow integration scripts.
 
@@ -55,7 +55,7 @@ Workflow machinery has grown organically across many releases. [E02:S13:T02–T0
 - Code review standards: [E07:S02](../story-02-code-review-standards-and-processes.md)
 - Expectations baseline: [E02:S13:T01](../../epic-02/story-13-workflow-management-package-implementation-review/T01-expectations-baseline.md)
 - Packaged/live sync evidence: [E02:S13:T08](../../epic-02/story-13-workflow-management-package-implementation-review/T08-sync-packaged-workflows-with-live-repo-implementation.md) sync report
-- Source FR: [FR-107](../../../fr-br/FR-107-comprehensive-workflow-machinery-code-review.md)
+- Source FR: [FR-107](../../../fbu/FR-107-comprehensive-workflow-machinery-code-review.md)
 - Package root: `packages/frameworks/workflow-mgt/`
 - Live repo integration: root `.cursorrules`, `rw-config.yaml`, `.pre-commit-config.yaml` (workflow-related hooks)
 
@@ -118,10 +118,10 @@ Workflow machinery has grown organically across many releases. [E02:S13:T02–T0
 
 ## Related Work
 
-- **[FR-107](../../../fr-br/FR-107-comprehensive-workflow-machinery-code-review.md)** — source feature request
+- **[FR-107](../../../fbu/FR-107-comprehensive-workflow-machinery-code-review.md)** — source feature request
 - [E02:S13](../../epic-02/story-13-workflow-management-package-implementation-review.md) — RC sign-off consumer
-- [FR-106](../../../fr-br/FR-106-packaged-workflows-sync-with-live-repo-implementation.md) — packaged/live doc sync (E02:S13:T08)
-- [FR-050](../../../fr-br/FR-050-workflows-directory-structure-reorganization.md) — possible remediation outcome
+- [FR-106](../../../fbu/FR-106-packaged-workflows-sync-with-live-repo-implementation.md) — packaged/live doc sync (E02:S13:T08)
+- [FR-050](../../../fbu/FR-050-workflows-directory-structure-reorganization.md) — possible remediation outcome
 - [E02:S16:T03](../../epic-02/story-16-perpetual-ongoing-workflow-operations/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md) — ongoing maintenance after RC
 
 ---

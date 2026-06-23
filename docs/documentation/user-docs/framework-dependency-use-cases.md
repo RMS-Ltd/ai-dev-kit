@@ -32,7 +32,7 @@ For brownfield modular integration boundaries, see:
 
 - [INSTALL_IN_YOUR_PROJECT.md — Brownfield adoption](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/INSTALL_IN_YOUR_PROJECT.md#brownfield-adoption-existing-repositories)
 - [ADR-003](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/architecture/standards-and-adrs/ADR-003-greenfield-vs-brownfield-adoption.md)
-- [FR-081](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/kanban/fr-br/FR-081-brownfield-modular-adopter-integration.md)
+- [FR-081](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/kanban/fbu/FR-081-brownfield-modular-adopter-integration.md)
 - [IPP-E6S9T2](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/implementation-cycles/IPP-E6S09T02-brownfield-modular-adopter-integration-fr081.md)
 
 ---

@@ -31,5 +31,5 @@ python packages/frameworks/workflow-mgt/scripts/kanban/export_kanban_completed_r
 
 ## References
 
-- [FR-134](docs/kanban/fr-br/FR-134-kanban-completed-sqlite-ledger-pdf-report.md)
+- [FR-134](docs/kanban/fbu/FR-134-kanban-completed-sqlite-ledger-pdf-report.md)
 - [IPP-E04S14T12](docs/implementation-cycles/IPP-E04S14T12-kanban-completed-sqlite-ledger-pdf-report.md)

@@ -23,13 +23,13 @@ housekeeping_policy: keep
 Publication Status: PUBLISHED  
 **Planning package:** [`IPP-E2S16T15-workflow-initiation-cheatsheet.md`](../../../../implementation-cycles/IPP-E02S01T26-workflow-initiation-cheatsheet.md)
 
-**Upstream:** [UXR-015 — Workflow initiation cheatsheet](../../../fr-br/UXR-015-workflow-initiation-cheatsheet.md)
+**Upstream:** [UXR-015 — Workflow initiation cheatsheet](../../../fbu/UXR-015-workflow-initiation-cheatsheet.md)
 
 ---
 
 ## Input
 
-- [UXR-015](../../../fr-br/UXR-015-workflow-initiation-cheatsheet.md) findings, recommendations, and proposed cheatsheet outline (sections A–E).
+- [UXR-015](../../../fbu/UXR-015-workflow-initiation-cheatsheet.md) findings, recommendations, and proposed cheatsheet outline (sections A–E).
 - [IPP-E2S16T15](../../../../implementation-cycles/IPP-E02S01T26-workflow-initiation-cheatsheet.md) — IPW planning package.
 - Trigger routing: `CLAUDE.md`, `.cursorrules`, `.claude/commands/rw.md`, `ukw.md`, `ipw.md`.
 - Guides section: [`docs/guides/README.md`](../../../../guides/README.md).
@@ -54,7 +54,7 @@ Maintainers and agents cannot reliably recall the growing matrix of workflow tri
 ## Scope
 
 1. Author cheatsheet from UXR-015 outline (sections A–E or equivalent).
-2. Use two-digit padded E/S/T examples per [UXR-014](../../../fr-br/UXR-014-two-digit-est-identifier-default-formatting.md).
+2. Use two-digit padded E/S/T examples per [UXR-014](../../../fbu/UXR-014-two-digit-est-identifier-default-formatting.md).
 3. Include “last verified against” note; `.cursorrules` remains agent SoT when content diverges.
 4. Wire discoverability from `docs/guides/README.md`.
 5. Do **not** implement `UKW -ad` behavior in this task — document as planned only.
@@ -73,7 +73,7 @@ Maintainers and agents cannot reliably recall the growing matrix of workflow tri
 
 ## References
 
-- [UXR-015](../../../fr-br/UXR-015-workflow-initiation-cheatsheet.md)
+- [UXR-015](../../../fbu/UXR-015-workflow-initiation-cheatsheet.md)
 - [IPP-E2S16T15](../../../../implementation-cycles/IPP-E02S01T26-workflow-initiation-cheatsheet.md)
 - [Workflow initiation cheatsheet](../../../../guides/workflow-initiation-cheatsheet.md)
 - [Story 016](../story-16-perpetual-ongoing-workflow-operations.md)

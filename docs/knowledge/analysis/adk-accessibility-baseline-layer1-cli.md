@@ -12,7 +12,7 @@ housekeeping_policy: keep
 **Version:** v0.21.8.1+1  
 **Date:** 2026-06-07  
 **Planning:** [IPP-E21S08T01](../../implementation-cycles/IPP-E21S08T01-accessibility-layered-cli-first.md)  
-**FR:** [FR-115](../../project-management/kanban/fr-br/FR-115-accessibility-standards-compatibility.md)
+**FR:** [FR-115](../../project-management/kanban/fbu/FR-115-accessibility-standards-compatibility.md)
 
 ---
 
@@ -138,7 +138,7 @@ Integrate axe/pa11y for web; CLI lint for `print_*` patterns; manual release che
 ## References
 
 - [IPP-E21S08T01](../../implementation-cycles/IPP-E21S08T01-accessibility-layered-cli-first.md)
-- [FR-108](../../project-management/kanban/fr-br/FR-108-install-setup-error-code-registry-and-emission.md)
+- [FR-108](../../project-management/kanban/fbu/FR-108-install-setup-error-code-registry-and-emission.md)
 - [cli/utils.py](../../../cli/utils.py)
 - [WCAG 2.2](https://www.w3.org/TR/WCAG22/)
 - [EN 301 549](https://www.etsi.org/standard/EN-301-549)

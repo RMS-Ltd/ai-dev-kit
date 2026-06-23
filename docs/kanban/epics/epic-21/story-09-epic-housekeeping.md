@@ -45,6 +45,6 @@ Administrative reconciliation for Epic 21 after S01–S02 and S08 Layer 0–1 sh
 
 ## References
 
-- [FR-006](../../fr-br/FR-006-localization-language-selection-uk-us-english.md)
+- [FR-006](../../fbu/FR-006-localization-language-selection-uk-us-english.md)
 - [Epic 21](Epic-21.md)
 - [kboard.md](../../kboard.md)

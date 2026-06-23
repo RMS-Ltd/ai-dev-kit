@@ -200,5 +200,5 @@ Sixteen `### Gap N` entries in T05 task doc covering structural, behavioral, int
 - [T05 task doc](../kanban/epics/epic-02/story-13-workflow-management-package-implementation-review/T05-create-gap-log-and-risk-assessment.md)
 - [gap-log-schema.md](../architecture/standards-and-adrs/gap-log-schema.md)
 - [E07:S07:T01 report](../kanban/epics/epic-07/story-07-code-reviews/T01-workflow-machinery-code-review-report.md)
-- [FR-050](../kanban/fr-br/FR-050-workflows-directory-structure-reorganization.md)
-- [FR-042](../kanban/fr-br/FR-042-implementation-planning-workflow-ipw.md)
+- [FR-050](../kanban/fbu/FR-050-workflows-directory-structure-reorganization.md)
+- [FR-042](../kanban/fbu/FR-042-implementation-planning-workflow-ipw.md)

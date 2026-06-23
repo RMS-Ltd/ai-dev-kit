@@ -16,7 +16,7 @@ housekeeping_policy: keep
 **Last updated:** 2026-05-19 (FR-092 v0.2.15.7+9 delivered Wave 6 stamp-evidence gate; ACs satisfied via meta-program absorption)  
 **Code:** E06S07T115
 
-**Upstream:** [UXR-009 – Last-modified stamp forensic integrity and drift protection](../../../fr-br/UXR-009-last-modified-stamp-forensic-integrity-and-drift-protection.md)
+**Upstream:** [UXR-009 – Last-modified stamp forensic integrity and drift protection](../../../fbu/UXR-009-last-modified-stamp-forensic-integrity-and-drift-protection.md)
 
 **Coordinates:** [E02:S16:T03](../../epic-02/story-16-perpetual-ongoing-workflow-operations/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md), [E06:S07:T110](T110-ukw-fbuboard-scope-and-drift-concurrency-controls.md)
 
@@ -65,7 +65,7 @@ Timestamp churn from non-substantive board rewrites corrupts forensic signal. Op
 
 ## References
 
-- [UXR-009](../../../fr-br/UXR-009-last-modified-stamp-forensic-integrity-and-drift-protection.md)
+- [UXR-009](../../../fbu/UXR-009-last-modified-stamp-forensic-integrity-and-drift-protection.md)
 - [T101](../../epic-02/story-16-perpetual-ongoing-workflow-operations/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md)
 - [T110](T110-ukw-fbuboard-scope-and-drift-concurrency-controls.md)
 - [ICW-E6S7T115-specification](../../../../implementation-cycles/ICW-E6S07T115-implementation-plan.md)

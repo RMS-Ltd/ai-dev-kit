@@ -51,7 +51,7 @@ Investigate the feasibility of incorporating multi-agent coordination patterns (
 
 - **Source Material:** [`cursor-scaling-long-running-autonomous-coding-agents.md`](../../../../knowledge/articles/cursor-scaling-long-running-autonomous-coding-agents.md) - Cursor blog post by Wilson Lin (Jan 14, 2026)
 - **Source URL:** [cursor.com/blog/scaling-agents](https://cursor.com/blog/scaling-agents)
-- **FR-031:** [`FR-031-multi-agent-coordination-feasibility-investigation.md`](../../../fr-br/FR-031-multi-agent-coordination-feasibility-investigation.md)
+- **FR-031:** [`FR-031-multi-agent-coordination-feasibility-investigation.md`](../../../fbu/FR-031-multi-agent-coordination-feasibility-investigation.md)
 - **Workflow Framework:** `packages/frameworks/workflow-mgt/` - Existing workflow infrastructure
 - **Release Workflow:** RW implementation and documentation
 - **Update Kanban Workflow:** UKW implementation and documentation
@@ -163,7 +163,7 @@ Investigate the feasibility of incorporating multi-agent coordination patterns (
 ## Related Work
 
 **Related BR/FR Links:**
-- [FR-031: Multi-Agent Coordination Feasibility Investigation](../../../fr-br/FR-031-multi-agent-coordination-feasibility-investigation.md)
+- [FR-031: Multi-Agent Coordination Feasibility Investigation](../../../fbu/FR-031-multi-agent-coordination-feasibility-investigation.md)
 
 **Related Articles:**
 - [Scaling long-running autonomous coding](../../../../knowledge/articles/cursor-scaling-long-running-autonomous-coding-agents.md) - Cursor blog post

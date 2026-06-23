@@ -9,10 +9,10 @@ housekeeping_policy: keep
 # E02:S08:T08 — Planning: Spec, Tests, Implementation Plan (IPW)
 
 **Host Task:** [`T08-enhanced-workflow-forensic-logging-and-rollback-hardening-fr-059.md`](../kanban/epics/epic-02/story-08-harden-release-workflow-reliability/T08-enhanced-workflow-forensic-logging-and-rollback-hardening-fr-059.md) **(E02:S08:T08)**  
-**Planning for:** [FR-059](../kanban/fr-br/FR-059-enhanced-workflow-logging-system.md)  
+**Planning for:** [FR-059](../kanban/fbu/FR-059-enhanced-workflow-logging-system.md)  
 **Status:** Closed — planning complete; implementation `v0.2.8.8+2`, closure RW `v0.2.8.8+3` (2026-05-30)
 
-> **IPW (Implementation Planning Workflow):** Consolidated IPP per [FR-042](../kanban/fr-br/FR-042-implementation-planning-workflow-ipw.md). Bidirectional wiring to host task **Input** and **References** is mandatory before implementation.
+> **IPW (Implementation Planning Workflow):** Consolidated IPP per [FR-042](../kanban/fbu/FR-042-implementation-planning-workflow-ipw.md). Bidirectional wiring to host task **Input** and **References** is mandatory before implementation.
 
 ---
 
@@ -47,7 +47,7 @@ housekeeping_policy: keep
   - Mis-attributed release `v0.2.8.8+1` is kanban traceability only — not FR-059 implementation evidence.
 - **In scope:** `packages/frameworks/workflow-mgt/scripts/journal/`, `workflow_executor.py`, `tests/journal/`, `tests/workflow/`, KB operator guide, ADR-008, rw-config journal keys.
 - **Out of scope:**
-  - [FR-044 / E05:S01:T44](../kanban/fr-br/FR-044-rw-temporary-execution-log-for-recovery-and-forensics.md) — RW temporary execution log product slice.
+  - [FR-044 / E05:S01:T44](../kanban/fbu/FR-044-rw-temporary-execution-log-for-recovery-and-forensics.md) — RW temporary execution log product slice.
   - [E02:S01:T23](../kanban/epics/epic-02/story-01-rw-agent-execution-and-docs/T23-tool-agnostic-workflow-step-tracking-and-runlogs.md) — tool-agnostic step-tracker governance (docs-first).
   - 100+ concurrent workflow scale (document as future load test).
 
@@ -236,9 +236,9 @@ Criteria: [`ipw-adr-necessity-checklist.md`](../architecture/standards-and-adrs/
 
 ## References
 
-- [FR-059](../kanban/fr-br/FR-059-enhanced-workflow-logging-system.md)
+- [FR-059](../kanban/fbu/FR-059-enhanced-workflow-logging-system.md)
 - [ADR-008](../architecture/standards-and-adrs/ADR-008-workflow-forensic-logging-and-checkpoints.md)
-- [FR-042 IPW](../kanban/fr-br/FR-042-implementation-planning-workflow-ipw.md)
+- [FR-042 IPW](../kanban/fbu/FR-042-implementation-planning-workflow-ipw.md)
 - [ipw-adr-necessity-checklist.md](../architecture/standards-and-adrs/ipw-adr-necessity-checklist.md)
 - [workflow_executor.py](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/scripts/workflow_executor.py)
 - [CHANGELOG v0.2.8.8+1](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.8.8%2B1.md) (mis-attributed kanban release)

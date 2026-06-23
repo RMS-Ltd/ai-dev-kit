@@ -109,8 +109,8 @@ Updated Kanban governance policy documents that:
 ## Related Work
 
 **Related BR/FR Links:**
-- [FR-016: Kanban Granularity & Discrete Task Docs (3-Tier Structure)](../../docs/kanban/fr-br/FR-016-kanban-granularity-discrete-task-docs.md)
-- [FR-017: Versioning Policy Hardening — Doc-Init Build (+0) for New E/S/T](../../docs/kanban/fr-br/FR-017-versioning-policy-hardening-doc-init-build.md)
+- [FR-016: Kanban Granularity & Discrete Task Docs (3-Tier Structure)](../../docs/kanban/fbu/FR-016-kanban-granularity-discrete-task-docs.md)
+- [FR-017: Versioning Policy Hardening — Doc-Init Build (+0) for New E/S/T](../../docs/kanban/fbu/FR-017-versioning-policy-hardening-doc-init-build.md)
 
 **Related Tasks:**
 - E4:S11:T02: Create Task Document Template and Update Story Template (next task)
@@ -168,7 +168,7 @@ The policy updates enable subsequent tasks (T02: templates, T03: versioning poli
 - [Kanban Governance Policy (Canonical)](../policies/kanban-governance-policy.md)
 - [Kanban Governance Policy (Dev-Kit Local)](docs/governance/kanban/kanban-governance-policy.md)
 - [Kanban Governance Policy (Numbering & Versioning)](../../packages/frameworks/numbering-versioning/kanban-governance-policy.md)
-- [FR-016: Kanban Granularity & Discrete Task Docs](../../docs/kanban/fr-br/FR-016-kanban-granularity-discrete-task-docs.md)
+- [FR-016: Kanban Granularity & Discrete Task Docs](../../docs/kanban/fbu/FR-016-kanban-granularity-discrete-task-docs.md)
 
 ---
 

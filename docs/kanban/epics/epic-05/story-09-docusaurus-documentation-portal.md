@@ -27,14 +27,14 @@ housekeeping_policy: keep
 - [x] **E05:S09:T05 – CI build gate (FR-069)** - ✅ COMPLETE (v0.5.9.5+1)
 - [x] **E05:S09:T06 – Deployment and hosting (FR-070)** - ✅ COMPLETE (v0.5.9.6+1)
 - [x] **E05:S09:T07 – Site search (FR-071)** - ✅ COMPLETE (v0.5.9.7+1)
-- [x] **E05:S09:T08 – Strict broken-link checking post–FR-067 (warn → throw)** - ✅ COMPLETE (**v0.5.9.8+2** — **RW E05:S09:T08**); **FU-1** on [FR-067](../../fr-br/FR-067-docusaurus-production-build-corpus-triage.md) — [task file](story-09-docusaurus-documentation-portal/T08-docusaurus-strict-broken-links-post-fr067.md)
+- [x] **E05:S09:T08 – Strict broken-link checking post–FR-067 (warn → throw)** - ✅ COMPLETE (**v0.5.9.8+2** — **RW E05:S09:T08**); **FU-1** on [FR-067](../../fbu/FR-067-docusaurus-production-build-corpus-triage.md) — [task file](story-09-docusaurus-documentation-portal/T08-docusaurus-strict-broken-links-post-fr067.md)
 - [x] **E05:S09:T09 – GitHub Pages go-live verification (FR-070 follow-up)** - ✅ COMPLETE (v0.5.9.9+2 — **RW E05:S09:T09**) — [task file](story-09-docusaurus-documentation-portal/T09-github-pages-go-live-verification.md)
-- [x] **E05:S09:T10 – Strict broken-anchor checking post–T08** - ✅ COMPLETE (**v0.5.9.10+2** — **RW E05:S09:T10**); **FR-067** [FU-3](../../fr-br/FR-067-docusaurus-production-build-corpus-triage.md) — [task file](story-09-docusaurus-documentation-portal/T10-docusaurus-strict-broken-anchors-post-t08.md)
-- [x] **E05:S09:T11 – Monorepo cross-root Markdown link resolution ([BR-068](../../fr-br/BR-068-docusaurus-monorepo-markdown-links-break-strict-production-build.md))** — ✅ COMPLETE (**v0.5.9.11+6** — Wave 5 regression guard) — [task file](story-09-docusaurus-documentation-portal/T11-docusaurus-monorepo-markdown-link-resolution-br068.md) | [IPP](../../../implementation-cycles/IPP-E05S09T11-docusaurus-monorepo-markdown-link-resolution-br068.md)
-- [x] **E05:S09:T12 – Changelog directory consolidation ([UXR-018](../../fr-br/UXR-018-changelog-directory-consolidation.md))** — ✅ COMPLETE (**v0.5.9.12+3**) — [task file](story-09-docusaurus-documentation-portal/T12-changelog-directory-consolidation-uxr018.md) | [IPP](../../../implementation-cycles/IPP-E05S09T12-changelog-directory-consolidation.md) | [Remediation](../../../maintenance/coordinate-remediation-uxr018-e05s09t12.md)
-- [x] **E05:S09:T13 – Docusaurus `@docusaurus/faster` + package.json 3.10.1 alignment ([BR-090](../../fr-br/BR-090-docusaurus-faster-missing-dependabot-310-lockfile-drift.md))** — ✅ COMPLETE (**v0.5.9.13+3** — BR-090 FIXED); [IPP](../../../implementation-cycles/IPP-E05S09T13-docusaurus-faster-package-alignment.md) — [task file](story-09-docusaurus-documentation-portal/T13-docusaurus-faster-package-alignment-br090.md)
-- [x] **E05:S09:T14 – Docusaurus CI build/deploy deduplication ([BR-093](../../fr-br/BR-093-docusaurus-ci-duplicate-build-deploy-job-waste.md))** — ✅ COMPLETE (**v0.5.9.14+3** — Wave 2 + BUILD remediation; BR-093 **FIXED**); [IPP](../../../implementation-cycles/IPP-E05S09T14-docusaurus-ci-workflow-deduplication.md) · [ADR-017](../../../architecture/standards-and-adrs/ADR-017-docusaurus-ci-build-deploy-topology.md) — [task file](story-09-docusaurus-documentation-portal/T14-docusaurus-ci-workflow-deduplication-br093.md)
-- [x] **E05:S09:T15 – Docusaurus adopter-public publish allowlist ([FR-114](../../fr-br/FR-114-split-documentation-surfaces-docusaurus-public-notion-maintainer-kb.md))** — ✅ COMPLETE (**v0.5.9.15+2** — Wave 2 ADR-024) — [task file](story-09-docusaurus-documentation-portal/T15-docusaurus-adopter-public-publish-allowlist-fr114.md) | [IPP](../../../implementation-cycles/IPP-E05S09T15-docusaurus-adopter-public-publish-allowlist-fr114.md) | [ADR-024](../../../architecture/standards-and-adrs/ADR-024-docusaurus-adopter-public-publish-allowlist-fr114.md)
+- [x] **E05:S09:T10 – Strict broken-anchor checking post–T08** - ✅ COMPLETE (**v0.5.9.10+2** — **RW E05:S09:T10**); **FR-067** [FU-3](../../fbu/FR-067-docusaurus-production-build-corpus-triage.md) — [task file](story-09-docusaurus-documentation-portal/T10-docusaurus-strict-broken-anchors-post-t08.md)
+- [x] **E05:S09:T11 – Monorepo cross-root Markdown link resolution ([BR-068](../../fbu/BR-068-docusaurus-monorepo-markdown-links-break-strict-production-build.md))** — ✅ COMPLETE (**v0.5.9.11+6** — Wave 5 regression guard) — [task file](story-09-docusaurus-documentation-portal/T11-docusaurus-monorepo-markdown-link-resolution-br068.md) | [IPP](../../../implementation-cycles/IPP-E05S09T11-docusaurus-monorepo-markdown-link-resolution-br068.md)
+- [x] **E05:S09:T12 – Changelog directory consolidation ([UXR-018](../../fbu/UXR-018-changelog-directory-consolidation.md))** — ✅ COMPLETE (**v0.5.9.12+3**) — [task file](story-09-docusaurus-documentation-portal/T12-changelog-directory-consolidation-uxr018.md) | [IPP](../../../implementation-cycles/IPP-E05S09T12-changelog-directory-consolidation.md) | [Remediation](../../../maintenance/coordinate-remediation-uxr018-e05s09t12.md)
+- [x] **E05:S09:T13 – Docusaurus `@docusaurus/faster` + package.json 3.10.1 alignment ([BR-090](../../fbu/BR-090-docusaurus-faster-missing-dependabot-310-lockfile-drift.md))** — ✅ COMPLETE (**v0.5.9.13+3** — BR-090 FIXED); [IPP](../../../implementation-cycles/IPP-E05S09T13-docusaurus-faster-package-alignment.md) — [task file](story-09-docusaurus-documentation-portal/T13-docusaurus-faster-package-alignment-br090.md)
+- [x] **E05:S09:T14 – Docusaurus CI build/deploy deduplication ([BR-093](../../fbu/BR-093-docusaurus-ci-duplicate-build-deploy-job-waste.md))** — ✅ COMPLETE (**v0.5.9.14+3** — Wave 2 + BUILD remediation; BR-093 **FIXED**); [IPP](../../../implementation-cycles/IPP-E05S09T14-docusaurus-ci-workflow-deduplication.md) · [ADR-017](../../../architecture/standards-and-adrs/ADR-017-docusaurus-ci-build-deploy-topology.md) — [task file](story-09-docusaurus-documentation-portal/T14-docusaurus-ci-workflow-deduplication-br093.md)
+- [x] **E05:S09:T15 – Docusaurus adopter-public publish allowlist ([FR-114](../../fbu/FR-114-split-documentation-surfaces-docusaurus-public-notion-maintainer-kb.md))** — ✅ COMPLETE (**v0.5.9.15+2** — Wave 2 ADR-024) — [task file](story-09-docusaurus-documentation-portal/T15-docusaurus-adopter-public-publish-allowlist-fr114.md) | [IPP](../../../implementation-cycles/IPP-E05S09T15-docusaurus-adopter-public-publish-allowlist-fr114.md) | [ADR-024](../../../architecture/standards-and-adrs/ADR-024-docusaurus-adopter-public-publish-allowlist-fr114.md)
 
 > **Forensic marker format:** `✅ COMPLETE (vRC.E.S.T+B)` when done.
 
@@ -58,25 +58,25 @@ Deliver a **complete Docusaurus adoption path** for the AI Dev Kit: the `portal/
 
 | Task | FR | Document |
 | --- | --- | --- |
-| T01 | FR-065 | [`FR-065-docusaurus-site-identity-and-config.md`](../../fr-br/FR-065-docusaurus-site-identity-and-config.md) |
-| T02 | FR-066 | [`FR-066-docusaurus-canonical-docs-path-and-publish-scope.md`](../../fr-br/FR-066-docusaurus-canonical-docs-path-and-publish-scope.md) |
-| T03 | FR-067 | [`FR-067-docusaurus-production-build-corpus-triage.md`](../../fr-br/FR-067-docusaurus-production-build-corpus-triage.md) |
-| T04 | FR-068 | [`FR-068-docusaurus-navigation-sidebar-and-landing.md`](../../fr-br/FR-068-docusaurus-navigation-sidebar-and-landing.md) |
-| T05 | FR-069 | [`FR-069-docusaurus-ci-build-gate.md`](../../fr-br/FR-069-docusaurus-ci-build-gate.md) |
-| T06 | FR-070 | [`FR-070-docusaurus-deployment-and-hosting.md`](../../fr-br/FR-070-docusaurus-deployment-and-hosting.md) |
-| T07 | FR-071 | [`FR-071-docusaurus-site-search.md`](../../fr-br/FR-071-docusaurus-site-search.md) |
-| T08 | FR-067 (FU-1) | [`FR-067-docusaurus-production-build-corpus-triage.md`](../../fr-br/FR-067-docusaurus-production-build-corpus-triage.md) |
-| T09 | FR-070 (follow-up) | [`FR-070-docusaurus-deployment-and-hosting.md`](../../fr-br/FR-070-docusaurus-deployment-and-hosting.md) |
-| T10 | FR-067 (FU-3) | [`FR-067-docusaurus-production-build-corpus-triage.md`](../../fr-br/FR-067-docusaurus-production-build-corpus-triage.md) |
+| T01 | FR-065 | [`FR-065-docusaurus-site-identity-and-config.md`](../../fbu/FR-065-docusaurus-site-identity-and-config.md) |
+| T02 | FR-066 | [`FR-066-docusaurus-canonical-docs-path-and-publish-scope.md`](../../fbu/FR-066-docusaurus-canonical-docs-path-and-publish-scope.md) |
+| T03 | FR-067 | [`FR-067-docusaurus-production-build-corpus-triage.md`](../../fbu/FR-067-docusaurus-production-build-corpus-triage.md) |
+| T04 | FR-068 | [`FR-068-docusaurus-navigation-sidebar-and-landing.md`](../../fbu/FR-068-docusaurus-navigation-sidebar-and-landing.md) |
+| T05 | FR-069 | [`FR-069-docusaurus-ci-build-gate.md`](../../fbu/FR-069-docusaurus-ci-build-gate.md) |
+| T06 | FR-070 | [`FR-070-docusaurus-deployment-and-hosting.md`](../../fbu/FR-070-docusaurus-deployment-and-hosting.md) |
+| T07 | FR-071 | [`FR-071-docusaurus-site-search.md`](../../fbu/FR-071-docusaurus-site-search.md) |
+| T08 | FR-067 (FU-1) | [`FR-067-docusaurus-production-build-corpus-triage.md`](../../fbu/FR-067-docusaurus-production-build-corpus-triage.md) |
+| T09 | FR-070 (follow-up) | [`FR-070-docusaurus-deployment-and-hosting.md`](../../fbu/FR-070-docusaurus-deployment-and-hosting.md) |
+| T10 | FR-067 (FU-3) | [`FR-067-docusaurus-production-build-corpus-triage.md`](../../fbu/FR-067-docusaurus-production-build-corpus-triage.md) |
 
 ### Related BRs (post-FR backlog)
 
 | Task | BR | Document |
 | --- | --- | --- |
-| T11 | BR-068 | [`BR-068-docusaurus-monorepo-markdown-links-break-strict-production-build.md`](../../fr-br/BR-068-docusaurus-monorepo-markdown-links-break-strict-production-build.md) |
-| T13 | BR-090 | [`BR-090-docusaurus-faster-missing-dependabot-310-lockfile-drift.md`](../../fr-br/BR-090-docusaurus-faster-missing-dependabot-310-lockfile-drift.md) |
-| T14 | BR-093 | [`BR-093-docusaurus-ci-duplicate-build-deploy-job-waste.md`](../../fr-br/BR-093-docusaurus-ci-duplicate-build-deploy-job-waste.md) |
-| T15 | FR-114 | [`FR-114-split-documentation-surfaces-docusaurus-public-notion-maintainer-kb.md`](../../fr-br/FR-114-split-documentation-surfaces-docusaurus-public-notion-maintainer-kb.md) |
+| T11 | BR-068 | [`BR-068-docusaurus-monorepo-markdown-links-break-strict-production-build.md`](../../fbu/BR-068-docusaurus-monorepo-markdown-links-break-strict-production-build.md) |
+| T13 | BR-090 | [`BR-090-docusaurus-faster-missing-dependabot-310-lockfile-drift.md`](../../fbu/BR-090-docusaurus-faster-missing-dependabot-310-lockfile-drift.md) |
+| T14 | BR-093 | [`BR-093-docusaurus-ci-duplicate-build-deploy-job-waste.md`](../../fbu/BR-093-docusaurus-ci-duplicate-build-deploy-job-waste.md) |
+| T15 | FR-114 | [`FR-114-split-documentation-surfaces-docusaurus-public-notion-maintainer-kb.md`](../../fbu/FR-114-split-documentation-surfaces-docusaurus-public-notion-maintainer-kb.md) |
 
 ---
 

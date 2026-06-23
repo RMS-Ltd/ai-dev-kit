@@ -14,7 +14,7 @@ housekeeping_policy: keep
 **Last updated:** 2026-05-29 (semantic task doc filed; delivery v0.4.2.6+3)  
 **Code:** E04S02T06
 
-**Upstream:** [FR-004 — GitHub submission for FR/BR/UXR](../../../fr-br/FR-004-github-submission-for-fr-br-uxr.md)
+**Upstream:** [FR-004 — GitHub submission for FR/BR/UXR](../../../fbu/FR-004-github-submission-for-fr-br-uxr.md)
 
 Publication Status: NOT_APPLICABLE
 
@@ -31,5 +31,5 @@ GitHub submission integration for FR, BR, UXR, and UAT reports (completed under 
 
 ## References
 
-- [FR-004](../../../fr-br/FR-004-github-submission-for-fr-br-uxr.md)
+- [FR-004](../../../fbu/FR-004-github-submission-for-fr-br-uxr.md)
 - [Story 002](../story-02-fr-br-intake-to-tasks.md)

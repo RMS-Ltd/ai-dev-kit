@@ -15,7 +15,7 @@ housekeeping_policy: keep
 **Last updated:** 2026-03-09  
 **Version:** v0.6.7.107+1  
 **Code:** E06:S06:T01  
-**Associated FR:** [FR-051](../../../fr-br/FR-051-fr-br-uxr-prioritization-board.md)
+**Associated FR:** [FR-051](../../../fbu/FR-051-fr-br-uxr-prioritization-board.md)
 
 ---
 
@@ -35,7 +35,7 @@ Implement an FR/BR/UXR Prioritization Board with identical responsibility struct
 1. ✅ **Main Board Created** - Functional `kboard.md` with prioritized FR/BR/UXR list
 2. ✅ **Completed Board Created** - Functional `intake-completed.md` for historical tracking
 3. ✅ **Priority System** - Clear priority levels (CRITICAL, HIGH, MEDIUM, LOW) and status tracking
-4. ✅ **Document Integration** - Links to all existing FR/BR/UXR documents in `/fr-br/` directory
+4. ✅ **Document Integration** - Links to all existing FR/BR/UXR documents in `/fbu/` directory
 5. ✅ **Kanban Integration** - Cross-references to associated Kanban tasks
 
 ### Structure Requirements:
@@ -61,7 +61,7 @@ Implement an FR/BR/UXR Prioritization Board with identical responsibility struct
 
 - Create main FR/BR/UXR board structure (`kboard.md`)
 - Create completed board structure (`intake-completed.md`)
-- Scan existing FR/BR/UXR documents in `/fr-br/` directory
+- Scan existing FR/BR/UXR documents in `/fbu/` directory
 - Populate main board with all open FRs, BRs, and UXRs
 - Assign initial priorities based on content and dates
 
@@ -112,7 +112,7 @@ docs/kanban/
 
 ### Integration Points
 
-- **FR/BR/UXR Documents** - `/fr-br/FR-*.md`, `/fr-br/BR-*.md`, `/fr-br/UXR-*.md`
+- **FR/BR/UXR Documents** - `/fbu/FR-*.md`, `/fbu/BR-*.md`, `/fbu/UXR-*.md`
 - **Kanban Tasks** - Cross-references to implementing tasks
 - **Intake Workflow** - Automatic board population and updates
 - **Release Workflow** - Completion tracking and board updates

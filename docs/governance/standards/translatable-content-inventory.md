@@ -154,4 +154,4 @@ Nine FR-006 target locales have on-disk trees (en-GB interim copy). See [locale-
 - [locale-key-conventions.md](locale-key-conventions.md)
 - [locale-file-structure-conventions.md](locale-file-structure-conventions.md)
 - [IPP-E21S03T01](../../implementation-cycles/IPP-E21S03T01-identify-extract-translatable-content.md)
-- [FR-006](../../project-management/kanban/fr-br/FR-006-localization-language-selection-uk-us-english.md)
+- [FR-006](../../project-management/kanban/fbu/FR-006-localization-language-selection-uk-us-english.md)

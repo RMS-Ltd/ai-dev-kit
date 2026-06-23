@@ -12,7 +12,7 @@ housekeeping_policy: keep
 **Status:** COMPLETE  
 **Priority:** HIGH  
 **Version Anchor:** v0.5.1.74+3 *(+1 FR-074 KG-R2/KG-R6; +2/+3 FR-073 board / epic/6 reconciliation)*  
-**Feature Request:** [FR-074 – Kanban intake governance](../../../fr-br/FR-074-kanban-intake-atomic-kg-r2-kg-r6-governance.md)
+**Feature Request:** [FR-074 – Kanban intake governance](../../../fbu/FR-074-kanban-intake-atomic-kg-r2-kg-r6-governance.md)
 
 ---
 
@@ -26,7 +26,7 @@ Ship documentation/policy updates that **harden intake**: **KG-R2** (every FR/BR
 
 - Uncommitted or drafted edits across listed paths.  
 - [`kanban-governance-policy.md` (framework package)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/kanban/policies/kanban-governance-policy.md) (framework canonical).  
-- [FR-074](../../../fr-br/FR-074-kanban-intake-atomic-kg-r2-kg-r6-governance.md).
+- [FR-074](../../../fbu/FR-074-kanban-intake-atomic-kg-r2-kg-r6-governance.md).
 
 ---
 

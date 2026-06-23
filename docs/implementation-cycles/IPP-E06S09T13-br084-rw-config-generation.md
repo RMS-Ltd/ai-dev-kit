@@ -9,7 +9,7 @@ housekeeping_policy: keep
 # E06:S09:T13 — Planning: Spec, Tests, Implementation Plan (IPW)
 
 **Host Task:** [`T13-rw-install-mode-c-rw-config-generation-br084.md`](../kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T13-rw-install-mode-c-rw-config-generation-br084.md) **(E06:S09:T13)**  
-**Planning for:** [BR-084](../kanban/fr-br/BR-084-rw-install-mode-c-missing-task-doc-pattern.md) · [GitHub #16](https://github.com/RMS-Ltd/ai-dev-kit/issues/16)  
+**Planning for:** [BR-084](../kanban/fbu/BR-084-rw-install-mode-c-missing-task-doc-pattern.md) · [GitHub #16](https://github.com/RMS-Ltd/ai-dev-kit/issues/16)  
 **Status:** Implemented (2026-06-03 — shipped **v0.6.9.13+2**, pending user verification)
 
 ---
@@ -21,7 +21,7 @@ housekeeping_policy: keep
 | ID | Requirement | Source |
 | -- | ----------- | ------ |
 | RF1 | `generate_rw_config_yaml` emits `task_doc_pattern` when `use_kanban: true` | BR-084 |
-| RF2 | Emit `fr_br_root` when `fr-br/` exists under kanban tree (project-root-relative path) | BR-084 |
+| RF2 | Emit `fbu_root` when `fbu/` exists under kanban tree (project-root-relative path) | BR-084 |
 | RF3 | Reuse T12 epic/story detection; add task pattern defaults | BR-084 |
 | RF4 | Mode C: no silent persist of 0-match epic/story when kanban root exists | BR-084 |
 | RF5 | Integration test: fresh layout → YAML with epic match ≥1 + `task_doc_pattern` | BR-084 |
@@ -45,7 +45,7 @@ housekeeping_policy: keep
 
 ### 2.1 Goal
 
-After fresh kanban + RW mode C, adopters get a complete `rw-config.yaml` kanban section including `task_doc_pattern` and `fr_br_root`, with guardrails against persisting zero-match epic/story patterns.
+After fresh kanban + RW mode C, adopters get a complete `rw-config.yaml` kanban section including `task_doc_pattern` and `fbu_root`, with guardrails against persisting zero-match epic/story patterns.
 
 ### 2.5 ADR necessity decision
 
@@ -57,7 +57,7 @@ After fresh kanban + RW mode C, adopters get a complete `rw-config.yaml` kanban 
 
 | ID | Behavior | Check |
 | -- | -------- | ----- |
-| T1 | `generate_rw_config_yaml` with kanban | Contains `task_doc_pattern`, `fr_br_root` when set |
+| T1 | `generate_rw_config_yaml` with kanban | Contains `task_doc_pattern`, `fbu_root` when set |
 | T2 | `detect_kanban_supplementary_defaults` on fresh tree | Epic score ≥1; task pattern returned |
 | T3 | E2E config build + YAML parse | Keys present; epic preview ≥1 |
 | T4 | `strict_zero_match` + mock input | Rejects 0-match without "use anyway" |
@@ -92,10 +92,10 @@ After fresh kanban + RW mode C, adopters get a complete `rw-config.yaml` kanban 
 
 ## 7. Success / verification criteria
 
-- [ ] Generated rw-config includes `task_doc_pattern` (+ `fr_br_root` when dir exists)
+- [ ] Generated rw-config includes `task_doc_pattern` (+ `fbu_root` when dir exists)
 - [ ] Book replay / GitHub #16 verified by user
 
 ## References
 
-- [BR-084](../kanban/fr-br/BR-084-rw-install-mode-c-missing-task-doc-pattern.md)
+- [BR-084](../kanban/fbu/BR-084-rw-install-mode-c-missing-task-doc-pattern.md)
 - [IPP-E6S9T12](IPP-E06S09T12-br083-rw-install-pattern-defaults.md)

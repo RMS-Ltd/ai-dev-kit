@@ -176,7 +176,7 @@ read_file, edit, multi_edit, list_dir, find_by_name
 - [ADR-013](../../../../architecture/standards-and-adrs/ADR-013-ide-command-allowlist-catalog-and-enforcement.md)
 - [validate_whitelist_patterns.py](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/scripts/validation/validate_whitelist_patterns.py)
 - [ide-whitelist-guide.md](../../../../../developer-tools/ide-whitelist-guide.md) · [ide-whitelist-uat-log.md](../../../../../developer-tools/ide-whitelist-uat-log.md)
-- [BR-039 — Cascade whitelist (vendor; out of scope for T107 closure)](../../../fr-br/BR-039-cascade-whitelist-security-prompt-usability-blocker.md)
+- [BR-039 — Cascade whitelist (vendor; out of scope for T107 closure)](../../../fbu/BR-039-cascade-whitelist-security-prompt-usability-blocker.md)
 - [E06:S06:T57 — BR-039 repo track](../story-06-feature-requests/T57-br039-cascade-whitelist-security-prompt-blocker.md)
 - [IPW-E6S6T57](../../../../implementation-cycles/IPW-E6S06T57-br039-vendor-blocker-planning.md)
 - [story-007 — In scope / charter freeze](../story-07-adk-implementation-analysis-and-package-management.md) (T107 pre-existing; in scope for ADK agent friction)
@@ -185,6 +185,6 @@ read_file, edit, multi_edit, list_dir, find_by_name
 
 **Related Tasks**: [E06:S06:T57](../story-06-feature-requests/T57-br039-cascade-whitelist-security-prompt-blocker.md) (BR-039 — complementary, not duplicate)
 
-**Feature Requests**: None (developer experience improvement). **Note:** [FR-050](../../../fr-br/FR-050-workflows-directory-structure-reorganization.md) was incorrectly linked to T107 — correct on implementation per IPP RF8.
+**Feature Requests**: None (developer experience improvement). **Note:** [FR-050](../../../fbu/FR-050-workflows-directory-structure-reorganization.md) was incorrectly linked to T107 — correct on implementation per IPP RF8.
 
 **Epic Context**: E6:S07 - Framework Management and Maintenance

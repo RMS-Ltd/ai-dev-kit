@@ -111,7 +111,7 @@ For each **non-blocking** gap:
      - Epic 2 (Workflow Mgt) or Epic 3 (Versioning) for cross-framework issues.
    - Create:
      - A **Task document** under the appropriate Story, or
-     - An **FR/BR document** under `fr-br/` if it represents an external request/bug.
+     - An **FR/BR document** under `fbu/` if it represents an external request/bug.
 
 2. **Record key metadata**
    - Link back to E4:S16 gap log entry.

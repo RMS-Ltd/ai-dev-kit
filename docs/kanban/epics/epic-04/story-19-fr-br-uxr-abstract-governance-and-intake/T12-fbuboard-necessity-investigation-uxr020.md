@@ -20,14 +20,14 @@ housekeeping_policy: keep
 
 **Publication Status:** NOT_APPLICABLE
 
-**Upstream:** [UXR-020 — Is `kboard.md` still necessary after task–FBU wiring?](../../../fr-br/UXR-020-fbuboard-necessity-after-task-fbu-wiring.md)  
+**Upstream:** [UXR-020 — Is `kboard.md` still necessary after task–FBU wiring?](../../../fbu/UXR-020-fbuboard-necessity-after-task-fbu-wiring.md)  
 **IPP:** [IPP-E4S19T12-single-board-consolidation-uxr020.md](../../../../implementation-cycles/IPP-E04S19T12-single-board-consolidation-uxr020.md)
 
 ---
 
 ## Input
 
-- [UXR-020](../../../fr-br/UXR-020-fbuboard-necessity-after-task-fbu-wiring.md) research findings and user **R3** direction.
+- [UXR-020](../../../fbu/UXR-020-fbuboard-necessity-after-task-fbu-wiring.md) research findings and user **R3** direction.
 - Live boards `kboard.md` (2026-06-05 snapshot).
 - [IPP-E4S19T12](../../../../implementation-cycles/IPP-E04S19T12-single-board-consolidation-uxr020.md) phased implementation plan.
 - [ADR-018](../../../../architecture/standards-and-adrs/ADR-018-single-kanban-board-consolidation.md) (Wave 1).
@@ -96,13 +96,13 @@ Operators report that keeping `kboard.md` in sync creates **unnecessary admin** 
 
 ## Associated reports
 
-- [UXR-020](../../../fr-br/UXR-020-fbuboard-necessity-after-task-fbu-wiring.md)
+- [UXR-020](../../../fbu/UXR-020-fbuboard-necessity-after-task-fbu-wiring.md)
 
 ---
 
 ## Related
 
-- [FR-051](../../../fr-br/FR-051-fr-br-uxr-prioritization-board.md)
-- [FR-092](../../../fr-br/FR-092-canonical-rw-ukw-kanban-consistency-program.md)
-- [FR-109](../../../fr-br/FR-109-ukw-lean-active-board-contract.md)
+- [FR-051](../../../fbu/FR-051-fr-br-uxr-prioritization-board.md)
+- [FR-092](../../../fbu/FR-092-canonical-rw-ukw-kanban-consistency-program.md)
+- [FR-109](../../../fbu/FR-109-ukw-lean-active-board-contract.md)
 - [E04:S19:T06](T06-fbu-meta-normalization-and-intake-governance-uxr008-fr086-fr073.md) — prior FBU board governance meta-task

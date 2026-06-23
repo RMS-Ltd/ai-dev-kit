@@ -72,7 +72,7 @@ Add translation management tools for maintainers.
 RW -k E21:S03:T05 --art --dpz
 ```
 
-**Target version anchor:** `v0.21.3.5+0` (doc-init BUILD +0 per [BR-067](../../../fr-br/BR-067-rw-first-doc-only-release-defaults-to-build-plus-one-not-plus-zero.md)).
+**Target version anchor:** `v0.21.3.5+0` (doc-init BUILD +0 per [BR-067](../../../fbu/BR-067-rw-first-doc-only-release-defaults-to-build-plus-one-not-plus-zero.md)).
 
 ---
 
@@ -99,4 +99,4 @@ Migrated from embedded Story section via `generate_task_doc.py` (FR-016 Wave 1 t
 - [scaffold_locale_trees.py](../../../../../../packages/frameworks/workflow-mgt/scripts/scaffold_locale_trees.py)
 - [validate_locale_translations.py](../../../../../../packages/frameworks/workflow-mgt/scripts/validate_locale_translations.py)
 - [sync_locale_keys.py](../../../../../../packages/frameworks/workflow-mgt/scripts/sync_locale_keys.py)
-- [FR-006](../../../fr-br/FR-006-localization-language-selection-uk-us-english.md)
+- [FR-006](../../../fbu/FR-006-localization-language-selection-uk-us-english.md)

@@ -9,7 +9,7 @@ housekeeping_policy: keep
 # E21:S03:T03 — Planning: Translation lookup and rendering (IPW)
 
 **Host Task:** [`T03-implement-translation-lookup-and-rendering.md`](../project-management/kanban/epics/epic-21/story-03-translation-and-localisation/T03-implement-translation-lookup-and-rendering.md) **(E21:S03:T03)**  
-**Planning for:** [FR-006 Phase 3+](../project-management/kanban/fr-br/FR-006-localization-language-selection-uk-us-english.md) · [IPP-E21S03T01](IPP-E21S03T01-identify-extract-translatable-content.md) · [IPP-E21S03T02](IPP-E21S03T02-create-translation-files-major-languages.md)  
+**Planning for:** [FR-006 Phase 3+](../project-management/kanban/fbu/FR-006-localization-language-selection-uk-us-english.md) · [IPP-E21S03T01](IPP-E21S03T01-identify-extract-translatable-content.md) · [IPP-E21S03T02](IPP-E21S03T02-create-translation-files-major-languages.md)  
 **Status:** Complete — released `v0.21.3.3+1` (`RW E21:S03:T03 --art`)  
 **Branch:** `epic/21-internationalisation-localisation`
 
@@ -196,4 +196,4 @@ Implements translatable-content-inventory T03 handoff: T01 extracted keys; T02 s
 - [locale-fallback-conventions.md](../governance/standards/locale-fallback-conventions.md)
 - [IPP-E21S03T01](IPP-E21S03T01-identify-extract-translatable-content.md)
 - [IPP-E21S03T02](IPP-E21S03T02-create-translation-files-major-languages.md)
-- [FR-006](../project-management/kanban/fr-br/FR-006-localization-language-selection-uk-us-english.md)
+- [FR-006](../project-management/kanban/fbu/FR-006-localization-language-selection-uk-us-english.md)

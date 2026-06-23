@@ -16,7 +16,7 @@ housekeeping_policy: keep
 **Last updated:** 2026-06-05 (wave 3 FBU closure — **v0.3.2.12+5**; task **COMPLETE**)
 **Version Anchor:** v0.3.2.12+5
 
-**Associated FR/BR:** [FR-045](../../../fr-br/FR-045-adr-002-task-touch-derived-mapping.md) · [FR-046](../../../fr-br/FR-046-rw-semver-tag-task-touch-mode.md) · [BR-061](../../../fr-br/BR-061-semver-task-touch-counter-increments-too-often.md)
+**Associated FR/BR:** [FR-045](../../../fbu/FR-045-adr-002-task-touch-derived-mapping.md) · [FR-046](../../../fbu/FR-046-rw-semver-tag-task-touch-mode.md) · [BR-061](../../../fbu/BR-061-semver-task-touch-counter-increments-too-often.md)
 
 ---
 
@@ -30,8 +30,8 @@ This task is prompted by a real SemVer tag collision incident (see incident log)
 
 ## Inputs
 
-- **BR-061:** [BR-061](../../../fr-br/BR-061-semver-task-touch-counter-increments-too-often.md) — registry counter / PATCH over-increment + tag pressure (**implementation bug**, not intake)
-- FR-045: `docs/kanban/fr-br/FR-045-adr-002-task-touch-derived-mapping.md`
+- **BR-061:** [BR-061](../../../fbu/BR-061-semver-task-touch-counter-increments-too-often.md) — registry counter / PATCH over-increment + tag pressure (**implementation bug**, not intake)
+- FR-045: `docs/kanban/fbu/FR-045-adr-002-task-touch-derived-mapping.md`
 - FR repo anchor task: `docs/kanban/epics/epic-05/story-01-fr-repo/T45-adr-002-task-touch-derived-mapping.md`
 - FR-046 anchor interaction target: [E05:S01:T46](../../epic-05/story-01-fr-repo/T46-rw-semver-tag-task-touch-mode.md)
 - Incident log: `docs/architecture/standards-and-adrs/semver-tag-collision-incident-2026-03-07.md`
@@ -73,9 +73,9 @@ This task is prompted by a real SemVer tag collision incident (see incident log)
 
 ## Related Work
 
-- [FR-045](../../../fr-br/FR-045-adr-002-task-touch-derived-mapping.md) (**IMPLEMENTED** — wave 3 closure **v0.3.2.12+5**)
-- [FR-046](../../../fr-br/FR-046-rw-semver-tag-task-touch-mode.md) (**IMPLEMENTED** — wave 3 closure **v0.3.2.12+5**)
-- [BR-061](../../../fr-br/BR-061-semver-task-touch-counter-increments-too-often.md) (**FIXED** — wave 3 closure **v0.3.2.12+5**)
+- [FR-045](../../../fbu/FR-045-adr-002-task-touch-derived-mapping.md) (**IMPLEMENTED** — wave 3 closure **v0.3.2.12+5**)
+- [FR-046](../../../fbu/FR-046-rw-semver-tag-task-touch-mode.md) (**IMPLEMENTED** — wave 3 closure **v0.3.2.12+5**)
+- [BR-061](../../../fbu/BR-061-semver-task-touch-counter-increments-too-often.md) (**FIXED** — wave 3 closure **v0.3.2.12+5**)
 - `docs/architecture/standards-and-adrs/semver-implementation-followup-spec.md`
 - [IPP-E3S2T12-task-touch-semver-collision-hardening](../../../../implementation-cycles/IPP-E03S02T12-task-touch-semver-collision-hardening.md)
 

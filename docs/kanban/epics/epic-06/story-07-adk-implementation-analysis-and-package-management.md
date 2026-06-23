@@ -60,22 +60,22 @@ housekeeping_policy: keep
 
 - [x] **E06:S07:T11 – Changelog Management and Archival Workflow** - ✅ COMPLETE (v0.6.7.11+4 – Phase 6 complete: Initial archival, ALL PHASES COMPLETE)
   - Task: [`T11-changelog-management-and-archival-workflow.md`](story-07-adk-implementation-analysis-and-package-management/T11-changelog-management-and-archival-workflow.md)
-  - **Feature Request:** [FR-025](../../fr-br/FR-025-changelog-management-and-archival-workflow.md)
+  - **Feature Request:** [FR-025](../../fbu/FR-025-changelog-management-and-archival-workflow.md)
 
 
 - [x] **E06:S07:T13 – Canonical CMW Perpetual Task** - ✅ COMPLETE (v0.6.7.13+2 – All phases complete: CMW perpetual task pattern canonicalized)
   - Task: [`T13-canonical-cmw-perpetual-task.md`](story-07-adk-implementation-analysis-and-package-management/T13-canonical-cmw-perpetual-task.md)
-  - **Feature Request:** [FR-026](../../fr-br/FR-026-canonical-perpetual-task-for-changelog-maintenance.md)
+  - **Feature Request:** [FR-026](../../fbu/FR-026-canonical-perpetual-task-for-changelog-maintenance.md)
 
 
 - [x] **E06:S07:T14 – Add CMW to Workflow Management Package Documentation** - ✅ COMPLETE (v0.6.7.14+1 – CMW documentation added to package README, all acceptance criteria met)
   - Task: [`T14-add-cmw-to-workflow-management-package-documentation.md`](story-07-adk-implementation-analysis-and-package-management/T14-add-cmw-to-workflow-management-package-documentation.md)
-  - **Feature Request:** [FR-027](../../fr-br/FR-027-add-cmw-to-workflow-management-package-documentation.md)
+  - **Feature Request:** [FR-027](../../fbu/FR-027-add-cmw-to-workflow-management-package-documentation.md)
 
 
 - [x] **E06:S07:T15 – Cursor IDE Performance Considerations Awareness** - ✅ COMPLETE (v0.6.7.15+1 – Implementation complete: Awareness documentation created and framework guidance updated)
   - Task: [`T15-cursor-ide-performance-considerations-awareness.md`](story-07-adk-implementation-analysis-and-package-management/T15-cursor-ide-performance-considerations-awareness.md)
-  - **Feature Request:** [FR-028](../../fr-br/FR-028-cursor-ide-performance-considerations-awareness.md)
+  - **Feature Request:** [FR-028](../../fbu/FR-028-cursor-ide-performance-considerations-awareness.md)
 
 
 - [x] **E06:S07:T16 – Harden CMW Ordering Before Archival** - ✅ COMPLETE (v0.6.7.16+1 – All phases complete: Step 3.5 added to CMW, ordering fixed before archival)
@@ -107,36 +107,36 @@ housekeeping_policy: keep
 
 
 - [x] **E06:S07:T109 – BR-059: UKW MoSCOW full open-task coverage** - SUPERSEDED → **E02:S16:T13** (re-housed 2026-05-29, FR-087 Wave 4)
-  - Historical: [`T109-br059-ukw-moscow-full-story-task-coverage.md`](story-07-adk-implementation-analysis-and-package-management/T109-br059-ukw-moscow-full-story-task-coverage.md) | [BR-059](../../fr-br/BR-059-ukw-moscow-incomplete-story-task-coverage.md) | Successor: [E02:S16:T13](../epic-02/story-16-perpetual-ongoing-workflow-operations/T13-br059-ukw-moscow-full-story-task-coverage.md)
+  - Historical: [`T109-br059-ukw-moscow-full-story-task-coverage.md`](story-07-adk-implementation-analysis-and-package-management/T109-br059-ukw-moscow-full-story-task-coverage.md) | [BR-059](../../fbu/BR-059-ukw-moscow-incomplete-story-task-coverage.md) | Successor: [E02:S16:T13](../epic-02/story-16-perpetual-ongoing-workflow-operations/T13-br059-ukw-moscow-full-story-task-coverage.md)
 
 
 - [x] **E06:S07:T110 – UKW fbuboard scope + concurrency/temporal-drift controls** - ✅ COMPLETE (HIGH, v0.6.7.110+1 — UKW fbuboard parity + drift/concurrency controls released)
-  - Task: [`T110-ukw-fbuboard-scope-and-drift-concurrency-controls.md`](story-07-adk-implementation-analysis-and-package-management/T110-ukw-fbuboard-scope-and-drift-concurrency-controls.md) | [FR-076](../../fr-br/FR-076-ukw-fbuboard-scope-and-drift-concurrency-controls.md)
+  - Task: [`T110-ukw-fbuboard-scope-and-drift-concurrency-controls.md`](story-07-adk-implementation-analysis-and-package-management/T110-ukw-fbuboard-scope-and-drift-concurrency-controls.md) | [FR-076](../../fbu/FR-076-ukw-fbuboard-scope-and-drift-concurrency-controls.md)
   - **Coordinates:** [E02:S16:T03](../epic-02/story-16-perpetual-ongoing-workflow-operations/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md) (Story 016 migration anchor), [E06:S07:T108](story-07-adk-implementation-analysis-and-package-management/T108-ukw-extension-for-fr-br-uxr-temporal-tracking-and-synchronization.md) (SUPERSEDED → [E02:S16:T07](../epic-02/story-16-perpetual-ongoing-workflow-operations/T07-ukw-extension-for-fr-br-uxr-temporal-tracking-fr050.md))
 
 
 - [x] **E06:S07:T111 – Comprehensive install event-contract logging quality** - ✅ COMPLETE (CRITICAL, v0.6.7.111+1 — FR-078 install contract + validator + verification complete on 2026-04-10)
-  - Task: [`T111-comprehensive-install-event-contract-logging-and-feedback-quality.md`](story-07-adk-implementation-analysis-and-package-management/T111-comprehensive-install-event-contract-logging-and-feedback-quality.md) | [FR-078](../../fr-br/FR-078-comprehensive-install-event-contract-logging-and-feedback-quality.md)
+  - Task: [`T111-comprehensive-install-event-contract-logging-and-feedback-quality.md`](story-07-adk-implementation-analysis-and-package-management/T111-comprehensive-install-event-contract-logging-and-feedback-quality.md) | [FR-078](../../fbu/FR-078-comprehensive-install-event-contract-logging-and-feedback-quality.md)
 
 
 - [ ] **E06:S07:T112 – Install feedback submission path and governance** - IN PROGRESS (CRITICAL, convert local telemetry into safe, deterministic feedback submissions for maintainer triage)
-  - Task: [`T112-install-feedback-submission-path-and-governance.md`](story-07-adk-implementation-analysis-and-package-management/T112-install-feedback-submission-path-and-governance.md) | [FR-079](../../fr-br/FR-079-install-feedback-submission-path-and-governance.md)
+  - Task: [`T112-install-feedback-submission-path-and-governance.md`](story-07-adk-implementation-analysis-and-package-management/T112-install-feedback-submission-path-and-governance.md) | [FR-079](../../fbu/FR-079-install-feedback-submission-path-and-governance.md)
 
 
 - [x] **E06:S07:T113 – RW Step 12.5 GitHub release parser hardening (BR-065)** - ✅ COMPLETE (HIGH, parser hardening + deterministic diagnostics + regression tests implemented)
-  - Task: [`T113-rw-step-12-5-github-release-parser-hardening-br065.md`](story-07-adk-implementation-analysis-and-package-management/T113-rw-step-12-5-github-release-parser-hardening-br065.md) | [BR-065](../../fr-br/BR-065-rw-step-12-5-github-release-parser-fails-on-v-prefixed-version.md)
+  - Task: [`T113-rw-step-12-5-github-release-parser-hardening-br065.md`](story-07-adk-implementation-analysis-and-package-management/T113-rw-step-12-5-github-release-parser-hardening-br065.md) | [BR-065](../../fbu/BR-065-rw-step-12-5-github-release-parser-fails-on-v-prefixed-version.md)
 
 
 - [x] **E06:S07:T114 – Canonical board filename migration (`kboard.md`)** - ✅ COMPLETE (HIGH, v0.6.7.114+1 — defaults migrated across project + packages; UXR/task/ICW backfilled)
-  - Task: [`T114-canonical-board-filename-migration-kboard-fbuboard.md`](story-07-adk-implementation-analysis-and-package-management/T114-canonical-board-filename-migration-kboard-fbuboard.md) | [UXR-008](../../fr-br/UXR-008-kboard-fbuboard-default-naming-adoption.md)
+  - Task: [`T114-canonical-board-filename-migration-kboard-fbuboard.md`](story-07-adk-implementation-analysis-and-package-management/T114-canonical-board-filename-migration-kboard-fbuboard.md) | [UXR-008](../../fbu/UXR-008-kboard-fbuboard-default-naming-adoption.md)
 
 
 - [x] **E06:S07:T115 – Last-modified stamp forensic integrity guardrails** - COMPLETE (CRITICAL, FR-092 v0.2.15.7+9 delivered Wave 6 stamp-evidence gate; ACs satisfied via meta-program absorption)
-  - Task: [`T115-last-modified-stamp-forensic-integrity-guardrails.md`](story-07-adk-implementation-analysis-and-package-management/T115-last-modified-stamp-forensic-integrity-guardrails.md) | [UXR-009](../../fr-br/UXR-009-last-modified-stamp-forensic-integrity-and-drift-protection.md)
+  - Task: [`T115-last-modified-stamp-forensic-integrity-guardrails.md`](story-07-adk-implementation-analysis-and-package-management/T115-last-modified-stamp-forensic-integrity-guardrails.md) | [UXR-009](../../fbu/UXR-009-last-modified-stamp-forensic-integrity-and-drift-protection.md)
 
 
 - [x] **E06:S07:T116 – UKW optional reprioritization `--rp` flag (FR-085)** - SUPERSEDED (re-housed to **E02:S16:T06** for canonical perpetual workflow-operations ownership; legacy task doc removed)
-  - Historical anchor: `E06:S07:T116` | [FR-085](../../fr-br/FR-085-ukw-optional-reprioritization-rp-flag.md) | Successor: [E02:S16:T06](../epic-02/story-16-perpetual-ongoing-workflow-operations/T06-ukw-optional-reprioritization-rp-flag-fr085.md)
+  - Historical anchor: `E06:S07:T116` | [FR-085](../../fbu/FR-085-ukw-optional-reprioritization-rp-flag.md) | Successor: [E02:S16:T06](../epic-02/story-16-perpetual-ongoing-workflow-operations/T06-ukw-optional-reprioritization-rp-flag-fr085.md)
 
 ---
 

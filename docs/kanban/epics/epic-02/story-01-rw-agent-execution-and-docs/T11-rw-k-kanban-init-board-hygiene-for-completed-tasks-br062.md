@@ -27,7 +27,7 @@ Fix RW Step 7 Kanban update behavior so completed tasks are not left in the in-p
 
 ## Input
 
-- [BR-062](../../../fr-br/BR-062-rw-k-kanban-init-does-not-prune-completed-tasks-from-kboard.md)
+- [BR-062](../../../fbu/BR-062-rw-k-kanban-init-does-not-prune-completed-tasks-from-kboard.md)
 - `packages/frameworks/workflow-mgt/scripts/update_kanban_docs.py`
 - `docs/kanban/kboard.md`
 
@@ -53,7 +53,7 @@ Fix RW Step 7 Kanban update behavior so completed tasks are not left in the in-p
 
 ## Links
 
-- [BR-062](../../../fr-br/BR-062-rw-k-kanban-init-does-not-prune-completed-tasks-from-kboard.md)
+- [BR-062](../../../fbu/BR-062-rw-k-kanban-init-does-not-prune-completed-tasks-from-kboard.md)
 - [Story E2:S01](../story-01-rw-agent-execution-and-docs.md)
 
 ---

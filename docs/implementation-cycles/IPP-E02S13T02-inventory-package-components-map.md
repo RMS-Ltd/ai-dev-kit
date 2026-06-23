@@ -192,4 +192,4 @@ Seven taxonomy sections in companion file: (1) core docs, (2) KB/methodology, (3
 - [T01 expectations baseline](../kanban/epics/epic-02/story-13-workflow-management-package-implementation-review/T01-expectations-baseline.md)
 - [E07:S07:T01 report](../kanban/epics/epic-07/story-07-code-reviews/T01-workflow-machinery-code-review-report.md)
 - [E04:S16:T02 pattern](../kanban/epics/epic-04/story-16-kanban-package-implementation-review/T02-inventory-package-components-and-map-to-expectations.md)
-- [FR-042](../kanban/fr-br/FR-042-implementation-planning-workflow-ipw.md)
+- [FR-042](../kanban/fbu/FR-042-implementation-planning-workflow-ipw.md)

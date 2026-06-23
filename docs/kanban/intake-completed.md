@@ -142,13 +142,13 @@ This document tracks all **completed FRs (Feature Requests), BRs (Bug Reports), 
 
 The following items are marked `Status: COMPLETE` in intake docs and are explicitly tracked here to keep canonical completion coverage comprehensive:
 
-- **[BR-060](fr-br/BR-060-rw-in-progress-task-gate-blocks-build-releases.md)** — RW incorrectly blocks `IN PROGRESS` tasks. Completed (v0.6.6.60+1).
-- **[BR-061](fr-br/BR-061-rw-explicit-task-id-requires-manual-version-alignment.md)** — RW explicit `E:S:T` fails pre-alignment on epic mismatch. Completed (v0.2.1.12+3).
-- **[BR-062](fr-br/BR-062-rw-k-kanban-init-does-not-prune-completed-tasks-from-kboard.md)** — Step 7 board hygiene leaves completed rows on active kboard. Completed (v0.2.1.11+2).
-- **[BR-064](fr-br/BR-064-rw-dev-branch-should-not-enforce-epic-lock.md)** — `dev` branch epic-lock enforcement blocks intended flows. Completed (v0.2.1.16+1).
-- **[FR-047](fr-br/FR-047-install-logging-for-framework-dependencies.md)** — Install logging for framework dependencies. Completed (historical release lineage).
-- **[FR-076](fr-br/FR-076-ukw-fbuboard-scope-and-drift-concurrency-controls.md)** — UKW fbuboard parity and drift controls. Completed (v0.6.7.110+1).
-- **[FR-079](fr-br/FR-079-install-feedback-submission-path-and-governance.md)** — Install feedback submission path and governance. Completed (v0.6.7.112+2).
+- **[BR-060](fbu/BR-060-rw-in-progress-task-gate-blocks-build-releases.md)** — RW incorrectly blocks `IN PROGRESS` tasks. Completed (v0.6.6.60+1).
+- **[BR-061](fbu/BR-061-rw-explicit-task-id-requires-manual-version-alignment.md)** — RW explicit `E:S:T` fails pre-alignment on epic mismatch. Completed (v0.2.1.12+3).
+- **[BR-062](fbu/BR-062-rw-k-kanban-init-does-not-prune-completed-tasks-from-kboard.md)** — Step 7 board hygiene leaves completed rows on active kboard. Completed (v0.2.1.11+2).
+- **[BR-064](fbu/BR-064-rw-dev-branch-should-not-enforce-epic-lock.md)** — `dev` branch epic-lock enforcement blocks intended flows. Completed (v0.2.1.16+1).
+- **[FR-047](fbu/FR-047-install-logging-for-framework-dependencies.md)** — Install logging for framework dependencies. Completed (historical release lineage).
+- **[FR-076](fbu/FR-076-ukw-fbuboard-scope-and-drift-concurrency-controls.md)** — UKW fbuboard parity and drift controls. Completed (v0.6.7.110+1).
+- **[FR-079](fbu/FR-079-install-feedback-submission-path-and-governance.md)** — Install feedback submission path and governance. Completed (v0.6.7.112+2).
 
 ---
 
@@ -166,7 +166,7 @@ The following items are marked `Status: COMPLETE` in intake docs and are explici
 **Completed:** 2026-04-19 (`v0.6.9.1+8`)  
 **Implementing Task:** [E06:S09:T01](epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T01-greenfield-installation-process-fr080.md)  
 **Completing Agent:** RW Agent  
-**Resolution:** Functional + non-functional requirements satisfied per **Implementation evidence** on [FR-080](fr-br/FR-080-greenfield-installation-process.md); deferrals explicit (FR-078/079 product telemetry, FR-082/T03 canonical coordinates). Row removed from [`kboard.md`](kboard.md).
+**Resolution:** Functional + non-functional requirements satisfied per **Implementation evidence** on [FR-080](fbu/FR-080-greenfield-installation-process.md); deferrals explicit (FR-078/079 product telemetry, FR-082/T03 canonical coordinates). Row removed from [`kboard.md`](kboard.md).
 
 ---
 
@@ -176,7 +176,7 @@ The following items are marked `Status: COMPLETE` in intake docs and are explici
 **Completed:** 2026-04-18 (`v0.7.6.18+3`)  
 **Implementing Task:** [E07:S06:T18](epics/epic-07/story-06-post-windsurf-project-review/T18-interactive-installer-kanban-pattern-prompt-clarity.md)  
 **Completing Agent:** UKW Agent  
-**Resolution:** Implementing task **COMPLETE**; intake doc [`UXR-007`](fr-br/UXR-007-interactive-installer-kanban-pattern-prompt-clarity.md) set to **`Status: COMPLETE`**; Must Have row removed from [`kboard.md`](kboard.md) per active-board hygiene.
+**Resolution:** Implementing task **COMPLETE**; intake doc [`UXR-007`](fbu/UXR-007-interactive-installer-kanban-pattern-prompt-clarity.md) set to **`Status: COMPLETE`**; Must Have row removed from [`kboard.md`](kboard.md) per active-board hygiene.
 
 ---
 
@@ -207,7 +207,7 @@ The following items are marked `Status: COMPLETE` in intake docs and are explici
 **Description:** Comprehensive evaluation and resolution of kanban package installation issues including migration path failures, path inflexibility, missing validation, and poor error handling  
 **Impact:** Package upgraded from beta to production-ready with comprehensive testing and validation  
 **Files Created:**
-- [BR-054](fr-br/BR-054-kanban-package-migration-installation-completely-broken.md) - Bug report documentation
+- [BR-054](fbu/BR-054-kanban-package-migration-installation-completely-broken.md) - Bug report documentation
 
 ### 2026-03-09
 
@@ -219,7 +219,7 @@ The following items are marked `Status: COMPLETE` in intake docs and are explici
 **Description:** Fixed installer prominence and template distinction issues in kanban framework installation  
 **Impact:** Users now properly guided to use interactive installer with clear template vs. actual kanban distinction  
 **Files Referenced:**
-- [BR-009](fr-br/BR-009-installer-discoverability-and-documentation.md) - Bug report documentation
+- [BR-009](fbu/BR-009-installer-discoverability-and-documentation.md) - Bug report documentation
 
 ---
 

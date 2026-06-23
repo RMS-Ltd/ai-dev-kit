@@ -74,7 +74,7 @@ This document **defines the ultimate canonical workflow structure** for ADK fram
 
 ### 1.2 File Location
 
-**CANONICAL (framework package):** `packages/frameworks/workflow-mgt/workflows/{workflow-name}/{workflow-name}-workflow.yaml` per [FR-050](../../kanban/fr-br/FR-050-workflows-directory-structure-reorganization.md) and [`workflow-registry.yaml`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/workflows/workflow-registry.yaml).
+**CANONICAL (framework package):** `packages/frameworks/workflow-mgt/workflows/{workflow-name}/{workflow-name}-workflow.yaml` per [FR-050](../../kanban/fbu/FR-050-workflows-directory-structure-reorganization.md) and [`workflow-registry.yaml`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/workflows/workflow-registry.yaml).
 
 **CANONICAL (adopter project root):** `workflows/` directory — prefer nested subdirectories matching the framework layout; flat root YAML is legacy.
 
@@ -468,7 +468,7 @@ workflow:
 
 **Configuration:**
 ```yaml
-fr_br_dir: docs/kanban/fr-br
+fr_br_dir: docs/kanban/fbu
 kanban_dir: docs/kanban/epics
 version_file: src/{project}/version.py
 semantic_matching:

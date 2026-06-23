@@ -76,7 +76,7 @@ Configure date, time, and number formatting per locale.
 RW -k E21:S02:T05 --art --dpz
 ```
 
-**Target version anchor:** `v0.21.2.5+0` (doc-init BUILD +0 per [BR-067](../../../fr-br/BR-067-rw-first-doc-only-release-defaults-to-build-plus-one-not-plus-zero.md)).
+**Target version anchor:** `v0.21.2.5+0` (doc-init BUILD +0 per [BR-067](../../../fbu/BR-067-rw-first-doc-only-release-defaults-to-build-plus-one-not-plus-zero.md)).
 
 ---
 

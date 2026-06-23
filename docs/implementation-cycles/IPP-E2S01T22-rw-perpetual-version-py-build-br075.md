@@ -7,7 +7,7 @@ housekeeping_policy: keep
 # E2:S01:T22 — Planning: BR-075 perpetual RW `version.py` BUILD (IPP)
 
 **Host Task:** [`T22-rw-perpetual-task-version-py-build-increment-br075.md`](../kanban/epics/epic-02/story-01-rw-agent-execution-and-docs/T22-rw-perpetual-task-version-py-build-increment-br075.md) **(E2:S01:T22)**  
-**Planning for:** [BR-075](../kanban/fr-br/BR-075-rw-perpetual-task-build-not-reflected-in-version-py.md)  
+**Planning for:** [BR-075](../kanban/fbu/BR-075-rw-perpetual-task-build-not-reflected-in-version-py.md)  
 **Status:** Published
 
 ## 1. Requirements

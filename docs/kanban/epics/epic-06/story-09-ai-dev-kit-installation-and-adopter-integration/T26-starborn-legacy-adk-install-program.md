@@ -19,7 +19,7 @@ housekeeping_policy: keep
 
 **Predecessor (closed):** [E06:S09:T25](T25-starborn-legacy-greenfield-install-diary-triage-uxr025.md) — UXR-025 triage + F4/F5 fixes @ **v0.6.9.25+3**
 
-**Related:** [UXR-025](../../../fr-br/UXR-025-starborn-legacy-greenfield-install-diary.md) · [FR-081](../../../fr-br/FR-081-brownfield-modular-adopter-integration.md) · [FR-080](../../../fr-br/FR-080-greenfield-installation-process.md) · [FR-079](../../../fr-br/FR-079-install-feedback-submission-path-and-governance.md) · [FR-132](../../../fr-br/FR-132-kanban-v4-three-tier-catalogue.md) · [FR-133](../../../fr-br/FR-133-kanban-migration-depth-rationalization-adopter-guide.md) · [UXR-029](../../../fr-br/UXR-029-adk-install-path-experiment.md) · [Issue #51](https://github.com/RMS-Ltd/ai-dev-kit/issues/51) · [Issue #52](https://github.com/RMS-Ltd/ai-dev-kit/issues/52) · [SBL attempt 09 replay](../../../../knowledge/analysis/projects/sbl-attempt-09-kanban-v4-replay.md) · [T36](T36-adopter-path-selector-install-rc-uxr029.md) · [attempt-10 index](../../../../../../adk-install-into-sbl/attempt-10/README.md)
+**Related:** [UXR-025](../../../fbu/UXR-025-starborn-legacy-greenfield-install-diary.md) · [FR-081](../../../fbu/FR-081-brownfield-modular-adopter-integration.md) · [FR-080](../../../fbu/FR-080-greenfield-installation-process.md) · [FR-079](../../../fbu/FR-079-install-feedback-submission-path-and-governance.md) · [FR-132](../../../fbu/FR-132-kanban-v4-three-tier-catalogue.md) · [FR-133](../../../fbu/FR-133-kanban-migration-depth-rationalization-adopter-guide.md) · [UXR-029](../../../fbu/UXR-029-adk-install-path-experiment.md) · [Issue #51](https://github.com/RMS-Ltd/ai-dev-kit/issues/51) · [Issue #52](https://github.com/RMS-Ltd/ai-dev-kit/issues/52) · [Issue #85](https://github.com/RMS-Ltd/ai-dev-kit/issues/85) · [SBL attempt 09 replay](../../../../knowledge/analysis/projects/sbl-attempt-09-kanban-v4-replay.md) · [T36](T36-adopter-path-selector-install-rc-uxr029.md) · [attempt-10 index](../../../../../../adk-install-into-sbl/attempt-10/README.md) · [attempt-11 / TSP](../../../../../../adk-install-into-sbl/attempt-11/README.md)
 
 ---
 
@@ -29,7 +29,7 @@ housekeeping_policy: keep
 
 **Programme closure (2026-06-16):** Ten attempts validated the install path. **Arm B** selective adoption (attempts **9–10**) is the adopted SBL model: greenfield shell + kit-owned KMA + Install RC PASS + SQLite + first domain RW. SBL proceeds with **domain development** on `dev`; maintainer programme **Phase 2** = Arm A recon (fynd.deals, Confidentia). See [attempt-10 index](../../../../../../adk-install-into-sbl/attempt-10/README.md).
 
-**Attempt 06 status (2026-06-11):** SBL **attempt 06** FR-079 package **accepted** with **adopter sign-off final** (`package_status: final`, `final_signoff` @ `20260611T094319Z` — **7 READY / 1 SKIP / 0 NOT READY**). Pin **`v0.4.1140+2`** (`256259fb2`). **AC13–AC15 PASS**; full ADK greenfield + agentic migration (72 stories). Intake filed: **[FR-127](../../../fr-br/FR-127-agentic-kanban-migration-agent-replace-tool-pipeline.md)** / [T31](T31-agentic-kanban-migration-agent-fr127.md) (**F22**) · **[BR-108](../../../fr-br/BR-108-detect-existing-structure-zero-padded-epic-names.md)** / [T32](T32-detect-structure-zero-padded-epic-br108.md) (**F23**).
+**Attempt 06 status (2026-06-11):** SBL **attempt 06** FR-079 package **accepted** with **adopter sign-off final** (`package_status: final`, `final_signoff` @ `20260611T094319Z` — **7 READY / 1 SKIP / 0 NOT READY**). Pin **`v0.4.1140+2`** (`256259fb2`). **AC13–AC15 PASS**; full ADK greenfield + agentic migration (72 stories). Intake filed: **[FR-127](../../../fbu/FR-127-agentic-kanban-migration-agent-replace-tool-pipeline.md)** / [T31](T31-agentic-kanban-migration-agent-fr127.md) (**F22**) · **[BR-108](../../../fbu/BR-108-detect-existing-structure-zero-padded-epic-names.md)** / [T32](T32-detect-structure-zero-padded-epic-br108.md) (**F23**).
 
 ---
 
@@ -37,7 +37,7 @@ housekeeping_policy: keep
 
 - [T25](T25-starborn-legacy-greenfield-install-diary-triage-uxr025.md) closure @ **v0.6.9.25+3** and [attempt 02](../../../../../../adk-install-into-sbl/attempt-02/greenfield-install-diary.md) (failed adopter intent)
 - [Triage matrix](../../../../knowledge/analysis/projects/starborn-legacy-install-triage-matrix.md) findings **F8**, **F9**
-- [UXR-025](../../../fr-br/UXR-025-starborn-legacy-greenfield-install-diary.md) (resolved; ongoing SBL install feedback)
+- [UXR-025](../../../fbu/UXR-025-starborn-legacy-greenfield-install-diary.md) (resolved; ongoing SBL install feedback)
 - SBL legacy **E/S/T** PM model (`KB/PM_and_Portfolio/`) — operational source of truth unless adopter opts into migration
 
 ---
@@ -88,8 +88,8 @@ Attempts **1** and **2** proved installer contracts (sign-off ALL READY) but **f
 ### In scope
 
 - Plan and execute **attempt 3** (and follow-ons) with explicit install flags / path (RW-only, `--kanban-mode skip` when available, FR-081 brownfield).
-- Maintain **maintainer indexes** under `adk-install-into-sbl/`; canonical FB/diary/transcripts remain in **SBL** per [FR-079](../../../fr-br/FR-079-install-feedback-submission-path-and-governance.md) (`starborn_legacy/logs/ai-dev-kit/install/attempt-NN/`).
-- Respond to **SBL feedback** via [FR-079](../../../fr-br/FR-079-install-feedback-submission-path-and-governance.md) hygiene.
+- Maintain **maintainer indexes and mirrored packages** under `adk-install-into-sbl/` per [FR-079](../../../fbu/FR-079-install-feedback-submission-path-and-governance.md) and [ADR-026](../../../../architecture/standards-and-adrs/ADR-026-git-internal-maintainer-kb-fr121.md) (SBL `dev` reverts to `pre-adk-install` — [#85](https://github.com/RMS-Ltd/ai-dev-kit/issues/85)).
+- Respond to **SBL feedback** via [FR-079](../../../fbu/FR-079-install-feedback-submission-path-and-governance.md) hygiene.
 - File or implement upstream reactions (INSTALL docs, orchestrator, installer catalog F9, validator path discovery).
 - Update [triage matrix](../../../../knowledge/analysis/projects/starborn-legacy-install-triage-matrix.md) for new findings.
 
@@ -119,7 +119,7 @@ Attempts **1** and **2** proved installer contracts (sign-off ALL READY) but **f
 - [x] **AC14:** Full ADK greenfield install on SBL — workflows, frameworks, `rw-config.yaml`, `src/starborn_legacy/version.py`, Obsidian + Docusaurus surfaces @ attempt 06.
 - [x] **AC15:** Legacy E/S/T → ADK v3.2 migration exercise — 19 legacy epics → 10 canonical + 8 domain epics; 72 stories migrated; legacy `KB/PM_and_Portfolio/` preserved @ attempt 06 (agentic method; migration tools **F22** inadequate).
 - [x] **AC16:** FR-079 attempt 06 package **accepted** — adopter sign-off final @ 2026-06-11; F22/F23 filed as FR-127/T31 and BR-108/T32.
-- [x] **AC17:** Attempt 09 ingested — PRIMARY synthesis → [T36](T36-adopter-path-selector-install-rc-uxr029.md) / [UXR-029](../../../fr-br/UXR-029-adk-install-path-experiment.md) / [ADR-030](../../../../architecture/standards-and-adrs/ADR-030-selective-adoption-three-path-model.md); Install RC ~50% FAIL documented.
+- [x] **AC17:** Attempt 09 ingested — PRIMARY synthesis → [T36](T36-adopter-path-selector-install-rc-uxr029.md) / [UXR-029](../../../fbu/UXR-029-adk-install-path-experiment.md) / [ADR-030](../../../../architecture/standards-and-adrs/ADR-030-selective-adoption-three-path-model.md); Install RC ~50% FAIL documented.
 - [x] **AC18:** Attempt 10 Arm B replay — Install RC strict **PASS**; **0** ad-hoc KMA scripts; SQLite before first RW @ pin **`v0.4.1171`** (`448a79e1`).
 - [x] **AC19:** FR-079 attempt 10 package **accepted** — adopter sign-off final @ 2026-06-15; [attempt-10 index](../../../../../../adk-install-into-sbl/attempt-10/README.md).
 - [x] **AC20:** SBL operational — first domain RW (`E02:S02:T01` · `v0.2.2.1+1`) + post-install UKW (`E02:S16:T02` · `v0.2.16.2+1`) on SBL `dev`.
@@ -132,22 +132,23 @@ Attempts **1** and **2** proved installer contracts (sign-off ALL READY) but **f
 |---|---------|---------|----------|
 | 1 | `v0.4.1063` tarball | Closed — UXR-025 intake; F4/F5 failures | [Diary](../../../../knowledge/analysis/projects/starborn-legacy-greenfield-install-diary.md) |
 | 2 | `main` @ `97ff2834` | **Failed intent** — orchestrator OK; wrong kanban | [Attempt 02](../../../../../../adk-install-into-sbl/attempt-02/greenfield-install-diary.md) |
-| 3 | `v0.4.13` (`0.4.1098+1`) | **Partial** — dual kanban OK; **F17** v1 catalog blocks v3.2 migration test | [Attempt 03](../../../../../../adk-install-into-sbl/attempt-03/README.md) · SBL `…/attempt-03/` |
-| 4 | `v0.4.1131` tarball | **BLOCKER unchanged** — F17 **fourth proof**; RW baseline + dual-kanban PASS; BR-086 NOT READY; F18–F20 new | SBL `…/attempt-04/feedback-package/SUBMISSION.md` |
-| 5 | `main` @ `0d278366` (`v0.4.1133+2`) | **SUCCESS (upstream pending → closed)** — v3.2 kanban PASS; dual-tree PASS; F18–F21 upstream **shipped** T28–T30 @ **v0.6.9.28+2**–**v0.6.9.30+2** | SBL `starborn_legacy/logs/ai-dev-kit/install/attempt-05/` |
-| 6 | `v0.4.1140+2` → `256259fb2` | **SUCCESS** — adopter sign-off final; AC13–AC16; FR-079 accepted; F22→[FR-127](../../../fr-br/FR-127-agentic-kanban-migration-agent-replace-tool-pipeline.md)/[T31](T31-agentic-kanban-migration-agent-fr127.md); F23→[BR-108](../../../fr-br/BR-108-detect-existing-structure-zero-padded-epic-names.md)/[T32](T32-detect-structure-zero-padded-epic-br108.md) | [Attempt 06 index](../../../../../../adk-install-into-sbl/attempt-06/README.md) · SBL `…/attempt-06/` |
-| 7 | `v0.4.1161` | **Partial PASS** — greenfield install; sign-off friction | SBL `…/attempt-07/` |
-| 8 | `0d0e5ab3` | **FAIL** — in-place legacy migration abandoned | [#51](https://github.com/RMS-Ltd/ai-dev-kit/issues/51) · SBL `…/attempt-08/` |
+| 3 | `v0.4.13` (`0.4.1098+1`) | **Partial** — dual kanban OK; **F17** v1 catalog blocks v3.2 migration test | [Attempt 03](../../../../../../adk-install-into-sbl/attempt-03/README.md) |
+| 4 | `v0.4.1131` tarball | **BLOCKER unchanged** — F17 **fourth proof**; RW baseline + dual-kanban PASS; BR-086 NOT READY; F18–F20 new | [attempt-04 synopsis](../../../../../../adk-install-into-sbl/README.md) |
+| 5 | `main` @ `0d278366` (`v0.4.1133+2`) | **SUCCESS (upstream pending → closed)** — v3.2 kanban PASS; dual-tree PASS; F18–F21 upstream **shipped** T28–T30 @ **v0.6.9.28+2**–**v0.6.9.30+2** | [Attempt 05](../../../../../../adk-install-into-sbl/attempt-05/feedback-package/README.md) |
+| 6 | `v0.4.1140+2` → `256259fb2` | **SUCCESS** — adopter sign-off final; AC13–AC16; FR-079 accepted; F22→[FR-127](../../../fbu/FR-127-agentic-kanban-migration-agent-replace-tool-pipeline.md)/[T31](T31-agentic-kanban-migration-agent-fr127.md); F23→[BR-108](../../../fbu/BR-108-detect-existing-structure-zero-padded-epic-names.md)/[T32](T32-detect-structure-zero-padded-epic-br108.md) | [Attempt 06 index](../../../../../../adk-install-into-sbl/attempt-06/README.md) |
+| 7 | `v0.4.1161` | **Partial PASS** — greenfield install; sign-off friction | Not git-mirrored |
+| 8 | `0d0e5ab3` | **FAIL** — in-place legacy migration abandoned | [#51](https://github.com/RMS-Ltd/ai-dev-kit/issues/51) |
 | 9 | `v0.4.1164` @ `7a08a906` | **Arm B** — KMA PASS; Install RC ~50% FAIL; PRIMARY synthesis → [T36](T36-adopter-path-selector-install-rc-uxr029.md) | [#52](https://github.com/RMS-Ltd/ai-dev-kit/issues/52) · [Attempt 09 index](../../../../../../adk-install-into-sbl/attempt-09/README.md) · [Synthesis article](../../../../knowledge/articles/greenfield-brownfield-selective-adoption-sbl-attempt-09.md) |
-| 10 | `v0.4.1171` @ `448a79e1` | **Arm B PASS** — Install RC strict PASS; 0 ad-hoc KMA; first domain RW + UKW; FR-079 **final**; programme **Phase 1** closed | [Attempt 10 index](../../../../../../adk-install-into-sbl/attempt-10/README.md) · SBL `docs/adk-feedback/attempt-10/` |
+| 10 | `v0.4.1171` @ `448a79e1` | **Arm B PASS** — Install RC strict PASS; 0 ad-hoc KMA; first domain RW + UKW; FR-079 **final**; programme **Phase 1** closed | [Attempt 10 index](../../../../../../adk-install-into-sbl/attempt-10/README.md) |
+| 11 | `v0.4.1171` | **TSP / guided KMA** — Track A local; Track B pending post-revert | [#85](https://github.com/RMS-Ltd/ai-dev-kit/issues/85) · [Attempt 11 index](../../../../../../adk-install-into-sbl/attempt-11/README.md) |
 
-> **Path convention:** `starborn_legacy/logs/ai-dev-kit/install/attempt-NN/` — see [adk-install-into-sbl/README.md](../../../../../../adk-install-into-sbl/README.md).
+> **Path convention:** `adk-install-into-sbl/attempt-{NN}/` — see [adk-install-into-sbl/README.md](../../../../../../adk-install-into-sbl/README.md).
 
 ---
 
 ## Attempt 05 intake (2026-06-10)
 
-**FR-079 package accepted** — canonical root: `starborn_legacy/logs/ai-dev-kit/install/attempt-05/` (not copied into `ai-dev-kit`).
+**FR-079 package accepted** — ADK mirror: [attempt-05/feedback-package/](../../../../../../adk-install-into-sbl/attempt-05/feedback-package/README.md).
 
 ### Outcome
 
@@ -156,17 +157,17 @@ Attempts **1** and **2** proved installer contracts (sign-off ALL READY) but **f
 | **F17 (was BLOCKER)** | **RESOLVED** — Epic 5 on disk is **Project Architecture** (v3.2); no standalone FR Implementation epic |
 | **Dual kanban test bed** | **PASS** — legacy `KB/PM_and_Portfolio/` + ADK `docs/kanban/` coexist; rollback retained `KB/` + `logs/` |
 | **Sign-off** | **PASS** @ **v0.6.9.28+2** — F18/BR-105 contract alignment shipped |
-| **F19** | **CLOSED** @ **v0.6.9.29+2** — [BR-106](../../../fr-br/BR-106-rw-install-non-interactive-changelog-prompt-eof.md) / [T29](T29-rw-install-non-interactive-changelog-prompt-br106.md) |
+| **F19** | **CLOSED** @ **v0.6.9.29+2** — [BR-106](../../../fbu/BR-106-rw-install-non-interactive-changelog-prompt-eof.md) / [T29](T29-rw-install-non-interactive-changelog-prompt-br106.md) |
 | **F20** | Mitigated with workaround (pre-created `version_file` + config) |
-| **F21** | **CLOSED** @ **v0.6.9.30+2** — [BR-107](../../../fr-br/BR-107-kanban-installer-log-epic-path-padding-mismatch.md) / [T30](T30-kanban-installer-log-epic-path-padding-br107.md) |
+| **F21** | **CLOSED** @ **v0.6.9.30+2** — [BR-107](../../../fbu/BR-107-kanban-installer-log-epic-path-padding-mismatch.md) / [T30](T30-kanban-installer-log-epic-path-padding-br107.md) |
 
 ### Upstream filed → closed (ai-dev-kit)
 
 | Finding | BR | Task | Release | Status |
 |---------|-----|------|---------|--------|
-| F18 | [BR-105](../../../fr-br/BR-105-v32-fresh-install-signoff-story-padding-mismatch.md) | [E06:S09:T28](T28-v32-fresh-install-signoff-story-padding-br105.md) | **v0.6.9.28+2** / SemVer **v0.4.1138+2** | ✅ COMPLETE |
-| F19 | [BR-106](../../../fr-br/BR-106-rw-install-non-interactive-changelog-prompt-eof.md) | [E06:S09:T29](T29-rw-install-non-interactive-changelog-prompt-br106.md) | **v0.6.9.29+2** / SemVer **v0.4.1139+2** | ✅ COMPLETE |
-| F21 | [BR-107](../../../fr-br/BR-107-kanban-installer-log-epic-path-padding-mismatch.md) | [E06:S09:T30](T30-kanban-installer-log-epic-path-padding-br107.md) | **v0.6.9.30+2** / SemVer **v0.4.1140+2** | ✅ COMPLETE |
+| F18 | [BR-105](../../../fbu/BR-105-v32-fresh-install-signoff-story-padding-mismatch.md) | [E06:S09:T28](T28-v32-fresh-install-signoff-story-padding-br105.md) | **v0.6.9.28+2** / SemVer **v0.4.1138+2** | ✅ COMPLETE |
+| F19 | [BR-106](../../../fbu/BR-106-rw-install-non-interactive-changelog-prompt-eof.md) | [E06:S09:T29](T29-rw-install-non-interactive-changelog-prompt-br106.md) | **v0.6.9.29+2** / SemVer **v0.4.1139+2** | ✅ COMPLETE |
+| F21 | [BR-107](../../../fbu/BR-107-kanban-installer-log-epic-path-padding-mismatch.md) | [E06:S09:T30](T30-kanban-installer-log-epic-path-padding-br107.md) | **v0.6.9.30+2** / SemVer **v0.4.1140+2** | ✅ COMPLETE |
 
 **Recommended adopter pin for attempt 06 replay:** **`v0.4.1140+2`** (includes all three fixes).
 
@@ -188,7 +189,7 @@ Child tasks under this program closed the attempt-05 residual backlog:
 
 ## Attempt 06 intake (2026-06-11)
 
-**FR-079 package accepted** — canonical root: `starborn_legacy/logs/ai-dev-kit/install/attempt-06/` ([maintainer index](../../../../../../adk-install-into-sbl/attempt-06/README.md)). **Adopter sign-off:** `package_status: final` · `finalized_at: 2026-06-11T09:40:00Z` · final sign-off transcript `20260611T094319Z-final-signoff.txt` (**7 READY / 1 SKIP / 0 NOT READY**).
+**FR-079 package accepted** — canonical root: `adk-install-into-sbl/attempt-06/` ([maintainer index](../../../../../../adk-install-into-sbl/attempt-06/README.md)). **Adopter sign-off:** `package_status: final` · `finalized_at: 2026-06-11T09:40:00Z` · final sign-off transcript `20260611T094319Z-final-signoff.txt` (**7 READY / 1 SKIP / 0 NOT READY**).
 
 ### Outcome
 
@@ -207,26 +208,19 @@ Child tasks under this program closed the attempt-05 residual backlog:
 
 | ID | Finding | Disposition |
 |----|---------|-------------|
-| F22 | Kanban migration tool pipeline inadequate for domain-specific adopters; agentic approach migrated 72 stories vs 0 | **FILED** → [FR-127](../../../fr-br/FR-127-agentic-kanban-migration-agent-replace-tool-pipeline.md) / [T31](T31-agentic-kanban-migration-agent-fr127.md) |
-| F23 | Zero-padded legacy epic filenames not recognised by `detect_existing_structure.py` | **FILED** → [BR-108](../../../fr-br/BR-108-detect-existing-structure-zero-padded-epic-names.md) / [T32](T32-detect-structure-zero-padded-epic-br108.md) |
+| F22 | Kanban migration tool pipeline inadequate for domain-specific adopters; agentic approach migrated 72 stories vs 0 | **FILED** → [FR-127](../../../fbu/FR-127-agentic-kanban-migration-agent-replace-tool-pipeline.md) / [T31](T31-agentic-kanban-migration-agent-fr127.md) |
+| F23 | Zero-padded legacy epic filenames not recognised by `detect_existing_structure.py` | **FILED** → [BR-108](../../../fbu/BR-108-detect-existing-structure-zero-padded-epic-names.md) / [T32](T32-detect-structure-zero-padded-epic-br108.md) |
 
-See SBL `…/attempt-06/feedback-package/kanban-migration-experiment-report.md` for full comparison.
+See [kanban-migration-experiment-report](../../../../../../adk-install-into-sbl/attempt-06/feedback-package/kanban-migration-experiment-report.md) for full comparison.
 
-### Key SBL artifacts (attempt 06)
+### Key artifacts (attempt 06)
 
 | Artifact | Path |
 |----------|------|
-| FB cover | `…/attempt-06/feedback-package/SUBMISSION.md` |
-| Payload | `…/attempt-06/feedback-package/feedback-payload.json` |
-| Migration report | `…/attempt-06/feedback-package/kanban-migration-experiment-report.md` |
-| Kboard template (adopter) | `…/attempt-06/feedback-package/kboard-template-v3dot2.md` |
-| Kboard example (SBL) | `…/attempt-06/feedback-package/kboard-populated-example.md` |
-| Artifact manifest | `…/attempt-06/feedback-package/artifact-manifest.json` |
-| Sign-off | `…/attempt-06/signoff-report.json` |
-| AC13 sign-off transcript | `…/attempt-06/transcripts/20260610T194439Z-phase4-signoff.txt` |
-| Final sign-off transcript | `…/attempt-06/transcripts/20260611T094319Z-final-signoff.txt` |
-| Kanban v3.2 transcript | `…/attempt-06/transcripts/20260610T194420Z-phase3c-kanban-v3dot2.txt` |
-| Full workflow install | `…/attempt-06/transcripts/20260611T091104Z-install-all-workflows.txt` |
+| FB cover | [SUBMISSION.md](../../../../../../adk-install-into-sbl/attempt-06/feedback-package/README.md) |
+| Migration report | [kanban-migration-experiment-report.md](../../../../../../adk-install-into-sbl/attempt-06/feedback-package/kanban-migration-experiment-report.md) |
+| Kboard template | [kboard-template-v3dot2.md](../../../../../../adk-install-into-sbl/attempt-06/feedback-package/kboard-template-v3dot2.md) |
+| Kboard example | [kboard-populated-example.md](../../../../../../adk-install-into-sbl/attempt-06/feedback-package/kboard-populated-example.md) |
 
 ---
 
@@ -236,10 +230,10 @@ See SBL `…/attempt-06/feedback-package/kanban-migration-experiment-report.md` 
 |----------|------|-------|-------|
 | — | ~~SBL install program (T26)~~ | — | ✅ **COMPLETE** @ **v0.6.9.26+4** — attempt 10 Arm B PASS |
 | **P0** | Programme **Phase 2** — fynd.deals / Confidentia Arm A recon | Maintainer | Per [adopter-install-attempt-preflight](../../../../guides/adopter-install-attempt-preflight.md) |
-| **P1** | **F22** — agentic migration agent | [T31](T31-agentic-kanban-migration-agent-fr127.md) | [FR-127](../../../fr-br/FR-127-agentic-kanban-migration-agent-replace-tool-pipeline.md) |
-| **P1** | **F23** — zero-padded epic detection | [T32](T32-detect-structure-zero-padded-epic-br108.md) | [BR-108](../../../fr-br/BR-108-detect-existing-structure-zero-padded-epic-names.md) |
+| **P1** | **F22** — agentic migration agent | [T31](T31-agentic-kanban-migration-agent-fr127.md) | [FR-127](../../../fbu/FR-127-agentic-kanban-migration-agent-replace-tool-pipeline.md) |
+| **P1** | **F23** — zero-padded epic detection | [T32](T32-detect-structure-zero-padded-epic-br108.md) | [BR-108](../../../fbu/BR-108-detect-existing-structure-zero-padded-epic-names.md) |
 | **P2** | **F10** / **F20** — orchestrator ergonomics | Future installer task | Workarounds documented; not SBL blockers |
-| **P2** | SBL domain development + normal RW/UKW | Adopter | Operational on `dev` post attempt 10; optional L2/L3 per [FR-133](../../../fr-br/FR-133-kanban-migration-depth-rationalization-adopter-guide.md) |
+| **P2** | SBL domain development + normal RW/UKW | Adopter | Operational on `dev` post attempt 10; optional L2/L3 per [FR-133](../../../fbu/FR-133-kanban-migration-depth-rationalization-adopter-guide.md) |
 
 **Programme milestone:** Attempt **10** closes the **SBL ADK install program** — Arm B validated end-to-end (RC PASS, kit-owned KMA, SQLite, first RW). Ten attempts total: v3.2 catalog arc (1–6), abandoned in-place migration (8), selective adoption proof (9–10). Maintainer focus shifts to **Arm A** control repos; SBL continues as operational adopter.
 
@@ -247,7 +241,7 @@ See SBL `…/attempt-06/feedback-package/kanban-migration-experiment-report.md` 
 
 ## Attempt 04 intake (2026-06-10)
 
-**FR-079 package accepted** (SBL `starborn_legacy/logs/ai-dev-kit/install/attempt-04/feedback-package/SUBMISSION.md`). Adopter re-tested on **`v0.4.1131`** expecting F17 resolution. **It did not resolve.**
+**FR-079 package accepted** ([attempt-04/feedback-package/](../../../../../../adk-install-into-sbl/README.md) — SBL-local synopsis). Adopter re-tested on **`v0.4.1131`** expecting F17 resolution. **It did not resolve.**
 
 ### Outcome
 
@@ -331,9 +325,9 @@ See SBL `…/attempt-06/feedback-package/kanban-migration-experiment-report.md` 
 | P2 | F21 | ✅ **CLOSED** @ [T30](T30-kanban-installer-log-epic-path-padding-br107.md) **v0.6.9.30+2** |
 | P1 | F20 | Project-aware `version_file` default (open; workaround exists) |
 | P1 | F12–F14 | Document migration-test-bed profile (RW defer → legacy restore → kanban → RW mode C) |
-| P1 | F22 | ✅ **FILED** → [FR-127](../../../fr-br/FR-127-agentic-kanban-migration-agent-replace-tool-pipeline.md) / [T31](T31-agentic-kanban-migration-agent-fr127.md) |
-| P1 | — | ✅ **FILED** (attempt 06 stamp churn) → [ADR-029](../../../../architecture/standards-and-adrs/ADR-029-kanban-stamp-immutability-substantive-work-only.md) / [FR-130](../../../fr-br/FR-130-kanban-stamp-immutability-adr029-framework-defaults.md) / [E02:S15:T14](../../epic-02/story-15-ipw-governance-and-publication-contract/T14-kanban-stamp-immutability-adr029-framework-defaults-fr130.md) |
-| P1 | F23 | ✅ **FILED** → [BR-108](../../../fr-br/BR-108-detect-existing-structure-zero-padded-epic-names.md) / [T32](T32-detect-structure-zero-padded-epic-br108.md) |
+| P1 | F22 | ✅ **FILED** → [FR-127](../../../fbu/FR-127-agentic-kanban-migration-agent-replace-tool-pipeline.md) / [T31](T31-agentic-kanban-migration-agent-fr127.md) |
+| P1 | — | ✅ **FILED** (attempt 06 stamp churn) → [ADR-029](../../../../architecture/standards-and-adrs/ADR-029-kanban-stamp-immutability-substantive-work-only.md) / [FR-130](../../../fbu/FR-130-kanban-stamp-immutability-adr029-framework-defaults.md) / [E02:S15:T14](../../epic-02/story-15-ipw-governance-and-publication-contract/T14-kanban-stamp-immutability-adr029-framework-defaults-fr130.md) |
+| P1 | F23 | ✅ **FILED** → [BR-108](../../../fbu/BR-108-detect-existing-structure-zero-padded-epic-names.md) / [T32](T32-detect-structure-zero-padded-epic-br108.md) |
 | P2 | F11/F16 | Post-install deferred-Kanban hint; clarify consumer layout vs v3.2 spec |
 | P2 | BR-086 | ✅ **CLOSED** via [T28](T28-v32-fresh-install-signoff-story-padding-br105.md) **v0.6.9.28+2** (F18 contract alignment) |
 

@@ -9,7 +9,7 @@ housekeeping_policy: keep
 # E02:S01:T31 — Planning: GitHub Actions run title external SemVer (IPW)
 
 **Host Task:** [`T31-github-actions-run-title-external-semver-uxr027.md`](../kanban/epics/epic-02/story-01-rw-agent-execution-and-docs/T31-github-actions-run-title-external-semver-uxr027.md) **(E02:S01:T31)**  
-**Planning for:** [UXR-027](../kanban/fr-br/UXR-027-github-actions-run-title-external-semver.md)  
+**Planning for:** [UXR-027](../kanban/fbu/UXR-027-github-actions-run-title-external-semver.md)  
 **Status:** Approved
 
 ---

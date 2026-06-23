@@ -14,8 +14,8 @@ housekeeping_policy: keep
 **Created:** 2026-05-29  
 **Code:** E04S09T07
 
-**Upstream:** [FR-010 (templates)](../../../fr-br/FR-010-template-task-installation-two-phase-migration.md)  
-**Related:** [FR-010 template task installation (mapping variant)](../../../fr-br/FR-010-template-task-installation-two-phase-migration.md)
+**Upstream:** [FR-010 (templates)](../../../fbu/FR-010-template-task-installation-two-phase-migration.md)  
+**Related:** [FR-010 template task installation (mapping variant)](../../../fbu/FR-010-template-task-installation-two-phase-migration.md)
 
 Publication Status: NOT_APPLICABLE
 
@@ -32,4 +32,4 @@ Two-phase migration: user tasks first (preserve IDs), template tasks after (bump
 
 ## References
 
-- [FR-010 template](../../../fr-br/FR-010-template-task-installation-two-phase-migration.md)
+- [FR-010 template](../../../fbu/FR-010-template-task-installation-two-phase-migration.md)

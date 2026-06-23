@@ -9,7 +9,7 @@ housekeeping_policy: keep
 # E09:S01:T03 — Planning: FR-032 Gap Comparison (Sequential) (IPW)
 
 **Host Task:** [`T03-gap-analysis-fr032.md`](../kanban/epics/epic-09/story-01-rc-readiness-gap-analysis/T03-gap-analysis-fr032.md) **(E09:S01:T03)**  
-**Planning for:** [FR-032](../kanban/fr-br/FR-032-release-candidate-readiness-gap-analysis.md)  
+**Planning for:** [FR-032](../kanban/fbu/FR-032-release-candidate-readiness-gap-analysis.md)  
 **Status:** Implemented (2026-06-04 — **v0.9.1.3+1** RW complete: T01/T02/T03 + follow-on index)
 
 > **IPW (Implementation Planning Workflow):** Bidirectional wiring to the host task **Input** and **References** is mandatory (FR-042).
@@ -162,7 +162,7 @@ Deliver a **gap-comparison report** quantifying distance from RC=0 / current kan
 ## References
 
 - [T03 task doc](../kanban/epics/epic-09/story-01-rc-readiness-gap-analysis/T03-gap-analysis-fr032.md)
-- [FR-032](../kanban/fr-br/FR-032-release-candidate-readiness-gap-analysis.md)
+- [FR-032](../kanban/fbu/FR-032-release-candidate-readiness-gap-analysis.md)
 - [Story 1](../kanban/epics/epic-09/story-01-rc-readiness-gap-analysis.md)
 - [Epic 9](../kanban/epics/epic-09/epic-09.md)
 - [T01 workflow machinery review](../kanban/epics/epic-07/story-07-code-reviews/T01-workflow-machinery-code-review-report.md)

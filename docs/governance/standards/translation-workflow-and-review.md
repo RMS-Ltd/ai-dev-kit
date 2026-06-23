@@ -211,5 +211,5 @@ Maintainer and contributor structural tooling (script-first; no `adk locale` sub
 - [contributing-translations.md](../../documentation/user-docs/contributing-translations.md)
 - [translatable-content-registry.yaml](translatable-content-registry.yaml)
 - [ADR-024](../../architecture/standards-and-adrs/ADR-024-i18n-framework-strategy.md)
-- [FR-006](../../project-management/kanban/fr-br/FR-006-localization-language-selection-uk-us-english.md)
+- [FR-006](../../project-management/kanban/fbu/FR-006-localization-language-selection-uk-us-english.md)
 - [IPP-E21S03T04](../../implementation-cycles/IPP-E21S03T04-translation-workflow-review.md)

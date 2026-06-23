@@ -34,7 +34,7 @@ Add UK/US English selection as the **first interactive step** in `install_releas
 ## Input
 
 - RW Installer (`install_release_workflow.py`)
-- Language selection requirements ([FR-006](../../../fr-br/FR-006-localization-language-selection-uk-us-english.md) Phase 1)
+- Language selection requirements ([FR-006](../../../fbu/FR-006-localization-language-selection-uk-us-english.md) Phase 1)
 - Planning: [IPP-E21S01T03](../../../../implementation-cycles/IPP-E21S01T03-rw-installer-language-selection.md)
 - Upstream: [IPP-E21S01T01](../../../../implementation-cycles/IPP-E21S01T01-template-language-selection-github.md) · [IPP-E21S01T02](../../../../implementation-cycles/IPP-E21S01T02-cli-init-language-selection.md)
 
@@ -71,7 +71,7 @@ Add UK/US English selection as the **first interactive step** in `install_releas
 RW -k E21:S01:T03 --art --dpz
 ```
 
-**Target version anchor:** `v0.21.1.3+0` (doc-init BUILD +0 per [BR-067](../../../fr-br/BR-067-rw-first-doc-only-release-defaults-to-build-plus-one-not-plus-zero.md)).
+**Target version anchor:** `v0.21.1.3+0` (doc-init BUILD +0 per [BR-067](../../../fbu/BR-067-rw-first-doc-only-release-defaults-to-build-plus-one-not-plus-zero.md)).
 
 ---
 

@@ -2,7 +2,7 @@
 
 **Session:** `20260615-attempt-10`  
 **ADK pin:** `v0.4.1171`  
-**SBL branch / HEAD:** `dev` @ `448a79e1` (package freeze `1551ae14`)  
+**SBL branch / HEAD:** `dev` @ `448a79e1` (package freeze `1551ae14`) — **pre-revert snapshot**  
 **Arm:** **B** — greenfield shell + blind kit KMA  
 **Maintainer task:** [E06:S09:T26](../../docs/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T26-starborn-legacy-adk-install-program.md) · [E06:S09:T36](../../docs/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T36-adopter-path-selector-install-rc-uxr029.md)
 
@@ -40,21 +40,19 @@
 
 ## Canonical feedback package (FR-079)
 
-**Git mirror on SBL `dev`** (authoritative for remote triage):
+**ADK mirror** (authoritative after SBL `pre-adk-install` revert — [#85](https://github.com/RMS-Ltd/ai-dev-kit/issues/85)):
 
-| Artifact | URL |
-| -------- | --- |
-| Cover | [SUBMISSION.md](https://github.com/RMS-Ltd/starborn-legacy/blob/dev/docs/adk-feedback/attempt-10/SUBMISSION.md) |
-| Payload | [feedback-payload.json](https://github.com/RMS-Ltd/starborn-legacy/blob/dev/docs/adk-feedback/attempt-10/feedback-payload.json) |
-| Install RC | [install-rc-report-final.json](https://github.com/RMS-Ltd/starborn-legacy/blob/dev/docs/adk-feedback/attempt-10/install-rc-report-final.json) |
-| Sign-off | [signoff-report.json](https://github.com/RMS-Ltd/starborn-legacy/blob/dev/docs/adk-feedback/attempt-10/signoff-report.json) |
-| KMA report | [FB-ADK-KMA-KANBAN-MIGRATION.md](https://github.com/RMS-Ltd/starborn-legacy/blob/dev/docs/adk-feedback/attempt-10/FB-ADK-KMA-KANBAN-MIGRATION.md) |
-| Migration proposal | [migration-proposal.md](https://github.com/RMS-Ltd/starborn-legacy/blob/dev/docs/adk-feedback/attempt-10/migration-proposal.md) |
-| Index | [docs/adk-feedback/README.md](https://github.com/RMS-Ltd/starborn-legacy/blob/dev/docs/adk-feedback/README.md) |
+| Artifact | Path |
+| -------- | ---- |
+| Cover | [feedback-package/SUBMISSION.md](feedback-package/SUBMISSION.md) |
+| Payload | [feedback-package/feedback-payload.json](feedback-package/feedback-payload.json) |
+| Install RC | [feedback-package/install-rc-report-final.json](feedback-package/install-rc-report-final.json) |
+| Sign-off | [feedback-package/signoff-report.json](feedback-package/signoff-report.json) |
+| KMA report | [feedback-package/FB-ADK-KMA-KANBAN-MIGRATION.md](feedback-package/FB-ADK-KMA-KANBAN-MIGRATION.md) |
+| Migration proposal | [feedback-package/migration-proposal.md](feedback-package/migration-proposal.md) |
+| Index | [docs/adk-feedback/attempt-10/README.md](../../docs/adk-feedback/attempt-10/README.md) |
 
-**Local forensic tree** (gitignored): `logs/attempt-10/` — transcripts, diary, `session.log`
-
-**Installed-state evidence on `dev`:** [`COMPREHENSION.md`](https://github.com/RMS-Ltd/starborn-legacy/blob/dev/COMPREHENSION.md) · `docs/kanban/` · `docs-pre-ai-dev-kit/`
+**Installed-state evidence** was on SBL `dev` pre-revert (`COMPREHENSION.md`, `docs/kanban/`, `docs-pre-ai-dev-kit/`) — not mirrored on ADK.
 
 ---
 
@@ -63,7 +61,7 @@
 | Phase | Status |
 | ----- | ------ |
 | 1 — Kit KMA (blind) | **Complete** — archived legacy only |
-| 2 — Structural score vs reference | **Maintainer** — [KMA-REFERENCE-EST-TREE-ATTEMPT-09.md](https://github.com/RMS-Ltd/starborn-legacy/blob/dev/docs/adk-feedback/attempt-09/KMA-REFERENCE-EST-TREE-ATTEMPT-09.md) |
+| 2 — Structural score vs reference | **Maintainer** — [KMA-REFERENCE-EST-TREE-ATTEMPT-09.md](../attempt-09/feedback-package/KMA-REFERENCE-EST-TREE-ATTEMPT-09.md) |
 | 3 — Operator tweaks | Log in FB §4 if any |
 
 ---
@@ -76,7 +74,7 @@
 | `FB-ADK-KMA-KANBAN-MIGRATION` | KMA filename collision / megastory routing |
 | `FB-ADK-post-install-rw-and-task-distribution` | RW-ready task doc; `--art` for first domain RW |
 
-**Filed (maintainer intake):** [FR-133](../../docs/kanban/fr-br/FR-133-kanban-migration-depth-rationalization-adopter-guide.md) → [E06:S09:T37](../../docs/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T37-kanban-migration-depth-rationalization-fr133.md) — **painless default migration path** (L1 = ship); L2/L3 opt-in.
+**Filed (maintainer intake):** [FR-133](../../docs/kanban/fbu/FR-133-kanban-migration-depth-rationalization-adopter-guide.md) → [E06:S09:T37](../../docs/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T37-kanban-migration-depth-rationalization-fr133.md) — **painless default migration path** (L1 = ship); L2/L3 opt-in.
 
 ---
 
@@ -95,4 +93,4 @@
 - [PRE-INSTALL-LOGGING.md](PRE-INSTALL-LOGGING.md)
 - [attempt-09 README](../attempt-09/README.md)
 - [adopter-install-attempt-preflight.md](../../docs/guides/adopter-install-attempt-preflight.md)
-- [UXR-029](../../docs/kanban/fr-br/UXR-029-adk-install-path-experiment.md)
+- [UXR-029](../../docs/kanban/fbu/UXR-029-adk-install-path-experiment.md)

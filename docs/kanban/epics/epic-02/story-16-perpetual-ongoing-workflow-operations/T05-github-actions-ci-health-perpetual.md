@@ -14,15 +14,15 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** Small (ongoing)  
 **Created:** 2026-06-05  
-**Last updated:** 2026-06-15 (Wave 9 — BR-104 closure docs)  
-**Version Anchor:** v0.2.16.5+11  
+**Last updated:** 2026-06-17 (v0.2.16.5+13 — Wave 11 install error docs sync)  
+**Version Anchor:** v0.2.16.5+13  
 **Code:** E02S16T05  
 **Task Type:** Perpetual Maintenance
 
 
-**Upstream:** [FR-112 — Perpetual GitHub CI and security health lanes](../../../fr-br/FR-112-perpetual-github-ci-and-security-health-lanes.md)
+**Upstream:** [FR-112 — Perpetual GitHub CI and security health lanes](../../../fbu/FR-112-perpetual-github-ci-and-security-health-lanes.md)
 
-**Input:** [IPP-E02S16T05 — GitHub Actions CI health (Perpetual)](../../../../implementation-cycles/IPP-E02S16T05-github-actions-ci-health-perpetual-fr112.md) · [BR-104](../../../fr-br/BR-104-codeql-cqg-green-does-not-imply-actions-ci-green.md)
+**Input:** [IPP-E02S16T05 — GitHub Actions CI health (Perpetual)](../../../../implementation-cycles/IPP-E02S16T05-github-actions-ci-health-perpetual-fr112.md) · [BR-104](../../../fbu/BR-104-codeql-cqg-green-does-not-imply-actions-ci-green.md)
 
 Publication Status: NOT_APPLICABLE
 
@@ -141,7 +141,7 @@ Use **`RW E02:S16:T05`** for recurring CI hygiene passes (BUILD increments on pe
 
 | Component | Fix |
 | --------- | --- |
-| `migrate_to_v2` race | `BEGIN IMMEDIATE` + duplicate-column guard ([BR-104](../../../fr-br/BR-104-codeql-cqg-green-does-not-imply-actions-ci-green.md)) |
+| `migrate_to_v2` race | `BEGIN IMMEDIATE` + duplicate-column guard ([BR-104](../../../fbu/BR-104-codeql-cqg-green-does-not-imply-actions-ci-green.md)) |
 | Step 9.7 | `--strict` fails when zero checks match; `--allow-path-skip` for `RW -d` only |
 | Pre-push | `validate_github_actions_remote.py --strict` |
 | CQG banner | `validate_code_quality_gate.py` emits CQG ≠ CI ship gate note |
@@ -170,7 +170,7 @@ Use **`RW E02:S16:T05`** for recurring CI hygiene passes (BUILD increments on pe
 
 | Workflow | Root cause | Fix |
 | -------- | ---------- | --- |
-| Docusaurus site build | `docs/adk-feedback/attempt-09/README.md` relative link to excluded `kanban/fr-br/FR-079-…` | GitHub blob URLs (BR-068) |
+| Docusaurus site build | `docs/adk-feedback/attempt-09/README.md` relative link to excluded `kanban/fbu/FR-079-…` | GitHub blob URLs (BR-068) |
 | Docusaurus site build | MDX parses `<path>` as JSX in troubleshooting guide line 1228 | Inline code backticks |
 
 **Post-RW verification:** Re-check [Actions](https://github.com/RMS-Ltd/ai-dev-kit/actions) — Docusaurus build green on `dev`/`main`.
@@ -222,12 +222,37 @@ Use **`RW E02:S16:T05`** for recurring CI hygiene passes (BUILD increments on pe
 
 ---
 
+## Wave 10 — adk-feedback mirror links + MDX placeholder (2026-06-17)
+
+**Incident:** Post-push `validate_actions_ci_parity --strict --all` — **Docusaurus site build** failed on `docs/adk-feedback/attempt-{09,10,11}/README.md` (links to excluded `knowledge/**` and repo-root `adk-install-into-sbl/**`) and `framework-dependency-troubleshooting-guide.md` ADK-I01.S06 (`<path>` JSX).
+
+| Fix | Detail |
+| --- | ------ |
+| attempt 09–11 README | GitHub blob/tree URLs per BR-068 Strategy A |
+| ADK-I01.S06 remediation | `{path}` placeholder + backticks on filename |
+
+**Verification:** `pytest tests/workflow_mgt/test_install_error_docs_sync.py` 2/2; `portal/npm run build` SUCCESS @ **v0.2.16.5+13**.
+
+---
+
+## Wave 11 — Install error docs sync (2026-06-17)
+
+**Incident:** `validate_actions_ci_parity --all` — **Tests** failed `test_troubleshooting_adk_section_matches_generator` after Wave 10 manual `{path}` edit drifted from generator output.
+
+| Fix | Detail |
+| --- | ------ |
+| `install-error-codes.yaml` ADK-I01.S06 | Inline backticks around CLI (`<path>` inside code span — MDX-safe) |
+| Troubleshooting guide | Regenerated `{/* ADK-ERROR-CODES:* */}` block from `generate_install_error_docs.py` |
+| Greenfield | `sync_greenfield_install.py` mirror |
+
+---
+
 ## References
 
 - [IPP-E02S16T05 — GitHub Actions CI health (Perpetual)](../../../../implementation-cycles/IPP-E02S16T05-github-actions-ci-health-perpetual-fr112.md)
 - [IPP-E08S03T15 (historical)](../../../../implementation-cycles/IPP-E08S03T15-github-actions-ci-health-perpetual-fr112.md)
-- [BR-104 — CodeQL/CQG green ≠ Actions CI green](../../../fr-br/BR-104-codeql-cqg-green-does-not-imply-actions-ci-green.md)
-- [FR-112](../../../fr-br/FR-112-perpetual-github-ci-and-security-health-lanes.md)
+- [BR-104 — CodeQL/CQG green ≠ Actions CI green](../../../fbu/BR-104-codeql-cqg-green-does-not-imply-actions-ci-green.md)
+- [FR-112](../../../fbu/FR-112-perpetual-github-ci-and-security-health-lanes.md)
 - [E02:S16:T06 — GitHub Security & Code Quality health (Perpetual)](T06-github-security-code-quality-health-perpetual.md)
 - [E08:S03:T04 — CI test workflow (BR-058)](T04-ci-test-workflow-pytest-remediation-br058.md)
 - [GitHub Actions](https://github.com/RMS-Ltd/ai-dev-kit/actions)

@@ -9,7 +9,7 @@ housekeeping_policy: keep
 # E06:S09:T28 — Planning: Spec, Tests, Implementation Plan (IPW)
 
 **Host Task:** [`T28-v32-fresh-install-signoff-story-padding-br105.md`](../kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T28-v32-fresh-install-signoff-story-padding-br105.md) **(E06:S09:T28)**  
-**Planning for:** [BR-105](../kanban/fr-br/BR-105-v32-fresh-install-signoff-story-padding-mismatch.md) · triage **F18**  
+**Planning for:** [BR-105](../kanban/fbu/BR-105-v32-fresh-install-signoff-story-padding-mismatch.md) · triage **F18**  
 **Status:** Approved (2026-06-10 — ready for implementation)
 
 ---
@@ -98,7 +98,7 @@ After Kanban **v3.2** fresh install + RW mode C on SBL-style dual-tree profile, 
 | D3 | `greenfield-install/packages/frameworks/workflow-mgt/config/...` | UPDATE | FR-110 mirror |
 | D4 | `tests/test_install_release_workflow_rw_config.py` | UPDATE | T1–T4 |
 | D5 | `INSTALL_IN_YOUR_PROJECT.md` | UPDATE | Policy note |
-| D6 | `docs/kanban/fr-br/BR-105-*.md` | UPDATE | Status on fix |
+| D6 | `docs/kanban/fbu/BR-105-*.md` | UPDATE | Status on fix |
 | D7 | `docs/knowledge/analysis/projects/starborn-legacy-install-triage-matrix.md` | UPDATE | F18 resolved |
 
 ---
@@ -125,8 +125,8 @@ After Kanban **v3.2** fresh install + RW mode C on SBL-style dual-tree profile, 
 
 ## References
 
-- [BR-105](../kanban/fr-br/BR-105-v32-fresh-install-signoff-story-padding-mismatch.md)
-- [BR-086](../kanban/fr-br/BR-086-rw-install-lowercase-fresh-kanban-patterns-signoff.md)
-- [UXR-014](../kanban/fr-br/UXR-014-two-digit-est-identifier-default-formatting.md)
+- [BR-105](../kanban/fbu/BR-105-v32-fresh-install-signoff-story-padding-mismatch.md)
+- [BR-086](../kanban/fbu/BR-086-rw-install-lowercase-fresh-kanban-patterns-signoff.md)
+- [UXR-014](../kanban/fbu/UXR-014-two-digit-est-identifier-default-formatting.md)
 - [IPP-E06S09T16](IPP-E06S09T16-br086-lowercase-fresh-kanban-patterns.md)
 - [`kanban_paths.py`](../../packages/frameworks/kanban/scripts/kanban_paths.py)

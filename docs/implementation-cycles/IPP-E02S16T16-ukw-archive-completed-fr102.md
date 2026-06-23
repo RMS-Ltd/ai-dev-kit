@@ -9,7 +9,7 @@ housekeeping_policy: keep
 # E02:S16:T16 — Planning: Spec, Tests, Implementation Plan (IPW)
 
 **Host Task:** [`T16-ukw-archive-completed-board-rows-fr102.md`](../kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T16-ukw-archive-completed-board-rows-fr102.md) **(E02:S16:T16)**  
-**Planning for:** [FR-102 — UKW archive-completed (`-c`)](../kanban/fr-br/FR-102-ukw-archive-completed-board-rows.md)  
+**Planning for:** [FR-102 — UKW archive-completed (`-c`)](../kanban/fbu/FR-102-ukw-archive-completed-board-rows.md)  
 **Status:** Published
 
 > **IPW:** Produced for E02:S16:T16. Bidirectional wiring to host task **Input** / **References** confirmed.
@@ -166,11 +166,11 @@ Operators run **`UKW -c`** to move terminal tasks and FBUs from active MoSCOW in
 
 ## References
 
-- [FR-102](../kanban/fr-br/FR-102-ukw-archive-completed-board-rows.md)
+- [FR-102](../kanban/fbu/FR-102-ukw-archive-completed-board-rows.md)
 - [ADR-009](../architecture/standards-and-adrs/ADR-009-ukw-deep-reprioritization-rp-flag.md)
 - [ADR-010](../architecture/standards-and-adrs/ADR-010-ukw-archive-completed-c-flag.md)
 - [ADR-009](../architecture/standards-and-adrs/ADR-009-ukw-deep-reprioritization-rp-flag.md) (flag pattern)
-- [FR-076](../kanban/fr-br/FR-076-ukw-fbuboard-scope-and-drift-concurrency-controls.md)
-- [FR-097](../kanban/fr-br/FR-097-board-stamp-authority-and-forensic-timestamp-recovery.md)
+- [FR-076](../kanban/fbu/FR-076-ukw-fbuboard-scope-and-drift-concurrency-controls.md)
+- [FR-097](../kanban/fbu/FR-097-board-stamp-authority-and-forensic-timestamp-recovery.md)
 - [Workflow initiation cheatsheet](../guides/workflow-initiation-cheatsheet.md)
 - [archive_completed.py](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/scripts/kanban/archive_completed.py)

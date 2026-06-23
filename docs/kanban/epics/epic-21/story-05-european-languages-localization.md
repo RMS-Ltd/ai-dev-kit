@@ -72,7 +72,7 @@ Populate `locales/{lang}/` for Spanish, French, German, and Portuguese with fram
 
 ## References
 
-- `docs/kanban/fr-br/FR-006-localization-language-selection-uk-us-english.md`
+- `docs/kanban/fbu/FR-006-localization-language-selection-uk-us-english.md`
 - `docs/kanban/epics/epic-21/story-03-translation-and-localization.md`
 
 ---
