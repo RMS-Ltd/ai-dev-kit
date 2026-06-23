@@ -13,8 +13,8 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** Large (inventory + valuation matrix + maintainer sign-off)  
 **Created:** 2026-06-23  
-**Last updated:** 2026-06-23 (atomic intake from UXR-033)  
-**Version Anchor:** *(pending RW)*  
+**Last updated:** 2026-06-23 (v0.7.1.13+0 — RW -k kanban init)  
+**Version Anchor:** v0.7.1.13+0  
 **Code:** E07S01T13
 
 Publication Status: NOT_APPLICABLE (IPP required before investigation execution — see Approach)
@@ -137,7 +137,7 @@ Deliver [UXR-033](../../../fr-br/UXR-033-comprehensive-repository-directory-stru
 - [ ] Produce `IPP-E07S01T13-*.md` under `docs/implementation-cycles/`.
 - [ ] Execute investigation phases 1–4 after IPP approval.
 - [ ] Obtain maintainer sign-off on audit report.
-- [ ] Run `RW E07:S01:T13` to version intake completion (investigation deliverable).
+- [x] Run `RW E07:S01:T13` / `RW -k E07:S01:T13 --art --dpz` — kanban init @ v0.7.1.13+0
 
 ---
 

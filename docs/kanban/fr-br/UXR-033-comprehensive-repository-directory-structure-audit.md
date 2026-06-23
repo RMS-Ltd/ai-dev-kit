@@ -12,9 +12,9 @@ housekeeping_policy: keep
 **Submitted:** 2026-06-23  
 **Submitted By:** User (operator)  
 **Priority:** HIGH  
-**Status:** INTAKE  
+**Status:** ACCEPTED  
 **Code:** UXR-033  
-**Last updated:** 2026-06-23  
+**Last updated:** 2026-06-23 (v0.7.1.13+0 — RW -k kanban init)  
 **Implementing Task:** [E07:S01:T13](../epics/epic-07/story-01-codebase-maintenance-tasks/T13-comprehensive-repository-directory-structure-audit-uxr033.md)
 
 ---
@@ -134,6 +134,7 @@ This UXR is **investigation and planning only**. Execution of moves, merges, arc
 ## Next Steps
 
 - [x] Atomic intake: UXR-033 + E07:S01:T13 + story checklist wiring
+- [x] **RW -k** kanban init @ v0.7.1.13+0 (`--art --dpz`)
 - [ ] **IPW** on E07:S01:T13 — investigation plan, rubric template, report housing, exclusion rules
 - [ ] Execute directory inventory and valuation (investigation phase on task)
 - [ ] Maintainer sign-off on audit report before any structural IDW waves
@@ -164,9 +165,10 @@ This UXR is **investigation and planning only**. Execution of moves, merges, arc
 
 ## Intake Decision
 
-**Intake Status:** INTAKE  
+**Intake Status:** ACCEPTED  
 **Intake Date:** 2026-06-23  
-**Intake By:** Agent (atomic intake session)
+**Intake By:** Agent (atomic intake session)  
+**Version:** v0.7.1.13+0 (RW -k kanban init)
 
 **Decision Flow Results:**
 
@@ -177,7 +179,7 @@ This UXR is **investigation and planning only**. Execution of moves, merges, arc
 - Epic: 7 — Codebase Maintenance and Review
 - Story: 1 — Codebase Maintenance Tasks
 - Task: T13 — Comprehensive repository directory structure audit (UXR-033)
-- Version: *(pending RW)*
+- Version: `0.7.1.13+0` (RW -k kanban init)
 
 **Kanban Links:**
 

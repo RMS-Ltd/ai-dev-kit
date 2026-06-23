@@ -11,6 +11,14 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.7.1.13+0] - 23-06-26
+
+E07:S01:T13 — **Kanban-init (UXR-033):** Comprehensive repository directory structure audit intake — whole-repo directory valuation rubric; investigation-only. SemVer **v0.4.1205**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.7.1.13+0.md)
+
+---
+
 ## [0.8.3.24+2] - 23-06-26
 
 E08:S03:T24 — **Change implemented (FR-138):** CLI coverage closure waves completed; dedicated `cli/` gate now enforced at **≥70%** via `pytest-cli-cov.ini`. SemVer **v0.4.1204**.
