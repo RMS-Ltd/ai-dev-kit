@@ -55,6 +55,7 @@
     },
     "webpack-bundle-analyzer": {
       "ws": "7.5.11"
-    }
+    },
+    "http-proxy-middleware": "2.0.10"
   }
 }

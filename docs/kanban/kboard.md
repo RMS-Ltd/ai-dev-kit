@@ -66,8 +66,6 @@ housekeeping_policy: keep
 
 - **E04:S14:T11** – UKW gap discovery — unfiled FR/BR (FR-043) - 📋 TODO (HIGH, re-housed from E02:S16:T14) | [Task](epics/epic-04/story-14-kanban-framework-maintenance/T11-ukw-gap-discovery-unfiled-fr-br-fr043.md) | [FR-043](fbu/FR-043-ukw-gap-discovery-todo-tasks-and-unfiled-fr-br.md) | —No IPP— | Last modified: 2026-05-30 13:36 UTC
 
-- **E04:S19:T14** – Rename intake directory `fr-br/` → `fbu/` (UXR-032) - ✅ COMPLETE @ v0.4.19.14+1 (MEDIUM, FBU path + `fbu_root` config; FR-086 directory gap) | [Task](epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T14-fr-br-directory-rename-to-fbu-uxr032.md) | [UXR-032](fbu/UXR-032-fr-br-directory-rename-to-fbu.md) | [—IPP—](../../implementation-cycles/IPP-E04S19T14-fr-br-directory-rename-to-fbu.md) | Last modified: 2026-06-23 14:00 UTC
-
 - **E07:S01:T10** – FR-039: AI Dev Kit Project Review and Legacy Clean-up - 📋 TODO (LOW, hygiene task; historical FR-059 T10 reconciled) | [Task](epics/epic-07/story-01-codebase-maintenance-tasks/T10-project-root-hygiene-and-legacy-docs-rationalization.md) | [FR-039](fbu/FR-039-ai-dev-kit-project-review-and-legacy-clean-up.md) | [—IPP—](../../implementation-cycles/IPP-E07S01T10-supersession-reconciliation.md) | Last modified: 2026-06-04 12:15 UTC
 
 - **E07:S01:T13** – Comprehensive repository directory structure audit (UXR-033) - 📋 TODO (HIGH, kanban-init **v0.7.1.13+0**; whole-repo dir valuation matrix; investigation-only; paired with T14) | [Task](epics/epic-07/story-01-codebase-maintenance-tasks/T13-comprehensive-repository-directory-structure-audit-uxr033.md) | [UXR-033](fbu/UXR-033-comprehensive-repository-directory-structure-audit.md) | —No IPP— | Last modified: 2026-06-23 14:00 UTC
@@ -88,7 +86,7 @@ _All perpetual lanes under **E02:S16** only ([IPP-E02S16T24](../../implementatio
 
 - **E02:S16:T05** – GitHub Actions CI health (Perpetual) - 🔄 PERPETUAL (**v0.2.16.5+13**) - [Task](epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T05-github-actions-ci-health-perpetual.md) | [FR-112](fbu/FR-112-perpetual-github-ci-and-security-health-lanes.md) | [IPP-E02S16T05](../implementation-cycles/IPP-E02S16T05-github-actions-ci-health-perpetual-fr112.md) | [BR-104](fbu/BR-104-codeql-cqg-green-does-not-imply-actions-ci-green.md) | [—IPP—](../../implementation-cycles/IPP-E02S16T05-github-actions-ci-health-perpetual-fr112.md) | Last modified: 2026-06-17 16:49 UTC
 
-- **E02:S16:T06** – GitHub Security & Code Quality health (Perpetual) - 🔄 PERPETUAL (**v0.2.16.6+19** — Wave 11 standard findings 3M+2R burn-down) - [Task](epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T06-github-security-code-quality-health-perpetual.md) | [FR-112](fbu/FR-112-perpetual-github-ci-and-security-health-lanes.md) | [—IPP—](../../implementation-cycles/IPP-E02S16T06-github-security-code-quality-health-perpetual-fr112.md) | Last modified: 2026-06-16 15:38 UTC
+- **E02:S16:T06** – GitHub Security & Code Quality health (Perpetual) - 🔄 PERPETUAL (**v0.2.16.6+20** — Wave 12 Dependabot http-proxy-middleware override) - [Task](epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T06-github-security-code-quality-health-perpetual.md) | [FR-112](fbu/FR-112-perpetual-github-ci-and-security-health-lanes.md) | [—IPP—](../../implementation-cycles/IPP-E02S16T06-github-security-code-quality-health-perpetual-fr112.md) | Last modified: 2026-06-23 13:36 UTC
 
 ### Won't Have (W) - Deferred Tasks
 

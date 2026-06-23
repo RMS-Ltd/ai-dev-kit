@@ -14,8 +14,8 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** Medium (ongoing)  
 **Created:** 2026-06-05  
-**Last updated:** 2026-06-16 (Wave 11 standard findings burn-down @ v0.2.16.6+19)  
-**Version Anchor:** v0.2.16.6+19  
+**Last updated:** 2026-06-23 (Wave 12 Dependabot http-proxy-middleware @ v0.2.16.6+20)  
+**Version Anchor:** v0.2.16.6+20  
 **Code:** E02S16T06  
 **Task Type:** Perpetual Maintenance
 
@@ -627,6 +627,26 @@ Between 2026-06-16 09:54–15:03 UTC, **23** `ai-findings-autofix/*` PRs merged 
 
 ---
 
+## Wave 12 remediation (shipped @ v0.2.16.6+20)
+
+**Theme:** [Dependabot #10](https://github.com/RMS-Ltd/ai-dev-kit/security/dependabot/10) — `http-proxy-middleware` Host-header routing bypass (CVE). Dependabot security updates [#1431585500](https://github.com/RMS-Ltd/ai-dev-kit/network/updates/1431585500) and [#1431587338](https://github.com/RMS-Ltd/ai-dev-kit/network/updates/1431587338) failed with `security_update_not_possible` — `webpack-dev-server@5.2.5` requires `^2.0.9`; earliest fixed **2.0.10**.
+
+| Alert | Package | Severity | Fix |
+| ----- | ------- | -------- | --- |
+| #10 | `http-proxy-middleware` | Medium | `"http-proxy-middleware": "2.0.10"` npm override |
+
+| Verification | Result |
+| ------------ | ------ |
+| `npm ls http-proxy-middleware` | **2.0.10** overridden (via `webpack-dev-server`) |
+| `npm audit` | **0** vulnerabilities |
+| `npm run build` (portal) | **SUCCESS** |
+| `RW E02:S16:T06 --art` | **v0.2.16.6+20** |
+| Operator Dependabot dashboard (TC40) | **Pending** post-merge |
+
+**Scope note:** Same override pattern as Wave 8 (`ws`, `js-yaml`). Dependabot enablement policy → **E08:S03:T06** (FR-105).
+
+---
+
 ## Coordination matrix (T12–T17 vs T16)
 
 | Task | Surface | Status | T16 may remediate? |
@@ -668,6 +688,7 @@ Between 2026-06-16 09:54–15:03 UTC, **23** `ai-findings-autofix/*` PRs merged 
 - [x] **AC22 (Wave 9):** AI autofix PR #70 CI repair — `conftest.py` path setup + `test_allocate` import restore; pytest green; shipped **v0.2.16.6+17**; PR #70 CI re-verify **pending**.
 - [x] **AC23 (Wave 10):** AI autofix moratorium documented; canonical hot files reconciled on `dev`; operator stops merging `ai-findings-autofix/*` to `main`; lag-accepted for stale AI panel rows; shipped **v0.2.16.6+18** via **`RW E02:S16:T06`**.
 - [ ] **AC24 (Wave 11):** Standard findings **3M+2R** burn-down shipped **v0.2.16.6+19**; operator TC39 dashboard verify **pending**.
+- [x] **AC25 (Wave 12):** Dependabot **#10** `http-proxy-middleware@2.0.10` override; portal build + `npm audit` 0; shipped **v0.2.16.6+20**; operator TC40 Dependabot verify **pending**.
 
 ---
 

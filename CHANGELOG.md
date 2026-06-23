@@ -11,6 +11,14 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.2.16.6+20] - 23-06-26
+
+E02:S16:T06 — **Change implemented:** Wave 12 Dependabot hygiene — `http-proxy-middleware@2.0.10` npm override (alert #10; Dependabot auto-update blocked by `webpack-dev-server` constraint). SemVer **v0.4.1212+20**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.16.6+20.md)
+
+---
+
 ## [0.4.19.14+1] - 23-06-26
 
 E04:S19:T14 — **Change implemented:** Intake directory rename `fr-br/` → `fbu/`; `fbu_root` config key; ADR-032; framework read-compat and validator guard (UXR-032). SemVer **v0.4.1211+1**.
