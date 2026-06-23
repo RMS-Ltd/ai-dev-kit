@@ -12,7 +12,9 @@ housekeeping_policy: keep
 **Status:** 📋 TODO  
 **Priority:** MEDIUM (Could Have — MoSCOW **C**)  
 **Created:** 2026-06-23  
-**Last updated:** 2026-06-23 (intake — FR-138)  
+**Last updated:** 2026-06-23 (v0.8.3.24+1 – Kanban documentation setup)  
+**Version:** v0.8.3.24+1  
+**Version Anchor:** v0.8.3.24+1  
 **Code:** E08S03T24
 
 **Upstream:** [FR-138 — CLI package test coverage gap closure](../../../fr-br/FR-138-cli-package-test-coverage-gap-closure.md)  
@@ -69,7 +71,7 @@ Opt-in CLI coverage (T21) accurately reports real gaps. Lowest modules are insta
 - [ ] **AC1:** `bash scripts/run_cli_pytest_coverage.sh` → **`cli/` aggregate ≥70%**.
 - [ ] **AC2:** No module from FR-138 baseline table remains **&lt;40%**; Wave 1/2 per-file targets met.
 - [ ] **AC3:** `cli-coverage` CI job fails on coverage regression below floor.
-- [ ] **AC4:** FR-138 ↔ T24 bidirectional links; RW version anchor on ship.
+- [ ] **AC4:** FR-138 ↔ T24 bidirectional links; RW version anchor on ship. _(Version anchor **v0.8.3.24+1** @ kanban-init.)_
 - [ ] **AC5:** Linked IPP under `docs/implementation-cycles/` before implementation (`IPW E08:S03:T24`).
 
 ---

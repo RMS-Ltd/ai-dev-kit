@@ -35,6 +35,7 @@ from validate_release_coherence import (  # noqa: E402
     _CHANGELOG_SEMVER_RE,
     _README_INTERNAL_RE,
     _README_SEMVER_RE,
+    _coherence_semver_core,
     _normalize_semver,
     _parse_version_file,
     _project_root,
@@ -176,7 +177,7 @@ def audit_release_at_tag(
         im = _README_INTERNAL_RE.search(readme_text)
         if not sm:
             errors.append("README missing SemVer line")
-        elif db_semver and _normalize_semver(sm.group(1)) != _normalize_semver(db_semver):
+        elif db_semver and _coherence_semver_core(sm.group(1)) != _coherence_semver_core(db_semver):
             errors.append(f"README SemVer {sm.group(1)} != DB {db_semver}")
         if not im:
             errors.append("README missing Internal line")
@@ -189,7 +190,7 @@ def audit_release_at_tag(
         if entry and entry.group(1).lstrip("v") != internal:
             errors.append(f"CHANGELOG top [{entry.group(1)}] != {internal}")
         csm = _CHANGELOG_SEMVER_RE.search(changelog_text)
-        if csm and _normalize_semver(csm.group(1)) != _normalize_semver(db_semver):
+        if csm and _coherence_semver_core(csm.group(1)) != _coherence_semver_core(db_semver):
             errors.append(f"CHANGELOG SemVer {csm.group(1)} != DB {db_semver}")
 
     return ReleaseAudit(

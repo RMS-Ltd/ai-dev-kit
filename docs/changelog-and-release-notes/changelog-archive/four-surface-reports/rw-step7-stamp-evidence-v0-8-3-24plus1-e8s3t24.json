@@ -1,0 +1,8 @@
+{
+  "rows": {
+    "E08:S03:T24": {
+      "allowed": true,
+      "reason": "RW Step 7 v0.8.3.24+1 kanban-init — release-scope row stamp + kanban-init version marker for FR-138 intake"
+    }
+  }
+}

@@ -11,6 +11,14 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.8.3.24+1] - 23-06-26
+
+E08:S03:T24 — **Kanban-init (FR-138):** CLI package test coverage gap closure intake — 54% baseline, ≥70% target, phased waves. SemVer **v0.4.1203**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.8.3.24+1.md)
+
+---
+
 ## [0.3.2.15+2] - 23-06-26
 
 E03:S02:T15 — **SemVer core-only external display (ADR-031 Option A):** `external_display_semver()`; core-only commit subjects/README/changelog; coherence gate uses `semver_core`. SemVer **v0.4.1202**.
