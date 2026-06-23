@@ -10,13 +10,13 @@ housekeeping_policy: keep
 
 **Status:** IN PROGRESS  
 **Priority:** HIGH  
-**Last updated:** 2026-06-23 (E07:S01:T14 UXR-034 RW -k kanban init @ v0.7.1.14+0; E07:S01:T13 @ v0.7.1.13+0)
-**Version:** v0.7.1.12+2
+**Last updated:** 2026-06-23 (v0.7.1.14+0 – Kanban documentation setup)
+**Version:** v0.7.1.14+0
 **Estimated Effort:** [TBD]  
 **Actual Effort:** [TBD]  
 **Started:** 2025-12-09  
 **Completed:** [Reopened – TBD]  
-**Version:** v0.7.1.12+2
+**Version:** v0.7.1.14+0
 **Code:** E7S01
 
 ---

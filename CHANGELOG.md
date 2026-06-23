@@ -11,6 +11,14 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.8.3.24+3] - 23-06-26
+
+E08:S03:T24 — **FR-138 Phase 2 (Wave 4):** CLI package test coverage hardening — aggregate **82%**, per-module targets met; floor **70%** retained in `cli-coverage` lane. SemVer **v0.4.1207**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.8.3.24+3.md)
+
+---
+
 ## [0.7.1.14+0] - 23-06-26
 
 E07:S01:T14 — **Kanban-init (UXR-034):** Comprehensive repository file-level audit within audited directories — per-file valuation rubric paired with UXR-033; investigation-only. SemVer **v0.4.1206**.

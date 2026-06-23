@@ -13,7 +13,7 @@ housekeeping_policy: keep
 **Submitted:** 2026-06-23  
 **Submitted By:** Operator — `cli-coverage` CI report (Python 3.14.6, **54%** aggregate)  
 **Priority:** MEDIUM  
-**Status:** CHANGE IMPLEMENTED (pending downstream verification) @ **v0.8.3.24+2**
+**Status:** CHANGE IMPLEMENTED (pending verification) — **Phase 1** @ **v0.8.3.24+2** (74.73%); **Phase 2 (Wave 4)** @ **v0.8.3.24+3** (82% aggregate, module targets met)
 
 **Implementing Task:** [E08:S03:T24](../epics/epic-08/story-03-automation-scripts/T24-cli-package-test-coverage-gap-closure-fr138.md)
 
@@ -25,7 +25,7 @@ housekeeping_policy: keep
 
 ## Summary
 
-Raise **`cli/`** pytest coverage from the current **~54%** aggregate to a **maintained floor (≥70%)** by adding targeted unit and integration tests for the lowest-covered modules — especially install backends, migration paths, and thin command wrappers — and enforcing the floor in the dedicated `cli-coverage` lane.
+Raise **`cli/`** pytest coverage from **~54%** to a **maintained ≥70% floor** (Phase 1 — shipped **v0.8.3.24+2** @ **74.73%**), then **harden high-risk modules** still at or near the floor (Phase 2 / Wave 4) without raising the global fail-under until targets are met.
 
 ---
 
@@ -58,7 +58,30 @@ Raise **`cli/`** pytest coverage from the current **~54%** aggregate to a **main
 
 Modules already **≥80%** (`localisation.py`, `main.py`, `init.py`, `validation.py`, etc.) need only regression guards when adjacent code changes.
 
-**Risk:** Install/migrate/backend paths are high-impact for adopters but lightly exercised in tests; regressions can ship while `cli-coverage` stays green at 54%.
+**Risk:** Phase 1 closed the aggregate gap but several **adopter-critical paths** (migration orchestration, install backends, `install`/`remove`) remain only slightly above Wave 1 minimums; regressions in those modules may not move aggregate coverage below 70%.
+
+---
+
+## Phase 1 outcome (2026-06-23, post **v0.8.3.24+2**)
+
+| Aggregate | Stmts | Miss | Cover |
+| --------- | ----- | ---- | ----- |
+| **TOTAL** | 2825 | 714 | **74.73%** |
+
+`--cov-fail-under=70` enforced in `pytest-cli-cov.ini`; `cli-coverage` lane green locally.
+
+**Residual gaps (Phase 2 — shipped @ v0.8.3.24+3):**
+
+| Module | Phase 2 cover | Target | Met |
+| ------ | ------------- | ------ | --- |
+| `cli/migration.py` | 91% | ≥70% | ✅ |
+| `cli/backends/git_submodule.py` | 75% | ≥75% | ✅ |
+| `cli/backends/git_subtree.py` | 76% | ≥75% | ✅ |
+| `cli/backends/package_manager.py` | 76% | ≥75% | ✅ |
+| `cli/commands/install.py` | 87% | ≥75% | ✅ |
+| `cli/commands/remove.py` | 80% | ≥75% | ✅ |
+| `cli/adk_install_errors_bridge.py` | 96% | ≥85% | ✅ |
+| `cli/commands/logs.py` | 81% | ≥80% | ✅ |
 
 ---
 
@@ -71,6 +94,15 @@ Modules already **≥80%** (`localisation.py`, `main.py`, `init.py`, `validation
 - [x] **FR-138-F3:** Add pytest coverage for **Wave 3 — remaining gaps** (`commands/config.py`, `commands/install.py`, `commands/remove.py`, `commands/logs.py` uncovered branches, `config.py`, `logging.py`, `utils.py`) until aggregate **`cli/` ≥70%**.
 - [x] **FR-138-F4:** Document wave plan and run instructions in `tests/README.md` and `cli/README.md` (reference `bash scripts/run_cli_pytest_coverage.sh`).
 - [x] **FR-138-F5:** Add **`--cov-fail-under=70`** (or equivalent `pytest.ini` / `pytest-cli-cov.ini` setting) to the **dedicated** CLI coverage config and `cli-coverage` CI job — **not** default `pytest.ini` (preserves UXR-030 contract).
+
+### Phase 2 — Wave 4 hardening ✅ @ v0.8.3.24+3
+
+- [x] **FR-138-F6:** Deepen **`cli/migration.py`** coverage to **≥70%** (conversion orchestration, `detect`/`convert` paths, error branches).
+- [x] **FR-138-F7:** Raise **`cli/backends/{git_submodule,git_subtree,package_manager}.py`** each to **≥75%** (subprocess failure, partial install, validation errors — mocked).
+- [x] **FR-138-F8:** Raise **`cli/commands/{install,remove}.py`** each to **≥75%** (primary install/uninstall flows and failure branches).
+- [x] **FR-138-F9:** Raise **`cli/adk_install_errors_bridge.py`** to **≥85%** (remaining ADK-I06 emission paths per FR-111).
+- [x] **FR-138-F10:** Raise **`cli/commands/logs.py`** to **≥80%** where practical without slow integration tests.
+- [x] **FR-138-F11:** Update IPP §3–§4 Wave 4 section (amend existing IPP — no new FR) before Phase 2 implementation ([FR-083](FR-083-global-ipw-gated-implementation-contract.md)).
 
 ### Non-functional
 
@@ -104,6 +136,12 @@ Modules already **≥80%** (`localisation.py`, `main.py`, `init.py`, `validation
 - [x] **AC4:** FR-138 ↔ E08:S03:T24 bidirectional links; story checklist and board row updated.
 - [x] **AC5:** IPW produces linked IPP before implementation ([FR-083](FR-083-global-ipw-gated-implementation-contract.md)).
 
+### Phase 2 acceptance (Wave 4)
+
+- [x] **AC6:** Phase 2 module targets in residual table met (`migration.py` ≥70%; backends/install/remove ≥75%; `adk_install_errors_bridge` ≥85%; `logs` ≥80% where practical).
+- [x] **AC7:** Aggregate **`cli/`** remains **≥70%** (82% @ v0.8.3.24+3); no regression on modules already **≥80%** from Phase 1.
+- [x] **AC8:** IPP amended with Wave 4 test design + plan before Phase 2 IDW; task reconciled on closure RW @ **v0.8.3.24+3**.
+
 ---
 
 ## Intake Decision
@@ -121,7 +159,7 @@ Modules already **≥80%** (`localisation.py`, `main.py`, `init.py`, `validation
 - Epic: **8** — Automation Scripts / repository CI
 - Story: **E08:S03** — Automation Scripts
 - Task: **E08:S03:T24** — CLI package test coverage gap closure (FR-138)
-- Version: `v0.8.3.24+1` (kanban-init @ RW -k E08:S03:T24 --art)
+- Version: `v0.8.3.24+3` (Phase 2 Wave 4 @ MWF delivery); FR-138 closure on **E08:S03:T24**
 
 **Kanban Links:**
 

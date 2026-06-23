@@ -1,0 +1,8 @@
+{
+  "rows": {
+    "E08:S03:T24": {
+      "allowed": true,
+      "reason": "RW Step 7 v0.8.3.24+3 — terminal COMPLETE row pruned from active MoSCOW; ledger upsert via append_kanban_completed.py"
+    }
+  }
+}

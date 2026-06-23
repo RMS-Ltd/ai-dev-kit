@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Board
 
-**Last Updated:** 2026-06-23 (RW: E08:S03:T24)
-**Version:** v0.8.3.24+3
+**Last Updated:** 2026-06-23 (RW: E07:S01:T14)
+**Version:** v0.7.1.14+0
 
 **Active board contract:** **Sole active MoSCOW board** ([ADR-018](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/architecture/standards-and-adrs/ADR-018-single-kanban-board-consolidation.md)). Rows are **live work** (TODO / IN PROGRESS / OPEN / WAITING / PERPETUAL) plus filed **Could Have** backlog. **Verification (V)** band holds task-shipped / FBU-open items (`⏳ WAITING`). Remove **terminal** rows and archive prose (use [`kanban-completed.md`](kanban-completed.md) / [`intake-completed.md`](intake-completed.md)).
 
@@ -38,7 +38,7 @@ housekeeping_policy: keep
 
 ### Could Have (C) - Nice-to-Have Tasks
 
-- **E05:S02:T07** – Unified documentation governance strategy (FR-139) - 📋 TODO (MEDIUM — policy–SOP–template alignment index) | [Task](epics/epic-05/story-02-documentation-maintenance-framework/T07-unified-documentation-governance-strategy-fr139.md) | [FR-139](fr-br/FR-139-unified-documentation-governance-strategy.md) | —No IPP— | Last modified: 2026-06-23 16:00 UTC
+- **E08:S03:T24** – CLI package test coverage gap closure (FR-138) - 🔄 IN PROGRESS (Phase 1 ✅ **v0.8.3.24+2** @ 74.73%; Phase 2 Wave 4 hardening) | [Task](epics/epic-08/story-03-automation-scripts/T24-cli-package-test-coverage-gap-closure-fr138.md) | [FR-138](fr-br/FR-138-cli-package-test-coverage-gap-closure.md) | [—IPP—](../../implementation-cycles/IPP-E08S03T24-cli-package-test-coverage-gap-closure-fr138.md) | Last modified: 2026-06-23 11:20 UTC
 
 - **E21:S04:T06** – Test cultural adaptations - 📋 TODO (MEDIUM, cultural adaptation) | [Task](epics/epic-21/story-04-cultural-adaptation/T06-test-cultural-adaptations.md) | [Story](epics/epic-21/story-04-cultural-adaptation.md) | [FR-006](fr-br/FR-006-localization-language-selection-uk-us-english.md) | —No IPP— | Last modified: 2026-06-07 11:18 UTC
 

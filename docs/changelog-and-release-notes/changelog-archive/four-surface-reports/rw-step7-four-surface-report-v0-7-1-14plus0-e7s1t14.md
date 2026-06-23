@@ -3,18 +3,18 @@
 - **Contract:** FR-092 / ADR-018 (RW Step 7 three-surface reconciliation)
 - **Invocation context:** rw_step_7
 - **Release scope:** E7:S1:T14 (v0.7.1.14+0)
-- **Timestamp (UTC):** 2026-06-23 11:54 UTC
+- **Timestamp (UTC):** 2026-06-23 12:16 UTC
 
 ## Touched-surface summary
 
-- Touched: `task_doc`, `fbu_doc`, `kboard`
-- Untouched: `(none — all release-scope surfaces updated)`
-- Total changes recorded: 11
+- Touched: `(none)`
+- Untouched: `task_doc, fbu_doc, kboard`
+- Total changes recorded: 6
 
 ## Forensic stamp evidence (UXR-009 / FR-092 Wave 6)
 
-- Evidence mode: `substantive`
-- Stamps appended with evidence: **1** (kboard E07:S01:T14 row)
+- Evidence mode: `non_substantive`
+- Stamps appended with evidence: **0**
 - Stamps skipped (no evidence delta): **0**
 - Stamps preserved (existing footer): **0**
 
@@ -22,31 +22,49 @@
 
 ### Surface: `task_doc`
 
-- Touched: **True**
-- Path(s): `docs/kanban/epics/epic-07/story-01-codebase-maintenance-tasks/T14-comprehensive-repository-file-level-audit-uxr034.md`
+- Touched: **False**
+- Path(s): (none resolved)
 - Notes:
-  - Version anchor v0.7.1.14+0; RW -k kanban init marker; Next Actions RW step checked.
+  - No path resolved by RW Step 7. Task / FBU surfaces are owned by implementation execution; absence here is informational, not a failure.
 
 ### Surface: `fbu_doc`
 
-- Touched: **True**
-- Path(s): `docs/kanban/fr-br/UXR-034-comprehensive-repository-file-level-audit-within-audited-directories.md`
+- Touched: **False**
+- Path(s): (none resolved)
 - Notes:
-  - Status ACCEPTED; version v0.7.1.14+0; RW -k next step checked.
+  - No path resolved by RW Step 7. Task / FBU surfaces are owned by implementation execution; absence here is informational, not a failure.
 
 ### Surface: `kboard`
 
-- Touched: **True**
-- Path(s): `docs/kanban/kboard.md`
+- Touched: **False**
+- Path(s):
+  - `/Users/ruari/Projects/ai-dev-kit/docs/kanban/kboard.md`
 - Notes:
-  - Board header version/Last Updated; E07:S01:T14 row stamp + kanban-init version token.
+  - Surface within release scope but not touched by this run (idempotent no-op or already canonical).
 
-### Auxiliary: `story_doc` / `epic_doc`
+## Auxiliary surfaces (Story / Epic propagation)
 
-- Story checklist + Last updated on `story-01-codebase-maintenance-tasks.md`
-- Epic-07 S01 checklist marker on `epic-07.md`
+### Auxiliary: `story_doc`
 
-## Cross-wiring (UXR-033 ↔ UXR-034)
+- Touched: **True**
+- Path(s):
+  - `/Users/ruari/Projects/ai-dev-kit/docs/kanban/epics/epic-07/story-01-codebase-maintenance-tasks.md`
+- Changes:
+  - ✅ Story doc updated: /Users/ruari/Projects/ai-dev-kit/docs/kanban/epics/epic-07/story-01-codebase-maintenance-tasks.md
 
-- UXR-033 / T13 cross-links to UXR-034 / T14 preserved from intake session (paired directory/file audit layers).
-- No UXR-033 surface changes required for this release (already at v0.7.1.13+0).
+### Auxiliary: `epic_doc`
+
+- Touched: **True**
+- Path(s):
+  - `/Users/ruari/Projects/ai-dev-kit/docs/kanban/epics/epic-07/epic-07.md`
+- Changes:
+  - Updated Epic Last updated: 2026-06-23 (v0.7.1.14+0 – Kanban documentation setup)
+
+### Auxiliary: `uncategorized`
+
+- Touched: **True**
+- Changes:
+  - Updated Version: v0.7.1.14+0
+  - Updated Last updated: 2026-06-23 (v0.7.1.14+0 – Kanban documentation setup)
+  - Updated board Last Updated: 2026-06-23 (RW: E07:S01:T14)
+  - Updated board Version: v0.7.1.14+0

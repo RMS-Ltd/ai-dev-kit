@@ -9,12 +9,12 @@ housekeeping_policy: keep
 # E08:S03:T24 — CLI package test coverage gap closure (FR-138)
 
 **Task ID:** E08:S03:T24  
-**Status:** ✅ COMPLETE  
+**Status:** ✅ COMPLETE @ **v0.8.3.24+3** (Phase 1 **74.73%** + Phase 2 **82%** aggregate)  
 **Priority:** MEDIUM (Could Have — MoSCOW **C**)  
 **Created:** 2026-06-23  
-**Last updated:** 2026-06-23 (v0.8.3.24+2 — change implemented; pending downstream verification)  
-**Version:** v0.8.3.24+2  
-**Version Anchor:** v0.8.3.24+2  
+**Last updated:** 2026-06-23 (MWF Phase 2 delivery — Wave 4 hardening)  
+**Version:** v0.8.3.24+3  
+**Version Anchor:** v0.8.3.24+3  
 **Code:** E08S03T24
 
 **Upstream:** [FR-138 — CLI package test coverage gap closure](../../../fr-br/FR-138-cli-package-test-coverage-gap-closure.md)  
@@ -27,75 +27,72 @@ Publication N/A Reason: Internal kanban task and implementation artifact referen
 
 ## Scope
 
-Close the measured **`cli/`** pytest coverage gap (**54%** aggregate baseline, 2026-06-23) by adding phased tests for backends, migration, and command modules, then enforce a **≥70%** floor in the dedicated `cli-coverage` lane ([UXR-030](UXR-030-default-pytest-cli-coverage-misleading-zero-percent.md) / **T21**).
+**Phase 1 (complete @ v0.8.3.24+2):** Raise **`cli/`** from **54%** → **74.73%**; enforce **`--cov-fail-under=70`** in `pytest-cli-cov.ini`.
 
----
-
-## Problem
-
-Opt-in CLI coverage (T21) accurately reports real gaps. Lowest modules are install backends (**19–26%**), migration (**12–17%**), and thin wrappers for `check` / `status` / `update` (**26–28%**). CI does not fail on low aggregate coverage today.
+**Phase 2 (complete @ v0.8.3.24+3):** Wave 4 per-module hardening — aggregate **82%**, all module targets met.
 
 ---
 
 ## Input
 
-- [FR-138](../../../fr-br/FR-138-cli-package-test-coverage-gap-closure.md) (baseline table + wave plan)
-- **IPP:** [`IPP-E08S03T24-cli-package-test-coverage-gap-closure-fr138.md`](../../../../implementation-cycles/IPP-E08S03T24-cli-package-test-coverage-gap-closure-fr138.md) _(planning package — Sections 1–7; produced by IPW E08:S03:T24)_
-- Operator `cli-coverage` report — **54%** total, 2026-06-23
+- [FR-138](../../../fr-br/FR-138-cli-package-test-coverage-gap-closure.md) (Phase 1 + Phase 2 / Wave 4)
+- **IPP:** [`IPP-E08S03T24-cli-package-test-coverage-gap-closure-fr138.md`](../../../../implementation-cycles/IPP-E08S03T24-cli-package-test-coverage-gap-closure-fr138.md)
 - [`pytest-cli-cov.ini`](../../../../../pytest-cli-cov.ini) · [`scripts/run_cli_pytest_coverage.sh`](../../../../../scripts/run_cli_pytest_coverage.sh)
-- Existing suite: `tests/cli/`, `tests/test_commands.py`
 
 ---
 
-## Deliverable (phased)
+## Deliverable
 
-### Wave 1 — Backends & migration
+### Phase 1 — Waves 1–3 ✅ @ v0.8.3.24+2
 
-- Tests for `cli/migration.py`, `cli/commands/migrate.py`
-- Tests for `cli/backends/{git_submodule,git_subtree,package_manager,selector,base}.py` (mocked git/npm/pip)
-- Target: each Wave 1 file **≥50%**
+- Floor **70%** enforced; 11 new `tests/cli/test_*.py` modules
+- See [CHANGELOG_v0.8.3.24+2](../../../../changelog-and-release-notes/changelog-archive/CHANGELOG_v0.8.3.24+2.md)
 
-### Wave 2 — Core commands & errors
+### Phase 2 — Wave 4 hardening ✅ @ v0.8.3.24+3
 
-- Tests for `cli/commands/{check,status,update}.py`, `cli/adk_install_errors_bridge.py`, `cli/exceptions.py`
-- Target: each Wave 2 file **≥60%**
+| Module | Final cover | Target |
+| ------ | ----------- | ------ |
+| `cli/migration.py` | 91% | ≥70% |
+| `cli/backends/git_submodule.py` | 75% | ≥75% |
+| `cli/backends/git_subtree.py` | 76% | ≥75% |
+| `cli/backends/package_manager.py` | 76% | ≥75% |
+| `cli/commands/install.py` | 87% | ≥75% |
+| `cli/commands/remove.py` | 80% | ≥75% |
+| `cli/adk_install_errors_bridge.py` | 96% | ≥85% |
+| `cli/commands/logs.py` | 81% | ≥80% |
 
-### Wave 3 — Remaining gaps & floor
-
-- Branch coverage for `config`, `install`, `remove`, `logs`, `config.py`, `logging.py`, `utils.py`
-- Add **`--cov-fail-under=70`** to `pytest-cli-cov.ini` / `cli-coverage` CI job
-- Update `tests/README.md` and `cli/README.md`
+- `tests/cli/test_wave4_hardening.py` (57 tests)
+- See [CHANGELOG_v0.8.3.24+3](../../../../changelog-and-release-notes/changelog-archive/CHANGELOG_v0.8.3.24+3.md)
 
 ---
 
 ## Acceptance Criteria
 
+### Phase 1 ✅
+
 - [x] **AC1:** `bash scripts/run_cli_pytest_coverage.sh` → **`cli/` aggregate ≥70%**.
 - [x] **AC2:** No module from FR-138 baseline table remains **&lt;40%**; Wave 1/2 per-file targets met.
 - [x] **AC3:** `cli-coverage` CI job fails on coverage regression below floor.
-- [x] **AC4:** FR-138 ↔ T24 bidirectional links; RW version anchor on ship. _(Version anchor **v0.8.3.24+2**.)_
-- [x] **AC5:** Linked IPP under `docs/implementation-cycles/` before implementation (`IPW E08:S03:T24`).
+- [x] **AC4:** FR-138 ↔ T24 bidirectional links; RW version anchor **v0.8.3.24+2**.
+- [x] **AC5:** Linked IPP before Phase 1 implementation.
+
+### Phase 2 ✅
+
+- [x] **AC6:** Phase 2 module targets met (see deliverable table).
+- [x] **AC7:** Aggregate **82%**; no Phase 1 module **≥80%** regressed.
+- [x] **AC8:** IPP Wave 4 amendment + closure RW @ **v0.8.3.24+3**.
 
 ---
 
 ## Associated Feature Request
 
-- [FR-138 — CLI package test coverage gap closure](../../../fr-br/FR-138-cli-package-test-coverage-gap-closure.md) (primary)
-
----
-
-## Implementation Notes
-
-- **IPW required** before code changes ([FR-083](../../../fr-br/FR-083-global-ipw-gated-implementation-contract.md)).
-- Reuse existing CLI test fixtures and subprocess mocks; avoid live network or mutating git state in default suite.
-- Default `pytest.ini` must **not** gain `--cov=cli` (UXR-030 contract).
-- Coordinate with **E02:S16:T05** if `cli-coverage` workflow changes affect Actions CI parity.
+- [FR-138 — CLI package test coverage gap closure](../../../fr-br/FR-138-cli-package-test-coverage-gap-closure.md) (primary — Phase 1 + Phase 2)
 
 ---
 
 ## References
 
-- [IPP-E08S03T24 — Planning package (Sections 1–7)](../../../../implementation-cycles/IPP-E08S03T24-cli-package-test-coverage-gap-closure-fr138.md)
-- [E08:S03:T21 — CLI pytest coverage dedicated target (UXR-030)](T21-cli-pytest-coverage-dedicated-target-uxr030.md)
-- [E08:S03:T22 — Pytest warning cleanup (UXR-030 Wave 2)](T22-pytest-warning-cleanup-uxr030-wave2.md)
-- [UXR-030 — Default pytest CLI coverage misleading 0%](../../../fr-br/UXR-030-default-pytest-cli-coverage-misleading-zero-percent.md)
+- [IPP-E08S03T24 — Planning package](../../../../implementation-cycles/IPP-E08S03T24-cli-package-test-coverage-gap-closure-fr138.md)
+- [CHANGELOG_v0.8.3.24+2 — Phase 1](../../../../changelog-and-release-notes/changelog-archive/CHANGELOG_v0.8.3.24+2.md)
+- [CHANGELOG_v0.8.3.24+3 — Phase 2](../../../../changelog-and-release-notes/changelog-archive/CHANGELOG_v0.8.3.24+3.md)
+- [E08:S03:T21](T21-cli-pytest-coverage-dedicated-target-uxr030.md) · [E08:S03:T22](T22-pytest-warning-cleanup-uxr030-wave2.md)

@@ -10,7 +10,7 @@ housekeeping_policy: keep
 
 **Host Task:** [`T24-cli-package-test-coverage-gap-closure-fr138.md`](../kanban/epics/epic-08/story-03-automation-scripts/T24-cli-package-test-coverage-gap-closure-fr138.md) **(E08:S03:T24)**  
 **Planning for:** [FR-138 — CLI package test coverage gap closure](../kanban/fr-br/FR-138-cli-package-test-coverage-gap-closure.md)  
-**Status:** Approved
+**Status:** Phase 1 & Phase 2 shipped — **v0.8.3.24+3** (82% aggregate, Wave 4 module targets met)
 
 > **IPW (Implementation Planning Workflow):** Produced by `IPW E08:S03:T24`. Bidirectional link wired into T24 task doc `Input` section (see §4 Step 1d).
 
@@ -304,6 +304,31 @@ Raise the measured `cli/` pytest aggregate from **54%** to **≥70%** by deliver
 - [ ] All §5 UPDATE/CREATE items implemented or explicitly deferred with reason.
 - [ ] All §6 `NOT_APPLICABLE` paths confirmed correct (no portal or Greenfield gates apply).
 - [ ] **Python compatibility:** `pytest -c pytest-cli-cov.ini tests/` passes on Python 3.11, 3.12, 3.13, 3.14 matrix (CI enforces via `tests.yml`).
+
+---
+
+## 8. Phase 2 amendment — Wave 4 hardening (DRAFT)
+
+**Scope extension:** [FR-138](../../../kanban/fr-br/FR-138-cli-package-test-coverage-gap-closure.md) Phase 2 (same FR/task — operator 2026-06-23). Phase 1 delivered **74.73%** aggregate @ **v0.8.3.24+2**.
+
+**Module targets (from post-ship coverage report):**
+
+| Module | Post Phase 1 | Wave 4 target |
+| ------ | ------------ | ------------- |
+| `cli/migration.py` | 50% | ≥70% |
+| `cli/backends/git_submodule.py` | 64% | ≥75% |
+| `cli/backends/git_subtree.py` | 69% | ≥75% |
+| `cli/backends/package_manager.py` | 65% | ≥75% |
+| `cli/commands/install.py` | 65% | ≥75% |
+| `cli/commands/remove.py` | 70% | ≥75% |
+| `cli/adk_install_errors_bridge.py` | 76% | ≥85% |
+| `cli/commands/logs.py` | 74% | ≥80% |
+
+**Before Phase 2 IDW:** expand §3 with Wave 4 test IDs; add §4 steps; keep `--cov-fail-under=70` until AC6 met (optional floor raise deferred).
+
+**Delivered:** `tests/cli/test_wave4_hardening.py` (57 tests) @ **v0.8.3.24+3**.
+
+**Verification (Phase 2):** FR-138 AC6–AC8 ✅
 
 ---
 

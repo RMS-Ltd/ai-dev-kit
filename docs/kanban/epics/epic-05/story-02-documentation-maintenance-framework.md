@@ -35,6 +35,8 @@ housekeeping_policy: keep
 - [x] **E05:S02:T06 – CMW Epic 5 execution context (FR-063)** - ✅ COMPLETE (v0.5.2.6+1) (MEDIUM — intake: FR-063 + task + board + CMW archival on E5 branch; **FR-063 implementation** still open per FR checklist)
   - Task: [`T06-cmw-epic-5-execution-context-fr-063`](story-02-documentation-maintenance-framework/T06-cmw-epic-5-execution-context-fr-063.md)
   - Task: [`T06-cmw-epic-05-execution-context-fr-063.md`](story-02/T06-cmw-epic-5-execution-context-fr-063.md) | [FR-063](../../fr-br/FR-063-cmw-epic-5-execution-context.md)
+- [ ] **E05:S02:T07 – Unified documentation governance strategy (FR-139)** - 📋 TODO (MEDIUM — policy–SOP–template alignment index under `docs/governance/standards/`)
+  - Task: [`T07-unified-documentation-governance-strategy-fr139`](story-02-documentation-maintenance-framework/T07-unified-documentation-governance-strategy-fr139.md) | [FR-139](../../fr-br/FR-139-unified-documentation-governance-strategy.md)
 
 ---
 
