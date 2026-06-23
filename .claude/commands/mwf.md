@@ -150,7 +150,7 @@ Report `MWF COMPLETE` or abort reason.
 
 - Never leave MWF ambiguous — end in **`MWF COMPLETE`**, **`MWF CHAIN PAUSED`** (narrow), or **`MWF ABORTED (leg: …)`**.
 - MWF does **not** commit, tag, or bump version — RW owns release surfaces (via IDW `--rw` chain).
-- Do **not** add `IPW --rw` — use MWF ([FR-124](docs/kanban/fr-br/FR-124-meta-workflow-orchestration-composite-workflow-chains.md)).
+- Do **not** add `IPW --rw` — use MWF ([FR-124](docs/kanban/fbu/FR-124-meta-workflow-orchestration-composite-workflow-chains.md)).
 
 ---
 
@@ -158,5 +158,5 @@ Report `MWF COMPLETE` or abort reason.
 
 - [meta-workflow-agent-execution.md](packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/meta-workflow-agent-execution.md)
 - [workflow-encapsulation-contract.md](packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/workflow-encapsulation-contract.md)
-- [BR-102](docs/kanban/fr-br/BR-102-mwf-chain-paused-instead-of-subagent-leg-delegation.md)
+- [BR-102](docs/kanban/fbu/BR-102-mwf-chain-paused-instead-of-subagent-leg-delegation.md)
 - IPW: `.claude/commands/ipw.md` · IDW: `.claude/commands/idw.md` · RW: `.claude/commands/rw.md`

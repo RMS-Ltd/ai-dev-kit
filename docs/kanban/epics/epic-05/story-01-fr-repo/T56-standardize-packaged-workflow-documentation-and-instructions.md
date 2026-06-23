@@ -32,7 +32,7 @@ This task implements the standardization of documentation, instructions, and for
 
 ## Input
 
-- **FR-056:** [`FR-056-standardize-packaged-workflow-documentation-and-instructions.md`](../../../fr-br/FR-056-standardize-packaged-workflow-documentation-and-instructions.md)
+- **FR-056:** [`FR-056-standardize-packaged-workflow-documentation-and-instructions.md`](../../../fbu/FR-056-standardize-packaged-workflow-documentation-and-instructions.md)
 - **IPW Plan:** [`IPP-E5S1T56-package-workflow-docs.md`](../../../../implementation-cycles/IPP-E5S01T56-package-workflow-docs.md)
 - Workflow registry: [`workflow-registry.yaml` (source)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/workflows/workflow-registry.yaml)
 - Framework README: [`workflow-mgt/README.md` (source)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/README.md)
@@ -488,7 +488,7 @@ This task is considered COMPLETE when:
 
 ## References
 
-- **FR-056:** `docs/kanban/fr-br/FR-056-standardize-packaged-workflow-documentation-and-instructions.md`
+- **FR-056:** `docs/kanban/fbu/FR-056-standardize-packaged-workflow-documentation-and-instructions.md`
 - **IPW Plan:** `docs/implementation-cycles/IPP-E5S1T56-package-workflow-docs.md`
 - **Workflow Registry:** `packages/frameworks/workflow-mgt/workflows/workflow-registry.yaml`
 - **Framework README:** `packages/frameworks/workflow-mgt/README.md`

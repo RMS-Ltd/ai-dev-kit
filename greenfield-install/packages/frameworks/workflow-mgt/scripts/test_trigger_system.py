@@ -50,7 +50,7 @@ def test_trigger_detection():
     # Test file pattern
     triggers = detect_triggers(
         'Update documentation',
-        ['docs/kanban/fr-br/FR-012-new-feature.md']
+        ['docs/kanban/fbu/FR-012-new-feature.md']
     )
     assert len(triggers) == 1, f"Expected 1 trigger, got {len(triggers)}"
     assert triggers[0].id == 'fr_commit', f"Expected fr_commit, got {triggers[0].id}"
@@ -147,9 +147,9 @@ def test_agentic_task_workflow_integration():
     
     # Test FR file extraction
     changed_files = [
-        'docs/kanban/fr-br/FR-012-new-feature.md',
+        'docs/kanban/fbu/FR-012-new-feature.md',
         'src/some_code.py',
-        'docs/kanban/fr-br/BR-007-bug-fix.md'
+        'docs/kanban/fbu/BR-007-bug-fix.md'
     ]
     
     project_root = Path(__file__).parent.parent.parent.parent

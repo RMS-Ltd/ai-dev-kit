@@ -54,17 +54,17 @@ Refresh from `kboard.md` when running UKW or RW Step 7; mirror into manifest `op
 
 | ID | Rule | Source |
 | -- | ---- | ------ |
-| P-IPW-GATE | No implementation until IPP/ICW linked + explicit go-ahead (`IDW E:S:T` or `implement`) | [FR-083](docs/kanban/fr-br/FR-083-global-ipw-gated-implementation-contract.md) |
-| P-RW-GIT | Commit/tag via RW; **never push by default**; Step 9.7 CI parity before commit; `--all` before push/batch | [UXR-024](docs/kanban/fr-br/UXR-024-rw-local-release-default-no-push-batch-operator-push.md) · [E08:S03:T15](docs/kanban/epics/epic-08/story-03-automation-scripts/T15-github-actions-ci-health-perpetual-fr112.md) · `.cursorrules` |
-| P-RW-TASK-TOKEN | RW requires `E:S:T` in trigger | [FR-060](docs/kanban/fr-br/FR-060-rw-task-argument-requirement.md) |
-| P-RW-STEP7 | RW Step 7 four-surface kanban reconciliation | [FR-092](docs/kanban/fr-br/FR-092-canonical-rw-ukw-kanban-consistency-program.md) |
-| P-EST-PADDING | Two-digit E/S/T in new writes | [UXR-014](docs/kanban/fr-br/UXR-014-two-digit-est-identifier-default-formatting.md) |
+| P-IPW-GATE | No implementation until IPP/ICW linked + explicit go-ahead (`IDW E:S:T` or `implement`) | [FR-083](docs/kanban/fbu/FR-083-global-ipw-gated-implementation-contract.md) |
+| P-RW-GIT | Commit/tag via RW; **never push by default**; Step 9.7 CI parity before commit; `--all` before push/batch | [UXR-024](docs/kanban/fbu/UXR-024-rw-local-release-default-no-push-batch-operator-push.md) · [E08:S03:T15](docs/kanban/epics/epic-08/story-03-automation-scripts/T15-github-actions-ci-health-perpetual-fr112.md) · `.cursorrules` |
+| P-RW-TASK-TOKEN | RW requires `E:S:T` in trigger | [FR-060](docs/kanban/fbu/FR-060-rw-task-argument-requirement.md) |
+| P-RW-STEP7 | RW Step 7 four-surface kanban reconciliation | [FR-092](docs/kanban/fbu/FR-092-canonical-rw-ukw-kanban-consistency-program.md) |
+| P-EST-PADDING | Two-digit E/S/T in new writes | [UXR-014](docs/kanban/fbu/UXR-014-two-digit-est-identifier-default-formatting.md) |
 | P-TRIGGER-ROUTING | `RW`/`UKW`/`IPW`/`IDW`/`MWF`/… at message start = workflow commands | [CLAUDE.md](CLAUDE.md) |
 | P-INTAKE-ATOMIC | FR/BR/UXR intake needs task + links same session | [Intake guide](packages/frameworks/kanban/FR_BR_INTAKE_GUIDE.md) |
-| P-RW-BUILD | Same E:S:T → BUILD+1 default; no `git tag -f` on release tags; `--dpz` (alias: `--doc-policy-zero`) only if user-triggered + untagged | [BR-097](docs/kanban/fr-br/BR-097-rw-agent-reuses-tagged-build-and-force-moves-release-tags.md) |
+| P-RW-BUILD | Same E:S:T → BUILD+1 default; no `git tag -f` on release tags; `--dpz` (alias: `--doc-policy-zero`) only if user-triggered + untagged | [BR-097](docs/kanban/fbu/BR-097-rw-agent-reuses-tagged-build-and-force-moves-release-tags.md) |
 | P-GIT-MAINTAINER | New maintainer docs → repo paths (`docs/knowledge/`, `docs/maintenance/`, `docs/analysis/`); Notion optional archive only | [ADR-026](docs/architecture/standards-and-adrs/ADR-026-git-internal-maintainer-kb-fr121.md) |
-| P-PORTAL-LINKS | Edits under `docs/guides/**` or `docs/documentation/**` → GitHub blob URLs for excluded trees; run portal pytest before commit | [adopter-public-documentation-authoring.md](docs/governance/standards/adopter-public-documentation-authoring.md) · [BR-068](docs/kanban/fr-br/BR-068-docusaurus-monorepo-markdown-links-break-strict-production-build.md) |
-| P-GREENFIELD-SYNC | Edits under `packages/frameworks/**` → `sync_greenfield_install.py` + commit mirror in same change set. For autofix-class PRs, CI may run `.github/workflows/greenfield-autofix-reconcile.yml` to reconcile dual-tree drift automatically; canonical framework logic should still be authored in `packages/frameworks/**` (source) | [FR-110](docs/kanban/fr-br/FR-110-lean-adopter-distribution-footprint-and-vendor-bundle.md) |
+| P-PORTAL-LINKS | Edits under `docs/guides/**` or `docs/documentation/**` → GitHub blob URLs for excluded trees; run portal pytest before commit | [adopter-public-documentation-authoring.md](docs/governance/standards/adopter-public-documentation-authoring.md) · [BR-068](docs/kanban/fbu/BR-068-docusaurus-monorepo-markdown-links-break-strict-production-build.md) |
+| P-GREENFIELD-SYNC | Edits under `packages/frameworks/**` → `sync_greenfield_install.py` + commit mirror in same change set. For autofix-class PRs, CI may run `.github/workflows/greenfield-autofix-reconcile.yml` to reconcile dual-tree drift automatically; canonical framework logic should still be authored in `packages/frameworks/**` (source) | [FR-110](docs/kanban/fbu/FR-110-lean-adopter-distribution-footprint-and-vendor-bundle.md) |
 
 **Workflow execution SoT:** `.cursorrules` and `.claude/commands/` — load when `workflows` track applies, not at cold start.
 
@@ -88,14 +88,14 @@ If no keyword match, ask **one** clarifying question. Do not grep the whole repo
 - [`docs/journals/`](docs/journals/) unless forensic recovery.
 - Entire [`kboard.md`](docs/kanban/kboard.md) MoSCOW unless kanban-intake track.
 - Routing maintainer KB work to Notion MCP when git paths suffice — author in-repo per [ADR-026](docs/architecture/standards-and-adrs/ADR-026-git-internal-maintainer-kb-fr121.md).
-- Publishing maintainer corpora on Docusaurus — allowlist is adopter-public only ([FR-114](docs/kanban/fr-br/FR-114-split-documentation-surfaces-docusaurus-public-notion-maintainer-kb.md)).
+- Publishing maintainer corpora on Docusaurus — allowlist is adopter-public only ([FR-114](docs/kanban/fbu/FR-114-split-documentation-surfaces-docusaurus-public-notion-maintainer-kb.md)).
 - IDE plan folders outside repo (`~/.cursor/plans/`).
 
 ---
 
 ## IPW / implementation gate (summary)
 
-Planning-only (FR, BR, UXR, task, spec, plan): produce artifacts and **stop**. Implementation requires: (1) task `E:S:T`, (2) linked IPP or ICW under `docs/implementation-cycles/`, (3) explicit authorization (`IDW E:S:T`, `implement`, or post-impl `RW E:S:T`). **IPW:** `/ipw E:S:T` in plan mode — [`.claude/commands/ipw.md`](.claude/commands/ipw.md). **IDW:** `/idw E:S:T [--rw]` in implementation mode — [`.claude/commands/idw.md`](.claude/commands/idw.md). **MWF:** `/mwf E:S:T delivery [--push] [--art]` orchestrates IPW → IDW `--rw` — [`.claude/commands/mwf.md`](.claude/commands/mwf.md) ([FR-124](docs/kanban/fr-br/FR-124-meta-workflow-orchestration-composite-workflow-chains.md)).
+Planning-only (FR, BR, UXR, task, spec, plan): produce artifacts and **stop**. Implementation requires: (1) task `E:S:T`, (2) linked IPP or ICW under `docs/implementation-cycles/`, (3) explicit authorization (`IDW E:S:T`, `implement`, or post-impl `RW E:S:T`). **IPW:** `/ipw E:S:T` in plan mode — [`.claude/commands/ipw.md`](.claude/commands/ipw.md). **IDW:** `/idw E:S:T [--rw]` in implementation mode — [`.claude/commands/idw.md`](.claude/commands/idw.md). **MWF:** `/mwf E:S:T delivery [--push] [--art]` orchestrates IPW → IDW `--rw` — [`.claude/commands/mwf.md`](.claude/commands/mwf.md) ([FR-124](docs/kanban/fbu/FR-124-meta-workflow-orchestration-composite-workflow-chains.md)).
 
 **Cheatsheet:** [`docs/guides/workflow-initiation-cheatsheet.md`](docs/guides/workflow-initiation-cheatsheet.md)
 

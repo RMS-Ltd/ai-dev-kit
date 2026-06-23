@@ -6,7 +6,7 @@ housekeeping_policy: keep
 
 # Legacy kanban migration to v4
 
-**Use with:** KMA (Kanban Migration Agent) · [KANBAN_MIGRATION_DEPTH_AND_RATIONALIZATION.md](KANBAN_MIGRATION_DEPTH_AND_RATIONALIZATION.md) (L1 default) · [ADK_KANBAN_MIGRATION_FOR_ADOPTER_AGENTS.md](ADK_KANBAN_MIGRATION_FOR_ADOPTER_AGENTS.md) · [FR-127](../../../docs/kanban/fr-br/FR-127-agentic-kanban-migration-agent-replace-tool-pipeline.md) · [Issue #51](https://github.com/RMS-Ltd/ai-dev-kit/issues/51)
+**Use with:** KMA (Kanban Migration Agent) · [KANBAN_MIGRATION_DEPTH_AND_RATIONALIZATION.md](KANBAN_MIGRATION_DEPTH_AND_RATIONALIZATION.md) (L1 default) · [ADK_KANBAN_MIGRATION_FOR_ADOPTER_AGENTS.md](ADK_KANBAN_MIGRATION_FOR_ADOPTER_AGENTS.md) · [FR-127](../../../docs/kanban/fbu/FR-127-agentic-kanban-migration-agent-replace-tool-pipeline.md) · [Issue #51](https://github.com/RMS-Ltd/ai-dev-kit/issues/51)
 
 **Mode:** Agentic intelligence required — read → reason → propose → sign-off → synthesise. Scripts are advisory helpers only.
 

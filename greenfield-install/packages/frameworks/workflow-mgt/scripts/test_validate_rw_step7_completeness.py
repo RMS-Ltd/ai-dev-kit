@@ -63,7 +63,7 @@ def _write_synthetic_release_scope(repo: Path) -> dict:
     fbuboard = repo / "docs/kanban/kboard.md"
     fbuboard.write_text("# fbuboard\nrow A\n")
 
-    fbu_dir = repo / "docs/kanban/fr-br"
+    fbu_dir = repo / "docs/kanban/fbu"
     fbu_dir.mkdir(parents=True, exist_ok=True)
     fr_doc = fbu_dir / "FR-999-test.md"
     fr_doc.write_text("# FR-999\nbody\n")

@@ -615,7 +615,9 @@ LEGACY_FRESH_KANBAN_EPIC_PATTERN = _kp.LEGACY_EPIC_DOC_PATTERN
 LEGACY_FRESH_KANBAN_STORY_PATTERN = _kp.LEGACY_STORY_DOC_PATTERN
 LEGACY_KANBAN_EPIC_PATTERN = _kp.LEGACY_EPIC_FLAT_PATTERN
 LEGACY_KANBAN_STORY_PATTERN = _kp.LEGACY_STORY_NESTED_PATTERN
-DEFAULT_FR_BR_SUBDIR = "fr-br"
+DEFAULT_FBU_SUBDIR = _kp.DEFAULT_FBU_SUBDIR
+LEGACY_FR_BR_SUBDIR = _kp.LEGACY_FR_BR_SUBDIR
+DEFAULT_FR_BR_SUBDIR = LEGACY_FR_BR_SUBDIR  # deprecated alias
 
 
 def preview_pattern_matches(
@@ -812,16 +814,19 @@ def detect_kanban_board_default(project_root: Path, kanban_root: str) -> str:
     return "kboard.md"
 
 
-def detect_fr_br_root(project_root: Path, kanban_root: str) -> Optional[str]:
+def detect_fbu_root(project_root: Path, kanban_root: str) -> Optional[str]:
     """
-    Project-root-relative path to FR/BR directory when present under kanban root.
+    Project-root-relative path to FBU intake directory when present under kanban root.
 
-    Returns None when fr-br/ does not exist yet (greenfield before intake).
+    Write-default: ``fbu/``. Read-tolerance: legacy ``fr-br/``.
+    Returns None when neither exists (greenfield before intake).
     """
-    fr_br_dir = (project_root / kanban_root / DEFAULT_FR_BR_SUBDIR).resolve()
-    if not fr_br_dir.is_dir():
-        return None
-    return str(Path(kanban_root) / DEFAULT_FR_BR_SUBDIR).replace("\\", "/")
+    return _kp.resolve_fbu_root_config_relative(project_root, kanban_root)
+
+
+def detect_fr_br_root(project_root: Path, kanban_root: str) -> Optional[str]:
+    """Deprecated alias for ``detect_fbu_root`` (UXR-032 transition)."""
+    return detect_fbu_root(project_root, kanban_root)
 
 
 def detect_kanban_supplementary_defaults(
@@ -829,9 +834,9 @@ def detect_kanban_supplementary_defaults(
     kanban_root: str,
 ) -> Tuple[str, Optional[str]]:
     """
-    Task doc pattern and fr_br_root for mode C rw-config generation (BR-084).
+    Task doc pattern and fbu_root for mode C rw-config generation (BR-084).
 
-    Returns (task_doc_pattern, fr_br_root_or_none).
+    Returns (task_doc_pattern, fbu_root_or_none).
     """
     task_candidates = [(pattern, True) for pattern in _kp.FRESH_TASK_PATTERNS]
 
@@ -847,7 +852,7 @@ def detect_kanban_supplementary_defaults(
             return BOOK_KANBAN_TASK_PATTERN
         return FRESH_KANBAN_TASK_PATTERN
 
-    return _best_task(), detect_fr_br_root(project_root, kanban_root)
+    return _best_task(), detect_fbu_root(project_root, kanban_root)
 
 
 def detect_project_name(project_root: Path) -> str:
@@ -1043,14 +1048,14 @@ def collect_config_non_interactive(
         config["use_kanban"] = True
         config["kanban_root"] = kanban_root
         epic_default, story_default, _ = detect_kanban_doc_patterns(project_root, kanban_root)
-        task_default, fr_br_default = detect_kanban_supplementary_defaults(
+        task_default, fbu_default = detect_kanban_supplementary_defaults(
             project_root, kanban_root
         )
         config["epic_doc_pattern"] = epic_default
         config["story_doc_pattern"] = story_default
         config["task_doc_pattern"] = task_default
-        if fr_br_default:
-            config["fr_br_root"] = fr_br_default
+        if fbu_default:
+            config["fbu_root"] = fbu_default
         config["kanban_board"] = detect_kanban_board_default(project_root, kanban_root)
     else:
         config["use_kanban"] = False
@@ -1181,7 +1186,7 @@ def collect_config_interactive(
         epic_default, story_default, fresh_layout = detect_kanban_doc_patterns(
             project_root, kanban_root
         )
-        task_default, fr_br_default = detect_kanban_supplementary_defaults(
+        task_default, fbu_default = detect_kanban_supplementary_defaults(
             project_root, kanban_root
         )
         if fresh_layout:
@@ -1232,12 +1237,12 @@ def collect_config_interactive(
                     {"pattern": task_default},
                 )
             )
-        if fr_br_default:
+        if fbu_default:
             print(
                 _msg(
                     project_root,
                     "installer.wizard.fr_br_detected",
-                    {"path": fr_br_default},
+                    {"path": fbu_default},
                 )
             )
 
@@ -1274,8 +1279,8 @@ def collect_config_interactive(
         )
 
         config['task_doc_pattern'] = task_default
-        if fr_br_default:
-            config['fr_br_root'] = fr_br_default
+        if fbu_default:
+            config['fbu_root'] = fbu_default
 
         config['kanban_board'] = prompt_question(
             _msg(project_root, "installer.wizard.kanban_board"),
@@ -1332,8 +1337,9 @@ def generate_rw_config_yaml(config: Dict) -> str:
         lines.append(f"kanban_board: {config['kanban_board']}")
         if config.get("task_doc_pattern"):
             lines.append(f"task_doc_pattern: {config['task_doc_pattern']}")
-        if config.get("fr_br_root"):
-            lines.append(f"fr_br_root: {config['fr_br_root']}")
+        fbu_rel = config.get("fbu_root") or config.get("fbu_root")
+        if fbu_rel:
+            lines.append(f"fbu_root: {fbu_rel}")
         lines.append("")
     else:
         lines.append("use_kanban: false\n")

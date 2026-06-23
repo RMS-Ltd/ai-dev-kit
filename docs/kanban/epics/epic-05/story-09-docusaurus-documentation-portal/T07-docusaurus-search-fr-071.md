@@ -16,7 +16,7 @@ housekeeping_policy: keep
 **Last updated:** 2026-03-30 — **v0.5.9.7+1** (RW E05:S09:T07 — FR-071)  
 **Code:** E05S09T07
 
-**Feature Request:** [FR-071 – Site search](../../../fr-br/FR-071-docusaurus-site-search.md)
+**Feature Request:** [FR-071 – Site search](../../../fbu/FR-071-docusaurus-site-search.md)
 
 ---
 
@@ -28,7 +28,7 @@ Implement **FR-071**: add **Algolia DocSearch** (or self-serve) **or** **local/o
 
 ## Input
 
-- [FR-071](../../../fr-br/FR-071-docusaurus-site-search.md)
+- [FR-071](../../../fbu/FR-071-docusaurus-site-search.md)
 - **E05:S09:T06** live URL
 
 ---

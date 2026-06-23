@@ -126,7 +126,7 @@ For us, "Docusaurus working" meant all of the following at once:
 - Monorepo links to `packages/`, `.cursorrules`, scripts, and repo-root files use Strategy A or in-corpus stubs
 - Lockfile, `package.json`, and Docusaurus feature flags stay aligned
 
-That work shipped across [BR-090](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/kanban/fr-br/BR-090-docusaurus-faster-missing-dependabot-310-lockfile-drift.md) (dependency alignment) and a full corpus link remediation wave (**v0.5.9.13+2** through **+4**).
+That work shipped across [BR-090](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/kanban/fbu/BR-090-docusaurus-faster-missing-dependabot-310-lockfile-drift.md) (dependency alignment) and a full corpus link remediation wave (**v0.5.9.13+2** through **+4**).
 
 ## Further reading
 

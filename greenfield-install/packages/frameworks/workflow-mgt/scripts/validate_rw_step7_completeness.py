@@ -478,7 +478,7 @@ def _surface_for_explicit_path(path: Path) -> str:
         return "kboard"
     if "fbuboard" in text:
         return "fbuboard"
-    if "/fr-br/" in text or re.search(r"/(fr|br|uxr)-\d+", text):
+    if "/fbu/" in text or re.search(r"/(fr|br|uxr)-\d+", text):
         return "fbu_doc"
     if "/epics/" in text and "epic-" in text and "story-" not in text:
         return "epic_doc"

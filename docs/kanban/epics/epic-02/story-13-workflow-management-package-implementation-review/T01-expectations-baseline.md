@@ -512,7 +512,7 @@ Define the implementation expectations baseline for the Workflow Management fram
 - `story_doc_pattern` - Story document pattern (if Kanban enabled)
 - `task_doc_pattern` - Task document pattern (if Kanban enabled)
 - `kanban_board` - Kanban board file (if Kanban enabled)
-- `fr_br_root` - FR/BR root directory (if Kanban enabled)
+- `fbu_root` - FR/BR root directory (if Kanban enabled)
 
 ---
 

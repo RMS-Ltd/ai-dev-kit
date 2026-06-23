@@ -51,7 +51,7 @@ Define and implement canonical status-transition ownership so IPW-built tasks do
 
 ## Input
 
-- [FR-077](../../../fr-br/FR-077-ipw-built-task-status-transition-and-kboard-sync.md)
+- [FR-077](../../../fbu/FR-077-ipw-built-task-status-transition-and-kboard-sync.md)
 - `packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/implementation-planning-workflow-agent-execution.md`
 - `packages/frameworks/workflow-mgt/docs/documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md`
 - `docs/kanban/kboard.md`
@@ -86,7 +86,7 @@ Define and implement canonical status-transition ownership so IPW-built tasks do
 
 ## Links
 
-- [FR-077](../../../fr-br/FR-077-ipw-built-task-status-transition-and-kboard-sync.md)
+- [FR-077](../../../fbu/FR-077-ipw-built-task-status-transition-and-kboard-sync.md)
 - [Story E2:S01](../story-01-rw-agent-execution-and-docs.md)
 - ICW trio for E02:S01:T17 — not yet filed under `docs/implementation-cycles/` (use IPW/IPP when created)
 

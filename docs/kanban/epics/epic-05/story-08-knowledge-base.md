@@ -21,7 +21,7 @@ housekeeping_policy: keep
 ---
 
 ## Task Checklist
-- [x] **E05:S08:T01 – Investigate persistent knowledge base concept and ramifications** - ✅ SUPERSEDED by [FR-114](../../fr-br/FR-114-split-documentation-surfaces-docusaurus-public-notion-maintainer-kb.md) (decision record; delivery via T03–T04)
+- [x] **E05:S08:T01 – Investigate persistent knowledge base concept and ramifications** - ✅ SUPERSEDED by [FR-114](../../fbu/FR-114-split-documentation-surfaces-docusaurus-public-notion-maintainer-kb.md) (decision record; delivery via T03–T04)
   - Task: [`T01-investigate-persistent-knowledge-base-concept-and-ramificati`](story-08-knowledge-base/T01-investigate-persistent-knowledge-base-concept-and-ramificati.md)
 
 
@@ -29,28 +29,28 @@ housekeeping_policy: keep
   - Task: [`T02-notion-hub-and-kb-index`](story-08-knowledge-base/T02-notion-hub-and-kb-index.md)
 
 
-- [x] **E05:S08:T03 – Big-bang Notion migration of maintainer KB ([FR-114](../../fr-br/FR-114-split-documentation-surfaces-docusaurus-public-notion-maintainer-kb.md))** - ✅ COMPLETE (**v0.5.8.3+3**) — [—IPP—](../../../implementation-cycles/IPP-E05S08T03-big-bang-notion-migration-maintainer-kb-fr114.md)
+- [x] **E05:S08:T03 – Big-bang Notion migration of maintainer KB ([FR-114](../../fbu/FR-114-split-documentation-surfaces-docusaurus-public-notion-maintainer-kb.md))** - ✅ COMPLETE (**v0.5.8.3+3**) — [—IPP—](../../../implementation-cycles/IPP-E05S08T03-big-bang-notion-migration-maintainer-kb-fr114.md)
   - Task: [`T03-big-bang-notion-migration-maintainer-kb-fr114`](story-08-knowledge-base/T03-big-bang-notion-migration-maintainer-kb-fr114.md)
 
 
-- [x] **E05:S08:T04 – Agent Notion-first authoring and bootstrap routing ([FR-114](../../fr-br/FR-114-split-documentation-surfaces-docusaurus-public-notion-maintainer-kb.md))** - ✅ COMPLETE (**v0.5.8.4+2**) — [—IPP—](../../../implementation-cycles/IPP-E05S08T04-agent-notion-first-authoring-and-bootstrap-routing-fr114.md)
+- [x] **E05:S08:T04 – Agent Notion-first authoring and bootstrap routing ([FR-114](../../fbu/FR-114-split-documentation-surfaces-docusaurus-public-notion-maintainer-kb.md))** - ✅ COMPLETE (**v0.5.8.4+2**) — [—IPP—](../../../implementation-cycles/IPP-E05S08T04-agent-notion-first-authoring-and-bootstrap-routing-fr114.md)
   - Task: [`T04-agent-notion-first-authoring-and-bootstrap-routing-fr114`](story-08-knowledge-base/T04-agent-notion-first-authoring-and-bootstrap-routing-fr114.md)
 
 
-- [x] **E05:S08:T05 – Reverse Notion migration — git-internal maintainer KB ([FR-121](../../fr-br/FR-121-git-internal-maintainer-kb-oss-documentation-surfaces.md))** - ✅ COMPLETE (**v0.5.8.5+2**) — [—IPP—](../../implementation-cycles/IPP-E05S08T05-reverse-notion-migration-git-internal-maintainer-kb-fr121.md)
+- [x] **E05:S08:T05 – Reverse Notion migration — git-internal maintainer KB ([FR-121](../../fbu/FR-121-git-internal-maintainer-kb-oss-documentation-surfaces.md))** - ✅ COMPLETE (**v0.5.8.5+2**) — [—IPP—](../../implementation-cycles/IPP-E05S08T05-reverse-notion-migration-git-internal-maintainer-kb-fr121.md)
   - Task: [`T05-reverse-notion-migration-git-internal-maintainer-kb-fr121`](story-08-knowledge-base/T05-reverse-notion-migration-git-internal-maintainer-kb-fr121.md)
 
 
-- [x] **E05:S08:T06 – ADR-026 + git-maintainer authoring bootstrap ([FR-121](../../fr-br/FR-121-git-internal-maintainer-kb-oss-documentation-surfaces.md))** - ✅ COMPLETE (**v0.5.8.6+1**) — [—IPP—](../../implementation-cycles/IPP-E05S08T06-adr-026-git-maintainer-authoring-bootstrap-fr121.md)
+- [x] **E05:S08:T06 – ADR-026 + git-maintainer authoring bootstrap ([FR-121](../../fbu/FR-121-git-internal-maintainer-kb-oss-documentation-surfaces.md))** - ✅ COMPLETE (**v0.5.8.6+1**) — [—IPP—](../../implementation-cycles/IPP-E05S08T06-adr-026-git-maintainer-authoring-bootstrap-fr121.md)
   - Task: [`T06-adr-026-git-maintainer-authoring-bootstrap-fr121`](story-08-knowledge-base/T06-adr-026-git-maintainer-authoring-bootstrap-fr121.md)
 
 
-- [x] **E05:S08:T07 – Optional Obsidian editor profiles — greenfield install ([FR-121](../../fr-br/FR-121-git-internal-maintainer-kb-oss-documentation-surfaces.md))** - ✅ COMPLETE (**v0.5.8.7+1**) — [—IPP—](../../implementation-cycles/IPP-E05S08T07-optional-obsidian-editor-profiles-greenfield-install-fr121.md)
+- [x] **E05:S08:T07 – Optional Obsidian editor profiles — greenfield install ([FR-121](../../fbu/FR-121-git-internal-maintainer-kb-oss-documentation-surfaces.md))** - ✅ COMPLETE (**v0.5.8.7+1**) — [—IPP—](../../implementation-cycles/IPP-E05S08T07-optional-obsidian-editor-profiles-greenfield-install-fr121.md)
   - Task: [`T07-optional-obsidian-editor-profiles-greenfield-install-fr121`](story-08-knowledge-base/T07-optional-obsidian-editor-profiles-greenfield-install-fr121.md)
 
 ## Overview
 
-Story 008 delivered **FR-114** (Notion migration **T03**, Notion-first bootstrap **T04**). **[FR-121](../../fr-br/FR-121-git-internal-maintainer-kb-oss-documentation-surfaces.md)** partially supersedes Notion SoT: git-internal maintainer KB (**T05** kanban init @ **v0.5.8.5+1**), bootstrap rewire (**T06**), optional Obsidian install profiles (**T07**).
+Story 008 delivered **FR-114** (Notion migration **T03**, Notion-first bootstrap **T04**). **[FR-121](../../fbu/FR-121-git-internal-maintainer-kb-oss-documentation-surfaces.md)** partially supersedes Notion SoT: git-internal maintainer KB (**T05** kanban init @ **v0.5.8.5+1**), bootstrap rewire (**T06**), optional Obsidian install profiles (**T07**).
 
 ---
 

@@ -17,8 +17,8 @@ housekeeping_policy: keep
 **Version:** v0.2.3.11+1  
 **Code:** E02S03T11  
 
-**Upstream:** [BR-102 — MWF emits CHAIN PAUSED instead of sub-agent delegation](../../../fr-br/BR-102-mwf-chain-paused-instead-of-subagent-leg-delegation.md)  
-**Related:** [T09 — MWF v1 implementation](T09-ipw-full-delivery-chain-idf-rw-fr123.md) · [FR-124](../../../fr-br/FR-124-meta-workflow-orchestration-composite-workflow-chains.md) · [FR-126](../../../fr-br/FR-126-workflow-encapsulation-integrity-mwf-leverage.md)
+**Upstream:** [BR-102 — MWF emits CHAIN PAUSED instead of sub-agent delegation](../../../fbu/BR-102-mwf-chain-paused-instead-of-subagent-leg-delegation.md)  
+**Related:** [T09 — MWF v1 implementation](T09-ipw-full-delivery-chain-idf-rw-fr123.md) · [FR-124](../../../fbu/FR-124-meta-workflow-orchestration-composite-workflow-chains.md) · [FR-126](../../../fbu/FR-126-workflow-encapsulation-integrity-mwf-leverage.md)
 
 ---
 
@@ -30,7 +30,7 @@ Fix MWF orchestration so the **parent orchestrator delegates each recipe leg to 
 
 ## Input
 
-- [BR-102](../../../fr-br/BR-102-mwf-chain-paused-instead-of-subagent-leg-delegation.md)
+- [BR-102](../../../fbu/BR-102-mwf-chain-paused-instead-of-subagent-leg-delegation.md)
 - [`.claude/commands/mwf.md`](../../../../../.claude/commands/mwf.md) — current Leg 1/2 mode-gate bug
 - [meta-workflow-agent-execution.md](../../../../../packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/meta-workflow-agent-execution.md)
 - [E10:S01 orchestration plan §7](../../../../implementation-cycles/E10S01-orchestration-plan.md) — prior sub-agent IPW pattern
@@ -51,7 +51,7 @@ Fix MWF orchestration so the **parent orchestrator delegates each recipe leg to 
 
 ## Associated Bug Reports
 
-- [BR-102 — MWF sub-agent leg delegation](../../../fr-br/BR-102-mwf-chain-paused-instead-of-subagent-leg-delegation.md) (primary)
+- [BR-102 — MWF sub-agent leg delegation](../../../fbu/BR-102-mwf-chain-paused-instead-of-subagent-leg-delegation.md) (primary)
 
 ---
 
@@ -92,5 +92,5 @@ Fix MWF orchestration so the **parent orchestrator delegates each recipe leg to 
 
 ## References
 
-- [BR-102](../../../fr-br/BR-102-mwf-chain-paused-instead-of-subagent-leg-delegation.md)
-- [FR-124](../../../fr-br/FR-124-meta-workflow-orchestration-composite-workflow-chains.md)
+- [BR-102](../../../fbu/BR-102-mwf-chain-paused-instead-of-subagent-leg-delegation.md)
+- [FR-124](../../../fbu/FR-124-meta-workflow-orchestration-composite-workflow-chains.md)

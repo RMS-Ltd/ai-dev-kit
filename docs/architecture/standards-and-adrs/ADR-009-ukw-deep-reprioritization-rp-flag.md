@@ -12,7 +12,7 @@ housekeeping_policy: keep
 **Date:** 2026-05-30  
 **Deciders:** User (Ruari Mears)  
 **Implementing task:** [E02:S16:T06](../../kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T06-ukw-optional-reprioritization-rp-flag-fr085.md)  
-**Origin FR:** [FR-085](../../kanban/fr-br/FR-085-ukw-optional-reprioritization-rp-flag.md)  
+**Origin FR:** [FR-085](../../kanban/fbu/FR-085-ukw-optional-reprioritization-rp-flag.md)  
 **Planning package:** [IPP-E2S16T6](../../implementation-cycles/IPP-E02S16T06-ukw-rp-flag-fr085.md)
 
 ---
@@ -21,7 +21,7 @@ housekeeping_policy: keep
 
 UKW supports MoSCOW maintenance via comprehensive runs, `-p` (update priorities), and `-a` (assign to targets). None of these provide an explicit **deep reprioritization** mode that systematically reorders `kboard.md` from evidence across intent, dependencies, blockers, and delivery impact, with an audit trail.
 
-[FR-038](../../kanban/fr-br/FR-038-rw-step-7-scoped-kanban-sync-ukw-mode.md) reserves **narrow** MoSCOW for RW Step 7 (`rw_step_7`). Whole-board priority realignment belongs in **standalone** UKW, not release-scope sync.
+[FR-038](../../kanban/fbu/FR-038-rw-step-7-scoped-kanban-sync-ukw-mode.md) reserves **narrow** MoSCOW for RW Step 7 (`rw_step_7`). Whole-board priority realignment belongs in **standalone** UKW, not release-scope sync.
 
 ---
 
@@ -63,7 +63,7 @@ UKW supports MoSCOW maintenance via comprehensive runs, `-p` (update priorities)
 
 ## References
 
-- [FR-085](../../kanban/fr-br/FR-085-ukw-optional-reprioritization-rp-flag.md)
-- [FR-038](../../kanban/fr-br/FR-038-rw-step-7-scoped-kanban-sync-ukw-mode.md)
-- [FR-097](../../kanban/fr-br/FR-097-board-stamp-authority-and-forensic-timestamp-recovery.md)
+- [FR-085](../../kanban/fbu/FR-085-ukw-optional-reprioritization-rp-flag.md)
+- [FR-038](../../kanban/fbu/FR-038-rw-step-7-scoped-kanban-sync-ukw-mode.md)
+- [FR-097](../../kanban/fbu/FR-097-board-stamp-authority-and-forensic-timestamp-recovery.md)
 - [Workflow initiation cheatsheet](../../guides/workflow-initiation-cheatsheet.md)

@@ -18,17 +18,17 @@ housekeeping_policy: keep
 **Code:** E06S09T29  
 
 **Parent program:** [E06:S09:T26](T26-starborn-legacy-adk-install-program.md)  
-**Upstream:** [BR-106](../../../fr-br/BR-106-rw-install-non-interactive-changelog-prompt-eof.md) · triage **F19**
+**Upstream:** [BR-106](../../../fbu/BR-106-rw-install-non-interactive-changelog-prompt-eof.md) · triage **F19**
 
 ---
 
 ## Input
 
 - **IPP:** [`IPP-E06S09T29-br106-non-interactive-changelog-scaffold.md`](../../../../implementation-cycles/IPP-E06S09T29-br106-non-interactive-changelog-scaffold.md)
-- [BR-106](../../../fr-br/BR-106-rw-install-non-interactive-changelog-prompt-eof.md)
+- [BR-106](../../../fbu/BR-106-rw-install-non-interactive-changelog-prompt-eof.md)
 - SBL attempt 05 FB: `adk-install-into-sbl/attempt-05/feedback-package/feedback-payload.json`
 - RW bootstrap transcript: `…/attempt-05/transcripts/20260610T183451Z-phase3a-rw-bootstrap.txt`
-- [BR-088](../../../fr-br/BR-088-rw-install-mode-c-missing-version-file-scaffold.md) / [T19](T19-rw-install-version-file-scaffold-br088.md)
+- [BR-088](../../../fbu/BR-088-rw-install-mode-c-missing-version-file-scaffold.md) / [T19](T19-rw-install-version-file-scaffold-br088.md)
 
 ---
 

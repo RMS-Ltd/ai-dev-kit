@@ -17,7 +17,7 @@ housekeeping_policy: keep
 **Last updated:** 2026-04-21 (v0.2.15.3+2 — governance alignment RW; FR-089 IMPLEMENTED)  
 **Code:** E02S15T03
 
-**Upstream:** [FR-089 - IPW board-row traceability-churn hardening](../../../fr-br/FR-089-ipw-board-row-footer-duplication-validation-hardening.md)
+**Upstream:** [FR-089 - IPW board-row traceability-churn hardening](../../../fbu/FR-089-ipw-board-row-footer-duplication-validation-hardening.md)
 **IPP:** [IPP-E2S15T3](../../../../implementation-cycles/IPP-E2S15T03-duplicate-footer-validation-hardening-and-timestamp-divergence-guardrails.md)
 
 ---
@@ -65,8 +65,8 @@ IPW governance currently does not explicitly validate row-tail uniqueness, allow
 
 ## References
 
-- [FR-089](../../../fr-br/FR-089-ipw-board-row-footer-duplication-validation-hardening.md)
+- [FR-089](../../../fbu/FR-089-ipw-board-row-footer-duplication-validation-hardening.md)
 - [Story 015](../story-15-ipw-governance-and-publication-contract.md)
 - [T02](T02-ipp-post-run-governance-reconciliation-ownership-fr084.md)
-- [BR-069](../../../fr-br/BR-069-kboard-fbuboard-earliest-last-modified-timestamps-overwritten.md)
+- [BR-069](../../../fbu/BR-069-kboard-fbuboard-earliest-last-modified-timestamps-overwritten.md)
 - [IPP-E2S15T3](../../../../implementation-cycles/IPP-E2S15T03-duplicate-footer-validation-hardening-and-timestamp-divergence-guardrails.md)

@@ -16,7 +16,7 @@ housekeeping_policy: keep
 **Last updated:** 2026-03-30 (v0.5.9.4+1 — FR-068 released)  
 **Code:** E05S09T04
 
-**Feature Request:** [FR-068 – Sidebar and landing](../../../fr-br/FR-068-docusaurus-navigation-sidebar-and-landing.md)
+**Feature Request:** [FR-068 – Sidebar and landing](../../../fbu/FR-068-docusaurus-navigation-sidebar-and-landing.md)
 
 ---
 
@@ -28,7 +28,7 @@ Implement **FR-068**: sidebar information architecture aligned to **canonical KB
 
 ## Input
 
-- [FR-068](../../../fr-br/FR-068-docusaurus-navigation-sidebar-and-landing.md)
+- [FR-068](../../../fbu/FR-068-docusaurus-navigation-sidebar-and-landing.md)
 - **E05:S09:T03** recommended complete
 
 ---

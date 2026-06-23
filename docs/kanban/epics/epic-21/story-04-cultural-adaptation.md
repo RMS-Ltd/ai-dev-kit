@@ -81,7 +81,7 @@ Ensure framework content and features are culturally appropriate for different r
 
 ## References
 
-- `docs/kanban/fr-br/FR-006-localization-language-selection-uk-us-english.md` - Feature request
+- `docs/kanban/fbu/FR-006-localization-language-selection-uk-us-english.md` - Feature request
 - `packages/frameworks/kanban/templates/COMPREHENSIVE_CANONICAL_EST_STRUCTURE.md` - Epic 21 canonical definition
 
 ---

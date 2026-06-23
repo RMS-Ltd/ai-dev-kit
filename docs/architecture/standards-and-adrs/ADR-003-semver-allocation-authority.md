@@ -16,7 +16,7 @@ housekeeping_policy: keep
 
 ## Context
 
-[ADR-002](ADR-002-task-touch-derived-mapping.md) defines task-touch **semantics** (global monotonic PATCH). E02:S17 moved registry **storage** to SQLite (`.adk/release-state.db`), but PATCH generation still ran in Python (`semver_converter.py`) with a full-dict round-trip — preserving collision classes ([BR-061](../kanban/fr-br/BR-061-semver-task-touch-counter-increments-too-often.md), [BR-073](../kanban/fr-br/BR-073-semver-task-touch-collision-retrospective-fix.md)).
+[ADR-002](ADR-002-task-touch-derived-mapping.md) defines task-touch **semantics** (global monotonic PATCH). E02:S17 moved registry **storage** to SQLite (`.adk/release-state.db`), but PATCH generation still ran in Python (`semver_converter.py`) with a full-dict round-trip — preserving collision classes ([BR-061](../kanban/fbu/BR-061-semver-task-touch-counter-increments-too-often.md), [BR-073](../kanban/fbu/BR-073-semver-task-touch-collision-retrospective-fix.md)).
 
 ---
 
@@ -74,6 +74,6 @@ Unchanged from ADR-002: MAJOR=RC, MINOR=epic_count, PATCH=global sequence, BUILD
 
 ## References
 
-- [FR-120](../../kanban/fr-br/FR-120-semver-allocation-authority-transactional-mapping-black-box.md)
+- [FR-120](../../kanban/fbu/FR-120-semver-allocation-authority-transactional-mapping-black-box.md)
 - [IPP-E03S02T14](../../implementation-cycles/IPP-E03S02T14-semver-allocation-authority.md)
 - [release-state-sqlite-mode.md](../../../packages/frameworks/workflow-mgt/docs/release-state-sqlite-mode.md)

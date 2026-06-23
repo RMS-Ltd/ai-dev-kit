@@ -26,7 +26,7 @@ Enforce forensic task attribution consistency for `RW -k` so requested task ids 
 
 ## Input
 
-- [BR-063](../../../fr-br/BR-063-rw-k-task-attribution-drift-between-requested-task-and-version-anchor.md)
+- [BR-063](../../../fbu/BR-063-rw-k-task-attribution-drift-between-requested-task-and-version-anchor.md)
 - `packages/frameworks/workflow-mgt/scripts/validation/validate_rw_task_intent.py`
 - `packages/frameworks/workflow-mgt/scripts/validation/validate_version_bump.py`
 - RW execution docs and runbook semantics for `RW -k`
@@ -55,5 +55,5 @@ Enforce forensic task attribution consistency for `RW -k` so requested task ids 
 
 ## Links
 
-- [BR-063](../../../fr-br/BR-063-rw-k-task-attribution-drift-between-requested-task-and-version-anchor.md)
+- [BR-063](../../../fbu/BR-063-rw-k-task-attribution-drift-between-requested-task-and-version-anchor.md)
 - [Story E2:S01](../story-01-rw-agent-execution-and-docs.md)

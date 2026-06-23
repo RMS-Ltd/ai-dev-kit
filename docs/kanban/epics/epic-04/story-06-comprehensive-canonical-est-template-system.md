@@ -102,9 +102,9 @@ This enables projects to adopt ai-dev-kit with zero cognitive load for E/S/T str
 - `packages/frameworks/kanban/templates/CANONICAL_EPICS.md` - Existing canonical epics documentation
 - `packages/frameworks/kanban/templates/EPIC_TEMPLATE.md` - Epic template structure
 - `packages/frameworks/kanban/templates/STORY_TEMPLATE.md` - Story template structure
-- `docs/kanban/fr-br/BR-004-kanban-installation-includes-project-specific-epics.md` - Related bug report
-- `docs/kanban/fr-br/BR-009-installer-discoverability-and-documentation.md` - Related bug report (GitHub issue #14)
-- `docs/kanban/fr-br/FR-005-systematic-canonical-epics-stories-tasks-templates.md` - Related feature request
+- `docs/kanban/fbu/BR-004-kanban-installation-includes-project-specific-epics.md` - Related bug report
+- `docs/kanban/fbu/BR-009-installer-discoverability-and-documentation.md` - Related bug report (GitHub issue #14)
+- `docs/kanban/fbu/FR-005-systematic-canonical-epics-stories-tasks-templates.md` - Related feature request
 
 ---
 

@@ -20,7 +20,7 @@ housekeeping_policy: keep
 
 **Version:** v0.6.9.6+3
 
-**Upstream:** [FR-098 - Optional ECC harness layer integration](../../../fr-br/FR-098-ecc-optional-harness-layer-integration.md)  
+**Upstream:** [FR-098 - Optional ECC harness layer integration](../../../fbu/FR-098-ecc-optional-harness-layer-integration.md)  
 **Prerequisites:**
 
 - [E06:S09:T04 — Phase 0 evaluation](T04-ecc-harness-layer-phase0-compatibility-fr098.md) (**GO**)
@@ -139,7 +139,7 @@ Ship via **`RW E06:S09:T06`** when ready to release implementation (`--art`).
 ## References
 
 - [IPP-E6S9T6 (planning package)](../../../../implementation-cycles/IPP-E6S09T06-ecc-harness-phases-2-5-fr098.md)
-- [FR-098](../../../fr-br/FR-098-ecc-optional-harness-layer-integration.md)
+- [FR-098](../../../fbu/FR-098-ecc-optional-harness-layer-integration.md)
 - [T04 Phase 0](T04-ecc-harness-layer-phase0-compatibility-fr098.md)
 - [T05 Phase 1](T05-adk-workflow-skill-pack-ecc-fr098.md)
 - [ADR-003 greenfield vs brownfield](../../../../architecture/standards-and-adrs/ADR-003-greenfield-vs-brownfield-adoption.md)

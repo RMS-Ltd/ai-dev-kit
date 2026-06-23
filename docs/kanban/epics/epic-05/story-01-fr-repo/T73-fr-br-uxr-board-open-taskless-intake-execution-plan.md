@@ -12,7 +12,7 @@ housekeeping_policy: keep
 **Status:** COMPLETE  
 **Priority:** MEDIUM  
 **Version Anchor:** v0.5.1.73+0 (doc-init) · **Phase B/C closed** v0.5.1.74+2 *(internal `VERSION_TASK` stays **T74** for monotonicity; see detailed changelog)*  
-**Feature Request:** [FR-073 – FR/BR/UXR board intake execution plan](../../../fr-br/FR-073-fr-br-uxr-board-open-taskless-intake-execution-plan.md)
+**Feature Request:** [FR-073 – FR/BR/UXR board intake execution plan](../../../fbu/FR-073-fr-br-uxr-board-open-taskless-intake-execution-plan.md)
 **Successor governance anchor:** [E04:S19:T06](../../epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T06-fbu-meta-normalization-and-intake-governance-uxr008-fr086-fr073.md) (meta ownership for cross-FBU naming and FR-073 AC3 closure)
 
 ---
@@ -32,7 +32,7 @@ Documentation-only ownership of the FR/BR/UXR **intake execution plan** on the p
 ## Input
 
 - [`kboard.md`](../../../kboard.md) — MoSCOW **Must / Should** rows and Intake plan block.  
-- [`FR-073`](../../../fr-br/FR-073-fr-br-uxr-board-open-taskless-intake-execution-plan.md) — feature request and acceptance criteria.  
+- [`FR-073`](../../../fbu/FR-073-fr-br-uxr-board-open-taskless-intake-execution-plan.md) — feature request and acceptance criteria.  
 - [`story-00-uxr-repo.md`](../../epic-07/story-00-uxr-repo.md) — **UXR-n → E7:S00:Tnn** repository convention.  
 - [`TASK_TEMPLATE.md` (source)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/kanban/templates/TASK_TEMPLATE.md) — required headings for `validate_version_bump.py`.  
 
@@ -116,4 +116,4 @@ Documentation-only ownership of the FR/BR/UXR **intake execution plan** on the p
 
 - [`kboard.md`](../../../kboard.md)  
 - [`intake-process` skill (source)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/.cursor/skills/intake-process/SKILL.md)  
-- [FR-072](../../../fr-br/FR-072-uniform-repository-abstract-space-kanban-rules.md) (precedent: governance intake on same story)
+- [FR-072](../../../fbu/FR-072-uniform-repository-abstract-space-kanban-rules.md) (precedent: governance intake on same story)

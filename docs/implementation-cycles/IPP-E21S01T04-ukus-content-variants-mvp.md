@@ -9,7 +9,7 @@ housekeeping_policy: keep
 # E21:S01:T04 — Planning: UK/US content variants MVP (IPW)
 
 **Host Task:** [`T04-create-ukus-english-content-variants-documentation-templates.md`](../project-management/kanban/epics/epic-21/story-01-language-selection-at-setup/T04-create-ukus-english-content-variants-documentation-templates.md) **(E21:S01:T04)**  
-**Planning for:** [FR-006 Phase 1](../project-management/kanban/fr-br/FR-006-localization-language-selection-uk-us-english.md) · IPP-T01/T02/T03  
+**Planning for:** [FR-006 Phase 1](../project-management/kanban/fbu/FR-006-localization-language-selection-uk-us-english.md) · IPP-T01/T02/T03  
 **Status:** Complete — released `v0.21.1.4+1` (`RW E21:S01:T04 --art`)  
 **Branch:** `epic/21-internationalisation-localisation`
 

@@ -23,7 +23,7 @@ kanban/
 ├── intake-structure.md            # FR/BR/UXR inventory by type
 ├── intake-completed.md            # Completed FR/BR/UXR ledger
 ├── intake-open-taskless-queue.md  # Open ∧ taskless intake working queue
-├── fr-br/                         # Individual FR/BR/UXR documents
+├── fbu/                         # Individual FR/BR/UXR documents
 └── epics/                         # Epic → Story → Task docs
 ```
 
@@ -38,11 +38,11 @@ kanban/
 | `intake-open-taskless-queue.md` | Open ∧ taskless intake queue |
 | `intake-completed.md` | Terminal FBU ledger |
 | `kanban-completed.md` | Terminal task ledger |
-| `fr-br/*.md` | Per-report SoT |
+| `fbu/*.md` | Per-report SoT |
 
 ## Workflow (summary)
 
-1. File FR/BR/UXR under `fr-br/` and create implementing task same session (KG-R2).
+1. File FR/BR/UXR under `fbu/` and create implementing task same session (KG-R2).
 2. Add MoSCOW row on `kboard.md`; update `intake-structure.md` / queue as needed.
 3. On completion, move to `intake-completed.md` / `kanban-completed.md` and prune active rows.
 

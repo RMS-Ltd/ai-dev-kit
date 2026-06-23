@@ -58,5 +58,5 @@ Load `rw-config.yaml` for `main_changelog`, `changelog_dir`, `changelog_archival
 
 ## References
 
-- [FR-025](docs/kanban/fr-br/FR-025-changelog-management-and-archival-workflow.md)
+- [FR-025](docs/kanban/fbu/FR-025-changelog-management-and-archival-workflow.md)
 - [workflow-encapsulation-contract.md](packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/workflow-encapsulation-contract.md)

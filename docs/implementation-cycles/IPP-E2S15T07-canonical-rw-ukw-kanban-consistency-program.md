@@ -9,7 +9,7 @@ housekeeping_policy: keep
 # E2:S15:T07 - Planning: Spec, Tests, Implementation Plan (IPP) — META
 
 **Host Task:** [`T07-canonical-rw-ukw-kanban-consistency-program-fr092.md`](../kanban/epics/epic-02/story-15-ipw-governance-and-publication-contract/T07-canonical-rw-ukw-kanban-consistency-program-fr092.md) **(E2:S15:T07)**  
-**Planning for:** [FR-092 — Canonical RW/UKW kanban consistency program (meta)](../kanban/fr-br/FR-092-canonical-rw-ukw-kanban-consistency-program.md)  
+**Planning for:** [FR-092 — Canonical RW/UKW kanban consistency program (meta)](../kanban/fbu/FR-092-canonical-rw-ukw-kanban-consistency-program.md)  
 **Status:** Published
 
 **Supersedes (planning):**
@@ -113,7 +113,7 @@ Deliver the release-visible canonical four-surface outcome on every RW: `task` +
 1. For each of D1-D9, write evidence link (changelog version + commit + verification approach) into FR-092 traceability matrix.
 2. Where outcome is verified -> close predecessor cleanly via `fr-br-uxr-completed-update` skill.
 3. Where drift is detected (B1-B4) -> document drift inline and capture as Wave-4 work item.
-4. Close [BR-042](../kanban/fr-br/BR-042-ukw-agent-board-cleanup-failure.md) as duplicate of FR-090.
+4. Close [BR-042](../kanban/fbu/BR-042-ukw-agent-board-cleanup-failure.md) as duplicate of FR-090.
 
 ### Wave 2 — Architectural contract codification (FR-091 absorbed)
 
@@ -386,12 +386,12 @@ All four active boards are **byte-stable** under the canonical row transform pip
 ## 7. References
 
 - [Host task E2:S15:T07](../kanban/epics/epic-02/story-15-ipw-governance-and-publication-contract/T07-canonical-rw-ukw-kanban-consistency-program-fr092.md)
-- [FR-092](../kanban/fr-br/FR-092-canonical-rw-ukw-kanban-consistency-program.md)
-- [FR-091 (superseded)](../kanban/fr-br/FR-091-rw-step-7-self-sufficient-scoped-kanban-reconciliation-without-ukw-dependency.md)
-- [FR-090 (superseded)](../kanban/fr-br/FR-090-ukw-canonical-row-transform-engine-and-board-specific-rendering-contracts.md)
-- [FR-084 (superseded)](../kanban/fr-br/FR-084-ipp-post-run-governance-reconciliation-ownership.md)
-- [BR-069](../kanban/fr-br/BR-069-kboard-fbuboard-earliest-last-modified-timestamps-overwritten.md)
-- [BR-070](../kanban/fr-br/BR-070-rw-k-stage-files-completeness-gap-allows-partial-kanban-commit.md)
-- [UXR-009](../kanban/fr-br/UXR-009-last-modified-stamp-forensic-integrity-and-drift-protection.md)
+- [FR-092](../kanban/fbu/FR-092-canonical-rw-ukw-kanban-consistency-program.md)
+- [FR-091 (superseded)](../kanban/fbu/FR-091-rw-step-7-self-sufficient-scoped-kanban-reconciliation-without-ukw-dependency.md)
+- [FR-090 (superseded)](../kanban/fbu/FR-090-ukw-canonical-row-transform-engine-and-board-specific-rendering-contracts.md)
+- [FR-084 (superseded)](../kanban/fbu/FR-084-ipp-post-run-governance-reconciliation-ownership.md)
+- [BR-069](../kanban/fbu/BR-069-kboard-fbuboard-earliest-last-modified-timestamps-overwritten.md)
+- [BR-070](../kanban/fbu/BR-070-rw-k-stage-files-completeness-gap-allows-partial-kanban-commit.md)
+- [UXR-009](../kanban/fbu/UXR-009-last-modified-stamp-forensic-integrity-and-drift-protection.md)
 - [IPP-E2S15T4](IPP-E2S15T04-br069-row-tail-normalization-and-terminal-timestamp-interaction.md)
 - [IPP-E2S15T5 (superseded planning)](IPP-E2S15T05-ukw-rw-canonical-row-transform-engine-fr090.md)

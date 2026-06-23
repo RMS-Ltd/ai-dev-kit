@@ -162,7 +162,7 @@ This epic addresses the critical gap between current project state (RC=0, develo
 
 ## References
 
-- **FR-032:** [`FR-032-release-candidate-readiness-gap-analysis.md`](../../fr-br/FR-032-release-candidate-readiness-gap-analysis.md) - Feature Request
+- **FR-032:** [`FR-032-release-candidate-readiness-gap-analysis.md`](../../fbu/FR-032-release-candidate-readiness-gap-analysis.md) - Feature Request
 - **Versioning Policy:** `docs/architecture/standards-and-adrs/dev-kit-versioning-policy.md` - RC definition
 - **Kanban Board:** `docs/kanban/kboard.md` - Current task priorities
 - **Epic 1:** `docs/kanban/epics/epic-01/epic-01.md` - AI Dev Kit Core

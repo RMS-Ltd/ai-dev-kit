@@ -34,7 +34,7 @@ ROW_ID_PATTERNS = [
     re.compile(r"\[(E\d+:S\d+:T\d+)\]\("),
     re.compile(r"\[((?:FR|BR|UXR)-\d+)\]\("),
 ]
-FRBR_LINK_RE = re.compile(r"\((fr-br/[^)]+\.md)\)")
+FRBR_LINK_RE = re.compile(r"\((fbu/[^)]+\.md)\)")
 TASK_LINK_RE = re.compile(r"\((epics/[^)]+\.md)\)")
 LAST_UPDATED_RE = re.compile(
     r"\*\*Last\s+[Uu]pdated:\*\*\s*([^\n]+)",

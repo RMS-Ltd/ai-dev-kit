@@ -20,8 +20,8 @@ housekeeping_policy: keep
 
 ---
 
-**Associated UXR:** [UXR-031](../../../fr-br/UXR-031-semver-plusbuild-redundancy-in-task-touch.md)  
-**Related:** [FR-045](../../../fr-br/FR-045-adr-002-task-touch-derived-mapping.md) · [BR-061](../../../fr-br/BR-061-semver-task-touch-counter-increments-too-often.md)
+**Associated UXR:** [UXR-031](../../../fbu/UXR-031-semver-plusbuild-redundancy-in-task-touch.md)  
+**Related:** [FR-045](../../../fbu/FR-045-adr-002-task-touch-derived-mapping.md) · [BR-061](../../../fbu/BR-061-semver-task-touch-counter-increments-too-often.md)
 
 ---
 
@@ -40,7 +40,7 @@ This task does not change internal allocation invariants by itself; it creates t
 
 ## Input
 
-- [UXR-031](../../../fr-br/UXR-031-semver-plusbuild-redundancy-in-task-touch.md)
+- [UXR-031](../../../fbu/UXR-031-semver-plusbuild-redundancy-in-task-touch.md)
 - **IPW plan:** [`IPP-E03S02T15-semver-external-build-metadata-redundancy.md`](../../../../implementation-cycles/IPP-E03S02T15-semver-external-build-metadata-redundancy.md)
 - **Policy decision:** [semver-external-display-policy-decision.md](semver-external-display-policy-decision.md) — **Option A** implemented (core-only external display)
 - **ADR:** [ADR-031](../../../../architecture/standards-and-adrs/ADR-031-external-semver-build-metadata-display-policy.md)

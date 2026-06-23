@@ -9,7 +9,7 @@ housekeeping_policy: keep
 # E05:S09:T14 — Planning: Spec, Tests, Implementation Plan (IPW)
 
 **Host Task:** [`T14-docusaurus-ci-workflow-deduplication-br093.md`](../kanban/epics/epic-05/story-09-docusaurus-documentation-portal/T14-docusaurus-ci-workflow-deduplication-br093.md) **(E05:S09:T14)**  
-**Planning for:** [BR-093](../kanban/fr-br/BR-093-docusaurus-ci-duplicate-build-deploy-job-waste.md)  
+**Planning for:** [BR-093](../kanban/fbu/BR-093-docusaurus-ci-duplicate-build-deploy-job-waste.md)  
 **Status:** COMPLETE (Wave 1 **v0.5.9.14+2**; Wave 2 verification closure — 2026-06-05)
 
 > **IPW revision:** Wave 2 closes BR-093 on structural + Actions evidence without requiring green Docusaurus corpus build (MDX failures are out of scope).
@@ -46,7 +46,7 @@ housekeeping_policy: keep
 
 - **Invariants:** GitHub Pages provider, `peaceiris/actions-gh-pages`, `publish_dir: ./portal/build`, path filters unchanged; FR-069 PR merge gate behavior preserved.
 - **In scope:** Merge deploy into [`docusaurus-build.yml`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/.github/workflows/docusaurus-build.yml); retire duplicate `main` push on [`docusaurus-deploy.yml`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/.github/workflows/docusaurus-deploy.yml); pytest + README + ADR.
-- **Out of scope:** Fixing underlying build breakage ([BR-090](../kanban/fr-br/BR-090-docusaurus-faster-missing-dependabot-310-lockfile-drift.md) / E05:S09:T13); portal MDX / broken markdown links (blocks green build, not BR-093 structural ACs); changing path filters; hosting provider change; Docusaurus version upgrades.
+- **Out of scope:** Fixing underlying build breakage ([BR-090](../kanban/fbu/BR-090-docusaurus-faster-missing-dependabot-310-lockfile-drift.md) / E05:S09:T13); portal MDX / broken markdown links (blocks green build, not BR-093 structural ACs); changing path filters; hosting provider change; Docusaurus version upgrades.
 
 **Soft dependency:** E05:S09:T13 fixes chronic build failures; T14 is structurally independent but post-merge green-run verification is easier after T13.
 
@@ -132,7 +132,7 @@ Criteria: [`ipw-adr-necessity-checklist.md`](../architecture/standards-and-adrs/
 | 4 | Remove duplicate push trigger — delete [`docusaurus-deploy.yml`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/.github/workflows/docusaurus-deploy.yml) | No double-trigger on `main` |
 | 5 | Update [`portal/README.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/portal/README.md) CI + Production hosting sections | RF4 |
 | 6 | Add/update pytest modules (T1–T7) | Green `pytest tests/test_portal_fr069_ci.py tests/test_portal_fr070_deployment.py tests/test_portal_br093_ci_deduplication.py` |
-| 7 | Update [BR-093](../kanban/fr-br/BR-093-docusaurus-ci-duplicate-build-deploy-job-waste.md) status when verified | BR closure prep |
+| 7 | Update [BR-093](../kanban/fbu/BR-093-docusaurus-ci-duplicate-build-deploy-job-waste.md) status when verified | BR closure prep |
 | 8 | Release via **`RW E05:S09:T14`** (version bump, changelog, Step 7 four-surface kanban) | `v0.5.9.14+1` |
 | **N** | **[MANDATORY] Reconcile task `E05:S09:T14` status** to actual implementation state: `COMPLETE` + `✅ COMPLETE (v{version})` if all ACs satisfied; `IN PROGRESS` if ongoing; `BLOCKED` + reason if blocked. Update `Last updated`. | Task doc + kboard row |
 
@@ -175,7 +175,7 @@ Criteria: [`ipw-adr-necessity-checklist.md`](../architecture/standards-and-adrs/
 | D-U3 | `portal/README.md` | CI + Production hosting topology; single workflow; manual dispatch | RF4; Step 5 |
 | D-U4 | `tests/test_portal_fr070_deployment.py` | Cross-job deploy assertions (S3/S7) | T6; Step 6 |
 | D-U5 | Host task T14 | Status transitions; IPP links; completion marker on RW | Steps 1, N |
-| D-U6 | `docs/kanban/fr-br/BR-093-*.md` | Status update on verification | Step 7 |
+| D-U6 | `docs/kanban/fbu/BR-093-*.md` | Status update on verification | Step 7 |
 
 ### 5.2 New documents to create
 
@@ -275,9 +275,9 @@ Record outputs in [docusaurus-ci-dedup-verification-evidence-E05S09T14-wave2.md]
 ## References
 
 - [T14 — Docusaurus CI workflow deduplication (BR-093)](../kanban/epics/epic-05/story-09-docusaurus-documentation-portal/T14-docusaurus-ci-workflow-deduplication-br093.md)
-- [BR-093 — Docusaurus CI duplicate build + deploy job waste](../kanban/fr-br/BR-093-docusaurus-ci-duplicate-build-deploy-job-waste.md)
-- [FR-069 — Docusaurus CI build gate](../kanban/fr-br/FR-069-docusaurus-ci-build-gate.md)
-- [FR-070 — Docusaurus deployment and hosting](../kanban/fr-br/FR-070-docusaurus-deployment-and-hosting.md)
+- [BR-093 — Docusaurus CI duplicate build + deploy job waste](../kanban/fbu/BR-093-docusaurus-ci-duplicate-build-deploy-job-waste.md)
+- [FR-069 — Docusaurus CI build gate](../kanban/fbu/FR-069-docusaurus-ci-build-gate.md)
+- [FR-070 — Docusaurus deployment and hosting](../kanban/fbu/FR-070-docusaurus-deployment-and-hosting.md)
 - [ipw-adr-necessity-checklist.md](../architecture/standards-and-adrs/ipw-adr-necessity-checklist.md) (FR-100)
 - [`.github/workflows/docusaurus-build.yml`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/.github/workflows/docusaurus-build.yml)
 - [Wave 2 evidence](../maintenance/docusaurus-ci-dedup-verification-evidence-E05S09T14-wave2.md)

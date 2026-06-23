@@ -9,7 +9,7 @@ housekeeping_policy: keep
 # E05:S01:T44 — Planning: RW Temporary Execution Log (IPW)
 
 **Host Task:** [`T44-rw-temporary-execution-log-for-recovery-and-forensics.md`](../kanban/epics/epic-05/story-01-fr-repo/T44-rw-temporary-execution-log-for-recovery-and-forensics.md) **(E05:S01:T44)**  
-**Planning for:** [FR-044](../kanban/fr-br/FR-044-rw-temporary-execution-log-for-recovery-and-forensics.md)  
+**Planning for:** [FR-044](../kanban/fbu/FR-044-rw-temporary-execution-log-for-recovery-and-forensics.md)  
 **Status:** Approved
 
 ---
@@ -104,6 +104,6 @@ IPP under `docs/implementation-cycles/`; runtime logs gitignored.
 
 ## References
 
-- [FR-044](../kanban/fr-br/FR-044-rw-temporary-execution-log-for-recovery-and-forensics.md)
+- [FR-044](../kanban/fbu/FR-044-rw-temporary-execution-log-for-recovery-and-forensics.md)
 - [ADR-011](../architecture/standards-and-adrs/ADR-011-workflow-step-tracker-and-agent-run-log.md)
 - [ADR-008](../architecture/standards-and-adrs/ADR-008-workflow-forensic-logging-and-checkpoints.md)

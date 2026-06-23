@@ -18,6 +18,6 @@ housekeeping_policy: keep
 | **3** | E01:S04:T06 | [T06-fr099-phase3-public-ai-dev-kit-rebirth.md](T06-fr099-phase3-public-ai-dev-kit-rebirth.md) — **active** |
 | **4** | E01:S04:T07 | [T07-fr099-phase4-rewire-and-verify.md](T07-fr099-phase4-rewire-and-verify.md) |
 
-**FR:** [FR-099](../../../fr-br/FR-099-spin-off-book-epic-to-private-repository.md)
+**FR:** [FR-099](../../../fbu/FR-099-spin-off-book-epic-to-private-repository.md)
 
 **Historical releases** on umbrella T03: `v0.1.4.3+1` (Phase 2 genesis), `v0.1.4.3+2` (kanban re-anchor) — forensic mapping above.

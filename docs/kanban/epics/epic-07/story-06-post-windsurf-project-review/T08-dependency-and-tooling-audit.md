@@ -65,7 +65,7 @@ None
 - **Run:** `python3 -m pytest tests/` — **92 collected**, **85 passed**, **7 failed** (after **tests/test_validation.py** was rewritten to match current [`cli/validation.py`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/cli/validation.py); prior revision imported non-existent `validate_version` and assumed boolean APIs).
 - **Coverage (terminal):** ~35% total on `cli/` (reported by pytest-cov); backends and several commands lightly covered.
 
-**Failure buckets (detail in [BR-058](../../../fr-br/BR-058-ci-test-workflow-missing-and-pytest-failures.md)):**
+**Failure buckets (detail in [BR-058](../../../fbu/BR-058-ci-test-workflow-missing-and-pytest-failures.md)):**
 
 1. `PackageManagerBackend` tests instantiate an abstract class — use `NpmBackend`/`PipBackend` or mocks.  
 2. Integration test `MockBackend()` missing `name`.  
@@ -106,4 +106,4 @@ None
 
 ## Related
 
-- **BR:** [BR-058](../../../fr-br/BR-058-ci-test-workflow-missing-and-pytest-failures.md)
+- **BR:** [BR-058](../../../fbu/BR-058-ci-test-workflow-missing-and-pytest-failures.md)

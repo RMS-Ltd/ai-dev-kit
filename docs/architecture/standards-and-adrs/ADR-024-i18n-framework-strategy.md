@@ -12,7 +12,7 @@ housekeeping_policy: keep
 **Date:** 2026-06-07  
 **Deciders:** User (Ruari Mears) — via approved IPW plan  
 **Implementing task:** [E21:S02:T01](../../project-management/kanban/epics/epic-21/story-02-internationalisation-infrastructure/T01-choose-i18n-frameworklibrary.md)  
-**Origin FR:** [FR-006 Phase 2](../../project-management/kanban/fr-br/FR-006-localization-language-selection-uk-us-english.md)  
+**Origin FR:** [FR-006 Phase 2](../../project-management/kanban/fbu/FR-006-localization-language-selection-uk-us-english.md)  
 **Evaluation evidence:** [i18n-framework-evaluation-matrix.md](i18n-framework-evaluation-matrix.md)  
 **Planning package:** [IPP-E21S02T01](../../implementation-cycles/IPP-E21S02T01-choose-i18n-framework.md)
 
@@ -129,4 +129,4 @@ Adopt **C1: Hybrid extension of the Phase 1 incumbent** as the canonical i18n st
 - [IPP-E21S02T01](../../implementation-cycles/IPP-E21S02T01-choose-i18n-framework.md)
 - [localisation_config.py](../../../packages/frameworks/workflow-mgt/scripts/localisation_config.py)
 - [kanban/locales/README.md](../../../packages/frameworks/kanban/locales/README.md)
-- [FR-006](../../project-management/kanban/fr-br/FR-006-localization-language-selection-uk-us-english.md)
+- [FR-006](../../project-management/kanban/fbu/FR-006-localization-language-selection-uk-us-english.md)

@@ -313,7 +313,7 @@ Comprehensive meta-analysis report with "ultimate" canonical framework designs:
 - `docs/knowledge/analysis/workflow-structure-analysis.md` - Workflow structure analysis
 - `docs/architecture/standards-and-adrs/ultimate-canonical-workflow-structure.md` - Ultimate canonical workflow structure (v1.1.0) ✅
 - `docs/kanban/epics/epic-06/story-06-adk-implementation-analysis-and-package-management.md` - Parent story
-- `docs/kanban/fr-br/FR-016-kanban-granularity-discrete-task-docs.md` - Related FR
+- `docs/kanban/fbu/FR-016-kanban-granularity-discrete-task-docs.md` - Related FR
 
 ---
 

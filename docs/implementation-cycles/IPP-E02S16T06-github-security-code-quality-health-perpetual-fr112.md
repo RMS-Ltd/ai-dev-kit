@@ -9,7 +9,7 @@ housekeeping_policy: keep
 # E02:S16:T06 — Planning: Spec, Tests, Implementation Plan (IPW)
 
 **Host Task:** [`T06-github-security-code-quality-health-perpetual.md`](../kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T06-github-security-code-quality-health-perpetual.md) **(E02:S16:T06)**  
-**Planning for:** [FR-112](../kanban/fr-br/FR-112-perpetual-github-ci-and-security-health-lanes.md)  
+**Planning for:** [FR-112](../kanban/fbu/FR-112-perpetual-github-ci-and-security-health-lanes.md)  
 **Status:** Approved (Wave 5b @ v0.2.16.6+5; **Wave 6 IPW revision** 2026-06-12 — **12** M + **2** R @ `main` `55f4310e`)
 
 > **IPW:** Perpetual lane for GitHub **code scanning** + **Code Quality dashboard** hygiene. **Does not** own [Actions](https://github.com/RMS-Ltd/ai-dev-kit/actions) CI (→ **E02:S16:T05**).
@@ -283,7 +283,7 @@ Establish **E02:S16:T06** as the operational perpetual lane for GitHub **code sc
 | Doc ID | Path | Scope of change | Tied to |
 | ------ | ---- | --------------- | ------- |
 | D-U1 | `docs/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T06-github-security-code-quality-health-perpetual.md` | Baseline + coordination + AC4 | steps 2–4, 7 |
-| D-U2 | `docs/kanban/fr-br/FR-112-perpetual-github-ci-and-security-health-lanes.md` | F2 progress | step 5 |
+| D-U2 | `docs/kanban/fbu/FR-112-perpetual-github-ci-and-security-health-lanes.md` | F2 progress | step 5 |
 | D-U3 | `docs/kanban/epics/epic-08/story-03-automation-scripts.md` | Checklist | step 6 |
 | D-U4 | `docs/kanban/kboard.md` | O-band IPP + version stamp | step 6 |
 | D-U5 | `docs/kanban/epics/epic-08/epic-08.md` | Story line | step 6 |
@@ -506,7 +506,7 @@ Establish **E02:S16:T06** as the operational perpetual lane for GitHub **code sc
 
 ## References
 
-- [FR-112](../kanban/fr-br/FR-112-perpetual-github-ci-and-security-health-lanes.md)
+- [FR-112](../kanban/fbu/FR-112-perpetual-github-ci-and-security-health-lanes.md)
 - [T06 task doc](../kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T06-github-security-code-quality-health-perpetual.md)
 - [T05 task doc](../kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T05-github-actions-ci-health-perpetual.md)
 - [IPP-E08S03T12](IPP-E08S03T12-code-quality-maintainability-backlog-br099.md)
@@ -514,5 +514,5 @@ Establish **E02:S16:T06** as the operational perpetual lane for GitHub **code sc
 - [IPP-E08S03T14](IPP-E08S03T14-code-quality-ai-suggestions-backlog-br101.md)
 - [code-quality-monitoring-processes.md](../architecture/standards-and-adrs/code-quality-monitoring-processes.md)
 - [ipw-adr-necessity-checklist.md](../architecture/standards-and-adrs/ipw-adr-necessity-checklist.md)
-- [BR-097](../kanban/fr-br/BR-097-rw-agent-reuses-tagged-build-and-force-moves-release-tags.md)
+- [BR-097](../kanban/fbu/BR-097-rw-agent-reuses-tagged-build-and-force-moves-release-tags.md)
 - [dev-kit-versioning-policy.md](../governance/standards/dev-kit-versioning-policy.md)

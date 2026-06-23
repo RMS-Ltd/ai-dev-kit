@@ -72,7 +72,7 @@ Identify and extract all translatable framework content into translation keys.
 RW -k E21:S03:T01 --art --dpz
 ```
 
-**Target version anchor:** `v0.21.3.1+0` (doc-init BUILD +0 per [BR-067](../../../fr-br/BR-067-rw-first-doc-only-release-defaults-to-build-plus-one-not-plus-zero.md)).
+**Target version anchor:** `v0.21.3.1+0` (doc-init BUILD +0 per [BR-067](../../../fbu/BR-067-rw-first-doc-only-release-defaults-to-build-plus-one-not-plus-zero.md)).
 
 ---
 
@@ -95,5 +95,5 @@ Migrated from embedded Story section via `generate_task_doc.py` (FR-016 Wave 1 t
 - [IPP-E21S03T01](../../../../implementation-cycles/IPP-E21S03T01-identify-extract-translatable-content.md)
 - [translatable-content-inventory.md](../../../../governance/standards/translatable-content-inventory.md)
 - [translatable-content-registry.yaml](../../../../governance/standards/translatable-content-registry.yaml)
-- [FR-006](../../../fr-br/FR-006-localization-language-selection-uk-us-english.md)
+- [FR-006](../../../fbu/FR-006-localization-language-selection-uk-us-english.md)
 - [locale-key-conventions.md](../../../../governance/standards/locale-key-conventions.md)

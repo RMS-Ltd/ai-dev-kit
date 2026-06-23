@@ -18,23 +18,23 @@ housekeeping_policy: keep
 **Version Anchor:** v0.2.16.20+3  
 **Code:** E04S14T10  
 
-**Upstream:** [UXR-023 — kboard IPP segment regression](../../../fr-br/UXR-023-kboard-ipp-segment-regression.md)
+**Upstream:** [UXR-023 — kboard IPP segment regression](../../../fbu/UXR-023-kboard-ipp-segment-regression.md)
 
 ---
 
 ## Input
 
-- [UXR-023](../../../fr-br/UXR-023-kboard-ipp-segment-regression.md) findings (F1–F3) and recommendations (R1–R5).
-- [UXR-010](../../../fr-br/UXR-010-kboard-fbuboard-add-ipp-column-after-fbu-and-task-links.md) — canonical IPP segment contract (RESOLVED; regression target).
+- [UXR-023](../../../fbu/UXR-023-kboard-ipp-segment-regression.md) findings (F1–F3) and recommendations (R1–R5).
+- [UXR-010](../../../fbu/UXR-010-kboard-fbuboard-add-ipp-column-after-fbu-and-task-links.md) — canonical IPP segment contract (RESOLVED; regression target).
 - [IPP-E4S19T04](../../../../implementation-cycles/IPP-E4S19T04-kboard-fbuboard-ipp-segment-after-fbu-task-links.md) — original implementation plan.
 - Live [`kboard.md`](../../../kboard.md) — all active bands missing IPP segment (2026-06-05).
-- [FR-090](../../../fr-br/FR-090-ukw-canonical-row-transform-engine-and-board-specific-rendering-contracts.md) / [FR-092](../../../fr-br/FR-092-canonical-rw-ukw-kanban-consistency-program.md) — row emission and four-surface reconciliation context.
+- [FR-090](../../../fbu/FR-090-ukw-canonical-row-transform-engine-and-board-specific-rendering-contracts.md) / [FR-092](../../../fbu/FR-092-canonical-rw-ukw-kanban-consistency-program.md) — row emission and four-surface reconciliation context.
 
 ---
 
 ## Problem statement
 
-[UXR-010](../../../fr-br/UXR-010-kboard-fbuboard-add-ipp-column-after-fbu-and-task-links.md) required every wired `kboard.md` row to expose an IPP segment (`—IPP—` link or `—No IPP—` fallback) after FBU and task links. The live active board no longer renders that segment, breaking planning traceability for maintainers.
+[UXR-010](../../../fbu/UXR-010-kboard-fbuboard-add-ipp-column-after-fbu-and-task-links.md) required every wired `kboard.md` row to expose an IPP segment (`—IPP—` link or `—No IPP—` fallback) after FBU and task links. The live active board no longer renders that segment, breaking planning traceability for maintainers.
 
 ---
 
@@ -78,6 +78,6 @@ housekeeping_policy: keep
 ## References
 
 - [IPP-E04S14T10](../../../../implementation-cycles/IPP-E04S14T10-restore-kboard-ipp-segment-uxr023.md)
-- [UXR-023](../../../fr-br/UXR-023-kboard-ipp-segment-regression.md)
-- [UXR-010](../../../fr-br/UXR-010-kboard-fbuboard-add-ipp-column-after-fbu-and-task-links.md)
+- [UXR-023](../../../fbu/UXR-023-kboard-ipp-segment-regression.md)
+- [UXR-010](../../../fbu/UXR-010-kboard-fbuboard-add-ipp-column-after-fbu-and-task-links.md)
 - [Story 016](../story-16-perpetual-ongoing-workflow-operations.md)

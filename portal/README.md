@@ -6,7 +6,7 @@ This directory (`portal/`) is the **[Docusaurus](https://docusaurus.io/)** site 
 
 **Adopter-public allowlist** (**E05:S09:T15**). The docs plugin ingests [`docs/`](../docs/) but **excludes maintainer corpora** via `docusaurus.config.js` `exclude` globs. Logical KB pillars (architecture, Kanban, knowledge) remain in git/Notion — not all are published here.
 
-**Planning:** [IPP-E05S09T15](../docs/implementation-cycles/IPP-E05S09T15-docusaurus-adopter-public-publish-allowlist-fr114.md) · [FR-114](../docs/kanban/fr-br/FR-114-split-documentation-surfaces-docusaurus-public-notion-maintainer-kb.md)
+**Planning:** [IPP-E05S09T15](../docs/implementation-cycles/IPP-E05S09T15-docusaurus-adopter-public-publish-allowlist-fr114.md) · [FR-114](../docs/kanban/fbu/FR-114-split-documentation-surfaces-docusaurus-public-notion-maintainer-kb.md)
 
 ### Included (allowlist)
 
@@ -48,12 +48,12 @@ Scaffold only until first RC public release. **Authority:** [ADR-024](../docs/ar
 
 - **`docusaurus.config.js`:** `onBrokenLinks: 'throw'` and `onBrokenMarkdownLinks: 'throw'` — a **broken in-scope link fails `npm run build`** (strict mode; **FR-067 FU-1** complete).
 - **`onBrokenAnchors: 'throw'`** (**E5:S09:T10** / **FR-067 FU-3**): a **broken in-page or cross-doc `#fragment`** also **fails `npm run build`** (same strict posture as links).
-- **Corpus hygiene:** Markdown path and heading/fragment discipline stays aligned with [FR-058](../docs/kanban/fr-br/FR-058-markdown-maintenance-workflow.md); out-of-tree targets should use repository or GitHub URLs, not bogus relative paths. Prefer explicit `{#stable-id}` on headings when deep links must survive title edits.
+- **Corpus hygiene:** Markdown path and heading/fragment discipline stays aligned with [FR-058](../docs/kanban/fbu/FR-058-markdown-maintenance-workflow.md); out-of-tree targets should use repository or GitHub URLs, not bogus relative paths. Prefer explicit `{#stable-id}` on headings when deep links must survive title edits.
 - **Detail / history:** [Docusaurus corpus triage (FR-067)](../docs/maintenance/docusaurus-corpus-triage-fr-067.md); tasks **[E5:S09:T08](../docs/kanban/epics/Epic-5/Story-009-docusaurus-documentation-portal/T08-docusaurus-strict-broken-links-post-fr067.md)** (links), **[E5:S09:T10](../docs/kanban/epics/Epic-5/Story-009-docusaurus-documentation-portal/T10-docusaurus-strict-broken-anchors-post-t08.md)** (anchors).
 
 ### BR-068: Monorepo links outside the docs plugin (E5:S09:T11)
 
-The docs plugin only ingests **[`docs/`](../docs/)**. Markdown links that use **relative paths** to leave `docs/`—for example `../../../INSTALL_IN_YOUR_PROJECT.md` or `../../../../packages/frameworks/...`—**fail MDX resolution** and break **`npm run build`** because Docusaurus cannot treat those targets as in-corpus doc IDs (**[BR-068](../docs/kanban/fr-br/BR-068-docusaurus-monorepo-markdown-links-break-strict-production-build.md)**). GitHub’s web UI resolves the same prose differently; the **published portal** does not.
+The docs plugin only ingests **[`docs/`](../docs/)**. Markdown links that use **relative paths** to leave `docs/`—for example `../../../INSTALL_IN_YOUR_PROJECT.md` or `../../../../packages/frameworks/...`—**fail MDX resolution** and break **`npm run build`** because Docusaurus cannot treat those targets as in-corpus doc IDs (**[BR-068](../docs/kanban/fbu/BR-068-docusaurus-monorepo-markdown-links-break-strict-production-build.md)**). GitHub’s web UI resolves the same prose differently; the **published portal** does not.
 
 **Do this when linking from `docs/**/*.md` to the repo root, `packages/`, or any path outside `docs/`:**
 

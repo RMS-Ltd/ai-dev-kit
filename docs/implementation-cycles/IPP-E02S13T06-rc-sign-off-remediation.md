@@ -134,4 +134,4 @@ All kanban/docs paths; NOT_APPLICABLE for Docusaurus.
 
 - [T06](../kanban/epics/epic-02/story-13-workflow-management-package-implementation-review/T06-define-rc-sign-off-criteria-and-remediation-tasks.md)
 - [T05](../kanban/epics/epic-02/story-13-workflow-management-package-implementation-review/T05-create-gap-log-and-risk-assessment.md)
-- [FR-050](../kanban/fr-br/FR-050-workflows-directory-structure-reorganization.md)
+- [FR-050](../kanban/fbu/FR-050-workflows-directory-structure-reorganization.md)

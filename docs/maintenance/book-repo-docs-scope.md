@@ -8,7 +8,7 @@ housekeeping_policy: keep
 
 # Book repository documentation scope
 
-**Purpose:** Classify top-level `docs/` trees for the maintainer book workspace ([ADR-006](../architecture/standards-and-adrs/ADR-006-book-project-private-repository-spin-off.md), [FR-101](../kanban/fr-br/FR-101-consolidate-governance-under-docs-governance.md)).
+**Purpose:** Classify top-level `docs/` trees for the maintainer book workspace ([ADR-006](../architecture/standards-and-adrs/ADR-006-book-project-private-repository-spin-off.md), [FR-101](../kanban/fbu/FR-101-consolidate-governance-under-docs-governance.md)).
 
 **Task:** [E7:S01:T11](../kanban/epics/epic-07/story-01-codebase-maintenance-tasks/T11-consolidate-governance-under-docs-governance-fr101.md)
 

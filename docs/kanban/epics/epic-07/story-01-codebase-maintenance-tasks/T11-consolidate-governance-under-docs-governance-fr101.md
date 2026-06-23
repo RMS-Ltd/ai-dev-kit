@@ -27,7 +27,7 @@ housekeeping_policy: keep
 
 ## Scope
 
-Deliver [FR-101](../../../fr-br/FR-101-consolidate-governance-under-docs-governance.md): Phase 0 governance inventory and maintainer sign-off; optional IPW; phased `git mv` into `docs/governance/`; stubs and link sweep; verification per FR-101 AC0–AC4.
+Deliver [FR-101](../../../fbu/FR-101-consolidate-governance-under-docs-governance.md): Phase 0 governance inventory and maintainer sign-off; optional IPW; phased `git mv` into `docs/governance/`; stubs and link sweep; verification per FR-101 AC0–AC4.
 
 **Problem:** Book-active governance policies are scattered across `rituals/policy/` and `architecture/standards-and-adrs/` with no single hub.
 
@@ -42,7 +42,7 @@ Publication Status: NOT_APPLICABLE (single consolidated IPP — see [`IPP-E7S1T1
 Publication N/A Reason: FR-042 consolidated IPP packages specification, test design, and implementation plan in one durable artifact under `docs/implementation-cycles/`; no separate ICW trio or Docusaurus publication required (BR-066).
 
 - **[IPP-E7S1T11](../../../../implementation-cycles/IPP-E7S01T11-consolidate-governance-under-docs-governance.md)** — specification, test design, implementation plan (IPW)
-- **[FR-101](../../../fr-br/FR-101-consolidate-governance-under-docs-governance.md)** — requirements and acceptance criteria
+- **[FR-101](../../../fbu/FR-101-consolidate-governance-under-docs-governance.md)** — requirements and acceptance criteria
 - **[GOVERNANCE-REHOUSING-INVENTORY.md](../../../../governance/GOVERNANCE-REHOUSING-INVENTORY.md)** — Phase 0 SoT (draft at intake)
 - [kanban-governance-policy.md](../../../../governance/kanban/kanban-governance-policy.md) (book SoT)
 - [docs/architecture/README.md](../../../../guides/README.md)
@@ -65,7 +65,7 @@ Publication N/A Reason: FR-042 consolidated IPP packages specification, test des
 ## Acceptance Criteria
 
 - [x] **AC0:** Inventory complete and **maintainer-approved** before any `git mv`.
-- [x] **AC1:** [FR-101](../../../fr-br/FR-101-consolidate-governance-under-docs-governance.md) functional requirements satisfied (Waves A–F; framework KB paths deferred per IPP RNF3).
+- [x] **AC1:** [FR-101](../../../fbu/FR-101-consolidate-governance-under-docs-governance.md) functional requirements satisfied (Waves A–F; framework KB paths deferred per IPP RNF3).
 - [x] **AC2:** IPP linked from this task when execution proceeds.
 - [x] **AC3:** [`docs/maintenance/book-repo-docs-scope.md`](../../../../maintenance/book-repo-docs-scope.md) lists `docs/governance/` as **KEEP**.
 - [x] **AC4:** Active surfaces updated (`.cursorrules`, `.claude/commands/*`, `kanban-board-guide.md`); stubs at legacy paths.
@@ -107,9 +107,9 @@ Publication N/A Reason: FR-042 consolidated IPP packages specification, test des
 
 **Related BR/FR Documents:**
 
-- **[FR-101](../../../fr-br/FR-101-consolidate-governance-under-docs-governance.md)** — **Informs** — Primary requirement source.
-- **[FR-039](../../../fr-br/FR-039-ai-dev-kit-project-review-and-legacy-clean-up.md)** — **Coordinates With** — Broader legacy doc review.
-- **[UXR-013](../../../fr-br/UXR-013-project-root-hygiene-and-legacy-docs-rationalization.md)** — **Coordinates With** — Root-level discoverability.
+- **[FR-101](../../../fbu/FR-101-consolidate-governance-under-docs-governance.md)** — **Informs** — Primary requirement source.
+- **[FR-039](../../../fbu/FR-039-ai-dev-kit-project-review-and-legacy-clean-up.md)** — **Coordinates With** — Broader legacy doc review.
+- **[UXR-013](../../../fbu/UXR-013-project-root-hygiene-and-legacy-docs-rationalization.md)** — **Coordinates With** — Root-level discoverability.
 
 **Related Tasks:**
 
@@ -134,7 +134,7 @@ Publication N/A Reason: FR-042 consolidated IPP packages specification, test des
 
 - [IPP-E7S1T11-consolidate-governance-under-docs-governance.md](../../../../implementation-cycles/IPP-E7S01T11-consolidate-governance-under-docs-governance.md)
 - [GOVERNANCE-REHOUSING-INVENTORY.md](../../../../governance/GOVERNANCE-REHOUSING-INVENTORY.md)
-- [FR-101](../../../fr-br/FR-101-consolidate-governance-under-docs-governance.md)
+- [FR-101](../../../fbu/FR-101-consolidate-governance-under-docs-governance.md)
 - `packages/frameworks/kanban/policies/kanban-governance-policy.md`
 
 ---

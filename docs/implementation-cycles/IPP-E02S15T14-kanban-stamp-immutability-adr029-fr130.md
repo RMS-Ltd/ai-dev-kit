@@ -9,7 +9,7 @@ housekeeping_policy: keep
 # E02:S15:T14 — Planning: Kanban Stamp Immutability ADR-029 (IPW)
 
 **Host Task:** [T14-kanban-stamp-immutability-adr029-framework-defaults-fr130.md](../kanban/epics/epic-02/story-15-ipw-governance-and-publication-contract/T14-kanban-stamp-immutability-adr029-framework-defaults-fr130.md) **(E02:S15:T14)**  
-**Planning for:** [FR-130](../kanban/fr-br/FR-130-kanban-stamp-immutability-adr029-framework-defaults.md) · [ADR-029](../architecture/standards-and-adrs/ADR-029-kanban-stamp-immutability-substantive-work-only.md)  
+**Planning for:** [FR-130](../kanban/fbu/FR-130-kanban-stamp-immutability-adr029-framework-defaults.md) · [ADR-029](../architecture/standards-and-adrs/ADR-029-kanban-stamp-immutability-substantive-work-only.md)  
 **Status:** Approved (MWF Leg 1)
 
 ---
@@ -78,6 +78,6 @@ ADR-029 mandates `non_substantive` as the framework default on all MoSCOW row st
 
 ## References
 
-- [FR-130](../kanban/fr-br/FR-130-kanban-stamp-immutability-adr029-framework-defaults.md)
+- [FR-130](../kanban/fbu/FR-130-kanban-stamp-immutability-adr029-framework-defaults.md)
 - [ADR-029](../architecture/standards-and-adrs/ADR-029-kanban-stamp-immutability-substantive-work-only.md)
 - [IPP-E02S15T08](IPP-E02S15T08-board-stamp-authority-forensic-timestamp-recovery.md)

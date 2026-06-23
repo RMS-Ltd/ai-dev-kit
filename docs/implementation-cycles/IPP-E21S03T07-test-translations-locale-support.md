@@ -9,7 +9,7 @@ housekeeping_policy: keep
 # E21:S03:T07 — Planning: Test translations and locale support (IPW)
 
 **Host Task:** [`T07-test-translations-and-locale-support.md`](../project-management/kanban/epics/epic-21/story-03-translation-and-localisation/T07-test-translations-and-locale-support.md) **(E21:S03:T07)**  
-**Planning for:** [FR-006 Phase 3+](../project-management/kanban/fr-br/FR-006-localization-language-selection-uk-us-english.md) · [IPP-E21S03T06](IPP-E21S03T06-translation-completeness-tracking.md) · [IPP-E21S01T07](IPP-E21S01T07-fr006-phase1-e2e-tests.md) · [ADR-024](../architecture/standards-and-adrs/ADR-024-i18n-framework-strategy.md)  
+**Planning for:** [FR-006 Phase 3+](../project-management/kanban/fbu/FR-006-localization-language-selection-uk-us-english.md) · [IPP-E21S03T06](IPP-E21S03T06-translation-completeness-tracking.md) · [IPP-E21S01T07](IPP-E21S01T07-fr006-phase1-e2e-tests.md) · [ADR-024](../architecture/standards-and-adrs/ADR-024-i18n-framework-strategy.md)  
 **Status:** Complete — released `v0.21.3.7+1` (`RW E21:S03:T07 --art`)  
 **Branch:** `epic/21-internationalisation-localisation`
 
@@ -164,7 +164,7 @@ pytest -m fr006
 - `docs/governance/standards/locale-rollout-matrix.md`
 - `docs/governance/standards/translation-workflow-and-review.md`
 - `docs/architecture/standards-and-adrs/ADR-024-i18n-framework-strategy.md`
-- `docs/project-management/kanban/fr-br/FR-006-localization-language-selection-uk-us-english.md`
+- `docs/project-management/kanban/fbu/FR-006-localization-language-selection-uk-us-english.md`
 - `pytest.ini`
 - `docs/project-management/kanban/kboard.md` (RW Step 7)
 
@@ -186,7 +186,7 @@ pytest -m fr006
 | D-U6 | `docs/governance/standards/locale-rollout-matrix.md` | T07 E2E verification under Completeness expectations | RF6 |
 | D-U7 | `docs/governance/standards/translation-workflow-and-review.md` | Phase 3 E2E module in verification section | RNF2 |
 | D-U8 | `docs/architecture/standards-and-adrs/ADR-024-i18n-framework-strategy.md` | T07 integration row | §2.5 EXEMPT update |
-| D-U9 | `docs/project-management/kanban/fr-br/FR-006-*.md` | T07 anchor when released | Step 11 |
+| D-U9 | `docs/project-management/kanban/fbu/FR-006-*.md` | T07 anchor when released | Step 11 |
 | D-U10 | `pytest.ini` | Expand fr006 marker description | RNF2 |
 | D-U11 | T07 task doc + story + kboard | Status, AC, IPP links | Phase 8 |
 
@@ -241,4 +241,4 @@ pytest -m fr006
 - [localisation_config.py](../../packages/frameworks/workflow-mgt/scripts/localisation_config.py)
 - [locale-fallback-conventions.md](../governance/standards/locale-fallback-conventions.md)
 - [ADR-024](../architecture/standards-and-adrs/ADR-024-i18n-framework-strategy.md)
-- [FR-006](../project-management/kanban/fr-br/FR-006-localization-language-selection-uk-us-english.md)
+- [FR-006](../project-management/kanban/fbu/FR-006-localization-language-selection-uk-us-english.md)

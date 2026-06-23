@@ -865,7 +865,7 @@ None identified - scripts are correct.
 **Kanban Files:**
 - `docs/kanban/epics/epic-01/` through `epic-10/` (Epics 1-9 framework, Epic 10 project)
 - Multiple stories and tasks per epic
-- Bug report: `docs/kanban/fr-br/BR-kanban-installation-issue.md`
+- Bug report: `docs/kanban/fbu/BR-kanban-installation-issue.md`
 
 **KB Files:**
 - `docs/architecture/standards-and-adrs/`

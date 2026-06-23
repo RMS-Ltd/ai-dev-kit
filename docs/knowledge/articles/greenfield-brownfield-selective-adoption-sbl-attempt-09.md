@@ -9,7 +9,7 @@ housekeeping_policy: keep
 **Type:** Adopter feedback — synthesis report (blog format) · **PRIMARY** attempt 09 package document  
 **Reporter:** Starborn Legacy (`starborn_legacy`) — FR-079 attempt 09  
 **Intake:** [ai-dev-kit #52](https://github.com/RMS-Ltd/ai-dev-kit/issues/52)  
-**Related:** [ai-dev-kit #51](https://github.com/RMS-Ltd/ai-dev-kit/issues/51) (attempt 08 kanban migration) · [UXR-029](../../kanban/fr-br/UXR-029-adk-install-path-experiment.md) · [ADR-030](../../architecture/standards-and-adrs/ADR-030-selective-adoption-three-path-model.md)  
+**Related:** [ai-dev-kit #51](https://github.com/RMS-Ltd/ai-dev-kit/issues/51) (attempt 08 kanban migration) · [UXR-029](../../kanban/fbu/UXR-029-adk-install-path-experiment.md) · [ADR-030](../../architecture/standards-and-adrs/ADR-030-selective-adoption-three-path-model.md)  
 **Date:** 2026-06-14 (research) · 2026-06-15 (submitted) · **mirrored:** 2026-06-15 (ai-dev-kit maintainer KB)  
 **ADK pin:** `v0.4.1164`  
 **Programme:** E06:S09 install RC · [E06:S09:T36](../../kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T36-adopter-path-selector-install-rc-uxr029.md)  
@@ -49,7 +49,7 @@ Starborn Legacy ran both paths across three attempts:
 | **H0 (Arm A)** | Brownfield → faster install-complete, less dual-tree confusion | **Not yet tested** — fynd.deals, Confidentia pending |
 | **Null** | Path choice matters less than **kit completeness** | **Strong support** — sqlite, docs, UKW, KMA tooling gaps blocked RC |
 
-Formal experiment spec: [UXR-029](../../kanban/fr-br/UXR-029-adk-install-path-experiment.md).
+Formal experiment spec: [UXR-029](../../kanban/fbu/UXR-029-adk-install-path-experiment.md).
 
 ---
 
@@ -216,7 +216,7 @@ Adopter-facing summary: [INSTALL_IN_YOUR_PROJECT.md — Adopter Path Selector](.
 
 | Artifact | Role |
 |----------|------|
-| [UXR-029](../../kanban/fr-br/UXR-029-adk-install-path-experiment.md) | Formal research design + checklist |
+| [UXR-029](../../kanban/fbu/UXR-029-adk-install-path-experiment.md) | Formal research design + checklist |
 | SBL `FB-ADK-greenfield-sqlite-before-rw.md` | SQLite ordering |
 | SBL `FB-ADK-canonical-maintainer-documentation-schema.md` | Docs end-schema |
 | SBL `FB-ADK-optimal-greenfield-install-sequence.md` | Layered install |

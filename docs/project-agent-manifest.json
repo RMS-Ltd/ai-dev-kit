@@ -10,7 +10,7 @@
     {
       "id": "P-IPW-GATE",
       "rule": "No implementation until IPW package exists and user authorizes execution (IDW E:S:T, implement, or post-impl RW).",
-      "sourcePath": "docs/kanban/fr-br/FR-083-global-ipw-gated-implementation-contract.md"
+      "sourcePath": "docs/kanban/fbu/FR-083-global-ipw-gated-implementation-contract.md"
     },
     {
       "id": "P-RW-GIT",
@@ -20,17 +20,17 @@
     {
       "id": "P-RW-TASK-TOKEN",
       "rule": "RW requires parseable E:S:T in trigger; Steps 1c/1d block without it.",
-      "sourcePath": "docs/kanban/fr-br/FR-060-rw-task-argument-requirement.md"
+      "sourcePath": "docs/kanban/fbu/FR-060-rw-task-argument-requirement.md"
     },
     {
       "id": "P-RW-STEP7",
       "rule": "RW Step 7 owns release-scope four-surface kanban reconciliation without UKW dependency.",
-      "sourcePath": "docs/kanban/fr-br/FR-092-canonical-rw-ukw-kanban-consistency-program.md"
+      "sourcePath": "docs/kanban/fbu/FR-092-canonical-rw-ukw-kanban-consistency-program.md"
     },
     {
       "id": "P-EST-PADDING",
       "rule": "Default two-digit zero-padding for E/S/T when value < 10 in new writes.",
-      "sourcePath": "docs/kanban/fr-br/UXR-014-two-digit-est-identifier-default-formatting.md"
+      "sourcePath": "docs/kanban/fbu/UXR-014-two-digit-est-identifier-default-formatting.md"
     },
     {
       "id": "P-TRIGGER-ROUTING",

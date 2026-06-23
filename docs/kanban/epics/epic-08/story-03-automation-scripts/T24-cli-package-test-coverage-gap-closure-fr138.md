@@ -17,8 +17,8 @@ housekeeping_policy: keep
 **Version Anchor:** v0.8.3.24+3  
 **Code:** E08S03T24
 
-**Upstream:** [FR-138 — CLI package test coverage gap closure](../../../fr-br/FR-138-cli-package-test-coverage-gap-closure.md)  
-**Related:** [E08:S03:T21](T21-cli-pytest-coverage-dedicated-target-uxr030.md) · [E08:S03:T22](T22-pytest-warning-cleanup-uxr030-wave2.md) · [UXR-030](../../../fr-br/UXR-030-default-pytest-cli-coverage-misleading-zero-percent.md) · [FR-030](../../../fr-br/FR-030-ai-dev-kit-cli-tool.md)
+**Upstream:** [FR-138 — CLI package test coverage gap closure](../../../fbu/FR-138-cli-package-test-coverage-gap-closure.md)  
+**Related:** [E08:S03:T21](T21-cli-pytest-coverage-dedicated-target-uxr030.md) · [E08:S03:T22](T22-pytest-warning-cleanup-uxr030-wave2.md) · [UXR-030](../../../fbu/UXR-030-default-pytest-cli-coverage-misleading-zero-percent.md) · [FR-030](../../../fbu/FR-030-ai-dev-kit-cli-tool.md)
 
 Publication Status: NOT_APPLICABLE
 Publication N/A Reason: Internal kanban task and implementation artifact references; no adopter-facing publication required.
@@ -35,7 +35,7 @@ Publication N/A Reason: Internal kanban task and implementation artifact referen
 
 ## Input
 
-- [FR-138](../../../fr-br/FR-138-cli-package-test-coverage-gap-closure.md) (Phase 1 + Phase 2 / Wave 4)
+- [FR-138](../../../fbu/FR-138-cli-package-test-coverage-gap-closure.md) (Phase 1 + Phase 2 / Wave 4)
 - **IPP:** [`IPP-E08S03T24-cli-package-test-coverage-gap-closure-fr138.md`](../../../../implementation-cycles/IPP-E08S03T24-cli-package-test-coverage-gap-closure-fr138.md)
 - [`pytest-cli-cov.ini`](../../../../../pytest-cli-cov.ini) · [`scripts/run_cli_pytest_coverage.sh`](../../../../../scripts/run_cli_pytest_coverage.sh)
 
@@ -86,7 +86,7 @@ Publication N/A Reason: Internal kanban task and implementation artifact referen
 
 ## Associated Feature Request
 
-- [FR-138 — CLI package test coverage gap closure](../../../fr-br/FR-138-cli-package-test-coverage-gap-closure.md) (primary — Phase 1 + Phase 2)
+- [FR-138 — CLI package test coverage gap closure](../../../fbu/FR-138-cli-package-test-coverage-gap-closure.md) (primary — Phase 1 + Phase 2)
 
 ---
 

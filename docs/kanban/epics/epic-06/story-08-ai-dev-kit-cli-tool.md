@@ -58,7 +58,7 @@ housekeeping_policy: keep
 Build a unified command-line interface (CLI) tool (`ai-dev-kit`) for managing framework dependencies across projects. The CLI provides a single interface for installing, updating, and managing frameworks regardless of the underlying dependency backend (Git submodules, Git subtrees, npm, pip, etc.).
 
 **Related Work:**
-- **Feature Request:** [FR-030](../../fr-br/FR-030-ai-dev-kit-cli-tool.md) - ai-dev-kit CLI Tool
+- **Feature Request:** [FR-030](../../fbu/FR-030-ai-dev-kit-cli-tool.md) - ai-dev-kit CLI Tool
 - **Architecture:** `docs/architecture/standards-and-adrs/framework-dependency-architecture.md` (Phase 2: CLI Tool)
 - **Design:** `docs/architecture/standards-and-adrs/framework-update-cli-design.md`
 - **CLI Reference:** `docs/documentation/user-docs/framework-dependency-cli-reference.md`
@@ -106,7 +106,7 @@ Build a comprehensive CLI tool that:
 
 ## References
 
-- **Feature Request:** [FR-030](../../fr-br/FR-030-ai-dev-kit-cli-tool.md) - ai-dev-kit CLI Tool
+- **Feature Request:** [FR-030](../../fbu/FR-030-ai-dev-kit-cli-tool.md) - ai-dev-kit CLI Tool
 - **Epic 6:** `docs/kanban/epics/epic-06/epic-06.md`
 - **Architecture:** `docs/architecture/standards-and-adrs/framework-dependency-architecture.md` (Phase 2: CLI Tool)
 - **Design:** `docs/architecture/standards-and-adrs/framework-update-cli-design.md`

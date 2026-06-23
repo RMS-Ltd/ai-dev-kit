@@ -10,7 +10,7 @@ housekeeping_policy: keep
 
 **Purpose:** Explain how **your project** tracks upstream documentation and style resources after copying material from ai-dev-kit—without expecting ai-dev-kit to poll upstream repos on your behalf.
 
-**Implementing work:** [E01:S02:T14](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/kanban/epics/epic-01/story-02-package-and-repo-architecture/T14-dependency-tracking-adopters-fr003.md) · [FR-003](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/kanban/fr-br/FR-003-dependency-tracking-in-adopting-projects.md)
+**Implementing work:** [E01:S02:T14](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/kanban/epics/epic-01/story-02-package-and-repo-architecture/T14-dependency-tracking-adopters-fr003.md) · [FR-003](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/kanban/fbu/FR-003-dependency-tracking-in-adopting-projects.md)
 
 ---
 
@@ -38,7 +38,7 @@ ai-dev-kit follows **copy, don't reference** for frameworks ([numbering-versioni
 
 ## Standard trio (when you use README template patterns)
 
-If your project adopted README or presentation patterns influenced by ai-dev-kit guidance (see [FR-002 / E01:S02:T13](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/kanban/fr-br/FR-002-update-been-there-readme.md) when the template ships), you typically acknowledge:
+If your project adopted README or presentation patterns influenced by ai-dev-kit guidance (see [FR-002 / E01:S02:T13](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/kanban/fbu/FR-002-update-been-there-readme.md) when the template ships), you typically acknowledge:
 
 | Resource | URL | What you copied |
 | -------- | --- | ---------------- |

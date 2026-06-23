@@ -65,8 +65,10 @@ TRIGGER_REGISTRY: Dict[str, Dict] = {
             r'FR-\d+',          # Explicit dash format
         ],
         'file_patterns': [
-            'fr-br/FR-*.md',
-            'docs/kanban/fr-br/FR-*.md',
+            'fbu/FR-*.md',
+            'fbu/FR-*.md',
+            'docs/kanban/fbu/FR-*.md',
+            'docs/kanban/fbu/FR-*.md',
         ],
         'workflow': 'intake_workflow',  # Use intake workflow (E2:S11) instead of agentic_task_creation
         'confidence': ConfidenceLevel.HIGH,
@@ -82,8 +84,10 @@ TRIGGER_REGISTRY: Dict[str, Dict] = {
             r'BR-\d+',          # Explicit dash format
         ],
         'file_patterns': [
-            'fr-br/BR-*.md',
-            'docs/kanban/fr-br/BR-*.md',
+            'fbu/BR-*.md',
+            'fbu/BR-*.md',
+            'docs/kanban/fbu/BR-*.md',
+            'docs/kanban/fbu/BR-*.md',
         ],
         'workflow': 'intake_workflow',  # Use intake workflow (E2:S11) instead of agentic_task_creation
         'confidence': ConfidenceLevel.HIGH,
@@ -99,8 +103,10 @@ TRIGGER_REGISTRY: Dict[str, Dict] = {
             r'UXR-\d+',          # Explicit dash format
         ],
         'file_patterns': [
-            'fr-br/UXR-*.md',
-            'docs/kanban/fr-br/UXR-*.md',
+            'fbu/UXR-*.md',
+            'fbu/UXR-*.md',
+            'docs/kanban/fbu/UXR-*.md',
+            'docs/kanban/fbu/UXR-*.md',
         ],
         'workflow': 'intake_workflow',  # Use intake workflow (E2:S11) instead of agentic_task_creation
         'confidence': ConfidenceLevel.HIGH,

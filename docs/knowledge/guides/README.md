@@ -84,7 +84,7 @@ SoPs define standardized processes and procedures for consistent execution of wo
 ## Related Documentation
 
 - **Architecture Standards:** `docs/architecture/standards-and-adrs/` - All SoP documents and ADRs
-- **Feature Requests:** `docs/kanban/fr-br/` - FRs that may reference SoPs
+- **Feature Requests:** `docs/kanban/fbu/` - FRs that may reference SoPs
 - **Task Templates:** `packages/frameworks/kanban/templates/` - Templates that implement SoP guidance
 
 ---

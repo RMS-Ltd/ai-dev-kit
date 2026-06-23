@@ -30,7 +30,7 @@ Close the gap where RW (especially **`RW -k`**) on perpetual maintenance tasks c
 ## Input
 
 - [IPP-E2S1T22](../../../../implementation-cycles/IPP-E2S01T22-rw-perpetual-version-py-build-br075.md)
-- [BR-075](../../../fr-br/BR-075-rw-perpetual-task-build-not-reflected-in-version-py.md)
+- [BR-075](../../../fbu/BR-075-rw-perpetual-task-build-not-reflected-in-version-py.md)
 - `rw-config.yaml` → `version_file: src/ai_dev_kit/version.py`
 - `packages/frameworks/workflow-mgt/scripts/validation/validate_version_bump.py`
 - `packages/frameworks/workflow-mgt/scripts/update_kanban_docs.py` (`kanban_init`)
@@ -62,7 +62,7 @@ Close the gap where RW (especially **`RW -k`**) on perpetual maintenance tasks c
 ## References
 
 - [IPP-E2S1T22](../../../../implementation-cycles/IPP-E2S01T22-rw-perpetual-version-py-build-br075.md)
-- [BR-075](../../../fr-br/BR-075-rw-perpetual-task-build-not-reflected-in-version-py.md)
+- [BR-075](../../../fbu/BR-075-rw-perpetual-task-build-not-reflected-in-version-py.md)
 - [E02:S16:T04 — Perpetual UKW/kanban lane](../story-16-perpetual-ongoing-workflow-operations/T04-ad-hoc-kanban-synchronization-and-hygiene-perpetual.md)
 - [dev-kit-versioning-policy.md](../../../../governance/standards/dev-kit-versioning-policy.md)
 

@@ -19,7 +19,7 @@ housekeeping_policy: keep
 **Deciders:** User (Ruari Mears)  
 **Implementing task:** [E05:S09:T15](../../kanban/epics/epic-05/story-09-docusaurus-documentation-portal/T15-docusaurus-adopter-public-publish-allowlist-fr114.md)  
 **Planning package:** [IPP-E05S09T15](../../implementation-cycles/IPP-E05S09T15-docusaurus-adopter-public-publish-allowlist-fr114.md)  
-**Related:** [FR-114](../../kanban/fr-br/FR-114-split-documentation-surfaces-docusaurus-public-notion-maintainer-kb.md), [FR-066](../../kanban/fr-br/FR-066-docusaurus-canonical-docs-path-and-publish-scope.md) (publish breadth superseded), [ADR-017](ADR-017-docusaurus-ci-build-deploy-topology.md) (CI topology)
+**Related:** [FR-114](../../kanban/fbu/FR-114-split-documentation-surfaces-docusaurus-public-notion-maintainer-kb.md), [FR-066](../../kanban/fbu/FR-066-docusaurus-canonical-docs-path-and-publish-scope.md) (publish breadth superseded), [ADR-017](ADR-017-docusaurus-ci-build-deploy-topology.md) (CI topology)
 
 **Coordination:** Broader three-surface SoT (Docusaurus / Notion / git) ADR is **E05:S08:T04** (FR-114-F5). This ADR covers **Docusaurus corpus filtering only**.
 
@@ -27,7 +27,7 @@ housekeeping_policy: keep
 
 ## Context
 
-[FR-066](../../kanban/fr-br/FR-066-docusaurus-canonical-docs-path-and-publish-scope.md) wired the docs plugin to `../docs` with **nearly all** markdown published (changelog-archive excluded only). Maintainer corpora (Kanban, IPPs, architecture ADRs) shared the same strict build gate as adopter guides, causing CI churn ([FR-114](../../kanban/fr-br/FR-114-split-documentation-surfaces-docusaurus-public-notion-maintainer-kb.md)).
+[FR-066](../../kanban/fbu/FR-066-docusaurus-canonical-docs-path-and-publish-scope.md) wired the docs plugin to `../docs` with **nearly all** markdown published (changelog-archive excluded only). Maintainer corpora (Kanban, IPPs, architecture ADRs) shared the same strict build gate as adopter guides, causing CI churn ([FR-114](../../kanban/fbu/FR-114-split-documentation-surfaces-docusaurus-public-notion-maintainer-kb.md)).
 
 Docusaurus docs plugin has **no native include-only mode** for a subdirectory of a large tree.
 

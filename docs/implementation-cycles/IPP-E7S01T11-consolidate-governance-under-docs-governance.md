@@ -9,10 +9,10 @@ housekeeping_policy: keep
 # E7:S01:T11 — Planning: Spec, Tests, Implementation Plan (IPW)
 
 **Host Task:** [`T11-consolidate-governance-under-docs-governance-fr101.md`](../kanban/epics/epic-07/story-01-codebase-maintenance-tasks/T11-consolidate-governance-under-docs-governance-fr101.md) **(E7:S01:T11)**  
-**Planning for:** [FR-101](../kanban/fr-br/FR-101-consolidate-governance-under-docs-governance.md)  
+**Planning for:** [FR-101](../kanban/fbu/FR-101-consolidate-governance-under-docs-governance.md)  
 **Status:** Approved (planning complete — implementation blocked on AC0 maintainer sign-off)
 
-> **IPW (Implementation Planning Workflow):** Consolidated IPP per [FR-042](../kanban/fr-br/FR-042-implementation-planning-workflow-ipw.md). Bidirectional wiring to host task **Input** and **References** is mandatory before implementation.
+> **IPW (Implementation Planning Workflow):** Consolidated IPP per [FR-042](../kanban/fbu/FR-042-implementation-planning-workflow-ipw.md). Bidirectional wiring to host task **Input** and **References** is mandatory before implementation.
 
 ---
 
@@ -25,7 +25,7 @@ housekeeping_policy: keep
 | RF1 | Phase 0 inventory complete and **maintainer-approved** before any `git mv` | FR-101-F1, AC0, T11 AC0 |
 | RF2 | MOVE book-active policies to `docs/governance/kanban/` and `docs/governance/standards/` with stubs at legacy paths | FR-101-F3, inventory §1 |
 | RF3 | INDEX rows remain under `docs/architecture/standards-and-adrs/`; hub cross-links only | FR-101-F4 |
-| RF4 | **Bidirectional wiring principle** relocated to `docs/governance/principles/bidirectional-wiring-principle.md` with stub at `fr-br/BIDIRECTIONAL_WIRING_PRINCIPLE.md` | FR-101-F5, maintainer decision (IPW) |
+| RF4 | **Bidirectional wiring principle** relocated to `docs/governance/principles/bidirectional-wiring-principle.md` with stub at `fbu/BIDIRECTIONAL_WIRING_PRINCIPLE.md` | FR-101-F5, maintainer decision (IPW) |
 | RF5 | Active surfaces updated: `.cursorrules`, `.claude/commands/*`, `kanban-board-guide.md`, portable RW excerpt, `AGENTS.md`, `src/ai_dev_kit/version.py` comment if applicable | FR-101-F6, AC4, inventory §2 |
 | RF6 | Create or update `docs/maintenance/book-repo-docs-scope.md` listing `docs/governance/` as **KEEP** | AC3; coordinate [E7:S01:T10](../kanban/epics/epic-07/story-01-codebase-maintenance-tasks/T10-project-root-hygiene-and-legacy-docs-rationalization.md) |
 | RF7 | IPP linked from task Input/References | AC2 |
@@ -48,7 +48,7 @@ housekeeping_policy: keep
 - **In scope:**
   - Five MOVE policies (four standards + one kanban), rituals README merge, bidirectional-wiring principle MOVE, ADR-007, hub/inventory updates, active link sweep, docs scope file.
 - **Out of scope:**
-  - Kanban boards (`kboard.md`), epic/story/task trees, `fr-br/` intake queue (except wiring stub), `vendor/`, bulk historical archive edits.
+  - Kanban boards (`kboard.md`), epic/story/task trees, `fbu/` intake queue (except wiring stub), `vendor/`, bulk historical archive edits.
 
 ---
 
@@ -65,7 +65,7 @@ Establish `docs/governance/` as the canonical navigation and housing for **book-
 | RF1 | Wave 0: maintainer signs inventory; implementation waves B–G refuse to start until sign-off |
 | RF2 | Wave B/C: `git mv` per inventory; stub banners at `docs/architecture/standards-and-adrs/*` and `docs/project-management/rituals/policy/*` |
 | RF3 | `docs/governance/README.md` INDEX section links ADR-006, workflow-flaws, versioning-error guides in place |
-| RF4 | Wave D: principle file at `docs/governance/principles/bidirectional-wiring-principle.md`; stub at `fr-br/`; update templates and active refs |
+| RF4 | Wave D: principle file at `docs/governance/principles/bidirectional-wiring-principle.md`; stub at `fbu/`; update templates and active refs |
 | RF5 | Wave E: sweep inventory §2 surfaces |
 | RF6 | Wave F: `book-repo-docs-scope.md` CREATE (file does not exist at IPW time) |
 | RF7 | Task doc links this IPP; `Publication Status: NOT_APPLICABLE` (consolidated IPP) |
@@ -120,7 +120,7 @@ Doc-only relocation: structural verification (no new pytest module). Do **not** 
 | -- | ---------------- | -------------- |
 | T1 | RF2 — kanban policy stub hygiene | `rg 'rituals/policy/kanban-governance-policy' docs .cursorrules .claude 'packages/frameworks/workflow-mgt/cursorrules-rw-trigger-section.md'` → stub-only banners or zero non-stub hits |
 | T2 | RF2 — versioning policy stub hygiene | `rg 'standards-and-adrs/dev-kit-versioning-policy' docs .cursorrules .claude` → stub-only or zero non-stub hits |
-| T3 | RF4 — wiring principle path | `rg 'fr-br/BIDIRECTIONAL_WIRING_PRINCIPLE' docs packages/frameworks/kanban/templates` → stub-only or paths updated to `governance/principles/` |
+| T3 | RF4 — wiring principle path | `rg 'fbu/BIDIRECTIONAL_WIRING_PRINCIPLE' docs packages/frameworks/kanban/templates` → stub-only or paths updated to `governance/principles/` |
 | T4 | RF5 — IPW/IPP policy links | Spot-check `.cursorrules`, `.claude/commands/ipw.md`, `AGENTS.md` point to `docs/governance/standards/specification-and-planning-artifacts-policy.md` (or stubs that resolve) |
 | T5 | AC3 — docs scope | `docs/maintenance/book-repo-docs-scope.md` exists and contains `docs/governance/` with **KEEP** |
 | T6 | Hub navigation | `docs/governance/README.md` lists `kanban/`, `standards/`, `principles/`, and INDEX links |
@@ -137,7 +137,7 @@ Doc-only relocation: structural verification (no new pytest module). Do **not** 
 | **A** | **CREATE** ADR-007 (topology: book `docs/governance/` vs `architecture/` vs `packages/frameworks/`; stub policy; INDEX vs MOVE) | `ADR-007-book-governance-document-topology.md` |
 | **B** | `git mv` four standards policies → `docs/governance/standards/`; stubs in `docs/architecture/standards-and-adrs/` | Moved files + stubs |
 | **C** | `git mv` kanban policy; merge `rituals/policy/README.md` → `docs/governance/kanban/README.md`; stub under rituals | Kanban tree + stub |
-| **D** | `git mv` `BIDIRECTIONAL_WIRING_PRINCIPLE.md` → `docs/governance/principles/bidirectional-wiring-principle.md`; stub at `fr-br/`; update active refs | Principle + stub + link sweep subset |
+| **D** | `git mv` `BIDIRECTIONAL_WIRING_PRINCIPLE.md` → `docs/governance/principles/bidirectional-wiring-principle.md`; stub at `fbu/`; update active refs | Principle + stub + link sweep subset |
 | **E** | Active surface sweep (inventory §2) | Updated agent/workflow docs |
 | **F** | CREATE `docs/maintenance/book-repo-docs-scope.md` (or merge with T10) | AC3 |
 | **G** | Run tests T1–T7; populate inventory §4 | Verification log |
@@ -165,7 +165,7 @@ Doc-only relocation: structural verification (no new pytest module). Do **not** 
 - `docs/architecture/standards-and-adrs/changelog-archival-policy.md` → stub
 - `docs/architecture/standards-and-adrs/specification-and-planning-artifacts-policy.md` → stub
 - `docs/architecture/standards-and-adrs/dev-kit-ipw-ipp-vs-icw-artifacts.md` → stub
-- `docs/kanban/fr-br/BIDIRECTIONAL_WIRING_PRINCIPLE.md` → stub
+- `docs/kanban/fbu/BIDIRECTIONAL_WIRING_PRINCIPLE.md` → stub
 
 **UPDATE (Wave E — active surfaces):**
 
@@ -283,14 +283,14 @@ housekeeping_policy: keep
 
 ## References
 
-- [FR-101](../kanban/fr-br/FR-101-consolidate-governance-under-docs-governance.md)
+- [FR-101](../kanban/fbu/FR-101-consolidate-governance-under-docs-governance.md)
 - [E7:S01:T11 task](../kanban/epics/epic-07/story-01-codebase-maintenance-tasks/T11-consolidate-governance-under-docs-governance-fr101.md)
 - [GOVERNANCE-REHOUSING-INVENTORY.md](../governance/GOVERNANCE-REHOUSING-INVENTORY.md)
 - [docs/governance/README.md](../governance/README.md)
 - [ipw-adr-necessity-checklist.md](../architecture/standards-and-adrs/ipw-adr-necessity-checklist.md)
 - [ADR-006](../architecture/standards-and-adrs/ADR-006-book-project-private-repository-spin-off.md)
-- [FR-042](../kanban/fr-br/FR-042-implementation-planning-workflow-ipw.md)
-- [FR-094](../kanban/fr-br/FR-094-ipw-slash-command-and-task-state-transition-mandate.md)
-- [FR-077](../kanban/fr-br/FR-077-ipw-built-task-status-transition-and-kboard-sync.md)
+- [FR-042](../kanban/fbu/FR-042-implementation-planning-workflow-ipw.md)
+- [FR-094](../kanban/fbu/FR-094-ipw-slash-command-and-task-state-transition-mandate.md)
+- [FR-077](../kanban/fbu/FR-077-ipw-built-task-status-transition-and-kboard-sync.md)
 - [rw-trigger-dual-source-parity.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/docs/rw-trigger-dual-source-parity.md)
 - [.claude/commands/ipw.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/.claude/commands/ipw.md)

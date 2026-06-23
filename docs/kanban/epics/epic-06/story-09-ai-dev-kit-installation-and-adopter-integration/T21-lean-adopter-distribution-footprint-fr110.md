@@ -16,9 +16,9 @@ housekeeping_policy: keep
 **Version:** v0.6.9.21+5  
 **Code:** E06S09T21
 
-**Upstream:** [FR-110](../../../fr-br/FR-110-lean-adopter-distribution-footprint-and-vendor-bundle.md)
+**Upstream:** [FR-110](../../../fbu/FR-110-lean-adopter-distribution-footprint-and-vendor-bundle.md)
 
-**Related:** [FR-062](../../../fr-br/FR-062-github-release-installation-experience.md) · [FR-080](../../../fr-br/FR-080-greenfield-installation-process.md) · [FR-082](../../../fr-br/FR-082-installation-distribution-canonical-repo-alignment.md) · [INSTALL_IN_YOUR_PROJECT.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/INSTALL_IN_YOUR_PROJECT.md)
+**Related:** [FR-062](../../../fbu/FR-062-github-release-installation-experience.md) · [FR-080](../../../fbu/FR-080-greenfield-installation-process.md) · [FR-082](../../../fbu/FR-082-installation-distribution-canonical-repo-alignment.md) · [INSTALL_IN_YOUR_PROJECT.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/INSTALL_IN_YOUR_PROJECT.md)
 
 ---
 
@@ -30,7 +30,7 @@ Create and maintain repo-root **`greenfield-install/`** as the canonical lean ad
 
 ## Input
 
-- [FR-110](../../../fr-br/FR-110-lean-adopter-distribution-footprint-and-vendor-bundle.md) — `greenfield-install/` delivery model (user direction 2026-06-05)
+- [FR-110](../../../fbu/FR-110-lean-adopter-distribution-footprint-and-vendor-bundle.md) — `greenfield-install/` delivery model (user direction 2026-06-05)
 - Footprint baseline: full tracked tree ~27 MiB; lean subset ~9 MiB; ~67% maintainer-only
 - Greenfield orchestrator: `install_greenfield_path.py` (FR-080)
 
@@ -126,6 +126,6 @@ Phase 0 must validate installer path assumptions (e.g. `install_greenfield_path.
 
 ## References
 
-- [FR-110](../../../fr-br/FR-110-lean-adopter-distribution-footprint-and-vendor-bundle.md)
+- [FR-110](../../../fbu/FR-110-lean-adopter-distribution-footprint-and-vendor-bundle.md)
 - [Story 009](../story-09-ai-dev-kit-installation-and-adopter-integration.md)
 - [E06:S09:T22](T22-package-documentation-greenfield-install-alignment-fr110.md) (package README alignment)

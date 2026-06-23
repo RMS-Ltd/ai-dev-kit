@@ -38,7 +38,7 @@ housekeeping_policy: keep
 | `expected` | Repo catalog consumed automatically or documented hook |
 | `observed` | **No.** Cursor does not read this YAML. Command approval uses **Cursor Settings** (Agents / Auto-Run / sandbox allowlist — exact labels vary by version). Maintainers map regex families from the catalog into UI rules manually. |
 | `result` | `pass` (honest model documented in ADR-013 + guide) |
-| `notes` | Optional future: Cursor hooks if API stabilizes. Does **not** fix [BR-039](../kanban/fr-br/BR-039-cascade-whitelist-security-prompt-usability-blocker.md) (Windsurf/Cascade vendor). |
+| `notes` | Optional future: Cursor hooks if API stabilizes. Does **not** fix [BR-039](../kanban/fbu/BR-039-cascade-whitelist-security-prompt-usability-blocker.md) (Windsurf/Cascade vendor). |
 
 ---
 

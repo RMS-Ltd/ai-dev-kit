@@ -8,7 +8,7 @@ housekeeping_policy: keep
 
 # Kanban rehousing inventory (Phase 0)
 
-**FR:** [FR-118](../kanban/fr-br/FR-118-promote-kanban-to-docs-kanban-retire-project-management-shell.md)  
+**FR:** [FR-118](../kanban/fbu/FR-118-promote-kanban-to-docs-kanban-retire-project-management-shell.md)  
 **Task:** [E07:S01:T12](../kanban/epics/epic-07/story-01-codebase-maintenance-tasks/T12-promote-kanban-to-docs-kanban-retire-project-management-fr118.md)  
 **IPP:** [IPP-E07S01T12](../implementation-cycles/IPP-E07S01T12-kanban-path-promotion-fr118.md)  
 **Status:** APPROVED — execution in progress (2026-06-08)
@@ -56,7 +56,7 @@ housekeeping_policy: keep
 | `docs/kanban/` | **MOVE** | `docs/kanban/` (entire tree) |
 | `docs/project-management/rituals/` | **DELETE** | After link sweep → `docs/governance/kanban/` |
 | `docs/project-management/README.md` | **STUB** | Point to `docs/kanban/` |
-| `rw-config.yaml` `kanban_root` / `fr_br_root` | **REWRITE** | `docs/kanban`, `docs/kanban/fr-br` |
+| `rw-config.yaml` `kanban_root` / `fbu_root` | **REWRITE** | `docs/kanban`, `docs/kanban/fbu` |
 | `packages/frameworks/kanban/scripts/install_kanban_framework.py` | **REWRITE** | Default `docs/kanban` |
 | `greenfield-install/**` | **REWRITE** | Sync via `sync_greenfield_install.py` |
 | `docs/changelog-and-release-notes/changelog-archive/` | **OUT** | Historical paths retained |

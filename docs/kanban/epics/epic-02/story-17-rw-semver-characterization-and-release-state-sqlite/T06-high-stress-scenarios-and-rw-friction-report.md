@@ -42,7 +42,7 @@ After T02/T05 runs, synthesize **friction patterns** and add **high-stress scena
 
 - [T02 baseline pattern notes](T02-baseline-characterization-runs-legacy-md-yaml.md)
 - [T05 parity diff report](T05-parity-replay-scenario-matrix-on-sqlite.md)
-- Prior collision repairs: [BR-073](../../../fr-br/BR-073-semver-task-touch-collision-retrospective-fix.md), [BR-097](../../../fr-br/BR-097-rw-agent-reuses-tagged-build-and-force-moves-release-tags.md)
+- Prior collision repairs: [BR-073](../../../fbu/BR-073-semver-task-touch-collision-retrospective-fix.md), [BR-097](../../../fbu/BR-097-rw-agent-reuses-tagged-build-and-force-moves-release-tags.md)
 
 ---
 

@@ -3,7 +3,7 @@
 **Last Updated:** 2025-12-18  
 **Status:** Active
 
-> **ai-dev-kit monorepo (2026-03-30):** This repository uses **static** `img.shields.io/badge/...` badges in the root README only; there is **no** `update-badges.yml` or orphan `shields` branch here. See [FR-064](../../kanban/fr-br/FR-064-shields-branch-private-repo-badges.md). The rest of this guide remains useful for **adopters** who want BYOB with a **dedicated public badge repo** and explicit `repository` / `actor` in the workflow.
+> **ai-dev-kit monorepo (2026-03-30):** This repository uses **static** `img.shields.io/badge/...` badges in the root README only; there is **no** `update-badges.yml` or orphan `shields` branch here. See [FR-064](../../kanban/fbu/FR-064-shields-branch-private-repo-badges.md). The rest of this guide remains useful for **adopters** who want BYOB with a **dedicated public badge repo** and explicit `repository` / `actor` in the workflow.
 
 ## Problem
 

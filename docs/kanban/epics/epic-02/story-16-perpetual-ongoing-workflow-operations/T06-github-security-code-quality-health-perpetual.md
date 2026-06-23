@@ -20,7 +20,7 @@ housekeeping_policy: keep
 **Task Type:** Perpetual Maintenance
 
 
-**Upstream:** [FR-112 — Perpetual GitHub CI and security health lanes](../../../fr-br/FR-112-perpetual-github-ci-and-security-health-lanes.md)
+**Upstream:** [FR-112 — Perpetual GitHub CI and security health lanes](../../../fbu/FR-112-perpetual-github-ci-and-security-health-lanes.md)
 
 Publication Status: NOT_APPLICABLE  
 Publication N/A Reason: Perpetual maintainer kanban task; repo SoT per BR-066 — not Docusaurus-published.
@@ -30,7 +30,7 @@ Publication N/A Reason: Perpetual maintainer kanban task; repo SoT per BR-066 �
 ## Input
 
 - [IPP-E02S16T06](../../../../implementation-cycles/IPP-E02S16T06-github-security-code-quality-health-perpetual-fr112.md)
-- [FR-112](../../../fr-br/FR-112-perpetual-github-ci-and-security-health-lanes.md)
+- [FR-112](../../../fbu/FR-112-perpetual-github-ci-and-security-health-lanes.md)
 - [E08:S03:T15 — Actions CI (Perpetual)](T15-github-actions-ci-health-perpetual-fr112.md) — merge gate owner
 - [IPP-E08S03T12](../../../../implementation-cycles/IPP-E08S03T12-code-quality-maintainability-backlog-br099.md) · [IPP-E08S03T13](../../../../implementation-cycles/IPP-E08S03T13-code-quality-reliability-backlog-br100.md) · [IPP-E08S03T14](../../../../implementation-cycles/IPP-E08S03T14-code-quality-ai-suggestions-backlog-br101.md)
 
@@ -574,7 +574,7 @@ Between 2026-06-16 09:54–15:03 UTC, **23** `ai-findings-autofix/*` PRs merged 
 | ---- | ------ |
 | **Do not merge** `ai-findings-autofix/*` PRs on autopilot | Triage in GH UI only; no direct-to-`main` merges |
 | **Real bugs** | Fix on `dev` / epic branch → test → **`RW E02:S16:T06`** |
-| **Cosmetic / stylistic AI suggestions** | **Ignore** — lag-accepted per [BR-101](../../../fr-br/BR-101-code-quality-ai-suggestions-backlog.md) (no GH dismiss API) |
+| **Cosmetic / stylistic AI suggestions** | **Ignore** — lag-accepted per [BR-101](../../../fbu/BR-101-code-quality-ai-suggestions-backlog.md) (no GH dismiss API) |
 | **Frozen file groups** | No further autofix merges for portal patch + `test_allocate` unless a **functional** regression is demonstrated |
 
 ### Canonical implementations (frozen)
@@ -674,7 +674,7 @@ Between 2026-06-16 09:54–15:03 UTC, **23** `ai-findings-autofix/*` PRs merged 
 ## References
 
 - [IPP-E02S16T06](../../../../implementation-cycles/IPP-E02S16T06-github-security-code-quality-health-perpetual-fr112.md)
-- [FR-112](../../../fr-br/FR-112-perpetual-github-ci-and-security-health-lanes.md)
+- [FR-112](../../../fbu/FR-112-perpetual-github-ci-and-security-health-lanes.md)
 - [E08:S03:T15 — GitHub Actions CI health (Perpetual)](T15-github-actions-ci-health-perpetual-fr112.md)
 - [E08:S03:T12 — BR-099 maintainability backlog](T12-code-quality-maintainability-backlog-br099.md)
 - [E08:S03:T13 — BR-100 reliability backlog](T13-code-quality-reliability-backlog-br100.md)

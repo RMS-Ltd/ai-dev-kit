@@ -9,7 +9,7 @@ housekeeping_policy: keep
 # E06:S09:T33 — Planning: ADK package update mechanism (FR-129)
 
 **Host Task:** [`T33-adk-package-update-mechanism-fr129.md`](../kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T33-adk-package-update-mechanism-fr129.md) **(E06:S09:T33)**  
-**Planning for:** [FR-129 — ADK package update mechanism](../kanban/fr-br/FR-129-adk-package-update-mechanism-fr129.md)  
+**Planning for:** [FR-129 — ADK package update mechanism](../kanban/fbu/FR-129-adk-package-update-mechanism-fr129.md)  
 **Status:** Published (MWF Leg 1 — IPW)
 
 ---

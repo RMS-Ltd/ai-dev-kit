@@ -256,8 +256,8 @@ Each row: expected integration (T01/README/integration guide), observed (evidenc
 - [E02:S13 integration-alignment-report](../kanban/epics/epic-02/story-13-workflow-management-package-implementation-review/integration-alignment-report.md)
 - Package integration: `packages/frameworks/doc-lifecycle/integration/kanban-integration.md`, `workflow-mgt-integration.md`
 - Architecture ADRs: `docs/architecture/standards-and-adrs/doc-lifecycle-metadata-spec.md`, `doc-lifecycle-policy.md`, `policy-salience-schema.md`
-- [FR-110 — greenfield-install](../kanban/fr-br/FR-110-lean-adopter-distribution-footprint-and-vendor-bundle.md)
-- [FR-042 — IPW](../kanban/fr-br/FR-042-implementation-planning-workflow-ipw.md)
+- [FR-110 — greenfield-install](../kanban/fbu/FR-110-lean-adopter-distribution-footprint-and-vendor-bundle.md)
+- [FR-042 — IPW](../kanban/fbu/FR-042-implementation-planning-workflow-ipw.md)
 - [gap-log-schema.md](../architecture/standards-and-adrs/gap-log-schema.md)
 - [ipw-adr-necessity-checklist.md](../architecture/standards-and-adrs/ipw-adr-necessity-checklist.md)
 - `.claude/commands/ipw.md`

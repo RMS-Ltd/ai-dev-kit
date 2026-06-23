@@ -9,7 +9,7 @@ housekeeping_policy: keep
 # E06:S09:T24 — Planning: Spec, Tests, Implementation Plan (IPW)
 
 **Host Task:** [`T24-acquisition-layer-adk-error-codes-fr111.md`](../kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T24-acquisition-layer-adk-error-codes-fr111.md) **(E06:S09:T24)**  
-**Planning for:** [FR-111](../kanban/fr-br/FR-111-acquisition-layer-adk-error-codes-and-install-error-doc-hygiene.md)  
+**Planning for:** [FR-111](../kanban/fbu/FR-111-acquisition-layer-adk-error-codes-and-install-error-doc-hygiene.md)  
 **Status:** Implemented (**v0.6.9.24+2**)
 
 ---
@@ -143,7 +143,7 @@ Close the pre-install acquisition gap in FR-108 so lean-tree adopters get `ADK-I
 
 ## References
 
-- [FR-111](../kanban/fr-br/FR-111-acquisition-layer-adk-error-codes-and-install-error-doc-hygiene.md)
-- [FR-108](../kanban/fr-br/FR-108-install-setup-error-code-registry-and-emission.md)
+- [FR-111](../kanban/fbu/FR-111-acquisition-layer-adk-error-codes-and-install-error-doc-hygiene.md)
+- [FR-108](../kanban/fbu/FR-108-install-setup-error-code-registry-and-emission.md)
 - [IPP-E06S09T20](IPP-E06S09T20-install-setup-error-code-registry-fr108.md)
 - [ADR-016](../architecture/standards-and-adrs/ADR-016-install-setup-error-code-taxonomy.md)

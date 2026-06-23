@@ -12,7 +12,7 @@ housekeeping_policy: keep
 **Date:** 2026-05-30  
 **Deciders:** User (Ruari Mears)  
 **Implementing task:** [E02:S08:T08](../../kanban/epics/epic-02/story-08-harden-release-workflow-reliability/T08-enhanced-workflow-forensic-logging-and-rollback-hardening-fr-059.md)  
-**Origin FR:** [FR-059](../../kanban/fr-br/FR-059-enhanced-workflow-logging-system.md)  
+**Origin FR:** [FR-059](../../kanban/fbu/FR-059-enhanced-workflow-logging-system.md)  
 **Planning package:** [IPP-E2S8T8](../../implementation-cycles/IPP-E2S08T08-forensic-logging-rollback-fr059.md)
 
 ---
@@ -65,5 +65,5 @@ Adopt a **layered hybrid**:
 ## Related
 
 - [ADR-011](ADR-011-workflow-step-tracker-and-agent-run-log.md) — Workflow Step Tracker and agent run log (E02:S01:T23)
-- [FR-058](../../kanban/fr-br/FR-058-markdown-maintenance-workflow.md) — log formatting consistency context
+- [FR-058](../../kanban/fbu/FR-058-markdown-maintenance-workflow.md) — log formatting consistency context
 - [ADR-004](ADR-004-ipp-state-transition-contract.md) — task status transitions on implementation

@@ -18,7 +18,7 @@ housekeeping_policy: keep
 
 **Scope:** Phased burn-down of GitHub Code Quality **maintainability** findings on `main`. **COMPLETE** — **re-closed** @ **v0.8.3.12+13** (terminal forensic anchor); operator dashboard **Good** @ `main` `ed379ab` (+11); handoff **T16** perpetual.
 
-**Upstream:** [BR-099 — Code Quality maintainability backlog](../../../fr-br/BR-099-code-quality-maintainability-backlog.md)
+**Upstream:** [BR-099 — Code Quality maintainability backlog](../../../fbu/BR-099-code-quality-maintainability-backlog.md)
 
 Publication Status: NOT_APPLICABLE
 
@@ -27,7 +27,7 @@ Publication Status: NOT_APPLICABLE
 ## Input
 
 - [IPP-E08S03T12](../../../../implementation-cycles/IPP-E08S03T12-code-quality-maintainability-backlog-br099.md) — wave 6 (**§4.7** steps 52–59); closure @ +8; CQG verification ([operator guide](../../../../../../packages/frameworks/tooling-automation/docs/code-quality-gate-operator-guide.md))
-- [BR-099](../../../fr-br/BR-099-code-quality-maintainability-backlog.md)
+- [BR-099](../../../fbu/BR-099-code-quality-maintainability-backlog.md)
 - [Security & quality — Standard findings](https://github.com/RMS-Ltd/ai-dev-kit/security/quality)
 - [BR-100 — Reliability backlog](T13-code-quality-reliability-backlog-br100.md) (coordinate sequencing: reliability first if overlapping hotspots)
 - [E08:S03:T11 — Code scanning permissions (BR-098)](T11-codeql-missing-workflow-permissions-br098.md)
@@ -49,7 +49,7 @@ Publication Status: NOT_APPLICABLE
 
 ## Baseline manifest (2026-06-05)
 
-**Source:** GitHub Code Quality dashboard ([BR-099](../../../fr-br/BR-099-code-quality-maintainability-backlog.md)); `gh api code-scanning/alerts` returned 0 (Code Quality findings use separate product surface).
+**Source:** GitHub Code Quality dashboard ([BR-099](../../../fbu/BR-099-code-quality-maintainability-backlog.md)); `gh api code-scanning/alerts` returned 0 (Code Quality findings use separate product surface).
 
 | Field | Value |
 | ----- | ----- |
@@ -435,8 +435,8 @@ Publication Status: NOT_APPLICABLE
 ## References
 
 - [IPP-E08S03T12](../../../../implementation-cycles/IPP-E08S03T12-code-quality-maintainability-backlog-br099.md) — wave 6 @ [§4.7](../../../../implementation-cycles/IPP-E08S03T12-code-quality-maintainability-backlog-br099.md#47-wave-6-ledger-planned--path-b-do-not-re-execute-waves-15); closure @ +8
-- [BR-099](../../../fr-br/BR-099-code-quality-maintainability-backlog.md)
-- [BR-100](../../../fr-br/BR-100-code-quality-reliability-backlog.md) — wave-2 deferred **16** print-at-import → T12 wave 4 ([T13 task](T13-code-quality-reliability-backlog-br100.md))
-- [BR-101](../../../fr-br/BR-101-code-quality-ai-suggestions-backlog.md)
+- [BR-099](../../../fbu/BR-099-code-quality-maintainability-backlog.md)
+- [BR-100](../../../fbu/BR-100-code-quality-reliability-backlog.md) — wave-2 deferred **16** print-at-import → T12 wave 4 ([T13 task](T13-code-quality-reliability-backlog-br100.md))
+- [BR-101](../../../fbu/BR-101-code-quality-ai-suggestions-backlog.md)
 - [T16 Wave 1 re-scan](T16-github-security-code-quality-health-perpetual-fr112.md) — rule breakdown cross-ref @ `f6aa4dca`
 - [scripts/sync_greenfield_install.py](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/scripts/sync_greenfield_install.py) — mirror sync (IPP step 45)

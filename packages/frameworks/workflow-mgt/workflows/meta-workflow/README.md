@@ -1,6 +1,6 @@
 # Meta-Workflow (MWF)
 
-Orchestrates **composite workflow chains** by delegating to encapsulated atomic workflows — without embedding chain logic in IPW, IDW, or RW entry points ([FR-124](../../../../../../docs/kanban/fr-br/FR-124-meta-workflow-orchestration-composite-workflow-chains.md)).
+Orchestrates **composite workflow chains** by delegating to encapsulated atomic workflows — without embedding chain logic in IPW, IDW, or RW entry points ([FR-124](../../../../../../docs/kanban/fbu/FR-124-meta-workflow-orchestration-composite-workflow-chains.md)).
 
 ## Triggers
 
@@ -22,7 +22,7 @@ MWF E02:S03:T09 delivery --push     # forward to IDW --rw leg
 
 **Resume:** When IPP is already linked on the host task, skip Leg 1.
 
-**Do not use:** `IPW --rw` — superseded by MWF ([FR-123](../../../../../../docs/kanban/fr-br/FR-123-ipw-full-delivery-chain-idf-rw.md) withdrawn).
+**Do not use:** `IPW --rw` — superseded by MWF ([FR-123](../../../../../../docs/kanban/fbu/FR-123-ipw-full-delivery-chain-idf-rw.md) withdrawn).
 
 ## Documentation
 

@@ -38,7 +38,7 @@ Add a temporary execution log file to RW that is written during execution. Enabl
 
 ## Input
 
-- **FR-044:** [FR-044-rw-temporary-execution-log-for-recovery-and-forensics.md](../../../fr-br/FR-044-rw-temporary-execution-log-for-recovery-and-forensics.md)
+- **FR-044:** [FR-044-rw-temporary-execution-log-for-recovery-and-forensics.md](../../../fbu/FR-044-rw-temporary-execution-log-for-recovery-and-forensics.md)
 - **IPP-E05S01T44:** [IPP-E05S01T44-rw-temporary-execution-log.md](../../../../implementation-cycles/IPP-E05S01T44-rw-temporary-execution-log.md)
 - **RW Agent Guide:** `packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md`
 - **rw-config.yaml:** Project config for paths
@@ -67,7 +67,7 @@ Add a temporary execution log file to RW that is written during execution. Enabl
 
 ## References
 
-- **FR-044:** [FR-044-rw-temporary-execution-log-for-recovery-and-forensics.md](../../../fr-br/FR-044-rw-temporary-execution-log-for-recovery-and-forensics.md)
+- **FR-044:** [FR-044-rw-temporary-execution-log-for-recovery-and-forensics.md](../../../fbu/FR-044-rw-temporary-execution-log-for-recovery-and-forensics.md)
 - **IPP-E05S01T44:** [IPP-E05S01T44-rw-temporary-execution-log.md](../../../../implementation-cycles/IPP-E05S01T44-rw-temporary-execution-log.md)
 - **ADR-011:** [ADR-011-workflow-step-tracker-and-agent-run-log.md](../../../../architecture/standards-and-adrs/ADR-011-workflow-step-tracker-and-agent-run-log.md)
 - **RW Agent Guide:** `packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md`

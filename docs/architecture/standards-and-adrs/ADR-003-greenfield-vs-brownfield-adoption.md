@@ -71,7 +71,7 @@ Greenfield documentation may be opinionated for speed and clarity. That does **n
 - [`INSTALL_IN_YOUR_PROJECT.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/INSTALL_IN_YOUR_PROJECT.md) — adopt-facing entry (Adopter Path Selector + greenfield happy path vs brownfield modular adoption).
 - [`rw-validators-consumer-layout.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/docs/rw-validators-consumer-layout.md) — example of **contract-first** integration for vendored workflow management.
 - [E6:S09 — AI Dev Kit installation and adopter integration](../../kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration.md) — Kanban story for FR-080–082.
-- [FR-080](../../kanban/fr-br/FR-080-greenfield-installation-process.md) — delivery: end-to-end greenfield installation process.
-- [FR-081](../../kanban/fr-br/FR-081-brownfield-modular-adopter-integration.md) — delivery: brownfield modular adopter integration.
-- [FR-082](../../kanban/fr-br/FR-082-installation-distribution-canonical-repo-alignment.md) — tooling/docs: canonical GitHub repo alignment for install assets.
-- [ECC ↔ ADK harness integration specification](ecc-adk-harness-layer-integration-specification.md) — optional third-party harness (MIT ECC); modular surface for greenfield and brownfield adopters ([FR-098](../../kanban/fr-br/FR-098-ecc-optional-harness-layer-integration.md)).
+- [FR-080](../../kanban/fbu/FR-080-greenfield-installation-process.md) — delivery: end-to-end greenfield installation process.
+- [FR-081](../../kanban/fbu/FR-081-brownfield-modular-adopter-integration.md) — delivery: brownfield modular adopter integration.
+- [FR-082](../../kanban/fbu/FR-082-installation-distribution-canonical-repo-alignment.md) — tooling/docs: canonical GitHub repo alignment for install assets.
+- [ECC ↔ ADK harness integration specification](ecc-adk-harness-layer-integration-specification.md) — optional third-party harness (MIT ECC); modular surface for greenfield and brownfield adopters ([FR-098](../../kanban/fbu/FR-098-ecc-optional-harness-layer-integration.md)).

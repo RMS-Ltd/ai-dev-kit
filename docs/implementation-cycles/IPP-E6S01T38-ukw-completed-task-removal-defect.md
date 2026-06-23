@@ -9,7 +9,7 @@ housekeeping_policy: keep
 # E6:S01:T38 — IPP: UKW Completed Task Removal Defect (BR-072)
 
 **Host Task:** [E6:S01:T38](../kanban/epics/epic-06/story-01-br-repo/T38-ukw-completed-tasks-not-removed-from-kboard-br072.md)  
-**Planning for:** [BR-072](../kanban/fr-br/BR-072-ukw-completed-tasks-not-removed-from-kboard.md)  
+**Planning for:** [BR-072](../kanban/fbu/BR-072-ukw-completed-tasks-not-removed-from-kboard.md)  
 **Status:** Published  
 **Created:** 2026-05-12  
 **Version context:** v0.6.1.38+0
@@ -190,7 +190,7 @@ EXECUTE — Part B: Update MoSCOW priority list (🧠 REQUIRES INTELLIGENT PRIOR
 Match exactly to existing entries:
 
 ```markdown
-- **[E#:S##:T##](epics/Epic-#/Story-###-.../T##-....md)** — [FR/BR-###] [one-line description]; **[FR/BR link](fr-br/...)** IMPLEMENTED.  
+- **[E#:S##:T##](epics/Epic-#/Story-###-.../T##-....md)** — [FR/BR-###] [one-line description]; **[FR/BR link](fbu/...)** IMPLEMENTED.  
   **Completed:** `YYYY-MM-DDTHH:MM:SSZ` | **Version:** `vX.X.X.X+N` | **Agent:** `UKW`
 ```
 

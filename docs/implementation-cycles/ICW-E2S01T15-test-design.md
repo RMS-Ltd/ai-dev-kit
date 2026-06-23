@@ -24,7 +24,7 @@ Validate that canonical RW step definitions stay single-source and that all trac
 ## Coverage Matrix
 
 1. **FR metadata correctness**
-   - File: `docs/kanban/fr-br/FR-049-canonical-rw-step-list-single-source-of-truth.md`
+   - File: `docs/kanban/fbu/FR-049-canonical-rw-step-list-single-source-of-truth.md`
    - Check: `Code` and `Implementing Task` fields point to `E2:S01:T15`.
 
 2. **Task housing correctness**

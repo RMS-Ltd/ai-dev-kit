@@ -10,7 +10,7 @@ housekeeping_policy: keep
 
 **Host Task:** [`T02-inventory-and-classify-workflow-perpetual-tasks.md`](../kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T02-inventory-and-classify-workflow-perpetual-tasks.md) **(E02:S16:T02)**  
 **Planning for:** Exhaustive inventory, disposition, ID map, and tiered reference map for workflow-related perpetual anchors (unblocks [IPP-E2S16T3 §7 Tranche 3B](IPP-E2S16T03-rehouse-workflow-perpetual-tasks.md))  
-**Upstream:** [FR-088](../kanban/fr-br/FR-088-dedicated-story-for-perpetual-ongoing-tasks.md), [IPP-E2S16T1](IPP-E2S16T01-canonical-perpetual-ongoing-tasks-story.md), [E4S19T03 investigation report](E4S19T03-e6s07-default-housing-investigation-report.md)  
+**Upstream:** [FR-088](../kanban/fbu/FR-088-dedicated-story-for-perpetual-ongoing-tasks.md), [IPP-E2S16T1](IPP-E2S16T01-canonical-perpetual-ongoing-tasks-story.md), [E4S19T03 investigation report](E4S19T03-e6s07-default-housing-investigation-report.md)  
 **Status:** Published (inventory artifact; execution of link edits is **T03 Tranche 3B**)
 
 ---
@@ -125,7 +125,7 @@ Uses IPP-E2S16T1 definitions unchanged:
 | Policy | Pattern / surfaces | Count (2026-06-03) | T03 3B action | Owner |
 | ------ | ------------------ | ------------------- | ------------- | ----- |
 | **ACTIVE_FIX** | `docs/kanban/**` | **35** occurrences in **22** files | Rewrite paths to canonical S16/S01 targets per §2.5 | `E02:S16:T03` |
-| **ACTIVE_FIX** | `docs/kanban/fr-br/**` (open/active) | subset of above | Same; preserve terminal FR status | `E02:S16:T03` |
+| **ACTIVE_FIX** | `docs/kanban/fbu/**` (open/active) | subset of above | Same; preserve terminal FR status | `E02:S16:T03` |
 | **ACTIVE_FIX** | `packages/frameworks/**` (KB, workflow mgt docs) | **4** occurrences in **3** files | Update active KB links only | `E02:S16:T03` |
 | **ACTIVE_FIX** | `docs/guides/**`, `docs/architecture/**` (non-archive) | **3** occurrences in **2** files | Fix when touched in 3B | `E02:S16:T03` |
 | **ARCHIVE_STUB** | `docs/changelog-and-release-notes/changelog-archive/**` | **62** in **53** files | One-line redirect comment if file edited; **no mass rewrite** | `E02:S16:T03` |

@@ -9,10 +9,10 @@ housekeeping_policy: keep
 # E07:S01:T12 — Planning: Kanban path promotion (IPW / FR-118)
 
 **Host Task:** [`T12-promote-kanban-to-docs-kanban-retire-project-management-fr118.md`](../kanban/epics/epic-07/story-01-codebase-maintenance-tasks/T12-promote-kanban-to-docs-kanban-retire-project-management-fr118.md) **(E07:S01:T12)**  
-**Planning for:** [FR-118](../kanban/fr-br/FR-118-promote-kanban-to-docs-kanban-retire-project-management-shell.md)  
+**Planning for:** [FR-118](../kanban/fbu/FR-118-promote-kanban-to-docs-kanban-retire-project-management-shell.md)  
 **Status:** Approved (planning complete — implementation authorized)
 
-> **IPW:** Consolidated IPP per [FR-042](../kanban/fr-br/FR-042-implementation-planning-workflow-ipw.md). Bidirectional wiring to host task **Input** and **References** is mandatory before implementation.
+> **IPW:** Consolidated IPP per [FR-042](../kanban/fbu/FR-042-implementation-planning-workflow-ipw.md). Bidirectional wiring to host task **Input** and **References** is mandatory before implementation.
 
 ---
 
@@ -25,7 +25,7 @@ housekeeping_policy: keep
 | RF1 | Phase 0 inventory with maintainer sign-off **before** any `git mv` | FR-118-F1, AC0 |
 | RF2 | Delete `docs/project-management/rituals/` after active-surface link sweep | FR-118-F3 |
 | RF3 | Canonical Kanban root = `docs/kanban/` via `git mv` (~1,100 files) | FR-118-F4 |
-| RF4 | `rw-config.yaml`: `kanban_root: docs/kanban`, `fr_br_root: docs/kanban/fr-br` | FR-118-F5 |
+| RF4 | `rw-config.yaml`: `kanban_root: docs/kanban`, `fbu_root: docs/kanban/fbu` | FR-118-F5 |
 | RF5 | Rewire agent bootstrap: `AGENTS.md`, `CLAUDE.md`, `project-agent-manifest.json`, `.cursorrules` | FR-118 |
 | RF6 | Framework installer default `docs/kanban` | FR-118-F6 |
 | RF7 | Sync workflow YAMLs, validators, tests, CI (~180 touchpoints) | FR-118 |
@@ -164,7 +164,7 @@ Reconcile task status; Step 7 four-surface report.
 
 ## References
 
-- [FR-118](../kanban/fr-br/FR-118-promote-kanban-to-docs-kanban-retire-project-management-shell.md)
+- [FR-118](../kanban/fbu/FR-118-promote-kanban-to-docs-kanban-retire-project-management-shell.md)
 - [GOVERNANCE-REHOUSING-INVENTORY.md](../governance/GOVERNANCE-REHOUSING-INVENTORY.md) (methodology)
 - [IPP-E7S01T11](IPP-E7S01T11-consolidate-governance-under-docs-governance.md) (precedent)
 - [ADR-007](../architecture/standards-and-adrs/ADR-007-book-governance-document-topology.md)

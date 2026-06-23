@@ -9,7 +9,7 @@ housekeeping_policy: keep
 # E06:S09:T29 — Planning: Spec, Tests, Implementation Plan (IPW)
 
 **Host Task:** [`T29-rw-install-non-interactive-changelog-prompt-br106.md`](../kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T29-rw-install-non-interactive-changelog-prompt-br106.md) **(E06:S09:T29)**  
-**Planning for:** [BR-106](../kanban/fr-br/BR-106-rw-install-non-interactive-changelog-prompt-eof.md) · triage **F19**  
+**Planning for:** [BR-106](../kanban/fbu/BR-106-rw-install-non-interactive-changelog-prompt-eof.md) · triage **F19**  
 **Status:** Approved (2026-06-10 — ready for implementation)
 
 ---
@@ -105,7 +105,7 @@ File: extend `tests/test_install_release_workflow_changelog_scaffold.py` and add
 | D3 | `greenfield-install/packages/frameworks/workflow-mgt/scripts/install_release_workflow.py` | UPDATE (FR-110) |
 | D4 | `tests/test_install_release_workflow_non_interactive_scaffold.py` | CREATE |
 | D5 | `INSTALL_IN_YOUR_PROJECT.md` | UPDATE |
-| D6 | `docs/kanban/fr-br/BR-106-*.md` | UPDATE on fix |
+| D6 | `docs/kanban/fbu/BR-106-*.md` | UPDATE on fix |
 
 ---
 

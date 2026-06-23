@@ -19,9 +19,9 @@ housekeeping_policy: keep
 
 **Historical Anchor:** `E06:S07:T109` (legacy housing under ADK analysis story; forensic marker **RW -k** v0.6.7.109+1)
 
-**Upstream:** [BR-059 – UKW MoSCOW incomplete story task coverage](../../../fr-br/BR-059-ukw-moscow-incomplete-story-task-coverage.md)
+**Upstream:** [BR-059 – UKW MoSCOW incomplete story task coverage](../../../fbu/BR-059-ukw-moscow-incomplete-story-task-coverage.md)
 
-**Coordinates:** [E02:S16:T03](T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md); related [BR-042](../../../fr-br/BR-042-ukw-agent-board-cleanup-failure.md), [BR-034](../../../fr-br/BR-034-ukw-moscow-prioritization-missing.md)
+**Coordinates:** [E02:S16:T03](T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md); related [BR-042](../../../fbu/BR-042-ukw-agent-board-cleanup-failure.md), [BR-034](../../../fbu/BR-034-ukw-moscow-prioritization-missing.md)
 
 Publication Status: NOT_APPLICABLE  
 Publication N/A Reason: Re-housed UKW governance task; consolidated IPP satisfies FR-042 gate.
@@ -32,7 +32,7 @@ Publication N/A Reason: Re-housed UKW governance task; consolidated IPP satisfie
 
 ## Input
 
-- [BR-059](../../../fr-br/BR-059-ukw-moscow-incomplete-story-task-coverage.md); [story-009](../../epic-05/story-09-docusaurus-documentation-portal.md) checklist vs **kboard** MoSCOW history.
+- [BR-059](../../../fbu/BR-059-ukw-moscow-incomplete-story-task-coverage.md); [story-009](../../epic-05/story-09-docusaurus-documentation-portal.md) checklist vs **kboard** MoSCOW history.
 - [E04:S19:T03 investigation report](../../../../implementation-cycles/E4S19T03-e6s07-default-housing-investigation-report.md) §5.2 (Wave 4 migration).
 
 ## Deliverable
@@ -81,7 +81,7 @@ $ cd packages/frameworks/workflow-mgt/scripts/kanban && python -m pytest test_va
 ## References
 
 - [IPP-E2S16T13-br059-ukw-moscow-full-story-coverage.md](../../../../implementation-cycles/IPP-E04S14T07-br059-ukw-moscow-full-story-coverage.md)
-- [BR-059](../../../fr-br/BR-059-ukw-moscow-incomplete-story-task-coverage.md)
+- [BR-059](../../../fbu/BR-059-ukw-moscow-incomplete-story-task-coverage.md)
 - [Superseded source: `E06:S07:T109`](../../epic-06/story-07-adk-implementation-analysis-and-package-management/T109-br059-ukw-moscow-full-story-task-coverage.md)
 - [FR-087 / E04:S19:T03](../../../../implementation-cycles/E4S19T03-e6s07-default-housing-investigation-report.md)
 - `packages/frameworks/workflow-mgt/scripts/kanban/validate_story_moscow_coverage.py`

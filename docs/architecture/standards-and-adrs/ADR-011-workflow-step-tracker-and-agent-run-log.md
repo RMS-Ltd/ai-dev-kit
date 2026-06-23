@@ -42,4 +42,4 @@ Agent run log and forensic journal are **distinct** layers — do not merge sche
 ## Related
 
 - [ADR-008](ADR-008-workflow-forensic-logging-and-checkpoints.md)
-- [FR-044](../../kanban/fr-br/FR-044-rw-temporary-execution-log-for-recovery-and-forensics.md)
+- [FR-044](../../kanban/fbu/FR-044-rw-temporary-execution-log-for-recovery-and-forensics.md)

@@ -25,7 +25,7 @@ Publication N/A Reason: FR-042 consolidated IPP; verification and kanban/FBU rec
 
 ## Scope
 
-**Verification and FBU closure** for [BR-005](../../../fr-br/BR-005-kanban-framework-epic-structure-gap-uat-finding.md) Fix 1 — update `CANONICAL_EPICS.md` to include core epics 1–8 and ancillary epics 9–21.
+**Verification and FBU closure** for [BR-005](../../../fbu/BR-005-kanban-framework-epic-structure-gap-uat-finding.md) Fix 1 — update `CANONICAL_EPICS.md` to include core epics 1–8 and ancillary epics 9–21.
 
 Historical delivery (embedded in [story-006](../story-06-comprehensive-canonical-est-template-system.md)):
 
@@ -39,7 +39,7 @@ This discrete task reconciles BR-005 Fix 1, kanban boards, and forensic markers 
 ## Input
 
 - **[IPP-E04S06T06](../../../../implementation-cycles/IPP-E04S06T06-br005-canonical-epics-structure-gap.md)** — specification, test design, implementation plan (IPW)
-- **[BR-005](../../../fr-br/BR-005-kanban-framework-epic-structure-gap-uat-finding.md)** — UAT finding and acceptance criteria
+- **[BR-005](../../../fbu/BR-005-kanban-framework-epic-structure-gap-uat-finding.md)** — UAT finding and acceptance criteria
 - **[story-006](../story-06-comprehensive-canonical-est-template-system.md)** — program delivery record (T00–T10)
 - [`packages/frameworks/kanban/templates/CANONICAL_EPICS.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/kanban/templates/CANONICAL_EPICS.md) — primary fix target
 - [`packages/frameworks/kanban/templates/COMPREHENSIVE_CANONICAL_EST_STRUCTURE.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/kanban/templates/COMPREHENSIVE_CANONICAL_EST_STRUCTURE.md) — authoritative source
@@ -98,7 +98,7 @@ This discrete task reconciles BR-005 Fix 1, kanban boards, and forensic markers 
 
 ## References
 
-- [BR-005](../../../fr-br/BR-005-kanban-framework-epic-structure-gap-uat-finding.md)
+- [BR-005](../../../fbu/BR-005-kanban-framework-epic-structure-gap-uat-finding.md)
 - [IPP-E04S06T06](../../../../implementation-cycles/IPP-E04S06T06-br005-canonical-epics-structure-gap.md)
 - [story-006](../story-06-comprehensive-canonical-est-template-system.md)
 - [`CANONICAL_EPICS.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/kanban/templates/CANONICAL_EPICS.md)

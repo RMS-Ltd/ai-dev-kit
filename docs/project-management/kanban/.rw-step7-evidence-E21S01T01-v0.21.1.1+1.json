@@ -7,7 +7,7 @@
     {"path": "docs/project-management/kanban/epics/epic-21/story-01-language-selection-at-setup/T01-add-language-selection-prompt-to-template-setup-github-templ.md", "why": "host task version anchor"},
     {"path": "docs/project-management/kanban/epics/epic-21/story-01-language-selection-at-setup.md", "why": "story version sync"},
     {"path": "docs/project-management/kanban/epics/epic-21/Epic-21.md", "why": "epic last-updated"},
-    {"path": "docs/project-management/kanban/fr-br/FR-006-localization-language-selection-uk-us-english.md", "why": "implementing-task link"},
+    {"path": "docs/project-management/kanban/fbu/FR-006-localization-language-selection-uk-us-english.md", "why": "implementing-task link"},
     {"path": "docs/project-management/kanban/kboard.md", "why": "E21:S00 row + board metadata"}
   ]
 }

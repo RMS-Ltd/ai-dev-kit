@@ -40,7 +40,7 @@ As documented in BR-035, RW Step 13 (Housekeeping) is not working correctly. The
 
 ## Input
 
-- **Bug Report:** [BR-035: RW Housekeeping Step Not Working](../../../fr-br/BR-035-rw-housekeeping-step-not-working.md)
+- **Bug Report:** [BR-035: RW Housekeeping Step Not Working](../../../fbu/BR-035-rw-housekeeping-step-not-working.md)
 - **RW Documentation:** `packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md` (Step 17: Housekeeping)
 - **Cursor Rules:** `.cursorrules` (Step 13: Housekeeping reference)
 - **Current Implementation:** Step 13 uses `todo_write(merge=True, todos=[...])` to mark todos as completed
@@ -109,7 +109,7 @@ An updated RW Step 13 (Housekeeping) implementation that:
 
 ## Related Work
 
-- **Bug Report:** [BR-035: RW Housekeeping Step Not Working](../../../fr-br/BR-035-rw-housekeeping-step-not-working.md)
+- **Bug Report:** [BR-035: RW Housekeeping Step Not Working](../../../fbu/BR-035-rw-housekeeping-step-not-working.md)
 - **Workflow:** Release Workflow (RW) Step 13: Housekeeping
 
 ---

@@ -26,7 +26,7 @@ housekeeping_policy: keep
 
 - [x] **E01:S06:T02 – MIT LICENSE file and repository legal metadata (FR-117)** - ✅ COMPLETE (**v0.1.6.2+1**)
   - Task: [`T02-mit-license-file-and-repository-legal-metadata-fr117.md`](story-06-repository-ci-cd-setup/T02-mit-license-file-and-repository-legal-metadata-fr117.md)
-  - FR: [`FR-117`](../../fr-br/FR-117-mit-license-file-and-repository-legal-metadata.md)
+  - FR: [`FR-117`](../../fbu/FR-117-mit-license-file-and-repository-legal-metadata.md)
 
 ---
 

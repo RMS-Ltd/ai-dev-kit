@@ -14,7 +14,7 @@ housekeeping_policy: keep
 **Method:** Official greenfield path — [INSTALL_IN_YOUR_PROJECT.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/INSTALL_IN_YOUR_PROJECT.md)  
 **ADK release pin:** `v0.4.1063` (2026-06-08)  
 **Install log:** `logs/ai-dev-kit/install/session.log` (`AI_DEV_KIT_INSTALL_LOG_PATH`)  
-**UXR:** [UXR-025](../../../kanban/fr-br/UXR-025-starborn-legacy-greenfield-install-diary.md) · **Task:** [E06:S09:T25](../../../kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T25-starborn-legacy-greenfield-install-diary-triage-uxr025.md)
+**UXR:** [UXR-025](../../../kanban/fbu/UXR-025-starborn-legacy-greenfield-install-diary.md) · **Task:** [E06:S09:T25](../../../kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T25-starborn-legacy-greenfield-install-diary-triage-uxr025.md)
 
 ---
 

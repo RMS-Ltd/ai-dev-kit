@@ -16,7 +16,7 @@ housekeeping_policy: keep
 **Last updated:** 2026-04-27 (superseded by FR-092 meta-task; ownership transferred to E02:S15:T07 Wave 3)  
 **Code:** E02S15T02
 
-**Upstream (historical):** [FR-084 - IPP post-run governance reconciliation ownership](../../../fr-br/FR-084-ipp-post-run-governance-reconciliation-ownership.md)  
+**Upstream (historical):** [FR-084 - IPP post-run governance reconciliation ownership](../../../fbu/FR-084-ipp-post-run-governance-reconciliation-ownership.md)  
 **IPP (historical):** [`IPP-E2S15T2-ipp-post-run-governance-reconciliation-ownership.md`](../../../../implementation-cycles/IPP-E2S15T02-ipp-post-run-governance-reconciliation-ownership.md)  
 **Current owner:** [E02:S15:T07 — Canonical RW/UKW kanban consistency program (FR-092 meta)](T07-canonical-rw-ukw-kanban-consistency-program-fr092.md)  
 **Current IPP:** [IPP-E2S15T7](../../../../implementation-cycles/IPP-E2S15T07-canonical-rw-ukw-kanban-consistency-program.md)
@@ -27,7 +27,7 @@ housekeeping_policy: keep
 
 ## Input
 
-- [FR-084](../../../fr-br/FR-084-ipp-post-run-governance-reconciliation-ownership.md) requirements.
+- [FR-084](../../../fbu/FR-084-ipp-post-run-governance-reconciliation-ownership.md) requirements.
 - Existing IPW governance baseline under Story 015.
 - Current governance surfaces: host task docs, source FR/BR/UXR docs, `kboard.md`.
 
@@ -68,6 +68,6 @@ IPW completion currently does not guarantee deterministic reconciliation of all 
 
 ## References
 
-- [FR-084](../../../fr-br/FR-084-ipp-post-run-governance-reconciliation-ownership.md)
+- [FR-084](../../../fbu/FR-084-ipp-post-run-governance-reconciliation-ownership.md)
 - [Story 015](../story-15-ipw-governance-and-publication-contract.md)
 - [T01](T01-ipw-docusaurus-filing-contract-and-backfill-br066.md)

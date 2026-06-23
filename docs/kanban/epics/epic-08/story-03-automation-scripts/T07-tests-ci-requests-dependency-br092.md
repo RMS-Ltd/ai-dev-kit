@@ -17,7 +17,7 @@ housekeeping_policy: keep
 **Version:** v0.8.3.7+2
 **Code:** E08S03T07
 
-**Upstream:** [BR-092 — Tests CI missing `requests` dev dependency](../../../fr-br/BR-092-tests-ci-missing-requests-dev-dependency.md)  
+**Upstream:** [BR-092 — Tests CI missing `requests` dev dependency](../../../fbu/BR-092-tests-ci-missing-requests-dev-dependency.md)  
 **Planning:** [IPP-E8S3T7-tests-ci-requests-dependency-br092.md](../../../../implementation-cycles/IPP-E08S03T07-tests-ci-requests-dependency-br092.md)
 
 Publication Status: NOT_APPLICABLE
@@ -26,7 +26,7 @@ Publication Status: NOT_APPLICABLE
 
 ## Input
 
-- [BR-092](../../../fr-br/BR-092-tests-ci-missing-requests-dev-dependency.md)
+- [BR-092](../../../fbu/BR-092-tests-ci-missing-requests-dev-dependency.md)
 - [`setup.py`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/setup.py) — `[dev]` extras
 - [`requirements.txt`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/requirements.txt)
 - [`.github/workflows/tests.yml`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/.github/workflows/tests.yml)
@@ -52,5 +52,5 @@ Ensure **`pip install -e ".[dev]"`** satisfies all test collection imports — s
 
 ## References
 
-- [BR-092](../../../fr-br/BR-092-tests-ci-missing-requests-dev-dependency.md)
-- [BR-058](../../../fr-br/BR-058-ci-test-workflow-missing-and-pytest-failures.md)
+- [BR-092](../../../fbu/BR-092-tests-ci-missing-requests-dev-dependency.md)
+- [BR-058](../../../fbu/BR-058-ci-test-workflow-missing-and-pytest-failures.md)

@@ -201,16 +201,16 @@ A **feature request** is a proposal for new functionality or a change to existin
 - Document contained: Epic ordering bug + missing priorities bug + granular control enhancements
 
 **Split Result:**
-- **BR-033:** [UKW Board Disorganization](../../kanban/fr-br/BR-033-ukw-board-disorganization.md) (original mixed-scope document was titled "UKW Disorganization and Priority Assignment")
+- **BR-033:** [UKW Board Disorganization](../../kanban/fbu/BR-033-ukw-board-disorganization.md) (original mixed-scope document was titled "UKW Disorganization and Priority Assignment")
   - Focus: Epic ordering bug (Issue 1)
   - Focus: Missing priority assignment bug (Issue 2)
-  - Related: [FR-034](../../kanban/fr-br/FR-034-ukw-granular-control-and-use-case-flags.md) (enhancements for Issue 3)
+  - Related: [FR-034](../../kanban/fbu/FR-034-ukw-granular-control-and-use-case-flags.md) (enhancements for Issue 3)
 
-- **FR-034:** [UKW Granular Control and Use Case Flags](../../kanban/fr-br/FR-034-ukw-granular-control-and-use-case-flags.md)
+- **FR-034:** [UKW Granular Control and Use Case Flags](../../kanban/fbu/FR-034-ukw-granular-control-and-use-case-flags.md)
   - Focus: Use case flags (`-u`, `-p`, `-a`)
   - Focus: Syntax parser for flexible task targeting
   - Focus: Modular workflow execution
-  - Related: [BR-033](../../kanban/fr-br/BR-033-ukw-board-disorganization.md) (identified during bug triage)
+  - Related: [BR-033](../../kanban/fbu/BR-033-ukw-board-disorganization.md) (identified during bug triage)
 
 ### Example 2: BR-006 and FR-007
 
@@ -292,8 +292,8 @@ Does it contain BOTH bug AND feature content?
 - **BR Template:** `packages/frameworks/kanban/templates/BR_TEMPLATE.md`
 - **FR Template:** `packages/frameworks/kanban/templates/FR_TEMPLATE.md`
 - **Example:** BR-033 and FR-034 (UKW disorganization and granular control)
-  - **BR-033:** [`docs/kanban/fr-br/BR-033-ukw-board-disorganization.md`](../../kanban/fr-br/BR-033-ukw-board-disorganization.md) (original mixed-scope document was titled "UKW Disorganization and Priority Assignment")
-  - **FR-034:** [`docs/kanban/fr-br/FR-034-ukw-granular-control-and-use-case-flags.md`](../../kanban/fr-br/FR-034-ukw-granular-control-and-use-case-flags.md)
+  - **BR-033:** [`docs/kanban/fbu/BR-033-ukw-board-disorganization.md`](../../kanban/fbu/BR-033-ukw-board-disorganization.md) (original mixed-scope document was titled "UKW Disorganization and Priority Assignment")
+  - **FR-034:** [`docs/kanban/fbu/FR-034-ukw-granular-control-and-use-case-flags.md`](../../kanban/fbu/FR-034-ukw-granular-control-and-use-case-flags.md)
 - **Example:** BR-006 and FR-007 (Migration support and utilities)
 
 ---

@@ -9,7 +9,7 @@ housekeeping_policy: keep
 # E21:S03:T02 — Planning: Create translation files for major languages (IPW)
 
 **Host Task:** [`T02-create-translation-files-for-major-languages.md`](../project-management/kanban/epics/epic-21/story-03-translation-and-localisation/T02-create-translation-files-for-major-languages.md) **(E21:S03:T02)**  
-**Planning for:** [FR-006 Phase 3+](../project-management/kanban/fr-br/FR-006-localization-language-selection-uk-us-english.md) · [IPP-E21S03T01](IPP-E21S03T01-identify-extract-translatable-content.md)  
+**Planning for:** [FR-006 Phase 3+](../project-management/kanban/fbu/FR-006-localization-language-selection-uk-us-english.md) · [IPP-E21S03T01](IPP-E21S03T01-identify-extract-translatable-content.md)  
 **Status:** Complete — released `v0.21.3.2+1` (`RW E21:S03:T02 --art`)  
 **Branch:** `epic/21-internationalisation-localisation`
 

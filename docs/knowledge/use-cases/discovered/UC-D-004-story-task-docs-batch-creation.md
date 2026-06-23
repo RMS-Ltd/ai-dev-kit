@@ -13,7 +13,7 @@ housekeeping_policy: keep
 **Category:** Workflow Pattern  
 **Status:** DOCUMENTED  
 **Version:** 1.0.0  
-**Anchored To:** [BR-010 – RW Doc-Init Detection Bug](../../../kanban/fr-br/BR-010-rw-doc-init-detection-bug-story-task-docs-batch-creation.md)  
+**Anchored To:** [BR-010 – RW Doc-Init Detection Bug](../../../kanban/fbu/BR-010-rw-doc-init-detection-bug-story-task-docs-batch-creation.md)  
 **Related:** E4:S13:T04 – Assess system impacts
 
 ---
@@ -24,9 +24,9 @@ housekeeping_policy: keep
 
 **Discovery:** This valid workflow exposed a design flaw in RW doc-init detection logic, which incorrectly set BUILD=0 instead of BUILD=1 for first implementation work.
 
-**Status:** Use case is **valid and supported**. Bug is **fixed** (see [BR-010](../../../kanban/fr-br/BR-010-rw-doc-init-detection-bug-story-task-docs-batch-creation.md)). Use case remains **relevant as knowledge** (abstract anti-pattern).
+**Status:** Use case is **valid and supported**. Bug is **fixed** (see [BR-010](../../../kanban/fbu/BR-010-rw-doc-init-detection-bug-story-task-docs-batch-creation.md)). Use case remains **relevant as knowledge** (abstract anti-pattern).
 
-**Canonical Reference:** This use case is documented as part of [BR-010 – RW Doc-Init Detection Bug](../../../kanban/fr-br/BR-010-rw-doc-init-detection-bug-story-task-docs-batch-creation.md), which serves as the authoritative source for the bug details and fix.
+**Canonical Reference:** This use case is documented as part of [BR-010 – RW Doc-Init Detection Bug](../../../kanban/fbu/BR-010-rw-doc-init-detection-bug-story-task-docs-batch-creation.md), which serves as the authoritative source for the bug details and fix.
 
 ---
 
@@ -164,7 +164,7 @@ This use case represents an **abstract anti-pattern**: **Use Case Exposed Design
 
 ## Related Documentation
 
-- **Canonical Source:** [BR-010 – RW Doc-Init Detection Bug](../../../kanban/fr-br/BR-010-rw-doc-init-detection-bug-story-task-docs-batch-creation.md) - **PRIMARY ANCHOR** - Authoritative bug report
+- **Canonical Source:** [BR-010 – RW Doc-Init Detection Bug](../../../kanban/fbu/BR-010-rw-doc-init-detection-bug-story-task-docs-batch-creation.md) - **PRIMARY ANCHOR** - Authoritative bug report
 - **Abstract Anti-Pattern:** [Use Case Exposed Design Flaw](../../analysis/abstract-anti-patterns-use-case-exposed-design-flaw.md) - General pattern derived from this bug (anchored to BR-010)
 - **Task Document:** [E4:S13:T04 – Assess system impacts](../../../kanban/epics/epic-04/story-13-kanban-board-moscow-prioritized-task-view/T04-assess-system-impacts.md) - Where the bug was fixed
 - **RW Documentation:** `packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md`
@@ -203,6 +203,6 @@ This use case represents an **abstract anti-pattern**: **Use Case Exposed Design
 **Last Updated:** 2025-12-18T00:00:00Z  
 **Version:** 1.0.0  
 **Status:** DOCUMENTED  
-**Canonical Anchor:** [BR-010 – RW Doc-Init Detection Bug](../../../kanban/fr-br/BR-010-rw-doc-init-detection-bug-story-task-docs-batch-creation.md)  
+**Canonical Anchor:** [BR-010 – RW Doc-Init Detection Bug](../../../kanban/fbu/BR-010-rw-doc-init-detection-bug-story-task-docs-batch-creation.md)  
 **Related Work:** E4:S13:T04 – Assess system impacts
 

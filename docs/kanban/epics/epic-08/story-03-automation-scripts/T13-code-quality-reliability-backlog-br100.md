@@ -19,7 +19,7 @@ housekeeping_policy: keep
 
 **Scope:** Phased burn-down of GitHub Code Quality **Standard reliability** findings on `main`. Wave 1 (done): empty-except, file-not-closed. Wave 2 (done): mixed-returns, wrong-arguments @ v0.8.3.13+3. Wave 3 (done locally): **12** `py/use-of-exit-or-quit` → `sys.exit(main())`. **16** print-at-import → T12.
 
-**Upstream:** [BR-100 — Code Quality reliability backlog](../../../fr-br/BR-100-code-quality-reliability-backlog.md)
+**Upstream:** [BR-100 — Code Quality reliability backlog](../../../fbu/BR-100-code-quality-reliability-backlog.md)
 
 Publication Status: NOT_APPLICABLE
 
@@ -28,7 +28,7 @@ Publication Status: NOT_APPLICABLE
 ## Input
 
 - [IPP-E08S03T13](../../../../implementation-cycles/IPP-E08S03T13-code-quality-reliability-backlog-br100.md) — **wave-3 revision (2026-06-06):** exit/quit remediation + closure; post-wave-2 dashboard @ [T16](T16-github-security-code-quality-health-perpetual-fr112.md) `f6aa4dca` (28 open, Fair)
-- [BR-100](../../../fr-br/BR-100-code-quality-reliability-backlog.md)
+- [BR-100](../../../fbu/BR-100-code-quality-reliability-backlog.md)
 - [Security & quality — Standard findings](https://github.com/RMS-Ltd/ai-dev-kit/security/quality)
 - [E08:S03:T12 — Maintainability backlog (BR-099)](T12-code-quality-maintainability-backlog-br099.md)
 - [E08:S03:T16 — GitHub Security & Code Quality health (Perpetual)](T16-github-security-code-quality-health-perpetual-fr112.md) — post-backlog handoff (FR-112)
@@ -159,7 +159,7 @@ Publication Status: NOT_APPLICABLE
 
 ## Baseline manifest (2026-06-05)
 
-**Source:** GitHub Code Quality dashboard ([BR-100](../../../fr-br/BR-100-code-quality-reliability-backlog.md)); local AST pre-scan before wave-1 edits.
+**Source:** GitHub Code Quality dashboard ([BR-100](../../../fbu/BR-100-code-quality-reliability-backlog.md)); local AST pre-scan before wave-1 edits.
 
 | Field | Value |
 | ----- | ----- |
@@ -235,6 +235,6 @@ Publication Status: NOT_APPLICABLE
 ## References
 
 - [IPP-E08S03T13](../../../../implementation-cycles/IPP-E08S03T13-code-quality-reliability-backlog-br100.md)
-- [BR-100](../../../fr-br/BR-100-code-quality-reliability-backlog.md)
-- [BR-099](../../../fr-br/BR-099-code-quality-maintainability-backlog.md)
-- [BR-101](../../../fr-br/BR-101-code-quality-ai-suggestions-backlog.md)
+- [BR-100](../../../fbu/BR-100-code-quality-reliability-backlog.md)
+- [BR-099](../../../fbu/BR-099-code-quality-maintainability-backlog.md)
+- [BR-101](../../../fbu/BR-101-code-quality-ai-suggestions-backlog.md)

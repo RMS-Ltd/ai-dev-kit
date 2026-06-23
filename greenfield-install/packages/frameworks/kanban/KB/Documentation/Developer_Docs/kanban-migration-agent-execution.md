@@ -10,7 +10,7 @@ housekeeping_policy: keep
 
 **Version:** 1.1.0  
 **Last Updated:** 2026-06-17  
-**Related:** [FR-127](../../../../../../docs/kanban/fr-br/FR-127-agentic-kanban-migration-agent-replace-tool-pipeline.md) · [FR-136](../../../../../../docs/kanban/fr-br/FR-136-guided-kma-target-structure-pack.md) · [ADR-028](../../../../../../docs/architecture/standards-and-adrs/ADR-028-agentic-kanban-migration-brownfield-fr127.md) · [E06:S09:T31](../../../../../../docs/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T31-agentic-kanban-migration-agent-fr127.md) · [E06:S09:T39](../../../../../../docs/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T39-guided-kma-target-structure-pack-fr136.md)
+**Related:** [FR-127](../../../../../../docs/kanban/fbu/FR-127-agentic-kanban-migration-agent-replace-tool-pipeline.md) · [FR-136](../../../../../../docs/kanban/fbu/FR-136-guided-kma-target-structure-pack.md) · [ADR-028](../../../../../../docs/architecture/standards-and-adrs/ADR-028-agentic-kanban-migration-brownfield-fr127.md) · [E06:S09:T31](../../../../../../docs/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T31-agentic-kanban-migration-agent-fr127.md) · [E06:S09:T39](../../../../../../docs/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T39-guided-kma-target-structure-pack-fr136.md)
 
 ---
 

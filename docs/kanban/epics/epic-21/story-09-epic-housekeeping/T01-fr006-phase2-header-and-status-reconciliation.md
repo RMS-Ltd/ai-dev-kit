@@ -19,14 +19,14 @@ housekeeping_policy: keep
 
 ## Scope
 
-Sync [FR-006](../../../fr-br/FR-006-localization-language-selection-uk-us-english.md) intake header: Phase 2 implementing tasks T05–T07 COMPLETE; overall FR status **IN PROGRESS** (Phase 1 + infrastructure done; S03–S07 translation work open).
+Sync [FR-006](../../../fbu/FR-006-localization-language-selection-uk-us-english.md) intake header: Phase 2 implementing tasks T05–T07 COMPLETE; overall FR status **IN PROGRESS** (Phase 1 + infrastructure done; S03–S07 translation work open).
 
 ---
 
 ## Input
 
 - Shipped Epic 21 releases S01–S02 and S08 Layer 0–1 on `epic/21-internationalisation-localisation`
-- Stale [FR-006](../../../fr-br/FR-006-localization-language-selection-uk-us-english.md) Phase 2 header (T05–T07 listed TODO)
+- Stale [FR-006](../../../fbu/FR-006-localization-language-selection-uk-us-english.md) Phase 2 header (T05–T07 listed TODO)
 - [`kboard.md`](../../../kboard.md) missing Epic 21 backlog rows
 
 ---

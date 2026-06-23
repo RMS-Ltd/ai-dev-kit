@@ -9,7 +9,7 @@ housekeeping_policy: keep
 # E06:S09:T30 — Planning: Spec, Tests, Implementation Plan (IPW)
 
 **Host Task:** [`T30-kanban-installer-log-epic-path-padding-br107.md`](../kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T30-kanban-installer-log-epic-path-padding-br107.md) **(E06:S09:T30)**  
-**Planning for:** [BR-107](../kanban/fr-br/BR-107-kanban-installer-log-epic-path-padding-mismatch.md) · triage **F21**  
+**Planning for:** [BR-107](../kanban/fbu/BR-107-kanban-installer-log-epic-path-padding-mismatch.md) · triage **F21**  
 **Status:** Approved (2026-06-10 — ready for implementation)
 
 ---
@@ -93,7 +93,7 @@ Operators running Kanban v3.2 `--mode fresh` see install success lines that matc
 | E4 | Spec elsewhere | Y | UXR-017 + BR-107 + this IPP §2 |
 | E5 | Documented NONE | Y | §5.3 cites governing docs |
 
-**Governing docs:** [UXR-017](../kanban/fr-br/UXR-017-kanban-epic-story-path-lowercase-naming.md), [ADR-015](../architecture/standards-and-adrs/ADR-015-kanban-filesystem-path-naming.md), `kanban_paths.py`.
+**Governing docs:** [UXR-017](../kanban/fbu/UXR-017-kanban-epic-story-path-lowercase-naming.md), [ADR-015](../architecture/standards-and-adrs/ADR-015-kanban-filesystem-path-naming.md), `kanban_paths.py`.
 
 ---
 
@@ -122,7 +122,7 @@ Operators running Kanban v3.2 `--mode fresh` see install success lines that matc
 | 4 | Add/update pytest (T1–T4): subprocess fresh install and/or `capsys` on migrator; include negative assertion for unpadded `epic-N` destination segments. | Green tests |
 | 5 | Run targeted pytest: `tests/kanban/test_install_epic_22_23_templates.py`, `tests/kanban/test_kanban_v32_fresh_install.py`, new/updated log-padding tests. | Pytest evidence |
 | 6 | `python scripts/sync_greenfield_install.py` — mirror `migrate_structure.py` to `greenfield-install/` (FR-110). | Greenfield parity |
-| 7 | Update [BR-107](../kanban/fr-br/BR-107-kanban-installer-log-epic-path-padding-mismatch.md) status/AC when verified; update triage matrix F21 disposition if present. | Intake closure |
+| 7 | Update [BR-107](../kanban/fbu/BR-107-kanban-installer-log-epic-path-padding-mismatch.md) status/AC when verified; update triage matrix F21 disposition if present. | Intake closure |
 | 8 | **`RW E06:S09:T30 --art`** — version, changelog, RW Step 7 (task, BR, `kboard.md`), commit, local tag. | Local release |
 | **N** | **[MANDATORY] Reconcile task `E06:S09:T30` status** to actual implementation state: if all ACs satisfied with evidence → `COMPLETE` + `✅ COMPLETE (v{version})`; if ongoing → `IN PROGRESS`; if blocked → `BLOCKED` + reason. Update `Last updated`. | Task doc reflects actual state |
 
@@ -135,7 +135,7 @@ Operators running Kanban v3.2 `--mode fresh` see install success lines that matc
 | `packages/frameworks/kanban/scripts/migrate_structure.py` | UPDATE — log strings ~L370–377, ~L399–401 |
 | `tests/kanban/test_install_epic_22_23_templates.py` or `tests/kanban/test_migrate_structure_log_epic_padding.py` | UPDATE or CREATE — T1–T4 |
 | `greenfield-install/packages/frameworks/kanban/scripts/migrate_structure.py` | UPDATE — FR-110 mirror |
-| `docs/kanban/fr-br/BR-107-*.md` | UPDATE — status on fix |
+| `docs/kanban/fbu/BR-107-*.md` | UPDATE — status on fix |
 | `docs/knowledge/analysis/projects/starborn-legacy-install-triage-matrix.md` | UPDATE (if F21 row exists) — resolved |
 | `docs/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T30-*.md` | UPDATE — Step 1 / final reconciliation |
 
@@ -162,7 +162,7 @@ Operators running Kanban v3.2 `--mode fresh` see install success lines that matc
 | D-U1 | `packages/frameworks/kanban/scripts/migrate_structure.py` | UPDATE | Padded log strings | RF1–RF3, Step 2–3 |
 | D-U2 | `greenfield-install/packages/frameworks/kanban/scripts/migrate_structure.py` | UPDATE | FR-110 mirror | Step 6 |
 | D-U3 | `tests/kanban/test_install_epic_22_23_templates.py` (or new test module) | UPDATE/CREATE | T1–T4 | Step 4 |
-| D-U4 | `docs/kanban/fr-br/BR-107-kanban-installer-log-epic-path-padding-mismatch.md` | UPDATE | Status, AC, fix version | Step 7, RF5 |
+| D-U4 | `docs/kanban/fbu/BR-107-kanban-installer-log-epic-path-padding-mismatch.md` | UPDATE | Status, AC, fix version | Step 7, RF5 |
 | D-U5 | `docs/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T30-kanban-installer-log-epic-path-padding-br107.md` | UPDATE | Status, AC, IPP link (done), version marker | Steps 1, N, 8 |
 | D-U6 | `docs/knowledge/analysis/projects/starborn-legacy-install-triage-matrix.md` | UPDATE | F21 resolved (if row present) | RF5 |
 
@@ -191,7 +191,7 @@ Operators running Kanban v3.2 `--mode fresh` see install success lines that matc
 | D-U1 | `packages/frameworks/kanban/scripts/migrate_structure.py` | NOT_APPLICABLE | Framework source | — | — |
 | D-U2 | `greenfield-install/packages/frameworks/kanban/scripts/migrate_structure.py` | NOT_APPLICABLE | FR-110 mirror | — | — |
 | D-U3 | `tests/kanban/` | NOT_APPLICABLE | Test harness | — | — |
-| D-U4 | `docs/kanban/fr-br/BR-107-*.md` | NOT_APPLICABLE | Intake doc | evergreen | T30, RW Step 7 |
+| D-U4 | `docs/kanban/fbu/BR-107-*.md` | NOT_APPLICABLE | Intake doc | evergreen | T30, RW Step 7 |
 | D-U5 | `docs/kanban/epics/epic-06/story-09/.../T30-*.md` | NOT_APPLICABLE | Task SoT | evergreen | IPP bidirectional link |
 | D-U6 | `docs/knowledge/analysis/projects/starborn-legacy-install-triage-matrix.md` | NOT_APPLICABLE | Maintainer KB (ADR-026) | evergreen | F21 evidence note |
 
@@ -213,8 +213,8 @@ Operators running Kanban v3.2 `--mode fresh` see install success lines that matc
 
 ## References
 
-- [BR-107](../kanban/fr-br/BR-107-kanban-installer-log-epic-path-padding-mismatch.md)
-- [UXR-017](../kanban/fr-br/UXR-017-kanban-epic-story-path-lowercase-naming.md)
+- [BR-107](../kanban/fbu/BR-107-kanban-installer-log-epic-path-padding-mismatch.md)
+- [UXR-017](../kanban/fbu/UXR-017-kanban-epic-story-path-lowercase-naming.md)
 - [ADR-015](../architecture/standards-and-adrs/ADR-015-kanban-filesystem-path-naming.md)
 - [E06:S09:T30](../kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T30-kanban-installer-log-epic-path-padding-br107.md)
 - [E06:S09:T27](IPP-E06S09T27-kanban-v32-package-rewrite-installer-f9-f17.md) — v3.2 installer context

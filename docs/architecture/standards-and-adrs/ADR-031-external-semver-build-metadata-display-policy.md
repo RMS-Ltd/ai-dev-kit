@@ -10,7 +10,7 @@ housekeeping_policy: keep
 
 **Status:** Accepted (amended 2026-06-17 — Option A implemented)  
 **Date:** 2026-06-17  
-**Related:** [ADR-002](ADR-002-task-touch-derived-mapping.md) · [UXR-031](../../kanban/fr-br/UXR-031-semver-plusbuild-redundancy-in-task-touch.md) · [E03:S02:T15](../../kanban/epics/epic-03/story-02-versioning-cookbook-and-examples/T15-semver-external-build-metadata-redundancy-uxr031.md) · [semver-external-display-policy-decision.md](../../kanban/epics/epic-03/story-02-versioning-cookbook-and-examples/semver-external-display-policy-decision.md)
+**Related:** [ADR-002](ADR-002-task-touch-derived-mapping.md) · [UXR-031](../../kanban/fbu/UXR-031-semver-plusbuild-redundancy-in-task-touch.md) · [E03:S02:T15](../../kanban/epics/epic-03/story-02-versioning-cookbook-and-examples/T15-semver-external-build-metadata-redundancy-uxr031.md) · [semver-external-display-policy-decision.md](../../kanban/epics/epic-03/story-02-versioning-cookbook-and-examples/semver-external-display-policy-decision.md)
 
 ---
 
@@ -18,7 +18,7 @@ housekeeping_policy: keep
 
 In `task_touch` mode (`rw-config.yaml`), the external SemVer string includes `+BUILD` metadata mirrored from the internal `VERSION_BUILD`. Maintainers and external consumers may interpret `+BUILD` as part of the monotonic release progression signal, when uniqueness and ordering are actually driven by the SemVer **core** (`MAJOR.MINOR.PATCH`) — specifically the global task-touch `PATCH` allocator ([ADR-002](ADR-002-task-touch-derived-mapping.md)).
 
-Evidence ([UXR-031](../../kanban/fr-br/UXR-031-semver-plusbuild-redundancy-in-task-touch.md)):
+Evidence ([UXR-031](../../kanban/fbu/UXR-031-semver-plusbuild-redundancy-in-task-touch.md)):
 
 - `convert_internal_to_semver_task_touch(...)` preserves internal `BUILD` into SemVer build metadata.
 - `get_rw_tag_info(...)` derives the **primary Git tag** from SemVer core only (`semver_full.split('+')[0]`).
@@ -86,5 +86,5 @@ Internal `RC.EPIC.STORY.TASK+BUILD` remains the Kanban/workflow anchor regardles
 ## Compliance
 
 - [dev-kit-versioning-policy.md](../../governance/standards/dev-kit-versioning-policy.md) §2.1.1 — outward SemVer semantics
-- [BR-097](../../kanban/fr-br/BR-097-rw-agent-reuses-tagged-build-and-force-moves-release-tags.md) — no tag force moves
-- [FR-045](../../kanban/fr-br/FR-045-adr-002-task-touch-derived-mapping.md) — task_touch mapping authority
+- [BR-097](../../kanban/fbu/BR-097-rw-agent-reuses-tagged-build-and-force-moves-release-tags.md) — no tag force moves
+- [FR-045](../../kanban/fbu/FR-045-adr-002-task-touch-derived-mapping.md) — task_touch mapping authority

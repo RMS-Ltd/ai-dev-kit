@@ -42,7 +42,7 @@ housekeeping_policy: keep
 | --------- | -------- |
 | Sub-agent spawn unavailable | `MWF CHAIN PAUSED` — Task tool blocked |
 | Leg `ABORTED` needs operator decision | `MWF ABORTED (leg: …)` preferred |
-| ~~IPP missing; not in plan mode~~ | **Delegate IPW** — not a pause ([BR-102](../../../../../../docs/kanban/fr-br/BR-102-mwf-chain-paused-instead-of-subagent-leg-delegation.md)) |
+| ~~IPP missing; not in plan mode~~ | **Delegate IPW** — not a pause ([BR-102](../../../../../../docs/kanban/fbu/BR-102-mwf-chain-paused-instead-of-subagent-leg-delegation.md)) |
 | ~~IPW complete; still in plan mode~~ | **Continue to Leg 2** — not a pause |
 
 ## MWF vs `IDW --rw`
@@ -87,7 +87,7 @@ Atomic legs must satisfy the [workflow encapsulation contract](workflow-encapsul
 
 - `.claude/commands/mwf.md`
 - [workflow-encapsulation-contract.md](workflow-encapsulation-contract.md)
-- [FR-124](../../../../../../docs/kanban/fr-br/FR-124-meta-workflow-orchestration-composite-workflow-chains.md)
+- [FR-124](../../../../../../docs/kanban/fbu/FR-124-meta-workflow-orchestration-composite-workflow-chains.md)
 - [implementation-planning-workflow-agent-execution.md](implementation-planning-workflow-agent-execution.md)
 - [implementation-delivery-workflow-agent-execution.md](implementation-delivery-workflow-agent-execution.md)
 - [release-workflow-agent-execution.md](release-workflow-agent-execution.md)

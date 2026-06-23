@@ -9,7 +9,7 @@ housekeeping_policy: keep
 # E21:S03:T06 — Planning: Translation completeness tracking (IPW)
 
 **Host Task:** [`T06-implement-translation-completeness-tracking.md`](../project-management/kanban/epics/epic-21/story-03-translation-and-localisation/T06-implement-translation-completeness-tracking.md) **(E21:S03:T06)**  
-**Planning for:** [FR-006 Phase 3+](../project-management/kanban/fr-br/FR-006-localization-language-selection-uk-us-english.md) · [IPP-E21S03T05](IPP-E21S03T05-translation-management-tools.md) · [ADR-024](../architecture/standards-and-adrs/ADR-024-i18n-framework-strategy.md)  
+**Planning for:** [FR-006 Phase 3+](../project-management/kanban/fbu/FR-006-localization-language-selection-uk-us-english.md) · [IPP-E21S03T05](IPP-E21S03T05-translation-management-tools.md) · [ADR-024](../architecture/standards-and-adrs/ADR-024-i18n-framework-strategy.md)  
 **Status:** Complete — released `v0.21.3.6+1` (`RW E21:S03:T06 --art`)  
 **Branch:** `epic/21-internationalisation-localisation`
 
@@ -222,7 +222,7 @@ python packages/frameworks/workflow-mgt/scripts/report_locale_completeness.py \
 | D-U6 | `packages/frameworks/*/locales/README.md` (+ greenfield) | One-line completeness report invocation | RF8 |
 | D-U7 | `docs/architecture/standards-and-adrs/ADR-024-i18n-framework-strategy.md` | T06 integration row (script name, metrics) | §2.5 REQUIRED |
 | D-U8 | T06 task doc | IPP links; AC checkboxes on completion | Phase 8 |
-| D-U9 | `docs/project-management/kanban/fr-br/FR-006-*.md` | T06 anchor when released | Step 13 |
+| D-U9 | `docs/project-management/kanban/fbu/FR-006-*.md` | T06 anchor when released | Step 13 |
 
 ### 5.2 New documents to create
 
@@ -285,4 +285,4 @@ python packages/frameworks/workflow-mgt/scripts/report_locale_completeness.py \
 - [translation-workflow-and-review.md](../governance/standards/translation-workflow-and-review.md)
 - [locale_translation_utils.py](../../packages/frameworks/workflow-mgt/scripts/locale_translation_utils.py)
 - [ADR-024](../architecture/standards-and-adrs/ADR-024-i18n-framework-strategy.md)
-- [FR-006](../project-management/kanban/fr-br/FR-006-localization-language-selection-uk-us-english.md)
+- [FR-006](../project-management/kanban/fbu/FR-006-localization-language-selection-uk-us-english.md)

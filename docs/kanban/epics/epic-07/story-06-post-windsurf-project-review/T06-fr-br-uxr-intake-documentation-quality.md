@@ -22,7 +22,7 @@ Audit FR/BR/UXR intake and aggregate documentation for consistency, wiring, and 
 
 ## Input
 
-[`intake-structure.md`](../../../intake-structure.md), [`kboard.md`](../../../kboard.md), [`intake-completed.md`](../../../intake-completed.md), [`kanban-completed.md`](../../../kanban-completed.md), sample FR/BR docs (e.g. [`FR-073`](../../../fr-br/FR-073-fr-br-uxr-board-open-taskless-intake-execution-plan.md)), [`intake-process` skill (source)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/.cursor/skills/intake-process/SKILL.md), [`FR_BR_INTAKE_GUIDE.md` (source)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/kanban/FR_BR_INTAKE_GUIDE.md).
+[`intake-structure.md`](../../../intake-structure.md), [`kboard.md`](../../../kboard.md), [`intake-completed.md`](../../../intake-completed.md), [`kanban-completed.md`](../../../kanban-completed.md), sample FR/BR docs (e.g. [`FR-073`](../../../fbu/FR-073-fr-br-uxr-board-open-taskless-intake-execution-plan.md)), [`intake-process` skill (source)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/.cursor/skills/intake-process/SKILL.md), [`FR_BR_INTAKE_GUIDE.md` (source)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/kanban/FR_BR_INTAKE_GUIDE.md).
 
 **Note on “Batch 3” (story blurb):** No other repo reference. This review used a **representative sample** of FR/BR/UXR files plus aggregate index docs—not a named historical batch.
 
@@ -60,19 +60,19 @@ None
 
 | Area | Issue | Severity | Action |
 |------|--------|----------|--------|
-| **`fr-br/*.md` → Epic links** | Nine files used markdown targets `(epics/Epic-…/…)` which resolve under `fr-br/epics/` (broken). | High | Replaced with `(../epics/Epic-…/…)` in: FR-002, FR-003, FR-031, FR-034, FR-035, FR-051, BR-001, BR-005, BR-033. |
+| **`fbu/*.md` → Epic links** | Nine files used markdown targets `(epics/Epic-…/…)` which resolve under `fbu/epics/` (broken). | High | Replaced with `(../epics/Epic-…/…)` in: FR-002, FR-003, FR-031, FR-034, FR-035, FR-051, BR-001, BR-005, BR-033. |
 | **`intake-structure.md` header** | **Last Updated** / **Version** lagged `kboard.md` and live project line. | Medium | Bumped to 2026-03-25 and `v0.7.6.6+1` (aligned with this RW). |
 | **`kboard.md` / `intake-completed.md` Version** | Displayed older epic/task versions; inconsistent with structure doc. | Low | Set **Version** to `v0.7.6.6+1` for trio consistency. |
 | **kanban-completed vs fr-br-uxr-completed** | Both track “completed” work; readers could confuse **tasks** vs **FR/BR/UXR** lifecycle. | Medium | Added reciprocal cross-links in the blockquotes of both files. |
 | **Frontmatter styles** | Some BRs use `title`/`description` YAML (e.g. BR-053, BR-057); most FRs use `lifecycle` frontmatter. | Low | Documented only; standardize under T07 or a dedicated FR if desired. |
-| **Packaged `FR_BR_INTAKE_GUIDE.md`** | Last updated 2025-12; examples reference packaged template paths, not always `docs/kanban/fr-br/`. | Low | Expected drift for adopters; no change in T06. |
+| **Packaged `FR_BR_INTAKE_GUIDE.md`** | Last updated 2025-12; examples reference packaged template paths, not always `docs/kanban/fbu/`. | Low | Expected drift for adopters; no change in T06. |
 | **Sample wiring** | FR-063 → E5 task, BR-057 → T17, UXR-001 structure OK; FR-060 has no epic links in header (acceptable). | — | No change. |
 
 ---
 
 ## Summary
 
-- **Overall risk:** **Low** after correcting broken `epics/` relative links from `fr-br/` and aligning aggregate doc versions.
+- **Overall risk:** **Low** after correcting broken `epics/` relative links from `fbu/` and aligning aggregate doc versions.
 - **Follow-ups:** Optional frontmatter normalization and deeper link crawl → **E07:S06:T07** or a small FR.
 
 ---

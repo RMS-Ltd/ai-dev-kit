@@ -17,7 +17,7 @@ housekeeping_policy: keep
 **Version:** v0.5.1.69+1  
 **Code:** E05S01T69
 
-**Feature Request:** [FR-064 – Shields branch / private repo](../../../fr-br/FR-064-shields-branch-private-repo-badges.md)
+**Feature Request:** [FR-064 – Shields branch / private repo](../../../fbu/FR-064-shields-branch-private-repo-badges.md)
 
 ---
 
@@ -35,7 +35,7 @@ Implement FR-064: **private-repo-safe** badges on `main` (static Shields.io), re
 
 ## Input
 
-- [FR-064](../../../fr-br/FR-064-shields-branch-private-repo-badges.md)  
+- [FR-064](../../../fbu/FR-064-shields-branch-private-repo-badges.md)  
 - Maintainer permission to delete remote branch  
 - `git` / `gh` access to `RMS-Ltd/ai-dev-kit`
 

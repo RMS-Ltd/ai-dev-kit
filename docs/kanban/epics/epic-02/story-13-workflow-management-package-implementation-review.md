@@ -53,12 +53,12 @@ housekeeping_policy: keep
 - [x] **E02:S13:T07 – RW Uses SemVer Tag When `task_touch` Enabled** ✅ COMPLETE (v0.2.13.7+1)
   - Task Doc: [`T07-rw-semver-tag-when-task-touch-enabled.md`](story-13-workflow-management-package-implementation-review/T07-rw-semver-tag-when-task-touch-enabled.md)
 
-- [x] **E02:S13:T08 – Sync packaged workflows with live repo implementation** - ✅ COMPLETE (v0.2.13.8+2) ([FR-106](../../fr-br/FR-106-packaged-workflows-sync-with-live-repo-implementation.md))
+- [x] **E02:S13:T08 – Sync packaged workflows with live repo implementation** - ✅ COMPLETE (v0.2.13.8+2) ([FR-106](../../fbu/FR-106-packaged-workflows-sync-with-live-repo-implementation.md))
   - Task: [`T08-sync-packaged-workflows-with-live-repo-implementation`](story-13-workflow-management-package-implementation-review/T08-sync-packaged-workflows-with-live-repo-implementation.md)
   - Task Doc: [`T08-sync-packaged-workflows-with-live-repo-implementation.md`](story-13-workflow-management-package-implementation-review/T08-sync-packaged-workflows-with-live-repo-implementation.md)
   - IPP: [`IPP-E2S13T8-sync-packaged-workflows-live-spec.md`](../../../implementation-cycles/IPP-E02S13T08-sync-packaged-workflows-live-spec.md)
 
-**Code review gate (hosted under E07:S07):** [E07:S07:T01](../epic-07/story-07-code-reviews/T01-comprehensive-workflow-machinery-code-review.md) ([FR-107](../../fr-br/FR-107-comprehensive-workflow-machinery-code-review.md)) — feeds T05/T06.
+**Code review gate (hosted under E07:S07):** [E07:S07:T01](../epic-07/story-07-code-reviews/T01-comprehensive-workflow-machinery-code-review.md) ([FR-107](../../fbu/FR-107-comprehensive-workflow-machinery-code-review.md)) — feeds T05/T06.
 
 ---
 
@@ -127,7 +127,7 @@ Provide a complete implementation review, evidence, and remediation plan to supp
 ## Dependencies
 
 - None (RC readiness prerequisite for Epic 2 package sign-off).
-- **Code review gate:** [E07:S07:T01](../epic-07/story-07-code-reviews/T01-comprehensive-workflow-machinery-code-review.md) ([FR-107](../../fr-br/FR-107-comprehensive-workflow-machinery-code-review.md)) — **report published** [2026-06-03](../epic-07/story-07-code-reviews/T01-workflow-machinery-code-review-report.md): 0 Critical; **RC sign-off DEFER** per T06 until T09/T10 implemented.
+- **Code review gate:** [E07:S07:T01](../epic-07/story-07-code-reviews/T01-comprehensive-workflow-machinery-code-review.md) ([FR-107](../../fbu/FR-107-comprehensive-workflow-machinery-code-review.md)) — **report published** [2026-06-03](../epic-07/story-07-code-reviews/T01-workflow-machinery-code-review-report.md): 0 Critical; **RC sign-off DEFER** per T06 until T09/T10 implemented.
 
 ---
 

@@ -16,11 +16,11 @@ housekeeping_policy: keep
 **Version anchor:** v0.2.15.14+1  
 **Code:** E02S15T14
 
-**Upstream:** [FR-130 — Kanban stamp immutability ADR-029 framework defaults](../../../fr-br/FR-130-kanban-stamp-immutability-adr029-framework-defaults.md)
+**Upstream:** [FR-130 — Kanban stamp immutability ADR-029 framework defaults](../../../fbu/FR-130-kanban-stamp-immutability-adr029-framework-defaults.md)
 
 **Architectural anchor:** [ADR-029](../../../../architecture/standards-and-adrs/ADR-029-kanban-stamp-immutability-substantive-work-only.md) (**Accepted** 2026-06-12)
 
-**Predecessor:** [E02:S15:T08](T08-board-stamp-authority-forensic-timestamp-recovery-fr097.md) / [FR-097](../../../fr-br/FR-097-board-stamp-authority-and-forensic-timestamp-recovery.md)
+**Predecessor:** [E02:S15:T08](T08-board-stamp-authority-forensic-timestamp-recovery-fr097.md) / [FR-097](../../../fbu/FR-097-board-stamp-authority-and-forensic-timestamp-recovery.md)
 
 **Origin context:** [E06:S09:T26](../../epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T26-starborn-legacy-adk-install-program.md) (SBL ADK install program)
 
@@ -36,7 +36,7 @@ Implement ADR-029 compliance: flip framework stamp defaults to `non_substantive`
 
 ## Input
 
-- [FR-130](../../../fr-br/FR-130-kanban-stamp-immutability-adr029-framework-defaults.md)
+- [FR-130](../../../fbu/FR-130-kanban-stamp-immutability-adr029-framework-defaults.md)
 - [ADR-029](../../../../architecture/standards-and-adrs/ADR-029-kanban-stamp-immutability-substantive-work-only.md) — compliance checklist
 - SBL draft ADR (origin) — homogenized stamps during install meta-work
 
@@ -59,12 +59,12 @@ Implement ADR-029 compliance: flip framework stamp defaults to `non_substantive`
 
 ## Acceptance criteria
 
-- [x] **AC1:** Default-args unit tests — no stamp append on hygiene fixture ([FR-130-F1–F3](../../../fr-br/FR-130-kanban-stamp-immutability-adr029-framework-defaults.md)).
-- [x] **AC2:** RW Step 7 report shows `non_substantive` unless release-complete manifest ([FR-130-F4](../../../fr-br/FR-130-kanban-stamp-immutability-adr029-framework-defaults.md)).
-- [x] **AC3:** UKW dry-run on homogenized fixture — `validate_board_stamp_diff.py` green ([FR-130-F4](../../../fr-br/FR-130-kanban-stamp-immutability-adr029-framework-defaults.md)).
-- [x] **AC4:** Migration/KMA fixture replay — zero synthetic `now()` stamps ([FR-130-F6](../../../fr-br/FR-130-kanban-stamp-immutability-adr029-framework-defaults.md)).
-- [x] **AC5:** Policy + ADR compliance checklist complete ([FR-130-F7](../../../fr-br/FR-130-kanban-stamp-immutability-adr029-framework-defaults.md)).
-- [x] **AC6:** Validator blocking confirmed on all board-touching workflows ([FR-130 AC6](../../../fr-br/FR-130-kanban-stamp-immutability-adr029-framework-defaults.md)).
+- [x] **AC1:** Default-args unit tests — no stamp append on hygiene fixture ([FR-130-F1–F3](../../../fbu/FR-130-kanban-stamp-immutability-adr029-framework-defaults.md)).
+- [x] **AC2:** RW Step 7 report shows `non_substantive` unless release-complete manifest ([FR-130-F4](../../../fbu/FR-130-kanban-stamp-immutability-adr029-framework-defaults.md)).
+- [x] **AC3:** UKW dry-run on homogenized fixture — `validate_board_stamp_diff.py` green ([FR-130-F4](../../../fbu/FR-130-kanban-stamp-immutability-adr029-framework-defaults.md)).
+- [x] **AC4:** Migration/KMA fixture replay — zero synthetic `now()` stamps ([FR-130-F6](../../../fbu/FR-130-kanban-stamp-immutability-adr029-framework-defaults.md)).
+- [x] **AC5:** Policy + ADR compliance checklist complete ([FR-130-F7](../../../fbu/FR-130-kanban-stamp-immutability-adr029-framework-defaults.md)).
+- [x] **AC6:** Validator blocking confirmed on all board-touching workflows ([FR-130 AC6](../../../fbu/FR-130-kanban-stamp-immutability-adr029-framework-defaults.md)).
 
 ---
 

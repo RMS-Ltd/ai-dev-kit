@@ -9,7 +9,7 @@ housekeeping_policy: keep
 # E21:S04:T04 — Planning: Cultural content adaptation (IPW)
 
 **Host Task:** [`T04-adapt-content-and-examples-for-cultural-context.md`](../kanban/epics/epic-21/story-04-cultural-adaptation/T04-adapt-content-and-examples-for-cultural-context.md) **(E21:S04:T04)**  
-**Planning for:** [FR-006 Phase 2](../kanban/fr-br/FR-006-localization-language-selection-uk-us-english.md) · [E21:S04](../kanban/epics/epic-21/story-04-cultural-adaptation.md) · [ADR-024](../architecture/standards-and-adrs/ADR-024-i18n-framework-strategy.md)  
+**Planning for:** [FR-006 Phase 2](../kanban/fbu/FR-006-localization-language-selection-uk-us-english.md) · [E21:S04](../kanban/epics/epic-21/story-04-cultural-adaptation.md) · [ADR-024](../architecture/standards-and-adrs/ADR-024-i18n-framework-strategy.md)  
 **Status:** Complete — released `v0.21.4.4+1` (`RW E21:S04:T04 --art`)  
 **Operator decision:** Split Portuguese like `zh-CN`/`zh-TW` — `pt-BR` + `pt-PT`; retire generic `pt`.
 

@@ -769,7 +769,7 @@ This section demonstrates **end-to-end flows** that tie together Kanban, Version
 
 #### Step 1: Receive Feature Request
 
-**FR Document:** `docs/kanban/fr-br/FR-001-add-validation-script.md`
+**FR Document:** `docs/kanban/fbu/FR-001-add-validation-script.md`
 ```markdown
 # Feature Request: Add Kanban Consistency Validation Script
 

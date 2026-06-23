@@ -18,8 +18,8 @@ housekeeping_policy: keep
 
 **North star:** One install command; zero undocumented manual steps; choices only where behaviour branches.
 
-**Upstream:** [FR-135](../../../fr-br/FR-135-guided-install-orchestrator-zero-manual-steps.md)  
-**Related:** [FR-080](../../../fr-br/FR-080-greenfield-installation-process.md) · [FR-133](../../../fr-br/FR-133-kanban-migration-depth-rationalization-adopter-guide.md) · [FR-134](../../../fr-br/FR-134-kanban-completed-sqlite-ledger-pdf-report.md) · [E06:S09:T36](T36-adopter-path-selector-install-rc-uxr029.md) · [E06:S09:T37](T37-kanban-migration-depth-rationalization-fr133.md) · [UXR-029](../../../fr-br/UXR-029-adk-install-path-experiment.md) · [#85](https://github.com/RMS-Ltd/ai-dev-kit/issues/85) · [attempt-11 preflight](../../../../../../adk-install-into-sbl/attempt-11-preflight-checklist.md)
+**Upstream:** [FR-135](../../../fbu/FR-135-guided-install-orchestrator-zero-manual-steps.md)  
+**Related:** [FR-080](../../../fbu/FR-080-greenfield-installation-process.md) · [FR-133](../../../fbu/FR-133-kanban-migration-depth-rationalization-adopter-guide.md) · [FR-134](../../../fbu/FR-134-kanban-completed-sqlite-ledger-pdf-report.md) · [E06:S09:T36](T36-adopter-path-selector-install-rc-uxr029.md) · [E06:S09:T37](T37-kanban-migration-depth-rationalization-fr133.md) · [UXR-029](../../../fbu/UXR-029-adk-install-path-experiment.md) · [#85](https://github.com/RMS-Ltd/ai-dev-kit/issues/85) · [attempt-11 preflight](../../../../../../adk-install-into-sbl/attempt-11-preflight-checklist.md)
 
 **Evidence:** SBL attempt 10 manual bootstrap ([attempt-10 README](../../../../../../adk-install-into-sbl/attempt-10/README.md)); orchestrator manual-step banner in `install_greenfield_path.py`.
 
@@ -33,7 +33,7 @@ Implement **guided install orchestrator v2**: extend Phase 0 (`install_greenfiel
 
 ## Input
 
-- [FR-135](../../../fr-br/FR-135-guided-install-orchestrator-zero-manual-steps.md)
+- [FR-135](../../../fbu/FR-135-guided-install-orchestrator-zero-manual-steps.md)
 - [IPP-E06S09T38-guided-install-orchestrator-fr135.md](../../../../implementation-cycles/IPP-E06S09T38-guided-install-orchestrator-fr135.md)
 - Operator design session (2026-06-17): automate sqlite/triggers/ledgers/comprehension; prompt for path, legacy import, KMA mode
 - [T36](T36-adopter-path-selector-install-rc-uxr029.md) Phase 0 partial delivery (sqlite flag, RC gate — KMA/UKW still manual)
@@ -41,7 +41,7 @@ Implement **guided install orchestrator v2**: extend Phase 0 (`install_greenfiel
 
 ## References
 
-- [FR-135](../../../fr-br/FR-135-guided-install-orchestrator-zero-manual-steps.md)
+- [FR-135](../../../fbu/FR-135-guided-install-orchestrator-zero-manual-steps.md)
 - [IPP-E06S09T38-guided-install-orchestrator-fr135.md](../../../../implementation-cycles/IPP-E06S09T38-guided-install-orchestrator-fr135.md)
 - [`install_greenfield_path.py`](../../../../../../packages/frameworks/workflow-mgt/scripts/install_greenfield_path.py)
 - [`install_release_workflow.py`](../../../../../../packages/frameworks/workflow-mgt/scripts/install_release_workflow.py)

@@ -25,4 +25,4 @@ This folder documents the **alternative** location for significant public releas
 - **RC = 0:** GitHub `CHANGELOG.md` only — nothing published here.
 - **RC ≥ 1:** Curated adopter-facing milestone summaries — not raw Keep-a-Changelog dumps.
 
-**Authority:** [FR-114](../kanban/fr-br/FR-114-split-documentation-surfaces-docusaurus-public-notion-maintainer-kb.md) · [ADR-024](../architecture/standards-and-adrs/ADR-024-docusaurus-adopter-public-publish-allowlist-fr114.md) · [E05:S09:T15](../kanban/epics/epic-05/story-09-docusaurus-documentation-portal/T15-docusaurus-adopter-public-publish-allowlist-fr114.md)
+**Authority:** [FR-114](../kanban/fbu/FR-114-split-documentation-surfaces-docusaurus-public-notion-maintainer-kb.md) · [ADR-024](../architecture/standards-and-adrs/ADR-024-docusaurus-adopter-public-publish-allowlist-fr114.md) · [E05:S09:T15](../kanban/epics/epic-05/story-09-docusaurus-documentation-portal/T15-docusaurus-adopter-public-publish-allowlist-fr114.md)

@@ -32,9 +32,9 @@ housekeeping_policy: keep
 
 ## Input
 
-- [FR-115](../../../../fr-br/FR-115-accessibility-standards-compatibility.md)
+- [FR-115](../../../../fbu/FR-115-accessibility-standards-compatibility.md)
 - [IPP-E21S08T01](../../../../../implementation-cycles/IPP-E21S08T01-accessibility-layered-cli-first.md)
-- [FR-108](../../../../fr-br/FR-108-install-setup-error-code-registry-and-emission.md)
+- [FR-108](../../../../fbu/FR-108-install-setup-error-code-registry-and-emission.md)
 - `cli/utils.py`, `cli/commands/`, `cli/exceptions.py`
 
 ---
@@ -85,4 +85,4 @@ RW -k E21:S08:T01 --art --dpz
 
 - [Baseline report](../../../../../knowledge/analysis/adk-accessibility-baseline-layer1-cli.md)
 - [Story 08](../story-08-accessibility.md)
-- [FR-115](../../../../fr-br/FR-115-accessibility-standards-compatibility.md)
+- [FR-115](../../../../fbu/FR-115-accessibility-standards-compatibility.md)

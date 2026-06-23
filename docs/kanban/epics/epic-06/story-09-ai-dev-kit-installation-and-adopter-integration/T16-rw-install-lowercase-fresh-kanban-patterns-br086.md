@@ -17,15 +17,15 @@ housekeeping_policy: keep
 **Version:** v0.6.9.16+3  
 **Code:** E06S09T16
 
-**Upstream:** [BR-086](../../../fr-br/BR-086-rw-install-lowercase-fresh-kanban-patterns-signoff.md)  
-**Related:** [BR-083](../../../fr-br/BR-083-rw-install-default-patterns-mismatch-fresh-kanban-layout.md) · [BR-084](../../../fr-br/BR-084-rw-install-mode-c-missing-task-doc-pattern.md) · [BR-085](../../../fr-br/BR-085-rw-install-story-pattern-placeholder-loop-fresh-kanban.md) · [UXR-017](../../../fr-br/UXR-017-kanban-epic-story-path-lowercase-naming.md) · [#15](https://github.com/RMS-Ltd/ai-dev-kit/issues/15) · [#16](https://github.com/RMS-Ltd/ai-dev-kit/issues/16) · [#17](https://github.com/RMS-Ltd/ai-dev-kit/issues/17)
+**Upstream:** [BR-086](../../../fbu/BR-086-rw-install-lowercase-fresh-kanban-patterns-signoff.md)  
+**Related:** [BR-083](../../../fbu/BR-083-rw-install-default-patterns-mismatch-fresh-kanban-layout.md) · [BR-084](../../../fbu/BR-084-rw-install-mode-c-missing-task-doc-pattern.md) · [BR-085](../../../fbu/BR-085-rw-install-story-pattern-placeholder-loop-fresh-kanban.md) · [UXR-017](../../../fbu/UXR-017-kanban-epic-story-path-lowercase-naming.md) · [#15](https://github.com/RMS-Ltd/ai-dev-kit/issues/15) · [#16](https://github.com/RMS-Ltd/ai-dev-kit/issues/16) · [#17](https://github.com/RMS-Ltd/ai-dev-kit/issues/17)
 
 ---
 
 ## Input
 
 - [IPP-E6S9T16](../../../../implementation-cycles/IPP-E06S09T16-br086-lowercase-fresh-kanban-patterns.md) — IPW planning package (2026-06-04)
-- [BR-086](../../../fr-br/BR-086-rw-install-lowercase-fresh-kanban-patterns-signoff.md)
+- [BR-086](../../../fbu/BR-086-rw-install-lowercase-fresh-kanban-patterns-signoff.md)
 - GitHub issue [#17](https://github.com/RMS-Ltd/ai-dev-kit/issues/17) (2026-06-04 book dry-run on `main`)
 - Follow-up comments on [#15](https://github.com/RMS-Ltd/ai-dev-kit/issues/15) / [#16](https://github.com/RMS-Ltd/ai-dev-kit/issues/16) (lowercase path regression)
 - `install_release_workflow.py` — mode C prompts, `strict_zero_match`, `generate_rw_config_yaml`
@@ -87,5 +87,5 @@ housekeeping_policy: keep
 ## References
 
 - [IPP-E6S9T16](../../../../implementation-cycles/IPP-E06S09T16-br086-lowercase-fresh-kanban-patterns.md)
-- [BR-086](../../../fr-br/BR-086-rw-install-lowercase-fresh-kanban-patterns-signoff.md)
+- [BR-086](../../../fbu/BR-086-rw-install-lowercase-fresh-kanban-patterns-signoff.md)
 - [GitHub #17](https://github.com/RMS-Ltd/ai-dev-kit/issues/17)

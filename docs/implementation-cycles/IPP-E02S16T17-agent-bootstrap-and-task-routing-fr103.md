@@ -9,7 +9,7 @@ housekeeping_policy: keep
 # E02:S16:T17 — Planning: Spec, Tests, Implementation Plan (IPW)
 
 **Host Task:** [`T17-agent-bootstrap-and-task-routing-fr103.md`](../kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T17-agent-bootstrap-and-task-routing-fr103.md) **(E02:S16:T17)**  
-**Planning for:** [FR-103 — Agent bootstrap and task routing](../kanban/fr-br/FR-103-agent-bootstrap-and-task-routing.md)  
+**Planning for:** [FR-103 — Agent bootstrap and task routing](../kanban/fbu/FR-103-agent-bootstrap-and-task-routing.md)  
 **Status:** Published (implementation complete **v0.2.16.17+1**)
 
 > **IPW:** Produced for E02:S16:T17. Bidirectional wiring to task `Input` / `References` confirmed.
@@ -153,7 +153,7 @@ Deterministic cold-start path: slim `AGENTS.md` → scan manifest → load only 
 
 ## References
 
-- [FR-103](../kanban/fr-br/FR-103-agent-bootstrap-and-task-routing.md)
+- [FR-103](../kanban/fbu/FR-103-agent-bootstrap-and-task-routing.md)
 - [ADR-012](../architecture/standards-and-adrs/ADR-012-agent-bootstrap-and-task-routing.md)
 - [T17](../kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T17-agent-bootstrap-and-task-routing-fr103.md)
 - [ipw-adr-necessity-checklist.md](../architecture/standards-and-adrs/ipw-adr-necessity-checklist.md)

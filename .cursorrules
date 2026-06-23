@@ -374,7 +374,7 @@ For each step, follow this pattern:
 
 6. **Update BR/FR Docs** - Update Bug Reports and Feature Requests with fix attempt information. Use config path. Document flaws, attempted fixes, and verification status.
 
-7. **Scoped Kanban Reconciliation (Self-Sufficient)** — RW Step 7 is a **self-sufficient** scoped reconciliation that owns release-scope kanban consistency end-to-end and **does not depend on a follow-up UKW run** for release correctness. (Per [FR-092 / FR-091](docs/kanban/fr-br/FR-092-canonical-rw-ukw-kanban-consistency-program.md), absorbing [FR-091](docs/kanban/fr-br/FR-091-rw-step-7-self-sufficient-scoped-kanban-reconciliation-without-ukw-dependency.md).)
+7. **Scoped Kanban Reconciliation (Self-Sufficient)** — RW Step 7 is a **self-sufficient** scoped reconciliation that owns release-scope kanban consistency end-to-end and **does not depend on a follow-up UKW run** for release correctness. (Per [FR-092 / FR-091](docs/kanban/fbu/FR-092-canonical-rw-ukw-kanban-consistency-program.md), absorbing [FR-091](docs/kanban/fbu/FR-091-rw-step-7-self-sufficient-scoped-kanban-reconciliation-without-ukw-dependency.md).)
 
    **What/Why (architecture, not just operational guidance):**
 
@@ -397,7 +397,7 @@ For each step, follow this pattern:
 
 8. **Stage Files** - Run `git add -A` to stage all modified files
 
-9. **Run Validators** - Execute validation scripts. Use config path. Run `validate_branch_context.py`, `validate_changelog_format.py`, `validate_version_bump.py`, **`validate_release_tag_immutability.py`**, `check_changelog_size.py`, `validate_changelog_archive_links.py`, and **`validate_board_stamp_diff.py`** (FR-097: compare Step 7 start snapshots to current `kboard.md` / `kboard.md` — **blocking** on un evidenced row stamp deltas). Run **`validate_kanban_state_icons.py`** (UXR-012 Gate 9: `--strict` on `kboard.md` / `kboard.md`). Run **`validate_active_kanban_board.py`** (FR-109: `--strict` on active boards). Run `validate_release_readiness.py` (Gates 1–11: stamp homogeneity, MoSCOW state icons, active-board lean; Gate 10 spacing advisory). When `semver_mapping_strategy: task_touch`, run **`validate_semver_registry_injective.py`** (FR-045 / E03:S02:T12 — blocking on PATCH or SemVer core collisions in `semver-registry.yaml`) and **`validate_task_touch_release_contract.py --strict`** (registry finalized + staged for releasing internal version). When `release_coherence.enabled` in `rw-config.yaml`, run **`validate_release_coherence.py --strict`** (FR-122 / E02:S01:T30 — README ↔ SAA DB ↔ `version.py` cross-surface gate). After Step 2 `version.py` write, run **`finalize_rw_semver_registry.py --internal-version "<resolved>"`** before changelog/README SemVer. All scripts read `rw-config.yaml` when available. **If RW was triggered with `--art`, propagate adoption context in Step 9** by passing `--requested "<parsed_id>" --art` to `validate_branch_context.py` and `validate_version_bump.py`. For a **docs-only** release that must use **BUILD +0** on an **existing** E/S/T (e.g. perpetual **T103**, [BR-067](docs/kanban/fr-br/BR-067-rw-first-doc-only-release-defaults-to-build-plus-one-not-plus-zero.md)), add **`--dpz`** to `validate_version_bump.py` (alias: `--doc-policy-zero`; same **--strict** / **--requested** / **--art** line). **Note:** `check_changelog_size.py` exit code 1 (threshold exceeded) is non-blocking and triggers Step 9.5. **Note:** `validate_changelog_archive_links.py` is non-blocking and reports dangling links in `CHANGELOG_ARCHIVE.md` with line numbers (BR-074).
+9. **Run Validators** - Execute validation scripts. Use config path. Run `validate_branch_context.py`, `validate_changelog_format.py`, `validate_version_bump.py`, **`validate_release_tag_immutability.py`**, `check_changelog_size.py`, `validate_changelog_archive_links.py`, and **`validate_board_stamp_diff.py`** (FR-097: compare Step 7 start snapshots to current `kboard.md` / `kboard.md` — **blocking** on un evidenced row stamp deltas). Run **`validate_kanban_state_icons.py`** (UXR-012 Gate 9: `--strict` on `kboard.md` / `kboard.md`). Run **`validate_active_kanban_board.py`** (FR-109: `--strict` on active boards). Run `validate_release_readiness.py` (Gates 1–11: stamp homogeneity, MoSCOW state icons, active-board lean; Gate 10 spacing advisory). When `semver_mapping_strategy: task_touch`, run **`validate_semver_registry_injective.py`** (FR-045 / E03:S02:T12 — blocking on PATCH or SemVer core collisions in `semver-registry.yaml`) and **`validate_task_touch_release_contract.py --strict`** (registry finalized + staged for releasing internal version). When `release_coherence.enabled` in `rw-config.yaml`, run **`validate_release_coherence.py --strict`** (FR-122 / E02:S01:T30 — README ↔ SAA DB ↔ `version.py` cross-surface gate). After Step 2 `version.py` write, run **`finalize_rw_semver_registry.py --internal-version "<resolved>"`** before changelog/README SemVer. All scripts read `rw-config.yaml` when available. **If RW was triggered with `--art`, propagate adoption context in Step 9** by passing `--requested "<parsed_id>" --art` to `validate_branch_context.py` and `validate_version_bump.py`. For a **docs-only** release that must use **BUILD +0** on an **existing** E/S/T (e.g. perpetual **T103**, [BR-067](docs/kanban/fbu/BR-067-rw-first-doc-only-release-defaults-to-build-plus-one-not-plus-zero.md)), add **`--dpz`** to `validate_version_bump.py` (alias: `--doc-policy-zero`; same **--strict** / **--requested** / **--art** line). **Note:** `check_changelog_size.py` exit code 1 (threshold exceeded) is non-blocking and triggers Step 9.5. **Note:** `validate_changelog_archive_links.py` is non-blocking and reports dangling links in `CHANGELOG_ARCHIVE.md` with line numbers (BR-074).
 
 9.5. **Changelog Management Workflow (CMW)** - **OPTIONAL, NON-BLOCKING:** If Step 9's `check_changelog_size.py` indicated threshold exceeded (exit code 1), automatically run CMW to archive entries, remove duplicates, and fix ordering. CMW is deterministic (rule-based, no agentic intelligence required). If threshold not exceeded, skip this step. CMW failures are non-blocking (workflow continues).
 
@@ -588,7 +588,7 @@ For each step, follow this pattern:
 - `story_doc_pattern`: `epics/Epic-{epic}/Story-{story}-*.md`
 - `task_doc_pattern`: `epics/Epic-{epic}/Story-{story}/T{task}-*.md`
 - `kanban_board`: `kboard.md`
-- `fr_br_root`: `fr-br`
+- `fbu_root`: `fr-br`
 
 **🚨 MANDATORY: Progress Tracking with Workflow Step Tracker**
 
@@ -791,7 +791,7 @@ If ICW detects implementation mode:
 4. **v1 `delivery` recipe:** IPW when no linked IPP → `MWF CHAIN PAUSED` (exit plan mode) → `IDW E:S:T --rw` (+ forwarded flags).
 5. **Resume:** When linked IPP exists, skip IPW leg; run IDW `--rw` only.
 6. **Abort propagation:** Any leg `ABORTED` → **`MWF ABORTED (leg: IPW|IDW|RW)`** — no commit/tag from aborted chain.
-7. **DO NOT** add `IPW --rw` — superseded by MWF ([FR-124](docs/kanban/fr-br/FR-124-meta-workflow-orchestration-composite-workflow-chains.md)).
+7. **DO NOT** add `IPW --rw` — superseded by MWF ([FR-124](docs/kanban/fbu/FR-124-meta-workflow-orchestration-composite-workflow-chains.md)).
 
 **Terminal states:** `MWF COMPLETE`, `MWF CHAIN PAUSED`, `MWF ABORTED (leg: …)`.
 
@@ -868,7 +868,7 @@ Documents in `docs/` directory must have lifecycle metadata in frontmatter:
 
 **Enforcement when adopted:** Step 3 is BLOCKING — implementation (Step 4) cannot start until tests exist and fail as expected. Pre-implementation checklist: requirement documented, task created, spec ascertained, tests created and failing, tests compile.
 
-**Integration:** Task creation aligns with `packages/frameworks/kanban/policies/kanban-governance-policy.md`; RW updates Kanban via **Step 7 — Scoped Kanban Reconciliation (Self-Sufficient)** which owns release-scope four-surface consistency without depending on UKW (per [FR-092](docs/kanban/fr-br/FR-092-canonical-rw-ukw-kanban-consistency-program.md)). Projects may make this cycle mandatory for all task implementations.
+**Integration:** Task creation aligns with `packages/frameworks/kanban/policies/kanban-governance-policy.md`; RW updates Kanban via **Step 7 — Scoped Kanban Reconciliation (Self-Sufficient)** which owns release-scope four-surface consistency without depending on UKW (per [FR-092](docs/kanban/fbu/FR-092-canonical-rw-ukw-kanban-consistency-program.md)). Projects may make this cycle mandatory for all task implementations.
 
 ---
 

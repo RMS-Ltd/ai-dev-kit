@@ -9,7 +9,7 @@ housekeeping_policy: keep
 # E06:S09:T25 — Planning: Spec, Tests, Implementation Plan (IPW)
 
 **Host Task:** [`T25-starborn-legacy-greenfield-install-diary-triage-uxr025.md`](../kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T25-starborn-legacy-greenfield-install-diary-triage-uxr025.md) **(E06:S09:T25)**  
-**Planning for:** [UXR-025](../kanban/fr-br/UXR-025-starborn-legacy-greenfield-install-diary.md) · [Diary](../knowledge/analysis/projects/starborn-legacy-greenfield-install-diary.md)  
+**Planning for:** [UXR-025](../kanban/fbu/UXR-025-starborn-legacy-greenfield-install-diary.md) · [Diary](../knowledge/analysis/projects/starborn-legacy-greenfield-install-diary.md)  
 **Status:** Approved
 
 ---
@@ -73,7 +73,7 @@ Make lean-vendor greenfield (`--vendor-root` + `--non-interactive`) work without
 | T1–T6 | N | Single-script fix under FR-080 |
 | T7 | Y | Extends existing greenfield contract |
 
-**Outcome:** **EXEMPT** — no new ADR; cite [FR-080](../kanban/fr-br/FR-080-greenfield-installation-process.md).
+**Outcome:** **EXEMPT** — no new ADR; cite [FR-080](../kanban/fbu/FR-080-greenfield-installation-process.md).
 
 ---
 
@@ -151,8 +151,8 @@ Make lean-vendor greenfield (`--vendor-root` + `--non-interactive`) work without
 
 ## References
 
-- [UXR-025](../kanban/fr-br/UXR-025-starborn-legacy-greenfield-install-diary.md)
+- [UXR-025](../kanban/fbu/UXR-025-starborn-legacy-greenfield-install-diary.md)
 - [Diary](../knowledge/analysis/projects/starborn-legacy-greenfield-install-diary.md)
-- [FR-080](../kanban/fr-br/FR-080-greenfield-installation-process.md)
-- [FR-081](../kanban/fr-br/FR-081-brownfield-modular-adopter-integration.md)
+- [FR-080](../kanban/fbu/FR-080-greenfield-installation-process.md)
+- [FR-081](../kanban/fbu/FR-081-brownfield-modular-adopter-integration.md)
 - [E06:S09:T01](../kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T01-greenfield-installation-process-fr080.md)

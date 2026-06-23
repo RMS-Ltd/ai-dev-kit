@@ -34,9 +34,9 @@ housekeeping_policy: keep
   - Task: [`T05-explore-and-evaluate-kb-platformtooling-options`](story-02-documentation-maintenance-framework/T05-explore-and-evaluate-kb-platformtooling-options.md)
 - [x] **E05:S02:T06 – CMW Epic 5 execution context (FR-063)** - ✅ COMPLETE (v0.5.2.6+1) (MEDIUM — intake: FR-063 + task + board + CMW archival on E5 branch; **FR-063 implementation** still open per FR checklist)
   - Task: [`T06-cmw-epic-5-execution-context-fr-063`](story-02-documentation-maintenance-framework/T06-cmw-epic-5-execution-context-fr-063.md)
-  - Task: [`T06-cmw-epic-05-execution-context-fr-063.md`](story-02/T06-cmw-epic-5-execution-context-fr-063.md) | [FR-063](../../fr-br/FR-063-cmw-epic-5-execution-context.md)
+  - Task: [`T06-cmw-epic-05-execution-context-fr-063.md`](story-02/T06-cmw-epic-5-execution-context-fr-063.md) | [FR-063](../../fbu/FR-063-cmw-epic-5-execution-context.md)
 - [x] **E05:S02:T07 – Unified documentation governance strategy (FR-139)** - ✅ COMPLETE (**v0.5.2.7+2** — documentation governance strategy index, § convention, PLAN_DOC_TEMPLATE)
-  - Task: [`T07-unified-documentation-governance-strategy-fr139`](story-02-documentation-maintenance-framework/T07-unified-documentation-governance-strategy-fr139.md) | [FR-139](../../fr-br/FR-139-unified-documentation-governance-strategy.md) | [IPP](../../implementation-cycles/IPP-E05S02T07-unified-documentation-governance-strategy-fr139.md)
+  - Task: [`T07-unified-documentation-governance-strategy-fr139`](story-02-documentation-maintenance-framework/T07-unified-documentation-governance-strategy-fr139.md) | [FR-139](../../fbu/FR-139-unified-documentation-governance-strategy.md) | [IPP](../../implementation-cycles/IPP-E05S02T07-unified-documentation-governance-strategy-fr139.md)
 
 ---
 

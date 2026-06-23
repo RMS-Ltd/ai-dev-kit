@@ -19,7 +19,7 @@ To deliver efficient, standardized intake processing for Feature Requests (FR), 
 - Configuration file `.ai-dev-kit.yaml` with intake settings
 
 ### Setup Requirements
-- Intake directory: `docs/kanban/fr-br/`
+- Intake directory: `docs/kanban/fbu/`
 - Completed tracking: `docs/kanban/intake-completed.md`
 - Kanban board integration: `docs/kanban/kboard.md`
 - Validation rules and templates configured
@@ -51,7 +51,7 @@ INTAKE --validate-only --dry-run
 # .ai-dev-kit.yaml
 intake:
   enabled: true
-  intake_directory: docs/kanban/fr-br/
+  intake_directory: docs/kanban/fbu/
   completed_tracking: docs/kanban/intake-completed.md
   kanban_integration: true
   auto_categorization: true
@@ -62,7 +62,7 @@ intake:
 ### Configuration Options
 | Option | Type | Default | Description |
 |--------|------|---------|-------------|
-| intake_directory | string | docs/kanban/fr-br/ | Intake requests directory |
+| intake_directory | string | docs/kanban/fbu/ | Intake requests directory |
 | completed_tracking | string | docs/kanban/intake-completed.md | Completed requests tracking |
 | kanban_integration | boolean | true | Update kanban board automatically |
 | auto_categorization | boolean | true | Automatic request categorization |
@@ -367,7 +367,7 @@ INTAKE --help
 ```yaml
 intake:
   enabled: true
-  intake_directory: docs/kanban/fr-br/
+  intake_directory: docs/kanban/fbu/
   completed_tracking: docs/kanban/intake-completed.md
   kanban_integration: true
   auto_categorization: true

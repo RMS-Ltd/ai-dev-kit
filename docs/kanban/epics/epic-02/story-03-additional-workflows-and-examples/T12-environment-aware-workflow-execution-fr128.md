@@ -16,9 +16,9 @@ housekeeping_policy: keep
 **Version Anchor:** v0.2.3.12+1
 **Code:** E02S03T12
 
-**Upstream:** [FR-128](../../../fr-br/FR-128-environment-aware-workflow-execution.md)
+**Upstream:** [FR-128](../../../fbu/FR-128-environment-aware-workflow-execution.md)
 
-**Related:** [FR-094](../../../fr-br/FR-094-ipw-slash-command-and-task-state-transition-mandate.md) · [FR-119](../../../fr-br/FR-119-implementation-delivery-workflow-idw.md) · [FR-124](../../../fr-br/FR-124-meta-workflow-orchestration-composite-workflow-chains.md) · [BR-102](../../../fr-br/BR-102-mwf-chain-paused-instead-of-subagent-leg-delegation.md) · [T10](T10-workflow-encapsulation-integrity-mwf-fr126.md) · [T11](T11-mwf-subagent-leg-delegation-br102.md)
+**Related:** [FR-094](../../../fbu/FR-094-ipw-slash-command-and-task-state-transition-mandate.md) · [FR-119](../../../fbu/FR-119-implementation-delivery-workflow-idw.md) · [FR-124](../../../fbu/FR-124-meta-workflow-orchestration-composite-workflow-chains.md) · [BR-102](../../../fbu/BR-102-mwf-chain-paused-instead-of-subagent-leg-delegation.md) · [T10](T10-workflow-encapsulation-integrity-mwf-fr126.md) · [T11](T11-mwf-subagent-leg-delegation-br102.md)
 
 ---
 
@@ -32,7 +32,7 @@ Wave 3 follow-on from [T10](T10-workflow-encapsulation-integrity-mwf-fr126.md) e
 
 ## Input
 
-- [FR-128](../../../fr-br/FR-128-environment-aware-workflow-execution.md) — analysis, design, requirements, acceptance criteria
+- [FR-128](../../../fbu/FR-128-environment-aware-workflow-execution.md) — analysis, design, requirements, acceptance criteria
 - [IPP-E02S03T12](../../../../implementation-cycles/IPP-E02S03T12-environment-aware-workflow-execution-fr128.md) — implementation plan (MWF Leg 1)
 - [IPP-E02S03T10](../../../../implementation-cycles/IPP-E02S03T10-workflow-encapsulation-integrity-mwf-fr126.md) — encapsulation inventory / Wave 3 gaps
 - Existing handlers: `packages/frameworks/workflow-mgt/scripts/icw/icw_handler.py`
@@ -83,7 +83,7 @@ Wave 3 follow-on from [T10](T10-workflow-encapsulation-integrity-mwf-fr126.md) e
 
 **Blocks:**
 - Portable standalone IPW on OpenCode
-- Environment-aware MWF leg gates ([FR-124](../../../fr-br/FR-124-meta-workflow-orchestration-composite-workflow-chains.md))
+- Environment-aware MWF leg gates ([FR-124](../../../fbu/FR-124-meta-workflow-orchestration-composite-workflow-chains.md))
 
 **Parallel Development Candidacy:** Safe — orthogonal to adopter install work (E06:S09).
 
@@ -91,4 +91,4 @@ Wave 3 follow-on from [T10](T10-workflow-encapsulation-integrity-mwf-fr126.md) e
 
 ## Associated Feature Requests
 
-- [FR-128 — Environment-aware workflow execution](../../../fr-br/FR-128-environment-aware-workflow-execution.md) (primary)
+- [FR-128 — Environment-aware workflow execution](../../../fbu/FR-128-environment-aware-workflow-execution.md) (primary)

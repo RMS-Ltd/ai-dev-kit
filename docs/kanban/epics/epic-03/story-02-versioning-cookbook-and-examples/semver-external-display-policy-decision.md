@@ -9,7 +9,7 @@ housekeeping_policy: keep
 # Policy decision: External SemVer `+BUILD` display in `task_touch` mode
 
 **Task:** [E03:S02:T15](T15-semver-external-build-metadata-redundancy-uxr031.md)  
-**UXR:** [UXR-031](../../../fr-br/UXR-031-semver-plusbuild-redundancy-in-task-touch.md)  
+**UXR:** [UXR-031](../../../fbu/UXR-031-semver-plusbuild-redundancy-in-task-touch.md)  
 **ADR:** [ADR-031](../../../../architecture/standards-and-adrs/ADR-031-external-semver-build-metadata-display-policy.md)  
 **Versioning policy:** [dev-kit-versioning-policy.md](../../../../governance/standards/dev-kit-versioning-policy.md) §2.1.1
 
@@ -63,8 +63,8 @@ README, RW commit subjects, and changelog SemVer lines show **core only** (for e
 ## Invariants preserved
 
 - Internal version remains `RC.EPIC.STORY.TASK+BUILD` and stays the Kanban/workflow anchor.
-- `task_touch` PATCH allocator and finalize injectivity guarantees unchanged ([FR-045](../../../fr-br/FR-045-adr-002-task-touch-derived-mapping.md), [BR-061](../../../fr-br/BR-061-semver-task-touch-counter-increments-too-often.md)).
-- No retagging or force-moving of existing release tags ([BR-097](../../../fr-br/BR-097-rw-agent-reuses-tagged-build-and-force-moves-release-tags.md)).
+- `task_touch` PATCH allocator and finalize injectivity guarantees unchanged ([FR-045](../../../fbu/FR-045-adr-002-task-touch-derived-mapping.md), [BR-061](../../../fbu/BR-061-semver-task-touch-counter-increments-too-often.md)).
+- No retagging or force-moving of existing release tags ([BR-097](../../../fbu/BR-097-rw-agent-reuses-tagged-build-and-force-moves-release-tags.md)).
 
 ---
 

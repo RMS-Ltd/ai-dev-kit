@@ -32,7 +32,7 @@ Execute **FR-032**: gap analysis from **RC=0** (development) toward a defined **
 
 ## Input
 
-- [FR-032](../../../fr-br/FR-032-release-candidate-readiness-gap-analysis.md)  
+- [FR-032](../../../fbu/FR-032-release-candidate-readiness-gap-analysis.md)  
 - [dev-kit-versioning policy](../../../../architecture/standards-and-adrs/dev-kit-versioning-policy.md)  
 - Active Kanban epics and MoSCOW board
 
@@ -69,4 +69,4 @@ Execute **FR-032**: gap analysis from **RC=0** (development) toward a defined **
 
 ---
 
-**Feature Request:** [FR-032](../../../fr-br/FR-032-release-candidate-readiness-gap-analysis.md)
+**Feature Request:** [FR-032](../../../fbu/FR-032-release-candidate-readiness-gap-analysis.md)

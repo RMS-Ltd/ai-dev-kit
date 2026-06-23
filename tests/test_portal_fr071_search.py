@@ -3,7 +3,7 @@ FR-071 / E5:S09:T07: Docusaurus site search (local/offline) contract.
 
 Executable spec S1–S6; production query E2E is manual.
 
-See: docs/kanban/fr-br/FR-071-docusaurus-site-search.md
+See: docs/kanban/fbu/FR-071-docusaurus-site-search.md
 """
 
 from __future__ import annotations

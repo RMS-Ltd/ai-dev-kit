@@ -12,7 +12,7 @@ housekeeping_policy: keep
 **Status:** COMPLETE  
 **Epic:** E7 – Codebase Maintenance and Review  
 **Story:** S01 – Codebase Maintenance Tasks  
-**Related FR:** [FR-057](../../../fr-br/FR-057-update-changelog-workflow.md)  
+**Related FR:** [FR-057](../../../fbu/FR-057-update-changelog-workflow.md)  
 **Priority:** HIGH  
 **Last updated:** 2026-05-29 (board hygiene — confirmed COMPLETE **v0.7.1.7+4**)  
 **Version:** v0.7.1.7+4

@@ -11,7 +11,7 @@ housekeeping_policy: keep
 **Status:** ACTIVE REFERENCE  
 **Owner:** Engineering  
 **Last Updated:** 2026-06-09  
-**Related Work:** Epic 3, Story 3 (Versioning Integration with Kanban & RW); [FR-122](../../kanban/fr-br/FR-122-release-workflow-architectural-contract-release-transaction.md) / [ADR-027](ADR-027-rw-release-transaction-contract.md)
+**Related Work:** Epic 3, Story 3 (Versioning Integration with Kanban & RW); [FR-122](../../kanban/fbu/FR-122-release-workflow-architectural-contract-release-transaction.md) / [ADR-027](ADR-027-rw-release-transaction-contract.md)
 
 ---
 
@@ -42,7 +42,7 @@ This document serves as a **comprehensive reference** for all discovered flaws, 
 | [WF-002](#wf-002-version-bump-logic-error-step-2) | Step 2 | BUILD incremented instead of TASK for new tasks | ✅ FIXED | [Solution](#wf-002-version-bump-logic-error-step-2) |
 | [WF-003](#wf-003-brfr-fix-attempts-not-documented) | N/A (New Step 6) | Fix attempts not documented in BR/FR docs, preventing knowledge transfer between builds | ✅ FIXED | [Solution](#wf-003-brfr-fix-attempts-not-documented) |
 | [WF-004](#wf-004-story-file-missing-during-rw-update-step-7) | Step 7 | RW fails when Story file referenced in Epic doesn't exist | 🔧 TO FIX | [Solution](#wf-004-story-file-missing-during-rw-update-step-7) |
-| [WF-005](#wf-005-split-brain-release-semver-surfaces-diverge) | 2–5, 9, 11 | `version.py` / internal tag OK; README, changelog, SemVer tag, or allocator DB disagree | 🔧 IN PROGRESS | [FR-122](../../kanban/fr-br/FR-122-release-workflow-architectural-contract-release-transaction.md) Wave 1–3 |
+| [WF-005](#wf-005-split-brain-release-semver-surfaces-diverge) | 2–5, 9, 11 | `version.py` / internal tag OK; README, changelog, SemVer tag, or allocator DB disagree | 🔧 IN PROGRESS | [FR-122](../../kanban/fbu/FR-122-release-workflow-architectural-contract-release-transaction.md) Wave 1–3 |
 
 ---
 
@@ -50,7 +50,7 @@ This document serves as a **comprehensive reference** for all discovered flaws, 
 
 **Status:** 🔧 IN PROGRESS (Wave 0 contract filed 2026-06-09)  
 **Date Discovered:** 2026-06-09 (`0.6.9.26+2` / E06:S09:T26)  
-**Related:** [FR-122](../../kanban/fr-br/FR-122-release-workflow-architectural-contract-release-transaction.md) · [ADR-027](ADR-027-rw-release-transaction-contract.md) · [BR-097](../../kanban/fr-br/BR-097-rw-agent-reuses-tagged-build-and-force-moves-release-tags.md)
+**Related:** [FR-122](../../kanban/fbu/FR-122-release-workflow-architectural-contract-release-transaction.md) · [ADR-027](ADR-027-rw-release-transaction-contract.md) · [BR-097](../../kanban/fbu/BR-097-rw-agent-reuses-tagged-build-and-force-moves-release-tags.md)
 
 ### Symptom
 

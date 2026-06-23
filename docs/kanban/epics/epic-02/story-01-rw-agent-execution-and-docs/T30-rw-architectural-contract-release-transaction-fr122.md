@@ -23,7 +23,7 @@ Publication Status: NOT_APPLICABLE
 
 ## Scope
 
-Own the **meta program** for [FR-122](../../../fr-br/FR-122-release-workflow-architectural-contract-release-transaction.md): define what RW *must* guarantee as a release transaction, produce a gap matrix against today's bolted-on reality, and deliver incremental waves (contract doc → gates → optional orchestrator) — same shape as [FR-092](../../../fr-br/FR-092-canonical-rw-ukw-kanban-consistency-program.md) / [E02:S15:T07](../../story-15-ipw-governance-and-publication-contract/T07-canonical-rw-ukw-kanban-consistency-program-fr092.md).
+Own the **meta program** for [FR-122](../../../fbu/FR-122-release-workflow-architectural-contract-release-transaction.md): define what RW *must* guarantee as a release transaction, produce a gap matrix against today's bolted-on reality, and deliver incremental waves (contract doc → gates → optional orchestrator) — same shape as [FR-092](../../../fbu/FR-092-canonical-rw-ukw-kanban-consistency-program.md) / [E02:S15:T07](../../story-15-ipw-governance-and-publication-contract/T07-canonical-rw-ukw-kanban-consistency-program-fr092.md).
 
 **Triggering incident:** RW `0.6.9.26+2` (E06:S09:T26) — internal tag OK, README/CHANGELOG wrong SemVer (`v0.4.11+2`), truncated allocator DB, agent bypassed `create_rw_tags()`.
 
@@ -35,11 +35,11 @@ Own the **meta program** for [FR-122](../../../fr-br/FR-122-release-workflow-arc
 
 | ID | Role |
 | -- | ---- |
-| [FR-122](../../../fr-br/FR-122-release-workflow-architectural-contract-release-transaction.md) | **Primary** — meta architectural contract |
-| [FR-120](../../../fr-br/FR-120-semver-allocation-authority-transactional-mapping-black-box.md) | Allocator authority (RW must enforce health) |
-| [FR-092](../../../fr-br/FR-092-canonical-rw-ukw-kanban-consistency-program.md) | Kanban four-surface atomicity (F4) |
-| [BR-097](../../../fr-br/BR-097-rw-agent-reuses-tagged-build-and-force-moves-release-tags.md) | Tag immutability / BUILD discipline |
-| [UXR-024](../../../fr-br/UXR-024-rw-local-release-default-no-push-batch-operator-push.md) | Local-complete publish policy |
+| [FR-122](../../../fbu/FR-122-release-workflow-architectural-contract-release-transaction.md) | **Primary** — meta architectural contract |
+| [FR-120](../../../fbu/FR-120-semver-allocation-authority-transactional-mapping-black-box.md) | Allocator authority (RW must enforce health) |
+| [FR-092](../../../fbu/FR-092-canonical-rw-ukw-kanban-consistency-program.md) | Kanban four-surface atomicity (F4) |
+| [BR-097](../../../fbu/BR-097-rw-agent-reuses-tagged-build-and-force-moves-release-tags.md) | Tag immutability / BUILD discipline |
+| [UXR-024](../../../fbu/UXR-024-rw-local-release-default-no-push-batch-operator-push.md) | Local-complete publish policy |
 
 ---
 
@@ -47,7 +47,7 @@ Own the **meta program** for [FR-122](../../../fr-br/FR-122-release-workflow-arc
 
 - **[IPP-E02S01T30](../../../../implementation-cycles/IPP-E02S01T30-rw-architectural-contract-release-transaction.md)** — specification, test design, waves 0–5 (IPW 2026-06-09)
 - User RW architecture experiment (2026-06-09) — draft contract, gap matrix, IPP skeleton
-- [FR-122](../../../fr-br/FR-122-release-workflow-architectural-contract-release-transaction.md) — requirements F1–F10, NF1–NF5
+- [FR-122](../../../fbu/FR-122-release-workflow-architectural-contract-release-transaction.md) — requirements F1–F10, NF1–NF5
 - `.cursorrules` · `.claude/commands/rw.md` · `release-workflow-agent-execution.md` · `canonical-rw-steps.yaml`
 - `packages/frameworks/workflow-mgt/scripts/version/create_rw_tags.py` · `semver_converter.py`
 - `docs/maintenance/saa-operator-verification-e03s02t14.md` — allocator bootstrap gate (ops doc only today)
@@ -80,7 +80,7 @@ Own the **meta program** for [FR-122](../../../fr-br/FR-122-release-workflow-arc
 
 ## Acceptance Criteria
 
-Mirror [FR-122 AC](../../../fr-br/FR-122-release-workflow-architectural-contract-release-transaction.md#acceptance-criteria). **All ACs satisfied** @ v0.2.1.30+8.
+Mirror [FR-122 AC](../../../fbu/FR-122-release-workflow-architectural-contract-release-transaction.md#acceptance-criteria). **All ACs satisfied** @ v0.2.1.30+8.
 
 ---
 

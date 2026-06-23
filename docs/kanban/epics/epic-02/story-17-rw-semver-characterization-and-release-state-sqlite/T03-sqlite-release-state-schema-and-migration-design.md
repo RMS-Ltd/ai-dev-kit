@@ -46,7 +46,7 @@ Design the **SQLite schema** and **migration path** from legacy MD/YAML release 
 - T02 baseline observations (schema stress cases) — [baseline-pattern-notes.md](baseline-pattern-notes.md)
 - `semver-registry.yaml` structure
 - `finalize_rw_semver_registry.py` · `semver_converter.py` contracts
-- [FR-045](../../../fr-br/FR-045-adr-002-task-touch-derived-mapping.md) injective mapping invariant
+- [FR-045](../../../fbu/FR-045-adr-002-task-touch-derived-mapping.md) injective mapping invariant
 - **[IPP-E02S17T03-sqlite-release-state-schema.md](../../../../implementation-cycles/IPP-E02S17T03-sqlite-release-state-schema.md)** (IPW gate for T04)
 
 ---

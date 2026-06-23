@@ -9,7 +9,7 @@ housekeeping_policy: keep
 # E06:S09:T38 — Planning: Guided install orchestrator (IPW)
 
 **Host Task:** [`T38-guided-install-orchestrator-fr135.md`](../kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T38-guided-install-orchestrator-fr135.md) **(E06:S09:T38)**  
-**Planning for:** [FR-135](../kanban/fr-br/FR-135-guided-install-orchestrator-zero-manual-steps.md) · [E06:S09:T36](../kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T36-adopter-path-selector-install-rc-uxr029.md) · [E06:S09:T37](../kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T37-kanban-migration-depth-rationalization-fr133.md)  
+**Planning for:** [FR-135](../kanban/fbu/FR-135-guided-install-orchestrator-zero-manual-steps.md) · [E06:S09:T36](../kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T36-adopter-path-selector-install-rc-uxr029.md) · [E06:S09:T37](../kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T37-kanban-migration-depth-rationalization-fr133.md)  
 **Status:** Approved
 
 ---

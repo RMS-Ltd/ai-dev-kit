@@ -9,10 +9,10 @@ housekeeping_policy: keep
 # E5:S01:T56 — Planning: Standardize Packaged Workflow Documentation and Instructions
 
 **Host Task:** [`T56-standardize-packaged-workflow-documentation-and-instructions.md`](../kanban/epics/epic-05/story-01-fr-repo/T56-standardize-packaged-workflow-documentation-and-instructions.md) **(E5:S01:T56)**
-**Planning for:** [FR-056](../kanban/fr-br/FR-056-standardize-packaged-workflow-documentation-and-instructions.md)
+**Planning for:** [FR-056](../kanban/fbu/FR-056-standardize-packaged-workflow-documentation-and-instructions.md)
 **Status:** Approved
 
-> **IPW (Implementation Planning Workflow):** Use this template when running **IPW** / **IPW E:S:T**. The **Host Task** link and bidirectional wiring to the task doc **Input** and **References** are **mandatory** before the plan is complete (see project **FR-042** — *Implementation Planning Workflow* in `docs/kanban/fr-br/`).
+> **IPW (Implementation Planning Workflow):** Use this template when running **IPW** / **IPW E:S:T**. The **Host Task** link and bidirectional wiring to the task doc **Input** and **References** are **mandatory** before the plan is complete (see project **FR-042** — *Implementation Planning Workflow* in `docs/kanban/fbu/`).
 
 ---
 
@@ -127,7 +127,7 @@ This is primarily a documentation task. Tests are structural validation scripts 
 - **Modify:** `packages/frameworks/workflow-mgt/workflows/*/README.md` (up to 10 files) — fix broken links, add missing sections
 - **Modify:** `packages/frameworks/workflow-mgt/README.md` — correct workflow count, fix table links if needed
 - **Modify:** `docs/kanban/epics/epic-05/story-01-fr-repo/T56-standardize-packaged-workflow-documentation-and-instructions.md` — update scope to reflect 11 workflows and audit-and-fix approach
-- **Modify:** `docs/kanban/fr-br/FR-056-standardize-packaged-workflow-documentation-and-instructions.md` — correct "12 workflows" to "11 workflows"
+- **Modify:** `docs/kanban/fbu/FR-056-standardize-packaged-workflow-documentation-and-instructions.md` — correct "12 workflows" to "11 workflows"
 - **Modify:** `docs/kanban/kboard.md` — update T56 status
 
 ### 4.2 Dependency order
@@ -155,7 +155,7 @@ This is primarily a documentation task. Tests are structural validation scripts 
 ## References
 
 - **Host Task:** `docs/kanban/epics/epic-05/story-01-fr-repo/T56-standardize-packaged-workflow-documentation-and-instructions.md`
-- **FR-056:** `docs/kanban/fr-br/FR-056-standardize-packaged-workflow-documentation-and-instructions.md`
+- **FR-056:** `docs/kanban/fbu/FR-056-standardize-packaged-workflow-documentation-and-instructions.md`
 - **Workflow registry:** `packages/frameworks/workflow-mgt/workflows/workflow-registry.yaml`
 - **Framework README:** `packages/frameworks/workflow-mgt/README.md`
 - **Canonical template:** `packages/frameworks/workflow-mgt/templates/workflow-readme-template.md`

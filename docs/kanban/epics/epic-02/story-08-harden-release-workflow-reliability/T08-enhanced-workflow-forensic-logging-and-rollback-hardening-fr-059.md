@@ -13,7 +13,7 @@ housekeeping_policy: keep
 **Version Anchor:** v0.2.8.8+4  
 **Last updated:** 2026-05-30 (RW -d: IPP/Story status reconciliation)  
 **Priority:** HIGH  
-**Feature Request:** [FR-059](../../../fr-br/FR-059-enhanced-workflow-logging-system.md)
+**Feature Request:** [FR-059](../../../fbu/FR-059-enhanced-workflow-logging-system.md)
 
 Publication Status: NOT_APPLICABLE  
 Publication N/A Reason: Consolidated IPP under `docs/implementation-cycles/`.
@@ -29,7 +29,7 @@ Extend workflow execution reliability with atomic command logging, forensic I/O 
 ## Input
 
 - Existing RW hardening architecture in Story 008.  
-- [FR-059](../../../fr-br/FR-059-enhanced-workflow-logging-system.md) scope, acceptance criteria, and implementation phases.
+- [FR-059](../../../fbu/FR-059-enhanced-workflow-logging-system.md) scope, acceptance criteria, and implementation phases.
 - [IPP-E2S8T8-forensic-logging-rollback-fr059.md](../../../../implementation-cycles/IPP-E2S08T08-forensic-logging-rollback-fr059.md) (IPW planning package).
 
 ---
@@ -52,7 +52,7 @@ Extend workflow execution reliability with atomic command logging, forensic I/O 
 
 ## Acceptance Criteria
 
-- [x] FR-059 functional requirements are implemented and testable — see [FR-059 AC](../../../fr-br/FR-059-enhanced-workflow-logging-system.md); `pytest tests/journal tests/workflow` (44 tests).
+- [x] FR-059 functional requirements are implemented and testable — see [FR-059 AC](../../../fbu/FR-059-enhanced-workflow-logging-system.md); `pytest tests/journal tests/workflow` (44 tests).
 - [x] FR-059 performance and integration requirements are validated — perf smoke + schema tests; compression/100+ concurrent deferred per IPP §1.3.
 - [x] Rollback and forensic workflows are documented for operators — [workflow-forensic-recovery-guide.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/workflow-forensic-recovery-guide.md).
 

@@ -9,7 +9,7 @@ housekeeping_policy: keep
 # E05:S02:T07 — Planning: Unified documentation governance strategy (IPW)
 
 **Host Task:** [`T07-unified-documentation-governance-strategy-fr139.md`](../kanban/epics/epic-05/story-02-documentation-maintenance-framework/T07-unified-documentation-governance-strategy-fr139.md) **(E05:S02:T07)**  
-**Planning for:** [FR-139](../kanban/fr-br/FR-139-unified-documentation-governance-strategy.md)  
+**Planning for:** [FR-139](../kanban/fbu/FR-139-unified-documentation-governance-strategy.md)  
 **Status:** Approved
 
 > **IPW:** MWF Leg 1 (`MWF E05:S02:T07 delivery`). §-prefixed section headings per operator preference (FR-139-F9).

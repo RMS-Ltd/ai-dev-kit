@@ -44,4 +44,4 @@ rw_install:
   epic_doc_pattern: epics/epic-{epic}/epic-{epic}.md
   story_doc_pattern: epics/epic-{epic}/story-{story}-*.md
   task_doc_pattern: epics/epic-{epic}/story-{story}/T{task}-*.md
-  fr_br_root: fr-br
+  fbu_root: fbu

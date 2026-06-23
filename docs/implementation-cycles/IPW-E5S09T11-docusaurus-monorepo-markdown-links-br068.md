@@ -11,8 +11,8 @@ housekeeping_policy: keep
 > **Deprecated:** Superseded by canonical **[IPP-E05S09T11-docusaurus-monorepo-markdown-link-resolution-br068.md](IPP-E05S09T11-docusaurus-monorepo-markdown-link-resolution-br068.md)** (FR-094 / PLAN_DOC_TEMPLATE). Retained for inbound link stability; do not update this file for new planning.
 
 **Host Task:** [`T11-docusaurus-monorepo-markdown-link-resolution-br068.md`](../kanban/epics/epic-05/story-09-docusaurus-documentation-portal/T11-docusaurus-monorepo-markdown-link-resolution-br068.md) **(E5:S09:T11)**  
-**Planning for:** [BR-068 – Docusaurus strict MDX / monorepo Markdown links](../kanban/fr-br/BR-068-docusaurus-monorepo-markdown-links-break-strict-production-build.md)  
-**Related:** [FR-067](../kanban/fr-br/FR-067-docusaurus-production-build-corpus-triage.md); [Story 009 – Docusaurus Documentation Portal](../kanban/epics/epic-05/story-09-docusaurus-documentation-portal.md) (T08/T10 strict mode)  
+**Planning for:** [BR-068 – Docusaurus strict MDX / monorepo Markdown links](../kanban/fbu/BR-068-docusaurus-monorepo-markdown-links-break-strict-production-build.md)  
+**Related:** [FR-067](../kanban/fbu/FR-067-docusaurus-production-build-corpus-triage.md); [Story 009 – Docusaurus Documentation Portal](../kanban/epics/epic-05/story-09-docusaurus-documentation-portal.md) (T08/T10 strict mode)  
 **Status:** Superseded — **Waves 1–4** captured in [IPP-E05S09T11](IPP-E05S09T11-docusaurus-monorepo-markdown-link-resolution-br068.md); Wave 5 adds regression guard
 
 ---
@@ -21,7 +21,7 @@ housekeeping_policy: keep
 
 ### 1.1 Goal
 
-Restore a **green** [`portal/`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/portal/) production build (`npm run build`) for the published KB while preserving **[FR-067](../kanban/fr-br/FR-067-docusaurus-production-build-corpus-triage.md)** intent: **strict** `onBrokenLinks`, `onBrokenMarkdownLinks`, and `onBrokenAnchors` in [`portal/docusaurus.config.js`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/portal/docusaurus.config.js) (**`throw`** on all three). Any relaxation of strictness must be **explicit**, **documented**, and **narrow**—not a silent downgrade of T08/T10.
+Restore a **green** [`portal/`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/portal/) production build (`npm run build`) for the published KB while preserving **[FR-067](../kanban/fbu/FR-067-docusaurus-production-build-corpus-triage.md)** intent: **strict** `onBrokenLinks`, `onBrokenMarkdownLinks`, and `onBrokenAnchors` in [`portal/docusaurus.config.js`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/portal/docusaurus.config.js) (**`throw`** on all three). Any relaxation of strictness must be **explicit**, **documented**, and **narrow**—not a silent downgrade of T08/T10.
 
 ### 1.2 Functional requirements (traceability to BR-068)
 
@@ -30,7 +30,7 @@ Restore a **green** [`portal/`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/
 | **F1** | **`npm run build`** completes successfully (or an **explicitly documented** publish subset via `exclude` / split site with the same bar for what ships). | Primary completion signal; matches BR-068 AC1. |
 | **F2** | **Contributor linking policy** for targets **outside** the docs-plugin root (`../docs`): repo-root **`INSTALL_*`**, **`packages/frameworks/**`**, other monorepo paths. | Single canonical pattern (or small approved set) in [`portal/README.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/portal/README.md) and/or [`docs/maintenance/docusaurus-corpus-triage-fr-067.md`](../maintenance/docusaurus-corpus-triage-fr-067.md); matches BR-068 AC2. |
 | **F3** | **Spot-check** pages that historically failed MDX: INSTALL pointers from user-docs; **`packages/`** traversals from Kanban/FR docs. | Named files or globs in §3 verification; matches BR-068 AC3. |
-| **F4** | **CI alignment** (optional BR-068 AC): portal build runs on relevant path changes where a workflow exists. | Tie to [FR-069](../kanban/fr-br/FR-069-docusaurus-ci-build-gate.md) / actual workflows in repo. |
+| **F4** | **CI alignment** (optional BR-068 AC): portal build runs on relevant path changes where a workflow exists. | Tie to [FR-069](../kanban/fbu/FR-069-docusaurus-ci-build-gate.md) / actual workflows in repo. |
 
 ### 1.3 Non-functional requirements
 
@@ -79,7 +79,7 @@ Restore a **green** [`portal/`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/
 | **TD1** | Portal production build | `cd portal && npm run build` exits **0** with current strict flags in `docusaurus.config.js`. |
 | **TD2** | BR-068 failure classes | After fix, spot-check Markdown that targeted **`https://github.com/RMS-Ltd/ai-dev-kit/blob/main/INSTALL_IN_YOUR_PROJECT.md`** and **`../../../../packages/frameworks/...`** patterns per §1.5 policy (render or link without MDX resolve error). |
 | **TD3** | Regression (internal corpus) | Sample cross-doc links and anchors in `docs/` still satisfy **T08/T10** intent (no new broken internal links introduced by bulk replace). |
-| **TD4** | CI path triggers | If portal CI exists, confirm **or** document gap: changes under `portal/` and ingested `docs/` paths trigger build ([FR-069](../kanban/fr-br/FR-069-docusaurus-ci-build-gate.md)). |
+| **TD4** | CI path triggers | If portal CI exists, confirm **or** document gap: changes under `portal/` and ingested `docs/` paths trigger build ([FR-069](../kanban/fbu/FR-069-docusaurus-ci-build-gate.md)). |
 
 ---
 
@@ -112,8 +112,8 @@ Execution order should follow **policy lock → corpus/config → verification �
 
 | Step | Action | Deliverable |
 |------|--------|-------------|
-| 4.1 | Check **BR-068** acceptance criteria; update **[BR-068](../kanban/fr-br/BR-068-docusaurus-monorepo-markdown-links-break-strict-production-build.md)** status/history when defect is remediated. | **Done (2026-04-19):** **BR-068** **`Status: COMPLETE`** + **Resolution** + AC checked; **`v0.5.9.11+5`**. |
-| 4.2 | Update **host task** [T11](../kanban/epics/epic-05/story-09-docusaurus-documentation-portal/T11-docusaurus-monorepo-markdown-link-resolution-br068.md) Progress + Acceptance Criteria; optional **RW** when implementation slice is ready ([FR-070](../kanban/fr-br/FR-070-docusaurus-deployment-and-hosting.md) depends on green build). | **Done:** **T11** **`COMPLETE`** + AC checked + **`CHANGELOG_v0.5.9.11+5`**. |
+| 4.1 | Check **BR-068** acceptance criteria; update **[BR-068](../kanban/fbu/BR-068-docusaurus-monorepo-markdown-links-break-strict-production-build.md)** status/history when defect is remediated. | **Done (2026-04-19):** **BR-068** **`Status: COMPLETE`** + **Resolution** + AC checked; **`v0.5.9.11+5`**. |
+| 4.2 | Update **host task** [T11](../kanban/epics/epic-05/story-09-docusaurus-documentation-portal/T11-docusaurus-monorepo-markdown-link-resolution-br068.md) Progress + Acceptance Criteria; optional **RW** when implementation slice is ready ([FR-070](../kanban/fbu/FR-070-docusaurus-deployment-and-hosting.md) depends on green build). | **Done:** **T11** **`COMPLETE`** + AC checked + **`CHANGELOG_v0.5.9.11+5`**. |
 
 **Files likely touched (living list):**
 
@@ -128,18 +128,18 @@ Execution order should follow **policy lock → corpus/config → verification �
 
 ## 4. Success / verification criteria
 
-- [x] **BR-068** acceptance criteria satisfied (cross-check [BR-068 § Acceptance Criteria](../kanban/fr-br/BR-068-docusaurus-monorepo-markdown-links-break-strict-production-build.md)).
+- [x] **BR-068** acceptance criteria satisfied (cross-check [BR-068 § Acceptance Criteria](../kanban/fbu/BR-068-docusaurus-monorepo-markdown-links-break-strict-production-build.md)).
 - [x] **T11** acceptance criteria satisfied ([task doc](../kanban/epics/epic-05/story-09-docusaurus-documentation-portal/T11-docusaurus-monorepo-markdown-link-resolution-br068.md)): no unexplained regression vs FR-067 strict intent.
 - [x] **TD1–TD3** executed or explicitly deferred with rationale in task Progress.
-- [x] **Bidirectional wiring:** this IPW ↔ **E5:S09:T11** remain linked ([FR-042](../kanban/fr-br/FR-042-implementation-planning-workflow-ipw.md) host linkage).
+- [x] **Bidirectional wiring:** this IPW ↔ **E5:S09:T11** remain linked ([FR-042](../kanban/fbu/FR-042-implementation-planning-workflow-ipw.md) host linkage).
 
 ---
 
 ## References
 
 - [Host task – E5:S09:T11](../kanban/epics/epic-05/story-09-docusaurus-documentation-portal/T11-docusaurus-monorepo-markdown-link-resolution-br068.md)
-- [BR-068](../kanban/fr-br/BR-068-docusaurus-monorepo-markdown-links-break-strict-production-build.md)
-- [FR-067](../kanban/fr-br/FR-067-docusaurus-production-build-corpus-triage.md)
-- [FR-070](../kanban/fr-br/FR-070-docusaurus-deployment-and-hosting.md)
+- [BR-068](../kanban/fbu/BR-068-docusaurus-monorepo-markdown-links-break-strict-production-build.md)
+- [FR-067](../kanban/fbu/FR-067-docusaurus-production-build-corpus-triage.md)
+- [FR-070](../kanban/fbu/FR-070-docusaurus-deployment-and-hosting.md)
 - [E5:S09:T08](../kanban/epics/epic-05/story-09-docusaurus-documentation-portal/T08-docusaurus-strict-broken-links-post-fr067.md), [E5:S09:T10](../kanban/epics/epic-05/story-09-docusaurus-documentation-portal/T10-docusaurus-strict-broken-anchors-post-t08.md)
 - Docusaurus: [Markdown links](https://docusaurus.io/docs/markdown-features/links), [Multiple docs plugin instances](https://docusaurus.io/docs/docs-multi-instance/)

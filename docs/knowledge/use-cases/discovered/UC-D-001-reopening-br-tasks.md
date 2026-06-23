@@ -103,8 +103,8 @@ When a bug persists despite a previous fix attempt, re-open the existing BR and 
 
 **Related Work:**
 - **Task:** [E2:S01:T06 - Fix changelog validator ordering bug](../../../kanban/epics/epic-02/story-01-rw-agent-execution-and-docs.md)
-- **BR:** [BR-002: Changelog Validator Ordering Bug](../../../kanban/fr-br/BR-002-changelog-validator-ordering-bug.md)
-- **Documentation:** [REOPENING_BR_AND_TASKS_GUIDE.md](../../../kanban/fr-br/REOPENING_BR_AND_TASKS_GUIDE.md)
+- **BR:** [BR-002: Changelog Validator Ordering Bug](../../../kanban/fbu/BR-002-changelog-validator-ordering-bug.md)
+- **Documentation:** [REOPENING_BR_AND_TASKS_GUIDE.md](../../../kanban/fbu/REOPENING_BR_AND_TASKS_GUIDE.md)
 - **Epic/Story:** Epic 2, Story 1
 
 **Wiring:**
@@ -169,8 +169,8 @@ When a bug persists despite a previous fix attempt, re-open the existing BR and 
 
 ## References
 
-- [REOPENING_BR_AND_TASKS_GUIDE.md](../../../kanban/fr-br/REOPENING_BR_AND_TASKS_GUIDE.md) - Complete guide for this pattern
-- [BR-002: Changelog Validator Ordering Bug](../../../kanban/fr-br/BR-002-changelog-validator-ordering-bug.md) - Example BR
+- [REOPENING_BR_AND_TASKS_GUIDE.md](../../../kanban/fbu/REOPENING_BR_AND_TASKS_GUIDE.md) - Complete guide for this pattern
+- [BR-002: Changelog Validator Ordering Bug](../../../kanban/fbu/BR-002-changelog-validator-ordering-bug.md) - Example BR
 - [Task E2:S01:T06](../../../kanban/epics/epic-02/story-01-rw-agent-execution-and-docs.md) - Example task
 
 ---

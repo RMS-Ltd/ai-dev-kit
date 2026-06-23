@@ -9,7 +9,7 @@ housekeeping_policy: keep
 # E06:S09:T37 — Planning: Painless adopter kanban migration workflow (IPW)
 
 **Host Task:** [`T37-kanban-migration-depth-rationalization-fr133.md`](../kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T37-kanban-migration-depth-rationalization-fr133.md) **(E06:S09:T37)**  
-**Planning for:** [FR-133](../kanban/fr-br/FR-133-kanban-migration-depth-rationalization-adopter-guide.md) · SBL attempt 10 evidence · [E06:S09:T36](../kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T36-adopter-path-selector-install-rc-uxr029.md) · [E06:S09:T31](../kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T31-agentic-kanban-migration-agent-fr127.md)  
+**Planning for:** [FR-133](../kanban/fbu/FR-133-kanban-migration-depth-rationalization-adopter-guide.md) · SBL attempt 10 evidence · [E06:S09:T36](../kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T36-adopter-path-selector-install-rc-uxr029.md) · [E06:S09:T31](../kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T31-agentic-kanban-migration-agent-fr127.md)  
 **Status:** Approved
 
 ---
@@ -207,7 +207,7 @@ Package the **default painless migration path** for mature-repo adopters (Arm B)
 - `packages/frameworks/kanban/guides/DUPLICATE_EPIC_POLICY.md` — collision filename cross-link
 - `.claude/commands/kma.md` — load order
 - `packages/frameworks/workflow-mgt/scripts/install_greenfield_path.py` — COMPREHENSION template hint (optional)
-- `docs/kanban/fr-br/FR-133-kanban-migration-depth-rationalization-adopter-guide.md` — evidence/status
+- `docs/kanban/fbu/FR-133-kanban-migration-depth-rationalization-adopter-guide.md` — evidence/status
 - `docs/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T37-kanban-migration-depth-rationalization-fr133.md` — AC checkboxes, verification
 - `docs/kanban/kboard.md` — Step 7 scoped row (RW)
 - `greenfield-install/` — mirror of touched framework paths
@@ -251,7 +251,7 @@ Package the **default painless migration path** for mature-repo adopters (Arm B)
 | D-U5 | `packages/frameworks/kanban/guides/DUPLICATE_EPIC_POLICY.md` | Collision filename cross-link to depth guide | RF5, step 6 |
 | D-U6 | `.claude/commands/kma.md` | Load order: depth guide → INSTALL Migrate → execution guide | RF12, step 7 |
 | D-U7 | `packages/frameworks/workflow-mgt/scripts/install_greenfield_path.py` | Hint: copy COMPREHENSION template | RF11, step 9 |
-| D-U8 | `docs/kanban/fr-br/FR-133-kanban-migration-depth-rationalization-adopter-guide.md` | Status/evidence on delivery | step 10 |
+| D-U8 | `docs/kanban/fbu/FR-133-kanban-migration-depth-rationalization-adopter-guide.md` | Status/evidence on delivery | step 10 |
 | D-U9 | `docs/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T37-*.md` | AC evidence, status | steps 1, 15 |
 
 ### 5.2 New documents to create
@@ -307,7 +307,7 @@ Package the **default painless migration path** for mature-repo adopters (Arm B)
 
 ## References
 
-- [FR-133](../kanban/fr-br/FR-133-kanban-migration-depth-rationalization-adopter-guide.md)
+- [FR-133](../kanban/fbu/FR-133-kanban-migration-depth-rationalization-adopter-guide.md)
 - [E06:S09:T37](../kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T37-kanban-migration-depth-rationalization-fr133.md)
 - [E06:S09:T36](../kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T36-adopter-path-selector-install-rc-uxr029.md)
 - [E06:S09:T31](../kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T31-agentic-kanban-migration-agent-fr127.md)

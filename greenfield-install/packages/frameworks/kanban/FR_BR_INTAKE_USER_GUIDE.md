@@ -53,7 +53,7 @@ A Feature Request is a suggestion for new functionality or improvements to exist
 
 **How to create one:**
 1. Copy the Feature Request template: `packages/frameworks/kanban/templates/FR_TEMPLATE.md`
-2. Create a new file: `docs/kanban/fr-br/FR-XXX-[your-title].md`
+2. Create a new file: `docs/kanban/fbu/FR-XXX-[your-title].md`
 3. Fill in the template with:
    - **Summary:** One sentence describing your feature
    - **Description:** Detailed explanation of what you want
@@ -74,7 +74,7 @@ A Bug Report describes a problem or unexpected behavior in the system.
 
 **How to create one:**
 1. Copy the Bug Report template: `packages/frameworks/kanban/templates/BR_TEMPLATE.md`
-2. Create a new file: `docs/kanban/fr-br/BR-XXX-[your-title].md`
+2. Create a new file: `docs/kanban/fbu/BR-XXX-[your-title].md`
 3. Fill in the template with:
    - **Summary:** One sentence describing the bug
    - **Description:** What's wrong? What should happen vs. what actually happens?
@@ -344,7 +344,7 @@ Every Task document MUST include:
 - **Bug Report:** `packages/frameworks/kanban/templates/BR_TEMPLATE.md`
 
 ### Where to Create Your Request
-- **Location:** `docs/kanban/fr-br/FR-XXX-[title].md` or `BR-XXX-[title].md`
+- **Location:** `docs/kanban/fbu/FR-XXX-[title].md` or `BR-XXX-[title].md`
 - **Naming:** Use descriptive titles (e.g., `FR-001-dark-mode-toggle.md`)
 
 ### Key Documents

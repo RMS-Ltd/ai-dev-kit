@@ -14,7 +14,7 @@ housekeeping_policy: keep
 **Created:** 2026-06-03  
 **Code:** E06S09T12
 
-**Upstream:** [BR-083](../../../fr-br/BR-083-rw-install-default-patterns-mismatch-fresh-kanban-layout.md) · [GitHub #15](https://github.com/RMS-Ltd/ai-dev-kit/issues/15)  
+**Upstream:** [BR-083](../../../fbu/BR-083-rw-install-default-patterns-mismatch-fresh-kanban-layout.md) · [GitHub #15](https://github.com/RMS-Ltd/ai-dev-kit/issues/15)  
 **IPW:** [IPP-E6S9T12-br083-rw-install-pattern-defaults.md](../../../../implementation-cycles/IPP-E06S09T12-br083-rw-install-pattern-defaults.md) — **Publication Status: PUBLISHED**
 
 ## Version Anchor
@@ -31,7 +31,7 @@ Align RW installer default epic/story `rw-config` patterns with fresh kanban ins
 
 ## Input
 
-- [BR-083](../../../fr-br/BR-083-rw-install-default-patterns-mismatch-fresh-kanban-layout.md)
+- [BR-083](../../../fbu/BR-083-rw-install-default-patterns-mismatch-fresh-kanban-layout.md)
 - Post-kanban-install directory layout from fresh mode
 
 ---
@@ -57,6 +57,6 @@ Align RW installer default epic/story `rw-config` patterns with fresh kanban ins
 
 ## Links
 
-- [BR-083](../../../fr-br/BR-083-rw-install-default-patterns-mismatch-fresh-kanban-layout.md)
+- [BR-083](../../../fbu/BR-083-rw-install-default-patterns-mismatch-fresh-kanban-layout.md)
 - [IPP-E6S9T12](../../../../implementation-cycles/IPP-E06S09T12-br083-rw-install-pattern-defaults.md)
 - [Story 009](../story-09-ai-dev-kit-installation-and-adopter-integration.md)

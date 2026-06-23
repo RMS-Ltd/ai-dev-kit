@@ -14,4 +14,4 @@ housekeeping_policy: keep
 
 **Historical paths:** [E06:S06:T60 stub](../../epic-06/story-06-feature-requests/T60-rw-allow-in-progress-task-releases.md) (releases through **v0.6.6.60+1** used id **E06:S06:T60**).
 
-**BR:** [BR-060](../../../fr-br/BR-060-rw-in-progress-task-gate-blocks-build-releases.md)
+**BR:** [BR-060](../../../fbu/BR-060-rw-in-progress-task-gate-blocks-build-releases.md)

@@ -8,7 +8,7 @@ housekeeping_policy: keep
 
 # Code Quality Gate (CQG) — Operator guide
 
-**Task:** E08:S03:T17 · **FR:** [FR-113](../../../../docs/kanban/fr-br/FR-113-local-code-quality-gate-cqg.md) · **ADR:** [ADR-022](../../../../docs/architecture/standards-and-adrs/ADR-022-local-code-quality-gate-architecture.md)
+**Task:** E08:S03:T17 · **FR:** [FR-113](../../../../docs/kanban/fbu/FR-113-local-code-quality-gate-cqg.md) · **ADR:** [ADR-022](../../../../docs/architecture/standards-and-adrs/ADR-022-local-code-quality-gate-architecture.md)
 
 ---
 
@@ -20,7 +20,7 @@ housekeeping_policy: keep
 | **Local CQG** | IDW Phase 6b + cron snapshot; mirrors CodeQL `security-and-quality` Standard findings |
 | **RW Step 9.7** (`validate_actions_ci_parity.py`) | **Release ship gate** for Tests / Docusaurus / Greenfield / workflow-scripts CI |
 
-CQG does **not** replace T06 perpetual health lanes, **Actions CI workflows**, or RW Step 9.7 ([BR-104](../../../../docs/kanban/fr-br/BR-104-codeql-cqg-green-does-not-imply-actions-ci-green.md)). Green CodeQL on GitHub does not imply green **Tests**.
+CQG does **not** replace T06 perpetual health lanes, **Actions CI workflows**, or RW Step 9.7 ([BR-104](../../../../docs/kanban/fbu/BR-104-codeql-cqg-green-does-not-imply-actions-ci-green.md)). Green CodeQL on GitHub does not imply green **Tests**.
 
 ---
 

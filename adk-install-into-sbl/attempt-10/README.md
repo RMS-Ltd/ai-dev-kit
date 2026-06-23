@@ -74,7 +74,7 @@
 | `FB-ADK-KMA-KANBAN-MIGRATION` | KMA filename collision / megastory routing |
 | `FB-ADK-post-install-rw-and-task-distribution` | RW-ready task doc; `--art` for first domain RW |
 
-**Filed (maintainer intake):** [FR-133](../../docs/kanban/fr-br/FR-133-kanban-migration-depth-rationalization-adopter-guide.md) → [E06:S09:T37](../../docs/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T37-kanban-migration-depth-rationalization-fr133.md) — **painless default migration path** (L1 = ship); L2/L3 opt-in.
+**Filed (maintainer intake):** [FR-133](../../docs/kanban/fbu/FR-133-kanban-migration-depth-rationalization-adopter-guide.md) → [E06:S09:T37](../../docs/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T37-kanban-migration-depth-rationalization-fr133.md) — **painless default migration path** (L1 = ship); L2/L3 opt-in.
 
 ---
 
@@ -93,4 +93,4 @@
 - [PRE-INSTALL-LOGGING.md](PRE-INSTALL-LOGGING.md)
 - [attempt-09 README](../attempt-09/README.md)
 - [adopter-install-attempt-preflight.md](../../docs/guides/adopter-install-attempt-preflight.md)
-- [UXR-029](../../docs/kanban/fr-br/UXR-029-adk-install-path-experiment.md)
+- [UXR-029](../../docs/kanban/fbu/UXR-029-adk-install-path-experiment.md)

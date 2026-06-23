@@ -21,13 +21,13 @@ housekeeping_policy: keep
 Publication Status: NOT_APPLICABLE
 Publication N/A Reason: Consolidated inventory IPP per FR-042; governance artifact only.
 
-**Upstream:** [FR-088 - Dedicated story for perpetual ongoing tasks](../../../fr-br/FR-088-dedicated-story-for-perpetual-ongoing-tasks.md)
+**Upstream:** [FR-088 - Dedicated story for perpetual ongoing tasks](../../../fbu/FR-088-dedicated-story-for-perpetual-ongoing-tasks.md)
 
 ---
 
 ## Input
 
-- [FR-088](../../../fr-br/FR-088-dedicated-story-for-perpetual-ongoing-tasks.md) requirements.
+- [FR-088](../../../fbu/FR-088-dedicated-story-for-perpetual-ongoing-tasks.md) requirements.
 - Planning baseline from [E02:S16:T01](T01-establish-canonical-perpetual-ongoing-tasks-story-fr088.md).
 - **Canonical IPP:** [`IPP-E2S16T2-perpetual-task-inventory.md`](../../../../implementation-cycles/IPP-E2S16T02-perpetual-task-inventory.md)
 - **T03 Tranche 3B:** Entry gate satisfied per [IPP-E2S16T3 §7](../../../../implementation-cycles/IPP-E2S16T03-rehouse-workflow-perpetual-tasks.md) (execution remains separate authorization).

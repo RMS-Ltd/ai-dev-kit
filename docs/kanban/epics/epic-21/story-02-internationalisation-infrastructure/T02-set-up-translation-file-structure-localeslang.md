@@ -103,7 +103,7 @@ Evolve package locale trees to **manifest v2** per [ADR-024](../../../../archite
 - [IPP-E21S02T02](../../../../implementation-cycles/IPP-E21S02T02-locale-file-structure.md)
 - [ADR-024](../../../../architecture/standards-and-adrs/ADR-024-i18n-framework-strategy.md)
 - [locale-file-structure-conventions.md](../../../../governance/standards/locale-file-structure-conventions.md)
-- [FR-006](../../../fr-br/FR-006-localization-language-selection-uk-us-english.md)
+- [FR-006](../../../fbu/FR-006-localization-language-selection-uk-us-english.md)
 - [story-02-internationalisation-infrastructure.md](../story-02-internationalisation-infrastructure.md)
 
 ---

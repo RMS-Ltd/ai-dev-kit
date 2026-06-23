@@ -12,7 +12,7 @@ housekeeping_policy: keep
 
 **Canonical command:** `.claude/commands/ipw.md` (slash `/ipw` or plain-text `IPW E:S:T`).
 
-**Related policy:** [specification-and-planning-artifacts-policy.md](specification-and-planning-artifacts-policy.md). **FR:** [FR-042](../../kanban/fr-br/FR-042-implementation-planning-workflow-ipw.md).
+**Related policy:** [specification-and-planning-artifacts-policy.md](specification-and-planning-artifacts-policy.md). **FR:** [FR-042](../../kanban/fbu/FR-042-implementation-planning-workflow-ipw.md).
 
 ---
 
@@ -52,5 +52,5 @@ The framework agent stub at `packages/frameworks/workflow-mgt/agents/ipw/AGENTS.
 ## References
 
 - `.claude/commands/ipw.md`
-- [FR-042](../../kanban/fr-br/FR-042-implementation-planning-workflow-ipw.md) — §8 artifact packaging
+- [FR-042](../../kanban/fbu/FR-042-implementation-planning-workflow-ipw.md) — §8 artifact packaging
 - [specification-and-planning-artifacts-policy.md](specification-and-planning-artifacts-policy.md)

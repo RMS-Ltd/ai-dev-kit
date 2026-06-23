@@ -45,9 +45,9 @@ housekeeping_policy: keep
   - Task: [`T06-update-other-affected-packages`](story-13-kanban-board-moscow-prioritized-task-view/T06-update-other-affected-packages.md)
   - Task: [`T06-update-other-affected-packages.md`](story-13-kanban-board-moscow-prioritized-task-view/T06-update-other-affected-packages.md)
 
-- [x] **E04:S13:T07 – Kanban and FBU state icons for MoSCOW rows (UXR-012)** ✅ COMPLETE (v0.4.13.7+2) — [Task doc](story-13-kanban-board-moscow-prioritized-task-view/T07-kanban-fbu-state-icons-for-moscow-rows-uxr012.md) | [UXR-012](../../fr-br/UXR-012-kanban-fbu-state-icons-for-moscow-rows.md)
+- [x] **E04:S13:T07 – Kanban and FBU state icons for MoSCOW rows (UXR-012)** ✅ COMPLETE (v0.4.13.7+2) — [Task doc](story-13-kanban-board-moscow-prioritized-task-view/T07-kanban-fbu-state-icons-for-moscow-rows-uxr012.md) | [UXR-012](../../fbu/UXR-012-kanban-fbu-state-icons-for-moscow-rows.md)
 
-- [x] **E04:S13:T08 – Kanban task IN REVIEW / WAITING state icons (UXR-019)** ✅ COMPLETE (v0.4.13.8+1) — [Task doc](story-13-kanban-board-moscow-prioritized-task-view/T08-kanban-task-waiting-in-review-state-icons-uxr019.md) | [UXR-019](../../fr-br/UXR-019-kanban-task-waiting-in-review-state-icons.md) | [IPP](../../../implementation-cycles/IPP-E04S13T08-kanban-task-waiting-in-review-state-icons.md)
+- [x] **E04:S13:T08 – Kanban task IN REVIEW / WAITING state icons (UXR-019)** ✅ COMPLETE (v0.4.13.8+1) — [Task doc](story-13-kanban-board-moscow-prioritized-task-view/T08-kanban-task-waiting-in-review-state-icons-uxr019.md) | [UXR-019](../../fbu/UXR-019-kanban-task-waiting-in-review-state-icons.md) | [IPP](../../../implementation-cycles/IPP-E04S13T08-kanban-task-waiting-in-review-state-icons.md)
 
 > **Format:** `E4:S13:Txx` (Epic 4, Story 13, Task with 2-digit zero padding)  
 > **Forensic Marker Format:** `✅ COMPLETE (vRC.E.S.T+B)` (e.g., `✅ COMPLETE (v0.4.13.1+1)`)

@@ -9,7 +9,7 @@ housekeeping_policy: keep
 # E21:S04:T05 — Planning: Cultural formatting validation (IPW)
 
 **Host Task:** [`T05-configure-locale-specific-formatting-dates-times-numbers-cur.md`](../kanban/epics/epic-21/story-04-cultural-adaptation/T05-configure-locale-specific-formatting-dates-times-numbers-cur.md) **(E21:S04:T05)**  
-**Planning for:** [FR-006 Phase 2](../kanban/fr-br/FR-006-localization-language-selection-uk-us-english.md) · [E21:S04](../kanban/epics/epic-21/story-04-cultural-adaptation.md) · [ADR-024](../architecture/standards-and-adrs/ADR-024-i18n-framework-strategy.md)  
+**Planning for:** [FR-006 Phase 2](../kanban/fbu/FR-006-localization-language-selection-uk-us-english.md) · [E21:S04](../kanban/epics/epic-21/story-04-cultural-adaptation.md) · [ADR-024](../architecture/standards-and-adrs/ADR-024-i18n-framework-strategy.md)  
 **Status:** Complete — released `v0.21.4.5+1` (`RW E21:S04:T05 --art`)  
 **Branch:** `dev`
 

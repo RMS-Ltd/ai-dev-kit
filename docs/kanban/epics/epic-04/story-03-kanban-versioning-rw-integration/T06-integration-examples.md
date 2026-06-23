@@ -34,7 +34,7 @@ This document provides worked examples and edge case documentation for the three
 **Scenario:** A new Feature Request arrives for adding a validation script to check Kanban document consistency.
 
 **Step 1: Receive FR**
-- FR created: `docs/kanban/fr-br/FR-001-kanban-consistency-validation.md`
+- FR created: `docs/kanban/fbu/FR-001-kanban-consistency-validation.md`
 - Summary: "Add validation script to check Kanban document consistency"
 - Priority: HIGH
 - Scope: Epic 4 (Kanban Framework)

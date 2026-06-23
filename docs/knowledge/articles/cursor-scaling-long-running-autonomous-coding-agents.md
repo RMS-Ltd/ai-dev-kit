@@ -110,5 +110,5 @@ The techniques we're developing here will eventually inform Cursor's agent capab
 **Author:** Wilson Lin
 
 **Related Documentation:**
-- [FR-031: Multi-Agent Coordination Feasibility Investigation](../../kanban/fr-br/FR-031-multi-agent-coordination-feasibility-investigation.md) - Feature request investigating incorporation of these ideas
+- [FR-031: Multi-Agent Coordination Feasibility Investigation](../../kanban/fbu/FR-031-multi-agent-coordination-feasibility-investigation.md) - Feature request investigating incorporation of these ideas
 

@@ -22,16 +22,16 @@ housekeeping_policy: keep
 
 **Planning package:** [`IPP-E02S01T28-rw-dpz-short-flag-uxr022.md`](../../../../implementation-cycles/IPP-E02S01T28-rw-dpz-short-flag-uxr022.md)
 
-**Upstream:** [UXR-022 — RW `--doc-policy-zero` short flag (`--dpz`)](../../../fr-br/UXR-022-rw-doc-policy-zero-short-flag-dpz.md)
+**Upstream:** [UXR-022 — RW `--doc-policy-zero` short flag (`--dpz`)](../../../fbu/UXR-022-rw-doc-policy-zero-short-flag-dpz.md)
 
 ---
 
 ## Input
 
 - [IPP-E02S01T28-rw-dpz-short-flag-uxr022.md](../../../../implementation-cycles/IPP-E02S01T28-rw-dpz-short-flag-uxr022.md) — IPW planning package.
-- [UXR-022](../../../fr-br/UXR-022-rw-doc-policy-zero-short-flag-dpz.md) findings and recommendations (R1–R5).
-- [BR-067](../../../fr-br/BR-067-rw-first-doc-only-release-defaults-to-build-plus-one-not-plus-zero.md) — BUILD +0 policy semantics (unchanged).
-- [BR-097](../../../fr-br/BR-097-rw-agent-reuses-tagged-build-and-force-moves-release-tags.md) — tagged BUILD / inference guards.
+- [UXR-022](../../../fbu/UXR-022-rw-doc-policy-zero-short-flag-dpz.md) findings and recommendations (R1–R5).
+- [BR-067](../../../fbu/BR-067-rw-first-doc-only-release-defaults-to-build-plus-one-not-plus-zero.md) — BUILD +0 policy semantics (unchanged).
+- [BR-097](../../../fbu/BR-097-rw-agent-reuses-tagged-build-and-force-moves-release-tags.md) — tagged BUILD / inference guards.
 - [workflow-initiation-cheatsheet.md](../../../../guides/workflow-initiation-cheatsheet.md) — RW §2 flag matrix.
 - Parsers: `resolve_rw_build.py`, `validate_version_bump.py`.
 
@@ -76,8 +76,8 @@ The RW explicit BUILD +0 override flag `--doc-policy-zero` is semantically corre
 ## References
 
 - [IPP-E02S01T28-rw-dpz-short-flag-uxr022.md](../../../../implementation-cycles/IPP-E02S01T28-rw-dpz-short-flag-uxr022.md)
-- [UXR-022](../../../fr-br/UXR-022-rw-doc-policy-zero-short-flag-dpz.md)
-- [BR-067](../../../fr-br/BR-067-rw-first-doc-only-release-defaults-to-build-plus-one-not-plus-zero.md)
-- [UXR-015](../../../fr-br/UXR-015-workflow-initiation-cheatsheet.md)
+- [UXR-022](../../../fbu/UXR-022-rw-doc-policy-zero-short-flag-dpz.md)
+- [BR-067](../../../fbu/BR-067-rw-first-doc-only-release-defaults-to-build-plus-one-not-plus-zero.md)
+- [UXR-015](../../../fbu/UXR-015-workflow-initiation-cheatsheet.md)
 - [Story 016](../story-16-perpetual-ongoing-workflow-operations.md)
 - [Release Workflow agent execution guide](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md)

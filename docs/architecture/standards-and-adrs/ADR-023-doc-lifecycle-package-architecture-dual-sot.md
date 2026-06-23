@@ -18,7 +18,7 @@ housekeeping_policy: keep
 
 The Document Lifecycle framework package (`packages/frameworks/doc-lifecycle/`) and dev-kit architecture tree (`docs/architecture/standards-and-adrs/`) both carried copies of `doc-lifecycle-metadata-spec.md` and `doc-lifecycle-policy.md`. `policy-salience-schema.md` existed only under architecture. Relative-link conventions differed (`./file.md` vs bare `file.md`), and `kb-structure-overview.md` was referenced from package policies but not packaged.
 
-[T04 integration alignment](../../kanban/epics/epic-10/story-01-document-lifecycle-package-implementation-review/integration-alignment-report.md) scored Domain 5 **PARTIAL** (link drift) and Domain 7 **GAP** (salience schema not packaged). [FR-110](../../kanban/fr-br/FR-110-lean-adopter-distribution-footprint-and-vendor-bundle.md) requires the canonical package tree to byte-sync to `greenfield-install/packages/frameworks/doc-lifecycle/`.
+[T04 integration alignment](../../kanban/epics/epic-10/story-01-document-lifecycle-package-implementation-review/integration-alignment-report.md) scored Domain 5 **PARTIAL** (link drift) and Domain 7 **GAP** (salience schema not packaged). [FR-110](../../kanban/fbu/FR-110-lean-adopter-distribution-footprint-and-vendor-bundle.md) requires the canonical package tree to byte-sync to `greenfield-install/packages/frameworks/doc-lifecycle/`.
 
 Alternatives considered:
 
@@ -88,4 +88,4 @@ Dual-source parity procedure: [`packages/frameworks/doc-lifecycle/docs/adr-dual-
 - [IPP-E10S01T09](../../implementation-cycles/IPP-E10S01T09-sync-architecture-adr-dual-sot.md)
 - [T09 task doc](../../kanban/epics/epic-10/story-01-document-lifecycle-package-implementation-review/T09-sync-architecture-adr-dual-sot.md)
 - [repo-structure-for-adopters.md](../../documentation/user-docs/repo-structure-for-adopters.md)
-- [FR-110](../../kanban/fr-br/FR-110-lean-adopter-distribution-footprint-and-vendor-bundle.md)
+- [FR-110](../../kanban/fbu/FR-110-lean-adopter-distribution-footprint-and-vendor-bundle.md)

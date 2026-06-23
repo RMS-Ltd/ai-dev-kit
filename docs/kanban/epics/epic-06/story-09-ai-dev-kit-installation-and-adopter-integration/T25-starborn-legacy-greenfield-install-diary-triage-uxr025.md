@@ -17,11 +17,11 @@ housekeeping_policy: keep
 **Version Anchor:** v0.6.9.25+3  
 **Code:** E06S09T25
 
-**Upstream:** [UXR-025](../../../fr-br/UXR-025-starborn-legacy-greenfield-install-diary.md)  
+**Upstream:** [UXR-025](../../../fbu/UXR-025-starborn-legacy-greenfield-install-diary.md)  
 **Source diary:** [starborn-legacy-greenfield-install-diary.md](../../../../knowledge/analysis/projects/starborn-legacy-greenfield-install-diary.md)  
 **Planning package:** [IPP-E06S09T25](../../../../implementation-cycles/IPP-E06S09T25-starborn-legacy-greenfield-install-diary-triage-uxr025.md)
 
-**Related:** [FR-080](../../../fr-br/FR-080-greenfield-installation-process.md) · [FR-081](../../../fr-br/FR-081-brownfield-modular-adopter-integration.md) · [FR-108](../../../fr-br/FR-108-install-setup-error-code-registry-and-emission.md) · [FR-079](../../../fr-br/FR-079-install-feedback-submission-path-and-governance.md) · [E06:S09:T01](T01-greenfield-installation-process-fr080.md) · [E06:S09:T23](T23-greenfield-install-github-packages-delivery-uxr021.md)
+**Related:** [FR-080](../../../fbu/FR-080-greenfield-installation-process.md) · [FR-081](../../../fbu/FR-081-brownfield-modular-adopter-integration.md) · [FR-108](../../../fbu/FR-108-install-setup-error-code-registry-and-emission.md) · [FR-079](../../../fbu/FR-079-install-feedback-submission-path-and-governance.md) · [E06:S09:T01](T01-greenfield-installation-process-fr080.md) · [E06:S09:T23](T23-greenfield-install-github-packages-delivery-uxr021.md)
 
 ---
 
@@ -33,7 +33,7 @@ Triage the **Starborn Legacy** greenfield install diary (`v0.4.1063` tarball) an
 
 ## Input
 
-- [UXR-025](../../../fr-br/UXR-025-starborn-legacy-greenfield-install-diary.md)
+- [UXR-025](../../../fbu/UXR-025-starborn-legacy-greenfield-install-diary.md)
 - [starborn-legacy-greenfield-install-diary.md](../../../../knowledge/analysis/projects/starborn-legacy-greenfield-install-diary.md) — canonical maintainer copy
 - ADK release pin `v0.4.1063`; error code `ADK-I01.S01` from orchestrator run
 - Positive signals: tarball acquisition, Kanban fresh sign-off ALL READY
@@ -93,4 +93,4 @@ Triage the **Starborn Legacy** greenfield install diary (`v0.4.1063` tarball) an
 
 ## Associated User Experience Research
 
-**UXR-025:** [Starborn Legacy greenfield install diary](../../../fr-br/UXR-025-starborn-legacy-greenfield-install-diary.md)
+**UXR-025:** [Starborn Legacy greenfield install diary](../../../fbu/UXR-025-starborn-legacy-greenfield-install-diary.md)

@@ -22,7 +22,7 @@ Publication Status: NOT_APPLICABLE
 
 ## Associated FR
 
-- [FR-114 — Split documentation surfaces (Docusaurus public + Notion maintainer KB)](../../../fr-br/FR-114-split-documentation-surfaces-docusaurus-public-notion-maintainer-kb.md)
+- [FR-114 — Split documentation surfaces (Docusaurus public + Notion maintainer KB)](../../../fbu/FR-114-split-documentation-surfaces-docusaurus-public-notion-maintainer-kb.md)
 
 ---
 
@@ -30,11 +30,11 @@ Publication Status: NOT_APPLICABLE
 
 - [IPP-E05S09T15-docusaurus-adopter-public-publish-allowlist-fr114.md](../../../../implementation-cycles/IPP-E05S09T15-docusaurus-adopter-public-publish-allowlist-fr114.md)
 - [ADR-024 — Docusaurus adopter-public publish allowlist](../../../../architecture/standards-and-adrs/ADR-024-docusaurus-adopter-public-publish-allowlist-fr114.md)
-- [FR-114](../../../fr-br/FR-114-split-documentation-surfaces-docusaurus-public-notion-maintainer-kb.md) decision record and allowlist starter
+- [FR-114](../../../fbu/FR-114-split-documentation-surfaces-docusaurus-public-notion-maintainer-kb.md) decision record and allowlist starter
 - [`portal/docusaurus.config.js`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/portal/docusaurus.config.js)
 - [`portal/sidebars.js`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/portal/sidebars.js)
 - [`portal/README.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/portal/README.md) — FR-066 publish scope
-- [FR-066](../../../fr-br/FR-066-docusaurus-canonical-docs-path-and-publish-scope.md) · [FR-067](../../../fr-br/FR-067-docusaurus-production-build-corpus-triage.md)
+- [FR-066](../../../fbu/FR-066-docusaurus-canonical-docs-path-and-publish-scope.md) · [FR-067](../../../fbu/FR-067-docusaurus-production-build-corpus-triage.md)
 
 ---
 
@@ -74,6 +74,6 @@ Rescope the Docusaurus portal from “publish nearly all `docs/`” to an explic
 
 - [IPP-E05S09T15-docusaurus-adopter-public-publish-allowlist-fr114.md](../../../../implementation-cycles/IPP-E05S09T15-docusaurus-adopter-public-publish-allowlist-fr114.md)
 - [ADR-024 — Docusaurus adopter-public publish allowlist](../../../../architecture/standards-and-adrs/ADR-024-docusaurus-adopter-public-publish-allowlist-fr114.md)
-- [FR-114](../../../fr-br/FR-114-split-documentation-surfaces-docusaurus-public-notion-maintainer-kb.md)
+- [FR-114](../../../fbu/FR-114-split-documentation-surfaces-docusaurus-public-notion-maintainer-kb.md)
 - [E05:S09:T02 — Publish scope (FR-066)](T02-docusaurus-publish-scope-fr-066.md)
 - [ultimate-canonical-kb-structure.md](../../../../architecture/standards-and-adrs/ultimate-canonical-kb-structure.md)

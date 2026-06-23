@@ -32,7 +32,7 @@ Compose distributed documentation policies, standards, templates, and workflow S
 
 ## Input
 
-- [FR-139](../../../fr-br/FR-139-unified-documentation-governance-strategy.md)
+- [FR-139](../../../fbu/FR-139-unified-documentation-governance-strategy.md)
 - Existing policies under `docs/governance/standards/` and `docs/architecture/standards-and-adrs/`
 - Workflow SOPs: `.claude/commands/`, `packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/`
 - Templates: `packages/frameworks/kanban/templates/`, `packages/frameworks/doc-lifecycle/`
@@ -89,13 +89,13 @@ Compose distributed documentation policies, standards, templates, and workflow S
 
 **Related FR/BR documents:**
 
-- **[FR-139: Unified documentation governance strategy](../../../fr-br/FR-139-unified-documentation-governance-strategy.md)** — **Relationship Type:** Implements — **Context:** Primary intake driver for this task.
+- **[FR-139: Unified documentation governance strategy](../../../fbu/FR-139-unified-documentation-governance-strategy.md)** — **Relationship Type:** Implements — **Context:** Primary intake driver for this task.
 
-- **[FR-101: Consolidate governance under docs/governance](../../../fr-br/FR-101-consolidate-governance-under-docs-governance.md)** — **Relationship Type:** Follows — **Context:** Strategy doc homes under `docs/governance/standards/` per FR-101 topology.
+- **[FR-101: Consolidate governance under docs/governance](../../../fbu/FR-101-consolidate-governance-under-docs-governance.md)** — **Relationship Type:** Follows — **Context:** Strategy doc homes under `docs/governance/standards/` per FR-101 topology.
 
-- **[FR-075: ICW durable planning artifacts](../../../fr-br/FR-075-icw-durable-planning-artifacts-documentation-system.md)** — **Relationship Type:** Informs — **Context:** Planning-artifacts SoT ladder is a template row in the workflow matrix.
+- **[FR-075: ICW durable planning artifacts](../../../fbu/FR-075-icw-durable-planning-artifacts-documentation-system.md)** — **Relationship Type:** Informs — **Context:** Planning-artifacts SoT ladder is a template row in the workflow matrix.
 
-- **[FR-114 / FR-121](../../../fr-br/FR-114-split-documentation-surfaces-docusaurus-public-notion-maintainer-kb.md)** — **Relationship Type:** Informs — **Context:** Three-surface model is the surface-map section of the strategy.
+- **[FR-114 / FR-121](../../../fbu/FR-114-split-documentation-surfaces-docusaurus-public-notion-maintainer-kb.md)** — **Relationship Type:** Informs — **Context:** Three-surface model is the surface-map section of the strategy.
 
 ---
 

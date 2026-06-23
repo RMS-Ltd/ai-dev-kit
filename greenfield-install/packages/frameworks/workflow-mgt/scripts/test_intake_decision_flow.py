@@ -30,7 +30,7 @@ def test_decision_flow_basic():
         framework_path = Path(__file__).parent.parent.parent / "kanban"
         
         # Test with FR-019
-        fr_br_path = Path("docs/kanban/fr-br/FR-019-intake-workflow-automation.md")
+        fr_br_path = Path("docs/kanban/fbu/FR-019-intake-workflow-automation.md")
         
         if not fr_br_path.exists():
             print("⚠️  FR-019 not found, skipping test")

@@ -18,13 +18,13 @@ housekeeping_policy: keep
 **Code:** E06S09T30  
 
 **Parent program:** [E06:S09:T26](T26-starborn-legacy-adk-install-program.md)  
-**Upstream:** [BR-107](../../../fr-br/BR-107-kanban-installer-log-epic-path-padding-mismatch.md) · triage **F21**
+**Upstream:** [BR-107](../../../fbu/BR-107-kanban-installer-log-epic-path-padding-mismatch.md) · triage **F21**
 
 ---
 
 ## Input
 
-- [BR-107](../../../fr-br/BR-107-kanban-installer-log-epic-path-padding-mismatch.md)
+- [BR-107](../../../fbu/BR-107-kanban-installer-log-epic-path-padding-mismatch.md)
 - [IPP-E06S09T30-kanban-installer-log-epic-path-padding-br107.md](../../../../implementation-cycles/IPP-E06S09T30-kanban-installer-log-epic-path-padding-br107.md) (IPW planning package)
 - SBL attempt 05 transcript: `adk-install-into-sbl/attempt-05/transcripts/20260610T183509Z-phase3c-kanban-v3dot2.txt`
 

@@ -24,7 +24,7 @@ Validate documentation-level traceability invariants with deterministic checks o
 ## Coverage Matrix
 
 1. **FR metadata correctness**
-   - File: `docs/kanban/fr-br/FR-048-rw-trigger-extensions-for-multiple-use-cases.md`
+   - File: `docs/kanban/fbu/FR-048-rw-trigger-extensions-for-multiple-use-cases.md`
    - Check: `Code` is `E2:S01:T14`, implementing task link resolves.
 
 2. **Task housing correctness**

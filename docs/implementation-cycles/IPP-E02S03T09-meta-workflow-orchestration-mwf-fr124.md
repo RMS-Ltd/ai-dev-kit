@@ -9,8 +9,8 @@ housekeeping_policy: keep
 # E02:S03:T09 — Planning: Meta-workflow orchestration / MWF (FR-124)
 
 **Host Task:** [`T09-ipw-full-delivery-chain-idf-rw-fr123.md`](../kanban/epics/epic-02/story-03-additional-workflows-and-examples/T09-ipw-full-delivery-chain-idf-rw-fr123.md) **(E02:S03:T09)**  
-**Planning for:** [FR-124 — Meta-workflow orchestration](../kanban/fr-br/FR-124-meta-workflow-orchestration-composite-workflow-chains.md)  
-**Supersedes planning direction for:** [FR-123](../kanban/fr-br/FR-123-ipw-full-delivery-chain-idf-rw.md) (`IPW --rw` — withdrawn)  
+**Planning for:** [FR-124 — Meta-workflow orchestration](../kanban/fbu/FR-124-meta-workflow-orchestration-composite-workflow-chains.md)  
+**Supersedes planning direction for:** [FR-123](../kanban/fbu/FR-123-ipw-full-delivery-chain-idf-rw.md) (`IPW --rw` — withdrawn)  
 **Status:** Published
 
 ---
@@ -132,7 +132,7 @@ Explicit alias: `ipw,idw,rw` normalizes to `delivery`.
 | D-U1 | `CLAUDE.md`, `.cursorrules`, `AGENTS.md`, `docs/project-agent-manifest.json` | UPDATE |
 | D-U2 | `docs/guides/workflow-initiation-cheatsheet.md` | UPDATE |
 | D-U3 | `packages/frameworks/workflow-mgt/workflows/workflow-registry.yaml` | UPDATE |
-| D-U4 | `docs/kanban/fr-br/FR-124-*.md`, task doc, story, kboard | UPDATE (intake + release) |
+| D-U4 | `docs/kanban/fbu/FR-124-*.md`, task doc, story, kboard | UPDATE (intake + release) |
 
 ---
 
@@ -153,7 +153,7 @@ All paths per §5; PUBLISHED under repo canonical locations. IPP path linked fro
 
 ## References
 
-- [FR-124](../kanban/fr-br/FR-124-meta-workflow-orchestration-composite-workflow-chains.md)
-- [FR-123](../kanban/fr-br/FR-123-ipw-full-delivery-chain-idf-rw.md)
+- [FR-124](../kanban/fbu/FR-124-meta-workflow-orchestration-composite-workflow-chains.md)
+- [FR-123](../kanban/fbu/FR-123-ipw-full-delivery-chain-idf-rw.md)
 - [IPP-E02S16T22 — IDW pattern](IPP-E02S16T22-implementation-delivery-workflow-idw-fr118.md)
 - [implementation-delivery-workflow-agent-execution.md](../packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/implementation-delivery-workflow-agent-execution.md)

@@ -27,9 +27,9 @@ Investigate and harden IPW behavior so planning/spec artifacts expected to be di
 
 ## Input
 
-- [BR-066](../../../fr-br/BR-066-ipw-missing-docusaurus-filing-for-planning-artifacts.md)
-- [FR-042](../../../fr-br/FR-042-implementation-planning-workflow-ipw.md)
-- [FR-077](../../../fr-br/FR-077-ipw-built-task-status-transition-and-kboard-sync.md)
+- [BR-066](../../../fbu/BR-066-ipw-missing-docusaurus-filing-for-planning-artifacts.md)
+- [FR-042](../../../fbu/FR-042-implementation-planning-workflow-ipw.md)
+- [FR-077](../../../fbu/FR-077-ipw-built-task-status-transition-and-kboard-sync.md)
 - [IPP E02:S15:T01 Phase 2 (BR-066 backfill)](../../../../implementation-cycles/IPP-E02S15T01-br066-corpus-tail-phase3.md)
 - [IPP E02:S15:T01 Phase 3 (BR-066 corpus tail)](../../../../implementation-cycles/IPP-E02S15T01-br066-corpus-tail-phase3.md)
 - `docs/implementation-cycles/`
@@ -75,7 +75,7 @@ Publication N/A Reason: N/A
 
 ## Links
 
-- [BR-066](../../../fr-br/BR-066-ipw-missing-docusaurus-filing-for-planning-artifacts.md)
+- [BR-066](../../../fbu/BR-066-ipw-missing-docusaurus-filing-for-planning-artifacts.md)
 - [Story E2:S15](../story-15-ipw-governance-and-publication-contract.md)
 - [IPP E02:S15:T01 Phase 3 (BR-066 corpus tail)](../../../../implementation-cycles/IPP-E02S15T01-br066-corpus-tail-phase3.md)
 - [IPP E02:S15:T01 Phase 2 (BR-066)](../../../../implementation-cycles/IPP-E02S15T01-br066-corpus-tail-phase3.md)

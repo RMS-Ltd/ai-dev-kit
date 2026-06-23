@@ -100,14 +100,14 @@ Full history: [completion report §4](migration-completion-report.md#4-documente
 ## 6. Release workflow integration
 
 - Ship migration waves via **`RW E04:S11:T07 --art`** (or host-project equivalent task).
-- Use normal BUILD +1 on same E:S:T; never `--doc-policy-zero` for post-ship verification waves ([BR-097](../../../fr-br/BR-097-rw-agent-reuses-tagged-build-and-force-moves-release-tags.md)).
+- Use normal BUILD +1 on same E:S:T; never `--doc-policy-zero` for post-ship verification waves ([BR-097](../../../fbu/BR-097-rw-agent-reuses-tagged-build-and-force-moves-release-tags.md)).
 - RW Step 7 four-surface reconciliation: task doc, story, FR-016, `kboard.md`.
 
 ---
 
 ## 7. New tasks (post-migration policy)
 
-1. Create discrete `T{nn}-{slug}.md` **before** implementation ([FR-017](../../../fr-br/FR-017-versioning-policy-hardening-doc-init-build.md) doc-init).
+1. Create discrete `T{nn}-{slug}.md` **before** implementation ([FR-017](../../../fbu/FR-017-versioning-policy-hardening-doc-init-build.md) doc-init).
 2. Use `**Task ID:**` header (required for RW Step 1c discovery).
 3. Add checklist entry on Story with link to discrete doc.
 4. Do **not** embed task bodies in Story files.
@@ -116,7 +116,7 @@ Full history: [completion report §4](migration-completion-report.md#4-documente
 
 ## 8. References
 
-- [FR-016](../../../fr-br/FR-016-kanban-granularity-discrete-task-docs.md)
+- [FR-016](../../../fbu/FR-016-kanban-granularity-discrete-task-docs.md)
 - [Migration plan](migration-plan-embedded-to-discrete-tasks.md)
 - [Migration completion report](migration-completion-report.md)
 - [Kanban governance policy](../../../../rituals/policy/kanban-governance-policy.md)

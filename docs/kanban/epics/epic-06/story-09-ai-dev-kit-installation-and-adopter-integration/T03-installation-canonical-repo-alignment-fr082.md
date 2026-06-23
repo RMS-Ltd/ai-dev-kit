@@ -17,7 +17,7 @@ housekeeping_policy: keep
 **Version:** v0.6.9.3+2  
 **Code:** E06S09T03
 
-**Upstream:** [FR-082 - Installation distribution canonical repository alignment](../../../fr-br/FR-082-installation-distribution-canonical-repo-alignment.md)
+**Upstream:** [FR-082 - Installation distribution canonical repository alignment](../../../fbu/FR-082-installation-distribution-canonical-repo-alignment.md)
 
 ---
 
@@ -79,5 +79,5 @@ Installation tooling and guides must use **canonical** GitHub coordinates for th
 
 ## References
 
-- [FR-082](../../../fr-br/FR-082-installation-distribution-canonical-repo-alignment.md)
-- [FR-080](../../../fr-br/FR-080-greenfield-installation-process.md) (consumer of correct install defaults)
+- [FR-082](../../../fbu/FR-082-installation-distribution-canonical-repo-alignment.md)
+- [FR-080](../../../fbu/FR-080-greenfield-installation-process.md) (consumer of correct install defaults)

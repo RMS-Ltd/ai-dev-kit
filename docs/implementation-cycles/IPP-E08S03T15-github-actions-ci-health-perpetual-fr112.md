@@ -9,7 +9,7 @@ housekeeping_policy: keep
 # E08:S03:T15 — Planning: Spec, Tests, Implementation Plan (IPW)
 
 **Host Task:** [`T15-github-actions-ci-health-perpetual-fr112.md`](../kanban/epics/epic-08/story-03-automation-scripts/T15-github-actions-ci-health-perpetual-fr112.md) **(E08:S03:T15)**  
-**Planning for:** [FR-112](../kanban/fr-br/FR-112-perpetual-github-ci-and-security-health-lanes.md)  
+**Planning for:** [FR-112](../kanban/fbu/FR-112-perpetual-github-ci-and-security-health-lanes.md)  
 **Status:** Approved (Wave 3 implemented @ **v0.8.3.15+4** — Step 9.7 CI parity gate; AC5/AC6 open pending GH verify)
 
 > **Revision (2026-06-08):** Operator directive — RF7–RF9 / RNF5–RNF6: **Failed job usage** (~501 min) KPI, **no-red-ship** on `dev`/`main`, CQG≠CI boundary. See T15 §Operator requirements (OR-T15-*).
@@ -178,7 +178,7 @@ Establish **E08:S03:T15** as the operational perpetual lane for GitHub Actions C
 | Doc ID | Path | Scope of change | Tied to |
 | ------ | ---- | --------------- | ------- |
 | D-U1 | `docs/kanban/epics/epic-08/story-03-automation-scripts/T15-github-actions-ci-health-perpetual-fr112.md` | IPP link, corrected triage, post-verify baseline | steps 7, 9 |
-| D-U2 | `docs/kanban/fr-br/FR-112-perpetual-github-ci-and-security-health-lanes.md` | T15 IPP + Wave 2 note | step 8 |
+| D-U2 | `docs/kanban/fbu/FR-112-perpetual-github-ci-and-security-health-lanes.md` | T15 IPP + Wave 2 note | step 8 |
 | D-U3 | `docs/kanban/epics/epic-08/story-03-automation-scripts.md` | Checklist IPP link | step 8 |
 | D-U4 | `docs/kanban/kboard.md` | O-band IPP link + version stamp | step 8 |
 | D-U5 | `packages/frameworks/workflow-mgt/scripts/generate_install_error_docs.py` | MDX-safe marker docstring | step 2 |
@@ -228,12 +228,12 @@ Establish **E08:S03:T15** as the operational perpetual lane for GitHub Actions C
 
 ## References
 
-- [FR-112](../kanban/fr-br/FR-112-perpetual-github-ci-and-security-health-lanes.md)
+- [FR-112](../kanban/fbu/FR-112-perpetual-github-ci-and-security-health-lanes.md)
 - [T15 task doc](../kanban/epics/epic-08/story-03-automation-scripts/T15-github-actions-ci-health-perpetual-fr112.md)
 - [T16 task doc](../kanban/epics/epic-08/story-03-automation-scripts/T16-github-security-code-quality-health-perpetual-fr112.md)
-- [FR-111](../kanban/fr-br/FR-111-acquisition-layer-adk-error-codes-and-install-error-doc-hygiene.md)
+- [FR-111](../kanban/fbu/FR-111-acquisition-layer-adk-error-codes-and-install-error-doc-hygiene.md)
 - [IPP-E06S09T24](IPP-E06S09T24-acquisition-layer-adk-error-codes-fr111.md)
 - [Getting Docusaurus working](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/portal/blog/2026-06-05-getting-docusaurus-working/index.md)
 - [ipw-adr-necessity-checklist.md](../architecture/standards-and-adrs/ipw-adr-necessity-checklist.md)
-- [BR-097](../kanban/fr-br/BR-097-rw-agent-reuses-tagged-build-and-force-moves-release-tags.md)
+- [BR-097](../kanban/fbu/BR-097-rw-agent-reuses-tagged-build-and-force-moves-release-tags.md)
 - [GitHub Actions](https://github.com/RMS-Ltd/ai-dev-kit/actions)

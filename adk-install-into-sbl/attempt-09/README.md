@@ -33,7 +33,7 @@
 - [greenfield-brownfield-selective-adoption-sbl-attempt-09.md](../../docs/knowledge/articles/greenfield-brownfield-selective-adoption-sbl-attempt-09.md)
 - Thin pointer: [docs/adk-feedback/attempt-09/README.md](../../docs/adk-feedback/attempt-09/README.md)
 
-**Formal UXR:** [UXR-029](../../docs/kanban/fr-br/UXR-029-adk-install-path-experiment.md)  
+**Formal UXR:** [UXR-029](../../docs/kanban/fbu/UXR-029-adk-install-path-experiment.md)  
 **Policy:** [ADR-030](../../docs/architecture/standards-and-adrs/ADR-030-selective-adoption-three-path-model.md)
 
 ---

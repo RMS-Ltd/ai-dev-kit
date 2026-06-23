@@ -47,7 +47,7 @@ Deliver a layered accessibility programme:
   - Task: [`T01-accessibility-baseline-audit-and-standards-mapping`](story-08-accessibility/T01-accessibility-baseline-audit-and-standards-mapping.md)
   - Report: [adk-accessibility-baseline-layer1-cli.md](../../knowledge/analysis/adk-accessibility-baseline-layer1-cli.md)
   - Planning: [IPP-E21S08T01](../../implementation-cycles/IPP-E21S08T01-accessibility-layered-cli-first.md)
-  - FR: [FR-115](../../fr-br/FR-115-accessibility-standards-compatibility.md)
+  - FR: [FR-115](../../fbu/FR-115-accessibility-standards-compatibility.md)
 - [x] **E21:S08:T02 – Layered accessibility strategy ADR (Layer 0)** - COMPLETE (v0.21.8.2+1 — ADR-025)
   - Task: [`T02-adk-accessibility-strategy-adr`](story-08-accessibility/T02-adk-accessibility-strategy-adr.md)
   - ADR: [ADR-025](../../../architecture/standards-and-adrs/ADR-025-layered-accessibility-strategy.md)
@@ -115,10 +115,10 @@ Deliver a layered accessibility programme:
 
 - [ADR-025](../../../architecture/standards-and-adrs/ADR-025-layered-accessibility-strategy.md)
 - [IPP-E21S08T01](../../implementation-cycles/IPP-E21S08T01-accessibility-layered-cli-first.md)
-- [FR-115](../../fr-br/FR-115-accessibility-standards-compatibility.md)
+- [FR-115](../../fbu/FR-115-accessibility-standards-compatibility.md)
 - [WCAG 2.2](https://www.w3.org/TR/WCAG22/)
-- [FR-108](../../fr-br/FR-108-install-setup-error-code-registry-and-emission.md)
-- [FR-114](../../fr-br/FR-114-split-documentation-surfaces-docusaurus-public-notion-maintainer-kb.md)
+- [FR-108](../../fbu/FR-108-install-setup-error-code-registry-and-emission.md)
+- [FR-114](../../fbu/FR-114-split-documentation-surfaces-docusaurus-public-notion-maintainer-kb.md)
 
 ---
 

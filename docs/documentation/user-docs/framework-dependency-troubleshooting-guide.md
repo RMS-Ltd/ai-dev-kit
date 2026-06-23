@@ -36,7 +36,7 @@ This guide provides solutions to common issues when installing, updating, and us
 ### Scope (greenfield vs brownfield)
 
 - **Greenfield / new-template first run (FR-080):** [`INSTALL_IN_YOUR_PROJECT.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/INSTALL_IN_YOUR_PROJECT.md) · [IPW-E6S9T1](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/implementation-cycles/IPW-E6S09T01-greenfield-installation-fr080.md)
-- **Brownfield SoT:** [INSTALL — Brownfield adoption](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/INSTALL_IN_YOUR_PROJECT.md#brownfield-adoption-existing-repositories) · **Policy:** [ADR-003](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/architecture/standards-and-adrs/ADR-003-greenfield-vs-brownfield-adoption.md) · [FR-081](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/kanban/fr-br/FR-081-brownfield-modular-adopter-integration.md)
+- **Brownfield SoT:** [INSTALL — Brownfield adoption](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/INSTALL_IN_YOUR_PROJECT.md#brownfield-adoption-existing-repositories) · **Policy:** [ADR-003](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/architecture/standards-and-adrs/ADR-003-greenfield-vs-brownfield-adoption.md) · [FR-081](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/kanban/fbu/FR-081-brownfield-modular-adopter-integration.md)
 
 ---
 
@@ -1178,7 +1178,7 @@ ai-dev-kit report-issue \
 {/* ADK-ERROR-CODES:START */}
 ## Install error codes (ADK-*) {/* #install-error-codes-adk */}
 
-Registry version: **1.1.0**. When install fails, copy the `ERROR [ADK-…]` line from your console together with the AI Dev Kit SemVer banner ([UXR-016](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/kanban/fr-br/UXR-016-install-setup-interactive-feedback-external-semver-version.md)).
+Registry version: **1.1.0**. When install fails, copy the `ERROR [ADK-…]` line from your console together with the AI Dev Kit SemVer banner ([UXR-016](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/kanban/fbu/UXR-016-install-setup-interactive-feedback-external-semver-version.md)).
 
 Canonical registry: `packages/frameworks/workflow-mgt/config/install-error-codes.yaml`.
 

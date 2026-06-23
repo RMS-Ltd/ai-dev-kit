@@ -105,7 +105,7 @@ def _scaffold_governance(root: Path, *, all_phrases: bool = True) -> None:
 
 
 def _scaffold_supersede_chain(root: Path, *, complete: bool = True) -> None:
-    fbu_dir = root / "docs/kanban/fr-br"
+    fbu_dir = root / "docs/kanban/fbu"
     epic_dir = (
         root
         / "docs/kanban/epics/epic-02/"

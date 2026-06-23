@@ -17,14 +17,14 @@ housekeeping_policy: keep
 **Version Anchor:** v0.4.19.13+1  
 **Code:** E04S19T13
 
-**Upstream:** [UXR-028](../../../fr-br/UXR-028-kboard-v3dot2-packaged-template-alignment.md)  
+**Upstream:** [UXR-028](../../../fbu/UXR-028-kboard-v3dot2-packaged-template-alignment.md)  
 **SBL evidence:** `adk-install-into-sbl/attempt-06/feedback-package/kboard-template-v3dot2.md` · `kboard-populated-example.md`
 
 ---
 
 ## Input
 
-- [UXR-028](../../../fr-br/UXR-028-kboard-v3dot2-packaged-template-alignment.md) findings R1–R5
+- [UXR-028](../../../fbu/UXR-028-kboard-v3dot2-packaged-template-alignment.md) findings R1–R5
 - SBL attempt 06 FR-079 package (adopter sign-off final)
 
 ---
@@ -46,6 +46,6 @@ Align `packages/frameworks/kanban/templates/KANBAN_BOARD_TEMPLATE.md` with SBL-v
 ## Acceptance criteria
 
 - [x] **AC1:** Template v2.2.0 — single-line rows, V band, split Ongoing, no epic rollup, header links (UXR-028 R1–R4).
-- [x] **AC2:** Greenfield mirror synced via `sync_greenfield_install.py` ([FR-110](../../../fr-br/FR-110-lean-adopter-distribution-footprint-and-vendor-bundle.md)).
+- [x] **AC2:** Greenfield mirror synced via `sync_greenfield_install.py` ([FR-110](../../../fbu/FR-110-lean-adopter-distribution-footprint-and-vendor-bundle.md)).
 - [ ] **AC3:** Fresh install spot-check or test documents expected board shape.
 - [ ] **AC4:** Optional populated example in templates package (UXR-028 R6).

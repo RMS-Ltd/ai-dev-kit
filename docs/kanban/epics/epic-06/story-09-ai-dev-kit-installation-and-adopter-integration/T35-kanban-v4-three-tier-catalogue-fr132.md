@@ -18,7 +18,7 @@ housekeeping_policy: keep
 
 **Parent program:** [E06:S09:T26](T26-starborn-legacy-adk-install-program.md) · [Issue #51](https://github.com/RMS-Ltd/ai-dev-kit/issues/51)
 
-**Source FR:** [FR-132](../../../fr-br/FR-132-kanban-v4-three-tier-catalogue.md) · [FR-131](../../../fr-br/FR-131-canonical-abstract-task-library-catl.md) (CATL)
+**Source FR:** [FR-132](../../../fbu/FR-132-kanban-v4-three-tier-catalogue.md) · [FR-131](../../../fbu/FR-131-canonical-abstract-task-library-catl.md) (CATL)
 
 **Predecessor:** [E06:S09:T34](T34-kanban-v35-packaged-catalog-small-tier.md) (v3.5 Small tier) · [E06:S09:T27](T27-kanban-v32-package-rewrite-installer-f9-f17.md) (v3.2 baseline)
 
@@ -42,8 +42,8 @@ Extends v3.5 (T34) per operator v4 plan; addresses [Issue #51](https://github.co
 
 ## Input
 
-- [FR-132](../../../fr-br/FR-132-kanban-v4-three-tier-catalogue.md)
-- [FR-131](../../../fr-br/FR-131-canonical-abstract-task-library-catl.md)
+- [FR-132](../../../fbu/FR-132-kanban-v4-three-tier-catalogue.md)
+- [FR-131](../../../fbu/FR-131-canonical-abstract-task-library-catl.md)
 - [E06:S09:T31](T31-agentic-kanban-migration-agent-fr127.md) (KMA baseline)
 - [sbl-attempt-09-kanban-v4-replay.md](../../../../knowledge/analysis/projects/sbl-attempt-09-kanban-v4-replay.md)
 

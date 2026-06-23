@@ -9,7 +9,7 @@ housekeeping_policy: keep
 # E21:S01:T03 — Planning: RW installer language selection (IPW)
 
 **Host Task:** [`T03-add-language-selection-prompt-to-rw-installer-install-releas.md`](../project-management/kanban/epics/epic-21/story-01-language-selection-at-setup/T03-add-language-selection-prompt-to-rw-installer-install-releas.md) **(E21:S01:T03)**  
-**Planning for:** [FR-006 Phase 1](../project-management/kanban/fr-br/FR-006-localization-language-selection-uk-us-english.md) · [IPP-E21S01T01](IPP-E21S01T01-template-language-selection-github.md) · [IPP-E21S01T02](IPP-E21S01T02-cli-init-language-selection.md)  
+**Planning for:** [FR-006 Phase 1](../project-management/kanban/fbu/FR-006-localization-language-selection-uk-us-english.md) · [IPP-E21S01T01](IPP-E21S01T01-template-language-selection-github.md) · [IPP-E21S01T02](IPP-E21S01T02-cli-init-language-selection.md)  
 **Status:** Complete — released `v0.21.1.3+1` (`RW E21:S01:T03 --art`)  
 **Branch:** `epic/21-internationalisation-localisation`
 

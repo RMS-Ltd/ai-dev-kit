@@ -9,7 +9,7 @@ housekeeping_policy: keep
 # E04:S09:T01 — Planning: BR-007 Kanban package installation verification and closure (IPW)
 
 **Host Task:** [`T01-br007-kanban-package-installation-verification.md`](../kanban/epics/epic-04/story-09-bug-fixes-and-agentic-intelligence/T01-br007-kanban-package-installation-verification.md) **(E04:S09:T01)**  
-**Planning for:** [BR-007 — Multiple Bugs Kanban Package Installation](../kanban/fr-br/BR-007-multiple-bugs-kanban-package-installation.md)  
+**Planning for:** [BR-007 — Multiple Bugs Kanban Package Installation](../kanban/fbu/BR-007-multiple-bugs-kanban-package-installation.md)  
 **Status:** Approved (verification wave — 2026-06-05)
 
 > **IPW:** Verification/closure wave. Story checklist marks **E04:S09:T01–T04** implementation COMPLETE (**v0.4.9.1+1**); BR-007 remains **PENDING** and `kboard.md` row is **TODO**. This IPP prescribes evidence gathering and four-surface reconciliation — not re-implementation unless verification exposes a gap.
@@ -162,7 +162,7 @@ grep -E "canonical_adoption" packages/frameworks/kanban/scripts/migrate_structur
 | ---- | ------ |
 | `docs/kanban/epics/epic-04/story-09-bug-fixes-and-agentic-intelligence/T01-br007-kanban-package-installation-verification.md` | UPDATE (status, completion) |
 | `docs/implementation-cycles/IPP-E04S09T01-br007-kanban-package-installation.md` | CREATE (this IPP) |
-| `docs/kanban/fr-br/BR-007-multiple-bugs-kanban-package-installation.md` | UPDATE (status, AC, fix history) |
+| `docs/kanban/fbu/BR-007-multiple-bugs-kanban-package-installation.md` | UPDATE (status, AC, fix history) |
 | `docs/kanban/kboard.md` | UPDATE (prune row) |
 | `docs/kanban/intake-completed.md` | UPDATE (ledger) |
 | `docs/kanban/epics/epic-04/story-09-bug-fixes-and-agentic-intelligence.md` | UPDATE (T01 task doc link) |
@@ -190,7 +190,7 @@ grep -E "canonical_adoption" packages/frameworks/kanban/scripts/migrate_structur
 
 | Doc ID | Path | Scope of change | Tied to |
 | ------ | ---- | --------------- | ------- |
-| D-U1 | `docs/kanban/fr-br/BR-007-multiple-bugs-kanban-package-installation.md` | AC checkboxes; Fix Attempt History; Status **FIXED**; link task doc | RF7; Step 4 |
+| D-U1 | `docs/kanban/fbu/BR-007-multiple-bugs-kanban-package-installation.md` | AC checkboxes; Fix Attempt History; Status **FIXED**; link task doc | RF7; Step 4 |
 | D-U2 | `docs/kanban/epics/epic-04/story-09-bug-fixes-and-agentic-intelligence/T01-br007-kanban-package-installation-verification.md` | Status; completion summary; version anchor | Steps 1, N |
 | D-U3 | `docs/kanban/epics/epic-04/story-09-bug-fixes-and-agentic-intelligence.md` | T01 checklist → discrete task doc link | Step 5 |
 | D-U4 | `docs/kanban/kboard.md` | Prune E04:S09:T01 C-band row | Step 6 |
@@ -217,7 +217,7 @@ grep -E "canonical_adoption" packages/frameworks/kanban/scripts/migrate_structur
 | Doc ID | Canonical path | Publication status | Publication N/A reason | Lifecycle | Inbound links |
 | ------ | -------------- | ------------------ | ---------------------- | --------- | ------------- |
 | D-C1 | `docs/implementation-cycles/IPP-E04S09T01-br007-kanban-package-installation.md` | NOT_APPLICABLE | Planning artifact | evergreen | T01 Input/References |
-| D-U1 | `docs/kanban/fr-br/BR-007-multiple-bugs-kanban-package-installation.md` | NOT_APPLICABLE | Kanban FBU corpus | evergreen | T01 Cross-Wiring |
+| D-U1 | `docs/kanban/fbu/BR-007-multiple-bugs-kanban-package-installation.md` | NOT_APPLICABLE | Kanban FBU corpus | evergreen | T01 Cross-Wiring |
 | D-U2 | `docs/kanban/epics/epic-04/story-09-bug-fixes-and-agentic-intelligence/T01-br007-kanban-package-installation-verification.md` | NOT_APPLICABLE | Task doc | evergreen | IPP Host Task |
 | D-U3–D-U5 | kanban board / ledger / story | NOT_APPLICABLE | Project management | evergreen | RW Step 7 |
 
@@ -238,8 +238,8 @@ grep -E "canonical_adoption" packages/frameworks/kanban/scripts/migrate_structur
 ## References
 
 - [T01 — BR-007 verification and closure](../kanban/epics/epic-04/story-09-bug-fixes-and-agentic-intelligence/T01-br007-kanban-package-installation-verification.md)
-- [BR-007](../kanban/fr-br/BR-007-multiple-bugs-kanban-package-installation.md)
-- [UXR-004](../kanban/fr-br/UXR-004-kanban-package-installation-uat.md)
+- [BR-007](../kanban/fbu/BR-007-multiple-bugs-kanban-package-installation.md)
+- [UXR-004](../kanban/fbu/UXR-004-kanban-package-installation-uat.md)
 - [Story 9](../kanban/epics/epic-04/story-09-bug-fixes-and-agentic-intelligence.md)
 - [ipw-adr-necessity-checklist.md](../architecture/standards-and-adrs/ipw-adr-necessity-checklist.md)
-- [FR-092](../kanban/fr-br/FR-092-canonical-rw-ukw-kanban-consistency-program.md)
+- [FR-092](../kanban/fbu/FR-092-canonical-rw-ukw-kanban-consistency-program.md)

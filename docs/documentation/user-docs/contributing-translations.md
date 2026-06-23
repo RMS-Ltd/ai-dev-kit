@@ -86,4 +86,4 @@ See [translation-management-tools.md](translation-management-tools.md) for `vali
 - [translation-workflow-and-review.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/governance/standards/translation-workflow-and-review.md) — canonical workflow
 - [translatable-content-inventory.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/governance/standards/translatable-content-inventory.md) — what is translatable
 - [locale-key-conventions.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/governance/standards/locale-key-conventions.md) — key naming rules
-- [FR-006](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/kanban/fr-br/FR-006-localization-language-selection-uk-us-english.md)
+- [FR-006](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/kanban/fbu/FR-006-localization-language-selection-uk-us-english.md)

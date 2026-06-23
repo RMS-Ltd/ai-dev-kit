@@ -16,7 +16,7 @@ housekeeping_policy: keep
 **Last updated:** 2026-04-20 (RW v0.6.6.62+2 --art: IPW housing and governance traceability reconciled)  
 **Code:** E06S06T62
 
-**Upstream:** [FR-083 - Global IPW-gated implementation contract](../../../fr-br/FR-083-global-ipw-gated-implementation-contract.md)
+**Upstream:** [FR-083 - Global IPW-gated implementation contract](../../../fbu/FR-083-global-ipw-gated-implementation-contract.md)
 **IPW:** [IPW-E6S6T62-global-ipw-gated-implementation-contract](../../../../implementation-cycles/IPW-E6S06T62-global-ipw-gated-implementation-contract.md)
 
 ---
@@ -29,7 +29,7 @@ housekeeping_policy: keep
 
 ## Input
 
-- [FR-083](../../../fr-br/FR-083-global-ipw-gated-implementation-contract.md) requirements.
+- [FR-083](../../../fbu/FR-083-global-ipw-gated-implementation-contract.md) requirements.
 - Existing governance/rules baseline in `AGENTS.md` and `.cursorrules`.
 
 ---
@@ -67,9 +67,9 @@ Implementation can begin prematurely when a user requested only intake/planning 
 
 ## References
 
-- [FR-083](../../../fr-br/FR-083-global-ipw-gated-implementation-contract.md)
-- [FR-042](../../../fr-br/FR-042-implementation-planning-workflow-ipw.md)
-- [FR-074](../../../fr-br/FR-074-kanban-intake-atomic-kg-r2-kg-r6-governance.md)
+- [FR-083](../../../fbu/FR-083-global-ipw-gated-implementation-contract.md)
+- [FR-042](../../../fbu/FR-042-implementation-planning-workflow-ipw.md)
+- [FR-074](../../../fbu/FR-074-kanban-intake-atomic-kg-r2-kg-r6-governance.md)
 
 ## Planning artifacts (publication)
 

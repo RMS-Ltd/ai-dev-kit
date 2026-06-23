@@ -86,7 +86,7 @@ Establish a robust internationalisation infrastructure that supports multiple la
 
 ## References
 
-- `docs/kanban/fr-br/FR-006-localization-language-selection-uk-us-english.md` - Feature request
+- `docs/kanban/fbu/FR-006-localization-language-selection-uk-us-english.md` - Feature request
 - [ADR-024](../../../architecture/standards-and-adrs/ADR-024-i18n-framework-strategy.md) - i18n framework strategy (E21:S02:T01)
 - [locale-file-structure-conventions.md](../../../governance/standards/locale-file-structure-conventions.md) - manifest v2 layout (E21:S02:T02)
 - [IPP-E21S02T02](../../../implementation-cycles/IPP-E21S02T02-locale-file-structure.md) - T02 planning package

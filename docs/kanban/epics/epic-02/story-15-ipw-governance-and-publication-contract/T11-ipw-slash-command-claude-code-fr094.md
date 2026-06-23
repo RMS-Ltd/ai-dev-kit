@@ -18,7 +18,7 @@ housekeeping_policy: keep
 **Version Anchor:** v0.2.16.9+0  
 **Code:** E02S15T11
 
-**Upstream:** [FR-094 — `/ipw` slash command for Claude Code + mandatory task state transition in IPP](../../../fr-br/FR-094-ipw-slash-command-and-task-state-transition-mandate.md)
+**Upstream:** [FR-094 — `/ipw` slash command for Claude Code + mandatory task state transition in IPP](../../../fbu/FR-094-ipw-slash-command-and-task-state-transition-mandate.md)
 
 Publication Status: NOT_APPLICABLE  
 Publication N/A Reason: Tooling/config/doc task — no specification/test-design/implementation-plan publication set required.
@@ -28,12 +28,12 @@ Publication N/A Reason: Tooling/config/doc task — no specification/test-design
 ## Input
 
 - [IPP — E02:S15:T11 implementation plan](../../../../implementation-cycles/IPP-E2S16T09-ipw-slash-command-and-ipp-state-transition.md)
-- [FR-094](../../../fr-br/FR-094-ipw-slash-command-and-task-state-transition-mandate.md) requirements.
+- [FR-094](../../../fbu/FR-094-ipw-slash-command-and-task-state-transition-mandate.md) requirements.
 - Existing `/rw` command at `.claude/commands/rw.md` and `/ukw` at `.claude/commands/ukw.md` as pattern references.
 - IPW canonical step guide: `packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/implementation-planning-workflow-agent-execution.md`.
 - IPW trigger spec: `.cursorrules` → IPW trigger section.
 - Plan doc template: `packages/frameworks/kanban/templates/PLAN_DOC_TEMPLATE.md`.
-- [FR-077](../../../fr-br/FR-077-ipw-built-task-status-transition-and-kboard-sync.md) — ownership contract that FR-094 embeds in the IPP artefact.
+- [FR-077](../../../fbu/FR-077-ipw-built-task-status-transition-and-kboard-sync.md) — ownership contract that FR-094 embeds in the IPP artefact.
 
 ---
 
@@ -58,7 +58,7 @@ IPW had no dedicated `/ipw` slash command in Claude Code. Invocation relied on p
 
 ## Scope
 
-See [FR-094](../../../fr-br/FR-094-ipw-slash-command-and-task-state-transition-mandate.md) scope section.
+See [FR-094](../../../fbu/FR-094-ipw-slash-command-and-task-state-transition-mandate.md) scope section.
 
 ---
 
@@ -81,8 +81,8 @@ See [FR-094](../../../fr-br/FR-094-ipw-slash-command-and-task-state-transition-m
 
 ## References
 
-- [FR-094](../../../fr-br/FR-094-ipw-slash-command-and-task-state-transition-mandate.md)
-- [FR-077](../../../fr-br/FR-077-ipw-built-task-status-transition-and-kboard-sync.md)
+- [FR-094](../../../fbu/FR-094-ipw-slash-command-and-task-state-transition-mandate.md)
+- [FR-077](../../../fbu/FR-077-ipw-built-task-status-transition-and-kboard-sync.md)
 - [Story 016](../story-16-perpetual-ongoing-workflow-operations.md)
 - `.claude/commands/ipw.md`
 - `.claude/commands/rw.md`

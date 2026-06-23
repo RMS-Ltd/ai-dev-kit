@@ -10,7 +10,7 @@ housekeeping_policy: keep
 
 **Machine-readable contract:** [`install-rc-checklist.yaml`](../../../packages/frameworks/workflow-mgt/config/install-rc-checklist.yaml)  
 **Validator:** `validate_install_rc.py`  
-**Task:** [E06:S09:T36](../../kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T36-adopter-path-selector-install-rc-uxr029.md) · **UXR:** [UXR-029](../../kanban/fr-br/UXR-029-adk-install-path-experiment.md) · **Evidence:** [#52](https://github.com/RMS-Ltd/ai-dev-kit/issues/52)
+**Task:** [E06:S09:T36](../../kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T36-adopter-path-selector-install-rc-uxr029.md) · **UXR:** [UXR-029](../../kanban/fbu/UXR-029-adk-install-path-experiment.md) · **Evidence:** [#52](https://github.com/RMS-Ltd/ai-dev-kit/issues/52)
 
 ---
 

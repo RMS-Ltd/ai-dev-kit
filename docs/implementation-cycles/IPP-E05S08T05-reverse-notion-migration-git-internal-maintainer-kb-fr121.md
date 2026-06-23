@@ -9,7 +9,7 @@ housekeeping_policy: keep
 # E05:S08:T05 — Planning: Reverse Notion migration — git-internal maintainer KB (FR-121)
 
 **Host Task:** [`T05-reverse-notion-migration-git-internal-maintainer-kb-fr121.md`](../kanban/epics/epic-05/story-08-knowledge-base/T05-reverse-notion-migration-git-internal-maintainer-kb-fr121.md) **(E05:S08:T05)**  
-**Planning for:** [FR-121](../kanban/fr-br/FR-121-git-internal-maintainer-kb-oss-documentation-surfaces.md) (F1, F6 partial, NF1–NF3)  
+**Planning for:** [FR-121](../kanban/fbu/FR-121-git-internal-maintainer-kb-oss-documentation-surfaces.md) (F1, F6 partial, NF1–NF3)  
 **Status:** Active — implementation authorized
 
 > **IPW (Implementation Planning Workflow):** Consolidated IPP per FR-042 / FR-094.
@@ -93,7 +93,7 @@ Primary restore method: deterministic `git show 6b563cdf^:docs/{source_path}` fo
 | E4 | Spec elsewhere | Y | FR-121 wave table + T03 IPP inverse |
 | E5 | Documented NONE | Y | ADR-026 explicitly T06 |
 
-**§5.3 governing doc:** [FR-121](../kanban/fr-br/FR-121-git-internal-maintainer-kb-oss-documentation-surfaces.md) wave 1; ADR creation deferred to [E05:S08:T06](../kanban/epics/epic-05/story-08-knowledge-base/T06-adr-026-git-maintainer-authoring-bootstrap-fr121.md).
+**§5.3 governing doc:** [FR-121](../kanban/fbu/FR-121-git-internal-maintainer-kb-oss-documentation-surfaces.md) wave 1; ADR creation deferred to [E05:S08:T06](../kanban/epics/epic-05/story-08-knowledge-base/T06-adr-026-git-maintainer-authoring-bootstrap-fr121.md).
 
 ---
 
@@ -208,8 +208,8 @@ Primary restore method: deterministic `git show 6b563cdf^:docs/{source_path}` fo
 
 ## References
 
-- [FR-121](../kanban/fr-br/FR-121-git-internal-maintainer-kb-oss-documentation-surfaces.md)
+- [FR-121](../kanban/fbu/FR-121-git-internal-maintainer-kb-oss-documentation-surfaces.md)
 - [T05 task doc](../kanban/epics/epic-05/story-08-knowledge-base/T05-reverse-notion-migration-git-internal-maintainer-kb-fr121.md)
 - [IPP-E05S08T03](IPP-E05S08T03-big-bang-notion-migration-maintainer-kb-fr114.md) (forward migration inverse)
-- [FR-114](../kanban/fr-br/FR-114-split-documentation-surfaces-docusaurus-public-notion-maintainer-kb.md)
+- [FR-114](../kanban/fbu/FR-114-split-documentation-surfaces-docusaurus-public-notion-maintainer-kb.md)
 - [ADR-024](../architecture/standards-and-adrs/ADR-024-documentation-surfaces-three-surface-model-fr114.md)

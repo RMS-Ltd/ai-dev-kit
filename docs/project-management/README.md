@@ -10,6 +10,6 @@ housekeeping_policy: keep
 
 > **Canonical Kanban:** [`docs/kanban/`](../kanban/)  
 > **Policy:** [`docs/governance/kanban/`](../governance/kanban/)  
-> **Closure:** [FR-118](../kanban/fr-br/FR-118-promote-kanban-to-docs-kanban-retire-project-management-shell.md) @ `v0.7.1.12+2`; stale `kanban/` subtree removed @ `v0.2.16.10+7`.
+> **Closure:** [FR-118](../kanban/fbu/FR-118-promote-kanban-to-docs-kanban-retire-project-management-shell.md) @ `v0.7.1.12+2`; stale `kanban/` subtree removed @ `v0.2.16.10+7`.
 
 This directory is a **redirect stub only**. Do not add files here.

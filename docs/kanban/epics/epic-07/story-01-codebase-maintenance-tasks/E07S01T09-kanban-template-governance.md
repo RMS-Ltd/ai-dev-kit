@@ -13,9 +13,9 @@ housekeeping_policy: keep
 **Last updated:** 2026-06-01 (UXR-005 spacing validator, corpus pass, RW/UKW hooks)  
 **Priority:** HIGH  
 **Version Anchor:** v0.7.1.9+5  
-**Related UXR:** [UXR-005 – Kanban Board Formatting & Governance](../../../fr-br/UXR-005-kanban-board-formatting-and-governance.md)  
+**Related UXR:** [UXR-005 – Kanban Board Formatting & Governance](../../../fbu/UXR-005-kanban-board-formatting-and-governance.md)  
 **Historical registry (link only):** [E07:S00:T05](../story-00-uxr-repo/T05-uxr-005-repository-anchor.md)  
-**Governance:** [BR-076](../../../fr-br/BR-076-e7-s00-must-not-host-concrete-tasks.md) — RESOLVED via [E04:S19:T10](../../epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T10-e7-s00-detasking-abstract-space-enforcement-br076.md)  
+**Governance:** [BR-076](../../../fbu/BR-076-e7-s00-must-not-host-concrete-tasks.md) — RESOLVED via [E04:S19:T10](../../epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T10-e7-s00-detasking-abstract-space-enforcement-br076.md)  
 **Story:** [E7:S01 – Codebase Maintenance Tasks](../story-01-codebase-maintenance-tasks.md)
 
 Publication Status: NOT_APPLICABLE  
@@ -31,7 +31,7 @@ Operationalize UXR-005 by codifying and enforcing the “one blank line between 
 
 ## Input
 
-- **[UXR-005](../../../fr-br/UXR-005-kanban-board-formatting-and-governance.md)** — Kanban board formatting & governance findings and acceptance criteria.
+- **[UXR-005](../../../fbu/UXR-005-kanban-board-formatting-and-governance.md)** — Kanban board formatting & governance findings and acceptance criteria.
 - **[IPP-E7S1T9](../../../../implementation-cycles/IPP-E07S01T09-kanban-template-governance-uxr005.md)** — IPW package (spec, tests, implementation waves).
 - **Registry:** [E07:S00:T05](../story-00-uxr-repo/T05-uxr-005-repository-anchor.md); kanban boards, `kanban-board-guide.md`, validators.
 

@@ -68,7 +68,7 @@ Top-level `docs/` present; `docs/architecture`, `docs/documentation`, `docs/chan
 
 ### Cross-references
 
-- **`fr-br/` → Kanban epics:** Prior T06 fixed `(epics/...)` to `(../epics/...)` where needed. Re-scan: no remaining `](epics/` in `fr-br/*.md`.
+- **`fbu/` → Kanban epics:** Prior T06 fixed `(epics/...)` to `(../epics/...)` where needed. Re-scan: no remaining `](epics/` in `fbu/*.md`.
 - **`CHANGELOG.md`:** `latest_only` mode; links to archival policy, `CHANGELOG_ARCHIVE.md`, and archive paths resolve.
 - **Exhaustive crawl:** Full-repo markdown link graph not automated here; follow-up may add a CI link checker. This release documents spot validation of high-traffic entry points.
 

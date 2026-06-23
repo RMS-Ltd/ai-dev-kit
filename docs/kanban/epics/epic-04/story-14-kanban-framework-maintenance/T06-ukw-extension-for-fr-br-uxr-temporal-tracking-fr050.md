@@ -20,14 +20,14 @@ housekeeping_policy: keep
 Publication Status: NOT_APPLICABLE  
 Publication N/A Reason: Single consolidated IPP (Sections 1–7 per IPW); see [IPP-E2S16T7](../../../../implementation-cycles/IPP-E2S16T07-ukw-fbu-temporal-tracking-fr050.md).
 
-**Associated FR:** [FR-050](../../../fr-br/FR-050-ukw-extension-for-fr-br-uxr-temporal-tracking-and-synchronization.md)
+**Associated FR:** [FR-050](../../../fbu/FR-050-ukw-extension-for-fr-br-uxr-temporal-tracking-and-synchronization.md)
 **Version Anchor:** v0.2.16.7+0
 
 ---
 
 ## Input
 
-- [FR-050](../../../fr-br/FR-050-ukw-extension-for-fr-br-uxr-temporal-tracking-and-synchronization.md) — requirements and acceptance criteria.
+- [FR-050](../../../fbu/FR-050-ukw-extension-for-fr-br-uxr-temporal-tracking-and-synchronization.md) — requirements and acceptance criteria.
 - [IPP-E2S16T7](../../../../implementation-cycles/IPP-E2S16T07-ukw-fbu-temporal-tracking-fr050.md) — consolidated implementation plan (IPW).
 - UKW workflow definition: `packages/frameworks/workflow-mgt/workflows/update-kanban-workflow/`
 - UKW agents definition: `packages/frameworks/workflow-mgt/agents/ukw/AGENTS.md`
@@ -71,7 +71,7 @@ The UKW handles kanban board synchronization with temporal tracking and a recent
 
 ## References
 
-- [FR-050](../../../fr-br/FR-050-ukw-extension-for-fr-br-uxr-temporal-tracking-and-synchronization.md)
+- [FR-050](../../../fbu/FR-050-ukw-extension-for-fr-br-uxr-temporal-tracking-and-synchronization.md)
 - [IPP-E2S16T7](../../../../implementation-cycles/IPP-E2S16T07-ukw-fbu-temporal-tracking-fr050.md)
 - [Story 016](../story-16-perpetual-ongoing-workflow-operations.md)
 - Historical anchor: [E06:S07:T108](../../epic-06/story-07-adk-implementation-analysis-and-package-management/T108-ukw-extension-for-fr-br-uxr-temporal-tracking-and-synchronization.md) (SUPERSEDED)

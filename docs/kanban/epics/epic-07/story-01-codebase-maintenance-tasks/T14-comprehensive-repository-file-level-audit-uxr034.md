@@ -23,7 +23,7 @@ Publication Status: NOT_APPLICABLE (IPP required before investigation execution 
 
 ## Scope
 
-Deliver [UXR-034](../../../fr-br/UXR-034-comprehensive-repository-file-level-audit-within-audited-directories.md): a **file-level repository audit** scoped to directories validated by [UXR-033](../../../fr-br/UXR-033-comprehensive-repository-directory-structure-audit.md) / [E07:S01:T13](T13-comprehensive-repository-directory-structure-audit-uxr033.md) — inventory every file within the audited directory structure, classify each by purpose vs legacy orphan, and recommend optimal placement — **without** performing file moves in this task.
+Deliver [UXR-034](../../../fbu/UXR-034-comprehensive-repository-file-level-audit-within-audited-directories.md): a **file-level repository audit** scoped to directories validated by [UXR-033](../../../fbu/UXR-033-comprehensive-repository-directory-structure-audit.md) / [E07:S01:T13](T13-comprehensive-repository-directory-structure-audit-uxr033.md) — inventory every file within the audited directory structure, classify each by purpose vs legacy orphan, and recommend optimal placement — **without** performing file moves in this task.
 
 **Problem:** [UXR-033](T13-comprehensive-repository-directory-structure-audit-uxr033.md) answers “what is this **folder** for?” but not “what is this **file** for, and does it still belong here?” Operators and agents need a per-file valuation matrix tied to directory audit outcomes before confident cleanup waves.
 
@@ -33,10 +33,10 @@ Deliver [UXR-034](../../../fr-br/UXR-034-comprehensive-repository-file-level-aud
 
 ## Source FR/BR/UXR
 
-- **[UXR-034](../../../fr-br/UXR-034-comprehensive-repository-file-level-audit-within-audited-directories.md)** — requirements, rubric, and acceptance direction
-- **[UXR-033](../../../fr-br/UXR-033-comprehensive-repository-directory-structure-audit.md)** — **paired directory audit** (scope authority; bidirectional contextual awareness)
-- **[FR-039](../../../fr-br/FR-039-ai-dev-kit-project-review-and-legacy-clean-up.md)** — broader project review (coordinates; does not duplicate execution)
-- **[UXR-013](../../../fr-br/UXR-013-project-root-hygiene-and-legacy-docs-rationalization.md)** — root-only file hygiene ([E07:S01:T10](T10-project-root-hygiene-and-legacy-docs-rationalization.md))
+- **[UXR-034](../../../fbu/UXR-034-comprehensive-repository-file-level-audit-within-audited-directories.md)** — requirements, rubric, and acceptance direction
+- **[UXR-033](../../../fbu/UXR-033-comprehensive-repository-directory-structure-audit.md)** — **paired directory audit** (scope authority; bidirectional contextual awareness)
+- **[FR-039](../../../fbu/FR-039-ai-dev-kit-project-review-and-legacy-clean-up.md)** — broader project review (coordinates; does not duplicate execution)
+- **[UXR-013](../../../fbu/UXR-013-project-root-hygiene-and-legacy-docs-rationalization.md)** — root-only file hygiene ([E07:S01:T10](T10-project-root-hygiene-and-legacy-docs-rationalization.md))
 
 ---
 
@@ -108,19 +108,19 @@ Deliver [UXR-034](../../../fr-br/UXR-034-comprehensive-repository-file-level-aud
 
 **Depends On:**
 
-- [UXR-033](../../../fr-br/UXR-033-comprehensive-repository-directory-structure-audit.md) / [E07:S01:T13](T13-comprehensive-repository-directory-structure-audit-uxr033.md) — directory audit baseline (authoritative scope)
+- [UXR-033](../../../fbu/UXR-033-comprehensive-repository-directory-structure-audit.md) / [E07:S01:T13](T13-comprehensive-repository-directory-structure-audit-uxr033.md) — directory audit baseline (authoritative scope)
 - IPW package for `E07:S01:T14`
 
 **Blocks:**
 
 - Prioritized, evidence-based **file-level** repository reorganization within validated directories
-- Informed execution on [FR-039](../../../fr-br/FR-039-ai-dev-kit-project-review-and-legacy-clean-up.md) and directory wave follow-ons from T13
+- Informed execution on [FR-039](../../../fbu/FR-039-ai-dev-kit-project-review-and-legacy-clean-up.md) and directory wave follow-ons from T13
 
 **Coordinates With:**
 
 - [E07:S01:T13](T13-comprehensive-repository-directory-structure-audit-uxr033.md) — **paired directory layer** (bidirectional contextual awareness)
 - [E07:S01:T10](T10-project-root-hygiene-and-legacy-docs-rationalization.md) — root file hygiene (narrower; avoid duplicate root passes)
-- [E04:S19:T14](../../epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T14-fr-br-directory-rename-to-fbu-uxr032.md) — `fr-br/` → `fbu/` path rename
+- [E04:S19:T14](../../epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T14-fr-br-directory-rename-to-fbu-uxr032.md) — `fbu/` → `fbu/` path rename
 
 ---
 
@@ -128,12 +128,12 @@ Deliver [UXR-034](../../../fr-br/UXR-034-comprehensive-repository-file-level-aud
 
 **Associated UXR:**
 
-- **[UXR-034: Comprehensive repository file-level audit within audited directories](../../../fr-br/UXR-034-comprehensive-repository-file-level-audit-within-audited-directories.md)** — **Informs** — Defines file investigation scope and rubric.
-- **[UXR-033: Comprehensive repository directory structure audit](../../../fr-br/UXR-033-comprehensive-repository-directory-structure-audit.md)** — **Paired / scope authority** — Directory layer; T14 consumes T13 outputs and may feed back rollups.
+- **[UXR-034: Comprehensive repository file-level audit within audited directories](../../../fbu/UXR-034-comprehensive-repository-file-level-audit-within-audited-directories.md)** — **Informs** — Defines file investigation scope and rubric.
+- **[UXR-033: Comprehensive repository directory structure audit](../../../fbu/UXR-033-comprehensive-repository-directory-structure-audit.md)** — **Paired / scope authority** — Directory layer; T14 consumes T13 outputs and may feed back rollups.
 
 **Related FR:**
 
-- **[FR-039](../../../fr-br/FR-039-ai-dev-kit-project-review-and-legacy-clean-up.md)** — **Coordinates With** — Broader cleanup program; file audit feeds prioritization.
+- **[FR-039](../../../fbu/FR-039-ai-dev-kit-project-review-and-legacy-clean-up.md)** — **Coordinates With** — Broader cleanup program; file audit feeds prioritization.
 
 ---
 
@@ -149,8 +149,8 @@ Deliver [UXR-034](../../../fr-br/UXR-034-comprehensive-repository-file-level-aud
 
 ## References
 
-- [UXR-034](../../../fr-br/UXR-034-comprehensive-repository-file-level-audit-within-audited-directories.md)
-- [UXR-033](../../../fr-br/UXR-033-comprehensive-repository-directory-structure-audit.md)
+- [UXR-034](../../../fbu/UXR-034-comprehensive-repository-file-level-audit-within-audited-directories.md)
+- [UXR-033](../../../fbu/UXR-033-comprehensive-repository-directory-structure-audit.md)
 - [GOVERNANCE-REHOUSING-INVENTORY.md](../../../../governance/GOVERNANCE-REHOUSING-INVENTORY.md)
 - [KANBAN-REHOUSING-INVENTORY.md](../../../../governance/KANBAN-REHOUSING-INVENTORY.md)
 - [ADR-026](../../../../architecture/standards-and-adrs/ADR-026-git-internal-maintainer-kb-fr121.md)

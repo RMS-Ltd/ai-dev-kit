@@ -17,7 +17,7 @@ housekeeping_policy: keep
 **Estimated Effort:** Medium (validator + docs + tests)  
 **Created:** 2026-04-02  
 
-**Associated BR:** [BR-060](../../../fr-br/BR-060-rw-in-progress-task-gate-blocks-build-releases.md)
+**Associated BR:** [BR-060](../../../fbu/BR-060-rw-in-progress-task-gate-blocks-build-releases.md)
 
 ---
 
@@ -31,7 +31,7 @@ Fix the Release Workflow gating defect where full RW mode rejects non-perpetual 
 
 ## Input
 
-- [BR-060](../../../fr-br/BR-060-rw-in-progress-task-gate-blocks-build-releases.md)
+- [BR-060](../../../fbu/BR-060-rw-in-progress-task-gate-blocks-build-releases.md)
 - `packages/frameworks/workflow-mgt/scripts/validation/validate_rw_task_complete.py`
 - `packages/frameworks/workflow-mgt/scripts/validation/validate_rw_task_intent.py`
 - `rw-config.yaml`
@@ -64,5 +64,5 @@ Fix the Release Workflow gating defect where full RW mode rejects non-perpetual 
 
 ## References
 
-- **BR-060:** [BR-060-rw-in-progress-task-gate-blocks-build-releases.md](../../../fr-br/BR-060-rw-in-progress-task-gate-blocks-build-releases.md)
-- **Related:** [BR-056](../../../fr-br/BR-056-rw-ambiguous-task-identifier-typo-risk.md)
+- **BR-060:** [BR-060-rw-in-progress-task-gate-blocks-build-releases.md](../../../fbu/BR-060-rw-in-progress-task-gate-blocks-build-releases.md)
+- **Related:** [BR-056](../../../fbu/BR-056-rw-ambiguous-task-identifier-typo-risk.md)

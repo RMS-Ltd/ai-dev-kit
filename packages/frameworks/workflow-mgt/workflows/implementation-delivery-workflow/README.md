@@ -44,7 +44,7 @@ Full pipeline (plan → implement → release) via orchestrator:
 MWF E:S:T delivery
 ```
 
-MWF delegates to IPW (when no IPP) then IDW `--rw` with mode-gate pauses. Do **not** use `IPW --rw` — use MWF ([FR-124](../../../../../../docs/kanban/fr-br/FR-124-meta-workflow-orchestration-composite-workflow-chains.md)).
+MWF delegates to IPW (when no IPP) then IDW `--rw` with mode-gate pauses. Do **not** use `IPW --rw` — use MWF ([FR-124](../../../../../../docs/kanban/fbu/FR-124-meta-workflow-orchestration-composite-workflow-chains.md)).
 
 ## Documentation
 

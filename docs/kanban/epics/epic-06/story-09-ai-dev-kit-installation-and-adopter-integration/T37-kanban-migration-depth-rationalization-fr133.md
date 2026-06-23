@@ -18,8 +18,8 @@ housekeeping_policy: keep
 
 **North star:** Ship ADK with a **migration workflow as painless as possible** for mature-repo adopters.
 
-**Upstream:** [FR-133](../../../fr-br/FR-133-kanban-migration-depth-rationalization-adopter-guide.md)  
-**Related:** [FR-127](../../../fr-br/FR-127-agentic-kanban-migration-agent-replace-tool-pipeline.md) · [FR-135](../../../fr-br/FR-135-guided-install-orchestrator-zero-manual-steps.md) · [E06:S09:T38](T38-guided-install-orchestrator-fr135.md) (follow-on — orchestrator implements painless path) · [UXR-029](../../../fr-br/UXR-029-adk-install-path-experiment.md) · [E06:S09:T36](T36-adopter-path-selector-install-rc-uxr029.md) · [E06:S09:T31](T31-agentic-kanban-migration-agent-fr127.md) · [#52](https://github.com/RMS-Ltd/ai-dev-kit/issues/52)
+**Upstream:** [FR-133](../../../fbu/FR-133-kanban-migration-depth-rationalization-adopter-guide.md)  
+**Related:** [FR-127](../../../fbu/FR-127-agentic-kanban-migration-agent-replace-tool-pipeline.md) · [FR-135](../../../fbu/FR-135-guided-install-orchestrator-zero-manual-steps.md) · [E06:S09:T38](T38-guided-install-orchestrator-fr135.md) (follow-on — orchestrator implements painless path) · [UXR-029](../../../fbu/UXR-029-adk-install-path-experiment.md) · [E06:S09:T36](T36-adopter-path-selector-install-rc-uxr029.md) · [E06:S09:T31](T31-agentic-kanban-migration-agent-fr127.md) · [#52](https://github.com/RMS-Ltd/ai-dev-kit/issues/52)
 
 **Evidence:** SBL attempt 10 — painless bar met (0 ad-hoc scripts, RC PASS, first RW); phase-2 compare shows L3 optimization is **optional**, not required to ship.
 
@@ -33,7 +33,7 @@ Package the **default painless migration path** (Arm B: orchestrator → blind K
 
 ## Input
 
-- [FR-133](../../../fr-br/FR-133-kanban-migration-depth-rationalization-adopter-guide.md)
+- [FR-133](../../../fbu/FR-133-kanban-migration-depth-rationalization-adopter-guide.md)
 - **[IPP-E06S09T37](../../../../implementation-cycles/IPP-E06S09T37-kanban-migration-depth-rationalization-fr133.md)** — consolidated implementation plan (IPW 2026-06-15)
 - SBL pain catalogue: invented phases, collisions, unclear done-state (attempts 06–09); painless bar (attempt 10)
 - Existing surfaces: INSTALL Arm B ([T36](T36-adopter-path-selector-install-rc-uxr029.md)), KMA ([T31](T31-agentic-kanban-migration-agent-fr127.md))
@@ -41,7 +41,7 @@ Package the **default painless migration path** (Arm B: orchestrator → blind K
 ## References
 
 - [IPP-E06S09T37](../../../../implementation-cycles/IPP-E06S09T37-kanban-migration-depth-rationalization-fr133.md) — spec, tests, implementation plan (§1–§7)
-- [FR-133](../../../fr-br/FR-133-kanban-migration-depth-rationalization-adopter-guide.md)
+- [FR-133](../../../fbu/FR-133-kanban-migration-depth-rationalization-adopter-guide.md)
 - [E06:S09:T36](T36-adopter-path-selector-install-rc-uxr029.md) · [E06:S09:T31](T31-agentic-kanban-migration-agent-fr127.md)
 - [IPP-E06S09T31](../../../../implementation-cycles/IPP-E06S09T31-agentic-kanban-migration-agent-fr127.md)
 - [ADR-028](../../../../architecture/standards-and-adrs/ADR-028-agentic-kanban-migration-brownfield-fr127.md) · [ADR-030](../../../../architecture/standards-and-adrs/ADR-030-selective-adoption-three-path-model.md)

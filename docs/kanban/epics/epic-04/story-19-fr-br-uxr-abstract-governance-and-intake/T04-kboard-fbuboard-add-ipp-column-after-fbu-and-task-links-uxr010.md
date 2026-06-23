@@ -16,14 +16,14 @@ housekeeping_policy: keep
 **Last updated:** 2026-05-14  
 **Code:** E04S19T04
 
-**Upstream:** [UXR-010 - kboard add `IPP` column after FBU and task links](../../../fr-br/UXR-010-kboard-fbuboard-add-ipp-column-after-fbu-and-task-links.md)
+**Upstream:** [UXR-010 - kboard add `IPP` column after FBU and task links](../../../fbu/UXR-010-kboard-fbuboard-add-ipp-column-after-fbu-and-task-links.md)
 **IPP:** [IPP-E4S19T4-kboard-fbuboard-ipp-segment-after-fbu-task-links.md](../../../../implementation-cycles/IPP-E4S19T04-kboard-fbuboard-ipp-segment-after-fbu-task-links.md)
 
 ---
 
 ## Input
 
-- [UXR-010](../../../fr-br/UXR-010-kboard-fbuboard-add-ipp-column-after-fbu-and-task-links.md) requirements.
+- [UXR-010](../../../fbu/UXR-010-kboard-fbuboard-add-ipp-column-after-fbu-and-task-links.md) requirements.
 - Current row formats in `kboard.md`.
 - Existing planning artifact naming/placement conventions (`IPP-*` / legacy `IPW-*` where applicable).
 - [IPP-E4S19T4-kboard-fbuboard-ipp-segment-after-fbu-task-links.md](../../../../implementation-cycles/IPP-E4S19T04-kboard-fbuboard-ipp-segment-after-fbu-task-links.md)
@@ -72,7 +72,7 @@ Board rows currently do not consistently expose planning artifact presence after
 
 ## References
 
-- [UXR-010](../../../fr-br/UXR-010-kboard-fbuboard-add-ipp-column-after-fbu-and-task-links.md)
+- [UXR-010](../../../fbu/UXR-010-kboard-fbuboard-add-ipp-column-after-fbu-and-task-links.md)
 - [Story 019](../story-19-fr-br-uxr-abstract-governance-and-intake.md)
 - [kboard](../../../kboard.md)
 - [fbuboard](../../../kboard.md)

@@ -102,8 +102,8 @@ Every link between work items (BR/FR, Tasks, Documentation) must be bidirectiona
 
 **Related Work:**
 - **Task:** [E2:S01:T06 - Fix changelog validator ordering bug](../../../kanban/epics/epic-02/story-01-rw-agent-execution-and-docs.md)
-- **BR:** [BR-002: Changelog Validator Ordering Bug](../../../kanban/fr-br/BR-002-changelog-validator-ordering-bug.md)
-- **Documentation:** [BIDIRECTIONAL_WIRING_PRINCIPLE.md](../../../kanban/fr-br/BIDIRECTIONAL_WIRING_PRINCIPLE.md)
+- **BR:** [BR-002: Changelog Validator Ordering Bug](../../../kanban/fbu/BR-002-changelog-validator-ordering-bug.md)
+- **Documentation:** [BIDIRECTIONAL_WIRING_PRINCIPLE.md](../../../kanban/fbu/BIDIRECTIONAL_WIRING_PRINCIPLE.md)
 - **Epic/Story:** Epic 2, Story 1
 
 **Wiring:**
@@ -169,8 +169,8 @@ Every link between work items (BR/FR, Tasks, Documentation) must be bidirectiona
 
 ## References
 
-- [BIDIRECTIONAL_WIRING_PRINCIPLE.md](../../../kanban/fr-br/BIDIRECTIONAL_WIRING_PRINCIPLE.md) - Complete principle document
-- [BR-002: Changelog Validator Ordering Bug](../../../kanban/fr-br/BR-002-changelog-validator-ordering-bug.md) - Example BR
+- [BIDIRECTIONAL_WIRING_PRINCIPLE.md](../../../kanban/fbu/BIDIRECTIONAL_WIRING_PRINCIPLE.md) - Complete principle document
+- [BR-002: Changelog Validator Ordering Bug](../../../kanban/fbu/BR-002-changelog-validator-ordering-bug.md) - Example BR
 - [Task E2:S01:T06](../../../kanban/epics/epic-02/story-01-rw-agent-execution-and-docs.md) - Example task
 
 ---

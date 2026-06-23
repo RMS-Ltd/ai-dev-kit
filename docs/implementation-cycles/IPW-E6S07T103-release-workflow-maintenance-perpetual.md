@@ -18,7 +18,7 @@ housekeeping_policy: keep
 # E2:S16:T03 - Planning: Spec, Tests, Implementation Plan (IPW)
 
 **Host Task:** [`T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md`](../kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md) **(E2:S16:T03)**  
-**Planning for:** [FR-088 – Dedicated story for perpetual ongoing tasks](../kanban/fr-br/FR-088-dedicated-story-for-perpetual-ongoing-tasks.md) (supersedes FR-041); current policy thread [BR-067](../kanban/fr-br/BR-067-rw-first-doc-only-release-defaults-to-build-plus-one-not-plus-zero.md) (doc-init **+0** vs default **+1**)  
+**Planning for:** [FR-088 – Dedicated story for perpetual ongoing tasks](../kanban/fbu/FR-088-dedicated-story-for-perpetual-ongoing-tasks.md) (supersedes FR-041); current policy thread [BR-067](../kanban/fbu/BR-067-rw-first-doc-only-release-defaults-to-build-plus-one-not-plus-zero.md) (doc-init **+0** vs default **+1**)  
 **Status:** Deprecated (superseded by E2:S16:T03; canonical policy in IPP-E2S16T1)
 
 ---
@@ -31,15 +31,15 @@ Provide a **durable, rolling** implementation-planning package for **perpetual**
 
 ### 1.2 Functional requirements
 
-- **F1:** Maintain clear attribution rules so RW/framework changes land under **T103** when they are not owned by a feature task ([FR-041](../kanban/fr-br/FR-041-perpetual-task-for-release-workflow-maintenance.md)).
-- **F2:** Keep **validators** and **RW Step 9** guidance aligned with [dev-kit versioning policy](../architecture/standards-and-adrs/dev-kit-versioning-policy.md): doc-init **+0**, functional **+1+**, and explicit **`--doc-policy-zero`** when policy requires **+0** on an **existing** E/S/T anchor ([BR-067](../kanban/fr-br/BR-067-rw-first-doc-only-release-defaults-to-build-plus-one-not-plus-zero.md)).
+- **F1:** Maintain clear attribution rules so RW/framework changes land under **T103** when they are not owned by a feature task ([FR-041](../kanban/fbu/FR-041-perpetual-task-for-release-workflow-maintenance.md)).
+- **F2:** Keep **validators** and **RW Step 9** guidance aligned with [dev-kit versioning policy](../architecture/standards-and-adrs/dev-kit-versioning-policy.md): doc-init **+0**, functional **+1+**, and explicit **`--doc-policy-zero`** when policy requires **+0** on an **existing** E/S/T anchor ([BR-067](../kanban/fbu/BR-067-rw-first-doc-only-release-defaults-to-build-plus-one-not-plus-zero.md)).
 - **F3:** Preserve **traceability** from Kanban → validators → `.cursorrules` → packaged workflow docs for adopters.
 - **F4:** Record **consumer-facing** expectations where T103 is the anchor (e.g. **RW Step 12.5** / GitHub Releases per **FR-067 FU-2** as described in the host task).
 
 ### 1.3 Non-functional requirements
 
 - **N1:** Changes remain **reviewable** (tests + CLI validators); avoid silent behavior shifts in `validate_version_bump` / `validate_branch_context`.
-- **N2:** **No regression** against [BR-010](../kanban/fr-br/BR-010-rw-doc-init-detection-bug-story-task-docs-batch-creation.md) (batch story/task creation must not get incorrect **+0**).
+- **N2:** **No regression** against [BR-010](../kanban/fbu/BR-010-rw-doc-init-detection-bug-story-task-docs-batch-creation.md) (batch story/task creation must not get incorrect **+0**).
 
 ### 1.4 Out of scope
 
@@ -75,7 +75,7 @@ Provide a **durable, rolling** implementation-planning package for **perpetual**
 
 | Step | Action | Primary deliverable / path |
 |------|--------|----------------------------|
-| A1 | Publish a **small policy table** in [BR-067](../kanban/fr-br/BR-067-rw-first-doc-only-release-defaults-to-build-plus-one-not-plus-zero.md) or [versioning policy](../architecture/standards-and-adrs/dev-kit-versioning-policy.md): when **+0** vs **+1** vs **`--doc-policy-zero`**. | BR-067 AC1 |
+| A1 | Publish a **small policy table** in [BR-067](../kanban/fbu/BR-067-rw-first-doc-only-release-defaults-to-build-plus-one-not-plus-zero.md) or [versioning policy](../architecture/standards-and-adrs/dev-kit-versioning-policy.md): when **+0** vs **+1** vs **`--doc-policy-zero`**. | BR-067 AC1 |
 | A2 | Update **RW agent docs** (`release-workflow-agent-execution.md`, `.cursorrules`) so **RW -d** vs functional **+1** release paths are explicit. | BR-067 AC3 |
 | A3 | Add **BR-010** regression checklist to BR-067 verification or test doc. | BR-067 AC4 |
 
@@ -84,7 +84,7 @@ Provide a **durable, rolling** implementation-planning package for **perpetual**
 | Step | Action | Primary deliverable / path |
 |------|--------|----------------------------|
 | B1 | Short “when to use **`--doc-policy-zero`**” in [implementation-cycle-sop.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/implementation-cycle-sop.md) or RW KB, linked from T103. | Adopter clarity |
-| B2 | Refresh [FR-041](../kanban/fr-br/FR-041-perpetual-task-for-release-workflow-maintenance.md) related work if T103 backlog items close. | Traceability |
+| B2 | Refresh [FR-041](../kanban/fbu/FR-041-perpetual-task-for-release-workflow-maintenance.md) related work if T103 backlog items close. | Traceability |
 
 ### Wave C — Governance sync (optional)
 
@@ -97,7 +97,7 @@ Provide a **durable, rolling** implementation-planning package for **perpetual**
 
 ## 4. Success / verification criteria
 
-- [ ] [BR-067](../kanban/fr-br/BR-067-rw-first-doc-only-release-defaults-to-build-plus-one-not-plus-zero.md) acceptance criteria satisfied (policy table, RW docs, BR-010 regression).
+- [ ] [BR-067](../kanban/fbu/BR-067-rw-first-doc-only-release-defaults-to-build-plus-one-not-plus-zero.md) acceptance criteria satisfied (policy table, RW docs, BR-010 regression).
 - [ ] **`pytest`** `packages/frameworks/workflow-mgt/scripts/validation/test_validate_version_bump.py` passes after substantive validator edits.
 - [x] Bidirectional links: this IPW ↔ [T03 host task](../kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md) remain valid (relative paths).
 - [ ] No contradictory guidance between **versioning policy**, **validators**, and **RW** docs for **+0** / **+1**.
@@ -107,6 +107,6 @@ Provide a **durable, rolling** implementation-planning package for **perpetual**
 ## References
 
 - [Host task E2:S16:T03](../kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md)
-- [FR-088 – Dedicated story for perpetual ongoing tasks](../kanban/fr-br/FR-088-dedicated-story-for-perpetual-ongoing-tasks.md) (supersedes FR-041)
-- [BR-067 – BUILD +0 vs +1](../kanban/fr-br/BR-067-rw-first-doc-only-release-defaults-to-build-plus-one-not-plus-zero.md)
-- [BR-010 – inverse doc-init bug](../kanban/fr-br/BR-010-rw-doc-init-detection-bug-story-task-docs-batch-creation.md)
+- [FR-088 – Dedicated story for perpetual ongoing tasks](../kanban/fbu/FR-088-dedicated-story-for-perpetual-ongoing-tasks.md) (supersedes FR-041)
+- [BR-067 – BUILD +0 vs +1](../kanban/fbu/BR-067-rw-first-doc-only-release-defaults-to-build-plus-one-not-plus-zero.md)
+- [BR-010 – inverse doc-init bug](../kanban/fbu/BR-010-rw-doc-init-detection-bug-story-task-docs-batch-creation.md)

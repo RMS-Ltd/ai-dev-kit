@@ -53,7 +53,7 @@ policy_salience:
 
 **Status:** Active  
 **Version:** 1.0.0  
-**Task:** [E05:S02:T07](../../kanban/epics/epic-05/story-02-documentation-maintenance-framework/T07-unified-documentation-governance-strategy-fr139.md) · [FR-139](../../kanban/fr-br/FR-139-unified-documentation-governance-strategy.md)
+**Task:** [E05:S02:T07](../../kanban/epics/epic-05/story-02-documentation-maintenance-framework/T07-unified-documentation-governance-strategy-fr139.md) · [FR-139](../../kanban/fbu/FR-139-unified-documentation-governance-strategy.md)
 
 **Purpose:** Single **composition index** for documentation governance — links authoritative siblings; does not duplicate their substantive rules.
 
@@ -150,5 +150,5 @@ Extended planning ladder: [specification-and-planning-artifacts-policy.md](speci
 
 ## §7 — Related work
 
-- [FR-139](../../kanban/fr-br/FR-139-unified-documentation-governance-strategy.md) · [IPP-E05S02T07](../../implementation-cycles/IPP-E05S02T07-unified-documentation-governance-strategy-fr139.md)
-- [FR-101](../../kanban/fr-br/FR-101-consolidate-governance-under-docs-governance.md) — `docs/governance/` topology
+- [FR-139](../../kanban/fbu/FR-139-unified-documentation-governance-strategy.md) · [IPP-E05S02T07](../../implementation-cycles/IPP-E05S02T07-unified-documentation-governance-strategy-fr139.md)
+- [FR-101](../../kanban/fbu/FR-101-consolidate-governance-under-docs-governance.md) — `docs/governance/` topology

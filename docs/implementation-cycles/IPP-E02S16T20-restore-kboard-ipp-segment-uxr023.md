@@ -9,7 +9,7 @@ housekeeping_policy: keep
 # E02:S16:T20 — Planning: Restore kboard IPP segment (UXR-023)
 
 **Host Task:** [`T20-restore-kboard-ipp-segment-uxr023.md`](../kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T20-restore-kboard-ipp-segment-uxr023.md) **(E02:S16:T20)**  
-**Planning for:** [UXR-023 — kboard IPP segment regression](../kanban/fr-br/UXR-023-kboard-ipp-segment-regression.md)  
+**Planning for:** [UXR-023 — kboard IPP segment regression](../kanban/fbu/UXR-023-kboard-ipp-segment-regression.md)  
 **Status:** Published
 
 > **IPW (Implementation Planning Workflow):** Produced by IPW for E02:S16:T20. Bidirectional wiring to the host task `Input` and `References` is confirmed.
@@ -123,7 +123,7 @@ Governing docs: UXR-010, FR-090, IPP-E4S19T04. Restores existing contract; no ne
 
 ## References
 
-- [UXR-023](../kanban/fr-br/UXR-023-kboard-ipp-segment-regression.md)
-- [UXR-010](../kanban/fr-br/UXR-010-kboard-fbuboard-add-ipp-column-after-fbu-and-task-links.md)
+- [UXR-023](../kanban/fbu/UXR-023-kboard-ipp-segment-regression.md)
+- [UXR-010](../kanban/fbu/UXR-010-kboard-fbuboard-add-ipp-column-after-fbu-and-task-links.md)
 - [IPP-E4S19T04](IPP-E4S19T04-kboard-fbuboard-ipp-segment-after-fbu-task-links.md)
 - [T20 task doc](../kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T20-restore-kboard-ipp-segment-uxr023.md)

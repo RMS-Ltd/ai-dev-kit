@@ -9,7 +9,7 @@ housekeeping_policy: keep
 # E21:S03:T01 — Planning: Identify and extract translatable content (IPW)
 
 **Host Task:** [`T01-identify-and-extract-all-translatable-content.md`](../project-management/kanban/epics/epic-21/story-03-translation-and-localisation/T01-identify-and-extract-all-translatable-content.md) **(E21:S03:T01)**  
-**Planning for:** [FR-006 Phase 3+](../project-management/kanban/fr-br/FR-006-localization-language-selection-uk-us-english.md) · [ADR-024](../architecture/standards-and-adrs/ADR-024-i18n-framework-strategy.md)  
+**Planning for:** [FR-006 Phase 3+](../project-management/kanban/fbu/FR-006-localization-language-selection-uk-us-english.md) · [ADR-024](../architecture/standards-and-adrs/ADR-024-i18n-framework-strategy.md)  
 **Status:** Complete — released `v0.21.3.1+1` (`RW E21:S03:T01 --art`)  
 **Branch:** `epic/21-internationalisation-localisation`
 
@@ -160,4 +160,4 @@ See inventory doc §Handoffs. Call sites deferred to T03.
 
 - [translatable-content-inventory.md](../governance/standards/translatable-content-inventory.md)
 - [IPP-E21S02T06](IPP-E21S02T06-locale-key-system.md)
-- [FR-006](../project-management/kanban/fr-br/FR-006-localization-language-selection-uk-us-english.md)
+- [FR-006](../project-management/kanban/fbu/FR-006-localization-language-selection-uk-us-english.md)

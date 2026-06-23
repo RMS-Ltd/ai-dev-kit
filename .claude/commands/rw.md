@@ -170,7 +170,7 @@ After all six gates pass, create a TODO list for all steps (`rw-step-1` through 
 | 12.5 GitHub Release | ❌* | ❌ | ❌* |
 | 13 Housekeeping | ✅ | ✅ | ✅ |
 
-\* Step 12 / 12.5 run **only** when the user typed **`--push`** in the RW trigger ([UXR-024](docs/kanban/fr-br/UXR-024-rw-local-release-default-no-push-batch-operator-push.md)). Default full RW / `RW -k` complete **locally** — report `RW COMPLETE (local)`.
+\* Step 12 / 12.5 run **only** when the user typed **`--push`** in the RW trigger ([UXR-024](docs/kanban/fbu/UXR-024-rw-local-release-default-no-push-batch-operator-push.md)). Default full RW / `RW -k` complete **locally** — report `RW COMPLETE (local)`.
 
 ### Step 2 — Bump Version
 

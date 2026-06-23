@@ -9,7 +9,7 @@ housekeeping_policy: keep
 # E03:S02:T15 — Planning: SemVer external `+BUILD` redundancy (task_touch) (IPW)
 
 **Host Task:** [`T15-semver-external-build-metadata-redundancy-uxr031.md`](../kanban/epics/epic-03/story-02-versioning-cookbook-and-examples/T15-semver-external-build-metadata-redundancy-uxr031.md) **(E03:S02:T15)**  
-**Planning for:** [UXR-031](../kanban/fr-br/UXR-031-semver-plusbuild-redundancy-in-task-touch.md)  
+**Planning for:** [UXR-031](../kanban/fbu/UXR-031-semver-plusbuild-redundancy-in-task-touch.md)  
 **Status:** Complete
 
 ---
@@ -193,8 +193,8 @@ Establish an explicit, non-ambiguous outward-facing SemVer UX policy for `task_t
 
 - `rw-config.yaml` (`semver_mapping_strategy: task_touch`)
 - `packages/frameworks/workflow-mgt/scripts/version/semver_converter.py` (task_touch mapping; `get_rw_tag_info` primary tag core-only)
-- UXR-031: `docs/kanban/fr-br/UXR-031-semver-plusbuild-redundancy-in-task-touch.md`
-- FR-045: `docs/kanban/fr-br/FR-045-adr-002-task-touch-derived-mapping.md`
-- BR-061: `docs/kanban/fr-br/BR-061-semver-task-touch-counter-increments-too-often.md`
+- UXR-031: `docs/kanban/fbu/UXR-031-semver-plusbuild-redundancy-in-task-touch.md`
+- FR-045: `docs/kanban/fbu/FR-045-adr-002-task-touch-derived-mapping.md`
+- BR-061: `docs/kanban/fbu/BR-061-semver-task-touch-counter-increments-too-often.md`
 - Versioning policy: `docs/governance/standards/dev-kit-versioning-policy.md`
 

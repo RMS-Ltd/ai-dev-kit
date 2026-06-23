@@ -17,7 +17,7 @@ housekeeping_policy: keep
 **Version Anchor:** v0.3.2.14+2
 **Code:** E03S02T14
 
-**Associated FR/BR:** [FR-120](../../../fr-br/FR-120-semver-allocation-authority-transactional-mapping-black-box.md) · [FR-045](../../../fr-br/FR-045-adr-002-task-touch-derived-mapping.md) · [FR-046](../../../fr-br/FR-046-rw-semver-tag-task-touch-mode.md) · [FR-116](../../../fr-br/FR-116-semver-registry-structured-store-shared-release-metadata.md) · [BR-061](../../../fr-br/BR-061-semver-task-touch-counter-increments-too-often.md) · [BR-073](../../../fr-br/BR-073-semver-task-touch-collision-retrospective-fix.md) · [BR-097](../../../fr-br/BR-097-rw-agent-reuses-tagged-build-and-force-moves-release-tags.md)
+**Associated FR/BR:** [FR-120](../../../fbu/FR-120-semver-allocation-authority-transactional-mapping-black-box.md) · [FR-045](../../../fbu/FR-045-adr-002-task-touch-derived-mapping.md) · [FR-046](../../../fbu/FR-046-rw-semver-tag-task-touch-mode.md) · [FR-116](../../../fbu/FR-116-semver-registry-structured-store-shared-release-metadata.md) · [BR-061](../../../fbu/BR-061-semver-task-touch-counter-increments-too-often.md) · [BR-073](../../../fbu/BR-073-semver-task-touch-collision-retrospective-fix.md) · [BR-097](../../../fbu/BR-097-rw-agent-reuses-tagged-build-and-force-moves-release-tags.md)
 
 Publication Status: NOT_APPLICABLE
 
@@ -29,13 +29,13 @@ Design and implement a **SemVer Allocation Authority (SAA)** — black-box `inte
 
 **Operator direction (2026-06-09):** SAA is the chosen architecture. SQLite owns counters, sequence advancement, and mapping insert — not just post-hoc uniqueness checks on Python-computed SemVer.
 
-Motivation: repeated collision fixes ([T12](T12-implement-task-touch-semver-mapping-mode.md), [FR-116](T13-semver-registry-structured-store-shared-release-metadata-fr116.md)) treated symptoms; operator diagnosis ([FR-120](../../../fr-br/FR-120-semver-allocation-authority-transactional-mapping-black-box.md)) identifies **allocation architecture** as root cause.
+Motivation: repeated collision fixes ([T12](T12-implement-task-touch-semver-mapping-mode.md), [FR-116](T13-semver-registry-structured-store-shared-release-metadata-fr116.md)) treated symptoms; operator diagnosis ([FR-120](../../../fbu/FR-120-semver-allocation-authority-transactional-mapping-black-box.md)) identifies **allocation architecture** as root cause.
 
 ---
 
 ## Input
 
-- [FR-120](../../../fr-br/FR-120-semver-allocation-authority-transactional-mapping-black-box.md) — requirements, alternatives, acceptance criteria
+- [FR-120](../../../fbu/FR-120-semver-allocation-authority-transactional-mapping-black-box.md) — requirements, alternatives, acceptance criteria
 - [ADR-002](../../../../architecture/standards-and-adrs/ADR-002-task-touch-derived-mapping.md) — semantic baseline (PATCH allocator)
 - [T12](T12-implement-task-touch-semver-mapping-mode.md) · [T13](T13-semver-registry-structured-store-shared-release-metadata-fr116.md) — prior waves
 - [IPP-E03S02T12](../../../../implementation-cycles/IPP-E03S02T12-task-touch-semver-collision-hardening.md) — lessons learned
@@ -84,7 +84,7 @@ Motivation: repeated collision fixes ([T12](T12-implement-task-touch-semver-mapp
 
 ## References
 
-- [FR-120](../../../fr-br/FR-120-semver-allocation-authority-transactional-mapping-black-box.md)
+- [FR-120](../../../fbu/FR-120-semver-allocation-authority-transactional-mapping-black-box.md)
 - [ADR-003](../../../../architecture/standards-and-adrs/ADR-003-semver-allocation-authority.md)
 - [dev-kit-versioning-policy.md](../../../../governance/standards/dev-kit-versioning-policy.md)
 - [Operator verification AC7](../../../../maintenance/saa-operator-verification-e03s02t14.md)

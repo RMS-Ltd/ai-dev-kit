@@ -9,7 +9,7 @@ housekeeping_policy: keep
 # E4:S06:T01 — Planning: FR-005 canonical EST template system closure (IPW)
 
 **Host Task:** [`T01-canonical-est-template-closure-fr005.md`](../kanban/epics/epic-04/story-06-comprehensive-canonical-est-template-system/T01-canonical-est-template-closure-fr005.md) **(E4:S06:T01)**  
-**Planning for:** [FR-005](../kanban/fr-br/FR-005-systematic-canonical-epics-stories-tasks-templates.md)  
+**Planning for:** [FR-005](../kanban/fbu/FR-005-systematic-canonical-epics-stories-tasks-templates.md)  
 **Status:** Approved (planning complete — implementation blocked until explicit authorize)
 
 > **IPW:** Closure and hygiene for FR-005. story-006 (T00–T10) already delivered the template corpus; this IPP plans audit, kanban/FR reconciliation, and RW — not re-generation of templates.
@@ -48,7 +48,7 @@ housekeeping_policy: keep
 
 ### 2.1 Goal
 
-Close [FR-005](../kanban/fr-br/FR-005-systematic-canonical-epics-stories-tasks-templates.md) by proving story-006 delivery satisfies FR intent, eliminating board/FR drift (T01 TODO on `kboard` while story marks T01 COMPLETE), and leaving a discrete task + audit trail for maintainers.
+Close [FR-005](../kanban/fbu/FR-005-systematic-canonical-epics-stories-tasks-templates.md) by proving story-006 delivery satisfies FR intent, eliminating board/FR drift (T01 TODO on `kboard` while story marks T01 COMPLETE), and leaving a discrete task + audit trail for maintainers.
 
 ### 2.2 Specification mapping
 
@@ -70,7 +70,7 @@ Close [FR-005](../kanban/fr-br/FR-005-systematic-canonical-epics-stories-tasks-t
 
 - **Current task status:** `TODO` (discrete closure task).
 - **Step 1 (implementation):** `TODO → IN PROGRESS` on first non-planning edit.
-- **COMPLETE:** After audit + reconciliation + user verification + **RW E4:S06:T01** with `✅ COMPLETE (v{version})` and kboard sync per [FR-077](../kanban/fr-br/FR-077-ipw-built-task-status-transition-and-kboard-sync.md).
+- **COMPLETE:** After audit + reconciliation + user verification + **RW E4:S06:T01** with `✅ COMPLETE (v{version})` and kboard sync per [FR-077](../kanban/fbu/FR-077-ipw-built-task-status-transition-and-kboard-sync.md).
 
 ### 2.5 ADR necessity decision (IPW Phase 5.0)
 
@@ -136,7 +136,7 @@ Criteria: [`ipw-adr-necessity-checklist.md`](../architecture/standards-and-adrs/
 
 **UPDATE (implementation):**
 
-- `docs/kanban/fr-br/FR-005-systematic-canonical-epics-stories-tasks-templates.md`
+- `docs/kanban/fbu/FR-005-systematic-canonical-epics-stories-tasks-templates.md`
 - `docs/kanban/epics/epic-04/story-06-comprehensive-canonical-est-template-system.md` (checklist link)
 - `docs/kanban/kboard.md`, `kanban-completed.md`, `intake-completed.md`
 
@@ -218,10 +218,10 @@ Criteria: [`ipw-adr-necessity-checklist.md`](../architecture/standards-and-adrs/
 
 ## References
 
-- [FR-005](../kanban/fr-br/FR-005-systematic-canonical-epics-stories-tasks-templates.md)
+- [FR-005](../kanban/fbu/FR-005-systematic-canonical-epics-stories-tasks-templates.md)
 - [story-006](../kanban/epics/epic-04/story-06-comprehensive-canonical-est-template-system.md)
 - [T01 host task](../kanban/epics/epic-04/story-06-comprehensive-canonical-est-template-system/T01-canonical-est-template-closure-fr005.md)
 - [COMPREHENSIVE_CANONICAL_EST_STRUCTURE.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/kanban/templates/COMPREHENSIVE_CANONICAL_EST_STRUCTURE.md)
 - [ipw-adr-necessity-checklist.md](../architecture/standards-and-adrs/ipw-adr-necessity-checklist.md)
-- [FR-042](../kanban/fr-br/FR-042-implementation-planning-workflow-ipw.md)
-- [FR-077](../kanban/fr-br/FR-077-ipw-built-task-status-transition-and-kboard-sync.md)
+- [FR-042](../kanban/fbu/FR-042-implementation-planning-workflow-ipw.md)
+- [FR-077](../kanban/fbu/FR-077-ipw-built-task-status-transition-and-kboard-sync.md)

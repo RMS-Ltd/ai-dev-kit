@@ -150,7 +150,7 @@ Every active MoSCOW bullet on `kboard.md` must place **exactly one Set A (emoji)
 - **{E:S:T or FR/BR/UXR-id}** – {title} - {emoji} {STATUS} (notes…) | … | Last modified: … UTC
 ```
 
-- **Primary (boards):** Use the mapping in [UXR-012](fr-br/UXR-012-kanban-fbu-state-icons-for-moscow-rows.md) (Set A) plus task extensions in [UXR-019](fr-br/UXR-019-kanban-task-waiting-in-review-state-icons.md). **Fallback (Set B)** is for plain-text exports only — do not mix Set B into repo board rows by default.
+- **Primary (boards):** Use the mapping in [UXR-012](fbu/UXR-012-kanban-fbu-state-icons-for-moscow-rows.md) (Set A) plus task extensions in [UXR-019](fbu/UXR-019-kanban-task-waiting-in-review-state-icons.md). **Fallback (Set B)** is for plain-text exports only — do not mix Set B into repo board rows by default.
 
 - **Task lifecycle nuance (UXR-019):** Use `IN REVIEW` when implementation is done and peer/maintainer review is in flight. Use `WAITING` when blocked on an **external gate** (GitHub install sign-off, adopter replay, PO acceptance) — not for active coding (`IN PROGRESS`) or hard blockers (`BLOCKED`).
 
@@ -279,7 +279,7 @@ The **FR/BR/UXR Prioritization Board** (`kboard.md`) provides centralized visibi
 
 ### Integration
 
-- Links to individual FR/BR/UXR documents in `/fr-br/` directory
+- Links to individual FR/BR/UXR documents in `/fbu/` directory
 - Cross-references to associated Kanban tasks when created
 - Completed items move to `intake-completed.md`
 

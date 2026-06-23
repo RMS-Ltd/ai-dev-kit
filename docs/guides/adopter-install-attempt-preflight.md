@@ -9,7 +9,7 @@ housekeeping_policy: keep
 # Adopter install attempt preflight
 
 **Purpose:** Shared checklist before **SBL attempt 10**, **fynd.deals attempt 1**, or **Confidentia attempt 1**.  
-**Programme:** [UXR-029](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/kanban/fr-br/UXR-029-adk-install-path-experiment.md) · [T36](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T36-adopter-path-selector-install-rc-uxr029.md) · [#52](https://github.com/RMS-Ltd/ai-dev-kit/issues/52)
+**Programme:** [UXR-029](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/kanban/fbu/UXR-029-adk-install-path-experiment.md) · [T36](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T36-adopter-path-selector-install-rc-uxr029.md) · [#52](https://github.com/RMS-Ltd/ai-dev-kit/issues/52)
 
 ---
 

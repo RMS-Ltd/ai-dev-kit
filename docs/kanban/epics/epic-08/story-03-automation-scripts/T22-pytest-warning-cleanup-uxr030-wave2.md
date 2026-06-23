@@ -17,9 +17,9 @@ housekeeping_policy: keep
 **Version Anchor:** v0.8.3.22+2  
 **Code:** E08S03T22
 
-**Upstream:** [UXR-030 Wave 2 — Pytest warning noise](../../../fr-br/UXR-030-default-pytest-cli-coverage-misleading-zero-percent.md#wave-2--pytest-warning-noise-2026-06-15)  
+**Upstream:** [UXR-030 Wave 2 — Pytest warning noise](../../../fbu/UXR-030-default-pytest-cli-coverage-misleading-zero-percent.md#wave-2--pytest-warning-noise-2026-06-15)  
 **Planning:** [IPP-E08S03T22-pytest-warning-cleanup-uxr030-wave2.md](../../../../implementation-cycles/IPP-E08S03T22-pytest-warning-cleanup-uxr030-wave2.md)  
-**Related:** [E08:S03:T21](T21-cli-pytest-coverage-dedicated-target-uxr030.md) · [BR-081](../../../fr-br/BR-081-kanban-install-datetime-utcnow-deprecated.md) · [BR-103](../../../fr-br/BR-103-workflow-scripts-pytest-tuple-return-false-green.md)
+**Related:** [E08:S03:T21](T21-cli-pytest-coverage-dedicated-target-uxr030.md) · [BR-081](../../../fbu/BR-081-kanban-install-datetime-utcnow-deprecated.md) · [BR-103](../../../fbu/BR-103-workflow-scripts-pytest-tuple-return-false-green.md)
 
 Publication Status: NOT_APPLICABLE
 
@@ -33,7 +33,7 @@ Eliminate pytest warning noise from a green full-suite run: `datetime.utcnow()` 
 
 ## Input
 
-- [UXR-030 Wave 2](../../../fr-br/UXR-030-default-pytest-cli-coverage-misleading-zero-percent.md)
+- [UXR-030 Wave 2](../../../fbu/UXR-030-default-pytest-cli-coverage-misleading-zero-percent.md)
 - [IPP-E08S03T22](../../../../implementation-cycles/IPP-E08S03T22-pytest-warning-cleanup-uxr030-wave2.md)
 - [`cli/logging.py`](../../../../../cli/logging.py)
 - [`tests/test_rw_performance.py`](../../../../../tests/test_rw_performance.py)
@@ -62,12 +62,12 @@ Eliminate pytest warning noise from a green full-suite run: `datetime.utcnow()` 
 
 ## Associated User Experience Research
 
-- [UXR-030 — Default pytest CLI coverage misleading 0% (Wave 2)](../../../fr-br/UXR-030-default-pytest-cli-coverage-misleading-zero-percent.md)
+- [UXR-030 — Default pytest CLI coverage misleading 0% (Wave 2)](../../../fbu/UXR-030-default-pytest-cli-coverage-misleading-zero-percent.md)
 
 ---
 
 ## References
 
 - [E08:S03:T21 — CLI pytest coverage dedicated target](T21-cli-pytest-coverage-dedicated-target-uxr030.md)
-- [BR-081 — Kanban install utcnow deprecation](../../../fr-br/BR-081-kanban-install-datetime-utcnow-deprecated.md)
-- [BR-103 — Workflow-scripts pytest false-green](../../../fr-br/BR-103-workflow-scripts-pytest-tuple-return-false-green.md)
+- [BR-081 — Kanban install utcnow deprecation](../../../fbu/BR-081-kanban-install-datetime-utcnow-deprecated.md)
+- [BR-103 — Workflow-scripts pytest false-green](../../../fbu/BR-103-workflow-scripts-pytest-tuple-return-false-green.md)

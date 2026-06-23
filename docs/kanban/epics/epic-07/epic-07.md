@@ -225,7 +225,7 @@ This epic works in conjunction with Epic 4 (Kanban Framework) to provide a compl
 
 - [ ] **E07:S05:T01 – UXR-001 intake and synthesis**  
   - Intake UXR-001 findings, extract user pain points, and summarize migration UX requirements.  
-  - **Linked UXR:** `docs/kanban/fr-br/UXR-001-migration-user-experience-research.md` (GitHub issue #4).  
+  - **Linked UXR:** `docs/kanban/fbu/UXR-001-migration-user-experience-research.md` (GitHub issue #4).  
   - **Acceptance:** Findings synthesized; UX requirements fed into Epic 4 Story 7 tasks; recap documented in this story.
 
 > Full story: `docs/kanban/epics/epic-07/story-05-migration-uxr-research.md`

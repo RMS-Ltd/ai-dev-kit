@@ -9,7 +9,7 @@ housekeeping_policy: keep
 # E06:S09:T39 — Planning: Guided KMA Target Structure Pack (IPW)
 
 **Host Task:** [`T39-guided-kma-target-structure-pack-fr136.md`](../kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T39-guided-kma-target-structure-pack-fr136.md) **(E06:S09:T39)**  
-**Planning for:** [FR-136](../kanban/fr-br/FR-136-guided-kma-target-structure-pack.md) · SBL attempt 11 TSP programme · [#85](https://github.com/RMS-Ltd/ai-dev-kit/issues/85)  
+**Planning for:** [FR-136](../kanban/fbu/FR-136-guided-kma-target-structure-pack.md) · SBL attempt 11 TSP programme · [#85](https://github.com/RMS-Ltd/ai-dev-kit/issues/85)  
 **Status:** Draft
 
 ---
@@ -243,7 +243,7 @@ Extend the Kanban Migration Agent with **guided** and **score** modes so mature 
 - `packages/frameworks/kanban/KB/Documentation/Developer_Docs/kanban-migration-agent-execution.md`
 - `.claude/commands/kma.md`
 - `packages/frameworks/kanban/README.md` (guided mode pointer)
-- `docs/kanban/fr-br/FR-136-guided-kma-target-structure-pack.md`
+- `docs/kanban/fbu/FR-136-guided-kma-target-structure-pack.md`
 - `docs/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T39-guided-kma-target-structure-pack-fr136.md`
 - `docs/kanban/kboard.md` (RW Step 7)
 - `greenfield-install/` mirror (sync)
@@ -289,7 +289,7 @@ Extend the Kanban Migration Agent with **guided** and **score** modes so mature 
 | D-U5 | `.claude/commands/kma.md` | Mode flags; TSP load order | RF1, Step 11 |
 | D-U6 | `packages/frameworks/kanban/scripts/kma_ingest.py` | Dedup inventory flags/output | RF6, Step 7 |
 | D-U7 | `packages/frameworks/kanban/README.md` | Pointer to reference pack + guided mode | Step 10 |
-| D-U8 | `docs/kanban/fr-br/FR-136-guided-kma-target-structure-pack.md` | Status → IMPLEMENTED when ACs met; evidence links | Step 13 |
+| D-U8 | `docs/kanban/fbu/FR-136-guided-kma-target-structure-pack.md` | Status → IMPLEMENTED when ACs met; evidence links | Step 13 |
 | D-U9 | `docs/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T39-*.md` | Status, AC checkboxes, version marker, IPP link | Steps 1, 17 |
 | D-U10 | `docs/kanban/kboard.md` | T39 row status + IPP link | RW Step 7 |
 
@@ -353,13 +353,13 @@ Extend the Kanban Migration Agent with **guided** and **score** modes so mature 
 
 ## References
 
-- [FR-136](../kanban/fr-br/FR-136-guided-kma-target-structure-pack.md)
+- [FR-136](../kanban/fbu/FR-136-guided-kma-target-structure-pack.md)
 - [E06:S09:T39 task doc](../kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T39-guided-kma-target-structure-pack-fr136.md)
-- [FR-127](../kanban/fr-br/FR-127-agentic-kanban-migration-agent-replace-tool-pipeline.md) · [ADR-028](../architecture/standards-and-adrs/ADR-028-agentic-kanban-migration-brownfield-fr127.md)
+- [FR-127](../kanban/fbu/FR-127-agentic-kanban-migration-agent-replace-tool-pipeline.md) · [ADR-028](../architecture/standards-and-adrs/ADR-028-agentic-kanban-migration-brownfield-fr127.md)
 - [IPP-E06S09T31](IPP-E06S09T31-agentic-kanban-migration-agent-fr127.md) (blind KMA prior art)
 - [KMA-METHODS](../../adk-install-into-sbl/kanban-reference/KMA-METHODS.md) · [SCORING-RUBRIC.yaml](../../adk-install-into-sbl/kanban-reference/SCORING-RUBRIC.yaml) · [TARGET-EST-TREE.md](../../adk-install-into-sbl/kanban-reference/TARGET-EST-TREE.md)
 - [FB-ADK-GUIDED-KMA-TARGET-STRUCTURE-PACK.md](../../adk-install-into-sbl/attempt-11/feedback-package/FB-ADK-GUIDED-KMA-TARGET-STRUCTURE-PACK.md)
 - [kanban-migration-agent-execution.md](../../packages/frameworks/kanban/KB/Documentation/Developer_Docs/kanban-migration-agent-execution.md)
 - [kma-agent-guardrails.yaml](../../packages/frameworks/kanban/manifests/kma-agent-guardrails.yaml)
 - [ipw-adr-necessity-checklist.md](../architecture/standards-and-adrs/ipw-adr-necessity-checklist.md)
-- [FR-110](../kanban/fr-br/FR-110-lean-adopter-distribution-footprint-and-vendor-bundle.md) (greenfield sync)
+- [FR-110](../kanban/fbu/FR-110-lean-adopter-distribution-footprint-and-vendor-bundle.md) (greenfield sync)

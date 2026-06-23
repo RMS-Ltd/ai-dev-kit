@@ -17,7 +17,7 @@ housekeeping_policy: keep
 
 **Implementation note:** Released **v0.6.7.111+1** (SemVer **v0.4.721+1**): CLI install JSON event contract, strict option, `ai-dev-kit logs validate-install-log`, tests/docs. Verification closure recorded in **v0.6.7.111+2** (SemVer **v0.4.722+2**).
 
-**Upstream:** [FR-078 - Comprehensive install event-contract logging quality](../../../fr-br/FR-078-comprehensive-install-event-contract-logging-and-feedback-quality.md)
+**Upstream:** [FR-078 - Comprehensive install event-contract logging quality](../../../fbu/FR-078-comprehensive-install-event-contract-logging-and-feedback-quality.md)
 
 ---
 
@@ -63,9 +63,9 @@ housekeeping_policy: keep
 
 ## References
 
-- [FR-047](../../../fr-br/FR-047-install-logging-for-framework-dependencies.md)
-- [FR-059](../../../fr-br/FR-059-enhanced-workflow-logging-system.md)
-- [FR-079](../../../fr-br/FR-079-install-feedback-submission-path-and-governance.md)
+- [FR-047](../../../fbu/FR-047-install-logging-for-framework-dependencies.md)
+- [FR-059](../../../fbu/FR-059-enhanced-workflow-logging-system.md)
+- [FR-079](../../../fbu/FR-079-install-feedback-submission-path-and-governance.md)
 - [ICW-E6S7T111-Specification](../../../../implementation-cycles/ICW-E6S07T111-implementation-plan.md)
 - [ICW-E6S7T111-Test-Design](../../../../implementation-cycles/ICW-E6S07T111-implementation-plan.md)
 - [ICW-E6S7T111-Implementation-Plan](../../../../implementation-cycles/ICW-E6S07T111-implementation-plan.md)

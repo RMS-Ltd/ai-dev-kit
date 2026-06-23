@@ -9,7 +9,7 @@ housekeeping_policy: keep
 # E4:S13:T07 — Planning: Kanban and FBU state icons for MoSCOW rows (IPW)
 
 **Host Task:** [T07-kanban-fbu-state-icons-for-moscow-rows-uxr012.md](../kanban/epics/epic-04/story-13-kanban-board-moscow-prioritized-task-view/T07-kanban-fbu-state-icons-for-moscow-rows-uxr012.md) **(E4:S13:T07)**  
-**Planning for:** [UXR-012](../kanban/fr-br/UXR-012-kanban-fbu-state-icons-for-moscow-rows.md)  
+**Planning for:** [UXR-012](../kanban/fbu/UXR-012-kanban-fbu-state-icons-for-moscow-rows.md)  
 **Status:** Approved (implementation executed 2026-05-20)
 
 ---
@@ -152,7 +152,7 @@ Requirements RF1–RF8 are implemented by `state_icons.py` (parse + inject), `ba
 
 ## References
 
-- [UXR-012](../kanban/fr-br/UXR-012-kanban-fbu-state-icons-for-moscow-rows.md)
-- [FR-097](../kanban/fr-br/FR-097-board-stamp-authority-and-forensic-timestamp-recovery.md)
-- [FR-077](../kanban/fr-br/FR-077-ipw-built-task-status-transition-and-kboard-sync.md)
+- [UXR-012](../kanban/fbu/UXR-012-kanban-fbu-state-icons-for-moscow-rows.md)
+- [FR-097](../kanban/fbu/FR-097-board-stamp-authority-and-forensic-timestamp-recovery.md)
+- [FR-077](../kanban/fbu/FR-077-ipw-built-task-status-transition-and-kboard-sync.md)
 - [board-stamp-authority.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/board-stamp-authority.md)

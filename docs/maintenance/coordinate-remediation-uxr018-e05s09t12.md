@@ -18,7 +18,7 @@ housekeeping_policy: keep
 | Surface | ID |
 | ------- | -- |
 | **Primary task** | **E05:S09:T12** — [task doc](../kanban/epics/epic-05/story-09-docusaurus-documentation-portal/T12-changelog-directory-consolidation-uxr018.md) |
-| **UXR** | [UXR-018](../kanban/fr-br/UXR-018-changelog-directory-consolidation.md) |
+| **UXR** | [UXR-018](../kanban/fbu/UXR-018-changelog-directory-consolidation.md) |
 | **IPP** | [IPP-E5S9T12](../implementation-cycles/IPP-E05S09T12-changelog-directory-consolidation.md) |
 | **Semantic version anchor** | **v0.5.9.12+2** (portal story) |
 

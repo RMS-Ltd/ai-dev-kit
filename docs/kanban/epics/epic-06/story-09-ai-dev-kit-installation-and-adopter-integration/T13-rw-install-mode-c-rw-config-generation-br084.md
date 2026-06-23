@@ -14,8 +14,8 @@ housekeeping_policy: keep
 **Created:** 2026-06-03  
 **Code:** E06S09T13
 
-**Upstream:** [BR-084](../../../fr-br/BR-084-rw-install-mode-c-missing-task-doc-pattern.md) · [GitHub #16](https://github.com/RMS-Ltd/ai-dev-kit/issues/16)  
-**Related:** [BR-083](../../../fr-br/BR-083-rw-install-default-patterns-mismatch-fresh-kanban-layout.md) · [#15](https://github.com/RMS-Ltd/ai-dev-kit/issues/15) (E06:S09:T12)
+**Upstream:** [BR-084](../../../fbu/BR-084-rw-install-mode-c-missing-task-doc-pattern.md) · [GitHub #16](https://github.com/RMS-Ltd/ai-dev-kit/issues/16)  
+**Related:** [BR-083](../../../fbu/BR-083-rw-install-default-patterns-mismatch-fresh-kanban-layout.md) · [#15](https://github.com/RMS-Ltd/ai-dev-kit/issues/15) (E06:S09:T12)
 
 ## Version Anchor
 
@@ -31,7 +31,7 @@ Fix `install_release_workflow.py` mode C so generated `rw-config.yaml` includes 
 
 ## Input
 
-- [BR-084](../../../fr-br/BR-084-rw-install-mode-c-missing-task-doc-pattern.md)
+- [BR-084](../../../fbu/BR-084-rw-install-mode-c-missing-task-doc-pattern.md)
 - [GitHub #16](https://github.com/RMS-Ltd/ai-dev-kit/issues/16)
 - **IPW:** [IPP-E6S9T13-br084-rw-config-generation.md](../../../../implementation-cycles/IPP-E06S09T13-br084-rw-config-generation.md) — **Publication Status: PUBLISHED**
 - `generate_rw_config_yaml`, `collect_config_interactive`, `prompt_pattern_with_validation`
@@ -40,7 +40,7 @@ Fix `install_release_workflow.py` mode C so generated `rw-config.yaml` includes 
 
 ## Deliverable
 
-- `generate_rw_config_yaml` emits `task_doc_pattern` (+ optional `fr_br_root`) for kanban installs
+- `generate_rw_config_yaml` emits `task_doc_pattern` (+ optional `fbu_root`) for kanban installs
 - Layout detection or safe defaults aligned with fresh kanban output
 - Guardrails when pattern match count is 0
 
@@ -49,7 +49,7 @@ Fix `install_release_workflow.py` mode C so generated `rw-config.yaml` includes 
 ## Acceptance Criteria
 
 - [x] Mode C after fresh kanban: epic pattern matches `epics/epic-01/epic-01.md` without manual edit (T12 detection + strict zero-match).
-- [x] Generated config includes `task_doc_pattern` and `fr_br_root` when `fr-br/` exists.
+- [x] Generated config includes `task_doc_pattern` and `fbu_root` when `fbu/` exists.
 - [x] Integration test: temp repo fresh layout + `generate_rw_config_yaml` (epic glob ≥1).
 
 ## Implementation notes (2026-06-03)
@@ -61,6 +61,6 @@ Fix `install_release_workflow.py` mode C so generated `rw-config.yaml` includes 
 
 ## Links
 
-- [BR-084](../../../fr-br/BR-084-rw-install-mode-c-missing-task-doc-pattern.md)
+- [BR-084](../../../fbu/BR-084-rw-install-mode-c-missing-task-doc-pattern.md)
 - [IPP-E6S9T13](../../../../implementation-cycles/IPP-E06S09T13-br084-rw-config-generation.md)
 - [Story 009](../story-09-ai-dev-kit-installation-and-adopter-integration.md)

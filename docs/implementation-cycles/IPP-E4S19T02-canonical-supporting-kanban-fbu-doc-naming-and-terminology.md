@@ -11,7 +11,7 @@ housekeeping_policy: keep
 > **Successor planning artifact:** [`IPP-E4S19T6-fbu-meta-normalization-and-intake-governance.md`](IPP-E4S19T06-fbu-meta-normalization-and-intake-governance.md) — T02 scope is consolidated into the [`E4:S19:T06`](../kanban/epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T06-fbu-meta-normalization-and-intake-governance-uxr008-fr086-fr073.md) meta-task with historical content preserved below for traceability.
 
 **Host Task:** [`T02-canonical-supporting-kanban-fbu-doc-naming-and-fbu-collective-terminology-fr086.md`](../kanban/epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T02-canonical-supporting-kanban-fbu-doc-naming-and-fbu-collective-terminology-fr086.md) **(E4:S19:T02 — SUPERSEDED by E4:S19:T06)**  
-**Planning for:** [FR-086 - Canonical supporting Kanban/FBU doc naming and `FBU` collective terminology](../kanban/fr-br/FR-086-canonical-supporting-kanban-fbu-doc-naming-and-fbu-collective-terminology.md)  
+**Planning for:** [FR-086 - Canonical supporting Kanban/FBU doc naming and `FBU` collective terminology](../kanban/fbu/FR-086-canonical-supporting-kanban-fbu-doc-naming-and-fbu-collective-terminology.md)  
 **Status:** Superseded (historical content preserved below)
 
 ---
@@ -106,6 +106,6 @@ Define and implement a canonical naming + terminology contract for supporting Ka
 ## References
 
 - [Host task E4:S19:T02](../kanban/epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T02-canonical-supporting-kanban-fbu-doc-naming-and-fbu-collective-terminology-fr086.md)
-- [FR-086](../kanban/fr-br/FR-086-canonical-supporting-kanban-fbu-doc-naming-and-fbu-collective-terminology.md)
+- [FR-086](../kanban/fbu/FR-086-canonical-supporting-kanban-fbu-doc-naming-and-fbu-collective-terminology.md)
 - [Story 019](../kanban/epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake.md)
 - [Canonical board baseline T114](../kanban/epics/epic-06/story-07-adk-implementation-analysis-and-package-management/T114-canonical-board-filename-migration-kboard-fbuboard.md)

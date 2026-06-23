@@ -99,7 +99,7 @@ This task:
 
 ## Input
 
-- **FR-048:** [`FR-048-icw-task-identifier-argument.md`](../../../fr-br/FR-048-icw-task-identifier-argument.md)
+- **FR-048:** [`FR-048-icw-task-identifier-argument.md`](../../../fbu/FR-048-icw-task-identifier-argument.md)
 - **ICW Documentation:** Current ICW implementation and configuration
 - **Kanban Framework:** Task identifier patterns and validation
 
@@ -146,7 +146,7 @@ This task:
 ## References
 
 - **FR Repo Story:** [`story-01-fr-repo.md`](../story-01-fr-repo.md)
-- **FR-048:** [`docs/kanban/fr-br/FR-048-icw-task-identifier-argument.md`](../../../fr-br/FR-048-icw-task-identifier-argument.md)
+- **FR-048:** [`docs/kanban/fbu/FR-048-icw-task-identifier-argument.md`](../../../fbu/FR-048-icw-task-identifier-argument.md)
 - **ICW Handler:** `packages/frameworks/workflow-mgt/scripts/icw/icw_handler.py`
 - **ICW Configuration:** `packages/frameworks/workflow-mgt/workflows/implementation-cycle-workflow/`
 

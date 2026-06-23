@@ -9,7 +9,7 @@ housekeeping_policy: keep
 # E04:S19:T08 — Planning: Spec, Tests, Implementation Plan (IPW)
 
 **Host Task:** [`T08-fr072-approach-d-phase-d2-d4-migration-and-doc-sweep.md`](../kanban/epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T08-fr072-approach-d-phase-d2-d4-migration-and-doc-sweep.md) **(E04:S19:T08)**  
-**Planning for:** [FR-072](../kanban/fr-br/FR-072-uniform-repository-abstract-space-kanban-rules.md)  
+**Planning for:** [FR-072](../kanban/fbu/FR-072-uniform-repository-abstract-space-kanban-rules.md)  
 **Merged delivery:** [T07 FR-021 supersession](../kanban/epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T07-fr021-repository-pattern-supersession-fr072-reconciliation.md)  
 **Status:** Approved
 
@@ -120,7 +120,7 @@ RF1–RF2 via intake guardrails + fbuboard audit. RF3 via story/task banners. RF
 
 - `docs/architecture/standards-and-adrs/ADR-014-repository-abstract-space-fr072-approach-d.md` (CREATE)
 - `docs/implementation-cycles/IPP-E4S19T8-*.md` (this file)
-- `docs/kanban/fr-br/FR-072-*.md`, `FR-021-*.md`
+- `docs/kanban/fbu/FR-072-*.md`, `FR-021-*.md`
 - `docs/governance/kanban/kanban-governance-policy.md`
 - `packages/frameworks/kanban/policies/kanban-governance-policy.md`, `FR_BR_INTAKE_GUIDE.md`
 - `packages/frameworks/kanban/templates/epics/Epic-{5,6,7}-*.md`
@@ -185,8 +185,8 @@ ADR-014 → FR-021/FR-072 → governance/templates → verification → RW
 
 ## References
 
-- [FR-072](../kanban/fr-br/FR-072-uniform-repository-abstract-space-kanban-rules.md)
-- [FR-021](../kanban/fr-br/FR-021-fr-br-uxr-repository-stories.md)
+- [FR-072](../kanban/fbu/FR-072-uniform-repository-abstract-space-kanban-rules.md)
+- [FR-021](../kanban/fbu/FR-021-fr-br-uxr-repository-stories.md)
 - [ADR-014](../architecture/standards-and-adrs/ADR-014-repository-abstract-space-fr072-approach-d.md)
 - [IPP-E4S19T10](IPP-E04S19T10-e7-s00-detasking-br076.md)
 - [dev-kit-versioning-policy § S00](../governance/standards/dev-kit-versioning-policy.md)

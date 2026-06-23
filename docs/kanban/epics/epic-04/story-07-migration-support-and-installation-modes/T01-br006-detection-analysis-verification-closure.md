@@ -25,7 +25,7 @@ housekeeping_policy: keep
 
 ## Scope
 
-**Verification and hygiene closure** for [BR-006](../../../fr-br/BR-006-missing-migration-support-pre-existing-kanban.md) criteria **1–4** (detection/analysis utilities).
+**Verification and hygiene closure** for [BR-006](../../../fbu/BR-006-missing-migration-support-pre-existing-kanban.md) criteria **1–4** (detection/analysis utilities).
 
 Historical delivery (embedded in [story-07](../story-07-migration-support-and-installation-modes.md)):
 
@@ -40,7 +40,7 @@ This discrete task reconciles story COMPLETE vs `kboard` TODO drift and records 
 ## Input
 
 - **[IPP-E04S07T01](../../../../implementation-cycles/IPP-E04S07T01-br006-migration-support-pre-existing-kanban.md)** — specification, test design, implementation plan (IPW)
-- **[BR-006](../../../fr-br/BR-006-missing-migration-support-pre-existing-kanban.md)** — acceptance criteria 1–4
+- **[BR-006](../../../fbu/BR-006-missing-migration-support-pre-existing-kanban.md)** — acceptance criteria 1–4
 - **[story-07](../story-07-migration-support-and-installation-modes.md)** — program delivery record
 - `packages/frameworks/kanban/scripts/detect_existing_structure.py`
 - `packages/frameworks/kanban/scripts/analyze_structure.py`
@@ -96,6 +96,6 @@ This discrete task reconciles story COMPLETE vs `kboard` TODO drift and records 
 ## References
 
 - [IPP-E04S07T01](../../../../implementation-cycles/IPP-E04S07T01-br006-migration-support-pre-existing-kanban.md)
-- [BR-006](../../../fr-br/BR-006-missing-migration-support-pre-existing-kanban.md)
+- [BR-006](../../../fbu/BR-006-missing-migration-support-pre-existing-kanban.md)
 - [story-07](../story-07-migration-support-and-installation-modes.md)
-- [FR-007](../../../fr-br/FR-007-migration-utilities-and-installation-modes.md) (criteria 5–8 via T02)
+- [FR-007](../../../fbu/FR-007-migration-utilities-and-installation-modes.md) (criteria 5–8 via T02)

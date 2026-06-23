@@ -9,7 +9,7 @@ housekeeping_policy: keep
 # E21:S02:T03 — Planning: Locale detection (IPW)
 
 **Host Task:** [`T03-implement-locale-detection-browsersystem-locale.md`](../project-management/kanban/epics/epic-21/story-02-internationalisation-infrastructure/T03-implement-locale-detection-browsersystem-locale.md) **(E21:S02:T03)**  
-**Planning for:** [ADR-024](../architecture/standards-and-adrs/ADR-024-i18n-framework-strategy.md) · [FR-006 Phase 2](../project-management/kanban/fr-br/FR-006-localization-language-selection-uk-us-english.md) · [IPP-E21S02T02](IPP-E21S02T02-locale-file-structure.md)  
+**Planning for:** [ADR-024](../architecture/standards-and-adrs/ADR-024-i18n-framework-strategy.md) · [FR-006 Phase 2](../project-management/kanban/fbu/FR-006-localization-language-selection-uk-us-english.md) · [IPP-E21S02T02](IPP-E21S02T02-locale-file-structure.md)  
 **Status:** Complete — released `v0.21.2.3+1` (`RW E21:S02:T03 --art`)  
 **Branch:** `epic/21-internationalisation-localisation`
 

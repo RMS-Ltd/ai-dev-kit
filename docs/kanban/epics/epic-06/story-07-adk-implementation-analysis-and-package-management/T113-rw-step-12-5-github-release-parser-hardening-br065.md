@@ -15,7 +15,7 @@ housekeeping_policy: keep
 **Created:** 2026-04-13  
 **Code:** E06S07T113
 
-**Upstream:** [BR-065 - RW Step 12.5 GitHub release parser fails on `v`-prefixed version](../../../fr-br/BR-065-rw-step-12-5-github-release-parser-fails-on-v-prefixed-version.md)  
+**Upstream:** [BR-065 - RW Step 12.5 GitHub release parser fails on `v`-prefixed version](../../../fbu/BR-065-rw-step-12-5-github-release-parser-fails-on-v-prefixed-version.md)  
 **Coordinates with:** [E02:S16:T03](../../epic-02/story-16-perpetual-ongoing-workflow-operations/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md) RW maintenance perpetual task
 
 ---
@@ -69,8 +69,8 @@ Implemented parser hardening in `packages/frameworks/workflow-mgt/scripts/create
 
 ## References
 
-- [BR-065](../../../fr-br/BR-065-rw-step-12-5-github-release-parser-fails-on-v-prefixed-version.md)
-- [FR-041](../../../fr-br/FR-041-perpetual-task-for-release-workflow-maintenance.md)
+- [BR-065](../../../fbu/BR-065-rw-step-12-5-github-release-parser-fails-on-v-prefixed-version.md)
+- [FR-041](../../../fbu/FR-041-perpetual-task-for-release-workflow-maintenance.md)
 - [E02:S16:T03](../../epic-02/story-16-perpetual-ongoing-workflow-operations/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md)
 - [IPW-E6S7T113](../../../../implementation-cycles/IPW-E6S07T113-rw-step-12-5-github-release-parser-hardening.md)
 

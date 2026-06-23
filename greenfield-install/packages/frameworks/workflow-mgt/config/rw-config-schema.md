@@ -50,7 +50,8 @@ These keys are only required if using specific features:
 | `kanban_board` | string | `use_kanban: true` | Active MoSCOW board file (relative to `kanban_root`); sole board per ADR-018 | `kboard.md` |
 | `fbu_board` | string | **Deprecated** | Legacy second MoSCOW board (`kboard.md`). **Do not set** on new installs — use redirect stub only. Validators skip deprecated stubs. | *(omit)* |
 | `task_doc_pattern` | string | `use_kanban: true` (recommended) | Pattern for task docs (relative to `kanban_root`; include `{epic}`, `{story}`, `{task}`) | `epics/epic-{epic:02d}/story-{story:02d}-*/T{task:02d}-*.md` |
-| `fr_br_root` | string | Optional | FR/BR directory (relative to **project root**, not `kanban_root`) | `docs/kanban/fr-br` |
+| `fbu_root` | string | Optional | FBU intake directory (relative to **project root**, not `kanban_root`) | `docs/kanban/fbu` |
+| `fbu_root` | string | Optional | **Deprecated** — legacy alias for `fbu_root` (read-tolerance only) | — |
 | `versioning_schema` | string | Optional | Version schema (default: `RC.EPIC.STORY.TASK+BUILD`) | `RC.EPIC.STORY.TASK+BUILD` |
 | `versioning_mode` | string | Optional (recommended) | Versioning model: `dual`, `semver_only`, `kanban_only` | `dual` |
 | `semver_mapping_strategy` | string | Optional | SemVer mapping strategy (`task_touch` or `registry`) | `task_touch` |

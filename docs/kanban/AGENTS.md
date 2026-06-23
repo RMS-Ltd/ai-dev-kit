@@ -8,7 +8,7 @@
 
 When executing Release Workflow (RW, RW -d, RW -k):
 
-**Primary responsibilities:** version bump (`RC.EPIC.STORY.TASK+BUILD`), changelog, scoped kanban Step 7 (four surfaces), commit + local tag via RW — **no push by default** ([UXR-024](fr-br/UXR-024-rw-local-release-default-no-push-batch-operator-push.md)); operator batch-pushes or `RW --push`.
+**Primary responsibilities:** version bump (`RC.EPIC.STORY.TASK+BUILD`), changelog, scoped kanban Step 7 (four surfaces), commit + local tag via RW — **no push by default** ([UXR-024](fbu/UXR-024-rw-local-release-default-no-push-batch-operator-push.md)); operator batch-pushes or `RW --push`.
 
 **Skills:** `.cursor/skills/version-bump`, `changelog_create`, `readme_update`, validation scripts under `packages/frameworks/workflow-mgt/scripts/validation/`.
 

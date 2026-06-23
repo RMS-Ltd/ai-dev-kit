@@ -9,7 +9,7 @@ housekeeping_policy: keep
 # E07:S01:T09 — Planning: Spec, Tests, Implementation Plan (IPW)
 
 **Host Task:** [`E07S01T09-kanban-template-governance.md`](../kanban/epics/epic-07/story-01-codebase-maintenance-tasks/E07S01T09-kanban-template-governance.md) **(E07:S01:T09)**  
-**Planning for:** [UXR-005](../kanban/fr-br/UXR-005-kanban-board-formatting-and-governance.md)  
+**Planning for:** [UXR-005](../kanban/fbu/UXR-005-kanban-board-formatting-and-governance.md)  
 **Status:** Approved
 
 > **IPW (Implementation Planning Workflow):** Consolidated IPP for UXR-005 — MoSCOW spacing rule, validator, RW/UKW hooks.
@@ -86,7 +86,7 @@ RF1 → spacing module + corpus pass. RF2–RF5 → policy and agent guides. RF3
 | T6 | Governance contract | N | v1 non-blocking only; no new Gate |
 | T7 | Supersedes | N | Aligns with UXR-005 |
 
-**Outcome:** `EXEMPT` — governing docs: [kanban-board-guide.md](../kanban/kanban-board-guide.md) § Formatting Governance, [UXR-005](../kanban/fr-br/UXR-005-kanban-board-formatting-and-governance.md)
+**Outcome:** `EXEMPT` — governing docs: [kanban-board-guide.md](../kanban/kanban-board-guide.md) § Formatting Governance, [UXR-005](../kanban/fbu/UXR-005-kanban-board-formatting-and-governance.md)
 
 | ID | Exemption | Pass? | Evidence |
 | -- | -------- | ----- | -------- |
@@ -196,8 +196,8 @@ RF1 → spacing module + corpus pass. RF2–RF5 → policy and agent guides. RF3
 
 ## References
 
-- [UXR-005](../kanban/fr-br/UXR-005-kanban-board-formatting-and-governance.md)
+- [UXR-005](../kanban/fbu/UXR-005-kanban-board-formatting-and-governance.md)
 - [E07:S01:T09 task](../kanban/epics/epic-07/story-01-codebase-maintenance-tasks/E07S01T09-kanban-template-governance.md)
-- [BR-076](../kanban/fr-br/BR-076-e7-s00-must-not-host-concrete-tasks.md) (detasking context)
+- [BR-076](../kanban/fbu/BR-076-e7-s00-must-not-host-concrete-tasks.md) (detasking context)
 - [ipw-adr-necessity-checklist.md](../architecture/standards-and-adrs/ipw-adr-necessity-checklist.md)
 - [kanban-board-guide.md](../kanban/kanban-board-guide.md) § Formatting Governance

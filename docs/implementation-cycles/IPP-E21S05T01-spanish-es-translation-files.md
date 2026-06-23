@@ -9,7 +9,7 @@ housekeeping_policy: keep
 # E21:S05:T01 — Planning: Spanish (es) translation files (FR-006)
 
 **Host Task:** [`T01-spanish-es-translation-files.md`](../kanban/epics/epic-21/story-05-european-languages-localization/T01-spanish-es-translation-files.md) **(E21:S05:T01)**  
-**Planning for:** [FR-006 Phase 3+](../kanban/fr-br/FR-006-localization-language-selection-uk-us-english.md) · [E21:S05](../kanban/epics/epic-21/story-05-european-languages-localization.md)  
+**Planning for:** [FR-006 Phase 3+](../kanban/fbu/FR-006-localization-language-selection-uk-us-english.md) · [E21:S05](../kanban/epics/epic-21/story-05-european-languages-localization.md)  
 **Status:** Complete — shipped @ v0.21.5.1+1
 
 > **IPW (Implementation Planning Workflow):** Consolidated IPP per FR-042 / FR-094. Scaffold trees exist from [E21:S03:T02](IPP-E21S03T02-create-translation-files-major-languages.md) (en-GB interim copy @ v0.21.3.2+1). Cultural guidance: [locale-cultural-requirements.md](../governance/standards/locale-cultural-requirements.md) § Spanish (es).
@@ -238,7 +238,7 @@ No `docs/guides/**` adopter-public prose edits → no portal pytest AC for new u
 
 ## References
 
-- [FR-006](../kanban/fr-br/FR-006-localization-language-selection-uk-us-english.md)
+- [FR-006](../kanban/fbu/FR-006-localization-language-selection-uk-us-english.md)
 - [T01 task doc](../kanban/epics/epic-21/story-05-european-languages-localization/T01-spanish-es-translation-files.md)
 - [locale-rollout-matrix.md](../governance/standards/locale-rollout-matrix.md)
 - [locale-cultural-requirements.md](../governance/standards/locale-cultural-requirements.md) § Spanish (es)

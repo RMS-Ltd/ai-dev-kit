@@ -1,7 +1,7 @@
 # IPP-E04S14T12 — SQLite kanban-completed ledger + UKW PDF report
 
 **Host Task:** [E04:S14:T12](../kanban/epics/epic-04/story-14-kanban-framework-maintenance/T12-kanban-completed-sqlite-ledger-pdf-report-fr134.md)  
-**FR:** [FR-134](../kanban/fr-br/FR-134-kanban-completed-sqlite-ledger-pdf-report.md)
+**FR:** [FR-134](../kanban/fbu/FR-134-kanban-completed-sqlite-ledger-pdf-report.md)
 
 ---
 

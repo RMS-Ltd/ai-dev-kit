@@ -18,9 +18,9 @@ housekeeping_policy: keep
 
 **Planning package:** [IPP-E06S09T24](../../../../implementation-cycles/IPP-E06S09T24-acquisition-layer-adk-error-codes-fr111.md)
 
-**Upstream:** [FR-111](../../../fr-br/FR-111-acquisition-layer-adk-error-codes-and-install-error-doc-hygiene.md)
+**Upstream:** [FR-111](../../../fbu/FR-111-acquisition-layer-adk-error-codes-and-install-error-doc-hygiene.md)
 
-**Related:** [FR-108](../../../fr-br/FR-108-install-setup-error-code-registry-and-emission.md) · [E06:S09:T20](T20-install-setup-error-code-registry-fr108.md) · [FR-110](../../../fr-br/FR-110-lean-adopter-distribution-footprint-and-vendor-bundle.md) · [ADR-016](../../../../architecture/standards-and-adrs/ADR-016-install-setup-error-code-taxonomy.md) · [ADR-021](../../../../architecture/standards-and-adrs/ADR-021-greenfield-install-ghcr-delivery-channel.md) · [INSTALL_IN_YOUR_PROJECT.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/INSTALL_IN_YOUR_PROJECT.md)
+**Related:** [FR-108](../../../fbu/FR-108-install-setup-error-code-registry-and-emission.md) · [E06:S09:T20](T20-install-setup-error-code-registry-fr108.md) · [FR-110](../../../fbu/FR-110-lean-adopter-distribution-footprint-and-vendor-bundle.md) · [ADR-016](../../../../architecture/standards-and-adrs/ADR-016-install-setup-error-code-taxonomy.md) · [ADR-021](../../../../architecture/standards-and-adrs/ADR-021-greenfield-install-ghcr-delivery-channel.md) · [INSTALL_IN_YOUR_PROJECT.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/INSTALL_IN_YOUR_PROJECT.md)
 
 ---
 
@@ -33,7 +33,7 @@ Extend the FR-108 **`ADK-*` registry** with acquisition process **I05** and CLI 
 ## Input
 
 - [IPP-E06S09T24](../../../../implementation-cycles/IPP-E06S09T24-acquisition-layer-adk-error-codes-fr111.md)
-- [FR-111](../../../fr-br/FR-111-acquisition-layer-adk-error-codes-and-install-error-doc-hygiene.md) — requirements and seed code catalog
+- [FR-111](../../../fbu/FR-111-acquisition-layer-adk-error-codes-and-install-error-doc-hygiene.md) — requirements and seed code catalog
 - [ADR-016](../../../../architecture/standards-and-adrs/ADR-016-install-setup-error-code-taxonomy.md) — taxonomy (amend process table)
 - [E06:S09:T20](T20-install-setup-error-code-registry-fr108.md) — FR-108 baseline registry v1.0.0
 - [E06:S09:T21](T21-lean-adopter-distribution-footprint-fr110.md) · [E06:S09:T23](T23-greenfield-install-github-packages-delivery-uxr021.md) — acquisition paths
@@ -64,7 +64,7 @@ Extend the FR-108 **`ADK-*` registry** with acquisition process **I05** and CLI 
 
 ## Associated Feature Request
 
-**FR-111:** [Acquisition-layer ADK error codes and install error documentation hygiene](../../../fr-br/FR-111-acquisition-layer-adk-error-codes-and-install-error-doc-hygiene.md)
+**FR-111:** [Acquisition-layer ADK error codes and install error documentation hygiene](../../../fbu/FR-111-acquisition-layer-adk-error-codes-and-install-error-doc-hygiene.md)
 
 ---
 

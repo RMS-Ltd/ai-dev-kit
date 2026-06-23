@@ -19,7 +19,7 @@ housekeeping_policy: keep
 
 **Story Type:** Abstract Space (Epic-Level)  
 **Build Warning Suppression:** N/A  
-**Explanation:** Epic-level abstract space (`v0.7.0.0+0`) for Epic 7. It does **not** contain tasks. Historical UXR registry anchors **E07:S00:T01–T06** remain linkable under `story-00-uxr-repo/` as **historical-only** redirects; primary work lives on semantic host stories (**E07:S05**, **E07:S01**, **E06:S06**, etc.). See [BR-076](../../fr-br/BR-076-e7-s00-must-not-host-concrete-tasks.md) and [FR-072](../../fr-br/FR-072-uniform-repository-abstract-space-kanban-rules.md) (Approach D).
+**Explanation:** Epic-level abstract space (`v0.7.0.0+0`) for Epic 7. It does **not** contain tasks. Historical UXR registry anchors **E07:S00:T01–T06** remain linkable under `story-00-uxr-repo/` as **historical-only** redirects; primary work lives on semantic host stories (**E07:S05**, **E07:S01**, **E06:S06**, etc.). See [BR-076](../../fbu/BR-076-e7-s00-must-not-host-concrete-tasks.md) and [FR-072](../../fbu/FR-072-uniform-repository-abstract-space-kanban-rules.md) (Approach D).
 
 **Migration Note:** Detasking completed under **E04:S19:T10** (BR-076). Do **not** create new primary intake tasks under S00.
 
@@ -68,8 +68,8 @@ housekeeping_policy: keep
 ## Related Work
 
 - **E04:S19:T10:** [E7:S00 detasking](../epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T10-e7-s00-detasking-abstract-space-enforcement-br076.md)
-- **BR-076:** [E7:S00 must not host concrete tasks](../../fr-br/BR-076-e7-s00-must-not-host-concrete-tasks.md)
-- **FR-072:** [Uniform repository abstract-space rules](../../fr-br/FR-072-uniform-repository-abstract-space-kanban-rules.md)
+- **BR-076:** [E7:S00 must not host concrete tasks](../../fbu/BR-076-e7-s00-must-not-host-concrete-tasks.md)
+- **FR-072:** [Uniform repository abstract-space rules](../../fbu/FR-072-uniform-repository-abstract-space-kanban-rules.md)
 - **E5:S00:** [Epic 5 abstract space](../epic-05/story-00-fr-repo.md) (precedent)
 
 ---

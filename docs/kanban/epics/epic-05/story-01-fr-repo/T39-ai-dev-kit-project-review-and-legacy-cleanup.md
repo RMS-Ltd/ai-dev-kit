@@ -48,7 +48,7 @@ Actual clean-up (archiving/removal/moves) will be handled by a **separate implem
 
 ## Input
 
-- **FR-039:** [`FR-039-ai-dev-kit-project-review-and-legacy-clean-up.md`](../../../fr-br/FR-039-ai-dev-kit-project-review-and-legacy-clean-up.md)
+- **FR-039:** [`FR-039-ai-dev-kit-project-review-and-legacy-clean-up.md`](../../../fbu/FR-039-ai-dev-kit-project-review-and-legacy-clean-up.md)
 - **Project Review Plan:** `~/.cursor/plans/ai-dev-kit-project-review_*.plan.md` (IDE-local plan describing the detailed review steps).
 - **Framework packages:** `packages/frameworks/*`
 - **Dev-kit-local policies:** `docs/architecture/standards-and-adrs/*`
@@ -101,5 +101,5 @@ Actual clean-up (archiving/removal/moves) will be handled by a **separate implem
 ## References
 
 - **FR Repo Story:** [`story-01-fr-repo.md`](../story-01-fr-repo.md)
-- **FR-039:** [`docs/kanban/fr-br/FR-039-ai-dev-kit-project-review-and-legacy-clean-up.md`](../../../fr-br/FR-039-ai-dev-kit-project-review-and-legacy-clean-up.md)
+- **FR-039:** [`docs/kanban/fbu/FR-039-ai-dev-kit-project-review-and-legacy-clean-up.md`](../../../fbu/FR-039-ai-dev-kit-project-review-and-legacy-clean-up.md)
 

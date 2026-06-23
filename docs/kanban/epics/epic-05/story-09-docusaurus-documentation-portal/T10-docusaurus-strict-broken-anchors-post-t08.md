@@ -37,7 +37,7 @@ housekeeping_policy: keep
 ## Input
 
 - [T08 – Strict broken links](T08-docusaurus-strict-broken-links-post-fr067.md) (completed)
-- [FR-067](../../../fr-br/FR-067-docusaurus-production-build-corpus-triage.md) — **FU-3**
+- [FR-067](../../../fbu/FR-067-docusaurus-production-build-corpus-triage.md) — **FU-3**
 - [docs/maintenance/docusaurus-corpus-triage-fr-067.md](../../../../maintenance/docusaurus-corpus-triage-fr-067.md)
 - Docusaurus: [`onBrokenAnchors`](https://docusaurus.io/docs/docusaurus-core#onBrokenAnchors)
 

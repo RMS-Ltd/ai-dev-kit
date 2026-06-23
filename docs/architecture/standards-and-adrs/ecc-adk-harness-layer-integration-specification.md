@@ -12,7 +12,7 @@ housekeeping_policy: keep
 **Version:** 1.0.0  
 **Last Updated:** 2026-05-26  
 **Task:** [E6:S09:T04](../../kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T04-ecc-harness-layer-phase0-compatibility-fr098.md)  
-**FR:** [FR-098](../../kanban/fr-br/FR-098-ecc-optional-harness-layer-integration.md)  
+**FR:** [FR-098](../../kanban/fbu/FR-098-ecc-optional-harness-layer-integration.md)  
 **Empirical evidence:** [Phase 0 evaluation](ecc-adk-harness-layer-phase0-evaluation.md)
 
 ---
@@ -173,6 +173,6 @@ Hook policy: default `hook_profile: minimal`, hooks-off install, `disabled_hooks
 - **[ECC + ADK integration cheatsheet](../../documentation/user-docs/ecc-adk-integration-cheatsheet.md)** — quick-start for adopters (workflows, conflicts, setup)
 - [ECC repository](https://github.com/affaan-m/ECC)
 - [ECC cross-harness architecture](https://github.com/affaan-m/ECC/blob/main/docs/architecture/cross-harness.md)
-- [FR-098](../../kanban/fr-br/FR-098-ecc-optional-harness-layer-integration.md)
+- [FR-098](../../kanban/fbu/FR-098-ecc-optional-harness-layer-integration.md)
 - [ADR-003 — Greenfield vs brownfield adoption](ADR-003-greenfield-vs-brownfield-adoption.md)
 - [IPP-E6S9T4](../../implementation-cycles/IPP-E6S09T04-ecc-harness-layer-phase0-fr098.md)

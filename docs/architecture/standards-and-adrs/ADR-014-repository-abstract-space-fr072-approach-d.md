@@ -11,7 +11,7 @@ housekeeping_policy: keep
 **Status:** Accepted  
 **Date:** 2026-06-01  
 **Deciders:** Maintainer (via E04:S19:T08)  
-**Related:** [FR-072](../../kanban/fr-br/FR-072-uniform-repository-abstract-space-kanban-rules.md), [FR-021](../../kanban/fr-br/FR-021-fr-br-uxr-repository-stories.md) (superseded for new intake), [dev-kit-versioning-policy.md](../../governance/standards/dev-kit-versioning-policy.md)
+**Related:** [FR-072](../../kanban/fbu/FR-072-uniform-repository-abstract-space-kanban-rules.md), [FR-021](../../kanban/fbu/FR-021-fr-br-uxr-repository-stories.md) (superseded for new intake), [dev-kit-versioning-policy.md](../../governance/standards/dev-kit-versioning-policy.md)
 
 ---
 
@@ -65,7 +65,7 @@ E7:S00 detasking ([E04:S19:T10](../../kanban/epics/epic-04/story-19-fr-br-uxr-ab
 | E07:S00:T05 (UXR-005) | Split registry | **E07:S01:T09** implementing |
 | Open FBUs on fbuboard | Active work | Semantic `E:S:T` on row (2026-05-29 batch + T08) |
 
-Full FR-level history remains on each `fr-br/*.md` **Implementing Task** line; completed FRs may still cite `E05:S01:Tnn` as historical registry coordinates.
+Full FR-level history remains on each `fbu/*.md` **Implementing Task** line; completed FRs may still cite `E05:S01:Tnn` as historical registry coordinates.
 
 ---
 

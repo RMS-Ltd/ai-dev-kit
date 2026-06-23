@@ -20,9 +20,9 @@ housekeeping_policy: keep
 **Task Type:** Perpetual Maintenance
 
 
-**Upstream:** [FR-112 — Perpetual GitHub CI and security health lanes](../../../fr-br/FR-112-perpetual-github-ci-and-security-health-lanes.md)
+**Upstream:** [FR-112 — Perpetual GitHub CI and security health lanes](../../../fbu/FR-112-perpetual-github-ci-and-security-health-lanes.md)
 
-**Input:** [IPP-E02S16T05 — GitHub Actions CI health (Perpetual)](../../../../implementation-cycles/IPP-E02S16T05-github-actions-ci-health-perpetual-fr112.md) · [BR-104](../../../fr-br/BR-104-codeql-cqg-green-does-not-imply-actions-ci-green.md)
+**Input:** [IPP-E02S16T05 — GitHub Actions CI health (Perpetual)](../../../../implementation-cycles/IPP-E02S16T05-github-actions-ci-health-perpetual-fr112.md) · [BR-104](../../../fbu/BR-104-codeql-cqg-green-does-not-imply-actions-ci-green.md)
 
 Publication Status: NOT_APPLICABLE
 
@@ -141,7 +141,7 @@ Use **`RW E02:S16:T05`** for recurring CI hygiene passes (BUILD increments on pe
 
 | Component | Fix |
 | --------- | --- |
-| `migrate_to_v2` race | `BEGIN IMMEDIATE` + duplicate-column guard ([BR-104](../../../fr-br/BR-104-codeql-cqg-green-does-not-imply-actions-ci-green.md)) |
+| `migrate_to_v2` race | `BEGIN IMMEDIATE` + duplicate-column guard ([BR-104](../../../fbu/BR-104-codeql-cqg-green-does-not-imply-actions-ci-green.md)) |
 | Step 9.7 | `--strict` fails when zero checks match; `--allow-path-skip` for `RW -d` only |
 | Pre-push | `validate_github_actions_remote.py --strict` |
 | CQG banner | `validate_code_quality_gate.py` emits CQG ≠ CI ship gate note |
@@ -170,7 +170,7 @@ Use **`RW E02:S16:T05`** for recurring CI hygiene passes (BUILD increments on pe
 
 | Workflow | Root cause | Fix |
 | -------- | ---------- | --- |
-| Docusaurus site build | `docs/adk-feedback/attempt-09/README.md` relative link to excluded `kanban/fr-br/FR-079-…` | GitHub blob URLs (BR-068) |
+| Docusaurus site build | `docs/adk-feedback/attempt-09/README.md` relative link to excluded `kanban/fbu/FR-079-…` | GitHub blob URLs (BR-068) |
 | Docusaurus site build | MDX parses `<path>` as JSX in troubleshooting guide line 1228 | Inline code backticks |
 
 **Post-RW verification:** Re-check [Actions](https://github.com/RMS-Ltd/ai-dev-kit/actions) — Docusaurus build green on `dev`/`main`.
@@ -251,8 +251,8 @@ Use **`RW E02:S16:T05`** for recurring CI hygiene passes (BUILD increments on pe
 
 - [IPP-E02S16T05 — GitHub Actions CI health (Perpetual)](../../../../implementation-cycles/IPP-E02S16T05-github-actions-ci-health-perpetual-fr112.md)
 - [IPP-E08S03T15 (historical)](../../../../implementation-cycles/IPP-E08S03T15-github-actions-ci-health-perpetual-fr112.md)
-- [BR-104 — CodeQL/CQG green ≠ Actions CI green](../../../fr-br/BR-104-codeql-cqg-green-does-not-imply-actions-ci-green.md)
-- [FR-112](../../../fr-br/FR-112-perpetual-github-ci-and-security-health-lanes.md)
+- [BR-104 — CodeQL/CQG green ≠ Actions CI green](../../../fbu/BR-104-codeql-cqg-green-does-not-imply-actions-ci-green.md)
+- [FR-112](../../../fbu/FR-112-perpetual-github-ci-and-security-health-lanes.md)
 - [E02:S16:T06 — GitHub Security & Code Quality health (Perpetual)](T06-github-security-code-quality-health-perpetual.md)
 - [E08:S03:T04 — CI test workflow (BR-058)](T04-ci-test-workflow-pytest-remediation-br058.md)
 - [GitHub Actions](https://github.com/RMS-Ltd/ai-dev-kit/actions)

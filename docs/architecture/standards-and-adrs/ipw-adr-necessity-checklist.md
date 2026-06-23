@@ -23,7 +23,7 @@ policy_salience:
 
 **Authority:** This document is the **single source of truth** for trigger and exemption rules. Other docs (`.claude/commands/ipw.md`, IPP §2.5, code-review checklists) **link here** — do not duplicate full criteria tables elsewhere.
 
-**Related:** [FR-100](../../kanban/fr-br/FR-100-ipw-adr-necessity-checklist-and-decision-gate.md), [FR-042](../../kanban/fr-br/FR-042-implementation-planning-workflow-ipw.md), [specification-and-planning-artifacts-policy.md](specification-and-planning-artifacts-policy.md)
+**Related:** [FR-100](../../kanban/fbu/FR-100-ipw-adr-necessity-checklist-and-decision-gate.md), [FR-042](../../kanban/fbu/FR-042-implementation-planning-workflow-ipw.md), [specification-and-planning-artifacts-policy.md](specification-and-planning-artifacts-policy.md)
 
 ---
 
@@ -96,5 +96,5 @@ If any exemption fails while all triggers are N → re-score triggers or widen s
 ## References
 
 - [ADR-004](ADR-004-ipp-state-transition-contract.md)
-- [FR-100](../../kanban/fr-br/FR-100-ipw-adr-necessity-checklist-and-decision-gate.md)
+- [FR-100](../../kanban/fbu/FR-100-ipw-adr-necessity-checklist-and-decision-gate.md)
 - `.claude/commands/ipw.md` — Phase 5.0 operational gate

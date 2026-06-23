@@ -30,7 +30,7 @@ Ensure **[`INSTALL_IN_YOUR_PROJECT.md` (source)](https://github.com/RMS-Ltd/ai-d
 
 ## Input
 
-- [FR-060-rw-task-argument-requirement.md](../../../fr-br/FR-060-rw-task-argument-requirement.md)
+- [FR-060-rw-task-argument-requirement.md](../../../fbu/FR-060-rw-task-argument-requirement.md)
 - Root [README.md (repository)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/README.md) Workflows table (RW row).
 - [validate_rw_task_complete.py (source)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/scripts/validation/validate_rw_task_complete.py) (mention when Kanban integration enabled).
 

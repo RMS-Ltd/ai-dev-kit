@@ -17,7 +17,7 @@ housekeeping_policy: keep
 **Version Anchor:** v0.8.3.6+2  
 **Code:** E08S03T06
 
-**Upstream:** [FR-105 — Dependabot and dependency security automation](../../../fr-br/FR-105-dependabot-dependency-security-automation.md)  
+**Upstream:** [FR-105 — Dependabot and dependency security automation](../../../fbu/FR-105-dependabot-dependency-security-automation.md)  
 **Related audit:** [E07:S06:T08](../../epic-07/story-06-post-windsurf-project-review/T08-dependency-and-tooling-audit.md)
 
 Publication Status: NOT_APPLICABLE
@@ -32,7 +32,7 @@ Enable automated dependency security monitoring for **pip** (repo root) and **np
 
 ## Input
 
-- [FR-105](../../../fr-br/FR-105-dependabot-dependency-security-automation.md)
+- [FR-105](../../../fbu/FR-105-dependabot-dependency-security-automation.md)
 - [E07:S06:T08](../../epic-07/story-06-post-windsurf-project-review/T08-dependency-and-tooling-audit.md) audit findings
 - [IPP-E8S3T6-dependabot-enablement-fr105.md](../../../../implementation-cycles/IPP-E08S03T06-dependabot-enablement-fr105.md) (IPW)
 - GitHub org/repo admin access for Dependabot settings
@@ -85,6 +85,6 @@ Repo settings: **Settings → Code security → Dependabot**. Re-verify with:
 
 ## References
 
-- [FR-105](../../../fr-br/FR-105-dependabot-dependency-security-automation.md)
-- [FR-069](../../../fr-br/FR-069-docusaurus-ci-build-gate.md) (build gate)
+- [FR-105](../../../fbu/FR-105-dependabot-dependency-security-automation.md)
+- [FR-069](../../../fbu/FR-069-docusaurus-ci-build-gate.md) (build gate)
 - [IPP-E8S3T6-dependabot-enablement-fr105.md](../../../../implementation-cycles/IPP-E08S03T06-dependabot-enablement-fr105.md)

@@ -19,7 +19,7 @@ DOCS_ROOT = PROJECT_ROOT / "docs"
 # (Notion page_id, repo path relative to docs/)
 STUB_MAPPINGS = [
     ("30db6f8962c1810e8785ded6c5a40395", "architecture/standards-and-adrs/legacy-repo-analysis.md"),
-    ("30db6f8962c18159a6bffa60b4936cbd", "kanban/fr-br/REOPENING_BR_AND_TASKS_GUIDE.md"),
+    ("30db6f8962c18159a6bffa60b4936cbd", "kanban/fbu/REOPENING_BR_AND_TASKS_GUIDE.md"),
     ("30db6f8962c181649af3f40b31d611f7", "kanban/epics/Epic-1/Story-002-package-and-repo-architecture.md"),
     ("30db6f8962c181fba452d3525e6f3fe7", "kanban/epics/Epic-5/Story-000-fr-repo.md"),
     ("30db6f8962c18107ac53e74862ef5bf6", "kanban/epics/Epic-5/Story-001-fr-repo.md"),

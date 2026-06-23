@@ -9,7 +9,7 @@ housekeeping_policy: keep
 # E6:S06:T62 - Planning: Spec, Tests, Implementation Plan (IPW)
 
 **Host Task:** [`T62-global-ipw-gated-implementation-contract-fr083.md`](../kanban/epics/epic-06/story-06-feature-requests/T62-global-ipw-gated-implementation-contract-fr083.md) **(E6:S06:T62)**  
-**Planning for:** [FR-083 – Global IPW-gated implementation contract](../kanban/fr-br/FR-083-global-ipw-gated-implementation-contract.md)  
+**Planning for:** [FR-083 – Global IPW-gated implementation contract](../kanban/fbu/FR-083-global-ipw-gated-implementation-contract.md)  
 **Status:** Draft
 
 ---
@@ -87,6 +87,6 @@ Codify a repository-wide execution contract that prevents intent override by blo
 ## References
 
 - [Host task E6:S06:T62](../kanban/epics/epic-06/story-06-feature-requests/T62-global-ipw-gated-implementation-contract-fr083.md)
-- [FR-083](../kanban/fr-br/FR-083-global-ipw-gated-implementation-contract.md)
+- [FR-083](../kanban/fbu/FR-083-global-ipw-gated-implementation-contract.md)
 - [Global rules](../kanban/AGENTS.md)
 - [Global rules mirror](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/.cursorrules)

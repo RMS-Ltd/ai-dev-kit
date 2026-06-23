@@ -17,7 +17,7 @@ housekeeping_policy: keep
 **Last updated:** 2026-04-26 (Wave 5 stabilization: validation pass recorded and task closure completed)  
 **Code:** E04S19T06
 
-**Upstream:** [UXR-008](../../../fr-br/UXR-008-kboard-fbuboard-default-naming-adoption.md), [FR-086](../../../fr-br/FR-086-canonical-supporting-kanban-fbu-doc-naming-and-fbu-collective-terminology.md), [FR-073](../../../fr-br/FR-073-fr-br-uxr-board-open-taskless-intake-execution-plan.md)
+**Upstream:** [UXR-008](../../../fbu/UXR-008-kboard-fbuboard-default-naming-adoption.md), [FR-086](../../../fbu/FR-086-canonical-supporting-kanban-fbu-doc-naming-and-fbu-collective-terminology.md), [FR-073](../../../fbu/FR-073-fr-br-uxr-board-open-taskless-intake-execution-plan.md)
 
 **Supersedes:** [E04:S19:T02](T02-canonical-supporting-kanban-fbu-doc-naming-and-fbu-collective-terminology-fr086.md), [E04:S19:T05](T05-kanban-and-fr-br-uxr-filename-normalization-uxr008.md), and post-completion governance follow-on from [E05:S01:T73](../../epic-05/story-01-fr-repo/T73-fr-br-uxr-board-open-taskless-intake-execution-plan.md)
 
@@ -74,9 +74,9 @@ FBU naming and intake-governance ownership is currently split across multiple ta
 
 ## References
 
-- [UXR-008](../../../fr-br/UXR-008-kboard-fbuboard-default-naming-adoption.md)
-- [FR-086](../../../fr-br/FR-086-canonical-supporting-kanban-fbu-doc-naming-and-fbu-collective-terminology.md)
-- [FR-073](../../../fr-br/FR-073-fr-br-uxr-board-open-taskless-intake-execution-plan.md)
+- [UXR-008](../../../fbu/UXR-008-kboard-fbuboard-default-naming-adoption.md)
+- [FR-086](../../../fbu/FR-086-canonical-supporting-kanban-fbu-doc-naming-and-fbu-collective-terminology.md)
+- [FR-073](../../../fbu/FR-073-fr-br-uxr-board-open-taskless-intake-execution-plan.md)
 - [E04:S19:T02](T02-canonical-supporting-kanban-fbu-doc-naming-and-fbu-collective-terminology-fr086.md)
 - [E04:S19:T05](T05-kanban-and-fr-br-uxr-filename-normalization-uxr008.md)
 - [E05:S01:T73](../../epic-05/story-01-fr-repo/T73-fr-br-uxr-board-open-taskless-intake-execution-plan.md)

@@ -11,7 +11,7 @@ housekeeping_policy: keep
 **Status:** Active (Wave 1 — E02:S03:T10 / FR-126)  
 **Purpose:** Define properties every **atomic workflow** must satisfy to be composed by **MWF** (or future orchestrators) without inline reimplementation or growing per-workflow chain flags.  
 **Inventory:** [T10-workflow-encapsulation-inventory-matrix.md](../../Analysis/T10-workflow-encapsulation-inventory-matrix.md)  
-**Upstream:** [FR-126](../../../../../../../docs/kanban/fr-br/FR-126-workflow-encapsulation-integrity-mwf-leverage.md) · [FR-124](../../../../../../../docs/kanban/fr-br/FR-124-meta-workflow-orchestration-composite-workflow-chains.md) · [BR-102](../../../../../../../docs/kanban/fr-br/BR-102-mwf-chain-paused-instead-of-subagent-leg-delegation.md)
+**Upstream:** [FR-126](../../../../../../../docs/kanban/fbu/FR-126-workflow-encapsulation-integrity-mwf-leverage.md) · [FR-124](../../../../../../../docs/kanban/fbu/FR-124-meta-workflow-orchestration-composite-workflow-chains.md) · [BR-102](../../../../../../../docs/kanban/fbu/BR-102-mwf-chain-paused-instead-of-subagent-leg-delegation.md)
 
 ---
 
@@ -36,7 +36,7 @@ Applies to all entries under `workflows:` in [`workflow-registry.yaml`](../../..
 | P7 | **Abort propagation** | Child `ABORTED` → parent orchestrator stops; **no** commit/tag/changelog from parent |
 | P8 | **Sub-orchestrator** | One-level embedded chain allowed (e.g. `IDW --rw` → RW); parent delegates to **immediate** child only |
 | P9 | **Forbidden** | Parent inlines child's step list; chain flags duplicating MWF recipes (`IPW --rw` withdrawn) |
-| P10 | **MWF leg delegation** | When parent session mode ≠ leg mode, orchestrator **delegates via sub-agent** (Task tool or equivalent) — not operator mode-switch handoff ([BR-102](../../../../../../../docs/kanban/fr-br/BR-102-mwf-chain-paused-instead-of-subagent-leg-delegation.md)) |
+| P10 | **MWF leg delegation** | When parent session mode ≠ leg mode, orchestrator **delegates via sub-agent** (Task tool or equivalent) — not operator mode-switch handoff ([BR-102](../../../../../../../docs/kanban/fbu/BR-102-mwf-chain-paused-instead-of-subagent-leg-delegation.md)) |
 
 ---
 
@@ -58,7 +58,7 @@ MWF v1 `delivery` recipe:
 MWF → IDW --rw → RW (embedded in IDW chain)
 ```
 
-- MWF **must not** inline RW Steps 1–12 ([FR-124-F3](../../../../../../../docs/kanban/fr-br/FR-124-meta-workflow-orchestration-composite-workflow-chains.md)).
+- MWF **must not** inline RW Steps 1–12 ([FR-124-F3](../../../../../../../docs/kanban/fbu/FR-124-meta-workflow-orchestration-composite-workflow-chains.md)).
 - MWF forwards `--push` / `--art` to `IDW … --rw` only.
 - Abort: `RW ABORTED` inside IDW chain → `MWF ABORTED (leg: RW)`.
 

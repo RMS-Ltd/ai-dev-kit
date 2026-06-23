@@ -18,7 +18,7 @@ housekeeping_policy: keep
 **Version Anchor:** v0.2.16.12+2  
 **Code:** E02S15T13
 
-**Upstream:** [FR-100 — IPW ADR necessity checklist and measurable decision gate](../../../fr-br/FR-100-ipw-adr-necessity-checklist-and-decision-gate.md)
+**Upstream:** [FR-100 — IPW ADR necessity checklist and measurable decision gate](../../../fbu/FR-100-ipw-adr-necessity-checklist-and-decision-gate.md)
 
 Publication Status: NOT_APPLICABLE  
 Publication N/A Reason: Workflow governance and architecture policy only.
@@ -27,17 +27,17 @@ Publication N/A Reason: Workflow governance and architecture policy only.
 
 ## Scope
 
-Implement [FR-100](../../../fr-br/FR-100-ipw-adr-necessity-checklist-and-decision-gate.md): hybrid ADR decision gate for IPW (T1–T7 / E1–E5), IPP §2.5, Phase 5.0, Phase 9 validation.
+Implement [FR-100](../../../fbu/FR-100-ipw-adr-necessity-checklist-and-decision-gate.md): hybrid ADR decision gate for IPW (T1–T7 / E1–E5), IPP §2.5, Phase 5.0, Phase 9 validation.
 
 ---
 
 ## Input
 
-- [FR-100](../../../fr-br/FR-100-ipw-adr-necessity-checklist-and-decision-gate.md)
+- [FR-100](../../../fbu/FR-100-ipw-adr-necessity-checklist-and-decision-gate.md)
 - [IPP-E2S16T12-ipw-adr-necessity-checklist-fr100.md](../../../../implementation-cycles/IPP-E2S16T12-ipw-adr-necessity-checklist-fr100.md)
 - [ipw-adr-necessity-checklist.md](../../../../architecture/standards-and-adrs/ipw-adr-necessity-checklist.md)
-- [FR-096](../../../fr-br/FR-096-ipw-documentation-phases-update-create-and-housing.md)
-- [FR-042](../../../fr-br/FR-042-implementation-planning-workflow-ipw.md)
+- [FR-096](../../../fbu/FR-096-ipw-documentation-phases-update-create-and-housing.md)
+- [FR-042](../../../fbu/FR-042-implementation-planning-workflow-ipw.md)
 
 ---
 
@@ -61,7 +61,7 @@ Shipped: policy SoT, `ipw.md` Phase 5.0/9, `PLAN_DOC_TEMPLATE.md` §2.5, KB guid
 
 ## References
 
-- [FR-100](../../../fr-br/FR-100-ipw-adr-necessity-checklist-and-decision-gate.md)
+- [FR-100](../../../fbu/FR-100-ipw-adr-necessity-checklist-and-decision-gate.md)
 - [IPP-E2S16T12-ipw-adr-necessity-checklist-fr100.md](../../../../implementation-cycles/IPP-E2S16T12-ipw-adr-necessity-checklist-fr100.md)
 - [Story 016](../story-16-perpetual-ongoing-workflow-operations.md)
 

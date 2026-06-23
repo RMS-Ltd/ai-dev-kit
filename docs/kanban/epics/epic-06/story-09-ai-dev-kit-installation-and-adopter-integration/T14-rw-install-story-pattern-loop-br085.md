@@ -17,14 +17,14 @@ housekeeping_policy: keep
 **Version:** v0.6.9.14+2  
 **Code:** E06S09T14
 
-**Upstream:** [BR-085](../../../fr-br/BR-085-rw-install-story-pattern-placeholder-loop-fresh-kanban.md)  
-**Related:** [BR-083](../../../fr-br/BR-083-rw-install-default-patterns-mismatch-fresh-kanban-layout.md) · [BR-084](../../../fr-br/BR-084-rw-install-mode-c-missing-task-doc-pattern.md) · [T12](T12-rw-install-pattern-defaults-br083.md) · [T13](T13-rw-install-mode-c-rw-config-generation-br084.md)
+**Upstream:** [BR-085](../../../fbu/BR-085-rw-install-story-pattern-placeholder-loop-fresh-kanban.md)  
+**Related:** [BR-083](../../../fbu/BR-083-rw-install-default-patterns-mismatch-fresh-kanban-layout.md) · [BR-084](../../../fbu/BR-084-rw-install-mode-c-missing-task-doc-pattern.md) · [T12](T12-rw-install-pattern-defaults-br083.md) · [T13](T13-rw-install-mode-c-rw-config-generation-br084.md)
 
 ---
 
 ## Input
 
-- [BR-085](../../../fr-br/BR-085-rw-install-story-pattern-placeholder-loop-fresh-kanban.md)
+- [BR-085](../../../fbu/BR-085-rw-install-story-pattern-placeholder-loop-fresh-kanban.md)
 - ExpensesTracker T03 interactive replay (story pattern Enter loops)
 - `install_release_workflow.py` — placeholder validation and strict zero-match paths
 
@@ -71,4 +71,4 @@ Released **v0.6.9.14+1** (`RW --art E06:S09:T14`): format-aware placeholder vali
 
 ## Related Work
 
-- **[BR-085](../../../fr-br/BR-085-rw-install-story-pattern-placeholder-loop-fresh-kanban.md)** — **Complements** — verification failure on BR-083/084 follow-on from ExpensesTracker replay.
+- **[BR-085](../../../fbu/BR-085-rw-install-story-pattern-placeholder-loop-fresh-kanban.md)** — **Complements** — verification failure on BR-083/084 follow-on from ExpensesTracker replay.

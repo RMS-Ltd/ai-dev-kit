@@ -16,14 +16,14 @@ housekeeping_policy: keep
 **Last updated:** 2026-06-17 (RW Step 7: BR-110 forensic closure @ v0.8.3.23+3)  
 **Code:** E08S03T23  
 
-**Upstream:** [BR-109 — Greenfield dual-tree sync drift on autofix PRs](../../../fr-br/BR-109-greenfield-autofix-dual-tree-sync-drift-recurring-ci-failures.md) · [BR-110 — RW -k `--art --dpz` doc-init guard](../../../fr-br/BR-110-rw-k-dpz-rejection-doc-init-build-zero-guard-mismatch.md)  
-**Related:** [FR-110](../../../fr-br/FR-110-lean-adopter-distribution-footprint-and-vendor-bundle.md) · [E06:S09:T21](../../epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T21-lean-adopter-distribution-footprint-fr110.md) · [E06:S09:T38](../../epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T38-guided-install-orchestrator-fr135.md) (BR-110 code @ v0.6.9.38+0) · [E02:S16:T05](../../epic-02/story-16-perpetual-ongoing-workflow-operations/T05-github-actions-ci-health-perpetual.md) · [FR-112](../../../fr-br/FR-112-perpetual-github-ci-and-security-health-lanes.md)
+**Upstream:** [BR-109 — Greenfield dual-tree sync drift on autofix PRs](../../../fbu/BR-109-greenfield-autofix-dual-tree-sync-drift-recurring-ci-failures.md) · [BR-110 — RW -k `--art --dpz` doc-init guard](../../../fbu/BR-110-rw-k-dpz-rejection-doc-init-build-zero-guard-mismatch.md)  
+**Related:** [FR-110](../../../fbu/FR-110-lean-adopter-distribution-footprint-and-vendor-bundle.md) · [E06:S09:T21](../../epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T21-lean-adopter-distribution-footprint-fr110.md) · [E06:S09:T38](../../epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T38-guided-install-orchestrator-fr135.md) (BR-110 code @ v0.6.9.38+0) · [E02:S16:T05](../../epic-02/story-16-perpetual-ongoing-workflow-operations/T05-github-actions-ci-health-perpetual.md) · [FR-112](../../../fbu/FR-112-perpetual-github-ci-and-security-health-lanes.md)
 
 ---
 
 ## Scope
 
-Harden CI and GitHub Actions so **CodeQL/Copilot autofix** pull requests no longer repeatedly fail `greenfield-install` drift checks due to **single-tree edits**. Implement automated reconciliation or actionable guards per [BR-109](../../../fr-br/BR-109-greenfield-autofix-dual-tree-sync-drift-recurring-ci-failures.md).
+Harden CI and GitHub Actions so **CodeQL/Copilot autofix** pull requests no longer repeatedly fail `greenfield-install` drift checks due to **single-tree edits**. Implement automated reconciliation or actionable guards per [BR-109](../../../fbu/BR-109-greenfield-autofix-dual-tree-sync-drift-recurring-ci-failures.md).
 
 ---
 
@@ -41,8 +41,8 @@ Manual `python scripts/sync_greenfield_install.py` on each PR is reactive and do
 
 ## Input
 
-- [BR-109](../../../fr-br/BR-109-greenfield-autofix-dual-tree-sync-drift-recurring-ci-failures.md) (evidence: PRs #60–#62, #68)
-- [FR-110](../../../fr-br/FR-110-lean-adopter-distribution-footprint-and-vendor-bundle.md) dual-tree contract
+- [BR-109](../../../fbu/BR-109-greenfield-autofix-dual-tree-sync-drift-recurring-ci-failures.md) (evidence: PRs #60–#62, #68)
+- [FR-110](../../../fbu/FR-110-lean-adopter-distribution-footprint-and-vendor-bundle.md) dual-tree contract
 - [`scripts/sync_greenfield_install.py`](../../../../../scripts/sync_greenfield_install.py) and [`greenfield-install-manifest.yaml`](../../../../../scripts/greenfield-install-manifest.yaml)
 - [`.github/workflows/greenfield-install.yml`](../../../../../.github/workflows/greenfield-install.yml)
 - [IPP-E08S03T23-greenfield-sync-autofix-ci-hardening-br109](../../../../implementation-cycles/IPP-E08S03T23-greenfield-sync-autofix-ci-hardening-br109.md) (plan doc: spec + tests + executor steps)
@@ -64,7 +64,7 @@ Manual `python scripts/sync_greenfield_install.py` on each PR is reactive and do
 - [ ] **AC1:** Autofix-class PRs auto-reconcile dual-tree drift **or** fail with explicit dual-tree guidance (no ambiguous generic drift-only message).
 - [ ] **AC2:** Source tree `packages/frameworks/**` remains authoritative; mirror-only framework logic edits are corrected toward source.
 - [ ] **AC3:** `validate_actions_ci_parity` / local parity passes for new workflow when `actions_ci_parity` applies.
-- [ ] **AC4:** [BR-109](../../../fr-br/BR-109-greenfield-autofix-dual-tree-sync-drift-recurring-ci-failures.md) AC1–AC5 satisfied and status updated on closure.
+- [ ] **AC4:** [BR-109](../../../fbu/BR-109-greenfield-autofix-dual-tree-sync-drift-recurring-ci-failures.md) AC1–AC5 satisfied and status updated on closure.
 
 ---
 
@@ -73,13 +73,13 @@ Manual `python scripts/sync_greenfield_install.py` on each PR is reactive and do
 - Prefer workflow trigger on `pull_request` with branch/name heuristics (`finding-autofix`, Copilot autofix) to avoid running sync on every PR.
 - Reuse `scripts/sync_greenfield_install.py` and manifest — do not duplicate mirror logic.
 - Coordinate with [E06:S09:T21](../../epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T21-lean-adopter-distribution-footprint-fr110.md) for FR-110 policy alignment.
-- **IPW required** before implementation ([FR-083](../../../fr-br/FR-083-global-ipw-gated-implementation-contract.md)).
+- **IPW required** before implementation ([FR-083](../../../fbu/FR-083-global-ipw-gated-implementation-contract.md)).
 
 ---
 
 ## BR-110 forensic closure (v0.8.3.23+3)
 
-[BR-110](../../../fr-br/BR-110-rw-k-dpz-rejection-doc-init-build-zero-guard-mismatch.md) was filed on this task. The `art_doc_policy_zero` resolver fix landed in **v0.6.9.38+0** (E06:S09:T38 kanban-init wave). Release **v0.8.3.23+3** provides a dedicated **E08:S03:T23** commit/tag for traceability cleanliness without re-shipping that code.
+[BR-110](../../../fbu/BR-110-rw-k-dpz-rejection-doc-init-build-zero-guard-mismatch.md) was filed on this task. The `art_doc_policy_zero` resolver fix landed in **v0.6.9.38+0** (E06:S09:T38 kanban-init wave). Release **v0.8.3.23+3** provides a dedicated **E08:S03:T23** commit/tag for traceability cleanliness without re-shipping that code.
 
 ---
 
@@ -92,7 +92,7 @@ Manual `python scripts/sync_greenfield_install.py` on each PR is reactive and do
 
 ## References
 
-- [BR-109](../../../fr-br/BR-109-greenfield-autofix-dual-tree-sync-drift-recurring-ci-failures.md)
+- [BR-109](../../../fbu/BR-109-greenfield-autofix-dual-tree-sync-drift-recurring-ci-failures.md)
 - [IPP-E08S03T23-greenfield-sync-autofix-ci-hardening-br109](../../../../implementation-cycles/IPP-E08S03T23-greenfield-sync-autofix-ci-hardening-br109.md)
 - [`.github/workflows/greenfield-install.yml`](../../../../../.github/workflows/greenfield-install.yml)
 - [`scripts/sync_greenfield_install.py`](../../../../../scripts/sync_greenfield_install.py)

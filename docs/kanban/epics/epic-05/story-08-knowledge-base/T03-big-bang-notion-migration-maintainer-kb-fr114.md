@@ -22,14 +22,14 @@ Publication Status: NOT_APPLICABLE
 
 ## Associated FR
 
-- [FR-114 — Split documentation surfaces (Docusaurus public + Notion maintainer KB)](../../../fr-br/FR-114-split-documentation-surfaces-docusaurus-public-notion-maintainer-kb.md)
+- [FR-114 — Split documentation surfaces (Docusaurus public + Notion maintainer KB)](../../../fbu/FR-114-split-documentation-surfaces-docusaurus-public-notion-maintainer-kb.md)
 
 ---
 
 ## Input
 
 - [IPP-E05S08T03-big-bang-notion-migration-maintainer-kb-fr114.md](../../../../implementation-cycles/IPP-E05S08T03-big-bang-notion-migration-maintainer-kb-fr114.md)
-- [FR-114](../../../fr-br/FR-114-split-documentation-surfaces-docusaurus-public-notion-maintainer-kb.md) three-surface model and big-bang decision
+- [FR-114](../../../fbu/FR-114-split-documentation-surfaces-docusaurus-public-notion-maintainer-kb.md) three-surface model and big-bang decision
 - `rw-config.yaml` → `notion_hub_url`, `notion_kb_url` (`rmearssolutions@gmail.com` workspace)
 - [E05:S08:T02](T02-notion-hub-and-kb-index.md) — hub, KB container, [`KB-INDEX.md`](../../../../knowledge/KB-INDEX.md)
 - [`scripts/kb_index.py`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/scripts/kb_index.py) migration inventory
@@ -68,6 +68,6 @@ Publication Status: NOT_APPLICABLE
 ## References
 
 - [IPP-E05S08T03-big-bang-notion-migration-maintainer-kb-fr114.md](../../../../implementation-cycles/IPP-E05S08T03-big-bang-notion-migration-maintainer-kb-fr114.md)
-- [FR-114](../../../fr-br/FR-114-split-documentation-surfaces-docusaurus-public-notion-maintainer-kb.md)
+- [FR-114](../../../fbu/FR-114-split-documentation-surfaces-docusaurus-public-notion-maintainer-kb.md)
 - [E05:S09:T15](../story-09-docusaurus-documentation-portal/T15-docusaurus-adopter-public-publish-allowlist-fr114.md)
 - [building-persistent-knowledge.md](../../../../knowledge/guides/building-persistent-knowledge.md)

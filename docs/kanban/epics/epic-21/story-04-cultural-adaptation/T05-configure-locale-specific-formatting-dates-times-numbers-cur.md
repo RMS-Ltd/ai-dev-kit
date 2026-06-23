@@ -82,7 +82,7 @@ Validate that E21:S02:T05 formatting profiles align with E21:S04:T01 cultural ex
 RW -k E21:S04:T05 --art --dpz
 ```
 
-**Target version anchor:** `v0.21.4.5+0` (doc-init BUILD +0 per [BR-067](../../../fr-br/BR-067-rw-first-doc-only-release-defaults-to-build-plus-one-not-plus-zero.md)).
+**Target version anchor:** `v0.21.4.5+0` (doc-init BUILD +0 per [BR-067](../../../fbu/BR-067-rw-first-doc-only-release-defaults-to-build-plus-one-not-plus-zero.md)).
 
 ---
 
@@ -106,5 +106,5 @@ Migrated from embedded Story section via `generate_task_doc.py` (FR-016 Wave 1 t
 - [IPP-E21S02T05-locale-formatting.md](../../../../implementation-cycles/IPP-E21S02T05-locale-formatting.md)
 - [locale-formatting-conventions.md](../../../../governance/standards/locale-formatting-conventions.md)
 - [locale-cultural-requirements.md](../../../../governance/standards/locale-cultural-requirements.md)
-- [FR-006](../../../fr-br/FR-006-localization-language-selection-uk-us-english.md)
+- [FR-006](../../../fbu/FR-006-localization-language-selection-uk-us-english.md)
 - [E21:S04 story](../story-04-cultural-adaptation.md)

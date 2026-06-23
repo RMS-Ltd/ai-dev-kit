@@ -123,11 +123,11 @@ IPW_GOVERNANCE_REL_CANDIDATES = (
 
 # Supersede chain (FR-092 Wave 0).
 SUPERSEDED_FBUS = (
-    "docs/kanban/fr-br/"
+    "docs/kanban/fbu/"
     "FR-091-rw-step-7-self-sufficient-scoped-kanban-reconciliation-without-ukw-dependency.md",
-    "docs/kanban/fr-br/"
+    "docs/kanban/fbu/"
     "FR-090-ukw-canonical-row-transform-engine-and-board-specific-rendering-contracts.md",
-    "docs/kanban/fr-br/"
+    "docs/kanban/fbu/"
     "FR-084-ipp-post-run-governance-reconciliation-ownership.md",
 )
 SUPERSEDED_TASKS = (
@@ -142,11 +142,11 @@ SUPERSEDED_TASKS = (
     "T06-rw-step-7-self-sufficient-scoped-kanban-reconciliation-fr091.md",
 )
 GATED_FBUS = (
-    "docs/kanban/fr-br/"
+    "docs/kanban/fbu/"
     "BR-069-kboard-fbuboard-earliest-last-modified-timestamps-overwritten.md",
-    "docs/kanban/fr-br/"
+    "docs/kanban/fbu/"
     "BR-070-rw-k-stage-files-completeness-gap-allows-partial-kanban-commit.md",
-    "docs/kanban/fr-br/"
+    "docs/kanban/fbu/"
     "UXR-009-last-modified-stamp-forensic-integrity-and-drift-protection.md",
 )
 
@@ -516,7 +516,7 @@ def gate_2_supersede_chain(project_root: Path) -> GateVerdict:
 
     br042 = (
         project_root
-        / "docs/kanban/fr-br/"
+        / "docs/kanban/fbu/"
         "BR-042-ukw-agent-board-cleanup-failure.md"
     )
     text = _read_text_or_none(br042)

@@ -45,7 +45,7 @@ Implement Layer 1 CLI accessibility per [IPP-E21S08T01](../../../../../implement
 - [ADR-025](../../../../../architecture/standards-and-adrs/ADR-025-layered-accessibility-strategy.md) (Layer 1 exit criteria L1-1–L1-8)
 - [T01 baseline audit](../../../../../knowledge/analysis/adk-accessibility-baseline-layer1-cli.md)
 - [IPP-E21S08T03](../../../../../implementation-cycles/IPP-E21S08T03-cli-terminal-accessibility.md)
-- [FR-115](../../../../fr-br/FR-115-accessibility-standards-compatibility.md)
+- [FR-115](../../../../fbu/FR-115-accessibility-standards-compatibility.md)
 
 ---
 

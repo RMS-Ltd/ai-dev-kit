@@ -75,7 +75,7 @@ Fix critical bugs in Kanban package installation process and implement actual ag
   - **Acceptance:** ✅ Criterion 1 of BR-008 and FR-1 of FR-010 satisfied.
 
 
-- [ ] **E04:S09:T07 – FR-010: Template task installation — two-phase migration** - TODO — [Task doc](story-09-bug-fixes-and-agentic-intelligence/T07-fr010-template-task-installation-two-phase-migration.md) | [FR-010 (templates)](../../fr-br/FR-010-template-task-installation-two-phase-migration.md)
+- [ ] **E04:S09:T07 – FR-010: Template task installation — two-phase migration** - TODO — [Task doc](story-09-bug-fixes-and-agentic-intelligence/T07-fr010-template-task-installation-two-phase-migration.md) | [FR-010 (templates)](../../fbu/FR-010-template-task-installation-two-phase-migration.md)
 
 - [x] **E04:S09:T06 – FR-010: Implement actual agentic intelligence for task mapping** ✅ COMPLETE (FOUNDATION IMPLEMENTED)
   - **Status:** Foundation implemented with extensible framework for LLM integration
@@ -111,10 +111,10 @@ Fix critical bugs in Kanban package installation process and implement actual ag
 
 ## References
 
-- BR-007: `docs/kanban/fr-br/BR-007-multiple-bugs-kanban-package-installation.md`
-- BR-008: `docs/kanban/fr-br/BR-008-arbitrary-80-threshold-contradicts-agentic-intelligence.md`
-- FR-010: `docs/kanban/fr-br/FR-010-implement-actual-agentic-intelligence-task-mapping.md`
-- UXR-004: `docs/kanban/fr-br/UXR-004-kanban-package-installation-uat.md`
+- BR-007: `docs/kanban/fbu/BR-007-multiple-bugs-kanban-package-installation.md`
+- BR-008: `docs/kanban/fbu/BR-008-arbitrary-80-threshold-contradicts-agentic-intelligence.md`
+- FR-010: `docs/kanban/fbu/FR-010-implement-actual-agentic-intelligence-task-mapping.md`
+- UXR-004: `docs/kanban/fbu/UXR-004-kanban-package-installation-uat.md`
 - GitHub Issues: #9, #10, #11, #13
 
 ---

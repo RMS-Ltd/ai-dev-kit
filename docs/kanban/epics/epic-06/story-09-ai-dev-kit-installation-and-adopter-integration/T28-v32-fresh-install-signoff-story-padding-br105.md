@@ -18,17 +18,17 @@ housekeeping_policy: keep
 **Code:** E06S09T28  
 
 **Parent program:** [E06:S09:T26](T26-starborn-legacy-adk-install-program.md)  
-**Upstream:** [BR-105](../../../fr-br/BR-105-v32-fresh-install-signoff-story-padding-mismatch.md) · triage **F18**
+**Upstream:** [BR-105](../../../fbu/BR-105-v32-fresh-install-signoff-story-padding-mismatch.md) · triage **F18**
 
 ---
 
 ## Input
 
 - [IPP-E06S09T28 — BR-105 v3.2 sign-off story padding](../../../../implementation-cycles/IPP-E06S09T28-br105-v32-signoff-story-padding.md)
-- [BR-105](../../../fr-br/BR-105-v32-fresh-install-signoff-story-padding-mismatch.md)
+- [BR-105](../../../fbu/BR-105-v32-fresh-install-signoff-story-padding-mismatch.md)
 - SBL attempt 05 FB: `adk-install-into-sbl/attempt-05/feedback-package/SUBMISSION.md`
 - Sign-off transcript: `…/attempt-05/transcripts/20260610T183541Z-phase4-signoff.txt`
-- [BR-086](../../../fr-br/BR-086-rw-install-lowercase-fresh-kanban-patterns-signoff.md) (prior fix — book replay)
+- [BR-086](../../../fbu/BR-086-rw-install-lowercase-fresh-kanban-patterns-signoff.md) (prior fix — book replay)
 
 ---
 

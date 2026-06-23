@@ -810,7 +810,7 @@ When the task document **already exists** and the release is **docs-only** but p
 4. **Constraints:** Change set MUST remain docs-only; `--dpz` requires both `--requested` and `--art`.
 5. **Default without flag:** Existing task doc + docs-only → BUILD increments (+1) unless first-time doc-init detection applies.
 
-See [BR-067 policy table](../../../../../../docs/kanban/fr-br/BR-067-rw-first-doc-only-release-defaults-to-build-plus-one-not-plus-zero.md) and [workflow-initiation-cheatsheet.md](../../../../../../docs/guides/workflow-initiation-cheatsheet.md) §2.
+See [BR-067 policy table](../../../../../../docs/kanban/fbu/BR-067-rw-first-doc-only-release-defaults-to-build-plus-one-not-plus-zero.md) and [workflow-initiation-cheatsheet.md](../../../../../../docs/guides/workflow-initiation-cheatsheet.md) §2.
 
 **B. IDENTIFY COMPLETED TASK (MANDATORY - ONLY IF NOT UKW CONTEXT):**
 2. **ANALYZE (continued):**
@@ -1082,10 +1082,10 @@ See [BR-067 policy table](../../../../../../docs/kanban/fr-br/BR-067-rw-first-do
 - **ALWAYS validate before and after** - Catch errors before they propagate
 - **ALWAYS document your decision** - Show your work for traceability
 - See `docs/architecture/standards-and-adrs/versioning-error-reference-guide.md` for error prevention reference
-- See `docs/kanban/fr-br/FR-017-versioning-policy-hardening-doc-init-build.md` for doc-init requirements (FR-017)
-- See `docs/kanban/fr-br/BR-067-rw-first-doc-only-release-defaults-to-build-plus-one-not-plus-zero.md` for **BUILD +0 on existing E/S/T** via **`--dpz`** (alias: `--doc-policy-zero`; BR-067)
-- See `docs/kanban/fr-br/FR-016-kanban-granularity-discrete-task-docs.md` for Task document requirements (FR-016)
-- See `docs/kanban/fr-br/FR-018-abstract-space-for-zero-numbered-est-docs.md` for abstract space concept (FR-018)
+- See `docs/kanban/fbu/FR-017-versioning-policy-hardening-doc-init-build.md` for doc-init requirements (FR-017)
+- See `docs/kanban/fbu/BR-067-rw-first-doc-only-release-defaults-to-build-plus-one-not-plus-zero.md` for **BUILD +0 on existing E/S/T** via **`--dpz`** (alias: `--doc-policy-zero`; BR-067)
+- See `docs/kanban/fbu/FR-016-kanban-granularity-discrete-task-docs.md` for Task document requirements (FR-016)
+- See `docs/kanban/fbu/FR-018-abstract-space-for-zero-numbered-est-docs.md` for abstract space concept (FR-018)
 
 ---
 
@@ -1573,7 +1573,7 @@ The Versioning Policy requires that:
   handler: release.br_fr_update
   dependencies: [step-2]
   config:
-    fr_br_root: docs/kanban/fr-br  # Default location for FR/BR files
+    fbu_root: docs/kanban/fbu  # Default location for FR/BR files
     br_pattern: BR-*.md
     fr_pattern: FR-*.md
 ```
@@ -1587,8 +1587,8 @@ The Versioning Policy requires that:
      - [Example: ai-dev-kit] `E2:S01:T01`
    - Get release summary from workflow parameters
    - Extract Epic/Story/Task from completed task identifier
-   - **Use config paths:** Find FR/BR root directory (from config `fr_br_root` or fallback):
-     - [Example: ai-dev-kit] `docs/kanban/fr-br` (or from `rw-config.yaml` if present)
+   - **Use config paths:** Find FR/BR root directory (from config `fbu_root` or fallback):
+     - [Example: ai-dev-kit] `docs/kanban/fbu` (or from `rw-config.yaml` if present)
    - Understand BR/FR linking pattern:
      - BRs/FRs are linked to Tasks via "Intake Decision" section
      - Search for BR/FR files that reference the completed task
@@ -1686,7 +1686,7 @@ The Versioning Policy requires that:
 
 ### Step 7: Scoped Kanban Reconciliation (Self-Sufficient)
 
-**Canonical name (FR-092 / FR-091, supersedes FR-038 framing):** Step 7 is **Scoped Kanban Reconciliation (Self-Sufficient)** — RW owns release-scope kanban consistency end-to-end and does **not** depend on a follow-up UKW run for release correctness. Step 7 invokes the shared kanban intelligence model with `invocation_context: rw_step_7`; **UKW remains a reactive, optional drift-repair workflow** for cumulative cross-cutting board hygiene and is **not a process dependency** for RW completion. (See [`FR-092`](../../../../../../docs/kanban/fr-br/FR-092-canonical-rw-ukw-kanban-consistency-program.md) and [`FR-091`](../../../../../../docs/kanban/fr-br/FR-091-rw-step-7-self-sufficient-scoped-kanban-reconciliation-without-ukw-dependency.md). FR-038 is wired as Bucket-D1 historical predecessor.)
+**Canonical name (FR-092 / FR-091, supersedes FR-038 framing):** Step 7 is **Scoped Kanban Reconciliation (Self-Sufficient)** — RW owns release-scope kanban consistency end-to-end and does **not** depend on a follow-up UKW run for release correctness. Step 7 invokes the shared kanban intelligence model with `invocation_context: rw_step_7`; **UKW remains a reactive, optional drift-repair workflow** for cumulative cross-cutting board hygiene and is **not a process dependency** for RW completion. (See [`FR-092`](../../../../../../docs/kanban/fbu/FR-092-canonical-rw-ukw-kanban-consistency-program.md) and [`FR-091`](../../../../../../docs/kanban/fbu/FR-091-rw-step-7-self-sufficient-scoped-kanban-reconciliation-without-ukw-dependency.md). FR-038 is wired as Bucket-D1 historical predecessor.)
 
 **RW preventive vs UKW corrective separation (architecture, not just operational guidance):**
 
@@ -2444,7 +2444,7 @@ $ python packages/frameworks/workflow-mgt/scripts/update_kanban_docs.py --dry-ru
 - **Validator:** `packages/frameworks/workflow-mgt/scripts/validate_rw_step7_post_commit.py`
 - **Tests:** `packages/frameworks/workflow-mgt/scripts/test_validate_rw_step7_post_commit.py`
 - **Pre-commit gate:** Step 8 (`validate_rw_step7_completeness.py`)
-- **BR-070:** `docs/kanban/fr-br/BR-070-rw-k-stage-files-completeness-gap-allows-partial-kanban-commit.md`
+- **BR-070:** `docs/kanban/fbu/BR-070-rw-k-stage-files-completeness-gap-allows-partial-kanban-commit.md`
 
 ---
 

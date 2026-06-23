@@ -33,7 +33,7 @@ Adjust branch validation behavior for `dev` so it does not enforce epic/version 
 
 ## Input
 
-- [BR-064](../../../fr-br/BR-064-rw-dev-branch-should-not-enforce-epic-lock.md)
+- [BR-064](../../../fbu/BR-064-rw-dev-branch-should-not-enforce-epic-lock.md)
 - `packages/frameworks/workflow-mgt/scripts/validation/validate_branch_context.py`
 - `rw-config.yaml`
 
@@ -58,5 +58,5 @@ Adjust branch validation behavior for `dev` so it does not enforce epic/version 
 
 ## Links
 
-- [BR-064](../../../fr-br/BR-064-rw-dev-branch-should-not-enforce-epic-lock.md)
+- [BR-064](../../../fbu/BR-064-rw-dev-branch-should-not-enforce-epic-lock.md)
 - [Story E2:S01](../story-01-rw-agent-execution-and-docs.md)

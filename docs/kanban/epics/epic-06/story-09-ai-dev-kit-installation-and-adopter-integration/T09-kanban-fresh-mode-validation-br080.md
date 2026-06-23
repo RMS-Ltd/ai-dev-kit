@@ -15,7 +15,7 @@ housekeeping_policy: keep
 **Last updated:** 2026-06-03 (RW **v0.6.9.9+2** — BR-080 implementation release)  
 **Code:** E06S09T09
 
-**Upstream:** [BR-080](../../../fr-br/BR-080-kanban-fresh-mode-validation-requires-force-on-empty-repo.md) · [GitHub #12](https://github.com/RMS-Ltd/ai-dev-kit/issues/12)
+**Upstream:** [BR-080](../../../fbu/BR-080-kanban-fresh-mode-validation-requires-force-on-empty-repo.md) · [GitHub #12](https://github.com/RMS-Ltd/ai-dev-kit/issues/12)
 
 ## Version Anchor
 
@@ -31,7 +31,7 @@ Relax or reorder pre-install validation for `--mode fresh` on empty repos so fir
 
 ## Input
 
-- [BR-080](../../../fr-br/BR-080-kanban-fresh-mode-validation-requires-force-on-empty-repo.md)
+- [BR-080](../../../fbu/BR-080-kanban-fresh-mode-validation-requires-force-on-empty-repo.md)
 - `install_kanban_framework.py` validation path for fresh mode
 - **IPW:** [IPP-E6S9T9-br080-fresh-mode-empty-repo-validation.md](../../../../implementation-cycles/IPP-E06S09T09-br080-fresh-mode-empty-repo-validation.md) — **Publication Status: PUBLISHED**
 
@@ -54,7 +54,7 @@ Relax or reorder pre-install validation for `--mode fresh` on empty repos so fir
 
 ## Links
 
-- [BR-080](../../../fr-br/BR-080-kanban-fresh-mode-validation-requires-force-on-empty-repo.md)
+- [BR-080](../../../fbu/BR-080-kanban-fresh-mode-validation-requires-force-on-empty-repo.md)
 - [IPP-E6S9T9](../../../../implementation-cycles/IPP-E06S09T09-br080-fresh-mode-empty-repo-validation.md)
-- [BR-078](../../../fr-br/BR-078-kanban-fresh-install-structure-template-missing.md)
+- [BR-078](../../../fbu/BR-078-kanban-fresh-install-structure-template-missing.md)
 - [Story 009](../story-09-ai-dev-kit-installation-and-adopter-integration.md)

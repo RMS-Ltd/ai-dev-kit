@@ -15,7 +15,7 @@ housekeeping_policy: keep
 **Completed:** 2025-12-21  
 **Version:** v0.6.7.15+1
 
-**Feature Request:** [FR-028](../../../fr-br/FR-028-cursor-ide-performance-considerations-awareness.md)  
+**Feature Request:** [FR-028](../../../fbu/FR-028-cursor-ide-performance-considerations-awareness.md)  
 **Code:** E06S07T15
 
 ---
@@ -48,7 +48,7 @@ Create awareness documentation and update framework guidance for Cursor IDE perf
 
 ## Input
 
-- **Feature Request:** [`FR-028-cursor-ide-performance-considerations-awareness.md`](../../../fr-br/FR-028-cursor-ide-performance-considerations-awareness.md)
+- **Feature Request:** [`FR-028-cursor-ide-performance-considerations-awareness.md`](../../../fbu/FR-028-cursor-ide-performance-considerations-awareness.md)
   - Problem statement and proposed solution
   - Acceptance criteria
 

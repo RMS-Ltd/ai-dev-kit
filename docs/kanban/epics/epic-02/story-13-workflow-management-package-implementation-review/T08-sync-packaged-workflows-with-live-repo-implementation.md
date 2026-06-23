@@ -18,7 +18,7 @@ housekeeping_policy: keep
 **Story:** E02:S13 – Workflow Management Package Implementation Review  
 **Code:** E02S13T08  
 **Version Anchor:** ✅ COMPLETE (v0.2.13.8+2)  
-**Source FR:** [FR-106](../../../fr-br/FR-106-packaged-workflows-sync-with-live-repo-implementation.md)
+**Source FR:** [FR-106](../../../fbu/FR-106-packaged-workflows-sync-with-live-repo-implementation.md)
 
 ---
 
@@ -104,10 +104,10 @@ Live workflow behavior evolves in repo-root agent specs and vwmp guides, while p
 
 ## Related Work
 
-- **[FR-106](../../../fr-br/FR-106-packaged-workflows-sync-with-live-repo-implementation.md)** — source feature request (implementing task)
-- [FR-049](../../../fr-br/FR-049-canonical-rw-step-list-single-source-of-truth.md) — canonical step list refreshed (`canonical-rw-steps.yaml` v2.0.0, 2026-06-03)
-- [FR-050](../../../fr-br/FR-050-workflows-directory-structure-reorganization.md) — directory reorg (pending intake)
-- [FR-056](../../../fr-br/FR-056-standardize-packaged-workflow-documentation-and-instructions.md) — packaged README standardization (complete)
+- **[FR-106](../../../fbu/FR-106-packaged-workflows-sync-with-live-repo-implementation.md)** — source feature request (implementing task)
+- [FR-049](../../../fbu/FR-049-canonical-rw-step-list-single-source-of-truth.md) — canonical step list refreshed (`canonical-rw-steps.yaml` v2.0.0, 2026-06-03)
+- [FR-050](../../../fbu/FR-050-workflows-directory-structure-reorganization.md) — directory reorg (pending intake)
+- [FR-056](../../../fbu/FR-056-standardize-packaged-workflow-documentation-and-instructions.md) — packaged README standardization (complete)
 - [E02:S13:T03–T05](T01-expectations-baseline.md) — validation / gap log (may reference T08 evidence)
 
 ---

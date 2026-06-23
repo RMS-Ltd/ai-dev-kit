@@ -18,7 +18,7 @@ housekeeping_policy: keep
 **Version:** v0.8.3.17+4
 **Code:** E08S03T17
 
-**Upstream:** [FR-113 — Local Code Quality Gate (CQG)](../../../fr-br/FR-113-local-code-quality-gate-cqg.md)
+**Upstream:** [FR-113 — Local Code Quality Gate (CQG)](../../../fbu/FR-113-local-code-quality-gate-cqg.md)
 
 Publication Status: NOT_APPLICABLE
 
@@ -26,7 +26,7 @@ Publication Status: NOT_APPLICABLE
 
 ## Input
 
-- [FR-113](../../../fr-br/FR-113-local-code-quality-gate-cqg.md) — requirements, trigger-model analysis, acceptance criteria
+- [FR-113](../../../fbu/FR-113-local-code-quality-gate-cqg.md) — requirements, trigger-model analysis, acceptance criteria
 - [IPP-E08S03T17 — Local Code Quality Gate (CQG)](../../../../implementation-cycles/IPP-E08S03T17-local-code-quality-gate-cqg-fr113.md) — planning package (IPW)
 - [GitHub Code Quality — Metrics and ratings](https://docs.github.com/en/code-security/code-quality/reference/metrics-and-ratings)
 - [GitHub Code Quality — CodeQL detection](https://docs.github.com/en/code-security/code-quality/reference/codeql-detection)
@@ -162,10 +162,10 @@ CQG is **not** a standalone repo-root utility. Deliverables split across ADK lay
 
 - [IPP-E08S03T17 — Local Code Quality Gate (CQG)](../../../../implementation-cycles/IPP-E08S03T17-local-code-quality-gate-cqg-fr113.md)
 - [ADR-022 — Local Code Quality Gate architecture](../../../../architecture/standards-and-adrs/ADR-022-local-code-quality-gate-architecture.md)
-- [FR-113](../../../fr-br/FR-113-local-code-quality-gate-cqg.md)
-- [FR-112](../../../fr-br/FR-112-perpetual-github-ci-and-security-health-lanes.md)
+- [FR-113](../../../fbu/FR-113-local-code-quality-gate-cqg.md)
+- [FR-112](../../../fbu/FR-112-perpetual-github-ci-and-security-health-lanes.md)
 - [Framework dependency architecture](../../../../architecture/standards-and-adrs/framework-dependency-architecture.md)
 - [RW validators consumer layout](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/docs/rw-validators-consumer-layout.md)
 - [Tooling-automation validators README](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/tooling-automation/validators/README.md)
-- [FR-106 — Packaged workflows sync](../../../../../kanban/fr-br/FR-106-packaged-workflows-sync-with-live-repo-implementation.md)
+- [FR-106 — Packaged workflows sync](../../../../../kanban/fbu/FR-106-packaged-workflows-sync-with-live-repo-implementation.md)
 - [Workflow configuration — `security-and-quality` suite](https://docs.github.com/en/code-security/reference/code-scanning/workflow-configuration-options)

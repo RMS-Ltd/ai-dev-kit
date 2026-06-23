@@ -9,7 +9,7 @@ housekeeping_policy: keep
 # E05:S08:T07 — Planning: Optional Obsidian editor profiles (greenfield install)
 
 **Host Task:** [`T07-optional-obsidian-editor-profiles-greenfield-install-fr121.md`](../kanban/epics/epic-05/story-08-knowledge-base/T07-optional-obsidian-editor-profiles-greenfield-install-fr121.md) **(E05:S08:T07)**  
-**Planning for:** [FR-121](../kanban/fr-br/FR-121-git-internal-maintainer-kb-oss-documentation-surfaces.md) (F4 installer emission, F5, NF4)  
+**Planning for:** [FR-121](../kanban/fbu/FR-121-git-internal-maintainer-kb-oss-documentation-surfaces.md) (F4 installer emission, F5, NF4)  
 **Status:** Complete — shipped @ v0.5.8.7+1 (FR-121 wave 3)
 
 > **IPW (Implementation Planning Workflow):** FR-121 wave 3. Depends on [IPP-E05S08T06](IPP-E05S08T06-adr-026-git-maintainer-authoring-bootstrap-fr121.md) (ADR-026 + `rw-config` schema @ v0.5.8.6+1).
@@ -209,8 +209,8 @@ No portal pytest AC. Greenfield sync required for `packages/frameworks/**`.
 
 ## References
 
-- [FR-121](../kanban/fr-br/FR-121-git-internal-maintainer-kb-oss-documentation-surfaces.md)
+- [FR-121](../kanban/fbu/FR-121-git-internal-maintainer-kb-oss-documentation-surfaces.md)
 - [T07 task doc](../kanban/epics/epic-05/story-08-knowledge-base/T07-optional-obsidian-editor-profiles-greenfield-install-fr121.md)
 - [IPP-E05S08T06](IPP-E05S08T06-adr-026-git-maintainer-authoring-bootstrap-fr121.md)
 - [ADR-026](../architecture/standards-and-adrs/ADR-026-git-internal-maintainer-kb-fr121.md)
-- [FR-080](../kanban/fr-br/FR-080-greenfield-installation-process.md)
+- [FR-080](../kanban/fbu/FR-080-greenfield-installation-process.md)

@@ -24,7 +24,7 @@ This guide explains the **pattern catalog + validator + Cursor playbook** model 
 | Playbook | This guide | Tune `permissions.json`; optional IDE UI for gaps |
 | Evidence | [ide-whitelist-uat-log.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/developer-tools/ide-whitelist-uat-log.md) | UAT and integration spike entries |
 
-**Out of scope:** [BR-039](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/kanban/fr-br/BR-039-cascade-whitelist-security-prompt-usability-blocker.md) (Cascade/Windsurf vendor whitelist). See [E06:S06:T57](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/kanban/epics/epic-06/story-06-feature-requests/T57-br039-cascade-whitelist-security-prompt-blocker.md).
+**Out of scope:** [BR-039](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/kanban/fbu/BR-039-cascade-whitelist-security-prompt-usability-blocker.md) (Cascade/Windsurf vendor whitelist). See [E06:S06:T57](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/kanban/epics/epic-06/story-06-feature-requests/T57-br039-cascade-whitelist-security-prompt-blocker.md).
 
 ---
 

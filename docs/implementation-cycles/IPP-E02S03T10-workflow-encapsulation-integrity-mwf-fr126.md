@@ -9,7 +9,7 @@ housekeeping_policy: keep
 # E02:S03:T10 — Planning: Workflow encapsulation integrity audit (FR-126)
 
 **Host Task:** [`T10-workflow-encapsulation-integrity-mwf-fr126.md`](../kanban/epics/epic-02/story-03-additional-workflows-and-examples/T10-workflow-encapsulation-integrity-mwf-fr126.md) **(E02:S03:T10)**  
-**Planning for:** [FR-126 — Workflow encapsulation integrity audit for MWF leverage](../kanban/fr-br/FR-126-workflow-encapsulation-integrity-mwf-leverage.md)  
+**Planning for:** [FR-126 — Workflow encapsulation integrity audit for MWF leverage](../kanban/fbu/FR-126-workflow-encapsulation-integrity-mwf-leverage.md)  
 **Status:** Published (MWF Leg 1 — IPW)
 
 ---
@@ -145,7 +145,7 @@ All CREATE paths under `packages/frameworks/workflow-mgt/` — **PUBLISHED**; gr
 
 ## References
 
-- [FR-126](../kanban/fr-br/FR-126-workflow-encapsulation-integrity-mwf-leverage.md)
-- [FR-124](../kanban/fr-br/FR-124-meta-workflow-orchestration-composite-workflow-chains.md)
-- [BR-102](../kanban/fr-br/BR-102-mwf-chain-paused-instead-of-subagent-leg-delegation.md)
+- [FR-126](../kanban/fbu/FR-126-workflow-encapsulation-integrity-mwf-leverage.md)
+- [FR-124](../kanban/fbu/FR-124-meta-workflow-orchestration-composite-workflow-chains.md)
+- [BR-102](../kanban/fbu/BR-102-mwf-chain-paused-instead-of-subagent-leg-delegation.md)
 - [workflow-registry.yaml](../packages/frameworks/workflow-mgt/workflows/workflow-registry.yaml)

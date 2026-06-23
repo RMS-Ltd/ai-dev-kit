@@ -8,14 +8,14 @@ housekeeping_policy: keep
 
 # Task E07:S00:T05 – UXR-005 Repository Anchor
 
-> **HISTORICAL REGISTRY ANCHOR** — Do not use for RW or new intake. **Primary implementing task:** [E07:S01:T09](../story-01-codebase-maintenance-tasks/E07S01T09-kanban-template-governance.md). Detasked per [BR-076](../../../fr-br/BR-076-e7-s00-must-not-host-concrete-tasks.md).
+> **HISTORICAL REGISTRY ANCHOR** — Do not use for RW or new intake. **Primary implementing task:** [E07:S01:T09](../story-01-codebase-maintenance-tasks/E07S01T09-kanban-template-governance.md). Detasked per [BR-076](../../../fbu/BR-076-e7-s00-must-not-host-concrete-tasks.md).
 
 **Task ID:** E07:S00:T05  
 **Status:** HISTORICAL (superseded)  
 **Priority:** N/A  
 **Version Anchor:** v0.7.0.5+1 (historical)  
 
-**UXR:** [UXR-005](../../../fr-br/UXR-005-kanban-board-formatting-and-governance.md)  
+**UXR:** [UXR-005](../../../fbu/UXR-005-kanban-board-formatting-and-governance.md)  
 **Primary implementing task:** [E07:S01:T09](../story-01-codebase-maintenance-tasks/E07S01T09-kanban-template-governance.md)
 
 ---
@@ -28,7 +28,7 @@ Repository anchor for **UXR-005** (Kanban spacing / governance); implementation 
 
 ## Input
 
-- [UXR-005](../../../fr-br/UXR-005-kanban-board-formatting-and-governance.md)  
+- [UXR-005](../../../fbu/UXR-005-kanban-board-formatting-and-governance.md)  
 - [E07S01T09 – Kanban template governance](../story-01-codebase-maintenance-tasks/E07S01T09-kanban-template-governance.md)
 
 ---

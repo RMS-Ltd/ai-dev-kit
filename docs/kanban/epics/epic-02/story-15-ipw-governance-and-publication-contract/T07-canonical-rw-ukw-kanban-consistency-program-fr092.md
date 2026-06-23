@@ -17,7 +17,7 @@ housekeeping_policy: keep
 **Code:** E02S15T07
 **Version Anchor:** v0.2.15.7+9
 
-**Upstream:** [FR-092 — Canonical RW/UKW kanban consistency program (meta)](../../../fr-br/FR-092-canonical-rw-ukw-kanban-consistency-program.md)  
+**Upstream:** [FR-092 — Canonical RW/UKW kanban consistency program (meta)](../../../fbu/FR-092-canonical-rw-ukw-kanban-consistency-program.md)  
 **IPP:** [`IPP-E2S15T7-canonical-rw-ukw-kanban-consistency-program.md`](../../../../implementation-cycles/IPP-E2S15T07-canonical-rw-ukw-kanban-consistency-program.md)
 
 **Supersedes (this task absorbs):**
@@ -28,9 +28,9 @@ housekeeping_policy: keep
 
 **Gates closure of:**
 
-- [BR-069](../../../fr-br/BR-069-kboard-fbuboard-earliest-last-modified-timestamps-overwritten.md) (and [E02:S15:T04](T04-investigate-earliest-last-modified-timestamp-overwrite-regression-br069.md))
-- [BR-070](../../../fr-br/BR-070-rw-k-stage-files-completeness-gap-allows-partial-kanban-commit.md) (and E02:S01:T18)
-- [UXR-009](../../../fr-br/UXR-009-last-modified-stamp-forensic-integrity-and-drift-protection.md) (and E06:S07:T115)
+- [BR-069](../../../fbu/BR-069-kboard-fbuboard-earliest-last-modified-timestamps-overwritten.md) (and [E02:S15:T04](T04-investigate-earliest-last-modified-timestamp-overwrite-regression-br069.md))
+- [BR-070](../../../fbu/BR-070-rw-k-stage-files-completeness-gap-allows-partial-kanban-commit.md) (and E02:S01:T18)
+- [UXR-009](../../../fbu/UXR-009-last-modified-stamp-forensic-integrity-and-drift-protection.md) (and E06:S07:T115)
 
 ---
 
@@ -94,16 +94,16 @@ The 16 atomic issues from FR-092 are owned here, organized into eight execution 
 
 ## References
 
-- [FR-092 (upstream)](../../../fr-br/FR-092-canonical-rw-ukw-kanban-consistency-program.md)
-- [FR-091 (superseded contract)](../../../fr-br/FR-091-rw-step-7-self-sufficient-scoped-kanban-reconciliation-without-ukw-dependency.md)
-- [FR-090 (superseded contract)](../../../fr-br/FR-090-ukw-canonical-row-transform-engine-and-board-specific-rendering-contracts.md)
-- [FR-084 (superseded contract)](../../../fr-br/FR-084-ipp-post-run-governance-reconciliation-ownership.md)
-- [BR-069 (gated)](../../../fr-br/BR-069-kboard-fbuboard-earliest-last-modified-timestamps-overwritten.md)
-- [BR-070 (gated)](../../../fr-br/BR-070-rw-k-stage-files-completeness-gap-allows-partial-kanban-commit.md)
-- [UXR-009 (gated)](../../../fr-br/UXR-009-last-modified-stamp-forensic-integrity-and-drift-protection.md)
-- [FR-089 (predecessor + B2 drift)](../../../fr-br/FR-089-ipw-board-row-footer-duplication-validation-hardening.md)
-- [FR-038 (predecessor)](../../../fr-br/FR-038-rw-step-7-scoped-kanban-sync-ukw-mode.md)
-- [FR-076 (predecessor)](../../../fr-br/FR-076-ukw-fbuboard-scope-and-drift-concurrency-controls.md)
-- [BR-042 (close as duplicate)](../../../fr-br/BR-042-ukw-agent-board-cleanup-failure.md)
+- [FR-092 (upstream)](../../../fbu/FR-092-canonical-rw-ukw-kanban-consistency-program.md)
+- [FR-091 (superseded contract)](../../../fbu/FR-091-rw-step-7-self-sufficient-scoped-kanban-reconciliation-without-ukw-dependency.md)
+- [FR-090 (superseded contract)](../../../fbu/FR-090-ukw-canonical-row-transform-engine-and-board-specific-rendering-contracts.md)
+- [FR-084 (superseded contract)](../../../fbu/FR-084-ipp-post-run-governance-reconciliation-ownership.md)
+- [BR-069 (gated)](../../../fbu/BR-069-kboard-fbuboard-earliest-last-modified-timestamps-overwritten.md)
+- [BR-070 (gated)](../../../fbu/BR-070-rw-k-stage-files-completeness-gap-allows-partial-kanban-commit.md)
+- [UXR-009 (gated)](../../../fbu/UXR-009-last-modified-stamp-forensic-integrity-and-drift-protection.md)
+- [FR-089 (predecessor + B2 drift)](../../../fbu/FR-089-ipw-board-row-footer-duplication-validation-hardening.md)
+- [FR-038 (predecessor)](../../../fbu/FR-038-rw-step-7-scoped-kanban-sync-ukw-mode.md)
+- [FR-076 (predecessor)](../../../fbu/FR-076-ukw-fbuboard-scope-and-drift-concurrency-controls.md)
+- [BR-042 (close as duplicate)](../../../fbu/BR-042-ukw-agent-board-cleanup-failure.md)
 - [Story 015](../story-15-ipw-governance-and-publication-contract.md)
 - [IPP-E2S15T7](../../../../implementation-cycles/IPP-E2S15T07-canonical-rw-ukw-kanban-consistency-program.md)

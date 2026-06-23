@@ -11,7 +11,7 @@ housekeeping_policy: keep
 **Task ID:** E04:S08:T05  
 **Status:** COMPLETE  
 **Priority:** LOW  
-**Feature Request:** [FR-009](../../../fr-br/FR-009-intelligent-epic-matching-ai-assisted-canonical-adoption.md)
+**Feature Request:** [FR-009](../../../fbu/FR-009-intelligent-epic-matching-ai-assisted-canonical-adoption.md)
 
 **Planning artifact (IPP):** [IPP-E04S08T05-migration-plan-presentation-fr009.md](../../../../implementation-cycles/IPP-E04S08T05-migration-plan-presentation-fr009.md)
 
@@ -29,7 +29,7 @@ Deliver test-covered migration plan presentation in the Kanban installer: semant
 ## Input
 
 - Analysis report JSON from `analyze_structure.py`.
-- [FR-009](../../../fr-br/FR-009-intelligent-epic-matching-ai-assisted-canonical-adoption.md) AC-10.
+- [FR-009](../../../fbu/FR-009-intelligent-epic-matching-ai-assisted-canonical-adoption.md) AC-10.
 - [IPP-E04S08T05](../../../../implementation-cycles/IPP-E04S08T05-migration-plan-presentation-fr009.md)
 
 ---

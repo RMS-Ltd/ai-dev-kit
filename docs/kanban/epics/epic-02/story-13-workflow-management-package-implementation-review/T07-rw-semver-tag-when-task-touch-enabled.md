@@ -23,7 +23,7 @@ housekeeping_policy: keep
 
 FR-046 implementation and closure were delivered under the FR repository anchor task E05:S01:T46 (builds +2 through +7). Scope overlap included RW SemVer primary tagging, dual⇒task_touch validation, GitHub release alignment, and documentation.
 
-**Do not implement separately.** Track verification and release history on T46 and [FR-046](../../../fr-br/FR-046-rw-semver-tag-task-touch-mode.md).
+**Do not implement separately.** Track verification and release history on T46 and [FR-046](../../../fbu/FR-046-rw-semver-tag-task-touch-mode.md).
 
 Closure evidence: [`IPP-E5S1T46-fr046-closure-wave.md`](../../../../implementation-cycles/IPP-E5S01T46-fr046-closure-wave.md).
 
@@ -42,7 +42,7 @@ This work is motivated by the SemVer tag collision incident and is dependent on 
 
 ## Inputs
 
-- FR-046: `docs/kanban/fr-br/FR-046-rw-semver-tag-task-touch-mode.md`
+- FR-046: `docs/kanban/fbu/FR-046-rw-semver-tag-task-touch-mode.md`
 - FR repo anchor task: `docs/kanban/epics/epic-05/story-01-fr-repo/T46-rw-semver-tag-task-touch-mode.md`
 - Incident log: `docs/architecture/standards-and-adrs/semver-tag-collision-incident-2026-03-07.md`
 - RW config: `rw-config.yaml`

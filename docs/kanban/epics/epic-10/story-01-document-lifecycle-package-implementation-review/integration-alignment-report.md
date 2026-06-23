@@ -244,6 +244,6 @@ T01 expectations baseline explicitly lists these as **documented-future, not T01
 - [expectations-baseline.md](expectations-baseline.md)
 - [E02:S13 integration-alignment-report precedent](../../epic-02/story-13-workflow-management-package-implementation-review/integration-alignment-report.md)
 - [E10S01 orchestration plan §7.4 T04](../../../../implementation-cycles/E10S01-orchestration-plan.md)
-- [FR-110 — greenfield-install](../../../fr-br/FR-110-lean-adopter-distribution-footprint-and-vendor-bundle.md)
+- [FR-110 — greenfield-install](../../../fbu/FR-110-lean-adopter-distribution-footprint-and-vendor-bundle.md)
 - [gap-log-schema.md](../../../../architecture/standards-and-adrs/gap-log-schema.md)
 - Package integration: `packages/frameworks/doc-lifecycle/integration/kanban-integration.md`, `workflow-mgt-integration.md`

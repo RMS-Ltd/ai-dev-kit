@@ -15,7 +15,7 @@ housekeeping_policy: keep
 **Last updated:** 2026-05-13  
 **Code:** E02S01T19
 
-**Upstream:** [BR-071](../../../fr-br/BR-071-rw-trigger-routing-not-executing-from-chat-session.md)
+**Upstream:** [BR-071](../../../fbu/BR-071-rw-trigger-routing-not-executing-from-chat-session.md)
 
 ---
 
@@ -27,7 +27,7 @@ Investigate and fix the RW trigger routing regression where `RW E#:S##:T## --art
 
 ## Input
 
-- [BR-071](../../../fr-br/BR-071-rw-trigger-routing-not-executing-from-chat-session.md) — defect report with reproduction steps, observed vs. expected behavior, and scope/suspected areas
+- [BR-071](../../../fbu/BR-071-rw-trigger-routing-not-executing-from-chat-session.md) — defect report with reproduction steps, observed vs. expected behavior, and scope/suspected areas
 - Project codebase state: `.cursorrules` (RW trigger instructions, Cursor convention), no `CLAUDE.md`, no `.claude/commands/` directory
 
 ---
@@ -73,5 +73,5 @@ Investigate and resolve the in-session trigger routing failure for `RW E#:S##:T#
 
 ## Links
 
-- [BR-071](../../../fr-br/BR-071-rw-trigger-routing-not-executing-from-chat-session.md)
+- [BR-071](../../../fbu/BR-071-rw-trigger-routing-not-executing-from-chat-session.md)
 - [Story E2:S01](../story-01-rw-agent-execution-and-docs.md)

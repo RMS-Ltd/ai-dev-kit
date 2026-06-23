@@ -9,7 +9,7 @@ housekeeping_policy: keep
 # E06:S09:T32 — Planning: Zero-padded legacy epic detection (BR-108 / IPW)
 
 **Host Task:** [`T32-detect-structure-zero-padded-epic-br108.md`](../kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T32-detect-structure-zero-padded-epic-br108.md) **(E06:S09:T32)**  
-**Planning for:** [BR-108](../kanban/fr-br/BR-108-detect-existing-structure-zero-padded-epic-names.md)  
+**Planning for:** [BR-108](../kanban/fbu/BR-108-detect-existing-structure-zero-padded-epic-names.md)  
 **Status:** Approved (MWF delivery — implementation authorized)
 
 ---
@@ -117,7 +117,7 @@ Extend `_find_epic_document` to try unpadded and two-digit zero-padded basename 
 | ------ | ----------- | ----------- |
 | D1 | `docs/implementation-cycles/IPP-E06S09T32-detect-structure-zero-padded-epic-br108.md` | NOT_APPLICABLE (maintainer) |
 | D2 | `docs/kanban/epics/epic-06/story-09-.../T32-*.md` | NOT_APPLICABLE |
-| D3 | `docs/kanban/fr-br/BR-108-*.md` | NOT_APPLICABLE |
+| D3 | `docs/kanban/fbu/BR-108-*.md` | NOT_APPLICABLE |
 
 ---
 
@@ -133,6 +133,6 @@ Extend `_find_epic_document` to try unpadded and two-digit zero-padded basename 
 
 ## References
 
-- [BR-108](../kanban/fr-br/BR-108-detect-existing-structure-zero-padded-epic-names.md)
+- [BR-108](../kanban/fbu/BR-108-detect-existing-structure-zero-padded-epic-names.md)
 - [E06:S09:T32](../kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T32-detect-structure-zero-padded-epic-br108.md)
 - [E06:S09:T26](../kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T26-starborn-legacy-adk-install-program.md)

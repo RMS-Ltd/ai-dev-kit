@@ -16,7 +16,7 @@ housekeeping_policy: keep
 **Last updated:** 2026-04-01 (**v0.5.9.8+2** — strict `throw` + corpus; **FR-067 FU-1**)  
 **Code:** E05S09T08
 
-**Origin:** Deferred outcome of [FR-067](../../../fr-br/FR-067-docusaurus-production-build-corpus-triage.md) — see **Follow-up work** on that FR. **E05:S09:T03** shipped `onBrokenLinks: 'warn'` deliberately; this task is the **explicit** place that work “to be done later” is recorded (do not rely on chat memory).
+**Origin:** Deferred outcome of [FR-067](../../../fbu/FR-067-docusaurus-production-build-corpus-triage.md) — see **Follow-up work** on that FR. **E05:S09:T03** shipped `onBrokenLinks: 'warn'` deliberately; this task is the **explicit** place that work “to be done later” is recorded (do not rely on chat memory).
 
 ---
 
@@ -24,16 +24,16 @@ housekeeping_policy: keep
 
 - **FR-067** required a **green** `npm run build` first. Legacy `docs/` links often pointed at paths Docusaurus cannot resolve; **`warn`** was the agreed interim so the build completes while listing remediation targets.
 - **End state:** `onBrokenLinks` and `onBrokenMarkdownLinks` return to **`'throw'`** so a broken link **fails the build** (same bar as strict local development when debt is cleared).
-- **Corpus/link hygiene** is largely **systemic markdown maintenance** — coordinate with **[FR-058 – Markdown Maintenance Workflow](../../../fr-br/FR-058-markdown-maintenance-workflow.md)** so link fixes are not one-off portal tweaks only.
+- **Corpus/link hygiene** is largely **systemic markdown maintenance** — coordinate with **[FR-058 – Markdown Maintenance Workflow](../../../fbu/FR-058-markdown-maintenance-workflow.md)** so link fixes are not one-off portal tweaks only.
 
 ---
 
 ## Input
 
-- [FR-067](../../../fr-br/FR-067-docusaurus-production-build-corpus-triage.md) (follow-up table)
+- [FR-067](../../../fbu/FR-067-docusaurus-production-build-corpus-triage.md) (follow-up table)
 - [`docs/maintenance/docusaurus-corpus-triage-fr-067.md`](../../../../maintenance/docusaurus-corpus-triage-fr-067.md) — failure classes and current policy
-- [FR-058](../../../fr-br/FR-058-markdown-maintenance-workflow.md) — bulk / repeatable markdown hygiene
-- **E05:S09:T05** ([FR-069](../../../fr-br/FR-069-docusaurus-ci-build-gate.md)) — when CI exists, strict link mode should produce **red CI** on regressions
+- [FR-058](../../../fbu/FR-058-markdown-maintenance-workflow.md) — bulk / repeatable markdown hygiene
+- **E05:S09:T05** ([FR-069](../../../fbu/FR-069-docusaurus-ci-build-gate.md)) — when CI exists, strict link mode should produce **red CI** on regressions
 
 ---
 
@@ -56,7 +56,7 @@ housekeeping_policy: keep
 | **T08-S4** | FR-067 S1 | `PORTAL_BUILD_STRICT=1` — [`tests/test_portal_fr065_identity.py`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/tests/test_portal_fr065_identity.py) `test_fr065_s9_portal_production_build` passes. |
 | **T08-S5** | Deliverable | [`tests/test_portal_fr067_build_triage.py`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/tests/test_portal_fr067_build_triage.py) encodes **throw** for link policy (S2). |
 | **T08-S6** | AC3 | [`docs/maintenance/docusaurus-corpus-triage-fr-067.md`](../../../../maintenance/docusaurus-corpus-triage-fr-067.md) **FU-1** closed with completion + forensic marker. |
-| **T08-S7** | AC2 | [FR-067](../../../fr-br/FR-067-docusaurus-production-build-corpus-triage.md) **FU-1** row marked **done** (or superseded). |
+| **T08-S7** | AC2 | [FR-067](../../../fbu/FR-067-docusaurus-production-build-corpus-triage.md) **FU-1** row marked **done** (or superseded). |
 | **T08-S8** | NF | Surgical link fixes / justified `docs.exclude` only; exclude globs documented in portal README (**FR-067 S3** parity). |
 
 **Tests:** `test_fr067_s2_link_policy_explicit` (T08-S5); `test_fr065_s9_portal_production_build` + `PORTAL_BUILD_STRICT=1` (T08-S4). **Non-goals:** FU-2 (GitHub Releases); corpus churn beyond link/path work needed for strict build.

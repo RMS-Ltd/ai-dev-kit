@@ -19,7 +19,7 @@ housekeeping_policy: keep
 
 **Scope:** Resolve CodeQL **py/insecure-temporary-file** alert #4 by replacing deprecated `tempfile.mktemp` in the intake documentation test script.
 
-**Upstream:** [BR-095 — CodeQL insecure temporary file (mktemp)](../../../fr-br/BR-095-codeql-insecure-temporary-file-mktemp.md)
+**Upstream:** [BR-095 — CodeQL insecure temporary file (mktemp)](../../../fbu/BR-095-codeql-insecure-temporary-file-mktemp.md)
 
 Publication Status: NOT_APPLICABLE
 
@@ -27,7 +27,7 @@ Publication Status: NOT_APPLICABLE
 
 ## Input
 
-- [BR-095](../../../fr-br/BR-095-codeql-insecure-temporary-file-mktemp.md)
+- [BR-095](../../../fbu/BR-095-codeql-insecure-temporary-file-mktemp.md)
 - [CodeQL alert #4](https://github.com/RMS-Ltd/ai-dev-kit/security/code-scanning/4)
 - [`test_intake_documentation_update.py`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/scripts/test_intake_documentation_update.py)
 - [E08:S03:T08 — CodeQL git_tag_handler syntax (BR-094)](T08-codeql-git-tag-handler-syntax-br094.md)
@@ -51,5 +51,5 @@ Replace `tempfile.mktemp` with `NamedTemporaryFile(delete=False)` in `test_docum
 
 ## References
 
-- [BR-095](../../../fr-br/BR-095-codeql-insecure-temporary-file-mktemp.md)
-- [BR-094](../../../fr-br/BR-094-codeql-git-tag-handler-syntax-error.md)
+- [BR-095](../../../fbu/BR-095-codeql-insecure-temporary-file-mktemp.md)
+- [BR-094](../../../fbu/BR-094-codeql-git-tag-handler-syntax-error.md)

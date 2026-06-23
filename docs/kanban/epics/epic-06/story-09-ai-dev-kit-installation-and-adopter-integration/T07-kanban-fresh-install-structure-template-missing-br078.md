@@ -16,7 +16,7 @@ housekeeping_policy: keep
 **Version:** v0.6.9.7+1  
 **Code:** E06S09T07
 
-**Upstream:** [BR-078](../../../fr-br/BR-078-kanban-fresh-install-structure-template-missing.md) · [GitHub #10](https://github.com/RMS-Ltd/ai-dev-kit/issues/10)
+**Upstream:** [BR-078](../../../fbu/BR-078-kanban-fresh-install-structure-template-missing.md) · [GitHub #10](https://github.com/RMS-Ltd/ai-dev-kit/issues/10)
 
 ## Version Anchor
 
@@ -32,7 +32,7 @@ Fix missing `KANBAN_STRUCTURE_TEMPLATE.md` resolution in `install_kanban_framewo
 
 ## Input
 
-- [BR-078](../../../fr-br/BR-078-kanban-fresh-install-structure-template-missing.md) reproduction (book dry-run / greenfield clone)
+- [BR-078](../../../fbu/BR-078-kanban-fresh-install-structure-template-missing.md) reproduction (book dry-run / greenfield clone)
 - `packages/frameworks/kanban/` installer sources and template paths
 - **IPW planning artifact:** [IPP-E6S9T7-br078-kanban-structure-template-missing.md](../../../../implementation-cycles/IPP-E06S09T07-br078-kanban-structure-template-missing.md) — **Publication Status: PUBLISHED**
 
@@ -61,6 +61,6 @@ Fix missing `KANBAN_STRUCTURE_TEMPLATE.md` resolution in `install_kanban_framewo
 
 ## Links
 
-- [BR-078](../../../fr-br/BR-078-kanban-fresh-install-structure-template-missing.md)
+- [BR-078](../../../fbu/BR-078-kanban-fresh-install-structure-template-missing.md)
 - [IPP-E6S9T7](../../../../implementation-cycles/IPP-E06S09T07-br078-kanban-structure-template-missing.md)
 - [Story 009](../story-09-ai-dev-kit-installation-and-adopter-integration.md)

@@ -52,7 +52,7 @@ Resolve from project language when `ai-dev-kit-config.yaml` exists (`resolve_kan
 
 ## File Locations
 
-- **FR/BR:** `docs/kanban/fr-br/FR-XXX-[title].md` or `BR-XXX-[title].md`
+- **FR/BR:** `docs/kanban/fbu/FR-XXX-[title].md` or `BR-XXX-[title].md`
 - **Epic:** `docs/kanban/epics/Epic-X.md`
 - **Story:** `docs/kanban/epics/Epic-X/stories/Story-XXX-[title].md`
 - **Board:** `docs/kanban/kboard.md`

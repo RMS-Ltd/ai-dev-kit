@@ -14,7 +14,7 @@ housekeeping_policy: keep
 **Created:** 2026-06-03  
 **Code:** E06S09T08
 
-**Upstream:** [BR-079](../../../fr-br/BR-079-kanban-fresh-install-epic-22-23-placeholder-only.md) · [GitHub #11](https://github.com/RMS-Ltd/ai-dev-kit/issues/11)
+**Upstream:** [BR-079](../../../fbu/BR-079-kanban-fresh-install-epic-22-23-placeholder-only.md) · [GitHub #11](https://github.com/RMS-Ltd/ai-dev-kit/issues/11)
 
 ## Version Anchor
 
@@ -30,7 +30,7 @@ Provide canonical templates for Epic 22 and 23 (or explicit skip) during fresh k
 
 ## Input
 
-- [BR-079](../../../fr-br/BR-079-kanban-fresh-install-epic-22-23-placeholder-only.md)
+- [BR-079](../../../fbu/BR-079-kanban-fresh-install-epic-22-23-placeholder-only.md)
 - Epic 22/23 template sources under kanban package
 - **IPW:** [IPP-E6S9T8-br079-epic-22-23-install-templates.md](../../../../implementation-cycles/IPP-E06S09T08-br079-epic-22-23-install-templates.md) — **Publication Status: PUBLISHED**
 
@@ -57,6 +57,6 @@ Provide canonical templates for Epic 22 and 23 (or explicit skip) during fresh k
 
 ## Links
 
-- [BR-079](../../../fr-br/BR-079-kanban-fresh-install-epic-22-23-placeholder-only.md)
+- [BR-079](../../../fbu/BR-079-kanban-fresh-install-epic-22-23-placeholder-only.md)
 - [IPP-E6S9T8](../../../../implementation-cycles/IPP-E06S09T08-br079-epic-22-23-install-templates.md)
 - [Story 009](../story-09-ai-dev-kit-installation-and-adopter-integration.md)

@@ -48,7 +48,7 @@ If `rw-config.yaml` exists in project root and `use_kanban: true`, **MUST** load
 - `epic_doc_pattern` → Use for epic document pattern
 - `story_doc_pattern` → Use for story document pattern
 - `kanban_board` → Use for kanban board file path
-- `fr_br_root` → Use for FR/BR root (if specified)
+- `fbu_root` → Use for FR/BR root (if specified)
 
 **Default Paths (if config not available):**
 - `kanban_root`: `docs/kanban`
@@ -56,7 +56,7 @@ If `rw-config.yaml` exists in project root and `use_kanban: true`, **MUST** load
 - `story_doc_pattern`: `epics/Epic-{epic}/Story-{story}-*.md`
 - `task_doc_pattern`: `epics/Epic-{epic}/Story-{story}/T{task}-*.md`
 - `kanban_board`: `kboard.md`
-- `fr_br_root`: `fr-br`
+- `fbu_root`: `fr-br`
 
 **🚨 MANDATORY: Progress Tracking with Workflow Step Tracker**
 
@@ -216,7 +216,7 @@ For each step, follow this pattern:
      2. For each completed task found (process all instances across all sections):
         - Remove its entry line from `kboard.md`
         - Write one archive entry to `kanban-completed.md` — do not write duplicate entries if the same task ID appeared in multiple sections
-        - Archive entry format: `**[E#:S#:T##](path/to/task.md)** — [FR/BR ref] [description]; **[FR/BR link](fr-br/...)** STATUS.  **Completed:** \`YYYY-MM-DDTHH:MM:SSZ\` | **Version:** \`vX.X.X.X+N\` | **Agent:** \`UKW\``
+        - Archive entry format: `**[E#:S#:T##](path/to/task.md)** — [FR/BR ref] [description]; **[FR/BR link](fbu/...)** STATUS.  **Completed:** \`YYYY-MM-DDTHH:MM:SSZ\` | **Version:** \`vX.X.X.X+N\` | **Agent:** \`UKW\``
      3. Deduplication pass: scan all remaining MoSCOW sections for any task ID that still appears more than once; retain the entry in the highest-priority section (Must Have > Should Have > Could Have > Ongoing > Won't Have) and remove the others
      4. Update `kanban-completed.md` "Last Updated" header with current timestamp and completed task reference(s)
    - **EXECUTE — Part B.1: Story checklist enumeration (BR-059 — runs after Part A, before Part B classification):**

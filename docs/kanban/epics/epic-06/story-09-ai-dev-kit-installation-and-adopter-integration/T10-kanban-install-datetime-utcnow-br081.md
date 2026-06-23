@@ -15,7 +15,7 @@ housekeeping_policy: keep
 **Last updated:** 2026-06-04  
 **Code:** E06S09T10
 
-**Upstream:** [BR-081](../../../fr-br/BR-081-kanban-install-datetime-utcnow-deprecated.md) · [GitHub #13](https://github.com/RMS-Ltd/ai-dev-kit/issues/13)
+**Upstream:** [BR-081](../../../fbu/BR-081-kanban-install-datetime-utcnow-deprecated.md) · [GitHub #13](https://github.com/RMS-Ltd/ai-dev-kit/issues/13)
 
 ## Version Anchor
 
@@ -32,7 +32,7 @@ Replace deprecated `datetime.utcnow()` in `install_kanban_framework.py` with tim
 ## Input
 
 - [IPP-E6S9T10-br081-kanban-install-datetime-utcnow](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/implementation-cycles/IPP-E06S09T10-br081-kanban-install-datetime-utcnow.md)
-- [BR-081](../../../fr-br/BR-081-kanban-install-datetime-utcnow-deprecated.md)
+- [BR-081](../../../fbu/BR-081-kanban-install-datetime-utcnow-deprecated.md)
 - Python 3.12+ dry-run output
 
 ---
@@ -52,5 +52,5 @@ Replace deprecated `datetime.utcnow()` in `install_kanban_framework.py` with tim
 ## Links
 
 - [IPP-E6S9T10](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/implementation-cycles/IPP-E06S09T10-br081-kanban-install-datetime-utcnow.md)
-- [BR-081](../../../fr-br/BR-081-kanban-install-datetime-utcnow-deprecated.md)
+- [BR-081](../../../fbu/BR-081-kanban-install-datetime-utcnow-deprecated.md)
 - [Story 009](../story-09-ai-dev-kit-installation-and-adopter-integration.md)

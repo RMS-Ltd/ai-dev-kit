@@ -55,7 +55,7 @@ Builder: `tools/kanban/build_target_est_tree.py` (regenerate TSP from `temp/sbl-
 | Game / 4X vertical | **E30–E45** | See [LEGACY-EPIC-REMAP.yaml](LEGACY-EPIC-REMAP.yaml) |
 | Infra / ADK programme (E15, E17, E11) | **E01–E08 split** | `DUPLICATE_EPIC_POLICY` matrix — never dump all into E02 |
 | UAT / playability (was under E08 band) | **E41** | Same S/T numbers; see M07 |
-| Perpetual UKW / RW maintenance | **E02:S16** | [FR-088](../fr-br/FR-088-dedicated-story-for-perpetual-ongoing-tasks.md) |
+| Perpetual UKW / RW maintenance | **E02:S16** | [FR-088](../fbu/FR-088-dedicated-story-for-perpetual-ongoing-tasks.md) |
 
 **Attempt-10 failure:** E15 stories routed entirely to E02.  
 **Operator fix:** Split to E01/E02/E03/E05/E06/E33 per policy table ([FB §4 tweak 1](../../adk-feedback/attempt-10/FB-ADK-KMA-KANBAN-MIGRATION.md)).

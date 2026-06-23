@@ -9,7 +9,7 @@ housekeeping_policy: keep
 # E21:S01:T01 — Planning: Template language selection (docs-first) (IPW)
 
 **Host Task:** [`T01-add-language-selection-prompt-to-template-setup-github-templ.md`](../project-management/kanban/epics/epic-21/story-01-language-selection-at-setup/T01-add-language-selection-prompt-to-template-setup-github-templ.md) **(E21:S01:T01)**  
-**Planning for:** [FR-006 Phase 1](../project-management/kanban/fr-br/FR-006-localization-language-selection-uk-us-english.md) · [E21:S01](../project-management/kanban/epics/epic-21/story-01-language-selection-at-setup.md)  
+**Planning for:** [FR-006 Phase 1](../project-management/kanban/fbu/FR-006-localization-language-selection-uk-us-english.md) · [E21:S01](../project-management/kanban/epics/epic-21/story-01-language-selection-at-setup.md)  
 **Status:** Complete — released `v0.21.1.1+2` (`RW E21:S01:T01 --art`)  
 **Branch:** `epic/21-internationalisation-localisation`
 
@@ -164,6 +164,6 @@ localisation:
 
 - [Epic-21.md](../project-management/kanban/epics/epic-21/Epic-21.md)
 - [story-01-language-selection-at-setup.md](../project-management/kanban/epics/epic-21/story-01-language-selection-at-setup.md)
-- [FR-006](../project-management/kanban/fr-br/FR-006-localization-language-selection-uk-us-english.md)
+- [FR-006](../project-management/kanban/fbu/FR-006-localization-language-selection-uk-us-english.md)
 - [IPW-E6S09T01](IPW-E6S09T01-greenfield-installation-fr080.md)
 - [ipw-adr-necessity-checklist.md](../architecture/standards-and-adrs/ipw-adr-necessity-checklist.md)

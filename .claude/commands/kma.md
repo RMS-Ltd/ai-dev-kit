@@ -61,8 +61,8 @@ Agent-driven (not deterministic). Requires synthesis, domain-aware epic mapping,
 
 ## Reference
 
-- [FR-127](../../docs/kanban/fr-br/FR-127-agentic-kanban-migration-agent-replace-tool-pipeline.md)
-- [FR-136](../../docs/kanban/fr-br/FR-136-guided-kma-target-structure-pack.md) — guided KMA + TSP
+- [FR-127](../../docs/kanban/fbu/FR-127-agentic-kanban-migration-agent-replace-tool-pipeline.md)
+- [FR-136](../../docs/kanban/fbu/FR-136-guided-kma-target-structure-pack.md) — guided KMA + TSP
 - [ADK_KANBAN_MIGRATION_FOR_ADOPTER_AGENTS.md](../../packages/frameworks/kanban/guides/ADK_KANBAN_MIGRATION_FOR_ADOPTER_AGENTS.md)
 - [migration-tool-pipeline-deprecation.md](../../packages/frameworks/kanban/guides/migration-tool-pipeline-deprecation.md)
 - SBL exemplar: `adk-install-into-sbl/kanban-reference/` (worked TSP — not vendored)

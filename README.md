@@ -11,7 +11,7 @@
 
 **A comprehensive toolkit for AI-assisted development workflows**
 
-**Version (SemVer):** `v0.4.1210+2` | **Internal:** `v0.5.2.7+2` (E05:S02:T07 FR-139 documentation governance strategy) | **Last Updated:** 2026-06-23
+**Version (SemVer):** `v0.4.1211+1` | **Internal:** `v0.4.19.14+1` (E04:S19:T14 FBU intake directory rename) | **Last Updated:** 2026-06-23
 
 > **SemVer ordering (`task_touch`):** Compare releases by **core** (`0.4.1198` here), not by `+BUILD`. The `+1` suffix mirrors internal build metadata for traceability only — see [ADR-031](docs/architecture/standards-and-adrs/ADR-031-external-semver-build-metadata-display-policy.md).
 
@@ -33,7 +33,7 @@
 - **Existing project?** Migrate from copy-paste to package management
 - **Just exploring?** Browse frameworks and documentation first
 
-**Quick Install (lean vendor — recommended, [FR-110](docs/kanban/fr-br/FR-110-lean-adopter-distribution-footprint-and-vendor-bundle.md)):**
+**Quick Install (lean vendor — recommended, [FR-110](docs/kanban/fbu/FR-110-lean-adopter-distribution-footprint-and-vendor-bundle.md)):**
 ```bash
 # 1. Vendor ai-dev-kit (submodule at vendor/ or .ai-dev-kit/)
 git submodule add https://github.com/RMS-Ltd/ai-dev-kit.git vendor/ai-dev-kit
@@ -142,12 +142,12 @@ These are the main **user-typed** triggers documented in `.cursorrules`. **Human
 
 | Trigger | Workflow | What it does | Invocation |
 |--------|-----------|--------------|------------|
-| **RW** | Release Workflow | Version bump, changelogs, kanban markers, commit, tag (local-default; `--push` opt-in) | **`RW E5:S01:T64`** (examples: `RW E7S01T10`, `RW E7:S01:T10`). The **task id must appear in the same message** as `RW`, `RW -d`, or `RW -k`. See [UXR-024](docs/kanban/fr-br/UXR-024-rw-local-release-default-no-push-batch-operator-push.md), [FR-060](docs/kanban/fr-br/FR-060-rw-task-argument-requirement.md) and [Release Workflow agent execution](packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md). |
+| **RW** | Release Workflow | Version bump, changelogs, kanban markers, commit, tag (local-default; `--push` opt-in) | **`RW E5:S01:T64`** (examples: `RW E7S01T10`, `RW E7:S01:T10`). The **task id must appear in the same message** as `RW`, `RW -d`, or `RW -k`. See [UXR-024](docs/kanban/fbu/UXR-024-rw-local-release-default-no-push-batch-operator-push.md), [FR-060](docs/kanban/fbu/FR-060-rw-task-argument-requirement.md) and [Release Workflow agent execution](packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md). |
 | **UKW** | Update Kanban Workflow | Bookkeeping, priorities, board sync | `UKW` (full run), or `UKW -u`, `UKW -p`, `UKW -a <target>`. See [UKW agent execution](packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/update-kanban-workflow-agent-execution.md). |
 | **PVW** | Package Version Workflow | Package-level version analysis/bumps | `PVW` (often RW Step 2.5). See [PVW agent execution](packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/package-version-workflow-agent-execution.md). |
 | **IPW** / **ICW** | Implementation Planning / Cycle | Spec → tests → implementation plan (`IPP` or ICW trio) | `IPW E02:S16:T15` or `/ipw` — **plan mode** required. See [workflow initiation cheatsheet](docs/guides/workflow-initiation-cheatsheet.md) and [Implementation Cycle SOP](packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/implementation-cycle-sop.md). |
 | **IDW** | Implementation Delivery Workflow | Execute linked IPP/ICW (test-first implement) | `IDW E02:S16:T15` or `/idw` — **not** plan mode; optional `--rw` to chain release. See [IDW agent execution](packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/implementation-delivery-workflow-agent-execution.md). |
-| **MWF** | Meta-Workflow | Full delivery orchestration (IPW → IDW `--rw`) | `MWF E02:S03:T09 delivery` or `/mwf` — mode-gate pauses between legs. See [MWF agent execution](packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/meta-workflow-agent-execution.md) and [FR-124](docs/kanban/fr-br/FR-124-meta-workflow-orchestration-composite-workflow-chains.md). |
+| **MWF** | Meta-Workflow | Full delivery orchestration (IPW → IDW `--rw`) | `MWF E02:S03:T09 delivery` or `/mwf` — mode-gate pauses between legs. See [MWF agent execution](packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/meta-workflow-agent-execution.md) and [FR-124](docs/kanban/fbu/FR-124-meta-workflow-orchestration-composite-workflow-chains.md). |
 
 **CMW** (Changelog Management Workflow) usually runs as **RW Step 9.5** when changelog size exceeds policy, or via the maintainer skill under [`.cursor/skills/cmw-maintain/`](.cursor/skills/cmw-maintain/SKILL.md). Package entry: [changelog-management-workflow README](packages/frameworks/workflow-mgt/workflows/changelog-management-workflow/README.md).
 

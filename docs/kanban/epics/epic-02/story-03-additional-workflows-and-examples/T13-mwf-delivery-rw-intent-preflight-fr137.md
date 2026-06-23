@@ -16,9 +16,9 @@ housekeeping_policy: keep
 **Last updated:** 2026-06-17 (v0.2.3.13+0 – Kanban documentation setup)  
 **Code:** E02S03T13
 
-**Upstream:** [FR-137 — MWF delivery RW intent preflight and explicit `--art` forwarding](../../../fr-br/FR-137-mwf-delivery-rw-intent-preflight-art-forwarding.md)
+**Upstream:** [FR-137 — MWF delivery RW intent preflight and explicit `--art` forwarding](../../../fbu/FR-137-mwf-delivery-rw-intent-preflight-art-forwarding.md)
 
-**Related:** [T09 — MWF v1 (FR-124)](T09-ipw-full-delivery-chain-idf-rw-fr123.md) · [T11 — MWF sub-agent delegation (BR-102)](T11-mwf-subagent-leg-delegation-br102.md) · [T12 — Environment-aware execution (FR-128)](T12-environment-aware-workflow-execution-fr128.md) · [BR-056](../../../fr-br/BR-056-rw-ambiguous-task-identifier-typo-risk.md) · [FR-124](../../../fr-br/FR-124-meta-workflow-orchestration-composite-workflow-chains.md)
+**Related:** [T09 — MWF v1 (FR-124)](T09-ipw-full-delivery-chain-idf-rw-fr123.md) · [T11 — MWF sub-agent delegation (BR-102)](T11-mwf-subagent-leg-delegation-br102.md) · [T12 — Environment-aware execution (FR-128)](T12-environment-aware-workflow-execution-fr128.md) · [BR-056](../../../fbu/BR-056-rw-ambiguous-task-identifier-typo-risk.md) · [FR-124](../../../fbu/FR-124-meta-workflow-orchestration-composite-workflow-chains.md)
 
 ---
 
@@ -41,7 +41,7 @@ Observed: `MWF E03:S02:T15 delivery` completed IPW + IDW, then `MWF ABORTED (leg
 
 ## Input
 
-- [FR-137](../../../fr-br/FR-137-mwf-delivery-rw-intent-preflight-art-forwarding.md)
+- [FR-137](../../../fbu/FR-137-mwf-delivery-rw-intent-preflight-art-forwarding.md)
 - [`.claude/commands/mwf.md`](../../../../../.claude/commands/mwf.md)
 - [meta-workflow-agent-execution.md](../../../../../packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/meta-workflow-agent-execution.md)
 - [validate_rw_task_intent.py](../../../../../packages/frameworks/workflow-mgt/scripts/validation/validate_rw_task_intent.py)
@@ -87,4 +87,4 @@ Observed: `MWF E03:S02:T15 delivery` completed IPW + IDW, then `MWF ABORTED (leg
 
 ## Associated reports
 
-- [FR-137](../../../fr-br/FR-137-mwf-delivery-rw-intent-preflight-art-forwarding.md) (primary)
+- [FR-137](../../../fbu/FR-137-mwf-delivery-rw-intent-preflight-art-forwarding.md) (primary)

@@ -45,11 +45,11 @@ def find_repo_path(title: str) -> Path | None:
         prefix, num, rest = fr_match.groups()
         num = num.zfill(3)
         slugify(rest)
-        candidates = list(PM_ROOT.glob(f"fr-br/{prefix}-{num}-*.md"))
+        candidates = list(PM_ROOT.glob(f"fbu/{prefix}-{num}-*.md"))
         if candidates:
             return candidates[0]
         # Try without slug
-        for p in PM_ROOT.glob(f"fr-br/{prefix}-{num}-*.md"):
+        for p in PM_ROOT.glob(f"fbu/{prefix}-{num}-*.md"):
             return p
         return None
 
@@ -152,7 +152,7 @@ def find_repo_path(title: str) -> Path | None:
         "fynd deals adk analysis": KNOWLEDGE_ROOT / "analysis/projects/fynd-deals-adk-analysis.md",
         "rituals readme": DOCS_ROOT / "governance/kanban/README.md",
         "policy readme": DOCS_ROOT / "governance/kanban/kanban-governance-policy.md",
-        "uxr-003 intelligent epic matching uat": PM_ROOT / "fr-br/UXR-003-intelligent-epic-matching-canonical-adoption-uat.md",
+        "uxr-003 intelligent epic matching uat": PM_ROOT / "fbu/UXR-003-intelligent-epic-matching-canonical-adoption-uat.md",
     }
     key = title_norm.lower().strip()
     if key in knowledge_map:

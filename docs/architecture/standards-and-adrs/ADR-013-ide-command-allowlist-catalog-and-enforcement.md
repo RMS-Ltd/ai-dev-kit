@@ -19,7 +19,7 @@ housekeeping_policy: keep
 **Deciders:** User (Ruari Mears)  
 **Implementing task:** [E06:S07:T107](../../kanban/epics/epic-06/story-07-adk-implementation-analysis-and-package-management/T107-ide-command-whitelist-optimization.md)  
 **Planning package:** [IPP-E6S7T107](../../implementation-cycles/IPP-E06S07T107-ide-command-whitelist-optimization.md)  
-**Related:** [BR-039](../../kanban/fr-br/BR-039-cascade-whitelist-security-prompt-usability-blocker.md), [ide-whitelist-guide.md](../../developer-tools/ide-whitelist-guide.md), `.cursor/whitelist-patterns.yaml`
+**Related:** [BR-039](../../kanban/fbu/BR-039-cascade-whitelist-security-prompt-usability-blocker.md), [ide-whitelist-guide.md](../../developer-tools/ide-whitelist-guide.md), `.cursor/whitelist-patterns.yaml`
 
 ---
 
@@ -27,7 +27,7 @@ housekeeping_policy: keep
 
 Maintainers run **RW**, **UKW**, and validation scripts through Cursor agents. Cursor stores **concrete** approved commands; small changes (paths, `--requested` values, version strings in tags) trigger repeated approval prompts. A draft pattern catalog existed without product integration or automated proof that patterns were coherent.
 
-[BR-039](../../kanban/fr-br/BR-039-cascade-whitelist-security-prompt-usability-blocker.md) tracks **vendor** whitelist failures (Cascade/Windsurf). That is **orthogonal** to this ADR.
+[BR-039](../../kanban/fbu/BR-039-cascade-whitelist-security-prompt-usability-blocker.md) tracks **vendor** whitelist failures (Cascade/Windsurf). That is **orthogonal** to this ADR.
 
 ---
 

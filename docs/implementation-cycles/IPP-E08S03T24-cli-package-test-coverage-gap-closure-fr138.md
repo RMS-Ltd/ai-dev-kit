@@ -9,7 +9,7 @@ housekeeping_policy: keep
 # E08:S03:T24 — Planning: Spec, Tests, Implementation Plan (IPW)
 
 **Host Task:** [`T24-cli-package-test-coverage-gap-closure-fr138.md`](../kanban/epics/epic-08/story-03-automation-scripts/T24-cli-package-test-coverage-gap-closure-fr138.md) **(E08:S03:T24)**  
-**Planning for:** [FR-138 — CLI package test coverage gap closure](../kanban/fr-br/FR-138-cli-package-test-coverage-gap-closure.md)  
+**Planning for:** [FR-138 — CLI package test coverage gap closure](../kanban/fbu/FR-138-cli-package-test-coverage-gap-closure.md)  
 **Status:** Phase 1 & Phase 2 shipped — **v0.8.3.24+3** (82% aggregate, Wave 4 module targets met)
 
 > **IPW (Implementation Planning Workflow):** Produced by `IPW E08:S03:T24`. Bidirectional link wired into T24 task doc `Input` section (see §4 Step 1d).
@@ -257,7 +257,7 @@ Raise the measured `cli/` pytest aggregate from **54%** to **≥70%** by deliver
 | D-U3 | `pytest-cli-cov.ini` | Add `--cov-fail-under=70` to `addopts`. | RF5 / Step 11 |
 | D-U4 | `.github/workflows/tests.yml` | Verify / update `cli-coverage` job so floor is enforced in CI. | RF5 / Step 11 |
 | D-U5 | `docs/kanban/epics/epic-08/story-03-automation-scripts/T24-cli-package-test-coverage-gap-closure-fr138.md` | Wire IPP link under Input/References; update status to IN PROGRESS at IDW start; update to COMPLETE at ship. | §2.4 / Steps 1, N |
-| D-U6 | `docs/kanban/fr-br/FR-138-cli-package-test-coverage-gap-closure.md` | Mark FR status `IMPLEMENTED` at ship; record version anchor. | Step 13 (RW Step 7) |
+| D-U6 | `docs/kanban/fbu/FR-138-cli-package-test-coverage-gap-closure.md` | Mark FR status `IMPLEMENTED` at ship; record version anchor. | Step 13 (RW Step 7) |
 
 ### 5.2 New documents to create
 
@@ -285,7 +285,7 @@ Raise the measured `cli/` pytest aggregate from **54%** to **≥70%** by deliver
 | D-U3 | `pytest-cli-cov.ini` | NOT_APPLICABLE | Config file, not a doc | evergreen | — |
 | D-U4 | `.github/workflows/tests.yml` | NOT_APPLICABLE | CI config, not a doc | evergreen | — |
 | D-U5 | `docs/kanban/epics/epic-08/story-03-automation-scripts/T24-cli-package-test-coverage-gap-closure-fr138.md` | NOT_APPLICABLE | Kanban task doc — maintainer internal | evergreen | IPP path in §Input |
-| D-U6 | `docs/kanban/fr-br/FR-138-cli-package-test-coverage-gap-closure.md` | NOT_APPLICABLE | Kanban FR doc — maintainer internal | evergreen | — |
+| D-U6 | `docs/kanban/fbu/FR-138-cli-package-test-coverage-gap-closure.md` | NOT_APPLICABLE | Kanban FR doc — maintainer internal | evergreen | — |
 
 **Housing rules:** IPP lives under `docs/implementation-cycles/`. No `packages/frameworks/` paths touched → no Greenfield sync required (P-GREENFIELD-SYNC N/A). No `docs/guides/` or `docs/documentation/` paths touched → no portal pytest gate required.
 
@@ -309,7 +309,7 @@ Raise the measured `cli/` pytest aggregate from **54%** to **≥70%** by deliver
 
 ## 8. Phase 2 amendment — Wave 4 hardening (DRAFT)
 
-**Scope extension:** [FR-138](../../../kanban/fr-br/FR-138-cli-package-test-coverage-gap-closure.md) Phase 2 (same FR/task — operator 2026-06-23). Phase 1 delivered **74.73%** aggregate @ **v0.8.3.24+2**.
+**Scope extension:** [FR-138](../../../kanban/fbu/FR-138-cli-package-test-coverage-gap-closure.md) Phase 2 (same FR/task — operator 2026-06-23). Phase 1 delivered **74.73%** aggregate @ **v0.8.3.24+2**.
 
 **Module targets (from post-ship coverage report):**
 
@@ -334,11 +334,11 @@ Raise the measured `cli/` pytest aggregate from **54%** to **≥70%** by deliver
 
 ## References
 
-- [FR-138 — CLI package test coverage gap closure](../kanban/fr-br/FR-138-cli-package-test-coverage-gap-closure.md)
+- [FR-138 — CLI package test coverage gap closure](../kanban/fbu/FR-138-cli-package-test-coverage-gap-closure.md)
 - [T24 — CLI package test coverage gap closure](../kanban/epics/epic-08/story-03-automation-scripts/T24-cli-package-test-coverage-gap-closure-fr138.md)
 - [E08:S03:T21 — CLI pytest coverage dedicated target (UXR-030)](../kanban/epics/epic-08/story-03-automation-scripts/T21-cli-pytest-coverage-dedicated-target-uxr030.md)
-- [UXR-030 — Default pytest CLI coverage misleading 0%](../kanban/fr-br/UXR-030-default-pytest-cli-coverage-misleading-zero-percent.md)
-- [FR-083 — Global IPW-gated implementation contract](../kanban/fr-br/FR-083-global-ipw-gated-implementation-contract.md)
+- [UXR-030 — Default pytest CLI coverage misleading 0%](../kanban/fbu/UXR-030-default-pytest-cli-coverage-misleading-zero-percent.md)
+- [FR-083 — Global IPW-gated implementation contract](../kanban/fbu/FR-083-global-ipw-gated-implementation-contract.md)
 - [`pytest-cli-cov.ini`](../../pytest-cli-cov.ini)
 - [`scripts/run_cli_pytest_coverage.sh`](../../scripts/run_cli_pytest_coverage.sh)
 - [`tests/cli/`](../../tests/cli/) (existing test patterns)

@@ -16,7 +16,7 @@ housekeeping_policy: keep
 **Last updated:** 2026-04-26 (superseded by E04:S19:T06 meta-task; historical task retained)  
 **Code:** E04S19T05
 
-**Upstream:** [UXR-008 – Canonical Kanban filename normalization](../../../fr-br/UXR-008-kboard-fbuboard-default-naming-adoption.md)
+**Upstream:** [UXR-008 – Canonical Kanban filename normalization](../../../fbu/UXR-008-kboard-fbuboard-default-naming-adoption.md)
 
 **Coordinates:** [E06:S07:T114](T05-kanban-and-fr-br-uxr-filename-normalization-uxr008.md), [E04:S19:T02](T02-canonical-supporting-kanban-fbu-doc-naming-and-fbu-collective-terminology-fr086.md), [E04:S19:T06](T06-fbu-meta-normalization-and-intake-governance-uxr008-fr086-fr073.md)
 
@@ -69,9 +69,9 @@ Partial normalization (boards only) leaves the broader kanban surface with incon
 
 ## References
 
-- [UXR-008](../../../fr-br/UXR-008-kboard-fbuboard-default-naming-adoption.md)
+- [UXR-008](../../../fbu/UXR-008-kboard-fbuboard-default-naming-adoption.md)
 - [T114](T05-kanban-and-fr-br-uxr-filename-normalization-uxr008.md)
-- [FR-086](../../../fr-br/FR-086-canonical-supporting-kanban-fbu-doc-naming-and-fbu-collective-terminology.md)
+- [FR-086](../../../fbu/FR-086-canonical-supporting-kanban-fbu-doc-naming-and-fbu-collective-terminology.md)
 - [IPP-E4S19T5](../../../../implementation-cycles/IPP-E4S19T05-kanban-fr-br-uxr-filename-normalization.md)
 - [ICW-E4S19T5-specification](../../../../implementation-cycles/ICW-E4S19T05-specification.md)
 - [ICW-E4S19T5-test-design](../../../../implementation-cycles/ICW-E4S19T05-specification.md)

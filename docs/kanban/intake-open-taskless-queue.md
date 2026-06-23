@@ -53,7 +53,7 @@ Before `RW -k`:
 
 ## Queue table (snapshot 2026-05-29 — batch semantic intake pass)
 
-**Status:** Active **fbuboard** rows wired with **`E:S:T`** task links (2026-05-29 bidirectional pass). All open MoSCOW rows on [`kboard.md`](kboard.md) now include task links from FBU **`Implementing Task:`** fields; M/S bands mirrored on [`kboard.md`](kboard.md). **FR-044** implementing task corrected to **E05:S01:T44**. Remaining corpus: run gap script on full `fr-br/` for non-board open items.
+**Status:** Active **fbuboard** rows wired with **`E:S:T`** task links (2026-05-29 bidirectional pass). All open MoSCOW rows on [`kboard.md`](kboard.md) now include task links from FBU **`Implementing Task:`** fields; M/S bands mirrored on [`kboard.md`](kboard.md). **FR-044** implementing task corrected to **E05:S01:T44**. Remaining corpus: run gap script on full `fbu/` for non-board open items.
 
 ## Queue table (snapshot 2026-04-26, scoped pass under E04:S19:T06)
 

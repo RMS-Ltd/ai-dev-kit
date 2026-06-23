@@ -20,7 +20,7 @@ housekeeping_policy: keep
 
 **Version:** v0.6.9.5+4
 
-**Upstream:** [FR-098 - Optional ECC harness layer integration](../../../fr-br/FR-098-ecc-optional-harness-layer-integration.md)  
+**Upstream:** [FR-098 - Optional ECC harness layer integration](../../../fbu/FR-098-ecc-optional-harness-layer-integration.md)  
 **Prerequisite:** [E06:S09:T04 — Phase 0 evaluation](T04-ecc-harness-layer-phase0-compatibility-fr098.md) (**GO**)
 
 ---
@@ -75,7 +75,7 @@ Ship this task via **`RW E06:S09:T05`** when implementation is complete. Under `
 - **Do not** request or plan a MINOR bump for Phase 1 skill pack alone.
 - **MINOR** (`epic_count` bump) is reserved for **Epic 6 sign-off** after Story 9 integration work is complete.
 
-See [FR-098 SemVer strategy](../../../fr-br/FR-098-ecc-optional-harness-layer-integration.md#release--semver-strategy-maintainer-decision--2026-05-26) and [integration spec §9](../../../../architecture/standards-and-adrs/ecc-adk-harness-layer-integration-specification.md).
+See [FR-098 SemVer strategy](../../../fbu/FR-098-ecc-optional-harness-layer-integration.md#release--semver-strategy-maintainer-decision--2026-05-26) and [integration spec §9](../../../../architecture/standards-and-adrs/ecc-adk-harness-layer-integration-specification.md).
 
 ---
 
@@ -92,5 +92,5 @@ See [FR-098 SemVer strategy](../../../fr-br/FR-098-ecc-optional-harness-layer-in
 
 ## References
 
-- [FR-098 Phase 1](../../../fr-br/FR-098-ecc-optional-harness-layer-integration.md)
+- [FR-098 Phase 1](../../../fbu/FR-098-ecc-optional-harness-layer-integration.md)
 - [T04 Phase 0](T04-ecc-harness-layer-phase0-compatibility-fr098.md)

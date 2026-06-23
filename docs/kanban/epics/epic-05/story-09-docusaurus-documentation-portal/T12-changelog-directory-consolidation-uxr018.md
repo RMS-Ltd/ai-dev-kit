@@ -23,7 +23,7 @@ housekeeping_policy: keep
 
 ## Associated UXR
 
-- **UXR-018:** [Changelog directory consolidation](../../../fr-br/UXR-018-changelog-directory-consolidation.md) — `docs/changelog/` vs `docs/changelog-and-release-notes/`
+- **UXR-018:** [Changelog directory consolidation](../../../fbu/UXR-018-changelog-directory-consolidation.md) — `docs/changelog/` vs `docs/changelog-and-release-notes/`
 
 ---
 
@@ -52,10 +52,10 @@ Consolidate **legacy and stray changelog directory trees** into the **existing c
 
 - **IPP:** [`IPP-E5S9T12-changelog-directory-consolidation.md`](../../../../implementation-cycles/IPP-E05S09T12-changelog-directory-consolidation.md)
 - **Manifest:** [`changelog-directory-consolidation-manifest.md`](../../../../maintenance/changelog-directory-consolidation-manifest.md)
-- **UXR-018:** [`UXR-018-changelog-directory-consolidation.md`](../../../fr-br/UXR-018-changelog-directory-consolidation.md)
+- **UXR-018:** [`UXR-018-changelog-directory-consolidation.md`](../../../fbu/UXR-018-changelog-directory-consolidation.md)
 - **Config SoT:** [`rw-config.yaml`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/rw-config.yaml) → `changelog_dir`
 - **Portal map:** [`portal/README.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/portal/README.md)
-- **Related:** [FR-066](../../../fr-br/FR-066-docusaurus-canonical-docs-path-and-publish-scope.md), [FR-039](../../../fr-br/FR-039-ai-dev-kit-project-review-and-legacy-clean-up.md) / [E05:S01:T39](../story-01-fr-repo/T39-ai-dev-kit-project-review-and-legacy-cleanup.md)
+- **Related:** [FR-066](../../../fbu/FR-066-docusaurus-canonical-docs-path-and-publish-scope.md), [FR-039](../../../fbu/FR-039-ai-dev-kit-project-review-and-legacy-clean-up.md) / [E05:S01:T39](../story-01-fr-repo/T39-ai-dev-kit-project-review-and-legacy-cleanup.md)
 
 ---
 

@@ -85,8 +85,8 @@ housekeeping_policy: keep
 - **Epic 6:** `docs/kanban/epics/epic-06/epic-06.md`
 - **E6:S01 (BR Repo):** `docs/kanban/epics/epic-06/story-01-br-repo.md`
 - **E09:S01:T08:** `docs/kanban/epics/epic-09/story-01-rc-readiness-gap-analysis/T08-repository-story-abstract-space-contradiction.md`
-- **FR-018:** `docs/kanban/fr-br/FR-018-abstract-space-zero-numbered-est-docs.md`
-- **FR-021:** `docs/kanban/fr-br/FR-021-fr-br-uxr-repository-stories.md`
+- **FR-018:** `docs/kanban/fbu/FR-018-abstract-space-zero-numbered-est-docs.md`
+- **FR-021:** `docs/kanban/fbu/FR-021-fr-br-uxr-repository-stories.md`
 - **Solution Design:** `docs/architecture/standards-and-adrs/repository-story-abstract-space-solution-design.md`
 
 ---

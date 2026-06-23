@@ -35,7 +35,7 @@ This guide now distinguishes the **greenfield** first-run path from brownfield a
 For policy and boundaries:
 
 - [ADR-003 – Greenfield vs Brownfield adoption](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/architecture/standards-and-adrs/ADR-003-greenfield-vs-brownfield-adoption.md)
-- [FR-081 – Brownfield modular adopter integration](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/kanban/fr-br/FR-081-brownfield-modular-adopter-integration.md)
+- [FR-081 – Brownfield modular adopter integration](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/kanban/fbu/FR-081-brownfield-modular-adopter-integration.md)
 - [IPP-E6S9T2 planning package](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/implementation-cycles/IPP-E6S09T02-brownfield-modular-adopter-integration-fr081.md)
 - [FR-080 implementing task (E6:S09:T01)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T01-greenfield-installation-process-fr080.md)
 - [IPW-E6S9T1 planning package](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/implementation-cycles/IPW-E6S09T01-greenfield-installation-fr080.md)

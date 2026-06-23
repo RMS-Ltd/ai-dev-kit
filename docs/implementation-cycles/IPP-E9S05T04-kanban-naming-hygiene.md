@@ -9,7 +9,7 @@ housekeeping_policy: keep
 # E9:S05:T04 — Planning: Kanban Naming Hygiene and Directory Systematic Cleanup (UXR-011)
 
 **Host Task:** [`T04-kanban-naming-hygiene-and-directory-systematic-cleanup-uxr011.md`](../kanban/epics/epic-09/story-05-canonical-est-review-and-refinement/T04-kanban-naming-hygiene-and-directory-systematic-cleanup-uxr011.md) **(E9:S05:T04)**
-**Planning for:** [UXR-011](../kanban/fr-br/UXR-011-kanban-naming-hygiene-and-directory-systematic-cleanup.md)
+**Planning for:** [UXR-011](../kanban/fbu/UXR-011-kanban-naming-hygiene-and-directory-systematic-cleanup.md)
 **Status:** COMPLETE
 **Completed:** 2026-05-18
 **Version:** v0.9.5.4+1
@@ -162,8 +162,8 @@ Bring the entire `docs/kanban/epics/` directory tree into compliance with the cu
 ## References
 
 - [E9:S05:T04 Host Task](../kanban/epics/epic-09/story-05-canonical-est-review-and-refinement/T04-kanban-naming-hygiene-and-directory-systematic-cleanup-uxr011.md)
-- [UXR-011](../kanban/fr-br/UXR-011-kanban-naming-hygiene-and-directory-systematic-cleanup.md)
+- [UXR-011](../kanban/fbu/UXR-011-kanban-naming-hygiene-and-directory-systematic-cleanup.md)
 - [E2:S02:T007](../kanban/epics/epic-02/story-02-pdca-integration-into-release-workflow/T07-implement-task-naming-change.md)
 - [E2:S02:T008](../kanban/epics/epic-02/story-02-pdca-integration-into-release-workflow/T08-update-kanban-docs-to-txx-standard.md)
 - [kanban-governance-policy](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/kanban/policies/kanban-governance-policy.md)
-- [FR-042](../kanban/fr-br/FR-042-implementation-planning-workflow-ipw.md)
+- [FR-042](../kanban/fbu/FR-042-implementation-planning-workflow-ipw.md)

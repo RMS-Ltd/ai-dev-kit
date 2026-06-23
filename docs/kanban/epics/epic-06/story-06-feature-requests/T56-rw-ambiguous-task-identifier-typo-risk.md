@@ -14,7 +14,7 @@ housekeeping_policy: keep
 **Estimated Effort:** Medium (1–2 days)
 **Created:** 2026-03-18
 
-**Associated BR:** [BR-056](../../../fr-br/BR-056-rw-ambiguous-task-identifier-typo-risk.md)
+**Associated BR:** [BR-056](../../../fbu/BR-056-rw-ambiguous-task-identifier-typo-risk.md)
 
 ---
 
@@ -36,7 +36,7 @@ Address BR-056: RW accepts user-supplied task identifiers (e.g. `RW E07S05T01`) 
 
 ## Input
 
-- [BR-056](../../../fr-br/BR-056-rw-ambiguous-task-identifier-typo-risk.md)
+- [BR-056](../../../fbu/BR-056-rw-ambiguous-task-identifier-typo-risk.md)
 - Current version from version.py (VERSION_EPIC, VERSION_STORY, VERSION_TASK)
 - User-supplied task identifier when present in RW trigger (e.g. `RW E07S05T01`)
 
@@ -70,5 +70,5 @@ Address BR-056: RW accepts user-supplied task identifiers (e.g. `RW E07S05T01`) 
 
 ## References
 
-- **BR-056:** [BR-056-rw-ambiguous-task-identifier-typo-risk.md](../../../fr-br/BR-056-rw-ambiguous-task-identifier-typo-risk.md)
+- **BR-056:** [BR-056-rw-ambiguous-task-identifier-typo-risk.md](../../../fbu/BR-056-rw-ambiguous-task-identifier-typo-risk.md)
 - **Related:** FR-060 (RW task argument requirement), FR-048 (RW trigger extensions)

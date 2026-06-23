@@ -49,7 +49,7 @@ Fix UKW (Update Kanban Workflow) board disorganization bug where epics are not s
 
 ## Input
 
-- **BR-033:** [`BR-033-ukw-board-disorganization.md`](../../../fr-br/BR-033-ukw-board-disorganization.md)
+- **BR-033:** [`BR-033-ukw-board-disorganization.md`](../../../fbu/BR-033-ukw-board-disorganization.md)
 - **UKW Documentation:** `packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/update-kanban-workflow-agent-execution.md`
 - **UKW Workflow:** `packages/frameworks/workflow-mgt/workflows/update-kanban-workflow.yaml`
 - **Kanban Board:** `docs/kanban/kboard.md`
@@ -134,8 +134,8 @@ Fix UKW (Update Kanban Workflow) board disorganization bug where epics are not s
 ## Related Work
 
 **Related BR/FR Links:**
-- [BR-033: UKW Board Disorganization](../../../fr-br/BR-033-ukw-board-disorganization.md)
-- [FR-034: UKW Granular Control and Use Case Flags](../../../fr-br/FR-034-ukw-granular-control-and-use-case-flags.md) (enhancements split from original mixed-scope document)
+- [BR-033: UKW Board Disorganization](../../../fbu/BR-033-ukw-board-disorganization.md)
+- [FR-034: UKW Granular Control and Use Case Flags](../../../fbu/FR-034-ukw-granular-control-and-use-case-flags.md) (enhancements split from original mixed-scope document)
 
 **Related Tasks:**
 - [E06:S06:T08: Update Kanban Workflow (UKW)](../../epic-02/story-16-perpetual-ongoing-workflow-operations/T04-ad-hoc-kanban-synchronization-and-hygiene-perpetual.md) - Perpetual task

@@ -112,5 +112,5 @@ Per [epic-09.md](../epic-09.md) and Story 1 framework scope:
 
 - [T01 inventory](T01-current-state-inventory.md)
 - [Story 1](../story-01-rc-readiness-gap-analysis.md)
-- [FR-032](../../../fr-br/FR-032-release-candidate-readiness-gap-analysis.md)
+- [FR-032](../../../fbu/FR-032-release-candidate-readiness-gap-analysis.md)
 - [E02:S13 workflow package review](../../epic-02/story-13-workflow-management-package-implementation-review.md)

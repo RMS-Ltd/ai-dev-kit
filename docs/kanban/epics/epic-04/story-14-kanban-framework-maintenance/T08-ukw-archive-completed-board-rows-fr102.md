@@ -18,7 +18,7 @@ housekeeping_policy: keep
 **Version Anchor:** v0.2.16.16+2 (functional); **v0.2.16.16+3** (UKW `-c` hygiene)
 **Code:** E04S14T08
 
-**Upstream:** [FR-102 — UKW archive-completed use case](../../../fr-br/FR-102-ukw-archive-completed-board-rows.md)  
+**Upstream:** [FR-102 — UKW archive-completed use case](../../../fbu/FR-102-ukw-archive-completed-board-rows.md)  
 **Coordinates:** [E02:S16:T04](T04-ad-hoc-kanban-synchronization-and-hygiene-perpetual.md) (UKW perpetual); [E02:S16:T07](T07-ukw-extension-for-fr-br-uxr-temporal-tracking-fr050.md) (FBU completed ledger)
 
 Publication Status: NOT_APPLICABLE
@@ -27,7 +27,7 @@ Publication Status: NOT_APPLICABLE
 
 ## Input
 
-- [FR-102](../../../fr-br/FR-102-ukw-archive-completed-board-rows.md)
+- [FR-102](../../../fbu/FR-102-ukw-archive-completed-board-rows.md)
 - [IPP-E2S16T16 — UKW `-c` archive completed](../../../../implementation-cycles/IPP-E04S14T08-ukw-archive-completed-fr102.md)
 - Completed-ledger skills: `.cursor/skills/kanban-completed-update`, `.cursor/skills/fr-br-uxr-completed-update`
 - Agent SoT: `.cursorrules` UKW section; `update-kanban-workflow-agent-execution.md`
@@ -47,7 +47,7 @@ Implement and document **`UKW -c`** (archive completed): for terminal task/FBU s
 - [x] **AC2:** `archive_completed.py` helpers + agent contract mandate ledger-before-removal; operator `UKW -c` path documented (first live run post-release).
 - [x] **AC3:** fbuboard / `fr_br_uxr_completed_update` contract documented in ADR-010, `ukw-sync`, VWMP guide.
 - [x] **AC4:** Step 9 `## Archive completed summary` required; FR-097 + structure-prune evidence pattern in ADR-010; Option A prune gating in `update_kanban_docs.py`.
-- [x] **AC5:** [FR-102](../../../fr-br/FR-102-ukw-archive-completed-board-rows.md) acceptance criteria satisfied at `RW E04:S14:T08` (**v0.2.16.16+2**).
+- [x] **AC5:** [FR-102](../../../fbu/FR-102-ukw-archive-completed-board-rows.md) acceptance criteria satisfied at `RW E04:S14:T08` (**v0.2.16.16+2**).
 
 ---
 
@@ -55,7 +55,7 @@ Implement and document **`UKW -c`** (archive completed): for terminal task/FBU s
 
 - [IPP-E2S16T16](../../../../implementation-cycles/IPP-E04S14T08-ukw-archive-completed-fr102.md)
 - [ADR-010](../../../../architecture/standards-and-adrs/ADR-010-ukw-archive-completed-c-flag.md)
-- [FR-102](../../../fr-br/FR-102-ukw-archive-completed-board-rows.md)
-- [FR-076](../../../fr-br/FR-076-ukw-fbuboard-scope-and-drift-concurrency-controls.md)
-- [FR-034](../../../fr-br/FR-034-ukw-granular-control-and-use-case-flags.md)
+- [FR-102](../../../fbu/FR-102-ukw-archive-completed-board-rows.md)
+- [FR-076](../../../fbu/FR-076-ukw-fbuboard-scope-and-drift-concurrency-controls.md)
+- [FR-034](../../../fbu/FR-034-ukw-granular-control-and-use-case-flags.md)
 - [kanban-completed.md](../../../kanban-completed.md) · [intake-completed.md](../../../intake-completed.md)

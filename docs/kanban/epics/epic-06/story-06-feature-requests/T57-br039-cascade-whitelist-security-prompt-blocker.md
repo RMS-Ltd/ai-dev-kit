@@ -9,7 +9,7 @@ housekeeping_policy: keep
 # Epic 6, Story 6, Task 57: BR-039 Cascade whitelist / security prompt usability (vendor)
 
 **Task ID:** E06:S06:T57  
-**Status:** ✅ **COMPLETE** (repo implementation — see **§ Task closure policy**; **[BR-039](../../../fr-br/BR-039-cascade-whitelist-security-prompt-usability-blocker.md)** remains **open** for Cascade/vendor product state)  
+**Status:** ✅ **COMPLETE** (repo implementation — see **§ Task closure policy**; **[BR-039](../../../fbu/BR-039-cascade-whitelist-security-prompt-usability-blocker.md)** remains **open** for Cascade/vendor product state)  
 **Priority:** CRITICAL  
 **Estimated Effort:** Small (repo) / Unknown (vendor)  
 **Created:** 2026-03-31  
@@ -17,11 +17,11 @@ housekeeping_policy: keep
 **Version:** v0.6.6.57+6  
 **Code:** E06S06T57
 
-**Upstream:** [BR-039 – Cascade Whitelist Security Prompt Usability Blocker](../../../fr-br/BR-039-cascade-whitelist-security-prompt-usability-blocker.md)
+**Upstream:** [BR-039 – Cascade Whitelist Security Prompt Usability Blocker](../../../fbu/BR-039-cascade-whitelist-security-prompt-usability-blocker.md)
 
 **Planning Artifact (IPW):** [IPW-E6S6T57-br039-vendor-blocker-planning.md](../../../../implementation-cycles/IPW-E6S06T57-br039-vendor-blocker-planning.md)
 
-**Related:** [BR-038](../../../fr-br/BR-038-release-workflow-micromanagement-and-tool-discovery-issues.md) (symptoms); [E06:S06:T02](T02-fix-release-workflow-micromanagement-issues.md) (RW micromanagement — partial overlap; **BR-039** describes Cascade product behavior)
+**Related:** [BR-038](../../../fbu/BR-038-release-workflow-micromanagement-and-tool-discovery-issues.md) (symptoms); [E06:S06:T02](T02-fix-release-workflow-micromanagement-issues.md) (RW micromanagement — partial overlap; **BR-039** describes Cascade product behavior)
 
 ---
 
@@ -33,7 +33,7 @@ This task tracks **ai-dev-kit repository** work: traceability to **BR-039**, hon
 
 - Windsurf is **not** in use for this project; there is **no paid subscription** to run it.
 - **Cursor** is the standard IDE for maintainer workflows (including **RW**).
-- **Product** pass/fail on Cascade remains tracked on **[BR-039](../../../fr-br/BR-039-cascade-whitelist-security-prompt-usability-blocker.md)** for vendor fixes, other subscribers, or community re-verification — **outside** this task’s closure criteria.
+- **Product** pass/fail on Cascade remains tracked on **[BR-039](../../../fbu/BR-039-cascade-whitelist-security-prompt-usability-blocker.md)** for vendor fixes, other subscribers, or community re-verification — **outside** this task’s closure criteria.
 
 Closing **T57** as **COMPLETE** is therefore **repo-complete**, not “BR-039 resolved.”
 
@@ -41,7 +41,7 @@ Closing **T57** as **COMPLETE** is therefore **repo-complete**, not “BR-039 re
 
 ## Input
 
-- [BR-039](../../../fr-br/BR-039-cascade-whitelist-security-prompt-usability-blocker.md) (open for **product**; CRITICAL).
+- [BR-039](../../../fbu/BR-039-cascade-whitelist-security-prompt-usability-blocker.md) (open for **product**; CRITICAL).
 - Kanban / FR-UXR board rows; **epic/6-framework-management** as integration branch.
 - [IPW-E6S6T57-br039-vendor-blocker-planning.md](../../../../implementation-cycles/IPW-E6S06T57-br039-vendor-blocker-planning.md) (durable planning package; optional read).
 
@@ -129,6 +129,6 @@ Closing **T57** as **COMPLETE** is therefore **repo-complete**, not “BR-039 re
 
 ## References
 
-- **BR-039:** [BR-039-cascade-whitelist-security-prompt-usability-blocker.md](../../../fr-br/BR-039-cascade-whitelist-security-prompt-usability-blocker.md)
+- **BR-039:** [BR-039-cascade-whitelist-security-prompt-usability-blocker.md](../../../fbu/BR-039-cascade-whitelist-security-prompt-usability-blocker.md)
 - **Video:** *(removed from repository root 2026-05-29 — was `Screen Recording 2026-03-09 at 16.07.14.mov`; per BR-039)*
 - **IPW package:** [IPW-E6S6T57-br039-vendor-blocker-planning.md](../../../../implementation-cycles/IPW-E6S06T57-br039-vendor-blocker-planning.md)

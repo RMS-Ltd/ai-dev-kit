@@ -22,7 +22,7 @@ Publication Status: NOT_APPLICABLE
 
 ## Associated FR
 
-- [FR-121 — Git-internal maintainer KB (OSS documentation surfaces)](../../../fr-br/FR-121-git-internal-maintainer-kb-oss-documentation-surfaces.md)
+- [FR-121 — Git-internal maintainer KB (OSS documentation surfaces)](../../../fbu/FR-121-git-internal-maintainer-kb-oss-documentation-surfaces.md)
 
 ---
 
@@ -35,9 +35,9 @@ Wave 3 of FR-121: add **optional** `maintainer_editor_profile` to greenfield / R
 ## Input
 
 - [IPP-E05S08T07 — Optional Obsidian editor profiles (greenfield install)](../../../../implementation-cycles/IPP-E05S08T07-optional-obsidian-editor-profiles-greenfield-install-fr121.md)
-- [FR-121](../../../fr-br/FR-121-git-internal-maintainer-kb-oss-documentation-surfaces.md)
+- [FR-121](../../../fbu/FR-121-git-internal-maintainer-kb-oss-documentation-surfaces.md)
 - [E05:S08:T06](T06-adr-026-git-maintainer-authoring-bootstrap-fr121.md) (`rw-config` schema)
-- [FR-080](../../../../fr-br/FR-080-greenfield-installation-process.md)
+- [FR-080](../../../../fbu/FR-080-greenfield-installation-process.md)
 - `packages/frameworks/workflow-mgt/scripts/install_greenfield_path.py`
 - `packages/frameworks/workflow-mgt/scripts/install_release_workflow.py`
 
@@ -79,6 +79,6 @@ Wave 3 of FR-121: add **optional** `maintainer_editor_profile` to greenfield / R
 ## References
 
 - [IPP-E05S08T07 — Optional Obsidian editor profiles (greenfield install)](../../../../implementation-cycles/IPP-E05S08T07-optional-obsidian-editor-profiles-greenfield-install-fr121.md)
-- [FR-121](../../../fr-br/FR-121-git-internal-maintainer-kb-oss-documentation-surfaces.md)
+- [FR-121](../../../fbu/FR-121-git-internal-maintainer-kb-oss-documentation-surfaces.md)
 - [docs/maintainer/OBSIDIAN.md](../../../../maintainer/OBSIDIAN.md)
 - [INSTALL_IN_YOUR_PROJECT.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/INSTALL_IN_YOUR_PROJECT.md)

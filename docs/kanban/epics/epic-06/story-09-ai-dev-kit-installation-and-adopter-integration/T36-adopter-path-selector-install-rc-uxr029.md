@@ -18,11 +18,11 @@ housekeeping_policy: keep
 
 **Parent program:** [E06:S09:T26](T26-starborn-legacy-adk-install-program.md) · [Issue #52](https://github.com/RMS-Ltd/ai-dev-kit/issues/52)
 
-**Source UXR:** [UXR-029](../../../fr-br/UXR-029-adk-install-path-experiment.md)
+**Source UXR:** [UXR-029](../../../fbu/UXR-029-adk-install-path-experiment.md)
 
 **Primary evidence:** [greenfield-brownfield-selective-adoption-sbl-attempt-09.md](../../../../knowledge/articles/greenfield-brownfield-selective-adoption-sbl-attempt-09.md) · [attempt-09 index](../../../../../../adk-install-into-sbl/attempt-09/README.md)
 
-**Related:** [ADR-030](../../../../architecture/standards-and-adrs/ADR-030-selective-adoption-three-path-model.md) · [ADR-003](../../../../architecture/standards-and-adrs/ADR-003-greenfield-vs-brownfield-adoption.md) · [FR-080](../../../fr-br/FR-080-greenfield-installation-process.md) · [FR-081](../../../fr-br/FR-081-brownfield-modular-adopter-integration.md)
+**Related:** [ADR-030](../../../../architecture/standards-and-adrs/ADR-030-selective-adoption-three-path-model.md) · [ADR-003](../../../../architecture/standards-and-adrs/ADR-003-greenfield-vs-brownfield-adoption.md) · [FR-080](../../../fbu/FR-080-greenfield-installation-process.md) · [FR-081](../../../fbu/FR-081-brownfield-modular-adopter-integration.md)
 
 ---
 
@@ -35,9 +35,9 @@ Deliver the **Adopter Path Selector**, **layered install sequence**, and **Insta
 ## Input
 
 - SBL attempt 09 PRIMARY synthesis ([#52](https://github.com/RMS-Ltd/ai-dev-kit/issues/52))
-- [UXR-029](../../../fr-br/UXR-029-adk-install-path-experiment.md)
+- [UXR-029](../../../fbu/UXR-029-adk-install-path-experiment.md)
 - [greenfield-brownfield-selective-adoption-sbl-attempt-09.md](../../../../knowledge/articles/greenfield-brownfield-selective-adoption-sbl-attempt-09.md)
-- [ADR-003](../../../../architecture/standards-and-adrs/ADR-003-greenfield-vs-brownfield-adoption.md) · [FR-080](../../../fr-br/FR-080-greenfield-installation-process.md) · [FR-081](../../../fr-br/FR-081-brownfield-modular-adopter-integration.md)
+- [ADR-003](../../../../architecture/standards-and-adrs/ADR-003-greenfield-vs-brownfield-adoption.md) · [FR-080](../../../fbu/FR-080-greenfield-installation-process.md) · [FR-081](../../../fbu/FR-081-brownfield-modular-adopter-integration.md)
 
 ---
 
@@ -77,11 +77,11 @@ Deliver the **Adopter Path Selector**, **layered install sequence**, and **Insta
 |---|-------------|--------|
 | 1 | [greenfield-brownfield-selective-adoption-sbl-attempt-09.md](../../../../knowledge/articles/greenfield-brownfield-selective-adoption-sbl-attempt-09.md) | ✅ Mirrored |
 | 2 | [adk-install-into-sbl/attempt-09/README.md](../../../../../../adk-install-into-sbl/attempt-09/README.md) | ✅ Index |
-| 3 | [UXR-029](../../../fr-br/UXR-029-adk-install-path-experiment.md) | ✅ Filed |
+| 3 | [UXR-029](../../../fbu/UXR-029-adk-install-path-experiment.md) | ✅ Filed |
 | 4 | [ADR-030](../../../../architecture/standards-and-adrs/ADR-030-selective-adoption-three-path-model.md) | ✅ Draft accepted |
 | 5 | INSTALL Adopter Path Selector + layered sequence | ✅ Initial |
 | 6 | Install RC checklist Arm B rows | ✅ YAML + validator + governance doc |
-| 7 | Orchestrator layered sequence implementation | ✅ Phase 0 partial (sqlite, RC, adoption-path) — **follow-on:** [E06:S09:T38](T38-guided-install-orchestrator-fr135.md) / [FR-135](../../../fr-br/FR-135-guided-install-orchestrator-zero-manual-steps.md) (UKW/KMA/ledgers/comprehension in orchestrator) |
+| 7 | Orchestrator layered sequence implementation | ✅ Phase 0 partial (sqlite, RC, adoption-path) — **follow-on:** [E06:S09:T38](T38-guided-install-orchestrator-fr135.md) / [FR-135](../../../fbu/FR-135-guided-install-orchestrator-zero-manual-steps.md) (UKW/KMA/ledgers/comprehension in orchestrator) |
 
 ---
 

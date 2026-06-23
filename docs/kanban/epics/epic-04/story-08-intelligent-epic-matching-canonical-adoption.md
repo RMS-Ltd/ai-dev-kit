@@ -135,10 +135,10 @@ Implement intelligent epic matching with semantic analysis and AI-assisted task 
 ## References
 
 - **IPP (E04:S08:T05):** [`IPP-E04S08T05-migration-plan-presentation-fr009.md`](../../../implementation-cycles/IPP-E04S08T05-migration-plan-presentation-fr009.md)
-- FR-009: `docs/kanban/fr-br/FR-009-intelligent-epic-matching-ai-assisted-canonical-adoption.md`
-- UXR-002: `docs/kanban/fr-br/UXR-002-comprehensive-uat-migration-utilities.md`
-- UXR-003: `docs/kanban/fr-br/UXR-003-intelligent-epic-matching-canonical-adoption-uat.md`
-- Design Decision: `docs/kanban/fr-br/DESIGN_DECISION-task-id-preservation-vs-canonical-epic-structure-REFINED.md`
+- FR-009: `docs/kanban/fbu/FR-009-intelligent-epic-matching-ai-assisted-canonical-adoption.md`
+- UXR-002: `docs/kanban/fbu/UXR-002-comprehensive-uat-migration-utilities.md`
+- UXR-003: `docs/kanban/fbu/UXR-003-intelligent-epic-matching-canonical-adoption-uat.md`
+- Design Decision: `docs/kanban/fbu/DESIGN_DECISION-task-id-preservation-vs-canonical-epic-structure-REFINED.md`
 - GitHub Issue #7: Additional context comments (Match Decision Matrix, Template Task Installation, Detailed Scenarios)
 
 ## Related Work

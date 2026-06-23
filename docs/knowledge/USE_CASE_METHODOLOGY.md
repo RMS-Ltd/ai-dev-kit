@@ -571,7 +571,7 @@ docs/use-cases/
 
 **Implementation:**
 - **Task:** [E2:S01:T06](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/epics/epic-02/story-01-rw-agent-execution-and-docs.md#e2s01t06)
-- **BR/FR:** [BR-002](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/fr-br/BR-002-changelog-validator-ordering-bug.md)
+- **BR/FR:** [BR-002](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/fbu/BR-002-changelog-validator-ordering-bug.md)
 - **Documentation:** [Guide Title](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/guides/guide-title.md)
 ```
 
@@ -642,8 +642,8 @@ docs/use-cases/
 
 ## Related Documentation
 
-- [BIDIRECTIONAL_WIRING_PRINCIPLE.md](../kanban/fr-br/BIDIRECTIONAL_WIRING_PRINCIPLE.md) - Example of discovered use case
-- [REOPENING_BR_AND_TASKS_GUIDE.md](../kanban/fr-br/REOPENING_BR_AND_TASKS_GUIDE.md) - Example of discovered use case
+- [BIDIRECTIONAL_WIRING_PRINCIPLE.md](../kanban/fbu/BIDIRECTIONAL_WIRING_PRINCIPLE.md) - Example of discovered use case
+- [REOPENING_BR_AND_TASKS_GUIDE.md](../kanban/fbu/REOPENING_BR_AND_TASKS_GUIDE.md) - Example of discovered use case
 - [FR_BR_INTAKE_GUIDE.md (source)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/kanban/FR_BR_INTAKE_GUIDE.md) - Intake process (includes use case references)
 
 ---

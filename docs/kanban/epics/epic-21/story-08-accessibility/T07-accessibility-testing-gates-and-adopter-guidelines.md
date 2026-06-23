@@ -20,7 +20,7 @@ housekeeping_policy: keep
 
 ## Scope
 
-**Deferred until Layers 2–4 addressed.** CLI adopter subsection ships with T03 (Layer 1). Full cross-surface gates and guide remain here. Publish adopter-facing accessibility guidelines and integrate testing gates (automated scans, manual checklist, CI lane hooks per [FR-112](../../../../fr-br/FR-112-perpetual-github-ci-and-security-health-lanes.md)).
+**Deferred until Layers 2–4 addressed.** CLI adopter subsection ships with T03 (Layer 1). Full cross-surface gates and guide remain here. Publish adopter-facing accessibility guidelines and integrate testing gates (automated scans, manual checklist, CI lane hooks per [FR-112](../../../../fbu/FR-112-perpetual-github-ci-and-security-health-lanes.md)).
 
 ---
 

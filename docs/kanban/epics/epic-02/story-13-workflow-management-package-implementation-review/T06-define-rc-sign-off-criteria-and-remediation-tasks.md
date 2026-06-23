@@ -135,7 +135,7 @@ Define **Release Candidate (RC) sign-off criteria** and a **remediation backlog*
 
 | Gap ID | Filed host | Status |
 | ------ | ---------- | ------ |
-| GAP-WFMGT-STRUCT-001 | [FR-050](../../../fr-br/FR-050-workflows-directory-structure-reorganization.md) → [E02:S13:T09](T09-fr050-workflows-directory-reorganization.md) | **PASS** (filed 2026-06-05) |
+| GAP-WFMGT-STRUCT-001 | [FR-050](../../../fbu/FR-050-workflows-directory-structure-reorganization.md) → [E02:S13:T09](T09-fr050-workflows-directory-reorganization.md) | **PASS** (filed 2026-06-05) |
 | GAP-WFMGT-INTG-001 | [E02:S13:T10](T10-kanban-transform-consolidation.md) | **PASS** (filed 2026-06-05) |
 
 | Status | Evidence |
@@ -197,7 +197,7 @@ Non-blocking gaps must be **externalized** into Kanban (E04:S16:T06 pattern):
 | ----- | ----- |
 | **Gaps** | GAP-WFMGT-STRUCT-001 |
 | **Priority** | HIGH — Must fix before GA |
-| **Host** | [FR-050](../../../fr-br/FR-050-workflows-directory-structure-reorganization.md) → [E02:S13:T09](T09-fr050-workflows-directory-reorganization.md) |
+| **Host** | [FR-050](../../../fbu/FR-050-workflows-directory-structure-reorganization.md) → [E02:S13:T09](T09-fr050-workflows-directory-reorganization.md) |
 | **RC impact** | NON-BLOCKING (filed) |
 
 ---
@@ -318,7 +318,7 @@ RC sign-off may be **recommended** (upgrade from DEFER) when **all** of the foll
 - [IPP-E02S13T06](../../../../implementation-cycles/IPP-E02S13T06-rc-sign-off-remediation.md)
 - [T05 gap log](T05-create-gap-log-and-risk-assessment.md)
 - [E07:S07:T01 report](../../epic-07/story-07-code-reviews/T01-workflow-machinery-code-review-report.md)
-- [FR-050](../../../fr-br/FR-050-workflows-directory-structure-reorganization.md)
+- [FR-050](../../../fbu/FR-050-workflows-directory-structure-reorganization.md)
 - [E02:S13:T09](T09-fr050-workflows-directory-reorganization.md)
 - [E02:S13:T10](T10-kanban-transform-consolidation.md)
 - [gap-log-schema.md](../../../../architecture/standards-and-adrs/gap-log-schema.md)

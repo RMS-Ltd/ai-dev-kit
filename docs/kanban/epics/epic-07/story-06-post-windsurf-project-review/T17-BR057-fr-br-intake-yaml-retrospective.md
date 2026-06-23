@@ -39,7 +39,7 @@ Retrospective traceability for the **fr-br-intake** GitHub Actions workflow YAML
 
 ## Deliverable
 
-1. [BR-057](../../../fr-br/BR-057-fr-br-intake-workflow-yaml-block-scalar-indentation.md) (retrospective BR, COMPLETE).  
+1. [BR-057](../../../fbu/BR-057-fr-br-intake-workflow-yaml-block-scalar-indentation.md) (retrospective BR, COMPLETE).  
 2. Corrected `.github/workflows/fr-br-intake.yml` indentation inside the `body` template literal.  
 3. story-006 / epic-07 / kanban-board markers for this release.  
 4. `validate_rw_task_intent.py` available on branch for RW Step 1b; `ukw_syntax_parser.py` free of duplicate `normalize_task_id` stub (if blocking validation).
@@ -59,7 +59,7 @@ Retrospective traceability for the **fr-br-intake** GitHub Actions workflow YAML
 
 **Related BR/FR Links:**
 
-- [BR-057: fr-br-intake workflow YAML block scalar](../../../fr-br/BR-057-fr-br-intake-workflow-yaml-block-scalar-indentation.md)
+- [BR-057: fr-br-intake workflow YAML block scalar](../../../fbu/BR-057-fr-br-intake-workflow-yaml-block-scalar-indentation.md)
 
 ---
 

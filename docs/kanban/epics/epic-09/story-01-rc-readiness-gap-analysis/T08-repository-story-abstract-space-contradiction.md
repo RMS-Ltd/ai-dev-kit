@@ -159,8 +159,8 @@ Analyze and resolve the fundamental architectural contradiction where S00 (repos
 ## Related Work
 
 **Related BR/FR Links:**
-- [FR-018: Abstract Space for Zero-Numbered E/S/T Docs](../../../fr-br/FR-018-abstract-space-zero-numbered-est-docs.md)
-- [FR-021: FR/BR/UXR Repository Stories](../../../fr-br/FR-021-fr-br-uxr-repository-stories.md)
+- [FR-018: Abstract Space for Zero-Numbered E/S/T Docs](../../../fbu/FR-018-abstract-space-zero-numbered-est-docs.md)
+- [FR-021: FR/BR/UXR Repository Stories](../../../fbu/FR-021-fr-br-uxr-repository-stories.md)
 
 **Related Tasks:**
 - E09:S01:T01-T07 (other gap analysis tasks)

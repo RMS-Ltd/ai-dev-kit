@@ -17,8 +17,8 @@ housekeeping_policy: keep
 
 **Version Anchor:** v0.6.9.1+8 (FR-080 **IMPLEMENTED**; closure release)
 
-**Upstream:** [FR-080 - End-to-end greenfield installation process](../../../fr-br/FR-080-greenfield-installation-process.md)  
-**Progress:** Wave 5 **traceability**: [FR-080](../../../fr-br/FR-080-greenfield-installation-process.md) requirement boxes + implementation evidence; T01 acceptance criteria satisfied with evidence links; **T03**/FR-082 deferral noted under Dependencies. Waves 1–4 shipped (orchestration, docs, validators, FR-078/079 boundaries); **v0.6.9.1+8** releases Wave 4 narrative + Wave 5 closure docs.  
+**Upstream:** [FR-080 - End-to-end greenfield installation process](../../../fbu/FR-080-greenfield-installation-process.md)  
+**Progress:** Wave 5 **traceability**: [FR-080](../../../fbu/FR-080-greenfield-installation-process.md) requirement boxes + implementation evidence; T01 acceptance criteria satisfied with evidence links; **T03**/FR-082 deferral noted under Dependencies. Waves 1–4 shipped (orchestration, docs, validators, FR-078/079 boundaries); **v0.6.9.1+8** releases Wave 4 narrative + Wave 5 closure docs.  
 
 ---
 
@@ -62,9 +62,9 @@ Greenfield adopters need a **single, reproducible first-run path** from acquisit
 
 ## Acceptance criteria
 
-- [x] **AC1:** FR-080 functional and non-functional requirements addressed or explicitly deferred with recorded rationale — see [FR-080](../../../fr-br/FR-080-greenfield-installation-process.md) § Implementation evidence and deferrals.
+- [x] **AC1:** FR-080 functional and non-functional requirements addressed or explicitly deferred with recorded rationale — see [FR-080](../../../fbu/FR-080-greenfield-installation-process.md) § Implementation evidence and deferrals.
 - [x] **AC2:** A documented scratch or template scenario runs end-to-end without undocumented manual steps — [`INSTALL_IN_YOUR_PROJECT.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/INSTALL_IN_YOUR_PROJECT.md) (Method 2 + orchestrator + Wave 4 synthetic reference transcript); live runs occur in the adopter workspace.
-- [x] **AC3:** Install docs cross-link [ADR-003](../../../../architecture/standards-and-adrs/ADR-003-greenfield-vs-brownfield-adoption.md) and [FR-081](../../../fr-br/FR-081-brownfield-modular-adopter-integration.md).
+- [x] **AC3:** Install docs cross-link [ADR-003](../../../../architecture/standards-and-adrs/ADR-003-greenfield-vs-brownfield-adoption.md) and [FR-081](../../../fbu/FR-081-brownfield-modular-adopter-integration.md).
 
 ---
 
@@ -78,7 +78,7 @@ Greenfield adopters need a **single, reproducible first-run path** from acquisit
 ## References
 
 - **IPW (planning package):** [IPW-E6S9T1-greenfield-installation-fr080.md](../../../../implementation-cycles/IPW-E6S09T01-greenfield-installation-fr080.md)
-- [FR-080](../../../fr-br/FR-080-greenfield-installation-process.md)
+- [FR-080](../../../fbu/FR-080-greenfield-installation-process.md)
 
 ## Planning artifacts (publication)
 

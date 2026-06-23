@@ -9,7 +9,7 @@ housekeeping_policy: keep
 # E02:S16:T03 — Ad-hoc Documentation Maintenance (Perpetual)
 
 **Task ID:** E02:S16:T03
-**Historical Anchor:** E02:S16:T05, E07:S01:T05, E02:S16:T07 (perpetual doc lane merged into T03 per [FR-125](../../../fr-br/FR-125-consolidate-e02s16t03-t07-documentation-maintenance-lanes.md), 2026-06-10)
+**Historical Anchor:** E02:S16:T05, E07:S01:T05, E02:S16:T07 (perpetual doc lane merged into T03 per [FR-125](../../../fbu/FR-125-consolidate-e02s16t03-t07-documentation-maintenance-lanes.md), 2026-06-10)
 **Status:** IN PROGRESS
 **Priority:** HIGH
 **Estimated Effort:** Medium (per RW wave)
@@ -19,7 +19,7 @@ housekeeping_policy: keep
 **Code:** E02S16T03
 **Task Type:** Perpetual Maintenance
 
-**Upstream:** [FR-125 — Consolidate T03/T07 doc lanes](../../../fr-br/FR-125-consolidate-e02s16t03-t07-documentation-maintenance-lanes.md) · [FR-058 — Markdown maintenance (historical)](../../../fr-br/FR-058-markdown-maintenance-workflow.md) · [FR-088 — Dedicated story for perpetual ongoing tasks](../../../fr-br/FR-088-dedicated-story-for-perpetual-ongoing-tasks.md)
+**Upstream:** [FR-125 — Consolidate T03/T07 doc lanes](../../../fbu/FR-125-consolidate-e02s16t03-t07-documentation-maintenance-lanes.md) · [FR-058 — Markdown maintenance (historical)](../../../fbu/FR-058-markdown-maintenance-workflow.md) · [FR-088 — Dedicated story for perpetual ongoing tasks](../../../fbu/FR-088-dedicated-story-for-perpetual-ongoing-tasks.md)
 
 ---
 
@@ -49,7 +49,7 @@ Documentation drifts across the repository — install pins, integrity guidance,
 - Markdown formatting and lint hygiene; wording clarity; structure consistency; section normalization
 - Internal link hygiene and metadata/frontmatter cleanup (all doc formats, not `.md`-only)
 - Release pin alignment (SemVer core, tarball names, GHCR tags)
-- SHA-256 / integrity verification steps and inline hash tables for downloadable assets ([FR-062-NF1](../../../fr-br/FR-062-github-release-installation-experience.md))
+- SHA-256 / integrity verification steps and inline hash tables for downloadable assets ([FR-062-NF1](../../../fbu/FR-062-github-release-installation-experience.md))
 - Workflow trigger tables, quick-start accuracy, and cross-doc consistency
 - Docs-only RW waves (`RW -d`) when no finite delivery task owns the change
 
@@ -81,7 +81,7 @@ Documentation drifts across the repository — install pins, integrity guidance,
 - [x] **AC2:** Story 016 checklist and `kboard.md` Ongoing band list T03 as the sole doc-maintenance perpetual lane.
 - [x] **AC3:** Scope boundaries with `E02:S16:T01`, `E02:S16:T02`, `E02:S16:T04`, and RW Step 5 are documented and unambiguous.
 - [ ] **AC4:** Each RW wave under T03 states which doc surfaces were touched and why.
-- [x] **AC5:** T07 perpetual lane superseded; redirect stub points here ([FR-125](../../../fr-br/FR-125-consolidate-e02s16t03-t07-documentation-maintenance-lanes.md)).
+- [x] **AC5:** T07 perpetual lane superseded; redirect stub points here ([FR-125](../../../fbu/FR-125-consolidate-e02s16t03-t07-documentation-maintenance-lanes.md)).
 
 ---
 
@@ -97,9 +97,9 @@ Documentation drifts across the repository — install pins, integrity guidance,
 
 ## References
 
-- [FR-125 — Consolidate T03/T07](../../../fr-br/FR-125-consolidate-e02s16t03-t07-documentation-maintenance-lanes.md)
-- [FR-058 — Markdown maintenance (historical)](../../../fr-br/FR-058-markdown-maintenance-workflow.md)
-- [FR-062 — GitHub release installation experience](../../../fr-br/FR-062-github-release-installation-experience.md)
+- [FR-125 — Consolidate T03/T07](../../../fbu/FR-125-consolidate-e02s16t03-t07-documentation-maintenance-lanes.md)
+- [FR-058 — Markdown maintenance (historical)](../../../fbu/FR-058-markdown-maintenance-workflow.md)
+- [FR-062 — GitHub release installation experience](../../../fbu/FR-062-github-release-installation-experience.md)
 - [E02:S16:T01 — Workflow maintenance (Perpetual)](T01-workflow-maintenance-perpetual.md)
 - [E02:S16:T02 — Ad-hoc Kanban synchronization and hygiene (Perpetual)](T02-ad-hoc-kanban-synchronization-and-hygiene-perpetual.md)
 - [E02:S16:T04 — Ad-hoc Repository Infrastructure Maintenance (Perpetual)](T04-ad-hoc-repository-infrastructure-maintenance-perpetual.md)

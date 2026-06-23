@@ -15,7 +15,7 @@ housekeeping_policy: keep
 **Last updated:** 2026-05-29 (semantic re-home from E05:S01:T37 — delivery already complete)  
 **Code:** E04S14T04
 
-**Upstream:** [FR-037](../../../fr-br/FR-037-kanban-policy-task-prioritisation-queue-stack.md)  
+**Upstream:** [FR-037](../../../fbu/FR-037-kanban-policy-task-prioritisation-queue-stack.md)  
 **Historical registry:** [E05:S01:T37](../../epic-05/story-01-fr-repo/T37-kanban-policy-task-prioritisation-queue-stack.md)
 
 Publication Status: NOT_APPLICABLE
@@ -34,4 +34,4 @@ Canonical **kanban framework** home for **FR-037** policy alignment (implementat
 
 ## References
 
-- [FR-037](../../../fr-br/FR-037-kanban-policy-task-prioritisation-queue-stack.md)
+- [FR-037](../../../fbu/FR-037-kanban-policy-task-prioritisation-queue-stack.md)

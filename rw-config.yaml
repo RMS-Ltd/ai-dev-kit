@@ -24,7 +24,7 @@ epic_doc_pattern: epics/epic-{epic:02d}/epic-{epic:02d}.md
 story_doc_pattern: epics/epic-{epic:02d}/story-{story:02d}-*.md
 task_doc_pattern: epics/epic-{epic:02d}/story-{story:02d}-*/T{task:02d}-*.md
 kanban_board: kboard.md
-fr_br_root: docs/kanban/fr-br
+fbu_root: docs/kanban/fbu
 
 # Use dev-kit versioning schema
 versioning_schema: RC.EPIC.STORY.TASK+BUILD

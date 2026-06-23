@@ -16,7 +16,7 @@ housekeeping_policy: keep
 **Last updated:** 2026-05-26 (Phase 0 complete — pending RW release)  
 **Code:** E06S09T04
 
-**Upstream:** [FR-098 - Optional ECC harness layer integration](../../../fr-br/FR-098-ecc-optional-harness-layer-integration.md)
+**Upstream:** [FR-098 - Optional ECC harness layer integration](../../../fbu/FR-098-ecc-optional-harness-layer-integration.md)
 
 ---
 
@@ -28,7 +28,7 @@ housekeeping_policy: keep
 
 ## Summary
 
-Execute **Phase 0** of [FR-098](../../../fr-br/FR-098-ecc-optional-harness-layer-integration.md): evaluate coexistence of AI Dev Kit's governance harness surface with [ECC](https://github.com/affaan-m/ECC) on a scratch branch, complete the compatibility checklist below, and publish a compatibility matrix with keep / merge / exclude / conflict-resolve recommendations.
+Execute **Phase 0** of [FR-098](../../../fbu/FR-098-ecc-optional-harness-layer-integration.md): evaluate coexistence of AI Dev Kit's governance harness surface with [ECC](https://github.com/affaan-m/ECC) on a scratch branch, complete the compatibility checklist below, and publish a compatibility matrix with keep / merge / exclude / conflict-resolve recommendations.
 
 This task does **not** implement the ADK workflow skill pack or installer bridge (FR-098 Phases 1–2); it establishes evidence for those follow-on tasks.
 
@@ -36,7 +36,7 @@ This task does **not** implement the ADK workflow skill pack or installer bridge
 
 ## Input
 
-- [FR-098](../../../fr-br/FR-098-ecc-optional-harness-layer-integration.md) — full phased program
+- [FR-098](../../../fbu/FR-098-ecc-optional-harness-layer-integration.md) — full phased program
 - [IPP-E6S9T4](../../../../implementation-cycles/IPP-E6S09T04-ecc-harness-layer-phase0-fr098.md) — planning package
 - [Integration specification](../../../../architecture/standards-and-adrs/ecc-adk-harness-layer-integration-specification.md)
 - [Phase 0 evaluation](../../../../architecture/standards-and-adrs/ecc-adk-harness-layer-phase0-evaluation.md)
@@ -198,7 +198,7 @@ Adopters may install ECC alongside ADK for harness performance (domain skills, h
 
 ## References
 
-- [FR-098](../../../fr-br/FR-098-ecc-optional-harness-layer-integration.md)
+- [FR-098](../../../fbu/FR-098-ecc-optional-harness-layer-integration.md)
 - [IPP-E6S9T4](../../../../implementation-cycles/IPP-E6S09T04-ecc-harness-layer-phase0-fr098.md)
 - [Integration specification](../../../../architecture/standards-and-adrs/ecc-adk-harness-layer-integration-specification.md)
 - [Phase 0 evaluation](../../../../architecture/standards-and-adrs/ecc-adk-harness-layer-phase0-evaluation.md)

@@ -23,16 +23,16 @@ housekeeping_policy: keep
 Publication Status: PUBLISHED  
 **Planning package:** [`IPP-E02S03T08-implementation-delivery-workflow-idw-fr118.md`](../../../../../implementation-cycles/IPP-E02S03T08-implementation-delivery-workflow-idw-fr118.md)
 
-**Upstream:** [FR-119 — Implementation Delivery Workflow (IDW)](../../../fr-br/FR-119-implementation-delivery-workflow-idw.md)
+**Upstream:** [FR-119 — Implementation Delivery Workflow (IDW)](../../../fbu/FR-119-implementation-delivery-workflow-idw.md)
 
 ---
 
 ## Input
 
-- [FR-118](../../../fr-br/FR-119-implementation-delivery-workflow-idw.md)
+- [FR-118](../../../fbu/FR-119-implementation-delivery-workflow-idw.md)
 - [IPP-E02S03T08](../../../../../implementation-cycles/IPP-E02S03T08-implementation-delivery-workflow-idw-fr118.md)
 - Pattern references: `.claude/commands/ipw.md`, `.claude/commands/rw.md`
-- [FR-083](../../../fr-br/FR-083-global-ipw-gated-implementation-contract.md)
+- [FR-083](../../../fbu/FR-083-global-ipw-gated-implementation-contract.md)
 
 ---
 
@@ -64,6 +64,6 @@ IPW produces IPP; RW releases. Implementation execution lacks a named workflow, 
 
 ## References
 
-- [FR-118](../../../fr-br/FR-119-implementation-delivery-workflow-idw.md)
+- [FR-118](../../../fbu/FR-119-implementation-delivery-workflow-idw.md)
 - [IPP-E02S03T08](../../../../../implementation-cycles/IPP-E02S03T08-implementation-delivery-workflow-idw-fr118.md)
 - [Workflow initiation cheatsheet](../../../../../guides/workflow-initiation-cheatsheet.md)

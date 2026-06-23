@@ -9,7 +9,7 @@ notion_sot: false
 
 **Status:** Ratified (implementation package)  
 **SoT code:** `packages/frameworks/kanban/scripts/kanban_v4_catalog.py`  
-**Related:** [Issue #51](https://github.com/RMS-Ltd/ai-dev-kit/issues/51) · [FR-132](../../kanban/fr-br/FR-132-kanban-v4-three-tier-catalogue.md) · [12-v35-catalog-delta-bootstrap-stories.md](12-v35-catalog-delta-bootstrap-stories.md)
+**Related:** [Issue #51](https://github.com/RMS-Ltd/ai-dev-kit/issues/51) · [FR-132](../../kanban/fbu/FR-132-kanban-v4-three-tier-catalogue.md) · [12-v35-catalog-delta-bootstrap-stories.md](12-v35-catalog-delta-bootstrap-stories.md)
 
 ## Summary
 

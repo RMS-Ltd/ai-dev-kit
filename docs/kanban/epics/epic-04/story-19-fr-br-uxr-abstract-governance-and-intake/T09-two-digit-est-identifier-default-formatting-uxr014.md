@@ -21,13 +21,13 @@ housekeeping_policy: keep
 
 Publication Status: NOT_APPLICABLE
 
-**Upstream:** [UXR-014 — Two-digit default formatting for E/S/T identifiers](../../../fr-br/UXR-014-two-digit-est-identifier-default-formatting.md)
+**Upstream:** [UXR-014 — Two-digit default formatting for E/S/T identifiers](../../../fbu/UXR-014-two-digit-est-identifier-default-formatting.md)
 
 ---
 
 ## Input
 
-- [UXR-014](../../../fr-br/UXR-014-two-digit-est-identifier-default-formatting.md) findings and recommendations.
+- [UXR-014](../../../fbu/UXR-014-two-digit-est-identifier-default-formatting.md) findings and recommendations.
 - [IPP-E4S19T9-two-digit-est-identifier-default-formatting.md](../../../../implementation-cycles/IPP-E4S19T09-two-digit-est-identifier-default-formatting.md)
 - Current mixed inline notation on `kboard.md`, and story checklists.
 - Existing **`Exx:Sxx:Txx`** policy language in kanban governance and templates.
@@ -85,7 +85,7 @@ Inline `E#:S#:T#` references use inconsistent zero padding for Epic, Story, and 
 
 ## References
 
-- [UXR-014](../../../fr-br/UXR-014-two-digit-est-identifier-default-formatting.md)
+- [UXR-014](../../../fbu/UXR-014-two-digit-est-identifier-default-formatting.md)
 - [IPP-E4S19T9-two-digit-est-identifier-default-formatting.md](../../../../implementation-cycles/IPP-E4S19T09-two-digit-est-identifier-default-formatting.md)
 - [Story 019](../story-19-fr-br-uxr-abstract-governance-and-intake.md)
 - [kboard](../../../kboard.md)

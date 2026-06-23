@@ -30,7 +30,7 @@ IPW is a **planning-only** workflow. Gate on **detected runtime** — not a sing
 | **OpenCode** | N/A (no native plan mode) | **Sub-agent delegation (preferred):** spawn Task sub-agent with `PLANNING_MODE=true` and prompt: `Execute IPW for {E:S:T} per .claude/commands/ipw.md. Produce IPP under docs/implementation-cycles/. Wire IPP to host task. End with IPW COMPLETE or IPW ABORTED.` Await result; do not inline IPW in parent. If sub-agent spawn unavailable → **`IPW BLOCKED: plan mode unavailable in OpenCode. Use MWF E:S:T delivery or run IPW in Cursor plan mode / Claude Code /plan.`** |
 | **unknown** | N/A | **`IPW BLOCKED: environment not recognised. Set WORKFLOW_ENV to cursor, claude-code, or opencode; or run in a supported agent runtime.`** |
 
-**MWF orchestration:** When IPW is Leg 1 of MWF, parent session plan mode is **not** required — delegate per [BR-102](docs/kanban/fr-br/BR-102-mwf-chain-paused-instead-of-subagent-leg-delegation.md) / [mwf.md](mwf.md).
+**MWF orchestration:** When IPW is Leg 1 of MWF, parent session plan mode is **not** required — delegate per [BR-102](docs/kanban/fbu/BR-102-mwf-chain-paused-instead-of-subagent-leg-delegation.md) / [mwf.md](mwf.md).
 
 **Python helper:** `packages/frameworks/workflow-mgt/scripts/icw/workflow_env.py` — `WorkflowEnvironment.detect()`, `is_plan_session()`, `can_spawn_subagent()`.
 
@@ -189,7 +189,7 @@ Map each Phase 5 deliverable to a **canonical location** in the project document
 | -------------- | ------------------ |
 | Planning package (this IPW) | `docs/implementation-cycles/IPP-E{E}S{S}T{T}-{slug}.md` |
 | Kanban task / story / epic | `docs/kanban/...` |
-| FR / BR / UXR | `docs/kanban/fr-br/` |
+| FR / BR / UXR | `docs/kanban/fbu/` |
 | Architecture / ADR / policy | `docs/architecture/standards-and-adrs/` |
 | Workflow / developer KB | `packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/` |
 | Framework package docs | Under relevant `packages/frameworks/{name}/` |
@@ -198,7 +198,7 @@ Map each Phase 5 deliverable to a **canonical location** in the project document
 
 **Adopter-public link contract (mandatory when housing targets `docs/guides/**` or `docs/documentation/**`):**
 
-- Cross-surface links use **GitHub blob URLs** — never `../../governance/`, `../../architecture/`, `../../kanban/`, `../../../packages/`, etc. ([BR-068](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/kanban/fr-br/BR-068-docusaurus-monorepo-markdown-links-break-strict-production-build.md), [adopter-public-documentation-authoring.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/governance/standards/adopter-public-documentation-authoring.md)).
+- Cross-surface links use **GitHub blob URLs** — never `../../governance/`, `../../architecture/`, `../../kanban/`, `../../../packages/`, etc. ([BR-068](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/kanban/fbu/BR-068-docusaurus-monorepo-markdown-links-break-strict-production-build.md), [adopter-public-documentation-authoring.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/governance/standards/adopter-public-documentation-authoring.md)).
 - §3 and §7 must include: `pytest tests/test_portal_br068_monorepo_links.py tests/test_portal_fr114_allowlist.py`.
 - **Do not** write "portal i18n" out-of-scope when the deliverable is adopter-public markdown — defer **portal site locale UI** only.
 
@@ -285,7 +285,7 @@ Use `rw-config.yaml` values when present. Fallbacks:
 - Plan doc location: `docs/implementation-cycles/`
 - Plan doc template: `packages/frameworks/kanban/templates/PLAN_DOC_TEMPLATE.md`
 - Kanban root: `docs/kanban/`
-- FR/BR/UXR root: `docs/kanban/fr-br/`
+- FR/BR/UXR root: `docs/kanban/fbu/`
 
 ---
 
@@ -299,7 +299,7 @@ IPW ends at **`IPW COMPLETE`**. It does **not** chain to IDW or RW by default.
 | **`MWF E:S:T delivery`** | Full pipeline — resume from implementation session after mode gate (or start fresh when IPP exists) |
 | **`RW E:S:T`** | Release only after separate IDW (or use `IDW … --rw`) |
 
-Do **not** add **`IPW --rw`** — superseded by **MWF** ([FR-124](docs/kanban/fr-br/FR-124-meta-workflow-orchestration-composite-workflow-chains.md); [FR-123](docs/kanban/fr-br/FR-123-ipw-full-delivery-chain-idf-rw.md) withdrawn).
+Do **not** add **`IPW --rw`** — superseded by **MWF** ([FR-124](docs/kanban/fbu/FR-124-meta-workflow-orchestration-composite-workflow-chains.md); [FR-123](docs/kanban/fbu/FR-123-ipw-full-delivery-chain-idf-rw.md) withdrawn).
 
 ---
 
@@ -308,9 +308,9 @@ Do **not** add **`IPW --rw`** — superseded by **MWF** ([FR-124](docs/kanban/fr
 - IPW canonical step guide: `packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/implementation-planning-workflow-agent-execution.md`
 - MWF (full pipeline): `.claude/commands/mwf.md`
 - Plan doc template: `packages/frameworks/kanban/templates/PLAN_DOC_TEMPLATE.md`
-- FR-042 (canonical IPW definition): `docs/kanban/fr-br/FR-042-implementation-planning-workflow-ipw.md`
-- FR-094 (this command's origin): `docs/kanban/fr-br/FR-094-ipw-slash-command-and-task-state-transition-mandate.md`
-- FR-077 (status transition ownership): `docs/kanban/fr-br/FR-077-ipw-built-task-status-transition-and-kboard-sync.md`
-- BR-066 (Docusaurus / publication housing): `docs/kanban/fr-br/BR-066-ipw-missing-docusaurus-filing-for-planning-artifacts.md`
+- FR-042 (canonical IPW definition): `docs/kanban/fbu/FR-042-implementation-planning-workflow-ipw.md`
+- FR-094 (this command's origin): `docs/kanban/fbu/FR-094-ipw-slash-command-and-task-state-transition-mandate.md`
+- FR-077 (status transition ownership): `docs/kanban/fbu/FR-077-ipw-built-task-status-transition-and-kboard-sync.md`
+- BR-066 (Docusaurus / publication housing): `docs/kanban/fbu/BR-066-ipw-missing-docusaurus-filing-for-planning-artifacts.md`
 - Specification and planning artifacts policy: `docs/governance/standards/specification-and-planning-artifacts-policy.md`
 - IPW ADR necessity checklist (FR-100): `docs/architecture/standards-and-adrs/ipw-adr-necessity-checklist.md`

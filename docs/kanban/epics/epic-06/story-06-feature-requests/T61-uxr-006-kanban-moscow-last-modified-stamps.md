@@ -17,7 +17,7 @@ housekeeping_policy: keep
 **Version:** v0.6.6.61+1  
 **Code:** E06S06T61
 
-**Upstream:** [UXR-006 — Kanban MoSCOW row last-modified UTC stamp](../../../fr-br/UXR-006-kanban-moscow-row-last-modified-utc-stamp.md)
+**Upstream:** [UXR-006 — Kanban MoSCOW row last-modified UTC stamp](../../../fbu/UXR-006-kanban-moscow-row-last-modified-utc-stamp.md)
 
 **Registry:** [E07:S00:T06](../../epic-07/story-00-uxr-repo/T06-uxr-006-repository-anchor.md)
 
@@ -25,7 +25,7 @@ housekeeping_policy: keep
 
 ## Input
 
-- [UXR-006](../../../fr-br/UXR-006-kanban-moscow-row-last-modified-utc-stamp.md) (acceptance criteria and recommendations).
+- [UXR-006](../../../fbu/UXR-006-kanban-moscow-row-last-modified-utc-stamp.md) (acceptance criteria and recommendations).
 - `kboard.md`, `kanban-board-guide.md`.
 
 ---
@@ -61,4 +61,4 @@ housekeeping_policy: keep
 **Blocks:** None.  
 **Blocked by:** None.
 
-**Related:** [UXR-005](../../../fr-br/UXR-005-kanban-board-formatting-and-governance.md) (board governance).
+**Related:** [UXR-005](../../../fbu/UXR-005-kanban-board-formatting-and-governance.md) (board governance).

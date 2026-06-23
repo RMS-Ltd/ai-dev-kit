@@ -49,19 +49,19 @@ Provide additional workflow examples that:
 - [x] **E02:S03:T06 – Document workflow customization patterns** ✅ COMPLETE (v0.2.3.6+1)
   - Task: [`T06-document-workflow-customization-patterns`](story-03-additional-workflows-and-examples/T06-document-workflow-customization-patterns.md)
 
-- [x] **E02:S03:T07 – `/ukw` slash command for Claude Code (FR-093)** — ✅ COMPLETE (re-housed from E02:S16:T08) — [Task](story-03-additional-workflows-and-examples/T07-ukw-slash-command-claude-code-fr093.md) | [FR-093](../../fr-br/FR-093-ukw-slash-command-claude-code.md)
+- [x] **E02:S03:T07 – `/ukw` slash command for Claude Code (FR-093)** — ✅ COMPLETE (re-housed from E02:S16:T08) — [Task](story-03-additional-workflows-and-examples/T07-ukw-slash-command-claude-code-fr093.md) | [FR-093](../../fbu/FR-093-ukw-slash-command-claude-code.md)
 
-- [x] **E02:S03:T08 – Implementation Delivery Workflow / IDW (FR-118)** — ✅ COMPLETE (re-housed from E02:S16:T22) — [Task](story-03-additional-workflows-and-examples/T08-implementation-delivery-workflow-idw-fr118.md) | [FR-119](../../fr-br/FR-119-implementation-delivery-workflow-idw.md)
+- [x] **E02:S03:T08 – Implementation Delivery Workflow / IDW (FR-118)** — ✅ COMPLETE (re-housed from E02:S16:T22) — [Task](story-03-additional-workflows-and-examples/T08-implementation-delivery-workflow-idw-fr118.md) | [FR-119](../../fbu/FR-119-implementation-delivery-workflow-idw.md)
 
-- [x] **E02:S03:T09 – Meta-workflow orchestration / MWF (`delivery` = IPW → IDW → RW) (FR-124)** — ✅ COMPLETE (**v0.2.3.9+3**) — [Task](story-03-additional-workflows-and-examples/T09-ipw-full-delivery-chain-idf-rw-fr123.md) | [FR-124](../../fr-br/FR-124-meta-workflow-orchestration-composite-workflow-chains.md) | [IPP](../../implementation-cycles/IPP-E02S03T09-meta-workflow-orchestration-mwf-fr124.md)
+- [x] **E02:S03:T09 – Meta-workflow orchestration / MWF (`delivery` = IPW → IDW → RW) (FR-124)** — ✅ COMPLETE (**v0.2.3.9+3**) — [Task](story-03-additional-workflows-and-examples/T09-ipw-full-delivery-chain-idf-rw-fr123.md) | [FR-124](../../fbu/FR-124-meta-workflow-orchestration-composite-workflow-chains.md) | [IPP](../../implementation-cycles/IPP-E02S03T09-meta-workflow-orchestration-mwf-fr124.md)
 
-- [x] **E02:S03:T10 – Workflow encapsulation integrity audit (MWF leverage) (FR-126)** — ✅ COMPLETE (**v0.2.3.10+1**) — [Task](story-03-additional-workflows-and-examples/T10-workflow-encapsulation-integrity-mwf-fr126.md) | [FR-126](../../fr-br/FR-126-workflow-encapsulation-integrity-mwf-fr126.md) | [IPP](../../implementation-cycles/IPP-E02S03T10-workflow-encapsulation-integrity-mwf-fr126.md)
+- [x] **E02:S03:T10 – Workflow encapsulation integrity audit (MWF leverage) (FR-126)** — ✅ COMPLETE (**v0.2.3.10+1**) — [Task](story-03-additional-workflows-and-examples/T10-workflow-encapsulation-integrity-mwf-fr126.md) | [FR-126](../../fbu/FR-126-workflow-encapsulation-integrity-mwf-fr126.md) | [IPP](../../implementation-cycles/IPP-E02S03T10-workflow-encapsulation-integrity-mwf-fr126.md)
 
-- [x] **E02:S03:T11 – MWF sub-agent leg delegation (BR-102)** — ✅ COMPLETE (fix @ **v0.2.3.10+1**) — [Task](story-03-additional-workflows-and-examples/T11-mwf-subagent-leg-delegation-br102.md) | [BR-102](../../fr-br/BR-102-mwf-chain-paused-instead-of-subagent-leg-delegation.md) | —No IPP—
+- [x] **E02:S03:T11 – MWF sub-agent leg delegation (BR-102)** — ✅ COMPLETE (fix @ **v0.2.3.10+1**) — [Task](story-03-additional-workflows-and-examples/T11-mwf-subagent-leg-delegation-br102.md) | [BR-102](../../fbu/BR-102-mwf-chain-paused-instead-of-subagent-leg-delegation.md) | —No IPP—
 
-- [x] **E02:S03:T12 – Environment-aware workflow execution (FR-128)** — ✅ COMPLETE (**v0.2.3.12+1**) — [Task](story-03-additional-workflows-and-examples/T12-environment-aware-workflow-execution-fr128.md) | [FR-128](../../fr-br/FR-128-environment-aware-workflow-execution.md) | [—IPP—](../../implementation-cycles/IPP-E02S03T12-environment-aware-workflow-execution-fr128.md)
+- [x] **E02:S03:T12 – Environment-aware workflow execution (FR-128)** — ✅ COMPLETE (**v0.2.3.12+1**) — [Task](story-03-additional-workflows-and-examples/T12-environment-aware-workflow-execution-fr128.md) | [FR-128](../../fbu/FR-128-environment-aware-workflow-execution.md) | [—IPP—](../../implementation-cycles/IPP-E02S03T12-environment-aware-workflow-execution-fr128.md)
 
-- [ ] **E02:S03:T13 – MWF `delivery` RW intent preflight (FR-137)** — 📋 TODO (HIGH — kanban-init **v0.2.3.13+0**) — [Task](story-03-additional-workflows-and-examples/T13-mwf-delivery-rw-intent-preflight-fr137.md) | [FR-137](../../fr-br/FR-137-mwf-delivery-rw-intent-preflight-art-forwarding.md) | —No IPP—
+- [ ] **E02:S03:T13 – MWF `delivery` RW intent preflight (FR-137)** — 📋 TODO (HIGH — kanban-init **v0.2.3.13+0**) — [Task](story-03-additional-workflows-and-examples/T13-mwf-delivery-rw-intent-preflight-fr137.md) | [FR-137](../../fbu/FR-137-mwf-delivery-rw-intent-preflight-art-forwarding.md) | —No IPP—
 
 ---
 

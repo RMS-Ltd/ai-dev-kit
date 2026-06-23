@@ -25,7 +25,7 @@ Publication N/A Reason: FR-042 consolidated IPP; closure audit and kanban reconc
 
 ## Scope
 
-**Closure and hygiene** for [FR-005](../../../fr-br/FR-005-systematic-canonical-epics-stories-tasks-templates.md) — not greenfield re-delivery of story-006 T02–T10.
+**Closure and hygiene** for [FR-005](../../../fbu/FR-005-systematic-canonical-epics-stories-tasks-templates.md) — not greenfield re-delivery of story-006 T02–T10.
 
 Historical delivery (embedded in [story-006](../story-06-comprehensive-canonical-est-template-system.md)):
 
@@ -39,7 +39,7 @@ This discrete task reconciles FR-005, kanban boards, and forensic markers with t
 ## Input
 
 - **[IPP-E4S6T1](../../../../implementation-cycles/IPP-E4S06T01-canonical-est-template-closure-fr005.md)** — specification, test design, implementation plan (IPW)
-- **[FR-005](../../../fr-br/FR-005-systematic-canonical-epics-stories-tasks-templates.md)** — requirements and acceptance criteria
+- **[FR-005](../../../fbu/FR-005-systematic-canonical-epics-stories-tasks-templates.md)** — requirements and acceptance criteria
 - **[story-006](../story-06-comprehensive-canonical-est-template-system.md)** — program delivery record (T00–T10)
 - [`packages/frameworks/kanban/templates/`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/kanban/templates) — template corpus
 - [`generate_task_templates.py --validate`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/kanban/scripts/generate_task_templates.py)
@@ -89,9 +89,9 @@ This discrete task reconciles FR-005, kanban boards, and forensic markers with t
 
 **Related FR/BR Documents:**
 
-- **[FR-005](../../../fr-br/FR-005-systematic-canonical-epics-stories-tasks-templates.md)** — **Informs** — Primary requirement; closure target.
-- **[BR-004](../../../fr-br/BR-004-kanban-installation-includes-project-specific-epics.md)** — **Related** — Addressed in story-006 T10.
-- **[BR-009](../../../fr-br/BR-009-installer-discoverability-and-documentation.md)** — **Related** — Addressed in story-006 T09.
+- **[FR-005](../../../fbu/FR-005-systematic-canonical-epics-stories-tasks-templates.md)** — **Informs** — Primary requirement; closure target.
+- **[BR-004](../../../fbu/BR-004-kanban-installation-includes-project-specific-epics.md)** — **Related** — Addressed in story-006 T10.
+- **[BR-009](../../../fbu/BR-009-installer-discoverability-and-documentation.md)** — **Related** — Addressed in story-006 T09.
 
 ---
 
@@ -99,7 +99,7 @@ This discrete task reconciles FR-005, kanban boards, and forensic markers with t
 
 - [IPP-E4S6T1](../../../../implementation-cycles/IPP-E4S06T01-canonical-est-template-closure-fr005.md)
 - [story-006](../story-06-comprehensive-canonical-est-template-system.md)
-- [FR-005](../../../fr-br/FR-005-systematic-canonical-epics-stories-tasks-templates.md)
+- [FR-005](../../../fbu/FR-005-systematic-canonical-epics-stories-tasks-templates.md)
 
 ## Planning artifacts (publication)
 

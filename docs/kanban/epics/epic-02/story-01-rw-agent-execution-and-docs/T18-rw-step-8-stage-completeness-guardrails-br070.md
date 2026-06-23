@@ -16,7 +16,7 @@ housekeeping_policy: keep
 **Version Anchor:** v0.2.1.18+1
 **Code:** E02S01T18
 
-**Upstream:** [BR-070](../../../fr-br/BR-070-rw-k-stage-files-completeness-gap-allows-partial-kanban-commit.md)
+**Upstream:** [BR-070](../../../fbu/BR-070-rw-k-stage-files-completeness-gap-allows-partial-kanban-commit.md)
 
 ---
 
@@ -38,7 +38,7 @@ Harden RW Step 8 so release commits cannot omit Step-7 outputs. Add deterministi
 
 ## Input
 
-- [BR-070](../../../fr-br/BR-070-rw-k-stage-files-completeness-gap-allows-partial-kanban-commit.md)
+- [BR-070](../../../fbu/BR-070-rw-k-stage-files-completeness-gap-allows-partial-kanban-commit.md)
 - [IPW Plan — E02:S01:T18](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/.claude/plans/e2-s01-t18-polished-cerf.md)
 
 ---
@@ -65,7 +65,7 @@ Harden RW Step 8 so release commits cannot omit Step-7 outputs. Add deterministi
 
 ## Links
 
-- [BR-070](../../../fr-br/BR-070-rw-k-stage-files-completeness-gap-allows-partial-kanban-commit.md)
+- [BR-070](../../../fbu/BR-070-rw-k-stage-files-completeness-gap-allows-partial-kanban-commit.md)
 - [Story E2:S01](../story-01-rw-agent-execution-and-docs.md)
 - [Release Workflow Agent Execution Guide](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md)
 

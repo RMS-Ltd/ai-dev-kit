@@ -296,7 +296,7 @@ housekeeping_policy: keep
 - [x] **E6:S08 – ai-dev-kit CLI Tool** - COMPLETE (v0.6.8.13+1 – All 14 tasks T00-T13 complete: Architecture, commands, backend abstraction, all four backends, configuration management, error handling, migration utilities, remove command, documentation, testing, validation, PyPI packaging)
   - Story: [`epics/epic-06/story-08-ai-dev-kit-cli-tool.md`](epics/epic-06/story-08-ai-dev-kit-cli-tool.md)
   - Tasks: T00 COMPLETE, T01-T13 COMPLETE (CLI tool implementation: architecture, commands, backends, config, migration, testing, packaging - ALL COMPLETE)
-  - **Feature Request:** [FR-030](fr-br/FR-030-ai-dev-kit-cli-tool.md)
+  - **Feature Request:** [FR-030](fbu/FR-030-ai-dev-kit-cli-tool.md)
 
 
 - [x] **E6:S09 – AI Dev Kit installation and adopter integration** - COMPLETE ✅ (v0.6.9.2+2 — FR-080/081/082/098; T01–T06)
@@ -342,7 +342,7 @@ housekeeping_policy: keep
   - Tasks: T01 COMPLETE (v0.7.5.1+0 - UXR-001 intake and synthesis), T02 COMPLETE (v0.7.5.2+0 - UXR-002 intake and synthesis), T03 COMPLETE (v0.7.5.3+0 - UXR-003 intake and synthesis), T04 COMPLETE (v0.7.5.4+0 - UXR-004 intake and synthesis) - **Story COMPLETE**
 
 
-- [x] **E7:S07 – Code Reviews** - ✅ COMPLETE (v0.7.7.3+1 — T01–T03; [FR-107](fr-br/FR-107-comprehensive-workflow-machinery-code-review.md) · [BR-091](fr-br/BR-091-workflow-validator-legacy-workflow-mgt-path-hardcoded.md) FIXED)
+- [x] **E7:S07 – Code Reviews** - ✅ COMPLETE (v0.7.7.3+1 — T01–T03; [FR-107](fbu/FR-107-comprehensive-workflow-machinery-code-review.md) · [BR-091](fbu/BR-091-workflow-validator-legacy-workflow-mgt-path-hardcoded.md) FIXED)
   - Story: [`epics/epic-07/story-07-code-reviews.md`](epics/epic-07/story-07-code-reviews.md)
   - Tasks: T01 TODO — comprehensive workflow machinery code review
 
@@ -394,7 +394,7 @@ housekeeping_policy: keep
 
 - [ ] **E9:S01 – RC Readiness Gap Analysis** - IN PROGRESS (v0.9.1.8+6)
   - Story: [`epics/epic-09/story-01-rc-readiness-gap-analysis.md`](epics/epic-09/story-01-rc-readiness-gap-analysis.md)
-  - **Feature Request:** [FR-032](fr-br/FR-032-release-candidate-readiness-gap-analysis.md)
+  - **Feature Request:** [FR-032](fbu/FR-032-release-candidate-readiness-gap-analysis.md)
 
 
 - [ ] **E9:S02 – Kanban Framework RC Readiness Review** - TODO

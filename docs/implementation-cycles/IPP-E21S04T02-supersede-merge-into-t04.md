@@ -9,7 +9,7 @@ housekeeping_policy: keep
 # E21:S04:T02 — Planning: Supersede UI/UX task; merge scope into T04 (IPW)
 
 **Host Task:** [`T02-adapt-uiux-for-different-cultures-examples-imagery.md`](../kanban/epics/epic-21/story-04-cultural-adaptation/T02-adapt-uiux-for-different-cultures-examples-imagery.md) **(E21:S04:T02)**  
-**Planning for:** [FR-006 Phase 2](../kanban/fr-br/FR-006-localization-language-selection-uk-us-english.md) · [E21:S04](../kanban/epics/epic-21/story-04-cultural-adaptation.md) · [locale-cultural-requirements.md](../governance/standards/locale-cultural-requirements.md)  
+**Planning for:** [FR-006 Phase 2](../kanban/fbu/FR-006-localization-language-selection-uk-us-english.md) · [E21:S04](../kanban/epics/epic-21/story-04-cultural-adaptation.md) · [locale-cultural-requirements.md](../governance/standards/locale-cultural-requirements.md)  
 **Status:** Complete — released `v0.21.4.2+1` (`RW E21:S04:T02 --art`)  
 **Branch:** `dev`
 

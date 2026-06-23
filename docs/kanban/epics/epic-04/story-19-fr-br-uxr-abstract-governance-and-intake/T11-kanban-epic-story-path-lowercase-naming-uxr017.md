@@ -20,7 +20,7 @@ housekeeping_policy: keep
 
 **Publication Status:** NOT_APPLICABLE
 
-**Upstream:** [UXR-017 — Kanban Epic/Story Path Lowercase Naming](../../../fr-br/UXR-017-kanban-epic-story-path-lowercase-naming.md)  
+**Upstream:** [UXR-017 — Kanban Epic/Story Path Lowercase Naming](../../../fbu/UXR-017-kanban-epic-story-path-lowercase-naming.md)  
 **Planning package:** [IPP-E4S19T11](../../../../implementation-cycles/IPP-E04S19T11-kanban-epic-story-path-lowercase-naming.md)
 
 ---
@@ -36,10 +36,10 @@ Establish and implement lowercase **2-digit-padded** path segments (`epic-04/`, 
 ## Input
 
 - [IPP-E4S19T11](../../../../implementation-cycles/IPP-E04S19T11-kanban-epic-story-path-lowercase-naming.md)
-- [UXR-017](../../../fr-br/UXR-017-kanban-epic-story-path-lowercase-naming.md) findings and acceptance criteria
+- [UXR-017](../../../fbu/UXR-017-kanban-epic-story-path-lowercase-naming.md) findings and acceptance criteria
 - Framework scripts: `migrate_structure.py`, `task_creator.py`, `validate_installation.py`
-- RW install pattern detection ([BR-083](../../../fr-br/BR-083-rw-install-default-patterns-mismatch-fresh-kanban-layout.md) / E06:S09:T12)
-- Completed [UXR-011](../../../fr-br/UXR-011-kanban-naming-hygiene-and-directory-systematic-cleanup.md) (task `Txx` only)
+- RW install pattern detection ([BR-083](../../../fbu/BR-083-rw-install-default-patterns-mismatch-fresh-kanban-layout.md) / E06:S09:T12)
+- Completed [UXR-011](../../../fbu/UXR-011-kanban-naming-hygiene-and-directory-systematic-cleanup.md) (task `Txx` only)
 
 ---
 
@@ -123,7 +123,7 @@ After ADK kanban install on **Expenses Tracker**:
 - [IPP-E4S19T11](../../../../implementation-cycles/IPP-E04S19T11-kanban-epic-story-path-lowercase-naming.md)
 - [ADR-015](../../../../architecture/standards-and-adrs/ADR-015-kanban-epic-story-path-lowercase-convention.md)
 - [epic-story-path-migration-guide](../../../../architecture/standards-and-adrs/epic-story-path-migration-guide.md)
-- [UXR-017](../../../fr-br/UXR-017-kanban-epic-story-path-lowercase-naming.md)
+- [UXR-017](../../../fbu/UXR-017-kanban-epic-story-path-lowercase-naming.md)
 - [github-issue-install-signoff.md](../../../../documentation/user-docs/github-issue-install-signoff.md)
 - [Story 019](../story-19-fr-br-uxr-abstract-governance-and-intake.md)
 - [Epic 4](../epic-04.md)

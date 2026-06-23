@@ -32,9 +32,9 @@ Make it easy for users to consume **individual frameworks** (workflow mgt, versi
 
 ## Task Checklist
 
-- [x] **E01:S02:T13 – README / been-there template (FR-002)** - ✅ COMPLETE (v0.1.2.13+1) — [Task doc](story-02-package-and-repo-architecture/T13-readme-template-best-readme-fr002.md) | [FR-002](../../fr-br/FR-002-update-been-there-readme.md)
+- [x] **E01:S02:T13 – README / been-there template (FR-002)** - ✅ COMPLETE (v0.1.2.13+1) — [Task doc](story-02-package-and-repo-architecture/T13-readme-template-best-readme-fr002.md) | [FR-002](../../fbu/FR-002-update-been-there-readme.md)
 
-- [x] **E01:S02:T14 – Dependency tracking for adopters (FR-003)** - ✅ COMPLETE (v0.1.2.14+1) — [Task doc](story-02-package-and-repo-architecture/T14-dependency-tracking-adopters-fr003.md) | [FR-003](../../fr-br/FR-003-dependency-tracking-in-adopting-projects.md) | [Guide](../../../documentation/user-docs/adopter-external-resource-dependency-tracking.md)
+- [x] **E01:S02:T14 – Dependency tracking for adopters (FR-003)** - ✅ COMPLETE (v0.1.2.14+1) — [Task doc](story-02-package-and-repo-architecture/T14-dependency-tracking-adopters-fr003.md) | [FR-003](../../fbu/FR-003-dependency-tracking-in-adopting-projects.md) | [Guide](../../../documentation/user-docs/adopter-external-resource-dependency-tracking.md)
 
 - [x] **E01:S02:T01 – Analyze current package structure and dependencies** ✅ COMPLETE (v0.1.2.1+1)
   - Task: [`T01-package-structure-analysis`](story-02-package-and-repo-architecture/T01-package-structure-analysis.md)

@@ -9,7 +9,7 @@ housekeeping_policy: keep
 # E02:S16:T19 — Planning: RW `--dpz` short flag (UXR-022)
 
 **Host Task:** [`T19-rw-dpz-short-flag-doc-policy-zero-uxr022.md`](../kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T19-rw-dpz-short-flag-doc-policy-zero-uxr022.md) **(E02:S16:T19)**  
-**Planning for:** [UXR-022 — RW `--doc-policy-zero` short flag (`--dpz`)](../kanban/fr-br/UXR-022-rw-doc-policy-zero-short-flag-dpz.md)  
+**Planning for:** [UXR-022 — RW `--doc-policy-zero` short flag (`--dpz`)](../kanban/fbu/UXR-022-rw-doc-policy-zero-short-flag-dpz.md)  
 **Status:** Published
 
 > **IPW (Implementation Planning Workflow):** Produced by IPW for E02:S16:T19. Bidirectional wiring to the host task `Input` and `References` is confirmed.
@@ -126,7 +126,7 @@ Governing docs: BR-067, BR-097, UXR-022. No new architectural choice.
 
 ## References
 
-- [UXR-022](../kanban/fr-br/UXR-022-rw-doc-policy-zero-short-flag-dpz.md)
+- [UXR-022](../kanban/fbu/UXR-022-rw-doc-policy-zero-short-flag-dpz.md)
 - [T19 task doc](../kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T19-rw-dpz-short-flag-doc-policy-zero-uxr022.md)
-- [BR-067](../kanban/fr-br/BR-067-rw-first-doc-only-release-defaults-to-build-plus-one-not-plus-zero.md)
-- [BR-097](../kanban/fr-br/BR-097-rw-agent-reuses-tagged-build-and-force-moves-release-tags.md)
+- [BR-067](../kanban/fbu/BR-067-rw-first-doc-only-release-defaults-to-build-plus-one-not-plus-zero.md)
+- [BR-097](../kanban/fbu/BR-097-rw-agent-reuses-tagged-build-and-force-moves-release-tags.md)

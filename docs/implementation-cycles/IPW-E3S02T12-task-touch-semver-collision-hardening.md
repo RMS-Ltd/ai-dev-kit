@@ -10,7 +10,7 @@ housekeeping_policy: keep
 
 **Host Task:** [`T12-implement-task-touch-semver-mapping-mode.md`](../kanban/epics/epic-03/story-02-versioning-cookbook-and-examples/T12-implement-task-touch-semver-mapping-mode.md) **(E3:S02:T12)**  
 **Cross-Task Interaction:** [`T46-rw-semver-tag-task-touch-mode.md`](../kanban/epics/epic-05/story-01-fr-repo/T46-rw-semver-tag-task-touch-mode.md) **(E5:S01:T46)**  
-**Planning for:** [BR-061](../kanban/fr-br/BR-061-semver-task-touch-counter-increments-too-often.md), [FR-046](../kanban/fr-br/FR-046-rw-semver-tag-task-touch-mode.md)  
+**Planning for:** [BR-061](../kanban/fbu/BR-061-semver-task-touch-counter-increments-too-often.md), [FR-046](../kanban/fbu/FR-046-rw-semver-tag-task-touch-mode.md)  
 **Status:** Draft
 
 ---
@@ -85,7 +85,7 @@ Eliminate high-frequency task-touch SemVer collisions by making conversion idemp
 - `packages/frameworks/workflow-mgt/scripts/validation/validate_version_bump.py` (if finalize boundary checks required)
 - `docs/kanban/epics/epic-03/story-02-versioning-cookbook-and-examples/T12-implement-task-touch-semver-mapping-mode.md`
 - `docs/kanban/epics/epic-05/story-01-fr-repo/T46-rw-semver-tag-task-touch-mode.md`
-- `docs/kanban/fr-br/FR-046-rw-semver-tag-task-touch-mode.md`
+- `docs/kanban/fbu/FR-046-rw-semver-tag-task-touch-mode.md`
 - Versioning/RW docs under `packages/frameworks/workflow-mgt/docs/` as needed
 
 ### 3.2 Dependency order
@@ -113,5 +113,5 @@ Eliminate high-frequency task-touch SemVer collisions by making conversion idemp
 
 - [Host Task E3:S02:T12](../kanban/epics/epic-03/story-02-versioning-cookbook-and-examples/T12-implement-task-touch-semver-mapping-mode.md)
 - [Cross-task E5:S01:T46](../kanban/epics/epic-05/story-01-fr-repo/T46-rw-semver-tag-task-touch-mode.md)
-- [BR-061](../kanban/fr-br/BR-061-semver-task-touch-counter-increments-too-often.md)
-- [FR-046](../kanban/fr-br/FR-046-rw-semver-tag-task-touch-mode.md)
+- [BR-061](../kanban/fbu/BR-061-semver-task-touch-counter-increments-too-often.md)
+- [FR-046](../kanban/fbu/FR-046-rw-semver-tag-task-touch-mode.md)

@@ -32,9 +32,9 @@ Complements **E03:S02:T12** (FR-045/046) — indexed query/audit layer, not task
 ## Input
 
 - [IPP-E02S01T25-release-metadata-async-ingest-umbrella.md](../../../../implementation-cycles/IPP-E02S01T25-release-metadata-async-ingest-umbrella.md) — **umbrella IPW** (co-deliverable with T25)
-- [FR-116](../../../fr-br/FR-116-semver-registry-structured-store-shared-release-metadata.md) — feature request, shared-store coordination, acceptance criteria
-- [FR-115](../../../fr-br/FR-115-changelog-structured-store-database-backed-cmw.md) — sibling FR; shared `release_metadata` module
-- [FR-045](../../../fr-br/FR-045-adr-002-task-touch-derived-mapping.md) · [FR-046](../../../fr-br/FR-046-rw-semver-tag-task-touch-mode.md)
+- [FR-116](../../../fbu/FR-116-semver-registry-structured-store-shared-release-metadata.md) — feature request, shared-store coordination, acceptance criteria
+- [FR-115](../../../fbu/FR-115-changelog-structured-store-database-backed-cmw.md) — sibling FR; shared `release_metadata` module
+- [FR-045](../../../fbu/FR-045-adr-002-task-touch-derived-mapping.md) · [FR-046](../../../fbu/FR-046-rw-semver-tag-task-touch-mode.md)
 - [T12](T12-implement-task-touch-semver-mapping-mode.md) — prior task-touch implementation (COMPLETE)
 - `semver-registry.yaml` — current SoT
 - `packages/frameworks/workflow-mgt/scripts/version/` — converter, finalize, validators
@@ -67,8 +67,8 @@ Complements **E03:S02:T12** (FR-045/046) — indexed query/audit layer, not task
 
 ## Associated Feature Requests
 
-- [FR-116: SemVer Registry Structured Store](../../../fr-br/FR-116-semver-registry-structured-store-shared-release-metadata.md)
-- [FR-115: Changelog Structured Store](../../../fr-br/FR-115-changelog-structured-store-database-backed-cmw.md) (coordination)
+- [FR-116: SemVer Registry Structured Store](../../../fbu/FR-116-semver-registry-structured-store-shared-release-metadata.md)
+- [FR-115: Changelog Structured Store](../../../fbu/FR-115-changelog-structured-store-database-backed-cmw.md) (coordination)
 
 ---
 

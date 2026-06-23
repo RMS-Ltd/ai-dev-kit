@@ -9,7 +9,7 @@ housekeeping_policy: keep
 # E21:S08:T01 — Planning: Layered accessibility programme (CLI-first) (IPW)
 
 **Host Task:** [`T01-accessibility-baseline-audit-and-standards-mapping.md`](../project-management/kanban/epics/epic-21/story-08-accessibility/T01-accessibility-baseline-audit-and-standards-mapping.md) **(E21:S08:T01)**  
-**Planning for:** [FR-115](../project-management/kanban/fr-br/FR-115-accessibility-standards-compatibility.md) · [Story 08](../project-management/kanban/epics/epic-21/story-08-accessibility.md)  
+**Planning for:** [FR-115](../project-management/kanban/fbu/FR-115-accessibility-standards-compatibility.md) · [Story 08](../project-management/kanban/epics/epic-21/story-08-accessibility.md)  
 **Status:** Complete — T01 audit released `v0.21.8.1+1` (`RW -k E21:S08:T01 --art`)  
 **Branch:** `epic/21-internationalisation-localisation`
 
@@ -26,7 +26,7 @@ housekeeping_policy: keep
 | RF3 | T01 audit **executes deeply on Layer 1**; catalogues Layers 2–5 at summary level only | RF1 |
 | RF4 | T02 ADR defines layer model, conformance targets per layer, and Layer 1 exit criteria | FR-115 |
 | RF5 | Layer 1 remediation in T03; no Layer 2+ implementation until Layer 1 COMPLETE | RF1 |
-| RF6 | Align CLI errors with [FR-108](../project-management/kanban/fr-br/FR-108-install-setup-error-code-registry-and-emission.md) plain-language patterns | FR-108 |
+| RF6 | Align CLI errors with [FR-108](../project-management/kanban/fbu/FR-108-install-setup-error-code-registry-and-emission.md) plain-language patterns | FR-108 |
 | RF7 | IPP ↔ task doc wiring; story checklist updated | IPW Phase 8 |
 
 ### 1.2 Non-functional requirements
@@ -189,7 +189,7 @@ T01 audit deliverable is **doc-only** — tests land in T03.
 
 ## References
 
-- [FR-115](../project-management/kanban/fr-br/FR-115-accessibility-standards-compatibility.md)
-- [FR-108](../project-management/kanban/fr-br/FR-108-install-setup-error-code-registry-and-emission.md)
+- [FR-115](../project-management/kanban/fbu/FR-115-accessibility-standards-compatibility.md)
+- [FR-108](../project-management/kanban/fbu/FR-108-install-setup-error-code-registry-and-emission.md)
 - [cli/utils.py](../../cli/utils.py)
 - [EN 301 549](https://www.etsi.org/standard/EN-301-549) — ICT accessibility (software)

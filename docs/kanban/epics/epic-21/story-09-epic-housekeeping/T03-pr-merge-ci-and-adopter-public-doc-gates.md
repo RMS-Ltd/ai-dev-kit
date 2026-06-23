@@ -21,7 +21,7 @@ housekeeping_policy: keep
 
 - [PR #47](https://github.com/RMS-Ltd/ai-dev-kit/pull/47) — merge `epic/21-internationalisation-localisation` → `dev`
 - Post-merge commits: `791d85e6` (merge), `01ecf205` (CI fixes), `338d3b14` (portal/greenfield gates)
-- [BR-068](../../fr-br/BR-068-docusaurus-monorepo-markdown-links-break-strict-production-build.md) · [FR-114](../../fr-br/FR-114-split-documentation-surfaces-docusaurus-public-notion-maintainer-kb.md) · [FR-110](../../fr-br/FR-110-lean-adopter-distribution-footprint-and-vendor-bundle.md)
+- [BR-068](../../fbu/BR-068-docusaurus-monorepo-markdown-links-break-strict-production-build.md) · [FR-114](../../fbu/FR-114-split-documentation-surfaces-docusaurus-public-notion-maintainer-kb.md) · [FR-110](../../fbu/FR-110-lean-adopter-distribution-footprint-and-vendor-bundle.md)
 
 ---
 

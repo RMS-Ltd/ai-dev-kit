@@ -323,7 +323,7 @@ This section prescribes the exact changes for each document. Implementation must
 | ------ | ---- | ------ | ------- |
 | D1 | `docs/implementation-cycles/IPP-E2S16T3-rehouse-workflow-perpetual-tasks.md` | UPDATE | Tranche 3 |
 | D2 | T03 task doc | UPDATE | BR-067; 3A hygiene |
-| D3 | `fr-br/BR-067-*.md` | UPDATE | RESOLVED |
+| D3 | `fbu/BR-067-*.md` | UPDATE | RESOLVED |
 | D4 | `kboard.md` | UPDATE | Rows |
 | D5 | story-016 doc | UPDATE | Checklist |
 | D6 | Active kanban FR/BR/epic subset | UPDATE | RF-T03-3 |
@@ -413,7 +413,7 @@ None.
 - T02 inventory IPP (3B gate — **published**): [`IPP-E2S16T2-perpetual-task-inventory.md`](IPP-E2S16T02-perpetual-task-inventory.md)
 - T04 (scope boundary): [`T04-ad-hoc-kanban-synchronization-and-hygiene-perpetual.md`](../kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T04-ad-hoc-kanban-synchronization-and-hygiene-perpetual.md)
 - Legacy draft (to archive): [`IPW-E6S7T103-release-workflow-maintenance-perpetual.md`](IPW-E6S07T103-release-workflow-maintenance-perpetual.md)
-- FR-088: [`FR-088-dedicated-story-for-perpetual-ongoing-tasks.md`](../kanban/fr-br/FR-088-dedicated-story-for-perpetual-ongoing-tasks.md)
+- FR-088: [`FR-088-dedicated-story-for-perpetual-ongoing-tasks.md`](../kanban/fbu/FR-088-dedicated-story-for-perpetual-ongoing-tasks.md)
 - Guardrail implementation: `packages/frameworks/workflow-mgt/scripts/validation/validate_version_bump.py`
 - Test file: `packages/frameworks/workflow-mgt/scripts/validation/test_validate_version_bump.py`
 - Versioning policy §6.1.1: `docs/architecture/standards-and-adrs/dev-kit-versioning-policy.md`

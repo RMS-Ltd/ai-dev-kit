@@ -20,15 +20,15 @@ housekeeping_policy: keep
 ✅ COMPLETE (v0.2.16.21+2)  
 **Code:** E02S01T29  
 
-**Upstream:** [UXR-024 — RW local-release default; operator batch push](../../../fr-br/UXR-024-rw-local-release-default-no-push-batch-operator-push.md)
+**Upstream:** [UXR-024 — RW local-release default; operator batch push](../../../fbu/UXR-024-rw-local-release-default-no-push-batch-operator-push.md)
 
 ---
 
 ## Input
 
-- [UXR-024](../../../fr-br/UXR-024-rw-local-release-default-no-push-batch-operator-push.md) findings and recommendations (R1–R6).
-- [FR-048](../../../fr-br/FR-048-rw-trigger-extensions-for-multiple-use-cases.md) — existing push-skip modes (`RW -d`).
-- [BR-097](../../../fr-br/BR-097-rw-agent-reuses-tagged-build-and-force-moves-release-tags.md) — tag immutability for batch push.
+- [UXR-024](../../../fbu/UXR-024-rw-local-release-default-no-push-batch-operator-push.md) findings and recommendations (R1–R6).
+- [FR-048](../../../fbu/FR-048-rw-trigger-extensions-for-multiple-use-cases.md) — existing push-skip modes (`RW -d`).
+- [BR-097](../../../fbu/BR-097-rw-agent-reuses-tagged-build-and-force-moves-release-tags.md) — tag immutability for batch push.
 - [workflow-initiation-cheatsheet.md](../../../../guides/workflow-initiation-cheatsheet.md) — RW §2 flag matrix.
 - `packages/frameworks/workflow-mgt/canonical-rw-steps.yaml` — execution paths.
 

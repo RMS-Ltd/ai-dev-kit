@@ -63,10 +63,10 @@ BR/FR → Task (one-way only)
 ### E2:S01:T06 – Task Title
 
 **Input:**  
-- **Bug Report:** [BR-002: Bug Title](../../fr-br/BR-002-bug-title.md) (or Feature Request: FR-XXX)
+- **Bug Report:** [BR-002: Bug Title](../../fbu/BR-002-bug-title.md) (or Feature Request: FR-XXX)
 
 **Related:**
-- **Bug Report:** [BR-002: Bug Title](../../fr-br/BR-002-bug-title.md)
+- **Bug Report:** [BR-002: Bug Title](../../fbu/BR-002-bug-title.md)
 - **Documentation:** [Guide Title](../../guides/guide-title.md)
 ```
 
@@ -86,7 +86,7 @@ BR/FR → Task (one-way only)
 ## Related Work
 
 - **Task:** [E2:S01:T06 - Task Title](../../epics/Epic-X/Story-XXX.md#e2s01t06--task-title) - Implements this pattern
-- **Bug Report:** [BR-002: Bug Title](../fr-br/BR-002-bug-title.md) - Discovered this pattern
+- **Bug Report:** [BR-002: Bug Title](../fbu/BR-002-bug-title.md) - Discovered this pattern
 ```
 
 ---
@@ -105,7 +105,7 @@ BR/FR → Task (one-way only)
 ```markdown
 ## Examples
 
-- **BR-002:** [Changelog Validator Ordering Bug](../../kanban/fr-br/BR-002-changelog-validator-ordering-bug.md) - Example of this pattern
+- **BR-002:** [Changelog Validator Ordering Bug](../../kanban/fbu/BR-002-changelog-validator-ordering-bug.md) - Example of this pattern
 - **Task:** [E2:S01:T06](../../kanban/epics/epic-02/story-01-rw-agent-execution-and-docs.md#e2s01t06--fix-changelog-validator-ordering-bug--reopened) - Implements this pattern
 ```
 
@@ -199,15 +199,15 @@ Use anchor links for tasks in story documents:
 Use relative paths from the document location:
 
 ```markdown
-- From `docs/kanban/fr-br/BR-002.md`:
+- From `docs/kanban/fbu/BR-002.md`:
   - To Epic: `../epics/epic-02/epic-02.md`
   - To Story: `../epics/epic-02/story-01-rw-agent-execution-and-docs.md`
   - To Task: `../epics/epic-02/story-01-rw-agent-execution-and-docs.md#e2s01t06--fix-changelog-validator-ordering-bug`
 
 
 - From `docs/kanban/epics/epic-02/story-01-rw-agent-execution-and-docs.md`:
-  - To BR: `../../fr-br/BR-002-changelog-validator-ordering-bug.md`
-  - To Documentation: `../../fr-br/REOPENING_BR_AND_TASKS_GUIDE.md`
+  - To BR: `../../fbu/BR-002-changelog-validator-ordering-bug.md`
+  - To Documentation: `../../fbu/REOPENING_BR_AND_TASKS_GUIDE.md`
 
 ```
 
@@ -217,7 +217,7 @@ Use relative paths from the document location:
 
 ### Example 1: BR-002 and Task T06
 
-**BR-002 (`docs/kanban/fr-br/BR-002-changelog-validator-ordering-bug.md`):**
+**BR-002 (`docs/kanban/fbu/BR-002-changelog-validator-ordering-bug.md`):**
 ```markdown
 ## Intake Decision
 
@@ -228,7 +228,7 @@ Use relative paths from the document location:
 
 ## References
 
-- [REOPENING_BR_AND_TASKS_GUIDE.md](../../kanban/fr-br/REOPENING_BR_AND_TASKS_GUIDE.md) - Guide for reopening BRs/tasks (this BR is an example)
+- [REOPENING_BR_AND_TASKS_GUIDE.md](../../kanban/fbu/REOPENING_BR_AND_TASKS_GUIDE.md) - Guide for reopening BRs/tasks (this BR is an example)
 ```
 
 **Task T06 (`docs/kanban/epics/epic-02/story-01-rw-agent-execution-and-docs.md`):**
@@ -236,18 +236,18 @@ Use relative paths from the document location:
 ### E2:S01:T06 – Fix changelog validator ordering bug 🔄 REOPENED
 
 **Input:**  
-- **Bug Report:** [BR-002: Changelog Validator Ordering Bug](../../kanban/fr-br/BR-002-changelog-validator-ordering-bug.md) (REOPENED)
+- **Bug Report:** [BR-002: Changelog Validator Ordering Bug](../../kanban/fbu/BR-002-changelog-validator-ordering-bug.md) (REOPENED)
 
 **Related:**
-- **Bug Report:** [BR-002: Changelog Validator Ordering Bug](../../kanban/fr-br/BR-002-changelog-validator-ordering-bug.md) (REOPENED)
-- **Documentation:** [REOPENING_BR_AND_TASKS_GUIDE.md](../../kanban/fr-br/REOPENING_BR_AND_TASKS_GUIDE.md) - Guide for reopening BRs/tasks
+- **Bug Report:** [BR-002: Changelog Validator Ordering Bug](../../kanban/fbu/BR-002-changelog-validator-ordering-bug.md) (REOPENED)
+- **Documentation:** [REOPENING_BR_AND_TASKS_GUIDE.md](../../kanban/fbu/REOPENING_BR_AND_TASKS_GUIDE.md) - Guide for reopening BRs/tasks
 ```
 
-**Documentation (`docs/kanban/fr-br/REOPENING_BR_AND_TASKS_GUIDE.md`):**
+**Documentation (`docs/kanban/fbu/REOPENING_BR_AND_TASKS_GUIDE.md`):**
 ```markdown
 ## Example: BR-002 Re-opening
 
-See [`BR-002-changelog-validator-ordering-bug.md`](../../kanban/fr-br/BR-002-changelog-validator-ordering-bug.md) for a complete example
+See [`BR-002-changelog-validator-ordering-bug.md`](../../kanban/fbu/BR-002-changelog-validator-ordering-bug.md) for a complete example
 
 ## Example: Task Re-opening
 
@@ -255,7 +255,7 @@ See [`docs/kanban/epics/epic-02/story-01-rw-agent-execution-and-docs.md`](../../
 
 ## Related Documentation
 
-- [`BR-002-changelog-validator-ordering-bug.md`](../../kanban/fr-br/BR-002-changelog-validator-ordering-bug.md) - Example reopened BR
+- [`BR-002-changelog-validator-ordering-bug.md`](../../kanban/fbu/BR-002-changelog-validator-ordering-bug.md) - Example reopened BR
 - [`docs/kanban/epics/epic-02/story-01-rw-agent-execution-and-docs.md`](../../kanban/epics/epic-02/story-01-rw-agent-execution-and-docs.md) - Example reopened task
 ```
 
@@ -363,7 +363,7 @@ Consider creating a validation script that:
 
 ## Related Documentation
 
-- [REOPENING_BR_AND_TASKS_GUIDE.md](../../kanban/fr-br/REOPENING_BR_AND_TASKS_GUIDE.md) - Example of pattern discovery and wiring
+- [REOPENING_BR_AND_TASKS_GUIDE.md](../../kanban/fbu/REOPENING_BR_AND_TASKS_GUIDE.md) - Example of pattern discovery and wiring
 - [USE_CASE_METHODOLOGY.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/knowledge/USE_CASE_METHODOLOGY.md) - Use case methodology (includes wiring)
 - [UC-D-002: Bidirectional Wiring](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/knowledge/use-cases/discovered/UC-D-002-bidirectional-wiring.md) - Discovered use case (promoted to canonical)
 - [FR_BR_INTAKE_GUIDE.md (source)](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/kanban/FR_BR_INTAKE_GUIDE.md) - Intake process (includes linking)

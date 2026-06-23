@@ -9,8 +9,8 @@ housekeeping_policy: keep
 # E08:S03:T23 — Planning: Spec, Tests, Implementation Plan (IPW)
 
 **Host Task:** [`T23-greenfield-sync-autofix-ci-hardening-br109.md`](../kanban/epics/epic-08/story-03-automation-scripts/T23-greenfield-sync-autofix-ci-hardening-br109.md) **(E08:S03:T23)**
-**Planning for:** [BR-109 — Greenfield dual-tree sync drift on autofix PRs](../kanban/fr-br/BR-109-greenfield-autofix-dual-tree-sync-drift-recurring-ci-failures.md)
-- [FR-110 — Lean adopter distribution footprint and vendor bundle](../kanban/fr-br/FR-110-lean-adopter-distribution-footprint-and-vendor-bundle.md)
+**Planning for:** [BR-109 — Greenfield dual-tree sync drift on autofix PRs](../kanban/fbu/BR-109-greenfield-autofix-dual-tree-sync-drift-recurring-ci-failures.md)
+- [FR-110 — Lean adopter distribution footprint and vendor bundle](../kanban/fbu/FR-110-lean-adopter-distribution-footprint-and-vendor-bundle.md)
 **Status:** Draft
 
 > **IPW (Implementation Planning Workflow):** This IPP wires the specification + test design + implementation plan needed for the executor (IDW) to close E08:S03:T23.
@@ -141,7 +141,7 @@ Score each trigger **Y** or **N** with one-line evidence. Criteria: [`ipw-adr-ne
 - `.github/workflows/greenfield-install.yml` (modify: drift failure messaging hardening)
 - `.github/workflows/greenfield-autofix-reconcile.yml` (create: gated autofix remediation workflow)
 - `AGENTS.md` (modify: P-GREENFIELD-SYNC guidance note for autofix PRs)
-- `docs/kanban/fr-br/BR-109-greenfield-autofix-dual-tree-sync-drift-recurring-ci-failures.md` (modify: “Proposed Remediation” section updated to reflect implemented behavior)
+- `docs/kanban/fbu/BR-109-greenfield-autofix-dual-tree-sync-drift-recurring-ci-failures.md` (modify: “Proposed Remediation” section updated to reflect implemented behavior)
 
 ### 4.2 Dependency order
 
@@ -168,13 +168,13 @@ Score each trigger **Y** or **N** with one-line evidence. Criteria: [`ipw-adr-ne
 | ------ | ---- | --------------- | ------------------------ |
 | D-U1 | `.github/workflows/greenfield-install.yml` | Add dual-tree guidance to drift failure output messaging for non-remediated cases. | RF1/RNF4 · Step 5 |
 | D-U2 | `AGENTS.md` | Extend `P-GREENFIELD-SYNC` note with “autofix-as-hint” guidance and reference to remediation workflow. | RNF4 · Step 6 |
-| D-U3 | `docs/kanban/fr-br/BR-109-greenfield-autofix-dual-tree-sync-drift-recurring-ci-failures.md` | Update remediation section to reflect implemented auto-reconciliation behavior and evidence expectations. | RF4 · Step 6 |
+| D-U3 | `docs/kanban/fbu/BR-109-greenfield-autofix-dual-tree-sync-drift-recurring-ci-failures.md` | Update remediation section to reflect implemented auto-reconciliation behavior and evidence expectations. | RF4 · Step 6 |
 
 ### 5.2 New documents to create
 
 | Doc ID | Proposed path (draft) | Purpose | Tied to (RF/T/impl step) |
 | ------ | --------------------- | ------- | ------------------------ |
-| D-C1 | `docs/kanban/fr-br/BR-109-greenfield-autofix-reconcile-runbook.md` | Optional runbook for maintainers to debug Mode A/Mode B reconciliation. | RF1/RF2 · Step 6 |
+| D-C1 | `docs/kanban/fbu/BR-109-greenfield-autofix-reconcile-runbook.md` | Optional runbook for maintainers to debug Mode A/Mode B reconciliation. | RF1/RF2 · Step 6 |
 
 *If the runbook is not needed during implementation, D-C1 is deferred and documented as NONE in §5.3.*
 
@@ -195,8 +195,8 @@ Score each trigger **Y** or **N** with one-line evidence. Criteria: [`ipw-adr-ne
 | ------ | -------------- | ------------------ | ------------------------------- | --------- | -------------------- |
 | D-U1 | `.github/workflows/greenfield-install.yml` | NOT_APPLICABLE | Internal CI configuration (not published user docs) | evergreen | Task doc + IPP references already cover linkage |
 | D-U2 | `AGENTS.md` | NOT_APPLICABLE | Internal maintainer guidance (no adopter-public publication required) | evergreen | Task doc + IPP references already cover linkage |
-| D-U3 | `docs/kanban/fr-br/BR-109-greenfield-autofix-dual-tree-sync-drift-recurring-ci-failures.md` | PUBLISHED | Internal kanban/FR-closure doc (maintainer-facing) | evergreen | Task doc + IPP references already cover linkage |
-| D-C1 | `docs/kanban/fr-br/BR-109-greenfield-autofix-reconcile-runbook.md` | NOT_APPLICABLE | Optional runbook; create only if maintainers need a separate debugging home | timeboxed | Task doc + IPP references to be linked if created |
+| D-U3 | `docs/kanban/fbu/BR-109-greenfield-autofix-dual-tree-sync-drift-recurring-ci-failures.md` | PUBLISHED | Internal kanban/FR-closure doc (maintainer-facing) | evergreen | Task doc + IPP references already cover linkage |
+| D-C1 | `docs/kanban/fbu/BR-109-greenfield-autofix-reconcile-runbook.md` | NOT_APPLICABLE | Optional runbook; create only if maintainers need a separate debugging home | timeboxed | Task doc + IPP references to be linked if created |
 
 ---
 
@@ -213,8 +213,8 @@ Score each trigger **Y** or **N** with one-line evidence. Criteria: [`ipw-adr-ne
 ## References
 
 - Host task: `T23-greenfield-sync-autofix-ci-hardening-br109.md` (`E08:S03:T23`)
-- BR-109: [Greenfield dual-tree sync drift on autofix PRs](../kanban/fr-br/BR-109-greenfield-autofix-dual-tree-sync-drift-recurring-ci-failures.md)
-- FR-110: [Lean adopter distribution footprint and vendor bundle](../kanban/fr-br/FR-110-lean-adopter-distribution-footprint-and-vendor-bundle.md)
+- BR-109: [Greenfield dual-tree sync drift on autofix PRs](../kanban/fbu/BR-109-greenfield-autofix-dual-tree-sync-drift-recurring-ci-failures.md)
+- FR-110: [Lean adopter distribution footprint and vendor bundle](../kanban/fbu/FR-110-lean-adopter-distribution-footprint-and-vendor-bundle.md)
 - Sync guard script: `scripts/sync_greenfield_install.py`
 - Sync manifest: `scripts/greenfield-install-manifest.yaml`
 - Drift CI workflow: `.github/workflows/greenfield-install.yml`

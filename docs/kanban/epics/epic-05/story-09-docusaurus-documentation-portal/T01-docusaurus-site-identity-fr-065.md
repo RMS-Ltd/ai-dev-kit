@@ -16,7 +16,7 @@ housekeeping_policy: keep
 **Last updated:** 2026-03-30 (v0.5.9.1+2 — FR-065 portal identity, tests, RW)  
 **Code:** E05S09T01
 
-**Feature Request:** [FR-065 – Docusaurus site identity](../../../fr-br/FR-065-docusaurus-site-identity-and-config.md)
+**Feature Request:** [FR-065 – Docusaurus site identity](../../../fbu/FR-065-docusaurus-site-identity-and-config.md)
 
 ---
 
@@ -28,7 +28,7 @@ Implement **FR-065**: replace template branding and placeholder deployment metad
 
 ## Input
 
-- [FR-065 – Docusaurus site identity](../../../fr-br/FR-065-docusaurus-site-identity-and-config.md)
+- [FR-065 – Docusaurus site identity](../../../fbu/FR-065-docusaurus-site-identity-and-config.md)
 - Existing `portal/` scaffold and `docusaurus.config.js`
 
 ---

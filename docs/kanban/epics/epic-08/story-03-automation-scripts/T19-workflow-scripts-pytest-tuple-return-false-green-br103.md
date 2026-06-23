@@ -16,9 +16,9 @@ housekeeping_policy: keep
 **Last updated:** 2026-06-10 (MWF delivery — IDW implementation)  
 **Code:** E08S03T19  
 
-**Upstream:** [BR-103 — workflow-scripts-pytest tuple-return false-green](../../../fr-br/BR-103-workflow-scripts-pytest-tuple-return-false-green.md)  
+**Upstream:** [BR-103 — workflow-scripts-pytest tuple-return false-green](../../../fbu/BR-103-workflow-scripts-pytest-tuple-return-false-green.md)  
 **Planning:** [IPP-E08S03T19](../../../../implementation-cycles/IPP-E08S03T19-workflow-scripts-pytest-tuple-return-br103.md)  
-**Related:** [E07:S07:T02 — CI pytest gate for workflow scripts](../../epic-07/story-07-code-reviews/T02-ci-pytest-gate-for-workflow-scripts.md) · [FR-097](../../../fr-br/FR-097-board-stamp-authority-and-forensic-timestamp-recovery.md) · [UXR-009](../../../fr-br/UXR-009-last-modified-stamp-forensic-integrity-and-drift-protection.md)
+**Related:** [E07:S07:T02 — CI pytest gate for workflow scripts](../../epic-07/story-07-code-reviews/T02-ci-pytest-gate-for-workflow-scripts.md) · [FR-097](../../../fbu/FR-097-board-stamp-authority-and-forensic-timestamp-recovery.md) · [UXR-009](../../../fbu/UXR-009-last-modified-stamp-forensic-integrity-and-drift-protection.md)
 
 ---
 
@@ -30,7 +30,7 @@ Fix **false-green CI** in the workflow-scripts pytest gate: convert `test_stamp_
 
 ## Input
 
-- [BR-103](../../../fr-br/BR-103-workflow-scripts-pytest-tuple-return-false-green.md)
+- [BR-103](../../../fbu/BR-103-workflow-scripts-pytest-tuple-return-false-green.md)
 - [`test_stamp_evidence_gate.py`](../../../../../packages/frameworks/workflow-mgt/scripts/test_stamp_evidence_gate.py)
 - [`run_workflow_scripts_ci_pytest.sh`](../../../../../packages/frameworks/workflow-mgt/scripts/validation/run_workflow_scripts_ci_pytest.sh)
 - [`pytest.ini`](../../../../../packages/frameworks/workflow-mgt/scripts/validation/pytest.ini)
@@ -50,7 +50,7 @@ Fix **false-green CI** in the workflow-scripts pytest gate: convert `test_stamp_
 
 ## Associated Bug Reports
 
-- [BR-103 — workflow-scripts-pytest tuple-return false-green](../../../fr-br/BR-103-workflow-scripts-pytest-tuple-return-false-green.md) (primary)
+- [BR-103 — workflow-scripts-pytest tuple-return false-green](../../../fbu/BR-103-workflow-scripts-pytest-tuple-return-false-green.md) (primary)
 
 ---
 
@@ -90,5 +90,5 @@ Fix **false-green CI** in the workflow-scripts pytest gate: convert `test_stamp_
 
 ## References
 
-- [BR-103](../../../fr-br/BR-103-workflow-scripts-pytest-tuple-return-false-green.md)
+- [BR-103](../../../fbu/BR-103-workflow-scripts-pytest-tuple-return-false-green.md)
 - [packages/frameworks/workflow-mgt/scripts/validation/README.md](../../../../../packages/frameworks/workflow-mgt/scripts/validation/README.md)

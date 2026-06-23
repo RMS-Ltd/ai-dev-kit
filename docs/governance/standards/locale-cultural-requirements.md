@@ -256,7 +256,7 @@ _T02 superseded @ `v0.21.4.2+1` — imagery, layout expansion, and directional-i
 
 ## References
 
-- [FR-006](../../kanban/fr-br/FR-006-localization-language-selection-uk-us-english.md)
+- [FR-006](../../kanban/fbu/FR-006-localization-language-selection-uk-us-english.md)
 - [ADR-024](../../architecture/standards-and-adrs/ADR-024-i18n-framework-strategy.md)
 - [locale-rollout-matrix.md](locale-rollout-matrix.md)
 - [translation-workflow-and-review.md](translation-workflow-and-review.md)

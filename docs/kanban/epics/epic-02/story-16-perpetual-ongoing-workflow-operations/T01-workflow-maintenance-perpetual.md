@@ -19,13 +19,13 @@ housekeeping_policy: keep
 **Code:** E02S16T01
 **Task Type:** Perpetual Maintenance
 
-**Upstream:** [FR-088 - Dedicated story for perpetual ongoing tasks](../../../fr-br/FR-088-dedicated-story-for-perpetual-ongoing-tasks.md)
+**Upstream:** [FR-088 - Dedicated story for perpetual ongoing tasks](../../../fbu/FR-088-dedicated-story-for-perpetual-ongoing-tasks.md)
 
 ---
 
 ## Input
 
-- [FR-088](../../../fr-br/FR-088-dedicated-story-for-perpetual-ongoing-tasks.md) requirements.
+- [FR-088](../../../fbu/FR-088-dedicated-story-for-perpetual-ongoing-tasks.md) requirements.
 - Migration inventory and dispositions from [E02:S15:T10](../../story-15-ipw-governance-and-publication-contract/T10-inventory-and-classify-workflow-perpetual-tasks.md).
 - Planning and sequencing from [E02:S15:T09](../../story-15-ipw-governance-and-publication-contract/T09-establish-canonical-perpetual-ongoing-tasks-story-fr088.md).
 - Canonical policy IPP: [`IPP-E2S16T1-canonical-perpetual-ongoing-tasks-story.md`](../../../../implementation-cycles/IPP-E2S16T01-canonical-perpetual-ongoing-tasks-story.md).
@@ -91,7 +91,7 @@ Workflow maintenance work that is ad-hoc, cross-cutting, and not directly tied t
 - **BR-059:** **RESOLVED** on source doc; **fbuboard** rows deferred (FR-097 stamp cluster).
 
 ### Tranche 2 — BR-067 Wave A (2026-05-30) ✅
-- **Policy table:** BUILD +0/+1/`--doc-policy-zero` rules published in [BR-067](../../../fr-br/BR-067-rw-first-doc-only-release-defaults-to-build-plus-one-not-plus-zero.md).
+- **Policy table:** BUILD +0/+1/`--doc-policy-zero` rules published in [BR-067](../../../fbu/BR-067-rw-first-doc-only-release-defaults-to-build-plus-one-not-plus-zero.md).
 - **RW docs:** `release-workflow-agent-execution.md` Step 2 (A.1.1) and Step 10 document `RW -d … --doc-policy-zero` path.
 - **Adopter SoP:** `implementation-cycle-sop.md` Step 5 cross-links BR-067.
 - **Legacy IPW:** `IPW-E6S7T103` host-task and reference links corrected to epic-02/story-016 T03.

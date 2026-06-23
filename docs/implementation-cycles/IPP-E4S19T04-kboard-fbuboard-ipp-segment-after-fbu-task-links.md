@@ -9,7 +9,7 @@ housekeeping_policy: keep
 # E4:S19:T04 — Planning: Spec, Tests, Implementation Plan (IPP)
 
 **Host Task:** [`T04-kboard-fbuboard-add-ipp-column-after-fbu-and-task-links-uxr010.md`](../kanban/epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T04-kboard-fbuboard-add-ipp-column-after-fbu-and-task-links-uxr010.md) **(E4:S19:T04)**  
-**Planning for:** [UXR-010 — kboard add `IPP` segment after FBU and task links](../kanban/fr-br/UXR-010-kboard-fbuboard-add-ipp-column-after-fbu-and-task-links.md)  
+**Planning for:** [UXR-010 — kboard add `IPP` segment after FBU and task links](../kanban/fbu/UXR-010-kboard-fbuboard-add-ipp-column-after-fbu-and-task-links.md)  
 **Status:** Published
 
 > **IPW (Implementation Planning Workflow):** This document was produced by IPW for E4:S19:T04. Bidirectional wiring to the host task `Input` and `References` is confirmed.
@@ -135,7 +135,7 @@ The normative row contract (RF1–RF6) defines exact token text and segment orde
 ## References
 
 - [Host task E4:S19:T04](../kanban/epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T04-kboard-fbuboard-add-ipp-column-after-fbu-and-task-links-uxr010.md)
-- [UXR-010](../kanban/fr-br/UXR-010-kboard-fbuboard-add-ipp-column-after-fbu-and-task-links.md)
+- [UXR-010](../kanban/fbu/UXR-010-kboard-fbuboard-add-ipp-column-after-fbu-and-task-links.md)
 - [kboard](../kanban/kboard.md)
 - [fbuboard](../kanban/kboard.md)
 - [update_kanban_docs.py](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/scripts/update_kanban_docs.py)

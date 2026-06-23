@@ -27,7 +27,7 @@ Create canonical task wiring for FR-049 under the semantically correct RW delive
 
 ## Input
 
-- [FR-049](../../../fr-br/FR-049-canonical-rw-step-list-single-source-of-truth.md)
+- [FR-049](../../../fbu/FR-049-canonical-rw-step-list-single-source-of-truth.md)
 - Story host: [E2:S01 Story](../story-01-rw-agent-execution-and-docs.md)
 - [ICW-E2S1T15 Specification](../../../../implementation-cycles/ICW-E2S01T15-specification.md)
 - [ICW-E2S1T15 Test Design](../../../../implementation-cycles/ICW-E2S01T15-specification.md)
@@ -54,7 +54,7 @@ Create canonical task wiring for FR-049 under the semantically correct RW delive
 
 ## Links
 
-- [FR-049](../../../fr-br/FR-049-canonical-rw-step-list-single-source-of-truth.md)
+- [FR-049](../../../fbu/FR-049-canonical-rw-step-list-single-source-of-truth.md)
 - [Story E2:S01](../story-01-rw-agent-execution-and-docs.md)
 - [ICW-E2S1T15 Specification](../../../../implementation-cycles/ICW-E2S01T15-specification.md)
 - [ICW-E2S1T15 Test Design](../../../../implementation-cycles/ICW-E2S01T15-specification.md)

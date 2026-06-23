@@ -9,7 +9,7 @@ housekeeping_policy: keep
 # E6:S07:T112 — Planning: Spec, Tests, Implementation Plan (IPW)
 
 **Host Task:** [`T112-install-feedback-submission-path-and-governance.md`](../kanban/epics/epic-06/story-07-adk-implementation-analysis-and-package-management/T112-install-feedback-submission-path-and-governance.md) **(E6:S07:T112)**  
-**Planning for:** [FR-079](../kanban/fr-br/FR-079-install-feedback-submission-path-and-governance.md)  
+**Planning for:** [FR-079](../kanban/fbu/FR-079-install-feedback-submission-path-and-governance.md)  
 **Status:** Draft
 
 ---
@@ -84,7 +84,7 @@ Define and implement a deterministic feedback submission path that transforms lo
 - `cli/logging.py` (shared schema helpers if needed)
 - `tests/cli/` new or expanded feedback submission tests
 - `docs/documentation/user-docs/` submission guidance
-- `docs/kanban/fr-br/FR-079-install-feedback-submission-path-and-governance.md` traceability updates
+- `docs/kanban/fbu/FR-079-install-feedback-submission-path-and-governance.md` traceability updates
 - `docs/kanban/epics/epic-06/story-07-adk-implementation-analysis-and-package-management/T112-install-feedback-submission-path-and-governance.md` status/AC progress updates
 
 ### 3.2 Dependency order
@@ -111,5 +111,5 @@ Define and implement a deterministic feedback submission path that transforms lo
 ## References
 
 - [Host Task E6:S07:T112](../kanban/epics/epic-06/story-07-adk-implementation-analysis-and-package-management/T112-install-feedback-submission-path-and-governance.md)
-- [FR-079](../kanban/fr-br/FR-079-install-feedback-submission-path-and-governance.md)
-- [FR-078](../kanban/fr-br/FR-078-comprehensive-install-event-contract-logging-and-feedback-quality.md)
+- [FR-079](../kanban/fbu/FR-079-install-feedback-submission-path-and-governance.md)
+- [FR-078](../kanban/fbu/FR-078-comprehensive-install-event-contract-logging-and-feedback-quality.md)

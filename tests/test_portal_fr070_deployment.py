@@ -5,7 +5,7 @@ Executable spec S1–S7 (E2E URL/deploy green is manual).
 
 Cross-job deploy topology per ADR-017 (supersedes same-job S7).
 
-See: docs/kanban/fr-br/FR-070-docusaurus-deployment-and-hosting.md
+See: docs/kanban/fbu/FR-070-docusaurus-deployment-and-hosting.md
 """
 
 from __future__ import annotations

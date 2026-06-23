@@ -9,7 +9,7 @@ housekeeping_policy: keep
 # E02:S01:T30 — Planning: Spec, Tests, Implementation Plan (IPW)
 
 **Host Task:** [`T30-rw-architectural-contract-release-transaction-fr122.md`](../kanban/epics/epic-02/story-01-rw-agent-execution-and-docs/T30-rw-architectural-contract-release-transaction-fr122.md) **(E02:S01:T30)**  
-**Planning for:** [FR-122 — Release Workflow Architectural Contract & Release Transaction (meta)](../kanban/fr-br/FR-122-release-workflow-architectural-contract-release-transaction.md)  
+**Planning for:** [FR-122 — Release Workflow Architectural Contract & Release Transaction (meta)](../kanban/fbu/FR-122-release-workflow-architectural-contract-release-transaction.md)  
 **Status:** Published
 
 ---
@@ -282,7 +282,7 @@ Per [ipw-adr-necessity-checklist.md](../architecture/standards-and-adrs/ipw-adr-
 | D-U2 | `.claude/commands/rw.md` | Dual-source parity with D-U1 | Wave 1–3 |
 | D-U3 | `packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md` | Phase diagram, gate table, abort protocol | Wave 0–3 |
 | D-U4 | `packages/frameworks/workflow-mgt/canonical-rw-steps.yaml` | step_1e, step_1f; Step 9 gate list | Wave 1–4 |
-| D-U5 | `docs/kanban/fr-br/FR-122-*.md` | Status, AC progress, IPP link | Each wave |
+| D-U5 | `docs/kanban/fbu/FR-122-*.md` | Status, AC progress, IPP link | Each wave |
 | D-U6 | `docs/kanban/epics/epic-02/story-01-rw-agent-execution-and-docs/T30-*.md` | Wave status, version anchors, IPP link | Each wave |
 | D-U7 | `docs/kanban/kboard.md` | Row status/version | Each wave RW |
 | D-U8 | `docs/maintenance/saa-operator-verification-e03s02t14.md` | Link automated Step 1e | Wave 1 |
@@ -348,11 +348,11 @@ Per [ipw-adr-necessity-checklist.md](../architecture/standards-and-adrs/ipw-adr-
 
 ## References
 
-- [FR-122](../kanban/fr-br/FR-122-release-workflow-architectural-contract-release-transaction.md)
+- [FR-122](../kanban/fbu/FR-122-release-workflow-architectural-contract-release-transaction.md)
 - [E02:S01:T30](../kanban/epics/epic-02/story-01-rw-agent-execution-and-docs/T30-rw-architectural-contract-release-transaction-fr122.md)
-- [FR-092 meta program](../kanban/fr-br/FR-092-canonical-rw-ukw-kanban-consistency-program.md) · [IPP-E2S15T07](IPP-E2S15T07-canonical-rw-ukw-kanban-consistency-program.md)
-- [FR-120](../kanban/fr-br/FR-120-semver-allocation-authority-transactional-mapping-black-box.md) · [SAA operator verification](../maintenance/saa-operator-verification-e03s02t14.md)
-- [BR-097](../kanban/fr-br/BR-097-rw-agent-reuses-tagged-build-and-force-moves-release-tags.md) · [IPP-E02S01T24](IPP-E02S01T24-rw-build-increment-tag-immutability.md)
+- [FR-092 meta program](../kanban/fbu/FR-092-canonical-rw-ukw-kanban-consistency-program.md) · [IPP-E2S15T07](IPP-E2S15T07-canonical-rw-ukw-kanban-consistency-program.md)
+- [FR-120](../kanban/fbu/FR-120-semver-allocation-authority-transactional-mapping-black-box.md) · [SAA operator verification](../maintenance/saa-operator-verification-e03s02t14.md)
+- [BR-097](../kanban/fbu/BR-097-rw-agent-reuses-tagged-build-and-force-moves-release-tags.md) · [IPP-E02S01T24](IPP-E02S01T24-rw-build-increment-tag-immutability.md)
 - [ipw-adr-necessity-checklist.md](../architecture/standards-and-adrs/ipw-adr-necessity-checklist.md)
 - [canonical-rw-steps.yaml](../../packages/frameworks/workflow-mgt/canonical-rw-steps.yaml)
 - [semver_converter.py](../../packages/frameworks/workflow-mgt/scripts/version/semver_converter.py) — `create_rw_tags`

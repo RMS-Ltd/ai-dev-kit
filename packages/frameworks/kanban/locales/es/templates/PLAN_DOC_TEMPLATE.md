@@ -9,10 +9,10 @@ housekeeping_policy: keep
 # E{epic}:S{story}:T{task} — Planificación: especificación, pruebas, plan de implementación (IPW)
 
 **Host Task:** [`T{task}-[slug].md`](T{task}-[slug].md) **(E{epic}:S{story}:T{task})**  
-**Planificación para:** [FR-XXX](../../../fr-br/FR-XXX-*.md) *(si aplica)*  
+**Planificación para:** [FR-XXX](../../../fbu/FR-XXX-*.md) *(si aplica)*  
 **Estado:** Borrador | Revisión | Aprobado
 
-> **IPW (Implementation Planning Workflow):** Use esta plantilla al ejecutar **IPW** / **IPW E:S:T**. El enlace **Host Task** y el cableado bidireccional con el documento de task en **Entrada** y **Referencias** son **obligatorios** antes de que el plan esté completo (consulte **FR-042** — *Implementation Planning Workflow* en `docs/project-management/kanban/fr-br/`).
+> **IPW (Implementation Planning Workflow):** Use esta plantilla al ejecutar **IPW** / **IPW E:S:T**. El enlace **Host Task** y el cableado bidireccional con el documento de task en **Entrada** y **Referencias** son **obligatorios** antes de que el plan esté completo (consulte **FR-042** — *Implementation Planning Workflow* en `docs/project-management/kanban/fbu/`).
 
 ---
 

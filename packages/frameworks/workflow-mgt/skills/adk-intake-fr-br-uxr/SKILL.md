@@ -6,7 +6,7 @@ origin: ai-dev-kit
 
 # adk-intake-fr-br-uxr
 
-Portable ADK governance skill for optional ECC harness integration ([FR-098](../../../../../docs/kanban/fr-br/FR-098-ecc-optional-harness-layer-integration.md)). This file summarizes **intent and pointers**; it does **not** replace `.cursorrules` or repository validators.
+Portable ADK governance skill for optional ECC harness integration ([FR-098](../../../../../docs/kanban/fbu/FR-098-ecc-optional-harness-layer-integration.md)). This file summarizes **intent and pointers**; it does **not** replace `.cursorrules` or repository validators.
 
 ## Canonical execution guide
 

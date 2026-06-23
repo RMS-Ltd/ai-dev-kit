@@ -12,7 +12,7 @@ housekeeping_policy: keep
 **Date:** 2026-06-07  
 **Deciders:** User (Ruari Mears)  
 **Implementing task:** [E21:S08:T02](../../project-management/kanban/epics/epic-21/story-08-accessibility/T02-adk-accessibility-strategy-adr.md)  
-**Origin FR:** [FR-115](../../project-management/kanban/fr-br/FR-115-accessibility-standards-compatibility.md)  
+**Origin FR:** [FR-115](../../project-management/kanban/fbu/FR-115-accessibility-standards-compatibility.md)  
 **Baseline evidence:** [adk-accessibility-baseline-layer1-cli.md](../../knowledge/analysis/adk-accessibility-baseline-layer1-cli.md)  
 **Planning package:** [IPP-E21S08T01](../../implementation-cycles/IPP-E21S08T01-accessibility-layered-cli-first.md)
 
@@ -72,9 +72,9 @@ Layer 2+ work **must not** start until all Layer 1 exit criteria below are COMPL
 
 | ADR / FR | Relationship |
 | -------- | ------------ |
-| [ADR-016](ADR-016-install-setup-error-code-taxonomy.md) / [FR-108](../../project-management/kanban/fr-br/FR-108-install-setup-error-code-registry-and-emission.md) | **Preserve** — CLI errors remain registry-driven text banners |
-| [ADR-024](ADR-024-i18n-framework-strategy.md) / [FR-006](../../project-management/kanban/fr-br/FR-006-localization-language-selection-uk-us-english.md) | **Coordinate** — locale prompts must stay a11y-safe; parallel track |
-| [FR-114](../../project-management/kanban/fr-br/FR-114-split-documentation-surfaces-docusaurus-public-notion-maintainer-kb.md) | Layer 2 coordinates with E05:S09 |
+| [ADR-016](ADR-016-install-setup-error-code-taxonomy.md) / [FR-108](../../project-management/kanban/fbu/FR-108-install-setup-error-code-registry-and-emission.md) | **Preserve** — CLI errors remain registry-driven text banners |
+| [ADR-024](ADR-024-i18n-framework-strategy.md) / [FR-006](../../project-management/kanban/fbu/FR-006-localization-language-selection-uk-us-english.md) | **Coordinate** — locale prompts must stay a11y-safe; parallel track |
+| [FR-114](../../project-management/kanban/fbu/FR-114-split-documentation-surfaces-docusaurus-public-notion-maintainer-kb.md) | Layer 2 coordinates with E05:S09 |
 
 ### Exception process
 
@@ -116,7 +116,7 @@ Layer 2+ work **must not** start until all Layer 1 exit criteria below are COMPL
 
 - [adk-accessibility-baseline-layer1-cli.md](../../knowledge/analysis/adk-accessibility-baseline-layer1-cli.md)
 - [IPP-E21S08T01](../../implementation-cycles/IPP-E21S08T01-accessibility-layered-cli-first.md)
-- [FR-115](../../project-management/kanban/fr-br/FR-115-accessibility-standards-compatibility.md)
+- [FR-115](../../project-management/kanban/fbu/FR-115-accessibility-standards-compatibility.md)
 - [WCAG 2.2](https://www.w3.org/TR/WCAG22/)
 - [EN 301 549](https://www.etsi.org/standard/EN-301-549)
 - [no-color.org](https://no-color.org/)

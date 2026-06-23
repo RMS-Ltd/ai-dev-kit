@@ -22,7 +22,7 @@ housekeeping_policy: keep
 
 Publication Status: PUBLISHED  
 
-**Upstream:** [ADR-022 v0.0.2 — Local Code Quality Gate architecture](../../../../../architecture/standards-and-adrs/ADR-022-local-code-quality-gate-architecture.md) (operator directive) · [FR-113](../../../fr-br/FR-113-local-code-quality-gate-cqg.md) · [FR-118](../../../fr-br/FR-119-implementation-delivery-workflow-idw.md) · follow-on to [E02:S16:T22](T22-implementation-delivery-workflow-idw-fr118.md) · [E08:S03:T17](../../epic-08/story-03-automation-scripts/T17-local-code-quality-gate-cqg-fr113.md)
+**Upstream:** [ADR-022 v0.0.2 — Local Code Quality Gate architecture](../../../../../architecture/standards-and-adrs/ADR-022-local-code-quality-gate-architecture.md) (operator directive) · [FR-113](../../../fbu/FR-113-local-code-quality-gate-cqg.md) · [FR-118](../../../fbu/FR-119-implementation-delivery-workflow-idw.md) · follow-on to [E02:S16:T22](T22-implementation-delivery-workflow-idw-fr118.md) · [E08:S03:T17](../../epic-08/story-03-automation-scripts/T17-local-code-quality-gate-cqg-fr113.md)
 
 ---
 
@@ -68,7 +68,7 @@ CQG was wired to **RW Step 9** (advisory) when IDW did not exist. With IDW forma
 ## References
 
 - [ADR-022](../../../../../architecture/standards-and-adrs/ADR-022-local-code-quality-gate-architecture.md)
-- [FR-113](../../../fr-br/FR-113-local-code-quality-gate-cqg.md)
-- [FR-118](../../../fr-br/FR-119-implementation-delivery-workflow-idw.md)
+- [FR-113](../../../fbu/FR-113-local-code-quality-gate-cqg.md)
+- [FR-118](../../../fbu/FR-119-implementation-delivery-workflow-idw.md)
 - [CQG operator guide](../../../../../../packages/frameworks/tooling-automation/docs/code-quality-gate-operator-guide.md)
 - [Workflow initiation cheatsheet](../../../../../guides/workflow-initiation-cheatsheet.md)

@@ -17,7 +17,7 @@ housekeeping_policy: keep
 **Version:** v0.6.9.2+3  
 **Code:** E06S09T02
 
-**Upstream:** [FR-081 - Brownfield modular adopter integration](../../../fr-br/FR-081-brownfield-modular-adopter-integration.md)
+**Upstream:** [FR-081 - Brownfield modular adopter integration](../../../fbu/FR-081-brownfield-modular-adopter-integration.md)
 
 ---
 
@@ -62,7 +62,7 @@ housekeeping_policy: keep
 
 ## Acceptance criteria
 
-- [x] **AC1:** FR-081 requirements satisfied or deferred with documented rationale ([FR-081](../../../fr-br/FR-081-brownfield-modular-adopter-integration.md) implementation evidence; [IPP §8](../../../../implementation-cycles/IPP-E6S09T02-brownfield-modular-adopter-integration-fr081.md)).
+- [x] **AC1:** FR-081 requirements satisfied or deferred with documented rationale ([FR-081](../../../fbu/FR-081-brownfield-modular-adopter-integration.md) implementation evidence; [IPP §8](../../../../implementation-cycles/IPP-E6S09T02-brownfield-modular-adopter-integration-fr081.md)).
 - [x] **AC2:** Brownfield readers can determine **minimum wiring** for RW-only vs fuller stack paths ([INSTALL brownfield matrices](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/INSTALL_IN_YOUR_PROJECT.md#per-surface-adoption-matrix)).
 - [x] **AC3:** ADR-003 referenced from installation docs as policy anchor for brownfield ([INSTALL §Brownfield](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/INSTALL_IN_YOUR_PROJECT.md#brownfield-adoption-existing-repositories)).
 
@@ -88,6 +88,6 @@ housekeeping_policy: keep
 
 - [IPP-E6S9T2](../../../../implementation-cycles/IPP-E6S09T02-brownfield-modular-adopter-integration-fr081.md)
 - [INSTALL_IN_YOUR_PROJECT.md — Brownfield adoption](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/INSTALL_IN_YOUR_PROJECT.md#brownfield-adoption-existing-repositories)
-- [FR-081](../../../fr-br/FR-081-brownfield-modular-adopter-integration.md)
+- [FR-081](../../../fbu/FR-081-brownfield-modular-adopter-integration.md)
 - [ADR-003](../../../../architecture/standards-and-adrs/ADR-003-greenfield-vs-brownfield-adoption.md)
 - [IPW-E6S9T1](../../../../implementation-cycles/IPW-E6S09T01-greenfield-installation-fr080.md) (greenfield counterpart)

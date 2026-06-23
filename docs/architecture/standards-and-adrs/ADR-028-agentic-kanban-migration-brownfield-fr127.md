@@ -10,7 +10,7 @@ housekeeping_policy: keep
 
 **Status:** Accepted  
 **Date:** 2026-06-12  
-**Related:** [FR-127](../../kanban/fr-br/FR-127-agentic-kanban-migration-agent-replace-tool-pipeline.md) · [ADR-003](ADR-003-greenfield-vs-brownfield-adoption.md) · [E06:S09:T31](../../kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T31-agentic-kanban-migration-agent-fr127.md)
+**Related:** [FR-127](../../kanban/fbu/FR-127-agentic-kanban-migration-agent-replace-tool-pipeline.md) · [ADR-003](ADR-003-greenfield-vs-brownfield-adoption.md) · [E06:S09:T31](../../kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T31-agentic-kanban-migration-agent-fr127.md)
 
 ---
 
@@ -92,7 +92,7 @@ KMA ingests the legacy corpus **read-only**. Target writes go to the ADK `kanban
 - Deterministic helpers (M02 collision, M03 dedup, M08 scorer) are **advisory**; agent remains responsible for synthesis (M01, M04–M06).
 - Pass threshold for guided structural score: **≥ 0.85** weighted (see `SCORING-RUBRIC.yaml`).
 
-**Related:** [FR-136](../../kanban/fr-br/FR-136-guided-kma-target-structure-pack.md) · [TSP reference README](../../packages/frameworks/kanban/reference/README.md) · [E06:S09:T39](../../kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T39-guided-kma-target-structure-pack-fr136.md)
+**Related:** [FR-136](../../kanban/fbu/FR-136-guided-kma-target-structure-pack.md) · [TSP reference README](../../packages/frameworks/kanban/reference/README.md) · [E06:S09:T39](../../kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T39-guided-kma-target-structure-pack-fr136.md)
 
 ---
 

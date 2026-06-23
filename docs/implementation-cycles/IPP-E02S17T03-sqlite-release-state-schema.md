@@ -9,7 +9,7 @@ housekeeping_policy: keep
 # E02:S17:T03 — Planning: SQLite release-state schema and migration (IPW)
 
 **Host Task:** [`T03-sqlite-release-state-schema-and-migration-design.md`](../kanban/epics/epic-02/story-17-rw-semver-characterization-and-release-state-sqlite/T03-sqlite-release-state-schema-and-migration-design.md) **(E02:S17:T03)**  
-**Planning for:** [E02:S17](../kanban/epics/epic-02/story-17-rw-semver-characterization-and-release-state-sqlite.md) · [FR-045](../kanban/fr-br/FR-045-adr-002-task-touch-derived-mapping.md) · [FR-046](../kanban/fr-br/FR-046-rw-semver-tag-task-touch-mode.md)  
+**Planning for:** [E02:S17](../kanban/epics/epic-02/story-17-rw-semver-characterization-and-release-state-sqlite.md) · [FR-045](../kanban/fbu/FR-045-adr-002-task-touch-derived-mapping.md) · [FR-046](../kanban/fbu/FR-046-rw-semver-tag-task-touch-mode.md)  
 **Status:** Approved (design phase)  
 **Functional release target:** T04 implementation via `RW E02:S17:T04 --art` after T03 design AC closure
 
@@ -210,4 +210,4 @@ Replace monolithic YAML/MD release-state reads with an indexed SQLite backend wh
 - [scenario-matrix.md](../kanban/epics/epic-02/story-17-rw-semver-characterization-and-release-state-sqlite/scenario-matrix.md) — T05 parity IDs
 - [`finalize_rw_semver_registry.py`](../../packages/frameworks/workflow-mgt/scripts/version/finalize_rw_semver_registry.py)
 - [`semver_converter.py`](../../packages/frameworks/workflow-mgt/scripts/version/semver_converter.py)
-- [FR-045 ADR-002 task-touch mapping](../kanban/fr-br/FR-045-adr-002-task-touch-derived-mapping.md)
+- [FR-045 ADR-002 task-touch mapping](../kanban/fbu/FR-045-adr-002-task-touch-derived-mapping.md)

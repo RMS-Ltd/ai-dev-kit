@@ -72,7 +72,7 @@ Create translation workflow and review process for contributors.
 RW -k E21:S03:T04 --art --dpz
 ```
 
-**Target version anchor:** `v0.21.3.4+0` (doc-init BUILD +0 per [BR-067](../../../fr-br/BR-067-rw-first-doc-only-release-defaults-to-build-plus-one-not-plus-zero.md)).
+**Target version anchor:** `v0.21.3.4+0` (doc-init BUILD +0 per [BR-067](../../../fbu/BR-067-rw-first-doc-only-release-defaults-to-build-plus-one-not-plus-zero.md)).
 
 ---
 
@@ -87,7 +87,7 @@ RW -k E21:S03:T04 --art --dpz
 - [IPP-E21S03T04-translation-workflow-review.md](../../../../../implementation-cycles/IPP-E21S03T04-translation-workflow-review.md)
 - [translation-workflow-and-review.md](../../../../../governance/standards/translation-workflow-and-review.md)
 - [contributing-translations.md](../../../../../documentation/user-docs/contributing-translations.md)
-- [FR-006](../../../fr-br/FR-006-localization-language-selection-uk-us-english.md)
+- [FR-006](../../../fbu/FR-006-localization-language-selection-uk-us-english.md)
 
 ---
 

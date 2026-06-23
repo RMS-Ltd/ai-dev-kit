@@ -31,12 +31,12 @@ housekeeping_policy: keep
 > **Traceability:** BR-001 = E06:S01:T01, BR-002 = E06:S01:T02, etc.
 > **Abstract Space:** v0.6.1.0+0 (repository story), v0.6.1.1+0 (first BR), v0.6.1.2+0 (second BR), etc.
 
-- [x] **E06:S01:T33 – UKW Board Disorganization** - ✅ COMPLETE (v0.6.1.33+5 – All acceptance criteria met, document checklist sorting utility created) - [Task Document](story-01-br-repo/T33-ukw-board-disorganization.md) | [BR-033](../../fr-br/BR-033-ukw-board-disorganization.md)
-- [x] **E06:S01:T34 – UKW MoSCOW Prioritization Missing** - ✅ COMPLETE (v0.6.1.34+2 – Implementation complete: MoSCOW prioritization logic added to UKW Step 6, all acceptance criteria met) - [Task Document](story-01-br-repo/T34-ukw-moscow-prioritization-missing.md) | [BR-034](../../fr-br/BR-034-ukw-moscow-prioritization-missing.md)
-- [x] **E06:S01:T35 – RW Housekeeping Step Not Working** - COMPLETE (v0.6.1.35+1) - [Task Document](story-01-br-repo/T35-rw-housekeeping-step-not-working.md) | [BR-035](../../fr-br/BR-035-rw-housekeeping-step-not-working.md)
-- [x] **E06:S01:T36 – RW Step 7 Board Update Bugs** - ✅ COMPLETE (v0.5.1.34+2 – Bug fix: Fixed RW Step 7 board update path resolution and MoSCOW section updates) - [Task Document](story-01-br-repo/T36-rw-step-7-board-update-bugs.md) | [BR-036](../../fr-br/BR-036-rw-step-7-board-update-bugs.md)
-- [x] **E06:S01:T37 – Kanban Install Consumer Board Contamination** - ✅ COMPLETE (v0.6.1.37+1 – Contamination detector + remediation tooling implemented; CHANGE IMPLEMENTED, awaiting consumer verification) - [Task Document](story-01-br-repo/T37-kanban-install-consumer-board-contamination.md) | [BR-037](../../fr-br/BR-037-kanban-install-consumer-board-contamination.md)
-- [x] **E06:S01:T38 – UKW completed tasks not removed from kboard (BR-072)** - ✅ COMPLETE (v0.6.1.38+2 — BR-072 RESOLVED; UKW definition restructured: Part A/B separation, explicit archive write step, dedup guard; all ACs satisfied; first live execution confirmed 2026-05-12) - [Task Document](story-01-br-repo/T38-ukw-completed-tasks-not-removed-from-kboard-br072.md) | [BR-072](../../fr-br/BR-072-ukw-completed-tasks-not-removed-from-kboard.md)
+- [x] **E06:S01:T33 – UKW Board Disorganization** - ✅ COMPLETE (v0.6.1.33+5 – All acceptance criteria met, document checklist sorting utility created) - [Task Document](story-01-br-repo/T33-ukw-board-disorganization.md) | [BR-033](../../fbu/BR-033-ukw-board-disorganization.md)
+- [x] **E06:S01:T34 – UKW MoSCOW Prioritization Missing** - ✅ COMPLETE (v0.6.1.34+2 – Implementation complete: MoSCOW prioritization logic added to UKW Step 6, all acceptance criteria met) - [Task Document](story-01-br-repo/T34-ukw-moscow-prioritization-missing.md) | [BR-034](../../fbu/BR-034-ukw-moscow-prioritization-missing.md)
+- [x] **E06:S01:T35 – RW Housekeeping Step Not Working** - COMPLETE (v0.6.1.35+1) - [Task Document](story-01-br-repo/T35-rw-housekeeping-step-not-working.md) | [BR-035](../../fbu/BR-035-rw-housekeeping-step-not-working.md)
+- [x] **E06:S01:T36 – RW Step 7 Board Update Bugs** - ✅ COMPLETE (v0.5.1.34+2 – Bug fix: Fixed RW Step 7 board update path resolution and MoSCOW section updates) - [Task Document](story-01-br-repo/T36-rw-step-7-board-update-bugs.md) | [BR-036](../../fbu/BR-036-rw-step-7-board-update-bugs.md)
+- [x] **E06:S01:T37 – Kanban Install Consumer Board Contamination** - ✅ COMPLETE (v0.6.1.37+1 – Contamination detector + remediation tooling implemented; CHANGE IMPLEMENTED, awaiting consumer verification) - [Task Document](story-01-br-repo/T37-kanban-install-consumer-board-contamination.md) | [BR-037](../../fbu/BR-037-kanban-install-consumer-board-contamination.md)
+- [x] **E06:S01:T38 – UKW completed tasks not removed from kboard (BR-072)** - ✅ COMPLETE (v0.6.1.38+2 — BR-072 RESOLVED; UKW definition restructured: Part A/B separation, explicit archive write step, dedup guard; all ACs satisfied; first live execution confirmed 2026-05-12) - [Task Document](story-01-br-repo/T38-ukw-completed-tasks-not-removed-from-kboard-br072.md) | [BR-072](../../fbu/BR-072-ukw-completed-tasks-not-removed-from-kboard.md)
 
 ---
 
@@ -153,8 +153,8 @@ This is the **Bug Report Repository** (BR Repo) for Epic 6. All Bug Reports (BRs
 
 - **Epic 6:** `docs/kanban/epics/epic-06/epic-06.md`
 - **E4:S12:** `docs/kanban/epics/epic-04/story-12-fr-br-uxr-repository-stories.md`
-- **FR-021:** `docs/kanban/fr-br/FR-021-fr-br-uxr-repository-stories.md`
-- **FR-018:** `docs/kanban/fr-br/FR-018-abstract-space-zero-numbered-est-docs.md`
+- **FR-021:** `docs/kanban/fbu/FR-021-fr-br-uxr-repository-stories.md`
+- **FR-018:** `docs/kanban/fbu/FR-018-abstract-space-zero-numbered-est-docs.md`
 - **E09:S01:T08:** `docs/kanban/epics/epic-09/story-01-rc-readiness-gap-analysis/T08-repository-story-abstract-space-contradiction.md`
 
 ---

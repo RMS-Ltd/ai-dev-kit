@@ -16,7 +16,7 @@ housekeeping_policy: keep
 **Last updated:** 2026-04-27 (superseded by FR-092 meta-task; B1 outcome drift owned by Wave 4)  
 **Code:** E02S15T05
 
-**Upstream (historical):** [FR-090 — UKW canonical row transform engine and board-specific rendering contracts](../../../fr-br/FR-090-ukw-canonical-row-transform-engine-and-board-specific-rendering-contracts.md)  
+**Upstream (historical):** [FR-090 — UKW canonical row transform engine and board-specific rendering contracts](../../../fbu/FR-090-ukw-canonical-row-transform-engine-and-board-specific-rendering-contracts.md)  
 **Current owner:** [E02:S15:T07 — Canonical RW/UKW kanban consistency program (FR-092 meta)](T07-canonical-rw-ukw-kanban-consistency-program-fr092.md)  
 **Current IPP:** [IPP-E2S15T7](../../../../implementation-cycles/IPP-E2S15T07-canonical-rw-ukw-kanban-consistency-program.md)
 
@@ -74,8 +74,8 @@ Task T05 implements the FR-090 architecture so both workflows remain cohesive, l
 
 ## References
 
-- [FR-090](../../../fr-br/FR-090-ukw-canonical-row-transform-engine-and-board-specific-rendering-contracts.md)
-- [BR-069](../../../fr-br/BR-069-kboard-fbuboard-earliest-last-modified-timestamps-overwritten.md)
+- [FR-090](../../../fbu/FR-090-ukw-canonical-row-transform-engine-and-board-specific-rendering-contracts.md)
+- [BR-069](../../../fbu/BR-069-kboard-fbuboard-earliest-last-modified-timestamps-overwritten.md)
 - [E02:S15:T04](T04-investigate-earliest-last-modified-timestamp-overwrite-regression-br069.md)
 - [IPP-E2S15T4](../../../../implementation-cycles/IPP-E2S15T04-br069-row-tail-normalization-and-terminal-timestamp-interaction.md)
 - [IPP-E2S15T5](../../../../implementation-cycles/IPP-E2S15T05-ukw-rw-canonical-row-transform-engine-fr090.md)

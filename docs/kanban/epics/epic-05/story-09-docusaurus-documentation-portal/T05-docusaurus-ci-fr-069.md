@@ -16,7 +16,7 @@ housekeeping_policy: keep
 **Last updated:** 2026-03-30 (v0.5.9.5+1 — FR-069 CI workflow, contract tests, README; AC3 green on `main` after push)  
 **Code:** E05S09T05
 
-**Feature Request:** [FR-069 – CI build gate](../../../fr-br/FR-069-docusaurus-ci-build-gate.md)
+**Feature Request:** [FR-069 – CI build gate](../../../fbu/FR-069-docusaurus-ci-build-gate.md)
 
 ---
 
@@ -28,7 +28,7 @@ Implement **FR-069**: GitHub Actions workflow running `npm ci` and `npm run buil
 
 ## Input
 
-- [FR-069](../../../fr-br/FR-069-docusaurus-ci-build-gate.md)
+- [FR-069](../../../fbu/FR-069-docusaurus-ci-build-gate.md)
 - Green `portal` build (**E05:S09:T03**)
 
 ---

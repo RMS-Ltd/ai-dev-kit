@@ -11,7 +11,7 @@ housekeeping_policy: keep
 **Status:** COMPLETE  
 **Priority:** HIGH  
 **Version Anchor:** v0.5.1.62+1  
-**Feature Request:** [FR-062 – GitHub Release Installation Experience](../../../fr-br/FR-062-github-release-installation-experience.md)
+**Feature Request:** [FR-062 – GitHub Release Installation Experience](../../../fbu/FR-062-github-release-installation-experience.md)
 
 Publication Status: NOT_APPLICABLE  
 Publication N/A Reason: Consolidated IPP per FR-042.

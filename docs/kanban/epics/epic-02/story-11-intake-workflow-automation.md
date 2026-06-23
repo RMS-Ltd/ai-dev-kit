@@ -39,11 +39,11 @@ housekeeping_policy: keep
   - Task: [`T11-fix-changelog-ordering-violations`](story-11-intake-workflow-automation/T11-fix-changelog-ordering-violations.md)
 - [x] **E02:S11:T12 – GitHub Actions Workflow Bug Resolution** – ✅ **COMPLETE (workaround, v0.2.11.12+2)** — intake workflow `.DISABLED`; resolution documented; manual intake (* = workaround, not vendor fix — [kanban-completed](../../kanban-completed.md))
   - Task: [`T12-github-actions-workflow-bug-resolution.md`](story-11-intake-workflow-automation/T12-github-actions-workflow-bug-resolution.md)
-  - **Related BR:** [BR-053](../../fr-br/BR-053-github-actions-workflow-push-trigger-bug.md)
+  - **Related BR:** [BR-053](../../fbu/BR-053-github-actions-workflow-push-trigger-bug.md)
 
-- [x] **E02:S11:T13 – GitHub Actions workflow spam emails (BR-051)** – ✅ **COMPLETE (v0.2.11.13+2)** — [Task doc](story-11-intake-workflow-automation/T13-github-actions-workflow-spam-emails-br051.md) | [BR-051](../../fr-br/BR-051-github-actions-workflow-spam-emails.md)
+- [x] **E02:S11:T13 – GitHub Actions workflow spam emails (BR-051)** – ✅ **COMPLETE (v0.2.11.13+2)** — [Task doc](story-11-intake-workflow-automation/T13-github-actions-workflow-spam-emails-br051.md) | [BR-051](../../fbu/BR-051-github-actions-workflow-spam-emails.md)
 
-- [x] **E02:S11:T14 – GitHub Actions workflow optimization (BR-052)** – ✅ **COMPLETE (v0.2.11.14+2)** — path filters + pip cache; BR-052 intake scope in disabled template — [Task doc](story-11-intake-workflow-automation/T14-github-actions-workflow-optimization-br052.md) | [BR-052](../../fr-br/BR-052-github-actions-workflow-optimization.md) | [IPP-E02S11T14](../../../implementation-cycles/IPP-E02S11T14-github-actions-workflow-optimization.md)
+- [x] **E02:S11:T14 – GitHub Actions workflow optimization (BR-052)** – ✅ **COMPLETE (v0.2.11.14+2)** — path filters + pip cache; BR-052 intake scope in disabled template — [Task doc](story-11-intake-workflow-automation/T14-github-actions-workflow-optimization-br052.md) | [BR-052](../../fbu/BR-052-github-actions-workflow-optimization.md) | [IPP-E02S11T14](../../../implementation-cycles/IPP-E02S11T14-github-actions-workflow-optimization.md)
 
 
 > **Format:** `E2:S11:Txx` (Epic 2, Story 11, Task with 2-digit zero padding)  

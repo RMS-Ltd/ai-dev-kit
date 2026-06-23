@@ -11,7 +11,7 @@ housekeeping_policy: keep
 **Audience:** Maintainers and agents working in [`RMS-Ltd/ai-dev-kit-book`](https://github.com/RMS-Ltd/ai-dev-kit-book)  
 **Public ADK delivery:** **v0.6.9.20+1** (SemVer **v0.4.879+1** and later) · **E06:S09:T20** · **FR-108**  
 **Registry version:** **1.0.0**  
-**Related public docs:** [ADR-016](../architecture/standards-and-adrs/ADR-016-install-setup-error-code-taxonomy.md) · [FR-108](../kanban/fr-br/FR-108-install-setup-error-code-registry-and-emission.md) · [UXR-016](../kanban/fr-br/UXR-016-install-setup-interactive-feedback-external-semver-version.md)
+**Related public docs:** [ADR-016](../architecture/standards-and-adrs/ADR-016-install-setup-error-code-taxonomy.md) · [FR-108](../kanban/fbu/FR-108-install-setup-error-code-registry-and-emission.md) · [UXR-016](../kanban/fbu/UXR-016-install-setup-interactive-feedback-external-semver-version.md)
 
 ---
 
@@ -61,10 +61,10 @@ Public ADK BRs from book setup exercises map cleanly to seed codes:
 
 | Book / alpha context | Typical code | Public BR |
 | -------------------- | ------------ | --------- |
-| RW install missing PyYAML | `ADK-I03.E04` | [BR-082](../kanban/fr-br/BR-082-rw-install-missing-pyyaml-preflight.md) |
-| Mode C, no `version_file` scaffold | `ADK-I03.E12` | [BR-088](../kanban/fr-br/BR-088-rw-install-mode-c-missing-version-file-scaffold.md) |
-| Fresh kanban pattern mismatch (lowercase epics) | `ADK-I03.E21` | [BR-083](../kanban/fr-br/BR-083-rw-install-default-patterns-mismatch-fresh-kanban-layout.md), [BR-086](../kanban/fr-br/BR-086-rw-install-lowercase-fresh-kanban-patterns-signoff.md) |
-| Kanban contamination on “fresh” path | `ADK-I02.E08` | [BR-037](../kanban/fr-br/BR-037-kanban-install-consumer-board-contamination.md) |
+| RW install missing PyYAML | `ADK-I03.E04` | [BR-082](../kanban/fbu/BR-082-rw-install-missing-pyyaml-preflight.md) |
+| Mode C, no `version_file` scaffold | `ADK-I03.E12` | [BR-088](../kanban/fbu/BR-088-rw-install-mode-c-missing-version-file-scaffold.md) |
+| Fresh kanban pattern mismatch (lowercase epics) | `ADK-I03.E21` | [BR-083](../kanban/fbu/BR-083-rw-install-default-patterns-mismatch-fresh-kanban-layout.md), [BR-086](../kanban/fbu/BR-086-rw-install-lowercase-fresh-kanban-patterns-signoff.md) |
+| Kanban contamination on “fresh” path | `ADK-I02.E08` | [BR-037](../kanban/fbu/BR-037-kanban-install-consumer-board-contamination.md) |
 | Greenfield orchestrator: RW step failed | `ADK-I01.S01` | (wrapper — look for child `ADK-I03.*` above) |
 | Greenfield orchestrator: Kanban step failed | `ADK-I01.S02` | (wrapper — look for child `ADK-I02.*` above) |
 

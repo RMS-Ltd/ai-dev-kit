@@ -108,8 +108,8 @@ Establish a formal repository pattern for Feature Requests (FRs), Bug Reports (B
 
 ## References
 
-- **FR-021:** `docs/kanban/fr-br/FR-021-fr-br-uxr-repository-stories.md`
-- **FR-018:** `docs/kanban/fr-br/FR-018-abstract-space-zero-numbered-est-docs.md`
+- **FR-021:** `docs/kanban/fbu/FR-021-fr-br-uxr-repository-stories.md`
+- **FR-018:** `docs/kanban/fbu/FR-018-abstract-space-zero-numbered-est-docs.md`
 - **E2:S11:** `docs/kanban/epics/epic-02/story-11-intake-workflow-automation.md`
 - **E4:S02:** `docs/kanban/epics/epic-04/story-02-fr-br-intake-to-tasks.md`
 - **Epic 5 Template:** `packages/frameworks/kanban/templates/epics/epic-05-FR-Implementation.md`

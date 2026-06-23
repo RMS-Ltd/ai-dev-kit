@@ -48,7 +48,7 @@ Fix UKW (Update Kanban Workflow) bug where the MoSCOW Prioritized In-Progress Ta
 
 ## Input
 
-**Bug Report:** [BR-034: UKW MoSCOW Prioritization Missing](../../../fr-br/BR-034-ukw-moscow-prioritization-missing.md)
+**Bug Report:** [BR-034: UKW MoSCOW Prioritization Missing](../../../fbu/BR-034-ukw-moscow-prioritization-missing.md)
 
 ---
 
@@ -181,7 +181,7 @@ Fix UKW (Update Kanban Workflow) bug where the MoSCOW Prioritized In-Progress Ta
 
 ## Related Work
 
-**Bug Report:** [BR-034: UKW MoSCOW Prioritization Missing](../../../fr-br/BR-034-ukw-moscow-prioritization-missing.md)  
+**Bug Report:** [BR-034: UKW MoSCOW Prioritization Missing](../../../fbu/BR-034-ukw-moscow-prioritization-missing.md)  
 **Story:** [E6:S01: BR Repo (PERPETUAL)](../story-01-br-repo.md)  
 **Workflow:** [Update Kanban Workflow (UKW)](../../epic-02/story-16-perpetual-ongoing-workflow-operations/T03-rehouse-workflow-perpetual-tasks-and-harden-guardrails.md)
 
@@ -195,7 +195,7 @@ Fix UKW (Update Kanban Workflow) bug where the MoSCOW Prioritized In-Progress Ta
 
 ## References
 
-- **BR-034:** `docs/kanban/fr-br/BR-034-ukw-moscow-prioritization-missing.md`
+- **BR-034:** `docs/kanban/fbu/BR-034-ukw-moscow-prioritization-missing.md`
 - **UKW Workflow:** `packages/frameworks/workflow-mgt/workflows/update-kanban-workflow.yaml`
 - **UKW Execution Guide:** `packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/update-kanban-workflow-agent-execution.md`
 - **Kanban Board:** `docs/kanban/kboard.md`

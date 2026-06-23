@@ -9,7 +9,7 @@ housekeeping_policy: keep
 # E03:S02:T14 — Planning: SemVer Allocation Authority (SAA) (IPW)
 
 **Host Task:** [`T14-semver-allocation-authority-transactional-mapping-fr120.md`](../kanban/epics/epic-03/story-02-versioning-cookbook-and-examples/T14-semver-allocation-authority-transactional-mapping-fr120.md) **(E03:S02:T14)**  
-**Planning for:** [FR-120](../kanban/fr-br/FR-120-semver-allocation-authority-transactional-mapping-black-box.md)  
+**Planning for:** [FR-120](../kanban/fbu/FR-120-semver-allocation-authority-transactional-mapping-black-box.md)  
 **Status:** Implementation complete (AC7 operator verification + RW pending)
 
 ---
@@ -137,6 +137,6 @@ IPP and ADR under `docs/`; framework docs under `packages/frameworks/workflow-mg
 
 ## References
 
-- [FR-120](../kanban/fr-br/FR-120-semver-allocation-authority-transactional-mapping-black-box.md)
+- [FR-120](../kanban/fbu/FR-120-semver-allocation-authority-transactional-mapping-black-box.md)
 - [IPP-E03S02T12](IPP-E03S02T12-task-touch-semver-collision-hardening.md)
 - E02:S17 SQLite release-state ([sqlite-schema-design.md](../kanban/epics/epic-02/story-17-rw-semver-characterization-and-release-state-sqlite/sqlite-schema-design.md))

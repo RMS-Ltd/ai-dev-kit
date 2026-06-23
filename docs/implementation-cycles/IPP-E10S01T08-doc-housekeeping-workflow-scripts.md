@@ -9,7 +9,7 @@ housekeeping_policy: keep
 # E10:S01:T08 — Planning: Doc Housekeeping Workflow and Scripts (IPW)
 
 **Host Task:** [`T08-implement-doc-housekeeping-workflow-and-scripts.md`](../kanban/epics/epic-10/story-01-document-lifecycle-package-implementation-review/T08-implement-doc-housekeeping-workflow-and-scripts.md) **(E10:S01:T08)**  
-**Planning for:** [T05 gap log GAP-DOCLIFE-STRUCT-001/002/003](../kanban/epics/epic-10/story-01-document-lifecycle-package-implementation-review/T05-create-gap-log-and-risk-assessment.md) · [T06 remediation R1](../kanban/epics/epic-10/story-01-document-lifecycle-package-implementation-review/T06-define-rc-sign-off-criteria-and-remediation-tasks.md) · [FR-110](../kanban/fr-br/FR-110-lean-adopter-distribution-footprint-and-vendor-bundle.md)  
+**Planning for:** [T05 gap log GAP-DOCLIFE-STRUCT-001/002/003](../kanban/epics/epic-10/story-01-document-lifecycle-package-implementation-review/T05-create-gap-log-and-risk-assessment.md) · [T06 remediation R1](../kanban/epics/epic-10/story-01-document-lifecycle-package-implementation-review/T06-define-rc-sign-off-criteria-and-remediation-tasks.md) · [FR-110](../kanban/fbu/FR-110-lean-adopter-distribution-footprint-and-vendor-bundle.md)  
 **Status:** Implementation complete — released v0.10.1.8+1 (RW `--art`)  
 **Branch:** `epic/10-doc-lifecycle-framework`
 
@@ -359,8 +359,8 @@ CI guard (`scripts/test_sync_greenfield_install.py`) must pass. Manifest already
 - [doc-lifecycle-metadata-spec.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/doc-lifecycle/policies/doc-lifecycle-metadata-spec.md)
 - [doc-lifecycle-policy.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/doc-lifecycle/policies/doc-lifecycle-policy.md)
 - [workflow-mgt-integration.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/doc-lifecycle/integration/workflow-mgt-integration.md)
-- [FR-110](../kanban/fr-br/FR-110-lean-adopter-distribution-footprint-and-vendor-bundle.md)
-- [FR-083](../kanban/fr-br/FR-083-global-ipw-gated-implementation-contract.md)
+- [FR-110](../kanban/fbu/FR-110-lean-adopter-distribution-footprint-and-vendor-bundle.md)
+- [FR-083](../kanban/fbu/FR-083-global-ipw-gated-implementation-contract.md)
 - [E02:S13:T08 IPP precedent](./IPP-E02S13T08-sync-packaged-workflows-live-spec.md)
 - [changelog-management-workflow.yaml](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/workflows/changelog-management-workflow/changelog-management-workflow.yaml) — deterministic workflow YAML pattern
 - [sync_greenfield_install.py](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/scripts/sync_greenfield_install.py)

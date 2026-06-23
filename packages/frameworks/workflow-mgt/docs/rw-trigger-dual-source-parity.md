@@ -152,6 +152,6 @@ Adopters copy **`cursorrules-rw-trigger-section.md`** into their `.cursorrules`;
 
 ## References
 
-- **FR-060** — mandatory RW task id ([FR-060](../../../../docs/kanban/fr-br/FR-060-rw-task-argument-requirement.md))
-- **FR-038** — RW Step 7 scoped UKW ([FR-038](../../../../docs/kanban/fr-br/FR-038-rw-step-7-scoped-kanban-sync-ukw-mode.md))
+- **FR-060** — mandatory RW task id ([FR-060](../../../../docs/kanban/fbu/FR-060-rw-task-argument-requirement.md))
+- **FR-038** — RW Step 7 scoped UKW ([FR-038](../../../../docs/kanban/fbu/FR-038-rw-step-7-scoped-kanban-sync-ukw-mode.md))
 - **Release workflow agent execution** — `KB/Documentation/Developer_Docs/vwmp/release-workflow-agent-execution.md` (under this package tree)

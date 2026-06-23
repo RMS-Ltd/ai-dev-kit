@@ -85,5 +85,5 @@ Threshold: `board_stamp.homogeneity_threshold` in `rw-config.yaml` (default **3*
 ## References
 
 - [kanban-governance-policy.md](../../../../kanban/policies/kanban-governance-policy.md)
-- [FR-097](../../../../../../docs/kanban/fr-br/FR-097-board-stamp-authority-and-forensic-timestamp-recovery.md)
+- [FR-097](../../../../../../docs/kanban/fbu/FR-097-board-stamp-authority-and-forensic-timestamp-recovery.md)
 - [IPP-E2S15T08](../../../../../../docs/implementation-cycles/IPP-E2S15T08-board-stamp-authority-forensic-timestamp-recovery.md)

@@ -18,15 +18,15 @@ housekeeping_policy: keep
 
 **Planning package:** [IPP-E6S9T18](../../../../implementation-cycles/IPP-E06S09T18-br087-framework-slug-install-closure.md)
 
-**Upstream:** [BR-087](../../../fr-br/BR-087-framework-install-directory-slug-mismatch.md)  
+**Upstream:** [BR-087](../../../fbu/BR-087-framework-install-directory-slug-mismatch.md)  
 **Predecessor:** [E06:S09:T17](T17-framework-install-directory-slugs-br087.md) (**v0.6.9.17+1**)  
-**Related:** [UXR-016](../../../fr-br/UXR-016-install-setup-interactive-feedback-external-semver-version.md) · [FR-062](../../../fr-br/FR-062-github-release-installation-experience.md) · [package-management-design.md](../../../../architecture/standards-and-adrs/package-management-design.md)
+**Related:** [UXR-016](../../../fbu/UXR-016-install-setup-interactive-feedback-external-semver-version.md) · [FR-062](../../../fbu/FR-062-github-release-installation-experience.md) · [package-management-design.md](../../../../architecture/standards-and-adrs/package-management-design.md)
 
 ---
 
 ## Input
 
-[BR-087](../../../fr-br/BR-087-framework-install-directory-slug-mismatch.md) · [IPP-E6S9T18](../../../../implementation-cycles/IPP-E06S09T18-br087-framework-slug-install-closure.md) · [E06:S09:T17](T17-framework-install-directory-slugs-br087.md)
+[BR-087](../../../fbu/BR-087-framework-install-directory-slug-mismatch.md) · [IPP-E6S9T18](../../../../implementation-cycles/IPP-E06S09T18-br087-framework-slug-install-closure.md) · [E06:S09:T17](T17-framework-install-directory-slugs-br087.md)
 
 ---
 

@@ -13,7 +13,7 @@ housekeeping_policy: keep
 **Purpose:** Maintainer and adopter preflight before **Phase B** — greenfield Arm B install from `pre-adk-install` with **guided KMA** (not a blind re-run). This is a **kanban structural programme** follow-on to attempt 10 ([#57](https://github.com/RMS-Ltd/ai-dev-kit/issues/57)); **do not** re-run install RC as the primary deliverable unless executing full Phase B.
 
 **Program task:** [E06:S09:T26](../docs/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T26-starborn-legacy-adk-install-program.md)  
-**Kit follow-on:** [FR-135](../docs/kanban/fr-br/FR-135-guided-install-orchestrator-zero-manual-steps.md) · [E06:S09:T38](../docs/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T38-guided-install-orchestrator-fr135.md) — target: replace manual §2–§4 with guided orchestrator  
+**Kit follow-on:** [FR-135](../docs/kanban/fbu/FR-135-guided-install-orchestrator-zero-manual-steps.md) · [E06:S09:T38](../docs/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T38-guided-install-orchestrator-fr135.md) — target: replace manual §2–§4 with guided orchestrator  
 **Triage matrix:** [starborn-legacy-install-triage-matrix.md](../docs/knowledge/analysis/projects/starborn-legacy-install-triage-matrix.md)  
 **Execution guide:** [attempt-11/feedback-package/EXECUTION-CHECKLIST.md](attempt-11/feedback-package/EXECUTION-CHECKLIST.md)
 

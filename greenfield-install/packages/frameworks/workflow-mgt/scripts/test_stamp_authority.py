@@ -21,7 +21,7 @@ SAMPLE_BOARD = """\
 
 ### Must Have
 
-- **FR-100** – item one - OPEN - [FR-100](fr-br/FR-100-sample.md) | Last modified: 2026-04-20 15:52 UTC
+- **FR-100** – item one - OPEN - [FR-100](fbu/FR-100-sample.md) | Last modified: 2026-04-20 15:52 UTC
 - **E2:S15:T08** – item two - TODO | Last modified: 2026-04-20 15:52 UTC
 
 ## Other
@@ -49,8 +49,8 @@ def test_validate_stamp_diff_manifest_allows():
     ).replace("2026-04-20 15:52 UTC", "2026-05-20 10:00 UTC", 1)
     with tempfile.TemporaryDirectory() as tmp:
         root = Path(tmp)
-        (root / "docs/kanban/fr-br").mkdir(parents=True)
-        (root / "docs/kanban/fr-br/FR-100-sample.md").write_text(
+        (root / "docs/kanban/fbu").mkdir(parents=True)
+        (root / "docs/kanban/fbu/FR-100-sample.md").write_text(
             "**Last updated:** 2026-05-20\n", encoding="utf-8"
         )
         passed, denied = SA.validate_stamp_diff(
@@ -93,9 +93,9 @@ def test_synthetic_hour_bucket_never_exempt():
 def test_git_single_commit_exempt():
     board = """\
 ## MoSCOW Prioritized
-- **FR-100** – one - OPEN - [FR-100](fr-br/FR-100-a.md) | Last modified: 2026-05-30 10:26 UTC
-- **FR-101** – two - OPEN - [FR-101](fr-br/FR-101-b.md) | Last modified: 2026-05-30 10:26 UTC
-- **FR-102** – three - OPEN - [FR-102](fr-br/FR-102-c.md) | Last modified: 2026-05-30 10:26 UTC
+- **FR-100** – one - OPEN - [FR-100](fbu/FR-100-a.md) | Last modified: 2026-05-30 10:26 UTC
+- **FR-101** – two - OPEN - [FR-101](fbu/FR-101-b.md) | Last modified: 2026-05-30 10:26 UTC
+- **FR-102** – three - OPEN - [FR-102](fbu/FR-102-c.md) | Last modified: 2026-05-30 10:26 UTC
 """
     stamp = "2026-05-30 10:26 UTC"
     row_ids = ["FR-100", "FR-101", "FR-102"]
@@ -119,9 +119,9 @@ def test_git_single_commit_exempt():
 def test_homogeneity_clusters_blocking_exempts_git():
     board = """\
 ## MoSCOW Prioritized
-- **FR-100** – one - OPEN - [FR-100](fr-br/FR-100-a.md) | Last modified: 2026-05-30 10:26 UTC
-- **FR-101** – two - OPEN - [FR-101](fr-br/FR-101-b.md) | Last modified: 2026-05-30 10:26 UTC
-- **FR-102** – three - OPEN - [FR-102](fr-br/FR-102-c.md) | Last modified: 2026-05-30 10:26 UTC
+- **FR-100** – one - OPEN - [FR-100](fbu/FR-100-a.md) | Last modified: 2026-05-30 10:26 UTC
+- **FR-101** – two - OPEN - [FR-101](fbu/FR-101-b.md) | Last modified: 2026-05-30 10:26 UTC
+- **FR-102** – three - OPEN - [FR-102](fbu/FR-102-c.md) | Last modified: 2026-05-30 10:26 UTC
 """
     root = Path("/proj")
     kroot = Path("/proj/kanban")
