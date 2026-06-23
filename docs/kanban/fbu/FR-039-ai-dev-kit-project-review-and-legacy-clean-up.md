@@ -142,6 +142,9 @@ This FR ensures we **understand and document** what should change before any str
 - Framework policies and implementation guides under `packages/frameworks/*`.
 - RW/UKW/CMW agent execution guides.
 - FR Repo tasks for prior policy and workflow hardening.
+- **[FR-140](FR-140-repository-information-architecture-steady-state-governance.md)** — repository IA steady-state governance program; **consumes** [E07:S01:T13](../epics/epic-07/story-01-codebase-maintenance-tasks/T13-comprehensive-repository-directory-structure-audit-uxr033.md) + [E07:S01:T14](../epics/epic-07/story-01-codebase-maintenance-tasks/T14-comprehensive-repository-file-level-audit-uxr034.md) cartography for wave prioritization (does not duplicate investigation scope).
+- [UXR-033](UXR-033-comprehensive-repository-directory-structure-audit.md) / [UXR-034](UXR-034-comprehensive-repository-file-level-audit-within-audited-directories.md) — directory + file valuation matrices.
+- [FR-101](FR-101-consolidate-governance-under-docs-governance.md), [FR-118](FR-118-promote-kanban-to-docs-kanban-retire-project-management-shell.md) — completed rehousing precedents.
 
 ---
 

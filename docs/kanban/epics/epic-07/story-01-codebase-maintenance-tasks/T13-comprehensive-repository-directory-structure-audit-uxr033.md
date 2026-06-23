@@ -34,6 +34,7 @@ Deliver [UXR-033](../../../fbu/UXR-033-comprehensive-repository-directory-struct
 ## Source FR/BR/UXR
 
 - **[UXR-033](../../../fbu/UXR-033-comprehensive-repository-directory-structure-audit.md)** — requirements, rubric, and acceptance direction
+- **[FR-140](../../../fbu/FR-140-repository-information-architecture-steady-state-governance.md)** — program umbrella (steady-state IA governance; [E07:S01:T15](T15-repository-information-architecture-steady-state-governance-fr140.md))
 - **[FR-039](../../../fbu/FR-039-ai-dev-kit-project-review-and-legacy-clean-up.md)** — broader project review (coordinates; does not duplicate file-level execution)
 - **[UXR-013](../../../fbu/UXR-013-project-root-hygiene-and-legacy-docs-rationalization.md)** — root-only hygiene ([E07:S01:T10](T10-project-root-hygiene-and-legacy-docs-rationalization.md))
 - **[UXR-011](../../../fbu/UXR-011-kanban-naming-hygiene-and-directory-systematic-cleanup.md)** — kanban naming hygiene
@@ -130,6 +131,7 @@ Deliver [UXR-033](../../../fbu/UXR-033-comprehensive-repository-directory-struct
 **Related FR:**
 
 - **[FR-039](../../../fbu/FR-039-ai-dev-kit-project-review-and-legacy-clean-up.md)** — **Coordinates With** — Broader cleanup program; audit feeds prioritization.
+- **[FR-140](../../../fbu/FR-140-repository-information-architecture-steady-state-governance.md)** / **[E07:S01:T15](T15-repository-information-architecture-steady-state-governance-fr140.md)** — **Governs** — Program umbrella for steady-state IA; this task is **cartography leg A** (directories).
 
 ---
 
@@ -150,6 +152,7 @@ Deliver [UXR-033](../../../fbu/UXR-033-comprehensive-repository-directory-struct
 - [UXR-033](../../../fbu/UXR-033-comprehensive-repository-directory-structure-audit.md)
 - [E07:S01:T14 — Paired file-level audit](T14-comprehensive-repository-file-level-audit-uxr034.md) / [UXR-034](../../../fbu/UXR-034-comprehensive-repository-file-level-audit-within-audited-directories.md)
 - [FR-039](../../../fbu/FR-039-ai-dev-kit-project-review-and-legacy-clean-up.md)
+- [FR-140](../../../fbu/FR-140-repository-information-architecture-steady-state-governance.md) / [E07:S01:T15](T15-repository-information-architecture-steady-state-governance-fr140.md)
 - [UXR-013](../../../fbu/UXR-013-project-root-hygiene-and-legacy-docs-rationalization.md) / [E07:S01:T10](T10-project-root-hygiene-and-legacy-docs-rationalization.md)
 - [UXR-032](../../../fbu/UXR-032-fr-br-directory-rename-to-fbu.md)
 - [GOVERNANCE-REHOUSING-INVENTORY.md](../../../../governance/GOVERNANCE-REHOUSING-INVENTORY.md) (FR-101 precedent)

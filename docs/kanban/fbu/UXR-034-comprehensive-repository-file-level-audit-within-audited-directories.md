@@ -52,6 +52,8 @@ This UXR is **investigation and planning only**. Execution of file moves, merges
 
 Neither UXR replaces the other. UXR-033 without UXR-034 leaves file-level legacy and misplacement unknown; UXR-034 without UXR-033 lacks a bounded, evidence-based directory scope.
 
+**Program umbrella:** [FR-140](FR-140-repository-information-architecture-steady-state-governance.md) governs **steady-state repository IA** (policy, manifest, gates). UXR-033 and UXR-034 are **cartography legs** under that program — see [E07:S01:T15](../epics/epic-07/story-01-codebase-maintenance-tasks/T15-repository-information-architecture-steady-state-governance-fr140.md). T14 investigation is **unblocked** when T13 audit report is published ([FR-140-F13](FR-140-repository-information-architecture-steady-state-governance.md#t14-release-gate-unblocks-file-cartography)).
+
 ---
 
 ## Methodology

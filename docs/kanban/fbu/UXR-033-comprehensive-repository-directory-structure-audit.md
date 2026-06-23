@@ -50,6 +50,8 @@ This UXR is **investigation and planning only**. Execution of moves, merges, arc
 - **UXR-033 informs** UXR-034: directory orphans and suboptimal placements define file-investigation priorities; T13 wave plan should reference T14 for drill-down.
 - **UXR-034 feeds back** this UXR: file-level rollups may refine directory purpose statements or ripple-risk before T13 sign-off.
 
+**Program umbrella:** [FR-140](FR-140-repository-information-architecture-steady-state-governance.md) governs **steady-state repository IA** (policy, manifest, gates). UXR-033 and UXR-034 are **cartography legs** — see [E07:S01:T15](../epics/epic-07/story-01-codebase-maintenance-tasks/T15-repository-information-architecture-steady-state-governance-fr140.md).
+
 ---
 
 ## Methodology

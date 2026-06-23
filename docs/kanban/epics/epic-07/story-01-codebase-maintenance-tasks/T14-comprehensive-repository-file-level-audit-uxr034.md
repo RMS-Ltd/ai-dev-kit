@@ -36,6 +36,7 @@ Deliver [UXR-034](../../../fbu/UXR-034-comprehensive-repository-file-level-audit
 - **[UXR-034](../../../fbu/UXR-034-comprehensive-repository-file-level-audit-within-audited-directories.md)** — requirements, rubric, and acceptance direction
 - **[UXR-033](../../../fbu/UXR-033-comprehensive-repository-directory-structure-audit.md)** — **paired directory audit** (scope authority; bidirectional contextual awareness)
 - **[FR-039](../../../fbu/FR-039-ai-dev-kit-project-review-and-legacy-clean-up.md)** — broader project review (coordinates; does not duplicate execution)
+- **[FR-140](../../../fbu/FR-140-repository-information-architecture-steady-state-governance.md)** — **program umbrella** (steady-state IA governance; T14 cartography leg; [E07:S01:T15](T15-repository-information-architecture-steady-state-governance-fr140.md))
 - **[UXR-013](../../../fbu/UXR-013-project-root-hygiene-and-legacy-docs-rationalization.md)** — root-only file hygiene ([E07:S01:T10](T10-project-root-hygiene-and-legacy-docs-rationalization.md))
 
 ---
@@ -108,7 +109,8 @@ Deliver [UXR-034](../../../fbu/UXR-034-comprehensive-repository-file-level-audit
 
 **Depends On:**
 
-- [UXR-033](../../../fbu/UXR-033-comprehensive-repository-directory-structure-audit.md) / [E07:S01:T13](T13-comprehensive-repository-directory-structure-audit-uxr033.md) — directory audit baseline (authoritative scope)
+- [UXR-033](../../../fbu/UXR-033-comprehensive-repository-directory-structure-audit.md) / [E07:S01:T13](T13-comprehensive-repository-directory-structure-audit-uxr033.md) — directory audit baseline (authoritative scope) — **satisfied** @ [`REPOSITORY-DIRECTORY-AUDIT.md`](../../../../maintenance/REPOSITORY-DIRECTORY-AUDIT.md) v0.7.1.13+1
+- [FR-140](../../../fbu/FR-140-repository-information-architecture-steady-state-governance.md) — program umbrella + **T14 release gate** (FR-140-F13): investigation may proceed; structural movers still gated
 - IPW package for `E07:S01:T14`
 
 **Blocks:**
@@ -134,12 +136,13 @@ Deliver [UXR-034](../../../fbu/UXR-034-comprehensive-repository-file-level-audit
 **Related FR:**
 
 - **[FR-039](../../../fbu/FR-039-ai-dev-kit-project-review-and-legacy-clean-up.md)** — **Coordinates With** — Broader cleanup program; file audit feeds prioritization.
+- **[FR-140](../../../fbu/FR-140-repository-information-architecture-steady-state-governance.md)** — **Governs** — Program umbrella; file cartography leg; aggregation map for deconflicted waves.
 
 ---
 
 ## Next Actions
 
-- [ ] Run `IPW E07:S01:T14` in plan mode (after or in parallel with T13 directory baseline — document assumption).
+- [ ] Run `IPW E07:S01:T14` in plan mode — **unblocked** per [FR-140-F13](../../../fbu/FR-140-repository-information-architecture-steady-state-governance.md#t14-release-gate-unblocks-file-cartography) (T13 report published @ v0.7.1.13+1).
 - [ ] Produce `IPP-E07S01T14-*.md` under `docs/implementation-cycles/`.
 - [ ] Execute investigation phases 1–5 after IPP approval and T13 scope import.
 - [ ] Obtain maintainer sign-off on file audit report.

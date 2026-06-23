@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Board
 
-**Last Updated:** 2026-06-23 (RW: E07:S01:T13)
-**Version:** v0.7.1.13+1
+**Last Updated:** 2026-06-23 (RW: E07:S01:T15)
+**Version:** v0.7.1.15+0
 
 **Active board contract:** **Sole active MoSCOW board** ([ADR-018](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/architecture/standards-and-adrs/ADR-018-single-kanban-board-consolidation.md)). Rows are **live work** (TODO / IN PROGRESS / OPEN / WAITING / PERPETUAL) plus filed **Could Have** backlog. **Verification (V)** band holds task-shipped / FBU-open items (`⏳ WAITING`). Remove **terminal** rows and archive prose (use [`kanban-completed.md`](kanban-completed.md) / [`intake-completed.md`](intake-completed.md)).
 
@@ -27,6 +27,10 @@ housekeeping_policy: keep
 
 
 ### Should Have (S) - Important Tasks
+
+- **E07:S01:T15** – Repository IA steady-state governance (FR-140) - 📋 TODO (HIGH — kanban-init **v0.7.1.15+0**; program umbrella; wires T13/T14; T14 IPW unblocked) | [Task](epics/epic-07/story-01-codebase-maintenance-tasks/T15-repository-information-architecture-steady-state-governance-fr140.md) | [FR-140](fbu/FR-140-repository-information-architecture-steady-state-governance.md) | —No IPP— | Last modified: 2026-06-23 14:32 UTC
+
+- **E07:S01:T14** – Comprehensive repository file-level audit (UXR-034) - 📋 TODO (HIGH — **IPW unblocked** per FR-140-F13; paired with T13) | [Task](epics/epic-07/story-01-codebase-maintenance-tasks/T14-comprehensive-repository-file-level-audit-uxr034.md) | [UXR-034](fbu/UXR-034-comprehensive-repository-file-level-audit-within-audited-directories.md) | [FR-140](fbu/FR-140-repository-information-architecture-steady-state-governance.md) | —No IPP— | Last modified: 2026-06-23 18:00 UTC
 
 - **E02:S03:T13** – MWF `delivery` RW intent preflight (FR-137) - 📋 TODO (HIGH — kanban-init **v0.2.3.13+0**) | [Task](epics/epic-02/story-03-additional-workflows-and-examples/T13-mwf-delivery-rw-intent-preflight-fr137.md) | [FR-137](fbu/FR-137-mwf-delivery-rw-intent-preflight-art-forwarding.md) | —No IPP— | Last modified: 2026-06-17 16:17 UTC
 
@@ -68,9 +72,7 @@ housekeeping_policy: keep
 
 - **E07:S01:T10** – FR-039: AI Dev Kit Project Review and Legacy Clean-up - 📋 TODO (LOW, hygiene task; historical FR-059 T10 reconciled) | [Task](epics/epic-07/story-01-codebase-maintenance-tasks/T10-project-root-hygiene-and-legacy-docs-rationalization.md) | [FR-039](fbu/FR-039-ai-dev-kit-project-review-and-legacy-clean-up.md) | [—IPP—](../../implementation-cycles/IPP-E07S01T10-supersession-reconciliation.md) | Last modified: 2026-06-04 12:15 UTC
 
-- **E07:S01:T13** – Comprehensive repository directory structure audit (UXR-033) - 🔄 IN PROGRESS (HIGH, **v0.7.1.13+1** — audit report delivered; sign-off pending; paired with T14) | [Task](epics/epic-07/story-01-codebase-maintenance-tasks/T13-comprehensive-repository-directory-structure-audit-uxr033.md) | [UXR-033](fbu/UXR-033-comprehensive-repository-directory-structure-audit.md) | [—IPP—](../../implementation-cycles/IPP-E07S01T13-comprehensive-repository-directory-structure-audit.md) | Last modified: 2026-06-23 14:00 UTC
-
-- **E07:S01:T14** – Comprehensive repository file-level audit within audited directories (UXR-034) - 📋 TODO (HIGH, kanban-init **v0.7.1.14+0**; file valuation within UXR-033 scope; investigation-only; paired with T13) | [Task](epics/epic-07/story-01-codebase-maintenance-tasks/T14-comprehensive-repository-file-level-audit-uxr034.md) | [UXR-034](fbu/UXR-034-comprehensive-repository-file-level-audit-within-audited-directories.md) | —No IPP— | Last modified: 2026-06-23 11:54 UTC
+- **E07:S01:T13** – Comprehensive repository directory structure audit (UXR-033) - 🔄 IN PROGRESS (HIGH, **v0.7.1.13+1** — audit report delivered; sign-off pending; cartography leg A under [FR-140](fbu/FR-140-repository-information-architecture-steady-state-governance.md)) | [Task](epics/epic-07/story-01-codebase-maintenance-tasks/T13-comprehensive-repository-directory-structure-audit-uxr033.md) | [UXR-033](fbu/UXR-033-comprehensive-repository-directory-structure-audit.md) | [—IPP—](../../implementation-cycles/IPP-E07S01T13-comprehensive-repository-directory-structure-audit.md) | Last modified: 2026-06-23 18:00 UTC
 
 ### Ongoing (O) - Perpetual Tasks
 
