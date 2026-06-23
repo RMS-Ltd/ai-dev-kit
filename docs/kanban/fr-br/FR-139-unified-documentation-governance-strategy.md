@@ -13,7 +13,9 @@ housekeeping_policy: keep
 **Submitted:** 2026-06-23  
 **Submitted By:** Operator (documentation structure / policy analysis)  
 **Priority:** MEDIUM (Could Have — MoSCOW **C**)  
-**Status:** ACCEPTED
+**Status:** ACCEPTED  
+**Version:** v0.5.2.7+0  
+**Last updated:** 2026-06-23 (RW -k E05:S02:T07 — kanban documentation setup)
 
 **Implementing Task:** [E05:S02:T07](../epics/epic-05/story-02-documentation-maintenance-framework/T07-unified-documentation-governance-strategy-fr139.md)
 

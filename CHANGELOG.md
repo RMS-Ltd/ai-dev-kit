@@ -11,6 +11,14 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.5.2.7+0] - 23-06-26
+
+E05:S02:T07 — **Kanban-init (FR-139):** Unified documentation governance strategy intake — policy–SOP–template alignment index; composition doc under `docs/governance/standards/` (IPW before implementation). SemVer **v0.4.1208+0**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.5.2.7+0.md)
+
+---
+
 ## [0.8.3.24+3] - 23-06-26
 
 E08:S03:T24 — **FR-138 Phase 2 (Wave 4):** CLI package test coverage hardening — aggregate **82%**, per-module targets met; floor **70%** retained in `cli-coverage` lane. SemVer **v0.4.1207**.

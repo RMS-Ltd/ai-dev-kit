@@ -512,7 +512,10 @@ def validate_doc_init_build(version: str, config: Optional[Dict] = None) -> Tupl
         for key in ("release_state_db", "release_state_export_yaml"):
             rel = config.get(key)
             if rel:
-                allowed_non_doc_relpaths.add(str(Path(rel).as_posix()).lstrip("./"))
+                rel_posix = str(Path(rel).as_posix())
+                allowed_non_doc_relpaths.add(
+                    rel_posix[2:] if rel_posix.startswith("./") else rel_posix
+                )
     # Doc-init gate applies to staged release payload only (ignore unstaged/untracked noise).
     staged_files: List[Path] = []
     try:

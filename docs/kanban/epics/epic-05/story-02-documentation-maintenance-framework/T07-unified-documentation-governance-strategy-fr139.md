@@ -11,8 +11,8 @@ housekeeping_policy: keep
 **Task ID:** E05:S02:T07  
 **Status:** TODO  
 **Priority:** MEDIUM  
-**Last updated:** 2026-06-23 (intake — FR-139 filed)  
-**Version:** v0.0.0.0+0  
+**Last updated:** 2026-06-23 (v0.5.2.7+0 – RW -k kanban documentation setup)  
+**Version:** v0.5.2.7+0  
 **Code:** E05S02T07
 
 ---
