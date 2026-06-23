@@ -56,6 +56,9 @@ housekeeping_policy: keep
 
 - [x] **E04:S19:T13 – kboard v3.2 packaged template (UXR-028)** - ✅ COMPLETE (HIGH, **v0.4.19.13+1** — template v2.2.0 + greenfield sync; AC3/AC4 deferred) — [Task doc](story-19-fr-br-uxr-abstract-governance-and-intake/T13-kboard-v3dot2-packaged-template-uxr028.md) | [UXR-028](../../fr-br/UXR-028-kboard-v3dot2-packaged-template-alignment.md) | [kboard-template evidence](../../../../adk-install-into-sbl/attempt-06/feedback-package/kboard-template-v3dot2.md) | —No IPP—
 
+
+- [ ] **E04:S19:T14 – Rename intake directory `fr-br/` → `fbu/` (UXR-032)** - TODO (MEDIUM, cross-cutting path + `fbu_root` config migration; FR-086 directory gap) — [Task doc](story-19-fr-br-uxr-abstract-governance-and-intake/T14-fr-br-directory-rename-to-fbu-uxr032.md) | [UXR-032](../../fr-br/UXR-032-fr-br-directory-rename-to-fbu.md) | —No IPP—
+
 ---
 
 ## Overview

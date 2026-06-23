@@ -140,6 +140,49 @@ frameworks:
         config = Config(config_file)
         assert "workflow-mgmt" not in config.get_frameworks()
 
+    @patch("cli.commands.remove.select_backend")
+    @patch("cli.commands.remove.get_backend")
+    def test_with_keep_files_passes_flag_to_backend(
+        self, mock_get_backend, mock_select_backend, temp_project_dir: Path
+    ):
+        """The backend remove call must receive keep_files=True when requested."""
+        fw_path = temp_project_dir / "frameworks" / "workflow-mgmt"
+        fw_path.mkdir(parents=True)
+        (fw_path / "file.txt").write_text("hello")
+
+        config_file = temp_project_dir / ".ai-dev-kit.yaml"
+        config_file.write_text("""version: "1.0.0"
+frameworks:
+  workflow-mgmt:
+    backend: git-submodule
+    path: frameworks/workflow-mgmt
+""")
+
+        mock_select_backend.return_value = "git-submodule"
+        mock_backend_instance = MagicMock()
+        mock_backend_instance.remove.return_value = True
+        mock_get_backend.return_value = lambda: mock_backend_instance
+
+        args = argparse.Namespace(
+            framework="workflow-mgmt",
+            keep_files=True,
+            force=True,
+            recovery=False,
+            dry_run=False,
+        )
+        cmd = RemoveCommand(args)
+
+        original_cwd = os.getcwd()
+        try:
+            os.chdir(temp_project_dir)
+            result = cmd.execute()
+        finally:
+            os.chdir(original_cwd)
+
+        assert result == 0
+        remove_kwargs = mock_backend_instance.remove.call_args[1]
+        assert remove_kwargs.get("keep_files") is True
+
 
 class TestRemoveCommandBackup:
     """T6: Removal flow creates a timestamped backup."""

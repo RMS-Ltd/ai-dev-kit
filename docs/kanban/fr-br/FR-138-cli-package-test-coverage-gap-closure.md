@@ -13,7 +13,7 @@ housekeeping_policy: keep
 **Submitted:** 2026-06-23  
 **Submitted By:** Operator — `cli-coverage` CI report (Python 3.14.6, **54%** aggregate)  
 **Priority:** MEDIUM  
-**Status:** ACCEPTED (intake @ **v0.8.3.24+1** — kanban-init)
+**Status:** CHANGE IMPLEMENTED (pending downstream verification) @ **v0.8.3.24+2**
 
 **Implementing Task:** [E08:S03:T24](../epics/epic-08/story-03-automation-scripts/T24-cli-package-test-coverage-gap-closure-fr138.md)
 
@@ -66,18 +66,18 @@ Modules already **≥80%** (`localisation.py`, `main.py`, `init.py`, `validation
 
 ### Functional
 
-- [ ] **FR-138-F1:** Add pytest coverage for **Wave 1 — backends & migration** (`migration.py`, `commands/migrate.py`, `backends/git_submodule.py`, `backends/git_subtree.py`, `backends/package_manager.py`, `backends/selector.py`, `backends/base.py`) using **mocked subprocess / filesystem** patterns consistent with existing `tests/cli/` style.
-- [ ] **FR-138-F2:** Add pytest coverage for **Wave 2 — core commands** (`commands/check.py`, `commands/status.py`, `commands/update.py`, `adk_install_errors_bridge.py`, `exceptions.py`) including success, validation-failure, and ADK error-code paths.
-- [ ] **FR-138-F3:** Add pytest coverage for **Wave 3 — remaining gaps** (`commands/config.py`, `commands/install.py`, `commands/remove.py`, `commands/logs.py` uncovered branches, `config.py`, `logging.py`, `utils.py`) until aggregate **`cli/` ≥70%**.
-- [ ] **FR-138-F4:** Document wave plan and run instructions in `tests/README.md` and `cli/README.md` (reference `bash scripts/run_cli_pytest_coverage.sh`).
-- [ ] **FR-138-F5:** Add **`--cov-fail-under=70`** (or equivalent `pytest.ini` / `pytest-cli-cov.ini` setting) to the **dedicated** CLI coverage config and `cli-coverage` CI job — **not** default `pytest.ini` (preserves UXR-030 contract).
+- [x] **FR-138-F1:** Add pytest coverage for **Wave 1 — backends & migration** (`migration.py`, `commands/migrate.py`, `backends/git_submodule.py`, `backends/git_subtree.py`, `backends/package_manager.py`, `backends/selector.py`, `backends/base.py`) using **mocked subprocess / filesystem** patterns consistent with existing `tests/cli/` style.
+- [x] **FR-138-F2:** Add pytest coverage for **Wave 2 — core commands** (`commands/check.py`, `commands/status.py`, `commands/update.py`, `adk_install_errors_bridge.py`, `exceptions.py`) including success, validation-failure, and ADK error-code paths.
+- [x] **FR-138-F3:** Add pytest coverage for **Wave 3 — remaining gaps** (`commands/config.py`, `commands/install.py`, `commands/remove.py`, `commands/logs.py` uncovered branches, `config.py`, `logging.py`, `utils.py`) until aggregate **`cli/` ≥70%**.
+- [x] **FR-138-F4:** Document wave plan and run instructions in `tests/README.md` and `cli/README.md` (reference `bash scripts/run_cli_pytest_coverage.sh`).
+- [x] **FR-138-F5:** Add **`--cov-fail-under=70`** (or equivalent `pytest.ini` / `pytest-cli-cov.ini` setting) to the **dedicated** CLI coverage config and `cli-coverage` CI job — **not** default `pytest.ini` (preserves UXR-030 contract).
 
 ### Non-functional
 
-- [ ] **FR-138-NF1:** Prefer **fast unit tests** with mocks over live git/npm/pip invocations; mark unavoidable slow integration tests with `@pytest.mark.slow` / `integration`.
-- [ ] **FR-138-NF2:** No reduction of existing coverage on modules already ≥80%.
-- [ ] **FR-138-NF3:** RW Step 9.7 `cli-coverage` parity remains green when `cli/**` or `tests/**` CLI tests change.
-- [ ] **FR-138-NF4:** Tests remain compatible with **Python 3.11+** policy ([FR-104](FR-104-python-minimum-version-policy-alignment.md)).
+- [x] **FR-138-NF1:** Prefer **fast unit tests** with mocks over live git/npm/pip invocations; mark unavoidable slow integration tests with `@pytest.mark.slow` / `integration`.
+- [x] **FR-138-NF2:** No reduction of existing coverage on modules already ≥80%.
+- [x] **FR-138-NF3:** RW Step 9.7 `cli-coverage` parity remains green when `cli/**` or `tests/**` CLI tests change.
+- [x] **FR-138-NF4:** Tests remain compatible with **Python 3.11+** policy ([FR-104](FR-104-python-minimum-version-policy-alignment.md)).
 
 ---
 
@@ -98,11 +98,11 @@ Modules already **≥80%** (`localisation.py`, `main.py`, `init.py`, `validation
 
 ## Acceptance Criteria
 
-- [ ] **AC1:** `bash scripts/run_cli_pytest_coverage.sh` reports **`cli/` aggregate ≥70%** on CI Python version matrix (3.11+).
-- [ ] **AC2:** Wave 1 modules each **≥50%**; Wave 2 command modules each **≥60%**; no module in the FR baseline table remains **&lt;40%** after closure.
-- [ ] **AC3:** `pytest-cli-cov.ini` (or runner) enforces **`--cov-fail-under=70`**; `cli-coverage` job fails when floor regresses.
-- [ ] **AC4:** FR-138 ↔ E08:S03:T24 bidirectional links; story checklist and board row updated.
-- [ ] **AC5:** IPW produces linked IPP before implementation ([FR-083](FR-083-global-ipw-gated-implementation-contract.md)).
+- [x] **AC1:** `bash scripts/run_cli_pytest_coverage.sh` reports **`cli/` aggregate ≥70%** on CI Python version matrix (3.11+).
+- [x] **AC2:** Wave 1 modules each **≥50%**; Wave 2 command modules each **≥60%**; no module in the FR baseline table remains **&lt;40%** after closure.
+- [x] **AC3:** `pytest-cli-cov.ini` (or runner) enforces **`--cov-fail-under=70`**; `cli-coverage` job fails when floor regresses.
+- [x] **AC4:** FR-138 ↔ E08:S03:T24 bidirectional links; story checklist and board row updated.
+- [x] **AC5:** IPW produces linked IPP before implementation ([FR-083](FR-083-global-ipw-gated-implementation-contract.md)).
 
 ---
 

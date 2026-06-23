@@ -80,6 +80,18 @@ pytest -m unit
 pytest -m integration
 ```
 
+The dedicated coverage lane is intentionally isolated from default pytest runs:
+
+- `pytest-cli-cov.ini` is the only config that enables `--cov=cli`
+- `pytest-cli-cov.ini` enforces `--cov-fail-under=70`
+- default `pytest.ini` does not enable CLI coverage (avoids misleading 0% output in non-CLI runs)
+
+### CLI Coverage Waves (FR-138)
+
+- **Wave 1:** backend and migration modules
+- **Wave 2:** check/status/update commands and install error bridge
+- **Wave 3:** remaining command/config/logging/utils branch gaps
+
 ### Code Quality
 
 ```bash

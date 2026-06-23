@@ -9,18 +9,19 @@ housekeeping_policy: keep
 # E08:S03:T24 — CLI package test coverage gap closure (FR-138)
 
 **Task ID:** E08:S03:T24  
-**Status:** 📋 TODO  
+**Status:** ✅ COMPLETE  
 **Priority:** MEDIUM (Could Have — MoSCOW **C**)  
 **Created:** 2026-06-23  
-**Last updated:** 2026-06-23 (v0.8.3.24+1 – Kanban documentation setup)  
-**Version:** v0.8.3.24+1  
-**Version Anchor:** v0.8.3.24+1  
+**Last updated:** 2026-06-23 (v0.8.3.24+2 — change implemented; pending downstream verification)  
+**Version:** v0.8.3.24+2  
+**Version Anchor:** v0.8.3.24+2  
 **Code:** E08S03T24
 
 **Upstream:** [FR-138 — CLI package test coverage gap closure](../../../fr-br/FR-138-cli-package-test-coverage-gap-closure.md)  
 **Related:** [E08:S03:T21](T21-cli-pytest-coverage-dedicated-target-uxr030.md) · [E08:S03:T22](T22-pytest-warning-cleanup-uxr030-wave2.md) · [UXR-030](../../../fr-br/UXR-030-default-pytest-cli-coverage-misleading-zero-percent.md) · [FR-030](../../../fr-br/FR-030-ai-dev-kit-cli-tool.md)
 
 Publication Status: NOT_APPLICABLE
+Publication N/A Reason: Internal kanban task and implementation artifact references; no adopter-facing publication required.
 
 ---
 
@@ -39,6 +40,7 @@ Opt-in CLI coverage (T21) accurately reports real gaps. Lowest modules are insta
 ## Input
 
 - [FR-138](../../../fr-br/FR-138-cli-package-test-coverage-gap-closure.md) (baseline table + wave plan)
+- **IPP:** [`IPP-E08S03T24-cli-package-test-coverage-gap-closure-fr138.md`](../../../../implementation-cycles/IPP-E08S03T24-cli-package-test-coverage-gap-closure-fr138.md) _(planning package — Sections 1–7; produced by IPW E08:S03:T24)_
 - Operator `cli-coverage` report — **54%** total, 2026-06-23
 - [`pytest-cli-cov.ini`](../../../../../pytest-cli-cov.ini) · [`scripts/run_cli_pytest_coverage.sh`](../../../../../scripts/run_cli_pytest_coverage.sh)
 - Existing suite: `tests/cli/`, `tests/test_commands.py`
@@ -68,11 +70,11 @@ Opt-in CLI coverage (T21) accurately reports real gaps. Lowest modules are insta
 
 ## Acceptance Criteria
 
-- [ ] **AC1:** `bash scripts/run_cli_pytest_coverage.sh` → **`cli/` aggregate ≥70%**.
-- [ ] **AC2:** No module from FR-138 baseline table remains **&lt;40%**; Wave 1/2 per-file targets met.
-- [ ] **AC3:** `cli-coverage` CI job fails on coverage regression below floor.
-- [ ] **AC4:** FR-138 ↔ T24 bidirectional links; RW version anchor on ship. _(Version anchor **v0.8.3.24+1** @ kanban-init.)_
-- [ ] **AC5:** Linked IPP under `docs/implementation-cycles/` before implementation (`IPW E08:S03:T24`).
+- [x] **AC1:** `bash scripts/run_cli_pytest_coverage.sh` → **`cli/` aggregate ≥70%**.
+- [x] **AC2:** No module from FR-138 baseline table remains **&lt;40%**; Wave 1/2 per-file targets met.
+- [x] **AC3:** `cli-coverage` CI job fails on coverage regression below floor.
+- [x] **AC4:** FR-138 ↔ T24 bidirectional links; RW version anchor on ship. _(Version anchor **v0.8.3.24+2**.)_
+- [x] **AC5:** Linked IPP under `docs/implementation-cycles/` before implementation (`IPW E08:S03:T24`).
 
 ---
 
@@ -93,6 +95,7 @@ Opt-in CLI coverage (T21) accurately reports real gaps. Lowest modules are insta
 
 ## References
 
+- [IPP-E08S03T24 — Planning package (Sections 1–7)](../../../../implementation-cycles/IPP-E08S03T24-cli-package-test-coverage-gap-closure-fr138.md)
 - [E08:S03:T21 — CLI pytest coverage dedicated target (UXR-030)](T21-cli-pytest-coverage-dedicated-target-uxr030.md)
 - [E08:S03:T22 — Pytest warning cleanup (UXR-030 Wave 2)](T22-pytest-warning-cleanup-uxr030-wave2.md)
 - [UXR-030 — Default pytest CLI coverage misleading 0%](../../../fr-br/UXR-030-default-pytest-cli-coverage-misleading-zero-percent.md)

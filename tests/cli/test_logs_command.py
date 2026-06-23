@@ -163,3 +163,15 @@ def test_submit_feedback_payload_accepted_writes_receipt(temp_project_dir: Path)
         assert len(receipts) == 1
     finally:
         os.chdir(original_cwd)
+
+
+def test_install_history_handles_missing_log_directory(temp_project_dir: Path):
+    _write_config(temp_project_dir)
+    args = argparse.Namespace(logs_command="install-history", limit=5)
+    command = LogsCommand(args)
+    original_cwd = os.getcwd()
+    try:
+        os.chdir(temp_project_dir)
+        assert command.execute() == 0
+    finally:
+        os.chdir(original_cwd)

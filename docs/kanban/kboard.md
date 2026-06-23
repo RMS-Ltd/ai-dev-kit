@@ -9,7 +9,7 @@ housekeeping_policy: keep
 # AI Dev Kit – Kanban Board
 
 **Last Updated:** 2026-06-23 (RW: E08:S03:T24)
-**Version:** v0.8.3.24+1
+**Version:** v0.8.3.24+2
 
 **Active board contract:** **Sole active MoSCOW board** ([ADR-018](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/architecture/standards-and-adrs/ADR-018-single-kanban-board-consolidation.md)). Rows are **live work** (TODO / IN PROGRESS / OPEN / WAITING / PERPETUAL) plus filed **Could Have** backlog. **Verification (V)** band holds task-shipped / FBU-open items (`⏳ WAITING`). Remove **terminal** rows and archive prose (use [`kanban-completed.md`](kanban-completed.md) / [`intake-completed.md`](intake-completed.md)).
 
@@ -38,7 +38,7 @@ housekeeping_policy: keep
 
 ### Could Have (C) - Nice-to-Have Tasks
 
-- **E08:S03:T24** – CLI package test coverage gap closure (FR-138) - 📋 TODO (MEDIUM — kanban-init **v0.8.3.24+1**; baseline **54%** → target **≥70%**) | [Task](epics/epic-08/story-03-automation-scripts/T24-cli-package-test-coverage-gap-closure-fr138.md) | [FR-138](fr-br/FR-138-cli-package-test-coverage-gap-closure.md) | —No IPP— | Last modified: 2026-06-23 10:21 UTC
+- **E08:S03:T24** – CLI package test coverage gap closure (FR-138) - 📋 TODO (MEDIUM — kanban-init **v0.8.3.24+1**; baseline **54%** → target **≥70%**) | [Task](epics/epic-08/story-03-automation-scripts/T24-cli-package-test-coverage-gap-closure-fr138.md) | [FR-138](fr-br/FR-138-cli-package-test-coverage-gap-closure.md) | [—IPP—](../../implementation-cycles/IPP-E08S03T24-cli-package-test-coverage-gap-closure-fr138.md) | Last modified: 2026-06-23 10:21 UTC
 
 - **E21:S04:T06** – Test cultural adaptations - 📋 TODO (MEDIUM, cultural adaptation) | [Task](epics/epic-21/story-04-cultural-adaptation/T06-test-cultural-adaptations.md) | [Story](epics/epic-21/story-04-cultural-adaptation.md) | [FR-006](fr-br/FR-006-localization-language-selection-uk-us-english.md) | —No IPP— | Last modified: 2026-06-07 11:18 UTC
 
@@ -68,7 +68,11 @@ housekeeping_policy: keep
 
 - **E04:S14:T11** – UKW gap discovery — unfiled FR/BR (FR-043) - 📋 TODO (HIGH, re-housed from E02:S16:T14) | [Task](epics/epic-04/story-14-kanban-framework-maintenance/T11-ukw-gap-discovery-unfiled-fr-br-fr043.md) | [FR-043](fr-br/FR-043-ukw-gap-discovery-todo-tasks-and-unfiled-fr-br.md) | —No IPP— | Last modified: 2026-05-30 13:36 UTC
 
+- **E04:S19:T14** – Rename intake directory `fr-br/` → `fbu/` (UXR-032) - 📋 TODO (MEDIUM, FBU path + `fbu_root` config; FR-086 directory gap) | [Task](epics/epic-04/story-19-fr-br-uxr-abstract-governance-and-intake/T14-fr-br-directory-rename-to-fbu-uxr032.md) | [UXR-032](fr-br/UXR-032-fr-br-directory-rename-to-fbu.md) | —No IPP— | Last modified: 2026-06-23 12:00 UTC
+
 - **E07:S01:T10** – FR-039: AI Dev Kit Project Review and Legacy Clean-up - 📋 TODO (LOW, hygiene task; historical FR-059 T10 reconciled) | [Task](epics/epic-07/story-01-codebase-maintenance-tasks/T10-project-root-hygiene-and-legacy-docs-rationalization.md) | [FR-039](fr-br/FR-039-ai-dev-kit-project-review-and-legacy-clean-up.md) | [—IPP—](../../implementation-cycles/IPP-E07S01T10-supersession-reconciliation.md) | Last modified: 2026-06-04 12:15 UTC
+
+- **E07:S01:T13** – Comprehensive repository directory structure audit (UXR-033) - 📋 TODO (HIGH, whole-repo dir valuation matrix; investigation-only) | [Task](epics/epic-07/story-01-codebase-maintenance-tasks/T13-comprehensive-repository-directory-structure-audit-uxr033.md) | [UXR-033](fr-br/UXR-033-comprehensive-repository-directory-structure-audit.md) | —No IPP— | Last modified: 2026-06-23 14:00 UTC
 
 ### Ongoing (O) - Perpetual Tasks
 

@@ -11,6 +11,14 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.8.3.24+2] - 23-06-26
+
+E08:S03:T24 — **Change implemented (FR-138):** CLI coverage closure waves completed; dedicated `cli/` gate now enforced at **≥70%** via `pytest-cli-cov.ini`. SemVer **v0.4.1204**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.8.3.24+2.md)
+
+---
+
 ## [0.8.3.24+1] - 23-06-26
 
 E08:S03:T24 — **Kanban-init (FR-138):** CLI package test coverage gap closure intake — 54% baseline, ≥70% target, phased waves. SemVer **v0.4.1203**.
