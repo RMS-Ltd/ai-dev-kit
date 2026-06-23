@@ -14,7 +14,7 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Status:** ACCEPTED  
 **Code:** UXR-033  
-**Last updated:** 2026-06-23 (v0.7.1.13+0 — RW -k kanban init)  
+**Last updated:** 2026-06-23 (investigation report @ v0.7.1.13+1 pending RW)  
 **Implementing Task:** [E07:S01:T13](../epics/epic-07/story-01-codebase-maintenance-tasks/T13-comprehensive-repository-directory-structure-audit-uxr033.md)
 
 ---
@@ -75,11 +75,11 @@ This UXR is **investigation and planning only**. Execution of moves, merges, arc
 
 ## Key Findings
 
-*(To be completed during investigation execution on E07:S01:T13.)*
-
-- Pre-intake context: prior work narrowed to **root-only** hygiene ([UXR-013](UXR-013-project-root-hygiene-and-legacy-docs-rationalization.md)) or **single-domain** rehousing (governance FR-101, kanban FR-118) without a **single whole-repo directory valuation matrix**.
-- Adopters and agents lack one authoritative map of “what belongs where” across `packages/`, `docs/`, `greenfield-install/`, `portal/`, `src/`, `scripts/`, and historical shells.
-- Duplicate or mirror trees (e.g. framework source vs greenfield install mirror) need explicit SoT vs derivative classification per directory.
+- **83 directory rows** (depth 0–2) captured in [REPOSITORY-DIRECTORY-AUDIT.md](../../maintenance/REPOSITORY-DIRECTORY-AUDIT.md) with full rubric columns.
+- **Legacy shells:** `docs/project-management/` and `src/fynd_deals/` flagged **remove**; `adk-install-into-sbl/` overlaps `docs/adk-feedback/` — **consolidate/archive**.
+- **SoT clarity:** `packages/frameworks/` canonical; `greenfield-install/` install mirror documented in §2.1.
+- **Orphans:** `tests/tests/` nested duplicate; `packages/dist/` and `temp/` at root — **remove** candidates.
+- Prior root-only ([UXR-013](UXR-013-project-root-hygiene-and-legacy-docs-rationalization.md)) and domain rehousing (FR-101/FR-118) now have a **single wave index** in audit §3.
 
 ---
 
@@ -93,12 +93,12 @@ This UXR is **investigation and planning only**. Execution of moves, merges, arc
 
 ## Recommendations
 
-- [ ] **R1:** Publish `REPOSITORY-DIRECTORY-AUDIT.md` (or equivalent under `docs/governance/` / `docs/maintenance/`) with full directory inventory and valuation columns.
-- [ ] **R2:** Adopt a standard **per-directory valuation rubric** (purpose class, location verdict, evidence, ripple risk) reusable for future UKW hygiene.
-- [ ] **R3:** Group directories into **waves**: keep-as-is · relocate · consolidate · archive · remove — with explicit dependencies on FR-101/FR-118/UXR-032 outcomes.
-- [ ] **R4:** Identify **framework SoT vs dev-kit-local vs install-mirror** boundaries for every `packages/` and `greenfield-install/` subtree.
-- [ ] **R5:** Feed wave-1 execution candidates into existing tasks where scope overlaps ([E07:S01:T10](../epics/epic-07/story-01-codebase-maintenance-tasks/T10-project-root-hygiene-and-legacy-docs-rationalization.md) for root; [FR-039](FR-039-ai-dev-kit-project-review-and-legacy-clean-up.md) for broader cleanup) rather than opening parallel uncoordinated movers.
-- [ ] **R6:** Add validator or CI advisory (optional follow-on) that flags new top-level directories without documented purpose — only after rubric is stable.
+- [x] **R1:** Publish `REPOSITORY-DIRECTORY-AUDIT.md` with full directory inventory and valuation columns.
+- [x] **R2:** Adopt standard **per-directory valuation rubric** (purpose class, location verdict, evidence, ripple risk).
+- [x] **R3:** Group directories into **waves**: keep · relocate · consolidate · archive · remove — with explicit dependencies on FR-101/FR-118/UXR-032 outcomes.
+- [x] **R4:** Identify **framework SoT vs dev-kit-local vs install-mirror** boundaries for `packages/` and `greenfield-install/` subtrees.
+- [x] **R5:** Feed wave-1 execution candidates into existing tasks (T10, FR-039, etc.).
+- [ ] **R6:** Add validator or CI advisory for new top-level directories — deferred follow-on.
 - [ ] **R7:** Hand off in-scope directories to [UXR-034](UXR-034-comprehensive-repository-file-level-audit-within-audited-directories.md) / [E07:S01:T14](../epics/epic-07/story-01-codebase-maintenance-tasks/T14-comprehensive-repository-file-level-audit-uxr034.md) for per-file valuation; incorporate T14 rollups before T13 sign-off where practical.
 
 **Priority Order:**

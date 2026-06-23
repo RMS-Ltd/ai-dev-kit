@@ -11,6 +11,14 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.7.1.13+1] - 23-06-26
+
+E07:S01:T13 — **Change implemented (UXR-033):** Repository directory structure audit published (`REPOSITORY-DIRECTORY-AUDIT.md`, 83 valuation rows, wave plan). Task IN PROGRESS — maintainer sign-off pending. SemVer **v0.4.1213**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.7.1.13+1.md)
+
+---
+
 ## [0.2.16.6+20] - 23-06-26
 
 E02:S16:T06 — **Change implemented:** Wave 12 Dependabot hygiene — `http-proxy-middleware@2.0.10` npm override (alert #10; Dependabot auto-update blocked by `webpack-dev-server` constraint). SemVer **v0.4.1212+20**.

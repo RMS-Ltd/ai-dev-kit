@@ -13,6 +13,7 @@ All commands assume you are in the **project root**.
 | [BUILD_PACKAGES.md](BUILD_PACKAGES.md) | Build quick start and individual package commands |
 | [BUILD_PACKAGES_COMMANDS.md](BUILD_PACKAGES_COMMANDS.md) | Copy-paste command reference |
 | [UPLOAD_PACKAGES.md](UPLOAD_PACKAGES.md) | Upload to GitHub Releases (prereqs, scripts, troubleshooting) |
+| [REPOSITORY-DIRECTORY-AUDIT.md](REPOSITORY-DIRECTORY-AUDIT.md) | Whole-repo directory valuation matrix + wave plan (UXR-033 / E07:S01:T13) |
 
 ## Release Automation Resources
 
@@ -25,7 +26,8 @@ All commands assume you are in the **project root**.
 
 ## See also
 
-- [Phase 3 package distribution plan](../analysis/phase3-package-distribution-plan.md)
+- [UXR-033](../kanban/fbu/UXR-033-comprehensive-repository-directory-structure-audit.md)
+- [REPOSITORY-DIRECTORY-AUDIT.md](REPOSITORY-DIRECTORY-AUDIT.md) — **primary investigation deliverable (E07:S01:T13)**
 - Framework scripts: `packages/frameworks/workflow-mgt/scripts/` (build_package.py, upload_all_packages.py, etc.)
 - Release Workflow documentation: `packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/`
 

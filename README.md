@@ -11,7 +11,7 @@
 
 **A comprehensive toolkit for AI-assisted development workflows**
 
-**Version (SemVer):** `v0.4.1212+20` | **Internal:** `v0.2.16.6+20` (E02:S16:T06 Wave 12 Dependabot http-proxy-middleware) | **Last Updated:** 2026-06-23
+**Version (SemVer):** `v0.4.1213` | **Internal:** `v0.7.1.13+1` (E07:S01:T13 UXR-033 directory audit — investigation delivered) | **Last Updated:** 2026-06-23
 
 > **SemVer ordering (`task_touch`):** Compare releases by **core** (`0.4.1198` here), not by `+BUILD`. The `+1` suffix mirrors internal build metadata for traceability only — see [ADR-031](docs/architecture/standards-and-adrs/ADR-031-external-semver-build-metadata-display-policy.md).
 
