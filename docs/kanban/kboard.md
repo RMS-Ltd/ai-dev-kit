@@ -8,7 +8,7 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Board
 
-**Last Updated:** 2026-06-24 (RW: E07:S01:T13)
+**Last Updated:** 2026-06-24 (RW: E07:S01:T14)
 **Version:** v0.7.1.13+2
 
 **Active board contract:** **Sole active MoSCOW board** ([ADR-018](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/architecture/standards-and-adrs/ADR-018-single-kanban-board-consolidation.md)). Rows are **live work** (TODO / IN PROGRESS / OPEN / WAITING / PERPETUAL) plus filed **Could Have** backlog. **Verification (V)** band holds task-shipped / FBU-open items (`⏳ WAITING`). Remove **terminal** rows and archive prose (use [`kanban-completed.md`](kanban-completed.md) / [`intake-completed.md`](intake-completed.md)).
@@ -29,8 +29,6 @@ housekeeping_policy: keep
 ### Should Have (S) - Important Tasks
 
 - **E07:S01:T15** – Repository IA steady-state governance (FR-140) - 📋 TODO (HIGH — kanban-init **v0.7.1.15+0**; program umbrella; wires T13/T14; T14 IPW unblocked) | [Task](epics/epic-07/story-01-codebase-maintenance-tasks/T15-repository-information-architecture-steady-state-governance-fr140.md) | [FR-140](fbu/FR-140-repository-information-architecture-steady-state-governance.md) | —No IPP— | Last modified: 2026-06-23 14:32 UTC
-
-- **E07:S01:T14** – Comprehensive repository file-level audit (UXR-034) - 📋 TODO (HIGH — **IPW unblocked** per FR-140-F13; paired with T13) | [Task](epics/epic-07/story-01-codebase-maintenance-tasks/T14-comprehensive-repository-file-level-audit-uxr034.md) | [UXR-034](fbu/UXR-034-comprehensive-repository-file-level-audit-within-audited-directories.md) | [FR-140](fbu/FR-140-repository-information-architecture-steady-state-governance.md) | —No IPP— | Last modified: 2026-06-23 18:00 UTC
 
 - **E02:S03:T13** – MWF `delivery` RW intent preflight (FR-137) - 📋 TODO (HIGH — kanban-init **v0.2.3.13+0**) | [Task](epics/epic-02/story-03-additional-workflows-and-examples/T13-mwf-delivery-rw-intent-preflight-fr137.md) | [FR-137](fbu/FR-137-mwf-delivery-rw-intent-preflight-art-forwarding.md) | —No IPP— | Last modified: 2026-06-17 16:17 UTC
 

@@ -1,0 +1,10 @@
+| packages/frameworks/ | greenfield-install/packages/frameworks/ | In sync | SoT=canonical; mirror via sync_greenfield_install.py (FR-110); diff -rq excludes __pycache__ → 0 content deltas |
+| packages/frameworks/workflow-mgt/ | greenfield-install/packages/frameworks/workflow-mgt/ | In sync | Largest package; rw-config scripts_path points here |
+| packages/frameworks/kanban/ | greenfield-install/packages/frameworks/kanban/ | In sync | Consumer installs to host docs/kanban per README boundary |
+| packages/frameworks/numbering-versioning/ | greenfield-install/packages/frameworks/numbering-versioning/ | In sync | Policy-only; bundled in lean vendor tree |
+| packages/frameworks/doc-lifecycle/ | greenfield-install/packages/frameworks/doc-lifecycle/ | In sync | Policy/templates bundle |
+| packages/frameworks/debug-path/ | greenfield-install/packages/frameworks/debug-path/ | In sync | Optional methodology bundle |
+| packages/frameworks/tooling-automation/ | greenfield-install/packages/frameworks/tooling-automation/ | In sync | CQG validators mirrored |
+| (n/a — mirror-only) | greenfield-install/packages/frameworks/BUILD_NOW.sh | Mirror-only artifact | Greenfield packaging helper; not in canonical packages/frameworks root |
+| (n/a — mirror-only) | greenfield-install/packages/frameworks/build_packages.py | Mirror-only artifact | Adopter package build script at mirror root |
+| (n/a — mirror-only) | greenfield-install/packages/frameworks/PACKAGE_UPDATE_SUMMARY.md | Mirror-only artifact | Generated/maintainer summary for vendor tree updates |

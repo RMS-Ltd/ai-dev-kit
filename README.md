@@ -11,7 +11,7 @@
 
 **A comprehensive toolkit for AI-assisted development workflows**
 
-**Version (SemVer):** `v0.4.1216` | **Internal:** `v0.7.1.13+3` (E07:S01:T13 UXR-033 — directory audit COMPLETE) | **Last Updated:** 2026-06-24
+**Version (SemVer):** `v0.4.1217` | **Internal:** `v0.7.1.14+1` (E07:S01:T14 UXR-034 — file audit COMPLETE) | **Last Updated:** 2026-06-24
 
 > **SemVer ordering (`task_touch`):** Compare releases by **core** (`0.4.1198` here), not by `+BUILD`. The `+1` suffix mirrors internal build metadata for traceability only — see [ADR-031](docs/architecture/standards-and-adrs/ADR-031-external-semver-build-metadata-display-policy.md).
 

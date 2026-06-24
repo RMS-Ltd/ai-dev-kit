@@ -12,9 +12,9 @@ housekeeping_policy: keep
 **Submitted:** 2026-06-23  
 **Submitted By:** User (operator)  
 **Priority:** HIGH  
-**Status:** ACCEPTED  
+**Status:** IMPLEMENTED  
 **Code:** UXR-034  
-**Last updated:** 2026-06-23 (v0.7.1.14+0 — RW -k kanban init)  
+**Last updated:** 2026-06-24 (v0.7.1.14+1 — RW E07:S01:T14 --art)  
 **Implementing Task:** [E07:S01:T14](../epics/epic-07/story-01-codebase-maintenance-tasks/T14-comprehensive-repository-file-level-audit-uxr034.md)
 
 ---
@@ -81,11 +81,15 @@ Neither UXR replaces the other. UXR-033 without UXR-034 leaves file-level legacy
 
 ## Key Findings
 
-*(To be completed during investigation execution on E07:S01:T14.)*
+**Investigation execution @ 2026-06-24** — [`REPOSITORY-FILE-AUDIT.md`](../../maintenance/REPOSITORY-FILE-AUDIT.md) (572 valuation rows).
 
-- Pre-intake context: [UXR-033](UXR-033-comprehensive-repository-directory-structure-audit.md) addresses **where** directories belong; adopters and agents still lack a repo-wide map of **which files** are canonical, derivative, duplicate, or abandoned within those directories.
-- Partial file hygiene exists at **repository root only** ([UXR-013](UXR-013-project-root-hygiene-and-legacy-docs-rationalization.md)); no whole-repo file valuation matrix tied to directory audit outcomes.
-- Mirror trees (`packages/frameworks/` vs `greenfield-install/`) and documentation surfaces need **per-file** SoT vs derivative classification, not only directory-level labels.
+- **572 valuation rows** across T13-scoped directories: 88 packages/frameworks + 75 scripts/src + 389 docs + 20 root configs.
+- **44 RNF6 class-summary patterns** cover homogeneous corpora (~2240 changelog archive entries, ~1213 kanban docs, ~1172 kanban templates) without per-file row explosion.
+- **42 parent-directory tension rows** — chiefly `scripts/` vs `packages/frameworks/workflow-mgt/scripts/` boundary, `docs/project-management/` vestigial shell, `docs/release-notes/` vs `changelog-and-release-notes/` overlap, `docs/governance/kanban/` dual policy locus.
+- **37 archive wave** file candidates (Notion migration cluster + `scripts/notion_push_payloads/`) align with T13 directory archive waves — no contradictory movers.
+- **Mirror pairs 6/6 in sync** — `packages/frameworks/` ↔ `greenfield-install/packages/frameworks/` (0 content deltas excluding caches).
+- **Root relocate candidate:** `INSTALL_IN_YOUR_PROJECT.md` — valued here; execution deferred to T10/UXR-013.
+- Maintainer sign-off **recorded** 2026-06-24 on audit report §4 (paired with T13 directory audit).
 
 ---
 
@@ -99,12 +103,12 @@ Neither UXR replaces the other. UXR-033 without UXR-034 leaves file-level legacy
 
 ## Recommendations
 
-- [ ] **R1:** Publish `REPOSITORY-FILE-AUDIT.md` (or equivalent under `docs/governance/` / `docs/maintenance/`) with per-directory file inventories and valuation columns, cross-linked to UXR-033 directory audit sections.
-- [ ] **R2:** Adopt a standard **per-file valuation rubric** (purpose class, location verdict, evidence, reference touch, parent-directory alignment) reusable for future hygiene UKW runs.
-- [ ] **R3:** Group files into **waves**: keep-as-is · relocate · merge/consolidate · archive · remove — with explicit dependencies on UXR-033 directory waves and FR-101/FR-118 outcomes.
-- [ ] **R4:** Flag **duplicate/mirror** files across `packages/` and `greenfield-install/` with explicit SoT pointer per file pair.
-- [ ] **R5:** Feed wave-1 execution candidates into existing tasks ([E07:S01:T10](../epics/epic-07/story-01-codebase-maintenance-tasks/T10-project-root-hygiene-and-legacy-docs-rationalization.md) for root; [FR-039](FR-039-ai-dev-kit-project-review-and-legacy-clean-up.md) for broader cleanup) rather than opening parallel uncoordinated movers.
-- [ ] **R6:** Update UXR-033 / T13 audit report with file-level rollup summaries (orphan counts, suboptimal placement hotspots) before T13 maintainer sign-off where practical.
+- [x] **R1:** Publish `REPOSITORY-FILE-AUDIT.md` (or equivalent under `docs/governance/` / `docs/maintenance/`) with per-directory file inventories and valuation columns, cross-linked to UXR-033 directory audit sections.
+- [x] **R2:** Adopt a standard **per-file valuation rubric** (purpose class, location verdict, evidence, reference touch, parent-directory alignment) reusable for future hygiene UKW runs.
+- [x] **R3:** Group files into **waves**: keep-as-is · relocate · merge/consolidate · archive · remove — with explicit dependencies on UXR-033 directory waves and FR-101/FR-118 outcomes.
+- [x] **R4:** Flag **duplicate/mirror** files across `packages/` and `greenfield-install/` with explicit SoT pointer per file pair.
+- [x] **R5:** Feed wave-1 execution candidates into existing tasks ([E07:S01:T10](../epics/epic-07/story-01-codebase-maintenance-tasks/T10-project-root-hygiene-and-legacy-docs-rationalization.md) for root; [FR-039](FR-039-ai-dev-kit-project-review-and-legacy-clean-up.md) for broader cleanup) rather than opening parallel uncoordinated movers.
+- [x] **R6:** Update UXR-033 / T13 audit report with file-level rollup summaries (orphan counts, suboptimal placement hotspots) before T13 maintainer sign-off where practical.
 
 **Priority Order:**
 
@@ -155,10 +159,10 @@ Neither UXR replaces the other. UXR-033 without UXR-034 leaves file-level legacy
 
 - [x] Atomic intake: UXR-034 + E07:S01:T14 + story checklist wiring
 - [x] **RW -k** kanban init @ v0.7.1.14+0 (`--art --dpz`)
-- [ ] **IPW** on E07:S01:T14 — after UXR-033 directory inventory baseline available (or parallel planning with explicit scope assumptions)
-- [ ] Execute file inventory and valuation within audited directories
-- [ ] Maintainer sign-off on file audit report before structural IDW waves
-- [ ] **RW** release on epic-7 branch when investigation artifacts are versioned
+- [x] **IPW** on E07:S01:T14 — complete @ 2026-06-23 ([IPP-E07S01T14](../../implementation-cycles/IPP-E07S01T14-comprehensive-repository-file-level-audit.md); T13 baseline @ [`REPOSITORY-DIRECTORY-AUDIT.md`](../../maintenance/REPOSITORY-DIRECTORY-AUDIT.md))
+- [x] Execute file inventory and valuation within audited directories — **IDW @ 2026-06-24** → [`REPOSITORY-FILE-AUDIT.md`](../../maintenance/REPOSITORY-FILE-AUDIT.md)
+- [x] Maintainer sign-off on file audit report — **2026-06-24** (§4)
+- [x] **RW** release on epic-7 branch when investigation artifacts are versioned — **v0.7.1.14+1**
 
 ---
 
