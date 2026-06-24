@@ -13,6 +13,7 @@ housekeeping_policy: keep
 **Severity:** CRITICAL (orchestrator reports failure when install largely succeeded; blocks FR-135 / FR-080 AC)  
 **Status:** OPEN  
 **Kanban init:** v0.6.9.40+0 (RW -k E06:S09:T40 — `--art --dpz`)  
+**Attempted fix:** v0.6.9.40+1 — Install RC path + orchestrator wiring (pending SBL replay verification)  
 **Source:** SBL install attempt 11 — [FB mirror](../../../adk-install-into-sbl/attempt-11/feedback-package/FB-ADK-greenfield-orchestrator-install-rc-gaps.md)  
 **Related:** [FR-135](FR-135-guided-install-orchestrator-zero-manual-steps.md) · [FR-080](FR-080-greenfield-installation-process.md) · [E06:S09:T38](../epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T38-guided-install-orchestrator-fr135.md) · [UXR-029](UXR-029-adk-install-path-experiment.md) · [FR-108](FR-108-install-setup-error-code-registry-and-emission.md) · [#85](https://github.com/RMS-Ltd/ai-dev-kit/issues/85)  
 **Implementing Task:** [E06:S09:T40](../epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T40-greenfield-orchestrator-install-rc-gaps-br112.md)  

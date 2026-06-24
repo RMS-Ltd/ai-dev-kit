@@ -13,8 +13,8 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** Large  
 **Created:** 2026-04-19  
-**Last updated:** 2026-06-24 (v0.6.9.40+0 – Kanban documentation setup)
-**Version:** v0.6.9.40+0
+**Last updated:** 2026-06-24 (v0.6.9.40+1 – Kanban documentation setup)
+**Version:** v0.6.9.40+1
 **Code:** E6S09
 
 ---
@@ -108,7 +108,7 @@ housekeeping_policy: keep
 
 - [x] **E06:S09:T39 – Guided KMA Target Structure Pack (FR-136)** - ✅ COMPLETE (**v0.6.9.39+1** — guided/score modes, TSP pack, scorer, pytest; **adopter replay validated** @ attempt 11 **93.99%**) — [Task](story-09-ai-dev-kit-installation-and-adopter-integration/T39-guided-kma-target-structure-pack-fr136.md) | [IPP-E06S09T39](../../../implementation-cycles/IPP-E06S09T39-guided-kma-target-structure-pack-fr136.md) | [FR-136](../../fbu/FR-136-guided-kma-target-structure-pack.md) | [#85](https://github.com/RMS-Ltd/ai-dev-kit/issues/85)
 
-- [ ] **E06:S09:T40 – Greenfield orchestrator Install RC gaps (BR-112)** - 📋 TODO (CRITICAL — attempt 11 orchestrator exit 1; `validate_install_rc.py` path bug) — [Task](story-09-ai-dev-kit-installation-and-adopter-integration/T40-greenfield-orchestrator-install-rc-gaps-br112.md) | [BR-112](../../fbu/BR-112-greenfield-orchestrator-install-rc-gaps.md) | [#85](https://github.com/RMS-Ltd/ai-dev-kit/issues/85) | Kanban init **v0.6.9.40+0** | —No IPP—
+- [ ] **E06:S09:T40 – Greenfield orchestrator Install RC gaps (BR-112)** - 🔄 IN PROGRESS (CRITICAL — BR-112 attempted fix @ **v0.6.9.40+1**; SBL replay pending) — [Task](story-09-ai-dev-kit-installation-and-adopter-integration/T40-greenfield-orchestrator-install-rc-gaps-br112.md) | [BR-112](../../fbu/BR-112-greenfield-orchestrator-install-rc-gaps.md) | [IPP](../../../implementation-cycles/IPP-E06S09T40-greenfield-orchestrator-install-rc-gaps-br112.md) | [#85](https://github.com/RMS-Ltd/ai-dev-kit/issues/85)
 
 ---
 

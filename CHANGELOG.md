@@ -11,6 +11,14 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.6.9.40+1] - 24-06-26
+
+E06:S09:T40 — **Attempted fix (BR-112):** Install RC `WORKFLOW_ROOT` path bug, checklist CLI alignment, venv-aware RC commands, legacy orchestrator config/sqlite/COMPREHENSION wiring. SemVer **v0.4.1224+1**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.6.9.40+1.md)
+
+---
+
 ## [0.6.9.40+0] - 24-06-26
 
 E06:S09:T40 — **Kanban documentation setup (RW -k):** BR-112 greenfield orchestrator Install RC gaps intake from SBL attempt 11; task doc, FBU wiring, story/board rows, feedback evidence. SemVer **v0.4.1223+0**.

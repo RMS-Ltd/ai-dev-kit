@@ -106,3 +106,38 @@ def test_arm_b_legacy_archive_row(tmp_path, rc_mod):
     report_pass = rc_mod.evaluate_profile(tmp_path, contract, "arm-b", strict=False)
     archive_rows2 = [r for r in report_pass.rows if r.id == "rc-legacy-archived"]
     assert archive_rows2[0].passed
+
+
+def test_workflow_root_resolves_package_layout(rc_mod):
+    assert rc_mod.WORKFLOW_ROOT.name == "workflow-mgt"
+    assert rc_mod.CONTRACT_PATH == rc_mod.WORKFLOW_ROOT / "config" / "install-rc-checklist.yaml"
+    assert rc_mod.CONTRACT_PATH.is_file()
+    assert rc_mod.KANBAN_SCRIPTS == rc_mod.WORKFLOW_ROOT.parent / "kanban" / "scripts"
+    assert (rc_mod.KANBAN_SCRIPTS / "validate_v4_template_completeness.py").is_file()
+
+
+def test_command_check_uses_sys_executable_for_python_alias(tmp_path, rc_mod, monkeypatch):
+    _minimal_rw_config(tmp_path)
+    (tmp_path / "docs-pre-ai-dev-kit").mkdir()
+    calls: list[list[str]] = []
+
+    def fake_run(cmd, **kwargs):
+        calls.append(list(cmd))
+
+        class _Proc:
+            returncode = 0
+            stdout = ""
+            stderr = ""
+
+        return _Proc()
+
+    monkeypatch.setattr(rc_mod.subprocess, "run", fake_run)
+    contract = rc_mod._load_contract(_CONTRACT)
+    spec = {
+        "type": "command",
+        "command": "python",
+        "args": ["-c", "print('ok')"],
+    }
+    ok, _ = rc_mod._run_check(tmp_path, rc_mod._read_rw_config(tmp_path), contract, spec)
+    assert ok
+    assert calls[0][0] == sys.executable

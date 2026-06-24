@@ -1,6 +1,6 @@
 # greenfield-install footprint
 
-**Measured:** 2026-06-24 14:07:34 UTC
+**Measured:** 2026-06-24 17:14:53 UTC
 
 | Tree | MiB |
 | ---- | --- |

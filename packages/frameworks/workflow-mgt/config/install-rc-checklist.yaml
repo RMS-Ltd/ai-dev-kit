@@ -156,8 +156,6 @@ profiles:
         args:
           - "{kanban_scripts}/validate_v4_template_completeness.py"
           - "--strict"
-          - "--project-root"
-          - "{project_root}"
 
     - id: rc-kma-migration-map
       label: KMA migration map valid when present

@@ -9,11 +9,11 @@ housekeeping_policy: keep
 # E06:S09:T40 — Greenfield orchestrator Install RC gaps (BR-112)
 
 **Task ID:** E06:S09:T40  
-**Status:** TODO  
+**Status:** IN PROGRESS  
 **Priority:** CRITICAL  
 **Created:** 2026-06-24  
-**Last updated:** 2026-06-24 (v0.6.9.40+0 – Kanban documentation setup)  
-**Version:** v0.6.9.40+0 (Version Anchor)  
+**Last updated:** 2026-06-24 (RW v0.6.9.40+1 — attempted BR-112 fix)  
+**Version:** v0.6.9.40+1  
 **Code:** E06S09T40
 
 **Parent program:** [E06:S09:T26](T26-starborn-legacy-adk-install-program.md)  
@@ -38,7 +38,7 @@ Unblocks [FR-135](FR-135-guided-install-orchestrator-zero-manual-steps.md) **AC2
 - Pin `v0.4.1171` greenfield tarball replay path from [attempt-11 preflight](../../../../../../adk-install-into-sbl/attempt-11-preflight-checklist.md).
 - [FR-135](../../../fbu/FR-135-guided-install-orchestrator-zero-manual-steps.md) / [E06:S09:T38](T38-guided-install-orchestrator-fr135.md) orchestrator baseline.
 
-**IPW planning artifact (when used):** —No IPP yet—
+**IPW planning artifact (when used):** [IPP-E06S09T40](../../../implementation-cycles/IPP-E06S09T40-greenfield-orchestrator-install-rc-gaps-br112.md)
 
 ---
 

@@ -27,7 +27,7 @@ except ImportError:
     yaml = None  # type: ignore
 
 SCRIPT_DIR = Path(__file__).resolve().parent
-WORKFLOW_ROOT = SCRIPT_DIR.parent
+WORKFLOW_ROOT = SCRIPT_DIR.parent.parent
 CONTRACT_PATH = WORKFLOW_ROOT / "config" / "install-rc-checklist.yaml"
 KANBAN_SCRIPTS = WORKFLOW_ROOT.parent / "kanban" / "scripts"
 
@@ -247,6 +247,8 @@ def _run_check(
         args = _expand_args(spec.get("args") or [], project_root)
         if not cmd:
             return False, "no command"
+        if cmd == "python":
+            cmd = sys.executable
         try:
             proc = subprocess.run(
                 [cmd, *args],
