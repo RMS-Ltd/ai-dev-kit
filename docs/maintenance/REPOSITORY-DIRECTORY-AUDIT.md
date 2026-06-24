@@ -165,9 +165,9 @@ Depth-2 inventory: 91 paths (including `.cursor/skills`). Command: IPP Step 3 de
 
 | Role | Name | Date | Approved |
 | ---- | ---- | ---- | -------- |
-| Maintainer | | | ☐ |
+| Maintainer | Ruari Mears | 2026-06-24 | ☑ |
 
-**Blocks:** structural IDW on mover tasks until Approved is checked.
+**Sign-off recorded:** Directory valuation matrix and wave plan approved. T14 file-level rollup incorporated per §5 addendum.
 
 ---
 
@@ -180,6 +180,8 @@ Directories in scope for [E07:S01:T14 / UXR-034](../kanban/epics/epic-07/story-0
 - `scripts/`
 - `src/ai_dev_kit/`
 - Root-level config files (T10 scope)
+
+**T14 rollup addendum (2026-06-24):** File-level audit complete @ [`REPOSITORY-FILE-AUDIT.md`](REPOSITORY-FILE-AUDIT.md). **572 valuation rows** (528 per-file + 44 class-summary patterns). **42 tension rows** (scripts↔framework boundary, `docs/project-management/` shell, release-notes overlap). **37 archive** + **4 remove** file-wave candidates align with T13 directory waves — no contradictory movers. Mirror pairs **6/6 in sync**. **Maintainer sign-off:** 2026-06-24 (both audits §4).
 
 ---
 

@@ -12,9 +12,9 @@ housekeeping_policy: keep
 **Submitted:** 2026-06-23  
 **Submitted By:** User (operator)  
 **Priority:** HIGH  
-**Status:** ACCEPTED  
+**Status:** IMPLEMENTED  
 **Code:** UXR-033  
-**Last updated:** 2026-06-23 (v0.7.1.13+2 — RW -d docs reconciliation)  
+**Last updated:** 2026-06-24 (v0.7.1.13+3 — RW E07:S01:T13 --art)  
 **Implementing Task:** [E07:S01:T13](../epics/epic-07/story-01-codebase-maintenance-tasks/T13-comprehensive-repository-directory-structure-audit-uxr033.md)
 
 ---
@@ -156,7 +156,7 @@ This UXR is **investigation and planning only**. Execution of moves, merges, arc
 - [x] **IPW** on E07:S01:T13 — IPP review-only (existing IPP sufficient)
 - [x] Execute directory inventory and valuation — [REPOSITORY-DIRECTORY-AUDIT.md](../../maintenance/REPOSITORY-DIRECTORY-AUDIT.md) @ v0.7.1.13+1
 - [x] **RW -d** docs reconciliation @ v0.7.1.13+2 (T14 handoff §5; FR-140 cross-ref)
-- [ ] Maintainer sign-off on audit report §4 before task COMPLETE or structural IDW waves
+- [x] Maintainer sign-off on audit report §4 — **2026-06-24** (paired T14 file audit)
 - [ ] **RW E07:S01:T13 --art** completion release when AC5 satisfied
 
 ---

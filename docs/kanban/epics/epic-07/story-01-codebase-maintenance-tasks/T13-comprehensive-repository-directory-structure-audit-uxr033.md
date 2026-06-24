@@ -9,15 +9,15 @@ housekeeping_policy: keep
 # Epic 7, Story 1, Task 13: Comprehensive repository directory structure audit
 
 **Task ID:** E07:S01:T13  
-**Status:** IN PROGRESS  
+**Status:** ✅ COMPLETE (v0.7.1.13+3)  
 **Priority:** HIGH  
 **Estimated Effort:** Large (inventory + valuation matrix + maintainer sign-off)  
 **Created:** 2026-06-23  
-**Last updated:** 2026-06-23 (v0.7.1.13+2 — RW -d docs reconciliation; sign-off §4 pending)  
-**Version Anchor:** v0.7.1.13+2  
+**Last updated:** 2026-06-24 (RW E07:S01:T13 --art @ v0.7.1.13+3)  
+**Version Anchor:** v0.7.1.13+3  
 **Code:** E07S01T13
 
-Publication Status: NOT_APPLICABLE (investigation report delivered; maintainer sign-off pending per audit §4)
+Publication Status: NOT_APPLICABLE (investigation complete; maintainer sign-off §4 @ 2026-06-24)
 
 ---
 
@@ -58,7 +58,7 @@ Deliver [UXR-033](../../../fbu/UXR-033-comprehensive-repository-directory-struct
 | **1 — Tree capture** | Deterministic directory inventory (machine-assist + human review) | ✅ Complete — see [REPOSITORY-DIRECTORY-AUDIT.md](../../../../maintenance/REPOSITORY-DIRECTORY-AUDIT.md) §1 |
 | **2 — Valuation matrix** | Per-directory rows: purpose class, purpose statement, location verdict, evidence, ripple risk | ✅ Complete — 83 depth-0..2 rows §2 |
 | **3 — Wave plan** | Grouped recommendations: keep · relocate · consolidate · archive · remove | ✅ Complete — §3 |
-| **4 — Sign-off** | Maintainer approval on audit report | ⏳ Pending — §4 checkbox |
+| **4 — Sign-off** | Maintainer approval on audit report | ✅ Complete — §4 @ 2026-06-24 |
 
 **Audit report housing (IPP-finalized):** [`docs/maintenance/REPOSITORY-DIRECTORY-AUDIT.md`](../../../../maintenance/REPOSITORY-DIRECTORY-AUDIT.md) — see [IPP-E07S01T13](../../../../implementation-cycles/IPP-E07S01T13-comprehensive-repository-directory-structure-audit.md) §6.
 
@@ -83,8 +83,8 @@ Deliver [UXR-033](../../../fbu/UXR-033-comprehensive-repository-directory-struct
 - [x] **AC2:** Every **non-excluded** directory at depth ≤2 has a valuation row with all rubric columns or `NEEDS_REVIEW`.
 - [x] **AC3:** Framework SoT vs dev-kit-local vs `greenfield-install/` mirror classification documented for relevant subtrees.
 - [x] **AC4:** Wave plan cross-references existing tasks (T10, T11, T12, UXR-032, FR-039, T14) to avoid duplicate movers.
-- [ ] **AC5:** Maintainer sign-off recorded on audit report before any structural implementation is authorized.
-- [ ] **AC6:** UXR-033 status reconciled; four-surface RW Step 7 on release.
+- [x] **AC5:** Maintainer sign-off recorded on audit report before any structural implementation is authorized.
+- [x] **AC6:** UXR-033 status reconciled; four-surface RW Step 7 on release.
 
 ---
 
@@ -140,7 +140,8 @@ Deliver [UXR-033](../../../fbu/UXR-033-comprehensive-repository-directory-struct
 - [x] Run `IPW E07:S01:T13` in plan mode.
 - [x] Produce `IPP-E07S01T13-comprehensive-repository-directory-structure-audit.md` under `docs/implementation-cycles/`.
 - [x] Execute investigation phases 1–3 — [REPOSITORY-DIRECTORY-AUDIT.md](../../../../maintenance/REPOSITORY-DIRECTORY-AUDIT.md) published.
-- [ ] Obtain maintainer sign-off on audit report (§4).
+- [x] Obtain maintainer sign-off on audit report (§4) — **2026-06-24**
+- [x] `RW E07:S01:T13 --art` — v0.7.1.13+3
 - [x] Run `RW E07:S01:T13` / `RW -k E07:S01:T13 --art --dpz` — kanban init @ v0.7.1.13+0
 
 ---

@@ -8,7 +8,7 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Board
 
-**Last Updated:** 2026-06-23 (RW -d: E07:S01:T13)
+**Last Updated:** 2026-06-24 (RW: E07:S01:T13)
 **Version:** v0.7.1.13+2
 
 **Active board contract:** **Sole active MoSCOW board** ([ADR-018](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/architecture/standards-and-adrs/ADR-018-single-kanban-board-consolidation.md)). Rows are **live work** (TODO / IN PROGRESS / OPEN / WAITING / PERPETUAL) plus filed **Could Have** backlog. **Verification (V)** band holds task-shipped / FBU-open items (`⏳ WAITING`). Remove **terminal** rows and archive prose (use [`kanban-completed.md`](kanban-completed.md) / [`intake-completed.md`](intake-completed.md)).
@@ -71,8 +71,6 @@ housekeeping_policy: keep
 - **E04:S14:T11** – UKW gap discovery — unfiled FR/BR (FR-043) - 📋 TODO (HIGH, re-housed from E02:S16:T14) | [Task](epics/epic-04/story-14-kanban-framework-maintenance/T11-ukw-gap-discovery-unfiled-fr-br-fr043.md) | [FR-043](fbu/FR-043-ukw-gap-discovery-todo-tasks-and-unfiled-fr-br.md) | —No IPP— | Last modified: 2026-05-30 13:36 UTC
 
 - **E07:S01:T10** – FR-039: AI Dev Kit Project Review and Legacy Clean-up - 📋 TODO (LOW, hygiene task; historical FR-059 T10 reconciled) | [Task](epics/epic-07/story-01-codebase-maintenance-tasks/T10-project-root-hygiene-and-legacy-docs-rationalization.md) | [FR-039](fbu/FR-039-ai-dev-kit-project-review-and-legacy-clean-up.md) | [—IPP—](../../implementation-cycles/IPP-E07S01T10-supersession-reconciliation.md) | Last modified: 2026-06-04 12:15 UTC
-
-- **E07:S01:T13** – Comprehensive repository directory structure audit (UXR-033) - 🔄 IN PROGRESS (HIGH, **v0.7.1.13+2** — RW -d docs reconciliation; sign-off §4 pending; cartography leg A under [FR-140](fbu/FR-140-repository-information-architecture-steady-state-governance.md)) | [Task](epics/epic-07/story-01-codebase-maintenance-tasks/T13-comprehensive-repository-directory-structure-audit-uxr033.md) | [UXR-033](fbu/UXR-033-comprehensive-repository-directory-structure-audit.md) | [—IPP—](../../implementation-cycles/IPP-E07S01T13-comprehensive-repository-directory-structure-audit.md) | Last modified: 2026-06-23 14:47 UTC
 
 ### Ongoing (O) - Perpetual Tasks
 

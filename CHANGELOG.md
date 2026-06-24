@@ -11,6 +11,14 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.7.1.13+3] - 24-06-26
+
+E07:S01:T13 — **Change implemented (UXR-033):** Repository directory structure audit **COMPLETE**; maintainer sign-off §4 @ 2026-06-24; T14 rollup in audit §5. SemVer **v0.4.1216+3**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.7.1.13+3.md)
+
+---
+
 ## [0.7.1.13+2] - 23-06-26
 
 E07:S01:T13 — **Change implemented (UXR-033, RW -d):** Post-IPW docs reconciliation; UXR/T14 handoff hygiene; FR-140 cross-ref in audit. Sign-off §4 still pending — task IN PROGRESS. SemVer **v0.4.1215+2** (docs-only; no tags).
