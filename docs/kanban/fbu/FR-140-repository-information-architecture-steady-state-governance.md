@@ -13,8 +13,8 @@ housekeeping_policy: keep
 **Submitted:** 2026-06-23  
 **Submitted By:** Operator (post UXR-033 / UXR-034 intake)  
 **Priority:** HIGH  
-**Status:** ACCEPTED  
-**Last updated:** 2026-06-23 (v0.7.1.15+0 — RW -k kanban init)
+**Status:** IMPLEMENTED  
+**Last updated:** 2026-06-24 (E07:S01:T15 delivery — policy + manifest + gates)
 
 **Implementing Task:** [E07:S01:T15](../epics/epic-07/story-01-codebase-maintenance-tasks/T15-repository-information-architecture-steady-state-governance-fr140.md)
 
@@ -67,9 +67,9 @@ Work items that **overlap** repository IA, cleanup, or path semantics. FR-140 **
 
 | ID | Task(s) | Relationship to FR-140 | Status (2026-06-23) |
 | -- | ------- | ------------------------ | ------------------- |
-| **FR-140** | **E07:S01:T15** | **Umbrella — steady-state governance (this FR)** | INTAKE |
-| **UXR-033** | **E07:S01:T13** | **Cartography leg A — directories** | IN PROGRESS (report @ v0.7.1.13+1; sign-off pending) |
-| **UXR-034** | **E07:S01:T14** | **Cartography leg B — files within T13 scope** | TODO — **unblocked for IPW/IDW** per §T14 release gate below |
+| **FR-140** | **E07:S01:T15** | **Umbrella — steady-state governance (this FR)** | IMPLEMENTED |
+| **UXR-033** | **E07:S01:T13** | **Cartography leg A — directories** | COMPLETE (sign-off 2026-06-24) |
+| **UXR-034** | **E07:S01:T14** | **Cartography leg B — files within T13 scope** | COMPLETE (v0.7.1.14+1) |
 | **FR-039** | E07:S01:T10 | Parent cleanup program; consumes T13/T14 wave plans | IN PROGRESS |
 | **UXR-013** | E07:S01:T10 | Root-only file hygiene (narrower than T14) | TODO |
 | **FR-101** | E07:S01:T11 | Governance tree rehousing — precedent inventory pattern | COMPLETE |
@@ -106,16 +106,16 @@ Work items that **overlap** repository IA, cleanup, or path semantics. FR-140 **
 
 ### Functional
 
-- [ ] **FR-140-F1:** Publish **repository IA policy** under `docs/governance/standards/` defining: purpose classes (aligned with T13/T14 rubrics), SoT vs dev-kit specialisation vs install mirror vs generated/vendor, documentation surface placement (cross-link [FR-114](FR-114-split-documentation-surfaces-docusaurus-public-notion-maintainer-kb.md), [FR-139](FR-139-unified-documentation-governance-strategy.md)), and tiered README expectations.
-- [ ] **FR-140-F2:** Define **cartography program** section wiring **T13** + **T14** as mandatory evidence legs before structural cleanup waves; cross-link audit report paths.
-- [ ] **FR-140-F3:** Specify **machine-generated path manifest** format, generator script location, and refresh procedure (input: git tree + policy exclusions; output: JSON or YAML for agents/validators).
-- [ ] **FR-140-F4:** Define **creation gates** — minimum: new top-level directory requires policy class + README tier; optional CI validator (successor to UXR-033 R6).
-- [ ] **FR-140-F5:** Define **drift detection** — manifest diff in CI or pre-commit advisory/blocking mode per IPW decision.
-- [ ] **FR-140-F6:** Update **`AGENTS.md`** / maintainer routing with one-line pointer to IA policy + manifest (no cold-start bloat).
-- [ ] **FR-140-F7:** Program **aggregation table** (this FR §Aggregated program map) maintained in policy doc or linked maintenance README; update when new IA-touching FBUs file.
-- [ ] **FR-140-F8:** Hand-off contract from T13/T14 wave plans to **FR-039** / scoped mover tasks — checklist template in policy or `docs/maintenance/`.
-- [ ] **FR-140-F9:** Reconcile with [`REPOSITORY-DIRECTORY-AUDIT.md`](../../maintenance/REPOSITORY-DIRECTORY-AUDIT.md) §2.1 SoT map and wave plan §3 — policy must not contradict signed cartography without maintainer override record.
-- [ ] **FR-140-F10:** Document **perpetual hygiene** ownership — default: [E02:S16:T04](../epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T04-ad-hoc-repository-infrastructure-maintenance-perpetual.md) for manifest regen cycles; UKW/RW Step 7 when board-visible program status changes.
+- [x] **FR-140-F1:** Publish **repository IA policy** under `docs/governance/standards/` defining: purpose classes (aligned with T13/T14 rubrics), SoT vs dev-kit specialisation vs install mirror vs generated/vendor, documentation surface placement (cross-link [FR-114](FR-114-split-documentation-surfaces-docusaurus-public-notion-maintainer-kb.md), [FR-139](FR-139-unified-documentation-governance-strategy.md)), and tiered README expectations.
+- [x] **FR-140-F2:** Define **cartography program** section wiring **T13** + **T14** as mandatory evidence legs before structural cleanup waves; cross-link audit report paths.
+- [x] **FR-140-F3:** Specify **machine-generated path manifest** format, generator script location, and refresh procedure (input: git tree + policy exclusions; output: JSON or YAML for agents/validators).
+- [x] **FR-140-F4:** Define **creation gates** — minimum: new top-level directory requires policy class + README tier; optional CI validator (successor to UXR-033 R6).
+- [x] **FR-140-F5:** Define **drift detection** — manifest diff in CI or pre-commit advisory/blocking mode per IPW decision.
+- [x] **FR-140-F6:** Update **`AGENTS.md`** / maintainer routing with one-line pointer to IA policy + manifest (no cold-start bloat).
+- [x] **FR-140-F7:** Program **aggregation table** (this FR §Aggregated program map) maintained in policy doc or linked maintenance README; update when new IA-touching FBUs file.
+- [x] **FR-140-F8:** Hand-off contract from T13/T14 wave plans to **FR-039** / scoped mover tasks — checklist template in policy or `docs/maintenance/`.
+- [x] **FR-140-F9:** Reconcile with [`REPOSITORY-DIRECTORY-AUDIT.md`](../../maintenance/REPOSITORY-DIRECTORY-AUDIT.md) §2.1 SoT map and wave plan §3 — policy must not contradict signed cartography without maintainer override record.
+- [x] **FR-140-F10:** Document **perpetual hygiene** ownership — default: [E02:S16:T04](../epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T04-ad-hoc-repository-infrastructure-maintenance-perpetual.md) for manifest regen cycles; UKW/RW Step 7 when board-visible program status changes.
 
 ### Non-functional
 

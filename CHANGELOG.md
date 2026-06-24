@@ -11,6 +11,14 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.7.1.15+1] - 24-06-26
+
+E07:S01:T15 — **Change implemented (FR-140):** Repository IA steady-state governance — ADR-033, policy, path manifest generator, top-level + drift validators, mover checklist, program wiring. SemVer **v0.4.1219+1**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.7.1.15+1.md)
+
+---
+
 ## [0.8.3.24+4] - 24-06-26
 
 E08:S03:T24 — **Change implemented (FR-138 follow-on):** Version re-anchor (`--art`) to completed CLI coverage task; kanban/version surfaces reconciled after cross-epic drift. SemVer **v0.4.1218+4**.

@@ -39,6 +39,7 @@ Catch-all perpetual lane for ad-hoc repository infrastructure patches that do no
 - Minor CI/CD configuration tweaks
 - Path or import fixes in workflow scripts
 - Adding missing `.gitignore` entries
+- Regenerating [`repository-path-manifest.json`](../../../../maintenance/repository-path-manifest.json) after structural directory changes (FR-140 / E07:S01:T15)
 
 ---
 

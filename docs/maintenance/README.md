@@ -16,6 +16,8 @@ All commands assume you are in the **project root**.
 | [REPOSITORY-DIRECTORY-AUDIT.md](REPOSITORY-DIRECTORY-AUDIT.md) | Whole-repo directory valuation matrix + wave plan (UXR-033 / E07:S01:T13) |
 | [REPOSITORY-FILE-AUDIT.md](REPOSITORY-FILE-AUDIT.md) | Per-file valuation matrix within T13-scoped directories (UXR-034 / E07:S01:T14) |
 | [REPOSITORY-FILE-AUDIT.csv](REPOSITORY-FILE-AUDIT.csv) | CSV export of file audit matrix (filter/sort in spreadsheet) |
+| [repository-path-manifest.json](repository-path-manifest.json) | Machine-generated directory manifest for agents/CI (FR-140) |
+| [repository-ia-mover-wave-checklist.md](repository-ia-mover-wave-checklist.md) | Pre-mover checklist (cartography sign-off + scoped IPW/IDW) |
 
 ## Release Automation Resources
 

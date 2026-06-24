@@ -9,12 +9,12 @@ housekeeping_policy: keep
 # Epic 7, Story 1, Task 15: Repository information architecture steady-state governance (FR-140)
 
 **Task ID:** E07:S01:T15  
-**Status:** TODO  
+**Status:** ✅ COMPLETE (v0.7.1.15+1)  
 **Priority:** HIGH  
 **Estimated Effort:** Large (policy + manifest generator + gates + program wiring)  
 **Created:** 2026-06-23  
-**Last updated:** 2026-06-23 (v0.7.1.15+0 — RW -k kanban init)  
-**Version Anchor:** v0.7.1.15+0  
+**Last updated:** 2026-06-24 (RW E07:S01:T15 --art @ v0.7.1.15+1)  
+**Version Anchor:** v0.7.1.15+1  
 **Code:** E07S01T15
 
 Publication Status: NOT_APPLICABLE (IPP required before implementation — see Approach)
@@ -42,11 +42,11 @@ Deliver [FR-140](../../../fbu/FR-140-repository-information-architecture-steady-
 
 ## Input
 
-- [`REPOSITORY-DIRECTORY-AUDIT.md`](../../../../maintenance/REPOSITORY-DIRECTORY-AUDIT.md) — T13 matrix @ v0.7.1.13+1 (SoT map §2.1, waves §3)
-- Future [`REPOSITORY-FILE-AUDIT.md`](../../../../maintenance/REPOSITORY-FILE-AUDIT.md) — T14 deliverable (when available)
+- [`REPOSITORY-DIRECTORY-AUDIT.md`](../../../../maintenance/REPOSITORY-DIRECTORY-AUDIT.md) — T13 matrix @ v0.7.1.13+1 (SoT map §2.1, waves §3; sign-off 2026-06-24)
+- [`REPOSITORY-FILE-AUDIT.md`](../../../../maintenance/REPOSITORY-FILE-AUDIT.md) — T14 matrix @ v0.7.1.14+1 (572 rows; sign-off 2026-06-24)
 - [FR-140 aggregation map](../../../fbu/FR-140-repository-information-architecture-steady-state-governance.md#aggregated-program-map-explicit--implicit-ia-touchpoints)
 - `docs/governance/README.md`, [FR-139](../../../fbu/FR-139-unified-documentation-governance-strategy.md), [ADR-026](../../../../architecture/standards-and-adrs/ADR-026-git-internal-maintainer-kb-fr121.md)
-- **IPP (planning):** TBD — run `IPW E07:S01:T15`
+- **IPP (planning):** [`IPP-E07S01T15-repository-information-architecture-steady-state-governance.md`](../../../../implementation-cycles/IPP-E07S01T15-repository-information-architecture-steady-state-governance.md) — IPW complete @ 2026-06-24
 
 ---
 
@@ -65,12 +65,12 @@ Deliver [FR-140](../../../fbu/FR-140-repository-information-architecture-steady-
 
 ## Acceptance Criteria
 
-- [ ] **AC0:** IPP linked from this task before implementation.
-- [ ] **AC1:** All FR-140 functional requirements F1–F10 addressed or explicitly deferred with rationale in IPP.
-- [ ] **AC2:** T14 release gate (FR-140-F13) documented in policy and reflected in T14 dependencies (investigation may proceed; execution waves gated).
-- [ ] **AC3:** Aggregation table maintained and matches FR-140 § program map at release time.
-- [ ] **AC4:** Manifest generator is deterministic; documented exclusion rules align with T13 audit exclusions.
-- [ ] **AC5:** FR-140 four-surface reconciliation on RW Step 7 when task ships.
+- [x] **AC0:** IPP linked from this task before implementation.
+- [x] **AC1:** All FR-140 functional requirements F1–F10 addressed or explicitly deferred with rationale in IPP.
+- [x] **AC2:** T14 release gate (FR-140-F13) documented in policy and reflected in T14 dependencies (investigation may proceed; execution waves gated).
+- [x] **AC3:** Aggregation table maintained and matches FR-140 § program map at release time.
+- [x] **AC4:** Manifest generator is deterministic; documented exclusion rules align with T13 audit exclusions.
+- [x] **AC5:** FR-140 four-surface reconciliation on RW Step 7 when task ships.
 
 ---
 
@@ -127,16 +127,16 @@ Deliver [FR-140](../../../fbu/FR-140-repository-information-architecture-steady-
 
 ## Next Actions
 
-- [ ] Run `IPW E07:S01:T15` in plan mode.
-- [ ] Run `RW -k E07:S01:T15` when kanban init/version anchor needed.
-- [x] Run `RW -k E07:S01:T15 --art --dpz` — kanban init @ v0.7.1.15+0
-- [ ] After IPP approval: `IDW E07:S01:T15` when operator authorizes implementation.
+- [x] Run `IPW E07:S01:T15` in plan mode.
+- [x] After IPP approval: `IDW E07:S01:T15` when operator authorizes implementation.
 - [ ] Notify T14 track: `IPW E07:S01:T14` unblocked per FR-140-F13.
 
 ---
 
 ## References
 
+- [IPP-E07S01T15-repository-information-architecture-steady-state-governance.md](../../../../implementation-cycles/IPP-E07S01T15-repository-information-architecture-steady-state-governance.md) — planning package (IPW)
 - [FR-140](../../../fbu/FR-140-repository-information-architecture-steady-state-governance.md)
 - [REPOSITORY-DIRECTORY-AUDIT.md](../../../../maintenance/REPOSITORY-DIRECTORY-AUDIT.md)
+- [REPOSITORY-FILE-AUDIT.md](../../../../maintenance/REPOSITORY-FILE-AUDIT.md)
 - [FR_BR_INTAKE_GUIDE.md](../../../../../packages/frameworks/kanban/FR_BR_INTAKE_GUIDE.md)

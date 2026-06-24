@@ -28,7 +28,7 @@ housekeeping_policy: keep
 
 ### Should Have (S) - Important Tasks
 
-- **E07:S01:T15** – Repository IA steady-state governance (FR-140) - 📋 TODO (HIGH — kanban-init **v0.7.1.15+0**; program umbrella; wires T13/T14; T14 IPW unblocked) | [Task](epics/epic-07/story-01-codebase-maintenance-tasks/T15-repository-information-architecture-steady-state-governance-fr140.md) | [FR-140](fbu/FR-140-repository-information-architecture-steady-state-governance.md) | —No IPP— | Last modified: 2026-06-23 14:32 UTC
+- **E07:S01:T15** – Repository IA steady-state governance (FR-140) - ✅ COMPLETE (v0.7.1.15+1) | [Task](epics/epic-07/story-01-codebase-maintenance-tasks/T15-repository-information-architecture-steady-state-governance-fr140.md) | [FR-140](fbu/FR-140-repository-information-architecture-steady-state-governance.md) | [IPP](implementation-cycles/IPP-E07S01T15-repository-information-architecture-steady-state-governance.md) | Last modified: 2026-06-24 12:30 UTC
 
 - **E02:S03:T13** – MWF `delivery` RW intent preflight (FR-137) - 📋 TODO (HIGH — kanban-init **v0.2.3.13+0**) | [Task](epics/epic-02/story-03-additional-workflows-and-examples/T13-mwf-delivery-rw-intent-preflight-fr137.md) | [FR-137](fbu/FR-137-mwf-delivery-rw-intent-preflight-art-forwarding.md) | —No IPP— | Last modified: 2026-06-17 16:17 UTC
 
