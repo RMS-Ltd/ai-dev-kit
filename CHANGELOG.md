@@ -11,6 +11,14 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.2.16.2+14] - 24-06-26
+
+E02:S16:T02 — **Kanban documentation setup (UKW):** E03:S02:T15 / UXR-031 operator verify archived; FR-137 intake sync; perpetual UKW surfaces reconciled. SemVer **v0.4.1221+14**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.16.2+14.md)
+
+---
+
 ## [0.2.3.13+1] - 24-06-26
 
 E02:S03:T13 — **Change implemented (FR-137):** MWF `delivery` Phase 0 RW intent preflight — fail fast before IPW/IDW on `version.py` mismatch without `--art`; `validate_mwf_delivery_preflight.py`, docs/YAML wiring, pytest. SemVer **v0.4.1220+1**.

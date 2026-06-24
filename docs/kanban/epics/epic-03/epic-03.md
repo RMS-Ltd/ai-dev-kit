@@ -12,7 +12,7 @@ housekeeping_policy: keep
 **Priority:** HIGH
 **Estimated Effort:** [TBD]
 **Created:** 2025-12-02
-**Last updated:** 2026-06-16 (v0.2.16.2+12 – E03:S02:T15 kanban init via E02:S16:T02)
+**Last updated:** 2026-06-24 (UKW — E03:S02:T15 user verified)
 **Branch:** `epic/3-numbering-and-versioning-framework`
 **Version Schema:** `0.3.S.T+B`
 **Production URL:** [N/A for this repo]
@@ -22,7 +22,7 @@ housekeeping_policy: keep
 ## Story Checklist
 
 - [x] **E3:S01 – Dev Kit Alignment with Versioning Framework** - COMPLETE ✅ (v0.3.1.6+1)
-- [ ] **E3:S02 – Versioning Cookbook & Examples** - IN PROGRESS (v0.3.2.14+2 – **T14** ✅ SAA repair; T10 TODO)
+- [ ] **E3:S02 – Versioning Cookbook & Examples** - IN PROGRESS (v0.3.2.15+2 – **T15** ✅ verified Option A; T10 TODO)
 - [x] **E3:S03 – Versioning Integration with Kanban & RW** - COMPLETE ✅ (v0.3.3.6+2 – All tasks complete: Epic 3 marked COMPLETE)
   - Story: [`story-03-versioning-integration-with-kanban-and-rw.md`](story-03-versioning-integration-with-kanban-and-rw.md)
 
