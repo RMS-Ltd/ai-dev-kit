@@ -144,6 +144,13 @@ actions_ci_parity:
   # remote_workflows: optional override; defaults in validate_github_actions_remote.py
   # checks: optional override; defaults in validate_actions_ci_parity.py
 
+# FR-140 / E07:S01:T15 — repository IA manifest and gates
+repository_ia:
+  manifest_path: docs/maintenance/repository-path-manifest.json
+  audit_path: docs/maintenance/REPOSITORY-DIRECTORY-AUDIT.md
+  top_level_gate: strict
+  manifest_drift_gate: advisory
+
 # FR-134 / E04:S14:T12 — completed-task ledger (SQLite SoT + PDF report)
 kanban_completed:
   db: .adk/kanban-completed.db

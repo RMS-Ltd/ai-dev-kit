@@ -167,14 +167,15 @@ Or per release: `python packages/frameworks/workflow-mgt/scripts/version/push_rw
 
 | Invocation | Meaning |
 | ---------- | ------- |
-| `MWF E02:S03:T09 delivery` / `/mwf E02:S03:T09 delivery` | Full pipeline: IPW (if no IPP) → IDW `--rw` (continuous; sub-agent legs per BR-102) |
+| `MWF E02:S03:T09 delivery` / `/mwf E02:S03:T09 delivery` | Full pipeline: **Phase 0 RW intent preflight** → IPW (if no IPP) → IDW `--rw` (continuous; sub-agent legs per BR-102) |
 | `MWF E02:S03:T09 ipw,idw,rw` | Alias for `delivery` |
-| `MWF E02:S03:T09 delivery --art` | Forward `--art` to IDW `--rw` leg |
+| `MWF E02:S03:T09 delivery --art` | Phase 0 preflight with `--art`; forward `--art` to IDW `--rw` leg (cross-epic / `dev` adoption) |
 | `MWF E02:S03:T09 delivery --push` | Forward `--push` to IDW `--rw` leg |
 
 | | |
 | --- | --- |
 | **Prerequisites** | Tool access; parseable `E:S:T` and recipe |
+| **Phase 0 preflight (FR-137)** | `version.py` mismatch **without** `--art` → **`MWF ABORTED (preflight: RW intent)`** before IPW; hint: `MWF E:S:T delivery --art`. Common on `dev` when delivering a different epic than current version anchor. |
 | **Orchestration** | MWF delegates legs via sub-agent or inline command guide — **no** operator mode-switch handoff ([BR-102](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/kanban/fbu/BR-102-mwf-chain-paused-instead-of-subagent-leg-delegation.md)) |
 | **Resume** | When IPP already linked on task, skip IPW; run IDW `--rw` only |
 | **vs IDW `--rw`** | **MWF** = multi-leg (IPW→IDW→RW); **IDW `--rw`** = two-leg (impl→RW) |
@@ -218,7 +219,8 @@ Or per release: `python packages/frameworks/workflow-mgt/scripts/version/push_rw
 
 | Sequence | When |
 | -------- | ---- |
-| `MWF E02:S16:T15 delivery` | **Preferred** full pipeline (IPW → IDW → RW); no manual mode-switch between legs |
+| `MWF E02:S16:T15 delivery` | **Preferred** full pipeline (preflight → IPW → IDW → RW); no manual mode-switch between legs |
+| `MWF E02:S16:T15 delivery --art` | Same on `dev` / cross-epic when `version.py` ≠ requested `E:S:T` (FR-137) |
 | `IPW E02:S16:T15` → `IDW E02:S16:T15` → `RW E02:S16:T15` | New work with planning gate (manual three-step) |
 | `IPW E02:S16:T15` → `IDW E02:S16:T15 --rw` | Plan, implement, local release (manual; IDW chains RW) |
 | `MWF E02:S16:T15 delivery` (IPP exists) | Resume: IDW `--rw` only (skips IPW leg) |

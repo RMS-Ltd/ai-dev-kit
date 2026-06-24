@@ -11,6 +11,78 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.4.14.11+1] - 24-06-26
+
+E04:S14:T11 — **Change implemented (FR-043):** UKW Step 2.5 gap-discovery scanner, workflow YAML/config, tests, and maintainer gap-stats report. SemVer **v0.4.1222+1**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.4.14.11+1.md)
+
+---
+
+## [0.2.16.2+14] - 24-06-26
+
+E02:S16:T02 — **Kanban documentation setup (UKW):** E03:S02:T15 / UXR-031 operator verify archived; FR-137 intake sync; perpetual UKW surfaces reconciled. SemVer **v0.4.1221+14**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.16.2+14.md)
+
+---
+
+## [0.2.3.13+1] - 24-06-26
+
+E02:S03:T13 — **Change implemented (FR-137):** MWF `delivery` Phase 0 RW intent preflight — fail fast before IPW/IDW on `version.py` mismatch without `--art`; `validate_mwf_delivery_preflight.py`, docs/YAML wiring, pytest. SemVer **v0.4.1220+1**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.3.13+1.md)
+
+---
+
+## [0.7.1.15+1] - 24-06-26
+
+E07:S01:T15 — **Change implemented (FR-140):** Repository IA steady-state governance — ADR-033, policy, path manifest generator, top-level + drift validators, mover checklist, program wiring. SemVer **v0.4.1219+1**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.7.1.15+1.md)
+
+---
+
+## [0.8.3.24+4] - 24-06-26
+
+E08:S03:T24 — **Change implemented (FR-138 follow-on):** Version re-anchor (`--art`) to completed CLI coverage task; kanban/version surfaces reconciled after cross-epic drift. SemVer **v0.4.1218+4**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.8.3.24+4.md)
+
+---
+
+## [0.7.1.13+3] - 24-06-26
+
+E07:S01:T13 — **Change implemented (UXR-033):** Repository directory structure audit **COMPLETE**; maintainer sign-off §4 @ 2026-06-24; T14 rollup in audit §5. SemVer **v0.4.1216+3**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.7.1.13+3.md)
+
+---
+
+## [0.7.1.13+2] - 23-06-26
+
+E07:S01:T13 — **Change implemented (UXR-033, RW -d):** Post-IPW docs reconciliation; UXR/T14 handoff hygiene; FR-140 cross-ref in audit. Sign-off §4 still pending — task IN PROGRESS. SemVer **v0.4.1215+2** (docs-only; no tags).
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.7.1.13+2.md)
+
+---
+
+## [0.7.1.15+0] - 23-06-26
+
+E07:S01:T15 — **Change implemented (FR-140):** Repository IA steady-state governance program filed; wires T13/T14 cartography legs + aggregation map; T14 IPW unblocked per FR-140-F13. Kanban-init @ BUILD+0. SemVer **v0.4.1214+0**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.7.1.15+0.md)
+
+---
+
+## [0.7.1.13+1] - 23-06-26
+
+E07:S01:T13 — **Change implemented (UXR-033):** Repository directory structure audit published (`REPOSITORY-DIRECTORY-AUDIT.md`, 83 valuation rows, wave plan). Task IN PROGRESS — maintainer sign-off pending. SemVer **v0.4.1213**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.7.1.13+1.md)
+
+---
+
 ## [0.2.16.6+20] - 23-06-26
 
 E02:S16:T06 — **Change implemented:** Wave 12 Dependabot hygiene — `http-proxy-middleware@2.0.10` npm override (alert #10; Dependabot auto-update blocked by `webpack-dev-server` constraint). SemVer **v0.4.1212+20**.

@@ -1,0 +1,862 @@
+{
+  "schema_version": "1",
+  "generated_at": "2026-06-24T12:58:34Z",
+  "generator": {
+    "script": "packages/frameworks/workflow-mgt/scripts/maintenance/generate_repository_path_manifest.py",
+    "version": "1.0.0"
+  },
+  "exclusions": [
+    {
+      "pattern": ".git/**",
+      "rationale": "VCS metadata"
+    },
+    {
+      "pattern": "node_modules/**",
+      "rationale": "NPM vendor"
+    },
+    {
+      "pattern": "**/__pycache__/**",
+      "rationale": "Python bytecode cache"
+    },
+    {
+      "pattern": ".pytest_cache/**",
+      "rationale": "Pytest cache"
+    },
+    {
+      "pattern": ".ruff_cache/**",
+      "rationale": "Ruff cache"
+    },
+    {
+      "pattern": ".mypy_cache/**",
+      "rationale": "Mypy cache"
+    },
+    {
+      "pattern": ".venv/**",
+      "rationale": "Local Python virtualenv"
+    },
+    {
+      "pattern": ".venv-*/**",
+      "rationale": "Local Python virtualenv variant"
+    },
+    {
+      "pattern": "venv/**",
+      "rationale": "Local Python virtualenv"
+    },
+    {
+      "pattern": "env/**",
+      "rationale": "Local Python virtualenv"
+    },
+    {
+      "pattern": "portal/build/**",
+      "rationale": "Docusaurus production build output"
+    },
+    {
+      "pattern": "portal/.docusaurus/**",
+      "rationale": "Docusaurus cache"
+    },
+    {
+      "pattern": "htmlcov/**",
+      "rationale": "Coverage HTML output"
+    },
+    {
+      "pattern": ".cqg/**",
+      "rationale": "CodeQL local cache"
+    },
+    {
+      "pattern": "**/*.egg-info/**",
+      "rationale": "Python package metadata build artifact"
+    }
+  ],
+  "top_level_allowlist": [
+    {
+      "path": ".adk",
+      "purpose_class": "Operational",
+      "readme_tier": 1
+    },
+    {
+      "path": ".claude",
+      "purpose_class": "Dev-kit specialisation",
+      "readme_tier": 1
+    },
+    {
+      "path": ".cursor",
+      "purpose_class": "Dev-kit specialisation",
+      "readme_tier": 1
+    },
+    {
+      "path": ".cursor-plugin",
+      "purpose_class": "Operational",
+      "readme_tier": 1
+    },
+    {
+      "path": ".github",
+      "purpose_class": "Operational",
+      "readme_tier": 1
+    },
+    {
+      "path": ".kanban-snapshots",
+      "purpose_class": "Operational",
+      "readme_tier": 1
+    },
+    {
+      "path": ".migration-batches",
+      "purpose_class": "Legacy/transitional",
+      "readme_tier": 1
+    },
+    {
+      "path": ".rw",
+      "purpose_class": "Operational",
+      "readme_tier": 1
+    },
+    {
+      "path": ".rw-ci-venv",
+      "purpose_class": "Unknown/orphan",
+      "readme_tier": 1
+    },
+    {
+      "path": ".rw-snapshots",
+      "purpose_class": "Operational",
+      "readme_tier": 1
+    },
+    {
+      "path": "adk-install-into-sbl",
+      "purpose_class": "Legacy/transitional",
+      "readme_tier": 1
+    },
+    {
+      "path": "cli",
+      "purpose_class": "Dev-kit specialisation",
+      "readme_tier": 1
+    },
+    {
+      "path": "docs",
+      "purpose_class": "Dev-kit specialisation",
+      "readme_tier": 1
+    },
+    {
+      "path": "greenfield-install",
+      "purpose_class": "Framework SoT (mirror)",
+      "readme_tier": 1
+    },
+    {
+      "path": "packages",
+      "purpose_class": "Framework SoT",
+      "readme_tier": 1
+    },
+    {
+      "path": "portal",
+      "purpose_class": "Dev-kit specialisation",
+      "readme_tier": 1
+    },
+    {
+      "path": "scripts",
+      "purpose_class": "Dev-kit specialisation",
+      "readme_tier": 1
+    },
+    {
+      "path": "src",
+      "purpose_class": "Dev-kit specialisation",
+      "readme_tier": 1
+    },
+    {
+      "path": "temp",
+      "purpose_class": "Legacy/transitional",
+      "readme_tier": 1
+    },
+    {
+      "path": "tests",
+      "purpose_class": "Dev-kit specialisation",
+      "readme_tier": 1
+    }
+  ],
+  "entries": [
+    {
+      "path": ".",
+      "depth": 0,
+      "purpose_class": "Dev-kit specialisation",
+      "location_verdict": "Optimal",
+      "mirror": false,
+      "evidence_ref": "docs/maintenance/REPOSITORY-DIRECTORY-AUDIT.md"
+    },
+    {
+      "path": ".adk",
+      "depth": 1,
+      "purpose_class": "Operational",
+      "location_verdict": "Optimal",
+      "mirror": false,
+      "evidence_ref": "docs/maintenance/REPOSITORY-DIRECTORY-AUDIT.md"
+    },
+    {
+      "path": ".claude",
+      "depth": 1,
+      "purpose_class": "Dev-kit specialisation",
+      "location_verdict": "Optimal",
+      "mirror": false,
+      "evidence_ref": "docs/maintenance/REPOSITORY-DIRECTORY-AUDIT.md"
+    },
+    {
+      "path": ".cursor",
+      "depth": 1,
+      "purpose_class": "Dev-kit specialisation",
+      "location_verdict": "Optimal",
+      "mirror": false,
+      "evidence_ref": "docs/maintenance/REPOSITORY-DIRECTORY-AUDIT.md"
+    },
+    {
+      "path": ".cursor-plugin",
+      "depth": 1,
+      "purpose_class": "Operational",
+      "location_verdict": "Acceptable",
+      "mirror": false,
+      "evidence_ref": "docs/maintenance/REPOSITORY-DIRECTORY-AUDIT.md"
+    },
+    {
+      "path": ".github",
+      "depth": 1,
+      "purpose_class": "Operational",
+      "location_verdict": "Optimal",
+      "mirror": false,
+      "evidence_ref": "docs/maintenance/REPOSITORY-DIRECTORY-AUDIT.md"
+    },
+    {
+      "path": ".kanban-snapshots",
+      "depth": 1,
+      "purpose_class": "Operational",
+      "location_verdict": "Acceptable",
+      "mirror": false,
+      "evidence_ref": "docs/maintenance/REPOSITORY-DIRECTORY-AUDIT.md"
+    },
+    {
+      "path": ".migration-batches",
+      "depth": 1,
+      "purpose_class": "Legacy/transitional",
+      "location_verdict": "Suboptimal",
+      "mirror": false,
+      "evidence_ref": "docs/maintenance/REPOSITORY-DIRECTORY-AUDIT.md"
+    },
+    {
+      "path": ".rw",
+      "depth": 1,
+      "purpose_class": "Operational",
+      "location_verdict": "Acceptable",
+      "mirror": false,
+      "evidence_ref": "docs/maintenance/REPOSITORY-DIRECTORY-AUDIT.md"
+    },
+    {
+      "path": ".rw-ci-venv",
+      "depth": 1,
+      "purpose_class": "Unknown/orphan",
+      "location_verdict": "NEEDS_REVIEW",
+      "mirror": false,
+      "evidence_ref": "docs/maintenance/REPOSITORY-DIRECTORY-AUDIT.md"
+    },
+    {
+      "path": ".rw-snapshots",
+      "depth": 1,
+      "purpose_class": "Operational",
+      "location_verdict": "Acceptable",
+      "mirror": false,
+      "evidence_ref": "docs/maintenance/REPOSITORY-DIRECTORY-AUDIT.md"
+    },
+    {
+      "path": "adk-install-into-sbl",
+      "depth": 1,
+      "purpose_class": "Legacy/transitional",
+      "location_verdict": "Suboptimal",
+      "mirror": false,
+      "evidence_ref": "docs/maintenance/REPOSITORY-DIRECTORY-AUDIT.md"
+    },
+    {
+      "path": "cli",
+      "depth": 1,
+      "purpose_class": "Dev-kit specialisation",
+      "location_verdict": "Optimal",
+      "mirror": false,
+      "evidence_ref": "docs/maintenance/REPOSITORY-DIRECTORY-AUDIT.md"
+    },
+    {
+      "path": "docs",
+      "depth": 1,
+      "purpose_class": "Dev-kit specialisation",
+      "location_verdict": "Optimal",
+      "mirror": false,
+      "evidence_ref": "docs/maintenance/REPOSITORY-DIRECTORY-AUDIT.md"
+    },
+    {
+      "path": "greenfield-install",
+      "depth": 1,
+      "purpose_class": "Framework SoT (mirror)",
+      "location_verdict": "Optimal",
+      "mirror": true,
+      "evidence_ref": "docs/maintenance/REPOSITORY-DIRECTORY-AUDIT.md"
+    },
+    {
+      "path": "packages",
+      "depth": 1,
+      "purpose_class": "Framework SoT",
+      "location_verdict": "Optimal",
+      "mirror": false,
+      "evidence_ref": "docs/maintenance/REPOSITORY-DIRECTORY-AUDIT.md"
+    },
+    {
+      "path": "portal",
+      "depth": 1,
+      "purpose_class": "Dev-kit specialisation",
+      "location_verdict": "Optimal",
+      "mirror": false,
+      "evidence_ref": "docs/maintenance/REPOSITORY-DIRECTORY-AUDIT.md"
+    },
+    {
+      "path": "scripts",
+      "depth": 1,
+      "purpose_class": "Dev-kit specialisation",
+      "location_verdict": "Acceptable",
+      "mirror": false,
+      "evidence_ref": "docs/maintenance/REPOSITORY-DIRECTORY-AUDIT.md"
+    },
+    {
+      "path": "src",
+      "depth": 1,
+      "purpose_class": "Dev-kit specialisation",
+      "location_verdict": "Acceptable",
+      "mirror": false,
+      "evidence_ref": "docs/maintenance/REPOSITORY-DIRECTORY-AUDIT.md"
+    },
+    {
+      "path": "temp",
+      "depth": 1,
+      "purpose_class": "Legacy/transitional",
+      "location_verdict": "Suboptimal",
+      "mirror": false,
+      "evidence_ref": "docs/maintenance/REPOSITORY-DIRECTORY-AUDIT.md"
+    },
+    {
+      "path": "tests",
+      "depth": 1,
+      "purpose_class": "Dev-kit specialisation",
+      "location_verdict": "Optimal",
+      "mirror": false,
+      "evidence_ref": "docs/maintenance/REPOSITORY-DIRECTORY-AUDIT.md"
+    },
+    {
+      "path": ".adk/tmp",
+      "depth": 2,
+      "purpose_class": "Generated/vendor",
+      "location_verdict": "Acceptable",
+      "mirror": false,
+      "evidence_ref": "docs/maintenance/REPOSITORY-DIRECTORY-AUDIT.md"
+    },
+    {
+      "path": ".claude/commands",
+      "depth": 2,
+      "purpose_class": "Dev-kit specialisation",
+      "location_verdict": "Optimal",
+      "mirror": false,
+      "evidence_ref": "docs/maintenance/REPOSITORY-DIRECTORY-AUDIT.md"
+    },
+    {
+      "path": ".cursor/skills",
+      "depth": 2,
+      "purpose_class": "Dev-kit specialisation",
+      "location_verdict": "Optimal",
+      "mirror": false,
+      "evidence_ref": "docs/maintenance/REPOSITORY-DIRECTORY-AUDIT.md"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE",
+      "depth": 2,
+      "purpose_class": "Operational",
+      "location_verdict": "Optimal",
+      "mirror": false,
+      "evidence_ref": "docs/maintenance/REPOSITORY-DIRECTORY-AUDIT.md"
+    },
+    {
+      "path": ".github/workflows",
+      "depth": 2,
+      "purpose_class": "Operational",
+      "location_verdict": "Optimal",
+      "mirror": false,
+      "evidence_ref": "docs/maintenance/REPOSITORY-DIRECTORY-AUDIT.md"
+    },
+    {
+      "path": ".kanban-snapshots/20260615T224408Z",
+      "depth": 2,
+      "purpose_class": "Generated/vendor",
+      "location_verdict": "Acceptable",
+      "mirror": false,
+      "evidence_ref": "docs/maintenance/REPOSITORY-DIRECTORY-AUDIT.md"
+    },
+    {
+      "path": ".migration-batches/chunks",
+      "depth": 2,
+      "purpose_class": "Legacy/transitional",
+      "location_verdict": "Suboptimal",
+      "mirror": false,
+      "evidence_ref": "docs/maintenance/REPOSITORY-DIRECTORY-AUDIT.md"
+    },
+    {
+      "path": ".rw-ci-venv/bin",
+      "depth": 2,
+      "purpose_class": "Unknown/orphan",
+      "location_verdict": "NEEDS_REVIEW",
+      "mirror": false,
+      "evidence_ref": "docs/maintenance/REPOSITORY-DIRECTORY-AUDIT.md"
+    },
+    {
+      "path": ".rw-ci-venv/include",
+      "depth": 2,
+      "purpose_class": "Unknown/orphan",
+      "location_verdict": "NEEDS_REVIEW",
+      "mirror": false,
+      "evidence_ref": "docs/maintenance/REPOSITORY-DIRECTORY-AUDIT.md"
+    },
+    {
+      "path": ".rw-ci-venv/lib",
+      "depth": 2,
+      "purpose_class": "Unknown/orphan",
+      "location_verdict": "NEEDS_REVIEW",
+      "mirror": false,
+      "evidence_ref": "docs/maintenance/REPOSITORY-DIRECTORY-AUDIT.md"
+    },
+    {
+      "path": "adk-install-into-sbl/attempt-03",
+      "depth": 2,
+      "purpose_class": "Legacy/transitional",
+      "location_verdict": "Suboptimal",
+      "mirror": false,
+      "evidence_ref": "docs/maintenance/REPOSITORY-DIRECTORY-AUDIT.md"
+    },
+    {
+      "path": "adk-install-into-sbl/attempt-04",
+      "depth": 2,
+      "purpose_class": "Legacy/transitional",
+      "location_verdict": "Suboptimal",
+      "mirror": false,
+      "evidence_ref": "docs/maintenance/REPOSITORY-DIRECTORY-AUDIT.md"
+    },
+    {
+      "path": "adk-install-into-sbl/attempt-05",
+      "depth": 2,
+      "purpose_class": "Legacy/transitional",
+      "location_verdict": "Suboptimal",
+      "mirror": false,
+      "evidence_ref": "docs/maintenance/REPOSITORY-DIRECTORY-AUDIT.md"
+    },
+    {
+      "path": "adk-install-into-sbl/attempt-06",
+      "depth": 2,
+      "purpose_class": "Legacy/transitional",
+      "location_verdict": "Suboptimal",
+      "mirror": false,
+      "evidence_ref": "docs/maintenance/REPOSITORY-DIRECTORY-AUDIT.md"
+    },
+    {
+      "path": "adk-install-into-sbl/attempt-09",
+      "depth": 2,
+      "purpose_class": "Legacy/transitional",
+      "location_verdict": "Suboptimal",
+      "mirror": false,
+      "evidence_ref": "docs/maintenance/REPOSITORY-DIRECTORY-AUDIT.md"
+    },
+    {
+      "path": "adk-install-into-sbl/attempt-10",
+      "depth": 2,
+      "purpose_class": "Legacy/transitional",
+      "location_verdict": "Suboptimal",
+      "mirror": false,
+      "evidence_ref": "docs/maintenance/REPOSITORY-DIRECTORY-AUDIT.md"
+    },
+    {
+      "path": "adk-install-into-sbl/attempt-11",
+      "depth": 2,
+      "purpose_class": "Legacy/transitional",
+      "location_verdict": "Suboptimal",
+      "mirror": false,
+      "evidence_ref": "docs/maintenance/REPOSITORY-DIRECTORY-AUDIT.md"
+    },
+    {
+      "path": "adk-install-into-sbl/kanban-reference",
+      "depth": 2,
+      "purpose_class": "Legacy/transitional",
+      "location_verdict": "Suboptimal",
+      "mirror": false,
+      "evidence_ref": "docs/maintenance/REPOSITORY-DIRECTORY-AUDIT.md"
+    },
+    {
+      "path": "cli/backends",
+      "depth": 2,
+      "purpose_class": "Dev-kit specialisation",
+      "location_verdict": "Optimal",
+      "mirror": false,
+      "evidence_ref": "docs/maintenance/REPOSITORY-DIRECTORY-AUDIT.md"
+    },
+    {
+      "path": "cli/commands",
+      "depth": 2,
+      "purpose_class": "Dev-kit specialisation",
+      "location_verdict": "Optimal",
+      "mirror": false,
+      "evidence_ref": "docs/maintenance/REPOSITORY-DIRECTORY-AUDIT.md"
+    },
+    {
+      "path": "docs/adk-feedback",
+      "depth": 2,
+      "purpose_class": "Dev-kit specialisation",
+      "location_verdict": "Optimal",
+      "mirror": false,
+      "evidence_ref": "docs/maintenance/REPOSITORY-DIRECTORY-AUDIT.md"
+    },
+    {
+      "path": "docs/analysis",
+      "depth": 2,
+      "purpose_class": "Dev-kit specialisation",
+      "location_verdict": "Optimal",
+      "mirror": false,
+      "evidence_ref": "docs/maintenance/REPOSITORY-DIRECTORY-AUDIT.md"
+    },
+    {
+      "path": "docs/architecture",
+      "depth": 2,
+      "purpose_class": "Dev-kit specialisation",
+      "location_verdict": "Acceptable",
+      "mirror": false,
+      "evidence_ref": "docs/maintenance/REPOSITORY-DIRECTORY-AUDIT.md"
+    },
+    {
+      "path": "docs/book-project",
+      "depth": 2,
+      "purpose_class": "Dev-kit specialisation",
+      "location_verdict": "Optimal",
+      "mirror": false,
+      "evidence_ref": "docs/maintenance/REPOSITORY-DIRECTORY-AUDIT.md"
+    },
+    {
+      "path": "docs/changelog-and-release-notes",
+      "depth": 2,
+      "purpose_class": "Dev-kit specialisation",
+      "location_verdict": "Optimal",
+      "mirror": false,
+      "evidence_ref": "docs/maintenance/REPOSITORY-DIRECTORY-AUDIT.md"
+    },
+    {
+      "path": "docs/developer-tools",
+      "depth": 2,
+      "purpose_class": "Dev-kit specialisation",
+      "location_verdict": "Optimal",
+      "mirror": false,
+      "evidence_ref": "docs/maintenance/REPOSITORY-DIRECTORY-AUDIT.md"
+    },
+    {
+      "path": "docs/documentation",
+      "depth": 2,
+      "purpose_class": "Dev-kit specialisation",
+      "location_verdict": "Optimal",
+      "mirror": false,
+      "evidence_ref": "docs/maintenance/REPOSITORY-DIRECTORY-AUDIT.md"
+    },
+    {
+      "path": "docs/governance",
+      "depth": 2,
+      "purpose_class": "Dev-kit specialisation",
+      "location_verdict": "Optimal",
+      "mirror": false,
+      "evidence_ref": "docs/maintenance/REPOSITORY-DIRECTORY-AUDIT.md"
+    },
+    {
+      "path": "docs/guides",
+      "depth": 2,
+      "purpose_class": "Dev-kit specialisation",
+      "location_verdict": "Optimal",
+      "mirror": false,
+      "evidence_ref": "docs/maintenance/REPOSITORY-DIRECTORY-AUDIT.md"
+    },
+    {
+      "path": "docs/implementation-cycles",
+      "depth": 2,
+      "purpose_class": "Dev-kit specialisation",
+      "location_verdict": "Optimal",
+      "mirror": false,
+      "evidence_ref": "docs/maintenance/REPOSITORY-DIRECTORY-AUDIT.md"
+    },
+    {
+      "path": "docs/journals",
+      "depth": 2,
+      "purpose_class": "Operational",
+      "location_verdict": "Optimal",
+      "mirror": false,
+      "evidence_ref": "docs/maintenance/REPOSITORY-DIRECTORY-AUDIT.md"
+    },
+    {
+      "path": "docs/kanban",
+      "depth": 2,
+      "purpose_class": "Dev-kit specialisation",
+      "location_verdict": "Optimal",
+      "mirror": false,
+      "evidence_ref": "docs/maintenance/REPOSITORY-DIRECTORY-AUDIT.md"
+    },
+    {
+      "path": "docs/knowledge",
+      "depth": 2,
+      "purpose_class": "Dev-kit specialisation",
+      "location_verdict": "Optimal",
+      "mirror": false,
+      "evidence_ref": "docs/maintenance/REPOSITORY-DIRECTORY-AUDIT.md"
+    },
+    {
+      "path": "docs/maintainer",
+      "depth": 2,
+      "purpose_class": "Dev-kit specialisation",
+      "location_verdict": "Optimal",
+      "mirror": false,
+      "evidence_ref": "docs/maintenance/REPOSITORY-DIRECTORY-AUDIT.md"
+    },
+    {
+      "path": "docs/maintenance",
+      "depth": 2,
+      "purpose_class": "Dev-kit specialisation",
+      "location_verdict": "Optimal",
+      "mirror": false,
+      "evidence_ref": "docs/maintenance/REPOSITORY-DIRECTORY-AUDIT.md"
+    },
+    {
+      "path": "docs/project-management",
+      "depth": 2,
+      "purpose_class": "Legacy/transitional",
+      "location_verdict": "Suboptimal",
+      "mirror": false,
+      "evidence_ref": "docs/maintenance/REPOSITORY-DIRECTORY-AUDIT.md"
+    },
+    {
+      "path": "docs/release-notes",
+      "depth": 2,
+      "purpose_class": "Dev-kit specialisation",
+      "location_verdict": "Acceptable",
+      "mirror": false,
+      "evidence_ref": "docs/maintenance/REPOSITORY-DIRECTORY-AUDIT.md"
+    },
+    {
+      "path": "greenfield-install/packages",
+      "depth": 2,
+      "purpose_class": "Framework SoT (mirror)",
+      "location_verdict": "Optimal",
+      "mirror": true,
+      "evidence_ref": "docs/maintenance/REPOSITORY-DIRECTORY-AUDIT.md"
+    },
+    {
+      "path": "greenfield-install/tests",
+      "depth": 2,
+      "purpose_class": "Framework SoT (mirror)",
+      "location_verdict": "Optimal",
+      "mirror": true,
+      "evidence_ref": "docs/maintenance/REPOSITORY-DIRECTORY-AUDIT.md"
+    },
+    {
+      "path": "packages/dist",
+      "depth": 2,
+      "purpose_class": "Generated/vendor",
+      "location_verdict": "Suboptimal",
+      "mirror": false,
+      "evidence_ref": "docs/maintenance/REPOSITORY-DIRECTORY-AUDIT.md"
+    },
+    {
+      "path": "packages/frameworks",
+      "depth": 2,
+      "purpose_class": "Framework SoT",
+      "location_verdict": "Optimal",
+      "mirror": false,
+      "evidence_ref": "docs/maintenance/REPOSITORY-DIRECTORY-AUDIT.md"
+    },
+    {
+      "path": "portal/blog",
+      "depth": 2,
+      "purpose_class": "Dev-kit specialisation",
+      "location_verdict": "Optimal",
+      "mirror": false,
+      "evidence_ref": "docs/maintenance/REPOSITORY-DIRECTORY-AUDIT.md"
+    },
+    {
+      "path": "portal/docs",
+      "depth": 2,
+      "purpose_class": "Dev-kit specialisation",
+      "location_verdict": "Optimal",
+      "mirror": false,
+      "evidence_ref": "docs/maintenance/REPOSITORY-DIRECTORY-AUDIT.md"
+    },
+    {
+      "path": "portal/scripts",
+      "depth": 2,
+      "purpose_class": "Dev-kit specialisation",
+      "location_verdict": "Optimal",
+      "mirror": false,
+      "evidence_ref": "docs/maintenance/REPOSITORY-DIRECTORY-AUDIT.md"
+    },
+    {
+      "path": "portal/src",
+      "depth": 2,
+      "purpose_class": "Dev-kit specialisation",
+      "location_verdict": "Optimal",
+      "mirror": false,
+      "evidence_ref": "docs/maintenance/REPOSITORY-DIRECTORY-AUDIT.md"
+    },
+    {
+      "path": "portal/static",
+      "depth": 2,
+      "purpose_class": "Dev-kit specialisation",
+      "location_verdict": "Optimal",
+      "mirror": false,
+      "evidence_ref": "docs/maintenance/REPOSITORY-DIRECTORY-AUDIT.md"
+    },
+    {
+      "path": "scripts/cleanup",
+      "depth": 2,
+      "purpose_class": "Dev-kit specialisation",
+      "location_verdict": "Acceptable",
+      "mirror": false,
+      "evidence_ref": "docs/maintenance/REPOSITORY-DIRECTORY-AUDIT.md"
+    },
+    {
+      "path": "scripts/documentation",
+      "depth": 2,
+      "purpose_class": "Dev-kit specialisation",
+      "location_verdict": "Optimal",
+      "mirror": false,
+      "evidence_ref": "docs/maintenance/REPOSITORY-DIRECTORY-AUDIT.md"
+    },
+    {
+      "path": "scripts/frameworks",
+      "depth": 2,
+      "purpose_class": "Dev-kit specialisation",
+      "location_verdict": "Acceptable",
+      "mirror": false,
+      "evidence_ref": "docs/maintenance/REPOSITORY-DIRECTORY-AUDIT.md"
+    },
+    {
+      "path": "scripts/git-hooks",
+      "depth": 2,
+      "purpose_class": "Operational",
+      "location_verdict": "Optimal",
+      "mirror": false,
+      "evidence_ref": "docs/maintenance/REPOSITORY-DIRECTORY-AUDIT.md"
+    },
+    {
+      "path": "scripts/internal",
+      "depth": 2,
+      "purpose_class": "Dev-kit specialisation",
+      "location_verdict": "Optimal",
+      "mirror": false,
+      "evidence_ref": "docs/maintenance/REPOSITORY-DIRECTORY-AUDIT.md"
+    },
+    {
+      "path": "scripts/notion_push_payloads",
+      "depth": 2,
+      "purpose_class": "Legacy/transitional",
+      "location_verdict": "Suboptimal",
+      "mirror": false,
+      "evidence_ref": "docs/maintenance/REPOSITORY-DIRECTORY-AUDIT.md"
+    },
+    {
+      "path": "src/ai_dev_kit",
+      "depth": 2,
+      "purpose_class": "Dev-kit specialisation",
+      "location_verdict": "Optimal",
+      "mirror": false,
+      "evidence_ref": "docs/maintenance/REPOSITORY-DIRECTORY-AUDIT.md"
+    },
+    {
+      "path": "src/fynd_deals",
+      "depth": 2,
+      "purpose_class": "Legacy/transitional",
+      "location_verdict": "Suboptimal",
+      "mirror": false,
+      "evidence_ref": "docs/maintenance/REPOSITORY-DIRECTORY-AUDIT.md"
+    },
+    {
+      "path": "tests/cli",
+      "depth": 2,
+      "purpose_class": "Dev-kit specialisation",
+      "location_verdict": "Optimal",
+      "mirror": false,
+      "evidence_ref": "docs/maintenance/REPOSITORY-DIRECTORY-AUDIT.md"
+    },
+    {
+      "path": "tests/docs",
+      "depth": 2,
+      "purpose_class": "Dev-kit specialisation",
+      "location_verdict": "Optimal",
+      "mirror": false,
+      "evidence_ref": "docs/maintenance/REPOSITORY-DIRECTORY-AUDIT.md"
+    },
+    {
+      "path": "tests/fixtures",
+      "depth": 2,
+      "purpose_class": "Dev-kit specialisation",
+      "location_verdict": "Optimal",
+      "mirror": false,
+      "evidence_ref": "docs/maintenance/REPOSITORY-DIRECTORY-AUDIT.md"
+    },
+    {
+      "path": "tests/journal",
+      "depth": 2,
+      "purpose_class": "Dev-kit specialisation",
+      "location_verdict": "Optimal",
+      "mirror": false,
+      "evidence_ref": "docs/maintenance/REPOSITORY-DIRECTORY-AUDIT.md"
+    },
+    {
+      "path": "tests/kanban",
+      "depth": 2,
+      "purpose_class": "Dev-kit specialisation",
+      "location_verdict": "Optimal",
+      "mirror": false,
+      "evidence_ref": "docs/maintenance/REPOSITORY-DIRECTORY-AUDIT.md"
+    },
+    {
+      "path": "tests/release_state",
+      "depth": 2,
+      "purpose_class": "Dev-kit specialisation",
+      "location_verdict": "Optimal",
+      "mirror": false,
+      "evidence_ref": "docs/maintenance/REPOSITORY-DIRECTORY-AUDIT.md"
+    },
+    {
+      "path": "tests/rw_scenarios",
+      "depth": 2,
+      "purpose_class": "Dev-kit specialisation",
+      "location_verdict": "Optimal",
+      "mirror": false,
+      "evidence_ref": "docs/maintenance/REPOSITORY-DIRECTORY-AUDIT.md"
+    },
+    {
+      "path": "tests/tests",
+      "depth": 2,
+      "purpose_class": "Unknown/orphan",
+      "location_verdict": "Suboptimal",
+      "mirror": false,
+      "evidence_ref": "docs/maintenance/REPOSITORY-DIRECTORY-AUDIT.md"
+    },
+    {
+      "path": "tests/workflow",
+      "depth": 2,
+      "purpose_class": "Dev-kit specialisation",
+      "location_verdict": "Optimal",
+      "mirror": false,
+      "evidence_ref": "docs/maintenance/REPOSITORY-DIRECTORY-AUDIT.md"
+    },
+    {
+      "path": "tests/workflow-mgmt",
+      "depth": 2,
+      "purpose_class": "Dev-kit specialisation",
+      "location_verdict": "Acceptable",
+      "mirror": false,
+      "evidence_ref": "docs/maintenance/REPOSITORY-DIRECTORY-AUDIT.md"
+    },
+    {
+      "path": "tests/workflow_mgt",
+      "depth": 2,
+      "purpose_class": "Dev-kit specialisation",
+      "location_verdict": "Acceptable",
+      "mirror": false,
+      "evidence_ref": "docs/maintenance/REPOSITORY-DIRECTORY-AUDIT.md"
+    }
+  ]
+}

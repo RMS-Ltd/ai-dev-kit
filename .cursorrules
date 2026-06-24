@@ -788,12 +788,13 @@ If ICW detects implementation mode:
 1. **DO NOT** reimplement IPW, IDW, or RW steps inline — **delegate** to `.claude/commands/ipw.md`, `idw.md`, `rw.md` (via IDW `--rw` chain).
 2. **DO** execute MWF using the **intelligent agent-driven execution pattern** per `mwf.md`.
 3. **PARSE:** `E:S:T`, recipe (`delivery` | `ipw,idw,rw`), optional `--push` / `--art` (forward to IDW `--rw` leg).
-4. **v1 `delivery` recipe:** IPW when no linked IPP → `MWF CHAIN PAUSED` (exit plan mode) → `IDW E:S:T --rw` (+ forwarded flags).
-5. **Resume:** When linked IPP exists, skip IPW leg; run IDW `--rw` only.
-6. **Abort propagation:** Any leg `ABORTED` → **`MWF ABORTED (leg: IPW|IDW|RW)`** — no commit/tag from aborted chain.
-7. **DO NOT** add `IPW --rw` — superseded by MWF ([FR-124](docs/kanban/fbu/FR-124-meta-workflow-orchestration-composite-workflow-chains.md)).
+4. **Phase 0 (FR-137):** On `delivery` recipe, run `validate_mwf_delivery_preflight.py` before legs. Mismatch without `--art` → **`MWF ABORTED (preflight: RW intent)`** with `delivery --art` hint; no leg file mods.
+5. **v1 `delivery` recipe:** IPW when no linked IPP → `IDW E:S:T --rw` (+ forwarded flags); continuous orchestration (BR-102).
+6. **Resume:** When linked IPP exists, skip IPW leg; run IDW `--rw` only.
+7. **Abort propagation:** Leg `ABORTED` → **`MWF ABORTED (leg: IPW|IDW|RW)`** — no commit/tag from aborted chain.
+8. **DO NOT** add `IPW --rw` — superseded by MWF ([FR-124](docs/kanban/fbu/FR-124-meta-workflow-orchestration-composite-workflow-chains.md)).
 
-**Terminal states:** `MWF COMPLETE`, `MWF CHAIN PAUSED`, `MWF ABORTED (leg: …)`.
+**Terminal states:** `MWF COMPLETE`, `MWF CHAIN PAUSED`, `MWF ABORTED (preflight: RW intent)`, `MWF ABORTED (leg: …)`.
 
 **Reference:** `.claude/commands/mwf.md` · `packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/meta-workflow-agent-execution.md`
 

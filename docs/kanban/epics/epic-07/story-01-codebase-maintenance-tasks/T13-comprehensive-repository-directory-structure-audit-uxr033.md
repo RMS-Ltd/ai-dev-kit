@@ -9,15 +9,15 @@ housekeeping_policy: keep
 # Epic 7, Story 1, Task 13: Comprehensive repository directory structure audit
 
 **Task ID:** E07:S01:T13  
-**Status:** TODO  
+**Status:** ✅ COMPLETE (v0.7.1.13+3)  
 **Priority:** HIGH  
 **Estimated Effort:** Large (inventory + valuation matrix + maintainer sign-off)  
 **Created:** 2026-06-23  
-**Last updated:** 2026-06-23 (v0.7.1.13+0 — RW -k kanban init)  
-**Version Anchor:** v0.7.1.13+0  
+**Last updated:** 2026-06-24 (RW E07:S01:T13 --art @ v0.7.1.13+3)  
+**Version Anchor:** v0.7.1.13+3  
 **Code:** E07S01T13
 
-Publication Status: NOT_APPLICABLE (IPP required before investigation execution — see Approach)
+Publication Status: NOT_APPLICABLE (investigation complete; maintainer sign-off §4 @ 2026-06-24)
 
 ---
 
@@ -34,6 +34,7 @@ Deliver [UXR-033](../../../fbu/UXR-033-comprehensive-repository-directory-struct
 ## Source FR/BR/UXR
 
 - **[UXR-033](../../../fbu/UXR-033-comprehensive-repository-directory-structure-audit.md)** — requirements, rubric, and acceptance direction
+- **[FR-140](../../../fbu/FR-140-repository-information-architecture-steady-state-governance.md)** — program umbrella (steady-state IA governance; [E07:S01:T15](T15-repository-information-architecture-steady-state-governance-fr140.md))
 - **[FR-039](../../../fbu/FR-039-ai-dev-kit-project-review-and-legacy-clean-up.md)** — broader project review (coordinates; does not duplicate file-level execution)
 - **[UXR-013](../../../fbu/UXR-013-project-root-hygiene-and-legacy-docs-rationalization.md)** — root-only hygiene ([E07:S01:T10](T10-project-root-hygiene-and-legacy-docs-rationalization.md))
 - **[UXR-011](../../../fbu/UXR-011-kanban-naming-hygiene-and-directory-systematic-cleanup.md)** — kanban naming hygiene
@@ -45,7 +46,7 @@ Deliver [UXR-033](../../../fbu/UXR-033-comprehensive-repository-directory-struct
 - Current repository tree (all top-level and nested directories per IPP exclusion rules)
 - Prior inventories: [GOVERNANCE-REHOUSING-INVENTORY.md](../../../../governance/GOVERNANCE-REHOUSING-INVENTORY.md), [KANBAN-REHOUSING-INVENTORY.md](../../../../governance/KANBAN-REHOUSING-INVENTORY.md)
 - `rw-config.yaml`, `AGENTS.md`, framework package README boundaries
-- **IPP (planning):** TBD — run `IPW E07:S01:T13`
+- **IPP (planning):** [IPP-E07S01T13-comprehensive-repository-directory-structure-audit.md](../../../../implementation-cycles/IPP-E07S01T13-comprehensive-repository-directory-structure-audit.md)
 
 ---
 
@@ -53,13 +54,13 @@ Deliver [UXR-033](../../../fbu/UXR-033-comprehensive-repository-directory-struct
 
 | Phase | Output | Gate |
 | ----- | ------ | ---- |
-| **0 — IPW** | `IPP-E07S01T13-*.md` (investigation spec, rubric template, report path, exclusion list) | Blocks inventory |
-| **1 — Tree capture** | Deterministic directory inventory (machine-assist + human review) | Blocks valuation |
-| **2 — Valuation matrix** | Per-directory rows: purpose class, purpose statement, location verdict, evidence, ripple risk | Blocks recommendations |
-| **3 — Wave plan** | Grouped recommendations: keep · relocate · consolidate · archive · remove | Blocks sign-off |
-| **4 — Sign-off** | Maintainer approval on audit report | Blocks structural IDW on any mover task |
+| **0 — IPW** | `IPP-E07S01T13-*.md` (investigation spec, rubric template, report path, exclusion list) | ✅ Complete |
+| **1 — Tree capture** | Deterministic directory inventory (machine-assist + human review) | ✅ Complete — see [REPOSITORY-DIRECTORY-AUDIT.md](../../../../maintenance/REPOSITORY-DIRECTORY-AUDIT.md) §1 |
+| **2 — Valuation matrix** | Per-directory rows: purpose class, purpose statement, location verdict, evidence, ripple risk | ✅ Complete — 83 depth-0..2 rows §2 |
+| **3 — Wave plan** | Grouped recommendations: keep · relocate · consolidate · archive · remove | ✅ Complete — §3 |
+| **4 — Sign-off** | Maintainer approval on audit report | ✅ Complete — §4 @ 2026-06-24 |
 
-**Audit report housing (default proposal):** `docs/maintenance/REPOSITORY-DIRECTORY-AUDIT.md` or `docs/governance/REPOSITORY-DIRECTORY-AUDIT.md` — finalize in IPW.
+**Audit report housing (IPP-finalized):** [`docs/maintenance/REPOSITORY-DIRECTORY-AUDIT.md`](../../../../maintenance/REPOSITORY-DIRECTORY-AUDIT.md) — see [IPP-E07S01T13](../../../../implementation-cycles/IPP-E07S01T13-comprehensive-repository-directory-structure-audit.md) §6.
 
 ### Per-directory valuation rubric (minimum columns)
 
@@ -77,13 +78,13 @@ Deliver [UXR-033](../../../fbu/UXR-033-comprehensive-repository-directory-struct
 
 ## Acceptance Criteria
 
-- [ ] **AC0:** IPP linked from this task before investigation execution.
-- [ ] **AC1:** Complete directory inventory captured with documented exclusion rules (vendor/generated trees).
-- [ ] **AC2:** Every **non-excluded** directory has a valuation row with all rubric columns populated or explicitly marked `NEEDS_REVIEW`.
-- [ ] **AC3:** Framework SoT vs dev-kit-local vs `greenfield-install/` mirror classification documented for relevant subtrees.
-- [ ] **AC4:** Wave plan cross-references existing tasks (T10, T11, T12, UXR-032, FR-039) to avoid duplicate movers.
-- [ ] **AC5:** Maintainer sign-off recorded on audit report before any structural implementation is authorized.
-- [ ] **AC6:** UXR-033 status reconciled; four-surface RW Step 7 on release.
+- [x] **AC0:** IPP linked from this task before investigation execution.
+- [x] **AC1:** Complete directory inventory captured with documented exclusion rules (vendor/generated trees).
+- [x] **AC2:** Every **non-excluded** directory at depth ≤2 has a valuation row with all rubric columns or `NEEDS_REVIEW`.
+- [x] **AC3:** Framework SoT vs dev-kit-local vs `greenfield-install/` mirror classification documented for relevant subtrees.
+- [x] **AC4:** Wave plan cross-references existing tasks (T10, T11, T12, UXR-032, FR-039, T14) to avoid duplicate movers.
+- [x] **AC5:** Maintainer sign-off recorded on audit report before any structural implementation is authorized.
+- [x] **AC6:** UXR-033 status reconciled; four-surface RW Step 7 on release.
 
 ---
 
@@ -130,22 +131,31 @@ Deliver [UXR-033](../../../fbu/UXR-033-comprehensive-repository-directory-struct
 **Related FR:**
 
 - **[FR-039](../../../fbu/FR-039-ai-dev-kit-project-review-and-legacy-clean-up.md)** — **Coordinates With** — Broader cleanup program; audit feeds prioritization.
+- **[FR-140](../../../fbu/FR-140-repository-information-architecture-steady-state-governance.md)** / **[E07:S01:T15](T15-repository-information-architecture-steady-state-governance-fr140.md)** — **Governs** — Program umbrella for steady-state IA; this task is **cartography leg A** (directories).
 
 ---
 
 ## Next Actions
 
-- [ ] Run `IPW E07:S01:T13` in plan mode.
-- [ ] Produce `IPP-E07S01T13-*.md` under `docs/implementation-cycles/`.
-- [ ] Execute investigation phases 1–4 after IPP approval.
-- [ ] Obtain maintainer sign-off on audit report.
+- [x] Run `IPW E07:S01:T13` in plan mode.
+- [x] Produce `IPP-E07S01T13-comprehensive-repository-directory-structure-audit.md` under `docs/implementation-cycles/`.
+- [x] Execute investigation phases 1–3 — [REPOSITORY-DIRECTORY-AUDIT.md](../../../../maintenance/REPOSITORY-DIRECTORY-AUDIT.md) published.
+- [x] Obtain maintainer sign-off on audit report (§4) — **2026-06-24**
+- [x] `RW E07:S01:T13 --art` — v0.7.1.13+3
 - [x] Run `RW E07:S01:T13` / `RW -k E07:S01:T13 --art --dpz` — kanban init @ v0.7.1.13+0
 
 ---
 
 ## References
 
+- [IPP-E07S01T13 — Investigation plan](../../../../implementation-cycles/IPP-E07S01T13-comprehensive-repository-directory-structure-audit.md)
+- [REPOSITORY-DIRECTORY-AUDIT.md](../../../../maintenance/REPOSITORY-DIRECTORY-AUDIT.md)
 - [UXR-033](../../../fbu/UXR-033-comprehensive-repository-directory-structure-audit.md)
-- [GOVERNANCE-REHOUSING-INVENTORY.md](../../../../governance/GOVERNANCE-REHOUSING-INVENTORY.md)
-- [KANBAN-REHOUSING-INVENTORY.md](../../../../governance/KANBAN-REHOUSING-INVENTORY.md)
+- [E07:S01:T14 — Paired file-level audit](T14-comprehensive-repository-file-level-audit-uxr034.md) / [UXR-034](../../../fbu/UXR-034-comprehensive-repository-file-level-audit-within-audited-directories.md)
+- [FR-039](../../../fbu/FR-039-ai-dev-kit-project-review-and-legacy-clean-up.md)
+- [FR-140](../../../fbu/FR-140-repository-information-architecture-steady-state-governance.md) / [E07:S01:T15](T15-repository-information-architecture-steady-state-governance-fr140.md)
+- [UXR-013](../../../fbu/UXR-013-project-root-hygiene-and-legacy-docs-rationalization.md) / [E07:S01:T10](T10-project-root-hygiene-and-legacy-docs-rationalization.md)
+- [UXR-032](../../../fbu/UXR-032-fr-br-directory-rename-to-fbu.md)
+- [GOVERNANCE-REHOUSING-INVENTORY.md](../../../../governance/GOVERNANCE-REHOUSING-INVENTORY.md) (FR-101 precedent)
+- [KANBAN-REHOUSING-INVENTORY.md](../../../../governance/KANBAN-REHOUSING-INVENTORY.md) (FR-118 precedent)
 - [ADR-026](../../../../architecture/standards-and-adrs/ADR-026-git-internal-maintainer-kb-fr121.md)

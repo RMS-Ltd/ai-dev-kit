@@ -9,15 +9,15 @@ housekeeping_policy: keep
 # Epic 7, Story 1, Task 14: Comprehensive repository file-level audit within audited directories
 
 **Task ID:** E07:S01:T14  
-**Status:** TODO  
+**Status:** ✅ COMPLETE (v0.7.1.14+1)  
 **Priority:** HIGH  
 **Estimated Effort:** Very large (scoped file inventory + valuation matrix + maintainer sign-off)  
 **Created:** 2026-06-23  
-**Last updated:** 2026-06-23 (v0.7.1.14+0 — RW -k kanban init)  
-**Version Anchor:** v0.7.1.14+0  
+**Last updated:** 2026-06-24 (RW E07:S01:T14 --art @ v0.7.1.14+1)  
+**Version Anchor:** v0.7.1.14+1  
 **Code:** E07S01T14
 
-Publication Status: NOT_APPLICABLE (IPP required before investigation execution — see Approach)
+Publication Status: NOT_APPLICABLE (investigation complete; maintainer sign-off §4 @ 2026-06-24)
 
 ---
 
@@ -36,6 +36,7 @@ Deliver [UXR-034](../../../fbu/UXR-034-comprehensive-repository-file-level-audit
 - **[UXR-034](../../../fbu/UXR-034-comprehensive-repository-file-level-audit-within-audited-directories.md)** — requirements, rubric, and acceptance direction
 - **[UXR-033](../../../fbu/UXR-033-comprehensive-repository-directory-structure-audit.md)** — **paired directory audit** (scope authority; bidirectional contextual awareness)
 - **[FR-039](../../../fbu/FR-039-ai-dev-kit-project-review-and-legacy-clean-up.md)** — broader project review (coordinates; does not duplicate execution)
+- **[FR-140](../../../fbu/FR-140-repository-information-architecture-steady-state-governance.md)** — **program umbrella** (steady-state IA governance; T14 cartography leg; [E07:S01:T15](T15-repository-information-architecture-steady-state-governance-fr140.md))
 - **[UXR-013](../../../fbu/UXR-013-project-root-hygiene-and-legacy-docs-rationalization.md)** — root-only file hygiene ([E07:S01:T10](T10-project-root-hygiene-and-legacy-docs-rationalization.md))
 
 ---
@@ -46,7 +47,7 @@ Deliver [UXR-034](../../../fbu/UXR-034-comprehensive-repository-file-level-audit
 - Current repository file tree within in-scope directories
 - Prior inventories: [GOVERNANCE-REHOUSING-INVENTORY.md](../../../../governance/GOVERNANCE-REHOUSING-INVENTORY.md), [KANBAN-REHOUSING-INVENTORY.md](../../../../governance/KANBAN-REHOUSING-INVENTORY.md)
 - `rw-config.yaml`, `AGENTS.md`, framework package README boundaries
-- **IPP (planning):** TBD — run `IPW E07:S01:T14`
+- **IPP (planning):** [`IPP-E07S01T14-comprehensive-repository-file-level-audit.md`](../../../../implementation-cycles/IPP-E07S01T14-comprehensive-repository-file-level-audit.md) — IPW complete @ 2026-06-23
 
 ---
 
@@ -54,14 +55,14 @@ Deliver [UXR-034](../../../fbu/UXR-034-comprehensive-repository-file-level-audit
 
 | Phase | Output | Gate |
 | ----- | ------ | ---- |
-| **0 — IPW** | `IPP-E07S01T14-*.md` (investigation spec, rubric template, report path, scope import from T13) | Blocks file inventory |
-| **1 — Scope import** | In-scope directory list + exclusions imported from UXR-033 audit report | Blocks capture |
-| **2 — File capture** | Per-directory deterministic file inventory (machine-assist + human review) | Blocks valuation |
-| **3 — Valuation matrix** | Per-file rows: purpose class, purpose statement, location verdict, evidence, reference touch, parent-directory alignment | Blocks recommendations |
-| **4 — Wave plan** | Grouped file recommendations: keep · relocate · merge · archive · remove | Blocks sign-off |
-| **5 — Sign-off** | Maintainer approval on file audit report; rollup feedback to T13 where applicable | Blocks structural IDW on mover tasks |
+| **0 — IPW** | `IPP-E07S01T14-*.md` (investigation spec, rubric template, report path, scope import from T13) | ✅ Complete |
+| **1 — Scope import** | In-scope directory list + exclusions imported from UXR-033 audit report | ✅ Complete — see [REPOSITORY-FILE-AUDIT.md](../../../../maintenance/REPOSITORY-FILE-AUDIT.md) §0 |
+| **2 — File capture** | Per-directory deterministic file inventory (machine-assist + human review) | ✅ Complete — §1; governor + 4 sub-agents @ 2026-06-24 |
+| **3 — Valuation matrix** | Per-file rows: purpose class, purpose statement, location verdict, evidence, reference touch, parent-directory alignment | ✅ Complete — 572 rows §2 |
+| **4 — Wave plan** | Grouped file recommendations: keep · relocate · merge · archive · remove | ✅ Complete — §3 |
+| **5 — Sign-off** | Maintainer approval on file audit report; rollup feedback to T13 where applicable | ✅ Complete — §4 @ 2026-06-24 |
 
-**Audit report housing (default proposal):** `docs/maintenance/REPOSITORY-FILE-AUDIT.md` or `docs/governance/REPOSITORY-FILE-AUDIT.md` — finalize in IPW. Must cross-link to UXR-033 directory audit report.
+**Audit report housing (IPP-finalized):** [`docs/maintenance/REPOSITORY-FILE-AUDIT.md`](../../../../maintenance/REPOSITORY-FILE-AUDIT.md) — see [IPP-E07S01T14](../../../../implementation-cycles/IPP-E07S01T14-comprehensive-repository-file-level-audit.md) §6.
 
 ### Per-file valuation rubric (minimum columns)
 
@@ -81,14 +82,14 @@ Deliver [UXR-034](../../../fbu/UXR-034-comprehensive-repository-file-level-audit
 
 ## Acceptance Criteria
 
-- [ ] **AC0:** IPP linked from this task before investigation execution.
-- [ ] **AC1:** Scope imported from UXR-033 / T13 with documented exclusions; no file valuation outside audited directories without explicit maintainer exception.
-- [ ] **AC2:** Every **non-excluded** file in in-scope directories has a valuation row with all rubric columns populated or explicitly marked `NEEDS_REVIEW`.
-- [ ] **AC3:** Duplicate/mirror files across `packages/` and `greenfield-install/` documented with SoT pointer per pair where applicable.
-- [ ] **AC4:** Wave plan cross-references T10, T13, UXR-032, FR-039 to avoid duplicate movers.
-- [ ] **AC5:** Maintainer sign-off recorded on file audit report before any structural implementation is authorized.
-- [ ] **AC6:** UXR-034 status reconciled; four-surface RW Step 7 on release.
-- [ ] **AC7:** Rollup summary fed back to UXR-033 / T13 (orphan counts, hotspot paths) where T13 sign-off is still open.
+- [x] **AC0:** IPP linked from this task before investigation execution.
+- [x] **AC1:** Scope imported from UXR-033 / T13 with documented exclusions; no file valuation outside audited directories without explicit maintainer exception.
+- [x] **AC2:** Every **non-excluded** file in in-scope directories has a valuation row with all rubric columns populated or explicitly marked `NEEDS_REVIEW` / class summary per RNF6.
+- [x] **AC3:** Duplicate/mirror files across `packages/` and `greenfield-install/` documented with SoT pointer per pair where applicable.
+- [x] **AC4:** Wave plan cross-references T10, T13, UXR-032, FR-039 to avoid duplicate movers.
+- [x] **AC5:** Maintainer sign-off recorded on file audit report before any structural implementation is authorized.
+- [x] **AC6:** UXR-034 status reconciled; four-surface RW Step 7 on release.
+- [x] **AC7:** Rollup summary fed back to UXR-033 / T13 (orphan counts, hotspot paths) where T13 sign-off is still open.
 
 ---
 
@@ -108,8 +109,9 @@ Deliver [UXR-034](../../../fbu/UXR-034-comprehensive-repository-file-level-audit
 
 **Depends On:**
 
-- [UXR-033](../../../fbu/UXR-033-comprehensive-repository-directory-structure-audit.md) / [E07:S01:T13](T13-comprehensive-repository-directory-structure-audit-uxr033.md) — directory audit baseline (authoritative scope)
-- IPW package for `E07:S01:T14`
+- [UXR-033](../../../fbu/UXR-033-comprehensive-repository-directory-structure-audit.md) / [E07:S01:T13](T13-comprehensive-repository-directory-structure-audit-uxr033.md) — directory audit baseline (authoritative scope) — **satisfied** @ [`REPOSITORY-DIRECTORY-AUDIT.md`](../../../../maintenance/REPOSITORY-DIRECTORY-AUDIT.md) v0.7.1.13+1
+- [FR-140](../../../fbu/FR-140-repository-information-architecture-steady-state-governance.md) — program umbrella + **T14 release gate** (FR-140-F13): investigation may proceed; structural movers still gated
+- IPW package for `E07:S01:T14` — **satisfied** @ [`IPP-E07S01T14`](../../../../implementation-cycles/IPP-E07S01T14-comprehensive-repository-file-level-audit.md)
 
 **Blocks:**
 
@@ -126,6 +128,10 @@ Deliver [UXR-034](../../../fbu/UXR-034-comprehensive-repository-file-level-audit
 
 ## Cross-Wiring
 
+**Planning artifact:**
+
+- **[IPP-E07S01T14: Comprehensive repository file-level audit](../../../../implementation-cycles/IPP-E07S01T14-comprehensive-repository-file-level-audit.md)** — **Governs** — Investigation spec, rubric, report housing, capture waves.
+
 **Associated UXR:**
 
 - **[UXR-034: Comprehensive repository file-level audit within audited directories](../../../fbu/UXR-034-comprehensive-repository-file-level-audit-within-audited-directories.md)** — **Informs** — Defines file investigation scope and rubric.
@@ -134,21 +140,26 @@ Deliver [UXR-034](../../../fbu/UXR-034-comprehensive-repository-file-level-audit
 **Related FR:**
 
 - **[FR-039](../../../fbu/FR-039-ai-dev-kit-project-review-and-legacy-clean-up.md)** — **Coordinates With** — Broader cleanup program; file audit feeds prioritization.
+- **[FR-140](../../../fbu/FR-140-repository-information-architecture-steady-state-governance.md)** — **Governs** — Program umbrella; file cartography leg; aggregation map for deconflicted waves.
 
 ---
 
 ## Next Actions
 
-- [ ] Run `IPW E07:S01:T14` in plan mode (after or in parallel with T13 directory baseline — document assumption).
-- [ ] Produce `IPP-E07S01T14-*.md` under `docs/implementation-cycles/`.
-- [ ] Execute investigation phases 1–5 after IPP approval and T13 scope import.
-- [ ] Obtain maintainer sign-off on file audit report.
+- [x] Run `IPW E07:S01:T14` in plan mode — **complete** @ 2026-06-23 ([IPP-E07S01T14](../../../implementation-cycles/IPP-E07S01T14-comprehensive-repository-file-level-audit.md)).
+- [x] Produce `IPP-E07S01T14-*.md` under `docs/implementation-cycles/`.
+- [x] Execute investigation phases 1–5 after **`IDW E07:S01:T14`** authorization — **complete** @ 2026-06-24 ([REPOSITORY-FILE-AUDIT.md](../../../../maintenance/REPOSITORY-FILE-AUDIT.md); sign-off §4 @ 2026-06-24).
+- [x] Obtain maintainer sign-off on file audit report.
+- [x] `RW E07:S01:T14 --art` — v0.7.1.14+1
 - [x] Run `RW -k E07:S01:T14` / `RW E07:S01:T14 --art --dpz` — kanban init @ v0.7.1.14+0
 
 ---
 
 ## References
 
+- [IPP-E07S01T14 — Planning package](../../../implementation-cycles/IPP-E07S01T14-comprehensive-repository-file-level-audit.md)
+- [REPOSITORY-FILE-AUDIT.md](../../../../maintenance/REPOSITORY-FILE-AUDIT.md) — **primary investigation deliverable**
+- [REPOSITORY-DIRECTORY-AUDIT.md](../../../../maintenance/REPOSITORY-DIRECTORY-AUDIT.md) — T13 scope authority
 - [UXR-034](../../../fbu/UXR-034-comprehensive-repository-file-level-audit-within-audited-directories.md)
 - [UXR-033](../../../fbu/UXR-033-comprehensive-repository-directory-structure-audit.md)
 - [GOVERNANCE-REHOUSING-INVENTORY.md](../../../../governance/GOVERNANCE-REHOUSING-INVENTORY.md)

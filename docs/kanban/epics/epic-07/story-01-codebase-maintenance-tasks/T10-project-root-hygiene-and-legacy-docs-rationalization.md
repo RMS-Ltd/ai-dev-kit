@@ -94,6 +94,7 @@ Audit and rationalize repository root artifacts to reduce clutter, improve first
 
 - **[UXR-013: Project root hygiene and legacy docs rationalization](../../../fbu/UXR-013-project-root-hygiene-and-legacy-docs-rationalization.md)** - **Relationship Type:** Informs - **Context:** Captures user-reported pain and defines UX acceptance direction for root cleanup.
 - **[FR-039: AI Dev Kit project review and legacy clean-up](../../../fbu/FR-039-ai-dev-kit-project-review-and-legacy-clean-up.md)** - **Relationship Type:** Coordinates With - **Context:** Broader repository cleanup context that this task narrows to root-level hygiene.
+- **[FR-140: Repository information architecture steady-state governance](../../../fbu/FR-140-repository-information-architecture-steady-state-governance.md)** - **Relationship Type:** Coordinates With - **Context:** Program umbrella; root hygiene is a subset of file cartography ([E07:S01:T14](T14-comprehensive-repository-file-level-audit-uxr034.md)).
 - **[FR-101: Consolidate governance under docs/governance/](../../../fbu/FR-101-consolidate-governance-under-docs-governance.md)** — **Coordinates With** — [E07:S01:T11](T11-consolidate-governance-under-docs-governance-fr101.md) rehouses policies under `docs/governance/`; avoid conflicting root moves.
 
 **Cross-Wiring Notes:**

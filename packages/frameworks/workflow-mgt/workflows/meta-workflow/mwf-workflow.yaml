@@ -5,7 +5,7 @@ workflow:
   description: >
     Orchestrate composite workflow chains by delegating to encapsulated atomic
     workflows. v1 delivery recipe: IPW → IDW --rw (continuous; BR-102 sub-agent delegation).
-  version: "1.1.0"
+  version: "1.2.0"
 
   triggers:
     - "MWF"
@@ -22,6 +22,10 @@ workflow:
   recipes:
     delivery:
       aliases: ["ipw,idw,rw"]
+      preflight:
+        rw_task_intent: validate_mwf_delivery_preflight.py
+        when: before_first_leg
+        abort_token: "MWF ABORTED (preflight: RW intent)"
       legs:
         - workflow: ipw
           when: no_linked_ipp

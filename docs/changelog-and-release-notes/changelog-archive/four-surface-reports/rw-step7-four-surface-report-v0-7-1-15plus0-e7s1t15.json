@@ -1,0 +1,28 @@
+{
+  "contract": "FR-092",
+  "invocation_context": "rw_step_7",
+  "release_scope": "E07:S01:T15",
+  "internal_version": "0.7.1.15+0",
+  "semver": "0.4.1214+0",
+  "timestamp_utc": "2026-06-23T14:32:04Z",
+  "surfaces": {
+    "task_doc": {
+      "touched": true,
+      "paths": [
+        "docs/kanban/epics/epic-07/story-01-codebase-maintenance-tasks/T15-repository-information-architecture-steady-state-governance-fr140.md"
+      ]
+    },
+    "fbu_doc": {
+      "touched": true,
+      "paths": [
+        "docs/kanban/fbu/FR-140-repository-information-architecture-steady-state-governance.md"
+      ]
+    },
+    "kboard": {
+      "touched": true,
+      "paths": [
+        "docs/kanban/kboard.md"
+      ]
+    }
+  }
+}

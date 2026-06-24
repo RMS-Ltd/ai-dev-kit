@@ -31,6 +31,7 @@ Single navigation entry for **book-active** governance: Kanban rules, versioning
 - [specification-and-planning-artifacts-policy.md](standards/specification-and-planning-artifacts-policy.md)
 - [dev-kit-ipw-ipp-vs-icw-artifacts.md](standards/dev-kit-ipw-ipp-vs-icw-artifacts.md)
 - [adopter-public-documentation-authoring.md](standards/adopter-public-documentation-authoring.md) — BR-068 / FR-114 portal link + greenfield mirror gates
+- [repository-information-architecture-policy.md](standards/repository-information-architecture-policy.md) — FR-140 steady-state repo layout (ADR-033)
 
 ### Locale and translation (FR-006 / Epic 21)
 

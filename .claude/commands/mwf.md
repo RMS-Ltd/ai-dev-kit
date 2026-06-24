@@ -45,9 +45,9 @@ MWF is a **meta-workflow orchestrator**. It **delegates** each leg to existing c
 | 1 (when needed) | IPW | `.claude/commands/ipw.md` |
 | 2 | IDW `--rw` | `.claude/commands/idw.md` |
 
-**Terminal states:** `MWF COMPLETE`, `MWF ABORTED (leg: IPW|IDW|RW)`, `MWF CHAIN PAUSED` (narrow — see below).
+**Terminal states:** `MWF COMPLETE`, `MWF ABORTED (preflight: RW intent)`, `MWF ABORTED (leg: IPW|IDW|RW)`, `MWF CHAIN PAUSED` (narrow — see below).
 
-**Abort propagation:** Any leg `ABORTED` terminates the chain; name the failing leg. No partial RW commit/tag from an aborted chain.
+**Abort propagation:** Preflight or leg `ABORTED` terminates the chain; name the failing phase/leg. No partial RW commit/tag from an aborted chain.
 
 ### Sub-agent leg delegation (BR-102)
 
@@ -81,6 +81,22 @@ Execute IDW {E:S:T} --rw [--art] [--push] per .claude/commands/idw.md. End with 
 ---
 
 ## Recipe: `delivery` (v1)
+
+### Phase 0 — RW intent preflight (FR-137)
+
+**After** argument parse and **before** Leg 1 (IPW) or resume-only Leg 2:
+
+```bash
+python "packages/frameworks/workflow-mgt/scripts/validation/validate_mwf_delivery_preflight.py" \
+  --requested "<parsed_id>" [--art]
+```
+
+- Pass `--art` to the preflight script **only when** `--art` is present on the MWF trigger.
+- **Exit 0** — proceed to leg selection below.
+- **Exit non-zero without `--art`** — **`MWF ABORTED (preflight: RW intent)`** — print validator output and re-invoke hint `MWF E##:S##:T## delivery --art`. **No** IPW, IDW, or RW file modifications.
+- **Exit non-zero with `--art`** — abort; resolve validator error before retrying.
+
+This is **orchestrator-scoped** (not RW Step 1). Reuses `validate_rw_task_intent.py` semantics (BR-056). **No implicit `--art`.**
 
 ### Leg selection (resume semantics)
 
@@ -132,7 +148,9 @@ Create a TODO list for orchestration phases. Execute continuously — **do not**
 
 Execute `ANALYZE → DETERMINE → EXECUTE → VALIDATE → PROCEED` for each phase.
 
-### Phase 0 — Parse and resolve recipe
+### Phase 0 — Parse, resolve recipe, and RW intent preflight (FR-137)
+
+Run `validate_mwf_delivery_preflight.py` per recipe §Phase 0 above. Abort on non-zero without `--art`.
 
 ### Phase 1 — Determine legs (IPP resume semantics)
 
@@ -148,7 +166,7 @@ Report `MWF COMPLETE` or abort reason.
 
 ## Abort / Completion Protocol
 
-- Never leave MWF ambiguous — end in **`MWF COMPLETE`**, **`MWF CHAIN PAUSED`** (narrow), or **`MWF ABORTED (leg: …)`**.
+- Never leave MWF ambiguous — end in **`MWF COMPLETE`**, **`MWF CHAIN PAUSED`** (narrow), **`MWF ABORTED (preflight: RW intent)`**, or **`MWF ABORTED (leg: …)`**.
 - MWF does **not** commit, tag, or bump version — RW owns release surfaces (via IDW `--rw` chain).
 - Do **not** add `IPW --rw` — use MWF ([FR-124](docs/kanban/fbu/FR-124-meta-workflow-orchestration-composite-workflow-chains.md)).
 

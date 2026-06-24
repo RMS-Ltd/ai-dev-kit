@@ -9,14 +9,16 @@ housekeeping_policy: keep
 # E02:S03:T13 — MWF `delivery` RW intent preflight (FR-137)
 
 **Task ID:** E02:S03:T13  
-**Status:** 📋 TODO (kanban-init @ **v0.2.3.13+0**)  
-**Version Anchor:** v0.2.3.13+0  
+**Status:** ✅ COMPLETE (**v0.2.3.13+1**)  
+**Version Anchor:** v0.2.3.13+1  
 **Priority:** HIGH  
 **Created:** 2026-06-17  
-**Last updated:** 2026-06-17 (v0.2.3.13+0 – Kanban documentation setup)  
+**Last updated:** 2026-06-24 (v0.2.3.13+1 — MWF delivery FR-137 shipped)  
 **Code:** E02S03T13
 
 **Upstream:** [FR-137 — MWF delivery RW intent preflight and explicit `--art` forwarding](../../../fbu/FR-137-mwf-delivery-rw-intent-preflight-art-forwarding.md)
+
+**Planning:** [IPP-E02S03T13-mwf-delivery-rw-intent-preflight-fr137.md](../../../../implementation-cycles/IPP-E02S03T13-mwf-delivery-rw-intent-preflight-fr137.md)
 
 **Related:** [T09 — MWF v1 (FR-124)](T09-ipw-full-delivery-chain-idf-rw-fr123.md) · [T11 — MWF sub-agent delegation (BR-102)](T11-mwf-subagent-leg-delegation-br102.md) · [T12 — Environment-aware execution (FR-128)](T12-environment-aware-workflow-execution-fr128.md) · [BR-056](../../../fbu/BR-056-rw-ambiguous-task-identifier-typo-risk.md) · [FR-124](../../../fbu/FR-124-meta-workflow-orchestration-composite-workflow-chains.md)
 
@@ -42,6 +44,7 @@ Observed: `MWF E03:S02:T15 delivery` completed IPW + IDW, then `MWF ABORTED (leg
 ## Input
 
 - [FR-137](../../../fbu/FR-137-mwf-delivery-rw-intent-preflight-art-forwarding.md)
+- [IPP-E02S03T13](../../../../implementation-cycles/IPP-E02S03T13-mwf-delivery-rw-intent-preflight-fr137.md)
 - [`.claude/commands/mwf.md`](../../../../../.claude/commands/mwf.md)
 - [meta-workflow-agent-execution.md](../../../../../packages/frameworks/workflow-mgt/KB/Documentation/Developer_Docs/vwmp/meta-workflow-agent-execution.md)
 - [validate_rw_task_intent.py](../../../../../packages/frameworks/workflow-mgt/scripts/validation/validate_rw_task_intent.py)
@@ -63,11 +66,20 @@ Observed: `MWF E03:S02:T15 delivery` completed IPW + IDW, then `MWF ABORTED (leg
 
 ## Acceptance Criteria
 
-- [ ] **AC1:** Mismatch + no `--art` → abort before IPW; message includes `MWF … delivery --art` hint.
-- [ ] **AC2:** Mismatch + `--art` on MWF → full chain including RW Step 1d pass.
-- [ ] **AC3:** Aligned `version.py` → no preflight abort; behavior unchanged from pre-FR-137.
-- [ ] **AC4:** FR-137 ↔ T13 wired; RW version anchor on ship.
-- [ ] **AC5:** E03:S02:T15-style scenario recorded in task verification notes or automated test.
+- [x] **AC1:** Mismatch + no `--art` → abort before IPW; message includes `MWF … delivery --art` hint.
+- [x] **AC2:** Mismatch + `--art` on MWF → full chain including RW Step 1d pass.
+- [x] **AC3:** Aligned `version.py` → no preflight abort; behavior unchanged from pre-FR-137.
+- [x] **AC4:** FR-137 ↔ T13 wired; RW version anchor on ship.
+- [x] **AC5:** E03:S02:T15-style scenario recorded in task verification notes or automated test.
+
+---
+
+## Verification notes
+
+- **AC1:** `MWF E02:S03:T13 delivery` (no `--art`) on `dev` with `version.py` E07:S01:T15 → `MWF ABORTED (preflight: RW intent)` before IPW; `validate_mwf_delivery_preflight.py` + pytest `test_preflight_aborts_without_art_on_mismatch`.
+- **AC2:** `MWF E02:S03:T13 delivery --art` → Phase 0 pass; RW Step 1d `--art` pass; shipped **v0.2.3.13+1**.
+- **AC3:** `test_preflight_passes_when_version_aligns`.
+- **AC5:** FR-137 incident `MWF E03:S02:T15 delivery` documented; `test_e03s02t15_style_scenario_documented`.
 
 ---
 

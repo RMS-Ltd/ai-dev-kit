@@ -14,7 +14,7 @@ housekeeping_policy: keep
 **Submitted By:** Operator — MWF `delivery` chain aborted at RW Step 1d (E03:S02:T15 incident)  
 **Priority:** HIGH  
 **Severity:** MEDIUM (wasted IPW+IDW legs; operator confusion)  
-**Status:** ACCEPTED (intake @ **v0.2.3.13+0** — kanban-init)
+**Status:** ACCEPTED → **IMPLEMENTED** @ **v0.2.3.13+1** (kanban-init @ **v0.2.3.13+0**)
 
 **Implementing Task:** [E02:S03:T13](../epics/epic-02/story-03-additional-workflows-and-examples/T13-mwf-delivery-rw-intent-preflight-fr137.md)
 

@@ -3,16 +3,16 @@
 << /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
 endobj
 2 0 obj
-<< /Length 2259 >>
+<< /Length 2286 >>
 stream
 BT
 /F1 10 Tf
 50 800 Td
 (Kanban Completed Tasks) Tj
 0 -14 Td
-(Generated: 2026-06-23T12:45:35Z) Tj
+(Generated: 2026-06-24T13:48:34Z) Tj
 0 -14 Td
-(Total rows: 247) Tj
+(Total rows: 252) Tj
 0 -14 Td
 () Tj
 0 -14 Td
@@ -20,9 +20,41 @@ BT
 0 -14 Td
 (-------------------------) Tj
 0 -14 Td
+(E03:S02:T15 | 2026-06-24T13:47:58Z | v0.3.2.15+2 | Operator verify) Tj
+0 -14 Td
+(SemVer core-only external display \(UXR-031 Option A\) ? Actions run title verified @) Tj
+0 -14 Td
+(v0.4.1219) Tj
+0 -14 Td
+() Tj
+0 -14 Td
+(E02:S03:T13 | 2026-06-24T13:45:25Z | v0.2.3.13+1 | RW) Tj
+0 -14 Td
+(MWF delivery RW intent preflight \(FR-137\)) Tj
+0 -14 Td
+() Tj
+0 -14 Td
+(E07:S01:T14 | 2026-06-24T12:30:00Z | v0.7.1.14+1 | RW E07:S01:T14) Tj
+0 -14 Td
+(UXR-034 file-level audit COMPLETE; 572-row matrix + CSV exports) Tj
+0 -14 Td
+() Tj
+0 -14 Td
+(E07:S01:T13 | 2026-06-24T12:00:00Z | v0.7.1.13+3 | RW E07:S01:T13) Tj
+0 -14 Td
+(UXR-033 directory structure audit COMPLETE; maintainer sign-off §4) Tj
+0 -14 Td
+() Tj
+0 -14 Td
 (E05:S02:T07 | 2026-06-23T17:30:00Z | v0.5.2.7+2 | RW E05:S02:T07) Tj
 0 -14 Td
 (Unified documentation governance strategy \(FR-139\)) Tj
+0 -14 Td
+() Tj
+0 -14 Td
+(E04:S19:T14 | 2026-06-23T13:31:00Z | v0.4.19.14+1 | RW Agent) Tj
+0 -14 Td
+(FBU intake directory rename fr-br to fbu \(UXR-032\)) Tj
 0 -14 Td
 () Tj
 0 -14 Td
@@ -65,7 +97,18 @@ BT
 () Tj
 0 -14 Td
 (E08:S03:T20 | 2026-06-16T12:00:00Z | v0.8.3.20+1 | UKW -c) Tj
-0 -14 Td
+ET
+endstream
+endobj
+3 0 obj
+<< /Type /Page /Parent 18 0 R /MediaBox [0 0 612 842] /Contents 2 0 R /Resources << /Font << /F1 1 0 R >> >> >>
+endobj
+4 0 obj
+<< /Length 4564 >>
+stream
+BT
+/F1 10 Tf
+50 800 Td
 (README Python prerequisites alignment \(UXR-026\)) Tj
 0 -14 Td
 () Tj
@@ -97,18 +140,7 @@ BT
 (E21:S01:T02 | 2026-06-16T12:00:00Z | v0.21.1.2+1 | UKW -c) Tj
 0 -14 Td
 (Add language selection prompt to CLI tool \(`ai-dev-kit init`\)) Tj
-ET
-endstream
-endobj
-3 0 obj
-<< /Type /Page /Parent 18 0 R /MediaBox [0 0 612 842] /Contents 2 0 R /Resources << /Font << /F1 1 0 R >> >> >>
-endobj
-4 0 obj
-<< /Length 4688 >>
-stream
-BT
-/F1 10 Tf
-50 800 Td
+0 -14 Td
 () Tj
 0 -14 Td
 (E21:S01:T03 | 2026-06-16T12:00:00Z | v0.21.1.3+1 | UKW -c) Tj
@@ -120,36 +152,6 @@ BT
 (E21:S01:T04 | 2026-06-16T12:00:00Z | v0.21.1.4+1 | UKW -c) Tj
 0 -14 Td
 (Create UK/US English content variants \(documentation, templates\)) Tj
-0 -14 Td
-() Tj
-0 -14 Td
-(E21:S01:T05 | 2026-06-16T12:00:00Z | v0.21.1.5+1 | UKW -c) Tj
-0 -14 Td
-(Implement configuration persistence \(`ai-dev-kit-config.yaml`\)) Tj
-0 -14 Td
-() Tj
-0 -14 Td
-(E21:S01:T06 | 2026-06-16T12:00:00Z | v0.21.1.6+1 | UKW -c) Tj
-0 -14 Td
-(Update content generation to use language preference \(RW, templates\)) Tj
-0 -14 Td
-() Tj
-0 -14 Td
-(E21:S01:T07 | 2026-06-16T12:00:00Z | v0.21.1.7+1 | UKW -c) Tj
-0 -14 Td
-(Test UK/US English selection and content generation) Tj
-0 -14 Td
-() Tj
-0 -14 Td
-(E21:S02:T01 | 2026-06-16T12:00:00Z | v0.21.2.1+1 | UKW -c) Tj
-0 -14 Td
-(Choose i18n framework/library) Tj
-0 -14 Td
-() Tj
-0 -14 Td
-(E21:S02:T02 | 2026-06-16T12:00:00Z | v0.21.2.2+1 | UKW -c) Tj
-0 -14 Td
-(Set up translation file structure \(`locales/{lang}/`\)) Tj
 0 -14 Td
 () Tj
 0 -14 Td
@@ -196,8 +198,6 @@ BT
 (E02:S01:T30 | 2026-06-15T20:04:09Z | v0.21.4.4+1 | **E02:S01:T30** ? FR-122 meta-program COMPLETE: contract + gap matrix + ADR-027; Waves 0?5 + 8 gates shipped; split-brai) Tj
 0 -14 Td
 (E02:S03:T09 | 2026-06-15T20:04:09Z | v0.21.4.3+1 | **E02:S03:T09** ? MWF `delivery` recipe \(`mwf.md`, KB, registry, routing, cheatsheet §4c\). **Completed:** `2026-06-10T12) Tj
-0 -14 Td
-(E02:S03:T10 | 2026-06-15T20:04:09Z | v0.0.0.0+0 | **E02:S03:T10** ? Encapsulation contract, CMW/PVW command guides, registry metadata, `validate_workflow_encapsulation.py) Tj
 ET
 endstream
 endobj
@@ -205,14 +205,18 @@ endobj
 << /Type /Page /Parent 18 0 R /MediaBox [0 0 612 842] /Contents 4 0 R /Resources << /Font << /F1 1 0 R >> >> >>
 endobj
 6 0 obj
-<< /Length 7344 >>
+<< /Length 7280 >>
 stream
 BT
 /F1 10 Tf
 50 800 Td
+(E02:S03:T10 | 2026-06-15T20:04:09Z | v0.0.0.0+0 | **E02:S03:T10** ? Encapsulation contract, CMW/PVW command guides, registry metadata, `validate_workflow_encapsulation.py) Tj
+0 -14 Td
 (E02:S03:T11 | 2026-06-15T20:04:09Z | v0.2.3.9+3 | **E02:S03:T11** ? BR-102 fix shipped via T10 Wave 3 \(`mwf.md`, KB, cheatsheet\). **Completed:** `2026-06-10T15:10:33Z` | ) Tj
 0 -14 Td
 (E02:S03:T12 | 2026-06-16T12:00:00Z | v0.2.3.12+1 | Environment-aware workflow execution \(FR-128\)) Tj
+0 -14 Td
+(E02:S03:T13 | 2026-06-24T13:45:25Z | v0.2.3.13+1 | MWF delivery RW intent preflight \(FR-137\)) Tj
 0 -14 Td
 (E02:S06:T01 | 2026-05-15T00:00:00Z | v0.2.6.1+2 | **E02:S06:T01** ? FR-008 uninstall command and safety rails ? **RE-IMPLEMENTED**. Fixed broken CLI `remove` command \(`se) Tj
 0 -14 Td
@@ -286,6 +290,8 @@ BT
 0 -14 Td
 (E03:S02:T12 | 2026-06-04T22:00:00Z | v0.3.2.12+4 | **E03:S02:T12** ? **FR-045** / **FR-046** / **BR-061**: Task-touch SemVer collision remediation wave 2.) Tj
 0 -14 Td
+(E03:S02:T15 | 2026-06-24T13:47:58Z | v0.3.2.15+2 | SemVer core-only external display \(UXR-031 Option A\) ? Actions run title verified @ v0.4.1219) Tj
+0 -14 Td
 (E04:S04:T01 | 2025-11-01T16:00:00Z | v0.11.1.1+1 | **E04:S04:T01** ? Refactor board structure) Tj
 0 -14 Td
 (E04:S05:T01 | 2025-11-05T16:00:00Z | v0.4.5.1+1 | **E04:S05:T01** ? Create canonical Epic structure) Tj
@@ -293,12 +299,6 @@ BT
 (E04:S07:T01 | 2026-06-05T03:38:55Z | v0.4.7.1+1 | **E04:S07:T01** ? BR-006 detection/analysis utilities for existing structures. Implemented `detect_existing_structure.py) Tj
 0 -14 Td
 (E04:S07:T02 | 2026-05-15T00:00:00Z | v0.4.7.2+1 | **E04:S07:T02** ? FR-007 migration utilities and installation modes. Implemented `migrate_structure.py` \(backups, migrat) Tj
-0 -14 Td
-(E04:S08:T07 | 2026-05-29T15:30:00Z | v0.4.8.7+1 | **E04:S08:T07** ? **FR-011**: multi-epic task split engine, CLI, intake hook, tests.) Tj
-0 -14 Td
-(E04:S09:T01 | 2026-05-15T00:00:00Z | v0.4.9.1+1 | **E04:S09:T01** ? BR-007 fix multiple kanban package installation defects. Fixed missing `Tuple` import in `analyze_stru) Tj
-0 -14 Td
-(E04:S09:T05 | 2026-05-15T00:00:00Z | v0.4.9.1+1 | **E04:S09:T05** ? BR-008 remove arbitrary 80% threshold contradicting agentic intelligence. Removed all blocking thresho) Tj
 ET
 endstream
 endobj
@@ -306,11 +306,17 @@ endobj
 << /Type /Page /Parent 18 0 R /MediaBox [0 0 612 842] /Contents 6 0 R /Resources << /Font << /F1 1 0 R >> >> >>
 endobj
 8 0 obj
-<< /Length 7508 >>
+<< /Length 7398 >>
 stream
 BT
 /F1 10 Tf
 50 800 Td
+(E04:S08:T07 | 2026-05-29T15:30:00Z | v0.4.8.7+1 | **E04:S08:T07** ? **FR-011**: multi-epic task split engine, CLI, intake hook, tests.) Tj
+0 -14 Td
+(E04:S09:T01 | 2026-05-15T00:00:00Z | v0.4.9.1+1 | **E04:S09:T01** ? BR-007 fix multiple kanban package installation defects. Fixed missing `Tuple` import in `analyze_stru) Tj
+0 -14 Td
+(E04:S09:T05 | 2026-05-15T00:00:00Z | v0.4.9.1+1 | **E04:S09:T05** ? BR-008 remove arbitrary 80% threshold contradicting agentic intelligence. Removed all blocking thresho) Tj
+0 -14 Td
 (E04:S09:T06 | 2026-05-15T00:00:00Z | v0.4.9.1+1 | **E04:S09:T06** ? FR-010 implement actual agentic intelligence for task mapping. Foundation implemented with extensible ) Tj
 0 -14 Td
 (E04:S10:T01 | 2026-05-15T00:00:00Z | v0.4.10.1+0 | **E04:S10:T01** ? FR-012 agentic kanban task creation from intake documents. Design document created: `agentic-fr-br-ana) Tj
@@ -336,6 +342,8 @@ BT
 (E04:S19:T12 | 2026-06-05T01:42:57Z | v0.4.19.12+4 | **E04:S19:T12** ? **UXR-020 R3**: Single-board consolidation ? `kboard` sole active MoSCOW; `fbuboard` deprecated stub; ) Tj
 0 -14 Td
 (E04:S19:T13 | 2026-06-15T20:04:09Z | v0.6.9.32+1 | **E04:S19:T13** ? **KANBAN_BOARD_TEMPLATE.md v2.2.0** from SBL attempt 06: single-line rows, V band, split Ongoing, lean) Tj
+0 -14 Td
+(E04:S19:T14 | 2026-06-23T13:31:00Z | v0.4.19.14+1 | FBU intake directory rename fr-br to fbu \(UXR-032\)) Tj
 0 -14 Td
 (E05:S01:T31 | 2026-05-29T00:00:00Z | v0.5.1.31+0 | **E05:S01:T31** ? **FR-031**: Multi-agent coordination feasibility ? **WON'T HAVE** \(deferred off active board\).) Tj
 0 -14 Td
@@ -392,14 +400,6 @@ BT
 (E05:S09:T01 | 2026-03-30T20:35:00Z | v0.5.9.1+2 | **E05:S09:T01** ? Docusaurus site identity \(**FR-065**\): `portal/docusaurus.config.js`, `portal/README.md`, `tests/test_) Tj
 0 -14 Td
 (E05:S09:T02 | 2026-03-30T21:45:00Z | v0.5.9.2+2 | **E05:S09:T02** ? Canonical **`docs/`** path and publish scope \(**FR-066**\): `portal/docusaurus.config.js`, `portal/READ) Tj
-0 -14 Td
-(E05:S09:T03 | 2026-03-30T22:30:00Z | v0.5.9.3+1 | **E05:S09:T03** ? Docusaurus production build corpus triage \(**FR-067**\): MDX/placeholder escapes, `onBrokenLinks`/`onBr) Tj
-0 -14 Td
-(E05:S09:T04 | 2026-03-30T15:27:28Z | v0.5.9.4+1 | **E05:S09:T04** ? Docusaurus navigation / sidebar IA / landing \(**FR-068**\): `portal/sidebars.js`, `portal/docusaurus.co) Tj
-0 -14 Td
-(E05:S09:T05 | 2026-03-30T15:52:14Z | v0.5.9.5+1 | **E05:S09:T05** ? Docusaurus CI build gate \(**FR-069**\): `.github/workflows/docusaurus-build.yml`, `tests/test_portal_fr) Tj
-0 -14 Td
-(E05:S09:T06 | 2026-03-30T16:11:41Z | v0.5.9.6+1 | **E05:S09:T06** ? Docusaurus GitHub Pages deployment \(**FR-070**\): `.github/workflows/docusaurus-deploy.yml`, portal hos) Tj
 ET
 endstream
 endobj
@@ -407,11 +407,19 @@ endobj
 << /Type /Page /Parent 18 0 R /MediaBox [0 0 612 842] /Contents 8 0 R /Resources << /Font << /F1 1 0 R >> >> >>
 endobj
 10 0 obj
-<< /Length 7445 >>
+<< /Length 7464 >>
 stream
 BT
 /F1 10 Tf
 50 800 Td
+(E05:S09:T03 | 2026-03-30T22:30:00Z | v0.5.9.3+1 | **E05:S09:T03** ? Docusaurus production build corpus triage \(**FR-067**\): MDX/placeholder escapes, `onBrokenLinks`/`onBr) Tj
+0 -14 Td
+(E05:S09:T04 | 2026-03-30T15:27:28Z | v0.5.9.4+1 | **E05:S09:T04** ? Docusaurus navigation / sidebar IA / landing \(**FR-068**\): `portal/sidebars.js`, `portal/docusaurus.co) Tj
+0 -14 Td
+(E05:S09:T05 | 2026-03-30T15:52:14Z | v0.5.9.5+1 | **E05:S09:T05** ? Docusaurus CI build gate \(**FR-069**\): `.github/workflows/docusaurus-build.yml`, `tests/test_portal_fr) Tj
+0 -14 Td
+(E05:S09:T06 | 2026-03-30T16:11:41Z | v0.5.9.6+1 | **E05:S09:T06** ? Docusaurus GitHub Pages deployment \(**FR-070**\): `.github/workflows/docusaurus-deploy.yml`, portal hos) Tj
+0 -14 Td
 (E05:S09:T07 | 2026-03-30T16:59:05Z | v0.5.9.7+1 | **E05:S09:T07** ? Docusaurus site search \(**FR-071**\): `@easyops-cn/docusaurus-search-local` in `portal/docusaurus.confi) Tj
 0 -14 Td
 (E05:S09:T08 | 2026-04-01T14:30:00Z | v0.5.9.8+2 | **E05:S09:T08** ? Docusaurus **strict** broken **links** \(**`throw`**\) post?**FR-067** \(**FU-1** closed\): corpus link re) Tj
@@ -493,14 +501,6 @@ BT
 (E06:S09:T19 | 2026-06-04T17:08:38Z | v0.6.9.19+1 | **E06:S09:T19** ? **BR-088**: RW mode C `version_file` scaffold when no `src/`.) Tj
 0 -14 Td
 (E06:S09:T20 | 2026-06-04T17:32:25Z | v0.6.9.20+2 | **E06:S09:T20** ? **FR-108**: Install/setup `ADK-*` error code registry + emission + docs.) Tj
-0 -14 Td
-(E06:S09:T21 | 2026-06-05T10:00:22Z | v0.6.9.21+4 | **E06:S09:T21** ? Lean adopter distribution footprint \(`greenfield-install/` tree, sync script, CI drift guard\).) Tj
-0 -14 Td
-(E06:S09:T22 | 2026-06-05T12:00:00Z | v0.6.9.22+1 | **E06:S09:T22** ? Package documentation greenfield-install alignment \(FR-110 framework READMEs + install guides\).) Tj
-0 -14 Td
-(E06:S09:T23 | 2026-06-05T14:30:00Z | v0.6.9.23+3 | **E06:S09:T23** ? Greenfield GHCR delivery \(`ghcr.io/rms-ltd/ai-dev-kit-greenfield`, FR-110-F5 tarball, ADR-021\).) Tj
-0 -14 Td
-(E06:S09:T24 | 2026-06-05T15:30:00Z | v0.6.9.24+2 | **E06:S09:T24** ? Acquisition-layer ADK error codes \(registry 1.1.0 I05/I06, `verify_vendor_tree.py`, CLI I06, doc-sync ) Tj
 ET
 endstream
 endobj
@@ -508,11 +508,19 @@ endobj
 << /Type /Page /Parent 18 0 R /MediaBox [0 0 612 842] /Contents 10 0 R /Resources << /Font << /F1 1 0 R >> >> >>
 endobj
 12 0 obj
-<< /Length 7316 >>
+<< /Length 7553 >>
 stream
 BT
 /F1 10 Tf
 50 800 Td
+(E06:S09:T21 | 2026-06-05T10:00:22Z | v0.6.9.21+4 | **E06:S09:T21** ? Lean adopter distribution footprint \(`greenfield-install/` tree, sync script, CI drift guard\).) Tj
+0 -14 Td
+(E06:S09:T22 | 2026-06-05T12:00:00Z | v0.6.9.22+1 | **E06:S09:T22** ? Package documentation greenfield-install alignment \(FR-110 framework READMEs + install guides\).) Tj
+0 -14 Td
+(E06:S09:T23 | 2026-06-05T14:30:00Z | v0.6.9.23+3 | **E06:S09:T23** ? Greenfield GHCR delivery \(`ghcr.io/rms-ltd/ai-dev-kit-greenfield`, FR-110-F5 tarball, ADR-021\).) Tj
+0 -14 Td
+(E06:S09:T24 | 2026-06-05T15:30:00Z | v0.6.9.24+2 | **E06:S09:T24** ? Acquisition-layer ADK error codes \(registry 1.1.0 I05/I06, `verify_vendor_tree.py`, CLI I06, doc-sync ) Tj
+0 -14 Td
 (E06:S09:T25 | 2026-06-09T09:11:54Z | v0.6.9.25+2 | **E06:S09:T25** ? Triage matrix + greenfield orchestrator F4/F5 fix \(`resolve_frameworks_base`, `--config`, `--non-inter) Tj
 0 -14 Td
 (E06:S09:T26 | 2026-06-16T13:57:07Z | v0.6.9.26+4 | SBL ADK install program COMPLETE ? ten attempts; attempt 10 Arm B Install RC PASS; programme Phase 1 closed) Tj
@@ -548,6 +556,10 @@ BT
 (E07:S01:T09 | 2026-06-01T18:00:00Z | v0.7.1.9+5 | **E07:S01:T09** ? UXR-005 MoSCOW spacing validator, corpus pass, RW/UKW Gate 10.) Tj
 0 -14 Td
 (E07:S01:T11 | 2026-05-29T21:30:00Z | v0.7.1.11+8 | **E07:S01:T11** ? **FR-101**: Consolidate governance under `docs/governance/` \(Waves 0?F; ADR-007\).) Tj
+0 -14 Td
+(E07:S01:T13 | 2026-06-24T12:00:00Z | v0.7.1.13+3 | UXR-033 directory structure audit COMPLETE; maintainer sign-off §4) Tj
+0 -14 Td
+(E07:S01:T14 | 2026-06-24T12:30:00Z | v0.7.1.14+1 | UXR-034 file-level audit COMPLETE; 572-row matrix + CSV exports) Tj
 0 -14 Td
 (E07:S06:T03 | 2026-03-25T12:00:00Z | v0.7.6.3+1 | **E07:S06:T03** ? Kanban documentation consistency \(live SoT, E9/E18 disambiguation, cross-refs, epic-09 S05 stub\)) Tj
 0 -14 Td
@@ -590,7 +602,18 @@ BT
 (E08:S03:T14 | 2026-06-06T13:09:50Z | v0.8.3.14+5 | **E08:S03:T14** ? Code Quality AI suggestions backlog \(BR-101\): wave-1 **12/14** apply; wave-2b **AI-VENDOR-TREE** 4/4; ) Tj
 0 -14 Td
 (E08:S03:T17 | 2026-06-06T16:00:00Z | v0.8.3.17+4 | **E08:S03:T17** ? Local Code Quality Gate \(CQG\) \(FR-113\): CodeQL engine, RW Step 9 advisory validator, 6 h monitor, ADR-) Tj
-0 -14 Td
+ET
+endstream
+endobj
+13 0 obj
+<< /Type /Page /Parent 18 0 R /MediaBox [0 0 612 842] /Contents 12 0 R /Resources << /Font << /F1 1 0 R >> >> >>
+endobj
+14 0 obj
+<< /Length 5810 >>
+stream
+BT
+/F1 10 Tf
+50 800 Td
 (E08:S03:T19 | 2026-06-15T20:04:09Z | v0.2.3.10+1 | **E08:S03:T19** ? `test_stamp_evidence_gate.py` assert refactor; `pytest.ini` PytestReturnNotNoneWarning guard. **Comple) Tj
 0 -14 Td
 (E08:S03:T20 | 2026-06-16T12:00:00Z | v0.8.3.20+1 | README Python prerequisites alignment \(UXR-026\)) Tj
@@ -602,18 +625,7 @@ BT
 (E08:S03:T23 | 2026-06-16T12:00:00Z | v0.8.3.23+2 | Greenfield sync autofix CI hardening \(BR-109\)) Tj
 0 -14 Td
 (E08:S03:T24 | 2026-06-23T12:17:44Z | v0.8.3.24+3 | FR-138 CLI coverage Wave 4 hardening ? 82% aggregate) Tj
-ET
-endstream
-endobj
-13 0 obj
-<< /Type /Page /Parent 18 0 R /MediaBox [0 0 612 842] /Contents 12 0 R /Resources << /Font << /F1 1 0 R >> >> >>
-endobj
-14 0 obj
-<< /Length 5716 >>
-stream
-BT
-/F1 10 Tf
-50 800 Td
+0 -14 Td
 (E08:S04:T01 | 2026-03-12T14:00:00Z | v0.8.4.1+1 | **E08:S04:T01** ? Tooling & Automation expectations baseline) Tj
 0 -14 Td
 (E09:S01:T03 | 2026-06-04T22:15:00Z | v0.9.1.3+1 | **E09:S01:T03** ? **FR-032.3**: RC gap comparison ? T01 inventory, T02 RC=1 criteria, gap matrix report.) Tj
@@ -691,7 +703,18 @@ BT
 (E21:S04:T05 | 2026-06-16T12:00:00Z | v0.21.4.5+1 | Cultural formatting validation \(dates, times, numbers, currency\)) Tj
 0 -14 Td
 (E21:S05:T01 | 2026-06-16T12:00:00Z | v0.21.5.1+1 | Spanish \(es\) translation files) Tj
-0 -14 Td
+ET
+endstream
+endobj
+15 0 obj
+<< /Type /Page /Parent 18 0 R /MediaBox [0 0 612 842] /Contents 14 0 R /Resources << /Font << /F1 1 0 R >> >> >>
+endobj
+16 0 obj
+<< /Length 897 >>
+stream
+BT
+/F1 10 Tf
+50 800 Td
 (E21:S05:T02 | 2026-06-16T12:00:00Z | v0.21.5.2+2 | French \(fr\) translation files) Tj
 0 -14 Td
 (E21:S06:T01 | 2026-06-16T12:00:00Z | v0.21.6.1+1 | Chinese Simplified \(zh-CN\) translation files) Tj
@@ -703,18 +726,7 @@ BT
 (E21:S08:T03 | 2026-06-16T12:00:00Z | v0.21.8.3+1 | CLI and terminal output accessibility \(Layer 1\)) Tj
 0 -14 Td
 (E21:S09:T01 | 2026-06-16T12:00:00Z | v0.21.9.1+1 | FR-006 Phase 2 header and status reconciliation) Tj
-ET
-endstream
-endobj
-15 0 obj
-<< /Type /Page /Parent 18 0 R /MediaBox [0 0 612 842] /Contents 14 0 R /Resources << /Font << /F1 1 0 R >> >> >>
-endobj
-16 0 obj
-<< /Length 238 >>
-stream
-BT
-/F1 10 Tf
-50 800 Td
+0 -14 Td
 (E21:S09:T02 | 2026-06-16T12:00:00Z | v0.21.9.2+2 | Legacy epic-21 story folder rationalization) Tj
 0 -14 Td
 (E21:S09:T03 | 2026-06-16T12:00:00Z | v0.21.9.3+1 | PR merge CI parity and adopter-public doc gates) Tj
@@ -735,25 +747,25 @@ xref
 0000000000 65535 f 
 0000000009 00000 n 
 0000000079 00000 n 
-0000002390 00000 n 
-0000002517 00000 n 
-0000007257 00000 n 
-0000007384 00000 n 
-0000014780 00000 n 
-0000014907 00000 n 
-0000022467 00000 n 
-0000022594 00000 n 
-0000030092 00000 n 
-0000030221 00000 n 
-0000037590 00000 n 
-0000037719 00000 n 
-0000043488 00000 n 
-0000043617 00000 n 
-0000043907 00000 n 
-0000044036 00000 n 
-0000044140 00000 n 
+0000002417 00000 n 
+0000002544 00000 n 
+0000007160 00000 n 
+0000007287 00000 n 
+0000014619 00000 n 
+0000014746 00000 n 
+0000022196 00000 n 
+0000022323 00000 n 
+0000029840 00000 n 
+0000029969 00000 n 
+0000037575 00000 n 
+0000037704 00000 n 
+0000043567 00000 n 
+0000043696 00000 n 
+0000044645 00000 n 
+0000044774 00000 n 
+0000044878 00000 n 
 trailer
 << /Size 20 /Root 19 0 R >>
 startxref
-44191
+44929
 %%EOF

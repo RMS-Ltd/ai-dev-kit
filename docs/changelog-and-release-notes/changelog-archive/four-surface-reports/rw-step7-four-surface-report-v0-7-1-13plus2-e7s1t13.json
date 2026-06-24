@@ -1,0 +1,20 @@
+{
+  "contract": "FR-092",
+  "invocation_context": "rw_step_7",
+  "variant": "rw-d",
+  "release_scope": "E07:S01:T13",
+  "internal_version": "0.7.1.13+2",
+  "semver": "0.4.1215+2",
+  "timestamp_utc": "2026-06-23T14:47:11Z",
+  "rows": {
+    "E07:S01:T13": {
+      "allowed": true,
+      "reason": "RW -d v0.7.1.13+2 — release-scope version anchor + task/UXR doc delta"
+    }
+  },
+  "surfaces": {
+    "task_doc": {"touched": true, "paths": ["docs/kanban/epics/epic-07/story-01-codebase-maintenance-tasks/T13-comprehensive-repository-directory-structure-audit-uxr033.md"]},
+    "fbu_doc": {"touched": true, "paths": ["docs/kanban/fbu/UXR-033-comprehensive-repository-directory-structure-audit.md"]},
+    "kboard": {"touched": true, "paths": ["docs/kanban/kboard.md"]}
+  }
+}

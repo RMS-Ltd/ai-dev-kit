@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Intake Completed Items (FR/BR/UXR)
 
-**Last Updated:** 2026-06-15 (RW — BR-104 FIXED @ v0.2.16.5+11)
-**Version:** v0.2.16.5+11
+**Last Updated:** 2026-06-24 (UKW — FR-137 intake sync)
+**Version:** v0.2.3.13+1
 
 > **For open / in-flight intake items, see:** [`kboard.md`](kboard.md) (MoSCOW) and [`intake-structure.md`](intake-structure.md)  
 > **For completed Kanban tasks (E/S/T), see:** [`kanban-completed.md`](kanban-completed.md)  
@@ -33,6 +33,8 @@ This document tracks all **completed FRs (Feature Requests), BRs (Bug Reports), 
 
 | ID | Type | Description | Completed | Version | Agent |
 |----|------|-------------|-----------|---------|-------|
+| FR-137 | FR | MWF `delivery` RW intent preflight + `--art` forwarding — IMPLEMENTED (**E02:S03:T13**) | 2026-06-24T13:51:00Z | v0.2.3.13+1 | RW E02:S03:T13 |
+| UXR-031 | UXR | SemVer `+BUILD` redundancy in `task_touch` — VERIFIED Option A core-only display (**E03:S02:T15**) | 2026-06-24T13:47:58Z | v0.3.2.15+2 | Operator verify |
 | BR-104 | BR | CodeQL/CQG green ≠ Actions CI green — FIXED (**E02:S16:T05**; Wave 4–8) | 2026-06-15T20:36:36Z | v0.2.16.5+11 | RW -d E02:S16:T05 --art |
 | BR-107 | BR | Kanban installer log epic path padding mismatch — FIXED (**E06:S09:T30**; F21) | 2026-06-10T19:15:18Z | v0.6.9.30+2 | MWF E06:S09:T30 delivery |
 | BR-106 | BR | RW install non-interactive CHANGELOG prompt EOF — FIXED (**E06:S09:T29**; F19) | 2026-06-10T18:45:00Z | v0.6.9.29+2 | MWF E06:S09:T29 delivery |

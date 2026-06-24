@@ -12,8 +12,8 @@ housekeeping_policy: keep
 **Priority:** MEDIUM  
 **Estimated Effort:** [TBD]  
 **Created:** 2025-12-05  
-**Last updated:** 2026-06-23 (v0.8.3.24+3 – Kanban documentation setup)
-**Version:** v0.8.3.24+3
+**Last updated:** 2026-06-24 (v0.8.3.24+4 – RW follow-on version re-anchor)
+**Version:** v0.8.3.24+4
 **Code:** E8S03
 
 ---
@@ -90,7 +90,7 @@ housekeeping_policy: keep
 - [x] **E08:S03:T23 – Greenfield sync autofix CI hardening (BR-109; BR-110 forensic closure @ v0.8.3.23+3)** ✅ COMPLETE — [Task doc](story-03-automation-scripts/T23-greenfield-sync-autofix-ci-hardening-br109.md) | [BR-109](../../fbu/BR-109-greenfield-autofix-dual-tree-sync-drift-recurring-ci-failures.md) | [BR-110](../../fbu/BR-110-rw-k-dpz-rejection-doc-init-build-zero-guard-mismatch.md) | [IPP](../../../implementation-cycles/IPP-E08S03T23-greenfield-sync-autofix-ci-hardening-br109.md)
 
 
-- [x] **E08:S03:T24 – CLI package test coverage gap closure (FR-138)** — ✅ COMPLETE @ **v0.8.3.24+3** (Phase 1 **74.73%** + Phase 2 **82%**) — [Task doc](story-03-automation-scripts/T24-cli-package-test-coverage-gap-closure-fr138.md) | [FR-138](../../fbu/FR-138-cli-package-test-coverage-gap-closure.md) | [—IPP—](../../../implementation-cycles/IPP-E08S03T24-cli-package-test-coverage-gap-closure-fr138.md)
+- [x] **E08:S03:T24 – CLI package test coverage gap closure (FR-138)** — ✅ COMPLETE @ **v0.8.3.24+4** (Phase 1 **74.73%** + Phase 2 **82%**) — [Task doc](story-03-automation-scripts/T24-cli-package-test-coverage-gap-closure-fr138.md) | [FR-138](../../fbu/FR-138-cli-package-test-coverage-gap-closure.md) | [—IPP—](../../../implementation-cycles/IPP-E08S03T24-cli-package-test-coverage-gap-closure-fr138.md)
 
 ---
 

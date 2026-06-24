@@ -64,6 +64,30 @@ steps:
       analyze_commits: true
       analyze_file_changes: true
 
+  - id: step-2-5
+    name: Discover Board Gaps
+    type: gap_discovery
+    handler: kanban.discover_board_gaps
+    required: true
+    mandatory: true
+    blocking: false
+    run_when:
+      - comprehensive
+    dependencies:
+      - step-2
+    config:
+      kanban_root: ${config.kanban_root}
+      kanban_board: ${config.kanban_board}
+      fbu_root: ${config.fbu_root}
+      gap_discovery_script: packages/frameworks/workflow-mgt/scripts/kanban/discover_board_gaps.py
+      part_a_auto_add_missing_tasks: false
+      part_b_seek_user_intention: true
+      intake_open_taskless_queue: intake-open-taskless-queue.md
+      description: >
+        FR-043 comprehensive-only Step 2.5. Part (a) scan TODO/IN PROGRESS task docs vs kboard;
+        Part (b) list open FR/BR/UXR without implementing tasks for operator intention.
+        Deterministic pre-scan via discover_board_gaps.py; MoSCOW adds and task filing remain agentic.
+
   - id: step-3
     name: Update Task Documents
     type: task_update
@@ -72,7 +96,7 @@ steps:
     mandatory: true
     blocking: false
     dependencies:
-      - step-2
+      - step-2-5
     config:
       task_doc_pattern: ${config.task_doc_pattern}
       kanban_root: ${config.kanban_root}

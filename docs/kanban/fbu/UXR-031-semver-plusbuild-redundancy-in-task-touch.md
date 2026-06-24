@@ -13,7 +13,7 @@ housekeeping_policy: keep
 **Submitted:** 2026-06-16  
 **Submitted By:** User  
 **Priority:** MEDIUM (Could Have — MoSCOW **C**)  
-**Status:** IMPLEMENTED  
+**Status:** VERIFIED  
 **Implementing Task:** [E03:S02:T15](../epics/epic-03/story-02-versioning-cookbook-and-examples/T15-semver-external-build-metadata-redundancy-uxr031.md)  
 **Policy:** [semver-external-display-policy-decision.md](../epics/epic-03/story-02-versioning-cookbook-and-examples/semver-external-display-policy-decision.md) — Option A (core-only external SemVer)
 
@@ -95,6 +95,8 @@ Determine whether external SemVer should include `+BUILD` in `task_touch` mode, 
 - [x] UXR-031 ↔ E03:S02:T15 bidirectional links are wired (task references this UXR and this UXR references the task).
 
 **Implemented @ v0.3.2.15+2** (SemVer v0.4.1202) — Option A presentation — 2026-06-23
+
+**Verified @ 2026-06-24** — operator confirmed GitHub Actions run title `Release v0.4.1219` (Greenfield release packages #202, `05d0565`) uses core-only SemVer with no `+BUILD` suffix.
 
 _Prior wave @ v0.3.2.15+1 (Option B policy docs only)._
 
