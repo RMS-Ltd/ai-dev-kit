@@ -81,9 +81,16 @@ Run `git log --since="7 days ago" --oneline --all`. Parse commit messages for `E
 
 ### Step 2.5 — Discover Board Gaps (Comprehensive only)
 
-**(a) TODO tasks not on board:** Scan all task documents for TODO/IN PROGRESS status. Cross-reference with the board's MoSCOW section. Add missing tasks to the board with an appropriate MoSCOW classification.
+**Deterministic pre-scan (FR-043 / E04:S14:T11):**
 
-**(b) Open FRs/BRs without tasks:** Scan `{kanban_root}/fbu/` for docs with status `OPEN`, `PENDING`, `REOPENED`, `Proposed`, `IN PROGRESS`, or `INTAKE`. Cross-reference with board and story checklists. Present a formatted table of unlinked items to the user. Seek user intention: leave as is, or file tasks. If filing, create task docs per kanban governance and wire FR/BR ↔ task bidirectionally.
+```bash
+python "packages/frameworks/workflow-mgt/scripts/kanban/discover_board_gaps.py" --json
+python "packages/frameworks/workflow-mgt/scripts/kanban/discover_board_gaps.py" --markdown-out docs/knowledge/analysis/ukw-gap-discovery-latest.md
+```
+
+**(a) TODO tasks not on board:** Use script output `tasks_missing_from_board`; add each to `kboard.md` MoSCOW with appropriate classification.
+
+**(b) Open FRs/BRs without tasks:** Use script output `open_fbu_without_task`; present formatted table to the user. Seek user intention: leave as is, or file tasks. If filing, create task docs per kanban governance and wire FR/BR ↔ task bidirectionally. Refresh [`intake-open-taskless-queue.md`](../../docs/kanban/intake-open-taskless-queue.md) when queue changes.
 
 **Pause for user response on Part (b) before proceeding.**
 

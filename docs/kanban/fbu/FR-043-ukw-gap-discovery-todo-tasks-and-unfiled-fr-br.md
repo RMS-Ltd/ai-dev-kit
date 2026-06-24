@@ -93,6 +93,7 @@ Add **Step 2.5: Discover Board Gaps** to UKW (comprehensive run only).
 
 ## Implementation Status
 
-**Status:** PENDING  
-- Specification and workflow documentation (Step 2.5) have been added to `.cursorrules` and the agent execution guide
-- Full agent implementation and validation pending
+**Status:** IMPLEMENTED (**v0.4.14.11+1** — E04:S14:T11)  
+- Deterministic `discover_board_gaps.py` scanner + UKW YAML Step 2.5 wiring shipped
+- Maintainer gap stats: `docs/knowledge/analysis/ukw-gap-discovery-stats-e04s14t11.md`
+- MoSCOW adds and task filing remain agentic + user-confirmed per FR-043 Part (b)

@@ -11,6 +11,14 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.4.14.11+1] - 24-06-26
+
+E04:S14:T11 — **Change implemented (FR-043):** UKW Step 2.5 gap-discovery scanner, workflow YAML/config, tests, and maintainer gap-stats report. SemVer **v0.4.1222+1**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.4.14.11+1.md)
+
+---
+
 ## [0.2.16.2+14] - 24-06-26
 
 E02:S16:T02 — **Kanban documentation setup (UKW):** E03:S02:T15 / UXR-031 operator verify archived; FR-137 intake sync; perpetual UKW surfaces reconciled. SemVer **v0.4.1221+14**.

@@ -18,3 +18,24 @@ execution:
   auto_create_stories: true
   update_epic_status: true
   sync_with_versions: true
+
+# FR-043 / E04:S14:T11 — Step 2.5 gap discovery (comprehensive UKW only)
+gap_discovery:
+  enabled: true
+  comprehensive_only: true
+  script: packages/frameworks/workflow-mgt/scripts/kanban/discover_board_gaps.py
+  part_a:
+    scan_active_task_statuses:
+      - TODO
+      - IN PROGRESS
+    board_surface: kboard.md
+  part_b:
+    open_fbu_statuses:
+      - OPEN
+      - PENDING
+      - REOPENED
+      - Proposed
+      - IN PROGRESS
+      - INTAKE
+    seek_user_intention: true
+    intake_queue_doc: intake-open-taskless-queue.md
