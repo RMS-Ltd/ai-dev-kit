@@ -11,6 +11,14 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.6.9.26+6] - 24-06-26
+
+E06:S09:T26 — **Change implemented:** SBL `main` analysis in operator-rework COMPARISON (guided KMA @ 93.99%). SemVer **v0.4.1226+6**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.6.9.26+6.md)
+
+---
+
 ## [0.6.9.26+5] - 24-06-26
 
 E06:S09:T26 — **Change implemented:** Attempt-10 operator-rework comparison archive (blind KMA candidate vs operator titled tree); recovered from SBL local `temp/`. SemVer **v0.4.1225+5**.
