@@ -11,11 +11,11 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
-## [0.7.1.14+1] - 24-06-26
+## [0.8.3.24+4] - 24-06-26
 
-E07:S01:T14 — **Change implemented (UXR-034):** Repository file-level audit **COMPLETE**; 572-row valuation matrix + CSV exports; maintainer sign-off §4 @ 2026-06-24. SemVer **v0.4.1217+1**.
+E08:S03:T24 — **Change implemented (FR-138 follow-on):** Version re-anchor (`--art`) to completed CLI coverage task; kanban/version surfaces reconciled after cross-epic drift. SemVer **v0.4.1218+4**.
 
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.7.1.14+1.md)
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.8.3.24+4.md)
 
 ---
 

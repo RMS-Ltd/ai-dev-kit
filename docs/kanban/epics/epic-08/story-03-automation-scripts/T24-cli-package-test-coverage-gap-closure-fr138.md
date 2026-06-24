@@ -9,12 +9,12 @@ housekeeping_policy: keep
 # E08:S03:T24 — CLI package test coverage gap closure (FR-138)
 
 **Task ID:** E08:S03:T24  
-**Status:** ✅ COMPLETE @ **v0.8.3.24+3** (Phase 1 **74.73%** + Phase 2 **82%** aggregate)  
+**Status:** ✅ COMPLETE @ **v0.8.3.24+4** (Phase 1 **74.73%** + Phase 2 **82%** aggregate)  
 **Priority:** MEDIUM (Could Have — MoSCOW **C**)  
 **Created:** 2026-06-23  
-**Last updated:** 2026-06-23 (MWF Phase 2 delivery — Wave 4 hardening)  
-**Version:** v0.8.3.24+3  
-**Version Anchor:** v0.8.3.24+3  
+**Last updated:** 2026-06-24 (RW follow-on — `--art` version re-anchor)  
+**Version:** v0.8.3.24+4  
+**Version Anchor:** v0.8.3.24+4  
 **Code:** E08S03T24
 
 **Upstream:** [FR-138 — CLI package test coverage gap closure](../../../fbu/FR-138-cli-package-test-coverage-gap-closure.md)  

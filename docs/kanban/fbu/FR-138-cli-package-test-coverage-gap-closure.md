@@ -13,7 +13,7 @@ housekeeping_policy: keep
 **Submitted:** 2026-06-23  
 **Submitted By:** Operator — `cli-coverage` CI report (Python 3.14.6, **54%** aggregate)  
 **Priority:** MEDIUM  
-**Status:** CHANGE IMPLEMENTED (pending verification) — **Phase 1** @ **v0.8.3.24+2** (74.73%); **Phase 2 (Wave 4)** @ **v0.8.3.24+3** (82% aggregate, module targets met)
+**Status:** CHANGE IMPLEMENTED (pending verification) — **Phase 1** @ **v0.8.3.24+2** (74.73%); **Phase 2 (Wave 4)** @ **v0.8.3.24+3** (82% aggregate, module targets met); **follow-on RW** @ **v0.8.3.24+4** (version re-anchor)
 
 **Implementing Task:** [E08:S03:T24](../epics/epic-08/story-03-automation-scripts/T24-cli-package-test-coverage-gap-closure-fr138.md)
 
@@ -159,7 +159,7 @@ Modules already **≥80%** (`localisation.py`, `main.py`, `init.py`, `validation
 - Epic: **8** — Automation Scripts / repository CI
 - Story: **E08:S03** — Automation Scripts
 - Task: **E08:S03:T24** — CLI package test coverage gap closure (FR-138)
-- Version: `v0.8.3.24+3` (Phase 2 Wave 4 @ MWF delivery); FR-138 closure on **E08:S03:T24**
+- Version: `v0.8.3.24+4` (RW follow-on `--art` re-anchor); FR-138 closure on **E08:S03:T24**
 
 **Kanban Links:**
 
