@@ -11,6 +11,14 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.6.9.40+0] - 24-06-26
+
+E06:S09:T40 — **Kanban documentation setup (RW -k):** BR-112 greenfield orchestrator Install RC gaps intake from SBL attempt 11; task doc, FBU wiring, story/board rows, feedback evidence. SemVer **v0.4.1223+0**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.6.9.40+0.md)
+
+---
+
 ## [0.4.14.11+1] - 24-06-26
 
 E04:S14:T11 — **Change implemented (FR-043):** UKW Step 2.5 gap-discovery scanner, workflow YAML/config, tests, and maintainer gap-stats report. SemVer **v0.4.1222+1**.

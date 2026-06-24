@@ -8,7 +8,7 @@ housekeeping_policy: keep
 
 # Story 008 – Knowledge Base
 
-**Status:** COMPLETE  
+**Status:** IN PROGRESS  
 **Priority:** HIGH  
 **Estimated Effort:** [TBD]  
 **Created:** 2025-12-18  
@@ -47,6 +47,8 @@ housekeeping_policy: keep
 
 - [x] **E05:S08:T07 – Optional Obsidian editor profiles — greenfield install ([FR-121](../../fbu/FR-121-git-internal-maintainer-kb-oss-documentation-surfaces.md))** - ✅ COMPLETE (**v0.5.8.7+1**) — [—IPP—](../../implementation-cycles/IPP-E05S08T07-optional-obsidian-editor-profiles-greenfield-install-fr121.md)
   - Task: [`T07-optional-obsidian-editor-profiles-greenfield-install-fr121`](story-08-knowledge-base/T07-optional-obsidian-editor-profiles-greenfield-install-fr121.md)
+
+- [ ] **E05:S08:T08 – Adopter documentation profile greenfield default ([FR-141](../../fbu/FR-141-adopter-documentation-profile-greenfield-default.md))** - 📋 TODO (HIGH — SBL attempt 11; Obsidian/git default not Docusaurus) — [Task](story-08-knowledge-base/T08-adopter-documentation-profile-greenfield-default-fr141.md) | [#85](https://github.com/RMS-Ltd/ai-dev-kit/issues/85) | —No IPP—
 
 ## Overview
 

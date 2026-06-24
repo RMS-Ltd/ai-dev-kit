@@ -36,7 +36,8 @@ This document provides **complete listings of all FBU items** in the AI Dev Kit 
 
 ### High Priority (Should Have - S)
 
-- **FR-135** – Guided install orchestrator — zero undocumented manual steps - OPEN (HIGH, one-command install; choice menus; sqlite/UKW/ledgers/comprehension in orchestrator) - [FR-135](fbu/FR-135-guided-install-orchestrator-zero-manual-steps.md) | [E06:S09:T38](epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T38-guided-install-orchestrator-fr135.md) | [#85](https://github.com/RMS-Ltd/ai-dev-kit/issues/85)
+- **FR-135** – Guided install orchestrator — zero undocumented manual steps - OPEN (HIGH, one-command install; choice menus; sqlite/UKW/ledgers/comprehension in orchestrator) - [FR-135](fbu/FR-135-guided-install-orchestrator-zero-manual-steps.md) | [E06:S09:T38](epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T38-guided-install-orchestrator-fr135.md) | [BR-112](fbu/BR-112-greenfield-orchestrator-install-rc-gaps.md) | [E06:S09:T40](epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T40-greenfield-orchestrator-install-rc-gaps-br112.md) | [#85](https://github.com/RMS-Ltd/ai-dev-kit/issues/85)
+- **FR-141** – Adopter documentation profile — Obsidian/git greenfield default - OPEN (HIGH, SBL attempt 11; not Docusaurus phantom default) - [FR-141](fbu/FR-141-adopter-documentation-profile-greenfield-default.md) | [E05:S08:T08](epics/epic-05/story-08-knowledge-base/T08-adopter-documentation-profile-greenfield-default-fr141.md) | [#85](https://github.com/RMS-Ltd/ai-dev-kit/issues/85)
 - **FR-118** – Promote Kanban to `docs/kanban/` and retire `project-management/` shell - OPEN (HIGH, RC structural hygiene — inventory + IPW before moves) - [FR-118](fbu/FR-118-promote-kanban-to-docs-kanban-retire-project-management-shell.md) | [E07:S01:T12](epics/epic-07/story-01-codebase-maintenance-tasks/T12-promote-kanban-to-docs-kanban-retire-project-management-fr118.md)
 - **FR-051** – FBU Prioritization Board - ✅ COMPLETED (HIGH, Create prioritization board for FRs, BRs, and UXRs) - [FR-051](fbu/FR-051-fr-br-uxr-prioritization-board.md) | [E06:S06:T01](epics/epic-06/story-06-feature-requests/T01-fr-br-uxr-prioritization-board.md) ✅ *IMPLEMENTED - BOARD CREATED*
 - **FR-045** – ADR-002 Task-Touch Derived Mapping (Kanban → SemVer) - TODO (HIGH, SemVer mapping for task_touch and Kanban integration) - [FR-045](fbu/FR-045-adr-002-task-touch-derived-mapping.md) | [E05:S01:T45](epics/epic-05/story-01-fr-repo/T45-adr-002-task-touch-derived-mapping.md)
@@ -96,11 +97,13 @@ This document provides **complete listings of all FBU items** in the AI Dev Kit 
 
 ### Critical Priority (Must Have - M)
 
+- **BR-112** – Greenfield orchestrator Install RC path bugs and false failure exit - OPEN (CRITICAL, SBL attempt 11 — `validate_install_rc.py` WORKFLOW_ROOT; orchestrator exit 1) - [BR-112](fbu/BR-112-greenfield-orchestrator-install-rc-gaps.md) | [E06:S09:T40](epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T40-greenfield-orchestrator-install-rc-gaps-br112.md) | [#85](https://github.com/RMS-Ltd/ai-dev-kit/issues/85)
 - **BR-038** – Release Workflow Micromanagement and Tool Discovery Issues - TODO (HIGH, Excessive manual intervention, tool discovery problems, and poor error recovery in Release Workflow) - [BR-038](fbu/BR-038-release-workflow-micromanagement-and-tool-discovery-issues.md)
 - **BR-037** – Kanban Install Consumer Board Contamination - IN PROGRESS (CRITICAL, Technical implementation finished, core contamination problem solved, Release Workflow blocked by tooling friction) - [BR-037](fbu/BR-037-kanban-install-consumer-board-contamination.md) | [E06:S01:T37](epics/epic-06/story-01-br-repo/T37-kanban-install-consumer-board-contamination.md)
 
 ### High Priority (Should Have - S)
 
+- **BR-111** – SemVer public surface leaks internal BUILD metadata - OPEN (HIGH, SBL attempt 11 — ADR-031 Option A implementation gap) - [BR-111](fbu/BR-111-semver-public-surface-build-metadata-leak.md) | [E03:S02:T16](epics/epic-03/story-02-versioning-cookbook-and-examples/T16-semver-public-surface-build-leak-br111.md) | [#85](https://github.com/RMS-Ltd/ai-dev-kit/issues/85)
 - **BR-061** – Task-touch SemVer PATCH bumps on every `semver_converter` run (registry over-increment / tag pressure) - TODO (HIGH, `semver_converter.py` vs RW — **E03:S02:T12**, not E6:S06) - [BR-061](fbu/BR-061-semver-task-touch-counter-increments-too-often.md) | [E03:S02:T12](epics/epic-03/story-02-versioning-cookbook-and-examples/T12-implement-task-touch-semver-mapping-mode.md)
 
 ### Medium Priority (Could Have - C)

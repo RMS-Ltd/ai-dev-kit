@@ -1,41 +1,37 @@
 # Starborn Legacy — ADK install attempt 11 (maintainer index)
 
-**Session:** guided KMA / Target Structure Pack (TSP)  
+**Session:** `20260624-attempt-11`  
 **ADK pin:** `v0.4.1171`  
-**Arm:** **B** follow-on — guided KMA (not full install re-run)  
-**GitHub:** [ai-dev-kit #85](https://github.com/RMS-Ltd/ai-dev-kit/issues/85)
+**Arm:** **B** — greenfield shell + **guided KMA** (TSP-anchored)  
+**GitHub:** [ai-dev-kit #85](https://github.com/RMS-Ltd/ai-dev-kit/issues/85)  
+**FR-079 status:** Adopter sign-off **final** @ `2026-06-24T20:00:00Z` — maintainer intake **accepted** (2026-06-24)
 
-**Context:** SBL reverts `dev` to `pre-adk-install`; attempt 11 artifacts are **mirrored on ADK** under this tree (not on SBL `dev`).
-
----
-
-## Outcome (Track A — local, pre-revert)
-
-| Deliverable | Status |
-|-------------|--------|
-| Target E/S/T tree (TSP) | [kanban-reference/TARGET-EST-TREE.md](../kanban-reference/TARGET-EST-TREE.md) |
-| KMA methods | [kanban-reference/KMA-METHODS.md](../kanban-reference/KMA-METHODS.md) |
-| Scoring rubric | [kanban-reference/SCORING-RUBRIC.yaml](../kanban-reference/SCORING-RUBRIC.yaml) |
-| Operator reference tree (attempt 09) | [attempt-09/feedback-package/KMA-REFERENCE-EST-TREE-ATTEMPT-09.md](../attempt-09/feedback-package/KMA-REFERENCE-EST-TREE-ATTEMPT-09.md) |
-| Three-way structural diff | [feedback-package/THREE-WAY-STRUCTURAL-DIFF.md](feedback-package/THREE-WAY-STRUCTURAL-DIFF.md) |
-| Guided migration proposal | [feedback-package/migration-proposal-guided.md](feedback-package/migration-proposal-guided.md) |
-
-**Track B (install execution):** pending — new `dev` from `pre-adk-install` → guided KMA replay.
-
-**Preflight:** [attempt-11-preflight-checklist.md](../attempt-11-preflight-checklist.md)
+**SBL evidence:** `dev` @ `37a607a3` · install+bootstrap @ `eb5f3f52` · `main` merged @ `eb5f3f52`
 
 ---
 
-## Maintainer prep status (2026-06-17)
+## Outcome
 
-| Item | Status |
-|------|--------|
-| Issue [#85](https://github.com/RMS-Ltd/ai-dev-kit/issues/85) opened | ✅ |
-| ADK feedback package mirror (draft) | ✅ |
-| TSP core mirror (`TARGET-EST-TREE`, `KMA-METHODS`, rubric) | ✅ |
-| TSP companion files (remap YAML, folder map, aliases, tools) | ⚠️ On local prep `dev` only — carry at Phase B |
-| SBL remote `dev` branch | ❌ Not pushed (by design until Phase B) |
-| Phase B install execution | ⏳ Pending adopter |
+| Result | Detail |
+|--------|--------|
+| Guided KMA (`synthesize_from_tsp.py`) | **377/377** tasks · **93.99%** structural score |
+| Install RC strict | **PASS** (post adopter recovery) |
+| Orchestrator exit | **1** — Install RC path bug ([BR-112](../../docs/kanban/fbu/BR-112-greenfield-orchestrator-install-rc-gaps.md)) |
+| Sign-off contract | **7 READY / 0 NOT READY / 1 SKIP** |
+| Blind → guided delta | ~62% est. → **93.99%**; **0** ad-hoc KMA scripts |
+| Bootstrap **E02:S02** | **COMPLETE** (T02–T07) |
+| FR-136 adopter replay | **VALIDATED** — guided mode + TSP @ pin `v0.4.1171` |
+
+---
+
+## vs attempt 10 ([#57](https://github.com/RMS-Ltd/ai-dev-kit/issues/57))
+
+| Metric | 10 | 11 |
+|--------|----|----|
+| KMA mode | Blind | **Guided (TSP)** |
+| Structural score | ~62% est. | **93.99%** |
+| Operator manual tweaks | 4 | Encoded in METHODS |
+| Install RC strict | PASS (workarounds) | PASS (recovery) |
 
 ---
 
@@ -45,17 +41,31 @@
 | -------- | ---- |
 | Cover | [feedback-package/SUBMISSION.md](feedback-package/SUBMISSION.md) |
 | Payload | [feedback-package/feedback-payload.json](feedback-package/feedback-payload.json) |
-| FB report | [feedback-package/FB-ADK-GUIDED-KMA-TARGET-STRUCTURE-PACK.md](feedback-package/FB-ADK-GUIDED-KMA-TARGET-STRUCTURE-PACK.md) |
-| Migration proposal | [feedback-package/migration-proposal-guided.md](feedback-package/migration-proposal-guided.md) |
-| Structural diff | [feedback-package/THREE-WAY-STRUCTURAL-DIFF.md](feedback-package/THREE-WAY-STRUCTURAL-DIFF.md) |
+| Install RC | [feedback-package/install-rc-report-final.json](feedback-package/install-rc-report-final.json) |
+| Sign-off | [feedback-package/signoff-report.json](feedback-package/signoff-report.json) |
+| Guided KMA + TSP | [feedback-package/FB-ADK-GUIDED-KMA-TARGET-STRUCTURE-PACK.md](feedback-package/FB-ADK-GUIDED-KMA-TARGET-STRUCTURE-PACK.md) |
+| SemVer BUILD leak | [feedback-package/FB-ADK-dual-semver-build-leaks-into-public-semver-surface.md](feedback-package/FB-ADK-dual-semver-build-leaks-into-public-semver-surface.md) |
+| Docs profile | [feedback-package/FB-ADK-adopter-documentation-profile-obsidian-default.md](feedback-package/FB-ADK-adopter-documentation-profile-obsidian-default.md) |
+| Orchestrator gaps | [feedback-package/FB-ADK-greenfield-orchestrator-install-rc-gaps.md](feedback-package/FB-ADK-greenfield-orchestrator-install-rc-gaps.md) |
 | Execution checklist | [feedback-package/EXECUTION-CHECKLIST.md](feedback-package/EXECUTION-CHECKLIST.md) |
+| Thin pointer | [docs/adk-feedback/attempt-11/README.md](../../docs/adk-feedback/attempt-11/README.md) |
 
-**Thin pointer:** [docs/adk-feedback/attempt-11/README.md](../../docs/adk-feedback/attempt-11/README.md)
+---
+
+## Maintainer intake (2026-06-24)
+
+| FB item | Filed | Task |
+| ------- | ----- | ---- |
+| Guided KMA + TSP | [FR-136](../../docs/kanban/fbu/FR-136-guided-kma-target-structure-pack.md) (pre-shipped) | [E06:S09:T39](../../docs/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T39-guided-kma-target-structure-pack-fr136.md) |
+| Install paths PRIMARY | [UXR-029](../../docs/kanban/fbu/UXR-029-adk-install-path-experiment.md) (carry-forward) | [E06:S09:T36](../../docs/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T36-adopter-path-selector-install-rc-uxr029.md) |
+| SemVer BUILD leak | [BR-111](../../docs/kanban/fbu/BR-111-semver-public-surface-build-metadata-leak.md) | [E03:S02:T16](../../docs/kanban/epics/epic-03/story-02-versioning-cookbook-and-examples/T16-semver-public-surface-build-leak-br111.md) |
+| Docs profile default | [FR-141](../../docs/kanban/fbu/FR-141-adopter-documentation-profile-greenfield-default.md) | [E05:S08:T08](../../docs/kanban/epics/epic-05/story-08-knowledge-base/T08-adopter-documentation-profile-greenfield-default-fr141.md) |
+| Orchestrator / Install RC | [BR-112](../../docs/kanban/fbu/BR-112-greenfield-orchestrator-install-rc-gaps.md) | [E06:S09:T40](../../docs/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T40-greenfield-orchestrator-install-rc-gaps-br112.md) |
 
 ---
 
 ## References
 
-- [attempt-10 README](../attempt-10/README.md) — Install RC PASS baseline
-- [attempt-09 README](../attempt-09/README.md) — operator freeze / Arm B
-- [adk-install-into-sbl README](../README.md)
+- [attempt-10 README](../attempt-10/README.md) — blind KMA baseline
+- [kanban-reference/](../kanban-reference/) — TSP, METHODS, rubric
+- [T26 programme task](../../docs/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T26-starborn-legacy-adk-install-program.md)

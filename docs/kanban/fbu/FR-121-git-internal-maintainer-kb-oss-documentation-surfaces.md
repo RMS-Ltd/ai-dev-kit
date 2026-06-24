@@ -21,6 +21,7 @@ housekeeping_policy: keep
 - [E05:S08:T05](../epics/epic-05/story-08-knowledge-base/T05-reverse-notion-migration-git-internal-maintainer-kb-fr121.md) — Reverse Notion migration: restore full markdown at repo paths (wave 1)
 - [E05:S08:T06](../epics/epic-05/story-08-knowledge-base/T06-adr-026-git-maintainer-authoring-bootstrap-fr121.md) — ADR-026 + agent git-maintainer authoring bootstrap (wave 2)
 - [E05:S08:T07](../epics/epic-05/story-08-knowledge-base/T07-optional-obsidian-editor-profiles-greenfield-install-fr121.md) — Optional Obsidian editor profiles at greenfield install (wave 3)
+- [E05:S08:T08](../epics/epic-05/story-08-knowledge-base/T08-adopter-documentation-profile-greenfield-default-fr141.md) — Adopter documentation profile greenfield default (wave 4 / [FR-141](FR-141-adopter-documentation-profile-greenfield-default.md); SBL attempt 11)
 
 **Supersedes (partial):** Maintainer **SoT** and **Notion-first authoring** from [FR-114](FR-114-split-documentation-surfaces-docusaurus-public-notion-maintainer-kb.md) / [ADR-024](../../architecture/standards-and-adrs/ADR-024-documentation-surfaces-three-surface-model-fr114.md). **Retains:** Docusaurus adopter-public allowlist ([E05:S09:T15](../epics/epic-05/story-09-docusaurus-documentation-portal/T15-docusaurus-adopter-public-publish-allowlist-fr114.md)), maintainer-tree **exclude** from portal CI ([BR-068](BR-068-docusaurus-monorepo-markdown-links-break-strict-production-build.md)).
 

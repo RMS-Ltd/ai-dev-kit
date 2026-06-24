@@ -10,8 +10,8 @@
 
 | Phase | What | Branch | Status |
 |-------|------|--------|--------|
-| **A — Programme prep** | TSP, METHODS, rubric, scorer, feedback **spec** | Old `dev` (`a77fa4b4`) | ✅ Done locally — **not** execution evidence |
-| **B — Install execution** | Full Arm B from `pre-adk-install` + guided KMA | **New** `dev` from `pre-adk-install` | ⏳ Pending |
+| **A — Programme prep** | TSP, METHODS, rubric, scorer, feedback **spec** | Tag `attempt-11-prep` (`a65b7699`) | ✅ Done — **not** execution evidence |
+| **B — Install execution** | Full Arm B from `pre-adk-install` + guided KMA | **New** `dev` from `pre-adk-install` | ✅ Done (`eb5f3f52`; merged to `main`) |
 
 **Do not push** prep-only `dev` for attempt 11 evidence. Issue #85 blob URLs are updated **after** phase B lands on the new `dev`.
 
@@ -20,19 +20,26 @@
 ## Phase B — branch setup
 
 ```bash
-git fetch origin
+git fetch origin --tags
 git checkout pre-adk-install
 git pull origin pre-adk-install   # if needed
-git checkout -b dev                 # or dev-attempt-11 then rename
+git checkout -B dev
+bash <(git show attempt-11-prep:tools/kanban/carry_attempt_11_prep.sh)
 ```
 
-### Carry TSP pack onto new `dev` (pick one)
+**Tags:** `attempt-11-prep-start` → `0d50aa3c` · `attempt-11-prep` → tip (phase A pack).
+
+**Why not cherry-pick?** The first prep commit (`0d50aa3c`) aligns old `dev` kanban files absent on `pre-adk-install`. The carry script path-checkouts from `attempt-11-prep` only (TSP reference, tools, feedback spec).
+
+If `attempt-11-prep` is already on this branch: `./tools/kanban/carry_attempt_11_prep.sh`
+
+### Carry alternatives
 
 | Method | Command / action |
 |--------|------------------|
-| **Cherry-pick** (preferred) | `git cherry-pick 0d50aa3c^..a77fa4b4` (TSP + feedback docs) |
-| **Minimal copy** | `docs/kanban/reference/`, `tools/kanban/build_target_est_tree.py`, `tools/kanban/score_kma_structure.py`, `docs/adk-feedback/attempt-11/`, `temp/sbl-operator-kanban-est-tree-titled.md` |
-| **Regenerate TSP** | Copy `temp/` → `python3 tools/kanban/build_target_est_tree.py` |
+| **Carry script** (preferred) | `./tools/kanban/carry_attempt_11_prep.sh` (default ref: `attempt-11-prep`) |
+| **Manual checkout** | `git checkout attempt-11-prep -- docs/kanban/reference tools/kanban/build_target_est_tree.py tools/kanban/score_kma_structure.py docs/adk-feedback/attempt-11 docs/adk-feedback/README.md` |
+| **Regenerate TSP** | Copy operator tree to `temp/` → `python3 tools/kanban/build_target_est_tree.py` |
 
 Verify after carry:
 
@@ -46,7 +53,7 @@ python3 tools/kanban/score_kma_structure.py --candidate-tsp
 
 ## Phase B — install sequence (layered)
 
-Follow layered install sequence in [adopter-install-attempt-preflight.md](../../../docs/guides/adopter-install-attempt-preflight.md) and [attempt-10 README](../attempt-10/README.md) (PASS baseline). Attempt 11 **diff** at step 5:
+Follow [attempt-09 optimal sequence](../attempt-09/FB-ADK-optimal-greenfield-install-sequence.md). Attempt 11 **diff** at step 5:
 
 | Step | Layer | Attempt 10 | Attempt 11 |
 |------|-------|------------|------------|
@@ -80,13 +87,13 @@ Simulated proposal (reference): [migration-proposal-guided.md](migration-proposa
 
 | Gate | Command / check | Pass |
 |------|-----------------|------|
-| Install RC strict | `validate_install_rc.py --strict` (arm-b) | |
-| Installation | `validate_installation.py` | |
-| Template completeness | `validate_v4_template_completeness.py` | |
-| Story collisions | UXR-017 / BR-083 | 0 duplicate `story-01-*` per epic |
-| Structural score | `python3 tools/kanban/score_kma_structure.py` | ≥ **0.85** (guided target) |
-| Ad-hoc KMA scripts | `find . -name '*kma*' -path '*/scripts/*'` | **0** |
-| SQLite before RW | `.adk/release-state.db` exists pre-RW | |
+| Install RC strict | `validate_install_rc.py --strict` (arm-b) | ✅ (post-recovery) |
+| Installation | `validate_installation.py` | ✅ |
+| Template completeness | `validate_v4_template_completeness.py` | ✅ |
+| Story collisions | UXR-017 / BR-083 | ✅ |
+| Structural score | `python3 tools/kanban/score_kma_structure.py` | ✅ **93.99%** |
+| Ad-hoc KMA scripts | `find . -name '*kma*' -path '*/scripts/*'` | ✅ **0** |
+| SQLite before RW | `.adk/release-state.db` exists pre-RW | ✅ |
 
 ---
 

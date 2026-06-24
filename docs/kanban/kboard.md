@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Board
 
-**Last Updated:** 2026-06-24 (RW: E04:S14:T11)
-**Version:** v0.4.14.11+1
+**Last Updated:** 2026-06-24 (RW: E06:S09:T40)
+**Version:** v0.6.9.40+0
 
 **Active board contract:** **Sole active MoSCOW board** ([ADR-018](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/architecture/standards-and-adrs/ADR-018-single-kanban-board-consolidation.md)). Rows are **live work** (TODO / IN PROGRESS / OPEN / WAITING / PERPETUAL) plus filed **Could Have** backlog. **Verification (V)** band holds task-shipped / FBU-open items (`⏳ WAITING`). Remove **terminal** rows and archive prose (use [`kanban-completed.md`](kanban-completed.md) / [`intake-completed.md`](intake-completed.md)).
 
@@ -28,7 +28,11 @@ housekeeping_policy: keep
 
 ### Should Have (S) - Important Tasks
 
+- **E06:S09:T40** – Greenfield orchestrator Install RC gaps (BR-112) - 📋 TODO (CRITICAL — attempt 11 orchestrator exit 1; validate_install_rc path bug) | [Task](epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T40-greenfield-orchestrator-install-rc-gaps-br112.md) | [BR-112](fbu/BR-112-greenfield-orchestrator-install-rc-gaps.md) | [#85](https://github.com/RMS-Ltd/ai-dev-kit/issues/85) | Kanban init **v0.6.9.40+0** | —No IPP— | Last modified: 2026-06-24 21:00 UTC
 
+- **E03:S02:T16** – SemVer public surface BUILD leak (BR-111) - 📋 TODO (HIGH — README/CHANGELOG show +BUILD; ADR-031 Option A gap) | [Task](epics/epic-03/story-02-versioning-cookbook-and-examples/T16-semver-public-surface-build-leak-br111.md) | [BR-111](fbu/BR-111-semver-public-surface-build-metadata-leak.md) | [#85](https://github.com/RMS-Ltd/ai-dev-kit/issues/85) | —No IPP— | Last modified: 2026-06-24 21:00 UTC
+
+- **E05:S08:T08** – Adopter documentation profile greenfield default (FR-141) - 📋 TODO (HIGH — Obsidian/git default; rc-docs-schema tighten) | [Task](epics/epic-05/story-08-knowledge-base/T08-adopter-documentation-profile-greenfield-default-fr141.md) | [FR-141](fbu/FR-141-adopter-documentation-profile-greenfield-default.md) | [#85](https://github.com/RMS-Ltd/ai-dev-kit/issues/85) | —No IPP— | Last modified: 2026-06-24 21:00 UTC
 ### Verification (V) - Task Shipped, FBU Verification Pending
 
 - **E06:S09:T36** – Adopter Path Selector + Install RC (UXR-029) - ⏳ SHIPPED (HIGH — **v0.6.9.36+3**; AC7 satisfied @ attempt 10) | [Task](epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T36-adopter-path-selector-install-rc-uxr029.md) | [UXR-029](fbu/UXR-029-adk-install-path-experiment.md) | [#52](https://github.com/RMS-Ltd/ai-dev-kit/issues/52) | —No IPP— | Last modified: 2026-06-16 13:57 UTC
