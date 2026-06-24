@@ -11,6 +11,14 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.2.3.13+1] - 24-06-26
+
+E02:S03:T13 — **Change implemented (FR-137):** MWF `delivery` Phase 0 RW intent preflight — fail fast before IPW/IDW on `version.py` mismatch without `--art`; `validate_mwf_delivery_preflight.py`, docs/YAML wiring, pytest. SemVer **v0.4.1220+1**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.3.13+1.md)
+
+---
+
 ## [0.7.1.15+1] - 24-06-26
 
 E07:S01:T15 — **Change implemented (FR-140):** Repository IA steady-state governance — ADR-033, policy, path manifest generator, top-level + drift validators, mover checklist, program wiring. SemVer **v0.4.1219+1**.

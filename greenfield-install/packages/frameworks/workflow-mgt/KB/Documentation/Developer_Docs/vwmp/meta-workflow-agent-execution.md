@@ -29,8 +29,20 @@ housekeeping_policy: keep
 
 | Step | Workflow | Delegation | Completion token |
 | ---- | -------- | ---------- | ---------------- |
+| 0 | RW intent preflight (FR-137) | `validate_mwf_delivery_preflight.py` | proceed or `MWF ABORTED (preflight: RW intent)` |
 | 1 (if no IPP) | IPW | Sub-agent or inline per `ipw.md` | `IPW COMPLETE` |
 | 2 | IDW `--rw` | Parent or sub-agent per `idw.md` | `IDW COMPLETE` (+ RW outcome) |
+
+### Phase 0 — RW intent preflight (FR-137)
+
+Before Leg 1 or resume-only Leg 2 on the `delivery` recipe:
+
+1. Run `validate_mwf_delivery_preflight.py --requested "<E:S:T>"` (add `--art` when on MWF trigger).
+2. **Mismatch without `--art`:** `MWF ABORTED (preflight: RW intent)` — hint `MWF E##:S##:T## delivery --art`; no leg file modifications.
+3. **With `--art`:** preflight passes; forward `--art` to `IDW … --rw` (FR-124-F5).
+4. **Aligned `version.py`:** preflight passes; chain unchanged from pre-FR-137.
+
+Distinct from RW Step 1 (`validate_branch_context.py`) and RW Step 1d — orchestrator scope only.
 
 **Resume:** When linked IPP/ICW already exists on the host task, skip Leg 1 and run Leg 2 only.
 

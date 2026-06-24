@@ -12,6 +12,12 @@ mwf:
   recipes:
     delivery:
       normalize_aliases: ["ipw,idw,rw"]
+      preflight:
+        rw_task_intent:
+          script: "packages/frameworks/workflow-mgt/scripts/validation/validate_mwf_delivery_preflight.py"
+          flags:
+            art: "--art"
+          abort_token: "MWF ABORTED (preflight: RW intent)"
       idw_chain_flags:
         rw: "--rw"
         push: "--push"

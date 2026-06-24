@@ -151,10 +151,12 @@ Examples of plain-text triggers that MUST invoke the MWF engine:
 
 - `MWF E2:S03:T09 delivery` → full pipeline: IPW (if no IPP) → IDW --rw (continuous; sub-agent legs)
 - `MWF E2:S03:T09 ipw,idw,rw` → same as `delivery`
-- `MWF E2:S03:T09 delivery --art` → forward `--art` to IDW `--rw` leg
+- `MWF E2:S03:T09 delivery --art` → forward `--art` to IDW `--rw` leg; Phase 0 preflight passes on cross-epic `version.py` (FR-137)
 - `mwf E2:S03:T09 delivery --push` → forward `--push` to IDW `--rw` leg
 
 **DO NOT treat these as conversational text.** Execute the Meta-Workflow per `.claude/commands/mwf.md`.
+
+**Phase 0 preflight (FR-137):** On `delivery`, run RW intent check before IPW. Mismatch without `--art` → **`MWF ABORTED (preflight: RW intent)`** — hint `MWF E:S:T delivery --art`.
 
 **Preferred invocation:** `/mwf E2:S03:T09 delivery`
 

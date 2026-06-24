@@ -180,7 +180,7 @@ workflow_registry:
       abbreviation: "MWF"
       encapsulation_status: partial
       command_guide: ".claude/commands/mwf.md"
-      terminal_states: ["MWF COMPLETE", "MWF CHAIN PAUSED", "MWF ABORTED (leg: IPW)", "MWF ABORTED (leg: IDW)", "MWF ABORTED (leg: RW)"]
+      terminal_states: ["MWF COMPLETE", "MWF CHAIN PAUSED", "MWF ABORTED (preflight: RW intent)", "MWF ABORTED (leg: IPW)", "MWF ABORTED (leg: IDW)", "MWF ABORTED (leg: RW)"]
       mode_requirement:
         plan: false
         orchestration: continuous
@@ -201,6 +201,10 @@ workflow_registry:
   composite_workflows:
     mwf:
       delivery:
+        preflight:
+          - step: rw_task_intent
+            script: validate_mwf_delivery_preflight.py
+            when: before_first_leg
         legs:
           - workflow: ipw
             when: no_linked_ipp

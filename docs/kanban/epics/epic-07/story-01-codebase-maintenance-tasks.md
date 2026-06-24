@@ -10,13 +10,13 @@ housekeeping_policy: keep
 
 **Status:** IN PROGRESS  
 **Priority:** HIGH  
-**Last updated:** 2026-06-23 (v0.7.1.13+2 – RW -d docs reconciliation)
-**Version:** v0.7.1.13+2
+**Last updated:** 2026-06-24 (v0.7.1.15+1 – Kanban documentation setup)
+**Version:** v0.7.1.15+1
 **Estimated Effort:** [TBD]  
 **Actual Effort:** [TBD]  
 **Started:** 2025-12-09  
 **Completed:** [Reopened – TBD]  
-**Version:** v0.7.1.14+0
+**Version:** v0.7.1.15+1
 **Code:** E7S01
 
 ---

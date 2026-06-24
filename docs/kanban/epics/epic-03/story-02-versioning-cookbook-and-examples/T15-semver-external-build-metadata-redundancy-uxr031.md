@@ -9,11 +9,11 @@ housekeeping_policy: keep
 # E03:S02:T15 — SemVer external `+BUILD` redundancy evaluation & policy decision (UXR-031)
 
 **Task ID:** E03:S02:T15  
-**Status:** COMPLETE  
+**Status:** COMPLETE (user verified)  
 **Priority:** MEDIUM  
 **Estimated Effort:** Low–Medium (policy + docs; possible follow-on code)  
 **Created:** 2026-06-16  
-**Last updated:** 2026-06-23 (v0.3.2.15+2 — Option A core-only display)  
+**Last updated:** 2026-06-24 (operator verified Actions core-only run title @ v0.4.1219)  
 **Version:** v0.3.2.15+2  
 **Version Anchor:** v0.3.2.15+2  
 **Code:** E03S02T15
@@ -80,6 +80,14 @@ This task does not change internal allocation invariants by itself; it creates t
 4. If Option A is selected, produce a follow-on plan scoped to “display/presentation”, preserving internal traceability and allocation invariants.
 
 **Outcome:** Option A implemented @ v0.3.2.15+2 (SemVer v0.4.1202); ADR-031 amended; presentation-layer only — mapping/tag invariants unchanged.
+
+---
+
+## User verification
+
+**Verified:** 2026-06-24 (operator)
+
+**Evidence:** GitHub Actions **Greenfield release packages #202** (`05d0565`) — run title `Release v0.4.1219: …` shows **core-only** external SemVer (no `+BUILD` suffix). Confirms Option A on the RW commit-subject → Actions display path (pending check from V-band @ v0.3.2.15+2).
 
 ---
 

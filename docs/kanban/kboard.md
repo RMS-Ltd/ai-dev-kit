@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Board
 
-**Last Updated:** 2026-06-24 (RW: E07:S01:T14)
-**Version:** v0.7.1.13+2
+**Last Updated:** 2026-06-24 (RW: E02:S03:T13)
+**Version:** v0.2.3.13+1
 
 **Active board contract:** **Sole active MoSCOW board** ([ADR-018](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/architecture/standards-and-adrs/ADR-018-single-kanban-board-consolidation.md)). Rows are **live work** (TODO / IN PROGRESS / OPEN / WAITING / PERPETUAL) plus filed **Could Have** backlog. **Verification (V)** band holds task-shipped / FBU-open items (`⏳ WAITING`). Remove **terminal** rows and archive prose (use [`kanban-completed.md`](kanban-completed.md) / [`intake-completed.md`](intake-completed.md)).
 
@@ -28,13 +28,8 @@ housekeeping_policy: keep
 
 ### Should Have (S) - Important Tasks
 
-- **E07:S01:T15** – Repository IA steady-state governance (FR-140) - ✅ COMPLETE (v0.7.1.15+1) | [Task](epics/epic-07/story-01-codebase-maintenance-tasks/T15-repository-information-architecture-steady-state-governance-fr140.md) | [FR-140](fbu/FR-140-repository-information-architecture-steady-state-governance.md) | [IPP](implementation-cycles/IPP-E07S01T15-repository-information-architecture-steady-state-governance.md) | Last modified: 2026-06-24 12:30 UTC
-
-- **E02:S03:T13** – MWF `delivery` RW intent preflight (FR-137) - 📋 TODO (HIGH — kanban-init **v0.2.3.13+0**) | [Task](epics/epic-02/story-03-additional-workflows-and-examples/T13-mwf-delivery-rw-intent-preflight-fr137.md) | [FR-137](fbu/FR-137-mwf-delivery-rw-intent-preflight-art-forwarding.md) | —No IPP— | Last modified: 2026-06-17 16:17 UTC
 
 ### Verification (V) - Task Shipped, FBU Verification Pending
-
-- **E03:S02:T15** – SemVer core-only external display (UXR-031 Option A) - ⏳ SHIPPED (MEDIUM — **v0.3.2.15+2**; verify Actions run title = core-only on next push) | [Task](epics/epic-03/story-02-versioning-cookbook-and-examples/T15-semver-external-build-metadata-redundancy-uxr031.md) | [UXR-031](fbu/UXR-031-semver-plusbuild-redundancy-in-task-touch.md) | [ADR-031](../architecture/standards-and-adrs/ADR-031-external-semver-build-metadata-display-policy.md) | [—IPP—](../../implementation-cycles/IPP-E03S02T15-semver-external-build-metadata-redundancy.md) | Last modified: 2026-06-23 10:16 UTC
 
 - **E06:S09:T36** – Adopter Path Selector + Install RC (UXR-029) - ⏳ SHIPPED (HIGH — **v0.6.9.36+3**; AC7 satisfied @ attempt 10) | [Task](epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T36-adopter-path-selector-install-rc-uxr029.md) | [UXR-029](fbu/UXR-029-adk-install-path-experiment.md) | [#52](https://github.com/RMS-Ltd/ai-dev-kit/issues/52) | —No IPP— | Last modified: 2026-06-16 13:57 UTC
 
