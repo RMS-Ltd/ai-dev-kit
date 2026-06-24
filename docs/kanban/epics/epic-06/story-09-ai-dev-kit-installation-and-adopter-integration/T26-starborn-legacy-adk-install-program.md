@@ -234,7 +234,7 @@ See [kanban-migration-experiment-report](../../../../../../adk-install-into-sbl/
 | Result | Detail |
 |--------|--------|
 | **Guided KMA** | **93.99%** structural score (377 tasks); blind ~62% → guided delta validated [FR-136](../../../fbu/FR-136-guided-kma-target-structure-pack.md) |
-| **Install RC strict** | **PASS** (post adopter recovery); orchestrator exit **1** → [BR-112](../../../fbu/BR-112-greenfield-orchestrator-install-rc-gaps.md) |
+| **Install RC strict** | **PASS**; orchestrator exit **0** on replay @ `v0.4.1224` — [VERIFICATION-BR112](../../../../../../adk-install-into-sbl/attempt-11/VERIFICATION-BR112.md) ([BR-112](../../../fbu/BR-112-greenfield-orchestrator-install-rc-gaps.md) **FIXED**) |
 | **Bootstrap E02:S02** | **COMPLETE** (T02–T07); RW mode C wired |
 | **Sign-off** | **7 READY** |
 
@@ -254,7 +254,7 @@ See [kanban-migration-experiment-report](../../../../../../adk-install-into-sbl/
 | Priority | Item | Owner | Notes |
 |----------|------|-------|-------|
 | — | ~~SBL install program (T26)~~ | — | ✅ **COMPLETE** @ **v0.6.9.26+4** — attempt 10 Arm B PASS |
-| **P0** | **BR-112** — orchestrator Install RC false failure | [T40](T40-greenfield-orchestrator-install-rc-gaps-br112.md) | Blocks FR-135 AC2/AC3 |
+| **P0** | ~~**BR-112** — orchestrator Install RC false failure~~ | [T40](T40-greenfield-orchestrator-install-rc-gaps-br112.md) **COMPLETE** @ v0.6.9.40+2 | [VERIFICATION-BR112](../../../../../../adk-install-into-sbl/attempt-11/VERIFICATION-BR112.md) |
 | **P1** | **BR-111** — SemVer public BUILD leak | [E03:S02:T16](../../../epic-03/story-02-versioning-cookbook-and-examples/T16-semver-public-surface-build-leak-br111.md) | ADR-031 Option A gap |
 | **P1** | **FR-141** — adopter docs profile default | [E05:S08:T08](../../../epic-05/story-08-knowledge-base/T08-adopter-documentation-profile-greenfield-default-fr141.md) | FR-121 wave 4 |
 | **P1** | Programme **Phase 2** — fynd.deals / Confidentia Arm A recon | Maintainer | Per [adopter-install-attempt-preflight](../../../../guides/adopter-install-attempt-preflight.md) |

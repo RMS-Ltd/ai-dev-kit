@@ -11,6 +11,14 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.6.9.40+2] - 24-06-26
+
+E06:S09:T40 — **Fixed (verified):** BR-112 orchestrator Install RC on SBL replay @ pin `v0.4.1224` — EXIT=0, RC strict PASS. SemVer **v0.4.1227+2**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.6.9.40+2.md)
+
+---
+
 ## [0.6.9.26+6] - 24-06-26
 
 E06:S09:T26 — **Change implemented:** SBL `main` analysis in operator-rework COMPARISON (guided KMA @ 93.99%). SemVer **v0.4.1226+6**.

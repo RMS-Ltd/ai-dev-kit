@@ -1,0 +1,32 @@
+Install RC — profile=arm-b project=/Users/ruari/Projects/sbl-attempt-11
+  [PASS] [blocking] rc-rw-config: rw-config.yaml present
+         rw-config.yaml OK
+  [PASS] [blocking] rc-sqlite-before-rw: SQLite release state before first RW
+         exists: .adk/release-state.db
+  [PASS] [blocking] rc-docs-schema: Documentation surfaces or schema doc linked
+         documentation_surfaces in rw-config
+  [PASS] [blocking] rc-version-file: version_file exists
+         exists: src/myproject/version.py
+  [PASS] [blocking] rc-changelog: main_changelog exists
+         exists: CHANGELOG.md
+  [PASS] [blocking] rc-single-kanban-board: Sole active kanban board (kboard.md)
+         exists: docs/kanban/kboard.md
+  [PASS] [blocking] rc-kanban-completed-db: kanban-completed SQLite ledger when configured
+         kanban_completed not configured — skipped
+  [SKIP] rc-ukw-trigger: UKW trigger present in .cursorrules when standard bundle
+         (when clause not applicable)
+  [SKIP] rc-ukw-delivery-trigger: UKW trigger present when delivery bundle configured
+         (when clause not applicable)
+  [PASS] [blocking] rc-legacy-archived: Legacy PM archived outside active kanban root
+         found: docs-pre-ai-dev-kit
+  [PASS] [blocking] rc-kanban-v4: v4 template completeness (when kanban installed)
+         exit 0
+  [SKIP] rc-kma-migration-map: KMA migration map valid when present
+         (when clause not applicable)
+  [PASS] [blocking] rc-zero-adhoc-kma: No ad-hoc KMA scripts in scripts/ or tools/
+         glob matches 0 <= 0
+  [PASS] [blocking] rc-comprehension: Comprehension test (restore ≠ migrate)
+         marker in COMPREHENSION.md
+
+Summary: 11/14 passed, 3 skipped, 0 failed
+Result: PASS

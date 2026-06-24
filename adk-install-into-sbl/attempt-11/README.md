@@ -16,7 +16,7 @@
 |--------|--------|
 | Guided KMA (`synthesize_from_tsp.py`) | **377/377** tasks · **93.99%** structural score |
 | Install RC strict | **PASS** (post adopter recovery) |
-| Orchestrator exit | **1** — Install RC path bug ([BR-112](../../docs/kanban/fbu/BR-112-greenfield-orchestrator-install-rc-gaps.md)) |
+| Orchestrator exit | **0** on pin `v0.4.1224` replay — [BR-112 verified](VERIFICATION-BR112.md) @ v0.6.9.40+2 (was **1** on pin `v0.4.1171`) |
 | Sign-off contract | **7 READY / 0 NOT READY / 1 SKIP** |
 | Blind → guided delta | ~62% est. → **93.99%**; **0** ad-hoc KMA scripts |
 | Bootstrap **E02:S02** | **COMPLETE** (T02–T07) |
@@ -47,6 +47,7 @@
 | SemVer BUILD leak | [feedback-package/FB-ADK-dual-semver-build-leaks-into-public-semver-surface.md](feedback-package/FB-ADK-dual-semver-build-leaks-into-public-semver-surface.md) |
 | Docs profile | [feedback-package/FB-ADK-adopter-documentation-profile-obsidian-default.md](feedback-package/FB-ADK-adopter-documentation-profile-obsidian-default.md) |
 | Orchestrator gaps | [feedback-package/FB-ADK-greenfield-orchestrator-install-rc-gaps.md](feedback-package/FB-ADK-greenfield-orchestrator-install-rc-gaps.md) |
+| BR-112 verification | [VERIFICATION-BR112.md](VERIFICATION-BR112.md) · [install-rc-report-br112.txt](feedback-package/install-rc-report-br112.txt) · [orchestrator transcript](feedback-package/20260624T200937Z-orchestrator-arm-b.txt) |
 | Execution checklist | [feedback-package/EXECUTION-CHECKLIST.md](feedback-package/EXECUTION-CHECKLIST.md) |
 | Thin pointer | [docs/adk-feedback/attempt-11/README.md](../../docs/adk-feedback/attempt-11/README.md) |
 
@@ -60,7 +61,7 @@
 | Install paths PRIMARY | [UXR-029](../../docs/kanban/fbu/UXR-029-adk-install-path-experiment.md) (carry-forward) | [E06:S09:T36](../../docs/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T36-adopter-path-selector-install-rc-uxr029.md) |
 | SemVer BUILD leak | [BR-111](../../docs/kanban/fbu/BR-111-semver-public-surface-build-metadata-leak.md) | [E03:S02:T16](../../docs/kanban/epics/epic-03/story-02-versioning-cookbook-and-examples/T16-semver-public-surface-build-leak-br111.md) |
 | Docs profile default | [FR-141](../../docs/kanban/fbu/FR-141-adopter-documentation-profile-greenfield-default.md) | [E05:S08:T08](../../docs/kanban/epics/epic-05/story-08-knowledge-base/T08-adopter-documentation-profile-greenfield-default-fr141.md) |
-| Orchestrator / Install RC | [BR-112](../../docs/kanban/fbu/BR-112-greenfield-orchestrator-install-rc-gaps.md) | [E06:S09:T40](../../docs/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T40-greenfield-orchestrator-install-rc-gaps-br112.md) |
+| Orchestrator / Install RC | [BR-112](../../docs/kanban/fbu/BR-112-greenfield-orchestrator-install-rc-gaps.md) **verified** | [E06:S09:T40](../../docs/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T40-greenfield-orchestrator-install-rc-gaps-br112.md) **COMPLETE** @ v0.6.9.40+2 |
 
 ---
 

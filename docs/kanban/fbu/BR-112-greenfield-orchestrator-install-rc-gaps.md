@@ -11,23 +11,27 @@ housekeeping_policy: keep
 **Bug ID:** BR-112  
 **Priority:** CRITICAL  
 **Severity:** CRITICAL (orchestrator reports failure when install largely succeeded; blocks FR-135 / FR-080 AC)  
-**Status:** OPEN  
+**Status:** FIXED  
 **Kanban init:** v0.6.9.40+0 (RW -k E06:S09:T40 — `--art --dpz`)  
-**Attempted fix:** v0.6.9.40+1 — Install RC path + orchestrator wiring (pending SBL replay verification)  
+**Attempted fix:** v0.6.9.40+1 — Install RC path + orchestrator wiring  
+**Verified fix:** v0.6.9.40+2 — SBL `pre-adk-install` replay @ pin `v0.4.1224`; orchestrator EXIT=0; Install RC strict PASS  
 **Source:** SBL install attempt 11 — [FB mirror](../../../adk-install-into-sbl/attempt-11/feedback-package/FB-ADK-greenfield-orchestrator-install-rc-gaps.md)  
+**Verification:** [VERIFICATION-BR112](../../../adk-install-into-sbl/attempt-11/VERIFICATION-BR112.md)  
 **Related:** [FR-135](FR-135-guided-install-orchestrator-zero-manual-steps.md) · [FR-080](FR-080-greenfield-installation-process.md) · [E06:S09:T38](../epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T38-guided-install-orchestrator-fr135.md) · [UXR-029](UXR-029-adk-install-path-experiment.md) · [FR-108](FR-108-install-setup-error-code-registry-and-emission.md) · [#85](https://github.com/RMS-Ltd/ai-dev-kit/issues/85)  
-**Implementing Task:** [E06:S09:T40](../epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T40-greenfield-orchestrator-install-rc-gaps-br112.md)  
-**SBL evidence:** `adk-install-into-sbl/attempt-11/feedback-package/` · pin `v0.4.1171` · codes `ADK-I01.S03`, `ADK-I03.E90`, `ADK-I04.E01`
+**Implementing Task:** [E06:S09:T40](../epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T40-greenfield-orchestrator-install-rc-gaps-br112.md) — **COMPLETE**  
+**SBL evidence:** `adk-install-into-sbl/attempt-11/` · replay pin `v0.4.1224` · codes `ADK-I01.S03`, `ADK-I03.E90`, `ADK-I04.E01`
 
 ---
 
 ## Summary
 
-`install_greenfield_path.py` with Arm B + `--run-install-rc --install-rc-strict` **exited 1** on pin **`v0.4.1171`** even though kanban fresh, SQLite init, and post-kanban sign-off largely succeeded. Terminal Install RC **crashed** in `validate_install_rc.py` due to wrong `WORKFLOW_ROOT` (`scripts/` instead of `workflow-mgt/`). Adopter recovery (config, comprehension scaffold, local vendor path fixes) was required for Install RC strict **PASS** — same class as attempt 10 manual tail.
+`install_greenfield_path.py` with Arm B + `--run-install-rc --install-rc-strict` **exited 1** on pin **`v0.4.1171`** even though kanban fresh, SQLite init, and post-kanban sign-off largely succeeded. Terminal Install RC **crashed** in `validate_install_rc.py` due to wrong `WORKFLOW_ROOT` (`scripts/` instead of `workflow-mgt/`). Adopter recovery was required for Install RC strict **PASS** on the broken pin.
+
+**Fixed @ v0.6.9.40+1; verified @ v0.6.9.40+2** on fresh `pre-adk-install` @ `aa9ff624` with pin `v0.4.1224`: orchestrator **EXIT=0**, Install RC **11/14 passed, 3 skipped, 0 failed**, sign-off **7 READY**, no vendor patches.
 
 ---
 
-## Observed
+## Observed (original failure — pin v0.4.1171)
 
 | Step | Result |
 |------|--------|
@@ -39,30 +43,37 @@ housekeeping_policy: keep
 | Install RC (orchestrator) | **CRASH** — `FileNotFoundError` for `scripts/config/install-rc-checklist.yaml` |
 | Orchestrator exit | **1** — "Install RC FAILED" |
 
-Post-recovery: Install RC strict **PASS** (10/11 blocking, 1 skip).
+Post-recovery on broken pin: Install RC strict **PASS** (10/11 blocking, 1 skip) — adopter intervention required.
 
 ---
 
 ## Root cause (kit-side)
 
-1. `validate_install_rc.py`: `WORKFLOW_ROOT = SCRIPT_DIR.parent` resolves to `scripts/` not package root.
-2. Orchestrator does not scaffold `COMPREHENSION.md` / forward install input YAML before RC.
-3. RC subprocess may invoke bare `python` instead of venv interpreter.
-4. Pipeline order: sign-off before kanban produces false NOT READY noise.
+1. `validate_install_rc.py`: `WORKFLOW_ROOT = SCRIPT_DIR.parent` resolved to `scripts/` not package root.
+2. Orchestrator did not scaffold `COMPREHENSION.md` / forward install input YAML before RC.
+3. RC subprocess invoked bare `python` instead of venv interpreter.
+4. Pipeline order: sign-off before kanban produced false NOT READY noise.
 
 ---
 
-## Expected
+## Fix and verification
 
-- Orchestrator Arm B + strict RC exits **0** when all blocking rows pass without adopter vendor patches.
-- `validate_install_rc.py` resolves checklist path from vendor root / package layout correctly in greenfield tarball.
-- FR-135 AC2/AC3 satisfied: ≤5 choice prompts; sqlite + UKW wired without hand edit.
+| Release | Change |
+|---------|--------|
+| v0.6.9.40+1 | Path resolution, checklist CLI, venv-aware commands, legacy orchestrator wiring |
+| v0.6.9.40+2 | SBL replay evidence — [VERIFICATION-BR112](../../../adk-install-into-sbl/attempt-11/VERIFICATION-BR112.md) |
 
 ---
 
 ## Acceptance criteria
 
-- [ ] Greenfield tarball replay: orchestrator command from attempt 11 FB exits 0; Install RC strict PASS.
-- [ ] No adopter edits under `vendor/ai-dev-kit/` required for RC path resolution.
-- [ ] pytest covers `WORKFLOW_ROOT` / checklist path from adopter `vendor-root`.
-- [ ] [T38](epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T38-guided-install-orchestrator-fr135.md) AC2/AC3 closable on SBL replay evidence.
+- [x] Greenfield tarball replay: orchestrator command exits 0; Install RC strict PASS.
+- [x] No adopter edits under `vendor/ai-dev-kit/` required for RC path resolution.
+- [x] pytest covers `WORKFLOW_ROOT` / checklist path from adopter `vendor-root`.
+- [x] [T38](epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T38-guided-install-orchestrator-fr135.md) AC2/AC3 closable on arm-b replay evidence.
+
+---
+
+## Follow-up (non-blocking)
+
+- Wire `config/greenfield-rw-install-input.yaml` `version_file` on legacy arm-b (mode C still scaffolds `src/myproject/version.py`).

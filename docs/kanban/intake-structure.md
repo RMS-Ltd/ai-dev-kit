@@ -97,7 +97,7 @@ This document provides **complete listings of all FBU items** in the AI Dev Kit 
 
 ### Critical Priority (Must Have - M)
 
-- **BR-112** – Greenfield orchestrator Install RC path bugs and false failure exit - OPEN (CRITICAL, SBL attempt 11 — `validate_install_rc.py` WORKFLOW_ROOT; orchestrator exit 1) - [BR-112](fbu/BR-112-greenfield-orchestrator-install-rc-gaps.md) | [E06:S09:T40](epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T40-greenfield-orchestrator-install-rc-gaps-br112.md) | [#85](https://github.com/RMS-Ltd/ai-dev-kit/issues/85)
+- **BR-112** – Greenfield orchestrator Install RC path bugs and false failure exit - FIXED (CRITICAL, verified @ v0.6.9.40+2 — SBL replay pin `v0.4.1224`) - [BR-112](fbu/BR-112-greenfield-orchestrator-install-rc-gaps.md) | [E06:S09:T40](epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T40-greenfield-orchestrator-install-rc-gaps-br112.md) **COMPLETE** | [VERIFICATION-BR112](../../../adk-install-into-sbl/attempt-11/VERIFICATION-BR112.md) | [#85](https://github.com/RMS-Ltd/ai-dev-kit/issues/85)
 - **BR-038** – Release Workflow Micromanagement and Tool Discovery Issues - TODO (HIGH, Excessive manual intervention, tool discovery problems, and poor error recovery in Release Workflow) - [BR-038](fbu/BR-038-release-workflow-micromanagement-and-tool-discovery-issues.md)
 - **BR-037** – Kanban Install Consumer Board Contamination - IN PROGRESS (CRITICAL, Technical implementation finished, core contamination problem solved, Release Workflow blocked by tooling friction) - [BR-037](fbu/BR-037-kanban-install-consumer-board-contamination.md) | [E06:S01:T37](epics/epic-06/story-01-br-repo/T37-kanban-install-consumer-board-contamination.md)
 

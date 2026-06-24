@@ -11,7 +11,7 @@
 
 **A comprehensive toolkit for AI-assisted development workflows**
 
-**Version (SemVer):** `v0.4.1226+6` | **Internal:** `v0.6.9.26+6` (E06:S09:T26 — SBL main analysis in operator-rework archive) | **Last Updated:** 2026-06-24
+**Version (SemVer):** `v0.4.1227+2` | **Internal:** `v0.6.9.40+2` (E06:S09:T40 — BR-112 verified on SBL orchestrator replay) | **Last Updated:** 2026-06-24
 
 > **SemVer ordering (`task_touch`):** Compare releases by **core** (`0.4.1198` here), not by `+BUILD`. The `+1` suffix mirrors internal build metadata for traceability only — see [ADR-031](docs/architecture/standards-and-adrs/ADR-031-external-semver-build-metadata-display-policy.md).
 
