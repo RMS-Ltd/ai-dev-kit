@@ -137,7 +137,7 @@ function MDXProvider(properties) {
 
 },
 1010(module) {
-module.exports = JSON.parse('{"permalink":"/ai-dev-kit/blog/RELEASE-NOTES-POLICY","editUrl":"https://github.com/RMS-Ltd/ai-dev-kit/tree/main/portal/blog/blog/RELEASE-NOTES-POLICY.md","source":"@site/blog/RELEASE-NOTES-POLICY.md","title":"Significant release notes policy (RC ≥ 1)","description":"{/ truncate /}","date":"2026-06-23T13:47:04.000Z","tags":[],"readingTime":0.65,"hasTruncateMarker":true,"authors":[],"frontMatter":{},"unlisted":false,"nextItem":{"title":"Getting Docusaurus Working","permalink":"/ai-dev-kit/blog/getting-docusaurus-working"}}')
+module.exports = JSON.parse('{"permalink":"/ai-dev-kit/blog/RELEASE-NOTES-POLICY","editUrl":"https://github.com/RMS-Ltd/ai-dev-kit/tree/main/portal/blog/blog/RELEASE-NOTES-POLICY.md","source":"@site/blog/RELEASE-NOTES-POLICY.md","title":"Significant release notes policy (RC ≥ 1)","description":"{/ truncate /}","date":"2026-06-24T15:39:59.000Z","tags":[],"readingTime":0.65,"hasTruncateMarker":true,"authors":[],"frontMatter":{},"unlisted":false,"nextItem":{"title":"Getting Docusaurus Working","permalink":"/ai-dev-kit/blog/getting-docusaurus-working"}}')
 
 },
 

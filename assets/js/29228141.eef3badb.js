@@ -1283,7 +1283,9 @@ function _createMdxContent(props) {
               children: "/mwf E02:S03:T09 delivery"
             })]
           }), (0,jsx_runtime.jsxs)(_components.td, {
-            children: ["Full pipeline: IPW (if no IPP) → IDW ", (0,jsx_runtime.jsx)(_components.code, {
+            children: ["Full pipeline: ", (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Phase 0 RW intent preflight"
+            }), " → IPW (if no IPP) → IDW ", (0,jsx_runtime.jsx)(_components.code, {
               children: "--rw"
             }), " (continuous; sub-agent legs per BR-102)"]
           })]
@@ -1303,11 +1305,15 @@ function _createMdxContent(props) {
               children: "MWF E02:S03:T09 delivery --art"
             })
           }), (0,jsx_runtime.jsxs)(_components.td, {
-            children: ["Forward ", (0,jsx_runtime.jsx)(_components.code, {
+            children: ["Phase 0 preflight with ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "--art"
+            }), "; forward ", (0,jsx_runtime.jsx)(_components.code, {
               children: "--art"
             }), " to IDW ", (0,jsx_runtime.jsx)(_components.code, {
               children: "--rw"
-            }), " leg"]
+            }), " leg (cross-epic / ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "dev"
+            }), " adoption)"]
           })]
         }), (0,jsx_runtime.jsxs)(_components.tr, {
           children: [(0,jsx_runtime.jsx)(_components.td, {
@@ -1338,6 +1344,28 @@ function _createMdxContent(props) {
             children: ["Tool access; parseable ", (0,jsx_runtime.jsx)(_components.code, {
               children: "E:S:T"
             }), " and recipe"]
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Phase 0 preflight (FR-137)"
+            })
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.code, {
+              children: "version.py"
+            }), " mismatch ", (0,jsx_runtime.jsx)(_components.strong, {
+              children: "without"
+            }), " ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "--art"
+            }), " → ", (0,jsx_runtime.jsx)(_components.strong, {
+              children: (0,jsx_runtime.jsx)(_components.code, {
+                children: "MWF ABORTED (preflight: RW intent)"
+              })
+            }), " before IPW; hint: ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "MWF E:S:T delivery --art"
+            }), ". Common on ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "dev"
+            }), " when delivering a different epic than current version anchor."]
           })]
         }), (0,jsx_runtime.jsxs)(_components.tr, {
           children: [(0,jsx_runtime.jsx)(_components.td, {
@@ -1570,7 +1598,21 @@ function _createMdxContent(props) {
           }), (0,jsx_runtime.jsxs)(_components.td, {
             children: [(0,jsx_runtime.jsx)(_components.strong, {
               children: "Preferred"
-            }), " full pipeline (IPW → IDW → RW); no manual mode-switch between legs"]
+            }), " full pipeline (preflight → IPW → IDW → RW); no manual mode-switch between legs"]
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "MWF E02:S16:T15 delivery --art"
+            })
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: ["Same on ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "dev"
+            }), " / cross-epic when ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "version.py"
+            }), " ≠ requested ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "E:S:T"
+            }), " (FR-137)"]
           })]
         }), (0,jsx_runtime.jsxs)(_components.tr, {
           children: [(0,jsx_runtime.jsxs)(_components.td, {
