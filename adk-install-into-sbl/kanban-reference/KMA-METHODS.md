@@ -40,7 +40,7 @@ Attempt 10 KMA was **policy-only and blind**: it routed legacy stories via `DUPL
 | [TITLE-RESOLUTION-RULES.md](TITLE-RESOLUTION-RULES.md) | M04 — title enrichment |
 | [SCORING-RUBRIC.yaml](SCORING-RUBRIC.yaml) | M08 — pass thresholds |
 
-Builder: `tools/kanban/build_target_est_tree.py` (regenerate TSP from `temp/sbl-operator-kanban-est-tree-titled.md`).
+Builder: `tools/kanban/build_target_est_tree.py` (regenerate TSP from [`OPERATOR-REWORKED-EST-TREE.md`](../attempt-10/operator-rework-archive/OPERATOR-REWORKED-EST-TREE.md)).
 
 ---
 

@@ -63,7 +63,7 @@ Pick **one** method ([EXECUTION-CHECKLIST](attempt-11/feedback-package/EXECUTION
 | Method | Action |
 |--------|--------|
 | **Cherry-pick** (preferred) | `git cherry-pick 0d50aa3c^..a77fa4b4` from local prep `dev` |
-| **Minimal copy** | Copy from ADK mirror or local prep: `docs/kanban/reference/`, `tools/kanban/*.py`, `docs/adk-feedback/attempt-11/`, `temp/sbl-operator-kanban-est-tree-titled.md` |
+| **Minimal copy** | Copy from ADK mirror: `docs/kanban/reference/`, `tools/kanban/*.py`, `docs/adk-feedback/attempt-11/`, [`attempt-10/operator-rework-archive/OPERATOR-REWORKED-EST-TREE.md`](attempt-10/operator-rework-archive/OPERATOR-REWORKED-EST-TREE.md) |
 
 ### TSP pack completeness (verify all exist on execution branch)
 

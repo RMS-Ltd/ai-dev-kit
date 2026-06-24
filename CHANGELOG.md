@@ -11,6 +11,14 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.6.9.26+5] - 24-06-26
+
+E06:S09:T26 — **Change implemented:** Attempt-10 operator-rework comparison archive (blind KMA candidate vs operator titled tree); recovered from SBL local `temp/`. SemVer **v0.4.1225+5**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.6.9.26+5.md)
+
+---
+
 ## [0.6.9.40+1] - 24-06-26
 
 E06:S09:T40 — **Attempted fix (BR-112):** Install RC `WORKFLOW_ROOT` path bug, checklist CLI alignment, venv-aware RC commands, legacy orchestrator config/sqlite/COMPREHENSION wiring. SemVer **v0.4.1224+1**.

@@ -12,9 +12,9 @@ housekeeping_policy: keep
 **Status:** COMPLETE  
 **Priority:** HIGH  
 **Created:** 2026-06-09  
-**Last updated:** 2026-06-24 (attempt **11** guided KMA PASS — AC21 intake @ maintainer mirror)  
-**Version:** v0.6.9.26+4  
-**Version Anchor:** v0.6.9.26+4  
+**Last updated:** 2026-06-24 (operator-rework archive @ **v0.6.9.26+5**)  
+**Version:** v0.6.9.26+5  
+**Version Anchor:** v0.6.9.26+5  
 **Code:** E06S09T26
 
 **Predecessor (closed):** [E06:S09:T25](T25-starborn-legacy-greenfield-install-diary-triage-uxr025.md) — UXR-025 triage + F4/F5 fixes @ **v0.6.9.25+3**
@@ -358,6 +358,21 @@ See [kanban-migration-experiment-report](../../../../../../adk-install-into-sbl/
 | P1 | F23 | ✅ **FILED** → [BR-108](../../../fbu/BR-108-detect-existing-structure-zero-padded-epic-names.md) / [T32](T32-detect-structure-zero-padded-epic-br108.md) |
 | P2 | F11/F16 | Post-install deferred-Kanban hint; clarify consumer layout vs v3.2 spec |
 | P2 | BR-086 | ✅ **CLOSED** via [T28](T28-v32-fresh-install-signoff-story-padding-br105.md) **v0.6.9.28+2** (F18 contract alignment) |
+
+---
+
+## Maintainer mirror — operator-rework archive (@ v0.6.9.26+5)
+
+Durable comparison pack for attempt-10 **blind KMA candidate → operator-reworked** tree (not TSP vs guided score):
+
+| Artifact | Path |
+| -------- | ---- |
+| Archive index | [operator-rework-archive](../../../../../../adk-install-into-sbl/attempt-10/operator-rework-archive/README.md) |
+| Side A (564 legacy tokens) | [KMA-CANDIDATE-EST-TREE.md](../../../../../../adk-install-into-sbl/attempt-10/operator-rework-archive/KMA-CANDIDATE-EST-TREE.md) |
+| Side B (366 operator export) | [OPERATOR-REWORKED-EST-TREE.md](../../../../../../adk-install-into-sbl/attempt-10/operator-rework-archive/OPERATOR-REWORKED-EST-TREE.md) |
+| Comparison + GH issue archaeology | [COMPARISON.md](../../../../../../adk-install-into-sbl/attempt-10/operator-rework-archive/COMPARISON.md) |
+
+Recovered from SBL local `temp/sbl-operator-kanban-est-tree-titled.md` (gitignored; absent from closed [#52](https://github.com/RMS-Ltd/ai-dev-kit/issues/52) / [#57](https://github.com/RMS-Ltd/ai-dev-kit/issues/57)).
 
 ---
 
