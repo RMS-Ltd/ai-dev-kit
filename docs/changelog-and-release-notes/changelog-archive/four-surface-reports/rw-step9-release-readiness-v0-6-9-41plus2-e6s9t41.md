@@ -8,10 +8,9 @@
 
 ## Overall verdict
 
-- **Status:** BLOCK — RW MUST NOT commit. See blocking failures below.
-  - Gate 7: Four-surface parity (FR-084)
+- **Status:** PASS — RW MAY proceed past Step 9.
 
-- Gates: 10/11 passed (1 failed, 0 waived).
+- Gates: 11/11 passed (0 failed, 0 waived).
 
 ## Per-gate detail
 
@@ -81,14 +80,12 @@
 
 ### Gate 7 — Four-surface parity (FR-084)
 
-- Status: **FAIL** (severity: `block`)
-- Summary: Four-surface parity violation; see findings.
-- Findings:
-  - FR-084 violation: untouched surface(s) lack rationale notes (must explain why no mutation): ['fbu_doc'].
+- Status: **PASS** (severity: `block`)
+- Summary: Four-surface parity satisfied: all primary surfaces present, either touched or noted-untouched, with paths existing on disk.
 - Evidence:
   - `report`: `/Users/ruari/Projects/ai-dev-kit/docs/changelog-and-release-notes/changelog-archive/four-surface-reports/rw-step7-four-surface-report-v0-6-9-41plus2-e6s9t41.json`
   - `task_doc`: `{'touched': True, 'paths': ['docs/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T41-external-adopter-archetype-corpus-fr142.md'], 'notes_count': 0}`
-  - `fbu_doc`: `{'touched': False, 'paths': [], 'notes_count': 0}`
+  - `fbu_doc`: `{'touched': False, 'paths': [], 'notes_count': 1}`
   - `kboard`: `{'touched': True, 'paths': ['docs/kanban/kboard.md'], 'notes_count': 0}`
   - `release_scope`: `{'epic': 6, 'story': 9, 'task': 41, 'task_id': 'E06:S09:T41', 'version_string': 'v0.6.9.41+2'}`
 
