@@ -1,0 +1,74 @@
+{
+  "auxiliary_surfaces": {
+    "epic_doc": {
+      "changes": [],
+      "notes": ["No epic-level narrative change required for Wave 1 release"],
+      "paths": ["docs/kanban/epics/epic-06/epic-06.md"],
+      "surface": "epic_doc",
+      "touched": false
+    },
+    "story_doc": {
+      "changes": [
+        "E06:S09:T41 checklist — IN PROGRESS @ v0.6.9.41+1"
+      ],
+      "paths": [
+        "docs/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration.md"
+      ],
+      "surface": "story_doc",
+      "touched": true
+    }
+  },
+  "contract": "FR-092 / ADR-018 (RW Step 7 four-surface reconciliation)",
+  "invocation_context": "rw_step_7",
+  "release_scope": {
+    "epic": 6,
+    "story": 9,
+    "task": 41,
+    "task_id": "E06:S09:T41",
+    "version_string": "v0.6.9.41+1"
+  },
+  "stamp_evidence": {
+    "E06:S09:T41": "rw-step7-stamp-evidence-v0-6-9-41plus1-e6s9t41.json"
+  },
+  "summary": {
+    "stamps_appended_with_evidence": 1,
+    "stamps_preserved_existing": 0,
+    "stamps_skipped_no_evidence": 0,
+    "total_changes": 4,
+    "touched_surfaces": ["task_doc", "fbu_doc", "kboard"],
+    "untouched_surfaces": ["epic_doc"]
+  },
+  "surfaces": {
+    "task_doc": {
+      "changes": [
+        "Version anchor v0.6.9.41+1",
+        "Deliverable table evidence links",
+        "Gate table G1/G2/G3"
+      ],
+      "paths": [
+        "docs/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T41-external-adopter-archetype-corpus-fr142.md"
+      ],
+      "surface": "task_doc",
+      "touched": true
+    },
+    "fbu_doc": {
+      "changes": [
+        "FR-142 requirement checkboxes + version anchor v0.6.9.41+1"
+      ],
+      "paths": [
+        "docs/kanban/fbu/FR-142-external-adopter-archetype-corpus-install-validation.md"
+      ],
+      "surface": "fbu_doc",
+      "touched": true
+    },
+    "kboard": {
+      "changes": [
+        "E06:S09:T41 row — IN PROGRESS @ v0.6.9.41+1; Last modified stamp with evidence"
+      ],
+      "paths": ["docs/kanban/kboard.md"],
+      "surface": "kboard",
+      "touched": true
+    }
+  },
+  "timestamp_utc": "2026-06-25 13:16 UTC"
+}

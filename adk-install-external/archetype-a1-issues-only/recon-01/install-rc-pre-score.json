@@ -1,0 +1,15 @@
+{
+  "schema_version": "1.0.0",
+  "archetype_id": "A1",
+  "subject_label": "subject-A1",
+  "recon_date": "2026-06-25",
+  "method": "synthetic_fixture",
+  "fixture_path": "tests/fixtures/adopter-corpora/archetype-a1-issues-only",
+  "adoption_path_hypothesis": "path-1",
+  "blocking_fail_predicted": 9,
+  "advisory_fail_predicted": 4,
+  "novel_gap_hypothesis": "path-selector-misfire-no-kanban",
+  "full_install_recommended": true,
+  "full_install_gate": "G1-UXR-029-phase-4",
+  "notes": "Issues-only OSS shape; TODO.md flat backlog without docs/kanban. Predict path selector and greenfield default confusion."
+}

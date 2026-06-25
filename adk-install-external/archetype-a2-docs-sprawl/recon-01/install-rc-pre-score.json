@@ -1,0 +1,15 @@
+{
+  "schema_version": "1.0.0",
+  "archetype_id": "A2",
+  "subject_label": "subject-A2",
+  "recon_date": "2026-06-25",
+  "method": "synthetic_fixture",
+  "fixture_path": "tests/fixtures/adopter-corpora/archetype-a2-docs-sprawl",
+  "adoption_path_hypothesis": "arm-a",
+  "blocking_fail_predicted": 7,
+  "advisory_fail_predicted": 5,
+  "novel_gap_hypothesis": "structure-detection-sprawl",
+  "full_install_recommended": true,
+  "full_install_gate": "G1-UXR-029-phase-4",
+  "notes": "Multiple doc roots (docs/, doc/, PROJECT.md) without kanban tree. Stress structure detection and KMA ingest proposal quality."
+}

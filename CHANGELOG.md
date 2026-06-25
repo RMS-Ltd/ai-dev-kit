@@ -11,6 +11,14 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.6.9.41+1] - 25-06-26
+
+E06:S09:T41 — **Change implemented:** IDW Wave 1 — external adopter archetype programme (diversity matrix, `adk-install-external/`, recon A1/A2/A5, CI fixtures). SemVer **v0.4.1230+1**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.6.9.41+1.md)
+
+---
+
 ## [0.6.9.26+7] - 25-06-26
 
 E06:S09:T26 — **Change implemented:** RW `-k` kanban init for SBL attempt 11 FR-079 programme acceptance (`--art`). Guided KMA 93.99%; [#85](https://github.com/RMS-Ltd/ai-dev-kit/issues/85). SemVer **v0.4.1229+7**.

@@ -14,7 +14,9 @@ housekeeping_policy: keep
 **Submitted By:** Maintainer (operator strategy — post-SBL install programme)  
 **Priority:** MEDIUM (Should Have — MoSCOW **S**)  
 **Status:** OPEN  
-**Version anchor:** v0.6.9.41+0 (RW -k kanban init)
+**Version anchor:** v0.6.9.41+1 (Wave 1 @ IDW)
+
+**Wave 1 evidence:** v0.6.9.41+1 — diversity matrix, `adk-install-external/`, synthetic recon A1/A2/A5, CI fixtures (IDW)
 
 **Implementing Task:** [E06:S09:T41](../epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T41-external-adopter-archetype-corpus-fr142.md)
 
@@ -50,20 +52,20 @@ Expenses Tracker already proved that **one external shape** finds bugs operator 
 
 ### Functional
 
-- [ ] **FR-142-F1:** Publish an **adopter diversity matrix** — dimensions (PM shape, doc topology, stack, repo age, CI, engagement level) with **3–5 named archetypes** and selection criteria (not “maximum entropy” trawling).
-- [ ] **FR-142-F2:** Define **Phase 5 sequencing** in the install programme: runs **after** UXR-029 Phase 4 synthesis (Arm A attempts + path selector at RC); does **not** block fynd.deals / Confidentia work.
-- [ ] **FR-142-F3:** **Recon-first protocol** per archetype: local clone → structure map → Install RC checklist **pre-score** → full install attempt only when recon predicts a **novel** gap class.
-- [ ] **FR-142-F4:** Maintainer index layout for external attempts (mirror `adk-install-into-sbl/attempt-NN/` pattern): `adk-install-external/` or equivalent with archetype id, recon report, optional FR-079 package.
-- [ ] **FR-142-F5:** **Fixture extraction pipeline** — anonymized mini-trees under repo test/fixture scope (e.g. KMA ingest corpora, Install RC profile inputs) derived from archetype patterns; no secrets or project-identifying content in kit.
+- [x] **FR-142-F1:** Publish an **adopter diversity matrix** — dimensions (PM shape, doc topology, stack, repo age, CI, engagement level) with **3–5 named archetypes** and selection criteria (not “maximum entropy” trawling).
+- [x] **FR-142-F2:** Define **Phase 5 sequencing** in the install programme: runs **after** UXR-029 Phase 4 synthesis (Arm A attempts + path selector at RC); does **not** block fynd.deals / Confidentia work.
+- [x] **FR-142-F3:** **Recon-first protocol** per archetype: local clone → structure map → Install RC checklist **pre-score** → full install attempt only when recon predicts a **novel** gap class.
+- [x] **FR-142-F4:** Maintainer index layout for external attempts (mirror `adk-install-into-sbl/attempt-NN/` pattern): `adk-install-external/` or equivalent with archetype id, recon report, optional FR-079 package.
+- [x] **FR-142-F5:** **Fixture extraction pipeline** — anonymized mini-trees under repo test/fixture scope (e.g. KMA ingest corpora, Install RC profile inputs) derived from archetype patterns; no secrets or project-identifying content in kit.
 - [ ] **FR-142-F6:** Cross-link archetype findings back to **Install RC rows**, path selector (ADR-030), and KMA depth model (FR-133) when gaps are path-agnostic vs path-specific.
-- [ ] **FR-142-F7:** Document **ethics / ops constraints**: local-only clones; no commits to third-party repos; anonymize published write-ups; permissive-license preference for full-install archetypes.
+- [x] **FR-142-F7:** Document **ethics / ops constraints**: local-only clones; no commits to third-party repos; anonymize published write-ups; permissive-license preference for full-install archetypes.
 
 ### Non-functional
 
-- [ ] **FR-142-NF1:** Archetype count capped (**3–5** initial; expand only with synthesis justification) — avoid unbounded GH trawl debt.
+- [x] **FR-142-NF1:** Archetype count capped (**3–5** initial; expand only with synthesis justification) — avoid unbounded GH trawl debt.
 - [ ] **FR-142-NF2:** Each archetype attempt produces **actionable** output: FR/BR/UXR intake, Install RC row proposal, or fixture — not diary-only noise.
-- [ ] **FR-142-NF3:** Programme remains **maintainer-operated**; external repos are **subjects**, not cooperative adopters (FR-079 optional, not required).
-- [ ] **FR-142-NF4:** Fixtures must be **CI-runnable** (size-bounded, no network at test time).
+- [x] **FR-142-NF3:** Programme remains **maintainer-operated**; external repos are **subjects**, not cooperative adopters (FR-079 optional, not required).
+- [x] **FR-142-NF4:** Fixtures must be **CI-runnable** (size-bounded, no network at test time).
 
 ---
 
@@ -81,11 +83,11 @@ Expenses Tracker already proved that **one external shape** finds bugs operator 
 
 ## Acceptance criteria
 
-- [ ] **AC1:** Diversity matrix + Phase 5 sequencing documented in maintainer KB and linked from [adopter-install-attempt-preflight](../../guides/adopter-install-attempt-preflight.md).
-- [ ] **AC2:** At least **3** archetypes recon-scored against Install RC; recon reports in maintainer index.
-- [ ] **AC3:** At least **1** full install attempt on an archetype where recon predicted a novel gap; outcome filed (FR-079-style package or maintainer synthesis).
-- [ ] **AC4:** At least **1** anonymized fixture tree committed (or staged behind IPW) with pytest or Install RC hook referencing it.
-- [ ] **AC5:** UXR-029 updated with Phase 5 pointer and synthesis note on operator-repo vs external-archetype coverage.
+- [x] **AC1:** Diversity matrix + Phase 5 sequencing documented in maintainer KB and linked from [adopter-install-attempt-preflight](../../guides/adopter-install-attempt-preflight.md).
+- [x] **AC2:** At least **3** archetypes recon-scored against Install RC; recon reports in maintainer index. *(synthetic fixture recon; live subject upgrade pending)*
+- [ ] **AC3:** At least **1** full install attempt on an archetype where recon predicted a novel gap; outcome filed (FR-079-style package or maintainer synthesis). *(BLOCKED G1)*
+- [x] **AC4:** At least **1** anonymized fixture tree committed (or staged behind IPW) with pytest or Install RC hook referencing it.
+- [x] **AC5:** UXR-029 updated with Phase 5 pointer and synthesis note on operator-repo vs external-archetype coverage.
 
 ---
 

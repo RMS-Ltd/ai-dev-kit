@@ -73,7 +73,19 @@ Phase 4 — Synthesis → Adopter Path Selector at RC
 Phase 5 — External adopter archetype corpus ([FR-142](FR-142-external-adopter-archetype-corpus-install-validation.md) / [E06:S09:T41](../epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T41-external-adopter-archetype-corpus-fr142.md))
 ```
 
-**Artifacts:** FR-079 feedback packages per attempt; scorecard JSON; maintainer indexes under `adk-install-into-sbl/`; Phase 5 external recon under `adk-install-external/` (planned — [FR-142](FR-142-external-adopter-archetype-corpus-install-validation.md)).
+**Artifacts:** FR-079 feedback packages per attempt; scorecard JSON; maintainer indexes under `adk-install-into-sbl/`; Phase 5 external recon under [`adk-install-external/`](../../../adk-install-external/README.md) ([FR-142](FR-142-external-adopter-archetype-corpus-install-validation.md) / [E06:S09:T41](../epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T41-external-adopter-archetype-corpus-fr142.md)).
+
+### Coverage synthesis — operator repos vs external archetypes
+
+| Programme | Repos / subjects | Primary coverage | Blind spots addressed by Phase 5 |
+| --------- | ---------------- | ---------------- | -------------------------------- |
+| **UXR-029 controlled** | SBL, fynd.deals, Confidentia | Messy mature kanban, brownfield governance, path selector at RC | — |
+| **Phase 5 archetypes** | A1, A2, A5 (v1) | Issues-only backlog, docs sprawl, minimal non-empty (FR-080 control) | No-kanban path selector, structure detection sprawl, empty-vs-minimal |
+| **Precedent** | Expenses Tracker (external) | SemVer / setup UX | BR-087, UXR-016, UXR-017 |
+
+**Phase 5 status (@ E06:S09:T41 IDW Wave 1):** Diversity matrix + `adk-install-external/` index live; three synthetic recon reports + CI fixtures for A1/A2/A5. Live subject recon and full installs **blocked on G1** (AC6 Arm A + Phase 4 synthesis) unless operator waiver.
+
+**Matrix:** [external-adopter-diversity-matrix.md](../../knowledge/analysis/projects/external-adopter-diversity-matrix.md)
 
 ---
 
