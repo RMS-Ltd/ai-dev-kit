@@ -38,7 +38,7 @@ def rc_mod():
     return mod
 
 
-def _minimal_rw_config(root: Path, *, sqlite: bool = False) -> None:
+def _minimal_rw_config(root: Path, *, sqlite: bool = False, adopter_sot: str = "git") -> None:
     lines = [
         "version_file: src/app/version.py",
         "main_changelog: CHANGELOG.md",
@@ -51,12 +51,13 @@ def _minimal_rw_config(root: Path, *, sqlite: bool = False) -> None:
         "documentation_surfaces:",
         "  maintainer_kb:",
         "    sot: git",
+        "  adopter_public:",
+        f"    sot: {adopter_sot}",
     ]
+    if adopter_sot == "docusaurus":
+        lines.append("    allowlist_ref: portal/docusaurus.config.js")
     if sqlite:
         lines.append("release_state_backend: sqlite")
-        lines.append("documentation_surfaces:")
-        lines.append("  maintainer_kb:")
-        lines.append("    sot: git")
     (root / "rw-config.yaml").write_text("\n".join(lines) + "\n", encoding="utf-8")
     (root / "src" / "app").mkdir(parents=True, exist_ok=True)
     (root / "src" / "app" / "version.py").write_text('VERSION = "0.1.0"\n', encoding="utf-8")
@@ -141,3 +142,34 @@ def test_command_check_uses_sys_executable_for_python_alias(tmp_path, rc_mod, mo
     ok, _ = rc_mod._run_check(tmp_path, rc_mod._read_rw_config(tmp_path), contract, spec)
     assert ok
     assert calls[0][0] == sys.executable
+
+
+def test_docs_schema_git_native_passes_without_portal(tmp_path, rc_mod):
+    _minimal_rw_config(tmp_path, adopter_sot="git")
+    contract = rc_mod._load_contract(_CONTRACT)
+    report = rc_mod.evaluate_profile(tmp_path, contract, "greenfield", strict=True)
+    docs_rows = [r for r in report.rows if r.id == "rc-docs-schema"]
+    assert len(docs_rows) == 1
+    assert docs_rows[0].passed
+    assert "git-native" in docs_rows[0].detail
+
+
+def test_docs_schema_docusaurus_without_portal_fails(tmp_path, rc_mod):
+    _minimal_rw_config(tmp_path, adopter_sot="docusaurus")
+    contract = rc_mod._load_contract(_CONTRACT)
+    report = rc_mod.evaluate_profile(tmp_path, contract, "greenfield", strict=True)
+    docs_rows = [r for r in report.rows if r.id == "rc-docs-schema"]
+    assert len(docs_rows) == 1
+    assert not docs_rows[0].passed
+    assert "portal" in docs_rows[0].detail.lower()
+
+
+def test_docs_schema_docusaurus_with_portal_passes(tmp_path, rc_mod):
+    _minimal_rw_config(tmp_path, adopter_sot="docusaurus")
+    portal = tmp_path / "portal"
+    portal.mkdir()
+    (portal / "docusaurus.config.js").write_text("module.exports = {}\n", encoding="utf-8")
+    contract = rc_mod._load_contract(_CONTRACT)
+    report = rc_mod.evaluate_profile(tmp_path, contract, "greenfield", strict=True)
+    docs_rows = [r for r in report.rows if r.id == "rc-docs-schema"]
+    assert docs_rows[0].passed

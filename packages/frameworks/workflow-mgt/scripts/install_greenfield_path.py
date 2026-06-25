@@ -25,7 +25,7 @@ import subprocess
 import sys
 from datetime import datetime, timezone
 from pathlib import Path
-from typing import List, Optional, Tuple
+from typing import List, Optional
 
 _SCRIPTS_DIR = Path(__file__).resolve().parent
 if str(_SCRIPTS_DIR) not in sys.path:
@@ -118,6 +118,7 @@ def build_rw_command(
     config: Optional[Path],
     non_interactive: bool,
     maintainer_editor_profile: Optional[str] = None,
+    adopter_public_sot: Optional[str] = None,
 ) -> List[str]:
     rw_script = (
         frameworks_base
@@ -141,6 +142,8 @@ def build_rw_command(
         cmd.append("--non-interactive")
     if maintainer_editor_profile is not None:
         cmd.extend(["--maintainer-editor-profile", maintainer_editor_profile])
+    if adopter_public_sot is not None:
+        cmd.extend(["--adopter-public-sot", adopter_public_sot])
     return cmd
 
 
@@ -467,6 +470,7 @@ def run_guided_install(
     config_path: Optional[Path],
     dry_run: bool,
     maintainer_editor_profile: Optional[str],
+    adopter_public_sot: Optional[str] = None,
 ) -> int:
     """Execute FR-135 phases A–F on a resolved InstallProfile."""
     ni = profile.non_interactive
@@ -503,6 +507,7 @@ def run_guided_install(
         config=rw_config_path,
         non_interactive=ni,
         maintainer_editor_profile=maintainer_editor_profile,
+        adopter_public_sot=adopter_public_sot,
     )
     kanban_cmd = build_kanban_command(
         frameworks_base,
@@ -629,6 +634,13 @@ def main() -> int:
         help="Forward maintainer editor profile to RW installer (FR-121 / E05:S08:T07).",
     )
     parser.add_argument(
+        "--adopter-public-sot",
+        type=str,
+        choices=("git", "docusaurus"),
+        default=None,
+        help="Forward adopter-public docs surface to RW installer (FR-141 / E05:S08:T08).",
+    )
+    parser.add_argument(
         "--adoption-path",
         choices=("greenfield", "arm-a", "arm-b", "strangler"),
         default=None,
@@ -710,6 +722,7 @@ def main() -> int:
                 config_path=config_path,
                 dry_run=args.dry_run,
                 maintainer_editor_profile=args.maintainer_editor_profile,
+                adopter_public_sot=args.adopter_public_sot,
             )
 
     # Legacy orchestrator path (pre FR-135)
@@ -738,6 +751,7 @@ def main() -> int:
         config=config_path,
         non_interactive=args.non_interactive,
         maintainer_editor_profile=args.maintainer_editor_profile,
+        adopter_public_sot=args.adopter_public_sot,
     )
     kanban_cmd = build_kanban_command(
         frameworks_base,
@@ -774,7 +788,7 @@ def main() -> int:
         print("  • KMA — kit first pass on archived legacy only")
     else:
         print("\nPost-install manual steps (until fully orchestrated):")
-        print("  • Apply DOCUMENTATION_SCHEMA.md profile (documentation_surfaces in rw-config)")
+        print("  • Documentation surfaces: git-native adopter docs default (rw-config documentation_surfaces)")
         print("  • UKW / cursorrules wiring if not emitted by RW installer")
 
     if args.run_install_rc:

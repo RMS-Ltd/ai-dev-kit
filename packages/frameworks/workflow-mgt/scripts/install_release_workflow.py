@@ -16,6 +16,7 @@ Usage:
     --mode: Preset mode (a=Simple RW, b=RW+Versioning, c=Full Stack)
     --check-deps: Verify installer dependencies and exit (0=OK, 1=missing)
     --maintainer-editor-profile: none | obsidian-personal | obsidian-team (FR-121; default none)
+    --adopter-public-sot: git | docusaurus (FR-141; default git for greenfield/private adopters)
 """
 
 import argparse
@@ -227,6 +228,9 @@ OBSIDIAN_PERSONAL_QUICKSTART_TEMPLATE = (
 )
 MAINTAINER_EDITOR_PROFILES = ("none", "obsidian-personal", "obsidian-team")
 DEFAULT_MAINTAINER_EDITOR_PROFILE = "none"
+ADOPTER_PUBLIC_SOT_VALUES = ("git", "docusaurus")
+DEFAULT_ADOPTER_PUBLIC_SOT = "git"
+DEFAULT_DOCUSAURUS_ALLOWLIST_REF = "portal/docusaurus.config.js"
 OBSIDIAN_PERSONAL_QUICKSTART_REL = "docs/maintainer/OBSIDIAN-QUICKSTART.md"
 OBSIDIAN_TEAM_GITIGNORE_LINES = (
     "# Obsidian — team profile (E05:S08:T07); stable config under .obsidian/ is committed",
@@ -879,6 +883,38 @@ def normalize_maintainer_editor_profile(value: Optional[str]) -> str:
     return normalized
 
 
+def normalize_adopter_public_sot(value: Optional[str]) -> str:
+    """Return a valid adopter_public.sot or raise ValueError."""
+    if value is None or value == "":
+        return DEFAULT_ADOPTER_PUBLIC_SOT
+    normalized = value.strip().lower()
+    if normalized not in ADOPTER_PUBLIC_SOT_VALUES:
+        allowed = ", ".join(ADOPTER_PUBLIC_SOT_VALUES)
+        raise ValueError(f"Invalid adopter_public.sot '{value}' (allowed: {allowed})")
+    return normalized
+
+
+def resolve_adopter_public_sot(
+    config: Dict,
+    *,
+    cli_sot: Optional[str] = None,
+    non_interactive: bool = False,
+) -> str:
+    """Resolve adopter_public documentation surface (FR-141 / E05:S08:T08)."""
+    if cli_sot is not None:
+        return normalize_adopter_public_sot(cli_sot)
+    if config.get("adopter_public_sot") is not None:
+        return normalize_adopter_public_sot(str(config["adopter_public_sot"]))
+    ds = config.get("documentation_surfaces")
+    if isinstance(ds, dict):
+        adopter = ds.get("adopter_public")
+        if isinstance(adopter, dict) and adopter.get("sot"):
+            return normalize_adopter_public_sot(str(adopter["sot"]))
+    if non_interactive:
+        return DEFAULT_ADOPTER_PUBLIC_SOT
+    return DEFAULT_ADOPTER_PUBLIC_SOT
+
+
 def merge_gitignore_lines(project_root: Path, lines: Tuple[str, ...], *, dry_run: bool = False) -> bool:
     """Append gitignore lines idempotently. Returns True if file was modified."""
     gitignore_path = project_root / ".gitignore"
@@ -1065,6 +1101,10 @@ def collect_config_non_interactive(
         cli_profile=maintainer_editor_profile,
         non_interactive=True,
         interactive_wizard=False,
+    )
+    config["adopter_public_sot"] = resolve_adopter_public_sot(
+        config,
+        non_interactive=True,
     )
     return config
 
@@ -1297,7 +1337,11 @@ def collect_config_interactive(
         non_interactive=non_interactive,
         interactive_wizard=True,
     )
-    
+    config["adopter_public_sot"] = resolve_adopter_public_sot(
+        config,
+        non_interactive=non_interactive,
+    )
+
     return config
 
 
@@ -1377,19 +1421,28 @@ def generate_rw_config_yaml(config: Dict) -> str:
     profile = normalize_maintainer_editor_profile(
         config.get("maintainer_editor_profile", DEFAULT_MAINTAINER_EDITOR_PROFILE)
     )
-    lines.extend([
+    adopter_sot = resolve_adopter_public_sot(config)
+    doc_lines = [
         "# FR-121 / ADR-026 (E05:S08:T06) — documentation surface authority",
+        "# FR-141 (E05:S08:T08) — git-native adopter docs default; Docusaurus opt-in",
         "documentation_surfaces:",
         "  maintainer_kb:",
         "    sot: git  # git | external (non-default)",
         "  adopter_public:",
-        "    sot: docusaurus",
-        "    allowlist_ref: portal/docusaurus.config.js",
+        f"    sot: {adopter_sot}  # git (default) | docusaurus (opt-in)",
+    ]
+    if adopter_sot == "docusaurus":
+        allowlist = str(
+            config.get("adopter_public_allowlist_ref", DEFAULT_DOCUSAURUS_ALLOWLIST_REF)
+        ).strip()
+        doc_lines.append(f"    allowlist_ref: {allowlist}")
+    doc_lines.extend([
         "  external_kb:  # optional enterprise; not used by ai-dev-kit OSS",
         "    provider: none  # none | notion",
         f"maintainer_editor_profile: {profile}  # none | obsidian-personal | obsidian-team",
         "",
     ])
+    lines.extend(doc_lines)
     
     return "\n".join(lines)
 
@@ -1558,6 +1611,13 @@ Brownfield (existing repo):
         default=None,
         help='Maintainer editor profile (FR-121 / E05:S08:T07); default none when non-interactive',
     )
+    parser.add_argument(
+        '--adopter-public-sot',
+        type=str,
+        choices=list(ADOPTER_PUBLIC_SOT_VALUES),
+        default=None,
+        help='Adopter-public documentation surface (FR-141 / E05:S08:T08); default git when non-interactive',
+    )
 
     args = parser.parse_args()
 
@@ -1648,12 +1708,22 @@ Brownfield (existing repo):
             non_interactive=args.non_interactive or bool(_locale_tag),
             interactive_wizard=False,
         )
+        config["adopter_public_sot"] = resolve_adopter_public_sot(
+            config,
+            cli_sot=args.adopter_public_sot,
+            non_interactive=args.non_interactive or bool(_locale_tag),
+        )
     else:
         config = collect_config_interactive(
             project_root,
             args.mode,
             non_interactive=args.non_interactive or bool(_locale_tag),
             maintainer_editor_profile=args.maintainer_editor_profile,
+        )
+        config["adopter_public_sot"] = resolve_adopter_public_sot(
+            config,
+            cli_sot=args.adopter_public_sot,
+            non_interactive=args.non_interactive or bool(_locale_tag),
         )
     
     # Generate rw-config.yaml

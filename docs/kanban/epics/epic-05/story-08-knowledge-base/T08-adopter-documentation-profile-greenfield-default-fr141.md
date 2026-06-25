@@ -9,10 +9,10 @@ housekeeping_policy: keep
 # E05:S08:T08 — Adopter documentation profile greenfield default (FR-141)
 
 **Task ID:** E05:S08:T08  
-**Status:** TODO  
+**Status:** COMPLETE  
 **Priority:** HIGH  
 **Created:** 2026-06-24  
-**Last updated:** 2026-06-24 (intake — SBL attempt 11 / #85)  
+**Last updated:** 2026-06-25 (✅ COMPLETE v0.5.8.8+1 — FR-141 git-native default)  
 **Code:** E05S08T08
 
 **Upstream:** [FR-141](../../../fbu/FR-141-adopter-documentation-profile-greenfield-default.md)  
@@ -28,6 +28,16 @@ FR-121 wave 4: change greenfield default `documentation_surfaces` from maintaine
 
 ---
 
+## Input
+
+- [IPP-E05S08T08 — Adopter documentation profile greenfield default](../../../../implementation-cycles/IPP-E05S08T08-adopter-documentation-profile-greenfield-default.md)
+- [FR-141](../../../fbu/FR-141-adopter-documentation-profile-greenfield-default.md)
+- [FR-121](../../../fbu/FR-121-git-internal-maintainer-kb-oss-documentation-surfaces.md)
+- [ADR-026](../../../../architecture/standards-and-adrs/ADR-026-git-internal-maintainer-kb-fr121.md)
+- [E05:S08:T07](T07-optional-obsidian-editor-profiles-greenfield-install-fr121.md)
+
+---
+
 ## Scope
 
 - `install_release_workflow.py` / `rw-config.yaml` default `documentation_surfaces`
@@ -39,12 +49,38 @@ FR-121 wave 4: change greenfield default `documentation_surfaces` from maintaine
 
 ## Acceptance criteria
 
-- [ ] **AC1:** Private adopter fresh install: default profile is git/Obsidian-oriented; no phantom `portal/` requirement.
-- [ ] **AC2:** `rc-docs-schema` blocks or fails when declared Docusaurus surface lacks allowlist/portal tree.
-- [ ] **AC3:** SBL attempt 11 class replay: Install RC PASS with coherent on-disk docs scaffold.
+- [x] **AC1:** Private adopter fresh install: default profile is git/Obsidian-oriented; no phantom `portal/` requirement.
+- [x] **AC2:** `rc-docs-schema` blocks or fails when declared Docusaurus surface lacks allowlist/portal tree.
+- [x] **AC3:** SBL attempt 11 class replay: Install RC PASS with coherent on-disk docs scaffold (git-native `documentation_surfaces`; pytest evidence).
+
+---
+
+## Deliverables
+
+1. **Installer default** — `documentation_surfaces.adopter_public.sot: git` without `allowlist_ref`; `--adopter-public-sot` CLI flag.
+2. **Install RC semantic validation** — `validate_install_rc.py` coherence checks for git vs Docusaurus profiles.
+3. **Schema/docs** — `rw-config-schema.md`, `INSTALL_IN_YOUR_PROJECT.md`, installer quickstart, ADR-026 FR-141 note.
+4. **Tests** — installer defaults, RC validator, greenfield orchestration forwarding.
+5. **Greenfield sync** — mirror per P-GREENFIELD-SYNC.
 
 ---
 
 ## Associated FR
 
 [FR-141](../../../fbu/FR-141-adopter-documentation-profile-greenfield-default.md)
+
+---
+
+## Version Anchor
+
+**Forensic marker:** ✅ COMPLETE (**v0.5.8.8+1** — FR-141: git-native adopter docs greenfield default)
+
+---
+
+## References
+
+- [IPP-E05S08T08 — Adopter documentation profile greenfield default](../../../../implementation-cycles/IPP-E05S08T08-adopter-documentation-profile-greenfield-default.md)
+- [FR-141](../../../fbu/FR-141-adopter-documentation-profile-greenfield-default.md)
+- [FR-121](../../../fbu/FR-121-git-internal-maintainer-kb-oss-documentation-surfaces.md)
+- [ADR-026](../../../../architecture/standards-and-adrs/ADR-026-git-internal-maintainer-kb-fr121.md)
+- [SBL attempt 11 feedback](../../../../../../adk-install-into-sbl/attempt-11/feedback-package/FB-ADK-adopter-documentation-profile-obsidian-default.md)

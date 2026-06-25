@@ -11,6 +11,14 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.5.8.8+1] - 25-06-26
+
+E05:S08:T08 — **Change implemented:** FR-141 — greenfield default git-native adopter docs; semantic `rc-docs-schema`; Docusaurus opt-in. SemVer **v0.4.1235**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.5.8.8+1.md)
+
+---
+
 ## [0.3.2.16+1] - 25-06-26
 
 E03:S02:T16 — **Change implemented:** BR-111 — public SemVer surfaces enforce ADR-031 core-only; coherence rejects `+BUILD` on README/CHANGELOG. SemVer **v0.4.1234**.

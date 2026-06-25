@@ -13,9 +13,9 @@ housekeeping_policy: keep
 **Submitted:** 2026-06-24  
 **Submitted By:** Maintainer (SBL attempt 11 intake / #85)  
 **Priority:** HIGH (Should Have — MoSCOW **S**)  
-**Status:** OPEN  
+**Status:** COMPLETE  
 **Implementing Task:** [E05:S08:T08](../epics/epic-05/story-08-knowledge-base/T08-adopter-documentation-profile-greenfield-default-fr141.md)  
-**Evidence:** [FB mirror](../../../adk-install-into-sbl/attempt-11/feedback-package/FB-ADK-adopter-documentation-profile-obsidian-default.md) · maintainer intake @ **v0.6.9.26+7** · [#85](https://github.com/RMS-Ltd/ai-dev-kit/issues/85)
+**Evidence:** [FB mirror](../../../adk-install-into-sbl/attempt-11/feedback-package/FB-ADK-adopter-documentation-profile-obsidian-default.md) · maintainer intake @ **v0.6.9.26+7** · [#85](https://github.com/RMS-Ltd/ai-dev-kit/issues/85) · **v0.5.8.8+1** @ E05:S08:T08
 
 **Related:** [FR-121](FR-121-git-internal-maintainer-kb-oss-documentation-surfaces.md) · [ADR-026](../../architecture/standards-and-adrs/ADR-026-git-internal-maintainer-kb-fr121.md) · [E05:S08:T07](../epics/epic-05/story-08-knowledge-base/T07-optional-obsidian-editor-profiles-greenfield-install-fr121.md) · [FR-080](FR-080-greenfield-installation-process.md) · [attempt-09 FB](../../../adk-install-into-sbl/attempt-09/FB-ADK-canonical-maintainer-documentation-schema.md)
 
@@ -45,20 +45,20 @@ FR-121 wave 3 shipped **optional** Obsidian editor profiles but left **Docusauru
 
 ### Functional
 
-- [ ] **FR-141-F1:** Greenfield default `documentation_surfaces` uses **git-native adopter docs** profile (not Docusaurus) for private/application installs.
-- [ ] **FR-141-F2:** `rc-docs-schema` validates declared surface is **implementable** (or explicitly `deferred` with documented opt-in path).
-- [ ] **FR-141-F3:** Install orchestrator phase 3½ scaffolds coherent docs topology (authority, entry points) matching declared profile.
-- [ ] **FR-141-F4:** Docusaurus profile remains **opt-in** for adopters with `portal/` intent.
+- [x] **FR-141-F1:** Greenfield default `documentation_surfaces` uses **git-native adopter docs** profile (not Docusaurus) for private/application installs.
+- [x] **FR-141-F2:** `rc-docs-schema` validates declared surface is **implementable** (or explicitly `deferred` with documented opt-in path).
+- [x] **FR-141-F3:** Install orchestrator phase 3½ scaffolds coherent docs topology (authority, entry points) matching declared profile.
+- [x] **FR-141-F4:** Docusaurus profile remains **opt-in** for adopters with `portal/` intent.
 
 ### Non-functional
 
-- [ ] **FR-141-NF1:** No breaking change for ai-dev-kit maintainer repo (explicit maintainer profile separate from adopter default).
-- [ ] **FR-141-NF2:** Align with [ADR-026](../../architecture/standards-and-adrs/ADR-026-git-internal-maintainer-kb-fr121.md) git SoT principles.
+- [x] **FR-141-NF1:** No breaking change for ai-dev-kit maintainer repo (explicit maintainer profile separate from adopter default).
+- [x] **FR-141-NF2:** Align with [ADR-026](../../architecture/standards-and-adrs/ADR-026-git-internal-maintainer-kb-fr121.md) git SoT principles.
 
 ---
 
 ## Acceptance criteria
 
-- [ ] SBL-class private adopter: fresh install emits Obsidian/git-default `documentation_surfaces`; `rc-docs-schema` PASS with on-disk scaffolding.
-- [ ] Install RC fails (or warns blocking) when `adopter_public: docusaurus` declared without `portal/` or allowlist ref.
-- [ ] INSTALL documents profile choice and migration path to Docusaurus when needed.
+- [x] SBL-class private adopter: fresh install emits Obsidian/git-default `documentation_surfaces`; `rc-docs-schema` PASS with on-disk scaffolding.
+- [x] Install RC fails (or warns blocking) when `adopter_public: docusaurus` declared without `portal/` or allowlist ref.
+- [x] INSTALL documents profile choice and migration path to Docusaurus when needed.

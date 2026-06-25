@@ -122,6 +122,40 @@ def test_dry_run_uses_vendor_script_paths(tmp_path):
     rw_path = str(vendor / _RW_REL)
     assert rw_path in result.stdout
     assert "--non-interactive" in result.stdout
+    assert "--adopter-public-sot" not in result.stdout
+
+
+def test_dry_run_forwards_adopter_public_sot_flag(tmp_path):
+    project = tmp_path / "project"
+    vendor = tmp_path / "vendor" / "ai-dev-kit"
+    project.mkdir(parents=True)
+    vendor.mkdir(parents=True)
+    _write_stub_scripts(vendor)
+
+    script = _SCRIPTS / "install_greenfield_path.py"
+    result = subprocess.run(
+        [
+            sys.executable,
+            str(script),
+            "--project-root",
+            str(project),
+            "--vendor-root",
+            str(vendor),
+            "--non-interactive",
+            "--no-verify-vendor",
+            "--dry-run",
+            "--adopter-public-sot",
+            "docusaurus",
+        ],
+        cwd=project,
+        capture_output=True,
+        text=True,
+        check=False,
+    )
+
+    assert result.returncode == 0, result.stderr
+    assert "--adopter-public-sot" in result.stdout
+    assert "docusaurus" in result.stdout
 
 
 def test_dry_run_adoption_path_and_sqlite_flags(tmp_path):

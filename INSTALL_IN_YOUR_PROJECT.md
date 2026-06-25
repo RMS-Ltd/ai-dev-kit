@@ -223,6 +223,15 @@ This section defines the canonical **greenfield** path for new or template proje
 
 **Maintainer editor profile (FR-121 / optional):** After mode/kanban questions, the RW installer may prompt for `maintainer_editor_profile`. Git remains maintainer KB SoT in every case.
 
+**Adopter documentation profile (FR-141 / default):** Greenfield and private-application installs default `documentation_surfaces.adopter_public.sot` to **`git`** (in-repo Markdown; no `portal/` tree). Opt into Docusaurus only when you have portal publishing infrastructure:
+
+| `adopter_public.sot` | When to use | Requirements |
+| -------------------- | ----------- | ------------ |
+| `git` | Default — private repos, SBL-class adopters, no public site | None |
+| `docusaurus` | Public docs site via Docusaurus | `portal/` tree + `allowlist_ref` (e.g. `portal/docusaurus.config.js`) |
+
+Flags: `--adopter-public-sot {git,docusaurus}` (non-interactive default: `git`). Greenfield orchestrator forwards the same flag. Install RC `rc-docs-schema` validates semantic coherence (git passes without portal; Docusaurus requires allowlist + portal on disk).
+
 | Profile | Effect |
 | ------- | ------ |
 | `none` | Default — no Obsidian files (`--non-interactive` uses this) |

@@ -131,6 +131,55 @@ def _resolve_rw_path(
     return path
 
 
+def _validate_documentation_surfaces(
+    project_root: Path, config: dict[str, Any]
+) -> tuple[bool, str]:
+    """Semantic coherence for documentation_surfaces (FR-141 / E05:S08:T08)."""
+    ds = config.get("documentation_surfaces")
+    if not isinstance(ds, dict):
+        schema_rel = "docs/governance/standards/DOCUMENTATION_SCHEMA.md"
+        schema = project_root / schema_rel
+        if schema.is_file():
+            return True, f"schema doc: {schema_rel}"
+        return False, "documentation_surfaces missing and DOCUMENTATION_SCHEMA.md not found"
+
+    maintainer = ds.get("maintainer_kb")
+    if not isinstance(maintainer, dict) or not maintainer.get("sot"):
+        return False, "documentation_surfaces.maintainer_kb.sot required"
+    maintainer_sot = str(maintainer.get("sot", "")).strip().lower()
+    if maintainer_sot not in ("git", "external"):
+        return False, f"invalid maintainer_kb.sot: {maintainer_sot!r} (allowed: git, external)"
+
+    adopter = ds.get("adopter_public")
+    if not isinstance(adopter, dict) or not adopter.get("sot"):
+        return False, "documentation_surfaces.adopter_public.sot required"
+    adopter_sot = str(adopter.get("sot", "")).strip().lower()
+    if adopter_sot == "git":
+        return True, "adopter_public.sot=git (git-native; no portal required)"
+    if adopter_sot == "docusaurus":
+        allowlist = adopter.get("allowlist_ref")
+        if not allowlist:
+            return (
+                False,
+                "adopter_public.sot=docusaurus requires allowlist_ref "
+                "(e.g. portal/docusaurus.config.js)",
+            )
+        allowlist_path = project_root / str(allowlist)
+        if not allowlist_path.is_file():
+            return False, f"allowlist_ref not found: {allowlist}"
+        portal_dir = project_root / "portal"
+        if not portal_dir.is_dir():
+            return (
+                False,
+                "adopter_public.sot=docusaurus requires portal/ directory on disk",
+            )
+        return True, f"adopter_public.sot=docusaurus; allowlist_ref OK ({allowlist})"
+    return (
+        False,
+        f"invalid adopter_public.sot: {adopter_sot!r} (allowed: git, docusaurus)",
+    )
+
+
 def _run_check(
     project_root: Path, config: dict[str, Any], contract: dict[str, Any], spec: dict[str, Any]
 ) -> tuple[bool, str]:
@@ -166,13 +215,7 @@ def _run_check(
         return False, ".adk/release-state.db missing (run init_release_state_db or import_legacy)"
 
     if ctype == "documentation_surfaces":
-        if isinstance(config.get("documentation_surfaces"), dict):
-            return True, "documentation_surfaces in rw-config"
-        schema_rel = str(contract.get("documentation_schema_rel", ""))
-        schema = project_root / schema_rel
-        if schema.is_file():
-            return True, f"schema doc: {schema_rel}"
-        return False, "documentation_surfaces missing and DOCUMENTATION_SCHEMA.md not found"
+        return _validate_documentation_surfaces(project_root, config)
 
     if ctype == "path_exists":
         paths = spec.get("path_any") or [spec.get("path")]

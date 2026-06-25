@@ -66,12 +66,12 @@ Emitted by `install_release_workflow.py` on new installs. Git remains maintainer
 | Key | Type | Default | Description |
 |-----|------|---------|-------------|
 | `documentation_surfaces.maintainer_kb.sot` | string | `git` | Maintainer corpus authority (`git` or non-default `external`) |
-| `documentation_surfaces.adopter_public.sot` | string | `docusaurus` | Adopter-public publish surface |
-| `documentation_surfaces.adopter_public.allowlist_ref` | string | `portal/docusaurus.config.js` | Docusaurus allowlist path |
+| `documentation_surfaces.adopter_public.sot` | string | `git` | Adopter-public surface: `git` (default, in-repo Markdown) or opt-in `docusaurus` |
+| `documentation_surfaces.adopter_public.allowlist_ref` | string | *(omit unless `docusaurus`)* | Required when `adopter_public.sot: docusaurus`; path to Docusaurus allowlist (e.g. `portal/docusaurus.config.js`) |
 | `documentation_surfaces.external_kb.provider` | string | `none` | Optional enterprise KB (`none` or `notion`) |
 | `maintainer_editor_profile` | string | `none` | Optional Obsidian scaffold at install; see `docs/maintainer/OBSIDIAN.md` |
 
-**Installer flags:** `--maintainer-editor-profile {none,obsidian-personal,obsidian-team}`; non-interactive default `none`.
+**Installer flags:** `--maintainer-editor-profile {none,obsidian-personal,obsidian-team}`; `--adopter-public-sot {git,docusaurus}` (default `git` when non-interactive); non-interactive default `none` for editor profile.
 
 ---
 
