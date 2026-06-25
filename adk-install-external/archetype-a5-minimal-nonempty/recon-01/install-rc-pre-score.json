@@ -1,0 +1,15 @@
+{
+  "schema_version": "1.0.0",
+  "archetype_id": "A5",
+  "subject_label": "subject-A5",
+  "recon_date": "2026-06-25",
+  "method": "synthetic_fixture",
+  "fixture_path": "tests/fixtures/adopter-corpora/archetype-a5-minimal-nonempty",
+  "adoption_path_hypothesis": "path-1",
+  "blocking_fail_predicted": 6,
+  "advisory_fail_predicted": 3,
+  "novel_gap_hypothesis": "minimal-nonempty-vs-empty-template",
+  "full_install_recommended": false,
+  "full_install_gate": "G1-UXR-029-phase-4",
+  "notes": "FR-080 control shape. README+LICENSE only — validates greenfield path selector vs brownfield false positive."
+}

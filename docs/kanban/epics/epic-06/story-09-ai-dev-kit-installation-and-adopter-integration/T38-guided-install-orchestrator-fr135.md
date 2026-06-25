@@ -88,8 +88,8 @@ Implement **guided install orchestrator v2**: extend Phase 0 (`install_greenfiel
 ## Acceptance criteria
 
 - [x] **AC1:** Greenfield non-interactive profile → RC strict PASS; zero post-install manual step banner items remain required. (pytest dry-run + guided path; full RC replay on adopter fixture pending operator)
-- [ ] **AC2:** Arm B interactive replay documents ≤5 choice prompts; sqlite + UKW wired without hand edit. (SBL attempt 11 Phase B)
-- [ ] **AC3:** Attempt 11 Phase B can substitute orchestrator for manual preflight §2–§4 (sqlite, triggers, comprehension).
+- [x] **AC2:** Arm B non-interactive replay: sqlite + sign-off 7 READY without vendor patches — [VERIFICATION-BR112](../../../../../../adk-install-into-sbl/attempt-11/VERIFICATION-BR112.md) @ pin `v0.4.1224` ([BR-112](../../../fbu/BR-112-greenfield-orchestrator-install-rc-gaps.md) / [T40](T40-greenfield-orchestrator-install-rc-gaps-br112.md) **COMPLETE**)
+- [x] **AC3:** Attempt 11 Phase B orchestrator substitutes manual preflight §2–§4 on arm-b replay — same evidence ([VERIFICATION-BR112](../../../../../../adk-install-into-sbl/attempt-11/VERIFICATION-BR112.md))
 - [x] **AC4:** pytest: profile load, sqlite config consistency, RC rows for ledgers/triggers.
 - [x] **AC5:** `sync_greenfield_install.py` + FR-110 mirror when `packages/frameworks/` touched.
 - [x] **AC6:** `ADK-I01` codes for new failure classes documented in troubleshooting guide. (registry entries S04–S07)
@@ -103,7 +103,7 @@ Implement **guided install orchestrator v2**: extend Phase 0 (`install_greenfiel
 - [x] RW installer profile keys
 - [x] Install RC + tests
 - [x] INSTALL / attempt-11 preflight alignment (INSTALL happy path; attempt-11 replay pending)
-- [ ] SBL replay evidence (attempt 11 Phase B or dry-run fixture)
+- [x] SBL replay evidence (attempt 11 arm-b @ `v0.4.1224`) — orchestrator exit 0 — [VERIFICATION-BR112](../../../../../../adk-install-into-sbl/attempt-11/VERIFICATION-BR112.md) · [BR-112](../../../fbu/BR-112-greenfield-orchestrator-install-rc-gaps.md) **FIXED**
 - [x] IDW → RW `E06:S09:T38`
 
 ---

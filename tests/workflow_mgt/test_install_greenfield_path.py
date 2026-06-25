@@ -122,6 +122,40 @@ def test_dry_run_uses_vendor_script_paths(tmp_path):
     rw_path = str(vendor / _RW_REL)
     assert rw_path in result.stdout
     assert "--non-interactive" in result.stdout
+    assert "--adopter-public-sot" not in result.stdout
+
+
+def test_dry_run_forwards_adopter_public_sot_flag(tmp_path):
+    project = tmp_path / "project"
+    vendor = tmp_path / "vendor" / "ai-dev-kit"
+    project.mkdir(parents=True)
+    vendor.mkdir(parents=True)
+    _write_stub_scripts(vendor)
+
+    script = _SCRIPTS / "install_greenfield_path.py"
+    result = subprocess.run(
+        [
+            sys.executable,
+            str(script),
+            "--project-root",
+            str(project),
+            "--vendor-root",
+            str(vendor),
+            "--non-interactive",
+            "--no-verify-vendor",
+            "--dry-run",
+            "--adopter-public-sot",
+            "docusaurus",
+        ],
+        cwd=project,
+        capture_output=True,
+        text=True,
+        check=False,
+    )
+
+    assert result.returncode == 0, result.stderr
+    assert "--adopter-public-sot" in result.stdout
+    assert "docusaurus" in result.stdout
 
 
 def test_dry_run_adoption_path_and_sqlite_flags(tmp_path):
@@ -203,3 +237,67 @@ def test_dry_run_guided_profile_shows_phases(tmp_path):
     assert "Guided install orchestrator v2" in result.stdout
     assert "Install phase summary" in result.stdout
     assert "Post-install manual steps" not in result.stdout
+
+
+def test_resolve_rw_input_config_uses_conventional_path(tmp_path, greenfield_mod):
+    cfg = tmp_path / "config" / "greenfield-rw-install-input.yaml"
+    cfg.parent.mkdir(parents=True)
+    cfg.write_text("project_name: demo\n", encoding="utf-8")
+
+    resolved = greenfield_mod.resolve_rw_input_config(tmp_path, None)
+    assert resolved == cfg
+
+    explicit = tmp_path / "other.yaml"
+    explicit.write_text("x: 1\n", encoding="utf-8")
+    assert greenfield_mod.resolve_rw_input_config(tmp_path, explicit) == explicit
+
+
+def test_ensure_rw_config_sqlite_backend_patches_missing_key(tmp_path, greenfield_mod):
+    rw = tmp_path / "rw-config.yaml"
+    rw.write_text("version_file: src/app/version.py\n", encoding="utf-8")
+
+    greenfield_mod.ensure_rw_config_sqlite_backend(tmp_path, dry_run=False)
+
+    text = rw.read_text(encoding="utf-8")
+    assert "release_state_backend: sqlite" in text
+    assert "release_state_db: .adk/release-state.db" in text
+
+
+def test_dry_run_legacy_arm_b_uses_conventional_config_and_scaffold(tmp_path):
+    project = tmp_path / "project"
+    vendor = tmp_path / "vendor" / "ai-dev-kit"
+    project.mkdir(parents=True)
+    vendor.mkdir(parents=True)
+    _write_stub_scripts(vendor)
+
+    cfg = project / "config" / "greenfield-rw-install-input.yaml"
+    cfg.parent.mkdir(parents=True)
+    cfg.write_text("project_name: demo\nversion_file: src/demo/version.py\n", encoding="utf-8")
+
+    script = _SCRIPTS / "install_greenfield_path.py"
+    result = subprocess.run(
+        [
+            sys.executable,
+            str(script),
+            "--project-root",
+            str(project),
+            "--vendor-root",
+            str(vendor),
+            "--non-interactive",
+            "--no-verify-vendor",
+            "--dry-run",
+            "--adoption-path",
+            "arm-b",
+            "--init-sqlite",
+            "--run-install-rc",
+        ],
+        cwd=project,
+        capture_output=True,
+        text=True,
+        check=False,
+    )
+
+    assert result.returncode == 0, result.stderr + result.stdout
+    assert "greenfield-rw-install-input.yaml" in result.stdout
+    assert "COMPREHENSION.md" in result.stdout
+    assert "validate_install_rc" in result.stdout

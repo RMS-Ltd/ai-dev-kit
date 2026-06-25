@@ -124,6 +124,11 @@
       "readme_tier": 1
     },
     {
+      "path": "adk-install-external",
+      "purpose_class": "Legacy/transitional",
+      "readme_tier": 1
+    },
+    {
       "path": "cli",
       "purpose_class": "Dev-kit specialisation",
       "readme_tier": 1
@@ -260,6 +265,14 @@
     },
     {
       "path": "adk-install-into-sbl",
+      "depth": 1,
+      "purpose_class": "Legacy/transitional",
+      "location_verdict": "Suboptimal",
+      "mirror": false,
+      "evidence_ref": "docs/maintenance/REPOSITORY-DIRECTORY-AUDIT.md"
+    },
+    {
+      "path": "adk-install-external",
       "depth": 1,
       "purpose_class": "Legacy/transitional",
       "location_verdict": "Suboptimal",

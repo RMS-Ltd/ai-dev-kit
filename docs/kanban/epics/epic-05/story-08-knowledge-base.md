@@ -8,12 +8,12 @@ housekeeping_policy: keep
 
 # Story 008 – Knowledge Base
 
-**Status:** COMPLETE  
+**Status:** IN PROGRESS  
 **Priority:** HIGH  
 **Estimated Effort:** [TBD]  
 **Created:** 2025-12-18  
-**Last updated:** 2026-06-10 (UKW -u — all tasks T01–T07 COMPLETE)
-**Version:** v0.5.8.7+1
+**Last updated:** 2026-06-25 (v0.5.8.8+1 – Kanban documentation setup)
+**Version:** v0.5.8.8+1
 **Code:** E5S08
 
 **Note:** This story was renumbered from S07 to S08 as part of the repository story abstract space resolution (E09:S01:T08).
@@ -47,6 +47,9 @@ housekeeping_policy: keep
 
 - [x] **E05:S08:T07 – Optional Obsidian editor profiles — greenfield install ([FR-121](../../fbu/FR-121-git-internal-maintainer-kb-oss-documentation-surfaces.md))** - ✅ COMPLETE (**v0.5.8.7+1**) — [—IPP—](../../implementation-cycles/IPP-E05S08T07-optional-obsidian-editor-profiles-greenfield-install-fr121.md)
   - Task: [`T07-optional-obsidian-editor-profiles-greenfield-install-fr121`](story-08-knowledge-base/T07-optional-obsidian-editor-profiles-greenfield-install-fr121.md)
+
+- [x] **E05:S08:T08 – Adopter documentation profile greenfield default ([FR-141](../../fbu/FR-141-adopter-documentation-profile-greenfield-default.md))** - ✅ COMPLETE (**v0.5.8.8+1**) — [—IPP—](../../implementation-cycles/IPP-E05S08T08-adopter-documentation-profile-greenfield-default.md)
+  - Task: [`T08-adopter-documentation-profile-greenfield-default-fr141`](story-08-knowledge-base/T08-adopter-documentation-profile-greenfield-default-fr141.md)
 
 ## Overview
 

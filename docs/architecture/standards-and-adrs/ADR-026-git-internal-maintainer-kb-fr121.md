@@ -109,12 +109,13 @@ documentation_surfaces:
   maintainer_kb:
     sot: git  # git | external (non-default)
   adopter_public:
-    sot: docusaurus
-    allowlist_ref: portal/docusaurus.config.js
+    sot: git  # default for greenfield/private adopters (FR-141); docusaurus opt-in
   external_kb:
     provider: none  # none | notion
 maintainer_editor_profile: none  # none | obsidian-personal | obsidian-team
 ```
+
+**FR-141 update (E05:S08:T08):** Application/private greenfield installs default `adopter_public.sot: git` without `allowlist_ref`. Docusaurus remains opt-in when `portal/` and allowlist exist; Install RC validates implementability.
 
 ---
 

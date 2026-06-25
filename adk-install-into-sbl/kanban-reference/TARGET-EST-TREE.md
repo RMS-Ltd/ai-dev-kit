@@ -9,7 +9,7 @@ housekeeping_policy: keep
 # starborn_legacy — Target E/S/T tree (TSP)
 
 **Role:** Canonical structural target for KMA guided mode and attempt-11 scoring.
-**Source:** Deduped from [`temp/sbl-operator-kanban-est-tree-titled.md`](../../../temp/sbl-operator-kanban-est-tree-titled.md).
+**Source:** Deduped from [`OPERATOR-REWORKED-EST-TREE.md`](../attempt-10/operator-rework-archive/OPERATOR-REWORKED-EST-TREE.md) (also mirrored at [`temp/sbl-operator-kanban-est-tree-titled.md`](../../../temp/sbl-operator-kanban-est-tree-titled.md)).
 
 | Metric | Count |
 |--------|------:|

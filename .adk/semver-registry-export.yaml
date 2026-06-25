@@ -77,7 +77,7 @@ rc_0:
     (9,4): 61
   task_touch_mode:
     epic_count: 4
-    task_touch_counter: 1222
+    task_touch_counter: 1235
     mapping_history:
     - internal_version: 0.3.2.12+2
       semver: 0.4.727+2
@@ -3910,6 +3910,110 @@ rc_0:
       epic: 4
       story: 14
       task: 11
+      build: 1
+    - internal_version: 0.6.9.40+0
+      semver: 0.4.1223+0
+      patch: 1223
+      rc: 0
+      epic: 6
+      story: 9
+      task: 40
+      build: 0
+    - internal_version: 0.6.9.40+1
+      semver: 0.4.1224+1
+      patch: 1224
+      rc: 0
+      epic: 6
+      story: 9
+      task: 40
+      build: 1
+    - internal_version: 0.6.9.26+5
+      semver: 0.4.1225+5
+      patch: 1225
+      rc: 0
+      epic: 6
+      story: 9
+      task: 26
+      build: 5
+    - internal_version: 0.6.9.26+6
+      semver: 0.4.1226+6
+      patch: 1226
+      rc: 0
+      epic: 6
+      story: 9
+      task: 26
+      build: 6
+    - internal_version: 0.6.9.40+2
+      semver: 0.4.1227+2
+      patch: 1227
+      rc: 0
+      epic: 6
+      story: 9
+      task: 40
+      build: 2
+    - internal_version: 0.6.9.41+0
+      semver: 0.4.1228+0
+      patch: 1228
+      rc: 0
+      epic: 6
+      story: 9
+      task: 41
+      build: 0
+    - internal_version: 0.6.9.26+7
+      semver: 0.4.1229+7
+      patch: 1229
+      rc: 0
+      epic: 6
+      story: 9
+      task: 26
+      build: 7
+    - internal_version: 0.6.9.41+1
+      semver: 0.4.1230+1
+      patch: 1230
+      rc: 0
+      epic: 6
+      story: 9
+      task: 41
+      build: 1
+    - internal_version: 0.6.9.41+2
+      semver: 0.4.1231+2
+      patch: 1231
+      rc: 0
+      epic: 6
+      story: 9
+      task: 41
+      build: 2
+    - internal_version: 0.6.9.41+3
+      semver: 0.4.1232+3
+      patch: 1232
+      rc: 0
+      epic: 6
+      story: 9
+      task: 41
+      build: 3
+    - internal_version: 0.6.9.41+4
+      semver: 0.4.1233+4
+      patch: 1233
+      rc: 0
+      epic: 6
+      story: 9
+      task: 41
+      build: 4
+    - internal_version: 0.3.2.16+1
+      semver: 0.4.1234+1
+      patch: 1234
+      rc: 0
+      epic: 3
+      story: 2
+      task: 16
+      build: 1
+    - internal_version: 0.5.8.8+1
+      semver: 0.4.1235+1
+      patch: 1235
+      rc: 0
+      epic: 5
+      story: 8
+      task: 8
       build: 1
 rc_1:
   epic_to_minor: {}

@@ -9,8 +9,8 @@ description: Update README with new version info
 
 ### Step 1: Version Information Update
 1. Locate README.md file in project root
-2. Update version information to reflect new version
-3. Ensure version format matches current version schema
+2. In **task_touch** mode ([ADR-031](docs/architecture/standards-and-adrs/ADR-031-external-semver-build-metadata-display-policy.md)): update **Version (SemVer)** with **core only** (`MAJOR.MINOR.PATCH`) — use `semver_display` / `external_display_semver()` from `get_rw_tag_info` or `finalize_rw_semver_registry` JSON; never write `semver_full` with `+BUILD` on public surfaces
+3. Update **Internal:** line with full `RC.EPIC.STORY.TASK+BUILD` from version file
 4. Update date information if present
 
 ### Step 2: Cross-Reference Validation

@@ -96,6 +96,16 @@ def _coherence_semver_core(text: str) -> str:
     return normalized.split("+", 1)[0] if "+" in normalized else normalized
 
 
+def _public_semver_build_leak_error(surface: str, raw: str) -> Optional[str]:
+    """ADR-031 / BR-111: public SemVer lines must not include +BUILD metadata."""
+    if "+" in _normalize_semver(raw):
+        return (
+            f"release_coherence: {surface} SemVer must be core-only (ADR-031); "
+            f"found +BUILD in {raw!r}"
+        )
+    return None
+
+
 def _allocator_semver(root: Path, internal: str) -> Optional[str]:
     """Return core-only SemVer for external-surface coherence checks (ADR-031 Option A)."""
     if semver_converter.get_release_state_backend() != "sqlite":
@@ -161,10 +171,15 @@ def validate_release_coherence(
         im = _README_INTERNAL_RE.search(readme_text)
         if not sm:
             errors.append("release_coherence: README missing **Version (SemVer):** line")
-        elif db_semver and _coherence_semver_core(sm.group(1)) != _coherence_semver_core(db_semver):
-            errors.append(
-                f"release_coherence: README SemVer v{sm.group(1)} != allocator {db_semver}"
-            )
+        else:
+            readme_semver = sm.group(1)
+            leak = _public_semver_build_leak_error("README", readme_semver)
+            if leak:
+                errors.append(leak)
+            elif db_semver and _coherence_semver_core(readme_semver) != _coherence_semver_core(db_semver):
+                errors.append(
+                    f"release_coherence: README SemVer v{readme_semver} != allocator {db_semver}"
+                )
         if not im:
             errors.append("release_coherence: README missing **Internal:** line")
         elif _normalize_semver(im.group(1)) != internal:
@@ -182,10 +197,15 @@ def validate_release_coherence(
                 f"release_coherence: CHANGELOG top entry [{entry.group(1)}] != internal {internal}"
             )
         csm = _CHANGELOG_SEMVER_RE.search(changelog_text)
-        if csm and _coherence_semver_core(csm.group(1)) != _coherence_semver_core(db_semver):
-            errors.append(
-                f"release_coherence: CHANGELOG SemVer {csm.group(1)} != allocator {db_semver}"
-            )
+        if csm:
+            changelog_semver = csm.group(1)
+            leak = _public_semver_build_leak_error("CHANGELOG", changelog_semver)
+            if leak:
+                errors.append(leak)
+            elif db_semver and _coherence_semver_core(changelog_semver) != _coherence_semver_core(db_semver):
+                errors.append(
+                    f"release_coherence: CHANGELOG SemVer {changelog_semver} != allocator {db_semver}"
+                )
 
     if errors and not strict:
         return True, [f"release_coherence: advisory — {e}" for e in errors]

@@ -113,6 +113,70 @@ def test_coherent_release_passes(coherence_project):
     assert any("OK" in line for line in lines)
 
 
+def test_readme_build_suffix_fails(coherence_project):
+    readme = coherence_project / "README.md"
+    readme.write_text(
+        "**Version (SemVer):** `v0.4.1097+2` | **Internal:** `v0.2.1.30+2`\n",
+        encoding="utf-8",
+    )
+    ok, lines = vrc.validate_release_coherence(
+        project_root=coherence_project, strict=True, check_staged=False
+    )
+    assert not ok
+    assert any("+BUILD" in line or "core-only" in line for line in lines)
+
+
+def test_attempt11_core_only_coherence_passes(tmp_path, monkeypatch):
+    """SBL attempt 11: internal 0.2.16.2+2 maps to public 0.0.5 (no +BUILD on surfaces)."""
+    db = tmp_path / ".adk" / "release-state.db"
+    (tmp_path / "src").mkdir()
+    (tmp_path / "src/v.py").write_text(
+        "VERSION_RC = 0\nVERSION_EPIC = 2\nVERSION_STORY = 16\n"
+        "VERSION_TASK = 2\nVERSION_BUILD = 2\n",
+        encoding="utf-8",
+    )
+    (tmp_path / "README.md").write_text(
+        "**Version (SemVer):** `v0.0.5` | **Internal:** `v0.2.16.2+2`\n",
+        encoding="utf-8",
+    )
+    (tmp_path / "CHANGELOG.md").write_text(
+        "## [0.2.16.2+2] - 24-06-26\n\nSemVer **v0.0.5**.\n",
+        encoding="utf-8",
+    )
+    (tmp_path / "rw-config.yaml").write_text(
+        """
+version_file: src/v.py
+readme_file: README.md
+main_changelog: CHANGELOG.md
+semver_mapping_strategy: task_touch
+release_state_backend: sqlite
+release_state_db: .adk/release-state.db
+release_coherence:
+  enabled: true
+""".strip(),
+        encoding="utf-8",
+    )
+    _seed_mapping(db, "0.2.16.2+2", "0.0.5+2", 5)
+    subprocess.run(["git", "init"], cwd=tmp_path, check=True, capture_output=True)
+    subprocess.run(
+        ["git", "config", "user.email", "t@example.com"],
+        cwd=tmp_path,
+        check=True,
+        capture_output=True,
+    )
+    subprocess.run(
+        ["git", "config", "user.name", "T"],
+        cwd=tmp_path,
+        check=True,
+        capture_output=True,
+    )
+    monkeypatch.chdir(tmp_path)
+    ok, lines = vrc.validate_release_coherence(
+        project_root=tmp_path, strict=True, check_staged=False
+    )
+    assert ok, lines
+
+
 def test_readme_semver_mismatch_fails(coherence_project):
     readme = coherence_project / "README.md"
     readme.write_text(

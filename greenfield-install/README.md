@@ -30,26 +30,26 @@ Lookup: [framework-dependency-troubleshooting-guide.md](https://github.com/RMS-L
 Release tarballs ship with a matching `.sha256` sidecar on [GitHub Releases](https://github.com/RMS-Ltd/ai-dev-kit/releases). Verify before extract:
 
 ```bash
-gh release download v0.4.1222 --repo RMS-Ltd/ai-dev-kit \
-  -p 'greenfield-install-v0.4.1222.tar.gz' \
-  -p 'greenfield-install-v0.4.1222.tar.gz.sha256' -D /tmp/adk-dl
-shasum -a 256 -c /tmp/adk-dl/greenfield-install-v0.4.1222.tar.gz.sha256
-# Expected: greenfield-install-v0.4.1222.tar.gz: OK
+gh release download v0.4.1234 --repo RMS-Ltd/ai-dev-kit \
+  -p 'greenfield-install-v0.4.1234.tar.gz' \
+  -p 'greenfield-install-v0.4.1234.tar.gz.sha256' -D /tmp/adk-dl
+shasum -a 256 -c /tmp/adk-dl/greenfield-install-v0.4.1234.tar.gz.sha256
+# Expected: greenfield-install-v0.4.1234.tar.gz: OK
 ```
 
-Pin the SHA-256 from `greenfield-install-v0.4.1222.tar.gz.sha256` (release sidecar).
+Pin the SHA-256 from `greenfield-install-v0.4.1234.tar.gz.sha256` (release sidecar).
 
 ## Update upstream
 
-- **Submodule / sparse checkout:** `cd vendor/ai-dev-kit && git fetch --tags && git checkout tags/v0.4.1222` (see [releases](https://github.com/RMS-Ltd/ai-dev-kit/releases)).
-- **Copy refresh:** re-copy this tree from a tagged `greenfield-install/` export or verified `greenfield-install-v0.4.1222.tar.gz` on [releases](https://github.com/RMS-Ltd/ai-dev-kit/releases).
+- **Submodule / sparse checkout:** `cd vendor/ai-dev-kit && git fetch --tags && git checkout tags/v0.4.1234` (see [releases](https://github.com/RMS-Ltd/ai-dev-kit/releases)).
+- **Copy refresh:** re-copy this tree from a tagged `greenfield-install/` export or verified `greenfield-install-v0.4.1234.tar.gz` on [releases](https://github.com/RMS-Ltd/ai-dev-kit/releases).
 - **GitHub Container Registry (alternate):** when submodules are blocked, pull the lean image and copy `/opt/adk/` into `vendor/ai-dev-kit/` (same bytes as this tree; [ADR-021](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/architecture/standards-and-adrs/ADR-021-greenfield-install-ghcr-delivery-channel.md)):
 
   ```bash
-  # Replace v0.4.1222 with the external SemVer core you are pinning.
-  docker pull ghcr.io/rms-ltd/ai-dev-kit-greenfield:v0.4.1222
+  # Replace v0.4.1234 with the external SemVer core you are pinning.
+  docker pull ghcr.io/rms-ltd/ai-dev-kit-greenfield:v0.4.1234
   mkdir -p vendor/ai-dev-kit
-  cid=$(docker create ghcr.io/rms-ltd/ai-dev-kit-greenfield:v0.4.1222)
+  cid=$(docker create ghcr.io/rms-ltd/ai-dev-kit-greenfield:v0.4.1234)
   docker cp "$cid:/opt/adk/." vendor/ai-dev-kit/
   docker rm "$cid"
   ```

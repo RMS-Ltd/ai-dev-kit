@@ -21,7 +21,7 @@ housekeeping_policy: keep
 
 **Related:** [FR-127](FR-127-agentic-kanban-migration-agent-replace-tool-pipeline.md) · [FR-133](FR-133-kanban-migration-depth-rationalization-adopter-guide.md) · [FR-135](FR-135-guided-install-orchestrator-zero-manual-steps.md) (orchestrator handoff only — guided KMA is separate) · [E06:S09:T31](../epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T31-agentic-kanban-migration-agent-fr127.md) · [E06:S09:T38](../epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T38-guided-install-orchestrator-fr135.md) · [#85](https://github.com/RMS-Ltd/ai-dev-kit/issues/85) · [attempt-11 FB](../../../adk-install-into-sbl/attempt-11/feedback-package/FB-ADK-GUIDED-KMA-TARGET-STRUCTURE-PACK.md)
 
-**Evidence:** SBL attempt 10 blind KMA ~62% structural score vs operator TSP; attempt 11 Track A TSP freeze (377 unique `E:S:T`); [KMA-METHODS](../../../adk-install-into-sbl/kanban-reference/KMA-METHODS.md) M01–M08
+**Evidence:** SBL attempt 10 blind KMA ~62% structural score vs operator TSP; attempt 11 guided replay **93.99%** @ pin `v0.4.1171` (377 tasks); [KMA-METHODS](../../../adk-install-into-sbl/kanban-reference/KMA-METHODS.md) M01–M08
 
 ---
 

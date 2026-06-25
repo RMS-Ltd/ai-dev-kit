@@ -11,6 +11,110 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.5.8.8+1] - 25-06-26
+
+E05:S08:T08 — **Change implemented:** FR-141 — greenfield default git-native adopter docs; semantic `rc-docs-schema`; Docusaurus opt-in. SemVer **v0.4.1235**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.5.8.8+1.md)
+
+---
+
+## [0.3.2.16+1] - 25-06-26
+
+E03:S02:T16 — **Change implemented:** BR-111 — public SemVer surfaces enforce ADR-031 core-only; coherence rejects `+BUILD` on README/CHANGELOG. SemVer **v0.4.1234**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.3.2.16+1.md)
+
+---
+
+## [0.6.9.41+4] - 25-06-26
+
+E06:S09:T41 — **Change implemented:** Operator deferral — Wave 3 full install deferred until G1 (not waived). SemVer **v0.4.1233+4**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.6.9.41+4.md)
+
+---
+
+## [0.6.9.41+3] - 25-06-26
+
+E06:S09:T41 — **Change implemented:** Forensic fix — v0.6.9.41+2 release-readiness report Gate 7 verdict. SemVer **v0.4.1232+3**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.6.9.41+3.md)
+
+---
+
+## [0.6.9.41+2] - 25-06-26
+
+E06:S09:T41 — **Change implemented:** MWF delivery resume — kanban metadata reconciliation and four-surface report sync. SemVer **v0.4.1231+2**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.6.9.41+2.md)
+
+---
+
+## [0.6.9.41+1] - 25-06-26
+
+E06:S09:T41 — **Change implemented:** IDW Wave 1 — external adopter archetype programme (diversity matrix, `adk-install-external/`, recon A1/A2/A5, CI fixtures). SemVer **v0.4.1230+1**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.6.9.41+1.md)
+
+---
+
+## [0.6.9.26+7] - 25-06-26
+
+E06:S09:T26 — **Change implemented:** RW `-k` kanban init for SBL attempt 11 FR-079 programme acceptance (`--art`). Guided KMA 93.99%; [#85](https://github.com/RMS-Ltd/ai-dev-kit/issues/85). SemVer **v0.4.1229+7**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.6.9.26+7.md)
+
+---
+
+## [0.6.9.41+0] - 25-06-26
+
+E06:S09:T41 — **Change implemented:** RW -k kanban init for **FR-142** external adopter archetype corpus (Phase 5 install diversity programme). SemVer **v0.4.1228+0**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.6.9.41+0.md)
+
+---
+
+## [0.6.9.40+2] - 24-06-26
+
+E06:S09:T40 — **Fixed (verified):** BR-112 orchestrator Install RC on SBL replay @ pin `v0.4.1224` — EXIT=0, RC strict PASS. SemVer **v0.4.1227+2**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.6.9.40+2.md)
+
+---
+
+## [0.6.9.26+6] - 24-06-26
+
+E06:S09:T26 — **Change implemented:** SBL `main` analysis in operator-rework COMPARISON (guided KMA @ 93.99%). SemVer **v0.4.1226+6**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.6.9.26+6.md)
+
+---
+
+## [0.6.9.26+5] - 24-06-26
+
+E06:S09:T26 — **Change implemented:** Attempt-10 operator-rework comparison archive (blind KMA candidate vs operator titled tree); recovered from SBL local `temp/`. SemVer **v0.4.1225+5**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.6.9.26+5.md)
+
+---
+
+## [0.6.9.40+1] - 24-06-26
+
+E06:S09:T40 — **Attempted fix (BR-112):** Install RC `WORKFLOW_ROOT` path bug, checklist CLI alignment, venv-aware RC commands, legacy orchestrator config/sqlite/COMPREHENSION wiring. SemVer **v0.4.1224+1**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.6.9.40+1.md)
+
+---
+
+## [0.6.9.40+0] - 24-06-26
+
+E06:S09:T40 — **Kanban documentation setup (RW -k):** BR-112 greenfield orchestrator Install RC gaps intake from SBL attempt 11; task doc, FBU wiring, story/board rows, feedback evidence. SemVer **v0.4.1223+0**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.6.9.40+0.md)
+
+---
+
 ## [0.4.14.11+1] - 24-06-26
 
 E04:S14:T11 — **Change implemented (FR-043):** UKW Step 2.5 gap-discovery scanner, workflow YAML/config, tests, and maintainer gap-stats report. SemVer **v0.4.1222+1**.

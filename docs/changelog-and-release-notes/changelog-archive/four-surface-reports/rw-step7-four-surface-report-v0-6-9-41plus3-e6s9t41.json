@@ -1,0 +1,35 @@
+{
+  "contract": "FR-092 / ADR-018 (RW Step 7 four-surface reconciliation)",
+  "invocation_context": "rw_step_7",
+  "release_scope": {
+    "epic": 6,
+    "story": 9,
+    "task": 41,
+    "task_id": "E06:S09:T41",
+    "version_string": "v0.6.9.41+3"
+  },
+  "summary": {
+    "touched_surfaces": ["task_doc"],
+    "untouched_surfaces": ["kboard", "fbu_doc", "story_doc", "epic_doc"]
+  },
+  "surfaces": {
+    "task_doc": {
+      "touched": true,
+      "paths": ["docs/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T41-external-adopter-archetype-corpus-fr142.md"],
+      "notes": ["Version anchor + last-updated for forensic report release"]
+    },
+    "kboard": {
+      "touched": false,
+      "notes": ["No MoSCOW row mutation — forensic archive correction only"]
+    },
+    "fbu_doc": {
+      "touched": false,
+      "notes": ["FR-142 unchanged"]
+    },
+    "story_doc": {
+      "touched": false,
+      "notes": ["Story checklist unchanged"]
+    }
+  },
+  "timestamp_utc": "2026-06-25 13:31 UTC"
+}

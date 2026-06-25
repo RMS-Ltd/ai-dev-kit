@@ -41,7 +41,28 @@ def test_generate_rw_config_yaml_includes_documentation_surfaces_and_profile():
     assert "documentation_surfaces:" in yaml_text
     assert "maintainer_kb:" in yaml_text
     assert "sot: git" in yaml_text
+    assert "adopter_public:" in yaml_text
+    assert "sot: git" in yaml_text.split("adopter_public:")[1]
+    assert "allowlist_ref:" not in yaml_text
     assert "maintainer_editor_profile: obsidian-team" in yaml_text
+
+
+def test_generate_rw_config_yaml_docusaurus_opt_in_includes_allowlist():
+    mod = _load_module()
+    cfg = _minimal_config()
+    cfg["adopter_public_sot"] = "docusaurus"
+    yaml_text = mod.generate_rw_config_yaml(cfg)
+    assert "adopter_public:" in yaml_text
+    adopter_block = yaml_text.split("adopter_public:")[1].split("external_kb:")[0]
+    assert "sot: docusaurus" in adopter_block
+    assert "allowlist_ref: portal/docusaurus.config.js" in adopter_block
+
+
+def test_generate_rw_config_yaml_default_git_without_allowlist_ref():
+    mod = _load_module()
+    yaml_text = mod.generate_rw_config_yaml(_minimal_config())
+    assert "sot: docusaurus" not in yaml_text
+    assert "allowlist_ref:" not in yaml_text
 
 
 def test_apply_profile_none_is_noop():
@@ -94,6 +115,28 @@ def test_install_doc_mentions_all_profiles():
     assert "obsidian-personal" in text
     assert "obsidian-team" in text
     assert "maintainer_editor_profile" in text or "Maintainer editor profile" in text
+    assert "adopter-public-sot" in text or "adopter_public" in text
+
+
+def test_cli_non_interactive_git_adopter_public_default(tmp_path: Path):
+    result = subprocess.run(
+        [
+            sys.executable,
+            str(SCRIPT_PATH),
+            "--project-root",
+            str(tmp_path),
+            "--non-interactive",
+            "--dry-run",
+        ],
+        cwd=REPO_ROOT,
+        capture_output=True,
+        text=True,
+        check=False,
+    )
+    assert result.returncode == 0, result.stderr
+    assert "adopter_public:" in result.stdout
+    assert "sot: git" in result.stdout
+    assert "allowlist_ref:" not in result.stdout
 
 
 def test_cli_non_interactive_team_profile(tmp_path: Path):

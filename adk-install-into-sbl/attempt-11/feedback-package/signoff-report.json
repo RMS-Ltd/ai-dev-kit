@@ -1,0 +1,137 @@
+{
+  "schema_version": "1.0.0",
+  "project_root": "/Users/ruari/Projects/starborn_legacy",
+  "default_repo": "RMS-Ltd/ai-dev-kit",
+  "awaiting_label": "awaiting-adopter-signoff",
+  "issues": [
+    {
+      "id": "BR-084",
+      "number": 16,
+      "title": "RW install mode C missing task_doc_pattern",
+      "ready": true,
+      "skipped": false,
+      "skip_reason": "",
+      "checks": [
+        {
+          "type": "rw_config_patterns",
+          "passed": true,
+          "detail": "rw-config.yaml patterns OK"
+        }
+      ]
+    },
+    {
+      "id": "BR-083",
+      "number": 15,
+      "title": "RW install default patterns mismatch fresh kanban layout",
+      "ready": true,
+      "skipped": false,
+      "skip_reason": "",
+      "checks": [
+        {
+          "type": "rw_config_patterns",
+          "passed": true,
+          "detail": "rw-config.yaml patterns OK"
+        },
+        {
+          "type": "command",
+          "passed": true,
+          "detail": "exit 0"
+        }
+      ]
+    },
+    {
+      "id": "UXR-017",
+      "number": 20,
+      "title": "Kanban epic/story path lowercase naming (adopter tree)",
+      "ready": true,
+      "skipped": false,
+      "skip_reason": "",
+      "checks": [
+        {
+          "type": "no_capitalised_kanban_segments",
+          "passed": true,
+          "detail": "no Epic-/Story- path segments"
+        },
+        {
+          "type": "kanban_paths_padding",
+          "passed": true,
+          "detail": "padding OK (duplicate tasks ignored per contract)"
+        }
+      ]
+    },
+    {
+      "id": "BR-080",
+      "number": 12,
+      "title": "Kanban fresh mode without --force on empty repo",
+      "ready": false,
+      "skipped": true,
+      "skip_reason": "kit_only \u2014 not evaluated on adopter install",
+      "checks": []
+    },
+    {
+      "id": "BR-086",
+      "number": 17,
+      "title": "RW install lowercase fresh kanban patterns and sign-off",
+      "ready": true,
+      "skipped": false,
+      "skip_reason": "",
+      "checks": [
+        {
+          "type": "rw_config_patterns",
+          "passed": true,
+          "detail": "rw-config.yaml patterns OK"
+        },
+        {
+          "type": "no_capitalised_kanban_segments",
+          "passed": true,
+          "detail": "no Epic-/Story- path segments"
+        }
+      ]
+    },
+    {
+      "id": "BR-088",
+      "number": 18,
+      "title": "RW install mode C missing version_file scaffold",
+      "ready": true,
+      "skipped": false,
+      "skip_reason": "",
+      "checks": [
+        {
+          "type": "version_file_exists",
+          "passed": true,
+          "detail": "version_file exists: src/starborn_legacy/version.py"
+        }
+      ]
+    },
+    {
+      "id": "BR-089",
+      "number": 19,
+      "title": "RW install mode C does not create main_changelog (CHANGELOG.md)",
+      "ready": true,
+      "skipped": false,
+      "skip_reason": "",
+      "checks": [
+        {
+          "type": "version_file_exists",
+          "passed": true,
+          "detail": "main_changelog exists: CHANGELOG.md"
+        }
+      ]
+    },
+    {
+      "id": "BR-082",
+      "number": 14,
+      "title": "RW install missing pyyaml preflight",
+      "ready": true,
+      "skipped": false,
+      "skip_reason": "",
+      "checks": [
+        {
+          "type": "command",
+          "passed": true,
+          "detail": "exit 0"
+        }
+      ]
+    }
+  ]
+}

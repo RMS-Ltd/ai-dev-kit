@@ -50,6 +50,7 @@
 | Sign-off | [feedback-package/signoff-report.json](feedback-package/signoff-report.json) |
 | KMA report | [feedback-package/FB-ADK-KMA-KANBAN-MIGRATION.md](feedback-package/FB-ADK-KMA-KANBAN-MIGRATION.md) |
 | Migration proposal | [feedback-package/migration-proposal.md](feedback-package/migration-proposal.md) |
+| Operator rework archive | [operator-rework-archive/](operator-rework-archive/) — blind candidate vs operator tree (recovered 2026-06-24) |
 | Index | [docs/adk-feedback/attempt-10/README.md](../../docs/adk-feedback/attempt-10/README.md) |
 
 **Installed-state evidence** was on SBL `dev` pre-revert (`COMPREHENSION.md`, `docs/kanban/`, `docs-pre-ai-dev-kit/`) — not mirrored on ADK.
@@ -62,7 +63,7 @@
 | ----- | ------ |
 | 1 — Kit KMA (blind) | **Complete** — archived legacy only |
 | 2 — Structural score vs reference | **Maintainer** — [KMA-REFERENCE-EST-TREE-ATTEMPT-09.md](../attempt-09/feedback-package/KMA-REFERENCE-EST-TREE-ATTEMPT-09.md) |
-| 3 — Operator tweaks | Log in FB §4 if any |
+| 3 — Operator tweaks | Log in FB §4; **archive** [operator-rework-archive/](operator-rework-archive/) |
 
 ---
 

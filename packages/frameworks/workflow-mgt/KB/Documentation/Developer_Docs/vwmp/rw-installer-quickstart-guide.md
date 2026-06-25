@@ -59,6 +59,14 @@ python scripts/install_release_workflow.py --mode c --non-interactive --language
 
 Use `--force` to overwrite an existing `ai-dev-kit-config.yaml`. If the file already exists and `--force` is omitted, the installer skips the language write and continues.
 
+**Documentation surfaces (FR-141 / E05:S08:T08):** Non-interactive installs default `documentation_surfaces.adopter_public.sot: git` (in-repo Markdown; no `portal/`). Opt into Docusaurus only when you have portal infrastructure:
+
+```bash
+python scripts/install_release_workflow.py --mode c --non-interactive --adopter-public-sot docusaurus
+```
+
+Requires `portal/docusaurus.config.js` (or your `allowlist_ref`) on disk before Install RC passes.
+
 ### Step 3: Review Generated Config
 
 ```bash

@@ -13,8 +13,8 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** Large  
 **Created:** 2026-04-19  
-**Last updated:** 2026-06-17 (v0.6.9.38+1 – Kanban documentation setup)
-**Version:** v0.6.9.38+1
+**Last updated:** 2026-06-25 (v0.6.9.41+4 – Kanban documentation setup)
+**Version:** v0.6.9.41+4
 **Code:** E6S09
 
 ---
@@ -81,7 +81,7 @@ housekeeping_policy: keep
 
 - [x] **E06:S09:T25 – Starborn Legacy greenfield install diary — triage & upstream reaction (UXR-025)** - ✅ COMPLETE (HIGH, **v0.6.9.25+3** — F4/F5 fix **+2**; attempt 2 closure + F9 v1 catalog triage **+3**) — [Task](story-09-ai-dev-kit-installation-and-adopter-integration/T25-starborn-legacy-greenfield-install-diary-triage-uxr025.md) | [UXR-025](../../fbu/UXR-025-starborn-legacy-greenfield-install-diary.md) | [IPP](../../../implementation-cycles/IPP-E06S09T25-starborn-legacy-greenfield-install-diary-triage-uxr025.md) | [Triage](../../../knowledge/analysis/projects/starborn-legacy-install-triage-matrix.md) | [Attempt 02](../../../../adk-install-into-sbl/attempt-02/greenfield-install-diary.md)
 
-- [x] **E06:S09:T26 – Starborn Legacy ADK install program** - ✅ COMPLETE (**v0.6.9.26+4** — ten attempts; attempt 10 Arm B PASS; programme Phase 1 closed) — [Task](story-09-ai-dev-kit-installation-and-adopter-integration/T26-starborn-legacy-adk-install-program.md) | [attempt-10 index](../../../../adk-install-into-sbl/attempt-10/README.md) | [Triage matrix](../../../knowledge/analysis/projects/starborn-legacy-install-triage-matrix.md)
+- [x] **E06:S09:T26 – Starborn Legacy ADK install program** - ✅ COMPLETE (**v0.6.9.26+7** — attempt 11 FR-079 accepted; guided KMA 93.99%; AC21) — [Task](story-09-ai-dev-kit-installation-and-adopter-integration/T26-starborn-legacy-adk-install-program.md) | [attempt-11 index](../../../../adk-install-into-sbl/attempt-11/README.md) | [#85](https://github.com/RMS-Ltd/ai-dev-kit/issues/85) | [Triage matrix](../../../knowledge/analysis/projects/starborn-legacy-install-triage-matrix.md)
 
 - [x] **E06:S09:T31 – Agentic kanban migration agent (FR-127 / F22)** - ✅ COMPLETE (v0.6.9.31+1 — KMA workflow + gated installer) — [Task](story-09-ai-dev-kit-installation-and-adopter-integration/T31-agentic-kanban-migration-agent-fr127.md) | [FR-127](../../fbu/FR-127-agentic-kanban-migration-agent-replace-tool-pipeline.md) | [IPP](../../../implementation-cycles/IPP-E06S09T31-agentic-kanban-migration-agent-fr127.md)
 
@@ -106,7 +106,11 @@ housekeeping_policy: keep
 
 - [x] **E06:S09:T38 – Guided install orchestrator (FR-135)** - ✅ COMPLETE (**v0.6.9.38+1** — guided v2 profile + phases A–F; AC2/AC3 SBL replay pending) — [Task](story-09-ai-dev-kit-installation-and-adopter-integration/T38-guided-install-orchestrator-fr135.md) | [FR-135](../../fbu/FR-135-guided-install-orchestrator-zero-manual-steps.md) | [IPP-E06S09T38](../../../implementation-cycles/IPP-E06S09T38-guided-install-orchestrator-fr135.md) | [#85](https://github.com/RMS-Ltd/ai-dev-kit/issues/85)
 
-- [x] **E06:S09:T39 – Guided KMA Target Structure Pack (FR-136)** - ✅ COMPLETE (**v0.6.9.39+1** — guided/score modes, TSP pack, scorer, pytest) — [Task](story-09-ai-dev-kit-installation-and-adopter-integration/T39-guided-kma-target-structure-pack-fr136.md) | [IPP-E06S09T39](../../../implementation-cycles/IPP-E06S09T39-guided-kma-target-structure-pack-fr136.md) | [FR-136](../../fbu/FR-136-guided-kma-target-structure-pack.md) | [#85](https://github.com/RMS-Ltd/ai-dev-kit/issues/85)
+- [x] **E06:S09:T39 – Guided KMA Target Structure Pack (FR-136)** - ✅ COMPLETE (**v0.6.9.39+1** — guided/score modes, TSP pack, scorer, pytest; **adopter replay validated** @ attempt 11 **93.99%**) — [Task](story-09-ai-dev-kit-installation-and-adopter-integration/T39-guided-kma-target-structure-pack-fr136.md) | [IPP-E06S09T39](../../../implementation-cycles/IPP-E06S09T39-guided-kma-target-structure-pack-fr136.md) | [FR-136](../../fbu/FR-136-guided-kma-target-structure-pack.md) | [#85](https://github.com/RMS-Ltd/ai-dev-kit/issues/85)
+
+- [x] **E06:S09:T40 – Greenfield orchestrator Install RC gaps (BR-112)** - ✅ COMPLETE @ **v0.6.9.40+2** — [VERIFICATION-BR112](../../../../../../adk-install-into-sbl/attempt-11/VERIFICATION-BR112.md) — [Task](story-09-ai-dev-kit-installation-and-adopter-integration/T40-greenfield-orchestrator-install-rc-gaps-br112.md) | [BR-112](../../fbu/BR-112-greenfield-orchestrator-install-rc-gaps.md) **FIXED** | [IPP](../../../implementation-cycles/IPP-E06S09T40-greenfield-orchestrator-install-rc-gaps-br112.md) | [#85](https://github.com/RMS-Ltd/ai-dev-kit/issues/85)
+
+- [ ] **E06:S09:T41 – External adopter archetype corpus (FR-142)** - 🔄 IN PROGRESS (MEDIUM — Wave 1 @ **v0.6.9.41+4**; Wave 3 **deferred** until G1) — [Task](story-09-ai-dev-kit-installation-and-adopter-integration/T41-external-adopter-archetype-corpus-fr142.md) | [FR-142](../../fbu/FR-142-external-adopter-archetype-corpus-install-validation.md) | [UXR-029](../../fbu/UXR-029-adk-install-path-experiment.md) | [IPP-E06S09T41](../../../implementation-cycles/IPP-E06S09T41-external-adopter-archetype-corpus-fr142.md) | [adk-install-external](../../../../adk-install-external/README.md)
 
 ---
 

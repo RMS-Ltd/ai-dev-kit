@@ -51,6 +51,8 @@ housekeeping_policy: keep
 - [x] **E03:S02:T15 — SemVer external `+BUILD` redundancy evaluation & policy decision (UXR-031)** ✅ COMPLETE (**v0.3.2.15+2** — Option A core-only display + ADR-031; user verified 2026-06-24)
   - Task: [`T15-semver-external-build-metadata-redundancy-uxr031`](story-02-versioning-cookbook-and-examples/T15-semver-external-build-metadata-redundancy-uxr031.md)
 
+- [x] **E03:S02:T16 — SemVer public surface BUILD leak fix (BR-111)** - ✅ COMPLETE @ v0.3.2.16+1 — [Task](story-02-versioning-cookbook-and-examples/T16-semver-public-surface-build-leak-br111.md) | [BR-111](../../fbu/BR-111-semver-public-surface-build-metadata-leak.md) | [#85](https://github.com/RMS-Ltd/ai-dev-kit/issues/85) | [IPP](../../../implementation-cycles/IPP-E03S02T16-semver-public-surface-build-leak-br111.md)
+
 ---
 
 ## Overview

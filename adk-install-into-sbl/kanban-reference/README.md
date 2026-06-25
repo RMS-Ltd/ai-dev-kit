@@ -8,6 +8,7 @@ Mirrored from SBL attempt 11 pre-revert snapshot ([#85](https://github.com/RMS-L
 | [KMA-METHODS.md](KMA-METHODS.md) | Guided KMA methods |
 | [SCORING-RUBRIC.yaml](SCORING-RUBRIC.yaml) | Structural scoring rubric |
 | [KMA-REFERENCE-EST-TREE-ATTEMPT-09.md](../attempt-09/feedback-package/KMA-REFERENCE-EST-TREE-ATTEMPT-09.md) | Operator freeze reference (attempt 09) |
+| [OPERATOR-REWORKED-EST-TREE.md](../attempt-10/operator-rework-archive/OPERATOR-REWORKED-EST-TREE.md) | Operator titled export (attempt 10 lineage; TSP source) |
 
 **Partial mirror:** Companion files below exist on SBL prep `dev` (`a77fa4b4`) but are **not** yet on ADK — carry onto execution branch per [attempt-11-preflight-checklist.md](../attempt-11-preflight-checklist.md):
 

@@ -17,7 +17,7 @@ housekeeping_policy: keep
 **Implementing Task:** [E03:S02:T15](../epics/epic-03/story-02-versioning-cookbook-and-examples/T15-semver-external-build-metadata-redundancy-uxr031.md)  
 **Policy:** [semver-external-display-policy-decision.md](../epics/epic-03/story-02-versioning-cookbook-and-examples/semver-external-display-policy-decision.md) — Option A (core-only external SemVer)
 
-**Related:** [FR-045](FR-045-adr-002-task-touch-derived-mapping.md) · [BR-061](BR-061-semver-task-touch-counter-increments-too-often.md) · [docs/governance/standards/dev-kit-versioning-policy.md](../../governance/standards/dev-kit-versioning-policy.md)
+**Related:** [FR-045](FR-045-adr-002-task-touch-derived-mapping.md) · [BR-061](BR-061-semver-task-touch-counter-increments-too-often.md) · [BR-111](BR-111-semver-public-surface-build-metadata-leak.md) · [E03:S02:T16](../epics/epic-03/story-02-versioning-cookbook-and-examples/T16-semver-public-surface-build-leak-br111.md) · [docs/governance/standards/dev-kit-versioning-policy.md](../../governance/standards/dev-kit-versioning-policy.md)
 
 ---
 

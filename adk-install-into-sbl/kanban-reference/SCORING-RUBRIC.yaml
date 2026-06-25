@@ -65,7 +65,7 @@ baselines:
     band_mismatches_logged: 159
 
   temp_operator_source:
-    source: temp/sbl-operator-kanban-est-tree-titled.md
+    source: adk-install-into-sbl/attempt-10/operator-rework-archive/OPERATOR-REWORKED-EST-TREE.md
     source_lines: 473
   # 473 lines ≠ 473 unique tasks; dedup required (M03)
 

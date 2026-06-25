@@ -8,7 +8,7 @@ housekeeping_policy: keep
 
 # SBL Attempt 11 — Preflight Checklist
 
-> **Status: Phase A complete · Phase B pending** — Track A (TSP programme prep) done locally; install execution not started. Intake: [ai-dev-kit #85](https://github.com/RMS-Ltd/ai-dev-kit/issues/85).
+> **Status: Complete** — Phase B install + bootstrap done; FR-079 **final**; maintainer intake accepted 2026-06-24. Intake: [ai-dev-kit #85](https://github.com/RMS-Ltd/ai-dev-kit/issues/85).
 
 **Purpose:** Maintainer and adopter preflight before **Phase B** — greenfield Arm B install from `pre-adk-install` with **guided KMA** (not a blind re-run). This is a **kanban structural programme** follow-on to attempt 10 ([#57](https://github.com/RMS-Ltd/ai-dev-kit/issues/57)); **do not** re-run install RC as the primary deliverable unless executing full Phase B.
 
@@ -26,7 +26,7 @@ housekeeping_policy: keep
 | Track | What | Evidence branch | Status |
 |-------|------|-----------------|--------|
 | **A — Programme prep** | TSP, KMA-METHODS, rubric, feedback spec | Old local `dev` @ `a77fa4b4` | ✅ Complete — **not** install evidence |
-| **B — Install execution** | Arm B from `pre-adk-install` + guided KMA | **New** `dev` from `pre-adk-install` | ⏳ Pending |
+| **B — Install execution** | Arm B from `pre-adk-install` + guided KMA | **New** `dev` from `pre-adk-install` | ✅ Done (`eb5f3f52`; merged to `main`) |
 
 **Do not push** prep-only `dev` for #85. Remote SBL currently has `pre-adk-install` only (no `dev`).
 
@@ -63,7 +63,7 @@ Pick **one** method ([EXECUTION-CHECKLIST](attempt-11/feedback-package/EXECUTION
 | Method | Action |
 |--------|--------|
 | **Cherry-pick** (preferred) | `git cherry-pick 0d50aa3c^..a77fa4b4` from local prep `dev` |
-| **Minimal copy** | Copy from ADK mirror or local prep: `docs/kanban/reference/`, `tools/kanban/*.py`, `docs/adk-feedback/attempt-11/`, `temp/sbl-operator-kanban-est-tree-titled.md` |
+| **Minimal copy** | Copy from ADK mirror: `docs/kanban/reference/`, `tools/kanban/*.py`, `docs/adk-feedback/attempt-11/`, [`attempt-10/operator-rework-archive/OPERATOR-REWORKED-EST-TREE.md`](attempt-10/operator-rework-archive/OPERATOR-REWORKED-EST-TREE.md) |
 
 ### TSP pack completeness (verify all exist on execution branch)
 

@@ -12,9 +12,9 @@ housekeeping_policy: keep
 **Status:** COMPLETE  
 **Priority:** HIGH  
 **Created:** 2026-06-09  
-**Last updated:** 2026-06-16 (attempt **10** Arm B PASS — programme **Phase 1** closed @ **v0.6.9.26+4**)  
-**Version:** v0.6.9.26+4  
-**Version Anchor:** v0.6.9.26+4  
+**Last updated:** 2026-06-25 (v0.6.9.26+7 — attempt 11 FR-079 programme kanban init @ **v0.6.9.26+7**)  
+**Version:** v0.6.9.26+7  
+**Version Anchor:** v0.6.9.26+7  
 **Code:** E06S09T26
 
 **Predecessor (closed):** [E06:S09:T25](T25-starborn-legacy-greenfield-install-diary-triage-uxr025.md) — UXR-025 triage + F4/F5 fixes @ **v0.6.9.25+3**
@@ -123,6 +123,7 @@ Attempts **1** and **2** proved installer contracts (sign-off ALL READY) but **f
 - [x] **AC18:** Attempt 10 Arm B replay — Install RC strict **PASS**; **0** ad-hoc KMA scripts; SQLite before first RW @ pin **`v0.4.1171`** (`448a79e1`).
 - [x] **AC19:** FR-079 attempt 10 package **accepted** — adopter sign-off final @ 2026-06-15; [attempt-10 index](../../../../../../adk-install-into-sbl/attempt-10/README.md).
 - [x] **AC20:** SBL operational — first domain RW (`E02:S02:T01` · `v0.2.2.1+1`) + post-install UKW (`E02:S16:T02` · `v0.2.16.2+1`) on SBL `dev`.
+- [x] **AC21:** FR-079 attempt 11 package **accepted** — adopter sign-off final @ 2026-06-24; guided KMA **93.99%**; [attempt-11 index](../../../../../../adk-install-into-sbl/attempt-11/README.md); filed [BR-111](../../../fbu/BR-111-semver-public-surface-build-metadata-leak.md)/[T16](../../../epic-03/story-02-versioning-cookbook-and-examples/T16-semver-public-surface-build-leak-br111.md), [FR-141](../../../fbu/FR-141-adopter-documentation-profile-greenfield-default.md)/[T08](../../../epic-05/story-08-knowledge-base/T08-adopter-documentation-profile-greenfield-default-fr141.md), [BR-112](../../../fbu/BR-112-greenfield-orchestrator-install-rc-gaps.md)/[T40](T40-greenfield-orchestrator-install-rc-gaps-br112.md); [FR-136](../../../fbu/FR-136-guided-kma-target-structure-pack.md) adopter replay validated.
 
 ---
 
@@ -140,7 +141,7 @@ Attempts **1** and **2** proved installer contracts (sign-off ALL READY) but **f
 | 8 | `0d0e5ab3` | **FAIL** — in-place legacy migration abandoned | [#51](https://github.com/RMS-Ltd/ai-dev-kit/issues/51) |
 | 9 | `v0.4.1164` @ `7a08a906` | **Arm B** — KMA PASS; Install RC ~50% FAIL; PRIMARY synthesis → [T36](T36-adopter-path-selector-install-rc-uxr029.md) | [#52](https://github.com/RMS-Ltd/ai-dev-kit/issues/52) · [Attempt 09 index](../../../../../../adk-install-into-sbl/attempt-09/README.md) · [Synthesis article](../../../../knowledge/articles/greenfield-brownfield-selective-adoption-sbl-attempt-09.md) |
 | 10 | `v0.4.1171` @ `448a79e1` | **Arm B PASS** — Install RC strict PASS; 0 ad-hoc KMA; first domain RW + UKW; FR-079 **final**; programme **Phase 1** closed | [Attempt 10 index](../../../../../../adk-install-into-sbl/attempt-10/README.md) |
-| 11 | `v0.4.1171` | **TSP / guided KMA** — Track A local; Track B pending post-revert | [#85](https://github.com/RMS-Ltd/ai-dev-kit/issues/85) · [Attempt 11 index](../../../../../../adk-install-into-sbl/attempt-11/README.md) |
+| 11 | `v0.4.1171` @ `37a607a3` | **Arm B guided KMA PASS** — 93.99% structural score; Install RC strict PASS (recovery); FR-079 **final**; bootstrap E02:S02 complete | [#85](https://github.com/RMS-Ltd/ai-dev-kit/issues/85) · [Attempt 11 index](../../../../../../adk-install-into-sbl/attempt-11/README.md) |
 
 > **Path convention:** `adk-install-into-sbl/attempt-{NN}/` — see [adk-install-into-sbl/README.md](../../../../../../adk-install-into-sbl/README.md).
 
@@ -224,12 +225,39 @@ See [kanban-migration-experiment-report](../../../../../../adk-install-into-sbl/
 
 ---
 
+## Attempt 11 intake (2026-06-24)
+
+**FR-079 package accepted** — ADK mirror: [attempt-11/](../../../../../../adk-install-into-sbl/attempt-11/README.md). **Adopter sign-off:** `package_status: final` · `final_signoff_at_utc: 2026-06-24T20:00:00Z` · SBL `dev` @ `37a607a3` · `main` @ `eb5f3f52`.
+
+### Outcome
+
+| Result | Detail |
+|--------|--------|
+| **Guided KMA** | **93.99%** structural score (377 tasks); blind ~62% → guided delta validated [FR-136](../../../fbu/FR-136-guided-kma-target-structure-pack.md) |
+| **Install RC strict** | **PASS**; orchestrator exit **0** on replay @ `v0.4.1224` — [VERIFICATION-BR112](../../../../../../adk-install-into-sbl/attempt-11/VERIFICATION-BR112.md) ([BR-112](../../../fbu/BR-112-greenfield-orchestrator-install-rc-gaps.md) **FIXED**) |
+| **Bootstrap E02:S02** | **COMPLETE** (T02–T07); RW mode C wired |
+| **Sign-off** | **7 READY** |
+
+### New findings filed (maintainer intake)
+
+| FB | Disposition | Task |
+|----|-------------|------|
+| SemVer BUILD on public surface | [BR-111](../../../fbu/BR-111-semver-public-surface-build-metadata-leak.md) | [E03:S02:T16](../../../epic-03/story-02-versioning-cookbook-and-examples/T16-semver-public-surface-build-leak-br111.md) |
+| Docs profile Docusaurus default | [FR-141](../../../fbu/FR-141-adopter-documentation-profile-greenfield-default.md) | [E05:S08:T08](../../../epic-05/story-08-knowledge-base/T08-adopter-documentation-profile-greenfield-default-fr141.md) |
+| Orchestrator / Install RC gaps | [BR-112](../../../fbu/BR-112-greenfield-orchestrator-install-rc-gaps.md) | [E06:S09:T40](T40-greenfield-orchestrator-install-rc-gaps-br112.md) |
+| Guided KMA + TSP | [FR-136](../../../fbu/FR-136-guided-kma-target-structure-pack.md) (shipped) | [T39](T39-guided-kma-target-structure-pack-fr136.md) — adopter replay ✅ |
+
+---
+
 ## Program status & next steps
 
 | Priority | Item | Owner | Notes |
 |----------|------|-------|-------|
 | — | ~~SBL install program (T26)~~ | — | ✅ **COMPLETE** @ **v0.6.9.26+4** — attempt 10 Arm B PASS |
-| **P0** | Programme **Phase 2** — fynd.deals / Confidentia Arm A recon | Maintainer | Per [adopter-install-attempt-preflight](../../../../guides/adopter-install-attempt-preflight.md) |
+| **P0** | ~~**BR-112** — orchestrator Install RC false failure~~ | [T40](T40-greenfield-orchestrator-install-rc-gaps-br112.md) **COMPLETE** @ v0.6.9.40+2 | [VERIFICATION-BR112](../../../../../../adk-install-into-sbl/attempt-11/VERIFICATION-BR112.md) |
+| **P1** | **BR-111** — SemVer public BUILD leak | [E03:S02:T16](../../../epic-03/story-02-versioning-cookbook-and-examples/T16-semver-public-surface-build-leak-br111.md) | ADR-031 Option A gap |
+| **P1** | **FR-141** — adopter docs profile default | [E05:S08:T08](../../../epic-05/story-08-knowledge-base/T08-adopter-documentation-profile-greenfield-default-fr141.md) | FR-121 wave 4 |
+| **P1** | Programme **Phase 2** — fynd.deals / Confidentia Arm A recon | Maintainer | Per [adopter-install-attempt-preflight](../../../../guides/adopter-install-attempt-preflight.md) |
 | **P1** | **F22** — agentic migration agent | [T31](T31-agentic-kanban-migration-agent-fr127.md) | [FR-127](../../../fbu/FR-127-agentic-kanban-migration-agent-replace-tool-pipeline.md) |
 | **P1** | **F23** — zero-padded epic detection | [T32](T32-detect-structure-zero-padded-epic-br108.md) | [BR-108](../../../fbu/BR-108-detect-existing-structure-zero-padded-epic-names.md) |
 | **P2** | **F10** / **F20** — orchestrator ergonomics | Future installer task | Workarounds documented; not SBL blockers |
@@ -330,6 +358,21 @@ See [kanban-migration-experiment-report](../../../../../../adk-install-into-sbl/
 | P1 | F23 | ✅ **FILED** → [BR-108](../../../fbu/BR-108-detect-existing-structure-zero-padded-epic-names.md) / [T32](T32-detect-structure-zero-padded-epic-br108.md) |
 | P2 | F11/F16 | Post-install deferred-Kanban hint; clarify consumer layout vs v3.2 spec |
 | P2 | BR-086 | ✅ **CLOSED** via [T28](T28-v32-fresh-install-signoff-story-padding-br105.md) **v0.6.9.28+2** (F18 contract alignment) |
+
+---
+
+## Maintainer mirror — operator-rework archive (@ v0.6.9.26+5)
+
+Durable comparison pack for attempt-10 **blind KMA candidate → operator-reworked** tree (not TSP vs guided score):
+
+| Artifact | Path |
+| -------- | ---- |
+| Archive index | [operator-rework-archive](../../../../../../adk-install-into-sbl/attempt-10/operator-rework-archive/README.md) |
+| Side A (564 legacy tokens) | [KMA-CANDIDATE-EST-TREE.md](../../../../../../adk-install-into-sbl/attempt-10/operator-rework-archive/KMA-CANDIDATE-EST-TREE.md) |
+| Side B (366 operator export) | [OPERATOR-REWORKED-EST-TREE.md](../../../../../../adk-install-into-sbl/attempt-10/operator-rework-archive/OPERATOR-REWORKED-EST-TREE.md) |
+| Comparison + GH issue archaeology | [COMPARISON.md](../../../../../../adk-install-into-sbl/attempt-10/operator-rework-archive/COMPARISON.md) |
+
+Recovered from SBL local `temp/sbl-operator-kanban-est-tree-titled.md` (gitignored; absent from closed [#52](https://github.com/RMS-Ltd/ai-dev-kit/issues/52) / [#57](https://github.com/RMS-Ltd/ai-dev-kit/issues/57)).
 
 ---
 

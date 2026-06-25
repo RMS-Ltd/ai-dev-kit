@@ -1,0 +1,8 @@
+{
+  "rows": {
+    "E06:S09:T41": {
+      "allowed": true,
+      "reason": "RW Step 7 v0.6.9.41+4 — operator deferral sign-off; row version marker + deferred-until-G1 wording"
+    }
+  }
+}

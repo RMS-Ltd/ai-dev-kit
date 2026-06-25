@@ -1,91 +1,73 @@
 # Starborn Legacy — ADK attempt 11 (guided KMA / TSP programme)
 
-**Session:** `20260617-attempt-11`  
+**Session:** `20260624-attempt-11`  
 **SBL repo:** [RMS-Ltd/starborn_legacy](https://github.com/RMS-Ltd/starborn_legacy)  
-**Intake issue:** [#85](https://github.com/RMS-Ltd/ai-dev-kit/issues/85) (attempt 11 — [#57](https://github.com/RMS-Ltd/ai-dev-kit/issues/57) was attempt 10, closed)  
-**ADK pin:** `v0.4.1171` (unchanged)  
-**Package status:** **`draft`**
+**Intake issue:** [#85](https://github.com/RMS-Ltd/ai-dev-kit/issues/85)  
+**ADK pin:** `v0.4.1171`  
+**Execution tip:** `cad18cc5` (`dev`) · **Install/bootstrap complete:** `eb5f3f52` · **`main` merged** @ `eb5f3f52`  
+**Package status:** **`final`** · **Submitted:** 2026-06-24 · **Last sync:** 2026-06-24
 
 ---
 
-## Programme prep vs install execution
+## Outcomes
 
-| Track | Branch | HEAD (local) | Status |
-|-------|--------|--------------|--------|
-| **A — Programme prep** | Old `dev` lineage | `a77fa4b4` | ✅ TSP + METHODS + feedback spec |
-| **B — Install execution** | **New** `dev` from `pre-adk-install` | *(pending)* | ⏳ Arm B + guided KMA |
-
-**Prep commits are not attempt 11 execution evidence.** Do not push prep-only `dev` for #85. Evidence URLs and `feedback-payload.json` `head_sha` are set **after** phase B.
-
-**Execution guide:** [EXECUTION-CHECKLIST.md](EXECUTION-CHECKLIST.md)
-
----
-
-## Phase A deliverables (complete)
-
-| Phase | Deliverable | Status |
-|-------|-------------|--------|
-| 1 | Target Structure Pack (`docs/kanban/reference/`) | ✅ |
-| 2 | `KMA-METHODS.md` + `SCORING-RUBRIC.yaml` | ✅ |
-| 3 | Repo minimal align + scorer | ✅ |
-| 4 | ADK feedback package (this folder) | ✅ draft |
-
----
-
-## Phase B deliverables (pending)
-
-| Gate | Status |
+| Gate | Result |
 |------|--------|
-| Branch from `pre-adk-install` | ⏳ |
-| Carry TSP pack | ⏳ |
-| Greenfield install + **guided** KMA | ⏳ |
-| Install RC strict | ⏳ |
-| Sign-off contract | ⏳ |
-| Structural score ≥ 0.85 | ⏳ |
-| Push new `dev` + update #85 | ⏳ |
-| `package_status: final` | ⏳ |
+| Greenfield orchestrator (arm-b) | ⚠️ EXIT=1 — Install RC path bug ([FB](FB-ADK-greenfield-orchestrator-install-rc-gaps.md)) |
+| Install RC strict (recovery + post-KMA) | ✅ PASS |
+| **Guided KMA** (`synthesize_from_tsp.py`) | ✅ 377/377 tasks · 19 epics |
+| Structural score | ✅ **93.99%** (threshold 85%) |
+| Sign-off contract | ✅ 7 READY · 1 SKIP |
+| Bootstrap **E02:S02** | ✅ COMPLETE (T02–T07) |
+| RW mode C (`tools/workflow_mgt`) | ✅ Wired — `E02:S02:T07` (`v0.2.2.7+1`) |
 
 ---
 
-## Primary feedback item
+## Releases (execution branch)
+
+| Task | Internal | Primary SemVer tag |
+|------|----------|-------------------|
+| E02:S02:T01 install completion | `v0.2.2.1+1` | — |
+| E02:S16:T04 install land | `v0.2.16.4+1` | `v0.0.3` |
+| E02:S16:T02 UKW (post-install) | `v0.2.16.2+2` | `v0.0.5` |
+| E02:S02:T07 bootstrap gate | `v0.2.2.7+1` | `v0.0.7` |
+| E02:S16:T02 UKW (bootstrap close-out) | `v0.2.16.2+3` | `v0.0.8` |
+
+---
+
+## Primary feedback
 
 | ID | Evidence |
 |----|----------|
-| **Guided KMA + TSP** | [FB-ADK-GUIDED-KMA-TARGET-STRUCTURE-PACK.md](FB-ADK-GUIDED-KMA-TARGET-STRUCTURE-PACK.md) |
-| Guided proposal (sim.) | [migration-proposal-guided.md](migration-proposal-guided.md) |
-| Three-way diff | [THREE-WAY-STRUCTURAL-DIFF.md](THREE-WAY-STRUCTURAL-DIFF.md) |
+| Documentation profile (Obsidian/git, not Docusaurus default) | [FB-ADK-adopter-documentation-profile-obsidian-default.md](FB-ADK-adopter-documentation-profile-obsidian-default.md) |
+| SemVer BUILD leaks into public surface | [FB-ADK-dual-semver-build-leaks-into-public-semver-surface.md](FB-ADK-dual-semver-build-leaks-into-public-semver-surface.md) |
+| Orchestrator / Install RC gaps | [FB-ADK-greenfield-orchestrator-install-rc-gaps.md](FB-ADK-greenfield-orchestrator-install-rc-gaps.md) |
+| Guided KMA + TSP | [FB-ADK-GUIDED-KMA-TARGET-STRUCTURE-PACK.md](FB-ADK-GUIDED-KMA-TARGET-STRUCTURE-PACK.md) |
+| Install paths (carry-forward) | [attempt-09/FB-ADK-install-paths-industry-patterns.md](../attempt-09/FB-ADK-install-paths-industry-patterns.md) |
 
-**Structured index:** [feedback-payload.json](feedback-payload.json)
-
----
-
-## Scoring summary (prep baseline on old `dev`)
-
-| Candidate | Weighted | Pass ≥85%? |
-|-----------|----------:|:----------:|
-| `docs/kanban/epics/` vs TSP | 73.2% | No |
-| TSP self-test | 98.3% | Yes |
-| Attempt 10 blind (est.) | ~62% | No |
-
-Re-run on **new** `dev` after guided KMA: `python3 tools/kanban/score_kma_structure.py`
+**Payload:** [feedback-payload.json](feedback-payload.json)  
+**Diary:** `logs/attempt-11/greenfield-install-diary.md` (gitignored)
 
 ---
 
-## Carry-forward
+## Attempt 11 vs attempt 10
 
-| ID | Evidence |
-|----|----------|
-| Blind KMA gaps | [../attempt-10/FB-ADK-KMA-KANBAN-MIGRATION.md](../attempt-10/FB-ADK-KMA-KANBAN-MIGRATION.md) |
-| Install paths PRIMARY | [../attempt-09/FB-ADK-install-paths-industry-patterns.md](../attempt-09/FB-ADK-install-paths-industry-patterns.md) |
+| Metric | Attempt 10 (blind) | Attempt 11 (guided) |
+|--------|-------------------|---------------------|
+| KMA mode | Blind policy | TSP-anchored synthesis |
+| Structural score | ~62% est. | **93.99%** |
+| Ad-hoc `scripts/*kma*` | 0 | 0 |
+| Install RC strict | PASS (after workarounds) | PASS |
 
 ---
 
-## Submission checklist
+## Post-install (operator)
 
-| Step | Status |
+| Item | Status |
 |------|--------|
-| TSP + METHODS (prep) | ✅ |
-| FB documents | ✅ |
-| Issue #85 opened | ✅ |
-| Install execution (phase B) | ⏳ |
-| Payload `package_status: final` | ⏳ after phase B |
+| Push `dev` + tags to `origin` | ✅ |
+| Merge `dev` → `main` | ✅ @ `eb5f3f52` |
+| Bootstrap gate `E02:S02:T07` | ✅ `tools/workflow_mgt` + `release-workflow.yaml` |
+| `AGENTS.md` | ✅ |
+| Phase C active board | ✅ `kboard.md` only (M06) |
+| Kit-side FBs | 5 items in `feedback-payload.json` |

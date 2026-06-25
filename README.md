@@ -11,7 +11,7 @@
 
 **A comprehensive toolkit for AI-assisted development workflows**
 
-**Version (SemVer):** `v0.4.1222+1` | **Internal:** `v0.4.14.11+1` (E04:S14:T11 — UKW gap discovery FR-043) | **Last Updated:** 2026-06-24
+**Version (SemVer):** `v0.4.1235` | **Internal:** `v0.5.8.8+1` (E05:S08:T08 — FR-141 git-native adopter docs default) | **Last Updated:** 2026-06-25
 
 > **SemVer ordering (`task_touch`):** Compare releases by **core** (`0.4.1198` here), not by `+BUILD`. The `+1` suffix mirrors internal build metadata for traceability only — see [ADR-031](docs/architecture/standards-and-adrs/ADR-031-external-semver-build-metadata-display-policy.md).
 
