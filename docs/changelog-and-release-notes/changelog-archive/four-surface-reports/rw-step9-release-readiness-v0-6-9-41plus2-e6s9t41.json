@@ -1,24 +1,26 @@
 {
   "contract": "FR-092 Wave 7 release-readiness gate (Gates 1-7: governance / predecessors / parity / corpus / stage / stamps / four-surface)",
-  "four_surface_report_path": "/Users/ruari/Projects/ai-dev-kit/docs/changelog-and-release-notes/changelog-archive/four-surface-reports/rw-step7-four-surface-report-v0-6-9-41plus1-e6s9t41.json",
+  "four_surface_report_path": "/Users/ruari/Projects/ai-dev-kit/docs/changelog-and-release-notes/changelog-archive/four-surface-reports/rw-step7-four-surface-report-v0-6-9-41plus2-e6s9t41.json",
   "invocation_context": "rw_step_9_release_readiness",
-  "overall_passed": true,
+  "overall_passed": false,
   "project_root": "/Users/ruari/Projects/ai-dev-kit",
   "release_scope": {
     "epic": 6,
     "story": 9,
     "task": 41,
     "task_id": "E06:S09:T41",
-    "version_string": "v0.6.9.41+1"
+    "version_string": "v0.6.9.41+2"
   },
   "summary": {
-    "blocking_failures": [],
-    "gates_failed": 0,
-    "gates_passed": 11,
+    "blocking_failures": [
+      "Gate 7: Four-surface parity (FR-084)"
+    ],
+    "gates_failed": 1,
+    "gates_passed": 10,
     "gates_total": 11,
     "gates_waived": 0
   },
-  "timestamp_utc": "2026-06-25 13:18 UTC",
+  "timestamp_utc": "2026-06-25 13:27 UTC",
   "verdicts": [
     {
       "evidence": {
@@ -100,14 +102,14 @@
     },
     {
       "evidence": {
-        "four_surface_report": "/Users/ruari/Projects/ai-dev-kit/docs/changelog-and-release-notes/changelog-archive/four-surface-reports/rw-step7-four-surface-report-v0-6-9-41plus1-e6s9t41.json",
-        "paths_checked": 5,
+        "four_surface_report": "/Users/ruari/Projects/ai-dev-kit/docs/changelog-and-release-notes/changelog-archive/four-surface-reports/rw-step7-four-surface-report-v0-6-9-41plus2-e6s9t41.json",
+        "paths_checked": 3,
         "release_scope": {
           "epic": 6,
           "story": 9,
           "task": 41,
           "task_id": "E06:S09:T41",
-          "version_string": "v0.6.9.41+1"
+          "version_string": "v0.6.9.41+2"
         },
         "violations": 0
       },
@@ -117,14 +119,14 @@
       "name": "Stage-set completeness (BR-070)",
       "passed": true,
       "severity": "block",
-      "summary": "BR-070 satisfied: all 5 Step-7 path(s) are staged or unchanged.",
+      "summary": "BR-070 satisfied: all 3 Step-7 path(s) are staged or unchanged.",
       "waive_reason": null,
       "waived": false
     },
     {
       "evidence": {
         "evidence_mode": null,
-        "report": "/Users/ruari/Projects/ai-dev-kit/docs/changelog-and-release-notes/changelog-archive/four-surface-reports/rw-step7-four-surface-report-v0-6-9-41plus1-e6s9t41.json",
+        "report": "/Users/ruari/Projects/ai-dev-kit/docs/changelog-and-release-notes/changelog-archive/four-surface-reports/rw-step7-four-surface-report-v0-6-9-41plus2-e6s9t41.json",
         "stamps_appended_with_evidence": 1,
         "stamps_preserved_existing": 0,
         "stamps_skipped_no_evidence": 0
@@ -143,10 +145,8 @@
       "evidence": {
         "fbu_doc": {
           "notes_count": 0,
-          "paths": [
-            "docs/kanban/fbu/FR-142-external-adopter-archetype-corpus-install-validation.md"
-          ],
-          "touched": true
+          "paths": [],
+          "touched": false
         },
         "kboard": {
           "notes_count": 0,
@@ -160,9 +160,9 @@
           "story": 9,
           "task": 41,
           "task_id": "E06:S09:T41",
-          "version_string": "v0.6.9.41+1"
+          "version_string": "v0.6.9.41+2"
         },
-        "report": "/Users/ruari/Projects/ai-dev-kit/docs/changelog-and-release-notes/changelog-archive/four-surface-reports/rw-step7-four-surface-report-v0-6-9-41plus1-e6s9t41.json",
+        "report": "/Users/ruari/Projects/ai-dev-kit/docs/changelog-and-release-notes/changelog-archive/four-surface-reports/rw-step7-four-surface-report-v0-6-9-41plus2-e6s9t41.json",
         "task_doc": {
           "notes_count": 0,
           "paths": [
@@ -171,13 +171,15 @@
           "touched": true
         }
       },
-      "findings": [],
+      "findings": [
+        "FR-084 violation: untouched surface(s) lack rationale notes (must explain why no mutation): ['fbu_doc']."
+      ],
       "gate_id": 7,
-      "is_blocking_failure": false,
+      "is_blocking_failure": true,
       "name": "Four-surface parity (FR-084)",
-      "passed": true,
+      "passed": false,
       "severity": "block",
-      "summary": "Four-surface parity satisfied: all primary surfaces present, either touched or noted-untouched, with paths existing on disk.",
+      "summary": "Four-surface parity violation; see findings.",
       "waive_reason": null,
       "waived": false
     },

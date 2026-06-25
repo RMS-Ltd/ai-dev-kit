@@ -2,15 +2,16 @@
 
 - **Contract:** FR-092 Wave 7 release-readiness gate (Gates 1-7: governance / predecessors / parity / corpus / stage / stamps / four-surface)
 - **Invocation context:** rw_step_9_release_readiness
-- **Release scope:** E06:S09:T41 (v0.6.9.41+1)
-- **Timestamp (UTC):** 2026-06-25 13:18 UTC
-- **Four-surface report:** `/Users/ruari/Projects/ai-dev-kit/docs/changelog-and-release-notes/changelog-archive/four-surface-reports/rw-step7-four-surface-report-v0-6-9-41plus1-e6s9t41.json`
+- **Release scope:** E06:S09:T41 (v0.6.9.41+2)
+- **Timestamp (UTC):** 2026-06-25 13:27 UTC
+- **Four-surface report:** `/Users/ruari/Projects/ai-dev-kit/docs/changelog-and-release-notes/changelog-archive/four-surface-reports/rw-step7-four-surface-report-v0-6-9-41plus2-e6s9t41.json`
 
 ## Overall verdict
 
-- **Status:** PASS — RW MAY proceed past Step 9.
+- **Status:** BLOCK — RW MUST NOT commit. See blocking failures below.
+  - Gate 7: Four-surface parity (FR-084)
 
-- Gates: 11/11 passed (0 failed, 0 waived).
+- Gates: 10/11 passed (1 failed, 0 waived).
 
 ## Per-gate detail
 
@@ -60,19 +61,19 @@
 ### Gate 5 — Stage-set completeness (BR-070)
 
 - Status: **PASS** (severity: `block`)
-- Summary: BR-070 satisfied: all 5 Step-7 path(s) are staged or unchanged.
+- Summary: BR-070 satisfied: all 3 Step-7 path(s) are staged or unchanged.
 - Evidence:
-  - `four_surface_report`: `/Users/ruari/Projects/ai-dev-kit/docs/changelog-and-release-notes/changelog-archive/four-surface-reports/rw-step7-four-surface-report-v0-6-9-41plus1-e6s9t41.json`
-  - `paths_checked`: `5`
+  - `four_surface_report`: `/Users/ruari/Projects/ai-dev-kit/docs/changelog-and-release-notes/changelog-archive/four-surface-reports/rw-step7-four-surface-report-v0-6-9-41plus2-e6s9t41.json`
+  - `paths_checked`: `3`
   - `violations`: `0`
-  - `release_scope`: `{'epic': 6, 'story': 9, 'task': 41, 'task_id': 'E06:S09:T41', 'version_string': 'v0.6.9.41+1'}`
+  - `release_scope`: `{'epic': 6, 'story': 9, 'task': 41, 'task_id': 'E06:S09:T41', 'version_string': 'v0.6.9.41+2'}`
 
 ### Gate 6 — Forensic stamp evidence (UXR-009)
 
 - Status: **PASS** (severity: `block`)
 - Summary: Forensic stamp evidence consistent: appended=1, skipped=0, preserved=0 (mode=None).
 - Evidence:
-  - `report`: `/Users/ruari/Projects/ai-dev-kit/docs/changelog-and-release-notes/changelog-archive/four-surface-reports/rw-step7-four-surface-report-v0-6-9-41plus1-e6s9t41.json`
+  - `report`: `/Users/ruari/Projects/ai-dev-kit/docs/changelog-and-release-notes/changelog-archive/four-surface-reports/rw-step7-four-surface-report-v0-6-9-41plus2-e6s9t41.json`
   - `evidence_mode`: `None`
   - `stamps_appended_with_evidence`: `1`
   - `stamps_skipped_no_evidence`: `0`
@@ -80,14 +81,16 @@
 
 ### Gate 7 — Four-surface parity (FR-084)
 
-- Status: **PASS** (severity: `block`)
-- Summary: Four-surface parity satisfied: all primary surfaces present, either touched or noted-untouched, with paths existing on disk.
+- Status: **FAIL** (severity: `block`)
+- Summary: Four-surface parity violation; see findings.
+- Findings:
+  - FR-084 violation: untouched surface(s) lack rationale notes (must explain why no mutation): ['fbu_doc'].
 - Evidence:
-  - `report`: `/Users/ruari/Projects/ai-dev-kit/docs/changelog-and-release-notes/changelog-archive/four-surface-reports/rw-step7-four-surface-report-v0-6-9-41plus1-e6s9t41.json`
+  - `report`: `/Users/ruari/Projects/ai-dev-kit/docs/changelog-and-release-notes/changelog-archive/four-surface-reports/rw-step7-four-surface-report-v0-6-9-41plus2-e6s9t41.json`
   - `task_doc`: `{'touched': True, 'paths': ['docs/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T41-external-adopter-archetype-corpus-fr142.md'], 'notes_count': 0}`
-  - `fbu_doc`: `{'touched': True, 'paths': ['docs/kanban/fbu/FR-142-external-adopter-archetype-corpus-install-validation.md'], 'notes_count': 0}`
+  - `fbu_doc`: `{'touched': False, 'paths': [], 'notes_count': 0}`
   - `kboard`: `{'touched': True, 'paths': ['docs/kanban/kboard.md'], 'notes_count': 0}`
-  - `release_scope`: `{'epic': 6, 'story': 9, 'task': 41, 'task_id': 'E06:S09:T41', 'version_string': 'v0.6.9.41+1'}`
+  - `release_scope`: `{'epic': 6, 'story': 9, 'task': 41, 'task_id': 'E06:S09:T41', 'version_string': 'v0.6.9.41+2'}`
 
 ### Gate 8 — Stamp homogeneity (FR-097)
 

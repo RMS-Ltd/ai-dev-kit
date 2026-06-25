@@ -12,9 +12,9 @@ housekeeping_policy: keep
 **Status:** IN PROGRESS  
 **Priority:** MEDIUM  
 **Created:** 2026-06-24  
-**Last updated:** 2026-06-25 (RW @ **v0.6.9.41+1**)  
-**Version:** v0.6.9.41+1  
-**Version Anchor:** v0.6.9.41+1  
+**Last updated:** 2026-06-25 (MWF delivery resume — Wave 1 @ **v0.6.9.41+2**; Wave 3 BLOCKED G1)  
+**Version:** v0.6.9.41+2  
+**Version Anchor:** v0.6.9.41+2  
 **Code:** E06S09T41
 
 **Parent programme:** [E06:S09:T26](T26-starborn-legacy-adk-install-program.md) (Phase 5 extension) · [E06:S09:T36](T36-adopter-path-selector-install-rc-uxr029.md)
