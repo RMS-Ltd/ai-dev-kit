@@ -45,6 +45,8 @@ def test_finalize_creates_registry_row(isolated_task_touch):
     assert payload["skipped"] is False
     assert payload["created"] is True
     assert payload["semver_full"] == "0.4.941+1"
+    assert payload["semver_core"] == "0.4.941"
+    assert payload["semver_display"] == "0.4.941"
     assert payload["primary_tag"] == "v0.4.941"
 
     data = yaml.safe_load(registry_path.read_text(encoding="utf-8"))

@@ -39,6 +39,7 @@ from validate_release_coherence import (  # noqa: E402
     _normalize_semver,
     _parse_version_file,
     _project_root,
+    _public_semver_build_leak_error,
 )
 
 _INTERNAL_TAG_RE = re.compile(r"^v(\d+\.\d+\.\d+\.\d+\+\d+)$")
@@ -177,8 +178,13 @@ def audit_release_at_tag(
         im = _README_INTERNAL_RE.search(readme_text)
         if not sm:
             errors.append("README missing SemVer line")
-        elif db_semver and _coherence_semver_core(sm.group(1)) != _coherence_semver_core(db_semver):
-            errors.append(f"README SemVer {sm.group(1)} != DB {db_semver}")
+        else:
+            readme_semver = sm.group(1)
+            leak = _public_semver_build_leak_error("README", readme_semver)
+            if leak:
+                errors.append(leak.replace("release_coherence: ", ""))
+            elif db_semver and _coherence_semver_core(readme_semver) != _coherence_semver_core(db_semver):
+                errors.append(f"README SemVer {readme_semver} != DB {db_semver}")
         if not im:
             errors.append("README missing Internal line")
         elif _normalize_semver(im.group(1)) != internal:
@@ -190,8 +196,13 @@ def audit_release_at_tag(
         if entry and entry.group(1).lstrip("v") != internal:
             errors.append(f"CHANGELOG top [{entry.group(1)}] != {internal}")
         csm = _CHANGELOG_SEMVER_RE.search(changelog_text)
-        if csm and _coherence_semver_core(csm.group(1)) != _coherence_semver_core(db_semver):
-            errors.append(f"CHANGELOG SemVer {csm.group(1)} != DB {db_semver}")
+        if csm:
+            changelog_semver = csm.group(1)
+            leak = _public_semver_build_leak_error("CHANGELOG", changelog_semver)
+            if leak:
+                errors.append(leak.replace("release_coherence: ", ""))
+            elif db_semver and _coherence_semver_core(changelog_semver) != _coherence_semver_core(db_semver):
+                errors.append(f"CHANGELOG SemVer {changelog_semver} != DB {db_semver}")
 
     return ReleaseAudit(
         tag=tag,

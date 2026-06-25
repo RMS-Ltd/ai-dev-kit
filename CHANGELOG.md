@@ -11,6 +11,14 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.3.2.16+1] - 25-06-26
+
+E03:S02:T16 — **Change implemented:** BR-111 — public SemVer surfaces enforce ADR-031 core-only; coherence rejects `+BUILD` on README/CHANGELOG. SemVer **v0.4.1234**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.3.2.16+1.md)
+
+---
+
 ## [0.6.9.41+4] - 25-06-26
 
 E06:S09:T41 — **Change implemented:** Operator deferral — Wave 3 full install deferred until G1 (not waived). SemVer **v0.4.1233+4**.

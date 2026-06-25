@@ -41,6 +41,7 @@ def finalize_rw_semver_registry(internal_version: str) -> dict:
         db_path = semver_converter.get_release_state_db_path()
         result = allocate(db_path, version)
         semver_full = result.semver_full
+        semver_core = result.semver_core
         created = result.allocated
         registry_path = str(db_path)
         export_yaml_path = None
@@ -55,6 +56,8 @@ def finalize_rw_semver_registry(internal_version: str) -> dict:
             "created": created,
             "internal_version": version,
             "semver_full": semver_full,
+            "semver_core": semver_core,
+            "semver_display": tag_info.get("semver_display") or semver_core,
             "primary_tag": tag_info["primary_tag"],
             "internal_tag": tag_info.get("internal_tag"),
             "strategy": strategy,
@@ -79,12 +82,15 @@ def finalize_rw_semver_registry(internal_version: str) -> dict:
         created = True
 
     tag_info = semver_converter.get_rw_tag_info(version, finalize=False)
+    semver_core = semver_converter.semver_core_from_full(semver_full)
     registry_path = str(Path.cwd() / "semver-registry.yaml")
     return {
         "skipped": False,
         "created": created,
         "internal_version": version,
         "semver_full": semver_full,
+        "semver_core": semver_core,
+        "semver_display": tag_info.get("semver_display") or semver_core,
         "primary_tag": tag_info["primary_tag"],
         "internal_tag": tag_info.get("internal_tag"),
         "strategy": strategy,

@@ -11,7 +11,7 @@ housekeeping_policy: keep
 **Bug ID:** BR-111  
 **Priority:** HIGH  
 **Severity:** HIGH (adopter-facing version confusion; coherence gate enforces wrong shape)  
-**Status:** OPEN  
+**Status:** ATTEMPTED FIX @ v0.3.2.16+1  
 **Source finding:** SBL attempt 11 — maintainer intake @ **v0.6.9.26+7** / [#85](https://github.com/RMS-Ltd/ai-dev-kit/issues/85)  
 **Related:** [UXR-031](UXR-031-semver-plusbuild-redundancy-in-task-touch.md) · [ADR-031](../../architecture/standards-and-adrs/ADR-031-external-semver-build-metadata-display-policy.md) · [E03:S02:T15](../epics/epic-03/story-02-versioning-cookbook-and-examples/T15-semver-external-build-metadata-redundancy-uxr031.md) · [FR-122](FR-122-release-workflow-architectural-contract-release-transaction.md) · [#85](https://github.com/RMS-Ltd/ai-dev-kit/issues/85)  
 **Implementing Task:** [E03:S02:T16](../epics/epic-03/story-02-versioning-cookbook-and-examples/T16-semver-public-surface-build-leak-br111.md)  
