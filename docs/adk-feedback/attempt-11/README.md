@@ -14,4 +14,4 @@
 | KMA-METHODS | [KMA-METHODS.md](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/adk-install-into-sbl/kanban-reference/KMA-METHODS.md) |
 | SCORING-RUBRIC | [SCORING-RUBRIC.yaml](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/adk-install-into-sbl/kanban-reference/SCORING-RUBRIC.yaml) |
 
-**Note:** SBL `dev` @ `37a607a3` (attempt 11 **final**). Canonical mirror: [adk-install-into-sbl/attempt-11/](../../adk-install-into-sbl/attempt-11/README.md). Maintainer intake accepted 2026-06-24.
+**Note:** SBL `dev` @ `37a607a3` (attempt 11 **final**). Canonical mirror: [adk-install-into-sbl/attempt-11/](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/adk-install-into-sbl/attempt-11/README.md). Maintainer intake accepted 2026-06-24.

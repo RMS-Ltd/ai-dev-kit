@@ -11,7 +11,7 @@
 
 **A comprehensive toolkit for AI-assisted development workflows**
 
-**Version (SemVer):** `v0.4.1228+0` | **Internal:** `v0.6.9.41+0` (E06:S09:T41 — FR-142 external adopter archetype corpus kanban init) | **Last Updated:** 2026-06-25
+**Version (SemVer):** `v0.4.1229+7` | **Internal:** `v0.6.9.26+7` (E06:S09:T26 — SBL attempt 11 FR-079 programme kanban init) | **Last Updated:** 2026-06-25
 
 > **SemVer ordering (`task_touch`):** Compare releases by **core** (`0.4.1198` here), not by `+BUILD`. The `+1` suffix mirrors internal build metadata for traceability only — see [ADR-031](docs/architecture/standards-and-adrs/ADR-031-external-semver-build-metadata-display-policy.md).
 

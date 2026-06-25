@@ -12,9 +12,9 @@ housekeeping_policy: keep
 **Status:** COMPLETE  
 **Priority:** HIGH  
 **Created:** 2026-06-09  
-**Last updated:** 2026-06-24 (SBL `main` analysis in COMPARISON @ **v0.6.9.26+6**)  
-**Version:** v0.6.9.26+6  
-**Version Anchor:** v0.6.9.26+6  
+**Last updated:** 2026-06-25 (v0.6.9.26+7 — attempt 11 FR-079 programme kanban init @ **v0.6.9.26+7**)  
+**Version:** v0.6.9.26+7  
+**Version Anchor:** v0.6.9.26+7  
 **Code:** E06S09T26
 
 **Predecessor (closed):** [E06:S09:T25](T25-starborn-legacy-greenfield-install-diary-triage-uxr025.md) — UXR-025 triage + F4/F5 fixes @ **v0.6.9.25+3**

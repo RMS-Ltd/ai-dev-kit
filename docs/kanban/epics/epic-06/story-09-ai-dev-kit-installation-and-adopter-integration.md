@@ -13,8 +13,8 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** Large  
 **Created:** 2026-04-19  
-**Last updated:** 2026-06-25 (v0.6.9.41+0 – Kanban documentation setup for E06:S09:T41 / FR-142)
-**Version:** v0.6.9.41+0
+**Last updated:** 2026-06-25 (v0.6.9.26+7 – E06:S09:T26 attempt 11 programme kanban init)
+**Version:** v0.6.9.26+7
 **Code:** E6S09
 
 ---
@@ -81,7 +81,7 @@ housekeeping_policy: keep
 
 - [x] **E06:S09:T25 – Starborn Legacy greenfield install diary — triage & upstream reaction (UXR-025)** - ✅ COMPLETE (HIGH, **v0.6.9.25+3** — F4/F5 fix **+2**; attempt 2 closure + F9 v1 catalog triage **+3**) — [Task](story-09-ai-dev-kit-installation-and-adopter-integration/T25-starborn-legacy-greenfield-install-diary-triage-uxr025.md) | [UXR-025](../../fbu/UXR-025-starborn-legacy-greenfield-install-diary.md) | [IPP](../../../implementation-cycles/IPP-E06S09T25-starborn-legacy-greenfield-install-diary-triage-uxr025.md) | [Triage](../../../knowledge/analysis/projects/starborn-legacy-install-triage-matrix.md) | [Attempt 02](../../../../adk-install-into-sbl/attempt-02/greenfield-install-diary.md)
 
-- [x] **E06:S09:T26 – Starborn Legacy ADK install program** - ✅ COMPLETE (**v0.6.9.26+6** — SBL `main` analysis + operator-rework archive) — [Task](story-09-ai-dev-kit-installation-and-adopter-integration/T26-starborn-legacy-adk-install-program.md) | [operator-rework-archive](../../../../adk-install-into-sbl/attempt-10/operator-rework-archive/) | [attempt-10 index](../../../../adk-install-into-sbl/attempt-10/README.md) | [Triage matrix](../../../knowledge/analysis/projects/starborn-legacy-install-triage-matrix.md)
+- [x] **E06:S09:T26 – Starborn Legacy ADK install program** - ✅ COMPLETE (**v0.6.9.26+7** — attempt 11 FR-079 accepted; guided KMA 93.99%; AC21) — [Task](story-09-ai-dev-kit-installation-and-adopter-integration/T26-starborn-legacy-adk-install-program.md) | [attempt-11 index](../../../../adk-install-into-sbl/attempt-11/README.md) | [#85](https://github.com/RMS-Ltd/ai-dev-kit/issues/85) | [Triage matrix](../../../knowledge/analysis/projects/starborn-legacy-install-triage-matrix.md)
 
 - [x] **E06:S09:T31 – Agentic kanban migration agent (FR-127 / F22)** - ✅ COMPLETE (v0.6.9.31+1 — KMA workflow + gated installer) — [Task](story-09-ai-dev-kit-installation-and-adopter-integration/T31-agentic-kanban-migration-agent-fr127.md) | [FR-127](../../fbu/FR-127-agentic-kanban-migration-agent-replace-tool-pipeline.md) | [IPP](../../../implementation-cycles/IPP-E06S09T31-agentic-kanban-migration-agent-fr127.md)
 

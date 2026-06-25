@@ -15,7 +15,7 @@ housekeeping_policy: keep
 **Priority:** HIGH (Should Have — MoSCOW **S**)  
 **Status:** OPEN  
 **Implementing Task:** [E05:S08:T08](../epics/epic-05/story-08-knowledge-base/T08-adopter-documentation-profile-greenfield-default-fr141.md)  
-**Evidence:** [FB mirror](../../../adk-install-into-sbl/attempt-11/feedback-package/FB-ADK-adopter-documentation-profile-obsidian-default.md) · [#85](https://github.com/RMS-Ltd/ai-dev-kit/issues/85)
+**Evidence:** [FB mirror](../../../adk-install-into-sbl/attempt-11/feedback-package/FB-ADK-adopter-documentation-profile-obsidian-default.md) · maintainer intake @ **v0.6.9.26+7** · [#85](https://github.com/RMS-Ltd/ai-dev-kit/issues/85)
 
 **Related:** [FR-121](FR-121-git-internal-maintainer-kb-oss-documentation-surfaces.md) · [ADR-026](../../architecture/standards-and-adrs/ADR-026-git-internal-maintainer-kb-fr121.md) · [E05:S08:T07](../epics/epic-05/story-08-knowledge-base/T07-optional-obsidian-editor-profiles-greenfield-install-fr121.md) · [FR-080](FR-080-greenfield-installation-process.md) · [attempt-09 FB](../../../adk-install-into-sbl/attempt-09/FB-ADK-canonical-maintainer-documentation-schema.md)
 
