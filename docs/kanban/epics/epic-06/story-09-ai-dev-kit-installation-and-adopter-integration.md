@@ -13,8 +13,8 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** Large  
 **Created:** 2026-04-19  
-**Last updated:** 2026-06-24 (v0.6.9.26+6 – Kanban documentation setup)
-**Version:** v0.6.9.26+6
+**Last updated:** 2026-06-25 (v0.6.9.41+0 – Kanban documentation setup for E06:S09:T41 / FR-142)
+**Version:** v0.6.9.41+0
 **Code:** E6S09
 
 ---
@@ -110,7 +110,7 @@ housekeeping_policy: keep
 
 - [x] **E06:S09:T40 – Greenfield orchestrator Install RC gaps (BR-112)** - ✅ COMPLETE @ **v0.6.9.40+2** — [VERIFICATION-BR112](../../../../../../adk-install-into-sbl/attempt-11/VERIFICATION-BR112.md) — [Task](story-09-ai-dev-kit-installation-and-adopter-integration/T40-greenfield-orchestrator-install-rc-gaps-br112.md) | [BR-112](../../fbu/BR-112-greenfield-orchestrator-install-rc-gaps.md) **FIXED** | [IPP](../../../implementation-cycles/IPP-E06S09T40-greenfield-orchestrator-install-rc-gaps-br112.md) | [#85](https://github.com/RMS-Ltd/ai-dev-kit/issues/85)
 
-- [ ] **E06:S09:T41 – External adopter archetype corpus (FR-142)** - 📋 TODO (MEDIUM — Phase 5 install diversity; gated after UXR-029 Phase 4) — [Task](story-09-ai-dev-kit-installation-and-adopter-integration/T41-external-adopter-archetype-corpus-fr142.md) | [FR-142](../../fbu/FR-142-external-adopter-archetype-corpus-install-validation.md) | [UXR-029](../../fbu/UXR-029-adk-install-path-experiment.md) | —No IPP—
+- [ ] **E06:S09:T41 – External adopter archetype corpus (FR-142)** - 📋 TODO (MEDIUM — Phase 5 install diversity; kanban init @ **v0.6.9.41+0**; gated after UXR-029 Phase 4) — [Task](story-09-ai-dev-kit-installation-and-adopter-integration/T41-external-adopter-archetype-corpus-fr142.md) | [FR-142](../../fbu/FR-142-external-adopter-archetype-corpus-install-validation.md) | [UXR-029](../../fbu/UXR-029-adk-install-path-experiment.md) | —No IPP—
 
 ---
 

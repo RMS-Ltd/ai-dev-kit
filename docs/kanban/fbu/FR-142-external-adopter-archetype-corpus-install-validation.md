@@ -13,7 +13,8 @@ housekeeping_policy: keep
 **Submitted:** 2026-06-24  
 **Submitted By:** Maintainer (operator strategy — post-SBL install programme)  
 **Priority:** MEDIUM (Should Have — MoSCOW **S**)  
-**Status:** OPEN
+**Status:** OPEN  
+**Version anchor:** v0.6.9.41+0 (RW -k kanban init)
 
 **Implementing Task:** [E06:S09:T41](../epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T41-external-adopter-archetype-corpus-fr142.md)
 

@@ -70,9 +70,10 @@ Phase 1 — SBL attempt 10 (Arm B validation)
 Phase 2 — Brownfield recon (fynd.deals, Confidentia)
 Phase 3 — Brownfield full attempts (Arm A)
 Phase 4 — Synthesis → Adopter Path Selector at RC
+Phase 5 — External adopter archetype corpus ([FR-142](FR-142-external-adopter-archetype-corpus-install-validation.md) / [E06:S09:T41](../epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T41-external-adopter-archetype-corpus-fr142.md))
 ```
 
-**Artifacts:** FR-079 feedback packages per attempt; scorecard JSON; maintainer indexes under `adk-install-into-sbl/`.
+**Artifacts:** FR-079 feedback packages per attempt; scorecard JSON; maintainer indexes under `adk-install-into-sbl/`; Phase 5 external recon under `adk-install-external/` (planned — [FR-142](FR-142-external-adopter-archetype-corpus-install-validation.md)).
 
 ---
 

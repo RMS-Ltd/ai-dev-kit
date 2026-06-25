@@ -119,4 +119,5 @@ Phase 1 — SBL attempt 10 (Arm B validation)
 Phase 2 — fynd.deals + Confidentia recon
 Phase 3 — Arm A full attempts
 Phase 4 — Programme synthesis → Install RC at release candidate
+Phase 5 — External adopter archetype corpus ([FR-142](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/kanban/fbu/FR-142-external-adopter-archetype-corpus-install-validation.md) / [E06:S09:T41](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T41-external-adopter-archetype-corpus-fr142.md); gated after Phase 4)
 ```

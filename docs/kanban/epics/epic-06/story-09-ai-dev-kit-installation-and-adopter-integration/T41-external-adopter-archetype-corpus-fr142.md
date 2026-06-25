@@ -12,7 +12,9 @@ housekeeping_policy: keep
 **Status:** TODO  
 **Priority:** MEDIUM  
 **Created:** 2026-06-24  
-**Last updated:** 2026-06-24 (intake — FR-142 filed)  
+**Last updated:** 2026-06-25 (RW -k kanban init @ **v0.6.9.41+0**)  
+**Version:** v0.6.9.41+0  
+**Version Anchor:** v0.6.9.41+0  
 **Code:** E06S09T41
 
 **Parent programme:** [E06:S09:T26](T26-starborn-legacy-adk-install-program.md) (Phase 5 extension) · [E06:S09:T36](T36-adopter-path-selector-install-rc-uxr029.md)
