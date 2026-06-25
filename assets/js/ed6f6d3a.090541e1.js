@@ -139,9 +139,14 @@ function _createMdxContent(props) {
         children: "Note:"
       }), " SBL ", (0,jsx_runtime.jsx)(_components.code, {
         children: "dev"
-      }), " reverts to ", (0,jsx_runtime.jsx)(_components.code, {
-        children: "pre-adk-install"
-      }), "; do not link SBL GitHub paths for attempt 09–11 evidence."]
+      }), " @ ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "37a607a3"
+      }), " (attempt 11 ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "final"
+      }), "). Canonical mirror: ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://github.com/RMS-Ltd/ai-dev-kit/blob/main/adk-install-into-sbl/attempt-11/README.md",
+        children: "adk-install-into-sbl/attempt-11/"
+      }), ". Maintainer intake accepted 2026-06-24."]
     })]
   });
 }

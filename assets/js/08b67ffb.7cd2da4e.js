@@ -399,8 +399,23 @@ function _createMdxContent(props) {
     }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
       children: (0,jsx_runtime.jsx)(_components.code, {
         className: "language-text",
-        children: "Phase 0 — Kit fixes (this repo)\nPhase 1 — SBL attempt 10 (Arm B validation)\nPhase 2 — fynd.deals + Confidentia recon\nPhase 3 — Arm A full attempts\nPhase 4 — Programme synthesis → Install RC at release candidate\n"
+        children: "Phase 0 — Kit fixes (this repo)\nPhase 1 — SBL attempt 10 (Arm B validation)\nPhase 2 — fynd.deals + Confidentia recon\nPhase 3 — Arm A full attempts\nPhase 4 — Programme synthesis → Install RC at release candidate\nPhase 5 — External adopter archetype corpus ([FR-142](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/kanban/fbu/FR-142-external-adopter-archetype-corpus-install-validation.md) / [E06:S09:T41](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T41-external-adopter-archetype-corpus-fr142.md); gated after Phase 4)\n"
       })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Phase 5 recon (maintainer):"
+      }), " Use ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://github.com/RMS-Ltd/ai-dev-kit/blob/main/docs/knowledge/analysis/projects/external-adopter-diversity-matrix.md",
+        children: "external adopter diversity matrix"
+      }), " and ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://github.com/RMS-Ltd/ai-dev-kit/blob/main/adk-install-external/RECON-PROTOCOL.md",
+        children: "recon protocol"
+      }), ". Index attempts under ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://github.com/RMS-Ltd/ai-dev-kit/tree/main/adk-install-external",
+        children: (0,jsx_runtime.jsx)(_components.code, {
+          children: "adk-install-external/"
+        })
+      }), ". Recon-first: structure map → Install RC pre-score → full install only when a novel gap is predicted (full installs wait for UXR-029 Phase 4 unless operator waives in T41)."]
     })]
   });
 }
