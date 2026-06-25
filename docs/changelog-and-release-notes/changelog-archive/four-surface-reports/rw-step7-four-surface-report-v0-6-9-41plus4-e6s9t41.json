@@ -1,0 +1,37 @@
+{
+  "contract": "FR-092 / ADR-018 (RW Step 7 four-surface reconciliation)",
+  "invocation_context": "rw_step_7",
+  "release_scope": {
+    "epic": 6,
+    "story": 9,
+    "task": 41,
+    "task_id": "E06:S09:T41",
+    "version_string": "v0.6.9.41+4"
+  },
+  "stamp_evidence": {
+    "E06:S09:T41": "rw-step7-stamp-evidence-v0-6-9-41plus4-e6s9t41.json"
+  },
+  "summary": {
+    "stamps_appended_with_evidence": 1,
+    "touched_surfaces": ["task_doc", "fbu_doc", "kboard", "story_doc"]
+  },
+  "surfaces": {
+    "task_doc": {
+      "touched": true,
+      "paths": ["docs/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T41-external-adopter-archetype-corpus-fr142.md"]
+    },
+    "fbu_doc": {
+      "touched": true,
+      "paths": ["docs/kanban/fbu/FR-142-external-adopter-archetype-corpus-install-validation.md"]
+    },
+    "kboard": {
+      "touched": true,
+      "paths": ["docs/kanban/kboard.md"]
+    },
+    "story_doc": {
+      "touched": true,
+      "paths": ["docs/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration.md"]
+    }
+  },
+  "timestamp_utc": "2026-06-25 13:49 UTC"
+}

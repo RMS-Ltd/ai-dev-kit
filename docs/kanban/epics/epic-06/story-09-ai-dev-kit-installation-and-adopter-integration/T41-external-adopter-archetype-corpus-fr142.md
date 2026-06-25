@@ -12,9 +12,9 @@ housekeeping_policy: keep
 **Status:** IN PROGRESS  
 **Priority:** MEDIUM  
 **Created:** 2026-06-24  
-**Last updated:** 2026-06-25 (MWF repeat — forensic report fix @ **v0.6.9.41+3**; Wave 3 BLOCKED G1)  
-**Version:** v0.6.9.41+3  
-**Version Anchor:** v0.6.9.41+3  
+**Last updated:** 2026-06-25 (RW @ **v0.6.9.41+4** — operator deferral sign-off)  
+**Version:** v0.6.9.41+4  
+**Version Anchor:** v0.6.9.41+4  
 **Code:** E06S09T41
 
 **Parent programme:** [E06:S09:T26](T26-starborn-legacy-adk-install-program.md) (Phase 5 extension) · [E06:S09:T36](T36-adopter-path-selector-install-rc-uxr029.md)
@@ -35,11 +35,21 @@ Design and execute **Phase 5** of the adopter install programme: a maintainer-ow
 
 | Gate | Status | Notes |
 | ---- | ------ | ----- |
-| **G1** UXR-029 Phase 4 / AC6 | **OPEN** | fynd.deals or Confidentia Arm A not complete |
+| **G1** UXR-029 Phase 4 / AC6 | **OPEN** (deferred dependency) | fynd.deals or Confidentia Arm A — operator intends to complete properly via UXR-029; **not** bypassing |
 | **G2** Recon before install | **SATISFIED** | Three recon reports with pre-score JSON |
 | **G3** Ethics doc published | **SATISFIED** | [adk-install-external/README.md](../../../../adk-install-external/README.md) |
 
-**Waiver:** None — full installs remain blocked until G1 closes.
+### Operator deferral (2026-06-25)
+
+**Deferral ≠ waiver.** G1 remains **open**; UXR-029 Arm A + Phase 4 synthesis will be done as programme work, not skipped.
+
+| Deferred item | Resume when | Operator sign-off |
+| ------------- | ----------- | ----------------- |
+| Deliverable 5 — full install (Wave 3) | G1 closes naturally (UXR-029 AC6 + Phase 4) | ✅ Deferred — do not proceed early |
+| Live subject recon (upgrade synthetic → real clones) | Operator capacity or post-G1 | ✅ Deferred — synthetic recon sufficient for v1 |
+| Task **COMPLETE** | Wave 3 + FR-142 AC3, or new follow-on task filed | ✅ Wave 1 tranche accepted; remainder parked |
+
+**Waiver:** **None** — full installs must not run until G1 closes.
 
 ---
 
@@ -61,7 +71,7 @@ Design and execute **Phase 5** of the adopter install programme: a maintainer-ow
 | 2 | **Phase 5** sequencing doc + preflight guide § extension | ✅ preflight §8 + matrix |
 | 3 | Maintainer index root (`adk-install-external/`) + recon template | ✅ [index](../../../../adk-install-external/README.md) · [protocol](../../../../adk-install-external/RECON-PROTOCOL.md) |
 | 4 | **≥3** archetype recon reports (Install RC pre-score) | ✅ A1/A2/A5 synthetic recon-01 (live subject pending) |
-| 5 | **≥1** full install attempt with synthesis / FR-079-style package | ⏸ BLOCKED (G1) |
+| 5 | **≥1** full install attempt with synthesis / FR-079-style package | ⏸ **DEFERRED** (G1 — resume after UXR-029 Arm A + Phase 4) |
 | 6 | **≥1** anonymized fixture tree + CI hook | ✅ three fixtures + [pytest](../../../../tests/fixtures/adopter-corpora/test_archetype_fixture_smoke.py) |
 | 7 | UXR-029 Phase 5 cross-link + coverage synthesis note | ✅ [UXR-029](../../../fbu/UXR-029-adk-install-path-experiment.md) coverage table |
 
@@ -93,15 +103,15 @@ Phase 4      → Programme synthesis (path selector at RC)
 Phase 5      → THIS TASK — external archetype corpus (FR-142)
 ```
 
-Early **recon-only** work on 1–2 archetypes may run in parallel with Phase 2–3 if capacity allows; **full installs** wait until Phase 4 gate unless operator waives.
+Early **recon-only** work on 1–2 archetypes may run in parallel with Phase 2–3 if capacity allows. **Full installs** wait until Phase 4 gate. **Operator (2026-06-25):** Wave 3 deferred — G1 will close via proper UXR-029 work, not waived.
 
 ---
 
 ## Acceptance criteria (task)
 
-- [ ] **AC1:** FR-142 AC1–AC5 satisfied or explicitly deferred with operator sign-off in task doc. *(AC3 full install deferred — G1)*
+- [x] **AC1:** FR-142 AC1–AC5 satisfied or explicitly deferred with operator sign-off in task doc. *(Wave 1 satisfied @ v0.6.9.41+3; AC3/full install **deferred** until G1 — see Operator deferral)*
 - [x] **AC2:** No third-party repo modified; ethics constraints documented in attempt README.
-- [ ] **AC3:** Findings wired to FR/BR/UXR or Install RC row proposals when gaps confirmed. *(provisional intake in A1 recon)*
+- [ ] **AC3:** Findings wired to FR/BR/UXR or Install RC row proposals when gaps confirmed. *(provisional intake in A1 recon; full install gaps deferred with Wave 3)*
 
 ---
 
@@ -111,10 +121,10 @@ Early **recon-only** work on 1–2 archetypes may run in parallel with Phase 2�
 - [x] Publish diversity matrix + Phase 5 sequencing
 - [x] Create maintainer index + recon template
 - [x] Complete ≥3 recon reports (synthetic; live subject upgrade pending)
-- [ ] Execute ≥1 full install attempt (novel gap class) — **BLOCKED G1**
+- [ ] Execute ≥1 full install attempt (novel gap class) — **DEFERRED** until G1 (operator sign-off 2026-06-25)
 - [x] Land ≥1 anonymized fixture + test hook
 - [x] Update UXR-029 Phase 5 pointer + coverage synthesis
-- [ ] Reconcile status to COMPLETE / BLOCKED per actual state — **IN PROGRESS** (G1 blocks COMPLETE)
+- [x] Reconcile status — **IN PROGRESS (Wave 1 complete; Wave 3 deferred)** per operator deferral 2026-06-25
 
 ---
 

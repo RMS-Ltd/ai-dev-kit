@@ -13,8 +13,8 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** Large  
 **Created:** 2026-04-19  
-**Last updated:** 2026-06-25 (v0.6.9.41+2 – Kanban documentation setup)
-**Version:** v0.6.9.41+2
+**Last updated:** 2026-06-25 (v0.6.9.41+4 – Kanban documentation setup)
+**Version:** v0.6.9.41+4
 **Code:** E6S09
 
 ---
@@ -110,7 +110,7 @@ housekeeping_policy: keep
 
 - [x] **E06:S09:T40 – Greenfield orchestrator Install RC gaps (BR-112)** - ✅ COMPLETE @ **v0.6.9.40+2** — [VERIFICATION-BR112](../../../../../../adk-install-into-sbl/attempt-11/VERIFICATION-BR112.md) — [Task](story-09-ai-dev-kit-installation-and-adopter-integration/T40-greenfield-orchestrator-install-rc-gaps-br112.md) | [BR-112](../../fbu/BR-112-greenfield-orchestrator-install-rc-gaps.md) **FIXED** | [IPP](../../../implementation-cycles/IPP-E06S09T40-greenfield-orchestrator-install-rc-gaps-br112.md) | [#85](https://github.com/RMS-Ltd/ai-dev-kit/issues/85)
 
-- [ ] **E06:S09:T41 – External adopter archetype corpus (FR-142)** - 🔄 IN PROGRESS (MEDIUM — Phase 5; Wave 1 @ **v0.6.9.41+2**; full install gated G1) — [Task](story-09-ai-dev-kit-installation-and-adopter-integration/T41-external-adopter-archetype-corpus-fr142.md) | [FR-142](../../fbu/FR-142-external-adopter-archetype-corpus-install-validation.md) | [UXR-029](../../fbu/UXR-029-adk-install-path-experiment.md) | [IPP-E06S09T41](../../../implementation-cycles/IPP-E06S09T41-external-adopter-archetype-corpus-fr142.md) | [adk-install-external](../../../../adk-install-external/README.md)
+- [ ] **E06:S09:T41 – External adopter archetype corpus (FR-142)** - 🔄 IN PROGRESS (MEDIUM — Wave 1 @ **v0.6.9.41+4**; Wave 3 **deferred** until G1) — [Task](story-09-ai-dev-kit-installation-and-adopter-integration/T41-external-adopter-archetype-corpus-fr142.md) | [FR-142](../../fbu/FR-142-external-adopter-archetype-corpus-install-validation.md) | [UXR-029](../../fbu/UXR-029-adk-install-path-experiment.md) | [IPP-E06S09T41](../../../implementation-cycles/IPP-E06S09T41-external-adopter-archetype-corpus-fr142.md) | [adk-install-external](../../../../adk-install-external/README.md)
 
 ---
 

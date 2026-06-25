@@ -14,7 +14,7 @@ housekeeping_policy: keep
 **Submitted By:** Maintainer (operator strategy — post-SBL install programme)  
 **Priority:** MEDIUM (Should Have — MoSCOW **S**)  
 **Status:** OPEN  
-**Version anchor:** v0.6.9.41+1 (Wave 1 @ IDW)
+**Version anchor:** v0.6.9.41+4 (operator deferral sign-off)
 
 **Wave 1 evidence:** v0.6.9.41+1 — diversity matrix, `adk-install-external/`, synthetic recon A1/A2/A5, CI fixtures (IDW)
 
@@ -85,7 +85,7 @@ Expenses Tracker already proved that **one external shape** finds bugs operator 
 
 - [x] **AC1:** Diversity matrix + Phase 5 sequencing documented in maintainer KB and linked from [adopter-install-attempt-preflight](../../guides/adopter-install-attempt-preflight.md).
 - [x] **AC2:** At least **3** archetypes recon-scored against Install RC; recon reports in maintainer index. *(synthetic fixture recon; live subject upgrade pending)*
-- [ ] **AC3:** At least **1** full install attempt on an archetype where recon predicted a novel gap; outcome filed (FR-079-style package or maintainer synthesis). *(BLOCKED G1)*
+- [ ] **AC3:** At least **1** full install attempt on an archetype where recon predicted a novel gap; outcome filed (FR-079-style package or maintainer synthesis). *(**DEFERRED** until G1 — operator sign-off 2026-06-25; not waived)*
 - [x] **AC4:** At least **1** anonymized fixture tree committed (or staged behind IPW) with pytest or Install RC hook referencing it.
 - [x] **AC5:** UXR-029 updated with Phase 5 pointer and synthesis note on operator-repo vs external-archetype coverage.
 

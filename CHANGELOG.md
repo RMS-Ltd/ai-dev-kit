@@ -11,6 +11,14 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.6.9.41+4] - 25-06-26
+
+E06:S09:T41 — **Change implemented:** Operator deferral — Wave 3 full install deferred until G1 (not waived). SemVer **v0.4.1233+4**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.6.9.41+4.md)
+
+---
+
 ## [0.6.9.41+3] - 25-06-26
 
 E06:S09:T41 — **Change implemented:** Forensic fix — v0.6.9.41+2 release-readiness report Gate 7 verdict. SemVer **v0.4.1232+3**.
