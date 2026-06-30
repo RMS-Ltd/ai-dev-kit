@@ -9,10 +9,10 @@ housekeeping_policy: keep
 # E06:S09:T36 — Adopter Path Selector + Install RC (UXR-029)
 
 **Task ID:** E06:S09:T36  
-**Status:** IN PROGRESS (kit Phase 0 @ v0.6.9.36+3; AC7 SBL attempt 10 pending)  
+**Status:** SHIPPED (kit Phase 0 @ v0.6.9.36+3; AC7 satisfied @ attempt 10; UXR-029 Phase 4 / G1 open)  
 **Priority:** HIGH  
 **Created:** 2026-06-15  
-**Last updated:** 2026-06-15 (v0.6.9.36+3 — INSTALL + orchestrator blind KMA alignment; AC7 pending)  
+**Last updated:** 2026-06-30 (UKW — AC7 alignment with attempt 10 closure)  
 **Code:** E06S09T36  
 **Version anchor:** **v0.6.9.36+3** (SemVer **v0.4.1168+3**)
 

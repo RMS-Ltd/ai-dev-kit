@@ -11,8 +11,8 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
-## [0.6.9.42+1] - 30-06-26
+## [0.2.16.2+15] - 30-06-26
 
-E06:S09:T42 — **Change implemented:** SBL kanban TSP operator overlay freeze — pass 3 complete, **342** tasks, M04 prune (40), bootstrap milestone retired, SBL issue [#3](https://github.com/RMS-Ltd/starborn-legacy/issues/3). SemVer **v0.4.1236**.
+E02:S16:T02 — **Change implemented:** UKW kanban sync post E06:S09:T42 — E06:S09 tactical overview, T36 SHIPPED alignment, epic/board metadata. SemVer **v0.4.1237**.
 
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.6.9.42+1.md)
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.16.2+15.md)

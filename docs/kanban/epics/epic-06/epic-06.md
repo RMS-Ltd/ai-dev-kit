@@ -12,7 +12,7 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** [TBD]  
 **Created:** 2025-12-05  
-**Last updated:** 2026-06-30 (v0.6.9.42+1 – E06:S09:T42 SBL TSP operator overlay freeze)
+**Last updated:** 2026-06-30 (UKW — post E06:S09:T42 sync)
 **Branch:** `epic/6-framework-management`  
 **Version Schema:** `0.6.S.T+B`  
 **Production URL:** [N/A for this repo]
@@ -115,6 +115,8 @@ housekeeping_policy: keep
 ## Overview
 
 Epic 6 owns the **Framework Management and Maintenance** processes for the ai-dev-kit repository. This epic ensures that all framework packages remain current, well-maintained, and properly versioned.
+
+**Current focus (2026-06-30):** **E06:S09** adopter install programme — SBL Phase 1 closed; guided KMA + TSP scoring shipped (**T39**); operator overlay frozen @ **v0.6.9.42+1** (**T42**, 342 tasks, [SBL #3](https://github.com/RMS-Ltd/starborn-legacy/issues/3)); external archetype corpus Wave 1 live, Wave 3 deferred (**T41** / FR-142).
 
 **Vision:** Transform frameworks from copy-paste packages to **reusable, auto-updating dependencies** that can be installed and updated automatically across projects. Frameworks will support multiple dependency management strategies (Git submodules, package managers, CLI tool) enabling seamless updates when frameworks are improved.
 
