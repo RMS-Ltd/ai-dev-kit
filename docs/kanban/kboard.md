@@ -8,12 +8,12 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Board
 
-**Last Updated:** 2026-06-25 (RW: E05:S08:T08)
-**Version:** v0.5.8.8+1
+**Last Updated:** 2026-06-30 (RW: E02:S16:T02)
+**Version:** v0.2.16.2+15
 
 **Active board contract:** **Sole active MoSCOW board** ([ADR-018](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/architecture/standards-and-adrs/ADR-018-single-kanban-board-consolidation.md)). Rows are **live work** (TODO / IN PROGRESS / OPEN / WAITING / PERPETUAL) plus filed **Could Have** backlog. **Verification (V)** band holds task-shipped / FBU-open items (`⏳ WAITING`). Remove **terminal** rows and archive prose (use [`kanban-completed.md`](kanban-completed.md) / [`intake-completed.md`](intake-completed.md)).
 
-**Note:** Epics 1, 7, 11 are COMPLETE. Epics 2, 3, 4, 5, 6, 8, **10** are IN PROGRESS. Epic 5 **S08/S09 COMPLETE** (FR-114/FR-121). Epic 21 IN PROGRESS — shipped tasks archived @ UKW -c 2026-06-16 (34 E21 + cross-epic V-band); active board: S04–S07 locale backlog + S08 L2–5 deferred.
+**Note:** Epics 1, 7, 11 are COMPLETE. Epics 2, 3, 4, 5, 6, 8, **10** are IN PROGRESS. Epic 5 **S08/S09 COMPLETE** (FR-114/FR-121). Epic 21 IN PROGRESS — shipped tasks archived @ UKW -c 2026-06-16 (34 E21 + cross-epic V-band); active board: S04–S07 locale backlog + S08 L2–5 deferred. **E06:S09** — T42 SBL TSP overlay freeze @ **v0.6.9.42+1**; T41 Wave 3 deferred; V-band: T36/T42.
 
 **Wiring:** Every wired row includes FBU link(s) where applicable (UXR-010). Legacy `fbuboard.md` / `kanban-board.md` aliases **removed** (intake rename wave).
 
@@ -31,7 +31,9 @@ housekeeping_policy: keep
 - **E06:S09:T41** – External adopter archetype corpus (FR-142) - 🔄 IN PROGRESS (MEDIUM — Wave 1 @ **v0.6.9.41+4**; Wave 3 **deferred** until G1) | [Task](epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T41-external-adopter-archetype-corpus-fr142.md) | [FR-142](fbu/FR-142-external-adopter-archetype-corpus-install-validation.md) | [UXR-029](fbu/UXR-029-adk-install-path-experiment.md)| [adk-install-external](../../../adk-install-external/README.md) | [—IPP—](../../implementation-cycles/IPP-E06S09T41-external-adopter-archetype-corpus-fr142.md) | Last modified: 2026-06-25 13:49 UTC
 ### Verification (V) - Task Shipped, FBU Verification Pending
 
-- **E06:S09:T36** – Adopter Path Selector + Install RC (UXR-029) - ⏳ SHIPPED (HIGH — **v0.6.9.36+3**; AC7 satisfied @ attempt 10) | [Task](epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T36-adopter-path-selector-install-rc-uxr029.md) | [UXR-029](fbu/UXR-029-adk-install-path-experiment.md) | [#52](https://github.com/RMS-Ltd/ai-dev-kit/issues/52) | —No IPP— | Last modified: 2026-06-16 13:57 UTC
+- **E06:S09:T42** – SBL kanban TSP operator overlay freeze - ⏳ SHIPPED (HIGH — **v0.6.9.42+1**; **342** tasks; M04 prune; [SBL #3](https://github.com/RMS-Ltd/starborn-legacy/issues/3)) | [Task](epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T42-sbl-kanban-tsp-operator-overlay-freeze.md) | [FR-136](fbu/FR-136-guided-kma-target-structure-pack.md) | [kanban-reference](../../../adk-install-into-sbl/kanban-reference/) | —No IPP— | Last modified: 2026-06-30 17:35 UTC
+
+- **E06:S09:T36** – Adopter Path Selector + Install RC (UXR-029) - ⏳ SHIPPED (HIGH — **v0.6.9.36+3**; AC7 satisfied @ attempt 10; UXR-029 Phase 4 / G1 open) | [Task](epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T36-adopter-path-selector-install-rc-uxr029.md) | [UXR-029](fbu/UXR-029-adk-install-path-experiment.md) | [#52](https://github.com/RMS-Ltd/ai-dev-kit/issues/52) | —No IPP— | Last modified: 2026-06-16 13:57 UTC
 
 ### Could Have (C) - Nice-to-Have Tasks
 
@@ -69,7 +71,7 @@ _All perpetual lanes under **E02:S16** only ([IPP-E02S16T24](../../implementatio
 
 - **E02:S16:T01** – Workflow maintenance (Perpetual) - 🔄 PERPETUAL (**v0.2.16.1+1** — portal js-yaml 4.2.0) — [Task](epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T01-workflow-maintenance-perpetual.md) | [Story](epics/epic-02/story-16-perpetual-ongoing-workflow-operations.md) | [FR-088](fbu/FR-088-dedicated-story-for-perpetual-ongoing-tasks.md) | [—IPP—](../../implementation-cycles/IPP-E2S16T01-canonical-perpetual-ongoing-tasks-story.md) | Last modified: 2026-06-15 22:43 UTC
 
-- **E02:S16:T02** – Ad-hoc Kanban synchronization and hygiene (Perpetual) - 🔄 PERPETUAL (**v0.2.16.2+14** — UKW: E03:S02:T15 verify; FR-137 intake sync) - [Task](epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T02-ad-hoc-kanban-synchronization-and-hygiene-perpetual.md) | [Story](epics/epic-02/story-16-perpetual-ongoing-workflow-operations.md) | [FR-023](fbu/FR-023-update-kanban-workflow-ukw.md) | [—IPP—](../../implementation-cycles/IPP-E2S16T02-perpetual-task-inventory.md) | Last modified: 2026-06-16 14:30 UTC
+- **E02:S16:T02** – Ad-hoc Kanban synchronization and hygiene (Perpetual) - 🔄 PERPETUAL (**v0.2.16.2+15** — UKW post-T42 sync; RW -k) - [Task](epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T02-ad-hoc-kanban-synchronization-and-hygiene-perpetual.md) | [Story](epics/epic-02/story-16-perpetual-ongoing-workflow-operations.md) | [FR-023](fbu/FR-023-update-kanban-workflow-ukw.md) | [—IPP—](../../implementation-cycles/IPP-E2S16T02-perpetual-task-inventory.md) | Last modified: 2026-06-16 14:30 UTC
 
 - **E02:S16:T03** – Ad-hoc Documentation Maintenance (Perpetual) - 🔄 PERPETUAL (**v0.2.16.3+8**) - [Task](epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T03-ad-hoc-documentation-maintenance-perpetual.md) | [Story](epics/epic-02/story-16-perpetual-ongoing-workflow-operations.md) | [FR-124](fbu/FR-124-meta-workflow-orchestration-composite-workflow-chains.md) | [—IPP—](../../implementation-cycles/IPP-E2S16T03-rehouse-workflow-perpetual-tasks.md) | Last modified: 2026-06-10 14:03 UTC
 

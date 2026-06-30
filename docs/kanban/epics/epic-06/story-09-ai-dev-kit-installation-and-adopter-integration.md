@@ -13,8 +13,8 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** Large  
 **Created:** 2026-04-19  
-**Last updated:** 2026-06-25 (v0.6.9.41+4 – Kanban documentation setup)
-**Version:** v0.6.9.41+4
+**Last updated:** 2026-06-30 (UKW — v0.6.9.42+1 T42 overlay freeze sync)
+**Version:** v0.6.9.42+1
 **Code:** E6S09
 
 ---
@@ -100,7 +100,7 @@ housekeeping_policy: keep
 - [x] **E06:S09:T34 – Kanban v3.5 packaged catalog (Small tier)** - ✅ COMPLETE (**v0.6.9.34+1** — v3.5 fresh-install catalog + task installer; SemVer **v0.4.1159+1**) — [Task](story-09-ai-dev-kit-installation-and-adopter-integration/T34-kanban-v35-packaged-catalog-small-tier.md) | [12-v35 delta](../../../knowledge/analysis/kanban-v2/12-v35-catalog-delta-bootstrap-stories.md) | —No IPP—
 - [x] **E06:S09:T35 – Kanban v4 three-tier catalogue (FR-132)** - ✅ COMPLETE (**v0.6.9.35+2** — v4 catalog + agentic KMA UAT/benchmark; SemVer **v0.4.1164+2**) — [Task](story-09-ai-dev-kit-installation-and-adopter-integration/T35-kanban-v4-three-tier-catalogue-fr132.md) | [FR-132](../../fbu/FR-132-kanban-v4-three-tier-catalogue.md) | [FR-131](../../fbu/FR-131-canonical-abstract-task-library-catl.md) | [13-v4 spec](../../../knowledge/analysis/kanban-v2/13-v4-three-tier-catalogue.md)
 
-- [ ] **E06:S09:T36 – Adopter Path Selector + Install RC (UXR-029)** - ⏳ SHIPPED (HIGH — **v0.6.9.36+3** INSTALL + orchestrator blind KMA; AC7 pending) — [Task](story-09-ai-dev-kit-installation-and-adopter-integration/T36-adopter-path-selector-install-rc-uxr029.md) | [UXR-029](../../fbu/UXR-029-adk-install-path-experiment.md) | [#52](https://github.com/RMS-Ltd/ai-dev-kit/issues/52) | [attempt-10](../../../../adk-install-into-sbl/attempt-10/README.md)
+- [ ] **E06:S09:T36 – Adopter Path Selector + Install RC (UXR-029)** - ⏳ SHIPPED (HIGH — **v0.6.9.36+3**; AC7 satisfied @ attempt 10; UXR-029 Phase 4 / G1 open) — [Task](story-09-ai-dev-kit-installation-and-adopter-integration/T36-adopter-path-selector-install-rc-uxr029.md) | [UXR-029](../../fbu/UXR-029-adk-install-path-experiment.md) | [#52](https://github.com/RMS-Ltd/ai-dev-kit/issues/52) | [attempt-10](../../../../adk-install-into-sbl/attempt-10/README.md)
 
 - [x] **E06:S09:T37 – Painless adopter kanban migration workflow (FR-133)** - ✅ COMPLETE (v0.6.9.37+2 — FR-133 depth guide, INSTALL Migrate default, COMPREHENSION template) — [Task](story-09-ai-dev-kit-installation-and-adopter-integration/T37-kanban-migration-depth-rationalization-fr133.md) | [FR-133](../../fbu/FR-133-kanban-migration-depth-rationalization-adopter-guide.md) | [IPP](../../implementation-cycles/IPP-E06S09T37-kanban-migration-depth-rationalization-fr133.md)
 
@@ -111,6 +111,14 @@ housekeeping_policy: keep
 - [x] **E06:S09:T40 – Greenfield orchestrator Install RC gaps (BR-112)** - ✅ COMPLETE @ **v0.6.9.40+2** — [VERIFICATION-BR112](../../../../../../adk-install-into-sbl/attempt-11/VERIFICATION-BR112.md) — [Task](story-09-ai-dev-kit-installation-and-adopter-integration/T40-greenfield-orchestrator-install-rc-gaps-br112.md) | [BR-112](../../fbu/BR-112-greenfield-orchestrator-install-rc-gaps.md) **FIXED** | [IPP](../../../implementation-cycles/IPP-E06S09T40-greenfield-orchestrator-install-rc-gaps-br112.md) | [#85](https://github.com/RMS-Ltd/ai-dev-kit/issues/85)
 
 - [ ] **E06:S09:T41 – External adopter archetype corpus (FR-142)** - 🔄 IN PROGRESS (MEDIUM — Wave 1 @ **v0.6.9.41+4**; Wave 3 **deferred** until G1) — [Task](story-09-ai-dev-kit-installation-and-adopter-integration/T41-external-adopter-archetype-corpus-fr142.md) | [FR-142](../../fbu/FR-142-external-adopter-archetype-corpus-install-validation.md) | [UXR-029](../../fbu/UXR-029-adk-install-path-experiment.md) | [IPP-E06S09T41](../../../implementation-cycles/IPP-E06S09T41-external-adopter-archetype-corpus-fr142.md) | [adk-install-external](../../../../adk-install-external/README.md)
+
+- [x] **E06:S09:T42 – SBL kanban TSP operator overlay freeze** - ✅ COMPLETE (HIGH — **v0.6.9.42+1**; pass 3 + M04 prune; **342** tasks; [SBL #3](https://github.com/RMS-Ltd/starborn-legacy/issues/3)) — [Task](story-09-ai-dev-kit-installation-and-adopter-integration/T42-sbl-kanban-tsp-operator-overlay-freeze.md) | [E04:S09:T06](../../../epic-04/story-09-bug-fixes-and-agentic-intelligence.md) | [kanban-reference](../../../../adk-install-into-sbl/kanban-reference/)
+
+---
+
+## Tactical overview
+
+**SBL install programme (T26)** closed Phase 1 @ attempt 11; **T39** shipped guided KMA + TSP scoring; **T42** froze the operator overlay (**342** named tasks, pass 3 + M04 prune) and filed [SBL #3](https://github.com/RMS-Ltd/starborn-legacy/issues/3) for adopter sign-off @ **v0.6.9.42+1**. Active delivery: **T41** (FR-142 external archetype corpus — Wave 1 accepted, Wave 3 deferred until UXR-029 G1). V-band holds **T36** / **T42** pending UXR-029 Phase 4 and SBL operator acceptance.
 
 ---
 

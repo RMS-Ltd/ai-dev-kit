@@ -33,7 +33,7 @@ Attempt 10 KMA was **policy-only and blind**: it routed legacy stories via `DUPL
 | File | Method(s) |
 |------|-----------|
 | [TARGET-EST-TREE.md](TARGET-EST-TREE.md) | M03, M04, M08 — canonical inventory |
-| [TARGET-EST-ALIASES.md](TARGET-EST-ALIASES.md) | M03 — duplicate rows & band mismatches |
+| [TARGET-EST-ALIASES.md](TARGET-EST-ALIASES.md) | M03 — duplicate rows, placement aliases, story-home switches |
 | [BAND-PARITY.md](BAND-PARITY.md) | M08 — temp vs TSP vs folder counts |
 | [LEGACY-EPIC-REMAP.yaml](LEGACY-EPIC-REMAP.yaml) | M01 — game epic → E30–E45 |
 | [TARGET-FOLDER-MAP.yaml](TARGET-FOLDER-MAP.yaml) | M05 — folder ≡ epic |
@@ -41,6 +41,8 @@ Attempt 10 KMA was **policy-only and blind**: it routed legacy stories via `DUPL
 | [SCORING-RUBRIC.yaml](SCORING-RUBRIC.yaml) | M08 — pass thresholds |
 
 Builder: `tools/kanban/build_target_est_tree.py` (regenerate TSP from [`OPERATOR-REWORKED-EST-TREE.md`](../attempt-10/operator-rework-archive/OPERATOR-REWORKED-EST-TREE.md)).
+
+**Canonical semantic-placement reference:** Use [E04:S09:T06](../../docs/kanban/epics/epic-04/story-09-bug-fixes-and-agentic-intelligence.md) / [FR-010](../../docs/kanban/fbu/FR-010-implement-actual-agentic-intelligence-task-mapping.md) for future task-level semantic analysis and placement decisions. Do not file duplicate FBUs for "apply semantic analysis to redistribute tasks"; treat those as applications of `E04:S09:T06`.
 
 ---
 
@@ -61,6 +63,8 @@ Builder: `tools/kanban/build_target_est_tree.py` (regenerate TSP from [`OPERATOR
 **Operator fix:** Split to E01/E02/E03/E05/E06/E33 per policy table ([FB §4 tweak 1](../../adk-feedback/attempt-10/FB-ADK-KMA-KANBAN-MIGRATION.md)).
 
 **Kit guidance:** Apply game remap table **before** story copy; apply infra split **per story concern**, not per legacy epic file count.
+
+**SBL overlay:** The operator-approved E30-E31 redistribution and E01:S01/S02 switch are recorded in [OPTIMISED-SBL-KANBAN-STRUCTURE.md](OPTIMISED-SBL-KANBAN-STRUCTURE.md). That overlay is governed by `E04:S09:T06` for semantic task placement.
 
 ---
 
@@ -94,7 +98,7 @@ Builder: `tools/kanban/build_target_est_tree.py` (regenerate TSP from [`OPERATOR
 | Placement conflict | When same ID appears under two homes (e.g. E08 vs E41 UAT), **canonical home wins** (M07) |
 
 **Attempt-10 failure:** 473 source lines treated as 473 tasks; inline tokens counted but not deduped.  
-**Operator fix:** TSP builder dedupes to **377** unique IDs; 58 duplicate-ID variants documented.
+**Operator fix:** TSP pass 3 + optional follow-ups yields **342** unique IDs (16 duplicate rows dropped, E36 shell fan-out added, one historic bootstrap milestone retired, 40 M04 context slots pruned). `E01:S99` cleared. See [PASS-3-REDISTRIBUTION.md](PASS-3-REDISTRIBUTION.md).
 
 **Kit guidance:** Structural score uses **unique** `E:S:T` count, not source line count.
 
@@ -105,7 +109,7 @@ Builder: `tools/kanban/build_target_est_tree.py` (regenerate TSP from [`OPERATOR
 **Intent:** Maximise named task coverage without inventing scope.
 
 See [TITLE-RESOLUTION-RULES.md](TITLE-RESOLUTION-RULES.md) for the ordered resolver.  
-**TSP result:** 88.9% named (329/377); 41 unresolved marked explicitly.
+**TSP result:** 100% named (342/342); 0 M04 context slots (40 pruned); 0 unresolved.
 
 **Kit guidance:** Run resolver **after** routing and dedup; emit unresolved with story context for operator review.
 
@@ -200,6 +204,9 @@ Parity table: [BAND-PARITY.md](BAND-PARITY.md).
 | E31 body wrong (E05-only) | M01 + M05 |
 | Legacy "Epic N:" headers in domain | M05 |
 | 473 lines vs unique tasks | M03 |
+| Standalone `E01:S07` bug-fix bucket | Redistributed to owning semantic sections (optional follow-up) |
+| Oversized megastories | Restored to E34:S01, E40:S01/S02/S03 (pass 3) |
+| Homeless / improper housing | Pass 2 → S99; **pass 3 cleared** |
 | UAT under E08 | M07 |
 | 564 inline tokens → task file expectation | M06 |
 | No scoring vs operator tree | M08 |
@@ -220,7 +227,7 @@ Parity table: [BAND-PARITY.md](BAND-PARITY.md).
 
 | Phase | Gate |
 |-------|------|
-| 1 TSP freeze | ✅ `TARGET-EST-TREE.md` — 377 tasks, band-complete |
+| 1 TSP freeze | ✅ `TARGET-EST-TREE.md` — 342 tasks; pass 3 + optional follow-ups + M04 prune complete ([PASS-3-REDISTRIBUTION.md](PASS-3-REDISTRIBUTION.md)) |
 | 2 Methods + rubric | This doc + `SCORING-RUBRIC.yaml` signed off |
 | 3 Repo align | No orphan folders; `kanban-structure` ≡ TSP; optional validator PASS |
 | 4 ADK package | Guided dry-run scored ≥ 0.85 |

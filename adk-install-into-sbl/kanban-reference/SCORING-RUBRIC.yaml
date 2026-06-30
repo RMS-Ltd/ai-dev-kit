@@ -58,11 +58,37 @@ thresholds:
 baselines:
   tsp_freeze:
     source: docs/kanban/reference/TARGET-EST-TREE.md
-    unique_tasks: 377
+    unique_tasks: 342
     epic_bands: 19
-    named_pct: 0.889
-    duplicate_id_variants: 58
-    band_mismatches_logged: 159
+    named_pct: 1.0
+    duplicate_rows_dropped: 16
+    overlay_applied: 2026-06-25
+    overlay_source: OPTIMISED-SBL-KANBAN-STRUCTURE.md
+    overlay_governance: E04:S09:T06
+    pass_3_complete: true
+    optional_followups_complete: true
+    m04_context_slots_pruned: 40
+    pass_3_source: PASS-3-REDISTRIBUTION.md
+    band_delta:
+      E01: "3S·17T (S01/S02 renumbered; S07 redistributed; S99 cleared)"
+      E02: "1S·1T (S02 bootstrap milestone retired; slot free for workflow stories)"
+      E03: "1S·2T (kanban/intake maintenance from S07 archive)"
+      E40: "3S·64T (megastories restored)"
+      E41: "5S·26T (E08 renumbered)"
+      E36: "10S·33T (S06 restored + shell fan-out)"
+      E37: "1S·11T (session/config archive rows redistributed)"
+      E31: "0S·0T reserved"
+      E30: "2S·12T"
+      E32: "4S·12T (S06/S07 shells dropped)"
+      E34: "14S·95T (hull-parameter M04 slots pruned)"
+      E35: "1S·5T (M04 gameplay slots pruned)"
+      E38: "1S·2T"
+    renumber_executed: 2026-06-25
+    renumber_map:
+      E30:S04:T01: E35:S02:T11
+      E31:S03:T01: E30:S04:T01
+      E08_S_star: E41_S_star
+      E01_S01_S02_swap: executed_pass_3
 
   temp_operator_source:
     source: adk-install-into-sbl/attempt-10/operator-rework-archive/OPERATOR-REWORKED-EST-TREE.md

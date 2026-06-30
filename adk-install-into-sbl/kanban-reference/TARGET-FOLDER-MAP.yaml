@@ -1,0 +1,64 @@
+# M05 — Target folder layout per epic (starborn_legacy)
+version: 1
+project: starborn_legacy
+overlay: OPTIMISED-SBL-KANBAN-STRUCTURE.md
+overlay_applied: 2026-06-25
+folders:
+  - epic: 1
+    path: docs/kanban/epics/epic-01
+    status: active
+  - epic: 2
+    path: docs/kanban/epics/epic-02
+    status: active
+  - epic: 3
+    path: docs/kanban/epics/epic-03
+    status: active
+  - epic: 4
+    path: docs/kanban/epics/epic-04
+    status: active
+  - epic: 5
+    path: docs/kanban/epics/epic-05
+    status: active
+  - epic: 6
+    path: docs/kanban/epics/epic-06
+    status: active
+  - epic: 7
+    path: docs/kanban/epics/epic-07
+    status: active
+  - epic: 30
+    path: docs/kanban/epics/epic-30
+    status: active
+  - epic: 31
+    path: docs/kanban/epics/epic-31
+    status: reserved
+    notes: Empty after overlay v2026-06-25; keep folder stub or redirect per M05
+  - epic: 32
+    path: docs/kanban/epics/epic-32
+    status: active
+  - epic: 33
+    path: docs/kanban/epics/epic-33
+    status: active
+  - epic: 34
+    path: docs/kanban/epics/epic-34
+    status: active
+  - epic: 35
+    path: docs/kanban/epics/epic-35
+    status: active
+  - epic: 36
+    path: docs/kanban/epics/epic-36
+    status: active
+  - epic: 37
+    path: docs/kanban/epics/epic-37
+    status: active
+  - epic: 38
+    path: docs/kanban/epics/epic-38
+    status: active
+  - epic: 39
+    path: docs/kanban/epics/epic-39
+    status: active
+  - epic: 40
+    path: docs/kanban/epics/epic-40
+    status: active
+  - epic: 41
+    path: docs/kanban/epics/epic-41
+    status: active

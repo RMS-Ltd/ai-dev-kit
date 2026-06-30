@@ -79,6 +79,8 @@ Fix critical bugs in Kanban package installation process and implement actual ag
 
 - [x] **E04:S09:T06 – FR-010: Implement actual agentic intelligence for task mapping** ✅ COMPLETE (FOUNDATION IMPLEMENTED)
   - **Status:** Foundation implemented with extensible framework for LLM integration
+  - **Canonical Reference:** Forward reference for task-level semantic placement decisions and guided-KMA task redistribution. Project-specific overlays, including the SBL E30-E31 redistribution, should cite this task rather than filing duplicate FBUs.
+  - **SBL Overlay:** [`OPTIMISED-SBL-KANBAN-STRUCTURE.md`](../../../../adk-install-into-sbl/kanban-reference/OPTIMISED-SBL-KANBAN-STRUCTURE.md)
   - **Implementation:** Created `agentic_mapper.py` with enhanced content analysis
   - **Features:**
     - Enhanced keyword extraction and similarity calculation (beyond simple word matching)
