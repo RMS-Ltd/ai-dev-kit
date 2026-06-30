@@ -17,6 +17,8 @@ housekeeping_policy: keep
 **Implementing Task:** [E04:S09:T06](../epics/epic-04/story-09-bug-fixes-and-agentic-intelligence.md)
 **GitHub Issue:** [#11](https://github.com/RMS-Ltd/ai-dev-kit/issues/11)
 
+**Canonical Reference:** `E04:S09:T06` is the forward reference for task-level semantic placement work, including guided-KMA task redistribution such as the SBL E30-E31 overlay in [`OPTIMISED-SBL-KANBAN-STRUCTURE.md`](../../../adk-install-into-sbl/kanban-reference/OPTIMISED-SBL-KANBAN-STRUCTURE.md).
+
 ---
 
 ## Summary
@@ -202,6 +204,8 @@ This feature request addresses the critical gap between advertised "intelligent 
 - **Commit to AI/LLM-based analysis** - Actual understanding of content, not word matching
 - **Context-based decisions** - Agent reasons about matches at any similarity level if context supports
 - **No fallback to deterministic approach** - Fully commit to agentic intelligence
+
+**Reference Policy:** Do not create a new FBU for future requests phrased as "apply semantic analysis to redistribute tasks" or "decide whether this task belongs in this epic/story." Use `E04:S09:T06` as the canonical task reference and record project-specific decisions in the relevant TSP/reference overlay.
 
 **Alternative (NOT RECOMMENDED):** If agentic intelligence is not feasible, rename feature to "Deterministic Epic Matching" and remove "intelligent" claims from documentation. However, this reduces framework value and doesn't deliver on advertised capabilities.
 

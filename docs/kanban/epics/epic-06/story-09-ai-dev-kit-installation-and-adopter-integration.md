@@ -112,6 +112,8 @@ housekeeping_policy: keep
 
 - [ ] **E06:S09:T41 – External adopter archetype corpus (FR-142)** - 🔄 IN PROGRESS (MEDIUM — Wave 1 @ **v0.6.9.41+4**; Wave 3 **deferred** until G1) — [Task](story-09-ai-dev-kit-installation-and-adopter-integration/T41-external-adopter-archetype-corpus-fr142.md) | [FR-142](../../fbu/FR-142-external-adopter-archetype-corpus-install-validation.md) | [UXR-029](../../fbu/UXR-029-adk-install-path-experiment.md) | [IPP-E06S09T41](../../../implementation-cycles/IPP-E06S09T41-external-adopter-archetype-corpus-fr142.md) | [adk-install-external](../../../../adk-install-external/README.md)
 
+- [x] **E06:S09:T42 – SBL kanban TSP operator overlay freeze** - ✅ COMPLETE (HIGH — **v0.6.9.42+1**; pass 3 + M04 prune; **342** tasks; [SBL #3](https://github.com/RMS-Ltd/starborn-legacy/issues/3)) — [Task](story-09-ai-dev-kit-installation-and-adopter-integration/T42-sbl-kanban-tsp-operator-overlay-freeze.md) | [E04:S09:T06](../../../epic-04/story-09-bug-fixes-and-agentic-intelligence.md) | [kanban-reference](../../../../adk-install-into-sbl/kanban-reference/)
+
 ---
 
 ## Overview

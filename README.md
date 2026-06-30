@@ -11,7 +11,7 @@
 
 **A comprehensive toolkit for AI-assisted development workflows**
 
-**Version (SemVer):** `v0.4.1235` | **Internal:** `v0.5.8.8+1` (E05:S08:T08 — FR-141 git-native adopter docs default) | **Last Updated:** 2026-06-25
+**Version (SemVer):** `v0.4.1236` | **Internal:** `v0.6.9.42+1` (E06:S09:T42 — SBL kanban TSP operator overlay freeze) | **Last Updated:** 2026-06-30
 
 > **SemVer ordering (`task_touch`):** Compare releases by **core** (`0.4.1198` here), not by `+BUILD`. The `+1` suffix mirrors internal build metadata for traceability only — see [ADR-031](docs/architecture/standards-and-adrs/ADR-031-external-semver-build-metadata-display-policy.md).
 
