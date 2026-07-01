@@ -11,8 +11,8 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
-## [0.2.16.6+22] - 01-07-26
+## [0.2.16.6+23] - 01-07-26
 
-E02:S16:T06 — **Change implemented:** Wave 14b standard findings burn-down — **21** Code Quality findings fixed (unused import/global/local, regex, unreachable branch, assert side-effect). SemVer **v0.4.1239**.
+E02:S16:T06 — **Change implemented:** Wave 15 — final **2** `py/unreachable-statement` residuals in `validate_version_bump.py`. SemVer **v0.4.1240**.
 
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.16.6+22.md)
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.16.6+23.md)

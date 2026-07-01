@@ -14,8 +14,8 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** Medium (ongoing)  
 **Created:** 2026-06-05  
-**Last updated:** 2026-07-01 (Wave 14b standard findings remediation @ v0.2.16.6+22)  
-**Version Anchor:** v0.2.16.6+22  
+**Last updated:** 2026-07-01 (Wave 15 unreachable-statement cleanup @ v0.2.16.6+23)  
+**Version Anchor:** v0.2.16.6+23  
 **Code:** E02S16T06  
 **Task Type:** Perpetual Maintenance
 
@@ -700,6 +700,23 @@ Between 2026-06-16 09:54–15:03 UTC, **23** `ai-findings-autofix/*` PRs merged 
 | `sync_greenfield_install.py` | **2014** files |
 | `RW E02:S16:T06 --art` | **v0.2.16.6+22** |
 | Operator dashboard (TC41) | **Pending** post-merge on [standard findings](https://github.com/RMS-Ltd/ai-dev-kit/security/quality) |
+
+---
+
+## Wave 15 remediation (shipped @ v0.2.16.6+23)
+
+**Theme:** Clear final **2** `py/unreachable-statement` residuals after Wave 14b (dashboard **21 → 2**).
+
+| Rule | Count | Fix |
+| ---- | ----- | --- |
+| `py/unreachable-statement` | **2** | `validate_version_bump.py`: remove dead `elif doc_policy_zero` branch that tested `current_build == 0` (unreachable when `BUILD >= 1`); BR-110 doc-init stays in `current_build == 0` path |
+
+| Verification | Result |
+| ------------ | ------ |
+| `test_validate_version_bump.py` | **23 passed** |
+| `sync_greenfield_install.py` | **2014** files |
+| `RW E02:S16:T06 --art` | **v0.2.16.6+23** |
+| Operator dashboard (TC41) | **Pending** — expect **0** open post-merge |
 
 ---
 

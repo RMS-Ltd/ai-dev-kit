@@ -1357,29 +1357,14 @@ def validate_version_bump(
         if not doc_init_valid:
             errors.extend(doc_init_errors)
     elif doc_policy_zero:
-        file_epic, file_story, file_task = (
-            version_components[1],
-            version_components[2],
-            version_components[3],
+        # BR-097: --doc-policy-zero only when VERSION_BUILD=0 (handled in branch above).
+        # BR-110 art cross-task doc-init with BUILD +0 also lands in the current_build==0 branch.
+        errors.append(
+            "❌ --doc-policy-zero blocked: flag is only valid when VERSION_BUILD=0 (doc-init / explicit BUILD +0). "
+            f"Current VERSION_BUILD={current_build}. Same-task follow-on releases require BUILD +1 "
+            f"(normal `RW E{epic}:S{story}:T{current_task} --art`). "
+            "See BR-097 / CHANGELOG_v0.2.16.3+3."
         )
-        version_file_est = (file_epic, file_story, file_task)
-        art_cross_task = bool(
-            art
-            and requested_est is not None
-            and version_file_est != requested_est
-        )
-        if art_cross_task and current_build == 0:
-            print(
-                "✅ --doc-policy-zero: BUILD +0 accepted for art-adopted doc-init (BR-110)."
-            )
-        elif not art_cross_task:
-            # BR-097: same-anchor follow-on when VERSION_BUILD>=1 in file
-            errors.append(
-                "❌ --doc-policy-zero blocked: flag is only valid when VERSION_BUILD=0 (doc-init / explicit BUILD +0). "
-                f"Current VERSION_BUILD={current_build}. Same-task follow-on releases require BUILD +1 "
-                f"(normal `RW E{epic}:S{story}:T{current_task} --art`). "
-                "See BR-097 / CHANGELOG_v0.2.16.3+3."
-            )
     else:
         # Normal build (BUILD >= 1) - validate that it's not incorrectly using doc-init
         # This is handled in version bump logic validation below
