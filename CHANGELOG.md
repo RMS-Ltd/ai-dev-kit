@@ -11,8 +11,8 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
-## [0.6.9.43+1] - 01-07-26
+## [0.6.9.44+1] - 01-07-26
 
-E06:S09:T43 — **Change implemented:** SBL attempt 12 FR-079 intake — install sign-off accepted; K-01–K-04 routed (FR-143/T44, FR-144/T45, BR-111, FR-141); [#88](https://github.com/RMS-Ltd/ai-dev-kit/issues/88) closed; SBL install programme maintenance-only. SemVer **v0.4.1242**.
+E06:S09:T44 — **Change implemented:** FR-143 guided KMA workflow story parity — preflight CLI, E02 story map template, rubric dimension, K-01 pytest fixture. SemVer **v0.4.1243**.
 
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.6.9.43+1.md)
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.6.9.44+1.md)

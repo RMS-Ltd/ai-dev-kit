@@ -61,6 +61,7 @@ def test_all_six_rubric_dimensions_present():
         "story_filename_collision",
         "folder_alignment",
         "orphan_and_reserved",
+        "workflow_story_parity",
     }
     assert set(report["dimensions"]) == expected
     total_weight = sum(d["weight"] for d in report["dimensions"].values())

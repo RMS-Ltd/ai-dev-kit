@@ -208,6 +208,7 @@ def score_dimensions(
     tsp: TspInventory,
     candidate: CandidateInventory,
     rubric: Dict[str, Any],
+    parity_score: Optional[float] = None,
 ) -> Tuple[Dict[str, Dict[str, Any]], float]:
     dims_cfg = rubric.get("dimensions", {})
     dimensions: Dict[str, Dict[str, Any]] = {}
@@ -279,6 +280,17 @@ def score_dimensions(
         orphan_score, w, f"{orphans} orphan/undeclared epic folder(s)"
     )
 
+    # 7. workflow_story_parity (FR-143) — optional when rubric defines dimension
+    if "workflow_story_parity" in dims_cfg:
+        wsp = parity_score if parity_score is not None else 1.0
+        w = dims_cfg.get("workflow_story_parity", {}).get("weight", 0.13)
+        detail = (
+            f"registry vs E02 parity {wsp:.4f}"
+            if parity_score is not None
+            else "no registry check (skipped)"
+        )
+        dimensions["workflow_story_parity"] = _dim_result(wsp, w, detail)
+
     weighted = sum(d["score"] * d["weight"] for d in dimensions.values())
     return dimensions, round(weighted, 4)
 
@@ -290,6 +302,8 @@ def build_score_report(
     mode: str = "score_only",
     project: Optional[str] = None,
     self_test: bool = False,
+    workflow_registry_path: Optional[Path] = None,
+    story_map_path: Optional[Path] = None,
 ) -> Dict[str, Any]:
     rubric = load_rubric(rubric_path)
     tsp = parse_tsp_markdown(tsp_path)
@@ -311,10 +325,29 @@ def build_score_report(
         candidate.epic_dirs = tsp_epics
     else:
         candidate = scan_candidate_kanban(kanban_root, tsp_epics, reserved)
-    dimensions, weighted = score_dimensions(tsp, candidate, rubric)
+
+    parity_score: Optional[float] = None
+    workflow_parity: Optional[Dict[str, Any]] = None
+    if workflow_registry_path and workflow_registry_path.is_file():
+        try:
+            from kma_workflow_story_parity import check_workflow_story_parity
+
+            workflow_parity = check_workflow_story_parity(
+                registry_path=workflow_registry_path,
+                tsp_path=tsp_path,
+                story_map_path=story_map_path,
+                mode=mode,
+            )
+            parity_score = workflow_parity["parity_score"]
+        except ImportError:
+            pass
+
+    dimensions, weighted = score_dimensions(
+        tsp, candidate, rubric, parity_score=parity_score
+    )
     thresholds = rubric.get("thresholds", {})
     pass_threshold = thresholds.get("guided_pass", 0.85)
-    return {
+    report = {
         "version": rubric.get("version", 1),
         "project": project or rubric.get("project", "unknown"),
         "mode": mode,
@@ -328,6 +361,9 @@ def build_score_report(
         "passed": weighted >= pass_threshold,
         "collisions": candidate.story_collisions,
     }
+    if workflow_parity:
+        report["workflow_story_parity"] = workflow_parity
+    return report
 
 
 def render_markdown_report(report: Dict[str, Any]) -> str:

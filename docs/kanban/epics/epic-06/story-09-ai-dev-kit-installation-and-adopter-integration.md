@@ -13,8 +13,8 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** Large  
 **Created:** 2026-04-19  
-**Last updated:** 2026-07-01 (RW — v0.6.9.43+1 T43 attempt 12 intake)
-**Version:** v0.6.9.43+1
+**Last updated:** 2026-07-01 (v0.6.9.44+1 – Kanban documentation setup)
+**Version:** v0.6.9.44+1
 **Code:** E6S09
 
 ---
@@ -116,7 +116,7 @@ housekeeping_policy: keep
 
 - [x] **E06:S09:T43 – Starborn Legacy attempt 12 intake and programme wind-down** - ✅ COMPLETE (HIGH — **v0.6.9.43+1**; sign-off **2026-07-01**; [#88](https://github.com/RMS-Ltd/ai-dev-kit/issues/88) closed) — [Task](story-09-ai-dev-kit-installation-and-adopter-integration/T43-starborn-legacy-attempt-12-intake-programme-wind-down.md) | [FR-143](../../fbu/FR-143-tsp-workflow-story-parity-guided-kma-preflight.md) | [FR-144](../../fbu/FR-144-board-timestamp-carry-forward-ukw-kma.md) | [attempt-12](../../../../adk-install-into-sbl/attempt-12/README.md) | —No IPP—
 
-- [ ] **E06:S09:T44 – TSP workflow story parity (FR-143 / K-01)** - 📋 TODO (HIGH) — [Task](story-09-ai-dev-kit-installation-and-adopter-integration/T44-tsp-workflow-story-parity-fr143.md) | [FR-143](../../fbu/FR-143-tsp-workflow-story-parity-guided-kma-preflight.md) | [T43](story-09-ai-dev-kit-installation-and-adopter-integration/T43-starborn-legacy-attempt-12-intake-programme-wind-down.md) | —No IPP—
+- [x] **E06:S09:T44 – TSP workflow story parity (FR-143 / K-01)** - ✅ COMPLETE (HIGH — **v0.6.9.44+1**; guided preflight + story map template + rubric) — [Task](story-09-ai-dev-kit-installation-and-adopter-integration/T44-tsp-workflow-story-parity-fr143.md) | [FR-143](../../fbu/FR-143-tsp-workflow-story-parity-guided-kma-preflight.md) | [IPP-E06S09T44](../../../implementation-cycles/IPP-E06S09T44-tsp-workflow-story-parity-fr143.md) | [K-01](../../../../adk-install-into-sbl/attempt-12/feedback-package/FB-ADK-K01-issue3-e02-workflow-story-collapse.md)
 
 - [ ] **E06:S09:T45 – Board timestamp carry-forward (FR-144 / K-02)** - 📋 TODO (MEDIUM) — [Task](story-09-ai-dev-kit-installation-and-adopter-integration/T45-board-timestamp-carry-forward-fr144.md) | [FR-144](../../fbu/FR-144-board-timestamp-carry-forward-ukw-kma.md) | [T43](story-09-ai-dev-kit-installation-and-adopter-integration/T43-starborn-legacy-attempt-12-intake-programme-wind-down.md) | —No IPP—
 
@@ -124,7 +124,7 @@ housekeeping_policy: keep
 
 ## Tactical overview
 
-**SBL install programme (T26)** closed Phase 1 @ attempt 11; **T43** closed attempt 12 FR-079 intake ([#88](https://github.com/RMS-Ltd/ai-dev-kit/issues/88)) — K-01→[T44](story-09-ai-dev-kit-installation-and-adopter-integration/T44-tsp-workflow-story-parity-fr143.md), K-02→[T45](story-09-ai-dev-kit-installation-and-adopter-integration/T45-board-timestamp-carry-forward-fr144.md). Active delivery: **T41** (FR-142) + child **T44**/**T45**. V-band: **T36** / **T42**.
+**SBL install programme (T26)** closed Phase 1 @ attempt 11; **T43** closed attempt 12 intake ([#88](https://github.com/RMS-Ltd/ai-dev-kit/issues/88)); **T44** shipped FR-143 (K-01). Active delivery: **T41** (FR-142) + **T45** (K-02). V-band: **T36** / **T42**.
 
 ---
 

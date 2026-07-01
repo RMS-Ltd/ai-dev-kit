@@ -59,6 +59,11 @@ housekeeping_policy: keep
 
 **Structural score (M08):** {weighted_total} / threshold 0.85 — {PASS|REVIEW}
 
+**Workflow story parity (FR-143):** {registry_count} registry workflows vs {e02_story_count} E02 TSP stories — {PASS|MAJOR WARNING}
+
+- [ ] `E02-WORKFLOW-STORY-MAP.md` present or TSP E02 stories ≥ registry count
+- [ ] Guided preflight: `validate_kma_workflow_story_parity.py --strict` passes
+
 ---
 
 ## Epic map

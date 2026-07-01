@@ -62,6 +62,17 @@ Load [TSP reference pack](../../../reference/README.md) when running guided or s
 
 1. Load `rw-config.yaml` when present; resolve `kanban_root` for target writes.
 2. Load `kma-agent-guardrails.yaml` — if `kma_mode: guided`, validate `target_est_tree` exists (**fail fast** if missing).
+2b. **Workflow story parity preflight (FR-143 / guided + score):** Compare `workflow-registry.yaml` to E02 story headings in the TSP. Run before Step 2 when TSP is authority:
+
+   ```bash
+   python3 packages/frameworks/kanban/scripts/validation/validate_kma_workflow_story_parity.py \
+     --tsp path/to/TARGET-EST-TREE.md \
+     --story-map path/to/E02-WORKFLOW-STORY-MAP.md \
+     --mode guided --strict
+   ```
+
+   **Blocking** in guided/score when `registry_count > e02_story_count` without a covering story map. **Advisory** in blind mode. See [E02-WORKFLOW-STORY-MAP.template.md](../../../reference/templates/E02-WORKFLOW-STORY-MAP.template.md).
+
 3. Recursively read **legacy kanban root** (read-only): epic docs, story files, inline `E:S:T` tokens, board/MoSCOW state if present.
 4. Use `kma_ingest.py` for deterministic inventory counts when helpful:
 

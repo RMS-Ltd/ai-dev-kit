@@ -13,9 +13,9 @@ housekeeping_policy: keep
 **Submitted:** 2026-07-01  
 **Submitted By:** Maintainer (SBL attempt 12 intake / [#88](https://github.com/RMS-Ltd/ai-dev-kit/issues/88))  
 **Priority:** HIGH (Should Have — MoSCOW **S**)  
-**Status:** ACCEPTED
+**Status:** IMPLEMENTED
 
-**Implementing Task:** [E06:S09:T44](../epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T44-tsp-workflow-story-parity-fr143.md)
+**Implementing Task:** [E06:S09:T44](../epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T44-tsp-workflow-story-parity-fr143.md) @ **v0.6.9.44+1**
 
 **Related:** [FR-136](FR-136-guided-kma-target-structure-pack.md) · [FR-079](FR-079-install-feedback-submission-path-and-governance.md) · [E06:S09:T43](../epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T43-starborn-legacy-attempt-12-intake-programme-wind-down.md) · [E06:S09:T42](../epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T42-sbl-kanban-tsp-operator-overlay-freeze.md) · [SBL #3](https://github.com/RMS-Ltd/starborn-legacy/issues/3)
 
@@ -39,24 +39,24 @@ Attempt 12 adopted issue #3 as canonical TSP. E02 listed **1 story · 1 task** (
 
 ### Functional
 
-- [ ] **FR-143-F1:** TSP pack / issue template includes **E02 workflow story map** derived from `workflow-registry.yaml` (≥1 story per registered workflow).
-- [ ] **FR-143-F2:** Guided KMA preflight compares registry workflow count to E02 story headings in `TARGET-EST-TREE.md`; **major warning or fail** when `registry_count > e02_story_count`.
-- [ ] **FR-143-F3:** Ship reference `E02-WORKFLOW-STORY-MAP.md` pattern in framework TSP template (`packages/frameworks/kanban/reference/`).
-- [ ] **FR-143-F4:** Scoring rubric dimension: **workflow story parity** (% registry workflows with matching E02:Sxx shell).
-- [ ] **FR-143-F5:** Document bootstrap vs UKW slot resolution (v4 CATL S02 vs workflow S02; bootstrap may occupy S15).
+- [x] **FR-143-F1:** TSP pack / issue template includes **E02 workflow story map** derived from `workflow-registry.yaml` (≥1 story per registered workflow).
+- [x] **FR-143-F2:** Guided KMA preflight compares registry workflow count to E02 story headings in `TARGET-EST-TREE.md`; **major warning or fail** when `registry_count > e02_story_count`.
+- [x] **FR-143-F3:** Ship reference `E02-WORKFLOW-STORY-MAP.md` pattern in framework TSP template (`packages/frameworks/kanban/reference/`).
+- [x] **FR-143-F4:** Scoring rubric dimension: **workflow story parity** (% registry workflows with matching E02:Sxx shell).
+- [x] **FR-143-F5:** Document bootstrap vs UKW slot resolution (v4 CATL S02 vs workflow S02; bootstrap may occupy S15).
 
 ### Non-functional
 
-- [ ] **FR-143-NF1:** Preflight is advisory in blind KMA; blocking in guided mode when TSP is authority.
-- [ ] **FR-143-NF2:** Greenfield mirror sync per FR-110 when touching `packages/frameworks/`.
+- [x] **FR-143-NF1:** Preflight is advisory in blind KMA; blocking in guided mode when TSP is authority.
+- [x] **FR-143-NF2:** Greenfield mirror sync per FR-110 when touching `packages/frameworks/`.
 
 ---
 
 ## Acceptance criteria
 
-- [ ] **AC1:** Fresh guided KMA on workflow-heavy adopter emits preflight warning when TSP E02 stories < registry count.
-- [ ] **AC2:** Operator sign-off artefact includes ≥1 E02 story per registry workflow without manual archaeology.
-- [ ] **AC3:** SBL attempt 12 K-01 cross-linked; regression fixture in pytest.
+- [x] **AC1:** Fresh guided KMA on workflow-heavy adopter emits preflight warning when TSP E02 stories < registry count.
+- [x] **AC2:** Operator sign-off artefact includes ≥1 E02 story per registry workflow without manual archaeology.
+- [x] **AC3:** SBL attempt 12 K-01 cross-linked; regression fixture in pytest.
 
 ---
 

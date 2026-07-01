@@ -37,6 +37,9 @@ Guided mode **fails fast** when `target_est_tree` is missing or unreadable.
 | `LEGACY-EPIC-REMAP.yaml` | Legacy epic → target epic map (M01) | [LEGACY-EPIC-REMAP.template.yaml](templates/LEGACY-EPIC-REMAP.template.yaml) |
 | `TARGET-FOLDER-MAP.yaml` | Epic folder layout (M05) | [TARGET-FOLDER-MAP.template.yaml](templates/TARGET-FOLDER-MAP.template.yaml) |
 | `SCORING-RUBRIC.yaml` | Structural scorer weights (M08) | [SCORING-RUBRIC.template.yaml](templates/SCORING-RUBRIC.template.yaml) |
+| `E02-WORKFLOW-STORY-MAP.md` | Registry workflow → E02 story shells (FR-143) | [E02-WORKFLOW-STORY-MAP.template.md](templates/E02-WORKFLOW-STORY-MAP.template.md) |
+
+**Amendment hook (FR-143):** When operators extend an issue-body TSP locally, add `amended: E02-WORKFLOW-STORY-MAP.md` to the TSP header and ship the story map alongside `TARGET-EST-TREE.md`.
 
 Optional: `KMA-METHODS.md` — method playbook (M01–M08). See SBL exemplar below.
 
@@ -58,6 +61,12 @@ python3 packages/frameworks/kanban/scripts/kma_collision_detect.py \
 # M03 dedup inventory
 python3 packages/frameworks/kanban/scripts/kma_ingest.py \
   --legacy-root path/to/legacy --dedup --json
+
+# FR-143 workflow story parity preflight (guided/score — use --strict to block)
+python3 packages/frameworks/kanban/scripts/validation/validate_kma_workflow_story_parity.py \
+  --tsp path/to/TARGET-EST-TREE.md \
+  --story-map path/to/E02-WORKFLOW-STORY-MAP.md \
+  --mode guided --strict
 
 # Optional TSP builder from operator est-tree source
 python3 packages/frameworks/kanban/scripts/build_target_est_tree.py \

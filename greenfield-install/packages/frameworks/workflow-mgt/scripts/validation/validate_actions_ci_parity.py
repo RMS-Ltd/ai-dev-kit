@@ -20,7 +20,13 @@ try:
 except ImportError:  # pragma: no cover
     yaml = None  # type: ignore
 
-_REPO_ROOT = Path(__file__).resolve().parents[5]
+_SCRIPTS_DIR = Path(__file__).resolve().parent.parent
+if str(_SCRIPTS_DIR) not in sys.path:
+    sys.path.insert(0, str(_SCRIPTS_DIR))
+
+from rw_config_loader import find_project_root  # noqa: E402
+
+_REPO_ROOT = find_project_root(Path(__file__).resolve())
 
 _DEFAULT_CHECKS: list[dict] = [
     {

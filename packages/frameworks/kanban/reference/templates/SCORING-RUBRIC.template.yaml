@@ -5,34 +5,39 @@ reference_pack: packages/frameworks/kanban/reference/
 
 dimensions:
   unique_task_coverage:
-    weight: 0.25
+    weight: 0.22
     description: Fraction of TSP unique E:S:T IDs present in candidate output.
     formula: "|TSP ∩ output| / |TSP|"
 
   epic_band_parity:
-    weight: 0.20
+    weight: 0.18
     description: Per-epic story and task counts vs TSP headers.
     formula: "1 − avg(relative error) per epic"
 
   title_coverage:
-    weight: 0.15
+    weight: 0.13
     description: Named titles on matched tasks.
     formula: "named_matched / matched_tasks"
 
   story_filename_collision:
-    weight: 0.15
+    weight: 0.13
     description: Penalty for duplicate story basenames within an epic folder (UXR-017).
     formula: "1 if zero collisions else max(0, 1 − collisions/10)"
 
   folder_alignment:
-    weight: 0.15
+    weight: 0.13
     description: Every TSP epic has a folder per TARGET-FOLDER-MAP.yaml.
     formula: "aligned_epics / tsp_epics"
 
   orphan_and_reserved:
-    weight: 0.10
+    weight: 0.08
     description: Penalty for orphan and undeclared epic-NN dirs.
     formula: "1 − (orphans + undeclared) / max(folder_count, 1)"
+
+  workflow_story_parity:
+    weight: 0.13
+    description: Fraction of registry workflows with E02 story shells in TSP or story map (FR-143).
+    formula: "min(e02_stories, registry_count) / registry_count"
 
 thresholds:
   guided_pass: 0.85

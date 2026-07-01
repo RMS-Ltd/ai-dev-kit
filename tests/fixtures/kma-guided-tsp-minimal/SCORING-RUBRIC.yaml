@@ -5,17 +5,19 @@ reference_pack: tests/fixtures/kma-guided-tsp-minimal/
 
 dimensions:
   unique_task_coverage:
-    weight: 0.25
+    weight: 0.22
   epic_band_parity:
-    weight: 0.20
+    weight: 0.18
   title_coverage:
-    weight: 0.15
+    weight: 0.13
   story_filename_collision:
-    weight: 0.15
+    weight: 0.13
   folder_alignment:
-    weight: 0.15
+    weight: 0.13
   orphan_and_reserved:
-    weight: 0.10
+    weight: 0.08
+  workflow_story_parity:
+    weight: 0.13
 
 thresholds:
   guided_pass: 0.85

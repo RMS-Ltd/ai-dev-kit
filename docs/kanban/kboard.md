@@ -8,12 +8,12 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Board
 
-**Last Updated:** 2026-07-01 (RW: E06:S09:T43)
-**Version:** v0.6.9.43+1
+**Last Updated:** 2026-07-01 (RW: E06:S09:T44)
+**Version:** v0.6.9.44+1
 
 **Active board contract:** **Sole active MoSCOW board** ([ADR-018](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/architecture/standards-and-adrs/ADR-018-single-kanban-board-consolidation.md)). Rows are **live work** (TODO / IN PROGRESS / OPEN / WAITING / PERPETUAL) plus filed **Could Have** backlog. **Verification (V)** band holds task-shipped / FBU-open items (`⏳ WAITING`). Remove **terminal** rows and archive prose (use [`kanban-completed.md`](kanban-completed.md) / [`intake-completed.md`](intake-completed.md)).
 
-**Note:** Epics 1, 7, 11 are COMPLETE. Epics 2, 3, 4, 5, 6, 8, **10** are IN PROGRESS. Epic 5 **S08/S09 COMPLETE** (FR-114/FR-121). Epic 21 IN PROGRESS — shipped tasks archived @ UKW -c 2026-06-16 (34 E21 + cross-epic V-band); active board: S04–S07 locale backlog + S08 L2–5 deferred. **E06:S09** — T44/T45 filed from attempt 12 intake; T41 Wave 3 deferred; V-band: T36/T42/T43.
+**Note:** Epics 1, 7, 11 are COMPLETE. Epics 2, 3, 4, 5, 6, 8, **10** are IN PROGRESS. Epic 5 **S08/S09 COMPLETE** (FR-114/FR-121). Epic 21 IN PROGRESS — shipped tasks archived @ UKW -c 2026-06-16 (34 E21 + cross-epic V-band); active board: S04–S07 locale backlog + S08 L2–5 deferred. **E06:S09** — T44 shipped (FR-143); T45 C-band; T41 Wave 3 deferred; V-band: T36/T42/T43/T44.
 
 **Wiring:** Every wired row includes FBU link(s) where applicable (UXR-010). Legacy `fbuboard.md` / `kanban-board.md` aliases **removed** (intake rename wave).
 
@@ -28,10 +28,10 @@ housekeeping_policy: keep
 
 ### Should Have (S) - Important Tasks
 
-- **E06:S09:T44** – TSP workflow story parity (FR-143 / K-01) - 📋 TODO (HIGH) | [Task](epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T44-tsp-workflow-story-parity-fr143.md) | [FR-143](fbu/FR-143-tsp-workflow-story-parity-guided-kma-preflight.md) | [T43](epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T43-starborn-legacy-attempt-12-intake-programme-wind-down.md) | —No IPP— | Last modified: 2026-07-01 19:00 UTC
-
 - **E06:S09:T41** – External adopter archetype corpus (FR-142) - 🔄 IN PROGRESS (MEDIUM — Wave 1 @ **v0.6.9.41+4**; Wave 3 **deferred** until G1) | [Task](epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T41-external-adopter-archetype-corpus-fr142.md) | [FR-142](fbu/FR-142-external-adopter-archetype-corpus-install-validation.md) | [UXR-029](fbu/UXR-029-adk-install-path-experiment.md)| [adk-install-external](../../../adk-install-external/README.md) | [—IPP—](../../implementation-cycles/IPP-E06S09T41-external-adopter-archetype-corpus-fr142.md) | Last modified: 2026-06-25 13:49 UTC
 ### Verification (V) - Task Shipped, FBU Verification Pending
+
+- **E06:S09:T44** – TSP workflow story parity (FR-143 / K-01) - ⏳ SHIPPED (HIGH — **v0.6.9.44+1**; guided preflight + story map) | [Task](epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T44-tsp-workflow-story-parity-fr143.md) | [FR-143](fbu/FR-143-tsp-workflow-story-parity-guided-kma-preflight.md) | [K-01](../../../adk-install-into-sbl/attempt-12/feedback-package/FB-ADK-K01-issue3-e02-workflow-story-collapse.md) | [—IPP—](../../implementation-cycles/IPP-E06S09T44-tsp-workflow-story-parity-fr143.md) | Last modified: 2026-07-01 15:33 UTC
 
 - **E06:S09:T42** – SBL kanban TSP operator overlay freeze - ⏳ SHIPPED (HIGH — **v0.6.9.42+1**; **342** tasks; M04 prune; [SBL #3](https://github.com/RMS-Ltd/starborn-legacy/issues/3)) | [Task](epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T42-sbl-kanban-tsp-operator-overlay-freeze.md) | [FR-136](fbu/FR-136-guided-kma-target-structure-pack.md) | [kanban-reference](../../../adk-install-into-sbl/kanban-reference/) | —No IPP— | Last modified: 2026-06-30 17:35 UTC
 
