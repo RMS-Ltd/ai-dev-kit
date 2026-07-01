@@ -44,7 +44,8 @@ When editing this table, update `docs/project-agent-manifest.json` `taskRouting[
 
 | Task | Summary | Task doc |
 | ---- | ------- | -------- |
-| E02:S16:T06 | FR-112 — Wave 11 standard findings 3M+2R @ v0.2.16.6+19; TC39 dashboard verify pending | `docs/kanban/epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T06-github-security-code-quality-health-perpetual.md` |
+| E02:S14:T06 | Workflow-mgt install evaluation — capture documentation gaps (IN PROGRESS) | `docs/kanban/epics/epic-02/story-14-workflow-management-package-installation-evaluation/T06-capture-documentation-gaps-and-improvements.md` |
+| E06:S09:T41 | FR-142 external adopter archetype corpus — Wave 3 deferred until UXR-029 G1 | `docs/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T41-external-adopter-archetype-corpus-fr142.md` |
 
 Refresh from `kboard.md` when running UKW or RW Step 7; mirror into manifest `openWork[]` if changed.
 

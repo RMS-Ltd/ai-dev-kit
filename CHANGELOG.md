@@ -11,8 +11,8 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
-## [0.2.16.6+23] - 01-07-26
+## [0.2.16.6+24] - 01-07-26
 
-E02:S16:T06 — **Change implemented:** Wave 15 — final **2** `py/unreachable-statement` residuals in `validate_version_bump.py`. SemVer **v0.4.1240**.
+E02:S16:T06 — **Change implemented:** Wave 16a TC41 closure manifest — **0** standard findings verified @ `main` `426752ee`. SemVer **v0.4.1241**.
 
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.16.6+23.md)
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.16.6+24.md)

@@ -14,8 +14,8 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** Medium (ongoing)  
 **Created:** 2026-06-05  
-**Last updated:** 2026-07-01 (Wave 15 unreachable-statement cleanup @ v0.2.16.6+23)  
-**Version Anchor:** v0.2.16.6+23  
+**Last updated:** 2026-07-01 (Wave 16a TC41 closure manifest @ v0.2.16.6+24)  
+**Version Anchor:** v0.2.16.6+24  
 **Code:** E02S16T06  
 **Task Type:** Perpetual Maintenance
 
@@ -699,7 +699,7 @@ Between 2026-06-16 09:54–15:03 UTC, **23** `ai-findings-autofix/*` PRs merged 
 | Targeted pytest | **20 passed** |
 | `sync_greenfield_install.py` | **2014** files |
 | `RW E02:S16:T06 --art` | **v0.2.16.6+22** |
-| Operator dashboard (TC41) | **Pending** post-merge on [standard findings](https://github.com/RMS-Ltd/ai-dev-kit/security/quality) |
+| Operator dashboard (TC41) | **CLOSED** — superseded by Wave 16a @ `426752ee` (**0** open) |
 
 ---
 
@@ -716,7 +716,26 @@ Between 2026-06-16 09:54–15:03 UTC, **23** `ai-findings-autofix/*` PRs merged 
 | `test_validate_version_bump.py` | **23 passed** |
 | `sync_greenfield_install.py` | **2014** files |
 | `RW E02:S16:T06 --art` | **v0.2.16.6+23** |
-| Operator dashboard (TC41) | **Pending** — expect **0** open post-merge |
+| Operator dashboard (TC41) | **CLOSED** @ `main` `426752ee` — **0** open on [standard findings](https://github.com/RMS-Ltd/ai-dev-kit/security/quality) |
+
+---
+
+## Wave 16a re-scan manifest (2026-07-01)
+
+**Theme:** Operator verify + TC41 closure after Wave 14b/15 burn-down.
+
+**Capture:** `main` @ **`426752ee`** (post Wave 15). Source: `GET /repos/.../code-quality/findings` (**0** open); [Code Quality dashboard](https://github.com/RMS-Ltd/ai-dev-kit/security/quality) **all green**.
+
+| Surface | Open count | Score | Notes |
+| ------- | ---------- | ----- | ----- |
+| [Code scanning](https://github.com/RMS-Ltd/ai-dev-kit/security/code-scanning) | **0** | — | unchanged |
+| Standard — maintainability | **0** | **Excellent** | Wave 14b+15 verified |
+| Standard — reliability | **0** | **Excellent** | Wave 14b+15 verified |
+| [AI findings](https://github.com/RMS-Ltd/ai-dev-kit/security/quality/ai-findings) | lag-accepted | — | Wave 10 moratorium unchanged |
+
+**TC41 closure:** **CLOSED** — operator confirmed **0** open standard findings post–CodeQL re-scan on `main`.
+
+**API note:** Use **`/code-quality/findings`** for standard findings; **`code-scanning/alerts`** is security lane only (Wave 13a lesson).
 
 ---
 
@@ -763,7 +782,9 @@ Between 2026-06-16 09:54–15:03 UTC, **23** `ai-findings-autofix/*` PRs merged 
 - [x] **AC24 (Wave 11):** Standard findings **3M+2R** burn-down shipped **v0.2.16.6+19**; operator TC39 dashboard verify **closed** Wave 13a @ `64d2b074` (**0** open M/R).
 - [x] **AC25 (Wave 12):** Dependabot **#10** `http-proxy-middleware@2.0.10` override; portal build + `npm audit` 0; shipped **v0.2.16.6+20**; operator TC40 Dependabot verify **pending**.
 - [x] **AC26 (Wave 13a):** Post–Wave 11/12 manifest @ `64d2b074` — **SUPERSEDED** (wrong API); shipped **v0.2.16.6+21** (docs-only).
-- [ ] **AC27 (Wave 14b):** Standard findings **21** burn-down shipped **v0.2.16.6+22**; operator TC41 dashboard verify **pending**.
+- [x] **AC27 (Wave 14b):** Standard findings **21** burn-down shipped **v0.2.16.6+22**; operator TC41 dashboard verify **closed** Wave 16a @ `426752ee` (**0** open).
+- [x] **AC28 (Wave 15):** Final **2** `py/unreachable-statement` residuals shipped **v0.2.16.6+23**; operator verify **closed** Wave 16a.
+- [x] **AC29 (Wave 16a):** Post-burn-down manifest + TC41 closure shipped **v0.2.16.6+24** (docs-only).
 
 ---
 

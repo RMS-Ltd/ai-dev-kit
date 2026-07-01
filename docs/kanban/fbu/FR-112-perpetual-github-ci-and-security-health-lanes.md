@@ -13,7 +13,7 @@ housekeeping_policy: keep
 **Submitted:** 2026-06-05  
 **Submitted By:** User (via agent — CI/security ownership gap)  
 **Priority:** HIGH  
-**Status:** IN PROGRESS (T06 Wave 15 @ **v0.2.16.6+23** — final **2** unreachable-statement residuals; operator TC41 verify pending)  
+**Status:** IN PROGRESS (T06 Wave 16a @ **v0.2.16.6+24** — TC41 closed; **0** standard findings; routine hygiene)  
 **Implementing Tasks:**
 - **E02:S16:T05** — [GitHub Actions CI health (Perpetual)](../epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T05-github-actions-ci-health-perpetual.md) *(Historical Anchor: E08:S03:T15)*
 - **E02:S16:T06** — [GitHub Security & Code Quality health (Perpetual)](../epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T06-github-security-code-quality-health-perpetual.md) *(Historical Anchor: E08:S03:T16)*
