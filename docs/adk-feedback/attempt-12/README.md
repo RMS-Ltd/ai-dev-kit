@@ -12,4 +12,4 @@
 | Sign-off | [signoff-report.json](https://github.com/RMS-Ltd/ai-dev-kit/blob/dev/adk-install-into-sbl/attempt-12/feedback-package/signoff-report.json) |
 | K-04 CI parity / Docusaurus | [FB-ADK-K04](https://github.com/RMS-Ltd/ai-dev-kit/blob/dev/adk-install-into-sbl/attempt-12/feedback-package/FB-ADK-K04-actions-ci-parity-docusaurus-defaults.md) |
 
-**SBL programme:** [KMA-ATTEMPT-12.md](https://github.com/RMS-Ltd/starborn-legacy/blob/dev/docs/kanban/KMA-ATTEMPT-12.md) · **Status:** install sign-off **final** 2026-07-01
+**SBL programme:** [KMA-ATTEMPT-12.md](https://github.com/RMS-Ltd/starborn-legacy/blob/dev/docs/kanban/KMA-ATTEMPT-12.md) · **Intake:** [#88](https://github.com/RMS-Ltd/ai-dev-kit/issues/88)

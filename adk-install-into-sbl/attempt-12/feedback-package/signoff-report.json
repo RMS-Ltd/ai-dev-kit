@@ -12,7 +12,12 @@
   "feedback_package_status": "final",
   "project_repo": "RMS-Ltd/starborn_legacy",
   "branch": "dev",
-  "head_sha": "a489b619aa248116967a93ae92a1fc8099376fd5",
+  "head_sha": "a9c7c179aa248116967a93ae92a1fc8099376fd5",
+  "intake_issue": {
+    "repo": "RMS-Ltd/ai-dev-kit",
+    "number": 88,
+    "url": "https://github.com/RMS-Ltd/ai-dev-kit/issues/88"
+  },
   "prior_intake_issue": {
     "attempt": "11",
     "number": 85,

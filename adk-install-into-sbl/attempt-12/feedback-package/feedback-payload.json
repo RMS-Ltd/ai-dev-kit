@@ -6,6 +6,11 @@
   "package_status": "final",
   "submitted_at_utc": "2026-07-01T18:00:00Z",
   "final_signoff_at_utc": "2026-07-01T18:00:00Z",
+  "intake_issue": {
+    "repo": "RMS-Ltd/ai-dev-kit",
+    "number": 88,
+    "url": "https://github.com/RMS-Ltd/ai-dev-kit/issues/88"
+  },
   "attempt": "12",
   "programme_phase": "install_accepted_kma_synthesise_deferred",
   "prior_intake_issue": {
@@ -17,7 +22,7 @@
   "branching": {
     "execution_base": "pre-adk-install",
     "execution_branch": "dev",
-    "execution_head_sha": "a489b619aa248116967a93ae92a1fc8099376fd5",
+    "execution_head_sha": "a9c7c179aa248116967a93ae92a1fc8099376fd5",
     "install_completion_note": "Install RC strict PASS 2026-06-30; adopter sign-off 2026-07-01"
   },
   "source": {
@@ -27,7 +32,7 @@
     "project_root": "starborn_legacy",
     "project_repo": "RMS-Ltd/starborn_legacy",
     "branch": "dev",
-    "head_sha": "a489b619aa248116967a93ae92a1fc8099376fd5",
+    "head_sha": "a9c7c179aa248116967a93ae92a1fc8099376fd5",
     "event_contract": "T111-install-log-event-contract",
     "payload_population": "manual"
   },

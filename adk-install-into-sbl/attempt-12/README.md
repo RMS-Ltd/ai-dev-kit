@@ -5,7 +5,7 @@
 **Arm:** **B** — greenfield shell + **guided KMA** (issue #3 TSP)  
 **FR-079 status:** **final** — adopter install sign-off 2026-07-01; maintainer intake via GitHub Issue
 
-**SBL evidence:** `dev` @ `a489b619` · programme [KMA-ATTEMPT-12](https://github.com/RMS-Ltd/starborn-legacy/blob/dev/docs/kanban/KMA-ATTEMPT-12.md)
+**SBL evidence:** `dev` @ `a9c7c179` · programme [KMA-ATTEMPT-12](https://github.com/RMS-Ltd/starborn-legacy/blob/dev/docs/kanban/KMA-ATTEMPT-12.md) · **Intake [#88](https://github.com/RMS-Ltd/ai-dev-kit/issues/88)**
 
 ---
 

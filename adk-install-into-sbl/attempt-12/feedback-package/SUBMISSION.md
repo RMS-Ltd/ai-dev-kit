@@ -5,7 +5,7 @@
 **TSP authority:** [starborn-legacy#3](https://github.com/RMS-Ltd/starborn-legacy/issues/3) (pass 3 · **342 tasks**)  
 **ADK pin:** `v0.4.1237`  
 **Arm:** **B** — greenfield shell + guided KMA  
-**Package status:** **`final`** · **Adopter sign-off:** 2026-07-01  
+**Package status:** **`final`** · **Adopter sign-off:** 2026-07-01 · **Intake:** [#88](https://github.com/RMS-Ltd/ai-dev-kit/issues/88)  
 **Last sync:** 2026-07-01
 
 ---
