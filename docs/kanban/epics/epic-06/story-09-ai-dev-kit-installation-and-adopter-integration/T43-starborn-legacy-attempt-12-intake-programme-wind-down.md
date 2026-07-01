@@ -12,7 +12,7 @@ housekeeping_policy: keep
 **Status:** COMPLETE  
 **Priority:** HIGH  
 **Created:** 2026-07-01  
-**Last updated:** 2026-07-01 (v0.6.9.43+1 — RW attempt 12 intake @ **v0.6.9.43+1**)  
+**Last updated:** 2026-07-01 (verification closure — UKW -c)  
 **Version:** v0.6.9.43+1  
 **Version Anchor:** v0.6.9.43+1  
 **Code:** E06S09T43
@@ -148,3 +148,9 @@ Use `--art` when releasing from `dev` or when `version.py` does not already anch
 - [x] Route K-01 – K-04 (FR-143/T44, FR-144/T45, BR-111, FR-141)
 - [x] Close GitHub #88
 - [x] RW release @ E06:S09:T43 @ **v0.6.9.43+1**
+
+---
+
+## Verification closure
+
+**Verification closure (2026-07-01):** Attempt 12 intake AC1–AC6 met; [#88](https://github.com/RMS-Ltd/ai-dev-kit/issues/88) closed; K-01–K-04 routed; child fixes T44/T45 verified. Programme wind-down to FR-142 confirmed. V-band row archived @ `UKW -c`.

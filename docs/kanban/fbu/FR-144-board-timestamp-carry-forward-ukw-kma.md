@@ -13,7 +13,7 @@ housekeeping_policy: keep
 **Submitted:** 2026-07-01  
 **Submitted By:** Maintainer (SBL attempt 12 intake / [#88](https://github.com/RMS-Ltd/ai-dev-kit/issues/88))  
 **Priority:** MEDIUM (Could Have — MoSCOW **C** until synthesise wave)  
-**Status:** IMPLEMENTED
+**Status:** IMPLEMENTED @ v0.6.9.45+1 — **verified** 2026-07-01 (operator; K-02 fixture pytest + validators)
 
 **Implementing Task:** [E06:S09:T45](../epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T45-board-timestamp-carry-forward-fr144.md) @ **v0.6.9.45+1**
 

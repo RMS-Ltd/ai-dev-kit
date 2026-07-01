@@ -3,22 +3,64 @@
 << /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
 endobj
 2 0 obj
-<< /Length 2286 >>
+<< /Length 2379 >>
 stream
 BT
 /F1 10 Tf
 50 800 Td
 (Kanban Completed Tasks) Tj
 0 -14 Td
-(Generated: 2026-06-24T13:48:34Z) Tj
+(Generated: 2026-07-01T16:16:31Z) Tj
 0 -14 Td
-(Total rows: 252) Tj
+(Total rows: 259) Tj
 0 -14 Td
 () Tj
 0 -14 Td
 (20 Most Recently Completed) Tj
 0 -14 Td
 (-------------------------) Tj
+0 -14 Td
+(E06:S09:T42 | 2026-07-01T18:30:00Z | v0.6.9.42+1 | UKW -c) Tj
+0 -14 Td
+(SBL TSP overlay freeze verified; SBL #3 sign-off accepted) Tj
+0 -14 Td
+() Tj
+0 -14 Td
+(E06:S09:T43 | 2026-07-01T18:30:00Z | v0.6.9.43+1 | UKW -c) Tj
+0 -14 Td
+(Attempt 12 intake wind-down verified; #88 closed) Tj
+0 -14 Td
+() Tj
+0 -14 Td
+(E06:S09:T44 | 2026-07-01T18:30:00Z | v0.6.9.44+1 | UKW -c) Tj
+0 -14 Td
+(FR-143 K-01 preflight verified \(pytest + guided strict\)) Tj
+0 -14 Td
+() Tj
+0 -14 Td
+(E06:S09:T45 | 2026-07-01T18:30:00Z | v0.6.9.45+1 | UKW -c) Tj
+0 -14 Td
+(FR-144 K-02 timestamp carry-forward verified \(pytest + validators\)) Tj
+0 -14 Td
+() Tj
+0 -14 Td
+(E05:S08:T08 | 2026-06-25T14:39:19Z | v0.5.8.8+1 | RW E05:S08:T08) Tj
+0 -14 Td
+(FR-141 git-native adopter docs greenfield default) Tj
+0 -14 Td
+() Tj
+0 -14 Td
+(E06:S09:T40 | 2026-06-24T20:17:00Z | v0.6.9.40+2 | RW E06:S09:T40) Tj
+0 -14 Td
+(BR-112 verified ? greenfield orchestrator Install RC EXIT=0 on SBL replay @ v0.4.1224) Tj
+0 -14 Td
+() Tj
+0 -14 Td
+(E04:S14:T11 | 2026-06-24T14:30:00Z | v0.4.14.11+1 | RW Agent) Tj
+0 -14 Td
+(UKW Step 2.5 gap discovery scanner \(FR-043\)) Tj
+0 -14 Td
+() Tj
 0 -14 Td
 (E03:S02:T15 | 2026-06-24T13:47:58Z | v0.3.2.15+2 | Operator verify) Tj
 0 -14 Td
@@ -55,7 +97,18 @@ BT
 (E04:S19:T14 | 2026-06-23T13:31:00Z | v0.4.19.14+1 | RW Agent) Tj
 0 -14 Td
 (FBU intake directory rename fr-br to fbu \(UXR-032\)) Tj
-0 -14 Td
+ET
+endstream
+endobj
+3 0 obj
+<< /Type /Page /Parent 18 0 R /MediaBox [0 0 612 842] /Contents 2 0 R /Resources << /Font << /F1 1 0 R >> >> >>
+endobj
+4 0 obj
+<< /Length 4487 >>
+stream
+BT
+/F1 10 Tf
+50 800 Td
 () Tj
 0 -14 Td
 (E08:S03:T24 | 2026-06-23T12:17:44Z | v0.8.3.24+3 | UKW) Tj
@@ -97,61 +150,8 @@ BT
 () Tj
 0 -14 Td
 (E08:S03:T20 | 2026-06-16T12:00:00Z | v0.8.3.20+1 | UKW -c) Tj
-ET
-endstream
-endobj
-3 0 obj
-<< /Type /Page /Parent 18 0 R /MediaBox [0 0 612 842] /Contents 2 0 R /Resources << /Font << /F1 1 0 R >> >> >>
-endobj
-4 0 obj
-<< /Length 4564 >>
-stream
-BT
-/F1 10 Tf
-50 800 Td
+0 -14 Td
 (README Python prerequisites alignment \(UXR-026\)) Tj
-0 -14 Td
-() Tj
-0 -14 Td
-(E08:S03:T21 | 2026-06-16T12:00:00Z | v0.8.3.21+1 | UKW -c) Tj
-0 -14 Td
-(CLI pytest coverage dedicated target \(UXR-030\)) Tj
-0 -14 Td
-() Tj
-0 -14 Td
-(E08:S03:T22 | 2026-06-16T12:00:00Z | v0.8.3.22+2 | UKW -c) Tj
-0 -14 Td
-(Pytest warning cleanup \(UXR-030 Wave 2\)) Tj
-0 -14 Td
-() Tj
-0 -14 Td
-(E08:S03:T23 | 2026-06-16T12:00:00Z | v0.8.3.23+2 | UKW -c) Tj
-0 -14 Td
-(Greenfield sync autofix CI hardening \(BR-109\)) Tj
-0 -14 Td
-() Tj
-0 -14 Td
-(E21:S01:T01 | 2026-06-16T12:00:00Z | v0.21.1.1+2 | UKW -c) Tj
-0 -14 Td
-(Add language selection prompt to template setup \(GitHub template\)) Tj
-0 -14 Td
-() Tj
-0 -14 Td
-(E21:S01:T02 | 2026-06-16T12:00:00Z | v0.21.1.2+1 | UKW -c) Tj
-0 -14 Td
-(Add language selection prompt to CLI tool \(`ai-dev-kit init`\)) Tj
-0 -14 Td
-() Tj
-0 -14 Td
-(E21:S01:T03 | 2026-06-16T12:00:00Z | v0.21.1.3+1 | UKW -c) Tj
-0 -14 Td
-(Add language selection prompt to RW Installer \(`install_release_workflow.py`\)) Tj
-0 -14 Td
-() Tj
-0 -14 Td
-(E21:S01:T04 | 2026-06-16T12:00:00Z | v0.21.1.4+1 | UKW -c) Tj
-0 -14 Td
-(Create UK/US English content variants \(documentation, templates\)) Tj
 0 -14 Td
 () Tj
 0 -14 Td
@@ -306,7 +306,7 @@ endobj
 << /Type /Page /Parent 18 0 R /MediaBox [0 0 612 842] /Contents 6 0 R /Resources << /Font << /F1 1 0 R >> >> >>
 endobj
 8 0 obj
-<< /Length 7398 >>
+<< /Length 7250 >>
 stream
 BT
 /F1 10 Tf
@@ -326,6 +326,8 @@ BT
 (E04:S13:T06 | 2025-12-15T14:00:00Z | v0.4.13.6+2 | **E04:S13:T06** ? Update other affected packages \(MoSCOW board workstream\)) Tj
 0 -14 Td
 (E04:S14:T04 | 2026-06-05T03:55:22Z | v0.5.1.37+3 | **E04:S14:T04** ? **FR-037** Kanban policy task prioritisation queue stack.) Tj
+0 -14 Td
+(E04:S14:T11 | 2026-06-24T14:30:00Z | v0.4.14.11+1 | UKW Step 2.5 gap discovery scanner \(FR-043\)) Tj
 0 -14 Td
 (E04:S14:T12 | 2026-06-15T20:04:56Z | v0.4.14.12+2 | FR-134 SQLite ledger + UKW PDF report) Tj
 0 -14 Td
@@ -397,9 +399,7 @@ BT
 0 -14 Td
 (E05:S08:T07 | 2026-06-15T20:04:09Z | v0.5.8.6+1 | **E05:S08:T07** ? `--maintainer-editor-profile` installer flag; `documentation_surfaces` + `maintainer_editor_profile` i) Tj
 0 -14 Td
-(E05:S09:T01 | 2026-03-30T20:35:00Z | v0.5.9.1+2 | **E05:S09:T01** ? Docusaurus site identity \(**FR-065**\): `portal/docusaurus.config.js`, `portal/README.md`, `tests/test_) Tj
-0 -14 Td
-(E05:S09:T02 | 2026-03-30T21:45:00Z | v0.5.9.2+2 | **E05:S09:T02** ? Canonical **`docs/`** path and publish scope \(**FR-066**\): `portal/docusaurus.config.js`, `portal/READ) Tj
+(E05:S08:T08 | 2026-06-25T14:39:19Z | v0.5.8.8+1 | FR-141 git-native adopter docs greenfield default) Tj
 ET
 endstream
 endobj
@@ -407,11 +407,15 @@ endobj
 << /Type /Page /Parent 18 0 R /MediaBox [0 0 612 842] /Contents 8 0 R /Resources << /Font << /F1 1 0 R >> >> >>
 endobj
 10 0 obj
-<< /Length 7464 >>
+<< /Length 7537 >>
 stream
 BT
 /F1 10 Tf
 50 800 Td
+(E05:S09:T01 | 2026-03-30T20:35:00Z | v0.5.9.1+2 | **E05:S09:T01** ? Docusaurus site identity \(**FR-065**\): `portal/docusaurus.config.js`, `portal/README.md`, `tests/test_) Tj
+0 -14 Td
+(E05:S09:T02 | 2026-03-30T21:45:00Z | v0.5.9.2+2 | **E05:S09:T02** ? Canonical **`docs/`** path and publish scope \(**FR-066**\): `portal/docusaurus.config.js`, `portal/READ) Tj
+0 -14 Td
 (E05:S09:T03 | 2026-03-30T22:30:00Z | v0.5.9.3+1 | **E05:S09:T03** ? Docusaurus production build corpus triage \(**FR-067**\): MDX/placeholder escapes, `onBrokenLinks`/`onBr) Tj
 0 -14 Td
 (E05:S09:T04 | 2026-03-30T15:27:28Z | v0.5.9.4+1 | **E05:S09:T04** ? Docusaurus navigation / sidebar IA / landing \(**FR-068**\): `portal/sidebars.js`, `portal/docusaurus.co) Tj
@@ -497,10 +501,6 @@ BT
 (E06:S09:T17 | 2026-06-04T12:53:00Z | v0.6.9.17+1 | **E06:S09:T17** ? **BR-087** wave 1: framework install directory slugs.) Tj
 0 -14 Td
 (E06:S09:T18 | 2026-06-04T16:00:30Z | v0.6.9.18+2 | **E06:S09:T18** ? **BR-087** wave 2: framework slug install closure \(registry, GitHub release\).) Tj
-0 -14 Td
-(E06:S09:T19 | 2026-06-04T17:08:38Z | v0.6.9.19+1 | **E06:S09:T19** ? **BR-088**: RW mode C `version_file` scaffold when no `src/`.) Tj
-0 -14 Td
-(E06:S09:T20 | 2026-06-04T17:32:25Z | v0.6.9.20+2 | **E06:S09:T20** ? **FR-108**: Install/setup `ADK-*` error code registry + emission + docs.) Tj
 ET
 endstream
 endobj
@@ -508,11 +508,15 @@ endobj
 << /Type /Page /Parent 18 0 R /MediaBox [0 0 612 842] /Contents 10 0 R /Resources << /Font << /F1 1 0 R >> >> >>
 endobj
 12 0 obj
-<< /Length 7553 >>
+<< /Length 7248 >>
 stream
 BT
 /F1 10 Tf
 50 800 Td
+(E06:S09:T19 | 2026-06-04T17:08:38Z | v0.6.9.19+1 | **E06:S09:T19** ? **BR-088**: RW mode C `version_file` scaffold when no `src/`.) Tj
+0 -14 Td
+(E06:S09:T20 | 2026-06-04T17:32:25Z | v0.6.9.20+2 | **E06:S09:T20** ? **FR-108**: Install/setup `ADK-*` error code registry + emission + docs.) Tj
+0 -14 Td
 (E06:S09:T21 | 2026-06-05T10:00:22Z | v0.6.9.21+4 | **E06:S09:T21** ? Lean adopter distribution footprint \(`greenfield-install/` tree, sync script, CI drift guard\).) Tj
 0 -14 Td
 (E06:S09:T22 | 2026-06-05T12:00:00Z | v0.6.9.22+1 | **E06:S09:T22** ? Package documentation greenfield-install alignment \(FR-110 framework READMEs + install guides\).) Tj
@@ -546,6 +550,16 @@ BT
 (E06:S09:T37 | 2026-06-15T20:04:09Z | v0.6.9.34+1 | **E06:S09:T37** ? L1 default depth guide, INSTALL Migrate \(default\), COMPREHENSION template, KMA collision/megastory def) Tj
 0 -14 Td
 (E06:S09:T38 | 2026-06-17T15:22:52Z | v0.6.9.38+1 | Guided install orchestrator v2 \(FR-135\)) Tj
+0 -14 Td
+(E06:S09:T40 | 2026-06-24T20:17:00Z | v0.6.9.40+2 | BR-112 verified ? greenfield orchestrator Install RC EXIT=0 on SBL replay @ v0.4.1224) Tj
+0 -14 Td
+(E06:S09:T42 | 2026-07-01T18:30:00Z | v0.6.9.42+1 | SBL TSP overlay freeze verified; SBL #3 sign-off accepted) Tj
+0 -14 Td
+(E06:S09:T43 | 2026-07-01T18:30:00Z | v0.6.9.43+1 | Attempt 12 intake wind-down verified; #88 closed) Tj
+0 -14 Td
+(E06:S09:T44 | 2026-07-01T18:30:00Z | v0.6.9.44+1 | FR-143 K-01 preflight verified \(pytest + guided strict\)) Tj
+0 -14 Td
+(E06:S09:T45 | 2026-07-01T18:30:00Z | v0.6.9.45+1 | FR-144 K-02 timestamp carry-forward verified \(pytest + validators\)) Tj
 0 -14 Td
 (E07:S01:T06 | 2026-03-16T17:00:00Z | v0.7.1.7+4 | **E07:S01:T06** ? Implement Update Changelog Workflow \(UCW\)) Tj
 0 -14 Td
@@ -588,7 +602,18 @@ BT
 (E08:S03:T06 | 2026-06-03T16:00:00Z | v0.8.3.6+2 | **E08:S03:T06** ? **FR-105**: Dependabot pip + portal npm, security updates, npm audit triage.) Tj
 0 -14 Td
 (E08:S03:T07 | 2026-06-04T23:51:26Z | v0.8.3.7+1 | **E08:S03:T07** ? **BR-092**: Tests CI `requests` dependency ? `setup.py` [dev] extras + `tests/requirements.txt` parity) Tj
-0 -14 Td
+ET
+endstream
+endobj
+13 0 obj
+<< /Type /Page /Parent 18 0 R /MediaBox [0 0 612 842] /Contents 12 0 R /Resources << /Font << /F1 1 0 R >> >> >>
+endobj
+14 0 obj
+<< /Length 6269 >>
+stream
+BT
+/F1 10 Tf
+50 800 Td
 (E08:S03:T08 | 2026-06-05T00:10:09Z | v0.8.3.8+1 | **E08:S03:T08** ? **BR-094**: CodeQL `git_tag_handler.py` indentation syntax fix.) Tj
 0 -14 Td
 (E08:S03:T09 | 2026-06-05T01:03:42Z | v0.8.3.9+1 | **E08:S03:T09** ? **BR-095**: CodeQL insecure `tempfile.mktemp` ? replace with `NamedTemporaryFile`.) Tj
@@ -602,18 +627,7 @@ BT
 (E08:S03:T14 | 2026-06-06T13:09:50Z | v0.8.3.14+5 | **E08:S03:T14** ? Code Quality AI suggestions backlog \(BR-101\): wave-1 **12/14** apply; wave-2b **AI-VENDOR-TREE** 4/4; ) Tj
 0 -14 Td
 (E08:S03:T17 | 2026-06-06T16:00:00Z | v0.8.3.17+4 | **E08:S03:T17** ? Local Code Quality Gate \(CQG\) \(FR-113\): CodeQL engine, RW Step 9 advisory validator, 6 h monitor, ADR-) Tj
-ET
-endstream
-endobj
-13 0 obj
-<< /Type /Page /Parent 18 0 R /MediaBox [0 0 612 842] /Contents 12 0 R /Resources << /Font << /F1 1 0 R >> >> >>
-endobj
-14 0 obj
-<< /Length 5810 >>
-stream
-BT
-/F1 10 Tf
-50 800 Td
+0 -14 Td
 (E08:S03:T19 | 2026-06-15T20:04:09Z | v0.2.3.10+1 | **E08:S03:T19** ? `test_stamp_evidence_gate.py` assert refactor; `pytest.ini` PytestReturnNotNoneWarning guard. **Comple) Tj
 0 -14 Td
 (E08:S03:T20 | 2026-06-16T12:00:00Z | v0.8.3.20+1 | README Python prerequisites alignment \(UXR-026\)) Tj
@@ -689,7 +703,18 @@ BT
 (E21:S03:T04 | 2026-06-16T12:00:00Z | v0.21.3.4+1 | Create translation workflow and review process) Tj
 0 -14 Td
 (E21:S03:T05 | 2026-06-16T12:00:00Z | v0.21.3.5+1 | Add translation management tools) Tj
-0 -14 Td
+ET
+endstream
+endobj
+15 0 obj
+<< /Type /Page /Parent 18 0 R /MediaBox [0 0 612 842] /Contents 14 0 R /Resources << /Font << /F1 1 0 R >> >> >>
+endobj
+16 0 obj
+<< /Length 1689 >>
+stream
+BT
+/F1 10 Tf
+50 800 Td
 (E21:S03:T06 | 2026-06-16T12:00:00Z | v0.21.3.6+1 | Implement translation completeness tracking) Tj
 0 -14 Td
 (E21:S03:T07 | 2026-06-16T12:00:00Z | v0.21.3.7+1 | Test translations and locale support) Tj
@@ -703,18 +728,7 @@ BT
 (E21:S04:T05 | 2026-06-16T12:00:00Z | v0.21.4.5+1 | Cultural formatting validation \(dates, times, numbers, currency\)) Tj
 0 -14 Td
 (E21:S05:T01 | 2026-06-16T12:00:00Z | v0.21.5.1+1 | Spanish \(es\) translation files) Tj
-ET
-endstream
-endobj
-15 0 obj
-<< /Type /Page /Parent 18 0 R /MediaBox [0 0 612 842] /Contents 14 0 R /Resources << /Font << /F1 1 0 R >> >> >>
-endobj
-16 0 obj
-<< /Length 897 >>
-stream
-BT
-/F1 10 Tf
-50 800 Td
+0 -14 Td
 (E21:S05:T02 | 2026-06-16T12:00:00Z | v0.21.5.2+2 | French \(fr\) translation files) Tj
 0 -14 Td
 (E21:S06:T01 | 2026-06-16T12:00:00Z | v0.21.6.1+1 | Chinese Simplified \(zh-CN\) translation files) Tj
@@ -747,25 +761,25 @@ xref
 0000000000 65535 f 
 0000000009 00000 n 
 0000000079 00000 n 
-0000002417 00000 n 
-0000002544 00000 n 
-0000007160 00000 n 
-0000007287 00000 n 
-0000014619 00000 n 
-0000014746 00000 n 
-0000022196 00000 n 
-0000022323 00000 n 
-0000029840 00000 n 
-0000029969 00000 n 
-0000037575 00000 n 
-0000037704 00000 n 
-0000043567 00000 n 
-0000043696 00000 n 
-0000044645 00000 n 
-0000044774 00000 n 
-0000044878 00000 n 
+0000002510 00000 n 
+0000002637 00000 n 
+0000007176 00000 n 
+0000007303 00000 n 
+0000014635 00000 n 
+0000014762 00000 n 
+0000022064 00000 n 
+0000022191 00000 n 
+0000029781 00000 n 
+0000029910 00000 n 
+0000037211 00000 n 
+0000037340 00000 n 
+0000043662 00000 n 
+0000043791 00000 n 
+0000045533 00000 n 
+0000045662 00000 n 
+0000045766 00000 n 
 trailer
 << /Size 20 /Root 19 0 R >>
 startxref
-44929
+45817
 %%EOF

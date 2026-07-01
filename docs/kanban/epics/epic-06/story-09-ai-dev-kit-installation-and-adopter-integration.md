@@ -124,7 +124,7 @@ housekeeping_policy: keep
 
 ## Tactical overview
 
-**SBL install programme (T26)** closed Phase 1 @ attempt 11; **T43** closed attempt 12 intake ([#88](https://github.com/RMS-Ltd/ai-dev-kit/issues/88)); **T44**/**T45** shipped (K-01/K-02). Active delivery: **T41** (FR-142). V-band: **T36** / **T42** / **T44**.
+**SBL install programme (T26)** closed Phase 1 @ attempt 11; **T43** closed attempt 12 intake ([#88](https://github.com/RMS-Ltd/ai-dev-kit/issues/88)); **T42–T45** verified @ UKW -c 2026-07-01. Active delivery: **T41** (FR-142). V-band: **T36 only** (G1 open).
 
 ---
 

@@ -8,12 +8,12 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Board
 
-**Last Updated:** 2026-07-01 (RW: E06:S09:T45)
+**Last Updated:** 2026-07-01 (UKW -c: E06:S09 V-band T42–T45)
 **Version:** v0.6.9.45+1
 
 **Active board contract:** **Sole active MoSCOW board** ([ADR-018](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/architecture/standards-and-adrs/ADR-018-single-kanban-board-consolidation.md)). Rows are **live work** (TODO / IN PROGRESS / OPEN / WAITING / PERPETUAL) plus filed **Could Have** backlog. **Verification (V)** band holds task-shipped / FBU-open items (`⏳ WAITING`). Remove **terminal** rows and archive prose (use [`kanban-completed.md`](kanban-completed.md) / [`intake-completed.md`](intake-completed.md)).
 
-**Note:** Epics 1, 7, 11 are COMPLETE. Epics 2, 3, 4, 5, 6, 8, **10** are IN PROGRESS. Epic 5 **S08/S09 COMPLETE** (FR-114/FR-121). Epic 21 IN PROGRESS — shipped tasks archived @ UKW -c 2026-06-16 (34 E21 + cross-epic V-band); active board: S04–S07 locale backlog + S08 L2–5 deferred. **E06:S09** — T44/T45 shipped (K-01/K-02); T41 Wave 3 deferred; V-band: T36/T42/T43/T44/T45.
+**Note:** Epics 1, 7, 11 are COMPLETE. Epics 2, 3, 4, 5, 6, 8, **10** are IN PROGRESS. Epic 5 **S08/S09 COMPLETE** (FR-114/FR-121). Epic 21 IN PROGRESS — shipped tasks archived @ UKW -c 2026-06-16 (34 E21 + cross-epic V-band); active board: S04–S07 locale backlog + S08 L2–5 deferred. **E06:S09** — T42–T45 verified @ UKW -c 2026-07-01; T41 Wave 3 deferred until G1; V-band: **T36 only** (UXR-029 Phase 4 / G1 open).
 
 **Wiring:** Every wired row includes FBU link(s) where applicable (UXR-010). Legacy `fbuboard.md` / `kanban-board.md` aliases **removed** (intake rename wave).
 
@@ -30,14 +30,6 @@ housekeeping_policy: keep
 
 - **E06:S09:T41** – External adopter archetype corpus (FR-142) - 🔄 IN PROGRESS (MEDIUM — Wave 1 @ **v0.6.9.41+4**; Wave 3 **deferred** until G1) | [Task](epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T41-external-adopter-archetype-corpus-fr142.md) | [FR-142](fbu/FR-142-external-adopter-archetype-corpus-install-validation.md) | [UXR-029](fbu/UXR-029-adk-install-path-experiment.md)| [adk-install-external](../../../adk-install-external/README.md) | [—IPP—](../../implementation-cycles/IPP-E06S09T41-external-adopter-archetype-corpus-fr142.md) | Last modified: 2026-06-25 13:49 UTC
 ### Verification (V) - Task Shipped, FBU Verification Pending
-
-- **E06:S09:T44** – TSP workflow story parity (FR-143 / K-01) - ⏳ SHIPPED (HIGH — **v0.6.9.44+1**; guided preflight + story map) | [Task](epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T44-tsp-workflow-story-parity-fr143.md) | [FR-143](fbu/FR-143-tsp-workflow-story-parity-guided-kma-preflight.md) | [K-01](../../../adk-install-into-sbl/attempt-12/feedback-package/FB-ADK-K01-issue3-e02-workflow-story-collapse.md) | [—IPP—](../../implementation-cycles/IPP-E06S09T44-tsp-workflow-story-parity-fr143.md) | Last modified: 2026-07-01 15:33 UTC
-
-- **E06:S09:T45** – Board timestamp carry-forward (FR-144 / K-02) - ⏳ SHIPPED (MEDIUM — **v0.6.9.45+1**; timestamp index + restoration) | [Task](epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T45-board-timestamp-carry-forward-fr144.md) | [FR-144](fbu/FR-144-board-timestamp-carry-forward-ukw-kma.md) | [K-02](../../../adk-install-into-sbl/attempt-12/feedback-package/FB-ADK-K02-board-timestamp-loss.md) | [—IPP—](../../implementation-cycles/IPP-E06S09T45-board-timestamp-carry-forward-fr144.md) | Last modified: 2026-07-01 15:42 UTC
-
-- **E06:S09:T42** – SBL kanban TSP operator overlay freeze - ⏳ SHIPPED (HIGH — **v0.6.9.42+1**; **342** tasks; M04 prune; [SBL #3](https://github.com/RMS-Ltd/starborn-legacy/issues/3)) | [Task](epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T42-sbl-kanban-tsp-operator-overlay-freeze.md) | [FR-136](fbu/FR-136-guided-kma-target-structure-pack.md) | [kanban-reference](../../../adk-install-into-sbl/kanban-reference/) | —No IPP— | Last modified: 2026-06-30 17:35 UTC
-
-- **E06:S09:T43** – Starborn Legacy attempt 12 intake - ⏳ SHIPPED (HIGH — **v0.6.9.43+1**; [#88](https://github.com/RMS-Ltd/ai-dev-kit/issues/88) closed) | [Task](epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T43-starborn-legacy-attempt-12-intake-programme-wind-down.md) | [FR-079](fbu/FR-079-install-feedback-submission-path-and-governance.md) | [FR-143](fbu/FR-143-tsp-workflow-story-parity-guided-kma-preflight.md) | —No IPP— | Last modified: 2026-07-01 15:25 UTC
 
 - **E06:S09:T36** – Adopter Path Selector + Install RC (UXR-029) - ⏳ SHIPPED (HIGH — **v0.6.9.36+3**; AC7 satisfied @ attempt 10; UXR-029 Phase 4 / G1 open) | [Task](epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T36-adopter-path-selector-install-rc-uxr029.md) | [UXR-029](fbu/UXR-029-adk-install-path-experiment.md) | [#52](https://github.com/RMS-Ltd/ai-dev-kit/issues/52) | —No IPP— | Last modified: 2026-06-16 13:57 UTC
 

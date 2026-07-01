@@ -104,10 +104,11 @@ Fixture: `tests/fixtures/kma-workflow-story-parity-k01/` (attempt 12 K-01 scenar
 
 ## 6. Verification
 
-- [ ] `pytest tests/kanban/test_kma_workflow_story_parity.py tests/kanban/test_score_kma_structure.py`
-- [ ] Guided preflight fails on K-01 collapsed fixture with `--strict`
-- [ ] Expanded story map passes preflight
-- [ ] RW anchors E06:S09:T44
+- [x] `pytest tests/kanban/test_kma_workflow_story_parity.py tests/kanban/test_score_kma_structure.py`
+- [x] Guided preflight fails on K-01 collapsed fixture with `--strict`
+- [x] Expanded story map passes preflight
+- [x] RW anchors E06:S09:T44
+- [x] Operator verification closure 2026-07-01 (`UKW -c`)
 
 ---
 

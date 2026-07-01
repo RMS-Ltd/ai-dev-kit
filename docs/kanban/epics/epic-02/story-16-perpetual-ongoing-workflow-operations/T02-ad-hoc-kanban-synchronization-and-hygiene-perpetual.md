@@ -14,8 +14,8 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** Medium  
 **Created:** 2026-04-22  
-**Last updated:** 2026-06-30 (v0.2.16.2+15 – Kanban documentation setup)
-**Version Anchor:** v0.2.16.2+15
+**Last updated:** 2026-07-01 (v0.2.16.2+16 — UKW -c E06:S09 V-band verification)
+**Version Anchor:** v0.2.16.2+16
 **Code:** E02S16T02
 **Task Type:** Perpetual Maintenance
 

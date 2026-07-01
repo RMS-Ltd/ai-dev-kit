@@ -12,7 +12,7 @@ housekeeping_policy: keep
 **Status:** COMPLETE  
 **Priority:** MEDIUM  
 **Created:** 2026-07-01  
-**Last updated:** 2026-07-01 (v0.6.9.45+1 — RW FR-144 @ **v0.6.9.45+1**)  
+**Last updated:** 2026-07-01 (verification closure — UKW -c)  
 **Version:** v0.6.9.45+1  
 **Version Anchor:** v0.6.9.45+1  
 **Code:** E06S09T45
@@ -74,3 +74,9 @@ Prevent UKW/KMA from flattening board `Last modified:` stamps to session UTC whe
 ```
 RW E06:S09:T45 --art
 ```
+
+---
+
+## Verification closure
+
+**Verification closure (2026-07-01):** `pytest tests/kanban/test_timestamp_carry_forward_fr144.py` green. Timestamp index build (3 entries), `apply-board --dry-run` (3 changes), `validate_flat_date_board.py --strict` blocks flat fixture when index non-empty (expected). FR-144 **verified** on fixture path. V-band row archived @ `UKW -c`.

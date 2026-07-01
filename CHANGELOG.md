@@ -11,8 +11,8 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
-## [0.6.9.45+1] - 01-07-26
+## [0.2.16.2+16] - 01-07-26
 
-E06:S09:T45 — **Change implemented:** FR-144 board timestamp carry-forward — legacy index, restoration helper, UKW/KMA gates, flat-date validator. SemVer **v0.4.1244**.
+E02:S16:T02 — **Change implemented:** UKW `-c` E06:S09 V-band verification — T42–T45 archived; FR-143/FR-144 verified; T36 remains (G1). SemVer **v0.4.1245+16**.
 
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.6.9.45+1.md)
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.16.2+16.md)

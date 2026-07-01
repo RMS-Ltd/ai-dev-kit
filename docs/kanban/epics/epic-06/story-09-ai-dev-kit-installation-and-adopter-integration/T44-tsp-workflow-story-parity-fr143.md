@@ -12,7 +12,7 @@ housekeeping_policy: keep
 **Status:** COMPLETE  
 **Priority:** HIGH  
 **Created:** 2026-07-01  
-**Last updated:** 2026-07-01 (v0.6.9.44+1 — RW FR-143 @ **v0.6.9.44+1**)  
+**Last updated:** 2026-07-01 (verification closure — UKW -c)  
 **Version:** v0.6.9.44+1  
 **Version Anchor:** v0.6.9.44+1
 
@@ -86,3 +86,9 @@ Ship framework TSP companions and deterministic preflight so guided KMA warns or
 ```
 RW E06:S09:T44 --art
 ```
+
+---
+
+## Verification closure
+
+**Verification closure (2026-07-01):** `pytest tests/kanban/test_kma_workflow_story_parity.py` + `test_score_kma_structure.py` green (21 passed). Guided preflight `--strict` **fails** on K-01 collapsed fixture (exit 1) and **passes** with `E02-WORKFLOW-STORY-MAP.md` (exit 0). FR-143 **verified**. V-band row archived @ `UKW -c`.

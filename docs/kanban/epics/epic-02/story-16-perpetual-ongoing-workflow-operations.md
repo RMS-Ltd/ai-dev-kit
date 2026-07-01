@@ -29,7 +29,7 @@ Active perpetual lanes: **T01** workflow umbrella · **T02** UKW/kanban hygiene 
 
 - [ ] **E02:S16:T01 – Workflow maintenance (Perpetual)** - 🔄 PERPETUAL (**v0.2.16.1+1** — portal js-yaml 4.2.0) — [Task](story-16-perpetual-ongoing-workflow-operations/T01-workflow-maintenance-perpetual.md) | [FR-088](../../fbu/FR-088-dedicated-story-for-perpetual-ongoing-tasks.md)
 
-- [ ] **E02:S16:T02 – Ad-hoc Kanban synchronization and hygiene (Perpetual)** - 🔄 PERPETUAL (**v0.2.16.2+15** — UKW post-T42 sync; RW -k kanban doc release) — [Task](story-16-perpetual-ongoing-workflow-operations/T02-ad-hoc-kanban-synchronization-and-hygiene-perpetual.md) | [FR-023](../../fbu/FR-023-update-kanban-workflow-ukw.md)
+- [ ] **E02:S16:T02 – Ad-hoc Kanban synchronization and hygiene (Perpetual)** - 🔄 PERPETUAL (**v0.2.16.2+16** — UKW -c E06:S09 V-band verification) — [Task](story-16-perpetual-ongoing-workflow-operations/T02-ad-hoc-kanban-synchronization-and-hygiene-perpetual.md) | [FR-023](../../fbu/FR-023-update-kanban-workflow-ukw.md)
 
 - [ ] **E02:S16:T03 – Ad-hoc Documentation Maintenance (Perpetual)** - 🔄 PERPETUAL (**v0.2.16.3+8**) — [Task](story-16-perpetual-ongoing-workflow-operations/T03-ad-hoc-documentation-maintenance-perpetual.md) | [FR-125](../../fbu/FR-125-consolidate-e02s16t03-t07-documentation-maintenance-lanes.md) · [FR-058](../../fbu/FR-058-markdown-maintenance-workflow.md) (historical) · [FR-124](../../fbu/FR-124-meta-workflow-orchestration-composite-workflow-chains.md) (MWF docs wave)
 

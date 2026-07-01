@@ -13,7 +13,7 @@ housekeeping_policy: keep
 **Submitted:** 2026-07-01  
 **Submitted By:** Maintainer (SBL attempt 12 intake / [#88](https://github.com/RMS-Ltd/ai-dev-kit/issues/88))  
 **Priority:** HIGH (Should Have — MoSCOW **S**)  
-**Status:** IMPLEMENTED
+**Status:** IMPLEMENTED @ v0.6.9.44+1 — **verified** 2026-07-01 (operator; K-01 preflight pytest + CLI)
 
 **Implementing Task:** [E06:S09:T44](../epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T44-tsp-workflow-story-parity-fr143.md) @ **v0.6.9.44+1**
 

@@ -12,7 +12,7 @@ housekeeping_policy: keep
 **Status:** COMPLETE  
 **Priority:** HIGH  
 **Created:** 2026-06-30  
-**Last updated:** 2026-06-30 (v0.6.9.42+1 — RW overlay freeze release)  
+**Last updated:** 2026-07-01 (verification closure — UKW -c)  
 **Version Anchor:** v0.6.9.42+1  
 **Code:** E06S09T42
 
@@ -90,3 +90,9 @@ Use `--art` when releasing from `dev` or when `version.py` does not already anch
 - [x] Reconcile band parity / scoring rubric to 342 tasks
 - [x] Open SBL EST sign-off issue
 - [x] RW release (local-complete) @ **v0.6.9.42+1**
+
+---
+
+## Verification closure
+
+**Verification closure (2026-07-01):** `apply_pass3_redistribution.py` reproduces tree; attempt 12 adopted issue #3 (**342** tasks) as TSP authority. SBL #3 sign-off accepted via attempt-12 install baseline. V-band row archived @ `UKW -c`.
