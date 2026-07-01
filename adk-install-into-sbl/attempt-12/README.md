@@ -30,7 +30,7 @@
 | TSP | 377-task in-repo tree | **Issue #3** — 342 tasks |
 | Synthesise | 93.99% score | Pending sign-off |
 | Lineage | In-place `dev` | Fresh `dev` from `pre-adk-install` |
-| New feedback | 5 FBs (final) | **4 FBs (draft)** incl. **K-04** CI parity / Docusaurus |
+| New feedback | 5 FBs (final) | **4 FBs (final)** K-01–K-04 |
 
 ---
 
@@ -49,14 +49,16 @@
 
 ---
 
-## Maintainer intake (draft routing)
+## Maintainer intake
 
-| FB item | Suggested lane |
-| ------- | -------------- |
-| K-01 E02 workflow collapse | KMA / TSP / workflow-registry |
-| K-02 timestamp loss | UKW + KMA Step 4 |
-| K-03 SemVer `+BUILD` | Versioning ([BR-111](../../docs/kanban/fbu/BR-111-semver-public-surface-build-metadata-leak.md) carry-forward) |
-| K-04 CI parity / Docusaurus | workflow-mgt Step 9.7 + [FR-141](../../docs/kanban/fbu/FR-141-adopter-documentation-profile-greenfield-default.md) |
+**Task:** [E06:S09:T43](../../docs/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T43-starborn-legacy-attempt-12-intake-programme-wind-down.md) · **GitHub:** [#88](https://github.com/RMS-Ltd/ai-dev-kit/issues/88)
+
+| FB item | Routing |
+| ------- | ------- |
+| K-01 E02 workflow collapse | [FR-143](../../docs/kanban/fbu/FR-143-tsp-workflow-story-parity-guided-kma-preflight.md) / [T44](../../docs/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T44-tsp-workflow-story-parity-fr143.md) |
+| K-02 timestamp loss | [FR-144](../../docs/kanban/fbu/FR-144-board-timestamp-carry-forward-ukw-kma.md) / [T45](../../docs/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T45-board-timestamp-carry-forward-fr144.md) |
+| K-03 SemVer `+BUILD` | [BR-111](../../docs/kanban/fbu/BR-111-semver-public-surface-build-metadata-leak.md) / E03:S02:T16 |
+| K-04 CI parity / Docusaurus | [FR-141](../../docs/kanban/fbu/FR-141-adopter-documentation-profile-greenfield-default.md) / E02:S16:T05 |
 
 ---
 

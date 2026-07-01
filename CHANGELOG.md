@@ -11,8 +11,8 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
-## [0.2.16.6+24] - 01-07-26
+## [0.6.9.43+1] - 01-07-26
 
-E02:S16:T06 — **Change implemented:** Wave 16a TC41 closure manifest — **0** standard findings verified @ `main` `426752ee`. SemVer **v0.4.1241**.
+E06:S09:T43 — **Change implemented:** SBL attempt 12 FR-079 intake — install sign-off accepted; K-01–K-04 routed (FR-143/T44, FR-144/T45, BR-111, FR-141); [#88](https://github.com/RMS-Ltd/ai-dev-kit/issues/88) closed; SBL install programme maintenance-only. SemVer **v0.4.1242**.
 
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.16.6+24.md)
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.6.9.43+1.md)
