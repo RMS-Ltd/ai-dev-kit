@@ -1,0 +1,133 @@
+{
+  "profile": "arm-b",
+  "passed": true,
+  "strict_passed": true,
+  "rows": [
+    {
+      "id": "rc-rw-config",
+      "label": "rw-config.yaml present",
+      "blocking": true,
+      "passed": true,
+      "skipped": false,
+      "detail": "rw-config.yaml OK",
+      "skip_reason": ""
+    },
+    {
+      "id": "rc-sqlite-before-rw",
+      "label": "SQLite release state before first RW",
+      "blocking": true,
+      "passed": true,
+      "skipped": false,
+      "detail": "exists: .adk/release-state.db",
+      "skip_reason": ""
+    },
+    {
+      "id": "rc-docs-schema",
+      "label": "Documentation surfaces or schema doc linked",
+      "blocking": true,
+      "passed": true,
+      "skipped": false,
+      "detail": "adopter_public.sot=git (git-native; no portal required)",
+      "skip_reason": ""
+    },
+    {
+      "id": "rc-version-file",
+      "label": "version_file exists",
+      "blocking": true,
+      "passed": true,
+      "skipped": false,
+      "detail": "exists: src/starborn_legacy/version.py",
+      "skip_reason": ""
+    },
+    {
+      "id": "rc-changelog",
+      "label": "main_changelog exists",
+      "blocking": true,
+      "passed": true,
+      "skipped": false,
+      "detail": "exists: CHANGELOG.md",
+      "skip_reason": ""
+    },
+    {
+      "id": "rc-single-kanban-board",
+      "label": "Sole active kanban board (kboard.md)",
+      "blocking": true,
+      "passed": true,
+      "skipped": false,
+      "detail": "exists: docs/kanban/kboard.md",
+      "skip_reason": ""
+    },
+    {
+      "id": "rc-kanban-completed-db",
+      "label": "kanban-completed SQLite ledger when configured",
+      "blocking": true,
+      "passed": true,
+      "skipped": false,
+      "detail": "kanban_completed not configured \u2014 skipped",
+      "skip_reason": ""
+    },
+    {
+      "id": "rc-ukw-trigger",
+      "label": "UKW trigger present in .cursorrules when standard bundle",
+      "blocking": true,
+      "passed": true,
+      "skipped": true,
+      "detail": "",
+      "skip_reason": "when clause not applicable"
+    },
+    {
+      "id": "rc-ukw-delivery-trigger",
+      "label": "UKW trigger present when delivery bundle configured",
+      "blocking": true,
+      "passed": true,
+      "skipped": true,
+      "detail": "",
+      "skip_reason": "when clause not applicable"
+    },
+    {
+      "id": "rc-legacy-archived",
+      "label": "Legacy PM archived outside active kanban root",
+      "blocking": true,
+      "passed": true,
+      "skipped": false,
+      "detail": "found: docs-pre-ai-dev-kit",
+      "skip_reason": ""
+    },
+    {
+      "id": "rc-kanban-v4",
+      "label": "v4 template completeness (when kanban installed)",
+      "blocking": true,
+      "passed": true,
+      "skipped": false,
+      "detail": "exit 0",
+      "skip_reason": ""
+    },
+    {
+      "id": "rc-kma-migration-map",
+      "label": "KMA migration map valid when present",
+      "blocking": true,
+      "passed": true,
+      "skipped": true,
+      "detail": "",
+      "skip_reason": "when clause not applicable"
+    },
+    {
+      "id": "rc-zero-adhoc-kma",
+      "label": "No ad-hoc KMA scripts in scripts/ or tools/",
+      "blocking": true,
+      "passed": true,
+      "skipped": false,
+      "detail": "glob matches 0 <= 0",
+      "skip_reason": ""
+    },
+    {
+      "id": "rc-comprehension",
+      "label": "Comprehension test (restore \u2260 migrate)",
+      "blocking": true,
+      "passed": true,
+      "skipped": false,
+      "detail": "marker in COMPREHENSION.md",
+      "skip_reason": ""
+    }
+  ]
+}

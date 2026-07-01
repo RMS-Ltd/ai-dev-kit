@@ -1,0 +1,99 @@
+{
+  "schema_version": "1.0.0",
+  "feedback_contract_version": "1.1.0",
+  "generated_at_utc": "2026-07-01T16:30:00Z",
+  "install_run_id": "20260630-attempt-12",
+  "package_status": "draft",
+  "attempt": "12",
+  "programme_phase": "kma_guided_in_progress",
+  "source": {
+    "install_log_path": "logs/attempt-12",
+    "feedback_package_path": "logs/attempt-12/feedback-package",
+    "project_repo": "RMS-Ltd/starborn_legacy",
+    "branch": "dev",
+    "event_contract": "T111-install-log-event-contract",
+    "payload_population": "manual"
+  },
+  "context": {
+    "install_arm": "B-greenfield",
+    "adk_pin": "v0.4.1237",
+    "kanban_root_canonical": "docs/kanban",
+    "tsp_authority": "github.com/RMS-Ltd/starborn-legacy/issues/3",
+    "tsp_unique_tasks": 342,
+    "tsp_named_pct": 1.0,
+    "tsp_amendments": [
+      "docs/kanban/reference/E02-WORKFLOW-STORY-MAP.md"
+    ],
+    "workflow_registry_count": 13,
+    "e02_stories_issue3": 1,
+    "e02_stories_post_amendment": 16,
+    "install_rc_strict_pass": true,
+    "kma_mode": "guided",
+    "kma_step": "signoff_pending"
+  },
+  "feedback_items": [
+    {
+      "id": "K-01",
+      "severity": "major",
+      "category": "kma_tsp",
+      "title": "Issue #3 pass-3 TSP collapses E02 to RW-only; workflow-registry has 13 workflows",
+      "doc": "adk-install-into-sbl/attempt-12/feedback-package/FB-ADK-K01-issue3-e02-workflow-story-collapse.md",
+      "adopter_workaround": "docs/kanban/reference/E02-WORKFLOW-STORY-MAP.md",
+      "kit_asks": [
+        "TSP/sign-off pack includes E02 story per workflow-registry entry",
+        "Guided KMA preflight: registry_count vs e02_story_count",
+        "Document v4 S01/S02 placeholder vs full workflow story fan-out",
+        "Rubric: workflow story parity dimension"
+      ]
+    },
+    {
+      "id": "K-02",
+      "severity": "medium",
+      "category": "kma_kanban",
+      "title": "UKW bulk-stamped board Last modified dates; temporal ordering lost",
+      "doc": "adk-install-into-sbl/attempt-12/feedback-package/FB-ADK-K02-board-timestamp-loss.md",
+      "adopter_workaround": "tools/kanban/restore_board_timestamps.py + SEMANTIC-LINEAGE-BOOTSTRAP.yaml",
+      "kit_asks": [
+        "UKW Step 6: forbid session-date bulk stamp when legacy root exists",
+        "KMA Step 4: timestamp carry-forward gate",
+        "discover_board_gaps optional flat-date detection"
+      ]
+    },
+    {
+      "id": "K-03",
+      "severity": "medium",
+      "category": "versioning",
+      "title": "Task-touch SemVer +BUILD suffix duplicates internal vernum on public display",
+      "doc": "adk-install-into-sbl/attempt-12/feedback-package/FB-ADK-K03-semver-build-suffix-redundant.md",
+      "adopter_workaround": "ADR-SBL-001 + semver-registry reseed + rw-config comment",
+      "kit_asks": [
+        "Public task-touch SemVer = core only in agent guides",
+        "Greenfield install seed task_touch_counter from consumer tags",
+        "Registry export semver field = core not semver_full"
+      ]
+    },
+    {
+      "id": "K-04",
+      "severity": "high",
+      "category": "rw_ci",
+      "title": "validate_actions_ci_parity defaults run Docusaurus/portal monorepo checks on greenfield adopters",
+      "doc": "adk-install-into-sbl/attempt-12/feedback-package/FB-ADK-K04-actions-ci-parity-docusaurus-defaults.md",
+      "adopter_workaround": "rw-config.yaml actions_ci_parity Flutter checks; find_project_root in validator",
+      "kit_asks": [
+        "find_project_root in validate_actions_ci_parity (not parents[5])",
+        "Empty or stack-specific _DEFAULT_CHECKS; no Docusaurus unless sot docusaurus",
+        "Greenfield install seed actions_ci_parity per adopter profile",
+        "FR-141 alignment: Docusaurus opt-in only in default adopter paths"
+      ]
+    }
+  ],
+  "triage": {
+    "recommended_flow": "Route K-01 to kit KMA/TSP maintainers; K-04 to workflow-mgt/FR-141; attach E02-WORKFLOW-STORY-MAP and rw-config actions_ci_parity as adopter reference",
+    "prior_attempt": "11",
+    "prior_attempt_delta": {
+      "adk_pin": "v0.4.1171_to_v0.4.1237",
+      "tsp_tasks": "377_to_342",
+      "e02_regression": "pass3_purged_game_tokens_but_collapsed_workflow_stories_to_rw_only"
+    }
+  }
+}

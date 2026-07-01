@@ -37,5 +37,6 @@ Each attempt folder typically contains:
 | 09 | [attempt-09/README.md](attempt-09/README.md) | `v0.4.1164` @ `7a08a906` — Arm B; [#52](https://github.com/RMS-Ltd/ai-dev-kit/issues/52); PRIMARY synthesis mirrored |
 | 10 | [attempt-10/README.md](attempt-10/README.md) | `v0.4.1171` @ `448a79e1` — Arm B **PASS**; FR-079 **final**; T26 programme **Phase 1 closed** ([#52](https://github.com/RMS-Ltd/ai-dev-kit/issues/52)) |
 | 11 | [attempt-11/README.md](attempt-11/README.md) · [preflight](attempt-11-preflight-checklist.md) | `v0.4.1171` — guided KMA / TSP; [#85](https://github.com/RMS-Ltd/ai-dev-kit/issues/85) — Phase A done, Phase B pending; kit: [FR-135](../docs/kanban/fbu/FR-135-guided-install-orchestrator-zero-manual-steps.md) / [T38](../docs/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T38-guided-install-orchestrator-fr135.md) |
+| 12 | [attempt-12/README.md](attempt-12/README.md) | `v0.4.1237` — greenfield + guided KMA (issue #3 TSP); **draft** — K-01–K-04 feedback; KMA sign-off pending |
 
 **Programme status:** SBL install program ([E06:S09:T26](../docs/kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T26-starborn-legacy-adk-install-program.md)) **COMPLETE** @ **v0.6.9.26+4** — ten attempts; attempt 11 TSP tracked via #85. Maintainer **Phase 2** = Arm A recon (fynd.deals, Confidentia).
