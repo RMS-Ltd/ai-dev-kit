@@ -11,8 +11,8 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
-## [0.2.16.2+15] - 30-06-26
+## [0.2.16.6+21] - 01-07-26
 
-E02:S16:T02 — **Change implemented:** UKW kanban sync post E06:S09:T42 — E06:S09 tactical overview, T36 SHIPPED alignment, epic/board metadata. SemVer **v0.4.1237**.
+E02:S16:T06 — **Change implemented:** Wave 13a standard findings re-scan — **0** open M/R @ `main` `64d2b074`; TC39 closed. SemVer **v0.4.1238**.
 
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.16.2+15.md)
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.16.6+21.md)

@@ -1,0 +1,9 @@
+{
+  "contract": "FR-092",
+  "invocation_context": "rw_step_7",
+  "release_scope": "E2:S16:T6",
+  "internal_version": "0.2.16.6+21",
+  "timestamp_utc": "2026-07-01T13:15:00Z",
+  "touched_surfaces": ["task_doc", "fbu_doc", "kboard"],
+  "auxiliary_surfaces": ["story_doc", "epic_doc"]
+}

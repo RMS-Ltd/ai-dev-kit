@@ -342,6 +342,7 @@ Establish **E02:S16:T06** as the operational perpetual lane for GitHub **code sc
 - [x] Operator dashboard TC25 verify — **CLOSED superseded** (Wave 6a baseline documents **8 → 12** M regression @ `55f4310e`)
 - [x] Wave 6a manifest @ `main` `55f4310e` with **12** M + **2** R breakdown (TC30–TC31); shipped **v0.2.16.6+10**
 - [x] Wave 6b reliability-first + maintainability burn-down (TC32–TC35); shipped **v0.2.16.6+11**; operator TC36 verify **pending**
+- [x] Wave 13a manifest @ `main` `64d2b074` — **0** M + **0** R; TC39 **closed**; shipped **v0.2.16.6+21**
 
 ---
 
@@ -501,6 +502,15 @@ Establish **E02:S16:T06** as the operational perpetual lane for GitHub **code sc
 | 61 | Operator TC36 dashboard verify; post-remediation manifest in task doc |
 
 **RW rule:** **`RW E02:S16:T06 --art` only**; no `--doc-policy-zero` (BR-097).
+
+### Wave 13a — Post–Wave 11/12 standard findings verify (docs RW) — 2026-07-01
+
+| Step | Action |
+| ---- | ------ |
+| 62 | Confirm T06 **IN PROGRESS**; capture `main` @ `64d2b074` + UTC |
+| 63 | Record manifest: **0** maintainability + **0** reliability; close **TC39** (Wave 11 **3M+2R → 0** verified) |
+| 64 | `RW E02:S16:T06 --art` — BUILD +1 (docs-only manifest) |
+| 65 | Reconcile T06 **IN PROGRESS**; AC26 Wave 13a |
 
 ---
 

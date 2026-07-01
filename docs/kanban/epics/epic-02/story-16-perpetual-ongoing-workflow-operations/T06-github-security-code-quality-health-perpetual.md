@@ -14,8 +14,8 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** Medium (ongoing)  
 **Created:** 2026-06-05  
-**Last updated:** 2026-06-23 (Wave 12 Dependabot http-proxy-middleware @ v0.2.16.6+20)  
-**Version Anchor:** v0.2.16.6+20  
+**Last updated:** 2026-07-01 (Wave 13a standard findings re-scan + TC39 close @ v0.2.16.6+21)  
+**Version Anchor:** v0.2.16.6+21  
 **Code:** E02S16T06  
 **Task Type:** Perpetual Maintenance
 
@@ -621,7 +621,7 @@ Between 2026-06-16 09:54–15:03 UTC, **23** `ai-findings-autofix/*` PRs merged 
 | `validate_v4_template_completeness.py` | **OK** |
 | `sync_greenfield_install.py` | **1990** files |
 | `RW E02:S16:T06` | **v0.2.16.6+19** |
-| Operator dashboard (TC39) | **Pending** — confirm **3M+2R → 0** on [standard findings](https://github.com/RMS-Ltd/ai-dev-kit/security/quality) |
+| Operator dashboard (TC39) | **CLOSED** Wave 13a @ `64d2b074` — **0** open M/R on [standard findings](https://github.com/RMS-Ltd/ai-dev-kit/security/quality) |
 
 **MWF note:** `MWF E02:S16:T06 delivery` — IPP skipped (linked); IDW Wave 11 + RW chain.
 
@@ -644,6 +644,25 @@ Between 2026-06-16 09:54–15:03 UTC, **23** `ai-findings-autofix/*` PRs merged 
 | Operator Dependabot dashboard (TC40) | **Pending** post-merge |
 
 **Scope note:** Same override pattern as Wave 8 (`ws`, `js-yaml`). Dependabot enablement policy → **E08:S03:T06** (FR-105).
+
+---
+
+## Wave 13a re-scan manifest (2026-07-01)
+
+**Theme:** Post–Wave 11/12 operator verify — [Standard findings](https://github.com/RMS-Ltd/ai-dev-kit/security/quality) re-scan + **TC39** closure.
+
+**Capture:** `main` @ **`64d2b0742185e85e599bbf91f55cc9d40d19ec39`** (2026-07-01). Source: `gh api code-scanning/alerts?state=open` (**0** open); [Code Quality dashboard](https://github.com/RMS-Ltd/ai-dev-kit/security/quality) cross-ref.
+
+| Surface | Open count | Score | Delta vs Wave 11 ship (`v0.2.16.6+19`) |
+| ------- | ---------- | ----- | ---------------------------------------- |
+| [Code scanning](https://github.com/RMS-Ltd/ai-dev-kit/security/code-scanning) | **0** | 7 alerts **fixed** (historical) | unchanged |
+| Standard — maintainability | **0** | **Excellent** | **3 → 0** (Wave 11 verified) |
+| Standard — reliability | **0** | **Excellent** | **2 → 0** (Wave 11 verified) |
+| [AI findings](https://github.com/RMS-Ltd/ai-dev-kit/security/quality/ai-findings) | lag-accepted | — | Wave 10 moratorium unchanged |
+
+**TC39 closure:** Operator/dashboard verify **CLOSED** — Wave 11 **3M+2R → 0** confirmed @ `64d2b074`. No additional code remediation required in Wave 13a (docs-only manifest RW).
+
+**MWF note:** `MWF E02:S16:T06 delivery --art` — IPP skipped (linked); IDW Wave 13a manifest + RW chain.
 
 ---
 
@@ -687,8 +706,9 @@ Between 2026-06-16 09:54–15:03 UTC, **23** `ai-findings-autofix/*` PRs merged 
 - [x] **AC21 (Wave 8b):** Complete js-yaml **4.2.0** (gray-matter override + postinstall patch); `npm audit` 0 locally; shipped **v0.2.16.6+14**; operator TC38 verify **pending**.
 - [x] **AC22 (Wave 9):** AI autofix PR #70 CI repair — `conftest.py` path setup + `test_allocate` import restore; pytest green; shipped **v0.2.16.6+17**; PR #70 CI re-verify **pending**.
 - [x] **AC23 (Wave 10):** AI autofix moratorium documented; canonical hot files reconciled on `dev`; operator stops merging `ai-findings-autofix/*` to `main`; lag-accepted for stale AI panel rows; shipped **v0.2.16.6+18** via **`RW E02:S16:T06`**.
-- [ ] **AC24 (Wave 11):** Standard findings **3M+2R** burn-down shipped **v0.2.16.6+19**; operator TC39 dashboard verify **pending**.
+- [x] **AC24 (Wave 11):** Standard findings **3M+2R** burn-down shipped **v0.2.16.6+19**; operator TC39 dashboard verify **closed** Wave 13a @ `64d2b074` (**0** open M/R).
 - [x] **AC25 (Wave 12):** Dependabot **#10** `http-proxy-middleware@2.0.10` override; portal build + `npm audit` 0; shipped **v0.2.16.6+20**; operator TC40 Dependabot verify **pending**.
+- [x] **AC26 (Wave 13a):** Post–Wave 11/12 standard findings re-scan manifest @ `64d2b074`; TC39 closed; shipped **v0.2.16.6+21** (docs-only).
 
 ---
 
