@@ -1,16 +1,33 @@
 {
   "schema_version": "1.0.0",
   "feedback_contract_version": "1.1.0",
-  "generated_at_utc": "2026-07-01T16:30:00Z",
+  "generated_at_utc": "2026-07-01T18:00:00Z",
   "install_run_id": "20260630-attempt-12",
-  "package_status": "draft",
+  "package_status": "final",
+  "submitted_at_utc": "2026-07-01T18:00:00Z",
+  "final_signoff_at_utc": "2026-07-01T18:00:00Z",
   "attempt": "12",
-  "programme_phase": "kma_guided_in_progress",
+  "programme_phase": "install_accepted_kma_synthesise_deferred",
+  "prior_intake_issue": {
+    "repo": "RMS-Ltd/ai-dev-kit",
+    "number": 85,
+    "url": "https://github.com/RMS-Ltd/ai-dev-kit/issues/85",
+    "attempt": "11"
+  },
+  "branching": {
+    "execution_base": "pre-adk-install",
+    "execution_branch": "dev",
+    "execution_head_sha": "a489b619aa248116967a93ae92a1fc8099376fd5",
+    "install_completion_note": "Install RC strict PASS 2026-06-30; adopter sign-off 2026-07-01"
+  },
   "source": {
     "install_log_path": "logs/attempt-12",
-    "feedback_package_path": "logs/attempt-12/feedback-package",
+    "git_mirror_path": "adk-install-into-sbl/attempt-12",
+    "feedback_package_path": "adk-install-into-sbl/attempt-12/feedback-package",
+    "project_root": "starborn_legacy",
     "project_repo": "RMS-Ltd/starborn_legacy",
     "branch": "dev",
+    "head_sha": "a489b619aa248116967a93ae92a1fc8099376fd5",
     "event_contract": "T111-install-log-event-contract",
     "payload_population": "manual"
   },
@@ -29,7 +46,10 @@
     "e02_stories_post_amendment": 16,
     "install_rc_strict_pass": true,
     "kma_mode": "guided",
-    "kma_step": "signoff_pending"
+    "kma_step4_synthesise": "deferred_adopter_timeline",
+    "adopter_install_signoff": true,
+    "adopter_statement": "Not perfect; totally usable. Kit should shift focus to other repos.",
+    "ad_hoc_kma_scripts": 0
   },
   "feedback_items": [
     {
@@ -88,12 +108,14 @@
     }
   ],
   "triage": {
-    "recommended_flow": "Route K-01 to kit KMA/TSP maintainers; K-04 to workflow-mgt/FR-141; attach E02-WORKFLOW-STORY-MAP and rw-config actions_ci_parity as adopter reference",
+    "recommended_flow": "Accept attempt 12 install sign-off; triage K-01–K-04; shift SBL install programme focus to maintenance-only; prioritize other adopter repos",
     "prior_attempt": "11",
     "prior_attempt_delta": {
       "adk_pin": "v0.4.1171_to_v0.4.1237",
       "tsp_tasks": "377_to_342",
-      "e02_regression": "pass3_purged_game_tokens_but_collapsed_workflow_stories_to_rw_only"
-    }
+      "branch_lineage": "in_place_dev_to_fresh_dev_from_pre_adk_install",
+      "kma_at_signoff": "attempt_11_synthesise_complete_vs_attempt_12_install_only_acceptance"
+    },
+    "maintainer_focus_shift": true
   }
 }

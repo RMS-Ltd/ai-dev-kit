@@ -1,0 +1,21 @@
+{
+  "schema_version": "1.0.0",
+  "install_run_id": "20260630-attempt-12",
+  "signoff_type": "adopter_install_acceptance",
+  "signed_off_at_utc": "2026-07-01T18:00:00Z",
+  "operator_statement": "Attempt 12 ADK greenfield install accepted as the production workflow/kanban baseline for starborn_legacy. Known gaps remain (K-01–K-04); install is not perfect but totally usable. KMA domain synthesise (Step 4) continues on the adopter timeline. Kit install programme should shift focus to other repositories.",
+  "install_rc_strict_pass": true,
+  "adk_pin": "v0.4.1237",
+  "install_arm": "B-greenfield",
+  "kma_mode": "guided",
+  "kma_step4_synthesise": "deferred_adopter_timeline",
+  "feedback_package_status": "final",
+  "project_repo": "RMS-Ltd/starborn_legacy",
+  "branch": "dev",
+  "head_sha": "a489b619aa248116967a93ae92a1fc8099376fd5",
+  "prior_intake_issue": {
+    "attempt": "11",
+    "number": 85,
+    "url": "https://github.com/RMS-Ltd/ai-dev-kit/issues/85"
+  }
+}

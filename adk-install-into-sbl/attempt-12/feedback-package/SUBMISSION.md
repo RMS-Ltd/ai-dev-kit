@@ -5,21 +5,22 @@
 **TSP authority:** [starborn-legacy#3](https://github.com/RMS-Ltd/starborn-legacy/issues/3) (pass 3 · **342 tasks**)  
 **ADK pin:** `v0.4.1237`  
 **Arm:** **B** — greenfield shell + guided KMA  
-**Package status:** **`draft`** — KMA Step 3 sign-off pending · feedback items K-01–K-04 filed  
+**Package status:** **`final`** · **Adopter sign-off:** 2026-07-01  
 **Last sync:** 2026-07-01
 
 ---
 
-## Outcomes (to date)
+## Outcomes
 
 | Gate | Result |
 |------|--------|
 | Greenfield install RC strict | ✅ PASS (after adopter fixes — 21 install issues) |
 | KMA ingest + proposal | ✅ Complete |
-| TSP authority | ✅ Issue #3 adopted (replaces attempt-11 377-task tree) |
-| KMA Step 4 synthesise | ⏸ Blocked on operator sign-off |
-| Structural score (pre-synthesise) | **51.59%** — expected (E01–E08 only on disk) |
-| RW releases on `dev` | ✅ Through `v0.1.1.2+5` / `v0.9.609` |
+| TSP authority | ✅ Issue #3 adopted |
+| **Adopter install sign-off** | ✅ **Accepted** — production baseline; kit may shift focus |
+| KMA Step 4 synthesise | ⏸ Deferred — adopter timeline (not blocking install acceptance) |
+| RW on `dev` | ✅ Through `v0.1.1.2+5` / `v0.9.609` |
+| Ad-hoc KMA scripts | **0** |
 
 ---
 
@@ -34,33 +35,24 @@
 
 **Payload:** [feedback-payload.json](feedback-payload.json)  
 **Install RC:** [install-rc-report-final.json](install-rc-report-final.json)  
-**SBL programme report:** [KMA-ATTEMPT-12.md](https://github.com/RMS-Ltd/starborn-legacy/blob/dev/docs/kanban/KMA-ATTEMPT-12.md) (tracked on `dev`)
+**Sign-off:** [signoff-report.json](signoff-report.json)  
+**SBL programme:** [KMA-ATTEMPT-12.md](https://github.com/RMS-Ltd/starborn-legacy/blob/dev/docs/kanban/KMA-ATTEMPT-12.md)
 
 ---
 
-## Maintainer routing (draft)
+## Adopter sign-off (2026-07-01)
 
-| FB | Suggested kit lane |
-|----|-------------------|
-| K-01 | KMA / TSP / workflow-registry parity |
-| K-02 | UKW Step 6 + KMA Step 4 timestamp carry-forward |
-| K-03 | Versioning / task-touch public SemVer surface ([BR-111](https://github.com/RMS-Ltd/ai-dev-kit/blob/dev/docs/kanban/fbu/BR-111-semver-public-surface-build-metadata-leak.md) carry-forward) |
-| K-04 | `validate_actions_ci_parity` + [FR-141](https://github.com/RMS-Ltd/ai-dev-kit/blob/dev/docs/kanban/fbu/FR-141-adopter-documentation-profile-greenfield-default.md) — **no Docusaurus on git-native adopters** |
+Attempt 12 is **accepted** as the starborn_legacy ADK install baseline. Known kit gaps (K-01–K-04) are documented with adopter workarounds. Install is **not perfect but totally usable**.
 
-**Adopter reference implementations (SBL `dev`):**
-
-- `docs/kanban/reference/E02-WORKFLOW-STORY-MAP.md` (K-01)
-- `tools/kanban/restore_board_timestamps.py` (K-02)
-- `docs/kanban/reference/ADR-SBL-001-semver-lineage.md` (K-03)
-- `rw-config.yaml` → `actions_ci_parity` Flutter block (K-04)
+**Request to maintainers:** Close the SBL install feedback loop; **shift programme focus to other adopter repositories**. SBL will continue KMA domain synthesise and game delivery on its own timeline.
 
 ---
 
-## vs attempt 11
+## vs attempt 11 ([#85](https://github.com/RMS-Ltd/ai-dev-kit/issues/85))
 
 | Metric | 11 | 12 |
 |--------|----|----|
 | ADK pin | v0.4.1171 | **v0.4.1237** |
 | TSP tasks | 377 | **342** (issue #3 pass 3) |
-| KMA synthesise | Complete | **Pending sign-off** |
 | Branch lineage | In-place `dev` | Fresh `dev` from `pre-adk-install` |
+| KMA synthesise @ sign-off | Complete (93.99%) | **Deferred** (install-only acceptance) |

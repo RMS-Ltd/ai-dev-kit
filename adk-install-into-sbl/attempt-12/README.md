@@ -3,22 +3,23 @@
 **Session:** `20260630-attempt-12`  
 **ADK pin:** `v0.4.1237`  
 **Arm:** **B** — greenfield shell + **guided KMA** (issue #3 TSP)  
-**FR-079 status:** **draft** — KMA sign-off pending; feedback package K-01–K-04 filed
+**FR-079 status:** **final** — adopter install sign-off 2026-07-01; maintainer intake via GitHub Issue
 
-**SBL evidence:** `dev` · programme [KMA-ATTEMPT-12](https://github.com/RMS-Ltd/starborn-legacy/blob/dev/docs/kanban/KMA-ATTEMPT-12.md)
+**SBL evidence:** `dev` @ `a489b619` · programme [KMA-ATTEMPT-12](https://github.com/RMS-Ltd/starborn-legacy/blob/dev/docs/kanban/KMA-ATTEMPT-12.md)
 
 ---
 
-## Outcome (to date)
+## Outcome
 
 | Result | Detail |
 |--------|--------|
 | Greenfield install RC strict | **PASS** (post adopter recovery — 21 install issues) |
 | KMA ingest + proposal | Complete |
 | Canonical TSP | **Issue #3** — 342 tasks, 100% titled |
-| KMA Step 4 synthesise | **Not started** — operator sign-off blocking |
-| Structural score (baseline) | **51.59%** — expected pre-synthesise |
-| Feedback items | **K-01** – **K-04** |
+| **Adopter install sign-off** | **Accepted** 2026-07-01 |
+| KMA Step 4 synthesise | **Deferred** — adopter timeline |
+| Feedback items | **K-01** – **K-04** (`final`) |
+| Ad-hoc KMA scripts | **0** |
 
 ---
 
