@@ -5,8 +5,6 @@ from __future__ import annotations
 import sys
 from pathlib import Path
 
-import pytest
-
 REPO_ROOT = Path(__file__).resolve().parents[2]
 SCRIPTS = REPO_ROOT / "packages/frameworks/kanban/scripts"
 FIXTURE = REPO_ROOT / "tests/fixtures/kma-guided-tsp-minimal"

@@ -14,8 +14,8 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** Medium (ongoing)  
 **Created:** 2026-06-05  
-**Last updated:** 2026-07-01 (Wave 13a standard findings re-scan + TC39 close @ v0.2.16.6+21)  
-**Version Anchor:** v0.2.16.6+21  
+**Last updated:** 2026-07-01 (Wave 14b standard findings remediation @ v0.2.16.6+22)  
+**Version Anchor:** v0.2.16.6+22  
 **Code:** E02S16T06  
 **Task Type:** Perpetual Maintenance
 
@@ -660,9 +660,46 @@ Between 2026-06-16 09:54–15:03 UTC, **23** `ai-findings-autofix/*` PRs merged 
 | Standard — reliability | **0** | **Excellent** | **2 → 0** (Wave 11 verified) |
 | [AI findings](https://github.com/RMS-Ltd/ai-dev-kit/security/quality/ai-findings) | lag-accepted | — | Wave 10 moratorium unchanged |
 
-**TC39 closure:** Operator/dashboard verify **CLOSED** — Wave 11 **3M+2R → 0** confirmed @ `64d2b074`. No additional code remediation required in Wave 13a (docs-only manifest RW).
+**TC39 closure:** **SUPERSEDED** — Wave 13a used `code-scanning/alerts` (security lane only); [Code Quality findings API](https://docs.github.com/en/rest/code-quality/code-quality) still showed **21** open @ `main`. Wave 14b owns burn-down.
 
-**MWF note:** `MWF E02:S16:T06 delivery --art` — IPP skipped (linked); IDW Wave 13a manifest + RW chain.
+**MWF note:** `MWF E02:S16:T06 delivery --art` — IPP skipped (linked); IDW Wave 13a manifest + RW chain (docs-only; API mismatch).
+
+---
+
+## Wave 14a re-scan manifest (2026-07-01)
+
+**Capture:** `main` @ post–Wave 13a. Source: `GET /repos/.../code-quality/findings` (**21** open).
+
+| Rule | Open | Band |
+| ---- | ---- | ---- |
+| `py/unused-import` | **7** | Maintainability |
+| `py/unused-local-variable` | **4** | Maintainability |
+| `py/unused-global-variable` | **4** | Maintainability |
+| `py/regex/unmatchable-caret` | **2** | Reliability |
+| `py/unreachable-statement` | **2** | Reliability |
+| `py/multiple-definition` | **1** | Maintainability |
+| `py/side-effect-in-assert` | **1** | Reliability |
+
+### Wave 14b remediation (shipped @ v0.2.16.6+22)
+
+**Theme:** Burn down all **21** standard findings from Wave 14a rule table.
+
+| Chunk | Rule | Fix |
+| ----- | ---- | --- |
+| M1 | `py/unused-import` | Remove unused imports (`test_discover_board_gaps`, `install_profile`, `install_cursorrules_bundle`, `test_kma_collision_detect`) + greenfield mirror |
+| M2 | `py/unused-global-variable` | Remove unused `_STORY_FILE_RE`, `DEFAULT_FR_BR_SUBDIR` alias |
+| M3 | `py/unused-local-variable` | Drop dead assignments in `.t14-capture` matrix gens + `test_repository_ia_manifest` |
+| M4 | `py/multiple-definition` | Remove duplicate `ch_count` assignment in `_gen_sa3_matrix.py` |
+| R1 | `py/regex/unmatchable-caret` | Fix `LEGACY_INTAKE_LINK_RE` (`^` unreachable after `[^)]*`) |
+| R2 | `py/unreachable-statement` | Fix BR-110 `--doc-policy-zero` branch (use `version_file_est` vs `requested_est`) |
+| R3 | `py/side-effect-in-assert` | Extract `GitSubtreeBackend().remove()` before assert |
+
+| Verification | Result |
+| ------------ | ------ |
+| Targeted pytest | **20 passed** |
+| `sync_greenfield_install.py` | **2014** files |
+| `RW E02:S16:T06 --art` | **v0.2.16.6+22** |
+| Operator dashboard (TC41) | **Pending** post-merge on [standard findings](https://github.com/RMS-Ltd/ai-dev-kit/security/quality) |
 
 ---
 
@@ -708,7 +745,8 @@ Between 2026-06-16 09:54–15:03 UTC, **23** `ai-findings-autofix/*` PRs merged 
 - [x] **AC23 (Wave 10):** AI autofix moratorium documented; canonical hot files reconciled on `dev`; operator stops merging `ai-findings-autofix/*` to `main`; lag-accepted for stale AI panel rows; shipped **v0.2.16.6+18** via **`RW E02:S16:T06`**.
 - [x] **AC24 (Wave 11):** Standard findings **3M+2R** burn-down shipped **v0.2.16.6+19**; operator TC39 dashboard verify **closed** Wave 13a @ `64d2b074` (**0** open M/R).
 - [x] **AC25 (Wave 12):** Dependabot **#10** `http-proxy-middleware@2.0.10` override; portal build + `npm audit` 0; shipped **v0.2.16.6+20**; operator TC40 Dependabot verify **pending**.
-- [x] **AC26 (Wave 13a):** Post–Wave 11/12 standard findings re-scan manifest @ `64d2b074`; TC39 closed; shipped **v0.2.16.6+21** (docs-only).
+- [x] **AC26 (Wave 13a):** Post–Wave 11/12 manifest @ `64d2b074` — **SUPERSEDED** (wrong API); shipped **v0.2.16.6+21** (docs-only).
+- [ ] **AC27 (Wave 14b):** Standard findings **21** burn-down shipped **v0.2.16.6+22**; operator TC41 dashboard verify **pending**.
 
 ---
 

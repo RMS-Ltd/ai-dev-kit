@@ -87,7 +87,6 @@ def test_top_level_validator_fails_unknown_dir(top_level_mod, generator_mod, tmp
     manifest_path = tmp_path / "manifest.json"
     manifest_path.write_text(json.dumps(manifest), encoding="utf-8")
     (tmp_path / "unexpected-root-dir").mkdir()
-    rc = top_level_mod.main.__wrapped__ if hasattr(top_level_mod.main, "__wrapped__") else None
     # Invoke via subprocess-style argv
     import argparse
 

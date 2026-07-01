@@ -385,7 +385,6 @@ def classify(rel: str) -> tuple[str, str, str, str, str, str, str, str]:
     name = Path(rel).name
     parent = parent_of(rel)
     pc_def, verdict_def, wave_def = parent_meta(rel)
-    align = "Consistent"
 
     if parent == "scripts/notion_push_payloads" and name.endswith(".json"):
         return (

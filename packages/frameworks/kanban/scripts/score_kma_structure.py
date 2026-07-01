@@ -30,8 +30,8 @@ _TSP_TASK_ROW_RE = re.compile(
     r"(?:\s*[—\-]\s*\*([^*]+)\*)?",
     re.IGNORECASE,
 )
-# Story file basename: story-01-slug.md
-_STORY_FILE_RE = re.compile(r"^story-(\d{1,3})-.*\.md$", re.IGNORECASE)
+# Story file basename pattern (reserved for future story-file scoring)
+# Epic directory pattern
 _EPIC_DIR_RE = re.compile(r"^epic-(\d{1,3})$", re.IGNORECASE)
 _UNRESOLVED_TITLE_MARKERS = (
     "unresolved",

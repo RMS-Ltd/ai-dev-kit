@@ -4,7 +4,7 @@
 from __future__ import annotations
 
 from pathlib import Path
-from typing import Iterable, List
+from typing import List
 
 FRAMEWORK_ROOT = Path(__file__).resolve().parent.parent
 UKW_TEMPLATE = FRAMEWORK_ROOT / "cursorrules-ukw-trigger-section.md"

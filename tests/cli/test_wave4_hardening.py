@@ -255,7 +255,8 @@ def test_git_subtree_check_returns_none_on_failure(mock_run, tmp_path: Path):
 def test_git_subtree_remove_failure(_mock_rmtree, tmp_path: Path):
     path = tmp_path / "frameworks" / "kanban"
     path.mkdir(parents=True)
-    assert GitSubtreeBackend().remove("kanban", path, keep_files=False, prefix=str(path)) is False
+    removed = GitSubtreeBackend().remove("kanban", path, keep_files=False, prefix=str(path))
+    assert removed is False
 
 
 # --- package_manager.py ---

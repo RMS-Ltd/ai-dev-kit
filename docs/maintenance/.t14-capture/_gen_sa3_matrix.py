@@ -143,7 +143,6 @@ def parent_of(rel: str) -> str:
 
 def classify_maintenance(rel: str) -> tuple[str, str, str, str, str, str]:
     pc, pv, wave = PARENT_META["docs/maintenance"]
-    align = "Consistent"
     if rel in MAINTENANCE_OVERRIDES:
         purpose, verdict, evidence, ref, w = MAINTENANCE_OVERRIDES[rel]
         return pc, purpose, verdict, evidence, ref, w
@@ -194,7 +193,6 @@ def classify_maintenance(rel: str) -> tuple[str, str, str, str, str, str]:
 
 def classify_ipp_icw(rel: str) -> tuple[str, str, str, str, str, str]:
     pc, pv, wave = PARENT_META["docs/implementation-cycles"]
-    align = "Consistent"
     name = Path(rel).name
     if name == "README.md":
         return (
@@ -469,7 +467,6 @@ def main() -> None:
         rows.append(row(rel, parent_of(rel), pc, purpose, verdict, evidence, ref, "Consistent", wave))
 
     # --- Class summaries (RNF6) ---
-    ch_count = len(list((REPO / "docs/changelog-and-release-notes/changelog-archive").rglob("*")))
     ch_count = len([p for p in (REPO / "docs/changelog-and-release-notes/changelog-archive").rglob("*") if p.is_file()])
     rows.append(
         class_summary(

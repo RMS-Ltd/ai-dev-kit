@@ -11,8 +11,8 @@ housekeeping_policy: keep
 **Status:** IN PROGRESS
 **Priority:** HIGH  
 **Created:** 2026-04-20  
-**Last updated:** 2026-07-01 (v0.2.16.6+21 – Wave 13a standard findings re-scan)
-**Version:** v0.2.16.6+21
+**Last updated:** 2026-07-01 (v0.2.16.6+22 – Kanban documentation setup)
+**Version:** v0.2.16.6+22
 **Code:** E2S16
 
 ---
@@ -37,7 +37,7 @@ Active perpetual lanes: **T01** workflow umbrella · **T02** UKW/kanban hygiene 
 
 - [ ] **E02:S16:T05 – GitHub Actions CI health (Perpetual)** - 🔄 PERPETUAL — [Task](story-16-perpetual-ongoing-workflow-operations/T05-github-actions-ci-health-perpetual.md) | [FR-112](../../fbu/FR-112-perpetual-github-ci-and-security-health-lanes.md)
 
-- [ ] **E02:S16:T06 – GitHub Security & Code Quality health (Perpetual)** - 🔄 PERPETUAL (**v0.2.16.6+21** — Wave 13a standard findings re-scan; TC39 closed) — [Task](story-16-perpetual-ongoing-workflow-operations/T06-github-security-code-quality-health-perpetual.md) | [FR-112](../../fbu/FR-112-perpetual-github-ci-and-security-health-lanes.md)
+- [ ] **E02:S16:T06 – GitHub Security & Code Quality health (Perpetual)** - 🔄 PERPETUAL (**v0.2.16.6+22** — Wave 14b **21** finding burn-down) — [Task](story-16-perpetual-ongoing-workflow-operations/T06-github-security-code-quality-health-perpetual.md) | [FR-112](../../fbu/FR-112-perpetual-github-ci-and-security-health-lanes.md)
 
 - [x] **E02:S16:T07 – Ad-hoc Documentation Maintenance (Perpetual)** - ⏭️ SUPERSEDED (merged into **E02:S16:T03** per [FR-125](../../fbu/FR-125-consolidate-e02s16t03-t07-documentation-maintenance-lanes.md), 2026-06-10) — [redirect](story-16-perpetual-ongoing-workflow-operations/T07-ad-hoc-documentation-maintenance-perpetual.md) → [T03](story-16-perpetual-ongoing-workflow-operations/T03-ad-hoc-documentation-maintenance-perpetual.md) | prior finite UKW work → E04:S14:T06
 

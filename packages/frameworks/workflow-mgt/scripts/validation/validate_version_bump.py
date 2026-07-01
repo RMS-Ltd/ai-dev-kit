@@ -1362,16 +1362,13 @@ def validate_version_bump(
             version_components[2],
             version_components[3],
         )
+        version_file_est = (file_epic, file_story, file_task)
         art_cross_task = bool(
             art
             and requested_est is not None
-            and (file_epic, file_story, file_task) != requested_est
+            and version_file_est != requested_est
         )
-        if art_cross_task and current_build == 0 and (file_epic, file_story, file_task) == (
-            epic,
-            story,
-            current_task,
-        ):
+        if art_cross_task and current_build == 0:
             print(
                 "✅ --doc-policy-zero: BUILD +0 accepted for art-adopted doc-init (BR-110)."
             )

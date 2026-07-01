@@ -1,0 +1,8 @@
+{
+  "rows": {
+    "E02:S16:T06": {
+      "allowed": true,
+      "reason": "RW Step 7 v0.2.16.6+22 — Wave 14b standard findings remediation"
+    }
+  }
+}

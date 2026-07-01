@@ -11,8 +11,8 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
-## [0.2.16.6+21] - 01-07-26
+## [0.2.16.6+22] - 01-07-26
 
-E02:S16:T06 — **Change implemented:** Wave 13a standard findings re-scan — **0** open M/R @ `main` `64d2b074`; TC39 closed. SemVer **v0.4.1238**.
+E02:S16:T06 — **Change implemented:** Wave 14b standard findings burn-down — **21** Code Quality findings fixed (unused import/global/local, regex, unreachable branch, assert side-effect). SemVer **v0.4.1239**.
 
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.16.6+21.md)
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.16.6+22.md)

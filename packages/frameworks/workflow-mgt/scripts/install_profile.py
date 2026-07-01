@@ -7,7 +7,6 @@ Loads install-profile.yaml (schema_version 1.x) or legacy rw-install input YAML.
 
 from __future__ import annotations
 
-import sys
 from dataclasses import asdict, dataclass, field
 from pathlib import Path
 from typing import Any, Dict, List, Optional, Tuple

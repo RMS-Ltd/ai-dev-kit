@@ -91,9 +91,6 @@ __all__ = [
 DEFAULT_FBU_SUBDIR = "fbu"
 LEGACY_FR_BR_SUBDIR = "fr-br"
 
-# Deprecated alias for transition callers
-DEFAULT_FR_BR_SUBDIR = LEGACY_FR_BR_SUBDIR
-
 
 def _normalize_kanban_root(kanban_root: str) -> str:
     return kanban_root.replace("\\", "/").strip("/")

@@ -29,7 +29,7 @@ except ImportError:
     load_rw_config = None  # type: ignore
 
 LEGACY_INTAKE_LINK_RE = re.compile(
-    r"\]\([^)]*(?:^|/)fr-br/(?:FR|BR|UXR)-|docs/kanban/fr-br/(?:FR|BR|UXR)-"
+    r"\]\([^)]*/fr-br/(?:FR|BR|UXR)-|docs/kanban/fr-br/(?:FR|BR|UXR)-"
 )
 LEGACY_CONFIG_KEY_RE = re.compile(r"^fr_br_root:\s", re.MULTILINE)
 SKIP_PARTS = frozenset(
