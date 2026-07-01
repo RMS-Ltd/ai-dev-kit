@@ -12,7 +12,7 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** [TBD]  
 **Created:** 2025-12-05  
-**Last updated:** 2026-07-01 (v0.6.9.44+1 – Kanban documentation setup)
+**Last updated:** 2026-07-01 (v0.6.9.45+1 – Kanban documentation setup)
 **Branch:** `epic/6-framework-management`  
 **Version Schema:** `0.6.S.T+B`  
 **Production URL:** [N/A for this repo]
@@ -148,7 +148,7 @@ Epic 6 owns the **Framework Management and Maintenance** processes for the ai-de
 **Status:** IN PROGRESS  
 **Priority:** HIGH  
 **Estimated Effort:** [TBD]  
-**Last updated:** 2026-07-01 (v0.6.9.44+1 – Kanban documentation setup)
+**Last updated:** 2026-07-01 (v0.6.9.45+1 – Kanban documentation setup)
 
 **Goal:**  
 Establish version management processes for framework packages.
@@ -169,7 +169,7 @@ Establish version management processes for framework packages.
 **Status:** TODO  
 **Priority:** HIGH  
 **Estimated Effort:** [TBD]  
-**Last updated:** 2026-07-01 (v0.6.9.44+1 – Kanban documentation setup)
+**Last updated:** 2026-07-01 (v0.6.9.45+1 – Kanban documentation setup)
 
 **Goal:**  
 Implement processes for updating and migrating framework packages.
@@ -190,7 +190,7 @@ Implement processes for updating and migrating framework packages.
 **Status:** COMPLETE  
 **Priority:** MEDIUM  
 **Estimated Effort:** [TBD]  
-**Last updated:** 2026-07-01 (v0.6.9.44+1 – Kanban documentation setup)
+**Last updated:** 2026-07-01 (v0.6.9.45+1 – Kanban documentation setup)
 
 **Goal:**  
 Build monitoring and health tracking for framework packages.

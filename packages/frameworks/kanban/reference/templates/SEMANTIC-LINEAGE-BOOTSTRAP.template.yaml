@@ -1,0 +1,11 @@
+# Semantic lineage bootstrap map — adopter template (FR-144 / FR-144-NF2)
+version: 1
+project: adopter
+description: >
+  Maps v4 greenfield bootstrap E:S:T tokens to legacy predecessor tokens when
+  ID namespaces differ (e.g. legacy E15 perpetual lane → v4 E01:S01).
+
+# bootstrap E:S:T → legacy E:S:T
+mappings:
+  E02:S02:T01: E15:S13:T01
+  E02:S01:T06: E02:S01:T06

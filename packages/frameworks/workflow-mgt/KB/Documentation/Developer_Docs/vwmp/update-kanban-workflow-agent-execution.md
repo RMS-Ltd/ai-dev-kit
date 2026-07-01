@@ -616,6 +616,12 @@ After completing UKW, users typically run RW to commit the kanban documentation 
    - **Prune rule:** remove active rows whose linked source status is terminal (`COMPLETE`, `COMPLETED`, `IMPLEMENTED`, `FIXED`, `RESOLVED`).
    - **Exception rule:** keep row active if status explicitly indicates unresolved verification context (e.g., includes `IN PROGRESS`, `UNVERIFIED`, `PENDING VERIFICATION`).
    - **Board Stamp Authority (FR-097):** preserve existing row `| Last modified: … UTC` on hygiene (STRUCTURE-only). Align board `Last Updated` metadata only. Snapshot at UKW start; run `validate_board_stamp_diff.py` before stage — abort on un evidenced stamp deltas.
+   - **Timestamp carry-forward (FR-144 / E06:S09:T45):** When a legacy kanban root or non-empty `timestamp-index.json` exists, **forbid** bulk-assigning session UTC to every new/changed row. Before Step 6 MoSCOW writes:
+     ```bash
+     python3 packages/frameworks/workflow-mgt/scripts/kanban/restore_board_timestamps.py report --board docs/kanban/kboard.md
+     python3 packages/frameworks/workflow-mgt/scripts/kanban/restore_board_timestamps.py apply-board --board docs/kanban/kboard.md --index path/to/timestamp-index.json --dry-run
+     ```
+     Use `backfill_board_row_stamps.py` only with evidence manifest when homogeneity clusters remain. Run `validate_flat_date_board.py --strict` when legacy index is available.
    - **MoSCOW state icons (UXR-012):** preserve icons on hygiene-only passes; add or change icons only when the row’s **status token** changes. Corpus enforcement: `validate_kanban_state_icons.py` (Release Readiness Gate 9). See [`state-icons.md`](state-icons.md).
    - **MoSCOW spacing (UXR-005 / E07:S01:T09):** after MoSCOW row edits, run `validate_kanban_moscow_spacing.py --strict` (non-blocking); use `--fix` to insert blank lines between adjacent multi-line bullets. Escalate template policy drift to **E07:S01:T09**.
 

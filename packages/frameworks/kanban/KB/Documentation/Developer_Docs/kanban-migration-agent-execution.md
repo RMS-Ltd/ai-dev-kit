@@ -114,10 +114,18 @@ Load [TSP reference pack](../../../reference/README.md) when running guided or s
 After sign-off only:
 
 1. Write target tree under `kanban_root` per approved proposal.
-2. Synthesise epic docs (tactical/strategic overviews — not verbatim copy).
-3. Rename stories to v3.2 paths (`epic-{nn}/story-{nn}-*.md`).
-4. Update cross-references and board skeleton as specified in proposal.
-5. Legacy root remains untouched.
+2. **Timestamp carry-forward gate (FR-144):** Before `kboard.md` rebuild, build or load `timestamp-index.json` and run restoration report/apply:
+   ```bash
+   python3 packages/frameworks/kanban/scripts/kma_ingest.py \
+     --legacy-root path/to/legacy --timestamp-index-out logs/timestamp-index.json
+   python3 packages/frameworks/workflow-mgt/scripts/kanban/restore_board_timestamps.py \
+     apply-board --board docs/kanban/kboard.md --index logs/timestamp-index.json --dry-run
+   ```
+   Optional: `SEMANTIC-LINEAGE-BOOTSTRAP.yaml` per [template](../../../reference/templates/SEMANTIC-LINEAGE-BOOTSTRAP.template.yaml).
+3. Synthesise epic docs (tactical/strategic overviews — not verbatim copy).
+4. Rename stories to v3.2 paths (`epic-{nn}/story-{nn}-*.md`).
+5. Update cross-references and board skeleton as specified in proposal.
+6. Legacy root remains untouched.
 
 ### Step 5 — Validate
 

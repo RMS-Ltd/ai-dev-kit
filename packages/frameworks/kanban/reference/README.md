@@ -38,6 +38,7 @@ Guided mode **fails fast** when `target_est_tree` is missing or unreadable.
 | `TARGET-FOLDER-MAP.yaml` | Epic folder layout (M05) | [TARGET-FOLDER-MAP.template.yaml](templates/TARGET-FOLDER-MAP.template.yaml) |
 | `SCORING-RUBRIC.yaml` | Structural scorer weights (M08) | [SCORING-RUBRIC.template.yaml](templates/SCORING-RUBRIC.template.yaml) |
 | `E02-WORKFLOW-STORY-MAP.md` | Registry workflow → E02 story shells (FR-143) | [E02-WORKFLOW-STORY-MAP.template.md](templates/E02-WORKFLOW-STORY-MAP.template.md) |
+| `SEMANTIC-LINEAGE-BOOTSTRAP.yaml` | Bootstrap → legacy E:S:T map (FR-144) | [SEMANTIC-LINEAGE-BOOTSTRAP.template.yaml](templates/SEMANTIC-LINEAGE-BOOTSTRAP.template.yaml) |
 
 **Amendment hook (FR-143):** When operators extend an issue-body TSP locally, add `amended: E02-WORKFLOW-STORY-MAP.md` to the TSP header and ship the story map alongside `TARGET-EST-TREE.md`.
 

@@ -151,9 +151,31 @@ def main() -> int:
         action="store_true",
         help="Dedupe inline E:S:T tokens; report unique count and aliases",
     )
+    parser.add_argument(
+        "--timestamp-index-out",
+        type=Path,
+        default=None,
+        help="Also emit timestamp-index.json (FR-144) alongside ingest",
+    )
+    parser.add_argument(
+        "--lineage",
+        type=Path,
+        default=None,
+        help="Optional SEMANTIC-LINEAGE-BOOTSTRAP.yaml for timestamp index",
+    )
     args = parser.parse_args()
 
     report = ingest_legacy_corpus(args.legacy_root, dedup=args.dedup)
+
+    if args.timestamp_index_out:
+        wf_kanban = Path(__file__).resolve().parents[2] / "workflow-mgt" / "scripts" / "kanban"
+        if str(wf_kanban) not in sys.path:
+            sys.path.insert(0, str(wf_kanban))
+        from timestamp_index import build_timestamp_index, write_timestamp_index  # noqa: E402
+
+        idx = build_timestamp_index(args.legacy_root, lineage_path=args.lineage)
+        write_timestamp_index(idx, args.timestamp_index_out)
+
     if args.json:
         print(json.dumps(report.to_dict(), indent=2))
     else:

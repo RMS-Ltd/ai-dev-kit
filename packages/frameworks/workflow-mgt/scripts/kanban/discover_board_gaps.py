@@ -72,9 +72,17 @@ class FbuGap:
 
 
 @dataclass
+class StampHomogeneityAdvisory:
+    stamp: str
+    row_ids: List[str]
+    count: int
+
+
+@dataclass
 class GapReport:
     tasks_missing_from_board: List[TaskGap] = field(default_factory=list)
     open_fbu_without_task: List[FbuGap] = field(default_factory=list)
+    stamp_homogeneity_advisory: List[StampHomogeneityAdvisory] = field(default_factory=list)
     board_task_count: int = 0
     active_task_doc_count: int = 0
     fbu_open_scanned: int = 0
@@ -86,9 +94,11 @@ class GapReport:
             "fbu_open_scanned": self.fbu_open_scanned,
             "tasks_missing_from_board": [asdict(t) for t in self.tasks_missing_from_board],
             "open_fbu_without_task": [asdict(f) for f in self.open_fbu_without_task],
+            "stamp_homogeneity_advisory": [asdict(s) for s in self.stamp_homogeneity_advisory],
             "summary": {
                 "missing_tasks": len(self.tasks_missing_from_board),
                 "taskless_fbu": len(self.open_fbu_without_task),
+                "homogeneity_clusters": len(self.stamp_homogeneity_advisory),
             },
         }
 
@@ -212,6 +222,27 @@ def linked_task_from_fbu(content: str, kanban: Path) -> Optional[str]:
     return extract_task_id(task_path, task_content)
 
 
+def scan_stamp_homogeneity(
+    board_content: str,
+    project_root: Path,
+    config: Optional[dict],
+) -> List[StampHomogeneityAdvisory]:
+    """Part (c) — advisory when many rows share one Last modified stamp (FR-144)."""
+    kanban_scripts = Path(__file__).resolve().parent
+    if str(kanban_scripts) not in sys.path:
+        sys.path.insert(0, str(kanban_scripts))
+    from stamp_authority import homogeneity_clusters, homogeneity_threshold_from_config  # noqa: E402
+
+    threshold = homogeneity_threshold_from_config(project_root, config)
+    clusters = homogeneity_clusters(board_content, threshold=threshold)
+    advisories: List[StampHomogeneityAdvisory] = []
+    for stamp, row_ids in sorted(clusters.items()):
+        advisories.append(
+            StampHomogeneityAdvisory(stamp=stamp, row_ids=row_ids, count=len(row_ids))
+        )
+    return advisories
+
+
 def scan_gaps(project_root: Path) -> GapReport:
     config = load_rw_config(project_root)
     kroot = kanban_root(project_root, config)
@@ -225,6 +256,9 @@ def scan_gaps(project_root: Path) -> GapReport:
     on_board = board_task_ids(board_content)
 
     report = GapReport(board_task_count=len(on_board))
+    report.stamp_homogeneity_advisory = scan_stamp_homogeneity(
+        board_content, project_root, config
+    )
 
     for path, content in iter_task_docs(epics_root):
         status = task_doc_status(content)
@@ -293,6 +327,7 @@ def format_markdown_table(report: GapReport) -> str:
         f"- Open FBU scanned: **{report.fbu_open_scanned}**",
         f"- Tasks missing from board: **{len(report.tasks_missing_from_board)}**",
         f"- Open FBU without linked task: **{len(report.open_fbu_without_task)}**",
+        f"- Stamp homogeneity clusters (≥threshold): **{len(report.stamp_homogeneity_advisory)}**",
         "",
         "## Part (a) — tasks not on kboard",
         "",
@@ -323,7 +358,25 @@ def format_markdown_table(report: GapReport) -> str:
         if len(report.open_fbu_without_task) > 50:
             lines.append(f"| … | … | … | +{len(report.open_fbu_without_task) - 50} more |")
     else:
-        lines.append("| — | — | — | none |")
+        lines.append("| — | — | none |")
+
+    lines.extend(
+        [
+            "",
+            "## Part (c) — stamp homogeneity advisory (FR-144)",
+            "",
+            "| Stamp | Rows | Row IDs |",
+            "| ----- | ---- | ------- |",
+        ]
+    )
+    if report.stamp_homogeneity_advisory:
+        for s in report.stamp_homogeneity_advisory[:20]:
+            ids = ", ".join(s.row_ids[:5])
+            if len(s.row_ids) > 5:
+                ids += f" (+{len(s.row_ids) - 5})"
+            lines.append(f"| {s.stamp} | {s.count} | {ids} |")
+    else:
+        lines.append("| — | — | none |")
     return "\n".join(lines) + "\n"
 
 
