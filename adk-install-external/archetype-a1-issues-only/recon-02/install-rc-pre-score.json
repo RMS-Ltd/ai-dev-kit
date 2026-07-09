@@ -1,0 +1,15 @@
+{
+  "schema_version": "1.0.0",
+  "archetype_id": "A1",
+  "subject_label": "subject-A1-live",
+  "recon_date": "2026-07-01",
+  "method": "live_clone",
+  "licence": "MIT",
+  "adoption_path_hypothesis": "path-1",
+  "blocking_fail_predicted": 9,
+  "advisory_fail_predicted": 5,
+  "novel_gap_hypothesis": "path-selector-misfire-readme-pm",
+  "full_install_recommended": true,
+  "full_install_gate": "G1-UXR-029-phase-4",
+  "notes": "Live MIT OSS: README-as-PM, GitHub issues workflow, no docs/kanban. Confirms synthetic A1 hypothesis; adds CI + issue templates. Clone local-only per RECON-PROTOCOL."
+}

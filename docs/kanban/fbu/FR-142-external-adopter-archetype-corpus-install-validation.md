@@ -14,9 +14,11 @@ housekeeping_policy: keep
 **Submitted By:** Maintainer (operator strategy — post-SBL install programme)  
 **Priority:** MEDIUM (Should Have — MoSCOW **S**)  
 **Status:** OPEN  
-**Version anchor:** v0.6.9.41+4 (operator deferral sign-off)
+**Version anchor:** v0.6.9.41+5 (Wave 2 live recon)
 
 **Wave 1 evidence:** v0.6.9.41+1 — diversity matrix, `adk-install-external/`, synthetic recon A1/A2/A5, CI fixtures (IDW)
+
+**Wave 2 evidence:** v0.6.9.41+5 — live-subject recon-02 for A1/A2/A5 (post-T43 SBL sign-off); full install still deferred on G1
 
 **Implementing Task:** [E06:S09:T41](../epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T41-external-adopter-archetype-corpus-fr142.md)
 
@@ -84,7 +86,7 @@ Expenses Tracker already proved that **one external shape** finds bugs operator 
 ## Acceptance criteria
 
 - [x] **AC1:** Diversity matrix + Phase 5 sequencing documented in maintainer KB and linked from [adopter-install-attempt-preflight](../../guides/adopter-install-attempt-preflight.md).
-- [x] **AC2:** At least **3** archetypes recon-scored against Install RC; recon reports in maintainer index. *(synthetic fixture recon; live subject upgrade pending)*
+- [x] **AC2:** At least **3** archetypes recon-scored against Install RC; recon reports in maintainer index. *(synthetic recon-01 + live recon-02 @ v0.6.9.41+5)*
 - [ ] **AC3:** At least **1** full install attempt on an archetype where recon predicted a novel gap; outcome filed (FR-079-style package or maintainer synthesis). *(**DEFERRED** until G1 — operator sign-off 2026-06-25; not waived)*
 - [x] **AC4:** At least **1** anonymized fixture tree committed (or staged behind IPW) with pytest or Install RC hook referencing it.
 - [x] **AC5:** UXR-029 updated with Phase 5 pointer and synthesis note on operator-repo vs external-archetype coverage.

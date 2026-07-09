@@ -1,0 +1,15 @@
+{
+  "schema_version": "1.0.0",
+  "archetype_id": "A2",
+  "subject_label": "subject-A2-live",
+  "recon_date": "2026-07-01",
+  "method": "live_clone",
+  "licence": "MIT",
+  "adoption_path_hypothesis": "arm-a",
+  "blocking_fail_predicted": 8,
+  "advisory_fail_predicted": 6,
+  "novel_gap_hypothesis": "structure-detection-vitepress-sprawl",
+  "full_install_recommended": true,
+  "full_install_gate": "G1-UXR-029-phase-4",
+  "notes": "Live MIT library: VitePress docs/ site, 14 root governance markdown files, examples/. No kanban. Stresses structure detection beyond synthetic docs+doc+PROJECT fixture."
+}

@@ -29,11 +29,11 @@ Typed repository patterns for Phase 5 install validation — **not** random GitH
 
 | ID | Name | Primary stress | v1 status |
 | -- | ---- | -------------- | --------- |
-| **A1** | Issues-only OSS | No `docs/kanban`; path selector + greenfield default misfire | Recon + fixture |
-| **A2** | Docs sprawl brownfield | Multiple PM surfaces, inconsistent naming (BR-108 class) | Recon + fixture |
-| **A3** | Monorepo / ambiguous root | `rw-config`, `version.py` placement | Deferred (Wave 2) |
-| **A4** | Stale brownfield | Old tags, minimal docs, structure detection | Deferred (Wave 2) |
-| **A5** | Minimal non-empty | README + LICENSE only — FR-080 control vs operator repos | Recon + fixture |
+| **A1** | Issues-only OSS | No `docs/kanban`; path selector + greenfield default misfire | Synthetic + **live recon-02** + fixture |
+| **A2** | Docs sprawl brownfield | Multiple PM surfaces, inconsistent naming (BR-108 class) | Synthetic + **live recon-02** + fixture |
+| **A3** | Monorepo / ambiguous root | `rw-config`, `version.py` placement | Deferred (Wave 2 expansion) |
+| **A4** | Stale brownfield | Old tags, minimal docs, structure detection | Deferred (Wave 2 expansion) |
+| **A5** | Minimal non-empty | README + LICENSE only — FR-080 control vs operator repos | Synthetic + **live recon-02** + fixture |
 
 **v1 selection rationale (IPP):** A1, A2, A5 maximize diversity per unit effort; A3/A4 deferred until Phase 4 synthesis shows monorepo/stale gaps uncovered.
 
@@ -81,9 +81,9 @@ Full external **installs** gated on **G1** (UXR-029 Phase 4) unless operator wai
 
 | Archetype | Path | Recon |
 | --------- | ---- | ----- |
-| A1 | `tests/fixtures/adopter-corpora/archetype-a1-issues-only/` | [recon-01](../../../adk-install-external/archetype-a1-issues-only/recon-01/README.md) |
-| A2 | `tests/fixtures/adopter-corpora/archetype-a2-docs-sprawl/` | [recon-01](../../../adk-install-external/archetype-a2-docs-sprawl/recon-01/README.md) |
-| A5 | `tests/fixtures/adopter-corpora/archetype-a5-minimal-nonempty/` | [recon-01](../../../adk-install-external/archetype-a5-minimal-nonempty/recon-01/README.md) |
+| A1 | `tests/fixtures/adopter-corpora/archetype-a1-issues-only/` | [recon-01](../../../adk-install-external/archetype-a1-issues-only/recon-01/README.md) · [recon-02 live](../../../adk-install-external/archetype-a1-issues-only/recon-02/README.md) |
+| A2 | `tests/fixtures/adopter-corpora/archetype-a2-docs-sprawl/` | [recon-01](../../../adk-install-external/archetype-a2-docs-sprawl/recon-01/README.md) · [recon-02 live](../../../adk-install-external/archetype-a2-docs-sprawl/recon-02/README.md) |
+| A5 | `tests/fixtures/adopter-corpora/archetype-a5-minimal-nonempty/` | [recon-01](../../../adk-install-external/archetype-a5-minimal-nonempty/recon-01/README.md) · [recon-02 live](../../../adk-install-external/archetype-a5-minimal-nonempty/recon-02/README.md) |
 
 ---
 

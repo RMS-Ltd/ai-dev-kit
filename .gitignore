@@ -33,6 +33,9 @@ ecc-adk-bridge.yaml
 .coverage
 SCRATCHPAD.md
 
+# E06:S09:T41 — external archetype live recon clones (local-only; URLs not committed)
+temp/external-recon/
+
 # FR-044 — RW temporary execution log (local forensic artifact)
 .rw-execution.log
 # RW Step 7 stamp/snapshot scratch (canonical: changelog-archive/four-surface-reports/)

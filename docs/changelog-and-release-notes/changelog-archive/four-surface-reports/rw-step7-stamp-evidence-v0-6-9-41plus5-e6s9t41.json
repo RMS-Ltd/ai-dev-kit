@@ -1,0 +1,8 @@
+{
+  "rows": {
+    "E06:S09:T41": {
+      "allowed": true,
+      "reason": "RW Step 7 v0.6.9.41+5 — Wave 2 live recon release; row version marker + deferred-until-G1 wording"
+    }
+  }
+}

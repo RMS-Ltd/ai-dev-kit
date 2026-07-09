@@ -42,9 +42,9 @@ adk-install-external/
 
 | Archetype | Recon | Full install | Fixture |
 | --------- | ----- | ------------ | ------- |
-| **A1** issues-only | [recon-01](archetype-a1-issues-only/recon-01/README.md) | BLOCKED (G1) | [fixture](https://github.com/RMS-Ltd/ai-dev-kit/tree/main/tests/fixtures/adopter-corpora/archetype-a1-issues-only) |
-| **A2** docs sprawl | [recon-01](archetype-a2-docs-sprawl/recon-01/README.md) | BLOCKED (G1) | [fixture](https://github.com/RMS-Ltd/ai-dev-kit/tree/main/tests/fixtures/adopter-corpora/archetype-a2-docs-sprawl) |
-| **A5** minimal non-empty | [recon-01](archetype-a5-minimal-nonempty/recon-01/README.md) | BLOCKED (G1) | [fixture](https://github.com/RMS-Ltd/ai-dev-kit/tree/main/tests/fixtures/adopter-corpora/archetype-a5-minimal-nonempty) |
+| **A1** issues-only | [recon-01](archetype-a1-issues-only/recon-01/README.md) synthetic · [recon-02](archetype-a1-issues-only/recon-02/README.md) **live** | BLOCKED (G1) | [fixture](https://github.com/RMS-Ltd/ai-dev-kit/tree/main/tests/fixtures/adopter-corpora/archetype-a1-issues-only) |
+| **A2** docs sprawl | [recon-01](archetype-a2-docs-sprawl/recon-01/README.md) synthetic · [recon-02](archetype-a2-docs-sprawl/recon-02/README.md) **live** | BLOCKED (G1) | [fixture](https://github.com/RMS-Ltd/ai-dev-kit/tree/main/tests/fixtures/adopter-corpora/archetype-a2-docs-sprawl) |
+| **A5** minimal non-empty | [recon-01](archetype-a5-minimal-nonempty/recon-01/README.md) synthetic · [recon-02](archetype-a5-minimal-nonempty/recon-02/README.md) **live** | BLOCKED (G1) | [fixture](https://github.com/RMS-Ltd/ai-dev-kit/tree/main/tests/fixtures/adopter-corpora/archetype-a5-minimal-nonempty) |
 
 **Template:** [archetype-a1-issues-only/recon-template/README.md](archetype-a1-issues-only/recon-template/README.md)
 

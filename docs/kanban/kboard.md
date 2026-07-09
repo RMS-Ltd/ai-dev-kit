@@ -13,7 +13,7 @@ housekeeping_policy: keep
 
 **Active board contract:** **Sole active MoSCOW board** ([ADR-018](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/architecture/standards-and-adrs/ADR-018-single-kanban-board-consolidation.md)). Rows are **live work** (TODO / IN PROGRESS / OPEN / WAITING / PERPETUAL) plus filed **Could Have** backlog. **Verification (V)** band holds task-shipped / FBU-open items (`⏳ WAITING`). Remove **terminal** rows and archive prose (use [`kanban-completed.md`](kanban-completed.md) / [`intake-completed.md`](intake-completed.md)).
 
-**Note:** Epics 1, 7, 11 are COMPLETE. Epics 2, 3, 4, 5, 6, 8, **10** are IN PROGRESS. Epic 5 **S08/S09 COMPLETE** (FR-114/FR-121). Epic 21 IN PROGRESS — shipped tasks archived @ UKW -c 2026-06-16 (34 E21 + cross-epic V-band); active board: S04–S07 locale backlog + S08 L2–5 deferred. **E06:S09** — T42–T45 verified @ UKW -c 2026-07-01; T41 Wave 3 deferred until G1; V-band: **T36 only** (UXR-029 Phase 4 / G1 open).
+**Note:** Epics 1, 7, 11 are COMPLETE. Epics 2, 3, 4, 5, 6, 8, **10** are IN PROGRESS. Epic 5 **S08/S09 COMPLETE** (FR-114/FR-121). Epic 21 IN PROGRESS — shipped tasks archived @ UKW -c 2026-06-16 (34 E21 + cross-epic V-band); active board: S04–S07 locale backlog + S08 L2–5 deferred. **E06:S09** — T41 Wave 2 live recon @ **v0.6.9.41+5**; Wave 3 deferred until G1; V-band: **T36 only** (UXR-029 Phase 4 / G1 open).
 
 **Wiring:** Every wired row includes FBU link(s) where applicable (UXR-010). Legacy `fbuboard.md` / `kanban-board.md` aliases **removed** (intake rename wave).
 
@@ -28,7 +28,9 @@ housekeeping_policy: keep
 
 ### Should Have (S) - Important Tasks
 
-- **E06:S09:T41** – External adopter archetype corpus (FR-142) - 🔄 IN PROGRESS (MEDIUM — Wave 1 @ **v0.6.9.41+4**; Wave 3 **deferred** until G1) | [Task](epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T41-external-adopter-archetype-corpus-fr142.md) | [FR-142](fbu/FR-142-external-adopter-archetype-corpus-install-validation.md) | [UXR-029](fbu/UXR-029-adk-install-path-experiment.md)| [adk-install-external](../../../adk-install-external/README.md) | [—IPP—](../../implementation-cycles/IPP-E06S09T41-external-adopter-archetype-corpus-fr142.md) | Last modified: 2026-06-25 13:49 UTC
+- **E04:S14:T13** – RW Step 7 scoped terminal archival (BR-113) - 📋 TODO (HIGH — residual FR-091/092 + FR-134-F6 vs FR-102; scoped ledger+prune on RW release) | [Task](epics/epic-04/story-14-kanban-framework-maintenance/T13-rw-step7-scoped-terminal-archival-br113.md) | [BR-113](fbu/BR-113-rw-step7-scoped-terminal-archival-missing.md) | [FR-102](fbu/FR-102-ukw-archive-completed-board-rows.md) | [FR-134](fbu/FR-134-kanban-completed-sqlite-ledger-pdf-report.md) | [#89](https://github.com/RMS-Ltd/ai-dev-kit/issues/89) | —No IPP— | Last modified: 2026-07-01 12:30 UTC
+
+- **E06:S09:T41** – External adopter archetype corpus (FR-142) - 🔄 IN PROGRESS (MEDIUM — Wave 2 live recon @ **v0.6.9.41+5**; Wave 3 **deferred** until G1) | [Task](epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T41-external-adopter-archetype-corpus-fr142.md) | [FR-142](fbu/FR-142-external-adopter-archetype-corpus-install-validation.md) | [UXR-029](fbu/UXR-029-adk-install-path-experiment.md)| [adk-install-external](../../../adk-install-external/README.md) | [—IPP—](../../implementation-cycles/IPP-E06S09T41-external-adopter-archetype-corpus-fr142.md) | Last modified: 2026-07-09 13:01 UTC
 ### Verification (V) - Task Shipped, FBU Verification Pending
 
 - **E06:S09:T36** – Adopter Path Selector + Install RC (UXR-029) - ⏳ SHIPPED (HIGH — **v0.6.9.36+3**; AC7 satisfied @ attempt 10; UXR-029 Phase 4 / G1 open) | [Task](epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T36-adopter-path-selector-install-rc-uxr029.md) | [UXR-029](fbu/UXR-029-adk-install-path-experiment.md) | [#52](https://github.com/RMS-Ltd/ai-dev-kit/issues/52) | —No IPP— | Last modified: 2026-06-16 13:57 UTC

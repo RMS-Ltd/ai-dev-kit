@@ -1,0 +1,15 @@
+{
+  "schema_version": "1.0.0",
+  "archetype_id": "A5",
+  "subject_label": "subject-A5-live",
+  "recon_date": "2026-07-01",
+  "method": "live_clone",
+  "licence": "MIT",
+  "adoption_path_hypothesis": "path-1",
+  "blocking_fail_predicted": 6,
+  "advisory_fail_predicted": 4,
+  "novel_gap_hypothesis": "minimal-package-vs-empty-template",
+  "full_install_recommended": false,
+  "full_install_gate": "G1-UXR-029-phase-4",
+  "notes": "Live MIT npm micro-package: readme+license+source+CI, no docs tree. FR-080 control; lower full-install priority than A1/A2."
+}

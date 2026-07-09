@@ -83,7 +83,7 @@ Phase 5 — External adopter archetype corpus ([FR-142](FR-142-external-adopter-
 | **Phase 5 archetypes** | A1, A2, A5 (v1) | Issues-only backlog, docs sprawl, minimal non-empty (FR-080 control) | No-kanban path selector, structure detection sprawl, empty-vs-minimal |
 | **Precedent** | Expenses Tracker (external) | SemVer / setup UX | BR-087, UXR-016, UXR-017 |
 
-**Phase 5 status (@ E06:S09:T41):** Wave 1 complete @ v0.6.9.41+3 (matrix, index, synthetic recon, fixtures). **Wave 3 full install deferred** until G1 closes via UXR-029 Arm A + Phase 4 — operator sign-off 2026-06-25; **not** a G1 waiver.
+**Phase 5 status (@ E06:S09:T41):** Wave 1 complete @ v0.6.9.41+3 (matrix, index, synthetic recon, fixtures). **Wave 2 live recon** complete 2026-07-01 (recon-02 A1/A2/A5). **Wave 3 full install deferred** until G1 closes via UXR-029 Arm A + Phase 4 — operator sign-off 2026-06-25; **not** a G1 waiver.
 
 **Matrix:** [external-adopter-diversity-matrix.md](../../knowledge/analysis/projects/external-adopter-diversity-matrix.md)
 
