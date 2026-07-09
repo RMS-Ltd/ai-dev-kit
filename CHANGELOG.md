@@ -11,6 +11,14 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
+## [0.4.14.13+1] - 09-07-26
+
+E04:S14:T13 — **Change implemented:** RW Step 7 scoped terminal archival (BR-113): ledger upsert + active `kboard` prune on terminal release without `UKW -c`. SemVer **v0.4.1247**.
+
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.4.14.13+1.md)
+
+---
+
 ## [0.6.9.41+5] - 09-07-26
 
 E06:S09:T41 — **Change implemented:** Wave 2 live-subject recon (A1/A2/A5 recon-02) post-T43 SBL sign-off; G1 open — full install deferred. SemVer **v0.4.1246**.

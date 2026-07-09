@@ -171,6 +171,7 @@ UKW (end of run, all modes that touch archival — at minimum comprehensive UKW 
 ## Notes
 
 - **Reporting model:** SQLite stores data; Python renders PDF. No enterprise “reporting services” in-engine.
+- **FR-134-F6 residual (2026-07-01):** RW Step 7 ledger hook not wired on release path — tracked under [BR-113](BR-113-rw-step7-scoped-terminal-archival-missing.md) → [E04:S14:T13](../epics/epic-04/story-14-kanban-framework-maintenance/T13-rw-step7-scoped-terminal-archival-br113.md) ([GitHub #89](https://github.com/RMS-Ltd/ai-dev-kit/issues/89)).
 - **Future:** Mirror for `intake-completed.md` → `.adk/intake-completed.db` + PDF (separate FR unless IPP expands scope).
 - **Optional later:** Markdown export for adopters who prefer git-diffable summaries (not required for v1).
 

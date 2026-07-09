@@ -11,7 +11,7 @@
 
 **A comprehensive toolkit for AI-assisted development workflows**
 
-**Version (SemVer):** `v0.4.1246` | **Internal:** `v0.6.9.41+5` (E06:S09:T41 — external archetype live recon) | **Last Updated:** 2026-07-09
+**Version (SemVer):** `v0.4.1247` | **Internal:** `v0.4.14.13+1` (E04:S14:T13 — RW Step 7 scoped terminal archival) | **Last Updated:** 2026-07-09
 
 > **SemVer ordering (`task_touch`):** Compare releases by **core** (`0.4.1198` here), not by `+BUILD`. The `+1` suffix mirrors internal build metadata for traceability only — see [ADR-031](docs/architecture/standards-and-adrs/ADR-031-external-semver-build-metadata-display-policy.md).
 

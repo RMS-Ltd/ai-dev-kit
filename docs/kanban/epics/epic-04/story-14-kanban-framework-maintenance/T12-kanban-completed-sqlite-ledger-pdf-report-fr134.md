@@ -70,3 +70,4 @@ Replace **`kanban-completed.md`** as the completed-task ledger with **`.adk/kanb
 - [FR-102](../../../fbu/FR-102-ukw-archive-completed-board-rows.md)
 - [FR-109](../../../fbu/FR-109-ukw-lean-active-board-contract.md)
 - [T08 — UKW archive completed `-c`](T08-ukw-archive-completed-board-rows-fr102.md)
+- **Follow-up (2026-07-01):** FR-134-F6 RW Step 7 hook — [BR-113](../../../fbu/BR-113-rw-step7-scoped-terminal-archival-missing.md) → [E04:S14:T13](T13-rw-step7-scoped-terminal-archival-br113.md) ([GitHub #89](https://github.com/RMS-Ltd/ai-dev-kit/issues/89))

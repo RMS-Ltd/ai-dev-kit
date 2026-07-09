@@ -1700,6 +1700,7 @@ The Versioning Policy requires that:
 2. **Source FR/BR/UXR doc(s)** — status sync + linked-task references + closure/gating banners where applicable.
 3. **`kboard.md`** — canonical row(s) for the release-scope task(s); active-row hygiene for completed rows; no duplicate tail tokens.
 4. **`kboard.md`** — canonical row(s) for the release-scope FBU(s); supersede / gating / closure markers; no duplicate tail tokens.
+5. **Scoped terminal archival (BR-113 / FR-134-F6):** When the released task doc is terminal (`COMPLETE`, etc.), upsert `.adk/kanban-completed.db` and **prune** that task's row from active `kboard.md` in the same RW run (`scoped_archive_rw_release.py` / `update_kanban_docs.py`). Skip perpetual, `IN PROGRESS`, and `⏳ WAITING` tasks. Batch `UKW -c` remains for corpus hygiene.
 
 The four surfaces must converge as: idempotent (repeated runs produce no changes), deterministic (identical input + commit produces identical output), and ordered (host task → source FBU → kboard → fbuboard).
 

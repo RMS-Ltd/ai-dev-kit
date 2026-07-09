@@ -12,8 +12,8 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** [TBD]  
 **Created:** 2025-12-18  
-**Last updated:** 2026-06-24 (v0.4.14.11+1 – Kanban documentation setup)
-**Version:** v0.4.14.11+1
+**Last updated:** 2026-07-09 (v0.4.14.13+1 – Kanban documentation setup)
+**Version:** v0.4.14.13+1
 **Code:** E4S14
 
 ---
@@ -51,6 +51,8 @@ housekeeping_policy: keep
 - [x] **E04:S14:T11 – UKW gap discovery — unfiled FR/BR (FR-043)** — ✅ COMPLETE (**v0.4.14.11+1**) — [Task](story-14-kanban-framework-maintenance/T11-ukw-gap-discovery-unfiled-fr-br-fr043.md) | [FR-043](../../fbu/FR-043-ukw-gap-discovery-todo-tasks-and-unfiled-fr-br.md) | [IPP](../../implementation-cycles/IPP-E04S14T11-ukw-gap-discovery-fr043.md)
 
 - [x] **E04:S14:T12 – SQLite kanban-completed ledger + UKW PDF report (FR-134)** — ✅ COMPLETE (**v0.4.14.12+2**) — [Task](story-14-kanban-framework-maintenance/T12-kanban-completed-sqlite-ledger-pdf-report-fr134.md) | [FR-134](../../fbu/FR-134-kanban-completed-sqlite-ledger-pdf-report.md) | [IPP](../../implementation-cycles/IPP-E04S14T12-kanban-completed-sqlite-ledger-pdf-report.md)
+
+- [ ] **E04:S14:T13 – RW Step 7 scoped terminal archival (BR-113)** — ✅ COMPLETE (**v0.4.14.13+1**) — [Task](story-14-kanban-framework-maintenance/T13-rw-step7-scoped-terminal-archival-br113.md) | [BR-113](../../fbu/BR-113-rw-step7-scoped-terminal-archival-missing.md) | [IPP](../../implementation-cycles/IPP-E04S14T13-rw-step7-scoped-terminal-archival-br113.md) | [#89](https://github.com/RMS-Ltd/ai-dev-kit/issues/89)
 
 ---
 
@@ -90,7 +92,6 @@ Ensure the Kanban Framework package remains current, well-maintained, and proper
 
 ---
 
-**Last Updated:** 2026-06-24 (v0.4.14.11+1 – Kanban documentation setup)
-**Version:** v0.4.14.11+1
+**Last Updated:** 2026-07-09 (v0.4.14.13+1 – Kanban documentation setup)
+**Version:** v0.4.14.13+1
 **Status:** IN PROGRESS
-

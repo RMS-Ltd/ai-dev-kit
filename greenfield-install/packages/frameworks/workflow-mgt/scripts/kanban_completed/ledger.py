@@ -103,6 +103,22 @@ def count_rows(conn: sqlite3.Connection) -> int:
     return int(row["c"]) if row else 0
 
 
+def get_completed_task(
+    conn: sqlite3.Connection, epic: int, story: int, task: int
+) -> Optional[CompletedTaskRow]:
+    cur = conn.execute(
+        """
+        SELECT epic, story, task, internal_version, completed_at,
+               completing_agent, summary, archived_at, kboard_row_snapshot
+        FROM completed_task
+        WHERE epic = ? AND story = ? AND task = ?
+        """,
+        (epic, story, task),
+    )
+    row = cur.fetchone()
+    return _row_from_sql(row) if row else None
+
+
 def _row_from_sql(r: sqlite3.Row) -> CompletedTaskRow:
     return CompletedTaskRow(
         epic=int(r["epic"]),

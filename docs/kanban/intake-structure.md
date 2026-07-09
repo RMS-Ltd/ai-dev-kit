@@ -104,6 +104,7 @@ This document provides **complete listings of all FBU items** in the AI Dev Kit 
 
 ### High Priority (Should Have - S)
 
+- **BR-113** – RW Step 7 (`rw_step_7`) scoped terminal archival missing — FIXED (**v0.4.14.13+1**, E04:S14:T13 MWF delivery) - [BR-113](fbu/BR-113-rw-step7-scoped-terminal-archival-missing.md) | [E04:S14:T13](epics/epic-04/story-14-kanban-framework-maintenance/T13-rw-step7-scoped-terminal-archival-br113.md) **COMPLETE** | [#89](https://github.com/RMS-Ltd/ai-dev-kit/issues/89)
 - **BR-111** – SemVer public surface leaks internal BUILD metadata - OPEN (HIGH, SBL attempt 11 — ADR-031 Option A implementation gap) - [BR-111](fbu/BR-111-semver-public-surface-build-metadata-leak.md) | [E03:S02:T16](epics/epic-03/story-02-versioning-cookbook-and-examples/T16-semver-public-surface-build-leak-br111.md) | [#85](https://github.com/RMS-Ltd/ai-dev-kit/issues/85)
 - **BR-061** – Task-touch SemVer PATCH bumps on every `semver_converter` run (registry over-increment / tag pressure) - TODO (HIGH, `semver_converter.py` vs RW — **E03:S02:T12**, not E6:S06) - [BR-061](fbu/BR-061-semver-task-touch-counter-increments-too-often.md) | [E03:S02:T12](epics/epic-03/story-02-versioning-cookbook-and-examples/T12-implement-task-touch-semver-mapping-mode.md)
 

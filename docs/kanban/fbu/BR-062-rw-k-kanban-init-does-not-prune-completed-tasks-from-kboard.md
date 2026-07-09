@@ -67,3 +67,4 @@ RW Step 7 Kanban updates did not consistently enforce in-progress board hygiene 
 - `packages/frameworks/workflow-mgt/scripts/update_kanban_docs.py`
 - `packages/frameworks/workflow-mgt/scripts/test_update_kanban_docs.py`
 - `BR-060`
+- **Residual (2026-07-01):** Ledger append + RW scoped archival — [BR-113](BR-113-rw-step7-scoped-terminal-archival-missing.md) → [E04:S14:T13](../epics/epic-04/story-14-kanban-framework-maintenance/T13-rw-step7-scoped-terminal-archival-br113.md) (FR-102 UKW-only gate superseded partial prune)

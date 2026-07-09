@@ -149,11 +149,12 @@ For each active MoSCOW row on **`kboard.md`**:
 - [BR-042](BR-042-ukw-agent-board-cleanup-failure.md) / [E06:S06:T42](../epics/epic-06/story-06-feature-requests/T42-fix-ukw-agent-board-cleanup-failure.md)
 - [E02:S16:T04](../epics/epic-02/story-16-perpetual-ongoing-workflow-operations/T04-ad-hoc-kanban-synchronization-and-hygiene-perpetual.md) — UKW perpetual attribution
 - [Workflow initiation cheatsheet](../../guides/workflow-initiation-cheatsheet.md)
+- [BR-113](BR-113-rw-step7-scoped-terminal-archival-missing.md) / [E04:S14:T13](../epics/epic-04/story-14-kanban-framework-maintenance/T13-rw-step7-scoped-terminal-archival-br113.md) — **follow-up (2026-07-01):** RW Step 7 scoped terminal archival (residual FR-091/092 vs UKW-only gate); [GitHub #89](https://github.com/RMS-Ltd/ai-dev-kit/issues/89)
 
 ---
 
 ## Out of scope
 
 - Reprioritization (`--rp`), gap discovery (Step 2.5), or full comprehensive UKW in the same invocation as `-c`.
-- Changing RW Step 7 scoped reconciliation semantics ([FR-091](FR-091-rw-step-7-self-sufficient-scoped-kanban-reconciliation-without-ukw-dependency.md)).
+- **Whole-board** RW Step 7 reshuffle ([FR-091](FR-091-rw-step-7-self-sufficient-scoped-kanban-reconciliation-without-ukw-dependency.md)) — unchanged; **scoped released-task archival** is follow-up [E04:S14:T13](../epics/epic-04/story-14-kanban-framework-maintenance/T13-rw-step7-scoped-terminal-archival-br113.md) ([BR-113](BR-113-rw-step7-scoped-terminal-archival-missing.md)).
 - Automated scheduling / CI — manual agent invocation only unless a follow-up FR requests it.

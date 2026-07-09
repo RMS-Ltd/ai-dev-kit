@@ -82,3 +82,4 @@ The desired steady state is that canonical workflows are precise enough that UKW
 - [FR-038 - RW Step 7 scoped kanban sync](FR-038-rw-step-7-scoped-kanban-sync-ukw-mode.md)
 - [FR-090 - canonical RW/UKW row transform parity](FR-090-ukw-canonical-row-transform-engine-and-board-specific-rendering-contracts.md)
 - [FR-084 - IPP post-run reconciliation ownership](FR-084-ipp-post-run-governance-reconciliation-ownership.md)
+- **Residual archival slice (2026-07-01):** AC4 “RW closure without UKW follow-up” — [BR-113](BR-113-rw-step7-scoped-terminal-archival-missing.md) → [E04:S14:T13](../epics/epic-04/story-14-kanban-framework-maintenance/T13-rw-step7-scoped-terminal-archival-br113.md) ([GitHub #89](https://github.com/RMS-Ltd/ai-dev-kit/issues/89))

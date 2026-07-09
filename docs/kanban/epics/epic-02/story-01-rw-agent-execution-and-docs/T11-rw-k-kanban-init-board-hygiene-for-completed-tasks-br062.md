@@ -55,6 +55,7 @@ Fix RW Step 7 Kanban update behavior so completed tasks are not left in the in-p
 
 - [BR-062](../../../fbu/BR-062-rw-k-kanban-init-does-not-prune-completed-tasks-from-kboard.md)
 - [Story E2:S01](../story-01-rw-agent-execution-and-docs.md)
+- **Residual (2026-07-01):** Ledger + RW scoped archival — [BR-113](../../../fbu/BR-113-rw-step7-scoped-terminal-archival-missing.md) → [E04:S14:T13](../../epic-04/story-14-kanban-framework-maintenance/T13-rw-step7-scoped-terminal-archival-br113.md)
 
 ---
 

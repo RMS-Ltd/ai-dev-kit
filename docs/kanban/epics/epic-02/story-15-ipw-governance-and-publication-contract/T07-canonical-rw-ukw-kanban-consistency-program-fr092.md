@@ -107,3 +107,4 @@ The 16 atomic issues from FR-092 are owned here, organized into eight execution 
 - [BR-042 (close as duplicate)](../../../fbu/BR-042-ukw-agent-board-cleanup-failure.md)
 - [Story 015](../story-15-ipw-governance-and-publication-contract.md)
 - [IPP-E2S15T7](../../../../implementation-cycles/IPP-E2S15T07-canonical-rw-ukw-kanban-consistency-program.md)
+- **Residual (2026-07-01):** Scoped terminal archival on RW release — [BR-113](../../../fbu/BR-113-rw-step7-scoped-terminal-archival-missing.md) → [E04:S14:T13](../../epic-04/story-14-kanban-framework-maintenance/T13-rw-step7-scoped-terminal-archival-br113.md)

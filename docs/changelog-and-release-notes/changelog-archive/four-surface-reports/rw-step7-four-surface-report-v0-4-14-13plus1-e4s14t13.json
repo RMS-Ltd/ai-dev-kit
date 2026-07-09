@@ -1,0 +1,95 @@
+{
+  "auxiliary_surfaces": {
+    "epic_doc": {
+      "changes": [
+        "Updated Epic Last updated: 2026-07-09 (v0.4.14.13+1 \u2013 Kanban documentation setup)"
+      ],
+      "notes": [],
+      "paths": [
+        "/Users/ruari/Projects/ai-dev-kit/docs/kanban/epics/epic-04/epic-04.md"
+      ],
+      "surface": "epic_doc",
+      "touched": true
+    },
+    "story_doc": {
+      "changes": [
+        "\u2705 Story doc updated: /Users/ruari/Projects/ai-dev-kit/docs/kanban/epics/epic-04/story-14-kanban-framework-maintenance.md"
+      ],
+      "notes": [],
+      "paths": [
+        "/Users/ruari/Projects/ai-dev-kit/docs/kanban/epics/epic-04/story-14-kanban-framework-maintenance.md"
+      ],
+      "surface": "story_doc",
+      "touched": true
+    },
+    "uncategorized": {
+      "changes": [
+        "Updated Version: v0.4.14.13+1",
+        "Updated Last updated: 2026-07-09 (v0.4.14.13+1 \u2013 Kanban documentation setup)",
+        "Updated Story 14 checklist entry",
+        "Updated board Last Updated: 2026-07-09 (RW: E04:S14:T13)",
+        "Updated board Version: v0.4.14.13+1",
+        "Scoped archival: ledger upsert E04:S14:T13 @ v0.4.14.13+1"
+      ],
+      "notes": [],
+      "paths": [],
+      "surface": "uncategorized",
+      "touched": true
+    }
+  },
+  "contract": "FR-092 / ADR-018 (RW Step 7 three-surface reconciliation)",
+  "invocation_context": "rw_step_7",
+  "release_scope": {
+    "epic": 4,
+    "story": 14,
+    "task": 13,
+    "task_id": "E4:S14:T13",
+    "version_string": "v0.4.14.13+1"
+  },
+  "stamp_evidence": {},
+  "summary": {
+    "stamps_appended_with_evidence": 0,
+    "stamps_preserved_existing": 0,
+    "stamps_skipped_no_evidence": 0,
+    "total_changes": 9,
+    "touched_surfaces": [
+      "kboard"
+    ],
+    "untouched_surfaces": [
+      "task_doc",
+      "fbu_doc"
+    ]
+  },
+  "surfaces": {
+    "fbu_doc": {
+      "changes": [],
+      "notes": [
+        "No path resolved by RW Step 7. Task / FBU surfaces are owned by implementation execution; absence here is informational, not a failure."
+      ],
+      "paths": [],
+      "surface": "fbu_doc",
+      "touched": false
+    },
+    "kboard": {
+      "changes": [
+        "Scoped archival: E04:S14:T13 not on active kboard (ledger check only)"
+      ],
+      "notes": [],
+      "paths": [
+        "/Users/ruari/Projects/ai-dev-kit/docs/kanban/kboard.md"
+      ],
+      "surface": "kboard",
+      "touched": true
+    },
+    "task_doc": {
+      "changes": [],
+      "notes": [
+        "No path resolved by RW Step 7. Task / FBU surfaces are owned by implementation execution; absence here is informational, not a failure."
+      ],
+      "paths": [],
+      "surface": "task_doc",
+      "touched": false
+    }
+  },
+  "timestamp_utc": "2026-07-09 13:18 UTC"
+}

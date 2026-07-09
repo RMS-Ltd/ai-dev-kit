@@ -56,3 +56,4 @@ UKW **BR-059** coverage and bidirectional FBU mirroring inflated active boards (
 - [BR-059](BR-059-ukw-moscow-incomplete-story-task-coverage.md)
 - [FR-076](FR-076-ukw-fbuboard-scope-and-drift-concurrency-controls.md)
 - [kanban-board-guide.md](../kanban-board-guide.md)
+- **Follow-up (2026-07-01):** RW scoped graduate-off-board — [BR-113](BR-113-rw-step7-scoped-terminal-archival-missing.md) → [E04:S14:T13](../epics/epic-04/story-14-kanban-framework-maintenance/T13-rw-step7-scoped-terminal-archival-br113.md)

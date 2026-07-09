@@ -167,3 +167,4 @@ A single meta program that:
 - [BR-042 (duplicate; close)](BR-042-ukw-agent-board-cleanup-failure.md)
 - [E02:S15:T07 (implementing task)](../epics/epic-02/story-15-ipw-governance-and-publication-contract/T07-canonical-rw-ukw-kanban-consistency-program-fr092.md)
 - [IPP-E2S15T7](../../implementation-cycles/IPP-E2S15T07-canonical-rw-ukw-kanban-consistency-program.md)
+- **Residual (2026-07-01):** RW Step 7 scoped terminal archival — [BR-113](BR-113-rw-step7-scoped-terminal-archival-missing.md) → [E04:S14:T13](../epics/epic-04/story-14-kanban-framework-maintenance/T13-rw-step7-scoped-terminal-archival-br113.md) ([GitHub #89](https://github.com/RMS-Ltd/ai-dev-kit/issues/89))

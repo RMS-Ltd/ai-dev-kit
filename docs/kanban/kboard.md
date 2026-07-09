@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Board
 
-**Last Updated:** 2026-07-01 (UKW -c: E06:S09 V-band T42–T45)
-**Version:** v0.6.9.45+1
+**Last Updated:** 2026-07-09 (RW: E04:S14:T13)
+**Version:** v0.4.14.13+1
 
 **Active board contract:** **Sole active MoSCOW board** ([ADR-018](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/architecture/standards-and-adrs/ADR-018-single-kanban-board-consolidation.md)). Rows are **live work** (TODO / IN PROGRESS / OPEN / WAITING / PERPETUAL) plus filed **Could Have** backlog. **Verification (V)** band holds task-shipped / FBU-open items (`⏳ WAITING`). Remove **terminal** rows and archive prose (use [`kanban-completed.md`](kanban-completed.md) / [`intake-completed.md`](intake-completed.md)).
 
@@ -25,10 +25,7 @@ housekeeping_policy: keep
 
 ### Must Have (M) - Critical Tasks
 
-
 ### Should Have (S) - Important Tasks
-
-- **E04:S14:T13** – RW Step 7 scoped terminal archival (BR-113) - 📋 TODO (HIGH — residual FR-091/092 + FR-134-F6 vs FR-102; scoped ledger+prune on RW release) | [Task](epics/epic-04/story-14-kanban-framework-maintenance/T13-rw-step7-scoped-terminal-archival-br113.md) | [BR-113](fbu/BR-113-rw-step7-scoped-terminal-archival-missing.md) | [FR-102](fbu/FR-102-ukw-archive-completed-board-rows.md) | [FR-134](fbu/FR-134-kanban-completed-sqlite-ledger-pdf-report.md) | [#89](https://github.com/RMS-Ltd/ai-dev-kit/issues/89) | —No IPP— | Last modified: 2026-07-01 12:30 UTC
 
 - **E06:S09:T41** – External adopter archetype corpus (FR-142) - 🔄 IN PROGRESS (MEDIUM — Wave 2 live recon @ **v0.6.9.41+5**; Wave 3 **deferred** until G1) | [Task](epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T41-external-adopter-archetype-corpus-fr142.md) | [FR-142](fbu/FR-142-external-adopter-archetype-corpus-install-validation.md) | [UXR-029](fbu/UXR-029-adk-install-path-experiment.md)| [adk-install-external](../../../adk-install-external/README.md) | [—IPP—](../../implementation-cycles/IPP-E06S09T41-external-adopter-archetype-corpus-fr142.md) | Last modified: 2026-07-09 13:01 UTC
 ### Verification (V) - Task Shipped, FBU Verification Pending
@@ -94,4 +91,3 @@ _All perpetual lanes under **E02:S16** only ([IPP-E02S16T24](../../implementatio
 - **E21:S08:T06** – Agent workflow blocking-state accessibility (Layer 4) - ⏸ DEFERRED (MEDIUM, ADR-025 Layer 4) | [Task](epics/epic-21/story-08-accessibility/T06-agent-workflow-blocking-state-accessibility.md) | [Story](epics/epic-21/story-08-accessibility.md) | [FR-115](fbu/FR-115-accessibility-standards-compatibility.md) | [ADR-025](../../architecture/standards-and-adrs/ADR-025-layered-accessibility-strategy.md) | —No IPP— | Last modified: 2026-06-08 10:36 UTC
 
 - **E21:S08:T07** – Accessibility testing gates and adopter guidelines (Layer 5) - ⏸ DEFERRED (MEDIUM, ADR-025 Layer 5) | [Task](epics/epic-21/story-08-accessibility/T07-accessibility-testing-gates-and-adopter-guidelines.md) | [Story](epics/epic-21/story-08-accessibility.md) | [FR-115](fbu/FR-115-accessibility-standards-compatibility.md) | [ADR-025](../../architecture/standards-and-adrs/ADR-025-layered-accessibility-strategy.md) | —No IPP— | Last modified: 2026-06-08 10:37 UTC
-

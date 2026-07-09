@@ -59,3 +59,4 @@ Implement and document **`UKW -c`** (archive completed): for terminal task/FBU s
 - [FR-076](../../../fbu/FR-076-ukw-fbuboard-scope-and-drift-concurrency-controls.md)
 - [FR-034](../../../fbu/FR-034-ukw-granular-control-and-use-case-flags.md)
 - [kanban-completed.md](../../../kanban-completed.md) · [intake-completed.md](../../../intake-completed.md)
+- **Follow-up (2026-07-01):** RW Step 7 scoped archival residual — [BR-113](../../../fbu/BR-113-rw-step7-scoped-terminal-archival-missing.md) → [E04:S14:T13](T13-rw-step7-scoped-terminal-archival-br113.md)

@@ -1333,14 +1333,30 @@ def update_kanban_board(
         content = moscow_task_pattern.sub(update_moscow_task, content)
         changes.append(f"Updated MoSCOW section: E{epic}:S{story}:T{task} marked as COMPLETE")
 
-    # FR-102 / ADR-010: active MoSCOW COMPLETE removal is UKW -c only (ledger-first).
-    # Advisory only — do not delete-only prune from RW/UKW hygiene paths.
-    _, would_prune = _cleanup_kboard_active_rows(content)
-    if would_prune > 0:
-        changes.append(
-            f"Advisory: {would_prune} COMPLETE row(s) on active kboard MoSCOW; "
-            "run UKW -c to append kanban-completed.md then remove (FR-102)"
+    # BR-113 / FR-134-F6: RW Step 7 scoped terminal archival (released E:S:T only).
+    kanban_root = board_path.parent
+    try:
+        from kanban.scoped_archive_rw_release import apply_rw_scoped_terminal_archival
+
+        content, arch_changes, arch_result = apply_rw_scoped_terminal_archival(
+            content,
+            kanban_root=kanban_root,
+            project_root=Path.cwd(),
+            epic=epic,
+            story=story,
+            task=task,
+            internal_version=version_string,
+            completing_agent="RW Step 7",
+            dry_run=dry_run,
         )
+        changes.extend(arch_changes)
+    except ImportError:
+        _, would_prune = _cleanup_kboard_active_rows(content)
+        if would_prune > 0:
+            changes.append(
+                f"Advisory: {would_prune} COMPLETE row(s) on active kboard MoSCOW; "
+                "run UKW -c to append kanban-completed.md then remove (FR-102)"
+            )
 
     try:
         from state_icons import apply_icons_to_moscow_board_content
