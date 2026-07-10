@@ -8,12 +8,12 @@ housekeeping_policy: keep
 
 # Story 003 – Additional Workflows & Examples
 
-**Status:** IN PROGRESS (story complete pending epic rollup)  
+**Status:** IN PROGRESS (T14 open — FR-145 synthetic examples corpus)  
 **Priority:** MEDIUM  
 **Estimated Effort:** [TBD]  
 **Created:** 2025-12-03  
-**Last updated:** 2026-06-24 (v0.2.3.13+1 – Kanban documentation setup)
-**Version:** v0.2.3.13+1
+**Last updated:** 2026-07-10 (v0.2.3.14+0 – Kanban documentation setup)
+**Version:** v0.2.3.14+0
 **Code:** E2S03
 
 ---
@@ -62,6 +62,8 @@ Provide additional workflow examples that:
 - [x] **E02:S03:T12 – Environment-aware workflow execution (FR-128)** — ✅ COMPLETE (**v0.2.3.12+1**) — [Task](story-03-additional-workflows-and-examples/T12-environment-aware-workflow-execution-fr128.md) | [FR-128](../../fbu/FR-128-environment-aware-workflow-execution.md) | [—IPP—](../../implementation-cycles/IPP-E02S03T12-environment-aware-workflow-execution-fr128.md)
 
 - [x] **E02:S03:T13 – MWF `delivery` RW intent preflight (FR-137)** — ✅ COMPLETE (**v0.2.3.13+1**) — [Task](story-03-additional-workflows-and-examples/T13-mwf-delivery-rw-intent-preflight-fr137.md) | [FR-137](../../fbu/FR-137-mwf-delivery-rw-intent-preflight-art-forwarding.md) | [IPP](../../implementation-cycles/IPP-E02S03T13-mwf-delivery-rw-intent-preflight-fr137.md)
+
+- [ ] **E02:S03:T14 – Canonical workflow synthetic examples corpus (FR-145)** — 📋 TODO — [Task](story-03-additional-workflows-and-examples/T14-canonical-workflow-synthetic-examples-corpus-fr145.md) | [FR-145](../../fbu/FR-145-canonical-workflow-synthetic-examples-corpus.md) | —No IPP—
 
 ---
 

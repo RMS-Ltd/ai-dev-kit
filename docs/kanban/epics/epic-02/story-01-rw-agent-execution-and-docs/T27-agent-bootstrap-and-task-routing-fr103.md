@@ -88,3 +88,4 @@ Cold-started agents lack a deterministic, low-token bootstrap path. Full `.curso
 - [FR-041](../../../fbu/FR-041-windsurf-investigate-agents-skills-for-workflows.md)
 - [FR-022](../../../fbu/FR-022-policy-docs-machine-readable-salience.md)
 - [UXR-015 / cheatsheet](../../../../guides/workflow-initiation-cheatsheet.md)
+- **Follow-on (complements):** [E02:S03:T14 / FR-145](../story-03-additional-workflows-and-examples/T14-canonical-workflow-synthetic-examples-corpus-fr145.md) — synthetic option-complete workflow exemplars for cold-start grounding

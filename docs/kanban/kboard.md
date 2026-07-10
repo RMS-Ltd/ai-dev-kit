@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Board
 
-**Last Updated:** 2026-07-09 (RW: E04:S14:T13)
-**Version:** v0.4.14.13+1
+**Last Updated:** 2026-07-10 (RW: E02:S03:T14)
+**Version:** v0.2.3.14+0
 
 **Active board contract:** **Sole active MoSCOW board** ([ADR-018](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/architecture/standards-and-adrs/ADR-018-single-kanban-board-consolidation.md)). Rows are **live work** (TODO / IN PROGRESS / OPEN / WAITING / PERPETUAL) plus filed **Could Have** backlog. **Verification (V)** band holds task-shipped / FBU-open items (`⏳ WAITING`). Remove **terminal** rows and archive prose (use [`kanban-completed.md`](kanban-completed.md) / [`intake-completed.md`](intake-completed.md)).
 
@@ -26,6 +26,8 @@ housekeeping_policy: keep
 ### Must Have (M) - Critical Tasks
 
 ### Should Have (S) - Important Tasks
+
+- **E02:S03:T14** – Canonical workflow synthetic examples corpus (FR-145) - 📋 TODO (HIGH — option-complete golden exemplars for agent cold-start) | [Task](epics/epic-02/story-03-additional-workflows-and-examples/T14-canonical-workflow-synthetic-examples-corpus-fr145.md) | [FR-145](fbu/FR-145-canonical-workflow-synthetic-examples-corpus.md) | —No IPP— | Last modified: 2026-07-10 17:49 UTC
 
 - **E06:S09:T41** – External adopter archetype corpus (FR-142) - 🔄 IN PROGRESS (MEDIUM — Wave 2 live recon @ **v0.6.9.41+5**; Wave 3 **deferred** until G1) | [Task](epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T41-external-adopter-archetype-corpus-fr142.md) | [FR-142](fbu/FR-142-external-adopter-archetype-corpus-install-validation.md) | [UXR-029](fbu/UXR-029-adk-install-path-experiment.md)| [adk-install-external](../../../adk-install-external/README.md) | [—IPP—](../../implementation-cycles/IPP-E06S09T41-external-adopter-archetype-corpus-fr142.md) | Last modified: 2026-07-09 13:01 UTC
 ### Verification (V) - Task Shipped, FBU Verification Pending
