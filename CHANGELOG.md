@@ -11,8 +11,8 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
-## [0.2.3.14+0] - 10-07-26
+## [0.2.4.7+2] - 11-07-26
 
-E02:S03:T14 — **Kanban documentation setup:** FR-145 canonical workflow synthetic examples corpus intake (task + FR + board wiring). SemVer **v0.4.1248**.
+E02:S04:T07 — **Change implemented:** Reopened lifecycle metadata task; filed BR-114 (evergreen-default / DHKW inert). SemVer **v0.4.1249**.
 
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.3.14+0.md)
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.4.7+2.md)

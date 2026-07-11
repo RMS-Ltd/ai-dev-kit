@@ -1,4 +1,11 @@
 # Changelog Archive
+## [0.2.4.7+2] - 11-07-26
+
+E02:S04:T07 — **Change implemented:** Reopened lifecycle metadata task; filed BR-114 (evergreen-default / DHKW inert). SemVer **v0.4.1249**.
+
+[Detailed changelog](CHANGELOG_v0.2.4.7+2.md)
+
+---
 ## [0.2.16.6+11] - 13-06-26
 
 E02:S16:T06 — Wave 6b Code Quality burn-down: cyclic-import extraction, unused-import/global cleanup, empty-except comment; CQG **0** findings; kanban v3.2–v3.5 fresh-install pytest green. Operator TC36 verify pending. SemVer **v0.4.1162+11**.

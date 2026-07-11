@@ -8,8 +8,8 @@ housekeeping_policy: keep
 
 # AI Dev Kit – Kanban Board
 
-**Last Updated:** 2026-07-11 (RW: E02:S04:T07 — v0.2.4.7+2 / SemVer v0.4.1249)  
-**Version:** v0.2.4.7+2
+**Last Updated:** 2026-07-11 (intake: E02:S04:T07 REOPENED / BR-114)  
+**Version:** v0.2.3.14+0
 
 **Active board contract:** **Sole active MoSCOW board** ([ADR-018](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/architecture/standards-and-adrs/ADR-018-single-kanban-board-consolidation.md)). Rows are **live work** (TODO / IN PROGRESS / OPEN / WAITING / PERPETUAL) plus filed **Could Have** backlog. **Verification (V)** band holds task-shipped / FBU-open items (`⏳ WAITING`). Remove **terminal** rows and archive prose (use [`kanban-completed.md`](kanban-completed.md) / [`intake-completed.md`](intake-completed.md)).
 
@@ -27,7 +27,7 @@ housekeeping_policy: keep
 
 ### Should Have (S) - Important Tasks
 
-- **E02:S04:T07** – Apply lifecycle metadata / operationalize DHKW (BR-114) - 🔁 REOPENED (HIGH — **v0.2.4.7+2** / SemVer v0.4.1249; evergreen-default / DHKW inert) | [Task](epics/epic-02/story-04-rw-installer-and-plug-and-play-adoption/T07-apply-lifecycle-metadata-to-all-existing-documentation.md) | [BR-114](fbu/BR-114-doc-lifecycle-housekeeping-evergreen-default-ineffective.md) | —No IPP— | Last modified: 2026-07-11 11:15 UTC
+- **E02:S04:T07** – Apply lifecycle metadata / operationalize DHKW (BR-114) - 🔄 REOPENED (HIGH — evergreen-default makes housekeeping inert; no orig FBU) | [Task](epics/epic-02/story-04-rw-installer-and-plug-and-play-adoption/T07-apply-lifecycle-metadata-to-all-existing-documentation.md) | [BR-114](fbu/BR-114-doc-lifecycle-housekeeping-evergreen-default-ineffective.md) | —No IPP— | Last modified: 2026-07-11 11:15 UTC
 
 - **E02:S03:T14** – Canonical workflow synthetic examples corpus (FR-145) - 📋 TODO (HIGH — option-complete golden exemplars for agent cold-start) | [Task](epics/epic-02/story-03-additional-workflows-and-examples/T14-canonical-workflow-synthetic-examples-corpus-fr145.md) | [FR-145](fbu/FR-145-canonical-workflow-synthetic-examples-corpus.md) | —No IPP— | Last modified: 2026-07-10 17:49 UTC
 

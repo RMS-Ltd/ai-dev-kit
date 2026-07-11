@@ -33,7 +33,7 @@ housekeeping_policy: keep
   - Story: [`story-03-additional-workflows-and-examples.md`](story-03-additional-workflows-and-examples.md)
   - Tasks: T01–T13 ✅ COMPLETE; T14 📋 TODO ([FR-145](../../fbu/FR-145-canonical-workflow-synthetic-examples-corpus.md))
 
-- [x] **E2:S04 – RW Step 8 Hardening** - COMPLETE ✅ (v0.2.4.9+3 – All tasks complete: validation improvements, error handling, and docs)
+- [ ] **E2:S04 – RW Installer & Plug-and-Play Adoption** - IN PROGRESS (T07 🔄 REOPENED @ **v0.2.4.7+2** / BR-114; other tasks COMPLETE)
   - Story: [`story-04-rw-installer-and-plug-and-play-adoption.md`](story-04-rw-installer-and-plug-and-play-adoption.md)
   - Tasks: T001 ✅ COMPLETE, T002 ✅ COMPLETE, T003 ✅ COMPLETE, T004 ✅ COMPLETE, T005 ✅ COMPLETE, T006 ✅ COMPLETE, T007 ✅ COMPLETE, T008 ✅ COMPLETE, T009 ✅ COMPLETE
 

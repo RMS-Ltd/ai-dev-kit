@@ -8,13 +8,13 @@ housekeeping_policy: keep
 
 # Story 004 – RW Installer & Plug-and-Play Adoption
 
-**Status:** COMPLETE ✅  
+**Status:** IN PROGRESS (T07 reopened 2026-07-11 — BR-114; other tasks remain COMPLETE)  
 **Priority:** HIGH  
 **Estimated Effort:** [TBD]  
 **Created:** 2025-12-04  
-**Completed:** 2025-12-04  
-**Last updated:** 2025-12-04 (v0.2.4.9+3 – E02:S04:T09 build 3: Task naming format standardization)  
-**Version:** v0.2.4.9+3  
+**Completed:** 2025-12-04 (original story closure; T07 reopened later)  
+**Last updated:** 2026-07-11 (RW E02:S04:T07 --art — **v0.2.4.7+2** / SemVer v0.4.1249 — BR-114)  
+**Version:** v0.2.4.7+2  
 **Code:** E2S04
 
 ---
@@ -52,8 +52,8 @@ Provide a **project-agnostic RW installer** and configuration model that allows:
   - Task: [`T05-usability-test-installer-on-sample-and-real-projects`](story-04-rw-installer-and-plug-and-play-adoption/T05-usability-test-installer-on-sample-and-real-projects.md)
 - [x] **E02:S04:T06 – Create Debug Path Framework package** ✅ COMPLETE (v0.2.4.6+1)
   - Task: [`T06-create-debug-path-framework-package`](story-04-rw-installer-and-plug-and-play-adoption/T06-create-debug-path-framework-package.md)
-- [x] **E02:S04:T07 – Apply lifecycle metadata to all existing documentation** ✅ COMPLETE (v0.2.4.7+1)
-  - Task: [`T07-apply-lifecycle-metadata-to-all-existing-documentation`](story-04-rw-installer-and-plug-and-play-adoption/T07-apply-lifecycle-metadata-to-all-existing-documentation.md)
+- [ ] **E02:S04:T07 – Apply lifecycle metadata to all existing documentation** 🔄 REOPENED (v0.2.4.7+2 — BR-114 intake; SemVer v0.4.1249)
+  - Task: [`T07-apply-lifecycle-metadata-to-all-existing-documentation`](story-04-rw-installer-and-plug-and-play-adoption/T07-apply-lifecycle-metadata-to-all-existing-documentation.md) | [BR-114](../../fbu/BR-114-doc-lifecycle-housekeeping-evergreen-default-ineffective.md)
 - [x] **E02:S04:T08 – Document agent network access limitations and update RW Step 11** ✅ COMPLETE (v0.2.4.8+1)
   - Task: [`T08-document-agent-network-access-limitations-and-update-rw-step`](story-04-rw-installer-and-plug-and-play-adoption/T08-document-agent-network-access-limitations-and-update-rw-step.md)
 - [x] **E02:S04:T09 – Complete Story 4 and Epic 2 closure documentation** ✅ COMPLETE (v0.2.4.9+1)
