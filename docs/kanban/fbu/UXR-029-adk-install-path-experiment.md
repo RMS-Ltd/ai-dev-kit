@@ -60,6 +60,7 @@ Formalise a **three-path adoption experiment** for mature repositories: **Arm A*
 |------|-----|------|
 | starborn_legacy | B | Primary messy-mature + git exemplar |
 | fynd.deals | A | Brownfield control |
+| fynd.deals | B | **Also** Arm B evidence — greenfield + KMA L1 @ v0.4.1247 ([#90](https://github.com/RMS-Ltd/ai-dev-kit/issues/90) / [FB-ADK-FYND](FB-ADK-FYND-GREENFIELD-KMA-L1.md) / [E06:S09:T46](../epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T46-fynd-deals-greenfield-kma-l1-fb-intake.md)) |
 | Confidentia | A | Brownfield control (governance-heavy) |
 
 **Programme sequencing:**

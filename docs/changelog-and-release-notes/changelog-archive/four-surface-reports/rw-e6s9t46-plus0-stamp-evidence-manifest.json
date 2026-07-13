@@ -1,0 +1,8 @@
+{
+  "rows": {
+    "E06:S09:T46": {
+      "allowed": true,
+      "reason": "RW -k kanban init — version anchor v0.6.9.46+0 / SemVer v0.4.1250 on release-scope T46 row (fynd.deals FB intake / BR-115)"
+    }
+  }
+}

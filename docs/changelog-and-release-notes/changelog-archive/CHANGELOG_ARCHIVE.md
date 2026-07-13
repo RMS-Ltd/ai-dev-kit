@@ -1,4 +1,11 @@
 # Changelog Archive
+## [0.6.9.46+0] - 13-07-26
+
+E06:S09:T46 — Kanban documentation setup for fynd.deals greenfield + KMA L1 FB intake (#90 / BR-115). SemVer **v0.4.1250**.
+
+[Detailed changelog](CHANGELOG_v0.6.9.46+0.md)
+
+---
 ## [0.2.4.7+2] - 11-07-26
 
 E02:S04:T07 — **Change implemented:** Reopened lifecycle metadata task; filed BR-114 (evergreen-default / DHKW inert). SemVer **v0.4.1249**.
