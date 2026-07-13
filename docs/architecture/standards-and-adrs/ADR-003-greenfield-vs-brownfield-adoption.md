@@ -47,6 +47,14 @@ Experienced users should be able to take **only what they need** and wire it int
 
 Greenfield documentation may be opinionated for speed and clarity. That does **not** extend a claim that the same layout is correct for every organization. Brownfield guidance remains explicit that **tradeoffs belong to the host team**.
 
+### 4. Authoritative `packages/frameworks` tree (BR-115 / FR-110)
+
+Installer script resolution prefers a **usable** project-root `packages/frameworks/` tree (installer entrypoints present). An empty or placeholder-only tree (e.g. `.gitkeep`) is **non-authoritative**: the greenfield orchestrator **warns and falls through** to `vendor/ai-dev-kit/` (or configured vendor root). Do not require `rm -rf packages` as the happy path.
+
+### 5. Lean missing workflow YAML (FR-110)
+
+When RW install runs with an intentional lean/vendor `scripts_path` (or the installer itself executes from `vendor/`) and project-root `workflows/release-workflow/release-workflow.yaml` is absent, the installer reports **SUCCESS** with an advisory (`ADK-I03.E90:W01`), **not** PARTIAL. Other install warnings may still yield PARTIAL.
+
 ---
 
 ## Consequences
@@ -70,6 +78,8 @@ Greenfield documentation may be opinionated for speed and clarity. That does **n
 - [`framework-dependency-architecture.md`](framework-dependency-architecture.md) — dependency and packaging direction.
 - [`INSTALL_IN_YOUR_PROJECT.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/INSTALL_IN_YOUR_PROJECT.md) — adopt-facing entry (Adopter Path Selector + greenfield happy path vs brownfield modular adoption).
 - [`rw-validators-consumer-layout.md`](https://github.com/RMS-Ltd/ai-dev-kit/blob/main/packages/frameworks/workflow-mgt/docs/rw-validators-consumer-layout.md) — example of **contract-first** integration for vendored workflow management.
+- [FR-110](../../kanban/fbu/FR-110-lean-adopter-distribution-footprint-and-vendor-bundle.md) — lean vendor footprint; scripts_path under vendor.
+- [BR-115](../../kanban/fbu/BR-115-empty-packages-frameworks-placeholder-blocks-vendor.md) — empty `packages/frameworks/` fallthrough.
 - [E6:S09 — AI Dev Kit installation and adopter integration](../../kanban/epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration.md) — Kanban story for FR-080–082.
 - [FR-080](../../kanban/fbu/FR-080-greenfield-installation-process.md) — delivery: end-to-end greenfield installation process.
 - [FR-081](../../kanban/fbu/FR-081-brownfield-modular-adopter-integration.md) — delivery: brownfield modular adopter integration.

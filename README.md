@@ -11,7 +11,7 @@
 
 **A comprehensive toolkit for AI-assisted development workflows**
 
-**Version (SemVer):** `v0.4.1250` | **Internal:** `v0.6.9.46+0` (E06:S09:T46 — fynd.deals FB intake / BR-115 kanban init) | **Last Updated:** 2026-07-13
+**Version (SemVer):** `v0.4.1251` | **Internal:** `v0.6.9.46+1` (E06:S09:T46 — BR-115 fallthrough + lean SUCCESS) | **Last Updated:** 2026-07-13
 
 > **SemVer ordering (`task_touch`):** Compare releases by **core** (`0.4.1198` here), not by `+BUILD`. The `+1` suffix mirrors internal build metadata for traceability only — see [ADR-031](docs/architecture/standards-and-adrs/ADR-031-external-semver-build-metadata-display-policy.md).
 

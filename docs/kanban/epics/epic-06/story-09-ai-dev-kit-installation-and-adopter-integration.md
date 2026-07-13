@@ -13,8 +13,8 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** Large  
 **Created:** 2026-04-19  
-**Last updated:** 2026-07-13 (v0.6.9.46+0 – Kanban documentation setup)
-**Version:** v0.6.9.46+0
+**Last updated:** 2026-07-13 (v0.6.9.46+1 – Kanban documentation setup)
+**Version:** v0.6.9.46+1
 **Code:** E6S09
 
 ---
@@ -120,7 +120,7 @@ housekeeping_policy: keep
 
 - [x] **E06:S09:T45 – Board timestamp carry-forward (FR-144 / K-02)** - ✅ COMPLETE (MEDIUM — **v0.6.9.45+1**; timestamp index + restoration helper) — [Task](story-09-ai-dev-kit-installation-and-adopter-integration/T45-board-timestamp-carry-forward-fr144.md) | [FR-144](../../fbu/FR-144-board-timestamp-carry-forward-ukw-kma.md) | [IPP-E06S09T45](../../../implementation-cycles/IPP-E06S09T45-board-timestamp-carry-forward-fr144.md) | [K-02](../../../../adk-install-into-sbl/attempt-12/feedback-package/FB-ADK-K02-board-timestamp-loss.md)
 
-- [ ] **E06:S09:T46 – fynd.deals greenfield + KMA L1 FB intake (#90)** - 📋 TODO (HIGH — **v0.6.9.46+0** / SemVer v0.4.1250; BR-115 kanban init) — [Task](story-09-ai-dev-kit-installation-and-adopter-integration/T46-fynd-deals-greenfield-kma-l1-fb-intake.md) | [FB-ADK-FYND](../../fbu/FB-ADK-FYND-GREENFIELD-KMA-L1.md) | [BR-115](../../fbu/BR-115-empty-packages-frameworks-placeholder-blocks-vendor.md) | [#90](https://github.com/RMS-Ltd/ai-dev-kit/issues/90) | —No IPP—
+- [x] **E06:S09:T46 – fynd.deals greenfield + KMA L1 FB intake (#90)** - ✅ COMPLETE (HIGH — **v0.6.9.46+1** / SemVer v0.4.1251; BR-115 + lean SUCCESS) — [Task](story-09-ai-dev-kit-installation-and-adopter-integration/T46-fynd-deals-greenfield-kma-l1-fb-intake.md) | [FB-ADK-FYND](../../fbu/FB-ADK-FYND-GREENFIELD-KMA-L1.md) | [BR-115](../../fbu/BR-115-empty-packages-frameworks-placeholder-blocks-vendor.md) | [#90](https://github.com/RMS-Ltd/ai-dev-kit/issues/90) | [IPP-E06S09T46](../../../implementation-cycles/IPP-E06S09T46-fynd-deals-fb-br115-lean-partial.md)
 
 ---
 

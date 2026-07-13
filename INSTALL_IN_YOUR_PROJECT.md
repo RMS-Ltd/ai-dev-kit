@@ -118,9 +118,9 @@ python3 "vendor/ai-dev-kit/packages/frameworks/workflow-mgt/scripts/install_gree
   --config config/greenfield-rw-install-input.yaml
 ```
 
-The orchestrator resolves installer scripts under `--vendor-root` when `packages/frameworks/` is not present at the project root (no manual `packages` symlink required). A project-root `packages/` tree, if present, takes precedence.
+The orchestrator resolves installer scripts under `--vendor-root` when `packages/frameworks/` is **absent** at the project root, **or** when it is present but **empty / placeholder-only** (e.g. `.gitkeep` with no installer entrypoints) — the orchestrator **warns and falls through** to vendor ([BR-115](docs/kanban/fbu/BR-115-empty-packages-frameworks-placeholder-blocks-vendor.md); [ADR-003](docs/architecture/standards-and-adrs/ADR-003-greenfield-vs-brownfield-adoption.md) §4). A **usable** project-root `packages/frameworks/` tree (installer scripts present) still takes precedence.
 
-**Lean RW expectation:** greenfield mode C scaffolds `rw-config.yaml`, `.cursorrules`, and version/changelog stubs — it does **not** copy full `workflows/` YAML into your repo (those remain under the vendor tree). Validators use `rw-config.yaml` `scripts_path`.
+**Lean RW expectation:** greenfield mode C scaffolds `rw-config.yaml`, `.cursorrules`, and version/changelog stubs — it does **not** copy full `workflows/` YAML into your repo (those remain under the vendor tree). Validators use `rw-config.yaml` `scripts_path`. When `scripts_path` is under `vendor/` (or the installer runs from vendor) and project-root workflow YAML is missing, RW install reports **SUCCESS** with advisory `ADK-I03.E90:W01`, **not** PARTIAL.
 
 **Adopter scope:** completing the greenfield install exercise does not require adopting ADK template kanban as your operational PM layer. Projects with legacy kanban may defer integration per [FR-081](docs/kanban/fbu/FR-081-brownfield-modular-adopter-integration.md) (see [UXR-025](docs/kanban/fbu/UXR-025-starborn-legacy-greenfield-install-diary.md) / [triage matrix](docs/knowledge/analysis/projects/starborn-legacy-install-triage-matrix.md)).
 

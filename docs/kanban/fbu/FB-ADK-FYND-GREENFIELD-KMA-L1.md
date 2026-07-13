@@ -100,11 +100,11 @@ Greenfield ADK v0.4.1247 install on **fynd.deals** reached Install RC **PASS** a
 
 | ID | Severity | Topic | Routing |
 |----|----------|-------|---------|
-| **F1** | HIGH | Empty project-root `packages/frameworks/` (`.gitkeep`) precedes vendor | **[BR-115](BR-115-empty-packages-frameworks-placeholder-blocks-vendor.md)** / T46 |
-| **F2** | MEDIUM | PyYAML missing before orchestrator | [BR-082](BR-082-rw-install-missing-pyyaml-preflight.md) family — re-exercise on greenfield path |
-| **F3** | MEDIUM | RW install wrote unpadded `story_doc_pattern` | [BR-083](BR-083-rw-install-default-patterns-mismatch-fresh-kanban-layout.md) / [BR-086](BR-086-rw-install-lowercase-fresh-kanban-patterns-signoff.md) — regression on orchestrator path |
-| **F4** | LOW–MEDIUM | Sign-off invokes bare `python` | BR-082 family |
-| **F5** | LOW–MEDIUM | Lean RW workflow YAML PARTIAL | FR-110 semantics clarity (T46 triage) |
+| **F1** | HIGH | Empty project-root `packages/frameworks/` (`.gitkeep`) precedes vendor | **[BR-115](BR-115-empty-packages-frameworks-placeholder-blocks-vendor.md)** / T46 — **attempted fix** @ IDW |
+| **F2** | MEDIUM | PyYAML missing before orchestrator | [BR-082](BR-082-rw-install-missing-pyyaml-preflight.md) family — **deferred** (docs; host venv) |
+| **F3** | MEDIUM | RW install wrote unpadded `story_doc_pattern` | [BR-083](BR-083-rw-install-default-patterns-mismatch-fresh-kanban-layout.md) / [BR-086](BR-086-rw-install-lowercase-fresh-kanban-patterns-signoff.md) — **deferred** (re-verify on newer pin) |
+| **F4** | LOW–MEDIUM | Sign-off invokes bare `python` | BR-082 family — **deferred** |
+| **F5** | LOW–MEDIUM | Lean RW workflow YAML PARTIAL | **Addressed** — SUCCESS + advisory when lean vendor `scripts_path` (T46 RF4) |
 
 ### Overall UAT Assessment
 

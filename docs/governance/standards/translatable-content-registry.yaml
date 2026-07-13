@@ -81,7 +81,7 @@ packages:
         - packages/frameworks/workflow-mgt/scripts/install_release_workflow.py
       installer:
         file: keys/installer.yaml
-        key_count: 99
+        key_count: 101
         source_surfaces:
         - packages/frameworks/workflow-mgt/scripts/install_release_workflow.py
     whole_file_categories:

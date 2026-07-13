@@ -85,6 +85,8 @@ keys:
   installer.run.dry_run_cursorrules: "🔍 [EJECUCIÓN EN SECO] Se actualizaría: {{path}}"
   installer.run.workflow_not_found: "⚠️  No se encontró el archivo de workflow: {{path}}"
   installer.run.workflow_copy_hint: "   Puede que deba copiar workflows/release-workflow/release-workflow.yaml a su proyecto."
+  installer.run.workflow_lean_advisory: "   Lean install (FR-110): validators use vendor scripts_path ({{scripts_path}}); project-root workflow YAML is optional. Status remains SUCCESS."
+  installer.run.lean_workflow_success_note: "Note: Missing project-root workflow YAML was treated as lean advisory (ADK-I03.E90:W01), not PARTIAL."
   installer.run.dry_run_complete: "🔍 EJECUCIÓN EN SECO COMPLETADA — No se modificó ningún archivo"
   installer.run.partial_heading: "⚠️  INSTALACIÓN PARCIAL"
   installer.run.partial_issues: "Aspectos que requieren seguimiento:"

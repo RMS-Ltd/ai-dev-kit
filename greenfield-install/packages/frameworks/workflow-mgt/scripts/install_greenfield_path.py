@@ -94,17 +94,41 @@ Layered install sequence (Path 2 / full-stack brownfield target):
 """
 
 
+_FRAMEWORK_INSTALLER_ENTRYPOINTS = (
+    Path("packages/frameworks/workflow-mgt/scripts/install_release_workflow.py"),
+    Path("packages/frameworks/kanban/scripts/install_kanban_framework.py"),
+)
+
+
+def is_usable_frameworks_tree(root: Path) -> bool:
+    """True when ``root`` has installer entrypoints (not empty / .gitkeep-only)."""
+    return all((root / rel).is_file() for rel in _FRAMEWORK_INSTALLER_ENTRYPOINTS)
+
+
 def resolve_frameworks_base(project_root: Path, vendor_root: Path) -> Path:
     """
     Directory whose ``packages/frameworks/`` tree hosts installer scripts.
 
-    Project-root ``packages/frameworks`` wins when present; otherwise use
-    ``vendor_root`` when it contains the lean vendor layout (UXR-025 F5).
+    A populated project-root ``packages/frameworks`` wins. Empty or placeholder
+    trees (e.g. ``.gitkeep`` only) are non-authoritative: warn and fall through
+    to ``vendor_root`` when the vendor layout is usable (BR-115 / FR-110).
+    Otherwise use ``vendor_root`` when it contains ``packages/frameworks``.
     """
     project_fw = project_root / "packages" / "frameworks"
-    if project_fw.is_dir():
-        return project_root
     vendor_fw = vendor_root / "packages" / "frameworks"
+
+    if project_fw.is_dir():
+        if is_usable_frameworks_tree(project_root):
+            return project_root
+        if is_usable_frameworks_tree(vendor_root):
+            print(
+                "\n⚠️  Project packages/frameworks/ is empty or incomplete "
+                "(placeholder); falling through to vendor tree for installer "
+                f"scripts: {vendor_root}"
+            )
+            return vendor_root
+        return project_root
+
     if vendor_fw.is_dir():
         return vendor_root
     return project_root

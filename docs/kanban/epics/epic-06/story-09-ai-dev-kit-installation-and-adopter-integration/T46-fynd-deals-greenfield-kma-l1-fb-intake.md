@@ -9,13 +9,16 @@ housekeeping_policy: keep
 # E06:S09:T46 — fynd.deals greenfield + KMA L1 FB intake (#90)
 
 **Task ID:** E06:S09:T46  
-**Status:** TODO  
+**Status:** COMPLETE  
 **Priority:** HIGH  
 **Created:** 2026-07-13  
-**Last updated:** 2026-07-13 (RW -k — kanban documentation setup)  
-**Version:** v0.6.9.46+0  
-**Version Anchor:** v0.6.9.46+0  
+**Last updated:** 2026-07-13 (✅ COMPLETE v0.6.9.46+1 — BR-115 + lean SUCCESS)  
+**Completed:** 2026-07-13  
+**Version:** v0.6.9.46+1  
+**Version Anchor:** v0.6.9.46+1  
 **Code:** E06S09T46
+
+**Planning:** [IPP-E06S09T46](../../../../implementation-cycles/IPP-E06S09T46-fynd-deals-fb-br115-lean-partial.md)
 
 **Intake:** [GitHub #90](https://github.com/RMS-Ltd/ai-dev-kit/issues/90) · [FB-ADK-FYND-GREENFIELD-KMA-L1](../../../fbu/FB-ADK-FYND-GREENFIELD-KMA-L1.md)
 
@@ -41,7 +44,7 @@ housekeeping_policy: keep
 - Triage FB findings F1–F5 — wire each to BR/FR or explicit deferral with rationale
 - Implement **BR-115** (AC1–AC4): detect placeholder `packages/frameworks/`, warn, fall through to vendor; add regression test + docs
 - Re-exercise / document regression scope for BR-082 / BR-083 / BR-086 on the **greenfield orchestrator** path (file follow-on tasks only if still open after triage)
-- Clarify lean RW workflow YAML PARTIAL vs SUCCESS when vendor `scripts_path` is intentional (FR-110)
+- Clarify lean RW workflow YAML: **SUCCESS + advisory** when vendor `scripts_path` intentional (not PARTIAL) — IPW AC4 choice 2
 - Close GitHub [#90](https://github.com/RMS-Ltd/ai-dev-kit/issues/90) when AC met
 
 ### Out of scope
@@ -54,6 +57,7 @@ housekeeping_policy: keep
 
 ## Input
 
+- **IPW planning artifact:** [IPP-E06S09T46-fynd-deals-fb-br115-lean-partial.md](../../../../implementation-cycles/IPP-E06S09T46-fynd-deals-fb-br115-lean-partial.md) (FR-042)
 - [#90](https://github.com/RMS-Ltd/ai-dev-kit/issues/90) UAT body
 - [FB-ADK-FYND-GREENFIELD-KMA-L1](../../../fbu/FB-ADK-FYND-GREENFIELD-KMA-L1.md)
 - Adopter pack paths listed in FB Supporting Evidence
@@ -77,11 +81,11 @@ housekeeping_policy: keep
 ## Acceptance Criteria
 
 - [x] **AC1:** FB + BR-115 bidirectionally wired; story checklist + `kboard.md` row present
-- [ ] **AC2:** BR-115 AC1–AC4 implemented and covered by automated test
-- [ ] **AC3:** F2–F5 triage table completed (route or defer with rationale)
-- [ ] **AC4:** Lean RW YAML PARTIAL semantics documented or fixed (SUCCESS + guidance when vendor path intentional)
-- [ ] **AC5:** [#90](https://github.com/RMS-Ltd/ai-dev-kit/issues/90) closed with intake summary link
-- [ ] **AC6:** RW release anchors E06:S09:T46
+- [x] **AC2:** BR-115 AC1–AC4 implemented and covered by automated test
+- [x] **AC3:** F2–F5 triage table completed (route or defer with rationale)
+- [x] **AC4:** Lean RW YAML: when vendor `scripts_path` is intentional, emit **SUCCESS + advisory** (not PARTIAL) — IPW operator choice 2 / IPP RF4
+- [x] **AC5:** [#90](https://github.com/RMS-Ltd/ai-dev-kit/issues/90) closed with intake summary link
+- [x] **AC6:** RW release anchors E06:S09:T46
 
 ---
 
@@ -89,11 +93,11 @@ housekeeping_policy: keep
 
 | ID | Severity | Topic | Routing |
 |----|----------|-------|---------|
-| **F1** | HIGH | Empty `packages/frameworks/` precedes vendor | **[BR-115](../../../fbu/BR-115-empty-packages-frameworks-placeholder-blocks-vendor.md)** — this task |
-| **F2** | MEDIUM | PyYAML missing before orchestrator | [BR-082](../../../fbu/BR-082-rw-install-missing-pyyaml-preflight.md) — verify greenfield Phase 0 coverage |
-| **F3** | MEDIUM | Unpadded `story_doc_pattern` from RW install | [BR-083](../../../fbu/BR-083-rw-install-default-patterns-mismatch-fresh-kanban-layout.md) / [BR-086](../../../fbu/BR-086-rw-install-lowercase-fresh-kanban-patterns-signoff.md) — regression check |
-| **F4** | LOW–MEDIUM | Bare `python` in sign-off | BR-082 family |
-| **F5** | LOW–MEDIUM | Lean RW workflow YAML PARTIAL | FR-110 semantics (this task AC4) |
+| **F1** | HIGH | Empty `packages/frameworks/` precedes vendor | **[BR-115](../../../fbu/BR-115-empty-packages-frameworks-placeholder-blocks-vendor.md)** — implemented @ IDW (attempted fix) |
+| **F2** | MEDIUM | PyYAML missing before orchestrator | **Defer** — [BR-082](../../../fbu/BR-082-rw-install-missing-pyyaml-preflight.md) FIXED for RW `--check-deps`; greenfield orchestrator still relies on host venv. Document in INSTALL; no new task unless Phase 0 preflight gap reopens. |
+| **F3** | MEDIUM | Unpadded `story_doc_pattern` from RW install | **Defer** — [BR-083](../../../fbu/BR-083-rw-install-default-patterns-mismatch-fresh-kanban-layout.md) / [BR-086](../../../fbu/BR-086-rw-install-lowercase-fresh-kanban-patterns-signoff.md) marked RESOLVED; fynd hit on v0.4.1247 may be pin lag. Re-verify on next pin ≥ this release; file follow-on only if still fails. |
+| **F4** | LOW–MEDIUM | Bare `python` in sign-off | **Defer** — sign-off contract hardcodes `command: python` (BR-082 family). Prefer `sys.executable` follow-on if still FAIL on machines without `python` shim; not blocking T46. |
+| **F5** | LOW–MEDIUM | Lean RW workflow YAML PARTIAL | **Done** — SUCCESS + `ADK-I03.E90:W01` advisory when vendor `scripts_path` / vendor installer (RF4) |
 
 ---
 
@@ -131,6 +135,17 @@ housekeeping_policy: keep
 **Associated FB/BR:**
 - [FB-ADK-FYND-GREENFIELD-KMA-L1](../../../fbu/FB-ADK-FYND-GREENFIELD-KMA-L1.md) — host UAT pack
 - [BR-115](../../../fbu/BR-115-empty-packages-frameworks-placeholder-blocks-vendor.md) — primary defect
+
+---
+
+## References
+
+- [IPP-E06S09T46](../../../../implementation-cycles/IPP-E06S09T46-fynd-deals-fb-br115-lean-partial.md) — approved IPW plan (FR-042)
+- [BR-115](../../../fbu/BR-115-empty-packages-frameworks-placeholder-blocks-vendor.md)
+- [FB-ADK-FYND-GREENFIELD-KMA-L1](../../../fbu/FB-ADK-FYND-GREENFIELD-KMA-L1.md)
+- [#90](https://github.com/RMS-Ltd/ai-dev-kit/issues/90)
+- [ADR-003](../../../../architecture/standards-and-adrs/ADR-003-greenfield-vs-brownfield-adoption.md) (planned UPDATE)
+- [FR-110](../../../fbu/FR-110-lean-adopter-distribution-footprint-and-vendor-bundle.md)
 
 ---
 

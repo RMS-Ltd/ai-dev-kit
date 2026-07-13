@@ -57,6 +57,45 @@ def test_resolve_frameworks_base_uses_vendor_when_no_project_packages(
     assert greenfield_mod.resolve_frameworks_base(project, vendor) == vendor
 
 
+def test_resolve_frameworks_base_empty_project_packages_falls_through_to_vendor(
+    tmp_path, greenfield_mod, capsys
+):
+    """BR-115: empty packages/frameworks/ must not block vendor fallthrough."""
+    project = tmp_path / "project"
+    vendor = tmp_path / "vendor"
+    project.mkdir()
+    vendor.mkdir()
+    (project / "packages" / "frameworks").mkdir(parents=True)
+    _write_stub_scripts(vendor)
+
+    assert greenfield_mod.resolve_frameworks_base(project, vendor) == vendor
+    captured = capsys.readouterr()
+    assert "falling through to vendor" in captured.out
+
+
+def test_resolve_frameworks_base_gitkeep_only_falls_through_to_vendor(
+    tmp_path, greenfield_mod
+):
+    project = tmp_path / "project"
+    vendor = tmp_path / "vendor"
+    project.mkdir()
+    vendor.mkdir()
+    fw = project / "packages" / "frameworks"
+    fw.mkdir(parents=True)
+    (fw / ".gitkeep").write_text("", encoding="utf-8")
+    _write_stub_scripts(vendor)
+
+    assert greenfield_mod.resolve_frameworks_base(project, vendor) == vendor
+
+
+def test_is_usable_frameworks_tree(tmp_path, greenfield_mod):
+    root = tmp_path / "root"
+    root.mkdir()
+    assert greenfield_mod.is_usable_frameworks_tree(root) is False
+    _write_stub_scripts(root)
+    assert greenfield_mod.is_usable_frameworks_tree(root) is True
+
+
 def test_build_rw_command_includes_non_interactive_and_config(tmp_path, greenfield_mod):
     base = tmp_path / "base"
     _write_stub_scripts(base)

@@ -1347,19 +1347,21 @@ Canonical registry: `packages/frameworks/workflow-mgt/config/install-error-codes
 **Remediation:**
 - Complete each numbered follow-up item printed at end of install.
 - Re-run install_github_issue_signoff when ready.
+- If only workflow YAML is missing under lean FR-110 (vendor scripts_path), expect SUCCESS + ADK-I03.E90:W01 advisory instead of PARTIAL.
 
-**See also:** FR-080
+**See also:** FR-080, FR-110, BR-115
 
 ### ADK-I03.E90:W01 {/* #adk-i03-e90-w01 */}
 
-**Summary:** RW install partial (non-blocking warning aggregate)
+**Summary:** Lean missing workflow YAML advisory (non-PARTIAL)
 
-**Symptom:** Same as ADK-I03.E90; emitted when exit code is 0 but PARTIAL was reported.
+**Symptom:** Project-root workflows/release-workflow/release-workflow.yaml is absent while scripts_path (or installer) is under vendor/; install status remains SUCCESS.
 
 **Remediation:**
-- Address follow-up items before first RW release in the adopter repo.
+- Optional: copy workflow YAML to project root only if you need local workflow patching.
+- Otherwise keep using vendor scripts_path validators (lean FR-110).
 
-**See also:** FR-080
+**See also:** FR-080, FR-110, BR-115
 
 ### ADK-I04.E01 {/* #adk-i04-e01 */}
 

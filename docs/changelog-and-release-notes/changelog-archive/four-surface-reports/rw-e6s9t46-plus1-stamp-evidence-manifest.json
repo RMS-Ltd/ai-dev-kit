@@ -1,0 +1,8 @@
+{
+  "rows": {
+    "E06:S09:T46": {
+      "allowed": true,
+      "reason": "RW Step 7 scoped archival — terminal COMPLETE v0.6.9.46+1; pruned from active kboard; ledger upsert (FR-109)"
+    }
+  }
+}

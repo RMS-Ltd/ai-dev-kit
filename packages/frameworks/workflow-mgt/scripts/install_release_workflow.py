@@ -147,6 +147,48 @@ def _print_msg(
     line = _msg(project_root, key, substitutions)
     print(format_locale_line_for_direction(_active_installer_locale(project_root), line))
 
+
+def is_vendor_scripts_path(scripts_path: str) -> bool:
+    """True when scripts_path points into a vendor/ lean ADK tree (FR-110 / BR-115)."""
+    if not scripts_path:
+        return False
+    parts = Path(scripts_path.replace("\\", "/")).parts
+    return "vendor" in parts
+
+
+def installer_runs_from_vendor_tree(
+    project_root: Path,
+    *,
+    installer_file: Optional[Path] = None,
+) -> bool:
+    """True when this installer script lives under vendor/ relative to project_root."""
+    script = Path(installer_file or __file__).resolve()
+    proj = project_root.resolve()
+    try:
+        rel = script.relative_to(proj)
+        return bool(rel.parts) and rel.parts[0] == "vendor"
+    except ValueError:
+        return "vendor" in script.parts
+
+
+def is_intentional_lean_missing_workflow(
+    project_root: Path,
+    config: Dict,
+    *,
+    installer_file: Optional[Path] = None,
+) -> bool:
+    """
+    Lean FR-110: missing project-root workflow YAML is expected when validators
+    use vendor scripts_path or the installer itself runs from vendor/.
+    """
+    scripts_path = str(config.get("scripts_path") or "")
+    if is_vendor_scripts_path(scripts_path):
+        return True
+    return installer_runs_from_vendor_tree(
+        project_root, installer_file=installer_file
+    )
+
+
 # Minimal RW installer runtime dependencies (see repo setup.py).
 INSTALLER_DEPENDENCIES: Tuple[Tuple[str, str, str], ...] = (
     ("yaml", "pyyaml", "pyyaml>=6.0"),
@@ -1855,6 +1897,7 @@ Brownfield (existing repo):
     
     # Patch workflow YAML
     workflow_path = project_root / "workflows" / "release-workflow" / "release-workflow.yaml"
+    lean_workflow_advisory = False
     if workflow_path.exists():
         result = patch_workflow_yaml(workflow_path, config, dry_run=args.dry_run)
         print(f"\n{result}")
@@ -1869,8 +1912,19 @@ Brownfield (existing repo):
                 {"path": str(workflow_path)},
             )
         )
-        print(_msg(project_root, "installer.run.workflow_copy_hint"))
-        install_warnings.append("Workflow file not found for patching")
+        if is_intentional_lean_missing_workflow(project_root, config):
+            lean_workflow_advisory = True
+            print(
+                _msg(
+                    project_root,
+                    "installer.run.workflow_lean_advisory",
+                    {"scripts_path": str(config.get("scripts_path") or "")},
+                )
+            )
+            emit_install_error("ADK-I03.E90:W01", file=sys.stderr)
+        else:
+            print(_msg(project_root, "installer.run.workflow_copy_hint"))
+            install_warnings.append("Workflow file not found for patching")
     
     print("\n" + "=" * 60)
     if args.dry_run:
@@ -1901,6 +1955,11 @@ Brownfield (existing repo):
         else:
             print(_msg(project_root, "installer.run.complete_heading"))
             print("\n" + _msg(project_root, "installer.run.complete_status"))
+            if lean_workflow_advisory:
+                print(
+                    "\n"
+                    + _msg(project_root, "installer.run.lean_workflow_success_note")
+                )
         print("\n" + _msg(project_root, "installer.run.next_steps"))
         print(_msg(project_root, "installer.run.next_review_config"))
         if version_file_blocking:

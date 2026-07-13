@@ -11,8 +11,8 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
-## [0.6.9.46+0] - 13-07-26
+## [0.6.9.46+1] - 13-07-26
 
-E06:S09:T46 — Kanban documentation setup for fynd.deals greenfield + KMA L1 FB intake (#90 / BR-115). SemVer **v0.4.1250**.
+E06:S09:T46 — **Change implemented:** BR-115 empty-packages vendor fallthrough; lean missing workflow YAML → SUCCESS + advisory (not PARTIAL). SemVer **v0.4.1251**.
 
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.6.9.46+0.md)
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.6.9.46+1.md)

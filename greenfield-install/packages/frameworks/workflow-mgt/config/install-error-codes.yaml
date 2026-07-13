@@ -169,18 +169,24 @@ codes:
     remediation:
       - "Complete each numbered follow-up item printed at end of install."
       - "Re-run install_github_issue_signoff when ready."
+      - "If only workflow YAML is missing under lean FR-110 (vendor scripts_path), expect SUCCESS + ADK-I03.E90:W01 advisory instead of PARTIAL."
     see_also:
       - FR-080
+      - FR-110
+      - BR-115
     introduced_in_adk_semver: "0.4.900"
 
   ADK-I03.E90:W01:
-    summary: RW install partial (non-blocking warning aggregate)
-    symptom: Same as ADK-I03.E90; emitted when exit code is 0 but PARTIAL was reported.
+    summary: Lean missing workflow YAML advisory (non-PARTIAL)
+    symptom: Project-root workflows/release-workflow/release-workflow.yaml is absent while scripts_path (or installer) is under vendor/; install status remains SUCCESS.
     remediation:
-      - "Address follow-up items before first RW release in the adopter repo."
+      - "Optional: copy workflow YAML to project root only if you need local workflow patching."
+      - "Otherwise keep using vendor scripts_path validators (lean FR-110)."
     see_also:
       - FR-080
-    introduced_in_adk_semver: "0.4.900"
+      - FR-110
+      - BR-115
+    introduced_in_adk_semver: "0.4.1250"
 
   ADK-I04.E01:
     summary: Install GitHub sign-off not ready

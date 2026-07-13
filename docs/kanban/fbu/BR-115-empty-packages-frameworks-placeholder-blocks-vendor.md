@@ -14,14 +14,15 @@ housekeeping_policy: keep
 **Submitted By:** earlution / fynd.deals UAT ([#90](https://github.com/RMS-Ltd/ai-dev-kit/issues/90))  
 **Priority:** HIGH  
 **Severity:** HIGH (hard-stop on first greenfield orchestrator run until layout workaround)  
-**Status:** OPEN  
+**Status:** FIXED (attempted — pending operator verification on fynd replay)  
 **GitHub Issue:** [#90](https://github.com/RMS-Ltd/ai-dev-kit/issues/90)  
 **Implementing Task:** [E06:S09:T46](../epics/epic-06/story-09-ai-dev-kit-installation-and-adopter-integration/T46-fynd-deals-greenfield-kma-l1-fb-intake.md)  
 **Source FB:** [FB-ADK-FYND-GREENFIELD-KMA-L1](FB-ADK-FYND-GREENFIELD-KMA-L1.md)  
 **Created:** 2026-07-13  
-**Last updated:** 2026-07-13 (RW -k E06:S09:T46 — **v0.6.9.46+0** / SemVer v0.4.1250)  
+**Last updated:** 2026-07-13 (IDW E06:S09:T46 — `resolve_frameworks_base` fallthrough)  
 **Version:** v0.6.9.46+0  
 **Kanban init:** v0.6.9.46+0  
+**Attempted fix:** IDW E06:S09:T46 — empty/placeholder `packages/frameworks/` → vendor fallthrough + warn  
 
 **Related:** [FR-110](FR-110-lean-adopter-distribution-footprint-and-vendor-bundle.md) · [FR-135](FR-135-guided-install-orchestrator-zero-manual-steps.md) · [FR-080](FR-080-greenfield-installation-process.md) · [BR-112](BR-112-greenfield-orchestrator-install-rc-gaps.md)
 
@@ -96,17 +97,17 @@ rm -rf packages
 
 ## Acceptance Criteria (Fix Requirements)
 
-- [ ] **AC1:** Empty or placeholder-only `packages/frameworks/` is detected as non-authoritative.
-- [ ] **AC2:** Install path resolution warns and falls through to `vendor/ai-dev-kit/` (or configured vendor root).
-- [ ] **AC3:** Regression test covers empty-`packages/` + populated vendor (no hard-stop).
-- [ ] **AC4:** Operator docs / Install RC guidance mention the placeholder trap and expected fallthrough.
+- [x] **AC1:** Empty or placeholder-only `packages/frameworks/` is detected as non-authoritative.
+- [x] **AC2:** Install path resolution warns and falls through to `vendor/ai-dev-kit/` (or configured vendor root).
+- [x] **AC3:** Regression test covers empty-`packages/` + populated vendor (no hard-stop).
+- [x] **AC4:** Operator docs / Install RC guidance mention the placeholder trap and expected fallthrough.
 
 **Verification Method:**
 - [x] Test suite execution
-- [x] Manual testing (fynd replay or fixture)
+- [ ] Manual testing (fynd replay or fixture)
 
 **Fix Verification Status:**
-- [ ] Attempted Fix (pending verification)
+- [x] Attempted Fix (pending operator verification)
 
 ---
 
@@ -114,7 +115,12 @@ rm -rf packages
 
 ### Fix Attempts
 
-_(none yet — intake 2026-07-13)_
+#### Attempt 1: E06:S09:T46 IDW - 2026-07-13
+
+**Fix Description:**
+`is_usable_frameworks_tree` + `resolve_frameworks_base` fallthrough in `install_greenfield_path.py`; pytest coverage; INSTALL + ADR-003 docs.
+
+**Verification:** Automated tests green; operator fynd replay pending.
 
 ---
 

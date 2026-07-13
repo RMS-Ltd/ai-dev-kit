@@ -85,6 +85,8 @@ keys:
   installer.run.dry_run_cursorrules: "🔍 [SIMULATION] Mise à jour prévue de : {{path}}"
   installer.run.workflow_not_found: "⚠️  Fichier de workflow introuvable : {{path}}"
   installer.run.workflow_copy_hint: "   Vous devrez peut-être copier workflows/release-workflow/release-workflow.yaml dans votre projet."
+  installer.run.workflow_lean_advisory: "   Lean install (FR-110): validators use vendor scripts_path ({{scripts_path}}); project-root workflow YAML is optional. Status remains SUCCESS."
+  installer.run.lean_workflow_success_note: "Note: Missing project-root workflow YAML was treated as lean advisory (ADK-I03.E90:W01), not PARTIAL."
   installer.run.dry_run_complete: "🔍 SIMULATION TERMINÉE — Aucun fichier modifié"
   installer.run.partial_heading: "⚠️  INSTALLATION PARTIELLE"
   installer.run.partial_issues: "Points nécessitant un suivi :"
