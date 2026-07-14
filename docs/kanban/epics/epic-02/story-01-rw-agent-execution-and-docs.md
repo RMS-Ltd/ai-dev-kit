@@ -13,8 +13,8 @@ housekeeping_policy: keep
 **Estimated Effort:** [TBD]  
 **Created:** 2025-12-02  
 **Completed:** N/A (story reopened for ongoing RW validation work)
-**Last updated:** 2026-06-10 (v0.2.1.31+1 – E02:S01:T31 UXR-027)
-**Version:** v0.2.1.31+1
+**Last updated:** 2026-07-14 (v0.2.1.30+9 – Kanban documentation setup)
+**Version:** v0.2.1.30+9
 **Code:** E2S01
 
 ---

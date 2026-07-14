@@ -13,8 +13,8 @@ housekeeping_policy: keep
 **Priority:** CRITICAL  
 **Estimated Effort:** Very Large (multi-wave meta program)  
 **Created:** 2026-06-09  
-**Last updated:** 2026-06-10 (RW **v0.2.1.30+8** — FR-122 AC4 sign-off)  
-**Version Anchor:** v0.2.1.30+8  
+**Last updated:** 2026-07-14 (v0.2.1.30+9 — FR-122 ↔ FR-146 Related wire / kanban-init)  
+**Version Anchor:** v0.2.1.30+9  
 **Code:** E02S01T30
 
 Publication Status: NOT_APPLICABLE

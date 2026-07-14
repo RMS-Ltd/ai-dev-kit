@@ -11,8 +11,8 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
-## [0.2.3.15+0] - 14-07-26
+## [0.2.1.30+9] - 14-07-26
 
-E02:S03:T15 — **Kanban documentation setup:** FR-146 Publish Main Workflow (PMW) intake — move project README SemVer stamping off RW to main-publish; FR-122 Related back-wire. SemVer **v0.4.1253**.
+E02:S01:T30 — **Kanban documentation setup:** FR-122 ↔ FR-146 Related back-wire / README ownership successor amend. SemVer **v0.4.1254**.
 
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.3.15+0.md)
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.1.30+9.md)

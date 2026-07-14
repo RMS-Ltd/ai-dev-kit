@@ -11,9 +11,9 @@
 
 **A comprehensive toolkit for AI-assisted development workflows**
 
-**Version (SemVer):** `v0.4.1253` | **Internal:** `v0.2.3.15+0` (E02:S03:T15 — FR-146 PMW kanban-init) | **Last Updated:** 2026-07-14
+**Version (SemVer):** `v0.4.1254` | **Internal:** `v0.2.1.30+9` (E02:S01:T30 — FR-122 ↔ FR-146 Related wire) | **Last Updated:** 2026-07-14
 
-> **SemVer ordering (`task_touch`):** Compare releases by **core** (`0.4.1253` here), not by `+BUILD`. The `+BUILD` suffix mirrors internal build metadata for traceability only — see [ADR-031](docs/architecture/standards-and-adrs/ADR-031-external-semver-build-metadata-display-policy.md).
+> **SemVer ordering (`task_touch`):** Compare releases by **core** (`0.4.1254` here), not by `+BUILD`. The `+BUILD` suffix mirrors internal build metadata for traceability only — see [ADR-031](docs/architecture/standards-and-adrs/ADR-031-external-semver-build-metadata-display-policy.md).
 
 [Features](#features) • [Installation](#getting-started) • [Install in Your Project](INSTALL_IN_YOUR_PROJECT.md) • [Documentation](docs/documentation) • **Browsing docs (published site):** [https://rms-ltd.github.io/ai-dev-kit/](https://rms-ltd.github.io/ai-dev-kit/) • [Workflows](#workflows) • [Report Bug](https://github.com/RMS-Ltd/ai-dev-kit/issues) • [Request Feature](https://github.com/RMS-Ltd/ai-dev-kit/issues)
 
