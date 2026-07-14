@@ -14,8 +14,8 @@ housekeeping_policy: keep
 **Priority:** HIGH
 **Estimated Effort:** Medium (per RW wave)
 **Created:** 2026-04-22
-**Last updated:** 2026-06-10 (v0.2.16.3+8 — MWF documentation alignment)
-**Version Anchor:** v0.2.16.3+8
+**Last updated:** 2026-07-14 (v0.2.16.3+9 — adopter install pin / SemVer tip tighten)
+**Version Anchor:** v0.2.16.3+9
 **Code:** E02S16T03
 **Task Type:** Perpetual Maintenance
 
@@ -92,6 +92,8 @@ Documentation drifts across the repository — install pins, integrity guidance,
 **2026-06-09 (v0.2.16.7+2, prior T07):** Lane filed; README SHA-256 integrity section, INSTALL verify flow, greenfield template, ADR-021 pins attributed (`--art`).
 
 **2026-06-10 (v0.2.16.3+7):** Merged E02:S16:T07 into E02:S16:T03; adopted T07 display name; removed markdown-only restriction; released via RW `--art`.
+
+**2026-07-14 (v0.2.16.3+9):** Adopter install pin / SemVer tip tighten — `README.md`, `INSTALL_IN_YOUR_PROJECT.md`, `greenfield-install/README.md` aligned to current SemVer core; SHA verify via release sidecar (dropped stale embedded hash table). SemVer **v0.4.1252**. `RW -d E02:S16:T03 --art`.
 
 ---
 

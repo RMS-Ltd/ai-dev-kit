@@ -140,20 +140,20 @@ python3 vendor/ai-dev-kit/packages/frameworks/workflow-mgt/scripts/verify_vendor
 1. **Release tarball (recommended when disk is tight or git is blocked):** download `greenfield-install-v{semver}.tar.gz` + matching `.sha256` from a [release tag](https://github.com/RMS-Ltd/ai-dev-kit/releases) (FR-110-F5 / [ADR-021](docs/architecture/standards-and-adrs/ADR-021-greenfield-install-ghcr-delivery-channel.md)). **Verify integrity before extract** ([FR-062](docs/kanban/fbu/FR-062-github-release-installation-experience.md)):
 
    ```bash
-   gh release download v0.4.1063 --repo RMS-Ltd/ai-dev-kit \
-     -p 'greenfield-install-v0.4.1063.tar.gz' \
-     -p 'greenfield-install-v0.4.1063.tar.gz.sha256' -D /tmp/adk-dl
-   shasum -a 256 -c /tmp/adk-dl/greenfield-install-v0.4.1063.tar.gz.sha256
-   # Expected: greenfield-install-v0.4.1063.tar.gz: OK
-   # Linux: sha256sum -c /tmp/adk-dl/greenfield-install-v0.4.1063.tar.gz.sha256
+   gh release download v0.4.1252 --repo RMS-Ltd/ai-dev-kit \
+     -p 'greenfield-install-v0.4.1252.tar.gz' \
+     -p 'greenfield-install-v0.4.1252.tar.gz.sha256' -D /tmp/adk-dl
+   shasum -a 256 -c /tmp/adk-dl/greenfield-install-v0.4.1252.tar.gz.sha256
+   # Expected: greenfield-install-v0.4.1252.tar.gz: OK
+   # Linux: sha256sum -c /tmp/adk-dl/greenfield-install-v0.4.1252.tar.gz.sha256
    mkdir -p vendor/ai-dev-kit
-   tar -xzf /tmp/adk-dl/greenfield-install-v0.4.1063.tar.gz \
+   tar -xzf /tmp/adk-dl/greenfield-install-v0.4.1252.tar.gz \
      -C vendor/ai-dev-kit --strip-components=1
    python3 vendor/ai-dev-kit/packages/frameworks/workflow-mgt/scripts/verify_vendor_tree.py \
      --vendor-root vendor/ai-dev-kit
    ```
 
-   Pin `v0.4.1063` tarball SHA-256: `d7519a0642b572eece67c20b05ace026f742b91caf9a07f9901fe39a17423131` (cross-check against the `.sha256` file on the release).
+   Pin the SHA-256 from `greenfield-install-v0.4.1252.tar.gz.sha256` (release sidecar).
 
 2. **Sparse submodule:** submodule `RMS-Ltd/ai-dev-kit` and cone only `greenfield-install/` (needs adequate disk for git objects):
 
@@ -169,10 +169,10 @@ python3 vendor/ai-dev-kit/packages/frameworks/workflow-mgt/scripts/verify_vendor
 4. **GitHub Container Registry (alternate):** when submodules are blocked, pull the lean tree from `ghcr.io` and copy into `vendor/ai-dev-kit/` (same bytes as `greenfield-install/`; see [Packages](https://github.com/RMS-Ltd/ai-dev-kit/packages)):
 
    ```bash
-   # Replace v0.4.1063 with the external SemVer core from the release you are pinning.
-   docker pull ghcr.io/rms-ltd/ai-dev-kit-greenfield:v0.4.1063
+   # Replace v0.4.1252 with the external SemVer core from the release you are pinning.
+   docker pull ghcr.io/rms-ltd/ai-dev-kit-greenfield:v0.4.1252
    mkdir -p vendor/ai-dev-kit
-   cid=$(docker create ghcr.io/rms-ltd/ai-dev-kit-greenfield:v0.4.1063)
+   cid=$(docker create ghcr.io/rms-ltd/ai-dev-kit-greenfield:v0.4.1252)
    docker cp "$cid:/opt/adk/." vendor/ai-dev-kit/
    docker rm "$cid"
    ```
@@ -186,24 +186,24 @@ python3 vendor/ai-dev-kit/packages/frameworks/workflow-mgt/scripts/verify_vendor
    ```bash
    # Bootstrap manifest after first install (once)
    python vendor/ai-dev-kit/packages/frameworks/workflow-mgt/scripts/update_adk_packages.py \
-     init-manifest --channel git --target-tag v0.4.1144
+     init-manifest --channel git --target-tag v0.4.1252
 
    # Check for a newer release
    python vendor/ai-dev-kit/packages/frameworks/workflow-mgt/scripts/update_adk_packages.py \
-     check --target-tag v0.4.1144+1
+     check --target-tag v0.4.1252
 
    # Git vendor submodule: fetch + checkout tag (vendor packages only; host scaffold unchanged)
    python vendor/ai-dev-kit/packages/frameworks/workflow-mgt/scripts/update_adk_packages.py \
-     update --target-tag v0.4.1144+1
+     update --target-tag v0.4.1252
 
    # Tarball / CI fixture path: sync from a fresh vendor tree without git
    python vendor/ai-dev-kit/packages/frameworks/workflow-mgt/scripts/update_adk_packages.py \
-     update --target-tag v0.4.1144+1 --source-vendor /path/to/fresh/vendor-tree
+     update --target-tag v0.4.1252 --source-vendor /path/to/fresh/vendor-tree
    ```
 
    After update, review the **host scaffold report** (`.cursorrules`, `rw-config.yaml`, `.claude/commands/*`, `CLAUDE.md`, `AGENTS.md`) — these are never auto-overwritten. Post-update verification runs `verify_vendor_tree` automatically.
 
-   **Legacy manual path:** `cd vendor/ai-dev-kit && git fetch --tags && git checkout tags/v0.4.1063` (use [latest release](https://github.com/RMS-Ltd/ai-dev-kit/releases)); for registry pins, `docker pull ghcr.io/rms-ltd/ai-dev-kit-greenfield:v0.4.1063` (or newer SemVer core). Re-download and verify the matching `.sha256` when using tarballs.
+   **Legacy manual path:** `cd vendor/ai-dev-kit && git fetch --tags && git checkout tags/v0.4.1252` (use [latest release](https://github.com/RMS-Ltd/ai-dev-kit/releases)); for registry pins, `docker pull ghcr.io/rms-ltd/ai-dev-kit-greenfield:v0.4.1252` (or newer SemVer core). Re-download and verify the matching `.sha256` when using tarballs.
 
 **Disk budget:** ~10–11 MiB for `greenfield-install/` (see `FOOTPRINT.md` in-tree) + git pack history (sparse checkout reduces working tree).
 
@@ -756,7 +756,7 @@ git submodule add https://github.com/RMS-Ltd/ai-dev-kit.git .ai-dev-kit
 # Step 2: Checkout specific version (SemVer tag from GitHub Releases)
 cd .ai-dev-kit
 git fetch --tags
-git checkout tags/v0.4.1063   # example; use latest from https://github.com/RMS-Ltd/ai-dev-kit/releases
+git checkout tags/v0.4.1252   # example; use latest from https://github.com/RMS-Ltd/ai-dev-kit/releases
 cd ..
 
 # Step 2b (BR-087): If packages/frameworks still has spaces in directory names,

@@ -11,9 +11,9 @@
 
 **A comprehensive toolkit for AI-assisted development workflows**
 
-**Version (SemVer):** `v0.4.1251` | **Internal:** `v0.6.9.46+1` (E06:S09:T46 — BR-115 fallthrough + lean SUCCESS) | **Last Updated:** 2026-07-13
+**Version (SemVer):** `v0.4.1252` | **Internal:** `v0.2.16.3+9` (E02:S16:T03 — adopter install pin / SemVer tip tighten) | **Last Updated:** 2026-07-14
 
-> **SemVer ordering (`task_touch`):** Compare releases by **core** (`0.4.1198` here), not by `+BUILD`. The `+1` suffix mirrors internal build metadata for traceability only — see [ADR-031](docs/architecture/standards-and-adrs/ADR-031-external-semver-build-metadata-display-policy.md).
+> **SemVer ordering (`task_touch`):** Compare releases by **core** (`0.4.1252` here), not by `+BUILD`. The `+BUILD` suffix mirrors internal build metadata for traceability only — see [ADR-031](docs/architecture/standards-and-adrs/ADR-031-external-semver-build-metadata-display-policy.md).
 
 [Features](#features) • [Installation](#getting-started) • [Install in Your Project](INSTALL_IN_YOUR_PROJECT.md) • [Documentation](docs/documentation) • **Browsing docs (published site):** [https://rms-ltd.github.io/ai-dev-kit/](https://rms-ltd.github.io/ai-dev-kit/) • [Workflows](#workflows) • [Report Bug](https://github.com/RMS-Ltd/ai-dev-kit/issues) • [Request Feature](https://github.com/RMS-Ltd/ai-dev-kit/issues)
 
@@ -37,7 +37,7 @@
 ```bash
 # 1. Vendor ai-dev-kit (submodule at vendor/ or .ai-dev-kit/)
 git submodule add https://github.com/RMS-Ltd/ai-dev-kit.git vendor/ai-dev-kit
-cd vendor/ai-dev-kit && git checkout tags/v0.4.1063 && cd ../..
+cd vendor/ai-dev-kit && git checkout tags/v0.4.1252 && cd ../..
 
 # 2. Sparse-checkout greenfield-install/ only (~10 MiB) — see INSTALL guide
 #    cd vendor/ai-dev-kit && git sparse-checkout set greenfield-install
@@ -46,23 +46,19 @@ python3 vendor/ai-dev-kit/packages/frameworks/workflow-mgt/scripts/install_green
   --project-root . --non-interactive
 ```
 
-**Alternate (no git submodule):** `docker pull ghcr.io/rms-ltd/ai-dev-kit-greenfield:v0.4.1063` → extract `/opt/adk/` to `vendor/ai-dev-kit/` — see [INSTALL — GHCR](INSTALL_IN_YOUR_PROJECT.md#lean-vendor-install-greenfield-install--fr-110) and [ADR-021](docs/architecture/standards-and-adrs/ADR-021-greenfield-install-ghcr-delivery-channel.md).
+**Alternate (no git submodule):** `docker pull ghcr.io/rms-ltd/ai-dev-kit-greenfield:v0.4.1252` → extract `/opt/adk/` to `vendor/ai-dev-kit/` — see [INSTALL — GHCR](INSTALL_IN_YOUR_PROJECT.md#lean-vendor-install-greenfield-install--fr-110) and [ADR-021](docs/architecture/standards-and-adrs/ADR-021-greenfield-install-ghcr-delivery-channel.md).
 
 **Download integrity (SHA-256):** Every release tarball ships with a matching `.sha256` sidecar on [GitHub Releases](https://github.com/RMS-Ltd/ai-dev-kit/releases). Verify before extract:
 
 ```bash
-gh release download v0.4.1063 --repo RMS-Ltd/ai-dev-kit \
-  -p 'greenfield-install-v0.4.1063.tar.gz' \
-  -p 'greenfield-install-v0.4.1063.tar.gz.sha256' -D /tmp/adk-dl
-shasum -a 256 -c /tmp/adk-dl/greenfield-install-v0.4.1063.tar.gz.sha256
-# Expected: greenfield-install-v0.4.1063.tar.gz: OK
+gh release download v0.4.1252 --repo RMS-Ltd/ai-dev-kit \
+  -p 'greenfield-install-v0.4.1252.tar.gz' \
+  -p 'greenfield-install-v0.4.1252.tar.gz.sha256' -D /tmp/adk-dl
+shasum -a 256 -c /tmp/adk-dl/greenfield-install-v0.4.1252.tar.gz.sha256
+# Expected: greenfield-install-v0.4.1252.tar.gz: OK
 ```
 
-| Asset (pin `v0.4.1063`) | SHA-256 |
-| --- | --- |
-| `greenfield-install-v0.4.1063.tar.gz` | `d7519a0642b572eece67c20b05ace026f742b91caf9a07f9901fe39a17423131` |
-
-Framework package tarballs (e.g. `kanban-v2.0.0.tar.gz`) follow the same pattern — see [Package installation guide](packages/frameworks/workflow-mgt/docs/PACKAGE_INSTALLATION_GUIDE.md). Pin a newer [release tag](https://github.com/RMS-Ltd/ai-dev-kit/releases) when upgrading; always download and verify the matching `.sha256` file.
+Pin the SHA-256 from `greenfield-install-v0.4.1252.tar.gz.sha256` (release sidecar). Framework package tarballs (e.g. `kanban-v2.0.0.tar.gz`) follow the same pattern — see [Package installation guide](packages/frameworks/workflow-mgt/docs/PACKAGE_INSTALLATION_GUIDE.md). When upgrading, pin a [release tag](https://github.com/RMS-Ltd/ai-dev-kit/releases) and always verify the matching `.sha256` file.
 
 **Full copy alternative** (copies frameworks into project root): see [INSTALL_IN_YOUR_PROJECT.md — Method 2](INSTALL_IN_YOUR_PROJECT.md#method-2-git-submodule-available-now).
 

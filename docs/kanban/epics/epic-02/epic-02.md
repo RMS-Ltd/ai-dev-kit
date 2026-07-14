@@ -82,7 +82,7 @@ housekeeping_policy: keep
   - Story: [`story-15-ipw-governance-and-publication-contract.md`](story-15-ipw-governance-and-publication-contract.md)
   - Tasks: T01, T03, T04, T07, T08, T14 ✅ COMPLETE; T02/T05/T06 superseded → T07
 
-- [ ] **E2:S16 – Perpetual Ongoing Operations** - IN PROGRESS (v0.2.16.6+24)
+- [ ] **E2:S16 – Perpetual Ongoing Operations** - IN PROGRESS (v0.2.16.3+9 — T03 install-doc pin wave)
   - Story: [`story-16-perpetual-ongoing-workflow-operations.md`](story-16-perpetual-ongoing-workflow-operations.md)
   - Perpetual lanes: T01–T06 — [FR-088](../../fbu/FR-088-dedicated-story-for-perpetual-ongoing-tasks.md) | [IPP-E02S16T24](../../implementation-cycles/IPP-E02S16T24-s16-perpetual-only-semantic-scatter.md)
 

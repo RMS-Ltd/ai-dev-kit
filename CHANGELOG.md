@@ -11,8 +11,8 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
-## [0.6.9.46+1] - 13-07-26
+## [0.2.16.3+9] - 14-07-26
 
-E06:S09:T46 — **Change implemented:** BR-115 empty-packages vendor fallthrough; lean missing workflow YAML → SUCCESS + advisory (not PARTIAL). SemVer **v0.4.1251**.
+E02:S16:T03 — **Change implemented:** Tighten README / INSTALL / greenfield-install adopter pins and SemVer tip to current release identity; SHA verify via release sidecar. SemVer **v0.4.1252**.
 
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.6.9.46+1.md)
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.16.3+9.md)
