@@ -12,7 +12,7 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** [TBD]  
 **Created:** 2025-12-02  
-**Last updated:** 2026-07-10 (v0.2.3.14+0 – Kanban documentation setup)
+**Last updated:** 2026-07-14 (v0.2.3.15+0 – Kanban documentation setup)
 **Branch:** `epic/2-workflow-management-framework`  
 **Version Schema:** `0.2.S.T+B`  
 **Production URL:** [N/A for this repo]
@@ -29,9 +29,9 @@ housekeeping_policy: keep
   - Story: [`story-02-pdca-integration-into-release-workflow.md`](story-02-pdca-integration-into-release-workflow.md)
   - Tasks: T001 ✅ COMPLETE, T002 ✅ COMPLETE, T003 ✅ COMPLETE, T004 ✅ COMPLETE, T005 ✅ COMPLETE, T006 ✅ COMPLETE, T007 ✅ COMPLETE, T008 ✅ COMPLETE
 
-- [ ] **E2:S03 – Additional Workflows & Examples** - IN PROGRESS (T01–T13 ✅; **T14** open — FR-145 synthetic examples corpus)
+- [ ] **E2:S03 – Additional Workflows & Examples** - IN PROGRESS (T01–T13 ✅; **T14** FR-145 + **T15** FR-146 PMW open)
   - Story: [`story-03-additional-workflows-and-examples.md`](story-03-additional-workflows-and-examples.md)
-  - Tasks: T01–T13 ✅ COMPLETE; T14 📋 TODO ([FR-145](../../fbu/FR-145-canonical-workflow-synthetic-examples-corpus.md))
+  - Tasks: T01–T13 ✅ COMPLETE; T14 📋 TODO ([FR-145](../../fbu/FR-145-canonical-workflow-synthetic-examples-corpus.md)); T15 📋 TODO ([FR-146](../../fbu/FR-146-publish-main-workflow-pmw-readme-from-rw.md))
 
 - [ ] **E2:S04 – RW Installer & Plug-and-Play Adoption** - IN PROGRESS (T07 🔄 REOPENED @ **v0.2.4.7+2** / BR-114; other tasks COMPLETE)
   - Story: [`story-04-rw-installer-and-plug-and-play-adoption.md`](story-04-rw-installer-and-plug-and-play-adoption.md)

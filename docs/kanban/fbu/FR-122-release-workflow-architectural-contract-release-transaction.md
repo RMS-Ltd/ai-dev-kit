@@ -19,7 +19,9 @@ housekeeping_policy: keep
 **Implementing Task:** [E02:S01:T30](../epics/epic-02/story-01-rw-agent-execution-and-docs/T30-rw-architectural-contract-release-transaction-fr122.md)  
 **IPP:** [IPP-E02S01T30](../../implementation-cycles/IPP-E02S01T30-rw-architectural-contract-release-transaction.md)
 
-**Related:** [FR-049](FR-049-canonical-rw-step-list-single-source-of-truth.md) · [FR-060](FR-060-rw-task-argument-requirement.md) · [FR-092](FR-092-canonical-rw-ukw-kanban-consistency-program.md) · [FR-112](FR-112-perpetual-github-ci-and-security-health-lanes.md) · [FR-120](FR-120-semver-allocation-authority-transactional-mapping-black-box.md) · [FR-046](FR-046-rw-semver-tag-task-touch-mode.md) · [BR-097](BR-097-rw-agent-reuses-tagged-build-and-force-moves-release-tags.md) · [UXR-024](UXR-024-rw-local-release-default-no-push-batch-operator-push.md) · [ADR-011](../../architecture/standards-and-adrs/ADR-011-workflow-step-tracker-and-agent-run-log.md) · [ADR-002](../../architecture/standards-and-adrs/ADR-002-task-touch-derived-mapping.md)
+**Related:** [FR-049](FR-049-canonical-rw-step-list-single-source-of-truth.md) · [FR-060](FR-060-rw-task-argument-requirement.md) · [FR-092](FR-092-canonical-rw-ukw-kanban-consistency-program.md) · [FR-112](FR-112-perpetual-github-ci-and-security-health-lanes.md) · [FR-120](FR-120-semver-allocation-authority-transactional-mapping-black-box.md) · [FR-046](FR-046-rw-semver-tag-task-touch-mode.md) · [BR-097](BR-097-rw-agent-reuses-tagged-build-and-force-moves-release-tags.md) · [UXR-024](UXR-024-rw-local-release-default-no-push-batch-operator-push.md) · [FR-146](FR-146-publish-main-workflow-pmw-readme-from-rw.md) (successor: README SemVer ownership / PMW) · [ADR-011](../../architecture/standards-and-adrs/ADR-011-workflow-step-tracker-and-agent-run-log.md) · [ADR-002](../../architecture/standards-and-adrs/ADR-002-task-touch-derived-mapping.md)
+
+**Successor amend ([FR-146](FR-146-publish-main-workflow-pmw-readme-from-rw.md) / [E02:S03:T15](../epics/epic-02/story-03-additional-workflows-and-examples/T15-publish-main-workflow-pmw-fr146.md)):** When `readme_update_owner: publish`, **F2** / **F10** README-in-RW coherence is **not** an RW blocking invariant — project README SemVer disclosure and publish-side coherence move to **PMW**. When owner is `rw`, F2/F10 README claims remain as shipped under this FR.
 
 ---
 
@@ -75,7 +77,7 @@ RW correctly uses agent intelligence for kanban synthesis and recovery — but *
 | ID | Requirement |
 | -- | ----------- |
 | **F1** | **Release identity:** Every RW is anchored to exactly one `E:S:T` ([FR-060](FR-060-rw-task-argument-requirement.md)) with resolvable task doc and releasable status |
-| **F2** | **Version coherence:** `version.py`, changelogs, README SemVer, allocator mapping, and git tags are **mutually consistent** on success |
+| **F2** | **Version coherence:** `version.py`, changelogs, allocator mapping, and git tags are **mutually consistent** on RW success; **README SemVer** is in-scope for RW only when `readme_update_owner: rw` ([FR-146](FR-146-publish-main-workflow-pmw-readme-from-rw.md) when `publish`) |
 | **F3** | **Release transaction:** RW succeeds only if all **blocking gates** pass in order; partial publish is **ABORTED**, not "local-complete with wrong SemVer" |
 | **F4** | **Kanban atomicity ([FR-092](FR-092-canonical-rw-ukw-kanban-consistency-program.md)):** Release-scope four-surface reconciliation is self-sufficient; no UKW dependency |
 | **F5** | **Forensic traceability:** Immutable changelog timestamp, version↔task↔kanban grid, four-surface report |
@@ -88,7 +90,7 @@ RW correctly uses agent intelligence for kanban synthesis and recovery — but *
 | **F7** | **Allocator preflight:** Before version bump, verify SAA DB health (`max_patch` ≥ git-tag floor OR legacy import OK) — **abort if truncated** |
 | **F8** | **Git-tag occupancy:** Proposed SemVer core tag `v0.4.{patch}` must not exist unless idempotent replay of same internal |
 | **F9** | **Single tag authority:** Step 11 **only** via `create_rw_tags()` / `semver_converter.get_rw_tag_info(finalize=True)` — never raw `git tag` |
-| **F10** | **Split-brain detection:** Post-RW validator: README SemVer == allocator mapping == staged export |
+| **F10** | **Split-brain detection:** Post-RW validator: allocator mapping == staged export (== README SemVer only when `readme_update_owner: rw`; else README checked by PMW — [FR-146](FR-146-publish-main-workflow-pmw-readme-from-rw.md)) |
 
 ### Non-functional
 

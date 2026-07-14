@@ -21,7 +21,7 @@ housekeeping_policy: keep
 
 **Planning:** —No IPP— (run `IPW E02:S03:T14` before implementation)
 
-**Related:** [FR-103](../../../fbu/FR-103-agent-bootstrap-and-task-routing.md) / [ADR-012](../../../../architecture/standards-and-adrs/ADR-012-agent-bootstrap-and-task-routing.md) · [E02:S01:T27](../story-01-rw-agent-execution-and-docs/T27-agent-bootstrap-and-task-routing-fr103.md) · [E02:S16:T15](../story-16-perpetual-ongoing-workflow-operations/T15-workflow-initiation-cheatsheet-uxr015.md) · [UXR-015](../../../fbu/UXR-015-workflow-initiation-cheatsheet.md)
+**Related:** [FR-103](../../../fbu/FR-103-agent-bootstrap-and-task-routing.md) / [ADR-012](../../../../architecture/standards-and-adrs/ADR-012-agent-bootstrap-and-task-routing.md) · [E02:S01:T27](../story-01-rw-agent-execution-and-docs/T27-agent-bootstrap-and-task-routing-fr103.md) · [E02:S16:T15](../story-16-perpetual-ongoing-workflow-operations/T15-workflow-initiation-cheatsheet-uxr015.md) · [UXR-015](../../../fbu/UXR-015-workflow-initiation-cheatsheet.md) · [E02:S03:T15](T15-publish-main-workflow-pmw-fr146.md) / [FR-146](../../../fbu/FR-146-publish-main-workflow-pmw-readme-from-rw.md) (add PMW exemplar after T15 ships)
 
 ---
 

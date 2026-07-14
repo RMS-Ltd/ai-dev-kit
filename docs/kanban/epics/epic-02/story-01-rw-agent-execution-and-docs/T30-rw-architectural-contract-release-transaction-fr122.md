@@ -40,6 +40,7 @@ Own the **meta program** for [FR-122](../../../fbu/FR-122-release-workflow-archi
 | [FR-092](../../../fbu/FR-092-canonical-rw-ukw-kanban-consistency-program.md) | Kanban four-surface atomicity (F4) |
 | [BR-097](../../../fbu/BR-097-rw-agent-reuses-tagged-build-and-force-moves-release-tags.md) | Tag immutability / BUILD discipline |
 | [UXR-024](../../../fbu/UXR-024-rw-local-release-default-no-push-batch-operator-push.md) | Local-complete publish policy |
+| [FR-146](../../../fbu/FR-146-publish-main-workflow-pmw-readme-from-rw.md) / [E02:S03:T15](../story-03-additional-workflows-and-examples/T15-publish-main-workflow-pmw-fr146.md) | **Follow-on:** README SemVer disclosure moves to PMW when `readme_update_owner: publish` — amends FR-122 F2/F10 README-in-RW assumptions |
 
 ---
 

@@ -8,12 +8,12 @@ housekeeping_policy: keep
 
 # Story 003 – Additional Workflows & Examples
 
-**Status:** IN PROGRESS (T14 open — FR-145 synthetic examples corpus)  
+**Status:** IN PROGRESS (T14 open — FR-145; T15 open — FR-146 PMW)  
 **Priority:** MEDIUM  
 **Estimated Effort:** [TBD]  
 **Created:** 2025-12-03  
-**Last updated:** 2026-07-10 (v0.2.3.14+0 – Kanban documentation setup)
-**Version:** v0.2.3.14+0
+**Last updated:** 2026-07-14 (v0.2.3.15+0 – Kanban documentation setup)
+**Version:** v0.2.3.15+0
 **Code:** E2S03
 
 ---
@@ -64,6 +64,8 @@ Provide additional workflow examples that:
 - [x] **E02:S03:T13 – MWF `delivery` RW intent preflight (FR-137)** — ✅ COMPLETE (**v0.2.3.13+1**) — [Task](story-03-additional-workflows-and-examples/T13-mwf-delivery-rw-intent-preflight-fr137.md) | [FR-137](../../fbu/FR-137-mwf-delivery-rw-intent-preflight-art-forwarding.md) | [IPP](../../implementation-cycles/IPP-E02S03T13-mwf-delivery-rw-intent-preflight-fr137.md)
 
 - [ ] **E02:S03:T14 – Canonical workflow synthetic examples corpus (FR-145)** — 📋 TODO — [Task](story-03-additional-workflows-and-examples/T14-canonical-workflow-synthetic-examples-corpus-fr145.md) | [FR-145](../../fbu/FR-145-canonical-workflow-synthetic-examples-corpus.md) | —No IPP—
+
+- [ ] **E02:S03:T15 – Publish Main Workflow / PMW (FR-146)** — 📋 TODO — [Task](story-03-additional-workflows-and-examples/T15-publish-main-workflow-pmw-fr146.md) | [FR-146](../../fbu/FR-146-publish-main-workflow-pmw-readme-from-rw.md) | —No IPP—
 
 ---
 

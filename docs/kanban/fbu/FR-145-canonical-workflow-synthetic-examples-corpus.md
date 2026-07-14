@@ -19,7 +19,7 @@ housekeeping_policy: keep
 
 **Implementing Task:** [E02:S03:T14](../epics/epic-02/story-03-additional-workflows-and-examples/T14-canonical-workflow-synthetic-examples-corpus-fr145.md)
 
-**Related:** [FR-103](FR-103-agent-bootstrap-and-task-routing.md) / [ADR-012](../../architecture/standards-and-adrs/ADR-012-agent-bootstrap-and-task-routing.md) (bootstrap routing) · [UXR-015](UXR-015-workflow-initiation-cheatsheet.md) (human trigger cheatsheet) · [FR-056](FR-056-standardize-packaged-workflow-documentation-and-instructions.md) · [FR-126](FR-126-workflow-encapsulation-integrity-mwf-leverage.md)
+**Related:** [FR-103](FR-103-agent-bootstrap-and-task-routing.md) / [ADR-012](../../architecture/standards-and-adrs/ADR-012-agent-bootstrap-and-task-routing.md) (bootstrap routing) · [UXR-015](UXR-015-workflow-initiation-cheatsheet.md) (human trigger cheatsheet) · [FR-056](FR-056-standardize-packaged-workflow-documentation-and-instructions.md) · [FR-126](FR-126-workflow-encapsulation-integrity-mwf-leverage.md) · [FR-146](FR-146-publish-main-workflow-pmw-readme-from-rw.md) (add PMW to corpus after ship)
 
 ---
 
