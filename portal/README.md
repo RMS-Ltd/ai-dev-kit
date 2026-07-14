@@ -162,7 +162,7 @@ npm ci
 
 (or `npm install` in `portal/`.)
 
-**Docusaurus 3.10 + Faster (BR-090 / E5:S09:T13):** [`docusaurus.config.js`](docusaurus.config.js) sets `future.v4: true`, which enables [Docusaurus Faster](https://docusaurus.io/docs/advanced/performance) by default on 3.10.x. You **must** have **`@docusaurus/faster`** in `portal/package.json` (pinned with other `@docusaurus/*` packages at **3.10.1**). Without it, `npm run build` fails immediately with `Cannot find package '@docusaurus/faster'`.
+**Docusaurus 3.10 + Faster (BR-090 / E5:S09:T13):** [`docusaurus.config.js`](docusaurus.config.js) sets `future.v4: true`, which enables [Docusaurus Faster](https://docusaurus.io/docs/advanced/performance) by default on 3.10.x. You **must** have **`@docusaurus/faster`** in `portal/package.json` (pinned with other `@docusaurus/*` packages at **3.10.2**). Without it, `npm run build` fails immediately with `Cannot find package '@docusaurus/faster'`.
 
 ## Local Development
 

@@ -11,8 +11,8 @@ and this project adheres to the **`RC.EPIC.STORY.TASK+BUILD`** versioning scheme
 
 ---
 
-## [0.2.1.30+9] - 14-07-26
+## [0.2.16.5+14] - 14-07-26
 
-E02:S01:T30 — **Kanban documentation setup:** FR-122 ↔ FR-146 Related back-wire / README ownership successor amend. SemVer **v0.4.1254**.
+E02:S16:T05 — **Change implemented:** BR-090 / Dependabot Docusaurus **3.10.2** CI contract pin refresh (tests + portal README); T05 owns pin chase. SemVer **v0.4.1255**.
 
-[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.1.30+9.md)
+[Detailed changelog](docs/changelog-and-release-notes/changelog-archive/CHANGELOG_v0.2.16.5+14.md)

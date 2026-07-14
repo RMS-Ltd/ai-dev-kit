@@ -11,8 +11,8 @@ housekeeping_policy: keep
 **Status:** IN PROGRESS
 **Priority:** HIGH  
 **Created:** 2026-04-20  
-**Last updated:** 2026-07-14 (v0.2.16.3+9 – T03 adopter install pin tighten)
-**Version:** v0.2.16.6+24
+**Last updated:** 2026-07-14 (v0.2.16.5+14 – Kanban documentation setup)
+**Version:** v0.2.16.5+14
 **Code:** E2S16
 
 ---

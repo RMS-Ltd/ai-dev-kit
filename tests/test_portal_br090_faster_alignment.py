@@ -1,5 +1,5 @@
 """
-BR-090 / E5:S09:T13: Docusaurus @docusaurus/faster + 3.10.1 alignment contract.
+BR-090 / E5:S09:T13: Docusaurus @docusaurus/faster + package alignment contract (current pin 3.10.2).
 
 Executable spec T1–T6 from IPP-E05S09T13.
 
@@ -20,7 +20,7 @@ PACKAGE_LOCK = PORTAL_DIR / "package-lock.json"
 CONFIG_PATH = PORTAL_DIR / "docusaurus.config.js"
 README_PATH = PORTAL_DIR / "README.md"
 
-DOCUSAURUS_VERSION = "3.10.1"
+DOCUSAURUS_VERSION = "3.10.2"
 
 
 @pytest.fixture
@@ -48,13 +48,13 @@ def _docusaurus_deps(manifest: dict) -> dict[str, str]:
 
 
 def test_br090_t1_faster_dependency(package_manifest: dict):
-    """T1 — @docusaurus/faster present at 3.10.1 in dependencies."""
+    """T1 — @docusaurus/faster present at current pin in dependencies."""
     deps = package_manifest.get("dependencies") or {}
     assert deps.get("@docusaurus/faster") == DOCUSAURUS_VERSION
 
 
 def test_br090_t2_version_homogeneity(package_manifest: dict):
-    """T2 — all @docusaurus/* pins share 3.10.1."""
+    """T2 — all @docusaurus/* pins share the current DOCUSAURUS_VERSION."""
     docusaurus = _docusaurus_deps(package_manifest)
     assert docusaurus, "Expected @docusaurus/* entries in package.json"
     for name, version in docusaurus.items():

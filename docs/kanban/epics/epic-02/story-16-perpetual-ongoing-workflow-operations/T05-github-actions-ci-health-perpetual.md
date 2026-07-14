@@ -14,8 +14,8 @@ housekeeping_policy: keep
 **Priority:** HIGH  
 **Estimated Effort:** Small (ongoing)  
 **Created:** 2026-06-05  
-**Last updated:** 2026-06-17 (v0.2.16.5+13 — Wave 11 install error docs sync)  
-**Version Anchor:** v0.2.16.5+13  
+**Last updated:** 2026-07-14 (v0.2.16.5+14 — Docusaurus 3.10.2 CI pin / Dependabot follow-on)  
+**Version Anchor:** v0.2.16.5+14  
 **Code:** E02S16T05  
 **Task Type:** Perpetual Maintenance
 
@@ -38,6 +38,7 @@ Standing perpetual lane for **GitHub Actions workflow health** on [RMS-Ltd/ai-de
 - Workflow YAML fixes (permissions, triggers, matrix, caching, timeouts)
 - CI-only dependency gaps (e.g. missing `requirements-dev` entries)
 - Pytest / build failures surfaced only in Actions (coordinate with local repro)
+- **CI contract pins** after Dependabot merges land (e.g. portal Docusaurus golden versions in `tests/test_portal_br090_*.py`, similar pin assertions) — re-pin tests/docs to match `package.json` / lockfile; file a discrete BR only for breaking / policy-grade bumps
 - Flake investigation and stabilization when reproducible
 
 **Source of truth:** [GitHub Actions](https://github.com/RMS-Ltd/ai-dev-kit/actions) — filter failing workflows on default branches before each hygiene pass.
@@ -244,6 +245,18 @@ Use **`RW E02:S16:T05`** for recurring CI hygiene passes (BUILD increments on pe
 | `install-error-codes.yaml` ADK-I01.S06 | Inline backticks around CLI (`<path>` inside code span — MDX-safe) |
 | Troubleshooting guide | Regenerated `{/* ADK-ERROR-CODES:* */}` block from `generate_install_error_docs.py` |
 | Greenfield | `sync_greenfield_install.py` mirror |
+
+---
+
+### Wave 14 — Docusaurus 3.10.2 CI contract pin (v0.2.16.5+14)
+
+**Incident:** Local `validate_actions_ci_parity --all` — **Tests** failed BR-090 alignment tests after Dependabot **3.10.2** landed in `portal/package.json` / lockfile while `DOCUSAURUS_VERSION` still asserted **3.10.1**.
+
+| Fix | Detail |
+| --- | ------ |
+| `tests/test_portal_br090_faster_alignment.py` | `DOCUSAURUS_VERSION = "3.10.2"` + docstring refresh |
+| `portal/README.md` | Documented pin **3.10.2** |
+| Scope | Charter bullet: CI contract pins after Dependabot (no new perpetual lane) |
 
 ---
 
