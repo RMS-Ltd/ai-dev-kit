@@ -4,7 +4,7 @@ Babel>=2.18.0
 
 # Documentation and validation dependencies (Python / PyPI only)
 # markdownlint-cli2 is npm-only — install via: npm install -g markdownlint-cli2
-click>=8.4.2
+click>=8.5.0
 requests>=2.34.2
 
 # Development dependencies (install with: pip install -e ".[dev]")
